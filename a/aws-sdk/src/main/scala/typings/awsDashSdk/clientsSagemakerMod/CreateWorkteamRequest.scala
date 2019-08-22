@@ -18,7 +18,7 @@ trait CreateWorkteamRequest extends js.Object {
     */
   var NotificationConfiguration: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotificationConfiguration] = js.undefined
   /**
-    * 
+    * An array of key-value pairs. For more information, see Resource Tag and Using Cost Allocation Tags in the  AWS Billing and Cost Management User Guide.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**

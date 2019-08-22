@@ -23,12 +23,19 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core/dist/types/utils/platform", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getPlatforms(win: js.Any): js.Array[String] = js.native
-  def isPlatform(
-    win: Window,
-    platform: ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ): Boolean = js.native
-  def setupPlatforms(win: js.Any): js.Array[String] = js.native
+  val isPlatform: IsPlatformSignature = js.native
+  def getPlatforms(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
+  def getPlatforms(win: js.Any): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
+  def setupPlatforms(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
+  def setupPlatforms(win: js.Any): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
   def testUserAgent(win: Window, expr: RegExp): Boolean = js.native
 }
 

@@ -364,6 +364,7 @@
 | 0.8248444640874932 | [agentkeepalive](./a/agentkeepalive) | Missing keepalive http.Agent
 | 0.8247199274309294 | [emotion__cache](./e/emotion__cache) | emotion's cache
 | 0.8245705448775537 | [react-native](./r/react-native) | A framework for building native apps using React
+| 0.8243985729505692 | [typescript-eslint__parser](./t/typescript-eslint__parser) | An ESLint custom parser which leverages TypeScript
 | 0.8242910291848533 | [lodash_dot_last](./l/lodash_dot_last) | The modern build of lodash’s _.last as a module.
 | 0.8238842030414242 | [postcss-modules-scope](./p/postcss-modules-scope) | A CSS Modules transform to extract export statemen
 | 0.8238491884692672 | [hoek](./h/hoek) | General purpose node utilities
@@ -761,6 +762,7 @@
 | 0.7873463498506765 | [sqlstring](./s/sqlstring) | Simple SQL escape and format for MySQL
 | 0.7872594007009535 | [prom-client](./p/prom-client) | Client for prometheus
 | 0.7872522188631375 | [react-toastify](./r/react-toastify) | React notification made easy
+| 0.787103109257061 | [typescript-eslint__typesc](./t/typescript-eslint__typescript-estree) | A parser that converts TypeScript source code into
 | 0.7870862753733274 | [assertion-error](./a/assertion-error) | Error constructor for test and validation framewor
 | 0.7870729012017189 | [raf-schd](./r/raf-schd) | A scheduler based on requestAnimationFrame
 | 0.7868482191170743 | [figlet](./f/figlet) | Creates ASCII Art from text. A full implementation
@@ -1059,6 +1061,7 @@
 | 0.7680954233771986 | [gulp-less](./g/gulp-less) | Less for Gulp
 | 0.7680110571485951 | [utility](./u/utility) | A collection of useful utilities.
 | 0.7679811750848848 | [compare-func](./c/compare-func) | Get a compare function for array to sort
+| 0.7678268345736246 | [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri
 | 0.7678066443210108 | [relay-runtime](./r/relay-runtime) | A core runtime for building GraphQL-driven applica
 | 0.7677346875844124 | [material__chips](./m/material__chips) | The Material Components for the Web chips componen
 | 0.7677314069286584 | [yosay](./y/yosay) | Tell Yeoman what to say
@@ -1580,6 +1583,7 @@
 | 0.7387370239593787 | [ecurve](./e/ecurve) | Elliptic curve cryptography
 | 0.7387296877285561 | [auto-bind](./a/auto-bind) | Automatically bind methods to their class instance
 | 0.7387122484097736 | [fs-plus](./f/fs-plus) | node's fs with more helpers
+| 0.7386699766288352 | [protocols](./p/protocols) | Get the protocols of an input url.
 | 0.7386626834960368 | [postman-collection](./p/postman-collection) | Enables developers to use a unified Postman Collec
 | 0.7385961745668354 | [mapbox__shelf-pack](./m/mapbox__shelf-pack) | A 2D rectangular bin packing data structure that u
 | 0.7384379697364175 | [pouchdb-adapter-memory](./p/pouchdb-adapter-memory) | PouchDB adapter using in-memory as its data store.
@@ -1658,6 +1662,7 @@
 | 0.7346577227834323 | [lodash_dot_isweakset](./l/lodash_dot_isweakset) | The lodash method _.isWeakSet exported as a module
 | 0.734552313016861 | [lodash_dot_unary](./l/lodash_dot_unary) | The lodash method _.unary exported as a module.
 | 0.7345261270349521 | [parcel-bundler](./p/parcel-bundler) | Blazing fast, zero configuration web application b
+| 0.7344470154358961 | [is-ssh](./i/is-ssh) | Check if an input value is a ssh url or not.
 | 0.7341639529866941 | [sift](./s/sift) | mongodb query style array filtering
 | 0.7340494091623231 | [seed-random](./s/seed-random) | Generate random numbers with a seed, useful for re
 | 0.7340407462518355 | [username](./u/username) | Get the username of the current user
@@ -4280,6 +4285,7 @@
 | 0.5833437705107334 | [react-kawaii](./r/react-kawaii) | React Kawaii is a library of cute SVG illustration
 | 0.5831946657672429 | [vectorious](./v/vectorious) | A high performance linear algebra library.
 | 0.5831637891242727 | [react-css-transition-repl](./r/react-css-transition-replace) | A React component to animate replacing one element
+| 0.5830938505047717 | [leaflet-responsive-popup](./l/leaflet-responsive-popup) | Removes the need to move the map to be able to see
 | 0.5830666142350996 | [rot-js](./r/rot-js) | A roguelike toolkit in JavaScript
 | 0.5830042360175864 | [gulp-tslint](./g/gulp-tslint) | TypeScript linter Gulp plugin
 | 0.5829575054546172 | [ionic__utils-network](./i/ionic__utils-network) | Network utils for Node
@@ -5423,6 +5429,7 @@
 | 0.4170792338607379 | [gulp-flatten](./g/gulp-flatten) | remove or replace relative path for files
 | 0.417034231927628 | [bind-ponyfill](./b/bind-ponyfill) | Binds a function to a specified context and argume
 | 0.41693464939643826 | [tinycolor2](./t/tinycolor2) | Fast Color Parsing and Manipulation
+| 0.4168667344438105 | [passport_dot_socketio](./p/passport_dot_socketio) | access passport.js authenticated user information 
 | 0.4166977788513859 | [tldjs](./t/tldjs) | JavaScript API to work against complex domain name
 | 0.41660311302371184 | [angular-breadcrumb](./a/angular-breadcrumb) | AngularJS module that generates a breadcrumb from 
 | 0.41645645235904843 | [nblas](./n/nblas) | C++ bindings for all single- and double-precision 

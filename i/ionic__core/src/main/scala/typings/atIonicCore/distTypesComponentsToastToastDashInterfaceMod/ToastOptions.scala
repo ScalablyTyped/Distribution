@@ -5,7 +5,7 @@ import typings.atIonicCore.atIonicCoreStrings.middle
 import typings.atIonicCore.atIonicCoreStrings.top
 import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesInterfaceMod.Mode
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

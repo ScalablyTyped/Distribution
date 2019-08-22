@@ -19,7 +19,11 @@ import typings.atIonicCore.atIonicCoreStrings.mobileweb
 import typings.atIonicCore.atIonicCoreStrings.phablet
 import typings.atIonicCore.atIonicCoreStrings.pwa
 import typings.atIonicCore.atIonicCoreStrings.tablet
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
+import typings.atIonicCore.distTypesUtilsGestureMod.Gesture
+import typings.atIonicCore.distTypesUtilsGestureMod.GestureConfig
+import typings.atIonicCore.distTypesUtilsPlatformMod.IsPlatformSignature
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,13 +38,17 @@ object ^ extends js.Object {
   val LIFECYCLE_WILL_LEAVE: ionViewWillLeave = js.native
   val LIFECYCLE_WILL_UNLOAD: ionViewWillUnload = js.native
   val config: typings.atIonicCore.distTypesGlobalConfigMod.Config = js.native
+  val isPlatform: IsPlatformSignature = js.native
   def configFromSession(win: Window): js.Any = js.native
   def configFromURL(win: Window): js.Any = js.native
-  def getPlatforms(win: js.Any): js.Array[String] = js.native
-  def isPlatform(
-    win: Window,
-    platform: ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ): Boolean = js.native
+  def createAnimation(): Animation = js.native
+  def createGesture(config: GestureConfig): Gesture = js.native
+  def getPlatforms(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
+  def getPlatforms(win: js.Any): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
   def saveConfig(win: Window, c: js.Any): Unit = js.native
   def setupConfig(config: IonicConfig): js.Any = js.native
 }

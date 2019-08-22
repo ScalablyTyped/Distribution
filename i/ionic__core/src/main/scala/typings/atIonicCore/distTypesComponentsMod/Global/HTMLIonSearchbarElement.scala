@@ -1,10 +1,13 @@
 package typings.atIonicCore.distTypesComponentsMod.Global
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.atIonicCore.atIonicCoreStrings.decimal
 import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.atIonicCoreStrings.none
 import typings.atIonicCore.atIonicCoreStrings.number
+import typings.atIonicCore.atIonicCoreStrings.numeric
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.on
 import typings.atIonicCore.atIonicCoreStrings.password
@@ -23,7 +26,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atIonicCore.distTypesComponentsMod.ComponentsNs.IonSearchbar because var conflicts: spellcheck. Inlined animated, autocomplete, autocorrect, cancelButtonIcon, cancelButtonText, clearIcon, color, debounce, disabled, getInputElement, mode, placeholder, searchIcon, setFocus, showCancelButton, `type`, value */ @js.native
+- typings.atIonicCore.distTypesComponentsMod.ComponentsNs.IonSearchbar because var conflicts: spellcheck. Inlined animated, autocomplete, autocorrect, cancelButtonIcon, cancelButtonText, clearIcon, color, debounce, disabled, getInputElement, inputmode, mode, placeholder, searchIcon, setFocus, showCancelButton, `type`, value */ @js.native
 trait HTMLIonSearchbarElement extends HTMLStencilElement {
   /**
     * If `true`, enable searchbar animation.
@@ -61,6 +64,10 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
     * If `true`, the user cannot interact with the input.
     */
   var disabled: Boolean = js.native
+  /**
+    * A hint to the browser for which keyboard to display. Possible values are: `"none"` | `"text"` | `"tel"` | `"url"` | `"email"` | `"numeric"` | `"decimal"` | `"search"`.
+    */
+  var inputmode: none | text | tel | url | email | numeric | decimal | search = js.native
   /**
     * The mode determines which platform styles to use.
     */

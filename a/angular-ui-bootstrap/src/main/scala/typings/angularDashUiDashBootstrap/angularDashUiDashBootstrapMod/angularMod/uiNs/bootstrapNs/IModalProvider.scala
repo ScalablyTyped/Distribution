@@ -9,15 +9,12 @@ trait IModalProvider extends IServiceProvider {
   /**
     * Default options all modals will use.
     */
-  var options: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalSettings
+  var options: IModalSettings
 }
 
 object IModalProvider {
   @scala.inline
-  def apply(
-    $get: js.Any,
-    options: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalSettings
-  ): IModalProvider = {
+  def apply($get: js.Any, options: IModalSettings): IModalProvider = {
     val __obj = js.Dynamic.literal($get = $get, options = options)
   
     __obj.asInstanceOf[IModalProvider]

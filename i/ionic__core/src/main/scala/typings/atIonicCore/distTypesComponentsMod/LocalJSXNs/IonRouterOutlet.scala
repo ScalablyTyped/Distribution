@@ -5,7 +5,7 @@ import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRouterOutletElement
 import typings.atIonicCore.distTypesStencilDotCoreMod.JSXBaseNs.HTMLAttributes
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent

@@ -1,9 +1,12 @@
 package typings.atIonicCore.distTypesComponentsMod.ComponentsNs
 
+import typings.atIonicCore.atIonicCoreStrings.decimal
 import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.atIonicCoreStrings.none
 import typings.atIonicCore.atIonicCoreStrings.number
+import typings.atIonicCore.atIonicCoreStrings.numeric
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.on
 import typings.atIonicCore.atIonicCoreStrings.password
@@ -55,6 +58,10 @@ trait IonSearchbar extends js.Object {
     */
   var disabled: Boolean
   /**
+    * A hint to the browser for which keyboard to display. Possible values are: `"none"` | `"text"` | `"tel"` | `"url"` | `"email"` | `"numeric"` | `"decimal"` | `"search"`.
+    */
+  var inputmode: none | text | tel | url | email | numeric | decimal | search
+  /**
     * The mode determines which platform styles to use.
     */
   var mode: js.UndefOr[ios | md] = js.undefined
@@ -103,6 +110,7 @@ object IonSearchbar {
     debounce: Double,
     disabled: Boolean,
     getInputElement: () => js.Promise[HTMLInputElement],
+    inputmode: none | text | tel | url | email | numeric | decimal | search,
     placeholder: String,
     searchIcon: String,
     setFocus: () => js.Promise[Unit],
@@ -114,7 +122,7 @@ object IonSearchbar {
     mode: ios | md = null,
     value: String = null
   ): IonSearchbar = {
-    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), inputmode = inputmode.asInstanceOf[js.Any], placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

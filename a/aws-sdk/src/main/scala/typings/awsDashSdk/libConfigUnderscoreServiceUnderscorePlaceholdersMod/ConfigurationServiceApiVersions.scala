@@ -79,6 +79,8 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var eventbridge: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.apiVersion] = js.undefined
   var firehose: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.apiVersion] = js.undefined
   var fms: js.UndefOr[typings.awsDashSdk.clientsFmsMod.apiVersion] = js.undefined
+  var forecastqueryservice: js.UndefOr[typings.awsDashSdk.clientsForecastqueryserviceMod.apiVersion] = js.undefined
+  var forecastservice: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.apiVersion] = js.undefined
   var fsx: js.UndefOr[typings.awsDashSdk.clientsFsxMod.apiVersion] = js.undefined
   var gamelift: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.apiVersion] = js.undefined
   var glacier: js.UndefOr[typings.awsDashSdk.clientsGlacierMod.apiVersion] = js.undefined
@@ -271,6 +273,8 @@ object ConfigurationServiceApiVersions {
     eventbridge: typings.awsDashSdk.clientsEventbridgeMod.apiVersion = null,
     firehose: typings.awsDashSdk.clientsFirehoseMod.apiVersion = null,
     fms: typings.awsDashSdk.clientsFmsMod.apiVersion = null,
+    forecastqueryservice: typings.awsDashSdk.clientsForecastqueryserviceMod.apiVersion = null,
+    forecastservice: typings.awsDashSdk.clientsForecastserviceMod.apiVersion = null,
     fsx: typings.awsDashSdk.clientsFsxMod.apiVersion = null,
     gamelift: typings.awsDashSdk.clientsGameliftMod.apiVersion = null,
     glacier: typings.awsDashSdk.clientsGlacierMod.apiVersion = null,
@@ -460,6 +464,8 @@ object ConfigurationServiceApiVersions {
     if (eventbridge != null) __obj.updateDynamic("eventbridge")(eventbridge.asInstanceOf[js.Any])
     if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
     if (fms != null) __obj.updateDynamic("fms")(fms.asInstanceOf[js.Any])
+    if (forecastqueryservice != null) __obj.updateDynamic("forecastqueryservice")(forecastqueryservice.asInstanceOf[js.Any])
+    if (forecastservice != null) __obj.updateDynamic("forecastservice")(forecastservice.asInstanceOf[js.Any])
     if (fsx != null) __obj.updateDynamic("fsx")(fsx.asInstanceOf[js.Any])
     if (gamelift != null) __obj.updateDynamic("gamelift")(gamelift.asInstanceOf[js.Any])
     if (glacier != null) __obj.updateDynamic("glacier")(glacier.asInstanceOf[js.Any])

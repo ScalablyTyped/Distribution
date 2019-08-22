@@ -97,9 +97,7 @@ trait IModalSettings extends js.Object {
     * a scope instance to be used for the modal's content (actually the $modal service is going to create a child scope of a provided scope).
     * Defaults to `$rootScope`.
     */
-  var scope: js.UndefOr[
-    IScope | typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalScope
-  ] = js.undefined
+  var scope: js.UndefOr[IScope | IModalScope] = js.undefined
   /**
     * Optional suffix of modal window class. The value used is appended to the `modal-` class, i.e. a value of `sm` gives `modal-sm`.
     */
@@ -142,7 +140,7 @@ object IModalSettings {
     keyboard: js.UndefOr[Boolean] = js.undefined,
     openedClass: String = null,
     resolve: StringDictionary[String | Function | (js.Array[String | Function]) | js.Object] = null,
-    scope: IScope | typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalScope = null,
+    scope: IScope | IModalScope = null,
     size: String = null,
     template: String | js.Function0[String] = null,
     templateUrl: String | js.Function0[String] = null,

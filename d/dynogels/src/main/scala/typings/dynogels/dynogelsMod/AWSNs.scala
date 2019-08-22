@@ -818,6 +818,24 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class ForecastQueryService ()
+    extends typings.awsDashSdk.awsDashSdkMod.ForecastQueryService {
+    def this(options: typings.awsDashSdk.clientsForecastqueryserviceMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class ForecastService ()
+    extends typings.awsDashSdk.awsDashSdkMod.ForecastService {
+    def this(options: typings.awsDashSdk.clientsForecastserviceMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class GameLift ()
     extends typings.awsDashSdk.awsDashSdkMod.GameLift {
     def this(options: typings.awsDashSdk.clientsGameliftMod.ClientConfiguration) = this()

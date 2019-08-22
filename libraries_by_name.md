@@ -2947,6 +2947,7 @@
 | [is-root-path](./i/is-root-path) | Check if a path is the root path. Example: / or C: | root, path, dir, directory, top, level, absolute, check, detect, is |
 | [is-running](./i/is-running) | Test if a process with a given pid is running | pid, running, child, exec, spawn |
 | [is-scoped](./i/is-scoped) | Check if a string is a scoped npm package name | scoped, npm, package, name, is, detect, validate, validation |
+| [is-ssh](./i/is-ssh) | Check if an input value is a ssh url or not. | ssh, url, check, parser |
 | [is-stream](./i/is-stream) | Check if something is a Node.js stream | stream, type, streams, writable, readable, duplex, transform, check, detect, is |
 | [is-stream-ended](./i/is-stream-ended) | Check if a stream has ended | stream, end, ended, consumed, complete |
 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG | svg, vector, graphics, image, img, pic, picture, type, detect, check, is, string, str, buffer |
@@ -3596,6 +3597,7 @@
 | [leaflet-polylinedecorator](./l/leaflet-polylinedecorator) | - | - |
 | [leaflet-providers](./l/leaflet-providers) | An extension to Leaflet that contains configuratio | - |
 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d | Leaflet, coordinates, raster |
+| [leaflet-responsive-popup](./l/leaflet-responsive-popup) | Removes the need to move the map to be able to see | leaflet, popup |
 | [leaflet-rotatedmarker](./l/leaflet-rotatedmarker) | Enables rotation of marker icons in Leaflet. | - |
 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet | leaflet, routing, osrm |
 | [leaflet_dot_awesome-marke](./l/leaflet_dot_awesome-markers) | Leaflet Awesome Markers - allows you to display cu | leaflet, map, icons |
@@ -4872,6 +4874,7 @@
 | [passport-unique-token](./p/passport-unique-token) | Unique Token authentication strategy for Passport  | passport, token, auth, authn, authentication |
 | [passport-vkontakte](./p/passport-vkontakte) | VK.com authentication strategy for Passport. | passport, vkontakte, vk, вконтакте, auth, authn, authentication, identity |
 | [passport-windowsauth](./p/passport-windowsauth) | Passport strategy for Windows Integrated Authentic | passport, windows, auth, ntlm |
+| [passport_dot_socketio](./p/passport_dot_socketio) | access passport.js authenticated user information  | socket, socket.io, passport |
 | [password-hash](./p/password-hash) | Password hashing and verification for node.js | password, hash, utilities, cli |
 | [password-hash-and-salt](./p/password-hash-and-salt) | Simple, safe and straight-forward password hashing | crypto, node.js, node, hash, salt, password, pbkdf2 |
 | [path-case](./p/path-case) | Path case a string | path, case, slash |
@@ -5180,6 +5183,7 @@
 | [protobufjs__utf8](./p/protobufjs__utf8) | A minimal UTF8 implementation for number arrays. | - |
 | [protoc-plugin](./p/protoc-plugin) | Create protoc code-generation plugins easily in no | proto, protobuf, protoc, plugin |
 | [protocol-buffers-schema](./p/protocol-buffers-schema) | No nonsense protocol buffers schema parser written | protobuf, protocol, buffers, schema, parser, parse |
+| [protocols](./p/protocols) | Get the protocols of an input url. | protocols, protocol, url, parse |
 | [proton-native](./p/proton-native) | React Native for the desktop, cross compatible | - |
 | [protractor](./p/protractor) | Webdriver E2E test wrapper for Angular. | angular, test, testing, webdriver, webdriverjs, selenium |
 | [protractor-browser-logs](./p/protractor-browser-logs) | Provides tools for asserting browser logs inside p | angular, test, testing, webdriver, webdriverjs, selenium, protractor, protractor-plugin, browser, logs, console |
@@ -6996,6 +7000,9 @@
 | [typescript](./t/typescript) | TypeScript is a language for application scale Jav | TypeScript, Microsoft, compiler, language, javascript |
 | [typescript-compare](./t/typescript-compare) | TypeScript generics to compare types | compare, generic, typescript, types |
 | [typescript-deferred](./t/typescript-deferred) | A tiny Promises/A+ promise implementation written  | promise, deferred, typescript, promises-aplus |
+| [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri | eslint, typescript, estree |
+| [typescript-eslint__parser](./t/typescript-eslint__parser) | An ESLint custom parser which leverages TypeScript | ast, ecmascript, javascript, typescript, parser, syntax, eslint |
+| [typescript-eslint__typesc](./t/typescript-eslint__typescript-estree) | A parser that converts TypeScript source code into | ast, estree, ecmascript, javascript, typescript, parser, syntax |
 | [typescript-event-handler](./t/typescript-event-handler) | Event handler written in Typescript. | Typescript, Events |
 | [typescript-logic](./t/typescript-logic) | TypeScript generics to work with boolean types | logic, generic, typescript, boolean, true, false |
 | [typescript-optional](./t/typescript-optional) | Optional (like Java) implementation in TypeScript | java, optional, typescript |

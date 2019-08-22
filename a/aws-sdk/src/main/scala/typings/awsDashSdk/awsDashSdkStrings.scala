@@ -735,10 +735,14 @@ import typings.awsDashSdk.clientsFmsMod._DependentServiceName
 import typings.awsDashSdk.clientsFmsMod._PolicyComplianceStatusType
 import typings.awsDashSdk.clientsFmsMod._SecurityServiceType
 import typings.awsDashSdk.clientsFmsMod._ViolationReason
+import typings.awsDashSdk.clientsForecastserviceMod._DatasetType
+import typings.awsDashSdk.clientsForecastserviceMod._Domain
+import typings.awsDashSdk.clientsForecastserviceMod._EvaluationType
+import typings.awsDashSdk.clientsForecastserviceMod._FilterConditionString
+import typings.awsDashSdk.clientsForecastserviceMod._ScalingType
 import typings.awsDashSdk.clientsFsxMod._BackupLifecycle
 import typings.awsDashSdk.clientsFsxMod._FileSystemLifecycle
 import typings.awsDashSdk.clientsFsxMod._FileSystemMaintenanceOperation
-import typings.awsDashSdk.clientsFsxMod._FileSystemType
 import typings.awsDashSdk.clientsFsxMod._FilterName
 import typings.awsDashSdk.clientsGameliftMod._AcceptanceType
 import typings.awsDashSdk.clientsGameliftMod._BackfillMode
@@ -1598,6 +1602,8 @@ import typings.awsDashSdk.clientsSagemakerMod._DirectInternetAccess
 import typings.awsDashSdk.clientsSagemakerMod._EndpointConfigSortKey
 import typings.awsDashSdk.clientsSagemakerMod._EndpointSortKey
 import typings.awsDashSdk.clientsSagemakerMod._EndpointStatus
+import typings.awsDashSdk.clientsSagemakerMod._FileSystemAccessMode
+import typings.awsDashSdk.clientsSagemakerMod._FileSystemType
 import typings.awsDashSdk.clientsSagemakerMod._Framework
 import typings.awsDashSdk.clientsSagemakerMod._HyperParameterScalingType
 import typings.awsDashSdk.clientsSagemakerMod._HyperParameterTuningJobObjectiveType
@@ -1657,7 +1663,6 @@ import typings.awsDashSdk.clientsServicecatalogMod._AccessLevelFilterKey
 import typings.awsDashSdk.clientsServicecatalogMod._AccessStatus
 import typings.awsDashSdk.clientsServicecatalogMod._ChangeAction
 import typings.awsDashSdk.clientsServicecatalogMod._CopyProductStatus
-import typings.awsDashSdk.clientsServicecatalogMod._EvaluationType
 import typings.awsDashSdk.clientsServicecatalogMod._OrganizationNodeType
 import typings.awsDashSdk.clientsServicecatalogMod._PortfolioShareType
 import typings.awsDashSdk.clientsServicecatalogMod._ProductType
@@ -2605,6 +2610,11 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `2018-06-18`
     extends typings.awsDashSdk.clientsCloudfrontMod._apiVersion
+  
+  @js.native
+  sealed trait `2018-06-26`
+    extends typings.awsDashSdk.clientsForecastqueryserviceMod._apiVersion
+       with typings.awsDashSdk.clientsForecastserviceMod._apiVersion
   
   @js.native
   sealed trait `2018-06-27`
@@ -4715,6 +4725,7 @@ object awsDashSdkStrings {
   sealed trait Auto
     extends _ExecutionMode
        with _HyperParameterScalingType
+       with _ScalingType
        with _SnapshotType
        with _TrainingJobEarlyStoppingType
   
@@ -6012,6 +6023,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsCognitoidentityserviceproviderMod._UserStatusType
   
   @js.native
+  sealed trait COMPUTED extends _EvaluationType
+  
+  @js.native
   sealed trait COMPUTER extends _WakeWord
   
   @js.native
@@ -6485,6 +6499,7 @@ object awsDashSdkStrings {
        with _ChannelType
        with _ConferenceProviderType
        with _ConfigurationType
+       with _Domain
        with _ExtendedKeyUsageName
        with _KeyUsageName
        with typings.awsDashSdk.clientsMediaconvertMod._Type
@@ -8094,7 +8109,7 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait DYNAMIC
-    extends _EvaluationType
+    extends typings.awsDashSdk.clientsServicecatalogMod._EvaluationType
        with _FacetStyle
        with _H264SubGopLength
        with _InputSourceType
@@ -8512,6 +8527,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsLicensemanagerMod._ResourceType
   
   @js.native
+  sealed trait EC2_CAPACITY extends _Domain
+  
+  @js.native
   sealed trait EC2_HOST
     extends typings.awsDashSdk.clientsLicensemanagerMod._ResourceType
   
@@ -8576,6 +8594,9 @@ object awsDashSdkStrings {
     extends _CountryCode
        with _GeoMatchConstraintValue
        with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait EFS extends _FileSystemType
   
   @js.native
   sealed trait EG
@@ -9988,6 +10009,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait FRY extends _LanguageCode
+  
+  @js.native
+  sealed trait FSxLustre extends _FileSystemType
   
   @js.native
   sealed trait FUL extends _LanguageCode
@@ -11775,6 +11799,9 @@ object awsDashSdkStrings {
   sealed trait INVALID_SUBNET_CONFIGURATION extends _FleetErrorCode
   
   @js.native
+  sealed trait INVENTORY_PLANNING extends _Domain
+  
+  @js.native
   sealed trait INVERSE_TELECINE extends _DeinterlacerMode
   
   @js.native
@@ -11920,6 +11947,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IS
     extends _CountryCode
+       with _FilterConditionString
        with _GeoMatchConstraintValue
        with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
   
@@ -11935,6 +11963,9 @@ object awsDashSdkStrings {
        with _LoadBalancerTlsCertificateStatus
   
   @js.native
+  sealed trait IS_NOT extends _FilterConditionString
+  
+  @js.native
   sealed trait IT
     extends _CountryCode
        with _GeoMatchConstraintValue
@@ -11945,6 +11976,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait ITEM_DOES_NOT_EXIST extends _FailedItemErrorCode
+  
+  @js.native
+  sealed trait ITEM_METADATA extends _DatasetType
   
   @js.native
   sealed trait ITU_1770_1 extends _AudioNormalizationAlgorithm
@@ -13119,7 +13153,8 @@ object awsDashSdkStrings {
   sealed trait LUG extends _LanguageCode
   
   @js.native
-  sealed trait LUSTRE extends _FileSystemType
+  sealed trait LUSTRE
+    extends typings.awsDashSdk.clientsFsxMod._FileSystemType
   
   @js.native
   sealed trait LV
@@ -13284,7 +13319,9 @@ object awsDashSdkStrings {
        with _SplitType
   
   @js.native
-  sealed trait Linear extends _HyperParameterScalingType
+  sealed trait Linear
+    extends _HyperParameterScalingType
+       with _ScalingType
   
   @js.native
   sealed trait Linux
@@ -13346,7 +13383,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsCloudwatchlogsMod._OrderBy
   
   @js.native
-  sealed trait Logarithmic extends _HyperParameterScalingType
+  sealed trait Logarithmic
+    extends _HyperParameterScalingType
+       with _ScalingType
   
   @js.native
   sealed trait LoggingUpdate extends _UpdateType
@@ -13638,6 +13677,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait METRIC extends _DistanceUnit
+  
+  @js.native
+  sealed trait METRICS extends _Domain
   
   @js.native
   sealed trait MF
@@ -16933,6 +16975,9 @@ object awsDashSdkStrings {
   sealed trait REJECT_MESSAGE extends _BehaviorOnMxFailure
   
   @js.native
+  sealed trait RELATED_TIME_SERIES extends _DatasetType
+  
+  @js.native
   sealed trait RELATIONAL_DATABASE extends _DataSourceType
   
   @js.native
@@ -17218,6 +17263,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait RESULT_LOG extends _ArtifactType
+  
+  @js.native
+  sealed trait RETAIL extends _Domain
   
   @js.native
   sealed trait RETAIN extends _FileExistsBehavior
@@ -17767,7 +17815,9 @@ object awsDashSdkStrings {
   sealed trait Reverse extends _ChronologicalOrder
   
   @js.native
-  sealed trait ReverseLogarithmic extends _HyperParameterScalingType
+  sealed trait ReverseLogarithmic
+    extends _HyperParameterScalingType
+       with _ScalingType
   
   @js.native
   sealed trait Reviewable
@@ -18885,7 +18935,7 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait STATIC
-    extends _EvaluationType
+    extends typings.awsDashSdk.clientsServicecatalogMod._EvaluationType
        with _FacetStyle
        with _H264DynamicSubGop
        with _H265DynamicSubGop
@@ -19159,6 +19209,9 @@ object awsDashSdkStrings {
   sealed trait SUM
     extends typings.awsDashSdk.clientsConnectMod._Statistic
        with _Statistic
+  
+  @js.native
+  sealed trait SUMMARY extends _EvaluationType
   
   @js.native
   sealed trait SUN
@@ -19859,6 +19912,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait TAM extends _LanguageCode
+  
+  @js.native
+  sealed trait TARGET_TIME_SERIES extends _DatasetType
   
   @js.native
   sealed trait TASK
@@ -21770,6 +21826,9 @@ object awsDashSdkStrings {
   sealed trait WEB_PERFORMANCE_PROFILE extends _TestType
   
   @js.native
+  sealed trait WEB_TRAFFIC extends _Domain
+  
+  @js.native
   sealed trait WED extends _DayOfWeek
   
   @js.native
@@ -21830,7 +21889,7 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait WINDOWS
-    extends _FileSystemType
+    extends typings.awsDashSdk.clientsFsxMod._FileSystemType
        with _InstancePlatform
        with _OperatingSystem
        with _OperatingSystemType
@@ -21899,6 +21958,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait WORKSPACESUSER extends _UserType
+  
+  @js.native
+  sealed trait WORK_FORCE extends _Domain
   
   @js.native
   sealed trait WORK_IN_PROGRESS
@@ -24114,6 +24176,9 @@ object awsDashSdkStrings {
   sealed trait `file-system-id` extends _FilterName
   
   @js.native
+  sealed trait filling extends js.Object
+  
+  @js.native
   sealed trait firstUsedTime extends _ApplicationRevisionSortBy
   
   @js.native
@@ -24156,6 +24221,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait fleetStopped extends js.Object
+  
+  @js.native
+  sealed trait float
+    extends typings.awsDashSdk.clientsForecastserviceMod._AttributeType
   
   @js.native
   sealed trait fluentd extends _LogDriver
@@ -24702,6 +24771,10 @@ object awsDashSdkStrings {
   sealed trait `int-array` extends _IndexFieldType
   
   @js.native
+  sealed trait integer
+    extends typings.awsDashSdk.clientsForecastserviceMod._AttributeType
+  
+  @js.native
   sealed trait interface extends _NetworkInterfaceType
   
   @js.native
@@ -24938,6 +25011,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsOpsworkscmMod._apiVersion
        with typings.awsDashSdk.clientsIotanalyticsMod._apiVersion
        with typings.awsDashSdk.clientsAcmMod._apiVersion
+       with typings.awsDashSdk.clientsForecastqueryserviceMod._apiVersion
        with typings.awsDashSdk.clientsCloud9Mod._apiVersion
        with typings.awsDashSdk.clientsAthenaMod._apiVersion
        with typings.awsDashSdk.clientsGlobalacceleratorMod._apiVersion
@@ -25061,6 +25135,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMarketplacecommerceanalyticsMod._apiVersion
        with typings.awsDashSdk.clientsRoute53domainsMod._apiVersion
        with typings.awsDashSdk.clientsPersonalizeMod._apiVersion
+       with typings.awsDashSdk.clientsForecastserviceMod._apiVersion
        with typings.awsDashSdk.clientsSagemakerruntimeMod._apiVersion
        with typings.awsDashSdk.clientsLexruntimeMod._apiVersion
        with _apiVersion
@@ -25783,6 +25858,9 @@ object awsDashSdkStrings {
        with _ProductionVariantInstanceType
        with _TrainingInstanceType
        with _TransformInstanceType
+  
+  @js.native
+  sealed trait mlDOTp3dnDOT24xlarge extends _TrainingInstanceType
   
   @js.native
   sealed trait mlDOTt2DOT2xlarge
@@ -26919,6 +26997,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ro
     extends _AnalysisSchemeLanguage
+       with _FileSystemAccessMode
        with typings.awsDashSdk.clientsGreengrassMod._Permission
   
   @js.native
@@ -26978,7 +27057,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait rw
-    extends typings.awsDashSdk.clientsGreengrassMod._Permission
+    extends _FileSystemAccessMode
+       with typings.awsDashSdk.clientsGreengrassMod._Permission
   
   @js.native
   sealed trait s3
@@ -27304,7 +27384,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait string
-    extends _ContextKeyTypeEnum
+    extends typings.awsDashSdk.clientsForecastserviceMod._AttributeType
+       with _ContextKeyTypeEnum
        with _InventoryAttributeDataType
   
   @js.native
@@ -27566,6 +27647,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait timer extends _AutoScalingType
+  
+  @js.native
+  sealed trait timestamp
+    extends typings.awsDashSdk.clientsForecastserviceMod._AttributeType
   
   @js.native
   sealed trait tr extends _AnalysisSchemeLanguage
@@ -28393,6 +28478,8 @@ object awsDashSdkStrings {
   def `2018-05-23`: `2018-05-23` = "2018-05-23".asInstanceOf[`2018-05-23`]
   @scala.inline
   def `2018-06-18`: `2018-06-18` = "2018-06-18".asInstanceOf[`2018-06-18`]
+  @scala.inline
+  def `2018-06-26`: `2018-06-26` = "2018-06-26".asInstanceOf[`2018-06-26`]
   @scala.inline
   def `2018-06-27`: `2018-06-27` = "2018-06-27".asInstanceOf[`2018-06-27`]
   @scala.inline
@@ -30020,6 +30107,8 @@ object awsDashSdkStrings {
   @scala.inline
   def COMPROMISED: COMPROMISED = "COMPROMISED".asInstanceOf[COMPROMISED]
   @scala.inline
+  def COMPUTED: COMPUTED = "COMPUTED".asInstanceOf[COMPUTED]
+  @scala.inline
   def COMPUTER: COMPUTER = "COMPUTER".asInstanceOf[COMPUTER]
   @scala.inline
   def COMPUTE_TYPE: COMPUTE_TYPE = "COMPUTE_TYPE".asInstanceOf[COMPUTE_TYPE]
@@ -31126,6 +31215,8 @@ object awsDashSdkStrings {
   @scala.inline
   def EC2_AMI: EC2_AMI = "EC2_AMI".asInstanceOf[EC2_AMI]
   @scala.inline
+  def EC2_CAPACITY: EC2_CAPACITY = "EC2_CAPACITY".asInstanceOf[EC2_CAPACITY]
+  @scala.inline
   def EC2_HOST: EC2_HOST = "EC2_HOST".asInstanceOf[EC2_HOST]
   @scala.inline
   def EC2_INSTANCE: EC2_INSTANCE = "EC2_INSTANCE".asInstanceOf[EC2_INSTANCE]
@@ -31157,6 +31248,8 @@ object awsDashSdkStrings {
   def EDGE_CG: EDGE_CG = "EDGE_CG".asInstanceOf[EDGE_CG]
   @scala.inline
   def EE: EE = "EE".asInstanceOf[EE]
+  @scala.inline
+  def EFS: EFS = "EFS".asInstanceOf[EFS]
   @scala.inline
   def EG: EG = "EG".asInstanceOf[EG]
   @scala.inline
@@ -31755,6 +31848,8 @@ object awsDashSdkStrings {
   def FRM: FRM = "FRM".asInstanceOf[FRM]
   @scala.inline
   def FRY: FRY = "FRY".asInstanceOf[FRY]
+  @scala.inline
+  def FSxLustre: FSxLustre = "FSxLustre".asInstanceOf[FSxLustre]
   @scala.inline
   def FUL: FUL = "FUL".asInstanceOf[FUL]
   @scala.inline
@@ -32578,6 +32673,8 @@ object awsDashSdkStrings {
   @scala.inline
   def INVALID_SUBNET_CONFIGURATION: INVALID_SUBNET_CONFIGURATION = "INVALID_SUBNET_CONFIGURATION".asInstanceOf[INVALID_SUBNET_CONFIGURATION]
   @scala.inline
+  def INVENTORY_PLANNING: INVENTORY_PLANNING = "INVENTORY_PLANNING".asInstanceOf[INVENTORY_PLANNING]
+  @scala.inline
   def INVERSE_TELECINE: INVERSE_TELECINE = "INVERSE_TELECINE".asInstanceOf[INVERSE_TELECINE]
   @scala.inline
   def INVITE: INVITE = "INVITE".asInstanceOf[INVITE]
@@ -32636,11 +32733,15 @@ object awsDashSdkStrings {
   @scala.inline
   def ISSUED: ISSUED = "ISSUED".asInstanceOf[ISSUED]
   @scala.inline
+  def IS_NOT: IS_NOT = "IS_NOT".asInstanceOf[IS_NOT]
+  @scala.inline
   def IT: IT = "IT".asInstanceOf[IT]
   @scala.inline
   def ITA: ITA = "ITA".asInstanceOf[ITA]
   @scala.inline
   def ITEM_DOES_NOT_EXIST: ITEM_DOES_NOT_EXIST = "ITEM_DOES_NOT_EXIST".asInstanceOf[ITEM_DOES_NOT_EXIST]
+  @scala.inline
+  def ITEM_METADATA: ITEM_METADATA = "ITEM_METADATA".asInstanceOf[ITEM_METADATA]
   @scala.inline
   def ITU_1770_1: ITU_1770_1 = "ITU_1770_1".asInstanceOf[ITU_1770_1]
   @scala.inline
@@ -33495,6 +33596,8 @@ object awsDashSdkStrings {
   def METHOD: METHOD = "METHOD".asInstanceOf[METHOD]
   @scala.inline
   def METRIC: METRIC = "METRIC".asInstanceOf[METRIC]
+  @scala.inline
+  def METRICS: METRICS = "METRICS".asInstanceOf[METRICS]
   @scala.inline
   def MF: MF = "MF".asInstanceOf[MF]
   @scala.inline
@@ -35046,6 +35149,8 @@ object awsDashSdkStrings {
   @scala.inline
   def REJECT_MESSAGE: REJECT_MESSAGE = "REJECT_MESSAGE".asInstanceOf[REJECT_MESSAGE]
   @scala.inline
+  def RELATED_TIME_SERIES: RELATED_TIME_SERIES = "RELATED_TIME_SERIES".asInstanceOf[RELATED_TIME_SERIES]
+  @scala.inline
   def RELATIONAL_DATABASE: RELATIONAL_DATABASE = "RELATIONAL_DATABASE".asInstanceOf[RELATIONAL_DATABASE]
   @scala.inline
   def RELEASE: RELEASE = "RELEASE".asInstanceOf[RELEASE]
@@ -35205,6 +35310,8 @@ object awsDashSdkStrings {
   def RESULTS: RESULTS = "RESULTS".asInstanceOf[RESULTS]
   @scala.inline
   def RESULT_LOG: RESULT_LOG = "RESULT_LOG".asInstanceOf[RESULT_LOG]
+  @scala.inline
+  def RETAIL: RETAIL = "RETAIL".asInstanceOf[RETAIL]
   @scala.inline
   def RETAIN: RETAIN = "RETAIN".asInstanceOf[RETAIN]
   @scala.inline
@@ -36162,6 +36269,8 @@ object awsDashSdkStrings {
   @scala.inline
   def SUM: SUM = "SUM".asInstanceOf[SUM]
   @scala.inline
+  def SUMMARY: SUMMARY = "SUMMARY".asInstanceOf[SUMMARY]
+  @scala.inline
   def SUN: SUN = "SUN".asInstanceOf[SUN]
   @scala.inline
   def SUNDAY: SUNDAY = "SUNDAY".asInstanceOf[SUNDAY]
@@ -36499,6 +36608,8 @@ object awsDashSdkStrings {
   def TAINTED: TAINTED = "TAINTED".asInstanceOf[TAINTED]
   @scala.inline
   def TAM: TAM = "TAM".asInstanceOf[TAM]
+  @scala.inline
+  def TARGET_TIME_SERIES: TARGET_TIME_SERIES = "TARGET_TIME_SERIES".asInstanceOf[TARGET_TIME_SERIES]
   @scala.inline
   def TASK: TASK = "TASK".asInstanceOf[TASK]
   @scala.inline
@@ -37440,6 +37551,8 @@ object awsDashSdkStrings {
   @scala.inline
   def WEB_PERFORMANCE_PROFILE: WEB_PERFORMANCE_PROFILE = "WEB_PERFORMANCE_PROFILE".asInstanceOf[WEB_PERFORMANCE_PROFILE]
   @scala.inline
+  def WEB_TRAFFIC: WEB_TRAFFIC = "WEB_TRAFFIC".asInstanceOf[WEB_TRAFFIC]
+  @scala.inline
   def WED: WED = "WED".asInstanceOf[WED]
   @scala.inline
   def WEDNESDAY: WEDNESDAY = "WEDNESDAY".asInstanceOf[WEDNESDAY]
@@ -37499,6 +37612,8 @@ object awsDashSdkStrings {
   def WORKFLOW_TYPE_DOES_NOT_EXIST: WORKFLOW_TYPE_DOES_NOT_EXIST = "WORKFLOW_TYPE_DOES_NOT_EXIST".asInstanceOf[WORKFLOW_TYPE_DOES_NOT_EXIST]
   @scala.inline
   def WORKSPACESUSER: WORKSPACESUSER = "WORKSPACESUSER".asInstanceOf[WORKSPACESUSER]
+  @scala.inline
+  def WORK_FORCE: WORK_FORCE = "WORK_FORCE".asInstanceOf[WORK_FORCE]
   @scala.inline
   def WORK_IN_PROGRESS: WORK_IN_PROGRESS = "WORK_IN_PROGRESS".asInstanceOf[WORK_IN_PROGRESS]
   @scala.inline
@@ -38570,6 +38685,8 @@ object awsDashSdkStrings {
   @scala.inline
   def `file-system-id`: `file-system-id` = "file-system-id".asInstanceOf[`file-system-id`]
   @scala.inline
+  def filling: filling = "filling".asInstanceOf[filling]
+  @scala.inline
   def firstUsedTime: firstUsedTime = "firstUsedTime".asInstanceOf[firstUsedTime]
   @scala.inline
   def `fixed-response`: `fixed-response` = "fixed-response".asInstanceOf[`fixed-response`]
@@ -38597,6 +38714,8 @@ object awsDashSdkStrings {
   def fleetStarted: fleetStarted = "fleetStarted".asInstanceOf[fleetStarted]
   @scala.inline
   def fleetStopped: fleetStopped = "fleetStopped".asInstanceOf[fleetStopped]
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
   @scala.inline
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   @scala.inline
@@ -38885,6 +39004,8 @@ object awsDashSdkStrings {
   def int: int = "int".asInstanceOf[int]
   @scala.inline
   def `int-array`: `int-array` = "int-array".asInstanceOf[`int-array`]
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
   def interface: interface = "interface".asInstanceOf[interface]
   @scala.inline
@@ -39335,6 +39456,8 @@ object awsDashSdkStrings {
   def mlDOTp3DOT2xlarge: mlDOTp3DOT2xlarge = "ml.p3.2xlarge".asInstanceOf[mlDOTp3DOT2xlarge]
   @scala.inline
   def mlDOTp3DOT8xlarge: mlDOTp3DOT8xlarge = "ml.p3.8xlarge".asInstanceOf[mlDOTp3DOT8xlarge]
+  @scala.inline
+  def mlDOTp3dnDOT24xlarge: mlDOTp3dnDOT24xlarge = "ml.p3dn.24xlarge".asInstanceOf[mlDOTp3dnDOT24xlarge]
   @scala.inline
   def mlDOTt2DOT2xlarge: mlDOTt2DOT2xlarge = "ml.t2.2xlarge".asInstanceOf[mlDOTt2DOT2xlarge]
   @scala.inline
@@ -40283,6 +40406,8 @@ object awsDashSdkStrings {
   def th: th = "th".asInstanceOf[th]
   @scala.inline
   def timer: timer = "timer".asInstanceOf[timer]
+  @scala.inline
+  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   @scala.inline
   def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline

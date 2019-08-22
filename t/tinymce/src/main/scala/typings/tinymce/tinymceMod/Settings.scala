@@ -5,6 +5,7 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import typings.std.Window
 import typings.tinymce.tinymceMod.settingsNs.Menu
+import typings.tinymce.tinymceNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -128,7 +129,7 @@ trait Settings extends js.Object {
   var selection_toolbar: js.UndefOr[String] = js.undefined
   var selector: js.UndefOr[String] = js.undefined
   var setup: js.UndefOr[js.Function1[/* edtor */ Editor, Unit]] = js.undefined
-  var skin: js.UndefOr[String] = js.undefined
+  var skin: js.UndefOr[`false` | String] = js.undefined
   var skin_url: js.UndefOr[String] = js.undefined
   var spellchecker_active: js.UndefOr[Boolean] = js.undefined
   var spellchecker_dialog: js.UndefOr[Boolean] = js.undefined
@@ -275,7 +276,7 @@ object Settings {
     selection_toolbar: String = null,
     selector: String = null,
     setup: /* edtor */ Editor => Unit = null,
-    skin: String = null,
+    skin: `false` | String = null,
     skin_url: String = null,
     spellchecker_active: js.UndefOr[Boolean] = js.undefined,
     spellchecker_dialog: js.UndefOr[Boolean] = js.undefined,
@@ -417,7 +418,7 @@ object Settings {
     if (selection_toolbar != null) __obj.updateDynamic("selection_toolbar")(selection_toolbar)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
-    if (skin != null) __obj.updateDynamic("skin")(skin)
+    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (skin_url != null) __obj.updateDynamic("skin_url")(skin_url)
     if (!js.isUndefined(spellchecker_active)) __obj.updateDynamic("spellchecker_active")(spellchecker_active)
     if (!js.isUndefined(spellchecker_dialog)) __obj.updateDynamic("spellchecker_dialog")(spellchecker_dialog)

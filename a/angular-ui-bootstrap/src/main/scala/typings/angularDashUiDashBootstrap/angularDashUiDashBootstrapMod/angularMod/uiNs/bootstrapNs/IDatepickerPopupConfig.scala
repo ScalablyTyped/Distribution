@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDatepickerPopupConfig
-  extends typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IDatepickerConfig {
+trait IDatepickerPopupConfig extends IDatepickerConfig {
   /**
     * A list of alternate formats acceptable for manual entry.
     *

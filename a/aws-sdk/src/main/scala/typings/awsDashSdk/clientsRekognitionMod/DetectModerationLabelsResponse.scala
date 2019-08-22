@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DetectModerationLabelsResponse extends js.Object {
   /**
-    * Array of detected Moderation labels and the time, in millseconds from the start of the video, they were detected.
+    * Array of detected Moderation labels and the time, in milliseconds from the start of the video, they were detected.
     */
   var ModerationLabels: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.ModerationLabels] = js.undefined
   /**

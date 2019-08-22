@@ -7,7 +7,7 @@ import typings.atIonicCore.atIonicCoreStrings.middle
 import typings.atIonicCore.atIonicCoreStrings.top
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastButton
 import typings.atIonicCore.distTypesInterfaceMod.Color
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`

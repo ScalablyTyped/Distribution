@@ -237,6 +237,26 @@ trait Long extends js.Object {
     */
   def rem(other: Long): Long = js.native
   /**
+    * Returns this Long with bits rotated to the left by the given amount.
+    */
+  def rotateLeft(numBits: Double): Long = js.native
+  def rotateLeft(numBits: Long): Long = js.native
+  /**
+    * Returns this Long with bits rotated to the right by the given amount.
+    */
+  def rotateRight(numBits: Double): Long = js.native
+  def rotateRight(numBits: Long): Long = js.native
+  /**
+    * Returns this Long with bits rotated to the left by the given amount.
+    */
+  def rotl(numBits: Double): Long = js.native
+  def rotl(numBits: Long): Long = js.native
+  /**
+    * Returns this Long with bits rotated to the right by the given amount.
+    */
+  def rotr(numBits: Double): Long = js.native
+  def rotr(numBits: Long): Long = js.native
+  /**
     * Returns this Long with bits shifted to the left by the given amount.
     */
   def shiftLeft(numBits: Double): Long = js.native

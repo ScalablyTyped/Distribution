@@ -13,13 +13,18 @@ trait CreateQueueRequest extends js.Object {
     * The name of the new queue. The following limits apply to this name:   A queue name can have up to 80 characters.   Valid values: alphanumeric characters, hyphens (-), and underscores (_).   A FIFO queue name must end with the .fifo suffix.   Queue URLs and names are case-sensitive.
     */
   var QueueName: String
+  /**
+    * Add cost allocation tags to the specified Amazon SQS queue. For an overview, see Tagging Your Amazon SQS Queues in the Amazon Simple Queue Service Developer Guide. When you use queue tags, keep the following guidelines in mind:   Adding more than 50 tags to a queue isn't recommended.   Tags don't have any semantic meaning. Amazon SQS interprets tags as character strings.   Tags are case-sensitive.   A new tag with a key identical to that of an existing tag overwrites the existing tag.   For a full list of tag restrictions, see Limits Related to Queues in the Amazon Simple Queue Service Developer Guide.  To be able to tag a queue on creation, you must have the sqs:CreateQueue and sqs:TagQueue permissions. Cross-account permissions don't apply to this action. For more information, see Grant Cross-Account Permissions to a Role and a User Name in the Amazon Simple Queue Service Developer Guide. 
+    */
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 
 object CreateQueueRequest {
   @scala.inline
-  def apply(QueueName: String, Attributes: QueueAttributeMap = null): CreateQueueRequest = {
+  def apply(QueueName: String, Attributes: QueueAttributeMap = null, tags: TagMap = null): CreateQueueRequest = {
     val __obj = js.Dynamic.literal(QueueName = QueueName)
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateQueueRequest]
   }
 }

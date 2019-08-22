@@ -1,8 +1,10 @@
 package typings.atIonicCore.distTypesComponentsMod.ComponentsNs
 
 import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuControllerI
+import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuI
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonMenuElement
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,6 +61,7 @@ trait IonMenuController extends js.Object {
     */
   def open(): js.Promise[Boolean] = js.native
   def open(menu: String): js.Promise[Boolean] = js.native
+  def registerAnimation(name: String, animation: js.Function1[/* menu */ MenuI, Animation]): js.Promise[Unit] = js.native
   /**
     * Registers a new animation that can be used with any `ion-menu` by passing the name of the animation in its `type` property.
     * @param name The name of the animation to register.

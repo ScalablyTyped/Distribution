@@ -13,6 +13,10 @@ import scala.scalajs.js.annotation._
   */
 trait ApnsConfig extends js.Object {
   /**
+    * Options for features provided by the FCM SDK for iOS.
+    */
+  var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.undefined
+  /**
     * A collection of APNs headers. Header values must be strings.
     */
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -24,8 +28,13 @@ trait ApnsConfig extends js.Object {
 
 object ApnsConfig {
   @scala.inline
-  def apply(headers: StringDictionary[String] = null, payload: ApnsPayload = null): ApnsConfig = {
+  def apply(
+    fcmOptions: ApnsFcmOptions = null,
+    headers: StringDictionary[String] = null,
+    payload: ApnsPayload = null
+  ): ApnsConfig = {
     val __obj = js.Dynamic.literal()
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (payload != null) __obj.updateDynamic("payload")(payload)
     __obj.asInstanceOf[ApnsConfig]

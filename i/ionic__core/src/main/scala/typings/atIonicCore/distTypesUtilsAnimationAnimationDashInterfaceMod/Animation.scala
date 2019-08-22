@@ -1,8 +1,8 @@
 package typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicCore.Anon_ClearExistingCallbacks
+import typings.std.Element
+import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.NodeList
 import scala.scalajs.js
@@ -10,54 +10,72 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Animation
-  extends Instantiable0[js.Any] {
-  var hasChildren: Boolean = js.native
-  var hasCompleted: Boolean = js.native
-  var parent: js.UndefOr[Animation] = js.native
-  def add(childAnimation: Animation): Animation = js.native
-  def addElement(el: js.Array[Node]): Animation = js.native
+trait Animation extends js.Object {
+  var childAnimations: js.Array[Animation] = js.native
+  var elements: js.Array[HTMLElement] = js.native
+  var parentAnimation: js.UndefOr[Animation] = js.native
+  def addAnimation(): Animation = js.native
+  def addAnimation(animationToADd: js.Array[Animation]): Animation = js.native
+  def addAnimation(animationToADd: Animation): Animation = js.native
+  def addElement(): Animation = js.native
+  def addElement(el: js.Array[Element | Node]): Animation = js.native
+  def addElement(el: Element): Animation = js.native
   def addElement(el: Node): Animation = js.native
   def addElement(el: NodeList): Animation = js.native
+  def afterAddClass(): Animation = js.native
   def afterAddClass(className: String): Animation = js.native
+  def afterAddClass(className: js.Array[String]): Animation = js.native
+  def afterAddRead(readFn: js.Function0[Unit]): Animation = js.native
+  def afterAddWrite(writeFn: js.Function0[Unit]): Animation = js.native
   def afterClearStyles(propertyNames: js.Array[String]): Animation = js.native
+  def afterRemoveClass(): Animation = js.native
   def afterRemoveClass(className: String): Animation = js.native
+  def afterRemoveClass(className: js.Array[String]): Animation = js.native
   def afterStyles(styles: StringDictionary[js.Any]): Animation = js.native
+  def animationFinish(): Unit = js.native
+  def beforeAddClass(): Animation = js.native
   def beforeAddClass(className: String): Animation = js.native
-  def beforeAddRead(domReadFn: js.Function0[Unit]): Animation = js.native
-  def beforeAddWrite(domWriteFn: js.Function0[Unit]): Animation = js.native
+  def beforeAddClass(className: js.Array[String]): Animation = js.native
+  def beforeAddRead(readFn: js.Function0[Unit]): Animation = js.native
+  def beforeAddWrite(writeFn: js.Function0[Unit]): Animation = js.native
   def beforeClearStyles(propertyNames: js.Array[String]): Animation = js.native
+  def beforeRemoveClass(): Animation = js.native
   def beforeRemoveClass(className: String): Animation = js.native
+  def beforeRemoveClass(className: js.Array[String]): Animation = js.native
   def beforeStyles(styles: StringDictionary[js.Any]): Animation = js.native
-  def destroy(): Unit = js.native
-  def duration(milliseconds: Double): Animation = js.native
-  def easing(name: String): Animation = js.native
-  def easingReverse(name: String): Animation = js.native
-  def from(prop: String, `val`: js.Any): Animation = js.native
-  def fromTo(prop: String, fromVal: js.Any, toVal: js.Any): Animation = js.native
-  def fromTo(prop: String, fromVal: js.Any, toVal: js.Any, clearProperyAfterTransition: Boolean): Animation = js.native
-  def getDuration(): Double = js.native
-  def getDuration(opts: PlayOptions): Double = js.native
-  def getEasing(): String = js.native
-  def isRoot(): Boolean = js.native
-  def onFinish(callback: js.Function1[/* animation */ js.UndefOr[this.type], Unit]): Animation = js.native
-  def onFinish(
-    callback: js.Function1[/* animation */ js.UndefOr[this.type], Unit],
-    opts: Anon_ClearExistingCallbacks
-  ): Animation = js.native
-  def play(): Unit = js.native
-  def play(opts: PlayOptions): Unit = js.native
+  def clearOnFinish(): Animation = js.native
+  def delay(delay: Double): Animation = js.native
+  def destroy(): Animation = js.native
+  def direction(): Animation = js.native
+  def direction(direction: AnimationDirection): Animation = js.native
+  def duration(duration: Double): Animation = js.native
+  def easing(easing: String): Animation = js.native
+  def fill(): Animation = js.native
+  def fill(fill: AnimationFill): Animation = js.native
+  def from(property: String, value: js.Any): Animation = js.native
+  def fromTo(property: String, fromValue: js.Any, toValue: js.Any): Animation = js.native
+  def getDelay(): js.UndefOr[Double] = js.native
+  def getDirection(): js.UndefOr[AnimationDirection] = js.native
+  def getDuration(): js.UndefOr[Double] = js.native
+  def getEasing(): js.UndefOr[String] = js.native
+  def getFill(): js.UndefOr[AnimationFill] = js.native
+  def getIterations(): js.UndefOr[Double] = js.native
+  def getKeyframes(): js.Array[_] = js.native
+  def getWebAnimations(): js.Array[_] = js.native
+  def iterations(iterations: Double): Animation = js.native
+  def keyframes(keyframes: js.Array[_]): Animation = js.native
+  def onFinish(callback: js.Any): Animation = js.native
+  def parent(animation: Animation): Animation = js.native
+  def pause(): Animation = js.native
+  def play(): Animation = js.native
   def playAsync(): js.Promise[Animation] = js.native
-  def playAsync(opts: PlayOptions): js.Promise[Animation] = js.native
-  def playSync(): Unit = js.native
-  def progressEnd(shouldComplete: Boolean, currentStepValue: Double, dur: Double): Unit = js.native
-  def progressStart(): Unit = js.native
-  def progressStep(stepValue: Double): Unit = js.native
-  def reverse(): Animation = js.native
-  def reverse(shouldReverse: Boolean): Animation = js.native
-  def stop(): Unit = js.native
-  def stop(stepValue: Double): Unit = js.native
-  def to(prop: String, `val`: js.Any): Animation = js.native
-  def to(prop: String, `val`: js.Any, clearProperyAfterTransition: Boolean): Animation = js.native
+  def playSync(): Animation = js.native
+  def progressEnd(shouldComplete: Boolean, step: Double): Animation = js.native
+  def progressEnd(shouldComplete: Boolean, step: Double, dur: Double): Animation = js.native
+  def progressStart(forceLinearEasing: Boolean): Animation = js.native
+  def progressStep(step: Double): Animation = js.native
+  def stop(): Animation = js.native
+  def to(property: String, value: js.Any): Animation = js.native
+  def update(deep: Boolean): Animation = js.native
 }
 

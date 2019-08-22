@@ -21,6 +21,9 @@ trait Workteam extends js.Object {
     * The Amazon Cognito user groups that make up the work team.
     */
   var MemberDefinitions: typings.awsDashSdk.clientsSagemakerMod.MemberDefinitions
+  /**
+    * Configures SNS notifications of available or expiring work items for work teams.
+    */
   var NotificationConfiguration: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotificationConfiguration] = js.undefined
   /**
     * The Amazon Marketplace identifier for a vendor's work team.

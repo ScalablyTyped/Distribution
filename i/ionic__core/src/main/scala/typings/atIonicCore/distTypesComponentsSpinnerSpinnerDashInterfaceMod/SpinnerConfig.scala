@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait SpinnerConfig extends js.Object {
   var circles: js.UndefOr[Double] = js.undefined
   var dur: Double
+  var elmDuration: js.UndefOr[Boolean] = js.undefined
   var lines: js.UndefOr[Double] = js.undefined
   def fn(dur: Double, index: Double, total: Double): SpinnerData
 }
@@ -17,10 +18,12 @@ object SpinnerConfig {
     dur: Double,
     fn: (Double, Double, Double) => SpinnerData,
     circles: Int | Double = null,
+    elmDuration: js.UndefOr[Boolean] = js.undefined,
     lines: Int | Double = null
   ): SpinnerConfig = {
     val __obj = js.Dynamic.literal(dur = dur, fn = js.Any.fromFunction3(fn))
     if (circles != null) __obj.updateDynamic("circles")(circles.asInstanceOf[js.Any])
+    if (!js.isUndefined(elmDuration)) __obj.updateDynamic("elmDuration")(elmDuration)
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerConfig]
   }

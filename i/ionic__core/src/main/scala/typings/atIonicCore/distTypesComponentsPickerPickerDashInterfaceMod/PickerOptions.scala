@@ -1,7 +1,7 @@
 package typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod
 
 import typings.atIonicCore.distTypesInterfaceMod.Mode
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,13 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSXNs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atIonicCore.atIonicCoreStrings.decimal
 import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.atIonicCoreStrings.none
 import typings.atIonicCore.atIonicCoreStrings.number
+import typings.atIonicCore.atIonicCoreStrings.numeric
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.on
 import typings.atIonicCore.atIonicCoreStrings.password
@@ -73,6 +76,11 @@ trait IonSearchbar extends HTMLAttributes[HTMLIonSearchbarElement] {
     * If `true`, the user cannot interact with the input.
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * A hint to the browser for which keyboard to display. Possible values are: `"none"` | `"text"` | `"tel"` | `"url"` | `"email"` | `"numeric"` | `"decimal"` | `"search"`.
+    */
+  @JSName("inputmode")
+  var inputmode_IonSearchbar: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -160,7 +168,7 @@ object IonSearchbar {
     inlist: js.Any = null,
     innerHTML: String = null,
     inputMode: String = null,
-    inputmode: String = null,
+    inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -348,7 +356,7 @@ object IonSearchbar {
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML)
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
-    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode)
+    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

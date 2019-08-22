@@ -32,10 +32,6 @@ trait ITransitionService extends js.Object {
     * @return A promise that is resolved when the transition finishes.
     */
   def apply(element: IAugmentedJQuery, trigger: js.Any): IPromise[IAugmentedJQuery] = js.native
-  def apply(
-    element: IAugmentedJQuery,
-    trigger: js.Any,
-    options: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.ITransitionServiceOptions
-  ): IPromise[IAugmentedJQuery] = js.native
+  def apply(element: IAugmentedJQuery, trigger: js.Any, options: ITransitionServiceOptions): IPromise[IAugmentedJQuery] = js.native
 }
 

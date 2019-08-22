@@ -10,7 +10,7 @@ trait StartLabelDetectionRequest extends js.Object {
     */
   var ClientRequestToken: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.ClientRequestToken] = js.undefined
   /**
-    * Unique identifier you specify to identify the job in the completion status published to the Amazon Simple Notification Service topic. 
+    * An identifier you specify that's returned in the completion notification that's published to your Amazon Simple Notification Service topic. For example, you can use JobTag to group related jobs and identify them in the completion notification.
     */
   var JobTag: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.JobTag] = js.undefined
   /**

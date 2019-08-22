@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular__router"
-version := "8.2.2-71dba2"
+version := "8.2.3-4ec3e8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__common" % "8.2.2-934acb",
-  "org.scalablytyped" %%% "angular__core" % "8.2.2-1b87e9",
+  "org.scalablytyped" %%% "angular__common" % "8.2.3-0e51a4",
+  "org.scalablytyped" %%% "angular__core" % "8.2.3-1b87e9",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-1ca89d",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

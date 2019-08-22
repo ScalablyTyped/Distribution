@@ -34,8 +34,11 @@ import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.Picke
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
 import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
-import typings.std.Window
+import typings.atIonicCore.distTypesUtilsGestureMod.Gesture
+import typings.atIonicCore.distTypesUtilsGestureMod.GestureConfig
+import typings.atIonicCore.distTypesUtilsPlatformMod.IsPlatformSignature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,11 +51,15 @@ object distTypesMod extends js.Object {
   val LIFECYCLE_WILL_ENTER: ionViewWillEnter = js.native
   val LIFECYCLE_WILL_LEAVE: ionViewWillLeave = js.native
   val LIFECYCLE_WILL_UNLOAD: ionViewWillUnload = js.native
-  def getPlatforms(win: js.Any): js.Array[String] = js.native
-  def isPlatform(
-    win: Window,
-    platform: ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ): Boolean = js.native
+  val isPlatform: IsPlatformSignature = js.native
+  def createAnimation(): Animation = js.native
+  def createGesture(config: GestureConfig): Gesture = js.native
+  def getPlatforms(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
+  def getPlatforms(win: js.Any): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
   def setupConfig(config: IonicConfig): js.Any = js.native
   @js.native
   object actionSheetController extends js.Object {

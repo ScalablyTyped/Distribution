@@ -126,6 +126,16 @@ class ShapeView () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ShapeView): Unit = js.native
   /**
+    *
+    * Shows particular overlay on the Shape.
+    *
+    * [Api set:  1.1]
+    *
+    * @param overlayId overlay id in context
+    * @param show to show or hide
+    */
+  def showOverlay(overlayId: Double, show: Boolean): Unit = js.native
+  /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.ShapeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeViewData`) that contains shallow copies of any loaded child properties from the original object.
     */

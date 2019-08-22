@@ -11,6 +11,8 @@ import typings.atIonicCore.distTypesInterfaceMod.Mode
 import typings.atIonicCore.distTypesInterfaceMod.PredefinedColors
 import typings.atIonicCore.distTypesInterfaceMod.Side
 import typings.atIonicCore.distTypesInterfaceMod.TextFieldTypes
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationDirection
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationFill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,6 +58,12 @@ object atIonicCoreStrings {
   sealed trait alphabetic extends js.Object
   
   @js.native
+  sealed trait alternate extends AnimationDirection
+  
+  @js.native
+  sealed trait `alternate-reverse` extends AnimationDirection
+  
+  @js.native
   sealed trait android extends js.Object
   
   @js.native
@@ -65,7 +73,7 @@ object atIonicCoreStrings {
   sealed trait async extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends AnimationFill
   
   @js.native
   sealed trait back
@@ -82,6 +90,9 @@ object atIonicCoreStrings {
   sealed trait backdrop extends js.Object
   
   @js.native
+  sealed trait backwards extends AnimationFill
+  
+  @js.native
   sealed trait baseline extends js.Object
   
   @js.native
@@ -92,6 +103,9 @@ object atIonicCoreStrings {
   
   @js.native
   sealed trait block extends js.Object
+  
+  @js.native
+  sealed trait both extends AnimationFill
   
   @js.native
   sealed trait bottom extends js.Object
@@ -136,6 +150,9 @@ object atIonicCoreStrings {
   sealed trait date extends TextFieldTypes
   
   @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
   sealed trait default extends js.Object
   
   @js.native
@@ -178,6 +195,9 @@ object atIonicCoreStrings {
   sealed trait forward
     extends NavDirection
        with RouterDirection
+  
+  @js.native
+  sealed trait forwards extends AnimationFill
   
   @js.native
   sealed trait full extends js.Object
@@ -360,13 +380,19 @@ object atIonicCoreStrings {
   sealed trait no extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends AnimationFill
   
   @js.native
   sealed trait nonzero extends js.Object
   
   @js.native
+  sealed trait normal extends AnimationDirection
+  
+  @js.native
   sealed trait number extends TextFieldTypes
+  
+  @js.native
+  sealed trait numeric extends js.Object
   
   @js.native
   sealed trait off extends js.Object
@@ -421,6 +447,9 @@ object atIonicCoreStrings {
   
   @js.native
   sealed trait reset extends js.Object
+  
+  @js.native
+  sealed trait reverse extends AnimationDirection
   
   @js.native
   sealed trait rippleEffect extends js.Object
@@ -569,6 +598,10 @@ object atIonicCoreStrings {
   @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   @scala.inline
+  def alternate: alternate = "alternate".asInstanceOf[alternate]
+  @scala.inline
+  def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
+  @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
   def animated: animated = "animated".asInstanceOf[animated]
@@ -585,6 +618,8 @@ object atIonicCoreStrings {
   @scala.inline
   def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
   @scala.inline
+  def backwards: backwards = "backwards".asInstanceOf[backwards]
+  @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   @scala.inline
   def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
@@ -592,6 +627,8 @@ object atIonicCoreStrings {
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline
   def block: block = "block".asInstanceOf[block]
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -621,6 +658,8 @@ object atIonicCoreStrings {
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
@@ -648,6 +687,8 @@ object atIonicCoreStrings {
   def footer: footer = "footer".asInstanceOf[footer]
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
+  @scala.inline
+  def forwards: forwards = "forwards".asInstanceOf[forwards]
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   @scala.inline
@@ -765,7 +806,11 @@ object atIonicCoreStrings {
   @scala.inline
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
@@ -802,6 +847,8 @@ object atIonicCoreStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
+  def reverse: reverse = "reverse".asInstanceOf[reverse]
   @scala.inline
   def rippleEffect: rippleEffect = "rippleEffect".asInstanceOf[rippleEffect]
   @scala.inline

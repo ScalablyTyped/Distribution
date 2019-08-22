@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait GetContentModerationResponse extends js.Object {
   /**
-    * The current status of the content moderation job.
+    * The current status of the unsafe content analysis job.
     */
   var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
   /**
-    * The detected moderation labels and the time(s) they were detected.
+    * The detected unsafe content labels and the time(s) they were detected.
     */
   var ModerationLabels: js.UndefOr[ContentModerationDetections] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait GetContentModerationResponse extends js.Object {
     */
   var ModerationModelVersion: js.UndefOr[String] = js.undefined
   /**
-    * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of moderation labels. 
+    * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of unsafe content labels. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   /**

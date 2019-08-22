@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait AllowedNodeTypeModificationsMessage extends js.Object {
   /**
+    * A string list, each element of which specifies a cache node type which you can use to scale your cluster or replication group. When scaling down on a Redis cluster or replication group using ModifyCacheCluster or ModifyReplicationGroup, use a value from this list for the CacheNodeType parameter.
+    */
+  var ScaleDownModifications: js.UndefOr[NodeTypeList] = js.undefined
+  /**
     * A string list, each element of which specifies a cache node type which you can use to scale your cluster or replication group. When scaling up a Redis cluster or replication group using ModifyCacheCluster or ModifyReplicationGroup, use a value from this list for the CacheNodeType parameter.
     */
   var ScaleUpModifications: js.UndefOr[NodeTypeList] = js.undefined
@@ -13,8 +17,9 @@ trait AllowedNodeTypeModificationsMessage extends js.Object {
 
 object AllowedNodeTypeModificationsMessage {
   @scala.inline
-  def apply(ScaleUpModifications: NodeTypeList = null): AllowedNodeTypeModificationsMessage = {
+  def apply(ScaleDownModifications: NodeTypeList = null, ScaleUpModifications: NodeTypeList = null): AllowedNodeTypeModificationsMessage = {
     val __obj = js.Dynamic.literal()
+    if (ScaleDownModifications != null) __obj.updateDynamic("ScaleDownModifications")(ScaleDownModifications)
     if (ScaleUpModifications != null) __obj.updateDynamic("ScaleUpModifications")(ScaleUpModifications)
     __obj.asInstanceOf[AllowedNodeTypeModificationsMessage]
   }

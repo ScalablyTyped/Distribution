@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetContentModerationRequest extends js.Object {
   /**
-    * The identifier for the content moderation job. Use JobId to identify the job in a subsequent call to GetContentModeration.
+    * The identifier for the unsafe content job. Use JobId to identify the job in a subsequent call to GetContentModeration.
     */
   var JobId: typings.awsDashSdk.clientsRekognitionMod.JobId
   /**
@@ -14,7 +14,7 @@ trait GetContentModerationRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.MaxResults] = js.undefined
   /**
-    * If the previous response was incomplete (because there is more data to retrieve), Amazon Rekognition returns a pagination token in the response. You can use this pagination token to retrieve the next set of content moderation labels.
+    * If the previous response was incomplete (because there is more data to retrieve), Amazon Rekognition returns a pagination token in the response. You can use this pagination token to retrieve the next set of unsafe content labels.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   /**

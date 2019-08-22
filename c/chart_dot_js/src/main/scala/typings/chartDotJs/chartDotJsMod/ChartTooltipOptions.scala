@@ -30,7 +30,14 @@ trait ChartTooltipOptions extends js.Object {
   var footerMarginTop: js.UndefOr[Double] = js.undefined
   var footerSpacing: js.UndefOr[Double] = js.undefined
   var intersect: js.UndefOr[Boolean] = js.undefined
-  var itemSort: js.UndefOr[js.Function2[/* itemA */ ChartTooltipItem, /* itemB */ ChartTooltipItem, Double]] = js.undefined
+  var itemSort: js.UndefOr[
+    js.Function3[
+      /* itemA */ ChartTooltipItem, 
+      /* itemB */ ChartTooltipItem, 
+      /* data */ js.UndefOr[ChartData], 
+      Double
+    ]
+  ] = js.undefined
   var mode: js.UndefOr[InteractionMode] = js.undefined
   var multiKeyBackground: js.UndefOr[String] = js.undefined
   var position: js.UndefOr[String] = js.undefined
@@ -73,7 +80,7 @@ object ChartTooltipOptions {
     footerMarginTop: Int | Double = null,
     footerSpacing: Int | Double = null,
     intersect: js.UndefOr[Boolean] = js.undefined,
-    itemSort: (/* itemA */ ChartTooltipItem, /* itemB */ ChartTooltipItem) => Double = null,
+    itemSort: (/* itemA */ ChartTooltipItem, /* itemB */ ChartTooltipItem, /* data */ js.UndefOr[ChartData]) => Double = null,
     mode: InteractionMode = null,
     multiKeyBackground: String = null,
     position: String = null,
@@ -113,7 +120,7 @@ object ChartTooltipOptions {
     if (footerMarginTop != null) __obj.updateDynamic("footerMarginTop")(footerMarginTop.asInstanceOf[js.Any])
     if (footerSpacing != null) __obj.updateDynamic("footerSpacing")(footerSpacing.asInstanceOf[js.Any])
     if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect)
-    if (itemSort != null) __obj.updateDynamic("itemSort")(js.Any.fromFunction2(itemSort))
+    if (itemSort != null) __obj.updateDynamic("itemSort")(js.Any.fromFunction3(itemSort))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (multiKeyBackground != null) __obj.updateDynamic("multiKeyBackground")(multiKeyBackground)
     if (position != null) __obj.updateDynamic("position")(position)

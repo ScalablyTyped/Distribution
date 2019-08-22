@@ -1,6 +1,7 @@
 package typings.atMaterialDashUiLab
 
 import typings.atMaterialDashUiLab.ratingRatingMod.RatingClassKey
+import typings.atMaterialDashUiLab.skeletonSkeletonMod.SkeletonClassKey
 import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
 import typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
 import typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialClassKey
@@ -28,6 +29,9 @@ object atMaterialDashUiLabStrings {
   sealed trait all extends js.Object
   
   @js.native
+  sealed trait animate extends SkeletonClassKey
+  
+  @js.native
   sealed trait ascending extends js.Object
   
   @js.native
@@ -50,6 +54,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait buttonClosed extends SpeedDialActionClassKey
+  
+  @js.native
+  sealed trait circle extends SkeletonClassKey
   
   @js.native
   sealed trait contained extends js.Object
@@ -231,6 +238,9 @@ object atMaterialDashUiLabStrings {
   sealed trait readOnly extends RatingClassKey
   
   @js.native
+  sealed trait rect extends SkeletonClassKey
+  
+  @js.native
   sealed trait removals extends js.Object
   
   @js.native
@@ -248,6 +258,7 @@ object atMaterialDashUiLabStrings {
   @js.native
   sealed trait root
     extends RatingClassKey
+       with SkeletonClassKey
        with SpeedDialActionClassKey
        with SpeedDialClassKey
        with SpeedDialIconClassKey
@@ -278,7 +289,7 @@ object atMaterialDashUiLabStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text extends SkeletonClassKey
   
   @js.native
   sealed trait time extends js.Object
@@ -315,6 +326,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
+  def animate: animate = "animate".asInstanceOf[animate]
+  @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
@@ -330,6 +343,8 @@ object atMaterialDashUiLabStrings {
   def button: button = "button".asInstanceOf[button]
   @scala.inline
   def buttonClosed: buttonClosed = "buttonClosed".asInstanceOf[buttonClosed]
+  @scala.inline
+  def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def contained: contained = "contained".asInstanceOf[contained]
   @scala.inline
@@ -446,6 +461,8 @@ object atMaterialDashUiLabStrings {
   def raised: raised = "raised".asInstanceOf[raised]
   @scala.inline
   def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
+  @scala.inline
+  def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline

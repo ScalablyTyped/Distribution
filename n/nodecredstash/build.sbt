@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "nodecredstash"
-version := "2.0-dt-20180327Z-ee2b0e"
+version := "2.0-dt-20180327Z-86d8d9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.514.0-20cd43",
+  "org.scalablytyped" %%% "aws-sdk" % "2.515.0-5f9734",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

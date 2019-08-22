@@ -26,6 +26,10 @@ trait AndroidConfig extends js.Object {
     */
   var data: js.UndefOr[StringDictionary[String]] = js.undefined
   /**
+    * Options for features provided by the FCM SDK for Android.
+    */
+  var fcmOptions: js.UndefOr[AndroidFcmOptions] = js.undefined
+  /**
     * Android notification to be included in the message.
     */
   var notification: js.UndefOr[AndroidNotification] = js.undefined
@@ -49,6 +53,7 @@ object AndroidConfig {
   def apply(
     collapseKey: String = null,
     data: StringDictionary[String] = null,
+    fcmOptions: AndroidFcmOptions = null,
     notification: AndroidNotification = null,
     priority: high | normal = null,
     restrictedPackageName: String = null,
@@ -57,6 +62,7 @@ object AndroidConfig {
     val __obj = js.Dynamic.literal()
     if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey)
     if (data != null) __obj.updateDynamic("data")(data)
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
     if (notification != null) __obj.updateDynamic("notification")(notification)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName)

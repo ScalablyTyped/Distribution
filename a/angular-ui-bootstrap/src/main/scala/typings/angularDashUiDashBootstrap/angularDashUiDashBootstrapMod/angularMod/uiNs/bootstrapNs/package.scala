@@ -9,5 +9,5 @@ package object bootstrapNs {
   /**
     * @deprecated use IModalInstanceService instead.
     */
-  type IModalServiceInstance = typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService
+  type IModalServiceInstance = IModalInstanceService
 }

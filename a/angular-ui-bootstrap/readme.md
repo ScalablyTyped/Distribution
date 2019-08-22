@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-ui-bootstrap
 
-Typings are for version 0.13.3
+Typings are for version 1.0.0
 
 ## Library description:
 Native AngularJS (Angular) directives for Bootstrap

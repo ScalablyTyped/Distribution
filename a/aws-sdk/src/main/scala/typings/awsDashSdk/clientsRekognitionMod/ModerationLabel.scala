@@ -10,7 +10,7 @@ trait ModerationLabel extends js.Object {
     */
   var Confidence: js.UndefOr[Percent] = js.undefined
   /**
-    * The label name for the type of content detected in the image.
+    * The label name for the type of unsafe content detected in the image.
     */
   var Name: js.UndefOr[String] = js.undefined
   /**

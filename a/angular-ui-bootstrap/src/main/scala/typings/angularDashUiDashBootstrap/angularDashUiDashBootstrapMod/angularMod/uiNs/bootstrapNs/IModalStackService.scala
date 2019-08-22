@@ -9,23 +9,13 @@ trait IModalStackService extends js.Object {
   /**
     * Closes a modal instance with an optional result.
     */
-  def close(
-    modalInstance: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService
-  ): Unit = js.native
-  def close(
-    modalInstance: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService,
-    result: js.Any
-  ): Unit = js.native
+  def close(modalInstance: IModalInstanceService): Unit = js.native
+  def close(modalInstance: IModalInstanceService, result: js.Any): Unit = js.native
   /**
     * Dismisses a modal instance with an optional reason.
     */
-  def dismiss(
-    modalInstance: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService
-  ): Unit = js.native
-  def dismiss(
-    modalInstance: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService,
-    reason: js.Any
-  ): Unit = js.native
+  def dismiss(modalInstance: IModalInstanceService): Unit = js.native
+  def dismiss(modalInstance: IModalInstanceService, reason: js.Any): Unit = js.native
   /**
     * Dismiss all open modal instances with an optional reason that will be passed to each instance.
     */
@@ -34,13 +24,10 @@ trait IModalStackService extends js.Object {
   /**
     * Gets the topmost modal instance that is open.
     */
-  def getTop(): typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalStackedMapKeyValuePair = js.native
+  def getTop(): IModalStackedMapKeyValuePair = js.native
   /**
     * Opens a new modal instance.
     */
-  def open(
-    modalInstance: typings.angularDashUiDashBootstrap.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService,
-    modal: js.Any
-  ): Unit = js.native
+  def open(modalInstance: IModalInstanceService, modal: js.Any): Unit = js.native
 }
 

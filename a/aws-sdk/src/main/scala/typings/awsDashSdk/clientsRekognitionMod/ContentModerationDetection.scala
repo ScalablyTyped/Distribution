@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait ContentModerationDetection extends js.Object {
   /**
-    * The moderation label detected by in the stored video.
+    * The unsafe content label detected by in the stored video.
     */
   var ModerationLabel: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.ModerationLabel] = js.undefined
   /**
-    * Time, in milliseconds from the beginning of the video, that the moderation label was detected.
+    * Time, in milliseconds from the beginning of the video, that the unsafe content label was detected.
     */
   var Timestamp: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

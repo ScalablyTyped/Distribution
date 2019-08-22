@@ -1,7 +1,7 @@
 
 # Scala.js typings for xtuc__long
 
-Typings are for version 4.2.1
+Typings are for version 4.2.2
 
 ## Library description:
 A Long class for representing a 64-bit two's-complement integer value.

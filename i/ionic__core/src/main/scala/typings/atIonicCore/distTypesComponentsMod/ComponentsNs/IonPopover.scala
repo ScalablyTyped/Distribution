@@ -5,7 +5,7 @@ import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
 import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`

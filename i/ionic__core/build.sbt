@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ionic__core"
-version := "4.7.4-739b48"
+version := "4.8.0-09f575"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ionicons" % "4.6.2-d8faed",
+  "org.scalablytyped" %%% "ionicons" % "4.6.3-d8faed",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

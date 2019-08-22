@@ -38,7 +38,7 @@ trait WorksheetChangedEventArgs extends js.Object {
   var changeType: DataChangeType | Unknown | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
   /**
     *
-    * Represents the information about the change detail
+    * Represents the information about the change detail. This property can be retrieved when the Changed event is triggered on single cell. If the Changed event is triggered on multiple cells, this property can not be retrieved.
     *
     * [Api set: ExcelApi 1.9]
     */

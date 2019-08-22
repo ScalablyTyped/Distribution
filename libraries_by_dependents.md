@@ -307,6 +307,7 @@
 | 883 | [gulp-plumber](./g/gulp-plumber) | Prevent pipe breaking caused by errors from gulp p
 | 882 | [redux-logger](./r/redux-logger) | Logger for Redux
 | 880 | [lodash_dot_clonedeep](./l/lodash_dot_clonedeep) | The lodash method _.cloneDeep exported as a module
+| 879 | [typescript-eslint__parser](./t/typescript-eslint__parser) | An ESLint custom parser which leverages TypeScript
 | 878 | [graphql-tag](./g/graphql-tag) | A JavaScript template literal tag that parses Grap
 | 874 | [hapi](./h/hapi) | HTTP Server framework
 | 872 | [filesize](./f/filesize) | JavaScript library to generate a human readable St
@@ -2684,6 +2685,7 @@
 | 40 | [node-horseman](./n/node-horseman) | Run PhantomJS from Node
 | 40 | [p-series](./p/p-series) | Run promise-returning & async functions in series
 | 40 | [p5](./p/p5) | -
+| 40 | [passport_dot_socketio](./p/passport_dot_socketio) | access passport.js authenticated user information 
 | 40 | [phone](./p/phone) | With a given country and phone number, validate an
 | 40 | [prosemirror-schema-list](./p/prosemirror-schema-list) | List-related schema elements and commands for Pros
 | 40 | [react-native-drawer-layou](./r/react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript
@@ -3456,6 +3458,7 @@
 | 21 | [synaptic](./s/synaptic) | architecture-free neural network library
 | 21 | [topo](./t/topo) | Topological sorting with grouping support
 | 21 | [tus-js-client](./t/tus-js-client) | A pure JavaScript client for the tus resumable upl
+| 21 | [typescript-eslint__typesc](./t/typescript-eslint__typescript-estree) | A parser that converts TypeScript source code into
 | 21 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set.
 | 21 | [universal-router](./u/universal-router) | Isomorphic router for JavaScript web applications
 | 21 | [webpack-validator](./w/webpack-validator) | Validate your webpack config with joi
@@ -3577,6 +3580,7 @@
 | 19 | [tedious-connection-pool](./t/tedious-connection-pool) | Connection Pool for tedious.
 | 19 | [textract](./t/textract) | Extracting text from files of various type includi
 | 19 | [tough-cookie-file-store](./t/tough-cookie-file-store) | Another file store for tough-cookie module
+| 19 | [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri
 | 19 | [vscode](./v/vscode) | The vscode NPM module provides VS Code extension a
 | 19 | [xmlserializer](./x/xmlserializer) | Serializes a document to XML/XHTML
 | 18 | [alexa-sdk](./a/alexa-sdk) | Alexa Skill SDK for Node.js
@@ -4357,6 +4361,7 @@
 | 9 | [hashtable](./h/hashtable) | Native HashTable and ES6 compatible Map for Node.j
 | 9 | [icon-gen](./i/icon-gen) | Generate an icon files from the SVG or PNG files
 | 9 | [is-negated-glob](./i/is-negated-glob) | Returns an object with a negated boolean and the 
+| 9 | [is-ssh](./i/is-ssh) | Check if an input value is a ssh url or not.
 | 9 | [istanbul-middleware](./i/istanbul-middleware) | Connect middleware for Istanbul to handle server-s
 | 9 | [jquery-validation-unobtru](./j/jquery-validation-unobtrusive) | Add-on to jQuery Validation to enable unobtrusive 
 | 9 | [jsmediatags](./j/jsmediatags) | Media Tags Reader (ID3, MP4)
@@ -4980,6 +4985,7 @@
 | 5 | [prex](./p/prex) | Async coordination primitives and extensions on to
 | 5 | [prosemirror-collab](./p/prosemirror-collab) | Collaborative editing for ProseMirror
 | 5 | [protoc-plugin](./p/protoc-plugin) | Create protoc code-generation plugins easily in no
+| 5 | [protocols](./p/protocols) | Get the protocols of an input url.
 | 5 | [proxy-lists](./p/proxy-lists) | Get proxies from publicly available proxy lists.
 | 5 | [pulumi__kubernetes](./p/pulumi__kubernetes) | A Pulumi package for creating and managing Kuberne
 | 5 | [quick-hash](./q/quick-hash) | Murmur hash optimized for performance, not collisi
@@ -6694,6 +6700,7 @@
 | 0 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
 | 0 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps
 | 0 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
+| 0 | [leaflet-responsive-popup](./l/leaflet-responsive-popup) | Removes the need to move the map to be able to see
 | 0 | [leaflet_dot_featuregroup_](./l/leaflet_dot_featuregroup_dot_subgroup) | Creates a Leaflet Feature Group that adds its chil
 | 0 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
 | 0 | [leaflet_dot_pancontrol](./l/leaflet_dot_pancontrol) | Map pan control for Leaflet

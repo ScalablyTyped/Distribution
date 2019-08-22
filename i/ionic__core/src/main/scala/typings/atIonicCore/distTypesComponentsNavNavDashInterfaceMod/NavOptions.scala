@@ -2,7 +2,7 @@ package typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod
 
 import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
 import typings.atIonicCore.distTypesInterfaceMod.Mode
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

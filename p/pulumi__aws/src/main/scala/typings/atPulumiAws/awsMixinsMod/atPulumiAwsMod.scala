@@ -81,6 +81,8 @@ import typings.atPulumiAws.TypeofEventListeners
 import typings.atPulumiAws.TypeofFMS
 import typings.atPulumiAws.TypeofFSx
 import typings.atPulumiAws.TypeofFirehose
+import typings.atPulumiAws.TypeofForecastQueryService
+import typings.atPulumiAws.TypeofForecastService
 import typings.atPulumiAws.TypeofGameLift
 import typings.atPulumiAws.TypeofGlacier
 import typings.atPulumiAws.TypeofGlobalAccelerator
@@ -398,6 +400,10 @@ object atPulumiAwsMod extends js.Object {
     var FileSystemCredentials: Instantiable1[/* filename */ String, typings.awsDashSdk.awsDashSdkMod.FileSystemCredentials] = js.native
     var Firehose: Instantiable0[typings.awsDashSdk.awsDashSdkMod.Firehose] = js.native
     val FirehoseNs: TypeofFirehose = js.native
+    var ForecastQueryService: Instantiable0[typings.awsDashSdk.awsDashSdkMod.ForecastQueryService] = js.native
+    val ForecastQueryServiceNs: TypeofForecastQueryService = js.native
+    var ForecastService: Instantiable0[typings.awsDashSdk.awsDashSdkMod.ForecastService] = js.native
+    val ForecastServiceNs: TypeofForecastService = js.native
     var GameLift: Instantiable0[typings.awsDashSdk.awsDashSdkMod.GameLift] = js.native
     val GameLiftNs: TypeofGameLift = js.native
     var Glacier: Instantiable0[typings.awsDashSdk.awsDashSdkMod.Glacier] = js.native

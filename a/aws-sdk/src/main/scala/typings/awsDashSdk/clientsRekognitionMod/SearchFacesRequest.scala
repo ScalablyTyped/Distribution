@@ -14,7 +14,7 @@ trait SearchFacesRequest extends js.Object {
     */
   var FaceId: typings.awsDashSdk.clientsRekognitionMod.FaceId
   /**
-    * Optional value specifying the minimum confidence in the face match to return. For example, don't return any matches where confidence in matches is less than 70%.
+    * Optional value specifying the minimum confidence in the face match to return. For example, don't return any matches where confidence in matches is less than 70%. The default value is 80%. 
     */
   var FaceMatchThreshold: js.UndefOr[Percent] = js.undefined
   /**

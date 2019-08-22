@@ -9,7 +9,7 @@ import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouteWrite
 import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
 import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -81,6 +81,8 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var eventbridge: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.ClientConfiguration] = js.native
   var firehose: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ClientConfiguration] = js.native
   var fms: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ClientConfiguration] = js.native
+  var forecastqueryservice: js.UndefOr[typings.awsDashSdk.clientsForecastqueryserviceMod.ClientConfiguration] = js.native
+  var forecastservice: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.ClientConfiguration] = js.native
   var fsx: js.UndefOr[typings.awsDashSdk.clientsFsxMod.ClientConfiguration] = js.native
   var gamelift: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.ClientConfiguration] = js.native
   var glacier: js.UndefOr[typings.awsDashSdk.clientsGlacierMod.ClientConfiguration] = js.native

@@ -17,6 +17,7 @@ object MulticastMessage {
     android: AndroidConfig = null,
     apns: ApnsConfig = null,
     data: StringDictionary[String] = null,
+    fcmOptions: FcmOptions = null,
     notification: Notification = null,
     webpush: WebpushConfig = null
   ): MulticastMessage = {
@@ -24,6 +25,7 @@ object MulticastMessage {
     if (android != null) __obj.updateDynamic("android")(android)
     if (apns != null) __obj.updateDynamic("apns")(apns)
     if (data != null) __obj.updateDynamic("data")(data)
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
     if (notification != null) __obj.updateDynamic("notification")(notification)
     if (webpush != null) __obj.updateDynamic("webpush")(webpush)
     __obj.asInstanceOf[MulticastMessage]

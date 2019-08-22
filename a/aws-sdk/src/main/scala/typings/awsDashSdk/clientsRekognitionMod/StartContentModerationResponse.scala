@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait StartContentModerationResponse extends js.Object {
   /**
-    * The identifier for the content moderation analysis job. Use JobId to identify the job in a subsequent call to GetContentModeration.
+    * The identifier for the unsafe content analysis job. Use JobId to identify the job in a subsequent call to GetContentModeration.
     */
   var JobId: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.JobId] = js.undefined
 }

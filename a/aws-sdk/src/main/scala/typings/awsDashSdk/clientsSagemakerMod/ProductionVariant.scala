@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ProductionVariant extends js.Object {
   /**
-    * The size of the Elastic Inference (EI) instance to use for the production variant. EI instances provide on-demand GPU computing for inference. For more information, see Using Elastic Inference in Amazon SageMaker. For more information, see Using Elastic Inference in Amazon SageMaker.
+    * The size of the Elastic Inference (EI) instance to use for the production variant. EI instances provide on-demand GPU computing for inference. For more information, see Using Elastic Inference in Amazon SageMaker.
     */
   var AcceleratorType: js.UndefOr[ProductionVariantAcceleratorType] = js.undefined
   /**

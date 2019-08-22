@@ -185,6 +185,19 @@ package object clientsSagemakerMod {
   type EnvironmentMap = StringDictionary[EnvironmentValue]
   type EnvironmentValue = java.lang.String
   type FailureReason = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.rw
+    - typings.awsDashSdk.awsDashSdkStrings.ro
+    - java.lang.String
+  */
+  type FileSystemAccessMode = _FileSystemAccessMode | java.lang.String
+  type FileSystemId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.EFS
+    - typings.awsDashSdk.awsDashSdkStrings.FSxLustre
+    - java.lang.String
+  */
+  type FileSystemType = _FileSystemType | java.lang.String
   type FilterList = js.Array[Filter]
   type FilterValue = java.lang.String
   type FinalMetricDataList = js.Array[MetricData]
@@ -700,6 +713,7 @@ package object clientsSagemakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT4xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT9xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT18xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTp3dnDOT24xlarge
     - java.lang.String
   */
   type TrainingInstanceType = _TrainingInstanceType | java.lang.String
