@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activedirectory2"
-version := "1.2-dt-20180723Z-efc160"
+version := "1.2-dt-20190822Z-e0cd8b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

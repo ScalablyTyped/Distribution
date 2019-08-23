@@ -1,0 +1,20 @@
+package typings.expo
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Length extends js.Object {
+  var length: Double
+  var width: Double
+}
+
+object Anon_Length {
+  @scala.inline
+  def apply(length: Double, width: Double): Anon_Length = {
+    val __obj = js.Dynamic.literal(length = length, width = width)
+  
+    __obj.asInstanceOf[Anon_Length]
+  }
+}
+

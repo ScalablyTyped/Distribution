@@ -846,6 +846,7 @@
 | [cavy](./c/cavy) | An integration test framework for React Native. | react, react native, ios, android, integration tests, testing, test, specs |
 | [cbor](./c/cbor) | Encode and parse data in the Concise Binary Object | coap, cbor, json |
 | [ccap](./c/ccap) | node.js generate captcha using c++ library CImg wi | node, captcha, c++, image, CImg |
+| [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a  | capture, canvas, webgl, animation |
 | [center-align](./c/center-align) | Center-align the text in a string. | align, align-center, center, center-align, right, right-align, text, typography |
 | [centra](./c/centra) | The core lightweight HTTP client for Node | http, https, request, fetch, url, lightweight |
 | [cesium](./c/cesium) | CesiumJS is a JavaScript library for creating 3D g | 3D, webgl, geospatial, map, globe |
@@ -1216,7 +1217,6 @@
 | [csso](./c/csso) | CSS minifier with structural optimisations | css, compress, minifier, minify, optimise, optimisation, csstree |
 | [csstype](./c/csstype) | Strict TypeScript and Flow types for style based o | css, style, typescript, flow, typings, types, definitions |
 | [csurf](./c/csurf) | CSRF token middleware | csrf, tokens, middleware, express |
-| [csv-parse](./c/csv-parse) | CSV parsing implementing the Node.js stream.Transf | csv, parse, parser, convert, tsv, stream |
 | [csv-stringify](./c/csv-stringify) | CSV stringifier implementing the Node.js stream.Tr | csv, stringify, stringifier |
 | [csv2json](./c/csv2json) | Stream and CLI to convert CSV to JSON | csv, json, csv2json, csvtojson, stream |
 | [csvrow](./c/csvrow) | parse a CSV row string | csv, parse |
@@ -1762,8 +1762,18 @@
 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage  | localStorage, sessionStorage, storage, expiration, expired, temporary |
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
 | [expo](./e/expo) | The Expo SDK | expo |
+| [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa | react-native, expo, asset |
+| [expo-constants](./e/expo-constants) | Provides system information that remains constant  | react-native, expo, constants |
+| [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
+| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
+| [expo-keep-awake](./e/expo-keep-awake) | Provides a React component that prevents the scree | react-native, expo, awake, keep-awake |
+| [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization | react-native, expo, localization, locales, l10n |
+| [expo-location](./e/expo-location) | Allows reading geolocation information from the de | react-native, expo, location, geolocation, coords, geocoding, compass, heading |
 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app | react, native, expo, mixpanel, analytics |
+| [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces | react-native, expo, permissions |
+| [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried  | react-native, expo, sqlite, websql, sql |
+| [expo-web-browser](./e/expo-web-browser) | Provides access to the system's web browser and su | react-native, expo, expo-web-browser, web, browser |
 | [expo__status-bar-height](./e/expo__status-bar-height) | Listen to status bar changes during incoming calls | expo, statusbar, tools, react-native, react, ui, multitask |
 | [expo__vector-icons](./e/expo__vector-icons) | Built-in support for popular icon fonts and the to | expo |
 | [expr-eval](./e/expr-eval) | Mathematical expression evaluator | expression, math, evaluate, eval, function, parser |
@@ -2486,6 +2496,7 @@
 | [gulp-flatten](./g/gulp-flatten) | remove or replace relative path for files | gulpplugin, gulp, flatten, relative, path |
 | [gulp-gh-pages](./g/gulp-gh-pages) | gulp plugin to publish contents to Github pages | git, push, commit, branch, deploy, deployment, publish, site, website, gulp, gulpplugin, gh-pages, dist, github |
 | [gulp-gzip](./g/gulp-gzip) | Gzip plugin for gulp. | compress, gulpplugin, gzip |
+| [gulp-header](./g/gulp-header) | Gulp extension to add header to file(s) in the pip | header, gulpplugin, eventstream |
 | [gulp-help](./g/gulp-help) | Adds a default help task to gulp and provides the  | gulp, help, tasks, list, gulpfriendly |
 | [gulp-help-doc](./g/gulp-help-doc) | Gulp available tasks usage information based on js | gulp, help, jsdoc, docblock |
 | [gulp-html-prettify](./g/gulp-html-prettify) | HTML Prettify Plugin for Gulp | gulpplugin |
@@ -3287,6 +3298,7 @@
 | [jsonp](./j/jsonp) | A sane JSONP implementation. | - |
 | [jsonpack](./j/jsonpack) | A compression algorithm for JSON | compress, json |
 | [jsonpath](./j/jsonpath) | Query JavaScript objects with JSONPath expressions | JSONPath, jsonpath, json-path, object, traversal, json, path, data structures |
+| [jsonpointer](./j/jsonpointer) | Simple JSON Addressing. | - |
 | [jsonquery](./j/jsonquery) | MongoDB query language implemented as a node.js St | json, mongodb, mongo, stream, filter, query, database, levelup, leveldb |
 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC | json, jsonrpc, json-rpc, jsonrpc2 |
 | [jsonschema](./j/jsonschema) | A fast and easy to use JSON Schema validator | json, schema, jsonschema, validator, validation |
@@ -3605,6 +3617,7 @@
 | [leaflet_dot_fullscreen](./l/leaflet_dot_fullscreen) | Simple plugin for Leaflet that adds fullscreen but | leaflet, plugins, maps, fullscreen |
 | [leaflet_dot_gridlayer_dot](./l/leaflet_dot_gridlayer_dot_googlemutant) | A plugin for LeafletJS to use Google maps basemaps | leaflet, google maps |
 | [leaflet_dot_heat](./l/leaflet_dot_heat) | A tiny and fast Leaflet heatmap plugin. | heatmap, canvas, visualization, gis, leaflet, plugin |
+| [leaflet_dot_icon_dot_glyp](./l/leaflet_dot_icon_dot_glyph) | Allows you to put glyphs from icon fonts into your | leaflet, icon font |
 | [leaflet_dot_locatecontrol](./l/leaflet_dot_locatecontrol) | A useful control to geolocate the user with many o | leaflet, locate, plugin |
 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster) | Provides Beautiful Animated Marker Clustering func | gis, map, cluster |
 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i | leaflet, leaflet.makercluster, plugins, maps, layers, control |
@@ -5605,6 +5618,7 @@
 | [react-native-flip-card](./r/react-native-flip-card) | The card component which has a motion of flip for  | react-component, react-native, ios, android, card, flip |
 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form  | react-component, react-native, react native form, android, ios |
 | [react-native-fs](./r/react-native-fs) | Native filesystem access for react-native | react-component, react-native, ios, android, fs, filesystem, download, upload, file-transfer |
+| [react-native-gesture-hand](./r/react-native-gesture-handler) | Experimental implementation of a new declarative A | - |
 | [react-native-goby](./r/react-native-goby) | React Native plugin for the Goby service | react-native, code, push |
 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt | react, native, google, analytics, tracking, native, bridge, events, screen, hits, react-native, ios, android |
 | [react-native-google-signi](./r/react-native-google-signin) | Google Signin for your react native applications | react-component, react-native, google signin, google login, google+, oauth, oauth2, ios, android |
@@ -5685,6 +5699,7 @@
 | [react-native-version-numb](./r/react-native-version-number) | Access app version inside React Native | react, react-native, ios, react-component |
 | [react-native-video](./r/react-native-video) | A  element for react-native | - |
 | [react-native-view-pdf](./r/react-native-view-pdf) | React native Pdf viewer implementation | react-native react-component pdf viewer view android ios pdf |
+| [react-native-view-shot](./r/react-native-view-shot) | Capture a React Native view to an image | react-native, screenshot, viewshot, view-snapshot, snapshot, rasterize |
 | [react-native-webrtc](./r/react-native-webrtc) | WebRTC for React Native | react-component, react-native, ios, android, webrtc |
 | [react-native-zeroconf](./r/react-native-zeroconf) | A Zeroconf discovery utility for react-native | react-component, react-native, zeroconf, bonjour, avahi, network, lan, ios, android, network-discovery, discovery |
 | [react-native-zss-rich-tex](./r/react-native-zss-rich-text-editor) | React Native Wrapper for ZSSRichTextEditor | - |
@@ -5738,7 +5753,6 @@
 | [react-router-bootstrap](./r/react-router-bootstrap) | Integration between React Router and React-Bootstr | react, react-router, react-bootstrap |
 | [react-router-config](./r/react-router-config) | Static route config matching for React Router | react, router, route, routing, static routes, route config, react router |
 | [react-router-dom](./r/react-router-dom) | DOM bindings for React Router | react, router, route, routing, history, link |
-| [react-router-dom-slinky-f](./r/react-router-dom-slinky-facade) | - | - |
 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4 | react, react-router, link, hash-link, scroll |
 | [react-router-native](./r/react-router-native) | React Native bindings for React Router | - |
 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for  | react-native, ios, android, router, navigation, navigator |
@@ -5825,6 +5839,7 @@
 | [react-typist](./r/react-typist) | Typing animations with React | react, reactjs, react-typist, react typist, typing, typing animation, typing animations, animation, animations, typist, typewriter, typewriter animation, typewriter animations |
 | [react-ultimate-pagination](./r/react-ultimate-pagination) | React.js pagination component based on ultimate-pa | react, react.js, component, react-component, pagination, paginator, pager |
 | [react-user-tour](./r/react-user-tour) | give your user a guided tour around your applicati | onboarding, user, tour, user-tour, tour-guide, guide, joyride, hopscotch, shepard, react |
+| [react-vega](./r/react-vega) | Convert Vega spec into React class conveniently | - |
 | [react-vertical-timeline-c](./r/react-vertical-timeline-component) | Vertical timeline for React.js | react, reactjs, React Vertical Timeline |
 | [react-virtual-keyboard](./r/react-virtual-keyboard) | Use jQuery Virtual Keyboard in react.js | react, reactjs, keyboard, onscreen, virtual, component |
 | [react-virtualized](./r/react-virtualized) | React components for efficiently rendering large,  | react, reactjs, react-component, virtual, list, scrolling, infinite, virtualized, table, fixed, header, flex, flexbox, grid, spreadsheet |
@@ -5862,6 +5877,7 @@
 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and exp | css, jquery, readmore, expand, collapse |
 | [realm](./r/realm) | Realm is a mobile database: an alternative to SQLi | database, db, react, react-native, persistence, localstorage, sqlite, asyncstorage, rocksdb, leveldb, realm |
 | [reapop](./r/reapop) | A React and Redux notifications system | reapop, react, redux, notifications, notification, component |
+| [rebass](./r/rebass) | React primitive UI components built with styled-sy | components, react, react-component, ui, design-system, styled-system, styled-components, presentational, stateless, functional |
 | [rebass__grid](./r/rebass__grid) | Responsive React grid system built with styled-sys | react, styled-components, styled-system, grid, flexbox, layout, css |
 | [rebind-host](./r/rebind-host) | Express middleware to bind the correct host | - |
 | [recaptcha2](./r/recaptcha2) | Easy API for Google reCAPTCHA version 2 for Node.j | recaptcha, captcha, security, csrf, express |
@@ -5968,6 +5984,7 @@
 | [rehype-react](./r/rehype-react) | Compile Hast tree to React with remark | compile, html, markdown, remark, stringify |
 | [relateurl](./r/relateurl) | Minify URLs by converting them from absolute to re | uri, url, minifier, minify, lint, relative, absolute |
 | [relaxed-json](./r/relaxed-json) | Relaxed JSON is strict superset JSON, relaxing str | json, comments, comment, config |
+| [relay-compiler](./r/relay-compiler) | A compiler tool for building GraphQL-driven applic | graphql, relay |
 | [relay-runtime](./r/relay-runtime) | A core runtime for building GraphQL-driven applica | graphql, relay |
 | [rellax](./r/rellax) | Lightweight, vanilla javascript parallax library | parallax |
 | [remarkable](./r/remarkable) | Markdown parser, done right. 100% Commonmark suppo | commonmark, markdown, md, parse, parser, process, remarkable, render, renderer, text |
@@ -7055,6 +7072,8 @@
 | [ungap__url-search-params](./u/ungap__url-search-params) | The URLSearchParams polyfill. | URLSearchParams, polyfill, ungap |
 | [uni-app](./u/uni-app) | - | - |
 | [unidecode](./u/unidecode) | ASCII transliterations of Unicode text | unidecode, unicode, utf8 |
+| [unimodules__core](./u/unimodules__core) | Universal modules core | unimodules |
+| [unimodules__react-native-](./u/unimodules__react-native-adapter) | The adapter to use universal modules with the Reac | react-native, unimodules, adapter |
 | [uniq](./u/uniq) | Removes duplicates from a sorted array in place | array, duplicate, unique, uniq, remove, sort, in, place, no, copy |
 | [uniqid](./u/uniqid) | Unique ID Generator | unique id, uniqid, unique identifier, hexatridecimal |
 | [unique-hash-stream](./u/unique-hash-stream) | Remove duplicates from a stream based on a hashing | dedupe, unique, stream, hash |

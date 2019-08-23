@@ -5,8 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rebassMod {
-  // tslint:disable-next-line no-empty-interface
-  type HeadingKnownProps = TextKnownProps
+  import typings.atStyledDashSystemCss.atStyledDashSystemCssMod.ResponsiveStyleValue
+  import typings.atStyledDashSystemCss.atStyledDashSystemCssMod.SystemStyleObject
+  import typings.std.Record
+
   // tslint:disable-next-line no-empty-interface
   type LinkKnownProps = BoxKnownProps
+  type SxStyleProp = SystemStyleObject with (Record[
+    String, 
+    SystemStyleObject | (ResponsiveStyleValue[Double | String]) | (Record[String, SystemStyleObject | (ResponsiveStyleValue[Double | String])])
+  ])
 }

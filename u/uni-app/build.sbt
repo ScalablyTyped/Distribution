@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uni-app"
-version := "1.3-dt-20190722Z-817d67"
+version := "1.4-dt-20190822Z-28dc6a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,6 +12,9 @@ trait Conv3DInfo extends js.Object {
   var dilationDepth: Double
   var dilationHeight: Double
   var dilationWidth: Double
+  var effectiveFilterDepth: Double
+  var effectiveFilterHeight: Double
+  var effectiveFilterWidth: Double
   var filterDepth: Double
   var filterHeight: Double
   var filterShape: js.Tuple5[Double, Double, Double, Double, Double]
@@ -40,6 +43,9 @@ object Conv3DInfo {
     dilationDepth: Double,
     dilationHeight: Double,
     dilationWidth: Double,
+    effectiveFilterDepth: Double,
+    effectiveFilterHeight: Double,
+    effectiveFilterWidth: Double,
     filterDepth: Double,
     filterHeight: Double,
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
@@ -59,7 +65,7 @@ object Conv3DInfo {
     strideHeight: Double,
     strideWidth: Double
   ): Conv3DInfo = {
-    val __obj = js.Dynamic.literal(batchSize = batchSize, dataFormat = dataFormat.asInstanceOf[js.Any], dilationDepth = dilationDepth, dilationHeight = dilationHeight, dilationWidth = dilationWidth, filterDepth = filterDepth, filterHeight = filterHeight, filterShape = filterShape, filterWidth = filterWidth, inChannels = inChannels, inDepth = inDepth, inHeight = inHeight, inShape = inShape, inWidth = inWidth, outChannels = outChannels, outDepth = outDepth, outHeight = outHeight, outShape = outShape, outWidth = outWidth, padInfo = padInfo, strideDepth = strideDepth, strideHeight = strideHeight, strideWidth = strideWidth)
+    val __obj = js.Dynamic.literal(batchSize = batchSize, dataFormat = dataFormat.asInstanceOf[js.Any], dilationDepth = dilationDepth, dilationHeight = dilationHeight, dilationWidth = dilationWidth, effectiveFilterDepth = effectiveFilterDepth, effectiveFilterHeight = effectiveFilterHeight, effectiveFilterWidth = effectiveFilterWidth, filterDepth = filterDepth, filterHeight = filterHeight, filterShape = filterShape, filterWidth = filterWidth, inChannels = inChannels, inDepth = inDepth, inHeight = inHeight, inShape = inShape, inWidth = inWidth, outChannels = outChannels, outDepth = outDepth, outHeight = outHeight, outShape = outShape, outWidth = outWidth, padInfo = padInfo, strideDepth = strideDepth, strideHeight = strideHeight, strideWidth = strideWidth)
   
     __obj.asInstanceOf[Conv3DInfo]
   }

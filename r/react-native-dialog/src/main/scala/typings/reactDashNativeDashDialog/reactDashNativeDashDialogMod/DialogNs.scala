@@ -4,6 +4,7 @@ import typings.react.reactMod.PureComponent
 import typings.reactDashNative.reactDashNativeMod.TextInputProps
 import typings.reactDashNative.reactDashNativeMod.TextProps
 import typings.reactDashNative.reactDashNativeMod.ViewProps
+import typings.reactDashNativeDashDialog.reactNativeModalContainerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ object DialogNs extends js.Object {
   
   @js.native
   class Container ()
-    extends PureComponent[ContainerProps with ViewProps, js.Object, js.Any]
+    extends PureComponent[ContainerProps with ViewProps with reactNativeModalContainerProps, js.Object, js.Any]
   
   @js.native
   class Description ()

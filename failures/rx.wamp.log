@@ -17,8 +17,8 @@
 [warn ] Phase2ToScalaJs.scala:43 Processing rx.wamp [id => rx.wamp, phase => scala.js] 
 [info ] InferMemberOverrides.scala:82 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(typings) / Name(rxDotWamp) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building rx_dot_wamp... [id => rx.wamp, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E25] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:28:34
+[warn ] Phase3Compile.scala:211 Building rx_dot_wamp... [id => rx.wamp, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E25] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:28:34
 [E]       type Observer is not a member of package typings.rx.rxMod
 [E]       L28:   var observer: typings.rx.rxMod.Observer[IWampEvent] = js.native
 [E]                                             ^

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-postcss"
-version := "2.0-dt-20190808Z-73b34b"
+version := "2.0-dt-20190808Z-c92f8d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-1859c4",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "postcss" % "7.0.17-9e3bcd",
-  "org.scalablytyped" %%% "rollup" % "1.20.0-9bbe8b",
+  "org.scalablytyped" %%% "rollup" % "1.20.1-9bbe8b",
   "org.scalablytyped" %%% "source-map" % "0.7.3-20fa05",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

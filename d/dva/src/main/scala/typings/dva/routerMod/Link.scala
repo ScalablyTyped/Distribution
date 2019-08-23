@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dva/router", "Link")
 @js.native
-class Link ()
-  extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Link
+class Link[S] ()
+  extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Link[S]
 

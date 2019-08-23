@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => react-router-native-slinky-facade, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => react-router-native-slinky-facade, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building react-router-native-slinky-facade... [id => react-router-native-slinky-facade, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E2] src/main/scala/typings/reactDashRouterDashNative/ReactRouterNativeFacade.scala:22:53
+[warn ] Phase3Compile.scala:211 Building react-router-native-slinky-facade... [id => react-router-native-slinky-facade, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E2] src/main/scala/typings/reactDashRouterDashNative/ReactRouterNativeFacade.scala:22:53
 [E]      not found: type DeepLinkingProps
 [E]      L22:   @inline def DeepLinking      : ExternalComponentP[DeepLinkingProps]       = importSTComponent(RRN.DeepLinking)
 [E]                                                               ^

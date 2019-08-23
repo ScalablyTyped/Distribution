@@ -113,6 +113,7 @@ class NodeJSKernelBackend protected () extends KernelBackend {
   def fft(x: Tensor[R2]): Tensor[R2] = js.native
   def floorDiv(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def flushSummaryWriter(resourceHandle: Tensor[Rank]): Unit = js.native
+  def fusedBatchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): Tensor3D = js.native
   def fusedBatchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean, bias: Tensor[Rank]): Tensor3D = js.native
   def fusedBatchMatMul(
     a: Tensor3D,

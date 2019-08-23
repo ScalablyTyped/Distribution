@@ -12,11 +12,11 @@ object reactDashRouterDashDomComponents extends reactDashRouterDashDomProps {
   @scala.inline
   def HashRouter: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps]]
   @scala.inline
-  def Link: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Link].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps]]
+  def Link[S]: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S]] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Link[S]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S]]]
   @scala.inline
   def MemoryRouter: ComponentType[typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.MemoryRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps]]
   @scala.inline
-  def NavLink: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLink].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps]]
+  def NavLink[S]: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S]] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLink[S]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S]]]
   @scala.inline
   def Prompt: ComponentType[typings.reactDashRouter.reactDashRouterMod.PromptProps] = js.constructorOf[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Prompt].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.PromptProps]]
   @scala.inline

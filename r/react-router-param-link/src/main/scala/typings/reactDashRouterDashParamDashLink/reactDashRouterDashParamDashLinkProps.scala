@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait reactDashRouterDashParamDashLinkProps {
   @scala.inline
   def ParamLinkProps: LinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps
-  type ParamLinkProps = LinkProps
+  type ParamLinkProps[S] = LinkProps[S]
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ecore"
-version := "0.12-dt-20190808Z-a3c53e"
+version := "0.12-dt-20190822Z-194cae"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

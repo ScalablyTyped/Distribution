@@ -103,6 +103,12 @@ object ^ extends js.Object {
     /* offset */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
     Tensor4D
   ] = js.native
+  val booleanMaskAsync: js.Function3[
+    /* tensor */ Tensor[Rank] | TensorLike, 
+    /* mask */ Tensor[Rank] | TensorLike, 
+    /* axis */ js.UndefOr[Double], 
+    js.Promise[Tensor[Rank]]
+  ] = js.native
   val concat1d: js.Function1[/* tensors */ js.Array[Tensor1D | TensorLike], Tensor1D] = js.native
   val concat2d: js.Function2[/* tensors */ js.Array[Tensor2D | TensorLike], /* axis */ Double, Tensor2D] = js.native
   val concat3d: js.Function2[/* tensors */ js.Array[Tensor3D | TensorLike], /* axis */ Double, Tensor3D] = js.native
@@ -113,12 +119,13 @@ object ^ extends js.Object {
     /* dataFormat */ js.UndefOr[NHWC | NCHW], 
     Tensor4D
   ] = js.native
+  val diag: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]] = js.native
   val dot: js.Function2[/* t1 */ Tensor[Rank] | TensorLike, /* t2 */ Tensor[Rank] | TensorLike, Tensor[Rank]] = js.native
   val dropout: js.Function4[
-    /* x */ Tensor[Rank], 
-    /* rate */ Scalar | Double, 
+    /* x */ Tensor[Rank] | TensorLike, 
+    /* rate */ Double, 
     /* noiseShape */ js.UndefOr[js.Array[Double]], 
-    /* seed */ js.UndefOr[Double], 
+    /* seed */ js.UndefOr[Double | String], 
     Tensor[Rank]
   ] = js.native
   val eye: js.Function4[
@@ -252,6 +259,14 @@ object ^ extends js.Object {
     /* begin */ js.Tuple4[Double, Double, Double, Double], 
     /* size */ js.Tuple4[Double, Double, Double, Double], 
     Tensor4D
+  ] = js.native
+  val stft: js.Function5[
+    /* signal */ Tensor1D, 
+    /* frameLength */ Double, 
+    /* frameStep */ Double, 
+    /* fftLength */ js.UndefOr[Double], 
+    /* windowFn */ js.UndefOr[js.Function1[/* length */ Double, Tensor1D]], 
+    Tensor[Rank]
   ] = js.native
   val stridedSlice: js.Function9[
     /* x */ Tensor[Rank] | TensorLike, 

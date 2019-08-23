@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait AppInstance[T /* <: AnyObject */] extends js.Object {
   /**
+    * 全局对象
+    */
+  var globalData: js.UndefOr[AnyObject] = js.undefined
+  /**
     * 错误监听函数
     * 小程序发生脚本错误或 API 调用报错时触发
     * @param error 错误信息，包含堆栈
@@ -51,6 +55,7 @@ trait AppInstance[T /* <: AnyObject */] extends js.Object {
 object AppInstance {
   @scala.inline
   def apply[T /* <: AnyObject */](
+    globalData: AnyObject = null,
     onError: /* error */ String => Unit = null,
     onHide: () => Unit = null,
     onLaunch: /* options */ js.UndefOr[LaunchShowOption] => Unit = null,
@@ -59,6 +64,7 @@ object AppInstance {
     onUniNViewMessage: /* options */ AnyObject => Unit = null
   ): AppInstance[T] = {
     val __obj = js.Dynamic.literal()
+    if (globalData != null) __obj.updateDynamic("globalData")(globalData)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onLaunch != null) __obj.updateDynamic("onLaunch")(js.Any.fromFunction1(onLaunch))

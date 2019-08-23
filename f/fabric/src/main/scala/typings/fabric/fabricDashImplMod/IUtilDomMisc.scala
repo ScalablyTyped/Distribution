@@ -1,6 +1,7 @@
 package typings.fabric.fabricDashImplMod
 
 import typings.fabric.Anon_LeftRight
+import typings.fabric.Anon_LeftTop
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +24,7 @@ trait IUtilDomMisc extends js.Object {
   	 * Returns offset for a given element
   	 * @param element Element to get offset for
   	 */
-  def getElementOffset(element: HTMLElement): Anon_LeftRight = js.native
+  def getElementOffset(element: HTMLElement): Anon_LeftTop = js.native
   /**
   	 * Returns style attribute value of a given element
   	 * @param element Element to get style attribute for

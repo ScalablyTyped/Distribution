@@ -1,6 +1,7 @@
 package typings.rebass
 
 import typings.react.reactMod.ComponentType
+import typings.rebass.rebassMod.BoxKnownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object rebassComponents extends rebassProps {
   @scala.inline
   def Button: ComponentType[typings.rebass.rebassMod.ButtonProps] = typings.rebass.rebassMod.^.Button.asInstanceOf[typings.react.reactMod.ComponentType[typings.rebass.rebassMod.ButtonProps]]
   @scala.inline
-  def Card: ComponentType[typings.rebass.rebassMod.CardProps] = typings.rebass.rebassMod.^.Card.asInstanceOf[typings.react.reactMod.ComponentType[typings.rebass.rebassMod.CardProps]]
+  def Card: ComponentType[BoxKnownProps] = typings.rebass.rebassMod.^.Card.asInstanceOf[typings.react.reactMod.ComponentType[typings.rebass.rebassMod.BoxKnownProps]]
   @scala.inline
   def Flex: ComponentType[typings.rebass.rebassMod.FlexProps] = typings.rebass.rebassMod.^.Flex.asInstanceOf[typings.react.reactMod.ComponentType[typings.rebass.rebassMod.FlexProps]]
   @scala.inline

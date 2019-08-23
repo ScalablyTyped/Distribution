@@ -364,8 +364,8 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => asmcrypto.js, phase => scala.js, this => Name(typings) / Name(asmcryptoDotJs) / Name(distUnderscoreEs8OtherErrorsMod) / Name(IllegalStateError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => asmcrypto.js, phase => scala.js, this => Name(typings) / Name(asmcryptoDotJs) / Name(distUnderscoreEs8OtherErrorsMod) / Name(SecurityError)] 
 [debug] PhaseRunner.scala:84 Success [id => asmcrypto.js, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building asmcrypto_dot_js... [id => asmcrypto.js, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E2] src/main/scala/typings/asmcryptoDotJs/distUnderscoreEs8HashSha512Sha512DotAsmMod/sha512result.scala:93:143
+[warn ] Phase3Compile.scala:211 Building asmcrypto_dot_js... [id => asmcrypto.js, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E2] src/main/scala/typings/asmcryptoDotJs/distUnderscoreEs8HashSha512Sha512DotAsmMod/sha512result.scala:93:143
 [E]      value fromFunction32 is not a member of object scala.scalajs.js.Any
 [E]      error after rewriting to scala.scalajs.js.Dynamic.literal.applyDynamicNamed("apply")(scala.Tuple2("finish", js.Any.fromFunction3(finish)), scala.Tuple2("hmac_finish", js.Any.fromFunction3(hmac_finish)), scala.Tuple2("hmac_init", js.Any.<fromFunction32: error>(<hmac_init: error>)), scala.Tuple2("hmac_reset", js.Any.fromFunction0(hmac_reset)), scala.Tuple2("init", js.Any.fromFunction7(init)), scala.Tuple2("pbkdf2_generate_block", js.Any.fromFunction5(pbkdf2_generate_block)), scala.Tuple2("process", js.Any.fromFunction2(process)), scala.Tuple2("reset", js.Any.fromFunction0(reset)))
 [E]      possible cause: maybe a wrong Dynamic method signature?

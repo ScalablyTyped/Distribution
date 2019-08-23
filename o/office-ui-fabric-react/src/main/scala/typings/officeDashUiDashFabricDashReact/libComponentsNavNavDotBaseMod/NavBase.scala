@@ -20,6 +20,7 @@ class NavBase protected ()
   var _onNavAnchorLinkClicked: js.Any = js.native
   var _onNavButtonLinkClicked: js.Any = js.native
   var _onRenderLink: js.Any = js.native
+  var _preventBounce: js.Any = js.native
   var _renderCompositeLink: js.Any = js.native
   var _renderGroup: js.Any = js.native
   var _renderGroupHeader: js.Any = js.native

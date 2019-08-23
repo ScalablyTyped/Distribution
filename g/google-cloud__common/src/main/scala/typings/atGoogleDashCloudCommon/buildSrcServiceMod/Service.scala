@@ -56,7 +56,7 @@ class Service protected () extends js.Object {
     * @param {function} callback - The callback function passed to `request`.
     */
   var request_ : js.Any = js.native
-  var timeout: Double = js.native
+  var timeout: js.UndefOr[Double] = js.native
   /**
     * Get and update the Service's project ID.
     *

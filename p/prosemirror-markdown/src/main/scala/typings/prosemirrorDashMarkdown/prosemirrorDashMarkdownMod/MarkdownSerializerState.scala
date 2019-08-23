@@ -37,6 +37,10 @@ class MarkdownSerializerState[S /* <: Schema[_, _] */] () extends js.Object {
     */
   def getEnclosingWhitespace(text: String): Anon_Leading = js.native
   /**
+    * Wraps the passed string in a string of its own
+    */
+  def quote(str: String): String = js.native
+  /**
     * Render the given node as a block.
     */
   def render(node: Node[S]): Unit = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-node-resolve"
-version := "5.2.0-655ab2"
+version := "5.2.0-8b0db8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-1859c4",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20190322Z-374ad0",
-  "org.scalablytyped" %%% "rollup" % "1.20.0-9bbe8b",
+  "org.scalablytyped" %%% "rollup" % "1.20.1-9bbe8b",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

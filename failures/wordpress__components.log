@@ -697,8 +697,8 @@
 [debug] PhaseRunner.scala:84 Success [id => @wordpress/components, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing @wordpress/components [id => @wordpress/components, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => @wordpress/components, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building wordpress__components... [id => @wordpress/components, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/atWordpressComponents/iconMod/IconNs/package.scala:12:41
+[warn ] Phase3Compile.scala:211 Building wordpress__components... [id => @wordpress/components, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/atWordpressComponents/iconMod/IconNs/package.scala:12:41
 [E]      not found: type U
 [E]      L12:   type AdditionalProps[T] = js.Object | U
 [E]                                                   ^

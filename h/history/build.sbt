@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "history"
-version := "4.7.2-dt-20190821Z-3f670d"
+version := "4.7.2-dt-20190822Z-3f670d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

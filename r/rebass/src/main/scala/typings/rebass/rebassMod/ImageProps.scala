@@ -2,7 +2,6 @@ package typings.rebass.rebassMod
 
 import typings.csstype.csstypeMod.AlignSelfProperty
 import typings.csstype.csstypeMod.BackgroundProperty
-import typings.csstype.csstypeMod.BorderRadiusProperty
 import typings.csstype.csstypeMod.ColorProperty
 import typings.csstype.csstypeMod.FlexProperty
 import typings.csstype.csstypeMod.FontSizeProperty
@@ -19,10 +18,9 @@ import typings.csstype.csstypeMod.PaddingProperty
 import typings.csstype.csstypeMod.PaddingRightProperty
 import typings.csstype.csstypeMod.PaddingTopProperty
 import typings.csstype.csstypeMod.WidthProperty
+import typings.react.reactMod.ElementType
 import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.ReactType
+import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
@@ -32,17 +30,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLImageElement>, keyof rebass.rebass.ImageKnownProps> ]: react.react.HTMLProps<std.HTMLImageElement>[P]} */ trait ImageProps extends ImageKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLImageElement>, 'variant'> ]: react.react.HTMLProps<std.HTMLImageElement>[P]} */ trait ImageProps extends BoxKnownProps
 
 object ImageProps {
   @scala.inline
   def apply(
     alignSelf: ResponsiveValue[AlignSelfProperty] = null,
-    as: ReactType[_] = null,
+    as: ElementType[_] = null,
     backgroundColor: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
     bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    borderRadius: ResponsiveValue[BorderRadiusProperty[TLengthStyledSystem]] = null,
-    children: ReactNode = null,
     color: ResponsiveValue[ColorProperty] = null,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
@@ -79,7 +75,9 @@ object ImageProps {
     pt: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
     px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: Ref[js.Any] = null,
+    sx: SxStyleProp = null,
+    variant: ResponsiveValue[String] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
   ): ImageProps = {
     val __obj = js.Dynamic.literal()
@@ -87,8 +85,6 @@ object ImageProps {
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
@@ -126,6 +122,8 @@ object ImageProps {
     if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
     if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }

@@ -1149,6 +1149,7 @@
 | 0.7625361765467087 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o
 | 0.7624509154264008 | [fetch-mock](./f/fetch-mock) | Mock http requests made using fetch (or isomorphic
 | 0.7623769523165327 | [marked-terminal](./m/marked-terminal) | A custom render for marked to output to the Termin
+| 0.7622825687603436 | [jsonpointer](./j/jsonpointer) | Simple JSON Addressing.
 | 0.7621622627981428 | [lodash_dot_hasin](./l/lodash_dot_hasin) | The lodash method _.hasIn exported as a module.
 | 0.7621591193828768 | [circular-dependency-plugi](./c/circular-dependency-plugin) | Detect modules with circular dependencies when bun
 | 0.7621363583810725 | [rechoir](./r/rechoir) | Prepare a node environment to require files with d
@@ -1395,6 +1396,7 @@
 | 0.748295614581576 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 0.7482908115543735 | [p-waterfall](./p/p-waterfall) | Run promise-returning & async functions in series,
 | 0.7482784567629094 | [level-js](./l/level-js) | An abstract-leveldown compliant store on top of In
+| 0.7482247974173852 | [gulp-header](./g/gulp-header) | Gulp extension to add header to file(s) in the pip
 | 0.7480765187176996 | [countup_dot_js](./c/countup_dot_js) | Animates a numerical value by counting to it
 | 0.747970428663123 | [blueprintjs__timezone](./b/blueprintjs__timezone) | Components related to timezone selection and UI
 | 0.7477216048908453 | [lodash_dot_before](./l/lodash_dot_before) | The lodash method _.before exported as a module.
@@ -1680,6 +1682,7 @@
 | 0.7335365687751988 | [autosuggest-highlight](./a/autosuggest-highlight) | Utilities for highlighting text in autosuggest and
 | 0.7335283406631092 | [lodash_dot_meanby](./l/lodash_dot_meanby) | The lodash method _.meanBy exported as a module.
 | 0.7335241358033405 | [getopts](./g/getopts) | High performance Node.js CLI options parser.
+| 0.7335005328784803 | [react-native-gesture-hand](./r/react-native-gesture-handler) | Experimental implementation of a new declarative A
 | 0.7334423768227838 | [serialport](./s/serialport) | Node.js package to access serial ports. Linux, OSX
 | 0.733433425682263 | [graceful-fs](./g/graceful-fs) | A drop-in replacement for fs, making various impro
 | 0.7333985727139329 | [lodash_dot_unzipwith](./l/lodash_dot_unzipwith) | The lodash method _.unzipWith exported as a module
@@ -1694,6 +1697,7 @@
 | 0.732687805199232 | [jsrender](./j/jsrender) | Best-of-breed templating in browser or on Node.js 
 | 0.7326783208681239 | [ps-list](./p/ps-list) | Get running processes
 | 0.7326241709603255 | [cli-table3](./c/cli-table3) | Pretty unicode tables for the command line. Based 
+| 0.7325979766248558 | [rebass](./r/rebass) | React primitive UI components built with styled-sy
 | 0.7325804044207684 | [concaveman](./c/concaveman) | Fast 2D concave hull algorithm in JavaScript (gene
 | 0.732563289768199 | [react-native-community__c](./r/react-native-community__cli) | React Native CLI
 | 0.7325554363811366 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
@@ -2012,6 +2016,7 @@
 | 0.7162998165583864 | [power-assert-formatter](./p/power-assert-formatter) | Power Assert output formatter
 | 0.7162976411171944 | [inversify-express-utils](./i/inversify-express-utils) | Some utilities for the development of express appl
 | 0.7161525920511095 | [auth0-lock](./a/auth0-lock) | Auth0 Lock
+| 0.7161488747586773 | [relay-compiler](./r/relay-compiler) | A compiler tool for building GraphQL-driven applic
 | 0.7161059065150224 | [redux-logger](./r/redux-logger) | Logger for Redux
 | 0.7160662616679707 | [koa-csrf](./k/koa-csrf) | CSRF tokens for Koa
 | 0.7158978690015279 | [gulp-zip](./g/gulp-zip) | ZIP compress files
@@ -2424,7 +2429,6 @@
 | 0.6960291001422129 | [random-int](./r/random-int) | Generate a random integer
 | 0.6960041840640433 | [node-dijkstra](./n/node-dijkstra) | A NodeJS implementation of Dijkstra's algorithm
 | 0.6958316226670724 | [react-breadcrumbs-dynamic](./r/react-breadcrumbs-dynamic) | React dynamic breadcrumbs extremely flexible and e
-| 0.6958211544711548 | [csv-parse](./c/csv-parse) | CSV parsing implementing the Node.js stream.Transf
 | 0.6958107539959142 | [commercetools__enzyme-ext](./c/commercetools__enzyme-extensions) | Enzyme extensions tailored at improving dealing wi
 | 0.6957871356372076 | [react-aria-modal](./r/react-aria-modal) | A fully accessible and flexible React modal built 
 | 0.6957482335045662 | [react-tabs](./r/react-tabs) | An accessible and easy tab component for ReactJS
@@ -3783,6 +3787,7 @@
 | 0.6327275068553233 | [react-image-crop](./r/react-image-crop) | A responsive image cropping tool for React
 | 0.6326739716411478 | [idyll](./i/idyll) | Command line interface for idyll lang
 | 0.6326667378784236 | [sitemap2](./s/sitemap2) | Sitemap-generating framework
+| 0.6325980191863104 | [react-native-view-shot](./r/react-native-view-shot) | Capture a React Native view to an image
 | 0.6325319869074447 | [pg-large-object](./p/pg-large-object) | Large object support for PostgreSQL clients (node-
 | 0.6325267243971521 | [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des
 | 0.6323187764430291 | [unl-core](./u/unl-core) | Gustavo Niemeyer’s geocoding system with elevation
@@ -4199,6 +4204,7 @@
 | 0.5955437379172654 | [heroku-logger](./h/heroku-logger) | A dead simple logger, designed to be perfect for H
 | 0.5952280121344495 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o
 | 0.5952006697919864 | [protobufjs__inquire](./p/protobufjs__inquire) | Requires a module only if available and hides the 
+| 0.5950531550914517 | [react-vega](./r/react-vega) | Convert Vega spec into React class conveniently
 | 0.5949900927771696 | [zeit__next-typescript](./z/zeit__next-typescript) | Use 
 | 0.5949782682816898 | [incremental-dom](./i/incremental-dom) | An in-place virtual DOM library
 | 0.5948267454018835 | [protobufjs__eventemitter](./p/protobufjs__eventemitter) | A minimal event emitter.
@@ -6243,6 +6249,7 @@
 | 0.30081105072953884 | [bitwise-xor](./b/bitwise-xor) | Bitwise XOR between two Buffers or Strings, return
 | 0.30062279778397666 | [apollo-server-plugin-base](./a/apollo-server-plugin-base) | Apollo Server plugin base classes
 | 0.3005002084970516 | [pulltorefreshjs](./p/pulltorefreshjs) | Pull To Refresh
+| 0.2999346078963065 | [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a 
 | 0.2996207759750547 | [saml20](./s/saml20) | SAML 2.0 and 1.1 token parser for Node.js
 | 0.29947449016470423 | [nivo__pie](./n/nivo__pie) | -
 | 0.2993035463501525 | [gcp-metadata](./g/gcp-metadata) | Get the metadata from a Google Cloud Platform envi
@@ -6394,6 +6401,7 @@
 | 0.2685428778382153 | [difflib](./d/difflib) | text diff library ported from Python's difflib mod
 | 0.2685036582172887 | [gapi](./g/gapi) | Node implementation of Google's JavaScript Library
 | 0.26847969023979174 | [swagger-ui-dist](./s/swagger-ui-dist) | -
+| 0.2681546380645785 | [leaflet_dot_icon_dot_glyp](./l/leaflet_dot_icon_dot_glyph) | Allows you to put glyphs from icon fonts into your
 | 0.2679599527654369 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment.
 | 0.2678172208549873 | [keycloak-js](./k/keycloak-js) | Keycloak Adapter
 | 0.26779978538622995 | [gatsby-link](./g/gatsby-link) | An enhanced Link component for Gatsby sites with s
@@ -6403,6 +6411,7 @@
 | 0.2672948672376169 | [array-binarysearch_dot_cl](./a/array-binarysearch_dot_closest) | Get index of closest value in sorted array.
 | 0.26720081683155195 | [apollo-engine-reporting](./a/apollo-engine-reporting) | Send reports about your GraphQL services to Apollo
 | 0.2661122492042328 | [humanize-url](./h/humanize-url) | Humanize a URL: https://sindresorhus.com → sindres
+| 0.2660196288285239 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 0.2656597580315686 | [wepy-redux](./w/wepy-redux) | WePY bindings for Redux
 | 0.2655445844345202 | [hashset](./h/hashset) | A simple hash set in JavaScript
 | 0.2653888495523772 | [3d-bin-packing](./3/3d-bin-packing) | Packer, 3D-Bin-Packing with multiple Boxes.
@@ -6411,9 +6420,12 @@
 | 0.264745674867546 | [electron-notifications](./e/electron-notifications) | A node module for sending notifications in electro
 | 0.26462615656308036 | [com_dot_darktalker_dot_co](./c/com_dot_darktalker_dot_cordova_dot_screenshot) | screenshot PhoneGap Plugin for Android
 | 0.2645641915433697 | [semantic-ui-transition](./s/semantic-ui-transition) | Single component release of transition
+| 0.2642997114552468 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
 | 0.2642993087303285 | [webix](./w/webix) | Webix UI
 | 0.2642670560438406 | [jquery-editable-select](./j/jquery-editable-select) | A simple jQuery Plugin that converts a select into
 | 0.26418863069948173 | [asyncblock-generators](./a/asyncblock-generators) | asyncblock without the fibers
+| 0.2638860131798402 | [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces
+| 0.2637256505476768 | [expo-constants](./e/expo-constants) | Provides system information that remains constant 
 | 0.26372254233513165 | [ionic__core](./i/ionic__core) | Base components for Ionic
 | 0.2635730231413436 | [lodash_dot_uniq](./l/lodash_dot_uniq) | The lodash method _.uniq exported as a module.
 | 0.26346626698337666 | [react-native-sortable-gri](./r/react-native-sortable-grid) | Drag-and-drop sortable grid view for React Native.
@@ -6435,6 +6447,7 @@
 | 0.26007464013520143 | [gulp-changed](./g/gulp-changed) | Only pass through changed files
 | 0.2598859588313597 | [pgwmodal](./p/pgwmodal) | Responsive Modal / Dialog window for jQuery, Zepto
 | 0.2596773409724843 | [raspi-pwm](./r/raspi-pwm) | Provides access to PWM on the Raspberry Pi as part
+| 0.2593881852719644 | [expo-location](./e/expo-location) | Allows reading geolocation information from the de
 | 0.2593215859485115 | [flexmonster](./f/flexmonster) | Pivot table component for web reporting. The most 
 | 0.2592326258858422 | [apex_dot_js](./a/apex_dot_js) | λ improves AWS Lambda's UX with promises
 | 0.259096033079269 | [azure-kusto-data](./a/azure-kusto-data) | Azure Data Explorer Query SDK
@@ -6449,6 +6462,7 @@
 | 0.25787373178245504 | [multi-progress](./m/multi-progress) | Multiple progress bars based on the "progress" pac
 | 0.2577641400520777 | [reach__visually-hidden](./r/reach__visually-hidden) | Render text that is announced to screen readers bu
 | 0.2576453543766476 | [di-lite](./d/di-lite) | A ultra light-weight dependency injection containe
+| 0.2575282187715448 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.25739905626968973 | [zen-push](./z/zen-push) | An Observable push stream
 | 0.2573217859304642 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel
 | 0.25723611590965323 | [bit-array](./b/bit-array) | JavaScript implementation of bit arrays
@@ -6655,8 +6669,11 @@
 | 0.2208064577277572 | [aws-sdk__location-constra](./a/aws-sdk__location-constraint-middleware) | -
 | 0.22079205950088682 | [aws-sdk__ssec-middleware](./a/aws-sdk__ssec-middleware) | -
 | 0.22078357477255 | [aws-sdk__xml-body-builder](./a/aws-sdk__xml-body-builder) | XML Body Builder for the AWS SDK
+| 0.2206836177885578 | [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried 
 | 0.2204137999161816 | [uws](./u/uws) | -
+| 0.220364097752757 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient
 | 0.22019719233532858 | [jquery_dot_tipsy](./j/jquery_dot_tipsy) | Facebook-style tooltip plugin for jQuery
+| 0.2200783110698394 | [expo-web-browser](./e/expo-web-browser) | Provides access to the system's web browser and su
 | 0.21986856001789834 | [aws-sdk__add-glacier-chec](./a/aws-sdk__add-glacier-checksum-headers-node) | -
 | 0.21963379277152012 | [node-validator](./n/node-validator) | A simple, extensible object property validator for
 | 0.2195170995754281 | [aws-sdk__query-request-pr](./a/aws-sdk__query-request-presigner) | -
@@ -6726,6 +6743,7 @@
 | 0.2098809235816862 | [aws-sdk__util-base64-univ](./a/aws-sdk__util-base64-universal) | A cross-platform Base64  UInt8Array converter
 | 0.20967319974710624 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress.
 | 0.20960724643597625 | [resize-observer-lite](./r/resize-observer-lite) | A ResizeObserver polyfill that has limited functio
+| 0.20940494901711554 | [expo-keep-awake](./e/expo-keep-awake) | Provides a React component that prevents the scree
 | 0.20923552086478237 | [lodash_dot_noop](./l/lodash_dot_noop) | The lodash method _.noop exported as a module.
 | 0.20911796049660814 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr
 | 0.20898070709092736 | [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files
@@ -6734,9 +6752,11 @@
 | 0.20873941831262988 | [react-dom-factories](./r/react-dom-factories) | React package for DOM factory methods.
 | 0.208054073155874 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API.
 | 0.20801013666896173 | [gulp-clean-dest](./g/gulp-clean-dest) | A gulp plugin for removing files from the dest dir
+| 0.2075095131130218 | [unimodules__react-native-](./u/unimodules__react-native-adapter) | The adapter to use universal modules with the Reac
 | 0.20742633697472876 | [react-native-bluetooth-se](./r/react-native-bluetooth-serial) | 'Bluetooth serial for react native'
 | 0.20721233638426567 | [camaro](./c/camaro) | Transforming XML to JSON using Node.js binding to 
 | 0.2072021881648543 | [signalr-no-jquery](./s/signalr-no-jquery) | Javascript SignalR client without jQuery dependenc
+| 0.20664888900213924 | [unimodules__core](./u/unimodules__core) | Universal modules core
 | 0.2064871721138427 | [swagger-ui-react](./s/swagger-ui-react) | -
 | 0.20579311683941037 | [turbostatus](./t/turbostatus) | CLI util to show status of repos in a main folder.
 | 0.2054562663354951 | [wordpress__date](./w/wordpress__date) | Date module for WordPress.

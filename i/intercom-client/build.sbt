@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intercom-client"
-version := "2.9-dt-20181204Z-440807"
+version := "2.11-dt-20190822Z-8b0c7d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -34,7 +34,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled.
+    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled. For more information, see  IAM Database Authentication in the Amazon Aurora User Guide. 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**

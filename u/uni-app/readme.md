@@ -1,7 +1,7 @@
 
 # Scala.js typings for uni-app
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 
 

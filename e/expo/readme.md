@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo
 
-Typings are for version 32.0
+Typings are for version 34.0.4
 
 ## Library description:
 The Expo SDK
@@ -24,7 +24,7 @@ The Expo SDK
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

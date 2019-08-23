@@ -78,6 +78,19 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]
   ): Request[CreateLocationS3Response, AWSError] = js.native
   /**
+    * Creates an endpoint for a Server Message Block (SMB) file system.
+    */
+  def createLocationSmb(): Request[CreateLocationSmbResponse, AWSError] = js.native
+  def createLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationSmbResponse, Unit]): Request[CreateLocationSmbResponse, AWSError] = js.native
+  /**
+    * Creates an endpoint for a Server Message Block (SMB) file system.
+    */
+  def createLocationSmb(params: CreateLocationSmbRequest): Request[CreateLocationSmbResponse, AWSError] = js.native
+  def createLocationSmb(
+    params: CreateLocationSmbRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationSmbResponse, Unit]
+  ): Request[CreateLocationSmbResponse, AWSError] = js.native
+  /**
     * Creates a task. A task is a set of two locations (source and destination) and a set of Options that you use to control the behavior of a task. If you don't specify Options when you create a task, AWS DataSync populates them with service defaults. When you create a task, it first enters the CREATING state. During CREATING AWS DataSync attempts to mount the on-premises Network File System (NFS) location. The task transitions to the AVAILABLE state without waiting for the AWS location to become mounted. If required, AWS DataSync mounts the AWS location before each task execution. If an agent that is associated with a source (NFS) location goes offline, the task transitions to the UNAVAILABLE status. If the status of the task remains in the CREATING status for more than a few minutes, it means that your agent might be having trouble mounting the source NFS file system. Check the task's ErrorCode and ErrorDetail. Mount issues are often caused by either a misconfigured firewall or a mistyped NFS server host name.
     */
   def createTask(): Request[CreateTaskResponse, AWSError] = js.native
@@ -181,6 +194,19 @@ trait DataSync extends Service {
     params: DescribeLocationS3Request,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationS3Response, Unit]
   ): Request[DescribeLocationS3Response, AWSError] = js.native
+  /**
+    * Returns metadata, such as the path and user information about a SMB location.
+    */
+  def describeLocationSmb(): Request[DescribeLocationSmbResponse, AWSError] = js.native
+  def describeLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationSmbResponse, Unit]): Request[DescribeLocationSmbResponse, AWSError] = js.native
+  /**
+    * Returns metadata, such as the path and user information about a SMB location.
+    */
+  def describeLocationSmb(params: DescribeLocationSmbRequest): Request[DescribeLocationSmbResponse, AWSError] = js.native
+  def describeLocationSmb(
+    params: DescribeLocationSmbRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationSmbResponse, Unit]
+  ): Request[DescribeLocationSmbResponse, AWSError] = js.native
   /**
     * Returns metadata about a task.
     */

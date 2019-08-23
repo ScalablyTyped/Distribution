@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.atGoogleDashCloudStorage.Anon_OWNERROLE
 import typings.atGoogleDashCloudStorage.buildSrcBucketMod.BucketOptions
 import typings.atGoogleDashCloudStorage.buildSrcFileMod.FileOptions
+import typings.atGoogleDashCloudStorage.buildSrcHmacKeyMod.HmacKeyOptions
 import typings.atGoogleDashCloudStorage.buildSrcStorageMod.StorageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -100,6 +101,19 @@ object Storage extends js.Object {
     /* name */ String, 
     js.UndefOr[/* options */ FileOptions], 
     typings.atGoogleDashCloudStorage.buildSrcFileMod.File
+  ] = js.native
+  /**
+    * {@link HmacKey} class.
+    *
+    * @name Storage.HmacKey
+    * @see HmacKey
+    * @type {Constructor}
+    */
+  var HmacKey: Instantiable3[
+    /* storage */ typings.atGoogleDashCloudStorage.buildSrcStorageMod.Storage, 
+    /* accessId */ String, 
+    js.UndefOr[/* options */ HmacKeyOptions], 
+    typings.atGoogleDashCloudStorage.buildSrcHmacKeyMod.HmacKey
   ] = js.native
   /**
     * Cloud Storage uses access control lists (ACLs) to manage object and

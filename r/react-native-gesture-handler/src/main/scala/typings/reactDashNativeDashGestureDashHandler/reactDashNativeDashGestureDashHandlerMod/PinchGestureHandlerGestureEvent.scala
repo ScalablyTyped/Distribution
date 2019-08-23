@@ -1,0 +1,20 @@
+package typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PinchGestureHandlerGestureEvent extends GestureHandlerGestureEvent {
+  @JSName("nativeEvent")
+  var nativeEvent_PinchGestureHandlerGestureEvent: GestureHandlerGestureEventNativeEvent with PinchGestureHandlerEventExtra
+}
+
+object PinchGestureHandlerGestureEvent {
+  @scala.inline
+  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent with PinchGestureHandlerEventExtra): PinchGestureHandlerGestureEvent = {
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+  
+    __obj.asInstanceOf[PinchGestureHandlerGestureEvent]
+  }
+}
+

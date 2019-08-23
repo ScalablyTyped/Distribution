@@ -126,6 +126,7 @@ class LayersModel protected () extends Container {
     * @returns Array of Scalars.
     */
   var testLoop: js.Any = js.native
+  var userDefinedMetadata: js.Any = js.native
   /**
     * Check trainable weights count consistency.
     *
@@ -338,6 +339,18 @@ class LayersModel protected () extends Container {
   /* protected */ def getNamedWeights(): js.Array[NamedTensor] = js.native
   /* protected */ def getNamedWeights(config: SaveConfig): js.Array[NamedTensor] = js.native
   /* protected */ def getTrainingConfig(): TrainingConfig = js.native
+  /**
+    * Get user-defined metadata.
+    *
+    * The metadata is supplied via one of the two routes:
+    *   1. By calling `setUserDefinedMetadata()`.
+    *   2. Loaded during model loading (if the model is constructed
+    *      via `tf.loadLayersModel()`.)
+    *
+    * If no user-defined metadata is available from either of the
+    * two routes, this function will return `undefined`.
+    */
+  def getUserDefinedMetadata(): js.Object = js.native
   def loadTrainingConfig(trainingConfig: TrainingConfig): Unit = js.native
   /**
     * Creates a function that performs the following actions:
@@ -508,6 +521,15 @@ class LayersModel protected () extends Container {
     */
   def save(handlerOrURL: IOHandler): js.Promise[SaveResult] = js.native
   def save(handlerOrURL: IOHandler, config: SaveConfig): js.Promise[SaveResult] = js.native
+  /**
+    * Set user-defined metadata.
+    *
+    * The set metadata will be serialized together with the topology
+    * and weights of the model during `save()` calls.
+    *
+    * @param setUserDefinedMetadata
+    */
+  def setUserDefinedMetadata(userDefinedMetadata: js.Object): Unit = js.native
   /* protected */ def standardizeUserData(
     x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
     y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]]

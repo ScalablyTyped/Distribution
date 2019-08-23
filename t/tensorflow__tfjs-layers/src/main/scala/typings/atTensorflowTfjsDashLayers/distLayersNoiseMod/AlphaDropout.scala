@@ -22,6 +22,7 @@ class AlphaDropout protected () extends Layer {
 @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "AlphaDropout")
 @js.native
 object AlphaDropout extends js.Object {
+  /** @nocollapse */
   var className: String = js.native
 }
 

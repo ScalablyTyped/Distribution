@@ -14,6 +14,10 @@ trait ChooseLocationOptions extends js.Object {
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
+    * 搜索关键字
+    */
+  var keyword: js.UndefOr[String] = js.undefined
+  /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function1[/* result */ ChooseLocationSuccess, Unit]] = js.undefined
@@ -24,11 +28,13 @@ object ChooseLocationOptions {
   def apply(
     complete: () => Unit = null,
     fail: () => Unit = null,
+    keyword: String = null,
     success: /* result */ ChooseLocationSuccess => Unit = null
   ): ChooseLocationOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseLocationOptions]
   }

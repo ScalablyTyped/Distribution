@@ -16,6 +16,7 @@ class GaussianDropout protected () extends Layer {
 @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianDropout")
 @js.native
 object GaussianDropout extends js.Object {
+  /** @nocollapse */
   var className: String = js.native
 }
 

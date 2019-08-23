@@ -170,7 +170,7 @@ import scala.scalajs.js.annotation._
   /* Number of options to jump in menu when page{up|down} keys are used */
   var pageSize: js.UndefOr[Double] = js.undefined
   /* Placeholder text for the select value */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[ReactNode] = js.undefined
   /* Status to relay to screen readers */
   var screenReaderStatus: js.UndefOr[js.Function1[/* obj */ Anon_Count, String]] = js.undefined
   /* Style modifier methods */
@@ -247,7 +247,7 @@ object Props {
     openMenuOnFocus: js.UndefOr[Boolean] = js.undefined,
     options: GroupedOptionsType[OptionType] | OptionsType[OptionType] = null,
     pageSize: Int | Double = null,
-    placeholder: String = null,
+    placeholder: ReactNode = null,
     screenReaderStatus: /* obj */ Anon_Count => String = null,
     styles: StylesConfig = null,
     tabIndex: String = null,
@@ -315,7 +315,7 @@ object Props {
     if (!js.isUndefined(openMenuOnFocus)) __obj.updateDynamic("openMenuOnFocus")(openMenuOnFocus)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (screenReaderStatus != null) __obj.updateDynamic("screenReaderStatus")(js.Any.fromFunction1(screenReaderStatus))
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)

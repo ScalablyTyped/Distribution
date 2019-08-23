@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__common"
-version := "2.1.0-691164"
+version := "2.1.2-50cbd3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "gtoken" % "3.0.2-c46eab",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "teeny-request" % "5.1.3-10eada")
+  "org.scalablytyped" %%% "teeny-request" % "5.2.1-ee0fa8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

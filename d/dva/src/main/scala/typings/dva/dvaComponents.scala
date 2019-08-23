@@ -17,11 +17,11 @@ object dvaComponents extends dvaProps {
   @scala.inline
   def HashRouter: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps] = js.constructorOf[typings.dva.routerMod.HashRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps]]
   @scala.inline
-  def Link: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps] = js.constructorOf[typings.dva.routerMod.Link].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps]]
+  def Link[S]: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S]] = js.constructorOf[typings.dva.routerMod.Link[S]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S]]]
   @scala.inline
   def MemoryRouter: ComponentType[typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps] = js.constructorOf[typings.dva.routerMod.MemoryRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps]]
   @scala.inline
-  def NavLink: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps] = js.constructorOf[typings.dva.routerMod.NavLink].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps]]
+  def NavLink[S]: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S]] = js.constructorOf[typings.dva.routerMod.NavLink[S]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S]]]
   @scala.inline
   def Prompt: ComponentType[typings.reactDashRouter.reactDashRouterMod.PromptProps] = js.constructorOf[typings.dva.routerMod.Prompt].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.PromptProps]]
   @scala.inline

@@ -36,6 +36,7 @@ import typings.atTensorflowTfjsDashLayers.distLayersPaddingMod.ZeroPadding2DLaye
 import typings.atTensorflowTfjsDashLayers.distLayersPoolingMod.GlobalPooling2DLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersPoolingMod.Pooling1DLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersPoolingMod.Pooling2DLayerArgs
+import typings.atTensorflowTfjsDashLayers.distLayersPoolingMod.Pooling3DLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.GRUCellLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.GRULayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.LSTMCellLayerArgs
@@ -78,10 +79,13 @@ object ^ extends js.Object {
   def average(args: LayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def averagePooling1d(args: Pooling1DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def averagePooling2d(args: Pooling2DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def averagePooling3d(args: Pooling3DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def avgPool1d(args: Pooling1DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def avgPool2d(args: Pooling2DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def avgPool3d(args: Pooling3DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def avgPooling1d(args: Pooling1DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def avgPooling2d(args: Pooling2DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def avgPooling3d(args: Pooling3DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def batchNormalization(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def batchNormalization(args: BatchNormalizationLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def bidirectional(args: BidirectionalLayerArgs): Bidirectional = js.native
@@ -121,6 +125,7 @@ object ^ extends js.Object {
   def masking(args: MaskingArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def maxPooling1d(args: Pooling1DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def maxPooling2d(args: Pooling2DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def maxPooling3d(args: Pooling3DLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def maximum(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def maximum(args: LayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def minimum(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native

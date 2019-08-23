@@ -6,6 +6,8 @@ import typings.atGoogleDashCloudStorage.Anon_OWNERROLE
 import typings.atGoogleDashCloudStorage.buildSrcBucketMod.Bucket
 import typings.atGoogleDashCloudStorage.buildSrcChannelMod.Channel
 import typings.atGoogleDashCloudStorage.buildSrcFileMod.FileOptions
+import typings.atGoogleDashCloudStorage.buildSrcHmacKeyMod.HmacKey
+import typings.atGoogleDashCloudStorage.buildSrcHmacKeyMod.HmacKeyOptions
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -103,6 +105,10 @@ class Storage () extends Service {
   def createBucket(name: String, callback: BucketCallback): Unit = js.native
   def createBucket(name: String, metadata: CreateBucketRequest): js.Promise[CreateBucketResponse] = js.native
   def createBucket(name: String, metadata: CreateBucketRequest, callback: BucketCallback): Unit = js.native
+  def createHmacKey(serviceAccountEmail: String): js.Promise[CreateHmacKeyResponse] = js.native
+  def createHmacKey(serviceAccountEmail: String, callback: CreateHmacKeyCallback): Unit = js.native
+  def createHmacKey(serviceAccountEmail: String, options: CreateHmacKeyOptions): js.Promise[CreateHmacKeyResponse] = js.native
+  def createHmacKey(serviceAccountEmail: String, options: CreateHmacKeyOptions, callback: CreateHmacKeyCallback): Unit = js.native
   def getBuckets(): js.Promise[GetBucketsResponse] = js.native
   def getBuckets(callback: GetBucketsCallback): Unit = js.native
   def getBuckets(options: GetBucketsRequest): js.Promise[GetBucketsResponse] = js.native
@@ -135,10 +141,136 @@ class Storage () extends Service {
     *   });
     */
   def getBucketsStream(): Readable = js.native
+  /**
+    * Query object for listing HMAC keys.
+    *
+    * @typedef {object} GetHmacKeysOptions
+    * @property {string} [projectId] The project ID of the project that owns
+    *     the service account of the requested HMAC key. If not provided,
+    *     the project ID used to instantiate the Storage client will be used.
+    * @property {string} [serviceAccountEmail] If present, only HMAC keys for the
+    *     given service account are returned.
+    * @property {boolean} [showDeletedKeys=false] If true, include keys in the DELETE
+    *     state. Default is false.
+    * @property {boolean} [autoPaginate=true] Have pagination handled
+    *     automatically.
+    * @property {number} [maxApiCalls] Maximum number of API calls to make.
+    * @property {number} [maxResults] Maximum number of items plus prefixes to
+    *     return.
+    * @property {string} [pageToken] A previously-returned page token
+    *     representing part of the larger set of results to view.
+    * @property {string} [userProject] This parameter is currently ignored.
+    */
+  /**
+    * @typedef {array} GetHmacKeysResponse
+    * @property {HmacKey[]} 0 Array of {@link HmacKey} instances.
+    */
+  /**
+    * @callback GetHmacKeysCallback
+    * @param {?Error} err Request error, if any.
+    * @param {HmacKey[]} hmacKeys Array of {@link HmacKey} instances.
+    */
+  /**
+    * Retrieves a list of HMAC keys matching the criteria.
+    *
+    * The authenticated user must have storage.hmacKeys.list permission for the project in which the key exists.
+    *
+    * @param {GetHmacKeysOption} options Configuration options.
+    * @param {GetHmacKeysCallback} callback Callback function.
+    * @return {Promise<GetHmacKeysResponse>}
+    *
+    * @example
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * storage.getHmacKeys(function(err, hmacKeys) {
+    *   if (!err) {
+    *     // hmacKeys is an array of HmacKey objects.
+    *   }
+    * });
+    *
+    * //-
+    * // To control how many API requests are made and page through the results
+    * // manually, set `autoPaginate` to `false`.
+    * //-
+    * const callback = function(err, hmacKeys, nextQuery, apiResponse) {
+    *   if (nextQuery) {
+    *     // More results exist.
+    *     storage.getHmacKeys(nextQuery, callback);
+    *   }
+    *
+    *   // The `metadata` property is populated for you with the metadata at the
+    *   // time of fetching.
+    *   hmacKeys[0].metadata;
+    * };
+    *
+    * storage.getHmacKeys({
+    *   autoPaginate: false
+    * }, callback);
+    *
+    * //-
+    * // If the callback is omitted, we'll return a Promise.
+    * //-
+    * storage.getHmacKeys().then(function(data) {
+    *   const hmacKeys = data[0];
+    * });
+    */
+  def getHmacKeys(): js.Promise[GetHmacKeysResponse] = js.native
+  def getHmacKeys(callback: GetHmacKeysCallback): Unit = js.native
+  def getHmacKeys(options: GetHmacKeysOptions): js.Promise[GetHmacKeysResponse] = js.native
+  def getHmacKeys(options: GetHmacKeysOptions, callback: GetHmacKeysCallback): Unit = js.native
+  /**
+    * Get {@link HmacKey} objects for all of the HMAC keys in the project in
+    * a readable object stream.
+    *
+    * @method Storage#getHmacKeysStream
+    * @param {GetHmacKeysOptions} [options] Configuration options.
+    * @returns {ReadableStream} A readable stream that emits {@link HmacKey} instances.
+    *
+    * @example
+    * storage.getHmacKeysStream()
+    *   .on('error', console.error)
+    *   .on('data', function(hmacKey) {
+    *     // hmacKey is an HmacKey object.
+    *   })
+    *   .on('end', function() {
+    *     // All HmacKey retrieved.
+    *   });
+    *
+    * //-
+    * // If you anticipate many results, you can end a stream early to prevent
+    * // unnecessary processing and API requests.
+    * //-
+    * storage.getHmacKeysStream()
+    *   .on('data', function(bucket) {
+    *     this.end();
+    *   });
+    */
+  def getHmacKeysStream(): Readable = js.native
   def getServiceAccount(): js.Promise[GetServiceAccountResponse] = js.native
   def getServiceAccount(callback: GetServiceAccountCallback): Unit = js.native
   def getServiceAccount(options: GetServiceAccountOptions): js.Promise[GetServiceAccountResponse] = js.native
   def getServiceAccount(options: GetServiceAccountOptions, callback: GetServiceAccountCallback): Unit = js.native
+  /**
+    * Get a reference to an HmacKey object.
+    * Note: this does not fetch the HMAC key's metadata. Use HmacKey#get() to
+    * retrieve and populate the metadata.
+    *
+    * To get a reference to an HMAC key that's not created for a service
+    * account in the same project used to instantiate the Storage client,
+    * supply the project's ID as `projectId` in the `options` argument.
+    *
+    * @param {string} accessId The HMAC key's access ID.
+    * @param {HmacKeyOptions} options HmacKey constructor owptions.
+    * @returns {HmacKey}
+    * @see HmacKey
+    *
+    * @example
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * const hmacKey = storage.hmacKey('ACCESS_ID');
+    */
+  def hmacKey(accessId: String): HmacKey = js.native
+  def hmacKey(accessId: String, options: HmacKeyOptions): HmacKey = js.native
 }
 
 /* static members */
@@ -183,6 +315,19 @@ object Storage extends js.Object {
     /* name */ String, 
     js.UndefOr[/* options */ FileOptions], 
     typings.atGoogleDashCloudStorage.buildSrcFileMod.File
+  ] = js.native
+  /**
+    * {@link HmacKey} class.
+    *
+    * @name Storage.HmacKey
+    * @see HmacKey
+    * @type {Constructor}
+    */
+  var HmacKey: Instantiable3[
+    /* storage */ Storage, 
+    /* accessId */ String, 
+    js.UndefOr[/* options */ HmacKeyOptions], 
+    typings.atGoogleDashCloudStorage.buildSrcHmacKeyMod.HmacKey
   ] = js.native
   /**
     * Cloud Storage uses access control lists (ACLs) to manage object and

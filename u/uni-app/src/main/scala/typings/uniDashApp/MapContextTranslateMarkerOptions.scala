@@ -16,7 +16,7 @@ trait MapContextTranslateMarkerOptions extends js.Object {
   /**
     * 指定marker移动到的目标点
     */
-  var destination: js.UndefOr[js.Any] = js.undefined
+  var destination: js.UndefOr[LocationObject] = js.undefined
   /**
     * 动画持续时长，默认值1000ms，平移与旋转分别计算
     */
@@ -40,7 +40,7 @@ object MapContextTranslateMarkerOptions {
   def apply(
     animationEnd: () => Unit = null,
     autoRotate: js.UndefOr[Boolean] = js.undefined,
-    destination: js.Any = null,
+    destination: LocationObject = null,
     duration: Int | Double = null,
     fail: () => Unit = null,
     markerId: Int | Double = null,

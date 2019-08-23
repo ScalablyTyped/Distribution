@@ -10,7 +10,7 @@ trait PendingMaintenanceAction extends js.Object {
     */
   var Action: js.UndefOr[String] = js.undefined
   /**
-    * The date of the maintenance window when the action is applied. The maintenance action is applied to the resource during its first maintenance window after this date. If this date is specified, any next-maintenance opt-in requests are ignored.
+    * The date of the maintenance window when the action is applied. The maintenance action is applied to the resource during its first maintenance window after this date.
     */
   var AutoAppliedAfterDate: js.UndefOr[TStamp] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait PendingMaintenanceAction extends js.Object {
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
-    * The date when the maintenance action is automatically applied. The maintenance action is applied to the resource on this date regardless of the maintenance window for the resource. If this date is specified, any immediate opt-in requests are ignored.
+    * The date when the maintenance action is automatically applied. The maintenance action is applied to the resource on this date regardless of the maintenance window for the resource.
     */
   var ForcedApplyDate: js.UndefOr[TStamp] = js.undefined
   /**

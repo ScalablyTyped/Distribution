@@ -9,6 +9,7 @@ import typings.csstype.csstypeMod.FlexProperty
 import typings.csstype.csstypeMod.FlexWrapProperty
 import typings.csstype.csstypeMod.FontSizeProperty
 import typings.csstype.csstypeMod.GlobalsNumber
+import typings.csstype.csstypeMod.HeightProperty
 import typings.csstype.csstypeMod.JustifyContentProperty
 import typings.csstype.csstypeMod.MarginBottomProperty
 import typings.csstype.csstypeMod.MarginLeftProperty
@@ -21,10 +22,9 @@ import typings.csstype.csstypeMod.PaddingProperty
 import typings.csstype.csstypeMod.PaddingRightProperty
 import typings.csstype.csstypeMod.PaddingTopProperty
 import typings.csstype.csstypeMod.WidthProperty
+import typings.react.reactMod.ElementType
 import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.ReactType
+import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
 import typings.styledDashSystem.styledDashSystemMod.AlignItemsProps
@@ -49,16 +49,16 @@ object FlexKnownProps {
   def apply(
     alignItems: ResponsiveValue[AlignItemsProperty] = null,
     alignSelf: ResponsiveValue[AlignSelfProperty] = null,
-    as: ReactType[_] = null,
+    as: ElementType[_] = null,
     backgroundColor: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
     bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    children: ReactNode = null,
     color: ResponsiveValue[ColorProperty] = null,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
     flexDirection: ResponsiveValue[FlexDirectionProperty] = null,
     flexWrap: ResponsiveValue[FlexWrapProperty] = null,
     fontSize: ResponsiveValue[FontSizeProperty[TLengthStyledSystem]] = null,
+    height: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
     justifyContent: ResponsiveValue[JustifyContentProperty] = null,
     key: Key = null,
     m: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
@@ -91,7 +91,9 @@ object FlexKnownProps {
     pt: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
     px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: Ref[js.Any] = null,
+    sx: SxStyleProp = null,
+    variant: ResponsiveValue[String] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
   ): FlexKnownProps = {
     val __obj = js.Dynamic.literal()
@@ -100,13 +102,13 @@ object FlexKnownProps {
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
     if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
@@ -140,6 +142,8 @@ object FlexKnownProps {
     if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
     if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexKnownProps]
   }

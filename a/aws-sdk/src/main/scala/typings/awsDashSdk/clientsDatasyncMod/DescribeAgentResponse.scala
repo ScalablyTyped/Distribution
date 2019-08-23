@@ -25,9 +25,6 @@ trait DescribeAgentResponse extends js.Object {
     * The name of the agent.
     */
   var Name: js.UndefOr[TagValue] = js.undefined
-  /**
-    * The subnet and the security group that DataSync used to access a VPC endpoint.
-    */
   var PrivateLinkConfig: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.PrivateLinkConfig] = js.undefined
   /**
     * The status of the agent. If the status is ONLINE, then the agent is configured properly and is available to use. The Running status is the normal running status for an agent. If the status is OFFLINE, the agent's VM is turned off or the agent is in an unhealthy state. When the issue that caused the unhealthy state is resolved, the agent returns to ONLINE status.

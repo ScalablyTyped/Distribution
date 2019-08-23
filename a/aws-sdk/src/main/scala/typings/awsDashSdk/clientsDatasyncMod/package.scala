@@ -104,6 +104,16 @@ package object clientsDatasyncMod {
   type PreserveDevices = _PreserveDevices | String
   type S3BucketArn = String
   type ServerHostname = String
+  type SmbDomain = String
+  type SmbPassword = String
+  type SmbUser = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.AUTOMATIC
+    - typings.awsDashSdk.awsDashSdkStrings.SMB2
+    - typings.awsDashSdk.awsDashSdkStrings.SMB3
+    - java.lang.String
+  */
+  type SmbVersion = _SmbVersion | String
   type SourceNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
   type Subdirectory = String
   type TagKey = String

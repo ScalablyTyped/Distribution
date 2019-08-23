@@ -1,0 +1,21 @@
+package typings.expo.buildARMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ARMatrices extends js.Object {
+  var projectionMatrix: Matrix
+  var transform: Matrix
+  var viewMatrix: Matrix
+}
+
+object ARMatrices {
+  @scala.inline
+  def apply(projectionMatrix: Matrix, transform: Matrix, viewMatrix: Matrix): ARMatrices = {
+    val __obj = js.Dynamic.literal(projectionMatrix = projectionMatrix, transform = transform, viewMatrix = viewMatrix)
+  
+    __obj.asInstanceOf[ARMatrices]
+  }
+}
+

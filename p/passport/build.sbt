@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport"
-version := "1.0-dt-20190717Z-31da79"
+version := "1.0-dt-20190822Z-77c7ed"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

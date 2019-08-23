@@ -13,13 +13,13 @@ trait reactDashRouterDashDomProps {
   type HashRouterProps = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps
   @scala.inline
   def LinkProps: typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps
-  type LinkProps = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps
+  type LinkProps[S] = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S]
   @scala.inline
   def MemoryRouterProps: typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps.type = typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
   type MemoryRouterProps = typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
   @scala.inline
   def NavLinkProps: typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
-  type NavLinkProps = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
+  type NavLinkProps[S] = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S]
   @scala.inline
   def PromptProps: typings.reactDashRouter.reactDashRouterMod.PromptProps.type = typings.reactDashRouter.reactDashRouterMod.PromptProps
   type PromptProps = typings.reactDashRouter.reactDashRouterMod.PromptProps

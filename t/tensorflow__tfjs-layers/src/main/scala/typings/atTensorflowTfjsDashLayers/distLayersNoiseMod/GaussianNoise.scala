@@ -16,6 +16,7 @@ class GaussianNoise protected () extends Layer {
 @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianNoise")
 @js.native
 object GaussianNoise extends js.Object {
+  /** @nocollapse */
   var className: String = js.native
 }
 

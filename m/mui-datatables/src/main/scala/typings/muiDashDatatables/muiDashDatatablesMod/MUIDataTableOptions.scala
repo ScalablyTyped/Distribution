@@ -2,8 +2,8 @@ package typings.muiDashDatatables.muiDashDatatablesMod
 
 import typings.muiDashDatatables.Anon_ColIndex
 import typings.muiDashDatatables.Anon_Data
-import typings.muiDashDatatables.Anon_DataDataIndex
 import typings.muiDashDatatables.Anon_DataIndexRowIndex
+import typings.muiDashDatatables.Anon_DataKey
 import typings.muiDashDatatables.Anon_Filename
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
@@ -51,8 +51,8 @@ trait MUIDataTableOptions extends js.Object {
   var customToolbar: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var customToolbarSelect: js.UndefOr[
     js.Function3[
-      /* selectedRows */ Anon_Data, 
-      /* displayData */ js.Array[Anon_DataDataIndex], 
+      /* selectedRows */ Anon_DataKey, 
+      /* displayData */ js.Array[Anon_Data], 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit], 
       ReactNode
     ]
@@ -91,6 +91,7 @@ trait MUIDataTableOptions extends js.Object {
   var onSearchChange: js.UndefOr[js.Function1[/* searchText */ String, Unit]] = js.undefined
   var onSearchOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onTableChange: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.undefined
+  var onTableInit: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.undefined
   var page: js.UndefOr[Double] = js.undefined
   var pagination: js.UndefOr[Boolean] = js.undefined
   var print: js.UndefOr[Boolean] = js.undefined
@@ -127,7 +128,7 @@ object MUIDataTableOptions {
     customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
     customToolbar: () => ReactNode = null,
-    customToolbarSelect: (/* selectedRows */ Anon_Data, /* displayData */ js.Array[Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
+    customToolbarSelect: (/* selectedRows */ Anon_DataKey, /* displayData */ js.Array[Anon_Data], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadOptions: Anon_Filename = null,
     elevation: Int | Double = null,
@@ -150,6 +151,7 @@ object MUIDataTableOptions {
     onSearchChange: /* searchText */ String => Unit = null,
     onSearchOpen: () => Unit = null,
     onTableChange: (/* action */ String, /* tableState */ MUIDataTableState) => Unit = null,
+    onTableInit: (/* action */ String, /* tableState */ MUIDataTableState) => Unit = null,
     page: Int | Double = null,
     pagination: js.UndefOr[Boolean] = js.undefined,
     print: js.UndefOr[Boolean] = js.undefined,
@@ -204,6 +206,7 @@ object MUIDataTableOptions {
     if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction1(onSearchChange))
     if (onSearchOpen != null) __obj.updateDynamic("onSearchOpen")(js.Any.fromFunction0(onSearchOpen))
     if (onTableChange != null) __obj.updateDynamic("onTableChange")(js.Any.fromFunction2(onTableChange))
+    if (onTableInit != null) __obj.updateDynamic("onTableInit")(js.Any.fromFunction2(onTableInit))
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)

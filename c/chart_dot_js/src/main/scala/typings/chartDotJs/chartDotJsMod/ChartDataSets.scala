@@ -17,36 +17,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartDataSets extends js.Object {
-  var backgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
+  var backgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var borderAlign: js.UndefOr[BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment]] = js.undefined
   var borderCapStyle: js.UndefOr[butt | round | square] = js.undefined
-  var borderColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
+  var borderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
   var borderDashOffset: js.UndefOr[Double] = js.undefined
   var borderJoinStyle: js.UndefOr[bevel | round | miter] = js.undefined
-  var borderSkipped: js.UndefOr[PositionType] = js.undefined
-  var borderWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var borderSkipped: js.UndefOr[PositionType | js.Array[PositionType] | Scriptable[PositionType]] = js.undefined
+  var borderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   var cubicInterpolationMode: js.UndefOr[default | monotone] = js.undefined
   var data: js.UndefOr[js.Array[js.UndefOr[ChartPoint | Double | Null]]] = js.undefined
   var fill: js.UndefOr[Boolean | Double | String] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var hideInLegendAndTooltip: js.UndefOr[Boolean] = js.undefined
-  var hoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
-  var hoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
-  var hoverBorderWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var hitRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var hoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var hoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var hoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var lineTension: js.UndefOr[Double] = js.undefined
-  var pointBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
-  var pointBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
-  var pointBorderWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var pointHitRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var pointHoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
-  var pointHoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
-  var pointHoverBorderWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var pointHoverRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var pointRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var pointBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var pointBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var pointBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var pointHitRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var pointHoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var pointHoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var pointHoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var pointHoverRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var pointRadius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var pointRotation: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   var pointStyle: js.UndefOr[
-    PointStyle | HTMLImageElement | HTMLCanvasElement | (js.Array[PointStyle | HTMLImageElement | HTMLCanvasElement])
+    PointStyle | HTMLImageElement | HTMLCanvasElement | (js.Array[PointStyle | HTMLImageElement | HTMLCanvasElement]) | (Scriptable[PointStyle | HTMLImageElement | HTMLCanvasElement])
   ] = js.undefined
+  var radius: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var rotation: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   var showLine: js.UndefOr[Boolean] = js.undefined
   var spanGaps: js.UndefOr[Boolean] = js.undefined
   var stack: js.UndefOr[String] = js.undefined
@@ -59,34 +64,39 @@ trait ChartDataSets extends js.Object {
 object ChartDataSets {
   @scala.inline
   def apply(
-    backgroundColor: ChartColor | js.Array[ChartColor] = null,
+    backgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    borderAlign: BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment] = null,
     borderCapStyle: butt | round | square = null,
-    borderColor: ChartColor | js.Array[ChartColor] = null,
+    borderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     borderDash: js.Array[Double] = null,
     borderDashOffset: Int | Double = null,
     borderJoinStyle: bevel | round | miter = null,
-    borderSkipped: PositionType = null,
-    borderWidth: Double | js.Array[Double] = null,
+    borderSkipped: PositionType | js.Array[PositionType] | Scriptable[PositionType] = null,
+    borderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
     cubicInterpolationMode: default | monotone = null,
     data: js.Array[js.UndefOr[ChartPoint | Double | Null]] = null,
     fill: Boolean | Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hideInLegendAndTooltip: js.UndefOr[Boolean] = js.undefined,
-    hoverBackgroundColor: ChartColor | js.Array[ChartColor] = null,
-    hoverBorderColor: ChartColor | js.Array[ChartColor] = null,
-    hoverBorderWidth: Double | js.Array[Double] = null,
+    hitRadius: Double | js.Array[Double] | Scriptable[Double] = null,
+    hoverBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    hoverBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    hoverBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
     label: String = null,
     lineTension: Int | Double = null,
-    pointBackgroundColor: ChartColor | js.Array[ChartColor] = null,
-    pointBorderColor: ChartColor | js.Array[ChartColor] = null,
-    pointBorderWidth: Double | js.Array[Double] = null,
-    pointHitRadius: Double | js.Array[Double] = null,
-    pointHoverBackgroundColor: ChartColor | js.Array[ChartColor] = null,
-    pointHoverBorderColor: ChartColor | js.Array[ChartColor] = null,
-    pointHoverBorderWidth: Double | js.Array[Double] = null,
-    pointHoverRadius: Double | js.Array[Double] = null,
-    pointRadius: Double | js.Array[Double] = null,
-    pointStyle: PointStyle | HTMLImageElement | HTMLCanvasElement | (js.Array[PointStyle | HTMLImageElement | HTMLCanvasElement]) = null,
+    pointBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    pointBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    pointBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
+    pointHitRadius: Double | js.Array[Double] | Scriptable[Double] = null,
+    pointHoverBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    pointHoverBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    pointHoverBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
+    pointHoverRadius: Double | js.Array[Double] | Scriptable[Double] = null,
+    pointRadius: Double | js.Array[Double] | Scriptable[Double] = null,
+    pointRotation: Double | js.Array[Double] | Scriptable[Double] = null,
+    pointStyle: PointStyle | HTMLImageElement | HTMLCanvasElement | (js.Array[PointStyle | HTMLImageElement | HTMLCanvasElement]) | (Scriptable[PointStyle | HTMLImageElement | HTMLCanvasElement]) = null,
+    radius: Double | js.Array[Double] | Scriptable[Double] = null,
+    rotation: Double | js.Array[Double] | Scriptable[Double] = null,
     showLine: js.UndefOr[Boolean] = js.undefined,
     spanGaps: js.UndefOr[Boolean] = js.undefined,
     stack: String = null,
@@ -97,18 +107,20 @@ object ChartDataSets {
   ): ChartDataSets = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderAlign != null) __obj.updateDynamic("borderAlign")(borderAlign.asInstanceOf[js.Any])
     if (borderCapStyle != null) __obj.updateDynamic("borderCapStyle")(borderCapStyle.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash)
     if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
     if (borderJoinStyle != null) __obj.updateDynamic("borderJoinStyle")(borderJoinStyle.asInstanceOf[js.Any])
-    if (borderSkipped != null) __obj.updateDynamic("borderSkipped")(borderSkipped)
+    if (borderSkipped != null) __obj.updateDynamic("borderSkipped")(borderSkipped.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (cubicInterpolationMode != null) __obj.updateDynamic("cubicInterpolationMode")(cubicInterpolationMode.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (!js.isUndefined(hideInLegendAndTooltip)) __obj.updateDynamic("hideInLegendAndTooltip")(hideInLegendAndTooltip)
+    if (hitRadius != null) __obj.updateDynamic("hitRadius")(hitRadius.asInstanceOf[js.Any])
     if (hoverBackgroundColor != null) __obj.updateDynamic("hoverBackgroundColor")(hoverBackgroundColor.asInstanceOf[js.Any])
     if (hoverBorderColor != null) __obj.updateDynamic("hoverBorderColor")(hoverBorderColor.asInstanceOf[js.Any])
     if (hoverBorderWidth != null) __obj.updateDynamic("hoverBorderWidth")(hoverBorderWidth.asInstanceOf[js.Any])
@@ -123,7 +135,10 @@ object ChartDataSets {
     if (pointHoverBorderWidth != null) __obj.updateDynamic("pointHoverBorderWidth")(pointHoverBorderWidth.asInstanceOf[js.Any])
     if (pointHoverRadius != null) __obj.updateDynamic("pointHoverRadius")(pointHoverRadius.asInstanceOf[js.Any])
     if (pointRadius != null) __obj.updateDynamic("pointRadius")(pointRadius.asInstanceOf[js.Any])
+    if (pointRotation != null) __obj.updateDynamic("pointRotation")(pointRotation.asInstanceOf[js.Any])
     if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine)
     if (!js.isUndefined(spanGaps)) __obj.updateDynamic("spanGaps")(spanGaps)
     if (stack != null) __obj.updateDynamic("stack")(stack)

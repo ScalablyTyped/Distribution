@@ -1,5 +1,6 @@
 package typings.rebass
 
+import typings.rebass.rebassMod.BoxKnownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,8 @@ trait rebassProps {
   def ButtonProps: typings.rebass.rebassMod.ButtonProps.type = typings.rebass.rebassMod.ButtonProps
   type ButtonProps = typings.rebass.rebassMod.ButtonProps
   @scala.inline
-  def CardProps: typings.rebass.rebassMod.CardProps.type = typings.rebass.rebassMod.CardProps
-  type CardProps = typings.rebass.rebassMod.CardProps
+  def CardProps: BoxKnownProps.type = typings.rebass.rebassMod.BoxKnownProps
+  type CardProps = BoxKnownProps
   @scala.inline
   def FlexProps: typings.rebass.rebassMod.FlexProps.type = typings.rebass.rebassMod.FlexProps
   type FlexProps = typings.rebass.rebassMod.FlexProps

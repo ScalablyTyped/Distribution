@@ -95,187 +95,25 @@ object distOpsConvMod extends js.Object {
       x: Tensor[R3 | R4],
       dy: Tensor[R3 | R4],
       filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double
+      strides: Double | (js.Tuple2[Double, Double]),
+      pad: Double | same | valid
     ): Tensor4D = js.native
     def apply(
       x: Tensor[R3 | R4],
       dy: Tensor[R3 | R4],
       filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: ceil
+      strides: Double | (js.Tuple2[Double, Double]),
+      pad: Double | same | valid,
+      dataFormat: NCHW | NHWC
     ): Tensor4D = js.native
     def apply(
       x: Tensor[R3 | R4],
       dy: Tensor[R3 | R4],
       filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: floor
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: round
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: same
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: same,
-      dimRoundingMode: ceil
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: same,
-      dimRoundingMode: floor
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: same,
-      dimRoundingMode: round
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid,
-      dimRoundingMode: ceil
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid,
-      dimRoundingMode: floor
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid,
-      dimRoundingMode: round
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: Double
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: Double,
-      dimRoundingMode: ceil
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: Double,
-      dimRoundingMode: floor
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: Double,
-      dimRoundingMode: round
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: same
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: same,
-      dimRoundingMode: ceil
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: same,
-      dimRoundingMode: floor
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: same,
-      dimRoundingMode: round
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: valid
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: valid,
-      dimRoundingMode: ceil
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: valid,
-      dimRoundingMode: floor
-    ): Tensor4D = js.native
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double,
-      pad: valid,
-      dimRoundingMode: round
+      strides: Double | (js.Tuple2[Double, Double]),
+      pad: Double | same | valid,
+      dataFormat: NCHW | NHWC,
+      dimRoundingMode: ceil | floor | round
     ): Tensor4D = js.native
   }
   
@@ -294,6 +132,15 @@ object distOpsConvMod extends js.Object {
       filter: Tensor4D,
       strides: Double | (js.Tuple2[Double, Double]),
       pad: Double | same | valid,
+      dataFormat: NCHW | NHWC
+    ): Tensor[R3] = js.native
+    def apply(
+      xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
+      dy: Tensor[R3 | R4],
+      filter: Tensor4D,
+      strides: Double | (js.Tuple2[Double, Double]),
+      pad: Double | same | valid,
+      dataFormat: NCHW | NHWC,
       dimRoundingMode: ceil | floor | round
     ): Tensor[R3] = js.native
   }
@@ -339,6 +186,17 @@ object distOpsConvMod extends js.Object {
       pad: valid | same,
       dataFormat: NDHWC | NCDHW,
       dilations: (js.Tuple3[Double, Double, Double]) | Double
+    ): T = js.native
+  }
+  
+  @js.native
+  object conv3dTranspose extends js.Object {
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filter: Tensor5D | TensorLike,
+      outputShape: (js.Tuple5[Double, Double, Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same
     ): T = js.native
   }
   

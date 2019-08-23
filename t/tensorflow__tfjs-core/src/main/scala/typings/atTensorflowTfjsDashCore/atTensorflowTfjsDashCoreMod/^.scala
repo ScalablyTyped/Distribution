@@ -7,7 +7,7 @@ import typings.atTensorflowTfjsDashCore.Anon_GradsValueArray
 import typings.atTensorflowTfjsDashCore.Anon_Mean
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NCHW
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`1DOT2DOT7`
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`1DOT2DOT8`
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.bool
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.complex64
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.euclidean
@@ -111,6 +111,14 @@ object ^ extends js.Object {
     /* offset */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
     Tensor4D
   ] = js.native
+  val booleanMaskAsync: js.Function3[
+    /* tensor */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
+    /* mask */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
+    /* axis */ js.UndefOr[Double], 
+    js.Promise[
+      typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ]
+  ] = js.native
   val concat1d: js.Function1[/* tensors */ js.Array[Tensor1D | TensorLike], Tensor1D] = js.native
   val concat2d: js.Function2[/* tensors */ js.Array[Tensor2D | TensorLike], /* axis */ Double, Tensor2D] = js.native
   val concat3d: js.Function2[/* tensors */ js.Array[Tensor3D | TensorLike], /* axis */ Double, Tensor3D] = js.native
@@ -121,16 +129,20 @@ object ^ extends js.Object {
     /* dataFormat */ js.UndefOr[NHWC | NCHW], 
     Tensor4D
   ] = js.native
+  val diag: js.Function1[
+    /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
+    typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+  ] = js.native
   val dot: js.Function2[
     /* t1 */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     /* t2 */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
   ] = js.native
   val dropout: js.Function4[
-    /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
-    /* rate */ Scalar | Double, 
+    /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
+    /* rate */ Double, 
     /* noiseShape */ js.UndefOr[js.Array[Double]], 
-    /* seed */ js.UndefOr[Double], 
+    /* seed */ js.UndefOr[Double | String], 
     typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
   ] = js.native
   val eye: js.Function4[
@@ -283,6 +295,14 @@ object ^ extends js.Object {
     /* size */ js.Tuple4[Double, Double, Double, Double], 
     Tensor4D
   ] = js.native
+  val stft: js.Function5[
+    /* signal */ Tensor1D, 
+    /* frameLength */ Double, 
+    /* frameStep */ Double, 
+    /* fftLength */ js.UndefOr[Double], 
+    /* windowFn */ js.UndefOr[js.Function1[/* length */ Double, Tensor1D]], 
+    typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+  ] = js.native
   val stridedSlice: js.Function9[
     /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     /* begin */ js.Array[Double], 
@@ -303,7 +323,7 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_core: `1DOT2DOT7` = js.native
+  val version_core: `1DOT2DOT8` = js.native
   val whereAsync: js.Function1[
     /* condition */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     js.Promise[Tensor2D]

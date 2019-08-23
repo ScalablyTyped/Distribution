@@ -9,8 +9,8 @@ trait NodesRef extends js.Object {
   /**
     * 添加节点的布局位置的查询请求，相对于显示区域，以像素为单位
     */
-  def boundingClientRect(): Unit = js.native
-  def boundingClientRect(callback: js.Function1[/* result */ NodeInfo, Unit]): Unit = js.native
+  def boundingClientRect(): SelectorQuery = js.native
+  def boundingClientRect(callback: js.Function1[/* result */ NodeInfo, Unit]): SelectorQuery = js.native
   /**
     * 添加节点的 Context 对象查询请求
     */

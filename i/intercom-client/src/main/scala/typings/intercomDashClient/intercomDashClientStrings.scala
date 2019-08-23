@@ -27,6 +27,9 @@ object intercomDashClientStrings {
   sealed trait eventDOTlist extends js.Object
   
   @js.native
+  sealed trait lead extends js.Object
+  
+  @js.native
   sealed trait location_data extends js.Object
   
   @js.native
@@ -47,6 +50,9 @@ object intercomDashClientStrings {
   @js.native
   sealed trait userDOTlist extends js.Object
   
+  @js.native
+  sealed trait visitor extends js.Object
+  
   @scala.inline
   def Twitter: Twitter = "Twitter".asInstanceOf[Twitter]
   @scala.inline
@@ -62,6 +68,8 @@ object intercomDashClientStrings {
   @scala.inline
   def eventDOTlist: eventDOTlist = "event.list".asInstanceOf[eventDOTlist]
   @scala.inline
+  def lead: lead = "lead".asInstanceOf[lead]
+  @scala.inline
   def location_data: location_data = "location_data".asInstanceOf[location_data]
   @scala.inline
   def segmentDOTlist: segmentDOTlist = "segment.list".asInstanceOf[segmentDOTlist]
@@ -75,5 +83,7 @@ object intercomDashClientStrings {
   def user: user = "user".asInstanceOf[user]
   @scala.inline
   def userDOTlist: userDOTlist = "user.list".asInstanceOf[userDOTlist]
+  @scala.inline
+  def visitor: visitor = "visitor".asInstanceOf[visitor]
 }
 

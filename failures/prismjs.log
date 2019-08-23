@@ -32,8 +32,8 @@
 [debug] PhaseRunner.scala:84 Success [id => prismjs, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing prismjs [id => prismjs, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => prismjs, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building prismjs... [id => prismjs, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/prismjs/prismjsMod/hooksNs.scala:132:8
+[warn ] Phase3Compile.scala:211 Building prismjs... [id => prismjs, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/prismjs/prismjsMod/hooksNs.scala:132:8
 [E]      cyclic aliasing or subtyping involving type RequiredEnvironment
 [E]      L132:   type ElementHighlightedEnvironment = RequiredEnvironment[highlightedCode, ElementEnvironment]
 [E]                   ^

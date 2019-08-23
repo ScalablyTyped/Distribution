@@ -1,5 +1,7 @@
 package typings.atTensorflowTfjsDashCore
 
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NCDHW
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NDHWC
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.avg
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
@@ -9,6 +11,7 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
+import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor5D
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,6 +38,40 @@ object distOpsPoolMod extends js.Object {
   }
   
   @js.native
+  object avgPool3d extends js.Object {
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double
+    ): T = js.native
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double,
+      dimRoundingMode: floor | round | ceil,
+      dataFormat: NDHWC | NCDHW
+    ): T = js.native
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double,
+      dimRoundingMode: floor | round | ceil,
+      dataFormat: NDHWC | NCDHW,
+      dilations: (js.Tuple3[Double, Double, Double]) | Double
+    ): T = js.native
+  }
+  
+  @js.native
   object maxPool extends js.Object {
     def apply[T /* <: Tensor3D | Tensor4D */](
       x: T | TensorLike,
@@ -48,6 +85,40 @@ object distOpsPoolMod extends js.Object {
       strides: (js.Tuple2[Double, Double]) | Double,
       pad: valid | same | Double,
       dimRoundingMode: floor | round | ceil
+    ): T = js.native
+  }
+  
+  @js.native
+  object maxPool3d extends js.Object {
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double
+    ): T = js.native
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double,
+      dimRoundingMode: floor | round | ceil,
+      dataFormat: NDHWC | NCDHW
+    ): T = js.native
+    def apply[T /* <: Tensor4D | Tensor5D */](
+      x: T | TensorLike,
+      filterSize: (js.Tuple3[Double, Double, Double]) | Double,
+      strides: (js.Tuple3[Double, Double, Double]) | Double,
+      pad: valid | same | Double,
+      dimRoundingMode: floor | round | ceil,
+      dataFormat: NDHWC | NCDHW,
+      dilations: (js.Tuple3[Double, Double, Double]) | Double
     ): T = js.native
   }
   

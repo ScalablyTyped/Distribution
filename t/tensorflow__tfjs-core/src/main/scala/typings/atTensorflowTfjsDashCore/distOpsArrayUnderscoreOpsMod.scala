@@ -246,6 +246,45 @@ object distOpsArrayUnderscoreOpsMod extends js.Object {
   }
   
   @js.native
+  object randomGamma extends js.Object {
+    def apply[R /* <: Rank */](
+      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      alpha: Double
+    ): Tensor[R] = js.native
+    def apply[R /* <: Rank */](
+      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      alpha: Double,
+      beta: Double
+    ): Tensor[R] = js.native
+    def apply[R /* <: Rank */](
+      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      alpha: Double,
+      beta: Double,
+      dtype: float32
+    ): Tensor[R] = js.native
+    def apply[R /* <: Rank */](
+      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      alpha: Double,
+      beta: Double,
+      dtype: float32,
+      seed: Double
+    ): Tensor[R] = js.native
+    def apply[R /* <: Rank */](
+      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      alpha: Double,
+      beta: Double,
+      dtype: int32
+    ): Tensor[R] = js.native
+    def apply[R /* <: Rank */](
+      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      alpha: Double,
+      beta: Double,
+      dtype: int32,
+      seed: Double
+    ): Tensor[R] = js.native
+  }
+  
+  @js.native
   object randomNormal extends js.Object {
     def apply[R /* <: Rank */](
       shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any

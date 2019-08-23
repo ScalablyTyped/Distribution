@@ -16,7 +16,7 @@ trait MapContextGetCenterLocationOptions extends js.Object {
   /**
     * 接口调用成功的回调函数 ，res = { longitude: "经度", latitude: "纬度"}
     */
-  var success: js.UndefOr[js.Function1[/* result */ MapContextGetLocationSuccess, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* result */ LocationObject, Unit]] = js.undefined
 }
 
 object MapContextGetCenterLocationOptions {
@@ -24,7 +24,7 @@ object MapContextGetCenterLocationOptions {
   def apply(
     complete: () => Unit = null,
     fail: () => Unit = null,
-    success: /* result */ MapContextGetLocationSuccess => Unit = null
+    success: /* result */ LocationObject => Unit = null
   ): MapContextGetCenterLocationOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

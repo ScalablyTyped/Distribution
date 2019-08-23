@@ -7,8 +7,8 @@
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing p-lazy [id => p-lazy, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building p-lazy... [id => p-lazy, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E2] src/main/scala/typings/pDashLazy/pDashLazyMod/^.scala:11:11
+[warn ] Phase3Compile.scala:211 Building p-lazy... [id => p-lazy, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E2] src/main/scala/typings/pDashLazy/pDashLazyMod/^.scala:11:11
 [E]      class Promise is inherited twice
 [E]      L11:      with PLazy[ValueType]
 [E]                     ^

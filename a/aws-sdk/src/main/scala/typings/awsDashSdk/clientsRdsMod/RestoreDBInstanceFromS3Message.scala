@@ -58,7 +58,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled.
+    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled. For information about the supported DB engines, see CreateDBInstance. For more information about IAM database authentication, see  IAM Database Authentication for MySQL and PostgreSQL in the Amazon RDS User Guide. 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -74,7 +74,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    * The amount of Provisioned IOPS (input/output operations per second) to allocate initially for the DB instance. For information about valid Iops values, see see Amazon RDS Provisioned IOPS Storage to Improve Performance in the Amazon RDS User Guide. 
+    * The amount of Provisioned IOPS (input/output operations per second) to allocate initially for the DB instance. For information about valid Iops values, see Amazon RDS Provisioned IOPS Storage to Improve Performance in the Amazon RDS User Guide. 
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   /**

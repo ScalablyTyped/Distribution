@@ -7,6 +7,7 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.nearest
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
 import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
+import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.FusedBatchMatMulConfig
 import typings.atTensorflowTfjsDashCore.distTensorMod.Backend
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
@@ -53,6 +54,8 @@ class KernelBackend ()
   def atan2[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
   def atanh[T /* <: Tensor[Rank] */](x: T): T = js.native
   def avgPool(x: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
+  def avgPool3d(x: Tensor5D, convInfo: Conv3DInfo): Tensor5D = js.native
+  def avgPool3dBackprop(dy: Tensor5D, x: Tensor5D, convInfo: Conv3DInfo): Tensor5D = js.native
   def avgPoolBackprop(dy: Tensor4D, x: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def batchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): Tensor3D = js.native
   def batchNormalization(x: Tensor4D, mean: Tensor1D | Tensor4D, variance: Tensor1D | Tensor4D, varianceEpsilon: Double): Tensor4D = js.native
@@ -109,6 +112,7 @@ class KernelBackend ()
   def depthwiseConv2D(input: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def depthwiseConv2DDerFilter(x: Tensor4D, dY: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def depthwiseConv2DDerInput(dy: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
+  def diag(x: Tensor[Rank]): Tensor[Rank] = js.native
   def dispose(): Unit = js.native
   /* InferMemberOverrides */
   override def disposeData(dataId: DataId): Unit = js.native
@@ -143,19 +147,18 @@ class KernelBackend ()
   def floatPrecision(): `16` | `32` = js.native
   def floor[T /* <: Tensor[Rank] */](x: T): T = js.native
   def floorDiv(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
-  def fusedBatchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): Tensor3D = js.native
-  def fusedBatchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean, bias: Tensor[Rank]): Tensor3D = js.native
-  def fusedBatchMatMul(
-    a: Tensor3D,
-    b: Tensor3D,
-    transposeA: Boolean,
-    transposeB: Boolean,
-    bias: Tensor[Rank],
-    activation: Activation
-  ): Tensor3D = js.native
+  def fusedBatchMatMul(hasABTransposeATransposeBBiasActivationPreluActivationWeights: FusedBatchMatMulConfig): Tensor3D = js.native
   def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo, bias: Tensor4D): Tensor4D = js.native
   def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo, bias: Tensor4D, activation: Activation): Tensor4D = js.native
+  def fusedConv2d(
+    x: Tensor4D,
+    filter: Tensor4D,
+    convInfo: Conv2DInfo,
+    bias: Tensor4D,
+    activation: Activation,
+    preluActivationWeights: Tensor[Rank]
+  ): Tensor4D = js.native
   def gather[T /* <: Tensor[Rank] */](x: T, indices: Tensor1D, axis: Double): T = js.native
   def gatherND(x: Tensor[Rank], indices: Tensor[Rank]): Tensor[Rank] = js.native
   def greater(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
@@ -177,6 +180,8 @@ class KernelBackend ()
   def logicalOr(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def max(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
   def maxPool(x: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
+  def maxPool3d(x: Tensor5D, convInfo: Conv3DInfo): Tensor5D = js.native
+  def maxPool3dBackprop(dy: Tensor5D, x: Tensor5D, y: Tensor5D, convInfo: Conv3DInfo): Tensor5D = js.native
   def maxPoolBackprop(dy: Tensor4D, x: Tensor4D, y: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def maximum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def min(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native

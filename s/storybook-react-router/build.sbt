@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "storybook-react-router"
-version := "1.0-dt-20190524Z-d1f7ab"
+version := "1.0-dt-20190524Z-22760c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190821Z-3f670d",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-3f670d",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
-  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-c5457b",
+  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-467b36",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
   "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-8841d1")
 publishArtifact in packageDoc := false

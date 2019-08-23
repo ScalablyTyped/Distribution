@@ -16,16 +16,20 @@ trait MapContextGetRegionOptions extends js.Object {
   /**
     * 接口调用成功的回调函数，res = {southwest, northeast}，西南角与东北角的经纬度
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* result */ MapContextGetRegionResult, Unit]] = js.undefined
 }
 
 object MapContextGetRegionOptions {
   @scala.inline
-  def apply(complete: () => Unit = null, fail: () => Unit = null, success: () => Unit = null): MapContextGetRegionOptions = {
+  def apply(
+    complete: () => Unit = null,
+    fail: () => Unit = null,
+    success: /* result */ MapContextGetRegionResult => Unit = null
+  ): MapContextGetRegionOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[MapContextGetRegionOptions]
   }
 }

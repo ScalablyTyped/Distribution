@@ -10,7 +10,6 @@ trait EObject extends js.Object {
   var eClass: EClass = js.native
   var eContainer: EObject = js.native
   def create(attributes: js.Any): EObject = js.native
-  def eContent(): js.Array[EObject] = js.native
   def eContents(): js.Array[EObject] = js.native
   def eResource(): Resource = js.native
   def eURI(): String = js.native

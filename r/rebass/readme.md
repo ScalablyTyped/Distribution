@@ -1,7 +1,7 @@
 
 # Scala.js typings for rebass
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 React primitive UI components built with styled-system

@@ -1,21 +1,18 @@
 package typings.expo
 
-import typings.expo.expoMod.AudioNs.Sound
-import typings.expo.expoMod.PlaybackStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Sound extends js.Object {
-  var sound: Sound
-  var status: PlaybackStatus
+  var sound: js.UndefOr[Boolean] = js.undefined
 }
 
 object Anon_Sound {
   @scala.inline
-  def apply(sound: Sound, status: PlaybackStatus): Anon_Sound = {
-    val __obj = js.Dynamic.literal(sound = sound, status = status)
-  
+  def apply(sound: js.UndefOr[Boolean] = js.undefined): Anon_Sound = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
     __obj.asInstanceOf[Anon_Sound]
   }
 }

@@ -16,7 +16,7 @@ trait GetSystemInfoOptions extends js.Object {
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* result */ GetSystemInfoSuccess, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* result */ GetSystemInfoResult, Unit]] = js.undefined
 }
 
 object GetSystemInfoOptions {
@@ -24,7 +24,7 @@ object GetSystemInfoOptions {
   def apply(
     complete: () => Unit = null,
     fail: () => Unit = null,
-    success: /* result */ GetSystemInfoSuccess => Unit = null
+    success: /* result */ GetSystemInfoResult => Unit = null
   ): GetSystemInfoOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashCoreStrings {
   @js.native
-  sealed trait `1DOT2DOT7` extends js.Object
+  sealed trait `1DOT2DOT8` extends js.Object
   
   @js.native
   sealed trait Engine extends js.Object
@@ -111,6 +111,9 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait optimizer extends WeightGroup
   
   @js.native
+  sealed trait prelu extends Activation
+  
+  @js.native
   sealed trait relu extends Activation
   
   @js.native
@@ -132,7 +135,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `1DOT2DOT7`: `1DOT2DOT7` = "1.2.7".asInstanceOf[`1DOT2DOT7`]
+  def `1DOT2DOT8`: `1DOT2DOT8` = "1.2.8".asInstanceOf[`1DOT2DOT8`]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
   @scala.inline
@@ -193,6 +196,8 @@ object atTensorflowTfjsDashCoreStrings {
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
   def optimizer: optimizer = "optimizer".asInstanceOf[optimizer]
+  @scala.inline
+  def prelu: prelu = "prelu".asInstanceOf[prelu]
   @scala.inline
   def relu: relu = "relu".asInstanceOf[relu]
   @scala.inline

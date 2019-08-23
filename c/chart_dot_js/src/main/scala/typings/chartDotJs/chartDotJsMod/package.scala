@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object chartDotJsMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.chartDotJs.Anon_Chart
   import typings.std.CanvasGradient
   import typings.std.CanvasPattern
 
@@ -18,4 +19,5 @@ package object chartDotJsMod {
   type ChartYAxe = CommonAxe
   // tslint:disable-next-line no-empty-interface
   type LogarithmicTickOptions = TickOptions
+  type Scriptable[T] = js.Function1[/* ctx */ Anon_Chart, T]
 }

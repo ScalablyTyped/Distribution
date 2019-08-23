@@ -20,7 +20,7 @@ class MarkdownSerializer[S /* <: Schema[_, _] */] protected () extends js.Object
           Unit
         ]
       ],
-    marks: StringDictionary[js.Any]
+    marks: StringDictionary[MarkSerializerConfig[_]]
   ) = this()
   /**
     * The mark serializer info.

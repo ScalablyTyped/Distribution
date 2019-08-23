@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport_dot_socketio"
-version := "3.7-dt-20190821Z-530da3"
+version := "3.7-dt-20190821Z-4aa686"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-session" % "1.15-dt-20190819Z-383876",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20190717Z-31da79",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20190822Z-77c7ed",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
   "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-c1bd23",

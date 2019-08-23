@@ -482,7 +482,6 @@
 | 504 | [merge-stream](./m/merge-stream) | Create a stream that emits events from multiple ot
 | 503 | [clui](./c/clui) | A Node.js toolkit for drawing nice command line ta
 | 502 | [log-update](./l/log-update) | Log by overwriting the previous output in the term
-| 498 | [csv-parse](./c/csv-parse) | CSV parsing implementing the Node.js stream.Transf
 | 496 | [file-saver](./f/file-saver) | An HTML5 saveAs() FileSaver implementation
 | 496 | [lodash_dot_isplainobject](./l/lodash_dot_isplainobject) | The lodash method _.isPlainObject exported as a mo
 | 495 | [get-port](./g/get-port) | Get an available port
@@ -1077,6 +1076,7 @@
 | 192 | [node-getopt](./n/node-getopt) | featured command line args parser
 | 191 | [babel__code-frame](./b/babel__code-frame) | Generate errors that contain a code frame that poi
 | 191 | [globule](./g/globule) | An easy-to-use wildcard globbing library.
+| 191 | [gulp-header](./g/gulp-header) | Gulp extension to add header to file(s) in the pip
 | 191 | [kafka-node](./k/kafka-node) | Client for Apache Kafka v0.9.x, v0.10.x and v0.11.
 | 191 | [platform](./p/platform) | A platform detection library that works on nearly 
 | 191 | [pumpify](./p/pumpify) | Combine an array of streams into a single duplex s
@@ -1971,6 +1971,7 @@
 | 73 | [sshpk](./s/sshpk) | A library for finding and using SSH public keys
 | 73 | [universal-cookie](./u/universal-cookie) | Universal cookies for JavaScript
 | 72 | [is-array](./i/is-array) | Check if the given value is an Array
+| 72 | [jsonpointer](./j/jsonpointer) | Simple JSON Addressing.
 | 72 | [linq](./l/linq) | linq.js - LINQ for JavaScript library packaged for
 | 72 | [p-timeout](./p/p-timeout) | Timeout a promise after a specified amount of time
 | 72 | [parents](./p/parents) | return all the parent directories for a directory
@@ -2179,6 +2180,7 @@
 | 61 | [parsimmon](./p/parsimmon) | A monadic LL(infinity) parser combinator library
 | 61 | [react-native-scrollable-t](./r/react-native-scrollable-tab-view) | -
 | 61 | [react-pose](./r/react-pose) | A declarative animation library for React
+| 61 | [rebass](./r/rebass) | React primitive UI components built with styled-sy
 | 61 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text
 | 61 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs
 | 61 | [ssri](./s/ssri) | Standard Subresource Integrity library --  parses,
@@ -2193,6 +2195,7 @@
 | 60 | [level-js](./l/level-js) | An abstract-leveldown compliant store on top of In
 | 60 | [lodash_dot_forown](./l/lodash_dot_forown) | The lodash method _.forOwn exported as a module.
 | 60 | [phosphor__commands](./p/phosphor__commands) | PhosphorJS - Commands
+| 60 | [react-native-gesture-hand](./r/react-native-gesture-handler) | Experimental implementation of a new declarative A
 | 60 | [spin_dot_js](./s/spin_dot_js) | A spinning activity indicator
 | 60 | [trash](./t/trash) | Move files and folders to the trash
 | 60 | [webpack-chunk-hash](./w/webpack-chunk-hash) | Plugin to replace a standard webpack chunk hashing
@@ -3107,6 +3110,7 @@
 | 28 | [prosemirror-transform](./p/prosemirror-transform) | ProseMirror document transformations
 | 28 | [ref-union](./r/ref-union) | Create ABI-compliant "union" instances on top of B
 | 28 | [relaxed-json](./r/relaxed-json) | Relaxed JSON is strict superset JSON, relaxing str
+| 28 | [relay-compiler](./r/relay-compiler) | A compiler tool for building GraphQL-driven applic
 | 28 | [rmc-nuka-carousel](./r/rmc-nuka-carousel) | Pure React Carousel
 | 28 | [roarr](./r/roarr) | JSON logger for Node.js and browser.
 | 28 | [scroll-into-view](./s/scroll-into-view) | -
@@ -3857,6 +3861,7 @@
 | 14 | [decompress-response](./d/decompress-response) | Decompress a HTTP response if needed
 | 14 | [dts-dom](./d/dts-dom) | DOM for TypeScript Declaration Files
 | 14 | [egjs__component](./e/egjs__component) | A base class utility that manages events and optio
+| 14 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 14 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
 | 14 | [ffprobe-static](./f/ffprobe-static) | Static binaries for ffprobe.
 | 14 | [firebase__auth](./f/firebase__auth) | Javascript library for Firebase Auth SDK
@@ -3894,6 +3899,7 @@
 | 14 | [react-headroom](./r/react-headroom) | Hide your header until you need it. React.js port 
 | 14 | [react-intl-redux](./r/react-intl-redux) | Redux binding for React Intl
 | 14 | [react-native-popup-dialog](./r/react-native-popup-dialog) | React Native Popup Dialog for IOS & Android.
+| 14 | [react-native-view-shot](./r/react-native-view-shot) | Capture a React Native view to an image
 | 14 | [react-redux-toastr](./r/react-redux-toastr) | react-redux-toastr is a React toastr message imple
 | 14 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4
 | 14 | [react-star-rating-compone](./r/react-star-rating-component) | React component for star (or any other icon based)
@@ -4240,6 +4246,8 @@
 | 10 | [electron-publish](./e/electron-publish) | Part of 
 | 10 | [ember](./e/ember) | A framework for creating ambitious web application
 | 10 | [event-lite](./e/event-lite) | Light-weight EventEmitter (less than 1KB when gzip
+| 10 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
+| 10 | [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces
 | 10 | [express-paginate](./e/express-paginate) | Node.js pagination middleware and view helpers
 | 10 | [falcor-http-datasource](./f/falcor-http-datasource) | This package contains falcor components for use in
 | 10 | [find-project-root](./f/find-project-root) | Finds project root
@@ -4347,6 +4355,7 @@
 | 9 | [defer-promise](./d/defer-promise) | Isomorphic function returning a deferred promise. 
 | 9 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU
 | 9 | [electron-winstaller](./e/electron-winstaller) | Module to generate Windows installers for Electron
+| 9 | [expo-constants](./e/expo-constants) | Provides system information that remains constant 
 | 9 | [express-cluster](./e/express-cluster) | Simple drop-in for express apps to spawn multiple 
 | 9 | [express-form-data](./e/express-form-data) | Module to parse multipart/form data
 | 9 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
@@ -4401,6 +4410,7 @@
 | 9 | [react-notification-system](./r/react-notification-system-redux) | react-notification-system-redux
 | 9 | [react-qr-reader](./r/react-qr-reader) | A react component for reading QR codes from the we
 | 9 | [react-resolver](./r/react-resolver) | Async-rendering & data-fetching for universal Reac
+| 9 | [react-vega](./r/react-vega) | Convert Vega spec into React class conveniently
 | 9 | [react-weui](./r/react-weui) | weui for react
 | 9 | [receptacle](./r/receptacle) | In memory cache lru cache with ttl support.
 | 9 | [redis-mock](./r/redis-mock) | Redis client mock object for unit testing
@@ -4565,6 +4575,7 @@
 | 7 | [blake2s-js](./b/blake2s-js) | Pure JavaScript implementation of BLAKE2s cryptogr
 | 7 | [blueprintjs__timezone](./b/blueprintjs__timezone) | Components related to timezone selection and UI
 | 7 | [carbon__colors](./c/carbon__colors) | Colors for digital and software products using the
+| 7 | [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a 
 | 7 | [centra](./c/centra) | The core lightweight HTTP client for Node
 | 7 | [cloneable-readable](./c/cloneable-readable) | Clone a Readable stream, safely
 | 7 | [content-range](./c/content-range) | Content-range header formatter.
@@ -5089,6 +5100,7 @@
 | 4 | [env-editor](./e/env-editor) | Get metadata on the default editor or a specific e
 | 4 | [esfx__cancelable](./e/esfx__cancelable) | A low-level Symbol-based API for defining a common
 | 4 | [espruino](./e/espruino) | Command Line Interface and library for Communicati
+| 4 | [expo-location](./e/expo-location) | Allows reading geolocation information from the de
 | 4 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 4 | [express-oauth-server](./e/express-oauth-server) | OAuth provider for express
 | 4 | [extra-watch-webpack-plugi](./e/extra-watch-webpack-plugin) | extra-watch-webpack-plugin would help you to attac
@@ -5225,6 +5237,7 @@
 | 4 | [trie-prefix-tree](./t/trie-prefix-tree) | Create and modify trie prefix structures, extract 
 | 4 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript
 | 4 | [twilio-sync](./t/twilio-sync) | Twilio Sync client library
+| 4 | [unimodules__react-native-](./u/unimodules__react-native-adapter) | The adapter to use universal modules with the Reac
 | 4 | [url-metadata](./u/url-metadata) | Request an http(s) url and scrape its metadata.
 | 4 | [utm](./u/utm) | Bidirectional UTM-WGS84 converter
 | 4 | [vectorious](./v/vectorious) | A high performance linear algebra library.
@@ -5504,6 +5517,7 @@
 | 3 | [twilio-chat](./t/twilio-chat) | Twilio Chat service client library
 | 3 | [twilio-notifications](./t/twilio-notifications) | Client library for Twilio Notifications service
 | 3 | [twilio-transport](./t/twilio-transport) | Twilio generic transport interface
+| 3 | [unimodules__core](./u/unimodules__core) | Universal modules core
 | 3 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript moda
 | 3 | [vfile-message](./v/vfile-message) | Create a virtual message
 | 3 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue
@@ -5594,6 +5608,8 @@
 | 2 | [ember-feature-flags](./e/ember-feature-flags) | Feature flags/toggles for Ember apps
 | 2 | [eq_dot_js](./e/eq_dot_js) | Element queries, fast and light
 | 2 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam
+| 2 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
+| 2 | [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried 
 | 2 | [express-flash-notificatio](./e/express-flash-notification) | Express.js flash notifications that works with any
 | 2 | [express-mongo-sanitize](./e/express-mongo-sanitize) | Sanitize your express payload to prevent MongoDB o
 | 2 | [express-openapi](./e/express-openapi) | An unopinionated OpenAPI framework for express
@@ -5994,7 +6010,9 @@
 | 1 | [excel-style-dataformatter](./e/excel-style-dataformatter) | Excel-Style Javascript Data Formatter
 | 1 | [expired](./e/expired) | Calculate when HTTP responses expire from the cach
 | 1 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage 
+| 1 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient
 | 1 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization
+| 1 | [expo-web-browser](./e/expo-web-browser) | Provides access to the system's web browser and su
 | 1 | [express-correlation-id](./e/express-correlation-id) | Express middleware to correlate requests across ht
 | 1 | [express-flash-2](./e/express-flash-2) | Flash message middleware for express.
 | 1 | [express-routemap](./e/express-routemap) | Display express server routes in your terminal
@@ -6131,6 +6149,7 @@
 | 1 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet
 | 1 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP
 | 1 | [leaflet_dot_awesome-marke](./l/leaflet_dot_awesome-markers) | Leaflet Awesome Markers - allows you to display cu
+| 1 | [leaflet_dot_icon_dot_glyp](./l/leaflet_dot_icon_dot_glyph) | Allows you to put glyphs from icon fonts into your
 | 1 | [leaflet_dot_polylinemeasu](./l/leaflet_dot_polylinemeasure) | Leaflet Plugin to measure distances of simple line
 | 1 | [libpq](./l/libpq) | Low-level native bindings to PostgreSQL libpq
 | 1 | [license-checker-webpack-p](./l/license-checker-webpack-plugin) | Verifies licenses of all external dependencies in 
@@ -6546,6 +6565,7 @@
 | 0 | [es-feature-detection](./e/es-feature-detection) | ECMAScript feature and API detection
 | 0 | [esc-pos-encoder](./e/esc-pos-encoder) | Create a set of commands that can be send to any r
 | 0 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for &
+| 0 | [expo-keep-awake](./e/expo-keep-awake) | Provides a React component that prevents the scree
 | 0 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app
 | 0 | [expo__status-bar-height](./e/expo__status-bar-height) | Listen to status bar changes during incoming calls
 | 0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute

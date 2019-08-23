@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Day extends js.Object {
   var intervalMs: js.UndefOr[Double] = js.undefined
   var repeat: js.UndefOr[minute | hour | day | week | month | year] = js.undefined
-  var time: js.UndefOr[Date | Double] = js.undefined
+  var time: js.UndefOr[Double | Date] = js.undefined
 }
 
 object Anon_Day {
@@ -22,7 +22,7 @@ object Anon_Day {
   def apply(
     intervalMs: Int | Double = null,
     repeat: minute | hour | day | week | month | year = null,
-    time: Date | Double = null
+    time: Double | Date = null
   ): Anon_Day = {
     val __obj = js.Dynamic.literal()
     if (intervalMs != null) __obj.updateDynamic("intervalMs")(intervalMs.asInstanceOf[js.Any])

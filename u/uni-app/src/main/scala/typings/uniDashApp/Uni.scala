@@ -113,6 +113,13 @@ class Uni () extends js.Object {
   def canvasToTempFilePath(): Unit = js.native
   def canvasToTempFilePath(options: CanvasToTempFilePathOptions): Unit = js.native
   /**
+    * 登录
+    *
+    * 参考: [http://uniapp.dcloud.io/api/plugins/login?id=unichecksession](http://uniapp.dcloud.io/api/plugins/login?id=unichecksession)
+    */
+  def checkSession(): Unit = js.native
+  def checkSession(options: CheckSessionOptions): Unit = js.native
+  /**
     * 获取用户收货地址。调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址，需要用户授权 scope.address
     *
     * 参考: [http://uniapp.dcloud.io/api/other/choose-address?id=chooseaddress](http://uniapp.dcloud.io/api/other/choose-address?id=chooseaddress)
@@ -235,6 +242,8 @@ class Uni () extends js.Object {
     * 参考: [http://uniapp.dcloud.io/api/location/map?id=createmapcontext](http://uniapp.dcloud.io/api/location/map?id=createmapcontext)
     */
   def createMapContext(): MapContext = js.native
+  def createMapContext(mapId: String): MapContext = js.native
+  def createMapContext(mapId: String, currentComponent: js.Any): MapContext = js.native
   /**
     * 返回一个SelectorQuery对象实例
     *
@@ -247,6 +256,8 @@ class Uni () extends js.Object {
     * 参考: [http://uniapp.dcloud.io/api/media/video-context?id=createvideocontext](http://uniapp.dcloud.io/api/media/video-context?id=createvideocontext)
     */
   def createVideoContext(): VideoContext = js.native
+  def createVideoContext(videoId: String): VideoContext = js.native
+  def createVideoContext(videoId: String, currentComponent: js.Any): VideoContext = js.native
   /**
     * 下载文件
     *
@@ -441,7 +452,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/system/info?id=getsysteminfosync](http://uniapp.dcloud.io/api/system/info?id=getsysteminfosync)
     */
-  def getSystemInfoSync(): GetSystemInfoSuccess = js.native
+  def getSystemInfoSync(): GetSystemInfoResult = js.native
   /**
     * 返回全局唯一的版本更新管理器对象： updateManager，用于管理小程序更新
     *
@@ -458,7 +469,7 @@ class Uni () extends js.Object {
   /**
     * 隐藏软键盘
     *
-    * 参考: [http://uniapp.dcloud.io/api/keyboard?id=hidekeyboard](http://uniapp.dcloud.io/api/keyboard?id=hidekeyboard)
+    * 参考: [http://uniapp.dcloud.io/api/key?id=hidekeyboard](http://uniapp.dcloud.io/api/key?id=hidekeyboard)
     */
   def hideKeyboard(): Unit = js.native
   /**
@@ -626,6 +637,13 @@ class Uni () extends js.Object {
     */
   def onGyroscopeChange(): Unit = js.native
   def onGyroscopeChange(callback: js.Function1[/* result */ OnGyroscopeChangeSuccess, Unit]): Unit = js.native
+  /**
+    * 监听键盘高度变化
+    *
+    * 参考: [http://uniapp.dcloud.io/api/key?id=onkeyboardheightchange](http://uniapp.dcloud.io/api/key?id=onkeyboardheightchange)
+    */
+  def onKeyboardHeightChange(): Unit = js.native
+  def onKeyboardHeightChange(callback: js.Function1[/* result */ OnKeyboardHeightChangeResult, Unit]): Unit = js.native
   /**
     * 监听网络状态变化
     *

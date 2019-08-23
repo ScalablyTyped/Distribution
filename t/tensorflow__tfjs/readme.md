@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs
 
-Typings are for version 1.2.7
+Typings are for version 1.2.8
 
 ## Library description:
 An open-source machine learning framework.

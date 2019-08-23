@@ -2,20 +2,12 @@ package typings.rebass.rebassMod
 
 import typings.csstype.csstypeMod.AlignSelfProperty
 import typings.csstype.csstypeMod.BackgroundProperty
-import typings.csstype.csstypeMod.BorderBottomProperty
-import typings.csstype.csstypeMod.BorderColorProperty
-import typings.csstype.csstypeMod.BorderLeftProperty
-import typings.csstype.csstypeMod.BorderProperty
-import typings.csstype.csstypeMod.BorderRadiusProperty
-import typings.csstype.csstypeMod.BorderRightProperty
-import typings.csstype.csstypeMod.BorderStyleProperty
-import typings.csstype.csstypeMod.BorderTopProperty
-import typings.csstype.csstypeMod.BorderWidthProperty
 import typings.csstype.csstypeMod.ColorProperty
 import typings.csstype.csstypeMod.FlexProperty
 import typings.csstype.csstypeMod.FontSizeProperty
 import typings.csstype.csstypeMod.FontWeightProperty
 import typings.csstype.csstypeMod.GlobalsNumber
+import typings.csstype.csstypeMod.HeightProperty
 import typings.csstype.csstypeMod.MarginBottomProperty
 import typings.csstype.csstypeMod.MarginLeftProperty
 import typings.csstype.csstypeMod.MarginProperty
@@ -27,14 +19,11 @@ import typings.csstype.csstypeMod.PaddingProperty
 import typings.csstype.csstypeMod.PaddingRightProperty
 import typings.csstype.csstypeMod.PaddingTopProperty
 import typings.csstype.csstypeMod.WidthProperty
+import typings.react.reactMod.ElementType
 import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.ReactType
+import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
-import typings.styledDashSystem.styledDashSystemMod.BordersProps
-import typings.styledDashSystem.styledDashSystemMod.ButtonStyleProps
 import typings.styledDashSystem.styledDashSystemMod.FontWeightProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
@@ -42,36 +31,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ButtonKnownProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.styledDashSystem.styledDashSystemMod.ButtonStyleProps because var conflicts: variant. Inlined  */ trait ButtonKnownProps
   extends BoxKnownProps
      with FontWeightProps
-     with BordersProps
-     with ButtonStyleProps
 
 object ButtonKnownProps {
   @scala.inline
   def apply(
     alignSelf: ResponsiveValue[AlignSelfProperty] = null,
-    as: ReactType[_] = null,
+    as: ElementType[_] = null,
     backgroundColor: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
     bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    border: ResponsiveValue[BorderProperty[TLengthStyledSystem]] = null,
-    borderBottom: ResponsiveValue[BorderBottomProperty[TLengthStyledSystem]] = null,
-    borderColor: ResponsiveValue[BorderColorProperty] = null,
-    borderLeft: ResponsiveValue[BorderLeftProperty[TLengthStyledSystem]] = null,
-    borderRadius: ResponsiveValue[BorderRadiusProperty[TLengthStyledSystem]] = null,
-    borderRight: ResponsiveValue[BorderRightProperty[TLengthStyledSystem]] = null,
-    borderStyle: ResponsiveValue[BorderStyleProperty] = null,
-    borderTop: ResponsiveValue[BorderTopProperty[TLengthStyledSystem]] = null,
-    borderWidth: ResponsiveValue[BorderWidthProperty[TLengthStyledSystem]] = null,
-    borderX: ResponsiveValue[BorderProperty[TLengthStyledSystem]] = null,
-    borderY: ResponsiveValue[BorderProperty[TLengthStyledSystem]] = null,
-    children: ReactNode = null,
     color: ResponsiveValue[ColorProperty] = null,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
     fontSize: ResponsiveValue[FontSizeProperty[TLengthStyledSystem]] = null,
     fontWeight: ResponsiveValue[FontWeightProperty] = null,
+    height: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
     key: Key = null,
     m: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
     margin: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
@@ -103,7 +80,8 @@ object ButtonKnownProps {
     pt: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
     px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: Ref[js.Any] = null,
+    sx: SxStyleProp = null,
     variant: ResponsiveValue[String] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
   ): ButtonKnownProps = {
@@ -112,23 +90,12 @@ object ButtonKnownProps {
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (borderX != null) __obj.updateDynamic("borderX")(borderX.asInstanceOf[js.Any])
-    if (borderY != null) __obj.updateDynamic("borderY")(borderY.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -161,6 +128,7 @@ object ButtonKnownProps {
     if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
     if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonKnownProps]

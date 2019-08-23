@@ -32,8 +32,10 @@ class MathBackendCPU () extends KernelBackend {
   var fourierTransformByMatmul: js.Any = js.native
   var fromPixels2DContext: js.Any = js.native
   var isExponentOf2: js.Any = js.native
+  var maxPool3dPositions: js.Any = js.native
   var maxPoolPositions: js.Any = js.native
   var pool: js.Any = js.native
+  var pool3d: js.Any = js.native
   var scatter: js.Any = js.native
   def cropAndResize(
     images: Tensor4D,

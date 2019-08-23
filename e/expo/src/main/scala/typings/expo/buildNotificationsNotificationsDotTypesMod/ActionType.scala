@@ -1,0 +1,32 @@
+package typings.expo.buildNotificationsNotificationsDotTypesMod
+
+import typings.expo.Anon_Placeholder
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ActionType extends js.Object {
+  var actionId: String
+  var buttonTitle: String
+  var isAuthenticationRequired: js.UndefOr[Boolean] = js.undefined
+  var isDestructive: js.UndefOr[Boolean] = js.undefined
+  var textInput: js.UndefOr[Anon_Placeholder] = js.undefined
+}
+
+object ActionType {
+  @scala.inline
+  def apply(
+    actionId: String,
+    buttonTitle: String,
+    isAuthenticationRequired: js.UndefOr[Boolean] = js.undefined,
+    isDestructive: js.UndefOr[Boolean] = js.undefined,
+    textInput: Anon_Placeholder = null
+  ): ActionType = {
+    val __obj = js.Dynamic.literal(actionId = actionId, buttonTitle = buttonTitle)
+    if (!js.isUndefined(isAuthenticationRequired)) __obj.updateDynamic("isAuthenticationRequired")(isAuthenticationRequired)
+    if (!js.isUndefined(isDestructive)) __obj.updateDynamic("isDestructive")(isDestructive)
+    if (textInput != null) __obj.updateDynamic("textInput")(textInput)
+    __obj.asInstanceOf[ActionType]
+  }
+}
+

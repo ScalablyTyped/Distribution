@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashLayers.distLayersConvolutionalMod
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
+import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatCommonMod.DataFormat
 import scala.scalajs.js
@@ -60,16 +61,16 @@ object ^ extends js.Object {
     dataFormat: DataFormat,
     dilationRate: js.Tuple2[Double, Double]
   ): Tensor[Rank] = js.native
-  def conv2dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = js.native
-  def conv2dWithBias(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native
-  def conv2dWithBias(
+  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank]): Tensor[Rank] = js.native
+  def conv2dWithBiasActivation(x: Tensor[Rank], kernel: Tensor[Rank], bias: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native
+  def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
     strides: js.Array[Double],
     padding: String
   ): Tensor[Rank] = js.native
-  def conv2dWithBias(
+  def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
@@ -77,7 +78,7 @@ object ^ extends js.Object {
     padding: String,
     dataFormat: DataFormat
   ): Tensor[Rank] = js.native
-  def conv2dWithBias(
+  def conv2dWithBiasActivation(
     x: Tensor[Rank],
     kernel: Tensor[Rank],
     bias: Tensor[Rank],
@@ -85,6 +86,16 @@ object ^ extends js.Object {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = js.native
+  def conv2dWithBiasActivation(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    bias: Tensor[Rank],
+    strides: js.Array[Double],
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double],
+    activation: Activation
   ): Tensor[Rank] = js.native
   def conv3d(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = js.native
   def conv3d(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.Array[Double]): Tensor[Rank] = js.native

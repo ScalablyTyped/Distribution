@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-windowsauth"
-version := "3.0-dt-20181012Z-25444b"
+version := "3.0-dt-20181012Z-187338"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ldapjs" % "0.0-unknown-dt-20190506Z-9c2ff5",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20190717Z-31da79",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20190822Z-77c7ed",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")

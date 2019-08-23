@@ -1,5 +1,7 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NCHW
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
@@ -16,187 +18,25 @@ object conv2dDerFilter extends js.Object {
     x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
     dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
     filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double
+    strides: Double | (js.Tuple2[Double, Double]),
+    pad: Double | same | valid
   ): Tensor4D = js.native
   def apply(
     x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
     dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
     filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
+    strides: Double | (js.Tuple2[Double, Double]),
+    pad: Double | same | valid,
+    dataFormat: NCHW | NHWC
   ): Tensor4D = js.native
   def apply(
     x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
     dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
     filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: Double
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: same
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: same,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: same,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: same,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
-  ): Tensor4D = js.native
-  def apply(
-    x: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
-    filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid,
-    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
+    strides: Double | (js.Tuple2[Double, Double]),
+    pad: Double | same | valid,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil | typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor | typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
   ): Tensor4D = js.native
 }
 

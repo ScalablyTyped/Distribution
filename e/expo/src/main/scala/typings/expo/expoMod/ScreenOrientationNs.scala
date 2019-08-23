@@ -1,14 +1,9 @@
 package typings.expo.expoMod
 
-import typings.expo.expoMod.ScreenOrientationNs.Orientations
-import typings.expo.expoStrings.ALL
-import typings.expo.expoStrings.ALL_BUT_UPSIDE_DOWN
-import typings.expo.expoStrings.LANDSCAPE
-import typings.expo.expoStrings.LANDSCAPE_LEFT
-import typings.expo.expoStrings.LANDSCAPE_RIGHT
-import typings.expo.expoStrings.PORTRAIT
-import typings.expo.expoStrings.PORTRAIT_DOWN
-import typings.expo.expoStrings.PORTRAIT_UP
+import typings.atUnimodulesReactDashNativeDashAdapter.buildEventEmitterMod.Subscription
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationChangeListener
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationInfo
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.PlatformOrientationInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,51 +11,80 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "ScreenOrientation")
 @js.native
 object ScreenOrientationNs extends js.Object {
-  trait Orientations extends js.Object {
-    var ALL: typings.expo.expoStrings.ALL
-    var ALL_BUT_UPSIDE_DOWN: typings.expo.expoStrings.ALL_BUT_UPSIDE_DOWN
-    var LANDSCAPE: typings.expo.expoStrings.LANDSCAPE
-    var LANDSCAPE_LEFT: typings.expo.expoStrings.LANDSCAPE_LEFT
-    var LANDSCAPE_RIGHT: typings.expo.expoStrings.LANDSCAPE_RIGHT
-    var PORTRAIT: typings.expo.expoStrings.PORTRAIT
-    var PORTRAIT_DOWN: typings.expo.expoStrings.PORTRAIT_DOWN
-    var PORTRAIT_UP: typings.expo.expoStrings.PORTRAIT_UP
+  def addOrientationChangeListener(listener: OrientationChangeListener): Subscription = js.native
+  def allow(orientationLock: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock): Unit = js.native
+  def allowAsync(orientationLock: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock): js.Promise[Unit] = js.native
+  def doesSupportAsync(orientationLock: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock): js.Promise[Boolean] = js.native
+  def getOrientationAsync(): js.Promise[OrientationInfo] = js.native
+  def getOrientationLockAsync(): js.Promise[typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock] = js.native
+  def getPlatformOrientationLockAsync(): js.Promise[PlatformOrientationInfo] = js.native
+  def lockAsync(orientationLock: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock): js.Promise[Unit] = js.native
+  def lockPlatformAsync(options: PlatformOrientationInfo): js.Promise[Unit] = js.native
+  def removeOrientationChangeListener(subscription: Subscription): Unit = js.native
+  def removeOrientationChangeListeners(): Unit = js.native
+  def supportsOrientationLockAsync(orientationLock: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock): js.Promise[Boolean] = js.native
+  def unlockAsync(): js.Promise[Unit] = js.native
+  @js.native
+  object Orientation extends js.Object {
+    /* "LANDSCAPE" */ val LANDSCAPE: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE with String = js.native
+    /* "LANDSCAPE_LEFT" */ val LANDSCAPE_LEFT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_LEFT with String = js.native
+    /* "LANDSCAPE_RIGHT" */ val LANDSCAPE_RIGHT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_RIGHT with String = js.native
+    /* "PORTRAIT" */ val PORTRAIT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT with String = js.native
+    /* "PORTRAIT_DOWN" */ val PORTRAIT_DOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_DOWN with String = js.native
+    /* "PORTRAIT_UP" */ val PORTRAIT_UP: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_UP with String = js.native
+    /* "UNKNOWN" */ val UNKNOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.UNKNOWN with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation with String
+      ] = js.native
   }
   
-  val Orientation: Orientations = js.native
-  /** Allow a screen orientation. You can call this function multiple times with multiple orientations to allow multiple orientations. */
-  @JSName("allowAsync")
-  def allowAsync_ALL(orientation: ALL): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_ALLBUTUPSIDEDOWN(orientation: ALL_BUT_UPSIDE_DOWN): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_LANDSCAPE(orientation: LANDSCAPE): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_LANDSCAPELEFT(orientation: LANDSCAPE_LEFT): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_LANDSCAPERIGHT(orientation: LANDSCAPE_RIGHT): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_PORTRAIT(orientation: PORTRAIT): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_PORTRAITDOWN(orientation: PORTRAIT_DOWN): Unit = js.native
-  @JSName("allowAsync")
-  def allowAsync_PORTRAITUP(orientation: PORTRAIT_UP): Unit = js.native
-  /** Deprecated in favour of ScreenOrientation.allowAsync. */
-  @JSName("allow")
-  def allow_ALL(orientation: ALL): Unit = js.native
-  @JSName("allow")
-  def allow_ALLBUTUPSIDEDOWN(orientation: ALL_BUT_UPSIDE_DOWN): Unit = js.native
-  @JSName("allow")
-  def allow_LANDSCAPE(orientation: LANDSCAPE): Unit = js.native
-  @JSName("allow")
-  def allow_LANDSCAPELEFT(orientation: LANDSCAPE_LEFT): Unit = js.native
-  @JSName("allow")
-  def allow_LANDSCAPERIGHT(orientation: LANDSCAPE_RIGHT): Unit = js.native
-  @JSName("allow")
-  def allow_PORTRAIT(orientation: PORTRAIT): Unit = js.native
-  @JSName("allow")
-  def allow_PORTRAITDOWN(orientation: PORTRAIT_DOWN): Unit = js.native
-  @JSName("allow")
-  def allow_PORTRAITUP(orientation: PORTRAIT_UP): Unit = js.native
+  @js.native
+  object OrientationLock extends js.Object {
+    /* "ALL" */ val ALL: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.ALL with String = js.native
+    /* "ALL_BUT_UPSIDE_DOWN" */ val ALL_BUT_UPSIDE_DOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.ALL_BUT_UPSIDE_DOWN with String = js.native
+    /* "DEFAULT" */ val DEFAULT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.DEFAULT with String = js.native
+    /* "LANDSCAPE" */ val LANDSCAPE: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.LANDSCAPE with String = js.native
+    /* "LANDSCAPE_LEFT" */ val LANDSCAPE_LEFT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.LANDSCAPE_LEFT with String = js.native
+    /* "LANDSCAPE_RIGHT" */ val LANDSCAPE_RIGHT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.LANDSCAPE_RIGHT with String = js.native
+    /* "OTHER" */ val OTHER: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.OTHER with String = js.native
+    /* "PORTRAIT" */ val PORTRAIT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.PORTRAIT with String = js.native
+    /* "PORTRAIT_DOWN" */ val PORTRAIT_DOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.PORTRAIT_DOWN with String = js.native
+    /* "PORTRAIT_UP" */ val PORTRAIT_UP: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.PORTRAIT_UP with String = js.native
+    /* "UNKNOWN" */ val UNKNOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock.UNKNOWN with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.OrientationLock with String
+      ] = js.native
+  }
+  
+  @js.native
+  object SizeClassIOS extends js.Object {
+    /* "COMPACT" */ val COMPACT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS.COMPACT with String = js.native
+    /* "REGULAR" */ val REGULAR: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS.REGULAR with String = js.native
+    /* "UNKNOWN" */ val UNKNOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS.UNKNOWN with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS with String
+      ] = js.native
+  }
+  
+  @js.native
+  object WebOrientationLock extends js.Object {
+    /* "any" */ val ANY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.ANY with String = js.native
+    /* "landscape" */ val LANDSCAPE: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.LANDSCAPE with String = js.native
+    /* "landscape-primary" */ val LANDSCAPE_PRIMARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.LANDSCAPE_PRIMARY with String = js.native
+    /* "landscape-secondary" */ val LANDSCAPE_SECONDARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.LANDSCAPE_SECONDARY with String = js.native
+    /* "natural" */ val NATURAL: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.NATURAL with String = js.native
+    /* "portrait" */ val PORTRAIT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.PORTRAIT with String = js.native
+    /* "portrait-primary" */ val PORTRAIT_PRIMARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.PORTRAIT_PRIMARY with String = js.native
+    /* "portrait-secondary" */ val PORTRAIT_SECONDARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.PORTRAIT_SECONDARY with String = js.native
+    /* "unknown" */ val UNKNOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock.UNKNOWN with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientationLock with String
+      ] = js.native
+  }
+  
 }
 

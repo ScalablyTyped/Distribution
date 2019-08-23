@@ -16,6 +16,7 @@ class Masking () extends Layer {
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Masking")
 @js.native
 object Masking extends js.Object {
+  /** @nocollapse */
   var className: String = js.native
 }
 

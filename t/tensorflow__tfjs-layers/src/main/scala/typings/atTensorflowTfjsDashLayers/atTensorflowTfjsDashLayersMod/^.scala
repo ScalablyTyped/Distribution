@@ -2,7 +2,7 @@ package typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersMod
 
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.IOHandler
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.LoadOptions
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.`1DOT2DOT7`
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.`1DOT2DOT8`
 import typings.atTensorflowTfjsDashLayers.distBaseUnderscoreCallbacksMod.BaseCallbackConstructor
 import typings.atTensorflowTfjsDashLayers.distEngineContainerMod.ContainerArgs
 import typings.atTensorflowTfjsDashLayers.distEngineInputUnderscoreLayerMod.InputConfig
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-layers", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val version_layers: `1DOT2DOT7` = js.native
+  val version_layers: `1DOT2DOT8` = js.native
   def input(config: InputConfig): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.SymbolicTensor = js.native
   def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.atTensorflowTfjsDashLayers.distEngineTrainingMod.LayersModel] = js.native
   def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.atTensorflowTfjsDashLayers.distEngineTrainingMod.LayersModel] = js.native

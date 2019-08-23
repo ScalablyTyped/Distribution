@@ -1,5 +1,6 @@
 package typings.chartDotJs
 
+import typings.chartDotJs.chartDotJsMod.BorderAlignment
 import typings.chartDotJs.chartDotJsMod.ChartType
 import typings.chartDotJs.chartDotJsMod.Easing
 import typings.chartDotJs.chartDotJsMod.InteractionMode
@@ -41,7 +42,9 @@ object chartDotJsStrings {
   sealed trait category extends ScaleType
   
   @js.native
-  sealed trait center extends TextAlignment
+  sealed trait center
+    extends BorderAlignment
+       with TextAlignment
   
   @js.native
   sealed trait circle extends PointStyle
@@ -171,6 +174,9 @@ object chartDotJsStrings {
   
   @js.native
   sealed trait index extends InteractionMode
+  
+  @js.native
+  sealed trait inner extends BorderAlignment
   
   @js.native
   sealed trait label extends InteractionMode
@@ -403,6 +409,8 @@ object chartDotJsStrings {
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
   def index: index = "index".asInstanceOf[index]
+  @scala.inline
+  def inner: inner = "inner".asInstanceOf[inner]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline

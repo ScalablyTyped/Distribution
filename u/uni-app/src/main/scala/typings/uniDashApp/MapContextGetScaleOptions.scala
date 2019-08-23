@@ -16,16 +16,20 @@ trait MapContextGetScaleOptions extends js.Object {
   /**
     * 接口调用成功的回调函数，res = {scale}
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* result */ MapContextGetScaleResult, Unit]] = js.undefined
 }
 
 object MapContextGetScaleOptions {
   @scala.inline
-  def apply(complete: () => Unit = null, fail: () => Unit = null, success: () => Unit = null): MapContextGetScaleOptions = {
+  def apply(
+    complete: () => Unit = null,
+    fail: () => Unit = null,
+    success: /* result */ MapContextGetScaleResult => Unit = null
+  ): MapContextGetScaleOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[MapContextGetScaleOptions]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for intercom-client
 
-Typings are for version 2.9
+Typings are for version 2.11
 
 ## Library description:
 Official Node bindings to the Intercom API

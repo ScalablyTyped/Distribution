@@ -14,7 +14,7 @@ trait DescribeDBClusterSnapshotsMessage extends js.Object {
     */
   var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * This parameter is not currently supported.
+    * A filter that specifies one or more DB cluster snapshots to describe. Supported filters:    db-cluster-id - Accepts DB cluster identifiers and DB cluster Amazon Resource Names (ARNs).    db-cluster-snapshot-id - Accepts DB cluster snapshot identifiers.    snapshot-type - Accepts types of DB cluster snapshots.    engine - Accepts names of database engines.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**

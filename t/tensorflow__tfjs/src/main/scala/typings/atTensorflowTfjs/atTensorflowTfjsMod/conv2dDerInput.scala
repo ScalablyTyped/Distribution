@@ -1,5 +1,7 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NCHW
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NHWC
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.same
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
@@ -18,6 +20,15 @@ object conv2dDerInput extends js.Object {
     filter: Tensor4D,
     strides: Double | (js.Tuple2[Double, Double]),
     pad: Double | same | valid,
+    dataFormat: NCHW | NHWC
+  ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3] = js.native
+  def apply(
+    xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
+    dy: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3 | R4],
+    filter: Tensor4D,
+    strides: Double | (js.Tuple2[Double, Double]),
+    pad: Double | same | valid,
+    dataFormat: NCHW | NHWC,
     dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil | typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R3] = js.native
   def apply(

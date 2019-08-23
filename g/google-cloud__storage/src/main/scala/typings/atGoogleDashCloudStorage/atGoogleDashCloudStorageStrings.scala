@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudStorageStrings {
   @js.native
+  sealed trait ACTIVE extends js.Object
+  
+  @js.native
+  sealed trait INACTIVE extends js.Object
+  
+  @js.native
   sealed trait authenticatedRead extends PredefinedAcl
   
   @js.native
@@ -48,6 +54,10 @@ object atGoogleDashCloudStorageStrings {
   @js.native
   sealed trait write extends js.Object
   
+  @scala.inline
+  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
+  @scala.inline
+  def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
   @scala.inline
   def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
   @scala.inline

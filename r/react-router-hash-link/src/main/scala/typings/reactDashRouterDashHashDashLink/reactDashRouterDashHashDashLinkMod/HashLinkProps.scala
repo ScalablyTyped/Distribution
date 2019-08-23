@@ -1,12 +1,13 @@
 package typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod
 
+import typings.history.historyMod.LocationState
 import typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HashLinkProps extends LinkProps {
+trait HashLinkProps extends LinkProps[LocationState] {
   var scroll: js.UndefOr[js.Function1[/* element */ HTMLElement, Unit]] = js.undefined
   var smooth: js.UndefOr[Boolean] = js.undefined
 }
@@ -14,7 +15,7 @@ trait HashLinkProps extends LinkProps {
 object HashLinkProps {
   @scala.inline
   def apply(
-    LinkProps: LinkProps = null,
+    LinkProps: LinkProps[LocationState] = null,
     scroll: /* element */ HTMLElement => Unit = null,
     smooth: js.UndefOr[Boolean] = js.undefined
   ): HashLinkProps = {

@@ -6,6 +6,7 @@ import typings.csstype.csstypeMod.ColorProperty
 import typings.csstype.csstypeMod.FlexProperty
 import typings.csstype.csstypeMod.FontSizeProperty
 import typings.csstype.csstypeMod.GlobalsNumber
+import typings.csstype.csstypeMod.HeightProperty
 import typings.csstype.csstypeMod.MarginBottomProperty
 import typings.csstype.csstypeMod.MarginLeftProperty
 import typings.csstype.csstypeMod.MarginProperty
@@ -17,15 +18,15 @@ import typings.csstype.csstypeMod.PaddingProperty
 import typings.csstype.csstypeMod.PaddingRightProperty
 import typings.csstype.csstypeMod.PaddingTopProperty
 import typings.csstype.csstypeMod.WidthProperty
+import typings.react.reactMod.ElementType
 import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.ReactType
+import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
 import typings.styledDashSystem.styledDashSystemMod.AlignSelfProps
 import typings.styledDashSystem.styledDashSystemMod.ColorProps
 import typings.styledDashSystem.styledDashSystemMod.FontSizeProps
+import typings.styledDashSystem.styledDashSystemMod.HeightProps
 import typings.styledDashSystem.styledDashSystemMod.OrderProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.SpaceProps
@@ -40,23 +41,27 @@ trait BoxKnownProps
      with BaseProps
      with SpaceProps[TLengthStyledSystem]
      with WidthProps[TLengthStyledSystem]
+     with HeightProps[TLengthStyledSystem]
      with FontSizeProps[TLengthStyledSystem]
      with typings.styledDashSystem.styledDashSystemMod.FlexProps[TLengthStyledSystem]
      with OrderProps
      with AlignSelfProps
+     with SxProps {
+  var variant: js.UndefOr[ResponsiveValue[String]] = js.undefined
+}
 
 object BoxKnownProps {
   @scala.inline
   def apply(
     alignSelf: ResponsiveValue[AlignSelfProperty] = null,
-    as: ReactType[_] = null,
+    as: ElementType[_] = null,
     backgroundColor: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
     bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    children: ReactNode = null,
     color: ResponsiveValue[ColorProperty] = null,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
     fontSize: ResponsiveValue[FontSizeProperty[TLengthStyledSystem]] = null,
+    height: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
     key: Key = null,
     m: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
     margin: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
@@ -88,7 +93,9 @@ object BoxKnownProps {
     pt: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
     px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: Ref[js.Any] = null,
+    sx: SxStyleProp = null,
+    variant: ResponsiveValue[String] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
   ): BoxKnownProps = {
     val __obj = js.Dynamic.literal()
@@ -96,11 +103,11 @@ object BoxKnownProps {
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -133,6 +140,8 @@ object BoxKnownProps {
     if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
     if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxKnownProps]
   }

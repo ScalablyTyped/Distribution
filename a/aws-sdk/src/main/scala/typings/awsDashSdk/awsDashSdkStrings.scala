@@ -364,6 +364,7 @@ import typings.awsDashSdk.clientsDatasyncMod._PhaseStatus
 import typings.awsDashSdk.clientsDatasyncMod._PosixPermissions
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDeletedFiles
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDevices
+import typings.awsDashSdk.clientsDatasyncMod._SmbVersion
 import typings.awsDashSdk.clientsDatasyncMod._TaskExecutionStatus
 import typings.awsDashSdk.clientsDatasyncMod._TaskStatus
 import typings.awsDashSdk.clientsDatasyncMod._Uid
@@ -3904,6 +3905,7 @@ object awsDashSdkStrings {
        with _HlsAudioOnlyContainer
        with _NfsVersion
        with _ReplicationRunType
+       with _SmbVersion
   
   @js.native
   sealed trait AUTOMATION extends _MaintenanceWindowTaskType
@@ -18587,6 +18589,12 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait SMB extends _FileShareType
+  
+  @js.native
+  sealed trait SMB2 extends _SmbVersion
+  
+  @js.native
+  sealed trait SMB3 extends _SmbVersion
   
   @js.native
   sealed trait SME extends _LanguageCode
@@ -36004,6 +36012,10 @@ object awsDashSdkStrings {
   def SMART: SMART = "SMART".asInstanceOf[SMART]
   @scala.inline
   def SMB: SMB = "SMB".asInstanceOf[SMB]
+  @scala.inline
+  def SMB2: SMB2 = "SMB2".asInstanceOf[SMB2]
+  @scala.inline
+  def SMB3: SMB3 = "SMB3".asInstanceOf[SMB3]
   @scala.inline
   def SME: SME = "SME".asInstanceOf[SME]
   @scala.inline

@@ -1,10 +1,12 @@
 package typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConfigMetadata extends js.Object {
+trait ConfigMetadata
+  extends /* key */ StringDictionary[js.Any] {
   /**
     * Set the length of the file being uploaded.
     */
@@ -17,8 +19,13 @@ trait ConfigMetadata extends js.Object {
 
 object ConfigMetadata {
   @scala.inline
-  def apply(contentLength: Int | Double = null, contentType: String = null): ConfigMetadata = {
+  def apply(
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    contentLength: Int | Double = null,
+    contentType: String = null
+  ): ConfigMetadata = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (contentLength != null) __obj.updateDynamic("contentLength")(contentLength.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     __obj.asInstanceOf[ConfigMetadata]

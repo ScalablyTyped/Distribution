@@ -265,8 +265,8 @@
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing multiplexjs [id => multiplexjs, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => scala.js] 
-[warn ] Phase3Compile.scala:202 Building multiplexjs... [id => multiplexjs, phase => build] 
-[error] Phase3Compile.scala:228 [E] [E1] src/main/scala/typings/multiplexjs/multiplexNs/Lookup.scala:16:7
+[warn ] Phase3Compile.scala:211 Building multiplexjs... [id => multiplexjs, phase => build] 
+[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/multiplexjs/multiplexNs/Lookup.scala:16:7
 [E]      name clash between defined and inherited member:
 [E]      def contains(value: typings.multiplexjs.multiplexNs.Grouping[TKey,TElement]): Boolean in trait Enumerable and
 [E]      def contains(key: TKey): Boolean at line 16

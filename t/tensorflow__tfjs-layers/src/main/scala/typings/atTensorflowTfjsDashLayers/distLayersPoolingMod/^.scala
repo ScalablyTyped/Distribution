@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashLayers.distLayersPoolingMod
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
+import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor5D
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatCommonMod.DataFormat
 import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatCommonMod.PaddingMode
@@ -31,6 +32,33 @@ object ^ extends js.Object {
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
+    padding: PaddingMode,
+    dataFormat: DataFormat,
+    poolMode: PoolMode
+  ): Tensor[Rank] = js.native
+  def pool3d(x: Tensor5D, poolSize: js.Tuple3[Double, Double, Double]): Tensor[Rank] = js.native
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: js.Tuple3[Double, Double, Double]
+  ): Tensor[Rank] = js.native
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: js.Tuple3[Double, Double, Double],
+    padding: PaddingMode
+  ): Tensor[Rank] = js.native
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: js.Tuple3[Double, Double, Double],
+    padding: PaddingMode,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = js.native
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: js.Tuple3[Double, Double, Double],
     padding: PaddingMode,
     dataFormat: DataFormat,
     poolMode: PoolMode
