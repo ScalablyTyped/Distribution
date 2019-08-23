@@ -16,10 +16,26 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **7565** Javascript libraries,
+This is the home of Scala.js typings for **7567** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
-This should make it one of the biggest Scala repos on the planet with millions of lines of code
+This should make it one of the biggest Scala repos on the planet:
+```
+
+--------------------------------------------------------------------------------
+ Language             Files        Lines        Blank      Comment         Code
+--------------------------------------------------------------------------------
+ Scala               242278     11473168      1044604      2920972      7507592
+ Markdown              7669       272797        90539            0       182258
+ JSON                     9           90            0            0           90
+ Makefile                 2           33            7            0           26
+ HTML                     1            6            0            0            6
+--------------------------------------------------------------------------------
+ Total               249959     11746094      1135150      2920972      7689972
+--------------------------------------------------------------------------------
+
+```
+
 
 The project was introduced in a talk at [flatMap(Oslo) 2019](https://www.youtube.com/watch?v=R1Z_u2rEDj4)
 
@@ -84,14 +100,17 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201908230531")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201908230211")
 ```
 
 ### `build.sbt`
-You'll have to include both the typing and the javascript dependency, and the resolver again.
 ```scala
-  resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped"),
+  /* reference the typing library */
   libraryDependencies ++= Seq(ScalablyTyped.D.d3),
+  /* If the library is typed up in `DefinitelyTyped` (has `-dt-` in the version string) you'll also need this.
+   * The reason why is that versions strings there are just comments, and frequently wrong. Automatically including
+   *  that would break your build.
+   */
   npmDependencies in Compile ++= Seq("d3" -> "5.5.0"),
 ```
 The version of the typing normally includes the relevant version of the library,
@@ -118,7 +137,9 @@ a more scala-like facade will often be a better way.
 
 For now we have the following facades:
 - [antd-slinky](facades/antd-slinky)
+- [react-router-native-slinky](facades/react-router-native-slinky)
 - [antd-native-slinky](facades/antd-native-slinky)
+- [react-router-dom-slinky](facades/react-router-dom-slinky)
 - [react](facades/react)
 - [react-redux](facades/react-redux)
 - [react-slinky](facades/react-slinky)

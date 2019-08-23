@@ -7,6 +7,9 @@ import sbt.Keys._
 object ScalablyTypedPlugin extends AutoPlugin {
   override def trigger = allRequirements
   override def requires = sbt.plugins.JvmPlugin
+  override def globalSettings = List(
+    resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
+  )
 
   object autoImport {
     object ScalablyTyped {
@@ -1384,7 +1387,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val deglob = "org.scalablytyped" % "deglob_sjs0.6_2.12" % "2.1-dt-20190212Z-cc8837"
         val deindent = "org.scalablytyped" % "deindent_sjs0.6_2.12" % "0.1-dt-20190701Z-8d59a8"
         val deku = "org.scalablytyped" % "deku_sjs0.6_2.12" % "v2.0-dt-20190322Z-1bdda3"
-        val del = "org.scalablytyped" % "del_sjs0.6_2.12" % "5.0.0-c7c473"
+        val del = "org.scalablytyped" % "del_sjs0.6_2.12" % "5.1.0-822d2f"
         val delaunator = "org.scalablytyped" % "delaunator_sjs0.6_2.12" % "3.0-dt-20190513Z-30dfe0"
         val delay = "org.scalablytyped" % "delay_sjs0.6_2.12" % "4.3.0-168db5"
         val `delegated-events` = "org.scalablytyped" % "delegated-events_sjs0.6_2.12" % "1.0-dt-20190426Z-47d185"
@@ -2285,10 +2288,10 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val gapi_dot_urlshortener = "org.scalablytyped" % "gapi_dot_urlshortener_sjs0.6_2.12" % "0.0-unknown-dt-20190322Z-1e1bad"
         val gapi_dot_youtube = "org.scalablytyped" % "gapi_dot_youtube_sjs0.6_2.12" % "3.0-dt-20190322Z-c6cbad"
         val gapi_dot_youtubeanalytics = "org.scalablytyped" % "gapi_dot_youtubeanalytics_sjs0.6_2.12" % "0.0-unknown-dt-20190322Z-91523b"
-        val gatsby = "org.scalablytyped" % "gatsby_sjs0.6_2.12" % "2.13.77-4b493a"
-        val `gatsby-core-utils` = "org.scalablytyped" % "gatsby-core-utils_sjs0.6_2.12" % "1.0.5-3bcbab"
-        val `gatsby-image` = "org.scalablytyped" % "gatsby-image_sjs0.6_2.12" % "2.2.12-7aa78c"
-        val `gatsby-link` = "org.scalablytyped" % "gatsby-link_sjs0.6_2.12" % "2.2.7-3bff75"
+        val gatsby = "org.scalablytyped" % "gatsby_sjs0.6_2.12" % "2.13.79-318861"
+        val `gatsby-core-utils` = "org.scalablytyped" % "gatsby-core-utils_sjs0.6_2.12" % "1.0.6-3bcbab"
+        val `gatsby-image` = "org.scalablytyped" % "gatsby-image_sjs0.6_2.12" % "2.2.13-7aa78c"
+        val `gatsby-link` = "org.scalablytyped" % "gatsby-link_sjs0.6_2.12" % "2.2.8-3bff75"
         val gaussian = "org.scalablytyped" % "gaussian_sjs0.6_2.12" % "1.1-dt-20180214Z-ca984a"
         val gaxios = "org.scalablytyped" % "gaxios_sjs0.6_2.12" % "2.0.1-273123"
         val `gc-stats` = "org.scalablytyped" % "gc-stats_sjs0.6_2.12" % "1.4-dt-20190710Z-e1dc0e"
@@ -5666,7 +5669,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `react-native-flip-card` = "org.scalablytyped" % "react-native-flip-card_sjs0.6_2.12" % "3.5-dt-20181031Z-dc32bc"
         val `react-native-form` = "org.scalablytyped" % "react-native-form_sjs0.6_2.12" % "2.1-dt-20190520Z-6c77da"
         val `react-native-fs` = "org.scalablytyped" % "react-native-fs_sjs0.6_2.12" % "2.8-dt-20190212Z-36c88b"
-        val `react-native-gesture-handler` = "org.scalablytyped" % "react-native-gesture-handler_sjs0.6_2.12" % "1.4.0-b160b6"
+        val `react-native-gesture-handler` = "org.scalablytyped" % "react-native-gesture-handler_sjs0.6_2.12" % "1.4.1-b160b6"
         val `react-native-goby` = "org.scalablytyped" % "react-native-goby_sjs0.6_2.12" % "0.0.5-2e2561"
         val `react-native-google-analytics-bridge` = "org.scalablytyped" % "react-native-google-analytics-bridge_sjs0.6_2.12" % "7.1.0-abd0c0"
         val `react-native-google-signin` = "org.scalablytyped" % "react-native-google-signin_sjs0.6_2.12" % "1.0-dt-20190212Z-46ee1e"
@@ -5801,8 +5804,10 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `react-router-bootstrap` = "org.scalablytyped" % "react-router-bootstrap_sjs0.6_2.12" % "0.24-dt-20190322Z-70b79f"
         val `react-router-config` = "org.scalablytyped" % "react-router-config_sjs0.6_2.12" % "5.0-dt-20190530Z-6dfc7c"
         val `react-router-dom` = "org.scalablytyped" % "react-router-dom_sjs0.6_2.12" % "4.3-dt-20190822Z-606892"
+        val `react-router-dom-slinky-facade` = "org.scalablytyped" % "react-router-dom-slinky-facade_sjs0.6_2.12" % "201908231211-14857b"
         val `react-router-hash-link` = "org.scalablytyped" % "react-router-hash-link_sjs0.6_2.12" % "1.2-dt-20190212Z-367f63"
         val `react-router-native` = "org.scalablytyped" % "react-router-native_sjs0.6_2.12" % "4.2-dt-20190212Z-0c1222"
+        val `react-router-native-slinky-facade` = "org.scalablytyped" % "react-router-native-slinky-facade_sjs0.6_2.12" % "201908231211-878b10"
         val `react-router-navigation` = "org.scalablytyped" % "react-router-navigation_sjs0.6_2.12" % "1.0-dt-20190212Z-36f4e9"
         val `react-router-navigation-core` = "org.scalablytyped" % "react-router-navigation-core_sjs0.6_2.12" % "1.0-dt-20181017Z-cfd387"
         val `react-router-param-link` = "org.scalablytyped" % "react-router-param-link_sjs0.6_2.12" % "1.0-dt-20180531Z-d40f5c"
@@ -6153,7 +6158,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val rollup = "org.scalablytyped" % "rollup_sjs0.6_2.12" % "1.20.1-9bbe8b"
         val `rollup-plugin-buble` = "org.scalablytyped" % "rollup-plugin-buble_sjs0.6_2.12" % "0.19-dt-20190312Z-3d24a9"
         val `rollup-plugin-commonjs` = "org.scalablytyped" % "rollup-plugin-commonjs_sjs0.6_2.12" % "10.0.2-9a21c3"
-        val `rollup-plugin-delete` = "org.scalablytyped" % "rollup-plugin-delete_sjs0.6_2.12" % "1.1.0-b8b361"
+        val `rollup-plugin-delete` = "org.scalablytyped" % "rollup-plugin-delete_sjs0.6_2.12" % "1.1.0-78c437"
         val `rollup-plugin-json` = "org.scalablytyped" % "rollup-plugin-json_sjs0.6_2.12" % "3.0-dt-20190320Z-f0c2b9"
         val `rollup-plugin-node-builtins` = "org.scalablytyped" % "rollup-plugin-node-builtins_sjs0.6_2.12" % "2.1-dt-20190312Z-1990e1"
         val `rollup-plugin-node-globals` = "org.scalablytyped" % "rollup-plugin-node-globals_sjs0.6_2.12" % "1.4-dt-20190127Z-1adf2a"

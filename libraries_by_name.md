@@ -5753,8 +5753,10 @@
 | [react-router-bootstrap](./r/react-router-bootstrap) | Integration between React Router and React-Bootstr | react, react-router, react-bootstrap |
 | [react-router-config](./r/react-router-config) | Static route config matching for React Router | react, router, route, routing, static routes, route config, react router |
 | [react-router-dom](./r/react-router-dom) | DOM bindings for React Router | react, router, route, routing, history, link |
+| [react-router-dom-slinky-f](./r/react-router-dom-slinky-facade) | - | - |
 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4 | react, react-router, link, hash-link, scroll |
 | [react-router-native](./r/react-router-native) | React Native bindings for React Router | - |
+| [react-router-native-slink](./r/react-router-native-slinky-facade) | - | - |
 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for  | react-native, ios, android, router, navigation, navigator |
 | [react-router-navigation-c](./r/react-router-navigation-core) | - | web, react-native, ios, android, router, navigation, navigator |
 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p | link-component, component, parameter, dynamic, router, react |

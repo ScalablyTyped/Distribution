@@ -119,7 +119,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:213)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:215)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -130,8 +130,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main.run(Main.scala:213)
-	at com.olvind.tso.importer.Main$.main(Main.scala:311)
+	at com.olvind.tso.importer.Main.run(Main.scala:215)
+	at com.olvind.tso.importer.Main$.main(Main.scala:314)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [child-process-promise => java.lang.IllegalArgumentException: transpose requires all collections have the same size] [id => child-process-promise, phase => scala.js] 
