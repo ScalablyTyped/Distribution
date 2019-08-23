@@ -3,7 +3,7 @@ package typings.reactDashRouterDashNative
 import slinky.core.facade.ReactElement
 import slinky.core.{BuildingComponent, ReactComponentClass}
 import typings.history.historyMod.{Location, LocationState}
-import typings.reactDashRouterDashNative.{reactDashRouterDashNativeProps, reactDashRouterDashNativeComponents => RRN}
+import typings.reactDashRouterDashNative.{reactDashRouterDashNativeComponents => RRN}
 import typings.reactDashRouter.reactDashRouterMod.{
   RouteChildrenProps,
   RouteComponentProps,
@@ -19,7 +19,7 @@ object ReactRouterNativeFacade extends reactDashRouterDashNativeProps {
 
   @inline def NativeRouter     : ExternalComponentP[NativeRouterProps]      = importSTComponent(RRN.NativeRouter)
   @inline def Link             : ExternalComponentP[LinkProps]              = importSTComponent(RRN.Link)
-  @inline def DeepLinking      : ExternalComponentP[DeepLinkingProps]       = importSTComponent(RRN.DeepLinking)
+  @inline def DeepLinking      : ExternalComponentP[js.Object]              = importSTComponent(RRN.DeepLinking)
   @inline def MemoryRouter     : ExternalComponentP[MemoryRouterProps]      = importSTComponent(RRN.MemoryRouter)
   @inline def BackButton       : ExternalComponentP[BackButtonProps]        = importSTComponent(RRN.BackButton)
   @inline def AndroidBackButton: ExternalComponentP[AndroidBackButtonProps] = importSTComponent(RRN.AndroidBackButton)

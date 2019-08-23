@@ -3,7 +3,7 @@ package typings.reactDashRouterDashDom
 import slinky.core.facade.ReactElement
 import slinky.core.{BuildingComponent, ReactComponentClass}
 import typings.history.historyMod.{Location, LocationState}
-import typings.reactDashRouterDashDom.{reactDashRouterDashDomProps, reactDashRouterDashDomComponents => RRD}
+import typings.reactDashRouterDashDom.{reactDashRouterDashDomComponents => RRD}
 import typings.reactDashRouter.reactDashRouterMod.{
   RouteChildrenProps,
   RouteComponentProps,
@@ -19,9 +19,9 @@ object ReactRouterFacade extends reactDashRouterDashDomProps {
 
   @inline def BrowserRouter: ExternalComponentP[BrowserRouterProps]  = importSTComponent(RRD.BrowserRouter)
   @inline def HashRouter   : ExternalComponentP[HashRouterProps]     = importSTComponent(RRD.HashRouter)
-  @inline def Link         : ExternalComponentP[LinkProps]           = importSTComponent(RRD.Link)
+  @inline def Link[S]      : ExternalComponentP[LinkProps[S]]        = importSTComponent(RRD.Link[S])
   @inline def MemoryRouter : ExternalComponentP[MemoryRouterProps]   = importSTComponent(RRD.MemoryRouter)
-  @inline def NavLink      : ExternalComponentP[NavLinkProps]        = importSTComponent(RRD.NavLink)
+  @inline def NavLink[S]   : ExternalComponentP[NavLinkProps[S]]     = importSTComponent(RRD.NavLink[S])
   @inline def Prompt       : ExternalComponentP[PromptProps]         = importSTComponent(RRD.Prompt)
   @inline def Redirect     : ExternalComponentP[RedirectProps]       = importSTComponent(RRD.Redirect)
   @inline def Router       : ExternalComponentP[RouterProps]         = importSTComponent(RRD.Router)
