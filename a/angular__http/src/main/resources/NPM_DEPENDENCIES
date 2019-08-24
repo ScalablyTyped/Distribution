@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@angular/http" : "7.2.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@angular/http" : "7.2.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

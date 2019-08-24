@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-server-caching" : "0.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-server-caching" : "0.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

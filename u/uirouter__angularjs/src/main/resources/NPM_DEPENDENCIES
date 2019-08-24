@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@uirouter/angularjs" : "1.0.22"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@uirouter/angularjs" : "1.0.22"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

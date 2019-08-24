@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "p-locate" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "p-locate" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

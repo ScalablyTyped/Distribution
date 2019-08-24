@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "resize-observer-lite" : "0.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "resize-observer-lite" : "0.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

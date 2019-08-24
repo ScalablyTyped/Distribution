@@ -14,5 +14,11 @@ class ValidationContext protected ()
     ast: DocumentNode,
     typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo
   ) = this()
+  def this(
+    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
+    ast: DocumentNode,
+    typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo,
+    onError: js.Function1[/* err */ typings.graphql.errorMod.GraphQLError, Unit]
+  ) = this()
 }
 

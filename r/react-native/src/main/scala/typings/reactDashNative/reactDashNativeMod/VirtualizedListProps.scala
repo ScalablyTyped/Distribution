@@ -77,6 +77,8 @@ object VirtualizedListProps {
     debug: js.UndefOr[Boolean] = js.undefined,
     decelerationRate: fast | normal | Double = null,
     directionalLockEnabled: js.UndefOr[Boolean] = js.undefined,
+    disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined,
+    disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined,
     disableVirtualization: js.UndefOr[Boolean] = js.undefined,
     endFillColor: String = null,
     extraData: js.Any = null,
@@ -206,6 +208,8 @@ object VirtualizedListProps {
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
     if (!js.isUndefined(directionalLockEnabled)) __obj.updateDynamic("directionalLockEnabled")(directionalLockEnabled)
+    if (!js.isUndefined(disableIntervalMomentum)) __obj.updateDynamic("disableIntervalMomentum")(disableIntervalMomentum)
+    if (!js.isUndefined(disableScrollViewPanResponder)) __obj.updateDynamic("disableScrollViewPanResponder")(disableScrollViewPanResponder)
     if (!js.isUndefined(disableVirtualization)) __obj.updateDynamic("disableVirtualization")(disableVirtualization)
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor)
     if (extraData != null) __obj.updateDynamic("extraData")(extraData)

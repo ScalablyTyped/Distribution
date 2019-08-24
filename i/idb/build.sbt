@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "idb"
-version := "3.0.2-2c8f84"
+version := "3.0.2-c9873e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

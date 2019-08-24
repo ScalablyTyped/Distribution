@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "knex" : "0.18.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "knex" : "0.18.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

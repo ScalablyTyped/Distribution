@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-stream"
-version := "2.0.0-af77cd"
+version := "2.0.0-f516d0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

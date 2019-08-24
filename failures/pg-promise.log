@@ -181,8 +181,8 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => pg-promise, phase => scala.js, this => Name(typings) / Name(pgDashPromise) / Name(pgDashPromiseMod) / Name(errorsNs) / Name(QueryFileError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => pg-promise, phase => scala.js, this => Name(typings) / Name(pgDashPromise) / Name(pgDashPromiseMod) / Name(errorsNs) / Name(QueryResultError)] 
 [debug] PhaseRunner.scala:84 Success [id => pg-promise, phase => scala.js] 
-[warn ] Phase3Compile.scala:211 Building pg-promise... [id => pg-promise, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/pgDashPromise/pgDashPromiseMod/package.scala:28:70
+[warn ] Phase3Compile.scala:214 Building pg-promise... [id => pg-promise, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/pgDashPromise/pgDashPromiseMod/package.scala:28:70
 [E]      illegal cyclic reference involving type TQuery
 [E]      L28:   type TVirtualQuery = js.Function1[/* values */ js.UndefOr[js.Any], TQuery]
 [E]                                                                                ^

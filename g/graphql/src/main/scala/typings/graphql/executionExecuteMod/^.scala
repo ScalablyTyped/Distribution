@@ -1,8 +1,8 @@
 package typings.graphql.executionExecuteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.Anon_Key
 import typings.graphql.errorMod.GraphQLError
+import typings.graphql.jsutilsPathMod.Path
 import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageAstMod.FieldNode
@@ -12,7 +12,7 @@ import typings.graphql.typeDefinitionMod.GraphQLField
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
 import typings.graphql.typeDefinitionMod.GraphQLObjectType
 import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphql.typeDefinitionMod.ResponsePath
+import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
 import typings.graphql.typeSchemaMod.GraphQLSchema
 import typings.std.Error
 import scala.scalajs.js
@@ -23,10 +23,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultFieldResolver: GraphQLFieldResolver[js.Any, js.Any, StringDictionary[js.Any]] = js.native
-  def addPath(prev: js.UndefOr[scala.Nothing], key: String): Anon_Key = js.native
-  def addPath(prev: js.UndefOr[scala.Nothing], key: Double): Anon_Key = js.native
-  def addPath(prev: ResponsePath, key: String): Anon_Key = js.native
-  def addPath(prev: ResponsePath, key: Double): Anon_Key = js.native
+  val defaultTypeResolver: GraphQLTypeResolver[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   def assertValidExecutionArguments(schema: GraphQLSchema, document: DocumentNode, rawVariableValues: Maybe[StringDictionary[_]]): Unit = js.native
   def buildExecutionContext(
     schema: GraphQLSchema,
@@ -37,12 +34,22 @@ object ^ extends js.Object {
     operationName: Maybe[String],
     fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
   ): js.Array[GraphQLError] | ExecutionContext = js.native
+  def buildExecutionContext(
+    schema: GraphQLSchema,
+    document: DocumentNode,
+    rootValue: js.Any,
+    contextValue: js.Any,
+    rawVariableValues: Maybe[StringDictionary[_]],
+    operationName: Maybe[String],
+    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]],
+    typeResolver: Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]
+  ): js.Array[GraphQLError] | ExecutionContext = js.native
   def buildResolveInfo(
     exeContext: ExecutionContext,
     fieldDef: GraphQLField[_, _, StringDictionary[_]],
     fieldNodes: js.Array[FieldNode],
     parentType: GraphQLObjectType[_, _, StringDictionary[_]],
-    path: ResponsePath
+    path: Path
   ): GraphQLResolveInfo = js.native
   def collectFields(
     exeContext: ExecutionContext,
@@ -52,32 +59,15 @@ object ^ extends js.Object {
     visitedFragmentNames: StringDictionary[Boolean]
   ): StringDictionary[js.Array[FieldNode]] = js.native
   def execute[TData](args: ExecutionArgs): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](schema: GraphQLSchema, document: DocumentNode): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](schema: GraphQLSchema, document: DocumentNode, rootValue: js.Any): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](schema: GraphQLSchema, document: DocumentNode, rootValue: js.Any, contextValue: js.Any): PromiseOrValue[ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: GraphQLSchema,
     document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]]
-  ): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](
-    schema: GraphQLSchema,
-    document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String]
-  ): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](
-    schema: GraphQLSchema,
-    document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String],
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
+    rootValue: js.UndefOr[js.Any],
+    contextValue: js.UndefOr[js.Any],
+    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
+    operationName: js.UndefOr[Maybe[String]],
+    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): PromiseOrValue[ExecutionResult[TData]] = js.native
   def getFieldDef(schema: GraphQLSchema, parentType: GraphQLObjectType[_, _, StringDictionary[_]], fieldName: String): Maybe[GraphQLField[_, _, StringDictionary[_]]] = js.native
   def resolveFieldValueOrError[TSource](
@@ -88,6 +78,5 @@ object ^ extends js.Object {
     source: TSource,
     info: GraphQLResolveInfo
   ): Error | js.Any = js.native
-  def responsePathAsArray(path: ResponsePath): js.Array[String | Double] = js.native
 }
 

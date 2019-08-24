@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-pg-migrate" : "3.22.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-pg-migrate" : "3.22.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

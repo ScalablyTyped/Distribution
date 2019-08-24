@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-firebase" : "5.5.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-firebase" : "5.5.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

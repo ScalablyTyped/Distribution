@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-invariant" : "0.4.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-invariant" : "0.4.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

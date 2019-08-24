@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "apollo-datasource"
-version := "0.6.1-c0f7ef"
+version := "0.6.1-2b853f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-595810",
+  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-553b94",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

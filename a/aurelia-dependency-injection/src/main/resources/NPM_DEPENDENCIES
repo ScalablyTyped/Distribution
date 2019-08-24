@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "aurelia-dependency-injection" : "1.4.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "aurelia-dependency-injection" : "1.4.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

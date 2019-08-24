@@ -8,5 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object languageBlockStringMod extends js.Object {
   def dedentBlockStringValue(rawString: String): String = js.native
+  def getBlockStringIndentation(lines: js.Array[String]): Double = js.native
+  def printBlockString(value: String): String = js.native
+  def printBlockString(value: String, indentation: String): String = js.native
+  def printBlockString(value: String, indentation: String, preferMultipleLines: Boolean): String = js.native
 }
 

@@ -336,6 +336,7 @@
 | 0.8290529912593676 | [create-hash](./c/create-hash) | create hashes for browserify
 | 0.829028573976651 | [replace-ext](./r/replace-ext) | Replaces a file extension with another one
 | 0.8289816073596524 | [normalizr](./n/normalizr) | Normalizes and denormalizes JSON according to sche
+| 0.8289200218410504 | [jest-worker](./j/jest-worker) | Module for executing heavy tasks under forked proc
 | 0.8288780207766115 | [brace-expansion](./b/brace-expansion) | Brace expansion as known from sh/bash
 | 0.8287915148400038 | [path-type](./p/path-type) | Check if a path is a file, directory, or symlink
 | 0.8287162510160546 | [strip-indent](./s/strip-indent) | Strip leading whitespace from each line in a strin
@@ -387,6 +388,7 @@
 | 0.8217570592846809 | [domhandler](./d/domhandler) | handler for htmlparser2 that turns pages into a do
 | 0.8215813151142906 | [p-try](./p/p-try) | Start a promise chain
 | 0.8215232559217134 | [arrify](./a/arrify) | Convert a value to an array
+| 0.821426535569127 | [cacache](./c/cacache) | Fast, fault-tolerant, cross-platform, disk-based, 
 | 0.8214026185902057 | [engine_dot_io-client](./e/engine_dot_io-client) | Client for the realtime Engine
 | 0.8212275224907168 | [warning](./w/warning) | A mirror of Facebook's Warning
 | 0.8212078888243088 | [split](./s/split) | split a Text Stream into a Line Stream
@@ -956,6 +958,7 @@
 | 0.7738361435388175 | [xmldoc](./x/xmldoc) | A lightweight XML Document class for JavaScript.
 | 0.7737646772239994 | [isbinaryfile](./i/isbinaryfile) | Detects if a file is binary in Node.js. Similar to
 | 0.7737086390400936 | [vue__component-compiler-u](./v/vue__component-compiler-utils) | Lower level utilities for compiling Vue single fil
+| 0.7735864833444472 | [multipipe](./m/multipipe) | pipe streams with centralized error handling
 | 0.7735839209759672 | [riot](./r/riot) | Simple and elegant component-based UI library
 | 0.7735722143582021 | [gulp-sourcemaps](./g/gulp-sourcemaps) | Source map support for Gulp.js
 | 0.7735624180029095 | [vfile-location](./v/vfile-location) | Convert between positions (line and column-based) 
@@ -4697,6 +4700,7 @@
 | 0.5253489880313138 | [dot](./d/dot) | Concise and fast javascript templating compatible 
 | 0.5251133097920619 | [elm](./e/elm) | The Elm Platform: Binaries for the Elm programming
 | 0.5250474982794306 | [stacktrace-js](./s/stacktrace-js) | Framework-agnostic, micro-library for getting stac
+| 0.5249554484093766 | [koji-tools](./k/koji-tools) | A library that simplifies adding koji-specific fea
 | 0.5247051366057641 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.5246811047009007 | [domelementtype](./d/domelementtype) | all the types of nodes in htmlparser2's dom
 | 0.5245859206514646 | [triplesec](./t/triplesec) | A CommonJS-compliant system for secure encryption 
@@ -5484,6 +5488,7 @@
 | 0.4103532817354647 | [node-zendesk](./n/node-zendesk) | zendesk API client wrapper
 | 0.41010698995396555 | [statsd-client](./s/statsd-client) | Yet another client for Etsy's statsd
 | 0.41010203748659513 | [doublearray](./d/doublearray) | JavaScript implementation of Double-Array trie
+| 0.4100816787412762 | [async-stream-generator](./a/async-stream-generator) | Pipe ES6 Async Generators through Node.js Streams
 | 0.4099913093876357 | [lodash_dot_isarguments](./l/lodash_dot_isarguments) | The lodash method _.isArguments exported as a modu
 | 0.4099744936540203 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
 | 0.40985866229697704 | [musicmetadata](./m/musicmetadata) | Streaming music metadata parser for node and the b

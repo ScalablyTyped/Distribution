@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "loglevel-plugin-prefix" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "loglevel-plugin-prefix" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

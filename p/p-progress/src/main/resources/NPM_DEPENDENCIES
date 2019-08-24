@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "p-progress" : "0.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "p-progress" : "0.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

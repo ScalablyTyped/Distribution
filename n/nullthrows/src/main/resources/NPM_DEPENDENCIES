@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "nullthrows" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "nullthrows" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

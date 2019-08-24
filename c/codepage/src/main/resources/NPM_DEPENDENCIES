@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "codepage" : "1.14.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "codepage" : "1.14.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

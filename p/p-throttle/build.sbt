@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-throttle"
-version := "3.1.0-51d972"
+version := "3.1.0-51cb24"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

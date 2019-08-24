@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object validationRulesValuesOfCorrectTypeMod extends js.Object {
   def ValuesOfCorrectType(context: ValidationContext): ASTVisitor = js.native
+  def badEnumValueMessage(typeName: String, valueName: String, suggestedValues: js.Array[String]): String = js.native
   def badValueMessage(typeName: String, valueName: String): String = js.native
   def badValueMessage(typeName: String, valueName: String, message: String): String = js.native
   def requiredFieldMessage(typeName: String, fieldName: String, fieldTypeName: String): String = js.native
-  def unknownFieldMessage(typeName: String, fieldName: String): String = js.native
-  def unknownFieldMessage(typeName: String, fieldName: String, message: String): String = js.native
+  def unknownFieldMessage(typeName: String, fieldName: String, suggestedFields: js.Array[String]): String = js.native
 }
 

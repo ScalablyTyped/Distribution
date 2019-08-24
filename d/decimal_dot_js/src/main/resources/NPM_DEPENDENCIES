@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "decimal.js" : "10.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "decimal.js" : "10.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

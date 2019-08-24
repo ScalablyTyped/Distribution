@@ -27,6 +27,8 @@ package object clientsTranscribeserviceMod {
     - typings.awsDashSdk.awsDashSdkStrings.`en-IN`
     - typings.awsDashSdk.awsDashSdkStrings.`hi-IN`
     - typings.awsDashSdk.awsDashSdkStrings.`ar-SA`
+    - typings.awsDashSdk.awsDashSdkStrings.`ru-RU`
+    - typings.awsDashSdk.awsDashSdkStrings.`zh-CN`
     - java.lang.String
   */
   type LanguageCode = _LanguageCode | String

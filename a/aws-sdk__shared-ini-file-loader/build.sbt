@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__shared-ini-file-loader"
-version := "0.1.0-preview.1-524736"
+version := "0.1.0-preview.1-464816"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

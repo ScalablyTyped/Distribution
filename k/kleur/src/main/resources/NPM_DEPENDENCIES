@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "kleur" : "3.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "kleur" : "3.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gzip-size" : "5.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gzip-size" : "5.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anybar"
-version := "4.0.0-b9cc6e"
+version := "4.0.0-fe2ba4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "localforage-cordovasqlitedriver" : "1.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "localforage-cordovasqlitedriver" : "1.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

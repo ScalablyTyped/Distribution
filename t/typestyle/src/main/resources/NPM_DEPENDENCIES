@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typestyle" : "2.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typestyle" : "2.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

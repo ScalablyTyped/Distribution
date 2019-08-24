@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "git-remote-origin-url"
-version := "3.0.0-2409fe"
+version := "3.0.0-ca139c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

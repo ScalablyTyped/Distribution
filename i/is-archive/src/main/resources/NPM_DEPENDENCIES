@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-archive" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-archive" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

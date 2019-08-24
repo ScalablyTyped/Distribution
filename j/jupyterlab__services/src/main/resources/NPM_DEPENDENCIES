@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/services" : "4.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/services" : "4.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xml-js" : "1.6.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xml-js" : "1.6.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-data-adapter" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-data-adapter" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

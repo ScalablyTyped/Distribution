@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "webix" : "6.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "webix" : "6.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

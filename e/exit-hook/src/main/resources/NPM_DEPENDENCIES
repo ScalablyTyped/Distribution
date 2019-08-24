@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "exit-hook" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "exit-hook" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

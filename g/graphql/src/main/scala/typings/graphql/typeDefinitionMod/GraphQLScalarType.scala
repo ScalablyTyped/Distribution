@@ -6,6 +6,7 @@ import typings.graphql.languageAstMod.ScalarTypeDefinitionNode
 import typings.graphql.languageAstMod.ScalarTypeExtensionNode
 import typings.graphql.languageAstMod.ValueNode
 import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +24,7 @@ class GraphQLScalarType protected ()
   var astNode: Maybe[ScalarTypeDefinitionNode] = js.native
   var description: Maybe[String] = js.native
   var extensionASTNodes: Maybe[js.Array[ScalarTypeExtensionNode]] = js.native
+  var extensions: Maybe[Record[String, _]] = js.native
   var name: String = js.native
   @JSName("parseLiteral")
   var parseLiteral_Original: GraphQLScalarLiteralParser[_] = js.native

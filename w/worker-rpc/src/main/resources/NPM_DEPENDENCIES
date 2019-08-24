@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "worker-rpc" : "0.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "worker-rpc" : "0.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

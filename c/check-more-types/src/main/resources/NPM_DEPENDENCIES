@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "check-more-types" : "2.24.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "check-more-types" : "2.24.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "subsume"
-version := "3.0.0-f1648c"
+version := "3.0.0-17f946"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

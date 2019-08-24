@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "applicationinsights"
-version := "1.4.1-4c5176"
+version := "1.4.1-f5bc09"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

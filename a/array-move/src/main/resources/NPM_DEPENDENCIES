@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "array-move" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "array-move" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

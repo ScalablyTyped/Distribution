@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webdriver-js-extender"
-version := "2.1.0-c4a565"
+version := "2.1.0-04b2a1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

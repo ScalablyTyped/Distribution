@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sindresorhus/to-milliseconds" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sindresorhus/to-milliseconds" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

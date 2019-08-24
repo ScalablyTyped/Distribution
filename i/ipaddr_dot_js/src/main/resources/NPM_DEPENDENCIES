@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ipaddr.js" : "1.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ipaddr.js" : "1.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

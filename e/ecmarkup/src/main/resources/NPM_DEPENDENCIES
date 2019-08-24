@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ecmarkup" : "3.16.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ecmarkup" : "3.16.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

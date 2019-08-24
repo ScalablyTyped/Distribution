@@ -10,15 +10,15 @@ trait DescribeImportImageTasksRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * Filter tasks using the task-state filter and one of the following values: active, completed, deleting, deleted.
+    * Filter tasks using the task-state filter and one of the following values: active, completed, deleting, or deleted.
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * A list of import image task IDs.
+    * The IDs of the import image tasks.
     */
   var ImportTaskIds: js.UndefOr[ImportTaskIdList] = js.undefined
   /**
-    * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
+    * The maximum number of results to return in a single call.
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   /**

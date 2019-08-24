@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "make-dir"
-version := "3.0.0-7f41a5"
+version := "3.0.0-d55f56"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

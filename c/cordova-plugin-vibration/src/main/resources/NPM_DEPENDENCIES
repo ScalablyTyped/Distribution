@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-vibration" : "3.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-vibration" : "3.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

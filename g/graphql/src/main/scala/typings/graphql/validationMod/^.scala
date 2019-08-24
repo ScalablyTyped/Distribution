@@ -1,5 +1,6 @@
 package typings.graphql.validationMod
 
+import typings.graphql.Anon_MaxErrors
 import typings.graphql.errorMod.GraphQLError
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageVisitorMod.ASTVisitor
@@ -49,6 +50,13 @@ object ^ extends js.Object {
     documentAST: DocumentNode,
     rules: js.Array[ValidationRule],
     typeInfo: TypeInfo
+  ): js.Array[GraphQLError] = js.native
+  def validate(
+    schema: GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.Array[ValidationRule],
+    typeInfo: TypeInfo,
+    options: Anon_MaxErrors
   ): js.Array[GraphQLError] = js.native
 }
 

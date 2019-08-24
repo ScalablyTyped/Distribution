@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-metadata"
-version := "1.0.6-c3d646"
+version := "1.0.6-6ae0a8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

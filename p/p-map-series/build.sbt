@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-map-series"
-version := "2.1.0-af5130"
+version := "2.1.0-1a823d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

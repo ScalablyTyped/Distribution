@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "three" : "0.106.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "three" : "0.106.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

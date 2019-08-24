@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array-tree-filter"
-version := "2.1.0-2d16ab"
+version := "2.1.0-4f40b9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

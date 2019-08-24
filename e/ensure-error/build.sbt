@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ensure-error"
-version := "2.0.0-823180"
+version := "2.0.0-d2f6f6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

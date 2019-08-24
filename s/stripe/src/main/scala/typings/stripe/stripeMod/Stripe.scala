@@ -56,7 +56,7 @@ trait Stripe extends js.Object {
   var accounts: Accounts = js.native
   var applicationFees: ApplicationFees = js.native
   var balance: Balance = js.native
-  var balanceTransaction: BalanceTransaction = js.native
+  var balanceTransactions: BalanceTransaction = js.native
   var bitcoinReceivers: BitcoinReceivers = js.native
   var charges: Charges = js.native
   var checkout: Checkout = js.native

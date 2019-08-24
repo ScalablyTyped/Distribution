@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "express-frappe" : "2.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "express-frappe" : "2.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

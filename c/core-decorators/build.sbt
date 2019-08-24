@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "core-decorators"
-version := "0.20.0-70ef78"
+version := "0.20.0-311229"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

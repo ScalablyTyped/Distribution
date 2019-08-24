@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-path-immutable"
-version := "3.1.1-1cbdb8"
+version := "3.1.1-caeb0e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

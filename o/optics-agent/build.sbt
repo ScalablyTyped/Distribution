@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "optics-agent"
-version := "1.1-dt-20181022Z-0b506e"
+version := "1.1-dt-20190823Z-3355eb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-a81a50",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-79dfe3",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-3d1b1f",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-9b3683",
+  "org.scalablytyped" %%% "graphql" % "14.5.3-be513a",
   "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-3bc36d",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-ecf77c",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-57592b",

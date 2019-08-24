@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array-uniq"
-version := "2.1.0-fa552d"
+version := "2.1.0-6a7b26"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

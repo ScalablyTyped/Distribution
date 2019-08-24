@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sdbm" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sdbm" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby
 
-Typings are for version 2.13.79
+Typings are for version 2.13.81
 
 ## Library description:
 Blazing fast modern site generator for React

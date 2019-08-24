@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-tap"
-version := "3.1.0-231a8a"
+version := "3.1.0-b4dc5a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

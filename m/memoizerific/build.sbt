@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memoizerific"
-version := "1.11.3-0b697b"
+version := "1.11.3-61b7e8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

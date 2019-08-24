@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@phosphor/algorithm" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@phosphor/algorithm" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

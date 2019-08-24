@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/axes" : "0.59.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/axes" : "0.59.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chai-http"
-version := "4.3.0-448810"
+version := "4.3.0-c4f1b3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

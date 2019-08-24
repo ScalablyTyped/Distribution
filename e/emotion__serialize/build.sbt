@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "emotion__serialize"
-version := "0.11.8-6ec5b2"
+version := "0.11.8-59ff9a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.2-7b1113",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.2-31530a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

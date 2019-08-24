@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-debounce"
-version := "2.1.0-64a724"
+version := "2.1.0-139ea8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

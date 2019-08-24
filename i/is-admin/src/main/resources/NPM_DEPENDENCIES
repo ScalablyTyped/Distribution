@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-admin" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-admin" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-globalization"
-version := "1.11.0-c223f2"
+version := "1.11.0-f7f0b7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

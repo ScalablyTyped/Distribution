@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-link" : "1.2.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-link" : "1.2.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

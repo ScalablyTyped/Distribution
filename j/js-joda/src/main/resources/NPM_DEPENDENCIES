@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-joda" : "1.11.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-joda" : "1.11.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

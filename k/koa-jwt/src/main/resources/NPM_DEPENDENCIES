@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "koa-jwt" : "3.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "koa-jwt" : "3.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

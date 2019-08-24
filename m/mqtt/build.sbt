@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mqtt"
-version := "3.0.0-26b4b7"
+version := "3.0.0-c99cdb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mqtt-packet" % "6.2.0-a5c6fb",
+  "org.scalablytyped" %%% "mqtt-packet" % "6.2.0-265923",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

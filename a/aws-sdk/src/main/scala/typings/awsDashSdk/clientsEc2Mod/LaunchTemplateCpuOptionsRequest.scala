@@ -10,7 +10,7 @@ trait LaunchTemplateCpuOptionsRequest extends js.Object {
     */
   var CoreCount: js.UndefOr[Integer] = js.undefined
   /**
-    * The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1. Otherwise, specify the default value of 2.
+    * The number of threads per CPU core. To disable multithreading for the instance, specify a value of 1. Otherwise, specify the default value of 2.
     */
   var ThreadsPerCore: js.UndefOr[Integer] = js.undefined
 }

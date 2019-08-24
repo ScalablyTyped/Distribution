@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "route-recognizer" : "0.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "route-recognizer" : "0.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

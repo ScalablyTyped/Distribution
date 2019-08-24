@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "query-string" : "6.8.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "query-string" : "6.8.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

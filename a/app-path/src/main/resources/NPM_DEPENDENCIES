@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "app-path" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "app-path" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

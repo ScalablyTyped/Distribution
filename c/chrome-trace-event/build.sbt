@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chrome-trace-event"
-version := "1.0.2-768e1c"
+version := "1.0.2-0660db"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

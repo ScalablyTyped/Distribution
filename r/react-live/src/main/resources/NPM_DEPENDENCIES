@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-live" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-live" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "indefinite-observable" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "indefinite-observable" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

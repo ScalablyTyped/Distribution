@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/hash-blob-browser" : "0.1.0-preview.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/hash-blob-browser" : "0.1.0-preview.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

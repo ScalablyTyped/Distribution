@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__precise-date"
-version := "1.0.1-f33a84"
+version := "1.0.1-7ef6d9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

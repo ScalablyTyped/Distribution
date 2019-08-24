@@ -91,6 +91,7 @@ class NodeJSKernelBackend protected () extends KernelBackend {
   ): Tensor3D = js.native
   def decodePng(contents: Uint8Array, channels: Double): Tensor3D = js.native
   def depthToSpace(x: Tensor[R4], blockSize: Double, dataFormat: String): Tensor[R4] = js.native
+  def diag(x: Tensor[Rank]): Tensor[Rank] = js.native
   def divide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def equal(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   /**
@@ -113,25 +114,6 @@ class NodeJSKernelBackend protected () extends KernelBackend {
   def fft(x: Tensor[R2]): Tensor[R2] = js.native
   def floorDiv(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def flushSummaryWriter(resourceHandle: Tensor[Rank]): Unit = js.native
-  def fusedBatchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): Tensor3D = js.native
-  def fusedBatchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean, bias: Tensor[Rank]): Tensor3D = js.native
-  def fusedBatchMatMul(
-    a: Tensor3D,
-    b: Tensor3D,
-    transposeA: Boolean,
-    transposeB: Boolean,
-    bias: Tensor[Rank],
-    activation: Activation
-  ): Tensor3D = js.native
-  def fusedBatchMatMul(
-    a: Tensor3D,
-    b: Tensor3D,
-    transposeA: Boolean,
-    transposeB: Boolean,
-    bias: Tensor[Rank],
-    activation: Activation,
-    preluActivationWeights: Tensor[Rank]
-  ): Tensor3D = js.native
   def fusedConv2d(
     x: Tensor4D,
     filter: Tensor4D,

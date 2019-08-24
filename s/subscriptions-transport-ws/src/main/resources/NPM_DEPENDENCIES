@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "subscriptions-transport-ws" : "0.9.16"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "subscriptions-transport-ws" : "0.9.16"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

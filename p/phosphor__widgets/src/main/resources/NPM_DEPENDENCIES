@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@phosphor/widgets" : "1.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@phosphor/widgets" : "1.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

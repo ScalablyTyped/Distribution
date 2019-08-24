@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "urllib" : "2.34.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "urllib" : "2.34.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

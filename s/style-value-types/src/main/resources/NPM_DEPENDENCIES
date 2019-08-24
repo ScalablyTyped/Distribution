@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "style-value-types" : "3.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "style-value-types" : "3.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

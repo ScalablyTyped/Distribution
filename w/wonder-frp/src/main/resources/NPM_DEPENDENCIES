@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "wonder-frp" : "0.1.26"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "wonder-frp" : "0.1.26"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "botvs"
-version := "1.0.5-6baf2e"
+version := "1.0.5-79af37"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

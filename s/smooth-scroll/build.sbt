@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smooth-scroll"
-version := "14.2-dt-20181106Z-27d80a"
+version := "16.1-dt-20190823Z-ae3b6c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

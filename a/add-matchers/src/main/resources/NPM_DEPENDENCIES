@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "add-matchers" : "0.6.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "add-matchers" : "0.6.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

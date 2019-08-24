@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "graphql-subscriptions" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "graphql-subscriptions" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

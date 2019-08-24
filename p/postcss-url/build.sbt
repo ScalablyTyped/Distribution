@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "postcss-url"
-version := "8.0-dt-20190222Z-8800e9"
+version := "8.0-dt-20190222Z-1caa89"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "postcss" % "7.0.17-9e3bcd",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-20fa05",
+  "org.scalablytyped" %%% "postcss" % "7.0.17-a2c8cd",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-04c49c",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

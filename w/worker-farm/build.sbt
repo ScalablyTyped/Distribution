@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "worker-farm"
-version := "1.7.0-cd8be8"
+version := "1.7.0-8291da"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

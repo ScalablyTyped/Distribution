@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anydb-sql"
-version := "0.7.1-84d675"
+version := "0.7.1-30201b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

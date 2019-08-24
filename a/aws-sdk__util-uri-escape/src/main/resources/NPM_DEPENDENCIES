@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/util-uri-escape" : "0.1.0-preview.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/util-uri-escape" : "0.1.0-preview.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

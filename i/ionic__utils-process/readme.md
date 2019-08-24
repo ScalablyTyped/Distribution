@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-process
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 Process utils for NodeJS

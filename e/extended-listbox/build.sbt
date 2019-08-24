@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "extended-listbox"
-version := "5.0.1-0350d0"
+version := "5.0.1-396dab"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

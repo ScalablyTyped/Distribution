@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-reflect"
-version := "2.1.0-c61793"
+version := "2.1.0-7bcc76"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

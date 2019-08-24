@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "log-symbols" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "log-symbols" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

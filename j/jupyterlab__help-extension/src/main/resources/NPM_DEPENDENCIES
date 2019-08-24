@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/help-extension" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/help-extension" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

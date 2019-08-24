@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "autobind-decorator"
-version := "2.4.0-c87ea2"
+version := "2.4.0-84faa5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pinata-sdk"
-version := "0.1.7-e7c3b2"
+version := "0.1.7-110077"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

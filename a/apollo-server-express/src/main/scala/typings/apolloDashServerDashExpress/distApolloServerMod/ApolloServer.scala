@@ -4,6 +4,7 @@ import typings.apolloDashServerDashCore.apolloDashServerDashCoreMod.ApolloServer
 import typings.apolloDashServerDashCore.distGraphqlOptionsMod.GraphQLServerOptions
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApolloServer protected () extends ApolloServerBase {
   def this(config: ApolloServerExpressConfig) = this()
-  def applyMiddleware(hasAppPathCorsBodyParserConfigDisableHealthCheckOnHealthCheck: ServerRegistration): Unit = js.native
+  def applyMiddleware(hasAppRest: ServerRegistration): Unit = js.native
   def createGraphQLServerOptions(req: Request, res: Response): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
+  def getMiddleware(): Router = js.native
+  def getMiddleware(hasPathCorsBodyParserConfigDisableHealthCheckOnHealthCheck: GetMiddlewareOptions): Router = js.native
 }
 

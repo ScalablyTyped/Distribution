@@ -2,6 +2,7 @@ package typings.stripe.stripeMod.customersNs
 
 import typings.stripe.stripeMod.IDataOptionsWithMetadata
 import typings.stripe.stripeMod.IOptionsMetadata
+import typings.stripe.stripeMod.bankAccountsNs.ISourceCreationOptions
 import typings.stripe.stripeMod.cardsNs.ICardSourceCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,13 +16,13 @@ trait ICustomerSourceCreationOptions extends IDataOptionsWithMetadata {
     * dictionary containing a user’s credit card details (with the options shown
     * below). Stripe will automatically validate the card.
     */
-  var source: String | ICardSourceCreationOptions
+  var source: String | ICardSourceCreationOptions | ISourceCreationOptions
 }
 
 object ICustomerSourceCreationOptions {
   @scala.inline
   def apply(
-    source: String | ICardSourceCreationOptions,
+    source: String | ICardSourceCreationOptions | ISourceCreationOptions,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null

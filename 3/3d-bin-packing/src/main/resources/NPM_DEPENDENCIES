@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "3d-bin-packing" : "1.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "3d-bin-packing" : "1.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

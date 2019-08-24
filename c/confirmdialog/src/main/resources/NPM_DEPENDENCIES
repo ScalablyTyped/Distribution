@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "confirmdialog" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "confirmdialog" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

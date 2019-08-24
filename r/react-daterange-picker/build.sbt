@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-daterange-picker"
-version := "2.0-dt-20181002Z-bc6a1b"
+version := "2.0-dt-20181002Z-331895"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "moment" % "2.24.0-e628d3",
-  "org.scalablytyped" %%% "moment-range" % "3.1-dt-20190212Z-95bcc9",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
+  "org.scalablytyped" %%% "moment" % "2.24.0-92164a",
+  "org.scalablytyped" %%% "moment-range" % "3.1-dt-20190212Z-9374f9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-847c1a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

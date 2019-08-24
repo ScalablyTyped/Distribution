@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "linq4js" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "linq4js" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "num-sort" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "num-sort" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

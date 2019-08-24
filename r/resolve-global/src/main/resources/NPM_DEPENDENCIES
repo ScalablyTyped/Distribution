@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "resolve-global" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "resolve-global" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

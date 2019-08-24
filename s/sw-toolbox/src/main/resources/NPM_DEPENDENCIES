@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sw-toolbox" : "3.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sw-toolbox" : "3.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

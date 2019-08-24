@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "foundation-sites"
-version := "6.5.3-800630"
+version := "6.5.3-894603"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__sheet"
-version := "0.9.3-123606"
+version := "0.9.3-fc331f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

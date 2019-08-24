@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "poly2tri"
-version := "1.5.0-249f99"
+version := "1.5.0-ffb669"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xstate" : "4.6.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xstate" : "4.6.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

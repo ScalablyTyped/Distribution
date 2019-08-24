@@ -18,7 +18,7 @@ trait StartTranscriptionJobRequest extends js.Object {
     */
   var MediaFormat: typings.awsDashSdk.clientsTranscribeserviceMod.MediaFormat
   /**
-    * The sample rate, in Hertz, of the audio track in the input media file. 
+    * The sample rate, in Hertz, of the audio track in the input media file.  If you do not specify the media sample rate, Amazon Transcribe determines the sample rate. If you specify the sample rate, it must match the sample rate detected by Amazon Transcribe. In most cases, you should leave the MediaSampleRateHertz field blank and let Amazon Transcribe determine the sample rate.
     */
   var MediaSampleRateHertz: js.UndefOr[typings.awsDashSdk.clientsTranscribeserviceMod.MediaSampleRateHertz] = js.undefined
   /**

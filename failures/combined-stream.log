@@ -28,8 +28,8 @@
 [warn ] Phase2ToScalaJs.scala:43 Processing combined-stream [id => combined-stream, phase => scala.js] 
 [info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => combined-stream, phase => scala.js, this => Name(typings) / Name(combinedDashStream) / Name(combinedDashStreamMod) / Name(CombinedStream)] 
 [debug] PhaseRunner.scala:84 Success [id => combined-stream, phase => scala.js] 
-[warn ] Phase3Compile.scala:211 Building combined-stream... [id => combined-stream, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/combinedDashStream/combinedDashStreamMod/package.scala:13:73
+[warn ] Phase3Compile.scala:214 Building combined-stream... [id => combined-stream, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/combinedDashStream/combinedDashStreamMod/package.scala:13:73
 [E]      illegal cyclic reference involving type Appendable
 [E]      L13:   type NextFunction = js.Function1[/* next */ js.Function1[/* stream */ Appendable, js.Any], js.Any]
 [E]                                                                                   ^

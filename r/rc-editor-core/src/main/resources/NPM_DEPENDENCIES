@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-editor-core" : "0.8.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-editor-core" : "0.8.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typestub-ipfs"
-version := "0.23.14-06e138"
+version := "0.23.14-b166ca"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

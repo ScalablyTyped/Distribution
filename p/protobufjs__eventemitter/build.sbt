@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protobufjs__eventemitter"
-version := "1.1.0-123645"
+version := "1.1.0-5429b5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

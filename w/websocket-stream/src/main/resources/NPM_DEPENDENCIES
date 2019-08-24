@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "websocket-stream" : "5.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "websocket-stream" : "5.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

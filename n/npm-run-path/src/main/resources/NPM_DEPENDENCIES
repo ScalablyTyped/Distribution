@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "npm-run-path" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "npm-run-path" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

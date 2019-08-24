@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "twilio-transport" : "0.3.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "twilio-transport" : "0.3.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

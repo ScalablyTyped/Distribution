@@ -5,6 +5,7 @@ import typings.graphql.Anon_ExtensionASTNodesKey
 import typings.graphql.languageAstMod.UnionTypeDefinitionNode
 import typings.graphql.languageAstMod.UnionTypeExtensionNode
 import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +23,7 @@ class GraphQLUnionType protected ()
   var astNode: Maybe[UnionTypeDefinitionNode] = js.native
   var description: Maybe[String] = js.native
   var extensionASTNodes: Maybe[js.Array[UnionTypeExtensionNode]] = js.native
+  var extensions: Maybe[Record[String, _]] = js.native
   var name: String = js.native
   var resolveType: Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]] = js.native
   def getTypes(): js.Array[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native

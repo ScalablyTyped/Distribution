@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mrmlnc__readdir-enhanced"
-version := "2.2.1-042ef3"
+version := "2.2.1-cb1fcf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

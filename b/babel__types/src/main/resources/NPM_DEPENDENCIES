@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@babel/types" : "7.5.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@babel/types" : "7.5.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

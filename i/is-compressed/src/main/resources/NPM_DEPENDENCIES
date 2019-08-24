@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-compressed" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-compressed" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

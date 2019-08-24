@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fs-extra-p"
-version := "8.1.0-b933a9"
+version := "8.1.0-391314"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "active-win" : "5.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "active-win" : "5.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

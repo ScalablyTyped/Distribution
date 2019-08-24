@@ -1155,6 +1155,7 @@ object ^ extends js.Object {
   def isElementTabbable(element: HTMLElement, checkTabIndex: Boolean): Boolean = js.native
   def isElementVisible(): Boolean = js.native
   def isElementVisible(element: HTMLElement): Boolean = js.native
+  def isIE11(): Boolean = js.native
   def isIOS(): Boolean = js.native
   def isMac(): Boolean = js.native
   def isMac(reset: Boolean): Boolean = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-dependency-injection"
-version := "1.4.2-713ab3"
+version := "1.4.2-858c2f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

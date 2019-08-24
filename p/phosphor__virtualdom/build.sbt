@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__virtualdom"
-version := "1.2.0-bcf5a1"
+version := "1.2.0-fea349"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

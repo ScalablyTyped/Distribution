@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MetaData extends js.Object {
+trait MetaData extends ImageHead {
   var exif: js.UndefOr[Exif] = js.undefined
-  var imageHead: js.UndefOr[ArrayBuffer | Uint8Array] = js.undefined
   var iptc: js.UndefOr[Iptc] = js.undefined
   var originalHeight: js.UndefOr[Double] = js.undefined
   var originalWidth: js.UndefOr[Double] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grapheme-splitter"
-version := "1.0.4-81b32f"
+version := "1.0.4-099fbf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cli-cursor"
-version := "3.1.0-aa5474"
+version := "3.1.0-14f2bf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

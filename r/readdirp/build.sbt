@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "readdirp"
-version := "3.1.1-50959a"
+version := "3.1.1-4eeebe"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "expo-keep-awake" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "expo-keep-awake" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

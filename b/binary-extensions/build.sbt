@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "binary-extensions"
-version := "2.0.0-13bd79"
+version := "2.0.0-fc600c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

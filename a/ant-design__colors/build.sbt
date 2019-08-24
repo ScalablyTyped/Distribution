@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__colors"
-version := "3.1.0-141d96"
+version := "3.1.0-2abd1f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "move-file"
-version := "1.2.0-4f5ce9"
+version := "1.2.0-5c3e9d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

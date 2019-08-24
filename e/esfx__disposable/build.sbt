@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esfx__disposable"
-version := "1.0.0-pre.13-83cc21"
+version := "1.0.0-pre.13-19cf6c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

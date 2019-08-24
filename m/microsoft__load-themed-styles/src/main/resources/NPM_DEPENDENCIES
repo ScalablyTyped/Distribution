@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@microsoft/load-themed-styles" : "1.9.19"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@microsoft/load-themed-styles" : "1.9.19"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

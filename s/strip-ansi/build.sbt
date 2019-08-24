@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strip-ansi"
-version := "5.2.0-87518b"
+version := "5.2.0-80e3c4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

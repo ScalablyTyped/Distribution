@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esfx__internal-deprecate"
-version := "1.0.0-pre.13-dc639c"
+version := "1.0.0-pre.13-f794ab"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

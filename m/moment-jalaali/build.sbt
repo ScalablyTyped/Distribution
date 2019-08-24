@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "moment-jalaali"
-version := "0.7.0-dt-20190322Z-c951eb"
+version := "0.7.0-dt-20190322Z-4d2ed2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "moment" % "2.24.0-e628d3",
+  "org.scalablytyped" %%% "moment" % "2.24.0-92164a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-glob" : "3.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-glob" : "3.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

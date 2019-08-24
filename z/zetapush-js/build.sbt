@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zetapush-js"
-version := "3.4.0-d1c7cf"
+version := "3.4.0-7b29ac"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

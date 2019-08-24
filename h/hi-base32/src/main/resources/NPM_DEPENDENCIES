@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hi-base32" : "0.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hi-base32" : "0.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

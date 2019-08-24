@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "spectacle" : "5.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "spectacle" : "5.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

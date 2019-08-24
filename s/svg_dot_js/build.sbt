@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg_dot_js"
-version := "2.7.1-d755b0"
+version := "2.7.1-84890c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

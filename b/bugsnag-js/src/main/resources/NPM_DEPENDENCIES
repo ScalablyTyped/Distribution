@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bugsnag-js" : "4.7.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bugsnag-js" : "4.7.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

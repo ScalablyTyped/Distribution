@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "intl-locales-supported" : "1.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "intl-locales-supported" : "1.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

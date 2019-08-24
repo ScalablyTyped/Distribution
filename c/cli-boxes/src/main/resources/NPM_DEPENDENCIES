@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cli-boxes" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cli-boxes" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

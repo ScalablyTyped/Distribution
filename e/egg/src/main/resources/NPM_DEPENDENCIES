@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "egg" : "2.23.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "egg" : "2.23.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

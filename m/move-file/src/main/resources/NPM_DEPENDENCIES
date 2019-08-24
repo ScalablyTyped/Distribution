@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "move-file" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "move-file" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xpath"
-version := "0.0.27-64e924"
+version := "0.0.27-59c9e1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gtoken"
-version := "3.0.2-c46eab"
+version := "3.0.2-9aed3b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -3,6 +3,7 @@ package typings.stripe.stripeMod.cardsNs
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IStripeSource
 import typings.stripe.stripeMod.accountsNs.IAccount
+import typings.stripe.stripeMod.accountsNs.IExternalAccount
 import typings.stripe.stripeMod.customersNs.ICustomer
 import typings.stripe.stripeMod.recipientsNs.IRecipient
 import typings.stripe.stripeStrings.Discover
@@ -33,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 trait ICard
   extends ICardHash
+     with IExternalAccount
      with IStripeSource {
   /**
     * The account this card belongs to. This attribute will not be in the

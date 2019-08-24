@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@bang88/react-native-drawer-layout" : "2.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@bang88/react-native-drawer-layout" : "2.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

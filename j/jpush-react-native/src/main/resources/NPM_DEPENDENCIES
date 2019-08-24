@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jpush-react-native" : "2.5.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jpush-react-native" : "2.5.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

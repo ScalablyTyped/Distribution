@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-ace" : "7.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-ace" : "7.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

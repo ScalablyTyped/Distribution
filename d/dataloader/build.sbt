@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dataloader"
-version := "1.4.0-18c3bd"
+version := "1.4.0-731520"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "loglevel" : "1.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "loglevel" : "1.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-google-analytics-bridge"
-version := "7.1.0-abd0c0"
+version := "7.1.0-101d41"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

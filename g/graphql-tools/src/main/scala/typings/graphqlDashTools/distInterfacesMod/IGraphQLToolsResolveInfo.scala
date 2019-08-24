@@ -1,13 +1,13 @@
 package typings.graphqlDashTools.distInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.jsutilsPathMod.Path
 import typings.graphql.languageAstMod.FieldNode
 import typings.graphql.languageAstMod.FragmentDefinitionNode
 import typings.graphql.languageAstMod.OperationDefinitionNode
 import typings.graphql.typeDefinitionMod.GraphQLObjectType
 import typings.graphql.typeDefinitionMod.GraphQLOutputType
 import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-import typings.graphql.typeDefinitionMod.ResponsePath
 import typings.graphql.typeSchemaMod.GraphQLSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ object IGraphQLToolsResolveInfo {
     fragments: StringDictionary[FragmentDefinitionNode],
     operation: OperationDefinitionNode,
     parentType: GraphQLObjectType[_, _, StringDictionary[_]],
-    path: ResponsePath,
+    path: Path,
     returnType: GraphQLOutputType,
     rootValue: js.Any,
     schema: GraphQLSchema,

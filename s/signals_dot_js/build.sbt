@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "signals_dot_js"
-version := "1.0.2-999c37"
+version := "1.0.2-6ad2db"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

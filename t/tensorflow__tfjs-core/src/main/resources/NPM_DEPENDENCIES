@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@tensorflow/tfjs-core" : "1.2.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@tensorflow/tfjs-core" : "1.2.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

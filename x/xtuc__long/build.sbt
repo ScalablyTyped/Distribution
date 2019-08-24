@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xtuc__long"
-version := "4.2.2-53d7e3"
+version := "4.2.2-1c518a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

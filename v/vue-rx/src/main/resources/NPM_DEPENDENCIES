@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vue-rx" : "6.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vue-rx" : "6.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

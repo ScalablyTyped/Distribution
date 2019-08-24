@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language/lexer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val TokenKind: _TokenKind = js.native
   def createLexer[TOptions](source: Source, options: TOptions): Lexer[TOptions] = js.native
-  def getTokenDesc(token: Token): String = js.native
+  def isPunctuatorToken(token: Token): Boolean = js.native
 }
 

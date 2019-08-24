@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg"
-version := "2.23.0-2f38fd"
+version := "2.23.0-3f5d21"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,10 +10,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-8f9eda",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-a81a50",
   "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-89031f",
-  "org.scalablytyped" %%% "egg-cookies" % "2.2.7-272fe0",
-  "org.scalablytyped" %%% "egg-core" % "4.17.3-90628c",
-  "org.scalablytyped" %%% "egg-logger" % "2.4.1-5b3624",
-  "org.scalablytyped" %%% "egg-view" % "2.1.2-90a554",
+  "org.scalablytyped" %%% "egg-cookies" % "2.2.7-394af5",
+  "org.scalablytyped" %%% "egg-core" % "4.17.3-de01da",
+  "org.scalablytyped" %%% "egg-logger" % "2.4.1-04cbe8",
+  "org.scalablytyped" %%% "egg-view" % "2.1.2-b623fe",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-79dfe3",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-3d1b1f",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-2d2be7",
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "urllib" % "2.34.0-a0329d")
+  "org.scalablytyped" %%% "urllib" % "2.34.0-c8625c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

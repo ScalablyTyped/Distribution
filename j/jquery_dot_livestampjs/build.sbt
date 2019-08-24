@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_livestampjs"
-version := "0.0-unknown-dt-20190322Z-474424"
+version := "0.0-unknown-dt-20190322Z-9dded2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "moment" % "2.24.0-e628d3",
+  "org.scalablytyped" %%% "moment" % "2.24.0-92164a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

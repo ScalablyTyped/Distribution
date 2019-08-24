@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ngx-infinite-scroll" : "7.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ngx-infinite-scroll" : "7.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

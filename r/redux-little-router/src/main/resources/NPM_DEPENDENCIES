@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redux-little-router" : "15.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redux-little-router" : "15.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

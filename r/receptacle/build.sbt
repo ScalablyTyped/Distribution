@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "receptacle"
-version := "1.3.2-2ca47e"
+version := "1.3.2-c3090b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

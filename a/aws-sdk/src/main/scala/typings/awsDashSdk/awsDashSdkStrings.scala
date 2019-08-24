@@ -27056,6 +27056,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `ru-RU`
     extends typings.awsDashSdk.clientsPollyMod._LanguageCode
+       with typings.awsDashSdk.clientsTranscribeserviceMod._LanguageCode
   
   @js.native
   sealed trait ruby2DOT5 extends _Runtime
@@ -28112,6 +28113,10 @@ object awsDashSdkStrings {
   @js.native
   sealed trait z1dDOTxlarge
     extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait `zh-CN`
+    extends typings.awsDashSdk.clientsTranscribeserviceMod._LanguageCode
   
   @js.native
   sealed trait `zh-Hans` extends _AnalysisSchemeLanguage
@@ -40656,6 +40661,8 @@ object awsDashSdkStrings {
   def z1dDOTmetal: z1dDOTmetal = "z1d.metal".asInstanceOf[z1dDOTmetal]
   @scala.inline
   def z1dDOTxlarge: z1dDOTxlarge = "z1d.xlarge".asInstanceOf[z1dDOTxlarge]
+  @scala.inline
+  def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
   @scala.inline
   def `zh-Hans`: `zh-Hans` = "zh-Hans".asInstanceOf[`zh-Hans`]
   @scala.inline

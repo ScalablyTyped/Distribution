@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-crypto__supports-web-crypto"
-version := "0.1.0-preview.1-44c8f9"
+version := "0.1.0-preview.1-09afac"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

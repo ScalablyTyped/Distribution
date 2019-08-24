@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-saga__delay-p"
-version := "1.0.1-3f16f0"
+version := "1.0.1-6df416"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

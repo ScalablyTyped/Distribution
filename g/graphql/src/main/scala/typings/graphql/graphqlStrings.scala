@@ -3,7 +3,7 @@ package typings.graphql
 import typings.graphql.languageAstMod.OperationTypeNode
 import typings.graphql.languageDirectiveLocationMod.DirectiveLocationEnum
 import typings.graphql.languageKindsMod.KindEnum
-import typings.graphql.languageLexerMod.TokenKindEnum
+import typings.graphql.languageTokenKindMod.TokenKindEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -333,13 +333,73 @@ object graphqlStrings {
   sealed trait `]` extends TokenKindEnum
   
   @js.native
+  sealed trait alias extends js.Object
+  
+  @js.native
+  sealed trait arguments extends js.Object
+  
+  @js.native
+  sealed trait defaultValue extends js.Object
+  
+  @js.native
+  sealed trait definitions extends js.Object
+  
+  @js.native
+  sealed trait description extends js.Object
+  
+  @js.native
+  sealed trait directives extends js.Object
+  
+  @js.native
+  sealed trait fields extends js.Object
+  
+  @js.native
+  sealed trait interfaces extends js.Object
+  
+  @js.native
+  sealed trait locations extends js.Object
+  
+  @js.native
   sealed trait mutation extends OperationTypeNode
+  
+  @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
+  sealed trait operationTypes extends js.Object
   
   @js.native
   sealed trait query extends OperationTypeNode
   
   @js.native
+  sealed trait selectionSet extends js.Object
+  
+  @js.native
+  sealed trait selections extends js.Object
+  
+  @js.native
   sealed trait subscription extends OperationTypeNode
+  
+  @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
+  sealed trait typeCondition extends js.Object
+  
+  @js.native
+  sealed trait types extends js.Object
+  
+  @js.native
+  sealed trait value extends js.Object
+  
+  @js.native
+  sealed trait values extends js.Object
+  
+  @js.native
+  sealed trait variable extends js.Object
+  
+  @js.native
+  sealed trait variableDefinitions extends js.Object
   
   @js.native
   sealed trait `{` extends TokenKindEnum
@@ -565,11 +625,51 @@ object graphqlStrings {
   @scala.inline
   def `]`: `]` = "]".asInstanceOf[`]`]
   @scala.inline
+  def alias: alias = "alias".asInstanceOf[alias]
+  @scala.inline
+  def arguments: arguments = "arguments".asInstanceOf[arguments]
+  @scala.inline
+  def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
+  @scala.inline
+  def definitions: definitions = "definitions".asInstanceOf[definitions]
+  @scala.inline
+  def description: description = "description".asInstanceOf[description]
+  @scala.inline
+  def directives: directives = "directives".asInstanceOf[directives]
+  @scala.inline
+  def fields: fields = "fields".asInstanceOf[fields]
+  @scala.inline
+  def interfaces: interfaces = "interfaces".asInstanceOf[interfaces]
+  @scala.inline
+  def locations: locations = "locations".asInstanceOf[locations]
+  @scala.inline
   def mutation: mutation = "mutation".asInstanceOf[mutation]
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
+  def operationTypes: operationTypes = "operationTypes".asInstanceOf[operationTypes]
   @scala.inline
   def query: query = "query".asInstanceOf[query]
   @scala.inline
+  def selectionSet: selectionSet = "selectionSet".asInstanceOf[selectionSet]
+  @scala.inline
+  def selections: selections = "selections".asInstanceOf[selections]
+  @scala.inline
   def subscription: subscription = "subscription".asInstanceOf[subscription]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
+  def typeCondition: typeCondition = "typeCondition".asInstanceOf[typeCondition]
+  @scala.inline
+  def types: types = "types".asInstanceOf[types]
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  @scala.inline
+  def values: values = "values".asInstanceOf[values]
+  @scala.inline
+  def variable: variable = "variable".asInstanceOf[variable]
+  @scala.inline
+  def variableDefinitions: variableDefinitions = "variableDefinitions".asInstanceOf[variableDefinitions]
   @scala.inline
   def `{`: `{` = "{".asInstanceOf[`{`]
   @scala.inline

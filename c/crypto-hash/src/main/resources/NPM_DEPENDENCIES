@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "crypto-hash" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "crypto-hash" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

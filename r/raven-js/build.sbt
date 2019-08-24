@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "raven-js"
-version := "3.27.2-b39f10"
+version := "3.27.2-94c04c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

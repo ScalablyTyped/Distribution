@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-url-superb" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-url-superb" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

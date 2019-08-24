@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "eslint-plugin-react" : "7.14.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "eslint-plugin-react" : "7.14.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

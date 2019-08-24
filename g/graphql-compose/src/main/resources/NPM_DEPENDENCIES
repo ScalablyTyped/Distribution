@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "graphql-compose" : "6.3.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "graphql-compose" : "6.3.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

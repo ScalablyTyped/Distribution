@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "resolve-from" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "resolve-from" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

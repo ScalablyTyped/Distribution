@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tensorflow" : "0.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tensorflow" : "0.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

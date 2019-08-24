@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spex"
-version := "2.2.0-494e51"
+version := "2.2.0-62c9c8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

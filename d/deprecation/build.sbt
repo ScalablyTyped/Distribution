@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deprecation"
-version := "2.3.1-65be90"
+version := "2.3.1-ea9769"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

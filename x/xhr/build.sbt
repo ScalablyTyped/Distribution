@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xhr"
-version := "2.5.0-5ac2c0"
+version := "2.5.0-f626be"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

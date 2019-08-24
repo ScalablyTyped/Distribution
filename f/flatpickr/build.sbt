@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flatpickr"
-version := "4.6.2-750f1c"
+version := "4.6.2-2c7012"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

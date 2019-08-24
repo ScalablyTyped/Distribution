@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ant-design/colors" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ant-design/colors" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

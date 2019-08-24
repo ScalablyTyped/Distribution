@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "meteor-typings" : "1.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "meteor-typings" : "1.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

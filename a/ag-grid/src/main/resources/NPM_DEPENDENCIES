@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ag-grid" : "18.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ag-grid" : "18.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

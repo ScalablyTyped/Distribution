@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-globalization" : "1.11.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-globalization" : "1.11.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

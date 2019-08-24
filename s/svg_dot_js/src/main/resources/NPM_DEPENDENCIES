@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "svg.js" : "2.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "svg.js" : "2.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

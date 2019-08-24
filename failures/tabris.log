@@ -549,8 +549,8 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(data, source, ports, origin, initMessageEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(MessageEventCls)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(total, loaded, lengthComputable, initProgressEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(typings) / Name(tabris) / Name(ProgressEventCls)] 
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => scala.js] 
-[warn ] Phase3Compile.scala:211 Building tabris... [id => tabris, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E65] src/main/scala/typings/tabris/tabrisMod/package.scala:60:8
+[warn ] Phase3Compile.scala:214 Building tabris... [id => tabris, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E65] src/main/scala/typings/tabris/tabrisMod/package.scala:60:8
 [E]       cyclic aliasing or subtyping involving type Omit
 [E]       L60:   type JSXAttributes[T /* <: Anon_JsxAttributes */, U] = (Properties[U, Omit[U, set]]) with ListenersMap[U] with JSXShorthands[U]
 [E]                   ^

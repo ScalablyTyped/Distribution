@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "autobind-decorator" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "autobind-decorator" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dom-loaded" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dom-loaded" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

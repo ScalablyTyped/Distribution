@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "nano" : "8.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "nano" : "8.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

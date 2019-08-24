@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dnd-core" : "9.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dnd-core" : "9.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

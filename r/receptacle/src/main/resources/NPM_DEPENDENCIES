@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "receptacle" : "1.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "receptacle" : "1.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

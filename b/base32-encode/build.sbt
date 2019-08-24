@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "base32-encode"
-version := "1.1.1-b0c71f"
+version := "1.1.1-53a888"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lambda-phi" : "1.0.29"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lambda-phi" : "1.0.29"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

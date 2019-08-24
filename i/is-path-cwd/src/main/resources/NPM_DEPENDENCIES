@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-path-cwd" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-path-cwd" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

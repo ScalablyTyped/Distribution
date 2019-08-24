@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-min-delay"
-version := "3.1.0-6de0d4"
+version := "3.1.0-eb5803"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

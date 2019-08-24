@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "socks"
-version := "2.3.2-7549d5"
+version := "2.3.2-5cca1e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

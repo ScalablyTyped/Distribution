@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-linear-gradient" : "2.5.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-linear-gradient" : "2.5.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@phosphor/collections" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@phosphor/collections" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

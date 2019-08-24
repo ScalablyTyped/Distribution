@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-uri-escape"
-version := "0.1.0-preview.1-ec5ad9"
+version := "0.1.0-preview.1-21a62f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

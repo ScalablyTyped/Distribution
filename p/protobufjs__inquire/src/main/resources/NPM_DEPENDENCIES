@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@protobufjs/inquire" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@protobufjs/inquire" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

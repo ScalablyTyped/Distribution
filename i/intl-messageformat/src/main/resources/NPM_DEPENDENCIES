@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "intl-messageformat" : "5.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "intl-messageformat" : "5.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

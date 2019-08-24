@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fullcalendar" : "3.10.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fullcalendar" : "3.10.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

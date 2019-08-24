@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "redux-persist-transform-filter"
-version := "0.0-dt-20181017Z-84a284"
+version := "0.0-dt-20181017Z-fe30b3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
-  "org.scalablytyped" %%% "redux" % "4.0.4-1adc8c",
-  "org.scalablytyped" %%% "redux-persist" % "5.10.0-2df000",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-847c1a",
+  "org.scalablytyped" %%% "redux" % "4.0.4-64bc3e",
+  "org.scalablytyped" %%% "redux-persist" % "5.10.0-f38e19",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redbox-react" : "1.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redbox-react" : "1.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

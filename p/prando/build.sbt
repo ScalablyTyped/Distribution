@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prando"
-version := "5.1.1-be483b"
+version := "5.1.1-82fb12"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pulumi/aws" : "0.18.27"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pulumi/aws" : "0.18.27"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

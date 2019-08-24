@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "graphql-playground-middleware-express" : "1.7.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "graphql-playground-middleware-express" : "1.7.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/shared-ini-file-loader" : "0.1.0-preview.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/shared-ini-file-loader" : "0.1.0-preview.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

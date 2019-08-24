@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "filenamify" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "filenamify" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

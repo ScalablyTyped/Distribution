@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "winston-transport" : "4.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "winston-transport" : "4.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

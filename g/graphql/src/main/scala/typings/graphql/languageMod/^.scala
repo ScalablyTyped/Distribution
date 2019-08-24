@@ -25,6 +25,7 @@ import typings.graphql.languageAstMod.InterfaceTypeDefinitionNode
 import typings.graphql.languageAstMod.InterfaceTypeExtensionNode
 import typings.graphql.languageAstMod.ListTypeNode
 import typings.graphql.languageAstMod.ListValueNode
+import typings.graphql.languageAstMod.Location
 import typings.graphql.languageAstMod.NameNode
 import typings.graphql.languageAstMod.NamedTypeNode
 import typings.graphql.languageAstMod.NonNullTypeNode
@@ -50,9 +51,9 @@ import typings.graphql.languageAstMod.VariableNode
 import typings.graphql.languageDirectiveLocationMod._DirectiveLocation
 import typings.graphql.languageKindsMod._Kind
 import typings.graphql.languageLexerMod.Lexer
-import typings.graphql.languageLexerMod._TokenKind
 import typings.graphql.languageLocationMod.SourceLocation
 import typings.graphql.languageParserMod.ParseOptions
+import typings.graphql.languageTokenKindMod._TokenKind
 import typings.graphql.languageVisitorMod.VisitFn
 import typings.graphql.languageVisitorMod.Visitor
 import typings.graphql.languageVisitorMod.VisitorKeyMap
@@ -65,7 +66,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val BREAK: js.Any = js.native
   val DirectiveLocation: _DirectiveLocation = js.native
   val Kind: _Kind = js.native
   val TokenKind: _TokenKind = js.native
@@ -101,6 +101,8 @@ object ^ extends js.Object {
   def parseValue(source: typings.graphql.languageSourceMod.Source): ValueNode = js.native
   def parseValue(source: typings.graphql.languageSourceMod.Source, options: ParseOptions): ValueNode = js.native
   def print(ast: ASTNode): String = js.native
+  def printLocation(location: Location): String = js.native
+  def printSourceLocation(source: typings.graphql.languageSourceMod.Source, sourceLocation: SourceLocation): String = js.native
   def visit(
     root: ASTNode,
     visitor: Visitor[
@@ -114,7 +116,8 @@ object ^ extends js.Object {
       ASTKindToNode, 
       UnionTypeDefinitionNode | FragmentSpreadNode | OperationDefinitionNode | EnumTypeDefinitionNode | StringValueNode | ArgumentNode | BooleanValueNode | NameNode | FieldDefinitionNode | ObjectTypeDefinitionNode | EnumValueDefinitionNode | FloatValueNode | NullValueNode | DirectiveNode | VariableNode | ScalarTypeExtensionNode | IntValueNode | SchemaExtensionNode | DirectiveDefinitionNode | InputObjectTypeExtensionNode | ScalarTypeDefinitionNode | UnionTypeExtensionNode | FragmentDefinitionNode | SelectionSetNode | NamedTypeNode | VariableDefinitionNode | EnumTypeExtensionNode | ObjectValueNode | OperationTypeDefinitionNode | EnumValueNode | ObjectFieldNode | FieldNode | InputObjectTypeDefinitionNode | InputValueDefinitionNode | NonNullTypeNode | InlineFragmentNode | InterfaceTypeDefinitionNode | ListTypeNode | InterfaceTypeExtensionNode | ListValueNode | SchemaDefinitionNode | ObjectTypeExtensionNode | DocumentNode
     ],
-    visitorKeys: VisitorKeyMap[ASTKindToNode]
+     // default: QueryDocumentKeys
+  visitorKeys: VisitorKeyMap[ASTKindToNode]
   ): js.Any = js.native
   def visitInParallel(
     visitors: js.Array[

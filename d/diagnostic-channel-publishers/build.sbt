@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "diagnostic-channel-publishers"
-version := "0.3.3-9f6cf9"
+version := "0.3.3-00540b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "diagnostic-channel" % "0.2.0-d439a2",
+  "org.scalablytyped" %%% "diagnostic-channel" % "0.2.0-ad84f5",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ecdsa-sig-formatter"
-version := "1.0.11-4abdc2"
+version := "1.0.11-3bbd6a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

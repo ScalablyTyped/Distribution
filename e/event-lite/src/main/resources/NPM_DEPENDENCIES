@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "event-lite" : "0.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "event-lite" : "0.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

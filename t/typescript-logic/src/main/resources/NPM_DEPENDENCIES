@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typescript-logic" : "0.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typescript-logic" : "0.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

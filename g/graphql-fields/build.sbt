@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "graphql-fields"
-version := "1.3-dt-20181122Z-4432b4"
+version := "1.3-dt-20190823Z-0b4a55"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190722Z-9b3683",
+  "org.scalablytyped" %%% "graphql" % "14.5.3-be513a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

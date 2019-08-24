@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cycled"
-version := "1.1.0-9a7e6a"
+version := "1.1.0-d5278b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

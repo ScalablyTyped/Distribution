@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueimp-load-image"
-version := "2.23-dt-20190822Z-c99a9b"
+version := "2.23-dt-20190823Z-f7a3b1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

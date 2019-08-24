@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@emotion/serialize" : "0.11.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@emotion/serialize" : "0.11.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

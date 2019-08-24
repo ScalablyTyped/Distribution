@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "jsoneditor-for-react"
-version := "0.0-dt-20180803Z-f9a1a0"
+version := "0.0-dt-20180803Z-f5c40c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20190322Z-669cd9",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-c3fb5c",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "jsoneditor" % "v5.28.2-dt-20190329Z-515aa4",
+  "org.scalablytyped" %%% "ajv" % "6.10.2-ef824f",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
+  "org.scalablytyped" %%% "jsoneditor" % "v5.28.2-dt-20190329Z-82eb5c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-847c1a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

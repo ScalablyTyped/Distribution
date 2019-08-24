@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rrule"
-version := "2.6.2-172692"
+version := "2.6.2-dcc44a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

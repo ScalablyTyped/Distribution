@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-waterfall"
-version := "2.1.0-1976cd"
+version := "2.1.0-bc1ae3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

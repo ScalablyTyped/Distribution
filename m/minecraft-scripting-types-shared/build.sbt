@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "minecraft-scripting-types-shared"
-version := "1.0.0-80f417"
+version := "1.0.0-a7f6da"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-locate"
-version := "4.1.0-1e3d36"
+version := "4.1.0-9fa6d9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

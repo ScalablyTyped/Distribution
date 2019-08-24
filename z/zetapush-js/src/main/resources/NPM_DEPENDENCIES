@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "zetapush-js" : "3.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "zetapush-js" : "3.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

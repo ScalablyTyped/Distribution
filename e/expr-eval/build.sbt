@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expr-eval"
-version := "1.2.3-4ade9d"
+version := "1.2.3-1ce5e0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

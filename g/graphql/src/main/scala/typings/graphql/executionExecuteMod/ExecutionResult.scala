@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExecutionResult[TData] extends js.Object {
-  var data: js.UndefOr[TData] = js.undefined
+  var data: js.UndefOr[TData | Null] = js.undefined
   var errors: js.UndefOr[js.Array[GraphQLError]] = js.undefined
 }
 

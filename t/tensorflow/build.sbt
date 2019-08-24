@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tensorflow"
-version := "0.7.0-74823e"
+version := "0.7.0-952f00"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

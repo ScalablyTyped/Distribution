@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@phosphor/disposable" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@phosphor/disposable" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

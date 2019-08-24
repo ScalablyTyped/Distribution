@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "poly2tri" : "1.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "poly2tri" : "1.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

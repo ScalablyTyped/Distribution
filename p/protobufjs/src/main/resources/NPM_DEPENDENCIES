@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "protobufjs" : "6.8.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "protobufjs" : "6.8.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compressed-extensions"
-version := "2.1.0-0d3e8a"
+version := "2.1.0-741a61"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

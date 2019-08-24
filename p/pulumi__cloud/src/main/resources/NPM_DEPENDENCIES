@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pulumi/cloud" : "0.18.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pulumi/cloud" : "0.18.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

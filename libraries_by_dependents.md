@@ -1378,6 +1378,7 @@
 | 135 | [xmlrpc](./x/xmlrpc) | A pure JavaScript XML-RPC client and server.
 | 134 | [kcors](./k/kcors) | Cross-Origin Resource Sharing(CORS) for koa
 | 134 | [line-reader](./l/line-reader) | Asynchronous, buffered, line-by-line file/stream r
+| 134 | [multipipe](./m/multipipe) | pipe streams with centralized error handling
 | 134 | [rev-hash](./r/rev-hash) | Create a hash for file revving
 | 134 | [scriptjs](./s/scriptjs) | Asyncronous JavaScript loader and dependency manag
 | 134 | [typedoc](./t/typedoc) | Create api documentations for typescript projects.
@@ -1776,6 +1777,7 @@
 | 89 | [pixelmatch](./p/pixelmatch) | The smallest and fastest pixel-level image compari
 | 89 | [react-json-tree](./r/react-json-tree) | React JSON Viewer Component, Extracted from redux-
 | 89 | [terminal-link](./t/terminal-link) | Create clickable links in the terminal
+| 88 | [cacache](./c/cacache) | Fast, fault-tolerant, cross-platform, disk-based, 
 | 88 | [dexie](./d/dexie) | A Minimalistic Wrapper for IndexedDB
 | 88 | [electron-debug](./e/electron-debug) | Adds useful debug features to your Electron app
 | 88 | [exit-hook](./e/exit-hook) | Run some code when the process exits
@@ -2521,6 +2523,7 @@
 | 46 | [alt](./a/alt) | A flux implementation
 | 46 | [fs-cson](./f/fs-cson) | Read and write CSON to the filesystem
 | 46 | [gulp-remember](./g/gulp-remember) | Adds previously seen files back into the stream.
+| 46 | [jest-worker](./j/jest-worker) | Module for executing heavy tasks under forked proc
 | 46 | [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel
 | 46 | [koa-websocket](./k/koa-websocket) | Light wrapper around Koa providing a websocket mid
 | 46 | [p-all](./p/p-all) | Run promise-returning & async functions concurrent
@@ -5266,6 +5269,7 @@
 | 3 | [archive-extensions](./a/archive-extensions) | List of archive file extensions
 | 3 | [array-binarysearch_dot_cl](./a/array-binarysearch_dot_closest) | Get index of closest value in sorted array.
 | 3 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin
+| 3 | [async-stream-generator](./a/async-stream-generator) | Pipe ES6 Async Generators through Node.js Streams
 | 3 | [atlaskit__calendar](./a/atlaskit__calendar) | A React component for displaying a calendar.
 | 3 | [atpl](./a/atpl) | A complete and fast template engine fully compatib
 | 3 | [auto-sni](./a/auto-sni) | Automatically generate tls credentials using letse
@@ -6712,6 +6716,7 @@
 | 0 | [ko_dot_plus](./k/ko_dot_plus) | Awesome extensions to KnockoutJS
 | 0 | [koa-dec-router](./k/koa-dec-router) | An ES6 decorator + class based router, support inh
 | 0 | [koa__router](./k/koa__router) | Router middleware for koa. Provides RESTful resour
+| 0 | [koji-tools](./k/koji-tools) | A library that simplifies adding koji-specific fea
 | 0 | [konami_dot_js](./k/konami_dot_js) | A small bit of JavaScript that recognizes the Kona
 | 0 | [lambda-phi](./l/lambda-phi) | Typescript framework for AWS API Gateway and Lambd
 | 0 | [ldap-filters](./l/ldap-filters) | Library for generating, parsing, and evaluating LD

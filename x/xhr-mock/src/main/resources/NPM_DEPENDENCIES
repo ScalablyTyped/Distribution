@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xhr-mock" : "2.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xhr-mock" : "2.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

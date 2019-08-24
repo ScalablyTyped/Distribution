@@ -14,6 +14,6 @@ object typeScalarsMod extends js.Object {
   val GraphQLInt: GraphQLScalarType = js.native
   val GraphQLString: GraphQLScalarType = js.native
   val specifiedScalarTypes: js.Array[GraphQLScalarType] = js.native
-  def isSpecifiedScalarType(`type`: GraphQLScalarType): Boolean = js.native
+  def isSpecifiedScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ Boolean = js.native
 }
 

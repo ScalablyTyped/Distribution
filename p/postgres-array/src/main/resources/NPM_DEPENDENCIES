@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postgres-array" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postgres-array" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

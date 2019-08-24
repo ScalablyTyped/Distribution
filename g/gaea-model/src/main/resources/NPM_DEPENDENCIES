@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gaea-model" : "1.0.29"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gaea-model" : "1.0.29"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

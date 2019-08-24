@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@xtuc/long" : "4.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@xtuc/long" : "4.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

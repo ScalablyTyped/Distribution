@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "omit.js" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "omit.js" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

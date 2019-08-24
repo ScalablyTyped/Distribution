@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "npm-email"
-version := "3.2.0-dec972"
+version := "3.2.0-73652e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

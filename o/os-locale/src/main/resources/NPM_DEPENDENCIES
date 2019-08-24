@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "os-locale" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "os-locale" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "perfect-scrollbar" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "perfect-scrollbar" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

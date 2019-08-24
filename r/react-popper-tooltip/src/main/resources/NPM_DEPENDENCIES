@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-popper-tooltip" : "2.8.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-popper-tooltip" : "2.8.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

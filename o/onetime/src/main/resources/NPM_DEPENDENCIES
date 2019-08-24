@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "onetime" : "5.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "onetime" : "5.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

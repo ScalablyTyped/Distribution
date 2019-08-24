@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-error-constructor"
-version := "0.1.0-preview.1-d6e191"
+version := "0.1.0-preview.1-d75816"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-efb79e",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-221a74",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

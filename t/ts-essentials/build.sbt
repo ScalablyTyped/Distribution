@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts-essentials"
-version := "1.0.4-714ad8"
+version := "1.0.4-1e345c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

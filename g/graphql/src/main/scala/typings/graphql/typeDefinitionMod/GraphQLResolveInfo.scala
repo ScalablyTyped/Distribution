@@ -1,6 +1,7 @@
 package typings.graphql.typeDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.jsutilsPathMod.Path
 import typings.graphql.languageAstMod.FieldNode
 import typings.graphql.languageAstMod.FragmentDefinitionNode
 import typings.graphql.languageAstMod.OperationDefinitionNode
@@ -15,7 +16,7 @@ trait GraphQLResolveInfo extends js.Object {
   val fragments: StringDictionary[FragmentDefinitionNode]
   val operation: OperationDefinitionNode
   val parentType: GraphQLObjectType[_, _, StringDictionary[_]]
-  val path: ResponsePath
+  val path: Path
   val returnType: GraphQLOutputType
   val rootValue: js.Any
   val schema: GraphQLSchema
@@ -30,7 +31,7 @@ object GraphQLResolveInfo {
     fragments: StringDictionary[FragmentDefinitionNode],
     operation: OperationDefinitionNode,
     parentType: GraphQLObjectType[_, _, StringDictionary[_]],
-    path: ResponsePath,
+    path: Path,
     returnType: GraphQLOutputType,
     rootValue: js.Any,
     schema: GraphQLSchema,

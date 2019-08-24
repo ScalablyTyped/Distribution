@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tcomb" : "3.2.29"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tcomb" : "3.2.29"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

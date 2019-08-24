@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "temp-write" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "temp-write" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

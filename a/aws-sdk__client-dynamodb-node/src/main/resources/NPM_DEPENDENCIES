@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/client-dynamodb-node" : "0.1.0-preview.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/client-dynamodb-node" : "0.1.0-preview.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "swagger-parser" : "8.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "swagger-parser" : "8.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

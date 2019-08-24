@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tiny-emitter"
-version := "2.1.0-a61420"
+version := "2.1.0-4c53d7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -53,6 +53,20 @@ trait ScrollViewProps
     */
   var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   /**
+    * When true, the scroll view stops on the next index (in relation to scroll position at release)
+    * regardless of how fast the gesture is. This can be used for horizontal pagination when the page
+    * is less than the width of the ScrollView. The default value is false.
+    */
+  var disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined
+  /**
+    * When true, the default JS pan responder on the ScrollView is disabled, and full control over
+    * touches inside the ScrollView is left to its child components. This is particularly useful
+    * if `snapToInterval` is enabled, since it does not follow typical touch patterns. Do not use
+    * this on regular ScrollView use cases without `snapToInterval` as it may cause unexpected
+    * touches to occur while scrolling. The default value is false.
+    */
+  var disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined
+  /**
     * When true the scroll view's children are arranged horizontally in a row
     * instead of vertically in a column. The default value is false.
     */
@@ -196,6 +210,8 @@ object ScrollViewProps {
     contentOffset: PointPropType = null,
     decelerationRate: fast | normal | Double = null,
     directionalLockEnabled: js.UndefOr[Boolean] = js.undefined,
+    disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined,
+    disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined,
     endFillColor: String = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
@@ -297,6 +313,8 @@ object ScrollViewProps {
     if (contentOffset != null) __obj.updateDynamic("contentOffset")(contentOffset)
     if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
     if (!js.isUndefined(directionalLockEnabled)) __obj.updateDynamic("directionalLockEnabled")(directionalLockEnabled)
+    if (!js.isUndefined(disableIntervalMomentum)) __obj.updateDynamic("disableIntervalMomentum")(disableIntervalMomentum)
+    if (!js.isUndefined(disableScrollViewPanResponder)) __obj.updateDynamic("disableScrollViewPanResponder")(disableScrollViewPanResponder)
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor)
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)

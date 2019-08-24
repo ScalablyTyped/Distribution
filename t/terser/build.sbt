@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "terser"
-version := "4.2.0-1016cb"
+version := "4.2.0-5dc158"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-20fa05",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-04c49c",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

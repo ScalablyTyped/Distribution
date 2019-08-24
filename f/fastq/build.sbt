@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastq"
-version := "1.6.0-bd10b2"
+version := "1.6.0-57c967"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

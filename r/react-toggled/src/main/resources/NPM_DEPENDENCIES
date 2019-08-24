@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-toggled" : "1.2.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-toggled" : "1.2.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

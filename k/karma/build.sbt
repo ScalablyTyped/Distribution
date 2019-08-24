@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "karma"
-version := "3.0-dt-20190524Z-d6b54e"
+version := "3.0-dt-20190524Z-b06b59"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-0c9c39",
-  "org.scalablytyped" %%% "log4js" % "4.5.1-0e4c53",
+  "org.scalablytyped" %%% "log4js" % "4.5.1-256305",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

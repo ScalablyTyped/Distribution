@@ -2,6 +2,7 @@ package typings.graphql.typeDefinitionMod
 
 import typings.graphql.languageAstMod.FieldDefinitionNode
 import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,7 @@ trait GraphQLField[TSource, TContext, TArgs] extends js.Object {
   var astNode: js.UndefOr[Maybe[FieldDefinitionNode]] = js.undefined
   var deprecationReason: js.UndefOr[Maybe[String]] = js.undefined
   var description: Maybe[String]
+  var extensions: Maybe[Record[String, _]]
   var isDeprecated: js.UndefOr[Boolean] = js.undefined
   var name: String
   var resolve: js.UndefOr[GraphQLFieldResolver[TSource, TContext, TArgs]] = js.undefined
@@ -23,6 +25,7 @@ object GraphQLField {
   def apply[TSource, TContext, TArgs](
     args: js.Array[GraphQLArgument],
     description: Maybe[String],
+    extensions: Maybe[Record[String, _]],
     name: String,
     `type`: GraphQLOutputType,
     astNode: Maybe[FieldDefinitionNode] = null,
@@ -31,7 +34,7 @@ object GraphQLField {
     resolve: GraphQLFieldResolver[TSource, TContext, TArgs] = null,
     subscribe: GraphQLFieldResolver[TSource, TContext, TArgs] = null
   ): GraphQLField[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(args = args, description = description.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(args = args, description = description.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], name = name)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])

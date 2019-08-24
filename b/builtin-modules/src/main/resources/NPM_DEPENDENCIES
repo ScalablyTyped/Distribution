@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "builtin-modules" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "builtin-modules" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

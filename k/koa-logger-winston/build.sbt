@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-logger-winston"
-version := "0.0-dt-20180703Z-b931c6"
+version := "0.0-dt-20180703Z-f9bffe"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,8 +19,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "winston" % "3.2.1-9c42f6",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-168339")
+  "org.scalablytyped" %%% "winston" % "3.2.1-889dc5",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-9555f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

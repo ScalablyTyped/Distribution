@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-task-queue"
-version := "1.3.3-4f577e"
+version := "1.3.3-e8b5b4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

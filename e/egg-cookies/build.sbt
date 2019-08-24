@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-cookies"
-version := "2.2.7-272fe0"
+version := "2.2.7-394af5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

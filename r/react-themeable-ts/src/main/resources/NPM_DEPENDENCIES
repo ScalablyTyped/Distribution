@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-themeable-ts" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-themeable-ts" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

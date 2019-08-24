@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sdk-base" : "3.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sdk-base" : "3.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -63,6 +63,9 @@ class GraphQLError protected () extends Error {
   val positions: js.UndefOr[js.Array[Double]] = js.native
   /**
     * The source GraphQL document corresponding to this error.
+    *
+    * Note that if this Error represents more than one node, the source may not
+    * represent nodes after the first node.
     */
   val source: js.UndefOr[Source] = js.native
 }

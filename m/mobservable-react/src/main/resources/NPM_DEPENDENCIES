@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mobservable-react" : "2.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mobservable-react" : "2.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

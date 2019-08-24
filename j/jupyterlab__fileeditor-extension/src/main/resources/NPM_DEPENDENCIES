@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/fileeditor-extension" : "1.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/fileeditor-extension" : "1.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

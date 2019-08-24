@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "artyom_dot_js"
-version := "1.0.6-5fb2db"
+version := "1.0.6-ddfb5d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

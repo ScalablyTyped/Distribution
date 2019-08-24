@@ -3,6 +3,7 @@ package typings.graphql
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.executionExecuteMod.ExecutionResult
 import typings.graphql.languageAstMod.DocumentNode
+import typings.graphql.subscriptionSubscribeMod.SubscriptionArgs
 import typings.graphql.tsutilsMaybeMod.Maybe
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
 import typings.graphql.typeSchemaMod.GraphQLSchema
@@ -42,7 +43,7 @@ object subscriptionMod extends js.Object {
     operationName: Maybe[String],
     fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
   ): js.Promise[AsyncIterable[_] | ExecutionResult[TData]] = js.native
-  def subscribe[TData](args: Anon_ArgName): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
+  def subscribe[TData](args: SubscriptionArgs): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
   def subscribe[TData](
     schema: GraphQLSchema,
     document: DocumentNode,

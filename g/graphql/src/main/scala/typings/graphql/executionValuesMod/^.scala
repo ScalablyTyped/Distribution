@@ -2,6 +2,7 @@ package typings.graphql.executionValuesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.Anon_Directives
+import typings.graphql.Anon_MaxErrors
 import typings.graphql.languageAstMod.DirectiveNode
 import typings.graphql.languageAstMod.FieldNode
 import typings.graphql.languageAstMod.VariableDefinitionNode
@@ -37,7 +38,8 @@ object ^ extends js.Object {
   def getVariableValues(
     schema: GraphQLSchema,
     varDefNodes: js.Array[VariableDefinitionNode],
-    inputs: StringDictionary[js.Any]
+    inputs: StringDictionary[js.Any],
+    options: Anon_MaxErrors
   ): CoercedVariableValues = js.native
 }
 

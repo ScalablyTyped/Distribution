@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rmc-tooltip" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rmc-tooltip" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

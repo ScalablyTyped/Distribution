@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jpeg-js"
-version := "0.3.6-778dc1"
+version := "0.3.6-987b30"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

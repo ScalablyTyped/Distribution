@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "invert-kv"
-version := "3.0.0-6b2053"
+version := "3.0.0-6cd540"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

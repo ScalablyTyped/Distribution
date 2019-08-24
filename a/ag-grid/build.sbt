@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ag-grid"
-version := "18.1.2-e47d45"
+version := "18.1.2-57a6ca"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

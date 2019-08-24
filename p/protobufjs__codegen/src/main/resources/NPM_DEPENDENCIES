@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@protobufjs/codegen" : "2.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@protobufjs/codegen" : "2.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

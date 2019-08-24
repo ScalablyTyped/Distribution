@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "email-addresses" : "3.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "email-addresses" : "3.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

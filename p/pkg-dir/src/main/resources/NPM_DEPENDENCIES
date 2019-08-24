@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pkg-dir" : "4.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pkg-dir" : "4.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

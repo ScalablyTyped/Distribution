@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "array-tree-filter" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "array-tree-filter" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

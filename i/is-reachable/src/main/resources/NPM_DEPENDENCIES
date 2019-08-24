@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-reachable" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-reachable" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

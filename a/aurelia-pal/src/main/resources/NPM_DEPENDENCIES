@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "aurelia-pal" : "1.8.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "aurelia-pal" : "1.8.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

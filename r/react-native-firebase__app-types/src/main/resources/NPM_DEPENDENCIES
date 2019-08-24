@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native-firebase/app-types" : "0.0.26"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native-firebase/app-types" : "0.0.26"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

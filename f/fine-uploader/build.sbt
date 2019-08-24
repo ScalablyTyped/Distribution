@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fine-uploader"
-version := "5.16.2-dcdae9"
+version := "5.16.2-ce4e3f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

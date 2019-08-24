@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/csvviewer" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/csvviewer" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

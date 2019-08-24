@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss" : "7.0.17"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss" : "7.0.17"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

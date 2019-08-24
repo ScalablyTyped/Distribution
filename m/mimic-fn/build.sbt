@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mimic-fn"
-version := "2.1.0-c8f97f"
+version := "2.1.0-d0aa6e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

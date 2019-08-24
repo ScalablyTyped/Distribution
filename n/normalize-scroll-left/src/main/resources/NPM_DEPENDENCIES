@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "normalize-scroll-left" : "0.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "normalize-scroll-left" : "0.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

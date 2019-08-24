@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-data" : "3.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-data" : "3.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "metismenu"
-version := "3.0.4-d8dcd0"
+version := "3.0.4-82f5e0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

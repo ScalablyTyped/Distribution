@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "file-uri-to-path" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "file-uri-to-path" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "opentracing" : "0.14.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "opentracing" : "0.14.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

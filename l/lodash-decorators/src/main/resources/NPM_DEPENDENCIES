@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lodash-decorators" : "6.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lodash-decorators" : "6.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

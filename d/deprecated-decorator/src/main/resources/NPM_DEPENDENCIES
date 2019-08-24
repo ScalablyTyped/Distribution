@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "deprecated-decorator" : "0.1.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "deprecated-decorator" : "0.1.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

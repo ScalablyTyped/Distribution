@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "regexp-tree" : "0.1.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "regexp-tree" : "0.1.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

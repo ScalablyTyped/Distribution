@@ -41,16 +41,6 @@ trait ParseOptions extends js.Object {
     */
   var experimentalFragmentVariables: js.UndefOr[Boolean] = js.undefined
   /**
-    * EXPERIMENTAL:
-    *
-    * If enabled, the parser understands directives on variable definitions:
-    *
-    * query Foo($var: String = "abc" @variable_definition_directive) {
-    *   ...
-    * }
-    */
-  var experimentalVariableDefinitionDirectives: js.UndefOr[Boolean] = js.undefined
-  /**
     * By default, the parser creates AST nodes that know the location
     * in the source that they correspond to. This configuration flag
     * disables that behavior for performance or testing.
@@ -64,14 +54,12 @@ object ParseOptions {
     allowLegacySDLEmptyFields: js.UndefOr[Boolean] = js.undefined,
     allowLegacySDLImplementsInterfaces: js.UndefOr[Boolean] = js.undefined,
     experimentalFragmentVariables: js.UndefOr[Boolean] = js.undefined,
-    experimentalVariableDefinitionDirectives: js.UndefOr[Boolean] = js.undefined,
     noLocation: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowLegacySDLEmptyFields)) __obj.updateDynamic("allowLegacySDLEmptyFields")(allowLegacySDLEmptyFields)
     if (!js.isUndefined(allowLegacySDLImplementsInterfaces)) __obj.updateDynamic("allowLegacySDLImplementsInterfaces")(allowLegacySDLImplementsInterfaces)
     if (!js.isUndefined(experimentalFragmentVariables)) __obj.updateDynamic("experimentalFragmentVariables")(experimentalFragmentVariables)
-    if (!js.isUndefined(experimentalVariableDefinitionDirectives)) __obj.updateDynamic("experimentalVariableDefinitionDirectives")(experimentalVariableDefinitionDirectives)
     if (!js.isUndefined(noLocation)) __obj.updateDynamic("noLocation")(noLocation)
     __obj.asInstanceOf[ParseOptions]
   }

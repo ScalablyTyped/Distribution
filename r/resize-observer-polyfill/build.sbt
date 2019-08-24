@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resize-observer-polyfill"
-version := "1.5.1-0ad8be"
+version := "1.5.1-dbc40d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

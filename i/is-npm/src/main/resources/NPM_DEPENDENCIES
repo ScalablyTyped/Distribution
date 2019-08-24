@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-npm" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-npm" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

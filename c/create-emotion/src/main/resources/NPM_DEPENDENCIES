@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "create-emotion" : "9.2.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "create-emotion" : "9.2.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

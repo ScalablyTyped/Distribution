@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "docker-file-parser"
-version := "1.0.4-e83ef9"
+version := "1.0.4-e80518"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

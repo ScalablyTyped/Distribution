@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-toolbox" : "2.0.0-beta.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-toolbox" : "2.0.0-beta.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

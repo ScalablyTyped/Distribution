@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val GraphQLList: _GraphQLList[GraphQLType] = js.native
   val GraphQLNonNull: _GraphQLNonNull[GraphQLNullableType] = js.native
+  def argsToArgsConfig(args: js.Array[GraphQLArgument]): GraphQLFieldConfigArgumentMap = js.native
   def assertAbstractType(`type`: js.Any): GraphQLAbstractType = js.native
   def assertCompositeType(`type`: js.Any): GraphQLCompositeType = js.native
   def assertEnumType(`type`: js.Any): GraphQLEnumType = js.native

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rmc-trigger" : "1.0.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rmc-trigger" : "1.0.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

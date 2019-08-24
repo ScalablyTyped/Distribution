@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "random-float" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "random-float" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

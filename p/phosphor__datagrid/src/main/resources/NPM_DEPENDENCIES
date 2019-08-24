@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@phosphor/datagrid" : "0.1.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@phosphor/datagrid" : "0.1.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

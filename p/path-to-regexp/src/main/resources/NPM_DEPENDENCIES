@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "path-to-regexp" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "path-to-regexp" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

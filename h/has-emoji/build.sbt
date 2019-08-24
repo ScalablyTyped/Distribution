@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "has-emoji"
-version := "1.1.0-9b4f02"
+version := "1.1.0-76b286"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

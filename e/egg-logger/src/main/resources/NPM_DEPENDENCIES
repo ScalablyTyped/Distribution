@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "egg-logger" : "2.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "egg-logger" : "2.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

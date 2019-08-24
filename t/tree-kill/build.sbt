@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tree-kill"
-version := "1.2.1-4988a9"
+version := "1.2.1-c6f0f5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

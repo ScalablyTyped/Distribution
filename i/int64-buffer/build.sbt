@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "int64-buffer"
-version := "0.1.10-e16a22"
+version := "0.1.10-a1ac07"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

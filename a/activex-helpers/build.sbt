@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-helpers"
-version := "1.0.2-e331fc"
+version := "1.0.2-9076ba"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

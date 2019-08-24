@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "search-params"
-version := "2.1.3-c67c2e"
+version := "2.1.3-818cb0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

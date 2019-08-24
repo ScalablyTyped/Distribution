@@ -45,6 +45,7 @@ import typings.stripe.stripeMod.creditNotesNs.ICreditNoteUpdateOptions
 import typings.stripe.stripeMod.customersNs.IBankAccountSourceListOptions
 import typings.stripe.stripeMod.customersNs.ICardSourceListOptions
 import typings.stripe.stripeMod.customersNs.ICustomer
+import typings.stripe.stripeMod.customersNs.ICustomerBankAccountSourceCreationOptions
 import typings.stripe.stripeMod.customersNs.ICustomerCardSourceCreationOptions
 import typings.stripe.stripeMod.customersNs.ICustomerCreationOptions
 import typings.stripe.stripeMod.customersNs.ICustomerListOptions
@@ -1321,6 +1322,29 @@ object resourcesNs extends js.Object {
       data: Anon_CardICardSourceCreationOptionsExtended,
       response: IResponseFn[typings.stripe.stripeMod.cardsNs.ICard]
     ): js.Promise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
+    def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions): js.Promise[typings.stripe.stripeMod.bankAccountsNs.IBankAccount] = js.native
+    /**
+      * When adding a bank account to a customer, the parameter name is source. When
+      * adding to an account, the parameter name is external_account. The
+      * value can either be a token, like the ones returned by our Stripe.js, or a
+      * dictionary containing a user’s bank account details.
+      *
+      * @returns Returns the bank account object.
+      *
+      * @param customerId The customer ID to which to add the bank account.
+      */
+    def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.bankAccountsNs.IBankAccount] = js.native
+    def createSource(
+      customerId: String,
+      data: ICustomerBankAccountSourceCreationOptions,
+      options: HeaderOptions,
+      response: IResponseFn[typings.stripe.stripeMod.bankAccountsNs.IBankAccount]
+    ): js.Promise[typings.stripe.stripeMod.bankAccountsNs.IBankAccount] = js.native
+    def createSource(
+      customerId: String,
+      data: ICustomerBankAccountSourceCreationOptions,
+      response: IResponseFn[typings.stripe.stripeMod.bankAccountsNs.IBankAccount]
+    ): js.Promise[typings.stripe.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def createSource(customerId: String, data: ICustomerCardSourceCreationOptions): js.Promise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     /**
       * When adding a card to a customer, the parameter name is source. When
@@ -1347,15 +1371,15 @@ object resourcesNs extends js.Object {
     ): js.Promise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     def createSource(customerId: String, data: ICustomerSourceCreationOptions): js.Promise[IStripeSource] = js.native
     /**
-      * When adding a card to a customer, the parameter name is source. When
+      * When adding a card or bank account to a customer, the parameter name is source. When
       * adding to an account, the parameter name is external_account. The
       * value can either be a token, like the ones returned by our Stripe.js, or a
-      * dictionary containing a user’s credit card details.
+      * dictionary containing a user’s credit card or bank account details.
       * Stripe will automatically validate the card.
       *
       * @returns Returns the card or bank account object.
       *
-      * @param customerId The customer ID to which to add the card.
+      * @param customerId The customer ID to which to add the card or bank account.
       */
     def createSource(customerId: String, data: ICustomerSourceCreationOptions, options: HeaderOptions): js.Promise[IStripeSource] = js.native
     def createSource(

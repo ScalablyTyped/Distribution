@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-multi-ref"
-version := "1.0.0-736383"
+version := "1.0.0-da22a0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

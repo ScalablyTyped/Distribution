@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "primereact" : "3.1.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "primereact" : "3.1.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

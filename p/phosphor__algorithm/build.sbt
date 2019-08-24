@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__algorithm"
-version := "1.2.0-d56d5f"
+version := "1.2.0-969f70"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

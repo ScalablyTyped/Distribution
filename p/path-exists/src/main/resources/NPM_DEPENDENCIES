@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "path-exists" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "path-exists" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

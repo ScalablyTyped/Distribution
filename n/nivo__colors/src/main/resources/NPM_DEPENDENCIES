@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/colors" : "0.59.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/colors" : "0.59.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

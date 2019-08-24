@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-safe-stringify" : "2.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-safe-stringify" : "2.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

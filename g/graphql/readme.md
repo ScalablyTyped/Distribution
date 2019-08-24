@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql
 
-Typings are for version 14.2
+Typings are for version 14.5.3
 
 ## Library description:
 A Query Language and Runtime which can target any service.
@@ -24,7 +24,7 @@ A Query Language and Runtime which can target any service.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

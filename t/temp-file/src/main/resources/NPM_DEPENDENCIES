@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "temp-file" : "3.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "temp-file" : "3.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

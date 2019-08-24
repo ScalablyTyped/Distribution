@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "istanbul-lib-source-maps"
-version := "1.2-dt-20190425Z-459095"
+version := "1.2-dt-20190425Z-81a0d0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-b7155e",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-20fa05",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-04c49c",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

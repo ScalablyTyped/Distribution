@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-dialogs" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-dialogs" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

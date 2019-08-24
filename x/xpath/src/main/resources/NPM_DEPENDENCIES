@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xpath" : "0.0.27"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xpath" : "0.0.27"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

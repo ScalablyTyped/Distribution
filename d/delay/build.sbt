@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "delay"
-version := "4.3.0-168db5"
+version := "4.3.0-7295b7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

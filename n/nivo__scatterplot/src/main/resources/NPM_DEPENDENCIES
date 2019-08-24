@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/scatterplot" : "0.59.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/scatterplot" : "0.59.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

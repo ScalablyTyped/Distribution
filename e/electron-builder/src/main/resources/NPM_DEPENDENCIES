@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "electron-builder" : "20.44.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "electron-builder" : "20.44.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

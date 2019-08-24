@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tsmonad" : "0.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tsmonad" : "0.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

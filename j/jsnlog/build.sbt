@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsnlog"
-version := "2.29.0-3754fe"
+version := "2.29.0-b0124c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

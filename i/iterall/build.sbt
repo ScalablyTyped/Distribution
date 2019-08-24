@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iterall"
-version := "1.2.2-cf5f4e"
+version := "1.2.2-617ceb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

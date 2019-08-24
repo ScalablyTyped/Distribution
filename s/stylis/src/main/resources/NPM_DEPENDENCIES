@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stylis" : "3.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stylis" : "3.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

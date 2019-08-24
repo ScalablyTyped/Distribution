@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "re-reselect"
-version := "3.4.0-239588"
+version := "3.4.0-643276"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "reselect" % "4.0.0-6a7fcc",
+  "org.scalablytyped" %%% "reselect" % "4.0.0-57830d",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

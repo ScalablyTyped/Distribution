@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__xml-builder"
-version := "0.1.0-preview.1-64e7de"
+version := "0.1.0-preview.1-d5fc5b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

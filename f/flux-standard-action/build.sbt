@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flux-standard-action"
-version := "2.1.1-407d60"
+version := "2.1.1-8f5633"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

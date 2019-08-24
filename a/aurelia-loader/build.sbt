@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-loader"
-version := "1.0.2-33a0bc"
+version := "1.0.2-6a02ea"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blake2s-js"
-version := "1.3.0-26a83a"
+version := "1.3.0-544281"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

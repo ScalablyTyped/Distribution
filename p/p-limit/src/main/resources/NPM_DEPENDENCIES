@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "p-limit" : "2.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "p-limit" : "2.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

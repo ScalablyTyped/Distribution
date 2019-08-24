@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unfetch"
-version := "3.1.2-2d1ccc"
+version := "3.1.2-0999b9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

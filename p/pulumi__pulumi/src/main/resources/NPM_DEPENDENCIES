@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pulumi/pulumi" : "0.17.28"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pulumi/pulumi" : "0.17.28"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

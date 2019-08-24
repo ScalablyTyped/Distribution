@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "egg-cookies" : "2.2.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "egg-cookies" : "2.2.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

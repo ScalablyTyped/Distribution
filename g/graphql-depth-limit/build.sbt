@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-depth-limit"
-version := "1.1-dt-20181016Z-353450"
+version := "1.1-dt-20190823Z-353450"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

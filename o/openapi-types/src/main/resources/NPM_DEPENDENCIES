@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "openapi-types" : "1.3.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "openapi-types" : "1.3.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "symbol-observable" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "symbol-observable" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "clone-regexp" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "clone-regexp" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

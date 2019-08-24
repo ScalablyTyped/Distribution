@@ -259,8 +259,8 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[warn ] Phase3Compile.scala:211 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/dhtmlxgantt/ganttMod.scala:14:8
+[warn ] Phase3Compile.scala:214 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/dhtmlxgantt/ganttMod.scala:14:8
 [E]      ganttMod is already defined as object ganttMod
 [E]      L14: object ganttMod extends TopLevel[GanttEnterprise]
 [E]                  ^

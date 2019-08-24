@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-catch-if"
-version := "2.1.0-4d339a"
+version := "2.1.0-4681f0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

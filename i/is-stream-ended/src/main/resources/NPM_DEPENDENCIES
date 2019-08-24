@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-stream-ended" : "0.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-stream-ended" : "0.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

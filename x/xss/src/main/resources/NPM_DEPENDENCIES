@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xss" : "1.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xss" : "1.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -10,6 +10,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapboxOptions extends js.Object {
+  /**
+    * If  true, the gl context will be created with MSA antialiasing, which can be useful for antialiasing custom layers. 
+    * This is false by default as a performance optimization.
+    */
+  var antialias: js.UndefOr[Boolean] = js.undefined
   /** If true, an attribution control will be added to the map. */
   var attributionControl: js.UndefOr[Boolean] = js.undefined
   var bearing: js.UndefOr[Double] = js.undefined
@@ -152,6 +157,7 @@ object MapboxOptions {
   @scala.inline
   def apply(
     container: String | Element,
+    antialias: js.UndefOr[Boolean] = js.undefined,
     attributionControl: js.UndefOr[Boolean] = js.undefined,
     bearing: Int | Double = null,
     bearingSnap: Int | Double = null,
@@ -190,6 +196,7 @@ object MapboxOptions {
     zoom: Int | Double = null
   ): MapboxOptions = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (bearingSnap != null) __obj.updateDynamic("bearingSnap")(bearingSnap.asInstanceOf[js.Any])

@@ -5,6 +5,7 @@ import typings.graphql.Anon_ExtensionASTNodesFields
 import typings.graphql.languageAstMod.ObjectTypeDefinitionNode
 import typings.graphql.languageAstMod.ObjectTypeExtensionNode
 import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,7 @@ class GraphQLObjectType[TSource, TContext, TArgs] protected () extends js.Object
   var astNode: Maybe[ObjectTypeDefinitionNode] = js.native
   var description: Maybe[String] = js.native
   var extensionASTNodes: Maybe[js.Array[ObjectTypeExtensionNode]] = js.native
+  var extensions: Maybe[Record[String, _]] = js.native
   var isTypeOf: Maybe[GraphQLIsTypeOfFn[TSource, TContext]] = js.native
   var name: String = js.native
   def getFields(): GraphQLFieldMap[_, TContext, TArgs] = js.native

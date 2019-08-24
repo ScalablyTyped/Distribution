@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ethereum-protocol"
-version := "1.0-dt-20180612Z-e54ca9"
+version := "1.0-dt-20180612Z-bd22e1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bignumber_dot_js" % "9.0.0-2a4688",
+  "org.scalablytyped" %%% "bignumber_dot_js" % "9.0.0-ca3dcb",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deprecated-decorator"
-version := "0.1.6-4c0a4d"
+version := "0.1.6-173540"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

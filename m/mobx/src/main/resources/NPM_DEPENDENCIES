@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mobx" : "5.13.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mobx" : "5.13.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-cognito-identity"
-version := "0.1.0-preview.2-cb77fa"
+version := "0.1.0-preview.2-bff7b6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity-browser" % "0.1.0-preview.2-a27d27",
-  "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-08d6ec",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-efb79e",
+  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity-browser" % "0.1.0-preview.2-99d3c3",
+  "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-33ed9e",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-221a74",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

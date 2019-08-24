@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "type-fest"
-version := "0.3.1-1f7713"
+version := "0.3.1-a37b2c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

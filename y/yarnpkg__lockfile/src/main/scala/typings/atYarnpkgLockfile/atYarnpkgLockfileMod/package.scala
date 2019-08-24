@@ -8,5 +8,5 @@ package object atYarnpkgLockfileMod {
   import org.scalablytyped.runtime.StringDictionary
 
   type Dependency = StringDictionary[String]
-  type LockFileObject = StringDictionary[FirstLevelDependency | js.Object]
+  type LockFileObject = StringDictionary[FirstLevelDependency]
 }

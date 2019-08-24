@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-multipart"
-version := "2.7.1-a4cfdf"
+version := "2.7.1-0d5d3c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "svg-pan-zoom" : "3.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "svg-pan-zoom" : "3.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

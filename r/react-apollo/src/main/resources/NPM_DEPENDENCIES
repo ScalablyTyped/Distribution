@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-apollo" : "2.5.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-apollo" : "2.5.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

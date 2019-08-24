@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stringify-attributes" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stringify-attributes" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tweetnacl" : "0.14.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tweetnacl" : "0.14.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

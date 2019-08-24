@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vscode-languageserver-protocol" : "3.14.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vscode-languageserver-protocol" : "3.14.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

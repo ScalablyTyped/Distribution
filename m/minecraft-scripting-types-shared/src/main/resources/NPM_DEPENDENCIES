@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "minecraft-scripting-types-shared" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "minecraft-scripting-types-shared" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

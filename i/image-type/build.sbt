@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "image-type"
-version := "4.1.0-1dcf2d"
+version := "4.1.0-e89115"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

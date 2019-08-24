@@ -1,5 +1,6 @@
 package typings.nunjucks.nunjucksMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +15,7 @@ class FileSystemLoader () extends Loader {
   def this(searchPaths: js.Array[String], opts: FileSystemLoaderOptions) = this()
   var async: js.UndefOr[Boolean] = js.native
   def getSource(name: String): LoaderSource = js.native
-  def getSource(
-    name: String,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[LoaderSource], Unit]
-  ): Unit = js.native
+  def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
   def init(searchPaths: js.Array[String], opts: js.Any): Unit = js.native
 }
 

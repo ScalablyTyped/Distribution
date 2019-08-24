@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "random-obj-key" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "random-obj-key" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

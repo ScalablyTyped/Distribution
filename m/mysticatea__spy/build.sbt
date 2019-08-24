@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mysticatea__spy"
-version := "0.1.2-a6566a"
+version := "0.1.2-d49710"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

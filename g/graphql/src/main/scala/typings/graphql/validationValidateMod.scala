@@ -2,6 +2,7 @@ package typings.graphql
 
 import typings.graphql.errorMod.GraphQLError
 import typings.graphql.languageAstMod.DocumentNode
+import typings.graphql.tsutilsMaybeMod.Maybe
 import typings.graphql.typeSchemaMod.GraphQLSchema
 import typings.graphql.utilitiesTypeInfoMod.TypeInfo
 import typings.graphql.validationValidationContextMod.SDLValidationRule
@@ -23,9 +24,19 @@ object validationValidateMod extends js.Object {
     rules: js.Array[ValidationRule],
     typeInfo: TypeInfo
   ): js.Array[GraphQLError] = js.native
+  def validate(
+    schema: GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.Array[ValidationRule],
+    typeInfo: TypeInfo,
+    options: Anon_MaxErrors
+  ): js.Array[GraphQLError] = js.native
   def validateSDL(documentAST: DocumentNode): js.Array[GraphQLError] = js.native
-  def validateSDL(documentAST: DocumentNode, schemaToExtend: Null, rules: js.Array[SDLValidationRule]): js.Array[GraphQLError] = js.native
-  def validateSDL(documentAST: DocumentNode, schemaToExtend: GraphQLSchema): js.Array[GraphQLError] = js.native
-  def validateSDL(documentAST: DocumentNode, schemaToExtend: GraphQLSchema, rules: js.Array[SDLValidationRule]): js.Array[GraphQLError] = js.native
+  def validateSDL(documentAST: DocumentNode, schemaToExtend: Maybe[GraphQLSchema]): js.Array[GraphQLError] = js.native
+  def validateSDL(
+    documentAST: DocumentNode,
+    schemaToExtend: Maybe[GraphQLSchema],
+    rules: js.Array[SDLValidationRule]
+  ): js.Array[GraphQLError] = js.native
 }
 

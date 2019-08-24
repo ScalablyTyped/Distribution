@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "antd-mobile-rn" : "2.3.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "antd-mobile-rn" : "2.3.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devcert-san"
-version := "0.3.3-ea11c9"
+version := "0.3.3-9476d5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

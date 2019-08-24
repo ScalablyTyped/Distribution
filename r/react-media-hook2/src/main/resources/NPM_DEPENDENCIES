@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-media-hook2" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-media-hook2" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

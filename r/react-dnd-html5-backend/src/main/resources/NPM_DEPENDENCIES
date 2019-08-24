@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-dnd-html5-backend" : "9.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-dnd-html5-backend" : "9.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

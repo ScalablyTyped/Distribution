@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@octokit/request-error" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@octokit/request-error" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

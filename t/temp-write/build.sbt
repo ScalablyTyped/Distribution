@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "temp-write"
-version := "4.0.0-48c2b6"
+version := "4.0.0-cab1aa"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

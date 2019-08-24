@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__domutils"
-version := "1.1.3-630dd2"
+version := "1.1.3-407373"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "reflect-metadata" : "0.1.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "reflect-metadata" : "0.1.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

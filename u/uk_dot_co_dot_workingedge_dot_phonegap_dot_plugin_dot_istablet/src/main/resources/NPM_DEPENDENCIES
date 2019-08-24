@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "uk.co.workingedge.phonegap.plugin.istablet" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "uk.co.workingedge.phonegap.plugin.istablet" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

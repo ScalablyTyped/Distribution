@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "route-node"
-version := "3.4.2-ce378c"
+version := "3.4.2-263e24"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "path-parser" % "4.2.0-289e8d",
-  "org.scalablytyped" %%% "search-params" % "2.1.3-c67c2e",
+  "org.scalablytyped" %%% "path-parser" % "4.2.0-7a2694",
+  "org.scalablytyped" %%% "search-params" % "2.1.3-818cb0",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

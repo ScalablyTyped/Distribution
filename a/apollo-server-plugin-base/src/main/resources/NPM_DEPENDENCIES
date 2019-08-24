@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-server-plugin-base" : "0.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-server-plugin-base" : "0.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

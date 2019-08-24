@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jodata"
-version := "1.0.13-2fe898"
+version := "1.0.13-49770b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

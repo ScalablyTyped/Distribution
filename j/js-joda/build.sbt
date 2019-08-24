@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-joda"
-version := "1.11.0-3859dc"
+version := "1.11.0-85d8a7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

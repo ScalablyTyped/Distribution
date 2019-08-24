@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rest-io" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rest-io" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

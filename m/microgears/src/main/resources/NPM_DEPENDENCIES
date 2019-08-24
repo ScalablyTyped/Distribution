@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "microgears" : "4.0.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "microgears" : "4.0.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

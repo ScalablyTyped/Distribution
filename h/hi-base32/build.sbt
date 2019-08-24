@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hi-base32"
-version := "0.5.0-fdc829"
+version := "0.5.0-e2365b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

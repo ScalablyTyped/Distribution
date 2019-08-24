@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@mrmlnc/readdir-enhanced" : "2.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@mrmlnc/readdir-enhanced" : "2.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

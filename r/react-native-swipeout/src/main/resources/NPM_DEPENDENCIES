@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-swipeout" : "2.3.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-swipeout" : "2.3.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

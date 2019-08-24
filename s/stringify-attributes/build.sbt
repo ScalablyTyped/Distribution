@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stringify-attributes"
-version := "2.0.0-e7f016"
+version := "2.0.0-2ca960"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

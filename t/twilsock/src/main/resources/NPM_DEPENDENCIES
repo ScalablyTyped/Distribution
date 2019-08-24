@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "twilsock" : "0.5.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "twilsock" : "0.5.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

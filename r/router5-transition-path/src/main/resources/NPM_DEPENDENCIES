@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "router5-transition-path" : "7.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "router5-transition-path" : "7.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

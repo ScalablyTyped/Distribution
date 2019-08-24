@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-absolute-url"
-version := "3.0.1-9906e6"
+version := "3.0.1-c26fd0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

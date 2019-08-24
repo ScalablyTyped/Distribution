@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@protobufjs/aspromise" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@protobufjs/aspromise" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

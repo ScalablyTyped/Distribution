@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redux-devtools-extension" : "2.13.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redux-devtools-extension" : "2.13.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-machine-id" : "1.1.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-machine-id" : "1.1.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

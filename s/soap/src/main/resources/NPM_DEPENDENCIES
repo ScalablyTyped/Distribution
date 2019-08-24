@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "soap" : "0.28.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "soap" : "0.28.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "env-paths" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "env-paths" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

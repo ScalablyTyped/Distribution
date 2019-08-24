@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "universal-router" : "8.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "universal-router" : "8.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

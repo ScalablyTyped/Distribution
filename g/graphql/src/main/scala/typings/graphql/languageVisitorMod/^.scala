@@ -54,7 +54,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language/visitor", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val BREAK: js.Any = js.native
   def getVisitFn(
     visitor: Visitor[
       _, 
@@ -76,7 +75,8 @@ object ^ extends js.Object {
       ASTKindToNode, 
       UnionTypeDefinitionNode | FragmentSpreadNode | OperationDefinitionNode | EnumTypeDefinitionNode | StringValueNode | ArgumentNode | BooleanValueNode | NameNode | FieldDefinitionNode | ObjectTypeDefinitionNode | EnumValueDefinitionNode | FloatValueNode | NullValueNode | DirectiveNode | VariableNode | ScalarTypeExtensionNode | IntValueNode | SchemaExtensionNode | DirectiveDefinitionNode | InputObjectTypeExtensionNode | ScalarTypeDefinitionNode | UnionTypeExtensionNode | FragmentDefinitionNode | SelectionSetNode | NamedTypeNode | VariableDefinitionNode | EnumTypeExtensionNode | ObjectValueNode | OperationTypeDefinitionNode | EnumValueNode | ObjectFieldNode | FieldNode | InputObjectTypeDefinitionNode | InputValueDefinitionNode | NonNullTypeNode | InlineFragmentNode | InterfaceTypeDefinitionNode | ListTypeNode | InterfaceTypeExtensionNode | ListValueNode | SchemaDefinitionNode | ObjectTypeExtensionNode | DocumentNode
     ],
-    visitorKeys: VisitorKeyMap[ASTKindToNode]
+     // default: QueryDocumentKeys
+  visitorKeys: VisitorKeyMap[ASTKindToNode]
   ): js.Any = js.native
   def visitInParallel(
     visitors: js.Array[

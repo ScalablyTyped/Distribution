@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mobile-detect"
-version := "1.4.3-a3dee8"
+version := "1.4.3-70365f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

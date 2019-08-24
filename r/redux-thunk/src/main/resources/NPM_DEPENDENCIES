@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redux-thunk" : "2.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redux-thunk" : "2.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

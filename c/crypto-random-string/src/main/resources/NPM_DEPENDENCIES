@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "crypto-random-string" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "crypto-random-string" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

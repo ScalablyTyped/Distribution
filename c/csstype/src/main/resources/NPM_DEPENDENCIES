@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "csstype" : "2.6.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "csstype" : "2.6.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

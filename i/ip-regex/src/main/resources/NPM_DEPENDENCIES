@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ip-regex" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ip-regex" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@popmotion/easing" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@popmotion/easing" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

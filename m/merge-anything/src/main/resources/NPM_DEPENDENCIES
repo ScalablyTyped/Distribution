@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "merge-anything" : "2.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "merge-anything" : "2.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

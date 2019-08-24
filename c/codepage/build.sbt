@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "codepage"
-version := "1.14.0-b11a3f"
+version := "1.14.0-cd1546"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

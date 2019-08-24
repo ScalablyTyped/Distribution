@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vscode-uri" : "1.0.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vscode-uri" : "1.0.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

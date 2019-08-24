@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-websocket"
-version := "5.0-dt-20190628Z-40a6a5"
+version := "5.0-dt-20190628Z-23fbbf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20190805Z-e0b8b6")
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-a1e22f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

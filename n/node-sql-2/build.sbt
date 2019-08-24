@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-sql-2"
-version := "0.78.0-88029f"
+version := "0.78.0-c358d0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

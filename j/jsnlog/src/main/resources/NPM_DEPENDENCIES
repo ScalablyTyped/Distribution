@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jsnlog" : "2.29.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jsnlog" : "2.29.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stackframe"
-version := "1.0.4-0d7d18"
+version := "1.0.4-2086d1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

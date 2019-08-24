@@ -13,7 +13,9 @@ package object themeDashUiMod {
   import typings.react.reactMod.ComponentState
   import typings.std.Record
   import typings.themeDashUi.Anon_As
+  import typings.themeDashUi.Anon_Background
 
+  type ColorModes = StringDictionary[Anon_Background]
   type ObjectOrArray[T] = js.Array[T] | (StringDictionary[
     T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias theme-ui.theme-ui.ObjectOrArray<T> */ js.Object)
   ])

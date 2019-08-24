@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mem"
-version := "5.1.1-88a58b"
+version := "5.1.1-2868af"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

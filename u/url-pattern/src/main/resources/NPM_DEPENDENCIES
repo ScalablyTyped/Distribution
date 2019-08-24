@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "url-pattern" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "url-pattern" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

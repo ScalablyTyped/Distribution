@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-ui-router-uib-modal"
-version := "0.0.11-7b1573"
+version := "0.0.11-120ba6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

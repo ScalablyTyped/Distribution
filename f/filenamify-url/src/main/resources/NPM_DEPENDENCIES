@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "filenamify-url" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "filenamify-url" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

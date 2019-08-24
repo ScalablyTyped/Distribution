@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "beeper"
-version := "2.0.0-186a5b"
+version := "2.0.0-b8040d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

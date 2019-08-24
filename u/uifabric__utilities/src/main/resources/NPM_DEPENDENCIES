@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@uifabric/utilities" : "7.0.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@uifabric/utilities" : "7.0.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

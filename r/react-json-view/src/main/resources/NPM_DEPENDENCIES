@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-json-view" : "1.19.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-json-view" : "1.19.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

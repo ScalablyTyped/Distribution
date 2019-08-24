@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/performance-types" : "0.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/performance-types" : "0.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

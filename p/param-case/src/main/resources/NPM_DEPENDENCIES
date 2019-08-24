@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "param-case" : "2.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "param-case" : "2.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

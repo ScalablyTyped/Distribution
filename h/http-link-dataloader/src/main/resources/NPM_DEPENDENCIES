@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "http-link-dataloader" : "0.1.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "http-link-dataloader" : "0.1.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

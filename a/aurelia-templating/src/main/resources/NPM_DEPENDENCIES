@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "aurelia-templating" : "1.10.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "aurelia-templating" : "1.10.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

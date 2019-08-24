@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-spinners" : "0.5.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-spinners" : "0.5.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

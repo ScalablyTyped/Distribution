@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "homeworks" : "1.0.50"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "homeworks" : "1.0.50"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "npm-name" : "5.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "npm-name" : "5.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

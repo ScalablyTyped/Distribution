@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pinata-sdk" : "0.1.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pinata-sdk" : "0.1.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "google-auth-library" : "5.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "google-auth-library" : "5.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

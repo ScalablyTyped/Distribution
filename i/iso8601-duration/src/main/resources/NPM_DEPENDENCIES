@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "iso8601-duration" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "iso8601-duration" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

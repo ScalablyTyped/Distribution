@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "firebase" : "6.4.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "firebase" : "6.4.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

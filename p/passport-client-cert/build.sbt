@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-client-cert"
-version := "2.1.0-875622"
+version := "2.1.0-e522a4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

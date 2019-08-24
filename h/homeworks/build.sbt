@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "homeworks"
-version := "1.0.50-9b8a06"
+version := "1.0.50-e51523"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

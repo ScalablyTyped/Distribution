@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fkill"
-version := "6.2.0-804195"
+version := "6.2.0-f0b023"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

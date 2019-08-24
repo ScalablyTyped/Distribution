@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esfx__internal-tag"
-version := "1.0.0-pre.6-a8f488"
+version := "1.0.0-pre.6-ac5e8f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

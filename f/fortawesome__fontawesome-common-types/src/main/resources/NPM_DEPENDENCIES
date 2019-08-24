@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fortawesome/fontawesome-common-types" : "0.2.22"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fortawesome/fontawesome-common-types" : "0.2.22"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

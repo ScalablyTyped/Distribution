@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-pal"
-version := "1.8.2-9e3def"
+version := "1.8.2-9596bc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

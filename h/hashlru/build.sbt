@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hashlru"
-version := "2.3.0-e4fefc"
+version := "2.3.0-6785f6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

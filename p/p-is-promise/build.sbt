@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-is-promise"
-version := "3.0.0-b5a11f"
+version := "3.0.0-6935ba"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

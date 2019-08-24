@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "walkdir" : "0.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "walkdir" : "0.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "data-uri-to-buffer"
-version := "2.0.1-20c8e5"
+version := "2.0.1-300ce1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

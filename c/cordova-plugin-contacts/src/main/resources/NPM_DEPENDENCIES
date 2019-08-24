@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-contacts" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-contacts" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

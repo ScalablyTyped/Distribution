@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-deep-equal" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-deep-equal" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

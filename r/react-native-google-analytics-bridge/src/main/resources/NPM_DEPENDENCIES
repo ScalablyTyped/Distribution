@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-google-analytics-bridge" : "7.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-google-analytics-bridge" : "7.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

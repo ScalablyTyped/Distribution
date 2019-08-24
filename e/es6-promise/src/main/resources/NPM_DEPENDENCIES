@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "es6-promise" : "4.2.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "es6-promise" : "4.2.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

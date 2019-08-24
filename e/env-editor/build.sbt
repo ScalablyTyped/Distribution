@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "env-editor"
-version := "0.4.0-a96b47"
+version := "0.4.0-438cf0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "core-decorators" : "0.20.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "core-decorators" : "0.20.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

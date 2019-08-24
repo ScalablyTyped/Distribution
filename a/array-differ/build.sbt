@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array-differ"
-version := "3.0.0-96e675"
+version := "3.0.0-e8fb8f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

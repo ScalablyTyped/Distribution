@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hibp" : "7.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hibp" : "7.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

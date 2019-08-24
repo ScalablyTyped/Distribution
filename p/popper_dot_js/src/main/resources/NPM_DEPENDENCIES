@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "popper.js" : "1.15.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "popper.js" : "1.15.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

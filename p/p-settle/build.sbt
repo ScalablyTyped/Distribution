@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "p-settle"
-version := "3.1.0-df95b5"
+version := "3.1.0-def5fd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "p-reflect" % "2.1.0-c61793",
+  "org.scalablytyped" %%% "p-reflect" % "2.1.0-7bcc76",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -591,8 +591,8 @@
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF)] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF)] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => scala.js] 
-[warn ] Phase3Compile.scala:211 Building monocle-ts... [id => monocle-ts, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E2] src/main/scala/typings/monocleDashTs/monocleDashTsMod/package.scala:9:67
+[warn ] Phase3Compile.scala:214 Building monocle-ts... [id => monocle-ts, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E2] src/main/scala/typings/monocleDashTs/monocleDashTsMod/package.scala:9:67
 [E]      not found: type A
 [E]      L9:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
 [E]                                                                            ^

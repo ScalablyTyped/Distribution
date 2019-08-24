@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "get-stdin"
-version := "7.0.0-58199a"
+version := "7.0.0-eb2e32"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

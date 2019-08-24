@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tweetnacl"
-version := "0.14.5-a168d3"
+version := "0.14.5-74273c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stable" : "0.1.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stable" : "0.1.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

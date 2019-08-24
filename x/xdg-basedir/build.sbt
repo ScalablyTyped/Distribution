@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xdg-basedir"
-version := "4.0.0-ee5a2d"
+version := "4.0.0-6b672a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

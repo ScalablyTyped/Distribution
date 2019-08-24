@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.typeDefinitionMod.GraphQLEnumType
 import typings.graphql.typeDefinitionMod.GraphQLField
 import typings.graphql.typeDefinitionMod.GraphQLObjectType
+import typings.graphql.typeDefinitionMod.GraphQLType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,7 @@ object typeIntrospectionMod extends js.Object {
   val __Schema: GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   val __Type: GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   val __TypeKind: GraphQLEnumType = js.native
-  val introspectionTypes: js.Array[js.Any] = js.native
+  val introspectionTypes: js.Array[GraphQLType] = js.native
   def isIntrospectionType(`type`: js.Any): Boolean = js.native
   @js.native
   object TypeKind extends js.Object {

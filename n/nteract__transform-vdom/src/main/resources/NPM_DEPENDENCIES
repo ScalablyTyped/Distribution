@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nteract/transform-vdom" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nteract/transform-vdom" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

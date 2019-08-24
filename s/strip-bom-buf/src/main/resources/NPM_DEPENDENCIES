@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "strip-bom-buf" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "strip-bom-buf" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ant-design/icons-react" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ant-design/icons-react" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

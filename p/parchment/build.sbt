@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parchment"
-version := "1.1.4-2f6ed0"
+version := "1.1.4-67857b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unfetch" : "3.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unfetch" : "3.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

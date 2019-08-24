@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "big-integer" : "1.6.44"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "big-integer" : "1.6.44"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

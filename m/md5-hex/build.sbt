@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "md5-hex"
-version := "3.0.1-ec2b46"
+version := "3.0.1-74d5af"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easystarjs"
-version := "0.4.3-e20833"
+version := "0.4.3-e8f705"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

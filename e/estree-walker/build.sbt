@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "estree-walker"
-version := "0.6.1-a5c0cc"
+version := "0.6.1-03a890"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

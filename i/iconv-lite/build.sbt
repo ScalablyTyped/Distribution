@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iconv-lite"
-version := "0.5.0-9e6ce7"
+version := "0.5.0-6ab38c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

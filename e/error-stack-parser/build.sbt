@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "error-stack-parser"
-version := "2.0.3-be9bad"
+version := "2.0.3-4046b1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

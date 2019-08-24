@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-time"
-version := "2.1.0-e8af65"
+version := "2.1.0-8b74de"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

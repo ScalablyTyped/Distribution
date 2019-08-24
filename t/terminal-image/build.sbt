@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "terminal-image"
-version := "0.2.0-58f311"
+version := "0.2.0-912198"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

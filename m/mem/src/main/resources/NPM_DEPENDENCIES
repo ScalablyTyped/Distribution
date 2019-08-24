@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mem" : "5.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mem" : "5.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

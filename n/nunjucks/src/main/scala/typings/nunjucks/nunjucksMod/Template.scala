@@ -12,7 +12,7 @@ class Template protected () extends js.Object {
   def this(src: String, env: Environment, eagerCompile: Boolean) = this()
   def render(): String = js.native
   def render(context: js.Object): String = js.native
-  def render(context: js.Object, callback: js.Function2[/* err */ js.Any, /* res */ String, _]): Unit = js.native
+  def render(context: js.Object, callback: TemplateCallback[String]): Unit = js.native
   @JSName("render")
   def render_Unit(): Unit = js.native
   @JSName("render")

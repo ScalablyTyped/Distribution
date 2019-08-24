@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-osx-sign"
-version := "0.4.11-843832"
+version := "0.4.11-99312d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

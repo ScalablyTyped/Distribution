@@ -19,4 +19,5 @@ package object blueimpDashLoadDashImageMod {
   ]
   type LoadImageOptions = BasicOptions with CanvasOptions with CropOptions with MetaOptions
   type Orientation = Double | Boolean
+  type ParseMetaDataCallback = js.Function1[/* data */ ImageHead, Unit]
 }

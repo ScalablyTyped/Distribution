@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "latest-semver" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "latest-semver" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

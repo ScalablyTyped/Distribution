@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "typescript-compare"
-version := "0.0.2-9999b4"
+version := "0.0.2-2279fc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-9dfbe4")
+  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-0f6b07")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

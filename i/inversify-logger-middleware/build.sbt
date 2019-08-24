@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "inversify-logger-middleware"
-version := "3.1.0-1f3475"
+version := "3.1.0-802d4f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "inversify" % "5.0.1-40243d",
+  "org.scalablytyped" %%% "inversify" % "5.0.1-dd1543",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

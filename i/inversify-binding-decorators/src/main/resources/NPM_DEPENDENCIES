@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "inversify-binding-decorators" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "inversify-binding-decorators" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

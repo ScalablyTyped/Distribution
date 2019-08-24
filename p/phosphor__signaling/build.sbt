@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__signaling"
-version := "1.3.0-315994"
+version := "1.3.0-310d79"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

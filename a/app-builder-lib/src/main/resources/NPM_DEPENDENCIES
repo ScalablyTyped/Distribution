@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "app-builder-lib" : "20.44.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "app-builder-lib" : "20.44.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

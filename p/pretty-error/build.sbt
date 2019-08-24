@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pretty-error"
-version := "2.1.1-4b91a5"
+version := "2.1.1-0c80d2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

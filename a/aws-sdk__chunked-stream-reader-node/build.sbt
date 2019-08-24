@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__chunked-stream-reader-node"
-version := "0.1.0-preview.1-3f2c8c"
+version := "0.1.0-preview.1-5643f9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

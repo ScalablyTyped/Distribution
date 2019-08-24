@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "builder-util-runtime" : "8.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "builder-util-runtime" : "8.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

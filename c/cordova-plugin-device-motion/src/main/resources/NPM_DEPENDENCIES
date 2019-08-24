@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-device-motion" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-device-motion" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

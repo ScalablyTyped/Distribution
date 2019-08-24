@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-device" : "2.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-device" : "2.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

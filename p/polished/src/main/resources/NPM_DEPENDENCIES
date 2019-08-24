@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "polished" : "3.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "polished" : "3.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

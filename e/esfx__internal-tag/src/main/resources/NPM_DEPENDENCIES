@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@esfx/internal-tag" : "1.0.0-pre.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@esfx/internal-tag" : "1.0.0-pre.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

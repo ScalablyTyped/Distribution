@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "printj"
-version := "1.1.2-132c09"
+version := "1.1.2-20b47b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mobservable" : "1.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mobservable" : "1.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

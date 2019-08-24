@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ids" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ids" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

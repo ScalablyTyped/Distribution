@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sugar-core" : "2.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sugar-core" : "2.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

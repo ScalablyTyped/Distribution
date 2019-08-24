@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shebang-regex"
-version := "3.0.0-952422"
+version := "3.0.0-e9ecdd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

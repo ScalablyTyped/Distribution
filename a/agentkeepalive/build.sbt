@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "agentkeepalive"
-version := "4.0.2-569b65"
+version := "4.0.2-1d8757"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

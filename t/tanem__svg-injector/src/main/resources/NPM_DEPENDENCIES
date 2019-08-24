@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@tanem/svg-injector" : "8.0.26"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@tanem/svg-injector" : "8.0.26"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@uirouter/core" : "5.0.23"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@uirouter/core" : "5.0.23"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

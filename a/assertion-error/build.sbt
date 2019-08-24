@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "assertion-error"
-version := "1.1.0-3043b9"
+version := "1.1.0-ee852a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

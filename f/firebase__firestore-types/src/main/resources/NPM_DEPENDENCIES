@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/firestore-types" : "1.4.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/firestore-types" : "1.4.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "proxy-agent"
-version := "3.1.0-6c42ac"
+version := "3.1.0-c5554c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

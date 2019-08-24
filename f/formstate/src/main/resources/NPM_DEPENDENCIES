@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "formstate" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "formstate" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

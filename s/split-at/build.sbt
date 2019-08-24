@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "split-at"
-version := "2.0.0-310157"
+version := "2.0.0-cb0d39"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

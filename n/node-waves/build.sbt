@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-waves"
-version := "0.7.6-844663"
+version := "0.7.6-c45d1f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -46,11 +46,12 @@ object ^ extends js.Object {
   val __Schema: typings.graphql.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   val __Type: typings.graphql.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   val __TypeKind: typings.graphql.typeDefinitionMod.GraphQLEnumType = js.native
-  val introspectionTypes: js.Array[js.Any] = js.native
+  val introspectionTypes: js.Array[GraphQLType] = js.native
   val specifiedDirectives: js.Array[typings.graphql.typeDirectivesMod.GraphQLDirective] = js.native
   val specifiedScalarTypes: js.Array[typings.graphql.typeDefinitionMod.GraphQLScalarType] = js.native
   def assertAbstractType(`type`: js.Any): GraphQLAbstractType = js.native
   def assertCompositeType(`type`: js.Any): GraphQLCompositeType = js.native
+  def assertDirective(directive: js.Any): typings.graphql.typeDirectivesMod.GraphQLDirective = js.native
   def assertEnumType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLEnumType = js.native
   def assertInputObjectType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLInputObjectType = js.native
   def assertInputType(`type`: js.Any): GraphQLInputType = js.native
@@ -63,6 +64,7 @@ object ^ extends js.Object {
   def assertObjectType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLObjectType[_, _, StringDictionary[_]] = js.native
   def assertOutputType(`type`: js.Any): GraphQLOutputType = js.native
   def assertScalarType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLScalarType = js.native
+  def assertSchema(schema: js.Any): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
   def assertType(`type`: js.Any): GraphQLType = js.native
   def assertUnionType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLUnionType = js.native
   def assertValidSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema): Unit = js.native
@@ -96,8 +98,8 @@ object ^ extends js.Object {
   def isRequiredInputField(field: GraphQLInputField): Boolean = js.native
   def isScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ Boolean = js.native
   def isSchema(schema: js.Any): /* is graphql.graphql/type/schema.GraphQLSchema */ Boolean = js.native
-  def isSpecifiedDirective(directive: typings.graphql.typeDirectivesMod.GraphQLDirective): Boolean = js.native
-  def isSpecifiedScalarType(`type`: typings.graphql.typeDefinitionMod.GraphQLScalarType): Boolean = js.native
+  def isSpecifiedDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ Boolean = js.native
+  def isSpecifiedScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ Boolean = js.native
   def isType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLType */ Boolean = js.native
   def isUnionType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLUnionType */ Boolean = js.native
   def isWrappingType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLWrappingType */ Boolean = js.native

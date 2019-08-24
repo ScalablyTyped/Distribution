@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-logger"
-version := "2.4.1-5b3624"
+version := "2.4.1-04cbe8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

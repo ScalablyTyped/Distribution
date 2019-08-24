@@ -429,8 +429,8 @@
 [debug] PhaseRunner.scala:84 Success [id => tablesorter, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing tablesorter [id => tablesorter, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => tablesorter, phase => scala.js] 
-[warn ] Phase3Compile.scala:211 Building tablesorter... [id => tablesorter, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E2] src/main/scala/typings/tablesorter/globalizationGlobalizeSettingsMod/GlobalizeSettings.scala:27:16
+[warn ] Phase3Compile.scala:214 Building tablesorter... [id => tablesorter, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E2] src/main/scala/typings/tablesorter/globalizationGlobalizeSettingsMod/GlobalizeSettings.scala:27:16
 [E]      not found: type ^
 [E]      L27:     Globalize: ^,
 [E]                          ^

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "electron-spellchecker"
-version := "1.1-dt-20190304Z-88c3de"
+version := "1.1-dt-20190304Z-029e05"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "electron" % "5.0.10-50da66",
+  "org.scalablytyped" %%% "electron" % "5.0.10-3cd75a",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ky" : "0.11.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ky" : "0.11.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

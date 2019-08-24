@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "p-queue"
-version := "6.1.1-980969"
+version := "6.1.1-2b5b2b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-ea4c05",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-32acc9",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

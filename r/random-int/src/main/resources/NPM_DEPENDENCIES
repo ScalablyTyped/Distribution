@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "random-int" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "random-int" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

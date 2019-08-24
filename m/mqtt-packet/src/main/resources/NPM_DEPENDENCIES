@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mqtt-packet" : "6.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mqtt-packet" : "6.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

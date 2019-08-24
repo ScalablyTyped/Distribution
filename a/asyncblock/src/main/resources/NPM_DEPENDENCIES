@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "asyncblock" : "2.2.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "asyncblock" : "2.2.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 object defaultNs extends js.Object {
   @js.native
   class Backspace ()
-    extends typings.reactDashTypist.reactDashTypistMod.TreeViewNs.Backspace
+    extends typings.reactDashTypist.reactDashTypistMod.TypistNs.Backspace
   
   @js.native
   class Delay ()
-    extends typings.reactDashTypist.reactDashTypistMod.TreeViewNs.Delay
+    extends typings.reactDashTypist.reactDashTypistMod.TypistNs.Delay
   
 }
 

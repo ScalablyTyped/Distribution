@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor-typings"
-version := "1.4.1-5ab6f5"
+version := "1.4.1-d0f5e3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

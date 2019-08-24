@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-client" : "2.6.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-client" : "2.6.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

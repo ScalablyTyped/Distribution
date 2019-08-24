@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "perfect-scrollbar"
-version := "1.4.0-11f377"
+version := "1.4.0-78937d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

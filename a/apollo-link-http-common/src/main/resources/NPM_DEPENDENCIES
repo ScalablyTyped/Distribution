@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-link-http-common" : "0.2.14"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-link-http-common" : "0.2.14"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

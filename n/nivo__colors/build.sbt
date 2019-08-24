@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__colors"
-version := "0.59.0-258ded"
+version := "0.59.0-38503b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lambda-phi"
-version := "1.0.29-b0bb18"
+version := "1.0.29-e96088"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

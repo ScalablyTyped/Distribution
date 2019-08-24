@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onetime"
-version := "5.1.0-979da2"
+version := "5.1.0-2344a8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

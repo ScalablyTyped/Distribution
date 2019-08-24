@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typescript-event-handler"
-version := "1.0.0-f23c6b"
+version := "1.0.0-aa0896"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,6 +2,7 @@ package typings.stripe.stripeMod.bankAccountsNs
 
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IStripeSource
+import typings.stripe.stripeMod.accountsNs.IExternalAccount
 import typings.stripe.stripeStrings.`new`
 import typings.stripe.stripeStrings.bank_account
 import typings.stripe.stripeStrings.company
@@ -16,6 +17,7 @@ import scala.scalajs.js.annotation._
 
 trait IBankAccount
   extends IBankAccountHash
+     with IExternalAccount
      with IStripeSource {
   var account: js.UndefOr[String] = js.undefined
   /**

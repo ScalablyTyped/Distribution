@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rmc-calendar" : "1.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rmc-calendar" : "1.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

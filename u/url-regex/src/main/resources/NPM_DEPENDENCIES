@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "url-regex" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "url-regex" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

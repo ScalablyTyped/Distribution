@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rfc6902" : "3.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rfc6902" : "3.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

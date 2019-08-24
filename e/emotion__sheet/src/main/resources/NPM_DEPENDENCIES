@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@emotion/sheet" : "0.9.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@emotion/sheet" : "0.9.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

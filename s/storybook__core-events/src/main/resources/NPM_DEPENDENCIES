@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/core-events" : "5.1.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/core-events" : "5.1.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

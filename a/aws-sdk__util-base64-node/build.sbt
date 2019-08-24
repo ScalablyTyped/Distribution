@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-base64-node"
-version := "0.1.0-preview.1-636095"
+version := "0.1.0-preview.1-cc0196"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

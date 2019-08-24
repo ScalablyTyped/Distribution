@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pkcs11js" : "1.0.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pkcs11js" : "1.0.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

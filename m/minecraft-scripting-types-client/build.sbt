@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "minecraft-scripting-types-client"
-version := "1.0.0-02cab4"
+version := "1.0.0-c503e3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "minecraft-scripting-types-shared" % "1.0.0-80f417",
+  "org.scalablytyped" %%% "minecraft-scripting-types-shared" % "1.0.0-a7f6da",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

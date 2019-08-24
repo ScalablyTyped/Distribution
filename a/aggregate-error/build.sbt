@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aggregate-error"
-version := "3.0.0-c940ff"
+version := "3.0.0-a4db1e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

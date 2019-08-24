@@ -350,6 +350,7 @@
 | [async-lock](./a/async-lock) | Lock on asynchronous code | lock, async, concurrency, critical, section, mutex |
 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin | poll, polling, async, setTimeout, setInterval, task |
 | [async-retry](./a/async-retry) | Retrying made simple, easy and async | - |
+| [async-stream-generator](./a/async-stream-generator) | Pipe ES6 Async Generators through Node.js Streams | streams, async, generators, async, iterators, pipe |
 | [async-writer](./a/async-writer) | The async-writer module makes it possible to async | - |
 | [async_dot_nexttick](./a/async_dot_nexttick) | async nexttickmethod as module. | async, async-modularized, nexttick |
 | [asyncblock](./a/asyncblock) | A simple and powerful abstraction of node-fibers | fiber, fibers, coroutine, stop, go, green, red |
@@ -798,6 +799,7 @@
 | [bytebuffer](./b/bytebuffer) | The swiss army knife for binary data in JavaScript | net, array, buffer, arraybuffer, typed array, bytebuffer, json, websocket, webrtc |
 | [bytes](./b/bytes) | Utility to parse a string bytes to bytes and vice- | byte, bytes, utility, parse, parser, convert, converter |
 | [bytewise](./b/bytewise) | Binary serialization which sorts bytewise for arbi | binary, sort, collation, serialization, leveldb, indexeddb |
+| [cacache](./c/cacache) | Fast, fault-tolerant, cross-platform, disk-based,  | cache, caching, content-addressable, sri, sri hash, subresource integrity, cache, storage, store, file store, filesystem, disk cache, disk storage |
 | [cache-manager](./c/cache-manager) | Cache module for Node.js | cache, redis, lru-cache, memory cache, multiple cache |
 | [cacheable-request](./c/cacheable-request) | Wrap native HTTP requests with RFC compliant cache | HTTP, HTTPS, cache, caching, layer, cacheable, RFC 7234, RFC, 7234, compliant |
 | [cached-path-relative](./c/cached-path-relative) | Memoize the results of the path.relative function | - |
@@ -3057,6 +3059,7 @@
 | [jest-specific-snapshot](./j/jest-specific-snapshot) | Jest matcher for multiple snapshot files per test | - |
 | [jest-validate](./j/jest-validate) | Generic configuration validation tool that helps y | - |
 | [jest-when](./j/jest-when) | An extension lib for jest | - |
+| [jest-worker](./j/jest-worker) | Module for executing heavy tasks under forked proc | - |
 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b | JSON, expression, evaluator, parser, target, context, jsep, filter, selector |
 | [jfp](./j/jfp) | A language as a library borrowing concepts from Li | - |
 | [jfs](./j/jfs) | A simple JSON file store | - |
@@ -3556,6 +3559,7 @@
 | [koa2-session-redis](./k/koa2-session-redis) | A simple redis store of koa-session | koa, koa2, session, redis |
 | [koa__cors](./k/koa__cors) | Cross-Origin Resource Sharing(CORS) for koa | cors, koa-cors, Cross-Origin Resource Sharing, @koa/cors, koa, koajs |
 | [koa__router](./k/koa__router) | Router middleware for koa. Provides RESTful resour | koa, middleware, router, route |
+| [koji-tools](./k/koji-tools) | A library that simplifies adding koji-specific fea | koji, devtool |
 | [kolite](./k/kolite) | - | - |
 | [konami_dot_js](./k/konami_dot_js) | A small bit of JavaScript that recognizes the Kona | konami |
 | [kos-core](./k/kos-core) | 基于react-redux的可使用封装 | - |
@@ -4365,6 +4369,7 @@
 | [multi-typeof](./m/multi-typeof) | Check something against an array of types. | check, multi, multiple, test, type, typeof |
 | [multimatch](./m/multimatch) | Extends minimatch.match() with support for multipl | expand, find, glob, globbing, globs, match, matcher, minimatch, pattern, patterns, wildcard |
 | [multiparty](./m/multiparty) | multipart/form-data parser which supports streamin | file, upload, formidable, stream, s3 |
+| [multipipe](./m/multipipe) | pipe streams with centralized error handling | - |
 | [multireducer](./m/multireducer) | A utility to wrap many copies of a single Redux re | react, reactjs, flux, redux, react-redux, multireducer, decorator |
 | [multisort](./m/multisort) | Sort an array using any number of separate, ranked | sort, sorting, multiple, multi, multisort, comparator |
 | [multistream](./m/multistream) | A stream that emits multiple other streams one aft | combine streams, join streams, concat streams, multiple streams, combine, join, concat, multiple, file stream, append, append streams, combiner, joiner |

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redux-localstorage-filter"
-version := "0.1-dt-20180214Z-6c84a5"
+version := "0.1-dt-20180214Z-2156c2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-1adc8c",
-  "org.scalablytyped" %%% "redux-localstorage" % "1.0-dt-20180214Z-e69602",
+  "org.scalablytyped" %%% "redux" % "4.0.4-64bc3e",
+  "org.scalablytyped" %%% "redux-localstorage" % "1.0-dt-20180214Z-12f21f",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

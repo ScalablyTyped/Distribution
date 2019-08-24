@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/mathjax2" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/mathjax2" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

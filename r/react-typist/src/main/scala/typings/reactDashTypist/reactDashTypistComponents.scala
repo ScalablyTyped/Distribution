@@ -1,19 +1,19 @@
 package typings.reactDashTypist
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashTypist.reactDashTypistMod.TreeViewNs.BackSpaceProps
+import typings.reactDashTypist.reactDashTypistMod.TypistNs.BackSpaceProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashTypistComponents extends reactDashTypistProps {
   @scala.inline
-  def Backspace: ComponentType[BackSpaceProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.defaultNs.Backspace].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewNs.BackSpaceProps]]
+  def Backspace: ComponentType[BackSpaceProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.TypistNs.Backspace].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistNs.BackSpaceProps]]
   @scala.inline
-  def Delay: ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewNs.DelayProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.defaultNs.Delay].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewNs.DelayProps]]
+  def Delay: ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistNs.DelayProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.TypistNs.Delay].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistNs.DelayProps]]
   @scala.inline
-  def ReactDashTypist: ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewProps]]
+  def ReactDashTypist: ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistProps]]
   @scala.inline
-  def TreeView: ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.TreeView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TreeViewProps]]
+  def Typist: ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistProps] = js.constructorOf[typings.reactDashTypist.reactDashTypistMod.Typist].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTypist.reactDashTypistMod.TypistProps]]
 }
 

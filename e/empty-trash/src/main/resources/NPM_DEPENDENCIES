@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "empty-trash" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "empty-trash" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gulp-protractor"
-version := "v1.0.0-dt-20190322Z-c7510f"
+version := "v1.0.0-dt-20190322Z-5ef01d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chokidar" % "3.0.2-39000e",
+  "org.scalablytyped" %%% "chokidar" % "3.0.2-a112da",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-216f4d",
   "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-b6b89c",
-  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190405Z-f66bd7",
+  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190405Z-c44f31",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-c1e405",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",

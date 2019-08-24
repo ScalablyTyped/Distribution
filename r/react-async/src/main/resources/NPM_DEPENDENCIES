@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-async" : "7.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-async" : "7.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

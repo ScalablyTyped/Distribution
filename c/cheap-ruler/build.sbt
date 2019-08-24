@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cheap-ruler"
-version := "2.5.1-ec29cd"
+version := "2.5.1-c394f0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "on-change" : "1.6.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "on-change" : "1.6.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

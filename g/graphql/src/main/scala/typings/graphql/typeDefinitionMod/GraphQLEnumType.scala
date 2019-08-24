@@ -6,6 +6,7 @@ import typings.graphql.languageAstMod.EnumTypeDefinitionNode
 import typings.graphql.languageAstMod.EnumTypeExtensionNode
 import typings.graphql.languageAstMod.ValueNode
 import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +24,7 @@ class GraphQLEnumType protected ()
   var astNode: Maybe[EnumTypeDefinitionNode] = js.native
   var description: Maybe[String] = js.native
   var extensionASTNodes: Maybe[js.Array[EnumTypeExtensionNode]] = js.native
+  var extensions: Maybe[Record[String, _]] = js.native
   var name: String = js.native
   def getValue(name: String): Maybe[GraphQLEnumValue] = js.native
   def getValues(): js.Array[GraphQLEnumValue] = js.native

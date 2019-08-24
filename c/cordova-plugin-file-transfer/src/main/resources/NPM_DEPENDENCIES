@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-file-transfer" : "1.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-file-transfer" : "1.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

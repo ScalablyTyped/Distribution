@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-sha3"
-version := "0.8.0-d93a26"
+version := "0.8.0-2fa464"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

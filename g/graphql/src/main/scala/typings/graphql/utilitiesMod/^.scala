@@ -3,6 +3,7 @@ package typings.graphql.utilitiesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.Anon_Description
 import typings.graphql.errorGraphQLErrorMod.GraphQLError
+import typings.graphql.jsutilsPathMod.Path
 import typings.graphql.languageAstMod.ASTNode
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageAstMod.ListTypeNode
@@ -24,8 +25,8 @@ import typings.graphql.typeDefinitionMod.GraphQLType
 import typings.graphql.typeSchemaMod.GraphQLSchema
 import typings.graphql.utilitiesBuildASTSchemaMod.BuildSchemaOptions
 import typings.graphql.utilitiesBuildClientSchemaMod.Options
+import typings.graphql.utilitiesCoerceInputValueMod.OnErrorCB
 import typings.graphql.utilitiesCoerceValueMod.CoercedValue
-import typings.graphql.utilitiesCoerceValueMod.Path
 import typings.graphql.utilitiesFindBreakingChangesMod.BreakingChange
 import typings.graphql.utilitiesFindBreakingChangesMod.DangerousChange
 import typings.graphql.utilitiesFindBreakingChangesMod._BreakingChangeType
@@ -52,9 +53,11 @@ object ^ extends js.Object {
   def buildSchema(source: String, options: BuildSchemaOptions with ParseOptions): GraphQLSchema = js.native
   def buildSchema(source: Source): GraphQLSchema = js.native
   def buildSchema(source: Source, options: BuildSchemaOptions with ParseOptions): GraphQLSchema = js.native
-  def coerceValue(value: js.Any, `type`: GraphQLInputType): CoercedValue = js.native
-  def coerceValue(value: js.Any, `type`: GraphQLInputType, blameNode: ASTNode): CoercedValue = js.native
-  def coerceValue(value: js.Any, `type`: GraphQLInputType, blameNode: ASTNode, path: Path): CoercedValue = js.native
+  def coerceInputValue(inputValue: js.Any, `type`: GraphQLInputType): js.Any = js.native
+  def coerceInputValue(inputValue: js.Any, `type`: GraphQLInputType, onError: OnErrorCB): js.Any = js.native
+  def coerceValue(inputValue: js.Any, `type`: GraphQLInputType): CoercedValue = js.native
+  def coerceValue(inputValue: js.Any, `type`: GraphQLInputType, blameNode: ASTNode): CoercedValue = js.native
+  def coerceValue(inputValue: js.Any, `type`: GraphQLInputType, blameNode: ASTNode, path: Path): CoercedValue = js.native
   def concatAST(asts: js.Array[DocumentNode]): DocumentNode = js.native
   def doTypesOverlap(schema: GraphQLSchema, typeA: GraphQLCompositeType, typeB: GraphQLCompositeType): Boolean = js.native
   def extendSchema(schema: GraphQLSchema, documentAST: DocumentNode): GraphQLSchema = js.native
@@ -88,6 +91,8 @@ object ^ extends js.Object {
   def printType(`type`: GraphQLNamedType): String = js.native
   def printType(`type`: GraphQLNamedType, options: typings.graphql.utilitiesSchemaPrinterMod.Options): String = js.native
   def separateOperations(documentAST: DocumentNode): StringDictionary[DocumentNode] = js.native
+  def stripIgnoredCharacters(source: String): String = js.native
+  def stripIgnoredCharacters(source: Source): String = js.native
   def typeFromAST(schema: GraphQLSchema, typeNode: ListTypeNode): js.UndefOr[GraphQLList[_]] = js.native
   def typeFromAST(schema: GraphQLSchema, typeNode: NamedTypeNode): js.UndefOr[GraphQLNamedType] = js.native
   def typeFromAST(schema: GraphQLSchema, typeNode: NonNullTypeNode): js.UndefOr[GraphQLNonNull[_]] = js.native

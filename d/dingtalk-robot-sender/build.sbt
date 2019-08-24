@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "dingtalk-robot-sender"
-version := "1.1-dt-20190312Z-26fe2f"
+version := "1.1-dt-20190312Z-5ce4dd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axios" % "0.19.0-79096f",
+  "org.scalablytyped" %%% "axios" % "0.19.0-ae10c0",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

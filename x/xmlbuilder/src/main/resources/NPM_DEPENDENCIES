@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xmlbuilder" : "13.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xmlbuilder" : "13.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

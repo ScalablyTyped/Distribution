@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__chunked-blob-reader"
-version := "0.1.0-preview.1-b0b7f8"
+version := "0.1.0-preview.1-68057c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

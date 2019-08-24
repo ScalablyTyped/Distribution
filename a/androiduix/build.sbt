@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "androiduix"
-version := "0.7.0-1e1151"
+version := "0.7.0-019cb5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

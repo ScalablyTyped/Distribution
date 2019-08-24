@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-table"
-version := "3.0.1-02ed54"
+version := "3.0.1-49cc04"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

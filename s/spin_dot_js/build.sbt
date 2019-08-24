@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spin_dot_js"
-version := "4.0.0-97338f"
+version := "4.0.0-09dbb7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-diff"
-version := "1.2.0-510f6d"
+version := "1.2.0-d5ef1d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "fortawesome__fontawesome-svg-core"
-version := "1.2.22-0684c8"
+version := "1.2.22-6dadce"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "fortawesome__fontawesome-common-types" % "0.2.22-6b124b",
+  "org.scalablytyped" %%% "fortawesome__fontawesome-common-types" % "0.2.22-b70699",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

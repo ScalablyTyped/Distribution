@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ecdsa-sig-formatter" : "1.0.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ecdsa-sig-formatter" : "1.0.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

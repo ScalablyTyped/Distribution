@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-tools" : "0.13.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-tools" : "0.13.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

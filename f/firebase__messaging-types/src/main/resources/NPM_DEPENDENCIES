@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/messaging-types" : "0.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/messaging-types" : "0.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

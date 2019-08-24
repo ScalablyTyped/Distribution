@@ -43,11 +43,7 @@ trait IAccount
     * External accounts (bank accounts and debit cards) currently
     * attached to this account
     */
-  var external_accounts: js.UndefOr[
-    IList[
-      typings.stripe.stripeMod.cardsNs.ICard | typings.stripe.stripeMod.bankAccountsNs.IBankAccount
-    ]
-  ] = js.undefined
+  var external_accounts: js.UndefOr[IList[IExternalAccount]] = js.undefined
   /**
     * Information about the person represented by the account.
     * This field is null unless business_type is set to individual.
@@ -82,9 +78,7 @@ object IAccount {
     company: ICompany = null,
     default_currency: String = null,
     email: String = null,
-    external_accounts: IList[
-      typings.stripe.stripeMod.cardsNs.ICard | typings.stripe.stripeMod.bankAccountsNs.IBankAccount
-    ] = null,
+    external_accounts: IList[IExternalAccount] = null,
     individual: IIndividual = null,
     metadata: IMetadata = null,
     product_description: String = null,

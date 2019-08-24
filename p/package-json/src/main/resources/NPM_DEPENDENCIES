@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "package-json" : "6.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "package-json" : "6.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

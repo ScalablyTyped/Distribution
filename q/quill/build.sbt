@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "quill"
-version := "2.0-dt-20190212Z-ab58e2"
+version := "2.0-dt-20190212Z-f85316"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "parchment" % "1.1.4-2f6ed0",
+  "org.scalablytyped" %%% "parchment" % "1.1.4-67857b",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

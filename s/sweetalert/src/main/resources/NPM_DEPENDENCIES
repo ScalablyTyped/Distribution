@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sweetalert" : "2.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sweetalert" : "2.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

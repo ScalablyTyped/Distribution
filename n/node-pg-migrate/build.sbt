@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-pg-migrate"
-version := "3.22.0-d9719d"
+version := "3.22.0-4306fb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

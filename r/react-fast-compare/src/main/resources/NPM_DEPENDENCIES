@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-fast-compare" : "2.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-fast-compare" : "2.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

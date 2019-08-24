@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "p-every" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "p-every" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

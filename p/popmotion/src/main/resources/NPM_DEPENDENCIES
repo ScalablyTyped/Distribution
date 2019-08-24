@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "popmotion" : "8.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "popmotion" : "8.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "anydb-sql" : "0.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "anydb-sql" : "0.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

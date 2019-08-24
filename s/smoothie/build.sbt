@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smoothie"
-version := "1.35.0-27b92f"
+version := "1.35.0-d78fd3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

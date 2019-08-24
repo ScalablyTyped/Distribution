@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "asyncblock-generators"
-version := "2.2.12-988e4c"
+version := "2.2.12-fc8052"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vso-node-api" : "6.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vso-node-api" : "6.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

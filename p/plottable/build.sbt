@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plottable"
-version := "3.8.6-bbf2e6"
+version := "3.8.6-106074"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20190212Z-84af95",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190816Z-cbbb3c",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "typesettable" % "4.1.0-a0cb36")
+  "org.scalablytyped" %%% "typesettable" % "4.1.0-d4fb5a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

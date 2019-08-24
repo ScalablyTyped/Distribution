@@ -351,6 +351,7 @@ package object clientsEc2Mod {
   type DescribeDhcpOptionsMaxResults = scala.Double
   type DescribeEgressOnlyInternetGatewaysMaxResults = scala.Double
   type DescribeElasticGpusMaxResults = scala.Double
+  type DescribeExportImageTasksMaxResults = scala.Double
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
   type DescribeFpgaImagesMaxResults = scala.Double
@@ -465,6 +466,8 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type ExportEnvironment = _ExportEnvironment | java.lang.String
+  type ExportImageTaskIdList = js.Array[String]
+  type ExportImageTaskList = js.Array[ExportImageTask]
   type ExportTaskIdStringList = js.Array[String]
   type ExportTaskList = js.Array[ExportTask]
   /* Rewritten from type alias, can be one of: 

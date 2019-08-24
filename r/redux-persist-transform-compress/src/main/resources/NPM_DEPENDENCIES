@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redux-persist-transform-compress" : "4.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redux-persist-transform-compress" : "4.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "zapier-platform-core" : "8.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "zapier-platform-core" : "8.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

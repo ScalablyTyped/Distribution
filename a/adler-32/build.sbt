@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adler-32"
-version := "1.2.0-5320aa"
+version := "1.2.0-983c13"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "nivo__waffle"
-version := "0.59.1-f44dae"
+version := "0.59.1-b69b9e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f01b27",
-  "org.scalablytyped" %%% "nivo__colors" % "0.59.0-258ded",
-  "org.scalablytyped" %%% "nivo__core" % "0.59.1-e92449",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
+  "org.scalablytyped" %%% "nivo__colors" % "0.59.0-38503b",
+  "org.scalablytyped" %%% "nivo__core" % "0.59.1-5a8562",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-93079a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-847c1a",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

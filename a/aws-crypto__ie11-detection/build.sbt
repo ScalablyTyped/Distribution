@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-crypto__ie11-detection"
-version := "0.1.0-preview.1-0a15e0"
+version := "0.1.0-preview.1-37bf20"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

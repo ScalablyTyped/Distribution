@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typescript-event-handler" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typescript-event-handler" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

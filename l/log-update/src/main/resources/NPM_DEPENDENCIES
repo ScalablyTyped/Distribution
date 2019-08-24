@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "log-update" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "log-update" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

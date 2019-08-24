@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pulumi/query" : "0.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pulumi/query" : "0.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

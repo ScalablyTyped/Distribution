@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "chalk-pipe"
-version := "2.0-dt-20190522Z-15628b"
+version := "2.0-dt-20190522Z-6ebbb1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-5abf20",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-04fe99",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

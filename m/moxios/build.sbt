@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "moxios"
-version := "0.4-dt-20180214Z-da722b"
+version := "0.4-dt-20180214Z-b13b1f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axios" % "0.19.0-79096f",
+  "org.scalablytyped" %%% "axios" % "0.19.0-ae10c0",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

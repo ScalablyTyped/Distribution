@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalize-scroll-left"
-version := "0.1.2-f72c9e"
+version := "0.1.2-09ff8f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

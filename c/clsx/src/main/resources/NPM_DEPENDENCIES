@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "clsx" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "clsx" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

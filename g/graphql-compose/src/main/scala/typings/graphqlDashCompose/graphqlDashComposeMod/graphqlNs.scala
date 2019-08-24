@@ -1,12 +1,13 @@
 package typings.graphqlDashCompose.graphqlDashComposeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.Anon_ArgName
 import typings.graphql.Anon_Directives
+import typings.graphql.Anon_MaxErrors
 import typings.graphql.errorFormatErrorMod.GraphQLFormattedError
 import typings.graphql.executionExecuteMod.ExecutionArgs
 import typings.graphql.executionExecuteMod.ExecutionResult
 import typings.graphql.graphqlGraphqlMod.GraphQLArgs
+import typings.graphql.jsutilsPathMod.Path
 import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
 import typings.graphql.languageAstMod.ASTKindToNode
 import typings.graphql.languageAstMod.ASTNode
@@ -57,13 +58,15 @@ import typings.graphql.languageAstMod.VariableDefinitionNode
 import typings.graphql.languageAstMod.VariableNode
 import typings.graphql.languageDirectiveLocationMod._DirectiveLocation
 import typings.graphql.languageKindsMod._Kind
-import typings.graphql.languageLexerMod._TokenKind
+import typings.graphql.languageLexerMod.Lexer
 import typings.graphql.languageLocationMod.SourceLocation
 import typings.graphql.languageParserMod.ParseOptions
 import typings.graphql.languageSourceMod.Location
+import typings.graphql.languageTokenKindMod._TokenKind
 import typings.graphql.languageVisitorMod.VisitFn
 import typings.graphql.languageVisitorMod.Visitor
 import typings.graphql.languageVisitorMod.VisitorKeyMap
+import typings.graphql.subscriptionSubscribeMod.SubscriptionArgs
 import typings.graphql.tsutilsMaybeMod.Maybe
 import typings.graphql.typeDefinitionMod.GraphQLAbstractType
 import typings.graphql.typeDefinitionMod.GraphQLArgument
@@ -82,17 +85,17 @@ import typings.graphql.typeDefinitionMod.GraphQLObjectTypeConfig
 import typings.graphql.typeDefinitionMod.GraphQLOutputType
 import typings.graphql.typeDefinitionMod.GraphQLScalarTypeConfig
 import typings.graphql.typeDefinitionMod.GraphQLType
+import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
 import typings.graphql.typeDefinitionMod.GraphQLUnionTypeConfig
 import typings.graphql.typeDefinitionMod.GraphQLWrappingType
-import typings.graphql.typeDefinitionMod.ResponsePath
 import typings.graphql.typeDefinitionMod._GraphQLList
 import typings.graphql.typeDefinitionMod._GraphQLNonNull
 import typings.graphql.typeDirectivesMod.GraphQLDirectiveConfig
 import typings.graphql.typeSchemaMod.GraphQLSchemaConfig
 import typings.graphql.utilitiesBuildASTSchemaMod.BuildSchemaOptions
 import typings.graphql.utilitiesBuildClientSchemaMod.Options
+import typings.graphql.utilitiesCoerceInputValueMod.OnErrorCB
 import typings.graphql.utilitiesCoerceValueMod.CoercedValue
-import typings.graphql.utilitiesCoerceValueMod.Path
 import typings.graphql.utilitiesFindBreakingChangesMod.BreakingChange
 import typings.graphql.utilitiesFindBreakingChangesMod.DangerousChange
 import typings.graphql.utilitiesFindBreakingChangesMod._BreakingChangeType
@@ -226,9 +229,14 @@ object graphqlNs extends js.Object {
       ast: DocumentNode,
       typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo
     ) = this()
+    def this(
+      schema: typings.graphql.typeSchemaMod.GraphQLSchema,
+      ast: DocumentNode,
+      typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo,
+      onError: js.Function1[/* err */ typings.graphql.errorMod.GraphQLError, Unit]
+    ) = this()
   }
   
-  val BREAK: js.Any = js.native
   val BreakingChangeType: _BreakingChangeType = js.native
   val DEFAULT_DEPRECATION_REASON: `No longer supported` = js.native
   val DangerousChangeType: _DangerousChangeType = js.native
@@ -257,13 +265,16 @@ object graphqlNs extends js.Object {
   val __Type: typings.graphql.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   val __TypeKind: typings.graphql.typeDefinitionMod.GraphQLEnumType = js.native
   val defaultFieldResolver: GraphQLFieldResolver[js.Any, js.Any, StringDictionary[js.Any]] = js.native
+  val defaultTypeResolver: GraphQLTypeResolver[js.Any, js.Any, StringDictionary[js.Any]] = js.native
   val introspectionQuery: String = js.native
-  val introspectionTypes: js.Array[js.Any] = js.native
+  val introspectionTypes: js.Array[GraphQLType] = js.native
   val specifiedDirectives: js.Array[typings.graphql.typeDirectivesMod.GraphQLDirective] = js.native
   val specifiedRules: js.Array[ValidationRule] = js.native
   val specifiedScalarTypes: js.Array[typings.graphql.typeDefinitionMod.GraphQLScalarType] = js.native
+  val version: String = js.native
   def assertAbstractType(`type`: js.Any): GraphQLAbstractType = js.native
   def assertCompositeType(`type`: js.Any): GraphQLCompositeType = js.native
+  def assertDirective(directive: js.Any): typings.graphql.typeDirectivesMod.GraphQLDirective = js.native
   def assertEnumType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLEnumType = js.native
   def assertInputObjectType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLInputObjectType = js.native
   def assertInputType(`type`: js.Any): GraphQLInputType = js.native
@@ -276,6 +287,7 @@ object graphqlNs extends js.Object {
   def assertObjectType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLObjectType[_, _, StringDictionary[_]] = js.native
   def assertOutputType(`type`: js.Any): GraphQLOutputType = js.native
   def assertScalarType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLScalarType = js.native
+  def assertSchema(schema: js.Any): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
   def assertType(`type`: js.Any): GraphQLType = js.native
   def assertUnionType(`type`: js.Any): typings.graphql.typeDefinitionMod.GraphQLUnionType = js.native
   def assertValidName(name: String): String = js.native
@@ -290,10 +302,13 @@ object graphqlNs extends js.Object {
   def buildSchema(source: String, options: BuildSchemaOptions with ParseOptions): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
   def buildSchema(source: typings.graphql.languageSourceMod.Source): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
   def buildSchema(source: typings.graphql.languageSourceMod.Source, options: BuildSchemaOptions with ParseOptions): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
-  def coerceValue(value: js.Any, `type`: GraphQLInputType): CoercedValue = js.native
-  def coerceValue(value: js.Any, `type`: GraphQLInputType, blameNode: ASTNode): CoercedValue = js.native
-  def coerceValue(value: js.Any, `type`: GraphQLInputType, blameNode: ASTNode, path: Path): CoercedValue = js.native
+  def coerceInputValue(inputValue: js.Any, `type`: GraphQLInputType): js.Any = js.native
+  def coerceInputValue(inputValue: js.Any, `type`: GraphQLInputType, onError: OnErrorCB): js.Any = js.native
+  def coerceValue(inputValue: js.Any, `type`: GraphQLInputType): CoercedValue = js.native
+  def coerceValue(inputValue: js.Any, `type`: GraphQLInputType, blameNode: ASTNode): CoercedValue = js.native
+  def coerceValue(inputValue: js.Any, `type`: GraphQLInputType, blameNode: ASTNode, path: Path): CoercedValue = js.native
   def concatAST(asts: js.Array[DocumentNode]): DocumentNode = js.native
+  def createLexer[TOptions](source: typings.graphql.languageSourceMod.Source, options: TOptions): Lexer[TOptions] = js.native
   def createSourceEventStream[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, document: DocumentNode): js.Promise[AsyncIterable[_] | ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, document: DocumentNode, rootValue: js.Any): js.Promise[AsyncIterable[_] | ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
@@ -332,37 +347,15 @@ object graphqlNs extends js.Object {
     typeB: GraphQLCompositeType
   ): Boolean = js.native
   def execute[TData](args: ExecutionArgs): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, document: DocumentNode): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, document: DocumentNode, rootValue: js.Any): PromiseOrValue[ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any
-  ): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]]
-  ): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String]
-  ): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def execute[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    document: DocumentNode,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String],
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
+    rootValue: js.UndefOr[js.Any],
+    contextValue: js.UndefOr[js.Any],
+    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
+    operationName: js.UndefOr[Maybe[String]],
+    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): PromiseOrValue[ExecutionResult[TData]] = js.native
   def extendSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema, documentAST: DocumentNode): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
   def extendSchema(
@@ -412,148 +405,46 @@ object graphqlNs extends js.Object {
     isLeaving: Boolean
   ): Maybe[VisitFn[_, _]] = js.native
   def graphql[TData](args: GraphQLArgs): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, source: String): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, source: String, rootValue: js.Any): js.Promise[ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     source: String,
-    rootValue: js.Any,
-    contextValue: js.Any
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: String,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]]
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: String,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String]
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: String,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String],
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source
+    rootValue: js.UndefOr[js.Any],
+    contextValue: js.UndefOr[js.Any],
+    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
+    operationName: js.UndefOr[Maybe[String]],
+    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): js.Promise[ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]]
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String]
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def graphql[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String],
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
+    rootValue: js.UndefOr[js.Any],
+    contextValue: js.UndefOr[js.Any],
+    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
+    operationName: js.UndefOr[Maybe[String]],
+    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): js.Promise[ExecutionResult[TData]] = js.native
   def graphqlSync[TData](args: GraphQLArgs): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, source: String): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](schema: typings.graphql.typeSchemaMod.GraphQLSchema, source: String, rootValue: js.Any): ExecutionResult[TData] = js.native
   def graphqlSync[TData](
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     source: String,
-    rootValue: js.Any,
-    contextValue: js.Any
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: String,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]]
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: String,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String]
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: String,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String],
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source
+    rootValue: js.UndefOr[js.Any],
+    contextValue: js.UndefOr[js.Any],
+    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
+    operationName: js.UndefOr[Maybe[String]],
+    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): ExecutionResult[TData] = js.native
   def graphqlSync[TData](
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]]
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String]
-  ): ExecutionResult[TData] = js.native
-  def graphqlSync[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
-    rootValue: js.Any,
-    contextValue: js.Any,
-    variableValues: Maybe[StringDictionary[_]],
-    operationName: Maybe[String],
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]
+    rootValue: js.UndefOr[js.Any],
+    contextValue: js.UndefOr[js.Any],
+    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
+    operationName: js.UndefOr[Maybe[String]],
+    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): ExecutionResult[TData] = js.native
   def introspectionFromSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema): IntrospectionQuery = js.native
   def introspectionFromSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema, options: IntrospectionOptions): IntrospectionQuery = js.native
@@ -580,8 +471,8 @@ object graphqlNs extends js.Object {
   def isScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ Boolean = js.native
   def isSchema(schema: js.Any): /* is graphql.graphql/type/schema.GraphQLSchema */ Boolean = js.native
   def isSelectionNode(node: ASTNode): /* is graphql.graphql/language/ast.SelectionNode */ Boolean = js.native
-  def isSpecifiedDirective(directive: typings.graphql.typeDirectivesMod.GraphQLDirective): Boolean = js.native
-  def isSpecifiedScalarType(`type`: typings.graphql.typeDefinitionMod.GraphQLScalarType): Boolean = js.native
+  def isSpecifiedDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ Boolean = js.native
+  def isSpecifiedScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ Boolean = js.native
   def isType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLType */ Boolean = js.native
   def isTypeDefinitionNode(node: ASTNode): /* is graphql.graphql/language/ast.TypeDefinitionNode */ Boolean = js.native
   def isTypeExtensionNode(node: ASTNode): /* is graphql.graphql/language/ast.TypeExtensionNode */ Boolean = js.native
@@ -601,6 +492,12 @@ object graphqlNs extends js.Object {
   def isValueNode(node: ASTNode): /* is graphql.graphql/language/ast.ValueNode */ Boolean = js.native
   def isWrappingType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLWrappingType */ Boolean = js.native
   def lexicographicSortSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema): typings.graphql.typeSchemaMod.GraphQLSchema = js.native
+  def locatedError(
+    originalError: typings.graphql.errorGraphQLErrorMod.GraphQLError,
+    nodes: js.Array[ASTNode],
+    path: js.Array[String | Double]
+  ): typings.graphql.errorGraphQLErrorMod.GraphQLError = js.native
+  def locatedError(originalError: Error, nodes: js.Array[ASTNode], path: js.Array[String | Double]): typings.graphql.errorGraphQLErrorMod.GraphQLError = js.native
   def parse(source: String): DocumentNode = js.native
   def parse(source: String, options: ParseOptions): DocumentNode = js.native
   def parse(source: typings.graphql.languageSourceMod.Source): DocumentNode = js.native
@@ -620,16 +517,19 @@ object graphqlNs extends js.Object {
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     options: typings.graphql.utilitiesSchemaPrinterMod.Options
   ): String = js.native
+  def printLocation(location: typings.graphql.languageAstMod.Location): String = js.native
   def printSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema): String = js.native
   def printSchema(
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     options: typings.graphql.utilitiesSchemaPrinterMod.Options
   ): String = js.native
+  def printSourceLocation(source: typings.graphql.languageSourceMod.Source, sourceLocation: SourceLocation): String = js.native
   def printType(`type`: GraphQLNamedType): String = js.native
   def printType(`type`: GraphQLNamedType, options: typings.graphql.utilitiesSchemaPrinterMod.Options): String = js.native
-  def responsePathAsArray(path: ResponsePath): js.Array[String | Double] = js.native
   def separateOperations(documentAST: DocumentNode): StringDictionary[DocumentNode] = js.native
-  def subscribe[TData](args: Anon_ArgName): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
+  def stripIgnoredCharacters(source: String): String = js.native
+  def stripIgnoredCharacters(source: typings.graphql.languageSourceMod.Source): String = js.native
+  def subscribe[TData](args: SubscriptionArgs): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
   def subscribe[TData](
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     document: DocumentNode,
@@ -640,6 +540,7 @@ object graphqlNs extends js.Object {
     fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
     subscribeFieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]]
   ): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
+  def syntaxError(source: typings.graphql.languageSourceMod.Source, position: Double, description: String): typings.graphql.errorGraphQLErrorMod.GraphQLError = js.native
   def typeFromAST(schema: typings.graphql.typeSchemaMod.GraphQLSchema, typeNode: ListTypeNode): js.UndefOr[typings.graphql.typeDefinitionMod.GraphQLList[_]] = js.native
   def typeFromAST(schema: typings.graphql.typeSchemaMod.GraphQLSchema, typeNode: NamedTypeNode): js.UndefOr[GraphQLNamedType] = js.native
   def typeFromAST(schema: typings.graphql.typeSchemaMod.GraphQLSchema, typeNode: NonNullTypeNode): js.UndefOr[typings.graphql.typeDefinitionMod.GraphQLNonNull[_]] = js.native
@@ -654,6 +555,13 @@ object graphqlNs extends js.Object {
     documentAST: DocumentNode,
     rules: js.Array[ValidationRule],
     typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo
+  ): js.Array[typings.graphql.errorMod.GraphQLError] = js.native
+  def validate(
+    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.Array[ValidationRule],
+    typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo,
+    options: Anon_MaxErrors
   ): js.Array[typings.graphql.errorMod.GraphQLError] = js.native
   def validateSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def valueFromAST(valueNode: Maybe[ValueNode], `type`: GraphQLInputType): js.Any = js.native
@@ -673,7 +581,8 @@ object graphqlNs extends js.Object {
       ASTKindToNode, 
       UnionTypeDefinitionNode | FragmentSpreadNode | OperationDefinitionNode | EnumTypeDefinitionNode | StringValueNode | ArgumentNode | BooleanValueNode | NameNode | FieldDefinitionNode | ObjectTypeDefinitionNode | EnumValueDefinitionNode | FloatValueNode | NullValueNode | DirectiveNode | VariableNode | ScalarTypeExtensionNode | IntValueNode | SchemaExtensionNode | DirectiveDefinitionNode | InputObjectTypeExtensionNode | ScalarTypeDefinitionNode | UnionTypeExtensionNode | FragmentDefinitionNode | SelectionSetNode | NamedTypeNode | VariableDefinitionNode | EnumTypeExtensionNode | ObjectValueNode | OperationTypeDefinitionNode | EnumValueNode | ObjectFieldNode | FieldNode | InputObjectTypeDefinitionNode | InputValueDefinitionNode | NonNullTypeNode | InlineFragmentNode | InterfaceTypeDefinitionNode | ListTypeNode | InterfaceTypeExtensionNode | ListValueNode | SchemaDefinitionNode | ObjectTypeExtensionNode | DocumentNode
     ],
-    visitorKeys: VisitorKeyMap[ASTKindToNode]
+     // default: QueryDocumentKeys
+  visitorKeys: VisitorKeyMap[ASTKindToNode]
   ): js.Any = js.native
   def visitInParallel(
     visitors: js.Array[
@@ -706,6 +615,14 @@ object graphqlNs extends js.Object {
     var OBJECT: typings.graphqlDashCompose.graphqlDashComposeStrings.OBJECT = js.native
     var SCALAR: typings.graphqlDashCompose.graphqlDashComposeStrings.SCALAR = js.native
     var UNION: typings.graphqlDashCompose.graphqlDashComposeStrings.UNION = js.native
+  }
+  
+  @js.native
+  object versionInfo extends js.Object {
+    var major: Double = js.native
+    var minor: Double = js.native
+    var patch: Double = js.native
+    var preReleaseTag: Double | Null = js.native
   }
   
 }

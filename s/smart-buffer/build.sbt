@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smart-buffer"
-version := "4.0.2-95a57e"
+version := "4.0.2-9a4b1c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "get-stream" : "5.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "get-stream" : "5.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

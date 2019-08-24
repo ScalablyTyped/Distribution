@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sw-toolbox"
-version := "3.6.0-1279a7"
+version := "3.6.0-45e622"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@material-ui/core" : "3.9.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@material-ui/core" : "3.9.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

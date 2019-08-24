@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-media-capture" : "3.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-media-capture" : "3.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

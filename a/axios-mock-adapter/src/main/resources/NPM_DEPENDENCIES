@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "axios-mock-adapter" : "1.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "axios-mock-adapter" : "1.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

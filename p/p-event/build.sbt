@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-event"
-version := "4.1.0-73ab8b"
+version := "4.1.0-d21710"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

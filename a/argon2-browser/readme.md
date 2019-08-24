@@ -1,7 +1,7 @@
 
 # Scala.js typings for argon2-browser
 
-Typings are for version 1.1
+Typings are for version 1.6
 
 ## Library description:
 Argon2 library compiled for browser runtime

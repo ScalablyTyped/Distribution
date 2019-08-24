@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clone-regexp"
-version := "2.2.0-2d463c"
+version := "2.2.0-39acf8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

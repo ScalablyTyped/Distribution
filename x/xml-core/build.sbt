@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xml-core"
-version := "1.0.15-88609b"
+version := "1.0.15-dda6bd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

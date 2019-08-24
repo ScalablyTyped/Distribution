@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ionic/utils-network" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ionic/utils-network" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

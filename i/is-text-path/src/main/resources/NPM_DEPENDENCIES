@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-text-path" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-text-path" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

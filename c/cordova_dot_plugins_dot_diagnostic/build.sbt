@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova_dot_plugins_dot_diagnostic"
-version := "5.0.0-040bc2"
+version := "5.0.0-944151"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

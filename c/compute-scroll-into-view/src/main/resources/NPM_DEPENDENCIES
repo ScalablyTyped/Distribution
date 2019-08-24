@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "compute-scroll-into-view" : "1.0.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "compute-scroll-into-view" : "1.0.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

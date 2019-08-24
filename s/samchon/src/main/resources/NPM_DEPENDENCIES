@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "samchon" : "2.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "samchon" : "2.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

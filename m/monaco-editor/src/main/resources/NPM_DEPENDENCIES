@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "monaco-editor" : "0.17.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "monaco-editor" : "0.17.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

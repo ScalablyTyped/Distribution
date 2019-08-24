@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ip-regex"
-version := "4.1.0-0a8342"
+version := "4.1.0-bafcd2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

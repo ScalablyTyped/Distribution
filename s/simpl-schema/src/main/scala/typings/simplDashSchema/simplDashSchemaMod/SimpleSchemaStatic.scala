@@ -52,8 +52,8 @@ trait SimpleSchemaStatic
   def objectKeys(keyPrefix: js.Any): js.Array[_] = js.native
   def omit(fields: String*): SimpleSchemaStatic = js.native
   def pick(fields: String*): SimpleSchemaStatic = js.native
-  def schema(): SchemaDefinition | js.Array[SchemaDefinition] = js.native
-  def schema(key: String): SchemaDefinition | js.Array[SchemaDefinition] = js.native
+  def schema(): js.Array[SchemaDefinition] = js.native
+  def schema(key: String): SchemaDefinition = js.native
   def validate(obj: js.Any): Unit = js.native
   def validate(obj: js.Any, options: ValidationOption): Unit = js.native
   def validator(): js.Function0[Boolean] = js.native

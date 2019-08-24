@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "blake2s-js" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "blake2s-js" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

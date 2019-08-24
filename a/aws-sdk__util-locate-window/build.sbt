@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-locate-window"
-version := "0.1.0-preview.1-c559fa"
+version := "0.1.0-preview.1-4dee4b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

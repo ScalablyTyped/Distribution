@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "month-days" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "month-days" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

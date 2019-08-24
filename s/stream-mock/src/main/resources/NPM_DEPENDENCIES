@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stream-mock" : "2.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stream-mock" : "2.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "detect-newline" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "detect-newline" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

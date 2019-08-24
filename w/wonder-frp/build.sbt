@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wonder-frp"
-version := "0.1.26-f275b8"
+version := "0.1.26-f2583d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array-union"
-version := "2.1.0-9c3a97"
+version := "2.1.0-01d0e0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

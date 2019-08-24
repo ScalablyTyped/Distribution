@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sindresorhus/fnv1a" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sindresorhus/fnv1a" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

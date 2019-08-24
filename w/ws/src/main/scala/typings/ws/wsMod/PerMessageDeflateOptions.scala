@@ -1,5 +1,6 @@
 package typings.ws.wsMod
 
+import typings.node.zlibMod.ZlibOptions
 import typings.ws.Anon_ChunkSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +14,7 @@ trait PerMessageDeflateOptions extends js.Object {
   var serverNoContextTakeover: js.UndefOr[Boolean] = js.undefined
   var threshold: js.UndefOr[Double] = js.undefined
   var zlibDeflateOptions: js.UndefOr[Anon_ChunkSize] = js.undefined
+  var zlibInflateOptions: js.UndefOr[ZlibOptions] = js.undefined
 }
 
 object PerMessageDeflateOptions {
@@ -24,7 +26,8 @@ object PerMessageDeflateOptions {
     serverMaxWindowBits: Int | Double = null,
     serverNoContextTakeover: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
-    zlibDeflateOptions: Anon_ChunkSize = null
+    zlibDeflateOptions: Anon_ChunkSize = null,
+    zlibInflateOptions: ZlibOptions = null
   ): PerMessageDeflateOptions = {
     val __obj = js.Dynamic.literal()
     if (clientMaxWindowBits != null) __obj.updateDynamic("clientMaxWindowBits")(clientMaxWindowBits.asInstanceOf[js.Any])
@@ -34,6 +37,7 @@ object PerMessageDeflateOptions {
     if (!js.isUndefined(serverNoContextTakeover)) __obj.updateDynamic("serverNoContextTakeover")(serverNoContextTakeover)
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (zlibDeflateOptions != null) __obj.updateDynamic("zlibDeflateOptions")(zlibDeflateOptions)
+    if (zlibInflateOptions != null) __obj.updateDynamic("zlibInflateOptions")(zlibInflateOptions)
     __obj.asInstanceOf[PerMessageDeflateOptions]
   }
 }

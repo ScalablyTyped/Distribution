@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "npm-keyword" : "6.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "npm-keyword" : "6.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

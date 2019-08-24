@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "uk.co.workingedge.phonegap.plugin.launchnavigator" : "5.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "uk.co.workingedge.phonegap.plugin.launchnavigator" : "5.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

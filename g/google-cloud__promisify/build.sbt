@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__promisify"
-version := "1.0.2-d8dda2"
+version := "1.0.2-c6de16"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

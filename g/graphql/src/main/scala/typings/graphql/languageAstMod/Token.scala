@@ -1,6 +1,6 @@
 package typings.graphql.languageAstMod
 
-import typings.graphql.languageLexerMod.TokenKindEnum
+import typings.graphql.languageTokenKindMod.TokenKindEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

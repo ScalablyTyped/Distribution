@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stylefire" : "4.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stylefire" : "4.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

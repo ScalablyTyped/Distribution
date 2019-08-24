@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tarn"
-version := "1.1.5-250dba"
+version := "1.1.5-be8932"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

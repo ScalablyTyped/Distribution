@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pulumi__pulumi"
-version := "0.17.28-5d8cda"
+version := "0.17.28-489e39"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pulumi__query" % "0.3.0-9a9d2c",
+  "org.scalablytyped" %%% "pulumi__query" % "0.3.0-7715d7",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "year-days" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "year-days" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

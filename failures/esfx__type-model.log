@@ -56,8 +56,8 @@
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - typings.atEsfxTypeDashModel.distMod.SameType because Already inherited- typings.atEsfxTypeDashModel.distMod.IsSubtypeOf because Already inherited [id => @esfx/type-model, phase => scala.js, this => Name(typings) / Name(atEsfxTypeDashModel) / Name(atEsfxTypeDashModelNumbers) / Name(true)] 
 [debug] PhaseRunner.scala:84 Success [id => @esfx/type-model, phase => scala.js] 
-[warn ] Phase3Compile.scala:211 Building esfx__type-model... [id => @esfx/type-model, phase => build] 
-[error] Phase3Compile.scala:238 [E] [E1] src/main/scala/typings/atEsfxTypeDashModel/distMod/package.scala:21:8
+[warn ] Phase3Compile.scala:214 Building esfx__type-model... [id => @esfx/type-model, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/atEsfxTypeDashModel/distMod/package.scala:21:8
 [E]      illegal cyclic reference involving type Pick
 [E]      L21:   type Assign[A /* <: js.Object */, B /* <: js.Object */] = Reshape[(Diff[A, B]) with B]
 [E]                  ^

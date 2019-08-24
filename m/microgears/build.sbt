@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microgears"
-version := "4.0.12-3249df"
+version := "4.0.12-fe0dfb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

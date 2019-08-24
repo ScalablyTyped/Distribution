@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "symbol-observable"
-version := "1.2.0-e26d5b"
+version := "1.2.0-f44c50"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

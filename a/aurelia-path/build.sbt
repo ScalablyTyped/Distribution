@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-path"
-version := "1.1.3-76d39d"
+version := "1.1.3-06eda2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for smooth-scroll
 
-Typings are for version 14.2
+Typings are for version 16.1
 
 ## Library description:
 Animate scrolling to anchor links

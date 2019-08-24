@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sparkly" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sparkly" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

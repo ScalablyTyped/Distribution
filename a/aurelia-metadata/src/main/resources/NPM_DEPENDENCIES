@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "aurelia-metadata" : "1.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "aurelia-metadata" : "1.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

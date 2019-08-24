@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ssf" : "0.10.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ssf" : "0.10.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

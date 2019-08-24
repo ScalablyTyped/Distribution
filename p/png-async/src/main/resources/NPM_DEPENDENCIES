@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "png-async" : "0.9.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "png-async" : "0.9.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

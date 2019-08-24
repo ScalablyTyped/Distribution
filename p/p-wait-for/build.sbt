@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-wait-for"
-version := "3.1.0-b99c4f"
+version := "3.1.0-12ffc5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

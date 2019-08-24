@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ajv-merge-patch"
-version := "4.1-dt-20190212Z-d80c20"
+version := "4.1-dt-20190212Z-4eb71d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-c3fb5c",
+  "org.scalablytyped" %%% "ajv" % "6.10.2-ef824f",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

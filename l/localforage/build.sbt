@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "localforage"
-version := "1.7.3-d9ad25"
+version := "1.7.3-99bb33"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

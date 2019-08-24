@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vue-class-component" : "7.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vue-class-component" : "7.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

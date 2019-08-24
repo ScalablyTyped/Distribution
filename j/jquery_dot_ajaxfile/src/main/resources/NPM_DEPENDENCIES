@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jquery.ajaxfile" : "0.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jquery.ajaxfile" : "0.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

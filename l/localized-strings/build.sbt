@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "localized-strings"
-version := "0.2.3-a949f5"
+version := "0.2.3-488f7a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

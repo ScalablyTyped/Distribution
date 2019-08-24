@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blocking-proxy"
-version := "1.0.1-d67569"
+version := "1.0.1-ed9224"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

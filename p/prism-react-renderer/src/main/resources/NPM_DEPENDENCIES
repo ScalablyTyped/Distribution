@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prism-react-renderer" : "0.1.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prism-react-renderer" : "0.1.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

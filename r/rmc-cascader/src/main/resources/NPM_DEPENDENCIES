@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rmc-cascader" : "5.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rmc-cascader" : "5.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

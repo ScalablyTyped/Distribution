@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rmc-input-number" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rmc-input-number" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

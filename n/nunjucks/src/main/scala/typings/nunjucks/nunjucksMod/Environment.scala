@@ -1,6 +1,7 @@
 package typings.nunjucks.nunjucksMod
 
 import typings.nunjucks.Anon_Autoescape
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +24,7 @@ class Environment () extends js.Object {
   def getFilter(name: String): Unit = js.native
   def getTemplate(name: String): Template = js.native
   def getTemplate(name: String, eagerCompile: Boolean): Template = js.native
-  def getTemplate(
-    name: String,
-    eagerCompile: Boolean,
-    callback: js.Function2[/* err */ js.Any, /* templ */ Template, Template]
-  ): Unit = js.native
+  def getTemplate(name: String, eagerCompile: Boolean, callback: Callback[Error, Template]): Unit = js.native
   @JSName("getTemplate")
   def getTemplate_Unit(name: String): Unit = js.native
   @JSName("getTemplate")
@@ -36,9 +33,9 @@ class Environment () extends js.Object {
   def removeExtension(name: String): Unit = js.native
   def render(name: String): String = js.native
   def render(name: String, context: js.Object): String = js.native
-  def render(name: String, context: js.Object, callback: js.Function2[/* err */ js.Any, /* res */ String, _]): Unit = js.native
+  def render(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
   def renderString(name: String, context: js.Object): String = js.native
-  def renderString(name: String, context: js.Object, callback: js.Function2[/* err */ js.Any, /* res */ String, _]): Unit = js.native
+  def renderString(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
   @JSName("renderString")
   def renderString_Unit(name: String, context: js.Object): Unit = js.native
   @JSName("render")
