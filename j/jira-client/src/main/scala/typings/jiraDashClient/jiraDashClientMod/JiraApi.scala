@@ -151,6 +151,7 @@ trait JiraApi extends js.Object {
   def getFieldOption(fieldKey: String, optionId: String): js.Promise[JsonResponse] = js.native
   def getIssueProperty(issueNumber: String, property: String): js.Promise[JsonResponse] = js.native
   def getIssueWatchers(issueId: String): js.Promise[js.Array[JsonResponse]] = js.native
+  def getIssueWorklogs(issueId: String): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native

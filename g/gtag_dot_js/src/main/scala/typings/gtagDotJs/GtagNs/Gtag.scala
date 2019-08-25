@@ -1,14 +1,17 @@
 package typings.gtagDotJs.GtagNs
 
+import typings.gtagDotJs.gtagDotJsStrings.JS
 import typings.gtagDotJs.gtagDotJsStrings.config
 import typings.gtagDotJs.gtagDotJsStrings.event
 import typings.gtagDotJs.gtagDotJsStrings.set
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Gtag extends js.Object {
+  def apply(command: JS, config: Date): Unit = js.native
   def apply(command: config, targetId: String): Unit = js.native
   def apply(command: config, targetId: String, config: ControlParams): Unit = js.native
   def apply(command: config, targetId: String, config: CustomParams): Unit = js.native

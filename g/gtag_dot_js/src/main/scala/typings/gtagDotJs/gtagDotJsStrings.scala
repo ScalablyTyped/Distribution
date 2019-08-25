@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object gtagDotJsStrings {
   @js.native
+  sealed trait JS extends js.Object
+  
+  @js.native
   sealed trait add_payment_info extends EventNames
   
   @js.native
@@ -84,6 +87,8 @@ object gtagDotJsStrings {
   @js.native
   sealed trait view_search_results extends EventNames
   
+  @scala.inline
+  def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
   def add_payment_info: add_payment_info = "add_payment_info".asInstanceOf[add_payment_info]
   @scala.inline

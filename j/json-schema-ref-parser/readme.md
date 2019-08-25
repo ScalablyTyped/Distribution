@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-schema-ref-parser
 
-Typings are for version 7.1.0
+Typings are for version 7.1.1
 
 ## Library description:
 Parse, Resolve, and Dereference JSON Schema $ref pointers
