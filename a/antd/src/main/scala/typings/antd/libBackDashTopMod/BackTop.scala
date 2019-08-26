@@ -17,10 +17,8 @@ trait BackTop
   def componentDidMount_MBackTop(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MBackTop(): Unit = js.native
-  def getCurrentScrollTop(): Double = js.native
   def handleScroll(): Unit = js.native
   def renderBackTop(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def scrollToTop(e: MouseEvent[HTMLDivElement, typings.std.MouseEvent]): Unit = js.native
-  def setScrollTop(value: Double): Unit = js.native
 }
 

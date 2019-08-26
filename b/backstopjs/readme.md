@@ -1,7 +1,7 @@
 
 # Scala.js typings for backstopjs
 
-Typings are for version 4.0
+Typings are for version 4.1
 
 ## Library description:
 BackstopJS: Catch CSS curveballs.

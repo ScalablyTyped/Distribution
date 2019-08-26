@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-webpack"
-version := "2.0-dt-20190524Z-6c9177"
+version := "2.0-dt-20190524Z-c3fdf4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,8 +15,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-8d90ab",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-05d063",
-  "org.scalablytyped" %%% "webpack" % "4.39-dt-20190819Z-d8e779",
-  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20190624Z-bdd11b",
+  "org.scalablytyped" %%% "webpack" % "4.39-dt-20190825Z-fd6a0e",
+  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20190624Z-14a964",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-10033f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

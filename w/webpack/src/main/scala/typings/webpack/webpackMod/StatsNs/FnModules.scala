@@ -1,6 +1,5 @@
 package typings.webpack.webpackMod.StatsNs
 
-import typings.webpack.Anon_Explanation
 import typings.webpack.Anon_Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +31,7 @@ trait FnModules extends js.Object {
    // TODO
   var providedExports: js.UndefOr[js.Any] = js.undefined
    // TODO
-  var reasons: Anon_Explanation
+  var reasons: js.Array[Reason]
   var size: Double
   var source: js.UndefOr[String] = js.undefined
   var usedExports: js.UndefOr[Boolean] = js.undefined
@@ -57,7 +56,7 @@ object FnModules {
     optional: Boolean,
     prefetched: Boolean,
     profile: js.Any,
-    reasons: Anon_Explanation,
+    reasons: js.Array[Reason],
     size: Double,
     warnings: Double,
     assets: js.Array[String] = null,

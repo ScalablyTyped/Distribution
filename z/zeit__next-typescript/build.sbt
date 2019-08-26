@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "zeit__next-typescript"
-version := "0.1-dt-20190213Z-b51c5c"
+version := "0.1-dt-20190213Z-075b5f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-44bb30",
   "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
-  "org.scalablytyped" %%% "next" % "8.0-dt-20190709Z-3611da",
-  "org.scalablytyped" %%% "next-server" % "8.1-dt-20190629Z-bc8b8f",
+  "org.scalablytyped" %%% "next" % "8.0-dt-20190709Z-63947e",
+  "org.scalablytyped" %%% "next-server" % "8.1-dt-20190629Z-470b80",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190723Z-ed04a0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-847c1a",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-13bf7a",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-3ac367",
   "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-2a8016",
   "org.scalablytyped" %%% "source-map" % "0.7.3-04c49c",
   "org.scalablytyped" %%% "std" % "3.5-cd493c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-8d90ab",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-05d063",
-  "org.scalablytyped" %%% "webpack" % "4.39-dt-20190819Z-d8e779",
+  "org.scalablytyped" %%% "webpack" % "4.39-dt-20190825Z-fd6a0e",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-10033f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

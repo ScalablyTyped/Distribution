@@ -1,10 +1,13 @@
 package typings.backstopjs.backstopjsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Scenario extends js.Object {
+trait Scenario
+  extends /* key */ StringDictionary[js.Any] {
+   // Allow for custom properties.
   var clickSelector: js.UndefOr[String] = js.undefined
    // Click the specified DOM element prior to screenshot
   var clickSelectors: js.UndefOr[js.Array[String]] = js.undefined
@@ -27,7 +30,7 @@ trait Scenario extends js.Object {
    // Simulates multiple sequential keypress interactions
   var label: String
    // Tag saved with your reference images
-  var misMatchThreshold: js.UndefOr[String] = js.undefined
+  var misMatchThreshold: js.UndefOr[Double] = js.undefined
    // Percentage of different pixels allowed to pass test
   var onBeforeScript: js.UndefOr[String] = js.undefined
    // Used to set up browser state e.g. cookies
@@ -61,6 +64,7 @@ object Scenario {
   def apply(
     label: String,
     url: String,
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     clickSelector: String = null,
     clickSelectors: js.Array[String] = null,
     cookiePath: String = null,
@@ -71,7 +75,7 @@ object Scenario {
     hoverSelectors: js.Array[String] = null,
     keyPressSelector: KeypressSelector = null,
     keyPressSelectors: js.Array[KeypressSelector] = null,
-    misMatchThreshold: String = null,
+    misMatchThreshold: Int | Double = null,
     onBeforeScript: String = null,
     onReadyScript: String = null,
     postInteractionWait: Int | Double = null,
@@ -86,6 +90,7 @@ object Scenario {
     viewports: js.Array[Viewport] = null
   ): Scenario = {
     val __obj = js.Dynamic.literal(label = label, url = url)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (clickSelector != null) __obj.updateDynamic("clickSelector")(clickSelector)
     if (clickSelectors != null) __obj.updateDynamic("clickSelectors")(clickSelectors)
     if (cookiePath != null) __obj.updateDynamic("cookiePath")(cookiePath)
@@ -96,7 +101,7 @@ object Scenario {
     if (hoverSelectors != null) __obj.updateDynamic("hoverSelectors")(hoverSelectors)
     if (keyPressSelector != null) __obj.updateDynamic("keyPressSelector")(keyPressSelector)
     if (keyPressSelectors != null) __obj.updateDynamic("keyPressSelectors")(keyPressSelectors)
-    if (misMatchThreshold != null) __obj.updateDynamic("misMatchThreshold")(misMatchThreshold)
+    if (misMatchThreshold != null) __obj.updateDynamic("misMatchThreshold")(misMatchThreshold.asInstanceOf[js.Any])
     if (onBeforeScript != null) __obj.updateDynamic("onBeforeScript")(onBeforeScript)
     if (onReadyScript != null) __obj.updateDynamic("onReadyScript")(onReadyScript)
     if (postInteractionWait != null) __obj.updateDynamic("postInteractionWait")(postInteractionWait.asInstanceOf[js.Any])
