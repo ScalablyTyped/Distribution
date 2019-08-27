@@ -29,6 +29,15 @@ trait Config extends js.Object {
     */
   var logLevel: js.UndefOr[LogLevel] = js.undefined
   /**
+    * securityLevel: disallow/allow potentially dangerous cross-site scripting behavior
+    *   the two documented values are "strict" and "loose", i.e. disallow and allow
+    *   default: "strict"
+    *   If the value is not present, the default behavior is "strict"
+    *   Up through version mermaid@8.2.3, if any text value is present in a config but is not "strict", the behavior is "loose".
+    *   This should be fixed after that version, i.e. any value other "loose" should be treated as "strict".
+    */
+  var securityLevel: js.UndefOr[String] = js.undefined
+  /**
     * ###  sequenceDiagram
     * The object containing configurations specific for sequence diagrams
     */
@@ -50,6 +59,7 @@ object Config {
     git: js.Any = null,
     gnatt: GnattConfig = null,
     logLevel: LogLevel = null,
+    securityLevel: String = null,
     sequence: SequenceDiagramConfig = null,
     startOnLoad: js.UndefOr[Boolean] = js.undefined,
     theme: Theme = null
@@ -61,6 +71,7 @@ object Config {
     if (git != null) __obj.updateDynamic("git")(git)
     if (gnatt != null) __obj.updateDynamic("gnatt")(gnatt)
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
     if (sequence != null) __obj.updateDynamic("sequence")(sequence)
     if (!js.isUndefined(startOnLoad)) __obj.updateDynamic("startOnLoad")(startOnLoad)
     if (theme != null) __obj.updateDynamic("theme")(theme)

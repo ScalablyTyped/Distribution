@@ -8,7 +8,7 @@ trait Anon_AreaStyleItemStyle extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.areaStyle
     */
-  var areaStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColor] = js.undefined
+  var areaStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle
     */
@@ -26,7 +26,7 @@ trait Anon_AreaStyleItemStyle extends js.Object {
 object Anon_AreaStyleItemStyle {
   @scala.inline
   def apply(
-    areaStyle: Anon_ColorOpacityShadowBlurShadowColor = null,
+    areaStyle: Anon_ColorOpacity = null,
     itemStyle: Anon_BarBorderColorBarBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
     lineStyle: Anon_ColorOpacityShadowBlur = null

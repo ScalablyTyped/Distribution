@@ -11,7 +11,7 @@ trait Anon_ItemStyleLabelName extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.label
     */
@@ -141,7 +141,7 @@ trait Anon_ItemStyleLabelName extends js.Object {
 object Anon_ItemStyleLabelName {
   @scala.inline
   def apply(
-    itemStyle: Anon_BorderColorBorderType = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
     name: String = null,
     symbol: String = null,

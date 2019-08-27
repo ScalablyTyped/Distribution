@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Format extends js.Object {
+  // Value of axis
+  var axisValue: js.UndefOr[Double | String] = js.undefined
+  // Label of axis value
+  var axisValueLabel: js.UndefOr[String] = js.undefined
   // Color of data
   var color: js.UndefOr[String] = js.undefined
   var componentType: js.UndefOr[series] = js.undefined
@@ -13,6 +17,21 @@ trait Format extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   // Data index in input data array
   var dataIndex: js.UndefOr[Double] = js.undefined
+  // data dimension index, for example 0 or 1 or 2 ...
+  // Only work in `radar` series.
+  var dimensionIndex: js.UndefOr[Double] = js.undefined
+  // dimension names list
+  var dimensionNames: js.UndefOr[js.Array[String]] = js.undefined
+  // encoding info of coordinate system
+  // Key: coord, like ('x' 'y' 'radius' 'angle')
+  // value: Must be an array, not null/undefined. Contain dimension indices, like:
+  // {
+  //     x: [2] // values on dimension index 2 are mapped to x axis.
+  //     y: [0] // values on dimension index 0 are mapped to y axis.
+  // }
+  var encode: js.UndefOr[js.Object] = js.undefined
+  // item marker, string of HTMLElement
+  var marker: js.UndefOr[String] = js.undefined
   // Data name, or category name
   var name: js.UndefOr[String] = js.undefined
   // the percentage of pie chart
@@ -30,10 +49,16 @@ trait Format extends js.Object {
 object Format {
   @scala.inline
   def apply(
+    axisValue: Double | String = null,
+    axisValueLabel: String = null,
     color: String = null,
     componentType: series = null,
     data: js.Any = null,
     dataIndex: Int | Double = null,
+    dimensionIndex: Int | Double = null,
+    dimensionNames: js.Array[String] = null,
+    encode: js.Object = null,
+    marker: String = null,
     name: String = null,
     percent: Int | Double = null,
     seriesIndex: Int | Double = null,
@@ -42,10 +67,16 @@ object Format {
     value: Double | js.Array[_] = null
   ): Format = {
     val __obj = js.Dynamic.literal()
+    if (axisValue != null) __obj.updateDynamic("axisValue")(axisValue.asInstanceOf[js.Any])
+    if (axisValueLabel != null) __obj.updateDynamic("axisValueLabel")(axisValueLabel)
     if (color != null) __obj.updateDynamic("color")(color)
     if (componentType != null) __obj.updateDynamic("componentType")(componentType)
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
+    if (dimensionIndex != null) __obj.updateDynamic("dimensionIndex")(dimensionIndex.asInstanceOf[js.Any])
+    if (dimensionNames != null) __obj.updateDynamic("dimensionNames")(dimensionNames)
+    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (marker != null) __obj.updateDynamic("marker")(marker)
     if (name != null) __obj.updateDynamic("name")(name)
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])

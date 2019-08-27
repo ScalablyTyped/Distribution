@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-graphql
 
-Typings are for version 0.8
+Typings are for version 0.9.0
 
 ## Library description:
 Production ready GraphQL HTTP middleware.
@@ -24,7 +24,7 @@ Production ready GraphQL HTTP middleware.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,6 +1,5 @@
 package typings.echarts.echartsNs.EChartOptionNs
 
-import typings.echarts.Anon_Angle
 import typings.echarts.echartsNs.EChartOptionNs.TooltipNs.Formatter
 import typings.echarts.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Type
 import typings.echarts.echartsStrings.`mousemove|click`
@@ -41,7 +40,7 @@ trait Tooltip extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.axisPointer
     */
-  var axisPointer: js.UndefOr[Anon_Angle] = js.undefined
+  var axisPointer: js.UndefOr[typings.echarts.echartsNs.EChartOptionNs.TooltipNs.AxisPointer] = js.undefined
   /**
     * The background color of tooltip's floating layer.
     *
@@ -311,7 +310,7 @@ object Tooltip {
   @scala.inline
   def apply(
     alwaysShowContent: js.UndefOr[Boolean] = js.undefined,
-    axisPointer: Anon_Angle = null,
+    axisPointer: typings.echarts.echartsNs.EChartOptionNs.TooltipNs.AxisPointer = null,
     backgroundColor: String = null,
     borderColor: String = null,
     borderWidth: Int | Double = null,

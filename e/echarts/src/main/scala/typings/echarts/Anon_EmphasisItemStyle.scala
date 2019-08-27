@@ -9,7 +9,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
   ] = js.undefined
   /**
     * The style of node in this category.
@@ -17,7 +17,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The label style of node in this category.
     *
@@ -132,8 +132,8 @@ trait Anon_EmphasisItemStyle extends js.Object {
 object Anon_EmphasisItemStyle {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor = null,
-    itemStyle: Anon_BorderColor = null,
+    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType = null,
+    itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColor = null,
     name: String = null,
     symbol: String = null,

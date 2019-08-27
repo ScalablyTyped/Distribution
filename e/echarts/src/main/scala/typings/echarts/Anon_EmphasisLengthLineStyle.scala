@@ -11,7 +11,7 @@ trait Anon_EmphasisLengthLineStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.labelLine.emphasis
     */
-  var emphasis: js.UndefOr[Anon_LineStyle] = js.undefined
+  var emphasis: js.UndefOr[Anon_LineStyleShow] = js.undefined
   /**
     * The length of the first part from visual guide line.
     *
@@ -35,7 +35,7 @@ trait Anon_EmphasisLengthLineStyle extends js.Object {
 object Anon_EmphasisLengthLineStyle {
   @scala.inline
   def apply(
-    emphasis: Anon_LineStyle = null,
+    emphasis: Anon_LineStyleShow = null,
     length: Int | Double = null,
     lineStyle: Anon_ColorOpacityShadowBlur = null,
     show: js.UndefOr[Boolean] = js.undefined

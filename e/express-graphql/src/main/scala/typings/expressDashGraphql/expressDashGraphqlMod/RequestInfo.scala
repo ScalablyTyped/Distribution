@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * All information about a GraphQL request.
+  */
 trait RequestInfo extends js.Object {
   /**
     * A value to pass as the context to the graphql() function.

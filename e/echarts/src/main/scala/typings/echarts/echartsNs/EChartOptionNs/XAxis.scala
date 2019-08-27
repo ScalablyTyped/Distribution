@@ -62,7 +62,7 @@ object XAxis {
     axisPointer: Pointer = null,
     axisTick: Tick = null,
     boundaryGap: Boolean | (js.Array[String | Double]) = null,
-    data: js.Array[String | DataObject] = null,
+    data: js.Array[String | Double | DataObject] = null,
     gridIndex: Int | Double = null,
     id: String = null,
     interval: Int | Double = null,

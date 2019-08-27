@@ -12231,6 +12231,9 @@ object awsDashSdkStrings {
   sealed trait Integer extends _ParameterType
   
   @js.native
+  sealed trait `Intelligent-Tiering` extends _ParameterTier
+  
+  @js.native
   sealed trait Intended extends _ReviewActionStatus
   
   @js.native
@@ -32877,6 +32880,8 @@ object awsDashSdkStrings {
   def InstancesHealth: InstancesHealth = "InstancesHealth".asInstanceOf[InstancesHealth]
   @scala.inline
   def Integer: Integer = "Integer".asInstanceOf[Integer]
+  @scala.inline
+  def `Intelligent-Tiering`: `Intelligent-Tiering` = "Intelligent-Tiering".asInstanceOf[`Intelligent-Tiering`]
   @scala.inline
   def Intended: Intended = "Intended".asInstanceOf[Intended]
   @scala.inline

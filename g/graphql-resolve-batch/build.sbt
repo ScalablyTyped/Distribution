@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-resolve-batch"
-version := "1.1-dt-20190823Z-703c4c"
+version := "1.1-dt-20190826Z-703c4c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

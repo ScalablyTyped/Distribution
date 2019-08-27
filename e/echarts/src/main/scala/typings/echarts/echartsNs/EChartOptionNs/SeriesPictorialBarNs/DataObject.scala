@@ -2,7 +2,7 @@ package typings.echarts.echartsNs.EChartOptionNs.SeriesPictorialBarNs
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -135,7 +135,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * The style setting of the text label in a single bar.
     *
@@ -725,7 +725,7 @@ object DataObject {
     animationThreshold: Int | Double = null,
     emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
     name: String = null,
     symbol: String = null,

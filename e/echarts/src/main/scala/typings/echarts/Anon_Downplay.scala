@@ -14,7 +14,7 @@ trait Anon_Downplay extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.downplay
     */
   var downplay: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
@@ -25,7 +25,7 @@ trait Anon_Downplay extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
@@ -36,7 +36,7 @@ trait Anon_Downplay extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.highlight
     */
   var highlight: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType
   ] = js.undefined
   /**
     * Style of Sunburst sectors.
@@ -73,7 +73,7 @@ trait Anon_Downplay extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -103,10 +103,10 @@ trait Anon_Downplay extends js.Object {
 object Anon_Downplay {
   @scala.inline
   def apply(
-    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor = null,
-    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor = null,
-    itemStyle: Anon_BorderColor = null,
+    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType = null,
+    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType = null,
+    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType = null,
+    itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null
   ): Anon_Downplay = {
     val __obj = js.Dynamic.literal()

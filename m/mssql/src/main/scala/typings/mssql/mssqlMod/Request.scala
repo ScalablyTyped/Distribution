@@ -26,6 +26,7 @@ class Request () extends EventEmitter {
     batch: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* recordset */ js.UndefOr[IResult[_]], Unit]
   ): Unit = js.native
+  def batch(strings: TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[_]] = js.native
   @JSName("batch")
   def batch_Entity[Entity](batch: String): js.Promise[IResult[Entity]] = js.native
   @JSName("batch")
@@ -33,6 +34,8 @@ class Request () extends EventEmitter {
     batch: String,
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* recordset */ js.UndefOr[IResult[Entity]], Unit]
   ): Unit = js.native
+  @JSName("batch")
+  def batch_Entity[Entity](strings: TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[Entity]] = js.native
   def bulk(table: Table): js.Promise[IBulkResult] = js.native
   def bulk(table: Table, callback: js.Function2[/* err */ Error, /* result */ IBulkResult, Unit]): Unit = js.native
   def bulk(table: Table, options: IBulkOptions): js.Promise[IBulkResult] = js.native

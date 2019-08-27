@@ -1,6 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs
 
-import typings.echarts.Anon_Color
+import typings.echarts.echartsNs.EChartOptionNs.LineStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Tick extends js.Object {
   var inside: js.UndefOr[Boolean] = js.undefined
   var interval: js.UndefOr[Double | js.Function] = js.undefined
   var length: js.UndefOr[Double] = js.undefined
-  var lineStyle: js.UndefOr[Anon_Color] = js.undefined
+  var lineStyle: js.UndefOr[LineStyle] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object Tick {
     inside: js.UndefOr[Boolean] = js.undefined,
     interval: Double | js.Function = null,
     length: Int | Double = null,
-    lineStyle: Anon_Color = null,
+    lineStyle: LineStyle = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): Tick = {
     val __obj = js.Dynamic.literal()

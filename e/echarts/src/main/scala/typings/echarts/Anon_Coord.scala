@@ -53,7 +53,7 @@ trait Anon_Coord extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.label
     */
@@ -224,7 +224,7 @@ object Anon_Coord {
   @scala.inline
   def apply(
     coord: js.Array[_] = null,
-    itemStyle: Anon_BorderColorBorderType = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
     name: String = null,
     symbol: String = null,

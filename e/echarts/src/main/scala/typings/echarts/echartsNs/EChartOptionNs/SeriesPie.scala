@@ -5,7 +5,7 @@ import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimation
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor
 import typings.echarts.Anon_EmphasisLengthLength2
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
 import typings.echarts.echartsNs.EChartOptionNs.SeriesPieNs.DataObject
@@ -287,7 +287,7 @@ trait SeriesPie extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor] = js.undefined
   /**
     * Text label of pie chart, to explain some data information about
     * graphic item like value, name and so on.
@@ -361,6 +361,12 @@ trait SeriesPie extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.minAngle
     */
   var minAngle: js.UndefOr[Double] = js.undefined
+  /**
+    * If a sector is less than this angle (0 ~ 360), label and labelLine will not be displayed.
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.minShowLabelAngle
+    */
+  var minShowLabelAngle: js.UndefOr[Double] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -545,7 +551,7 @@ object SeriesPie {
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     hoverOffset: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatterHeight = null,
     labelLine: Anon_EmphasisLengthLength2 = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
@@ -553,6 +559,7 @@ object SeriesPie {
     markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
     markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     minAngle: Int | Double = null,
+    minShowLabelAngle: Int | Double = null,
     name: String = null,
     radius: js.Array[_] | Double | String = null,
     roseType: Boolean | String = null,
@@ -595,6 +602,7 @@ object SeriesPie {
     if (markLine != null) __obj.updateDynamic("markLine")(markLine)
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
     if (minAngle != null) __obj.updateDynamic("minAngle")(minAngle.asInstanceOf[js.Any])
+    if (minShowLabelAngle != null) __obj.updateDynamic("minShowLabelAngle")(minShowLabelAngle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (roseType != null) __obj.updateDynamic("roseType")(roseType.asInstanceOf[js.Any])

@@ -23,11 +23,14 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IButtonProps extends AllHTMLAttributes[HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button] {
+trait IButtonProps extends AllHTMLAttributes[
+      HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
+    ] {
   /**
     * Whether the button can have focus in disabled mode
     */
@@ -258,7 +261,9 @@ trait IButtonProps extends AllHTMLAttributes[HTMLAnchorElement | HTMLButtonEleme
 object IButtonProps {
   @scala.inline
   def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button] = null,
+    AllHTMLAttributes: AllHTMLAttributes[
+      HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
+    ] = null,
     allowDisabledFocus: js.UndefOr[Boolean] = js.undefined,
     ariaDescription: String = null,
     ariaHidden: js.UndefOr[Boolean] = js.undefined,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "baidumap-web-sdk"
-version := "v3.0-dt-20190613Z-e729c7"
+version := "v3.0-dt-20190826Z-aef897"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

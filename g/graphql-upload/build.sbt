@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-upload"
-version := "8.0-dt-20190823Z-c30194"
+version := "8.0-dt-20190826Z-c30194"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

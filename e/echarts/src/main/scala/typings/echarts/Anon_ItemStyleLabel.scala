@@ -8,7 +8,7 @@ trait Anon_ItemStyleLabel extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.emphasis.label
     */
@@ -18,7 +18,7 @@ trait Anon_ItemStyleLabel extends js.Object {
 object Anon_ItemStyleLabel {
   @scala.inline
   def apply(
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
     label: Anon_AlignBackgroundColorBorderColor = null
   ): Anon_ItemStyleLabel = {
     val __obj = js.Dynamic.literal()

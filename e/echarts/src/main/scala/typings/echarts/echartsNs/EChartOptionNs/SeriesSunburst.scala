@@ -1,7 +1,7 @@
 package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_Downplay
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight
 import typings.echarts.echartsNs.EChartOptionNs.SeriesSunburstNs.DataObject
@@ -273,7 +273,7 @@ trait SeriesSunburst extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -446,7 +446,7 @@ object SeriesSunburst {
     highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
     highlightPolicy: String = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle = null,
     levels: Anon_Downplay = null,
     name: String = null,

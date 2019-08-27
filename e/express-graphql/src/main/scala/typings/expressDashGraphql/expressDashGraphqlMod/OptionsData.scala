@@ -6,10 +6,13 @@ import typings.graphql.executionExecuteMod.ExecutionResult
 import typings.graphql.executionExecuteMod.ExecutionResultDataDefault
 import typings.graphql.graphqlMod.GraphQLError
 import typings.graphql.graphqlMod.GraphQLSchema
+import typings.graphql.graphqlMod.Source
 import typings.graphql.graphqlMod.ValidationContext
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageVisitorMod.ASTVisitor
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
+import typings.graphql.validationValidationContextMod.ValidationRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +36,11 @@ trait OptionsData extends js.Object {
     */
   var customFormatErrorFn: js.UndefOr[(js.Function1[/* error */ GraphQLError, _]) | Null] = js.undefined
   /**
+    * An optional function which will be used to create a document instead of
+    * the default `parse` from `graphql-js`.
+    */
+  var customParseFn: js.UndefOr[js.Function1[/* source */ Source, DocumentNode | Null]] = js.undefined
+  /**
     * An optional function which will be used to validate instead of default `validate`
     * from `graphql-js`.
     */
@@ -40,7 +48,7 @@ trait OptionsData extends js.Object {
     (js.Function3[
       /* schema */ GraphQLSchema, 
       /* documentAST */ DocumentNode, 
-      /* rules */ js.Array[_], 
+      /* rules */ js.Array[ValidationRule], 
       js.Array[GraphQLError]
     ]) | Null
   ] = js.undefined
@@ -83,6 +91,12 @@ trait OptionsData extends js.Object {
     */
   var schema: GraphQLSchema
   /**
+    * A type resolver function to use when none is provided by the schema.
+    * If not provided, the default type resolver is used (which looks for a
+    * `__typename` field or alternatively calls the `isTypeOf` method).
+    */
+  var typeResolver: js.UndefOr[(GraphQLTypeResolver[_, _, StringDictionary[_]]) | Null] = js.undefined
+  /**
     * An optional array of validation rules that will be applied on the document
     * in additional to those defined by the GraphQL spec.
     */
@@ -96,19 +110,22 @@ object OptionsData {
     context: js.Any = null,
     customExecuteFn: /* args */ ExecutionArgs => js.Promise[ExecutionResult[ExecutionResultDataDefault]] = null,
     customFormatErrorFn: /* error */ GraphQLError => _ = null,
-    customValidateFn: (/* schema */ GraphQLSchema, /* documentAST */ DocumentNode, /* rules */ js.Array[_]) => js.Array[GraphQLError] = null,
+    customParseFn: /* source */ Source => DocumentNode | Null = null,
+    customValidateFn: (/* schema */ GraphQLSchema, /* documentAST */ DocumentNode, /* rules */ js.Array[ValidationRule]) => js.Array[GraphQLError] = null,
     extensions: /* info */ RequestInfo => StringDictionary[_] = null,
     fieldResolver: GraphQLFieldResolver[_, _, StringDictionary[_]] = null,
     formatError: /* error */ GraphQLError => _ = null,
     graphiql: js.UndefOr[Boolean] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
     rootValue: js.Any = null,
+    typeResolver: GraphQLTypeResolver[_, _, StringDictionary[_]] = null,
     validationRules: js.Array[js.Function1[/* ctx */ ValidationContext, ASTVisitor]] = null
   ): OptionsData = {
     val __obj = js.Dynamic.literal(schema = schema)
     if (context != null) __obj.updateDynamic("context")(context)
     if (customExecuteFn != null) __obj.updateDynamic("customExecuteFn")(js.Any.fromFunction1(customExecuteFn))
     if (customFormatErrorFn != null) __obj.updateDynamic("customFormatErrorFn")(js.Any.fromFunction1(customFormatErrorFn))
+    if (customParseFn != null) __obj.updateDynamic("customParseFn")(js.Any.fromFunction1(customParseFn))
     if (customValidateFn != null) __obj.updateDynamic("customValidateFn")(js.Any.fromFunction3(customValidateFn))
     if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver)
@@ -116,6 +133,7 @@ object OptionsData {
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (typeResolver != null) __obj.updateDynamic("typeResolver")(typeResolver)
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
     __obj.asInstanceOf[OptionsData]
   }

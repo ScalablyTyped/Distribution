@@ -5,9 +5,9 @@ import typings.echarts.Anon_AnimationAnimationDelay
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdate
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor
 import typings.echarts.Anon_ColorOpacityOrigin
-import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY
+import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor
 import typings.echarts.echartsNs.EChartOptionNs.SeriesLineNs.DataObject
 import scala.scalajs.js
@@ -460,7 +460,7 @@ trait SeriesLine extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -492,7 +492,7 @@ trait SeriesLine extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -898,10 +898,10 @@ object SeriesLine {
     encode: js.Object = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
+    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX = null,
     markArea: Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
     markLine: Anon_AnimationAnimationDelay = null,
     markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,

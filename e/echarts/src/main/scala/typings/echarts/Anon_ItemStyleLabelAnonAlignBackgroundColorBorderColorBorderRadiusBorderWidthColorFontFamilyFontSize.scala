@@ -8,7 +8,7 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWi
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label
     */
@@ -20,7 +20,7 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWi
 object Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize {
   @scala.inline
   def apply(
-    itemStyle: Anon_BorderColor = null,
+    itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize = null
   ): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize = {
     val __obj = js.Dynamic.literal()

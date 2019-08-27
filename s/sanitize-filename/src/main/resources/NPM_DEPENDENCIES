@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sanitize-filename" : "1.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sanitize-filename" : "1.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

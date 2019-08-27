@@ -1,7 +1,7 @@
 
 # Scala.js typings for throttle-debounce
 
-Typings are for version 1.1
+Typings are for version 2.1
 
 ## Library description:
 Throttle and debounce functions.

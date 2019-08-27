@@ -11,7 +11,7 @@ trait Anon_EmphasisLengthLength2LineStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine.emphasis
     */
-  var emphasis: js.UndefOr[Anon_LineStyle] = js.undefined
+  var emphasis: js.UndefOr[Anon_LineStyleShow] = js.undefined
   /**
     * The length of the first segment of visual guide line.
     *
@@ -51,7 +51,7 @@ trait Anon_EmphasisLengthLength2LineStyle extends js.Object {
 object Anon_EmphasisLengthLength2LineStyle {
   @scala.inline
   def apply(
-    emphasis: Anon_LineStyle = null,
+    emphasis: Anon_LineStyleShow = null,
     length: Int | Double = null,
     length2: Int | Double = null,
     lineStyle: Anon_ColorOpacityShadowBlur = null,

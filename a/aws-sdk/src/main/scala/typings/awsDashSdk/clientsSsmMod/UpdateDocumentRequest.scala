@@ -18,7 +18,7 @@ trait UpdateDocumentRequest extends js.Object {
     */
   var DocumentFormat: js.UndefOr[typings.awsDashSdk.clientsSsmMod.DocumentFormat] = js.undefined
   /**
-    * The version of the document that you want to update.
+    * (Required) The version of the document that you want to update. 
     */
   var DocumentVersion: js.UndefOr[typings.awsDashSdk.clientsSsmMod.DocumentVersion] = js.undefined
   /**

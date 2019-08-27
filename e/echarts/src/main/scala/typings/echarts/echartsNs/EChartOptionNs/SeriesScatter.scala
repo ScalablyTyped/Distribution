@@ -5,7 +5,7 @@ import typings.echarts.Anon_AnimationAnimationDelay
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdate
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor
 import typings.echarts.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject
 import scala.scalajs.js
@@ -456,7 +456,7 @@ trait SeriesScatter extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -801,7 +801,7 @@ object SeriesScatter {
     geoIndex: Int | Double = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     large: js.UndefOr[Boolean] = js.undefined,
     largeThreshold: Int | Double = null,

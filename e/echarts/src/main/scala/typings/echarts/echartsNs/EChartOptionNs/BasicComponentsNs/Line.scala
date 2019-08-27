@@ -1,6 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs
 
-import typings.echarts.Anon_Color
+import typings.echarts.echartsNs.EChartOptionNs.LineStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * @todo describe
   */
 trait Line extends js.Object {
-  var lineStyle: js.UndefOr[Anon_Color] = js.undefined
+  var lineStyle: js.UndefOr[LineStyle] = js.undefined
   var onZero: js.UndefOr[Boolean] = js.undefined
   var onZeroAxisIndex: js.UndefOr[Double] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
@@ -21,7 +21,7 @@ trait Line extends js.Object {
 object Line {
   @scala.inline
   def apply(
-    lineStyle: Anon_Color = null,
+    lineStyle: LineStyle = null,
     onZero: js.UndefOr[Boolean] = js.undefined,
     onZeroAxisIndex: Int | Double = null,
     show: js.UndefOr[Boolean] = js.undefined,

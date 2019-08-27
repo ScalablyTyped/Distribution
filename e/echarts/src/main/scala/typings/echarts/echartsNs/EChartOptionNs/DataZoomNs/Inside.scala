@@ -39,6 +39,7 @@ trait Inside extends DataZoom {
   var preventDefaultMouseMove: js.UndefOr[Boolean] = js.undefined
   var radiusAxisIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var rangeMode: js.UndefOr[js.Array[String]] = js.undefined
+  var singleAxisIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var start: js.UndefOr[Double] = js.undefined
   var startValue: js.UndefOr[Double | String | Date] = js.undefined
   var throttle: js.UndefOr[Double] = js.undefined
@@ -68,6 +69,7 @@ object Inside {
     preventDefaultMouseMove: js.UndefOr[Boolean] = js.undefined,
     radiusAxisIndex: Double | js.Array[Double] = null,
     rangeMode: js.Array[String] = null,
+    singleAxisIndex: Double | js.Array[Double] = null,
     start: Int | Double = null,
     startValue: Double | String | Date = null,
     throttle: Int | Double = null,
@@ -94,6 +96,7 @@ object Inside {
     if (!js.isUndefined(preventDefaultMouseMove)) __obj.updateDynamic("preventDefaultMouseMove")(preventDefaultMouseMove)
     if (radiusAxisIndex != null) __obj.updateDynamic("radiusAxisIndex")(radiusAxisIndex.asInstanceOf[js.Any])
     if (rangeMode != null) __obj.updateDynamic("rangeMode")(rangeMode)
+    if (singleAxisIndex != null) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "signalr-no-jquery"
-version := "0.1-dt-20180214Z-dcc08b"
+version := "0.1-dt-20190826Z-1e68da"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

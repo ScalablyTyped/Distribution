@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.9.0-f822fe"
+version := "2.9.0-5501dd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-3d2732",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-f86490",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-553b94",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.9.0-7fdef5",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.9.0-4f6c6f",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.1-46a101",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.1-6f5ff4",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.9.0-bfd0ae",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.9.0-e6763a",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.1-b29926",
   "org.scalablytyped" %%% "apollo-server-types" % "0.2.1-e09ad2",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.4.0-b7b2ff",
@@ -32,7 +32,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "graphql-extensions" % "0.10.0-591b36",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-62a306",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.5-f01933",
-  "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190823Z-c30194",
+  "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190826Z-c30194",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-2d2be7",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-21a720",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",

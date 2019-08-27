@@ -12,7 +12,7 @@ trait TailOptions extends js.Object {
   var fromBeginning: js.UndefOr[Boolean] = js.undefined
   var fsWatchOptions: js.UndefOr[Record[String, _]] = js.undefined
   var logger: js.UndefOr[js.Any] = js.undefined
-  var separator: js.UndefOr[String | RegExp] = js.undefined
+  var separator: js.UndefOr[String | RegExp | Null] = js.undefined
   var useWatchFile: js.UndefOr[Boolean] = js.undefined
 }
 

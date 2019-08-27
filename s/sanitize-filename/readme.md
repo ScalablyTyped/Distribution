@@ -1,7 +1,7 @@
 
 # Scala.js typings for sanitize-filename
 
-Typings are for version v1.1.1
+Typings are for version 1.6.3
 
 ## Library description:
 Sanitize a string for use as a filename
@@ -24,7 +24,7 @@ Sanitize a string for use as a filename
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

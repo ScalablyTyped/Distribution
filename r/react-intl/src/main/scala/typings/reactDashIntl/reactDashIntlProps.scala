@@ -1,6 +1,5 @@
 package typings.reactDashIntl
 
-import typings.reactDashIntl.distComponentsInjectIntlMod.WithIntlProps
 import typings.reactDashIntl.distComponentsMessageMod.Props
 import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
 import typings.std.Record
@@ -15,7 +14,6 @@ trait reactDashIntlProps {
   @scala.inline
   def FormattedMessageProps: Props.type = typings.reactDashIntl.distComponentsMessageMod.Props
   type FormattedMessageProps[V /* <: Record[String, _] */] = Props[V]
-  type FormattedPluralProps[P] = WithIntlProps[P]
   @scala.inline
   def FormattedRelativeTimeProps: typings.reactDashIntl.distComponentsRelativeMod.Props.type = typings.reactDashIntl.distComponentsRelativeMod.Props
   type FormattedRelativeTimeProps = typings.reactDashIntl.distComponentsRelativeMod.Props
@@ -26,7 +24,6 @@ trait reactDashIntlProps {
   @scala.inline
   def MessageProps: Props.type = typings.reactDashIntl.distComponentsMessageMod.Props
   type MessageProps[V /* <: Record[String, _] */] = Props[V]
-  type PluralProps[P] = WithIntlProps[P]
   @scala.inline
   def ProviderProps: typings.react.reactMod.ProviderProps.type = typings.react.reactMod.ProviderProps
   type ProviderProps[T] = typings.react.reactMod.ProviderProps[T]

@@ -3,9 +3,9 @@ package typings.echarts.echartsNs.EChartOptionNs
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
 import typings.echarts.Anon_AreaStyle
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
+import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX
 import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY
-import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber
 import typings.echarts.echartsNs.EChartOptionNs.SeriesRadarNs.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -130,7 +130,7 @@ trait SeriesRadar extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.areaStyle
     */
-  var areaStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber] = js.undefined
+  var areaStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * The data in radar chart is multi-variable (dimension).
     * Here is an example:
@@ -165,7 +165,7 @@ trait SeriesRadar extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -186,7 +186,7 @@ trait SeriesRadar extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -380,13 +380,13 @@ object SeriesRadar {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    areaStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber = null,
+    areaStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
     data: js.Array[DataObject] = null,
     emphasis: Anon_AreaStyle = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
-    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
+    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX = null,
     name: String = null,
     radarIndex: Int | Double = null,
     silent: js.UndefOr[Boolean] = js.undefined,

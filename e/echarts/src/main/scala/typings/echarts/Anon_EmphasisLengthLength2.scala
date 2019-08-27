@@ -17,7 +17,7 @@ trait Anon_EmphasisLengthLength2
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.emphasis
     */
-  var emphasis: js.UndefOr[Anon_LineStyle] = js.undefined
+  var emphasis: js.UndefOr[Anon_LineStyleShow] = js.undefined
   /**
     * The length of the first segment of visual guide line.
     *
@@ -62,7 +62,7 @@ object Anon_EmphasisLengthLength2 {
     * Please, write description for them
     */
   /* unknownProperty */ StringDictionary[js.Any] = null,
-    emphasis: Anon_LineStyle = null,
+    emphasis: Anon_LineStyleShow = null,
     length: Int | Double = null,
     length2: Int | Double = null,
     lineStyle: Anon_ColorOpacityShadowBlur = null,

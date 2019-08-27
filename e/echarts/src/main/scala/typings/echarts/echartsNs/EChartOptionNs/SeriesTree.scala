@@ -2,7 +2,7 @@ package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_ColorCurvenessShadowBlur
 import typings.echarts.Anon_EmphasisItemStyleLabel
 import typings.echarts.Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor
@@ -129,7 +129,7 @@ trait SeriesTree extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * `label` describes the style of the text corresponding to each
     * node.
@@ -430,7 +430,7 @@ object SeriesTree {
     height: Double | String = null,
     id: String = null,
     initialTreeDepth: Int | Double = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     layout: String = null,
     leaves: Anon_EmphasisItemStyleLabel = null,

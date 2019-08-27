@@ -87,7 +87,7 @@ trait CartesianAxis extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.data
     */
-  var data: js.UndefOr[js.Array[String | DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[String | Double | DataObject]] = js.undefined
   /**
     * The index of grid which this axis belongs to.
     * Defaults to be in the first grid.
@@ -315,7 +315,7 @@ object CartesianAxis {
     axisPointer: Pointer = null,
     axisTick: Tick = null,
     boundaryGap: Boolean | (js.Array[String | Double]) = null,
-    data: js.Array[String | DataObject] = null,
+    data: js.Array[String | Double | DataObject] = null,
     gridIndex: Int | Double = null,
     id: String = null,
     interval: Int | Double = null,

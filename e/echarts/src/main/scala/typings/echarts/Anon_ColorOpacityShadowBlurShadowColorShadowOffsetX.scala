@@ -6,29 +6,31 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX extends js.Object {
   /**
-    * The axis line of gauge chart can be divided to several
-    * segments in different colors.
-    * The end position and color of each segment can be expressed
-    * by an array.
+    * Line color.
     *
-    * Default value:
+    * > Color can be represented in RGB, for example `'rgb(128,
+    * 128, 128)'`.
+    * RGBA can be used when you need alpha channel, for example
+    * `'rgba(128, 128, 128, 0.5)'`.
+    * You may also use hexadecimal format, for example `'#ccc'`.
+    * Gradient color and texture are also supported besides
+    * single colors.
+    * >
+    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar.data.lineStyle)
     *
-    * ```
-    * [[0.2, '#91c7ae'], [0.8, '#63869e'], [1, '#c23531']]
     *
-    * ```
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.color
+    * @default
+    * "#000"
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.color
     */
-  var color: js.UndefOr[js.Array[_]] = js.undefined
+  var color: js.UndefOr[String] = js.undefined
   /**
     * Opacity of the component.
     * Supports value from 0 to 1, and the component will not
     * be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.opacity
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -38,40 +40,53 @@ trait Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge.axisLine.lineStyle)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar.data.lineStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
-    * The width of axis line.
+    * line type.
+    *
+    * Options are:
+    *
+    * + `'solid'`
+    * + `'dashed'`
+    * + `'dotted'`
     *
     *
     * @default
-    * 30
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.width
+    * "solid"
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.type
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+  /**
+    * line width.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -79,12 +94,13 @@ trait Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX extends js.Object {
 object Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX {
   @scala.inline
   def apply(
-    color: js.Array[_] = null,
+    color: String = null,
     opacity: Int | Double = null,
     shadowBlur: Int | Double = null,
     shadowColor: String = null,
     shadowOffsetX: Int | Double = null,
     shadowOffsetY: Int | Double = null,
+    `type`: String = null,
     width: Int | Double = null
   ): Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX = {
     val __obj = js.Dynamic.literal()
@@ -94,6 +110,7 @@ object Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX {
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX]
   }

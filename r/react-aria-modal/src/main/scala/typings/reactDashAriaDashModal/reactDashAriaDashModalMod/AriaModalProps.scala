@@ -102,6 +102,15 @@ trait AriaModalProps extends js.Object {
     */
   var onEnter: js.UndefOr[js.Function0[_]] = js.undefined
   /**
+    * This function needs to handles the state change of exiting (or deactivating) the modal.
+    * Maybe it's just a wrapper around `setState()`; or maybe you use some more involved
+    * Flux-inspired state management — whatever the case, this module leaves the state
+    * management up to you instead of making assumptions.
+    * That also makes it easier to create your own "close modal" buttons; because you
+    * have the function that closes the modal right there, written by you, at your disposal.
+    */
+  var onExit: js.UndefOr[js.Function0[_]] = js.undefined
+  /**
     * If true, the modal dialog will prevent any scrolling behind the modal window.
     */
   var scrollDisabled: js.UndefOr[Boolean] = js.undefined
@@ -151,21 +160,11 @@ trait AriaModalProps extends js.Object {
     * If `true`, the modal's contents will be vertically (as well as horizontally) centered.
     */
   var verticallyCenter: js.UndefOr[Boolean] = js.undefined
-  /**
-    * This function needs to handles the state change of exiting (or deactivating) the modal.
-    * Maybe it's just a wrapper around `setState()`; or maybe you use some more involved
-    * Flux-inspired state management — whatever the case, this module leaves the state
-    * management up to you instead of making assumptions.
-    * That also makes it easier to create your own "close modal" buttons; because you
-    * have the function that closes the modal right there, written by you, at your disposal.
-    */
-  def onExit(): js.Any
 }
 
 object AriaModalProps {
   @scala.inline
   def apply(
-    onExit: () => js.Any,
     alert: js.UndefOr[Boolean] = js.undefined,
     applicationNode: Node | Element = null,
     dialogClass: String = null,
@@ -180,6 +179,7 @@ object AriaModalProps {
     initialFocus: String = null,
     mounted: js.UndefOr[Boolean] = js.undefined,
     onEnter: () => _ = null,
+    onExit: () => _ = null,
     scrollDisabled: js.UndefOr[Boolean] = js.undefined,
     titleId: String = null,
     titleText: String = null,
@@ -189,7 +189,7 @@ object AriaModalProps {
     underlayStyle: CSSProperties = null,
     verticallyCenter: js.UndefOr[Boolean] = js.undefined
   ): AriaModalProps = {
-    val __obj = js.Dynamic.literal(onExit = js.Any.fromFunction0(onExit))
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert)
     if (applicationNode != null) __obj.updateDynamic("applicationNode")(applicationNode.asInstanceOf[js.Any])
     if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass)
@@ -204,6 +204,7 @@ object AriaModalProps {
     if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus)
     if (!js.isUndefined(mounted)) __obj.updateDynamic("mounted")(mounted)
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
+    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction0(onExit))
     if (!js.isUndefined(scrollDisabled)) __obj.updateDynamic("scrollDisabled")(scrollDisabled)
     if (titleId != null) __obj.updateDynamic("titleId")(titleId)
     if (titleText != null) __obj.updateDynamic("titleText")(titleText)

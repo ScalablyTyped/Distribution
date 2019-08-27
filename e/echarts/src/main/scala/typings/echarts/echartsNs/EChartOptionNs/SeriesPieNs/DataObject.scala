@@ -2,7 +2,7 @@ package typings.echarts.echartsNs.EChartOptionNs.SeriesPieNs
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_EmphasisLengthLength2LineStyle
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * The label configuration of a single sector.
     *
@@ -74,7 +74,7 @@ object DataObject {
   @scala.inline
   def apply(
     emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle = null,
     labelLine: Anon_EmphasisLengthLength2LineStyle = null,
     name: String = null,

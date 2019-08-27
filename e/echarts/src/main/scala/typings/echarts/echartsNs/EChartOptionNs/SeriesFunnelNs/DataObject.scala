@@ -2,7 +2,7 @@ package typings.echarts.echartsNs.EChartOptionNs.SeriesFunnelNs
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_EmphasisLength
 import typings.echarts.Anon_ItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * The label configuration of a single data item.
     *
@@ -64,7 +64,7 @@ object DataObject {
   @scala.inline
   def apply(
     emphasis: Anon_ItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle = null,
     labelLine: Anon_EmphasisLength = null,
     name: String = null,

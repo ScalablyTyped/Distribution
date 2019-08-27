@@ -12,7 +12,7 @@ trait PolygonOptions extends js.Object {
   var fillOpacity: js.UndefOr[Double] = js.undefined
   var strokeColor: js.UndefOr[String] = js.undefined
   var strokeOpacity: js.UndefOr[Double] = js.undefined
-  var strokeStyle: js.UndefOr[Double] = js.undefined
+  var strokeStyle: js.UndefOr[String] = js.undefined
   var strokeWeight: js.UndefOr[Double] = js.undefined
 }
 
@@ -26,7 +26,7 @@ object PolygonOptions {
     fillOpacity: Int | Double = null,
     strokeColor: String = null,
     strokeOpacity: Int | Double = null,
-    strokeStyle: Int | Double = null,
+    strokeStyle: String = null,
     strokeWeight: Int | Double = null
   ): PolygonOptions = {
     val __obj = js.Dynamic.literal()
@@ -37,7 +37,7 @@ object PolygonOptions {
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
     if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonOptions]
   }

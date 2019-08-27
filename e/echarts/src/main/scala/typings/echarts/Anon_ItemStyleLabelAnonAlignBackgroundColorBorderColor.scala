@@ -8,7 +8,7 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.emphasis.label
     */
@@ -17,7 +17,7 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor extends js.Object {
 
 object Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor {
   @scala.inline
-  def apply(itemStyle: Anon_BorderColor = null, label: Anon_AlignBackgroundColorBorderColor = null): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = {
+  def apply(itemStyle: Anon_BorderColorBorderType = null, label: Anon_AlignBackgroundColorBorderColor = null): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (label != null) __obj.updateDynamic("label")(label)

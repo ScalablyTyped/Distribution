@@ -1,7 +1,7 @@
 
 # Scala.js typings for mermaid
 
-Typings are for version 8.0
+Typings are for version 8.2
 
 ## Library description:
 Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.

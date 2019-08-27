@@ -103,6 +103,10 @@ trait PaymentIntent extends js.Object {
     */
   var on_behalf_of: String | Null
   /**
+    * ID of the payment method used in this PaymentIntent.
+    */
+  var payment_method: String | Null
+  /**
     * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
     */
   var payment_method_types: js.Array[String]
@@ -118,6 +122,12 @@ trait PaymentIntent extends js.Object {
     * Shipping information for this PaymentIntent.
     */
   var shipping: ShippingDetails | Null
+  /**
+    * The ID of a Source (e.g. 'src_abc123' or 'card_abc123').
+    * Will be null unless this PaymentIntent was created with a source
+    * instead of a payment_method. (Undocumented as of August 2019)
+    */
+  var source: String | Null
   /**
     * Extra information about a PaymentIntent. This will appear on your
     * customer’s statement when this PaymentIntent succeeds in creating a charge.
@@ -164,9 +174,11 @@ object PaymentIntent {
     description: String = null,
     last_payment_error: Error = null,
     on_behalf_of: String = null,
+    payment_method: String = null,
     receipt_email: String = null,
     review: String = null,
     shipping: ShippingDetails = null,
+    source: String = null,
     statement_descriptor: String = null,
     transfer_data: Anon_Destination = null,
     transfer_group: String = null
@@ -181,9 +193,11 @@ object PaymentIntent {
     if (description != null) __obj.updateDynamic("description")(description)
     if (last_payment_error != null) __obj.updateDynamic("last_payment_error")(last_payment_error)
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (review != null) __obj.updateDynamic("review")(review)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)

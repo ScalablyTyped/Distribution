@@ -44,6 +44,7 @@ trait Slider extends DataZoom {
   var show: js.UndefOr[Boolean] = js.undefined
   var showDataShadow: js.UndefOr[String] = js.undefined
   var showDetail: js.UndefOr[Boolean] = js.undefined
+  var singleAxisIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var start: js.UndefOr[Double] = js.undefined
   var startValue: js.UndefOr[Double | String | Date] = js.undefined
   var textStyle: js.UndefOr[js.Object] = js.undefined
@@ -88,6 +89,7 @@ object Slider {
     show: js.UndefOr[Boolean] = js.undefined,
     showDataShadow: String = null,
     showDetail: js.UndefOr[Boolean] = js.undefined,
+    singleAxisIndex: Double | js.Array[Double] = null,
     start: Int | Double = null,
     startValue: Double | String | Date = null,
     textStyle: js.Object = null,
@@ -129,6 +131,7 @@ object Slider {
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (showDataShadow != null) __obj.updateDynamic("showDataShadow")(showDataShadow)
     if (!js.isUndefined(showDetail)) __obj.updateDynamic("showDetail")(showDetail)
+    if (singleAxisIndex != null) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)

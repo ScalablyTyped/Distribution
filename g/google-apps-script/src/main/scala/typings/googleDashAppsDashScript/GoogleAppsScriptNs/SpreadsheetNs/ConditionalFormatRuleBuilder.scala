@@ -12,6 +12,7 @@ trait ConditionalFormatRuleBuilder extends js.Object {
   def getBooleanCondition(): BooleanCondition = js.native
   def getGradientCondition(): GradientCondition = js.native
   def getRanges(): js.Array[Range] = js.native
+  def setBackground(): ConditionalFormatRuleBuilder = js.native
   def setBackground(color: String): ConditionalFormatRuleBuilder = js.native
   def setBold(bold: Boolean): ConditionalFormatRuleBuilder = js.native
   def setFontColor(color: String): ConditionalFormatRuleBuilder = js.native

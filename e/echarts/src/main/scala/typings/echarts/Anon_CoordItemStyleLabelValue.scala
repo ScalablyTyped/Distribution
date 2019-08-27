@@ -25,7 +25,7 @@ trait Anon_CoordItemStyleLabelValue extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markArea.data.1.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Label style of the item.
     * Label style of start point and end point will be
@@ -90,7 +90,7 @@ object Anon_CoordItemStyleLabelValue {
   @scala.inline
   def apply(
     coord: js.Array[_] = null,
-    itemStyle: Anon_BorderColorBorderType = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
     value: Int | Double = null,
     valueDim: String = null,

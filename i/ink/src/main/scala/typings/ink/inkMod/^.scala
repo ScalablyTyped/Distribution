@@ -16,6 +16,7 @@ object ^ extends js.Object {
   val Bold: InkComponent[js.Object] = js.native
   val Color: ComponentClass[Anon_BgBlack, js.Object, js.Object] = js.native
   val Fragment: InkComponent[js.Object] = js.native
+  val Indent: ComponentClass[js.Object, js.Object, js.Object] = js.native
   val Underline: InkComponent[js.Object] = js.native
   def h[P /* <: Record[String, _] */](`type`: ComponentClass[P, _, _], props: P, children: InkNode*): InkElement = js.native
   def h[P /* <: Record[String, _] */](`type`: StatelessComponent[P, _], props: P, children: InkNode*): InkElement = js.native

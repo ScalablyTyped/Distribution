@@ -5,7 +5,7 @@ import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimation
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
 import typings.echarts.Anon_EmphasisLength
 import typings.echarts.Anon_ItemStyleLabelLabelLine
 import typings.echarts.echartsNs.EChartOptionNs.SeriesFunnelNs.DataObject
@@ -206,7 +206,7 @@ trait SeriesFunnel extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
     * Text label of funnel chart, to explain some data information
     * about graphic item like value, name and so on.
@@ -391,7 +391,7 @@ object SeriesFunnel {
     funnelAlign: String = null,
     gap: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     labelLine: Anon_EmphasisLength = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,

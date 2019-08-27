@@ -1,7 +1,7 @@
 package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY
+import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX
 import typings.echarts.Anon_LineStyleAnonColorOpacityShadowBlur
 import typings.echarts.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
 import scala.scalajs.js
@@ -293,7 +293,7 @@ trait SeriesParallel extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -448,7 +448,7 @@ object SeriesParallel {
     emphasis: Anon_LineStyleAnonColorOpacityShadowBlur = null,
     id: String = null,
     inactiveOpacity: Int | Double = null,
-    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
+    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX = null,
     name: String = null,
     parallelIndex: Int | Double = null,
     progressive: Int | Double = null,

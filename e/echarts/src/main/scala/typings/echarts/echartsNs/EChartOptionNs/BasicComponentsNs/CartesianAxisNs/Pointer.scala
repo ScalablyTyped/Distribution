@@ -1,8 +1,8 @@
 package typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs
 
 import typings.echarts.Anon_ColorIcon
-import typings.echarts.Anon_ColorOpacityShadowBlur
-import typings.echarts.Anon_ColorOpacityShadowBlurShadowColor
+import typings.echarts.Anon_ColorOpacity
+import typings.echarts.echartsNs.EChartOptionNs.LineStyle
 import typings.echarts.echartsStrings.line
 import typings.echarts.echartsStrings.none
 import typings.echarts.echartsStrings.shadow
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait Pointer extends js.Object {
   var handle: js.UndefOr[Anon_ColorIcon] = js.undefined
   var label: js.UndefOr[PointerLabel] = js.undefined
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
-  var shadowStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[LineStyle] = js.undefined
+  var shadowStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
   var snap: js.UndefOr[Boolean] = js.undefined
   var status: js.UndefOr[Boolean] = js.undefined
@@ -32,8 +32,8 @@ object Pointer {
   def apply(
     handle: Anon_ColorIcon = null,
     label: PointerLabel = null,
-    lineStyle: Anon_ColorOpacityShadowBlur = null,
-    shadowStyle: Anon_ColorOpacityShadowBlurShadowColor = null,
+    lineStyle: LineStyle = null,
+    shadowStyle: Anon_ColorOpacity = null,
     show: js.UndefOr[Boolean] = js.undefined,
     snap: js.UndefOr[Boolean] = js.undefined,
     status: js.UndefOr[Boolean] = js.undefined,

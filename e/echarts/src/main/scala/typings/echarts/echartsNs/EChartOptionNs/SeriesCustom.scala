@@ -2,8 +2,8 @@ package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_Arguments
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
-import typings.echarts.Anon_ItemStyleAnonBorderColor
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
+import typings.echarts.Anon_ItemStyleAnonBorderColorBorderType
 import typings.echarts.echartsNs.EChartOptionNs.SeriesCustomNs.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -488,7 +488,7 @@ trait SeriesCustom extends Series {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColor] = js.undefined
+  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -552,7 +552,7 @@ trait SeriesCustom extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
@@ -763,11 +763,11 @@ object SeriesCustom {
     ] = null,
     datasetIndex: Int | Double = null,
     dimensions: js.Array[_] = null,
-    emphasis: Anon_ItemStyleAnonBorderColor = null,
+    emphasis: Anon_ItemStyleAnonBorderColorBorderType = null,
     encode: js.Object = null,
     geoIndex: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     polarIndex: Int | Double = null,

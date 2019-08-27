@@ -66,6 +66,9 @@ object reactDashIntlStrings {
   sealed trait caption extends js.Object
   
   @js.native
+  sealed trait children extends js.Object
+  
+  @js.native
   sealed trait cite extends js.Object
   
   @js.native
@@ -123,6 +126,9 @@ object reactDashIntlStrings {
   sealed trait embed extends js.Object
   
   @js.native
+  sealed trait few extends js.Object
+  
+  @js.native
   sealed trait fieldset extends js.Object
   
   @js.native
@@ -136,6 +142,9 @@ object reactDashIntlStrings {
   
   @js.native
   sealed trait form extends js.Object
+  
+  @js.native
+  sealed trait format extends js.Object
   
   @js.native
   sealed trait formats extends js.Object
@@ -216,6 +225,9 @@ object reactDashIntlStrings {
   sealed trait main extends js.Object
   
   @js.native
+  sealed trait many extends js.Object
+  
+  @js.native
   sealed trait map extends js.Object
   
   @js.native
@@ -258,10 +270,16 @@ object reactDashIntlStrings {
   sealed trait onError extends js.Object
   
   @js.native
+  sealed trait one extends js.Object
+  
+  @js.native
   sealed trait optgroup extends js.Object
   
   @js.native
   sealed trait option extends js.Object
+  
+  @js.native
+  sealed trait other extends js.Object
   
   @js.native
   sealed trait output extends js.Object
@@ -381,6 +399,12 @@ object reactDashIntlStrings {
   sealed trait track extends js.Object
   
   @js.native
+  sealed trait two extends js.Object
+  
+  @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
   sealed trait u extends js.Object
   
   @js.native
@@ -409,6 +433,9 @@ object reactDashIntlStrings {
   
   @js.native
   sealed trait year extends js.Object
+  
+  @js.native
+  sealed trait zero extends js.Object
   
   @scala.inline
   def Messages: Messages = "Messages".asInstanceOf[Messages]
@@ -451,6 +478,8 @@ object reactDashIntlStrings {
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
+  def children: children = "children".asInstanceOf[children]
+  @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
   def code: code = "code".asInstanceOf[code]
@@ -489,6 +518,8 @@ object reactDashIntlStrings {
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
+  def few: few = "few".asInstanceOf[few]
+  @scala.inline
   def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   @scala.inline
   def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
@@ -498,6 +529,8 @@ object reactDashIntlStrings {
   def footer: footer = "footer".asInstanceOf[footer]
   @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
+  def format: format = "format".asInstanceOf[format]
   @scala.inline
   def formats: formats = "formats".asInstanceOf[formats]
   @scala.inline
@@ -551,6 +584,8 @@ object reactDashIntlStrings {
   @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
+  def many: many = "many".asInstanceOf[many]
+  @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
@@ -579,9 +614,13 @@ object reactDashIntlStrings {
   @scala.inline
   def onError: onError = "onError".asInstanceOf[onError]
   @scala.inline
+  def one: one = "one".asInstanceOf[one]
+  @scala.inline
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
@@ -661,6 +700,10 @@ object reactDashIntlStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
+  def two: two = "two".asInstanceOf[two]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
@@ -680,5 +723,7 @@ object reactDashIntlStrings {
   def week: week = "week".asInstanceOf[week]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def zero: zero = "zero".asInstanceOf[zero]
 }
 

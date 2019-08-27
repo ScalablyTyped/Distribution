@@ -18,6 +18,11 @@ trait HandleCardPaymentWithoutElementsOptions extends HandleCardPaymentOptions {
     */
   @JSName("payment_method_data")
   var payment_method_data_HandleCardPaymentWithoutElementsOptions: js.UndefOr[Anon_BillingdetailsCard] = js.undefined
+  /**
+    * Instead of payment_method, the ID of a Source may be passed in.
+    * (Note that this is undocumented as of August 2019).
+    */
+  var source: js.UndefOr[String] = js.undefined
 }
 
 object HandleCardPaymentWithoutElementsOptions {
@@ -27,7 +32,8 @@ object HandleCardPaymentWithoutElementsOptions {
     payment_method_data: Anon_BillingdetailsCard = null,
     receipt_email: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
-    shipping: ShippingDetails = null
+    shipping: ShippingDetails = null,
+    source: String = null
   ): HandleCardPaymentWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
@@ -35,6 +41,7 @@ object HandleCardPaymentWithoutElementsOptions {
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[HandleCardPaymentWithoutElementsOptions]
   }
 }

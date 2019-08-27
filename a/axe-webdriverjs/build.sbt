@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "axe-webdriverjs"
-version := "2.1-dt-20190329Z-7c8ce1"
+version := "2.1-dt-20190329Z-2497c8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axe-core" % "3.3.1-8ecf58",
+  "org.scalablytyped" %%% "axe-core" % "3.3.2-1d5b0b",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20190819Z-387661",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")
 publishArtifact in packageDoc := false

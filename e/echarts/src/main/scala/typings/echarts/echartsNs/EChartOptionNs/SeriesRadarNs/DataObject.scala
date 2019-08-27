@@ -4,8 +4,8 @@ import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWid
 import typings.echarts.Anon_AreaStyleItemStyle
 import typings.echarts.Anon_BackgroundColorBorderColor
 import typings.echarts.Anon_BarBorderColorBarBorderWidthColor
+import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX
 import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY
-import typings.echarts.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.areaStyle
     */
-  var areaStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber] = js.undefined
+  var areaStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis
     */
@@ -44,7 +44,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
   /**
     * Data item name
     *
@@ -165,11 +165,11 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    areaStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber = null,
+    areaStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
     emphasis: Anon_AreaStyleItemStyle = null,
     itemStyle: Anon_BarBorderColorBarBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
-    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
+    lineStyle: Anon_ColorOpacityShadowBlurShadowColorShadowOffsetX = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,

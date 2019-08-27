@@ -22,7 +22,7 @@ trait CreateAssociationRequest extends js.Object {
     */
   var DocumentVersion: js.UndefOr[typings.awsDashSdk.clientsSsmMod.DocumentVersion] = js.undefined
   /**
-    * The instance ID.
+    * The instance ID.   InstanceId has been deprecated. To specify an instance ID for an association, use the Targets parameter. If you use the parameter InstanceId, you cannot use the parameters AssociationName, DocumentVersion, MaxErrors, MaxConcurrency, OutputLocation, or ScheduleExpression. To use these parameters, you must use the Targets parameter. 
     */
   var InstanceId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.InstanceId] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait CreateAssociationRequest extends js.Object {
     */
   var ScheduleExpression: js.UndefOr[typings.awsDashSdk.clientsSsmMod.ScheduleExpression] = js.undefined
   /**
-    * The targets (either instances or tags) for the association.
+    * The targets (either instances or tags) for the association. You must specify a value for Targets if you don't specify a value for InstanceId.
     */
   var Targets: js.UndefOr[typings.awsDashSdk.clientsSsmMod.Targets] = js.undefined
 }

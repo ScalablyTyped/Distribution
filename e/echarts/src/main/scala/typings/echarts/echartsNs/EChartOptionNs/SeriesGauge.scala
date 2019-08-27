@@ -7,12 +7,12 @@ import typings.echarts.Anon_BackgroundColorBorderColor
 import typings.echarts.Anon_BackgroundColorBorderColorBorderRadius
 import typings.echarts.Anon_BackgroundColorBorderColorBorderRadiusBorderWidth
 import typings.echarts.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
-import typings.echarts.Anon_ItemStyleAnonBorderColor
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
+import typings.echarts.Anon_ItemStyleAnonBorderColorBorderType
 import typings.echarts.Anon_Length
 import typings.echarts.Anon_LengthLineStyle
 import typings.echarts.Anon_LengthShow
-import typings.echarts.Anon_LineStyleShow
+import typings.echarts.Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -138,7 +138,7 @@ trait SeriesGauge extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine
     */
-  var axisLine: js.UndefOr[Anon_LineStyleShow] = js.undefined
+  var axisLine: js.UndefOr[Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor] = js.undefined
   /**
     * The tick line style.
     *
@@ -165,7 +165,7 @@ trait SeriesGauge extends Series {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColor] = js.undefined
+  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
   /**
     * The end angle of gauge chart.
     *
@@ -190,7 +190,7 @@ trait SeriesGauge extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -332,14 +332,14 @@ object SeriesGauge {
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
     axisLabel: Anon_BackgroundColorBorderColorBorderRadius = null,
-    axisLine: Anon_LineStyleShow = null,
+    axisLine: Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor = null,
     axisTick: Anon_LengthLineStyle = null,
     clockwise: js.UndefOr[Boolean] = js.undefined,
     detail: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
-    emphasis: Anon_ItemStyleAnonBorderColor = null,
+    emphasis: Anon_ItemStyleAnonBorderColorBorderType = null,
     endAngle: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     markArea: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
     markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
     markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,

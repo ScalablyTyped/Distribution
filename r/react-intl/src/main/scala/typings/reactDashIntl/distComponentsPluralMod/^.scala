@@ -1,9 +1,21 @@
 package typings.reactDashIntl.distComponentsPluralMod
 
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.FunctionComponent
+import typings.react.reactMod.ForwardRefExoticComponent
+import typings.react.reactMod.RefAttributes
+import typings.reactDashIntl.Anon_ForwardedRefInstance
 import typings.reactDashIntl.Anon_WrappedComponentComponentType
-import typings.reactDashIntl.distComponentsInjectIntlMod.WithIntlProps
+import typings.reactDashIntl.reactDashIntlStrings.`type`
+import typings.reactDashIntl.reactDashIntlStrings.children
+import typings.reactDashIntl.reactDashIntlStrings.few
+import typings.reactDashIntl.reactDashIntlStrings.format
+import typings.reactDashIntl.reactDashIntlStrings.localeMatcher
+import typings.reactDashIntl.reactDashIntlStrings.many
+import typings.reactDashIntl.reactDashIntlStrings.one
+import typings.reactDashIntl.reactDashIntlStrings.other
+import typings.reactDashIntl.reactDashIntlStrings.two
+import typings.reactDashIntl.reactDashIntlStrings.value
+import typings.reactDashIntl.reactDashIntlStrings.zero
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +23,11 @@ import scala.scalajs.js.annotation._
 @JSImport("react-intl/dist/components/plural", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: ((ComponentClass[WithIntlProps[Props], _]) with Anon_WrappedComponentComponentType) | (FunctionComponent[WithIntlProps[Props]] with Anon_WrappedComponentComponentType) = js.native
+  val default: (ForwardRefExoticComponent[
+    (Pick[
+      Props, 
+      children | other | zero | one | two | few | many | `type` | localeMatcher | format | value
+    ]) with Anon_ForwardedRefInstance with RefAttributes[_]
+  ]) with Anon_WrappedComponentComponentType = js.native
 }
 

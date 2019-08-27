@@ -698,6 +698,7 @@ package object clientsSsmMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Standard
     - typings.awsDashSdk.awsDashSdkStrings.Advanced
+    - typings.awsDashSdk.awsDashSdkStrings.`Intelligent-Tiering`
     - java.lang.String
   */
   type ParameterTier = _ParameterTier | java.lang.String

@@ -1,7 +1,7 @@
 
 # Scala.js typings for restify
 
-Typings are for version 7.2
+Typings are for version 8.4
 
 ## Library description:
 REST framework

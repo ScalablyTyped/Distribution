@@ -156,7 +156,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Label in mark area.
     *
@@ -187,7 +187,7 @@ object Anon_AnimationAnimationDelayAnimationDelayUpdate {
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
     data: Anon_01 = null,
-    itemStyle: Anon_BorderColorBorderType = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
     silent: js.UndefOr[Boolean] = js.undefined
   ): Anon_AnimationAnimationDelayAnimationDelayUpdate = {

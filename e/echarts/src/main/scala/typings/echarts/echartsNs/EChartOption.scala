@@ -1,9 +1,15 @@
 package typings.echarts.echartsNs
 
 import typings.echarts.echartsNs.EChartOptionNs.AxisPointer
+import typings.echarts.echartsNs.EChartOptionNs.Calendar
 import typings.echarts.echartsNs.EChartOptionNs.DataZoom
+import typings.echarts.echartsNs.EChartOptionNs.Dataset
+import typings.echarts.echartsNs.EChartOptionNs.Grid
+import typings.echarts.echartsNs.EChartOptionNs.Legend
+import typings.echarts.echartsNs.EChartOptionNs.SingleAxis
 import typings.echarts.echartsNs.EChartOptionNs.TextStyle
 import typings.echarts.echartsNs.EChartOptionNs.Tooltip
+import typings.echarts.echartsNs.EChartOptionNs.VisualMap
 import typings.echarts.echartsNs.EChartOptionNs.XAxis
 import typings.echarts.echartsNs.EChartOptionNs.YAxis
 import scala.scalajs.js
@@ -139,7 +145,7 @@ trait EChartOption[TSeries] extends js.Object {
     * in `heatmap`, `scatter`, `effectScatter`, and `graph`.
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#calendar
     */
-  var calendar: js.UndefOr[js.Object] = js.undefined
+  var calendar: js.UndefOr[Calendar | js.Array[Calendar]] = js.undefined
   /**
     * The color list of palette.
     * If no color is set in series, the colors would be adopted sequentially
@@ -179,7 +185,7 @@ trait EChartOption[TSeries] extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset
     */
-  var dataset: js.UndefOr[js.Object] = js.undefined
+  var dataset: js.UndefOr[Dataset | js.Array[Dataset]] = js.undefined
   /**
     * Geographic coorinate system component.
     * Geographic coorinate system component is used to draw maps,
@@ -208,7 +214,7 @@ trait EChartOption[TSeries] extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#grid
     */
-  var grid: js.UndefOr[js.Object] = js.undefined
+  var grid: js.UndefOr[Grid | js.Array[Grid]] = js.undefined
   /**
     * Threshold of if use single hover layer to optimize.
     * It is recommended that `hoverLayerThreshold` is equivalent to or less than
@@ -232,7 +238,7 @@ trait EChartOption[TSeries] extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#legend
     */
-  var legend: js.UndefOr[js.Object] = js.undefined
+  var legend: js.UndefOr[Legend] = js.undefined
   /**
     * `Parallel Coordinates` is a common way of visualizing high-dimensional
     * geometry and analyzing multivariate data.
@@ -313,7 +319,7 @@ trait EChartOption[TSeries] extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#singleAxis
     */
-  var singleAxis: js.UndefOr[js.Object] = js.undefined
+  var singleAxis: js.UndefOr[SingleAxis | js.Array[SingleAxis]] = js.undefined
   /**
     * Global font style.
     *
@@ -414,7 +420,7 @@ trait EChartOption[TSeries] extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap
     */
-  var visualMap: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var visualMap: js.UndefOr[js.Array[VisualMap]] = js.undefined
   /**
     * The x axis in cartesian(rectangular) coordinate.
     * Usually a single grid component can place at most 2 x axis,
@@ -453,15 +459,15 @@ object EChartOption {
     backgroundColor: String = null,
     blendMode: String = null,
     brush: js.Object = null,
-    calendar: js.Object = null,
+    calendar: Calendar | js.Array[Calendar] = null,
     color: js.Array[String] = null,
     dataZoom: js.Array[DataZoom] = null,
-    dataset: js.Object = null,
+    dataset: Dataset | js.Array[Dataset] = null,
     geo: js.Object = null,
     graphic: js.Object | js.Array[js.Object] = null,
-    grid: js.Object = null,
+    grid: Grid | js.Array[Grid] = null,
     hoverLayerThreshold: Int | Double = null,
-    legend: js.Object = null,
+    legend: Legend = null,
     parallel: js.Object = null,
     parallelAxis: js.Object = null,
     polar: js.Object = null,
@@ -470,14 +476,14 @@ object EChartOption {
     radar: js.Object = null,
     radiusAxis: js.Object = null,
     series: js.Array[TSeries] = null,
-    singleAxis: js.Object = null,
+    singleAxis: SingleAxis | js.Array[SingleAxis] = null,
     textStyle: TextStyle = null,
     timeline: js.Object = null,
     title: EChartTitleOption | js.Array[EChartTitleOption] = null,
     toolbox: js.Object = null,
     tooltip: Tooltip = null,
     useUTC: js.UndefOr[Boolean] = js.undefined,
-    visualMap: js.Array[js.Object] = null,
+    visualMap: js.Array[VisualMap] = null,
     xAxis: XAxis | js.Array[XAxis] = null,
     yAxis: YAxis | js.Array[YAxis] = null
   ): EChartOption[TSeries] = {
@@ -496,13 +502,13 @@ object EChartOption {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode)
     if (brush != null) __obj.updateDynamic("brush")(brush)
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (dataZoom != null) __obj.updateDynamic("dataZoom")(dataZoom)
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
     if (geo != null) __obj.updateDynamic("geo")(geo)
     if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (hoverLayerThreshold != null) __obj.updateDynamic("hoverLayerThreshold")(hoverLayerThreshold.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (parallel != null) __obj.updateDynamic("parallel")(parallel)
@@ -513,7 +519,7 @@ object EChartOption {
     if (radar != null) __obj.updateDynamic("radar")(radar)
     if (radiusAxis != null) __obj.updateDynamic("radiusAxis")(radiusAxis)
     if (series != null) __obj.updateDynamic("series")(series)
-    if (singleAxis != null) __obj.updateDynamic("singleAxis")(singleAxis)
+    if (singleAxis != null) __obj.updateDynamic("singleAxis")(singleAxis.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (timeline != null) __obj.updateDynamic("timeline")(timeline)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

@@ -2,7 +2,7 @@ package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_BackgroundColorBorderColor
 import typings.echarts.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle
 import typings.echarts.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
 import scala.scalajs.js
@@ -235,7 +235,7 @@ trait SeriesThemeRiver extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * `label` describes style of text labels with which each ribbon-shape
     * river branch corresponds in theme river.
@@ -368,7 +368,7 @@ object SeriesThemeRiver {
     emphasis: Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
     left: Double | String = null,
     right: Double | String = null,

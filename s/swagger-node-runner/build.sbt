@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.6-dt-20190212Z-2e71fc"
+version := "0.6-dt-20190212Z-47dd51"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-9ec145",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
-  "org.scalablytyped" %%% "restify" % "7.2-dt-20190716Z-37653e",
+  "org.scalablytyped" %%% "restify" % "8.4-dt-20190826Z-89aa64",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-d5fbf2",
   "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-795982",

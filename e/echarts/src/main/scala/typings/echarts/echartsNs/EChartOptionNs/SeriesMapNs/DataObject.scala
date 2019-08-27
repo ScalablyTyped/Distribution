@@ -1,6 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.SeriesMapNs
 
-import typings.echarts.Anon_AreaColorAnonBorderColor
+import typings.echarts.Anon_AreaColorAnonBorderColorBorderType
 import typings.echarts.Anon_BackgroundColorBorderColor
 import typings.echarts.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
 import typings.echarts.Anon_ItemStyleLabelAnonAreaColor
@@ -19,7 +19,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_AreaColorAnonBorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_AreaColorAnonBorderColorBorderType] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -67,7 +67,7 @@ object DataObject {
   @scala.inline
   def apply(
     emphasis: Anon_ItemStyleLabelAnonAreaColor = null,
-    itemStyle: Anon_AreaColorAnonBorderColor = null,
+    itemStyle: Anon_AreaColorAnonBorderColorBorderType = null,
     label: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,

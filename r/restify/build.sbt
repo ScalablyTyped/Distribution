@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "restify"
-version := "7.2-dt-20190716Z-37653e"
+version := "8.4-dt-20190826Z-89aa64"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

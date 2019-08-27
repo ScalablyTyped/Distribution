@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "readable-stream"
-version := "2.3-dt-20190809Z-2ba134"
+version := "2.3-dt-20190826Z-2ba134"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -25,6 +25,8 @@ object ^ extends js.Object {
   def needsRehash(hash: String): Boolean = js.native
   def needsRehash(hash: String, options: Options): Boolean = js.native
   def verify(hash: String, plain: String): js.Promise[Boolean] = js.native
+  def verify(hash: String, plain: String, options: Options): js.Promise[Boolean] = js.native
   def verify(hash: String, plain: Buffer): js.Promise[Boolean] = js.native
+  def verify(hash: String, plain: Buffer, options: Options): js.Promise[Boolean] = js.native
 }
 

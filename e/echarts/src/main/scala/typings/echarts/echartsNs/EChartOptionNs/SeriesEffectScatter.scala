@@ -5,7 +5,7 @@ import typings.echarts.Anon_AnimationAnimationDelay
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdate
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
 import typings.echarts.Anon_BrushType
 import typings.echarts.Anon_ItemStyleLabel
 import typings.echarts.echartsNs.EChartOptionNs.SeriesEffectScatterNs.DataObject
@@ -451,7 +451,7 @@ trait SeriesEffectScatter extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -745,7 +745,7 @@ object SeriesEffectScatter {
     encode: js.Object = null,
     geoIndex: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     markArea: Anon_AnimationAnimationDelayAnimationDelayUpdate = null,

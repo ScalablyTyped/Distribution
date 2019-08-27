@@ -66,7 +66,7 @@ trait Spreadsheet extends js.Object {
   def getRecalculationInterval(): RecalculationInterval = js.native
   def getRowHeight(rowPosition: Integer): Integer = js.native
   def getSelection(): Selection = js.native
-  def getSheetByName(name: String): Sheet = js.native
+  def getSheetByName(name: String): Sheet | Null = js.native
   def getSheetId(): Integer = js.native
   def getSheetName(): String = js.native
   def getSheetProtection(): PageProtection = js.native

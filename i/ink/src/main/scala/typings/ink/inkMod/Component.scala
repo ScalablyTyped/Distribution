@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ink", "Component")
 @js.native
 abstract class Component[P /* <: Record[String, _] */, S /* <: Record[String, _] */, C /* <: Record[String, _] */] () extends js.Object {
+  def this(props: P) = this()
   var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
   var componentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.native
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native

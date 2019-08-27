@@ -8,14 +8,14 @@ trait DeclineInvitationsRequest extends js.Object {
   /**
     * A list of account IDs that specify the accounts that invitations to Security Hub are declined from.
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
+  var AccountIds: AccountIdList
 }
 
 object DeclineInvitationsRequest {
   @scala.inline
-  def apply(AccountIds: AccountIdList = null): DeclineInvitationsRequest = {
-    val __obj = js.Dynamic.literal()
-    if (AccountIds != null) __obj.updateDynamic("AccountIds")(AccountIds)
+  def apply(AccountIds: AccountIdList): DeclineInvitationsRequest = {
+    val __obj = js.Dynamic.literal(AccountIds = AccountIds)
+  
     __obj.asInstanceOf[DeclineInvitationsRequest]
   }
 }

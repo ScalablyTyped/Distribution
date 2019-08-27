@@ -8,7 +8,7 @@ trait Anon_ItemStyleLabelLineStyle extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.label
     */
@@ -22,7 +22,7 @@ trait Anon_ItemStyleLabelLineStyle extends js.Object {
 object Anon_ItemStyleLabelLineStyle {
   @scala.inline
   def apply(
-    itemStyle: Anon_BorderColor = null,
+    itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColor = null,
     lineStyle: Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX = null
   ): Anon_ItemStyleLabelLineStyle = {

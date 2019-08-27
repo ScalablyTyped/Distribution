@@ -1702,6 +1702,7 @@
 | 95 | [ol](./o/ol) | OpenLayers mapping library
 | 95 | [pouchdb-find](./p/pouchdb-find) | Easy-to-use query language for PouchDB
 | 95 | [python-shell](./p/python-shell) | Run Python scripts from Node.js with simple (but e
+| 95 | [request-debug](./r/request-debug) | Library to assist with debugging HTTP(s) requests 
 | 95 | [watson-developer-cloud](./w/watson-developer-cloud) | Client library to use the IBM Watson Services
 | 95 | [xterm](./x/xterm) | Full xterm terminal, in your browser
 | 94 | [ag-grid](./a/ag-grid) | Advanced Data Grid / Data Table supporting Javascr
@@ -3010,6 +3011,7 @@
 | 30 | [es6-collections](./e/es6-collections) | ES6 Harmony like collections such Map, WeakMap, an
 | 30 | [eureka-js-client](./e/eureka-js-client) | A JavaScript implementation the Netflix OSS servic
 | 30 | [evernote](./e/evernote) | Evernote JavaScript SDK
+| 30 | [express-pino-logger](./e/express-pino-logger) | An express middleware to log with pino
 | 30 | [flake-idgen](./f/flake-idgen) | Flake ID generator yields k-ordered, conflict-free
 | 30 | [fuzzaldrin-plus](./f/fuzzaldrin-plus) | Fuzzy filtering and string similarity scoring - co
 | 30 | [git-user-email](./g/git-user-email) | Get the email address of the current user from git
@@ -5332,6 +5334,7 @@
 | 3 | [get-emoji](./g/get-emoji) | you give emoji name, we give you an emoji
 | 3 | [get-node-dimensions](./g/get-node-dimensions) | Get accurate element dimensions, even if it's hidd
 | 3 | [get-range](./g/get-range) | Lazy number range generator
+| 3 | [good-storage](./g/good-storage) | a storage lib which support sessionStorage and loc
 | 3 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | -
 | 3 | [graphite-udp](./g/graphite-udp) | Graphite UDP client for Node.js
 | 3 | [graphql-list-fields](./g/graphql-list-fields) | Get a list of fields while resolving a GraphQL que
@@ -5752,6 +5755,7 @@
 | 2 | [nivo__stream](./n/nivo__stream) | -
 | 2 | [nivo__waffle](./n/nivo__waffle) | -
 | 2 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
+| 2 | [node-vagrant](./n/node-vagrant) | Node js wrapper for vagrant CLI - command line too
 | 2 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support
 | 2 | [npm-registry-package-info](./n/npm-registry-package-info) | Get package info for one or more packages.
 | 2 | [obelisk_dot_js](./o/obelisk_dot_js) | JavaScript Library for Building Pixel Isometric El
@@ -6981,6 +6985,7 @@
 | 0 | [six-runtime](./s/six-runtime) | six koa
 | 0 | [skyway](./s/skyway) | An express routing library that leverages swagger 
 | 0 | [slack-mock](./s/slack-mock) | Slack API mocker
+| 0 | [smartwizard](./s/smartwizard) | The awesome jQuery step wizard plugin with Bootstr
 | 0 | [smpte-timecode](./s/smpte-timecode) | JavaScript implementation of SMPTE timecode type
 | 0 | [socket_dot_io_dot_users](./s/socket_dot_io_dot_users) | This module finds and manages which socket is from
 | 0 | [socketty](./s/socketty) | Server side socketty, based on ws
@@ -6992,6 +6997,7 @@
 | 0 | [staticmaps](./s/staticmaps) | A node.js library for creating map images with pol
 | 0 | [storybook__preact](./s/storybook__preact) | Storybook for Preact: Develop Preact Component in 
 | 0 | [stream-csv-as-json](./s/stream-csv-as-json) | Streams CSV files.
+| 0 | [stream-fork](./s/stream-fork) | Fork a writable stream into several parallel writa
 | 0 | [stripe-checkout](./s/stripe-checkout) | standalone stripe checkout handler
 | 0 | [succinct](./s/succinct) | -
 | 0 | [sudokus](./s/sudokus) | A JavaScript utility to solve sudokus.

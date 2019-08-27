@@ -24,6 +24,9 @@ object echartsStrings {
   sealed trait angle extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait axis extends js.Object
   
   @js.native
@@ -54,6 +57,9 @@ object echartsStrings {
   sealed trait click extends js.Object
   
   @js.native
+  sealed trait continuous extends js.Object
+  
+  @js.native
   sealed trait cross extends js.Object
   
   @js.native
@@ -78,6 +84,9 @@ object echartsStrings {
   sealed trait filter extends js.Object
   
   @js.native
+  sealed trait float extends js.Object
+  
+  @js.native
   sealed trait funnel extends EChartsSeriesType
   
   @js.native
@@ -97,6 +106,9 @@ object echartsStrings {
   
   @js.native
   sealed trait inside extends Str
+  
+  @js.native
+  sealed trait int extends js.Object
   
   @js.native
   sealed trait italic extends js.Object
@@ -135,13 +147,22 @@ object echartsStrings {
   sealed trait `mousemove|click` extends js.Object
   
   @js.native
+  sealed trait multiple extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
+  sealed trait number extends js.Object
+  
+  @js.native
   sealed trait oblique extends js.Object
+  
+  @js.native
+  sealed trait ordinal extends js.Object
   
   @js.native
   sealed trait parallel extends EChartsSeriesType
@@ -151,6 +172,12 @@ object echartsStrings {
   
   @js.native
   sealed trait pie extends EChartsSeriesType
+  
+  @js.native
+  sealed trait piecewise extends js.Object
+  
+  @js.native
+  sealed trait plain extends js.Object
   
   @js.native
   sealed trait radar extends EChartsSeriesType
@@ -171,10 +198,16 @@ object echartsStrings {
   sealed trait scatter extends EChartsSeriesType
   
   @js.native
+  sealed trait scroll extends js.Object
+  
+  @js.native
   sealed trait series extends js.Object
   
   @js.native
   sealed trait shadow extends js.Object
+  
+  @js.native
+  sealed trait single extends js.Object
   
   @js.native
   sealed trait solid extends js.Object
@@ -226,6 +259,8 @@ object echartsStrings {
   @scala.inline
   def angle: angle = "angle".asInstanceOf[angle]
   @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def axis: axis = "axis".asInstanceOf[axis]
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
@@ -246,6 +281,8 @@ object echartsStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
+  def continuous: continuous = "continuous".asInstanceOf[continuous]
+  @scala.inline
   def cross: cross = "cross".asInstanceOf[cross]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
@@ -262,6 +299,8 @@ object echartsStrings {
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  @scala.inline
   def funnel: funnel = "funnel".asInstanceOf[funnel]
   @scala.inline
   def gauge: gauge = "gauge".asInstanceOf[gauge]
@@ -275,6 +314,8 @@ object echartsStrings {
   def html: html = "html".asInstanceOf[html]
   @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
+  @scala.inline
+  def int: int = "int".asInstanceOf[int]
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
@@ -300,17 +341,27 @@ object echartsStrings {
   @scala.inline
   def `mousemove|click`: `mousemove|click` = "mousemove|click".asInstanceOf[`mousemove|click`]
   @scala.inline
+  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def oblique: oblique = "oblique".asInstanceOf[oblique]
+  @scala.inline
+  def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   @scala.inline
   def parallel: parallel = "parallel".asInstanceOf[parallel]
   @scala.inline
   def pictorialBar: pictorialBar = "pictorialBar".asInstanceOf[pictorialBar]
   @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
+  @scala.inline
+  def piecewise: piecewise = "piecewise".asInstanceOf[piecewise]
+  @scala.inline
+  def plain: plain = "plain".asInstanceOf[plain]
   @scala.inline
   def radar: radar = "radar".asInstanceOf[radar]
   @scala.inline
@@ -324,9 +375,13 @@ object echartsStrings {
   @scala.inline
   def scatter: scatter = "scatter".asInstanceOf[scatter]
   @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def series: series = "series".asInstanceOf[series]
   @scala.inline
   def shadow: shadow = "shadow".asInstanceOf[shadow]
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   @scala.inline

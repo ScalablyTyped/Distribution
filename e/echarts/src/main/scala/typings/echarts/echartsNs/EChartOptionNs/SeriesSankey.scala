@@ -2,7 +2,7 @@ package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_ColorCurvenessOpacityShadowBlurShadowColor
 import typings.echarts.Anon_EmphasisLineStyle
 import typings.echarts.Anon_ItemStyleLabelLineStyle
@@ -261,7 +261,7 @@ trait SeriesSankey extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * `label` describes the text label style in each rectangular node.
     *
@@ -475,7 +475,7 @@ object SeriesSankey {
     focusNodeAdjacency: Boolean | String = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     layoutIterations: Int | Double = null,
     left: Double | String = null,

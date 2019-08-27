@@ -1,8 +1,7 @@
 package typings.echarts.echartsNs.EChartOptionNs
 
 import typings.echarts.Anon_ColorIcon
-import typings.echarts.Anon_ColorOpacityShadowBlur
-import typings.echarts.Anon_ColorOpacityShadowBlurShadowColor
+import typings.echarts.Anon_ColorOpacity
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Pointer
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.PointerLabel
 import typings.echarts.echartsStrings.`mousemove|click`
@@ -80,9 +79,9 @@ object AxisPointer {
     handle: Anon_ColorIcon = null,
     id: String = null,
     label: PointerLabel = null,
-    lineStyle: Anon_ColorOpacityShadowBlur = null,
+    lineStyle: LineStyle = null,
     link: js.Array[js.Object] = null,
-    shadowStyle: Anon_ColorOpacityShadowBlurShadowColor = null,
+    shadowStyle: Anon_ColorOpacity = null,
     show: js.UndefOr[Boolean] = js.undefined,
     snap: js.UndefOr[Boolean] = js.undefined,
     status: js.UndefOr[Boolean] = js.undefined,

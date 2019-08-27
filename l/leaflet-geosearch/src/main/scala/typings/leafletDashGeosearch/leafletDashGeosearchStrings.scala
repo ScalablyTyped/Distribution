@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 object leafletDashGeosearchStrings {
   @js.native
+  sealed trait bar extends js.Object
+  
+  @js.native
+  sealed trait button extends js.Object
+  
+  @js.native
   sealed trait node extends js.Object
   
   @js.native
@@ -17,6 +23,10 @@ object leafletDashGeosearchStrings {
   @js.native
   sealed trait way extends js.Object
   
+  @scala.inline
+  def bar: bar = "bar".asInstanceOf[bar]
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline

@@ -1874,9 +1874,9 @@ trait MathJsStatic extends FactoryDependencies {
     * undefined. Returns an array with the configured number of elements
     * when number is > 1.
     */
-  def pickRandom(array: js.Array[Double]): Double = js.native
-  def pickRandom(array: js.Array[Double], number: Double): Double = js.native
-  def pickRandom(array: js.Array[Double], number: Double, weights: js.Array[Double]): Double = js.native
+  def pickRandom(array: js.Array[Double]): Double | js.Array[Double] = js.native
+  def pickRandom(array: js.Array[Double], number: Double): Double | js.Array[Double] = js.native
+  def pickRandom(array: js.Array[Double], number: Double, weights: js.Array[Double]): Double | js.Array[Double] = js.native
   /**
     * Calculates the power of x to y, x ^ y. Matrix exponentiation is
     * supported for square matrices x, and positive integer exponents y.

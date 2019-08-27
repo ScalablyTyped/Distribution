@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-codegen"
-version := "0.20-dt-20190823Z-ff195e"
+version := "0.20-dt-20190826Z-ff195e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

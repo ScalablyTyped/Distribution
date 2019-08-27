@@ -2121,6 +2121,7 @@
 | 0.7112559280344475 | [gulp-batch](./g/gulp-batch) | Event batcher for gulp-watcher
 | 0.7112263844624237 | [reapop](./r/reapop) | A React and Redux notifications system
 | 0.7111665028039711 | [app-builder-lib](./a/app-builder-lib) | electron-builder lib
+| 0.7110763875909751 | [express-pino-logger](./e/express-pino-logger) | An express middleware to log with pino
 | 0.7110433863604377 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs
 | 0.711003691858239 | [bootbox](./b/bootbox) | Wrappers for JavaScript alert(), confirm() and oth
 | 0.7109489306912296 | [mersenne-twister](./m/mersenne-twister) | Mersenne twister pseudorandom number generator
@@ -3258,6 +3259,7 @@
 | 0.6621869997672357 | [cavy](./c/cavy) | An integration test framework for React Native.
 | 0.6621460670619517 | [fontfaceobserver](./f/fontfaceobserver) | Detect if web fonts are available
 | 0.6621112641366661 | [smpte-timecode](./s/smpte-timecode) | JavaScript implementation of SMPTE timecode type
+| 0.6619365517345204 | [node-vagrant](./n/node-vagrant) | Node js wrapper for vagrant CLI - command line too
 | 0.6619225073110262 | [rc-time-picker](./r/rc-time-picker) | React TimePicker
 | 0.6618651436352434 | [json-to-ast](./j/json-to-ast) | JSON AST parser
 | 0.6617995253714086 | [fill-pdf](./f/fill-pdf) | Fill out pdf forms
@@ -3504,6 +3506,7 @@
 | 0.6493040820143746 | [pegjs](./p/pegjs) | Parser generator for JavaScript
 | 0.649292329594377 | [two_dot_js](./t/two_dot_js) | A renderer agnostic two-dimensional drawing api fo
 | 0.6492794897208393 | [angular-q-spread](./a/angular-q-spread) | Add spread method to the promise of $q.all
+| 0.6492554641344065 | [stream-fork](./s/stream-fork) | Fork a writable stream into several parallel writa
 | 0.6492286896491872 | [react-measure](./r/react-measure) | Compute measurements of React components.
 | 0.6490546348098157 | [mochaccino](./m/mochaccino) | United js test tools
 | 0.6490210089725419 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
@@ -5528,6 +5531,7 @@
 | 0.4065036240176447 | [firebird](./f/firebird) | Firebird binding to node, uses libfbclient.
 | 0.40640965510127103 | [chess_dot_js](./c/chess_dot_js) | A Javascript chess library for chess move generati
 | 0.4063619371122673 | [ngprogress-lite](./n/ngprogress-lite) | Angular provider for slim progress bars
+| 0.4062760615410941 | [smartwizard](./s/smartwizard) | The awesome jQuery step wizard plugin with Bootstr
 | 0.4062583800470251 | [js-priority-queue](./j/js-priority-queue) | Priority queue data structures
 | 0.4061826744240655 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities.
 | 0.40616290553607315 | [wordpress__nux](./w/wordpress__nux) | NUX (New User eXperience) module for WordPress.
@@ -5559,6 +5563,7 @@
 | 0.40254924769235145 | [luaparse](./l/luaparse) | A Lua parser in JavaScript
 | 0.40253760777965153 | [rx-lite-experimental](./r/rx-lite-experimental) | Lightweight library with experimental functions fo
 | 0.4025091404386036 | [tensorflow__tfjs-layers](./t/tensorflow__tfjs-layers) | TensorFlow layers API in JavaScript
+| 0.4024372211407447 | [request-debug](./r/request-debug) | Library to assist with debugging HTTP(s) requests 
 | 0.4024285007296623 | [express-route-fs](./e/express-route-fs) | File system-based approach for handling routes in 
 | 0.4023623308121943 | [toobusy-js](./t/toobusy-js) | Don't fall over when your Node.JS server is too bu
 | 0.40224861976749765 | [sandboxed-module](./s/sandboxed-module) | A sandboxed Node.js module loader that lets you in
@@ -6166,6 +6171,7 @@
 | 0.3170103779042247 | [leaflet-rotatedmarker](./l/leaflet-rotatedmarker) | Enables rotation of marker icons in Leaflet.
 | 0.3168646616419608 | [chessboardjs](./c/chessboardjs) | JavaScript Chess Board http://chessboardjs.com
 | 0.3167642682192439 | [nivo__core](./n/nivo__core) | -
+| 0.3166672372881256 | [good-storage](./g/good-storage) | a storage lib which support sessionStorage and loc
 | 0.3165359940250866 | [eyes](./e/eyes) | a customizable value inspector
 | 0.3164214362615525 | [didyoumean](./d/didyoumean) | Match human-quality input to potential matches by 
 | 0.31634721786208747 | [passport-kakao](./p/passport-kakao) | kakao oauth2 login module

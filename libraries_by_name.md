@@ -1816,6 +1816,7 @@
 | [express-openapi](./e/express-openapi) | An unopinionated OpenAPI framework for express | openapi, swagger, express |
 | [express-paginate](./e/express-paginate) | Node.js pagination middleware and view helpers | - |
 | [express-partials](./e/express-partials) | Express 3.x Layout & Partial support. | - |
+| [express-pino-logger](./e/express-pino-logger) | An express middleware to log with pino | express, connect, http, logger, fast, pino |
 | [express-promise-router](./e/express-promise-router) | A lightweight wrapper for Express 4's Router that  | express, promise, router |
 | [express-rate-limit](./e/express-rate-limit) | Basic IP rate-limiting middleware for Express. Use | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
 | [express-redis-cache](./e/express-redis-cache) | A module to make Express interact with Redis (crea | - |
@@ -2372,6 +2373,7 @@
 | [glue](./g/glue) | Server composer for hapi.js | server, pack, composer, manifest, hapi |
 | [gm](./g/gm) | GraphicsMagick and ImageMagick for node.js | graphics, magick, image, graphicsmagick, imagemagick, gm, convert, identify, compare |
 | [go](./g/go) | Create and use boilerplates with ease | boilerplate, automation, template, generator, scaffold, cli |
+| [good-storage](./g/good-storage) | a storage lib which support sessionStorage and loc | store, html5 |
 | [google-adwords-scripts](./g/google-adwords-scripts) | - | - |
 | [google-apps-script](./g/google-apps-script) | gas, the complete CLI for Google Apps Script | google-apps-script, googleappsscript, gas, export, import, download, upload, Google, apps, script, CLI, drive, script.google.com |
 | [google-apps-script-oauth2](./g/google-apps-script-oauth2) | - | - |
@@ -4566,6 +4568,7 @@
 | [node-telegram-bot-api](./n/node-telegram-bot-api) | Telegram Bot API | telegram, telegram bot, telegram bot api, bot |
 | [node-timecodes](./n/node-timecodes) | Time and SMTPE Timecodes conversions | node, timecode, smtpe, time, conversion |
 | [node-uuid](./n/node-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI | guid, rfc4122, uuid |
+| [node-vagrant](./n/node-vagrant) | Node js wrapper for vagrant CLI - command line too | vagrant |
 | [node-validator](./n/node-validator) | A simple, extensible object property validator for | validator, validation, express, check, test, request-validation, koa, koajs |
 | [node-vault](./n/node-vault) | Javascript client for HashiCorp's Vault | vault, hashicorp, secrets, manage, client |
 | [node-waves](./n/node-waves) | Click effect insipired by Google Material Design | - |
@@ -6008,6 +6011,7 @@
 | [replacestream](./r/replacestream) | A node.js through stream that does basic streaming | replace, text, regex, stream, streams, streaming, search |
 | [request](./r/request) | Simplified HTTP request client. | http, simple, util, utility |
 | [request-as-curl](./r/request-as-curl) | Serializes http.ClientRequest as curl(1) command s | - |
+| [request-debug](./r/request-debug) | Library to assist with debugging HTTP(s) requests  | request, debug, http, https, headers |
 | [request-ip](./r/request-ip) | A small node.js module to retrieve the request's I | request ip, ip, address, request, proxy, client, header, X-Client-IP, X-Forwarded-For, CF-Connecting-IP, Fastly-Client-IP, True-Client-IP, X-Real-IP, X-Cluster-Client-IP, X-Forwarded, Forwarded-For, connection.remoteAddress, connection.socket.remoteAddress, req.info.remoteAddress, middleware, ipv4, ipv6 |
 | [request-promise](./r/request-promise) | The simplified HTTP request client 'request' with  | xhr, http, https, promise, request, then, thenable, bluebird |
 | [request-promise-native](./r/request-promise-native) | The simplified HTTP request client 'request' with  | xhr, http, https, promise, request, then, thenable, native |
@@ -6458,6 +6462,7 @@
 | [smart-buffer](./s/smart-buffer) | smart-buffer is a Buffer wrapper that adds automat | buffer, smart, packet, serialize, network, cursor, simple |
 | [smart-fox-server](./s/smart-fox-server) | - | - |
 | [smart-truncate](./s/smart-truncate) | A small library that truncates a string. It can in | string, truncate, ellipsis, smart |
+| [smartwizard](./s/smartwizard) | The awesome jQuery step wizard plugin with Bootstr | bootstrap, wizard, step, ui, jquery-plugin, tabs, jquery |
 | [smooth-scroll](./s/smooth-scroll) | Animate scrolling to anchor links | - |
 | [smooth-scrollbar](./s/smooth-scrollbar) | Customize scrollbar in modern browsers with smooth | scrollbar, customize, acceleration, performance |
 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for  | charts, charting, realtime, stock-ticker, time series, time-series, responsive |
@@ -6637,6 +6642,7 @@
 | [stream-csv-as-json](./s/stream-csv-as-json) | Streams CSV files. | scanner, lexer, tokenizer, parser, csv, stream, streaming |
 | [stream-each](./s/stream-each) | Iterate all the data in a stream | - |
 | [stream-events](./s/stream-events) | Get an event when you're being sent data or asked  | stream, events, read, write, duplexify, lazy-stream |
+| [stream-fork](./s/stream-fork) | Fork a writable stream into several parallel writa | stream, chain |
 | [stream-json](./s/stream-json) | stream-json is the micro-library of Node.js stream | scanner, lexer, tokenizer, parser, django, stream, streaming, json |
 | [stream-meter](./s/stream-meter) | A stream meter that both counts the bytes piped th | streams2, streams, meter, abort |
 | [stream-mock](./s/stream-mock) | Node stream mock module | stream, mock, test, writable, readable |

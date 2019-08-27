@@ -1,6 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs
 
-import typings.echarts.Anon_ColorOpacity
+import typings.echarts.Anon_Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * @todo describe
   */
 trait SplitArea extends js.Object {
-  var areaStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
+  var areaStyle: js.UndefOr[Anon_Color] = js.undefined
   var interval: js.UndefOr[Double | js.Function] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
 }
@@ -17,7 +17,7 @@ trait SplitArea extends js.Object {
 object SplitArea {
   @scala.inline
   def apply(
-    areaStyle: Anon_ColorOpacity = null,
+    areaStyle: Anon_Color = null,
     interval: Double | js.Function = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): SplitArea = {

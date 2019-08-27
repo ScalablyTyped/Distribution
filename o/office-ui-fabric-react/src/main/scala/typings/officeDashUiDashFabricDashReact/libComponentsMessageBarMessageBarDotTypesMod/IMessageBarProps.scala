@@ -9,9 +9,6 @@ import typings.react.NativeMouseEvent
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
-import typings.std.HTMLAnchorElement
-import typings.std.HTMLButtonElement
-import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,12 +51,7 @@ trait IMessageBarProps extends HTMLAttributes[HTMLElement] {
     */
   var onDismiss: js.UndefOr[
     js.Function1[
-      /* ev */ js.UndefOr[
-        MouseEvent[
-          HTMLButtonElement | BaseButton | HTMLAnchorElement | HTMLDivElement | Button, 
-          NativeMouseEvent
-        ]
-      ], 
+      /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]], 
       _
     ]
   ] = js.undefined
@@ -95,12 +87,7 @@ object IMessageBarProps {
     dismissButtonAriaLabel: String = null,
     isMultiline: js.UndefOr[Boolean] = js.undefined,
     messageBarType: MessageBarType = null,
-    onDismiss: /* ev */ js.UndefOr[
-      MouseEvent[
-        HTMLButtonElement | BaseButton | HTMLAnchorElement | HTMLDivElement | Button, 
-        NativeMouseEvent
-      ]
-    ] => _ = null,
+    onDismiss: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => _ = null,
     overflowButtonAriaLabel: String = null,
     styles: IStyleFunctionOrObject[IMessageBarStyleProps, IMessageBarStyles] = null,
     theme: ITheme = null,

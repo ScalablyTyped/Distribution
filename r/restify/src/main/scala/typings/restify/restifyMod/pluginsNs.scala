@@ -20,6 +20,7 @@ import typings.restify.restifyMod.pluginsNs.QueryParserOptions
 import typings.restify.restifyMod.pluginsNs.RequestExpiryOptions
 import typings.restify.restifyMod.pluginsNs.RequestLogger
 import typings.restify.restifyMod.pluginsNs.ServeStatic
+import typings.restify.restifyMod.pluginsNs.ServeStaticFiles
 import typings.restify.restifyMod.pluginsNs.TMetricsCallback
 import typings.restify.restifyMod.pluginsNs.ThrottleOptions
 import typings.restify.restifyMod.pluginsNs.UrlEncodedBodyParserOptions
@@ -288,6 +289,12 @@ object pluginsNs extends js.Object {
     var maxAge: js.UndefOr[Double] = js.undefined
   }
   
+  trait ServeStaticFiles extends js.Object {
+    var etag: js.UndefOr[String] = js.undefined
+    var maxAge: js.UndefOr[Double] = js.undefined
+    var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, _]] = js.undefined
+  }
+  
   trait ThrottleOptions extends js.Object {
     var burst: js.UndefOr[Double] = js.undefined
     var ip: js.UndefOr[Boolean] = js.undefined
@@ -431,6 +438,11 @@ object pluginsNs extends js.Object {
     */
   def serveStatic(): RequestHandler = js.native
   def serveStatic(options: ServeStatic): RequestHandler = js.native
+  /**
+    * Used to serve static files from a given directory
+    */
+  def serveStaticFiles(dir: String): RequestHandler = js.native
+  def serveStaticFiles(dir: String, options: ServeStaticFiles): RequestHandler = js.native
   /**
     *  throttles responses
     */

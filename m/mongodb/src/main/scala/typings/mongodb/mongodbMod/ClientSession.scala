@@ -67,7 +67,7 @@ trait ClientSession extends EventEmitter {
     * @param fn Function to execute with the new session.
     * @param options Optional settings for the transaction
     */
-  def withTransaction[T](fn: WithTransactionCallback[T]): js.Promise[T] = js.native
-  def withTransaction[T](fn: WithTransactionCallback[T], options: TransactionOptions): js.Promise[T] = js.native
+  def withTransaction[T](fn: WithTransactionCallback[T]): js.Promise[Unit] = js.native
+  def withTransaction[T](fn: WithTransactionCallback[T], options: TransactionOptions): js.Promise[Unit] = js.native
 }
 

@@ -41,7 +41,7 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWi
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -71,7 +71,7 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWi
 object Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight {
   @scala.inline
   def apply(
-    itemStyle: Anon_BorderColor = null,
+    itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null
   ): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = {
     val __obj = js.Dynamic.literal()

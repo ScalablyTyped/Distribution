@@ -3,6 +3,7 @@ package typings.backboneDashRelational.backboneDashRelationalMod
 import typings.backbone.backboneMod.Collection
 import typings.backbone.backboneMod.Events
 import typings.backbone.backboneMod.EventsMixin
+import typings.backboneDashRelational.TypeofClassModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,10 @@ class Store ()
   def resolveIdForItem(`type`: js.Any, item: js.Any): js.Any = js.native
   def retroFitRelation(relation: Model, create: Boolean): Collection[typings.backbone.backboneMod.Model] = js.native
   def setupSuperModel(modelType: Model): Unit = js.native
-  def unregister(model: Model, collection: Collection[typings.backbone.backboneMod.Model], options: js.Any): Unit = js.native
+  def unregister(`type`: Collection[Model]): Unit = js.native
+  def unregister(`type`: TypeofClassModel): Unit = js.native
+  // tslint:disable-next-line use-default-type-parameter
+  def unregister(`type`: Model): Unit = js.native
   def update(model: Model): Unit = js.native
 }
 

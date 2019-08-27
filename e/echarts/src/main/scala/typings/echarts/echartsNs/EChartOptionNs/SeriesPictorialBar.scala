@@ -7,7 +7,7 @@ import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimation
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
 import typings.echarts.Anon_AnimationDelay
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidth
+import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
 import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor
 import typings.echarts.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
 import scala.scalajs.js
@@ -527,7 +527,7 @@ trait SeriesPictorialBar extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -1215,7 +1215,7 @@ object SeriesPictorialBar {
     encode: js.Object = null,
     hoverAnimation: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     markArea: Anon_AnimationAnimationDelayAnimationDelayUpdate = null,

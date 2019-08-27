@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BorderColorBorderType extends js.Object {
   /**
-    * border color, whose format is similar to that
-    * of `color`.
+    * border color, whose format is similar to that of
+    * `color`.
     *
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.borderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
@@ -22,46 +22,41 @@ trait Anon_BorderColorBorderType extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.borderType
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.borderType
     */
   var borderType: js.UndefOr[String] = js.undefined
   /**
-    * border width.
-    * No border when it is set to be 0.
+    * border width. No border when it is set to be 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.borderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
     * color.
     *
-    * > Color can be represented in RGB, for example
-    * `'rgb(128, 128, 128)'`.
-    * RGBA can be used when you need alpha channel,
-    * for example `'rgba(128, 128, 128, 0.5)'`.
+    * > Color can be represented in RGB, for example `'rgb(128,
+    * 128, 128)'`.
+    * RGBA can be used when you need alpha channel, for
+    * example `'rgba(128, 128, 128, 0.5)'`.
     * You may also use hexadecimal format, for example
     * `'#ccc'`.
-    * Gradient color and texture are also supported
-    * besides single colors.
+    * Gradient color and texture are also supported besides
+    * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea.data.1.itemStyle)
+    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.data.emphasis.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.color
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.emphasis
-    */
-  var emphasis: js.UndefOr[Anon_BorderColor] = js.undefined
-  /**
     * Opacity of the component.
-    * Supports value from 0 to 1, and the component
-    * will not be drawn when set to 0.
+    * Supports value from 0 to 1, and the component will
+    * not be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.opacity
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -71,33 +66,31 @@ trait Anon_BorderColorBorderType extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea.data.1.itemStyle)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.data.emphasis.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
-    * Offset distance on the horizontal direction of
-    * shadow.
+    * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
-    * Offset distance on the vertical direction of
-    * shadow.
+    * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.itemStyle.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }
@@ -109,7 +102,6 @@ object Anon_BorderColorBorderType {
     borderType: String = null,
     borderWidth: Int | Double = null,
     color: String = null,
-    emphasis: Anon_BorderColor = null,
     opacity: Int | Double = null,
     shadowBlur: Int | Double = null,
     shadowColor: String = null,
@@ -121,7 +113,6 @@ object Anon_BorderColorBorderType {
     if (borderType != null) __obj.updateDynamic("borderType")(borderType)
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
