@@ -41,7 +41,7 @@ trait Model[T /* <: Document */, QueryHelpers]
   *   The fields, options, and index name are also passed.
   */
 Instantiable0[T]
-     with Instantiable1[/* doc */ DeepPartial[T], T] {
+     with Instantiable1[/* doc */ js.Any, T] {
   /**
     * Creates a Query and specifies a $where condition.
     * @param argument is a javascript string or anonymous function

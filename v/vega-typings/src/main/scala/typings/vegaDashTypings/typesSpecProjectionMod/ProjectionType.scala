@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   - typings.vegaDashTypings.vegaDashTypingsStrings.gnomonic
   - typings.vegaDashTypings.vegaDashTypingsStrings.identity
   - typings.vegaDashTypings.vegaDashTypingsStrings.mercator
+  - typings.vegaDashTypings.vegaDashTypingsStrings.naturalEarth1
   - typings.vegaDashTypings.vegaDashTypingsStrings.orthographic
   - typings.vegaDashTypings.vegaDashTypingsStrings.stereographic
   - typings.vegaDashTypings.vegaDashTypingsStrings.transverseMercator

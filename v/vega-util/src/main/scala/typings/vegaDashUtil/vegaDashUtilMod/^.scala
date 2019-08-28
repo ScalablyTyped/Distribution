@@ -53,6 +53,7 @@ object ^ extends js.Object {
   def field(field: String): AccessorFn[_] = js.native
   def field(field: String, name: String): AccessorFn[_] = js.native
   def flush[T /* <: js.Any */](range: js.Array[Double], value: Double, threshold: Double, left: T, right: T, center: T): T = js.native
+  def hasOwnProperty(`object`: js.Object, property: String): Boolean = js.native
   def id(`_`: js.Object): js.Symbol = js.native
   def identity[V](v: V): V = js.native
   def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P): C with P = js.native

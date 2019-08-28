@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__angular"
-version := "4.8.0-f045c3"
+version := "4.8.1-4d28c4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "angular__core" % "8.2.3-c8065d",
   "org.scalablytyped" %%% "angular__forms" % "8.2.3-1c99b1",
   "org.scalablytyped" %%% "angular__router" % "8.2.3-dd6f65",
-  "org.scalablytyped" %%% "ionic__core" % "4.8.0-552f80",
+  "org.scalablytyped" %%% "ionic__core" % "4.8.1-426d12",
   "org.scalablytyped" %%% "ionicons" % "4.6.3-374f29",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-8fa5f3",
   "org.scalablytyped" %%% "std" % "3.5-cd493c")

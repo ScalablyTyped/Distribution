@@ -2059,6 +2059,7 @@
 | 67 | [google-map-react](./g/google-map-react) | isomorphic google map react component, allows rend
 | 67 | [gulp-json-editor](./g/gulp-json-editor) | A gulp plugin to edit JSON objects
 | 67 | [jquery-mousewheel](./j/jquery-mousewheel) | A jQuery plugin that adds cross-browser mouse whee
+| 67 | [koa-ejs](./k/koa-ejs) | ejs render middleware for koa
 | 67 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster) | Provides Beautiful Animated Marker Clustering func
 | 67 | [lodash_dot_isnil](./l/lodash_dot_isnil) | The lodash method _.isNil exported as a module.
 | 67 | [lodash_dot_zipobject](./l/lodash_dot_zipobject) | The lodash method _.zipObject exported as a module
@@ -3962,6 +3963,7 @@
 | 13 | [gulp-msbuild](./g/gulp-msbuild) | msbuild plugin for gulp. Inspired by grunt-msbuild
 | 13 | [halogen](./h/halogen) | A collection of loading spinners with React.js
 | 13 | [is-admin](./i/is-admin) | Check if the process is running as Administrator o
+| 13 | [is-even](./i/is-even) | Return true if the given number is even.
 | 13 | [jasmine-jquery](./j/jasmine-jquery) | jQuery matchers and fixture loader for Jasmine fra
 | 13 | [jquery-knob](./j/jquery-knob) | Nice, downward compatible, touchable, jQuery dial
 | 13 | [jquery-match-height](./j/jquery-match-height) | a responsive equal heights plugin for jQuery
@@ -5990,6 +5992,7 @@
 | 1 | [detect-hover](./d/detect-hover) | JavaScript wrapper for hover and any-hover media q
 | 1 | [detect-pointer](./d/detect-pointer) | JavaScript wrapper for pointer and any-pointer med
 | 1 | [discourse-sso](./d/discourse-sso) | Single-sign-on helper package for Discourse
+| 1 | [distributions-poisson-qua](./d/distributions-poisson-quantile) | Poisson distribution quantile function.
 | 1 | [document-promises](./d/document-promises) | Document loading states as Promises
 | 1 | [documentdb-session](./d/documentdb-session) | An express-session Store for Azure's DocumentDB No
 | 1 | [doge-seed](./d/doge-seed) | Dank mnemonic seed phrases
@@ -6186,6 +6189,7 @@
 | 1 | [lodash_dot_xorby](./l/lodash_dot_xorby) | The lodash method _.xorBy exported as a module.
 | 1 | [lodash_dot_zipobjectdeep](./l/lodash_dot_zipobjectdeep) | The lodash method _.zipObjectDeep exported as a mo
 | 1 | [logrocket-react](./l/logrocket-react) | React library for 
+| 1 | [lyric-parser](./l/lyric-parser) | lyric-parser base on javascript
 | 1 | [makeup-expander](./m/makeup-expander) | Creates the basic interactivity for an element tha
 | 1 | [makeup-floating-label](./m/makeup-floating-label) | Module for creating an accessible, progressively e
 | 1 | [makeup-prevent-scroll-key](./m/makeup-prevent-scroll-keys) | Prevents default scroll event when pressing down a
@@ -6746,6 +6750,7 @@
 | 0 | [lodash_dot_divide](./l/lodash_dot_divide) | The lodash method _.divide exported as a module.
 | 0 | [lodash_dot_flatmapdepth](./l/lodash_dot_flatmapdepth) | The lodash method _.flatMapDepth exported as a mod
 | 0 | [lodash_dot_meanby](./l/lodash_dot_meanby) | The lodash method _.meanBy exported as a module.
+| 0 | [lodash_dot_multiply](./l/lodash_dot_multiply) | The lodash method _.multiply exported as a module.
 | 0 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module.
 | 0 | [lodash_dot_updatewith](./l/lodash_dot_updatewith) | The lodash method _.updateWith exported as a modul
 | 0 | [macaca-circular-json](./m/macaca-circular-json) | JSON does not handle circular references. This ver

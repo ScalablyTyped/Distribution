@@ -18,6 +18,12 @@ object reactDashBigDashCalendarStrings {
   sealed trait DAY extends ViewKey
   
   @js.native
+  sealed trait DOWN extends js.Object
+  
+  @js.native
+  sealed trait LEFT extends js.Object
+  
+  @js.native
   sealed trait MONTH extends ViewKey
   
   @js.native
@@ -27,7 +33,13 @@ object reactDashBigDashCalendarStrings {
   sealed trait PREV extends NavigateAction
   
   @js.native
+  sealed trait RIGHT extends js.Object
+  
+  @js.native
   sealed trait TODAY extends NavigateAction
+  
+  @js.native
+  sealed trait UP extends js.Object
   
   @js.native
   sealed trait WEEK extends ViewKey
@@ -54,6 +66,12 @@ object reactDashBigDashCalendarStrings {
   sealed trait month extends View
   
   @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
+  sealed trait resize extends js.Object
+  
+  @js.native
   sealed trait select extends js.Object
   
   @js.native
@@ -69,13 +87,21 @@ object reactDashBigDashCalendarStrings {
   @scala.inline
   def DAY: DAY = "DAY".asInstanceOf[DAY]
   @scala.inline
+  def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
+  @scala.inline
+  def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
+  @scala.inline
   def MONTH: MONTH = "MONTH".asInstanceOf[MONTH]
   @scala.inline
   def NEXT: NEXT = "NEXT".asInstanceOf[NEXT]
   @scala.inline
   def PREV: PREV = "PREV".asInstanceOf[PREV]
   @scala.inline
+  def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
+  @scala.inline
   def TODAY: TODAY = "TODAY".asInstanceOf[TODAY]
+  @scala.inline
+  def UP: UP = "UP".asInstanceOf[UP]
   @scala.inline
   def WEEK: WEEK = "WEEK".asInstanceOf[WEEK]
   @scala.inline
@@ -92,6 +118,10 @@ object reactDashBigDashCalendarStrings {
   def ignoreEvents: ignoreEvents = "ignoreEvents".asInstanceOf[ignoreEvents]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline

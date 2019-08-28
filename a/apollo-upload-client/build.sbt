@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-upload-client"
-version := "8.1-dt-20190619Z-cb4d79"
+version := "8.1-dt-20190827Z-cb4d79"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

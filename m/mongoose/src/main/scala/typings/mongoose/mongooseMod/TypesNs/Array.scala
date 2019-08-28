@@ -34,7 +34,7 @@ trait Array[T] extends ArrayConstructor {
   def addToSet(args: js.Any*): Array[T] = js.native
   /**
     * Return the index of obj or -1 if not found.
-    * @param obj he item to look for
+    * @param obj the item to look for
     */
   def indexOf(obj: js.Any): Double = js.native
   /** Helper for console.log */

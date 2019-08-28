@@ -103,7 +103,7 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     */
   var labelFontWeight: js.UndefOr[FW] = js.undefined
   /**
-    * Maximum allowed pixel width of axis tick labels.
+    * Maximum allowed pixel width of legend tick labels.
     *
     * __Default value:__ `160`.
     */
@@ -211,9 +211,7 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     */
   var symbolStrokeWidth: js.UndefOr[N] = js.undefined
   /**
-    * Default shape type (such as "circle") for legend symbols.
-    * Can be one of ``"circle"`, `"square"`, `"cross"`, `"diamond"`, `"triangle-up"`, `"triangle-down"`, `"triangle-right"`, or `"triangle-left"`.
-    * In addition to a set of built-in shapes, custom shapes can be defined using [SVG path strings](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths).
+    * The symbol shape. One of the plotting shapes `circle` (default), `square`, `cross`, `diamond`, `triangle-up`, `triangle-down`, `triangle-right`, or `triangle-left`, the line symbol `stroke`, or one of the centered directional shapes `arrow`, `wedge`, or `triangle`. Alternatively, a custom [SVG path string](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) can be provided. For correct sizing, custom shape paths should be defined within a square bounding box with coordinates ranging from -1 to 1 along both the x and y dimensions.
     *
     * __Default value:__ `"circle"`.
     */
@@ -257,7 +255,7 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     */
   var titleFontWeight: js.UndefOr[FW] = js.undefined
   /**
-    * Maximum allowed pixel width of axis titles.
+    * Maximum allowed pixel width of legend titles.
     *
     * __Default value:__ `180`.
     * @minimum 0

@@ -34,7 +34,7 @@ trait IPlan extends IResourceObject {
   /**
     * The amount in cents to be charged on the interval specified
     */
-  var amount: Double
+  var amount: Double | Null
   /**
     * Describes how to compute the price per period. Either `per_unit` or `tiered`. `per_unit` indicates that the fixed amount (specified in `amount`) will be charged per unit in `quantity` (for plans with `usage_type=licensed`), or per unit of total usage (for plans with `usage_type=metered`). `tiered` indicates that the unit pricing will be computed using a tiering strategy as defined using the `tiers` and `tiers_mode` attributes.
     */
@@ -91,7 +91,7 @@ trait IPlan extends IResourceObject {
   /**
     * Default number of trial days when subscribing a customer to this plan using `trial_from_plan=true`.
     */
-  var trial_period_days: Double
+  var trial_period_days: Double | Null
   /**
     * Configures how the quantity per period should be determined, can be either `metered` or `licensed`. `licensed` will automatically bill the `quantity` set for a plan when adding it to a subscription, `metered` will aggregate the total usage based on usage records. Defaults to `licensed`.
     */
@@ -102,7 +102,6 @@ object IPlan {
   @scala.inline
   def apply(
     active: Boolean,
-    amount: Double,
     billing_scheme: per_unit | tiered,
     created: Double,
     currency: String,
@@ -112,23 +111,26 @@ object IPlan {
     livemode: Boolean,
     metadata: IMetadata,
     `object`: plan,
-    trial_period_days: Double,
     usage_type: metered | licensed,
     aggregate_usage: sum | last_during_period | last_ever | max = null,
+    amount: Int | Double = null,
     nickname: String = null,
     product: String | IProduct = null,
     tiers: js.Array[ITier] = null,
     tiers_mode: graduated | volume = null,
-    transform_usage: ITransformUsage = null
+    transform_usage: ITransformUsage = null,
+    trial_period_days: Int | Double = null
   ): IPlan = {
-    val __obj = js.Dynamic.literal(active = active, amount = amount, billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created, currency = currency, id = id, interval = interval, interval_count = interval_count, livemode = livemode, metadata = metadata, trial_period_days = trial_period_days, usage_type = usage_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active, billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created, currency = currency, id = id, interval = interval, interval_count = interval_count, livemode = livemode, metadata = metadata, usage_type = usage_type.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname)
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     if (tiers != null) __obj.updateDynamic("tiers")(tiers)
     if (tiers_mode != null) __obj.updateDynamic("tiers_mode")(tiers_mode.asInstanceOf[js.Any])
     if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage)
+    if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlan]
   }
 }

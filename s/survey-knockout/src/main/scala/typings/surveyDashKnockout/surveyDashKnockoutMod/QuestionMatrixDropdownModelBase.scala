@@ -60,6 +60,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def columnLayoutChangedCallback(): Unit = js.native
   def columnsChangedCallback(): Unit = js.native
   /* protected */ def createNewValue(): js.Any = js.native
+  /* protected */ def createNewValue(nullOnEmpty: Boolean): js.Any = js.native
   def createQuestion(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
   /* protected */ def createQuestionCore(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
   /* protected */ def createRenderedTable(): QuestionMatrixDropdownRenderedTable = js.native

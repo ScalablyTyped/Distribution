@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi-auth-jwt2"
-version := "8.6.1-dd8cb4"
+version := "8.6.2-6d8466"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

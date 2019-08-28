@@ -9,6 +9,7 @@ package object typesSpecEncodeMod {
   import typings.std.Record
   import typings.vegaDashTypings.Anon_Exponent
   import typings.vegaDashTypings.Anon_Test
+  import typings.vegaDashTypings.typesSpecColorMod.Color
   import typings.vegaDashTypings.typesSpecTitleMod.TitleAnchor
 
   type AlignValueRef = ScaledValueRef[Align]
@@ -17,12 +18,12 @@ package object typesSpecEncodeMod {
   type ArrayValueRef = ScaledValueRef[js.Array[js.Any]]
   type BooleanValueRef = ScaledValueRef[Boolean]
   /* Rewritten from type alias, can be one of: 
-    - typings.vegaDashTypings.typesSpecEncodeMod.ScaledValueRef[java.lang.String]
-    - typings.vegaDashTypings.Anon_ValueGradientLinear
+    - typings.vegaDashTypings.typesSpecEncodeMod.ScaledValueRef[typings.vegaDashTypings.typesSpecColorMod.Color]
+    - typings.vegaDashTypings.Anon_ValueLinearGradient
     - typings.vegaDashTypings.Anon_Count
     - typings.vegaDashTypings.Anon_Color
   */
-  type ColorValueRef = _ColorValueRef | ScaledValueRef[String]
+  type ColorValueRef = _ColorValueRef | ScaledValueRef[Color]
   type Encode[T] = Partial[Record[EncodeEntryName, T]]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

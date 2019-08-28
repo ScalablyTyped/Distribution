@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("tableau.Dashboard")
 @js.native
-class Dashboard () extends js.Object {
+class Dashboard () extends Sheet {
   /** Gets the collection of objects. */
   def getObjects(): js.Array[DashboardObject] = js.native
   /**

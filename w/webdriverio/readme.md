@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriverio
 
-Typings are for version 5.12.4
+Typings are for version 5.12.5
 
 ## Library description:
 Next-gen WebDriver test automation framework for Node.js

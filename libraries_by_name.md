@@ -1436,6 +1436,7 @@
 | [dispatchr](./d/dispatchr) | A Flux dispatcher for applications that run on the | yahoo, flux, react, dispatcher |
 | [disposable-email-domains](./d/disposable-email-domains) | A list of  | - |
 | [distributions](./d/distributions) | A collection of probability distribution functions | distribution, normal, studentt, uniform |
+| [distributions-poisson-qua](./d/distributions-poisson-quantile) | Poisson distribution quantile function. | distributions.io, distributions, probability, statistics, stats, cdf, inverse, discrete, counts |
 | [djv](./d/djv) | dynamic json-schema validator | json-schema, json, schema, validator, validate |
 | [dkim-signer](./d/dkim-signer) | DKIM signing code extracted from mailcomposer | DKIM, SMTP, mailcomposer |
 | [dlv](./d/dlv) | Safely get a dot-notated property within an object | delve, dot notation, dot |
@@ -2922,6 +2923,7 @@
 | [is-elevated](./i/is-elevated) | Check if the process is running with elevated priv | admin, administrator, win, win32, windows, process, running, cmd, shell, command-line, check, detect, is, root, sudo, elevate, elevated, privileges |
 | [is-empty](./i/is-empty) | Check whether a value is "empty". | array, check, empty, file, is, map, object, set, value |
 | [is-error-constructor](./i/is-error-constructor) | Check if a value is an error constructor | is, error, constructor, ctor, check, detect, instanceof |
+| [is-even](./i/is-even) | Return true if the given number is even. | array, count, even, filter, integer, is, math, numeric, odd, string |
 | [is-finite](./i/is-finite) | ES2015 Number.isFinite() ponyfill | es2015, ponyfill, polyfill, shim, number, finite, is |
 | [is-fullwidth-code-point](./i/is-fullwidth-code-point) | Check if the character represented by a given Unic | fullwidth, full-width, full, width, unicode, character, string, codepoint, code, point, is, detect, check |
 | [is-function](./i/is-function) | is that thing a function? Use this module to find  | polyfill, is-function, ie6 |
@@ -3513,6 +3515,7 @@
 | [koa-cors](./k/koa-cors) | CORS middleware for Koa | cors, koa, koajs |
 | [koa-csrf](./k/koa-csrf) | CSRF tokens for Koa | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, next, request, security, site |
 | [koa-dec-router](./k/koa-dec-router) | An ES6 decorator + class based router, support inh | koa, router, decorator, es6, es7, koa-router |
+| [koa-ejs](./k/koa-ejs) | ejs render middleware for koa | koa, render, ejs, view |
 | [koa-etag](./k/koa-etag) | ETag support for koa | koa, middleware, cache, caching, etag, file, static, sendfile |
 | [koa-favicon](./k/koa-favicon) | favicon bounce middleware for koa | koa, middleware, favicon |
 | [koa-generic-session](./k/koa-generic-session) | koa generic session store by memory, redis or othe | koa, middleware, session |
@@ -3875,6 +3878,7 @@
 | [lodash_dot_min](./l/lodash_dot_min) | The lodash method _.min exported as a module. | lodash-modularized, min |
 | [lodash_dot_minby](./l/lodash_dot_minby) | The lodash method _.minBy exported as a module. | lodash-modularized, minby |
 | [lodash_dot_mixin](./l/lodash_dot_mixin) | The lodash method _.mixin exported as a module. | lodash-modularized, mixin |
+| [lodash_dot_multiply](./l/lodash_dot_multiply) | The lodash method _.multiply exported as a module. | lodash-modularized, multiply |
 | [lodash_dot_negate](./l/lodash_dot_negate) | The lodash method _.negate exported as a module. | lodash-modularized, negate |
 | [lodash_dot_noop](./l/lodash_dot_noop) | The lodash method _.noop exported as a module. | lodash-modularized, noop |
 | [lodash_dot_now](./l/lodash_dot_now) | The lodash method _.now exported as a module. | lodash-modularized, now |
@@ -4037,6 +4041,7 @@
 | [lusca](./l/lusca) | Application security for express. | - |
 | [luxon](./l/luxon) | Immutable date wrapper | date, immutable |
 | [lwip](./l/lwip) | Comprehensive, fast, and simple image processing a | image, buffer, manipulate, process, resize, scale, rotate, jpeg, jpg, png, gif, crop, blur, sharpen, batch, flip, mirror, border, padding, hue, saturation, lightness, alpha, transparency, fade, opacity, contain, cover |
+| [lyric-parser](./l/lyric-parser) | lyric-parser base on javascript | lyric, parser |
 | [lyricist](./l/lyricist) | Fetches song lyrics using the Genius.com API and w | lyric, lyrics, scrape, genius |
 | [lz-string](./l/lz-string) | LZ-based compression algorithm | lz, compression, string |
 | [lzma-native](./l/lzma-native) | Provides bindings to the native liblzma library (. | lzma, compression, crc32, xz, liblzma |

@@ -23,11 +23,10 @@ trait ISubscription extends IResourceObject {
     * A positive decimal that represents the fee percentage of the subscription invoice amount that will be transferred to
     * the application owner's Stripe account each billing period.
     */
-  var application_fee_percent: Double
+  var application_fee_percent: Double | Null
   /**
-    * Either "charge_automatically", or "send_invoice". When charging automatically, Stripe will attempt to pay this subscription at the
-    * end of the cycle using the default source attached to the customer. When sending an invoice, Stripe will email your customer an
-    * invoice with payment instructions.
+    * Either `charge_automatically`, or `send_invoice`.
+    * This field has been renamed to collection_method and will be removed in a future API version.
     */
   var billing: SubscriptionBilling
   /**
@@ -42,7 +41,7 @@ trait ISubscription extends IResourceObject {
   /**
     * A date in the future at which the subscription will automatically get canceled.
     */
-  var cancel_at: Double
+  var cancel_at: Double | Null
   /**
     * If the subscription has been canceled with the at_period_end flag set to true, cancel_at_period_end on the
     * subscription will be true. You can use this attribute to determine whether a subscription that has a status
@@ -55,6 +54,12 @@ trait ISubscription extends IResourceObject {
     * subscription period when the subscription is automatically moved to a canceled state.
     */
   var canceled_at: Double | Null
+  /**
+    * Either "charge_automatically", or "send_invoice". When charging automatically, Stripe will attempt to pay this subscription at the
+    * end of the cycle using the default source attached to the customer. When sending an invoice, Stripe will email your customer an
+    * invoice with payment instructions.
+    */
+  var collection_method: SubscriptionBilling
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
@@ -86,7 +91,7 @@ trait ISubscription extends IResourceObject {
     * It must belong to the customer associated with the subscription and be in a chargeable state.
     * If not set, defaults to the customer’s default source. [Expandable]
     */
-  var default_source: String
+  var default_source: String | Null
   /**
     * Describes the current discount applied to this subscription, if there is one. When billing, a discount applied to a
     * subscription overrides a discount applied on a customer-wide basis.
@@ -163,7 +168,7 @@ trait ISubscription extends IResourceObject {
   /**
     * If provided, each invoice created by this subscription will apply the tax rate, increasing the amount billed to the customer.
     */
-  var tax_percent: Double
+  var tax_percent: Double | Null
   /**
     * If the subscription has a trial, the end of that trial.
     */
@@ -177,16 +182,14 @@ trait ISubscription extends IResourceObject {
 object ISubscription {
   @scala.inline
   def apply(
-    application_fee_percent: Double,
     billing: SubscriptionBilling,
     billing_cycle_anchor: Double,
-    cancel_at: Double,
     cancel_at_period_end: Boolean,
+    collection_method: SubscriptionBilling,
     created: Double,
     current_period_end: Double,
     current_period_start: Double,
     customer: String | ICustomer,
-    default_source: String,
     id: String,
     items: IList[ISubscriptionItem],
     livemode: Boolean,
@@ -194,30 +197,37 @@ object ISubscription {
     `object`: subscription,
     start: Double,
     status: SubscriptionStatus,
-    tax_percent: Double,
+    application_fee_percent: Int | Double = null,
     billing_thresholds: Anon_Amountgte = null,
+    cancel_at: Int | Double = null,
     canceled_at: Int | Double = null,
     days_until_due: Int | Double = null,
     default_payment_method: String = null,
+    default_source: String = null,
     discount: IDiscount = null,
     ended_at: Int | Double = null,
     latest_invoice: IInvoice | String = null,
     plan: IPlan = null,
     quantity: Int | Double = null,
+    tax_percent: Int | Double = null,
     trial_end: Int | Double = null,
     trial_start: Int | Double = null
   ): ISubscription = {
-    val __obj = js.Dynamic.literal(application_fee_percent = application_fee_percent, billing = billing, billing_cycle_anchor = billing_cycle_anchor, cancel_at = cancel_at, cancel_at_period_end = cancel_at_period_end, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], default_source = default_source, id = id, items = items, livemode = livemode, metadata = metadata, start = start, status = status, tax_percent = tax_percent)
+    val __obj = js.Dynamic.literal(billing = billing, billing_cycle_anchor = billing_cycle_anchor, cancel_at_period_end = cancel_at_period_end, collection_method = collection_method, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], id = id, items = items, livemode = livemode, metadata = metadata, start = start, status = status)
     __obj.updateDynamic("object")(`object`)
+    if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
     if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds)
+    if (cancel_at != null) __obj.updateDynamic("cancel_at")(cancel_at.asInstanceOf[js.Any])
     if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
     if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method)
+    if (default_source != null) __obj.updateDynamic("default_source")(default_source)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (ended_at != null) __obj.updateDynamic("ended_at")(ended_at.asInstanceOf[js.Any])
     if (latest_invoice != null) __obj.updateDynamic("latest_invoice")(latest_invoice.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     if (trial_start != null) __obj.updateDynamic("trial_start")(trial_start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscription]

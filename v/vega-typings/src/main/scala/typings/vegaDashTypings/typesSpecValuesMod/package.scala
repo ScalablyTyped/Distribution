@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecValuesMod {
+  import typings.vegaDashTypings.typesSpecColorMod.Color
   import typings.vegaDashTypings.typesSpecEncodeMod.Align
   import typings.vegaDashTypings.typesSpecEncodeMod.AlignValueRef
   import typings.vegaDashTypings.typesSpecEncodeMod.AnchorValueRef
@@ -28,7 +29,7 @@ package object typesSpecValuesMod {
   type AlignValue = Align | AlignValueRef
   type AnchorValue = TitleAnchor | AnchorValueRef
   type BooleanValue = Boolean | BooleanValueRef
-  type ColorValue = Null | String | ColorValueRef
+  type ColorValue = Null | Color | ColorValueRef
   type DashArrayValue = js.Array[Double] | ArrayValueRef
   type FontStyleValue = FontStyle | FontStyleValueRef
   type FontWeightValue = FontWeight | FontWeightValueRef

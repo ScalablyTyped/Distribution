@@ -39,7 +39,7 @@ trait ISubscriptionItem extends IResourceObject {
   /**
     * The quantity of the plan to which the customer should be subscribed.
     */
-  var quantity: Double
+  var quantity: js.UndefOr[Double] = js.undefined
   /**
     * The subscription this subscription_item belongs to.
     */
@@ -54,13 +54,14 @@ object ISubscriptionItem {
     metadata: IMetadata,
     `object`: subscription_item,
     plan: IPlan,
-    quantity: Double,
     subscription: String,
-    billing_thresholds: Anon_Usagegte = null
+    billing_thresholds: Anon_Usagegte = null,
+    quantity: Int | Double = null
   ): ISubscriptionItem = {
-    val __obj = js.Dynamic.literal(created = created, id = id, metadata = metadata, plan = plan, quantity = quantity, subscription = subscription)
+    val __obj = js.Dynamic.literal(created = created, id = id, metadata = metadata, plan = plan, subscription = subscription)
     __obj.updateDynamic("object")(`object`)
     if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionItem]
   }
 }

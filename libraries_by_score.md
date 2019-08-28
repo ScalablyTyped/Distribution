@@ -2078,6 +2078,7 @@
 | 0.7134834842861312 | [gulp-size](./g/gulp-size) | Display the size of your project
 | 0.7134100093208893 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.7133642933133844 | [accept-language-parser](./a/accept-language-parser) | Parse the accept-language header from a HTTP reque
+| 0.7133031984705296 | [koa-ejs](./k/koa-ejs) | ejs render middleware for koa
 | 0.7133015854422886 | [tus-js-client](./t/tus-js-client) | A pure JavaScript client for the tus resumable upl
 | 0.7132895559033361 | [website-scraper](./w/website-scraper) | Download website to a local directory (including a
 | 0.7132723504225955 | [node-ssdp](./n/node-ssdp) | A node.js SSDP client and server library.
@@ -2293,6 +2294,7 @@
 | 0.7020482033044775 | [react-datepicker](./r/react-datepicker) | A simple and reusable datepicker component for Rea
 | 0.7020414967814751 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati
 | 0.7020252870652617 | [is-reachable](./i/is-reachable) | Check if servers are reachable
+| 0.7019968302335035 | [is-even](./i/is-even) | Return true if the given number is even.
 | 0.7019512249593854 | [npm-name](./n/npm-name) | Check whether a package name is available on npm
 | 0.701947594615194 | [bitwise](./b/bitwise) | Manipulates bits, nibbles, bytes, and buffers.
 | 0.701941977209104 | [rename](./r/rename) | Rename files using some transformers.
@@ -5177,6 +5179,7 @@
 | 0.4544465303469738 | [rrc](./r/rrc) | React Router v4 helper components
 | 0.4543785918269372 | [material__textfield](./m/material__textfield) | The Material Components for the web text field com
 | 0.4541177796086453 | [parse-numeric-range](./p/parse-numeric-range) | Takes a string, such as "1,2,3-10,5-8" and turns i
+| 0.45386270325457656 | [distributions-poisson-qua](./d/distributions-poisson-quantile) | Poisson distribution quantile function.
 | 0.45371750421844115 | [sat](./s/sat) | Library for performing 2D collision detection
 | 0.45366920351549817 | [ng-dialog](./n/ng-dialog) | Modal dialogs and popups provider for Angular.js a
 | 0.4534101030157247 | [react-weui](./r/react-weui) | weui for react
@@ -6497,6 +6500,7 @@
 | 0.25368779640350025 | [redux-localstorage-deboun](./r/redux-localstorage-debounce) | Storage enhancer to debounce persist requests.
 | 0.2534766991181439 | [react-jsonschema-form](./r/react-jsonschema-form) | A simple React component capable of building HTML 
 | 0.2533272123091145 | [alexa-voice-service](./a/alexa-voice-service) | Alexa Voice Service wrapper for the browser.
+| 0.2532557658623724 | [lyric-parser](./l/lyric-parser) | lyric-parser base on javascript
 | 0.2528335523803509 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization
 | 0.25280519594509643 | [express-myconnection](./e/express-myconnection) | Connect/Express middleware that auto provides mysq
 | 0.25274619954206834 | [connect-busboy](./c/connect-busboy) | Connect middleware for busboy
@@ -7007,6 +7011,7 @@
 | 0.09197585078580016 | [jsuite](./j/jsuite) | a tool suite of javascript.
 | 0.09151794124662128 | [cal-heatmap](./c/cal-heatmap) | Cal-Heatmap is a javascript module to create calen
 | 0.09106503571163971 | [emscripten](./e/emscripten) | -
+| 0.0903235623709656 | [lodash_dot_multiply](./l/lodash_dot_multiply) | The lodash method _.multiply exported as a module.
 | 0.08992898753074438 | [prefixfree](./p/prefixfree) | Break free from CSS prefix hell
 | 0.08833331216632158 | [six-runtime](./s/six-runtime) | six koa
 | 0.08769701689246806 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m

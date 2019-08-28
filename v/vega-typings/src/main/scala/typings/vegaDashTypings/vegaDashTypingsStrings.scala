@@ -8,6 +8,7 @@ import typings.vegaDashTypings.typesSpecAutosizeMod.AutoSizeType
 import typings.vegaDashTypings.typesSpecAxisMod.AxisOrient
 import typings.vegaDashTypings.typesSpecAxisMod.FormatType
 import typings.vegaDashTypings.typesSpecAxisMod._LabelOverlap
+import typings.vegaDashTypings.typesSpecColorMod.ColorName
 import typings.vegaDashTypings.typesSpecConfigMod.AxisConfigKeys
 import typings.vegaDashTypings.typesSpecDataMod.DataType
 import typings.vegaDashTypings.typesSpecEncodeMod.Align
@@ -70,6 +71,9 @@ object vegaDashTypingsStrings {
   sealed trait alias extends js.Object
   
   @js.native
+  sealed trait aliceblue extends ColorName
+  
+  @js.native
   sealed trait all extends LayoutAlign
   
   @js.native
@@ -80,6 +84,15 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait alphabetic extends TextBaseline
+  
+  @js.native
+  sealed trait antiquewhite extends ColorName
+  
+  @js.native
+  sealed trait aqua extends ColorName
+  
+  @js.native
+  sealed trait aquamarine extends ColorName
   
   @js.native
   sealed trait arc extends MarkType
@@ -142,6 +155,9 @@ object vegaDashTypingsStrings {
   sealed trait azimuthalEquidistant extends ProjectionType
   
   @js.native
+  sealed trait azure extends ColorName
+  
+  @js.native
   sealed trait band extends DiscreteScaleType
   
   @js.native
@@ -154,10 +170,25 @@ object vegaDashTypingsStrings {
   sealed trait `basis-open` extends Interpolate
   
   @js.native
+  sealed trait beige extends ColorName
+  
+  @js.native
   sealed trait bin extends js.Object
   
   @js.native
   sealed trait `bin-ordinal` extends DiscretizingScaleType
+  
+  @js.native
+  sealed trait bisque extends ColorName
+  
+  @js.native
+  sealed trait black extends ColorName
+  
+  @js.native
+  sealed trait blanchedalmond extends ColorName
+  
+  @js.native
+  sealed trait blue extends ColorName
   
   @js.native
   sealed trait bluegreen extends SequentialMultiHue
@@ -241,6 +272,9 @@ object vegaDashTypingsStrings {
   sealed trait blues extends SequentialSingleHue
   
   @js.native
+  sealed trait blueviolet extends ColorName
+  
+  @js.native
   sealed trait bold extends FontWeight
   
   @js.native
@@ -266,6 +300,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait bounds extends TitleFrame
+  
+  @js.native
+  sealed trait brown extends ColorName
   
   @js.native
   sealed trait brownbluegreen extends Diverging
@@ -299,6 +336,12 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait bundle extends Interpolate
+  
+  @js.native
+  sealed trait burlywood extends ColorName
+  
+  @js.native
+  sealed trait cadetblue extends ColorName
   
   @js.native
   sealed trait canvas extends Renderers
@@ -340,7 +383,13 @@ object vegaDashTypingsStrings {
        with StackOffset
   
   @js.native
+  sealed trait chartreuse extends ColorName
+  
+  @js.native
   sealed trait checkbox extends js.Object
+  
+  @js.native
+  sealed trait chocolate extends ColorName
   
   @js.native
   sealed trait ci0 extends AggregateOp
@@ -382,10 +431,22 @@ object vegaDashTypingsStrings {
   sealed trait copy extends js.Object
   
   @js.native
+  sealed trait coral extends ColorName
+  
+  @js.native
+  sealed trait cornflowerblue extends ColorName
+  
+  @js.native
+  sealed trait cornsilk extends ColorName
+  
+  @js.native
   sealed trait count extends AggregateOp
   
   @js.native
   sealed trait countpattern extends js.Object
+  
+  @js.native
+  sealed trait crimson extends ColorName
   
   @js.native
   sealed trait cross extends _SymbolShape
@@ -409,7 +470,67 @@ object vegaDashTypingsStrings {
   sealed trait cume_dist extends WindowOnlyOp
   
   @js.native
+  sealed trait cyan extends ColorName
+  
+  @js.native
   sealed trait dark2 extends Categorical
+  
+  @js.native
+  sealed trait darkblue extends ColorName
+  
+  @js.native
+  sealed trait darkcyan extends ColorName
+  
+  @js.native
+  sealed trait darkgoldenrod extends ColorName
+  
+  @js.native
+  sealed trait darkgray extends ColorName
+  
+  @js.native
+  sealed trait darkgreen extends ColorName
+  
+  @js.native
+  sealed trait darkgrey extends ColorName
+  
+  @js.native
+  sealed trait darkkhaki extends ColorName
+  
+  @js.native
+  sealed trait darkmagenta extends ColorName
+  
+  @js.native
+  sealed trait darkolivegreen extends ColorName
+  
+  @js.native
+  sealed trait darkorange extends ColorName
+  
+  @js.native
+  sealed trait darkorchid extends ColorName
+  
+  @js.native
+  sealed trait darkred extends ColorName
+  
+  @js.native
+  sealed trait darksalmon extends ColorName
+  
+  @js.native
+  sealed trait darkseagreen extends ColorName
+  
+  @js.native
+  sealed trait darkslateblue extends ColorName
+  
+  @js.native
+  sealed trait darkslategray extends ColorName
+  
+  @js.native
+  sealed trait darkslategrey extends ColorName
+  
+  @js.native
+  sealed trait darkturquoise extends ColorName
+  
+  @js.native
+  sealed trait darkviolet extends ColorName
   
   @js.native
   sealed trait date extends DataType
@@ -419,6 +540,12 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait dblclick extends EventType
+  
+  @js.native
+  sealed trait deeppink extends ColorName
+  
+  @js.native
+  sealed trait deepskyblue extends ColorName
   
   @js.native
   sealed trait default extends js.Object
@@ -436,10 +563,19 @@ object vegaDashTypingsStrings {
   sealed trait diamond extends _SymbolShape
   
   @js.native
+  sealed trait dimgray extends ColorName
+  
+  @js.native
+  sealed trait dimgrey extends ColorName
+  
+  @js.native
   sealed trait distinct extends AggregateOp
   
   @js.native
   sealed trait diverging extends RangeEnum
+  
+  @js.native
+  sealed trait dodgerblue extends ColorName
   
   @js.native
   sealed trait dragenter extends EventType
@@ -492,6 +628,9 @@ object vegaDashTypingsStrings {
   sealed trait filter extends js.Object
   
   @js.native
+  sealed trait firebrick extends ColorName
+  
+  @js.native
   sealed trait first_value extends WindowOnlyOp
   
   @js.native
@@ -507,6 +646,9 @@ object vegaDashTypingsStrings {
   sealed trait flatten extends js.Object
   
   @js.native
+  sealed trait floralwhite extends ColorName
+  
+  @js.native
   sealed trait flush extends LayoutBounds
   
   @js.native
@@ -516,10 +658,19 @@ object vegaDashTypingsStrings {
   sealed trait force extends js.Object
   
   @js.native
+  sealed trait forestgreen extends ColorName
+  
+  @js.native
   sealed trait formula extends js.Object
   
   @js.native
+  sealed trait fuchsia extends ColorName
+  
+  @js.native
   sealed trait full extends LayoutBounds
+  
+  @js.native
+  sealed trait gainsboro extends ColorName
   
   @js.native
   sealed trait geojson extends js.Object
@@ -534,7 +685,16 @@ object vegaDashTypingsStrings {
   sealed trait geoshape extends js.Object
   
   @js.native
+  sealed trait ghostwhite extends ColorName
+  
+  @js.native
   sealed trait gnomonic extends ProjectionType
+  
+  @js.native
+  sealed trait gold extends ColorName
+  
+  @js.native
+  sealed trait goldenrod extends ColorName
   
   @js.native
   sealed trait grab extends js.Object
@@ -549,7 +709,13 @@ object vegaDashTypingsStrings {
   sealed trait graticule extends js.Object
   
   @js.native
+  sealed trait gray extends ColorName
+  
+  @js.native
   sealed trait greedy extends _LabelOverlap
+  
+  @js.native
+  sealed trait green extends ColorName
   
   @js.native
   sealed trait greenblue extends SequentialMultiHue
@@ -579,6 +745,12 @@ object vegaDashTypingsStrings {
   sealed trait greens extends SequentialSingleHue
   
   @js.native
+  sealed trait greenyellow extends ColorName
+  
+  @js.native
+  sealed trait grey extends ColorName
+  
+  @js.native
   sealed trait greys extends SequentialSingleHue
   
   @js.native
@@ -602,7 +774,13 @@ object vegaDashTypingsStrings {
   sealed trait help extends js.Object
   
   @js.native
+  sealed trait honeydew extends ColorName
+  
+  @js.native
   sealed trait horizontal extends Orientation
+  
+  @js.native
+  sealed trait hotpink extends ColorName
   
   @js.native
   sealed trait hour extends TimeInterval
@@ -637,6 +815,12 @@ object vegaDashTypingsStrings {
   sealed trait impute extends js.Object
   
   @js.native
+  sealed trait indianred extends ColorName
+  
+  @js.native
+  sealed trait indigo extends ColorName
+  
+  @js.native
   sealed trait inferno extends SequentialMultiHue
   
   @js.native
@@ -647,6 +831,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait italic extends _FontStyle
+  
+  @js.native
+  sealed trait ivory extends ColorName
   
   @js.native
   sealed trait joinaggregate extends js.Object
@@ -667,6 +854,9 @@ object vegaDashTypingsStrings {
   sealed trait keyup extends EventType
   
   @js.native
+  sealed trait khaki extends ColorName
+  
+  @js.native
   sealed trait lab extends ScaleInterpolate
   
   @js.native
@@ -674,6 +864,15 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait last_value extends WindowOnlyOp
+  
+  @js.native
+  sealed trait lavender extends ColorName
+  
+  @js.native
+  sealed trait lavenderblush extends ColorName
+  
+  @js.native
+  sealed trait lawngreen extends ColorName
   
   @js.native
   sealed trait lead extends WindowOnlyOp
@@ -697,7 +896,61 @@ object vegaDashTypingsStrings {
   sealed trait `legend-symbol` extends js.Object
   
   @js.native
+  sealed trait lemonchiffon extends ColorName
+  
+  @js.native
+  sealed trait lightblue extends ColorName
+  
+  @js.native
+  sealed trait lightcoral extends ColorName
+  
+  @js.native
+  sealed trait lightcyan extends ColorName
+  
+  @js.native
   sealed trait lighter extends FontWeight
+  
+  @js.native
+  sealed trait lightgoldenrodyellow extends ColorName
+  
+  @js.native
+  sealed trait lightgray extends ColorName
+  
+  @js.native
+  sealed trait lightgreen extends ColorName
+  
+  @js.native
+  sealed trait lightgrey extends ColorName
+  
+  @js.native
+  sealed trait lightpink extends ColorName
+  
+  @js.native
+  sealed trait lightsalmon extends ColorName
+  
+  @js.native
+  sealed trait lightseagreen extends ColorName
+  
+  @js.native
+  sealed trait lightskyblue extends ColorName
+  
+  @js.native
+  sealed trait lightslategray extends ColorName
+  
+  @js.native
+  sealed trait lightslategrey extends ColorName
+  
+  @js.native
+  sealed trait lightsteelblue extends ColorName
+  
+  @js.native
+  sealed trait lightyellow extends ColorName
+  
+  @js.native
+  sealed trait lime extends ColorName
+  
+  @js.native
+  sealed trait limegreen extends ColorName
   
   @js.native
   sealed trait line extends MarkType
@@ -709,6 +962,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait `linear-closed` extends Interpolate
+  
+  @js.native
+  sealed trait linen extends ColorName
   
   @js.native
   sealed trait linkpath extends js.Object
@@ -726,10 +982,16 @@ object vegaDashTypingsStrings {
   sealed trait ltr extends TextDirection
   
   @js.native
+  sealed trait magenta extends ColorName
+  
+  @js.native
   sealed trait magma extends SequentialMultiHue
   
   @js.native
   sealed trait mark extends js.Object
+  
+  @js.native
+  sealed trait maroon extends ColorName
   
   @js.native
   sealed trait max
@@ -747,6 +1009,33 @@ object vegaDashTypingsStrings {
        with ImputeMethod
   
   @js.native
+  sealed trait mediumaquamarine extends ColorName
+  
+  @js.native
+  sealed trait mediumblue extends ColorName
+  
+  @js.native
+  sealed trait mediumorchid extends ColorName
+  
+  @js.native
+  sealed trait mediumpurple extends ColorName
+  
+  @js.native
+  sealed trait mediumseagreen extends ColorName
+  
+  @js.native
+  sealed trait mediumslateblue extends ColorName
+  
+  @js.native
+  sealed trait mediumspringgreen extends ColorName
+  
+  @js.native
+  sealed trait mediumturquoise extends ColorName
+  
+  @js.native
+  sealed trait mediumvioletred extends ColorName
+  
+  @js.native
   sealed trait mercator extends ProjectionType
   
   @js.native
@@ -754,6 +1043,9 @@ object vegaDashTypingsStrings {
     extends Baseline
        with SceneTextBaseline
        with _TitleAnchor
+  
+  @js.native
+  sealed trait midnightblue extends ColorName
   
   @js.native
   sealed trait millisecond extends TimeInterval
@@ -764,10 +1056,19 @@ object vegaDashTypingsStrings {
        with ImputeMethod
   
   @js.native
+  sealed trait mintcream extends ColorName
+  
+  @js.native
   sealed trait minute extends TimeInterval
   
   @js.native
   sealed trait missing extends AggregateOp
+  
+  @js.native
+  sealed trait mistyrose extends ColorName
+  
+  @js.native
+  sealed trait moccasin extends ColorName
   
   @js.native
   sealed trait monotone extends Interpolate
@@ -801,6 +1102,15 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait natural extends Interpolate
+  
+  @js.native
+  sealed trait naturalEarth1 extends ProjectionType
+  
+  @js.native
+  sealed trait navajowhite extends ColorName
+  
+  @js.native
+  sealed trait navy extends ColorName
   
   @js.native
   sealed trait `ne-resize` extends js.Object
@@ -860,7 +1170,21 @@ object vegaDashTypingsStrings {
   sealed trait oblique extends _FontStyle
   
   @js.native
-  sealed trait orangered extends SequentialMultiHue
+  sealed trait oldlace extends ColorName
+  
+  @js.native
+  sealed trait olive extends ColorName
+  
+  @js.native
+  sealed trait olivedrab extends ColorName
+  
+  @js.native
+  sealed trait orange extends ColorName
+  
+  @js.native
+  sealed trait orangered
+    extends SequentialMultiHue
+       with ColorName
   
   @js.native
   sealed trait `orangered-3` extends SequentialMultiHue
@@ -885,6 +1209,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait oranges extends SequentialSingleHue
+  
+  @js.native
+  sealed trait orchid extends ColorName
   
   @js.native
   sealed trait ordinal
@@ -913,6 +1240,21 @@ object vegaDashTypingsStrings {
   sealed trait paired extends Categorical
   
   @js.native
+  sealed trait palegoldenrod extends ColorName
+  
+  @js.native
+  sealed trait palegreen extends ColorName
+  
+  @js.native
+  sealed trait paleturquoise extends ColorName
+  
+  @js.native
+  sealed trait palevioletred extends ColorName
+  
+  @js.native
+  sealed trait papayawhip extends ColorName
+  
+  @js.native
   sealed trait parity extends _LabelOverlap
   
   @js.native
@@ -928,10 +1270,19 @@ object vegaDashTypingsStrings {
   sealed trait path extends MarkType
   
   @js.native
+  sealed trait peachpuff extends ColorName
+  
+  @js.native
   sealed trait percent_rank extends WindowOnlyOp
   
   @js.native
+  sealed trait peru extends ColorName
+  
+  @js.native
   sealed trait pie extends js.Object
+  
+  @js.native
+  sealed trait pink extends ColorName
   
   @js.native
   sealed trait pinkyellowgreen extends Diverging
@@ -967,6 +1318,9 @@ object vegaDashTypingsStrings {
   sealed trait plasma extends SequentialMultiHue
   
   @js.native
+  sealed trait plum extends ColorName
+  
+  @js.native
   sealed trait point extends DiscreteScaleType
   
   @js.native
@@ -979,6 +1333,9 @@ object vegaDashTypingsStrings {
   sealed trait pow extends QuantScaleType
   
   @js.native
+  sealed trait powderblue extends ColorName
+  
+  @js.native
   sealed trait prev_value extends WindowOnlyOp
   
   @js.native
@@ -989,6 +1346,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait project extends js.Object
+  
+  @js.native
+  sealed trait purple extends ColorName
   
   @js.native
   sealed trait purpleblue extends SequentialMultiHue
@@ -1159,10 +1519,16 @@ object vegaDashTypingsStrings {
   sealed trait rank extends WindowOnlyOp
   
   @js.native
+  sealed trait rebeccapurple extends ColorName
+  
+  @js.native
   sealed trait rect extends MarkType
   
   @js.native
   sealed trait rectangular extends js.Object
+  
+  @js.native
+  sealed trait red extends ColorName
   
   @js.native
   sealed trait redblue extends Diverging
@@ -1333,10 +1699,16 @@ object vegaDashTypingsStrings {
        with TitleOrient
   
   @js.native
+  sealed trait rosybrown extends ColorName
+  
+  @js.native
   sealed trait `row-resize` extends js.Object
   
   @js.native
   sealed trait row_number extends WindowOnlyOp
+  
+  @js.native
+  sealed trait royalblue extends ColorName
   
   @js.native
   sealed trait rtl extends TextDirection
@@ -1348,13 +1720,28 @@ object vegaDashTypingsStrings {
   sealed trait `s-resize` extends js.Object
   
   @js.native
+  sealed trait saddlebrown extends ColorName
+  
+  @js.native
+  sealed trait salmon extends ColorName
+  
+  @js.native
   sealed trait sample extends js.Object
+  
+  @js.native
+  sealed trait sandybrown extends ColorName
   
   @js.native
   sealed trait scope extends js.Object
   
   @js.native
   sealed trait `se-resize` extends js.Object
+  
+  @js.native
+  sealed trait seagreen extends ColorName
+  
+  @js.native
+  sealed trait seashell extends ColorName
   
   @js.native
   sealed trait second extends TimeInterval
@@ -1381,7 +1768,28 @@ object vegaDashTypingsStrings {
   sealed trait shape extends MarkType
   
   @js.native
+  sealed trait sienna extends ColorName
+  
+  @js.native
+  sealed trait silver extends ColorName
+  
+  @js.native
   sealed trait sinebow extends Cyclical
+  
+  @js.native
+  sealed trait skyblue extends ColorName
+  
+  @js.native
+  sealed trait slateblue extends ColorName
+  
+  @js.native
+  sealed trait slategray extends ColorName
+  
+  @js.native
+  sealed trait slategrey extends ColorName
+  
+  @js.native
+  sealed trait snow extends ColorName
   
   @js.native
   sealed trait spectral extends Diverging
@@ -1414,6 +1822,9 @@ object vegaDashTypingsStrings {
   sealed trait `spectral-9` extends Diverging
   
   @js.native
+  sealed trait springgreen extends ColorName
+  
+  @js.native
   sealed trait sqrt extends QuantScaleType
   
   @js.native
@@ -1435,6 +1846,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait stdevp extends AggregateOp
+  
+  @js.native
+  sealed trait steelblue extends ColorName
   
   @js.native
   sealed trait step extends Interpolate
@@ -1482,7 +1896,16 @@ object vegaDashTypingsStrings {
   sealed trait tableau20 extends Categorical
   
   @js.native
+  sealed trait tan extends ColorName
+  
+  @js.native
+  sealed trait teal extends ColorName
+  
+  @js.native
   sealed trait text extends MarkType
+  
+  @js.native
+  sealed trait thistle extends ColorName
   
   @js.native
   sealed trait threshold extends DiscretizingScaleType
@@ -1494,6 +1917,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait timer extends EventType
+  
+  @js.native
+  sealed trait tomato extends ColorName
   
   @js.native
   sealed trait top
@@ -1556,6 +1982,9 @@ object vegaDashTypingsStrings {
   sealed trait tsv extends js.Object
   
   @js.native
+  sealed trait turquoise extends ColorName
+  
+  @js.native
   sealed trait update extends EncodeEntryName
   
   @js.native
@@ -1586,6 +2015,9 @@ object vegaDashTypingsStrings {
   sealed trait view extends js.Object
   
   @js.native
+  sealed trait violet extends ColorName
+  
+  @js.native
   sealed trait viridis extends SequentialMultiHue
   
   @js.native
@@ -1604,7 +2036,16 @@ object vegaDashTypingsStrings {
   sealed trait week extends TimeInterval
   
   @js.native
+  sealed trait wheat extends ColorName
+  
+  @js.native
   sealed trait wheel extends EventType
+  
+  @js.native
+  sealed trait white extends ColorName
+  
+  @js.native
+  sealed trait whitesmoke extends ColorName
   
   @js.native
   sealed trait width extends RangeEnum
@@ -1619,7 +2060,12 @@ object vegaDashTypingsStrings {
   sealed trait year extends TimeInterval
   
   @js.native
-  sealed trait yellowgreen extends SequentialMultiHue
+  sealed trait yellow extends ColorName
+  
+  @js.native
+  sealed trait yellowgreen
+    extends SequentialMultiHue
+       with ColorName
   
   @js.native
   sealed trait `yellowgreen-3` extends SequentialMultiHue
@@ -1734,6 +2180,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def alias: alias = "alias".asInstanceOf[alias]
   @scala.inline
+  def aliceblue: aliceblue = "aliceblue".asInstanceOf[aliceblue]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def `all-scroll`: `all-scroll` = "all-scroll".asInstanceOf[`all-scroll`]
@@ -1741,6 +2189,12 @@ object vegaDashTypingsStrings {
   def allow: allow = "allow".asInstanceOf[allow]
   @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  @scala.inline
+  def antiquewhite: antiquewhite = "antiquewhite".asInstanceOf[antiquewhite]
+  @scala.inline
+  def aqua: aqua = "aqua".asInstanceOf[aqua]
+  @scala.inline
+  def aquamarine: aquamarine = "aquamarine".asInstanceOf[aquamarine]
   @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]
   @scala.inline
@@ -1782,6 +2236,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def azimuthalEquidistant: azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[azimuthalEquidistant]
   @scala.inline
+  def azure: azure = "azure".asInstanceOf[azure]
+  @scala.inline
   def band: band = "band".asInstanceOf[band]
   @scala.inline
   def basis: basis = "basis".asInstanceOf[basis]
@@ -1790,9 +2246,19 @@ object vegaDashTypingsStrings {
   @scala.inline
   def `basis-open`: `basis-open` = "basis-open".asInstanceOf[`basis-open`]
   @scala.inline
+  def beige: beige = "beige".asInstanceOf[beige]
+  @scala.inline
   def bin: bin = "bin".asInstanceOf[bin]
   @scala.inline
   def `bin-ordinal`: `bin-ordinal` = "bin-ordinal".asInstanceOf[`bin-ordinal`]
+  @scala.inline
+  def bisque: bisque = "bisque".asInstanceOf[bisque]
+  @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  @scala.inline
+  def blanchedalmond: blanchedalmond = "blanchedalmond".asInstanceOf[blanchedalmond]
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
   @scala.inline
   def bluegreen: bluegreen = "bluegreen".asInstanceOf[bluegreen]
   @scala.inline
@@ -1848,6 +2314,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def blues: blues = "blues".asInstanceOf[blues]
   @scala.inline
+  def blueviolet: blueviolet = "blueviolet".asInstanceOf[blueviolet]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
@@ -1861,6 +2329,8 @@ object vegaDashTypingsStrings {
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   @scala.inline
   def bounds: bounds = "bounds".asInstanceOf[bounds]
+  @scala.inline
+  def brown: brown = "brown".asInstanceOf[brown]
   @scala.inline
   def brownbluegreen: brownbluegreen = "brownbluegreen".asInstanceOf[brownbluegreen]
   @scala.inline
@@ -1883,6 +2353,10 @@ object vegaDashTypingsStrings {
   def `brownbluegreen-9`: `brownbluegreen-9` = "brownbluegreen-9".asInstanceOf[`brownbluegreen-9`]
   @scala.inline
   def bundle: bundle = "bundle".asInstanceOf[bundle]
+  @scala.inline
+  def burlywood: burlywood = "burlywood".asInstanceOf[burlywood]
+  @scala.inline
+  def cadetblue: cadetblue = "cadetblue".asInstanceOf[cadetblue]
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
@@ -1908,7 +2382,11 @@ object vegaDashTypingsStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
+  def chartreuse: chartreuse = "chartreuse".asInstanceOf[chartreuse]
+  @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
+  def chocolate: chocolate = "chocolate".asInstanceOf[chocolate]
   @scala.inline
   def ci0: ci0 = "ci0".asInstanceOf[ci0]
   @scala.inline
@@ -1936,9 +2414,17 @@ object vegaDashTypingsStrings {
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
+  def coral: coral = "coral".asInstanceOf[coral]
+  @scala.inline
+  def cornflowerblue: cornflowerblue = "cornflowerblue".asInstanceOf[cornflowerblue]
+  @scala.inline
+  def cornsilk: cornsilk = "cornsilk".asInstanceOf[cornsilk]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
   def countpattern: countpattern = "countpattern".asInstanceOf[countpattern]
+  @scala.inline
+  def crimson: crimson = "crimson".asInstanceOf[crimson]
   @scala.inline
   def cross: cross = "cross".asInstanceOf[cross]
   @scala.inline
@@ -1954,13 +2440,57 @@ object vegaDashTypingsStrings {
   @scala.inline
   def cume_dist: cume_dist = "cume_dist".asInstanceOf[cume_dist]
   @scala.inline
+  def cyan: cyan = "cyan".asInstanceOf[cyan]
+  @scala.inline
   def dark2: dark2 = "dark2".asInstanceOf[dark2]
+  @scala.inline
+  def darkblue: darkblue = "darkblue".asInstanceOf[darkblue]
+  @scala.inline
+  def darkcyan: darkcyan = "darkcyan".asInstanceOf[darkcyan]
+  @scala.inline
+  def darkgoldenrod: darkgoldenrod = "darkgoldenrod".asInstanceOf[darkgoldenrod]
+  @scala.inline
+  def darkgray: darkgray = "darkgray".asInstanceOf[darkgray]
+  @scala.inline
+  def darkgreen: darkgreen = "darkgreen".asInstanceOf[darkgreen]
+  @scala.inline
+  def darkgrey: darkgrey = "darkgrey".asInstanceOf[darkgrey]
+  @scala.inline
+  def darkkhaki: darkkhaki = "darkkhaki".asInstanceOf[darkkhaki]
+  @scala.inline
+  def darkmagenta: darkmagenta = "darkmagenta".asInstanceOf[darkmagenta]
+  @scala.inline
+  def darkolivegreen: darkolivegreen = "darkolivegreen".asInstanceOf[darkolivegreen]
+  @scala.inline
+  def darkorange: darkorange = "darkorange".asInstanceOf[darkorange]
+  @scala.inline
+  def darkorchid: darkorchid = "darkorchid".asInstanceOf[darkorchid]
+  @scala.inline
+  def darkred: darkred = "darkred".asInstanceOf[darkred]
+  @scala.inline
+  def darksalmon: darksalmon = "darksalmon".asInstanceOf[darksalmon]
+  @scala.inline
+  def darkseagreen: darkseagreen = "darkseagreen".asInstanceOf[darkseagreen]
+  @scala.inline
+  def darkslateblue: darkslateblue = "darkslateblue".asInstanceOf[darkslateblue]
+  @scala.inline
+  def darkslategray: darkslategray = "darkslategray".asInstanceOf[darkslategray]
+  @scala.inline
+  def darkslategrey: darkslategrey = "darkslategrey".asInstanceOf[darkslategrey]
+  @scala.inline
+  def darkturquoise: darkturquoise = "darkturquoise".asInstanceOf[darkturquoise]
+  @scala.inline
+  def darkviolet: darkviolet = "darkviolet".asInstanceOf[darkviolet]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  @scala.inline
+  def deeppink: deeppink = "deeppink".asInstanceOf[deeppink]
+  @scala.inline
+  def deepskyblue: deepskyblue = "deepskyblue".asInstanceOf[deepskyblue]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -1972,9 +2502,15 @@ object vegaDashTypingsStrings {
   @scala.inline
   def diamond: diamond = "diamond".asInstanceOf[diamond]
   @scala.inline
+  def dimgray: dimgray = "dimgray".asInstanceOf[dimgray]
+  @scala.inline
+  def dimgrey: dimgrey = "dimgrey".asInstanceOf[dimgrey]
+  @scala.inline
   def distinct: distinct = "distinct".asInstanceOf[distinct]
   @scala.inline
   def diverging: diverging = "diverging".asInstanceOf[diverging]
+  @scala.inline
+  def dodgerblue: dodgerblue = "dodgerblue".asInstanceOf[dodgerblue]
   @scala.inline
   def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   @scala.inline
@@ -2008,6 +2544,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
+  def firebrick: firebrick = "firebrick".asInstanceOf[firebrick]
+  @scala.inline
   def first_value: first_value = "first_value".asInstanceOf[first_value]
   @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
@@ -2018,15 +2556,23 @@ object vegaDashTypingsStrings {
   @scala.inline
   def flatten: flatten = "flatten".asInstanceOf[flatten]
   @scala.inline
+  def floralwhite: floralwhite = "floralwhite".asInstanceOf[floralwhite]
+  @scala.inline
   def flush: flush = "flush".asInstanceOf[flush]
   @scala.inline
   def fold: fold = "fold".asInstanceOf[fold]
   @scala.inline
   def force: force = "force".asInstanceOf[force]
   @scala.inline
+  def forestgreen: forestgreen = "forestgreen".asInstanceOf[forestgreen]
+  @scala.inline
   def formula: formula = "formula".asInstanceOf[formula]
   @scala.inline
+  def fuchsia: fuchsia = "fuchsia".asInstanceOf[fuchsia]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
+  def gainsboro: gainsboro = "gainsboro".asInstanceOf[gainsboro]
   @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   @scala.inline
@@ -2036,7 +2582,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def geoshape: geoshape = "geoshape".asInstanceOf[geoshape]
   @scala.inline
+  def ghostwhite: ghostwhite = "ghostwhite".asInstanceOf[ghostwhite]
+  @scala.inline
   def gnomonic: gnomonic = "gnomonic".asInstanceOf[gnomonic]
+  @scala.inline
+  def gold: gold = "gold".asInstanceOf[gold]
+  @scala.inline
+  def goldenrod: goldenrod = "goldenrod".asInstanceOf[goldenrod]
   @scala.inline
   def grab: grab = "grab".asInstanceOf[grab]
   @scala.inline
@@ -2046,7 +2598,11 @@ object vegaDashTypingsStrings {
   @scala.inline
   def graticule: graticule = "graticule".asInstanceOf[graticule]
   @scala.inline
+  def gray: gray = "gray".asInstanceOf[gray]
+  @scala.inline
   def greedy: greedy = "greedy".asInstanceOf[greedy]
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
   @scala.inline
   def greenblue: greenblue = "greenblue".asInstanceOf[greenblue]
   @scala.inline
@@ -2066,6 +2622,10 @@ object vegaDashTypingsStrings {
   @scala.inline
   def greens: greens = "greens".asInstanceOf[greens]
   @scala.inline
+  def greenyellow: greenyellow = "greenyellow".asInstanceOf[greenyellow]
+  @scala.inline
+  def grey: grey = "grey".asInstanceOf[grey]
+  @scala.inline
   def greys: greys = "greys".asInstanceOf[greys]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
@@ -2080,7 +2640,11 @@ object vegaDashTypingsStrings {
   @scala.inline
   def help: help = "help".asInstanceOf[help]
   @scala.inline
+  def honeydew: honeydew = "honeydew".asInstanceOf[honeydew]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
+  def hotpink: hotpink = "hotpink".asInstanceOf[hotpink]
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
@@ -2102,6 +2666,10 @@ object vegaDashTypingsStrings {
   @scala.inline
   def impute: impute = "impute".asInstanceOf[impute]
   @scala.inline
+  def indianred: indianred = "indianred".asInstanceOf[indianred]
+  @scala.inline
+  def indigo: indigo = "indigo".asInstanceOf[indigo]
+  @scala.inline
   def inferno: inferno = "inferno".asInstanceOf[inferno]
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
@@ -2109,6 +2677,8 @@ object vegaDashTypingsStrings {
   def interior: interior = "interior".asInstanceOf[interior]
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
+  @scala.inline
+  def ivory: ivory = "ivory".asInstanceOf[ivory]
   @scala.inline
   def joinaggregate: joinaggregate = "joinaggregate".asInstanceOf[joinaggregate]
   @scala.inline
@@ -2122,11 +2692,19 @@ object vegaDashTypingsStrings {
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   @scala.inline
+  def khaki: khaki = "khaki".asInstanceOf[khaki]
+  @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
   @scala.inline
   def lag: lag = "lag".asInstanceOf[lag]
   @scala.inline
   def last_value: last_value = "last_value".asInstanceOf[last_value]
+  @scala.inline
+  def lavender: lavender = "lavender".asInstanceOf[lavender]
+  @scala.inline
+  def lavenderblush: lavenderblush = "lavenderblush".asInstanceOf[lavenderblush]
+  @scala.inline
+  def lawngreen: lawngreen = "lawngreen".asInstanceOf[lawngreen]
   @scala.inline
   def lead: lead = "lead".asInstanceOf[lead]
   @scala.inline
@@ -2138,13 +2716,51 @@ object vegaDashTypingsStrings {
   @scala.inline
   def `legend-symbol`: `legend-symbol` = "legend-symbol".asInstanceOf[`legend-symbol`]
   @scala.inline
+  def lemonchiffon: lemonchiffon = "lemonchiffon".asInstanceOf[lemonchiffon]
+  @scala.inline
+  def lightblue: lightblue = "lightblue".asInstanceOf[lightblue]
+  @scala.inline
+  def lightcoral: lightcoral = "lightcoral".asInstanceOf[lightcoral]
+  @scala.inline
+  def lightcyan: lightcyan = "lightcyan".asInstanceOf[lightcyan]
+  @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
+  @scala.inline
+  def lightgoldenrodyellow: lightgoldenrodyellow = "lightgoldenrodyellow".asInstanceOf[lightgoldenrodyellow]
+  @scala.inline
+  def lightgray: lightgray = "lightgray".asInstanceOf[lightgray]
+  @scala.inline
+  def lightgreen: lightgreen = "lightgreen".asInstanceOf[lightgreen]
+  @scala.inline
+  def lightgrey: lightgrey = "lightgrey".asInstanceOf[lightgrey]
+  @scala.inline
+  def lightpink: lightpink = "lightpink".asInstanceOf[lightpink]
+  @scala.inline
+  def lightsalmon: lightsalmon = "lightsalmon".asInstanceOf[lightsalmon]
+  @scala.inline
+  def lightseagreen: lightseagreen = "lightseagreen".asInstanceOf[lightseagreen]
+  @scala.inline
+  def lightskyblue: lightskyblue = "lightskyblue".asInstanceOf[lightskyblue]
+  @scala.inline
+  def lightslategray: lightslategray = "lightslategray".asInstanceOf[lightslategray]
+  @scala.inline
+  def lightslategrey: lightslategrey = "lightslategrey".asInstanceOf[lightslategrey]
+  @scala.inline
+  def lightsteelblue: lightsteelblue = "lightsteelblue".asInstanceOf[lightsteelblue]
+  @scala.inline
+  def lightyellow: lightyellow = "lightyellow".asInstanceOf[lightyellow]
+  @scala.inline
+  def lime: lime = "lime".asInstanceOf[lime]
+  @scala.inline
+  def limegreen: limegreen = "limegreen".asInstanceOf[limegreen]
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def `linear-closed`: `linear-closed` = "linear-closed".asInstanceOf[`linear-closed`]
+  @scala.inline
+  def linen: linen = "linen".asInstanceOf[linen]
   @scala.inline
   def linkpath: linkpath = "linkpath".asInstanceOf[linkpath]
   @scala.inline
@@ -2156,9 +2772,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
+  def magenta: magenta = "magenta".asInstanceOf[magenta]
+  @scala.inline
   def magma: magma = "magma".asInstanceOf[magma]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
+  @scala.inline
+  def maroon: maroon = "maroon".asInstanceOf[maroon]
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
@@ -2166,17 +2786,43 @@ object vegaDashTypingsStrings {
   @scala.inline
   def median: median = "median".asInstanceOf[median]
   @scala.inline
+  def mediumaquamarine: mediumaquamarine = "mediumaquamarine".asInstanceOf[mediumaquamarine]
+  @scala.inline
+  def mediumblue: mediumblue = "mediumblue".asInstanceOf[mediumblue]
+  @scala.inline
+  def mediumorchid: mediumorchid = "mediumorchid".asInstanceOf[mediumorchid]
+  @scala.inline
+  def mediumpurple: mediumpurple = "mediumpurple".asInstanceOf[mediumpurple]
+  @scala.inline
+  def mediumseagreen: mediumseagreen = "mediumseagreen".asInstanceOf[mediumseagreen]
+  @scala.inline
+  def mediumslateblue: mediumslateblue = "mediumslateblue".asInstanceOf[mediumslateblue]
+  @scala.inline
+  def mediumspringgreen: mediumspringgreen = "mediumspringgreen".asInstanceOf[mediumspringgreen]
+  @scala.inline
+  def mediumturquoise: mediumturquoise = "mediumturquoise".asInstanceOf[mediumturquoise]
+  @scala.inline
+  def mediumvioletred: mediumvioletred = "mediumvioletred".asInstanceOf[mediumvioletred]
+  @scala.inline
   def mercator: mercator = "mercator".asInstanceOf[mercator]
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
+  def midnightblue: midnightblue = "midnightblue".asInstanceOf[midnightblue]
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
+  def mintcream: mintcream = "mintcream".asInstanceOf[mintcream]
+  @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
+  def mistyrose: mistyrose = "mistyrose".asInstanceOf[mistyrose]
+  @scala.inline
+  def moccasin: moccasin = "moccasin".asInstanceOf[moccasin]
   @scala.inline
   def monotone: monotone = "monotone".asInstanceOf[monotone]
   @scala.inline
@@ -2199,6 +2845,12 @@ object vegaDashTypingsStrings {
   def `n-resize`: `n-resize` = "n-resize".asInstanceOf[`n-resize`]
   @scala.inline
   def natural: natural = "natural".asInstanceOf[natural]
+  @scala.inline
+  def naturalEarth1: naturalEarth1 = "naturalEarth1".asInstanceOf[naturalEarth1]
+  @scala.inline
+  def navajowhite: navajowhite = "navajowhite".asInstanceOf[navajowhite]
+  @scala.inline
+  def navy: navy = "navy".asInstanceOf[navy]
   @scala.inline
   def `ne-resize`: `ne-resize` = "ne-resize".asInstanceOf[`ne-resize`]
   @scala.inline
@@ -2232,6 +2884,14 @@ object vegaDashTypingsStrings {
   @scala.inline
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
+  def oldlace: oldlace = "oldlace".asInstanceOf[oldlace]
+  @scala.inline
+  def olive: olive = "olive".asInstanceOf[olive]
+  @scala.inline
+  def olivedrab: olivedrab = "olivedrab".asInstanceOf[olivedrab]
+  @scala.inline
+  def orange: orange = "orange".asInstanceOf[orange]
+  @scala.inline
   def orangered: orangered = "orangered".asInstanceOf[orangered]
   @scala.inline
   def `orangered-3`: `orangered-3` = "orangered-3".asInstanceOf[`orangered-3`]
@@ -2250,6 +2910,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def oranges: oranges = "oranges".asInstanceOf[oranges]
   @scala.inline
+  def orchid: orchid = "orchid".asInstanceOf[orchid]
+  @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   @scala.inline
   def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
@@ -2266,6 +2928,16 @@ object vegaDashTypingsStrings {
   @scala.inline
   def paired: paired = "paired".asInstanceOf[paired]
   @scala.inline
+  def palegoldenrod: palegoldenrod = "palegoldenrod".asInstanceOf[palegoldenrod]
+  @scala.inline
+  def palegreen: palegreen = "palegreen".asInstanceOf[palegreen]
+  @scala.inline
+  def paleturquoise: paleturquoise = "paleturquoise".asInstanceOf[paleturquoise]
+  @scala.inline
+  def palevioletred: palevioletred = "palevioletred".asInstanceOf[palevioletred]
+  @scala.inline
+  def papayawhip: papayawhip = "papayawhip".asInstanceOf[papayawhip]
+  @scala.inline
   def parity: parity = "parity".asInstanceOf[parity]
   @scala.inline
   def partition: partition = "partition".asInstanceOf[partition]
@@ -2276,9 +2948,15 @@ object vegaDashTypingsStrings {
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
+  def peachpuff: peachpuff = "peachpuff".asInstanceOf[peachpuff]
+  @scala.inline
   def percent_rank: percent_rank = "percent_rank".asInstanceOf[percent_rank]
   @scala.inline
+  def peru: peru = "peru".asInstanceOf[peru]
+  @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
+  @scala.inline
+  def pink: pink = "pink".asInstanceOf[pink]
   @scala.inline
   def pinkyellowgreen: pinkyellowgreen = "pinkyellowgreen".asInstanceOf[pinkyellowgreen]
   @scala.inline
@@ -2302,6 +2980,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def plasma: plasma = "plasma".asInstanceOf[plasma]
   @scala.inline
+  def plum: plum = "plum".asInstanceOf[plum]
+  @scala.inline
   def point: point = "point".asInstanceOf[point]
   @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
@@ -2310,6 +2990,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def pow: pow = "pow".asInstanceOf[pow]
   @scala.inline
+  def powderblue: powderblue = "powderblue".asInstanceOf[powderblue]
+  @scala.inline
   def prev_value: prev_value = "prev_value".asInstanceOf[prev_value]
   @scala.inline
   def prevent: prevent = "prevent".asInstanceOf[prevent]
@@ -2317,6 +2999,8 @@ object vegaDashTypingsStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def project: project = "project".asInstanceOf[project]
+  @scala.inline
+  def purple: purple = "purple".asInstanceOf[purple]
   @scala.inline
   def purpleblue: purpleblue = "purpleblue".asInstanceOf[purpleblue]
   @scala.inline
@@ -2430,9 +3114,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def rank: rank = "rank".asInstanceOf[rank]
   @scala.inline
+  def rebeccapurple: rebeccapurple = "rebeccapurple".asInstanceOf[rebeccapurple]
+  @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def rectangular: rectangular = "rectangular".asInstanceOf[rectangular]
+  @scala.inline
+  def red: red = "red".asInstanceOf[red]
   @scala.inline
   def redblue: redblue = "redblue".asInstanceOf[redblue]
   @scala.inline
@@ -2542,9 +3230,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def rosybrown: rosybrown = "rosybrown".asInstanceOf[rosybrown]
+  @scala.inline
   def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
   @scala.inline
   def row_number: row_number = "row_number".asInstanceOf[row_number]
+  @scala.inline
+  def royalblue: royalblue = "royalblue".asInstanceOf[royalblue]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
@@ -2552,11 +3244,21 @@ object vegaDashTypingsStrings {
   @scala.inline
   def `s-resize`: `s-resize` = "s-resize".asInstanceOf[`s-resize`]
   @scala.inline
+  def saddlebrown: saddlebrown = "saddlebrown".asInstanceOf[saddlebrown]
+  @scala.inline
+  def salmon: salmon = "salmon".asInstanceOf[salmon]
+  @scala.inline
   def sample: sample = "sample".asInstanceOf[sample]
+  @scala.inline
+  def sandybrown: sandybrown = "sandybrown".asInstanceOf[sandybrown]
   @scala.inline
   def scope: scope = "scope".asInstanceOf[scope]
   @scala.inline
   def `se-resize`: `se-resize` = "se-resize".asInstanceOf[`se-resize`]
+  @scala.inline
+  def seagreen: seagreen = "seagreen".asInstanceOf[seagreen]
+  @scala.inline
+  def seashell: seashell = "seashell".asInstanceOf[seashell]
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   @scala.inline
@@ -2574,7 +3276,21 @@ object vegaDashTypingsStrings {
   @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
   @scala.inline
+  def sienna: sienna = "sienna".asInstanceOf[sienna]
+  @scala.inline
+  def silver: silver = "silver".asInstanceOf[silver]
+  @scala.inline
   def sinebow: sinebow = "sinebow".asInstanceOf[sinebow]
+  @scala.inline
+  def skyblue: skyblue = "skyblue".asInstanceOf[skyblue]
+  @scala.inline
+  def slateblue: slateblue = "slateblue".asInstanceOf[slateblue]
+  @scala.inline
+  def slategray: slategray = "slategray".asInstanceOf[slategray]
+  @scala.inline
+  def slategrey: slategrey = "slategrey".asInstanceOf[slategrey]
+  @scala.inline
+  def snow: snow = "snow".asInstanceOf[snow]
   @scala.inline
   def spectral: spectral = "spectral".asInstanceOf[spectral]
   @scala.inline
@@ -2596,6 +3312,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def `spectral-9`: `spectral-9` = "spectral-9".asInstanceOf[`spectral-9`]
   @scala.inline
+  def springgreen: springgreen = "springgreen".asInstanceOf[springgreen]
+  @scala.inline
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
@@ -2609,6 +3327,8 @@ object vegaDashTypingsStrings {
   def stdev: stdev = "stdev".asInstanceOf[stdev]
   @scala.inline
   def stdevp: stdevp = "stdevp".asInstanceOf[stdevp]
+  @scala.inline
+  def steelblue: steelblue = "steelblue".asInstanceOf[steelblue]
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   @scala.inline
@@ -2638,13 +3358,21 @@ object vegaDashTypingsStrings {
   @scala.inline
   def tableau20: tableau20 = "tableau20".asInstanceOf[tableau20]
   @scala.inline
+  def tan: tan = "tan".asInstanceOf[tan]
+  @scala.inline
+  def teal: teal = "teal".asInstanceOf[teal]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def thistle: thistle = "thistle".asInstanceOf[thistle]
   @scala.inline
   def threshold: threshold = "threshold".asInstanceOf[threshold]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def timer: timer = "timer".asInstanceOf[timer]
+  @scala.inline
+  def tomato: tomato = "tomato".asInstanceOf[tomato]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
@@ -2682,6 +3410,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def tsv: tsv = "tsv".asInstanceOf[tsv]
   @scala.inline
+  def turquoise: turquoise = "turquoise".asInstanceOf[turquoise]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def utc: utc = "utc".asInstanceOf[utc]
@@ -2702,6 +3432,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def view: view = "view".asInstanceOf[view]
   @scala.inline
+  def violet: violet = "violet".asInstanceOf[violet]
+  @scala.inline
   def viridis: viridis = "viridis".asInstanceOf[viridis]
   @scala.inline
   def voronoi: voronoi = "voronoi".asInstanceOf[voronoi]
@@ -2712,7 +3444,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline
+  def wheat: wheat = "wheat".asInstanceOf[wheat]
+  @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
+  @scala.inline
+  def white: white = "white".asInstanceOf[white]
+  @scala.inline
+  def whitesmoke: whitesmoke = "whitesmoke".asInstanceOf[whitesmoke]
   @scala.inline
   def width: width = "width".asInstanceOf[width]
   @scala.inline
@@ -2721,6 +3459,8 @@ object vegaDashTypingsStrings {
   def wordcloud: wordcloud = "wordcloud".asInstanceOf[wordcloud]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def yellow: yellow = "yellow".asInstanceOf[yellow]
   @scala.inline
   def yellowgreen: yellowgreen = "yellowgreen".asInstanceOf[yellowgreen]
   @scala.inline

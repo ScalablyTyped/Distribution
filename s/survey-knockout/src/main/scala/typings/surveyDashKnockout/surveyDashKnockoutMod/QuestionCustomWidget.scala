@@ -11,6 +11,8 @@ class QuestionCustomWidget protected () extends js.Object {
   var htmlTemplate: String = js.native
   val isDefaultRender: Boolean = js.native
   var name: String = js.native
+  val pdfQuestionType: String = js.native
+  val pdfRender: js.Any = js.native
   var widgetJson: js.Any = js.native
   def activatedByChanged(activatedBy: String): Unit = js.native
   def afterRender(question: IQuestion, el: js.Any): Unit = js.native
