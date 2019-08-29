@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait UpdateAcceleratorAttributesRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the accelerator that you want to update. Attribute is required.
+    * The Amazon Resource Name (ARN) of the accelerator that you want to update.
     */
-  var AcceleratorArn: js.UndefOr[GenericString] = js.undefined
+  var AcceleratorArn: GenericString
   /**
     * Update whether flow logs are enabled. The default value is false. If the value is true, FlowLogsS3Bucket and FlowLogsS3Prefix must be specified. For more information, see Flow Logs in the AWS Global Accelerator Developer Guide.
     */
@@ -26,13 +26,12 @@ trait UpdateAcceleratorAttributesRequest extends js.Object {
 object UpdateAcceleratorAttributesRequest {
   @scala.inline
   def apply(
-    AcceleratorArn: GenericString = null,
+    AcceleratorArn: GenericString,
     FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined,
     FlowLogsS3Bucket: GenericString = null,
     FlowLogsS3Prefix: GenericString = null
   ): UpdateAcceleratorAttributesRequest = {
-    val __obj = js.Dynamic.literal()
-    if (AcceleratorArn != null) __obj.updateDynamic("AcceleratorArn")(AcceleratorArn)
+    val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn)
     if (!js.isUndefined(FlowLogsEnabled)) __obj.updateDynamic("FlowLogsEnabled")(FlowLogsEnabled)
     if (FlowLogsS3Bucket != null) __obj.updateDynamic("FlowLogsS3Bucket")(FlowLogsS3Bucket)
     if (FlowLogsS3Prefix != null) __obj.updateDynamic("FlowLogsS3Prefix")(FlowLogsS3Prefix)

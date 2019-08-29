@@ -24,6 +24,6 @@ abstract class OneToManyIterator[T] () extends LazyIterator[T] {
     * (i.e., any remaining carryover).
     */
   /* protected */ def pump(): js.Promise[Boolean] = js.native
-  def serialNext(): js.Promise[IteratorResult[T]] = js.native
+  def serialNext(): js.Promise[IteratorResult[T, _]] = js.native
 }
 

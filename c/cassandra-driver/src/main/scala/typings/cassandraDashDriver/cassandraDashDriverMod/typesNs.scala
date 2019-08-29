@@ -304,7 +304,7 @@ object typesNs extends js.Object {
     var columns: js.Array[StringDictionary[String]] = js.native
     var info: Anon_AchievedConsistency = js.native
     @JSName(scala.scalajs.js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Row]] = js.native
+    var iterator: js.Function0[Iterator[Row, _, js.UndefOr[scala.Nothing]]] = js.native
     var pageState: String = js.native
     var rowLength: Double = js.native
     var rows: js.Array[Row] = js.native

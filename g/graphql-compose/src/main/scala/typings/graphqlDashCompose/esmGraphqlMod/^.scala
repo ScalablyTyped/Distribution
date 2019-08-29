@@ -107,6 +107,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/esm/graphql", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val BREAK: js.Any = js.native
   val BreakingChangeType: _BreakingChangeType = js.native
   val DEFAULT_DEPRECATION_REASON: `No longer supported` = js.native
   val DangerousChangeType: _DangerousChangeType = js.native
@@ -414,25 +415,25 @@ object ^ extends js.Object {
   def typeFromAST(schema: typings.graphql.typeSchemaMod.GraphQLSchema, typeNode: ListTypeNode): js.UndefOr[typings.graphql.typeDefinitionMod.GraphQLList[_]] = js.native
   def typeFromAST(schema: typings.graphql.typeSchemaMod.GraphQLSchema, typeNode: NamedTypeNode): js.UndefOr[GraphQLNamedType] = js.native
   def typeFromAST(schema: typings.graphql.typeSchemaMod.GraphQLSchema, typeNode: NonNullTypeNode): js.UndefOr[typings.graphql.typeDefinitionMod.GraphQLNonNull[_]] = js.native
-  def validate(schema: typings.graphql.typeSchemaMod.GraphQLSchema, documentAST: DocumentNode): js.Array[typings.graphql.errorMod.GraphQLError] = js.native
+  def validate(schema: typings.graphql.typeSchemaMod.GraphQLSchema, documentAST: DocumentNode): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def validate(
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     documentAST: DocumentNode,
     rules: js.Array[ValidationRule]
-  ): js.Array[typings.graphql.errorMod.GraphQLError] = js.native
+  ): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def validate(
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     documentAST: DocumentNode,
     rules: js.Array[ValidationRule],
     typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo
-  ): js.Array[typings.graphql.errorMod.GraphQLError] = js.native
+  ): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def validate(
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     documentAST: DocumentNode,
     rules: js.Array[ValidationRule],
     typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo,
     options: Anon_MaxErrors
-  ): js.Array[typings.graphql.errorMod.GraphQLError] = js.native
+  ): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def validateSchema(schema: typings.graphql.typeSchemaMod.GraphQLSchema): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def valueFromAST(valueNode: Maybe[ValueNode], `type`: GraphQLInputType): js.Any = js.native
   def valueFromAST(valueNode: Maybe[ValueNode], `type`: GraphQLInputType, variables: Maybe[StringDictionary[_]]): js.Any = js.native

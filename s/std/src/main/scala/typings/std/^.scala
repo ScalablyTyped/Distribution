@@ -52,6 +52,8 @@ import typings.std.stdStrings.emptied
 import typings.std.stdStrings.ended
 import typings.std.stdStrings.error
 import typings.std.stdStrings.focus
+import typings.std.stdStrings.focusin
+import typings.std.stdStrings.focusout
 import typings.std.stdStrings.gotpointercapture
 import typings.std.stdStrings.hashchange
 import typings.std.stdStrings.input
@@ -376,7 +378,7 @@ object ^ extends js.Object {
     * @param ev The event.
     */
   var onloadedmetadata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var onloadend: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, js.Any]) | Null = js.native
+  var onloadend: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null = js.native
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
@@ -462,13 +464,13 @@ object ^ extends js.Object {
     * Occurs to indicate progress while downloading media data.
     * @param ev The event.
     */
-  var onprogress: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, js.Any]) | Null = js.native
+  var onprogress: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null = js.native
   /**
     * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
     */
   var onratechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var onreadystatechange: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, js.Any]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], js.Any]) | Null = js.native
   var onrejectionhandled: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   /**
     * Fires when the user resets a form.
@@ -566,7 +568,7 @@ object ^ extends js.Object {
   var scrollX: Double = js.native
   var scrollY: Double = js.native
   var scrollbars: BarProp = js.native
-  var self: Window = js.native
+  var self: Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any) = js.native
   var sessionStorage: Storage = js.native
   var speechSynthesis: SpeechSynthesis = js.native
   var status: java.lang.String = js.native
@@ -574,7 +576,7 @@ object ^ extends js.Object {
   var styleMedia: StyleMedia = js.native
   var toolbar: BarProp = js.native
   var top: Window = js.native
-  var window: Window = js.native
+  var window: Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any) = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def addEventListener(
@@ -1320,6 +1322,34 @@ object ^ extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_gotpointercapture(`type`: gotpointercapture, listener: js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gotpointercapture(
@@ -1474,17 +1504,20 @@ object ^ extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1897,17 +1930,17 @@ object ^ extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1925,17 +1958,20 @@ object ^ extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2517,8 +2553,7 @@ object ^ extends js.Object {
   def decodeURIComponent(encodedURIComponent: java.lang.String): java.lang.String = js.native
   def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
   /**
-    * Dispatches a synthetic event event to target and returns true
-    * if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+    * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
     */
   def dispatchEvent(event: Event): scala.Boolean = js.native
   /**
@@ -2586,7 +2621,7 @@ object ^ extends js.Object {
     */
   def parseFloat(string: java.lang.String): Double = js.native
   /**
-    * Converts A string to an integer.
+    * Converts a string to an integer.
     * @param s A string to convert into a number.
     * @param radix A value between 2 and 36 that specifies the base of the number in numString.
     * If this argument is not supplied, strings with a prefix of '0x' are considered hexadecimal.
@@ -3348,6 +3383,34 @@ object ^ extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_gotpointercapture(`type`: gotpointercapture, listener: js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_gotpointercapture(
@@ -3502,17 +3565,20 @@ object ^ extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3925,17 +3991,17 @@ object ^ extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3953,17 +4019,20 @@ object ^ extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

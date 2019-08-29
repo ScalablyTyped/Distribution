@@ -1,5 +1,7 @@
 package typings.stripe.stripeMod.chargesNs
 
+import typings.stripe.Anon_Address
+import typings.stripe.Anon_AmountDestination
 import typings.stripe.Anon_Fraudulent
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
@@ -47,10 +49,19 @@ trait ICharge extends IResourceObject {
     */
   var application_fee: js.UndefOr[String | IApplicationFee | Null] = js.undefined
   /**
+    * The amount of the application fee (if any) for the charge. See the Connect
+    * documentation for details.
+    */
+  var application_fee_amount: js.UndefOr[Double | Null] = js.undefined
+  /**
     * ID of the balance transaction that describes the impact of this charge on
     * your account balance (not including refunds or disputes). [Expandable]
     */
   var balance_transaction: String | IBalanceTransaction
+  /**
+    * Billing information associated with the payment method at the time of the transaction.
+    */
+  var billing_details: js.UndefOr[Anon_Address | Null] = js.undefined
   /**
     * If the charge was created without capturing, this boolean represents whether or not it is
     * still uncaptured or has since been captured.
@@ -183,6 +194,13 @@ trait ICharge extends IResourceObject {
     */
   var statement_descriptor: String | Null
   /**
+    * Provides information about the charge that customers see on their statements.
+    * Concatenated with the prefix (shortened descriptor) or statement descriptor that’s
+    * set on the account to form the complete statement descriptor. Maximum 22 characters
+    * for the concatenated descriptor.
+    */
+  var statement_descriptor_suffix: js.UndefOr[String | Null] = js.undefined
+  /**
     * The status of the payment is either "succeeded", "pending", or "failed".
     */
   var status: succeeded | pending | failed
@@ -191,6 +209,11 @@ trait ICharge extends IResourceObject {
     * charge was created using the destination parameter). [Expandable]
     */
   var transfer: js.UndefOr[String | ITransfer] = js.undefined
+  /**
+    * An optional dictionary including the account to automatically transfer
+    * to as part of a destination charge. See the Connect documentation for details.
+    */
+  var transfer_data: js.UndefOr[Anon_AmountDestination | Null] = js.undefined
   /**
     * A string that identifies this transaction as part of a group.
     * See the [Connect documentation]
@@ -221,6 +244,8 @@ object ICharge {
     status: succeeded | pending | failed,
     application: String | IApplication = null,
     application_fee: String | IApplicationFee = null,
+    application_fee_amount: Int | Double = null,
+    billing_details: Anon_Address = null,
     customer: String | ICustomer = null,
     description: String = null,
     destination: String | IAccount = null,
@@ -241,13 +266,17 @@ object ICharge {
     source: IStripeSource = null,
     source_transfer: String | ITransfer = null,
     statement_descriptor: String = null,
+    statement_descriptor_suffix: String = null,
     transfer: String | ITransfer = null,
+    transfer_data: Anon_AmountDestination = null,
     transfer_group: String = null
   ): ICharge = {
     val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, receipt_url = receipt_url, refunded = refunded, refunds = refunds, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
+    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details)
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
@@ -268,7 +297,9 @@ object ICharge {
     if (source != null) __obj.updateDynamic("source")(source)
     if (source_transfer != null) __obj.updateDynamic("source_transfer")(source_transfer.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix)
     if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[ICharge]
   }

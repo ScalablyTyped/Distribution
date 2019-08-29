@@ -34,7 +34,7 @@ trait ApplicationCache extends EventTarget {
   /** @deprecated */
   var onobsolete: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /** @deprecated */
-  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
   /** @deprecated */
   var onupdateready: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /** @deprecated */
@@ -126,17 +126,20 @@ trait ApplicationCache extends EventTarget {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -238,17 +241,20 @@ trait ApplicationCache extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

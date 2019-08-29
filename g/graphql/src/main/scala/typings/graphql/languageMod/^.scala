@@ -66,6 +66,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val BREAK: js.Any = js.native
   val DirectiveLocation: _DirectiveLocation = js.native
   val Kind: _Kind = js.native
   val TokenKind: _TokenKind = js.native

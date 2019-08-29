@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-node-resolve"
-version := "5.2.0-7e545f"
+version := "5.2.0-9a0f46"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-1859c4",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20190322Z-374ad0",
-  "org.scalablytyped" %%% "rollup" % "1.20.2-509371",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-1c2c91",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20190322Z-f76e02",
+  "org.scalablytyped" %%% "rollup" % "1.20.3-acd01b",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

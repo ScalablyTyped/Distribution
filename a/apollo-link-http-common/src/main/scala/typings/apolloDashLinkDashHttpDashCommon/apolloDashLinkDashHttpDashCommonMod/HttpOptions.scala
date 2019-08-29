@@ -1,13 +1,14 @@
 package typings.apolloDashLinkDashHttpDashCommon.apolloDashLinkDashHttpDashCommonMod
 
-import typings.apolloDashLinkDashHttpDashCommon.Fn_Init
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HttpOptions extends js.Object {
   var credentials: js.UndefOr[String] = js.undefined
-  var fetch: js.UndefOr[Fn_Init] = js.undefined
+  var fetch: js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GlobalFetch * / any['fetch'] */ js.Any
+  ] = js.undefined
   var fetchOptions: js.UndefOr[js.Any] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var includeExtensions: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +19,7 @@ object HttpOptions {
   @scala.inline
   def apply(
     credentials: String = null,
-    fetch: Fn_Init = null,
+    fetch: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GlobalFetch * / any['fetch'] */ js.Any = null,
     fetchOptions: js.Any = null,
     headers: js.Any = null,
     includeExtensions: js.UndefOr[Boolean] = js.undefined,

@@ -14,7 +14,6 @@ trait EventModifierInit extends UIEventInit {
   var modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined
   var modifierHyper: js.UndefOr[scala.Boolean] = js.undefined
   var modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined
-  var modifierOS: js.UndefOr[scala.Boolean] = js.undefined
   var modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined
   var modifierSuper: js.UndefOr[scala.Boolean] = js.undefined
   var modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,7 +37,6 @@ object EventModifierInit {
     modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined,
     modifierHyper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierOS: js.UndefOr[scala.Boolean] = js.undefined,
     modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,7 +58,6 @@ object EventModifierInit {
     if (!js.isUndefined(modifierFnLock)) __obj.updateDynamic("modifierFnLock")(modifierFnLock)
     if (!js.isUndefined(modifierHyper)) __obj.updateDynamic("modifierHyper")(modifierHyper)
     if (!js.isUndefined(modifierNumLock)) __obj.updateDynamic("modifierNumLock")(modifierNumLock)
-    if (!js.isUndefined(modifierOS)) __obj.updateDynamic("modifierOS")(modifierOS)
     if (!js.isUndefined(modifierScrollLock)) __obj.updateDynamic("modifierScrollLock")(modifierScrollLock)
     if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper)
     if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol)

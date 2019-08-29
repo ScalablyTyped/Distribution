@@ -2,6 +2,7 @@ package typings.mendixmodelsdk.distGenPagesMod
 
 import typings.mendixmodelsdk.distCommonMod.commonNs.ISize
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget
 import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject
 import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplatesNs.DataGridColumn
@@ -656,6 +657,7 @@ object pagesNs extends js.Object {
     ) = this()
     val containerAsButton: Button = js.native
     val containerAsControlBarButton: ControlBarButton = js.native
+    val containerAsCustomWidget: CustomWidget = js.native
     val containerAsDataGrid: DataGrid = js.native
     val containerAsDynamicText: DynamicText = js.native
     val containerAsGroupBox: GroupBox = js.native
@@ -773,6 +775,7 @@ object pagesNs extends js.Object {
     val containerAsConditionallyEditableWidget: ConditionallyEditableWidget = js.native
     val containerAsConditionallyVisibleWidget: ConditionallyVisibleWidget = js.native
     val containerAsControlBarButton: ControlBarButton = js.native
+    val containerAsCustomWidget: CustomWidget = js.native
     val containerAsLayoutGridRow: LayoutGridRow = js.native
     val containerAsNavigationListItem: NavigationListItem = js.native
     val containerAsTabPage: TabPage = js.native
@@ -6699,6 +6702,15 @@ object pagesNs extends js.Object {
     def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = js.native
     /**
       * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+      * The new ClientTemplate will be automatically stored in the 'labelTemplate' property
+      * of the parent customwidgets.CustomWidget element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.1.0 and higher
+      */
+    def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): ClientTemplate = js.native
+    /**
+      * Creates and returns a new ClientTemplate instance in the SDK and on the server.
       * The new ClientTemplate will be automatically stored in the 'caption' property
       * of the parent DataGrid element passed as argument.
       *
@@ -6733,7 +6745,7 @@ object pagesNs extends js.Object {
       * of the parent customwidgets.WidgetObject element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 8.0.0
       */
     def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): ClientTemplate = js.native
     /**
@@ -6955,8 +6967,26 @@ object pagesNs extends js.Object {
       * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
       * The new ConditionalEditabilitySettings will be automatically stored in the 'conditionalEditabilitySettings' property
       * of the parent ConditionallyEditableWidget element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 8.0.0
       */
     def createIn(container: ConditionallyEditableWidget): ConditionalEditabilitySettings = js.native
+    /**
+      * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
+      * The new ConditionalEditabilitySettings will be automatically stored in the 'conditionalEditabilitySettings' property
+      * of the parent ConditionallyEditableWidget element passed as argument.
+      */
+    def createInConditionallyEditableWidgetUnderConditionalEditabilitySettings(container: ConditionallyEditableWidget): ConditionalEditabilitySettings = js.native
+    /**
+      * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
+      * The new ConditionalEditabilitySettings will be automatically stored in the 'conditionalEditabilitySettings' property
+      * of the parent customwidgets.CustomWidget element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.1.0 and higher
+      */
+    def createInCustomWidgetUnderConditionalEditabilitySettings(container: CustomWidget): ConditionalEditabilitySettings = js.native
   }
   
   /* static members */
@@ -6989,6 +7019,15 @@ object pagesNs extends js.Object {
       * of the parent ControlBarButton element passed as argument.
       */
     def createInControlBarButtonUnderConditionalVisibilitySettings(container: ControlBarButton): ConditionalVisibilitySettings = js.native
+    /**
+      * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
+      * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
+      * of the parent customwidgets.CustomWidget element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.1.0 and higher
+      */
+    def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): ConditionalVisibilitySettings = js.native
     /**
       * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
       * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property

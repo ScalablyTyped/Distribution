@@ -3,6 +3,7 @@ package typings.three.srcLoadersFileLoaderMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.ArrayBuffer
 import typings.std.ErrorEvent
+import typings.std.EventTarget
 import typings.std.MimeType
 import typings.std.ProgressEvent
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
@@ -24,12 +25,12 @@ class FileLoader () extends js.Object {
   def load(
     url: String,
     onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
-    onProgress: js.Function1[/* request */ ProgressEvent, Unit]
+    onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
   ): js.Any = js.native
   def load(
     url: String,
     onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
-    onProgress: js.Function1[/* request */ ProgressEvent, Unit],
+    onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
     onError: js.Function1[/* event */ ErrorEvent, Unit]
   ): js.Any = js.native
   def setMimeType(mimeType: MimeType): FileLoader = js.native

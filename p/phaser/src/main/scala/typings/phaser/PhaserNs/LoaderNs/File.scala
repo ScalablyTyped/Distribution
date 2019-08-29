@@ -6,6 +6,7 @@ import typings.phaser.PhaserNs.TypesNs.LoaderNs.FileConfig
 import typings.phaser.PhaserNs.TypesNs.LoaderNs.XHRSettingsObject
 import typings.phaser.integer
 import typings.std.Blob
+import typings.std.EventTarget
 import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
@@ -129,13 +130,13 @@ class File protected () extends js.Object {
     * @param xhr The XMLHttpRequest that caused this onload event.
     * @param event The DOM ProgressEvent that resulted from this error.
     */
-  def onError(xhr: XMLHttpRequest, event: ProgressEvent): Unit = js.native
+  def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Called when the file finishes loading, is sent a DOM ProgressEvent.
     * @param xhr The XMLHttpRequest that caused this onload event.
     * @param event The DOM ProgressEvent that resulted from this load.
     */
-  def onLoad(xhr: XMLHttpRequest, event: ProgressEvent): Unit = js.native
+  def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Usually overridden by the FileTypes and is called by Loader.nextFile.
     * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
@@ -155,7 +156,7 @@ class File protected () extends js.Object {
     * Called during the file load progress. Is sent a DOM ProgressEvent.
     * @param event The DOM ProgressEvent.
     */
-  def onProgress(event: ProgressEvent): Unit = js.native
+  def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Called once the file has been added to its cache and is now ready for deletion from the Loader.
     * It will emit a `filecomplete` event from the LoaderPlugin.

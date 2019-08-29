@@ -19,7 +19,6 @@ trait MediaTrackConstraintSet extends js.Object {
   var resizeMode: js.UndefOr[ConstrainDOMString] = js.undefined
   var sampleRate: js.UndefOr[ConstrainULong] = js.undefined
   var sampleSize: js.UndefOr[ConstrainULong] = js.undefined
-  var volume: js.UndefOr[ConstrainDouble] = js.undefined
   var width: js.UndefOr[ConstrainULong] = js.undefined
 }
 
@@ -40,7 +39,6 @@ object MediaTrackConstraintSet {
     resizeMode: ConstrainDOMString = null,
     sampleRate: ConstrainULong = null,
     sampleSize: ConstrainULong = null,
-    volume: ConstrainDouble = null,
     width: ConstrainULong = null
   ): MediaTrackConstraintSet = {
     val __obj = js.Dynamic.literal()
@@ -58,7 +56,6 @@ object MediaTrackConstraintSet {
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackConstraintSet]
   }

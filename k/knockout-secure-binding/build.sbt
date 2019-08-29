@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "knockout-secure-binding"
-version := "0.0-unknown-dt-20190322Z-1a05cc"
+version := "0.0-unknown-dt-20190322Z-d8b381"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-dc86ef",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-92adc1",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

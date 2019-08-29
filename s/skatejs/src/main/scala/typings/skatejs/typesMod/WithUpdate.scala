@@ -22,14 +22,12 @@ class WithUpdate[P, S] () extends HTMLElement {
   /* CompleteClass */
   override val isContentEditable: Boolean = js.native
   /**
-    * Returns the first following sibling that
-    * is an element, and null otherwise.
+    * Returns the first following sibling that is an element, and null otherwise.
     */
   /* CompleteClass */
   override val nextElementSibling: Element | Null = js.native
   /**
-    * Returns the first preceding sibling that
-    * is an element, and null otherwise.
+    * Returns the first preceding sibling that is an element, and null otherwise.
     */
   /* CompleteClass */
   override val previousElementSibling: Element | Null = js.native

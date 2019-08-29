@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PrefetchIterator[T] protected () extends LazyIterator[T] {
   def this(upstream: LazyIterator[T], bufferSize: Double) = this()
-  var buffer: RingBuffer[js.Promise[IteratorResult[T]]] = js.native
+  var buffer: RingBuffer[js.Promise[IteratorResult[T, _]]] = js.native
   var bufferSize: Double = js.native
   var upstream: LazyIterator[T] = js.native
   /**

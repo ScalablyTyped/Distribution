@@ -16,9 +16,7 @@ trait DataTransferItemList extends /* name */ NumberDictionary[DataTransferItem]
     */
   val length: Double = js.native
   /**
-    * Adds a new entry for the given data to the drag data store. If the data is plain
-    * text  then a type string has to be provided
-    * also.
+    * Adds a new entry for the given data to the drag data store. If the data is plain text then a type string has to be provided also.
     */
   def add(data: java.lang.String, `type`: java.lang.String): DataTransferItem | Null = js.native
   def add(data: File): DataTransferItem | Null = js.native

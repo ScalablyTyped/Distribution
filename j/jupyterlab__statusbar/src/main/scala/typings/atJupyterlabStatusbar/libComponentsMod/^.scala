@@ -15,9 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def GroupItem(props: IProps with HTMLAttributes[HTMLDivElement]): ReactElement = js.native
-  def IconItem(
-    props: typings.atJupyterlabStatusbar.libComponentsIconMod.IconItemNs.IProps with HTMLAttributes[HTMLDivElement]
-  ): ReactElement = js.native
   def ProgressBar(props: typings.atJupyterlabStatusbar.libComponentsProgressBarMod.ProgressBarNs.IProps): Element = js.native
   def TextItem(
     props: typings.atJupyterlabStatusbar.libComponentsTextMod.TextItemNs.IProps with HTMLAttributes[HTMLSpanElement]

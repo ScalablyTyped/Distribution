@@ -30,6 +30,9 @@ object stdNumbers {
   sealed trait `7` extends js.Object
   
   @js.native
+  sealed trait `false` extends js.Object
+  
+  @js.native
   sealed trait `true` extends js.Object
   
   @scala.inline
@@ -48,6 +51,8 @@ object stdNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
+  @scala.inline
+  def `false`: `false` = false.asInstanceOf[`false`]
   @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }

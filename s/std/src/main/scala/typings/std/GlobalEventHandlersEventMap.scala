@@ -34,6 +34,8 @@ trait GlobalEventHandlersEventMap extends js.Object {
   var ended: Event
   var error: ErrorEvent
   var focus: FocusEvent
+  var focusin: FocusEvent
+  var focusout: FocusEvent
   var gotpointercapture: PointerEvent
   var input: Event
   var invalid: Event
@@ -43,7 +45,7 @@ trait GlobalEventHandlersEventMap extends js.Object {
   var load: Event
   var loadeddata: Event
   var loadedmetadata: Event
-  var loadend: ProgressEvent
+  var loadend: ProgressEvent[EventTarget]
   var loadstart: Event
   var lostpointercapture: PointerEvent
   var mousedown: MouseEvent
@@ -64,7 +66,7 @@ trait GlobalEventHandlersEventMap extends js.Object {
   var pointerout: PointerEvent
   var pointerover: PointerEvent
   var pointerup: PointerEvent
-  var progress: ProgressEvent
+  var progress: ProgressEvent[EventTarget]
   var ratechange: Event
   var reset: Event
   var resize: UIEvent
@@ -125,6 +127,8 @@ object GlobalEventHandlersEventMap {
     ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
+    focusin: FocusEvent,
+    focusout: FocusEvent,
     gotpointercapture: PointerEvent,
     input: Event,
     invalid: Event,
@@ -134,7 +138,7 @@ object GlobalEventHandlersEventMap {
     load: Event,
     loadeddata: Event,
     loadedmetadata: Event,
-    loadend: ProgressEvent,
+    loadend: ProgressEvent[EventTarget],
     loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
@@ -155,7 +159,7 @@ object GlobalEventHandlersEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
-    progress: ProgressEvent,
+    progress: ProgressEvent[EventTarget],
     ratechange: Event,
     reset: Event,
     resize: UIEvent,
@@ -183,7 +187,7 @@ object GlobalEventHandlersEventMap {
     waiting: Event,
     wheel: WheelEvent
   ): GlobalEventHandlersEventMap = {
-    val __obj = js.Dynamic.literal(abort = abort, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, blur = blur, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, change = change, click = click, close = close, contextmenu = contextmenu, cuechange = cuechange, dblclick = dblclick, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, gotpointercapture = gotpointercapture, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, reset = reset, resize = resize, scroll = scroll, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, submit = submit, suspend = suspend, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, volumechange = volumechange, waiting = waiting, wheel = wheel)
+    val __obj = js.Dynamic.literal(abort = abort, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, blur = blur, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, change = change, click = click, close = close, contextmenu = contextmenu, cuechange = cuechange, dblclick = dblclick, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, focusin = focusin, focusout = focusout, gotpointercapture = gotpointercapture, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, reset = reset, resize = resize, scroll = scroll, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, submit = submit, suspend = suspend, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, volumechange = volumechange, waiting = waiting, wheel = wheel)
   
     __obj.asInstanceOf[GlobalEventHandlersEventMap]
   }

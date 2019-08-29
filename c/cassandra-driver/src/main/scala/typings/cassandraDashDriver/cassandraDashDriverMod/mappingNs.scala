@@ -262,7 +262,7 @@ object mappingNs extends js.Object {
   @js.native
   trait Result extends js.Object {
     @JSName(scala.scalajs.js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[StringDictionary[_]]] = js.native
+    var iterator: js.Function0[Iterator[StringDictionary[_], _, js.UndefOr[scala.Nothing]]] = js.native
     def first(): StringDictionary[js.Any] = js.native
     def forEach(callback: js.Function2[/* currentValue */ StringDictionary[js.Any], /* index */ Double, Unit]): Unit = js.native
     def forEach(

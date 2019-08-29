@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Unlike ObjectLiteralElement, excludes JSXAttribute and JSXSpreadAttribute. */
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.typescriptMod.PropertyAssignment
   - typings.typescript.typescriptMod.ShorthandPropertyAssignment

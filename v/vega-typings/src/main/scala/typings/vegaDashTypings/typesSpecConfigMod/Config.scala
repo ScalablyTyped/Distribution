@@ -1,11 +1,13 @@
 package typings.vegaDashTypings.typesSpecConfigMod
 
+import typings.vegaDashTypings.Anon_Any
 import typings.vegaDashTypings.Anon_Category
-import typings.vegaDashTypings.Anon_Defaults
 import typings.vegaDashTypings.typesSpecAutosizeMod.AutoSize
 import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
 import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
 import typings.vegaDashTypings.typesSpecLegendMod.LegendOrient
+import typings.vegaDashTypings.typesSpecSignalMod.InitSignal
+import typings.vegaDashTypings.typesSpecSignalMod.NewSignal
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecValuesMod.AlignValue
 import typings.vegaDashTypings.typesSpecValuesMod.AnchorValue
@@ -28,7 +30,7 @@ import scala.scalajs.js.annotation._
   var autosize: js.UndefOr[AutoSize] = js.undefined
   var background: js.UndefOr[String] = js.undefined
    // TODO
-  var events: js.UndefOr[Anon_Defaults] = js.undefined
+  var events: js.UndefOr[Anon_Any] = js.undefined
   var group: js.UndefOr[js.Any] = js.undefined
    // TODO
   var legend: js.UndefOr[
@@ -51,6 +53,7 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var range: js.UndefOr[Anon_Category] = js.undefined
+  var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
   var title: js.UndefOr[TitleConfig] = js.undefined
 }
@@ -60,7 +63,7 @@ object Config {
   def apply(
     autosize: AutoSize = null,
     background: String = null,
-    events: Anon_Defaults = null,
+    events: Anon_Any = null,
     group: js.Any = null,
     legend: LegendConfig[
       NumberValue, 
@@ -80,6 +83,7 @@ object Config {
       LegendOrient | SignalRef
     ] = null,
     range: Anon_Category = null,
+    signals: js.Array[InitSignal | NewSignal] = null,
     style: js.Any = null,
     title: TitleConfig = null
   ): Config = {
@@ -90,6 +94,7 @@ object Config {
     if (group != null) __obj.updateDynamic("group")(group)
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (range != null) __obj.updateDynamic("range")(range)
+    if (signals != null) __obj.updateDynamic("signals")(signals)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[Config]

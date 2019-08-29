@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "node-cron"
-version := "2.0-dt-20190409Z-061b21"
+version := "2.0-dt-20190409Z-575e94"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "tz-offset" % "0.0-dt-20190330Z-6ead2a")
+  "org.scalablytyped" %%% "std" % "3.6-c16502",
+  "org.scalablytyped" %%% "tz-offset" % "0.0-dt-20190330Z-7d014d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

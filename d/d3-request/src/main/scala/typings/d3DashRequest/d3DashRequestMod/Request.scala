@@ -4,6 +4,7 @@ import typings.d3DashRequest.d3DashRequestStrings.beforesend
 import typings.d3DashRequest.d3DashRequestStrings.error
 import typings.d3DashRequest.d3DashRequestStrings.load
 import typings.d3DashRequest.d3DashRequestStrings.progress
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestResponseType
@@ -139,7 +140,9 @@ trait Request extends js.Object {
     * Returns the currently-assigned listener for the "progress" type, if any.
     */
   @JSName("on")
-  def on_progress(`type`: progress): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* progressEvent */ ProgressEvent, Unit]] = js.native
+  def on_progress(`type`: progress): js.UndefOr[
+    js.ThisFunction1[/* this */ this.type, /* progressEvent */ ProgressEvent[EventTarget], Unit]
+  ] = js.native
   /**
     * Sets the event listener for the "progress" type,
     * to monitor the progress of the request,
@@ -151,7 +154,7 @@ trait Request extends js.Object {
   @JSName("on")
   def on_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* progressEvent */ ProgressEvent, Unit]
+    listener: js.ThisFunction1[/* this */ this.type, /* progressEvent */ ProgressEvent[EventTarget], Unit]
   ): this.type = js.native
   /**
     * Returns the current password, which defaults to null.

@@ -4,10 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Unique identifier with a package name and version.
-  * If changing this, remember to change `packageIdIsEqual`.
-  */
 trait PackageId extends js.Object {
   /**
     * Name of the package.

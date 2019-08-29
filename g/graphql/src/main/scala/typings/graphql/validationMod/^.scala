@@ -1,7 +1,7 @@
 package typings.graphql.validationMod
 
 import typings.graphql.Anon_MaxErrors
-import typings.graphql.errorMod.GraphQLError
+import typings.graphql.errorGraphQLErrorMod.GraphQLError
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageVisitorMod.ASTVisitor
 import typings.graphql.typeSchemaMod.GraphQLSchema

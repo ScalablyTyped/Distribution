@@ -23,7 +23,7 @@ object atReduxDashSagaIsMod extends js.Object {
   val effect: GuardPredicate[Effect[js.Any], js.Any] = js.native
   val func: GuardPredicate[js.Function, js.Any] = js.native
   val iterable: GuardPredicate[Iterable[js.Any], js.Any] = js.native
-  val iterator: GuardPredicate[Iterator[js.Any], js.Any] = js.native
+  val iterator: GuardPredicate[Iterator[js.Any, js.Any, js.UndefOr[scala.Nothing]], js.Any] = js.native
   val notUndef: GuardPredicate[js.Any, js.Any] = js.native
   val number: GuardPredicate[Double, js.Any] = js.native
   val `object`: GuardPredicate[js.Object, js.Any] = js.native

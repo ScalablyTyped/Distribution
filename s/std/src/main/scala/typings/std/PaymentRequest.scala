@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface of the Payment Request API is the primary access point into the API , and lets web content and apps accept payments from the end user. */
+/** This Payment Request API interface is the primary access point into the API, and lets web content and apps accept payments from the end user. */
 @js.native
 trait PaymentRequest extends EventTarget {
   val id: java.lang.String = js.native

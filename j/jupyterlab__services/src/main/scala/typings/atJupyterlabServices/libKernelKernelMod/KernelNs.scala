@@ -3,6 +3,7 @@ package typings.atJupyterlabServices.libKernelKernelMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atJupyterlabServices.Anon_0
 import typings.atJupyterlabServices.Anon_Allowstdin
+import typings.atJupyterlabServices.Anon_Arguments
 import typings.atJupyterlabServices.Anon_Code
 import typings.atJupyterlabServices.Anon_CodeString
 import typings.atJupyterlabServices.Anon_Target
@@ -30,6 +31,8 @@ import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICommMs
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICommOpenMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICompleteReplyMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IControlMessage
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugReplyMsg
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugRequestMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IExecuteReplyMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IExecuteRequestMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IHistoryReplyMsg
@@ -327,6 +330,17 @@ object KernelNs extends js.Object {
       */
     val clientId: String = js.native
     /**
+      * Whether the kernel connection handles comm messages.
+      *
+      * #### Notes
+      * The comm message protocol currently has implicit assumptions that only
+      * one kernel connection is handling comm messages. This option allows a
+      * kernel connection to opt out of handling comms.
+      *
+      * See https://github.com/jupyter/jupyter_client/issues/263
+      */
+    var handleComms: Boolean = js.native
+    /**
       * The id of the server-side kernel.
       */
     val id: String = js.native
@@ -511,6 +525,24 @@ object KernelNs extends js.Object {
       * received and validated.
       */
     def requestComplete(content: Anon_Code): js.Promise[ICompleteReplyMsg] = js.native
+    /**
+      * Send an experimental `debug_request` message.
+      *
+      * @hidden
+      *
+      * @param content - The content of the request.
+      *
+      * @param disposeOnDone - Whether to dispose of the future when done.
+      *
+      * @returns A kernel future.
+      *
+      * #### Notes
+      * Debug messages are experimental messages that are not in the official
+      * kernel message specification. As such, this function is *NOT* considered
+      * part of the public API, and may change without notice.
+      */
+    def requestDebug(content: Anon_Arguments): IControlFuture[IDebugRequestMsg, IDebugReplyMsg] = js.native
+    def requestDebug(content: Anon_Arguments, disposeOnDone: Boolean): IControlFuture[IDebugRequestMsg, IDebugReplyMsg] = js.native
     /**
       * Send an `execute_request` message.
       *
@@ -795,6 +827,17 @@ object KernelNs extends js.Object {
       * The unique identifier for the kernel client.
       */
     var clientId: js.UndefOr[String] = js.undefined
+    /**
+      * Whether the kernel connection should handle comm messages
+      *
+      * #### Notes
+      * The comm message protocol currently has implicit assumptions that only
+      * one kernel connection is handling comm messages. This option allows a
+      * kernel connection to opt out of handling comms.
+      *
+      * See https://github.com/jupyter/jupyter_client/issues/263
+      */
+    var handleComms: js.UndefOr[Boolean] = js.undefined
     /**
       * The kernel type (e.g. python3).
       */

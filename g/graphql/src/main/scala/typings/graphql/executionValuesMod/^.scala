@@ -38,6 +38,11 @@ object ^ extends js.Object {
   def getVariableValues(
     schema: GraphQLSchema,
     varDefNodes: js.Array[VariableDefinitionNode],
+    inputs: StringDictionary[js.Any]
+  ): CoercedVariableValues = js.native
+  def getVariableValues(
+    schema: GraphQLSchema,
+    varDefNodes: js.Array[VariableDefinitionNode],
     inputs: StringDictionary[js.Any],
     options: Anon_MaxErrors
   ): CoercedVariableValues = js.native

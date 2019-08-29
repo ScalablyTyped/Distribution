@@ -8,6 +8,7 @@ import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLElementEventMap
 import typings.std.KeyboardEvent
@@ -82,6 +83,8 @@ object ojNBoxNodeEventMap {
     ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
+    focusin: FocusEvent,
+    focusout: FocusEvent,
     fullscreenchange: Event,
     fullscreenerror: Event,
     gotpointercapture: PointerEvent,
@@ -98,7 +101,7 @@ object ojNBoxNodeEventMap {
     load: Event,
     loadeddata: Event,
     loadedmetadata: Event,
-    loadend: ProgressEvent,
+    loadend: ProgressEvent[EventTarget],
     loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
@@ -120,7 +123,7 @@ object ojNBoxNodeEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
-    progress: ProgressEvent,
+    progress: ProgressEvent[EventTarget],
     ratechange: Event,
     reset: Event,
     resize: UIEvent,
@@ -155,7 +158,7 @@ object ojNBoxNodeEventMap {
     xPercentageChanged: JetElementCustomEvent[js.UndefOr[Double | Null]],
     yPercentageChanged: JetElementCustomEvent[js.UndefOr[Double | Null]]
   ): ojNBoxNodeEventMap = {
-    val __obj = js.Dynamic.literal(abort = abort, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, blur = blur, borderColorChanged = borderColorChanged, borderWidthChanged = borderWidthChanged, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, categoriesChanged = categoriesChanged, change = change, click = click, close = close, colorChanged = colorChanged, columnChanged = columnChanged, contextmenu = contextmenu, copy = copy, cuechange = cuechange, cut = cut, dblclick = dblclick, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, gotpointercapture = gotpointercapture, groupCategoryChanged = groupCategoryChanged, iconChanged = iconChanged, indicatorColorChanged = indicatorColorChanged, indicatorIconChanged = indicatorIconChanged, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, labelChanged = labelChanged, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, paste = paste, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, reset = reset, resize = resize, rowChanged = rowChanged, scroll = scroll, secondaryLabelChanged = secondaryLabelChanged, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, shortDescChanged = shortDescChanged, stalled = stalled, submit = submit, suspend = suspend, svgClassNameChanged = svgClassNameChanged, svgStyleChanged = svgStyleChanged, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, volumechange = volumechange, waiting = waiting, wheel = wheel, xPercentageChanged = xPercentageChanged, yPercentageChanged = yPercentageChanged)
+    val __obj = js.Dynamic.literal(abort = abort, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, blur = blur, borderColorChanged = borderColorChanged, borderWidthChanged = borderWidthChanged, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, categoriesChanged = categoriesChanged, change = change, click = click, close = close, colorChanged = colorChanged, columnChanged = columnChanged, contextmenu = contextmenu, copy = copy, cuechange = cuechange, cut = cut, dblclick = dblclick, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, focusin = focusin, focusout = focusout, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, gotpointercapture = gotpointercapture, groupCategoryChanged = groupCategoryChanged, iconChanged = iconChanged, indicatorColorChanged = indicatorColorChanged, indicatorIconChanged = indicatorIconChanged, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, labelChanged = labelChanged, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, paste = paste, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, reset = reset, resize = resize, rowChanged = rowChanged, scroll = scroll, secondaryLabelChanged = secondaryLabelChanged, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, shortDescChanged = shortDescChanged, stalled = stalled, submit = submit, suspend = suspend, svgClassNameChanged = svgClassNameChanged, svgStyleChanged = svgStyleChanged, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, volumechange = volumechange, waiting = waiting, wheel = wheel, xPercentageChanged = xPercentageChanged, yPercentageChanged = yPercentageChanged)
   
     __obj.asInstanceOf[ojNBoxNodeEventMap]
   }

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait DocumentOrShadowRoot extends js.Object {
   val activeElement: Element | Null
+  /**
+    * Returns document's fullscreen element.
+    */
   val fullscreenElement: Element | Null
   val pointerLockElement: Element | Null
   /**

@@ -282,9 +282,9 @@ trait String
   def trim(): java.lang.String = js.native
   /** Removes the trailing white space and line terminator characters from a string. */
   def trimEnd(): java.lang.String = js.native
-  /** Removes the trailing white space and line terminator characters from a string. */
-  def trimLeft(): java.lang.String = js.native
   /** Removes the leading white space and line terminator characters from a string. */
+  def trimLeft(): java.lang.String = js.native
+  /** Removes the trailing white space and line terminator characters from a string. */
   def trimRight(): java.lang.String = js.native
   /** Removes the leading white space and line terminator characters from a string. */
   def trimStart(): java.lang.String = js.native

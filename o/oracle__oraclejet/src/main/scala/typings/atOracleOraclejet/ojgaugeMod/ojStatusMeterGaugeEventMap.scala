@@ -24,6 +24,7 @@ import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -113,6 +114,8 @@ object ojStatusMeterGaugeEventMap {
     ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
+    focusin: FocusEvent,
+    focusout: FocusEvent,
     fullscreenchange: Event,
     fullscreenerror: Event,
     gotpointercapture: PointerEvent,
@@ -127,7 +130,7 @@ object ojStatusMeterGaugeEventMap {
     load: Event,
     loadeddata: Event,
     loadedmetadata: Event,
-    loadend: ProgressEvent,
+    loadend: ProgressEvent[EventTarget],
     loadstart: Event,
     lostpointercapture: PointerEvent,
     maxChanged: JetElementCustomEvent[Double],
@@ -154,7 +157,7 @@ object ojStatusMeterGaugeEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
-    progress: ProgressEvent,
+    progress: ProgressEvent[EventTarget],
     ratechange: Event,
     readonlyChanged: JetElementCustomEvent[Boolean],
     referenceLinesChanged: JetElementCustomEvent[js.Array[ReferenceLine]],
@@ -198,7 +201,7 @@ object ojStatusMeterGaugeEventMap {
     waiting: Event,
     wheel: WheelEvent
   ): ojStatusMeterGaugeEventMap = {
-    val __obj = js.Dynamic.literal(abort = abort, angleExtentChanged = angleExtentChanged, animationDurationChanged = animationDurationChanged, animationOnDataChangeChanged = animationOnDataChangeChanged, animationOnDisplayChanged = animationOnDisplayChanged, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, blur = blur, borderColorChanged = borderColorChanged, borderRadiusChanged = borderRadiusChanged, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, centerChanged = centerChanged, change = change, click = click, close = close, colorChanged = colorChanged, contextmenu = contextmenu, copy = copy, cuechange = cuechange, cut = cut, dblclick = dblclick, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, gotpointercapture = gotpointercapture, indicatorSizeChanged = indicatorSizeChanged, innerRadiusChanged = innerRadiusChanged, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, labelChanged = labelChanged, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, maxChanged = maxChanged, metricLabelChanged = metricLabelChanged, minChanged = minChanged, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, orientationChanged = orientationChanged, paste = paste, pause = pause, play = play, playing = playing, plotAreaChanged = plotAreaChanged, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, readonlyChanged = readonlyChanged, referenceLinesChanged = referenceLinesChanged, reset = reset, resize = resize, scroll = scroll, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, startAngleChanged = startAngleChanged, stepChanged = stepChanged, submit = submit, suspend = suspend, svgClassNameChanged = svgClassNameChanged, svgStyleChanged = svgStyleChanged, thresholdDisplayChanged = thresholdDisplayChanged, thresholdsChanged = thresholdsChanged, timeupdate = timeupdate, toggle = toggle, tooltipChanged = tooltipChanged, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, trackResizeChanged = trackResizeChanged, transientValueChanged = transientValueChanged, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, translationsChanged = translationsChanged, valueChanged = valueChanged, visualEffectsChanged = visualEffectsChanged, volumechange = volumechange, waiting = waiting, wheel = wheel)
+    val __obj = js.Dynamic.literal(abort = abort, angleExtentChanged = angleExtentChanged, animationDurationChanged = animationDurationChanged, animationOnDataChangeChanged = animationOnDataChangeChanged, animationOnDisplayChanged = animationOnDisplayChanged, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, blur = blur, borderColorChanged = borderColorChanged, borderRadiusChanged = borderRadiusChanged, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, centerChanged = centerChanged, change = change, click = click, close = close, colorChanged = colorChanged, contextmenu = contextmenu, copy = copy, cuechange = cuechange, cut = cut, dblclick = dblclick, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, focusin = focusin, focusout = focusout, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, gotpointercapture = gotpointercapture, indicatorSizeChanged = indicatorSizeChanged, innerRadiusChanged = innerRadiusChanged, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, labelChanged = labelChanged, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, maxChanged = maxChanged, metricLabelChanged = metricLabelChanged, minChanged = minChanged, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, orientationChanged = orientationChanged, paste = paste, pause = pause, play = play, playing = playing, plotAreaChanged = plotAreaChanged, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, readonlyChanged = readonlyChanged, referenceLinesChanged = referenceLinesChanged, reset = reset, resize = resize, scroll = scroll, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, startAngleChanged = startAngleChanged, stepChanged = stepChanged, submit = submit, suspend = suspend, svgClassNameChanged = svgClassNameChanged, svgStyleChanged = svgStyleChanged, thresholdDisplayChanged = thresholdDisplayChanged, thresholdsChanged = thresholdsChanged, timeupdate = timeupdate, toggle = toggle, tooltipChanged = tooltipChanged, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, trackResizeChanged = trackResizeChanged, transientValueChanged = transientValueChanged, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, translationsChanged = translationsChanged, valueChanged = valueChanged, visualEffectsChanged = visualEffectsChanged, volumechange = volumechange, waiting = waiting, wheel = wheel)
   
     __obj.asInstanceOf[ojStatusMeterGaugeEventMap]
   }

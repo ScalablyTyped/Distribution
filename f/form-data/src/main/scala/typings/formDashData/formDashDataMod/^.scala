@@ -6,5 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("form-data", JSImport.Namespace)
 @js.native
-class ^ () extends FormData
+class ^ () extends FormData {
+  def this(options: Options) = this()
+}
 

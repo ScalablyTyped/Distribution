@@ -27,12 +27,13 @@ class DocumentRegistry () extends IDisposable {
   var _defaultRenderedWidgetFactories: js.Any = js.native
   var _defaultWidgetFactories: js.Any = js.native
   var _defaultWidgetFactory: js.Any = js.native
+  var _defaultWidgetFactoryOverrides: js.Any = js.native
   var _extenders: js.Any = js.native
   var _fileTypes: js.Any = js.native
   var _isDisposed: js.Any = js.native
   var _modelFactories: js.Any = js.native
   var _widgetFactories: js.Any = js.native
-  var _widgetFactoryExtensions: js.Any = js.native
+  var _widgetFactoriesForFileType: js.Any = js.native
   /**
     * A signal emitted when the registry has changed.
     */
@@ -91,12 +92,13 @@ class DocumentRegistry () extends IDisposable {
     * @returns A disposable which will unregister the factory.
     *
     * #### Notes
-    * If a factory with the given `'displayName'` is already registered,
+    * If a factory with the given `'name'` is already registered,
     * a warning will be logged, and this will be a no-op.
     * If `'*'` is given as a default extension, the factory will be registered
     * as the global default.
     * If an extension or global default is already registered, this factory
     * will override the existing default.
+    * The factory cannot be named an empty string or the string `'default'`.
     */
   def addWidgetFactory(factory: WidgetFactory): IDisposable = js.native
   /**
@@ -222,6 +224,28 @@ class DocumentRegistry () extends IDisposable {
     * - all other global factories
     */
   def preferredWidgetFactories(path: String): js.Array[WidgetFactory] = js.native
+  def setDefaultWidgetFactory(fileType: String): Unit = js.native
+  /**
+    * Set overrides for the default widget factory for a file type.
+    *
+    * Normally, a widget factory informs the document registry which file types
+    * it should be the default for using the `defaultFor` option in the
+    * IWidgetFactoryOptions. This function can be used to override that after
+    * the fact.
+    *
+    * @param fileType: The name of the file type.
+    *
+    * @param factory: The name of the factory.
+    *
+    * #### Notes
+    * If `factory` is undefined, then any override will be unset, and the
+    * default factory will revert to the original value.
+    *
+    * If `factory` or `fileType` are not known to the docregistry, or
+    * if `factory` cannot open files of type `fileType`, this will throw
+    * an error.
+    */
+  def setDefaultWidgetFactory(fileType: String, factory: String): Unit = js.native
   /**
     * Create an iterator over the registered extensions for a given widget.
     *

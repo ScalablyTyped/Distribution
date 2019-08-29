@@ -3,6 +3,7 @@ package typings.threeDashTdsDashLoader.threeDashTdsDashLoaderMod
 import typings.std.ArrayBuffer
 import typings.std.DataView
 import typings.std.ErrorEvent
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.threeMod.Color
 import typings.three.threeMod.Mesh
@@ -40,12 +41,12 @@ trait TDSLoader extends js.Object {
   def load(
     url: String,
     onLoad: js.Function1[/* object3D */ Object3D, Unit],
-    onProgress: js.Function1[/* progress */ ProgressEvent, Unit]
+    onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit]
   ): Unit = js.native
   def load(
     url: String,
     onLoad: js.Function1[/* object3D */ Object3D, Unit],
-    onProgress: js.Function1[/* progress */ ProgressEvent, Unit],
+    onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit],
     onError: js.Function1[/* event */ ErrorEvent, Unit]
   ): Unit = js.native
   /**

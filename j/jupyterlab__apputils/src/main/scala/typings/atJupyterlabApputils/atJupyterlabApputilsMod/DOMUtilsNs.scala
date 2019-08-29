@@ -1,6 +1,7 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
 import typings.std.HTMLCollection
+import typings.std.HTMLCollectionOf
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +18,10 @@ object DOMUtilsNs extends js.Object {
     * Find the first element matching a class name.
     */
   def findElement(parent: HTMLElement, className: String): HTMLElement = js.native
+  /**
+    * Find the first element matching a class name.
+    */
+  def findElements(parent: HTMLElement, className: String): HTMLCollectionOf[HTMLElement] = js.native
   /**
     * Get the index of the node at a client position, or `-1`.
     */

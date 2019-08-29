@@ -15,6 +15,7 @@ trait Scanner extends js.Object {
   def getTokenValue(): String = js.native
   def hasExtendedUnicodeEscape(): Boolean = js.native
   def hasPrecedingLineBreak(): Boolean = js.native
+  def hasUnicodeEscape(): Boolean = js.native
   def isIdentifier(): Boolean = js.native
   def isReservedWord(): Boolean = js.native
   def isUnterminated(): Boolean = js.native

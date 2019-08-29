@@ -10,13 +10,11 @@ trait ImageBitmap
      with TexImageSource
      with Transferable {
   /**
-    * Returns the intrinsic height of the image, in CSS
-    * pixels.
+    * Returns the intrinsic height of the image, in CSS pixels.
     */
   val height: Double
   /**
-    * Returns the intrinsic width of the image, in CSS
-    * pixels.
+    * Returns the intrinsic width of the image, in CSS pixels.
     */
   val width: Double
   /**
@@ -29,14 +27,12 @@ trait ImageBitmap
 @js.native
 class ImageBitmapCls () extends ImageBitmap {
   /**
-    * Returns the intrinsic height of the image, in CSS
-    * pixels.
+    * Returns the intrinsic height of the image, in CSS pixels.
     */
   /* CompleteClass */
   override val height: Double = js.native
   /**
-    * Returns the intrinsic width of the image, in CSS
-    * pixels.
+    * Returns the intrinsic width of the image, in CSS pixels.
     */
   /* CompleteClass */
   override val width: Double = js.native

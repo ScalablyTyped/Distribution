@@ -1,29 +1,29 @@
 organization := "org.scalablytyped"
 name := "ember"
-version := "3.1-dt-20190717Z-3c1aef"
+version := "3.1-dt-20190717Z-65c9ad"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20190301Z-2dada0",
-  "org.scalablytyped" %%% "ember__array" % "3.0-dt-20190213Z-f566a4",
-  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20190213Z-b66a9c",
-  "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-58220e",
-  "org.scalablytyped" %%% "ember__debug" % "3.0-dt-20190213Z-c64d1b",
-  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20190213Z-6e27a1",
-  "org.scalablytyped" %%% "ember__error" % "3.0-dt-20190213Z-79865b",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20190611Z-74605b",
+  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20190301Z-1b8104",
+  "org.scalablytyped" %%% "ember__array" % "3.0-dt-20190213Z-dbad3c",
+  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20190213Z-f31d17",
+  "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-7333ad",
+  "org.scalablytyped" %%% "ember__debug" % "3.0-dt-20190213Z-96f3d5",
+  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20190213Z-1b9edf",
+  "org.scalablytyped" %%% "ember__error" % "3.0-dt-20190213Z-770fb2",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20190611Z-062b53",
   "org.scalablytyped" %%% "ember__polyfills" % "3.0-dt-20190301Z-fc734b",
-  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20190405Z-3824d9",
-  "org.scalablytyped" %%% "ember__runloop" % "3.0-dt-20190724Z-693bd9",
-  "org.scalablytyped" %%% "ember__service" % "3.0-dt-20190503Z-4b908c",
-  "org.scalablytyped" %%% "ember__string" % "3.0-dt-20190307Z-d21be2",
-  "org.scalablytyped" %%% "ember__test" % "3.0-dt-20190307Z-acc161",
-  "org.scalablytyped" %%% "ember__utils" % "3.0-dt-20190213Z-6f8d20",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-2b422f",
-  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-19bece",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2bc54f",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20190405Z-9c5546",
+  "org.scalablytyped" %%% "ember__runloop" % "3.0-dt-20190724Z-02d429",
+  "org.scalablytyped" %%% "ember__service" % "3.0-dt-20190503Z-a81d9c",
+  "org.scalablytyped" %%% "ember__string" % "3.0-dt-20190307Z-e94ed9",
+  "org.scalablytyped" %%% "ember__test" % "3.0-dt-20190307Z-8c2dda",
+  "org.scalablytyped" %%% "ember__utils" % "3.0-dt-20190213Z-87a72f",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-e99267",
+  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-6a41d3",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-830e2a",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

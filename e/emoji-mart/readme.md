@@ -1,7 +1,7 @@
 
 # Scala.js typings for emoji-mart
 
-Typings are for version 2.8
+Typings are for version 2.11
 
 ## Library description:
 Customizable Slack-like emoji picker for React

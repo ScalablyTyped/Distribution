@@ -32,11 +32,12 @@ trait CompilerHost extends ModuleResolutionHost {
     ]
   ] = js.native
   var resolveModuleNames: js.UndefOr[
-    js.Function4[
+    js.Function5[
       /* moduleNames */ js.Array[String], 
       /* containingFile */ String, 
       /* reusedNames */ js.UndefOr[js.Array[String]], 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.native
@@ -44,10 +45,11 @@ trait CompilerHost extends ModuleResolutionHost {
     * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
     */
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* typeReferenceDirectiveNames */ js.Array[String], 
       /* containingFile */ String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

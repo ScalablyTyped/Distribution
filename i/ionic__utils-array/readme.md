@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-array
 
-Typings are for version 1.1.1
+Typings are for version 1.2.0
 
 ## Library description:
 Array utils

@@ -44,6 +44,7 @@ trait BaseAudioContext extends EventTarget {
   def createDynamicsCompressor(): DynamicsCompressorNode = js.native
   def createGain(): GainNode = js.native
   def createIIRFilter(feedforward: js.Array[Double], feedback: js.Array[Double]): IIRFilterNode = js.native
+  def createIIRFilter(feedforward: Iterable[Double], feedback: Iterable[Double]): IIRFilterNode = js.native
   def createOscillator(): OscillatorNode = js.native
   def createPanner(): PannerNode = js.native
   def createPeriodicWave(real: js.Array[Double], imag: js.Array[Double]): PeriodicWave = js.native
@@ -54,6 +55,8 @@ trait BaseAudioContext extends EventTarget {
   def createPeriodicWave(real: Float32Array, imag: js.Array[Double], constraints: PeriodicWaveConstraints): PeriodicWave = js.native
   def createPeriodicWave(real: Float32Array, imag: Float32Array): PeriodicWave = js.native
   def createPeriodicWave(real: Float32Array, imag: Float32Array, constraints: PeriodicWaveConstraints): PeriodicWave = js.native
+  def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double]): PeriodicWave = js.native
+  def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double], constraints: PeriodicWaveConstraints): PeriodicWave = js.native
   def createScriptProcessor(): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double): ScriptProcessorNode = js.native

@@ -6,6 +6,7 @@ import typings.std.HTMLElement
 import typings.vegaDashTypings.Anon_Bottom
 import typings.vegaDashTypings.Anon_Data
 import typings.vegaDashTypings.Anon_DataSignals
+import typings.vegaDashTypings.typesRuntimeDataflowMod.Changeset
 import typings.vegaDashTypings.typesRuntimeRendererMod.Renderers
 import typings.vegaDashTypings.typesSpecEncodeMod.EncodeEntryName
 import typings.vegaDashTypings.typesSpecSignalMod.SignalValue
@@ -26,6 +27,7 @@ class View protected () extends js.Object {
   def changeset(): js.Any = js.native
   def container(): HTMLElement | Null = js.native
   def data(name: String): js.Array[_] = js.native
+  def data(name: String, tuples: js.Any): this.type = js.native
   def getState(): Anon_DataSignals = js.native
   def getState(options: Anon_Data): Anon_DataSignals = js.native
   def height(): Double = js.native

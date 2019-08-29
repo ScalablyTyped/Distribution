@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreContextMod
 
-import typings.webgl2.WebGLQuery
-import typings.webgl2.WebGLSync
+import typings.std.WebGLQuery
+import typings.std.WebGLSync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

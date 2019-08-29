@@ -35,6 +35,7 @@ import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
@@ -132,6 +133,8 @@ object ojTableEventMap {
       /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
     ],
     focus: FocusEvent,
+    focusin: FocusEvent,
+    focusout: FocusEvent,
     fullscreenchange: Event,
     fullscreenerror: Event,
     gotpointercapture: PointerEvent,
@@ -144,7 +147,7 @@ object ojTableEventMap {
     load: Event,
     loadeddata: Event,
     loadedmetadata: Event,
-    loadend: ProgressEvent,
+    loadend: ProgressEvent[EventTarget],
     loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
@@ -172,7 +175,7 @@ object ojTableEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
-    progress: ProgressEvent,
+    progress: ProgressEvent[EventTarget],
     ratechange: Event,
     reset: Event,
     resize: UIEvent,
@@ -215,7 +218,7 @@ object ojTableEventMap {
     waiting: Event,
     wheel: WheelEvent
   ): ojTableEventMap[K, D] = {
-    val __obj = js.Dynamic.literal(abort = abort, accessibilityChanged = accessibilityChanged, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, asChanged = asChanged, auxclick = auxclick, blur = blur, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, change = change, click = click, close = close, columnsChanged = columnsChanged, columnsDefaultChanged = columnsDefaultChanged, contextmenu = contextmenu, copy = copy, cuechange = cuechange, currentRowChanged = currentRowChanged, cut = cut, dataChanged = dataChanged, dblclick = dblclick, displayChanged = displayChanged, dndChanged = dndChanged, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, editModeChanged = editModeChanged, emptied = emptied, ended = ended, error = error, firstSelectedRowChanged = firstSelectedRowChanged, focus = focus, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, gotpointercapture = gotpointercapture, horizontalGridVisibleChanged = horizontalGridVisibleChanged, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, ojAnimateEnd = ojAnimateEnd, ojAnimateStart = ojAnimateStart, ojBeforeCurrentRow = ojBeforeCurrentRow, ojBeforeRowEdit = ojBeforeRowEdit, ojBeforeRowEditEnd = ojBeforeRowEditEnd, ojSort = ojSort, paste = paste, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, reset = reset, resize = resize, rowRendererChanged = rowRendererChanged, scroll = scroll, scrollPolicyChanged = scrollPolicyChanged, scrollPolicyOptionsChanged = scrollPolicyOptionsChanged, scrollPositionChanged = scrollPositionChanged, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionChanged = selectionChanged, selectionModeChanged = selectionModeChanged, selectionRequiredChanged = selectionRequiredChanged, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, submit = submit, suspend = suspend, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, translationsChanged = translationsChanged, verticalGridVisibleChanged = verticalGridVisibleChanged, volumechange = volumechange, waiting = waiting, wheel = wheel)
+    val __obj = js.Dynamic.literal(abort = abort, accessibilityChanged = accessibilityChanged, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, asChanged = asChanged, auxclick = auxclick, blur = blur, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, change = change, click = click, close = close, columnsChanged = columnsChanged, columnsDefaultChanged = columnsDefaultChanged, contextmenu = contextmenu, copy = copy, cuechange = cuechange, currentRowChanged = currentRowChanged, cut = cut, dataChanged = dataChanged, dblclick = dblclick, displayChanged = displayChanged, dndChanged = dndChanged, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, editModeChanged = editModeChanged, emptied = emptied, ended = ended, error = error, firstSelectedRowChanged = firstSelectedRowChanged, focus = focus, focusin = focusin, focusout = focusout, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, gotpointercapture = gotpointercapture, horizontalGridVisibleChanged = horizontalGridVisibleChanged, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, ojAnimateEnd = ojAnimateEnd, ojAnimateStart = ojAnimateStart, ojBeforeCurrentRow = ojBeforeCurrentRow, ojBeforeRowEdit = ojBeforeRowEdit, ojBeforeRowEditEnd = ojBeforeRowEditEnd, ojSort = ojSort, paste = paste, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, progress = progress, ratechange = ratechange, reset = reset, resize = resize, rowRendererChanged = rowRendererChanged, scroll = scroll, scrollPolicyChanged = scrollPolicyChanged, scrollPolicyOptionsChanged = scrollPolicyOptionsChanged, scrollPositionChanged = scrollPositionChanged, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionChanged = selectionChanged, selectionModeChanged = selectionModeChanged, selectionRequiredChanged = selectionRequiredChanged, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, submit = submit, suspend = suspend, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, translationsChanged = translationsChanged, verticalGridVisibleChanged = verticalGridVisibleChanged, volumechange = volumechange, waiting = waiting, wheel = wheel)
   
     __obj.asInstanceOf[ojTableEventMap[K, D]]
   }

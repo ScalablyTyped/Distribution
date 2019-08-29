@@ -17,6 +17,7 @@ import typings.jquery.jqueryStrings.jsonp
 import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.text
 import typings.jquery.jqueryStrings.xml
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.RegExp
 import typings.std.XMLHttpRequest
@@ -46,7 +47,7 @@ trait JQueryFormOptions
   var target: js.UndefOr[js.Any] = js.undefined
   var uploadProgress: js.UndefOr[
     js.Function4[
-      /* event */ ProgressEvent, 
+      /* event */ ProgressEvent[EventTarget], 
       /* position */ Double, 
       /* total */ Double, 
       /* percentComplete */ Double, 
@@ -99,7 +100,7 @@ object JQueryFormOptions {
     timeout: Int | Double = null,
     traditional: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
-    uploadProgress: (/* event */ ProgressEvent, /* position */ Double, /* total */ Double, /* percentComplete */ Double) => Unit = null,
+    uploadProgress: (/* event */ ProgressEvent[EventTarget], /* position */ Double, /* total */ Double, /* percentComplete */ Double) => Unit = null,
     url: String = null,
     username: String = null,
     xhr: () => XMLHttpRequest = null,

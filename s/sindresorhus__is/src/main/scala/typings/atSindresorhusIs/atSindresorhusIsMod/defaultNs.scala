@@ -43,7 +43,7 @@ object defaultNs extends js.Object {
   var float32Array: js.Function1[/* value */ js.Any, /* is std.Float32Array */ Boolean] = js.native
   var float64Array: js.Function1[/* value */ js.Any, /* is std.Float64Array */ Boolean] = js.native
   var function_ : js.Function1[/* value */ js.Any, /* is std.Function */ Boolean] = js.native
-  var generator: js.Function1[/* value */ js.Any, /* is std.Generator */ Boolean] = js.native
+  var generator: js.Function1[/* value */ js.Any, /* is std.Generator<unknown, any, unknown> */ Boolean] = js.native
   var generatorFunction: js.Function1[/* value */ js.Any, /* is std.GeneratorFunction */ Boolean] = js.native
   var inRange: js.Function2[/* value */ Double, /* range */ Double | js.Array[Double], /* is number */ Boolean] = js.native
   var infinite: js.Function1[/* value */ js.Any, /* is number */ Boolean] = js.native

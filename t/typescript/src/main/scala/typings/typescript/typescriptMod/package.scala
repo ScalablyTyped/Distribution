@@ -92,7 +92,6 @@ package object typescriptMod {
   type ExponentiationOperator = AsteriskAsteriskToken
   type FileWatcherCallback = js.Function2[/* fileName */ String, /* eventKind */ FileWatcherEventKind, Unit]
   type FunctionBody = Block
-  /** @deprecated Use SignatureDeclaration */
   type FunctionLike = SignatureDeclaration
   /* Rewritten from type alias, can be one of: 
     - typings.typescript.typescriptMod.ParameterDeclaration
@@ -129,11 +128,9 @@ package object typescriptMod {
     - typings.typescript.typescriptMod.EndOfFileToken
   */
   type HasJSDoc = _HasJSDoc | EndOfFileToken
-  /** Deprecated, please use UpdateExpression */
   type IncrementExpression = UpdateExpression
   type InstantiableType = Type
   type IntersectionType = UnionOrIntersectionType
-  /** @deprecated Use FileExtensionInfo instead. */
   type JsFileExtensionInfo = FileExtensionInfo
   type LogicalOperatorOrHigher = BitwiseOperatorOrHigher | LogicalOperator
   /**
@@ -155,32 +152,17 @@ package object typescriptMod {
   type QuestionToken = Token[typings.typescript.typescriptMod.SyntaxKind.QuestionToken]
   type ReadonlyToken = Token[ReadonlyKeyword]
   type RelationalOperatorOrHigher = ShiftOperatorOrHigher | RelationalOperator
-  /**
-    * Branded string for keeping track of when we've turned an ambiguous path
-    * specified like "./blah" to an absolute path to an actual
-    * tsconfig file, e.g. "/root/blah/tsconfig.json"
-    */
+  type ReportEmitErrorSummary = js.Function1[/* errorCount */ Double, Unit]
   type ResolvedConfigFileName = String with js.Object
   type ShiftOperatorOrHigher = AdditiveOperatorOrHigher | ShiftOperator
   type StructuredType = ObjectType | UnionType | IntersectionType
-  /** SymbolTable based on ES6 Map interface. */
   type SymbolTable = UnderscoreEscapedMap[Symbol]
-  /**
-    * A function that transforms a node.
-    */
   type Transformer[T /* <: Node */] = js.Function1[/* node */ T, T]
-  /**
-    * A function that is used to initialize and return a `Transformer` callback, which in turn
-    * will be used to transform one or more nodes.
-    */
   type TransformerFactory[T /* <: Node */] = js.Function1[/* context */ TransformationContext, Transformer[T]]
   type TypeParameter = InstantiableType
   type TypeVariable = TypeParameter | IndexedAccessType
   type UnionType = UnionOrIntersectionType
   type VisitResult[T /* <: Node */] = js.UndefOr[T | js.Array[T]]
-  /**
-    * A function that accepts and possibly transforms a node.
-    */
   type Visitor = js.Function1[/* node */ Node, VisitResult[Node]]
   /**
     * Creates the watch what generates program using the config file
@@ -196,13 +178,5 @@ package object typescriptMod {
     /* sourceFiles */ js.UndefOr[js.Array[SourceFile]], 
     Unit
   ]
-  /**
-    * This represents a string whose leading underscore have been escaped by adding extra leading underscores.
-    * The shape of this brand is rather unique compared to others we've used.
-    * Instead of just an intersection of a string and an object, it is that union-ed
-    * with an intersection of void and an object. This makes it wholly incompatible
-    * with a normal string (which is good, it cannot be misused on assignment or on usage),
-    * while still being comparable with a normal string via === (also good) and castable from a string.
-    */
   type __String = (String with Anon_EscapedIdentifier) | (Unit with Anon_EscapedIdentifier) | InternalSymbolName
 }

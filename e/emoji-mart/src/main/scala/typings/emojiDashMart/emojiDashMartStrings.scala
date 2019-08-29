@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 object emojiDashMartStrings {
   @js.native
+  sealed trait EmojiEntry extends js.Object
+  
+  @js.native
   sealed trait Empty extends js.Object
   
   @js.native
@@ -67,6 +70,8 @@ object emojiDashMartStrings {
   @js.native
   sealed trait twitter extends EmojiSet
   
+  @scala.inline
+  def EmojiEntry: EmojiEntry = "EmojiEntry".asInstanceOf[EmojiEntry]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline

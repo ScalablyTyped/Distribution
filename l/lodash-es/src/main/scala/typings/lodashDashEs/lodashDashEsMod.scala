@@ -23,7 +23,7 @@ object lodashDashEsMod extends js.Object {
     */
   def isNaN(number: Double): Boolean = js.native
   /**
-    * Converts A string to an integer.
+    * Converts a string to an integer.
     * @param s A string to convert into a number.
     * @param radix A value between 2 and 36 that specifies the base of the number in numString.
     * If this argument is not supplied, strings with a prefix of '0x' are considered hexadecimal.

@@ -29,8 +29,11 @@ import typings.mendixmodelsdk.distGenNativepagesMod.nativepagesNs.NativeLayoutCa
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.BuildingBlock
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClientAction
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ClientTemplate
+import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ConditionalEditabilitySettings
+import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ConditionalVisibilitySettings
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.DataView
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.DivContainer
+import typings.mendixmodelsdk.distGenPagesMod.pagesNs.EditableEnum
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.GroupBox
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.Header
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.IPage
@@ -80,6 +83,22 @@ object customwidgetsNs extends js.Object {
       unit: ModelUnit,
       container: AbstractElement
     ) = this()
+    /**
+      * In version 8.1.0: introduced
+      */
+    var conditionalEditabilitySettings: ConditionalEditabilitySettings | Null = js.native
+    /**
+      * In version 8.1.0: introduced
+      */
+    var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+    /**
+      * In version 8.1.0: introduced
+      */
+    var editable: EditableEnum = js.native
+    /**
+      * In version 8.1.0: introduced
+      */
+    var labelTemplate: ClientTemplate | Null = js.native
     var `object`: WidgetObject | Null = js.native
     var `type`: CustomWidgetType | Null = js.native
   }
@@ -166,6 +185,7 @@ object customwidgetsNs extends js.Object {
     val containerAsCustomWidget: CustomWidget = js.native
     val containerAsWidgetValue: WidgetValue = js.native
     /**
+      * In version 8.1.0: deleted
       * In version 7.23.0: introduced
       */
     var labelTemplate: ClientTemplate | Null = js.native
@@ -898,9 +918,11 @@ object customwidgetsNs extends js.Object {
   /* static members */
   @js.native
   object SystemPropertyEnum extends js.Object {
+    var Editability: SystemPropertyEnum = js.native
     var Label: SystemPropertyEnum = js.native
     var Name: SystemPropertyEnum = js.native
     var TabIndex: SystemPropertyEnum = js.native
+    var Visibility: SystemPropertyEnum = js.native
   }
   
   /* static members */

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import typings.std.Error
 import typings.std.Partial
+import typings.std.PropertyKey
 import typings.vega.vegaNumbers.`0`
 import typings.vega.vegaNumbers.`1`
 import typings.vega.vegaNumbers.`false`
@@ -11,7 +12,7 @@ import typings.vega.vegaNumbers.`true`
 import typings.vega.vegaStrings.center
 import typings.vega.vegaStrings.left
 import typings.vega.vegaStrings.right
-import typings.vegaDashTypings.typesRuntimeMod.Changeset
+import typings.vegaDashTypings.typesRuntimeDataflowMod.Changeset
 import typings.vegaDashTypings.typesRuntimeMod.Loader
 import typings.vegaDashTypings.typesRuntimeMod.LoaderOptions
 import typings.vegaDashTypings.typesRuntimeMod.Runtime
@@ -75,12 +76,13 @@ object ^ extends js.Object {
   def field(field: String, name: String): AccessorFn[_] = js.native
   def flush[T /* <: js.Any */](range: js.Array[Double], value: Double, threshold: Double, left: T, right: T, center: T): T = js.native
   def formatLocale(definition: js.Object): Unit = js.native
-  def hasOwnProperty(`object`: js.Object, property: String): Boolean = js.native
+  def hasOwnProperty(`object`: js.Object, property: PropertyKey): Boolean = js.native
   def id(`_`: js.Object): js.Symbol = js.native
   def identity[V](v: V): V = js.native
   def inferType(values: js.Array[_]): TypeInference = js.native
   def inferType(values: js.Array[_], field: String): TypeInference = js.native
   def inferTypes(values: js.Array[_], fields: js.Array[String]): StringDictionary[TypeInference] = js.native
+  def ingest(datum: js.Any): js.Any = js.native
   def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P): C with P = js.native
   def inrange(value: Double, range: js.Array[Double], left: Boolean, right: Boolean): Boolean = js.native
   def isArray[T](a: js.Any): /* is std.Array<T> */ Boolean = js.native
@@ -92,6 +94,7 @@ object ^ extends js.Object {
   def isObject(a: js.Any): /* is object */ Boolean = js.native
   def isRegExp(a: js.Any): /* is std.RegExp */ Boolean = js.native
   def isString(a: js.Any): /* is string */ Boolean = js.native
+  def isTuple(t: js.Any): Boolean = js.native
   def key(fields: js.Array[String]): js.Function1[/* _ */ js.Object, String] = js.native
   def key(fields: js.Array[String], flat: Boolean): js.Function1[/* _ */ js.Object, String] = js.native
   def lerp(array: js.Array[Double], fraction: Double): Double = js.native
@@ -174,6 +177,7 @@ object ^ extends js.Object {
   @JSName("truncate")
   def truncate_right(a: String, length: Double, align: right, ellipsis: String): String = js.native
   def truthy(): `true` = js.native
+  def tupleid(t: js.Any): Double = js.native
   def utcquarter(date: Double): Double = js.native
   def utcquarter(date: Date): Double = js.native
   def visitArray(

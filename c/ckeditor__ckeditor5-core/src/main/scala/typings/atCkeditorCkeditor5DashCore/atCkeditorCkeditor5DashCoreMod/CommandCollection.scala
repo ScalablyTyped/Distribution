@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommandCollection () extends js.Object {
   @JSName(scala.scalajs.js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[js.Tuple2[String, Command[js.UndefOr[scala.Nothing]]]]] = js.native
+  var iterator: js.Function0[
+    Iterator[js.Tuple2[String, Command[js.UndefOr[scala.Nothing]]], _, js.UndefOr[scala.Nothing]]
+  ] = js.native
   def add(commandName: String, command: Command[js.UndefOr[scala.Nothing]]): Unit = js.native
   def commands(): IterableIterator[Command[js.UndefOr[scala.Nothing]]] = js.native
   def destroy(): Unit = js.native

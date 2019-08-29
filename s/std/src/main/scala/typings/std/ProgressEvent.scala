@@ -8,15 +8,17 @@ import scala.scalajs.js.annotation._
 
 /** Events measuring progress of an underlying process, like an HTTP request (for an XMLHttpRequest, or the loading of the underlying resource of an <img>, <audio>, <video>, <style> or <link>). */
 @js.native
-trait ProgressEvent extends Event {
+trait ProgressEvent[T /* <: EventTarget */] extends Event {
   val lengthComputable: scala.Boolean = js.native
   val loaded: Double = js.native
+  @JSName("target")
+  val target_ProgressEvent: T | Null = js.native
   val total: Double = js.native
 }
 
 @JSGlobal("ProgressEvent")
 @js.native
-class ProgressEventCls protected () extends ProgressEvent {
+class ProgressEventCls protected () extends ProgressEvent[EventTarget] {
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: ProgressEventInit) = this()
 }
@@ -24,6 +26,10 @@ class ProgressEventCls protected () extends ProgressEvent {
 @JSGlobal("ProgressEvent")
 @js.native
 object ProgressEvent
-  extends Instantiable1[/* type */ java.lang.String, ProgressEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ ProgressEventInit, ProgressEvent]
+  extends Instantiable1[/* type */ java.lang.String, ProgressEvent[EventTarget]]
+     with Instantiable2[
+      /* type */ java.lang.String, 
+      /* eventInitDict */ ProgressEventInit, 
+      ProgressEvent[EventTarget]
+    ]
 

@@ -1,6 +1,7 @@
 package typings.blissfuljs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequestUpload
 import scala.scalajs.js
@@ -12,7 +13,7 @@ trait Anon_Data
   var data: js.UndefOr[String] = js.undefined
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   var method: js.UndefOr[String] = js.undefined
-  var onreadystatechange: js.UndefOr[js.Function1[/* ev */ ProgressEvent, _]] = js.undefined
+  var onreadystatechange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
   var readyState: js.UndefOr[Double] = js.undefined
   var response: js.UndefOr[js.Any] = js.undefined
   var responseBody: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +34,7 @@ object Anon_Data {
     data: String = null,
     headers: StringDictionary[String] = null,
     method: String = null,
-    onreadystatechange: /* ev */ ProgressEvent => _ = null,
+    onreadystatechange: /* ev */ ProgressEvent[EventTarget] => _ = null,
     readyState: Int | Double = null,
     response: js.Any = null,
     responseBody: js.Any = null,

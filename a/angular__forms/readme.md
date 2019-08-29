@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__forms
 
-Typings are for version 8.2.3
+Typings are for version 8.2.4
 
 ## Library description:
 Angular - directives and services for creating forms

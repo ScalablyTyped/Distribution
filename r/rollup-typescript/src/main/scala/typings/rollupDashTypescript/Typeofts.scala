@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.rollupDashTypescript.rollupDashTypescriptNumbers.`false`
 import typings.rollupDashTypescript.rollupDashTypescriptStrings.JS
 import typings.rollupDashTypescript.rollupDashTypescriptStrings.`0DOT8`
-import typings.rollupDashTypescript.rollupDashTypescriptStrings.`3DOT5`
+import typings.rollupDashTypescript.rollupDashTypescriptStrings.`3DOT6`
 import typings.rollupDashTypescript.rollupDashTypescriptStrings.dts
 import typings.typescript.Anon_Config
 import typings.typescript.Anon_Errors
@@ -29,6 +29,7 @@ import typings.typescript.typescriptMod.BindingName
 import typings.typescript.typescriptMod.Block
 import typings.typescript.typescriptMod.BooleanLiteral
 import typings.typescript.typescriptMod.BreakStatement
+import typings.typescript.typescriptMod.BuildOptions
 import typings.typescript.typescriptMod.BuilderProgram
 import typings.typescript.typescriptMod.BuilderProgramHost
 import typings.typescript.typescriptMod.Bundle
@@ -118,6 +119,7 @@ import typings.typescript.typescriptMod.ImportDeclaration
 import typings.typescript.typescriptMod.ImportEqualsDeclaration
 import typings.typescript.typescriptMod.ImportSpecifier
 import typings.typescript.typescriptMod.ImportTypeNode
+import typings.typescript.typescriptMod.IncrementalProgramOptions
 import typings.typescript.typescriptMod.IndexSignatureDeclaration
 import typings.typescript.typescriptMod.IndexedAccessTypeNode
 import typings.typescript.typescriptMod.InferTypeNode
@@ -223,8 +225,10 @@ import typings.typescript.typescriptMod.PseudoBigInt
 import typings.typescript.typescriptMod.Push
 import typings.typescript.typescriptMod.QualifiedName
 import typings.typescript.typescriptMod.QuestionToken
+import typings.typescript.typescriptMod.ReadBuildProgramHost
 import typings.typescript.typescriptMod.ReadonlyToken
 import typings.typescript.typescriptMod.RegularExpressionLiteral
+import typings.typescript.typescriptMod.ReportEmitErrorSummary
 import typings.typescript.typescriptMod.ResolveProjectReferencePathHost
 import typings.typescript.typescriptMod.ResolvedConfigFileName
 import typings.typescript.typescriptMod.ResolvedModuleWithFailedLookupLocations
@@ -240,6 +244,9 @@ import typings.typescript.typescriptMod.SemicolonClassElement
 import typings.typescript.typescriptMod.SetAccessorDeclaration
 import typings.typescript.typescriptMod.ShorthandPropertyAssignment
 import typings.typescript.typescriptMod.SignatureDeclaration
+import typings.typescript.typescriptMod.SolutionBuilder
+import typings.typescript.typescriptMod.SolutionBuilderHost
+import typings.typescript.typescriptMod.SolutionBuilderWithWatchHost
 import typings.typescript.typescriptMod.SortedReadonlyArray
 import typings.typescript.typescriptMod.SourceFile
 import typings.typescript.typescriptMod.SourceFileLike
@@ -349,7 +356,7 @@ trait Typeofts extends js.Object {
   var unchangedTextChangeRange: TextChangeRange = js.native
   /** The version of the TypeScript compiler release */
   val version: String = js.native
-  val versionMajorMinor: `3DOT5` = js.native
+  val versionMajorMinor: `3DOT6` = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -399,9 +406,6 @@ trait Typeofts extends js.Object {
   def collapseTextChangeRangesAcrossMultipleVersions(changes: js.Array[TextChangeRange]): TextChangeRange = js.native
   def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: String): Anon_Errors = js.native
   def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: String, configFileName: String): Anon_Errors = js.native
-  /**
-    * Convert the json syntax tree into the json value
-    */
   def convertToObject(sourceFile: JsonSourceFile, errors: Push[Diagnostic]): js.Any = js.native
   def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: String): Anon_ErrorsOptions = js.native
   def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: String, configFileName: String): Anon_ErrorsOptions = js.native
@@ -729,6 +733,11 @@ trait Typeofts extends js.Object {
   def createBreak(): BreakStatement = js.native
   def createBreak(label: String): BreakStatement = js.native
   def createBreak(label: Identifier): BreakStatement = js.native
+  /**
+    * Create a function that reports watch status by writing to the system and handles the formating of the diagnostic
+    */
+  def createBuilderStatusReporter(system: System): DiagnosticReporter = js.native
+  def createBuilderStatusReporter(system: System, pretty: Boolean): DiagnosticReporter = js.native
   def createBundle(sourceFiles: js.Array[SourceFile]): Bundle = js.native
   def createBundle(sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = js.native
   def createCall(expression: Expression): CallExpression = js.native
@@ -771,6 +780,7 @@ trait Typeofts extends js.Object {
     heritageClauses: js.UndefOr[js.Array[HeritageClause]],
     members: js.Array[ClassElement]
   ): ClassExpression = js.native
+  /** The classifier is used for syntactic highlighting in editors via the TSServer */
   def createClassifier(): Classifier = js.native
   def createComma(left: Expression, right: Expression): Expression = js.native
   def createCommaList(elements: js.Array[Expression]): CommaListExpression = js.native
@@ -1538,6 +1548,11 @@ trait Typeofts extends js.Object {
   def createImportTypeNode(argument: TypeNode, qualifier: EntityName): ImportTypeNode = js.native
   def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
   def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = js.native
+  def createIncrementalCompilerHost(options: CompilerOptions): CompilerHost = js.native
+  def createIncrementalCompilerHost(options: CompilerOptions, system: System): CompilerHost = js.native
+  def createIncrementalProgram[T /* <: BuilderProgram */](
+    hasRootNamesOptionsConfigFileParsingDiagnosticsProjectReferencesHostCreateProgram: IncrementalProgramOptions[T]
+  ): T = js.native
   def createIndexSignature(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
@@ -2062,6 +2077,7 @@ trait Typeofts extends js.Object {
   def createNew(expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = js.native
   def createNew(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): NewExpression = js.native
   def createNoSubstitutionTemplateLiteral(text: String): NoSubstitutionTemplateLiteral = js.native
+  def createNoSubstitutionTemplateLiteral(text: String, rawText: String): NoSubstitutionTemplateLiteral = js.native
   def createNode(kind: SyntaxKind): Node = js.native
   def createNode(kind: SyntaxKind, pos: Double): Node = js.native
   def createNode(kind: SyntaxKind, pos: Double, end: Double): Node = js.native
@@ -2585,31 +2601,7 @@ trait Typeofts extends js.Object {
   def createPrinter(): Printer = js.native
   def createPrinter(printerOptions: PrinterOptions): Printer = js.native
   def createPrinter(printerOptions: PrinterOptions, handlers: PrintHandlers): Printer = js.native
-  /**
-    * Create a new 'Program' instance. A Program is an immutable collection of 'SourceFile's and a 'CompilerOptions'
-    * that represent a compilation unit.
-    *
-    * Creating a program proceeds from a set of root files, expanding the set of inputs by following imports and
-    * triple-slash-reference-path directives transitively. '@types' and triple-slash-reference-types are also pulled in.
-    *
-    * @param createProgramOptions - The options for creating a program.
-    * @returns A 'Program' object.
-    */
   def createProgram(createProgramOptions: CreateProgramOptions): Program = js.native
-  /**
-    * Create a new 'Program' instance. A Program is an immutable collection of 'SourceFile's and a 'CompilerOptions'
-    * that represent a compilation unit.
-    *
-    * Creating a program proceeds from a set of root files, expanding the set of inputs by following imports and
-    * triple-slash-reference-path directives transitively. '@types' and triple-slash-reference-types are also pulled in.
-    *
-    * @param rootNames - A set of root files.
-    * @param options - The compiler options which should be used.
-    * @param host - The host interacts with the underlying file system.
-    * @param oldProgram - Reuses an old program structure.
-    * @param configFileParsingDiagnostics - error during config file parsing
-    * @returns A 'Program' object.
-    */
   def createProgram(rootNames: js.Array[String], options: CompilerOptions): Program = js.native
   def createProgram(rootNames: js.Array[String], options: CompilerOptions, host: CompilerHost): Program = js.native
   def createProgram(rootNames: js.Array[String], options: CompilerOptions, host: CompilerHost, oldProgram: Program): Program = js.native
@@ -3095,6 +3087,42 @@ trait Typeofts extends js.Object {
   def createShorthandPropertyAssignment(name: String, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = js.native
   def createShorthandPropertyAssignment(name: Identifier): ShorthandPropertyAssignment = js.native
   def createShorthandPropertyAssignment(name: Identifier, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = js.native
+  def createSolutionBuilder[T /* <: BuilderProgram */](host: SolutionBuilderHost[T], rootNames: js.Array[String], defaultOptions: BuildOptions): SolutionBuilder[T] = js.native
+  def createSolutionBuilderHost[T /* <: BuilderProgram */](): SolutionBuilderHost[T] = js.native
+  def createSolutionBuilderHost[T /* <: BuilderProgram */](system: System): SolutionBuilderHost[T] = js.native
+  def createSolutionBuilderHost[T /* <: BuilderProgram */](system: System, createProgram: CreateProgram[T]): SolutionBuilderHost[T] = js.native
+  def createSolutionBuilderHost[T /* <: BuilderProgram */](system: System, createProgram: CreateProgram[T], reportDiagnostic: DiagnosticReporter): SolutionBuilderHost[T] = js.native
+  def createSolutionBuilderHost[T /* <: BuilderProgram */](
+    system: System,
+    createProgram: CreateProgram[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportSolutionBuilderStatus: DiagnosticReporter
+  ): SolutionBuilderHost[T] = js.native
+  def createSolutionBuilderHost[T /* <: BuilderProgram */](
+    system: System,
+    createProgram: CreateProgram[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportSolutionBuilderStatus: DiagnosticReporter,
+    reportErrorSummary: ReportEmitErrorSummary
+  ): SolutionBuilderHost[T] = js.native
+  def createSolutionBuilderWithWatch[T /* <: BuilderProgram */](host: SolutionBuilderWithWatchHost[T], rootNames: js.Array[String], defaultOptions: BuildOptions): SolutionBuilder[T] = js.native
+  def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](): SolutionBuilderWithWatchHost[T] = js.native
+  def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](system: System): SolutionBuilderWithWatchHost[T] = js.native
+  def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](system: System, createProgram: CreateProgram[T]): SolutionBuilderWithWatchHost[T] = js.native
+  def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](system: System, createProgram: CreateProgram[T], reportDiagnostic: DiagnosticReporter): SolutionBuilderWithWatchHost[T] = js.native
+  def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](
+    system: System,
+    createProgram: CreateProgram[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportSolutionBuilderStatus: DiagnosticReporter
+  ): SolutionBuilderWithWatchHost[T] = js.native
+  def createSolutionBuilderWithWatchHost[T /* <: BuilderProgram */](
+    system: System,
+    createProgram: CreateProgram[T],
+    reportDiagnostic: DiagnosticReporter,
+    reportSolutionBuilderStatus: DiagnosticReporter,
+    reportWatchStatus: WatchStatusReporter
+  ): SolutionBuilderWithWatchHost[T] = js.native
   def createSourceFile(fileName: String, sourceText: String, languageVersion: ScriptTarget): SourceFile = js.native
   def createSourceFile(fileName: String, sourceText: String, languageVersion: ScriptTarget, setParentNodes: Boolean): SourceFile = js.native
   def createSourceFile(
@@ -3127,10 +3155,13 @@ trait Typeofts extends js.Object {
   def createTempVariable(recordTempVariable: js.Function1[/* node */ Identifier, Unit]): Identifier = js.native
   def createTemplateExpression(head: TemplateHead, templateSpans: js.Array[TemplateSpan]): TemplateExpression = js.native
   def createTemplateHead(text: String): TemplateHead = js.native
+  def createTemplateHead(text: String, rawText: String): TemplateHead = js.native
   def createTemplateMiddle(text: String): TemplateMiddle = js.native
+  def createTemplateMiddle(text: String, rawText: String): TemplateMiddle = js.native
   def createTemplateSpan(expression: Expression, literal: TemplateMiddle): TemplateSpan = js.native
   def createTemplateSpan(expression: Expression, literal: TemplateTail): TemplateSpan = js.native
   def createTemplateTail(text: String): TemplateTail = js.native
+  def createTemplateTail(text: String, rawText: String): TemplateTail = js.native
   def createTextChangeRange(span: TextSpan, newLength: Double): TextChangeRange = js.native
   def createTextSpan(start: Double, length: Double): TextSpan = js.native
   def createTextSpanFromBounds(start: Double, end: Double): TextSpan = js.native
@@ -3413,22 +3444,12 @@ trait Typeofts extends js.Object {
   def escapeLeadingUnderscores(identifier: String): __String = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean]): js.UndefOr[String] = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean], configName: String): js.UndefOr[String] = js.native
-  def flattenDiagnosticMessageText(messageText: js.UndefOr[scala.Nothing], newLine: String): String = js.native
-  def flattenDiagnosticMessageText(messageText: String, newLine: String): String = js.native
-  def flattenDiagnosticMessageText(messageText: DiagnosticMessageChain, newLine: String): String = js.native
-  /**
-    * Invokes a callback for each child of the given node. The 'cbNode' callback is invoked for all child nodes
-    * stored in properties. If a 'cbNodes' callback is specified, it is invoked for embedded arrays; otherwise,
-    * embedded arrays are flattened and the 'cbNode' callback is invoked for each element. If a callback returns
-    * a truthy value, iteration stops and that value is returned. Otherwise, undefined is returned.
-    *
-    * @param node a given node to visit its children
-    * @param cbNode a callback to be invoked for all child nodes
-    * @param cbNodes a callback to be invoked for embedded array
-    *
-    * @remarks `forEachChild` must visit the children of a node in the order
-    * that they appear in the source code. The language service depends on this property to locate nodes by position.
-    */
+  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: String, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: String, newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = js.native
   def forEachChild[T](node: Node, cbNode: js.Function1[/* node */ Node, js.UndefOr[T]]): js.UndefOr[T] = js.native
   def forEachChild[T](
     node: Node,
@@ -3632,9 +3653,6 @@ trait Typeofts extends js.Object {
     */
   @JSName("getParseTreeNode")
   def getParseTreeNode_T_Node_Union[T /* <: Node */](node: Node): js.UndefOr[T] = js.native
-  /**
-    * Reads the config file, reports errors if any and exits if the config file cannot be found
-    */
   def getParsedCommandLineOfConfigFile(configFileName: String, optionsToExtend: CompilerOptions, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = js.native
   def getParsedCommandLineOfConfigFile(
     configFileName: String,
@@ -3761,6 +3779,7 @@ trait Typeofts extends js.Object {
   def isJSDoc(node: Node): /* is typescript.typescript.JSDoc */ Boolean = js.native
   def isJSDocAllType(node: JSDocAllType): /* is typescript.typescript.JSDocAllType */ Boolean = js.native
   def isJSDocAugmentsTag(node: Node): /* is typescript.typescript.JSDocAugmentsTag */ Boolean = js.native
+  def isJSDocAuthorTag(node: Node): /* is typescript.typescript.JSDocAuthorTag */ Boolean = js.native
   def isJSDocCallbackTag(node: Node): /* is typescript.typescript.JSDocCallbackTag */ Boolean = js.native
   def isJSDocClassTag(node: Node): /* is typescript.typescript.JSDocClassTag */ Boolean = js.native
   /** True if node is of a kind that may contain comment text. */
@@ -3931,20 +3950,8 @@ trait Typeofts extends js.Object {
   ): ResolvedModuleWithFailedLookupLocations = js.native
   def parseCommandLine(commandLine: js.Array[String]): ParsedCommandLine = js.native
   def parseCommandLine(commandLine: js.Array[String], readFile: js.Function1[/* path */ String, js.UndefOr[String]]): ParsedCommandLine = js.native
-  /**
-    * Parse the text of the tsconfig.json file
-    * @param fileName The path to the config file
-    * @param jsonText The text of the config file
-    */
   def parseConfigFileTextToJson(fileName: String, jsonText: String): Anon_Config = js.native
   def parseIsolatedEntityName(text: String, languageVersion: ScriptTarget): js.UndefOr[EntityName] = js.native
-  /**
-    * Parse the contents of a config file (tsconfig.json).
-    * @param json The contents of the config file to parse
-    * @param host Instance of ParseConfigHost used to enumerate files in folder.
-    * @param basePath A root directory to resolve relative path entries in the config
-    *    file to. e.g. outDir
-    */
   def parseJsonConfigFileContent(json: js.Any, host: ParseConfigHost, basePath: String): ParsedCommandLine = js.native
   def parseJsonConfigFileContent(json: js.Any, host: ParseConfigHost, basePath: String, existingOptions: CompilerOptions): ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
@@ -3981,13 +3988,6 @@ trait Typeofts extends js.Object {
     extraFileExtensions: js.Array[FileExtensionInfo],
     extendedConfigCache: Map[ExtendedConfigCacheEntry]
   ): ParsedCommandLine = js.native
-  /**
-    * Parse the contents of a config file (tsconfig.json).
-    * @param jsonNode The contents of the config file to parse
-    * @param host Instance of ParseConfigHost used to enumerate files in folder.
-    * @param basePath A root directory to resolve relative path entries in the config
-    *    file to. e.g. outDir
-    */
   def parseJsonSourceFileConfigFileContent(sourceFile: TsConfigSourceFile, host: ParseConfigHost, basePath: String): ParsedCommandLine = js.native
   def parseJsonSourceFileConfigFileContent(
     sourceFile: TsConfigSourceFile,
@@ -4029,24 +4029,12 @@ trait Typeofts extends js.Object {
     extraFileExtensions: js.Array[FileExtensionInfo],
     extendedConfigCache: Map[ExtendedConfigCacheEntry]
   ): ParsedCommandLine = js.native
-  /**
-    * Parse json text into SyntaxTree and return node and parse errors if any
-    * @param fileName
-    * @param sourceText
-    */
   def parseJsonText(fileName: String, sourceText: String): JsonSourceFile = js.native
   def preProcessFile(sourceText: String): PreProcessedFileInfo = js.native
   def preProcessFile(sourceText: String, readImportFiles: Boolean): PreProcessedFileInfo = js.native
   def preProcessFile(sourceText: String, readImportFiles: Boolean, detectJavaScriptImports: Boolean): PreProcessedFileInfo = js.native
-  /**
-    * Read tsconfig.json file
-    * @param fileName The path to the config file
-    */
+  def readBuilderProgram(compilerOptions: CompilerOptions, host: ReadBuildProgramHost): js.UndefOr[EmitAndSemanticDiagnosticsBuilderProgram] = js.native
   def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): Anon_Config = js.native
-  /**
-    * Read tsconfig.json file
-    * @param fileName The path to the config file
-    */
   def readJsonConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): TsConfigSourceFile = js.native
   def reduceEachLeadingCommentRange[T, U](
     text: String,
@@ -4104,11 +4092,7 @@ trait Typeofts extends js.Object {
     redirectedReference: ResolvedProjectReference
   ): ResolvedModuleWithFailedLookupLocations = js.native
   def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
-  /** @deprecated */ def resolveProjectReferencePath(host: ResolveProjectReferencePathHost, ref: ProjectReference): ResolvedConfigFileName = js.native
-  /**
-    * Returns the target config filename of a project reference.
-    * Note: The file might not exist.
-    */
+  def resolveProjectReferencePath(host: ResolveProjectReferencePathHost, ref: ProjectReference): ResolvedConfigFileName = js.native
   def resolveProjectReferencePath(ref: ProjectReference): ResolvedConfigFileName = js.native
   def resolveTripleslashReference(moduleName: String, containingFile: String): String = js.native
   def resolveTypeReferenceDirective(

@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-storyshots-puppeteer"
-version := "5.1-dt-20190802Z-dada5e"
+version := "5.1-dt-20190802Z-c2bb3a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-c240ab",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "jest-image-snapshot" % "2.8-dt-20190214Z-00d155",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-f929bc",
-  "org.scalablytyped" %%% "puppeteer" % "1.19-dt-20190812Z-47c98f",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-847c1a",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "storybook__addon-storyshots" % "5.1-dt-20190813Z-f5a0d5",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-4a5851")
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-fd4af0",
+  "org.scalablytyped" %%% "puppeteer" % "1.19-dt-20190812Z-a35845",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-6dcbc8",
+  "org.scalablytyped" %%% "std" % "3.6-c16502",
+  "org.scalablytyped" %%% "storybook__addon-storyshots" % "5.1-dt-20190813Z-0f26c3",
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-6c5603")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

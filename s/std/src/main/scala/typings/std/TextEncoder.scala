@@ -22,6 +22,9 @@ trait TextEncoder extends TextEncoderCommon {
 @JSGlobal("TextEncoder")
 @js.native
 class TextEncoderCls () extends TextEncoder {
+  /**
+    * Returns "utf-8".
+    */
   /* CompleteClass */
   override val encoding: java.lang.String = js.native
 }

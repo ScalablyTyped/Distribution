@@ -70,6 +70,10 @@ trait Job extends js.Object {
     */
   var Settings: JobSettings
   /**
+    * Enable this setting when you run a test job to estimate how many reserved transcoding slots (RTS) you need. When this is enabled, MediaConvert runs your job from an on-demand queue with similar performance to what you will see with one RTS in a reserved queue. This setting is disabled by default.
+    */
+  var SimulateReservedQueue: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.SimulateReservedQueue] = js.undefined
+  /**
     * A job's status can be SUBMITTED, PROGRESSING, COMPLETE, CANCELED, or ERROR.
     */
   var Status: js.UndefOr[JobStatus] = js.undefined
@@ -106,6 +110,7 @@ object Job {
     Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
     Queue: __string = null,
     RetryCount: js.UndefOr[__integer] = js.undefined,
+    SimulateReservedQueue: SimulateReservedQueue = null,
     Status: JobStatus = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     Timing: Timing = null,
@@ -126,6 +131,7 @@ object Job {
     if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (!js.isUndefined(RetryCount)) __obj.updateDynamic("RetryCount")(RetryCount)
+    if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (Timing != null) __obj.updateDynamic("Timing")(Timing)

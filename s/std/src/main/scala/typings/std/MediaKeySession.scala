@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface of the EncryptedMediaExtensions API represents a context for message exchange with a content decryption module (CDM). */
+/** This EncryptedMediaExtensions API interface represents a context for message exchange with a content decryption module (CDM). */
 @js.native
 trait MediaKeySession extends EventTarget {
   val closed: js.Promise[Unit] = js.native

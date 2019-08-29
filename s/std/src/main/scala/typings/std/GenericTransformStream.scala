@@ -5,13 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GenericTransformStream extends js.Object {
+  /**
+    * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
+    */
   val readable: ReadableStream[_]
   /**
-    * Returns a writable stream which accepts string chunks and runs them through UTF-8's encoder before making them available to readable.
+    * Returns a writable stream which accepts BufferSource chunks and runs them through encoding's decoder before making them available to readable.
+    * 
     * Typically this will be used via the pipeThrough() method on a ReadableStream source.
-    * textReadable
-    * .pipeThrough(new TextEncoderStream())
-    * .pipeTo(byteWritable);
+    * 
+    * ```
+    * var decoder = new TextDecoderStream(encoding);
+    * byteReadable
+    *   .pipeThrough(decoder)
+    *   .pipeTo(textWritable);
+    * ```
+    * 
+    * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
     */
   val writable: WritableStream[_]
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "sinon-chai"
-version := "3.2.0-dt-20190808Z-78a139"
+version := "3.2.0-dt-20190808Z-35f422"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chai" % "4.2-dt-20190808Z-81643c",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190612Z-8e695c",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "chai" % "4.2-dt-20190808Z-83803e",
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190612Z-357112",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

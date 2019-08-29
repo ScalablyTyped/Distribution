@@ -5,18 +5,57 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestInit extends js.Object {
+  /**
+    * A BodyInit object or null to set request's body.
+    */
   var body: js.UndefOr[BodyInit | Null] = js.undefined
+  /**
+    * A string indicating how the request will interact with the browser's cache to set request's cache.
+    */
   var cache: js.UndefOr[RequestCache] = js.undefined
+  /**
+    * A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials.
+    */
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
+  /**
+    * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
+    */
   var headers: js.UndefOr[HeadersInit] = js.undefined
+  /**
+    * A cryptographic hash of the resource to be fetched by request. Sets request's integrity.
+    */
   var integrity: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * A boolean to set request's keepalive.
+    */
   var keepalive: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * A string to set request's method.
+    */
   var method: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode.
+    */
   var mode: js.UndefOr[RequestMode] = js.undefined
+  /**
+    * A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect.
+    */
   var redirect: js.UndefOr[RequestRedirect] = js.undefined
+  /**
+    * A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer.
+    */
   var referrer: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * A referrer policy to set request's referrerPolicy.
+    */
   var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
+  /**
+    * An AbortSignal to set request's signal.
+    */
   var signal: js.UndefOr[AbortSignal | Null] = js.undefined
+  /**
+    * Can only be null. Used to disassociate request from any Window.
+    */
   var window: js.UndefOr[js.Any] = js.undefined
 }
 

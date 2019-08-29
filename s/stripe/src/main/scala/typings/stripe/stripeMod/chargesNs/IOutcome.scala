@@ -35,6 +35,13 @@ trait IOutcome extends js.Object {
     */
   var risk_level: js.UndefOr[String | Null] = js.undefined
   /**
+    * Stripe’s evaluation of the riskiness of the payment. Possible values for evaluated
+    * payments are between 0 and 100. For non-card payments, card-based payments predating
+    * the public assignment of risk scores, or in the event of an error during evaluation,
+    * this field will not be present. This field is only available with Radar for Fraud Teams.
+    */
+  var risk_score: js.UndefOr[Double | Null] = js.undefined
+  /**
     * The ID of the Radar rule that matched the payment, if applicable. [Expandable]
     */
   var rule: js.UndefOr[String | js.Array[String] | Null] = js.undefined
@@ -58,12 +65,14 @@ object IOutcome {
     `type`: authorized | manual_review | issuer_declined | blocked | invalid,
     reason: String = null,
     risk_level: String = null,
+    risk_score: Int | Double = null,
     rule: String | js.Array[String] = null
   ): IOutcome = {
     val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], seller_message = seller_message)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (risk_level != null) __obj.updateDynamic("risk_level")(risk_level)
+    if (risk_score != null) __obj.updateDynamic("risk_score")(risk_score.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutcome]
   }

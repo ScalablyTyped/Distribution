@@ -74,7 +74,7 @@ object kindDashOfMod extends js.Object {
   def apply(thing: Int16Array): int16array = js.native
   def apply(thing: Int32Array): int32array = js.native
   def apply(thing: Int8Array): int8array = js.native
-  def apply(thing: Iterator[_]): generator | stringiterator | arrayiterator | mapiterator | setiterator = js.native
+  def apply(thing: Iterator[_, _, js.UndefOr[scala.Nothing]]): generator | stringiterator | arrayiterator | mapiterator | setiterator = js.native
   def apply(thing: Map[_, _]): map = js.native
   def apply(thing: RegExp): regexp = js.native
   def apply(thing: Set[_]): set = js.native

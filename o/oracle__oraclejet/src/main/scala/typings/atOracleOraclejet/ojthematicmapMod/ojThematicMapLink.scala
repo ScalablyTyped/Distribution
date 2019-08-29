@@ -42,6 +42,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.endLocationChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.ended
 import typings.atOracleOraclejet.atOracleOraclejetStrings.error
 import typings.atOracleOraclejet.atOracleOraclejetStrings.focus
+import typings.atOracleOraclejet.atOracleOraclejetStrings.focusin
+import typings.atOracleOraclejet.atOracleOraclejetStrings.focusout
 import typings.atOracleOraclejet.atOracleOraclejetStrings.fullscreenchange
 import typings.atOracleOraclejet.atOracleOraclejetStrings.fullscreenerror
 import typings.atOracleOraclejet.atOracleOraclejetStrings.gotpointercapture
@@ -120,6 +122,7 @@ import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
@@ -484,6 +487,22 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
@@ -575,11 +594,14 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -757,11 +779,14 @@ trait ojThematicMapLink extends JetElement[ojThematicMapLinkSettableProperties] 
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

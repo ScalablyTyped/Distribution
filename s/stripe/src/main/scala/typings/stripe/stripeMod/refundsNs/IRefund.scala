@@ -32,7 +32,7 @@ trait IRefund extends js.Object {
     * Three-letter ISO currency code representing the currency in which the charge was made.
     */
   var currency: String
-  var description: String
+  var description: js.UndefOr[String] = js.undefined
   /**
     * If the refund failed, the reason for refund failure if known.
     */
@@ -56,10 +56,20 @@ trait IRefund extends js.Object {
     */
   var receipt_number: String
   /**
+    * The transfer reversal that is associated with the refund. Only present if the charge
+    * came from another Stripe account. See the Connect documentation for details.
+    */
+  var source_transfer_reversal: js.UndefOr[String | Null] = js.undefined
+  /**
     * Status of the refund. For credit card refunds, this can be succeeded or failed.
     * For other types of refunds, it can be pending, succeeded, failed, or canceled.
     */
   var status: pending | succeeded | failed | canceled
+  /**
+    * If the accompanying transfer was reversed, the transfer reversal object. Only
+    * applicable if the charge was created using the destination parameter.
+    */
+  var transfer_reversal: js.UndefOr[String | Null] = js.undefined
 }
 
 object IRefund {
@@ -70,18 +80,23 @@ object IRefund {
     charge: String | ICharge,
     created: Double,
     currency: String,
-    description: String,
     id: String,
     metadata: IMetadata,
     `object`: String,
     reason: String,
     receipt_number: String,
     status: pending | succeeded | failed | canceled,
-    failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown = null
+    description: String = null,
+    failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown = null,
+    source_transfer_reversal: String = null,
+    transfer_reversal: String = null
   ): IRefund = {
-    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, description = description, id = id, metadata = metadata, reason = reason, receipt_number = receipt_number, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, id = id, metadata = metadata, reason = reason, receipt_number = receipt_number, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
+    if (description != null) __obj.updateDynamic("description")(description)
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
+    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal)
+    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal)
     __obj.asInstanceOf[IRefund]
   }
 }

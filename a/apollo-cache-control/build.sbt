@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "apollo-cache-control"
-version := "0.8.1-13014c"
+version := "0.8.2-8a1a79"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-3d2732",
-  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-553b94",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.4.1-46a101",
-  "org.scalablytyped" %%% "apollo-server-types" % "0.2.1-e09ad2",
-  "org.scalablytyped" %%% "graphql" % "14.5.3-be513a",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.10.0-591b36",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-21aebd",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-4a2a3e",
+  "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-a17842",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.4.2-5b69e2",
+  "org.scalablytyped" %%% "apollo-server-types" % "0.2.2-78b5ba",
+  "org.scalablytyped" %%% "graphql" % "14.5.4-73f550",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.10.1-13441f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-e83d9b",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

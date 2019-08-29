@@ -3,6 +3,7 @@ package typings.vegaDashTypings.typesSpecMod
 import typings.vegaDashTypings.typesSpecAutosizeMod.AutoSize
 import typings.vegaDashTypings.typesSpecAxisMod.Axis
 import typings.vegaDashTypings.typesSpecBackgroundMod.Background
+import typings.vegaDashTypings.typesSpecConfigMod.Config
 import typings.vegaDashTypings.typesSpecDataMod.Data
 import typings.vegaDashTypings.typesSpecEncodeMod.Encodable
 import typings.vegaDashTypings.typesSpecEncodeMod.Encode
@@ -27,7 +28,7 @@ trait Spec
   var $schema: js.UndefOr[String] = js.undefined
   var autosize: js.UndefOr[AutoSize] = js.undefined
   var background: js.UndefOr[Background] = js.undefined
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[Config] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var padding: js.UndefOr[Padding] = js.undefined
@@ -42,7 +43,7 @@ object Spec {
     autosize: AutoSize = null,
     axes: js.Array[Axis] = null,
     background: Background = null,
-    config: js.Any = null,
+    config: Config = null,
     data: js.Array[Data] = null,
     description: String = null,
     encode: Encode[EncodeEntry] = null,

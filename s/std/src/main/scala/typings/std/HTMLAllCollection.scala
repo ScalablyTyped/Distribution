@@ -15,12 +15,16 @@ trait HTMLAllCollection extends /* index */ NumberDictionary[Element] {
     */
   val length: Double = js.native
   /**
-    * element = collection(index)
+    * Returns the item with index index from the collection (determined by tree order).
     */
   def item(): HTMLCollection | Element | Null = js.native
   def item(nameOrIndex: java.lang.String): HTMLCollection | Element | Null = js.native
   /**
-    * element = collection(name)
+    * Returns the item with ID or name name from the collection.
+    * 
+    * If there are multiple matching items, then an HTMLCollection object containing all those elements is returned.
+    * 
+    * Only button, form, iframe, input, map, meta, object, select, and textarea elements can have a name for the purpose of this method; their name is given by the value of their name attribute.
     */
   def namedItem(name: java.lang.String): HTMLCollection | Element | Null = js.native
 }

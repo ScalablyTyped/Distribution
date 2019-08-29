@@ -1,6 +1,6 @@
 package typings.stripe.stripeMod.chargesNs
 
-import typings.stripe.Anon_AmountDestination
+import typings.stripe.Anon_AmountDestinationNumber
 import typings.stripe.stripeMod.IDataOptionsWithMetadata
 import typings.stripe.stripeMod.IOptionsMetadata
 import typings.stripe.stripeMod.IShippingInformation
@@ -81,22 +81,23 @@ trait IChargeCreationOptions extends IDataOptionsWithMetadata {
     */
   var source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
   /**
-    * An arbitrary string to be displayed on your customer's credit card
-    * statement. This may be up to 22 characters. As an example, if your
-    * website is RunClub and the item you're charging for is a race ticket, you
-    * may want to specify a statement_descriptor of
-    * RunClub 5K race ticket. The statement description may not include
-    * <>"' characters, and will appear on your customer's statement in capital
-    * letters. Non-ASCII characters are automatically stripped. While most
-    * banks display this information consistently, some may display it
-    * incorrectly or not at all.
+    * For card charges, use statement_descriptor_suffix instead. Otherwise, you
+    * can use this value as the complete description of a charge on your customers’
+    * statements. Must contain at least one letter, maximum 22 characters.
     */
   var statement_descriptor: js.UndefOr[String] = js.undefined
+  /**
+    * Provides information about the charge that customers see on their statements.
+    * Concatenated with the prefix (shortened descriptor) or statement descriptor
+    * that’s set on the account to form the complete statement descriptor. Maximum
+    * 22 characters for the concatenated descriptor.
+    */
+  var statement_descriptor_suffix: js.UndefOr[String] = js.undefined
   /**
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[Anon_AmountDestination] = js.undefined
+  var transfer_data: js.UndefOr[Anon_AmountDestinationNumber] = js.undefined
   /**
     * A string that identifies this transaction as part of a group.
     * See the Connect documentation for details.
@@ -123,7 +124,8 @@ object IChargeCreationOptions {
     shipping: IShippingInformation = null,
     source: String | ICardSourceCreationOptions = null,
     statement_descriptor: String = null,
-    transfer_data: Anon_AmountDestination = null,
+    statement_descriptor_suffix: String = null,
+    transfer_data: Anon_AmountDestinationNumber = null,
     transfer_group: String = null
   ): IChargeCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency)
@@ -139,6 +141,7 @@ object IChargeCreationOptions {
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix)
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IChargeCreationOptions]

@@ -1,6 +1,7 @@
 package typings.three.srcLoadersCubeTextureLoaderMod
 
 import typings.std.ErrorEvent
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
 import typings.three.srcTexturesCubeTextureMod.CubeTexture
@@ -20,12 +21,12 @@ class CubeTextureLoader () extends js.Object {
   def load(
     urls: js.Array[String],
     onLoad: js.Function1[/* texture */ CubeTexture, Unit],
-    onProgress: js.Function1[/* event */ ProgressEvent, Unit]
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
   ): CubeTexture = js.native
   def load(
     urls: js.Array[String],
     onLoad: js.Function1[/* texture */ CubeTexture, Unit],
-    onProgress: js.Function1[/* event */ ProgressEvent, Unit],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     onError: js.Function1[/* event */ ErrorEvent, Unit]
   ): CubeTexture = js.native
   def setCrossOrigin(crossOrigin: String): this.type = js.native

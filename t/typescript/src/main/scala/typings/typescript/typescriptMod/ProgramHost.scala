@@ -34,20 +34,22 @@ trait ProgramHost[T /* <: BuilderProgram */] extends js.Object {
   var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
   /** If provided, used to resolve the module names, otherwise typescript's default module resolution */
   var resolveModuleNames: js.UndefOr[
-    js.Function4[
+    js.Function5[
       /* moduleNames */ js.Array[String], 
       /* containingFile */ String, 
       /* reusedNames */ js.UndefOr[js.Array[String]], 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.native
   /** If provided, used to resolve type reference directives, otherwise typescript's default resolution */
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* typeReferenceDirectiveNames */ js.Array[String], 
       /* containingFile */ String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

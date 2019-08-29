@@ -54,6 +54,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language/visitor", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val BREAK: js.Any = js.native
   def getVisitFn(
     visitor: Visitor[
       _, 

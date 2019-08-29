@@ -13,7 +13,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] {
   var bottom: js.UndefOr[
     BaseLegendLayout[
@@ -21,7 +21,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var `bottom-left`: js.UndefOr[
@@ -30,7 +30,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var `bottom-right`: js.UndefOr[
@@ -39,7 +39,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var left: js.UndefOr[
@@ -48,7 +48,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var right: js.UndefOr[
@@ -57,7 +57,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var top: js.UndefOr[
@@ -66,7 +66,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var `top-left`: js.UndefOr[
@@ -75,7 +75,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
   var `top-right`: js.UndefOr[
@@ -84,7 +84,7 @@ trait LegendLayout extends BaseLegendLayout[
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ]
   ] = js.undefined
 }
@@ -92,27 +92,27 @@ trait LegendLayout extends BaseLegendLayout[
 object LegendLayout {
   @scala.inline
   def apply(
-    anchor: TitleAnchor = null,
+    anchor: TitleAnchor | SignalRef = null,
     bottom: BaseLegendLayout[
       Double | SignalRef, 
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     `bottom-left`: BaseLegendLayout[
       Double | SignalRef, 
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     `bottom-right`: BaseLegendLayout[
       Double | SignalRef, 
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     bounds: LayoutBounds = null,
     center: Boolean | SignalRef = null,
@@ -122,7 +122,7 @@ object LegendLayout {
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     margin: Double | SignalRef = null,
     offset: Double | SignalRef = null,
@@ -131,28 +131,28 @@ object LegendLayout {
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     top: BaseLegendLayout[
       Double | SignalRef, 
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     `top-left`: BaseLegendLayout[
       Double | SignalRef, 
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null,
     `top-right`: BaseLegendLayout[
       Double | SignalRef, 
       Boolean | SignalRef, 
       Orientation | SignalRef, 
       LayoutBounds, 
-      TitleAnchor
+      TitleAnchor | SignalRef
     ] = null
   ): LegendLayout = {
     val __obj = js.Dynamic.literal()

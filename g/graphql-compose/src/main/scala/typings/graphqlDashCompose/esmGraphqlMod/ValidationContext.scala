@@ -18,7 +18,7 @@ class ValidationContext protected ()
     schema: typings.graphql.typeSchemaMod.GraphQLSchema,
     ast: DocumentNode,
     typeInfo: typings.graphql.utilitiesTypeInfoMod.TypeInfo,
-    onError: js.Function1[/* err */ typings.graphql.errorMod.GraphQLError, Unit]
+    onError: js.Function1[/* err */ typings.graphql.errorGraphQLErrorMod.GraphQLError, Unit]
   ) = this()
 }
 

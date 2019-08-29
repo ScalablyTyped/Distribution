@@ -21,9 +21,9 @@ package object distServerMod {
     /* variableValues */ js.UndefOr[StringDictionary[js.Any]], 
     /* operationName */ js.UndefOr[String], 
     /* fieldResolver */ js.UndefOr[GraphQLFieldResolver[js.Any, js.Any, StringDictionary[js.Any]]], 
-    ExecutionResult[ExecutionResultDataDefault] | js.Promise[ExecutionResult[ExecutionResultDataDefault]] | AsyncIterator[ExecutionResult[ExecutionResultDataDefault]]
+    ExecutionResult[ExecutionResultDataDefault] | js.Promise[ExecutionResult[ExecutionResultDataDefault]] | (AsyncIterator[ExecutionResult[ExecutionResultDataDefault], js.Any, js.UndefOr[scala.Nothing]])
   ]
-  type ExecutionIterator = AsyncIterator[ExecutionResult[ExecutionResultDataDefault]]
+  type ExecutionIterator = AsyncIterator[ExecutionResult[ExecutionResultDataDefault], js.Any, js.UndefOr[scala.Nothing]]
   type SubscribeFunction = js.Function8[
     /* schema */ GraphQLSchema, 
     /* document */ DocumentNode, 
@@ -33,8 +33,8 @@ package object distServerMod {
     /* operationName */ js.UndefOr[String], 
     /* fieldResolver */ js.UndefOr[GraphQLFieldResolver[js.Any, js.Any, StringDictionary[js.Any]]], 
     /* subscribeFieldResolver */ js.UndefOr[GraphQLFieldResolver[js.Any, js.Any, StringDictionary[js.Any]]], 
-    AsyncIterator[ExecutionResult[ExecutionResultDataDefault]] | (js.Promise[
-      AsyncIterator[ExecutionResult[ExecutionResultDataDefault]] | ExecutionResult[ExecutionResultDataDefault]
+    (AsyncIterator[ExecutionResult[ExecutionResultDataDefault], js.Any, js.UndefOr[scala.Nothing]]) | (js.Promise[
+      (AsyncIterator[ExecutionResult[ExecutionResultDataDefault], js.Any, js.UndefOr[scala.Nothing]]) | ExecutionResult[ExecutionResultDataDefault]
     ])
   ]
 }

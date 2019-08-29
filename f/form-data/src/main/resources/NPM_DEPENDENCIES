@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "form-data" : "2.5.0"
+      "form-data" : "2.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "form-data" : "2.5.0"
+      "form-data" : "2.5.1"
     }
   ],
   "compile-devDependencies" : [

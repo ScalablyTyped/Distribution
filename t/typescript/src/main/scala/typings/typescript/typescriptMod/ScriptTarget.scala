@@ -51,9 +51,9 @@ object ScriptTarget extends js.Object {
   /* 7 */ val ES2020: typings.typescript.typescriptMod.ScriptTarget.ES2020 with Double = js.native
   /* 0 */ val ES3: typings.typescript.typescriptMod.ScriptTarget.ES3 with Double = js.native
   /* 1 */ val ES5: typings.typescript.typescriptMod.ScriptTarget.ES5 with Double = js.native
-  /* 8 */ val ESNext: typings.typescript.typescriptMod.ScriptTarget.ESNext with Double = js.native
+  /* 99 */ val ESNext: typings.typescript.typescriptMod.ScriptTarget.ESNext with Double = js.native
   /* 100 */ val JSON: typings.typescript.typescriptMod.ScriptTarget.JSON with Double = js.native
-  /* 8 */ val Latest: typings.typescript.typescriptMod.ScriptTarget.Latest with Double = js.native
+  /* 99 */ val Latest: typings.typescript.typescriptMod.ScriptTarget.Latest with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScriptTarget with Double] = js.native
 }

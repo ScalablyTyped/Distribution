@@ -530,6 +530,7 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait GreaterThanToken
     extends SyntaxKind
+       with JSDocSyntaxKind
        with RelationalOperator
   
   @js.native
@@ -625,6 +626,9 @@ object SyntaxKind extends js.Object {
   sealed trait JSDocAugmentsTag extends SyntaxKind
   
   @js.native
+  sealed trait JSDocAuthorTag extends SyntaxKind
+  
+  @js.native
   sealed trait JSDocCallbackTag extends SyntaxKind
   
   @js.native
@@ -638,6 +642,9 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait JSDocFunctionType extends SyntaxKind
+  
+  @js.native
+  sealed trait JSDocNamepathType extends SyntaxKind
   
   @js.native
   sealed trait JSDocNonNullableType extends SyntaxKind
@@ -1379,7 +1386,7 @@ object SyntaxKind extends js.Object {
   /* 23 */ val CloseBracketToken: typings.typescript.typescriptMod.SyntaxKind.CloseBracketToken with Double = js.native
   /* 21 */ val CloseParenToken: typings.typescript.typescriptMod.SyntaxKind.CloseParenToken with Double = js.native
   /* 57 */ val ColonToken: typings.typescript.typescriptMod.SyntaxKind.ColonToken with Double = js.native
-  /* 315 */ val CommaListExpression: typings.typescript.typescriptMod.SyntaxKind.CommaListExpression with Double = js.native
+  /* 317 */ val CommaListExpression: typings.typescript.typescriptMod.SyntaxKind.CommaListExpression with Double = js.native
   /* 27 */ val CommaToken: typings.typescript.typescriptMod.SyntaxKind.CommaToken with Double = js.native
   /* 150 */ val ComputedPropertyName: typings.typescript.typescriptMod.SyntaxKind.ComputedPropertyName with Double = js.native
   /* 206 */ val ConditionalExpression: typings.typescript.typescriptMod.SyntaxKind.ConditionalExpression with Double = js.native
@@ -1392,7 +1399,7 @@ object SyntaxKind extends js.Object {
   /* 167 */ val ConstructorType: typings.typescript.typescriptMod.SyntaxKind.ConstructorType with Double = js.native
   /* 79 */ val ContinueKeyword: typings.typescript.typescriptMod.SyntaxKind.ContinueKeyword with Double = js.native
   /* 229 */ val ContinueStatement: typings.typescript.typescriptMod.SyntaxKind.ContinueStatement with Double = js.native
-  /* 318 */ val Count: typings.typescript.typescriptMod.SyntaxKind.Count with Double = js.native
+  /* 320 */ val Count: typings.typescript.typescriptMod.SyntaxKind.Count with Double = js.native
   /* 80 */ val DebuggerKeyword: typings.typescript.typescriptMod.SyntaxKind.DebuggerKeyword with Double = js.native
   /* 237 */ val DebuggerStatement: typings.typescript.typescriptMod.SyntaxKind.DebuggerStatement with Double = js.native
   /* 126 */ val DeclareKeyword: typings.typescript.typescriptMod.SyntaxKind.DeclareKeyword with Double = js.native
@@ -1408,7 +1415,7 @@ object SyntaxKind extends js.Object {
   /* 191 */ val ElementAccessExpression: typings.typescript.typescriptMod.SyntaxKind.ElementAccessExpression with Double = js.native
   /* 84 */ val ElseKeyword: typings.typescript.typescriptMod.SyntaxKind.ElseKeyword with Double = js.native
   /* 221 */ val EmptyStatement: typings.typescript.typescriptMod.SyntaxKind.EmptyStatement with Double = js.native
-  /* 317 */ val EndOfDeclarationMarker: typings.typescript.typescriptMod.SyntaxKind.EndOfDeclarationMarker with Double = js.native
+  /* 319 */ val EndOfDeclarationMarker: typings.typescript.typescriptMod.SyntaxKind.EndOfDeclarationMarker with Double = js.native
   /* 1 */ val EndOfFileToken: typings.typescript.typescriptMod.SyntaxKind.EndOfFileToken with Double = js.native
   /* 244 */ val EnumDeclaration: typings.typescript.typescriptMod.SyntaxKind.EnumDeclaration with Double = js.native
   /* 85 */ val EnumKeyword: typings.typescript.typescriptMod.SyntaxKind.EnumKeyword with Double = js.native
@@ -1435,7 +1442,7 @@ object SyntaxKind extends js.Object {
   /* 61 */ val FirstCompoundAssignment: typings.typescript.typescriptMod.SyntaxKind.FirstCompoundAssignment with Double = js.native
   /* 110 */ val FirstFutureReservedWord: typings.typescript.typescriptMod.SyntaxKind.FirstFutureReservedWord with Double = js.native
   /* 289 */ val FirstJSDocNode: typings.typescript.typescriptMod.SyntaxKind.FirstJSDocNode with Double = js.native
-  /* 300 */ val FirstJSDocTagNode: typings.typescript.typescriptMod.SyntaxKind.FirstJSDocTagNode with Double = js.native
+  /* 301 */ val FirstJSDocTagNode: typings.typescript.typescriptMod.SyntaxKind.FirstJSDocTagNode with Double = js.native
   /* 74 */ val FirstKeyword: typings.typescript.typescriptMod.SyntaxKind.FirstKeyword with Double = js.native
   /* 8 */ val FirstLiteralToken: typings.typescript.typescriptMod.SyntaxKind.FirstLiteralToken with Double = js.native
   /* 149 */ val FirstNode: typings.typescript.typescriptMod.SyntaxKind.FirstNode with Double = js.native
@@ -1486,26 +1493,28 @@ object SyntaxKind extends js.Object {
   /* 175 */ val IntersectionType: typings.typescript.typescriptMod.SyntaxKind.IntersectionType with Double = js.native
   /* 129 */ val IsKeyword: typings.typescript.typescriptMod.SyntaxKind.IsKeyword with Double = js.native
   /* 290 */ val JSDocAllType: typings.typescript.typescriptMod.SyntaxKind.JSDocAllType with Double = js.native
-  /* 301 */ val JSDocAugmentsTag: typings.typescript.typescriptMod.SyntaxKind.JSDocAugmentsTag with Double = js.native
-  /* 303 */ val JSDocCallbackTag: typings.typescript.typescriptMod.SyntaxKind.JSDocCallbackTag with Double = js.native
-  /* 302 */ val JSDocClassTag: typings.typescript.typescriptMod.SyntaxKind.JSDocClassTag with Double = js.native
-  /* 297 */ val JSDocComment: typings.typescript.typescriptMod.SyntaxKind.JSDocComment with Double = js.native
-  /* 304 */ val JSDocEnumTag: typings.typescript.typescriptMod.SyntaxKind.JSDocEnumTag with Double = js.native
+  /* 302 */ val JSDocAugmentsTag: typings.typescript.typescriptMod.SyntaxKind.JSDocAugmentsTag with Double = js.native
+  /* 303 */ val JSDocAuthorTag: typings.typescript.typescriptMod.SyntaxKind.JSDocAuthorTag with Double = js.native
+  /* 305 */ val JSDocCallbackTag: typings.typescript.typescriptMod.SyntaxKind.JSDocCallbackTag with Double = js.native
+  /* 304 */ val JSDocClassTag: typings.typescript.typescriptMod.SyntaxKind.JSDocClassTag with Double = js.native
+  /* 298 */ val JSDocComment: typings.typescript.typescriptMod.SyntaxKind.JSDocComment with Double = js.native
+  /* 306 */ val JSDocEnumTag: typings.typescript.typescriptMod.SyntaxKind.JSDocEnumTag with Double = js.native
   /* 295 */ val JSDocFunctionType: typings.typescript.typescriptMod.SyntaxKind.JSDocFunctionType with Double = js.native
+  /* 297 */ val JSDocNamepathType: typings.typescript.typescriptMod.SyntaxKind.JSDocNamepathType with Double = js.native
   /* 293 */ val JSDocNonNullableType: typings.typescript.typescriptMod.SyntaxKind.JSDocNonNullableType with Double = js.native
   /* 292 */ val JSDocNullableType: typings.typescript.typescriptMod.SyntaxKind.JSDocNullableType with Double = js.native
   /* 294 */ val JSDocOptionalType: typings.typescript.typescriptMod.SyntaxKind.JSDocOptionalType with Double = js.native
-  /* 305 */ val JSDocParameterTag: typings.typescript.typescriptMod.SyntaxKind.JSDocParameterTag with Double = js.native
-  /* 311 */ val JSDocPropertyTag: typings.typescript.typescriptMod.SyntaxKind.JSDocPropertyTag with Double = js.native
-  /* 306 */ val JSDocReturnTag: typings.typescript.typescriptMod.SyntaxKind.JSDocReturnTag with Double = js.native
-  /* 299 */ val JSDocSignature: typings.typescript.typescriptMod.SyntaxKind.JSDocSignature with Double = js.native
-  /* 300 */ val JSDocTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTag with Double = js.native
-  /* 309 */ val JSDocTemplateTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTemplateTag with Double = js.native
-  /* 307 */ val JSDocThisTag: typings.typescript.typescriptMod.SyntaxKind.JSDocThisTag with Double = js.native
+  /* 307 */ val JSDocParameterTag: typings.typescript.typescriptMod.SyntaxKind.JSDocParameterTag with Double = js.native
+  /* 313 */ val JSDocPropertyTag: typings.typescript.typescriptMod.SyntaxKind.JSDocPropertyTag with Double = js.native
+  /* 308 */ val JSDocReturnTag: typings.typescript.typescriptMod.SyntaxKind.JSDocReturnTag with Double = js.native
+  /* 300 */ val JSDocSignature: typings.typescript.typescriptMod.SyntaxKind.JSDocSignature with Double = js.native
+  /* 301 */ val JSDocTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTag with Double = js.native
+  /* 311 */ val JSDocTemplateTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTemplateTag with Double = js.native
+  /* 309 */ val JSDocThisTag: typings.typescript.typescriptMod.SyntaxKind.JSDocThisTag with Double = js.native
   /* 289 */ val JSDocTypeExpression: typings.typescript.typescriptMod.SyntaxKind.JSDocTypeExpression with Double = js.native
-  /* 298 */ val JSDocTypeLiteral: typings.typescript.typescriptMod.SyntaxKind.JSDocTypeLiteral with Double = js.native
-  /* 308 */ val JSDocTypeTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTypeTag with Double = js.native
-  /* 310 */ val JSDocTypedefTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTypedefTag with Double = js.native
+  /* 299 */ val JSDocTypeLiteral: typings.typescript.typescriptMod.SyntaxKind.JSDocTypeLiteral with Double = js.native
+  /* 310 */ val JSDocTypeTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTypeTag with Double = js.native
+  /* 312 */ val JSDocTypedefTag: typings.typescript.typescriptMod.SyntaxKind.JSDocTypedefTag with Double = js.native
   /* 291 */ val JSDocUnknownType: typings.typescript.typescriptMod.SyntaxKind.JSDocUnknownType with Double = js.native
   /* 296 */ val JSDocVariadicType: typings.typescript.typescriptMod.SyntaxKind.JSDocVariadicType with Double = js.native
   /* 268 */ val JsxAttribute: typings.typescript.typescriptMod.SyntaxKind.JsxAttribute with Double = js.native
@@ -1527,8 +1536,8 @@ object SyntaxKind extends js.Object {
   /* 72 */ val LastBinaryOperator: typings.typescript.typescriptMod.SyntaxKind.LastBinaryOperator with Double = js.native
   /* 72 */ val LastCompoundAssignment: typings.typescript.typescriptMod.SyntaxKind.LastCompoundAssignment with Double = js.native
   /* 118 */ val LastFutureReservedWord: typings.typescript.typescriptMod.SyntaxKind.LastFutureReservedWord with Double = js.native
-  /* 311 */ val LastJSDocNode: typings.typescript.typescriptMod.SyntaxKind.LastJSDocNode with Double = js.native
-  /* 311 */ val LastJSDocTagNode: typings.typescript.typescriptMod.SyntaxKind.LastJSDocTagNode with Double = js.native
+  /* 313 */ val LastJSDocNode: typings.typescript.typescriptMod.SyntaxKind.LastJSDocNode with Double = js.native
+  /* 313 */ val LastJSDocTagNode: typings.typescript.typescriptMod.SyntaxKind.LastJSDocTagNode with Double = js.native
   /* 148 */ val LastKeyword: typings.typescript.typescriptMod.SyntaxKind.LastKeyword with Double = js.native
   /* 14 */ val LastLiteralToken: typings.typescript.typescriptMod.SyntaxKind.LastLiteralToken with Double = js.native
   /* 72 */ val LastPunctuation: typings.typescript.typescriptMod.SyntaxKind.LastPunctuation with Double = js.native
@@ -1545,7 +1554,7 @@ object SyntaxKind extends js.Object {
   /* 112 */ val LetKeyword: typings.typescript.typescriptMod.SyntaxKind.LetKeyword with Double = js.native
   /* 183 */ val LiteralType: typings.typescript.typescriptMod.SyntaxKind.LiteralType with Double = js.native
   /* 182 */ val MappedType: typings.typescript.typescriptMod.SyntaxKind.MappedType with Double = js.native
-  /* 316 */ val MergeDeclarationMarker: typings.typescript.typescriptMod.SyntaxKind.MergeDeclarationMarker with Double = js.native
+  /* 318 */ val MergeDeclarationMarker: typings.typescript.typescriptMod.SyntaxKind.MergeDeclarationMarker with Double = js.native
   /* 215 */ val MetaProperty: typings.typescript.typescriptMod.SyntaxKind.MetaProperty with Double = js.native
   /* 157 */ val MethodDeclaration: typings.typescript.typescriptMod.SyntaxKind.MethodDeclaration with Double = js.native
   /* 156 */ val MethodSignature: typings.typescript.typescriptMod.SyntaxKind.MethodSignature with Double = js.native
@@ -1568,7 +1577,7 @@ object SyntaxKind extends js.Object {
   /* 4 */ val NewLineTrivia: typings.typescript.typescriptMod.SyntaxKind.NewLineTrivia with Double = js.native
   /* 14 */ val NoSubstitutionTemplateLiteral: typings.typescript.typescriptMod.SyntaxKind.NoSubstitutionTemplateLiteral with Double = js.native
   /* 214 */ val NonNullExpression: typings.typescript.typescriptMod.SyntaxKind.NonNullExpression with Double = js.native
-  /* 313 */ val NotEmittedStatement: typings.typescript.typescriptMod.SyntaxKind.NotEmittedStatement with Double = js.native
+  /* 315 */ val NotEmittedStatement: typings.typescript.typescriptMod.SyntaxKind.NotEmittedStatement with Double = js.native
   /* 97 */ val NullKeyword: typings.typescript.typescriptMod.SyntaxKind.NullKeyword with Double = js.native
   /* 136 */ val NumberKeyword: typings.typescript.typescriptMod.SyntaxKind.NumberKeyword with Double = js.native
   /* 8 */ val NumericLiteral: typings.typescript.typescriptMod.SyntaxKind.NumericLiteral with Double = js.native
@@ -1585,7 +1594,7 @@ object SyntaxKind extends js.Object {
   /* 152 */ val Parameter: typings.typescript.typescriptMod.SyntaxKind.Parameter with Double = js.native
   /* 196 */ val ParenthesizedExpression: typings.typescript.typescriptMod.SyntaxKind.ParenthesizedExpression with Double = js.native
   /* 178 */ val ParenthesizedType: typings.typescript.typescriptMod.SyntaxKind.ParenthesizedType with Double = js.native
-  /* 314 */ val PartiallyEmittedExpression: typings.typescript.typescriptMod.SyntaxKind.PartiallyEmittedExpression with Double = js.native
+  /* 316 */ val PartiallyEmittedExpression: typings.typescript.typescriptMod.SyntaxKind.PartiallyEmittedExpression with Double = js.native
   /* 66 */ val PercentEqualsToken: typings.typescript.typescriptMod.SyntaxKind.PercentEqualsToken with Double = js.native
   /* 43 */ val PercentToken: typings.typescript.typescriptMod.SyntaxKind.PercentToken with Double = js.native
   /* 61 */ val PlusEqualsToken: typings.typescript.typescriptMod.SyntaxKind.PlusEqualsToken with Double = js.native
@@ -1627,7 +1636,7 @@ object SyntaxKind extends js.Object {
   /* 100 */ val SwitchKeyword: typings.typescript.typescriptMod.SyntaxKind.SwitchKeyword with Double = js.native
   /* 233 */ val SwitchStatement: typings.typescript.typescriptMod.SyntaxKind.SwitchStatement with Double = js.native
   /* 140 */ val SymbolKeyword: typings.typescript.typescriptMod.SyntaxKind.SymbolKeyword with Double = js.native
-  /* 312 */ val SyntaxList: typings.typescript.typescriptMod.SyntaxKind.SyntaxList with Double = js.native
+  /* 314 */ val SyntaxList: typings.typescript.typescriptMod.SyntaxKind.SyntaxList with Double = js.native
   /* 216 */ val SyntheticExpression: typings.typescript.typescriptMod.SyntaxKind.SyntheticExpression with Double = js.native
   /* 194 */ val TaggedTemplateExpression: typings.typescript.typescriptMod.SyntaxKind.TaggedTemplateExpression with Double = js.native
   /* 207 */ val TemplateExpression: typings.typescript.typescriptMod.SyntaxKind.TemplateExpression with Double = js.native

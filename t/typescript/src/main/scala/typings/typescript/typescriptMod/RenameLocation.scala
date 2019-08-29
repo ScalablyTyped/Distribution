@@ -14,12 +14,16 @@ object RenameLocation {
   def apply(
     fileName: String,
     textSpan: TextSpan,
+    contextSpan: TextSpan = null,
+    originalContextSpan: TextSpan = null,
     originalFileName: String = null,
     originalTextSpan: TextSpan = null,
     prefixText: String = null,
     suffixText: String = null
   ): RenameLocation = {
     val __obj = js.Dynamic.literal(fileName = fileName, textSpan = textSpan)
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
+    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan)
     if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
     if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
     if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)

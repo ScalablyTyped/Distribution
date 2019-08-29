@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptMod.SyntaxKind.OpenBraceToken
   - typings.typescript.typescriptMod.SyntaxKind.CloseBraceToken
   - typings.typescript.typescriptMod.SyntaxKind.LessThanToken
+  - typings.typescript.typescriptMod.SyntaxKind.GreaterThanToken
   - typings.typescript.typescriptMod.SyntaxKind.OpenBracketToken
   - typings.typescript.typescriptMod.SyntaxKind.CloseBracketToken
   - typings.typescript.typescriptMod.SyntaxKind.EqualsToken

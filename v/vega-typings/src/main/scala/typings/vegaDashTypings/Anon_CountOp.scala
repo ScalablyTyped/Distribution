@@ -1,12 +1,13 @@
 package typings.vegaDashTypings
 
 import typings.vegaDashTypings.typesSpecScaleMod.SortOrder
+import typings.vegaDashTypings.typesSpecScaleMod._UnionSortField
 import typings.vegaDashTypings.vegaDashTypingsStrings.count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_CountOp extends js.Object {
+trait Anon_CountOp extends _UnionSortField {
   var op: count
   var order: js.UndefOr[SortOrder] = js.undefined
 }

@@ -528,6 +528,12 @@ object electronStrings {
   sealed trait focus extends js.Object
   
   @js.native
+  sealed trait focusin extends js.Object
+  
+  @js.native
+  sealed trait focusout extends js.Object
+  
+  @js.native
   sealed trait forcereload extends js.Object
   
   @js.native
@@ -1838,6 +1844,10 @@ object electronStrings {
   def floating: floating = "floating".asInstanceOf[floating]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
+  @scala.inline
+  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  @scala.inline
+  def focusout: focusout = "focusout".asInstanceOf[focusout]
   @scala.inline
   def forcereload: forcereload = "forcereload".asInstanceOf[forcereload]
   @scala.inline

@@ -5,6 +5,9 @@ import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.ExecutionCount
 import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.ILanguageInfoMetadata
 import typings.atJupyterlabServices.Anon_0
 import typings.atJupyterlabServices.Anon_Allowstdin
+import typings.atJupyterlabServices.Anon_Arguments
+import typings.atJupyterlabServices.Anon_Body
+import typings.atJupyterlabServices.Anon_BodyCommand
 import typings.atJupyterlabServices.Anon_Code
 import typings.atJupyterlabServices.Anon_CodeExecutioncount
 import typings.atJupyterlabServices.Anon_CodeString
@@ -32,6 +35,9 @@ import typings.atJupyterlabServices.atJupyterlabServicesStrings.complete
 import typings.atJupyterlabServices.atJupyterlabServicesStrings.complete_reply
 import typings.atJupyterlabServices.atJupyterlabServicesStrings.complete_request
 import typings.atJupyterlabServices.atJupyterlabServicesStrings.control
+import typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_event
+import typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_reply
+import typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_request
 import typings.atJupyterlabServices.atJupyterlabServicesStrings.display_data
 import typings.atJupyterlabServices.atJupyterlabServicesStrings.error
 import typings.atJupyterlabServices.atJupyterlabServicesStrings.execute_input
@@ -74,6 +80,9 @@ import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IComple
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICompleteReplyMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICompleteRequestMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IControlMessage
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugEventMsg
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugReplyMsg
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugRequestMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDisplayDataMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IErrorMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IExecuteCount
@@ -119,7 +128,6 @@ import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ReplyCo
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ShellMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.StdinMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs._Message
-import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs._MessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs._ReplyContent
 import typings.atPhosphorCoreutils.libJsonMod.JSONObject
 import typings.std.ArrayBuffer
@@ -141,6 +149,20 @@ object KernelMessageNs extends js.Object {
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.stdin
   */
   trait Channel extends js.Object
+  
+  /**
+    * Control message types.
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, debug message types are *NOT*
+    * considered part of the public API, and may change without notice.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_request
+    - typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_reply
+  */
+  trait ControlMessageType extends MessageType
   
   /**
     * A `'clear_output'` message on the `'iopub'` channel.
@@ -284,6 +306,57 @@ object KernelMessageNs extends js.Object {
   trait IControlMessage[T /* <: ControlMessageType */] extends IMessage[T] {
     @JSName("channel")
     var channel_IControlMessage: control
+  }
+  
+  /**
+    * An experimental `'debug_event'` message on the `'iopub'` channel
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  trait IDebugEventMsg
+    extends IIOPubMessage[debug_event]
+       with _Message {
+    @JSName("content")
+    var content_IDebugEventMsg: Anon_Body
+  }
+  
+  /**
+    * An experimental `'debug_reply'` messsage on the `'control'` channel.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  trait IDebugReplyMsg
+    extends IControlMessage[debug_reply]
+       with _Message {
+    @JSName("content")
+    var content_IDebugReplyMsg: Anon_BodyCommand
+  }
+  
+  /**
+    * An experimental `'debug_request'` messsage on the `'control'` channel.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  trait IDebugRequestMsg
+    extends IControlMessage[debug_request]
+       with _Message {
+    @JSName("content")
+    var content_IDebugRequestMsg: Anon_Arguments
   }
   
   /**
@@ -723,6 +796,11 @@ object KernelMessageNs extends js.Object {
   
   /**
     * IOPub message types.
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, debug message types are *NOT*
+    * considered part of the public API, and may change without notice.
     */
   /* Rewritten from type alias, can be one of: 
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.clear_output
@@ -736,8 +814,9 @@ object KernelMessageNs extends js.Object {
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.status
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.stream
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.update_display_data
+    - typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_event
   */
-  trait IOPubMessageType extends _MessageType
+  trait IOPubMessageType extends MessageType
   
   trait IOptions[T /* <: Message */] extends js.Object {
     var buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.undefined
@@ -846,6 +925,17 @@ object KernelMessageNs extends js.Object {
   }
   
   /**
+    * Jupyter message types.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IOPubMessageType
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ShellMessageType
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ControlMessageType
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.StdinMessageType
+  */
+  trait MessageType extends js.Object
+  
+  /**
     * Shell message types.
     */
   /* Rewritten from type alias, can be one of: 
@@ -871,7 +961,7 @@ object KernelMessageNs extends js.Object {
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.shutdown_reply
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.shutdown_request
   */
-  trait ShellMessageType extends _MessageType
+  trait ShellMessageType extends MessageType
   
   /**
     * Stdin message types.
@@ -880,11 +970,9 @@ object KernelMessageNs extends js.Object {
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.input_request
     - typings.atJupyterlabServices.atJupyterlabServicesStrings.input_reply
   */
-  trait StdinMessageType extends _MessageType
+  trait StdinMessageType extends MessageType
   
   trait _Message extends js.Object
-  
-  trait _MessageType extends js.Object
   
   trait _ReplyContent[T] extends js.Object
   
@@ -909,6 +997,33 @@ object KernelMessageNs extends js.Object {
   def createMessage_T_ICompleteReplyMsg[T /* <: ICompleteReplyMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_ICompleteRequestMsg[T /* <: ICompleteRequestMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  @JSName("createMessage")
+  def createMessage_T_IDebugEventMsg[T /* <: IDebugEventMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  @JSName("createMessage")
+  def createMessage_T_IDebugReplyMsg[T /* <: IDebugReplyMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  @JSName("createMessage")
+  def createMessage_T_IDebugRequestMsg[T /* <: IDebugRequestMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_IDisplayDataMsg[T /* <: IDisplayDataMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
@@ -964,6 +1079,39 @@ object KernelMessageNs extends js.Object {
     */
   def isCommOpenMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.ICommOpenMsg<'iopub' | 'shell'> */ Boolean = js.native
   /**
+    * Test whether a kernel message is an experimental `'debug_event'` message.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def isDebugEventMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDebugEventMsg */ Boolean = js.native
+  /**
+    * Test whether a kernel message is an experimental `'debug_reply'` message.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def isDebugReplyMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDebugReplyMsg */ Boolean = js.native
+  /**
+    * Test whether a kernel message is an experimental `'debug_request'` message.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def isDebugRequestMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDebugRequestMsg */ Boolean = js.native
+  /**
     * Test whether a kernel message is an `'display_data'` message.
     */
   def isDisplayDataMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDisplayDataMsg */ Boolean = js.native
@@ -1008,10 +1156,6 @@ object KernelMessageNs extends js.Object {
     */
   def isUpdateDisplayDataMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IUpdateDisplayDataMsg */ Boolean = js.native
   /**
-    * Control message types.
-    */
-  type ControlMessageType = scala.Nothing
-  /**
     * A convenience type for a base for an execute reply content.
     */
   type IExecuteReplyBase = IExecuteCount with IReplyOkContent
@@ -1022,6 +1166,14 @@ object KernelMessageNs extends js.Object {
     * This convenience is so we can use it as a generic type constraint.
     */
   type IShellControlMessage = IShellMessage[ShellMessageType] | IControlMessage[ControlMessageType]
+  /**
+    * Message types.
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, debug message types are *NOT*
+    * considered part of the public API, and may change without notice.
+    */
   /* Rewritten from type alias, can be one of: 
     - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IClearOutputMsg
     - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICommCloseMsg[
@@ -1053,18 +1205,11 @@ object KernelMessageNs extends js.Object {
     - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IStatusMsg
     - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IStreamMsg
     - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IUpdateDisplayDataMsg
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugRequestMsg
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugReplyMsg
+    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugEventMsg
   */
   type Message = _Message | (ICommCloseMsg[iopub | shell]) | (ICommMsgMsg[iopub | shell]) | (ICommOpenMsg[iopub | shell])
-  /**
-    * Jupyter message types.
-    */
-  /* Rewritten from type alias, can be one of: 
-    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IOPubMessageType
-    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ShellMessageType
-    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ControlMessageType
-    - typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.StdinMessageType
-  */
-  type MessageType = _MessageType | ControlMessageType
   /**
     * A convenience type for reply content.
     *

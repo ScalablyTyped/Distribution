@@ -14,6 +14,9 @@ object ObjectFlags extends js.Object {
   sealed trait Anonymous extends ObjectFlags
   
   @js.native
+  sealed trait ArrayLiteral extends ObjectFlags
+  
+  @js.native
   sealed trait Class extends ObjectFlags
   
   @js.native
@@ -62,6 +65,7 @@ object ObjectFlags extends js.Object {
   sealed trait Tuple extends ObjectFlags
   
   /* 16 */ val Anonymous: typings.typescript.typescriptMod.ObjectFlags.Anonymous with Double = js.native
+  /* 65536 */ val ArrayLiteral: typings.typescript.typescriptMod.ObjectFlags.ArrayLiteral with Double = js.native
   /* 1 */ val Class: typings.typescript.typescriptMod.ObjectFlags.Class with Double = js.native
   /* 3 */ val ClassOrInterface: typings.typescript.typescriptMod.ObjectFlags.ClassOrInterface with Double = js.native
   /* 1024 */ val ContainsSpread: typings.typescript.typescriptMod.ObjectFlags.ContainsSpread with Double = js.native

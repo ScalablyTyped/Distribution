@@ -97,5 +97,13 @@ object PathExtNs extends js.Object {
     * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
     */
   def resolve(parts: String*): String = js.native
+  /**
+    * Get the last portion of a path, without its extension (if any).
+    *
+    * @param path - The file path.
+    *
+    * @returns the last part of the path, sans extension.
+    */
+  def stem(path: String): String = js.native
 }
 

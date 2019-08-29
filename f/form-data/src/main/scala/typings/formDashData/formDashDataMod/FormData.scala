@@ -17,18 +17,18 @@ trait FormData extends Readable {
   def getBoundary(): String = js.native
   def getBuffer(): Buffer = js.native
   def getHeaders(): Headers = js.native
-  def getLength(callback: js.Function2[/* err */ js.UndefOr[Error], /* length */ Double, Unit]): Unit = js.native
+  def getLength(callback: js.Function2[/* err */ Error | Null, /* length */ Double, Unit]): Unit = js.native
   def getLengthSync(): Double = js.native
   def hasKnownLength(): Boolean = js.native
   def submit(params: String): ClientRequest = js.native
   def submit(
     params: String,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* response */ IncomingMessage, Unit]
+    callback: js.Function2[/* error */ Error | Null, /* response */ IncomingMessage, Unit]
   ): ClientRequest = js.native
   def submit(params: SubmitOptions): ClientRequest = js.native
   def submit(
     params: SubmitOptions,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* response */ IncomingMessage, Unit]
+    callback: js.Function2[/* error */ Error | Null, /* response */ IncomingMessage, Unit]
   ): ClientRequest = js.native
 }
 

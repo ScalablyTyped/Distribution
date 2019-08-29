@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/get-iterator", JSImport.Namespace)
 @js.native
 object fnGetDashIteratorMod extends js.Object {
-  def apply[T](iterable: Iterable[T]): Iterator[T] = js.native
+  def apply[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
 }
 

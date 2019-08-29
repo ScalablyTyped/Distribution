@@ -9,6 +9,7 @@ import typings.ionic.definitionsMod.PaginatorDeps
 import typings.ionic.definitionsMod.PaginatorGuard
 import typings.ionic.definitionsMod.PaginatorRequestGenerator
 import typings.ionic.definitionsMod.Response
+import typings.std.IteratorResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +27,7 @@ class Paginator[T /* <: Response[js.Array[js.Object]] */] protected () extends I
   @JSName("reqgen")
   var reqgen_Original: PaginatorRequestGenerator = js.native
   /* protected */ def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
+  def next(): IteratorResult[js.Promise[T], _] = js.native
   /* protected */ def reqgen(): js.Promise[Anon_Req] = js.native
 }
 

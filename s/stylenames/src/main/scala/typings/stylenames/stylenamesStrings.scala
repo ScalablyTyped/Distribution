@@ -336,6 +336,9 @@ object stylenamesStrings {
   sealed trait fontFeatureSettings extends js.Object
   
   @js.native
+  sealed trait fontKerning extends js.Object
+  
+  @js.native
   sealed trait fontSize extends js.Object
   
   @js.native
@@ -348,7 +351,25 @@ object stylenamesStrings {
   sealed trait fontStyle extends js.Object
   
   @js.native
+  sealed trait fontSynthesis extends js.Object
+  
+  @js.native
   sealed trait fontVariant extends js.Object
+  
+  @js.native
+  sealed trait fontVariantCaps extends js.Object
+  
+  @js.native
+  sealed trait fontVariantEastAsian extends js.Object
+  
+  @js.native
+  sealed trait fontVariantLigatures extends js.Object
+  
+  @js.native
+  sealed trait fontVariantNumeric extends js.Object
+  
+  @js.native
+  sealed trait fontVariantPosition extends js.Object
   
   @js.native
   sealed trait fontWeight extends js.Object
@@ -418,6 +439,9 @@ object stylenamesStrings {
   
   @js.native
   sealed trait height extends js.Object
+  
+  @js.native
+  sealed trait hyphens extends js.Object
   
   @js.native
   sealed trait imageOrientation extends js.Object
@@ -516,7 +540,22 @@ object stylenamesStrings {
   sealed trait mask extends js.Object
   
   @js.native
+  sealed trait maskComposite extends js.Object
+  
+  @js.native
   sealed trait maskImage extends js.Object
+  
+  @js.native
+  sealed trait maskPosition extends js.Object
+  
+  @js.native
+  sealed trait maskRepeat extends js.Object
+  
+  @js.native
+  sealed trait maskSize extends js.Object
+  
+  @js.native
+  sealed trait maskType extends js.Object
   
   @js.native
   sealed trait maxHeight extends js.Object
@@ -705,6 +744,12 @@ object stylenamesStrings {
   sealed trait overflow extends js.Object
   
   @js.native
+  sealed trait overflowAnchor extends js.Object
+  
+  @js.native
+  sealed trait overflowWrap extends js.Object
+  
+  @js.native
   sealed trait overflowX extends js.Object
   
   @js.native
@@ -745,6 +790,15 @@ object stylenamesStrings {
   
   @js.native
   sealed trait perspectiveOrigin extends js.Object
+  
+  @js.native
+  sealed trait placeContent extends js.Object
+  
+  @js.native
+  sealed trait placeItems extends js.Object
+  
+  @js.native
+  sealed trait placeSelf extends js.Object
   
   @js.native
   sealed trait pointerEvents extends js.Object
@@ -813,6 +867,9 @@ object stylenamesStrings {
   sealed trait strokeWidth extends js.Object
   
   @js.native
+  sealed trait tabSize extends js.Object
+  
+  @js.native
   sealed trait tableLayout extends js.Object
   
   @js.native
@@ -831,6 +888,27 @@ object stylenamesStrings {
   sealed trait textDecoration extends js.Object
   
   @js.native
+  sealed trait textDecorationColor extends js.Object
+  
+  @js.native
+  sealed trait textDecorationLine extends js.Object
+  
+  @js.native
+  sealed trait textDecorationStyle extends js.Object
+  
+  @js.native
+  sealed trait textEmphasis extends js.Object
+  
+  @js.native
+  sealed trait textEmphasisColor extends js.Object
+  
+  @js.native
+  sealed trait textEmphasisPosition extends js.Object
+  
+  @js.native
+  sealed trait textEmphasisStyle extends js.Object
+  
+  @js.native
   sealed trait textIndent extends js.Object
   
   @js.native
@@ -841,6 +919,9 @@ object stylenamesStrings {
   
   @js.native
   sealed trait textKashidaSpace extends js.Object
+  
+  @js.native
+  sealed trait textOrientation extends js.Object
   
   @js.native
   sealed trait textOverflow extends js.Object
@@ -862,6 +943,9 @@ object stylenamesStrings {
   
   @js.native
   sealed trait transform extends js.Object
+  
+  @js.native
+  sealed trait transformBox extends js.Object
   
   @js.native
   sealed trait transformOrigin extends js.Object
@@ -1054,6 +1138,9 @@ object stylenamesStrings {
   
   @js.native
   sealed trait webkitJustifyContent extends js.Object
+  
+  @js.native
+  sealed trait webkitLineClamp extends js.Object
   
   @js.native
   sealed trait webkitMask extends js.Object
@@ -1408,6 +1495,8 @@ object stylenamesStrings {
   @scala.inline
   def fontFeatureSettings: fontFeatureSettings = "fontFeatureSettings".asInstanceOf[fontFeatureSettings]
   @scala.inline
+  def fontKerning: fontKerning = "fontKerning".asInstanceOf[fontKerning]
+  @scala.inline
   def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   @scala.inline
   def fontSizeAdjust: fontSizeAdjust = "fontSizeAdjust".asInstanceOf[fontSizeAdjust]
@@ -1416,7 +1505,19 @@ object stylenamesStrings {
   @scala.inline
   def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
   @scala.inline
+  def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
+  @scala.inline
   def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
+  @scala.inline
+  def fontVariantCaps: fontVariantCaps = "fontVariantCaps".asInstanceOf[fontVariantCaps]
+  @scala.inline
+  def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
+  @scala.inline
+  def fontVariantLigatures: fontVariantLigatures = "fontVariantLigatures".asInstanceOf[fontVariantLigatures]
+  @scala.inline
+  def fontVariantNumeric: fontVariantNumeric = "fontVariantNumeric".asInstanceOf[fontVariantNumeric]
+  @scala.inline
+  def fontVariantPosition: fontVariantPosition = "fontVariantPosition".asInstanceOf[fontVariantPosition]
   @scala.inline
   def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
   @scala.inline
@@ -1463,6 +1564,8 @@ object stylenamesStrings {
   def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
   @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
+  def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
   @scala.inline
   def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
   @scala.inline
@@ -1528,7 +1631,17 @@ object stylenamesStrings {
   @scala.inline
   def mask: mask = "mask".asInstanceOf[mask]
   @scala.inline
+  def maskComposite: maskComposite = "maskComposite".asInstanceOf[maskComposite]
+  @scala.inline
   def maskImage: maskImage = "maskImage".asInstanceOf[maskImage]
+  @scala.inline
+  def maskPosition: maskPosition = "maskPosition".asInstanceOf[maskPosition]
+  @scala.inline
+  def maskRepeat: maskRepeat = "maskRepeat".asInstanceOf[maskRepeat]
+  @scala.inline
+  def maskSize: maskSize = "maskSize".asInstanceOf[maskSize]
+  @scala.inline
+  def maskType: maskType = "maskType".asInstanceOf[maskType]
   @scala.inline
   def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
   @scala.inline
@@ -1654,6 +1767,10 @@ object stylenamesStrings {
   @scala.inline
   def overflow: overflow = "overflow".asInstanceOf[overflow]
   @scala.inline
+  def overflowAnchor: overflowAnchor = "overflowAnchor".asInstanceOf[overflowAnchor]
+  @scala.inline
+  def overflowWrap: overflowWrap = "overflowWrap".asInstanceOf[overflowWrap]
+  @scala.inline
   def overflowX: overflowX = "overflowX".asInstanceOf[overflowX]
   @scala.inline
   def overflowY: overflowY = "overflowY".asInstanceOf[overflowY]
@@ -1681,6 +1798,12 @@ object stylenamesStrings {
   def perspective: perspective = "perspective".asInstanceOf[perspective]
   @scala.inline
   def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
+  @scala.inline
+  def placeContent: placeContent = "placeContent".asInstanceOf[placeContent]
+  @scala.inline
+  def placeItems: placeItems = "placeItems".asInstanceOf[placeItems]
+  @scala.inline
+  def placeSelf: placeSelf = "placeSelf".asInstanceOf[placeSelf]
   @scala.inline
   def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
   @scala.inline
@@ -1726,6 +1849,8 @@ object stylenamesStrings {
   @scala.inline
   def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
   @scala.inline
+  def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
+  @scala.inline
   def tableLayout: tableLayout = "tableLayout".asInstanceOf[tableLayout]
   @scala.inline
   def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
@@ -1738,6 +1863,20 @@ object stylenamesStrings {
   @scala.inline
   def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
   @scala.inline
+  def textDecorationColor: textDecorationColor = "textDecorationColor".asInstanceOf[textDecorationColor]
+  @scala.inline
+  def textDecorationLine: textDecorationLine = "textDecorationLine".asInstanceOf[textDecorationLine]
+  @scala.inline
+  def textDecorationStyle: textDecorationStyle = "textDecorationStyle".asInstanceOf[textDecorationStyle]
+  @scala.inline
+  def textEmphasis: textEmphasis = "textEmphasis".asInstanceOf[textEmphasis]
+  @scala.inline
+  def textEmphasisColor: textEmphasisColor = "textEmphasisColor".asInstanceOf[textEmphasisColor]
+  @scala.inline
+  def textEmphasisPosition: textEmphasisPosition = "textEmphasisPosition".asInstanceOf[textEmphasisPosition]
+  @scala.inline
+  def textEmphasisStyle: textEmphasisStyle = "textEmphasisStyle".asInstanceOf[textEmphasisStyle]
+  @scala.inline
   def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
   @scala.inline
   def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
@@ -1745,6 +1884,8 @@ object stylenamesStrings {
   def textKashida: textKashida = "textKashida".asInstanceOf[textKashida]
   @scala.inline
   def textKashidaSpace: textKashidaSpace = "textKashidaSpace".asInstanceOf[textKashidaSpace]
+  @scala.inline
+  def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   @scala.inline
   def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
   @scala.inline
@@ -1759,6 +1900,8 @@ object stylenamesStrings {
   def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
   @scala.inline
   def transform: transform = "transform".asInstanceOf[transform]
+  @scala.inline
+  def transformBox: transformBox = "transformBox".asInstanceOf[transformBox]
   @scala.inline
   def transformOrigin: transformOrigin = "transformOrigin".asInstanceOf[transformOrigin]
   @scala.inline
@@ -1887,6 +2030,8 @@ object stylenamesStrings {
   def webkitFlexWrap: webkitFlexWrap = "webkitFlexWrap".asInstanceOf[webkitFlexWrap]
   @scala.inline
   def webkitJustifyContent: webkitJustifyContent = "webkitJustifyContent".asInstanceOf[webkitJustifyContent]
+  @scala.inline
+  def webkitLineClamp: webkitLineClamp = "webkitLineClamp".asInstanceOf[webkitLineClamp]
   @scala.inline
   def webkitMask: webkitMask = "webkitMask".asInstanceOf[webkitMask]
   @scala.inline

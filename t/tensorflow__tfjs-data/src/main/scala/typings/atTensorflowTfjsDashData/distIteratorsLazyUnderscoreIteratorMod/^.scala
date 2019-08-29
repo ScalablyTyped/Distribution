@@ -16,13 +16,13 @@ object ^ extends js.Object {
     baseIterators: LazyIterator[LazyIterator[T]],
     baseErrorHandler: js.Function1[/* e */ Error, Boolean]
   ): LazyIterator[T] = js.native
-  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T]]], count: Double): LazyIterator[T] = js.native
+  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]], count: Double): LazyIterator[T] = js.native
   def iteratorFromConcatenatedFunction[T](
-    iteratorFunc: js.Function0[IteratorResult[LazyIterator[T]]],
+    iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]],
     count: Double,
     baseErrorHandler: js.Function1[/* e */ Error, Boolean]
   ): LazyIterator[T] = js.native
-  def iteratorFromFunction[T](func: js.Function0[IteratorResult[T] | js.Promise[IteratorResult[T]]]): LazyIterator[T] = js.native
+  def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): LazyIterator[T] = js.native
   def iteratorFromIncrementing(start: Double): LazyIterator[Double] = js.native
   def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = js.native
   def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = js.native

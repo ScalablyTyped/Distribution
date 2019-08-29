@@ -65,6 +65,8 @@ import typings.chromeDashApps.chromeDashAppsStrings.error
 import typings.chromeDashApps.chromeDashAppsStrings.exit
 import typings.chromeDashApps.chromeDashAppsStrings.findupdate
 import typings.chromeDashApps.chromeDashAppsStrings.focus
+import typings.chromeDashApps.chromeDashAppsStrings.focusin
+import typings.chromeDashApps.chromeDashAppsStrings.focusout
 import typings.chromeDashApps.chromeDashAppsStrings.fullscreenchange
 import typings.chromeDashApps.chromeDashAppsStrings.fullscreenerror
 import typings.chromeDashApps.chromeDashAppsStrings.gotpointercapture
@@ -147,6 +149,7 @@ import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventListenerOptions
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -912,6 +915,34 @@ class HTMLWebViewElement () extends HTMLElement {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
@@ -1100,17 +1131,20 @@ class HTMLWebViewElement () extends HTMLElement {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1476,17 +1510,20 @@ class HTMLWebViewElement () extends HTMLElement {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2645,6 +2682,34 @@ class HTMLWebViewElement () extends HTMLElement {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
@@ -2833,17 +2898,20 @@ class HTMLWebViewElement () extends HTMLElement {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3209,17 +3277,20 @@ class HTMLWebViewElement () extends HTMLElement {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

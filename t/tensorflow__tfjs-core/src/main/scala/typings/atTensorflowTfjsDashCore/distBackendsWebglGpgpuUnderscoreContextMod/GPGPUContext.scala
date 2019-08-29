@@ -11,10 +11,10 @@ import typings.std.ImageData
 import typings.std.WebGLBuffer
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLProgram
+import typings.std.WebGLQuery
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
-import typings.webgl2.WebGLQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

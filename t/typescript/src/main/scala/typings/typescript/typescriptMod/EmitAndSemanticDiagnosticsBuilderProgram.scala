@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * The semantic diagnostics are cached per file and managed by clearing for the changed/affected files
   */
 @js.native
-trait EmitAndSemanticDiagnosticsBuilderProgram extends BuilderProgram {
+trait EmitAndSemanticDiagnosticsBuilderProgram extends SemanticDiagnosticsBuilderProgram {
   /**
     * Emits the next affected file's emit result (EmitResult and sourceFiles emitted) or returns undefined if iteration is complete
     * The first of writeFile if provided, writeFile of BuilderProgramHost if provided, writeFile of compiler host

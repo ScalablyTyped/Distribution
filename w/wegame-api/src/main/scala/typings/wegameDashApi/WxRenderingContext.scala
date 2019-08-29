@@ -3,8 +3,6 @@ package typings.wegameDashApi
 import typings.std.CanvasDirection
 import typings.std.CanvasGradient
 import typings.std.CanvasImageSource
-import typings.std.CanvasLineCap
-import typings.std.CanvasLineJoin
 import typings.std.CanvasPattern
 import typings.std.CanvasRenderingContext2D
 import typings.std.CanvasTextAlign
@@ -34,16 +32,6 @@ class WxRenderingContext () extends CanvasRenderingContext2D {
   /* CompleteClass */
   override var imageSmoothingQuality: ImageSmoothingQuality = js.native
   /* CompleteClass */
-  override var lineCap: CanvasLineCap = js.native
-  /* CompleteClass */
-  override var lineDashOffset: Double = js.native
-  /* CompleteClass */
-  override var lineJoin: CanvasLineJoin = js.native
-  /* CompleteClass */
-  override var lineWidth: Double = js.native
-  /* CompleteClass */
-  override var miterLimit: Double = js.native
-  /* CompleteClass */
   override var shadowBlur: Double = js.native
   /* CompleteClass */
   override var shadowColor: String = js.native
@@ -68,13 +56,9 @@ class WxRenderingContext () extends CanvasRenderingContext2D {
   /* CompleteClass */
   override def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   /* CompleteClass */
-  override def getLineDash(): js.Array[Double] = js.native
-  /* CompleteClass */
   override def restore(): Unit = js.native
   /* CompleteClass */
   override def save(): Unit = js.native
-  /* CompleteClass */
-  override def setLineDash(segments: js.Array[Double]): Unit = js.native
   /* CompleteClass */
   override def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
 }

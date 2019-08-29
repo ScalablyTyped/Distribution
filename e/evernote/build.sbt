@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "evernote"
-version := "1.25.8-dt-20190322Z-0f104c"
+version := "1.25.8-dt-20190322Z-aad982"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20190322Z-bed3ba",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-9d5d26",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "thrift" % "0.10-dt-20190212Z-0d1c12")
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20190322Z-75e1cf",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-ff56fb",
+  "org.scalablytyped" %%% "std" % "3.6-c16502",
+  "org.scalablytyped" %%% "thrift" % "0.10-dt-20190212Z-55537e")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

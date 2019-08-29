@@ -155,6 +155,8 @@ import typings.cypress.cypressStrings.fieldset
 import typings.cypress.cypressStrings.figcaption
 import typings.cypress.cypressStrings.figure
 import typings.cypress.cypressStrings.focus
+import typings.cypress.cypressStrings.focusin
+import typings.cypress.cypressStrings.focusout
 import typings.cypress.cypressStrings.font
 import typings.cypress.cypressStrings.footer
 import typings.cypress.cypressStrings.form
@@ -438,6 +440,7 @@ import typings.std.Error
 import typings.std.ErrorConstructor
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAppletElement
@@ -18918,6 +18921,48 @@ trait Chainable[Subject] extends js.Object {
     y: Double,
     options: Partial[TriggerOptions with ObjectLike with FocusEvent]
   ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusin(eventName: focusin): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusin(eventName: focusin, options: Partial[TriggerOptions with ObjectLike with FocusEvent]): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusin(eventName: focusin, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusin(
+    eventName: focusin,
+    position: PositionType,
+    options: Partial[TriggerOptions with ObjectLike with FocusEvent]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusin(eventName: focusin, x: Double, y: Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusin(
+    eventName: focusin,
+    x: Double,
+    y: Double,
+    options: Partial[TriggerOptions with ObjectLike with FocusEvent]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusout(eventName: focusout): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusout(eventName: focusout, options: Partial[TriggerOptions with ObjectLike with FocusEvent]): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusout(eventName: focusout, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusout(
+    eventName: focusout,
+    position: PositionType,
+    options: Partial[TriggerOptions with ObjectLike with FocusEvent]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusout(eventName: focusout, x: Double, y: Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_focusout(
+    eventName: focusout,
+    x: Double,
+    y: Double,
+    options: Partial[TriggerOptions with ObjectLike with FocusEvent]
+  ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
     *
@@ -19157,14 +19202,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_loadend(eventName: loadend): Chainable[Subject] = js.native
   @JSName("trigger")
-  def trigger_loadend(eventName: loadend, options: Partial[TriggerOptions with ObjectLike with ProgressEvent]): Chainable[Subject] = js.native
+  def trigger_loadend(
+    eventName: loadend,
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
+  ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(eventName: loadend, position: PositionType): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(
     eventName: loadend,
     position: PositionType,
-    options: Partial[TriggerOptions with ObjectLike with ProgressEvent]
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(eventName: loadend, x: Double, y: Double): Chainable[Subject] = js.native
@@ -19173,7 +19221,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: loadend,
     x: Double,
     y: Double,
-    options: Partial[TriggerOptions with ObjectLike with ProgressEvent]
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadstart(eventName: loadstart): Chainable[Subject] = js.native
@@ -19656,14 +19704,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_progress(eventName: progress): Chainable[Subject] = js.native
   @JSName("trigger")
-  def trigger_progress(eventName: progress, options: Partial[TriggerOptions with ObjectLike with ProgressEvent]): Chainable[Subject] = js.native
+  def trigger_progress(
+    eventName: progress,
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
+  ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(eventName: progress, position: PositionType): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(
     eventName: progress,
     position: PositionType,
-    options: Partial[TriggerOptions with ObjectLike with ProgressEvent]
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(eventName: progress, x: Double, y: Double): Chainable[Subject] = js.native
@@ -19672,7 +19723,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: progress,
     x: Double,
     y: Double,
-    options: Partial[TriggerOptions with ObjectLike with ProgressEvent]
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ratechange(eventName: ratechange): Chainable[Subject] = js.native
@@ -19698,14 +19749,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_readystatechange(eventName: readystatechange): Chainable[Subject] = js.native
   @JSName("trigger")
-  def trigger_readystatechange(eventName: readystatechange, options: Partial[TriggerOptions with ObjectLike with ProgressEvent]): Chainable[Subject] = js.native
+  def trigger_readystatechange(
+    eventName: readystatechange,
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[Document]]
+  ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(eventName: readystatechange, position: PositionType): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(
     eventName: readystatechange,
     position: PositionType,
-    options: Partial[TriggerOptions with ObjectLike with ProgressEvent]
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[Document]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(eventName: readystatechange, x: Double, y: Double): Chainable[Subject] = js.native
@@ -19714,7 +19768,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: readystatechange,
     x: Double,
     y: Double,
-    options: Partial[TriggerOptions with ObjectLike with ProgressEvent]
+    options: Partial[TriggerOptions with ObjectLike with ProgressEvent[Document]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_reset(eventName: reset): Chainable[Subject] = js.native

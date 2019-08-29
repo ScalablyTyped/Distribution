@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecScaleMod {
-  import typings.vegaDashTypings.Anon_CountOp
   import typings.vegaDashTypings.Anon_FieldOp
   import typings.vegaDashTypings.Anon_Sort
   import typings.vegaDashTypings.Anon_SortUnionSortField
@@ -35,5 +34,10 @@ package object typesSpecScaleMod {
   type ScaleData = (DataRef with Anon_Sort) | (MultiDataRef with Anon_SortUnionSortField)
   type ScaleField = String | SignalRef
   type SortField = Boolean | Anon_FieldOp
-  type UnionSortField = Boolean | Anon_CountOp
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - typings.vegaDashTypings.Anon_CountOp
+    - typings.vegaDashTypings.Anon_CountField
+  */
+  type UnionSortField = _UnionSortField | Boolean
 }

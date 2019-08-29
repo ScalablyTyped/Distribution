@@ -13,12 +13,12 @@ trait GlobalAccelerator extends Service {
   @JSName("config")
   var config_GlobalAccelerator: ConfigBase with ClientConfiguration = js.native
   /**
-    * Create an accelerator. An accelerator includes one or more listeners that process inbound connections and direct traffic to one or more endpoint groups, each of which includes endpoints, such as Network Load Balancers. To see an AWS CLI example of creating an accelerator, scroll down to Example.
+    * Create an accelerator. An accelerator includes one or more listeners that process inbound connections and direct traffic to one or more endpoint groups, each of which includes endpoints, such as Network Load Balancers. To see an AWS CLI example of creating an accelerator, scroll down to Example.  You must specify the US-West-2 (Oregon) Region to create or update accelerators. 
     */
   def createAccelerator(): Request[CreateAcceleratorResponse, AWSError] = js.native
   def createAccelerator(callback: js.Function2[/* err */ AWSError, /* data */ CreateAcceleratorResponse, Unit]): Request[CreateAcceleratorResponse, AWSError] = js.native
   /**
-    * Create an accelerator. An accelerator includes one or more listeners that process inbound connections and direct traffic to one or more endpoint groups, each of which includes endpoints, such as Network Load Balancers. To see an AWS CLI example of creating an accelerator, scroll down to Example.
+    * Create an accelerator. An accelerator includes one or more listeners that process inbound connections and direct traffic to one or more endpoint groups, each of which includes endpoints, such as Network Load Balancers. To see an AWS CLI example of creating an accelerator, scroll down to Example.  You must specify the US-West-2 (Oregon) Region to create or update accelerators. 
     */
   def createAccelerator(params: CreateAcceleratorRequest): Request[CreateAcceleratorResponse, AWSError] = js.native
   def createAccelerator(
@@ -182,12 +182,12 @@ trait GlobalAccelerator extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListListenersResponse, Unit]
   ): Request[ListListenersResponse, AWSError] = js.native
   /**
-    * Update an accelerator.
+    * Update an accelerator. To see an AWS CLI example of updating an accelerator, scroll down to Example.  You must specify the US-West-2 (Oregon) Region to create or update accelerators. 
     */
   def updateAccelerator(): Request[UpdateAcceleratorResponse, AWSError] = js.native
   def updateAccelerator(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAcceleratorResponse, Unit]): Request[UpdateAcceleratorResponse, AWSError] = js.native
   /**
-    * Update an accelerator.
+    * Update an accelerator. To see an AWS CLI example of updating an accelerator, scroll down to Example.  You must specify the US-West-2 (Oregon) Region to create or update accelerators. 
     */
   def updateAccelerator(params: UpdateAcceleratorRequest): Request[UpdateAcceleratorResponse, AWSError] = js.native
   def updateAccelerator(

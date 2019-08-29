@@ -2,8 +2,6 @@ package typings.aureliaDashPal.aureliaDashPalMod
 
 import typings.aureliaDashPal.Anon_DONE
 import typings.std.EventListenerOrEventListenerObject
-import typings.std.History
-import typings.std.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +23,11 @@ trait Platform extends js.Object {
   /**
     * The runtime's history API.
     */
-  var history: History = js.native
+  var history: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.history */ js.Any = js.native
   /**
     * The runtime's location API.
     */
-  var location: Location = js.native
+  var location: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.location */ js.Any = js.native
   /**
     * A function wich does nothing.
     */

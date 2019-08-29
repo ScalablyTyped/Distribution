@@ -13,7 +13,7 @@ trait Response[T] extends js.Object {
   /** Response headers */
   var headers: Anon_Date = js.native
   @JSName(scala.scalajs.js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[_]] = js.native
+  var iterator: js.Function0[Iterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
   /** Response status number */
   var status: Double = js.native
 }

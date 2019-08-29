@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Address extends js.Object {
-  var address: IAddress | Null
-  var email: String | Null
-  var name: String | Null
-  /** Billing phone number (including extension). */
-  var phone: String | Null
+  var address: js.UndefOr[IAddress] = js.undefined
+  var email: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  var phone: js.UndefOr[String] = js.undefined
 }
 
 object Anon_Address {

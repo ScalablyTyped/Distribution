@@ -19,7 +19,6 @@ trait MediaTrackSupportedConstraints extends js.Object {
   var resizeMode: js.UndefOr[scala.Boolean] = js.undefined
   var sampleRate: js.UndefOr[scala.Boolean] = js.undefined
   var sampleSize: js.UndefOr[scala.Boolean] = js.undefined
-  var volume: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -40,7 +39,6 @@ object MediaTrackSupportedConstraints {
     resizeMode: js.UndefOr[scala.Boolean] = js.undefined,
     sampleRate: js.UndefOr[scala.Boolean] = js.undefined,
     sampleSize: js.UndefOr[scala.Boolean] = js.undefined,
-    volume: js.UndefOr[scala.Boolean] = js.undefined,
     width: js.UndefOr[scala.Boolean] = js.undefined
   ): MediaTrackSupportedConstraints = {
     val __obj = js.Dynamic.literal()
@@ -58,7 +56,6 @@ object MediaTrackSupportedConstraints {
     if (!js.isUndefined(resizeMode)) __obj.updateDynamic("resizeMode")(resizeMode)
     if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate)
     if (!js.isUndefined(sampleSize)) __obj.updateDynamic("sampleSize")(sampleSize)
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume)
     if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[MediaTrackSupportedConstraints]
   }

@@ -49,15 +49,10 @@ trait Window
      with GlobalEventHandlers
      with IDBEnvironment
      with WindowBase64
-     with GlobalFetch
+     with AnimationFrameProvider
      with WindowOrWorkerGlobalScope
      with WindowEventHandlers
      with /* index */ NumberDictionary[Window] {
-  var Blob: Anon_BlobParts = js.native
-  var TextDecoder: Anon_Label = js.native
-  var TextEncoder: Anon_TextEncoder = js.native
-  var URL: Anon_Base = js.native
-  var URLSearchParams: Anon_Init = js.native
   val applicationCache: ApplicationCache = js.native
   val clientInformation: Navigator = js.native
   val closed: scala.Boolean = js.native
@@ -109,7 +104,7 @@ trait Window
   var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /** @deprecated */
   var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
   var onvrdisplayactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onvrdisplayblur: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onvrdisplayconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
@@ -136,22 +131,25 @@ trait Window
   val scrollX: Double = js.native
   val scrollY: Double = js.native
   val scrollbars: BarProp = js.native
-  val self: Window = js.native
+  val self: Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any) = js.native
   val speechSynthesis: SpeechSynthesis = js.native
   var status: java.lang.String = js.native
   val statusbar: BarProp = js.native
   val styleMedia: StyleMedia = js.native
   val toolbar: BarProp = js.native
   val top: Window = js.native
-  val window: Window = js.native
+  val window: Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any) = js.native
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-    * The options argument sets listener-specific options. For compatibility this can be a
-    * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
+    * 
+    * The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
+    * 
     * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
+    * 
     * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-    * be removed.
+    * 
+    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
+    * 
     * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
     */
   /* InferMemberOverrides */
@@ -490,18 +488,18 @@ trait Window
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -646,17 +644,12 @@ trait Window
   def blur(): Unit = js.native
   /* InferMemberOverrides */
   override def btoa(rawString: java.lang.String): java.lang.String = js.native
-  def cancelAnimationFrame(handle: Double): Unit = js.native
   /** @deprecated */
   def captureEvents(): Unit = js.native
   def close(): Unit = js.native
   def confirm(): scala.Boolean = js.native
   def confirm(message: java.lang.String): scala.Boolean = js.native
   def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
-  /* InferMemberOverrides */
-  override def fetch(input: RequestInfo): js.Promise[Response] = js.native
-  /* InferMemberOverrides */
-  override def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def focus(): Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
@@ -1024,18 +1017,18 @@ trait Window
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -1173,7 +1166,6 @@ trait Window
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
-  def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   def resizeBy(x: Double, y: Double): Unit = js.native
   def resizeTo(x: Double, y: Double): Unit = js.native
   def scroll(): Unit = js.native
@@ -1207,6 +1199,10 @@ class WindowCls () extends Window {
   override def atob(encodedString: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
   override def btoa(rawString: java.lang.String): java.lang.String = js.native
+  /* CompleteClass */
+  override def cancelAnimationFrame(handle: Double): Unit = js.native
+  /* CompleteClass */
+  override def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
 }
 
 @JSGlobal("Window")

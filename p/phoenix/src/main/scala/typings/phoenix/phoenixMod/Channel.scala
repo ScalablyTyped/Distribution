@@ -17,6 +17,7 @@ class Channel protected () extends js.Object {
   def leave(): Push = js.native
   def leave(timeout: Double): Push = js.native
   def off(event: String): Unit = js.native
+  def off(event: String, ref: Double): Unit = js.native
   def on(event: String, callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]): Double = js.native
   def onClose(callback: js.Function3[/* payload */ js.Any, /* ref */ js.Any, /* joinRef */ js.Any, Unit]): Unit = js.native
   def onError(callback: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]): Unit = js.native

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HighlightSpan extends js.Object {
+  var contextSpan: js.UndefOr[TextSpan] = js.undefined
   var fileName: js.UndefOr[String] = js.undefined
   var isInString: js.UndefOr[`true`] = js.undefined
   var kind: HighlightSpanKind
@@ -14,8 +15,15 @@ trait HighlightSpan extends js.Object {
 
 object HighlightSpan {
   @scala.inline
-  def apply(kind: HighlightSpanKind, textSpan: TextSpan, fileName: String = null, isInString: `true` = null): HighlightSpan = {
+  def apply(
+    kind: HighlightSpanKind,
+    textSpan: TextSpan,
+    contextSpan: TextSpan = null,
+    fileName: String = null,
+    isInString: `true` = null
+  ): HighlightSpan = {
     val __obj = js.Dynamic.literal(kind = kind, textSpan = textSpan)
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)
     if (isInString != null) __obj.updateDynamic("isInString")(isInString)
     __obj.asInstanceOf[HighlightSpan]

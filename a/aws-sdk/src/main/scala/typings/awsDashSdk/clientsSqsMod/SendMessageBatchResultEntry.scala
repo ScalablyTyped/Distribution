@@ -18,6 +18,10 @@ trait SendMessageBatchResultEntry extends js.Object {
     */
   var MD5OfMessageBody: String
   /**
+    * An MD5 digest of the non-URL-encoded message system attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
+    */
+  var MD5OfMessageSystemAttributes: js.UndefOr[String] = js.undefined
+  /**
     * An identifier for the message.
     */
   var MessageId: String
@@ -34,10 +38,12 @@ object SendMessageBatchResultEntry {
     MD5OfMessageBody: String,
     MessageId: String,
     MD5OfMessageAttributes: String = null,
+    MD5OfMessageSystemAttributes: String = null,
     SequenceNumber: String = null
   ): SendMessageBatchResultEntry = {
     val __obj = js.Dynamic.literal(Id = Id, MD5OfMessageBody = MD5OfMessageBody, MessageId = MessageId)
     if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes)
+    if (MD5OfMessageSystemAttributes != null) __obj.updateDynamic("MD5OfMessageSystemAttributes")(MD5OfMessageSystemAttributes)
     if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
     __obj.asInstanceOf[SendMessageBatchResultEntry]
   }

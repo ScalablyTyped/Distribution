@@ -78,7 +78,7 @@ object modelNs extends js.Object {
     val childCount: Double = js.native
     val isEmpty: Boolean = js.native
     @JSName(scala.scalajs.js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Node]] = js.native
+    var iterator: js.Function0[Iterator[Node, _, js.UndefOr[scala.Nothing]]] = js.native
     val markers: Map[String, Range] = js.native
     val maxOffset: Double = js.native
     val parent: Null = js.native

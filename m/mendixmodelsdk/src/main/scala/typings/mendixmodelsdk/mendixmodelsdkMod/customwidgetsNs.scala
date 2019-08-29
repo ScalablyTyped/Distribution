@@ -711,9 +711,11 @@ object customwidgetsNs extends js.Object {
   /* static members */
   @js.native
   object SystemPropertyEnum extends js.Object {
+    var Editability: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
     var Label: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
     var Name: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
     var TabIndex: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
+    var Visibility: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
   }
   
   /* static members */

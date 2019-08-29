@@ -58,27 +58,27 @@ trait FileSaver extends EventTarget {
   /**
     * Handler for abort events.
     */
-  def onabort(event: ProgressEvent): Unit = js.native
+  def onabort(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Handler for error events.
     */
-  def onerror(event: ProgressEvent): Unit = js.native
+  def onerror(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Handler for progress events.
     */
-  def onprogress(event: ProgressEvent): Unit = js.native
+  def onprogress(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Handler for write events.
     */
-  def onwrite(event: ProgressEvent): Unit = js.native
+  def onwrite(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Handler for writeend events.
     */
-  def onwriteend(event: ProgressEvent): Unit = js.native
+  def onwriteend(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Handler for writestart events
     */
-  def onwritestart(event: ProgressEvent): Unit = js.native
+  def onwritestart(event: ProgressEvent[EventTarget]): Unit = js.native
 }
 
 @JSGlobal("FileSaver")

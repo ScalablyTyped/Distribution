@@ -7,9 +7,9 @@ import typings.atJupyterlabFilebrowser.atJupyterlabFilebrowserStrings.last_modif
 import typings.atJupyterlabFilebrowser.atJupyterlabFilebrowserStrings.name
 import typings.atJupyterlabFilebrowser.libListingMod.DirListingNs.IRenderer
 import typings.atJupyterlabFilebrowser.libListingMod.DirListingNs.ISortState
-import typings.atJupyterlabFilebrowser.libListingMod.DirListingNs.Renderer
 import typings.atJupyterlabFilebrowser.libModelMod.FileBrowserModel
 import typings.atJupyterlabServices.libContentsMod.ContentsNs.IModel
+import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -118,16 +118,14 @@ object DirListingNs extends js.Object {
     * The default implementation of an `IRenderer`.
     */
   @js.native
-  class Renderer () extends IRenderer {
+  class Renderer protected () extends IRenderer {
+    def this(icoReg: IIconRegistry) = this()
     /**
       * Create a node for a header item.
       */
     var _createHeaderItemNode: js.Any = js.native
+    var _iconRegistry: IIconRegistry = js.native
   }
   
-  /**
-    * The default `IRenderer` instance.
-    */
-  val defaultRenderer: Renderer = js.native
 }
 

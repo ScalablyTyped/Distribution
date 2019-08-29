@@ -10,7 +10,7 @@ package object stylenamesMod {
 
   type StyleObject = Partial[
     Record[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 394 */ js.Any, 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 423 */ js.Any, 
       StyleValue
     ]
   ]

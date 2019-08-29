@@ -3,6 +3,7 @@ package typings.three.srcLoadersObjectLoaderMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import typings.std.ErrorEvent
+import typings.std.EventTarget
 import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
 import typings.three.srcAnimationAnimationClipMod.AnimationClip
@@ -26,12 +27,12 @@ class ObjectLoader () extends js.Object {
   def load(
     url: String,
     onLoad: js.Function1[/* object */ Object3D, Unit],
-    onProgress: js.Function1[/* event */ ProgressEvent, Unit]
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
   ): Unit = js.native
   def load(
     url: String,
     onLoad: js.Function1[/* object */ Object3D, Unit],
-    onProgress: js.Function1[/* event */ ProgressEvent, Unit],
+    onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
   ): Unit = js.native
   def parse[T /* <: Object3D */](json: js.Any): T = js.native

@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait JsonOptions extends js.Object {
   /**
-    * XML child nodes are always treated as arrays
+    * Changes the default textNode property from $t to _t when option is set to true.
+    * Alternatively a string can be specified which will override $t to what ever the string is.
     */
-  var arrayNotation: js.UndefOr[Boolean] = js.undefined
+  var alternateTextNode: js.UndefOr[Boolean] = js.undefined
+  /**
+    * XML child nodes are always treated as arrays.
+    * You can specify a selective array of nodes for this to apply to instead of the whole document.
+    */
+  var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   /**
     * Makes type coercion.
     * i.e.: numbers and booleans present in attributes and element values are converted from string to its correspondent data types.
@@ -50,14 +56,16 @@ trait JsonOptions extends js.Object {
 object JsonOptions {
   @scala.inline
   def apply(
-    arrayNotation: js.UndefOr[Boolean] = js.undefined,
+    alternateTextNode: js.UndefOr[Boolean] = js.undefined,
+    arrayNotation: Boolean | js.Array[String] = null,
     coerce: js.UndefOr[Boolean] = js.undefined,
     reversible: js.UndefOr[Boolean] = js.undefined,
     sanitize: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined
   ): JsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayNotation)) __obj.updateDynamic("arrayNotation")(arrayNotation)
+    if (!js.isUndefined(alternateTextNode)) __obj.updateDynamic("alternateTextNode")(alternateTextNode)
+    if (arrayNotation != null) __obj.updateDynamic("arrayNotation")(arrayNotation.asInstanceOf[js.Any])
     if (!js.isUndefined(coerce)) __obj.updateDynamic("coerce")(coerce)
     if (!js.isUndefined(reversible)) __obj.updateDynamic("reversible")(reversible)
     if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)

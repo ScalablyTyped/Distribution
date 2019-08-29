@@ -29,6 +29,8 @@ import typings.std.stdStrings.emptied
 import typings.std.stdStrings.ended
 import typings.std.stdStrings.error
 import typings.std.stdStrings.focus
+import typings.std.stdStrings.focusin
+import typings.std.stdStrings.focusout
 import typings.std.stdStrings.gotpointercapture
 import typings.std.stdStrings.input
 import typings.std.stdStrings.invalid
@@ -226,7 +228,7 @@ trait GlobalEventHandlers extends js.Object {
     * @param ev The event.
     */
   var onloadedmetadata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onloadend: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onloadend: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]) | Null = js.native
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
@@ -287,7 +289,7 @@ trait GlobalEventHandlers extends js.Object {
     * Occurs to indicate progress while downloading media data.
     * @param ev The event.
     */
-  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]) | Null = js.native
   /**
     * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
@@ -781,6 +783,34 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_gotpointercapture(
     `type`: gotpointercapture,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
@@ -910,17 +940,20 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1207,17 +1240,20 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2022,6 +2058,34 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_gotpointercapture(
     `type`: gotpointercapture,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
@@ -2151,17 +2215,20 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -2448,17 +2515,20 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

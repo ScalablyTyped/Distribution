@@ -4,7 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.typescript.typescriptMod.TemplateLiteralLikeNode because var conflicts: decorators, end, flags, hasExtendedUnicodeEscape, isUnterminated, kind, modifiers, parent, pos, text. Inlined rawText */ @js.native
 trait NoSubstitutionTemplateLiteral
   extends LiteralExpression
      with StringLiteralLike
@@ -12,5 +13,6 @@ trait NoSubstitutionTemplateLiteral
      with TemplateLiteralToken {
   @JSName("kind")
   var kind_NoSubstitutionTemplateLiteral: typings.typescript.typescriptMod.SyntaxKind.NoSubstitutionTemplateLiteral = js.native
+  var rawText: js.UndefOr[String] = js.native
 }
 

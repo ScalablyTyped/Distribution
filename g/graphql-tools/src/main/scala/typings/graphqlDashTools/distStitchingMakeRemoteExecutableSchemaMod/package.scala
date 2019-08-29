@@ -19,6 +19,6 @@ package object distStitchingMakeRemoteExecutableSchemaMod {
     /* args */ js.UndefOr[js.Any], 
     /* context */ js.UndefOr[js.Any], 
     /* info */ js.UndefOr[GraphQLResolveInfo], 
-    AsyncIterator[js.Any]
+    AsyncIterator[js.Any, js.Any, js.UndefOr[scala.Nothing]]
   ]
 }

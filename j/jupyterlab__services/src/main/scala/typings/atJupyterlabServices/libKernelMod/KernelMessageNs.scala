@@ -10,6 +10,9 @@ import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICommMs
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICommOpenMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICompleteReplyMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ICompleteRequestMsg
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugEventMsg
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugReplyMsg
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDebugRequestMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IDisplayDataMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IErrorMsg
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IExecuteInputMsg
@@ -60,6 +63,33 @@ object KernelMessageNs extends js.Object {
   def createMessage_T_ICompleteReplyMsg[T /* <: ICompleteReplyMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_ICompleteRequestMsg[T /* <: ICompleteRequestMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  @JSName("createMessage")
+  def createMessage_T_IDebugEventMsg[T /* <: IDebugEventMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  @JSName("createMessage")
+  def createMessage_T_IDebugReplyMsg[T /* <: IDebugReplyMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  @JSName("createMessage")
+  def createMessage_T_IDebugRequestMsg[T /* <: IDebugRequestMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_IDisplayDataMsg[T /* <: IDisplayDataMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
@@ -114,6 +144,39 @@ object KernelMessageNs extends js.Object {
     * Test whether a kernel message is a `'comm_open'` message.
     */
   def isCommOpenMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.ICommOpenMsg<'iopub' | 'shell'> */ Boolean = js.native
+  /**
+    * Test whether a kernel message is an experimental `'debug_event'` message.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def isDebugEventMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDebugEventMsg */ Boolean = js.native
+  /**
+    * Test whether a kernel message is an experimental `'debug_reply'` message.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def isDebugReplyMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDebugReplyMsg */ Boolean = js.native
+  /**
+    * Test whether a kernel message is an experimental `'debug_request'` message.
+    *
+    * @hidden
+    *
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def isDebugRequestMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.KernelMessage.IDebugRequestMsg */ Boolean = js.native
   /**
     * Test whether a kernel message is an `'display_data'` message.
     */

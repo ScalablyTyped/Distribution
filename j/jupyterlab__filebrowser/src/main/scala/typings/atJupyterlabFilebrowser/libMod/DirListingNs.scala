@@ -1,5 +1,6 @@
 package typings.atJupyterlabFilebrowser.libMod
 
+import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +12,10 @@ object DirListingNs extends js.Object {
     * The default implementation of an `IRenderer`.
     */
   @js.native
-  class Renderer ()
-    extends typings.atJupyterlabFilebrowser.libListingMod.DirListingNs.Renderer
+  class Renderer protected ()
+    extends typings.atJupyterlabFilebrowser.libListingMod.DirListingNs.Renderer {
+    def this(icoReg: IIconRegistry) = this()
+  }
   
-  /**
-    * The default `IRenderer` instance.
-    */
-  val defaultRenderer: typings.atJupyterlabFilebrowser.libListingMod.DirListingNs.Renderer = js.native
 }
 

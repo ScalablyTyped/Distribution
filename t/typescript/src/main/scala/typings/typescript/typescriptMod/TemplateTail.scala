@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TemplateTail
-  extends LiteralLikeNode
+  extends TemplateLiteralLikeNode
      with TemplateLiteralToken {
   @JSName("kind")
   var kind_TemplateTail: typings.typescript.typescriptMod.SyntaxKind.TemplateTail = js.native

@@ -16,6 +16,6 @@ class ShuffleIterator[T] protected () extends PrefetchIterator[T] {
   var upstreamExhausted: js.Any = js.native
   var windowSize: Double = js.native
   /* protected */ def chooseIndex(): Double = js.native
-  def serialNext(): js.Promise[IteratorResult[T]] = js.native
+  def serialNext(): js.Promise[IteratorResult[T, _]] = js.native
 }
 

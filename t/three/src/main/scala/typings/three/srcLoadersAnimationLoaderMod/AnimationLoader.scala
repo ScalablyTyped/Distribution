@@ -2,6 +2,7 @@ package typings.three.srcLoadersAnimationLoaderMod
 
 import typings.std.ArrayBuffer
 import typings.std.ErrorEvent
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.srcAnimationAnimationClipMod.AnimationClip
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
@@ -19,12 +20,12 @@ class AnimationLoader () extends js.Object {
   def load(
     url: String,
     onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
-    onProgress: js.Function1[/* request */ ProgressEvent, Unit]
+    onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
   ): js.Any = js.native
   def load(
     url: String,
     onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
-    onProgress: js.Function1[/* request */ ProgressEvent, Unit],
+    onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
     onError: js.Function1[/* event */ ErrorEvent, Unit]
   ): js.Any = js.native
   def parse(json: js.Any): js.Array[AnimationClip] = js.native

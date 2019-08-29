@@ -38,6 +38,10 @@ trait CreateJobRequest extends js.Object {
     */
   var Settings: JobSettings
   /**
+    * Enable this setting when you run a test job to estimate how many reserved transcoding slots (RTS) you need. When this is enabled, MediaConvert runs your job from an on-demand queue with similar performance to what you will see with one RTS in a reserved queue. This setting is disabled by default.
+    */
+  var SimulateReservedQueue: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.SimulateReservedQueue] = js.undefined
+  /**
     * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
     */
   var StatusUpdateInterval: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.StatusUpdateInterval] = js.undefined
@@ -58,6 +62,7 @@ object CreateJobRequest {
     JobTemplate: __string = null,
     Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
     Queue: __string = null,
+    SimulateReservedQueue: SimulateReservedQueue = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     UserMetadata: __mapOf__string = null
   ): CreateJobRequest = {
@@ -68,6 +73,7 @@ object CreateJobRequest {
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
     if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
+    if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata)
     __obj.asInstanceOf[CreateJobRequest]

@@ -46,19 +46,21 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
   ] = js.undefined
   var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
   var resolveModuleNames: js.UndefOr[
-    js.Function4[
+    js.Function5[
       /* moduleNames */ js.Array[String], 
       /* containingFile */ String, 
       /* reusedNames */ js.UndefOr[js.Array[String]], 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.undefined
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* typeDirectiveNames */ js.Array[String], 
       /* containingFile */ String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.undefined
@@ -102,8 +104,8 @@ object LanguageServiceHost {
     readDirectory: (/* path */ String, /* extensions */ js.UndefOr[js.Array[String]], /* exclude */ js.UndefOr[js.Array[String]], /* include */ js.UndefOr[js.Array[String]], /* depth */ js.UndefOr[Double]) => js.Array[String] = null,
     readFile: (/* path */ String, /* encoding */ js.UndefOr[String]) => js.UndefOr[String] = null,
     realpath: /* path */ String => String = null,
-    resolveModuleNames: (/* moduleNames */ js.Array[String], /* containingFile */ String, /* reusedNames */ js.UndefOr[js.Array[String]], /* redirectedReference */ js.UndefOr[ResolvedProjectReference]) => js.Array[js.UndefOr[ResolvedModule]] = null,
-    resolveTypeReferenceDirectives: (/* typeDirectiveNames */ js.Array[String], /* containingFile */ String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference]) => js.Array[js.UndefOr[ResolvedTypeReferenceDirective]] = null,
+    resolveModuleNames: (/* moduleNames */ js.Array[String], /* containingFile */ String, /* reusedNames */ js.UndefOr[js.Array[String]], /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions) => js.Array[js.UndefOr[ResolvedModule]] = null,
+    resolveTypeReferenceDirectives: (/* typeDirectiveNames */ js.Array[String], /* containingFile */ String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions) => js.Array[js.UndefOr[ResolvedTypeReferenceDirective]] = null,
     trace: /* s */ String => Unit = null,
     useCaseSensitiveFileNames: () => Boolean = null,
     writeFile: (/* fileName */ String, /* content */ String) => Unit = null
@@ -128,8 +130,8 @@ object LanguageServiceHost {
     if (readDirectory != null) __obj.updateDynamic("readDirectory")(js.Any.fromFunction5(readDirectory))
     if (readFile != null) __obj.updateDynamic("readFile")(js.Any.fromFunction2(readFile))
     if (realpath != null) __obj.updateDynamic("realpath")(js.Any.fromFunction1(realpath))
-    if (resolveModuleNames != null) __obj.updateDynamic("resolveModuleNames")(js.Any.fromFunction4(resolveModuleNames))
-    if (resolveTypeReferenceDirectives != null) __obj.updateDynamic("resolveTypeReferenceDirectives")(js.Any.fromFunction3(resolveTypeReferenceDirectives))
+    if (resolveModuleNames != null) __obj.updateDynamic("resolveModuleNames")(js.Any.fromFunction5(resolveModuleNames))
+    if (resolveTypeReferenceDirectives != null) __obj.updateDynamic("resolveTypeReferenceDirectives")(js.Any.fromFunction4(resolveTypeReferenceDirectives))
     if (trace != null) __obj.updateDynamic("trace")(js.Any.fromFunction1(trace))
     if (useCaseSensitiveFileNames != null) __obj.updateDynamic("useCaseSensitiveFileNames")(js.Any.fromFunction0(useCaseSensitiveFileNames))
     if (writeFile != null) __obj.updateDynamic("writeFile")(js.Any.fromFunction2(writeFile))

@@ -2,6 +2,7 @@ package typings.atJupyterlabFilebrowser.libModelMod.FileBrowserModelNs
 
 import typings.atJupyterlabCoreutils.libTokensMod.IStateDB
 import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
+import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import typings.atPhosphorCoreutils.libJsonMod.ReadonlyJSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +18,10 @@ trait IOptions extends js.Object {
     * all paths used in file operations.
     */
   var driveName: js.UndefOr[String] = js.undefined
+  /**
+    * An icon registry instance.
+    */
+  var iconRegistry: IIconRegistry
   /**
     * A document manager instance.
     */
@@ -35,12 +40,13 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
+    iconRegistry: IIconRegistry,
     manager: IDocumentManager,
     driveName: String = null,
     refreshInterval: Int | Double = null,
     state: IStateDB[ReadonlyJSONValue] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(manager = manager)
+    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry, manager = manager)
     if (driveName != null) __obj.updateDynamic("driveName")(driveName)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)

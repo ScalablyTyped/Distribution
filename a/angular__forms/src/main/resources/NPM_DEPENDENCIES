@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/forms" : "8.2.3"
+      "@angular/forms" : "8.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/forms" : "8.2.3"
+      "@angular/forms" : "8.2.4"
     }
   ],
   "compile-devDependencies" : [

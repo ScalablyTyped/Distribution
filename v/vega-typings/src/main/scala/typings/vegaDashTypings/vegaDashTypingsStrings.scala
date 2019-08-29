@@ -89,6 +89,9 @@ object vegaDashTypingsStrings {
   sealed trait antiquewhite extends ColorName
   
   @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
   sealed trait aqua extends ColorName
   
   @js.native
@@ -419,6 +422,9 @@ object vegaDashTypingsStrings {
   sealed trait conicEquidistant extends ProjectionType
   
   @js.native
+  sealed trait container extends js.Object
+  
+  @js.native
   sealed trait content extends js.Object
   
   @js.native
@@ -602,6 +608,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait enter extends EncodeEntryName
+  
+  @js.native
+  sealed trait equalEarth extends ProjectionType
   
   @js.native
   sealed trait equirectangular extends ProjectionType
@@ -813,6 +822,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait impute extends js.Object
+  
+  @js.native
+  sealed trait independent extends js.Object
   
   @js.native
   sealed trait indianred extends ColorName
@@ -1217,9 +1229,6 @@ object vegaDashTypingsStrings {
   sealed trait ordinal
     extends RangeEnum
        with DiscreteScaleType
-  
-  @js.native
-  sealed trait orientationchange extends js.Object
   
   @js.native
   sealed trait orthographic extends ProjectionType
@@ -1768,6 +1777,9 @@ object vegaDashTypingsStrings {
   sealed trait shape extends MarkType
   
   @js.native
+  sealed trait shared extends js.Object
+  
+  @js.native
   sealed trait sienna extends ColorName
   
   @js.native
@@ -2192,6 +2204,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def antiquewhite: antiquewhite = "antiquewhite".asInstanceOf[antiquewhite]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def aqua: aqua = "aqua".asInstanceOf[aqua]
   @scala.inline
   def aquamarine: aquamarine = "aquamarine".asInstanceOf[aquamarine]
@@ -2406,6 +2420,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def conicEquidistant: conicEquidistant = "conicEquidistant".asInstanceOf[conicEquidistant]
   @scala.inline
+  def container: container = "container".asInstanceOf[container]
+  @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
   def `context-menu`: `context-menu` = "context-menu".asInstanceOf[`context-menu`]
@@ -2527,6 +2543,8 @@ object vegaDashTypingsStrings {
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def enter: enter = "enter".asInstanceOf[enter]
+  @scala.inline
+  def equalEarth: equalEarth = "equalEarth".asInstanceOf[equalEarth]
   @scala.inline
   def equirectangular: equirectangular = "equirectangular".asInstanceOf[equirectangular]
   @scala.inline
@@ -2665,6 +2683,8 @@ object vegaDashTypingsStrings {
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def impute: impute = "impute".asInstanceOf[impute]
+  @scala.inline
+  def independent: independent = "independent".asInstanceOf[independent]
   @scala.inline
   def indianred: indianred = "indianred".asInstanceOf[indianred]
   @scala.inline
@@ -2913,8 +2933,6 @@ object vegaDashTypingsStrings {
   def orchid: orchid = "orchid".asInstanceOf[orchid]
   @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
-  @scala.inline
-  def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
   @scala.inline
   def orthographic: orthographic = "orthographic".asInstanceOf[orthographic]
   @scala.inline
@@ -3275,6 +3293,8 @@ object vegaDashTypingsStrings {
   def set3: set3 = "set3".asInstanceOf[set3]
   @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
+  @scala.inline
+  def shared: shared = "shared".asInstanceOf[shared]
   @scala.inline
   def sienna: sienna = "sienna".asInstanceOf[sienna]
   @scala.inline

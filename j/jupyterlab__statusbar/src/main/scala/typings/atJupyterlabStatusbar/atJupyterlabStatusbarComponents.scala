@@ -14,11 +14,6 @@ object atJupyterlabStatusbarComponents extends atJupyterlabStatusbarProps {
   def GroupItem: ComponentType[IProps with HTMLAttributes[HTMLDivElement]] = typings.atJupyterlabStatusbar.libComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("GroupItem").asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atJupyterlabStatusbar.libComponentsGroupMod.GroupItemNs.IProps with typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement]]]
   @scala.inline
-  def IconItem: ComponentType[
-    typings.atJupyterlabStatusbar.libComponentsIconMod.IconItemNs.IProps with HTMLAttributes[HTMLDivElement]
-  ] = typings.atJupyterlabStatusbar.libComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("IconItem").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atJupyterlabStatusbar.libComponentsIconMod.IconItemNs.IProps with typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement]]]
-  @scala.inline
   def ProgressBar: ComponentType[typings.atJupyterlabStatusbar.libComponentsProgressBarMod.ProgressBarNs.IProps] = typings.atJupyterlabStatusbar.libComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabStatusbar.libComponentsProgressBarMod.ProgressBarNs.IProps]]
   @scala.inline
   def TextItem: ComponentType[

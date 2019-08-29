@@ -10,8 +10,6 @@ import typings.std.CanvasGradient
 import typings.std.CanvasImageData
 import typings.std.CanvasImageSmoothing
 import typings.std.CanvasImageSource
-import typings.std.CanvasLineCap
-import typings.std.CanvasLineJoin
 import typings.std.CanvasPath
 import typings.std.CanvasPathDrawingStyles
 import typings.std.CanvasPattern
@@ -69,16 +67,6 @@ class OffscreenCanvasRenderingContext2DCls () extends OffscreenCanvasRenderingCo
   /* CompleteClass */
   override var imageSmoothingQuality: ImageSmoothingQuality = js.native
   /* CompleteClass */
-  override var lineCap: CanvasLineCap = js.native
-  /* CompleteClass */
-  override var lineDashOffset: Double = js.native
-  /* CompleteClass */
-  override var lineJoin: CanvasLineJoin = js.native
-  /* CompleteClass */
-  override var lineWidth: Double = js.native
-  /* CompleteClass */
-  override var miterLimit: Double = js.native
-  /* CompleteClass */
   override var shadowBlur: Double = js.native
   /* CompleteClass */
   override var shadowColor: String = js.native
@@ -103,13 +91,9 @@ class OffscreenCanvasRenderingContext2DCls () extends OffscreenCanvasRenderingCo
   /* CompleteClass */
   override def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   /* CompleteClass */
-  override def getLineDash(): js.Array[Double] = js.native
-  /* CompleteClass */
   override def restore(): Unit = js.native
   /* CompleteClass */
   override def save(): Unit = js.native
-  /* CompleteClass */
-  override def setLineDash(segments: js.Array[Double]): Unit = js.native
   /* CompleteClass */
   override def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
 }

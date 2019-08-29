@@ -1,6 +1,7 @@
 package typings.stripe
 
 import typings.stripe.stripeMod.creditNotesNs.CreditNoteReason
+import typings.stripe.stripeMod.customerTaxIdsNs.TaxIdType
 import typings.stripe.stripeMod.errorsNs.RawType
 import typings.stripe.stripeMod.fileUploadsNs.IPurpose
 import typings.stripe.stripeMod.ordersNs.OrderStatus
@@ -135,6 +136,9 @@ object stripeStrings {
   
   @js.native
   sealed trait approved_by_network extends js.Object
+  
+  @js.native
+  sealed trait au_abn extends TaxIdType
   
   @js.native
   sealed trait authorized extends js.Object
@@ -313,10 +317,16 @@ object stripeStrings {
   sealed trait es extends js.Object
   
   @js.native
+  sealed trait eu_vat extends TaxIdType
+  
+  @js.native
   sealed trait event extends js.Object
   
   @js.native
   sealed trait exact extends js.Object
+  
+  @js.native
+  sealed trait exempt extends js.Object
   
   @js.native
   sealed trait expired_or_canceled_card extends js.Object
@@ -385,6 +395,9 @@ object stripeStrings {
   
   @js.native
   sealed trait identity_document extends IPurpose
+  
+  @js.native
+  sealed trait in_gst extends TaxIdType
   
   @js.native
   sealed trait in_stock extends js.Object
@@ -534,6 +547,9 @@ object stripeStrings {
   sealed trait nl extends js.Object
   
   @js.native
+  sealed trait no_vat extends TaxIdType
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -544,6 +560,9 @@ object stripeStrings {
   
   @js.native
   sealed trait now extends js.Object
+  
+  @js.native
+  sealed trait nz_gst extends TaxIdType
   
   @js.native
   sealed trait off_session
@@ -725,6 +744,9 @@ object stripeStrings {
   sealed trait reusable extends js.Object
   
   @js.native
+  sealed trait reverse extends js.Object
+  
+  @js.native
   sealed trait reversed_after_approval extends js.Object
   
   @js.native
@@ -782,6 +804,9 @@ object stripeStrings {
   sealed trait standard extends PayoutMethods
   
   @js.native
+  sealed trait string extends js.Object
+  
+  @js.native
   sealed trait stripe_account extends js.Object
   
   @js.native
@@ -822,6 +847,9 @@ object stripeStrings {
   
   @js.native
   sealed trait tax extends js.Object
+  
+  @js.native
+  sealed trait tax_id extends js.Object
   
   @js.native
   sealed trait terms_of_service extends js.Object
@@ -869,13 +897,18 @@ object stripeStrings {
   sealed trait unionpay extends CardBrand
   
   @js.native
-  sealed trait unknown extends CardBrand
+  sealed trait unknown
+    extends CardBrand
+       with TaxIdType
   
   @js.native
   sealed trait unpaid extends SubscriptionStatus
   
   @js.native
   sealed trait unrecognized extends js.Object
+  
+  @js.native
+  sealed trait unverified extends js.Object
   
   @js.native
   sealed trait up extends js.Object
@@ -1021,6 +1054,8 @@ object stripeStrings {
   @scala.inline
   def approved_by_network: approved_by_network = "approved_by_network".asInstanceOf[approved_by_network]
   @scala.inline
+  def au_abn: au_abn = "au_abn".asInstanceOf[au_abn]
+  @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
@@ -1129,9 +1164,13 @@ object stripeStrings {
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   @scala.inline
+  def eu_vat: eu_vat = "eu_vat".asInstanceOf[eu_vat]
+  @scala.inline
   def event: event = "event".asInstanceOf[event]
   @scala.inline
   def exact: exact = "exact".asInstanceOf[exact]
+  @scala.inline
+  def exempt: exempt = "exempt".asInstanceOf[exempt]
   @scala.inline
   def expired_or_canceled_card: expired_or_canceled_card = "expired_or_canceled_card".asInstanceOf[expired_or_canceled_card]
   @scala.inline
@@ -1176,6 +1215,8 @@ object stripeStrings {
   def idempotency_error: idempotency_error = "idempotency_error".asInstanceOf[idempotency_error]
   @scala.inline
   def identity_document: identity_document = "identity_document".asInstanceOf[identity_document]
+  @scala.inline
+  def in_gst: in_gst = "in_gst".asInstanceOf[in_gst]
   @scala.inline
   def in_stock: in_stock = "in_stock".asInstanceOf[in_stock]
   @scala.inline
@@ -1275,6 +1316,8 @@ object stripeStrings {
   @scala.inline
   def nl: nl = "nl".asInstanceOf[nl]
   @scala.inline
+  def no_vat: no_vat = "no_vat".asInstanceOf[no_vat]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def not_required: not_required = "not_required".asInstanceOf[not_required]
@@ -1282,6 +1325,8 @@ object stripeStrings {
   def not_sent_to_network: not_sent_to_network = "not_sent_to_network".asInstanceOf[not_sent_to_network]
   @scala.inline
   def now: now = "now".asInstanceOf[now]
+  @scala.inline
+  def nz_gst: nz_gst = "nz_gst".asInstanceOf[nz_gst]
   @scala.inline
   def off_session: off_session = "off_session".asInstanceOf[off_session]
   @scala.inline
@@ -1397,6 +1442,8 @@ object stripeStrings {
   @scala.inline
   def reusable: reusable = "reusable".asInstanceOf[reusable]
   @scala.inline
+  def reverse: reverse = "reverse".asInstanceOf[reverse]
+  @scala.inline
   def reversed_after_approval: reversed_after_approval = "reversed_after_approval".asInstanceOf[reversed_after_approval]
   @scala.inline
   def review: review = "review".asInstanceOf[review]
@@ -1435,6 +1482,8 @@ object stripeStrings {
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def stripe_account: stripe_account = "stripe_account".asInstanceOf[stripe_account]
   @scala.inline
   def stripe_fee: stripe_fee = "stripe_fee".asInstanceOf[stripe_fee]
@@ -1462,6 +1511,8 @@ object stripeStrings {
   def sv: sv = "sv".asInstanceOf[sv]
   @scala.inline
   def tax: tax = "tax".asInstanceOf[tax]
+  @scala.inline
+  def tax_id: tax_id = "tax_id".asInstanceOf[tax_id]
   @scala.inline
   def terms_of_service: terms_of_service = "terms_of_service".asInstanceOf[terms_of_service]
   @scala.inline
@@ -1498,6 +1549,8 @@ object stripeStrings {
   def unpaid: unpaid = "unpaid".asInstanceOf[unpaid]
   @scala.inline
   def unrecognized: unrecognized = "unrecognized".asInstanceOf[unrecognized]
+  @scala.inline
+  def unverified: unverified = "unverified".asInstanceOf[unverified]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   @scala.inline

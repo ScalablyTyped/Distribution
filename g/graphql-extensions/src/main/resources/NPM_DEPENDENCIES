@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-extensions" : "0.10.0"
+      "graphql-extensions" : "0.10.1"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-extensions" : "0.10.0"
+      "graphql-extensions" : "0.10.1"
     }
   ],
   "compile-devDependencies" : [

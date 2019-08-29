@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-subprocess
 
-Typings are for version 1.0.6
+Typings are for version 1.0.7
 
 ## Library description:
 Subprocess utils for NodeJS

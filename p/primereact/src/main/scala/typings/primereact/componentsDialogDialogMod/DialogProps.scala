@@ -16,6 +16,7 @@ trait DialogProps extends js.Object {
   var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   var contentStyle: js.UndefOr[js.Object] = js.undefined
   var dismissableMask: js.UndefOr[Boolean] = js.undefined
+  var focusOnShow: js.UndefOr[Boolean] = js.undefined
   var footer: js.UndefOr[js.Any] = js.undefined
   var header: js.UndefOr[js.Any] = js.undefined
   var iconsTemplate: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.undefined
@@ -43,6 +44,7 @@ object DialogProps {
     closeOnEscape: js.UndefOr[Boolean] = js.undefined,
     contentStyle: js.Object = null,
     dismissableMask: js.UndefOr[Boolean] = js.undefined,
+    focusOnShow: js.UndefOr[Boolean] = js.undefined,
     footer: js.Any = null,
     header: js.Any = null,
     iconsTemplate: () => js.UndefOr[Element] = null,
@@ -65,6 +67,7 @@ object DialogProps {
     if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (!js.isUndefined(dismissableMask)) __obj.updateDynamic("dismissableMask")(dismissableMask)
+    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow)
     if (footer != null) __obj.updateDynamic("footer")(footer)
     if (header != null) __obj.updateDynamic("header")(header)
     if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(js.Any.fromFunction0(iconsTemplate))

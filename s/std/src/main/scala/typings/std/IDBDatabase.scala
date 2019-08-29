@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface of the IndexedDB API provides a connection to a database; you can use an IDBDatabase object to open a transaction on your database then create, manipulate, and delete objects (data) in that database. The interface provides the only way to get and manage versions of the database. */
+/** This IndexedDB API interface provides a connection to a database; you can use an IDBDatabase object to open a transaction on your database then create, manipulate, and delete objects (data) in that database. The interface provides the only way to get and manage versions of the database. */
 @js.native
 trait IDBDatabase extends EventTarget {
   /**
@@ -93,12 +93,14 @@ trait IDBDatabase extends EventTarget {
   def close(): Unit = js.native
   /**
     * Creates a new object store with the given name and options and returns a new IDBObjectStore.
+    * 
     * Throws a "InvalidStateError" DOMException if not called within an upgrade transaction.
     */
   def createObjectStore(name: java.lang.String): IDBObjectStore = js.native
   def createObjectStore(name: java.lang.String, optionalParameters: IDBObjectStoreParameters): IDBObjectStore = js.native
   /**
     * Deletes the object store with the given name.
+    * 
     * Throws a "InvalidStateError" DOMException if not called within an upgrade transaction.
     */
   def deleteObjectStore(name: java.lang.String): Unit = js.native
@@ -162,8 +164,7 @@ trait IDBDatabase extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
   /**
-    * Returns a new transaction with the given mode ("readonly" or "readwrite")
-    * and scope which can be a single object store name or an array of names.
+    * Returns a new transaction with the given mode ("readonly" or "readwrite") and scope which can be a single object store name or an array of names.
     */
   def transaction(storeNames: java.lang.String): IDBTransaction = js.native
   def transaction(storeNames: java.lang.String, mode: IDBTransactionMode): IDBTransaction = js.native

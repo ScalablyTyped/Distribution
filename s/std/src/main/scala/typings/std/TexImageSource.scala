@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.std.HTMLImageElement
   - typings.std.HTMLCanvasElement
   - typings.std.HTMLVideoElement
+  - typings.std.OffscreenCanvas
 */
 trait TexImageSource extends js.Object
 

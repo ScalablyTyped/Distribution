@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Done[T] extends js.Object {
-  var done: `false`
+  var done: js.UndefOr[`false`] = js.undefined
   var value: T
 }
 
 object Anon_Done {
   @scala.inline
-  def apply[T](done: `false`, value: T): Anon_Done[T] = {
-    val __obj = js.Dynamic.literal(done = done, value = value.asInstanceOf[js.Any])
-  
+  def apply[T](value: T, done: `false` = null): Anon_Done[T] = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (done != null) __obj.updateDynamic("done")(done)
     __obj.asInstanceOf[Anon_Done[T]]
   }
 }

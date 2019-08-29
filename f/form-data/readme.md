@@ -1,7 +1,7 @@
 
 # Scala.js typings for form-data
 
-Typings are for version 2.5.0
+Typings are for version 2.5.1
 
 ## Library description:
 A library to create readable "multipart/form-data" streams. Can be used to submit forms and file uploads to other web applications.

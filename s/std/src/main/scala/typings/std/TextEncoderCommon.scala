@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextEncoderCommon extends js.Object {
+  /**
+    * Returns "utf-8".
+    */
   val encoding: java.lang.String
 }
 

@@ -63,17 +63,13 @@ class IDBKeyRangeCls () extends IDBKeyRange {
 @js.native
 object IDBKeyRange extends Instantiable0[IDBKeyRange] {
   /**
-    * Returns a new IDBKeyRange spanning from lower to upper.
-    * If lowerOpen is true, lower is not included in the range.
-    * If upperOpen is true, upper is not included in the range.
+    * Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range.
     */
   def bound(lower: js.Any, upper: js.Any): IDBKeyRange = js.native
   def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean): IDBKeyRange = js.native
   def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): IDBKeyRange = js.native
   /**
-    * Returns a new IDBKeyRange starting at key with no
-    * upper bound. If open is true, key is not included in the
-    * range.
+    * Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range.
     */
   def lowerBound(lower: js.Any): IDBKeyRange = js.native
   def lowerBound(lower: js.Any, open: scala.Boolean): IDBKeyRange = js.native

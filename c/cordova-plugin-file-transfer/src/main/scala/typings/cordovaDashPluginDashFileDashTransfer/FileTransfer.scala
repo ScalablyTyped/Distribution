@@ -2,6 +2,7 @@ package typings.cordovaDashPluginDashFileDashTransfer
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.cordovaDashPluginDashFile.FileEntry
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,7 +54,7 @@ trait FileTransfer extends js.Object {
     options: FileDownloadOptions
   ): Unit = js.native
   /** Called with a ProgressEvent whenever a new chunk of data is transferred.  */
-  def onprogress(event: ProgressEvent): Unit = js.native
+  def onprogress(event: ProgressEvent[EventTarget]): Unit = js.native
   /**
     * Sends a file to a server.
     * @param fileURL           Filesystem URL representing the file on the device. For backwards compatibility,

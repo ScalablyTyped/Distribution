@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglWebglUnderscoreTypesMod
 
-import typings.webgl2.WebGLQuery
+import typings.std.WebGLQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

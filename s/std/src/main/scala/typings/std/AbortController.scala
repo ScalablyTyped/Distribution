@@ -12,8 +12,7 @@ trait AbortController extends js.Object {
     */
   val signal: AbortSignal
   /**
-    * Invoking this method will set this object's AbortSignal's aborted flag and
-    * signal to any observers that the associated activity is to be aborted.
+    * Invoking this method will set this object's AbortSignal's aborted flag and signal to any observers that the associated activity is to be aborted.
     */
   def abort(): Unit
 }
@@ -27,8 +26,7 @@ class AbortControllerCls () extends AbortController {
   /* CompleteClass */
   override val signal: AbortSignal = js.native
   /**
-    * Invoking this method will set this object's AbortSignal's aborted flag and
-    * signal to any observers that the associated activity is to be aborted.
+    * Invoking this method will set this object's AbortSignal's aborted flag and signal to any observers that the associated activity is to be aborted.
     */
   /* CompleteClass */
   override def abort(): Unit = js.native

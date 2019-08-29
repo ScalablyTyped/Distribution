@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait SpinnerProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var decimalSeparator: String
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var formatInput: Boolean
+  var formatInput: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inputClassName: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
@@ -29,7 +29,8 @@ trait SpinnerProps extends js.Object {
   var size: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
-  var thousandSeparator: String
+  var tabIndex: js.UndefOr[Double] = js.undefined
+  var thousandSeparator: js.UndefOr[String] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
@@ -38,11 +39,10 @@ trait SpinnerProps extends js.Object {
 object SpinnerProps {
   @scala.inline
   def apply(
-    decimalSeparator: String,
-    formatInput: Boolean,
-    thousandSeparator: String,
     className: String = null,
+    decimalSeparator: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    formatInput: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inputClassName: String = null,
     inputId: String = null,
@@ -60,13 +60,17 @@ object SpinnerProps {
     size: Int | Double = null,
     step: Int | Double = null,
     style: js.Object = null,
+    tabIndex: Int | Double = null,
+    thousandSeparator: String = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,
     value: Int | Double = null
   ): SpinnerProps = {
-    val __obj = js.Dynamic.literal(decimalSeparator = decimalSeparator, formatInput = formatInput, thousandSeparator = thousandSeparator)
+    val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
@@ -84,6 +88,8 @@ object SpinnerProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

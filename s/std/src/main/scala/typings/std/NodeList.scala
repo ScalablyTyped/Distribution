@@ -30,7 +30,7 @@ trait NodeList extends /* index */ NumberDictionary[Node] {
     thisArg: js.Any
   ): Unit = js.native
   /**
-    * element = collection[index]
+    * Returns the node with index index from the collection. The nodes are sorted in tree order.
     */
   def item(index: Double): Node | Null = js.native
   /**

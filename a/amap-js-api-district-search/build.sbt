@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "amap-js-api-district-search"
-version := "1.4-dt-20190419Z-16bde9"
+version := "1.4-dt-20190419Z-fba225"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20190418Z-f84565",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20190418Z-e67345",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

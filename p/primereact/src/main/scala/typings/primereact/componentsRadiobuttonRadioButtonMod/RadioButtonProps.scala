@@ -15,6 +15,7 @@ trait RadioButtonProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
@@ -33,6 +34,7 @@ object RadioButtonProps {
     name: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null,
+    tabIndex: Int | Double = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,
     value: js.Any = null
@@ -46,6 +48,7 @@ object RadioButtonProps {
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
     if (value != null) __obj.updateDynamic("value")(value)

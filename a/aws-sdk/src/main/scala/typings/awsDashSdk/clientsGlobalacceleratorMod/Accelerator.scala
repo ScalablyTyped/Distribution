@@ -14,7 +14,7 @@ trait Accelerator extends js.Object {
     */
   var CreatedTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Indicates whether theaccelerator is enabled. The value is true or false. The default value is true.  If the value is set to true, the accelerator cannot be deleted. If set to false, accelerator can be deleted.
+    * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.  If the value is set to true, the accelerator cannot be deleted. If set to false, accelerator can be deleted.
     */
   var Enabled: js.UndefOr[GenericBoolean] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait Accelerator extends js.Object {
     */
   var IpAddressType: js.UndefOr[typings.awsDashSdk.clientsGlobalacceleratorMod.IpAddressType] = js.undefined
   /**
-    * IP address set associated with the accelerator.
+    * The static IP addresses that Global Accelerator associates with the accelerator.
     */
   var IpSets: js.UndefOr[typings.awsDashSdk.clientsGlobalacceleratorMod.IpSets] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Accelerator extends js.Object {
     */
   var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The name of the accelerator. The name can have a maximum of 32 characters, must contain only alphanumeric characters or hyphens (-), and must not begin or end with a hyphen.
+    * The name of the accelerator. The name must contain only alphanumeric characters or hyphens (-), and must not begin or end with a hyphen.
     */
   var Name: js.UndefOr[GenericString] = js.undefined
   /**

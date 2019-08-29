@@ -5,6 +5,7 @@ import typings.atJupyterlabFilebrowser.libModelMod.FileBrowserModelNs.IOptions
 import typings.atJupyterlabServices.libContentsMod.ContentsNs.IChangedArgs
 import typings.atJupyterlabServices.libContentsMod.ContentsNs.IModel
 import typings.atJupyterlabServices.libKernelKernelMod.KernelNs.ISpecModels
+import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
@@ -74,6 +75,10 @@ class FileBrowserModel protected () extends IDisposable {
     * Get the file path changed signal.
     */
   val fileChanged: ISignal[this.type, IChangedArgs] = js.native
+  /**
+    * The icon registry instance used by the file browser model.
+    */
+  val iconRegistry: IIconRegistry = js.native
   /**
     * Test whether the object has been disposed.
     *

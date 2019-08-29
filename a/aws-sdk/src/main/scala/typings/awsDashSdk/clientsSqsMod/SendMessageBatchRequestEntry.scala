@@ -29,6 +29,10 @@ trait SendMessageBatchRequestEntry extends js.Object {
     * This parameter applies only to FIFO (first-in-first-out) queues. The tag that specifies that a message belongs to a specific message group. Messages that belong to the same message group are processed in a FIFO manner (however, messages in different message groups might be processed out of order). To interleave multiple ordered streams within a single queue, use MessageGroupId values (for example, session data for multiple users). In this scenario, multiple consumers can process the queue, but the session data of each user is processed in a FIFO fashion.   You must associate a non-empty MessageGroupId with a message. If you don't provide a MessageGroupId, the action fails.    ReceiveMessage might return messages with multiple MessageGroupId values. For each MessageGroupId, the messages are sorted by time sent. The caller can't specify a MessageGroupId.   The length of MessageGroupId is 128 characters. Valid values: alphanumeric characters and punctuation (!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~). For best practices of using MessageGroupId, see Using the MessageGroupId Property in the Amazon Simple Queue Service Developer Guide.   MessageGroupId is required for FIFO queues. You can't use it for Standard queues. 
     */
   var MessageGroupId: js.UndefOr[String] = js.undefined
+  /**
+    * The message system attribute to send Each message system attribute consists of a Name, Type, and Value.    Currently, the only supported message system attribute is AWSTraceHeader. Its type must be String and its value must be a correctly formatted AWS X-Ray trace string.   The size of a message system attribute doesn't count towards the total size of a message.   
+    */
+  var MessageSystemAttributes: js.UndefOr[MessageBodySystemAttributeMap] = js.undefined
 }
 
 object SendMessageBatchRequestEntry {
@@ -39,13 +43,15 @@ object SendMessageBatchRequestEntry {
     DelaySeconds: js.UndefOr[Integer] = js.undefined,
     MessageAttributes: MessageBodyAttributeMap = null,
     MessageDeduplicationId: String = null,
-    MessageGroupId: String = null
+    MessageGroupId: String = null,
+    MessageSystemAttributes: MessageBodySystemAttributeMap = null
   ): SendMessageBatchRequestEntry = {
     val __obj = js.Dynamic.literal(Id = Id, MessageBody = MessageBody)
     if (!js.isUndefined(DelaySeconds)) __obj.updateDynamic("DelaySeconds")(DelaySeconds)
     if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes)
     if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId)
     if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId)
+    if (MessageSystemAttributes != null) __obj.updateDynamic("MessageSystemAttributes")(MessageSystemAttributes)
     __obj.asInstanceOf[SendMessageBatchRequestEntry]
   }
 }

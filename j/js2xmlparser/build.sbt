@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "js2xmlparser"
-version := "4.0.0-053984"
+version := "4.0.0-6c58fb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c",
+  "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "xmlcreate" % "2.0.1-39f49c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

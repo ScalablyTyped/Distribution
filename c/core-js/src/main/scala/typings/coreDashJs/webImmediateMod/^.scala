@@ -31,7 +31,7 @@ object ^ extends js.Object {
   def addLocale(lang: java.lang.String, locale: Locale): Typeofcore = js.native
   def clearImmediate(handle: Double): Unit = js.native
   def delay(msec: Double): js.Promise[Unit] = js.native
-  def getIterator[T](iterable: Iterable[T]): Iterator[T] = js.native
+  def getIterator[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
   def isIterable(value: js.Any): Boolean = js.native
   def locale(): java.lang.String = js.native
   def locale(lang: java.lang.String): java.lang.String = js.native

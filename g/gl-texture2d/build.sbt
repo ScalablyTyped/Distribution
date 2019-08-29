@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gl-texture2d"
-version := "2.1-dt-20180801Z-13735d"
+version := "2.1-dt-20180801Z-38262d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ndarray" % "1.0-dt-20190212Z-4ed4c1",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "ndarray" % "1.0-dt-20190212Z-11b8cc",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

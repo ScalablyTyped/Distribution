@@ -5,8 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextDecoderCommon extends js.Object {
+  /**
+    * Returns encoding's name, lowercased.
+    */
   val encoding: java.lang.String
+  /**
+    * Returns true if error mode is "fatal", and false otherwise.
+    */
   val fatal: scala.Boolean
+  /**
+    * Returns true if ignore BOM flag is set, and false otherwise.
+    */
   val ignoreBOM: scala.Boolean
 }
 

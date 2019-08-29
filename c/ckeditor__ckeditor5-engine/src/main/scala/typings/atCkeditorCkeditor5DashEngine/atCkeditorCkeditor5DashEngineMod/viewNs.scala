@@ -130,7 +130,7 @@ object viewNs extends js.Object {
     val childCount: Double = js.native
     val isEmpty: Boolean = js.native
     @JSName(scala.scalajs.js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Node]] = js.native
+    var iterator: js.Function0[Iterator[Node, _, js.UndefOr[scala.Nothing]]] = js.native
     val parent: Null = js.native
     val root: DocumentFragment = js.native
     def _appendChild(items: Item): Double = js.native
@@ -358,7 +358,7 @@ object viewNs extends js.Object {
     val direction: TreeWalkerDirection = js.native
     val ignoreElementEnd: Boolean = js.native
     @JSName(scala.scalajs.js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[TreeWalkerValue]] = js.native
+    var iterator: js.Function0[Iterator[TreeWalkerValue, _, js.UndefOr[scala.Nothing]]] = js.native
     val position: Position = js.native
     val shallow: Boolean = js.native
     val singleCharacters: Boolean = js.native

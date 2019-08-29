@@ -17,7 +17,7 @@ import typings.jsdom.Anon_CSSStyleSheet
 import typings.jsdom.Anon_CharacterData
 import typings.jsdom.Anon_DOMDELTALINE
 import typings.jsdom.Anon_DOMImplementation
-import typings.jsdom.Anon_DOMKEYLOCATIONJOYSTICK
+import typings.jsdom.Anon_DOMKEYLOCATIONLEFT
 import typings.jsdom.Anon_DOMParser
 import typings.jsdom.Anon_DOMStringMap
 import typings.jsdom.Anon_DOMTokenList
@@ -30,15 +30,15 @@ import typings.jsdom.Anon_ERROR
 import typings.jsdom.Anon_Element
 import typings.jsdom.Anon_EventInitDict
 import typings.jsdom.Anon_EventInitDictType
-import typings.jsdom.Anon_EventInitDictTypeArg
-import typings.jsdom.Anon_EventInitDictTypeArgCompositionEvent
-import typings.jsdom.Anon_EventInitDictTypeArgMouseEvent
-import typings.jsdom.Anon_EventInitDictTypeArgString
+import typings.jsdom.Anon_EventInitDictTypeCompositionEvent
 import typings.jsdom.Anon_EventInitDictTypeErrorEvent
+import typings.jsdom.Anon_EventInitDictTypeEventTarget
+import typings.jsdom.Anon_EventInitDictTypeFocusEvent
 import typings.jsdom.Anon_EventInitDictTypeHashChangeEvent
+import typings.jsdom.Anon_EventInitDictTypeMouseEvent
 import typings.jsdom.Anon_EventInitDictTypePopStateEvent
-import typings.jsdom.Anon_EventInitDictTypeProgressEvent
 import typings.jsdom.Anon_EventInitDictTypeString
+import typings.jsdom.Anon_EventInitDictTypeStringTouchEvent
 import typings.jsdom.Anon_EventTarget
 import typings.jsdom.Anon_FILTERACCEPT
 import typings.jsdom.Anon_FileBits
@@ -138,8 +138,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DOMWindow extends Window {
   var Attr: Anon_Attr = js.native
-  @JSName("Blob")
-  var Blob_DOMWindow: Anon_BlobParts = js.native
+  var Blob: Anon_BlobParts = js.native
   var CDATASection: Anon_CDATASection = js.native
   var CSSImportRule: Anon_CSSImportRule = js.native
   var CSSMediaRule: Anon_CSSMediaRule = js.native
@@ -149,7 +148,7 @@ trait DOMWindow extends Window {
   var CSSStyleSheet: Anon_CSSStyleSheet = js.native
   var CharacterData: Anon_CharacterData = js.native
   var Comment: Anon_DataComment = js.native
-  var CompositionEvent: Anon_EventInitDictTypeArgCompositionEvent = js.native
+  var CompositionEvent: Anon_EventInitDictTypeCompositionEvent = js.native
   var CustomEvent: Anon_EventInitDict = js.native
   /* node_modules/jsdom/living/index.js */
   var DOMException: Anon_ABORTERR = js.native
@@ -166,7 +165,7 @@ trait DOMWindow extends Window {
   var EventTarget: Anon_EventTarget = js.native
   var File: Anon_FileBits = js.native
   var FileList: Anon_FileList = js.native
-  var FocusEvent: Anon_EventInitDictTypeArg = js.native
+  var FocusEvent: Anon_EventInitDictTypeFocusEvent = js.native
   var FormData: Anon_Form = js.native
   var HTMLAnchorElement: Anon_HTMLAnchorElement = js.native
   var HTMLAppletElement: Anon_HTMLAppletElement = js.native
@@ -245,11 +244,11 @@ trait DOMWindow extends Window {
   var HTMLVideoElement: Anon_HTMLVideoElement = js.native
   var HashChangeEvent: Anon_EventInitDictTypeHashChangeEvent = js.native
   var History: Anon_History = js.native
-  var KeyboardEvent: Anon_DOMKEYLOCATIONJOYSTICK = js.native
+  var KeyboardEvent: Anon_DOMKEYLOCATIONLEFT = js.native
   var Location: Anon_Location = js.native
   var MediaList: Anon_MediaList = js.native
   var MessageEvent: Anon_EventInitDictType = js.native
-  var MouseEvent: Anon_EventInitDictTypeArgMouseEvent = js.native
+  var MouseEvent: Anon_EventInitDictTypeMouseEvent = js.native
   var NamedNodeMap: Anon_NamedNodeMap = js.native
   var Node: Anon_ATTRIBUTENODE = js.native
   /* node_modules/jsdom/living/node-filter.js */
@@ -258,18 +257,16 @@ trait DOMWindow extends Window {
   var NodeList: Anon_NodeList = js.native
   var PopStateEvent: Anon_EventInitDictTypePopStateEvent = js.native
   var ProcessingInstruction: Anon_ProcessingInstruction = js.native
-  var ProgressEvent: Anon_EventInitDictTypeProgressEvent = js.native
+  var ProgressEvent: Anon_EventInitDictTypeEventTarget = js.native
   /* node_modules/jsdom/level2/style.js */
   var StyleSheet: Anon_StyleSheet = js.native
   var StyleSheetList: Anon_StyleSheetList = js.native
   var Text: Anon_Data = js.native
-  var TouchEvent: Anon_EventInitDictTypeString = js.native
+  var TouchEvent: Anon_EventInitDictTypeStringTouchEvent = js.native
   var TreeWalker: Anon_TreeWalker = js.native
-  var UIEvent: Anon_EventInitDictTypeArgString = js.native
-  @JSName("URLSearchParams")
-  var URLSearchParams_DOMWindow: Anon_Init = js.native
-  @JSName("URL")
-  var URL_DOMWindow: Anon_Base = js.native
+  var UIEvent: Anon_EventInitDictTypeString = js.native
+  var URL: Anon_Base = js.native
+  var URLSearchParams: Anon_Init = js.native
   var WheelEvent: Anon_DOMDELTALINE = js.native
   var XMLDocument: Anon_XMLDocument = js.native
   var XMLHttpRequestEventTarget: typings.std.XMLHttpRequestEventTarget = js.native

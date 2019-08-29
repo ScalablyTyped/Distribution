@@ -29,7 +29,9 @@ trait WindowEventMap
   var deviceorientationabsolute: DeviceOrientationEvent
   var mousewheel: Event
   var orientationchange: Event
-  var readystatechange: ProgressEvent
+  @JSName("progress")
+  var progress_WindowEventMap: ProgressEvent[Window]
+  var readystatechange: ProgressEvent[Window]
   var vrdisplayactivate: Event
   var vrdisplayblur: Event
   var vrdisplayconnect: Event
@@ -96,6 +98,8 @@ object WindowEventMap {
     ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
+    focusin: FocusEvent,
+    focusout: FocusEvent,
     gotpointercapture: PointerEvent,
     hashchange: HashChangeEvent,
     input: Event,
@@ -107,7 +111,7 @@ object WindowEventMap {
     load: Event,
     loadeddata: Event,
     loadedmetadata: Event,
-    loadend: ProgressEvent,
+    loadend: ProgressEvent[EventTarget],
     loadstart: Event,
     lostpointercapture: PointerEvent,
     message: MessageEvent,
@@ -137,9 +141,9 @@ object WindowEventMap {
     pointerover: PointerEvent,
     pointerup: PointerEvent,
     popstate: PopStateEvent,
-    progress: ProgressEvent,
+    progress: ProgressEvent[Window],
     ratechange: Event,
-    readystatechange: ProgressEvent,
+    readystatechange: ProgressEvent[Window],
     rejectionhandled: Event,
     reset: Event,
     resize: UIEvent,
@@ -179,7 +183,7 @@ object WindowEventMap {
     waiting: Event,
     wheel: WheelEvent
   ): WindowEventMap = {
-    val __obj = js.Dynamic.literal(MSGestureChange = MSGestureChange, MSGestureDoubleTap = MSGestureDoubleTap, MSGestureEnd = MSGestureEnd, MSGestureHold = MSGestureHold, MSGestureStart = MSGestureStart, MSGestureTap = MSGestureTap, MSInertiaStart = MSInertiaStart, MSPointerCancel = MSPointerCancel, MSPointerDown = MSPointerDown, MSPointerEnter = MSPointerEnter, MSPointerLeave = MSPointerLeave, MSPointerMove = MSPointerMove, MSPointerOut = MSPointerOut, MSPointerOver = MSPointerOver, MSPointerUp = MSPointerUp, abort = abort, afterprint = afterprint, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, beforeprint = beforeprint, beforeunload = beforeunload, blur = blur, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, change = change, click = click, close = close, compassneedscalibration = compassneedscalibration, contextmenu = contextmenu, cuechange = cuechange, dblclick = dblclick, devicelight = devicelight, devicemotion = devicemotion, deviceorientation = deviceorientation, deviceorientationabsolute = deviceorientationabsolute, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, gotpointercapture = gotpointercapture, hashchange = hashchange, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, languagechange = languagechange, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, message = message, messageerror = messageerror, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, mousewheel = mousewheel, offline = offline, online = online, orientationchange = orientationchange, pagehide = pagehide, pageshow = pageshow, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, popstate = popstate, progress = progress, ratechange = ratechange, readystatechange = readystatechange, rejectionhandled = rejectionhandled, reset = reset, resize = resize, scroll = scroll, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, storage = storage, submit = submit, suspend = suspend, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, unhandledrejection = unhandledrejection, unload = unload, volumechange = volumechange, vrdisplayactivate = vrdisplayactivate, vrdisplayblur = vrdisplayblur, vrdisplayconnect = vrdisplayconnect, vrdisplaydeactivate = vrdisplaydeactivate, vrdisplaydisconnect = vrdisplaydisconnect, vrdisplayfocus = vrdisplayfocus, vrdisplaypointerrestricted = vrdisplaypointerrestricted, vrdisplaypointerunrestricted = vrdisplaypointerunrestricted, vrdisplaypresentchange = vrdisplaypresentchange, waiting = waiting, wheel = wheel)
+    val __obj = js.Dynamic.literal(MSGestureChange = MSGestureChange, MSGestureDoubleTap = MSGestureDoubleTap, MSGestureEnd = MSGestureEnd, MSGestureHold = MSGestureHold, MSGestureStart = MSGestureStart, MSGestureTap = MSGestureTap, MSInertiaStart = MSInertiaStart, MSPointerCancel = MSPointerCancel, MSPointerDown = MSPointerDown, MSPointerEnter = MSPointerEnter, MSPointerLeave = MSPointerLeave, MSPointerMove = MSPointerMove, MSPointerOut = MSPointerOut, MSPointerOver = MSPointerOver, MSPointerUp = MSPointerUp, abort = abort, afterprint = afterprint, animationcancel = animationcancel, animationend = animationend, animationiteration = animationiteration, animationstart = animationstart, auxclick = auxclick, beforeprint = beforeprint, beforeunload = beforeunload, blur = blur, cancel = cancel, canplay = canplay, canplaythrough = canplaythrough, change = change, click = click, close = close, compassneedscalibration = compassneedscalibration, contextmenu = contextmenu, cuechange = cuechange, dblclick = dblclick, devicelight = devicelight, devicemotion = devicemotion, deviceorientation = deviceorientation, deviceorientationabsolute = deviceorientationabsolute, drag = drag, dragend = dragend, dragenter = dragenter, dragexit = dragexit, dragleave = dragleave, dragover = dragover, dragstart = dragstart, drop = drop, durationchange = durationchange, emptied = emptied, ended = ended, error = error, focus = focus, focusin = focusin, focusout = focusout, gotpointercapture = gotpointercapture, hashchange = hashchange, input = input, invalid = invalid, keydown = keydown, keypress = keypress, keyup = keyup, languagechange = languagechange, load = load, loadeddata = loadeddata, loadedmetadata = loadedmetadata, loadend = loadend, loadstart = loadstart, lostpointercapture = lostpointercapture, message = message, messageerror = messageerror, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, mousewheel = mousewheel, offline = offline, online = online, orientationchange = orientationchange, pagehide = pagehide, pageshow = pageshow, pause = pause, play = play, playing = playing, pointercancel = pointercancel, pointerdown = pointerdown, pointerenter = pointerenter, pointerleave = pointerleave, pointermove = pointermove, pointerout = pointerout, pointerover = pointerover, pointerup = pointerup, popstate = popstate, progress = progress, ratechange = ratechange, readystatechange = readystatechange, rejectionhandled = rejectionhandled, reset = reset, resize = resize, scroll = scroll, securitypolicyviolation = securitypolicyviolation, seeked = seeked, seeking = seeking, select = select, selectionchange = selectionchange, selectstart = selectstart, stalled = stalled, storage = storage, submit = submit, suspend = suspend, timeupdate = timeupdate, toggle = toggle, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, transitioncancel = transitioncancel, transitionend = transitionend, transitionrun = transitionrun, transitionstart = transitionstart, unhandledrejection = unhandledrejection, unload = unload, volumechange = volumechange, vrdisplayactivate = vrdisplayactivate, vrdisplayblur = vrdisplayblur, vrdisplayconnect = vrdisplayconnect, vrdisplaydeactivate = vrdisplaydeactivate, vrdisplaydisconnect = vrdisplaydisconnect, vrdisplayfocus = vrdisplayfocus, vrdisplaypointerrestricted = vrdisplaypointerrestricted, vrdisplaypointerunrestricted = vrdisplaypointerunrestricted, vrdisplaypresentchange = vrdisplaypresentchange, waiting = waiting, wheel = wheel)
   
     __obj.asInstanceOf[WindowEventMap]
   }

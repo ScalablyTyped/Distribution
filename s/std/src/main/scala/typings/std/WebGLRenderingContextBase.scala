@@ -302,7 +302,7 @@ trait WebGLRenderingContextBase extends js.Object {
   val VERTEX_SHADER: GLenum = js.native
   val VIEWPORT: GLenum = js.native
   val ZERO: GLenum = js.native
-  val canvas: HTMLCanvasElement = js.native
+  val canvas: HTMLCanvasElement | OffscreenCanvas = js.native
   val drawingBufferHeight: GLsizei = js.native
   val drawingBufferWidth: GLsizei = js.native
   def activeTexture(texture: GLenum): Unit = js.native
@@ -321,10 +321,6 @@ trait WebGLRenderingContextBase extends js.Object {
   def blendEquationSeparate(modeRGB: GLenum, modeAlpha: GLenum): Unit = js.native
   def blendFunc(sfactor: GLenum, dfactor: GLenum): Unit = js.native
   def blendFuncSeparate(srcRGB: GLenum, dstRGB: GLenum, srcAlpha: GLenum, dstAlpha: GLenum): Unit = js.native
-  def bufferData(target: GLenum, data: Null, usage: GLenum): Unit = js.native
-  def bufferData(target: GLenum, data: BufferSource, usage: GLenum): Unit = js.native
-  def bufferData(target: GLenum, size: GLsizeiptr, usage: GLenum): Unit = js.native
-  def bufferSubData(target: GLenum, offset: GLintptr, data: BufferSource): Unit = js.native
   def checkFramebufferStatus(target: GLenum): GLenum = js.native
   def clear(mask: GLbitfield): Unit = js.native
   def clearColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf): Unit = js.native
@@ -332,25 +328,6 @@ trait WebGLRenderingContextBase extends js.Object {
   def clearStencil(s: GLint): Unit = js.native
   def colorMask(red: GLboolean, green: GLboolean, blue: GLboolean, alpha: GLboolean): Unit = js.native
   def compileShader(shader: WebGLShader): Unit = js.native
-  def compressedTexImage2D(
-    target: GLenum,
-    level: GLint,
-    internalformat: GLenum,
-    width: GLsizei,
-    height: GLsizei,
-    border: GLint,
-    data: ArrayBufferView
-  ): Unit = js.native
-  def compressedTexSubImage2D(
-    target: GLenum,
-    level: GLint,
-    xoffset: GLint,
-    yoffset: GLint,
-    width: GLsizei,
-    height: GLsizei,
-    format: GLenum,
-    data: ArrayBufferView
-  ): Unit = js.native
   def copyTexImage2D(
     target: GLenum,
     level: GLint,
@@ -495,16 +472,6 @@ trait WebGLRenderingContextBase extends js.Object {
   def pixelStorei(pname: GLenum, param: GLboolean): Unit = js.native
   def pixelStorei(pname: GLenum, param: GLint): Unit = js.native
   def polygonOffset(factor: GLfloat, units: GLfloat): Unit = js.native
-  def readPixels(x: GLint, y: GLint, width: GLsizei, height: GLsizei, format: GLenum, `type`: GLenum): Unit = js.native
-  def readPixels(
-    x: GLint,
-    y: GLint,
-    width: GLsizei,
-    height: GLsizei,
-    format: GLenum,
-    `type`: GLenum,
-    pixels: ArrayBufferView
-  ): Unit = js.native
   def renderbufferStorage(target: GLenum, internalformat: GLenum, width: GLsizei, height: GLsizei): Unit = js.native
   def sampleCoverage(value: GLclampf, invert: GLboolean): Unit = js.native
   def scissor(x: GLint, y: GLint, width: GLsizei, height: GLsizei): Unit = js.native
@@ -515,116 +482,39 @@ trait WebGLRenderingContextBase extends js.Object {
   def stencilMaskSeparate(face: GLenum, mask: GLuint): Unit = js.native
   def stencilOp(fail: GLenum, zfail: GLenum, zpass: GLenum): Unit = js.native
   def stencilOpSeparate(face: GLenum, fail: GLenum, zfail: GLenum, zpass: GLenum): Unit = js.native
-  def texImage2D(
-    target: GLenum,
-    level: GLint,
-    internalformat: GLint,
-    format: GLenum,
-    `type`: GLenum,
-    source: TexImageSource
-  ): Unit = js.native
-  def texImage2D(
-    target: GLenum,
-    level: GLint,
-    internalformat: GLint,
-    width: GLsizei,
-    height: GLsizei,
-    border: GLint,
-    format: GLenum,
-    `type`: GLenum
-  ): Unit = js.native
-  def texImage2D(
-    target: GLenum,
-    level: GLint,
-    internalformat: GLint,
-    width: GLsizei,
-    height: GLsizei,
-    border: GLint,
-    format: GLenum,
-    `type`: GLenum,
-    pixels: ArrayBufferView
-  ): Unit = js.native
   def texParameterf(target: GLenum, pname: GLenum, param: GLfloat): Unit = js.native
   def texParameteri(target: GLenum, pname: GLenum, param: GLint): Unit = js.native
-  def texSubImage2D(
-    target: GLenum,
-    level: GLint,
-    xoffset: GLint,
-    yoffset: GLint,
-    format: GLenum,
-    `type`: GLenum,
-    source: TexImageSource
-  ): Unit = js.native
-  def texSubImage2D(
-    target: GLenum,
-    level: GLint,
-    xoffset: GLint,
-    yoffset: GLint,
-    width: GLsizei,
-    height: GLsizei,
-    format: GLenum,
-    `type`: GLenum
-  ): Unit = js.native
-  def texSubImage2D(
-    target: GLenum,
-    level: GLint,
-    xoffset: GLint,
-    yoffset: GLint,
-    width: GLsizei,
-    height: GLsizei,
-    format: GLenum,
-    `type`: GLenum,
-    pixels: ArrayBufferView
-  ): Unit = js.native
   def uniform1f(location: Null, x: GLfloat): Unit = js.native
   def uniform1f(location: WebGLUniformLocation, x: GLfloat): Unit = js.native
-  def uniform1fv(location: Null, v: Float32List): Unit = js.native
-  def uniform1fv(location: WebGLUniformLocation, v: Float32List): Unit = js.native
   def uniform1i(location: Null, x: GLint): Unit = js.native
   def uniform1i(location: WebGLUniformLocation, x: GLint): Unit = js.native
-  def uniform1iv(location: Null, v: Int32List): Unit = js.native
-  def uniform1iv(location: WebGLUniformLocation, v: Int32List): Unit = js.native
   def uniform2f(location: Null, x: GLfloat, y: GLfloat): Unit = js.native
   def uniform2f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat): Unit = js.native
-  def uniform2fv(location: Null, v: Float32List): Unit = js.native
-  def uniform2fv(location: WebGLUniformLocation, v: Float32List): Unit = js.native
   def uniform2i(location: Null, x: GLint, y: GLint): Unit = js.native
   def uniform2i(location: WebGLUniformLocation, x: GLint, y: GLint): Unit = js.native
-  def uniform2iv(location: Null, v: Int32List): Unit = js.native
-  def uniform2iv(location: WebGLUniformLocation, v: Int32List): Unit = js.native
   def uniform3f(location: Null, x: GLfloat, y: GLfloat, z: GLfloat): Unit = js.native
   def uniform3f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat, z: GLfloat): Unit = js.native
-  def uniform3fv(location: Null, v: Float32List): Unit = js.native
-  def uniform3fv(location: WebGLUniformLocation, v: Float32List): Unit = js.native
   def uniform3i(location: Null, x: GLint, y: GLint, z: GLint): Unit = js.native
   def uniform3i(location: WebGLUniformLocation, x: GLint, y: GLint, z: GLint): Unit = js.native
-  def uniform3iv(location: Null, v: Int32List): Unit = js.native
-  def uniform3iv(location: WebGLUniformLocation, v: Int32List): Unit = js.native
   def uniform4f(location: Null, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = js.native
   def uniform4f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = js.native
-  def uniform4fv(location: Null, v: Float32List): Unit = js.native
-  def uniform4fv(location: WebGLUniformLocation, v: Float32List): Unit = js.native
   def uniform4i(location: Null, x: GLint, y: GLint, z: GLint, w: GLint): Unit = js.native
   def uniform4i(location: WebGLUniformLocation, x: GLint, y: GLint, z: GLint, w: GLint): Unit = js.native
-  def uniform4iv(location: Null, v: Int32List): Unit = js.native
-  def uniform4iv(location: WebGLUniformLocation, v: Int32List): Unit = js.native
-  def uniformMatrix2fv(location: Null, transpose: GLboolean, value: Float32List): Unit = js.native
-  def uniformMatrix2fv(location: WebGLUniformLocation, transpose: GLboolean, value: Float32List): Unit = js.native
-  def uniformMatrix3fv(location: Null, transpose: GLboolean, value: Float32List): Unit = js.native
-  def uniformMatrix3fv(location: WebGLUniformLocation, transpose: GLboolean, value: Float32List): Unit = js.native
-  def uniformMatrix4fv(location: Null, transpose: GLboolean, value: Float32List): Unit = js.native
-  def uniformMatrix4fv(location: WebGLUniformLocation, transpose: GLboolean, value: Float32List): Unit = js.native
   def useProgram(): Unit = js.native
   def useProgram(program: WebGLProgram): Unit = js.native
   def validateProgram(program: WebGLProgram): Unit = js.native
   def vertexAttrib1f(index: GLuint, x: GLfloat): Unit = js.native
   def vertexAttrib1fv(index: GLuint, values: Float32List): Unit = js.native
+  def vertexAttrib1fv(index: GLuint, values: Iterable[GLfloat]): Unit = js.native
   def vertexAttrib2f(index: GLuint, x: GLfloat, y: GLfloat): Unit = js.native
   def vertexAttrib2fv(index: GLuint, values: Float32List): Unit = js.native
+  def vertexAttrib2fv(index: GLuint, values: Iterable[GLfloat]): Unit = js.native
   def vertexAttrib3f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat): Unit = js.native
   def vertexAttrib3fv(index: GLuint, values: Float32List): Unit = js.native
+  def vertexAttrib3fv(index: GLuint, values: Iterable[GLfloat]): Unit = js.native
   def vertexAttrib4f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = js.native
   def vertexAttrib4fv(index: GLuint, values: Float32List): Unit = js.native
+  def vertexAttrib4fv(index: GLuint, values: Iterable[GLfloat]): Unit = js.native
   def vertexAttribPointer(
     index: GLuint,
     size: GLint,

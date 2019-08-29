@@ -14,6 +14,10 @@ trait SendMessageResult extends js.Object {
     */
   var MD5OfMessageBody: js.UndefOr[String] = js.undefined
   /**
+    * An MD5 digest of the non-URL-encoded message system attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest.
+    */
+  var MD5OfMessageSystemAttributes: js.UndefOr[String] = js.undefined
+  /**
     * An attribute containing the MessageId of the message sent to the queue. For more information, see Queue and Message Identifiers in the Amazon Simple Queue Service Developer Guide. 
     */
   var MessageId: js.UndefOr[String] = js.undefined
@@ -28,12 +32,14 @@ object SendMessageResult {
   def apply(
     MD5OfMessageAttributes: String = null,
     MD5OfMessageBody: String = null,
+    MD5OfMessageSystemAttributes: String = null,
     MessageId: String = null,
     SequenceNumber: String = null
   ): SendMessageResult = {
     val __obj = js.Dynamic.literal()
     if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes)
     if (MD5OfMessageBody != null) __obj.updateDynamic("MD5OfMessageBody")(MD5OfMessageBody)
+    if (MD5OfMessageSystemAttributes != null) __obj.updateDynamic("MD5OfMessageSystemAttributes")(MD5OfMessageSystemAttributes)
     if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId)
     if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
     __obj.asInstanceOf[SendMessageResult]

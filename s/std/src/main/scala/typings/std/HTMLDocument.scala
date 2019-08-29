@@ -14,6 +14,9 @@ trait HTMLDocument extends Document
 class HTMLDocumentCls () extends HTMLDocument {
   /* CompleteClass */
   override val activeElement: Element | Null = js.native
+  /**
+    * Returns document's fullscreen element.
+    */
   /* CompleteClass */
   override val fullscreenElement: Element | Null = js.native
   /* CompleteClass */

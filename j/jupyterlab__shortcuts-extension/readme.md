@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__shortcuts-extension
 
-Typings are for version 1.0.5
+Typings are for version 1.1.0
 
 ## Library description:
 JupyterLab - Shortcuts Extension

@@ -18,10 +18,14 @@ object ReferencedSymbolDefinitionInfo {
     kind: ScriptElementKind,
     name: String,
     textSpan: TextSpan,
+    contextSpan: TextSpan = null,
+    originalContextSpan: TextSpan = null,
     originalFileName: String = null,
     originalTextSpan: TextSpan = null
   ): ReferencedSymbolDefinitionInfo = {
     val __obj = js.Dynamic.literal(containerKind = containerKind, containerName = containerName, displayParts = displayParts, fileName = fileName, kind = kind, name = name, textSpan = textSpan)
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
+    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan)
     if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
     if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
     __obj.asInstanceOf[ReferencedSymbolDefinitionInfo]

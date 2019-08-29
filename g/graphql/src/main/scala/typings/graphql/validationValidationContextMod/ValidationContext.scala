@@ -1,7 +1,7 @@
 package typings.graphql.validationValidationContextMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.errorMod.GraphQLError
+import typings.graphql.errorGraphQLErrorMod.GraphQLError
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.tsutilsMaybeMod.Maybe
 import typings.graphql.typeDefinitionMod.GraphQLArgument

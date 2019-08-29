@@ -19,7 +19,6 @@ trait MediaTrackCapabilities extends js.Object {
   var resizeMode: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var sampleRate: js.UndefOr[ULongRange] = js.undefined
   var sampleSize: js.UndefOr[ULongRange] = js.undefined
-  var volume: js.UndefOr[DoubleRange] = js.undefined
   var width: js.UndefOr[ULongRange] = js.undefined
 }
 
@@ -40,7 +39,6 @@ object MediaTrackCapabilities {
     resizeMode: js.Array[java.lang.String] = null,
     sampleRate: ULongRange = null,
     sampleSize: ULongRange = null,
-    volume: DoubleRange = null,
     width: ULongRange = null
   ): MediaTrackCapabilities = {
     val __obj = js.Dynamic.literal()
@@ -58,7 +56,6 @@ object MediaTrackCapabilities {
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode)
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate)
     if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize)
-    if (volume != null) __obj.updateDynamic("volume")(volume)
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[MediaTrackCapabilities]
   }

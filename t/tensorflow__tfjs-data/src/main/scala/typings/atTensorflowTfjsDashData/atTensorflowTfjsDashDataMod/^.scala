@@ -23,8 +23,12 @@ object ^ extends js.Object {
   def array[T /* <: TensorContainer */](items: js.Array[T]): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
   def csv(source: RequestInfo): typings.atTensorflowTfjsDashData.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native
   def csv(source: RequestInfo, csvConfig: CSVConfig): typings.atTensorflowTfjsDashData.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native
-  def func[T /* <: TensorContainer */](f: js.Function0[IteratorResult[T] | js.Promise[IteratorResult[T]]]): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
-  def generator[T /* <: TensorContainer */](generator: js.Function0[Iterator[T] | js.Promise[Iterator[T]]]): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
+  def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
+  def generator[T /* <: TensorContainer */](
+    generator: js.Function0[
+      (Iterator[T, _, js.UndefOr[scala.Nothing]]) | (js.Promise[Iterator[T, _, js.UndefOr[scala.Nothing]]])
+    ]
+  ): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
   def microphone(): js.Promise[MicrophoneIterator] = js.native
   def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = js.native
   def webcam(): js.Promise[WebcamIterator] = js.native

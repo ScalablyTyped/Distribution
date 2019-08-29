@@ -192,13 +192,11 @@ trait Element
      with Animatable {
   val attributes: NamedNodeMap = js.native
   /**
-    * Allows for manipulation of element's class content attribute as a
-    * set of whitespace-separated tokens through a DOMTokenList object.
+    * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
     */
   val classList: DOMTokenList = js.native
   /**
-    * Returns the value of element's class content attribute. Can be set
-    * to change it.
+    * Returns the value of element's class content attribute. Can be set to change it.
     */
   var className: java.lang.String = js.native
   val clientHeight: Double = js.native
@@ -206,8 +204,7 @@ trait Element
   val clientTop: Double = js.native
   val clientWidth: Double = js.native
   /**
-    * Returns the value of element's id content attribute. Can be set to
-    * change it.
+    * Returns the value of element's id content attribute. Can be set to change it.
     */
   var id: java.lang.String = js.native
   /**
@@ -230,8 +227,7 @@ trait Element
     */
   val shadowRoot: ShadowRoot | Null = js.native
   /**
-    * Returns the value of element's slot content attribute. Can be set to
-    * change it.
+    * Returns the value of element's slot content attribute. Can be set to change it.
     */
   var slot: java.lang.String = js.native
   /**
@@ -270,7 +266,7 @@ trait Element
     * Creates a shadow root for element and returns it.
     */
   def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
-  def closest(selector: java.lang.String): Element | Null = js.native
+  def closest[E /* <: Element */](selector: java.lang.String): E | Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
     */
@@ -623,20 +619,21 @@ trait Element
     */
   def getAttribute(qualifiedName: java.lang.String): java.lang.String | Null = js.native
   /**
-    * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is
-    * no such attribute otherwise.
+    * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
     */
   def getAttributeNS(namespace: java.lang.String, localName: java.lang.String): java.lang.String | Null = js.native
   def getAttributeNS(namespace: Null, localName: java.lang.String): java.lang.String | Null = js.native
   /**
-    * Returns the qualified names of all element's attributes.
-    * Can contain duplicates.
+    * Returns the qualified names of all element's attributes. Can contain duplicates.
     */
   def getAttributeNames(): js.Array[java.lang.String] = js.native
   def getAttributeNode(name: java.lang.String): Attr | Null = js.native
   def getAttributeNodeNS(namespaceURI: java.lang.String, localName: java.lang.String): Attr | Null = js.native
   def getBoundingClientRect(): ClientRect | DOMRect = js.native
   def getClientRects(): ClientRectList | DOMRectList = js.native
+  /**
+    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
+    */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
@@ -1051,11 +1048,8 @@ trait Element
   ): Unit = js.native
   /**
     * Displays element fullscreen and resolves promise when done.
-    * When supplied, options's navigationUI member indicates whether showing
-    * navigation UI while in fullscreen is preferred or not. If set to "show", navigation
-    * simplicity is preferred over screen space, and if set to "hide", more screen space
-    * is preferred. User agents are always free to honor user preference over the application's. The
-    * default value "auto" indicates no application preference.
+    * 
+    * When supplied, options's navigationUI member indicates whether showing navigation UI while in fullscreen is preferred or not. If set to "show", navigation simplicity is preferred over screen space, and if set to "hide", more screen space is preferred. User agents are always free to honor user preference over the application's. The default value "auto" indicates no application preference.
     */
   def requestFullscreen(): js.Promise[Unit] = js.native
   def requestFullscreen(options: FullscreenOptions): js.Promise[Unit] = js.native
@@ -1085,8 +1079,8 @@ trait Element
   def setAttributeNodeNS(attr: Attr): Attr | Null = js.native
   def setPointerCapture(pointerId: Double): Unit = js.native
   /**
-    * If force is not given, "toggles" qualifiedName, removing it if it is
-    * present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
+    * If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
+    * 
     * Returns true if qualifiedName is now present, and false otherwise.
     */
   def toggleAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
@@ -1102,14 +1096,12 @@ class ElementCls () extends Element {
   /* CompleteClass */
   override var innerHTML: java.lang.String = js.native
   /**
-    * Returns the first following sibling that
-    * is an element, and null otherwise.
+    * Returns the first following sibling that is an element, and null otherwise.
     */
   /* CompleteClass */
   override val nextElementSibling: Element | Null = js.native
   /**
-    * Returns the first preceding sibling that
-    * is an element, and null otherwise.
+    * Returns the first preceding sibling that is an element, and null otherwise.
     */
   /* CompleteClass */
   override val previousElementSibling: Element | Null = js.native

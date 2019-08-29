@@ -1,6 +1,7 @@
 package typings.tstl.baseIteratorForOfAdaptorMod
 
 import typings.std.IterableIterator
+import typings.std.IteratorResult
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,5 +25,9 @@ class ForOfAdaptor[T, InputIterator /* <: IForwardIterator[T, InputIterator] */]
     * @hidden
     */
   var last_ : js.Any = js.native
+  /**
+    * @inheritDoc
+    */
+  def next(): IteratorResult[T, _] = js.native
 }
 

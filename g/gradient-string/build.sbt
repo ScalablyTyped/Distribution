@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gradient-string"
-version := "1.1-dt-20180801Z-2982cc"
+version := "1.1-dt-20180801Z-65745a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20190514Z-cb9a83")
+  "org.scalablytyped" %%% "std" % "3.6-c16502",
+  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20190514Z-d0ac3b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

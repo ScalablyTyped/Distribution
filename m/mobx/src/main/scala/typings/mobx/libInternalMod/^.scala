@@ -267,7 +267,7 @@ object ^ extends js.Object {
   def keys[K](map: ObservableMap[K, _]): js.Array[K] = js.native
   def keys[T /* <: js.Object */](obj: T): js.Array[PropertyKey] = js.native
   def keys[T](set: ObservableSet[T]): js.Array[T] = js.native
-  def makeIterable[T](iterator: Iterator[T]): IterableIterator[T] = js.native
+  def makeIterable[T](iterator: Iterator[T, _, js.UndefOr[scala.Nothing]]): IterableIterator[T] = js.native
   def makeNonEnumerable(`object`: js.Any, propNames: js.Array[PropertyKey]): Unit = js.native
   def namedActionDecorator(name: String): js.Function3[
     /* target */ js.Any, 

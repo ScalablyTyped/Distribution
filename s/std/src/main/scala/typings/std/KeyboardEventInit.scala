@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait KeyboardEventInit extends EventModifierInit {
   var code: js.UndefOr[java.lang.String] = js.undefined
+  var isComposing: js.UndefOr[scala.Boolean] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var location: js.UndefOr[Double] = js.undefined
   var repeat: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,6 +22,7 @@ object KeyboardEventInit {
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
     detail: Int | Double = null,
+    isComposing: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
     location: Int | Double = null,
     metaKey: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,7 +32,6 @@ object KeyboardEventInit {
     modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined,
     modifierHyper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierOS: js.UndefOr[scala.Boolean] = js.undefined,
     modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
@@ -47,6 +48,7 @@ object KeyboardEventInit {
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
     if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComposing)) __obj.updateDynamic("isComposing")(isComposing)
     if (key != null) __obj.updateDynamic("key")(key)
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey)
@@ -56,7 +58,6 @@ object KeyboardEventInit {
     if (!js.isUndefined(modifierFnLock)) __obj.updateDynamic("modifierFnLock")(modifierFnLock)
     if (!js.isUndefined(modifierHyper)) __obj.updateDynamic("modifierHyper")(modifierHyper)
     if (!js.isUndefined(modifierNumLock)) __obj.updateDynamic("modifierNumLock")(modifierNumLock)
-    if (!js.isUndefined(modifierOS)) __obj.updateDynamic("modifierOS")(modifierOS)
     if (!js.isUndefined(modifierScrollLock)) __obj.updateDynamic("modifierScrollLock")(modifierScrollLock)
     if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper)
     if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol)

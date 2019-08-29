@@ -61,6 +61,8 @@ import typings.electron.electronStrings.emptied
 import typings.electron.electronStrings.ended
 import typings.electron.electronStrings.error
 import typings.electron.electronStrings.focus
+import typings.electron.electronStrings.focusin
+import typings.electron.electronStrings.focusout
 import typings.electron.electronStrings.fullscreenchange
 import typings.electron.electronStrings.fullscreenerror
 import typings.electron.electronStrings.gotpointercapture
@@ -128,6 +130,7 @@ import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.Error
 import typings.std.ErrorEvent
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
@@ -676,6 +679,22 @@ trait WebviewTag extends HTMLElement {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    useCapture: Boolean
+  ): Unit = js.native
   /**
     * Fired when a result is available for webview.findInPage request.
     */
@@ -829,11 +848,14 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1074,11 +1096,14 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1808,6 +1833,22 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_foundinpage(event: `found-in-page`, listener: js.Function1[/* event */ FoundInPageEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
@@ -1919,11 +1960,14 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(`type`: loadend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_loadend(
+    `type`: loadend,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -2116,11 +2160,14 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

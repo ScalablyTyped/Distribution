@@ -278,6 +278,7 @@ import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAppletElement
@@ -749,9 +750,13 @@ trait BlissNativeExtentions[T] extends js.Object {
   @JSName("addEventListener")
   def addEventListener_pointerup(`type`: pointerup, listener: js.Function1[/* ev */ PointerEvent, _], useCapture: Boolean): T = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.Function1[/* ev */ ProgressEvent, _]): T = js.native
+  def addEventListener_progress(`type`: progress, listener: js.Function1[/* ev */ ProgressEvent[EventTarget], _]): T = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.Function1[/* ev */ ProgressEvent, _], useCapture: Boolean): T = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
+    useCapture: Boolean
+  ): T = js.native
   @JSName("addEventListener")
   def addEventListener_ratechange(`type`: ratechange, listener: js.Function1[/* ev */ Event, _]): T = js.native
   @JSName("addEventListener")

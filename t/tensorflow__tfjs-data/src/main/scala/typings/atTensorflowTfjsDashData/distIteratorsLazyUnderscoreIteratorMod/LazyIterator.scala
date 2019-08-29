@@ -125,7 +125,7 @@ abstract class LazyIterator[T] () extends js.Object {
     *
     * Calling next() on a closed stream returns `{value:null, done:true}`.
     */
-  def next(): js.Promise[IteratorResult[T]] = js.native
+  def next(): js.Promise[IteratorResult[T, _]] = js.native
   /**
     * Prefetch the first `bufferSize` items in this stream.
     *

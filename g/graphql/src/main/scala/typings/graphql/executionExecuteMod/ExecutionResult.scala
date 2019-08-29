@@ -1,6 +1,6 @@
 package typings.graphql.executionExecuteMod
 
-import typings.graphql.errorMod.GraphQLError
+import typings.graphql.errorGraphQLErrorMod.GraphQLError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

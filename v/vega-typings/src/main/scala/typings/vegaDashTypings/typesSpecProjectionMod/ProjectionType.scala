@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.vegaDashTypings.vegaDashTypingsStrings.conicConformal
   - typings.vegaDashTypings.vegaDashTypingsStrings.conicEqualArea
   - typings.vegaDashTypings.vegaDashTypingsStrings.conicEquidistant
+  - typings.vegaDashTypings.vegaDashTypingsStrings.equalEarth
   - typings.vegaDashTypings.vegaDashTypingsStrings.equirectangular
   - typings.vegaDashTypings.vegaDashTypingsStrings.gnomonic
   - typings.vegaDashTypings.vegaDashTypingsStrings.identity

@@ -1,6 +1,6 @@
 package typings.stripe.stripeMod.paymentMethodsNs
 
-import typings.stripe.Anon_AddressEmail
+import typings.stripe.Anon_Address
 import typings.stripe.Anon_Cvc
 import typings.stripe.Anon_Token
 import typings.stripe.stripeMod.IMetadata
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait IPaymentMethodCreationOptions extends js.Object {
   /** Billing information associated with the PaymentMethod that may be used or required by particular types of payment methods. */
-  var billing_details: js.UndefOr[Anon_AddressEmail] = js.undefined
+  var billing_details: js.UndefOr[Anon_Address] = js.undefined
   /**
     * If this is a card PaymentMethod, this hash contains the user’s card details. For backwards compatibility, you can alternatively provide a Stripe token (e.g., for Apple Pay,
     * Amex Express Checkout, or legacy Checkout) into the card hash with format card: {token: "tok_visa"}. When creating with a card number, you must meet the requirements for
@@ -30,7 +30,7 @@ object IPaymentMethodCreationOptions {
   @scala.inline
   def apply(
     `type`: IPaymentMethodType,
-    billing_details: Anon_AddressEmail = null,
+    billing_details: Anon_Address = null,
     card: Anon_Cvc | Anon_Token = null,
     metadata: IMetadata = null
   ): IPaymentMethodCreationOptions = {

@@ -1811,6 +1811,12 @@ package object clientsMediaconvertMod {
   */
   type SccDestinationFramerate = _SccDestinationFramerate | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type SimulateReservedQueue = _SimulateReservedQueue | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SECONDS_10
     - typings.awsDashSdk.awsDashSdkStrings.SECONDS_12
     - typings.awsDashSdk.awsDashSdkStrings.SECONDS_15

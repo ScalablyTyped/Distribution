@@ -1245,6 +1245,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._RespondToAfd
 import typings.awsDashSdk.clientsMediaconvertMod._S3ServerSideEncryptionType
 import typings.awsDashSdk.clientsMediaconvertMod._ScalingBehavior
 import typings.awsDashSdk.clientsMediaconvertMod._SccDestinationFramerate
+import typings.awsDashSdk.clientsMediaconvertMod._SimulateReservedQueue
 import typings.awsDashSdk.clientsMediaconvertMod._StatusUpdateInterval
 import typings.awsDashSdk.clientsMediaconvertMod._TeletextPageType
 import typings.awsDashSdk.clientsMediaconvertMod._TimecodeBurninPosition
@@ -4296,6 +4297,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait AWSSHIELD_ADVANCED extends _DependentServiceName
+  
+  @js.native
+  sealed trait AWSTraceHeader extends _MessageSystemAttributeName
   
   @js.native
   sealed trait AWSWAF extends _DependentServiceName
@@ -7763,6 +7767,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsDaxMod._SSEStatus
        with _Scte20Convert608To708
        with _SettablePolicyStateValues
+       with _SimulateReservedQueue
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _StreamingStatus
        with _TimeToLiveStatus
@@ -8786,6 +8791,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
        with typings.awsDashSdk.clientsDaxMod._SSEStatus
        with _SettablePolicyStateValues
+       with _SimulateReservedQueue
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _StreamingStatus
        with _TimeToLiveStatus
@@ -29292,6 +29298,8 @@ object awsDashSdkStrings {
   def AWSManagedPolicy: AWSManagedPolicy = "AWSManagedPolicy".asInstanceOf[AWSManagedPolicy]
   @scala.inline
   def AWSSHIELD_ADVANCED: AWSSHIELD_ADVANCED = "AWSSHIELD_ADVANCED".asInstanceOf[AWSSHIELD_ADVANCED]
+  @scala.inline
+  def AWSTraceHeader: AWSTraceHeader = "AWSTraceHeader".asInstanceOf[AWSTraceHeader]
   @scala.inline
   def AWSWAF: AWSWAF = "AWSWAF".asInstanceOf[AWSWAF]
   @scala.inline

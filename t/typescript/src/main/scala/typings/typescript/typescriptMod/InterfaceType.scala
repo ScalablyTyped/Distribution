@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Class and interface types (ObjectFlags.Class and ObjectFlags.Interface). */
 trait InterfaceType extends ObjectType {
   var localTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
   var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined

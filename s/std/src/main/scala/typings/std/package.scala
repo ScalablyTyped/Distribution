@@ -9,11 +9,15 @@ package object std {
   import org.scalablytyped.runtime.StringDictionary
   import typings.std.stdStrings.FIDO_2_0
   import typings.std.stdStrings.ScopedCred
+  import typings.std.stdStrings.`public-key`
   import typings.std.stdStrings.auto
   import typings.std.stdStrings.vibration
 
+  type AAGUID = BufferSource
   type AlgorithmIdentifier = java.lang.String | Algorithm
   type AudioWorklet = Worklet
+  type AuthenticationExtensionsSupported = js.Array[java.lang.String]
+  type AuthenticatorSelectionList = js.Array[AAGUID]
   type AutoKeyword = auto
   type BigInteger = Uint8Array
   type BlobCallback = js.Function1[/* blob */ Blob | Null, Unit]
@@ -34,6 +38,7 @@ package object std {
   type BodyInit = _BodyInit | ReadableStream[Uint8Array] | java.lang.String
   /** A CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
   type CDATASection = Text
+  type COSEAlgorithmIdentifier = Double
   /** An object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
   type CSSSupportsRule = CSSConditionRule
   /** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
@@ -93,12 +98,13 @@ package object std {
   type GLenum = Double
   type GLfloat = Double
   type GLint = Double
+  type GLint64 = Double
   type GLintptr = Double
   type GLsizei = Double
   type GLsizeiptr = Double
   type GLuint = Double
+  type GLuint64 = Double
   type GamepadHapticActuatorType = vibration
-  type Generator = Iterator[js.Any]
   type HashAlgorithmIdentifier = AlgorithmIdentifier
   type HeadersInit = Headers | js.Array[js.Array[java.lang.String]] | (Record[java.lang.String, java.lang.String])
   type IDBKeyPath = java.lang.String
@@ -147,7 +153,6 @@ package object std {
     */
   type NonNullable[T] = T
   type NotificationPermissionCallback = js.Function1[/* permission */ NotificationPermission, Unit]
-  type OffscreenRenderingContext = OffscreenCanvasRenderingContext2D | WebGLRenderingContext
   /**
     * Construct a type with the properties of T except for those in type K.
     */
@@ -209,6 +214,7 @@ package object std {
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, Unit]
   type PropertyDescriptorMap = StringDictionary[PropertyDescriptor]
   type PropertyKey = java.lang.String | Double | js.Symbol
+  type PublicKeyCredentialType = `public-key`
   type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, Double]
   type RTCAnswerOptions = RTCOfferAnswerOptions
   type RTCPeerConnectionErrorCallback = js.Function1[/* error */ DOMException, Unit]
@@ -230,12 +236,6 @@ package object std {
     */
   type Record[K /* <: java.lang.String */, T] = StringDictionary[K]
   type ReferenceError = Error
-  /* Rewritten from type alias, can be one of: 
-    - typings.std.CanvasRenderingContext2D
-    - typings.std.ImageBitmapRenderingContext
-    - typings.std.WebGLRenderingContext
-  */
-  type RenderingContext = _RenderingContext | WebGLRenderingContext
   type RequestInfo = Request | java.lang.String
   /**
     * Make all properties in T required
@@ -267,6 +267,9 @@ package object std {
   ]
   type TypeError = Error
   type URIError = Error
+  type Uint32List = Uint32Array | js.Array[GLuint]
+  type UvmEntries = js.Array[UvmEntry]
+  type UvmEntry = js.Array[Double]
   type VibratePattern = Double | js.Array[Double]
   type VoidFunction = js.Function0[Unit]
   /** Part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
@@ -275,14 +278,17 @@ package object std {
   type WebGLFramebuffer = WebGLObject
   /** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
   type WebGLProgram = WebGLObject
+  type WebGLQuery = WebGLObject
   /** Part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
   type WebGLRenderbuffer = WebGLObject
-  /** Provides an interface to the OpenGL ES 2.0 graphics rendering context for the drawing surface of an HTML <canvas> element. */
-  type WebGLRenderingContext = WebGLRenderingContextBase
+  type WebGLSampler = WebGLObject
   /** The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram requires both types of shaders. */
   type WebGLShader = WebGLObject
+  type WebGLSync = WebGLObject
   /** Part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
   type WebGLTexture = WebGLObject
+  type WebGLTransformFeedback = WebGLObject
+  type WebGLVertexArrayObject = WebGLObject
   type WebGLVertexArrayObjectOES = WebGLObject
   type WebKitCSSMatrix = DOMMatrix
   type WindowProxy = Window

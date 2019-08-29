@@ -6,6 +6,7 @@ import typings.std.DeviceOrientationEvent
 import typings.std.Document
 import typings.std.DragEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HashChangeEvent
 import typings.std.KeyboardEvent
@@ -183,12 +184,12 @@ trait EventListenerProps extends js.Object {
   var onPointerUpCapture: js.UndefOr[js.Function1[/* ev */ PointerEvent, _]] = js.undefined
   var onPopState: js.UndefOr[js.Function1[/* ev */ PopStateEvent, _]] = js.undefined
   var onPopStateCapture: js.UndefOr[js.Function1[/* ev */ PopStateEvent, _]] = js.undefined
-  var onProgress: js.UndefOr[js.Function1[/* ev */ ProgressEvent, _]] = js.undefined
-  var onProgressCapture: js.UndefOr[js.Function1[/* ev */ ProgressEvent, _]] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
+  var onProgressCapture: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
   var onRateChange: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onRateChangeCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
-  var onReadyStateChange: js.UndefOr[js.Function1[/* ev */ ProgressEvent, _]] = js.undefined
-  var onReadyStateChangeCapture: js.UndefOr[js.Function1[/* ev */ ProgressEvent, _]] = js.undefined
+  var onReadyStateChange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
+  var onReadyStateChangeCapture: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.undefined
   var onReset: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onResetCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onResize: js.UndefOr[js.Function1[/* ev */ UIEvent, _]] = js.undefined
@@ -391,12 +392,12 @@ object EventListenerProps {
     onPointerUpCapture: /* ev */ PointerEvent => _ = null,
     onPopState: /* ev */ PopStateEvent => _ = null,
     onPopStateCapture: /* ev */ PopStateEvent => _ = null,
-    onProgress: /* ev */ ProgressEvent => _ = null,
-    onProgressCapture: /* ev */ ProgressEvent => _ = null,
+    onProgress: /* ev */ ProgressEvent[EventTarget] => _ = null,
+    onProgressCapture: /* ev */ ProgressEvent[EventTarget] => _ = null,
     onRateChange: /* ev */ Event => _ = null,
     onRateChangeCapture: /* ev */ Event => _ = null,
-    onReadyStateChange: /* ev */ ProgressEvent => _ = null,
-    onReadyStateChangeCapture: /* ev */ ProgressEvent => _ = null,
+    onReadyStateChange: /* ev */ ProgressEvent[EventTarget] => _ = null,
+    onReadyStateChangeCapture: /* ev */ ProgressEvent[EventTarget] => _ = null,
     onReset: /* ev */ Event => _ = null,
     onResetCapture: /* ev */ Event => _ = null,
     onResize: /* ev */ UIEvent => _ = null,

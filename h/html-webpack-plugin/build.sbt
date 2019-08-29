@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "html-webpack-plugin"
-version := "3.2-dt-20190712Z-d03b65"
+version := "3.2-dt-20190712Z-beaffb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-44bb30",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-418c06",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-f04cdc",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-8feecc",
-  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-2a8016",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-04c49c",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-8d90ab",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-05d063",
-  "org.scalablytyped" %%% "webpack" % "4.39-dt-20190825Z-fd6a0e",
-  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-10033f")
+  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-a7db04",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-d44f86",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-6f5076",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-c9bb1c",
+  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-afc896",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-bb5048",
+  "org.scalablytyped" %%% "std" % "3.6-c16502",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-230399",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-e01dc2",
+  "org.scalablytyped" %%% "webpack" % "4.39-dt-20190825Z-dbe3c4",
+  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-412bd8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

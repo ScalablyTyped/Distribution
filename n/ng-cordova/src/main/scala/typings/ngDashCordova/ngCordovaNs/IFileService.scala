@@ -5,6 +5,7 @@ import typings.cordovaDashPluginDashFile.DirectoryEntry
 import typings.cordovaDashPluginDashFile.FileEntry
 import typings.std.ArrayBuffer
 import typings.std.Blob
+import typings.std.EventTarget
 import typings.std.ProgressEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,11 +35,11 @@ trait IFileService extends js.Object {
   def removeDir(path: String, directory: String): IFilePromise[IFileRemoveResult[DirectoryEntry]] = js.native
   def removeFile(path: String, file: String): IFilePromise[IFileRemoveResult[FileEntry]] = js.native
   def removeRecursively(path: String, directory: String): IFilePromise[IFileRemoveResult[DirectoryEntry]] = js.native
-  def writeExistingFile(path: String, file: String, text: String): IFilePromise[ProgressEvent] = js.native
-  def writeExistingFile(path: String, file: String, text: Blob): IFilePromise[ProgressEvent] = js.native
-  def writeFile(path: String, file: String, text: String): IFilePromise[ProgressEvent] = js.native
-  def writeFile(path: String, file: String, text: String, replace: Boolean): IFilePromise[ProgressEvent] = js.native
-  def writeFile(path: String, file: String, text: Blob): IFilePromise[ProgressEvent] = js.native
-  def writeFile(path: String, file: String, text: Blob, replace: Boolean): IFilePromise[ProgressEvent] = js.native
+  def writeExistingFile(path: String, file: String, text: String): IFilePromise[ProgressEvent[EventTarget]] = js.native
+  def writeExistingFile(path: String, file: String, text: Blob): IFilePromise[ProgressEvent[EventTarget]] = js.native
+  def writeFile(path: String, file: String, text: String): IFilePromise[ProgressEvent[EventTarget]] = js.native
+  def writeFile(path: String, file: String, text: String, replace: Boolean): IFilePromise[ProgressEvent[EventTarget]] = js.native
+  def writeFile(path: String, file: String, text: Blob): IFilePromise[ProgressEvent[EventTarget]] = js.native
+  def writeFile(path: String, file: String, text: Blob, replace: Boolean): IFilePromise[ProgressEvent[EventTarget]] = js.native
 }
 

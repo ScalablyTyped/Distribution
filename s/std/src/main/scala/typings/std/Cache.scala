@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait Cache extends js.Object {
   def add(request: RequestInfo): js.Promise[Unit] = js.native
   def addAll(requests: js.Array[RequestInfo]): js.Promise[Unit] = js.native
+  def addAll(requests: Iterable[RequestInfo]): js.Promise[Unit] = js.native
   def delete(request: RequestInfo): js.Promise[scala.Boolean] = js.native
   def delete(request: RequestInfo, options: CacheQueryOptions): js.Promise[scala.Boolean] = js.native
   def keys(): js.Promise[js.Array[Request]] = js.native

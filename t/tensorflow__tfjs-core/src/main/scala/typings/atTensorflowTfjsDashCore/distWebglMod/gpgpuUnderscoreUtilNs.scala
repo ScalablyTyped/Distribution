@@ -8,12 +8,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.ImageData
+import typings.std.WebGL2RenderingContext
 import typings.std.WebGLBuffer
 import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
 import typings.std.WebGLTexture
-import typings.webgl2.WebGL2RenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

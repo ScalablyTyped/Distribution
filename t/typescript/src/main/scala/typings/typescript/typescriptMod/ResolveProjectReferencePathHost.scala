@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** @deprecated */ trait ResolveProjectReferencePathHost extends js.Object {
+trait ResolveProjectReferencePathHost extends js.Object {
   def fileExists(fileName: String): Boolean
 }
 

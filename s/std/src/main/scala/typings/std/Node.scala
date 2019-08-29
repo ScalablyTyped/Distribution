@@ -9,22 +9,61 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Node extends EventTarget {
   val ATTRIBUTE_NODE: Double = js.native
+  /**
+    * node is a CDATASection node.
+    */
   val CDATA_SECTION_NODE: Double = js.native
+  /**
+    * node is a Comment node.
+    */
   val COMMENT_NODE: Double = js.native
+  /**
+    * node is a DocumentFragment node.
+    */
   val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  /**
+    * node is a document.
+    */
   val DOCUMENT_NODE: Double = js.native
+  /**
+    * Set when other is a descendant of node.
+    */
   val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  /**
+    * Set when other is an ancestor of node.
+    */
   val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  /**
+    * Set when node and other are not in the same tree.
+    */
   val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  /**
+    * Set when other is following node.
+    */
   val DOCUMENT_POSITION_FOLLOWING: Double = js.native
   val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  /**
+    * Set when other is preceding node.
+    */
   val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  /**
+    * node is a doctype.
+    */
   val DOCUMENT_TYPE_NODE: Double = js.native
+  /**
+    * node is an element.
+    */
   val ELEMENT_NODE: Double = js.native
   val ENTITY_NODE: Double = js.native
   val ENTITY_REFERENCE_NODE: Double = js.native
   val NOTATION_NODE: Double = js.native
+  /**
+    * node is a ProcessingInstruction node.
+    */
   val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  /**
+    * node is a Text node.
+    */
   val TEXT_NODE: Double = js.native
   /**
     * Returns node's node document's document base URL.
@@ -53,33 +92,16 @@ trait Node extends EventTarget {
     */
   val nextSibling: ChildNode | Null = js.native
   /**
-    * Returns a string appropriate for the type of node, as
-    * follows:
-    * Element
-    * Its HTML-uppercased qualified name.
-    * Attr
-    * Its qualified name.
-    * Text
-    * "#text".
-    * CDATASection
-    * "#cdata-section".
-    * ProcessingInstruction
-    * Its target.
-    * Comment
-    * "#comment".
-    * Document
-    * "#document".
-    * DocumentType
-    * Its name.
-    * DocumentFragment
-    * "#document-fragment".
+    * Returns a string appropriate for the type of node.
     */
   val nodeName: java.lang.String = js.native
+  /**
+    * Returns the type of node.
+    */
   val nodeType: Double = js.native
   var nodeValue: java.lang.String | Null = js.native
   /**
-    * Returns the node document.
-    * Returns null for documents.
+    * Returns the node document. Returns null for documents.
     */
   val ownerDocument: Document | Null = js.native
   /**
@@ -101,6 +123,9 @@ trait Node extends EventTarget {
     */
   def cloneNode(): Node = js.native
   def cloneNode(deep: scala.Boolean): Node = js.native
+  /**
+    * Returns a bitmask indicating the position of other relative to node.
+    */
   def compareDocumentPosition(other: Node): Double = js.native
   def contains(): scala.Boolean = js.native
   /**
@@ -108,7 +133,7 @@ trait Node extends EventTarget {
     */
   def contains(other: Node): scala.Boolean = js.native
   /**
-    * Returns node's shadow-including root.
+    * Returns node's root.
     */
   def getRootNode(): Node = js.native
   def getRootNode(options: GetRootNodeOptions): Node = js.native
@@ -147,22 +172,61 @@ class NodeCls () extends Node
 @js.native
 object Node extends Instantiable0[Node] {
   val ATTRIBUTE_NODE: Double = js.native
+  /**
+    * node is a CDATASection node.
+    */
   val CDATA_SECTION_NODE: Double = js.native
+  /**
+    * node is a Comment node.
+    */
   val COMMENT_NODE: Double = js.native
+  /**
+    * node is a DocumentFragment node.
+    */
   val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  /**
+    * node is a document.
+    */
   val DOCUMENT_NODE: Double = js.native
+  /**
+    * Set when other is a descendant of node.
+    */
   val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  /**
+    * Set when other is an ancestor of node.
+    */
   val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  /**
+    * Set when node and other are not in the same tree.
+    */
   val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  /**
+    * Set when other is following node.
+    */
   val DOCUMENT_POSITION_FOLLOWING: Double = js.native
   val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  /**
+    * Set when other is preceding node.
+    */
   val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  /**
+    * node is a doctype.
+    */
   val DOCUMENT_TYPE_NODE: Double = js.native
+  /**
+    * node is an element.
+    */
   val ELEMENT_NODE: Double = js.native
   val ENTITY_NODE: Double = js.native
   val ENTITY_REFERENCE_NODE: Double = js.native
   val NOTATION_NODE: Double = js.native
+  /**
+    * node is a ProcessingInstruction node.
+    */
   val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  /**
+    * node is a Text node.
+    */
   val TEXT_NODE: Double = js.native
 }
 

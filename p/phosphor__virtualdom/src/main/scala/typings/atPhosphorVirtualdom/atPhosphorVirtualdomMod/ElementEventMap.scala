@@ -4,6 +4,7 @@ import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MediaStreamErrorEvent
@@ -72,7 +73,7 @@ trait ElementEventMap extends js.Object {
   var onpointerout: PointerEvent
   var onpointerover: PointerEvent
   var onpointerup: PointerEvent
-  var onprogress: ProgressEvent
+  var onprogress: ProgressEvent[EventTarget]
   var onratechange: Event
   var onreset: Event
   var onscroll: UIEvent
@@ -146,7 +147,7 @@ object ElementEventMap {
     onpointerout: PointerEvent,
     onpointerover: PointerEvent,
     onpointerup: PointerEvent,
-    onprogress: ProgressEvent,
+    onprogress: ProgressEvent[EventTarget],
     onratechange: Event,
     onreset: Event,
     onscroll: UIEvent,

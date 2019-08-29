@@ -28,14 +28,14 @@ trait Utils extends js.Object {
     * @param element an HTMLElement.
     * @param prop a property key.
     */
-  def css[K /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 394 */ js.Any */](element: HTMLElement, prop: K): /* import warning: ImportType.apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
+  def css[K /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 423 */ js.Any */](element: HTMLElement, prop: K): /* import warning: ImportType.apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
   /**
     * Set one CSS property.
     * @param element an HTMLElement.
     * @param prop a property key.
     * @param value a property value.
     */
-  def css[K /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 394 */ js.Any */](
+  def css[K /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 423 */ js.Any */](
     element: HTMLElement,
     prop: K,
     value: /* import warning: ImportType.apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any

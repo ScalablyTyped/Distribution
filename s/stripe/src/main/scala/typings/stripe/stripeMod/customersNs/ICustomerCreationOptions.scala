@@ -1,22 +1,32 @@
 package typings.stripe.stripeMod.customersNs
 
+import typings.stripe.Anon_Type
 import typings.stripe.stripeMod.IAddress
 import typings.stripe.stripeMod.IDataOptionsWithMetadata
 import typings.stripe.stripeMod.IOptionsMetadata
 import typings.stripe.stripeMod.IShippingInformation
 import typings.stripe.stripeMod.cardsNs.ICardSourceCreationOptionsExtended
+import typings.stripe.stripeStrings.exempt
+import typings.stripe.stripeStrings.none
 import typings.stripe.stripeStrings.now
+import typings.stripe.stripeStrings.reverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
   /**
-    * An integer amount in cents that is the starting account balance for your customer. A negative amount represents a credit that
-    * will be used before attempting any charges to the customer's card; a positive amount will be added to the next invoice.
+    * This field has been renamed to balance and will be removed in a future API version.
+    * @deprecated
     */
   var account_balance: js.UndefOr[Double] = js.undefined
   var address: js.UndefOr[IAddress] = js.undefined
+  /***
+    * An integer amount in cents that represents the customer’s current balance, which affect the
+    * customer’s future invoices. A negative amount represents a credit that decreases the amount
+    * due on an invoice; a positive amount increases the amount due on an invoice.
+    */
+  var balance: js.UndefOr[Double] = js.undefined
   /**
     * If you provide a coupon code, the customer will have a discount applied on all recurring charges. Charges you create through the
     * API will not have the discount.
@@ -33,9 +43,21 @@ trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
     */
   var email: js.UndefOr[String] = js.undefined
   /**
+    * The prefix for the customer used to generate unique invoice numbers. Must be 3–12 uppercase letters or numbers.
+    */
+  var invoice_prefix: js.UndefOr[String] = js.undefined
+  /**
+    * Default invoice settings for this customer.
+    */
+  var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
+  /**
     * The customer’s full name or business name. This can be unset by updating the value to null and then saving.
     */
   var name: js.UndefOr[String] = js.undefined
+  /**
+    * The ID of the PaymentMethod to attach to the customer.
+    */
+  var payment_method: js.UndefOr[String] = js.undefined
   /**
     * The customer’s phone number. This can be unset by updating the value to null and then saving.
     */
@@ -46,6 +68,10 @@ trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
     * valid card as well.
     */
   var plan: js.UndefOr[String] = js.undefined
+  /**
+    * Customer’s preferred languages, ordered by preference. This can be unset by updating the value to null and then saving.
+    */
+  var preferred_locales: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * The quantity you'd like to apply to the subscription you're creating (if you pass in a plan). For example, if your plan is
     * 10 cents/user/month, and your customer has 5 users, you could pass 5 as the quantity to have the customer charged 50 cents
@@ -58,6 +84,18 @@ trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
     * a dictionary containing a user’s credit card details.
     */
   var source: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.undefined
+  /**
+    * The customer’s tax exemption. One of none, exempt, or reverse.
+    */
+  var tax_exempt: js.UndefOr[none | exempt | reverse] = js.undefined
+  /**
+    * The customer’s tax IDs.
+    */
+  var tax_id_data: js.UndefOr[Anon_Type] = js.undefined
+  /**
+    * @deprecated
+    */
+  var tax_info: js.UndefOr[js.Any] = js.undefined
   /**
     * A positive decimal (with at most two decimal places) between 1 and 100.
     * This represents the percentage of the subscription invoice subtotal that
@@ -79,36 +117,52 @@ object ICustomerCreationOptions {
   def apply(
     account_balance: Int | Double = null,
     address: IAddress = null,
+    balance: Int | Double = null,
     coupon: String = null,
     description: String = null,
     email: String = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
+    invoice_prefix: String = null,
+    invoice_settings: ICustomerInvoiceSettings = null,
     metadata: IOptionsMetadata = null,
     name: String = null,
+    payment_method: String = null,
     phone: String = null,
     plan: String = null,
+    preferred_locales: js.Array[String] = null,
     quantity: Int | Double = null,
     shipping: IShippingInformation = null,
     source: String | ICardSourceCreationOptionsExtended = null,
+    tax_exempt: none | exempt | reverse = null,
+    tax_id_data: Anon_Type = null,
+    tax_info: js.Any = null,
     tax_percent: Int | Double = null,
     trial_end: Double | now = null
   ): ICustomerCreationOptions = {
     val __obj = js.Dynamic.literal()
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address)
+    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (description != null) __obj.updateDynamic("description")(description)
     if (email != null) __obj.updateDynamic("email")(email)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
+    if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix)
+    if (invoice_settings != null) __obj.updateDynamic("invoice_settings")(invoice_settings)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
     if (phone != null) __obj.updateDynamic("phone")(phone)
     if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (preferred_locales != null) __obj.updateDynamic("preferred_locales")(preferred_locales)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tax_exempt != null) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
+    if (tax_id_data != null) __obj.updateDynamic("tax_id_data")(tax_id_data)
+    if (tax_info != null) __obj.updateDynamic("tax_info")(tax_info)
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerCreationOptions]

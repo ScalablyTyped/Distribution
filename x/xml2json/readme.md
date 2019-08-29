@@ -1,7 +1,7 @@
 
 # Scala.js typings for xml2json
 
-Typings are for version 0.10
+Typings are for version 0.11
 
 ## Library description:
 Converts xml to json and vice-versa, using node-expat.

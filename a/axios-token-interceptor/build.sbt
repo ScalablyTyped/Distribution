@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "axios-token-interceptor"
-version := "0.1-dt-20181017Z-00d1ba"
+version := "0.1-dt-20181017Z-0ee9a6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axios" % "0.19.0-ae10c0",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "axios" % "0.19.0-d3ab32",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -2,7 +2,9 @@ package typings.vegaDashTypings.typesSpecTransformMod
 
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecUtilMod.Vector2
+import typings.vegaDashTypings.vegaDashTypingsStrings.independent
 import typings.vegaDashTypings.vegaDashTypingsStrings.kde
+import typings.vegaDashTypings.vegaDashTypingsStrings.shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +19,7 @@ trait KDETransform extends _Transforms {
   var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
   var maxsteps: js.UndefOr[Double | SignalRef] = js.undefined
   var minsteps: js.UndefOr[Double | SignalRef] = js.undefined
+  var resolve: js.UndefOr[shared | independent] = js.undefined
   var steps: js.UndefOr[Double | SignalRef] = js.undefined
   var `type`: kde
 }
@@ -34,6 +37,7 @@ object KDETransform {
     groupby: (js.Array[String | TransformField]) | SignalRef = null,
     maxsteps: Double | SignalRef = null,
     minsteps: Double | SignalRef = null,
+    resolve: shared | independent = null,
     steps: Double | SignalRef = null
   ): KDETransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
@@ -46,6 +50,7 @@ object KDETransform {
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
     if (maxsteps != null) __obj.updateDynamic("maxsteps")(maxsteps.asInstanceOf[js.Any])
     if (minsteps != null) __obj.updateDynamic("minsteps")(minsteps.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[KDETransform]
   }

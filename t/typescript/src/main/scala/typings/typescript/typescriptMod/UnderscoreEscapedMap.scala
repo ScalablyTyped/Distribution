@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Map where keys are `__String`s. */
 trait UnderscoreEscapedMap[T] extends ReadonlyUnderscoreEscapedMap[T] {
   def clear(): Unit
   def delete(key: __String): Boolean

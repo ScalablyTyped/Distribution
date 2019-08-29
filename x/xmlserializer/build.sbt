@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "xmlserializer"
-version := "0.6-dt-20190125Z-ffe98a"
+version := "0.6-dt-20190125Z-9511be"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "parse5" % "5.0-dt-20190719Z-34564d",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "parse5" % "5.0-dt-20190719Z-a8917e",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,9 +10,9 @@ import typings.std.CanvasRenderingContext2DSettings
 import typings.std.EventTarget
 import typings.std.ImageBitmap
 import typings.std.ImageBitmapRenderingContext
+import typings.std.WebGL2RenderingContext
 import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
-import typings.webgl2.WebGL2RenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

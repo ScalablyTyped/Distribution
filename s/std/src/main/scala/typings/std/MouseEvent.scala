@@ -15,10 +15,6 @@ trait MouseEvent extends UIEvent {
   val clientX: Double = js.native
   val clientY: Double = js.native
   val ctrlKey: scala.Boolean = js.native
-  /** @deprecated */
-  val fromElement: Element = js.native
-  val layerX: Double = js.native
-  val layerY: Double = js.native
   val metaKey: scala.Boolean = js.native
   val movementX: Double = js.native
   val movementY: Double = js.native
@@ -26,14 +22,10 @@ trait MouseEvent extends UIEvent {
   val offsetY: Double = js.native
   val pageX: Double = js.native
   val pageY: Double = js.native
-  val relatedTarget: EventTarget = js.native
+  val relatedTarget: EventTarget | Null = js.native
   val screenX: Double = js.native
   val screenY: Double = js.native
   val shiftKey: scala.Boolean = js.native
-  /** @deprecated */
-  val toElement: Element = js.native
-  /** @deprecated */
-  val which: Double = js.native
   val x: Double = js.native
   val y: Double = js.native
   def getModifierState(keyArg: java.lang.String): scala.Boolean = js.native
@@ -75,13 +67,13 @@ trait MouseEvent extends UIEvent {
 @JSGlobal("MouseEvent")
 @js.native
 class MouseEventCls protected () extends MouseEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: MouseEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: MouseEventInit) = this()
 }
 
 @JSGlobal("MouseEvent")
 @js.native
 object MouseEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, MouseEvent]
-     with Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]
+  extends Instantiable1[/* type */ java.lang.String, MouseEvent]
+     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]
 

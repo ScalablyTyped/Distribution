@@ -1,7 +1,7 @@
 package typings.graphql.executionExecuteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.errorMod.GraphQLError
+import typings.graphql.errorGraphQLErrorMod.GraphQLError
 import typings.graphql.languageAstMod.FragmentDefinitionNode
 import typings.graphql.languageAstMod.OperationDefinitionNode
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver

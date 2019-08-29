@@ -13,7 +13,7 @@ class PendingActions () extends Plugin[Unit] {
   var first: Null | (Observable with Anon_Message) = js.native
   val hasAny: Boolean = js.native
   @JSName(scala.scalajs.js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[Observable with Anon_Message]] = js.native
+  var iterator: js.Function0[Iterator[Observable with Anon_Message, _, js.UndefOr[scala.Nothing]]] = js.native
   def add(message: String): Observable with Anon_Message = js.native
   def remove(action: Observable with Anon_Message): Unit = js.native
 }

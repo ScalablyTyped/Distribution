@@ -11,14 +11,14 @@ trait XMLHttpRequestEventMap extends XMLHttpRequestEventTargetEventMap {
 object XMLHttpRequestEventMap {
   @scala.inline
   def apply(
-    abort: ProgressEvent,
-    error: ProgressEvent,
-    load: ProgressEvent,
-    loadend: ProgressEvent,
-    loadstart: ProgressEvent,
-    progress: ProgressEvent,
+    abort: ProgressEvent[XMLHttpRequestEventTarget],
+    error: ProgressEvent[XMLHttpRequestEventTarget],
+    load: ProgressEvent[XMLHttpRequestEventTarget],
+    loadend: ProgressEvent[XMLHttpRequestEventTarget],
+    loadstart: ProgressEvent[XMLHttpRequestEventTarget],
+    progress: ProgressEvent[XMLHttpRequestEventTarget],
     readystatechange: Event,
-    timeout: ProgressEvent
+    timeout: ProgressEvent[XMLHttpRequestEventTarget]
   ): XMLHttpRequestEventMap = {
     val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress, readystatechange = readystatechange, timeout = timeout)
   

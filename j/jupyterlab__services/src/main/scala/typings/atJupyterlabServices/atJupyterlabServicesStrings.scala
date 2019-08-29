@@ -4,6 +4,7 @@ import typings.atJupyterlabServices.libContentsMod.ContentsNs.ContentType
 import typings.atJupyterlabServices.libContentsMod.ContentsNs.FileFormat
 import typings.atJupyterlabServices.libKernelKernelMod.KernelNs.Status
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.Channel
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ControlMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.IOPubMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.ShellMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessageNs.StdinMessageType
@@ -71,6 +72,15 @@ object atJupyterlabServicesStrings {
   sealed trait dead extends Status
   
   @js.native
+  sealed trait debug_event extends IOPubMessageType
+  
+  @js.native
+  sealed trait debug_reply extends ControlMessageType
+  
+  @js.native
+  sealed trait debug_request extends ControlMessageType
+  
+  @js.native
   sealed trait delete extends js.Object
   
   @js.native
@@ -84,6 +94,9 @@ object atJupyterlabServicesStrings {
   
   @js.native
   sealed trait error extends IOPubMessageType
+  
+  @js.native
+  sealed trait event extends js.Object
   
   @js.native
   sealed trait execute_input extends IOPubMessageType
@@ -182,6 +195,12 @@ object atJupyterlabServicesStrings {
   sealed trait rename extends js.Object
   
   @js.native
+  sealed trait request extends js.Object
+  
+  @js.native
+  sealed trait response extends js.Object
+  
+  @js.native
   sealed trait restarting extends Status
   
   @js.native
@@ -278,6 +297,12 @@ object atJupyterlabServicesStrings {
   @scala.inline
   def dead: dead = "dead".asInstanceOf[dead]
   @scala.inline
+  def debug_event: debug_event = "debug_event".asInstanceOf[debug_event]
+  @scala.inline
+  def debug_reply: debug_reply = "debug_reply".asInstanceOf[debug_reply]
+  @scala.inline
+  def debug_request: debug_request = "debug_request".asInstanceOf[debug_request]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
@@ -287,6 +312,8 @@ object atJupyterlabServicesStrings {
   def display_data: display_data = "display_data".asInstanceOf[display_data]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def event: event = "event".asInstanceOf[event]
   @scala.inline
   def execute_input: execute_input = "execute_input".asInstanceOf[execute_input]
   @scala.inline
@@ -351,6 +378,10 @@ object atJupyterlabServicesStrings {
   def recv: recv = "recv".asInstanceOf[recv]
   @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
+  @scala.inline
+  def request: request = "request".asInstanceOf[request]
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
   @scala.inline
   def restarting: restarting = "restarting".asInstanceOf[restarting]
   @scala.inline

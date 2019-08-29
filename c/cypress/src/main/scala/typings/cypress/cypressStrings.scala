@@ -593,6 +593,12 @@ object cypressStrings {
   sealed trait focus extends js.Object
   
   @js.native
+  sealed trait focusin extends js.Object
+  
+  @js.native
+  sealed trait focusout extends js.Object
+  
+  @js.native
   sealed trait font extends js.Object
   
   @js.native
@@ -2137,6 +2143,10 @@ object cypressStrings {
   def fixturesFolder: fixturesFolder = "fixturesFolder".asInstanceOf[fixturesFolder]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
+  @scala.inline
+  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  @scala.inline
+  def focusout: focusout = "focusout".asInstanceOf[focusout]
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   @scala.inline

@@ -10,26 +10,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIEvent extends Event {
   val detail: Double = js.native
-  val view: Window = js.native
-  def initUIEvent(
-    typeArg: java.lang.String,
-    canBubbleArg: scala.Boolean,
-    cancelableArg: scala.Boolean,
-    viewArg: Window,
-    detailArg: Double
-  ): Unit = js.native
+  val view: Window | Null = js.native
+  /** @deprecated */
+  val which: Double = js.native
 }
 
 @JSGlobal("UIEvent")
 @js.native
 class UIEventCls protected () extends UIEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: UIEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: UIEventInit) = this()
 }
 
 @JSGlobal("UIEvent")
 @js.native
 object UIEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, UIEvent]
-     with Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ UIEventInit, UIEvent]
+  extends Instantiable1[/* type */ java.lang.String, UIEvent]
+     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ UIEventInit, UIEvent]
 

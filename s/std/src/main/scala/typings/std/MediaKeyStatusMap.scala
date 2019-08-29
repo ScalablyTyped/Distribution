@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface of the EncryptedMediaExtensions API is a read-only map of media key statuses by key IDs. */
+/** This EncryptedMediaExtensions API interface is a read-only map of media key statuses by key IDs. */
 @js.native
 trait MediaKeyStatusMap extends js.Object {
   @JSName(scala.scalajs.js.Symbol.iterator)

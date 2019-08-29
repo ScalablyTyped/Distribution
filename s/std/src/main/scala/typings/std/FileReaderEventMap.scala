@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileReaderEventMap extends js.Object {
-  var abort: ProgressEvent
-  var error: ProgressEvent
-  var load: ProgressEvent
-  var loadend: ProgressEvent
-  var loadstart: ProgressEvent
-  var progress: ProgressEvent
+  var abort: ProgressEvent[FileReader]
+  var error: ProgressEvent[FileReader]
+  var load: ProgressEvent[FileReader]
+  var loadend: ProgressEvent[FileReader]
+  var loadstart: ProgressEvent[FileReader]
+  var progress: ProgressEvent[FileReader]
 }
 
 object FileReaderEventMap {
   @scala.inline
   def apply(
-    abort: ProgressEvent,
-    error: ProgressEvent,
-    load: ProgressEvent,
-    loadend: ProgressEvent,
-    loadstart: ProgressEvent,
-    progress: ProgressEvent
+    abort: ProgressEvent[FileReader],
+    error: ProgressEvent[FileReader],
+    load: ProgressEvent[FileReader],
+    loadend: ProgressEvent[FileReader],
+    loadstart: ProgressEvent[FileReader],
+    progress: ProgressEvent[FileReader]
   ): FileReaderEventMap = {
     val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress)
   

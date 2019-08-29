@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "passport-jwt"
-version := "3.0-dt-20190322Z-1e2963"
+version := "3.0-dt-20190322Z-b915b0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-234f40",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-8f9eda",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-79dfe3",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-3d1b1f",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190807Z-7c8366",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-c877f7",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-2dc4df",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20190822Z-77c7ed",
-  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20190322Z-d9521c",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b87c0a",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6da2a4",
-  "org.scalablytyped" %%% "std" % "3.5-cd493c")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-105136",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-517334",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-676404",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-f1a335",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190807Z-2e6f4c",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20190822Z-8af408",
+  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20190322Z-5c17a3",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-db4fa8",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-2a850b",
+  "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

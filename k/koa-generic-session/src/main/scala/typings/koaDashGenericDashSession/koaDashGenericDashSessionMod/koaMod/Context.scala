@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Context extends js.Object {
   var session: Session | Null
   var sessionSave: Boolean | Null
-  def regenerateSession(): Generator
+  def regenerateSession(): Generator[_, _, _]
 }
 
 object Context {
   @scala.inline
   def apply(
-    regenerateSession: () => Generator,
+    regenerateSession: () => Generator[_, _, _],
     session: Session = null,
     sessionSave: js.UndefOr[Boolean] = js.undefined
   ): Context = {

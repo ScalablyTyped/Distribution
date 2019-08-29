@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface of the Payment Request API is used to store shipping or payment address information. */
+/** This Payment Request API interface is used to store shipping or payment address information. */
 trait PaymentAddress extends js.Object {
   val addressLine: js.Array[java.lang.String]
   val city: java.lang.String

@@ -17,8 +17,7 @@ trait DOMStringList
     */
   val length: Double = js.native
   /**
-    * Returns true if strings contains string, and false
-    * otherwise.
+    * Returns true if strings contains string, and false otherwise.
     */
   def contains(string: java.lang.String): scala.Boolean = js.native
   /**

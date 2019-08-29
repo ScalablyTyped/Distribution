@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait BodyOptions extends js.Object {
   var allowSleep: js.UndefOr[Boolean] = js.undefined
   var angle: js.UndefOr[Double] = js.undefined
+  var angularDamping: js.UndefOr[Double] = js.undefined
   var angularForce: js.UndefOr[Double] = js.undefined
   var angularVelocity: js.UndefOr[Double] = js.undefined
   var ccdIterations: js.UndefOr[Double] = js.undefined
@@ -30,6 +31,7 @@ object BodyOptions {
   def apply(
     allowSleep: js.UndefOr[Boolean] = js.undefined,
     angle: Int | Double = null,
+    angularDamping: Int | Double = null,
     angularForce: Int | Double = null,
     angularVelocity: Int | Double = null,
     ccdIterations: Int | Double = null,
@@ -50,6 +52,7 @@ object BodyOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (angularDamping != null) __obj.updateDynamic("angularDamping")(angularDamping.asInstanceOf[js.Any])
     if (angularForce != null) __obj.updateDynamic("angularForce")(angularForce.asInstanceOf[js.Any])
     if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
     if (ccdIterations != null) __obj.updateDynamic("ccdIterations")(ccdIterations.asInstanceOf[js.Any])

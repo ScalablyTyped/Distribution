@@ -3,9 +3,9 @@ package typings.tsDashNode.tsDashNodeMod
 import typings.tsDashNode.Fn_BasePath
 import typings.tsDashNode.Fn_CancellationToken
 import typings.tsDashNode.Fn_ConfigName
+import typings.tsDashNode.Fn_Diag
 import typings.tsDashNode.Fn_DisplayParts
 import typings.tsDashNode.Fn_DocumentRegistry
-import typings.tsDashNode.Fn_MessageText
 import typings.tsDashNode.TypeofScriptSnapshot
 import typings.typescript.Anon_Config
 import typings.typescript.typescriptMod.CancellationToken
@@ -44,7 +44,7 @@ trait TSCommon extends js.Object {
   @JSName("findConfigFile")
   var findConfigFile_Original: Fn_ConfigName = js.native
   @JSName("flattenDiagnosticMessageText")
-  var flattenDiagnosticMessageText_Original: Fn_MessageText = js.native
+  var flattenDiagnosticMessageText_Original: Fn_Diag = js.native
   @JSName("formatDiagnosticsWithColorAndContext")
   var formatDiagnosticsWithColorAndContext_Original: js.Function2[/* diagnostics */ js.Array[Diagnostic], /* host */ FormatDiagnosticsHost, String] = js.native
   @JSName("formatDiagnostics")
@@ -72,9 +72,12 @@ trait TSCommon extends js.Object {
   def displayPartsToString(displayParts: js.Array[SymbolDisplayPart]): String = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean]): js.UndefOr[String] = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean], configName: String): js.UndefOr[String] = js.native
-  def flattenDiagnosticMessageText(messageText: js.UndefOr[scala.Nothing], newLine: String): String = js.native
-  def flattenDiagnosticMessageText(messageText: String, newLine: String): String = js.native
-  def flattenDiagnosticMessageText(messageText: DiagnosticMessageChain, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: String, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: String, newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = js.native
   def formatDiagnostics(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
   def formatDiagnosticsWithColorAndContext(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
   def getDefaultLibFilePath(options: CompilerOptions): String = js.native

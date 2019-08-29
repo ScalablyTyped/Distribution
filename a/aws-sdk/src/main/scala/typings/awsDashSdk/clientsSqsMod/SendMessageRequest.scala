@@ -26,6 +26,10 @@ trait SendMessageRequest extends js.Object {
     */
   var MessageGroupId: js.UndefOr[String] = js.undefined
   /**
+    * The message system attribute to send. Each message system attribute consists of a Name, Type, and Value.    Currently, the only supported message system attribute is AWSTraceHeader. Its type must be String and its value must be a correctly formatted AWS X-Ray trace string.   The size of a message system attribute doesn't count towards the total size of a message.   
+    */
+  var MessageSystemAttributes: js.UndefOr[MessageBodySystemAttributeMap] = js.undefined
+  /**
     * The URL of the Amazon SQS queue to which a message is sent. Queue URLs and names are case-sensitive.
     */
   var QueueUrl: String
@@ -39,13 +43,15 @@ object SendMessageRequest {
     DelaySeconds: js.UndefOr[Integer] = js.undefined,
     MessageAttributes: MessageBodyAttributeMap = null,
     MessageDeduplicationId: String = null,
-    MessageGroupId: String = null
+    MessageGroupId: String = null,
+    MessageSystemAttributes: MessageBodySystemAttributeMap = null
   ): SendMessageRequest = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody, QueueUrl = QueueUrl)
     if (!js.isUndefined(DelaySeconds)) __obj.updateDynamic("DelaySeconds")(DelaySeconds)
     if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes)
     if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId)
     if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId)
+    if (MessageSystemAttributes != null) __obj.updateDynamic("MessageSystemAttributes")(MessageSystemAttributes)
     __obj.asInstanceOf[SendMessageRequest]
   }
 }

@@ -5,17 +5,26 @@ import typings.stripe.stripeMod.IDataOptionsWithMetadata
 import typings.stripe.stripeMod.IOptionsMetadata
 import typings.stripe.stripeMod.IShippingInformation
 import typings.stripe.stripeMod.cardsNs.ICardSourceCreationOptionsExtended
+import typings.stripe.stripeStrings.exempt
+import typings.stripe.stripeStrings.none
+import typings.stripe.stripeStrings.reverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICustomerUpdateOptions extends IDataOptionsWithMetadata {
   /**
-    * An integer amount in cents that is the starting account balance for your customer. A negative amount represents a credit that
-    * will be used before attempting any charges to the customer's card; a positive amount will be added to the next invoice.
+    * This field has been renamed to balance and will be removed in a future API version.
+    * @deprecated
     */
   var account_balance: js.UndefOr[Double] = js.undefined
   var address: js.UndefOr[IAddress] = js.undefined
+  /**
+    * An integer amount in cents that represents the customer’s current balance, which affect the
+    * customer’s future invoices. A negative amount represents a credit that decreases the amount
+    * due on an invoice; a positive amount increases the amount due on an invoice.
+    */
+  var balance: js.UndefOr[Double] = js.undefined
   /**
     * If you provide a coupon code, the customer will have a discount applied on all recurring charges. Charges you create through the
     * API will not have the discount.
@@ -51,6 +60,11 @@ trait ICustomerUpdateOptions extends IDataOptionsWithMetadata {
     * The customer’s phone number. This can be unset by updating the value to null and then saving.
     */
   var phone: js.UndefOr[String] = js.undefined
+  /**
+    * Customer’s preferred languages, ordered by preference. This can be unset by updating
+    * the value to null and then saving.
+    */
+  var preferred_locales: js.UndefOr[js.Array[String] | Null] = js.undefined
   var shipping: js.UndefOr[IShippingInformation] = js.undefined
   /**
     * The source can either be a token, like the ones returned by our Stripe.js, or
@@ -62,6 +76,14 @@ trait ICustomerUpdateOptions extends IDataOptionsWithMetadata {
     * customer, Stripe will automatically validate the card.
     */
   var source: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.undefined
+  /**
+    * The customer’s tax exemption. One of none, exempt, or reverse.
+    */
+  var tax_exempt: js.UndefOr[none | exempt | reverse] = js.undefined
+  /**
+    * @deprecated
+    */
+  var tax_info: js.UndefOr[js.Any] = js.undefined
 }
 
 object ICustomerUpdateOptions {
@@ -69,6 +91,7 @@ object ICustomerUpdateOptions {
   def apply(
     account_balance: Int | Double = null,
     address: IAddress = null,
+    balance: Int | Double = null,
     coupon: String = null,
     default_source: String = null,
     description: String = null,
@@ -80,12 +103,16 @@ object ICustomerUpdateOptions {
     metadata: IOptionsMetadata = null,
     name: String = null,
     phone: String = null,
+    preferred_locales: js.Array[String] = null,
     shipping: IShippingInformation = null,
-    source: String | ICardSourceCreationOptionsExtended = null
+    source: String | ICardSourceCreationOptionsExtended = null,
+    tax_exempt: none | exempt | reverse = null,
+    tax_info: js.Any = null
   ): ICustomerUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address)
+    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (default_source != null) __obj.updateDynamic("default_source")(default_source)
     if (description != null) __obj.updateDynamic("description")(description)
@@ -97,8 +124,11 @@ object ICustomerUpdateOptions {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (name != null) __obj.updateDynamic("name")(name)
     if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (preferred_locales != null) __obj.updateDynamic("preferred_locales")(preferred_locales)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tax_exempt != null) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
+    if (tax_info != null) __obj.updateDynamic("tax_info")(tax_info)
     __obj.asInstanceOf[ICustomerUpdateOptions]
   }
 }

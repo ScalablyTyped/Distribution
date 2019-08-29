@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/cli-framework" : "2.1.5"
+      "@ionic/cli-framework" : "2.1.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/cli-framework" : "2.1.5"
+      "@ionic/cli-framework" : "2.1.6"
     }
   ],
   "compile-devDependencies" : [

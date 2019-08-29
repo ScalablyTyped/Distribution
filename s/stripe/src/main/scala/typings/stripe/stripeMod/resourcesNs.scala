@@ -5,7 +5,7 @@ import typings.stripe.Anon_Cancellationreason
 import typings.stripe.Anon_CancellationreasonSetupIntentCancelationReason
 import typings.stripe.Anon_CardICardSourceCreationOptionsExtended
 import typings.stripe.Anon_Metadata
-import typings.stripe.Anon_Type
+import typings.stripe.Anon_TypeT
 import typings.stripe.stripeMod.accountsNs.IAccount
 import typings.stripe.stripeMod.accountsNs.IAccountCreationOptions
 import typings.stripe.stripeMod.accountsNs.IAccountUpdateOptions
@@ -42,6 +42,8 @@ import typings.stripe.stripeMod.creditNotesNs.ICreditNote
 import typings.stripe.stripeMod.creditNotesNs.ICreditNoteCreationOptions
 import typings.stripe.stripeMod.creditNotesNs.ICreditNoteListOptions
 import typings.stripe.stripeMod.creditNotesNs.ICreditNoteUpdateOptions
+import typings.stripe.stripeMod.customerTaxIdsNs.ITaxId
+import typings.stripe.stripeMod.customerTaxIdsNs.ITaxIdCreationOptions
 import typings.stripe.stripeMod.customersNs.IBankAccountSourceListOptions
 import typings.stripe.stripeMod.customersNs.ICardSourceListOptions
 import typings.stripe.stripeMod.customersNs.ICustomer
@@ -1408,6 +1410,15 @@ object resourcesNs extends js.Object {
       response: IResponseFn[ISubscription]
     ): js.Promise[ISubscription] = js.native
     def createSubscription(customerId: String, data: ISubscriptionCustCreationOptions, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+    def createTaxId(customerId: String, data: ITaxIdCreationOptions): js.Promise[ITaxId] = js.native
+    def createTaxId(customerId: String, data: ITaxIdCreationOptions, options: HeaderOptions): js.Promise[ITaxId] = js.native
+    def createTaxId(
+      customerId: String,
+      data: ITaxIdCreationOptions,
+      options: HeaderOptions,
+      response: IResponseFn[ISubscription]
+    ): js.Promise[ITaxId] = js.native
+    def createTaxId(customerId: String, data: ITaxIdCreationOptions, response: IResponseFn[ISubscription]): js.Promise[ITaxId] = js.native
     def del(id: String): js.Promise[IDeleteConfirmation] = js.native
     /**
       * Permanently deletes a customer. It cannot be undone. Also immediately cancels any active subscriptions on the customer.
@@ -1499,6 +1510,15 @@ object resourcesNs extends js.Object {
       response: IResponseFn[IDeleteConfirmation]
     ): js.Promise[IDeleteConfirmation] = js.native
     def deleteSubscriptionDiscount(customerId: String, subscriptionId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+    def deleteTaxId(customerId: String, taxId: String): js.Promise[IDeleteConfirmation] = js.native
+    def deleteTaxId(customerId: String, taxId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
+    def deleteTaxId(
+      customerId: String,
+      taxId: String,
+      options: HeaderOptions,
+      response: IResponseFn[IDeleteConfirmation]
+    ): js.Promise[IDeleteConfirmation] = js.native
+    def deleteTaxId(customerId: String, taxId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
     def list(): IListPromise[ICustomer] = js.native
     def list(data: ICustomerListOptions): IListPromise[ICustomer] = js.native
     /**
@@ -1641,6 +1661,23 @@ object resourcesNs extends js.Object {
     def listSubscriptions(customerId: String, options: HeaderOptions): IListPromise[ISubscription] = js.native
     def listSubscriptions(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
     def listSubscriptions(customerId: String, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
+    def listTaxIds(customerId: String): IListPromise[ISubscription] = js.native
+    def listTaxIds(customerId: String, data: IListOptions): IListPromise[typings.stripe.stripeMod.sourcesNs.ISource] = js.native
+    def listTaxIds(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.sourcesNs.ISource] = js.native
+    def listTaxIds(
+      customerId: String,
+      data: IListOptions,
+      options: HeaderOptions,
+      response: IResponseFn[IList[typings.stripe.stripeMod.sourcesNs.ISource]]
+    ): IListPromise[typings.stripe.stripeMod.sourcesNs.ISource] = js.native
+    def listTaxIds(
+      customerId: String,
+      data: IListOptions,
+      response: IResponseFn[IList[typings.stripe.stripeMod.sourcesNs.ISource]]
+    ): IListPromise[typings.stripe.stripeMod.sourcesNs.ISource] = js.native
+    def listTaxIds(customerId: String, options: HeaderOptions): IListPromise[ISubscription] = js.native
+    def listTaxIds(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
+    def listTaxIds(customerId: String, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
     def retrieve(id: String): js.Promise[ICustomer] = js.native
     def retrieve(id: String, data: IDataOptions): js.Promise[ICustomer] = js.native
     /**
@@ -1707,6 +1744,10 @@ object resourcesNs extends js.Object {
       response: IResponseFn[ISubscription]
     ): js.Promise[ISubscription] = js.native
     def retrieveSubscription(customerId: String, subscriptionId: String, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+    def retrieveTaxId(customerId: String, taxId: String): js.Promise[IStripeSource] = js.native
+    def retrieveTaxId(customerId: String, taxId: String, options: HeaderOptions): js.Promise[IStripeSource] = js.native
+    def retrieveTaxId(customerId: String, taxId: String, options: HeaderOptions, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
+    def retrieveTaxId(customerId: String, taxId: String, response: IResponseFn[IStripeSource]): js.Promise[IStripeSource] = js.native
     def update(id: String, data: ICustomerUpdateOptions): js.Promise[ICustomer] = js.native
     /**
       * Updates the specified customer by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -2453,14 +2494,14 @@ object resourcesNs extends js.Object {
     def detach(paymentMethodId: String, options: HeaderOptions): js.Promise[IPaymentMethod] = js.native
     def detach(paymentMethodId: String, options: HeaderOptions, response: IResponseFn[IPaymentMethod]): js.Promise[IPaymentMethod] = js.native
     def detach(paymentMethodId: String, response: IResponseFn[IPaymentMethod]): js.Promise[IPaymentMethod] = js.native
-    def list[T /* <: IPaymentMethodType */](data: IPaymentMethodListOptions[T]): IListPromise[Extract[IPaymentMethod, Anon_Type[T]]] = js.native
-    def list[T /* <: IPaymentMethodType */](data: IPaymentMethodListOptions[T], options: HeaderOptions): IListPromise[Extract[IPaymentMethod, Anon_Type[T]]] = js.native
+    def list[T /* <: IPaymentMethodType */](data: IPaymentMethodListOptions[T]): IListPromise[Extract[IPaymentMethod, Anon_TypeT[T]]] = js.native
+    def list[T /* <: IPaymentMethodType */](data: IPaymentMethodListOptions[T], options: HeaderOptions): IListPromise[Extract[IPaymentMethod, Anon_TypeT[T]]] = js.native
     def list[T /* <: IPaymentMethodType */](
       data: IPaymentMethodListOptions[T],
       options: HeaderOptions,
       response: IResponseFn[IList[IPaymentMethod]]
-    ): IListPromise[Extract[IPaymentMethod, Anon_Type[T]]] = js.native
-    def list[T /* <: IPaymentMethodType */](data: IPaymentMethodListOptions[T], response: IResponseFn[IList[IPaymentMethod]]): IListPromise[Extract[IPaymentMethod, Anon_Type[T]]] = js.native
+    ): IListPromise[Extract[IPaymentMethod, Anon_TypeT[T]]] = js.native
+    def list[T /* <: IPaymentMethodType */](data: IPaymentMethodListOptions[T], response: IResponseFn[IList[IPaymentMethod]]): IListPromise[Extract[IPaymentMethod, Anon_TypeT[T]]] = js.native
     def retrieve(paymentMethodId: String): js.Promise[IPaymentMethod] = js.native
     def retrieve(paymentMethodId: String, options: HeaderOptions): js.Promise[IPaymentMethod] = js.native
     def retrieve(paymentMethodId: String, options: HeaderOptions, response: IResponseFn[IPaymentMethod]): js.Promise[IPaymentMethod] = js.native

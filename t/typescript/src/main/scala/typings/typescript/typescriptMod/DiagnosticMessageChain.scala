@@ -4,17 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * A linked list of formatted diagnostic messages to be used as part of a multiline message.
-  * It is built from the bottom up, leaving the head to be the "main" diagnostic.
-  * While it seems that DiagnosticMessageChain is structurally similar to DiagnosticMessage,
-  * the difference is that messages are all preformatted in DMC.
-  */
 trait DiagnosticMessageChain extends js.Object {
   var category: DiagnosticCategory
   var code: Double
   var messageText: String
-  var next: js.UndefOr[DiagnosticMessageChain] = js.undefined
+  var next: js.UndefOr[js.Array[DiagnosticMessageChain]] = js.undefined
 }
 
 object DiagnosticMessageChain {
@@ -23,7 +17,7 @@ object DiagnosticMessageChain {
     category: DiagnosticCategory,
     code: Double,
     messageText: String,
-    next: DiagnosticMessageChain = null
+    next: js.Array[DiagnosticMessageChain] = null
   ): DiagnosticMessageChain = {
     val __obj = js.Dynamic.literal(category = category, code = code, messageText = messageText)
     if (next != null) __obj.updateDynamic("next")(next)

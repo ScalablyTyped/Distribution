@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface of the WebVR API represents any VR device supported by this API . It includes generic information such as device IDs and descriptions, as well as methods for starting to present a VR scene, retrieving eye parameters and display capabilities, and other important functionality. */
+/** This WebVR API interface represents any VR device supported by this API. It includes generic information such as device IDs and descriptions, as well as methods for starting to present a VR scene, retrieving eye parameters and display capabilities, and other important functionality. */
 @js.native
 trait VRDisplay extends EventTarget {
   val capabilities: VRDisplayCapabilities = js.native
@@ -25,6 +25,7 @@ trait VRDisplay extends EventTarget {
   def getPose(): VRPose = js.native
   def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   def requestPresent(layers: js.Array[VRLayer]): js.Promise[Unit] = js.native
+  def requestPresent(layers: Iterable[VRLayer]): js.Promise[Unit] = js.native
   def resetPose(): Unit = js.native
   def submitFrame(): Unit = js.native
   def submitFrame(pose: VRPose): Unit = js.native

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsSqsMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.AWSTraceHeader
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Uint8Array
@@ -26,6 +27,7 @@ package object clientsSqsMod {
   type MessageAttributeName = java.lang.String
   type MessageAttributeNameList = js.Array[MessageAttributeName]
   type MessageBodyAttributeMap = StringDictionary[MessageAttributeValue]
+  type MessageBodySystemAttributeMap = StringDictionary[MessageSystemAttributeValue]
   type MessageList = js.Array[Message]
   type MessageSystemAttributeMap = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 
@@ -36,9 +38,11 @@ package object clientsSqsMod {
     - typings.awsDashSdk.awsDashSdkStrings.SequenceNumber
     - typings.awsDashSdk.awsDashSdkStrings.MessageDeduplicationId
     - typings.awsDashSdk.awsDashSdkStrings.MessageGroupId
+    - typings.awsDashSdk.awsDashSdkStrings.AWSTraceHeader
     - java.lang.String
   */
   type MessageSystemAttributeName = _MessageSystemAttributeName | java.lang.String
+  type MessageSystemAttributeNameForSends = AWSTraceHeader | java.lang.String
   type QueueAttributeMap = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.All

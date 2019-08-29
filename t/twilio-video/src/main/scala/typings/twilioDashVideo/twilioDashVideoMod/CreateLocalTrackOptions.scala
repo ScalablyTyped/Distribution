@@ -37,7 +37,6 @@ object CreateLocalTrackOptions {
     resizeMode: ConstrainDOMString = null,
     sampleRate: ConstrainULong = null,
     sampleSize: ConstrainULong = null,
-    volume: ConstrainDouble = null,
     width: ConstrainULong = null,
     workaroundWebKitBug180748: js.UndefOr[Boolean] = js.undefined
   ): CreateLocalTrackOptions = {
@@ -59,7 +58,6 @@ object CreateLocalTrackOptions {
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (!js.isUndefined(workaroundWebKitBug180748)) __obj.updateDynamic("workaroundWebKitBug180748")(workaroundWebKitBug180748)
     __obj.asInstanceOf[CreateLocalTrackOptions]

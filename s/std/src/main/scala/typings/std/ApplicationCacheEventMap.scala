@@ -11,7 +11,7 @@ trait ApplicationCacheEventMap extends js.Object {
   var error: Event
   var noupdate: Event
   var obsolete: Event
-  var progress: ProgressEvent
+  var progress: ProgressEvent[ApplicationCache]
   var updateready: Event
 }
 
@@ -24,7 +24,7 @@ object ApplicationCacheEventMap {
     error: Event,
     noupdate: Event,
     obsolete: Event,
-    progress: ProgressEvent,
+    progress: ProgressEvent[ApplicationCache],
     updateready: Event
   ): ApplicationCacheEventMap = {
     val __obj = js.Dynamic.literal(cached = cached, checking = checking, downloading = downloading, error = error, noupdate = noupdate, obsolete = obsolete, progress = progress, updateready = updateready)

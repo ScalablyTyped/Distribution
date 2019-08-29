@@ -14,6 +14,9 @@ trait XMLDocument extends Document
 class XMLDocumentCls () extends XMLDocument {
   /* CompleteClass */
   override val activeElement: Element | Null = js.native
+  /**
+    * Returns document's fullscreen element.
+    */
   /* CompleteClass */
   override val fullscreenElement: Element | Null = js.native
   /* CompleteClass */

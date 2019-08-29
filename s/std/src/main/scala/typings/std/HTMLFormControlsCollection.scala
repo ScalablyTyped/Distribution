@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLFormControlsCollection extends HTMLCollectionBase {
   /**
-    * element = collection[name]
+    * Returns the item with ID or name name from the collection.
+    * 
+    * If there are multiple matching items, then a RadioNodeList object containing all those elements is returned.
     */
   def namedItem(name: java.lang.String): RadioNodeList | Element | Null = js.native
 }

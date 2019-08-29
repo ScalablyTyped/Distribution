@@ -24,7 +24,9 @@ trait WindowScrollerProps
   /** Callback to be invoked on-scroll: ({ scrollLeft, scrollTop }) */
   var onScroll: js.UndefOr[js.Function1[/* params */ Anon_ScrollLeft, Unit]] = js.undefined
   /** Element to attach scroll event listeners. Defaults to window. */
-  var scrollElement: js.UndefOr[Window | Element] = js.undefined
+  var scrollElement: js.UndefOr[
+    (Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any)) | Element
+  ] = js.undefined
   /**
     * Wait this amount of time after the last scroll event before resetting child `pointer-events`.
     */
@@ -55,7 +57,7 @@ object WindowScrollerProps {
   /* key */ StringDictionary[js.Any] = null,
     onResize: /* params */ Anon_Height => Unit = null,
     onScroll: /* params */ Anon_ScrollLeft => Unit = null,
-    scrollElement: Window | Element = null,
+    scrollElement: (Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any)) | Element = null,
     scrollingResetTimeInterval: Int | Double = null,
     serverHeight: Int | Double = null,
     serverWidth: Int | Double = null

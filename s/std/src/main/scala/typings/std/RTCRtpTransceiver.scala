@@ -5,37 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RTCRtpTransceiver extends js.Object {
-  val currentDirection: RTCRtpTransceiverDirection | Null
-  var direction: RTCRtpTransceiverDirection
-  val mid: java.lang.String | Null
-  val receiver: RTCRtpReceiver
-  val sender: RTCRtpSender
-  val stopped: scala.Boolean
-  def setCodecPreferences(codecs: js.Array[RTCRtpCodecCapability]): Unit
-  def stop(): Unit
+  val currentDirection: RTCRtpTransceiverDirection | Null = js.native
+  var direction: RTCRtpTransceiverDirection = js.native
+  val mid: java.lang.String | Null = js.native
+  val receiver: RTCRtpReceiver = js.native
+  val sender: RTCRtpSender = js.native
+  val stopped: scala.Boolean = js.native
+  def setCodecPreferences(codecs: js.Array[RTCRtpCodecCapability]): Unit = js.native
+  def setCodecPreferences(codecs: Iterable[RTCRtpCodecCapability]): Unit = js.native
+  def stop(): Unit = js.native
 }
 
 @JSGlobal("RTCRtpTransceiver")
 @js.native
-class RTCRtpTransceiverCls () extends RTCRtpTransceiver {
-  /* CompleteClass */
-  override val currentDirection: RTCRtpTransceiverDirection | Null = js.native
-  /* CompleteClass */
-  override var direction: RTCRtpTransceiverDirection = js.native
-  /* CompleteClass */
-  override val mid: java.lang.String | Null = js.native
-  /* CompleteClass */
-  override val receiver: RTCRtpReceiver = js.native
-  /* CompleteClass */
-  override val sender: RTCRtpSender = js.native
-  /* CompleteClass */
-  override val stopped: scala.Boolean = js.native
-  /* CompleteClass */
-  override def setCodecPreferences(codecs: js.Array[RTCRtpCodecCapability]): Unit = js.native
-  /* CompleteClass */
-  override def stop(): Unit = js.native
-}
+class RTCRtpTransceiverCls () extends RTCRtpTransceiver
 
 @JSGlobal("RTCRtpTransceiver")
 @js.native

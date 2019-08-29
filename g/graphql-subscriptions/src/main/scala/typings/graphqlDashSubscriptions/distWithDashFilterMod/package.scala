@@ -19,6 +19,6 @@ package object distWithDashFilterMod {
     /* args */ js.UndefOr[js.Any], 
     /* context */ js.UndefOr[js.Any], 
     /* info */ js.UndefOr[js.Any], 
-    AsyncIterator[js.Any]
+    AsyncIterator[js.Any, js.Any, js.UndefOr[scala.Nothing]]
   ]
 }

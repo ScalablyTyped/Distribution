@@ -1061,6 +1061,12 @@ object atOracleOraclejetStrings {
   sealed trait focusRendererChanged extends js.Object
   
   @js.native
+  sealed trait focusin extends js.Object
+  
+  @js.native
+  sealed trait focusout extends js.Object
+  
+  @js.native
   sealed trait `for` extends js.Object
   
   @js.native
@@ -4400,6 +4406,10 @@ object atOracleOraclejetStrings {
   def focusRenderer: focusRenderer = "focusRenderer".asInstanceOf[focusRenderer]
   @scala.inline
   def focusRendererChanged: focusRendererChanged = "focusRendererChanged".asInstanceOf[focusRendererChanged]
+  @scala.inline
+  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  @scala.inline
+  def focusout: focusout = "focusout".asInstanceOf[focusout]
   @scala.inline
   def `for`: `for` = "for".asInstanceOf[`for`]
   @scala.inline

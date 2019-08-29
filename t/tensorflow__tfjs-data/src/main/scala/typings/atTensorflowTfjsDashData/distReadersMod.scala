@@ -21,8 +21,12 @@ import scala.scalajs.js.annotation._
 object distReadersMod extends js.Object {
   def csv(source: RequestInfo): CSVDataset = js.native
   def csv(source: RequestInfo, csvConfig: CSVConfig): CSVDataset = js.native
-  def func[T /* <: TensorContainer */](f: js.Function0[IteratorResult[T] | js.Promise[IteratorResult[T]]]): Dataset[T] = js.native
-  def generator[T /* <: TensorContainer */](generator: js.Function0[Iterator[T] | js.Promise[Iterator[T]]]): Dataset[T] = js.native
+  def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): Dataset[T] = js.native
+  def generator[T /* <: TensorContainer */](
+    generator: js.Function0[
+      (Iterator[T, _, js.UndefOr[scala.Nothing]]) | (js.Promise[Iterator[T, _, js.UndefOr[scala.Nothing]]])
+    ]
+  ): Dataset[T] = js.native
   def microphone(): js.Promise[MicrophoneIterator] = js.native
   def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = js.native
   def webcam(): js.Promise[WebcamIterator] = js.native
