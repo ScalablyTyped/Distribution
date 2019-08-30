@@ -52,12 +52,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomActionTypeOutput, Unit]
   ): Request[CreateCustomActionTypeOutput, AWSError] = js.native
   /**
-    * Creates a pipeline.
+    * Creates a pipeline.  In the pipeline structure, you must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
     */
   def createPipeline(): Request[CreatePipelineOutput, AWSError] = js.native
   def createPipeline(callback: js.Function2[/* err */ AWSError, /* data */ CreatePipelineOutput, Unit]): Request[CreatePipelineOutput, AWSError] = js.native
   /**
-    * Creates a pipeline.
+    * Creates a pipeline.  In the pipeline structure, you must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
     */
   def createPipeline(params: CreatePipelineInput): Request[CreatePipelineOutput, AWSError] = js.native
   def createPipeline(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-pino-logger"
-version := "4.0-dt-20190826Z-231cce"
+version := "4.0-dt-20190826Z-292c7c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-f1a335",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190816Z-dac316",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190830Z-23d5dc",
   "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-299f76",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-db4fa8",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-2a850b",

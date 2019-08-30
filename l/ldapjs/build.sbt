@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ldapjs"
-version := "0.0-unknown-dt-20190506Z-6826ec"
+version := "0.0-unknown-dt-20190830Z-58c146"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

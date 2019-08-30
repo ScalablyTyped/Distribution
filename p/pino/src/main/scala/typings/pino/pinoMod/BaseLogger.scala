@@ -111,16 +111,6 @@ trait BaseLogger
     */
   @JSName("warn")
   var warn_Original: LogFn = js.native
-  /**
-    * Defines a new level on the logger instance. Returns `true` on success and `false` if there was a conflict (level name or number already exists).
-    * When using this method, the current level of the logger instance does not change. You must adjust the level with the `level` property after
-    * adding your custom level.
-    *
-    * @param name: defines the method name of the new level
-    * @param lvl: value for the level, e.g. `35` is between `info` and `warn`
-    * @returns whether level was correctly created or not
-    */
-  def addLevel(name: String, lvl: Double): Boolean = js.native
   @JSName("addListener")
   def addListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
   /**

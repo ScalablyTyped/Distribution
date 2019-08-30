@@ -46,6 +46,10 @@ trait CreateReplicationGroupMessage extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
+    * The ID of the KMS key used to encrypt the disk on the cluster.
+    */
+  var KmsKeyId: js.UndefOr[String] = js.undefined
+  /**
     * A list of node group (shard) configuration options. Each node group (shard) configuration has the following members: PrimaryAvailabilityZone, ReplicaAvailabilityZones, ReplicaCount, and Slots. If you're creating a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group, you can use this parameter to individually configure each node group (shard), or you can omit this parameter. However, when seeding a Redis (cluster mode enabled) cluster from a S3 rdb file, you must configure each node group (shard) using this parameter because you must specify the slots for each node group.
     */
   var NodeGroupConfiguration: js.UndefOr[NodeGroupConfigurationList] = js.undefined
@@ -86,7 +90,7 @@ trait CreateReplicationGroupMessage extends js.Object {
     */
   var ReplicationGroupDescription: String
   /**
-    * The replication group identifier. This parameter is stored as a lowercase string. Constraints:   A name must contain from 1 to 20 alphanumeric characters or hyphens.   The first character must be a letter.   A name cannot end with a hyphen or contain two consecutive hyphens.  
+    * The replication group identifier. This parameter is stored as a lowercase string. Constraints:   A name must contain from 1 to 40 alphanumeric characters or hyphens.   The first character must be a letter.   A name cannot end with a hyphen or contain two consecutive hyphens.  
     */
   var ReplicationGroupId: String
   /**
@@ -114,7 +118,7 @@ trait CreateReplicationGroupMessage extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster. This parameter is valid only if the Engine parameter is redis, the EngineVersion parameter is 3.2.6 or 4.x, and the cluster is being created in an Amazon VPC. If you enable in-transit encryption, you must also specify a value for CacheSubnetGroup.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false   For HIPAA compliance, you must specify TransitEncryptionEnabled as true, an AuthToken, and a CacheSubnetGroup. 
+    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster. This parameter is valid only if the Engine parameter is redis, the EngineVersion parameter is 3.2.6, 4.x or later, and the cluster is being created in an Amazon VPC. If you enable in-transit encryption, you must also specify a value for CacheSubnetGroup.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false   For HIPAA compliance, you must specify TransitEncryptionEnabled as true, an AuthToken, and a CacheSubnetGroup. 
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
 }
@@ -134,6 +138,7 @@ object CreateReplicationGroupMessage {
     CacheSubnetGroupName: String = null,
     Engine: String = null,
     EngineVersion: String = null,
+    KmsKeyId: String = null,
     NodeGroupConfiguration: NodeGroupConfigurationList = null,
     NotificationTopicArn: String = null,
     NumCacheClusters: js.UndefOr[IntegerOptional] = js.undefined,
@@ -162,6 +167,7 @@ object CreateReplicationGroupMessage {
     if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName)
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
+    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (NodeGroupConfiguration != null) __obj.updateDynamic("NodeGroupConfiguration")(NodeGroupConfiguration)
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn)
     if (!js.isUndefined(NumCacheClusters)) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters)

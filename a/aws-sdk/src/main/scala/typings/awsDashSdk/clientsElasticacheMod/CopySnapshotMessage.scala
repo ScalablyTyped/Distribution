@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait CopySnapshotMessage extends js.Object {
   /**
+    * The ID of the KMS key used to encrypt the target snapshot.
+    */
+  var KmsKeyId: js.UndefOr[String] = js.undefined
+  /**
     * The name of an existing snapshot from which to make a copy.
     */
   var SourceSnapshotName: String
@@ -21,8 +25,14 @@ trait CopySnapshotMessage extends js.Object {
 
 object CopySnapshotMessage {
   @scala.inline
-  def apply(SourceSnapshotName: String, TargetSnapshotName: String, TargetBucket: String = null): CopySnapshotMessage = {
+  def apply(
+    SourceSnapshotName: String,
+    TargetSnapshotName: String,
+    KmsKeyId: String = null,
+    TargetBucket: String = null
+  ): CopySnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceSnapshotName = SourceSnapshotName, TargetSnapshotName = TargetSnapshotName)
+    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (TargetBucket != null) __obj.updateDynamic("TargetBucket")(TargetBucket)
     __obj.asInstanceOf[CopySnapshotMessage]
   }

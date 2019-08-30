@@ -74,6 +74,7 @@ package object clientsLambdaMod {
   type MasterRegion = java.lang.String
   type MaxLayerListItems = Double
   type MaxListItems = Double
+  type MaximumBatchingWindowInSeconds = Double
   type MemorySize = Double
   type NameSpacedFunctionArn = java.lang.String
   type NamespacedFunctionName = java.lang.String

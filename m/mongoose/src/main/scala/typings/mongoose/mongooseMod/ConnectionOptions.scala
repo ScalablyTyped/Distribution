@@ -35,6 +35,10 @@ import scala.scalajs.js.annotation._
   *
   */
 trait ConnectionOptions extends MongoClientOptions {
+  /** Before Mongoose builds indexes, it calls Model.createCollection() 
+    * to create the underlying collection in MongoDB if autoCreate 
+    * is set to true.(default: false) */
+  var autoCreate: js.UndefOr[Boolean] = js.undefined
   var autoIndex: js.UndefOr[Boolean] = js.undefined
   /** mongoose-specific options */
   /** See https://mongoosejs.com/docs/guide.html#bufferCommands */
@@ -74,6 +78,7 @@ object ConnectionOptions {
     auth: Anon_Password = null,
     authMechanism: DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String = null,
     authSource: String = null,
+    autoCreate: js.UndefOr[Boolean] = js.undefined,
     autoIndex: js.UndefOr[Boolean] = js.undefined,
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     bufferCommands: js.UndefOr[Boolean] = js.undefined,
@@ -153,6 +158,7 @@ object ConnectionOptions {
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (authMechanism != null) __obj.updateDynamic("authMechanism")(authMechanism.asInstanceOf[js.Any])
     if (authSource != null) __obj.updateDynamic("authSource")(authSource)
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate)
     if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex)
     if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
     if (!js.isUndefined(bufferCommands)) __obj.updateDynamic("bufferCommands")(bufferCommands)

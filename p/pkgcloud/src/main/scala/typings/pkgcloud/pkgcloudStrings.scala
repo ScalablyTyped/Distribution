@@ -1,11 +1,30 @@
 package typings.pkgcloud
 
 import typings.pkgcloud.pkgcloudMod.Providers
+import typings.pkgcloud.pkgcloudMod.RackspaceRegions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object pkgcloudStrings {
+  @js.native
+  sealed trait DFW extends RackspaceRegions
+  
+  @js.native
+  sealed trait HKG extends RackspaceRegions
+  
+  @js.native
+  sealed trait IAD extends RackspaceRegions
+  
+  @js.native
+  sealed trait LON extends RackspaceRegions
+  
+  @js.native
+  sealed trait ORD extends RackspaceRegions
+  
+  @js.native
+  sealed trait SYD extends RackspaceRegions
+  
   @js.native
   sealed trait amazon extends Providers
   
@@ -48,6 +67,18 @@ object pkgcloudStrings {
   @js.native
   sealed trait telefonic extends Providers
   
+  @scala.inline
+  def DFW: DFW = "DFW".asInstanceOf[DFW]
+  @scala.inline
+  def HKG: HKG = "HKG".asInstanceOf[HKG]
+  @scala.inline
+  def IAD: IAD = "IAD".asInstanceOf[IAD]
+  @scala.inline
+  def LON: LON = "LON".asInstanceOf[LON]
+  @scala.inline
+  def ORD: ORD = "ORD".asInstanceOf[ORD]
+  @scala.inline
+  def SYD: SYD = "SYD".asInstanceOf[SYD]
   @scala.inline
   def amazon: amazon = "amazon".asInstanceOf[amazon]
   @scala.inline

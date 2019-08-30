@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait PipelineDeclaration extends js.Object {
   /**
-    * Represents information about the Amazon S3 bucket where artifacts are stored for the pipeline. 
+    * Represents information about the Amazon S3 bucket where artifacts are stored for the pipeline.  You must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
     */
   var artifactStore: js.UndefOr[ArtifactStore] = js.undefined
   /**
-    * A mapping of artifactStore objects and their corresponding regions. There must be an artifact store for the pipeline region and for each cross-region action within the pipeline. You can only use either artifactStore or artifactStores, not both. If you create a cross-region action in your pipeline, you must use artifactStores.
+    * A mapping of artifactStore objects and their corresponding regions. There must be an artifact store for the pipeline region and for each cross-region action within the pipeline.  You must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
     */
   var artifactStores: js.UndefOr[ArtifactStoreMap] = js.undefined
   /**

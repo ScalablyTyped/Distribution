@@ -17,6 +17,7 @@ trait UpdateEventSourceMappingRequest extends js.Object {
     * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
     */
   var FunctionName: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.FunctionName] = js.undefined
+  var MaximumBatchingWindowInSeconds: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.MaximumBatchingWindowInSeconds] = js.undefined
   /**
     * The identifier of the event source mapping.
     */
@@ -29,12 +30,14 @@ object UpdateEventSourceMappingRequest {
     UUID: String,
     BatchSize: js.UndefOr[BatchSize] = js.undefined,
     Enabled: js.UndefOr[Enabled] = js.undefined,
-    FunctionName: FunctionName = null
+    FunctionName: FunctionName = null,
+    MaximumBatchingWindowInSeconds: js.UndefOr[MaximumBatchingWindowInSeconds] = js.undefined
   ): UpdateEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID)
     if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName)
+    if (!js.isUndefined(MaximumBatchingWindowInSeconds)) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds)
     __obj.asInstanceOf[UpdateEventSourceMappingRequest]
   }
 }

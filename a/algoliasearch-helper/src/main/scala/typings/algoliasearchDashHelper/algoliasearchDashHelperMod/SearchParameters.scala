@@ -69,6 +69,8 @@ class SearchParameters () extends QueryParameters {
   var queryType_SearchParameters: js.UndefOr[prefixAll | prefixLast | prefixNone] = js.native
   @JSName("removeWordsIfNoResults")
   var removeWordsIfNoResults_SearchParameters: js.UndefOr[none | lastWords | firstWords | allOptional] = js.native
+  @JSName("typoTolerance")
+  var typoTolerance_SearchParameters: js.UndefOr[Boolean] = js.native
   /* Add a disjunctive facet to the disjunctiveFacets attribute of the helper configuration, if it isn't already present. */
   def addDisjunctiveFacet(facet: String): SearchParameters = js.native
   /* Adds a refinement on a disjunctive facet. */

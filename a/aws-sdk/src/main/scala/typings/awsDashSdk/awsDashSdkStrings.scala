@@ -6720,6 +6720,10 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsLightsailMod._ResourceType
   
   @js.native
+  sealed trait CloudWatchEvent
+    extends typings.awsDashSdk.clientsCodepipelineMod._TriggerType
+  
+  @js.native
   sealed trait ClusterLogging extends _UpdateParamType
   
   @js.native
@@ -6925,6 +6929,10 @@ object awsDashSdkStrings {
   @js.native
   sealed trait CreateLoadBalancerTlsCertificate
     extends typings.awsDashSdk.clientsLightsailMod._OperationType
+  
+  @js.native
+  sealed trait CreatePipeline
+    extends typings.awsDashSdk.clientsCodepipelineMod._TriggerType
   
   @js.native
   sealed trait CreateRelationalDatabase
@@ -16543,6 +16551,10 @@ object awsDashSdkStrings {
   sealed trait PolicyVersionsInUseQuota extends _summaryKeyType
   
   @js.native
+  sealed trait PollForSourceChanges
+    extends typings.awsDashSdk.clientsCodepipelineMod._TriggerType
+  
+  @js.native
   sealed trait PostLaunchFileFailure extends _DeploymentJobErrorCode
   
   @js.native
@@ -16622,6 +16634,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait Public extends _PortAccessType
+  
+  @js.native
+  sealed trait PutActionRevision
+    extends typings.awsDashSdk.clientsCodepipelineMod._TriggerType
   
   @js.native
   sealed trait PutInstancePublicPorts
@@ -19652,6 +19668,10 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsSwfMod._EventType
   
   @js.native
+  sealed trait StartPipelineExecution
+    extends typings.awsDashSdk.clientsCodepipelineMod._TriggerType
+  
+  @js.native
   sealed trait StartRelationalDatabase
     extends typings.awsDashSdk.clientsLightsailMod._OperationType
   
@@ -22048,6 +22068,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait Warning extends _EnvironmentHealthStatus
+  
+  @js.native
+  sealed trait Webhook
+    extends typings.awsDashSdk.clientsCodepipelineMod._TriggerType
   
   @js.native
   sealed trait Weekly extends _InventoryFrequency
@@ -30437,6 +30461,8 @@ object awsDashSdkStrings {
   @scala.inline
   def CloudFormationStackRecord: CloudFormationStackRecord = "CloudFormationStackRecord".asInstanceOf[CloudFormationStackRecord]
   @scala.inline
+  def CloudWatchEvent: CloudWatchEvent = "CloudWatchEvent".asInstanceOf[CloudWatchEvent]
+  @scala.inline
   def ClusterLogging: ClusterLogging = "ClusterLogging".asInstanceOf[ClusterLogging]
   @scala.inline
   def CodeCommit: CodeCommit = "CodeCommit".asInstanceOf[CodeCommit]
@@ -30536,6 +30562,8 @@ object awsDashSdkStrings {
   def CreateLoadBalancer: CreateLoadBalancer = "CreateLoadBalancer".asInstanceOf[CreateLoadBalancer]
   @scala.inline
   def CreateLoadBalancerTlsCertificate: CreateLoadBalancerTlsCertificate = "CreateLoadBalancerTlsCertificate".asInstanceOf[CreateLoadBalancerTlsCertificate]
+  @scala.inline
+  def CreatePipeline: CreatePipeline = "CreatePipeline".asInstanceOf[CreatePipeline]
   @scala.inline
   def CreateRelationalDatabase: CreateRelationalDatabase = "CreateRelationalDatabase".asInstanceOf[CreateRelationalDatabase]
   @scala.inline
@@ -34959,6 +34987,8 @@ object awsDashSdkStrings {
   @scala.inline
   def PolicyVersionsInUseQuota: PolicyVersionsInUseQuota = "PolicyVersionsInUseQuota".asInstanceOf[PolicyVersionsInUseQuota]
   @scala.inline
+  def PollForSourceChanges: PollForSourceChanges = "PollForSourceChanges".asInstanceOf[PollForSourceChanges]
+  @scala.inline
   def PostLaunchFileFailure: PostLaunchFileFailure = "PostLaunchFileFailure".asInstanceOf[PostLaunchFileFailure]
   @scala.inline
   def PreInService: PreInService = "PreInService".asInstanceOf[PreInService]
@@ -35004,6 +35034,8 @@ object awsDashSdkStrings {
   def Properties: Properties = "Properties".asInstanceOf[Properties]
   @scala.inline
   def Public: Public = "Public".asInstanceOf[Public]
+  @scala.inline
+  def PutActionRevision: PutActionRevision = "PutActionRevision".asInstanceOf[PutActionRevision]
   @scala.inline
   def PutInstancePublicPorts: PutInstancePublicPorts = "PutInstancePublicPorts".asInstanceOf[PutInstancePublicPorts]
   @scala.inline
@@ -36525,6 +36557,8 @@ object awsDashSdkStrings {
   @scala.inline
   def StartLambdaFunctionFailed: StartLambdaFunctionFailed = "StartLambdaFunctionFailed".asInstanceOf[StartLambdaFunctionFailed]
   @scala.inline
+  def StartPipelineExecution: StartPipelineExecution = "StartPipelineExecution".asInstanceOf[StartPipelineExecution]
+  @scala.inline
   def StartRelationalDatabase: StartRelationalDatabase = "StartRelationalDatabase".asInstanceOf[StartRelationalDatabase]
   @scala.inline
   def StartStep: StartStep = "StartStep".asInstanceOf[StartStep]
@@ -37682,6 +37716,8 @@ object awsDashSdkStrings {
   def WaitingForSpotInstanceRequestId: WaitingForSpotInstanceRequestId = "WaitingForSpotInstanceRequestId".asInstanceOf[WaitingForSpotInstanceRequestId]
   @scala.inline
   def Warning: Warning = "Warning".asInstanceOf[Warning]
+  @scala.inline
+  def Webhook: Webhook = "Webhook".asInstanceOf[Webhook]
   @scala.inline
   def Weekly: Weekly = "Weekly".asInstanceOf[Weekly]
   @scala.inline

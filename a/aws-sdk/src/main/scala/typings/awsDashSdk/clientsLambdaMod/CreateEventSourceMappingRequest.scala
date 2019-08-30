@@ -21,6 +21,7 @@ trait CreateEventSourceMappingRequest extends js.Object {
     * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
     */
   var FunctionName: typings.awsDashSdk.clientsLambdaMod.FunctionName
+  var MaximumBatchingWindowInSeconds: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.MaximumBatchingWindowInSeconds] = js.undefined
   /**
     * The position in a stream from which to start reading. Required for Amazon Kinesis and Amazon DynamoDB Streams sources. AT_TIMESTAMP is only supported for Amazon Kinesis streams.
     */
@@ -38,12 +39,14 @@ object CreateEventSourceMappingRequest {
     FunctionName: FunctionName,
     BatchSize: js.UndefOr[BatchSize] = js.undefined,
     Enabled: js.UndefOr[Enabled] = js.undefined,
+    MaximumBatchingWindowInSeconds: js.UndefOr[MaximumBatchingWindowInSeconds] = js.undefined,
     StartingPosition: EventSourcePosition = null,
     StartingPositionTimestamp: _Date = null
   ): CreateEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(EventSourceArn = EventSourceArn, FunctionName = FunctionName)
     if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    if (!js.isUndefined(MaximumBatchingWindowInSeconds)) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds)
     if (StartingPosition != null) __obj.updateDynamic("StartingPosition")(StartingPosition.asInstanceOf[js.Any])
     if (StartingPositionTimestamp != null) __obj.updateDynamic("StartingPositionTimestamp")(StartingPositionTimestamp)
     __obj.asInstanceOf[CreateEventSourceMappingRequest]

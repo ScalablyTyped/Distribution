@@ -8,6 +8,6 @@ package object pkgcloudMod {
   import typings.std.Partial
 
   type ProviderOptions = BaseProviderOptions with (Partial[
-    AmazonProviderOptions | AzureProviderOptions | GoogleProviderOptions | OpenstackProviderOptions
+    AmazonProviderOptions | AzureProviderOptions | GoogleProviderOptions | OpenstackProviderOptions | RackspaceProviderOptions
   ])
 }

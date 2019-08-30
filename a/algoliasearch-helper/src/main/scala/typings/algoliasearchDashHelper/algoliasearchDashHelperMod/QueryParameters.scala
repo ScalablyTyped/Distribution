@@ -9,12 +9,14 @@ import typings.algoliasearch.algoliasearchStrings.count
 import typings.algoliasearch.algoliasearchStrings.firstWords
 import typings.algoliasearch.algoliasearchStrings.ignorePlurals
 import typings.algoliasearch.algoliasearchStrings.lastWords
+import typings.algoliasearch.algoliasearchStrings.min
 import typings.algoliasearch.algoliasearchStrings.multiWordsSynonym
 import typings.algoliasearch.algoliasearchStrings.none
 import typings.algoliasearch.algoliasearchStrings.prefixAll
 import typings.algoliasearch.algoliasearchStrings.prefixLast
 import typings.algoliasearch.algoliasearchStrings.prefixNone
 import typings.algoliasearch.algoliasearchStrings.singleWordSynonym
+import typings.algoliasearch.algoliasearchStrings.strict
 import typings.algoliasearch.algoliasearchStrings.word
 import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.FacetList
 import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.OperatorList
@@ -200,7 +202,7 @@ object QueryParameters {
     synonyms: js.UndefOr[Boolean] = js.undefined,
     tagFilters: js.Array[String] = null,
     tagRefinements: js.Array[String] = null,
-    typoTolerance: js.UndefOr[Boolean] = js.undefined,
+    typoTolerance: Boolean | min | strict = null,
     userData: String | js.Object = null
   ): QueryParameters = {
     val __obj = js.Dynamic.literal()
@@ -269,7 +271,7 @@ object QueryParameters {
     if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms)
     if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters)
     if (tagRefinements != null) __obj.updateDynamic("tagRefinements")(tagRefinements)
-    if (!js.isUndefined(typoTolerance)) __obj.updateDynamic("typoTolerance")(typoTolerance)
+    if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameters]
   }

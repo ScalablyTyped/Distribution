@@ -17,10 +17,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Color extends js.Object {
+  def alpha(): Double = js.native
   /**
     * Get and set the color opacity.
     */
-  def alpha(): Color = js.native
   def alpha(a: Double): Color = js.native
   def brighten(): Color = js.native
   def brighten(f: Double): Color = js.native

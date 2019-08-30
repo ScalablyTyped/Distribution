@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pino-multi-stream"
-version := "3.1-dt-20190816Z-a6b57a"
+version := "3.1-dt-20190816Z-8f83e2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190816Z-dac316",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190830Z-23d5dc",
   "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-299f76",
   "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-4179f6",
   "org.scalablytyped" %%% "std" % "3.6-c16502")

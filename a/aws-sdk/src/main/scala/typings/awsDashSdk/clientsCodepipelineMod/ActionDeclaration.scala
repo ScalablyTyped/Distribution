@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait ActionDeclaration extends js.Object {
   /**
-    * The configuration information for the action type.
+    * Specifies the action type and the provider of the action.
     */
   var actionTypeId: ActionTypeId
   /**
-    * The action declaration's configuration.
+    * The action's configuration. These are key-value pairs that specify input values for an action. For more information, see Action Structure Requirements in CodePipeline. For the list of configuration properties for the AWS CloudFormation action type in CodePipeline, see Configuration Properties Reference in the AWS CloudFormation User Guide. For template snippets with examples, see Using Parameter Override Functions with CodePipeline Pipelines in the AWS CloudFormation User Guide. The values can be represented in either JSON or YAML format. For example, the JSON configuration item format is as follows:   JSON:   "Configuration" : { Key : Value }, 
     */
   var configuration: js.UndefOr[ActionConfigurationMap] = js.undefined
   /**

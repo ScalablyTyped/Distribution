@@ -18,7 +18,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Options for pino-http
+  *
+  * See https://github.com/pinojs/pino-http#pinohttpopts-stream
+  */
 trait Options extends LoggerOptions {
+  var autoLogging: js.UndefOr[Boolean] = js.undefined
   var customLogLevel: js.UndefOr[js.Function2[/* res */ ServerResponse, /* error */ Error, Level]] = js.undefined
   var genReqId: js.UndefOr[GenReqId] = js.undefined
   var logger: js.UndefOr[Logger] = js.undefined
@@ -29,6 +35,7 @@ trait Options extends LoggerOptions {
 object Options {
   @scala.inline
   def apply(
+    autoLogging: js.UndefOr[Boolean] = js.undefined,
     base: StringDictionary[js.Any] = null,
     browser: Anon_AsObject = null,
     changeLevelName: String = null,
@@ -53,6 +60,7 @@ object Options {
     useOnlyCustomLevels: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoLogging)) __obj.updateDynamic("autoLogging")(autoLogging)
     if (base != null) __obj.updateDynamic("base")(base)
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName)

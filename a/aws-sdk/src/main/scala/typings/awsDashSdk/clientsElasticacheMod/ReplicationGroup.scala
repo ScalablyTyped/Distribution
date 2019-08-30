@@ -34,6 +34,10 @@ trait ReplicationGroup extends js.Object {
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
+    * The ID of the KMS key used to encrypt the disk in the cluster.
+    */
+  var KmsKeyId: js.UndefOr[String] = js.undefined
+  /**
     * The names of all the cache clusters that are part of this replication group.
     */
   var MemberClusters: js.UndefOr[ClusterIdList] = js.undefined
@@ -81,6 +85,7 @@ object ReplicationGroup {
     ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     ConfigurationEndpoint: Endpoint = null,
     Description: String = null,
+    KmsKeyId: String = null,
     MemberClusters: ClusterIdList = null,
     NodeGroups: NodeGroupList = null,
     PendingModifiedValues: ReplicationGroupPendingModifiedValues = null,
@@ -99,6 +104,7 @@ object ReplicationGroup {
     if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled)
     if (ConfigurationEndpoint != null) __obj.updateDynamic("ConfigurationEndpoint")(ConfigurationEndpoint)
     if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (MemberClusters != null) __obj.updateDynamic("MemberClusters")(MemberClusters)
     if (NodeGroups != null) __obj.updateDynamic("NodeGroups")(NodeGroups)
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues)

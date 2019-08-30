@@ -449,12 +449,12 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ IncreaseReplicaCountResult, Unit]
   ): Request[IncreaseReplicaCountResult, AWSError] = js.native
   /**
-    * Lists all available node types that you can scale your Redis cluster's or replication group's current node type up to. When you use the ModifyCacheCluster or ModifyReplicationGroup operations to scale up your cluster or replication group, the value of the CacheNodeType parameter must be one of the node types returned by this operation.
+    * Lists all available node types that you can scale your Redis cluster's or replication group's current node type. When you use the ModifyCacheCluster or ModifyReplicationGroup operations to scale your cluster or replication group, the value of the CacheNodeType parameter must be one of the node types returned by this operation.
     */
   def listAllowedNodeTypeModifications(): Request[AllowedNodeTypeModificationsMessage, AWSError] = js.native
   def listAllowedNodeTypeModifications(callback: js.Function2[/* err */ AWSError, /* data */ AllowedNodeTypeModificationsMessage, Unit]): Request[AllowedNodeTypeModificationsMessage, AWSError] = js.native
   /**
-    * Lists all available node types that you can scale your Redis cluster's or replication group's current node type up to. When you use the ModifyCacheCluster or ModifyReplicationGroup operations to scale up your cluster or replication group, the value of the CacheNodeType parameter must be one of the node types returned by this operation.
+    * Lists all available node types that you can scale your Redis cluster's or replication group's current node type. When you use the ModifyCacheCluster or ModifyReplicationGroup operations to scale your cluster or replication group, the value of the CacheNodeType parameter must be one of the node types returned by this operation.
     */
   def listAllowedNodeTypeModifications(params: ListAllowedNodeTypeModificationsMessage): Request[AllowedNodeTypeModificationsMessage, AWSError] = js.native
   def listAllowedNodeTypeModifications(

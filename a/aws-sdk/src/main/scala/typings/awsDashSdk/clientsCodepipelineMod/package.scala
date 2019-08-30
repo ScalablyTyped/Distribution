@@ -186,6 +186,17 @@ package object clientsCodepipelineMod {
   type ThirdPartyJobList = js.Array[ThirdPartyJob]
   type Time = Date
   type Timestamp = Date
+  type TriggerDetail = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CreatePipeline
+    - typings.awsDashSdk.awsDashSdkStrings.StartPipelineExecution
+    - typings.awsDashSdk.awsDashSdkStrings.PollForSourceChanges
+    - typings.awsDashSdk.awsDashSdkStrings.Webhook
+    - typings.awsDashSdk.awsDashSdkStrings.CloudWatchEvent
+    - typings.awsDashSdk.awsDashSdkStrings.PutActionRevision
+    - java.lang.String
+  */
+  type TriggerType = _TriggerType | String
   type Url = String
   type UrlTemplate = String
   type Version = String

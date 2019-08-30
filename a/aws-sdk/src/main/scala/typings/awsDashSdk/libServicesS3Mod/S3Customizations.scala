@@ -33,6 +33,10 @@ class S3Customizations () extends Service {
     */
   def getSignedUrl(operation: String, params: js.Any, callback: js.Function2[/* err */ Error, /* url */ String, Unit]): Unit = js.native
   /**
+    * Returns a 'thenable' promise that will be resolved with a pre-signed URL for a given operation name.
+    */
+  def getSignedUrlPromise(operation: String, params: js.Any): js.Promise[String] = js.native
+  /**
     * Uploads an arbitrarily sized buffer, blob, or stream, using intelligent
     * concurrent handling of parts if the payload is large enough. You can
     * configure the concurrent queue size by setting `options`. Note that this

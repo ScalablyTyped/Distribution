@@ -25,6 +25,10 @@ trait PipelineExecutionSummary extends js.Object {
     * The status of the pipeline execution.   InProgress: The pipeline execution is currently running.   Succeeded: The pipeline execution was completed successfully.    Superseded: While this pipeline execution was waiting for the next stage to be completed, a newer pipeline execution advanced and continued through the pipeline instead.    Failed: The pipeline execution was not completed successfully.  
     */
   var status: js.UndefOr[PipelineExecutionStatus] = js.undefined
+  /**
+    * The interaction or event that started a pipeline execution, such as automated change detection or a StartPipelineExecution API call.
+    */
+  var trigger: js.UndefOr[ExecutionTrigger] = js.undefined
 }
 
 object PipelineExecutionSummary {
@@ -34,7 +38,8 @@ object PipelineExecutionSummary {
     pipelineExecutionId: PipelineExecutionId = null,
     sourceRevisions: SourceRevisionList = null,
     startTime: Timestamp = null,
-    status: PipelineExecutionStatus = null
+    status: PipelineExecutionStatus = null,
+    trigger: ExecutionTrigger = null
   ): PipelineExecutionSummary = {
     val __obj = js.Dynamic.literal()
     if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
@@ -42,6 +47,7 @@ object PipelineExecutionSummary {
     if (sourceRevisions != null) __obj.updateDynamic("sourceRevisions")(sourceRevisions)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     __obj.asInstanceOf[PipelineExecutionSummary]
   }
 }

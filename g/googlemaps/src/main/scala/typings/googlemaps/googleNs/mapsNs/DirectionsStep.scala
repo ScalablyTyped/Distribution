@@ -4,16 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DirectionsStep extends js.Object {
-  var distance: Distance
-  var duration: Duration
-  var end_location: LatLng
-  var instructions: String
-  var path: js.Array[LatLng]
-  var start_location: LatLng
-  var steps: DirectionsStep
-  var transit: TransitDetails
-  var travel_mode: TravelMode
+trait DirectionsStep extends BaseDirectionsStep {
+  /**
+    * This field will only be available if travel_mode is set to TRANSIT.
+    */
+  var steps: js.Array[BaseDirectionsStep]
 }
 
 object DirectionsStep {
@@ -25,7 +20,7 @@ object DirectionsStep {
     instructions: String,
     path: js.Array[LatLng],
     start_location: LatLng,
-    steps: DirectionsStep,
+    steps: js.Array[BaseDirectionsStep],
     transit: TransitDetails,
     travel_mode: TravelMode
   ): DirectionsStep = {

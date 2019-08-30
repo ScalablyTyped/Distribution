@@ -42,6 +42,10 @@ trait Snapshot extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
+    * The ID of the KMS key used to encrypt the snapshot.
+    */
+  var KmsKeyId: js.UndefOr[String] = js.undefined
+  /**
     * A list of the cache nodes in the source cluster.
     */
   var NodeSnapshots: js.UndefOr[NodeSnapshotList] = js.undefined
@@ -115,6 +119,7 @@ object Snapshot {
     CacheSubnetGroupName: String = null,
     Engine: String = null,
     EngineVersion: String = null,
+    KmsKeyId: String = null,
     NodeSnapshots: NodeSnapshotList = null,
     NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
     NumNodeGroups: js.UndefOr[IntegerOptional] = js.undefined,
@@ -141,6 +146,7 @@ object Snapshot {
     if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName)
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
+    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (NodeSnapshots != null) __obj.updateDynamic("NodeSnapshots")(NodeSnapshots)
     if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes)
     if (!js.isUndefined(NumNodeGroups)) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups)

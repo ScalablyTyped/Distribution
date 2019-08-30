@@ -54,6 +54,10 @@ trait Container extends js.Object {
     */
   var reason: js.UndefOr[String] = js.undefined
   /**
+    * The ID of the Docker container.
+    */
+  var runtimeId: js.UndefOr[String] = js.undefined
+  /**
     * The ARN of the task.
     */
   var taskArn: js.UndefOr[String] = js.undefined
@@ -74,6 +78,7 @@ object Container {
     networkBindings: NetworkBindings = null,
     networkInterfaces: NetworkInterfaces = null,
     reason: String = null,
+    runtimeId: String = null,
     taskArn: String = null
   ): Container = {
     val __obj = js.Dynamic.literal()
@@ -89,6 +94,7 @@ object Container {
     if (networkBindings != null) __obj.updateDynamic("networkBindings")(networkBindings)
     if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces)
     if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (runtimeId != null) __obj.updateDynamic("runtimeId")(runtimeId)
     if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn)
     __obj.asInstanceOf[Container]
   }

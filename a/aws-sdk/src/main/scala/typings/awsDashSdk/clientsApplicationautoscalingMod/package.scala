@@ -100,6 +100,7 @@ package object clientsApplicationautoscalingMod {
   type ScalingActivityStatusCode = _ScalingActivityStatusCode | String
   type ScalingAdjustment = Double
   type ScalingPolicies = js.Array[ScalingPolicy]
+  type ScalingSuspended = Boolean
   type ScheduledActionName = String
   type ScheduledActions = js.Array[ScheduledAction]
   /* Rewritten from type alias, can be one of: 

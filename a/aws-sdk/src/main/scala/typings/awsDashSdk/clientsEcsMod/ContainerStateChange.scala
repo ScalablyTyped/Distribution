@@ -22,6 +22,10 @@ trait ContainerStateChange extends js.Object {
     */
   var reason: js.UndefOr[String] = js.undefined
   /**
+    * The ID of the Docker container.
+    */
+  var runtimeId: js.UndefOr[String] = js.undefined
+  /**
     * The status of the container.
     */
   var status: js.UndefOr[String] = js.undefined
@@ -34,6 +38,7 @@ object ContainerStateChange {
     exitCode: js.UndefOr[BoxedInteger] = js.undefined,
     networkBindings: NetworkBindings = null,
     reason: String = null,
+    runtimeId: String = null,
     status: String = null
   ): ContainerStateChange = {
     val __obj = js.Dynamic.literal()
@@ -41,6 +46,7 @@ object ContainerStateChange {
     if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode)
     if (networkBindings != null) __obj.updateDynamic("networkBindings")(networkBindings)
     if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (runtimeId != null) __obj.updateDynamic("runtimeId")(runtimeId)
     if (status != null) __obj.updateDynamic("status")(status)
     __obj.asInstanceOf[ContainerStateChange]
   }

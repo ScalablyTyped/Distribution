@@ -33,6 +33,7 @@ trait ScalableTarget extends js.Object {
     * The namespace of the AWS service that provides the resource or custom-resource for a resource provided by your own application or service. For more information, see AWS Service Namespaces in the Amazon Web Services General Reference.
     */
   var ServiceNamespace: typings.awsDashSdk.clientsApplicationautoscalingMod.ServiceNamespace
+  var SuspendedState: js.UndefOr[typings.awsDashSdk.clientsApplicationautoscalingMod.SuspendedState] = js.undefined
 }
 
 object ScalableTarget {
@@ -44,10 +45,11 @@ object ScalableTarget {
     ResourceId: ResourceIdMaxLen1600,
     RoleARN: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
-    ServiceNamespace: ServiceNamespace
+    ServiceNamespace: ServiceNamespace,
+    SuspendedState: SuspendedState = null
   ): ScalableTarget = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime, MaxCapacity = MaxCapacity, MinCapacity = MinCapacity, ResourceId = ResourceId, RoleARN = RoleARN, ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-  
+    if (SuspendedState != null) __obj.updateDynamic("SuspendedState")(SuspendedState)
     __obj.asInstanceOf[ScalableTarget]
   }
 }
