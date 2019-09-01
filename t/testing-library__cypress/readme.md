@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__cypress
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 Simple and complete custom Cypress commands and utilities that encourage good testing practices.

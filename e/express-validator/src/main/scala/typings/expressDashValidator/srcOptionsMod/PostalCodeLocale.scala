@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.expressDashValidator.expressDashValidatorStrings.AU
   - typings.expressDashValidator.expressDashValidatorStrings.BE
   - typings.expressDashValidator.expressDashValidatorStrings.BG
+  - typings.expressDashValidator.expressDashValidatorStrings.BR
   - typings.expressDashValidator.expressDashValidatorStrings.CA
   - typings.expressDashValidator.expressDashValidatorStrings.CH
   - typings.expressDashValidator.expressDashValidatorStrings.CZ
@@ -36,10 +37,13 @@ import scala.scalajs.js.annotation._
   - typings.expressDashValidator.expressDashValidatorStrings.LT
   - typings.expressDashValidator.expressDashValidatorStrings.LU
   - typings.expressDashValidator.expressDashValidatorStrings.LV
+  - typings.expressDashValidator.expressDashValidatorStrings.MT
   - typings.expressDashValidator.expressDashValidatorStrings.MX
   - typings.expressDashValidator.expressDashValidatorStrings.NL
   - typings.expressDashValidator.expressDashValidatorStrings.NO
+  - typings.expressDashValidator.expressDashValidatorStrings.NZ
   - typings.expressDashValidator.expressDashValidatorStrings.PL
+  - typings.expressDashValidator.expressDashValidatorStrings.PR
   - typings.expressDashValidator.expressDashValidatorStrings.PT
   - typings.expressDashValidator.expressDashValidatorStrings.RO
   - typings.expressDashValidator.expressDashValidatorStrings.RU

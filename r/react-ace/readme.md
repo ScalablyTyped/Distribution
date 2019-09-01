@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-ace
 
-Typings are for version 7.0.2
+Typings are for version 7.0.4
 
 ## Library description:
 A react component for Ace Editor

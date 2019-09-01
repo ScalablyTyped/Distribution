@@ -1,6 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libPickersMod
 
-import typings.officeDashUiDashFabricDashReact.Anon_Key_207955917
+import typings.officeDashUiDashFabricDashReact.Anon_Key
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSuggestionProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerMod.IGenericItem
@@ -32,6 +32,6 @@ object ^ extends js.Object {
   def createGenericItem(
     name: String,
     currentValidationState: typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState
-  ): IGenericItem with Anon_Key_207955917 = js.native
+  ): IGenericItem with Anon_Key = js.native
 }
 

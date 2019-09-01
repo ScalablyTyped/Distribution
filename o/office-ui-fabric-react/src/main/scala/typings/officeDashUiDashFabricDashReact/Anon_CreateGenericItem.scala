@@ -15,7 +15,7 @@ trait Anon_CreateGenericItem extends js.Object {
   var createGenericItem: js.Function2[
     /* name */ String, 
     /* currentValidationState */ ValidationState, 
-    IGenericItem with Anon_Key_207955917
+    IGenericItem with Anon_Key
   ] = js.native
   def onRenderItem(props: IPeoplePickerItemSelectedProps): Element = js.native
   def onRenderSuggestionsItem(personaProps: IPersonaProps): Element = js.native

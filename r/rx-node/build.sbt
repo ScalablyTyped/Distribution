@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "rx-node"
-version := "0.0-unknown-dt-20190322Z-cbc188"
+version := "0.0-unknown-dt-20190322Z-b19677"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-94909f",
   "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-3e8b9d",
   "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-56360f",

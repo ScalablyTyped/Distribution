@@ -27,14 +27,15 @@ trait Event extends js.Object {
     */
   var source: Source = js.native
   /**
-    * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.
+    * Indicates that the add-in has completed processing and will automatically be closed.
     * 
-    * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an 
-    * xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can 
-    * clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook 
-    * will warn that a function is still executing.
+    * This method must be called at the end of a function which was invoked by the following.
     * 
-    * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.
+    * - A UI-less button (i.e., an add-in command defined with an Action element where the xsi:type attribute is set to ExecuteFunction)
+    * 
+    * - An {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/event | event} defined in the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/extensionpoint#events | Events extension point},
+    * e.g., an `ItemSend` event
     * 
     * [Api set: Mailbox 1.3]
     *

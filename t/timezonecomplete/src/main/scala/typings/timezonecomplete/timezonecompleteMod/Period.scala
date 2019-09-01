@@ -17,6 +17,9 @@ class Period protected ()
     * implemented and you will get an assert.
     *
     * @param json period represented as JSON object
+    * @throws timezonecomplete.Argument.Json for invalid JSON (missing reference, unparseable reference or interval)
+    * @throws timezonecomplete.Argument.Interval if amount not positive integer
+    * @throws timezonecomplete.Argument.Interval.NotImplemented if dst=RegularLocalTime and the interval is not a multiple of one day
     */
   def this(json: PeriodJson) = this()
   /**
@@ -32,6 +35,9 @@ class Period protected ()
     * @param dst Specifies how to handle Daylight Saving Time. Not relevant
     *            if the time zone of the reference datetime does not have DST.
     *            Defaults to RegularLocalTime.
+    * @throws timezonecomplete.Argument.Dst for invalid dst value
+    * @throws timezonecomplete.Argument.Interval if amount not positive integer
+    * @throws timezonecomplete.Argument.Interval.NotImplemented if dst=RegularLocalTime and the interval is not a multiple of one day
     */
   def this(
     reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
@@ -51,6 +57,11 @@ class Period protected ()
     * @param dst Specifies how to handle Daylight Saving Time. Not relevant
     *              if the time zone of the reference datetime does not have DST.
     *              Defaults to RegularLocalTime.
+    * @throws timezonecomplete.Argument.Amount for invalid amount
+    * @throws timezonecomplete.Argument.Unit for invalid time unit
+    * @throws timezonecomplete.Argument.Interval if amount not positive integer
+    * @throws timezonecomplete.Argument.Interval.NotImplemented if dst=RegularLocalTime and the interval is not a multiple of one day
+    * @throws timezonecomplete.Argument.Dst for invalid dst value
     */
   def this(
     reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,

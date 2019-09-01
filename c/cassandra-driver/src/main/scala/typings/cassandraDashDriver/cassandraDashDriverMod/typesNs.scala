@@ -35,6 +35,7 @@ import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.UuidStatic
 import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.consistencies
 import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.dataTypes
 import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.distance
+import typings.long.Anon_High
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.std.Date
@@ -300,6 +301,15 @@ object typesNs extends js.Object {
   }
   
   @js.native
+  class Long protected ()
+    extends typings.long.longMod.^ {
+    /**
+      * Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
+      */
+    def this(low: Double) = this()
+  }
+  
+  @js.native
   trait ResultSet extends js.Object {
     var columns: js.Array[StringDictionary[String]] = js.native
     var info: Anon_AchievedConsistency = js.native
@@ -525,7 +535,6 @@ object typesNs extends js.Object {
   var Integer: IntegerStatic = js.native
   var LocalDate: LocalDateStatic = js.native
   var LocalTime: LocalTimeStatic = js.native
-  var Long: typings.long.longMod.^ = js.native
   var ResultSet: ResultSetStatic = js.native
   // let ResultStream: ResultStreamStatic;
   var Row: RowStatic = js.native
@@ -539,6 +548,93 @@ object typesNs extends js.Object {
   def timeuuid(options: Anon_Clockseq): String = js.native
   def timeuuid(options: Anon_Clockseq, buffer: Buffer): String = js.native
   def timeuuid(options: Anon_Clockseq, buffer: Buffer, offset: Double): String = js.native
+  @js.native
+  object Long
+    extends Instantiable1[/* low */ Double, typings.long.longMod.^] {
+    /**
+      * Maximum unsigned value.
+      */
+    var MAX_UNSIGNED_VALUE: typings.long.longMod.Long = js.native
+    /**
+      * Maximum signed value.
+      */
+    var MAX_VALUE: typings.long.longMod.Long = js.native
+    /**
+      * Minimum signed value.
+      */
+    var MIN_VALUE: typings.long.longMod.Long = js.native
+    /**
+      * Signed negative one.
+      */
+    var NEG_ONE: typings.long.longMod.Long = js.native
+    /**
+      * Signed one.
+      */
+    var ONE: typings.long.longMod.Long = js.native
+    /**
+      * Unsigned one.
+      */
+    var UONE: typings.long.longMod.Long = js.native
+    /**
+      * Unsigned zero.
+      */
+    var UZERO: typings.long.longMod.Long = js.native
+    /**
+      * Signed zero
+      */
+    var ZERO: typings.long.longMod.Long = js.native
+    /**
+      * Returns a Long representing the 64 bit integer that comes by concatenating the given low and high bits. Each is assumed to use 32 bits.
+      */
+    def fromBits(lowBits: Double, highBits: Double): typings.long.longMod.Long = js.native
+    def fromBits(lowBits: Double, highBits: Double, unsigned: Boolean): typings.long.longMod.Long = js.native
+    /**
+      * Creates a Long from its byte representation.
+      */
+    def fromBytes(bytes: js.Array[Double]): typings.long.longMod.Long = js.native
+    def fromBytes(bytes: js.Array[Double], unsigned: Boolean): typings.long.longMod.Long = js.native
+    def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): typings.long.longMod.Long = js.native
+    /**
+      * Creates a Long from its little endian byte representation.
+      */
+    def fromBytesBE(bytes: js.Array[Double]): typings.long.longMod.Long = js.native
+    def fromBytesBE(bytes: js.Array[Double], unsigned: Boolean): typings.long.longMod.Long = js.native
+    /**
+      * Creates a Long from its little endian byte representation.
+      */
+    def fromBytesLE(bytes: js.Array[Double]): typings.long.longMod.Long = js.native
+    def fromBytesLE(bytes: js.Array[Double], unsigned: Boolean): typings.long.longMod.Long = js.native
+    /**
+      * Returns a Long representing the given 32 bit integer value.
+      */
+    def fromInt(value: Double): typings.long.longMod.Long = js.native
+    def fromInt(value: Double, unsigned: Boolean): typings.long.longMod.Long = js.native
+    /**
+      * Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
+      */
+    def fromNumber(value: Double): typings.long.longMod.Long = js.native
+    def fromNumber(value: Double, unsigned: Boolean): typings.long.longMod.Long = js.native
+    /**
+      * Returns a Long representation of the given string, written using the specified radix.
+      */
+    def fromString(str: String): typings.long.longMod.Long = js.native
+    def fromString(str: String, unsigned: Boolean): typings.long.longMod.Long = js.native
+    def fromString(str: String, unsigned: Boolean, radix: Double): typings.long.longMod.Long = js.native
+    def fromString(str: String, unsigned: Double): typings.long.longMod.Long = js.native
+    def fromString(str: String, unsigned: Double, radix: Double): typings.long.longMod.Long = js.native
+    def fromValue(`val`: String): typings.long.longMod.Long = js.native
+    def fromValue(`val`: Double): typings.long.longMod.Long = js.native
+    def fromValue(`val`: Anon_High): typings.long.longMod.Long = js.native
+    /**
+      * Converts the specified value to a Long.
+      */
+    def fromValue(`val`: typings.long.longMod.Long): typings.long.longMod.Long = js.native
+    /**
+      * Tests if the specified object is a Long.
+      */
+    def isLong(obj: js.Any): Boolean = js.native
+  }
+  
   @js.native
   object consistencies extends js.Object {
     @js.native

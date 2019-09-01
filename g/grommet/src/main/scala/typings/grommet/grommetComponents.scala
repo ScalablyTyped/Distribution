@@ -238,12 +238,12 @@ object grommetComponents extends grommetProps {
   ])]]
   @scala.inline
   def FormField: ComponentType[
-    FormFieldProps with (typings.std.Omit[
+    FormFieldProps with (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       placeholder
     ])
   ] = js.constructorOf[typings.grommet.grommetMod.FormField].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsFormFieldMod.FormFieldProps with (typings.std.Omit[
+  typings.grommet.componentsFormFieldMod.FormFieldProps with (typings.grommet.utilsMod.Omit[
     typings.react.reactMod.DetailedHTMLProps[
       typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
       typings.react.HTMLInputElement
@@ -309,7 +309,7 @@ object grommetComponents extends grommetProps {
   def MaskedInput: ComponentType[
     MaskedInputProps with (typings.std.Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      id | name | mask | plain | size | value
+      id | mask | name | plain | size | value
     ])
   ] = js.constructorOf[typings.grommet.grommetMod.MaskedInput].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsMaskedInputMod.MaskedInputProps with (typings.std.Omit[
@@ -317,7 +317,7 @@ object grommetComponents extends grommetProps {
       typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
       typings.react.HTMLInputElement
     ], 
-    typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
+    typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
   ])]]
   @scala.inline
   def Menu: ComponentType[

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega" : "5.5.2"
+      "vega" : "5.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "vega" : "5.5.2"
+      "vega" : "5.5.3"
     }
   ],
   "compile-devDependencies" : [

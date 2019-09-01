@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Transition protected ()
   extends typings.timezonecomplete.distLibTzDashDatabaseMod.Transition {
+  /**
+    * Constructor
+    * @param at
+    * @param offset
+    * @param letter
+    * @throws nothing
+    */
   def this(
     /**
     * Transition time in UTC millis

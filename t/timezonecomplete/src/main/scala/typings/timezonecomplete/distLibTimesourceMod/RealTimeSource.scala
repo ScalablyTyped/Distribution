@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RealTimeSource () extends TimeSource {
   /**
     * Return the current date+time as a javascript Date object
+    * @throws nothing
     */
   /* CompleteClass */
   override def now(): Date = js.native

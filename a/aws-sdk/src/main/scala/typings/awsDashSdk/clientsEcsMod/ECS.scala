@@ -523,6 +523,19 @@ trait ECS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
   /**
+    * Modifies the settings to use for a cluster.
+    */
+  def updateClusterSettings(): Request[UpdateClusterSettingsResponse, AWSError] = js.native
+  def updateClusterSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateClusterSettingsResponse, Unit]): Request[UpdateClusterSettingsResponse, AWSError] = js.native
+  /**
+    * Modifies the settings to use for a cluster.
+    */
+  def updateClusterSettings(params: UpdateClusterSettingsRequest): Request[UpdateClusterSettingsResponse, AWSError] = js.native
+  def updateClusterSettings(
+    params: UpdateClusterSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateClusterSettingsResponse, Unit]
+  ): Request[UpdateClusterSettingsResponse, AWSError] = js.native
+  /**
     * Updates the Amazon ECS container agent on a specified container instance. Updating the Amazon ECS container agent does not interrupt running tasks or services on the container instance. The process for updating the agent differs depending on whether your container instance was launched with the Amazon ECS-optimized AMI or another operating system.  UpdateContainerAgent requires the Amazon ECS-optimized AMI or Amazon Linux with the ecs-init service installed and running. For help updating the Amazon ECS container agent on other operating systems, see Manually Updating the Amazon ECS Container Agent in the Amazon Elastic Container Service Developer Guide.
     */
   def updateContainerAgent(): Request[UpdateContainerAgentResponse, AWSError] = js.native

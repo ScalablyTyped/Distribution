@@ -1,5 +1,7 @@
 package typings.grommet.componentsCarouselMod
 
+import typings.grommet.grommetStrings.arrows
+import typings.grommet.grommetStrings.selectors
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
@@ -11,6 +13,7 @@ import scala.scalajs.js.annotation._
 trait CarouselProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
+  var controls: js.UndefOr[Boolean | arrows | selectors] = js.undefined
   var fill: js.UndefOr[Boolean] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var initialChild: js.UndefOr[Double] = js.undefined
@@ -23,6 +26,7 @@ object CarouselProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
+    controls: Boolean | arrows | selectors = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     gridArea: GridAreaType = null,
     initialChild: Int | Double = null,
@@ -32,6 +36,7 @@ object CarouselProps {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (initialChild != null) __obj.updateDynamic("initialChild")(initialChild.asInstanceOf[js.Any])

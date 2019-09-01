@@ -25,6 +25,10 @@ trait UpdateBrokerRequest extends js.Object {
     * Enables Amazon CloudWatch logging for brokers.
     */
   var Logs: js.UndefOr[typings.awsDashSdk.clientsMqMod.Logs] = js.undefined
+  /**
+    * The list of security groups (1 minimum, 5 maximum) that authorize connections to brokers.
+    */
+  var SecurityGroups: js.UndefOr[__listOf__string] = js.undefined
 }
 
 object UpdateBrokerRequest {
@@ -34,13 +38,15 @@ object UpdateBrokerRequest {
     AutoMinorVersionUpgrade: js.UndefOr[__boolean] = js.undefined,
     Configuration: ConfigurationId = null,
     EngineVersion: __string = null,
-    Logs: Logs = null
+    Logs: Logs = null,
+    SecurityGroups: __listOf__string = null
   ): UpdateBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId)
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (Logs != null) __obj.updateDynamic("Logs")(Logs)
+    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)
     __obj.asInstanceOf[UpdateBrokerRequest]
   }
 }

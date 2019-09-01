@@ -5331,6 +5331,7 @@
 | 0.43169214559244684 | [draggabilly](./d/draggabilly) | make that shiz draggable
 | 0.4316236933297225 | [babel__core](./b/babel__core) | Babel compiler core.
 | 0.43156612976822456 | [i18n-abide](./i/i18n-abide) | Express/connect module for Node i18n and l10n supp
+| 0.4315113274739698 | [browserfs](./b/browserfs) | A filesystem in your browser
 | 0.4312813226586274 | [hyperscript](./h/hyperscript) | Create HyperText with JavaScript, on client or ser
 | 0.4311885177724409 | [react-maskedinput](./r/react-maskedinput) | Masked  React component
 | 0.4311685119003954 | [cordova-plugin-ibeacon](./c/cordova-plugin-ibeacon) | Proximity Beacon Monitoring and Transmission Plugi

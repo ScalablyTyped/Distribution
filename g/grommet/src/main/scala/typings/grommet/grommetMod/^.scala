@@ -1,5 +1,7 @@
 package typings.grommet.grommetMod
 
+import typings.grommet.Anon_Accordion
+import typings.grommet.Anon_AccordionAnchor
 import typings.grommet.componentsAccordionMod.AccordionProps
 import typings.grommet.componentsAccordionPanelMod.AccordionPanelProps
 import typings.grommet.componentsAnchorMod.AnchorProps
@@ -69,6 +71,7 @@ import typings.grommet.grommetStrings.plain
 import typings.grommet.grommetStrings.size
 import typings.grommet.grommetStrings.title
 import typings.grommet.grommetStrings.value
+import typings.grommet.utilsMod.DeepReadonly
 import typings.grommet.utilsMod.Omit
 import typings.react.HTMLAnchorElement
 import typings.react.HTMLButtonElement
@@ -182,7 +185,7 @@ object ^ extends js.Object {
     ComponentState
   ] = js.native
   val FormField: ComponentClass[
-    FormFieldProps with (typings.std.Omit[
+    FormFieldProps with (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       placeholder
     ]), 
@@ -214,7 +217,7 @@ object ^ extends js.Object {
   val MaskedInput: ComponentClass[
     MaskedInputProps with (typings.std.Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      id | name | mask | plain | size | value
+      id | mask | name | plain | size | value
     ]), 
     ComponentState
   ] = js.native
@@ -305,5 +308,11 @@ object ^ extends js.Object {
     ComponentState
   ] = js.native
   val WorldMap: ComponentClass[WorldMapProps with SVGProps[SVGSVGElement], ComponentState] = js.native
+  val base: DeepReadonly[Anon_AccordionAnchor] = js.native
+  val dark: js.Object = js.native
+  val grommet: js.Object = js.native
+  def generate(): DeepReadonly[Anon_Accordion] = js.native
+  def generate(baseSpacing: Double): DeepReadonly[Anon_Accordion] = js.native
+  def generate(baseSpacing: Double, scale: Double): DeepReadonly[Anon_Accordion] = js.native
 }
 

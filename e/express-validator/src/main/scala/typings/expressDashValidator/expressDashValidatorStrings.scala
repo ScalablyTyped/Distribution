@@ -4,6 +4,7 @@ import typings.expressDashValidator.srcBaseMod.Location
 import typings.expressDashValidator.srcOptionsMod.AlphaLocale
 import typings.expressDashValidator.srcOptionsMod.AlphanumericLocale
 import typings.expressDashValidator.srcOptionsMod.HashAlgorithm
+import typings.expressDashValidator.srcOptionsMod.IdentityCard
 import typings.expressDashValidator.srcOptionsMod.MobilePhoneLocale
 import typings.expressDashValidator.srcOptionsMod.PostalCodeLocale
 import typings.expressDashValidator.srcOptionsMod.URLProtocol
@@ -38,6 +39,9 @@ object expressDashValidatorStrings {
   sealed trait BG extends PostalCodeLocale
   
   @js.native
+  sealed trait BR extends PostalCodeLocale
+  
+  @js.native
   sealed trait CA extends PostalCodeLocale
   
   @js.native
@@ -59,7 +63,9 @@ object expressDashValidatorStrings {
   sealed trait EE extends PostalCodeLocale
   
   @js.native
-  sealed trait ES extends PostalCodeLocale
+  sealed trait ES
+    extends IdentityCard
+       with PostalCodeLocale
   
   @js.native
   sealed trait FI extends PostalCodeLocale
@@ -113,6 +119,9 @@ object expressDashValidatorStrings {
   sealed trait LV extends PostalCodeLocale
   
   @js.native
+  sealed trait MT extends PostalCodeLocale
+  
+  @js.native
   sealed trait MX extends PostalCodeLocale
   
   @js.native
@@ -122,7 +131,13 @@ object expressDashValidatorStrings {
   sealed trait NO extends PostalCodeLocale
   
   @js.native
+  sealed trait NZ extends PostalCodeLocale
+  
+  @js.native
   sealed trait PL extends PostalCodeLocale
+  
+  @js.native
+  sealed trait PR extends PostalCodeLocale
   
   @js.native
   sealed trait PT extends PostalCodeLocale
@@ -180,7 +195,8 @@ object expressDashValidatorStrings {
   
   @js.native
   sealed trait any
-    extends MobilePhoneLocale
+    extends IdentityCard
+       with MobilePhoneLocale
        with PostalCodeLocale
   
   @js.native
@@ -198,6 +214,7 @@ object expressDashValidatorStrings {
   sealed trait `ar-BH`
     extends AlphaLocale
        with AlphanumericLocale
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `ar-DZ`
@@ -367,6 +384,9 @@ object expressDashValidatorStrings {
   sealed trait `en-KE` extends MobilePhoneLocale
   
   @js.native
+  sealed trait `en-MT` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait `en-MU` extends MobilePhoneLocale
   
   @js.native
@@ -412,6 +432,9 @@ object expressDashValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait `es-CL` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait `es-ES`
     extends AlphaLocale
        with AlphanumericLocale
@@ -436,6 +459,9 @@ object expressDashValidatorStrings {
   sealed trait `fi-FI` extends MobilePhoneLocale
   
   @js.native
+  sealed trait `fj-FJ` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait `fo-FO` extends MobilePhoneLocale
   
   @js.native
@@ -451,7 +477,9 @@ object expressDashValidatorStrings {
   sealed trait ftp extends URLProtocol
   
   @js.native
-  sealed trait `he-IL` extends MobilePhoneLocale
+  sealed trait `he-IL`
+    extends IdentityCard
+       with MobilePhoneLocale
   
   @js.native
   sealed trait headers extends Location
@@ -516,6 +544,7 @@ object expressDashValidatorStrings {
   sealed trait `nl-NL`
     extends AlphaLocale
        with AlphanumericLocale
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `nn-NO`
@@ -639,7 +668,9 @@ object expressDashValidatorStrings {
   sealed trait `zh-HK` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `zh-TW` extends MobilePhoneLocale
+  sealed trait `zh-TW`
+    extends IdentityCard
+       with MobilePhoneLocale
   
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
@@ -657,6 +688,8 @@ object expressDashValidatorStrings {
   def BE: BE = "BE".asInstanceOf[BE]
   @scala.inline
   def BG: BG = "BG".asInstanceOf[BG]
+  @scala.inline
+  def BR: BR = "BR".asInstanceOf[BR]
   @scala.inline
   def CA: CA = "CA".asInstanceOf[CA]
   @scala.inline
@@ -708,13 +741,19 @@ object expressDashValidatorStrings {
   @scala.inline
   def LV: LV = "LV".asInstanceOf[LV]
   @scala.inline
+  def MT: MT = "MT".asInstanceOf[MT]
+  @scala.inline
   def MX: MX = "MX".asInstanceOf[MX]
   @scala.inline
   def NL: NL = "NL".asInstanceOf[NL]
   @scala.inline
   def NO: NO = "NO".asInstanceOf[NO]
   @scala.inline
+  def NZ: NZ = "NZ".asInstanceOf[NZ]
+  @scala.inline
   def PL: PL = "PL".asInstanceOf[PL]
+  @scala.inline
+  def PR: PR = "PR".asInstanceOf[PR]
   @scala.inline
   def PT: PT = "PT".asInstanceOf[PT]
   @scala.inline
@@ -828,6 +867,8 @@ object expressDashValidatorStrings {
   @scala.inline
   def `en-KE`: `en-KE` = "en-KE".asInstanceOf[`en-KE`]
   @scala.inline
+  def `en-MT`: `en-MT` = "en-MT".asInstanceOf[`en-MT`]
+  @scala.inline
   def `en-MU`: `en-MU` = "en-MU".asInstanceOf[`en-MU`]
   @scala.inline
   def `en-NG`: `en-NG` = "en-NG".asInstanceOf[`en-NG`]
@@ -850,6 +891,8 @@ object expressDashValidatorStrings {
   @scala.inline
   def `en-ZM`: `en-ZM` = "en-ZM".asInstanceOf[`en-ZM`]
   @scala.inline
+  def `es-CL`: `es-CL` = "es-CL".asInstanceOf[`es-CL`]
+  @scala.inline
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
   @scala.inline
   def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
@@ -863,6 +906,8 @@ object expressDashValidatorStrings {
   def `fa-IR`: `fa-IR` = "fa-IR".asInstanceOf[`fa-IR`]
   @scala.inline
   def `fi-FI`: `fi-FI` = "fi-FI".asInstanceOf[`fi-FI`]
+  @scala.inline
+  def `fj-FJ`: `fj-FJ` = "fj-FJ".asInstanceOf[`fj-FJ`]
   @scala.inline
   def `fo-FO`: `fo-FO` = "fo-FO".asInstanceOf[`fo-FO`]
   @scala.inline

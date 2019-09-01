@@ -10,6 +10,24 @@ import scala.scalajs.js.annotation._
 @JSImport("timezonecomplete/dist/lib/tz-database", "RuleInfo")
 @js.native
 class RuleInfo protected () extends js.Object {
+  /**
+    * Constructor
+    * @param from
+    * @param toType
+    * @param toYear
+    * @param type
+    * @param inMonth
+    * @param onType
+    * @param onDay
+    * @param onWeekDay
+    * @param atHour
+    * @param atMinute
+    * @param atSecond
+    * @param atType
+    * @param save
+    * @param letter
+    * @throws nothing
+    */
   def this(
     /**
     * FROM column year number.
@@ -130,22 +148,27 @@ class RuleInfo protected () extends js.Object {
   var `type`: String = js.native
   /**
     * Returns true iff this rule is applicable in the year
+    * @throws nothing
     */
   def applicable(year: Double): Boolean = js.native
   /**
     * Returns the date that the rule takes effect. Note that the time
     * is NOT adjusted for wall clock time or standard time, i.e. this.atType is
     * not taken into account
+    * @throws NotApplicable if this rule is not applicable in the given year
+    * @throws timezonecomplete.InvalidTimeZoneData if this rule depends on a weekday and the weekday in question doesn't exist
     */
   def effectiveDate(year: Double): TimeStruct = js.native
   /**
     * Sort comparison
     * @return (first effective date is equal to other's first effective date)
+    * @throws timezonecomplete.InvalidTimeZoneData for invalid internal structure of the database
     */
   def effectiveEqual(other: RuleInfo): Boolean = js.native
   /**
     * Sort comparison
     * @return (first effective date is less than other's first effective date)
+    * @throws timezonecomplete.InvalidTimeZoneData if this rule depends on a weekday and the weekday in question doesn't exist
     */
   def effectiveLess(other: RuleInfo): Boolean = js.native
   /**
@@ -154,6 +177,8 @@ class RuleInfo protected () extends js.Object {
     * @param year	The year for which to return the transition
     * @param standardOffset	The standard offset for the timezone without DST
     * @param prevRule	The previous rule
+    * @throws NotApplicable if this rule is not applicable in the given year
+    * @throws timezonecomplete.InvalidTimeZoneData for invalid internal structure of the database
     */
   def transitionTimeUtc(year: Double, standardOffset: Duration): Double = js.native
   def transitionTimeUtc(year: Double, standardOffset: Duration, prevRule: RuleInfo): Double = js.native

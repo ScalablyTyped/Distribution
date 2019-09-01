@@ -8,18 +8,13 @@ import typings.grommet.grommetStrings._top
 import typings.grommet.grommetStrings.background
 import typings.grommet.grommetStrings.button
 import typings.grommet.grommetStrings.horizontal
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.reset
-import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.submit
 import typings.grommet.grommetStrings.vertical
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
@@ -38,7 +33,7 @@ trait ButtonProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
   var focusIndicator: js.UndefOr[Boolean] = js.undefined
-  var gap: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
+  var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var hoverIndicator: js.UndefOr[Boolean | String | background | Anon_Background] = js.undefined
   var href: js.UndefOr[String] = js.undefined
@@ -64,7 +59,7 @@ object ButtonProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     fill: horizontal | vertical | Boolean = null,
     focusIndicator: js.UndefOr[Boolean] = js.undefined,
-    gap: xxsmall | xsmall | small | medium | large | xlarge | String = null,
+    gap: GapType = null,
     gridArea: GridAreaType = null,
     hoverIndicator: Boolean | String | background | Anon_Background = null,
     href: String = null,

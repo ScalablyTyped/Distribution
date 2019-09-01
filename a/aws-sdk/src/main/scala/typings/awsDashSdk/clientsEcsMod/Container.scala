@@ -18,6 +18,10 @@ trait Container extends js.Object {
     */
   var exitCode: js.UndefOr[BoxedInteger] = js.undefined
   /**
+    * The FireLens configuration for the container.
+    */
+  var firelensConfiguration: js.UndefOr[FirelensConfiguration] = js.undefined
+  /**
     * The IDs of each GPU assigned to the container.
     */
   var gpuIds: js.UndefOr[GpuIds] = js.undefined
@@ -69,6 +73,7 @@ object Container {
     containerArn: String = null,
     cpu: String = null,
     exitCode: js.UndefOr[BoxedInteger] = js.undefined,
+    firelensConfiguration: FirelensConfiguration = null,
     gpuIds: GpuIds = null,
     healthStatus: HealthStatus = null,
     lastStatus: String = null,
@@ -85,6 +90,7 @@ object Container {
     if (containerArn != null) __obj.updateDynamic("containerArn")(containerArn)
     if (cpu != null) __obj.updateDynamic("cpu")(cpu)
     if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode)
+    if (firelensConfiguration != null) __obj.updateDynamic("firelensConfiguration")(firelensConfiguration)
     if (gpuIds != null) __obj.updateDynamic("gpuIds")(gpuIds)
     if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
     if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus)

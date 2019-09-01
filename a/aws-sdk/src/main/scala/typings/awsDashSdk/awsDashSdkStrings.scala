@@ -620,6 +620,7 @@ import typings.awsDashSdk.clientsEcsMod._ContainerCondition
 import typings.awsDashSdk.clientsEcsMod._ContainerInstanceStatus
 import typings.awsDashSdk.clientsEcsMod._DeploymentControllerType
 import typings.awsDashSdk.clientsEcsMod._DesiredStatus
+import typings.awsDashSdk.clientsEcsMod._FirelensConfigurationType
 import typings.awsDashSdk.clientsEcsMod._IpcMode
 import typings.awsDashSdk.clientsEcsMod._LogDriver
 import typings.awsDashSdk.clientsEcsMod._NetworkMode
@@ -22706,6 +22707,9 @@ object awsDashSdkStrings {
   sealed trait awsDOTconfig extends js.Object
   
   @js.native
+  sealed trait awsfirelens extends _LogDriver
+  
+  @js.native
   sealed trait awslogs extends _LogDriver
   
   @js.native
@@ -24268,7 +24272,12 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsForecastserviceMod._AttributeType
   
   @js.native
-  sealed trait fluentd extends _LogDriver
+  sealed trait fluentbit extends _FirelensConfigurationType
+  
+  @js.native
+  sealed trait fluentd
+    extends _FirelensConfigurationType
+       with _LogDriver
   
   @js.native
   sealed trait forward extends _ActionTypeEnum
@@ -38007,6 +38016,8 @@ object awsDashSdkStrings {
   @scala.inline
   def awsDOTconfig: awsDOTconfig = "aws.config".asInstanceOf[awsDOTconfig]
   @scala.inline
+  def awsfirelens: awsfirelens = "awsfirelens".asInstanceOf[awsfirelens]
+  @scala.inline
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]
   @scala.inline
   def awsvpc: awsvpc = "awsvpc".asInstanceOf[awsvpc]
@@ -38782,6 +38793,8 @@ object awsDashSdkStrings {
   def fleetStopped: fleetStopped = "fleetStopped".asInstanceOf[fleetStopped]
   @scala.inline
   def float: float = "float".asInstanceOf[float]
+  @scala.inline
+  def fluentbit: fluentbit = "fluentbit".asInstanceOf[fluentbit]
   @scala.inline
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   @scala.inline

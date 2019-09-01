@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class ZoneInfo protected ()
   extends typings.timezonecomplete.distLibTzDashDatabaseMod.ZoneInfo {
+  /**
+    * Constructor
+    * @param gmtoff
+    * @param ruleType
+    * @param ruleOffset
+    * @param ruleName
+    * @param format
+    * @param until
+    * @throws nothing
+    */
   def this(
     /**
     * GMT offset in fractional minutes, POSITIVE to UTC (note JavaScript.Date gives offsets

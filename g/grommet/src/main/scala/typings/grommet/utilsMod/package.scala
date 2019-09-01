@@ -18,6 +18,17 @@ package object utilsMod {
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
     */ typings.grommet.grommetStrings.DeepReadonly with js.Any
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.none
+    - typings.grommet.grommetStrings.xxsmall
+    - typings.grommet.grommetStrings.xsmall
+    - typings.grommet.grommetStrings.small
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.large
+    - typings.grommet.grommetStrings.xlarge
+    - java.lang.String
+  */
+  type GapType = _GapType | String
   type GridAreaType = String
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.none

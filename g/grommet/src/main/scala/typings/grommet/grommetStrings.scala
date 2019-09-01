@@ -3,6 +3,8 @@ package typings.grommet
 import typings.grommet.contextsAnnounceContextMod.AnnounceMode
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.TextAlignType
+import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
 import typings.grommet.utilsMod._PolymorphicType
 import scala.scalajs.js
@@ -10,9 +12,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object grommetStrings {
-  @js.native
-  sealed trait `0` extends js.Object
-  
   @js.native
   sealed trait `1` extends js.Object
   
@@ -122,6 +121,9 @@ object grommetStrings {
   sealed trait around extends AlignContentType
   
   @js.native
+  sealed trait arrows extends js.Object
+  
+  @js.native
   sealed trait article extends _PolymorphicType
   
   @js.native
@@ -212,6 +214,7 @@ object grommetStrings {
   sealed trait center
     extends AlignContentType
        with AlignSelfType
+       with TextAlignType
   
   @js.native
   sealed trait circle extends _PolymorphicType
@@ -322,6 +325,7 @@ object grommetStrings {
   sealed trait end
     extends AlignContentType
        with AlignSelfType
+       with TextAlignType
   
   @js.native
   sealed trait evenly extends js.Object
@@ -546,7 +550,9 @@ object grommetStrings {
   sealed trait label extends _PolymorphicType
   
   @js.native
-  sealed trait large extends _MarginType
+  sealed trait large
+    extends _GapType
+       with _MarginType
   
   @js.native
   sealed trait last extends js.Object
@@ -588,7 +594,9 @@ object grommetStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait medium extends _MarginType
+  sealed trait medium
+    extends _GapType
+       with _MarginType
   
   @js.native
   sealed trait menu extends _PolymorphicType
@@ -630,7 +638,9 @@ object grommetStrings {
   sealed trait noindex extends _PolymorphicType
   
   @js.native
-  sealed trait none extends _MarginType
+  sealed trait none
+    extends _GapType
+       with _MarginType
   
   @js.native
   sealed trait normal extends js.Object
@@ -777,6 +787,9 @@ object grommetStrings {
   sealed trait select extends _PolymorphicType
   
   @js.native
+  sealed trait selectors extends js.Object
+  
+  @js.native
   sealed trait shrink extends js.Object
   
   @js.native
@@ -799,7 +812,8 @@ object grommetStrings {
   
   @js.native
   sealed trait small
-    extends _MarginType
+    extends _GapType
+       with _MarginType
        with _PolymorphicType
   
   @js.native
@@ -815,6 +829,7 @@ object grommetStrings {
   sealed trait start
     extends AlignContentType
        with AlignSelfType
+       with TextAlignType
   
   @js.native
   sealed trait stop extends _PolymorphicType
@@ -948,16 +963,22 @@ object grommetStrings {
   sealed trait window extends js.Object
   
   @js.native
-  sealed trait xlarge extends _MarginType
+  sealed trait xlarge
+    extends _GapType
+       with _MarginType
   
   @js.native
-  sealed trait xsmall extends _MarginType
+  sealed trait xsmall
+    extends _GapType
+       with _MarginType
   
   @js.native
   sealed trait xxlarge extends js.Object
   
   @js.native
-  sealed trait xxsmall extends _MarginType
+  sealed trait xxsmall
+    extends _GapType
+       with _MarginType
   
   @js.native
   sealed trait zoomIn extends js.Object
@@ -965,8 +986,6 @@ object grommetStrings {
   @js.native
   sealed trait zoomOut extends js.Object
   
-  @scala.inline
-  def `0`: `0` = "0".asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
   @scala.inline
@@ -1039,6 +1058,8 @@ object grommetStrings {
   def area: area = "area".asInstanceOf[area]
   @scala.inline
   def around: around = "around".asInstanceOf[around]
+  @scala.inline
+  def arrows: arrows = "arrows".asInstanceOf[arrows]
   @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline
@@ -1473,6 +1494,8 @@ object grommetStrings {
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def selectors: selectors = "selectors".asInstanceOf[selectors]
   @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   @scala.inline

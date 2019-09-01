@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-validator"
-version := "6.1.1-7e4e09"
+version := "6.2.0-8ad4e2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

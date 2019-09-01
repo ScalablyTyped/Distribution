@@ -101,6 +101,9 @@ object atMaterialDashUiLabStrings {
   sealed trait execute extends js.Object
   
   @js.native
+  sealed trait expanded extends TreeItemClassKey
+  
+  @js.native
   sealed trait extendedFab extends js.Object
   
   @js.native
@@ -373,6 +376,8 @@ object atMaterialDashUiLabStrings {
   def down: down = "down".asInstanceOf[down]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
+  @scala.inline
+  def expanded: expanded = "expanded".asInstanceOf[expanded]
   @scala.inline
   def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
   @scala.inline

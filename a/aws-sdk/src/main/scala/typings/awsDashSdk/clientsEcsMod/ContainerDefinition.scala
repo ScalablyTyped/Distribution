@@ -54,6 +54,10 @@ trait ContainerDefinition extends js.Object {
     */
   var extraHosts: js.UndefOr[HostEntryList] = js.undefined
   /**
+    * The FireLens configuration for the container. This is used to specify and configure a log router for container logs.
+    */
+  var firelensConfiguration: js.UndefOr[FirelensConfiguration] = js.undefined
+  /**
     * The health check command and associated configuration parameters for the container. This parameter maps to HealthCheck in the Create a container section of the Docker Remote API and the HEALTHCHECK parameter of docker run.
     */
   var healthCheck: js.UndefOr[HealthCheck] = js.undefined
@@ -170,6 +174,7 @@ object ContainerDefinition {
     environment: EnvironmentVariables = null,
     essential: js.UndefOr[BoxedBoolean] = js.undefined,
     extraHosts: HostEntryList = null,
+    firelensConfiguration: FirelensConfiguration = null,
     healthCheck: HealthCheck = null,
     hostname: String = null,
     image: String = null,
@@ -209,6 +214,7 @@ object ContainerDefinition {
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential)
     if (extraHosts != null) __obj.updateDynamic("extraHosts")(extraHosts)
+    if (firelensConfiguration != null) __obj.updateDynamic("firelensConfiguration")(firelensConfiguration)
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (image != null) __obj.updateDynamic("image")(image)

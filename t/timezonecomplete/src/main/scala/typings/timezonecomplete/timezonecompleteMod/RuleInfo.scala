@@ -8,6 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class RuleInfo protected ()
   extends typings.timezonecomplete.distLibTzDashDatabaseMod.RuleInfo {
+  /**
+    * Constructor
+    * @param from
+    * @param toType
+    * @param toYear
+    * @param type
+    * @param inMonth
+    * @param onType
+    * @param onDay
+    * @param onWeekDay
+    * @param atHour
+    * @param atMinute
+    * @param atSecond
+    * @param atType
+    * @param save
+    * @param letter
+    * @throws nothing
+    */
   def this(
     /**
     * FROM column year number.

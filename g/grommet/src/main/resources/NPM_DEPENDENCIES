@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "grommet" : "2.7.6"
+      "grommet" : "2.7.7"
     }
   ],
   "test-dependencies" : [
     {
-      "grommet" : "2.7.6"
+      "grommet" : "2.7.7"
     }
   ],
   "compile-devDependencies" : [

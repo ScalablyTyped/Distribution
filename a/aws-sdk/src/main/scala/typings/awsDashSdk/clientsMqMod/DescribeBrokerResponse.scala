@@ -70,11 +70,15 @@ trait DescribeBrokerResponse extends js.Object {
     */
   var PendingEngineVersion: js.UndefOr[__string] = js.undefined
   /**
+    * The list of pending security groups to authorize connections to brokers.
+    */
+  var PendingSecurityGroups: js.UndefOr[__listOf__string] = js.undefined
+  /**
     * Required. Enables connections from applications outside of the VPC that hosts the broker's subnets.
     */
   var PubliclyAccessible: js.UndefOr[__boolean] = js.undefined
   /**
-    * Required. The list of rules (1 minimum, 125 maximum) that authorize connections to brokers.
+    * The list of security groups (1 minimum, 5 maximum) that authorize connections to brokers.
     */
   var SecurityGroups: js.UndefOr[__listOf__string] = js.undefined
   /**
@@ -110,6 +114,7 @@ object DescribeBrokerResponse {
     Logs: LogsSummary = null,
     MaintenanceWindowStartTime: WeeklyStartTime = null,
     PendingEngineVersion: __string = null,
+    PendingSecurityGroups: __listOf__string = null,
     PubliclyAccessible: js.UndefOr[__boolean] = js.undefined,
     SecurityGroups: __listOf__string = null,
     SubnetIds: __listOf__string = null,
@@ -133,6 +138,7 @@ object DescribeBrokerResponse {
     if (Logs != null) __obj.updateDynamic("Logs")(Logs)
     if (MaintenanceWindowStartTime != null) __obj.updateDynamic("MaintenanceWindowStartTime")(MaintenanceWindowStartTime)
     if (PendingEngineVersion != null) __obj.updateDynamic("PendingEngineVersion")(PendingEngineVersion)
+    if (PendingSecurityGroups != null) __obj.updateDynamic("PendingSecurityGroups")(PendingSecurityGroups)
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds)

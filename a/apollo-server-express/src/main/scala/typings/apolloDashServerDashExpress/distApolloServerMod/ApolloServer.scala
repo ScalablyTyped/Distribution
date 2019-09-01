@@ -4,7 +4,7 @@ import typings.apolloDashServerDashCore.apolloDashServerDashCoreMod.ApolloServer
 import typings.apolloDashServerDashCore.distGraphqlOptionsMod.GraphQLServerOptions
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router
+import typings.express.expressMod.Router
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

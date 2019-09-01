@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 /**
   * Constructor - do not use, this is a singleton class. Use TzDatabase.instance() instead
+  * @throws AlreadyCreated if an instance already exists
+  * @throws timezonecomplete.InvalidTimeZoneData if `data` is empty or invalid
   */
 class TzDatabase protected ()
   extends typings.timezonecomplete.distLibTzDashDatabaseMod.TzDatabase
@@ -25,12 +27,14 @@ object TzDatabase extends js.Object {
     *
     * @param data TZ data as JSON object (from one of the tzdata NPM modules).
     *             If not given, Timezonecomplete will search for installed modules.
+    * @throws timezonecomplete.InvalidTimeZoneData if `data` or the global time zone data is invalid
     */
   def init(): Unit = js.native
   def init(data: js.Any): Unit = js.native
   def init(data: js.Array[_]): Unit = js.native
   /**
     * Single instance of this database
+    * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
     */
   def instance(): typings.timezonecomplete.distLibTzDashDatabaseMod.TzDatabase = js.native
 }

@@ -62,6 +62,7 @@ import typings.grommet.grommetStrings.zoomOut
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
@@ -89,7 +90,7 @@ trait BoxProps extends js.Object {
   var elevation: js.UndefOr[none | xsmall | small | medium | large | xlarge | String] = js.undefined
   var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
   var flex: js.UndefOr[grow | shrink | Boolean | Anon_Grow] = js.undefined
-  var gap: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
+  var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
   var justify: js.UndefOr[start | center | between | around | evenly | end] = js.undefined
@@ -123,7 +124,7 @@ object BoxProps {
     elevation: none | xsmall | small | medium | large | xlarge | String = null,
     fill: horizontal | vertical | Boolean = null,
     flex: grow | shrink | Boolean | Anon_Grow = null,
-    gap: xxsmall | xsmall | small | medium | large | xlarge | String = null,
+    gap: GapType = null,
     gridArea: GridAreaType = null,
     height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String = null,
     justify: start | center | between | around | evenly | end = null,

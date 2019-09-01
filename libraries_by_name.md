@@ -754,6 +754,7 @@
 | [browser-resolve](./b/browser-resolve) | resolve which handles browser field support in pac | resolve, browser |
 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing | browser sync, css, live reload, sync |
 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration | webpack, webpack-plugin, browsersync, browser-sync, livereload, serve |
+| [browserfs](./b/browserfs) | A filesystem in your browser | filesystem, node, storage |
 | [browserify](./b/browserify) | browser-side require() the node way | browser, require, commonjs, commonj-esque, bundle, npm, javascript |
 | [browserslist](./b/browserslist) | Share target browsers between different front-end  | caniuse, browsers, target |
 | [browserslist-useragent](./b/browserslist-useragent) | A utility to match a browselist query to browser u | - |
@@ -7064,6 +7065,7 @@
 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U | uid, generator, random, token, unique, crypto, strong, base, encoding |
 | [uid-safe](./u/uid-safe) | URL and cookie safe UIDs | random, generator, uid, safe |
 | [uid2](./u/uid2) | strong uid | - |
+| [uifabric__example-data](./u/uifabric__example-data) | - | - |
 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components. | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |
 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities. | - |

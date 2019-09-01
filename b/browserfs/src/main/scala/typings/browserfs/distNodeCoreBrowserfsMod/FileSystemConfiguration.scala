@@ -1,0 +1,20 @@
+package typings.browserfs.distNodeCoreBrowserfsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FileSystemConfiguration extends js.Object {
+  var fs: String
+  var options: js.Any
+}
+
+object FileSystemConfiguration {
+  @scala.inline
+  def apply(fs: String, options: js.Any): FileSystemConfiguration = {
+    val __obj = js.Dynamic.literal(fs = fs, options = options)
+  
+    __obj.asInstanceOf[FileSystemConfiguration]
+  }
+}
+

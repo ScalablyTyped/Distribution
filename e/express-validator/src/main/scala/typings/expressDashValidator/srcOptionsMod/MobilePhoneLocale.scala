@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.expressDashValidator.expressDashValidatorStrings.any
   - typings.expressDashValidator.expressDashValidatorStrings.`ar-AE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`ar-BH`
   - typings.expressDashValidator.expressDashValidatorStrings.`ar-DZ`
   - typings.expressDashValidator.expressDashValidatorStrings.`ar-EG`
   - typings.expressDashValidator.expressDashValidatorStrings.`ar-JO`
@@ -23,12 +24,14 @@ import scala.scalajs.js.annotation._
   - typings.expressDashValidator.expressDashValidatorStrings.`da-DK`
   - typings.expressDashValidator.expressDashValidatorStrings.`el-GR`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-AU`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-CA`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-GB`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-GH`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-HK`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-IE`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-IN`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-KE`
+  - typings.expressDashValidator.expressDashValidatorStrings.`en-MT`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-MU`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-NG`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-NZ`
@@ -38,9 +41,9 @@ import scala.scalajs.js.annotation._
   - typings.expressDashValidator.expressDashValidatorStrings.`en-TZ`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-UG`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-US`
-  - typings.expressDashValidator.expressDashValidatorStrings.`en-CA`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-ZA`
   - typings.expressDashValidator.expressDashValidatorStrings.`en-ZM`
+  - typings.expressDashValidator.expressDashValidatorStrings.`es-CL`
   - typings.expressDashValidator.expressDashValidatorStrings.`es-ES`
   - typings.expressDashValidator.expressDashValidatorStrings.`es-MX`
   - typings.expressDashValidator.expressDashValidatorStrings.`es-PY`
@@ -48,6 +51,7 @@ import scala.scalajs.js.annotation._
   - typings.expressDashValidator.expressDashValidatorStrings.`et-EE`
   - typings.expressDashValidator.expressDashValidatorStrings.`fa-IR`
   - typings.expressDashValidator.expressDashValidatorStrings.`fi-FI`
+  - typings.expressDashValidator.expressDashValidatorStrings.`fj-FJ`
   - typings.expressDashValidator.expressDashValidatorStrings.`fo-FO`
   - typings.expressDashValidator.expressDashValidatorStrings.`fr-FR`
   - typings.expressDashValidator.expressDashValidatorStrings.`he-IL`
@@ -60,6 +64,7 @@ import scala.scalajs.js.annotation._
   - typings.expressDashValidator.expressDashValidatorStrings.`lt-LT`
   - typings.expressDashValidator.expressDashValidatorStrings.`ms-MY`
   - typings.expressDashValidator.expressDashValidatorStrings.`nb-NO`
+  - typings.expressDashValidator.expressDashValidatorStrings.`nl-NL`
   - typings.expressDashValidator.expressDashValidatorStrings.`nn-NO`
   - typings.expressDashValidator.expressDashValidatorStrings.`pl-PL`
   - typings.expressDashValidator.expressDashValidatorStrings.`pt-PT`

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "storybook__theming"
-version := "5.1.11-ab70e7"
+version := "5.1.11-8654d7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "emotion-theming" % "10.0.14-33966f",
+  "org.scalablytyped" %%% "emotion-theming" % "10.0.17-7dc193",
   "org.scalablytyped" %%% "emotion__core" % "10.0.14-6f3c99",
   "org.scalablytyped" %%% "emotion__serialize" % "0.11.8-7e7b05",
   "org.scalablytyped" %%% "emotion__styled" % "10.0.15-4c0d76",

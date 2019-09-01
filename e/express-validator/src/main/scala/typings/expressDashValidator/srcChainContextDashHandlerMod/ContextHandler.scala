@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ContextHandler[Chain] extends js.Object {
+  def bail(): Chain = js.native
   def `if`(condition: CustomValidator): Chain = js.native
   def `if`(condition: ValidationChain): Chain = js.native
   def optional(): Chain = js.native

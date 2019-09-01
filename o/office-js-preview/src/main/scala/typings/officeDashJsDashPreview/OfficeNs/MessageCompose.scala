@@ -456,6 +456,8 @@ trait MessageCompose extends Message {
     * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
     * 
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    * 
+    * @beta
     */
   def getItemIdAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**
@@ -482,6 +484,8 @@ trait MessageCompose extends Message {
     * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    * 
+    * @beta
     */
   def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native

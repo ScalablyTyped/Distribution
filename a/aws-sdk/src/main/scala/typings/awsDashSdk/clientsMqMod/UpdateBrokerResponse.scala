@@ -25,6 +25,10 @@ trait UpdateBrokerResponse extends js.Object {
     * The list of information about logs to be enabled for the specified broker.
     */
   var Logs: js.UndefOr[typings.awsDashSdk.clientsMqMod.Logs] = js.undefined
+  /**
+    * The list of security groups (1 minimum, 5 maximum) that authorize connections to brokers.
+    */
+  var SecurityGroups: js.UndefOr[__listOf__string] = js.undefined
 }
 
 object UpdateBrokerResponse {
@@ -34,7 +38,8 @@ object UpdateBrokerResponse {
     BrokerId: __string = null,
     Configuration: ConfigurationId = null,
     EngineVersion: __string = null,
-    Logs: Logs = null
+    Logs: Logs = null,
+    SecurityGroups: __listOf__string = null
   ): UpdateBrokerResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
@@ -42,6 +47,7 @@ object UpdateBrokerResponse {
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (Logs != null) __obj.updateDynamic("Logs")(Logs)
+    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)
     __obj.asInstanceOf[UpdateBrokerResponse]
   }
 }

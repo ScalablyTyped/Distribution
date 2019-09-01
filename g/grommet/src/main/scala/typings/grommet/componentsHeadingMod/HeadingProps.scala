@@ -6,12 +6,9 @@ import typings.grommet.grommetStrings.`3`
 import typings.grommet.grommetStrings.`4`
 import typings.grommet.grommetStrings.`5`
 import typings.grommet.grommetStrings.`6`
-import typings.grommet.grommetStrings.center
-import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
@@ -19,6 +16,7 @@ import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
+import typings.grommet.utilsMod.TextAlignType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +33,7 @@ trait HeadingProps extends js.Object {
   var margin: js.UndefOr[MarginType] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
-  var textAlign: js.UndefOr[start | center | end] = js.undefined
+  var textAlign: js.UndefOr[TextAlignType] = js.undefined
   var truncate: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -51,7 +49,7 @@ object HeadingProps {
     margin: MarginType = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large | xlarge | String = null,
-    textAlign: start | center | end = null,
+    textAlign: TextAlignType = null,
     truncate: js.UndefOr[Boolean] = js.undefined
   ): HeadingProps = {
     val __obj = js.Dynamic.literal()
@@ -64,7 +62,7 @@ object HeadingProps {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
     if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate)
     __obj.asInstanceOf[HeadingProps]
   }

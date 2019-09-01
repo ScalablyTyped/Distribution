@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "emotion" : "10.0.14"
+      "emotion" : "10.0.17"
     }
   ],
   "test-dependencies" : [
     {
-      "emotion" : "10.0.14"
+      "emotion" : "10.0.17"
     }
   ],
   "compile-devDependencies" : [

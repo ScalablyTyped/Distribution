@@ -49,9 +49,9 @@ trait StringifyOptions extends js.Object {
   	queryString.stringify({a: 1, b: 2, c: 3}, {
   		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
   	});
-  	// => 'c=3&a=1&b=2'
+  	//=> 'c=3&a=1&b=2'
   	queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
-  	// => 'b=1&c=2&a=3'
+  	//=> 'b=1&c=2&a=3'
   	```
   	*/
   val sort: js.UndefOr[(js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`] = js.undefined

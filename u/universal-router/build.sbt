@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "universal-router"
-version := "8.2.1-ccf1a9"
+version := "8.2.1-bf52b7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-1d53eb",
+  "org.scalablytyped" %%% "path-to-regexp" % "3.1.0-9682d2",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

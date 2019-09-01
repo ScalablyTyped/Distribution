@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion
 
-Typings are for version 10.0.14
+Typings are for version 10.0.17
 
 ## Library description:
 The Next Generation of CSS-in-JS.

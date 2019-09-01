@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Rating: ComponentType[RatingProps] = js.native
-  val Skeleton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverridableComponent<{  props  :{  disableAnimate ? :boolean,   height ? :any,   variant ? :'text' | 'rect' | 'circle',   width ? :any},   defaultComponent  :'div',   classKey  :SkeletonClassKey}> */ js.Any = js.native
+  val Skeleton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverridableComponent<{  props  :{  disableAnimate ? :boolean,   height ? :number | string,   variant ? :'text' | 'rect' | 'circle',   width ? :number | string},   defaultComponent  :'div',   classKey  :SkeletonClassKey}> */ js.Any = js.native
   val SpeedDial: ComponentType[SpeedDialProps] = js.native
   val SpeedDialAction: ComponentType[SpeedDialActionProps] = js.native
   val SpeedDialIcon: ComponentType[SpeedDialIconProps] = js.native

@@ -47,6 +47,8 @@ trait AttachmentDetails extends js.Object {
     * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
     * 
     * [Api set: Mailbox Preview]
+    * 
+    * @beta
     */
   var url: String
 }

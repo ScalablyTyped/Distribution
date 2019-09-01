@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redis-mock"
-version := "0.17-dt-20180214Z-b3d9b7"
+version := "0.17-dt-20180214Z-f077d0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-827266",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-eb12e8",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

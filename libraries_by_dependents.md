@@ -3089,6 +3089,7 @@
 | 28 | [asn1js](./a/asn1js) | asn1js is a pure JavaScript library implementing t
 | 28 | [azure-sb](./a/azure-sb) | Microsoft Azure Service Bus Service Library for no
 | 28 | [blueprintjs__select](./b/blueprintjs__select) | Components related to selecting items from a list
+| 28 | [browserfs](./b/browserfs) | A filesystem in your browser
 | 28 | [cesium](./c/cesium) | CesiumJS is a JavaScript library for creating 3D g
 | 28 | [cipher-base](./c/cipher-base) | abstract base class for crypto-streams
 | 28 | [convert-hrtime](./c/convert-hrtime) | Convert the result of process.hrtime() to seconds,

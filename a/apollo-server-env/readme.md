@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-env
 
-Typings are for version 2.4.2
+Typings are for version 2.4.3
 
 
 

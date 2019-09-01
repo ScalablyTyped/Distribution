@@ -19,7 +19,6 @@ import typings.grommet.grommetStrings.full
 import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.stretch
@@ -29,6 +28,7 @@ import typings.grommet.grommetStrings.xsmall
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
@@ -41,7 +41,7 @@ trait GridProps extends js.Object {
   var align: js.UndefOr[start | center | end | stretch] = js.undefined
   var alignContent: js.UndefOr[AlignContentType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var areas: js.UndefOr[js.Array[Anon_End]] = js.undefined
+  var areas: js.UndefOr[js.Array[Anon_End | js.Array[String]]] = js.undefined
   var as: js.UndefOr[PolymorphicType] = js.undefined
   var columns: js.UndefOr[
     (js.Array[
@@ -49,7 +49,7 @@ trait GridProps extends js.Object {
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String
   ] = js.undefined
   var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
-  var gap: js.UndefOr[small | medium | large | none | Anon_Column | String] = js.undefined
+  var gap: js.UndefOr[GapType | Anon_Column] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var justify: js.UndefOr[start | center | end | stretch] = js.undefined
   var justifyContent: js.UndefOr[start | center | end | between | around | stretch] = js.undefined
@@ -69,13 +69,13 @@ object GridProps {
     align: start | center | end | stretch = null,
     alignContent: AlignContentType = null,
     alignSelf: AlignSelfType = null,
-    areas: js.Array[Anon_End] = null,
+    areas: js.Array[Anon_End | js.Array[String]] = null,
     as: PolymorphicType = null,
     columns: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String = null,
     fill: horizontal | vertical | Boolean = null,
-    gap: small | medium | large | none | Anon_Column | String = null,
+    gap: GapType | Anon_Column = null,
     gridArea: GridAreaType = null,
     justify: start | center | end | stretch = null,
     justifyContent: start | center | end | between | around | stretch = null,

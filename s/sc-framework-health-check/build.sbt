@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "sc-framework-health-check"
-version := "2.0-dt-20181218Z-62092b"
+version := "2.0-dt-20181218Z-44b964"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-105136",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-517334",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-676404",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-f1a335",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190807Z-2e6f4c",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-3bd41f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-bf387c",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-2bbbb8",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-0db06c",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190807Z-35c54c",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-db4fa8",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-777895",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-2a850b",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-a929d1",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-758b64",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-a273f8",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-85ecba",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

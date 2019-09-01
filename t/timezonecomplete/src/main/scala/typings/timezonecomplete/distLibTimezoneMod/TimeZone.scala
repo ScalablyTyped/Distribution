@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
   * Do not use this constructor, use the static
   * TimeZone.zone() method instead.
   * @param name NORMALIZED name, assumed to be correct
-  * @param dst	Adhere to Daylight Saving Time if applicable, ignored for local time and fixed offsets
+  * @param dst Adhere to Daylight Saving Time if applicable, ignored for local time and fixed offsets
+  * @throws timezonecomplete.NotFound.Zone if the given zone name doesn't exist
+  * @throws timezonecomplete.InvalidTimeZoneData if the time zone database is invalid
   */
 class TimeZone protected () extends js.Object {
   /**
@@ -40,6 +42,14 @@ class TimeZone protected () extends js.Object {
     * Allow not using instanceof
     */
   var classKind: String = js.native
+  /**
+    * Zone abbreviation at given UTC timestamp e.g. CEST for Central European Summer Time.
+    *
+    * @param utcTime
+    * @param dstDependent
+    * @throws timezonecomplete.NotFound.Zone if zone name not found or a linked zone not found
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
+    */
   def abbreviationForUtc(utcTime: TimeStruct): String = js.native
   def abbreviationForUtc(utcTime: TimeStruct, dstDependent: Boolean): String = js.native
   /**
@@ -55,6 +65,8 @@ class TimeZone protected () extends js.Object {
     * @param dstDependent (default true) set to false for a DST-agnostic abbreviation
     *
     * @return "local" for local timezone, the offset for an offset zone, or the abbreviation for a proper zone.
+    * @throws timezonecomplete.NotFound.Zone if zone name not found or a linked zone not found
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def abbreviationForUtc(
     year: js.UndefOr[Double],
@@ -66,32 +78,42 @@ class TimeZone protected () extends js.Object {
     milli: js.UndefOr[Double],
     dstDependent: js.UndefOr[Boolean]
   ): String = js.native
+  /**
+    * Whether DST is enabled
+    * @throws nothing
+    */
   def dst(): Boolean = js.native
   /**
     * Equality operator. Maps zero offsets and different names for UTC onto
     * each other. Other time zones are not mapped onto each other.
+    * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
     */
   def equals(other: TimeZone): Boolean = js.native
   /**
     * Does this zone have Daylight Saving Time at all?
+    * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
     */
   def hasDst(): Boolean = js.native
   /**
     * Returns true iff the constructor arguments were identical, so UTC !== GMT
+    * @throws nothing
     */
   def identical(other: TimeZone): Boolean = js.native
   /**
     * Is this zone equivalent to UTC?
+    * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
     */
   def isUtc(): Boolean = js.native
   /**
     * The kind of time zone (Local/Offset/Proper)
+    * @throws nothing
     */
   def kind(): TimeZoneKind = js.native
   /**
     * The time zone identifier. Can be an offset "-01:30" or an
     * IANA time zone name "Europe/Amsterdam", or "localtime" for
     * the local time zone.
+    * @throws nothing
     */
   def name(): String = js.native
   /**
@@ -105,6 +127,7 @@ class TimeZone protected () extends js.Object {
     * @param opt	(optional) Round up or down? Default: up
     *
     * @returns	time struct in zone time, normalized.
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def normalizeZoneTime(localTime: TimeStruct): TimeStruct = js.native
   def normalizeZoneTime(localTime: TimeStruct, opt: NormalizeOption): TimeStruct = js.native
@@ -119,14 +142,35 @@ class TimeZone protected () extends js.Object {
     * @param opt	(optional) Round up or down? Default: up
     *
     * @returns	unix milliseconds in zone time, normalized.
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def normalizeZoneTime(localUnixMillis: Double): Double = js.native
   def normalizeZoneTime(localUnixMillis: Double, opt: NormalizeOption): Double = js.native
   /**
     * Calculate timezone offset including DST from a UTC time.
     * @return the offset of this time zone with respect to UTC at the given time, in minutes.
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def offsetForUtc(offsetForUtc: TimeStruct): Double = js.native
+  /**
+    * Calculate timezone offset including DST from a UTC time.
+    * @param year
+    * @param month 1-12
+    * @param day
+    * @param hour
+    * @param minute
+    * @param second
+    * @param milli
+    * @return the offset of this time zone with respect to UTC at the given time, in minutes.
+    * @throws timezonecomplete.Argument.Year for invalid year
+    * @throws timezonecomplete.Argument.Month for invalid month
+    * @throws timezonecomplete.Argument.Day for invalid day
+    * @throws timezonecomplete.Argument.Hour for invalid hour
+    * @throws timezonecomplete.Argument.Minute for invalid minute
+    * @throws timezonecomplete.Argument.Second for invalid second
+    * @throws timezonecomplete.Argument.Milli for invalid milliseconds
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
+    */
   def offsetForUtc(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
@@ -144,8 +188,16 @@ class TimeZone protected () extends js.Object {
     *
     * @param date: the date
     * @param funcs: the set of functions to use: get() or getUTC()
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def offsetForUtcDate(date: Date, funcs: DateFunctions): Double = js.native
+  /**
+    * Calculate timezone offset from a zone-local time (NOT a UTC time).
+    * @param localTime the local time
+    * @return the offset of this time zone with respect to UTC at the given time, in minutes.
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
+    */
+  def offsetForZone(localTime: TimeStruct): Double = js.native
   /**
     * Calculate timezone offset from a zone-local time (NOT a UTC time).
     * @param year local full year
@@ -156,8 +208,15 @@ class TimeZone protected () extends js.Object {
     * @param second local second 0-59
     * @param millisecond local millisecond 0-999
     * @return the offset of this time zone with respect to UTC at the given time, in minutes.
+    * @throws timezonecomplete.Argument.Year for invalid year
+    * @throws timezonecomplete.Argument.Month for invalid month
+    * @throws timezonecomplete.Argument.Day for invalid day
+    * @throws timezonecomplete.Argument.Hour for invalid hour
+    * @throws timezonecomplete.Argument.Minute for invalid minute
+    * @throws timezonecomplete.Argument.Second for invalid second
+    * @throws timezonecomplete.Argument.Milli for invalid milliseconds
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
-  def offsetForZone(localTime: TimeStruct): Double = js.native
   def offsetForZone(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
@@ -175,13 +234,34 @@ class TimeZone protected () extends js.Object {
     *
     * @param date: the date
     * @param funcs: the set of functions to use: get() or getUTC()
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def offsetForZoneDate(date: Date, funcs: DateFunctions): Double = js.native
   /**
     * Calculate timezone standard offset excluding DST from a UTC time.
     * @return the standard offset of this time zone with respect to UTC at the given time, in minutes.
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
     */
   def standardOffsetForUtc(offsetForUtc: TimeStruct): Double = js.native
+  /**
+    * Calculate timezone standard offset excluding DST from a UTC time.
+    * @return the standard offset of this time zone with respect to UTC at the given time, in minutes.
+    * @param year
+    * @param month 1-12
+    * @param day
+    * @param hour
+    * @param minute
+    * @param second
+    * @param milli
+    * @throws timezonecomplete.Argument.Year for invalid year
+    * @throws timezonecomplete.Argument.Month for invalid month
+    * @throws timezonecomplete.Argument.Day for invalid day
+    * @throws timezonecomplete.Argument.Hour for invalid hour
+    * @throws timezonecomplete.Argument.Minute for invalid minute
+    * @throws timezonecomplete.Argument.Second for invalid second
+    * @throws timezonecomplete.Argument.Milli for invalid milliseconds
+    * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
+    */
   def standardOffsetForUtc(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
@@ -205,39 +285,50 @@ object TimeZone extends js.Object {
     * Find in cache or create zone
     * @param name	Time zone name
     * @param dst	Adhere to Daylight Saving Time?
+    * @throws timezonecomplete.NotFound.Zone if the zone doesn't exist in the time zone database
     */
   var _findOrCreate: js.Any = js.native
+  /**
+    * Returns true iff the first non-whitespace character of s is +, -, or Z
+    * @param s
+    * @throws nothing
+    */
   var _isOffsetString: js.Any = js.native
   /**
-    * Normalize a string so it can be used as a key for a
-    * cache lookup
+    * Normalize a string so it can be used as a key for a cache lookup
+    * @throws Argument.S if s is empty
     */
   var _normalizeString: js.Any = js.native
   /**
     * The local time zone for a given date. Note that
     * the time zone varies with the date: amsterdam time for
     * 2014-01-01 is +01:00 and amsterdam time for 2014-07-01 is +02:00
+    * @throws nothing
     */
   def local(): TimeZone = js.native
   /**
     * Convert an offset number into an offset string
     * @param offset The offset in minutes from UTC e.g. 90 minutes
     * @return the offset in ISO notation "+01:30" for +90 minutes
+    * @throws Argument.Offset if offset is not a finite number or not within -24 * 60 ... +24 * 60 minutes
     */
   def offsetToString(offset: Double): String = js.native
   /**
     * String to offset conversion.
     * @param s	Formats: "-01:00", "-0100", "-01", "Z"
     * @return offset w.r.t. UTC in minutes
+    * @throws timezonecomplete.Argument.S if s cannot be parsed
     */
   def stringToOffset(s: String): Double = js.native
   /**
     * The UTC time zone.
+    * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def utc(): TimeZone = js.native
   /**
     * Time zone with a fixed offset
     * @param offset	offset w.r.t. UTC in minutes, e.g. 90 for +01:30
+    * @throws timezonecomplete.Argument.Offset if the offset is not within -24h...+24h (in minutes)
     */
   def zone(offset: Double): TimeZone = js.native
   /**
@@ -252,6 +343,8 @@ object TimeZone extends js.Object {
     * @param dst	Optional, default true: adhere to Daylight Saving Time if applicable. Note for
     *              "localtime", timezonecomplete will adhere to the computer settings, the DST flag
     *              does not have any effect.
+    * @throws timezonecomplete.Argument.S if s cannot be parsed
+    * @throws timezonecomplete.NotFound.Zone if the zone name doesn't exist in the time zone database
     */
   def zone(s: String): TimeZone = js.native
   def zone(s: String, dst: Boolean): TimeZone = js.native

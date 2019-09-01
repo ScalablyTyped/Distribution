@@ -116,6 +116,13 @@ package object clientsEcsMod {
   type Double = scala.Double
   type EnvironmentVariables = js.Array[KeyValuePair]
   type Failures = js.Array[Failure]
+  type FirelensConfigurationOptionsMap = StringDictionary[String]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.fluentd
+    - typings.awsDashSdk.awsDashSdkStrings.fluentbit
+    - java.lang.String
+  */
+  type FirelensConfigurationType = _FirelensConfigurationType | java.lang.String
   type GpuIds = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.HEALTHY
@@ -149,6 +156,7 @@ package object clientsEcsMod {
     - typings.awsDashSdk.awsDashSdkStrings.fluentd
     - typings.awsDashSdk.awsDashSdkStrings.awslogs
     - typings.awsDashSdk.awsDashSdkStrings.splunk
+    - typings.awsDashSdk.awsDashSdkStrings.awsfirelens
     - java.lang.String
   */
   type LogDriver = _LogDriver | java.lang.String

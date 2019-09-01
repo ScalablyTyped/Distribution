@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait TimeSource extends js.Object {
   /**
     * Return the current date+time as a javascript Date object
+    * @throws nothing
     */
   def now(): Date
 }

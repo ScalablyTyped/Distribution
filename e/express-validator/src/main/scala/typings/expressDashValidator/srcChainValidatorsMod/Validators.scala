@@ -1,6 +1,7 @@
 package typings.expressDashValidator.srcChainValidatorsMod
 
 import typings.expressDashValidator.Anon_CheckFalsy
+import typings.expressDashValidator.Anon_Max
 import typings.expressDashValidator.expressDashValidatorStrings.ES
 import typings.expressDashValidator.expressDashValidatorStrings.any
 import typings.expressDashValidator.srcBaseMod.CustomValidator
@@ -46,6 +47,7 @@ trait Validators[Return] extends js.Object {
   def isAlphanumeric(): Return = js.native
   def isAlphanumeric(locale: AlphanumericLocale): Return = js.native
   def isArray(): Return = js.native
+  def isArray(options: Anon_Max): Return = js.native
   def isAscii(): Return = js.native
   def isBase32(): Return = js.native
   def isBase64(): Return = js.native

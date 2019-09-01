@@ -1,6 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerMod
 
-import typings.officeDashUiDashFabricDashReact.Anon_Key_207955917
+import typings.officeDashUiDashFabricDashReact.Anon_Key
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState
 import typings.react.reactMod.FunctionComponent
 import scala.scalajs.js
@@ -13,6 +13,6 @@ object ^ extends js.Object {
   val CompactPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
   val ListPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
   val NormalPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
-  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItem with Anon_Key_207955917 = js.native
+  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItem with Anon_Key = js.native
 }
 

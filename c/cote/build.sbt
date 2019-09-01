@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "cote"
-version := "0.19-dt-20190227Z-249746"
+version := "0.19-dt-20190227Z-3b47a5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "eventemitter2" % "5.0.1-8fc832",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190820Z-c250b3",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-57c024",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-58835f",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

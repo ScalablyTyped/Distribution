@@ -5,6 +5,7 @@ import typings.grommet.Anon_ArgsColorLocation
 import typings.grommet.Anon_Dark
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait WorldMapProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var color: js.UndefOr[String | Anon_Dark] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   var continents: js.UndefOr[js.Array[Anon_Africa]] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var hoverColor: js.UndefOr[String | Anon_Dark] = js.undefined
@@ -28,7 +29,7 @@ object WorldMapProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
-    color: String | Anon_Dark = null,
+    color: ColorType = null,
     continents: js.Array[Anon_Africa] = null,
     gridArea: GridAreaType = null,
     hoverColor: String | Anon_Dark = null,

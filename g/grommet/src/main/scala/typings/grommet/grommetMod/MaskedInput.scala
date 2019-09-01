@@ -23,19 +23,19 @@ class MaskedInput protected ()
   extends Component[
       MaskedInputProps with (Omit[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-        id | name | mask | plain | size | value
+        id | mask | name | plain | size | value
       ]), 
       ComponentState, 
       js.Any
     ] {
   def this(props: MaskedInputProps with (Omit[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-        id | name | mask | plain | size | value
+        id | mask | name | plain | size | value
       ])) = this()
   def this(
     props: MaskedInputProps with (Omit[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-        id | name | mask | plain | size | value
+        id | mask | name | plain | size | value
       ]),
     context: js.Any
   ) = this()

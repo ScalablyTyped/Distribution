@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactM
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.atUifabricExampleDashData.IExampleExtendedPersonaPropskeystringnumber
 import typings.atUifabricFoundation.libIComponentMod.IStylesFunctionOrObject
 import typings.atUifabricFoundation.libIComponentMod.IViewComponent
 import typings.atUifabricMergeDashStyles.libIRawStyleBaseMod.IFontFace
@@ -56,7 +57,6 @@ import typings.officeDashUiDashFabricDashReact.Anon_IsMeasured
 import typings.officeDashUiDashFabricDashReact.Anon_IsSize10
 import typings.officeDashUiDashFabricDashReact.Anon_Item
 import typings.officeDashUiDashFabricDashReact.Anon_Key
-import typings.officeDashUiDashFabricDashReact.Anon_Key_207955917
 import typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDotTypesMod.IAnnouncedProps
 import typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps
@@ -134,7 +134,6 @@ import typings.officeDashUiDashFabricDashReact.libComponentsResizeGroupResizeGro
 import typings.officeDashUiDashFabricDashReact.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneContext
 import typings.officeDashUiDashFabricDashReact.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps
-import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.IExtendedPersonaProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps
 import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerCircleShimmerCircleDotTypesMod.IShimmerCircleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.IShimmerProps
@@ -439,8 +438,8 @@ object ^ extends js.Object {
   val colProperties: js.Array[String] = js.native
   val divProperties: js.Array[String] = js.native
   val formProperties: js.Array[String] = js.native
-  val groupOne: js.Array[IExtendedPersonaProps] = js.native
-  val groupTwo: js.Array[IExtendedPersonaProps] = js.native
+  val groupOne: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
+  val groupTwo: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
   val hiddenContentStyle: IRawStyle = js.native
   val htmlElementProperties: js.Array[String] = js.native
   val iframeProperties: js.Array[String] = js.native
@@ -449,12 +448,12 @@ object ^ extends js.Object {
   val inputProperties: js.Array[String] = js.native
   val labelProperties: js.Array[String] = js.native
   val liProperties: js.Array[String] = js.native
-  val mru: js.Array[IExtendedPersonaProps] = js.native
+  val mru: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
   val noWrap: IRawStyle = js.native
   val normalize: IRawStyle = js.native
   val olProperties: js.Array[String] = js.native
   val optionProperties: js.Array[String] = js.native
-  val people: js.Array[IExtendedPersonaProps with Anon_Key] = js.native
+  val people: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
   val selectProperties: js.Array[String] = js.native
   val tableProperties: js.Array[String] = js.native
   val tdProperties: js.Array[String] = js.native
@@ -729,7 +728,7 @@ object ^ extends js.Object {
   def createGenericItem(
     name: String,
     currentValidationState: typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState
-  ): IGenericItem with Anon_Key_207955917 = js.native
+  ): IGenericItem with Anon_Key = js.native
   def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = js.native
   def createTheme(theme: IPartialTheme): ITheme = js.native
   def createTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native

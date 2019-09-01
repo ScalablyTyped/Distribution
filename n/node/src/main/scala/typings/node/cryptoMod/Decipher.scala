@@ -1,14 +1,14 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
-import typings.node.streamMod.Duplex
+import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("crypto", "Decipher")
 @js.native
-class Decipher protected () extends Duplex {
+class Decipher protected () extends Transform {
   def `final`(): Buffer = js.native
   def `final`(output_encoding: java.lang.String): java.lang.String = js.native
   def setAutoPadding(): this.type = js.native

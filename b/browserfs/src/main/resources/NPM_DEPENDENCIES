@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "browserfs" : "1.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "browserfs" : "1.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

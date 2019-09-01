@@ -106,6 +106,8 @@ object EventType extends js.Object {
     * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
     * 
     * [Api set: Mailbox Preview]
+    * 
+    * @beta
     */
   @js.native
   sealed trait EnhancedLocationsChanged extends EventType

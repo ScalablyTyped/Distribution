@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion-theming
 
-Typings are for version 10.0.14
+Typings are for version 10.0.17
 
 ## Library description:
 A CSS-in-JS theming solution, inspired by styled-components

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jssip"
-version := "3.3-dt-20190820Z-a67848"
+version := "3.3-dt-20190830Z-8587f8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

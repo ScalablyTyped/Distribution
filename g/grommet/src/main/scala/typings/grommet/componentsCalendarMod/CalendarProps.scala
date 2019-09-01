@@ -1,7 +1,7 @@
 package typings.grommet.componentsCalendarMod
 
-import typings.grommet.grommetStrings.`0`
-import typings.grommet.grommetStrings.`1`
+import typings.grommet.grommetNumbers.`0`
+import typings.grommet.grommetNumbers.`1`
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small

@@ -384,6 +384,9 @@ object reactDashNativeStrings {
   sealed trait bold extends js.Object
   
   @js.native
+  sealed trait boldTextChanged extends AccessibilityEventName
+  
+  @js.native
   sealed trait bookmarks extends js.Object
   
   @js.native
@@ -672,6 +675,9 @@ object reactDashNativeStrings {
   sealed trait granted extends PermissionStatus
   
   @js.native
+  sealed trait grayscaleChanged extends AccessibilityEventName
+  
+  @js.native
   sealed trait handled extends js.Object
   
   @js.native
@@ -728,6 +734,9 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait interactive extends js.Object
+  
+  @js.native
+  sealed trait invertColorsChanged extends AccessibilityEventName
   
   @js.native
   sealed trait ios extends PlatformOSType
@@ -1069,6 +1078,12 @@ object reactDashNativeStrings {
   sealed trait recents extends js.Object
   
   @js.native
+  sealed trait reduceMotionChanged extends AccessibilityEventName
+  
+  @js.native
+  sealed trait reduceTransparencyChanged extends AccessibilityEventName
+  
+  @js.native
   sealed trait register extends PushNotificationEventName
   
   @js.native
@@ -1114,6 +1129,9 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait screen extends js.Object
+  
+  @js.native
+  sealed trait screenReaderChanged extends AccessibilityEventName
   
   @js.native
   sealed trait scroll extends js.Object
@@ -1573,6 +1591,8 @@ object reactDashNativeStrings {
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
+  def boldTextChanged: boldTextChanged = "boldTextChanged".asInstanceOf[boldTextChanged]
+  @scala.inline
   def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -1755,6 +1775,8 @@ object reactDashNativeStrings {
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
   @scala.inline
+  def grayscaleChanged: grayscaleChanged = "grayscaleChanged".asInstanceOf[grayscaleChanged]
+  @scala.inline
   def handled: handled = "handled".asInstanceOf[handled]
   @scala.inline
   def hardwareBackPress: hardwareBackPress = "hardwareBackPress".asInstanceOf[hardwareBackPress]
@@ -1790,6 +1812,8 @@ object reactDashNativeStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def interactive: interactive = "interactive".asInstanceOf[interactive]
+  @scala.inline
+  def invertColorsChanged: invertColorsChanged = "invertColorsChanged".asInstanceOf[invertColorsChanged]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
@@ -2011,6 +2035,10 @@ object reactDashNativeStrings {
   @scala.inline
   def recents: recents = "recents".asInstanceOf[recents]
   @scala.inline
+  def reduceMotionChanged: reduceMotionChanged = "reduceMotionChanged".asInstanceOf[reduceMotionChanged]
+  @scala.inline
+  def reduceTransparencyChanged: reduceTransparencyChanged = "reduceTransparencyChanged".asInstanceOf[reduceTransparencyChanged]
+  @scala.inline
   def register: register = "register".asInstanceOf[register]
   @scala.inline
   def registrationError: registrationError = "registrationError".asInstanceOf[registrationError]
@@ -2040,6 +2068,8 @@ object reactDashNativeStrings {
   def scale: scale = "scale".asInstanceOf[scale]
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
+  @scala.inline
+  def screenReaderChanged: screenReaderChanged = "screenReaderChanged".asInstanceOf[screenReaderChanged]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
