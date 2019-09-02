@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uuidjs"
-version := "4.2.3-839ac0"
+version := "4.2.4-cf7d22"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

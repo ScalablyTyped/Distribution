@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.9.2-dfdbe6"
+version := "2.9.3-6ae15a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-5363f1",
-  "org.scalablytyped" %%% "apollo-cache-control" % "0.8.3-fdf7f4",
+  "org.scalablytyped" %%% "apollo-cache-control" % "0.8.4-4e094c",
   "org.scalablytyped" %%% "apollo-datasource" % "0.6.3-9400c3",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.4.5-9e82eb",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.4.6-689d78",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-4a2a3e",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-4d60e6",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-a17842",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.9.2-c499c9",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.9.3-edb1da",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.3-6588ee",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.3-f0e4b4",
-  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.3-f17c7d",
-  "org.scalablytyped" %%% "apollo-server-types" % "0.2.3-00165b",
+  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.4-cd5149",
+  "org.scalablytyped" %%% "apollo-server-types" % "0.2.4-91a420",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.4.0-bee03d",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.24-73113c",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-3bd41f",
@@ -28,7 +28,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-0db06c",
   "org.scalablytyped" %%% "fs-capacitor" % "2.0-dt-20190509Z-eb64ff",
   "org.scalablytyped" %%% "graphql" % "14.5.4-73f550",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.10.2-f2906e",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.10.3-2e9c90",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-08e2dc",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.5-3eda9d",
   "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190826Z-a4eaa3",

@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLResponse extends js.Object {
-  var data: js.UndefOr[Record[String, _]] = js.undefined
+  var data: js.UndefOr[(Record[String, _]) | Null] = js.undefined
   var errors: js.UndefOr[js.Array[GraphQLFormattedError[Record[String, _]]]] = js.undefined
   var extensions: js.UndefOr[Record[String, _]] = js.undefined
   var http: js.UndefOr[(Pick[Response, headers]) with (Partial[Pick[Mutable[Response], status]])] = js.undefined

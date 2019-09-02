@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server-plugin-base" : "0.6.3"
+      "apollo-server-plugin-base" : "0.6.4"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server-plugin-base" : "0.6.3"
+      "apollo-server-plugin-base" : "0.6.4"
     }
   ],
   "compile-devDependencies" : [
