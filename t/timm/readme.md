@@ -1,7 +1,7 @@
 
 # Scala.js typings for timm
 
-Typings are for version 1.6.1
+Typings are for version 1.6.2
 
 ## Library description:
 Immutability helpers with fast reads and acceptable writes

@@ -1,5 +1,6 @@
 package typings.antd.libPageDashHeaderMod
 
+import typings.antd.libAvatarMod.AvatarProps
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
@@ -12,6 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PageHeaderProps extends js.Object {
+  var avatar: js.UndefOr[AvatarProps] = js.undefined
   var backIcon: js.UndefOr[ReactNode] = js.undefined
   var breadcrumb: js.UndefOr[BreadcrumbProps] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -29,6 +31,7 @@ object PageHeaderProps {
   @scala.inline
   def apply(
     title: ReactNode,
+    avatar: AvatarProps = null,
     backIcon: ReactNode = null,
     breadcrumb: BreadcrumbProps = null,
     className: String = null,
@@ -41,6 +44,7 @@ object PageHeaderProps {
     tags: ReactElement | js.Array[ReactElement] = null
   ): PageHeaderProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
     if (className != null) __obj.updateDynamic("className")(className)

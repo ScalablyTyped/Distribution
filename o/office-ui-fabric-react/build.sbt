@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "7.28.3-467c5a"
+version := "7.29.0-ae72f0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-6dcbc8",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "uifabric__example-data" % "7.0.1-fd3153",
-  "org.scalablytyped" %%% "uifabric__foundation" % "7.2.0-1eb7a3",
+  "org.scalablytyped" %%% "uifabric__foundation" % "7.3.0-9eedc6",
   "org.scalablytyped" %%% "uifabric__icons" % "7.1.2-aff24e",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "7.5.0-718e7a",
   "org.scalablytyped" %%% "uifabric__styling" % "7.6.1-357db9",

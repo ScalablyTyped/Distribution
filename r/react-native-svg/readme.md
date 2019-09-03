@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-svg
 
-Typings are for version 9.8.3
+Typings are for version 9.8.4
 
 ## Library description:
 SVG library for react-native

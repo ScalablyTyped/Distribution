@@ -15,4 +15,7 @@ package object nukaDashCarouselMod {
   type CarouselRenderControl = js.Function1[/* props */ CarouselSlideRenderControlProps, ReactNode]
   type CarouselSlideWidthProp = String | Double
   type CarouselSlidesToScrollProp = Double | auto
+  type NextButtonProps = CarouselSlideRenderControlProps
+  type PagingDotsProps = CarouselSlideRenderControlProps
+  type PreviousButtonProps = CarouselSlideRenderControlProps
 }

@@ -20,6 +20,7 @@ trait StepProps extends js.Object {
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   var status: js.UndefOr[wait | process | finish | error] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var subTitle: js.UndefOr[ReactNode] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
 }
 
@@ -33,6 +34,7 @@ object StepProps {
     onClick: MouseEventHandler[HTMLElement] = null,
     status: wait | process | finish | error = null,
     style: CSSProperties = null,
+    subTitle: ReactNode = null,
     title: ReactNode = null
   ): StepProps = {
     val __obj = js.Dynamic.literal()
@@ -43,6 +45,7 @@ object StepProps {
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepProps]
   }

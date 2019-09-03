@@ -322,6 +322,7 @@ trait CardProps extends js.Object {
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
+  var tabBarExtraContent: js.UndefOr[ReactNode | Null] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var tabList: js.UndefOr[js.Array[CardTabListType]] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
@@ -515,6 +516,7 @@ object CardProps {
     style: CSSProperties = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
+    tabBarExtraContent: ReactNode = null,
     tabIndex: Int | Double = null,
     tabList: js.Array[CardTabListType] = null,
     title: ReactNode = null,
@@ -705,6 +707,7 @@ object CardProps {
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning)
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
+    if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

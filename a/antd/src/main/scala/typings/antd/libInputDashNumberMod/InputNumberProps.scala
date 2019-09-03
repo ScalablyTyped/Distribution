@@ -283,6 +283,7 @@ trait InputNumberProps extends js.Object {
   var onPointerOverCapture: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
   var onPointerUpCapture: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
+  var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   var onProgressCapture: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -515,6 +516,7 @@ object InputNumberProps {
     onPointerOut: PointerEventHandler[HTMLInputElement] = null,
     onPointerOver: PointerEventHandler[HTMLInputElement] = null,
     onPointerUp: PointerEventHandler[HTMLInputElement] = null,
+    onPressEnter: KeyboardEventHandler[HTMLInputElement] = null,
     onProgress: ReactEventHandler[HTMLInputElement] = null,
     onRateChange: ReactEventHandler[HTMLInputElement] = null,
     onReset: FormEventHandler[HTMLInputElement] = null,
@@ -725,6 +727,7 @@ object InputNumberProps {
     if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut)
     if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver)
     if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp)
+    if (onPressEnter != null) __obj.updateDynamic("onPressEnter")(onPressEnter)
     if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange)
     if (onReset != null) __obj.updateDynamic("onReset")(onReset)

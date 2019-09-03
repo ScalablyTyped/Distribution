@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-dialog" : "7.5.5"
+      "rc-dialog" : "7.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-dialog" : "7.5.5"
+      "rc-dialog" : "7.5.7"
     }
   ],
   "compile-devDependencies" : [

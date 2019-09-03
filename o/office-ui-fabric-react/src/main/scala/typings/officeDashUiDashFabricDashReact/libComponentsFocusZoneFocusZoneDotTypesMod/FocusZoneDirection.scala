@@ -14,6 +14,13 @@ object FocusZoneDirection extends js.Object {
   @js.native
   sealed trait bidirectional extends FocusZoneDirection
   
+  /**
+    * React to all arrows. Navigate next item in DOM on right/down arrow keys and previous - left/up arrow keys.
+    * Right and Left arrow keys are swapped in RTL mode.
+    */
+  @js.native
+  sealed trait domOrder extends FocusZoneDirection
+  
   /** Only react to left/right arrows. */
   @js.native
   sealed trait horizontal extends FocusZoneDirection
@@ -23,6 +30,7 @@ object FocusZoneDirection extends js.Object {
   sealed trait vertical extends FocusZoneDirection
   
   /* 2 */ val bidirectional: typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.bidirectional with Double = js.native
+  /* 3 */ val domOrder: typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.domOrder with Double = js.native
   /* 1 */ val horizontal: typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.horizontal with Double = js.native
   /* 0 */ val vertical: typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.vertical with Double = js.native
   @JSBracketAccess

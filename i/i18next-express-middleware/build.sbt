@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "i18next-express-middleware"
-version := "1.8.1-ae8357"
+version := "1.8.2-403853"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

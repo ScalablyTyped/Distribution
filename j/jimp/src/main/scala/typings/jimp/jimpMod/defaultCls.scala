@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jimp", JSImport.Namespace)
+@JSImport("jimp", JSImport.Default)
 @js.native
-class Class protected () extends Jimp {
+class defaultCls protected () extends Jimp {
   // For custom constructors when using Jimp.appendConstructorOption
   def this(args: js.Any*) = this()
   def this(data: Bitmap) = this()

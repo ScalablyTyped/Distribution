@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait nukaDashCarouselProps {
+  type NextButtonProps = typings.nukaDashCarousel.nukaDashCarouselMod.NextButtonProps
   @scala.inline
   def NukaDashCarouselProps: CarouselProps.type = typings.nukaDashCarousel.nukaDashCarouselMod.CarouselProps
   type NukaDashCarouselProps = CarouselProps
-  @scala.inline
-  def PagingDotsProps: typings.nukaDashCarousel.nukaDashCarouselMod.PagingDotsProps.type = typings.nukaDashCarousel.nukaDashCarouselMod.PagingDotsProps
   type PagingDotsProps = typings.nukaDashCarousel.nukaDashCarouselMod.PagingDotsProps
+  type PreviousButtonProps = typings.nukaDashCarousel.nukaDashCarouselMod.PreviousButtonProps
 }
 

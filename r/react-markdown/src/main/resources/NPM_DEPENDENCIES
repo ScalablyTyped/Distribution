@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-markdown" : "4.1.0"
+      "react-markdown" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-markdown" : "4.1.0"
+      "react-markdown" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

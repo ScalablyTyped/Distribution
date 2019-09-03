@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "i18next-express-middleware" : "1.8.1"
+      "i18next-express-middleware" : "1.8.2"
     }
   ],
   "test-dependencies" : [
     {
-      "i18next-express-middleware" : "1.8.1"
+      "i18next-express-middleware" : "1.8.2"
     }
   ],
   "compile-devDependencies" : [

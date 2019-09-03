@@ -10,6 +10,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIManagerStatic extends js.Object {
   /**
+    * Used to call a native view method from JavaScript
+    *
+    * reactTag - Id of react view.
+    * commandID - Id of the native method that should be called.
+    * commandArgs - Args of the native method that we can pass from JS to native.
+    */
+  def dispatchViewManagerCommand(reactTag: Double, commandID: Double): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: Double): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
+  /**
     * Determines the location on screen, width, and height of the given view and
     * returns the values via an async callback. If successful, the callback will
     * be called with the following arguments:

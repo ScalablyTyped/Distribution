@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod
 
+import typings.antd.esAvatarMod.AvatarProps
 import typings.antd.esBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.atAntDashDesignProDashLayout.Anon_Key
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
@@ -16,6 +17,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/lib/PageHeaderWrapper.PageHeaderTabConfig */
 /* Inlined parent std.Omit<antd.antd/es/page-header.PageHeaderProps, 'title'> */
 trait PageHeaderWrapperProps extends js.Object {
+  var avatar: js.UndefOr[AvatarProps] = js.undefined
   var backIcon: js.UndefOr[ReactNode] = js.undefined
   var breadcrumb: js.UndefOr[BreadcrumbProps] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -39,6 +41,7 @@ trait PageHeaderWrapperProps extends js.Object {
 object PageHeaderWrapperProps {
   @scala.inline
   def apply(
+    avatar: AvatarProps = null,
     backIcon: ReactNode = null,
     breadcrumb: BreadcrumbProps = null,
     className: String = null,
@@ -59,6 +62,7 @@ object PageHeaderWrapperProps {
     title: ReactNode | `false` = null
   ): PageHeaderWrapperProps = {
     val __obj = js.Dynamic.literal()
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
     if (className != null) __obj.updateDynamic("className")(className)

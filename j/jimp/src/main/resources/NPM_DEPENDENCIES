@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jimp" : "0.6.4"
+      "jimp" : "0.6.7"
     }
   ],
   "test-dependencies" : [
     {
-      "jimp" : "0.6.4"
+      "jimp" : "0.6.7"
     }
   ],
   "compile-devDependencies" : [

@@ -13,6 +13,7 @@ class NavBase protected ()
   extends Component[INavProps, INavState, js.Any]
      with INav {
   def this(props: INavProps) = this()
+  var _focusZone: js.Any = js.native
   var _isGroupExpanded: js.Any = js.native
   var _isLinkSelected: js.Any = js.native
   var _onGroupHeaderClicked: js.Any = js.native

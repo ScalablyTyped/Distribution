@@ -320,8 +320,6 @@ trait antdProps {
   @scala.inline
   def TitleProps: typings.antd.esTypographyTitleMod.TitleProps.type = typings.antd.esTypographyTitleMod.TitleProps
   type TitleProps = typings.antd.esTypographyTitleMod.TitleProps
-  @scala.inline
-  def TooltipProps: typings.antd.esTooltipMod.TooltipProps.type = typings.antd.esTooltipMod.TooltipProps
   type TooltipProps = typings.antd.esTooltipMod.TooltipProps
   @scala.inline
   def TransferProps: typings.antd.esTransferMod.TransferProps.type = typings.antd.esTransferMod.TransferProps

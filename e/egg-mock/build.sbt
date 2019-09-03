@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-mock"
-version := "3.x-dt-20190327Z-22f0e2"
+version := "3.x-dt-20190327Z-c23e85"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-bf387c",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-c0b9ec",
   "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-75cd95",
-  "org.scalablytyped" %%% "egg" % "2.23.0-04b21e",
+  "org.scalablytyped" %%% "egg" % "2.23.0-e5684c",
   "org.scalablytyped" %%% "egg-cookies" % "2.2.7-990b21",
   "org.scalablytyped" %%% "egg-core" % "4.17.3-8bdbe3",
   "org.scalablytyped" %%% "egg-logger" % "2.4.1-0f2216",
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-db4fa8",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-a273f8",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "urllib" % "2.34.0-7fc55b")
+  "org.scalablytyped" %%% "urllib" % "2.34.1-261417")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
