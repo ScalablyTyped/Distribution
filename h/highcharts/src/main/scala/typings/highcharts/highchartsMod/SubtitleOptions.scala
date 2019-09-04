@@ -33,8 +33,8 @@ trait SubtitleOptions extends js.Object {
   var useHTML: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
-    * title. Can be one of `"top"`, `"middle"` and `"bottom"`. When a value is
-    * given, the title behaves as floating.
+    * title. Can be one of `"top"`, `"middle"` and `"bottom"`. When middle, the
+    * subtitle behaves as floating.
     */
   var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   /**

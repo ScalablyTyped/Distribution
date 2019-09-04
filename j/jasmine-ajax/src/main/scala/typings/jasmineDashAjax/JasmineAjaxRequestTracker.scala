@@ -10,7 +10,7 @@ trait JasmineAjaxRequestTracker extends js.Object {
   def at(index: Double): JasmineAjaxRequest = js.native
   def count(): Double = js.native
   def filter(urlToMatch: String): js.Array[JasmineAjaxRequest] = js.native
-  def filter(urlToMatch: js.Function): js.Array[JasmineAjaxRequest] = js.native
+  def filter(urlToMatch: js.Function1[/* request */ JasmineAjaxRequest, Boolean]): js.Array[JasmineAjaxRequest] = js.native
   def filter(urlToMatch: RegExp): js.Array[JasmineAjaxRequest] = js.native
   def first(): JasmineAjaxRequest = js.native
   def mostRecent(): JasmineAjaxRequest = js.native

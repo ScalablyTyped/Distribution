@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait ColorAxisEventsOptions extends js.Object {
   /**
-    * (Highcharts, Highmaps) As opposed to the `setExtremes` event, this event
-    * fires after the final min and max values are computed and corrected for
-    * `minRange`.
+    * (Highcharts, Highstock, Highmaps) As opposed to the `setExtremes` event,
+    * this event fires after the final min and max values are computed and
+    * corrected for `minRange`.
     *
     * Fires when the minimum and maximum is set for the axis, either by calling
     * the `.setExtremes()` method or by selecting an area in the chart. One
@@ -22,15 +22,16 @@ trait ColorAxisEventsOptions extends js.Object {
     */
   var afterSetExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
   /**
-    * (Highcharts, Highmaps) Fires when the legend item belonging to the
-    * colorAxis is clicked. One parameter, `event`, is passed to the function.
+    * (Highcharts, Highstock, Highmaps) Fires when the legend item belonging to
+    * the colorAxis is clicked. One parameter, `event`, is passed to the
+    * function.
     */
   var legendItemClick: js.UndefOr[js.Function] = js.undefined
   /**
-    * (Highcharts, Highmaps) Fires when the minimum and maximum is set for the
-    * axis, either by calling the `.setExtremes()` method or by selecting an
-    * area in the chart. One parameter, `event`, is passed to the function,
-    * containing common event information.
+    * (Highcharts, Highstock, Highmaps) Fires when the minimum and maximum is
+    * set for the axis, either by calling the `.setExtremes()` method or by
+    * selecting an area in the chart. One parameter, `event`, is passed to the
+    * function, containing common event information.
     *
     * The new user set minimum and maximum values can be found by `event.min`
     * and `event.max`. These reflect the axis minimum and maximum in data

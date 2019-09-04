@@ -98,6 +98,7 @@ trait Assertion
   @JSName("ok")
   var ok_Original: Assertion = js.native
   var ordered: Ordered = js.native
+  var own: Own = js.native
   @JSName("ownPropertyDescriptor")
   var ownPropertyDescriptor_Original: OwnPropertyDescriptor = js.native
   @JSName("ownProperty")

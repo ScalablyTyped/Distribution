@@ -114,6 +114,13 @@ trait PlotTemaOptions extends js.Object {
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps) Determines what data value should be
+    * used to calculate point color if `colorAxis` is used. Requires to set
+    * `min` and `max` if some custom point property is used or if approximation
+    * for data grouping is set to `'sum'`.
+    */
+  var colorKey: js.UndefOr[String] = js.undefined
+  /**
     * (Highstock) Defines if comparison should start from the first point
     * within the visible range or should start from the first point (see online
     * documentation for example) the range. In other words, this flag
@@ -205,15 +212,6 @@ trait PlotTemaOptions extends js.Object {
     * the series.
     */
   var description: js.UndefOr[String] = js.undefined
-  /**
-    * (Highstock) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotTemaDragDropOptions] = js.undefined
   /**
     * (Highstock) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
@@ -375,8 +373,9 @@ trait PlotTemaOptions extends js.Object {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
+    * the legend. Standalone series are shown in legend by default, and linked
+    * series are not. Since v7.2.0 it is possible to show series that use
+    * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   /**
@@ -472,6 +471,7 @@ object PlotTemaOptions {
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     compareToMain: js.UndefOr[Boolean] = js.undefined,
     connectEnds: js.UndefOr[Boolean] = js.undefined,
@@ -483,7 +483,6 @@ object PlotTemaOptions {
     dataGrouping: PlotTemaDataGroupingOptions = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
-    dragDrop: PlotTemaDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotTemaEventsOptions = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
@@ -534,6 +533,7 @@ object PlotTemaOptions {
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
     if (!js.isUndefined(compareToMain)) __obj.updateDynamic("compareToMain")(compareToMain)
     if (!js.isUndefined(connectEnds)) __obj.updateDynamic("connectEnds")(connectEnds)
@@ -545,7 +545,6 @@ object PlotTemaOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)

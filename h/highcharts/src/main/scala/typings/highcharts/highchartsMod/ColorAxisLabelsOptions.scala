@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ColorAxisLabelsOptions extends js.Object {
   /**
-    * (Highcharts, Highmaps) What part of the string the given position is
-    * anchored to. If `left`, the left side of the string is at the axis
-    * position. Can be one of `"left"`, `"center"` or `"right"`. Defaults to an
-    * intelligent guess based on which side of the chart the axis is on and the
-    * rotation of the label.
+    * (Highcharts, Highstock, Highmaps) What part of the string the given
+    * position is anchored to. If `left`, the left side of the string is at the
+    * axis position. Can be one of `"left"`, `"center"` or `"right"`. Defaults
+    * to an intelligent guess based on which side of the chart the axis is on
+    * and the rotation of the label.
     */
   var align: js.UndefOr[AlignValue] = js.undefined
   /**
@@ -37,18 +37,18 @@ trait ColorAxisLabelsOptions extends js.Object {
     */
   var distance: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) Enable or disable the axis labels.
+    * (Highcharts, Highstock, Highmaps) Enable or disable the axis labels.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highmaps) A format string for the axis label.
+    * (Highcharts, Highstock, Highmaps) A format string for the axis label.
     */
   var format: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highmaps) Callback JavaScript function to format the label.
-    * The value is given by `this.value`. Additional properties for `this` are
-    * `axis`, `chart`, `isFirst` and `isLast`. The value of the default label
-    * formatter can be retrieved by calling
+    * (Highcharts, Highstock, Highmaps) Callback JavaScript function to format
+    * the label. The value is given by `this.value`. Additional properties for
+    * `this` are `axis`, `chart`, `isFirst` and `isLast`. The value of the
+    * default label formatter can be retrieved by calling
     * `this.axis.defaultLabelFormatter.call(this)` within the function.
     *
     * Defaults to:
@@ -62,10 +62,10 @@ trait ColorAxisLabelsOptions extends js.Object {
     */
   var indentation: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) How to handle overflowing labels on horizontal
-    * color axis. Can be undefined or "justify". If "justify", labels will not
-    * render outside the legend area. If there is room to move it, it will be
-    * aligned to the edge, else it will be removed.
+    * (Highcharts, Highstock, Highmaps) How to handle overflowing labels on
+    * horizontal color axis. Can be undefined or "justify". If "justify",
+    * labels will not render outside the legend area. If there is room to move
+    * it, it will be aligned to the edge, else it will be removed.
     */
   var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
   /**
@@ -109,7 +109,7 @@ trait ColorAxisLabelsOptions extends js.Object {
     */
   var reserveSpace: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highmaps) Rotation of the labels in degrees.
+    * (Highcharts, Highstock, Highmaps) Rotation of the labels in degrees.
     */
   var rotation: js.UndefOr[Double] = js.undefined
   /**
@@ -123,13 +123,13 @@ trait ColorAxisLabelsOptions extends js.Object {
     */
   var skew3d: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highmaps) Horizontal axes only. The number of lines to
-    * spread the labels over to make room or tighter labels.
+    * (Highcharts, Highstock, Highmaps) Horizontal axes only. The number of
+    * lines to spread the labels over to make room or tighter labels.
     */
   var staggerLines: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) To show only every _n_'th label on the axis, set
-    * the step to _n_. Setting the step to 2 shows every other label.
+    * (Highcharts, Highstock, Highmaps) To show only every _n_'th label on the
+    * axis, set the step to _n_. Setting the step to 2 shows every other label.
     *
     * By default, the step is calculated automatically to avoid overlap. To
     * prevent this, set it to 1\. This usually only happens on a category axis,
@@ -139,31 +139,32 @@ trait ColorAxisLabelsOptions extends js.Object {
     */
   var step: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) CSS styles for the label. Use `whiteSpace:
-    * 'nowrap'` to prevent wrapping of category labels. Use `textOverflow:
-    * 'none'` to prevent ellipsis (dots).
+    * (Highcharts, Highstock, Highmaps) CSS styles for the label. Use
+    * `whiteSpace: 'nowrap'` to prevent wrapping of category labels. Use
+    * `textOverflow: 'none'` to prevent ellipsis (dots).
     *
     * In styled mode, the labels are styled with the `.highcharts-axis-labels`
     * class.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
   /**
-    * (Highcharts, Highmaps) Whether to use HTML to render the labels.
+    * (Highcharts, Highstock, Highmaps) Whether to use HTML to render the
+    * labels.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highmaps) The x position offset of the label relative to the
-    * tick position on the axis.
+    * (Highcharts, Highstock, Highmaps) The x position offset of the label
+    * relative to the tick position on the axis.
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) The y position offset of the label relative to the
-    * tick position on the axis. The default makes it adapt to the font size on
-    * bottom axis.
+    * (Highcharts, Highstock, Highmaps) The y position offset of the label
+    * relative to the tick position on the axis. The default makes it adapt to
+    * the font size on bottom axis.
     */
   var y: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) The Z index for the axis labels.
+    * (Highcharts, Highstock, Highmaps) The Z index for the axis labels.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
 }

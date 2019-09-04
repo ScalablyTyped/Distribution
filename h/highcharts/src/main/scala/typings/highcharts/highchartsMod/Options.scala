@@ -20,14 +20,20 @@ trait Options extends js.Object {
   var annotations: js.UndefOr[js.Array[AnnotationsOptions]] = js.undefined
   var boost: js.UndefOr[BoostOptions] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The chart's caption, which will
+    * render below the chart and will be part of exported charts. The caption
+    * can be updated after chart initialization through the `Chart.update` or
+    * `Chart.caption.update` methods.
+    */
+  var caption: js.UndefOr[CaptionOptions] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) General options for the chart.
     */
   var chart: js.UndefOr[ChartOptions] = js.undefined
   /**
-    * (Highcharts, Highmaps) A color axis for choropleth maps and heat maps.
-    * Visually, the color axis will appear as a gradient or as separate items
-    * inside the legend, depending on whether the axis is scalar or based on
-    * data classes.
+    * (Highcharts, Highstock, Highmaps) A color axis for series. Visually, the
+    * color axis will appear as a gradient or as separate items inside the
+    * legend, depending on whether the axis is scalar or based on data classes.
     *
     * For supported color formats, see the docs article about colors.
     *
@@ -44,9 +50,15 @@ trait Options extends js.Object {
     * your data is categorized, it may be as convenient to add each category to
     * a separate series.
     *
+    * Color axis does not work with: `sankey`, `sunburst`, `dependencywheel`,
+    * `networkgraph`, `wordcloud`, `venn`, `gauge` and `solidgauge` series
+    * types.
+    *
+    * Since v7.2.0 `colorAxis` can also be an array of options objects.
+    *
     * See the Axis object for programmatic access to the axis.
     */
-  var colorAxis: js.UndefOr[ColorAxisOptions] = js.undefined
+  var colorAxis: js.UndefOr[ColorAxisOptions | js.Array[ColorAxisOptions]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing the default
     * colors for the chart's series. When all colors are used, new colors are
@@ -288,8 +300,9 @@ object Options {
     accessibility: AccessibilityOptions = null,
     annotations: js.Array[AnnotationsOptions] = null,
     boost: BoostOptions = null,
+    caption: CaptionOptions = null,
     chart: ChartOptions = null,
-    colorAxis: ColorAxisOptions = null,
+    colorAxis: ColorAxisOptions | js.Array[ColorAxisOptions] = null,
     colors: js.Array[ColorString] = null,
     connectors: ConnectorsOptions = null,
     credits: CreditsOptions = null,
@@ -324,8 +337,9 @@ object Options {
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (boost != null) __obj.updateDynamic("boost")(boost)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
     if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
     if (credits != null) __obj.updateDynamic("credits")(credits)

@@ -22,6 +22,10 @@ trait RegisterTaskDefinitionRequest extends js.Object {
     */
   var family: String
   /**
+    * The Elastic Inference accelerators to use for the containers in the task.
+    */
+  var inferenceAccelerators: js.UndefOr[InferenceAccelerators] = js.undefined
+  /**
     * The IPC resource namespace to use for the containers in the task. The valid values are host, task, or none. If host is specified, then all containers within the tasks that specified the host IPC mode on the same container instance share the same IPC resources with the host Amazon EC2 instance. If task is specified, all containers within the specified task share the same IPC resources. If none is specified, then IPC resources within the containers of a task are private and not shared with other containers in a task or on the container instance. If no value is specified, then the IPC resource namespace sharing depends on the Docker daemon setting on the container instance. For more information, see IPC settings in the Docker run reference. If the host IPC mode is used, be aware that there is a heightened risk of undesired IPC namespace expose. For more information, see Docker security. If you are setting namespaced kernel parameters using systemControls for the containers in the task, the following will apply to your IPC resource namespace. For more information, see System Controls in the Amazon Elastic Container Service Developer Guide.   For tasks that use the host IPC mode, IPC namespace related systemControls are not supported.   For tasks that use the task IPC mode, IPC namespace related systemControls will apply to all containers within a task.    This parameter is not supported for Windows containers or tasks using the Fargate launch type. 
     */
   var ipcMode: js.UndefOr[IpcMode] = js.undefined
@@ -67,6 +71,7 @@ object RegisterTaskDefinitionRequest {
     family: String,
     cpu: String = null,
     executionRoleArn: String = null,
+    inferenceAccelerators: InferenceAccelerators = null,
     ipcMode: IpcMode = null,
     memory: String = null,
     networkMode: NetworkMode = null,
@@ -81,6 +86,7 @@ object RegisterTaskDefinitionRequest {
     val __obj = js.Dynamic.literal(containerDefinitions = containerDefinitions, family = family)
     if (cpu != null) __obj.updateDynamic("cpu")(cpu)
     if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn)
+    if (inferenceAccelerators != null) __obj.updateDynamic("inferenceAccelerators")(inferenceAccelerators)
     if (ipcMode != null) __obj.updateDynamic("ipcMode")(ipcMode.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory)
     if (networkMode != null) __obj.updateDynamic("networkMode")(networkMode.asInstanceOf[js.Any])

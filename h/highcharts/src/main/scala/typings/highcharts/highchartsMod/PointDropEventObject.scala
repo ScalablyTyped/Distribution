@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait PointDropEventObject extends js.Object {
   /**
+    * New point after drag if only a single one.
+    */
+  var newPoint: js.UndefOr[PointDragDropObject] = js.undefined
+  /**
+    * New point id after drag if only a single one.
+    */
+  var newPointId: js.UndefOr[String] = js.undefined
+  /**
     * New points after drop.
     */
   var newPoints: Dictionary[PointDragDropObject]
@@ -17,7 +25,7 @@ trait PointDropEventObject extends js.Object {
   /**
     * Original data.
     */
-  var origin: js.Object
+  var origin: DragDropPositionObject
   /**
     * Prevent default drop action.
     */
@@ -37,13 +45,17 @@ object PointDropEventObject {
   def apply(
     newPoints: Dictionary[PointDragDropObject],
     numNewPoints: Double,
-    origin: js.Object,
+    origin: DragDropPositionObject,
     preventDefault: js.Function,
     target: Point,
-    `type`: drop
+    `type`: drop,
+    newPoint: PointDragDropObject = null,
+    newPointId: String = null
   ): PointDropEventObject = {
     val __obj = js.Dynamic.literal(newPoints = newPoints, numNewPoints = numNewPoints, origin = origin, preventDefault = preventDefault, target = target)
     __obj.updateDynamic("type")(`type`)
+    if (newPoint != null) __obj.updateDynamic("newPoint")(newPoint)
+    if (newPointId != null) __obj.updateDynamic("newPointId")(newPointId)
     __obj.asInstanceOf[PointDropEventObject]
   }
 }

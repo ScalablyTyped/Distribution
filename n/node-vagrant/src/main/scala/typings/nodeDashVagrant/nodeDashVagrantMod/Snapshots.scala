@@ -13,8 +13,7 @@ trait Snapshots extends js.Object {
   def list(): Unit = js.native
   def list(cb: Callback): Unit = js.native
   def pop(): Unit = js.native
-  def pop(args: js.Any): Unit = js.native
-  def pop(args: js.Any, cb: Callback): Unit = js.native
+  def pop(cb: Callback): Unit = js.native
   def push(): Unit = js.native
   def push(cb: Callback): Unit = js.native
   def restore(): Unit = js.native

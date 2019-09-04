@@ -17,6 +17,7 @@ trait GameSession extends js.Object {
     * Number of players currently in the game session.
     */
   var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
+  var DnsName: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.DnsName] = js.undefined
   /**
     * Unique identifier for a fleet that the game session is running on.
     */
@@ -77,6 +78,7 @@ object GameSession {
     CreationTime: Timestamp = null,
     CreatorId: NonZeroAndMaxString = null,
     CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
+    DnsName: DnsName = null,
     FleetId: FleetId = null,
     GameProperties: GamePropertyList = null,
     GameSessionData: GameSessionData = null,
@@ -95,6 +97,7 @@ object GameSession {
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId)
     if (!js.isUndefined(CurrentPlayerSessionCount)) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount)
+    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
     if (GameProperties != null) __obj.updateDynamic("GameProperties")(GameProperties)
     if (GameSessionData != null) __obj.updateDynamic("GameSessionData")(GameSessionData)

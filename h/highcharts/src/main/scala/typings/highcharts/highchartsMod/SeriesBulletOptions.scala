@@ -113,6 +113,7 @@ object SeriesBulletOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: PlotBulletConnectorsOptions = null,
@@ -201,6 +202,7 @@ object SeriesBulletOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)

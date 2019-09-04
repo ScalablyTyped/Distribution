@@ -101,10 +101,10 @@ trait SodaDatabase extends js.Object {
     *
     * @since 3.0
     */
-  def openCollection(collectionName: String): js.Promise[SodaCollection] = js.native
+  def openCollection(collectionName: String): js.Promise[js.UndefOr[SodaCollection]] = js.native
   def openCollection(
     collectionName: String,
-    callback: js.Function2[/* error */ DBError, /* collection */ SodaCollection, Unit]
+    callback: js.Function2[/* error */ DBError, /* collection */ js.UndefOr[SodaCollection], Unit]
   ): Unit = js.native
 }
 

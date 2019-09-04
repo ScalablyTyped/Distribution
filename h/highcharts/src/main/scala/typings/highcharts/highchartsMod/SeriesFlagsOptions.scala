@@ -100,8 +100,9 @@ object SeriesFlagsOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -196,8 +197,9 @@ object SeriesFlagsOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])

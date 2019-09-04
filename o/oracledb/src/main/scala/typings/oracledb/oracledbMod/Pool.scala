@@ -20,7 +20,7 @@ trait Pool extends js.Object {
   /**
     * The alias of this pool in the connection pool cache. An alias cannot be changed once the pool has been created.
     */
-  val poolAlias: String = js.native
+  val poolAlias: js.UndefOr[String] = js.native
   /**
     * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
     */

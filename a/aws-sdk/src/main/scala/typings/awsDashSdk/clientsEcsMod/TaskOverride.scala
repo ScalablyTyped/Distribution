@@ -14,6 +14,10 @@ trait TaskOverride extends js.Object {
     */
   var executionRoleArn: js.UndefOr[String] = js.undefined
   /**
+    * The Elastic Inference accelerator override for the task.
+    */
+  var inferenceAcceleratorOverrides: js.UndefOr[InferenceAcceleratorOverrides] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.
     */
   var taskRoleArn: js.UndefOr[String] = js.undefined
@@ -24,11 +28,13 @@ object TaskOverride {
   def apply(
     containerOverrides: ContainerOverrides = null,
     executionRoleArn: String = null,
+    inferenceAcceleratorOverrides: InferenceAcceleratorOverrides = null,
     taskRoleArn: String = null
   ): TaskOverride = {
     val __obj = js.Dynamic.literal()
     if (containerOverrides != null) __obj.updateDynamic("containerOverrides")(containerOverrides)
     if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn)
+    if (inferenceAcceleratorOverrides != null) __obj.updateDynamic("inferenceAcceleratorOverrides")(inferenceAcceleratorOverrides)
     if (taskRoleArn != null) __obj.updateDynamic("taskRoleArn")(taskRoleArn)
     __obj.asInstanceOf[TaskOverride]
   }

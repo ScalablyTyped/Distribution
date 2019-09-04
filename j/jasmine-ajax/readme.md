@@ -1,7 +1,7 @@
 
 # Scala.js typings for jasmine-ajax
 
-Typings are for version 3.1
+Typings are for version 3.3
 
 ## Library description:
 A library for faking Ajax responses in your Jasmine suite

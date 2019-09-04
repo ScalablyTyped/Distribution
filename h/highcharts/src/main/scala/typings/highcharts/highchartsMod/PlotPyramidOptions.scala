@@ -77,10 +77,9 @@ trait PlotPyramidOptions extends js.Object {
     */
   var clip: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) The main color of the series. In line type series it applies
-    * to the line and the point markers unless otherwise specified. In bar type
-    * series it applies to the bars unless a color is specified per point. The
-    * default value is pulled from the `options.colors` array.
+    * (Highcharts) The color of the pie series. A pie series is represented as
+    * an empty circle if the total sum of its values is 0. Use this property to
+    * define the color of its border.
     *
     * In styled mode, the color can be defined by the colorIndex option. Also,
     * the series color can be set with the `.highcharts-series`,
@@ -90,17 +89,29 @@ trait PlotPyramidOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Set this option to `false` to prevent a series from connecting
-    * to the global color axis. This will cause the series to have its own
-    * legend item.
+    * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
+    * this number defines which colorAxis the particular series is connected
+    * to. It refers to either the axis id or the index of the axis in the
+    * colorAxis array, with 0 being the first. Set this option to false to
+    * prevent a series from connecting to the default color axis.
+    *
+    * Since v7.2.0 the option can also be an axis id or an axis index instead
+    * of a boolean flag.
     */
-  var colorAxis: js.UndefOr[Boolean] = js.undefined
+  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
   /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps) Determines what data value should be
+    * used to calculate point color if `colorAxis` is used. Requires to set
+    * `min` and `max` if some custom point property is used or if approximation
+    * for data grouping is set to `'sum'`.
+    */
+  var colorKey: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts) A series specific or series type specific color set to use
     * instead of the global colors.
@@ -169,7 +180,7 @@ trait PlotPyramidOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject] = js.undefined
   /**
     * (Highcharts) The thickness of a 3D pie. Requires `highcharts-3d.js`
     */
@@ -181,15 +192,6 @@ trait PlotPyramidOptions extends js.Object {
     * the series.
     */
   var description: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotPyramidDragDropOptions] = js.undefined
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
@@ -207,6 +209,12 @@ trait PlotPyramidOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotPyramidEventsOptions] = js.undefined
+  /**
+    * (Highcharts) If the total sum of the pie's values is 0, the series is
+    * represented as an empty circle . The `fillColor` option defines the color
+    * of that circle. Use pie.borderWidth to set the border thickness.
+    */
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -451,8 +459,9 @@ object PlotPyramidOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -460,13 +469,13 @@ object PlotPyramidOptions {
     connectors: PlotPyramidConnectorsOptions = null,
     cursor: String | CursorValue = null,
     dataGrouping: PlotPyramidDataGroupingOptions = null,
-    dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
+    dataLabels: SeriesPieDataLabelsOptionsObject = null,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotPyramidDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
     events: PlotPyramidEventsOptions = null,
+    fillColor: ColorString | GradientColorObject | PatternObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     height: Double | String = null,
@@ -515,8 +524,9 @@ object PlotPyramidOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
@@ -524,13 +534,13 @@ object PlotPyramidOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

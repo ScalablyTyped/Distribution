@@ -27,6 +27,9 @@ trait reactDashShareProps {
   def GooglePlusShareCountProps: ShareCountComponentProps.type = typings.reactDashShare.reactDashShareMod.ShareCountComponentProps
   type GooglePlusShareCountProps = ShareCountComponentProps
   @scala.inline
+  def LineIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
+  type LineIconProps = IconComponentProps
+  @scala.inline
   def LinkedinIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
   type LinkedinIconProps = IconComponentProps
   @scala.inline

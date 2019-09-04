@@ -116,6 +116,13 @@ trait PlotFunnel3dOptions extends js.Object {
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps) Determines what data value should be
+    * used to calculate point color if `colorAxis` is used. Requires to set
+    * `min` and `max` if some custom point property is used or if approximation
+    * for data grouping is set to `'sum'`.
+    */
+  var colorKey: js.UndefOr[String] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) A series specific or series type specific
     * color set to apply instead of the global colors when colorByPoint is
     * true.
@@ -498,8 +505,9 @@ trait PlotFunnel3dOptions extends js.Object {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
+    * the legend. Standalone series are shown in legend by default, and linked
+    * series are not. Since v7.2.0 it is possible to show series that use
+    * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   /**
@@ -610,6 +618,7 @@ object PlotFunnel3dOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: PlotFunnel3dConnectorsOptions = null,
@@ -689,6 +698,7 @@ object PlotFunnel3dOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)

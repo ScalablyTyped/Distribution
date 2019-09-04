@@ -8,5 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class FunctionOperand protected () extends Operand {
   def this(origionalValue: String, parameters: ArrayOperand) = this()
+  val isReady: Boolean = js.native
+  def evaluateAsync(processValue: ProcessValue): Unit = js.native
+  def onAsyncReady(): Unit = js.native
 }
 

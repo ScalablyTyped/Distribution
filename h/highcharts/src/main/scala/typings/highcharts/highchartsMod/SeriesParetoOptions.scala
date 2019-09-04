@@ -100,6 +100,7 @@ object SeriesParetoOptions {
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
@@ -115,7 +116,6 @@ object SeriesParetoOptions {
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    dragDrop: PlotParetoDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotParetoEventsOptions = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
@@ -165,6 +165,7 @@ object SeriesParetoOptions {
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
@@ -180,7 +181,6 @@ object SeriesParetoOptions {
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser)
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll)

@@ -24,11 +24,7 @@ trait ReactMarkdownProps extends js.Object {
   val escapeHtml: js.UndefOr[Boolean] = js.undefined
   val includeNodeIndex: js.UndefOr[Boolean] = js.undefined
   val linkTarget: js.UndefOr[String | LinkTargetResolver] = js.undefined
-  val parserOptions: js.UndefOr[
-    Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RemarkParseOptions */ _
-    ]
-  ] = js.undefined
+  val parserOptions: js.UndefOr[Partial[RemarkParseOptions]] = js.undefined
   val plugins: js.UndefOr[js.Array[_] | js.Function0[Unit]] = js.undefined
   val rawSourcePos: js.UndefOr[Boolean] = js.undefined
   val renderers: js.UndefOr[StringDictionary[ReactType[_]]] = js.undefined
@@ -66,9 +62,7 @@ object ReactMarkdownProps {
     escapeHtml: js.UndefOr[Boolean] = js.undefined,
     includeNodeIndex: js.UndefOr[Boolean] = js.undefined,
     linkTarget: String | LinkTargetResolver = null,
-    parserOptions: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RemarkParseOptions */ _
-    ] = null,
+    parserOptions: Partial[RemarkParseOptions] = null,
     plugins: js.Array[_] | js.Function0[Unit] = null,
     rawSourcePos: js.UndefOr[Boolean] = js.undefined,
     renderers: StringDictionary[ReactType[_]] = null,

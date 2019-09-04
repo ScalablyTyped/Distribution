@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait ColorAxisMarkerOptions extends js.Object {
   /**
-    * (Highcharts, Highmaps) Animation for the marker as it moves between
-    * values. Set to `false` to disable animation. Defaults to `{ duration: 50
-    * }`.
+    * (Highcharts, Highstock, Highmaps) Animation for the marker as it moves
+    * between values. Set to `false` to disable animation. Defaults to `{
+    * duration: 50 }`.
     */
   var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
-    * (Highcharts, Highmaps) The color of the marker.
+    * (Highcharts, Highstock, Highmaps) The color of the marker.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
 }

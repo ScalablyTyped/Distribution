@@ -103,7 +103,6 @@ object SeriesGaugeOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -116,8 +115,7 @@ object SeriesGaugeOptions {
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    dial: CSSObject | PlotGaugeDialOptions = null,
-    dragDrop: PlotGaugeDragDropOptions = null,
+    dial: PlotGaugeDialOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotGaugeEventsOptions = null,
     gapSize: Int | Double = null,
@@ -139,7 +137,7 @@ object SeriesGaugeOptions {
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     overshoot: Int | Double = null,
-    pivot: CSSObject | PlotGaugePivotOptions = null,
+    pivot: PlotGaugePivotOptions = null,
     point: PlotGaugePointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
@@ -173,7 +171,6 @@ object SeriesGaugeOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
@@ -186,8 +183,7 @@ object SeriesGaugeOptions {
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser)
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dial != null) __obj.updateDynamic("dial")(dial.asInstanceOf[js.Any])
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
+    if (dial != null) __obj.updateDynamic("dial")(dial)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
@@ -209,7 +205,7 @@ object SeriesGaugeOptions {
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (overshoot != null) __obj.updateDynamic("overshoot")(overshoot.asInstanceOf[js.Any])
-    if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
+    if (pivot != null) __obj.updateDynamic("pivot")(pivot)
     if (point != null) __obj.updateDynamic("point")(point)
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
     if (pointInterval != null) __obj.updateDynamic("pointInterval")(pointInterval.asInstanceOf[js.Any])

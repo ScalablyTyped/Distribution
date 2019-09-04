@@ -18,38 +18,41 @@ trait Results[T] extends js.Object {
     * data errors to report. Some classes of execution error will always return via the executeMany()
     * callback error object, not in batchErrors.
     */
-  var batchErrors: js.Array[DBError]
+  var batchErrors: js.UndefOr[js.Array[DBError]] = js.undefined
   /**
     * An array of integers identifying the number of rows affected by each record of the binds parameter.
     *
     * It is present only if dmlRowCounts was true in the executeMany() options parameter and a DML statement
     * was executed.
     */
-  var dmlRowCounts: js.Array[Double]
+  var dmlRowCounts: js.UndefOr[js.Array[Double]] = js.undefined
   /**
     * Contains the value of any returned IN OUT or OUT binds. It is an array of arrays, or an array of objects,
     * depending on the binds parameters structure. The length of the array will correspond to the length of
     * the array passed as the binds parameter. It will be present only if there is at least one OUT bind
     * variable identified.
     */
-  var outBinds: js.Array[T]
+  var outBinds: js.UndefOr[js.Array[T]] = js.undefined
   /**
     * An integer identifying the total number of database rows affected by the processing of all records
     * of the binds parameter. It is only present if a DML statement was executed.
     */
-  var rowsAffected: Double
+  var rowsAffected: js.UndefOr[Double] = js.undefined
 }
 
 object Results {
   @scala.inline
   def apply[T](
-    batchErrors: js.Array[DBError],
-    dmlRowCounts: js.Array[Double],
-    outBinds: js.Array[T],
-    rowsAffected: Double
+    batchErrors: js.Array[DBError] = null,
+    dmlRowCounts: js.Array[Double] = null,
+    outBinds: js.Array[T] = null,
+    rowsAffected: Int | Double = null
   ): Results[T] = {
-    val __obj = js.Dynamic.literal(batchErrors = batchErrors, dmlRowCounts = dmlRowCounts, outBinds = outBinds, rowsAffected = rowsAffected)
-  
+    val __obj = js.Dynamic.literal()
+    if (batchErrors != null) __obj.updateDynamic("batchErrors")(batchErrors)
+    if (dmlRowCounts != null) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts)
+    if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds)
+    if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results[T]]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prop-types"
-version := "15.7-dt-20190417Z-fd4af0"
+version := "15.7-dt-20190903Z-bd378a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

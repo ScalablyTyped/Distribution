@@ -10,7 +10,7 @@ trait CompileOptions extends js.Object {
   var data: js.UndefOr[Boolean] = js.undefined
   var explicitPartialContext: js.UndefOr[Boolean] = js.undefined
   var ignoreStandalone: js.UndefOr[Boolean] = js.undefined
-  var knownHelpers: js.UndefOr[Anon_BlockHelperMissing] = js.undefined
+  var knownHelpers: js.UndefOr[KnownHelpers] = js.undefined
   var knownHelpersOnly: js.UndefOr[Boolean] = js.undefined
   var noEscape: js.UndefOr[Boolean] = js.undefined
   var preventIndent: js.UndefOr[Boolean] = js.undefined
@@ -25,7 +25,7 @@ object CompileOptions {
     data: js.UndefOr[Boolean] = js.undefined,
     explicitPartialContext: js.UndefOr[Boolean] = js.undefined,
     ignoreStandalone: js.UndefOr[Boolean] = js.undefined,
-    knownHelpers: Anon_BlockHelperMissing = null,
+    knownHelpers: KnownHelpers = null,
     knownHelpersOnly: js.UndefOr[Boolean] = js.undefined,
     noEscape: js.UndefOr[Boolean] = js.undefined,
     preventIndent: js.UndefOr[Boolean] = js.undefined,

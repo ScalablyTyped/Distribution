@@ -25,7 +25,7 @@ trait AdvancedQueue extends js.Object {
     * 
     * This is defined only if payloadType has the value oracledb.DB_TYPE_OBJECT.
     */
-  val payloadTypeClass: DBObjectClass = js.native
+  val payloadTypeClass: js.UndefOr[DBObjectClass] = js.native
   /** Either the string “RAW” or the name of the Oracle Database object type identified when the queue was created. */
   val payloadTypeName: String = js.native
   /**
@@ -41,8 +41,8 @@ trait AdvancedQueue extends js.Object {
   /**
     * Dequeues a single message. Depending on the dequeue options, the message may also be returned as undefined if no message is available.
     */
-  def deqOne(): js.Promise[AdvancedQueueMessage] = js.native
-  def deqOne(callback: js.Function2[/* error */ DBError, /* messages */ AdvancedQueueMessage, Unit]): Unit = js.native
+  def deqOne(): js.Promise[js.UndefOr[AdvancedQueueMessage]] = js.native
+  def deqOne(callback: js.Function2[/* error */ DBError, /* message */ js.UndefOr[AdvancedQueueMessage], Unit]): Unit = js.native
   /**
     * Enqueues multiple messages.
     * 

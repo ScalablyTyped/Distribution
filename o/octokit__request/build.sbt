@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "octokit__request"
-version := "5.0.2-87c4f2"
+version := "5.0.3-638b41"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
-  "org.scalablytyped" %%% "octokit__endpoint" % "5.3.3-8d5cbc",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
+  "org.scalablytyped" %%% "octokit__endpoint" % "5.3.5-77d03c",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

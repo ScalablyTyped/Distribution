@@ -22,7 +22,7 @@ trait CreateServiceRequest extends js.Object {
     */
   var deploymentController: js.UndefOr[DeploymentController] = js.undefined
   /**
-    * The number of instantiations of the specified task definition to place and keep running on your cluster.
+    * The number of instantiations of the specified task definition to place and keep running on your cluster. This is required if schedulingStrategy is REPLICA or is not specified. If schedulingStrategy is DAEMON then this is not required.
     */
   var desiredCount: js.UndefOr[BoxedInteger] = js.undefined
   /**

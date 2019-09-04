@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GameSessionConnectionInfo extends js.Object {
+  var DnsName: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.DnsName] = js.undefined
   /**
     * Amazon Resource Name (ARN) that is assigned to a game session and uniquely identifies it.
     */
@@ -26,12 +27,14 @@ trait GameSessionConnectionInfo extends js.Object {
 object GameSessionConnectionInfo {
   @scala.inline
   def apply(
+    DnsName: DnsName = null,
     GameSessionArn: ArnStringModel = null,
     IpAddress: StringModel = null,
     MatchedPlayerSessions: MatchedPlayerSessionList = null,
     Port: js.UndefOr[PositiveInteger] = js.undefined
   ): GameSessionConnectionInfo = {
     val __obj = js.Dynamic.literal()
+    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (GameSessionArn != null) __obj.updateDynamic("GameSessionArn")(GameSessionArn)
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
     if (MatchedPlayerSessions != null) __obj.updateDynamic("MatchedPlayerSessions")(MatchedPlayerSessions)

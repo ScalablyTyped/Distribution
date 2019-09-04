@@ -28,6 +28,11 @@ class ManagementClient[A, U] protected () extends js.Object {
   def createConnection(data: CreateConnection, cb: js.Function2[/* err */ Error, /* connection */ Connection, Unit]): Unit = js.native
   def createDevicePublicKey(data: Data): js.Promise[User[A, U]] = js.native
   def createDevicePublicKey(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  // Templates
+  def createEmailTemplate(data: Data): js.Promise[_] = js.native
+  def createEmailTemplate(data: Data, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @JSName("createEmailTemplate")
+  def createEmailTemplate_Unit(data: Data): Unit = js.native
   def createEmailVerificationTicket(data: EmailVerificationTicketOptions): js.Promise[_] = js.native
   def createEmailVerificationTicket(data: EmailVerificationTicketOptions, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("createEmailVerificationTicket")
@@ -120,6 +125,10 @@ class ManagementClient[A, U] protected () extends js.Object {
   def getEmailProvider(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getEmailProvider")
   def getEmailProvider_Unit(): Unit = js.native
+  def getEmailTemplate(data: Data): js.Promise[_] = js.native
+  def getEmailTemplate(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  @JSName("getEmailTemplate")
+  def getEmailTemplate_Unit(data: Data): Unit = js.native
   // Jobs
   def getJob(params: ObjectWithId): js.Promise[Job] = js.native
   def getJob(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ Job, Unit]): Unit = js.native
@@ -265,6 +274,10 @@ class ManagementClient[A, U] protected () extends js.Object {
   def updateEmailProvider(params: js.Object, data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateEmailProvider")
   def updateEmailProvider_Unit(params: js.Object, data: Data): Unit = js.native
+  def updateEmailTemplate(params: js.Object, data: Data): js.Promise[_] = js.native
+  def updateEmailTemplate(params: js.Object, data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  @JSName("updateEmailTemplate")
+  def updateEmailTemplate_Unit(params: js.Object, data: Data): Unit = js.native
   def updateResourceServer(params: ObjectWithId, data: ResourceServer): js.Promise[ResourceServer] = js.native
   def updateResourceServer(
     params: ObjectWithId,

@@ -9,6 +9,7 @@ trait CreateFleetInput extends js.Object {
     * Unique identifier for a build to be deployed on the new fleet. The custom game server build must have been successfully uploaded to Amazon GameLift and be in a READY status. This fleet setting cannot be changed once the fleet is created.
     */
   var BuildId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.BuildId] = js.undefined
+  var CertificateConfiguration: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.CertificateConfiguration] = js.undefined
   /**
     * Human-readable description of a fleet.
     */
@@ -81,6 +82,7 @@ object CreateFleetInput {
     EC2InstanceType: EC2InstanceType,
     Name: NonZeroAndMaxString,
     BuildId: BuildId = null,
+    CertificateConfiguration: CertificateConfiguration = null,
     Description: NonZeroAndMaxString = null,
     EC2InboundPermissions: IpPermissionsList = null,
     FleetType: FleetType = null,
@@ -98,6 +100,7 @@ object CreateFleetInput {
   ): CreateFleetInput = {
     val __obj = js.Dynamic.literal(EC2InstanceType = EC2InstanceType.asInstanceOf[js.Any], Name = Name)
     if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId)
+    if (CertificateConfiguration != null) __obj.updateDynamic("CertificateConfiguration")(CertificateConfiguration)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (EC2InboundPermissions != null) __obj.updateDynamic("EC2InboundPermissions")(EC2InboundPermissions)
     if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])

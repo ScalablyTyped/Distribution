@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-motion-loop"
-version := "2.0-dt-20190212Z-df4c30"
+version := "2.0-dt-20190212Z-22be72"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-fd4af0",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-6dcbc8",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190509Z-dda04f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190509Z-d11fcc",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

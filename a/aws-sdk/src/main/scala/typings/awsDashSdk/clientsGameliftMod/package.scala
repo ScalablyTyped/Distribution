@@ -38,6 +38,12 @@ package object clientsGameliftMod {
     - java.lang.String
   */
   type BuildStatus = _BuildStatus | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.GENERATED
+    - java.lang.String
+  */
+  type CertificateType = _CertificateType | String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.GreaterThanOrEqualToThreshold
@@ -49,6 +55,7 @@ package object clientsGameliftMod {
   type ComparisonOperatorType = _ComparisonOperatorType | String
   type CustomEventData = String
   type DesiredPlayerSessionList = js.Array[DesiredPlayerSession]
+  type DnsName = String
   type Double = scala.Double
   type DoubleObject = scala.Double
   type EC2InstanceLimitList = js.Array[EC2InstanceLimit]
@@ -168,6 +175,7 @@ package object clientsGameliftMod {
     - typings.awsDashSdk.awsDashSdkStrings.FULFILLED
     - typings.awsDashSdk.awsDashSdkStrings.CANCELLED
     - typings.awsDashSdk.awsDashSdkStrings.TIMED_OUT
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
     - java.lang.String
   */
   type GameSessionPlacementState = _GameSessionPlacementState | String

@@ -77,6 +77,7 @@ import scala.scalajs.js.annotation._
   - typings.fileDashType.fileDashTypeStrings.`application/x-compress`
   - typings.fileDashType.fileDashTypeStrings.`application/x-lzip`
   - typings.fileDashType.fileDashTypeStrings.`application/x-msi`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-mie`
   - typings.fileDashType.fileDashTypeStrings.`application/mxf`
   - typings.fileDashType.fileDashTypeStrings.`video/mp2t`
   - typings.fileDashType.fileDashTypeStrings.`application/x-blender`
@@ -104,6 +105,15 @@ import scala.scalajs.js.annotation._
   - typings.fileDashType.fileDashTypeStrings.`audio/x-voc`
   - typings.fileDashType.fileDashTypeStrings.`audio/vndDOTdolbyDOTdd-raw`
   - typings.fileDashType.fileDashTypeStrings.`audio/x-m4a`
+  - typings.fileDashType.fileDashTypeStrings.`image/apng`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-olympus-orf`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-sony-arw`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-adobe-dng`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-nikon-nef`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-panasonic-rw2`
+  - typings.fileDashType.fileDashTypeStrings.`image/x-fujifilm-raf`
+  - typings.fileDashType.fileDashTypeStrings.`video/x-m4v`
+  - typings.fileDashType.fileDashTypeStrings.`video/3gpp2`
 */
 trait MimeType extends js.Object
 

@@ -98,8 +98,9 @@ object SeriesPieOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -108,15 +109,15 @@ object SeriesPieOptions {
     cursor: String | CursorValue = null,
     data: js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | SeriesPieDataOptions] = null,
     dataGrouping: PlotPieDataGroupingOptions = null,
-    dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
+    dataLabels: SeriesPieDataLabelsOptionsObject = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotPieDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     endAngle: Int | Double = null,
     events: PlotPieEventsOptions = null,
+    fillColor: ColorString | GradientColorObject | PatternObject = null,
     gapSize: Int | Double = null,
     gapUnit: OptionsGapUnitValue = null,
     id: String = null,
@@ -171,8 +172,9 @@ object SeriesPieOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
@@ -181,15 +183,15 @@ object SeriesPieOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser)
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
     if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit)
     if (id != null) __obj.updateDynamic("id")(id)

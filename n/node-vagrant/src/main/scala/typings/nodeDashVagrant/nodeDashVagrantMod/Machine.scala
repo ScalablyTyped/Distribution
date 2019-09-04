@@ -26,10 +26,10 @@ trait Machine extends MachineEmitter {
   def halt(args: js.Array[String]): Unit = js.native
   def halt(args: js.Array[String], cb: Callback): Unit = js.native
   def halt(cb: Callback): Unit = js.native
-  def init(image: String, cb: Callback): Unit = js.native
-  def init(image: String, config: js.Any, cb: Callback): Unit = js.native
-  def init(image: js.Array[String], cb: Callback): Unit = js.native
-  def init(image: js.Array[String], config: js.Any, cb: Callback): Unit = js.native
+  def init(args: String, cb: Callback): Unit = js.native
+  def init(args: String, config: js.Any, cb: Callback): Unit = js.native
+  def init(args: js.Array[String], cb: Callback): Unit = js.native
+  def init(args: js.Array[String], config: js.Any, cb: Callback): Unit = js.native
   def plugin(): Plugin = js.native
   def pluginRepair(): Unit = js.native
   def pluginRepair(cb: Callback): Unit = js.native
@@ -51,6 +51,10 @@ trait Machine extends MachineEmitter {
   def suspend(): Unit = js.native
   def suspend(cb: Callback): Unit = js.native
   def up(): Unit = js.native
+  def up(args: String): Unit = js.native
+  def up(args: String, cb: Callback): Unit = js.native
+  def up(args: js.Array[String]): Unit = js.native
+  def up(args: js.Array[String], cb: Callback): Unit = js.native
   def up(cb: Callback): Unit = js.native
 }
 

@@ -2945,6 +2945,7 @@
 | 32 | [aurelia-task-queue](./a/aurelia-task-queue) | A simple task queue for the browser that enables t
 | 32 | [dev-ip](./d/dev-ip) | Find a suitable IP host to view local websites on.
 | 32 | [express-promise-router](./e/express-promise-router) | A lightweight wrapper for Express 4's Router that 
+| 32 | [jest__types](./j/jest__types) | -
 | 32 | [local-storage](./l/local-storage) | A simplified localStorage API that just works
 | 32 | [material__radio](./m/material__radio) | The Material Components for the web radio componen
 | 32 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | An infinite scroll directive for Angular compatibl

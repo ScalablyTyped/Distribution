@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SurveyValidator () extends Base {
   var errorOwner: ISurveyErrorOwner = js.native
+  val isAsync: Boolean = js.native
+  val isRunning: Boolean = js.native
   val isValidateAllValues: Boolean = js.native
   val locText: LocalizableString = js.native
   var text: String = js.native
@@ -17,9 +19,10 @@ class SurveyValidator () extends Base {
   def getLocale(): String = js.native
   def getMarkdownHtml(text: String): String = js.native
   def getProcessedText(text: String): String = js.native
+  def onAsyncCompleted(result: ValidatorResult): Unit = js.native
   def validate(value: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String): ValidatorResult = js.native
-  def validateAllValues(value: js.Any, values: js.Any, properties: js.Any): ValidatorResult = js.native
-  def validateAllValues(value: js.Any, values: js.Any, properties: js.Any, name: String): ValidatorResult = js.native
+  def validate(value: js.Any, name: String, values: js.Any): ValidatorResult = js.native
+  def validate(value: js.Any, name: String, values: js.Any, properties: js.Any): ValidatorResult = js.native
 }
 

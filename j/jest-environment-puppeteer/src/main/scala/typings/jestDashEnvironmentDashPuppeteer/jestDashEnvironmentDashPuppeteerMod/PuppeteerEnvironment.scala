@@ -1,5 +1,7 @@
 package typings.jestDashEnvironmentDashPuppeteer.jestDashEnvironmentDashPuppeteerMod
 
+import typings.atJestTypes.buildCircusMod.Event
+import typings.atJestTypes.buildCircusMod.State
 import typings.node.vmMod.Context
 import typings.node.vmMod.Script
 import scala.scalajs.js
@@ -12,13 +14,7 @@ import scala.scalajs.js.annotation._
   var context: Context | Null
   var fakeTimers: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FakeTimers<Timer> */ js.Any) | Null
   var global: Global
-  var handleTestEvent: js.UndefOr[
-    js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Circus.Event */ /* event */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Circus.State */ /* state */ js.Any, 
-      Unit
-    ]
-  ] = js.undefined
+  var handleTestEvent: js.UndefOr[js.Function2[/* event */ Event, /* state */ State, Unit]] = js.undefined
   var moduleMocker: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModuleMocker */ js.Any) | Null
   def runScript(script: Script): js.Any
   /**
@@ -42,7 +38,7 @@ object PuppeteerEnvironment {
     teardown: () => js.Promise[Unit],
     context: Context = null,
     fakeTimers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FakeTimers<Timer> */ js.Any = null,
-    handleTestEvent: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Circus.Event */ /* event */ js.Any, /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Circus.State */ /* state */ js.Any) => Unit = null,
+    handleTestEvent: (/* event */ Event, /* state */ State) => Unit = null,
     moduleMocker: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModuleMocker */ js.Any = null
   ): PuppeteerEnvironment = {
     val __obj = js.Dynamic.literal(global = global, runScript = js.Any.fromFunction1(runScript), setup = js.Any.fromFunction0(setup), teardown = js.Any.fromFunction0(teardown))

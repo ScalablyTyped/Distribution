@@ -1926,7 +1926,7 @@ object ^ extends js.Object {
   def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): typings.rxjs.internalObservableMod.Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = js.native
   @JSName("concat")
   def concat_R[R](observables: (ObservableInput[_] | SchedulerLike)*): typings.rxjs.internalObservableMod.Observable[R] = js.native
-  def defer[O /* <: ObservableInput[_] */](observableFactory: js.Function0[O | Unit]): typings.rxjs.internalObservableMod.Observable[ObservedValueOf[O]] = js.native
+  def defer[R /* <: ObservableInput[_] | Unit */](observableFactory: js.Function0[R]): typings.rxjs.internalObservableMod.Observable[ObservedValueOf[R]] = js.native
   def empty(): typings.rxjs.internalObservableMod.Observable[scala.Nothing] = js.native
   def empty(scheduler: SchedulerLike): typings.rxjs.internalObservableMod.Observable[scala.Nothing] = js.native
   def forkJoin(args: (ObservableInput[_] | js.Function)*): typings.rxjs.internalObservableMod.Observable[_] = js.native

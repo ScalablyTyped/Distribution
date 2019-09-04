@@ -147,6 +147,15 @@ object reactDashIntlStrings {
   sealed trait format extends js.Object
   
   @js.native
+  sealed trait formatDate extends js.Object
+  
+  @js.native
+  sealed trait formatNumber extends js.Object
+  
+  @js.native
+  sealed trait formatTime extends js.Object
+  
+  @js.native
   sealed trait formats extends js.Object
   
   @js.native
@@ -304,6 +313,9 @@ object reactDashIntlStrings {
   
   @js.native
   sealed trait quarter extends js.Object
+  
+  @js.native
+  sealed trait relative extends js.Object
   
   @js.native
   sealed trait rp extends js.Object
@@ -532,6 +544,12 @@ object reactDashIntlStrings {
   @scala.inline
   def format: format = "format".asInstanceOf[format]
   @scala.inline
+  def formatDate: formatDate = "formatDate".asInstanceOf[formatDate]
+  @scala.inline
+  def formatNumber: formatNumber = "formatNumber".asInstanceOf[formatNumber]
+  @scala.inline
+  def formatTime: formatTime = "formatTime".asInstanceOf[formatTime]
+  @scala.inline
   def formats: formats = "formats".asInstanceOf[formats]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
@@ -637,6 +655,8 @@ object reactDashIntlStrings {
   def q: q = "q".asInstanceOf[q]
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
+  @scala.inline
+  def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
   def rp: rp = "rp".asInstanceOf[rp]
   @scala.inline

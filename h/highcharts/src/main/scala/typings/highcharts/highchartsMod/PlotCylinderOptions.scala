@@ -116,6 +116,13 @@ trait PlotCylinderOptions extends js.Object {
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps) Determines what data value should be
+    * used to calculate point color if `colorAxis` is used. Requires to set
+    * `min` and `max` if some custom point property is used or if approximation
+    * for data grouping is set to `'sum'`.
+    */
+  var colorKey: js.UndefOr[String] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) A series specific or series type specific
     * color set to apply instead of the global colors when colorByPoint is
     * true.
@@ -203,15 +210,6 @@ trait PlotCylinderOptions extends js.Object {
     * the series.
     */
   var description: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotCylinderDragDropOptions] = js.undefined
   /**
     * (Highcharts) 3D columns only. The color of the edges. Similar to
     * `borderColor`, except it defaults to the same color as the column.
@@ -469,8 +467,9 @@ trait PlotCylinderOptions extends js.Object {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
+    * the legend. Standalone series are shown in legend by default, and linked
+    * series are not. Since v7.2.0 it is possible to show series that use
+    * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   /**
@@ -576,6 +575,7 @@ object PlotCylinderOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: PlotCylinderConnectorsOptions = null,
@@ -586,7 +586,6 @@ object PlotCylinderOptions {
     dataLabels: js.Any = null,
     depth: Int | Double = null,
     description: String = null,
-    dragDrop: PlotCylinderDragDropOptions = null,
     edgeColor: ColorString = null,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -649,6 +648,7 @@ object PlotCylinderOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
@@ -659,7 +659,6 @@ object PlotCylinderOptions {
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (edgeColor != null) __obj.updateDynamic("edgeColor")(edgeColor)
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)

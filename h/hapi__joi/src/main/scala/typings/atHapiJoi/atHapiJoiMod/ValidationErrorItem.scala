@@ -8,7 +8,7 @@ trait ValidationErrorItem extends js.Object {
   var context: js.UndefOr[Context] = js.undefined
   var message: String
   var options: js.UndefOr[ValidationOptions] = js.undefined
-  var path: js.Array[String]
+  var path: js.Array[String | Double]
   var `type`: String
 }
 
@@ -16,7 +16,7 @@ object ValidationErrorItem {
   @scala.inline
   def apply(
     message: String,
-    path: js.Array[String],
+    path: js.Array[String | Double],
     `type`: String,
     context: Context = null,
     options: ValidationOptions = null

@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait ColorAxisAccessibilityOptions extends js.Object {
   /**
-    * (Highcharts, Highmaps) Description for an axis to expose to screen reader
-    * users.
+    * (Highcharts, Highstock, Highmaps) Description for an axis to expose to
+    * screen reader users.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highmaps) Enable axis accessibility features, including axis
-    * information in the screen reader information region. If this is disabled
-    * on the xAxis, the x values are not exposed to screen readers for the
-    * individual data points by default.
+    * (Highcharts, Highstock, Highmaps) Enable axis accessibility features,
+    * including axis information in the screen reader information region. If
+    * this is disabled on the xAxis, the x values are not exposed to screen
+    * readers for the individual data points by default.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highmaps) Range description for an axis. Overrides the
-    * default range description. Set to empty to disable range description for
-    * this axis.
+    * (Highcharts, Highstock, Highmaps) Range description for an axis.
+    * Overrides the default range description. Set to empty to disable range
+    * description for this axis.
     */
   var rangeDescription: js.UndefOr[String] = js.undefined
 }

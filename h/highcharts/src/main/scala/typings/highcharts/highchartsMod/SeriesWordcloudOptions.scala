@@ -141,6 +141,7 @@ object SeriesWordcloudOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: PlotWordcloudConnectorsOptions = null,
@@ -151,7 +152,6 @@ object SeriesWordcloudOptions {
     data: js.Array[(js.Tuple2[String, Double]) | SeriesWordcloudDataOptions] = null,
     depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    dragDrop: PlotWordcloudDragDropOptions = null,
     edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -212,6 +212,7 @@ object SeriesWordcloudOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
@@ -222,7 +223,6 @@ object SeriesWordcloudOptions {
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(edgeColor)) __obj.updateDynamic("edgeColor")(edgeColor)
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)

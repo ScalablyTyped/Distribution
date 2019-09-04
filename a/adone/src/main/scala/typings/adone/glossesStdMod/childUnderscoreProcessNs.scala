@@ -8,6 +8,7 @@ import typings.node.Anon_StderrStdoutBuffer
 import typings.node.Buffer
 import typings.node.Error
 import typings.node.childUnderscoreProcessMod.ChildProcess
+import typings.node.childUnderscoreProcessMod.ChildProcessByStdio
 import typings.node.childUnderscoreProcessMod.ChildProcessWithoutNullStreams
 import typings.node.childUnderscoreProcessMod.ExecException
 import typings.node.childUnderscoreProcessMod.ExecFileOptions
@@ -24,11 +25,16 @@ import typings.node.childUnderscoreProcessMod.ExecSyncOptionsWithStringEncoding
 import typings.node.childUnderscoreProcessMod.ForkOptions
 import typings.node.childUnderscoreProcessMod.PromiseWithChild
 import typings.node.childUnderscoreProcessMod.SpawnOptions
+import typings.node.childUnderscoreProcessMod.SpawnOptionsWithStdioTuple
 import typings.node.childUnderscoreProcessMod.SpawnOptionsWithoutStdio
 import typings.node.childUnderscoreProcessMod.SpawnSyncOptions
 import typings.node.childUnderscoreProcessMod.SpawnSyncOptionsWithBufferEncoding
 import typings.node.childUnderscoreProcessMod.SpawnSyncOptionsWithStringEncoding
 import typings.node.childUnderscoreProcessMod.SpawnSyncReturns
+import typings.node.childUnderscoreProcessMod.StdioNull
+import typings.node.childUnderscoreProcessMod.StdioPipe
+import typings.node.streamMod.Readable
+import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -294,11 +300,21 @@ object childUnderscoreProcessNs extends js.Object {
   def fork(modulePath: String): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String]): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String], options: ForkOptions): ChildProcess = js.native
+  // overloads of spawn without 'args'
   def spawn(command: String): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
+  def spawn(
+    command: String,
+    args: js.Array[String],
+    options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
+  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, options: SpawnOptions): ChildProcess = js.native
+  def spawn(
+    command: String,
+    options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
+  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
   def spawn(command: String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawnSync(command: String): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String]): SpawnSyncReturns[String] = js.native

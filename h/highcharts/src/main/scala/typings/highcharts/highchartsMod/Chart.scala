@@ -206,6 +206,28 @@ class Chart protected () extends js.Object {
   def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean, animation: Boolean): Axis = js.native
   def addAxis(options: AxisOptions, isX: Boolean, redraw: Boolean, animation: AnimationOptionsObject): Axis = js.native
   /**
+    * Add a color axis to the chart after render time. Note that this method
+    * should never be used when adding data synchronously at chart render time,
+    * as it adds expense to the calculations and rendering. When adding data at
+    * the same time as the chart is initialized, add the axis as a
+    * configuration option instead.
+    *
+    * @param options
+    *        The axis options.
+    *
+    * @param redraw
+    *        Whether to redraw the chart after adding.
+    *
+    * @param animation
+    *        Whether and how to apply animation in the redraw.
+    *
+    * @return The newly generated Axis object.
+    */
+  def addColorAxis(options: ColorAxisOptions): ColorAxis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Boolean): ColorAxis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: Boolean): ColorAxis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: AnimationOptionsObject): ColorAxis = js.native
+  /**
     * Set a new credits label for the chart.
     *
     * @param credits
@@ -344,6 +366,14 @@ class Chart protected () extends js.Object {
     */
   def reflow(): Unit = js.native
   def reflow(e: Event): Unit = js.native
+  /**
+    * Set the caption options. This can also be done from Chart#update.
+    *
+    * @param options
+    *        New caption options. The caption text itself is set by the
+    *        `options.text` property.
+    */
+  def setCaption(options: CaptionOptions): Unit = js.native
   /**
     * Set the chart container's class name, in addition to
     * `highcharts-container`.

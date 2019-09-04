@@ -23,13 +23,13 @@ trait Result[T] extends js.Object {
     * Each column’s name is always given. If the oracledb.extendedMetaData or execute() option extendedMetaData
     * are true then additional information is included.
     */
-  var metaData: js.Array[Metadata]
+  var metaData: js.UndefOr[js.Array[Metadata]] = js.undefined
   /**
     * This contains the output values of OUT and IN OUT binds. If bindParams is passed as an array,
     * then outBinds is returned as an array. If bindParams is passed as an object,
     * then outBinds is returned as an object. If there are no OUT or IN OUT binds, the value is undefined.
     */
-  var outBinds: T
+  var outBinds: js.UndefOr[T] = js.undefined
   /**
     * For SELECT statements when the resultSet option is true, use the resultSet object to fetch rows.
     *
@@ -39,7 +39,7 @@ trait Result[T] extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsetclass
     * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsethandling
     */
-  var resultSet: ResultSet[T]
+  var resultSet: js.UndefOr[ResultSet[T]] = js.undefined
   /**
     * For SELECT statements using direct fetches, rows contains an array of fetched rows.
     * It will be NULL if there is an error or the SQL statement was not a SELECT statement.
@@ -50,27 +50,32 @@ trait Result[T] extends js.Object {
     * The number of rows returned is limited by oracledb.maxRows or the maxRows option in an execute() call.
     * If maxRows is 0, then the number of rows is limited by Node.js memory constraints.
     */
-  var rows: js.Array[T]
+  var rows: js.UndefOr[js.Array[T]] = js.undefined
   /**
     * For DML statements (including SELECT FOR UPDATE) this contains the number of rows affected,
     * for example the number of rows inserted. For non-DML statements such as queries and PL/SQL statements,
     * rowsAffected is undefined.
     */
-  var rowsAffected: Double
+  var rowsAffected: js.UndefOr[Double] = js.undefined
 }
 
 object Result {
   @scala.inline
   def apply[T](
-    metaData: js.Array[Metadata],
-    outBinds: T,
-    resultSet: ResultSet[T],
-    rows: js.Array[T],
-    rowsAffected: Double,
-    implicitResults: js.Array[js.Array[T] | ResultSet[T]] = null
+    implicitResults: js.Array[js.Array[T] | ResultSet[T]] = null,
+    metaData: js.Array[Metadata] = null,
+    outBinds: T = null,
+    resultSet: ResultSet[T] = null,
+    rows: js.Array[T] = null,
+    rowsAffected: Int | Double = null
   ): Result[T] = {
-    val __obj = js.Dynamic.literal(metaData = metaData, outBinds = outBinds.asInstanceOf[js.Any], resultSet = resultSet, rows = rows, rowsAffected = rowsAffected)
+    val __obj = js.Dynamic.literal()
     if (implicitResults != null) __obj.updateDynamic("implicitResults")(implicitResults)
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
+    if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
+    if (resultSet != null) __obj.updateDynamic("resultSet")(resultSet)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result[T]]
   }
 }

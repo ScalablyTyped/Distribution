@@ -347,9 +347,6 @@ object tabulatorDashTablesStrings {
   sealed trait selected extends js.Object
   
   @js.native
-  sealed trait selection extends js.Object
-  
-  @js.native
   sealed trait star
     extends _Editor
        with _Formatter
@@ -612,8 +609,6 @@ object tabulatorDashTablesStrings {
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def selection: selection = "selection".asInstanceOf[selection]
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   @scala.inline

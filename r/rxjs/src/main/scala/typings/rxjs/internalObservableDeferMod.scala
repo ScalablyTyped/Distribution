@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/observable/defer", JSImport.Namespace)
 @js.native
 object internalObservableDeferMod extends js.Object {
-  def defer[O /* <: ObservableInput[_] */](observableFactory: js.Function0[O | Unit]): Observable[ObservedValueOf[O]] = js.native
+  def defer[R /* <: ObservableInput[_] | Unit */](observableFactory: js.Function0[R]): Observable[ObservedValueOf[R]] = js.native
 }
 

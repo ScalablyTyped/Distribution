@@ -21,4 +21,5 @@ package object childUnderscoreProcessMod {
   ]]
   */
   type StdioOptions = _StdioOptions | (js.Array[js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null]])
+  type StdioPipe = js.UndefOr[Null | pipe]
 }

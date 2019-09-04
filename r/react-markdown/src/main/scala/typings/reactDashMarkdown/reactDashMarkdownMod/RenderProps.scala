@@ -24,9 +24,7 @@ object RenderProps {
     escapeHtml: js.UndefOr[Boolean] = js.undefined,
     includeNodeIndex: js.UndefOr[Boolean] = js.undefined,
     linkTarget: String | LinkTargetResolver = null,
-    parserOptions: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RemarkParseOptions */ _
-    ] = null,
+    parserOptions: Partial[RemarkParseOptions] = null,
     plugins: js.Array[_] | js.Function0[Unit] = null,
     rawSourcePos: js.UndefOr[Boolean] = js.undefined,
     renderers: StringDictionary[ReactType[_]] = null,

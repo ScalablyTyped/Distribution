@@ -27,6 +27,8 @@ trait FilePondBaseProps extends js.Object {
   var captureMethod: js.UndefOr[js.Any] = js.undefined
   var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  /** List of files for controlled usage */
+  var files: js.UndefOr[js.Array[File]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   /** The maximum number of files that the pond can handle */
   var maxFiles: js.UndefOr[Double] = js.undefined
@@ -51,6 +53,7 @@ object FilePondBaseProps {
     captureMethod: js.Any = null,
     children: ReactElement | js.Array[ReactElement] = null,
     className: String = null,
+    files: js.Array[File] = null,
     id: String = null,
     maxFiles: Int | Double = null,
     maxParallelUploads: Int | Double = null,
@@ -69,6 +72,7 @@ object FilePondBaseProps {
     if (captureMethod != null) __obj.updateDynamic("captureMethod")(captureMethod)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (files != null) __obj.updateDynamic("files")(files)
     if (id != null) __obj.updateDynamic("id")(id)
     if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
     if (maxParallelUploads != null) __obj.updateDynamic("maxParallelUploads")(maxParallelUploads.asInstanceOf[js.Any])

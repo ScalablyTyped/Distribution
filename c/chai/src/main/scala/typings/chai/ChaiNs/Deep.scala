@@ -18,6 +18,7 @@ trait Deep extends js.Object {
   var members_Original: Members = js.native
   var nested: Nested = js.native
   var ordered: Ordered = js.native
+  var own: Own = js.native
   @JSName("property")
   var property_Original: Property = js.native
   def eq(value: js.Any): Assertion = js.native

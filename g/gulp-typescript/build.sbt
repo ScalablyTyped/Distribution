@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-typescript"
-version := "5.0.1-53f855"
+version := "5.0.1-10c9ac"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "typescript" % "3.6.2-08574c")
 publishArtifact in packageDoc := false

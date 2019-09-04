@@ -33,6 +33,7 @@ class ClientRuntimeContext protected () extends IDisposable {
   ): Unit = js.native
   def get_applicationName(): String = js.native
   def get_clientTag(): String = js.native
+  def get_disableReturnValueCache(): Boolean = js.native
   def get_formDigestHandlingEnabled(): Boolean = js.native
   def get_hasPendingRequest(): Boolean = js.native
   def get_pendingRequest(): ClientRequest = js.native
@@ -55,6 +56,7 @@ class ClientRuntimeContext protected () extends IDisposable {
   def remove_requestSucceeded(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit]): Unit = js.native
   def set_applicationName(value: String): Unit = js.native
   def set_clientTag(value: String): Unit = js.native
+  def set_disableReturnValueCache(value: Boolean): Boolean = js.native
   def set_formDigestHandlingEnabled(value: Boolean): Unit = js.native
   def set_requestTimeout(value: Double): Unit = js.native
   def set_traceCorrelationId(value: String): Unit = js.native

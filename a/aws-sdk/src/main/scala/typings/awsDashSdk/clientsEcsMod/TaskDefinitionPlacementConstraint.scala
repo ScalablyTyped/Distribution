@@ -10,7 +10,7 @@ trait TaskDefinitionPlacementConstraint extends js.Object {
     */
   var expression: js.UndefOr[String] = js.undefined
   /**
-    * The type of constraint. The DistinctInstance constraint ensures that each task in a particular group is running on a different container instance. The MemberOf constraint restricts selection to be from a group of valid candidates.
+    * The type of constraint. The MemberOf constraint restricts selection to be from a group of valid candidates.
     */
   var `type`: js.UndefOr[TaskDefinitionPlacementConstraintType] = js.undefined
 }

@@ -77,8 +77,8 @@ trait SodaOperation extends js.Object {
     *
     * @since 3.0
     */
-  def getOne(): js.Promise[SodaDocument] = js.native
-  def getOne(callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]): Unit = js.native
+  def getOne(): js.Promise[js.UndefOr[SodaDocument]] = js.native
+  def getOne(callback: js.Function2[/* error */ DBError, /* document */ js.UndefOr[SodaDocument], Unit]): Unit = js.native
   /**
     * Sets the key value to be used to match a document for the operation. Any previous calls made to this
     * method or keys() will be ignored.
@@ -213,10 +213,10 @@ trait SodaOperation extends js.Object {
     *
     * @since 3.0
     */
-  def replaceOneAndGet(newDocument: SodaDocument): js.Promise[SodaDocument] = js.native
+  def replaceOneAndGet(newDocument: SodaDocument): js.Promise[js.UndefOr[SodaDocument]] = js.native
   def replaceOneAndGet(
     newDocument: SodaDocument,
-    callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
+    callback: js.Function2[/* error */ DBError, /* document */ js.UndefOr[SodaDocument], Unit]
   ): Unit = js.native
   /**
     * Sets the number of documents that will be skipped before the terminal method is applied.

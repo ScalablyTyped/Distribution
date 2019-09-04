@@ -25,6 +25,8 @@ object ^ extends js.Object {
   val GooglePlusIcon: StatelessComponent[IconComponentProps] = js.native
   val GooglePlusShareButton: StatelessComponent[CommonShareButtonProps] = js.native
   val GooglePlusShareCount: StatelessComponent[ShareCountComponentProps] = js.native
+  val LineIcon: StatelessComponent[IconComponentProps] = js.native
+  val LineShareButton: StatelessComponent[CommonShareButtonProps with Anon_Title] = js.native
   val LinkedinIcon: StatelessComponent[IconComponentProps] = js.native
   val LinkedinShareButton: StatelessComponent[CommonShareButtonProps with Anon_Description] = js.native
   val LinkedinShareCount: StatelessComponent[ShareCountComponentProps] = js.native

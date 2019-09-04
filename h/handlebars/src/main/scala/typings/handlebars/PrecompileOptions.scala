@@ -18,7 +18,7 @@ object PrecompileOptions {
     destName: String = null,
     explicitPartialContext: js.UndefOr[Boolean] = js.undefined,
     ignoreStandalone: js.UndefOr[Boolean] = js.undefined,
-    knownHelpers: Anon_BlockHelperMissing = null,
+    knownHelpers: KnownHelpers = null,
     knownHelpersOnly: js.UndefOr[Boolean] = js.undefined,
     noEscape: js.UndefOr[Boolean] = js.undefined,
     preventIndent: js.UndefOr[Boolean] = js.undefined,

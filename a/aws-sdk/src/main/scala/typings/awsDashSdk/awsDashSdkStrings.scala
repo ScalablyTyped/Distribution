@@ -7688,6 +7688,7 @@ object awsDashSdkStrings {
        with _CatalogEncryptionMode
        with _CertificateAuthorityStatus
        with _CertificateTransparencyLoggingPreference
+       with typings.awsDashSdk.clientsGameliftMod._CertificateType
        with _CloudWatchEncryptionMode
        with _CmafClientCache
        with _CmafWriteDASHManifest
@@ -9453,6 +9454,7 @@ object awsDashSdkStrings {
        with _ExportTaskStatusCode
        with _FileSystemLifecycle
        with _FlowExecutionStatus
+       with _GameSessionPlacementState
        with _ImageBuilderState
        with _ImageState
        with _ImportStatus
@@ -10304,6 +10306,10 @@ object awsDashSdkStrings {
        with _OperatorType
   
   @js.native
+  sealed trait GENERATED
+    extends typings.awsDashSdk.clientsGameliftMod._CertificateType
+  
+  @js.native
   sealed trait GENERIC_EVENT extends _EventCode
   
   @js.native
@@ -10446,7 +10452,8 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
   
   @js.native
-  sealed trait GPU extends js.Object
+  sealed trait GPU
+    extends typings.awsDashSdk.clientsEcsMod._ResourceType
   
   @js.native
   sealed trait GQ
@@ -12150,6 +12157,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait Ines extends _VoiceId
+  
+  @js.native
+  sealed trait InferenceAccelerator
+    extends typings.awsDashSdk.clientsEcsMod._ResourceType
   
   @js.native
   sealed trait Info extends _EnvironmentHealthStatus
@@ -32022,6 +32033,8 @@ object awsDashSdkStrings {
   @scala.inline
   def GE: GE = "GE".asInstanceOf[GE]
   @scala.inline
+  def GENERATED: GENERATED = "GENERATED".asInstanceOf[GENERATED]
+  @scala.inline
   def GENERIC_EVENT: GENERIC_EVENT = "GENERIC_EVENT".asInstanceOf[GENERIC_EVENT]
   @scala.inline
   def GENERIC_NAME: GENERIC_NAME = "GENERIC_NAME".asInstanceOf[GENERIC_NAME]
@@ -32867,6 +32880,8 @@ object awsDashSdkStrings {
   def IncorrectInstanceState: IncorrectInstanceState = "IncorrectInstanceState".asInstanceOf[IncorrectInstanceState]
   @scala.inline
   def Ines: Ines = "Ines".asInstanceOf[Ines]
+  @scala.inline
+  def InferenceAccelerator: InferenceAccelerator = "InferenceAccelerator".asInstanceOf[InferenceAccelerator]
   @scala.inline
   def Info: Info = "Info".asInstanceOf[Info]
   @scala.inline

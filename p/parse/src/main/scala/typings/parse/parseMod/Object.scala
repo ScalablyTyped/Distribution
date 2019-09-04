@@ -62,8 +62,8 @@ object Object extends js.Object {
   def fetchAllIfNeeded[T /* <: typings.parse.ParseNs.Object */](list: js.Array[T], options: FetchAllOptions): js.Promise[js.Array[T]] = js.native
   def fetchAllWithInclude[T /* <: typings.parse.ParseNs.Object */](list: js.Array[T], keys: String, options: RequestOptions): js.Promise[js.Array[T]] = js.native
   def fetchAllWithInclude[T /* <: typings.parse.ParseNs.Object */](list: js.Array[T], keys: js.Array[String | js.Array[String]], options: RequestOptions): js.Promise[js.Array[T]] = js.native
-  def fromJSON(json: js.Any): typings.parse.ParseNs.Object = js.native
-  def fromJSON(json: js.Any, `override`: Boolean): typings.parse.ParseNs.Object = js.native
+  def fromJSON[T /* <: typings.parse.ParseNs.Object */](json: js.Any): T = js.native
+  def fromJSON[T /* <: typings.parse.ParseNs.Object */](json: js.Any, `override`: Boolean): T = js.native
   def pinAll(objects: js.Array[typings.parse.ParseNs.Object]): js.Promise[Unit] = js.native
   def pinAllWithName(name: String, objects: js.Array[typings.parse.ParseNs.Object]): js.Promise[Unit] = js.native
   def registerSubclass[T /* <: typings.parse.ParseNs.Object */](className: String, clazz: Instantiable1[js.UndefOr[/* options */ js.Any], T]): Unit = js.native

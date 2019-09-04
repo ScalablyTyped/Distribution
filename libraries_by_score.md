@@ -5048,6 +5048,7 @@
 | 0.4705778534048657 | [semantic-ui-embed](./s/semantic-ui-embed) | Single component release of embed
 | 0.47045086304839745 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.47029061403094 | [react-leaflet-sidebarv2](./r/react-leaflet-sidebarv2) | A react-leaflet plugin for leaflet-sidebar-v2
+| 0.4702251611793192 | [jest__types](./j/jest__types) | -
 | 0.47007772841687023 | [bwip-js](./b/bwip-js) | JavaScript barcode generator supporting over 90 ty
 | 0.46999978025025924 | [bookshelf](./b/bookshelf) | A lightweight ORM for PostgreSQL, MySQL, and SQLit
 | 0.4699390617515019 | [stat-mode](./s/stat-mode) | Offers convenient getters and setters for the stat

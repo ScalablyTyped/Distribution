@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ionic__storage"
-version := "2.2.0-644be9"
+version := "2.2.0-07799d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__core" % "8.2.4-2d4c21",
+  "org.scalablytyped" %%% "angular__core" % "8.2.4-e3e945",
   "org.scalablytyped" %%% "localforage" % "1.7.3-622a79",
-  "org.scalablytyped" %%% "rxjs" % "6.5.2-fc403d",
+  "org.scalablytyped" %%% "rxjs" % "6.5.3-9938ed",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

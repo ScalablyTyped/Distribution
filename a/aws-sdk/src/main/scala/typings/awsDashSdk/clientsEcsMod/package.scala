@@ -132,6 +132,8 @@ package object clientsEcsMod {
   */
   type HealthStatus = _HealthStatus | java.lang.String
   type HostEntryList = js.Array[HostEntry]
+  type InferenceAcceleratorOverrides = js.Array[InferenceAcceleratorOverride]
+  type InferenceAccelerators = js.Array[InferenceAccelerator]
   type Integer = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.host
@@ -206,7 +208,12 @@ package object clientsEcsMod {
   type ProxyConfigurationType = APPMESH | java.lang.String
   type RequiresAttributes = js.Array[Attribute]
   type ResourceRequirements = js.Array[ResourceRequirement]
-  type ResourceType = GPU | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.GPU
+    - typings.awsDashSdk.awsDashSdkStrings.InferenceAccelerator
+    - java.lang.String
+  */
+  type ResourceType = _ResourceType | java.lang.String
   type Resources = js.Array[Resource]
   type ScaleUnit = PERCENT | java.lang.String
   /* Rewritten from type alias, can be one of: 

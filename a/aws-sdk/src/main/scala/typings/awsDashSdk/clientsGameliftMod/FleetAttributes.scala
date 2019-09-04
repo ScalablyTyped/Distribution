@@ -9,6 +9,7 @@ trait FleetAttributes extends js.Object {
     * Unique identifier for a build.
     */
   var BuildId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.BuildId] = js.undefined
+  var CertificateConfiguration: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.CertificateConfiguration] = js.undefined
   /**
     * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
@@ -91,6 +92,7 @@ object FleetAttributes {
   @scala.inline
   def apply(
     BuildId: BuildId = null,
+    CertificateConfiguration: CertificateConfiguration = null,
     CreationTime: Timestamp = null,
     Description: NonZeroAndMaxString = null,
     FleetArn: ArnStringModel = null,
@@ -113,6 +115,7 @@ object FleetAttributes {
   ): FleetAttributes = {
     val __obj = js.Dynamic.literal()
     if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId)
+    if (CertificateConfiguration != null) __obj.updateDynamic("CertificateConfiguration")(CertificateConfiguration)
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn)

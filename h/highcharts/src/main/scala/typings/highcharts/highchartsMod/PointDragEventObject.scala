@@ -13,7 +13,7 @@ trait PointDragEventObject extends js.Object {
   /**
     * Original data.
     */
-  var origin: js.Object
+  var origin: DragDropPositionObject
   /**
     * Prevent default drag action.
     */
@@ -32,7 +32,7 @@ object PointDragEventObject {
   @scala.inline
   def apply(
     newPoints: Dictionary[PointDragDropObject],
-    origin: js.Object,
+    origin: DragDropPositionObject,
     preventDefault: js.Function,
     target: Point,
     `type`: drag

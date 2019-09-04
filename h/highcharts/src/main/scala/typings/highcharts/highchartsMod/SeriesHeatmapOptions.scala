@@ -106,8 +106,9 @@ object SeriesHeatmapOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colsize: Int | Double = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -176,8 +177,9 @@ object SeriesHeatmapOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colsize != null) __obj.updateDynamic("colsize")(colsize.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])

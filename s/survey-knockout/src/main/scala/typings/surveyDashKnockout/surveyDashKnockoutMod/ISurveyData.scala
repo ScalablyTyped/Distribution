@@ -10,8 +10,10 @@ trait ISurveyData extends js.Object {
   def getFilteredProperties(): js.Any
   def getFilteredValues(): js.Any
   def getValue(name: String): js.Any
+  def getVariable(name: String): js.Any
   def setComment(name: String, newValue: String): js.Any
   def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any
+  def setVariable(name: String, newValue: js.Any): Unit
 }
 
 object ISurveyData {
@@ -22,10 +24,12 @@ object ISurveyData {
     getFilteredProperties: () => js.Any,
     getFilteredValues: () => js.Any,
     getValue: String => js.Any,
+    getVariable: String => js.Any,
     setComment: (String, String) => js.Any,
-    setValue: (String, js.Any, Boolean) => js.Any
+    setValue: (String, js.Any, Boolean) => js.Any,
+    setVariable: (String, js.Any) => Unit
   ): ISurveyData = {
-    val __obj = js.Dynamic.literal(getAllValues = js.Any.fromFunction0(getAllValues), getComment = js.Any.fromFunction1(getComment), getFilteredProperties = js.Any.fromFunction0(getFilteredProperties), getFilteredValues = js.Any.fromFunction0(getFilteredValues), getValue = js.Any.fromFunction1(getValue), setComment = js.Any.fromFunction2(setComment), setValue = js.Any.fromFunction3(setValue))
+    val __obj = js.Dynamic.literal(getAllValues = js.Any.fromFunction0(getAllValues), getComment = js.Any.fromFunction1(getComment), getFilteredProperties = js.Any.fromFunction0(getFilteredProperties), getFilteredValues = js.Any.fromFunction0(getFilteredValues), getValue = js.Any.fromFunction1(getValue), getVariable = js.Any.fromFunction1(getVariable), setComment = js.Any.fromFunction2(setComment), setValue = js.Any.fromFunction3(setValue), setVariable = js.Any.fromFunction2(setVariable))
   
     __obj.asInstanceOf[ISurveyData]
   }

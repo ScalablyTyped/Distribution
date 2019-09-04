@@ -54,6 +54,10 @@ trait Task extends js.Object {
     */
   var healthStatus: js.UndefOr[HealthStatus] = js.undefined
   /**
+    * The Elastic Inference accelerator associated with the task.
+    */
+  var inferenceAccelerators: js.UndefOr[InferenceAccelerators] = js.undefined
+  /**
     * The last known status of the task. For more information, see Task Lifecycle.
     */
   var lastStatus: js.UndefOr[String] = js.undefined
@@ -138,6 +142,7 @@ object Task {
     executionStoppedAt: Timestamp = null,
     group: String = null,
     healthStatus: HealthStatus = null,
+    inferenceAccelerators: InferenceAccelerators = null,
     lastStatus: String = null,
     launchType: LaunchType = null,
     memory: String = null,
@@ -169,6 +174,7 @@ object Task {
     if (executionStoppedAt != null) __obj.updateDynamic("executionStoppedAt")(executionStoppedAt)
     if (group != null) __obj.updateDynamic("group")(group)
     if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
+    if (inferenceAccelerators != null) __obj.updateDynamic("inferenceAccelerators")(inferenceAccelerators)
     if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus)
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory)

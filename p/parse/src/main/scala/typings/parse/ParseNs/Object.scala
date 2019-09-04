@@ -136,8 +136,8 @@ object Object extends js.Object {
   def fetchAllIfNeeded[T /* <: Object */](list: js.Array[T], options: FetchAllOptions): js.Promise[js.Array[T]] = js.native
   def fetchAllWithInclude[T /* <: Object */](list: js.Array[T], keys: String, options: RequestOptions): js.Promise[js.Array[T]] = js.native
   def fetchAllWithInclude[T /* <: Object */](list: js.Array[T], keys: js.Array[String | js.Array[String]], options: RequestOptions): js.Promise[js.Array[T]] = js.native
-  def fromJSON(json: js.Any): Object = js.native
-  def fromJSON(json: js.Any, `override`: Boolean): Object = js.native
+  def fromJSON[T /* <: Object */](json: js.Any): T = js.native
+  def fromJSON[T /* <: Object */](json: js.Any, `override`: Boolean): T = js.native
   def pinAll(objects: js.Array[Object]): js.Promise[Unit] = js.native
   def pinAllWithName(name: String, objects: js.Array[Object]): js.Promise[Unit] = js.native
   def registerSubclass[T /* <: Object */](className: String, clazz: Instantiable1[js.UndefOr[/* options */ js.Any], T]): Unit = js.native

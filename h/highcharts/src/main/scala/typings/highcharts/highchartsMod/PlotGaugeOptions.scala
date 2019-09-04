@@ -90,12 +90,6 @@ trait PlotGaugeOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Set this option to `false` to prevent a series from connecting
-    * to the global color axis. This will cause the series to have its own
-    * legend item.
-    */
-  var colorAxis: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
@@ -171,16 +165,7 @@ trait PlotGaugeOptions extends js.Object {
     * In styled mode, the dial is styled with the `.highcharts-gauge-series
     * .highcharts-dial` rule.
     */
-  var dial: js.UndefOr[CSSObject | PlotGaugeDialOptions] = js.undefined
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotGaugeDragDropOptions] = js.undefined
+  var dial: js.UndefOr[PlotGaugeDialOptions] = js.undefined
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
@@ -317,7 +302,7 @@ trait PlotGaugeOptions extends js.Object {
     * In styled mode, the pivot is styled with the `.highcharts-gauge-series
     * .highcharts-pivot` rule.
     */
-  var pivot: js.UndefOr[CSSObject | PlotGaugePivotOptions] = js.undefined
+  var pivot: js.UndefOr[PlotGaugePivotOptions] = js.undefined
   /**
     * (Highcharts) Properties for each single point.
     */
@@ -447,7 +432,6 @@ object PlotGaugeOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -457,8 +441,7 @@ object PlotGaugeOptions {
     dataGrouping: PlotGaugeDataGroupingOptions = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
-    dial: CSSObject | PlotGaugeDialOptions = null,
-    dragDrop: PlotGaugeDragDropOptions = null,
+    dial: PlotGaugeDialOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotGaugeEventsOptions = null,
     gapSize: Int | Double = null,
@@ -475,7 +458,7 @@ object PlotGaugeOptions {
     navigatorOptions: PlotSeriesOptions = null,
     opacity: Int | Double = null,
     overshoot: Int | Double = null,
-    pivot: CSSObject | PlotGaugePivotOptions = null,
+    pivot: PlotGaugePivotOptions = null,
     point: PlotGaugePointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
@@ -505,7 +488,6 @@ object PlotGaugeOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
@@ -515,8 +497,7 @@ object PlotGaugeOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dial != null) __obj.updateDynamic("dial")(dial.asInstanceOf[js.Any])
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
+    if (dial != null) __obj.updateDynamic("dial")(dial)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
@@ -533,7 +514,7 @@ object PlotGaugeOptions {
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (overshoot != null) __obj.updateDynamic("overshoot")(overshoot.asInstanceOf[js.Any])
-    if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
+    if (pivot != null) __obj.updateDynamic("pivot")(pivot)
     if (point != null) __obj.updateDynamic("point")(point)
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
     if (pointInterval != null) __obj.updateDynamic("pointInterval")(pointInterval.asInstanceOf[js.Any])

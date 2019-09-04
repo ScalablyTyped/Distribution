@@ -25,7 +25,7 @@ trait SodaDocumentCursor extends js.Object {
     *
     * @since 3.0
     */
-  def getNext(): js.Promise[SodaDocument] = js.native
-  def getNext(callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]): Unit = js.native
+  def getNext(): js.Promise[js.UndefOr[SodaDocument]] = js.native
+  def getNext(callback: js.Function2[/* error */ DBError, /* document */ js.UndefOr[SodaDocument], Unit]): Unit = js.native
 }
 

@@ -20,6 +20,10 @@ trait AosOptions extends js.Object {
     */
   var animatedClassName: js.UndefOr[String] = js.undefined
   /**
+    * The delay on debounce used while resizing window
+    */
+  var debounceDelay: js.UndefOr[Double] = js.undefined
+  /**
     * Values from 0 to 3000, with step 50ms
     */
   var delay: js.UndefOr[Double] = js.undefined
@@ -27,6 +31,10 @@ trait AosOptions extends js.Object {
     * Accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     */
   var disable: js.UndefOr[phone | tablet | mobile | Boolean | js.Function0[Boolean]] = js.undefined
+  /**
+    * Disables automatic mutations' detections
+    */
+  var disableMutationObserver: js.UndefOr[Boolean] = js.undefined
   /**
     * Values from 0 to 3000, with step 50ms
     */
@@ -56,6 +64,10 @@ trait AosOptions extends js.Object {
     */
   var startEvent: js.UndefOr[String] = js.undefined
   /**
+    * The delay on throttle used while scrolling the page
+    */
+  var throttleDelay: js.UndefOr[Double] = js.undefined
+  /**
     * If true, will add content of `data-aos` as classes on scroll
     */
   var useClassNames: js.UndefOr[Boolean] = js.undefined
@@ -66,8 +78,10 @@ object AosOptions {
   def apply(
     anchorPlacement: anchorPlacementOptions = null,
     animatedClassName: String = null,
+    debounceDelay: Int | Double = null,
     delay: Int | Double = null,
     disable: phone | tablet | mobile | Boolean | js.Function0[Boolean] = null,
+    disableMutationObserver: js.UndefOr[Boolean] = js.undefined,
     duration: Int | Double = null,
     easing: easingOptions = null,
     initClassName: String = null,
@@ -75,13 +89,16 @@ object AosOptions {
     offset: Int | Double = null,
     once: js.UndefOr[Boolean] = js.undefined,
     startEvent: String = null,
+    throttleDelay: Int | Double = null,
     useClassNames: js.UndefOr[Boolean] = js.undefined
   ): AosOptions = {
     val __obj = js.Dynamic.literal()
     if (anchorPlacement != null) __obj.updateDynamic("anchorPlacement")(anchorPlacement)
     if (animatedClassName != null) __obj.updateDynamic("animatedClassName")(animatedClassName)
+    if (debounceDelay != null) __obj.updateDynamic("debounceDelay")(debounceDelay.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMutationObserver)) __obj.updateDynamic("disableMutationObserver")(disableMutationObserver)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (initClassName != null) __obj.updateDynamic("initClassName")(initClassName)
@@ -89,6 +106,7 @@ object AosOptions {
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
     if (startEvent != null) __obj.updateDynamic("startEvent")(startEvent)
+    if (throttleDelay != null) __obj.updateDynamic("throttleDelay")(throttleDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(useClassNames)) __obj.updateDynamic("useClassNames")(useClassNames)
     __obj.asInstanceOf[AosOptions]
   }

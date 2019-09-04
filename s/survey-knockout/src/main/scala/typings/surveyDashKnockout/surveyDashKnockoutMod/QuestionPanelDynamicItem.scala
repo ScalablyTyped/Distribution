@@ -29,6 +29,8 @@ class QuestionPanelDynamicItem protected ()
   /* CompleteClass */
   override def getValue(name: String): js.Any = js.native
   /* CompleteClass */
+  override def getVariable(name: String): js.Any = js.native
+  /* CompleteClass */
   override def processText(text: String, returnDisplayValue: Boolean): String = js.native
   def processTextEx(text: String, returnDisplayValue: Boolean): js.Any = js.native
   /* CompleteClass */
@@ -39,6 +41,8 @@ class QuestionPanelDynamicItem protected ()
   def setValue(name: String, newValue: js.Any): Unit = js.native
   /* CompleteClass */
   override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
+  /* CompleteClass */
+  override def setVariable(name: String, newValue: js.Any): Unit = js.native
 }
 
 /* static members */

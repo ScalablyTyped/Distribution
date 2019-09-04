@@ -90,12 +90,6 @@ trait PlotSolidgaugeOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Set this option to `false` to prevent a series from connecting
-    * to the global color axis. This will cause the series to have its own
-    * legend item.
-    */
-  var colorAxis: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts) Whether to give each point an individual color.
     */
   var colorByPoint: js.UndefOr[Boolean] = js.undefined
@@ -169,15 +163,6 @@ trait PlotSolidgaugeOptions extends js.Object {
     * the series.
     */
   var description: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotSolidgaugeDragDropOptions] = js.undefined
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
@@ -448,7 +433,6 @@ object PlotSolidgaugeOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
     compare: String = null,
@@ -459,7 +443,6 @@ object PlotSolidgaugeOptions {
     dataGrouping: PlotSolidgaugeDataGroupingOptions = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
-    dragDrop: PlotSolidgaugeDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotSolidgaugeEventsOptions = null,
     gapSize: Int | Double = null,
@@ -508,7 +491,6 @@ object PlotSolidgaugeOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare)
@@ -519,7 +501,6 @@ object PlotSolidgaugeOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])

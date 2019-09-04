@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__joi"
-version := "15.0-dt-20190722Z-e2d216"
+version := "15.0-dt-20190903Z-6c0b76"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

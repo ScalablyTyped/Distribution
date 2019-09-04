@@ -6,6 +6,8 @@ import typings.node.Anon_EncodingNull
 import typings.node.Anon_EncodingString
 import typings.node.Buffer
 import typings.node.Error
+import typings.node.streamMod.Readable
+import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -362,11 +364,22 @@ object ^ extends js.Object {
   def fork(modulePath: java.lang.String): ChildProcess = js.native
   def fork(modulePath: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def fork(modulePath: java.lang.String, args: js.Array[java.lang.String], options: ForkOptions): ChildProcess = js.native
+  // overloads of spawn without 'args'
+  // overloads of spawn with 'args'
   def spawn(command: java.lang.String): ChildProcessWithoutNullStreams = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String]): ChildProcessWithoutNullStreams = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String], options: SpawnOptions): ChildProcess = js.native
+  def spawn(
+    command: java.lang.String,
+    args: js.Array[java.lang.String],
+    options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
+  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawn(command: java.lang.String, options: SpawnOptions): ChildProcess = js.native
+  def spawn(
+    command: java.lang.String,
+    options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
+  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
   def spawn(command: java.lang.String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawnSync(command: java.lang.String): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: java.lang.String, args: js.Array[java.lang.String]): SpawnSyncReturns[java.lang.String] = js.native

@@ -1,5 +1,6 @@
 package typings.reactDashIntl.reactDashIntlMod
 
+import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Context
 import typings.react.reactMod.FC
@@ -9,9 +10,11 @@ import typings.react.reactMod.PropsWithoutRef
 import typings.react.reactMod.ProviderExoticComponent
 import typings.react.reactMod.ProviderProps
 import typings.react.reactMod.RefAttributes
+import typings.reactDashIntl.Anon_0
 import typings.reactDashIntl.Anon_Children
-import typings.reactDashIntl.Anon_ChildrenVal
 import typings.reactDashIntl.Anon_ForwardedRefInstance
+import typings.reactDashIntl.Anon_Value
+import typings.reactDashIntl.Anon_ValueNumber
 import typings.reactDashIntl.Anon_WrappedComponent
 import typings.reactDashIntl.Anon_WrappedComponentComponentType
 import typings.reactDashIntl.distComponentsInjectIntlMod.Opts
@@ -21,6 +24,7 @@ import typings.reactDashIntl.distComponentsPluralMod.Props
 import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
 import typings.reactDashIntl.distDefineDashMessagesMod.Messages
 import typings.reactDashIntl.distTypesMod.CustomFormatConfig
+import typings.reactDashIntl.distTypesMod.FormatNumberOptions
 import typings.reactDashIntl.distTypesMod.IntlCache
 import typings.reactDashIntl.distTypesMod.IntlShape
 import typings.reactDashIntl.reactDashIntlNumbers.`false`
@@ -37,7 +41,6 @@ import typings.reactDashIntl.reactDashIntlStrings.two
 import typings.reactDashIntl.reactDashIntlStrings.value
 import typings.reactDashIntl.reactDashIntlStrings.zero
 import typings.std.IntlNs.DateTimeFormatOptions
-import typings.std.IntlNs.NumberFormatOptions
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,15 +49,18 @@ import scala.scalajs.js.annotation._
 @JSImport("react-intl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val FormattedDate: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
-  val FormattedNumber: FunctionComponent[NumberFormatOptions with CustomFormatConfig with Anon_ChildrenVal] = js.native
+  val FormattedDate: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Value] = js.native
+  val FormattedDateParts: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
+  val FormattedNumber: FunctionComponent[UnifiedNumberFormatOptions with CustomFormatConfig with Anon_ValueNumber] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions with Anon_0] = js.native
   val FormattedPlural: (ForwardRefExoticComponent[
     (Pick[
       Props, 
       children | other | zero | one | two | few | many | `type` | localeMatcher | format | value
     ]) with Anon_ForwardedRefInstance with RefAttributes[_]
   ]) with Anon_WrappedComponentComponentType = js.native
-  val FormattedTime: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
+  val FormattedTime: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Value] = js.native
+  val FormattedTimeParts: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
   val IntlContext: Context[IntlShape] = js.native
   val RawIntlProvider: ProviderExoticComponent[ProviderProps[IntlShape]] = js.native
   def createIntl(config: OptionalIntlConfig): IntlShape = js.native

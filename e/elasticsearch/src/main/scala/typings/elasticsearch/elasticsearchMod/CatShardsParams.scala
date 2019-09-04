@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CatShardsParams extends CatCommonParams {
+  var bytes: js.UndefOr[CatBytes] = js.undefined
   var index: js.UndefOr[NameList] = js.undefined
 }
 
@@ -13,6 +14,7 @@ object CatShardsParams {
   def apply(
     format: String,
     body: js.Any = null,
+    bytes: CatBytes = null,
     filterPath: String | js.Array[String] = null,
     h: NameList = null,
     help: js.UndefOr[Boolean] = js.undefined,
@@ -27,6 +29,7 @@ object CatShardsParams {
   ): CatShardsParams = {
     val __obj = js.Dynamic.literal(format = format)
     if (body != null) __obj.updateDynamic("body")(body)
+    if (bytes != null) __obj.updateDynamic("bytes")(bytes)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
     if (!js.isUndefined(help)) __obj.updateDynamic("help")(help)

@@ -1,13 +1,14 @@
 package typings.reactDashScrollspy.reactDashScrollspyMod
 
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollspyProps extends js.Object {
   // HTML tag for Scrollspy component if you want to use other than ul
-  var componentTag: js.UndefOr[String] = js.undefined
+  var componentTag: js.UndefOr[String | ComponentType[js.Object]] = js.undefined
   // Class name that apply to the navigation element paired with the content element in viewport
   var currentClassName: String
   // Array of target element IDs
@@ -29,7 +30,7 @@ object ScrollspyProps {
   def apply(
     currentClassName: String,
     items: js.Array[String],
-    componentTag: String = null,
+    componentTag: String | ComponentType[js.Object] = null,
     offset: Int | Double = null,
     onUpdate: /* item */ String => Unit = null,
     rootEl: String = null,
@@ -37,7 +38,7 @@ object ScrollspyProps {
     style: CSSProperties = null
   ): ScrollspyProps = {
     val __obj = js.Dynamic.literal(currentClassName = currentClassName, items = items)
-    if (componentTag != null) __obj.updateDynamic("componentTag")(componentTag)
+    if (componentTag != null) __obj.updateDynamic("componentTag")(componentTag.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (rootEl != null) __obj.updateDynamic("rootEl")(rootEl)

@@ -119,6 +119,9 @@ object fileDashTypeStrings {
   sealed trait `application/x-lzip` extends MimeType
   
   @js.native
+  sealed trait `application/x-mie` extends MimeType
+  
+  @js.native
   sealed trait `application/x-mobipocket-ebook` extends MimeType
   
   @js.native
@@ -335,6 +338,9 @@ object fileDashTypeStrings {
   sealed trait ics extends FileType
   
   @js.native
+  sealed trait `image/apng` extends MimeType
+  
+  @js.native
   sealed trait `image/bmp` extends MimeType
   
   @js.native
@@ -392,10 +398,28 @@ object fileDashTypeStrings {
   sealed trait `image/webp` extends MimeType
   
   @js.native
+  sealed trait `image/x-adobe-dng` extends MimeType
+  
+  @js.native
   sealed trait `image/x-canon-cr2` extends MimeType
   
   @js.native
+  sealed trait `image/x-fujifilm-raf` extends MimeType
+  
+  @js.native
   sealed trait `image/x-icon` extends MimeType
+  
+  @js.native
+  sealed trait `image/x-nikon-nef` extends MimeType
+  
+  @js.native
+  sealed trait `image/x-olympus-orf` extends MimeType
+  
+  @js.native
+  sealed trait `image/x-panasonic-rw2` extends MimeType
+  
+  @js.native
+  sealed trait `image/x-sony-arw` extends MimeType
   
   @js.native
   sealed trait jp2 extends FileType
@@ -435,6 +459,9 @@ object fileDashTypeStrings {
   
   @js.native
   sealed trait mid extends FileType
+  
+  @js.native
+  sealed trait mie extends FileType
   
   @js.native
   sealed trait mj2 extends FileType
@@ -491,7 +518,19 @@ object fileDashTypeStrings {
   sealed trait odt extends FileType
   
   @js.native
+  sealed trait oga extends FileType
+  
+  @js.native
   sealed trait ogg extends FileType
+  
+  @js.native
+  sealed trait ogm extends FileType
+  
+  @js.native
+  sealed trait ogv extends FileType
+  
+  @js.native
+  sealed trait ogx extends FileType
   
   @js.native
   sealed trait opus extends FileType
@@ -539,6 +578,9 @@ object fileDashTypeStrings {
   sealed trait rw2 extends FileType
   
   @js.native
+  sealed trait spx extends FileType
+  
+  @js.native
   sealed trait sqlite extends FileType
   
   @js.native
@@ -558,6 +600,9 @@ object fileDashTypeStrings {
   
   @js.native
   sealed trait `video/3gpp` extends MimeType
+  
+  @js.native
+  sealed trait `video/3gpp2` extends MimeType
   
   @js.native
   sealed trait `video/mp2t` extends MimeType
@@ -582,6 +627,9 @@ object fileDashTypeStrings {
   
   @js.native
   sealed trait `video/x-flv` extends MimeType
+  
+  @js.native
+  sealed trait `video/x-m4v` extends MimeType
   
   @js.native
   sealed trait `video/x-matroska` extends MimeType
@@ -708,6 +756,8 @@ object fileDashTypeStrings {
   def `application/x-google-chrome-extension`: `application/x-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`application/x-google-chrome-extension`]
   @scala.inline
   def `application/x-lzip`: `application/x-lzip` = "application/x-lzip".asInstanceOf[`application/x-lzip`]
+  @scala.inline
+  def `application/x-mie`: `application/x-mie` = "application/x-mie".asInstanceOf[`application/x-mie`]
   @scala.inline
   def `application/x-mobipocket-ebook`: `application/x-mobipocket-ebook` = "application/x-mobipocket-ebook".asInstanceOf[`application/x-mobipocket-ebook`]
   @scala.inline
@@ -853,6 +903,8 @@ object fileDashTypeStrings {
   @scala.inline
   def ics: ics = "ics".asInstanceOf[ics]
   @scala.inline
+  def `image/apng`: `image/apng` = "image/apng".asInstanceOf[`image/apng`]
+  @scala.inline
   def `image/bmp`: `image/bmp` = "image/bmp".asInstanceOf[`image/bmp`]
   @scala.inline
   def `image/bpg`: `image/bpg` = "image/bpg".asInstanceOf[`image/bpg`]
@@ -891,9 +943,21 @@ object fileDashTypeStrings {
   @scala.inline
   def `image/webp`: `image/webp` = "image/webp".asInstanceOf[`image/webp`]
   @scala.inline
+  def `image/x-adobe-dng`: `image/x-adobe-dng` = "image/x-adobe-dng".asInstanceOf[`image/x-adobe-dng`]
+  @scala.inline
   def `image/x-canon-cr2`: `image/x-canon-cr2` = "image/x-canon-cr2".asInstanceOf[`image/x-canon-cr2`]
   @scala.inline
+  def `image/x-fujifilm-raf`: `image/x-fujifilm-raf` = "image/x-fujifilm-raf".asInstanceOf[`image/x-fujifilm-raf`]
+  @scala.inline
   def `image/x-icon`: `image/x-icon` = "image/x-icon".asInstanceOf[`image/x-icon`]
+  @scala.inline
+  def `image/x-nikon-nef`: `image/x-nikon-nef` = "image/x-nikon-nef".asInstanceOf[`image/x-nikon-nef`]
+  @scala.inline
+  def `image/x-olympus-orf`: `image/x-olympus-orf` = "image/x-olympus-orf".asInstanceOf[`image/x-olympus-orf`]
+  @scala.inline
+  def `image/x-panasonic-rw2`: `image/x-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`image/x-panasonic-rw2`]
+  @scala.inline
+  def `image/x-sony-arw`: `image/x-sony-arw` = "image/x-sony-arw".asInstanceOf[`image/x-sony-arw`]
   @scala.inline
   def jp2: jp2 = "jp2".asInstanceOf[jp2]
   @scala.inline
@@ -920,6 +984,8 @@ object fileDashTypeStrings {
   def m4v: m4v = "m4v".asInstanceOf[m4v]
   @scala.inline
   def mid: mid = "mid".asInstanceOf[mid]
+  @scala.inline
+  def mie: mie = "mie".asInstanceOf[mie]
   @scala.inline
   def mj2: mj2 = "mj2".asInstanceOf[mj2]
   @scala.inline
@@ -957,7 +1023,15 @@ object fileDashTypeStrings {
   @scala.inline
   def odt: odt = "odt".asInstanceOf[odt]
   @scala.inline
+  def oga: oga = "oga".asInstanceOf[oga]
+  @scala.inline
   def ogg: ogg = "ogg".asInstanceOf[ogg]
+  @scala.inline
+  def ogm: ogm = "ogm".asInstanceOf[ogm]
+  @scala.inline
+  def ogv: ogv = "ogv".asInstanceOf[ogv]
+  @scala.inline
+  def ogx: ogx = "ogx".asInstanceOf[ogx]
   @scala.inline
   def opus: opus = "opus".asInstanceOf[opus]
   @scala.inline
@@ -989,6 +1063,8 @@ object fileDashTypeStrings {
   @scala.inline
   def rw2: rw2 = "rw2".asInstanceOf[rw2]
   @scala.inline
+  def spx: spx = "spx".asInstanceOf[spx]
+  @scala.inline
   def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
   @scala.inline
   def swf: swf = "swf".asInstanceOf[swf]
@@ -1002,6 +1078,8 @@ object fileDashTypeStrings {
   def ttf: ttf = "ttf".asInstanceOf[ttf]
   @scala.inline
   def `video/3gpp`: `video/3gpp` = "video/3gpp".asInstanceOf[`video/3gpp`]
+  @scala.inline
+  def `video/3gpp2`: `video/3gpp2` = "video/3gpp2".asInstanceOf[`video/3gpp2`]
   @scala.inline
   def `video/mp2t`: `video/mp2t` = "video/mp2t".asInstanceOf[`video/mp2t`]
   @scala.inline
@@ -1018,6 +1096,8 @@ object fileDashTypeStrings {
   def `video/webm`: `video/webm` = "video/webm".asInstanceOf[`video/webm`]
   @scala.inline
   def `video/x-flv`: `video/x-flv` = "video/x-flv".asInstanceOf[`video/x-flv`]
+  @scala.inline
+  def `video/x-m4v`: `video/x-m4v` = "video/x-m4v".asInstanceOf[`video/x-m4v`]
   @scala.inline
   def `video/x-matroska`: `video/x-matroska` = "video/x-matroska".asInstanceOf[`video/x-matroska`]
   @scala.inline

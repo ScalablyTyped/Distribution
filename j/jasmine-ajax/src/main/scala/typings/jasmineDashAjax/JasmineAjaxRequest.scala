@@ -18,6 +18,7 @@ trait JasmineAjaxRequest extends XMLHttpRequest {
   def data(): String | js.Object = js.native
   def respondWith(response: JasmineAjaxResponse): Unit = js.native
   def responseError(): Unit = js.native
+  def responseError(options: JasmineAjaxRequestStubErrorOptions): Unit = js.native
   def responseTimeout(): Unit = js.native
 }
 

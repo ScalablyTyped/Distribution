@@ -4,11 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Note that in my testing, callbacks that include an error prop
-  * always give the error as the second prop, with the file as
-  * the first prop.    This is contradictory to the current docs.
-  */
 trait FilePondCallbackProps extends js.Object {
   /** If no error, file has been successfully loaded */
   var onaddfile: js.UndefOr[js.Function2[/* file */ File, /* error */ FilePondErrorDescription, Unit]] = js.undefined

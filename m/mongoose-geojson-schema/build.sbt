@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mongoose-geojson-schema"
-version := "2.1-dt-20190719Z-2cda8a"
+version := "2.1-dt-20190719Z-e8f972"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-4544d8",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20190826Z-bd4cc1",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190830Z-fe662f",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190830Z-a302b7",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-c255b8",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20190826Z-2f278a",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190904Z-32e8ab",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

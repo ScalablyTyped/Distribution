@@ -115,6 +115,12 @@ import scala.scalajs.js.annotation._
   - typings.fileDashType.fileDashTypeStrings.f4b
   - typings.fileDashType.fileDashTypeStrings.f4p
   - typings.fileDashType.fileDashTypeStrings.f4v
+  - typings.fileDashType.fileDashTypeStrings.mie
+  - typings.fileDashType.fileDashTypeStrings.ogv
+  - typings.fileDashType.fileDashTypeStrings.ogm
+  - typings.fileDashType.fileDashTypeStrings.oga
+  - typings.fileDashType.fileDashTypeStrings.spx
+  - typings.fileDashType.fileDashTypeStrings.ogx
 */
 trait FileType extends js.Object
 

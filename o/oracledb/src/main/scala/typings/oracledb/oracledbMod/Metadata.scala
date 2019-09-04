@@ -19,6 +19,14 @@ trait Metadata extends js.Object {
     */
   var dbType: Double
   /**
+    * The class associated with the database type. This is only set if the database type is an object type.
+    */
+  var dbTypeClass: DBObjectClass
+  /**
+    * Name of the database type, such as “NUMBER” or “VARCHAR2”. For object types, this will be the object name.
+    */
+  var dbTypeName: String
+  /**
     * One of the Node-oracledb Type Constant values.
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#oracledbconstantsnodbtype
@@ -48,13 +56,15 @@ object Metadata {
   def apply(
     byteSize: Double,
     dbType: Double,
+    dbTypeClass: DBObjectClass,
+    dbTypeName: String,
     fetchType: Double,
     name: String,
     nullable: Boolean,
     precision: Double,
     scale: Double
   ): Metadata = {
-    val __obj = js.Dynamic.literal(byteSize = byteSize, dbType = dbType, fetchType = fetchType, name = name, nullable = nullable, precision = precision, scale = scale)
+    val __obj = js.Dynamic.literal(byteSize = byteSize, dbType = dbType, dbTypeClass = dbTypeClass, dbTypeName = dbTypeName, fetchType = fetchType, name = name, nullable = nullable, precision = precision, scale = scale)
   
     __obj.asInstanceOf[Metadata]
   }

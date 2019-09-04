@@ -68,10 +68,6 @@ import scala.scalajs.js.annotation._
     */
   var `type`: String | scatter3d
   /**
-    * Not available
-    */
-  var useOhlcData: js.UndefOr[scala.Nothing] = js.undefined
-  /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
     * defines which xAxis the particular series is connected to. It refers to
     * either the axis id or the index of the axis in the xAxis array, with 0
@@ -103,8 +99,9 @@ object SeriesScatter3dOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
@@ -118,7 +115,6 @@ object SeriesScatter3dOptions {
     dataGrouping: PlotScatter3dDataGroupingOptions = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     description: String = null,
-    dragDrop: PlotScatter3dDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotScatter3dEventsOptions = null,
     findNearestPointBy: OptionsFindNearestPointByValue = null,
@@ -164,7 +160,6 @@ object SeriesScatter3dOptions {
     threshold: Int | Double = null,
     tooltip: PlotScatter3dTooltipOptions = null,
     turboThreshold: Int | Double = null,
-    useOhlcData: js.UndefOr[scala.Nothing] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
@@ -186,8 +181,9 @@ object SeriesScatter3dOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
@@ -201,7 +197,6 @@ object SeriesScatter3dOptions {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)
@@ -247,7 +242,6 @@ object SeriesScatter3dOptions {
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])

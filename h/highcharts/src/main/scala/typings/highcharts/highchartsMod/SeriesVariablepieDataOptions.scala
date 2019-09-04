@@ -31,7 +31,7 @@ trait SeriesVariablepieDataOptions extends js.Object {
     * (Highcharts) Individual data label for each point. The options are the
     * same as the ones for plotOptions.series.dataLabels.
     */
-  var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject] = js.undefined
   /**
     * (Highcharts) A description of the point to add to the screen reader
     * information about the point. Requires the Accessibility module.
@@ -96,7 +96,7 @@ object SeriesVariablepieDataOptions {
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
-    dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
+    dataLabels: SeriesPieDataLabelsOptionsObject = null,
     description: String = null,
     dragDrop: SeriesVariablepieDataDragDropOptions = null,
     drilldown: String = null,
@@ -114,7 +114,7 @@ object SeriesVariablepieDataOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)

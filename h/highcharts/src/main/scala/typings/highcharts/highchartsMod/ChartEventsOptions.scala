@@ -72,6 +72,14 @@ trait ChartEventsOptions extends js.Object {
     */
   var drillupall: js.UndefOr[DrillupAllCallbackFunction] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Callback that fires while
+    * exporting data. This allows the modification of data rows before
+    * processed into the final format.
+    *
+    * Requires the `export-data` module.
+    */
+  var exportData: js.UndefOr[ExportDataCallbackFunction] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the chart is finished
     * loading. Since v4.2.2, it also waits for images to be loaded, for example
     * from point markers. One parameter, `event`, is passed to the function,
@@ -123,6 +131,7 @@ object ChartEventsOptions {
     drilldown: DrilldownCallbackFunction = null,
     drillup: DrillupCallbackFunction = null,
     drillupall: DrillupAllCallbackFunction = null,
+    exportData: ExportDataCallbackFunction = null,
     load: ChartLoadCallbackFunction = null,
     redraw: ChartRedrawCallbackFunction = null,
     render: ChartRenderCallbackFunction = null,
@@ -136,6 +145,7 @@ object ChartEventsOptions {
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
     if (drillup != null) __obj.updateDynamic("drillup")(drillup)
     if (drillupall != null) __obj.updateDynamic("drillupall")(drillupall)
+    if (exportData != null) __obj.updateDynamic("exportData")(exportData)
     if (load != null) __obj.updateDynamic("load")(load)
     if (redraw != null) __obj.updateDynamic("redraw")(redraw)
     if (render != null) __obj.updateDynamic("render")(render)

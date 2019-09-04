@@ -49,6 +49,8 @@ class MatrixDropdownRowModelBase protected ()
   override def getTextProcessor(): ITextProcessor = js.native
   /* CompleteClass */
   override def getValue(name: String): js.Any = js.native
+  /* CompleteClass */
+  override def getVariable(name: String): js.Any = js.native
   def locStrsChanged(): Unit = js.native
   def onAnyValueChanged(name: String): Unit = js.native
   def onQuestionReadOnlyChanged(parentIsReadOnly: Boolean): Unit = js.native
@@ -63,6 +65,8 @@ class MatrixDropdownRowModelBase protected ()
   def setValue(name: String, newColumnValue: js.Any): Unit = js.native
   /* CompleteClass */
   override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
+  /* CompleteClass */
+  override def setVariable(name: String, newValue: js.Any): Unit = js.native
   /* protected */ def updateCellOnColumnChanged(cell: MatrixDropdownCell): Unit = js.native
   def updateCellQuestionOnColumnChanged(column: MatrixDropdownColumn): Unit = js.native
 }

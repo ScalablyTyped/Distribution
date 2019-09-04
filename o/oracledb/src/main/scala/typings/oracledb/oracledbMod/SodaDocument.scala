@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   */
 trait SodaDocument extends js.Object {
   /** Creation time of the document as a string in the UTC time zone using an ISO8601 format. */
-  val createdOn: String
+  val createdOn: js.UndefOr[String] = js.undefined
   /** Unique key value for this document. */
-  val key: String
+  val key: js.UndefOr[String] = js.undefined
   /** Last modified time of the document as a string in the UTC time zone using an ISO8601 format. */
   val lastModified: String
   /**
@@ -21,8 +21,10 @@ trait SodaDocument extends js.Object {
     * By default, collections store only JSON document content and this property will be ‘application/json’. This property will be null if the media type
     * is unknown, which will only be in the rare case when a collection was created to store mixed or non-JSON content on top of a pre-existing database table,
     * and that table has NULLs in its mediaType column.
+    * 
+    * @default 'application/json'
     */
-  val mediaType: String
+  val mediaType: js.UndefOr[String] = js.undefined
   /** Version of the document. */
   val version: String
   /**
@@ -59,17 +61,19 @@ trait SodaDocument extends js.Object {
 object SodaDocument {
   @scala.inline
   def apply(
-    createdOn: String,
     getContent: () => Record[String, _],
     getContentAsBuffer: () => Buffer,
     getContentAsString: () => String,
-    key: String,
     lastModified: String,
-    mediaType: String,
-    version: String
+    version: String,
+    createdOn: String = null,
+    key: String = null,
+    mediaType: String = null
   ): SodaDocument = {
-    val __obj = js.Dynamic.literal(createdOn = createdOn, getContent = js.Any.fromFunction0(getContent), getContentAsBuffer = js.Any.fromFunction0(getContentAsBuffer), getContentAsString = js.Any.fromFunction0(getContentAsString), key = key, lastModified = lastModified, mediaType = mediaType, version = version)
-  
+    val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent), getContentAsBuffer = js.Any.fromFunction0(getContentAsBuffer), getContentAsString = js.Any.fromFunction0(getContentAsString), lastModified = lastModified, version = version)
+    if (createdOn != null) __obj.updateDynamic("createdOn")(createdOn)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
     __obj.asInstanceOf[SodaDocument]
   }
 }

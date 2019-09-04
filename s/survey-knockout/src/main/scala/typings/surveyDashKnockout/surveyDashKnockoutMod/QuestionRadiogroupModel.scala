@@ -10,6 +10,7 @@ class QuestionRadiogroupModel protected () extends QuestionCheckboxBase {
   def this(name: String) = this()
   val canShowClearButton: Boolean = js.native
   val clearButtonCaption: js.Any = js.native
+  val selectedItem: ItemValue = js.native
   /**
     * Show "clear button" flag.
     */

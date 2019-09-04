@@ -20,11 +20,12 @@ import typings.tabulatorDashTables.TabulatorNs.ScrollToRowPostition
 import typings.tabulatorDashTables.TabulatorNs.SortDirection
 import typings.tabulatorDashTables.TabulatorNs.Sorter
 import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.active
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.first
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.last
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.next
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.prev
-import typings.tabulatorDashTables.tabulatorDashTablesStrings.selection
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.selected
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.table
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -87,8 +88,11 @@ class Tabulator protected () extends js.Object {
   /** The copyToClipboard function allows you to copy the current table data to the clipboard.
     The first argument is the copy selector, you can choose from any of the built in options or pass a function in to the argument, that must return the selected row components.
     If you leave this argument undefined, Tabulator will use the value of the clipboardCopySelector property, which has a default value of table */
+  def copyToClipboard(): Unit = js.native
   @JSName("copyToClipboard")
-  def copyToClipboard_selection(`type`: selection): Unit = js.native
+  def copyToClipboard_active(`type`: active): Unit = js.native
+  @JSName("copyToClipboard")
+  def copyToClipboard_selected(`type`: selected): Unit = js.native
   @JSName("copyToClipboard")
   def copyToClipboard_table(`type`: table): Unit = js.native
   /** To permanently remove a column from the table deleteColumn function. This function takes any of the standard column component look up options as its first parameter */

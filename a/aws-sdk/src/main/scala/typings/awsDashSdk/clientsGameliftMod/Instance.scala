@@ -9,6 +9,7 @@ trait Instance extends js.Object {
     * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var DnsName: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.DnsName] = js.undefined
   /**
     * Unique identifier for a fleet that the instance is in.
     */
@@ -39,6 +40,7 @@ object Instance {
   @scala.inline
   def apply(
     CreationTime: Timestamp = null,
+    DnsName: DnsName = null,
     FleetId: FleetId = null,
     InstanceId: InstanceId = null,
     IpAddress: IpAddress = null,
@@ -48,6 +50,7 @@ object Instance {
   ): Instance = {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
+    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)

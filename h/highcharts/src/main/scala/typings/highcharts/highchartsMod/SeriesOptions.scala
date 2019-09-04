@@ -45,8 +45,6 @@ trait SeriesOptions extends js.Object {
     * `line` or `column`. By default, the series type is inherited from
     * chart.type, so unless the chart is a combination of series types, there
     * is no need to set it on the series level.
-    *
-    * In TypeScript instead the `type` option must always be set.
     */
   var `type`: String
   /**

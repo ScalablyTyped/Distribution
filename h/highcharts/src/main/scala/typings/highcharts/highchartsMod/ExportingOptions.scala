@@ -91,7 +91,7 @@ trait ExportingOptions extends js.Object {
     * received in another frame, or a custom `enctype` or `encoding` can be
     * set.
     */
-  var formAttributes: js.UndefOr[js.Any] = js.undefined
+  var formAttributes: js.UndefOr[HTMLAttributes] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
     * for export module dependencies to load on demand if they don't already
@@ -199,7 +199,7 @@ object ExportingOptions {
     error: ExportingErrorCallbackFunction = null,
     fallbackToExportServer: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
-    formAttributes: js.Any = null,
+    formAttributes: HTMLAttributes = null,
     libURL: String = null,
     menuItemDefinitions: Dictionary[ExportingMenuObject] = null,
     printMaxWidth: Int | Double = null,

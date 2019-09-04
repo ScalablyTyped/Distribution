@@ -8,7 +8,7 @@ trait DBError extends js.Object {
   /**
     * The Oracle error number. This value is undefined for non-Oracle errors and for messages prefixed with NJS or DPI.
     */
-  var errorNum: Double
+  var errorNum: js.UndefOr[Double] = js.undefined
   /**
     * The text of the error message.
     *
@@ -22,14 +22,15 @@ trait DBError extends js.Object {
     *
     * The value may be 0 in non-SQL contexts. This value is undefined for non-Oracle errors and for messages prefixed with NJS or DPI.
     */
-  var offset: Double
+  var offset: js.UndefOr[Double] = js.undefined
 }
 
 object DBError {
   @scala.inline
-  def apply(errorNum: Double, message: String, offset: Double): DBError = {
-    val __obj = js.Dynamic.literal(errorNum = errorNum, message = message, offset = offset)
-  
+  def apply(message: String, errorNum: Int | Double = null, offset: Int | Double = null): DBError = {
+    val __obj = js.Dynamic.literal(message = message)
+    if (errorNum != null) __obj.updateDynamic("errorNum")(errorNum.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBError]
   }
 }

@@ -73,12 +73,6 @@ trait PlotNetworkgraphOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Set this option to `false` to prevent a series from connecting
-    * to the global color axis. This will cause the series to have its own
-    * legend item.
-    */
-  var colorAxis: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
@@ -349,8 +343,9 @@ trait PlotNetworkgraphOptions extends js.Object {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
+    * the legend. Standalone series are shown in legend by default, and linked
+    * series are not. Since v7.2.0 it is possible to show series that use
+    * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   /**
@@ -428,7 +423,6 @@ object PlotNetworkgraphOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -486,7 +480,6 @@ object PlotNetworkgraphOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])

@@ -79,10 +79,9 @@ trait PlotSunburstOptions extends js.Object {
     */
   var className: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts) The main color of the series. In line type series it applies
-    * to the line and the point markers unless otherwise specified. In bar type
-    * series it applies to the bars unless a color is specified per point. The
-    * default value is pulled from the `options.colors` array.
+    * (Highcharts) The color of the pie series. A pie series is represented as
+    * an empty circle if the total sum of its values is 0. Use this property to
+    * define the color of its border.
     *
     * In styled mode, the color can be defined by the colorIndex option. Also,
     * the series color can be set with the `.highcharts-series`,
@@ -148,15 +147,6 @@ trait PlotSunburstOptions extends js.Object {
     */
   var description: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotSunburstDragDropOptions] = js.undefined
-  /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
@@ -168,6 +158,12 @@ trait PlotSunburstOptions extends js.Object {
     * `Highcharts.addEvent` function.
     */
   var events: js.UndefOr[PlotSunburstEventsOptions] = js.undefined
+  /**
+    * (Highcharts) If the total sum of the pie's values is 0, the series is
+    * represented as an empty circle . The `fillColor` option defines the color
+    * of that circle. Use pie.borderWidth to set the border thickness.
+    */
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts) Export-data module required. When set to `false` will
     * prevent the series data from being included in any form of data export.
@@ -342,9 +338,9 @@ object PlotSunburstOptions {
     cursor: String | CursorValue = null,
     dataLabels: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject] = null,
     description: String = null,
-    dragDrop: PlotSunburstDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotSunburstEventsOptions = null,
+    fillColor: ColorString | GradientColorObject | PatternObject = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     keys: js.Array[String] = null,
     lastPrice: PlotSunburstLastPriceOptions = null,
@@ -393,9 +389,9 @@ object PlotSunburstOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport)
     if (keys != null) __obj.updateDynamic("keys")(keys)
     if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice)

@@ -1,5 +1,6 @@
 package typings.ssh2.ssh2Mod
 
+import typings.node.NodeJSNs.ProcessEnv
 import typings.ssh2.ssh2Numbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ExecOptions extends js.Object {
   /** An environment to use for the execution of the command. */
-  var env: js.UndefOr[js.Any] = js.undefined
+  var env: js.UndefOr[ProcessEnv] = js.undefined
   /** Set to `true` to allocate a pseudo-tty with defaults, or an object containing specific pseudo-tty settings. */
   var pty: js.UndefOr[`true` | PseudoTtyOptions] = js.undefined
   /** Set either to `true` to use defaults, a number to specify a specific screen number, or an object containing x11 settings. */
@@ -17,7 +18,7 @@ trait ExecOptions extends js.Object {
 object ExecOptions {
   @scala.inline
   def apply(
-    env: js.Any = null,
+    env: ProcessEnv = null,
     pty: `true` | PseudoTtyOptions = null,
     x11: Boolean | Double | X11Options = null
   ): ExecOptions = {

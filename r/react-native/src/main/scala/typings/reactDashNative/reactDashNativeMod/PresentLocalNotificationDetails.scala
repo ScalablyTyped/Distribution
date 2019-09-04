@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait PresentLocalNotificationDetails extends js.Object {
   var alertAction: String
   var alertBody: String
+  var alertTitle: js.UndefOr[String] = js.undefined
   var applicationIconBadgeNumber: js.UndefOr[Double] = js.undefined
   var category: js.UndefOr[String] = js.undefined
   var soundName: js.UndefOr[String] = js.undefined
@@ -18,12 +19,14 @@ object PresentLocalNotificationDetails {
   def apply(
     alertAction: String,
     alertBody: String,
+    alertTitle: String = null,
     applicationIconBadgeNumber: Int | Double = null,
     category: String = null,
     soundName: String = null,
     userInfo: js.Object = null
   ): PresentLocalNotificationDetails = {
     val __obj = js.Dynamic.literal(alertAction = alertAction, alertBody = alertBody)
+    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle)
     if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category)
     if (soundName != null) __obj.updateDynamic("soundName")(soundName)

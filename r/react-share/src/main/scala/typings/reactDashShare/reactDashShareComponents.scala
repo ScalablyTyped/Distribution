@@ -28,6 +28,11 @@ object reactDashShareComponents extends reactDashShareProps {
   @scala.inline
   def GooglePlusShareCount: ComponentType[ShareCountComponentProps] = typings.reactDashShare.reactDashShareMod.^.GooglePlusShareCount.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashShare.reactDashShareMod.ShareCountComponentProps]]
   @scala.inline
+  def LineIcon: ComponentType[IconComponentProps] = typings.reactDashShare.reactDashShareMod.^.LineIcon.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashShare.reactDashShareMod.IconComponentProps]]
+  @scala.inline
+  def LineShareButton: ComponentType[CommonShareButtonProps with Anon_Title] = typings.reactDashShare.reactDashShareMod.^.LineShareButton.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashShare.reactDashShareMod.CommonShareButtonProps with typings.reactDashShare.Anon_Title]]
+  @scala.inline
   def LinkedinIcon: ComponentType[IconComponentProps] = typings.reactDashShare.reactDashShareMod.^.LinkedinIcon.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashShare.reactDashShareMod.IconComponentProps]]
   @scala.inline
   def LinkedinShareButton: ComponentType[CommonShareButtonProps with Anon_Description] = typings.reactDashShare.reactDashShareMod.^.LinkedinShareButton.asInstanceOf[typings.react.reactMod.ComponentType[

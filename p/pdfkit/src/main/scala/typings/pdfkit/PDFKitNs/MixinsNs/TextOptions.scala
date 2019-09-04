@@ -31,7 +31,7 @@ trait TextOptions extends js.Object {
   var columnGap: js.UndefOr[Double] = js.undefined
   /**  the number of columns to flow the text into */
   var columns: js.UndefOr[Double] = js.undefined
-  /**whether the text segment will be followed immediately by another segment. Useful for changing styling in the middle of a paragraph. */
+  /** whether the text segment will be followed immediately by another segment. Useful for changing styling in the middle of a paragraph. */
   var continued: js.UndefOr[Boolean] = js.undefined
   /** The character to display at the end of the text when it is too long. Set to true to use the default character. */
   var ellipsis: js.UndefOr[Boolean | String] = js.undefined
@@ -47,6 +47,8 @@ trait TextOptions extends js.Object {
   var lineGap: js.UndefOr[Double] = js.undefined
   /** A URL to link this text to (shortcut to create an annotation) */
   var link: js.UndefOr[String] = js.undefined
+  /** whether to slant the text (angle in degrees or true) */
+  var oblique: js.UndefOr[Boolean | Double] = js.undefined
   /** the amount of space between each paragraph of text */
   var paragraphGap: js.UndefOr[Double] = js.undefined
   /** whether to strike out the text */
@@ -77,6 +79,7 @@ object TextOptions {
     lineBreak: js.UndefOr[Boolean] = js.undefined,
     lineGap: Int | Double = null,
     link: String = null,
+    oblique: Boolean | Double = null,
     paragraphGap: Int | Double = null,
     strike: js.UndefOr[Boolean] = js.undefined,
     stroke: js.UndefOr[Boolean] = js.undefined,
@@ -98,6 +101,7 @@ object TextOptions {
     if (!js.isUndefined(lineBreak)) __obj.updateDynamic("lineBreak")(lineBreak)
     if (lineGap != null) __obj.updateDynamic("lineGap")(lineGap.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link)
+    if (oblique != null) __obj.updateDynamic("oblique")(oblique.asInstanceOf[js.Any])
     if (paragraphGap != null) __obj.updateDynamic("paragraphGap")(paragraphGap.asInstanceOf[js.Any])
     if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike)
     if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)

@@ -25,6 +25,11 @@ class SurveyModel ()
   val PageCount: Double = js.native
   val areInvisibleElementsShowing: Boolean = js.native
   /**
+    * The list of calculated values in the survey.
+    * @see CalculatedValue
+    */
+  var calculatedValues: js.Array[CalculatedValue] = js.native
+  /**
     * Change this property from 'onNextPage' to 'onValueChanged' to check erorrs on every question value changing.
     * By default, library checks errors on changing current page to the next or on completing the survey.
     */
@@ -1056,6 +1061,7 @@ class SurveyModel ()
     * @see completeLastPage
     */
   def doComplete(): Unit = js.native
+  /* protected */ def doCurrentPageComplete(doComplete: Boolean): Boolean = js.native
   /* protected */ def doNextPage(): Unit = js.native
   /* protected */ def doOnPageAdded(page: PageModel): Unit = js.native
   /* protected */ def doServerValidation(): Boolean = js.native
@@ -1224,12 +1230,8 @@ class SurveyModel ()
   def getUsedLocales(): js.Array[String] = js.native
   /* CompleteClass */
   override def getValue(name: String): js.Any = js.native
-  /**
-    * Returns a variable value. Variable, unlike values, are not stored in the survey results.
-    * @param name A variable name
-    * @see SetVariable
-    */
-  def getVariable(name: String): js.Any = js.native
+  /* CompleteClass */
+  override def getVariable(name: String): js.Any = js.native
   def hasVisibleQuestionByValueName(valueName: String): Boolean = js.native
   def isPageStarted(page: IPage): Boolean = js.native
   /**
@@ -1373,13 +1375,8 @@ class SurveyModel ()
   def setValue(name: String, newQuestionValue: js.Any): Unit = js.native
   /* CompleteClass */
   override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
-  /**
-    * Sets a variable value. Variable, unlike values, are not stored in the survey results.
-    * @param name A variable name
-    * @param newValue
-    * @see GetVariable
-    */
-  def setVariable(name: String, newValue: js.Any): Unit = js.native
+  /* CompleteClass */
+  override def setVariable(name: String, newValue: js.Any): Unit = js.native
   /**
     * Start the survey. Change the mode from "starting" to "running". You need to call it, if there is a started page in your survey, otherwise it does nothing.
     * @see firstPageIsStarted

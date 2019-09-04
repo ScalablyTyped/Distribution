@@ -6,30 +6,31 @@ import scala.scalajs.js.annotation._
 
 trait ColorAxisDataClassesOptions extends js.Object {
   /**
-    * (Highcharts, Highmaps) The color of each data class. If not set, the
-    * color is pulled from the global or chart-specific colors array. In styled
-    * mode, this option is ignored. Instead, use colors defined in CSS.
+    * (Highcharts, Highstock, Highmaps) The color of each data class. If not
+    * set, the color is pulled from the global or chart-specific colors array.
+    * In styled mode, this option is ignored. Instead, use colors defined in
+    * CSS.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highcharts, Highmaps) The start of the value range that the data class
-    * represents, relating to the point value.
+    * (Highcharts, Highstock, Highmaps) The start of the value range that the
+    * data class represents, relating to the point value.
     *
     * The range of each `dataClass` is closed in both ends, but can be
     * overridden by the next `dataClass`.
     */
   var from: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highmaps) The name of the data class as it appears in the
-    * legend. If no name is given, it is automatically created based on the
-    * `from` and `to` values. For full programmatic control,
+    * (Highcharts, Highstock, Highmaps) The name of the data class as it
+    * appears in the legend. If no name is given, it is automatically created
+    * based on the `from` and `to` values. For full programmatic control,
     * legend.labelFormatter can be used. In the formatter, `this.from` and
     * `this.to` can be accessed.
     */
   var name: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highmaps) The end of the value range that the data class
-    * represents, relating to the point value.
+    * (Highcharts, Highstock, Highmaps) The end of the value range that the
+    * data class represents, relating to the point value.
     *
     * The range of each `dataClass` is closed in both ends, but can be
     * overridden by the next `dataClass`.

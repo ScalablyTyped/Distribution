@@ -33,26 +33,26 @@ object ^ extends js.Object {
   def animate(el: SVGElement, params: SVGAttributes, opt: AnimationOptionsObject): Unit = js.native
   def arrayMax(data: js.Array[_]): Double = js.native
   def arrayMin(data: js.Array[_]): Double = js.native
-  def attr(elem: HTMLDOMElement): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: String, value: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: String, value: Double): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.Any = js.native
-  def attr(elem: SVGDOMElement): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: String, value: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: String, value: Double): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.Any = js.native
+  def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
   def chart(options: Options): Chart = js.native
   def chart(options: Options, callback: ChartCallbackFunction): Chart = js.native
   def chart(renderTo: String, options: Options): Chart = js.native
@@ -151,8 +151,24 @@ object ^ extends js.Object {
   def removeEvent[T](el: Class[T]): Unit = js.native
   def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
   def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-  def seriesType(`type`: String, parent: String, options: js.Any, props: js.Any): Series = js.native
-  def seriesType(`type`: String, parent: String, options: js.Any, props: js.Any, pointProps: js.Any): Series = js.native
+  def seriesType(`type`: String, parent: String, options: Dictionary[_]): Series = js.native
+  def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): Series = js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: Dictionary[_],
+    props: Dictionary[_],
+    pointProps: Dictionary[_]
+  ): Series = js.native
+  def seriesType(`type`: String, parent: String, options: SeriesOptionsType): Series = js.native
+  def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): Series = js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: SeriesOptionsType,
+    props: Dictionary[_],
+    pointProps: Dictionary[_]
+  ): Series = js.native
   def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart): Unit = js.native
   def setAnimation(animation: Boolean, chart: Chart): Unit = js.native
   def setAnimation(animation: AnimationOptionsObject, chart: Chart): Unit = js.native

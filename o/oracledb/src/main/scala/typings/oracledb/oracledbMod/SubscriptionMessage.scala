@@ -20,35 +20,33 @@ trait SubscriptionMessage extends js.Object {
     * @since 4.0
     */
   var queueName: js.UndefOr[String] = js.undefined
-  /** Indicates whether the subscription is registerd with the database. */
-  var registered: js.UndefOr[Boolean] = js.undefined
+  /** Indicates whether the subscription is registered with the database. */
+  var registered: Boolean
   /** Array of objects specifying the tables which were affected by the notification. */
   var tables: js.UndefOr[js.Array[SubscriptionTables]] = js.undefined
   /** Buffer containing the identifier of the transaction which spawned the notification. */
-  var txId: js.UndefOr[Buffer] = js.undefined
+  var txId: Buffer
   /** Type of notification sent. One of the Subscribe Event Type Constants. */
-  var `type`: js.UndefOr[Double] = js.undefined
+  var `type`: Double
 }
 
 object SubscriptionMessage {
   @scala.inline
   def apply(
+    registered: Boolean,
+    txId: Buffer,
+    `type`: Double,
     dbName: String = null,
     queries: js.Array[Anon_Tables] = null,
     queueName: String = null,
-    registered: js.UndefOr[Boolean] = js.undefined,
-    tables: js.Array[SubscriptionTables] = null,
-    txId: Buffer = null,
-    `type`: Int | Double = null
+    tables: js.Array[SubscriptionTables] = null
   ): SubscriptionMessage = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(registered = registered, txId = txId)
+    __obj.updateDynamic("type")(`type`)
     if (dbName != null) __obj.updateDynamic("dbName")(dbName)
     if (queries != null) __obj.updateDynamic("queries")(queries)
     if (queueName != null) __obj.updateDynamic("queueName")(queueName)
-    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered)
     if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (txId != null) __obj.updateDynamic("txId")(txId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionMessage]
   }
 }

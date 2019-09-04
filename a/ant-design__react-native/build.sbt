@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ant-design__react-native"
-version := "3.1.15-f1954a"
+version := "3.1.15-c9c79f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-aaceb6",
+  "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-5e4a4c",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-fd4af0",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-6dcbc8",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190902Z-b1ede5",
-  "org.scalablytyped" %%% "react-native-modal-popover" % "0.0.12-c0b531",
-  "org.scalablytyped" %%% "react-native-swipeout" % "2.3.6-51a377",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190903Z-5933c7",
+  "org.scalablytyped" %%% "react-native-modal-popover" % "0.0.12-718bb6",
+  "org.scalablytyped" %%% "react-native-swipeout" % "2.3.6-7a3244",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "utility-types" % "2.1.0-02a4ab")
 publishArtifact in packageDoc := false

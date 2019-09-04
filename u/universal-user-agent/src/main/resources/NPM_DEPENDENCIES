@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "universal-user-agent" : "3.0.0"
+      "universal-user-agent" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "universal-user-agent" : "3.0.0"
+      "universal-user-agent" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

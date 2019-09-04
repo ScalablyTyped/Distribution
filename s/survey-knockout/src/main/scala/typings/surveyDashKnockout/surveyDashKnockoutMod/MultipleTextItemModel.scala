@@ -85,6 +85,8 @@ class MultipleTextItemModel ()
   override def getValidatorTitle(): String = js.native
   /* CompleteClass */
   override def getValue(name: String): js.Any = js.native
+  /* CompleteClass */
+  override def getVariable(name: String): js.Any = js.native
   def isEmpty(): Boolean = js.native
   def onValueChanged(newValue: js.Any): Unit = js.native
   /* CompleteClass */
@@ -93,6 +95,8 @@ class MultipleTextItemModel ()
   /* CompleteClass */
   override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
   def setValue(name: String, value: js.Any): Unit = js.native
+  /* CompleteClass */
+  override def setVariable(name: String, newValue: js.Any): Unit = js.native
   def valueChangedCallback(newValue: js.Any): Unit = js.native
 }
 

@@ -2058,6 +2058,7 @@
 | [format-unicorn](./f/format-unicorn) | Stack Exchange's string format function. | string, format, formatunicorn, stackexchange |
 | [format-util](./f/format-util) | Lightweight util.format() for the browser. | util, format, string |
 | [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings. | intl, i18n, relative, time, moment, format, date |
+| [formatjs__intl-unified-nu](./f/formatjs__intl-unified-numberformat) | - | - |
 | [formatjs__intl-utils](./f/formatjs__intl-utils) | Smartly determine best unit for relative time form | intl, i18n, relative, moment, format, date |
 | [formidable](./f/formidable) | A node.js module for parsing form data, especially | - |
 | [formik](./f/formik) | Forms in React, without tears | formik, react, react-dom, form, validation, forms, higher order component, hoc |
@@ -3065,6 +3066,7 @@
 | [jest-validate](./j/jest-validate) | Generic configuration validation tool that helps y | - |
 | [jest-when](./j/jest-when) | An extension lib for jest | - |
 | [jest-worker](./j/jest-worker) | Module for executing heavy tasks under forked proc | - |
+| [jest__types](./j/jest__types) | - | - |
 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b | JSON, expression, evaluator, parser, target, context, jsep, filter, selector |
 | [jfp](./j/jfp) | A language as a library borrowing concepts from Li | - |
 | [jfs](./j/jfs) | A simple JSON file store | - |

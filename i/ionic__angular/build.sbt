@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ionic__angular"
-version := "4.8.1-c637eb"
+version := "4.8.1-250b30"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__common" % "8.2.4-5a7f7c",
-  "org.scalablytyped" %%% "angular__core" % "8.2.4-2d4c21",
-  "org.scalablytyped" %%% "angular__forms" % "8.2.4-c4657f",
-  "org.scalablytyped" %%% "angular__router" % "8.2.4-5c5590",
+  "org.scalablytyped" %%% "angular__common" % "8.2.4-2fd3a2",
+  "org.scalablytyped" %%% "angular__core" % "8.2.4-e3e945",
+  "org.scalablytyped" %%% "angular__forms" % "8.2.4-7db824",
+  "org.scalablytyped" %%% "angular__router" % "8.2.4-f62ea9",
   "org.scalablytyped" %%% "ionic__core" % "4.8.1-6415cb",
   "org.scalablytyped" %%% "ionicons" % "4.6.3-6c3221",
-  "org.scalablytyped" %%% "rxjs" % "6.5.2-fc403d",
+  "org.scalablytyped" %%% "rxjs" % "6.5.3-9938ed",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

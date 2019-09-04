@@ -102,11 +102,16 @@ trait PlotCandlestickOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Set this option to `false` to prevent a series from connecting
-    * to the global color axis. This will cause the series to have its own
-    * legend item.
+    * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
+    * this number defines which colorAxis the particular series is connected
+    * to. It refers to either the axis id or the index of the axis in the
+    * colorAxis array, with 0 being the first. Set this option to false to
+    * prevent a series from connecting to the default color axis.
+    *
+    * Since v7.2.0 the option can also be an axis id or an axis index instead
+    * of a boolean flag.
     */
-  var colorAxis: js.UndefOr[Boolean] = js.undefined
+  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) When using automatic point colors pulled
     * from the global colors or series-specific plotOptions.column.colors
@@ -124,6 +129,13 @@ trait PlotCandlestickOptions extends js.Object {
     * `highcharts-color-{n}`.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps) Determines what data value should be
+    * used to calculate point color if `colorAxis` is used. Requires to set
+    * `min` and `max` if some custom point property is used or if approximation
+    * for data grouping is set to `'sum'`.
+    */
+  var colorKey: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) A series specific or series type specific
     * color set to apply instead of the global colors when colorByPoint is
@@ -504,8 +516,9 @@ trait PlotCandlestickOptions extends js.Object {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
+    * the legend. Standalone series are shown in legend by default, and linked
+    * series are not. Since v7.2.0 it is possible to show series that use
+    * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   /**
@@ -611,9 +624,10 @@ object PlotCandlestickOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
@@ -689,9 +703,10 @@ object PlotCandlestickOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])

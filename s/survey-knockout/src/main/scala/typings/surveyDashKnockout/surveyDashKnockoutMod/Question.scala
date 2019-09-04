@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined value, hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, choicesLoaded */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -102,10 +102,13 @@ class Question protected ()
     * Always returns false.
     */
   val isPanel: Boolean = js.native
+  val isReady: Boolean = js.native
+  var isReadyValue: Boolean = js.native
   /**
     * Set this property to true, to make the question a required. If a user doesn't answer the question then a validation error will be generated.
     */
   var isRequired: Boolean = js.native
+  val isRunningValidators: Boolean = js.native
   val locCommentText: LocalizableString = js.native
   val locDescription: LocalizableString = js.native
   var locNotificationInData: Boolean = js.native
@@ -118,6 +121,13 @@ class Question protected ()
     * @see SurveyModel.questionStartIndex
     */
   val no: String = js.native
+  /**
+    * The event is fired when isReady property of question is changed.
+    * <br/> options.question - the question
+    * <br/> options.isReady - current value of isReady
+    * <br/> options.oldIsReady - old value of isReady
+    */
+  var onReadyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   var paddingLeft: String = js.native
   var paddingRight: String = js.native
   /**
@@ -218,6 +228,12 @@ class Question protected ()
     */
   def addError(error: SurveyError): Unit = js.native
   /**
+    * Get is question ready to use
+    */
+  def choicesLoaded(): Unit = js.native
+  @JSName("choicesLoaded")
+  def choicesLoaded_Any(): js.Any = js.native
+  /**
     * Call this function to clear all errors in the question
     */
   def clearErrors(): Unit = js.native
@@ -268,6 +284,7 @@ class Question protected ()
   def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /* protected */ def getFirstErrorInputElementId(): String = js.native
   /* protected */ def getFirstInputElementId(): String = js.native
+  /* protected */ def getIsRunningValidators(): Boolean = js.native
   def getLayoutType(): String = js.native
   /**
     * Returns the current survey locale
@@ -332,6 +349,7 @@ class Question protected ()
   def moveTo(container: IPanel, insertBefore: js.Any): Boolean = js.native
   def onAnyValueChanged(name: String): Unit = js.native
   /* protected */ def onCheckForErrors(errors: js.Array[SurveyError]): Unit = js.native
+  def onCompletedAsyncValidators(hasErrors: Boolean): Unit = js.native
   /* protected */ def onCreating(): Unit = js.native
   /* protected */ def onParentChanged(): Unit = js.native
   def onSurveyValueChanged(newValue: js.Any): Unit = js.native
@@ -341,6 +359,7 @@ class Question protected ()
   /* protected */ def onValueNameChanged(oldValue: String): Unit = js.native
   /* protected */ def onVisibleChanged(): Unit = js.native
   def questionTitleTemplateCallback(): String = js.native
+  /* protected */ def raiseOnCompletedAsyncValidators(): Unit = js.native
   def removeElement(element: IElement): Boolean = js.native
   /**
     * Remove a particular error from the question error list.

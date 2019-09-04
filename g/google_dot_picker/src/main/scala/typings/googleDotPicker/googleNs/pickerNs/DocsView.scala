@@ -13,6 +13,8 @@ class DocsView () extends js.Object {
   def setEnableTeamDrives(enabled: Boolean): DocsView = js.native
   // Show folders in the view items.
   def setIncludeFolders(included: Boolean): DocsView = js.native
+  // Set the MIME types which will be included in the view. Use commas to separate MIME types if more than one is required.
+  def setMimeTypes(mimeTypes: String): DocsView = js.native
   // Selects which mode the view will use to display the documents.
   def setMode(mode: String): DocsView = js.native
   // Filters the documents based on whether they are owned by the user, or shared with the user.

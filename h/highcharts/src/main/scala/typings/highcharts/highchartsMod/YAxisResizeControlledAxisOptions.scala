@@ -11,19 +11,19 @@ trait YAxisResizeControlledAxisOptions extends js.Object {
     *
     * This feature requires the `drag-panes.js` module.
     */
-  var next: js.UndefOr[js.Array[String | Double]] = js.undefined
+  var next: js.UndefOr[js.Array[Double | String]] = js.undefined
   /**
     * (Highstock) Array of axes that should move with the current axis while
     * resizing.
     *
     * This feature requires the `drag-panes.js` module.
     */
-  var prev: js.UndefOr[js.Array[String | Double]] = js.undefined
+  var prev: js.UndefOr[js.Array[Double | String]] = js.undefined
 }
 
 object YAxisResizeControlledAxisOptions {
   @scala.inline
-  def apply(next: js.Array[String | Double] = null, prev: js.Array[String | Double] = null): YAxisResizeControlledAxisOptions = {
+  def apply(next: js.Array[Double | String] = null, prev: js.Array[Double | String] = null): YAxisResizeControlledAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (next != null) __obj.updateDynamic("next")(next)
     if (prev != null) __obj.updateDynamic("prev")(prev)

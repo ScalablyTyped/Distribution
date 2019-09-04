@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-vagrant
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 ## Library description:
 Node js wrapper for vagrant CLI - command line tool.

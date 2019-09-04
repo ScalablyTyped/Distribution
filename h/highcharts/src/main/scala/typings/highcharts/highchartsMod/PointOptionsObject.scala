@@ -41,10 +41,9 @@ trait PointOptionsObject extends js.Object {
     */
   var drilldown: js.UndefOr[String] = js.undefined
   /**
-    * The id of a series in the drilldown.series array to use for a drilldown
-    * for this point.
+    * The individual point events.
     */
-  var events: PointEventsOptionsObject
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   /**
     * An id for the point. This can be used after render time to get a pointer
     * to the point object through `chart.get()`.
@@ -63,7 +62,7 @@ trait PointOptionsObject extends js.Object {
   /**
     * Options for the point markers of line-like series.
     */
-  var marker: PointMarkerOptionsObject
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   /**
     * The name of the point as shown in the legend, tooltip, dataLabels etc.
     */
@@ -95,17 +94,17 @@ trait PointOptionsObject extends js.Object {
 object PointOptionsObject {
   @scala.inline
   def apply(
-    events: PointEventsOptionsObject,
-    marker: PointMarkerOptionsObject,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
     dashStyle: DashStyleValue = null,
     dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     drilldown: String = null,
+    events: PointEventsOptionsObject = null,
     id: String = null,
     labelrank: Int | Double = null,
     legendIndex: Int | Double = null,
+    marker: PointMarkerOptionsObject = null,
     name: String = null,
     pointWidth: Int | Double = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -113,16 +112,18 @@ object PointOptionsObject {
     x: Int | Double = null,
     y: Int | Double = null
   ): PointOptionsObject = {
-    val __obj = js.Dynamic.literal(events = events, marker = marker)
+    val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
+    if (events != null) __obj.updateDynamic("events")(events)
     if (id != null) __obj.updateDynamic("id")(id)
     if (labelrank != null) __obj.updateDynamic("labelrank")(labelrank.asInstanceOf[js.Any])
     if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker)
     if (name != null) __obj.updateDynamic("name")(name)
     if (pointWidth != null) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)

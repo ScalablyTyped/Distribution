@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GameSessionPlacement extends js.Object {
+  var DnsName: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.DnsName] = js.undefined
   /**
     * Time stamp indicating when this request was completed, canceled, or timed out.
     */
@@ -78,6 +79,7 @@ trait GameSessionPlacement extends js.Object {
 object GameSessionPlacement {
   @scala.inline
   def apply(
+    DnsName: DnsName = null,
     EndTime: Timestamp = null,
     GameProperties: GamePropertyList = null,
     GameSessionArn: NonZeroAndMaxString = null,
@@ -97,6 +99,7 @@ object GameSessionPlacement {
     Status: GameSessionPlacementState = null
   ): GameSessionPlacement = {
     val __obj = js.Dynamic.literal()
+    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
     if (GameProperties != null) __obj.updateDynamic("GameProperties")(GameProperties)
     if (GameSessionArn != null) __obj.updateDynamic("GameSessionArn")(GameSessionArn)

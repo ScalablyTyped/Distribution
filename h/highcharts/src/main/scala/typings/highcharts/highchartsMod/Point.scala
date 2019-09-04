@@ -144,6 +144,7 @@ class Point () extends js.Object {
     * @param e
     *        The event arguments.
     */
+  def onMouseOver(): Unit = js.native
   def onMouseOver(e: PointerEventObject): Unit = js.native
   /**
     * Transform number or array configs into objects. Also called for object

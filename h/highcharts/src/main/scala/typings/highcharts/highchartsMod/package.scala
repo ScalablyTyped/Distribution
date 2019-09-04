@@ -49,6 +49,7 @@ package object highchartsMod {
     /* eventArguments */ js.UndefOr[Event | Dictionary[js.Any]], 
     Boolean | Unit
   ]
+  type ExportDataCallbackFunction = js.ThisFunction1[/* this */ Chart, /* event */ ExportDataEventObject, Unit]
   type ExportingAfterPrintCallbackFunction = js.Function2[/* chart */ Chart, /* event */ Event, Unit]
   type ExportingBeforePrintCallbackFunction = js.Function2[/* chart */ Chart, /* event */ Event, Unit]
   type ExportingErrorCallbackFunction = js.Function2[/* options */ ExportingOptions, /* err */ Error, Unit]

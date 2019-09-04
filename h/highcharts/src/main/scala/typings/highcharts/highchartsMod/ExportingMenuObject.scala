@@ -8,7 +8,7 @@ trait ExportingMenuObject extends js.Object {
   /**
     * The click handler for the menu item.
     */
-  var onclick: js.UndefOr[js.Function] = js.undefined
+  var onclick: js.UndefOr[EventCallbackFunction[Chart]] = js.undefined
   /**
     * Indicates a separator line instead of an item.
     */
@@ -26,7 +26,7 @@ trait ExportingMenuObject extends js.Object {
 object ExportingMenuObject {
   @scala.inline
   def apply(
-    onclick: js.Function = null,
+    onclick: EventCallbackFunction[Chart] = null,
     separator: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     textKey: String = null

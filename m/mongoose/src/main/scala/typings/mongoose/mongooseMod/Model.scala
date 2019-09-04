@@ -6,6 +6,7 @@ import typings.mongodb.Anon_N
 import typings.mongodb.mongodbMod.BulkWriteOpResultObject
 import typings.mongodb.mongodbMod.ChangeStream
 import typings.mongodb.mongodbMod.ChangeStreamOptions
+import typings.mongodb.mongodbMod.CollectionBulkWriteOptions
 import typings.mongodb.mongodbMod.CollectionCreateOptions
 import typings.mongodb.mongodbMod.FindAndModifyWriteOpResultObject
 import typings.mongoose.Anon_DeletedCount
@@ -64,11 +65,18 @@ Instantiable0[T]
     * Mongoose will perform casting on all operations you provide.
     * This function does not trigger any middleware, not save() nor update(). If you need to trigger save() middleware for every document use create() instead.
     * @param writes Operations
+    * @param options Optional settings. See https://mongoosejs.com/docs/api/model.html#model_Model.bulkWrite
     * @param cb callback
     * @return `BulkWriteOpResult` if the operation succeeds
     */
   def bulkWrite(writes: js.Array[_]): js.Promise[BulkWriteOpResultObject] = js.native
   def bulkWrite(writes: js.Array[_], cb: js.Function2[/* err */ js.Any, /* res */ BulkWriteOpResultObject, Unit]): js.Promise[BulkWriteOpResultObject] = js.native
+  def bulkWrite(writes: js.Array[_], options: CollectionBulkWriteOptions): js.Promise[BulkWriteOpResultObject] = js.native
+  def bulkWrite(
+    writes: js.Array[_],
+    options: CollectionBulkWriteOptions,
+    cb: js.Function2[/* err */ js.Any, /* res */ BulkWriteOpResultObject, Unit]
+  ): Unit = js.native
   /** Counts number of matching documents in a database collection. */
   def count(conditions: js.Any): Query[Double] with QueryHelpers = js.native
   def count(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native

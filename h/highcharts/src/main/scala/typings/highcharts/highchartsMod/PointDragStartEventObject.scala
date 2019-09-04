@@ -10,6 +10,6 @@ trait PointDragStartEventObject extends MouseEvent {
   /**
     * Data property being dragged.
     */
-  var updateProp: Dictionary[Double] = js.native
+  var updateProp: js.UndefOr[String] = js.native
 }
 

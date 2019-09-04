@@ -13,6 +13,7 @@ import typings.highcharts.highchartsMod.Chart
 import typings.highcharts.highchartsMod.ChartCallbackFunction
 import typings.highcharts.highchartsMod.Class
 import typings.highcharts.highchartsMod.Color
+import typings.highcharts.highchartsMod.ColorAxisOptions
 import typings.highcharts.highchartsMod.ColorType
 import typings.highcharts.highchartsMod.Dictionary
 import typings.highcharts.highchartsMod.EventCallbackFunction
@@ -28,6 +29,7 @@ import typings.highcharts.highchartsMod.SVGAttributes
 import typings.highcharts.highchartsMod.SVGDOMElement
 import typings.highcharts.highchartsMod.SVGElement
 import typings.highcharts.highchartsMod.Series
+import typings.highcharts.highchartsMod.SeriesOptionsType
 import typings.highcharts.highchartsMod.Time
 import typings.highcharts.highchartsMod.TimeFormatCallbackFunction
 import typings.highcharts.highchartsMod.TimeOptions
@@ -48,6 +50,11 @@ trait TypeofHighcharts extends js.Object {
   var Axis: Instantiable2[/* chart */ Chart, /* options */ AxisOptions, typings.highcharts.highchartsMod.Axis] = js.native
   var Chart: Instantiable1[/* options */ Options, typings.highcharts.highchartsMod.Chart] = js.native
   var Color: Instantiable1[/* input */ ColorType, typings.highcharts.highchartsMod.Color] = js.native
+  var ColorAxis: Instantiable2[
+    /* chart */ Chart, 
+    /* userOptions */ ColorAxisOptions, 
+    typings.highcharts.highchartsMod.ColorAxis
+  ] = js.native
   var Legend: Instantiable2[
     /* chart */ Chart, 
     /* options */ LegendOptions, 
@@ -95,26 +102,26 @@ trait TypeofHighcharts extends js.Object {
   def animate(el: SVGElement, params: SVGAttributes, opt: AnimationOptionsObject): Unit = js.native
   def arrayMax(data: js.Array[_]): Double = js.native
   def arrayMin(data: js.Array[_]): Double = js.native
-  def attr(elem: HTMLDOMElement): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: String, value: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: String, value: Double): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.Any = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.Any = js.native
-  def attr(elem: SVGDOMElement): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: String, value: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: String, value: Double): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.Any = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.Any = js.native
+  def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
   def chart(options: Options): Chart = js.native
   def chart(options: Options, callback: ChartCallbackFunction): Chart = js.native
   def chart(renderTo: String, options: Options): Chart = js.native
@@ -213,8 +220,24 @@ trait TypeofHighcharts extends js.Object {
   def removeEvent[T](el: Class[T]): Unit = js.native
   def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
   def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-  def seriesType(`type`: String, parent: String, options: js.Any, props: js.Any): Series = js.native
-  def seriesType(`type`: String, parent: String, options: js.Any, props: js.Any, pointProps: js.Any): Series = js.native
+  def seriesType(`type`: String, parent: String, options: Dictionary[_]): Series = js.native
+  def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): Series = js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: Dictionary[_],
+    props: Dictionary[_],
+    pointProps: Dictionary[_]
+  ): Series = js.native
+  def seriesType(`type`: String, parent: String, options: SeriesOptionsType): Series = js.native
+  def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): Series = js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: SeriesOptionsType,
+    props: Dictionary[_],
+    pointProps: Dictionary[_]
+  ): Series = js.native
   def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart): Unit = js.native
   def setAnimation(animation: Boolean, chart: Chart): Unit = js.native
   def setAnimation(animation: AnimationOptionsObject, chart: Chart): Unit = js.native

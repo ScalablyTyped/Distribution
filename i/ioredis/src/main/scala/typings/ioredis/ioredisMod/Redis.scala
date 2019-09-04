@@ -309,6 +309,7 @@ trait Redis
   def pttl(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
   def publish(channel: String, message: String): js.Promise[Double] = js.native
   def publish(channel: String, message: String, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
+  def publishBuffer(channel: String, message: Buffer): js.Promise[Double] = js.native
   def punsubscribe(patterns: String*): js.Any = js.native
   def quit(): js.Promise[String] = js.native
   def quit(callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Unit = js.native
@@ -607,6 +608,7 @@ trait Redis
   @JSName("xtrim")
   def xtrim_maxlen(key: KeyType, maxLenOption: maxlen, args: js.Any*): js.Any = js.native
   def zadd(key: KeyType, args: String*): js.Promise[Double | String] = js.native
+  def zaddBuffer(key: KeyType, score1: Double, member1: Buffer): js.Promise[String | Double] = js.native
   def zcard(key: KeyType): js.Promise[Double] = js.native
   def zcard(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
   def zcount(key: KeyType, min: String, max: String): js.Promise[Double] = js.native

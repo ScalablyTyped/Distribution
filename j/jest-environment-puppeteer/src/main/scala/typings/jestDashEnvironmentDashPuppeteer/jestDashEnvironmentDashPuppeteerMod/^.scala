@@ -1,5 +1,6 @@
 package typings.jestDashEnvironmentDashPuppeteer.jestDashEnvironmentDashPuppeteerMod
 
+import typings.atJestTypes.buildConfigMod.ProjectConfig
 import typings.node.vmMod.Context
 import typings.node.vmMod.Script
 import scala.scalajs.js
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-environment-puppeteer", JSImport.Namespace)
 @js.native
 class ^ protected () extends PuppeteerEnvironment {
-  def this(config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Config.ProjectConfig */ js.Any) = this()
+  def this(config: ProjectConfig) = this()
   /* CompleteClass */
   override var context: Context | Null = js.native
   /* CompleteClass */

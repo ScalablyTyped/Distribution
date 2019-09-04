@@ -115,7 +115,6 @@ object SeriesSolidgaugeOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
     compare: String = null,
@@ -130,7 +129,6 @@ object SeriesSolidgaugeOptions {
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     dial: js.UndefOr[scala.Nothing] = js.undefined,
-    dragDrop: PlotSolidgaugeDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotSolidgaugeEventsOptions = null,
     gapSize: Int | Double = null,
@@ -190,7 +188,6 @@ object SeriesSolidgaugeOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare)
@@ -205,7 +202,6 @@ object SeriesSolidgaugeOptions {
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(dial)) __obj.updateDynamic("dial")(dial)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])

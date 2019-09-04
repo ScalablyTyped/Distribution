@@ -1,207 +1,125 @@
 package typings.atTestingDashLibraryVue
 
-import typings.atTestingDashLibraryDom.matchesMod.Matcher
-import typings.atTestingDashLibraryDom.matchesMod.MatcherOptions
-import typings.atTestingDashLibraryDom.queryDashHelpersMod.SelectorMatcherOptions
-import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
-import typings.std.HTMLElement
+import typings.atTestingDashLibraryDom.queriesMod.AllByBoundAttribute
+import typings.atTestingDashLibraryDom.queriesMod.AllByText
+import typings.atTestingDashLibraryDom.queriesMod.FindAllByBoundAttribute
+import typings.atTestingDashLibraryDom.queriesMod.FindAllByText
+import typings.atTestingDashLibraryDom.queriesMod.FindByBoundAttribute
+import typings.atTestingDashLibraryDom.queriesMod.FindByText
+import typings.atTestingDashLibraryDom.queriesMod.GetByBoundAttribute
+import typings.atTestingDashLibraryDom.queriesMod.GetByText
+import typings.atTestingDashLibraryDom.queriesMod.QueryByBoundAttribute
+import typings.atTestingDashLibraryDom.queriesMod.QueryByText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Typeofqueries extends js.Object {
-  def findAllByAltText(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByAltText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByAltText(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByDisplayValue(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByDisplayValue(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByDisplayValue(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByLabelText(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByLabelText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByLabelText(
-    container: HTMLElement,
-    id: Matcher,
-    options: SelectorMatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByPlaceholderText(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByPlaceholderText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByPlaceholderText(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByRole(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByRole(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByRole(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByTestId(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByTestId(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByTestId(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByText(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByText(
-    container: HTMLElement,
-    id: Matcher,
-    options: SelectorMatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByTitle(container: HTMLElement, id: Matcher): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByTitle(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[js.Array[HTMLElement]] = js.native
-  def findAllByTitle(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[js.Array[HTMLElement]] = js.native
-  def findByAltText(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByAltText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByAltText(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByDisplayValue(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByDisplayValue(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByDisplayValue(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByLabelText(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByLabelText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByLabelText(
-    container: HTMLElement,
-    id: Matcher,
-    options: SelectorMatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByPlaceholderText(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByPlaceholderText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByPlaceholderText(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByRole(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByRole(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByRole(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByTestId(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByTestId(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByTestId(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByText(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByText(
-    container: HTMLElement,
-    id: Matcher,
-    options: SelectorMatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def findByTitle(container: HTMLElement, id: Matcher): js.Promise[HTMLElement] = js.native
-  def findByTitle(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Promise[HTMLElement] = js.native
-  def findByTitle(
-    container: HTMLElement,
-    id: Matcher,
-    options: MatcherOptions,
-    waitForElementOptions: WaitForElementOptions
-  ): js.Promise[HTMLElement] = js.native
-  def getAllByAltText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByAltText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByDisplayValue(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByDisplayValue(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByLabelText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByLabelText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByPlaceholderText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByPlaceholderText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByRole(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByRole(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByTestId(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByTestId(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Array[HTMLElement] = js.native
-  def getAllByTitle(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def getAllByTitle(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def getByAltText(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByAltText(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement = js.native
-  def getByDisplayValue(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByDisplayValue(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement = js.native
-  def getByLabelText(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByLabelText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): HTMLElement = js.native
-  def getByPlaceholderText(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByPlaceholderText(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement = js.native
-  def getByRole(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByRole(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement = js.native
-  def getByTestId(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByTestId(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement = js.native
-  def getByText(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): HTMLElement = js.native
-  def getByTitle(container: HTMLElement, id: Matcher): HTMLElement = js.native
-  def getByTitle(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement = js.native
-  def queryAllByAltText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByAltText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByDisplayValue(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByDisplayValue(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByLabelText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByLabelText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByPlaceholderText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByPlaceholderText(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByRole(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByRole(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByTestId(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByTestId(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByText(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): js.Array[HTMLElement] = js.native
-  def queryAllByTitle(container: HTMLElement, id: Matcher): js.Array[HTMLElement] = js.native
-  def queryAllByTitle(container: HTMLElement, id: Matcher, options: MatcherOptions): js.Array[HTMLElement] = js.native
-  def queryByAltText(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByAltText(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement | Null = js.native
-  def queryByDisplayValue(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByDisplayValue(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement | Null = js.native
-  def queryByLabelText(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByLabelText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): HTMLElement | Null = js.native
-  def queryByPlaceholderText(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByPlaceholderText(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement | Null = js.native
-  def queryByRole(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByRole(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement | Null = js.native
-  def queryByTestId(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByTestId(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement | Null = js.native
-  def queryByText(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByText(container: HTMLElement, id: Matcher, options: SelectorMatcherOptions): HTMLElement | Null = js.native
-  def queryByTitle(container: HTMLElement, id: Matcher): HTMLElement | Null = js.native
-  def queryByTitle(container: HTMLElement, id: Matcher, options: MatcherOptions): HTMLElement | Null = js.native
+  val findAllByAltText: FindAllByBoundAttribute
+  val findAllByDisplayValue: FindAllByBoundAttribute
+  val findAllByLabelText: FindAllByText
+  val findAllByPlaceholderText: FindAllByBoundAttribute
+  val findAllByRole: FindAllByBoundAttribute
+  val findAllByTestId: FindAllByBoundAttribute
+  val findAllByText: FindAllByText
+  val findAllByTitle: FindAllByBoundAttribute
+  val findByAltText: FindByBoundAttribute
+  val findByDisplayValue: FindByBoundAttribute
+  val findByLabelText: FindByText
+  val findByPlaceholderText: FindByBoundAttribute
+  val findByRole: FindByBoundAttribute
+  val findByTestId: FindByBoundAttribute
+  val findByText: FindByText
+  val findByTitle: FindByBoundAttribute
+  val getAllByAltText: AllByBoundAttribute
+  val getAllByDisplayValue: AllByBoundAttribute
+  val getAllByLabelText: AllByText
+  val getAllByPlaceholderText: AllByBoundAttribute
+  val getAllByRole: AllByBoundAttribute
+  val getAllByTestId: AllByBoundAttribute
+  val getAllByText: AllByText
+  val getAllByTitle: AllByBoundAttribute
+  val getByAltText: GetByBoundAttribute
+  val getByDisplayValue: GetByBoundAttribute
+  val getByLabelText: GetByText
+  val getByPlaceholderText: GetByBoundAttribute
+  val getByRole: GetByBoundAttribute
+  val getByTestId: GetByBoundAttribute
+  val getByText: GetByText
+  val getByTitle: GetByBoundAttribute
+  val queryAllByAltText: AllByBoundAttribute
+  val queryAllByDisplayValue: AllByBoundAttribute
+  val queryAllByLabelText: AllByText
+  val queryAllByPlaceholderText: AllByBoundAttribute
+  val queryAllByRole: AllByBoundAttribute
+  val queryAllByTestId: AllByBoundAttribute
+  val queryAllByText: AllByText
+  val queryAllByTitle: AllByBoundAttribute
+  val queryByAltText: QueryByBoundAttribute
+  val queryByDisplayValue: QueryByBoundAttribute
+  val queryByLabelText: QueryByText
+  val queryByPlaceholderText: QueryByBoundAttribute
+  val queryByRole: QueryByBoundAttribute
+  val queryByTestId: QueryByBoundAttribute
+  val queryByText: QueryByText
+  val queryByTitle: QueryByBoundAttribute
+}
+
+object Typeofqueries {
+  @scala.inline
+  def apply(
+    findAllByAltText: FindAllByBoundAttribute,
+    findAllByDisplayValue: FindAllByBoundAttribute,
+    findAllByLabelText: FindAllByText,
+    findAllByPlaceholderText: FindAllByBoundAttribute,
+    findAllByRole: FindAllByBoundAttribute,
+    findAllByTestId: FindAllByBoundAttribute,
+    findAllByText: FindAllByText,
+    findAllByTitle: FindAllByBoundAttribute,
+    findByAltText: FindByBoundAttribute,
+    findByDisplayValue: FindByBoundAttribute,
+    findByLabelText: FindByText,
+    findByPlaceholderText: FindByBoundAttribute,
+    findByRole: FindByBoundAttribute,
+    findByTestId: FindByBoundAttribute,
+    findByText: FindByText,
+    findByTitle: FindByBoundAttribute,
+    getAllByAltText: AllByBoundAttribute,
+    getAllByDisplayValue: AllByBoundAttribute,
+    getAllByLabelText: AllByText,
+    getAllByPlaceholderText: AllByBoundAttribute,
+    getAllByRole: AllByBoundAttribute,
+    getAllByTestId: AllByBoundAttribute,
+    getAllByText: AllByText,
+    getAllByTitle: AllByBoundAttribute,
+    getByAltText: GetByBoundAttribute,
+    getByDisplayValue: GetByBoundAttribute,
+    getByLabelText: GetByText,
+    getByPlaceholderText: GetByBoundAttribute,
+    getByRole: GetByBoundAttribute,
+    getByTestId: GetByBoundAttribute,
+    getByText: GetByText,
+    getByTitle: GetByBoundAttribute,
+    queryAllByAltText: AllByBoundAttribute,
+    queryAllByDisplayValue: AllByBoundAttribute,
+    queryAllByLabelText: AllByText,
+    queryAllByPlaceholderText: AllByBoundAttribute,
+    queryAllByRole: AllByBoundAttribute,
+    queryAllByTestId: AllByBoundAttribute,
+    queryAllByText: AllByText,
+    queryAllByTitle: AllByBoundAttribute,
+    queryByAltText: QueryByBoundAttribute,
+    queryByDisplayValue: QueryByBoundAttribute,
+    queryByLabelText: QueryByText,
+    queryByPlaceholderText: QueryByBoundAttribute,
+    queryByRole: QueryByBoundAttribute,
+    queryByTestId: QueryByBoundAttribute,
+    queryByText: QueryByText,
+    queryByTitle: QueryByBoundAttribute
+  ): Typeofqueries = {
+    val __obj = js.Dynamic.literal(findAllByAltText = findAllByAltText, findAllByDisplayValue = findAllByDisplayValue, findAllByLabelText = findAllByLabelText, findAllByPlaceholderText = findAllByPlaceholderText, findAllByRole = findAllByRole, findAllByTestId = findAllByTestId, findAllByText = findAllByText, findAllByTitle = findAllByTitle, findByAltText = findByAltText, findByDisplayValue = findByDisplayValue, findByLabelText = findByLabelText, findByPlaceholderText = findByPlaceholderText, findByRole = findByRole, findByTestId = findByTestId, findByText = findByText, findByTitle = findByTitle, getAllByAltText = getAllByAltText, getAllByDisplayValue = getAllByDisplayValue, getAllByLabelText = getAllByLabelText, getAllByPlaceholderText = getAllByPlaceholderText, getAllByRole = getAllByRole, getAllByTestId = getAllByTestId, getAllByText = getAllByText, getAllByTitle = getAllByTitle, getByAltText = getByAltText, getByDisplayValue = getByDisplayValue, getByLabelText = getByLabelText, getByPlaceholderText = getByPlaceholderText, getByRole = getByRole, getByTestId = getByTestId, getByText = getByText, getByTitle = getByTitle, queryAllByAltText = queryAllByAltText, queryAllByDisplayValue = queryAllByDisplayValue, queryAllByLabelText = queryAllByLabelText, queryAllByPlaceholderText = queryAllByPlaceholderText, queryAllByRole = queryAllByRole, queryAllByTestId = queryAllByTestId, queryAllByText = queryAllByText, queryAllByTitle = queryAllByTitle, queryByAltText = queryByAltText, queryByDisplayValue = queryByDisplayValue, queryByLabelText = queryByLabelText, queryByPlaceholderText = queryByPlaceholderText, queryByRole = queryByRole, queryByTestId = queryByTestId, queryByText = queryByText, queryByTitle = queryByTitle)
+  
+    __obj.asInstanceOf[Typeofqueries]
+  }
 }
 

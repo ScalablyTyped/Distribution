@@ -151,7 +151,6 @@ object SeriesSankeyOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
     colorByPoint: js.UndefOr[Boolean] = js.undefined,
     colorIndex: Int | Double = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
@@ -169,7 +168,6 @@ object SeriesSankeyOptions {
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
     depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    dragDrop: PlotSankeyDragDropOptions = null,
     edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
     edgeWidth: js.UndefOr[scala.Nothing] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -231,7 +229,6 @@ object SeriesSankeyOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
     if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)
@@ -249,7 +246,6 @@ object SeriesSankeyOptions {
     if (!js.isUndefined(dataURL)) __obj.updateDynamic("dataURL")(dataURL)
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(edgeColor)) __obj.updateDynamic("edgeColor")(edgeColor)
     if (!js.isUndefined(edgeWidth)) __obj.updateDynamic("edgeWidth")(edgeWidth)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)

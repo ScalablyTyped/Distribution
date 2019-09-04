@@ -25,6 +25,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var getInputElement: js.UndefOr[js.Function0[ReactElement]] = js.undefined
+  var inputValue: js.UndefOr[String] = js.undefined
   var labelInValue: js.UndefOr[Boolean] = js.undefined
   var maxTagCount: js.UndefOr[Double] = js.undefined
   var maxTagPlaceholder: js.UndefOr[ReactNode | (js.Function1[/* omittedValues */ js.Array[T], ReactNode])] = js.undefined
@@ -73,6 +74,7 @@ object SelectProps {
     getInputElement: () => ReactElement = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     id: String = null,
+    inputValue: String = null,
     labelInValue: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
     maxTagCount: Int | Double = null,
@@ -130,6 +132,7 @@ object SelectProps {
     if (getInputElement != null) __obj.updateDynamic("getInputElement")(js.Any.fromFunction0(getInputElement))
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
+    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
     if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])

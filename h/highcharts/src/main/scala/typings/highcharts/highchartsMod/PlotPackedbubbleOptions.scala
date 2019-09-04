@@ -114,17 +114,29 @@ trait PlotPackedbubbleOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highmaps) Set this option to `false` to prevent a series from connecting
-    * to the global color axis. This will cause the series to have its own
-    * legend item.
+    * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
+    * this number defines which colorAxis the particular series is connected
+    * to. It refers to either the axis id or the index of the axis in the
+    * colorAxis array, with 0 being the first. Set this option to false to
+    * prevent a series from connecting to the default color axis.
+    *
+    * Since v7.2.0 the option can also be an axis id or an axis index instead
+    * of a boolean flag.
     */
-  var colorAxis: js.UndefOr[Boolean] = js.undefined
+  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
   /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps) Determines what data value should be
+    * used to calculate point color if `colorAxis` is used. Requires to set
+    * `min` and `max` if some custom point property is used or if approximation
+    * for data grouping is set to `'sum'`.
+    */
+  var colorKey: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) Compare the values of the series against the first non-null,
     * non- zero value in the visible range. The y axis will show percentage or
@@ -223,15 +235,6 @@ trait PlotPackedbubbleOptions extends js.Object {
     * setting negativeColor.
     */
   var displayNegative: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
-    */
-  var dragDrop: js.UndefOr[PlotPackedbubbleDragDropOptions] = js.undefined
   /**
     * (Highcharts) Flag to determine if nodes are draggable or not. Available
     * for graph with useSimulation set to true only.
@@ -474,8 +477,9 @@ trait PlotPackedbubbleOptions extends js.Object {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts) Whether to display this particular series or series type in
-    * the legend. The default value is `true` for standalone series, `false`
-    * for linked series.
+    * the legend. Standalone series are shown in legend by default, and linked
+    * series are not. Since v7.2.0 it is possible to show series that use
+    * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   /**
@@ -603,8 +607,9 @@ object PlotPackedbubbleOptions {
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: js.UndefOr[Boolean] = js.undefined,
+    colorAxis: Boolean | Double | String = null,
     colorIndex: Int | Double = null,
+    colorKey: String = null,
     compare: String = null,
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
@@ -616,7 +621,6 @@ object PlotPackedbubbleOptions {
     dataLabels: SeriesPackedBubbleDataLabelsOptionsObject | js.Array[SeriesPackedBubbleDataLabelsOptionsObject] = null,
     description: String = null,
     displayNegative: js.UndefOr[Boolean] = js.undefined,
-    dragDrop: PlotPackedbubbleDragDropOptions = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: PlotPackedbubbleEventsOptions = null,
@@ -678,8 +682,9 @@ object PlotPackedbubbleOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAxis)) __obj.updateDynamic("colorAxis")(colorAxis)
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart)
@@ -691,7 +696,6 @@ object PlotPackedbubbleOptions {
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(displayNegative)) __obj.updateDynamic("displayNegative")(displayNegative)
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)

@@ -4,6 +4,7 @@ import typings.node.NodeJSNs.MultipleResolveType
 import typings.node.NodeJSNs.Platform
 import typings.node.NodeJSNs.Signals
 import typings.node.bufferMod.TranscodeEncoding
+import typings.node.childUnderscoreProcessMod.StdioNull
 import typings.node.childUnderscoreProcessMod._StdioOptions
 import typings.node.cryptoMod.CipherCCMTypes
 import typings.node.cryptoMod.CipherGCMTypes
@@ -686,13 +687,17 @@ object nodeStrings {
   sealed trait hybrid extends ECDHKeyFormat
   
   @js.native
-  sealed trait ignore extends _StdioOptions
+  sealed trait ignore
+    extends StdioNull
+       with _StdioOptions
   
   @js.native
   sealed trait information extends js.Object
   
   @js.native
-  sealed trait inherit extends _StdioOptions
+  sealed trait inherit
+    extends StdioNull
+       with _StdioOptions
   
   @js.native
   sealed trait inspectorNotification extends js.Object

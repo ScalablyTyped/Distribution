@@ -33,6 +33,7 @@ object FilePondProps {
     dropOnElement: js.UndefOr[Boolean] = js.undefined,
     dropOnPage: js.UndefOr[Boolean] = js.undefined,
     dropValidation: js.UndefOr[Boolean] = js.undefined,
+    files: js.Array[File] = null,
     iconProcess: String = null,
     iconRemove: String = null,
     iconRetry: String = null,
@@ -97,6 +98,7 @@ object FilePondProps {
     if (!js.isUndefined(dropOnElement)) __obj.updateDynamic("dropOnElement")(dropOnElement)
     if (!js.isUndefined(dropOnPage)) __obj.updateDynamic("dropOnPage")(dropOnPage)
     if (!js.isUndefined(dropValidation)) __obj.updateDynamic("dropValidation")(dropValidation)
+    if (files != null) __obj.updateDynamic("files")(files)
     if (iconProcess != null) __obj.updateDynamic("iconProcess")(iconProcess)
     if (iconRemove != null) __obj.updateDynamic("iconRemove")(iconRemove)
     if (iconRetry != null) __obj.updateDynamic("iconRetry")(iconRetry)
