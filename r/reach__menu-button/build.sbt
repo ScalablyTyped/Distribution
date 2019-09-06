@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reach__menu-button"
-version := "0.1-dt-20190628Z-fcf722"
+version := "0.1-dt-20190628Z-62380a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

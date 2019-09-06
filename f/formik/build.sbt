@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formik"
-version := "1.5.8-ee277c"
+version := "1.5.8-56305d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

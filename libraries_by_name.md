@@ -743,6 +743,7 @@
 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt | - |
 | [breeze](./b/breeze) | Functional async flow control library | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed  | grid, masonry, layout, packing |
+| [bristol-sentry](./b/bristol-sentry) | Sentry transport + formatter for the Bristol logge | - |
 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with | fs, filesystem, html5-fs, html5-filesystem, html5-filesystem-api, browser-fs, browser-filesystem, web-fs, web-filesystem |
 | [broccoli-plugin](./b/broccoli-plugin) | Base class for all Broccoli plugins | broccoli-plugin |
 | [brorand](./b/brorand) | Random number generator for browsers and node.js | Random, RNG, browser, crypto |
@@ -967,6 +968,7 @@
 | [cloneable-readable](./c/cloneable-readable) | Clone a Readable stream, safely | readable, stream, clone |
 | [cloner](./c/cloner) | An ES5+ compatible utility to deep or shallow copy | ES5, ES6, ES2015, clone, copy, shallow, deep, merge, utility |
 | [closure-compiler](./c/closure-compiler) | Bindings to Google's Closure Compiler | - |
+| [cloud-config-client](./c/cloud-config-client) | Spring Cloud Config Client for NodeJS | Spring Cloud Config, configuration, client |
 | [cloud-env](./c/cloud-env) | Consistent naming for cloud-provided server config | config, paas, openshift, modulus, heroku, env, configuration |
 | [cloudflare-apps](./c/cloudflare-apps) | - | - |
 | [clovelced-plugin-audioman](./c/clovelced-plugin-audiomanagement) | A plugin to manage audio mode and volume | cordova, device, audio, volume, vibrate |
@@ -1588,6 +1590,7 @@
 | [electron-notify](./e/electron-notify) | Nice and simple notifications for Electron apps | - |
 | [electron-osx-sign](./e/electron-osx-sign) | Codesign Electron macOS apps | - |
 | [electron-packager](./e/electron-packager) | Customize and package your Electron app with OS-sp | electron, packager, bundler, app |
+| [electron-prompt](./e/electron-prompt) | Electron helper to prompt for a value via input or | electron, prompt, string |
 | [electron-publish](./e/electron-publish) | Part of  | - |
 | [electron-settings](./e/electron-settings) | A simple persistent user settings framework for El | electron, app, user, data, settings, config, storage, json, has, get, getAll, set, setAll, delete, deleteAll, watch, file |
 | [electron-spellchecker](./e/electron-spellchecker) | Implement spellchecking, correctly | spelling, electron, rx |
@@ -1717,6 +1720,7 @@
 | [esprima](./e/esprima) | ECMAScript parsing infrastructure for multipurpose | ast, ecmascript, esprima, javascript, parser, syntax |
 | [esprima-walk](./e/esprima-walk) | Walk the primary nodes of an esprima parse tree -  | esprima, parse, parser, source, code, ast, syntax, tree, walk, walker, traverse, fast, quick, quickly, performant, performance |
 | [espruino](./e/espruino) | Command Line Interface and library for Communicati | espruino, microcontroller, uc, embedded |
+| [esrever](./e/esrever) | A fully Unicode-aware string reverser written in J | string, reverse, unicode |
 | [esri-leaflet](./e/esri-leaflet) | Leaflet plugins for consuming ArcGIS Online and Ar | arcgis, esri, esri leaflet, gis, leaflet plugin, mapping |
 | [esri-leaflet-geocoder](./e/esri-leaflet-geocoder) | Esri Geocoding utility and search plugin for Leafl | - |
 | [estraverse](./e/estraverse) | ECMAScript JS AST traversal functions | - |
@@ -2639,6 +2643,7 @@
 | [hashids](./h/hashids) | Generate YouTube-like ids from numbers. Use Hashid | hashids, hashid, hash, ids, youtube, bitly, obfuscate, encode, decode, encrypt, decrypt |
 | [hashlru](./h/hashlru) | simpler faster substitute for LRU | - |
 | [hashmap](./h/hashmap) | HashMap Class for JavaScript | hashmap, map, object, array, associative, javascript, nodejs, node, browser |
+| [hashring](./h/hashring) | A consistent hashring compatible with ketama hashi | hashring, hash ring, hashing, hashvalue, ketama, hash_ring, hash, consistent hashing, libketama |
 | [hashset](./h/hashset) | A simple hash set in JavaScript | HashSet, JavaScript, Node |
 | [hashtable](./h/hashtable) | Native HashTable and ES6 compatible Map for Node.j | hash, map, hashmap, hashtable, container |
 | [hashtag-regex](./h/hashtag-regex) | A regular expression to match hashtag identifiers  | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji, hashtag, hashtags |
@@ -3088,7 +3093,6 @@
 | [jpeg-js](./j/jpeg-js) | A pure javascript JPEG encoder and decoder | jpeg, jpg, encoder, decoder, codec, image, javascript, js |
 | [jpegtran-bin](./j/jpegtran-bin) | jpegtran (part of libjpeg-turbo) bin-wrapper that  | imagemin, compress, image, img, jpeg, jpg, minify, optimize, jpegtran |
 | [jpm](./j/jpm) | Jetpack Mechanic utilities for creating, testing,  | firefox, mozilla, jetpack, jpm |
-| [jpush-react-native](./j/jpush-react-native) | a jpush plugin for react native application | react, native, jpush |
 | [jqgrid](./j/jqgrid) | jQuery grid plugin | - |
 | [jqrangeslider](./j/jqrangeslider) | jQRangeSlider, jQDateRangeSlider & jQEditRangeSlid | jqrangeslider, jqueryui-range, selection-slider, dates-slider |
 | [jquery](./j/jquery) | JavaScript library for DOM operations | jquery, javascript, browser, library |
@@ -3618,6 +3622,7 @@
 | [leaflet-gpx](./l/leaflet-gpx) | npm for https://github.com/mpetazzoni/leaflet-gpx | leaflet, gpx |
 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet | leaflet |
 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps | gis, map |
+| [leaflet-loading](./l/leaflet-loading) | A simple loading control for Leaflet | leaflet, map, maps, gis, geoweb, loading |
 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP | leaflet, leafletjs |
 | [leaflet-polylinedecorator](./l/leaflet-polylinedecorator) | - | - |
 | [leaflet-providers](./l/leaflet-providers) | An extension to Leaflet that contains configuratio | - |
@@ -4183,7 +4188,6 @@
 | [memory-pager](./m/memory-pager) | Access memory using small fixed sized buffers | - |
 | [memorystream](./m/memorystream) | This is lightweight memory stream module for node. | memory, test, stream, tools, streams, buffer |
 | [memwatch-next](./m/memwatch-next) | Keep an eye on your memory usage, and discover and | - |
-| [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK | - |
 | [menubar](./m/menubar) | high level way to create menubar desktop applicati | electron, atom, shell, menubar, menu, mac, app |
 | [meow](./m/meow) | CLI app helper | cli, bin, util, utility, helper, argv, command, line, meow, cat, kitten, parser, option, flags, input, cmd, console |
 | [merge-anything](./m/merge-anything) | Merge objects & other types recursively. A simple  | javascript, merge, deepmerge, recursively, object-assign, deep-assign, nested-assign, typescript, deep-merge, merge-object, merge-objects, deep-merge-object, object-assign-deep, nested-object-assign, nested-merge, combine, combine-objects, combine-merge, merge-combine, nested-combine |
@@ -4384,6 +4388,7 @@
 | [multireducer](./m/multireducer) | A utility to wrap many copies of a single Redux re | react, reactjs, flux, redux, react-redux, multireducer, decorator |
 | [multisort](./m/multisort) | Sort an array using any number of separate, ranked | sort, sorting, multiple, multi, multisort, comparator |
 | [multistream](./m/multistream) | A stream that emits multiple other streams one aft | combine streams, join streams, concat streams, multiple streams, combine, join, concat, multiple, file stream, append, append streams, combiner, joiner |
+| [multivariate-normal](./m/multivariate-normal) | Port of NumPy's random.multivariate_normal to Node | numpy, multivariate, random, gaussian, normal, distribution |
 | [multy](./m/multy) | Koa(v2)/Express middleware for handle multipart fo | express, koa, multipart, form, parse, busboy |
 | [mumath](./m/mumath) | Practical math utils for components | math, geometry |
 | [muri](./m/muri) | MongoDB URI parser | mongodb, uri, parser |
@@ -4991,6 +4996,7 @@
 | [photoswipe](./p/photoswipe) | JavaScript gallery | gallery, lightbox, photo, image, touch, swipe, zoom |
 | [physijs](./p/physijs) | - | - |
 | [pi-spi](./p/pi-spi) | Simple async SPI library for Raspberry Pi | raspi, spi |
+| [pick-deep](./p/pick-deep) | Creates an object composed of the picked object pr | obj, object, prop, property, dot, path, pick, deep, pickDeep, pick-deep, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
 | [pick-weight](./p/pick-weight) | Returns a single item from an array with relative  | pick, item, weight, odds, random, randomly, randomize, chance, test, dice, mock |
 | [pickadate](./p/pickadate) | The mobile-friendly, responsive, and lightweight j | date, time, picker, input, responsive |
 | [picturefill](./p/picturefill) | A responsive image polyfill. | picturefill, srcset, picture, responsive, responsive images |
@@ -5391,6 +5397,7 @@
 | [react-animate-on-scroll](./r/react-animate-on-scroll) | React component to animate elements on scroll with | reactScrollEffects, react, reactJS, react-component, animate, scroll, animation, reactAnimateOnScroll |
 | [react-apollo](./r/react-apollo) | React data container for Apollo Client | apollo, graphql, react |
 | [react-app](./r/react-app) | Boilerplate and tooling for JavaScript application | react, reactjs, webpack, babel, es6, es2015, jsx, redux, browsersync, browser-sync, template, templates, boilerplate, scarrold, scaffolding |
+| [react-aria-live](./r/react-aria-live) | Add aria-live messaging to your React app | react-component |
 | [react-aria-menubutton](./r/react-aria-menubutton) | A fully accessible and flexible React-powered menu | react, reactjs, react-component, aria, accessibility, menu, dropdown, widget |
 | [react-aria-modal](./r/react-aria-modal) | A fully accessible and flexible React modal built  | react, react-component, modal, accessibility, accessible, dialog |
 | [react-async](./r/react-async) | React component for declarative promise resolution | react, async, promise, fetch, hook |
@@ -6666,6 +6673,7 @@
 | [streamtest](./s/streamtest) | Streams test library | test, streams, stream1, stream2 |
 | [strftime](./s/strftime) | strftime for JavaScript | - |
 | [strict-uri-encode](./s/strict-uri-encode) | A stricter URI encode adhering to RFC 3986 | component, encode, RFC3986, uri |
+| [strikeentco__get](./s/strikeentco__get) | Get a property from a nested object using a dot pa | obj, object, prop, property, dot, path, get, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
 | [string](./s/string) | string contains methods that aren't included in th | string, strings, string.js, stringjs, S, s, csv, html, entities, parse, html, tags, strip, trim, encode, decode, escape, unescape |
 | [string-argv](./s/string-argv) | string-argv parses a string into an argument array | argv |
 | [string-format](./s/string-format) | String formatting inspired by Python's str.format( | string, formatting, language, util |
@@ -7410,7 +7418,6 @@
 | [wiredep](./w/wiredep) | Wire Bower dependencies to your source code. | bower, package, management, inject, script, dependencies |
 | [wiring-pi](./w/wiring-pi) | Bindings to wiringPi | wiringPi, gpio, raspberry, pi, raspberrypi, bcm2835 |
 | [wnumb](./w/wnumb) | wNumb - JavaScript Number & Money formatting | - |
-| [wolfy87-eventemitter](./w/wolfy87-eventemitter) | Event based JavaScript for the browser | eventemitter, events, browser, amd |
 | [wonder-frp](./w/wonder-frp) | * Wonder-FRP Wonder-FRP is a functional reactive p | FRP, Wonder-FRP |
 | [wonder_dot_js](./w/wonder_dot_js) | 3d webgl engine | wonder, webgl, functional-programming, high-performance, 3d, engine, reasonml, reason, bucklescript |
 | [word-extractor](./w/word-extractor) | Node.js package to read Word .doc files | word |
@@ -7555,6 +7562,7 @@
 | [youtube](./y/youtube) | YouTube upload API | youtube, upload, video |
 | [youtube-dl](./y/youtube-dl) | youtube-dl driver for node | download, video, youtube |
 | [youtube-player](./y/youtube-player) | YouTube IFrame Player API abstraction. | youtube, iframe, player, api, promise, async, video |
+| [yt-player](./y/yt-player) | Simple, robust YouTube Iframe Player API | youtube, youtube player, player, iframe, api, youtube api, youtube iframe api, iframe api, yt player, yt-player, youtube embed |
 | [yui](./y/yui) | YUI 3 Source | - |
 | [yup](./y/yup) | Dead simple Object schema validation | - |
 | [z-schema](./z/z-schema) | JSON schema validator | JSON, Schema, Validator |

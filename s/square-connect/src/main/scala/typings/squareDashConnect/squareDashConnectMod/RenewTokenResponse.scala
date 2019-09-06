@@ -23,14 +23,15 @@ class RenewTokenResponse () extends js.Object {
     */
   var merchant_id: js.UndefOr[String] = js.native
   /**
-    * The ID of the [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement)
-    * plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+    * @deprecated
+    * The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a
+    * subscription during authorization.
     */
   var plan_id: js.UndefOr[String] = js.native
   /**
-    * The ID of the merchant
-    * [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) associated
-    * with the authorization. Only present if the merchant signed up for a subscription during authorization.
+    * @deprecated
+    * The ID of the merchant subscription associated with the authorization. Only present if the merchant signed up for
+    * a subscription during authorization.
     */
   var subscription_id: js.UndefOr[String] = js.native
   /**

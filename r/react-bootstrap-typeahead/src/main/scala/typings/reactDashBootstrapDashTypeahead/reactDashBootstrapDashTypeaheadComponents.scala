@@ -44,6 +44,13 @@ object reactDashBootstrapDashTypeaheadComponents extends reactDashBootstrapDashT
   ] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Menu].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuProps]]
   @scala.inline
+  def MenuDivider: ComponentType[js.Object] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Menu.Divider.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
+  def MenuHeader: ComponentType[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
+  ] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Menu.Header.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps]]
+  @scala.inline
   def MenuItem[T /* <: TypeaheadModel */]: ComponentType[
     typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItemProps[T]
   ] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItem[T]].asInstanceOf[typings.react.reactMod.ComponentType[

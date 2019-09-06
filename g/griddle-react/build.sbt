@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "griddle-react"
-version := "1.13.1-04a904"
+version := "1.13.1-8a1acc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

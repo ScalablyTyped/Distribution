@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/webgl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def forceHalfFloat(): Unit = js.native
   def setWebGLContext(webGLVersion: Double, gl: WebGLRenderingContext): Unit = js.native
 }
 

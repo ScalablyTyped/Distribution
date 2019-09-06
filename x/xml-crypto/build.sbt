@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xml-crypto"
-version := "1.4-dt-20190813Z-79b5c9"
+version := "1.4-dt-20190904Z-ecf0a9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

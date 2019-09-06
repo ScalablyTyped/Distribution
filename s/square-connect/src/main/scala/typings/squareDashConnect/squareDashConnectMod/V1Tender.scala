@@ -1,8 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1TenderNs.CardBrandEnum
-import typings.squareDashConnect.squareDashConnectMod.V1TenderNs.EntryMethodEnum
-import typings.squareDashConnect.squareDashConnectMod.V1TenderNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +10,7 @@ class V1Tender () extends js.Object {
   /**
     * The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values.
     */
-  var card_brand: js.UndefOr[CardBrandEnum] = js.native
+  var card_brand: js.UndefOr[String] = js.native
   /**
     * The amount of total_money returned to the buyer as change.
     */
@@ -25,7 +22,7 @@ class V1Tender () extends js.Object {
   /**
     * The tender's unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values.
     */
-  var entry_method: js.UndefOr[EntryMethodEnum] = js.native
+  var entry_method: js.UndefOr[String] = js.native
   /**
     * The tender's unique ID.
     */
@@ -76,6 +73,6 @@ class V1Tender () extends js.Object {
   /**
     * The type of tender. See [V1TenderType](#type-v1tendertype) for possible values
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 

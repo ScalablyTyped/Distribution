@@ -20,5 +20,8 @@ trait formikProps {
   @scala.inline
   def FormikProviderProps: ProviderProps.type = typings.react.reactMod.ProviderProps
   type FormikProviderProps[T] = ProviderProps[T]
+  @scala.inline
+  def distConnectModFormikProviderProps: ProviderProps.type = typings.react.reactMod.ProviderProps
+  type distConnectModFormikProviderProps[T] = ProviderProps[T]
 }
 

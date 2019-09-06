@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1EmployeeRoleNs.PermissionsEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,10 +26,10 @@ class V1EmployeeRole () extends js.Object {
   /**
     * The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
     */
-  var permissions: js.Array[PermissionsEnum] = js.native
+  var permissions: js.Array[String] = js.native
   /**
-    * The time when the employee entity was most recently updated, in ISO 8601 format. Is set by Square when the Role
-    * updated.
+    * The time when the employee entity was most recently updated, in ISO 8601 format.
+    * Is set by Square when the Role updated.
     */
   var updated_at: js.UndefOr[String] = js.native
 }

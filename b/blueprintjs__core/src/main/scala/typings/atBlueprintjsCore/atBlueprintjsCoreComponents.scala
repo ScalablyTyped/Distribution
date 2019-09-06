@@ -46,6 +46,7 @@ import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.atBlueprintjsCore.libEsmComponentsPortalPortalMod.IPortalProps
 import typings.atBlueprintjsCore.libEsmComponentsProgressDashBarProgressBarMod.IProgressBarProps
 import typings.atBlueprintjsCore.libEsmComponentsResizeDashSensorResizeSensorMod.IResizeSensorProps
+import typings.atBlueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderSliderMod.ISliderProps
@@ -177,6 +178,8 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def MultiSlider: ComponentType[IMultiSliderProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.MultiSlider].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps]]
   @scala.inline
+  def MultiSliderHandle: ComponentType[IHandleProps] = typings.atBlueprintjsCore.libEsmComponentsMod.MultiSlider.Handle.asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps]]
+  @scala.inline
   def Navbar: ComponentType[INavbarProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Navbar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsNavbarNavbarMod.INavbarProps]]
   @scala.inline
   def NavbarDivider: ComponentType[INavbarDividerProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.NavbarDivider].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -232,6 +235,8 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   def Tab: ComponentType[ITabProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Tab].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsTabsTabMod.ITabProps]]
   @scala.inline
   def Tabs: ComponentType[ITabsProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Tabs].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsTabsTabsMod.ITabsProps]]
+  @scala.inline
+  def TabsExpander: ComponentType[js.Object] = typings.atBlueprintjsCore.libEsmComponentsMod.Tabs.Expander.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def Tag: ComponentType[ITagProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Tag].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsTagTagMod.ITagProps]]
   @scala.inline

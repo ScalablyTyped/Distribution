@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__compiler"
-version := "8.2.4-3eaa44"
+version := "8.2.5-71f050"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

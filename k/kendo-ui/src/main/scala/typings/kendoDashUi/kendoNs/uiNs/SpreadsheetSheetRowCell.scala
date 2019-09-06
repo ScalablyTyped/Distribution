@@ -13,6 +13,7 @@ trait SpreadsheetSheetRowCell extends js.Object {
   var borderRight: js.UndefOr[SpreadsheetSheetRowCellBorderRight] = js.undefined
   var borderTop: js.UndefOr[SpreadsheetSheetRowCellBorderTop] = js.undefined
   var color: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.undefined
   var enable: js.UndefOr[Boolean] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[Double] = js.undefined
@@ -39,6 +40,7 @@ object SpreadsheetSheetRowCell {
     borderRight: SpreadsheetSheetRowCellBorderRight = null,
     borderTop: SpreadsheetSheetRowCellBorderTop = null,
     color: String = null,
+    comment: String = null,
     enable: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
     fontSize: Int | Double = null,
@@ -62,6 +64,7 @@ object SpreadsheetSheetRowCell {
     if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight)
     if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

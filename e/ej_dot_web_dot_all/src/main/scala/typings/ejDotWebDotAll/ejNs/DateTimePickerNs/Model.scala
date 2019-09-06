@@ -19,6 +19,10 @@ trait Model extends js.Object {
   /** Fires before the datetime popup open in the DateTimePicker.
     */
   var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
+  /** Disable the list of specified date value.
+    * @Default {{}}
+    */
+  var blackoutDates: js.UndefOr[js.Any] = js.undefined
   /** Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
     * @Default {{ today: Today, timeNow: Time Now, done: Done, timeTitle: Time }}
     */
@@ -50,6 +54,10 @@ trait Model extends js.Object {
   /** Fires when the DateTimePicker is destroyed successfully
     */
   var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
+  /** Specifies the list of time range to be disabled.
+    * @Default {{}}
+    */
+  var disableTimeRanges: js.UndefOr[js.Any] = js.undefined
   /** Enable or disable the animation effect in DateTimePicker.
     * @Default {true}
     */
@@ -128,6 +136,10 @@ trait Model extends js.Object {
     * @Default {false}
     */
   var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
+  /** Specifies the special dates in DateTimePicker.
+    * @Default {null}
+    */
+  var specialDates: js.UndefOr[js.Any] = js.undefined
   /** Specifies the start day of the week in datepicker inside the DateTimePicker popup.
     * @Default {1}
     */
@@ -179,6 +191,7 @@ object Model {
     allowEdit: js.UndefOr[Boolean] = js.undefined,
     beforeClose: /* e */ BeforeCloseEventArgs => Unit = null,
     beforeOpen: /* e */ BeforeOpenEventArgs => Unit = null,
+    blackoutDates: js.Any = null,
     buttonText: ButtonText = null,
     change: /* e */ ChangeEventArgs => Unit = null,
     close: /* e */ CloseEventArgs => Unit = null,
@@ -188,6 +201,7 @@ object Model {
     dayHeaderFormat: Header | String = null,
     depthLevel: Level | String = null,
     destroy: /* e */ DestroyEventArgs => Unit = null,
+    disableTimeRanges: js.Any = null,
     enableAnimation: js.UndefOr[Boolean] = js.undefined,
     enablePersistence: js.UndefOr[Boolean] = js.undefined,
     enableRTL: js.UndefOr[Boolean] = js.undefined,
@@ -208,6 +222,7 @@ object Model {
     showOtherMonths: js.UndefOr[Boolean] = js.undefined,
     showPopupButton: js.UndefOr[Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
+    specialDates: js.Any = null,
     startDay: Int | Double = null,
     startLevel: Level | String = null,
     stepMonths: Int | Double = null,
@@ -224,6 +239,7 @@ object Model {
     if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
     if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
+    if (blackoutDates != null) __obj.updateDynamic("blackoutDates")(blackoutDates)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
@@ -233,6 +249,7 @@ object Model {
     if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
     if (depthLevel != null) __obj.updateDynamic("depthLevel")(depthLevel.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
+    if (disableTimeRanges != null) __obj.updateDynamic("disableTimeRanges")(disableTimeRanges)
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
@@ -253,6 +270,7 @@ object Model {
     if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths)
     if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (specialDates != null) __obj.updateDynamic("specialDates")(specialDates)
     if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
     if (startLevel != null) __obj.updateDynamic("startLevel")(startLevel.asInstanceOf[js.Any])
     if (stepMonths != null) __obj.updateDynamic("stepMonths")(stepMonths.asInstanceOf[js.Any])

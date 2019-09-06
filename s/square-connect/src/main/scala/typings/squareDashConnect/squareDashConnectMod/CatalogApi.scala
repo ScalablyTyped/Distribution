@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatalogApi () extends js.Object {
   /**
-    * Deletes a set of [CatalogItem](#type-catalogitem)s based on the provided list of target IDs and returns a set of successfully
-    * deleted IDs in the response. Deletion is a cascading event such that all children of the targeted object are also deleted.
-    * For example, deleting a CatalogItem will also delete all of its [CatalogItemVariation](#type-catalogitemvariation) children.
-    * `BatchDeleteCatalogObjects` succeeds even if only a portion of the targeted IDs can be deleted.
-    * The response will only include IDs that were actually deleted.
+    * Returns a list of [CatalogObject](#type-catalogobject)s that includes all objects of a set of desired types
+    * (for example, all [CatalogItem](#type-catalogitem) and [CatalogTax](#type-catalogtax) objects) in the catalog.
+    * The `types` parameter is specified as a comma-separated list of valid [CatalogObject](#type-catalogobject)
+    * types: `ITEM`, `ITEM_VARIATION`, `MODIFIER`, `MODIFIER_LIST`, `CATEGORY`, `DISCOUNT`, `TAX`.
+    * @note ListCatalog does not return deleted catalog items. To retrieve deleted catalog items, use SearchCatalogObjects
+    * and set `include_deleted_objects` to `true`.
     */
   def batchDeleteCatalogObjects(params: BatchDeleteCatalogObjectsRequest): js.Promise[BatchDeleteCatalogObjectsResponse] = js.native
   /**
@@ -20,7 +21,7 @@ class CatalogApi () extends js.Object {
     * its child information including: all of its [CatalogItemVariation](#type-catalogitemvariation) objects, references to its
     * [CatalogModifierList](#type-catalogmodifierlist) objects, and the ids of any [CatalogTax](#type-catalogtax) objects that apply to it.
     */
-  def batchRetrieveCatalogObjects(params: BatchRetrieveCatalogObjectsRequest): js.Promise[BatchRetrieveCatalogObjectsResponse] = js.native
+  def batchRetrieveCatalogObjects(body: BatchRetrieveCatalogObjectsRequest): js.Promise[BatchRetrieveCatalogObjectsResponse] = js.native
   /**
     * Creates or updates up to 10,000 target objects based on the provided list of objects. The target objects are grouped into
     * batches and each batch is inserted/updated in an all-or-nothing manner. If an object within a batch is malformed in some way,
@@ -28,7 +29,7 @@ class CatalogApi () extends js.Object {
     * the same request may still succeed. Each batch may contain up to 1,000 objects, and batches will be processed in order as long
     * as the total object count for the request (items, variations, modifier lists, discounts, and taxes) is no more than 10,000.
     */
-  def batchUpsertCatalogObjects(params: BatchUpsertCatalogObjectsRequest): js.Promise[BatchUpsertCatalogObjectsResponse] = js.native
+  def batchUpsertCatalogObjects(body: BatchUpsertCatalogObjectsRequest): js.Promise[BatchUpsertCatalogObjectsResponse] = js.native
   /**
     * Returns information about the Square Catalog API, such as batch size limits for `BatchUpsertCatalogObjects`.
     */

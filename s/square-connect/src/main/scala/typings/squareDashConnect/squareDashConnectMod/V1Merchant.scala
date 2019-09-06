@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1MerchantNs.AccountTypeEnum
-import typings.squareDashConnect.squareDashConnectMod.V1MerchantNs.BusinessTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1Merchant () extends js.Object {
   /**
-    * Capabilities that are enabled for the merchant's Square account. Capabilities that are not listed in this array
-    * are not enabled for the account.
+    * Capabilities that are enabled for the merchant's Square account.
+    * Capabilities that are not listed in this array are not enabled for the account.
     */
   var account_capabilities: js.UndefOr[js.Array[String]] = js.native
   /**
     * Indicates whether the merchant account corresponds to a single-location account (LOCATION) or a business account
-    * (BUSINESS). This value is almost always LOCATION. See [V1MerchantAccountType](#type-v1merchantaccounttype) for
-    * possible values
+    * (BUSINESS). This value is almost always LOCATION.
+    * See [V1MerchantAccountType](#type-v1merchantaccounttype) for possible values.
     */
-  var account_type: js.UndefOr[AccountTypeEnum] = js.native
+  var account_type: js.UndefOr[String] = js.native
   /**
     * The address of the merchant's business.
     */
@@ -33,10 +31,10 @@ class V1Merchant () extends js.Object {
     */
   var business_phone: js.UndefOr[V1PhoneNumber] = js.native
   /**
-    * The type of business operated by the merchant. See [V1MerchantBusinessType](#type-v1merchantbusinesstype) for
-    * possible values
+    * The type of business operated by the merchant.
+    * See [V1MerchantBusinessType](#type-v1merchantbusinesstype) for possible values.
     */
-  var business_type: js.UndefOr[BusinessTypeEnum] = js.native
+  var business_type: js.UndefOr[String] = js.native
   /**
     * The country associated with the merchant account, in ISO 3166-1-alpha-2 format.
     */

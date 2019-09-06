@@ -37,7 +37,7 @@ import typings.atTensorflowTfjsDashLayers.distEngineInputUnderscoreLayerMod.Inpu
 import typings.atTensorflowTfjsDashLayers.distModelsMod.SequentialArgs
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NCHW
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NHWC
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.`1DOT2DOT8`
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.`1DOT2DOT9`
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.bool
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.complex64
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.euclidean
@@ -315,7 +315,7 @@ object ^ extends js.Object {
     /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     /* begin */ js.Array[Double], 
     /* end */ js.Array[Double], 
-    /* strides */ js.Array[Double], 
+    /* strides */ js.UndefOr[js.Array[Double]], 
     /* beginMask */ js.UndefOr[Double], 
     /* endMask */ js.UndefOr[Double], 
     /* ellipsisMask */ js.UndefOr[Double], 
@@ -331,9 +331,9 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_converter: `1DOT2DOT8` = js.native
-  val version_core: `1DOT2DOT8` = js.native
-  val version_layers: `1DOT2DOT8` = js.native
+  val version_converter: `1DOT2DOT9` = js.native
+  val version_core: `1DOT2DOT9` = js.native
+  val version_layers: `1DOT2DOT9` = js.native
   val whereAsync: js.Function1[
     /* condition */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     js.Promise[Tensor2D]

@@ -15,6 +15,7 @@ class FirebaseAuth protected () extends js.Object {
   var currentUser: User | Null = js.native
   var languageCode: String | Null = js.native
   var settings: AuthSettings = js.native
+  var tenantId: String | Null = js.native
   def applyActionCode(code: String): js.Promise[Unit] = js.native
   def checkActionCode(code: String): js.Promise[ActionCodeInfo] = js.native
   def confirmPasswordReset(code: String, newPassword: String): js.Promise[Unit] = js.native

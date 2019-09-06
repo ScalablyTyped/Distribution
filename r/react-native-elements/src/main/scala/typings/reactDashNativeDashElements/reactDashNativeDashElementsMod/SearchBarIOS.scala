@@ -19,6 +19,10 @@ trait SearchBarIOS extends SearchBarPlatform {
     * title of cancel button on iOS.  Default: 'Cancel'.
     */
   var cancelButtonTitle: js.UndefOr[String] = js.undefined
+  /**
+    * When `true` the cancel button will stay visible after blur events.
+    */
+  var showCancel: js.UndefOr[Boolean] = js.undefined
 }
 
 object SearchBarIOS {
@@ -39,6 +43,7 @@ object SearchBarIOS {
     onFocus: () => Unit = null,
     rightIconContainerStyle: StyleProp[ViewStyle] = null,
     searchIcon: IconNode = null,
+    showCancel: js.UndefOr[Boolean] = js.undefined,
     showLoading: js.UndefOr[Boolean] = js.undefined
   ): SearchBarIOS = {
     val __obj = js.Dynamic.literal()
@@ -57,6 +62,7 @@ object SearchBarIOS {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
     if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading)
     __obj.asInstanceOf[SearchBarIOS]
   }

@@ -206,10 +206,11 @@ object ^ extends js.Object {
   def getOverlay(doc: Document, overlayTag: String): js.UndefOr[HTMLIonOverlayElement] = js.native
   def getOverlay(doc: Document, overlayTag: String, id: String): js.UndefOr[HTMLIonOverlayElement] = js.native
   def getOverlays(doc: Document): js.Array[HTMLIonOverlayElement] = js.native
-  def getOverlays(doc: Document, overlayTag: String): js.Array[HTMLIonOverlayElement] = js.native
+  def getOverlays(doc: Document, selector: String): js.Array[HTMLIonOverlayElement] = js.native
   def isCancel(): Boolean = js.native
   def isCancel(role: String): Boolean = js.native
   def onceEvent(element: HTMLElement, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): Unit = js.native
+  def prepareOverlay[T /* <: HTMLIonOverlayElement */](el: T): Unit = js.native
   def present(
     overlay: OverlayInterface,
     name: mode | animated | rippleEffect | hardwareBackButton | statusTap | backButtonIcon | backButtonText | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate,

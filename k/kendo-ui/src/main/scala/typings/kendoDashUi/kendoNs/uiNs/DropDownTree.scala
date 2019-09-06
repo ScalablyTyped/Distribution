@@ -16,6 +16,7 @@ class DropDownTree protected () extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_DropDownTree: DropDownTreeOptions = js.native
+  var popup: Popup = js.native
   var tagList: JQuery = js.native
   var tree: JQuery = js.native
   var treeview: TreeView = js.native

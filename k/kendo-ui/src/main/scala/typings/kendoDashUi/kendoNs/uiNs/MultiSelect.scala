@@ -17,6 +17,7 @@ class MultiSelect protected () extends Widget {
   var list: JQuery = js.native
   @JSName("options")
   var options_MultiSelect: MultiSelectOptions = js.native
+  var popup: Popup = js.native
   var tagList: JQuery = js.native
   var ul: JQuery = js.native
   var wrapper: JQuery = js.native

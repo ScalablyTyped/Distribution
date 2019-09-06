@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1TimecardEventNs.EventTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +20,10 @@ class V1TimecardEvent () extends js.Object {
     */
   var created_at: js.UndefOr[String] = js.native
   /**
-    * The ID of the timecard to list events for. See [V1TimecardEventEventType](#type-v1timecardeventeventtype) for
-    * possible values
+    * The ID of the timecard to list events for.
+    * See [V1TimecardEventEventType](#type-v1timecardeventeventtype) for possible values.
     */
-  var event_type: js.UndefOr[EventTypeEnum] = js.native
+  var event_type: js.UndefOr[String] = js.native
   /**
     * The event's unique ID.
     */

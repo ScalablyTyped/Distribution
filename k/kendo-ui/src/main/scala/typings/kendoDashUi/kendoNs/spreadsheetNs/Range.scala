@@ -42,6 +42,10 @@ class Range () extends Observable {
   def color(value: String): Unit = js.native
   @JSName("color")
   def color_Unit(): Unit = js.native
+  def comment(): String = js.native
+  def comment(value: String): Unit = js.native
+  @JSName("comment")
+  def comment_Unit(): Unit = js.native
   def editor(): String = js.native
   def editor(value: String): Unit = js.native
   @JSName("editor")

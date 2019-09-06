@@ -1,5 +1,6 @@
 package typings.atGoogleMaps.atGoogleMapsMod
 
+import typings.atGoogleMaps.atGoogleMapsStrings.now
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +32,7 @@ trait DirectionsRequest extends js.Object {
     *    This option is only available if the request contains a valid API key, or a valid Google Maps APIs Premium Plan client ID
     *    and signature. The `departure_time` must be set to the current time or some time in the future. It cannot be in the past.
     */
-  var departure_time: js.UndefOr[Date | Double] = js.undefined
+  var departure_time: js.UndefOr[Date | Double | now] = js.undefined
   /**
     * The address, textual latitude/longitude value, or place ID to which you wish to calculate directions.
     * The options for the `destination` parameter are the same as for the `origin` parameter, described above
@@ -131,7 +132,7 @@ object DirectionsRequest {
     alternatives: js.UndefOr[Boolean] = js.undefined,
     arrival_time: Date | Double = null,
     avoid: js.Array[TravelRestriction] = null,
-    departure_time: Date | Double = null,
+    departure_time: Date | Double | now = null,
     language: Language = null,
     mode: TravelMode = null,
     optimize: js.UndefOr[Boolean] = js.undefined,

@@ -9,5 +9,8 @@ trait atUifabricFoundationProps {
   @scala.inline
   def ThemeProviderProps: IThemeProviderProps.type = typings.atUifabricFoundation.libThemeProviderMod.IThemeProviderProps
   type ThemeProviderProps = IThemeProviderProps
+  @scala.inline
+  def atUifabricFoundationModThemeProviderProps: IThemeProviderProps.type = typings.atUifabricFoundation.libThemeProviderMod.IThemeProviderProps
+  type atUifabricFoundationModThemeProviderProps = IThemeProviderProps
 }
 

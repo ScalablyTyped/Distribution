@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-when
 
-Typings are for version 2.4
+Typings are for version 2.7
 
 ## Library description:
 An extension lib for jest

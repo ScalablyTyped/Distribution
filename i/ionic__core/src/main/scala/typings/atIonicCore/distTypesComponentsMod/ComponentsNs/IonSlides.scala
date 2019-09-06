@@ -33,6 +33,10 @@ trait IonSlides extends js.Object {
     */
   def getPreviousIndex(): js.Promise[Double] = js.native
   /**
+    * Get the Swiper instance. Use this to access the full Swiper API. See https://idangero.us/swiper/api/ for all API options.
+    */
+  def getSwiper(): js.Promise[_] = js.native
+  /**
     * Get whether or not the current slide is the first slide.
     */
   def isBeginning(): js.Promise[Boolean] = js.native

@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.OrderReturnTaxNs.ScopeEnum
-import typings.squareDashConnect.squareDashConnectMod.OrderReturnTaxNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,15 +21,16 @@ class OrderReturnTax () extends js.Object {
   var name: js.UndefOr[String] = js.native
   /**
     * The percentage of the tax, as a string representation of a decimal number.
-    * A value of `7.25` corresponds to a percentage of 7.25%.
+    * For example, a value of "7.25" corresponds to a percentage of 7.25%.
     */
   var percentage: js.UndefOr[String] = js.native
   /**
-    * Indicates the level at which the tax applies. This field is set by the server.
-    * If set in a CreateOrder request, it will be ignored on write.
-    * See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
+    * Indicates the level at which the `OrderReturnTax` applies. For `ORDER` scoped taxes, Square generates references
+    * in `applied_taxes` on all `OrderReturnLineItem`s. For `LINE_ITEM` scoped taxes, the tax will only apply to
+    * `OrderReturnLineItem`s with references in their `applied_discounts` field.
+    * See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
     */
-  var scope: js.UndefOr[ScopeEnum] = js.native
+  var scope: js.UndefOr[TaxApplicationScopeEnum] = js.native
   /**
     * `uid` of the Tax from the Order which contains the original charge of this tax.
     */
@@ -40,9 +39,9 @@ class OrderReturnTax () extends js.Object {
     * Indicates the calculation method used to apply the tax.
     * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[TaxTypeEnum] = js.native
   /**
-    * The return tax's Unique identifier, unique only within this order.
+    * Unique ID that identifies the return tax only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

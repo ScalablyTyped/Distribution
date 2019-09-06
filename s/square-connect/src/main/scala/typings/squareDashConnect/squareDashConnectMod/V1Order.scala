@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1OrderNs.StateEnum
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -81,7 +80,7 @@ class V1Order () extends js.Object {
     * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1OrderState](#type-v1orderstate) for possible
     * values
     */
-  var state: js.UndefOr[StateEnum] = js.native
+  var state: js.UndefOr[String] = js.native
   /**
     * The amount of all items purchased in the order, before taxes and shipping.
     */

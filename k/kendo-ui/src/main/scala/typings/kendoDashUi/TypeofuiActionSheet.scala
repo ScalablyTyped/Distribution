@@ -13,7 +13,7 @@ trait TypeofuiActionSheet extends js.Object {
   var ButtonGroup: TypeofClassButtonGroupElement
   var Collapsible: TypeofClassCollapsible
   var DetailButton: TypeofClassDetailButton
-  var Drawer: TypeofClassDrawer
+  var Drawer: TypeofClassDrawerElement
   var Layout: TypeofClassLayout
   var ListView: TypeofClassListViewElement
   var Loader: TypeofClassLoader
@@ -39,7 +39,7 @@ object TypeofuiActionSheet {
     ButtonGroup: TypeofClassButtonGroupElement,
     Collapsible: TypeofClassCollapsible,
     DetailButton: TypeofClassDetailButton,
-    Drawer: TypeofClassDrawer,
+    Drawer: TypeofClassDrawerElement,
     Layout: TypeofClassLayout,
     ListView: TypeofClassListViewElement,
     Loader: TypeofClassLoader,

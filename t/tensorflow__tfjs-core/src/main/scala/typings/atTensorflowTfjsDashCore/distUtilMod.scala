@@ -32,16 +32,6 @@ object distUtilMod extends js.Object {
   def assertShapesMatch(shapeA: js.Array[Double], shapeB: js.Array[Double], errorMessagePrefix: String): Unit = js.native
   def bytesFromStringArray(arr: js.Array[Uint8Array]): Double = js.native
   def bytesPerElement(dtype: DataType): Double = js.native
-  @JSName("checkComputationForErrors")
-  def checkComputationForErrors_bool(vals: Uint8Array, dtype: bool, name: String): Unit = js.native
-  @JSName("checkComputationForErrors")
-  def checkComputationForErrors_complex64(vals: Float32Array, dtype: complex64, name: String): Unit = js.native
-  @JSName("checkComputationForErrors")
-  def checkComputationForErrors_float32(vals: Float32Array, dtype: float32, name: String): Unit = js.native
-  @JSName("checkComputationForErrors")
-  def checkComputationForErrors_int32(vals: Int32Array, dtype: int32, name: String): Unit = js.native
-  @JSName("checkComputationForErrors")
-  def checkComputationForErrors_string(vals: js.Array[String], dtype: string, name: String): Unit = js.native
   @JSName("checkConversionForErrors")
   def checkConversionForErrors_bool(vals: js.Array[Double], dtype: bool): Unit = js.native
   @JSName("checkConversionForErrors")

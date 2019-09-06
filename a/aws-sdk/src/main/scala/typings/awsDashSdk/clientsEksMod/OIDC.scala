@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsEksMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait OIDC extends js.Object {
+  /**
+    * The issuer URL for the OpenID Connect identity provider.
+    */
+  var issuer: js.UndefOr[String] = js.undefined
+}
+
+object OIDC {
+  @scala.inline
+  def apply(issuer: String = null): OIDC = {
+    val __obj = js.Dynamic.literal()
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    __obj.asInstanceOf[OIDC]
+  }
+}
+

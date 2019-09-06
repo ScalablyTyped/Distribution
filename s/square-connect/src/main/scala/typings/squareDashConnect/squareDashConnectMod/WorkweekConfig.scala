@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.WorkweekConfigNs.StartOfWeekEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +24,7 @@ class WorkweekConfig () extends js.Object {
     * The day of the week on which a business week cuts over for compensation purposes.
     * See [Weekday](#type-weekday) for possible values.
     */
-  var start_of_week: StartOfWeekEnum = js.native
+  var start_of_week: DayOfWeekEnum = js.native
   /**
     * A read-only timestamp in RFC 3339 format; presented in UTC.
     */

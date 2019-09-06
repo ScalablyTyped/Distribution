@@ -18,6 +18,7 @@ class SignedXml () extends js.Object {
   def this(idMode: Null, options: Anon_CanonicalizationAlgorithm) = this()
   var canonicalizationAlgorithm: String = js.native
   var keyInfoProvider: FileKeyInfo = js.native
+  var references: js.Array[Reference] = js.native
   var signatureAlgorithm: String = js.native
   var signingKey: Buffer | String = js.native
   var validationErrors: js.Array[String] = js.native

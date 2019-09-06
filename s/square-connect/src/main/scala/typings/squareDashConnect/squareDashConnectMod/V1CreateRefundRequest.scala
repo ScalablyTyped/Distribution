@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1CreateRefundRequestNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,6 +28,6 @@ class V1CreateRefundRequest () extends js.Object {
     * TThe type of refund (FULL or PARTIAL).
     * See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values.
     */
-  var `type`: TypeEnum = js.native
+  var `type`: String = js.native
 }
 

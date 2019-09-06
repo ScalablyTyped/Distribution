@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__icons"
-version := "7.1.3-d4c183"
+version := "7.2.0-ee8166"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

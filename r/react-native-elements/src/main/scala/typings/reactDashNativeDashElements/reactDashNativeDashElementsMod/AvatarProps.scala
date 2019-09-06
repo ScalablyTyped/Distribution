@@ -3,8 +3,8 @@ package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactElement
+import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
 import typings.reactDashNative.reactDashNativeMod.ImageStyle
-import typings.reactDashNative.reactDashNativeMod.ImageURISource
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -60,11 +60,7 @@ trait AvatarProps extends js.Object {
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[
-    Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
-    ]
-  ] = js.undefined
+  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
   /**
     * Callback function when pressing Edit button
     */
@@ -109,7 +105,7 @@ trait AvatarProps extends js.Object {
   /**
     * Image source
     */
-  var source: js.UndefOr[ImageURISource] = js.undefined
+  var source: js.UndefOr[ImageSourcePropType] = js.undefined
   /**
     * Renders title in the avatar
     */
@@ -131,9 +127,7 @@ object AvatarProps {
     editButton: Partial[IconProps] = null,
     icon: AvatarIcon = null,
     iconStyle: StyleProp[TextStyle] = null,
-    imageProps: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
-    ] = null,
+    imageProps: Partial[ImageProps] = null,
     onEditPress: () => Unit = null,
     onLongPress: () => Unit = null,
     onPress: () => Unit = null,
@@ -143,7 +137,7 @@ object AvatarProps {
     rounded: js.UndefOr[Boolean] = js.undefined,
     showEditButton: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large | xlarge | Double = null,
-    source: ImageURISource = null,
+    source: ImageSourcePropType = null,
     title: String = null,
     titleStyle: StyleProp[TextStyle] = null
   ): AvatarProps = {
@@ -166,7 +160,7 @@ object AvatarProps {
     if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded)
     if (!js.isUndefined(showEditButton)) __obj.updateDynamic("showEditButton")(showEditButton)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarProps]

@@ -1,25 +1,37 @@
 package typings.griddleDashReact
 
 import typings.griddleDashReact.griddleDashReactMod.GriddleProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.CellProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.ColumnDefinitionProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.FilterProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.RowDefinitionProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.RowProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsToggleProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsWrapperProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableBodyProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableHeadingCellProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableHeadingProps
+import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait griddleDashReactProps {
-  type CellProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.CellProps
-  type ColumnDefinitionProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.ColumnDefinitionProps
-  type FilterProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.FilterProps
   @scala.inline
   def GriddleDashReactProps: GriddleProps.type = typings.griddleDashReact.griddleDashReactMod.GriddleProps
   type GriddleDashReactProps[T] = GriddleProps[T]
-  type RowProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.RowProps
-  type RowDefinitionProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.RowDefinitionProps
-  type SettingsProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsProps
-  type SettingsToggleProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsToggleProps
-  type SettingsWrapperProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsWrapperProps
-  type TableProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.TableProps
-  type TableBodyProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.TableBodyProps
-  type TableHeadingProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.TableHeadingProps
-  type TableHeadingCellProps = typings.griddleDashReact.griddleDashReactMod.componentsNs.TableHeadingCellProps
+  type componentsNsCellProps = CellProps
+  type componentsNsColumnDefinitionProps = ColumnDefinitionProps
+  type componentsNsFilterProps = FilterProps
+  type componentsNsRowProps = RowProps
+  type componentsNsRowDefinitionProps = RowDefinitionProps
+  type componentsNsSettingsProps = SettingsProps
+  type componentsNsSettingsToggleProps = SettingsToggleProps
+  type componentsNsSettingsWrapperProps = SettingsWrapperProps
+  type componentsNsTableProps = TableProps
+  type componentsNsTableBodyProps = TableBodyProps
+  type componentsNsTableHeadingProps = TableHeadingProps
+  type componentsNsTableHeadingCellProps = TableHeadingCellProps
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcDashDialogProps {
   @scala.inline
-  def `rc-dialogProps`: IDialogPropTypes.type = typings.rcDashDialog.libIDialogPropTypesMod.IDialogPropTypes
-  type `rc-dialogProps` = IDialogPropTypes
+  def `rcDashDialogModrc-dialogProps`: IDialogPropTypes.type = typings.rcDashDialog.libIDialogPropTypesMod.IDialogPropTypes
+  type `rcDashDialogModrc-dialogProps` = IDialogPropTypes
 }
 

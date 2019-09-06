@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.linear
   - typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.relu
   - typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.prelu
+  - typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.elu
 */
 trait Activation extends js.Object
 

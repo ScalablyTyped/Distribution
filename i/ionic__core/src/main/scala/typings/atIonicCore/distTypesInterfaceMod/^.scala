@@ -43,9 +43,6 @@ object ^ extends js.Object {
   def configFromURL(win: Window): js.Any = js.native
   def createAnimation(): Animation = js.native
   def createGesture(config: GestureConfig): Gesture = js.native
-  def getPlatforms(): js.Array[
-    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

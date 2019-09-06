@@ -91,7 +91,7 @@ trait ButtonGroupProps extends js.Object {
   /**
     * Current selected index of array of buttons
     */
-  var selectedIndex: Double
+  var selectedIndex: js.UndefOr[Double | Null] = js.undefined
   /**
     * The indexes that are selected. Used with 'selectMultiple'
     *
@@ -127,7 +127,6 @@ object ButtonGroupProps {
   def apply(
     buttons: js.Array[ElementObject | String],
     onPress: Double => Unit,
-    selectedIndex: Double,
     Component: ComponentType[_] = null,
     activeOpacity: Int | Double = null,
     buttonStyle: StyleProp[ViewStyle] = null,
@@ -144,13 +143,14 @@ object ButtonGroupProps {
     onShowUnderlay: () => Unit = null,
     selectMultiple: js.UndefOr[Boolean] = js.undefined,
     selectedButtonStyle: StyleProp[ViewStyle] = null,
+    selectedIndex: Int | Double = null,
     selectedIndexes: js.Array[Double] = null,
     selectedTextStyle: StyleProp[TextStyle] = null,
     setOpacityTo: /* value */ Double => Unit = null,
     textStyle: StyleProp[TextStyle] = null,
     underlayColor: String = null
   ): ButtonGroupProps = {
-    val __obj = js.Dynamic.literal(buttons = buttons, onPress = js.Any.fromFunction1(onPress), selectedIndex = selectedIndex)
+    val __obj = js.Dynamic.literal(buttons = buttons, onPress = js.Any.fromFunction1(onPress))
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
@@ -167,6 +167,7 @@ object ButtonGroupProps {
     if (onShowUnderlay != null) __obj.updateDynamic("onShowUnderlay")(js.Any.fromFunction0(onShowUnderlay))
     if (!js.isUndefined(selectMultiple)) __obj.updateDynamic("selectMultiple")(selectMultiple)
     if (selectedButtonStyle != null) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
+    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
     if (selectedIndexes != null) __obj.updateDynamic("selectedIndexes")(selectedIndexes)
     if (selectedTextStyle != null) __obj.updateDynamic("selectedTextStyle")(selectedTextStyle.asInstanceOf[js.Any])
     if (setOpacityTo != null) __obj.updateDynamic("setOpacityTo")(js.Any.fromFunction1(setOpacityTo))

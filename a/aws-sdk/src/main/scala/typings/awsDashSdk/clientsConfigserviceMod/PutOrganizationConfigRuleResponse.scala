@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PutOrganizationConfigRuleResponse extends js.Object {
+  /**
+    * The Amazon Resource Name (ARN) of an organization config rule.
+    */
   var OrganizationConfigRuleArn: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 

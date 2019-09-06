@@ -17,7 +17,7 @@ class SearchShiftsResponse () extends js.Object {
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * Shifts
+    * Shifts.
     */
   var shifts: js.UndefOr[js.Array[Shift]] = js.native
 }

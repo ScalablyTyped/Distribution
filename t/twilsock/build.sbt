@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "twilsock"
-version := "0.5.10-ee9ab9"
+version := "0.5.10-617329"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "loglevel" % "1.6.3-42c31f",
+  "org.scalablytyped" %%% "loglevel" % "1.6.4-76bb78",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

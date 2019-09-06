@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/angular/dist/providers/menu-controller", "MenuController")
 @js.native
-class MenuController protected () extends js.Object {
-  def this(doc: js.Any) = this()
-  var doc: js.Any = js.native
+class MenuController () extends js.Object {
   /**
     * Programmatically close the Menu. If no `menuId` is given as the first
     * argument then it'll close any menu which is open. If a `menuId`
@@ -27,8 +25,8 @@ class MenuController protected () extends js.Object {
     * @param [menuId]  Optionally get the menu by its id, or side.
     * @return Returns the instance of the menu, which is useful for chaining.
     */
-  def enable(shouldEnable: Boolean): js.Promise[HTMLIonMenuElement] = js.native
-  def enable(shouldEnable: Boolean, menuId: String): js.Promise[HTMLIonMenuElement] = js.native
+  def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+  def enable(shouldEnable: Boolean, menuId: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
   /**
     * Used to get a menu instance. If a `menuId` is not provided then it'll
     * return the first menu found. If a `menuId` is `left` or `right`, then
@@ -38,8 +36,8 @@ class MenuController protected () extends js.Object {
     * @param [menuId]  Optionally get the menu by its id, or side.
     * @return Returns the instance of the menu if found, otherwise `null`.
     */
-  def get(): js.Promise[HTMLIonMenuElement] = js.native
-  def get(menuId: String): js.Promise[HTMLIonMenuElement] = js.native
+  def get(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+  def get(menuId: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
   /**
     * @return Returns an array of all menu instances.
     */
@@ -47,7 +45,7 @@ class MenuController protected () extends js.Object {
   /**
     * @return Returns the instance of the menu already opened, otherwise `null`.
     */
-  def getOpen(): js.Promise[HTMLIonMenuElement] = js.native
+  def getOpen(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
   /**
     * @param [menuId]  Optionally get the menu by its id, or side.
     * @return Returns true if the menu is currently enabled, otherwise false.
@@ -73,18 +71,18 @@ class MenuController protected () extends js.Object {
     * @param shouldEnable  True if it should be swipe-able, false if not.
     * @param [menuId]  Optionally get the menu by its id, or side.
     * @return Returns the instance of the menu, which is useful for chaining.
-    * @deprecated Use swipeGesture() instead
+    * @deprecated Use swipeGesture() instead.
     */
-  def swipeEnable(shouldEnable: Boolean): js.Promise[HTMLIonMenuElement] = js.native
-  def swipeEnable(shouldEnable: Boolean, menuId: String): js.Promise[HTMLIonMenuElement] = js.native
+  def swipeEnable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+  def swipeEnable(shouldEnable: Boolean, menuId: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
   /**
     * Used to enable or disable the ability to swipe open the menu.
     * @param shouldEnable  True if it should be swipe-able, false if not.
     * @param [menuId]  Optionally get the menu by its id, or side.
     * @return Returns the instance of the menu, which is useful for chaining.
     */
-  def swipeGesture(shouldEnable: Boolean): js.Promise[HTMLIonMenuElement] = js.native
-  def swipeGesture(shouldEnable: Boolean, menuId: String): js.Promise[HTMLIonMenuElement] = js.native
+  def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+  def swipeGesture(shouldEnable: Boolean, menuId: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
   /**
     * Toggle the menu. If it's closed, it will open, and if opened, it
     * will close.

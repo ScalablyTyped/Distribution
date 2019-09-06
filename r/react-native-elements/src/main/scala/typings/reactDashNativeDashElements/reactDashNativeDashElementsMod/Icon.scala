@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "Icon")
 @js.native
 class Icon ()
-  extends Component[IconProps, js.Any, js.Any]
+  extends Component[IconProps, js.Object, js.Any]
 

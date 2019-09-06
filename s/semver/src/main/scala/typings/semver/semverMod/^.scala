@@ -108,11 +108,13 @@ object ^ extends js.Object {
   def gtr(version: SemVer, range: Range, optionsOrLoose: Boolean): Boolean = js.native
   def gtr(version: SemVer, range: Range, optionsOrLoose: Options): Boolean = js.native
   def inc(v: String, release: ReleaseType): String | Null = js.native
+  def inc(v: String, release: ReleaseType, identifier: String): String | Null = js.native
   def inc(v: String, release: ReleaseType, optionsOrLoose: Boolean): String | Null = js.native
   def inc(v: String, release: ReleaseType, optionsOrLoose: Boolean, identifier: String): String | Null = js.native
   def inc(v: String, release: ReleaseType, optionsOrLoose: Options): String | Null = js.native
   def inc(v: String, release: ReleaseType, optionsOrLoose: Options, identifier: String): String | Null = js.native
   def inc(v: SemVer, release: ReleaseType): String | Null = js.native
+  def inc(v: SemVer, release: ReleaseType, identifier: String): String | Null = js.native
   def inc(v: SemVer, release: ReleaseType, optionsOrLoose: Boolean): String | Null = js.native
   def inc(v: SemVer, release: ReleaseType, optionsOrLoose: Boolean, identifier: String): String | Null = js.native
   def inc(v: SemVer, release: ReleaseType, optionsOrLoose: Options): String | Null = js.native

@@ -30,6 +30,7 @@ trait reactDashBootstrapDashTypeaheadProps {
   @scala.inline
   def MenuProps: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuProps.type = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuProps
   type MenuProps = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuProps
+  type MenuHeaderProps = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
   @scala.inline
   def MenuItemProps: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItemProps.type = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItemProps
   type MenuItemProps[T /* <: TypeaheadModel */] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItemProps[T]

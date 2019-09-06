@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashCoreStrings {
   @js.native
-  sealed trait `1DOT2DOT8` extends js.Object
+  sealed trait `1DOT2DOT9` extends js.Object
   
   @js.native
   sealed trait Engine extends js.Object
@@ -69,6 +69,9 @@ object atTensorflowTfjsDashCoreStrings {
   
   @js.native
   sealed trait `downloads://` extends js.Object
+  
+  @js.native
+  sealed trait elu extends Activation
   
   @js.native
   sealed trait euclidean extends js.Object
@@ -135,7 +138,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `1DOT2DOT8`: `1DOT2DOT8` = "1.2.8".asInstanceOf[`1DOT2DOT8`]
+  def `1DOT2DOT9`: `1DOT2DOT9` = "1.2.9".asInstanceOf[`1DOT2DOT9`]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
   @scala.inline
@@ -172,6 +175,8 @@ object atTensorflowTfjsDashCoreStrings {
   def complex64: complex64 = "complex64".asInstanceOf[complex64]
   @scala.inline
   def `downloads://`: `downloads://` = "downloads://".asInstanceOf[`downloads://`]
+  @scala.inline
+  def elu: elu = "elu".asInstanceOf[elu]
   @scala.inline
   def euclidean: euclidean = "euclidean".asInstanceOf[euclidean]
   @scala.inline

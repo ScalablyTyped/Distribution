@@ -48,7 +48,7 @@ object atStorybookComponentsComponents extends atStorybookComponentsProps {
   @scala.inline
   def Spaced: ComponentType[typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps] = typings.atStorybookComponents.distSpacedSpacedMod.^.Spaced.asInstanceOf[typings.react.reactMod.ComponentType[typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps]]
   @scala.inline
-  def StorybookIcon: ComponentType[js.Object] = typings.atStorybookComponents.distBrandStorybookIconMod.StorybookIcon.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def StorybookIcon: ComponentType[js.Object] = typings.atStorybookComponents.atStorybookComponentsMod.^.StorybookIcon.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def StorybookLogo: ComponentType[typings.atStorybookComponents.distBrandStorybookLogoMod.StorybookLogoProps] = typings.atStorybookComponents.atStorybookComponentsMod.^.StorybookLogo.asInstanceOf[typings.react.reactMod.ComponentType[typings.atStorybookComponents.distBrandStorybookLogoMod.StorybookLogoProps]]
   @scala.inline
@@ -79,5 +79,11 @@ object atStorybookComponentsComponents extends atStorybookComponentsProps {
   ]]]
   @scala.inline
   def WithTooltipPure: ComponentType[typings.atStorybookComponents.distTooltipWithTooltipMod.WithTooltipPureProps] = typings.atStorybookComponents.distTooltipWithTooltipMod.^.WithTooltipPure.asInstanceOf[typings.react.reactMod.ComponentType[typings.atStorybookComponents.distTooltipWithTooltipMod.WithTooltipPureProps]]
+  @scala.inline
+  def distBrandStorybookIconModStorybookIcon: ComponentType[js.Object] = typings.atStorybookComponents.distBrandStorybookIconMod.StorybookIcon.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
+  def distPlaceholderPlaceholderModPlaceholder: ComponentType[js.Object] = typings.atStorybookComponents.distPlaceholderPlaceholderMod.Placeholder.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
+  def distTypographyDocumentFormattingModDocumentFormatting: ComponentType[js.Any] = typings.atStorybookComponents.distTypographyDocumentFormattingMod.asInstanceOf[js.Dynamic].selectDynamic("DocumentFormatting").asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
 }
 

@@ -10,7 +10,7 @@ trait TagResourceInput extends js.Object {
     */
   var resourceArn: Arn
   /**
-    * The list of tags to add to a resource. Tags may only contain unicode letters, digits, whitespace, or these symbols: _ . : / = + - @.
+    * The list of tags to add to a resource. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   var tags: TagList
 }

@@ -20,6 +20,7 @@ trait Config extends js.Object {
   var ci: js.UndefOr[Anon_Format] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var debugWindow: js.UndefOr[Boolean] = js.undefined
+  var dockerCommandTemplate: js.UndefOr[String] = js.undefined
   var engine: js.UndefOr[chromy | puppeteer] = js.undefined
   var engineOptions: js.UndefOr[Anon_Args] = js.undefined
   var id: String
@@ -44,6 +45,7 @@ object Config {
     ci: Anon_Format = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     debugWindow: js.UndefOr[Boolean] = js.undefined,
+    dockerCommandTemplate: String = null,
     engine: chromy | puppeteer = null,
     engineOptions: Anon_Args = null,
     onBeforeScript: String = null,
@@ -59,6 +61,7 @@ object Config {
     if (ci != null) __obj.updateDynamic("ci")(ci)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(debugWindow)) __obj.updateDynamic("debugWindow")(debugWindow)
+    if (dockerCommandTemplate != null) __obj.updateDynamic("dockerCommandTemplate")(dockerCommandTemplate)
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (engineOptions != null) __obj.updateDynamic("engineOptions")(engineOptions)
     if (onBeforeScript != null) __obj.updateDynamic("onBeforeScript")(onBeforeScript)

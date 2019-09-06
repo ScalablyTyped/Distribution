@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atReachVisuallyDashHiddenComponents extends atReachVisuallyDashHiddenProps {
   @scala.inline
-  def VisuallyDashHidden: ComponentType[js.Any] = typings.atReachVisuallyDashHidden.atReachVisuallyDashHiddenMod.default.asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  def atReachVisuallyDashHiddenModVisuallyDashHidden: ComponentType[js.Any] = typings.atReachVisuallyDashHidden.atReachVisuallyDashHiddenMod.default.asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
 }
 

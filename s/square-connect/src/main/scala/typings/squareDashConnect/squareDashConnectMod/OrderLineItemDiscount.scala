@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.OrderLineItemDiscountNs.ScopeEnum
-import typings.squareDashConnect.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,15 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrderLineItemDiscount () extends js.Object {
   /**
-    * The total monetary amount of the applicable discount. If it is at order level, it is the value of the order level
-    * discount. If it is at line item level, it is the value of the line item level discount.  The amount_money won't
-    * be set for a percentage-based discount.
+    * The total declared monetary amount of the discount. `amount_money` is not set for percentage-based discounts.
     */
   var amount_money: js.UndefOr[Money] = js.native
   /**
-    * The amount of discount actually applied to this line item.  Represents the amount of money applied to a line item
-    * as a discount When an amount-based discount is at order-level, this value is different from `amount_money`
-    * because the discount is distributed across the line items.
+    * The amount of discount actually applied to the line item. Represents the amount of money applied as a line
+    * item-scoped discount. When an amount-based discount is scoped to the entire order, the value of `applied_money`
+    * is different from `amount_money` because the total amount of the discount is distributed across all line items.
     */
   var applied_money: js.UndefOr[Money] = js.native
   /**
@@ -35,19 +31,21 @@ class OrderLineItemDiscount () extends js.Object {
     */
   var percentage: js.UndefOr[String] = js.native
   /**
-    * Indicates the level at which the discount applies. This field is set by the server.
-    * If set in a CreateOrder request, it will be ignored on write.
+    * Indicates the level at which the discount applies. For `ORDER` scoped discounts, Square generates references
+    * in `applied_discounts` on all order line items that do not have them. For `LINE_ITEM` scoped discounts,
+    * the discount only applies to line items with a discount reference in their `applied_discounts` field.
+    * This field is immutable. To change the scope of a discount you must delete the discount and re-add it as a new discount.
     * See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
     */
-  var scope: js.UndefOr[ScopeEnum] = js.native
+  var scope: js.UndefOr[DiscountApplicationScopeEnum] = js.native
   /**
     * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.
     * VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has
     * to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[DiscountTypeEnum] = js.native
   /**
-    * The discount's Unique identifier, unique only within this order. This field is read-only.
+    * Unique ID that identifies the discount only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

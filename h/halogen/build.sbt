@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "halogen"
-version := "0.2-dt-20180803Z-866dc6"
+version := "0.2-dt-20180803Z-d7d6c0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

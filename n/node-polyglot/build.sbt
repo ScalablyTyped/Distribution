@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-polyglot"
-version := "v0.4.3-dt-20190322Z-7a4aed"
+version := "v0.4.4-dt-20190905Z-479b02"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

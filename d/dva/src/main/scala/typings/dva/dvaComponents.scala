@@ -2,6 +2,7 @@ package typings.dva
 
 import typings.react.reactMod.ComponentType
 import typings.reactDashRouter.reactDashRouterMod.RouteProps
+import typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +10,6 @@ import scala.scalajs.js.annotation._
 object dvaComponents extends dvaProps {
   @scala.inline
   def BrowserRouter: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps] = js.constructorOf[typings.dva.routerMod.BrowserRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps]]
-  @scala.inline
-  def ConnectedRouter[State]: ComponentType[
-    typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps[State]
-  ] = js.constructorOf[typings.dva.routerMod.routerReduxNs.ConnectedRouter[State]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps[State]]]
   @scala.inline
   def HashRouter: ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps] = js.constructorOf[typings.dva.routerMod.HashRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps]]
   @scala.inline
@@ -34,5 +30,8 @@ object dvaComponents extends dvaProps {
   def StaticRouter: ComponentType[typings.reactDashRouter.reactDashRouterMod.StaticRouterProps] = js.constructorOf[typings.dva.routerMod.StaticRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.StaticRouterProps]]
   @scala.inline
   def Switch: ComponentType[typings.reactDashRouter.reactDashRouterMod.SwitchProps] = js.constructorOf[typings.dva.routerMod.Switch].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.SwitchProps]]
+  @scala.inline
+  def routerReduxNsConnectedRouter[State]: ComponentType[ConnectedRouterProps[State]] = js.constructorOf[typings.dva.routerMod.routerReduxNs.ConnectedRouter[State]].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps[State]]]
 }
 

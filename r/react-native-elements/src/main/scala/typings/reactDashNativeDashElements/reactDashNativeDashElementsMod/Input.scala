@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "Input")
 @js.native
 class Input ()
-  extends Component[InputProps, js.Any, js.Any] {
+  extends Component[InputProps, js.Object, js.Any] {
   /**
     * Calls blur on the Input
     *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-dialog"
-version := "7.5.7-98b67f"
+version := "7.5.7-4dec26"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

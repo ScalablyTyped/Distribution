@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1VariationNs.InventoryAlertTypeEnum
-import typings.squareDashConnect.squareDashConnectMod.V1VariationNs.PricingTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +20,7 @@ class V1Variation () extends js.Object {
     * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its
     * inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible values.
     */
-  var inventory_alert_type: js.UndefOr[InventoryAlertTypeEnum] = js.native
+  var inventory_alert_type: js.UndefOr[String] = js.native
   /**
     * The ID of the variation's associated item.
     */
@@ -32,9 +30,9 @@ class V1Variation () extends js.Object {
     */
   var name: js.UndefOr[String] = js.native
   /**
-    * Indicates the variation's list position when displayed in Square Register and the merchant dashboard. If more
-    * than one variation for the same item has the same ordinal value, those variations are displayed in alphabetical
-    * order
+    * Indicates the variation's list position when displayed in Square Register and the merchant dashboard.
+    * If more than one variation for the same item has the same ordinal value, those variations are displayed in
+    * alphabetical order
     */
   var ordinal: js.UndefOr[Double] = js.native
   /**
@@ -45,7 +43,7 @@ class V1Variation () extends js.Object {
     * Indicates whether the item variation's price is fixed or determined at the time of sale.
     * See [V1VariationPricingType](#type-v1variationpricingtype) for possible values.
     */
-  var pricing_type: js.UndefOr[PricingTypeEnum] = js.native
+  var pricing_type: js.UndefOr[String] = js.native
   /**
     * The item variation's SKU, if any.
     */

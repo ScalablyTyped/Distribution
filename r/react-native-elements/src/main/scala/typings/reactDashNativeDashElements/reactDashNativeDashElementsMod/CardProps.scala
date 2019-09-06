@@ -1,8 +1,8 @@
 package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 
 import typings.react.reactMod.ReactElement
+import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
 import typings.reactDashNative.reactDashNativeMod.ImageStyle
-import typings.reactDashNative.reactDashNativeMod.ImageURISource
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -42,15 +42,11 @@ trait CardProps extends js.Object {
   /**
     * Add an image as the heading with the image prop
     */
-  var image: js.UndefOr[ImageURISource] = js.undefined
+  var image: js.UndefOr[ImageSourcePropType] = js.undefined
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[
-    Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
-    ]
-  ] = js.undefined
+  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
   /**
     * Specify image styling if image is provided
     */
@@ -82,10 +78,8 @@ object CardProps {
     featuredSubtitleStyle: StyleProp[TextStyle] = null,
     featuredTitle: String = null,
     featuredTitleStyle: StyleProp[TextStyle] = null,
-    image: ImageURISource = null,
-    imageProps: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
-    ] = null,
+    image: ImageSourcePropType = null,
+    imageProps: Partial[ImageProps] = null,
     imageStyle: ImageStyle = null,
     imageWrapperStyle: StyleProp[ViewStyle] = null,
     title: String | ReactElement = null,
@@ -99,7 +93,7 @@ object CardProps {
     if (featuredSubtitleStyle != null) __obj.updateDynamic("featuredSubtitleStyle")(featuredSubtitleStyle.asInstanceOf[js.Any])
     if (featuredTitle != null) __obj.updateDynamic("featuredTitle")(featuredTitle)
     if (featuredTitleStyle != null) __obj.updateDynamic("featuredTitleStyle")(featuredTitleStyle.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps)
     if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle)
     if (imageWrapperStyle != null) __obj.updateDynamic("imageWrapperStyle")(imageWrapperStyle.asInstanceOf[js.Any])

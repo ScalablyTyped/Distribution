@@ -249,17 +249,7 @@ class KernelBackend ()
   def square[T /* <: Tensor[Rank] */](x: T): T = js.native
   def squaredDifference(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def step[T /* <: Tensor[Rank] */](x: T, alpha: Double): T = js.native
-  def stridedSlice[T /* <: Tensor[Rank] */](
-    x: T,
-    begin: js.Array[Double],
-    end: js.Array[Double],
-    strides: js.Array[Double],
-    beginMask: Double,
-    endMask: Double,
-    ellipsisMask: Double,
-    newAxisMask: Double,
-    shrinkAxisMask: Double
-  ): T = js.native
+  def stridedSlice[T /* <: Tensor[Rank] */](x: T, begin: js.Array[Double], end: js.Array[Double], strides: js.Array[Double]): T = js.native
   def subtract(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def sum(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
   def tan[T /* <: Tensor[Rank] */](x: T): T = js.native

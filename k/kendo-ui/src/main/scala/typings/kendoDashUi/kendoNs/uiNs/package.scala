@@ -24,6 +24,7 @@ package object uiNs {
   type DateRangePickerCloseEvent = DateRangePickerEvent
   type DateRangePickerOpenEvent = DateRangePickerEvent
   type DateTimePickerChangeEvent = DateTimePickerEvent
+  type DrawerHideEvent = DrawerEvent
   type DropDownListCascadeEvent = DropDownListEvent
   type DropDownListChangeEvent = DropDownListEvent
   type DropDownListCloseEvent = DropDownListEvent

@@ -17,6 +17,9 @@ trait PutConfigurationAggregatorRequest extends js.Object {
     * An OrganizationAggregationSource object.
     */
   var OrganizationAggregationSource: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.OrganizationAggregationSource] = js.undefined
+  /**
+    * An array of tag object.
+    */
   var Tags: js.UndefOr[TagsList] = js.undefined
 }
 

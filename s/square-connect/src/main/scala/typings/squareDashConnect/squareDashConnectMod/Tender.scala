@@ -14,7 +14,8 @@ class Tender () extends js.Object {
     */
   var additional_recipients: js.UndefOr[js.Array[AdditionalRecipient]] = js.native
   /**
-    * The amount of the tender.
+    * The total amount of the tender, including `tip_money`. If the tender has a `payment_id`, the `total_money` of
+    * the corresponding [Payment](#type-payment) will be equal to the `amount_money` of the tender.
     */
   var amount_money: js.UndefOr[Money] = js.native
   /**
@@ -46,6 +47,11 @@ class Tender () extends js.Object {
     * An optional note associated with the tender at the time of payment.
     */
   var note: js.UndefOr[String] = js.native
+  /**
+    * The ID of the [Payment](#type-payment) that corresponds to this tender.
+    * This value is only present for payments created with the v2 Payments API.
+    */
+  var payment_id: js.UndefOr[String] = js.native
   /**
     * The amount of any Square processing fees applied to the tender. This field is not immediately populated when a
     * new transaction is created. It is usually available after about ten seconds.

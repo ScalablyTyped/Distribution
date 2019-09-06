@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +20,8 @@ class V1SettlementEntry () extends js.Object {
     */
   var payment_id: js.UndefOr[String] = js.native
   /**
-    * The settlement's current status. See [V1SettlementEntryType](#type-v1settlemententrytype) for possible values
+    * The settlement's current status. See [V1SettlementEntryType](#type-v1settlemententrytype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 

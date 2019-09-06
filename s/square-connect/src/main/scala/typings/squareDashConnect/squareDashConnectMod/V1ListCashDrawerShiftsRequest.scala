@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1ListCashDrawerShiftsRequestNs.OrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +19,6 @@ class V1ListCashDrawerShiftsRequest () extends js.Object {
     * The order in which cash drawer shifts are listed in the response, based on their created_at field.
     * Default value: ASC See [SortOrder](#type-sortorder) for possible values.
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[String] = js.native
 }
 

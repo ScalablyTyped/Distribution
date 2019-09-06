@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1RefundNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +20,7 @@ class V1Refund () extends js.Object {
   /**
     * A Square-issued ID associated with the refund. For single-tender refunds, payment_id is the ID of the original
     * payment ID. For split-tender refunds, payment_id is the ID of the original tender. For exchange-based refunds
-    * (is_exchange == true), payment_id is the ID of the original payment ID even if the payment includes other
-    * tenders.
+    * (is_exchange == true), payment_id is the ID of the original payment ID even if the payment includes other tenders.
     */
   var payment_id: js.UndefOr[String] = js.native
   /**
@@ -78,8 +76,8 @@ class V1Refund () extends js.Object {
     */
   var refunded_tip_money: js.UndefOr[V1Money] = js.native
   /**
-    * The type of refund See [V1RefundType](#type-v1refundtype) for possible values
+    * The type of refund. See [V1RefundType](#type-v1refundtype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 

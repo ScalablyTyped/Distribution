@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1UpdateModifierListRequestNs.SelectionTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +12,9 @@ class V1UpdateModifierListRequest () extends js.Object {
     */
   var name: js.UndefOr[String] = js.native
   /**
-    * Indicates whether multiple options from the modifier list can be applied to a single item. See
-    * [V1UpdateModifierListRequestSelectionType](#type-v1updatemodifierlistrequestselectiontype) for possible values
+    * Indicates whether multiple options from the modifier list can be applied to a single item.
+    * See [V1UpdateModifierListRequestSelectionType](#type-v1updatemodifierlistrequestselectiontype) for possible values.
     */
-  var selection_type: js.UndefOr[SelectionTypeEnum] = js.native
+  var selection_type: js.UndefOr[String] = js.native
 }
 

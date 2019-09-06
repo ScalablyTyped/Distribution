@@ -29,6 +29,10 @@ trait Configuration extends js.Object {
   var `set-placeholder-key`: Boolean
   /** Should a group of short-options be treated as boolean flags? Default is `true` */
   var `short-option-groups`: Boolean
+  /** Should aliases be removed before returning results? Default is `false` */
+  var `strip-aliased`: Boolean
+  /** Should dashed keys be removed before returning results? This option has no effect if camel-case-expansion is disabled. Default is `false` */
+  var `strip-dashed`: Boolean
 }
 
 object Configuration {
@@ -45,7 +49,9 @@ object Configuration {
     `parse-numbers`: Boolean,
     `populate--`: Boolean,
     `set-placeholder-key`: Boolean,
-    `short-option-groups`: Boolean
+    `short-option-groups`: Boolean,
+    `strip-aliased`: Boolean,
+    `strip-dashed`: Boolean
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("boolean-negation")(`boolean-negation`)
@@ -60,6 +66,8 @@ object Configuration {
     __obj.updateDynamic("populate--")(`populate--`)
     __obj.updateDynamic("set-placeholder-key")(`set-placeholder-key`)
     __obj.updateDynamic("short-option-groups")(`short-option-groups`)
+    __obj.updateDynamic("strip-aliased")(`strip-aliased`)
+    __obj.updateDynamic("strip-dashed")(`strip-dashed`)
     __obj.asInstanceOf[Configuration]
   }
 }

@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1OrderHistoryEntryNs.ActionEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1OrderHistoryEntry () extends js.Object {
   /**
-    * The type of action performed on the order. See [V1OrderHistoryEntryAction](#type-v1orderhistoryentryaction) for
-    * possible values
+    * The type of action performed on the order.
+    * See [V1OrderHistoryEntryAction](#type-v1orderhistoryentryaction) for possible values.
     */
-  var action: js.UndefOr[ActionEnum] = js.native
+  var action: js.UndefOr[String] = js.native
   /**
     * The time when the action was performed, in ISO 8601 format.
     */

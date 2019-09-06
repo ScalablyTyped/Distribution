@@ -69,6 +69,10 @@ trait UserRecord extends js.Object {
     */
   var providerData: js.Array[UserInfo]
   /**
+    * The ID of the tenant the user belongs to, if available.
+    */
+  var tenantId: js.UndefOr[String | Null] = js.undefined
+  /**
     * The date the user's tokens are valid after, formatted as a UTC string.
     * This is updated every time the user's refresh token are revoked either
     * from the {@link https://firebase.google.com/docs/reference/admin/node/admin.auth.Auth#revokeRefreshTokens `revokeRefreshTokens()`}
@@ -102,6 +106,7 @@ object UserRecord {
     passwordSalt: String = null,
     phoneNumber: String = null,
     photoURL: String = null,
+    tenantId: String = null,
     tokensValidAfterTime: String = null
   ): UserRecord = {
     val __obj = js.Dynamic.literal(disabled = disabled, emailVerified = emailVerified, metadata = metadata, providerData = providerData, toJSON = js.Any.fromFunction0(toJSON), uid = uid)
@@ -112,6 +117,7 @@ object UserRecord {
     if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt)
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
     if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL)
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
     if (tokensValidAfterTime != null) __obj.updateDynamic("tokensValidAfterTime")(tokensValidAfterTime)
     __obj.asInstanceOf[UserRecord]
   }

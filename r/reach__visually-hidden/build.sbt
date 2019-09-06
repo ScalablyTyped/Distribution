@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reach__visually-hidden"
-version := "0.2-dt-20190717Z-7801fc"
+version := "0.2-dt-20190717Z-01c677"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

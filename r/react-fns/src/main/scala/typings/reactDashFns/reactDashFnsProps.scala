@@ -24,5 +24,8 @@ trait reactDashFnsProps {
   @scala.inline
   def NetworkProps: SharedRenderProps.type = typings.reactDashFns.distTypesMod.SharedRenderProps
   type NetworkProps[P] = SharedRenderProps[P]
+  @scala.inline
+  def distMediaModMediaProps: SharedRenderProps.type = typings.reactDashFns.distTypesMod.SharedRenderProps
+  type distMediaModMediaProps[P] = SharedRenderProps[P]
 }
 

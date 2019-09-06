@@ -40,7 +40,8 @@ class Scheduler protected () extends Widget {
   def saveAsPDF(): JQueryPromise[_] = js.native
   def saveEvent(): Unit = js.native
   def select(): Unit = js.native
-  def select(events: js.Any, options: js.Any): Unit = js.native
+  def select(options: js.Array[SchedulerEvent]): Unit = js.native
+  def select(options: SchedulerSelectOptions): Unit = js.native
   def setDataSource(dataSource: SchedulerDataSource): Unit = js.native
   def slotByElement(element: JQuery): js.Any = js.native
   def slotByElement(element: Element): js.Any = js.native

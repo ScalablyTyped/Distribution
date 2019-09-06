@@ -11,7 +11,7 @@ class Group () extends Element {
   var children: js.Any = js.native
   @JSName("options")
   var options_Group: GroupOptions = js.native
-  def append(element: Element): Unit = js.native
+  def append(elements: Element*): Unit = js.native
   def clear(): Unit = js.native
   def insert(position: Double, element: Element): Unit = js.native
   def remove(element: Element): Unit = js.native

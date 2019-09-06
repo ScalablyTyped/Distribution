@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__dom"
-version := "6.0-dt-20190904Z-105511"
+version := "6.0-dt-20190905Z-22a3da"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

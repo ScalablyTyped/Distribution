@@ -77,7 +77,7 @@ trait IonSearchbar extends HTMLAttributes[HTMLIonSearchbarElement] {
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * A hint to the browser for which keyboard to display. Possible values are: `"none"` | `"text"` | `"tel"` | `"url"` | `"email"` | `"numeric"` | `"decimal"` | `"search"`.
+    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
   @JSName("inputmode")
   var inputmode_IonSearchbar: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined

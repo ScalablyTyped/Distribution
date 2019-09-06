@@ -13,6 +13,8 @@ class SearchOrdersFilter () extends js.Object {
   var customer_filter: js.UndefOr[SearchOrdersCustomerFilter] = js.native
   /**
     * Filter for results within a time range.
+    * @note If you filter for orders by time range, you must set SearchOrdersSort to sort by the same field.
+    * [Learn more about filtering orders by time range](/orders-api/manage-orders#important-note-on-filtering-orders-by-time-range).
     */
   var date_time_filter: js.UndefOr[SearchOrdersDateTimeFilter] = js.native
   /**

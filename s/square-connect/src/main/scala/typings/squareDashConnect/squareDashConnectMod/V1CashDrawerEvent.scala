@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1CashDrawerEventNs.EventTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +28,7 @@ class V1CashDrawerEvent () extends js.Object {
     * The type of event that occurred. See [V1CashDrawerEventEventType](#type-v1cashdrawereventeventtype) for possible
     * values
     */
-  var event_type: js.UndefOr[EventTypeEnum] = js.native
+  var event_type: js.UndefOr[String] = js.native
   /**
     * The event's unique ID.
     */

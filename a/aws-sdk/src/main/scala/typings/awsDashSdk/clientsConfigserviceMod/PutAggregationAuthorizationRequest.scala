@@ -13,6 +13,9 @@ trait PutAggregationAuthorizationRequest extends js.Object {
     * The region authorized to collect aggregated data.
     */
   var AuthorizedAwsRegion: AwsRegion
+  /**
+    * An array of tag object.
+    */
   var Tags: js.UndefOr[TagsList] = js.undefined
 }
 

@@ -1,7 +1,9 @@
 package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 
+import typings.react.reactMod.ComponentClass
+import typings.react.reactMod.ComponentState
+import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
 import typings.reactDashNative.reactDashNativeMod.ImageStyle
-import typings.reactDashNative.reactDashNativeMod.ImageURISource
 import typings.reactDashNative.reactDashNativeMod.StatusBarStyle
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -15,13 +17,20 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait HeaderProps extends js.Object {
   /**
+    * Specify a different component as the background for the button.
+    * Useful for if you want to make a button with a gradient background.
+    *
+    * @default View
+    */
+  var ViewComponent: js.UndefOr[ComponentClass[_, ComponentState]] = js.undefined
+  /**
     * Sets backgroundColor of the parent component
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   /**
     * Background image source
     */
-  var backgroundImage: js.UndefOr[ImageURISource] = js.undefined
+  var backgroundImage: js.UndefOr[ImageSourcePropType] = js.undefined
   /**
     * Styles for the background image in the container
     */
@@ -53,6 +62,10 @@ import scala.scalajs.js.annotation._
     */
   var leftContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   /**
+    * Object of props to be applied to the linearGradient view(ViewComponent)
+    */
+  var linearGradientProps: js.UndefOr[js.Object] = js.undefined
+  /**
     * Determines the alignment of the title
     *
     * @default 'center'
@@ -77,8 +90,9 @@ import scala.scalajs.js.annotation._
 object HeaderProps {
   @scala.inline
   def apply(
+    ViewComponent: ComponentClass[_, ComponentState] = null,
     backgroundColor: String = null,
-    backgroundImage: ImageURISource = null,
+    backgroundImage: ImageSourcePropType = null,
     backgroundImageStyle: ImageStyle = null,
     barStyle: StatusBarStyle = null,
     centerComponent: HeaderSubComponent = null,
@@ -86,14 +100,16 @@ object HeaderProps {
     containerStyle: StyleProp[ViewStyle] = null,
     leftComponent: HeaderSubComponent = null,
     leftContainerStyle: StyleProp[ViewStyle] = null,
+    linearGradientProps: js.Object = null,
     placement: left | center | right = null,
     rightComponent: HeaderSubComponent = null,
     rightContainerStyle: StyleProp[ViewStyle] = null,
     statusBarProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StatusBarProperties */ js.Any = null
   ): HeaderProps = {
     val __obj = js.Dynamic.literal()
+    if (ViewComponent != null) __obj.updateDynamic("ViewComponent")(ViewComponent)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage)
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
     if (backgroundImageStyle != null) __obj.updateDynamic("backgroundImageStyle")(backgroundImageStyle)
     if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle)
     if (centerComponent != null) __obj.updateDynamic("centerComponent")(centerComponent.asInstanceOf[js.Any])
@@ -101,6 +117,7 @@ object HeaderProps {
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (leftComponent != null) __obj.updateDynamic("leftComponent")(leftComponent.asInstanceOf[js.Any])
     if (leftContainerStyle != null) __obj.updateDynamic("leftContainerStyle")(leftContainerStyle.asInstanceOf[js.Any])
+    if (linearGradientProps != null) __obj.updateDynamic("linearGradientProps")(linearGradientProps)
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (rightComponent != null) __obj.updateDynamic("rightComponent")(rightComponent.asInstanceOf[js.Any])
     if (rightContainerStyle != null) __obj.updateDynamic("rightContainerStyle")(rightContainerStyle.asInstanceOf[js.Any])

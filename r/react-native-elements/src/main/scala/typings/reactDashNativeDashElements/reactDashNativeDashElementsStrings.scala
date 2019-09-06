@@ -44,6 +44,9 @@ object reactDashNativeDashElementsStrings {
   sealed trait facebook extends SocialMediaType
   
   @js.native
+  sealed trait flickr extends SocialMediaType
+  
+  @js.native
   sealed trait `font-awesome` extends _IconType
   
   @js.native
@@ -60,6 +63,9 @@ object reactDashNativeDashElementsStrings {
   
   @js.native
   sealed trait gitlab extends SocialMediaType
+  
+  @js.native
+  sealed trait google extends SocialMediaType
   
   @js.native
   sealed trait `google-plus-official` extends SocialMediaType
@@ -152,7 +158,13 @@ object reactDashNativeDashElementsStrings {
   sealed trait vimeo extends SocialMediaType
   
   @js.native
+  sealed trait vk extends SocialMediaType
+  
+  @js.native
   sealed trait warning extends js.Object
+  
+  @js.native
+  sealed trait weibo extends SocialMediaType
   
   @js.native
   sealed trait wordpress extends SocialMediaType
@@ -191,6 +203,8 @@ object reactDashNativeDashElementsStrings {
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   @scala.inline
+  def flickr: flickr = "flickr".asInstanceOf[flickr]
+  @scala.inline
   def `font-awesome`: `font-awesome` = "font-awesome".asInstanceOf[`font-awesome`]
   @scala.inline
   def foundation: foundation = "foundation".asInstanceOf[foundation]
@@ -202,6 +216,8 @@ object reactDashNativeDashElementsStrings {
   def `github-alt`: `github-alt` = "github-alt".asInstanceOf[`github-alt`]
   @scala.inline
   def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
+  @scala.inline
+  def google: google = "google".asInstanceOf[google]
   @scala.inline
   def `google-plus-official`: `google-plus-official` = "google-plus-official".asInstanceOf[`google-plus-official`]
   @scala.inline
@@ -263,7 +279,11 @@ object reactDashNativeDashElementsStrings {
   @scala.inline
   def vimeo: vimeo = "vimeo".asInstanceOf[vimeo]
   @scala.inline
+  def vk: vk = "vk".asInstanceOf[vk]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def weibo: weibo = "weibo".asInstanceOf[weibo]
   @scala.inline
   def wordpress: wordpress = "wordpress".asInstanceOf[wordpress]
   @scala.inline

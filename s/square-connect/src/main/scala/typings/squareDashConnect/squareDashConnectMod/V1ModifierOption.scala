@@ -34,7 +34,8 @@ class V1ModifierOption () extends js.Object {
     */
   var price_money: js.UndefOr[V1Money] = js.native
   /**
-    * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+    * The ID of the CatalogObject in the Connect v2 API.
+    * Objects that are shared across multiple locations share the same v2 ID.
     */
   var v2_id: js.UndefOr[String] = js.native
 }

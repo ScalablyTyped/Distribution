@@ -1,5 +1,6 @@
 package typings.downshift.downshiftMod
 
+import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,6 +58,7 @@ trait DownshiftProps[Item] extends js.Object {
       Unit
     ]
   ] = js.undefined
+  var scrollIntoView: js.UndefOr[js.Function2[/* node */ HTMLElement, /* menuNode */ HTMLElement, Unit]] = js.undefined
   var selectedItem: js.UndefOr[Item | Null] = js.undefined
   var selectedItemChanged: js.UndefOr[js.Function2[/* prevItem */ Item, /* item */ Item, Boolean]] = js.undefined
   var stateReducer: js.UndefOr[
@@ -97,6 +99,7 @@ object DownshiftProps {
     onSelect: (/* selectedItem */ Item | Null, /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit = null,
     onStateChange: (/* options */ StateChangeOptions[Item], /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit = null,
     onUserAction: (/* options */ StateChangeOptions[Item], /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit = null,
+    scrollIntoView: (/* node */ HTMLElement, /* menuNode */ HTMLElement) => Unit = null,
     selectedItem: Item = null,
     selectedItemChanged: (/* prevItem */ Item, /* item */ Item) => Boolean = null,
     stateReducer: (/* state */ DownshiftState[Item], /* changes */ StateChangeOptions[Item]) => Partial[StateChangeOptions[Item]] = null,
@@ -128,6 +131,7 @@ object DownshiftProps {
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction2(onStateChange))
     if (onUserAction != null) __obj.updateDynamic("onUserAction")(js.Any.fromFunction2(onUserAction))
+    if (scrollIntoView != null) __obj.updateDynamic("scrollIntoView")(js.Any.fromFunction2(scrollIntoView))
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (selectedItemChanged != null) __obj.updateDynamic("selectedItemChanged")(js.Any.fromFunction2(selectedItemChanged))
     if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction2(stateReducer))

@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeleteOrganizationConfigRuleRequest extends js.Object {
+  /**
+    * The name of organization config rule that you want to delete.
+    */
   var OrganizationConfigRuleName: StringWithCharLimit64
 }
 

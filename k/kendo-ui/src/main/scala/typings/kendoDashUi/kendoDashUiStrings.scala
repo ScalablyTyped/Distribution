@@ -6,6 +6,18 @@ import scala.scalajs.js.annotation._
 
 object kendoDashUiStrings {
   @js.native
+  sealed trait create extends js.Object
+  
+  @js.native
+  sealed trait destroy extends js.Object
+  
+  @js.native
+  sealed trait incell extends js.Object
+  
+  @js.native
+  sealed trait `inline` extends js.Object
+  
+  @js.native
   sealed trait kendoAlert extends js.Object
   
   @js.native
@@ -192,6 +204,9 @@ object kendoDashUiStrings {
   sealed trait kendoNumericTextBox extends js.Object
   
   @js.native
+  sealed trait kendoPDFViewer extends js.Object
+  
+  @js.native
   sealed trait kendoPager extends js.Object
   
   @js.native
@@ -284,6 +299,23 @@ object kendoDashUiStrings {
   @js.native
   sealed trait kendoWindow extends js.Object
   
+  @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
+  sealed trait read extends js.Object
+  
+  @js.native
+  sealed trait update extends js.Object
+  
+  @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
+  def incell: incell = "incell".asInstanceOf[incell]
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def kendoAlert: kendoAlert = "kendoAlert".asInstanceOf[kendoAlert]
   @scala.inline
@@ -409,6 +441,8 @@ object kendoDashUiStrings {
   @scala.inline
   def kendoNumericTextBox: kendoNumericTextBox = "kendoNumericTextBox".asInstanceOf[kendoNumericTextBox]
   @scala.inline
+  def kendoPDFViewer: kendoPDFViewer = "kendoPDFViewer".asInstanceOf[kendoPDFViewer]
+  @scala.inline
   def kendoPager: kendoPager = "kendoPager".asInstanceOf[kendoPager]
   @scala.inline
   def kendoPanelBar: kendoPanelBar = "kendoPanelBar".asInstanceOf[kendoPanelBar]
@@ -470,5 +504,11 @@ object kendoDashUiStrings {
   def kendoValidator: kendoValidator = "kendoValidator".asInstanceOf[kendoValidator]
   @scala.inline
   def kendoWindow: kendoWindow = "kendoWindow".asInstanceOf[kendoWindow]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
+  def read: read = "read".asInstanceOf[read]
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
 }
 

@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1ListEmployeesRequestNs.OrderEnum
-import typings.squareDashConnect.squareDashConnectMod.V1ListEmployeesRequestNs.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,11 +40,11 @@ class V1ListEmployeesRequest () extends js.Object {
     * The order in which employees are listed in the response, based on their created_at field.
     * Default value: ASC See [SortOrder](#type-sortorder) for possible values.
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[String] = js.native
   /**
     * If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
     * See [V1ListEmployeesRequestStatus](#type-v1listemployeesrequeststatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[String] = js.native
 }
 

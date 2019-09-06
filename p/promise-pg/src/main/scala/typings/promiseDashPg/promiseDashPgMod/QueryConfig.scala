@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueryConfig
-  extends typings.pg.pgMod.QueryConfig {
+  extends typings.pg.pgMod.QueryConfig[js.Array[js.Any]] {
   var buffer: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object QueryConfig {
     text: String,
     buffer: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    values: js.Array[_] = null
+    values: js.Array[js.Any] = null
   ): QueryConfig = {
     val __obj = js.Dynamic.literal(text = text)
     if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)

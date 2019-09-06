@@ -27,7 +27,7 @@ class OrderLineItemModifier () extends js.Object {
     */
   var total_price_money: js.UndefOr[Money] = js.native
   /**
-    * The modifier's Unique identifier, unique only within this order. This field is read-only.
+    * Unique ID that identifies the modifier only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

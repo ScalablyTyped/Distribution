@@ -20,7 +20,7 @@ class TextEdit protected () extends js.Object {
   		 * *Note* that the eol-sequence will be applied to the
   		 * whole document.
   		 */
-  var newEol: EndOfLine = js.native
+  var newEol: js.UndefOr[EndOfLine] = js.native
   /**
   		 * The string this edit will insert.
   		 */

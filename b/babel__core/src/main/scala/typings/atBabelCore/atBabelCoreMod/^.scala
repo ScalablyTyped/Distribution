@@ -40,6 +40,8 @@ object ^ extends js.Object {
   def parseAsync(code: String, options: TransformOptions): js.Promise[ParseResult | Null] = js.native
   def parseSync(code: String): ParseResult | Null = js.native
   def parseSync(code: String, options: TransformOptions): ParseResult | Null = js.native
+  def resolvePlugin(name: String, dirname: String): String | Null = js.native
+  def resolvePreset(name: String, dirname: String): String | Null = js.native
   def transform(code: String): BabelFileResult | Null = js.native
   def transform(code: String, callback: FileResultCallback): Unit = js.native
   def transform(code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native

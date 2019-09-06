@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1MoneyNs.CurrencyCodeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1Money () extends js.Object {
   /**
-    * Amount in the lowest denominated value of this Currency. E.g. in USD these are cents, in JPY they are Yen (which
-    * do not have a 'cent' concept).
+    * Amount in the lowest denominated value of this Currency.
+    * E.g. in USD these are cents, in JPY they are Yen (which do not have a 'cent' concept).
     */
   var amount: js.UndefOr[Double] = js.native
   /**
     * See [Currency](#type-currency) for possible values.
     */
-  var currency_code: js.UndefOr[CurrencyCodeEnum] = js.native
+  var currency_code: js.UndefOr[String] = js.native
 }
 

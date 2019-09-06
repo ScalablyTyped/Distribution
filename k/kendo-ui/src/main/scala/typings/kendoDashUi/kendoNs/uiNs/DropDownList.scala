@@ -17,6 +17,7 @@ class DropDownList protected () extends Widget {
   var list: JQuery = js.native
   @JSName("options")
   var options_DropDownList: DropDownListOptions = js.native
+  var popup: Popup = js.native
   var span: JQuery = js.native
   var ul: JQuery = js.native
   var wrapper: JQuery = js.native

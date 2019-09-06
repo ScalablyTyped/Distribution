@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backstopjs"
-version := "4.1-dt-20190825Z-2415e0"
+version := "4.1-dt-20190905Z-8add11"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

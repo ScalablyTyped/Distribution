@@ -37,5 +37,8 @@ object formikComponents extends formikProps {
   @scala.inline
   def FormikProvider: ComponentType[ProviderProps[FormikContext[js.Any]]] = typings.formik.formikMod.^.FormikProvider.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.ProviderProps[typings.formik.distTypesMod.FormikContext[js.Any]]]]
+  @scala.inline
+  def distConnectModFormikProvider: ComponentType[ProviderProps[FormikContext[js.Any]]] = typings.formik.distConnectMod.FormikProvider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.react.reactMod.ProviderProps[typings.formik.distTypesMod.FormikContext[js.Any]]]]
 }
 

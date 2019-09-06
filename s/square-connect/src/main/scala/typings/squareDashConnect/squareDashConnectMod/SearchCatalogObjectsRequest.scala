@@ -14,8 +14,8 @@ class SearchCatalogObjectsRequest () extends js.Object {
     */
   var begin_time: js.UndefOr[String] = js.native
   /**
-    * The pagination cursor returned in the previous response. Leave unset for an initial request. See
-    * [Pagination](/basics/api101/pagination) for more information.
+    * The pagination cursor returned in the previous response. Leave unset for an initial request.
+    * See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
@@ -24,12 +24,12 @@ class SearchCatalogObjectsRequest () extends js.Object {
     */
   var include_deleted_objects: js.UndefOr[Boolean] = js.native
   /**
-    * If `true`, the response will include additional objects that are related to the requested object, as follows:  If
-    * a [CatalogItem](#type-catalogitem) is returned in the object field of the response, its associated
-    * [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, and
-    * [CatalogModifierList](#type-catalogmodifierlist)s will be included in the `related_objects` field of the response.
-    * If a [CatalogItemVariation](#type-catalogitemvariation) is returned in the object field of the response,
-    * its parent [CatalogItem](#type-catalogitem) will be included in the `related_objects` field of the response.
+    * If `true`, the response will include additional objects that are related to the requested object, as follows:
+    * If a [CatalogItem](#type-catalogitem) is returned in the object field of the response, its associated
+    * [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, [CatalogImage](#type-catalogimage)s
+    * and [CatalogModifierList](#type-catalogmodifierlist)s will be included in the `related_objects` field of the response.
+    * If a [CatalogItemVariation](#type-catalogitemvariation) is returned in the object field of the response, its
+    * parent [CatalogItem](#type-catalogitem) will be included in the `related_objects` field of the response.
     */
   var include_related_objects: js.UndefOr[Boolean] = js.native
   /**
@@ -39,9 +39,10 @@ class SearchCatalogObjectsRequest () extends js.Object {
     */
   var limit: js.UndefOr[Double] = js.native
   /**
-    * The desired set of object types to appear in the search results. The legal values are taken from the
-    * [CatalogObjectType](#type-catalogobjecttype) enumeration, namely "ITEM", "ITEM_VARIATION", "CATEGORY", "DISCOUNT",
-    * "TAX", "MODIFIER", or "MODIFIER_LIST". See [CatalogObjectType](#type-catalogobjecttype) for possible values.
+    * The desired set of object types to appear in the search results.
+    * The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely "ITEM",
+    * "ITEM_VARIATION", "CATEGORY", "DISCOUNT", "TAX", "MODIFIER", or "MODIFIER_LIST".
+    * See [CatalogObjectType](#type-catalogobjecttype) for possible values.
     */
   var object_types: js.UndefOr[js.Array[ObjectTypesEnum]] = js.native
   /**

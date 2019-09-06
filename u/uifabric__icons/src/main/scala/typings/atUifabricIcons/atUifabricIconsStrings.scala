@@ -25,6 +25,9 @@ object atUifabricIconsStrings {
   sealed trait AccessibiltyChecker extends IconNames
   
   @js.native
+  sealed trait AccountActivity extends IconNames
+  
+  @js.native
   sealed trait AccountBrowser extends IconNames
   
   @js.native
@@ -85,6 +88,9 @@ object atUifabricIconsStrings {
   sealed trait AddTo extends IconNames
   
   @js.native
+  sealed trait AddToShoppingList extends IconNames
+  
+  @js.native
   sealed trait AddWork extends IconNames
   
   @js.native
@@ -143,6 +149,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait AlbumRemove extends IconNames
+  
+  @js.native
+  sealed trait AlertSettings extends IconNames
   
   @js.native
   sealed trait AlertSolid extends IconNames
@@ -598,6 +607,12 @@ object atUifabricIconsStrings {
   sealed trait Bullseye extends IconNames
   
   @js.native
+  sealed trait BullseyeTarget extends IconNames
+  
+  @js.native
+  sealed trait BullseyeTargetEdit extends IconNames
+  
+  @js.native
   sealed trait Bus extends IconNames
   
   @js.native
@@ -805,6 +820,9 @@ object atUifabricIconsStrings {
   sealed trait CertifiedDatabase extends IconNames
   
   @js.native
+  sealed trait ChangeEntitlements extends IconNames
+  
+  @js.native
   sealed trait Chart extends IconNames
   
   @js.native
@@ -821,6 +839,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait Chat extends IconNames
+  
+  @js.native
+  sealed trait ChatBot extends IconNames
   
   @js.native
   sealed trait ChatInviteFriend extends IconNames
@@ -1066,6 +1087,9 @@ object atUifabricIconsStrings {
   sealed trait CloudDownload extends IconNames
   
   @js.native
+  sealed trait CloudImportExport extends IconNames
+  
+  @js.native
   sealed trait CloudUpload extends IconNames
   
   @js.native
@@ -1154,6 +1178,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait CommentPrevious extends IconNames
+  
+  @js.native
+  sealed trait CommentSolid extends IconNames
   
   @js.native
   sealed trait CommentUrgent extends IconNames
@@ -1379,6 +1406,12 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait DelveLogoInverse extends IconNames
+  
+  @js.native
+  sealed trait DependencyAdd extends IconNames
+  
+  @js.native
+  sealed trait DependencyRemove extends IconNames
   
   @js.native
   sealed trait Deploy extends IconNames
@@ -1667,6 +1700,12 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait EngineeringGroup extends IconNames
+  
+  @js.native
+  sealed trait EntitlementPolicy extends IconNames
+  
+  @js.native
+  sealed trait EntitlementRedemption extends IconNames
   
   @js.native
   sealed trait EntryDecline extends IconNames
@@ -2203,10 +2242,16 @@ object atUifabricIconsStrings {
   sealed trait GoMirrored extends IconNames
   
   @js.native
+  sealed trait GoToDashboard extends IconNames
+  
+  @js.native
   sealed trait Golf extends IconNames
   
   @js.native
   sealed trait GotoToday extends IconNames
+  
+  @js.native
+  sealed trait GreetingCard extends IconNames
   
   @js.native
   sealed trait GridViewLarge extends IconNames
@@ -2477,6 +2522,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait InstallToDrive extends IconNames
+  
+  @js.native
+  sealed trait Installation extends IconNames
   
   @js.native
   sealed trait InternalInvestigation extends IconNames
@@ -3175,13 +3223,22 @@ object atUifabricIconsStrings {
   sealed trait PageCheckedin extends IconNames
   
   @js.native
+  sealed trait PageData extends IconNames
+  
+  @js.native
   sealed trait PageEdit extends IconNames
   
   @js.native
   sealed trait PageHeader extends IconNames
   
   @js.native
+  sealed trait PageHeaderEdit extends IconNames
+  
+  @js.native
   sealed trait PageLeft extends IconNames
+  
+  @js.native
+  sealed trait PageLink extends IconNames
   
   @js.native
   sealed trait PageList extends IconNames
@@ -3322,6 +3379,9 @@ object atUifabricIconsStrings {
   sealed trait PhotoCollection extends IconNames
   
   @js.native
+  sealed trait PhotoVideoMedia extends IconNames
+  
+  @js.native
   sealed trait Picture extends IconNames
   
   @js.native
@@ -3383,6 +3443,12 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait PlayResume extends IconNames
+  
+  @js.native
+  sealed trait PlayReverse extends IconNames
+  
+  @js.native
+  sealed trait PlayReverseResume extends IconNames
   
   @js.native
   sealed trait PlaybackRate1x extends IconNames
@@ -3496,7 +3562,19 @@ object atUifabricIconsStrings {
   sealed trait Product extends IconNames
   
   @js.native
+  sealed trait ProductCatalog extends IconNames
+  
+  @js.native
+  sealed trait ProductList extends IconNames
+  
+  @js.native
   sealed trait ProductRelease extends IconNames
+  
+  @js.native
+  sealed trait ProductVariant extends IconNames
+  
+  @js.native
+  sealed trait ProductionFloorManagement extends IconNames
   
   @js.native
   sealed trait ProfileSearch extends IconNames
@@ -3751,6 +3829,9 @@ object atUifabricIconsStrings {
   sealed trait RemoveFilter extends IconNames
   
   @js.native
+  sealed trait RemoveFromShoppingList extends IconNames
+  
+  @js.native
   sealed trait RemoveFromTrash extends IconNames
   
   @js.native
@@ -3827,6 +3908,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait ReportLock extends IconNames
+  
+  @js.native
+  sealed trait ReportWarning extends IconNames
   
   @js.native
   sealed trait Rerun extends IconNames
@@ -4516,7 +4600,13 @@ object atUifabricIconsStrings {
   sealed trait Table extends IconNames
   
   @js.native
+  sealed trait TableComputed extends IconNames
+  
+  @js.native
   sealed trait TableGroup extends IconNames
+  
+  @js.native
+  sealed trait TableLink extends IconNames
   
   @js.native
   sealed trait Tablet extends IconNames
@@ -4729,6 +4819,9 @@ object atUifabricIconsStrings {
   sealed trait Toll extends IconNames
   
   @js.native
+  sealed trait Toolbox extends IconNames
+  
+  @js.native
   sealed trait Touch extends IconNames
   
   @js.native
@@ -4808,6 +4901,12 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait TriggerUser extends IconNames
+  
+  @js.native
+  sealed trait TrimEnd extends IconNames
+  
+  @js.native
+  sealed trait TrimStart extends IconNames
   
   @js.native
   sealed trait TripleColumn extends IconNames
@@ -4900,6 +4999,9 @@ object atUifabricIconsStrings {
   sealed trait Unpin extends IconNames
   
   @js.native
+  sealed trait UnpublishContent extends IconNames
+  
+  @js.native
   sealed trait UnstackSelected extends IconNames
   
   @js.native
@@ -4910,6 +5012,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait UnsyncOccurence extends IconNames
+  
+  @js.native
+  sealed trait Untag extends IconNames
   
   @js.native
   sealed trait Up extends IconNames
@@ -5020,6 +5125,9 @@ object atUifabricIconsStrings {
   sealed trait ViewListTree extends IconNames
   
   @js.native
+  sealed trait ViewOriginal extends IconNames
+  
+  @js.native
   sealed trait VisioDiagram extends IconNames
   
   @js.native
@@ -5120,6 +5228,18 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait WavingHand extends IconNames
+  
+  @js.native
+  sealed trait WebAppBuilderFragment extends IconNames
+  
+  @js.native
+  sealed trait WebAppBuilderFragmentCreate extends IconNames
+  
+  @js.native
+  sealed trait WebAppBuilderModule extends IconNames
+  
+  @js.native
+  sealed trait WebAppBuilderSlot extends IconNames
   
   @js.native
   sealed trait WebComponents extends IconNames
@@ -5248,6 +5368,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def AccessibiltyChecker: AccessibiltyChecker = "AccessibiltyChecker".asInstanceOf[AccessibiltyChecker]
   @scala.inline
+  def AccountActivity: AccountActivity = "AccountActivity".asInstanceOf[AccountActivity]
+  @scala.inline
   def AccountBrowser: AccountBrowser = "AccountBrowser".asInstanceOf[AccountBrowser]
   @scala.inline
   def AccountManagement: AccountManagement = "AccountManagement".asInstanceOf[AccountManagement]
@@ -5288,6 +5410,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def AddTo: AddTo = "AddTo".asInstanceOf[AddTo]
   @scala.inline
+  def AddToShoppingList: AddToShoppingList = "AddToShoppingList".asInstanceOf[AddToShoppingList]
+  @scala.inline
   def AddWork: AddWork = "AddWork".asInstanceOf[AddWork]
   @scala.inline
   def Admin: Admin = "Admin".asInstanceOf[Admin]
@@ -5327,6 +5451,8 @@ object atUifabricIconsStrings {
   def Album: Album = "Album".asInstanceOf[Album]
   @scala.inline
   def AlbumRemove: AlbumRemove = "AlbumRemove".asInstanceOf[AlbumRemove]
+  @scala.inline
+  def AlertSettings: AlertSettings = "AlertSettings".asInstanceOf[AlertSettings]
   @scala.inline
   def AlertSolid: AlertSolid = "AlertSolid".asInstanceOf[AlertSolid]
   @scala.inline
@@ -5630,6 +5756,10 @@ object atUifabricIconsStrings {
   @scala.inline
   def Bullseye: Bullseye = "Bullseye".asInstanceOf[Bullseye]
   @scala.inline
+  def BullseyeTarget: BullseyeTarget = "BullseyeTarget".asInstanceOf[BullseyeTarget]
+  @scala.inline
+  def BullseyeTargetEdit: BullseyeTargetEdit = "BullseyeTargetEdit".asInstanceOf[BullseyeTargetEdit]
+  @scala.inline
   def Bus: Bus = "Bus".asInstanceOf[Bus]
   @scala.inline
   def BusSolid: BusSolid = "BusSolid".asInstanceOf[BusSolid]
@@ -5768,6 +5898,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def CertifiedDatabase: CertifiedDatabase = "CertifiedDatabase".asInstanceOf[CertifiedDatabase]
   @scala.inline
+  def ChangeEntitlements: ChangeEntitlements = "ChangeEntitlements".asInstanceOf[ChangeEntitlements]
+  @scala.inline
   def Chart: Chart = "Chart".asInstanceOf[Chart]
   @scala.inline
   def ChartSeries: ChartSeries = "ChartSeries".asInstanceOf[ChartSeries]
@@ -5779,6 +5911,8 @@ object atUifabricIconsStrings {
   def ChartYAngle: ChartYAngle = "ChartYAngle".asInstanceOf[ChartYAngle]
   @scala.inline
   def Chat: Chat = "Chat".asInstanceOf[Chat]
+  @scala.inline
+  def ChatBot: ChatBot = "ChatBot".asInstanceOf[ChatBot]
   @scala.inline
   def ChatInviteFriend: ChatInviteFriend = "ChatInviteFriend".asInstanceOf[ChatInviteFriend]
   @scala.inline
@@ -5942,6 +6076,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def CloudDownload: CloudDownload = "CloudDownload".asInstanceOf[CloudDownload]
   @scala.inline
+  def CloudImportExport: CloudImportExport = "CloudImportExport".asInstanceOf[CloudImportExport]
+  @scala.inline
   def CloudUpload: CloudUpload = "CloudUpload".asInstanceOf[CloudUpload]
   @scala.inline
   def CloudWeather: CloudWeather = "CloudWeather".asInstanceOf[CloudWeather]
@@ -6001,6 +6137,8 @@ object atUifabricIconsStrings {
   def CommentNext: CommentNext = "CommentNext".asInstanceOf[CommentNext]
   @scala.inline
   def CommentPrevious: CommentPrevious = "CommentPrevious".asInstanceOf[CommentPrevious]
+  @scala.inline
+  def CommentSolid: CommentSolid = "CommentSolid".asInstanceOf[CommentSolid]
   @scala.inline
   def CommentUrgent: CommentUrgent = "CommentUrgent".asInstanceOf[CommentUrgent]
   @scala.inline
@@ -6151,6 +6289,10 @@ object atUifabricIconsStrings {
   def DelveLogoFill: DelveLogoFill = "DelveLogoFill".asInstanceOf[DelveLogoFill]
   @scala.inline
   def DelveLogoInverse: DelveLogoInverse = "DelveLogoInverse".asInstanceOf[DelveLogoInverse]
+  @scala.inline
+  def DependencyAdd: DependencyAdd = "DependencyAdd".asInstanceOf[DependencyAdd]
+  @scala.inline
+  def DependencyRemove: DependencyRemove = "DependencyRemove".asInstanceOf[DependencyRemove]
   @scala.inline
   def Deploy: Deploy = "Deploy".asInstanceOf[Deploy]
   @scala.inline
@@ -6343,6 +6485,10 @@ object atUifabricIconsStrings {
   def Encryption: Encryption = "Encryption".asInstanceOf[Encryption]
   @scala.inline
   def EngineeringGroup: EngineeringGroup = "EngineeringGroup".asInstanceOf[EngineeringGroup]
+  @scala.inline
+  def EntitlementPolicy: EntitlementPolicy = "EntitlementPolicy".asInstanceOf[EntitlementPolicy]
+  @scala.inline
+  def EntitlementRedemption: EntitlementRedemption = "EntitlementRedemption".asInstanceOf[EntitlementRedemption]
   @scala.inline
   def EntryDecline: EntryDecline = "EntryDecline".asInstanceOf[EntryDecline]
   @scala.inline
@@ -6700,9 +6846,13 @@ object atUifabricIconsStrings {
   @scala.inline
   def GoMirrored: GoMirrored = "GoMirrored".asInstanceOf[GoMirrored]
   @scala.inline
+  def GoToDashboard: GoToDashboard = "GoToDashboard".asInstanceOf[GoToDashboard]
+  @scala.inline
   def Golf: Golf = "Golf".asInstanceOf[Golf]
   @scala.inline
   def GotoToday: GotoToday = "GotoToday".asInstanceOf[GotoToday]
+  @scala.inline
+  def GreetingCard: GreetingCard = "GreetingCard".asInstanceOf[GreetingCard]
   @scala.inline
   def GridViewLarge: GridViewLarge = "GridViewLarge".asInstanceOf[GridViewLarge]
   @scala.inline
@@ -6883,6 +7033,8 @@ object atUifabricIconsStrings {
   def InsertTextBox: InsertTextBox = "InsertTextBox".asInstanceOf[InsertTextBox]
   @scala.inline
   def InstallToDrive: InstallToDrive = "InstallToDrive".asInstanceOf[InstallToDrive]
+  @scala.inline
+  def Installation: Installation = "Installation".asInstanceOf[Installation]
   @scala.inline
   def InternalInvestigation: InternalInvestigation = "InternalInvestigation".asInstanceOf[InternalInvestigation]
   @scala.inline
@@ -7348,11 +7500,17 @@ object atUifabricIconsStrings {
   @scala.inline
   def PageCheckedin: PageCheckedin = "PageCheckedin".asInstanceOf[PageCheckedin]
   @scala.inline
+  def PageData: PageData = "PageData".asInstanceOf[PageData]
+  @scala.inline
   def PageEdit: PageEdit = "PageEdit".asInstanceOf[PageEdit]
   @scala.inline
   def PageHeader: PageHeader = "PageHeader".asInstanceOf[PageHeader]
   @scala.inline
+  def PageHeaderEdit: PageHeaderEdit = "PageHeaderEdit".asInstanceOf[PageHeaderEdit]
+  @scala.inline
   def PageLeft: PageLeft = "PageLeft".asInstanceOf[PageLeft]
+  @scala.inline
+  def PageLink: PageLink = "PageLink".asInstanceOf[PageLink]
   @scala.inline
   def PageList: PageList = "PageList".asInstanceOf[PageList]
   @scala.inline
@@ -7446,6 +7604,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def PhotoCollection: PhotoCollection = "PhotoCollection".asInstanceOf[PhotoCollection]
   @scala.inline
+  def PhotoVideoMedia: PhotoVideoMedia = "PhotoVideoMedia".asInstanceOf[PhotoVideoMedia]
+  @scala.inline
   def Picture: Picture = "Picture".asInstanceOf[Picture]
   @scala.inline
   def PictureCenter: PictureCenter = "PictureCenter".asInstanceOf[PictureCenter]
@@ -7487,6 +7647,10 @@ object atUifabricIconsStrings {
   def Play: Play = "Play".asInstanceOf[Play]
   @scala.inline
   def PlayResume: PlayResume = "PlayResume".asInstanceOf[PlayResume]
+  @scala.inline
+  def PlayReverse: PlayReverse = "PlayReverse".asInstanceOf[PlayReverse]
+  @scala.inline
+  def PlayReverseResume: PlayReverseResume = "PlayReverseResume".asInstanceOf[PlayReverseResume]
   @scala.inline
   def PlaybackRate1x: PlaybackRate1x = "PlaybackRate1x".asInstanceOf[PlaybackRate1x]
   @scala.inline
@@ -7562,7 +7726,15 @@ object atUifabricIconsStrings {
   @scala.inline
   def Product: Product = "Product".asInstanceOf[Product]
   @scala.inline
+  def ProductCatalog: ProductCatalog = "ProductCatalog".asInstanceOf[ProductCatalog]
+  @scala.inline
+  def ProductList: ProductList = "ProductList".asInstanceOf[ProductList]
+  @scala.inline
   def ProductRelease: ProductRelease = "ProductRelease".asInstanceOf[ProductRelease]
+  @scala.inline
+  def ProductVariant: ProductVariant = "ProductVariant".asInstanceOf[ProductVariant]
+  @scala.inline
+  def ProductionFloorManagement: ProductionFloorManagement = "ProductionFloorManagement".asInstanceOf[ProductionFloorManagement]
   @scala.inline
   def ProfileSearch: ProfileSearch = "ProfileSearch".asInstanceOf[ProfileSearch]
   @scala.inline
@@ -7732,6 +7904,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def RemoveFilter: RemoveFilter = "RemoveFilter".asInstanceOf[RemoveFilter]
   @scala.inline
+  def RemoveFromShoppingList: RemoveFromShoppingList = "RemoveFromShoppingList".asInstanceOf[RemoveFromShoppingList]
+  @scala.inline
   def RemoveFromTrash: RemoveFromTrash = "RemoveFromTrash".asInstanceOf[RemoveFromTrash]
   @scala.inline
   def RemoveLink: RemoveLink = "RemoveLink".asInstanceOf[RemoveLink]
@@ -7783,6 +7957,8 @@ object atUifabricIconsStrings {
   def ReportLibraryMirrored: ReportLibraryMirrored = "ReportLibraryMirrored".asInstanceOf[ReportLibraryMirrored]
   @scala.inline
   def ReportLock: ReportLock = "ReportLock".asInstanceOf[ReportLock]
+  @scala.inline
+  def ReportWarning: ReportWarning = "ReportWarning".asInstanceOf[ReportWarning]
   @scala.inline
   def Rerun: Rerun = "Rerun".asInstanceOf[Rerun]
   @scala.inline
@@ -8242,7 +8418,11 @@ object atUifabricIconsStrings {
   @scala.inline
   def Table: Table = "Table".asInstanceOf[Table]
   @scala.inline
+  def TableComputed: TableComputed = "TableComputed".asInstanceOf[TableComputed]
+  @scala.inline
   def TableGroup: TableGroup = "TableGroup".asInstanceOf[TableGroup]
+  @scala.inline
+  def TableLink: TableLink = "TableLink".asInstanceOf[TableLink]
   @scala.inline
   def Tablet: Tablet = "Tablet".asInstanceOf[Tablet]
   @scala.inline
@@ -8384,6 +8564,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def Toll: Toll = "Toll".asInstanceOf[Toll]
   @scala.inline
+  def Toolbox: Toolbox = "Toolbox".asInstanceOf[Toolbox]
+  @scala.inline
   def Touch: Touch = "Touch".asInstanceOf[Touch]
   @scala.inline
   def TouchPointer: TouchPointer = "TouchPointer".asInstanceOf[TouchPointer]
@@ -8437,6 +8619,10 @@ object atUifabricIconsStrings {
   def TriggerAuto: TriggerAuto = "TriggerAuto".asInstanceOf[TriggerAuto]
   @scala.inline
   def TriggerUser: TriggerUser = "TriggerUser".asInstanceOf[TriggerUser]
+  @scala.inline
+  def TrimEnd: TrimEnd = "TrimEnd".asInstanceOf[TrimEnd]
+  @scala.inline
+  def TrimStart: TrimStart = "TrimStart".asInstanceOf[TrimStart]
   @scala.inline
   def TripleColumn: TripleColumn = "TripleColumn".asInstanceOf[TripleColumn]
   @scala.inline
@@ -8498,6 +8684,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def Unpin: Unpin = "Unpin".asInstanceOf[Unpin]
   @scala.inline
+  def UnpublishContent: UnpublishContent = "UnpublishContent".asInstanceOf[UnpublishContent]
+  @scala.inline
   def UnstackSelected: UnstackSelected = "UnstackSelected".asInstanceOf[UnstackSelected]
   @scala.inline
   def Unsubscribe: Unsubscribe = "Unsubscribe".asInstanceOf[Unsubscribe]
@@ -8505,6 +8693,8 @@ object atUifabricIconsStrings {
   def UnsyncFolder: UnsyncFolder = "UnsyncFolder".asInstanceOf[UnsyncFolder]
   @scala.inline
   def UnsyncOccurence: UnsyncOccurence = "UnsyncOccurence".asInstanceOf[UnsyncOccurence]
+  @scala.inline
+  def Untag: Untag = "Untag".asInstanceOf[Untag]
   @scala.inline
   def Up: Up = "Up".asInstanceOf[Up]
   @scala.inline
@@ -8578,6 +8768,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def ViewListTree: ViewListTree = "ViewListTree".asInstanceOf[ViewListTree]
   @scala.inline
+  def ViewOriginal: ViewOriginal = "ViewOriginal".asInstanceOf[ViewOriginal]
+  @scala.inline
   def VisioDiagram: VisioDiagram = "VisioDiagram".asInstanceOf[VisioDiagram]
   @scala.inline
   def VisioDiagramSync: VisioDiagramSync = "VisioDiagramSync".asInstanceOf[VisioDiagramSync]
@@ -8645,6 +8837,14 @@ object atUifabricIconsStrings {
   def WarningSolid: WarningSolid = "WarningSolid".asInstanceOf[WarningSolid]
   @scala.inline
   def WavingHand: WavingHand = "WavingHand".asInstanceOf[WavingHand]
+  @scala.inline
+  def WebAppBuilderFragment: WebAppBuilderFragment = "WebAppBuilderFragment".asInstanceOf[WebAppBuilderFragment]
+  @scala.inline
+  def WebAppBuilderFragmentCreate: WebAppBuilderFragmentCreate = "WebAppBuilderFragmentCreate".asInstanceOf[WebAppBuilderFragmentCreate]
+  @scala.inline
+  def WebAppBuilderModule: WebAppBuilderModule = "WebAppBuilderModule".asInstanceOf[WebAppBuilderModule]
+  @scala.inline
+  def WebAppBuilderSlot: WebAppBuilderSlot = "WebAppBuilderSlot".asInstanceOf[WebAppBuilderSlot]
   @scala.inline
   def WebComponents: WebComponents = "WebComponents".asInstanceOf[WebComponents]
   @scala.inline

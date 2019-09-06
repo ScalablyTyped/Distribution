@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait SchedulerSelectOptions extends js.Object {
   var end: js.UndefOr[Date] = js.undefined
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[js.Array[_ | SchedulerEvent]] = js.undefined
   var isAllDay: js.UndefOr[Boolean] = js.undefined
-  var resources: js.UndefOr[js.Any] = js.undefined
+  var resources: js.UndefOr[js.Array[_]] = js.undefined
   var start: js.UndefOr[Date] = js.undefined
 }
 
@@ -17,9 +17,9 @@ object SchedulerSelectOptions {
   @scala.inline
   def apply(
     end: Date = null,
-    events: js.Any = null,
+    events: js.Array[_ | SchedulerEvent] = null,
     isAllDay: js.UndefOr[Boolean] = js.undefined,
-    resources: js.Any = null,
+    resources: js.Array[_] = null,
     start: Date = null
   ): SchedulerSelectOptions = {
     val __obj = js.Dynamic.literal()

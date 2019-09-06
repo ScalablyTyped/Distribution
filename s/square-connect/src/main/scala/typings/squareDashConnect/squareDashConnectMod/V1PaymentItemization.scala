@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1PaymentItemizationNs.ItemizationTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,7 @@ class V1PaymentItemization () extends js.Object {
     * The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT See
     * [V1PaymentItemizationItemizationType](#type-v1paymentitemizationitemizationtype) for possible values
     */
-  var itemization_type: js.UndefOr[ItemizationTypeEnum] = js.native
+  var itemization_type: js.UndefOr[String] = js.native
   /**
     * All modifier options applied to this itemization.
     */

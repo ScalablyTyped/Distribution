@@ -31,11 +31,11 @@ object MapTypeId extends js.Object {
   @js.native
   sealed trait TERRAIN extends MapTypeId
   
-  /* 0 */ val HYBRID: typings.googlemaps.googleNs.mapsNs.MapTypeId.HYBRID with Double = js.native
-  /* 1 */ val ROADMAP: typings.googlemaps.googleNs.mapsNs.MapTypeId.ROADMAP with Double = js.native
-  /* 2 */ val SATELLITE: typings.googlemaps.googleNs.mapsNs.MapTypeId.SATELLITE with Double = js.native
-  /* 3 */ val TERRAIN: typings.googlemaps.googleNs.mapsNs.MapTypeId.TERRAIN with Double = js.native
+  /* "hybrid" */ val HYBRID: typings.googlemaps.googleNs.mapsNs.MapTypeId.HYBRID with String = js.native
+  /* "roadmap" */ val ROADMAP: typings.googlemaps.googleNs.mapsNs.MapTypeId.ROADMAP with String = js.native
+  /* "satellite" */ val SATELLITE: typings.googlemaps.googleNs.mapsNs.MapTypeId.SATELLITE with String = js.native
+  /* "terrain" */ val TERRAIN: typings.googlemaps.googleNs.mapsNs.MapTypeId.TERRAIN with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapTypeId with Double] = js.native
+  def apply(value: String): js.UndefOr[MapTypeId with String] = js.native
 }
 

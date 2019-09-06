@@ -20,6 +20,7 @@ class ClientBase () extends EventEmitter {
   def this(config: ClientConfig) = this()
   def connect(): js.Promise[Unit] = js.native
   def connect(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  // tslint:enable:no-unnecessary-generics
   def copyFrom(queryText: String): Writable = js.native
   def copyTo(queryText: String): Readable = js.native
   def escapeIdentifier(str: String): String = js.native
@@ -36,27 +37,31 @@ class ClientBase () extends EventEmitter {
   @JSName("on")
   def on_notification(event: notification, listener: js.Function1[/* message */ Notification, Unit]): this.type = js.native
   def pauseDrain(): Unit = js.native
-  def query(queryConfig: QueryArrayConfig): js.Promise[QueryArrayResult] = js.native
-  def query(
-    queryConfig: QueryArrayConfig,
-    callback: js.Function2[/* err */ Error, /* result */ QueryArrayResult, Unit]
+  def query[T /* <: Submittable */](queryStream: T): T = js.native
+  // tslint:disable:no-unnecessary-generics
+  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I]): js.Promise[QueryArrayResult[R]] = js.native
+  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](
+    queryConfig: QueryArrayConfig[I],
+    callback: js.Function2[/* err */ Error, /* result */ QueryArrayResult[R], Unit]
   ): Unit = js.native
-  def query(queryConfig: QueryArrayConfig, values: js.Array[_]): js.Promise[QueryArrayResult] = js.native
-  def query(queryConfig: QueryConfig): js.Promise[QueryResult] = js.native
-  def query(queryTextOrConfig: String): js.Promise[QueryResult] = js.native
-  def query(queryTextOrConfig: String, callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]): Unit = js.native
-  def query(queryTextOrConfig: String, values: js.Array[_]): js.Promise[QueryResult] = js.native
-  def query(
-    queryTextOrConfig: QueryConfig,
-    callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]
+  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I], values: I): js.Promise[QueryArrayResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryConfig: QueryConfig[I]): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: String): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+    queryTextOrConfig: String,
+    callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
   ): Unit = js.native
-  def query(queryTextOrConfig: QueryConfig, values: js.Array[_]): js.Promise[QueryResult] = js.native
-  def query(
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: String, values: I): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+    queryTextOrConfig: QueryConfig[I],
+    callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
+  ): Unit = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: QueryConfig[I], values: I): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
     queryText: String,
     values: js.Array[_],
-    callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]
+    callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
   ): Unit = js.native
-  def query[T /* <: Submittable */](queryStream: T): T = js.native
   def resumeDrain(): Unit = js.native
 }
 

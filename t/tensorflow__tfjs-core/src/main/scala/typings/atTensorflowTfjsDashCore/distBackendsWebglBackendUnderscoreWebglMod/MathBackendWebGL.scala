@@ -6,6 +6,7 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreContextMod.GPGPUContext
 import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreMathMod.GPGPUProgram
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureData
 import typings.atTensorflowTfjsDashCore.distBackendsWebglTextureUnderscoreManagerMod.TextureManager
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
@@ -61,6 +62,7 @@ class MathBackendWebGL () extends KernelBackend {
   var packTensor: js.Any = js.native
   var packedBinaryOp: js.Any = js.native
   var packedReshape: js.Any = js.native
+  var packedUnaryOp: js.Any = js.native
   var pendingDisposal: js.Any = js.native
   var pendingRead: js.Any = js.native
   var programTimersStack: js.Any = js.native
@@ -95,6 +97,11 @@ class MathBackendWebGL () extends KernelBackend {
   def depthToSpace_NCHW(x: Tensor4D, blockSize: Double, dataFormat: NCHW): Tensor4D = js.native
   @JSName("depthToSpace")
   def depthToSpace_NHWC(x: Tensor4D, blockSize: Double, dataFormat: NHWC): Tensor4D = js.native
+  /**
+    * Returns internal information for the specific data bucket. Used in unit
+    * tests.
+    */
+  def getDataInfo(dataId: DataId): TextureData = js.native
   def getGPGPUContext(): GPGPUContext = js.native
   def getTexture(dataId: DataId): WebGLTexture = js.native
   def getTextureManager(): TextureManager = js.native

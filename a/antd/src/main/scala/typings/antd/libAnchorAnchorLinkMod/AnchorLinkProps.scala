@@ -10,7 +10,7 @@ trait AnchorLinkProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var href: String
   var prefixCls: js.UndefOr[String] = js.undefined
-  var target: String
+  var target: js.UndefOr[String] = js.undefined
   var title: ReactNode
 }
 
@@ -18,16 +18,17 @@ object AnchorLinkProps {
   @scala.inline
   def apply(
     href: String,
-    target: String,
     title: ReactNode,
     children: ReactNode = null,
     className: String = null,
-    prefixCls: String = null
+    prefixCls: String = null,
+    target: String = null
   ): AnchorLinkProps = {
-    val __obj = js.Dynamic.literal(href = href, target = target, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href, title = title.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[AnchorLinkProps]
   }
 }

@@ -14,7 +14,7 @@ object distOpsStridedUnderscoreSliceMod extends js.Object {
     /* x */ Tensor[Rank] | TensorLike, 
     /* begin */ js.Array[Double], 
     /* end */ js.Array[Double], 
-    /* strides */ js.Array[Double], 
+    /* strides */ js.UndefOr[js.Array[Double]], 
     /* beginMask */ js.UndefOr[Double], 
     /* endMask */ js.UndefOr[Double], 
     /* ellipsisMask */ js.UndefOr[Double], 

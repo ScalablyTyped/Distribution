@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flickity"
-version := "2.2-dt-20190813Z-e74068"
+version := "2.2-dt-20190904Z-08ee8f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

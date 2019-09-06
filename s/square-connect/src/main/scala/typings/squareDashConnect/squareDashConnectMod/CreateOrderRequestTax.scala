@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CreateOrderRequestTaxNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +26,6 @@ class CreateOrderRequestTax () extends js.Object {
     * Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[TaxTypeEnum] = js.native
 }
 

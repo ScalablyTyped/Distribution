@@ -86,6 +86,10 @@ trait RatingProps extends js.Object {
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any
   ] = js.undefined
   /**
+    * Color used for the background
+    */
+  var tintColor: js.UndefOr[String] = js.undefined
+  /**
     * Graphic used for represent a rating
     *
     * Default is 'star'
@@ -110,6 +114,7 @@ object RatingProps {
     showRating: js.UndefOr[Boolean] = js.undefined,
     startingValue: Int | Double = null,
     style: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any = null,
+    tintColor: String = null,
     `type`: star | rocket | bell | heart | custom = null
   ): RatingProps = {
     val __obj = js.Dynamic.literal()
@@ -127,6 +132,7 @@ object RatingProps {
     if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating)
     if (startingValue != null) __obj.updateDynamic("startingValue")(startingValue.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingProps]
   }

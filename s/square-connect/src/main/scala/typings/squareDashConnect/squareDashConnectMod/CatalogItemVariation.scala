@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class CatalogItemVariation () extends js.Object {
   /**
     * If the inventory quantity for the variation is less than or equal to this value and `inventory_alert_type` is
-    * `LOW_QUANTITY`, the variation displays an alert in the merchant dashboard.  This value is always an integer.
+    * `LOW_QUANTITY`, the variation displays an alert in the merchant dashboard. This value is always an integer.
     */
   var inventory_alert_threshold: js.UndefOr[Double] = js.native
   /**
@@ -24,9 +24,17 @@ class CatalogItemVariation () extends js.Object {
     */
   var item_id: js.UndefOr[String] = js.native
   /**
+    * List of item option values associated with this item variation. Listed in the same order as the item options of the parent item.
+    */
+  var item_option_values: js.UndefOr[js.Array[CatalogItemOptionValueForItemVariation]] = js.native
+  /**
     * Per-[location](#type-location) price and inventory overrides.
     */
   var location_overrides: js.UndefOr[js.Array[ItemVariationLocationOverrides]] = js.native
+  /**
+    * ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation. If left unset, the item will be sold in whole quantities.
+    */
+  var measurement_unit_id: js.UndefOr[String] = js.native
   /**
     * The item variation's name. Searchable. This field has max length of 255 Unicode code points.
     */

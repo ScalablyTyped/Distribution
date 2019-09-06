@@ -107,8 +107,8 @@ class V1Payment () extends js.Object {
     */
   var swedish_rounding_money: js.UndefOr[V1Money] = js.native
   /**
-    * The total of all taxes applied to the payment. This is always the sum of inclusive_tax_money and
-    * additive_tax_money.
+    * The total of all taxes applied to the payment.
+    * This is always the sum of inclusive_tax_money and additive_tax_money.
     */
   var tax_money: js.UndefOr[V1Money] = js.native
   /**

@@ -77,11 +77,13 @@ trait Nedb[G] extends EventEmitter {
     */
   def getCandidates(query: js.Any): Unit = js.native
   /**
-    * Insert a new document
+    * Insert one or more new documents
     * @param cb Optional callback, signature: err, insertedDoc
     */
   def insert[T /* <: G */](newDoc: T): Unit = js.native
   def insert[T /* <: G */](newDoc: T, cb: js.Function2[/* err */ Error, /* document */ T, Unit]): Unit = js.native
+  def insert[T /* <: G */](newDocs: js.Array[T]): Unit = js.native
+  def insert[T /* <: G */](newDocs: js.Array[T], cb: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit = js.native
   @JSName("listenerCount")
   def listenerCount_compactiondone(`type`: compactionDOTdone): Double = js.native
   @JSName("listeners")

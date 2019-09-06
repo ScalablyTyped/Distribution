@@ -65,7 +65,7 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
     */
   var disabled: Boolean = js.native
   /**
-    * A hint to the browser for which keyboard to display. Possible values are: `"none"` | `"text"` | `"tel"` | `"url"` | `"email"` | `"numeric"` | `"decimal"` | `"search"`.
+    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
   var inputmode: none | text | tel | url | email | numeric | decimal | search = js.native
   /**

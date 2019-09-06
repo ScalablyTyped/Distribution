@@ -9,6 +9,9 @@ trait PutConfigRuleRequest extends js.Object {
     * The rule that you want to add to your account.
     */
   var ConfigRule: typings.awsDashSdk.clientsConfigserviceMod.ConfigRule
+  /**
+    * An array of tag object.
+    */
   var Tags: js.UndefOr[TagsList] = js.undefined
 }
 

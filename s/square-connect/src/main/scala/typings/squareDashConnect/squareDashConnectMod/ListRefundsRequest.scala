@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.ListRefundsRequestNs.SortOrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListRefundsRequest () extends js.Object {
   /**
-    * The beginning of the requested reporting period, in RFC 3339 format. See [Date ranges](#dateranges) for details
-    * on date inclusivity/exclusivity. Default value: The current time minus one year.
+    * The beginning of the requested reporting period, in RFC 3339 format.
+    * See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.
+    * Default value: The current time minus one year.
     */
   var begin_time: js.UndefOr[String] = js.native
   /**

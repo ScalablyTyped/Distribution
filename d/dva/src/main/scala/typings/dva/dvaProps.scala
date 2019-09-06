@@ -1,5 +1,6 @@
 package typings.dva
 
+import typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +9,6 @@ trait dvaProps {
   @scala.inline
   def BrowserRouterProps: typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps
   type BrowserRouterProps = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps
-  @scala.inline
-  def ConnectedRouterProps: typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps.type = typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
-  type ConnectedRouterProps[State] = typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps[State]
   @scala.inline
   def HashRouterProps: typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps
   type HashRouterProps = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps
@@ -38,5 +36,8 @@ trait dvaProps {
   @scala.inline
   def SwitchProps: typings.reactDashRouter.reactDashRouterMod.SwitchProps.type = typings.reactDashRouter.reactDashRouterMod.SwitchProps
   type SwitchProps = typings.reactDashRouter.reactDashRouterMod.SwitchProps
+  @scala.inline
+  def routerReduxNsConnectedRouterProps: ConnectedRouterProps.type = typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
+  type routerReduxNsConnectedRouterProps[State] = ConnectedRouterProps[State]
 }
 

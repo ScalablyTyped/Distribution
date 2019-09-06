@@ -11,5 +11,11 @@ trait atRebassGridProps {
   @scala.inline
   def FlexProps: typings.atRebassGrid.atRebassGridMod.FlexProps.type = typings.atRebassGrid.atRebassGridMod.FlexProps
   type FlexProps = typings.atRebassGrid.atRebassGridMod.FlexProps
+  @scala.inline
+  def emotionModBoxProps: typings.atRebassGrid.atRebassGridMod.BoxProps.type = typings.atRebassGrid.atRebassGridMod.BoxProps
+  type emotionModBoxProps = typings.atRebassGrid.atRebassGridMod.BoxProps
+  @scala.inline
+  def emotionModFlexProps: typings.atRebassGrid.atRebassGridMod.FlexProps.type = typings.atRebassGrid.atRebassGridMod.FlexProps
+  type emotionModFlexProps = typings.atRebassGrid.atRebassGridMod.FlexProps
 }
 

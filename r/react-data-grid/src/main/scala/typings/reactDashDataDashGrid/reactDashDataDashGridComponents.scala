@@ -32,7 +32,7 @@ object reactDashDataDashGridComponents extends reactDashDataDashGridProps {
   @scala.inline
   def DropDownFormatter: ComponentType[js.Any] = js.constructorOf[typings.reactDashDataDashGrid.AdazzleReactDataGridPluginsNs.FormattersNs.DropDownFormatter].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def EditorBase[P, S]: ComponentType[P with EditorBaseProps] = js.constructorOf[typings.reactDashDataDashGrid.reactDashDataDashGridMod.editorsNs.EditorBase[P, S]].asInstanceOf[typings.react.reactMod.ComponentType[P with typings.reactDashDataDashGrid.AdazzleReactDataGridNs.EditorBaseProps]]
+  def EditorBase[P, S]: ComponentType[P with EditorBaseProps] = js.constructorOf[typings.reactDashDataDashGrid.AdazzleReactDataGridNs.ReactDataGridNs.editorsNs.EditorBase[P, S]].asInstanceOf[typings.react.reactMod.ComponentType[P with typings.reactDashDataDashGrid.AdazzleReactDataGridNs.EditorBaseProps]]
   @scala.inline
   def ImageFormatter: ComponentType[js.Any] = js.constructorOf[typings.reactDashDataDashGrid.AdazzleReactDataGridPluginsNs.FormattersNs.ImageFormatter].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -57,5 +57,7 @@ object reactDashDataDashGridComponents extends reactDashDataDashGridProps {
   def SubMenu: ComponentType[js.Any] = js.constructorOf[typings.reactDashDataDashGrid.AdazzleReactDataGridPluginsNs.MenuNs.SubMenu].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
   def Toolbar: ComponentType[js.Any] = js.constructorOf[typings.reactDashDataDashGrid.AdazzleReactDataGridPluginsNs.Toolbar].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  @scala.inline
+  def editorsNsEditorBase[P, S]: ComponentType[P with EditorBaseProps] = js.constructorOf[typings.reactDashDataDashGrid.reactDashDataDashGridMod.editorsNs.EditorBase[P, S]].asInstanceOf[typings.react.reactMod.ComponentType[P with typings.reactDashDataDashGrid.AdazzleReactDataGridNs.EditorBaseProps]]
 }
 

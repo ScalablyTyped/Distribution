@@ -24,9 +24,16 @@ trait XLSparkline extends js.Object {
     * @param {string} Pass the location range
     * @param {string} Pass the sparkline chart type
     * @param {Spreadsheet.SparklineOptions} Pass Object SparklineOptions.
+    * @param {number} Pass the sheetIndex
     * @returns {void}
     */
-  def createSparkline(dataRange: String, locationRange: String, `type`: String, options: SparklineOptions): Unit
+  def createSparkline(
+    dataRange: String,
+    locationRange: String,
+    `type`: String,
+    options: SparklineOptions,
+    sheetIndex: Double
+  ): Unit
 }
 
 object XLSparkline {
@@ -34,9 +41,9 @@ object XLSparkline {
   def apply(
     changePointColor: (String, js.Any, Double) => Unit,
     changeType: (String, String, Double) => Unit,
-    createSparkline: (String, String, String, SparklineOptions) => Unit
+    createSparkline: (String, String, String, SparklineOptions, Double) => Unit
   ): XLSparkline = {
-    val __obj = js.Dynamic.literal(changePointColor = js.Any.fromFunction3(changePointColor), changeType = js.Any.fromFunction3(changeType), createSparkline = js.Any.fromFunction4(createSparkline))
+    val __obj = js.Dynamic.literal(changePointColor = js.Any.fromFunction3(changePointColor), changeType = js.Any.fromFunction3(changeType), createSparkline = js.Any.fromFunction5(createSparkline))
   
     __obj.asInstanceOf[XLSparkline]
   }

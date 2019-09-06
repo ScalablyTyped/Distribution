@@ -5,6 +5,7 @@ import typings.pg.TypeofarrayParser
 import typings.pg.pgMod.ConnectionConfig
 import typings.pg.pgMod.Defaults
 import typings.pg.pgMod.PoolConfig
+import typings.pg.pgMod.QueryResultRow
 import typings.pgDashTypes.pgDashTypesMod.TypeParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,12 +48,12 @@ object rawNs extends js.Object {
   }
   
   @js.native
-  class Query ()
-    extends typings.pg.pgMod.Query {
+  class Query[R /* <: QueryResultRow */, I /* <: js.Array[_] */] ()
+    extends typings.pg.pgMod.Query[R, I] {
     def this(queryTextOrConfig: String) = this()
-    def this(queryTextOrConfig: typings.pg.pgMod.QueryConfig) = this()
-    def this(queryTextOrConfig: String, values: js.Array[_]) = this()
-    def this(queryTextOrConfig: typings.pg.pgMod.QueryConfig, values: js.Array[_]) = this()
+    def this(queryTextOrConfig: typings.pg.pgMod.QueryConfig[I]) = this()
+    def this(queryTextOrConfig: String, values: I) = this()
+    def this(queryTextOrConfig: typings.pg.pgMod.QueryConfig[I], values: I) = this()
   }
   
   val defaults: Defaults with typings.pg.pgMod.ClientConfig = js.native

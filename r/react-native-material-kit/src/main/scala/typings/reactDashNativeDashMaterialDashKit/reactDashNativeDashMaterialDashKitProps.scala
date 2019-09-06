@@ -18,9 +18,6 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashMaterialDashKitProps {
   @scala.inline
-  def IndeterminateProps: IndeterminateProgressProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
-  type IndeterminateProps = IndeterminateProgressProperties
-  @scala.inline
   def MKButtonProps: MKButtonProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKButtonProperties
   type MKButtonProps = MKButtonProperties
   @scala.inline
@@ -32,6 +29,9 @@ trait reactDashNativeDashMaterialDashKitProps {
   @scala.inline
   def MKProgressProps: MKProgressProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressProperties
   type MKProgressProps = MKProgressProperties
+  @scala.inline
+  def MKProgressNsIndeterminateProps: IndeterminateProgressProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
+  type MKProgressNsIndeterminateProps = IndeterminateProgressProperties
   @scala.inline
   def MKRadioButtonProps: MKRadioButtonProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties
   type MKRadioButtonProps = MKRadioButtonProperties

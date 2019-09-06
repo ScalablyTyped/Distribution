@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "firebase__storage"
-version := "0.3.10-a3d4e1"
+version := "0.3.11-a87942"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.4.3-d24fa6",
-  "org.scalablytyped" %%% "firebase__storage-types" % "0.3.3-f93345",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.25-2c8052",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.4.3-ce8c35",
+  "org.scalablytyped" %%% "firebase__storage-types" % "0.3.3-9b28f6",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.27-e10eca",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

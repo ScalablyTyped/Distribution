@@ -1,7 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
 import typings.squareDashConnect.squareDashConnectMod.CatalogTaxNs.CalculationPhaseEnum
-import typings.squareDashConnect.squareDashConnectMod.CatalogTaxNs.InclusionTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ class CatalogTax () extends js.Object {
   /**
     * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values.
     */
-  var inclusion_type: js.UndefOr[InclusionTypeEnum] = js.native
+  var inclusion_type: js.UndefOr[TaxTypeEnum] = js.native
   /**
     * The tax's name. Searchable. This field has max length of 255 Unicode code points.
     */

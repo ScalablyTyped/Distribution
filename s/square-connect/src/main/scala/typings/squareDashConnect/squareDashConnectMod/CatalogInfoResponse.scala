@@ -13,5 +13,9 @@ class CatalogInfoResponse () extends js.Object {
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   var limits: js.UndefOr[CatalogInfoResponseLimits] = js.native
+  /**
+    * Names and abbreviations for standard units.
+    */
+  var standard_unit_description_group: js.UndefOr[StandardUnitDescriptionGroup] = js.native
 }
 

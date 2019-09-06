@@ -4032,6 +4032,34 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait `AWS::ApiGateway::DomainName`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ApiGateway::Method`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ApiGateway::RestApi`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ApiGateway::Stage`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ApiGatewayV2::Api`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ApiGatewayV2::DomainName`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ApiGatewayV2::Stage`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait `AWS::AutoScaling::AutoScalingGroup`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
@@ -4092,6 +4120,14 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait `AWS::EC2::EgressOnlyInternetGateway`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::EC2::FlowLog`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait `AWS::EC2::Host`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
@@ -4104,11 +4140,19 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait `AWS::EC2::NatGateway`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait `AWS::EC2::NetworkAcl`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
   sealed trait `AWS::EC2::NetworkInterface`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::EC2::RegisteredHAInstance`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
@@ -4125,6 +4169,18 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `AWS::EC2::VPC`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::EC2::VPCEndpoint`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::EC2::VPCEndpointService`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::EC2::VPCPeeringConnection`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
@@ -4176,11 +4232,43 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait `AWS::Lambda::Alias`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait `AWS::Lambda::Function`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait `AWS::LicenseManager::LicenseConfiguration`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::MobileHub::Project`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::RDS::DBCluster`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::RDS::DBClusterParameterGroup`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::RDS::DBClusterSnapshot`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait `AWS::RDS::DBInstance`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::RDS::DBOptionGroup`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::RDS::DBParameterGroup`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
@@ -4224,6 +4312,10 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait `AWS::S3::AccountPublicAccessBlock`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait `AWS::S3::Bucket`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
@@ -4237,6 +4329,18 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `AWS::SSM::PatchCompliance`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ServiceCatalog::CloudFormationProduct`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ServiceCatalog::CloudFormationProvisionedProduct`
+    extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait `AWS::ServiceCatalog::Portfolio`
     extends typings.awsDashSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
@@ -14131,6 +14235,36 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait Manual extends _SnapshotType
+  
+  @js.native
+  sealed trait MapIterationAborted extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapIterationFailed extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapIterationStarted extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapIterationSucceeded extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapStateAborted extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapStateEntered extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapStateExited extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapStateFailed extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapStateStarted extends _HistoryEventType
+  
+  @js.native
+  sealed trait MapStateSucceeded extends _HistoryEventType
   
   @js.native
   sealed trait MarkedForReview extends _HITReviewStatus
@@ -29207,6 +29341,20 @@ object awsDashSdkStrings {
   @scala.inline
   def `AWS::ACM::Certificate`: `AWS::ACM::Certificate` = "AWS::ACM::Certificate".asInstanceOf[`AWS::ACM::Certificate`]
   @scala.inline
+  def `AWS::ApiGateway::DomainName`: `AWS::ApiGateway::DomainName` = "AWS::ApiGateway::DomainName".asInstanceOf[`AWS::ApiGateway::DomainName`]
+  @scala.inline
+  def `AWS::ApiGateway::Method`: `AWS::ApiGateway::Method` = "AWS::ApiGateway::Method".asInstanceOf[`AWS::ApiGateway::Method`]
+  @scala.inline
+  def `AWS::ApiGateway::RestApi`: `AWS::ApiGateway::RestApi` = "AWS::ApiGateway::RestApi".asInstanceOf[`AWS::ApiGateway::RestApi`]
+  @scala.inline
+  def `AWS::ApiGateway::Stage`: `AWS::ApiGateway::Stage` = "AWS::ApiGateway::Stage".asInstanceOf[`AWS::ApiGateway::Stage`]
+  @scala.inline
+  def `AWS::ApiGatewayV2::Api`: `AWS::ApiGatewayV2::Api` = "AWS::ApiGatewayV2::Api".asInstanceOf[`AWS::ApiGatewayV2::Api`]
+  @scala.inline
+  def `AWS::ApiGatewayV2::DomainName`: `AWS::ApiGatewayV2::DomainName` = "AWS::ApiGatewayV2::DomainName".asInstanceOf[`AWS::ApiGatewayV2::DomainName`]
+  @scala.inline
+  def `AWS::ApiGatewayV2::Stage`: `AWS::ApiGatewayV2::Stage` = "AWS::ApiGatewayV2::Stage".asInstanceOf[`AWS::ApiGatewayV2::Stage`]
+  @scala.inline
   def `AWS::AutoScaling::AutoScalingGroup`: `AWS::AutoScaling::AutoScalingGroup` = "AWS::AutoScaling::AutoScalingGroup".asInstanceOf[`AWS::AutoScaling::AutoScalingGroup`]
   @scala.inline
   def `AWS::AutoScaling::LaunchConfiguration`: `AWS::AutoScaling::LaunchConfiguration` = "AWS::AutoScaling::LaunchConfiguration".asInstanceOf[`AWS::AutoScaling::LaunchConfiguration`]
@@ -29237,15 +29385,23 @@ object awsDashSdkStrings {
   @scala.inline
   def `AWS::EC2::EIP`: `AWS::EC2::EIP` = "AWS::EC2::EIP".asInstanceOf[`AWS::EC2::EIP`]
   @scala.inline
+  def `AWS::EC2::EgressOnlyInternetGateway`: `AWS::EC2::EgressOnlyInternetGateway` = "AWS::EC2::EgressOnlyInternetGateway".asInstanceOf[`AWS::EC2::EgressOnlyInternetGateway`]
+  @scala.inline
+  def `AWS::EC2::FlowLog`: `AWS::EC2::FlowLog` = "AWS::EC2::FlowLog".asInstanceOf[`AWS::EC2::FlowLog`]
+  @scala.inline
   def `AWS::EC2::Host`: `AWS::EC2::Host` = "AWS::EC2::Host".asInstanceOf[`AWS::EC2::Host`]
   @scala.inline
   def `AWS::EC2::Instance`: `AWS::EC2::Instance` = "AWS::EC2::Instance".asInstanceOf[`AWS::EC2::Instance`]
   @scala.inline
   def `AWS::EC2::InternetGateway`: `AWS::EC2::InternetGateway` = "AWS::EC2::InternetGateway".asInstanceOf[`AWS::EC2::InternetGateway`]
   @scala.inline
+  def `AWS::EC2::NatGateway`: `AWS::EC2::NatGateway` = "AWS::EC2::NatGateway".asInstanceOf[`AWS::EC2::NatGateway`]
+  @scala.inline
   def `AWS::EC2::NetworkAcl`: `AWS::EC2::NetworkAcl` = "AWS::EC2::NetworkAcl".asInstanceOf[`AWS::EC2::NetworkAcl`]
   @scala.inline
   def `AWS::EC2::NetworkInterface`: `AWS::EC2::NetworkInterface` = "AWS::EC2::NetworkInterface".asInstanceOf[`AWS::EC2::NetworkInterface`]
+  @scala.inline
+  def `AWS::EC2::RegisteredHAInstance`: `AWS::EC2::RegisteredHAInstance` = "AWS::EC2::RegisteredHAInstance".asInstanceOf[`AWS::EC2::RegisteredHAInstance`]
   @scala.inline
   def `AWS::EC2::RouteTable`: `AWS::EC2::RouteTable` = "AWS::EC2::RouteTable".asInstanceOf[`AWS::EC2::RouteTable`]
   @scala.inline
@@ -29254,6 +29410,12 @@ object awsDashSdkStrings {
   def `AWS::EC2::Subnet`: `AWS::EC2::Subnet` = "AWS::EC2::Subnet".asInstanceOf[`AWS::EC2::Subnet`]
   @scala.inline
   def `AWS::EC2::VPC`: `AWS::EC2::VPC` = "AWS::EC2::VPC".asInstanceOf[`AWS::EC2::VPC`]
+  @scala.inline
+  def `AWS::EC2::VPCEndpoint`: `AWS::EC2::VPCEndpoint` = "AWS::EC2::VPCEndpoint".asInstanceOf[`AWS::EC2::VPCEndpoint`]
+  @scala.inline
+  def `AWS::EC2::VPCEndpointService`: `AWS::EC2::VPCEndpointService` = "AWS::EC2::VPCEndpointService".asInstanceOf[`AWS::EC2::VPCEndpointService`]
+  @scala.inline
+  def `AWS::EC2::VPCPeeringConnection`: `AWS::EC2::VPCPeeringConnection` = "AWS::EC2::VPCPeeringConnection".asInstanceOf[`AWS::EC2::VPCPeeringConnection`]
   @scala.inline
   def `AWS::EC2::VPNConnection`: `AWS::EC2::VPNConnection` = "AWS::EC2::VPNConnection".asInstanceOf[`AWS::EC2::VPNConnection`]
   @scala.inline
@@ -29279,9 +29441,25 @@ object awsDashSdkStrings {
   @scala.inline
   def `AWS::IAM::User`: `AWS::IAM::User` = "AWS::IAM::User".asInstanceOf[`AWS::IAM::User`]
   @scala.inline
+  def `AWS::Lambda::Alias`: `AWS::Lambda::Alias` = "AWS::Lambda::Alias".asInstanceOf[`AWS::Lambda::Alias`]
+  @scala.inline
   def `AWS::Lambda::Function`: `AWS::Lambda::Function` = "AWS::Lambda::Function".asInstanceOf[`AWS::Lambda::Function`]
   @scala.inline
+  def `AWS::LicenseManager::LicenseConfiguration`: `AWS::LicenseManager::LicenseConfiguration` = "AWS::LicenseManager::LicenseConfiguration".asInstanceOf[`AWS::LicenseManager::LicenseConfiguration`]
+  @scala.inline
+  def `AWS::MobileHub::Project`: `AWS::MobileHub::Project` = "AWS::MobileHub::Project".asInstanceOf[`AWS::MobileHub::Project`]
+  @scala.inline
+  def `AWS::RDS::DBCluster`: `AWS::RDS::DBCluster` = "AWS::RDS::DBCluster".asInstanceOf[`AWS::RDS::DBCluster`]
+  @scala.inline
+  def `AWS::RDS::DBClusterParameterGroup`: `AWS::RDS::DBClusterParameterGroup` = "AWS::RDS::DBClusterParameterGroup".asInstanceOf[`AWS::RDS::DBClusterParameterGroup`]
+  @scala.inline
+  def `AWS::RDS::DBClusterSnapshot`: `AWS::RDS::DBClusterSnapshot` = "AWS::RDS::DBClusterSnapshot".asInstanceOf[`AWS::RDS::DBClusterSnapshot`]
+  @scala.inline
   def `AWS::RDS::DBInstance`: `AWS::RDS::DBInstance` = "AWS::RDS::DBInstance".asInstanceOf[`AWS::RDS::DBInstance`]
+  @scala.inline
+  def `AWS::RDS::DBOptionGroup`: `AWS::RDS::DBOptionGroup` = "AWS::RDS::DBOptionGroup".asInstanceOf[`AWS::RDS::DBOptionGroup`]
+  @scala.inline
+  def `AWS::RDS::DBParameterGroup`: `AWS::RDS::DBParameterGroup` = "AWS::RDS::DBParameterGroup".asInstanceOf[`AWS::RDS::DBParameterGroup`]
   @scala.inline
   def `AWS::RDS::DBSecurityGroup`: `AWS::RDS::DBSecurityGroup` = "AWS::RDS::DBSecurityGroup".asInstanceOf[`AWS::RDS::DBSecurityGroup`]
   @scala.inline
@@ -29303,6 +29481,8 @@ object awsDashSdkStrings {
   @scala.inline
   def `AWS::Redshift::EventSubscription`: `AWS::Redshift::EventSubscription` = "AWS::Redshift::EventSubscription".asInstanceOf[`AWS::Redshift::EventSubscription`]
   @scala.inline
+  def `AWS::S3::AccountPublicAccessBlock`: `AWS::S3::AccountPublicAccessBlock` = "AWS::S3::AccountPublicAccessBlock".asInstanceOf[`AWS::S3::AccountPublicAccessBlock`]
+  @scala.inline
   def `AWS::S3::Bucket`: `AWS::S3::Bucket` = "AWS::S3::Bucket".asInstanceOf[`AWS::S3::Bucket`]
   @scala.inline
   def `AWS::SSM::AssociationCompliance`: `AWS::SSM::AssociationCompliance` = "AWS::SSM::AssociationCompliance".asInstanceOf[`AWS::SSM::AssociationCompliance`]
@@ -29310,6 +29490,12 @@ object awsDashSdkStrings {
   def `AWS::SSM::ManagedInstanceInventory`: `AWS::SSM::ManagedInstanceInventory` = "AWS::SSM::ManagedInstanceInventory".asInstanceOf[`AWS::SSM::ManagedInstanceInventory`]
   @scala.inline
   def `AWS::SSM::PatchCompliance`: `AWS::SSM::PatchCompliance` = "AWS::SSM::PatchCompliance".asInstanceOf[`AWS::SSM::PatchCompliance`]
+  @scala.inline
+  def `AWS::ServiceCatalog::CloudFormationProduct`: `AWS::ServiceCatalog::CloudFormationProduct` = "AWS::ServiceCatalog::CloudFormationProduct".asInstanceOf[`AWS::ServiceCatalog::CloudFormationProduct`]
+  @scala.inline
+  def `AWS::ServiceCatalog::CloudFormationProvisionedProduct`: `AWS::ServiceCatalog::CloudFormationProvisionedProduct` = "AWS::ServiceCatalog::CloudFormationProvisionedProduct".asInstanceOf[`AWS::ServiceCatalog::CloudFormationProvisionedProduct`]
+  @scala.inline
+  def `AWS::ServiceCatalog::Portfolio`: `AWS::ServiceCatalog::Portfolio` = "AWS::ServiceCatalog::Portfolio".asInstanceOf[`AWS::ServiceCatalog::Portfolio`]
   @scala.inline
   def `AWS::Shield::Protection`: `AWS::Shield::Protection` = "AWS::Shield::Protection".asInstanceOf[`AWS::Shield::Protection`]
   @scala.inline
@@ -33882,6 +34068,26 @@ object awsDashSdkStrings {
   def ManifestFile: ManifestFile = "ManifestFile".asInstanceOf[ManifestFile]
   @scala.inline
   def Manual: Manual = "Manual".asInstanceOf[Manual]
+  @scala.inline
+  def MapIterationAborted: MapIterationAborted = "MapIterationAborted".asInstanceOf[MapIterationAborted]
+  @scala.inline
+  def MapIterationFailed: MapIterationFailed = "MapIterationFailed".asInstanceOf[MapIterationFailed]
+  @scala.inline
+  def MapIterationStarted: MapIterationStarted = "MapIterationStarted".asInstanceOf[MapIterationStarted]
+  @scala.inline
+  def MapIterationSucceeded: MapIterationSucceeded = "MapIterationSucceeded".asInstanceOf[MapIterationSucceeded]
+  @scala.inline
+  def MapStateAborted: MapStateAborted = "MapStateAborted".asInstanceOf[MapStateAborted]
+  @scala.inline
+  def MapStateEntered: MapStateEntered = "MapStateEntered".asInstanceOf[MapStateEntered]
+  @scala.inline
+  def MapStateExited: MapStateExited = "MapStateExited".asInstanceOf[MapStateExited]
+  @scala.inline
+  def MapStateFailed: MapStateFailed = "MapStateFailed".asInstanceOf[MapStateFailed]
+  @scala.inline
+  def MapStateStarted: MapStateStarted = "MapStateStarted".asInstanceOf[MapStateStarted]
+  @scala.inline
+  def MapStateSucceeded: MapStateSucceeded = "MapStateSucceeded".asInstanceOf[MapStateSucceeded]
   @scala.inline
   def MarkedForReview: MarkedForReview = "MarkedForReview".asInstanceOf[MarkedForReview]
   @scala.inline

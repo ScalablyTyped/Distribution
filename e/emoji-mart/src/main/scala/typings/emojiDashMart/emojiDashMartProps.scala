@@ -2,6 +2,7 @@ package typings.emojiDashMart
 
 import typings.emojiDashMart.distDashEsComponentsCategoryMod.Props
 import typings.emojiDashMart.distDashEsComponentsEmojiNimbleDashEmojiMod.NimbleEmojiProps
+import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +11,6 @@ trait emojiDashMartProps {
   @scala.inline
   def CategoryProps: Props.type = typings.emojiDashMart.distDashEsComponentsCategoryMod.Props
   type CategoryProps = Props
-  @scala.inline
-  def EmojiProps: typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps.type = typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps
-  type EmojiProps = typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps
   @scala.inline
   def NimbleDashEmojiProps: NimbleEmojiProps.type = typings.emojiDashMart.distDashEsComponentsEmojiNimbleDashEmojiMod.NimbleEmojiProps
   type NimbleDashEmojiProps = NimbleEmojiProps
@@ -25,5 +23,8 @@ trait emojiDashMartProps {
   @scala.inline
   def PickerProps: typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PickerProps.type = typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PickerProps
   type PickerProps = typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PickerProps
+  @scala.inline
+  def distDashEsComponentsEmojiEmojiModEmojiProps: EmojiProps.type = typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps
+  type distDashEsComponentsEmojiEmojiModEmojiProps = EmojiProps
 }
 

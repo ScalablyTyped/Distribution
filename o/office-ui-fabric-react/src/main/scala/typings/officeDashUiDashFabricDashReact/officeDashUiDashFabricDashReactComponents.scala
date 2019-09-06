@@ -200,10 +200,10 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   def CalloutContentBase: ComponentType[ICalloutProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutContentDotBaseMod.CalloutContentBase].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps]]
   @scala.inline
-  def Check: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libCheckMod.Check.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Check: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.Check.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
   @scala.inline
-  def CheckBase: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libCheckMod.CheckBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  def CheckBase: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.CheckBase.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
   @scala.inline
   def Checkbox: ComponentType[ICheckboxProps] = typings.officeDashUiDashFabricDashReact.libCheckboxMod.^.Checkbox.asInstanceOf[typings.react.reactMod.ComponentType[
@@ -285,9 +285,6 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps]]
   @scala.inline
   def DelayedRender: ComponentType[IDelayedRenderProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libUtilitiesMod.DelayedRender].asInstanceOf[typings.react.reactMod.ComponentType[typings.atUifabricUtilities.libDelayedRenderMod.IDelayedRenderProps]]
-  @scala.inline
-  def DetailsColumn: ComponentType[IDetailsColumnProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnMod.DetailsColumn.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps]]
   @scala.inline
   def DetailsColumnBase: ComponentType[IDetailsColumnProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libDetailsListMod.DetailsColumnBase].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps]]
@@ -649,10 +646,10 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   def SelectionZone: ComponentType[ISelectionZoneProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libSelectionMod.SelectionZone].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps]]
   @scala.inline
-  def Separator: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libSeparatorMod.Separator.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Separator: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.Separator.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
   @scala.inline
-  def SeparatorBase: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libSeparatorMod.SeparatorBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  def SeparatorBase: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.SeparatorBase.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
   @scala.inline
   def Shimmer: ComponentType[IShimmerProps] = typings.officeDashUiDashFabricDashReact.libShimmerMod.^.Shimmer.asInstanceOf[typings.react.reactMod.ComponentType[
@@ -706,7 +703,7 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   def SpinnerBase: ComponentType[ISpinnerProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libSpinnerMod.SpinnerBase].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.ISpinnerProps]]
   @scala.inline
-  def StackItem: ComponentType[IStackItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  def StackItem: ComponentType[IStackItemProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.StackItem.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemDotTypesMod.IStackItemProps]]
   @scala.inline
   def Sticky: ComponentType[IStickyProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libStickyMod.Sticky].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -763,7 +760,7 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   def TeachingBubbleContentBase: ComponentType[ITeachingBubbleProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libTeachingBubbleMod.TeachingBubbleContentBase].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps]]
   @scala.inline
-  def Text: ComponentType[ITextProps] = typings.officeDashUiDashFabricDashReact.libComponentsTextTextMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Text: ComponentType[ITextProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.Text.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsTextTextDotTypesMod.ITextProps]]
   @scala.inline
   def TextField: ComponentType[ITextFieldProps] = typings.officeDashUiDashFabricDashReact.libTextFieldMod.^.TextField.asInstanceOf[typings.react.reactMod.ComponentType[
@@ -771,8 +768,6 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def TextFieldBase: ComponentType[ITextFieldProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libTextFieldMod.TextFieldBase].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps]]
-  @scala.inline
-  def ThemeProvider: ComponentType[IThemeProviderProps] = typings.officeDashUiDashFabricDashReact.libFoundationMod.ThemeProvider.asInstanceOf[typings.react.reactMod.ComponentType[typings.atUifabricFoundation.libThemeProviderMod.IThemeProviderProps]]
   @scala.inline
   def Toggle: ComponentType[IToggleProps] = typings.officeDashUiDashFabricDashReact.libToggleMod.^.Toggle.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotTypesMod.IToggleProps]]
@@ -792,10 +787,356 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   def TooltipHostBase: ComponentType[ITooltipHostProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libTooltipMod.TooltipHostBase].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps]]
   @scala.inline
-  def VerticalDivider: ComponentType[IVerticalDividerProps] = typings.officeDashUiDashFabricDashReact.libDividerMod.VerticalDivider.asInstanceOf[typings.react.reactMod.ComponentType[
+  def VerticalDivider: ComponentType[IVerticalDividerProps] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.^.VerticalDivider.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps]]
   @scala.inline
   def VirtualizedComboBox: ComponentType[IComboBoxProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComboBoxMod.VirtualizedComboBox].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsComboBoxComboBoxDotTypesMod.IComboBoxProps]]
+  @scala.inline
+  def libCheckModCheck: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libCheckMod.Check.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
+  @scala.inline
+  def libCheckModCheckBase: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libCheckMod.CheckBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
+  @scala.inline
+  def libChoiceGroupOptionModChoiceGroupOption: ComponentType[IChoiceGroupOptionProps] = typings.officeDashUiDashFabricDashReact.libChoiceGroupOptionMod.ChoiceGroupOption.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps]]
+  @scala.inline
+  def libComponentsAnnouncedAnnouncedModAnnounced: ComponentType[IAnnouncedProps] = typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedMod.Announced.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDotTypesMod.IAnnouncedProps]]
+  @scala.inline
+  def libComponentsBreadcrumbBreadcrumbModBreadcrumb: ComponentType[IBreadcrumbProps] = typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbMod.Breadcrumb.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps]]
+  @scala.inline
+  def libComponentsCalloutFocusTrapCalloutModFocusTrapCallout: ComponentType[IFocusTrapCalloutProps] = typings.officeDashUiDashFabricDashReact.libComponentsCalloutFocusTrapCalloutMod.FocusTrapCallout.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps]]
+  @scala.inline
+  def libComponentsCheckCheckDotBaseModCheckBase: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotBaseMod.CheckBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
+  @scala.inline
+  def libComponentsCheckCheckModCheck: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckMod.Check.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
+  @scala.inline
+  def libComponentsCheckModCheck: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libComponentsCheckMod.Check.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
+  @scala.inline
+  def libComponentsCheckModCheckBase: ComponentType[ICheckProps] = typings.officeDashUiDashFabricDashReact.libComponentsCheckMod.CheckBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps]]
+  @scala.inline
+  def libComponentsCheckboxCheckboxModCheckbox: ComponentType[ICheckboxProps] = typings.officeDashUiDashFabricDashReact.libComponentsCheckboxCheckboxMod.Checkbox.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCheckboxCheckboxDotTypesMod.ICheckboxProps]]
+  @scala.inline
+  def libComponentsChoiceGroupChoiceGroupModChoiceGroup: ComponentType[IChoiceGroupProps] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupMod.ChoiceGroup.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps]]
+  @scala.inline
+  def libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionModChoiceGroupOption: ComponentType[IChoiceGroupOptionProps] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionMod.ChoiceGroupOption.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps]]
+  @scala.inline
+  def libComponentsChoiceGroupChoiceGroupOptionModChoiceGroupOption: ComponentType[IChoiceGroupOptionProps] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionMod.ChoiceGroupOption.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps]]
+  @scala.inline
+  def libComponentsCoachmarkCoachmarkModCoachmark: ComponentType[ICoachmarkProps] = typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkCoachmarkMod.Coachmark.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps]]
+  @scala.inline
+  def libComponentsColorPickerColorPickerModColorPicker: ComponentType[IColorPickerProps] = typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerMod.ColorPicker.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps]]
+  @scala.inline
+  def libComponentsCommandBarCommandBarModCommandBar: ComponentType[ICommandBarProps] = typings.officeDashUiDashFabricDashReact.libComponentsCommandBarCommandBarMod.CommandBar.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsCommandBarCommandBarDotTypesMod.ICommandBarProps]]
+  @scala.inline
+  def libComponentsContextualMenuContextualMenuItemModContextualMenuItem: ComponentType[IContextualMenuItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemMod.ContextualMenuItem.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps]]
+  @scala.inline
+  def libComponentsContextualMenuContextualMenuModContextualMenu: ComponentType[IContextualMenuProps] = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuMod.ContextualMenu.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps]]
+  @scala.inline
+  def libComponentsDatePickerDatePickerModDatePicker: ComponentType[IDatePickerProps] = typings.officeDashUiDashFabricDashReact.libComponentsDatePickerDatePickerMod.DatePicker.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps]]
+  @scala.inline
+  def libComponentsDetailsListDetailsColumnModDetailsColumn: ComponentType[IDetailsColumnProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnMod.DetailsColumn.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps]]
+  @scala.inline
+  def libComponentsDetailsListDetailsHeaderModDetailsHeader: ComponentType[IDetailsHeaderBaseProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsHeaderMod.DetailsHeader.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsHeaderDotTypesMod.IDetailsHeaderBaseProps]]
+  @scala.inline
+  def libComponentsDetailsListDetailsListModDetailsList: ComponentType[IDetailsListProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListMod.DetailsList.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.IDetailsListProps]]
+  @scala.inline
+  def libComponentsDetailsListDetailsRowCheckModDetailsRowCheck: ComponentType[IDetailsRowCheckProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowCheckMod.DetailsRowCheck.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowCheckDotTypesMod.IDetailsRowCheckProps]]
+  @scala.inline
+  def libComponentsDetailsListDetailsRowModDetailsRow: ComponentType[IDetailsRowBaseProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowMod.DetailsRow.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsRowBaseProps]]
+  @scala.inline
+  def libComponentsDetailsListShimmeredDetailsListModShimmeredDetailsList: ComponentType[IShimmeredDetailsListProps] = typings.officeDashUiDashFabricDashReact.libComponentsDetailsListShimmeredDetailsListMod.ShimmeredDetailsList.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDetailsListShimmeredDetailsListDotTypesMod.IShimmeredDetailsListProps]]
+  @scala.inline
+  def libComponentsDialogDialogContentModDialogContent: ComponentType[IDialogContentProps] = typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentMod.DialogContent.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.IDialogContentProps]]
+  @scala.inline
+  def libComponentsDialogDialogFooterModDialogFooter: ComponentType[IDialogFooterProps] = typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogFooterMod.DialogFooter.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogFooterDotTypesMod.IDialogFooterProps]]
+  @scala.inline
+  def libComponentsDialogDialogModDialog: ComponentType[IDialogProps] = typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogMod.Dialog.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogDotTypesMod.IDialogProps]]
+  @scala.inline
+  def libComponentsDividerModVerticalDivider: ComponentType[IVerticalDividerProps] = typings.officeDashUiDashFabricDashReact.libComponentsDividerMod.VerticalDivider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps]]
+  @scala.inline
+  def libComponentsDividerVerticalDividerModVerticalDivider: ComponentType[IVerticalDividerProps] = typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerMod.VerticalDivider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardActionsModDocumentCardActions: ComponentType[IDocumentCardActionsProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardActionsMod.DocumentCardActions.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardActionsDotTypesMod.IDocumentCardActionsProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardActivityModDocumentCardActivity: ComponentType[IDocumentCardActivityProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardActivityMod.DocumentCardActivity.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardActivityDotTypesMod.IDocumentCardActivityProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardDetailsModDocumentCardDetails: ComponentType[IDocumentCardDetailsProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDetailsMod.DocumentCardDetails.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDetailsDotTypesMod.IDocumentCardDetailsProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardImageModDocumentCardImage: ComponentType[IDocumentCardImageProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardImageMod.DocumentCardImage.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardImageDotTypesMod.IDocumentCardImageProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardLocationModDocumentCardLocation: ComponentType[IDocumentCardLocationProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardLocationMod.DocumentCardLocation.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardLocationDotTypesMod.IDocumentCardLocationProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardLogoModDocumentCardLogo: ComponentType[IDocumentCardLogoProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardLogoMod.DocumentCardLogo.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardLogoDotTypesMod.IDocumentCardLogoProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardModDocumentCard: ComponentType[IDocumentCardProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardMod.DocumentCard.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.IDocumentCardProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardPreviewModDocumentCardPreview: ComponentType[IDocumentCardPreviewProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardPreviewMod.DocumentCardPreview.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardPreviewDotTypesMod.IDocumentCardPreviewProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardStatusModDocumentCardStatus: ComponentType[IDocumentCardStatusProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardStatusMod.DocumentCardStatus.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardStatusDotTypesMod.IDocumentCardStatusProps]]
+  @scala.inline
+  def libComponentsDocumentCardDocumentCardTitleModDocumentCardTitle: ComponentType[IDocumentCardTitleProps] = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardTitleMod.DocumentCardTitle.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardTitleDotTypesMod.IDocumentCardTitleProps]]
+  @scala.inline
+  def libComponentsDropdownDropdownModDropdown: ComponentType[IDropdownProps] = typings.officeDashUiDashFabricDashReact.libComponentsDropdownDropdownMod.Dropdown.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDropdownDropdownDotTypesMod.IDropdownProps]]
+  @scala.inline
+  def libComponentsFabricFabricModFabric: ComponentType[IFabricProps] = typings.officeDashUiDashFabricDashReact.libComponentsFabricFabricMod.Fabric.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsFabricFabricDotTypesMod.IFabricProps]]
+  @scala.inline
+  def libComponentsFacepileFacepileModFacepile: ComponentType[IFacepileProps] = typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileMod.Facepile.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.IFacepileProps]]
+  @scala.inline
+  def libComponentsGroupedListGroupFooterModGroupFooter: ComponentType[IGroupFooterProps] = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupFooterMod.GroupFooter.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupFooterDotTypesMod.IGroupFooterProps]]
+  @scala.inline
+  def libComponentsGroupedListGroupHeaderModGroupHeader: ComponentType[IGroupHeaderProps] = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHeaderMod.GroupHeader.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps]]
+  @scala.inline
+  def libComponentsGroupedListGroupShowAllModGroupShowAll: ComponentType[IGroupShowAllProps] = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupShowAllMod.GroupShowAll.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupShowAllDotTypesMod.IGroupShowAllProps]]
+  @scala.inline
+  def libComponentsGroupedListGroupSpacerModGroupSpacer: ComponentType[IGroupSpacerProps] = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupSpacerMod.GroupSpacer.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupSpacerDotTypesMod.IGroupSpacerProps]]
+  @scala.inline
+  def libComponentsGroupedListGroupedListModGroupedList: ComponentType[IGroupedListProps] = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListMod.GroupedList.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps]]
+  @scala.inline
+  def libComponentsHoverCardExpandingCardModExpandingCard: ComponentType[IExpandingCardProps] = typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardMod.ExpandingCard.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps]]
+  @scala.inline
+  def libComponentsHoverCardHoverCardModHoverCard: ComponentType[IHoverCardProps] = typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardMod.HoverCard.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps]]
+  @scala.inline
+  def libComponentsHoverCardPlainCardPlainCardModPlainCard: ComponentType[IPlainCardProps] = typings.officeDashUiDashFabricDashReact.libComponentsHoverCardPlainCardPlainCardMod.PlainCard.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsHoverCardPlainCardPlainCardDotTypesMod.IPlainCardProps]]
+  @scala.inline
+  def libComponentsIconFontIconModFontIcon: ComponentType[IFontIconProps] = typings.officeDashUiDashFabricDashReact.libComponentsIconFontIconMod.FontIcon.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IFontIconProps]]
+  @scala.inline
+  def libComponentsIconIconModIcon: ComponentType[IIconProps] = typings.officeDashUiDashFabricDashReact.libComponentsIconIconMod.Icon.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps]]
+  @scala.inline
+  def libComponentsIconImageIconModImageIcon: ComponentType[IImageIconProps] = typings.officeDashUiDashFabricDashReact.libComponentsIconImageIconMod.ImageIcon.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IImageIconProps]]
+  @scala.inline
+  def libComponentsImageImageModImage: ComponentType[IImageProps] = typings.officeDashUiDashFabricDashReact.libComponentsImageImageMod.Image.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.IImageProps]]
+  @scala.inline
+  def libComponentsKeytipLayerKeytipLayerModKeytipLayer: ComponentType[IKeytipLayerProps] = typings.officeDashUiDashFabricDashReact.libComponentsKeytipLayerKeytipLayerMod.KeytipLayer.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsKeytipLayerKeytipLayerDotTypesMod.IKeytipLayerProps]]
+  @scala.inline
+  def libComponentsLabelLabelModLabel: ComponentType[ILabelProps] = typings.officeDashUiDashFabricDashReact.libComponentsLabelLabelMod.Label.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsLabelLabelDotTypesMod.ILabelProps]]
+  @scala.inline
+  def libComponentsLayerLayerModLayer: ComponentType[ILayerProps] = typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerMod.Layer.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotTypesMod.ILayerProps]]
+  @scala.inline
+  def libComponentsLinkLinkModLink: ComponentType[ILinkProps] = typings.officeDashUiDashFabricDashReact.libComponentsLinkLinkMod.Link.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsLinkLinkDotTypesMod.ILinkProps]]
+  @scala.inline
+  def libComponentsMarqueeSelectionMarqueeSelectionModMarqueeSelection: ComponentType[IMarqueeSelectionProps] = typings.officeDashUiDashFabricDashReact.libComponentsMarqueeSelectionMarqueeSelectionMod.MarqueeSelection.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps]]
+  @scala.inline
+  def libComponentsMessageBarMessageBarModMessageBar: ComponentType[IMessageBarProps] = typings.officeDashUiDashFabricDashReact.libComponentsMessageBarMessageBarMod.MessageBar.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps]]
+  @scala.inline
+  def libComponentsModalModalModModal: ComponentType[IModalProps] = typings.officeDashUiDashFabricDashReact.libComponentsModalModalMod.Modal.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsModalModalDotTypesMod.IModalProps]]
+  @scala.inline
+  def libComponentsNavNavModNav: ComponentType[INavProps] = typings.officeDashUiDashFabricDashReact.libComponentsNavNavMod.Nav.asInstanceOf[typings.react.reactMod.ComponentType[typings.officeDashUiDashFabricDashReact.libComponentsNavNavDotTypesMod.INavProps]]
+  @scala.inline
+  def libComponentsOverflowSetOverflowSetModOverflowSet: ComponentType[IOverflowSetProps] = typings.officeDashUiDashFabricDashReact.libComponentsOverflowSetOverflowSetMod.OverflowSet.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsOverflowSetOverflowSetDotTypesMod.IOverflowSetProps]]
+  @scala.inline
+  def libComponentsOverlayOverlayModOverlay: ComponentType[IOverlayProps] = typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayMod.Overlay.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotTypesMod.IOverlayProps]]
+  @scala.inline
+  def libComponentsPanelPanelModPanel: ComponentType[IPanelProps] = typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelMod.Panel.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelDotTypesMod.IPanelProps]]
+  @scala.inline
+  def libComponentsPersonaPersonaCoinPersonaCoinModPersonaCoin: ComponentType[IPersonaCoinProps] = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaCoinPersonaCoinMod.PersonaCoin.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps]]
+  @scala.inline
+  def libComponentsPersonaPersonaModPersona: ComponentType[IPersonaProps] = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaMod.Persona.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps]]
+  @scala.inline
+  def libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemModPeoplePickerItem: ComponentType[IPeoplePickerItemSelectedProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemMod.PeoplePickerItem.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps]]
+  @scala.inline
+  def libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemModPeoplePickerItemBase: ComponentType[IPeoplePickerItemSelectedProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemMod.asInstanceOf[js.Dynamic].selectDynamic("PeoplePickerItemBase").asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps]]
+  @scala.inline
+  def libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemSuggestionModPeoplePickerItemSuggestion: ComponentType[IPeoplePickerItemSuggestionProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemSuggestionMod.PeoplePickerItemSuggestion.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSuggestionProps]]
+  @scala.inline
+  def libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemSuggestionModPeoplePickerItemSuggestionBase: ComponentType[IPeoplePickerItemSuggestionProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemSuggestionMod.asInstanceOf[js.Dynamic].selectDynamic("PeoplePickerItemSuggestionBase").asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSuggestionProps]]
+  @scala.inline
+  def libComponentsPickersTagPickerTagItemModTagItem: ComponentType[ITagItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagItemMod.TagItem.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps]]
+  @scala.inline
+  def libComponentsPickersTagPickerTagItemModTagItemBase: ComponentType[ITagItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagItemMod.asInstanceOf[js.Dynamic].selectDynamic("TagItemBase").asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps]]
+  @scala.inline
+  def libComponentsPickersTagPickerTagItemSuggestionModTagItemSuggestion: ComponentType[ITagItemSuggestionProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagItemSuggestionMod.TagItemSuggestion.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps]]
+  @scala.inline
+  def libComponentsPickersTagPickerTagItemSuggestionModTagItemSuggestionBase: ComponentType[ITagItemSuggestionProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagItemSuggestionMod.asInstanceOf[js.Dynamic].selectDynamic("TagItemSuggestionBase").asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps]]
+  @scala.inline
+  def libComponentsPivotPivotModPivot: ComponentType[IPivotProps] = typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotMod.Pivot.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.IPivotProps]]
+  @scala.inline
+  def libComponentsProgressIndicatorProgressIndicatorModProgressIndicator: ComponentType[IProgressIndicatorProps] = typings.officeDashUiDashFabricDashReact.libComponentsProgressIndicatorProgressIndicatorMod.ProgressIndicator.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsProgressIndicatorProgressIndicatorDotTypesMod.IProgressIndicatorProps]]
+  @scala.inline
+  def libComponentsRatingRatingModRating: ComponentType[IRatingProps] = typings.officeDashUiDashFabricDashReact.libComponentsRatingRatingMod.Rating.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsRatingRatingDotTypesMod.IRatingProps]]
+  @scala.inline
+  def libComponentsScrollablePaneScrollablePaneModScrollablePane: ComponentType[IScrollablePaneProps] = typings.officeDashUiDashFabricDashReact.libComponentsScrollablePaneScrollablePaneMod.ScrollablePane.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps]]
+  @scala.inline
+  def libComponentsSearchBoxSearchBoxModSearchBox: ComponentType[ISearchBoxProps] = typings.officeDashUiDashFabricDashReact.libComponentsSearchBoxSearchBoxMod.SearchBox.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps]]
+  @scala.inline
+  def libComponentsSeparatorModSeparator: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libComponentsSeparatorMod.Separator.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
+  @scala.inline
+  def libComponentsSeparatorModSeparatorBase: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libComponentsSeparatorMod.SeparatorBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
+  @scala.inline
+  def libComponentsSeparatorSeparatorDotBaseModSeparatorBase: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotBaseMod.SeparatorBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
+  @scala.inline
+  def libComponentsSeparatorSeparatorModSeparator: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorMod.Separator.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerCircleShimmerCircleDotBaseModShimmerCircleBase: ComponentType[IShimmerCircleProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerCircleShimmerCircleDotBaseMod.ShimmerCircleBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerCircleShimmerCircleDotTypesMod.IShimmerCircleProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerCircleShimmerCircleModShimmerCircle: ComponentType[IShimmerCircleProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerCircleShimmerCircleMod.ShimmerCircle.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerCircleShimmerCircleDotTypesMod.IShimmerCircleProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotBaseModShimmerElementsGroupBase: ComponentType[IShimmerElementsGroupProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotBaseMod.ShimmerElementsGroupBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerElementsGroupShimmerElementsGroupModShimmerElementsGroup: ComponentType[IShimmerElementsGroupProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupMod.ShimmerElementsGroup.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerGapShimmerGapDotBaseModShimmerGapBase: ComponentType[IShimmerGapProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerGapShimmerGapDotBaseMod.ShimmerGapBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerGapShimmerGapDotTypesMod.IShimmerGapProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerGapShimmerGapModShimmerGap: ComponentType[IShimmerGapProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerGapShimmerGapMod.ShimmerGap.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerGapShimmerGapDotTypesMod.IShimmerGapProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerLineShimmerLineDotBaseModShimmerLineBase: ComponentType[IShimmerLineProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerLineShimmerLineDotBaseMod.ShimmerLineBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerLineShimmerLineDotTypesMod.IShimmerLineProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerLineShimmerLineModShimmerLine: ComponentType[IShimmerLineProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerLineShimmerLineMod.ShimmerLine.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerLineShimmerLineDotTypesMod.IShimmerLineProps]]
+  @scala.inline
+  def libComponentsShimmerShimmerModShimmer: ComponentType[IShimmerProps] = typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerMod.Shimmer.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.IShimmerProps]]
+  @scala.inline
+  def libComponentsSliderSliderModSlider: ComponentType[ISliderProps] = typings.officeDashUiDashFabricDashReact.libComponentsSliderSliderMod.Slider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSliderSliderDotTypesMod.ISliderProps]]
+  @scala.inline
+  def libComponentsSpinnerSpinnerModSpinner: ComponentType[ISpinnerProps] = typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerMod.Spinner.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.ISpinnerProps]]
+  @scala.inline
+  def libComponentsStackModStackItem: ComponentType[IStackItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsStackMod.StackItem.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemDotTypesMod.IStackItemProps]]
+  @scala.inline
+  def libComponentsStackStackItemStackItemModStackItem: ComponentType[IStackItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemDotTypesMod.IStackItemProps]]
+  @scala.inline
+  def libComponentsSwatchColorPickerColorPickerGridCellModColorPickerGridCell: ComponentType[IColorPickerGridCellProps] = typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerColorPickerGridCellMod.ColorPickerGridCell.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerColorPickerGridCellDotTypesMod.IColorPickerGridCellProps]]
+  @scala.inline
+  def libComponentsSwatchColorPickerSwatchColorPickerModSwatchColorPicker: ComponentType[ISwatchColorPickerProps] = typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerSwatchColorPickerMod.SwatchColorPicker.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps]]
+  @scala.inline
+  def libComponentsTeachingBubbleTeachingBubbleContentModTeachingBubbleContent: ComponentType[ITeachingBubbleProps] = typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleContentMod.TeachingBubbleContent.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps]]
+  @scala.inline
+  def libComponentsTeachingBubbleTeachingBubbleModTeachingBubble: ComponentType[ITeachingBubbleProps] = typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleMod.TeachingBubble.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps]]
+  @scala.inline
+  def libComponentsTextFieldTextFieldModTextField: ComponentType[ITextFieldProps] = typings.officeDashUiDashFabricDashReact.libComponentsTextFieldTextFieldMod.TextField.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps]]
+  @scala.inline
+  def libComponentsTextModText: ComponentType[ITextProps] = typings.officeDashUiDashFabricDashReact.libComponentsTextMod.Text.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTextTextDotTypesMod.ITextProps]]
+  @scala.inline
+  def libComponentsTextTextModText: ComponentType[ITextProps] = typings.officeDashUiDashFabricDashReact.libComponentsTextTextMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTextTextDotTypesMod.ITextProps]]
+  @scala.inline
+  def libComponentsToggleToggleModToggle: ComponentType[IToggleProps] = typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleMod.Toggle.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotTypesMod.IToggleProps]]
+  @scala.inline
+  def libComponentsTooltipTooltipHostModTooltipHost: ComponentType[ITooltipHostProps] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostMod.TooltipHost.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps]]
+  @scala.inline
+  def libComponentsTooltipTooltipModTooltip: ComponentType[ITooltipProps] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipMod.Tooltip.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.ITooltipProps]]
+  @scala.inline
+  def libDividerModVerticalDivider: ComponentType[IVerticalDividerProps] = typings.officeDashUiDashFabricDashReact.libDividerMod.VerticalDivider.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps]]
+  @scala.inline
+  def libFoundationModThemeProvider: ComponentType[IThemeProviderProps] = typings.officeDashUiDashFabricDashReact.libFoundationMod.ThemeProvider.asInstanceOf[typings.react.reactMod.ComponentType[typings.atUifabricFoundation.libThemeProviderMod.IThemeProviderProps]]
+  @scala.inline
+  def libSeparatorModSeparator: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libSeparatorMod.Separator.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
+  @scala.inline
+  def libSeparatorModSeparatorBase: ComponentType[ISeparatorProps] = typings.officeDashUiDashFabricDashReact.libSeparatorMod.SeparatorBase.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps]]
+  @scala.inline
+  def libStackModStackItem: ComponentType[IStackItemProps] = typings.officeDashUiDashFabricDashReact.libStackMod.StackItem.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemDotTypesMod.IStackItemProps]]
+  @scala.inline
+  def libTextModText: ComponentType[ITextProps] = typings.officeDashUiDashFabricDashReact.libTextMod.Text.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libComponentsTextTextDotTypesMod.ITextProps]]
+  @scala.inline
+  def libUtilitiesGridGridModGrid: ComponentType[IGridProps] = typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridMod.Grid.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridDotTypesMod.IGridProps]]
 }
 

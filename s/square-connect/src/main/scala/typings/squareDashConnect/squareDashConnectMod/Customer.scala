@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CustomerNs.CreationSourceEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,7 @@ class Customer () extends js.Object {
     * A creation source represents the method used to create the customer profile.
     * See [CustomerCreationSource](#type-customercreationsource) for possible values.
     */
-  var creation_source: js.UndefOr[CreationSourceEnum] = js.native
+  var creation_source: js.UndefOr[CustomerSourceEnum] = js.native
   /**
     * The customer's email address.
     */

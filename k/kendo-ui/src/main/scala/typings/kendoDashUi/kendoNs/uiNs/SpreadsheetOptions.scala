@@ -8,8 +8,13 @@ trait SpreadsheetOptions extends js.Object {
   var activeSheet: js.UndefOr[String] = js.undefined
   var change: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeEvent, Unit]] = js.undefined
   var changeFormat: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeFormatEvent, Unit]] = js.undefined
+  var changing: js.UndefOr[js.Function1[/* e */ SpreadsheetChangingEvent, Unit]] = js.undefined
   var columnWidth: js.UndefOr[Double] = js.undefined
   var columns: js.UndefOr[Double] = js.undefined
+  var copy: js.UndefOr[js.Function1[/* e */ SpreadsheetCopyEvent, Unit]] = js.undefined
+  var cut: js.UndefOr[js.Function1[/* e */ SpreadsheetCutEvent, Unit]] = js.undefined
+  var dataBinding: js.UndefOr[js.Function1[/* e */ SpreadsheetDataBindingEvent, Unit]] = js.undefined
+  var dataBound: js.UndefOr[js.Function1[/* e */ SpreadsheetDataBoundEvent, Unit]] = js.undefined
   var defaultCellStyle: js.UndefOr[SpreadsheetDefaultCellStyle] = js.undefined
   var deleteColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetDeleteColumnEvent, Unit]] = js.undefined
   var deleteRow: js.UndefOr[js.Function1[/* e */ SpreadsheetDeleteRowEvent, Unit]] = js.undefined
@@ -24,6 +29,7 @@ trait SpreadsheetOptions extends js.Object {
   var insertRow: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertRowEvent, Unit]] = js.undefined
   var insertSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertSheetEvent, Unit]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
+  var paste: js.UndefOr[js.Function1[/* e */ SpreadsheetPasteEvent, Unit]] = js.undefined
   var pdf: js.UndefOr[SpreadsheetPdf] = js.undefined
   var pdfExport: js.UndefOr[js.Function1[/* e */ SpreadsheetPdfExportEvent, Unit]] = js.undefined
   var removeSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetRemoveSheetEvent, Unit]] = js.undefined
@@ -46,8 +52,13 @@ object SpreadsheetOptions {
     activeSheet: String = null,
     change: /* e */ SpreadsheetChangeEvent => Unit = null,
     changeFormat: /* e */ SpreadsheetChangeFormatEvent => Unit = null,
+    changing: /* e */ SpreadsheetChangingEvent => Unit = null,
     columnWidth: Int | Double = null,
     columns: Int | Double = null,
+    copy: /* e */ SpreadsheetCopyEvent => Unit = null,
+    cut: /* e */ SpreadsheetCutEvent => Unit = null,
+    dataBinding: /* e */ SpreadsheetDataBindingEvent => Unit = null,
+    dataBound: /* e */ SpreadsheetDataBoundEvent => Unit = null,
     defaultCellStyle: SpreadsheetDefaultCellStyle = null,
     deleteColumn: /* e */ SpreadsheetDeleteColumnEvent => Unit = null,
     deleteRow: /* e */ SpreadsheetDeleteRowEvent => Unit = null,
@@ -62,6 +73,7 @@ object SpreadsheetOptions {
     insertRow: /* e */ SpreadsheetInsertRowEvent => Unit = null,
     insertSheet: /* e */ SpreadsheetInsertSheetEvent => Unit = null,
     name: String = null,
+    paste: /* e */ SpreadsheetPasteEvent => Unit = null,
     pdf: SpreadsheetPdf = null,
     pdfExport: /* e */ SpreadsheetPdfExportEvent => Unit = null,
     removeSheet: /* e */ SpreadsheetRemoveSheetEvent => Unit = null,
@@ -81,8 +93,13 @@ object SpreadsheetOptions {
     if (activeSheet != null) __obj.updateDynamic("activeSheet")(activeSheet)
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (changeFormat != null) __obj.updateDynamic("changeFormat")(js.Any.fromFunction1(changeFormat))
+    if (changing != null) __obj.updateDynamic("changing")(js.Any.fromFunction1(changing))
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction1(copy))
+    if (cut != null) __obj.updateDynamic("cut")(js.Any.fromFunction1(cut))
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (defaultCellStyle != null) __obj.updateDynamic("defaultCellStyle")(defaultCellStyle)
     if (deleteColumn != null) __obj.updateDynamic("deleteColumn")(js.Any.fromFunction1(deleteColumn))
     if (deleteRow != null) __obj.updateDynamic("deleteRow")(js.Any.fromFunction1(deleteRow))
@@ -97,6 +114,7 @@ object SpreadsheetOptions {
     if (insertRow != null) __obj.updateDynamic("insertRow")(js.Any.fromFunction1(insertRow))
     if (insertSheet != null) __obj.updateDynamic("insertSheet")(js.Any.fromFunction1(insertSheet))
     if (name != null) __obj.updateDynamic("name")(name)
+    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction1(paste))
     if (pdf != null) __obj.updateDynamic("pdf")(pdf)
     if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
     if (removeSheet != null) __obj.updateDynamic("removeSheet")(js.Any.fromFunction1(removeSheet))

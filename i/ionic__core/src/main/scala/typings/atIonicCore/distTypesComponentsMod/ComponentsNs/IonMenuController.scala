@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.ComponentsNs
 
-import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuControllerI
 import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuI
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonMenuElement
 import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IonMenuController extends js.Object {
-  def _getInstance(): js.Promise[MenuControllerI] = js.native
   /**
     * Close the menu. If a menu is specified, it will close that menu. If no menu is specified, then it will close any menu that is open. If it does not find any open menus, it will return `false`.
     * @param menu The menuId or side of the menu to close.

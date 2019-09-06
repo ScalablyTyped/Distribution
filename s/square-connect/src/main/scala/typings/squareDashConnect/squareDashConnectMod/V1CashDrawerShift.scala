@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1CashDrawerShiftNs.EventTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +36,7 @@ class V1CashDrawerShift () extends js.Object {
     */
   var closing_employee_id: js.UndefOr[String] = js.native
   /**
-    * The time when the timecard was created, in ISO 8601 format.
+    * A description of the cash drawer shift.
     */
   var description: js.UndefOr[String] = js.native
   /**
@@ -57,9 +56,9 @@ class V1CashDrawerShift () extends js.Object {
     */
   var ending_employee_id: js.UndefOr[String] = js.native
   /**
-    * The shift's current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values
+    * The shift's current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values.
     */
-  var event_type: js.UndefOr[EventTypeEnum] = js.native
+  var event_type: js.UndefOr[String] = js.native
   /**
     * All of the events (payments, refunds, and so on) that involved the cash drawer during the shift.
     */

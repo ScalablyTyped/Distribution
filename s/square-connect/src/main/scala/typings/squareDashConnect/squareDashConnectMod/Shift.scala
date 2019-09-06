@@ -27,7 +27,7 @@ class Shift () extends js.Object {
     */
   var end_at: js.UndefOr[String] = js.native
   /**
-    * UUID for this object
+    * UUID for this object.
     */
   var id: js.UndefOr[String] = js.native
   /**

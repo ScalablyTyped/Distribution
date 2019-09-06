@@ -10,6 +10,21 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeProps {
   @scala.inline
+  def ARTNsClippingRectangleProps: ARTClippingRectangleProps.type = typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
+  type ARTNsClippingRectangleProps = ARTClippingRectangleProps
+  @scala.inline
+  def ARTNsGroupProps: ARTGroupProps.type = typings.reactDashNative.reactDashNativeMod.ARTGroupProps
+  type ARTNsGroupProps = ARTGroupProps
+  @scala.inline
+  def ARTNsShapeProps: ARTShapeProps.type = typings.reactDashNative.reactDashNativeMod.ARTShapeProps
+  type ARTNsShapeProps = ARTShapeProps
+  @scala.inline
+  def ARTNsSurfaceProps: ARTSurfaceProps.type = typings.reactDashNative.reactDashNativeMod.ARTSurfaceProps
+  type ARTNsSurfaceProps = ARTSurfaceProps
+  @scala.inline
+  def ARTNsTextProps: typings.reactDashNative.reactDashNativeMod.ARTTextProps.type = typings.reactDashNative.reactDashNativeMod.ARTTextProps
+  type ARTNsTextProps = typings.reactDashNative.reactDashNativeMod.ARTTextProps
+  @scala.inline
   def ARTTextProps: typings.reactDashNative.reactDashNativeMod.ARTTextProps.type = typings.reactDashNative.reactDashNativeMod.ARTTextProps
   type ARTTextProps = typings.reactDashNative.reactDashNativeMod.ARTTextProps
   @scala.inline
@@ -90,6 +105,9 @@ trait reactDashNativeProps {
   @scala.inline
   def SectionListProps: typings.reactDashNative.reactDashNativeMod.SectionListProps.type = typings.reactDashNative.reactDashNativeMod.SectionListProps
   type SectionListProps[ItemT] = typings.reactDashNative.reactDashNativeMod.SectionListProps[ItemT]
+  @scala.inline
+  def SectionListClsProps: typings.reactDashNative.reactDashNativeMod.SectionListProps.type = typings.reactDashNative.reactDashNativeMod.SectionListProps
+  type SectionListClsProps[ItemT] = typings.reactDashNative.reactDashNativeMod.SectionListProps[ItemT]
   @scala.inline
   def SegmentedControlIOSProps: typings.reactDashNative.reactDashNativeMod.SegmentedControlIOSProps.type = typings.reactDashNative.reactDashNativeMod.SegmentedControlIOSProps
   type SegmentedControlIOSProps = typings.reactDashNative.reactDashNativeMod.SegmentedControlIOSProps

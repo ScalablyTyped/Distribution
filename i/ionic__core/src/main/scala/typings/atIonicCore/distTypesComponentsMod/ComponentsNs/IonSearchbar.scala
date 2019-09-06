@@ -58,7 +58,7 @@ trait IonSearchbar extends js.Object {
     */
   var disabled: Boolean
   /**
-    * A hint to the browser for which keyboard to display. Possible values are: `"none"` | `"text"` | `"tel"` | `"url"` | `"email"` | `"numeric"` | `"decimal"` | `"search"`.
+    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
   var inputmode: none | text | tel | url | email | numeric | decimal | search
   /**

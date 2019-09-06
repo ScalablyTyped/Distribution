@@ -30,6 +30,8 @@ class ObservableArray protected ()
   def slice(begin: Double): js.Array[_] = js.native
   def slice(begin: Double, end: Double): js.Array[_] = js.native
   def some(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): Boolean = js.native
+  def sort(): js.Array[_] = js.native
+  def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[_] = js.native
   def splice(start: Double): js.Array[_] = js.native
   def splice(start: Double, deleteCount: Double, items: js.Any*): js.Array[_] = js.native
   def toJSON(): js.Array[_] = js.native

@@ -119,12 +119,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEvaluationResultsResponse, Unit]
   ): Request[DeleteEvaluationResultsResponse, AWSError] = js.native
   /**
-    * 
+    * Deletes the specified organization config rule and all of its evaluation results from all member accounts in that organization. Only a master account can delete an organization config rule. AWS Config sets the state of a rule to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a rule while it is in this state.
     */
   def deleteOrganizationConfigRule(): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConfigRule(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * 
+    * Deletes the specified organization config rule and all of its evaluation results from all member accounts in that organization. Only a master account can delete an organization config rule. AWS Config sets the state of a rule to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a rule while it is in this state.
     */
   def deleteOrganizationConfigRule(params: DeleteOrganizationConfigRuleRequest): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConfigRule(
@@ -159,6 +159,19 @@ trait ConfigService extends Service {
     params: DeleteRemediationConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemediationConfigurationResponse, Unit]
   ): Request[DeleteRemediationConfigurationResponse, AWSError] = js.native
+  /**
+    * Deletes one or more remediation exceptions mentioned in the resource keys.
+    */
+  def deleteRemediationExceptions(): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
+  def deleteRemediationExceptions(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemediationExceptionsResponse, Unit]): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
+  /**
+    * Deletes one or more remediation exceptions mentioned in the resource keys.
+    */
+  def deleteRemediationExceptions(params: DeleteRemediationExceptionsRequest): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
+  def deleteRemediationExceptions(
+    params: DeleteRemediationExceptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemediationExceptionsResponse, Unit]
+  ): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
   /**
     * Deletes the retention configuration.
     */
@@ -374,14 +387,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDeliveryChannelsResponse, Unit]
   ): Request[DescribeDeliveryChannelsResponse, AWSError] = js.native
   /**
-    * 
+    * Provides organization config rule deployment status for an organization.  The status is not considered successful until organization config rule is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
     */
   def describeOrganizationConfigRuleStatuses(): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   def describeOrganizationConfigRuleStatuses(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRuleStatusesResponse, Unit]
   ): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   /**
-    * 
+    * Provides organization config rule deployment status for an organization.  The status is not considered successful until organization config rule is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
     */
   def describeOrganizationConfigRuleStatuses(params: DescribeOrganizationConfigRuleStatusesRequest): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   def describeOrganizationConfigRuleStatuses(
@@ -389,14 +402,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRuleStatusesResponse, Unit]
   ): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   /**
-    * 
+    * Returns a list of organization config rules.  When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
     */
   def describeOrganizationConfigRules(): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   def describeOrganizationConfigRules(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRulesResponse, Unit]
   ): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   /**
-    * 
+    * Returns a list of organization config rules.  When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
     */
   def describeOrganizationConfigRules(params: DescribeOrganizationConfigRulesRequest): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   def describeOrganizationConfigRules(
@@ -433,6 +446,19 @@ trait ConfigService extends Service {
     params: DescribeRemediationConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRemediationConfigurationsResponse, Unit]
   ): Request[DescribeRemediationConfigurationsResponse, AWSError] = js.native
+  /**
+    * Returns the details of one or more remediation exceptions. A detailed view of a remediation exception for a set of resources that includes an explanation of an exception and the time when the exception will be deleted. When you specify the limit and the next token, you receive a paginated response.   When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you request resources in batch. It is only applicable, when you request all resources. 
+    */
+  def describeRemediationExceptions(): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
+  def describeRemediationExceptions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRemediationExceptionsResponse, Unit]): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
+  /**
+    * Returns the details of one or more remediation exceptions. A detailed view of a remediation exception for a set of resources that includes an explanation of an exception and the time when the exception will be deleted. When you specify the limit and the next token, you receive a paginated response.   When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you request resources in batch. It is only applicable, when you request all resources. 
+    */
+  def describeRemediationExceptions(params: DescribeRemediationExceptionsRequest): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
+  def describeRemediationExceptions(
+    params: DescribeRemediationExceptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRemediationExceptionsResponse, Unit]
+  ): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
   /**
     * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution occur, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
     */
@@ -595,14 +621,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiscoveredResourceCountsResponse, Unit]
   ): Request[GetDiscoveredResourceCountsResponse, AWSError] = js.native
   /**
-    * 
+    * Returns detailed status for each member account within an organization for a given organization config rule.  Only a master account can call this API. 
     */
   def getOrganizationConfigRuleDetailedStatus(): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   def getOrganizationConfigRuleDetailedStatus(
     callback: js.Function2[/* err */ AWSError, /* data */ GetOrganizationConfigRuleDetailedStatusResponse, Unit]
   ): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   /**
-    * 
+    * Returns detailed status for each member account within an organization for a given organization config rule.  Only a master account can call this API. 
     */
   def getOrganizationConfigRuleDetailedStatus(params: GetOrganizationConfigRuleDetailedStatusRequest): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   def getOrganizationConfigRuleDetailedStatus(
@@ -742,12 +768,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutEvaluationsResponse, Unit]
   ): Request[PutEvaluationsResponse, AWSError] = js.native
   /**
-    * 
+    * Adds or updates organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations. Only a master account can create or update an organization config rule. This API enables organization service access through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action. You can use this action to create both custom AWS Config rules and AWS managed Config rules. If you are adding a new custom AWS Config rule, you must first create AWS Lambda function in the master account that the rule invokes to evaluate your resources. When you use the PutOrganizationConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. If you are adding an AWS managed Config rule, specify the rule's identifier for the RuleIdentifier key. The maximum number of organization config rules that AWS Config supports is 150.  Specify either OrganizationCustomRuleMetadata or OrganizationManagedRuleMetadata. 
     */
   def putOrganizationConfigRule(): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   def putOrganizationConfigRule(callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConfigRuleResponse, Unit]): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   /**
-    * 
+    * Adds or updates organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations. Only a master account can create or update an organization config rule. This API enables organization service access through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action. You can use this action to create both custom AWS Config rules and AWS managed Config rules. If you are adding a new custom AWS Config rule, you must first create AWS Lambda function in the master account that the rule invokes to evaluate your resources. When you use the PutOrganizationConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. If you are adding an AWS managed Config rule, specify the rule's identifier for the RuleIdentifier key. The maximum number of organization config rules that AWS Config supports is 150.  Specify either OrganizationCustomRuleMetadata or OrganizationManagedRuleMetadata. 
     */
   def putOrganizationConfigRule(params: PutOrganizationConfigRuleRequest): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   def putOrganizationConfigRule(
@@ -767,6 +793,19 @@ trait ConfigService extends Service {
     params: PutRemediationConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationConfigurationsResponse, Unit]
   ): Request[PutRemediationConfigurationsResponse, AWSError] = js.native
+  /**
+    * A remediation exception is when a specific resource is no longer considered for auto-remediation. This API adds a new exception or updates an exisiting exception for a specific resource with a specific AWS Config rule. 
+    */
+  def putRemediationExceptions(): Request[PutRemediationExceptionsResponse, AWSError] = js.native
+  def putRemediationExceptions(callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationExceptionsResponse, Unit]): Request[PutRemediationExceptionsResponse, AWSError] = js.native
+  /**
+    * A remediation exception is when a specific resource is no longer considered for auto-remediation. This API adds a new exception or updates an exisiting exception for a specific resource with a specific AWS Config rule. 
+    */
+  def putRemediationExceptions(params: PutRemediationExceptionsRequest): Request[PutRemediationExceptionsResponse, AWSError] = js.native
+  def putRemediationExceptions(
+    params: PutRemediationExceptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationExceptionsResponse, Unit]
+  ): Request[PutRemediationExceptionsResponse, AWSError] = js.native
   /**
     * Creates and updates the retention configuration with details about retention period (number of days) that AWS Config stores your historical information. The API creates the RetentionConfiguration object and names the object as default. When you have a RetentionConfiguration object named default, calling the API modifies the default object.   Currently, AWS Config supports only one retention configuration per region in your account. 
     */

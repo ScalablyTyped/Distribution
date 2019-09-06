@@ -1,7 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
 import typings.squareDashConnect.squareDashConnectMod.CustomerCreationSourceFilterNs.RuleEnum
-import typings.squareDashConnect.squareDashConnectMod.CustomerCreationSourceFilterNs.ValuesEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +18,6 @@ class CustomerCreationSourceFilter () extends js.Object {
     * The list of creation sources used as filtering criteria.
     * See [CustomerCreationSource](#type-customercreationsource) for possible values.
     */
-  var values: js.UndefOr[js.Array[ValuesEnum]] = js.native
+  var values: js.UndefOr[js.Array[CustomerSourceEnum]] = js.native
 }
 

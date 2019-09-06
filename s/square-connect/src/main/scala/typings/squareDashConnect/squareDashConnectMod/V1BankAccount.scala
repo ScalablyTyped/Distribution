@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1BankAccountNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,6 +40,6 @@ class V1BankAccount () extends js.Object {
     * The bank account's type (for example, savings or checking).
     * See [V1BankAccountType](#type-v1bankaccounttype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 

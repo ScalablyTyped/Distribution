@@ -155,6 +155,17 @@ class NodeJSKernelBackend protected () extends KernelBackend {
     defaultValue: Tensor[R0]
   ): Tensor[R] = js.native
   def squaredDifference(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+  def stridedSlice[T /* <: Tensor[Rank] */](
+    x: T,
+    begin: js.Array[Double],
+    end: js.Array[Double],
+    strides: js.Array[Double],
+    beginMask: Double,
+    endMask: Double,
+    ellipsisMask: Double,
+    newAxisMask: Double,
+    shrinkAxisMask: Double
+  ): T = js.native
   def subtract(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def sum(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
   def summaryWriter(logdir: String): Tensor1D = js.native

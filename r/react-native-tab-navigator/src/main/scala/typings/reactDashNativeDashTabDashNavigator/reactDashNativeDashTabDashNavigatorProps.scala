@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashTabDashNavigatorProps {
   @scala.inline
-  def ItemProps: TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
-  type ItemProps = TabNavigatorItemProps
-  @scala.inline
   def ReactDashNativeDashTabDashNavigatorProps: typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   type ReactDashNativeDashTabDashNavigatorProps = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   @scala.inline
   def TabNavigatorProps: typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   type TabNavigatorProps = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
+  @scala.inline
+  def TabNavigatorNsItemProps: TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  type TabNavigatorNsItemProps = TabNavigatorItemProps
+  @scala.inline
+  def defaultNsItemProps: TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  type defaultNsItemProps = TabNavigatorItemProps
 }
 

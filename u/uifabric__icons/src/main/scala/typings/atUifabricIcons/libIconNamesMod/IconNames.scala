@@ -5,6 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.atUifabricIcons.atUifabricIconsStrings.PageLink
+  - typings.atUifabricIcons.atUifabricIconsStrings.CommentSolid
+  - typings.atUifabricIcons.atUifabricIconsStrings.ChangeEntitlements
+  - typings.atUifabricIcons.atUifabricIconsStrings.Installation
+  - typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderModule
+  - typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderFragment
+  - typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderSlot
+  - typings.atUifabricIcons.atUifabricIconsStrings.BullseyeTargetEdit
+  - typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderFragmentCreate
+  - typings.atUifabricIcons.atUifabricIconsStrings.PageData
+  - typings.atUifabricIcons.atUifabricIconsStrings.PageHeaderEdit
+  - typings.atUifabricIcons.atUifabricIconsStrings.ProductList
+  - typings.atUifabricIcons.atUifabricIconsStrings.UnpublishContent
+  - typings.atUifabricIcons.atUifabricIconsStrings.DependencyAdd
+  - typings.atUifabricIcons.atUifabricIconsStrings.DependencyRemove
+  - typings.atUifabricIcons.atUifabricIconsStrings.EntitlementPolicy
+  - typings.atUifabricIcons.atUifabricIconsStrings.EntitlementRedemption
   - typings.atUifabricIcons.atUifabricIconsStrings.GlobalNavButton
   - typings.atUifabricIcons.atUifabricIconsStrings.InternetSharing
   - typings.atUifabricIcons.atUifabricIconsStrings.Brightness
@@ -123,6 +140,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.PanoIndicator
   - typings.atUifabricIcons.atUifabricIconsStrings.Translate
   - typings.atUifabricIcons.atUifabricIconsStrings.RedEye
+  - typings.atUifabricIcons.atUifabricIconsStrings.ViewOriginal
   - typings.atUifabricIcons.atUifabricIconsStrings.ThumbnailView
   - typings.atUifabricIcons.atUifabricIconsStrings.Package
   - typings.atUifabricIcons.atUifabricIconsStrings.Telemarketer
@@ -445,6 +463,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.StoreLogo16
   - typings.atUifabricIcons.atUifabricIconsStrings.MultiSelectMirrored
   - typings.atUifabricIcons.atUifabricIconsStrings.Broom
+  - typings.atUifabricIcons.atUifabricIconsStrings.AddToShoppingList
   - typings.atUifabricIcons.atUifabricIconsStrings.Cocktails
   - typings.atUifabricIcons.atUifabricIconsStrings.Wines
   - typings.atUifabricIcons.atUifabricIconsStrings.Articles
@@ -599,6 +618,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.ProgressLoopOuter
   - typings.atUifabricIcons.atUifabricIconsStrings.Blocked2
   - typings.atUifabricIcons.atUifabricIconsStrings.FangBody
+  - typings.atUifabricIcons.atUifabricIconsStrings.Toolbox
   - typings.atUifabricIcons.atUifabricIconsStrings.PageHeader
   - typings.atUifabricIcons.atUifabricIconsStrings.Glimmer
   - typings.atUifabricIcons.atUifabricIconsStrings.ChatInviteFriend
@@ -727,12 +747,15 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.RecruitmentManagement
   - typings.atUifabricIcons.atUifabricIconsStrings.Questionnaire
   - typings.atUifabricIcons.atUifabricIconsStrings.ManagerSelfService
+  - typings.atUifabricIcons.atUifabricIconsStrings.ProductionFloorManagement
   - typings.atUifabricIcons.atUifabricIconsStrings.ProductRelease
+  - typings.atUifabricIcons.atUifabricIconsStrings.ProductVariant
   - typings.atUifabricIcons.atUifabricIconsStrings.ReplyMirrored
   - typings.atUifabricIcons.atUifabricIconsStrings.ReplyAllMirrored
   - typings.atUifabricIcons.atUifabricIconsStrings.Medal
   - typings.atUifabricIcons.atUifabricIconsStrings.AddGroup
   - typings.atUifabricIcons.atUifabricIconsStrings.QuestionnaireMirrored
+  - typings.atUifabricIcons.atUifabricIconsStrings.CloudImportExport
   - typings.atUifabricIcons.atUifabricIconsStrings.TemporaryUser
   - typings.atUifabricIcons.atUifabricIconsStrings.CaretSolid16
   - typings.atUifabricIcons.atUifabricIconsStrings.GroupedDescending
@@ -783,6 +806,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.ArrowUpRight8
   - typings.atUifabricIcons.atUifabricIconsStrings.ArrowDownRight8
   - typings.atUifabricIcons.atUifabricIconsStrings.DocumentSet
+  - typings.atUifabricIcons.atUifabricIconsStrings.GoToDashboard
   - typings.atUifabricIcons.atUifabricIconsStrings.DelveAnalytics
   - typings.atUifabricIcons.atUifabricIconsStrings.ArrowUpRightMirrored8
   - typings.atUifabricIcons.atUifabricIconsStrings.ArrowDownRightMirrored8
@@ -872,7 +896,9 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.AppIconDefaultList
   - typings.atUifabricIcons.atUifabricIconsStrings.ActivateOrders
   - typings.atUifabricIcons.atUifabricIconsStrings.DeactivateOrders
+  - typings.atUifabricIcons.atUifabricIconsStrings.ProductCatalog
   - typings.atUifabricIcons.atUifabricIconsStrings.ScatterChart
+  - typings.atUifabricIcons.atUifabricIconsStrings.AccountActivity
   - typings.atUifabricIcons.atUifabricIconsStrings.DocumentManagement
   - typings.atUifabricIcons.atUifabricIconsStrings.CRMReport
   - typings.atUifabricIcons.atUifabricIconsStrings.KnowledgeArticle
@@ -892,6 +918,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.ArrowUpRight
   - typings.atUifabricIcons.atUifabricIconsStrings.CaretRight
   - typings.atUifabricIcons.atUifabricIconsStrings.SetAction
+  - typings.atUifabricIcons.atUifabricIconsStrings.ChatBot
   - typings.atUifabricIcons.atUifabricIconsStrings.CaretSolidLeft
   - typings.atUifabricIcons.atUifabricIconsStrings.CaretSolidDown
   - typings.atUifabricIcons.atUifabricIconsStrings.CaretSolidRight
@@ -917,6 +944,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.FabricFolderFill
   - typings.atUifabricIcons.atUifabricIconsStrings.FabricNewFolder
   - typings.atUifabricIcons.atUifabricIconsStrings.FabricPictureLibrary
+  - typings.atUifabricIcons.atUifabricIconsStrings.PhotoVideoMedia
   - typings.atUifabricIcons.atUifabricIconsStrings.AddFavorite
   - typings.atUifabricIcons.atUifabricIconsStrings.AddFavoriteFill
   - typings.atUifabricIcons.atUifabricIconsStrings.BufferTimeBefore
@@ -1313,6 +1341,8 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.DislikeSolid
   - typings.atUifabricIcons.atUifabricIconsStrings.CRMCustomerInsightsApp
   - typings.atUifabricIcons.atUifabricIconsStrings.EditCreate
+  - typings.atUifabricIcons.atUifabricIconsStrings.PlayReverseResume
+  - typings.atUifabricIcons.atUifabricIconsStrings.PlayReverse
   - typings.atUifabricIcons.atUifabricIconsStrings.SearchData
   - typings.atUifabricIcons.atUifabricIconsStrings.UnSetColor
   - typings.atUifabricIcons.atUifabricIconsStrings.DeclineCall
@@ -1506,6 +1536,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.SplitObject
   - typings.atUifabricIcons.atUifabricIconsStrings.BulkUpload
   - typings.atUifabricIcons.atUifabricIconsStrings.DownloadDocument
+  - typings.atUifabricIcons.atUifabricIconsStrings.GreetingCard
   - typings.atUifabricIcons.atUifabricIconsStrings.Flower
   - typings.atUifabricIcons.atUifabricIconsStrings.WaitlistConfirm
   - typings.atUifabricIcons.atUifabricIconsStrings.WaitlistConfirmMirrored
@@ -1520,6 +1551,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.HardDriveLock
   - typings.atUifabricIcons.atUifabricIconsStrings.HardDriveUnlock
   - typings.atUifabricIcons.atUifabricIconsStrings.AccountManagement
+  - typings.atUifabricIcons.atUifabricIconsStrings.ReportWarning
   - typings.atUifabricIcons.atUifabricIconsStrings.TransitionPop
   - typings.atUifabricIcons.atUifabricIconsStrings.TransitionPush
   - typings.atUifabricIcons.atUifabricIconsStrings.TransitionEffect
@@ -1542,8 +1574,10 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.ClipboardSolid
   - typings.atUifabricIcons.atUifabricIconsStrings.FabricUserFolder
   - typings.atUifabricIcons.atUifabricIconsStrings.FabricNetworkFolder
+  - typings.atUifabricIcons.atUifabricIconsStrings.BullseyeTarget
   - typings.atUifabricIcons.atUifabricIconsStrings.AnalyticsView
   - typings.atUifabricIcons.atUifabricIconsStrings.Video360Generic
+  - typings.atUifabricIcons.atUifabricIconsStrings.Untag
   - typings.atUifabricIcons.atUifabricIconsStrings.Leave
   - typings.atUifabricIcons.atUifabricIconsStrings.Trending12
   - typings.atUifabricIcons.atUifabricIconsStrings.Blocked12
@@ -1638,6 +1672,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.MailAttached
   - typings.atUifabricIcons.atUifabricIconsStrings.AddIn
   - typings.atUifabricIcons.atUifabricIconsStrings.LinkedDatabase
+  - typings.atUifabricIcons.atUifabricIconsStrings.TableLink
   - typings.atUifabricIcons.atUifabricIconsStrings.PromotedDatabase
   - typings.atUifabricIcons.atUifabricIconsStrings.BarChartVerticalFilter
   - typings.atUifabricIcons.atUifabricIconsStrings.BarChartVerticalFilterSolid
@@ -1680,6 +1715,7 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.ReleaseGateCheck
   - typings.atUifabricIcons.atUifabricIconsStrings.ReleaseGateError
   - typings.atUifabricIcons.atUifabricIconsStrings.M365InvoicingLogo
+  - typings.atUifabricIcons.atUifabricIconsStrings.RemoveFromShoppingList
   - typings.atUifabricIcons.atUifabricIconsStrings.ShieldAlert
   - typings.atUifabricIcons.atUifabricIconsStrings.FabricTextHighlightComposite
   - typings.atUifabricIcons.atUifabricIconsStrings.Dataflows
@@ -1745,6 +1781,10 @@ import scala.scalajs.js.annotation._
   - typings.atUifabricIcons.atUifabricIconsStrings.QandA
   - typings.atUifabricIcons.atUifabricIconsStrings.QandAMirror
   - typings.atUifabricIcons.atUifabricIconsStrings.BookAnswers
+  - typings.atUifabricIcons.atUifabricIconsStrings.AlertSettings
+  - typings.atUifabricIcons.atUifabricIconsStrings.TrimStart
+  - typings.atUifabricIcons.atUifabricIconsStrings.TrimEnd
+  - typings.atUifabricIcons.atUifabricIconsStrings.TableComputed
   - typings.atUifabricIcons.atUifabricIconsStrings.DecreaseIndentLegacy
   - typings.atUifabricIcons.atUifabricIconsStrings.IncreaseIndentLegacy
   - typings.atUifabricIcons.atUifabricIconsStrings.SizeLegacy
@@ -1764,6 +1804,8 @@ object IconNames {
   def AccessLogoFill: typings.atUifabricIcons.atUifabricIconsStrings.AccessLogoFill = this.cast("AccessLogoFill")
   @scala.inline
   def AccessibiltyChecker: typings.atUifabricIcons.atUifabricIconsStrings.AccessibiltyChecker = this.cast("AccessibiltyChecker")
+  @scala.inline
+  def AccountActivity: typings.atUifabricIcons.atUifabricIconsStrings.AccountActivity = this.cast("AccountActivity")
   @scala.inline
   def AccountBrowser: typings.atUifabricIcons.atUifabricIconsStrings.AccountBrowser = this.cast("AccountBrowser")
   @scala.inline
@@ -1805,6 +1847,8 @@ object IconNames {
   @scala.inline
   def AddTo: typings.atUifabricIcons.atUifabricIconsStrings.AddTo = this.cast("AddTo")
   @scala.inline
+  def AddToShoppingList: typings.atUifabricIcons.atUifabricIconsStrings.AddToShoppingList = this.cast("AddToShoppingList")
+  @scala.inline
   def AddWork: typings.atUifabricIcons.atUifabricIconsStrings.AddWork = this.cast("AddWork")
   @scala.inline
   def Admin: typings.atUifabricIcons.atUifabricIconsStrings.Admin = this.cast("Admin")
@@ -1844,6 +1888,8 @@ object IconNames {
   def Album: typings.atUifabricIcons.atUifabricIconsStrings.Album = this.cast("Album")
   @scala.inline
   def AlbumRemove: typings.atUifabricIcons.atUifabricIconsStrings.AlbumRemove = this.cast("AlbumRemove")
+  @scala.inline
+  def AlertSettings: typings.atUifabricIcons.atUifabricIconsStrings.AlertSettings = this.cast("AlertSettings")
   @scala.inline
   def AlertSolid: typings.atUifabricIcons.atUifabricIconsStrings.AlertSolid = this.cast("AlertSolid")
   @scala.inline
@@ -2147,6 +2193,10 @@ object IconNames {
   @scala.inline
   def Bullseye: typings.atUifabricIcons.atUifabricIconsStrings.Bullseye = this.cast("Bullseye")
   @scala.inline
+  def BullseyeTarget: typings.atUifabricIcons.atUifabricIconsStrings.BullseyeTarget = this.cast("BullseyeTarget")
+  @scala.inline
+  def BullseyeTargetEdit: typings.atUifabricIcons.atUifabricIconsStrings.BullseyeTargetEdit = this.cast("BullseyeTargetEdit")
+  @scala.inline
   def Bus: typings.atUifabricIcons.atUifabricIconsStrings.Bus = this.cast("Bus")
   @scala.inline
   def BusSolid: typings.atUifabricIcons.atUifabricIconsStrings.BusSolid = this.cast("BusSolid")
@@ -2285,6 +2335,8 @@ object IconNames {
   @scala.inline
   def CertifiedDatabase: typings.atUifabricIcons.atUifabricIconsStrings.CertifiedDatabase = this.cast("CertifiedDatabase")
   @scala.inline
+  def ChangeEntitlements: typings.atUifabricIcons.atUifabricIconsStrings.ChangeEntitlements = this.cast("ChangeEntitlements")
+  @scala.inline
   def Chart: typings.atUifabricIcons.atUifabricIconsStrings.Chart = this.cast("Chart")
   @scala.inline
   def ChartSeries: typings.atUifabricIcons.atUifabricIconsStrings.ChartSeries = this.cast("ChartSeries")
@@ -2296,6 +2348,8 @@ object IconNames {
   def ChartYAngle: typings.atUifabricIcons.atUifabricIconsStrings.ChartYAngle = this.cast("ChartYAngle")
   @scala.inline
   def Chat: typings.atUifabricIcons.atUifabricIconsStrings.Chat = this.cast("Chat")
+  @scala.inline
+  def ChatBot: typings.atUifabricIcons.atUifabricIconsStrings.ChatBot = this.cast("ChatBot")
   @scala.inline
   def ChatInviteFriend: typings.atUifabricIcons.atUifabricIconsStrings.ChatInviteFriend = this.cast("ChatInviteFriend")
   @scala.inline
@@ -2459,6 +2513,8 @@ object IconNames {
   @scala.inline
   def CloudDownload: typings.atUifabricIcons.atUifabricIconsStrings.CloudDownload = this.cast("CloudDownload")
   @scala.inline
+  def CloudImportExport: typings.atUifabricIcons.atUifabricIconsStrings.CloudImportExport = this.cast("CloudImportExport")
+  @scala.inline
   def CloudUpload: typings.atUifabricIcons.atUifabricIconsStrings.CloudUpload = this.cast("CloudUpload")
   @scala.inline
   def CloudWeather: typings.atUifabricIcons.atUifabricIconsStrings.CloudWeather = this.cast("CloudWeather")
@@ -2518,6 +2574,8 @@ object IconNames {
   def CommentNext: typings.atUifabricIcons.atUifabricIconsStrings.CommentNext = this.cast("CommentNext")
   @scala.inline
   def CommentPrevious: typings.atUifabricIcons.atUifabricIconsStrings.CommentPrevious = this.cast("CommentPrevious")
+  @scala.inline
+  def CommentSolid: typings.atUifabricIcons.atUifabricIconsStrings.CommentSolid = this.cast("CommentSolid")
   @scala.inline
   def CommentUrgent: typings.atUifabricIcons.atUifabricIconsStrings.CommentUrgent = this.cast("CommentUrgent")
   @scala.inline
@@ -2668,6 +2726,10 @@ object IconNames {
   def DelveLogoFill: typings.atUifabricIcons.atUifabricIconsStrings.DelveLogoFill = this.cast("DelveLogoFill")
   @scala.inline
   def DelveLogoInverse: typings.atUifabricIcons.atUifabricIconsStrings.DelveLogoInverse = this.cast("DelveLogoInverse")
+  @scala.inline
+  def DependencyAdd: typings.atUifabricIcons.atUifabricIconsStrings.DependencyAdd = this.cast("DependencyAdd")
+  @scala.inline
+  def DependencyRemove: typings.atUifabricIcons.atUifabricIconsStrings.DependencyRemove = this.cast("DependencyRemove")
   @scala.inline
   def Deploy: typings.atUifabricIcons.atUifabricIconsStrings.Deploy = this.cast("Deploy")
   @scala.inline
@@ -2860,6 +2922,10 @@ object IconNames {
   def Encryption: typings.atUifabricIcons.atUifabricIconsStrings.Encryption = this.cast("Encryption")
   @scala.inline
   def EngineeringGroup: typings.atUifabricIcons.atUifabricIconsStrings.EngineeringGroup = this.cast("EngineeringGroup")
+  @scala.inline
+  def EntitlementPolicy: typings.atUifabricIcons.atUifabricIconsStrings.EntitlementPolicy = this.cast("EntitlementPolicy")
+  @scala.inline
+  def EntitlementRedemption: typings.atUifabricIcons.atUifabricIconsStrings.EntitlementRedemption = this.cast("EntitlementRedemption")
   @scala.inline
   def EntryDecline: typings.atUifabricIcons.atUifabricIconsStrings.EntryDecline = this.cast("EntryDecline")
   @scala.inline
@@ -3217,9 +3283,13 @@ object IconNames {
   @scala.inline
   def GoMirrored: typings.atUifabricIcons.atUifabricIconsStrings.GoMirrored = this.cast("GoMirrored")
   @scala.inline
+  def GoToDashboard: typings.atUifabricIcons.atUifabricIconsStrings.GoToDashboard = this.cast("GoToDashboard")
+  @scala.inline
   def Golf: typings.atUifabricIcons.atUifabricIconsStrings.Golf = this.cast("Golf")
   @scala.inline
   def GotoToday: typings.atUifabricIcons.atUifabricIconsStrings.GotoToday = this.cast("GotoToday")
+  @scala.inline
+  def GreetingCard: typings.atUifabricIcons.atUifabricIconsStrings.GreetingCard = this.cast("GreetingCard")
   @scala.inline
   def GridViewLarge: typings.atUifabricIcons.atUifabricIconsStrings.GridViewLarge = this.cast("GridViewLarge")
   @scala.inline
@@ -3400,6 +3470,8 @@ object IconNames {
   def InsertTextBox: typings.atUifabricIcons.atUifabricIconsStrings.InsertTextBox = this.cast("InsertTextBox")
   @scala.inline
   def InstallToDrive: typings.atUifabricIcons.atUifabricIconsStrings.InstallToDrive = this.cast("InstallToDrive")
+  @scala.inline
+  def Installation: typings.atUifabricIcons.atUifabricIconsStrings.Installation = this.cast("Installation")
   @scala.inline
   def InternalInvestigation: typings.atUifabricIcons.atUifabricIconsStrings.InternalInvestigation = this.cast("InternalInvestigation")
   @scala.inline
@@ -3865,11 +3937,17 @@ object IconNames {
   @scala.inline
   def PageCheckedin: typings.atUifabricIcons.atUifabricIconsStrings.PageCheckedin = this.cast("PageCheckedin")
   @scala.inline
+  def PageData: typings.atUifabricIcons.atUifabricIconsStrings.PageData = this.cast("PageData")
+  @scala.inline
   def PageEdit: typings.atUifabricIcons.atUifabricIconsStrings.PageEdit = this.cast("PageEdit")
   @scala.inline
   def PageHeader: typings.atUifabricIcons.atUifabricIconsStrings.PageHeader = this.cast("PageHeader")
   @scala.inline
+  def PageHeaderEdit: typings.atUifabricIcons.atUifabricIconsStrings.PageHeaderEdit = this.cast("PageHeaderEdit")
+  @scala.inline
   def PageLeft: typings.atUifabricIcons.atUifabricIconsStrings.PageLeft = this.cast("PageLeft")
+  @scala.inline
+  def PageLink: typings.atUifabricIcons.atUifabricIconsStrings.PageLink = this.cast("PageLink")
   @scala.inline
   def PageList: typings.atUifabricIcons.atUifabricIconsStrings.PageList = this.cast("PageList")
   @scala.inline
@@ -3963,6 +4041,8 @@ object IconNames {
   @scala.inline
   def PhotoCollection: typings.atUifabricIcons.atUifabricIconsStrings.PhotoCollection = this.cast("PhotoCollection")
   @scala.inline
+  def PhotoVideoMedia: typings.atUifabricIcons.atUifabricIconsStrings.PhotoVideoMedia = this.cast("PhotoVideoMedia")
+  @scala.inline
   def Picture: typings.atUifabricIcons.atUifabricIconsStrings.Picture = this.cast("Picture")
   @scala.inline
   def PictureCenter: typings.atUifabricIcons.atUifabricIconsStrings.PictureCenter = this.cast("PictureCenter")
@@ -4004,6 +4084,10 @@ object IconNames {
   def Play: typings.atUifabricIcons.atUifabricIconsStrings.Play = this.cast("Play")
   @scala.inline
   def PlayResume: typings.atUifabricIcons.atUifabricIconsStrings.PlayResume = this.cast("PlayResume")
+  @scala.inline
+  def PlayReverse: typings.atUifabricIcons.atUifabricIconsStrings.PlayReverse = this.cast("PlayReverse")
+  @scala.inline
+  def PlayReverseResume: typings.atUifabricIcons.atUifabricIconsStrings.PlayReverseResume = this.cast("PlayReverseResume")
   @scala.inline
   def PlaybackRate1x: typings.atUifabricIcons.atUifabricIconsStrings.PlaybackRate1x = this.cast("PlaybackRate1x")
   @scala.inline
@@ -4079,7 +4163,15 @@ object IconNames {
   @scala.inline
   def Product: typings.atUifabricIcons.atUifabricIconsStrings.Product = this.cast("Product")
   @scala.inline
+  def ProductCatalog: typings.atUifabricIcons.atUifabricIconsStrings.ProductCatalog = this.cast("ProductCatalog")
+  @scala.inline
+  def ProductList: typings.atUifabricIcons.atUifabricIconsStrings.ProductList = this.cast("ProductList")
+  @scala.inline
   def ProductRelease: typings.atUifabricIcons.atUifabricIconsStrings.ProductRelease = this.cast("ProductRelease")
+  @scala.inline
+  def ProductVariant: typings.atUifabricIcons.atUifabricIconsStrings.ProductVariant = this.cast("ProductVariant")
+  @scala.inline
+  def ProductionFloorManagement: typings.atUifabricIcons.atUifabricIconsStrings.ProductionFloorManagement = this.cast("ProductionFloorManagement")
   @scala.inline
   def ProfileSearch: typings.atUifabricIcons.atUifabricIconsStrings.ProfileSearch = this.cast("ProfileSearch")
   @scala.inline
@@ -4249,6 +4341,8 @@ object IconNames {
   @scala.inline
   def RemoveFilter: typings.atUifabricIcons.atUifabricIconsStrings.RemoveFilter = this.cast("RemoveFilter")
   @scala.inline
+  def RemoveFromShoppingList: typings.atUifabricIcons.atUifabricIconsStrings.RemoveFromShoppingList = this.cast("RemoveFromShoppingList")
+  @scala.inline
   def RemoveFromTrash: typings.atUifabricIcons.atUifabricIconsStrings.RemoveFromTrash = this.cast("RemoveFromTrash")
   @scala.inline
   def RemoveLink: typings.atUifabricIcons.atUifabricIconsStrings.RemoveLink = this.cast("RemoveLink")
@@ -4300,6 +4394,8 @@ object IconNames {
   def ReportLibraryMirrored: typings.atUifabricIcons.atUifabricIconsStrings.ReportLibraryMirrored = this.cast("ReportLibraryMirrored")
   @scala.inline
   def ReportLock: typings.atUifabricIcons.atUifabricIconsStrings.ReportLock = this.cast("ReportLock")
+  @scala.inline
+  def ReportWarning: typings.atUifabricIcons.atUifabricIconsStrings.ReportWarning = this.cast("ReportWarning")
   @scala.inline
   def Rerun: typings.atUifabricIcons.atUifabricIconsStrings.Rerun = this.cast("Rerun")
   @scala.inline
@@ -4759,7 +4855,11 @@ object IconNames {
   @scala.inline
   def Table: typings.atUifabricIcons.atUifabricIconsStrings.Table = this.cast("Table")
   @scala.inline
+  def TableComputed: typings.atUifabricIcons.atUifabricIconsStrings.TableComputed = this.cast("TableComputed")
+  @scala.inline
   def TableGroup: typings.atUifabricIcons.atUifabricIconsStrings.TableGroup = this.cast("TableGroup")
+  @scala.inline
+  def TableLink: typings.atUifabricIcons.atUifabricIconsStrings.TableLink = this.cast("TableLink")
   @scala.inline
   def Tablet: typings.atUifabricIcons.atUifabricIconsStrings.Tablet = this.cast("Tablet")
   @scala.inline
@@ -4901,6 +5001,8 @@ object IconNames {
   @scala.inline
   def Toll: typings.atUifabricIcons.atUifabricIconsStrings.Toll = this.cast("Toll")
   @scala.inline
+  def Toolbox: typings.atUifabricIcons.atUifabricIconsStrings.Toolbox = this.cast("Toolbox")
+  @scala.inline
   def Touch: typings.atUifabricIcons.atUifabricIconsStrings.Touch = this.cast("Touch")
   @scala.inline
   def TouchPointer: typings.atUifabricIcons.atUifabricIconsStrings.TouchPointer = this.cast("TouchPointer")
@@ -4954,6 +5056,10 @@ object IconNames {
   def TriggerAuto: typings.atUifabricIcons.atUifabricIconsStrings.TriggerAuto = this.cast("TriggerAuto")
   @scala.inline
   def TriggerUser: typings.atUifabricIcons.atUifabricIconsStrings.TriggerUser = this.cast("TriggerUser")
+  @scala.inline
+  def TrimEnd: typings.atUifabricIcons.atUifabricIconsStrings.TrimEnd = this.cast("TrimEnd")
+  @scala.inline
+  def TrimStart: typings.atUifabricIcons.atUifabricIconsStrings.TrimStart = this.cast("TrimStart")
   @scala.inline
   def TripleColumn: typings.atUifabricIcons.atUifabricIconsStrings.TripleColumn = this.cast("TripleColumn")
   @scala.inline
@@ -5015,6 +5121,8 @@ object IconNames {
   @scala.inline
   def Unpin: typings.atUifabricIcons.atUifabricIconsStrings.Unpin = this.cast("Unpin")
   @scala.inline
+  def UnpublishContent: typings.atUifabricIcons.atUifabricIconsStrings.UnpublishContent = this.cast("UnpublishContent")
+  @scala.inline
   def UnstackSelected: typings.atUifabricIcons.atUifabricIconsStrings.UnstackSelected = this.cast("UnstackSelected")
   @scala.inline
   def Unsubscribe: typings.atUifabricIcons.atUifabricIconsStrings.Unsubscribe = this.cast("Unsubscribe")
@@ -5022,6 +5130,8 @@ object IconNames {
   def UnsyncFolder: typings.atUifabricIcons.atUifabricIconsStrings.UnsyncFolder = this.cast("UnsyncFolder")
   @scala.inline
   def UnsyncOccurence: typings.atUifabricIcons.atUifabricIconsStrings.UnsyncOccurence = this.cast("UnsyncOccurence")
+  @scala.inline
+  def Untag: typings.atUifabricIcons.atUifabricIconsStrings.Untag = this.cast("Untag")
   @scala.inline
   def Up: typings.atUifabricIcons.atUifabricIconsStrings.Up = this.cast("Up")
   @scala.inline
@@ -5095,6 +5205,8 @@ object IconNames {
   @scala.inline
   def ViewListTree: typings.atUifabricIcons.atUifabricIconsStrings.ViewListTree = this.cast("ViewListTree")
   @scala.inline
+  def ViewOriginal: typings.atUifabricIcons.atUifabricIconsStrings.ViewOriginal = this.cast("ViewOriginal")
+  @scala.inline
   def VisioDiagram: typings.atUifabricIcons.atUifabricIconsStrings.VisioDiagram = this.cast("VisioDiagram")
   @scala.inline
   def VisioDiagramSync: typings.atUifabricIcons.atUifabricIconsStrings.VisioDiagramSync = this.cast("VisioDiagramSync")
@@ -5162,6 +5274,14 @@ object IconNames {
   def WarningSolid: typings.atUifabricIcons.atUifabricIconsStrings.WarningSolid = this.cast("WarningSolid")
   @scala.inline
   def WavingHand: typings.atUifabricIcons.atUifabricIconsStrings.WavingHand = this.cast("WavingHand")
+  @scala.inline
+  def WebAppBuilderFragment: typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderFragment = this.cast("WebAppBuilderFragment")
+  @scala.inline
+  def WebAppBuilderFragmentCreate: typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderFragmentCreate = this.cast("WebAppBuilderFragmentCreate")
+  @scala.inline
+  def WebAppBuilderModule: typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderModule = this.cast("WebAppBuilderModule")
+  @scala.inline
+  def WebAppBuilderSlot: typings.atUifabricIcons.atUifabricIconsStrings.WebAppBuilderSlot = this.cast("WebAppBuilderSlot")
   @scala.inline
   def WebComponents: typings.atUifabricIcons.atUifabricIconsStrings.WebComponents = this.cast("WebComponents")
   @scala.inline

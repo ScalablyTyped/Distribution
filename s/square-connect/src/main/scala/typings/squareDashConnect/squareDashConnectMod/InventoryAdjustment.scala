@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.InventoryAdjustmentNs.FromStateEnum
-import typings.squareDashConnect.squareDashConnectMod.InventoryAdjustmentNs.ToStateEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +28,7 @@ class InventoryAdjustment () extends js.Object {
     * The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var from_state: js.UndefOr[FromStateEnum] = js.native
+  var from_state: js.UndefOr[InventoryStateEnum] = js.native
   /**
     * The read-only Square ID of the Square goods receipt that caused the adjustment. Only relevant for state
     * transitions from the Square for Retail app.
@@ -56,10 +54,10 @@ class InventoryAdjustment () extends js.Object {
   var purchase_order_id: js.UndefOr[String] = js.native
   /**
     * The number of items affected by the adjustment as a decimal string. Can support up to 5 digits after the decimal point.
-    * @important: The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app
-    * or Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded down
-    * to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.
-    * Read [Decimal Quantities (BETA)](/more-apis/inventory/overview#decimal-quantities-beta) for more information.
+    * @note: The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app or
+    * Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded
+    * down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.
+    * Read [Decimal Quantities (BETA)](/orders-api/what-it-does#decimal-quantities) for more information.
     */
   var quantity: js.UndefOr[String] = js.native
   /**
@@ -80,7 +78,7 @@ class InventoryAdjustment () extends js.Object {
     * The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var to_state: js.UndefOr[ToStateEnum] = js.native
+  var to_state: js.UndefOr[InventoryStateEnum] = js.native
   /**
     * The read-only total price paid for goods associated with the adjustment.
     * Present if and only if `to_state` is `SOLD`. Always non-negative.

@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod
 
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
-import typings.atTensorflowTfjsDashData.distTypesMod.IteratorContainer
 import typings.std.Error
 import typings.std.IteratorResult
 import scala.scalajs.js

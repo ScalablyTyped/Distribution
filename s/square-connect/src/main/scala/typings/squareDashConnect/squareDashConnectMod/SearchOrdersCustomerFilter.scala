@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchOrdersCustomerFilter () extends js.Object {
   /**
-    * Filter by orders with any of the listed `customer_id`s. Max: 10 `customer_id`s.
+    * List of customer IDs to filter by. Max: 10 customer IDs.
     */
   var customer_ids: js.UndefOr[js.Array[String]] = js.native
 }

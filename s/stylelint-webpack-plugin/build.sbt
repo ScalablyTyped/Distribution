@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stylelint-webpack-plugin"
-version := "0.1-dt-20190330Z-fa3aa4"
+version := "0.1-dt-20190906Z-190b59"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
 import typings.squareDashConnect.squareDashConnectMod.ListCustomersRequestNs.SortFieldEnum
-import typings.squareDashConnect.squareDashConnectMod.ListCustomersRequestNs.SortOrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -34,6 +34,12 @@ trait TooltipProps extends js.Object {
     */
   var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
+    *  Color of overlay shadow when tooltip is open.
+    *
+    * @default 'rgba(250, 250, 250, 0.70)'
+    */
+  var overlayColor: js.UndefOr[String] = js.undefined
+  /**
     * Color of tooltip pointer, it defaults to the backgroundColor if none passed .
     */
   var pointerColor: js.UndefOr[String] = js.undefined
@@ -44,7 +50,7 @@ trait TooltipProps extends js.Object {
   /**
     * Flag to determine to toggle or not the tooltip on press.
     */
-  var toggleOnPress: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var toggleOnPress: js.UndefOr[Boolean] = js.undefined
   /**
     * Tooltip container width. Necessary in order to render the container in the correct place. Pass height according to the size of the content rendered inside the container.
     * @default 150
@@ -71,9 +77,10 @@ object TooltipProps {
     highlightColor: String = null,
     onClose: () => Unit = null,
     onOpen: () => Unit = null,
+    overlayColor: String = null,
     pointerColor: String = null,
     popover: ReactElement = null,
-    toggleOnPress: () => Unit = null,
+    toggleOnPress: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null,
     withOverlay: js.UndefOr[Boolean] = js.undefined,
     withPointer: js.UndefOr[Boolean] = js.undefined
@@ -85,9 +92,10 @@ object TooltipProps {
     if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor)
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
+    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor)
     if (pointerColor != null) __obj.updateDynamic("pointerColor")(pointerColor)
     if (popover != null) __obj.updateDynamic("popover")(popover)
-    if (toggleOnPress != null) __obj.updateDynamic("toggleOnPress")(js.Any.fromFunction0(toggleOnPress))
+    if (!js.isUndefined(toggleOnPress)) __obj.updateDynamic("toggleOnPress")(toggleOnPress)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (!js.isUndefined(withOverlay)) __obj.updateDynamic("withOverlay")(withOverlay)
     if (!js.isUndefined(withPointer)) __obj.updateDynamic("withPointer")(withPointer)

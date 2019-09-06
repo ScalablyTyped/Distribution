@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.ListEmployeesRequestNs.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +22,6 @@ class ListEmployeesRequest () extends js.Object {
   /**
     * Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[ActivityStatusEnum] = js.native
 }
 

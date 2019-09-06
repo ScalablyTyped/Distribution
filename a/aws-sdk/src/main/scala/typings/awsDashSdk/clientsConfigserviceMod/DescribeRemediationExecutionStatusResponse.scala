@@ -8,7 +8,7 @@ trait DescribeRemediationExecutionStatusResponse extends js.Object {
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[StringWithCharLimit256] = js.undefined
+  var NextToken: js.UndefOr[String] = js.undefined
   /**
     * Returns a list of remediation execution statuses objects.
     */
@@ -17,10 +17,7 @@ trait DescribeRemediationExecutionStatusResponse extends js.Object {
 
 object DescribeRemediationExecutionStatusResponse {
   @scala.inline
-  def apply(
-    NextToken: StringWithCharLimit256 = null,
-    RemediationExecutionStatuses: RemediationExecutionStatuses = null
-  ): DescribeRemediationExecutionStatusResponse = {
+  def apply(NextToken: String = null, RemediationExecutionStatuses: RemediationExecutionStatuses = null): DescribeRemediationExecutionStatusResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (RemediationExecutionStatuses != null) __obj.updateDynamic("RemediationExecutionStatuses")(RemediationExecutionStatuses)

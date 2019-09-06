@@ -1,14 +1,14 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsNumbers.`10000`
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT8`
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT9`
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
+import typings.atTensorflowTfjsDashData.distDatasetMod.DatasetContainer
 import typings.atTensorflowTfjsDashData.distDatasourceMod.DataSource
 import typings.atTensorflowTfjsDashData.distIteratorsFileUnderscoreChunkUnderscoreIteratorMod.FileChunkIteratorOptions
 import typings.atTensorflowTfjsDashData.distIteratorsMicrophoneUnderscoreIteratorMod.MicrophoneIterator
 import typings.atTensorflowTfjsDashData.distIteratorsWebcamUnderscoreIteratorMod.WebcamIterator
 import typings.atTensorflowTfjsDashData.distTypesMod.CSVConfig
-import typings.atTensorflowTfjsDashData.distTypesMod.DatasetContainer
 import typings.atTensorflowTfjsDashData.distTypesMod.FileElement
 import typings.atTensorflowTfjsDashData.distTypesMod.MicrophoneConfig
 import typings.atTensorflowTfjsDashData.distTypesMod.WebcamConfig
@@ -108,7 +108,7 @@ object dataNs extends js.Object {
     def this(url: RequestInfo, fileOptions: FileChunkIteratorOptions) = this()
   }
   
-  val version_data: `1DOT2DOT8` = js.native
+  val version_data: `1DOT2DOT9` = js.native
   def array[T /* <: TensorContainer */](items: js.Array[T]): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
   def csv(source: RequestInfo): typings.atTensorflowTfjsDashData.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native
   def csv(source: RequestInfo, csvConfig: CSVConfig): typings.atTensorflowTfjsDashData.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native

@@ -6,7 +6,9 @@ import typings.firebase.Anon_Email
 import typings.firebase.Anon_InstallApp
 import typings.firebase.firebaseMod.appNs.App
 import typings.firebase.firebaseMod.authNs.ActionCodeInfo
+import typings.firebase.firebaseMod.authNs.ActionCodeInfoNs.Operation
 import typings.firebase.firebaseMod.authNs.ActionCodeSettings
+import typings.firebase.firebaseMod.authNs.ActionCodeURL
 import typings.firebase.firebaseMod.authNs.AdditionalUserInfo
 import typings.firebase.firebaseMod.authNs.ApplicationVerifier
 import typings.firebase.firebaseMod.authNs.Auth
@@ -104,6 +106,39 @@ object authNs extends js.Object {
   }
   
   /**
+    * A utility class to parse email action URLs.
+    */
+  @js.native
+  class ActionCodeURL protected () extends js.Object {
+    /**
+      * The API key of the email action link.
+      */
+    var apiKey: String = js.native
+    /**
+      * The action code of the email action link.
+      */
+    var code: String = js.native
+    /**
+      * The continue URL of the email action link. Null if not provided.
+      */
+    var continueUrl: String | Null = js.native
+    /**
+      * The language code of the email action link. Null if not provided.
+      */
+    var languageCode: String | Null = js.native
+    /**
+      * The action performed by the email action link. It returns from one
+      * of the types from {@link firebase.auth.ActionCodeInfo}.
+      */
+    var operation: Operation = js.native
+    /**
+      * The tenant ID of the email action link. Null if the email action
+      * is from the parent project.
+      */
+    var tenantId: String | Null = js.native
+  }
+  
+  /**
     * A structure containing additional user information from a federated identity
     * provider.
     */
@@ -173,6 +208,29 @@ object authNs extends js.Object {
       * related options like app verification mode for phone authentication.
       */
     var settings: AuthSettings = js.native
+    /**
+      * The current Auth instance's tenant ID. This is a readable/writable
+      * property. When you set the tenant ID of an Auth instance, all future
+      * sign-in/sign-up operations will pass this tenant ID and sign in or
+      * sign up users to the specified tenant project.
+      * When set to null, users are signed in to the parent project. By default,
+      * this is set to null.
+      *
+      * @example
+      * ```javascript
+      * // Set the tenant ID on Auth instance.
+      * firebase.auth().tenantId = ‘TENANT_PROJECT_ID’;
+      *
+      * // All future sign-in request now include tenant ID.
+      * firebase.auth().signInWithEmailAndPassword(email, password)
+      *   .then(function(result) {
+      *     // result.user.tenantId should be ‘TENANT_PROJECT_ID’.
+      *   }).catch(function(error) {
+      *     // Handle error.
+      *   });
+      * ```
+      */
+    var tenantId: String | Null = js.native
     /**
       * Applies a verification code sent to the user by email or other out-of-band
       * mechanism.
@@ -1124,6 +1182,9 @@ object authNs extends js.Object {
       * <dd>Thrown if the token of the user to be updated is expired.</dd>
       * <dt>auth/null-user</dt>
       * <dd>Thrown if the user to be updated is null.</dd>
+      * <dt>auth/tenant-id-mismatch</dt>
+      * <dd>Thrown if the provided user's tenant ID does not match the
+      *     underlying Auth instance's configured tenant ID</dd>
       * </dl>
       */
     def updateCurrentUser(user: User): js.Promise[Unit] = js.native
@@ -1182,6 +1243,73 @@ object authNs extends js.Object {
       * Returns a JSON-serializable representation of this object.
       */
     def toJSON(): js.Object = js.native
+  }
+  
+  /**
+    * The account conflict error.
+    * Refer to {@link firebase.auth.Auth.signInWithPopup} for more information.
+    *
+    * <h4>Common Error Codes</h4>
+    * <dl>
+    * <dt>auth/account-exists-with-different-credential</dt>
+    * <dd>Thrown if there already exists an account with the email address
+    *     asserted by the credential. Resolve this by calling
+    *     {@link firebase.auth.Auth.fetchSignInMethodsForEmail} with the error.email
+    *     and then asking the user to sign in using one of the returned providers.
+    *     Once the user is signed in, the original credential retrieved from the
+    *     error.credential can be linked to the user with
+    *     {@link firebase.User.linkWithCredential} to prevent the user from signing
+    *     in again to the original provider via popup or redirect. If you are using
+    *     redirects for sign in, save the credential in session storage and then
+    *     retrieve on redirect and repopulate the credential using for example
+    *     {@link firebase.auth.GoogleAuthProvider.credential} depending on the
+    *     credential provider id and complete the link.</dd>
+    * <dt>auth/credential-already-in-use</dt>
+    * <dd>Thrown if the account corresponding to the credential already exists
+    *     among your users, or is already linked to a Firebase User.
+    *     For example, this error could be thrown if you are upgrading an anonymous
+    *     user to a Google user by linking a Google credential to it and the Google
+    *     credential used is already associated with an existing Firebase Google
+    *     user.
+    *     The fields <code>error.email</code>, <code>error.phoneNumber</code>, and
+    *     <code>error.credential</code> ({@link firebase.auth.AuthCredential})
+    *     may be provided, depending on the type of credential. You can recover
+    *     from this error by signing in with <code>error.credential</code> directly
+    *     via {@link firebase.auth.Auth.signInWithCredential}.</dd>
+    * <dt>auth/email-already-in-use</dt>
+    * <dd>Thrown if the email corresponding to the credential already exists
+    *     among your users. When thrown while linking a credential to an existing
+    *     user, an <code>error.email</code> and <code>error.credential</code>
+    *     ({@link firebase.auth.AuthCredential}) fields are also provided.
+    *     You have to link the credential to the existing user with that email if
+    *     you wish to continue signing in with that credential. To do so, call
+    *     {@link firebase.auth.Auth.fetchSignInMethodsForEmail}, sign in to
+    *     <code>error.email</code> via one of the providers returned and then
+    *     {@link firebase.User.linkWithCredential} the original credential to that
+    *     newly signed in user.</dd>
+    * </dl>
+    */
+  trait AuthError extends Error {
+    /**
+      * The {@link firebase.auth.AuthCredential} that can be used to resolve the
+      * error.
+      */
+    var credential: js.UndefOr[AuthCredential] = js.undefined
+    /**
+      * The email of the user's account used for sign-in/linking.
+      */
+    var email: js.UndefOr[String] = js.undefined
+    /**
+      * The phone number of the user's account used for sign-in/linking.
+      */
+    var phoneNumber: js.UndefOr[String] = js.undefined
+    /**
+      * The tenant ID being used for sign-in/linking. If you use
+      * {@link firebase.auth.signInWithRedirect} to sign in, you have to
+      * set the tenant ID on Auth instanace again as the tenant ID is not
+      * persisted after redirection.
+      */
+    var tenantId: js.UndefOr[String] = js.undefined
   }
   
   /**
@@ -1283,6 +1411,8 @@ object authNs extends js.Object {
     * <dt>auth/invalid-user-token</dt>
     * <dd>Thrown if the user's credential is no longer valid. The user must sign in
     *     again.</dd>
+    * <dt>auth/invalid-tenant-id</dt>
+    * <dd>Thrown if the tenant ID provided is invalid.</dd>
     * <dt>auth/network-request-failed</dt>
     * <dd>Thrown if a network error (such as timeout, interrupted connection or
     *     unreachable host) has occurred.</dd>
@@ -1914,6 +2044,48 @@ object authNs extends js.Object {
   trait UserMetadata extends js.Object {
     var creationTime: js.UndefOr[String] = js.undefined
     var lastSignInTime: js.UndefOr[String] = js.undefined
+  }
+  
+  @JSName("ActionCodeInfo")
+  @js.native
+  object ActionCodeInfoNs extends js.Object {
+    /**
+      * An enumeration of the possible email action types.
+      */
+    @js.native
+    object Operation extends js.Object {
+      /**
+        * The email link sign-in action.
+        */
+      var EMAIL_SIGNIN: Operation = js.native
+      /**
+        * The password reset action.
+        */
+      var PASSWORD_RESET: Operation = js.native
+      /**
+        * The email revocation action.
+        */
+      var RECOVER_EMAIL: Operation = js.native
+      /**
+        * The email verification action.
+        */
+      var VERIFY_EMAIL: Operation = js.native
+    }
+    
+    type Operation = String
+  }
+  
+  /* static members */
+  @js.native
+  object ActionCodeURL extends js.Object {
+    /**
+      * Parses the email action link string and returns an ActionCodeURL object
+      * if the link is valid, otherwise returns null.
+      *
+      * @param link The email action link string.
+      * @return The ActionCodeURL object, or null if the link is invalid.
+      */
+    def parseLink(link: String): ActionCodeURL | Null = js.native
   }
   
   /* static members */

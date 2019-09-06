@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-serve"
-version := "2.0-dt-20190212Z-b8816c"
+version := "2.0-dt-20190212Z-7289d9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-c41353",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9360b6",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-0d114c",
-  "org.scalablytyped" %%% "loglevel" % "1.6.3-42c31f",
+  "org.scalablytyped" %%% "loglevel" % "1.6.4-76bb78",
   "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20190322Z-6353bf",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-230399",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-e01dc2",
   "org.scalablytyped" %%% "webpack" % "4.39-dt-20190825Z-a23328",
-  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20190624Z-be5e61",
+  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20190624Z-42da7e",
   "org.scalablytyped" %%% "webpack-hot-client" % "4.0-dt-20180621Z-21a699",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-8ac2b4")
 publishArtifact in packageDoc := false

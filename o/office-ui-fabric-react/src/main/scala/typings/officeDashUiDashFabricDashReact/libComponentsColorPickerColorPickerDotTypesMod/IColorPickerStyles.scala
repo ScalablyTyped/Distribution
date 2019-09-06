@@ -7,11 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait IColorPickerStyles extends js.Object {
   /**
+    * Style set for the panel element that contains the color rectangle
+    */
+  var colorRectangle: js.UndefOr[IStyle] = js.undefined
+  /**
+    * Color Square
+    */
+  var colorSquare: js.UndefOr[IStyle] = js.undefined
+  /**
+    * flexContainer
+    */
+  var flexContainer: js.UndefOr[IStyle] = js.undefined
+  /**
+    * flexPreviewBox
+    */
+  var flexPreviewBox: js.UndefOr[IStyle] = js.undefined
+  /**
+    * flexSlider
+    */
+  var flexSlider: js.UndefOr[IStyle] = js.undefined
+  /**
     * Style set for each text field input.
     */
   var input: js.UndefOr[IStyle] = js.undefined
   /**
-    * Style set for the panel element that contains the color rectangle.
+    * Style set for the panel element that contains the color rectangle, color sliders and inputs .
     */
   var panel: js.UndefOr[IStyle] = js.undefined
   /**
@@ -35,6 +55,11 @@ trait IColorPickerStyles extends js.Object {
 object IColorPickerStyles {
   @scala.inline
   def apply(
+    colorRectangle: IStyle = null,
+    colorSquare: IStyle = null,
+    flexContainer: IStyle = null,
+    flexPreviewBox: IStyle = null,
+    flexSlider: IStyle = null,
     input: IStyle = null,
     panel: IStyle = null,
     root: IStyle = null,
@@ -43,6 +68,11 @@ object IColorPickerStyles {
     tableHexCell: IStyle = null
   ): IColorPickerStyles = {
     val __obj = js.Dynamic.literal()
+    if (colorRectangle != null) __obj.updateDynamic("colorRectangle")(colorRectangle.asInstanceOf[js.Any])
+    if (colorSquare != null) __obj.updateDynamic("colorSquare")(colorSquare.asInstanceOf[js.Any])
+    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
+    if (flexPreviewBox != null) __obj.updateDynamic("flexPreviewBox")(flexPreviewBox.asInstanceOf[js.Any])
+    if (flexSlider != null) __obj.updateDynamic("flexSlider")(flexSlider.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])

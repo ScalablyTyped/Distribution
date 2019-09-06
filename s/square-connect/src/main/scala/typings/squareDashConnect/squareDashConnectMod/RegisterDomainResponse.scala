@@ -14,7 +14,8 @@ class RegisterDomainResponse () extends js.Object {
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * Status of the domain registration. See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values.
+    * Status of the domain registration.
+    * See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values.
     */
   var status: js.UndefOr[StatusEnum] = js.native
 }

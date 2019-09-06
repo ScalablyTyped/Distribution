@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sortable-tree-theme-file-explorer"
-version := "0.0-dt-20190717Z-e3e006"
+version := "0.0-dt-20190717Z-5a0f5e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-24966d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
-  "org.scalablytyped" %%% "react-dnd" % "9.3.4-90890d",
-  "org.scalablytyped" %%% "react-sortable-tree" % "0.3-dt-20190802Z-dd16d7",
+  "org.scalablytyped" %%% "react-dnd" % "9.3.4-088676",
+  "org.scalablytyped" %%% "react-sortable-tree" % "0.3-dt-20190802Z-96173d",
   "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190722Z-2cd7bb",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

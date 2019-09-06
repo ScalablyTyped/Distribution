@@ -1,7 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
 import typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.FieldEnum
-import typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.OrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +15,6 @@ class ShiftSort () extends js.Object {
   /**
     * The order in which results are returned. Defaults to DESC. See [SortOrder](#type-sortorder) for possible values.
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[SortOrderEnum] = js.native
 }
 

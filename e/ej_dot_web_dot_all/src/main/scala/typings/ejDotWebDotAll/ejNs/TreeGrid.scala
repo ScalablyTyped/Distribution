@@ -56,10 +56,6 @@ class TreeGrid protected () extends Widget {
     * @returns {void}
     */
   def deleteColumn(columnIndex: Double): Unit = js.native
-  /** To delete a selected row in TreeGrid.
-    * @returns {void}
-    */
-  def deleteRow(): Unit = js.native
   /** To expand all the root level nodes in TreeGrid.
     * @returns {void}
     */

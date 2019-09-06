@@ -16,6 +16,29 @@ class ReportDesigner protected () extends Widget {
   var defaults: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.Model = js.native
   @JSName("model")
   var model_ReportDesigner: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.Model = js.native
+  /** Add a dataset to the report at runtime.
+    * @param {any} a JSON to define a connection properties for dataset.
+    * @returns {void}
+    */
+  def addDataSet(dataset: js.Any): Unit = js.native
+  /** Add a datasource to the report at runtime.
+    * @param {any} a JSON to define a connection properties for datasource.
+    * @returns {void}
+    */
+  def addDataSource(datasource: js.Any): Unit = js.native
+  /** Add a report item to the report at runtime.
+    * @param {any} JSON for the new report item to be added
+    * @returns {void}
+    */
+  def addReportItem(item: js.Any): Unit = js.native
+  /** Visually move the selected report item over its closest intersected report items.
+    * @returns {void}
+    */
+  def bringForward(): Unit = js.native
+  /** Visually move the selected report item over all other intersected report items.
+    * @returns {void}
+    */
+  def bringToFront(): Unit = js.native
   /** Determines whether a copy operation is possible.
     * @returns {boolean}
     */
@@ -28,7 +51,7 @@ class ReportDesigner protected () extends Widget {
     * @returns {boolean}
     */
   def canPaste(): Boolean = js.native
-  /** Returns the bool value indicating whether the user can redo the previous action in the report.
+  /** Returns the boolean value indicating whether the user can redo the previous action in the report.
     * @returns {boolean}
     */
   def canRedo(): Boolean = js.native
@@ -36,31 +59,41 @@ class ReportDesigner protected () extends Widget {
     * @returns {boolean}
     */
   def canRemove(): Boolean = js.native
-  /** Returns a bool value indicating whether the user can undo the previous action in the report.
+  /** Returns a boolean value indicating whether the user can undo the previous action in the report.
     * @returns {boolean}
     */
   def canUndo(): Boolean = js.native
-  /** Copies the selected ReportItem from design panel to Report Designer internal clipboard.
+  /** Clone the existing dataset in the report at runtime.
+    * @param {string} Name of the existing dataset.
+    * @returns {void}
+    */
+  def cloneDataSet(name: String): Unit = js.native
+  /** Clone the existing datasource in the report at runtime.
+    * @param {string} Name of the existing datasource.
+    * @returns {void}
+    */
+  def cloneDataSource(name: String): Unit = js.native
+  /** Copies the selected report item from design panel to the Report Designer internal clipboard.
     * @returns {void}
     */
   def copy(): Unit = js.native
-  /** Cuts the selected ReportItem from design panel to Report Designer internal clipboard.
+  /** Cuts the selected report item from design panel to the Report Designer internal clipboard.
     * @returns {void}
     */
   def cut(): Unit = js.native
-  /** Returns the bool value that specifies whether the report has changes or not.
+  /** Returns the boolean value that specifies whether the report has changes or not.
     * @returns {boolean}
     */
   def hasReportChanges(): Boolean = js.native
-  /** Returns the bool value that specifies whether the currently processing report is a new report or not.
+  /** Returns the boolean value that specifies whether the currently processing report is a new report or not.
     * @returns {boolean}
     */
   def isNewReport(): Boolean = js.native
-  /** Returns the bool value that specifies whether the currently processing report is a new server report or not.
+  /** Returns the boolean value that specifies whether the currently processing report is a new server report or not.
     * @returns {boolean}
     */
   def isNewServerReport(): Boolean = js.native
-  /** Returns the bool value that specifies whether the currently processing report is obtained from the server or local.
+  /** Returns the boolean value that specifies whether the currently processing report is obtained from the server or local.
     * @returns {boolean}
     */
   def isServerReport(): Boolean = js.native
@@ -72,19 +105,19 @@ class ReportDesigner protected () extends Widget {
     * @returns {void}
     */
   def newServerReport(): Unit = js.native
-  /** This method opens the report from the ReportServer.
+  /** This method opens the report from the server.
     * @returns {void}
     */
   def openReport(): Unit = js.native
-  /** To open the report client browse dialog.
+  /** Opens the client browse dialog to browse the report.
     * @returns {void}
     */
   def openReportFromDevice(): Unit = js.native
-  /** To open the report open server browse dialog.
+  /** Opens the report designer browse dialog to browse the available reports in the reportserver.
     * @returns {void}
     */
   def openServerReportDialog(): Unit = js.native
-  /** Pastes the selected ReportItem from Report Designer internal clipboard to design panel.
+  /** Pastes the selected report item from the Report Designer internal clipboard to design panel.
     * @returns {void}
     */
   def paste(): Unit = js.native
@@ -92,15 +125,30 @@ class ReportDesigner protected () extends Widget {
     * @returns {void}
     */
   def redo(): Unit = js.native
-  /** Deletes the selected item from the report.
+  /** Deletes the selected report item from the report.
     * @returns {void}
     */
   def remove(): Unit = js.native
-  /** This method saves the report into the ReportServer.
+  /** Remove a dataset from the report at runtime.
+    * @param {string} Name of the dataset.
+    * @returns {void}
+    */
+  def removeDataSet(dataset: String): Unit = js.native
+  /** Remove a datasource from the report at runtime.
+    * @param {string} Name of the datasource.
+    * @returns {void}
+    */
+  def removeDatasource(datasource: String): Unit = js.native
+  /** Remove the given report item from the report.
+    * @param {string} Name of the report item to be removed from report
+    * @returns {void}
+    */
+  def removeReportItem(itemName: String): Unit = js.native
+  /** This method saves the report into the server.
     * @returns {void}
     */
   def saveReport(): Unit = js.native
-  /** To open the report save server browse dialog.
+  /** Opens the report designer browse dialog to save the report into server.
     * @returns {void}
     */
   def saveServerReportDialog(): Unit = js.native
@@ -108,7 +156,20 @@ class ReportDesigner protected () extends Widget {
     * @returns {void}
     */
   def saveToDevice(): Unit = js.native
-  /** To show the report design.
+  /** Update the selection to report item at runtime.
+    * @param {string} Name of the report item.
+    * @returns {void}
+    */
+  def selectReportItem(itemName: String): Unit = js.native
+  /** Visually move the selected report item behind its closest intersected report item.
+    * @returns {void}
+    */
+  def sendBackward(): Unit = js.native
+  /** Visually move the selected report item behind all other intersected report items.
+    * @returns {void}
+    */
+  def sendToBack(): Unit = js.native
+  /** Performs switch action from viewer to designer at runtime.
     * @returns {void}
     */
   def showDesign(): Unit = js.native
@@ -120,7 +181,7 @@ class ReportDesigner protected () extends Widget {
     * @returns {void}
     */
   def showOpenSaveReportDialog(): Unit = js.native
-  /** To show the report preview.
+  /** Performs switch action from designer to viewer at runtime.
     * @returns {void}
     */
   def showPreview(): Unit = js.native
@@ -128,6 +189,18 @@ class ReportDesigner protected () extends Widget {
     * @returns {void}
     */
   def undo(): Unit = js.native
+  /** Update the dataset in the report at runtime.
+    * @param {string} Name of the existing dataset.
+    * @param {any} a JSON to define a connection properties for dataset.
+    * @returns {void}
+    */
+  def updateDataset(datasetName: String, dataset: js.Any): Unit = js.native
+  /** Update the datasource in the report at runtime.
+    * @param {string} Name of the existing datasource.
+    * @param {any} a JSON to define a connection properties for datasource.
+    * @returns {void}
+    */
+  def updateDatasource(datasourceName: String, datasource: js.Any): Unit = js.native
 }
 
 /* static members */

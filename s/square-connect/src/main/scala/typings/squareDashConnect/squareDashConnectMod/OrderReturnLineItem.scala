@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrderReturnLineItem () extends js.Object {
   /**
+    * The list of references to `OrderReturnDiscount` entities applied to the returned line item.
+    * Each `OrderLineItemAppliedDiscount` has a `discount_uid` that references the `uid` of a top-level `OrderReturnDiscount`
+    * applied to the returned line item. On reads, the amount applied is populated.
+    */
+  var applied_discounts: js.UndefOr[js.Array[OrderLineItemAppliedDiscount]] = js.native
+  /**
+    * The list of references to `OrderReturnTax` entities applied to the returned line item.
+    * Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderReturnTax`
+    * applied to the returned line item. On reads, the amount applied is populated.
+    */
+  var applied_taxes: js.UndefOr[js.Array[OrderLineItemAppliedTax]] = js.native
+  /**
     * The base price for a single unit of the line item.
     */
   var base_price_money: js.UndefOr[Money] = js.native
@@ -38,7 +50,7 @@ class OrderReturnLineItem () extends js.Object {
   var quantity_unit: js.UndefOr[OrderQuantityUnit] = js.native
   /**
     * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts
-    * and any return-level discounts apportioned to this item.
+    * and any return-level discounts apportioned to this item. This field has been deprecated in favour of `applied_discounts`.
     */
   var return_discounts: js.UndefOr[js.Array[OrderReturnDiscount]] = js.native
   /**
@@ -47,7 +59,7 @@ class OrderReturnLineItem () extends js.Object {
   var return_modifiers: js.UndefOr[js.Array[OrderReturnLineItemModifier]] = js.native
   /**
     * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any
-    * return-level taxes apportioned to this item.
+    * return-level taxes apportioned to this item. This field has been deprecated in favour of `applied_taxes`.
     */
   var return_taxes: js.UndefOr[js.Array[OrderReturnTax]] = js.native
   /**
@@ -67,7 +79,7 @@ class OrderReturnLineItem () extends js.Object {
     */
   var total_tax_money: js.UndefOr[Money] = js.native
   /**
-    * Unique identifier for this return line item entry. This is a read-only field.
+    * Unique identifier for this return line item entry.
     */
   var uid: js.UndefOr[String] = js.native
   /**

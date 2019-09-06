@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.InventoryPhysicalCountNs.StateEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +39,10 @@ class InventoryPhysicalCount () extends js.Object {
   var occurred_at: js.UndefOr[String] = js.native
   /**
     * The number of items affected by the physical count as a decimal string. Can support up to 5 digits after the decimal point.
-    * @important The Point of Sale app and Dashboard do not currently support decimal quantities.
-    * If a Point of Sale app or Dashboard attempts to read a decimal quantity on inventory counts or adjustments,
-    * the quantity will be rounded down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.
-    * Read [Decimal Quantities (BETA)](/more-apis/inventory/overview#decimal-quantities-beta) for more information.
+    * @note The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app or
+    * Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded down
+    * to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.
+    * Read [Decimal Quantities (BETA)](/orders-api/what-it-does#decimal-quantities) for more information.
     */
   var quantity: js.UndefOr[String] = js.native
   /**
@@ -59,6 +58,6 @@ class InventoryPhysicalCount () extends js.Object {
     * The current [InventoryState](#type-inventorystate) for the related quantity of items.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var state: js.UndefOr[StateEnum] = js.native
+  var state: js.UndefOr[InventoryStateEnum] = js.native
 }
 

@@ -14,6 +14,14 @@ object ToolbarItems extends js.Object {
   @js.native
   sealed trait All extends ToolbarItems
   
+  ///Visually move the selected report item over its closest intersected report items.
+  @js.native
+  sealed trait BringForward extends ToolbarItems
+  
+  ///Visually move the selected report item over all other intersected report items.
+  @js.native
+  sealed trait BringToFront extends ToolbarItems
+  
   ///Copies selected text or object to the clipboard.
   @js.native
   sealed trait Copy extends ToolbarItems
@@ -66,6 +74,14 @@ object ToolbarItems extends js.Object {
   @js.native
   sealed trait Save extends ToolbarItems
   
+  ///Visually move the selected report item behind its closest intersected report item.
+  @js.native
+  sealed trait SendBackward extends ToolbarItems
+  
+  ///Visually move the selected report item behind all other intersected report items.
+  @js.native
+  sealed trait SendToBack extends ToolbarItems
+  
   ///Reverses the last action or deletes the last entry that is typed.
   @js.native
   sealed trait Undo extends ToolbarItems
@@ -74,11 +90,13 @@ object ToolbarItems extends js.Object {
   @js.native
   sealed trait Zoom extends ToolbarItems
   
-  /* 15 */ val All: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.All with Double = js.native
+  /* 19 */ val All: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.All with Double = js.native
+  /* 15 */ val BringForward: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.BringForward with Double = js.native
+  /* 17 */ val BringToFront: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.BringToFront with Double = js.native
   /* 4 */ val Copy: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Copy with Double = js.native
   /* 3 */ val Cut: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Cut with Double = js.native
   /* 6 */ val Delete: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Delete with Double = js.native
-  /* 14 */ val EditDesign: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.EditDesign with Double = js.native
+  /* 18 */ val EditDesign: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.EditDesign with Double = js.native
   /* 13 */ val Footer: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Footer with Double = js.native
   /* 11 */ val GridLine: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.GridLine with Double = js.native
   /* 12 */ val Header: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Header with Double = js.native
@@ -88,6 +106,8 @@ object ToolbarItems extends js.Object {
   /* 10 */ val Preview: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Preview with Double = js.native
   /* 8 */ val Redo: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Redo with Double = js.native
   /* 2 */ val Save: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Save with Double = js.native
+  /* 14 */ val SendBackward: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.SendBackward with Double = js.native
+  /* 16 */ val SendToBack: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.SendToBack with Double = js.native
   /* 7 */ val Undo: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Undo with Double = js.native
   /* 9 */ val Zoom: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.ToolbarItems.Zoom with Double = js.native
   @JSBracketAccess

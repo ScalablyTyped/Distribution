@@ -28,7 +28,7 @@ import typings.atTestingDashLibraryDom.queryDashHelpersMod.GetAllBy
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.QueryByAttribute
 import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
 import typings.atTestingDashLibraryVue.atTestingDashLibraryVueNumbers.`false`
-import typings.prettyDashFormat.prettyDashFormatMod.Options
+import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
 import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.Partial
@@ -111,7 +111,7 @@ object ^ extends js.Object {
   def logRoles(container: HTMLElement): String = js.native
   def prettyDOM(element: HTMLElement): String | `false` = js.native
   def prettyDOM(element: HTMLElement, maxLength: Double): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double, options: Options): String | `false` = js.native
+  def prettyDOM(element: HTMLElement, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def render[V /* <: Vue */](
     TestComponent: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VueClass<V> */ js.Any
   ): ComponentHarness = js.native

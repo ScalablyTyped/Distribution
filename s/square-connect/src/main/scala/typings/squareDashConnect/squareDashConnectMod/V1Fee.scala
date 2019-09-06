@@ -1,9 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1FeeNs.AdjustmentTypeEnum
-import typings.squareDashConnect.squareDashConnectMod.V1FeeNs.CalculationPhaseEnum
-import typings.squareDashConnect.squareDashConnectMod.V1FeeNs.InclusionTypeEnum
-import typings.squareDashConnect.squareDashConnectMod.V1FeeNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +11,7 @@ class V1Fee () extends js.Object {
     * The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees.
     * See [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values.
     */
-  var adjustment_type: js.UndefOr[AdjustmentTypeEnum] = js.native
+  var adjustment_type: js.UndefOr[String] = js.native
   /**
     * If true, the fee applies to custom amounts entered into Square Register that are not associated with a particular item.
     */
@@ -23,7 +19,7 @@ class V1Fee () extends js.Object {
   /**
     * Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values.
     */
-  var calculation_phase: js.UndefOr[CalculationPhaseEnum] = js.native
+  var calculation_phase: js.UndefOr[String] = js.native
   /**
     * If true, the fee is applied to all appropriate items. If false, the fee is not applied at all.
     */
@@ -35,7 +31,7 @@ class V1Fee () extends js.Object {
   /**
     * Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values.
     */
-  var inclusion_type: js.UndefOr[InclusionTypeEnum] = js.native
+  var inclusion_type: js.UndefOr[String] = js.native
   /**
     * The fee's name.
     */
@@ -48,7 +44,7 @@ class V1Fee () extends js.Object {
     * In countries with multiple classifications for sales taxes, indicates which classification the fee falls under.
     * Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
   /**
     * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
     */

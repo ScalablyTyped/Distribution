@@ -12,6 +12,7 @@ trait User extends UserInfo {
   var metadata: UserMetadata = js.native
   var providerData: js.Array[UserInfo | Null] = js.native
   var refreshToken: String = js.native
+  val tenantId: String | Null = js.native
   def delete(): js.Promise[Unit] = js.native
   def getIdToken(): js.Promise[String] = js.native
   def getIdToken(forceRefresh: Boolean): js.Promise[String] = js.native

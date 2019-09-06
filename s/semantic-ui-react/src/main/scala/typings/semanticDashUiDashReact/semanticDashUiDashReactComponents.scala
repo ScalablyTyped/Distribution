@@ -34,7 +34,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Advertisement: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.AdvertisementProps
-  ] = typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.AdvertisementProps]]
   @scala.inline
   def Breadcrumb: ComponentType[
@@ -95,7 +95,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesCheckboxMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps]]
   @scala.inline
-  def Comment: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps] = typings.semanticDashUiDashReact.distCommonjsViewsCommentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps]]
+  def Comment: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps] = typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps]]
   @scala.inline
   def CommentAction: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentActionMod.CommentActionProps
@@ -141,12 +141,12 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Container: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsContainerMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps]]
   @scala.inline
   def Content: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonContentMod.ButtonContentProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonMod.default.Content.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsButtonMod.default.Content.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonContentMod.ButtonContentProps]]
   @scala.inline
   def Dimmer: ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerMod.DimmerProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesDimmerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerMod.DimmerProps]]
@@ -161,9 +161,14 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps]]
   @scala.inline
+  def DimmerNsInner: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps
+  ] = js.constructorOf[typings.semanticDashUiDashReact.semanticDashUiDashReactMod.DimmerNs.Inner].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps]]
+  @scala.inline
   def Divider: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.DividerProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsDividerMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.DividerProps]]
   @scala.inline
   def Dropdown: ComponentType[
@@ -198,7 +203,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Embed: ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesEmbedMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps]]
   @scala.inline
-  def Feed: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps] = typings.semanticDashUiDashReact.distCommonjsViewsFeedMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps]]
+  def Feed: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps] = typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps]]
   @scala.inline
   def FeedContent: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedContentMod.FeedContentProps
@@ -226,7 +231,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Flag: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.FlagProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsElementsFlagMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.FlagProps]]
   @scala.inline
-  def Form: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsFormMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps]]
+  def Form: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps]]
   @scala.inline
   def FormButton: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormButtonMod.FormButtonProps
@@ -273,7 +278,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormTextAreaMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps]]
   @scala.inline
-  def Grid: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.GridProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsGridMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.GridProps]]
+  def Grid: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.GridProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.GridProps]]
   @scala.inline
   def GridColumn: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridColumnMod.GridColumnProps
@@ -287,10 +292,10 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Group: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsIconIconGroupMod.IconGroupProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsIconIconMod.default.Group.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsIconMod.default.Group.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsIconIconGroupMod.IconGroupProps]]
   @scala.inline
-  def Header: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsHeaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps]]
+  def Header: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps]]
   @scala.inline
   def HeaderContent: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderContentMod.HeaderContentProps
@@ -309,21 +314,16 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = typings.semanticDashUiDashReact.distCommonjsElementsIconIconGroupMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsIconIconGroupMod.IconGroupProps]]
   @scala.inline
-  def Image: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps] = typings.semanticDashUiDashReact.distCommonjsElementsImageMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps]]
+  def Image: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps] = typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps]]
   @scala.inline
   def ImageGroup: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsImageImageGroupMod.ImageGroupProps
   ] = typings.semanticDashUiDashReact.distCommonjsElementsImageImageGroupMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsImageImageGroupMod.ImageGroupProps]]
   @scala.inline
-  def Inner: ComponentType[
-    typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps
-  ] = js.constructorOf[typings.semanticDashUiDashReact.semanticDashUiDashReactMod.DimmerNs.Inner].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps]]
-  @scala.inline
   def Input: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsInputInputMod.InputProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsElementsInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsInputInputMod.InputProps]]
   @scala.inline
-  def Item: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.ItemProps] = typings.semanticDashUiDashReact.distCommonjsViewsItemMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.ItemProps]]
+  def Item: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.ItemProps] = typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.ItemProps]]
   @scala.inline
   def ItemContent: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsViewsItemItemContentMod.ItemContentProps
@@ -360,7 +360,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelGroupMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps]]
   @scala.inline
-  def List: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsListListMod.ListProps] = typings.semanticDashUiDashReact.distCommonjsElementsListMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsListListMod.ListProps]]
+  def List: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsListListMod.ListProps] = typings.semanticDashUiDashReact.distCommonjsElementsListListMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsListListMod.ListProps]]
   @scala.inline
   def ListContent: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsListListContentMod.ListContentProps
@@ -392,7 +392,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = typings.semanticDashUiDashReact.distCommonjsElementsListListListMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsListListListMod.ListListProps]]
   @scala.inline
-  def Loader: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsLoaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps]]
+  def Loader: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps]]
   @scala.inline
   def Menu: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps]]
   @scala.inline
@@ -465,7 +465,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Or: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonOrMod.ButtonOrProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonMod.default.Or.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsButtonMod.default.Or.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]]
   @scala.inline
   def Pagination: ComponentType[
@@ -480,7 +480,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Placeholder: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.PlaceholderProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.PlaceholderProps]]
   @scala.inline
   def PlaceholderHeader: ComponentType[
@@ -527,9 +527,9 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesProgressMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps]]
   @scala.inline
-  def Radio: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps] = typings.semanticDashUiDashReact.distCommonjsAddonsRadioMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps]]
+  def Radio: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps] = typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps]]
   @scala.inline
-  def Rail: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps] = typings.semanticDashUiDashReact.distCommonjsElementsRailMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps]]
+  def Rail: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps] = typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps]]
   @scala.inline
   def Rating: ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesRatingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps]]
   @scala.inline
@@ -552,7 +552,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps]]
   @scala.inline
-  def Reveal: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.RevealProps] = typings.semanticDashUiDashReact.distCommonjsElementsRevealMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.RevealProps]]
+  def Reveal: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.RevealProps] = typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.RevealProps]]
   @scala.inline
   def RevealContent: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealContentMod.RevealContentProps
@@ -578,7 +578,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Segment: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsSegmentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentProps]]
   @scala.inline
   def SegmentGroup: ComponentType[
@@ -591,7 +591,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentInlineMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineProps]]
   @scala.inline
-  def Select: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.SelectProps] = typings.semanticDashUiDashReact.distCommonjsAddonsSelectMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.SelectProps]]
+  def Select: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.SelectProps] = typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.SelectProps]]
   @scala.inline
   def Sidebar: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps
@@ -610,7 +610,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def Statistic: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticMod.StatisticProps
-  ] = typings.semanticDashUiDashReact.distCommonjsViewsStatisticMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticMod.StatisticProps]]
   @scala.inline
   def StatisticGroup: ComponentType[
@@ -656,7 +656,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def TabPane: ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps] = typings.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps]]
   @scala.inline
-  def Table: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsTableMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps]]
+  def Table: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps]]
   @scala.inline
   def TableBody: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableBodyMod.TableBodyProps
@@ -713,9 +713,67 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps]]
   @scala.inline
-  def default: ComponentType[
-    typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonOrMod.ButtonOrProps
-  ] = typings.semanticDashUiDashReact.distCommonjsElementsButtonMod.default.Or.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]]
+  def defaultNsInner: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps
+  ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesDimmerMod.defaultNs.Inner].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps]]
+  @scala.inline
+  def distCommonjsAddonsRadioModRadio: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps] = typings.semanticDashUiDashReact.distCommonjsAddonsRadioMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps]]
+  @scala.inline
+  def distCommonjsAddonsSelectModSelect: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.SelectProps] = typings.semanticDashUiDashReact.distCommonjsAddonsSelectMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsSelectSelectMod.SelectProps]]
+  @scala.inline
+  def distCommonjsCollectionsFormModForm: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsFormMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps]]
+  @scala.inline
+  def distCommonjsCollectionsGridModGrid: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.GridProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsGridMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridMod.GridProps]]
+  @scala.inline
+  def distCommonjsCollectionsTableModTable: ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsTableMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps]]
+  @scala.inline
+  def distCommonjsElementsContainerModContainer: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsContainerMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps]]
+  @scala.inline
+  def distCommonjsElementsDividerModDivider: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.DividerProps
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsDividerMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.DividerProps]]
+  @scala.inline
+  def distCommonjsElementsHeaderModHeader: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsHeaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps]]
+  @scala.inline
+  def distCommonjsElementsImageModImage: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps] = typings.semanticDashUiDashReact.distCommonjsElementsImageMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps]]
+  @scala.inline
+  def distCommonjsElementsListModList: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsListListMod.ListProps] = typings.semanticDashUiDashReact.distCommonjsElementsListMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsListListMod.ListProps]]
+  @scala.inline
+  def distCommonjsElementsLoaderModLoader: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsLoaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps]]
+  @scala.inline
+  def distCommonjsElementsPlaceholderModPlaceholder: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.PlaceholderProps
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.PlaceholderProps]]
+  @scala.inline
+  def distCommonjsElementsRailModRail: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps] = typings.semanticDashUiDashReact.distCommonjsElementsRailMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps]]
+  @scala.inline
+  def distCommonjsElementsRevealModReveal: ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.RevealProps] = typings.semanticDashUiDashReact.distCommonjsElementsRevealMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsElementsRevealRevealMod.RevealProps]]
+  @scala.inline
+  def distCommonjsElementsSegmentModSegment: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentProps
+  ] = typings.semanticDashUiDashReact.distCommonjsElementsSegmentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentProps]]
+  @scala.inline
+  def distCommonjsViewsAdvertisementModAdvertisement: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.AdvertisementProps
+  ] = typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.AdvertisementProps]]
+  @scala.inline
+  def distCommonjsViewsCommentModComment: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps] = typings.semanticDashUiDashReact.distCommonjsViewsCommentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps]]
+  @scala.inline
+  def distCommonjsViewsFeedModFeed: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps] = typings.semanticDashUiDashReact.distCommonjsViewsFeedMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps]]
+  @scala.inline
+  def distCommonjsViewsItemModItem: ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.ItemProps] = typings.semanticDashUiDashReact.distCommonjsViewsItemMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsViewsItemItemMod.ItemProps]]
+  @scala.inline
+  def distCommonjsViewsStatisticModStatistic: ComponentType[
+    typings.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticMod.StatisticProps
+  ] = typings.semanticDashUiDashReact.distCommonjsViewsStatisticMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticMod.StatisticProps]]
 }
 

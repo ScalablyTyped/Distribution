@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.AddressNs.CountryEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Address () extends js.Object {
   /**
-    * The first line of the address.  Fields that start with `address_line` provide the address's most specific
+    * The first line of the address. Fields that start with `address_line` provide the address's most specific
     * details, like street number, street name, and building name. They do *not* provide less specific details like
     * city, state/province, or country (these details are provided in other fields).
     */

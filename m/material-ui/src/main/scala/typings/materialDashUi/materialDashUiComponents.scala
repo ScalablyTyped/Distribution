@@ -590,6 +590,10 @@ object materialDashUiComponents extends materialDashUiProps {
   ] = js.constructorOf[typings.materialDashUi.autoCompleteMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.materialDashUi.underscoreUnderscoreMaterialUINs.AutoCompleteProps[js.Any]]]
   @scala.inline
+  def AutoCompleteDivider: ComponentType[typings.materialDashUi.underscoreUnderscoreMaterialUINs.DividerProps] = typings.materialDashUi.autoCompleteMod.AutoComplete.Divider.asInstanceOf[typings.react.reactMod.ComponentType[typings.materialDashUi.underscoreUnderscoreMaterialUINs.DividerProps]]
+  @scala.inline
+  def AutoCompleteItem: ComponentType[typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.MenuItemProps] = typings.materialDashUi.autoCompleteMod.AutoComplete.Item.asInstanceOf[typings.react.reactMod.ComponentType[typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.MenuItemProps]]
+  @scala.inline
   def AutoLockScrolling: ComponentType[typings.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps] = js.constructorOf[typings.materialDashUi.internalAutoLockScrollingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps]]
   @scala.inline
   def Autorenew: ComponentType[typings.materialDashUi.underscoreUnderscoreMaterialUINs.SvgIconProps] = js.constructorOf[typings.materialDashUi.svgDashIconsActionAutorenewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.materialDashUi.underscoreUnderscoreMaterialUINs.SvgIconProps]]

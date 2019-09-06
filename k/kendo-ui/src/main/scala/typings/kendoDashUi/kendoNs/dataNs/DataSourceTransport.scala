@@ -1,5 +1,9 @@
 package typings.kendoDashUi.kendoNs.dataNs
 
+import typings.kendoDashUi.kendoDashUiStrings.create
+import typings.kendoDashUi.kendoDashUiStrings.destroy
+import typings.kendoDashUi.kendoDashUiStrings.read
+import typings.kendoDashUi.kendoDashUiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +16,11 @@ trait DataSourceTransport extends js.Object {
     String | DataSourceTransportDestroy | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
   ] = js.undefined
   var parameterMap: js.UndefOr[
-    js.Function2[/* data */ DataSourceTransportParameterMapData, /* type */ String, _]
+    js.Function2[
+      /* data */ DataSourceTransportParameterMapData, 
+      /* type */ create | destroy | read | update, 
+      _
+    ]
   ] = js.undefined
   var push: js.UndefOr[js.Function] = js.undefined
   var read: js.UndefOr[
@@ -32,7 +40,7 @@ object DataSourceTransport {
   def apply(
     create: String | DataSourceTransportCreate | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
     destroy: String | DataSourceTransportDestroy | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
-    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ String) => _ = null,
+    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => _ = null,
     push: js.Function = null,
     read: String | DataSourceTransportRead | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
     signalr: DataSourceTransportSignalr | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,

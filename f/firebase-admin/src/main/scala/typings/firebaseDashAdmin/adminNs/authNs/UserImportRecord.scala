@@ -60,6 +60,14 @@ trait UserImportRecord extends js.Object {
     */
   var providerData: js.UndefOr[js.Array[UserInfo]] = js.undefined
   /**
+    * The identifier of the tenant where user is to be imported to.
+    * When not provided in an `admin.auth.Auth` context, the user is uploaded to
+    * the default parent project.
+    * When not provided in an `admin.auth.TenantAwareAuth` context, the user is uploaded
+    * to the tenant corresponding to that `TenantAwareAuth` instance's tenant ID.
+    */
+  var tenantId: js.UndefOr[String | Null] = js.undefined
+  /**
     * The user's `uid`.
     */
   var uid: String
@@ -79,7 +87,8 @@ object UserImportRecord {
     passwordSalt: Buffer = null,
     phoneNumber: String = null,
     photoURL: String = null,
-    providerData: js.Array[UserInfo] = null
+    providerData: js.Array[UserInfo] = null,
+    tenantId: String = null
   ): UserImportRecord = {
     val __obj = js.Dynamic.literal(disabled = disabled, emailVerified = emailVerified, metadata = metadata, uid = uid)
     if (customClaims != null) __obj.updateDynamic("customClaims")(customClaims)
@@ -90,6 +99,7 @@ object UserImportRecord {
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
     if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL)
     if (providerData != null) __obj.updateDynamic("providerData")(providerData)
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
     __obj.asInstanceOf[UserImportRecord]
   }
 }

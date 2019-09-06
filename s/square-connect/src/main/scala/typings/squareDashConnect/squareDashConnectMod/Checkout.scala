@@ -31,7 +31,7 @@ class Checkout () extends js.Object {
   var id: js.UndefOr[String] = js.native
   /**
     * The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can
-    * use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary
+    * use to contact the merchant. If this value is not set, the confirmation page and email will display the primary
     * email address associated with the merchant's Square account. Default: none; only exists if explicitly set.
     */
   var merchant_support_email: js.UndefOr[String] = js.native

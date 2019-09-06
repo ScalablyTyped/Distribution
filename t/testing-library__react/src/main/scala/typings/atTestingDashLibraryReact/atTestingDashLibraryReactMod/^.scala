@@ -32,7 +32,7 @@ import typings.atTestingDashLibraryReact.Omit
 import typings.atTestingDashLibraryReact.Typeofqueries
 import typings.atTestingDashLibraryReact.atTestingDashLibraryReactNumbers.`false`
 import typings.atTestingDashLibraryReact.atTestingDashLibraryReactStrings.queries
-import typings.prettyDashFormat.prettyDashFormatMod.Options
+import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
 import typings.react.reactMod.ReactElement
 import typings.std.Error
 import typings.std.HTMLElement
@@ -116,7 +116,7 @@ object ^ extends js.Object {
   def logRoles(container: HTMLElement): String = js.native
   def prettyDOM(element: HTMLElement): String | `false` = js.native
   def prettyDOM(element: HTMLElement, maxLength: Double): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double, options: Options): String | `false` = js.native
+  def prettyDOM(element: HTMLElement, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def render(ui: ReactElement): RenderResult[Typeofqueries] = js.native
   def render[Q /* <: Queries */](ui: ReactElement, options: RenderOptions[Q]): RenderResult[Q] = js.native
   @JSName("render")

@@ -39,7 +39,7 @@ trait IonImg extends HTMLAttributes[HTMLIonImgElement] {
     */
   var onIonImgWillLoad: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   /**
-    * The image URL. This attribute is mandatory for the <img> element.
+    * The image URL. This attribute is mandatory for the `<img>` element.
     */
   var src: js.UndefOr[String] = js.undefined
 }

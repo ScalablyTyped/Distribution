@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typography"
-version := "0.16-dt-20190105Z-7a7c5f"
+version := "0.16-dt-20190904Z-e224e0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

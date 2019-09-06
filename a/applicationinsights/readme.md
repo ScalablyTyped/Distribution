@@ -1,7 +1,7 @@
 
 # Scala.js typings for applicationinsights
 
-Typings are for version 1.4.1
+Typings are for version 1.4.2
 
 ## Library description:
 Microsoft Application Insights module for Node.js

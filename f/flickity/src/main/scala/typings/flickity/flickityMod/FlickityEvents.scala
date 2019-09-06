@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   - typings.flickity.flickityStrings.staticClick
   - typings.flickity.flickityStrings.lazyLoad
   - typings.flickity.flickityStrings.bgLazyLoad
+  - typings.flickity.flickityStrings.fullscreenChange
 */
 trait FlickityEvents extends js.Object
 

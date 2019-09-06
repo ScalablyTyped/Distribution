@@ -1,7 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
 import typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.FieldEnum
-import typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.OrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +10,6 @@ import scala.scalajs.js.annotation._
 object ShiftSortNs extends js.Object {
   @js.native
   sealed trait FieldEnum extends js.Object
-  
-  @js.native
-  sealed trait OrderEnum extends js.Object
   
   @js.native
   object FieldEnum extends js.Object {
@@ -35,20 +31,6 @@ object ShiftSortNs extends js.Object {
     /* "UPDATED_AT" */ val UPDATED_AT: typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.FieldEnum.UPDATED_AT with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[FieldEnum with String] = js.native
-  }
-  
-  @js.native
-  object OrderEnum extends js.Object {
-    @js.native
-    sealed trait ASC extends OrderEnum
-    
-    @js.native
-    sealed trait DESC extends OrderEnum
-    
-    /* "ASC" */ val ASC: typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.OrderEnum.ASC with String = js.native
-    /* "DESC" */ val DESC: typings.squareDashConnect.squareDashConnectMod.ShiftSortNs.OrderEnum.DESC with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[OrderEnum with String] = js.native
   }
   
 }

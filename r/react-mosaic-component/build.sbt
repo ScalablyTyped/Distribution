@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "3.2.0-a203d6"
+version := "3.2.0-644739"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "immutability-helper" % "3.0.1-41e28b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
-  "org.scalablytyped" %%% "react-dnd" % "9.3.4-90890d",
+  "org.scalablytyped" %%% "react-dnd" % "9.3.4-088676",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

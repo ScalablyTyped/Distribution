@@ -1,7 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
 import typings.squareDashConnect.squareDashConnectMod.CustomerSortNs.FieldEnum
-import typings.squareDashConnect.squareDashConnectMod.CustomerSortNs.OrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +18,6 @@ class CustomerSort () extends js.Object {
     * String comparisons use standard alphabetic comparison to determine order.
     * Strings representing numbers are sorted as strings. See [SortOrder](#type-sortorder) for possible values.
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[SortOrderEnum] = js.native
 }
 

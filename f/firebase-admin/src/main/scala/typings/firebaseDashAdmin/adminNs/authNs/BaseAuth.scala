@@ -29,7 +29,7 @@ trait BaseAuth extends js.Object {
     *
     * SAML and OIDC provider support requires Google Cloud's Identity Platform
     * (GCIP). To learn more about GCIP, including pricing and features,
-    * see the [GCIP documentation](https://cloud.google.com/identity-cp).
+    * see the [GCIP documentation](https://cloud.google.com/identity-platform).
     *
     * @param config The provider configuration to create.
     * @return A promise that resolves with the created provider configuration.
@@ -73,7 +73,7 @@ trait BaseAuth extends js.Object {
     *
     * SAML and OIDC provider support requires Google Cloud's Identity Platform
     * (GCIP). To learn more about GCIP, including pricing and features,
-    * see the [GCIP documentation](https://cloud.google.com/identity-cp).
+    * see the [GCIP documentation](https://cloud.google.com/identity-platform).
     *
     * @param providerId The provider ID corresponding to the provider
     *     config to delete.
@@ -252,7 +252,7 @@ trait BaseAuth extends js.Object {
     *
     * SAML and OIDC provider support requires Google Cloud's Identity Platform
     * (GCIP). To learn more about GCIP, including pricing and features,
-    * see the [GCIP documentation](https://cloud.google.com/identity-cp).
+    * see the [GCIP documentation](https://cloud.google.com/identity-platform).
     *
     * @param providerId The provider ID corresponding to the provider
     *     config to return.
@@ -324,7 +324,7 @@ trait BaseAuth extends js.Object {
     *
     * SAML and OIDC provider support requires Google Cloud's Identity Platform
     * (GCIP). To learn more about GCIP, including pricing and features,
-    * see the [GCIP documentation](https://cloud.google.com/identity-cp).
+    * see the [GCIP documentation](https://cloud.google.com/identity-platform).
     *
     * @param options The provider config filter to apply.
     * @return A promise that resolves with the list of provider configs meeting the
@@ -403,7 +403,7 @@ trait BaseAuth extends js.Object {
     *
     * SAML and OIDC provider support requires Google Cloud's Identity Platform
     * (GCIP). To learn more about GCIP, including pricing and features,
-    * see the [GCIP documentation](https://cloud.google.com/identity-cp).
+    * see the [GCIP documentation](https://cloud.google.com/identity-platform).
     *
     * @param providerId The provider ID corresponding to the provider
     *     config to update.

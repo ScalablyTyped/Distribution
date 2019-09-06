@@ -18,6 +18,10 @@ trait Anon_Identities
     * `"google.com"`, `"twitter.com"`, or `"custom"`.
     */
   var sign_in_provider: String
+  /**
+    * The ID of the tenant the user belongs to, if available.
+    */
+  var tenant: js.UndefOr[String] = js.undefined
 }
 
 object Anon_Identities {
@@ -25,10 +29,12 @@ object Anon_Identities {
   def apply(
     identities: StringDictionary[js.Any],
     sign_in_provider: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    tenant: String = null
   ): Anon_Identities = {
     val __obj = js.Dynamic.literal(identities = identities, sign_in_provider = sign_in_provider)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (tenant != null) __obj.updateDynamic("tenant")(tenant)
     __obj.asInstanceOf[Anon_Identities]
   }
 }

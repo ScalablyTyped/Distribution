@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1ListSettlementsRequestNs.OrderEnum
-import typings.squareDashConnect.squareDashConnectMod.V1ListSettlementsRequestNs.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +26,13 @@ class V1ListSettlementsRequest () extends js.Object {
     */
   var limit: js.UndefOr[Double] = js.native
   /**
-    * TThe order in which payments are listed in the response. See [SortOrder](#type-sortorder) for possible values
+    * The order in which payments are listed in the response. See [SortOrder](#type-sortorder) for possible values.
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[String] = js.native
   /**
     * Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
-    * See [V1ListSettlementsRequestStatus](#type-v1listsettlementsrequeststatus) for possible values
+    * See [V1ListSettlementsRequestStatus](#type-v1listsettlementsrequeststatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[String] = js.native
 }
 

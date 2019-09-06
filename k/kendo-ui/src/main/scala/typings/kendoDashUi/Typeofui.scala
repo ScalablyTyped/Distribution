@@ -31,6 +31,7 @@ trait Typeofui extends js.Object {
     js.UndefOr[/* options */ DraggableOptions], 
     typings.kendoDashUi.kendoNs.uiNs.Draggable
   ] = js.native
+  var Drawer: TypeofClassDrawer = js.native
   var DropDownList: TypeofClassDropDownList = js.native
   var DropDownTree: TypeofClassDropDownTree = js.native
   var DropTarget: TypeofClassDropTarget = js.native
@@ -54,6 +55,7 @@ trait Typeofui extends js.Object {
   var MultiViewCalendar: TypeofClassMultiViewCalendar = js.native
   var Notification: TypeofClassNotification = js.native
   var NumericTextBox: TypeofClassNumericTextBox = js.native
+  var PDFViewer: TypeofClassPDFViewer = js.native
   var Pager: TypeofClassPager = js.native
   var PanelBar: TypeofClassPanelBar = js.native
   var PivotConfigurator: TypeofClassPivotConfigurator = js.native

@@ -1,9 +1,17 @@
 package typings.atIonicCore.distTypesComponentsMod.ComponentsNs
 
+import typings.atIonicCore.atIonicCoreStrings.decimal
+import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.atIonicCoreStrings.none
+import typings.atIonicCore.atIonicCoreStrings.numeric
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.on
+import typings.atIonicCore.atIonicCoreStrings.search
+import typings.atIonicCore.atIonicCoreStrings.tel
+import typings.atIonicCore.atIonicCoreStrings.text
+import typings.atIonicCore.atIonicCoreStrings.url
 import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesInterfaceMod.TextFieldTypes
 import typings.std.HTMLInputElement
@@ -53,9 +61,9 @@ trait IonInput extends js.Object {
     */
   var disabled: Boolean
   /**
-    * A hint to the browser for which keyboard to display. This attribute applies when the value of the type attribute is `"text"`, `"password"`, `"email"`, or `"url"`. Possible values are: `"verbatim"`, `"latin"`, `"latin-name"`, `"latin-prose"`, `"full-width-latin"`, `"kana"`, `"katakana"`, `"numeric"`, `"tel"`, `"email"`, `"url"`.
+    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: js.UndefOr[String] = js.undefined
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   /**
     * The maximum value, which must not be less than its minimum (min attribute) value.
     */
@@ -150,7 +158,7 @@ object IonInput {
     accept: String = null,
     clearOnEdit: js.UndefOr[Boolean] = js.undefined,
     color: Color = null,
-    inputmode: String = null,
+    inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     max: String = null,
     maxlength: Int | Double = null,
     min: String = null,
@@ -168,7 +176,7 @@ object IonInput {
     if (accept != null) __obj.updateDynamic("accept")(accept)
     if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode)
+    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max)
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min)

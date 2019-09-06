@@ -14,7 +14,7 @@ trait AuthProviderConfig extends js.Object {
     */
   var displayName: String
   /**
-    * Whether the current provider configuration is enabled or disabled. A user
+    * Whether the provider configuration is enabled or disabled. A user
     * cannot sign in using a disabled provider.
     */
   var enabled: Boolean

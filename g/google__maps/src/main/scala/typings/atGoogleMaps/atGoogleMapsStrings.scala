@@ -741,6 +741,9 @@ object atGoogleMapsStrings {
   sealed trait notFound extends GeolocationErrorReason
   
   @js.native
+  sealed trait now extends js.Object
+  
+  @js.native
   sealed trait opening_hours extends PlaceDetailsRequestField
   
   @js.native
@@ -1526,6 +1529,8 @@ object atGoogleMapsStrings {
   def no: no = "no".asInstanceOf[no]
   @scala.inline
   def notFound: notFound = "notFound".asInstanceOf[notFound]
+  @scala.inline
+  def now: now = "now".asInstanceOf[now]
   @scala.inline
   def opening_hours: opening_hours = "opening_hours".asInstanceOf[opening_hours]
   @scala.inline

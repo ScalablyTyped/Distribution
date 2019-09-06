@@ -25,6 +25,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var getInputElement: js.UndefOr[js.Function0[ReactElement]] = js.undefined
+  /** @deprecated Use `searchValue` instead. */
   var inputValue: js.UndefOr[String] = js.undefined
   var labelInValue: js.UndefOr[Boolean] = js.undefined
   var maxTagCount: js.UndefOr[Double] = js.undefined
@@ -46,6 +47,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var optionFilterProp: js.UndefOr[String] = js.undefined
   var optionLabelProp: js.UndefOr[String] = js.undefined
   var removeIcon: js.UndefOr[ReactNode] = js.undefined
+  var searchValue: js.UndefOr[String] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
   var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
   var value: js.UndefOr[T] = js.undefined
@@ -100,6 +102,7 @@ object SelectProps {
     placeholder: String | ReactNode = null,
     prefixCls: String = null,
     removeIcon: ReactNode = null,
+    searchValue: String = null,
     showAction: String | js.Array[String] = null,
     showArrow: js.UndefOr[Boolean] = js.undefined,
     showSearch: js.UndefOr[Boolean] = js.undefined,
@@ -158,6 +161,7 @@ object SelectProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
+    if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue)
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)

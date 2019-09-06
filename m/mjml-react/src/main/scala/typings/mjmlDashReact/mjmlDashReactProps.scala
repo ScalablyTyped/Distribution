@@ -19,12 +19,6 @@ trait mjmlDashReactProps {
   def MjmlClassProps: Anon_ChildrenKeyName.type = typings.mjmlDashReact.Anon_ChildrenKeyName
   type MjmlClassProps = Anon_ChildrenKeyName
   @scala.inline
-  def MjmlCommentProps: Anon_Children.type = typings.mjmlDashReact.Anon_Children
-  type MjmlCommentProps = Anon_Children
-  @scala.inline
-  def MjmlConditionalCommentProps: Anon_ChildrenCondition.type = typings.mjmlDashReact.Anon_ChildrenCondition
-  type MjmlConditionalCommentProps = Anon_ChildrenCondition
-  @scala.inline
   def MjmlFontProps: typings.mjmlDashReact.mjmlDashReactMod.MjmlFontProps.type = typings.mjmlDashReact.mjmlDashReactMod.MjmlFontProps
   type MjmlFontProps = typings.mjmlDashReact.mjmlDashReactMod.MjmlFontProps
   @scala.inline
@@ -43,10 +37,16 @@ trait mjmlDashReactProps {
   def MjmlTitleProps: Anon_Children.type = typings.mjmlDashReact.Anon_Children
   type MjmlTitleProps = Anon_Children
   @scala.inline
-  def MjmlTrackingPixelProps: Anon_Src.type = typings.mjmlDashReact.Anon_Src
-  type MjmlTrackingPixelProps = Anon_Src
+  def extensionsNsMjmlCommentProps: Anon_Children.type = typings.mjmlDashReact.Anon_Children
+  type extensionsNsMjmlCommentProps = Anon_Children
   @scala.inline
-  def MjmlYahooStyleProps: Anon_Children.type = typings.mjmlDashReact.Anon_Children
-  type MjmlYahooStyleProps = Anon_Children
+  def extensionsNsMjmlConditionalCommentProps: Anon_ChildrenCondition.type = typings.mjmlDashReact.Anon_ChildrenCondition
+  type extensionsNsMjmlConditionalCommentProps = Anon_ChildrenCondition
+  @scala.inline
+  def extensionsNsMjmlTrackingPixelProps: Anon_Src.type = typings.mjmlDashReact.Anon_Src
+  type extensionsNsMjmlTrackingPixelProps = Anon_Src
+  @scala.inline
+  def extensionsNsMjmlYahooStyleProps: Anon_Children.type = typings.mjmlDashReact.Anon_Children
+  type extensionsNsMjmlYahooStyleProps = Anon_Children
 }
 

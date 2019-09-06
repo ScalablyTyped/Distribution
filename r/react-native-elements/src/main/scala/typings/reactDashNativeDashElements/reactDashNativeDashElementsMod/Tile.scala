@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "Tile")
 @js.native
 class Tile ()
-  extends Component[TileProps, js.Any, js.Any]
+  extends Component[TileProps, js.Object, js.Any]
 

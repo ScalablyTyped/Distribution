@@ -11,5 +11,5 @@ package object esUploadInterfaceMod {
 
   type HttpRequestHeader = StringDictionary[String]
   type PreviewFileHandler = js.Function1[/* file */ File | Blob, js.Thenable[String]]
-  type TransformFileHandler = js.Function1[/* file */ UploadFile, String | Blob | File | (js.Thenable[String | Blob | File])]
+  type TransformFileHandler = js.Function1[/* file */ RcFile, String | Blob | File | (js.Thenable[String | Blob | File])]
 }

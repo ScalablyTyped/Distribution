@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1ListTimecardsRequestNs.OrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,23 +12,20 @@ class V1ListTimecardsRequest () extends js.Object {
     */
   var batch_token: js.UndefOr[String] = js.native
   /**
-    * If filtering results by their clockin_time field, the beginning of the requested reporting period, in ISO 8601
-    * format.
+    * If filtering results by their clockin_time field, the beginning of the requested reporting period, in ISO 8601 format.
     */
   var begin_clockin_time: js.UndefOr[String] = js.native
   /**
-    * If filtering results by their clockout_time field, the beginning of the requested reporting period, in ISO 8601
-    * format.
+    * If filtering results by their clockout_time field, the beginning of the requested reporting period, in ISO 8601 format.
     */
   var begin_clockout_time: js.UndefOr[String] = js.native
   /**
-    * If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601
-    * format.
+    * If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format.
     */
   var begin_updated_at: js.UndefOr[String] = js.native
   /**
-    * If true, only deleted timecards are returned. If false, only valid timecards are returned.If you don't provide
-    * this parameter, both valid and deleted timecards are returned.
+    * If true, only deleted timecards are returned. If false, only valid timecards are returned.
+    * If you don't provide this parameter, both valid and deleted timecards are returned.
     */
   var deleted: js.UndefOr[Boolean] = js.native
   /**
@@ -56,6 +52,6 @@ class V1ListTimecardsRequest () extends js.Object {
     * The order in which timecards are listed in the response, based on their created_at field. See
     * [SortOrder](#type-sortorder) for possible values
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[String] = js.native
 }
 

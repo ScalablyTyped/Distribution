@@ -13,12 +13,12 @@ trait StepFunctions extends Service {
   @JSName("config")
   var config_StepFunctions: ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateActivity is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateActivity's idempotency check is based on the activity name. If a following request has different tags values, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, tags will not be updated, even if they are different. 
     */
   def createActivity(): Request[CreateActivityOutput, AWSError] = js.native
   def createActivity(callback: js.Function2[/* err */ AWSError, /* data */ CreateActivityOutput, Unit]): Request[CreateActivityOutput, AWSError] = js.native
   /**
-    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateActivity is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateActivity's idempotency check is based on the activity name. If a following request has different tags values, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, tags will not be updated, even if they are different. 
     */
   def createActivity(params: CreateActivityInput): Request[CreateActivityOutput, AWSError] = js.native
   def createActivity(
@@ -26,12 +26,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateActivityOutput, Unit]
   ): Request[CreateActivityOutput, AWSError] = js.native
   /**
-    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateStateMachine is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateStateMachine's idempotency check is based on the state machine name and definition. If a following request has a different roleArn or tags, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, roleArn and tags will not be updated, even if they are different. 
     */
   def createStateMachine(): Request[CreateStateMachineOutput, AWSError] = js.native
   def createStateMachine(callback: js.Function2[/* err */ AWSError, /* data */ CreateStateMachineOutput, Unit]): Request[CreateStateMachineOutput, AWSError] = js.native
   /**
-    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes.    CreateStateMachine is an idempotent API. Subsequent requests won’t create a duplicate resource if it was already created. CreateStateMachine's idempotency check is based on the state machine name and definition. If a following request has a different roleArn or tags, Step Functions will ignore these differences and treat it as an idempotent request of the previous. In this case, roleArn and tags will not be updated, even if they are different. 
     */
   def createStateMachine(params: CreateStateMachineInput): Request[CreateStateMachineOutput, AWSError] = js.native
   def createStateMachine(
@@ -184,12 +184,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListStateMachinesOutput, Unit]
   ): Request[ListStateMachinesOutput, AWSError] = js.native
   /**
-    * List tags for a given resource.
+    * List tags for a given resource. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * List tags for a given resource.
+    * List tags for a given resource. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(
@@ -197,12 +197,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * Used by workers to report that the task identified by the taskToken failed.
+    * Used by activity workers and task states using the callback pattern to report that the task identified by the taskToken failed.
     */
   def sendTaskFailure(): Request[SendTaskFailureOutput, AWSError] = js.native
   def sendTaskFailure(callback: js.Function2[/* err */ AWSError, /* data */ SendTaskFailureOutput, Unit]): Request[SendTaskFailureOutput, AWSError] = js.native
   /**
-    * Used by workers to report that the task identified by the taskToken failed.
+    * Used by activity workers and task states using the callback pattern to report that the task identified by the taskToken failed.
     */
   def sendTaskFailure(params: SendTaskFailureInput): Request[SendTaskFailureOutput, AWSError] = js.native
   def sendTaskFailure(
@@ -210,12 +210,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SendTaskFailureOutput, Unit]
   ): Request[SendTaskFailureOutput, AWSError] = js.native
   /**
-    * Used by workers to report to the service that the task represented by the specified taskToken is still making progress. This action resets the Heartbeat clock. The Heartbeat threshold is specified in the state machine's Amazon States Language definition. This action does not in itself create an event in the execution history. However, if the task times out, the execution history contains an ActivityTimedOut event.  The Timeout of a task, defined in the state machine's Amazon States Language definition, is its maximum allowed duration, regardless of the number of SendTaskHeartbeat requests received.   This operation is only useful for long-lived tasks to report the liveliness of the task. 
+    * Used by activity workers and task states using the callback pattern to report to Step Functions that the task represented by the specified taskToken is still making progress. This action resets the Heartbeat clock. The Heartbeat threshold is specified in the state machine's Amazon States Language definition (HeartbeatSeconds). This action does not in itself create an event in the execution history. However, if the task times out, the execution history contains an ActivityTimedOut entry for activities, or a TaskTimedOut entry for for tasks using the job run or callback pattern.  The Timeout of a task, defined in the state machine's Amazon States Language definition, is its maximum allowed duration, regardless of the number of SendTaskHeartbeat requests received. Use HeartbeatSeconds to configure the timeout interval for heartbeats. 
     */
   def sendTaskHeartbeat(): Request[SendTaskHeartbeatOutput, AWSError] = js.native
   def sendTaskHeartbeat(callback: js.Function2[/* err */ AWSError, /* data */ SendTaskHeartbeatOutput, Unit]): Request[SendTaskHeartbeatOutput, AWSError] = js.native
   /**
-    * Used by workers to report to the service that the task represented by the specified taskToken is still making progress. This action resets the Heartbeat clock. The Heartbeat threshold is specified in the state machine's Amazon States Language definition. This action does not in itself create an event in the execution history. However, if the task times out, the execution history contains an ActivityTimedOut event.  The Timeout of a task, defined in the state machine's Amazon States Language definition, is its maximum allowed duration, regardless of the number of SendTaskHeartbeat requests received.   This operation is only useful for long-lived tasks to report the liveliness of the task. 
+    * Used by activity workers and task states using the callback pattern to report to Step Functions that the task represented by the specified taskToken is still making progress. This action resets the Heartbeat clock. The Heartbeat threshold is specified in the state machine's Amazon States Language definition (HeartbeatSeconds). This action does not in itself create an event in the execution history. However, if the task times out, the execution history contains an ActivityTimedOut entry for activities, or a TaskTimedOut entry for for tasks using the job run or callback pattern.  The Timeout of a task, defined in the state machine's Amazon States Language definition, is its maximum allowed duration, regardless of the number of SendTaskHeartbeat requests received. Use HeartbeatSeconds to configure the timeout interval for heartbeats. 
     */
   def sendTaskHeartbeat(params: SendTaskHeartbeatInput): Request[SendTaskHeartbeatOutput, AWSError] = js.native
   def sendTaskHeartbeat(
@@ -223,12 +223,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SendTaskHeartbeatOutput, Unit]
   ): Request[SendTaskHeartbeatOutput, AWSError] = js.native
   /**
-    * Used by workers to report that the task identified by the taskToken completed successfully.
+    * Used by activity workers and task states using the callback pattern to report that the task identified by the taskToken completed successfully.
     */
   def sendTaskSuccess(): Request[SendTaskSuccessOutput, AWSError] = js.native
   def sendTaskSuccess(callback: js.Function2[/* err */ AWSError, /* data */ SendTaskSuccessOutput, Unit]): Request[SendTaskSuccessOutput, AWSError] = js.native
   /**
-    * Used by workers to report that the task identified by the taskToken completed successfully.
+    * Used by activity workers and task states using the callback pattern to report that the task identified by the taskToken completed successfully.
     */
   def sendTaskSuccess(params: SendTaskSuccessInput): Request[SendTaskSuccessOutput, AWSError] = js.native
   def sendTaskSuccess(
@@ -262,12 +262,12 @@ trait StepFunctions extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopExecutionOutput, Unit]
   ): Request[StopExecutionOutput, AWSError] = js.native
   /**
-    * Add a tag to a Step Functions resource.
+    * Add a tag to a Step Functions resource. An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide, and Controlling Access Using IAM Tags. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   def tagResource(): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]): Request[TagResourceOutput, AWSError] = js.native
   /**
-    * Add a tag to a Step Functions resource.
+    * Add a tag to a Step Functions resource. An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide, and Controlling Access Using IAM Tags. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   def tagResource(params: TagResourceInput): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(

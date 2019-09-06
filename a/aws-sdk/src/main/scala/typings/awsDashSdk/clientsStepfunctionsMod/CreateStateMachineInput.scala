@@ -10,7 +10,7 @@ trait CreateStateMachineInput extends js.Object {
     */
   var definition: Definition
   /**
-    * The name of the state machine.  A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+    * The name of the state machine.  A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
     */
   var name: Name
   /**
@@ -18,7 +18,7 @@ trait CreateStateMachineInput extends js.Object {
     */
   var roleArn: Arn
   /**
-    * Tags to be added when creating a state machine.
+    * Tags to be added when creating a state machine. An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide, and Controlling Access Using IAM Tags. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }

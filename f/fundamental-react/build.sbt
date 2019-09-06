@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fundamental-react"
-version := "0.5-dt-20190501Z-30bd46"
+version := "0.5-dt-20190501Z-a6b3a6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

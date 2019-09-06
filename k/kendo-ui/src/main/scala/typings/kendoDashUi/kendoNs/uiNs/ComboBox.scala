@@ -17,6 +17,7 @@ class ComboBox protected () extends Widget {
   var list: JQuery = js.native
   @JSName("options")
   var options_ComboBox: ComboBoxOptions = js.native
+  var popup: Popup = js.native
   var ul: JQuery = js.native
   var wrapper: JQuery = js.native
   def close(): Unit = js.native

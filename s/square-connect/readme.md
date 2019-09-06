@@ -1,7 +1,7 @@
 
 # Scala.js typings for square-connect
 
-Typings are for version 2.20190508
+Typings are for version 2.20190814
 
 ## Library description:
 JavaScript client library for the Square Connect v2 API

@@ -1,7 +1,7 @@
 package typings.stripe.stripeMod.checkoutsNs.sessionsNs
 
 import typings.stripe.stripeMod.paymentIntentsNs.IPaymentIntentCaptureOptions
-import typings.stripe.stripeMod.subscriptionsNs.ISubscription
+import typings.stripe.stripeMod.subscriptionsNs.ISubscriptionCustCreationOptions
 import typings.stripe.stripeStrings.auto
 import typings.stripe.stripeStrings.da
 import typings.stripe.stripeStrings.de
@@ -66,7 +66,7 @@ trait ICheckoutCreationOptions extends js.Object {
   /**
     * Use instead of @param line_items when using a subscription
     */
-  var subscription_data: js.UndefOr[ISubscription] = js.undefined
+  var subscription_data: js.UndefOr[ISubscriptionCustCreationOptions] = js.undefined
   /**
     * The url to return to upon successful payment
     */
@@ -86,7 +86,7 @@ object ICheckoutCreationOptions {
     line_items: js.Array[ICheckoutLineItems] = null,
     locale: auto | da | de | en | es | fi | fr | it | ja | nb | nl | pl | pt | sv | zh = null,
     payment_intent_data: IPaymentIntentCaptureOptions = null,
-    subscription_data: ISubscription = null
+    subscription_data: ISubscriptionCustCreationOptions = null
   ): ICheckoutCreationOptions = {
     val __obj = js.Dynamic.literal(cancel_url = cancel_url, payment_method_types = payment_method_types, success_url = success_url)
     if (billing_address_collection != null) __obj.updateDynamic("billing_address_collection")(billing_address_collection.asInstanceOf[js.Any])

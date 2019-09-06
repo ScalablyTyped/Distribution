@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csw-aas-js"
-version := "0.5.4-fe0e44"
+version := "0.5.4-05c9cb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

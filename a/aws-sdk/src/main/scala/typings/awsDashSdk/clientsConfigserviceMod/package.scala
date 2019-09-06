@@ -38,6 +38,8 @@ package object clientsConfigserviceMod {
   type AggregatorRegionList = js.Array[String]
   type AllSupported = scala.Boolean
   type AmazonResourceName = java.lang.String
+  type AutoRemediationAttemptSeconds = Double
+  type AutoRemediationAttempts = Double
   type AvailabilityZone = java.lang.String
   type AwsRegion = java.lang.String
   type BaseConfigurationItems = js.Array[BaseConfigurationItem]
@@ -72,7 +74,7 @@ package object clientsConfigserviceMod {
   type ConfigRuleComplianceSummaryGroupKey = _ConfigRuleComplianceSummaryGroupKey | java.lang.String
   type ConfigRuleEvaluationStatusList = js.Array[ConfigRuleEvaluationStatus]
   type ConfigRuleName = java.lang.String
-  type ConfigRuleNames = js.Array[StringWithCharLimit64]
+  type ConfigRuleNames = js.Array[ConfigRuleName]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
     - typings.awsDashSdk.awsDashSdkStrings.DELETING
@@ -123,7 +125,9 @@ package object clientsConfigserviceMod {
   type EventSource = awsDOTconfig | java.lang.String
   type ExcludedAccounts = js.Array[AccountId]
   type Expression = java.lang.String
+  type FailedDeleteRemediationExceptionsBatches = js.Array[FailedDeleteRemediationExceptionsBatch]
   type FailedRemediationBatches = js.Array[FailedRemediationBatch]
+  type FailedRemediationExceptionBatches = js.Array[FailedRemediationExceptionBatch]
   type FieldInfoList = js.Array[FieldInfo]
   type FieldName = java.lang.String
   type GroupByAPILimit = Double
@@ -198,6 +202,7 @@ package object clientsConfigserviceMod {
   */
   type Owner = _Owner | java.lang.String
   type PendingAggregationRequestList = js.Array[PendingAggregationRequest]
+  type Percentage = Double
   type RecorderName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Pending
@@ -212,6 +217,8 @@ package object clientsConfigserviceMod {
   type RelationshipList = js.Array[Relationship]
   type RelationshipName = java.lang.String
   type RemediationConfigurations = js.Array[RemediationConfiguration]
+  type RemediationExceptionResourceKeys = js.Array[RemediationExceptionResourceKey]
+  type RemediationExceptions = js.Array[RemediationException]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.QUEUED
     - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
@@ -263,55 +270,81 @@ package object clientsConfigserviceMod {
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::VPC`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::VPNConnection`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::VPNGateway`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::RegisteredHAInstance`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::NatGateway`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::EgressOnlyInternetGateway`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::VPCEndpoint`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::VPCEndpointService`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::FlowLog`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::EC2::VPCPeeringConnection`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::IAM::Group`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::IAM::Policy`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::IAM::Role`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::IAM::User`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticLoadBalancingV2::LoadBalancer`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::ACM::Certificate`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBInstance`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBParameterGroup`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBOptionGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBSubnetGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBSecurityGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBSnapshot`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBCluster`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBClusterParameterGroup`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::DBClusterSnapshot`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::RDS::EventSubscription`
-    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticLoadBalancingV2::LoadBalancer`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::S3::Bucket`
-    - typings.awsDashSdk.awsDashSdkStrings.`AWS::SSM::ManagedInstanceInventory`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::S3::AccountPublicAccessBlock`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Redshift::Cluster`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Redshift::ClusterSnapshot`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Redshift::ClusterParameterGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Redshift::ClusterSecurityGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Redshift::ClusterSubnetGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Redshift::EventSubscription`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::SSM::ManagedInstanceInventory`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::CloudWatch::Alarm`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::CloudFormation::Stack`
-    - typings.awsDashSdk.awsDashSdkStrings.`AWS::DynamoDB::Table`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticLoadBalancing::LoadBalancer`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::AutoScaling::AutoScalingGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::AutoScaling::LaunchConfiguration`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::AutoScaling::ScalingPolicy`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::AutoScaling::ScheduledAction`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::DynamoDB::Table`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::CodeBuild::Project`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAF::RateBasedRule`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAF::Rule`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAF::RuleGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAF::WebACL`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAFRegional::RateBasedRule`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAFRegional::Rule`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAFRegional::RuleGroup`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAFRegional::WebACL`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::CloudFront::Distribution`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::CloudFront::StreamingDistribution`
-    - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAF::RuleGroup`
-    - typings.awsDashSdk.awsDashSdkStrings.`AWS::WAFRegional::RuleGroup`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::Lambda::Alias`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Lambda::Function`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticBeanstalk::Application`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticBeanstalk::ApplicationVersion`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticBeanstalk::Environment`
-    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ElasticLoadBalancing::LoadBalancer`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::MobileHub::Project`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::XRay::EncryptionConfig`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::SSM::AssociationCompliance`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::SSM::PatchCompliance`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Shield::Protection`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::ShieldRegional::Protection`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::Config::ResourceCompliance`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::LicenseManager::LicenseConfiguration`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGateway::DomainName`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGateway::Method`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGateway::Stage`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGateway::RestApi`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGatewayV2::DomainName`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGatewayV2::Stage`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ApiGatewayV2::Api`
     - typings.awsDashSdk.awsDashSdkStrings.`AWS::CodePipeline::Pipeline`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ServiceCatalog::CloudFormationProvisionedProduct`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ServiceCatalog::CloudFormationProduct`
+    - typings.awsDashSdk.awsDashSdkStrings.`AWS::ServiceCatalog::Portfolio`
     - java.lang.String
   */
   type ResourceType = _ResourceType | java.lang.String

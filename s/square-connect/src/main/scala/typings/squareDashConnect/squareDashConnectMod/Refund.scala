@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Refund () extends js.Object {
   /**
-    * Additional recipients (other than the merchant) receiving a portion of this refund. For example, fees assessed on
-    * a refund of a purchase by a third party integration.
+    * Additional recipients (other than the merchant) receiving a portion of this refund.
+    * For example, fees assessed on a refund of a purchase by a third party integration.
     */
   var additional_recipients: js.UndefOr[js.Array[AdditionalRecipient]] = js.native
   /**

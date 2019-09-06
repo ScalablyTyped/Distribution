@@ -39,7 +39,7 @@ trait TableProps[T] extends js.Object {
       ReactNode
     ]
   ] = js.undefined
-  var footer: js.UndefOr[js.Function1[/* currentPageData */ js.Array[js.Object], ReactNode]] = js.undefined
+  var footer: js.UndefOr[js.Function1[/* currentPageData */ js.Array[T], ReactNode]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var indentSize: js.UndefOr[Double] = js.undefined
   var loading: js.UndefOr[Boolean | SpinProps] = js.undefined
@@ -68,7 +68,7 @@ trait TableProps[T] extends js.Object {
   var size: js.UndefOr[TableSize] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[js.Function1[/* currentPageData */ js.Array[js.Object], ReactNode]] = js.undefined
+  var title: js.UndefOr[js.Function1[/* currentPageData */ js.Array[T], ReactNode]] = js.undefined
   var useFixedHeader: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -92,7 +92,7 @@ object TableProps {
     expandRowByClick: js.UndefOr[Boolean] = js.undefined,
     expandedRowKeys: js.Array[Double | String] = null,
     expandedRowRender: (/* record */ T, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode = null,
-    footer: /* currentPageData */ js.Array[js.Object] => ReactNode = null,
+    footer: /* currentPageData */ js.Array[T] => ReactNode = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     indentSize: Int | Double = null,
     loading: Boolean | SpinProps = null,
@@ -113,7 +113,7 @@ object TableProps {
     size: TableSize = null,
     sortDirections: js.Array[SortOrder] = null,
     style: CSSProperties = null,
-    title: /* currentPageData */ js.Array[js.Object] => ReactNode = null,
+    title: /* currentPageData */ js.Array[T] => ReactNode = null,
     useFixedHeader: js.UndefOr[Boolean] = js.undefined
   ): TableProps[T] = {
     val __obj = js.Dynamic.literal()

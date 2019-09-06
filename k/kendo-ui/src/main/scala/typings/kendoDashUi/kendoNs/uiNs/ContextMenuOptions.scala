@@ -1,6 +1,7 @@
 package typings.kendoDashUi.kendoNs.uiNs
 
 import typings.kendoDashUi.JQuery
+import typings.kendoDashUi.kendoNs.dataNs.HierarchicalDataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,12 @@ trait ContextMenuOptions extends js.Object {
   var close: js.UndefOr[js.Function1[/* e */ ContextMenuCloseEvent, Unit]] = js.undefined
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
   var copyAnchorStyles: js.UndefOr[Boolean] = js.undefined
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataContentField: js.UndefOr[String] = js.undefined
+  var dataImageUrlField: js.UndefOr[String] = js.undefined
+  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
+  var dataTextField: js.UndefOr[String] = js.undefined
+  var dataUrlField: js.UndefOr[String] = js.undefined
   var deactivate: js.UndefOr[js.Function1[/* e */ ContextMenuDeactivateEvent, Unit]] = js.undefined
   var direction: js.UndefOr[String] = js.undefined
   var filter: js.UndefOr[String] = js.undefined
@@ -22,6 +28,7 @@ trait ContextMenuOptions extends js.Object {
   var open: js.UndefOr[js.Function1[/* e */ ContextMenuOpenEvent, Unit]] = js.undefined
   var orientation: js.UndefOr[String] = js.undefined
   var popupCollision: js.UndefOr[String] = js.undefined
+  var scrollable: js.UndefOr[Boolean | ContextMenuScrollable] = js.undefined
   var select: js.UndefOr[js.Function1[/* e */ ContextMenuSelectEvent, Unit]] = js.undefined
   var showOn: js.UndefOr[String] = js.undefined
   var target: js.UndefOr[String | JQuery] = js.undefined
@@ -37,7 +44,12 @@ object ContextMenuOptions {
     close: /* e */ ContextMenuCloseEvent => Unit = null,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
     copyAnchorStyles: js.UndefOr[Boolean] = js.undefined,
-    dataSource: js.Any = null,
+    dataContentField: String = null,
+    dataImageUrlField: String = null,
+    dataSource: js.Any | HierarchicalDataSource = null,
+    dataSpriteCssClassField: String = null,
+    dataTextField: String = null,
+    dataUrlField: String = null,
     deactivate: /* e */ ContextMenuDeactivateEvent => Unit = null,
     direction: String = null,
     filter: String = null,
@@ -46,6 +58,7 @@ object ContextMenuOptions {
     open: /* e */ ContextMenuOpenEvent => Unit = null,
     orientation: String = null,
     popupCollision: String = null,
+    scrollable: Boolean | ContextMenuScrollable = null,
     select: /* e */ ContextMenuSelectEvent => Unit = null,
     showOn: String = null,
     target: String | JQuery = null
@@ -58,7 +71,12 @@ object ContextMenuOptions {
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
     if (!js.isUndefined(copyAnchorStyles)) __obj.updateDynamic("copyAnchorStyles")(copyAnchorStyles)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataContentField != null) __obj.updateDynamic("dataContentField")(dataContentField)
+    if (dataImageUrlField != null) __obj.updateDynamic("dataImageUrlField")(dataImageUrlField)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (dataSpriteCssClassField != null) __obj.updateDynamic("dataSpriteCssClassField")(dataSpriteCssClassField)
+    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField)
+    if (dataUrlField != null) __obj.updateDynamic("dataUrlField")(dataUrlField)
     if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction1(deactivate))
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (filter != null) __obj.updateDynamic("filter")(filter)
@@ -67,6 +85,7 @@ object ContextMenuOptions {
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (popupCollision != null) __obj.updateDynamic("popupCollision")(popupCollision)
+    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (showOn != null) __obj.updateDynamic("showOn")(showOn)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

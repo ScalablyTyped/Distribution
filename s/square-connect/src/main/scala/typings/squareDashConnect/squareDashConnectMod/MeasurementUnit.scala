@@ -20,9 +20,19 @@ class MeasurementUnit () extends js.Object {
     */
   var custom_unit: js.UndefOr[MeasurementUnitCustom] = js.native
   /**
+    * Reserved for API integrations that lack the ability to specify a real measurement unit.
+    * See [MeasurementUnitGeneric](#type-measurementunitgeneric) for possible values.
+    */
+  var generic_unit: js.UndefOr[String] = js.native
+  /**
     * Represents a standard length unit. See [MeasurementUnitLength](#type-measurementunitlength) for possible values.
     */
   var length_unit: js.UndefOr[LengthUnitEnum] = js.native
+  /**
+    * Represents the type of the measurement unit.
+    * See [MeasurementUnitUnitType](#type-measurementunitunittype) for possible values.
+    */
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Represents a standard volume unit. See [MeasurementUnitVolume](#type-measurementunitvolume) for possible values.
     */

@@ -1,11 +1,6 @@
 package typings.fundamentalDashReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps
-import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps
-import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps
-import typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps
-import typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps
 import typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavigationProps
 import typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeBranchProps
 import typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeColProps
@@ -21,11 +16,17 @@ object fundamentalDashReactComponents extends fundamentalDashReactProps {
   @scala.inline
   def ActionBar: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarProps] = js.constructorOf[typings.fundamentalDashReact.libActionBarActionBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarProps]]
   @scala.inline
-  def Actions: ComponentType[ActionBarActionsProps] = typings.fundamentalDashReact.libActionBarActionBarMod.default.Actions.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps]]
+  def ActionBarActions: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps] = typings.fundamentalDashReact.libActionBarMod.ActionBar.Actions.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps]]
+  @scala.inline
+  def ActionBarBack: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps] = typings.fundamentalDashReact.libActionBarMod.ActionBar.Back.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps]]
+  @scala.inline
+  def ActionBarHeader: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps] = typings.fundamentalDashReact.libActionBarMod.ActionBar.Header.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps]]
+  @scala.inline
+  def Actions: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps] = typings.fundamentalDashReact.libActionBarActionBarMod.default.Actions.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps]]
   @scala.inline
   def Alert: ComponentType[typings.fundamentalDashReact.libAlertAlertMod.AlertProps] = js.constructorOf[typings.fundamentalDashReact.libAlertAlertMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libAlertAlertMod.AlertProps]]
   @scala.inline
-  def Back: ComponentType[ActionBarBackProps] = typings.fundamentalDashReact.libActionBarActionBarMod.default.Back.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps]]
+  def Back: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps] = typings.fundamentalDashReact.libActionBarActionBarMod.default.Back.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps]]
   @scala.inline
   def Badge: ComponentType[typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps] = typings.fundamentalDashReact.libBadgeBadgeMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps]]
   @scala.inline
@@ -49,7 +50,7 @@ object fundamentalDashReactComponents extends fundamentalDashReactProps {
   @scala.inline
   def FormFieldset: ComponentType[typings.fundamentalDashReact.libFormsFormFieldsetMod.FormFieldsetProps] = typings.fundamentalDashReact.libFormsFormFieldsetMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libFormsFormFieldsetMod.FormFieldsetProps]]
   @scala.inline
-  def FormGroup: ComponentType[StringDictionary[js.Any]] = typings.fundamentalDashReact.libInputGroupFormGroupMod.default.asInstanceOf[typings.react.reactMod.ComponentType[org.scalablytyped.runtime.StringDictionary[js.Any]]]
+  def FormGroup: ComponentType[StringDictionary[js.Any]] = typings.fundamentalDashReact.libInputGroupMod.^.FormGroup.asInstanceOf[typings.react.reactMod.ComponentType[org.scalablytyped.runtime.StringDictionary[js.Any]]]
   @scala.inline
   def FormInput: ComponentType[typings.fundamentalDashReact.libFormsFormInputMod.FormInputProps] = typings.fundamentalDashReact.libFormsFormInputMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libFormsFormInputMod.FormInputProps]]
   @scala.inline
@@ -73,7 +74,7 @@ object fundamentalDashReactComponents extends fundamentalDashReactProps {
   @scala.inline
   def Head: ComponentType[TreeHeadProps] = typings.fundamentalDashReact.libTreeViewTreeViewMod.default.Head.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeHeadProps]]
   @scala.inline
-  def Header: ComponentType[ActionBarHeaderProps] = typings.fundamentalDashReact.libActionBarActionBarMod.default.Header.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps]]
+  def Header: ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps] = typings.fundamentalDashReact.libActionBarActionBarMod.default.Header.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps]]
   @scala.inline
   def Icon: ComponentType[typings.fundamentalDashReact.libIconIconMod.IconProps] = typings.fundamentalDashReact.libIconIconMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libIconIconMod.IconProps]]
   @scala.inline
@@ -89,9 +90,9 @@ object fundamentalDashReactComponents extends fundamentalDashReactProps {
   @scala.inline
   def Label: ComponentType[typings.fundamentalDashReact.libBadgeLabelMod.LabelProps] = typings.fundamentalDashReact.libBadgeLabelMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeLabelMod.LabelProps]]
   @scala.inline
-  def List: ComponentType[SideNavListProps] = typings.fundamentalDashReact.libSideNavigationSideNavMod.default.List.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps]]
+  def List: ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps] = typings.fundamentalDashReact.libSideNavigationSideNavMod.default.List.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps]]
   @scala.inline
-  def ListItem: ComponentType[SideNavListItemProps] = typings.fundamentalDashReact.libSideNavigationSideNavMod.default.ListItem.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps]]
+  def ListItem: ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps] = typings.fundamentalDashReact.libSideNavigationSideNavMod.default.ListItem.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps]]
   @scala.inline
   def LocalizationEditor: ComponentType[
     typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
@@ -116,6 +117,10 @@ object fundamentalDashReactComponents extends fundamentalDashReactProps {
   @scala.inline
   def SideNav: ComponentType[SideNavigationProps] = js.constructorOf[typings.fundamentalDashReact.libSideNavigationSideNavMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavigationProps]]
   @scala.inline
+  def SideNavList: ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps] = typings.fundamentalDashReact.libSideNavigationMod.SideNav.List.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps]]
+  @scala.inline
+  def SideNavListItem: ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps] = typings.fundamentalDashReact.libSideNavigationMod.SideNav.ListItem.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps]]
+  @scala.inline
   def Status: ComponentType[typings.fundamentalDashReact.libBadgeStatusMod.StatusProps] = typings.fundamentalDashReact.libBadgeStatusMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeStatusMod.StatusProps]]
   @scala.inline
   def Tab: ComponentType[typings.fundamentalDashReact.libTabsTabMod.TabProps] = typings.fundamentalDashReact.libTabsTabMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTabsTabMod.TabProps]]
@@ -137,5 +142,56 @@ object fundamentalDashReactComponents extends fundamentalDashReactProps {
   def Tree: ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps] = typings.fundamentalDashReact.libTreeViewTreeViewMod.default.Tree.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps]]
   @scala.inline
   def TreeView: ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeViewProps] = js.constructorOf[typings.fundamentalDashReact.libTreeViewTreeViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeViewProps]]
+  @scala.inline
+  def TreeViewBranch: ComponentType[TreeBranchProps] = typings.fundamentalDashReact.libTreeViewMod.TreeView.Branch.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeBranchProps]]
+  @scala.inline
+  def TreeViewCol: ComponentType[TreeColProps] = typings.fundamentalDashReact.libTreeViewMod.TreeView.Col.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeColProps]]
+  @scala.inline
+  def TreeViewHead: ComponentType[TreeHeadProps] = typings.fundamentalDashReact.libTreeViewMod.TreeView.Head.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeHeadProps]]
+  @scala.inline
+  def TreeViewItem: ComponentType[TreeItemProps] = typings.fundamentalDashReact.libTreeViewMod.TreeView.Item.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeItemProps]]
+  @scala.inline
+  def TreeViewRow: ComponentType[TreeRowProps] = typings.fundamentalDashReact.libTreeViewMod.TreeView.Row.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeRowProps]]
+  @scala.inline
+  def TreeViewTree: ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps] = typings.fundamentalDashReact.libTreeViewMod.TreeView.Tree.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps]]
+  @scala.inline
+  def libBadgeModBadge: ComponentType[typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps] = typings.fundamentalDashReact.libBadgeMod.Badge.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps]]
+  @scala.inline
+  def libBadgeModCounter: ComponentType[typings.fundamentalDashReact.libBadgeCounterMod.CounterProps] = typings.fundamentalDashReact.libBadgeMod.Counter.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeCounterMod.CounterProps]]
+  @scala.inline
+  def libBadgeModLabel: ComponentType[typings.fundamentalDashReact.libBadgeLabelMod.LabelProps] = typings.fundamentalDashReact.libBadgeMod.Label.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeLabelMod.LabelProps]]
+  @scala.inline
+  def libBadgeModStatus: ComponentType[typings.fundamentalDashReact.libBadgeStatusMod.StatusProps] = typings.fundamentalDashReact.libBadgeMod.Status.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libBadgeStatusMod.StatusProps]]
+  @scala.inline
+  def libButtonModButton: ComponentType[typings.fundamentalDashReact.libButtonButtonMod.ButtonProps] = typings.fundamentalDashReact.libButtonMod.Button.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libButtonButtonMod.ButtonProps]]
+  @scala.inline
+  def libButtonModButtonGroup: ComponentType[typings.fundamentalDashReact.libButtonButtonGroupMod.ButtonGroupProps] = typings.fundamentalDashReact.libButtonMod.ButtonGroup.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libButtonButtonGroupMod.ButtonGroupProps]]
+  @scala.inline
+  def libComboboxInputModComboboxInput: ComponentType[typings.fundamentalDashReact.libComboboxInputComboboxInputMod.ComboboxInputProps] = typings.fundamentalDashReact.libComboboxInputMod.ComboboxInput.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libComboboxInputComboboxInputMod.ComboboxInputProps]]
+  @scala.inline
+  def libDropdownModDropdown: ComponentType[typings.fundamentalDashReact.libDropdownDropdownMod.DropdownProps] = typings.fundamentalDashReact.libDropdownMod.Dropdown.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libDropdownDropdownMod.DropdownProps]]
+  @scala.inline
+  def libIconModIcon: ComponentType[typings.fundamentalDashReact.libIconIconMod.IconProps] = typings.fundamentalDashReact.libIconMod.Icon.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libIconIconMod.IconProps]]
+  @scala.inline
+  def libIdentifierModIdentifier: ComponentType[typings.fundamentalDashReact.libIdentifierIdentifierMod.IdentifierProps] = typings.fundamentalDashReact.libIdentifierMod.Identifier.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libIdentifierIdentifierMod.IdentifierProps]]
+  @scala.inline
+  def libImageModImage: ComponentType[typings.fundamentalDashReact.libImageImageMod.ImageProps] = typings.fundamentalDashReact.libImageMod.Image.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libImageImageMod.ImageProps]]
+  @scala.inline
+  def libInlineHelpModInlineHelp: ComponentType[typings.fundamentalDashReact.libInlineHelpInlineHelpMod.InlineHelpProps] = typings.fundamentalDashReact.libInlineHelpMod.InlineHelp.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libInlineHelpInlineHelpMod.InlineHelpProps]]
+  @scala.inline
+  def libInputGroupFormGroupModFormGroup: ComponentType[StringDictionary[js.Any]] = typings.fundamentalDashReact.libInputGroupFormGroupMod.default.asInstanceOf[typings.react.reactMod.ComponentType[org.scalablytyped.runtime.StringDictionary[js.Any]]]
+  @scala.inline
+  def libLocalizationEditorModLocalizationEditor: ComponentType[
+    typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
+  ] = typings.fundamentalDashReact.libLocalizationEditorMod.LocalizationEditor.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps]]
+  @scala.inline
+  def libPanelModPanelGrid: ComponentType[typings.fundamentalDashReact.libPanelPanelGridMod.PanelGridProps] = typings.fundamentalDashReact.libPanelMod.PanelGrid.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libPanelPanelGridMod.PanelGridProps]]
+  @scala.inline
+  def libTableModTable: ComponentType[typings.fundamentalDashReact.libTableTableMod.TableProps] = typings.fundamentalDashReact.libTableMod.Table.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTableTableMod.TableProps]]
+  @scala.inline
+  def libTileModTileGrid: ComponentType[typings.fundamentalDashReact.libTileTileGridMod.TileGridProps] = typings.fundamentalDashReact.libTileMod.TileGrid.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTileTileGridMod.TileGridProps]]
+  @scala.inline
+  def libTokenModToken: ComponentType[typings.fundamentalDashReact.libTokenTokenMod.TokenProps] = typings.fundamentalDashReact.libTokenMod.Token.asInstanceOf[typings.react.reactMod.ComponentType[typings.fundamentalDashReact.libTokenTokenMod.TokenProps]]
 }
 

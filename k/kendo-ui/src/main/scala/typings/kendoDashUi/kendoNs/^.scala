@@ -3,6 +3,7 @@ package typings.kendoDashUi.kendoNs
 import typings.kendoDashUi.Anon_Calendar
 import typings.kendoDashUi.JQuery
 import typings.kendoDashUi.JQueryPromise
+import typings.kendoDashUi.TypeofClassWidget
 import typings.kendoDashUi.Typeofui
 import typings.kendoDashUi.TypeofuiActionSheet
 import typings.kendoDashUi.TypeofuiArcGauge
@@ -51,6 +52,10 @@ object ^ extends js.Object {
   def init(element: JQuery, namespaces: js.Any*): Unit = js.native
   def init(element: Element, namespaces: js.Any*): Unit = js.native
   def init(selector: String, namespaces: js.Any*): Unit = js.native
+  def notify(widget: TypeofClassWidget): Unit = js.native
+  def notify(widget: TypeofClassWidget, namespace: Typeofui): Unit = js.native
+  def notify(widget: TypeofClassWidget, namespace: TypeofuiActionSheet): Unit = js.native
+  def notify(widget: TypeofClassWidget, namespace: TypeofuiArcGauge): Unit = js.native
   def observable(data: js.Any): ObservableObject = js.native
   def observableHierarchy(array: js.Any): Unit = js.native
   def observableHierarchy(array: js.Array[_]): ObservableArray = js.native

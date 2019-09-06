@@ -86,9 +86,9 @@ trait ICharge extends IResourceObject {
     */
   var destination: js.UndefOr[String | IAccount | Null] = js.undefined
   /**
-    * Details about the dispute if the charge has been disputed.
+    * Details about the dispute if the charge has been disputed. [Expandable]
     */
-  var dispute: js.UndefOr[IDispute | Null] = js.undefined
+  var dispute: js.UndefOr[String | IDispute | Null] = js.undefined
   /**
     * Error code explaining reason for charge failure if available (see the errors section for a list of
     * codes: https://stripe.com/docs/api#errors).
@@ -249,7 +249,7 @@ object ICharge {
     customer: String | ICustomer = null,
     description: String = null,
     destination: String | IAccount = null,
-    dispute: IDispute = null,
+    dispute: String | IDispute = null,
     failure_code: String = null,
     failure_message: String = null,
     invoice: String | IInvoice = null,
@@ -280,7 +280,7 @@ object ICharge {
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (dispute != null) __obj.updateDynamic("dispute")(dispute)
+    if (dispute != null) __obj.updateDynamic("dispute")(dispute.asInstanceOf[js.Any])
     if (failure_code != null) __obj.updateDynamic("failure_code")(failure_code)
     if (failure_message != null) __obj.updateDynamic("failure_message")(failure_message)
     if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])

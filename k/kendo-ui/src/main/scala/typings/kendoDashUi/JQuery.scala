@@ -62,6 +62,7 @@ import typings.kendoDashUi.kendoDashUiStrings.kendoMultiSelect
 import typings.kendoDashUi.kendoDashUiStrings.kendoMultiViewCalendar
 import typings.kendoDashUi.kendoDashUiStrings.kendoNotification
 import typings.kendoDashUi.kendoDashUiStrings.kendoNumericTextBox
+import typings.kendoDashUi.kendoDashUiStrings.kendoPDFViewer
 import typings.kendoDashUi.kendoDashUiStrings.kendoPager
 import typings.kendoDashUi.kendoDashUiStrings.kendoPanelBar
 import typings.kendoDashUi.kendoDashUiStrings.kendoPivotConfigurator
@@ -221,6 +222,8 @@ import typings.kendoDashUi.kendoNs.uiNs.Notification
 import typings.kendoDashUi.kendoNs.uiNs.NotificationOptions
 import typings.kendoDashUi.kendoNs.uiNs.NumericTextBox
 import typings.kendoDashUi.kendoNs.uiNs.NumericTextBoxOptions
+import typings.kendoDashUi.kendoNs.uiNs.PDFViewer
+import typings.kendoDashUi.kendoNs.uiNs.PDFViewerOptions
 import typings.kendoDashUi.kendoNs.uiNs.Pager
 import typings.kendoDashUi.kendoNs.uiNs.PagerOptions
 import typings.kendoDashUi.kendoNs.uiNs.PanelBar
@@ -398,6 +401,8 @@ trait JQuery extends js.Object {
   def data_kendoNotification(key: kendoNotification): Notification = js.native
   @JSName("data")
   def data_kendoNumericTextBox(key: kendoNumericTextBox): NumericTextBox = js.native
+  @JSName("data")
+  def data_kendoPDFViewer(key: kendoPDFViewer): PDFViewer = js.native
   @JSName("data")
   def data_kendoPager(key: kendoPager): Pager = js.native
   @JSName("data")
@@ -584,6 +589,8 @@ trait JQuery extends js.Object {
   def kendoNotification(options: NotificationOptions): JQuery = js.native
   def kendoNumericTextBox(): JQuery = js.native
   def kendoNumericTextBox(options: NumericTextBoxOptions): JQuery = js.native
+  def kendoPDFViewer(): JQuery = js.native
+  def kendoPDFViewer(options: PDFViewerOptions): JQuery = js.native
   def kendoPager(): JQuery = js.native
   def kendoPager(options: PagerOptions): JQuery = js.native
   def kendoPanelBar(): JQuery = js.native

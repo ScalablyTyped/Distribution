@@ -55,6 +55,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var `ion-modal`: HTMLIonModalElement
   var `ion-modal-controller`: HTMLIonModalControllerElement
   var `ion-nav`: HTMLIonNavElement
+  var `ion-nav-link`: HTMLIonNavLinkElement
   var `ion-nav-pop`: HTMLIonNavPopElement
   var `ion-nav-push`: HTMLIonNavPushElement
   var `ion-nav-set-root`: HTMLIonNavSetRootElement
@@ -158,6 +159,7 @@ object HTMLElementTagNameMap {
     `ion-modal`: HTMLIonModalElement,
     `ion-modal-controller`: HTMLIonModalControllerElement,
     `ion-nav`: HTMLIonNavElement,
+    `ion-nav-link`: HTMLIonNavLinkElement,
     `ion-nav-pop`: HTMLIonNavPopElement,
     `ion-nav-push`: HTMLIonNavPushElement,
     `ion-nav-set-root`: HTMLIonNavSetRootElement,
@@ -258,6 +260,7 @@ object HTMLElementTagNameMap {
     __obj.updateDynamic("ion-modal")(`ion-modal`)
     __obj.updateDynamic("ion-modal-controller")(`ion-modal-controller`)
     __obj.updateDynamic("ion-nav")(`ion-nav`)
+    __obj.updateDynamic("ion-nav-link")(`ion-nav-link`)
     __obj.updateDynamic("ion-nav-pop")(`ion-nav-pop`)
     __obj.updateDynamic("ion-nav-push")(`ion-nav-push`)
     __obj.updateDynamic("ion-nav-set-root")(`ion-nav-set-root`)

@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CatalogDiscountNs.DiscountTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatalogDiscount () extends js.Object {
   /**
-    * The amount of the discount. Specify an amount of `0` if `discount_type` is `VARIABLE_AMOUNT`.  Do not include
-    * this field for percentage-based or variable discounts.
+    * The amount of the discount. Specify an amount of `0` if `discount_type` is `VARIABLE_AMOUNT`.
+    * Do not include this field for percentage-based or variable discounts.
     */
   var amount_money: js.UndefOr[Money] = js.native
   /**
@@ -29,7 +28,7 @@ class CatalogDiscount () extends js.Object {
   /**
     * The percentage of the discount as a string representation of a decimal number, using a `.` as the decimal
     * separator and without a `%` sign. A value of `7.5` corresponds to `7.5%`. Specify a percentage of `0` if
-    * `discount_type` is `VARIABLE_PERCENTAGE`.  Do not include this field for amount-based or variable discounts.
+    * `discount_type` is `VARIABLE_PERCENTAGE`. Do not include this field for amount-based or variable discounts.
     */
   var percentage: js.UndefOr[String] = js.native
   /**

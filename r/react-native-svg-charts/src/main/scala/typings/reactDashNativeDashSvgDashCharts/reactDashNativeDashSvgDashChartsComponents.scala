@@ -3,7 +3,10 @@ package typings.reactDashNativeDashSvgDashCharts
 import typings.react.reactMod.ComponentType
 import typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.AnimatedPathProps
 import typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.ChartProps
+import typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps
 import typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChartData
+import typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps
+import typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,15 +23,19 @@ object reactDashNativeDashSvgDashChartsComponents extends reactDashNativeDashSvg
   ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChart[T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChartProps[T]]]
   @scala.inline
+  def DecoratorsNsHorizontalLine: ComponentType[HorizontalLineProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.HorizontalLine].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps]]
+  @scala.inline
+  def DecoratorsNsPoint: ComponentType[PointProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.Point].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps]]
+  @scala.inline
+  def DecoratorsNsTooltip: ComponentType[TooltipProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.Tooltip].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps]]
+  @scala.inline
   def Grid[T]: ComponentType[
     typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.GridProps[T]
   ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.Grid[T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.GridProps[T]]]
-  @scala.inline
-  def HorizontalLine: ComponentType[
-    typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps
-  ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.HorizontalLine].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps]]
   @scala.inline
   def LineChart[T]: ComponentType[ChartProps[T]] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.LineChart[T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.ChartProps[T]]]
@@ -40,11 +47,6 @@ object reactDashNativeDashSvgDashChartsComponents extends reactDashNativeDashSvg
     typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChartProps[T]
   ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChart[T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChartProps[T]]]
-  @scala.inline
-  def Point: ComponentType[
-    typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps
-  ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.Point].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps]]
   @scala.inline
   def ProgressCircle: ComponentType[
     typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.ProgressCircleProps
@@ -60,11 +62,6 @@ object reactDashNativeDashSvgDashChartsComponents extends reactDashNativeDashSvg
     typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.StackedBarChartProps[T]
   ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.StackedBarChart[T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.StackedBarChartProps[T]]]
-  @scala.inline
-  def Tooltip: ComponentType[
-    typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps
-  ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.Tooltip].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps]]
   @scala.inline
   def XAxis[T]: ComponentType[
     typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.XAxisProps[T]

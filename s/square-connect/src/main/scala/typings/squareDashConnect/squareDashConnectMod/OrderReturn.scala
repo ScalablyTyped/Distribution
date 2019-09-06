@@ -12,7 +12,8 @@ class OrderReturn () extends js.Object {
     */
   var return_amounts: js.UndefOr[OrderMoneyAmounts] = js.native
   /**
-    * Collection of discounts which are being returned.
+    * Collection of references to discounts being returned for an order, including the total applied discount amount to be returned.
+    * The discounts must reference a top-level discount ID from the source order.
     */
   var return_discounts: js.UndefOr[js.Array[OrderReturnDiscount]] = js.native
   /**
@@ -20,7 +21,12 @@ class OrderReturn () extends js.Object {
     */
   var return_line_items: js.UndefOr[js.Array[OrderReturnLineItem]] = js.native
   /**
-    * Collection of taxes which are being returned.
+    * Collection of service charges which are being returned.
+    */
+  var return_service_charges: js.UndefOr[js.Array[OrderReturnServiceCharge]] = js.native
+  /**
+    * Collection of references to taxes being returned for an order, including the total applied tax amount to be returned.
+    * The taxes must reference a top-level tax ID from the source order.
     */
   var return_taxes: js.UndefOr[js.Array[OrderReturnTax]] = js.native
   /**
@@ -33,7 +39,7 @@ class OrderReturn () extends js.Object {
     */
   var source_order_id: js.UndefOr[String] = js.native
   /**
-    * The return's Unique identifier, unique only within this order. This field is read-only.
+    * Unique ID that identifies the return only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

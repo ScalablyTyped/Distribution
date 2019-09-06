@@ -38,6 +38,7 @@ object webglNs extends js.Object {
     def this(gpgpu: typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreContextMod.GPGPUContext) = this()
   }
   
+  def forceHalfFloat(): Unit = js.native
   def setWebGLContext(webGLVersion: Double, gl: WebGLRenderingContext): Unit = js.native
   @JSName("gpgpu_util")
   @js.native
@@ -172,8 +173,8 @@ object webglNs extends js.Object {
     def getWebGLErrorMessage(gl: WebGLRenderingContext, status: Double): String = js.native
     def getWebGLMaxTextureSize(webGLVersion: Double): Double = js.native
     def hasExtension(gl: WebGLRenderingContext, extensionName: String): Boolean = js.native
+    def isCapableOfRenderingToFloatTexture(webGLVersion: Double): Boolean = js.native
     def isDownloadFloatTextureEnabled(webGLVersion: Double): Boolean = js.native
-    def isRenderToFloatTextureEnabled(webGLVersion: Double): Boolean = js.native
     def isReshapeFree(shape1: js.Array[Double], shape2: js.Array[Double]): Boolean = js.native
     def isWebGLFenceEnabled(webGLVersion: Double): Boolean = js.native
     @JSName("isWebGLVersionEnabled")

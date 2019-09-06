@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__core"
-version := "3.18.0-623218"
+version := "3.18.0-a7718e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

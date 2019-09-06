@@ -3,6 +3,7 @@ package typings.kendoDashUi.kendoNs.uiNs
 import typings.kendoDashUi.JQuery
 import typings.kendoDashUi.JQueryPromise
 import typings.kendoDashUi.kendoNs.dataNs.DataSource
+import typings.kendoDashUi.kendoNs.dataNs.ObservableArray
 import typings.kendoDashUi.kendoNs.dataNs.ObservableObject
 import typings.std.Element
 import scala.scalajs.js
@@ -51,6 +52,7 @@ class Grid protected () extends Widget {
   def dataItem(row: String): ObservableObject = js.native
   def dataItem(row: JQuery): ObservableObject = js.native
   def dataItem(row: Element): ObservableObject = js.native
+  def dataItems(): ObservableArray = js.native
   def editCell(cell: JQuery): Unit = js.native
   def editRow(row: JQuery): Unit = js.native
   def expandGroup(row: String): Unit = js.native

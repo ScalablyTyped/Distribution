@@ -13,14 +13,14 @@ class CreateOrderRequest () extends js.Object {
     */
   var discounts: js.UndefOr[js.Array[CreateOrderRequestDiscount]] = js.native
   /**
-    * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a
+    * A value you specify that uniquely identifies this order among orders you've created. If you're unsure whether a
     * particular order was created successfully, you can reattempt it with the same idempotency key without worrying
     * about creating duplicate orders. See [Idempotency](/basics/api101/idempotency) for more information.
     */
   var idempotency_key: js.UndefOr[String] = js.native
   /**
-    * @deprecated Please set the line_items on the nested [order](#type-order) field instead.  The line items to
-    * associate with this order.  Each line item represents a different product to include in a purchase.
+    * @deprecated Please set the line_items on the nested [order](#type-order) field instead. The line items to
+    * associate with this order. Each line item represents a different product to include in a purchase.
     */
   var line_items: js.UndefOr[js.Array[CreateOrderRequestLineItem]] = js.native
   /**
@@ -31,7 +31,6 @@ class CreateOrderRequest () extends js.Object {
     * @deprecated Please set the reference_id on the nested [order](#type-order) field instead. An optional ID you can
     * associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).
     * This value cannot exceed 40 characters.
-    * -- Top-level fields necessary to support the connect v2 CreateOrderRequest shape.
     */
   var reference_id: js.UndefOr[String] = js.native
   /**

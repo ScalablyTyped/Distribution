@@ -1,0 +1,41 @@
+package typings.awsDashSdk.clientsConfigserviceMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DescribeRemediationExceptionsRequest extends js.Object {
+  /**
+    * The name of the AWS Config rule.
+    */
+  var ConfigRuleName: typings.awsDashSdk.clientsConfigserviceMod.ConfigRuleName
+  /**
+    * The maximum number of RemediationExceptionResourceKey returned on each page. The default is 25. If you specify 0, AWS Config uses the default.
+    */
+  var Limit: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.Limit] = js.undefined
+  /**
+    * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response.
+    */
+  var NextToken: js.UndefOr[String] = js.undefined
+  /**
+    * An exception list of resource exception keys to be processed with the current request. AWS Config adds exception for each resource key. For example, AWS Config adds 3 exceptions for 3 resource keys. 
+    */
+  var ResourceKeys: js.UndefOr[RemediationExceptionResourceKeys] = js.undefined
+}
+
+object DescribeRemediationExceptionsRequest {
+  @scala.inline
+  def apply(
+    ConfigRuleName: ConfigRuleName,
+    Limit: js.UndefOr[Limit] = js.undefined,
+    NextToken: String = null,
+    ResourceKeys: RemediationExceptionResourceKeys = null
+  ): DescribeRemediationExceptionsRequest = {
+    val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName)
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (ResourceKeys != null) __obj.updateDynamic("ResourceKeys")(ResourceKeys)
+    __obj.asInstanceOf[DescribeRemediationExceptionsRequest]
+  }
+}
+

@@ -10,8 +10,12 @@ import scala.scalajs.js.annotation._
 
 trait reactDashDatesProps {
   type DateRangePickerProps = DateRangePickerShape
+  type DateRangePickerClsProps = DateRangePickerShape
   type DayPickerRangeControllerProps = DayPickerRangeControllerShape
+  type DayPickerRangeControllerClsProps = DayPickerRangeControllerShape
   type DayPickerSingleDateControllerProps = DayPickerSingleDateControllerShape
+  type DayPickerSingleDateControllerClsProps = DayPickerSingleDateControllerShape
   type SingleDatePickerProps = SingleDatePickerShape
+  type SingleDatePickerClsProps = SingleDatePickerShape
 }
 

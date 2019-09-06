@@ -10,7 +10,7 @@ trait IonImg extends js.Object {
     */
   var alt: js.UndefOr[String] = js.undefined
   /**
-    * The image URL. This attribute is mandatory for the <img> element.
+    * The image URL. This attribute is mandatory for the `<img>` element.
     */
   var src: js.UndefOr[String] = js.undefined
 }

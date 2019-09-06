@@ -3,6 +3,7 @@ package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Context
 import typings.react.reactMod.ReactNode
 import typings.reactDashNativeDashElements.Anon_Bottom
 import scala.scalajs.js
@@ -12,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val ThemeContext: Context[ThemeProps[js.Object]] = js.native
   val colors: Colors = js.native
   def getIconType(`type`: IconType): js.Any = js.native
   def normalize(size: Double): Double = js.native

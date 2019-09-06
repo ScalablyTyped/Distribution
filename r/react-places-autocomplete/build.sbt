@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-places-autocomplete"
-version := "7.2-dt-20190219Z-1ab6e1"
+version := "7.2-dt-20190219Z-ed8666"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190830Z-4c9e95",
+  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190904Z-e0d90d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
   "org.scalablytyped" %%% "std" % "3.6-c16502")

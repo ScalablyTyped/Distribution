@@ -1,10 +1,18 @@
 package typings.atIonicCore.distTypesComponentsMod.Global
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.atIonicCore.atIonicCoreStrings.decimal
+import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.atIonicCoreStrings.none
+import typings.atIonicCore.atIonicCoreStrings.numeric
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.on
+import typings.atIonicCore.atIonicCoreStrings.search
+import typings.atIonicCore.atIonicCoreStrings.tel
+import typings.atIonicCore.atIonicCoreStrings.text
+import typings.atIonicCore.atIonicCoreStrings.url
 import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesInterfaceMod.TextFieldTypes
 import typings.atIonicCore.distTypesStencilDotCoreMod.HTMLStencilElement
@@ -56,9 +64,9 @@ trait HTMLIonInputElement extends HTMLStencilElement {
     */
   var disabled: Boolean = js.native
   /**
-    * A hint to the browser for which keyboard to display. This attribute applies when the value of the type attribute is `"text"`, `"password"`, `"email"`, or `"url"`. Possible values are: `"verbatim"`, `"latin"`, `"latin-name"`, `"latin-prose"`, `"full-width-latin"`, `"kana"`, `"katakana"`, `"numeric"`, `"tel"`, `"email"`, `"url"`.
+    * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: js.UndefOr[String] = js.native
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   /**
     * The maximum value, which must not be less than its minimum (min attribute) value.
     */

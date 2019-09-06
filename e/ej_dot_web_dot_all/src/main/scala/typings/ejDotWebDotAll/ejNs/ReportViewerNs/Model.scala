@@ -75,6 +75,9 @@ trait Model extends js.Object {
   /** Specifies the page settings.
     */
   var pageSettings: js.UndefOr[PageSettings] = js.undefined
+  /** Specifies the parameter settings.
+    */
+  var parameterSettings: js.UndefOr[ParameterSettings] = js.undefined
   /** Gets or sets the list of parameters associated with the report.
     * @Default {[]}
     */
@@ -181,6 +184,7 @@ object Model {
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     locale: String = null,
     pageSettings: PageSettings = null,
+    parameterSettings: ParameterSettings = null,
     parameters: js.Array[Parameter] = null,
     printMode: js.UndefOr[Boolean] = js.undefined,
     printOptions: PrintOptions | String = null,
@@ -226,6 +230,7 @@ object Model {
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings)
+    if (parameterSettings != null) __obj.updateDynamic("parameterSettings")(parameterSettings)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     if (!js.isUndefined(printMode)) __obj.updateDynamic("printMode")(printMode)
     if (printOptions != null) __obj.updateDynamic("printOptions")(printOptions.asInstanceOf[js.Any])

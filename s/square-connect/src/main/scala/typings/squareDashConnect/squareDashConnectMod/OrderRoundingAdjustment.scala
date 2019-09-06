@@ -16,7 +16,7 @@ class OrderRoundingAdjustment () extends js.Object {
     */
   var name: js.UndefOr[String] = js.native
   /**
-    * The rounding adjustment's Unique identifier, unique only within this order. This field is read-only.
+    * Unique ID that identifies the rounding adjustment only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

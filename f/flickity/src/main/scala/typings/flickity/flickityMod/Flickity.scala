@@ -4,6 +4,7 @@ import typings.flickity.Anon_X
 import typings.flickity.flickityMod.Global.JQuery
 import typings.std.Element
 import typings.std.Event
+import typings.std.HTMLElement
 import typings.std.NodeList
 import typings.std.Touch
 import scala.scalajs.js
@@ -29,6 +30,10 @@ trait Flickity extends js.Object {
     * The selected cell index.
     */
   var selectedIndex: Double = js.native
+  /**
+    * The slider element
+    */
+  var slider: HTMLElement = js.native
   /**
     * The array of slides. Useful for groupCells. A slide contains multiple cells.
     * If groupCells is disabled, then each slide is a cell, so they are one in the same.
@@ -78,6 +83,12 @@ trait Flickity extends js.Object {
     * @param eventName name of event  (@see Flickity.FlickityEvents class for filckity supported events)
     * @param callback callback funtion to execute when event fires
     */
+  def off(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], _]): Unit = js.native
+  /**
+    * Remove event listener
+    * @param eventName name of event  (@see Flickity.FlickityEvents class for filckity supported events)
+    * @param callback callback funtion to execute when event fires
+    */
   def off(
     eventname: FlickityEvents,
     callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], _]
@@ -111,6 +122,12 @@ trait Flickity extends js.Object {
       _
     ]
   ): Unit = js.native
+  /**
+    * bind event listener
+    * @param eventName name of event  (@see Flickity.FlickityEvents class for filckity supported events)
+    * @param callback callback funtion to execute when event fires
+    */
+  def on(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], _]): Unit = js.native
   /**
     * bind event listener
     * @param eventName name of event  (@see Flickity.FlickityEvents class for filckity supported events)
@@ -184,6 +201,12 @@ trait Flickity extends js.Object {
       _
     ]
   ): Unit = js.native
+  /**
+    * one time event handler
+    * @param eventName name of event  (@see Flickity.FlickityEvents class for filckity supported events)
+    * @param callback callback funtion to execute when event fires
+    */
+  def once(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], _]): Unit = js.native
   /**
     * Pauses auto-play.
     */

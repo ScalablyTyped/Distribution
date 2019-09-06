@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1PaymentTaxNs.InclusionTypeEnum
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,10 +21,10 @@ class V1PaymentTax () extends js.Object {
     */
   var fee_id: js.UndefOr[String] = js.native
   /**
-    * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See
-    * [V1PaymentTaxInclusionType](#type-v1paymenttaxinclusiontype) for possible values
+    * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+    * See [V1PaymentTaxInclusionType](#type-v1paymenttaxinclusiontype) for possible values.
     */
-  var inclusion_type: js.UndefOr[InclusionTypeEnum] = js.native
+  var inclusion_type: js.UndefOr[String] = js.native
   /**
     * The merchant-defined name of the tax.
     */

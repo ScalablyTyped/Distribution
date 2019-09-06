@@ -23,6 +23,7 @@ trait IBalanceTransaction extends IResourceObject {
     */
   var currency: String
   var description: js.UndefOr[String] = js.undefined
+  var exchange_rate: js.UndefOr[Double | Null] = js.undefined
   /**
     * Fee (in cents/pence) paid for this transaction
     */
@@ -72,12 +73,14 @@ object IBalanceTransaction {
     source_transfers: IList[ITransfer],
     status: String,
     `type`: String,
-    description: String = null
+    description: String = null,
+    exchange_rate: Int | Double = null
   ): IBalanceTransaction = {
     val __obj = js.Dynamic.literal(amount = amount, available_on = available_on, created = created, currency = currency, fee = fee, fee_details = fee_details, id = id, net = net, source = source.asInstanceOf[js.Any], source_transfers = source_transfers, status = status)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (exchange_rate != null) __obj.updateDynamic("exchange_rate")(exchange_rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBalanceTransaction]
   }
 }

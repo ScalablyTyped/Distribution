@@ -17,8 +17,17 @@ class RepoInfo protected () extends js.Object {
     */
   def this(host: String, secure: Boolean, namespace: String, webSocketOnly: Boolean) = this()
   def this(host: String, secure: Boolean, namespace: String, webSocketOnly: Boolean, persistenceKey: String) = this()
+  def this(
+    host: String,
+    secure: Boolean,
+    namespace: String,
+    webSocketOnly: Boolean,
+    persistenceKey: String,
+    includeNamespaceInQueryParams: Boolean
+  ) = this()
   var domain: String = js.native
   var host: String = js.native
+  var includeNamespaceInQueryParams: Boolean = js.native
   var internalHost: String = js.native
   var namespace: String = js.native
   var persistenceKey: String = js.native

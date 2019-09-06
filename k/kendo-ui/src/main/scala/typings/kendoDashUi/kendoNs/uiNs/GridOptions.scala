@@ -1,5 +1,8 @@
 package typings.kendoDashUi.kendoNs.uiNs
 
+import typings.kendoDashUi.kendoDashUiStrings.`inline`
+import typings.kendoDashUi.kendoDashUiStrings.incell
+import typings.kendoDashUi.kendoDashUiStrings.popup
 import typings.kendoDashUi.kendoNs.dataNs.DataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +35,7 @@ trait GridOptions extends js.Object {
   var detailInit: js.UndefOr[js.Function1[/* e */ GridDetailInitEvent, Unit]] = js.undefined
   var detailTemplate: js.UndefOr[String | js.Function] = js.undefined
   var edit: js.UndefOr[js.Function1[/* e */ GridEditEvent, Unit]] = js.undefined
-  var editable: js.UndefOr[Boolean | String | GridEditable] = js.undefined
+  var editable: js.UndefOr[Boolean | `inline` | incell | popup | GridEditable] = js.undefined
   var excel: js.UndefOr[GridExcel] = js.undefined
   var excelExport: js.UndefOr[js.Function1[/* e */ GridExcelExportEvent, Unit]] = js.undefined
   var filter: js.UndefOr[js.Function1[/* e */ GridFilterEvent, Unit]] = js.undefined
@@ -65,7 +68,7 @@ trait GridOptions extends js.Object {
   var selectable: js.UndefOr[Boolean | String] = js.undefined
   var sort: js.UndefOr[js.Function1[/* e */ GridSortEvent, Unit]] = js.undefined
   var sortable: js.UndefOr[Boolean | GridSortable] = js.undefined
-  var toolbar: js.UndefOr[js.Array[String | GridToolbarItem]] = js.undefined
+  var toolbar: js.UndefOr[String | js.Function | (js.Array[String | GridToolbarItem])] = js.undefined
 }
 
 object GridOptions {
@@ -97,7 +100,7 @@ object GridOptions {
     detailInit: /* e */ GridDetailInitEvent => Unit = null,
     detailTemplate: String | js.Function = null,
     edit: /* e */ GridEditEvent => Unit = null,
-    editable: Boolean | String | GridEditable = null,
+    editable: Boolean | `inline` | incell | popup | GridEditable = null,
     excel: GridExcel = null,
     excelExport: /* e */ GridExcelExportEvent => Unit = null,
     filter: /* e */ GridFilterEvent => Unit = null,
@@ -130,7 +133,7 @@ object GridOptions {
     selectable: Boolean | String = null,
     sort: /* e */ GridSortEvent => Unit = null,
     sortable: Boolean | GridSortable = null,
-    toolbar: js.Array[String | GridToolbarItem] = null
+    toolbar: String | js.Function | (js.Array[String | GridToolbarItem]) = null
   ): GridOptions = {
     val __obj = js.Dynamic.literal()
     if (allowCopy != null) __obj.updateDynamic("allowCopy")(allowCopy.asInstanceOf[js.Any])
@@ -192,7 +195,7 @@ object GridOptions {
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction1(sort))
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptions]
   }
 }

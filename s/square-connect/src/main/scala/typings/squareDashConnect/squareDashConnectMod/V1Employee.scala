@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1EmployeeNs.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +43,7 @@ class V1Employee () extends js.Object {
     * CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants
     * update this field from the Square Dashboard. See [V1EmployeeStatus](#type-v1employeestatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[String] = js.native
   /**
     * The time when the employee entity was most recently updated, in ISO 8601 format.
     */

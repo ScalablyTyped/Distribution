@@ -61,6 +61,11 @@ trait IColorPickerProps extends js.Object {
     */
   var redLabel: js.UndefOr[String] = js.undefined
   /**
+    * Whether to show color preview box.
+    * @defaultvalue false
+    */
+  var showPreview: js.UndefOr[Boolean] = js.undefined
+  /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]] = js.undefined
@@ -83,6 +88,7 @@ object IColorPickerProps {
     hexLabel: String = null,
     onChange: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => Unit = null,
     redLabel: String = null,
+    showPreview: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles] = null,
     theme: ITheme = null
   ): IColorPickerProps = {
@@ -96,6 +102,7 @@ object IColorPickerProps {
     if (hexLabel != null) __obj.updateDynamic("hexLabel")(hexLabel)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (redLabel != null) __obj.updateDynamic("redLabel")(redLabel)
+    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
     __obj.asInstanceOf[IColorPickerProps]

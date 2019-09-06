@@ -24,6 +24,26 @@ trait User extends UserInfo {
   var providerData: js.Array[UserInfo | Null] = js.native
   var refreshToken: String = js.native
   /**
+    * The current user's tenant ID. This is a read-only property, which indicates
+    * the tenant ID used to sign in the current user. This is null if the user is
+    * signed in from the parent project.
+    *
+    * @example
+    * ```javascript
+    * // Set the tenant ID on Auth instance.
+    * firebase.auth().tenantId = ‘TENANT_PROJECT_ID’;
+    *
+    * // All future sign-in request now include tenant ID.
+    * firebase.auth().signInWithEmailAndPassword(email, password)
+    *   .then(function(result) {
+    *     // result.user.tenantId should be ‘TENANT_PROJECT_ID’.
+    *   }).catch(function(error) {
+    *     // Handle error.
+    *   });
+    * ```
+    */
+  var tenantId: String | Null = js.native
+  /**
     * Deletes and signs out the user.
     *
     * <b>Important:</b> this is a security-sensitive operation that requires the

@@ -18,7 +18,7 @@ class CreateOrderRequestModifier () extends js.Object {
     */
   var catalog_object_id: js.UndefOr[String] = js.native
   /**
-    * Only used for ad hoc modifiers. The name of the modifier. `name` cannot exceed 255 characters.  Do not provide a
+    * Only used for ad hoc modifiers. The name of the modifier. `name` cannot exceed 255 characters. Do not provide a
     * value for `name` if you provide a value for `catalog_object_id`.
     */
   var name: js.UndefOr[String] = js.native

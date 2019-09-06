@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("promise-pg", "Query")
 @js.native
 class Query ()
-  extends typings.pg.pgMod.Query {
+  extends typings.pg.pgMod.Query[js.Any, js.Any] {
   var promise: Promise[QueryResult] = js.native
 }
 

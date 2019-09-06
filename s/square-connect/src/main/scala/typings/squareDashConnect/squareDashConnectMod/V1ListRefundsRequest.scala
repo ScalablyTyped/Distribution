@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1ListRefundsRequestNs.OrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,6 +30,6 @@ class V1ListRefundsRequest () extends js.Object {
   /**
     * TThe order in which payments are listed in the response. See [SortOrder](#type-sortorder) for possible values
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[String] = js.native
 }
 

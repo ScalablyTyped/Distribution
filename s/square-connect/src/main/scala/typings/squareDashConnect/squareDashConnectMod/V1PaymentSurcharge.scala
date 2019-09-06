@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1PaymentSurchargeNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,6 +41,6 @@ class V1PaymentSurcharge () extends js.Object {
     * Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group.
     * See [V1PaymentSurchargeType](#type-v1paymentsurchargetype) for possible values
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 

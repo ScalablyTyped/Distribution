@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1AdjustInventoryRequestNs.AdjustmentTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ class V1AdjustInventoryRequest () extends js.Object {
     * The reason for the inventory adjustment.
     * See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values.
     */
-  var adjustment_type: js.UndefOr[AdjustmentTypeEnum] = js.native
+  var adjustment_type: js.UndefOr[String] = js.native
   /**
     * A note about the inventory adjustment.
     */

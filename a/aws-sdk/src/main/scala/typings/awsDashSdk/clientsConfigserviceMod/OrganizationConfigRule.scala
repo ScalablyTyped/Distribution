@@ -5,11 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OrganizationConfigRule extends js.Object {
+  /**
+    * A comma-separated list of accounts excluded from organization config rule.
+    */
   var ExcludedAccounts: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ExcludedAccounts] = js.undefined
+  /**
+    * The timestamp of the last update.
+    */
   var LastUpdateTime: js.UndefOr[_Date] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of organization config rule.
+    */
   var OrganizationConfigRuleArn: StringWithCharLimit256
+  /**
+    * The name that you assign to organization config rule.
+    */
   var OrganizationConfigRuleName: StringWithCharLimit64
+  /**
+    * An OrganizationCustomRuleMetadata object.
+    */
   var OrganizationCustomRuleMetadata: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.OrganizationCustomRuleMetadata] = js.undefined
+  /**
+    * An OrganizationManagedRuleMetadata object.
+    */
   var OrganizationManagedRuleMetadata: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.OrganizationManagedRuleMetadata] = js.undefined
 }
 

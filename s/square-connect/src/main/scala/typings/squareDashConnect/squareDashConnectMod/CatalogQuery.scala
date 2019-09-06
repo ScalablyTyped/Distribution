@@ -13,6 +13,16 @@ class CatalogQuery () extends js.Object {
     */
   var exact_query: js.UndefOr[CatalogQueryExact] = js.native
   /**
+    * A query that returns all [CatalogItemVariation](#type-catalogitemvariations)s that have all of the given
+    * [CatalogItemOption](#type-catalogitemoption) values.
+    */
+  var item_variations_for_item_option_values_query: js.UndefOr[CatalogQueryItemVariationsForItemOptionValues] = js.native
+  /**
+    * A query that returns all [CatalogItem](#type-catalogitem)s that have all of the given
+    * [CatalogItemOption](#type-catalogitemoption)s.
+    */
+  var items_for_item_options_query: js.UndefOr[CatalogQueryItemsForItemOptions] = js.native
+  /**
     * A query that returns all [CatalogItem](#type-catalogitem)s that have any of the given
     * [CatalogModifierList](#type-catalogmodifierlist)s enabled.
     */

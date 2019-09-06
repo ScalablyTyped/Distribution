@@ -35,30 +35,35 @@ class Pool () extends EventEmitter {
   def on_acquire(event: acquire, listener: js.Function1[/* client */ PoolClient, Unit]): this.type = js.native
   @JSName("on")
   def on_connect(event: connect, listener: js.Function1[/* client */ PoolClient, Unit]): this.type = js.native
+  // tslint:enable:no-unnecessary-generics
   @JSName("on")
   def on_error(event: error, listener: js.Function2[/* err */ Error, /* client */ PoolClient, Unit]): this.type = js.native
   @JSName("on")
   def on_remove(event: remove, listener: js.Function1[/* client */ PoolClient, Unit]): this.type = js.native
-  def query(queryConfig: QueryArrayConfig): js.Promise[QueryArrayResult] = js.native
-  def query(
-    queryConfig: QueryArrayConfig,
-    callback: js.Function2[/* err */ Error, /* result */ QueryArrayResult, Unit]
-  ): Unit = js.native
-  def query(queryConfig: QueryArrayConfig, values: js.Array[_]): js.Promise[QueryArrayResult] = js.native
-  def query(queryConfig: QueryConfig): js.Promise[QueryResult] = js.native
-  def query(queryTextOrConfig: String): js.Promise[QueryResult] = js.native
-  def query(queryTextOrConfig: String, callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]): Unit = js.native
-  def query(queryTextOrConfig: String, values: js.Array[_]): js.Promise[QueryResult] = js.native
-  def query(
-    queryTextOrConfig: QueryConfig,
-    callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]
-  ): Unit = js.native
-  def query(queryTextOrConfig: QueryConfig, values: js.Array[_]): js.Promise[QueryResult] = js.native
-  def query(
-    queryText: String,
-    values: js.Array[_],
-    callback: js.Function2[/* err */ Error, /* result */ QueryResult, Unit]
-  ): Unit = js.native
   def query[T /* <: Submittable */](queryStream: T): T = js.native
+  // tslint:disable:no-unnecessary-generics
+  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I]): js.Promise[QueryArrayResult[R]] = js.native
+  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](
+    queryConfig: QueryArrayConfig[I],
+    callback: js.Function2[/* err */ Error, /* result */ QueryArrayResult[R], Unit]
+  ): Unit = js.native
+  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I], values: I): js.Promise[QueryArrayResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryConfig: QueryConfig[I]): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: String): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+    queryTextOrConfig: String,
+    callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
+  ): Unit = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: String, values: I): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+    queryTextOrConfig: QueryConfig[I],
+    callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
+  ): Unit = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: QueryConfig[I], values: I): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+    queryText: String,
+    values: I,
+    callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
+  ): Unit = js.native
 }
 

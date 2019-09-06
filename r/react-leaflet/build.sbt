@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-leaflet"
-version := "2.4-dt-20190813Z-1c27d3"
+version := "2.4-dt-20190813Z-75ee9c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

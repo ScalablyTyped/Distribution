@@ -1,26 +1,32 @@
 package typings.atFirebaseDatabase.distSrcCoreAuthTokenProviderMod
 
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseAuthTokenData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "AuthTokenProvider")
-@js.native
-class AuthTokenProvider protected () extends js.Object {
-  /**
-    * @param {!FirebaseApp} app_
-    */
-  def this(app_ : FirebaseApp) = this()
-  var app_ : js.Any = js.native
-  def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
+trait AuthTokenProvider extends js.Object {
+  def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): js.Any
   /**
     * @param {boolean} forceRefresh
     * @return {!Promise<FirebaseAuthTokenData>}
     */
-  def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData] = js.native
-  def notifyForInvalidToken(): Unit = js.native
-  def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
+  def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData]
+  def notifyForInvalidToken(): js.Any
+  def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): js.Any
+}
+
+object AuthTokenProvider {
+  @scala.inline
+  def apply(
+    addTokenChangeListener: js.Function1[/* token */ String | Null, Unit] => js.Any,
+    getToken: Boolean => js.Promise[FirebaseAuthTokenData],
+    notifyForInvalidToken: () => js.Any,
+    removeTokenChangeListener: js.Function1[/* token */ String | Null, Unit] => js.Any
+  ): AuthTokenProvider = {
+    val __obj = js.Dynamic.literal(addTokenChangeListener = js.Any.fromFunction1(addTokenChangeListener), getToken = js.Any.fromFunction1(getToken), notifyForInvalidToken = js.Any.fromFunction0(notifyForInvalidToken), removeTokenChangeListener = js.Any.fromFunction1(removeTokenChangeListener))
+  
+    __obj.asInstanceOf[AuthTokenProvider]
+  }
 }
 

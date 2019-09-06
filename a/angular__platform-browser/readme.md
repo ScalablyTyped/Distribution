@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__platform-browser
 
-Typings are for version 8.2.4
+Typings are for version 8.2.5
 
 ## Library description:
 Angular - library for using Angular in a web browser

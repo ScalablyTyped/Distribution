@@ -28,9 +28,6 @@ class Calendar protected () extends Widget {
   def navigateToPast(): Unit = js.native
   def navigateUp(): Unit = js.native
   def selectDates(): Unit = js.native
-  def selectDates(datesToSelect: js.Any): Unit = js.native
-  //somehow the same interface got implemented twice which are the same
-  //kendo-ui supports date selection(https://docs.telerik.com/kendo-ui/knowledge-base/calendar-select-range-of-dates)
   def value(): Date = js.native
   def value(value: String): Unit = js.native
   def value(value: Date): Unit = js.native

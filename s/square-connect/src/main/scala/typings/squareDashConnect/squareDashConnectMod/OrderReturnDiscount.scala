@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.OrderReturnDiscountNs.ScopeEnum
-import typings.squareDashConnect.squareDashConnectMod.OrderReturnDiscountNs.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +37,7 @@ class OrderReturnDiscount () extends js.Object {
     * If set in a CreateOrder request, it will be ignored on write.
     * See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
     */
-  var scope: js.UndefOr[ScopeEnum] = js.native
+  var scope: js.UndefOr[DiscountApplicationScopeEnum] = js.native
   /**
     * `uid` of the Discount from the Order which contains the original application of this discount.
     */
@@ -49,9 +47,9 @@ class OrderReturnDiscount () extends js.Object {
     * VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage
     * or amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[DiscountTypeEnum] = js.native
   /**
-    * The return discount's Unique identifier, unique only within this order.
+    * Unique ID that identifies the return discount only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

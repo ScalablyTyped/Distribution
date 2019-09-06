@@ -6,6 +6,7 @@ import typings.reactDashNative.reactDashNativeMod.ImageURISource
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,6 +62,10 @@ trait TileProps extends js.Object {
     */
   var imageContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   /**
+    * Optional properties to pass to the image if provided e.g "resizeMode"
+    */
+  var imageProps: js.UndefOr[Partial[ImageProps]] = js.undefined
+  /**
     * Source for the image
     */
   var imageSrc: ImageURISource | String | Double
@@ -99,6 +104,7 @@ object TileProps {
     icon: IconObject = null,
     iconContainerStyle: StyleProp[ViewStyle] = null,
     imageContainerStyle: StyleProp[ViewStyle] = null,
+    imageProps: Partial[ImageProps] = null,
     onPress: () => Unit = null,
     title: String = null,
     titleStyle: StyleProp[TextStyle] = null,
@@ -116,6 +122,7 @@ object TileProps {
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconContainerStyle != null) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle.asInstanceOf[js.Any])
     if (imageContainerStyle != null) __obj.updateDynamic("imageContainerStyle")(imageContainerStyle.asInstanceOf[js.Any])
+    if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps)
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])

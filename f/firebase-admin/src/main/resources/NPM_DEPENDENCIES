@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "firebase-admin" : "8.4.0"
+      "firebase-admin" : "8.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "firebase-admin" : "8.4.0"
+      "firebase-admin" : "8.5.0"
     }
   ],
   "compile-devDependencies" : [

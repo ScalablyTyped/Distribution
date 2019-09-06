@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pg", "Query")
 @js.native
-class Query ()
+class Query[R /* <: QueryResultRow */, I /* <: js.Array[_] */] ()
   extends EventEmitter
      with Submittable {
   def this(queryTextOrConfig: String) = this()
-  def this(queryTextOrConfig: QueryConfig) = this()
-  def this(queryTextOrConfig: String, values: js.Array[_]) = this()
-  def this(queryTextOrConfig: QueryConfig, values: js.Array[_]) = this()
+  def this(queryTextOrConfig: QueryConfig[I]) = this()
+  def this(queryTextOrConfig: String, values: I) = this()
+  def this(queryTextOrConfig: QueryConfig[I], values: I) = this()
   /* InferMemberOverrides */
   override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */
@@ -47,11 +47,11 @@ class Query ()
   /* InferMemberOverrides */
   override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
-  def on_end(event: end, listener: js.Function1[/* result */ ResultBuilder, Unit]): this.type = js.native
+  def on_end(event: end, listener: js.Function1[/* result */ ResultBuilder[R], Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
-  def on_row(event: row, listener: js.Function2[/* row */ js.Any, /* result */ js.UndefOr[ResultBuilder], Unit]): this.type = js.native
+  def on_row(event: row, listener: js.Function2[/* row */ R, /* result */ js.UndefOr[ResultBuilder[R]], Unit]): this.type = js.native
   /* InferMemberOverrides */
   override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */

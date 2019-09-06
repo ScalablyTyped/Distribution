@@ -26,7 +26,7 @@ import typings.atTestingDashLibraryDom.queryDashHelpersMod.BuiltQueryMethods
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.GetAllBy
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.QueryByAttribute
 import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
-import typings.prettyDashFormat.prettyDashFormatMod.Options
+import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
 import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.Partial
@@ -107,7 +107,7 @@ object atTestingDashLibraryDomMod extends js.Object {
   def logRoles(container: HTMLElement): String = js.native
   def prettyDOM(element: HTMLElement): String | `false` = js.native
   def prettyDOM(element: HTMLElement, maxLength: Double): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double, options: Options): String | `false` = js.native
+  def prettyDOM(element: HTMLElement, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def wait(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def wait(callback: js.Function0[Unit], options: Anon_Interval): js.Promise[Unit] = js.native
   def waitForDomChange(): js.Promise[_] = js.native

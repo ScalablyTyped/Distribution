@@ -15,5 +15,11 @@ class OrderEntry () extends js.Object {
     * The id of the Order.
     */
   var order_id: js.UndefOr[String] = js.native
+  /**
+    * Version number which is incremented each time an update is committed to the order.
+    * Orders that were not created through the API will not include a version and thus cannot be updated.
+    * [Read more about working with versions](/orders-api/manage-orders#update-orders).
+    */
+  var version: js.UndefOr[Double] = js.native
 }
 

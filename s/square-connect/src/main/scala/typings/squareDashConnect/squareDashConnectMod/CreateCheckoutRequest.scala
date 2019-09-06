@@ -17,7 +17,7 @@ class CreateCheckoutRequest () extends js.Object {
   var additional_recipients: js.UndefOr[js.Array[ChargeRequestAdditionalRecipient]] = js.native
   /**
     * If `true`, Square Checkout will collect shipping information on your behalf and store that information with the
-    * transaction information in your Square Dashboard.  Default: `false`.
+    * transaction information in your Square Dashboard. Default: `false`.
     */
   var ask_for_shipping_address: js.UndefOr[Boolean] = js.native
   /**
@@ -45,13 +45,13 @@ class CreateCheckoutRequest () extends js.Object {
     */
   var order: CreateOrderRequest = js.native
   /**
-    * If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default: none;
-    * only exists if explicitly set.
+    * If provided, the buyer's email is pre-populated on the checkout page as an editable text field.
+    * Default: none; only exists if explicitly set.
     */
   var pre_populate_buyer_email: js.UndefOr[String] = js.native
   /**
-    * If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default:
-    * none; only exists if explicitly set.
+    * If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.
+    * Default: none; only exists if explicitly set.
     */
   var pre_populate_shipping_address: js.UndefOr[Address] = js.native
   /**

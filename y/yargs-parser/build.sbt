@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yargs-parser"
-version := "13.0-dt-20190407Z-463d86"
+version := "13.1-dt-20190905Z-755203"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

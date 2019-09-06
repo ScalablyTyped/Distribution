@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1SettlementNs.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +24,12 @@ class V1Settlement () extends js.Object {
     */
   var initiated_at: js.UndefOr[String] = js.native
   /**
-    * The settlement's current status. See [V1SettlementStatus](#type-v1settlementstatus) for possible values
+    * The settlement's current status. See [V1SettlementStatus](#type-v1settlementstatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[String] = js.native
   /**
-    * The amount of money involved in the settlement. A positive amount indicates a deposit, and a negative amount
-    * indicates a withdrawal. This amount is never zero.
+    * The amount of money involved in the settlement.
+    * A positive amount indicates a deposit, and a negative amount indicates a withdrawal. This amount is never zero.
     */
   var total_money: js.UndefOr[V1Money] = js.native
 }

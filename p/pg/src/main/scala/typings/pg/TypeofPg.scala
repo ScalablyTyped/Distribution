@@ -14,6 +14,7 @@ import typings.pg.pgMod.Pool
 import typings.pg.pgMod.PoolConfig
 import typings.pg.pgMod.Query
 import typings.pg.pgMod.QueryConfig
+import typings.pg.pgMod.QueryResultRow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +26,13 @@ trait TypeofPg extends js.Object {
   var Events: Instantiable0[typings.pg.pgMod.Events]
   var Pool: Instantiable1[js.UndefOr[/* config */ PoolConfig], typings.pg.pgMod.Pool]
   var Query: Instantiable2[
-    js.UndefOr[String | QueryConfig], 
-    js.UndefOr[/* values */ js.Array[js.Any]], 
-    typings.pg.pgMod.Query
+    js.UndefOr[
+      String | (QueryConfig[/* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ js.Any])
+    ], 
+    js.UndefOr[
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ /* values */ js.Any
+    ], 
+    typings.pg.pgMod.Query[QueryResultRow, js.Array[js.Any]]
   ]
   val defaults: Defaults with ClientConfig
   val native: (/* import warning: ImportType.apply Failed type conversion: typeof Pg */ js.Any) | Null
@@ -41,7 +46,15 @@ object TypeofPg {
     Connection: Instantiable1[js.UndefOr[/* config */ ConnectionConfig], Connection],
     Events: Instantiable0[Events],
     Pool: Instantiable1[js.UndefOr[/* config */ PoolConfig], Pool],
-    Query: Instantiable2[js.UndefOr[String | QueryConfig], js.UndefOr[/* values */ js.Array[js.Any]], Query],
+    Query: Instantiable2[
+      js.UndefOr[
+        String | (QueryConfig[/* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ js.Any])
+      ], 
+      js.UndefOr[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ /* values */ js.Any
+      ], 
+      Query[QueryResultRow, js.Array[js.Any]]
+    ],
     defaults: Defaults with ClientConfig,
     native: /* import warning: ImportType.apply Failed type conversion: typeof Pg */ js.Any = null
   ): TypeofPg = {

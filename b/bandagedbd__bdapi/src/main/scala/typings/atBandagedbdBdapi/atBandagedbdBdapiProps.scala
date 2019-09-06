@@ -1,22 +1,24 @@
 package typings.atBandagedbdBdapi
 
 import typings.react.Anon_Children
+import typings.react.reactMod.ProfilerProps
+import typings.react.reactMod.SuspenseProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait atBandagedbdBdapiProps {
   @scala.inline
-  def FragmentProps: Anon_Children.type = typings.react.Anon_Children
-  type FragmentProps = Anon_Children
+  def BdApiModuleNsReactFragmentProps: Anon_Children.type = typings.react.Anon_Children
+  type BdApiModuleNsReactFragmentProps = Anon_Children
   @scala.inline
-  def ProfilerProps: typings.react.reactMod.ProfilerProps.type = typings.react.reactMod.ProfilerProps
-  type ProfilerProps = typings.react.reactMod.ProfilerProps
+  def BdApiModuleNsReactProfilerProps: ProfilerProps.type = typings.react.reactMod.ProfilerProps
+  type BdApiModuleNsReactProfilerProps = ProfilerProps
   @scala.inline
-  def StrictModeProps: Anon_Children.type = typings.react.Anon_Children
-  type StrictModeProps = Anon_Children
+  def BdApiModuleNsReactStrictModeProps: Anon_Children.type = typings.react.Anon_Children
+  type BdApiModuleNsReactStrictModeProps = Anon_Children
   @scala.inline
-  def SuspenseProps: typings.react.reactMod.SuspenseProps.type = typings.react.reactMod.SuspenseProps
-  type SuspenseProps = typings.react.reactMod.SuspenseProps
+  def BdApiModuleNsReactSuspenseProps: SuspenseProps.type = typings.react.reactMod.SuspenseProps
+  type BdApiModuleNsReactSuspenseProps = SuspenseProps
 }
 

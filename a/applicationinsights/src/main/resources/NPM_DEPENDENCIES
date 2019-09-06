@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "applicationinsights" : "1.4.1"
+      "applicationinsights" : "1.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "applicationinsights" : "1.4.1"
+      "applicationinsights" : "1.4.2"
     }
   ],
   "compile-devDependencies" : [

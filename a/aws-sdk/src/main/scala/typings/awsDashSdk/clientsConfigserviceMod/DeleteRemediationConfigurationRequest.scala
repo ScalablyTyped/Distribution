@@ -8,7 +8,7 @@ trait DeleteRemediationConfigurationRequest extends js.Object {
   /**
     * The name of the AWS Config rule for which you want to delete remediation configuration.
     */
-  var ConfigRuleName: StringWithCharLimit64
+  var ConfigRuleName: typings.awsDashSdk.clientsConfigserviceMod.ConfigRuleName
   /**
     * The type of a resource.
     */
@@ -17,7 +17,7 @@ trait DeleteRemediationConfigurationRequest extends js.Object {
 
 object DeleteRemediationConfigurationRequest {
   @scala.inline
-  def apply(ConfigRuleName: StringWithCharLimit64, ResourceType: String = null): DeleteRemediationConfigurationRequest = {
+  def apply(ConfigRuleName: ConfigRuleName, ResourceType: String = null): DeleteRemediationConfigurationRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName)
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)
     __obj.asInstanceOf[DeleteRemediationConfigurationRequest]

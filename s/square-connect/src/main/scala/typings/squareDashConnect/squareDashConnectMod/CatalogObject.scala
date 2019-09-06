@@ -29,7 +29,7 @@ class CatalogObject () extends js.Object {
   /**
     * An identifier to reference this object in the catalog. When a new CatalogObject is inserted, the client should
     * set the id to a temporary identifier starting with a `'#'` character. Other objects being inserted or updated
-    * within the same request may use this identifier to refer to the new object.  When the server receives the new
+    * within the same request may use this identifier to refer to the new object. When the server receives the new
     * object, it will supply a unique identifier that replaces the temporary identifier for all future references.
     */
   var id: String = js.native
@@ -51,9 +51,21 @@ class CatalogObject () extends js.Object {
     */
   var item_data: js.UndefOr[CatalogItem] = js.native
   /**
+    * Structured data for a [CatalogItemOption](#type-catalogitemoption), set for CatalogObjects of type `ITEM_OPTION`.
+    */
+  var item_option_data: js.UndefOr[CatalogItemOption] = js.native
+  /**
+    * Structured data for a [CatalogItemOptionValue](#type-catalogitemoptionvalue), set for CatalogObjects of type `ITEM_OPTION_VAL`.
+    */
+  var item_option_value_data: js.UndefOr[CatalogItemOptionValue] = js.native
+  /**
     * Structured data for a [CatalogItemVariation](#type-catalogitemvariation), set for CatalogObjects of type `ITEM_VARIATION`.
     */
   var item_variation_data: js.UndefOr[CatalogItemVariation] = js.native
+  /**
+    * Structured data for a [CatalogMeasurementUnit](#type-catalogmeasurementunit), set for CatalogObjects of type `MEASUREMENT_UNIT`.
+    */
+  var measurement_unit_data: js.UndefOr[CatalogMeasurementUnit] = js.native
   /**
     * Structured data for a [CatalogModifier](#type-catalogmodifier), set for CatalogObjects of type `MODIFIER`.
     */
@@ -73,9 +85,21 @@ class CatalogObject () extends js.Object {
     */
   var present_at_location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
+    * Structured data for a [CatalogPricingRule](#type-catalogpricingrule), set for CatalogObjects of type `PRICING_RULE`.
+    */
+  var pricing_rule_data: js.UndefOr[CatalogPricingRule] = js.native
+  /**
+    * Structured data for a [CatalogProductSet](#type-catalogproductset), set for CatalogObjects of type `PRODUCT_SET`.
+    */
+  var product_set_data: js.UndefOr[CatalogProductSet] = js.native
+  /**
     * Structured data for a [CatalogTax](#type-catalogtax), set for CatalogObjects of type `TAX`.
     */
   var tax_data: js.UndefOr[CatalogTax] = js.native
+  /**
+    * Structured data for a [CatalogTimePeriod](#type-catalogtimeperiod), set for CatalogObjects of type `TIME_PERIOD`.
+    */
+  var time_period_data: js.UndefOr[CatalogTimePeriod] = js.native
   /**
     * The type of this object. Each object type has expected properties expressed in a structured format within its
     * corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values.

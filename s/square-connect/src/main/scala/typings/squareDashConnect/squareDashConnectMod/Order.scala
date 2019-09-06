@@ -21,8 +21,12 @@ class Order () extends js.Object {
     */
   var customer_id: js.UndefOr[String] = js.native
   /**
-    * A list of discounts applied to this order. On read or retrieve, this list includes both order-level and
-    * item-level discounts. When creating an Order, set your order-level discounts in this list.
+    * The list of all discounts associated with the order. Discounts can be scoped to either `ORDER` or `LINE_ITEM`.
+    * For discounts scoped to `LINE_ITEM`, an `OrderLineItemAppliedDiscount` must be added to each line item that the
+    * discount applies to. For discounts with `ORDER` scope, the server will generate an `OrderLineItemAppliedDiscount`
+    * for every line item.
+    * @note If `LINE_ITEM` scope is set on any discounts in this field, usage of the deprecated `line_items.discounts`
+    * field will result in an error. Please use `line_items.applied_discounts` instead.
     */
   var discounts: js.UndefOr[js.Array[OrderLineItemDiscount]] = js.native
   /**
@@ -31,8 +35,7 @@ class Order () extends js.Object {
     */
   var fulfillments: js.UndefOr[js.Array[OrderFulfillment]] = js.native
   /**
-    * The order's unique ID. This value is only present for Order objects created by the Orders API through
-    * the [CreateOrder](#endpoint-orders-createorder) endpoint.
+    * The order's unique ID.
     */
   var id: js.UndefOr[String] = js.native
   /**
@@ -52,7 +55,7 @@ class Order () extends js.Object {
     */
   var reference_id: js.UndefOr[String] = js.native
   /**
-    * The Refunds that are part of this Order. This field is read-only.
+    * The Refunds that are part of this Order.
     */
   var refunds: js.UndefOr[js.Array[Refund]] = js.native
   /**
@@ -70,6 +73,10 @@ class Order () extends js.Object {
     */
   var rounding_adjustment: js.UndefOr[OrderRoundingAdjustment] = js.native
   /**
+    * A list of service charges applied to the order.
+    */
+  var service_charges: js.UndefOr[js.Array[OrderServiceCharge]] = js.native
+  /**
     * The origination details of the order.
     */
   var source: js.UndefOr[OrderSource] = js.native
@@ -78,12 +85,16 @@ class Order () extends js.Object {
     */
   var state: js.UndefOr[StateEnum] = js.native
   /**
-    * A list of taxes applied to this order. On read or retrieve, this list includes both order-level and item-level
-    * taxes. When creating an Order, set your order-level taxes in this list.
+    * The list of all taxes associated with the order. Taxes can be scoped to either `ORDER` or `LINE_ITEM`.
+    * For taxes with `LINE_ITEM` scope, an `OrderLineItemAppliedTax` must be added to each line item that the tax applies to.
+    * For taxes with `ORDER` scope, the server will generate an `OrderLineItemAppliedTax` for every line item.
+    * On reads, each tax in the list will include the total amount of that tax applied to the order.
+    * @note If `LINE_ITEM` scope is set on any taxes in this field, usage of the deprecated `line_items.taxes`
+    * field will result in an error. Please use `line_items.applied_taxes` instead.
     */
   var taxes: js.UndefOr[js.Array[OrderLineItemTax]] = js.native
   /**
-    * The Tenders which were used to pay for the Order. This field is read-only.
+    * The Tenders which were used to pay for the Order.
     */
   var tenders: js.UndefOr[js.Array[Tender]] = js.native
   /**
@@ -95,6 +106,12 @@ class Order () extends js.Object {
     */
   var total_money: js.UndefOr[Money] = js.native
   /**
+    * The total amount of money collected in service charges for the order.
+    * @note `total_service_charge_money` is the sum of `applied_money` fields for each individual service charge.
+    * Therefore, `total_service_charge_money` will only include inclusive tax amounts, not additive tax amounts.
+    */
+  var total_service_charge_money: js.UndefOr[Money] = js.native
+  /**
     * The total tax amount of money to collect for the order.
     */
   var total_tax_money: js.UndefOr[Money] = js.native
@@ -102,5 +119,11 @@ class Order () extends js.Object {
     * Timestamp for when the order was last updated. In RFC 3339 format, e.g., "2016-09-04T23:59:33.123Z".
     */
   var updated_at: js.UndefOr[String] = js.native
+  /**
+    * Version number which is incremented each time an update is committed to the order.
+    * Orders that were not created through the API will not include a version and thus cannot be updated.
+    * [Read more about working with versions](/orders-api/manage-orders#update-orders).
+    */
+  var version: js.UndefOr[Double] = js.native
 }
 

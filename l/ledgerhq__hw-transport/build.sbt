@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ledgerhq__hw-transport"
-version := "4.21-dt-20190213Z-9ee9a8"
+version := "4.21-dt-20190905Z-813c10"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

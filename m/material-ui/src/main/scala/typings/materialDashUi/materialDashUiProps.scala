@@ -876,6 +876,12 @@ trait materialDashUiProps {
   def AutoCompleteProps: typings.materialDashUi.underscoreUnderscoreMaterialUINs.AutoCompleteProps.type = typings.materialDashUi.underscoreUnderscoreMaterialUINs.AutoCompleteProps
   type AutoCompleteProps[DataItem] = typings.materialDashUi.underscoreUnderscoreMaterialUINs.AutoCompleteProps[DataItem]
   @scala.inline
+  def AutoCompleteDividerProps: typings.materialDashUi.underscoreUnderscoreMaterialUINs.DividerProps.type = typings.materialDashUi.underscoreUnderscoreMaterialUINs.DividerProps
+  type AutoCompleteDividerProps = typings.materialDashUi.underscoreUnderscoreMaterialUINs.DividerProps
+  @scala.inline
+  def AutoCompleteItemProps: typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.MenuItemProps.type = typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.MenuItemProps
+  type AutoCompleteItemProps = typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.MenuItemProps
+  @scala.inline
   def AutoLockScrollingProps: typings.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps.type = typings.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps
   type AutoLockScrollingProps = typings.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps
   @scala.inline

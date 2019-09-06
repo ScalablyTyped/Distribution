@@ -22,6 +22,9 @@ object flickityStrings {
   sealed trait dragStart extends FlickityEvents
   
   @js.native
+  sealed trait fullscreenChange extends FlickityEvents
+  
+  @js.native
   sealed trait lazyLoad extends FlickityEvents
   
   @js.native
@@ -55,6 +58,8 @@ object flickityStrings {
   def dragMove: dragMove = "dragMove".asInstanceOf[dragMove]
   @scala.inline
   def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
+  @scala.inline
+  def fullscreenChange: fullscreenChange = "fullscreenChange".asInstanceOf[fullscreenChange]
   @scala.inline
   def lazyLoad: lazyLoad = "lazyLoad".asInstanceOf[lazyLoad]
   @scala.inline

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.facebook
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.twitter
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.`google-plus-official`
+  - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.google
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.pinterest
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.linkedin
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.youtube
@@ -15,6 +16,7 @@ import scala.scalajs.js.annotation._
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.tumblr
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.instagram
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.quora
+  - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.flickr
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.foursquare
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.wordpress
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.stumbleupon
@@ -26,6 +28,8 @@ import scala.scalajs.js.annotation._
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.gitlab
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.angellist
   - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.codepen
+  - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.weibo
+  - typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.vk
 */
 trait SocialMediaType extends js.Object
 

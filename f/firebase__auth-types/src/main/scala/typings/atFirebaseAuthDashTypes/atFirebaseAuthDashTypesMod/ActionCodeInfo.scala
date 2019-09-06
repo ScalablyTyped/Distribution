@@ -1,21 +1,22 @@
 package typings.atFirebaseAuthDashTypes.atFirebaseAuthDashTypesMod
 
+import typings.atFirebaseAuthDashTypes.Anon_EMAILSIGNIN
 import typings.atFirebaseAuthDashTypes.Anon_Email
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ActionCodeInfo extends js.Object {
-  var data: Anon_Email
-  var operation: String
+@JSImport("@firebase/auth-types", "ActionCodeInfo")
+@js.native
+class ActionCodeInfo protected () extends js.Object {
+  var data: Anon_Email = js.native
+  var operation: String = js.native
 }
 
-object ActionCodeInfo {
-  @scala.inline
-  def apply(data: Anon_Email, operation: String): ActionCodeInfo = {
-    val __obj = js.Dynamic.literal(data = data, operation = operation)
-  
-    __obj.asInstanceOf[ActionCodeInfo]
-  }
+/* static members */
+@JSImport("@firebase/auth-types", "ActionCodeInfo")
+@js.native
+object ActionCodeInfo extends js.Object {
+  var Operation: Anon_EMAILSIGNIN = js.native
 }
 

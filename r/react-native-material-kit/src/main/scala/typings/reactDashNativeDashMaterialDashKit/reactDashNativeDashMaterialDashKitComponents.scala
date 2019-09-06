@@ -19,9 +19,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashMaterialDashKitComponents extends reactDashNativeDashMaterialDashKitProps {
   @scala.inline
-  def Indeterminate: ComponentType[IndeterminateProgressProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressNs.Indeterminate].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties]]
-  @scala.inline
   def MKButton: ComponentType[MKButtonProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKButton].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKButtonProperties]]
   @scala.inline
@@ -35,6 +32,9 @@ object reactDashNativeDashMaterialDashKitComponents extends reactDashNativeDashM
   @scala.inline
   def MKProgress: ComponentType[MKProgressProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgress].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressProperties]]
+  @scala.inline
+  def MKProgressNsIndeterminate: ComponentType[IndeterminateProgressProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressNs.Indeterminate].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties]]
   @scala.inline
   def MKRadioButton: ComponentType[MKRadioButtonProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKRadioButton].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties]]

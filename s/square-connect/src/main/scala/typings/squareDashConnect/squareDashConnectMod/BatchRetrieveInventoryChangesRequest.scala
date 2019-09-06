@@ -23,8 +23,7 @@ class BatchRetrieveInventoryChangesRequest () extends js.Object {
     */
   var location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default:
-    * unset.
+    * Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset.
     */
   var states: js.UndefOr[js.Array[StatesEnum]] = js.native
   /**
@@ -33,8 +32,8 @@ class BatchRetrieveInventoryChangesRequest () extends js.Object {
     */
   var types: js.UndefOr[js.Array[TypesEnum]] = js.native
   /**
-    * Provided as an RFC 3339 timestamp. Returns results whose `created_at` or `calculated_at` value is after the given
-    * time. Default: UNIX epoch (`1970-01-01T00:00:00Z`).
+    * Provided as an RFC 3339 timestamp. Returns results whose `created_at` or `calculated_at` value is after the given time.
+    * Default: UNIX epoch (`1970-01-01T00:00:00Z`).
     */
   var updated_after: js.UndefOr[String] = js.native
   /**

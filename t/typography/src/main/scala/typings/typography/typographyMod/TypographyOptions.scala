@@ -15,6 +15,7 @@ trait TypographyOptions extends js.Object {
   var googleFonts: js.UndefOr[js.Array[GoogleFont]] = js.undefined
   var headerColor: js.UndefOr[String] = js.undefined
   var headerFontFamily: js.UndefOr[js.Array[String]] = js.undefined
+  var headerLineHeight: js.UndefOr[Double] = js.undefined
   var headerWeight: js.UndefOr[Double | String] = js.undefined
   var includeNormalize: js.UndefOr[Boolean] = js.undefined
   var overrideStyles: js.UndefOr[
@@ -50,6 +51,7 @@ object TypographyOptions {
     googleFonts: js.Array[GoogleFont] = null,
     headerColor: String = null,
     headerFontFamily: js.Array[String] = null,
+    headerLineHeight: Int | Double = null,
     headerWeight: Double | String = null,
     includeNormalize: js.UndefOr[Boolean] = js.undefined,
     overrideStyles: (/* VerticalRhythm */ VerticalRhythm, /* options */ TypographyOptions, /* styles */ js.Any) => js.Object = null,
@@ -68,6 +70,7 @@ object TypographyOptions {
     if (googleFonts != null) __obj.updateDynamic("googleFonts")(googleFonts)
     if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor)
     if (headerFontFamily != null) __obj.updateDynamic("headerFontFamily")(headerFontFamily)
+    if (headerLineHeight != null) __obj.updateDynamic("headerLineHeight")(headerLineHeight.asInstanceOf[js.Any])
     if (headerWeight != null) __obj.updateDynamic("headerWeight")(headerWeight.asInstanceOf[js.Any])
     if (!js.isUndefined(includeNormalize)) __obj.updateDynamic("includeNormalize")(includeNormalize)
     if (overrideStyles != null) __obj.updateDynamic("overrideStyles")(js.Any.fromFunction3(overrideStyles))

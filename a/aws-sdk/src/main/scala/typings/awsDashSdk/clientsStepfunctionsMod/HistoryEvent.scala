@@ -36,6 +36,26 @@ trait HistoryEvent extends js.Object {
   var lambdaFunctionSucceededEventDetails: js.UndefOr[LambdaFunctionSucceededEventDetails] = js.undefined
   var lambdaFunctionTimedOutEventDetails: js.UndefOr[LambdaFunctionTimedOutEventDetails] = js.undefined
   /**
+    * Contains details about an iteration of a Map state that was aborted.
+    */
+  var mapIterationAbortedEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
+  /**
+    * Contains details about an iteration of a Map state that failed.
+    */
+  var mapIterationFailedEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
+  /**
+    * Contains details about an iteration of a Map state that was started.
+    */
+  var mapIterationStartedEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
+  /**
+    * Contains details about an iteration of a Map state that succeeded.
+    */
+  var mapIterationSucceededEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
+  /**
+    * Contains details about Map state that was started.
+    */
+  var mapStateStartedEventDetails: js.UndefOr[MapStateStartedEventDetails] = js.undefined
+  /**
     * The id of the previous event.
     */
   var previousEventId: js.UndefOr[EventId] = js.undefined
@@ -106,6 +126,11 @@ object HistoryEvent {
     lambdaFunctionStartFailedEventDetails: LambdaFunctionStartFailedEventDetails = null,
     lambdaFunctionSucceededEventDetails: LambdaFunctionSucceededEventDetails = null,
     lambdaFunctionTimedOutEventDetails: LambdaFunctionTimedOutEventDetails = null,
+    mapIterationAbortedEventDetails: MapIterationEventDetails = null,
+    mapIterationFailedEventDetails: MapIterationEventDetails = null,
+    mapIterationStartedEventDetails: MapIterationEventDetails = null,
+    mapIterationSucceededEventDetails: MapIterationEventDetails = null,
+    mapStateStartedEventDetails: MapStateStartedEventDetails = null,
     previousEventId: js.UndefOr[EventId] = js.undefined,
     stateEnteredEventDetails: StateEnteredEventDetails = null,
     stateExitedEventDetails: StateExitedEventDetails = null,
@@ -137,6 +162,11 @@ object HistoryEvent {
     if (lambdaFunctionStartFailedEventDetails != null) __obj.updateDynamic("lambdaFunctionStartFailedEventDetails")(lambdaFunctionStartFailedEventDetails)
     if (lambdaFunctionSucceededEventDetails != null) __obj.updateDynamic("lambdaFunctionSucceededEventDetails")(lambdaFunctionSucceededEventDetails)
     if (lambdaFunctionTimedOutEventDetails != null) __obj.updateDynamic("lambdaFunctionTimedOutEventDetails")(lambdaFunctionTimedOutEventDetails)
+    if (mapIterationAbortedEventDetails != null) __obj.updateDynamic("mapIterationAbortedEventDetails")(mapIterationAbortedEventDetails)
+    if (mapIterationFailedEventDetails != null) __obj.updateDynamic("mapIterationFailedEventDetails")(mapIterationFailedEventDetails)
+    if (mapIterationStartedEventDetails != null) __obj.updateDynamic("mapIterationStartedEventDetails")(mapIterationStartedEventDetails)
+    if (mapIterationSucceededEventDetails != null) __obj.updateDynamic("mapIterationSucceededEventDetails")(mapIterationSucceededEventDetails)
+    if (mapStateStartedEventDetails != null) __obj.updateDynamic("mapStateStartedEventDetails")(mapStateStartedEventDetails)
     if (!js.isUndefined(previousEventId)) __obj.updateDynamic("previousEventId")(previousEventId)
     if (stateEnteredEventDetails != null) __obj.updateDynamic("stateEnteredEventDetails")(stateEnteredEventDetails)
     if (stateExitedEventDetails != null) __obj.updateDynamic("stateExitedEventDetails")(stateExitedEventDetails)

@@ -13,13 +13,8 @@ class BatchRetrieveOrdersResponse () extends js.Object {
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * The requested orders. This will omit any requested orders that do not exist or are not charged.
+    * The requested orders. This will omit any requested orders that do not exist.
     */
   var orders: js.UndefOr[js.Array[Order]] = js.native
-  /**
-    * List of transaction ids within the requested set of ids that encountered transformation issues when being
-    * converted to an Order.
-    */
-  var unconvertible_transaction_ids: js.UndefOr[js.Array[String]] = js.native
 }
 

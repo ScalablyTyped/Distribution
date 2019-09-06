@@ -55,6 +55,7 @@ trait IntrinsicElements extends js.Object {
   var `ion-modal`: IonModal
   var `ion-modal-controller`: IonModalController
   var `ion-nav`: IonNav
+  var `ion-nav-link`: IonNavLink
   var `ion-nav-pop`: IonNavPop
   var `ion-nav-push`: IonNavPush
   var `ion-nav-set-root`: IonNavSetRoot
@@ -158,6 +159,7 @@ object IntrinsicElements {
     `ion-modal`: IonModal,
     `ion-modal-controller`: IonModalController,
     `ion-nav`: IonNav,
+    `ion-nav-link`: IonNavLink,
     `ion-nav-pop`: IonNavPop,
     `ion-nav-push`: IonNavPush,
     `ion-nav-set-root`: IonNavSetRoot,
@@ -258,6 +260,7 @@ object IntrinsicElements {
     __obj.updateDynamic("ion-modal")(`ion-modal`)
     __obj.updateDynamic("ion-modal-controller")(`ion-modal-controller`)
     __obj.updateDynamic("ion-nav")(`ion-nav`)
+    __obj.updateDynamic("ion-nav-link")(`ion-nav-link`)
     __obj.updateDynamic("ion-nav-pop")(`ion-nav-pop`)
     __obj.updateDynamic("ion-nav-push")(`ion-nav-push`)
     __obj.updateDynamic("ion-nav-set-root")(`ion-nav-set-root`)

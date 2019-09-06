@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__react"
-version := "9.1-dt-20190819Z-a79814"
+version := "9.1-dt-20190819Z-c1d205"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
   "org.scalablytyped" %%% "react-dom" % "16.9-dt-20190819Z-a6aee2",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "testing-library__dom" % "6.0-dt-20190904Z-105511")
+  "org.scalablytyped" %%% "testing-library__dom" % "6.0-dt-20190905Z-22a3da")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

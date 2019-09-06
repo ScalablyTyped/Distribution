@@ -1,8 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1ItemNs.ColorEnum
-import typings.squareDashConnect.squareDashConnectMod.V1ItemNs.TypeEnum
-import typings.squareDashConnect.squareDashConnectMod.V1ItemNs.VisibilityEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +28,10 @@ class V1Item () extends js.Object {
     */
   var category_id: js.UndefOr[String] = js.native
   /**
-    * The color of the discount's display label in Square Register, if not the default color. The default color is
-    * 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values.
+    * The color of the discount's display label in Square Register, if not the default color.
+    * The default color is '9da2a6'. See [V1ItemColor](#type-v1itemcolor) for possible values.
     */
-  var color: js.UndefOr[ColorEnum] = js.native
+  var color: js.UndefOr[String] = js.native
   /**
     * The item's description.
     */
@@ -67,7 +64,7 @@ class V1Item () extends js.Object {
   /**
     * The item's type. This value is NORMAL for almost all items. See [V1ItemType](#type-v1itemtype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[String] = js.native
   /**
     * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
     */
@@ -80,6 +77,6 @@ class V1Item () extends js.Object {
     * Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE.
     * See [V1ItemVisibility](#type-v1itemvisibility) for possible values.
     */
-  var visibility: js.UndefOr[VisibilityEnum] = js.native
+  var visibility: js.UndefOr[String] = js.native
 }
 

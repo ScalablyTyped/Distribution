@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CardNs.CardBrandEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,8 +28,7 @@ class Card () extends js.Object {
     */
   var exp_year: js.UndefOr[Double] = js.native
   /**
-    * __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card
-    * across multiple locations within a single application.
+    * A unique, Square-assigned ID that identifies the card across multiple locations and applications for a single Square account.
     */
   var fingerprint: js.UndefOr[String] = js.native
   /**

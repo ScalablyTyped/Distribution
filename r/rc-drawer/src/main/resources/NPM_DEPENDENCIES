@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-drawer" : "2.0.8"
+      "rc-drawer" : "2.0.9"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-drawer" : "2.0.8"
+      "rc-drawer" : "2.0.9"
     }
   ],
   "compile-devDependencies" : [

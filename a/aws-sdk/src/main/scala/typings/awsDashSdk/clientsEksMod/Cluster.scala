@@ -26,6 +26,10 @@ trait Cluster extends js.Object {
     */
   var endpoint: js.UndefOr[String] = js.undefined
   /**
+    * The identity provider information for the cluster.
+    */
+  var identity: js.UndefOr[Identity] = js.undefined
+  /**
     * The logging configuration for your cluster.
     */
   var logging: js.UndefOr[Logging] = js.undefined
@@ -63,6 +67,7 @@ object Cluster {
     clientRequestToken: String = null,
     createdAt: Timestamp = null,
     endpoint: String = null,
+    identity: Identity = null,
     logging: Logging = null,
     name: String = null,
     platformVersion: String = null,
@@ -77,6 +82,7 @@ object Cluster {
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
     if (logging != null) __obj.updateDynamic("logging")(logging)
     if (name != null) __obj.updateDynamic("name")(name)
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion)

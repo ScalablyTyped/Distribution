@@ -64,7 +64,11 @@ trait Animation extends js.Object {
   def getWebAnimations(): js.Array[_] = js.native
   def iterations(iterations: Double): Animation = js.native
   def keyframes(keyframes: js.Array[_]): Animation = js.native
-  def onFinish(callback: js.Any): Animation = js.native
+  def onFinish(callback: js.Function2[/* didComplete */ Boolean, /* animation */ this.type, Unit]): Animation = js.native
+  def onFinish(
+    callback: js.Function2[/* didComplete */ Boolean, /* animation */ this.type, Unit],
+    opts: AnimationOnFinishOptions
+  ): Animation = js.native
   def parent(animation: Animation): Animation = js.native
   def pause(): Animation = js.native
   def play(): Animation = js.native

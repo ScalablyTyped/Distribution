@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class CatalogItem () extends js.Object {
   /**
     * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the
-    * string are used.  Searchable. This field has max length of 24 Unicode code points.
+    * string are used. Searchable. This field has max length of 24 Unicode code points.
     */
   var abbreviation: js.UndefOr[String] = js.native
   /**
@@ -34,10 +34,10 @@ class CatalogItem () extends js.Object {
     */
   var description: js.UndefOr[String] = js.native
   /**
-    * The URL of an image representing this item.
-    * @deprecated Deprecated in favor of `image_id` in [`CatalogObject`](#type-catalogobject).
+    * List of item options IDs for this item. Used to manage and group item variations in a specified order.
+    * Maximum: 6 item options.
     */
-  var image_url: js.UndefOr[String] = js.native
+  var item_options: js.UndefOr[js.Array[CatalogItemOptionForItem]] = js.native
   /**
     * The color of the item's display label in the Square Point of Sale app. This must be a valid hex color code.
     */
@@ -54,8 +54,8 @@ class CatalogItem () extends js.Object {
   var name: js.UndefOr[String] = js.native
   /**
     * The product type of the item. May not be changed once an item has been created.
-    * Only items of product type `REGULAR` may be created by this API; items with other product types are read-only.
-    * See [CatalogItemProductType](#type-catalogitemproducttype) for possible values.
+    * Only items of product type `REGULAR` or `APPOINTMENTS_SERVICE` may be created by this API; items with other product
+    * types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
     */
   var product_type: js.UndefOr[ProductTypeEnum] = js.native
   /**
@@ -73,8 +73,8 @@ class CatalogItem () extends js.Object {
     */
   var tax_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * A list of [CatalogObject](#type-catalogobject)s containing the
-    * [CatalogItemVariation](#type-catalogitemvariation)s for this item.
+    * A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s
+    * for this item. Maximum: 250 item variations.
     */
   var variations: js.UndefOr[js.Array[CatalogObject]] = js.native
 }

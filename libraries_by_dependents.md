@@ -928,7 +928,6 @@
 | 231 | [find-cache-dir](./f/find-cache-dir) | Finds the common standard cache directory
 | 231 | [fs-extra-promise](./f/fs-extra-promise) | Node file system library and fs-extra module promi
 | 231 | [hash_dot_js](./h/hash_dot_js) | Various hash functions that could be run by both b
-| 231 | [wolfy87-eventemitter](./w/wolfy87-eventemitter) | Event based JavaScript for the browser
 | 230 | [passport-google-oauth](./p/passport-google-oauth) | Google (OAuth) authentication strategies for Passp
 | 230 | [util_dot_promisify](./u/util_dot_promisify) | Polyfill/shim for util.promisify in node versions 
 | 229 | [kue](./k/kue) | Feature rich priority job queue backed by redis
@@ -2100,6 +2099,7 @@
 | 65 | [cwd](./c/cwd) | Easily get the CWD (current working directory) of 
 | 65 | [ejson](./e/ejson) | EJSON - Extended and Extensible JSON library from 
 | 65 | [estree-walker](./e/estree-walker) | Traverse an ESTree-compliant AST
+| 65 | [hashring](./h/hashring) | A consistent hashring compatible with ketama hashi
 | 65 | [is-absolute-url](./i/is-absolute-url) | Check if an URL is absolute
 | 65 | [is-obj](./i/is-obj) | Check if a value is an object
 | 65 | [is-valid-path](./i/is-valid-path) | Returns true if a file path does not contain any i
@@ -2711,6 +2711,7 @@
 | 39 | [bser](./b/bser) | JavaScript implementation of the BSER Binary Seria
 | 39 | [cuint](./c/cuint) | Unsigned integers for Javascript
 | 39 | [esprima-walk](./e/esprima-walk) | Walk the primary nodes of an esprima parse tree - 
+| 39 | [esrever](./e/esrever) | A fully Unicode-aware string reverser written in J
 | 39 | [fast-diff](./f/fast-diff) | Fast Javascript text diff
 | 39 | [getpass](./g/getpass) | getpass for node.js
 | 39 | [hapi-auth-basic](./h/hapi-auth-basic) | Basic authentication plugin
@@ -4901,6 +4902,7 @@
 | 5 | [camelcase-keys-deep](./c/camelcase-keys-deep) | Deeply convert the keys of an object to camelCase
 | 5 | [chai-json-schema](./c/chai-json-schema) | Chai plugin for JSON Schema v4
 | 5 | [cheap-ruler](./c/cheap-ruler) | A collection of fast approximations to common geog
+| 5 | [cloud-config-client](./c/cloud-config-client) | Spring Cloud Config Client for NodeJS
 | 5 | [cloud-env](./c/cloud-env) | Consistent naming for cloud-provided server config
 | 5 | [clusterize_dot_js](./c/clusterize_dot_js) | Tiny vanilla JS plugin to display large data sets 
 | 5 | [complex_dot_js](./c/complex_dot_js) | A complex number library
@@ -4937,7 +4939,6 @@
 | 5 | [is-alphanumerical](./i/is-alphanumerical) | Check if a character is alphanumerical
 | 5 | [jest-in-case](./j/jest-in-case) | Jest utility for creating variations of the same t
 | 5 | [jest-matchers](./j/jest-matchers) | -
-| 5 | [jpush-react-native](./j/jpush-react-native) | a jpush plugin for react native application
 | 5 | [jquery-sortable](./j/jquery-sortable) | jquery plugin for sortable, nestable lists
 | 5 | [js-clipper](./j/js-clipper) | common.js compatible version of JSClipper
 | 5 | [js-data-http](./j/js-data-http) | HTTP (XHR) adapter for js-data in the browser.
@@ -5013,6 +5014,7 @@
 | 5 | [raspi-gpio](./r/raspi-gpio) | Provides access to GPIO on the Raspberry Pi from N
 | 5 | [raspi-i2c](./r/raspi-i2c) | Provides access to I2C on the Raspberry Pi from No
 | 5 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages.
+| 5 | [react-aria-live](./r/react-aria-live) | Add aria-live messaging to your React app
 | 5 | [react-confirm](./r/react-confirm) | Small library which makes your Dialog component ca
 | 5 | [react-css-collapse](./r/react-css-collapse) | Component-wrapper for collapse animation with css 
 | 5 | [react-filepond](./r/react-filepond) | A handy FilePond adapter component for React
@@ -5101,6 +5103,7 @@
 | 4 | [easydate](./e/easydate) | get date and/or time by pattern
 | 4 | [egg-cookies](./e/egg-cookies) | cookies module for egg
 | 4 | [electron-notifications](./e/electron-notifications) | A node module for sending notifications in electro
+| 4 | [electron-prompt](./e/electron-prompt) | Electron helper to prompt for a value via input or
 | 4 | [element-ready](./e/element-ready) | Detect when an element is ready in the DOM
 | 4 | [ember-resolver](./e/ember-resolver) | The default modules based resolver for Ember CLI.
 | 4 | [emoji-flags](./e/emoji-flags) | return emoji flag symbol for country code
@@ -5412,7 +5415,6 @@
 | 3 | [mainloop_dot_js](./m/mainloop_dot_js) | A well-constructed JavaScript main loop useful for
 | 3 | [mapbox__mapbox-sdk](./m/mapbox__mapbox-sdk) | JS SDK for accessing Mapbox APIs
 | 3 | [mapbox__s3urls](./m/mapbox__s3urls) | Create S3 urls from bucket/key or extract bucket/k
-| 3 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK
 | 3 | [micromodal](./m/micromodal) | Tiny javascript library for creating accessible mo
 | 3 | [min-indent](./m/min-indent) | Get the shortest leading whitespace from lines in 
 | 3 | [mobservable](./m/mobservable) | Observable data. Reactive functions. Simple code.
@@ -5546,6 +5548,7 @@
 | 3 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js
 | 3 | [yesql](./y/yesql) | Read named SQL statements from .sql files. Also na
 | 3 | [yog-bigpipe](./y/yog-bigpipe) | An express.js middleware for fis widget pipline ou
+| 3 | [yt-player](./y/yt-player) | Simple, robust YouTube Iframe Player API
 | 3 | [zen-push](./z/zen-push) | An Observable push stream
 | 2 | [adlib](./a/adlib) | Templating for deep JSON object graphs
 | 2 | [agora-rtc-sdk](./a/agora-rtc-sdk) | AgoraRTC SDK for web
@@ -5747,6 +5750,7 @@
 | 2 | [mongoose-simple-random](./m/mongoose-simple-random) | Simple and easy-to-use NodeJS Mongoose Schema plug
 | 2 | [mrmlnc__readdir-enhanced](./m/mrmlnc__readdir-enhanced) | fs.readdir with sync, async, and streaming APIs + 
 | 2 | [multer-gridfs-storage](./m/multer-gridfs-storage) | Multer storage engine for GridFS
+| 2 | [multivariate-normal](./m/multivariate-normal) | Port of NumPy's random.multivariate_normal to Node
 | 2 | [musicmatch](./m/musicmatch) | musicmatch api
 | 2 | [nanographql](./n/nanographql) | Tiny graphQL client library
 | 2 | [nblas](./n/nblas) | C++ bindings for all single- and double-precision 
@@ -5773,6 +5777,7 @@
 | 2 | [peer-dial](./p/peer-dial) | Nodejs implementation of the Discovery and Launch 
 | 2 | [pg-large-object](./p/pg-large-object) | Large object support for PostgreSQL clients (node-
 | 2 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers.
+| 2 | [pick-deep](./p/pick-deep) | Creates an object composed of the picked object pr
 | 2 | [plottable](./p/plottable) | A modular charting library built on D3
 | 2 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs
 | 2 | [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs
@@ -5856,6 +5861,7 @@
 | 2 | [sticky-cluster](./s/sticky-cluster) | Sticky session balancer, 10x faster and with much 
 | 2 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio
 | 2 | [stream-chain](./s/stream-chain) | Chain functions as transform streams.
+| 2 | [strikeentco__get](./s/strikeentco__get) | Get a property from a nested object using a dot pa
 | 2 | [strophe](./s/strophe) | Strophe.js is an XMPP library for JavaScript
 | 2 | [subsume](./s/subsume) | Embed data in other data and easily extract it whe
 | 2 | [swap-case](./s/swap-case) | Swap the case of a string
@@ -6160,6 +6166,7 @@
 | 1 | [lazy-value](./l/lazy-value) | Create a lazily evaluated value
 | 1 | [leaflet-gpx](./l/leaflet-gpx) | npm for https://github.com/mpetazzoni/leaflet-gpx
 | 1 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet
+| 1 | [leaflet-loading](./l/leaflet-loading) | A simple loading control for Leaflet
 | 1 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP
 | 1 | [leaflet_dot_awesome-marke](./l/leaflet_dot_awesome-markers) | Leaflet Awesome Markers - allows you to display cu
 | 1 | [leaflet_dot_icon_dot_glyp](./l/leaflet_dot_icon_dot_glyph) | Allows you to put glyphs from icon fonts into your
@@ -6489,6 +6496,7 @@
 | 0 | [botvs](./b/botvs) | -
 | 0 | [box2d](./b/box2d) | 2D physics engine
 | 0 | [brainhubeu__react-carouse](./b/brainhubeu__react-carousel) | Carousel component for React
+| 0 | [bristol-sentry](./b/bristol-sentry) | Sentry transport + formatter for the Bristol logge
 | 0 | [browser-fingerprint](./b/browser-fingerprint) | Generate a fingerprint of a browser
 | 0 | [browser-harness](./b/browser-harness) | Browser Harness ===============
 | 0 | [browser-report](./b/browser-report) | Report browser settings like whatsmybrowser.org.

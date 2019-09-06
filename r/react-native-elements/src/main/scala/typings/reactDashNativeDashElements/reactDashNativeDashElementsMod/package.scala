@@ -34,6 +34,7 @@ package object reactDashNativeDashElementsMod {
   type RecursivePartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native-elements.react-native-elements.RecursivePartial<T[P]> * / object}
     */ typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.RecursivePartial with js.Any
+  type ReplaceTheme = js.Function1[/* updates */ RecursivePartial[FullTheme], Unit]
   type SearchBarProps = SearchBarWrapper with SearchBarBase with SearchBarPlatform with SearchBarDefault with SearchBarIOS with SearchBarAndroid
   type Theme[T] = Partial[FullTheme] with T
   type UpdateTheme = js.Function1[/* updates */ RecursivePartial[FullTheme], Unit]

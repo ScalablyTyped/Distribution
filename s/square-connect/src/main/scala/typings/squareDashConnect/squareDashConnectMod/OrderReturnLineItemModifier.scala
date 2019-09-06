@@ -31,7 +31,7 @@ class OrderReturnLineItemModifier () extends js.Object {
     */
   var total_price_money: js.UndefOr[Money] = js.native
   /**
-    * The return modifier's Unique identifier, unique only within this order
+    * Unique ID that identifies the return modifier only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }

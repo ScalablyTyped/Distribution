@@ -1,7 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1DiscountNs.ColorEnum
-import typings.squareDashConnect.squareDashConnectMod.V1DiscountNs.DiscountTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +16,12 @@ class V1Discount () extends js.Object {
     * The color of the discount's display label in Square Register, if not the default color.
     * The default color is "9da2a6". See [V1DiscountColor](#type-v1discountcolor) for possible values.
     */
-  var color: js.UndefOr[ColorEnum] = js.native
+  var color: js.UndefOr[String] = js.native
   /**
     * Indicates whether the discount is a FIXED value or entered at the time of sale.
     * See [V1DiscountDiscountType](#type-v1discountdiscounttype) for possible values.
     */
-  var discount_type: js.UndefOr[DiscountTypeEnum] = js.native
+  var discount_type: js.UndefOr[String] = js.native
   /**
     * The discount's unique ID.
     */

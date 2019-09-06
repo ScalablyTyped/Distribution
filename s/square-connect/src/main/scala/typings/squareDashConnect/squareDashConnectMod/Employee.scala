@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.EmployeeNs.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +38,7 @@ class Employee () extends js.Object {
   /**
     * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[ActivityStatusEnum] = js.native
   /**
     * A read-only timestamp in RFC 3339 format.
     */

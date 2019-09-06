@@ -39,6 +39,7 @@ import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.atBlueprintjsCore.libEsmComponentsPortalPortalMod.IPortalProps
 import typings.atBlueprintjsCore.libEsmComponentsProgressDashBarProgressBarMod.IProgressBarProps
 import typings.atBlueprintjsCore.libEsmComponentsResizeDashSensorResizeSensorMod.IResizeSensorProps
+import typings.atBlueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderSliderMod.ISliderProps
@@ -130,6 +131,9 @@ trait atBlueprintjsCoreProps {
   @scala.inline
   def MultiSliderProps: IMultiSliderProps.type = typings.atBlueprintjsCore.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps
   type MultiSliderProps = IMultiSliderProps
+  @scala.inline
+  def MultiSliderHandleProps: IHandleProps.type = typings.atBlueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps
+  type MultiSliderHandleProps = IHandleProps
   @scala.inline
   def NavbarProps: INavbarProps.type = typings.atBlueprintjsCore.libEsmComponentsNavbarNavbarMod.INavbarProps
   type NavbarProps = INavbarProps

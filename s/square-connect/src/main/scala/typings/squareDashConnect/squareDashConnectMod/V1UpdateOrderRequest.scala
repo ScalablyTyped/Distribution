@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.V1UpdateOrderRequestNs.ActionEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1UpdateOrderRequest () extends js.Object {
   /**
-    * The action to perform on the order (COMPLETE, CANCEL, or REFUND). See
-    * [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
+    * The action to perform on the order (COMPLETE, CANCEL, or REFUND).
+    * See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values.
     */
-  var action: ActionEnum = js.native
+  var action: String = js.native
   /**
     * A merchant-specified note about the canceling of the order. Only valid if action is CANCEL.
     */

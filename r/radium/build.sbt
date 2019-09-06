@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "radium"
-version := "0.24.0-dt-20190322Z-c02010"
+version := "0.24.0-dt-20190322Z-980a79"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
