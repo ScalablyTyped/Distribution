@@ -45,6 +45,8 @@ object AntdNativeFacade extends atAntDashDesignReactDashNativeProps {
   @inline def Switch:             ExternalComponentP[SwitchProps]             = importSTComponent(Antd.Switch)
   @inline def Tabs:               ExternalComponentP[TabsProps]               = importSTComponent(Antd.Tabs)
   @inline def Tag:                ExternalComponentP[TagProps]                = importSTComponent(Antd.Tag)
+  @inline def WhiteSpace:         ExternalComponentP[WhiteSpaceProps]         = importSTComponent(Antd.WhiteSpace)
+  @inline def WingBlank:          ExternalComponentP[WingBlankProps]          = importSTComponent(Antd.WingBlank)
 
   @inline def IconFill:           ExternalComponentP[IconFillProps]           = importSTComponent(AntdIcons.IconFill)
   @inline def IconOutline:        ExternalComponentP[IconOutlineProps]        = importSTComponent(AntdIcons.IconOutline)
