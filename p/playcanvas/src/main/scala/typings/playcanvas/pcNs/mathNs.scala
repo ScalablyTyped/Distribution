@@ -1,5 +1,6 @@
 package typings.playcanvas.pcNs
 
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,24 +14,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object mathNs extends js.Object {
   /**
+    * @constant
+    * @type {Number}
     * @name pc.math.DEG_TO_RAD
     * @description Conversion factor between degrees and radians
-    * @type Number
     * @example
     * // Convert 180 degrees to pi radians
     * var rad = 180 * pc.math.DEG_TO_RAD;
     */
   val DEG_TO_RAD: Double = js.native
   /**
-    * @name pc.math.INV_LOG2
-    * @description Inverse log 2
-    * @type Number
-    */
-  val INV_LOG2: Double = js.native
-  /**
+    * @constant
+    * @type {Number}
     * @name pc.math.RAD_TO_DEG
     * @description Conversion factor between degrees and radians
-    * @type Number
     * @example
     * // Convert pi radians to 180 degrees
     * var deg = Math.PI * pc.math.RAD_TO_DEG;
@@ -89,7 +86,7 @@ object mathNs extends js.Object {
     * // Set bytes to [0x11, 0x22, 0x33]
     * var bytes = pc.math.intToBytes24(0x112233);
     */
-  def intToBytes24(i: Double): js.Tuple3[Double, Double, Double] = js.native
+  def intToBytes24(i: Double): js.Array[Number] = js.native
   /**
     * @function
     * @name pc.math.intToBytes32
@@ -100,7 +97,7 @@ object mathNs extends js.Object {
     * // Set bytes to [0x11, 0x22, 0x33, 0x44]
     * var bytes = pc.math.intToBytes32(0x11223344);
     */
-  def intToBytes32(i: Double): js.Tuple4[Double, Double, Double, Double] = js.native
+  def intToBytes32(i: Double): js.Array[Number] = js.native
   /**
     * @function
     * @name pc.math.lerp
@@ -131,7 +128,7 @@ object mathNs extends js.Object {
     * @name pc.math.nextPowerOfTwo
     * @description Returns the next power of 2 for the specified value.
     * @param {Number} val The value for which to calculate the next power of 2.
-    * @return {Number} The next power of 2.
+    * @returns {Number} The next power of 2.
     */
   def nextPowerOfTwo(`val`: Double): Double = js.native
   /**

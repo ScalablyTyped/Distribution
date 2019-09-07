@@ -5,9 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.AudioListenerComponentSystem
-  * @class Component System for adding and removing {@link pc.AudioComponent} objects to Entities.
+  * @classdesc Component System for adding and removing {@link pc.AudioComponent} objects to Entities.
   * @description Create a new AudioListenerComponentSystem
+  * @param {pc.Application} app The application managing this system.
+  * @param {pc.SoundManager} manager A sound manager instance.
   * @extends pc.ComponentSystem
   */
 @JSGlobal("pc.AudioListenerComponentSystem")

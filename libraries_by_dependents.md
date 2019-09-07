@@ -403,6 +403,7 @@
 | 639 | [prettyjson](./p/prettyjson) | Package for formatting JSON data in a coloured YAM
 | 636 | [boxen](./b/boxen) | Create boxes in the terminal
 | 635 | [vinyl-source-stream](./v/vinyl-source-stream) | Use conventional text streams at the start of your
+| 634 | [pull-stream](./p/pull-stream) | minimal pull stream
 | 633 | [watch](./w/watch) | Utilities for watching file trees.
 | 630 | [faker](./f/faker) | Generate massive amounts of fake contextual data
 | 628 | [leaflet](./l/leaflet) | JavaScript library for mobile-friendly interactive
@@ -1924,6 +1925,7 @@
 | 77 | [commondir](./c/commondir) | compute the closest common parent for file paths
 | 77 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly
 | 77 | [fb](./f/fb) | NodeJS Library for Facebook
+| 77 | [karma-coverage-istanbul-r](./k/karma-coverage-istanbul-reporter) | A karma reporter that uses the latest istanbul 1.x
 | 77 | [map-obj](./m/map-obj) | Map object keys and values into a new object
 | 77 | [npm-run](./n/npm-run) | Run executables for locally-installed packages wit
 | 77 | [npm-run-path](./n/npm-run-path) | Get your PATH prepended with locally installed bin
@@ -2091,6 +2093,7 @@
 | 66 | [qrcode_dot_react](./q/qrcode_dot_react) | React component to generate QR codes
 | 66 | [querystringify](./q/querystringify) | Querystringify - Small, simple but powerful query 
 | 66 | [serverless](./s/serverless) | Serverless Framework - Build web, mobile and IoT a
+| 66 | [ssb-keys](./s/ssb-keys) | keyfile operations for ssb
 | 66 | [storybook__addon-links](./s/storybook__addon-links) | Story Links addon for storybook
 | 66 | [vscode-languageserver-typ](./v/vscode-languageserver-types) | Types used by the Language server for node
 | 65 | [apollo-server-core](./a/apollo-server-core) | Core engine for Apollo GraphQL server
@@ -2964,6 +2967,7 @@
 | 32 | [type-name](./t/type-name) | Just a reasonable typeof
 | 32 | [wellknown](./w/wellknown) | convert wkt to geojson
 | 31 | [async-busboy](./a/async-busboy) | Promise based multipart form parser
+| 31 | [audio-context](./a/audio-context) | A WebAudio Context singleton
 | 31 | [catbox](./c/catbox) | Multi-strategy object caching service
 | 31 | [connect-slashes](./c/connect-slashes) | Trailing slash redirect middleware for Connect and
 | 31 | [deku](./d/deku) | Render interfaces using pure functions and virtual
@@ -3188,6 +3192,7 @@
 | 26 | [cordova-plugin-network-in](./c/cordova-plugin-network-information) | Cordova Network Information Plugin
 | 26 | [debounce-promise](./d/debounce-promise) | Create a debounced version of a promise returning 
 | 26 | [delete-empty](./d/delete-empty) | Recursively delete all empty folders in a director
+| 26 | [fast-html-parser](./f/fast-html-parser) | A very fast HTML parser, generating a simplified D
 | 26 | [ffi-napi](./f/ffi-napi) | A foreign function interface (FFI) for Node.js, N-
 | 26 | [fine-uploader](./f/fine-uploader) | Multiple file upload plugin with progress-bar, dra
 | 26 | [from](./f/from) | Easy way to make a Readable Stream
@@ -4562,6 +4567,7 @@
 | 8 | [vali-date](./v/vali-date) | Validate a date
 | 8 | [vega-typings](./v/vega-typings) | Typings for Vega.
 | 8 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2
+| 8 | [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr
 | 8 | [wnumb](./w/wnumb) | wNumb - JavaScript Number & Money formatting
 | 8 | [yargs-interactive](./y/yargs-interactive) | Build interactive command line tools without worri
 | 7 | [amplitude-js](./a/amplitude-js) | Javascript library for Amplitude Analytics
@@ -4889,6 +4895,7 @@
 | 5 | [api-error-handler](./a/api-error-handler) | Express error handlers for JSON APIs
 | 5 | [atlaskit__layer](./a/atlaskit__layer) | A React layer component responsible for the positi
 | 5 | [atmosphere_dot_js](./a/atmosphere_dot_js) | Atmosphere client for Node.js
+| 5 | [audio-play](./a/audio-play) | Play audio buffer in node or browser
 | 5 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 5 | [aws-regions](./a/aws-regions) | List of AWS Regions and Availability Zones
 | 5 | [aws-sdk__util-hex-encodin](./a/aws-sdk__util-hex-encoding) | Converts binary buffers to and from lowercase hexa
@@ -5462,6 +5469,7 @@
 | 3 | [react-facebook-login-comp](./r/react-facebook-login-component) | React Component that lets you instantly login thro
 | 3 | [react-google-places-sugge](./r/react-google-places-suggest) | React component to select geolocated suggestion fr
 | 3 | [react-instantsearch-core](./r/react-instantsearch-core) | ⚡ Lightning-fast search for React, by Algolia
+| 3 | [react-loadable-visibility](./r/react-loadable-visibility) | A wrapper around react-loadable for elements that 
 | 3 | [react-mailchimp-subscribe](./r/react-mailchimp-subscribe) | react-mailchimp-subscribe React component
 | 3 | [react-movable](./r/react-movable) | Drag and drop lists.
 | 3 | [react-native-elevated-vie](./r/react-native-elevated-view) | Cross platform solution to elevation for React Nat
@@ -5662,6 +5670,7 @@
 | 2 | [historykana](./h/historykana) | Analyse Japanese Furigana from key input history
 | 2 | [hyper-aws4](./h/hyper-aws4) | AWS Signature Version 4 Signing Library for Hyper
 | 2 | [idyll-document](./i/idyll-document) | The Idyll runtime, implemented as a React componen
+| 2 | [ifvisible](./i/ifvisible) | Crossbrowser & lightweight way to check if user is
 | 2 | [impress](./i/impress) | Impress Application Server for Node.js
 | 2 | [in-app-purchase](./i/in-app-purchase) | In-App-Purchase validation and subscription manage
 | 2 | [indefinite](./i/indefinite) | Prefix a noun with an indefinite article - a or an
@@ -6161,6 +6170,7 @@
 | 1 | [known](./k/known) | Allow only access to known object properties using
 | 1 | [koa-bouncer](./k/koa-bouncer) | A parameter validation library for Koa routes
 | 1 | [koa2-session-redis](./k/koa2-session-redis) | A simple redis store of koa-session
+| 1 | [koa__multer](./k/koa__multer) | Route middleware for Koa that handles multipart/fo
 | 1 | [kos-core](./k/kos-core) | 基于react-redux的可使用封装
 | 1 | [lambda-tester](./l/lambda-tester) | Unit/Integration tests for AWS Lambda handlers
 | 1 | [lazy-value](./l/lazy-value) | Create a lazily evaluated value
@@ -6750,6 +6760,7 @@
 | 0 | [leaflet_dot_utm](./l/leaflet_dot_utm) | Converts LatLng to UTM WGS84 in Leaflet
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
 | 0 | [libra-core](./l/libra-core) | Library for Crypto
+| 0 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu
 | 0 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o
 | 0 | [linq4js](./l/linq4js) | Linq methods for JavaScript/TypeScript to work wit
 | 0 | [linqsharp](./l/linqsharp) | Linq methods based on .NET

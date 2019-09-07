@@ -1,6 +1,9 @@
 package typings.sharepoint.SrchNs
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.sharepoint.Anon_ContextTitle
 import typings.sharepoint.SPNs.ClientRuntimeContext
+import typings.std.HTMLCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +11,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Srch.ScriptApplicationManager")
 @js.native
 class ScriptApplicationManager () extends js.Object {
+  var queryGroups: StringDictionary[QueryGroup] = js.native
+  var states: Anon_ContextTitle = js.native
   /** Adds handler for the load event */
   def add_load(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
   /** Adds handler for the postload event */
@@ -15,6 +20,7 @@ class ScriptApplicationManager () extends js.Object {
   /** Adds handler for the preload event */
   def add_preLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
   def dispose(): Unit = js.native
+  def getNavigationNodes(): HTMLCollection = js.native
   /** Returns server-relative link to _layouts/DesignDisplayTemplates.aspx */
   def get_displayTemplatesUrl(): String = js.native
   /** Returns absolute URL of the current page (without ? and # parts) */

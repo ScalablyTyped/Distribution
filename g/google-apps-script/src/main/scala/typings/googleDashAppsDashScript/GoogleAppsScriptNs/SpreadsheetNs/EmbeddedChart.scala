@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait EmbeddedChart extends js.Object {
   def getAs(contentType: String): Blob
   def getBlob(): Blob
-  def getChartId(): Integer
+  def getChartId(): Integer | Null
   def getContainerInfo(): ContainerInfo
   def getHiddenDimensionStrategy(): ChartHiddenDimensionStrategy
   def getId(): String
@@ -32,7 +32,7 @@ object EmbeddedChart {
   def apply(
     getAs: String => Blob,
     getBlob: () => Blob,
-    getChartId: () => Integer,
+    getChartId: () => Integer | Null,
     getContainerInfo: () => ContainerInfo,
     getHiddenDimensionStrategy: () => ChartHiddenDimensionStrategy,
     getId: () => String,

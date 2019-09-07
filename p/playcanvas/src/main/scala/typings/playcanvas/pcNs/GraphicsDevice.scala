@@ -1,32 +1,46 @@
 package typings.playcanvas.pcNs
 
 import typings.playcanvas.Anon_Base
-import typings.playcanvas.Anon_ColorDepth
+import typings.playcanvas.Anon_Color
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.GraphicsDevice
-  * @class The graphics device manages the underlying graphics context. It is responsible
+  * @classdesc The graphics device manages the underlying graphics context. It is responsible
   * for submitting render state changes and graphics primitives to the hardware. A graphics
   * device is tied to a specific canvas HTML element. It is valid to have more than one
   * canvas element per page and create a new graphics device against each.
   * @description Creates a new graphics device.
-  * @param {Object} canvas The canvas to which the graphics device is tied.
-  * @param {Object} [options] Options passed when creating the WebGL context. More info here https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
+  * @param {HTMLCanvasElement} canvas The canvas to which the graphics device will render.
+  * @param {Object} [options] Options passed when creating the WebGL context. More info {@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext here}.
+  * @property {HTMLCanvasElement} canvas The canvas DOM element that provides the underlying WebGL context used by the graphics device.
+  * @property {Boolean} textureFloatRenderable Determines if 32-bit floating-point textures can be used as frame buffer. [read only]
+  * @property {Boolean} textureHalfFloatRenderable Determines if 16-bit floating-point textures can be used as frame buffer. [read only]
+  * @property {pc.ScopeSpace} scope The scope namespace for shader attributes and variables. [read only]
   */
 @JSGlobal("pc.GraphicsDevice")
 @js.native
 class GraphicsDevice protected () extends js.Object {
   def this(canvas: HTMLCanvasElement) = this()
-  def this(canvas: HTMLCanvasElement, options: js.Object) = this()
-  val canvas: HTMLCanvasElement = js.native
+  def this(canvas: HTMLCanvasElement, options: js.Any) = this()
+  /**
+    * The canvas DOM element that provides the underlying WebGL context used by the graphics device.
+    */
+  var canvas: HTMLCanvasElement = js.native
+  /**
+    * @name pc.GraphicsDevice#fullscreen
+    * @type {Boolean}
+    * @description Fullscreen mode
+    */
+  var fullscreen: Boolean = js.native
   /**
     * @readonly
     * @name pc.GraphicsDevice#height
-    * @type Number
+    * @type {Number}
     * @description Height of the back buffer in pixels.
     */
   val height: Double = js.native
@@ -44,6 +58,11 @@ class GraphicsDevice protected () extends js.Object {
     * @description The maximum supported dimension of a cube map.
     */
   val maxCubeMapSize: Double = js.native
+  /**
+    * @name pc.GraphicsDevice#maxPixelRatio
+    * @type {Number}
+    * @description Maximum pixel ratio
+    */
   var maxPixelRatio: Double = js.native
   /**
     * @readonly
@@ -67,9 +86,28 @@ class GraphicsDevice protected () extends js.Object {
     */
   val precision: String = js.native
   /**
+    * The scope namespace for shader attributes and variables. [read only]
+    */
+  var scope: ScopeSpace = js.native
+  /**
+    * @readonly
+    * @name pc.GraphicsDevice#textureFloatHighPrecision
+    * @type {Number}
+    * @description Check if high precision floating-point textures are supported
+    */
+  val textureFloatHighPrecision: Double = js.native
+  /**
+    * Determines if 32-bit floating-point textures can be used as frame buffer. [read only]
+    */
+  var textureFloatRenderable: Boolean = js.native
+  /**
+    * Determines if 16-bit floating-point textures can be used as frame buffer. [read only]
+    */
+  var textureHalfFloatRenderable: Boolean = js.native
+  /**
     * @readonly
     * @name pc.GraphicsDevice#width
-    * @type Number
+    * @type {Number}
     * @description Width of the back buffer in pixels.
     */
   val width: Double = js.native
@@ -104,7 +142,7 @@ class GraphicsDevice protected () extends js.Object {
     *     flags: pc.CLEARFLAG_COLOR | pc.CLEARFLAG_DEPTH
     * });
     */
-  def clear(options: Anon_ColorDepth): Unit = js.native
+  def clear(options: Anon_Color): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#clearShaderCache
@@ -118,17 +156,18 @@ class GraphicsDevice protected () extends js.Object {
     * @param {Object} primitive Primitive object describing how to submit current vertex/index buffers defined as follows:
     * @param {Number} primitive.type The type of primitive to render. Can be:
     * <ul>
-    *     <li>pc.PRIMITIVE_POINTS</li>
-    *     <li>pc.PRIMITIVE_LINES</li>
-    *     <li>pc.PRIMITIVE_LINELOOP</li>
-    *     <li>pc.PRIMITIVE_LINESTRIP</li>
-    *     <li>pc.PRIMITIVE_TRIANGLES</li>
-    *     <li>pc.PRIMITIVE_TRISTRIP</li>
-    *     <li>pc.PRIMITIVE_TRIFAN</li>
+    *     <li>{@link pc.PRIMITIVE_POINTS}</li>
+    *     <li>{@link pc.PRIMITIVE_LINES}</li>
+    *     <li>{@link pc.PRIMITIVE_LINELOOP}</li>
+    *     <li>{@link pc.PRIMITIVE_LINESTRIP}</li>
+    *     <li>{@link pc.PRIMITIVE_TRIANGLES}</li>
+    *     <li>{@link pc.PRIMITIVE_TRISTRIP}</li>
+    *     <li>{@link pc.PRIMITIVE_TRIFAN}</li>
     * </ul>
     * @param {Number} primitive.base The offset of the first index or vertex to dispatch in the draw call.
     * @param {Number} primitive.count The number of indices or vertices to dispatch in the draw call.
-    * @param {Boolean} primitive.indexed True to interpret the primitive as indexed, thereby using the currently set index buffer and false otherwise.
+    * @param {Boolean} [primitive.indexed] True to interpret the primitive as indexed, thereby using the currently set index buffer and false otherwise.
+    * @param {Number} [numInstances=1] The number of instances to render when using ANGLE_instanced_arrays. Defaults to 1.
     * @example
     * // Render a single, unindexed triangle
     * device.draw({
@@ -142,44 +181,11 @@ class GraphicsDevice protected () extends js.Object {
   def draw(primitive: Anon_Base, numInstances: Double): Unit = js.native
   /**
     * @function
-    * @name pc.GraphicsDevice#fire
-    * @description Fire an event, all additional arguments are passed on to the event listener
-    * @param {Object} name Name of event to fire
-    * @param {*} [...] Arguments that are passed to the event handler
-    * @example
-    * obj.fire('test', 'This is the message');
-    */
-  def fire(
-    name: String,
-    arg1: js.Any,
-    arg2: js.UndefOr[js.Any],
-    arg3: js.UndefOr[js.Any],
-    arg4: js.UndefOr[js.Any],
-    arg5: js.UndefOr[js.Any],
-    arg6: js.UndefOr[js.Any],
-    arg7: js.UndefOr[js.Any],
-    arg8: js.UndefOr[js.Any]
-  ): js.Any = js.native
-  /**
-    * @function
     * @name pc.GraphicsDevice#getBlending
     * @description Queries whether blending is enabled.
     * @returns {Boolean} True if blending is enabled and false otherwise.
     */
   def getBlending(): Boolean = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.GraphicsDevice#getBoneLimit
-    * @description Queries the maximum number of bones that can be referenced by a shader.
-    * The shader generators (pc.programlib) use this number to specify the matrix array
-    * size of the uniform 'matrix_pose[0]'. The value is calculated based on the number of
-    * available uniform vectors available after subtracting the number taken by a typical
-    * heavyweight shader. If a different number is required, it can be tuned via
-    * pc.GraphicsDevice#setBoneLimit.
-    * @returns {Number} The maximum number of bones that can be supported by the host hardware.
-    */
-  /* private */ def getBoneLimit(): Double = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#getDepthTest
@@ -199,15 +205,7 @@ class GraphicsDevice protected () extends js.Object {
     * var depthWrite = device.getDepthWrite();
     * console.log('Depth writing is ' + depthWrite ? 'enabled' : 'disabled');
     */
-  def getDepthWrite(): Unit = js.native
-  /**
-    * @public
-    * @function
-    * @name pc.GraphicsDevice#getProgramLibrary
-    * @description Retrieves the program library assigned to the specified graphics device.
-    * @returns {pc.ProgramLibrary} The program library assigned to the device.
-    */
-  def getProgramLibrary(): ProgramLibrary = js.native
+  def getDepthWrite(): Boolean = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#getRenderTarget
@@ -220,77 +218,15 @@ class GraphicsDevice protected () extends js.Object {
   def getRenderTarget(): RenderTarget = js.native
   /**
     * @function
-    * @name pc.GraphicsDevice#hasEvent
-    * @description Test if there are any handlers bound to an event name
-    * @param {String} name The name of the event to test
-    * @example
-    * obj.on('test', function () { }); // bind an event to 'test'
-    * obj.hasEvent('test'); // returns true
-    */
-  def hasEvent(name: String): Boolean = js.native
-  /**
-    * @function
-    * @name pc.GraphicsDevice#off
-    * @description Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,
-    * if scope is not provided then all events with the callback will be unbound.
-    * @param {String} [name] Name of the event to unbind
-    * @param {Function} [callback] Function to be unbound
-    * @param {Object} [scope] Scope that was used as the this when the event is fired
-    * @example
-    * var handler = function () {
-    * };
-    * obj.on('test', handler);
-    *
-    * obj.off(); // Removes all events
-    * obj.off('test'); // Removes all events called 'test'
-    * obj.off('test', handler); // Removes all handler functions, called 'test'
-    * obj.off('test', handler, this); // Removes all hander functions, called 'test' with scope this
-    */
-  def off(name: String, callback: js.Function1[/* repeated */ js.Any, Unit], scope: js.Any): js.Any = js.native
-  // Events
-  /**
-    * @function
-    * @name pc.GraphicsDevice#on
-    * @description Attach an event handler to an event
-    * @param {String} name Name of the event to bind the callback to
-    * @param {Function} callback Function that is called when event is fired. Note the callback is limited to 8 arguments.
-    * @param {Object} [scope] Object to use as 'this' when the event is fired, defaults to current this
-    * @example
-    * obj.on('test', function (a, b) {
-    *     console.log(a + b);
-    * });
-    * obj.fire('test', 1, 2); // prints 3 to the console
-    */
-  def on(name: String, callback: js.Function1[/* repeated */ js.Any, Unit], scope: js.Any): js.Any = js.native
-  /**
-    * @function
-    * @name pc.GraphicsDevice#once
-    * @description Attach an event handler to an event. This handler will be removed after being fired once.
-    * @param {String} name Name of the event to bind the callback to
-    * @param {Function} callback Function that is called when event is fired. Note the callback is limited to 8 arguments.
-    * @param {Object} [scope] Object to use as 'this' when the event is fired, defaults to current this
-    * @example
-    * obj.once('test', function (a, b) {
-    *     console.log(a + b);
-    * });
-    * obj.fire('test', 1, 2); // prints 3 to the console
-    * obj.fire('test', 1, 2); // not going to get handled
-    */
-  def once(name: String, callback: js.Function1[/* repeated */ js.Any, Unit], scope: js.Any): js.Any = js.native
-  /**
-    * @function
     * @name pc.GraphicsDevice#resizeCanvas
     * @description Sets the width and height of the canvas, then fires the 'resizecanvas' event.
+    * Note that the specified width and height values will be multiplied by the value of
+    * {@link pc.GraphicsDevice#maxPixelRatio} to give the final resultant width and height for
+    * the canvas.
+    * @param {Number} width The new width of the canvas.
+    * @param {Number} height The new height of the canvas.
     */
   def resizeCanvas(width: Double, height: Double): Unit = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.GraphicsDevice#setAlphaToCoverage
-    * @description Enables or disables alpha to coverage (WebGL2 only).
-    * @param {Boolean} state True to enable alpha to coverage and false to disable it.
-    */
-  /* private */ def setAlphaToCoverage(state: Boolean): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setBlendEquation
@@ -369,7 +305,7 @@ class GraphicsDevice protected () extends js.Object {
     * @param {Number} blendSrcAlpha The separate source blend function for the alpha channel.
     * @param {Number} blendDstAlpha The separate destination blend function for the alpha channel.
     */
-  def setBlendFunctionSeparate(blendSrc: Unit, blendDst: Unit, blendSrcAlpha: Unit, blendDstAlpha: Unit): Unit = js.native
+  def setBlendFunctionSeparate(blendSrc: Double, blendDst: Double, blendSrcAlpha: Double, blendDstAlpha: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setBlending
@@ -377,16 +313,6 @@ class GraphicsDevice protected () extends js.Object {
     * @param {Boolean} blending True to enable blending and false to disable it.
     */
   def setBlending(blending: Boolean): Unit = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.GraphicsDevice#setBoneLimit
-    * @description Specifies the maximum number of bones that the device can support on
-    * the current hardware. This function allows the default calculated value based on
-    * available vector uniforms to be overridden.
-    * @param {Number} maxBones The maximum number of bones supported by the host hardware.
-    */
-  /* private */ def setBoneLimit(maxBones: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setColorWrite
@@ -463,25 +389,6 @@ class GraphicsDevice protected () extends js.Object {
     */
   def setIndexBuffer(indexBuffer: IndexBuffer): Unit = js.native
   /**
-    * @private
-    * @function
-    * @name pc.GraphicsDevice#setProgramLibrary
-    * @description Assigns a program library to the specified device. By default, a graphics
-    * device is created with a program library that manages all of the programs that are
-    * used to render any graphical primitives. However, this function allows the user to
-    * replace the existing program library with a new one.
-    * @param {pc.ProgramLibrary} programLib The program library to assign to the device.
-    */
-  /* private */ def setProgramLibrary(programLib: js.Any): ProgramLibrary = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.GraphicsDevice#setRaster
-    * @description Enables or disables rasterization. Useful with transform feedback, when you only need to process the data without drawing.
-    * @param {Boolean} on True to enable rasterization and false to disable it.
-    */
-  /* private */ def setRaster(on: Boolean): Unit = js.native
-  /**
     * @function
     * @name pc.GraphicsDevice#setRenderTarget
     * @description Sets the specified render target on the device. If null
@@ -511,8 +418,9 @@ class GraphicsDevice protected () extends js.Object {
     * @name pc.GraphicsDevice#setShader
     * @description Sets the active shader to be used during subsequent draw calls.
     * @param {pc.Shader} shader The shader to set to assign to the device.
+    * @returns {Boolean} true if the shader was successfully set, false otherwise.
     */
-  def setShader(shader: Shader): Unit = js.native
+  def setShader(shader: Shader): Boolean = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setStencilFunc
@@ -536,19 +444,48 @@ class GraphicsDevice protected () extends js.Object {
   /**
     * @function
     * @name pc.GraphicsDevice#setStencilFuncBack
-    * @description Same as pc.GraphicsDevice#setStencilFunc, but only for back faces.
+    * @description Configures stencil test for back faces.
+    * @param {Number} func A comparison function that decides if the pixel should be written,
+    * based on the current stencil buffer value, reference value, and mask value. Can be:
+    * <ul>
+    *     <li>pc.FUNC_NEVER: never pass</li>
+    *     <li>pc.FUNC_LESS: pass if (ref & mask) < (stencil & mask)</li>
+    *     <li>pc.FUNC_EQUAL: pass if (ref & mask) == (stencil & mask)</li>
+    *     <li>pc.FUNC_LESSEQUAL: pass if (ref & mask) <= (stencil & mask)</li>
+    *     <li>pc.FUNC_GREATER: pass if (ref & mask) > (stencil & mask)</li>
+    *     <li>pc.FUNC_NOTEQUAL: pass if (ref & mask) != (stencil & mask)</li>
+    *     <li>pc.FUNC_GREATEREQUAL: pass if (ref & mask) >= (stencil & mask)</li>
+    *     <li>pc.FUNC_ALWAYS: always pass</li>
+    * </ul>
+    * @param {Number} ref Reference value used in comparison.
+    * @param {Number} mask Mask applied to stencil buffer value and reference value before comparison.
     */
-  def setStencilFuncBack(func: Boolean, ref: Boolean, mask: Boolean): Unit = js.native
+  def setStencilFuncBack(func: Double, ref: Double, mask: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setStencilFuncFront
-    * @description Same as pc.GraphicsDevice#setStencilFunc, but only for front faces.
+    * @description Configures stencil test for front faces.
+    * @param {Number} func A comparison function that decides if the pixel should be written,
+    * based on the current stencil buffer value, reference value, and mask value. Can be:
+    * <ul>
+    *     <li>pc.FUNC_NEVER: never pass</li>
+    *     <li>pc.FUNC_LESS: pass if (ref & mask) < (stencil & mask)</li>
+    *     <li>pc.FUNC_EQUAL: pass if (ref & mask) == (stencil & mask)</li>
+    *     <li>pc.FUNC_LESSEQUAL: pass if (ref & mask) <= (stencil & mask)</li>
+    *     <li>pc.FUNC_GREATER: pass if (ref & mask) > (stencil & mask)</li>
+    *     <li>pc.FUNC_NOTEQUAL: pass if (ref & mask) != (stencil & mask)</li>
+    *     <li>pc.FUNC_GREATEREQUAL: pass if (ref & mask) >= (stencil & mask)</li>
+    *     <li>pc.FUNC_ALWAYS: always pass</li>
+    * </ul>
+    * @param {Number} ref Reference value used in comparison.
+    * @param {Number} mask Mask applied to stencil buffer value and reference value before comparison.
     */
   def setStencilFuncFront(func: Double, ref: Double, mask: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setStencilOperation
-    * @description Configures how stencil buffer values should be modified based on the result of depth/stencil tests. Works for both front and back faces.
+    * @description Configures how stencil buffer values should be modified based on the result
+    * of depth/stencil tests. Works for both front and back faces.
     * @param {Number} fail Action to take if stencil test is failed
     * @param {Number} zfail Action to take if depth test is failed
     * @param {Number} zpass Action to take if both depth and stencil test are passed
@@ -556,7 +493,7 @@ class GraphicsDevice protected () extends js.Object {
     * <ul>
     *     <li>pc.STENCILOP_KEEP: don't change the stencil buffer value</li>
     *     <li>pc.STENCILOP_ZERO: set value to zero</li>
-    *     <li>pc.STENCILOP_REPLACE: replace value with the reference value (see pc.GraphicsDevice#setStencilFunc)</li>
+    *     <li>pc.STENCILOP_REPLACE: replace value with the reference value (see {@link pc.GraphicsDevice#setStencilFunc})</li>
     *     <li>pc.STENCILOP_INCREMENT: increment the value</li>
     *     <li>pc.STENCILOP_INCREMENTWRAP: increment the value, but wrap it to zero when it's larger than a maximum representable value</li>
     *     <li>pc.STENCILOP_DECREMENT: decrement the value</li>
@@ -569,13 +506,45 @@ class GraphicsDevice protected () extends js.Object {
   /**
     * @function
     * @name pc.GraphicsDevice#setStencilOperationBack
-    * @description Same as pc.GraphicsDevice#setStencilOperation, but only for back faces.
+    * @description Configures how stencil buffer values should be modified based on the result
+    * of depth/stencil tests. Works for back faces.
+    * @param {Number} fail Action to take if stencil test is failed
+    * @param {Number} zfail Action to take if depth test is failed
+    * @param {Number} zpass Action to take if both depth and stencil test are passed
+    * All arguments can be:
+    * <ul>
+    *     <li>pc.STENCILOP_KEEP: don't change the stencil buffer value</li>
+    *     <li>pc.STENCILOP_ZERO: set value to zero</li>
+    *     <li>pc.STENCILOP_REPLACE: replace value with the reference value (see {@link pc.GraphicsDevice#setStencilFunc})</li>
+    *     <li>pc.STENCILOP_INCREMENT: increment the value</li>
+    *     <li>pc.STENCILOP_INCREMENTWRAP: increment the value, but wrap it to zero when it's larger than a maximum representable value</li>
+    *     <li>pc.STENCILOP_DECREMENT: decrement the value</li>
+    *     <li>pc.STENCILOP_DECREMENTWRAP: decrement the value, but wrap it to a maximum representable value, if the current value is 0</li>
+    *     <li>pc.STENCILOP_INVERT: invert the value bitwise</li>
+    * </ul>
+    * @param {Number} writeMask A bit mask applied to the reference value, when written.
     */
   def setStencilOperationBack(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#setStencilOperationFront
-    * @description Same as pc.GraphicsDevice#setStencilOperation, but only for front faces.
+    * @description Configures how stencil buffer values should be modified based on the result
+    * of depth/stencil tests. Works for front faces.
+    * @param {Number} fail Action to take if stencil test is failed
+    * @param {Number} zfail Action to take if depth test is failed
+    * @param {Number} zpass Action to take if both depth and stencil test are passed
+    * All arguments can be:
+    * <ul>
+    *     <li>pc.STENCILOP_KEEP: don't change the stencil buffer value</li>
+    *     <li>pc.STENCILOP_ZERO: set value to zero</li>
+    *     <li>pc.STENCILOP_REPLACE: replace value with the reference value (see {@link pc.GraphicsDevice#setStencilFunc})</li>
+    *     <li>pc.STENCILOP_INCREMENT: increment the value</li>
+    *     <li>pc.STENCILOP_INCREMENTWRAP: increment the value, but wrap it to zero when it's larger than a maximum representable value</li>
+    *     <li>pc.STENCILOP_DECREMENT: decrement the value</li>
+    *     <li>pc.STENCILOP_DECREMENTWRAP: decrement the value, but wrap it to a maximum representable value, if the current value is 0</li>
+    *     <li>pc.STENCILOP_INVERT: invert the value bitwise</li>
+    * </ul>
+    * @param {Number} writeMask A bit mask applied to the reference value, when written.
     */
   def setStencilOperationFront(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
   /**
@@ -586,14 +555,6 @@ class GraphicsDevice protected () extends js.Object {
     */
   def setStencilTest(enable: Boolean): Unit = js.native
   /**
-    * @private
-    * @function
-    * @name pc.GraphicsDevice#setTransformFeedbackBuffer
-    * @description Sets the output vertex buffer. It will be written to by a shader with transform feedback varyings.
-    * @param {pc.VertexBuffer} tf The output vertex buffer
-    */
-  /* private */ def setTransformFeedbackBuffer(tf: VertexBuffer): Unit = js.native
-  /**
     * @function
     * @name pc.GraphicsDevice#setVertexBuffer
     * @description Sets the current vertex buffer for a specific stream index on the graphics
@@ -601,6 +562,7 @@ class GraphicsDevice protected () extends js.Object {
     * used to provide vertex data for any primitives.
     * @param {pc.VertexBuffer} vertexBuffer The vertex buffer to assign to the device.
     * @param {Number} stream The stream index for the vertex buffer, indexed from 0 upwards.
+    * @param {Number} [vbOffset=0] The byte offset into the vertex buffer data. Defaults to 0.
     */
   def setVertexBuffer(vertexBuffer: VertexBuffer, stream: Double): Unit = js.native
   def setVertexBuffer(vertexBuffer: VertexBuffer, stream: Double, vbOffset: Double): Unit = js.native

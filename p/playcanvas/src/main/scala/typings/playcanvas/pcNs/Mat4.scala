@@ -1,70 +1,24 @@
 package typings.playcanvas.pcNs
 
 import typings.std.Float32Array
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Mat4
-  * @class A 4x4 matrix.
-  * @description Creates a new Mat4 object
-  * @param {Number} [v0] The value in row 0, column 0. If v0 is an array of length 16, the array will be used to populate all components.
-  * @param {Number} [v1] The value in row 1, column 0.
-  * @param {Number} [v2] The value in row 2, column 0.
-  * @param {Number} [v3] The value in row 3, column 0.
-  * @param {Number} [v4] The value in row 0, column 1.
-  * @param {Number} [v5] The value in row 1, column 1.
-  * @param {Number} [v6] The value in row 2, column 1.
-  * @param {Number} [v7] The value in row 3, column 1.
-  * @param {Number} [v8] The value in row 0, column 2.
-  * @param {Number} [v9] The value in row 1, column 2.
-  * @param {Number} [v10] The value in row 2, column 2.
-  * @param {Number} [v11] The value in row 3, column 2.
-  * @param {Number} [v12] The value in row 0, column 3.
-  * @param {Number} [v13] The value in row 1, column 3.
-  * @param {Number} [v14] The value in row 2, column 3.
-  * @param {Number} [v15] The value in row 3, column 3.
+  * @classdesc A 4x4 matrix.
+  * @description Creates a new identity Mat4 object.
+  * @property {Float32Array} data Matrix elements in the form of a flat array.
   */
 @JSGlobal("pc.Mat4")
 @js.native
 class Mat4 () extends js.Object {
-  def this(v0: js.Tuple16[
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double, 
-        Double
-      ]) = this()
-  def this(
-    v0: Double,
-    v1: Double,
-    v2: Double,
-    v3: Double,
-    v4: Double,
-    v5: Double,
-    v6: Double,
-    v7: Double,
-    v8: Double,
-    v9: Double,
-    v10: Double,
-    v11: Double,
-    v12: Double,
-    v13: Double,
-    v14: Double,
-    v15: Double
-  ) = this()
+  /**
+    * Matrix elements in the form of a flat array.
+    */
   var data: Float32Array = js.native
   /**
     * @function
@@ -79,7 +33,7 @@ class Mat4 () extends js.Object {
     *
     * console.log("The result of the addition is: " a.toString());
     */
-  def add(rhs: Mat4): this.type = js.native
+  def add(rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#add2
@@ -91,11 +45,11 @@ class Mat4 () extends js.Object {
     * @example
     * var m = new pc.Mat4();
     *
-    * m.add2(pc.Mat4.INDENTITY, pc.Mat4.ONE);
+    * m.add2(pc.Mat4.IDENTITY, pc.Mat4.ONE);
     *
     * console.log("The result of the addition is: " a.toString());
     */
-  def add2(lhs: Mat4, rhs: Mat4): this.type = js.native
+  def add2(lhs: Mat4, rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#copy
@@ -106,9 +60,9 @@ class Mat4 () extends js.Object {
     * var src = new pc.Mat4().setFromEulerAngles(10, 20, 30);
     * var dst = new pc.Mat4();
     * dst.copy(src);
-    * console.log("The two matrices are " + (src.equal(dst) ? "equal" : "different"));
+    * console.log("The two matrices are " + (src.equals(dst) ? "equal" : "different"));
     */
-  def copy(rhs: Mat4): this.type = js.native
+  def copy(rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#equals
@@ -227,8 +181,7 @@ class Mat4 () extends js.Object {
     * // Invert in place
     * rot.invert();
     */
-  def invert(): this.type = js.native
-  def invertTo3x3(res: Mat4): this.type = js.native
+  def invert(): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#isIdentity
@@ -254,7 +207,7 @@ class Mat4 () extends js.Object {
     *
     * console.log("The result of the multiplication is: " a.toString());
     */
-  def mul(rhs: Mat4): this.type = js.native
+  def mul(rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#mul2
@@ -273,33 +226,15 @@ class Mat4 () extends js.Object {
     *
     * console.log("The result of the multiplication is: " r.toString());
     */
-  def mul2(lhs: Mat4, rhs: Mat4): this.type = js.native
+  def mul2(lhs: Mat4, rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#set
     * @description Sets matrix data from an array.
-    * @param {Array} Source array. Must have 16 values.
+    * @param {Number[]} src Source array. Must have 16 values.
+    * @returns {pc.Mat4} Self for chaining.
     */
-  def set(
-    src: js.Tuple16[
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double, 
-      Double
-    ]
-  ): this.type = js.native
+  def set(src: js.Array[Number]): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setFromAxisAngle
@@ -312,7 +247,7 @@ class Mat4 () extends js.Object {
     * // Create a 4x4 rotation matrix
     * var rm = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 90);
     */
-  def setFromAxisAngle(axis: Vec3, angle: Double): this.type = js.native
+  def setFromAxisAngle(axis: Vec3, angle: Double): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setFromEulerAngles
@@ -326,28 +261,7 @@ class Mat4 () extends js.Object {
     * var m = new pc.Mat4();
     * m.setFromEulerAngles(45, 90, 180);
     */
-  // http://en.wikipedia.org/wiki/Rotation_matrix#Conversion_from_and_to_axis-angle
-  // The 3D space is right-handed, so the rotation around each axis will be counterclockwise
-  // for an observer placed so that the axis goes in his or her direction (Right-hand rule).
-  def setFromEulerAngles(ex: Double, ey: Double, ez: Double): this.type = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.Mat4#setFrustum
-    * @description Sets the specified matrix to a perspective projection matrix. The function's parameters define
-    * the shape of a frustum.
-    * @param {Number} left The x-coordinate for the left edge of the camera's projection plane in eye space.
-    * @param {Number} right The x-coordinate for the right edge of the camera's projection plane in eye space.
-    * @param {Number} bottom The y-coordinate for the bottom edge of the camera's projection plane in eye space.
-    * @param {Number} top The y-coordinate for the top edge of the camera's projection plane in eye space.
-    * @param {Number} znear The near clip plane in eye coordinates.
-    * @param {Number} zfar The far clip plane in eye coordinates.
-    * @returns {pc.Mat4} Self for chaining.
-    * @example
-    * // Create a 4x4 perspective projection matrix
-    * var f = pc.Mat4().setFrustum(-2, 2, -1, 1, 1, 1000);
-    */
-  def setFrustum(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): this.type = js.native
+  def setFromEulerAngles(ex: Double, ey: Double, ez: Double): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setIdentity
@@ -355,9 +269,9 @@ class Mat4 () extends js.Object {
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * m.setIdentity();
-    * console.log("The two matrices are " + (src.equal(dst) ? "equal" : "different"));
+    * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
     */
-  def setIdentity(): this.type = js.native
+  def setIdentity(): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setLookAt
@@ -377,7 +291,7 @@ class Mat4 () extends js.Object {
     * var up = new pc.Vec3(0, 1, 0);
     * var m = new pc.Mat4().setLookAt(position, target, up);
     */
-  def setLookAt(position: Vec3, target: Vec3, up: Vec3): this.type = js.native
+  def setLookAt(position: Vec3, target: Vec3, up: Vec3): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setOrtho
@@ -387,44 +301,34 @@ class Mat4 () extends js.Object {
     * @param {Number} right The x-coordinate for the right edge of the camera's projection plane in eye space.
     * @param {Number} bottom The y-coordinate for the bottom edge of the camera's projection plane in eye space.
     * @param {Number} top The y-coordinate for the top edge of the camera's projection plane in eye space.
-    * @param {Number} znear The near clip plane in eye coordinates.
-    * @param {Number} zfar The far clip plane in eye coordinates.
+    * @param {Number} near The near clip plane in eye coordinates.
+    * @param {Number} far The far clip plane in eye coordinates.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * // Create a 4x4 orthographic projection matrix
     * var ortho = pc.Mat4().ortho(-2, 2, -2, 2, 1, 1000);
     */
-  def setOrtho(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): this.type = js.native
+  def setOrtho(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setPerspective
     * @description Sets the specified matrix to a perspective projection matrix. The function's
     * parameters define the shape of a frustum.
-    * @param {Number} fovy The field of view in the frustum in the Y-axis of eye space (or X axis if fovIsHorizontal is true).
+    * @param {Number} fov The frustum's field of view in degrees. The fovIsHorizontal parameter
+    * controls whether this is a vertical or horizontal field of view. By default, it's a vertical
+    * field of view.
     * @param {Number} aspect The aspect ratio of the frustum's projection plane (width / height).
     * @param {Number} znear The near clip plane in eye coordinates.
     * @param {Number} zfar The far clip plane in eye coordinates.
+    * @param {Boolean} [fovIsHorizontal=false] Set to true to treat the fov as horizontal (x-axis)
+    * and false for vertical (y-axis). Defaults to false.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * // Create a 4x4 perspective projection matrix
     * var persp = pc.Mat4().setPerspective(45, 16 / 9, 1, 1000);
     */
-  def setPerspective(fovy: Double, aspect: Double, znear: Double, zfar: Double): this.type = js.native
-  def setPerspective(fovy: Double, aspect: Double, znear: Double, zfar: Double, fovIsHorizontal: Boolean): this.type = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.Mat4#setScale
-    * @description Sets the specified matrix to a scale matrix.
-    * @param {Number} x The x-component of the scale.
-    * @param {Number} y The y-component of the scale.
-    * @param {Number} z The z-component of the scale.
-    * @returns {pc.Mat4} Self for chaining.
-    * @example
-    * // Create a 4x4 scale matrix
-    * var sm = new pc.Mat4().setScale(10, 10, 10);
-    */
-  def setScale(sx: Double, sy: Double, sz: Double): this.type = js.native
+  def setPerspective(fov: Double, aspect: Double, znear: Double, zfar: Double): Mat4 = js.native
+  def setPerspective(fov: Double, aspect: Double, znear: Double, zfar: Double, fovIsHorizontal: Boolean): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setTRS
@@ -442,21 +346,7 @@ class Mat4 () extends js.Object {
     * var m = new pc.Mat4();
     * m.setTRS(t, r, s);
     */
-  def setTRS(t: Vec3, r: Quat, s: Vec3): this.type = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.Mat4#setTranslate
-    * @description Sets the specified matrix to a translation matrix.
-    * @param {Number} x The x-component of the translation.
-    * @param {Number} y The y-component of the translation.
-    * @param {Number} z The z-component of the translation.
-    * @returns {pc.Mat4} Self for chaining.
-    * @example
-    * // Create a 4x4 translation matrix
-    * var tm = new pc.Mat4().setTranslate(10, 10, 10);
-    */
-  def setTranslate(tx: Double, ty: Double, tz: Double): this.type = js.native
+  def setTRS(t: Vec3, r: Quat, s: Vec3): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#transformPoint
@@ -494,6 +384,7 @@ class Mat4 () extends js.Object {
     *
     * m.transformVec4(v, result);
     */
+  def transformVec4(vec: Vec4): Vec4 = js.native
   def transformVec4(vec: Vec4, res: Vec4): Vec4 = js.native
   /**
     * @function
@@ -524,7 +415,7 @@ class Mat4 () extends js.Object {
     * // Transpose in place
     * m.transpose();
     */
-  def transpose(): this.type = js.native
+  def transpose(): Mat4 = js.native
 }
 
 /* static members */

@@ -1,5 +1,6 @@
 package typings.sharepoint.SrchNs
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,7 +55,7 @@ class DataProvider protected () extends ClientControl {
   def get_queryPropertiesTemplateUrl(): String = js.native
   def get_queryTemplate(): js.Any = js.native
   def get_rankRules(): js.Any = js.native
-  def get_refinementInfo(): js.Any = js.native
+  def get_refinementInfo(): StringDictionary[js.Array[RefinementInfo]] = js.native
   /** Number of results displayed per page. 10 by default */
   def get_resultsPerPage(): Double = js.native
   def get_resultsUrl(): js.Any = js.native

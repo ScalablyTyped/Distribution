@@ -328,6 +328,12 @@ trait Redis
     destination: String,
     callback: js.Function2[/* err */ Error, /* res */ String, Unit]
   ): Unit = js.native
+  def rpoplpushBuffer(source: String, destination: String): js.Promise[Buffer] = js.native
+  def rpoplpushBuffer(
+    source: String,
+    destination: String,
+    callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]
+  ): Unit = js.native
   def rpush(key: KeyType, values: js.Any*): js.Any = js.native
   def rpushBuffer(key: String, values: Buffer*): js.Any = js.native
   def rpushx(key: KeyType, value: js.Any): js.Promise[Double] = js.native

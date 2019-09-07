@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.ResultTable
 import typings.sharepoint.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.ResultTableCollection
 import typings.std.Element
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,11 +13,26 @@ import scala.scalajs.js.annotation._
 @js.native
 class Result protected () extends DisplayControl {
   def this(elem: Element) = this()
+  def activate(
+    prompt: String,
+    searchBoxId: String,
+    searchBoxDivId: String,
+    navButtonId: String,
+    suggestionsListId: String,
+    navListId: String,
+    searchBoxLinkId: String,
+    searchBoxProgressClass: String,
+    searchBoxPromptClass: String
+  ): Unit = js.native
   def changeQueryLanguage(queryLanguage: Double): Unit = js.native
   def changeQueryTerm(queryTerm: js.Any): Unit = js.native
+  def get_advancedSearchPageAddress(): String = js.native
   def get_advancedUrl(): String = js.native
   def get_currentPageNumber(): Double = js.native
+  def get_currentTerm(): String = js.native
+  def get_emptyRefinementMessageId(): String = js.native
   def get_groupTemplateId(): String = js.native
+  def get_initialPrompt(): String = js.native
   def get_itemBodyTemplateId(): String = js.native
   def get_itemTemplateId(): String = js.native
   def get_maxPagesAfterCurrent(): Double = js.native
@@ -25,23 +41,28 @@ class Result protected () extends DisplayControl {
   def get_preloadedItemTemplateIds(): js.Array[String] = js.native
   def get_repositionLanguageDropDown(): Boolean = js.native
   def get_scrollToTopOnRedraw(): Boolean = js.native
+  def get_selectedRefinementControls(): js.Array[CSRRefinementControl] = js.native
   def get_showAdvancedLink(): Boolean = js.native
   def get_showAlertMe(): Boolean = js.native
   def get_showBestBets(): Boolean = js.native
   def get_showDefinitions(): Boolean = js.native
   def get_showDidYouMean(): Boolean = js.native
   def get_showLanguageOptions(): Boolean = js.native
+  def get_showNavigation(): Boolean = js.native
   def get_showPaging(): Boolean = js.native
   def get_showPersonalFavorites(): Boolean = js.native
   def get_showPreferencesLink(): Boolean = js.native
+  def get_showQuerySuggestions(): Boolean = js.native
   def get_showResultCount(): Boolean = js.native
   def get_showResults(): Boolean = js.native
   def get_showSortOptions(): Boolean = js.native
   def get_showUpScopeMessage(): Boolean = js.native
   def get_showViewDuplicates(): Boolean = js.native
   def get_useSimplifiedQueryBuilder(): Boolean = js.native
+  def handleClickOnCategoryLink(id: String): Unit = js.native
   def page(startAt: Double): Unit = js.native
   def processResultReady(resultTableCollection: ResultTableCollection): Unit = js.native
+  def setAriaCollapsed(element: HTMLElement): Unit = js.native
   def set_advancedUrl(value: String): String = js.native
   def set_currentPageNumber(value: Double): Double = js.native
   def set_groupTemplateId(value: String): String = js.native

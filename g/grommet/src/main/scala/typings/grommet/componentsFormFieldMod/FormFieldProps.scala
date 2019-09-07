@@ -1,6 +1,7 @@
 package typings.grommet.componentsFormFieldMod
 
 import typings.grommet.Anon_Message
+import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PlaceHolderType
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -13,6 +14,7 @@ trait FormFieldProps extends js.Object {
   var help: js.UndefOr[String | ReactNode] = js.undefined
   var htmlFor: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String | ReactNode] = js.undefined
+  var margin: js.UndefOr[MarginType] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var pad: js.UndefOr[Boolean] = js.undefined
   // Although Placeholder is not a prop within FormField we Omit the HTML placeholder attribute and replaced with following.
@@ -29,6 +31,7 @@ object FormFieldProps {
     help: String | ReactNode = null,
     htmlFor: String = null,
     label: String | ReactNode = null,
+    margin: MarginType = null,
     name: String = null,
     pad: js.UndefOr[Boolean] = js.undefined,
     placeholder: PlaceHolderType = null,
@@ -41,6 +44,7 @@ object FormFieldProps {
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

@@ -6,16 +6,17 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.atBabelTypes.atBabelTypesMod.TSAnyKeyword
-  - typings.atBabelTypes.atBabelTypesMod.TSUnknownKeyword
+  - typings.atBabelTypes.atBabelTypesMod.TSBooleanKeyword
+  - typings.atBabelTypes.atBabelTypesMod.TSBigIntKeyword
+  - typings.atBabelTypes.atBabelTypesMod.TSNeverKeyword
+  - typings.atBabelTypes.atBabelTypesMod.TSNullKeyword
   - typings.atBabelTypes.atBabelTypesMod.TSNumberKeyword
   - typings.atBabelTypes.atBabelTypesMod.TSObjectKeyword
-  - typings.atBabelTypes.atBabelTypesMod.TSBooleanKeyword
   - typings.atBabelTypes.atBabelTypesMod.TSStringKeyword
   - typings.atBabelTypes.atBabelTypesMod.TSSymbolKeyword
-  - typings.atBabelTypes.atBabelTypesMod.TSVoidKeyword
   - typings.atBabelTypes.atBabelTypesMod.TSUndefinedKeyword
-  - typings.atBabelTypes.atBabelTypesMod.TSNullKeyword
-  - typings.atBabelTypes.atBabelTypesMod.TSNeverKeyword
+  - typings.atBabelTypes.atBabelTypesMod.TSUnknownKeyword
+  - typings.atBabelTypes.atBabelTypesMod.TSVoidKeyword
   - typings.atBabelTypes.atBabelTypesMod.TSThisType
   - typings.atBabelTypes.atBabelTypesMod.TSFunctionType
   - typings.atBabelTypes.atBabelTypesMod.TSConstructorType

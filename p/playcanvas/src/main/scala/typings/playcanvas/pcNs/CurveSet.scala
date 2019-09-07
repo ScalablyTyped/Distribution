@@ -1,20 +1,22 @@
 package typings.playcanvas.pcNs
 
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.CurveSet
-  * @class A curve set is a collection of curves.
+  * @classdesc A curve set is a collection of curves.
   * @description Creates a new curve set.
-  * @param {Array} [curveKeys] An array of arrays of keys (pairs of numbers with
+  * @param {Array<Number[]>} [curveKeys] An array of arrays of keys (pairs of numbers with
   * the time first and value second).
   */
 @JSGlobal("pc.CurveSet")
 @js.native
 class CurveSet () extends js.Object {
-  def this(curveKeys: js.Array[js.Array[Double]]) = this()
+  def this(curveKeys: js.Array[js.Array[Number]]) = this()
   /**
     * @readonly
     * @name pc.CurveSet#length
@@ -27,11 +29,12 @@ class CurveSet () extends js.Object {
     * @type Number
     * @description The interpolation scheme applied to all curves in the curve set. Can be:
     * <ul>
-    *     <li>pc.CURVE_LINEAR</li>
-    *     <li>pc.CURVE_SMOOTHSTEP</li>
-    *     <li>pc.CURVE_CATMULL</li>
-    *     <li>pc.CURVE_CARDINAL</li>
+    *     <li>{@link pc.CURVE_LINEAR}</li>
+    *     <li>{@link pc.CURVE_SMOOTHSTEP}</li>
+    *     <li>{@link pc.CURVE_SPLINE}</li>
+    *     <li>{@link pc.CURVE_STEP}</li>
     * </ul>
+    * Defaults to {@link pc.CURVE_SMOOTHSTEP};
     */
   var `type`: Double = js.native
   /**
@@ -48,12 +51,12 @@ class CurveSet () extends js.Object {
     * @description Returns the interpolated value of all curves in the curve
     * set at the specified time.
     * @param {Number} time The time at which to calculate the value
-    * @param {Array} [result] The interpolated curve values at the specified time.
+    * @param {Number[]} [result] The interpolated curve values at the specified time.
     * If this parameter is not supplied, the function allocates a new array internally
     * to return the result.
-    * @return {Array} The interpolated curve values at the specified time
+    * @returns {Number[]} The interpolated curve values at the specified time
     */
-  def value(time: Double): js.Array[_] = js.native
-  def value(time: Double, result: js.Array[_]): js.Array[_] = js.native
+  def value(time: Double): js.Array[Number] = js.native
+  def value(time: Double, result: js.Array[Number]): js.Array[Number] = js.native
 }
 

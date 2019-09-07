@@ -2,6 +2,11 @@ package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.cm
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.grayscale
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.in
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.rgb
 import typings.atTensorflowTfjsDashNode.distCallbacksMod.TensorBoardCallback
 import typings.atTensorflowTfjsDashNode.distCallbacksMod.TensorBoardCallbackArgs
 import typings.atTensorflowTfjsDashNode.distTensorboardMod.SummaryFileWriter
@@ -43,6 +48,22 @@ object node extends js.Object {
     /* dtype */ js.UndefOr[String], 
     Tensor3D
   ] = js.native
+  @JSName("encodeJpeg")
+  var encodeJpeg_Original: js.Function10[
+    /* image */ Tensor3D, 
+    /* format */ js.UndefOr[Empty | grayscale | rgb], 
+    /* quality */ js.UndefOr[Double], 
+    /* progressive */ js.UndefOr[Boolean], 
+    /* optimizeSize */ js.UndefOr[Boolean], 
+    /* chromaDownsampling */ js.UndefOr[Boolean], 
+    /* densityUnit */ js.UndefOr[in | cm], 
+    /* xDensity */ js.UndefOr[Double], 
+    /* yDensity */ js.UndefOr[Double], 
+    /* xmpMetadata */ js.UndefOr[String], 
+    js.Promise[Uint8Array]
+  ] = js.native
+  @JSName("encodePng")
+  var encodePng_Original: js.Function2[/* image */ Tensor3D, /* compression */ js.UndefOr[Double], js.Promise[Uint8Array]] = js.native
   @JSName("summaryFileWriter")
   var summaryFileWriter_Original: js.Function4[
     /* logdir */ String, 
@@ -76,6 +97,46 @@ object node extends js.Object {
   def decodePng(contents: Uint8Array): Tensor3D = js.native
   def decodePng(contents: Uint8Array, channels: Double): Tensor3D = js.native
   def decodePng(contents: Uint8Array, channels: Double, dtype: String): Tensor3D = js.native
+  def encodeJpeg(
+    image: Tensor3D,
+    format: js.UndefOr[grayscale | rgb],
+    quality: js.UndefOr[Double],
+    progressive: js.UndefOr[Boolean],
+    optimizeSize: js.UndefOr[Boolean],
+    chromaDownsampling: js.UndefOr[Boolean],
+    densityUnit: js.UndefOr[cm | in],
+    xDensity: js.UndefOr[Double],
+    yDensity: js.UndefOr[Double],
+    xmpMetadata: js.UndefOr[String]
+  ): js.Promise[Uint8Array] = js.native
+  @JSName("encodeJpeg")
+  def encodeJpeg_cm(
+    image: Tensor3D,
+    format: js.UndefOr[Empty],
+    quality: js.UndefOr[Double],
+    progressive: js.UndefOr[Boolean],
+    optimizeSize: js.UndefOr[Boolean],
+    chromaDownsampling: js.UndefOr[Boolean],
+    densityUnit: js.UndefOr[cm],
+    xDensity: js.UndefOr[Double],
+    yDensity: js.UndefOr[Double],
+    xmpMetadata: js.UndefOr[String]
+  ): js.Promise[Uint8Array] = js.native
+  @JSName("encodeJpeg")
+  def encodeJpeg_in(
+    image: Tensor3D,
+    format: js.UndefOr[Empty],
+    quality: js.UndefOr[Double],
+    progressive: js.UndefOr[Boolean],
+    optimizeSize: js.UndefOr[Boolean],
+    chromaDownsampling: js.UndefOr[Boolean],
+    densityUnit: js.UndefOr[in],
+    xDensity: js.UndefOr[Double],
+    yDensity: js.UndefOr[Double],
+    xmpMetadata: js.UndefOr[String]
+  ): js.Promise[Uint8Array] = js.native
+  def encodePng(image: Tensor3D): js.Promise[Uint8Array] = js.native
+  def encodePng(image: Tensor3D, compression: Double): js.Promise[Uint8Array] = js.native
   def summaryFileWriter(logdir: String): SummaryFileWriter = js.native
   def summaryFileWriter(logdir: String, maxQueue: Double): SummaryFileWriter = js.native
   def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter = js.native

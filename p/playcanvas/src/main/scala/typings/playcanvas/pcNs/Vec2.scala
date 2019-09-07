@@ -1,22 +1,27 @@
 package typings.playcanvas.pcNs
 
-import typings.std.Float32Array
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Vec2
-  * @class A 2-dimensional vector.
-  * @description Creates a new Vec2 object
-  * @param {Number} [x] The x value. If x is an array of length 2, the array will be used to populate all components.
-  * @param {Number} [y] The y value
+  * @classdesc A 2-dimensional vector.
+  * @description Creates a new Vec2 object.
+  * @param {Number|Number[]} [x] The x value. If x is an array of length 2, the array will be used to populate all components.
+  * @param {Number} [y] The y value.
+  * @example
+  * var v = new pc.Vec2(1, 2);
   */
 @JSGlobal("pc.Vec2")
 @js.native
 class Vec2 () extends js.Object {
+  def this(x: js.Array[Number]) = this()
+  def this(x: Double) = this()
+  def this(x: js.Array[Number], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  var data: Float32Array = js.native
   /**
     * @field
     * @type Number
@@ -62,7 +67,7 @@ class Vec2 () extends js.Object {
     * // Should output [30, 30]
     * console.log("The result of the addition is: " + a.toString());
     */
-  def add(rhs: Vec2): this.type = js.native
+  def add(rhs: Vec2): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#add2
@@ -80,7 +85,7 @@ class Vec2 () extends js.Object {
     *
     * console.log("The result of the addition is: " + r.toString());
     */
-  def add2(lhs: Vec2, rhs: Vec2): this.type = js.native
+  def add2(lhs: Vec2, rhs: Vec2): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#copy
@@ -95,7 +100,20 @@ class Vec2 () extends js.Object {
     *
     * console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
     */
-  def copy(rhs: Vec2): this.type = js.native
+  def copy(rhs: Vec2): Vec2 = js.native
+  /**
+    * @function
+    * @name pc.Vec2#distance
+    * @description Returns the distance between the two specified 2-dimensional vectors.
+    * @param {pc.Vec2} rhs The second 2-dimensional vector to test.
+    * @returns {Number} The distance between the two vectors.
+    * @example
+    * var v1 = new pc.Vec2(5, 10);
+    * var v2 = new pc.Vec2(10, 20);
+    * var d = v1.distance(v2);
+    * console.log("The between v1 and v2 is: " + d);
+    */
+  def distance(rhs: Vec2): Double = js.native
   /**
     * @function
     * @name pc.Vec2#dot
@@ -164,7 +182,7 @@ class Vec2 () extends js.Object {
     * r.lerp(a, b, 0.5); // r is 5, 5
     * r.lerp(a, b, 1);   // r is equal to b
     */
-  def lerp(lhs: Vec2, rhs: Vec2, alpha: Double): this.type = js.native
+  def lerp(lhs: Vec2, rhs: Vec2, alpha: Double): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#mul
@@ -180,7 +198,7 @@ class Vec2 () extends js.Object {
     * // Should output 8, 15
     * console.log("The result of the multiplication is: " + a.toString());
     */
-  def mul(rhs: Vec2): this.type = js.native
+  def mul(rhs: Vec2): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#mul2
@@ -198,7 +216,7 @@ class Vec2 () extends js.Object {
     * // Should output 8, 15
     * console.log("The result of the multiplication is: " + r.toString());
     */
-  def mul2(lhs: Vec2, rhs: Vec2): this.type = js.native
+  def mul2(lhs: Vec2, rhs: Vec2): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#normalize
@@ -213,7 +231,7 @@ class Vec2 () extends js.Object {
     * // Should output 1, 0
     * console.log("The result of the vector normalization is: " + v.toString());
     */
-  def normalize(): this.type = js.native
+  def normalize(): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#scale
@@ -233,13 +251,14 @@ class Vec2 () extends js.Object {
     * // Divide by 2
     * v.scale(0.5);
     */
-  def scale(scalar: Double): this.type = js.native
+  def scale(scalar: Double): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#set
     * @description Sets the specified 2-dimensional vector to the supplied numerical values.
     * @param {Number} x The value to set on the first component of the vector.
     * @param {Number} y The value to set on the second component of the vector.
+    * @returns {pc.Vec2} Self for chaining.
     * @example
     * var v = new pc.Vec2();
     * v.set(5, 10);
@@ -247,7 +266,7 @@ class Vec2 () extends js.Object {
     * // Should output 5, 10
     * console.log("The result of the vector set is: " + v.toString());
     */
-  def set(x: Double, y: Double): this.type = js.native
+  def set(x: Double, y: Double): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#sub
@@ -263,7 +282,7 @@ class Vec2 () extends js.Object {
     * // Should output [-10, -10]
     * console.log("The result of the addition is: " + a.toString());
     */
-  def sub(rhs: Vec2): this.type = js.native
+  def sub(rhs: Vec2): Vec2 = js.native
   /**
     * @function
     * @name pc.Vec2#sub2
@@ -281,7 +300,7 @@ class Vec2 () extends js.Object {
     * // Should output [-10, -10]
     * console.log("The result of the addition is: " + r.toString());
     */
-  def sub2(lhs: Vec2, rhs: Vec2): this.type = js.native
+  def sub2(lhs: Vec2, rhs: Vec2): Vec2 = js.native
 }
 
 /* static members */

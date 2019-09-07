@@ -396,6 +396,7 @@ object Res extends js.Object {
   var qs_NameSuggestionsTitle: String = js.native
   var qs_PersonalResultTitlePlural: String = js.native
   var qs_PersonalResultTitleSingular: String = js.native
+  var qs_SuggestionListAriaLabel: String = js.native
   var recs_AltIcon: String = js.native
   var recs_ControlTitle: String = js.native
   var recs_Fillin: String = js.native

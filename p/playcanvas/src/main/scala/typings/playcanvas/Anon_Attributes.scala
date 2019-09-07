@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Attributes extends js.Object {
-  var attributes: js.UndefOr[js.Object] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var attributes: js.Any
+  var fshader: String
+  var useTransformFeedback: Boolean
+  var vshader: String
 }
 
 object Anon_Attributes {
   @scala.inline
-  def apply(attributes: js.Object = null, enabled: js.UndefOr[Boolean] = js.undefined): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+  def apply(attributes: js.Any, fshader: String, useTransformFeedback: Boolean, vshader: String): Anon_Attributes = {
+    val __obj = js.Dynamic.literal(attributes = attributes, fshader = fshader, useTransformFeedback = useTransformFeedback, vshader = vshader)
+  
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

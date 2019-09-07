@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   extends Immutable
      with BaseNode
      with JSX {
-  var name: JSXIdentifier | JSXMemberExpression
+  var name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName
   @JSName("type")
   var type_JSXClosingElement: typings.atBabelTypes.atBabelTypesStrings.JSXClosingElement
 }
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 object JSXClosingElement {
   @scala.inline
   def apply(
-    name: JSXIdentifier | JSXMemberExpression,
+    name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName,
     `type`: typings.atBabelTypes.atBabelTypesStrings.JSXClosingElement,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,

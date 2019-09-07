@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-link-error
 
-Typings are for version 1.1.11
+Typings are for version 1.1.12
 
 ## Library description:
 Error Apollo Link for GraphQL Network Stack

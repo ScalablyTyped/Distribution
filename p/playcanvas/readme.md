@@ -1,12 +1,12 @@
 
 # Scala.js typings for playcanvas
 
-Typings are for version 0.221
+Typings are for version 1.23.0
 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

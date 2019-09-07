@@ -1,25 +1,33 @@
 package typings.playcanvas.pcNs
 
-import typings.std.Float32Array
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Vec4
-  * @class A 4-dimensional vector.
-  * @description Creates a new Vec4 object
-  * @param {Number} [x] The x value. If x is an array of length 4, the array will be used to populate all components.
-  * @param {Number} [y] The y value
-  * @param {Number} [z] The z value
-  * @param {Number} [w] The w value
+  * @classdesc A 4-dimensional vector.
+  * @description Creates a new Vec4 object.
+  * @param {Number|Number[]} [x] The x value. If x is an array of length 4, the array will be used to populate all components.
+  * @param {Number} [y] The y value.
+  * @param {Number} [z] The z value.
+  * @param {Number} [w] The w value.
+  * @example
+  * var v = new pc.Vec4(1, 2, 3, 4);
   */
 @JSGlobal("pc.Vec4")
 @js.native
 class Vec4 () extends js.Object {
-  def this(x: js.Tuple4[Double, Double, Double, Double]) = this()
+  def this(x: js.Array[Number]) = this()
+  def this(x: Double) = this()
+  def this(x: js.Array[Number], y: Double) = this()
+  def this(x: Double, y: Double) = this()
+  def this(x: js.Array[Number], y: Double, z: Double) = this()
+  def this(x: Double, y: Double, z: Double) = this()
+  def this(x: js.Array[Number], y: Double, z: Double, w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
-  var data: Float32Array = js.native
   /**
     * @field
     * @type Number
@@ -95,7 +103,7 @@ class Vec4 () extends js.Object {
     * // Should output [30, 30, 30]
     * console.log("The result of the addition is: " + a.toString());
     */
-  def add(rhs: Vec4): this.type = js.native
+  def add(rhs: Vec4): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#add2
@@ -113,7 +121,7 @@ class Vec4 () extends js.Object {
     *
     * console.log("The result of the addition is: " + r.toString());
     */
-  def add2(lhs: Vec4, rhs: Vec4): this.type = js.native
+  def add2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#copy
@@ -128,7 +136,7 @@ class Vec4 () extends js.Object {
     *
     * console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
     */
-  def copy(rhs: Vec4): this.type = js.native
+  def copy(rhs: Vec4): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#dot
@@ -141,7 +149,7 @@ class Vec4 () extends js.Object {
     * var v1dotv2 = v1.dot(v2);
     * console.log("The result of the dot product is: " + v1dotv2);
     */
-  def dot(rhs: Vec4): this.type = js.native
+  def dot(rhs: Vec4): Double = js.native
   /**
     * @function
     * @name pc.Vec4#equals
@@ -197,7 +205,7 @@ class Vec4 () extends js.Object {
     * r.lerp(a, b, 0.5); // r is 5, 5, 5, 5
     * r.lerp(a, b, 1);   // r is equal to b
     */
-  def lerp(lhs: Vec4, rhs: Vec4, alpha: Double): this.type = js.native
+  def lerp(lhs: Vec4, rhs: Vec4, alpha: Double): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#mul
@@ -213,7 +221,7 @@ class Vec4 () extends js.Object {
     * // Should output 8, 15, 24, 35
     * console.log("The result of the multiplication is: " + a.toString());
     */
-  def mul(rhs: Vec4): this.type = js.native
+  def mul(rhs: Vec4): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#mul2
@@ -231,7 +239,7 @@ class Vec4 () extends js.Object {
     * // Should output 8, 15, 24, 35
     * console.log("The result of the multiplication is: " + r.toString());
     */
-  def mul2(lhs: Vec4, rhs: Vec4): this.type = js.native
+  def mul2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#normalize
@@ -246,7 +254,7 @@ class Vec4 () extends js.Object {
     * // Should output 1, 0, 0, 0
     * console.log("The result of the vector normalization is: " + v.toString());
     */
-  def normalize(): this.type = js.native
+  def normalize(): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#scale
@@ -266,7 +274,7 @@ class Vec4 () extends js.Object {
     * // Divide by 2
     * v.scale(0.5);
     */
-  def scale(scalar: Double): this.type = js.native
+  def scale(scalar: Double): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#set
@@ -275,6 +283,7 @@ class Vec4 () extends js.Object {
     * @param {Number} y The value to set on the second component of the vector.
     * @param {Number} z The value to set on the third component of the vector.
     * @param {Number} w The value to set on the fourth component of the vector.
+    * @returns {pc.Vec4} Self for chaining.
     * @example
     * var v = new pc.Vec4();
     * v.set(5, 10, 20, 40);
@@ -282,7 +291,7 @@ class Vec4 () extends js.Object {
     * // Should output 5, 10, 20, 40
     * console.log("The result of the vector set is: " + v.toString());
     */
-  def set(x: Double, y: Double, z: Double, w: Double): this.type = js.native
+  def set(x: Double, y: Double, z: Double, w: Double): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#sub
@@ -298,7 +307,7 @@ class Vec4 () extends js.Object {
     * // Should output [-10, -10, -10, -10]
     * console.log("The result of the subtraction is: " + a.toString());
     */
-  def sub(rhs: Vec4): this.type = js.native
+  def sub(rhs: Vec4): Vec4 = js.native
   /**
     * @function
     * @name pc.Vec4#sub2
@@ -316,7 +325,7 @@ class Vec4 () extends js.Object {
     * // Should output [-10, -10, -10, -10]
     * console.log("The result of the subtraction is: " + r.toString());
     */
-  def sub2(lhs: Vec4, rhs: Vec4): this.type = js.native
+  def sub2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
 }
 
 /* static members */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-xml-body"
-version := "2.0-dt-20180425Z-e2db0b"
+version := "2.0-dt-20180425Z-b85fc3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-db4fa8",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-7db036",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20190402Z-5ca391")
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20190906Z-f61cf6")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,13 +1,15 @@
 package typings.playcanvas.pcNs
 
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
   * @component
+  * @constructor
   * @name pc.LightComponent
-  * @class The Light Component enables the Entity to light the scene. There are three types
+  * @classdesc The Light Component enables the Entity to light the scene. There are three types
   * of light: directional, point and spot. Directional lights are global in that they are
   * considered to be infinitely far away and light the entire scene. Point and spot lights
   * are local in that they have a position and a range. A spot light is a specialization of
@@ -101,41 +103,179 @@ import scala.scalajs.js.annotation._
   * @property {pc.Vec2} cookieScale Spotlight cookie scale.
   * @property {pc.Vec2} cookieOffset Spotlight cookie position offset.
   * @property {Boolean} isStatic Mark light as non-movable (optimization)
+  * @property {Number[]} layers An array of layer IDs ({@link pc.Layer#id}) to which this light should belong.
+  * Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
   * @extends pc.Component
   */
 @JSGlobal("pc.LightComponent")
 @js.native
 class LightComponent protected () extends Component {
   def this(system: LightComponentSystem, entity: Entity) = this()
+  /**
+    * If enabled the light will affect non-lightmapped objects
+    */
   var affectDynamic: Boolean = js.native
+  /**
+    * If enabled the light will affect lightmapped objects
+    */
   var affectLightmapped: Boolean = js.native
+  /**
+    * If enabled the light will be rendered into lightmaps
+    */
   var bake: Boolean = js.native
+  /**
+    * If enabled and bake=true, the light's direction will contribute to directional lightmaps.
+    * Be aware, that directional lightmap is an approximation and can only hold single direction per pixel.
+    * Intersecting multiple lights with bakeDir=true may lead to incorrect look of specular/bump-mapping in the area of intersection.
+    * The error is not always visible though, and highly scene-dependent.
+    */
   var bakeDir: Boolean = js.native
+  /**
+    * If enabled the light will cast shadows. Defaults to false.
+    */
   var castShadows: Boolean = js.native
+  /**
+    * The Color of the light. The alpha component of the color is
+    * ignored. Defaults to white (1, 1, 1).
+    */
   var color: Color = js.native
+  /**
+    * Projection texture. Must be 2D for spot and cubemap for point (ignored if incorrect type is used).
+    */
   var cookie: Texture = js.native
+  /**
+    * Angle for spotlight cookie rotation.
+    */
   var cookieAngle: Double = js.native
+  /**
+    * Asset that has texture that will be assigned to cookie internally once asset resource is available.
+    */
   var cookieAsset: Double = js.native
+  /**
+    * Color channels of the projection texture to use. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
+    */
   var cookieChannel: String = js.native
+  /**
+    * Toggle normal spotlight falloff when projection texture is used. When set to false, spotlight will work like a pure texture projector (only fading with distance). Default is false.
+    */
   var cookieFalloff: Boolean = js.native
+  /**
+    * Projection texture intensity (default is 1).
+    */
   var cookieIntensity: Double = js.native
+  /**
+    * Spotlight cookie position offset.
+    */
   var cookieOffset: Vec2 = js.native
+  /**
+    * Spotlight cookie scale.
+    */
   var cookieScale: Vec2 = js.native
+  /**
+    * Controls the rate at which a light attentuates from
+    * its position. Can be:
+    * <ul>
+    * <li>{@link pc.LIGHTFALLOFF_LINEAR}: Linear.</li>
+    * <li>{@link pc.LIGHTFALLOFF_INVERSESQUARED}: Inverse squared.</li>
+    * </ul>
+    * Affects point and spot lights only. Defaults to pc.LIGHTFALLOFF_LINEAR.
+    */
   var falloffMode: Double = js.native
+  /**
+    * The angle at which the spotlight cone starts
+    * to fade off. The angle is specified in degrees. Affects spot lights only. Defaults
+    * to 40.
+    */
   var innerConeAngle: Double = js.native
+  /**
+    * The brightness of the light. Defaults to 1.
+    */
   var intensity: Double = js.native
+  /**
+    * Mark light as non-movable (optimization)
+    */
   var isStatic: Boolean = js.native
+  /**
+    * An array of layer IDs ({@link pc.Layer#id}) to which this light should belong.
+    * Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
+    */
+  var layers: js.Array[Number] = js.native
+  /**
+    * Defines a mask to determine which {@link pc.MeshInstance}s are
+    * lit by this light. Defaults to 1.
+    */
   var mask: Double = js.native
+  /**
+    * Normal offset depth bias. Defaults to 0.
+    */
   var normalOffsetBias: Double = js.native
+  /**
+    * The angle at which the spotlight cone has faded
+    * to nothing. The angle is specified in degrees. Affects spot lights only. Defaults
+    * to 45.
+    */
   var outerConeAngle: Double = js.native
+  /**
+    * The range of the light. Affects point and spot lights only.
+    * Defaults to 10.
+    */
   var range: Double = js.native
+  /**
+    * The depth bias for tuning the appearance of the shadow
+    * mapping generated by this light. Defaults to 0.05.
+    */
   var shadowBias: Double = js.native
+  /**
+    * The distance from the viewpoint beyond which shadows
+    * are no longer rendered. Affects directional lights only. Defaults to 40.
+    */
   var shadowDistance: Double = js.native
+  /**
+    * The size of the texture used for the shadow map.
+    * Valid sizes are 64, 128, 256, 512, 1024, 2048. Defaults to 1024.
+    */
   var shadowResolution: Double = js.native
+  /**
+    * Type of shadows being rendered by this light. Options:
+    * <ul>
+    * <li>{@link pc.SHADOW_PCF3}: Render depth (color-packed on WebGL 1.0), can be used for PCF 3x3 sampling.</li>
+    * <li>{@link pc.SHADOW_VSM8}: Render packed variance shadow map. All shadow receivers must also cast shadows for this mode to work correctly.</li>
+    * <li>{@link pc.SHADOW_VSM16}: Render 16-bit exponential variance shadow map. Requires OES_texture_half_float extension. Falls back to pc.SHADOW_VSM8, if not supported.</li>
+    * <li>{@link pc.SHADOW_VSM32}: Render 32-bit exponential variance shadow map. Requires OES_texture_float extension. Falls back to pc.SHADOW_VSM16, if not supported.</li>
+    * <li>{@link pc.SHADOW_PCF5}: Render depth buffer only, can be used for hardware-accelerated PCF 5x5 sampling. Requires WebGL2. Falls back to pc.SHADOW_PCF3 on WebGL 1.0.</li>
+    * </ul>
+    */
   var shadowType: Double = js.native
+  /**
+    * Tells the renderer how often shadows must be updated for this light. Options:
+    * <ul>
+    * <li>{@link pc.SHADOWUPDATE_NONE}: Don't render shadows.</li>
+    * <li>{@link pc.SHADOWUPDATE_THISFRAME}: Render shadows only once (then automatically switches to pc.SHADOWUPDATE_NONE).</li>
+    * <li>{@link pc.SHADOWUPDATE_REALTIME}: Render shadows every frame (default).</li>
+    * </ul>
+    */
   var shadowUpdateMode: Double = js.native
+  /**
+    * The type of light. Can be:
+    * <ul>
+    * <li>"directional": A light that is infinitely far away and lights the entire scene from one direction.</li>
+    * <li>"point": A light that illuminates in all directions from a point.</li>
+    * <li>"spot": A light that illuminates in all directions from a point and is bounded by a cone.</li>
+    * </ul>
+    * Defaults to "directional".
+    */
   var `type`: String = js.native
+  /**
+    * Blurring mode for variance shadow maps:
+    * <ul>
+    * <li>{@link pc.BLUR_BOX}: Box filter.</li>
+    * <li>{@link pc.BLUR_GAUSSIAN}: Gaussian filter. May look smoother than box, but requires more samples.</li>
+    * </ul>
+    */
   var vsmBlurMode: Double = js.native
+  /**
+    * Number of samples used for blurring a variance shadow map. Only uneven numbers work, even are incremented. Minimum value is 1, maximum is 25.
+    */
   var vsmBlurSize: Double = js.native
 }
 

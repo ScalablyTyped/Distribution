@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-node"
-version := "1.2.8-1e59d4"
+version := "1.2.9-bf7911"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

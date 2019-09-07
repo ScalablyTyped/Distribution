@@ -3,6 +3,7 @@ package typings.grommet.componentsAccordionMod
 import typings.grommet.Anon_TabContents
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.AnimateType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.react.reactMod.ReactNode
@@ -14,7 +15,7 @@ trait AccordionProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var animate: js.UndefOr[Boolean] = js.undefined
+  var animate: js.UndefOr[AnimateType] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -29,7 +30,7 @@ object AccordionProps {
     a11yTitle: A11yTitleType = null,
     activeIndex: Double | js.Array[Double] = null,
     alignSelf: AlignSelfType = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
+    animate: js.UndefOr[AnimateType] = js.undefined,
     children: ReactNode = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,

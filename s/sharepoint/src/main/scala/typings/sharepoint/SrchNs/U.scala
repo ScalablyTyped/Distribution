@@ -62,7 +62,22 @@ object U extends js.Object {
   /** Prevents default event action or/and stops further propagation of the event in the DOM */
   def cancelEventEx(e: Event, preventDefault: Boolean, stopPropagation: Boolean): Unit = js.native
   /** Returns HTML for collapsible refiner title */
-  def collapsibleRefinerTitle(propertyName: String, idPrefix: String, title: String, iconClass: String, customOnClick: String): String = js.native
+  def collapsibleRefinerTitle(
+    propertyName: String,
+    idPrefix: String,
+    title: String,
+    iconClass: String,
+    customOnClick: String,
+    isExpanded: String
+  ): String = js.native
+  def collapsibleRefinerTitle(
+    propertyName: String,
+    idPrefix: String,
+    title: String,
+    iconClass: String,
+    customOnClick: Null,
+    isExpanded: String
+  ): String = js.native
   /** Concatenates two URL fragments and returns resulting URL */
   def concatUrl(firstPart: String, secondPart: String): String = js.native
   /** Returns copy of the passed source dictionary */
@@ -71,6 +86,7 @@ object U extends js.Object {
   def copyLink(link: String): Unit = js.native
   def createBehavior(id: String, `type`: js.Any, properties: js.Any, targetElementId: String): js.Any = js.native
   def createErrorObjectWithExecContext(messageText: js.Any, operationName: js.Any, templateFuncOrRenderCtx: js.Any): js.Any = js.native
+  def createFileIconAltText(container: Boolean, b: js.Any): String = js.native
   def createXMLDocument(xml: String): XMLDocument = js.native
   /** Returns true if the value parameter is null or empty string */
   def e(value: String): Boolean = js.native

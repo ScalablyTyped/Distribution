@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilsMod {
+  import typings.grommet.Anon_ColorContain
   import typings.grommet.Anon_Dark
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.Global.JSXNs.Element
@@ -13,6 +14,8 @@ package object utilsMod {
   import typings.std.Pick
 
   type A11yTitleType = String
+  type AnimateType = Boolean
+  type BackgroundType = String | Anon_ColorContain
   type ColorType = String | Anon_Dark
   type DeepFreeze = js.Function1[/* obj */ js.Object, DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-link-http-common" : "0.2.14"
+      "apollo-link-http-common" : "0.2.15"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-link-http-common" : "0.2.14"
+      "apollo-link-http-common" : "0.2.15"
     }
   ],
   "compile-devDependencies" : [

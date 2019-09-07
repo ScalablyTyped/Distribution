@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.RenderTarget
-  * @class A render target is a rectangular rendering surface.
+  * @classdesc A render target is a rectangular rendering surface.
   * @description Creates a new render target. A color buffer or a depth buffer must be set.
   * @param {Object} options Object for passing optional arguments.
   * @param {pc.Texture} [options.colorBuffer] The texture that this render target will treat as a rendering surface.
@@ -36,18 +37,18 @@ import scala.scalajs.js.annotation._
   *     height: 512,
   *     format: pc.PIXELFORMAT_R8_G8_B8
   * });
-  * var renderTarget = new pc.RenderTarget(graphicsDevice, colorBuffer, {
+  * var renderTarget = new pc.RenderTarget({
+  *     colorBuffer: colorBuffer,
   *     depth: true
   * });
   *
-  * // Set the render target on an entity's camera component
-  * entity.camera.renderTarget = renderTarget;
+  * // Set the render target on a layer
+  * layer.renderTarget = renderTarget;
   */
 @JSGlobal("pc.RenderTarget")
 @js.native
 class RenderTarget protected () extends js.Object {
   def this(options: Anon_AutoResolve) = this()
-  def this(options: GraphicsDevice, _arg2: Texture, _arg3: Anon_AutoResolve) = this()
   /**
     * @readonly
     * @name pc.RenderTarget#colorBuffer
@@ -101,8 +102,9 @@ class RenderTarget protected () extends js.Object {
     * @param {pc.RenderTarget} source Source render target to copy from
     * @param {Boolean} color Copy color buffer
     * @param {Boolean} depth Copy depth buffer
+    * @returns {Boolean} true if the copy was successfull, false otherwise.
     */
-  def copy(source: RenderTarget, color: Boolean, depth: Boolean): RenderTarget = js.native
+  def copy(source: RenderTarget, color: Boolean, depth: Boolean): Boolean = js.native
   /**
     * @function
     * @name pc.RenderTarget#destroy

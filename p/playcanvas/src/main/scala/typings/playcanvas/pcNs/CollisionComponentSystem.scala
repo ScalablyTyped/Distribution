@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.CollisionComponentSystem
+  * @classdesc Manages creation of {@link pc.CollisionComponent}s.
   * @description Creates a new CollisionComponentSystem.
-  * @class Manages creation of {@link pc.CollisionComponent}s.
   * @param {pc.Application} app The running {pc.Application}
   * @extends pc.ComponentSystem
   */

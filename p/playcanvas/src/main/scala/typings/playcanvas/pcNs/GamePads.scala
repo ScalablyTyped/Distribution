@@ -1,13 +1,13 @@
 package typings.playcanvas.pcNs
 
-import typings.playcanvas.Anon_Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.GamePads
-  * @class Input handler for accessing GamePad input
+  * @classdesc Input handler for accessing GamePad input.
   */
 @JSGlobal("pc.GamePads")
 @js.native
@@ -40,14 +40,14 @@ class GamePads () extends js.Object {
     *   var pads = gamepads.poll();
     *   // pads[0] = { map: <map>, pad: <pad> }
     */
-  def poll(): Anon_Map = js.native
+  def poll(): js.Array[js.Object] = js.native
   /**
     * @function
     * @name pc.GamePads#update
     * @description Update the current and previous state of the gamepads. This must be called every frame for wasPressed()
     * to work
     */
-  def update(dt: Double): Unit = js.native
+  def update(): Unit = js.native
   /**
     * @function
     * @name pc.GamePads#wasPressed

@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var length: js.UndefOr[Double | `false`] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var maxAge: js.UndefOr[Double] = js.undefined
-  var normalizer: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var normalizer: js.UndefOr[js.Function1[/* args */ js.Array[_], String]] = js.undefined
   var preFetch: js.UndefOr[Double | `true`] = js.undefined
   var primitive: js.UndefOr[Boolean] = js.undefined
   var promise: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +27,7 @@ object Options {
     length: Double | `false` = null,
     max: Int | Double = null,
     maxAge: Int | Double = null,
-    normalizer: /* value */ js.Any => Unit = null,
+    normalizer: /* args */ js.Array[_] => String = null,
     preFetch: Double | `true` = null,
     primitive: js.UndefOr[Boolean] = js.undefined,
     promise: js.UndefOr[Boolean] = js.undefined,

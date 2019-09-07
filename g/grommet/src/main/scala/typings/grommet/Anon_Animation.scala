@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Animation extends js.Object {
   var animation: Anon_DurationJiggle
-  var borderSize: Anon_LargeMedium
-  var breakpoints: Anon_LargeMediumSmall
+  var borderSize: Anon_LargeMediumSmall
+  var breakpoints: Anon_LargeMediumSmallAnonBorderSize
   var colors: Colors
   var control: Anon_Border
   var debounceDelay: Double
@@ -30,8 +30,8 @@ object Anon_Animation {
   @scala.inline
   def apply(
     animation: Anon_DurationJiggle,
-    borderSize: Anon_LargeMedium,
-    breakpoints: Anon_LargeMediumSmall,
+    borderSize: Anon_LargeMediumSmall,
+    breakpoints: Anon_LargeMediumSmallAnonBorderSize,
     colors: Colors,
     control: Anon_Border,
     debounceDelay: Double,

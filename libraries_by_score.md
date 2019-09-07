@@ -695,6 +695,7 @@
 | 0.7932018118092315 | [gulp-autoprefixer](./g/gulp-autoprefixer) | Prefix CSS
 | 0.7926315726645372 | [lodash_dot_castarray](./l/lodash_dot_castarray) | The lodash method _.castArray exported as a module
 | 0.7924843596183608 | [ecdsa-sig-formatter](./e/ecdsa-sig-formatter) | Translate ECDSA signatures between ASN.1/DER and J
+| 0.7924530997058973 | [karma-coverage-istanbul-r](./k/karma-coverage-istanbul-reporter) | A karma reporter that uses the latest istanbul 1.x
 | 0.7923618721913237 | [apollo-cache](./a/apollo-cache) | Core abstract of Caching layer for Apollo Client
 | 0.7923403632564208 | [keygrip](./k/keygrip) | Key signing and verification for rotated credentia
 | 0.7923354111786027 | [lodash_dot_omitby](./l/lodash_dot_omitby) | The lodash method _.omitBy exported as a module.
@@ -1704,6 +1705,7 @@
 | 0.7325979766248558 | [rebass](./r/rebass) | React primitive UI components built with styled-sy
 | 0.7325804044207684 | [concaveman](./c/concaveman) | Fast 2D concave hull algorithm in JavaScript (gene
 | 0.732563289768199 | [react-native-community__c](./r/react-native-community__cli) | React Native CLI
+| 0.7325618512938188 | [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr
 | 0.7325554363811366 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.7325347796157227 | [jest-image-snapshot](./j/jest-image-snapshot) | Jest matcher for image comparisons. Most commonly 
 | 0.7325156773967616 | [fbemitter](./f/fbemitter) | Facebook's EventEmitter is a simple emitter implem
@@ -2576,6 +2578,7 @@
 | 0.6894768790817827 | [nodemailer-ses-transport](./n/nodemailer-ses-transport) | SES transport for Nodemailer
 | 0.6894606133101603 | [wampy](./w/wampy) | Simple WAMP (WebSocket Application Messaging Proto
 | 0.6893796442233859 | [html-truncate](./h/html-truncate) | truncate html text and keep tag safe
+| 0.6893712895697335 | [react-loadable-visibility](./r/react-loadable-visibility) | A wrapper around react-loadable for elements that 
 | 0.6893468778454812 | [mixto](./m/mixto) | A mixin superclass. Its subclasses have .extend an
 | 0.68929828190337 | [json2md](./j/json2md) | A JSON to Markdown converter.
 | 0.6892981750018383 | [nats-hemera](./n/nats-hemera) | The core package of hemera
@@ -2802,6 +2805,7 @@
 | 0.6811777527391232 | [prettier-package-json](./p/prettier-package-json) | Prettier formatter for package.json files
 | 0.6811646466020379 | [deprecation](./d/deprecation) | Log a deprecation message with stack
 | 0.6810448958965523 | [reflect-metadata](./r/reflect-metadata) | Polyfill for Metadata Reflection API
+| 0.6810324548307484 | [audio-context](./a/audio-context) | A WebAudio Context singleton
 | 0.6810242778071526 | [rmc-steps](./r/rmc-steps) | steps ui component for react mobile
 | 0.6809872884640256 | [negative-array](./n/negative-array) | Negative array index support array
 | 0.6809282091033559 | [run-jxa](./r/run-jxa) | Run JXAcode and get the result
@@ -2940,6 +2944,7 @@
 | 0.6757008687449357 | [chai-arrays](./c/chai-arrays) | a simple chai plugin for better array assertions
 | 0.6756727288939217 | [node-mailjet](./n/node-mailjet) | Mailjet NodeJS API client
 | 0.6756463692307547 | [halfred](./h/halfred) | parses JSON HAL resources (Hypertext Application L
+| 0.6755914280047156 | [audio-play](./a/audio-play) | Play audio buffer in node or browser
 | 0.6755762866891142 | [tape-async](./t/tape-async) | A lite wrapper around tape to simplify async testi
 | 0.6755282832648897 | [podcast](./p/podcast) | Podcast RSS feed generator. A really simple API to
 | 0.6754705802185463 | [sort-array](./s/sort-array) | Sort an array of objects by any property value, at
@@ -3459,6 +3464,7 @@
 | 0.6532138971978597 | [browser-report](./b/browser-report) | Report browser settings like whatsmybrowser.org.
 | 0.6531750910029396 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz
 | 0.6531490500029882 | [first-run](./f/first-run) | Check if it's the first time the process is run
+| 0.6531442473736453 | [koa__multer](./k/koa__multer) | Route middleware for Koa that handles multipart/fo
 | 0.6530567748025564 | [koa-cache-control](./k/koa-cache-control) | Middleware for meddling with Cache-Control headers
 | 0.6529827855369422 | [prosemirror-collab](./p/prosemirror-collab) | Collaborative editing for ProseMirror
 | 0.6526634131729199 | [react-slick](./r/react-slick) | React port of slick carousel
@@ -3547,6 +3553,7 @@
 | 0.6477897616084406 | [chunk-text](./c/chunk-text) | 🔪 chunk/split a string by length without cutting/
 | 0.6477605333855757 | [voronoi-diagram](./v/voronoi-diagram) | Constructs a Voronoi diagram for a collection of p
 | 0.6477581181822436 | [pdfmake](./p/pdfmake) | Client/server side PDF printing in pure JavaScript
+| 0.6477411282802359 | [ssb-keys](./s/ssb-keys) | keyfile operations for ssb
 | 0.6477120032607364 | [react-form](./r/react-form) | React Form is a lightweight framework and utility 
 | 0.647644687069677 | [spdx-satisfies](./s/spdx-satisfies) | test whether SPDX expressions satisfy licensing cr
 | 0.6475873146396409 | [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and
@@ -3793,6 +3800,7 @@
 | 0.6333300899495167 | [all-the-package-names](./a/all-the-package-names) | A list of all the public package names on npm. Upd
 | 0.6333124541866655 | [contextjs](./c/contextjs) | Context Oriented Programming (COP) for ECMAScript 
 | 0.6332553106899933 | [graphql-relay](./g/graphql-relay) | A library to help construct a graphql-js server su
+| 0.6330492622745473 | [pull-stream](./p/pull-stream) | minimal pull stream
 | 0.6330320169190373 | [electron-is-dev](./e/electron-is-dev) | Check if Electron is running in development
 | 0.6330127982044189 | [pkg-versions](./p/pkg-versions) | Get the version numbers of a package from the npm 
 | 0.6328261076705677 | [split_dot_js](./s/split_dot_js) | 2kb unopinionated utility for resizeable split vie
@@ -4018,6 +4026,7 @@
 | 0.6148028375865355 | [redux-devtools-log-monito](./r/redux-devtools-log-monitor) | The default tree view monitor for Redux DevTools
 | 0.6145963899982427 | [http-server](./h/http-server) | A simple zero-configuration command-line http serv
 | 0.6145662008803219 | [license-checker](./l/license-checker) | Check license info for a package
+| 0.6144827454837136 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu
 | 0.6142700276326081 | [redux-devtools-dock-monit](./r/redux-devtools-dock-monitor) | A resizable and movable dock for Redux DevTools mo
 | 0.6142306903790018 | [vega-typings](./v/vega-typings) | Typings for Vega.
 | 0.6141955611504443 | [jest](./j/jest) | Delightful JavaScript Testing.
@@ -5384,6 +5393,7 @@
 | 0.42597596013700806 | [lazy-val](./l/lazy-val) | Lazy value.
 | 0.42573325259844275 | [parse-torrent-file](./p/parse-torrent-file) | Parse a .torrent file and return an object of keys
 | 0.425669686804771 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support
+| 0.42558732041925273 | [fast-html-parser](./f/fast-html-parser) | A very fast HTML parser, generating a simplified D
 | 0.4255779688527854 | [cordova-plugin-email-comp](./c/cordova-plugin-email-composer) | Provides access to the standard interface that man
 | 0.424871453457237 | [semantic-ui-progress](./s/semantic-ui-progress) | Single component release of progress
 | 0.4248339649849879 | [jquery-lazyload](./j/jquery-lazyload) | Lazyload images with jQuery
@@ -5409,6 +5419,7 @@
 | 0.4226979983109618 | [react-flexr](./r/react-flexr) | React flexbox grid made simple.
 | 0.42243409418031785 | [ftdomdelegate](./f/ftdomdelegate) | Create and manage a DOM event delegator.
 | 0.4222426706314506 | [atmosphere_dot_js](./a/atmosphere_dot_js) | Atmosphere client for Node.js
+| 0.4221422856056748 | [ifvisible](./i/ifvisible) | Crossbrowser & lightweight way to check if user is
 | 0.42174685552189967 | [gulp-debug](./g/gulp-debug) | Debug Vinyl file streams to see what files are run
 | 0.42149946184589315 | [bloomfilter](./b/bloomfilter) | Fast bloom filter in JavaScript.
 | 0.42108499402529664 | [deku](./d/deku) | Render interfaces using pure functions and virtual

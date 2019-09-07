@@ -9,6 +9,9 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait `1DOT2DOT9` extends js.Object
   
   @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
   sealed trait NCDHW extends js.Object
   
   @js.native
@@ -48,6 +51,9 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait channelsLast extends js.Object
   
   @js.native
+  sealed trait cm extends js.Object
+  
+  @js.native
   sealed trait complex64 extends js.Object
   
   @js.native
@@ -69,6 +75,12 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait fro extends js.Object
   
   @js.native
+  sealed trait grayscale extends js.Object
+  
+  @js.native
+  sealed trait in extends js.Object
+  
+  @js.native
   sealed trait int32 extends js.Object
   
   @js.native
@@ -79,6 +91,9 @@ object atTensorflowTfjsDashNodeStrings {
   
   @js.native
   sealed trait nearest extends js.Object
+  
+  @js.native
+  sealed trait rgb extends js.Object
   
   @js.native
   sealed trait round extends js.Object
@@ -100,6 +115,8 @@ object atTensorflowTfjsDashNodeStrings {
   
   @scala.inline
   def `1DOT2DOT9`: `1DOT2DOT9` = "1.2.9".asInstanceOf[`1DOT2DOT9`]
+  @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
   @scala.inline
@@ -127,6 +144,8 @@ object atTensorflowTfjsDashNodeStrings {
   @scala.inline
   def channelsLast: channelsLast = "channelsLast".asInstanceOf[channelsLast]
   @scala.inline
+  def cm: cm = "cm".asInstanceOf[cm]
+  @scala.inline
   def complex64: complex64 = "complex64".asInstanceOf[complex64]
   @scala.inline
   def epoch: epoch = "epoch".asInstanceOf[epoch]
@@ -141,6 +160,10 @@ object atTensorflowTfjsDashNodeStrings {
   @scala.inline
   def fro: fro = "fro".asInstanceOf[fro]
   @scala.inline
+  def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
+  @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
   @scala.inline
   def max: max = "max".asInstanceOf[max]
@@ -148,6 +171,8 @@ object atTensorflowTfjsDashNodeStrings {
   def modelDOTjson: modelDOTjson = "model.json".asInstanceOf[modelDOTjson]
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
+  @scala.inline
+  def rgb: rgb = "rgb".asInstanceOf[rgb]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline

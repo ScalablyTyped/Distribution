@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Frustum
-  * @class A frustum is a shape that defines the viewing space of a camera.
+  * @classdesc A frustum is a shape that defines the viewing space of a camera.
   * @description Creates a new frustum shape.
   * @example
   * // Create a new frustum equivalent to one held by a camera component

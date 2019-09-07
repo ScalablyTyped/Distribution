@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.SoundInstance3d
   * @extends pc.SoundInstance
-  * @class A pc.SoundInstance3d plays a {@link pc.Sound} in 3D
+  * @classdesc A pc.SoundInstance3d plays a {@link pc.Sound} in 3D
   * @param {pc.SoundManager} manager The sound manager
   * @param {pc.Sound} sound The sound to play
   * @param {Object} options Options for the instance
@@ -25,7 +26,8 @@ import scala.scalajs.js.annotation._
   * @param {Number} [options.rollOffFactor=1] The factor used in the falloff equation.
   * @property {pc.Vec3} position The position of the sound in 3D space.
   * @property {pc.Vec3} velocity The velocity of the sound.
-  * @property {String} distanceModel Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be one of {@link pc.DISTANCE_LINEAR}, {@link pc.DISTANCE_INVERSE} or {@link pc.DISTANCE_EXPONENTIAL}. Default is {@link pc.DISTANCE_LINEAR}.        * @property {Number} refDistance The reference distance for reducing volume as the sound source moves further from the listener.
+  * @property {String} distanceModel Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be one of {@link pc.DISTANCE_LINEAR}, {@link pc.DISTANCE_INVERSE} or {@link pc.DISTANCE_EXPONENTIAL}. Default is {@link pc.DISTANCE_LINEAR}.
+  * @property {Number} refDistance The reference distance for reducing volume as the sound source moves further from the listener.
   * @property {Number} maxDistance The maximum distance from the listener at which audio falloff stops. Note the volume of the audio is not 0 after this distance, but just doesn't fall off anymore.
   * @property {Number} rollOffFactor The factor used in the falloff equation.
   */
@@ -33,10 +35,29 @@ import scala.scalajs.js.annotation._
 @js.native
 class SoundInstance3d protected () extends SoundInstance {
   def this(manager: SoundManager, sound: Sound, options: Anon_DistanceModel) = this()
+  /**
+    * Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be one of {@link pc.DISTANCE_LINEAR}, {@link pc.DISTANCE_INVERSE} or {@link pc.DISTANCE_EXPONENTIAL}. Default is {@link pc.DISTANCE_LINEAR}.
+    */
   var distanceModel: String = js.native
+  /**
+    * The maximum distance from the listener at which audio falloff stops. Note the volume of the audio is not 0 after this distance, but just doesn't fall off anymore.
+    */
   var maxDistance: Double = js.native
+  /**
+    * The position of the sound in 3D space.
+    */
   var position: Vec3 = js.native
+  /**
+    * The reference distance for reducing volume as the sound source moves further from the listener.
+    */
+  var refDistance: Double = js.native
+  /**
+    * The factor used in the falloff equation.
+    */
   var rollOffFactor: Double = js.native
+  /**
+    * The velocity of the sound.
+    */
   var velocity: Vec3 = js.native
 }
 

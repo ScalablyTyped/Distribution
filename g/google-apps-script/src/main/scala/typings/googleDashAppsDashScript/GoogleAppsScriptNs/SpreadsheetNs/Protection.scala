@@ -16,7 +16,7 @@ trait Protection extends js.Object {
   def getEditors(): js.Array[User] = js.native
   def getProtectionType(): ProtectionType = js.native
   def getRange(): Range = js.native
-  def getRangeName(): String = js.native
+  def getRangeName(): String | Null = js.native
   def getUnprotectedRanges(): js.Array[Range] = js.native
   def isWarningOnly(): Boolean = js.native
   def remove(): Unit = js.native

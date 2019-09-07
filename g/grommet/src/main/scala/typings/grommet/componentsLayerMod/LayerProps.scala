@@ -15,13 +15,14 @@ import typings.grommet.grommetStrings.right
 import typings.grommet.grommetStrings.slide
 import typings.grommet.grommetStrings.top
 import typings.grommet.grommetStrings.vertical
+import typings.grommet.utilsMod.AnimateType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LayerProps extends js.Object {
-  var animate: js.UndefOr[Boolean] = js.undefined
+  var animate: js.UndefOr[AnimateType] = js.undefined
   var animation: js.UndefOr[none | slide | fadeIn | Boolean] = js.undefined
   var full: js.UndefOr[Boolean | vertical | horizontal] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -38,7 +39,7 @@ trait LayerProps extends js.Object {
 object LayerProps {
   @scala.inline
   def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
+    animate: js.UndefOr[AnimateType] = js.undefined,
     animation: none | slide | fadeIn | Boolean = null,
     full: Boolean | vertical | horizontal = null,
     margin: MarginType = null,

@@ -19,7 +19,7 @@ trait OverGridImage extends js.Object {
   def getInherentWidth(): Integer = js.native
   def getScript(): String = js.native
   def getSheet(): Sheet = js.native
-  def getUrl(): String = js.native
+  def getUrl(): String | Null = js.native
   def getWidth(): Integer = js.native
   def remove(): Unit = js.native
   def replace(blob: BlobSource): OverGridImage = js.native

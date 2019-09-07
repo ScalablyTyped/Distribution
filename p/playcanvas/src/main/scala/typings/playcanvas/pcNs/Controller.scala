@@ -3,13 +3,15 @@ package typings.playcanvas.pcNs
 import typings.playcanvas.Anon_Gamepads
 import typings.playcanvas.Anon_Pad
 import typings.std.Element
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Controller
-  * @class A general input handler which handles both mouse and keyboard input assigned to named actions.
+  * @classdesc A general input handler which handles both mouse and keyboard input assigned to named actions.
   * This allows you to define input handlers separately to defining keyboard/mouse configurations.
   * @description Create a new instance of a Controller.
   * @param {Element} [element] Element to attach Controller to.
@@ -56,14 +58,15 @@ class Controller () extends js.Object {
   /**
     * @function
     * @name pc.Controller#isPressed
-    * @description Return true if the current action is enabled
-    * @param {String} action The name of the action
+    * @description Returns true if the current action is enabled.
+    * @param {String} actionName The name of the action.
+    * @returns {Boolean} True if the action is enabled.
     */
   def isPressed(actionName: String): Boolean = js.native
   /**
     * @function
     * @name pc.Controller#registerAxis
-    * @param {Object} [options]
+    * @param {Object} [options] Optional options object.
     * @param {Object} [options.pad] The index of the game pad to register for (use pc.PAD_1, etc)
     */
   def registerAxis(): Unit = js.native
@@ -75,7 +78,7 @@ class Controller () extends js.Object {
     * @param {String} action The name of the action
     * @param {Number[]} keys A list of keycodes
     */
-  def registerKeys(action: String, keys: js.Array[Double]): Unit = js.native
+  def registerKeys(action: String, keys: js.Array[Number]): Unit = js.native
   /**
     * @function
     * @name pc.Controller#registerMouse
@@ -99,13 +102,13 @@ class Controller () extends js.Object {
     * @description Update the Keyboard and Mouse handlers
     * @param {Object} dt The time since the last frame
     */
-  def update(dt: Double): Unit = js.native
+  def update(dt: js.Any): Unit = js.native
   /**
     * @function
     * @name pc.Controller#wasPressed
-    * @description Returns true if the action was enabled this since the last update
-    * @param {String} action The name of the action
-    * @returns {Boolean} True if the action was enabled this since the last update
+    * @description Returns true if the action was enabled this since the last update.
+    * @param {String} actionName The name of the action.
+    * @returns {Boolean} True if the action was enabled this since the last update.
     */
   def wasPressed(actionName: String): Boolean = js.native
 }

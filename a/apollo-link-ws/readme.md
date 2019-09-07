@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-link-ws
 
-Typings are for version 1.0.18
+Typings are for version 1.0.19
 
 ## Library description:
 WebSocket transport layer for GraphQL

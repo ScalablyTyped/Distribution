@@ -371,6 +371,8 @@
 | [atom-keymap](./a/atom-keymap) | Atom's DOM-aware keymap module | - |
 | [atom-mocha-test-runner](./a/atom-mocha-test-runner) | Run your Atom package tests using Mocha | - |
 | [atpl](./a/atpl) | A complete and fast template engine fully compatib | template, engine, inheritance, twig, jinja, django, swig, consolidate, express |
+| [audio-context](./a/audio-context) | A WebAudio Context singleton | webaudio, audio, audiojs, context, singleton |
+| [audio-play](./a/audio-play) | Play audio buffer in node or browser | player, audio, audiojs, web-audio-api, sound |
 | [audiobuffer-to-wav](./a/audiobuffer-to-wav) | convert an AudioBuffer to .wav format | convert, AudioBuffer, to, wav, format, for, browser, webaudio, web audio, audio, buffer, conversion, formats, fmt, riff, wave, sound |
 | [audiosprite](./a/audiosprite) | Concat small audio files into single file and expo | audio, audio-sprite, jukebox, ffmpeg |
 | [aurelia-binding](./a/aurelia-binding) | A modern databinding library for JavaScript and HT | aurelia, binding, databinding |
@@ -1882,6 +1884,7 @@
 | [fast-deep-equal](./f/fast-deep-equal) | Fast deep equal | fast, equal, deep-equal |
 | [fast-diff](./f/fast-diff) | Fast Javascript text diff | diff |
 | [fast-glob](./f/fast-glob) | Is a faster node-glob alternative | glob, patterns, fast, implementation |
+| [fast-html-parser](./f/fast-html-parser) | A very fast HTML parser, generating a simplified D | - |
 | [fast-json-patch](./f/fast-json-patch) | Fast implementation of JSON-Patch (RFC-6902) with  | json, patch, http, rest |
 | [fast-json-stable-stringif](./f/fast-json-stable-stringify) | deterministic JSON.stringify() - a faster version  | json, stringify, deterministic, hash, stable |
 | [fast-levenshtein](./f/fast-levenshtein) | Efficient implementation of Levenshtein algorithm  | levenshtein, distance, string |
@@ -2787,6 +2790,7 @@
 | [idyll-document](./i/idyll-document) | The Idyll runtime, implemented as a React componen | - |
 | [iferr](./i/iferr) | Higher-order functions for easier error handling | error, errors |
 | [iframe-resizer](./i/iframe-resizer) | Keep same and cross domain iFrames sized to their  | CrossDomain, Cross-Domain, iFrame, Resizing, Resizer, postMessage, autoheight, auto-height, iframe-auto-height, height-iframe, heightiframe, width, mutationObserver, RWD, responsiveiframes, responsive-iframes, jquery-plugin |
+| [ifvisible](./i/ifvisible) | Crossbrowser & lightweight way to check if user is | visibility, HTML5, cross, browser, api, UI, idle, status, mousemove, reading, mode, tab, change |
 | [ignite-ui](./i/ignite-ui) | Ignite UI by Infragistics | igniteui, ignite ui, infragistics, jquery controls, jquery widgets |
 | [ignore](./i/ignore) | Ignore is a manager and filter for .gitignore rule | ignore, .gitignore, gitignore, npmignore, rules, manager, filter, regexp, regex, fnmatch, glob, asterisks, regular-expression |
 | [ignore-styles](./i/ignore-styles) | Ignore imported style files when running in Node | webpack, css, testing |
@@ -3448,6 +3452,7 @@
 | [karma-chai](./k/karma-chai) | Chai for Karma | karma, karma-plugin, chai, mocha, should |
 | [karma-chai-sinon](./k/karma-chai-sinon) | Chai + Sinon-Chai + Sinon for Karma | karma, karma-plugin, chai, sinon, sinon-chai, mocha |
 | [karma-coverage](./k/karma-coverage) | A Karma plugin. Generate code coverage. | karma-plugin, karma-preprocessor, karma-reporter, coverage, istanbul |
+| [karma-coverage-istanbul-r](./k/karma-coverage-istanbul-reporter) | A karma reporter that uses the latest istanbul 1.x | karma-plugin, karma-reporter, coverage, istanbul, istanbuljs |
 | [karma-fixture](./k/karma-fixture) | A plugin for the Karma test runner that loads .htm | karma, karma-plugin, fixtures, fixture |
 | [karma-jasmine](./k/karma-jasmine) | A Karma plugin - adapter for Jasmine testing frame | karma-plugin, karma-adapter, jasmine |
 | [karma-viewport](./k/karma-viewport) | A Karma plugin for testing responsive features and | breakpoint, iframe, karma, karma-framework, karma-plugin, responsive, testing, viewport |
@@ -3571,6 +3576,7 @@
 | [koa2-cors](./k/koa2-cors) | cors middleware for koa2 | koa2, cors, middleware |
 | [koa2-session-redis](./k/koa2-session-redis) | A simple redis store of koa-session | koa, koa2, session, redis |
 | [koa__cors](./k/koa__cors) | Cross-Origin Resource Sharing(CORS) for koa | cors, koa-cors, Cross-Origin Resource Sharing, @koa/cors, koa, koajs |
+| [koa__multer](./k/koa__multer) | Route middleware for Koa that handles multipart/fo | form, form-data, formdata, koa, middleware, multipart, post |
 | [koa__router](./k/koa__router) | Router middleware for koa. Provides RESTful resour | koa, middleware, router, route |
 | [koji-tools](./k/koji-tools) | A library that simplifies adding koji-specific fea | koji, devtool |
 | [kolite](./k/kolite) | - | - |
@@ -3672,6 +3678,7 @@
 | [license-checker](./l/license-checker) | Check license info for a package | license, cli, checker, oss |
 | [license-checker-webpack-p](./l/license-checker-webpack-plugin) | Verifies licenses of all external dependencies in  | license, webpack |
 | [liftoff](./l/liftoff) | Launch your command line tool with ease. | command line |
+| [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu | datepicker, date, daterange, date, picker, range |
 | [lightship](./l/lightship) | Abstracts readiness/ liveness checks and graceful  | kubernetes |
 | [lil-uri](./l/lil-uri) | Tiny URI parser and builder with chainable API | lil, tiny, micro, uri, url, parse, schema, host, parser, builder |
 | [lil-uuid](./l/lil-uuid) | UUID v4 generator and validator (RFC4122 compliant | lil, tiny, micro, uuid, generator, v4, validator, unique, identifier, user |
@@ -5242,6 +5249,7 @@
 | [pubnub](./p/pubnub) | Publish & Subscribe Real-time Messaging with PubNu | cloud, publish, subscribe, websockets, comet, bosh, xmpp, real-time, messaging |
 | [pubsub-js](./p/pubsub-js) | Dependency free publish/subscribe library | pub/sub, pubsub, publish/subscribe, publish, subscribe |
 | [pug](./p/pug) | A clean, whitespace-sensitive template language fo | - |
+| [pull-stream](./p/pull-stream) | minimal pull stream | - |
 | [pulltorefreshjs](./p/pulltorefreshjs) | Pull To Refresh | - |
 | [pulumi__aws](./p/pulumi__aws) | A Pulumi package for creating and managing Amazon  | pulumi, aws |
 | [pulumi__cloud](./p/pulumi__cloud) | A highly productive, cloud neutral programming mod | pulumi, cloud |
@@ -5578,6 +5586,7 @@
 | [react-list](./r/react-list) | A versatile infinite scroll  | - |
 | [react-live](./r/react-live) | A production-focused playground for live editing R | react, live, live edit, component playground, react live |
 | [react-loadable](./r/react-loadable) | A higher order component for loading components wi | - |
+| [react-loadable-visibility](./r/react-loadable-visibility) | A wrapper around react-loadable for elements that  | - |
 | [react-loader](./r/react-loader) | React component that displays a spinner via spin.j | react, component, react-component, loader, spinner, spin, spinjs, spin.js |
 | [react-localization](./r/react-localization) | Simple module to localize the React interface usin | react-component, react, localization, internationalization, javascript, typescript, react, react-component |
 | [react-lottie](./r/react-lottie) | lottie animation view for React | - |
@@ -6576,6 +6585,7 @@
 | [srcset](./s/srcset) | Parse and stringify the HTML  srcset attribute | html, attribute, image, img, src, parse, stringify, srcset, responsive, picture, element |
 | [srp](./s/srp) | Secure Remote Password (SRP) | - |
 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a numb | servicestack, utils, validation, form-binding, bootstrap-forms, ajax, serverevents, declarative, events, error-handling, data-binding |
+| [ssb-keys](./s/ssb-keys) | keyfile operations for ssb | - |
 | [ssf](./s/ssf) | Format data using ECMA-376 spreadsheet Format Code | format, sprintf, spreadsheet |
 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys | ssh, key, decrypt, pem, openssl, aes, aes129, aes256, aes128, des3, 3des, des, des-ede3-cbc, passphrase |
 | [ssh2](./s/ssh2) | SSH2 client and server modules written in pure Jav | ssh, ssh2, sftp, secure, shell, exec, remote, client |
@@ -7287,6 +7297,7 @@
 | [w3c-image-capture](./w/w3c-image-capture) | - | - |
 | [w3c-screen-orientation](./w/w3c-screen-orientation) | - | - |
 | [w3c-web-usb](./w/w3c-web-usb) | - | - |
+| [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr | jest, expect, wait, async, await, promise, integration, testing, unit |
 | [wait-for-localhost](./w/wait-for-localhost) | Wait for localhost to be ready | wait, localhost, server, port, delay, sleep, ready |
 | [wait-on](./w/wait-on) | wait-on is a cross platform command line utility a | wait, delay, cli, files, tcp, ports, sockets, http, exist, ready, available, portable, cross-platform, unix, linux, windows, win32, osx |
 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of  | promise, node, wait, before, after, every, and, until, till, async |

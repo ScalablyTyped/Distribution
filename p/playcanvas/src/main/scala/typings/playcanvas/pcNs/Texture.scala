@@ -2,27 +2,26 @@ package typings.playcanvas.pcNs
 
 import typings.playcanvas.Anon_AddressU
 import typings.playcanvas.Anon_Face
-import typings.std.Float32Array
+import typings.std.ArrayBuffer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
-import typings.std.Uint16Array
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Texture
-  * @class A texture is a container for texel data that can be utilized in a fragment shader.
+  * @classdesc A texture is a container for texel data that can be utilized in a fragment shader.
   * Typically, the texel data represents an image that is mapped over geometry.
   * @description Creates a new texture.
   * @param {pc.GraphicsDevice} graphicsDevice The graphics device used to manage this texture.
-  * @param {Object} options Object for passing optional arguments.
-  * @param {Number} options.width The width of the texture in pixels. Defaults to 4.
-  * @param {Number} options.height The height of the texture in pixels. Defaults to 4.
-  * @param {Number} options.depth The number of depth slices in a 3D texture (WebGL2 only). Defaults to 1 (single 2D image).
-  * @param {Number} options.format The pixel format of the texture. Can be:
+  * @param {Object} [options] Object for passing optional arguments.
+  * @param {Number} [options.width] The width of the texture in pixels. Defaults to 4.
+  * @param {Number} [options.height] The height of the texture in pixels. Defaults to 4.
+  * @param {Number} [options.depth] The number of depth slices in a 3D texture (WebGL2 only). Defaults to 1 (single 2D image).
+  * @param {Number} [options.format] The pixel format of the texture. Can be:
   * <ul>
   *     <li>{@link pc.PIXELFORMAT_A8}</li>
   *     <li>{@link pc.PIXELFORMAT_L8}</li>
@@ -47,24 +46,27 @@ import scala.scalajs.js.annotation._
   *     <li>{@link pc.PIXELFORMAT_111110F}</li>
   * </ul>
   * Defaults to pc.PIXELFORMAT_R8_G8_B8_A8.
-  * @param {Number} options.minFilter The minification filter type to use. Defaults to {@link pc.FILTER_LINEAR_MIPMAP_LINEAR}
-  * @param {Number} options.magFilter The magnification filter type to use. Defaults to {@link pc.FILTER_LINEAR}
-  * @param {Number} options.anisotropy The level of anisotropic filtering to use. Defaults to 1
-  * @param {Number} options.addressU The repeat mode to use in the U direction. Defaults to {@link pc.ADDRESS_REPEAT}
-  * @param {Number} options.addressV The repeat mode to use in the V direction. Defaults to {@link pc.ADDRESS_REPEAT}
-  * @param {Boolean} options.mipmaps When enabled try to generate or use mipmaps for this texture. Default is true
-  * @param {Boolean} options.cubemap Specifies whether the texture is to be a cubemap. Defaults to false.
-  * @param {Boolean} options.volume Specifies whether the texture is to be a 3D volume (WebGL2 only). Defaults to false.
-  * @param {Boolean} options.rgbm Specifies whether the texture contains RGBM-encoded HDR data. Defaults to false.
-  * @param {Boolean} options.fixCubemapSeams Specifies whether this cubemap texture requires special
+  * @param {Number} [options.minFilter] The minification filter type to use. Defaults to {@link pc.FILTER_LINEAR_MIPMAP_LINEAR}
+  * @param {Number} [options.magFilter] The magnification filter type to use. Defaults to {@link pc.FILTER_LINEAR}
+  * @param {Number} [options.anisotropy] The level of anisotropic filtering to use. Defaults to 1
+  * @param {Number} [options.addressU] The repeat mode to use in the U direction. Defaults to {@link pc.ADDRESS_REPEAT}
+  * @param {Number} [options.addressV] The repeat mode to use in the V direction. Defaults to {@link pc.ADDRESS_REPEAT}
+  * @param {Number} [options.addressW] The repeat mode to use in the W direction. Defaults to {@link pc.ADDRESS_REPEAT}
+  * @param {Boolean} [options.mipmaps] When enabled try to generate or use mipmaps for this texture. Default is true
+  * @param {Boolean} [options.cubemap] Specifies whether the texture is to be a cubemap. Defaults to false.
+  * @param {Boolean} [options.volume] Specifies whether the texture is to be a 3D volume (WebGL2 only). Defaults to false.
+  * @param {Boolean} [options.rgbm] Specifies whether the texture contains RGBM-encoded HDR data. Defaults to false.
+  * @param {Boolean} [options.fixCubemapSeams] Specifies whether this cubemap texture requires special
   * seam fixing shader code to look right. Defaults to false.
-  * @param {Boolean} options.flipY Specifies whether the texture should be flipped in the Y-direction. Only affects textures
+  * @param {Boolean} [options.flipY] Specifies whether the texture should be flipped in the Y-direction. Only affects textures
   * with a source that is an image, canvas or video element. Does not affect cubemaps, compressed textures or textures set from raw
   * pixel data. Defaults to true.
-  * @param {Boolean} options.compareOnRead When enabled, and if texture format is pc.PIXELFORMAT_DEPTH or pc.PIXELFORMAT_DEPTHSTENCIL,
+  * @param {Boolean} [options.premultiplyAlpha] If true, the alpha channel of the texture (if present) is multiplied into the color
+  * channels. Defaults to false.
+  * @param {Boolean} [options.compareOnRead] When enabled, and if texture format is pc.PIXELFORMAT_DEPTH or pc.PIXELFORMAT_DEPTHSTENCIL,
   * hardware PCF is enabled for this texture, and you can get filtered results of comparison using texture() in your shader (WebGL2 only).
   * Defaults to false.
-  * @param {Number} options.compareFunc Comparison function when compareOnRead is enabled (WebGL2 only). Defaults to pc.FUNC_LESS.
+  * @param {Number} [options.compareFunc] Comparison function when compareOnRead is enabled (WebGL2 only). Defaults to pc.FUNC_LESS.
   * Possible values:
   * <ul>
   *     <li>pc.FUNC_LESS</li>
@@ -94,7 +96,6 @@ import scala.scalajs.js.annotation._
   * }
   * texture.unlock();
   * @property {String} name The name of the texture. Defaults to null.
-  * @author Will Eastcott
   */
 @JSGlobal("pc.Texture")
 @js.native
@@ -141,14 +142,6 @@ class Texture protected () extends js.Object {
     * ranging from 1 (no anisotropic filtering) to the {@link pc.GraphicsDevice} property maxAnisotropy.
     */
   var anisotropy: Double = js.native
-  /**
-    * @private
-    * @deprecated
-    * @name pc.Texture#autoMipmap
-    * @type Boolean
-    * @description Toggles automatic mipmap generation. Can't be used on non power of two textures.
-    */
-  var autoMipmap: Boolean = js.native
   /**
     * @name pc.Texture#compareFunc
     * @type Number
@@ -260,7 +253,17 @@ class Texture protected () extends js.Object {
     * @description Defines if texture should generate/upload mipmaps if possible.
     */
   var mipmaps: Boolean = js.native
+  /**
+    * The name of the texture. Defaults to null.
+    */
   var name: String = js.native
+  /**
+    * @readonly
+    * @name pc.Texture#pot
+    * @type Boolean
+    * @description Returns true if all dimensions of the texture are power of two, and false otherwise.
+    */
+  val pot: Boolean = js.native
   /**
     * @readonly
     * @name pc.Texture#volume
@@ -276,13 +279,6 @@ class Texture protected () extends js.Object {
     */
   val width: Double = js.native
   /**
-    * @private
-    * @function
-    * @name pc.Texture#bind
-    * @description Activates the specified texture on the current texture unit.
-    */
-  /* private */ def bind(): Unit = js.native
-  /**
     * @function
     * @name pc.Texture#destroy
     * @description Forcibly free up the underlying WebGL resource owned by the texture.
@@ -293,9 +289,11 @@ class Texture protected () extends js.Object {
     * @name pc.Texture#getSource
     * @description Get the pixel data of the texture. If this is a cubemap then an array of 6 images will be returned otherwise
     * a single image.
-    * @return {HTMLImageElement} The source image of this texture.
+    * @param {Number} mipLevel A non-negative integer specifying the image level of detail. Defaults to 0, which represents the base image source.
+    * A level value of N, that is greater than 0, represents the image source for the Nth mipmap reduction level.
+    * @returns {HTMLImageElement} The source image of this texture. Can be null if source not assigned for specific image level.
     */
-  def getSource(): HTMLImageElement = js.native
+  def getSource(mipLevel: Double): HTMLImageElement = js.native
   /**
     * @function
     * @name pc.Texture#lock
@@ -303,28 +301,23 @@ class Texture protected () extends js.Object {
     * @param {Object} options Optional options object. Valid properties are as follows:
     * @param {Number} options.level The mip level to lock with 0 being the top level. Defaults to 0.
     * @param {Number} options.face If the texture is a cubemap, this is the index of the face to lock.
+    * @returns {ArrayBuffer} A typed array containing the pixel data of the locked mip level.
     */
-  def lock(options: Anon_Face): Uint8Array | Uint16Array | Float32Array = js.native
-  /**
-    * @private
-    * @function
-    * @name pc.Texture#recover
-    * @description Restores the texture in the event of the underlying WebGL context being lost and then
-    * restored.
-    */
-  /* private */ def recover(): Unit = js.native
-  def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement]): Unit = js.native
+  def lock(options: Anon_Face): ArrayBuffer = js.native
+  def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement], mipLevel: Double): Unit = js.native
   /**
     * @function
     * @name pc.Texture#setSource
     * @description Set the pixel data of the texture from a canvas, image, video DOM element. If the
     * texture is a cubemap, the supplied source must be an array of 6 canvases, images or videos.
-    * @param {HTMLCanvasElement|HTMLImageElement|HTMLVideoElement|Array} source A canvas, image or video element,
+    * @param {HTMLCanvasElement|HTMLImageElement|HTMLVideoElement|HTMLCanvasElement[]|HTMLImageElement[]|HTMLVideoElement[]} source A canvas, image or video element,
     * or an array of 6 canvas, image or video elements.
+    * @param {Number} mipLevel A non-negative integer specifying the image level of detail. Defaults to 0, which represents the base image source.
+    * A level value of N, that is greater than 0, represents the image source for the Nth mipmap reduction level.
     */
-  def setSource(source: HTMLCanvasElement): Unit = js.native
-  def setSource(source: HTMLImageElement): Unit = js.native
-  def setSource(source: HTMLVideoElement): Unit = js.native
+  def setSource(source: HTMLCanvasElement, mipLevel: Double): Unit = js.native
+  def setSource(source: HTMLImageElement, mipLevel: Double): Unit = js.native
+  def setSource(source: HTMLVideoElement, mipLevel: Double): Unit = js.native
   /**
     * @function
     * @name pc.Texture#unlock

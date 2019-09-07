@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-tel-input"
-version := "2.1-dt-20190501Z-6d75e7"
+version := "2.1-dt-20190907Z-ae527d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

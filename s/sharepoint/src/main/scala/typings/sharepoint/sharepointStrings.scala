@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object sharepointStrings {
   @js.native
+  sealed trait AND extends js.Object
+  
+  @js.native
   sealed trait Body extends js.Object
   
   @js.native
@@ -19,6 +22,9 @@ object sharepointStrings {
   
   @js.native
   sealed trait Item extends js.Object
+  
+  @js.native
+  sealed trait OR extends js.Object
   
   @js.native
   sealed trait ParentTableReference extends js.Object
@@ -122,6 +128,14 @@ object sharepointStrings {
   @js.native
   sealed trait _visualBestBet extends js.Object
   
+  @js.native
+  sealed trait and extends js.Object
+  
+  @js.native
+  sealed trait or extends js.Object
+  
+  @scala.inline
+  def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
   def Body: Body = "Body".asInstanceOf[Body]
   @scala.inline
@@ -132,6 +146,8 @@ object sharepointStrings {
   def IsFirstRankedResultBlock: IsFirstRankedResultBlock = "IsFirstRankedResultBlock".asInstanceOf[IsFirstRankedResultBlock]
   @scala.inline
   def Item: Item = "Item".asInstanceOf[Item]
+  @scala.inline
+  def OR: OR = "OR".asInstanceOf[OR]
   @scala.inline
   def ParentTableReference: ParentTableReference = "ParentTableReference".asInstanceOf[ParentTableReference]
   @scala.inline
@@ -200,5 +216,9 @@ object sharepointStrings {
   def _replies: _replies = "_replies".asInstanceOf[_replies]
   @scala.inline
   def _visualBestBet: _visualBestBet = "_visualBestBet".asInstanceOf[_visualBestBet]
+  @scala.inline
+  def and: and = "and".asInstanceOf[and]
+  @scala.inline
+  def or: or = "or".asInstanceOf[or]
 }
 

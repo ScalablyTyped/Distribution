@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PivotValue extends js.Object {
   def getDisplayType(): PivotValueDisplayType
-  def getFormula(): String
+  def getFormula(): String | Null
   def getPivotTable(): PivotTable
   def getSummarizedBy(): PivotTableSummarizeFunction
   def setDisplayName(name: String): PivotValue
@@ -19,7 +19,7 @@ object PivotValue {
   @scala.inline
   def apply(
     getDisplayType: () => PivotValueDisplayType,
-    getFormula: () => String,
+    getFormula: () => String | Null,
     getPivotTable: () => PivotTable,
     getSummarizedBy: () => PivotTableSummarizeFunction,
     setDisplayName: String => PivotValue,

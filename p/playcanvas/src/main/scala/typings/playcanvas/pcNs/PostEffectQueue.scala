@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.PostEffectQueue
+  * @classdesc Used to manage multiple post effects for a camera
   * @description Create a new PostEffectQueue
-  * @class Used to manage multiple post effects for a camera
   * @param {pc.Application} app The application
   * @param {pc.CameraComponent} camera The camera component
   */
@@ -15,16 +16,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PostEffectQueue protected () extends js.Object {
   def this(app: Application, camera: CameraComponent) = this()
-  /**
-    * @private
-    * @function
-    * @name pc.PostEffectQueue#_createOffscreenTarget
-    * @description Creates a render target with the dimensions of the canvas, with an optional depth buffer
-    * @param {Boolean} useDepth Set to true if you want to create a render target with a depth buffer
-    * @param {Boolean} hdr Use HDR render target format
-    * @returns {pc.RenderTarget} The render target
-    */
-  /* private */ def _createOffscreenTarget(useDepth: Boolean, hdr: Boolean): RenderTarget = js.native
   /**
     * @function
     * @name pc.PostEffectQueue#addEffect

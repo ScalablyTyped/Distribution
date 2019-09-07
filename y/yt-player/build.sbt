@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yt-player"
-version := "3.3-dt-20190905Z-cb3e7e"
+version := "3.4-dt-20190907Z-91d511"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

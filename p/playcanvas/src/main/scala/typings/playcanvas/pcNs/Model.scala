@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Model
-  * @class A model is a graphical object that can be added to or removed from a scene.
+  * @classdesc A model is a graphical object that can be added to or removed from a scene.
   * It contains a hierarchy and any number of mesh instances.
   * @description Creates a new model.
   * @example
@@ -18,7 +19,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.Model")
 @js.native
 class Model () extends js.Object {
+  /**
+    * The root node of the model's graph node hierarchy.
+    */
   var graph: GraphNode = js.native
+  /**
+    * An array of meshInstances contained in this model.
+    */
   var meshInstances: js.Array[MeshInstance] = js.native
   /**
     * @function
@@ -41,9 +48,7 @@ class Model () extends js.Object {
     * for (var i = 0; i < model.meshInstances.length; i++) {
     *     model.meshInstances[i].renderStyle = pc.RENDERSTYLE_WIREFRAME;
     * }
-    * @author Will Eastcott
     */
   def generateWireframe(): Unit = js.native
-  def getMaterials(): js.Array[StandardMaterial] = js.native
 }
 

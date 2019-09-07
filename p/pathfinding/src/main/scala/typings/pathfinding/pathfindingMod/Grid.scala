@@ -13,7 +13,7 @@ trait Grid
   var height: Double = js.native
   var width: Double = js.native
   def getNeighbors(node: Node, diagonalMovement: DiagonalMovement): js.Array[Node] = js.native
-  def getNodeAt(): Node = js.native
+  def getNodeAt(x: Double, y: Double): Node = js.native
   def isInside(x: Double, y: Double): Boolean = js.native
   def isWalkableAt(x: Double, y: Double): Boolean = js.native
   def setWalkableAt(x: Double, y: Double, walkable: Boolean): Unit = js.native

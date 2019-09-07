@@ -43,7 +43,7 @@ trait IBalanceTransaction extends IResourceObject {
   /**
     * The transfers (if any) for which source is a source_transaction.
     */
-  var source_transfers: IList[ITransfer]
+  var source_transfers: js.UndefOr[IList[ITransfer]] = js.undefined
   /**
     * If the transaction's net funds are available in the Stripe balance yet. Either "available" or "pending".
     */
@@ -70,17 +70,18 @@ object IBalanceTransaction {
     net: Double,
     `object`: String,
     source: String | IResourceObject,
-    source_transfers: IList[ITransfer],
     status: String,
     `type`: String,
     description: String = null,
-    exchange_rate: Int | Double = null
+    exchange_rate: Int | Double = null,
+    source_transfers: IList[ITransfer] = null
   ): IBalanceTransaction = {
-    val __obj = js.Dynamic.literal(amount = amount, available_on = available_on, created = created, currency = currency, fee = fee, fee_details = fee_details, id = id, net = net, source = source.asInstanceOf[js.Any], source_transfers = source_transfers, status = status)
+    val __obj = js.Dynamic.literal(amount = amount, available_on = available_on, created = created, currency = currency, fee = fee, fee_details = fee_details, id = id, net = net, source = source.asInstanceOf[js.Any], status = status)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     if (exchange_rate != null) __obj.updateDynamic("exchange_rate")(exchange_rate.asInstanceOf[js.Any])
+    if (source_transfers != null) __obj.updateDynamic("source_transfers")(source_transfers)
     __obj.asInstanceOf[IBalanceTransaction]
   }
 }

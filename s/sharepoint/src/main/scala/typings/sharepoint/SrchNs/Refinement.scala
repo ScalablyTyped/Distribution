@@ -54,7 +54,7 @@ object Refinement extends js.Object {
   /** Gets expanded state of the specified filter from cookie */
   def getExpanded(filterName: String): String = js.native
   def getRefinementLocalizedTitle(propertyName: String): String = js.native
-  def getRefinementTitle(currentRefinemntControl: Refinement): String = js.native
+  def getRefinementTitle(currentRefinemntControl: RefinementControl): String = js.native
   def multiRefinerSpecifyOtherFilterValue(refinerName: String, clientControl: Refinement, useContains: Boolean, useKQL: Boolean): Unit = js.native
   /** Save expanded state of the specified filter to cookie */
   def setExpanded(filterName: String, value: String): Unit = js.native

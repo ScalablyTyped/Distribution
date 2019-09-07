@@ -1,11 +1,9 @@
 package typings.grommet.componentsButtonMod
 
-import typings.grommet.Anon_Background
 import typings.grommet.grommetStrings._blank
 import typings.grommet.grommetStrings._parent
 import typings.grommet.grommetStrings._self
 import typings.grommet.grommetStrings._top
-import typings.grommet.grommetStrings.background
 import typings.grommet.grommetStrings.button
 import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.reset
@@ -13,6 +11,7 @@ import typings.grommet.grommetStrings.submit
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
@@ -35,7 +34,7 @@ trait ButtonProps extends js.Object {
   var focusIndicator: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var hoverIndicator: js.UndefOr[Boolean | String | background | Anon_Background] = js.undefined
+  var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   var icon: js.UndefOr[Element] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
@@ -61,7 +60,7 @@ object ButtonProps {
     focusIndicator: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
     gridArea: GridAreaType = null,
-    hoverIndicator: Boolean | String | background | Anon_Background = null,
+    hoverIndicator: BackgroundType | Boolean = null,
     href: String = null,
     icon: Element = null,
     label: ReactNode = null,

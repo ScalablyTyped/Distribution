@@ -26,7 +26,7 @@ trait Anon_Accordion extends js.Object {
   var rangeInput: Anon_Thumb
   var select: Anon_Container
   var tab: Anon_ActiveBorder
-  var table: Anon_Body
+  var table: Anon_BodyFooter
   var tabs: Anon_Header
   var text: Anon_LargeMediumSmallXlargeXsmall
   var video: Anon_Captions
@@ -57,7 +57,7 @@ object Anon_Accordion {
     rangeInput: Anon_Thumb,
     select: Anon_Container,
     tab: Anon_ActiveBorder,
-    table: Anon_Body,
+    table: Anon_BodyFooter,
     tabs: Anon_Header,
     text: Anon_LargeMediumSmallXlargeXsmall,
     video: Anon_Captions,

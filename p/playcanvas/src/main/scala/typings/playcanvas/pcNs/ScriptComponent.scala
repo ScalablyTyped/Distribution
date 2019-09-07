@@ -1,28 +1,30 @@
 package typings.playcanvas.pcNs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.playcanvas.Anon_Attributes
+import typings.playcanvas.Anon_AttributesEnabled
+import typings.playcanvas.ScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
   * @component
+  * @constructor
   * @name pc.ScriptComponent
-  * @class The ScriptComponent allows you to extend the functionality of an Entity by attaching your own Script Types defined in JavaScript files
+  * @extends pc.Component
+  * @classdesc The ScriptComponent allows you to extend the functionality of an Entity by attaching your own Script Types defined in JavaScript files
   * to be executed with access to the Entity. For more details on scripting see <a href="//developer.playcanvas.com/user-manual/scripting/">Scripting</a>.
   * @param {pc.ScriptComponentSystem} system The ComponentSystem that created this Component
   * @param {pc.Entity} entity The Entity that this Component is attached to.
-  * @extends pc.Component
   * @property {ScriptType[]} scripts An array of all script instances attached to an entity. This Array shall not be modified by developer.
   */
 @JSGlobal("pc.ScriptComponent")
 @js.native
-class ScriptComponent protected ()
-  extends Component
-     with /* prop */ StringDictionary[js.Any] {
+class ScriptComponent protected () extends Component {
   def this(system: ScriptComponentSystem, entity: Entity) = this()
-  var scripts: js.Array[typings.playcanvas.pcNs.ScriptType] = js.native
+  /**
+    * An array of all script instances attached to an entity. This Array shall not be modified by developer.
+    */
+  var scripts: js.Array[ScriptType] = js.native
   /**
     * @function
     * @name pc.ScriptComponent#create
@@ -41,8 +43,8 @@ class ScriptComponent protected ()
     *     }
     * });
     */
-  def create(name: String): typings.playcanvas.pcNs.ScriptType = js.native
-  def create(name: String, args: Anon_Attributes): typings.playcanvas.pcNs.ScriptType = js.native
+  def create(name: String): ScriptType = js.native
+  def create(name: String, args: Anon_AttributesEnabled): ScriptType = js.native
   /**
     * @function
     * @name pc.ScriptComponent#destroy

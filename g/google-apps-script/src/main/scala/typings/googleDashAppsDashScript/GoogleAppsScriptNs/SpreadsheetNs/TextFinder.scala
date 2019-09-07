@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait TextFinder extends js.Object {
   def findAll(): js.Array[Range]
-  def findNext(): Range
-  def findPrevious(): Range
-  def getCurrentMatch(): Range
+  def findNext(): Range | Null
+  def findPrevious(): Range | Null
+  def getCurrentMatch(): Range | Null
   def ignoreDiacritics(ignoreDiacritics: Boolean): TextFinder
   def matchCase(matchCase: Boolean): TextFinder
   def matchEntireCell(matchEntireCell: Boolean): TextFinder
@@ -24,9 +24,9 @@ object TextFinder {
   @scala.inline
   def apply(
     findAll: () => js.Array[Range],
-    findNext: () => Range,
-    findPrevious: () => Range,
-    getCurrentMatch: () => Range,
+    findNext: () => Range | Null,
+    findPrevious: () => Range | Null,
+    getCurrentMatch: () => Range | Null,
     ignoreDiacritics: Boolean => TextFinder,
     matchCase: Boolean => TextFinder,
     matchEntireCell: Boolean => TextFinder,

@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.ElementComponentSystem
-  * @class Manages creation of {@link pc.ElementComponent}s.
+  * @classdesc Manages creation of {@link pc.ElementComponent}s.
   * @param {pc.Application} app The application
   * @extends pc.ComponentSystem
   */

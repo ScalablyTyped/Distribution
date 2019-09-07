@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Ray
-  * @class An infinite ray
+  * @classdesc An infinite ray
   * @description Creates a new infinite ray starting at a given origin and pointing in a given direction.
   * @example
   * // Create a new ray starting at the position of this entity and pointing down
@@ -22,7 +23,5 @@ import scala.scalajs.js.annotation._
 class Ray () extends js.Object {
   def this(origin: Vec3) = this()
   def this(origin: Vec3, direction: Vec3) = this()
-  var direction: Vec3 = js.native
-  var origin: Vec3 = js.native
 }
 

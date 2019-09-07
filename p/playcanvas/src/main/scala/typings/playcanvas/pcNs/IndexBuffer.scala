@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.IndexBuffer
-  * @class An index buffer is the mechanism via which the application specifies primitive
+  * @classdesc An index buffer is the mechanism via which the application specifies primitive
   * index data to the graphics hardware.
   * @description Creates a new index buffer.
   * @example
@@ -30,7 +31,7 @@ class IndexBuffer protected () extends js.Object {
     format: Double,
     numIndices: Double,
     usage: Double,
-    initialData: js.Any
+    initialData: ArrayBuffer
   ) = this()
   /**
     * @function
@@ -44,7 +45,7 @@ class IndexBuffer protected () extends js.Object {
     * @description Returns the data format of the specified index buffer.
     * @returns {Number} The data format of the specified index buffer (see pc.INDEXFORMAT_*).
     */
-  def getFormat(): Unit = js.native
+  def getFormat(): Double = js.native
   /**
     * @function
     * @name pc.IndexBuffer#getNumIndices

@@ -18,8 +18,13 @@ import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R5
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.bilinear
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.cm
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.grayscale
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.in
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.nearest
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.rgb
 import typings.atTensorflowTfjsDashNode.distTfjsUnderscoreBindingMod.TFEOpAttr
 import typings.atTensorflowTfjsDashNode.distTfjsUnderscoreBindingMod.TFJSBinding
 import typings.std.Uint8Array
@@ -93,7 +98,89 @@ class NodeJSKernelBackend protected () extends KernelBackend {
   def depthToSpace(x: Tensor[R4], blockSize: Double, dataFormat: String): Tensor[R4] = js.native
   def diag(x: Tensor[Rank]): Tensor[Rank] = js.native
   def divide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+  def encodeJpeg(
+    imageData: Uint8Array,
+    imageShape: js.Array[Double],
+    format: grayscale,
+    quality: Double,
+    progressive: Boolean,
+    optimizeSize: Boolean,
+    chromaDownsampling: Boolean,
+    densityUnit: cm,
+    xDensity: Double,
+    yDensity: Double,
+    xmpMetadata: String
+  ): Tensor[Rank] = js.native
+  def encodeJpeg(
+    imageData: Uint8Array,
+    imageShape: js.Array[Double],
+    format: grayscale,
+    quality: Double,
+    progressive: Boolean,
+    optimizeSize: Boolean,
+    chromaDownsampling: Boolean,
+    densityUnit: in,
+    xDensity: Double,
+    yDensity: Double,
+    xmpMetadata: String
+  ): Tensor[Rank] = js.native
+  def encodeJpeg(
+    imageData: Uint8Array,
+    imageShape: js.Array[Double],
+    format: rgb,
+    quality: Double,
+    progressive: Boolean,
+    optimizeSize: Boolean,
+    chromaDownsampling: Boolean,
+    densityUnit: cm,
+    xDensity: Double,
+    yDensity: Double,
+    xmpMetadata: String
+  ): Tensor[Rank] = js.native
+  def encodeJpeg(
+    imageData: Uint8Array,
+    imageShape: js.Array[Double],
+    format: rgb,
+    quality: Double,
+    progressive: Boolean,
+    optimizeSize: Boolean,
+    chromaDownsampling: Boolean,
+    densityUnit: in,
+    xDensity: Double,
+    yDensity: Double,
+    xmpMetadata: String
+  ): Tensor[Rank] = js.native
+  @JSName("encodeJpeg")
+  def encodeJpeg_cm(
+    imageData: Uint8Array,
+    imageShape: js.Array[Double],
+    format: Empty,
+    quality: Double,
+    progressive: Boolean,
+    optimizeSize: Boolean,
+    chromaDownsampling: Boolean,
+    densityUnit: cm,
+    xDensity: Double,
+    yDensity: Double,
+    xmpMetadata: String
+  ): Tensor[Rank] = js.native
+  @JSName("encodeJpeg")
+  def encodeJpeg_in(
+    imageData: Uint8Array,
+    imageShape: js.Array[Double],
+    format: Empty,
+    quality: Double,
+    progressive: Boolean,
+    optimizeSize: Boolean,
+    chromaDownsampling: Boolean,
+    densityUnit: in,
+    xDensity: Double,
+    yDensity: Double,
+    xmpMetadata: String
+  ): Tensor[Rank] = js.native
+  def encodePng(imageData: Uint8Array, imageShape: js.Array[Double], compression: Double): Tensor[Rank] = js.native
   def equal(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+  def executeEncodeImageOp(name: String, opAttrs: js.Array[TFEOpAttr], imageData: Uint8Array, imageShape: js.Array[Double]): Tensor[Rank] = js.native
   /**
     * Executes a TensorFlow Eager Op that provides multiple output Tensors.
     * @param name The name of the Op to execute.
@@ -155,17 +242,6 @@ class NodeJSKernelBackend protected () extends KernelBackend {
     defaultValue: Tensor[R0]
   ): Tensor[R] = js.native
   def squaredDifference(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
-  def stridedSlice[T /* <: Tensor[Rank] */](
-    x: T,
-    begin: js.Array[Double],
-    end: js.Array[Double],
-    strides: js.Array[Double],
-    beginMask: Double,
-    endMask: Double,
-    ellipsisMask: Double,
-    newAxisMask: Double,
-    shrinkAxisMask: Double
-  ): T = js.native
   def subtract(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def sum(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
   def summaryWriter(logdir: String): Tensor1D = js.native

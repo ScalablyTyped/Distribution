@@ -16,6 +16,9 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
+  var HP: typings.sharepoint.HP = js.native
+  var MSOWebPartPageFormName: String = js.native
+  var SPClientRenderer: typings.sharepoint.SPClientRenderer = js.native
   var Strings: js.Any = js.native
   var _spBodyOnLoadCalled: Boolean = js.native
   var _spBodyOnLoadFunctionNames: js.Array[String] = js.native
@@ -93,6 +96,8 @@ object ^ extends js.Object {
     * If URL is incorrect, returns empty string. */
   @JSName("$urlHtmlEncode")
   def $urlHtmlEncode(s: String): String = js.native
+  @JSName("$urlHtmlEncodeString")
+  def $urlHtmlEncodeString(string: String): String = js.native
   /** (alias for SP.Utilities.HttpUtility.urlKeyValueEncode) */
   @JSName("$urlKeyValueEncode")
   def $urlKeyValueEncode(s: String): String = js.native
@@ -107,6 +112,7 @@ object ^ extends js.Object {
   def GenerateIID(renderCtx: RenderContext_ItemInView): String = js.native
   def GenerateIIDForListItem(renderCtx: RenderContext_InView, listItem: Item): String = js.native
   def GetCurrentCtx(): ContextInfo = js.native
+  def GetThemedImageUrl(image: String): String = js.native
   /** Gets query string parameter */
   def GetUrlKeyValue(key: String): String = js.native
   def RefreshCommandUI(): Unit = js.native

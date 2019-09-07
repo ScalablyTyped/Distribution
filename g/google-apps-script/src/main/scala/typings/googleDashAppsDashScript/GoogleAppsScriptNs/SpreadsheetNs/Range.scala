@@ -2,6 +2,17 @@ package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs
 
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.ChartsNs.DataTable
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.`line-through`
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.bold
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.bottom
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.center
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.italic
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.left
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.middle
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.none
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.normal
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.top
+import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,12 +68,12 @@ trait Range extends js.Object {
   def getDataSourceUrl(): String = js.native
   def getDataTable(): DataTable = js.native
   def getDataTable(firstRowIsHeader: Boolean): DataTable = js.native
-  def getDataValidation(): DataValidation = js.native
-  def getDataValidations(): js.Array[js.Array[DataValidation]] = js.native
+  def getDataValidation(): DataValidation | Null = js.native
+  def getDataValidations(): js.Array[js.Array[DataValidation | Null]] = js.native
   def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getDisplayValue(): String = js.native
   def getDisplayValues(): js.Array[js.Array[String]] = js.native
-  def getFilter(): Filter = js.native
+  def getFilter(): Filter | Null = js.native
   def getFontColor(): String = js.native
   def getFontColors(): js.Array[js.Array[String]] = js.native
   def getFontFamilies(): js.Array[js.Array[String]] = js.native
@@ -76,9 +87,9 @@ trait Range extends js.Object {
   def getFontWeight(): String = js.native
   def getFontWeights(): js.Array[js.Array[String]] = js.native
   def getFormula(): String = js.native
-  def getFormulaR1C1(): String = js.native
+  def getFormulaR1C1(): String | Null = js.native
   def getFormulas(): js.Array[js.Array[String]] = js.native
-  def getFormulasR1C1(): js.Array[js.Array[String]] = js.native
+  def getFormulasR1C1(): js.Array[js.Array[String | Null]] = js.native
   def getGridId(): Integer = js.native
   def getHeight(): Integer = js.native
   def getHorizontalAlignment(): String = js.native
@@ -93,13 +104,13 @@ trait Range extends js.Object {
   def getNumRows(): Integer = js.native
   def getNumberFormat(): String = js.native
   def getNumberFormats(): js.Array[js.Array[String]] = js.native
-  def getRichTextValue(): RichTextValue = js.native
+  def getRichTextValue(): RichTextValue | Null = js.native
   def getRichTextValues(): js.Array[js.Array[RichTextValue]] = js.native
   def getRow(): Integer = js.native
   def getRowIndex(): Integer = js.native
   def getSheet(): Sheet = js.native
-  def getTextDirection(): TextDirection = js.native
-  def getTextDirections(): js.Array[js.Array[TextDirection]] = js.native
+  def getTextDirection(): TextDirection | Null = js.native
+  def getTextDirections(): js.Array[js.Array[TextDirection | Null]] = js.native
   def getTextRotation(): TextRotation = js.native
   def getTextRotations(): js.Array[js.Array[TextRotation]] = js.native
   def getTextStyle(): TextStyle = js.native
@@ -118,7 +129,7 @@ trait Range extends js.Object {
   def insertCheckboxes(checkedValue: js.Any): Range = js.native
   def insertCheckboxes(checkedValue: js.Any, uncheckedValue: js.Any): Range = js.native
   def isBlank(): Boolean = js.native
-  def isChecked(): Boolean = js.native
+  def isChecked(): Boolean | Null = js.native
   def isEndColumnBounded(): Boolean = js.native
   def isEndRowBounded(): Boolean = js.native
   def isPartOfMerge(): Boolean = js.native
@@ -136,47 +147,72 @@ trait Range extends js.Object {
   def removeCheckboxes(): Range = js.native
   def removeDuplicates(): Range = js.native
   def removeDuplicates(columnsToCompare: js.Array[Integer]): Range = js.native
+  def setBackground(): Range = js.native
   def setBackground(color: String): Range = js.native
   def setBackgroundRGB(red: Integer, green: Integer, blue: Integer): Range = js.native
-  def setBackgrounds(color: js.Array[js.Array[String]]): Range = js.native
+  def setBackgrounds(color: js.Array[js.Array[String | Null]]): Range = js.native
   def setBorder(
-    top: Boolean,
-    left: Boolean,
-    bottom: Boolean,
-    right: Boolean,
-    vertical: Boolean,
-    horizontal: Boolean
+    top: Boolean | Null,
+    left: Boolean | Null,
+    bottom: Boolean | Null,
+    right: Boolean | Null,
+    vertical: Boolean | Null,
+    horizontal: Boolean | Null
   ): Range = js.native
   def setBorder(
-    top: Boolean,
-    left: Boolean,
-    bottom: Boolean,
-    right: Boolean,
-    vertical: Boolean,
-    horizontal: Boolean,
-    color: String,
-    style: BorderStyle
+    top: Boolean | Null,
+    left: Boolean | Null,
+    bottom: Boolean | Null,
+    right: Boolean | Null,
+    vertical: Boolean | Null,
+    horizontal: Boolean | Null,
+    color: String | Null,
+    style: BorderStyle | Null
   ): Range = js.native
+  def setDataValidation(): Range = js.native
   def setDataValidation(rule: DataValidation): Range = js.native
-  def setDataValidations(rules: js.Array[js.Array[DataValidation]]): Range = js.native
+  def setDataValidations(rules: js.Array[js.Array[DataValidation | Null]]): Range = js.native
+  def setFontColor(): Range = js.native
   def setFontColor(color: String): Range = js.native
   def setFontColors(colors: js.Array[js.Array[_]]): Range = js.native
   def setFontFamilies(fontFamilies: js.Array[js.Array[_]]): Range = js.native
+  def setFontFamily(): Range = js.native
   def setFontFamily(fontFamily: String): Range = js.native
-  def setFontLine(fontLine: String): Range = js.native
-  def setFontLines(fontLines: js.Array[js.Array[_]]): Range = js.native
+  def setFontLine(): Range = js.native
+  @JSName("setFontLine")
+  def setFontLine_linethrough(fontLine: `line-through`): Range = js.native
+  @JSName("setFontLine")
+  def setFontLine_none(fontLine: none): Range = js.native
+  @JSName("setFontLine")
+  def setFontLine_underline(fontLine: underline): Range = js.native
+  def setFontLines(fontLines: js.Array[js.Array[underline | `line-through` | none | Null]]): Range = js.native
   def setFontSize(size: Integer): Range = js.native
   def setFontSizes(sizes: js.Array[js.Array[_]]): Range = js.native
-  def setFontStyle(fontStyle: String): Range = js.native
-  def setFontStyles(fontStyles: js.Array[js.Array[_]]): Range = js.native
-  def setFontWeight(fontWeight: String): Range = js.native
-  def setFontWeights(fontWeights: js.Array[js.Array[_]]): Range = js.native
+  def setFontStyle(): Range = js.native
+  @JSName("setFontStyle")
+  def setFontStyle_italic(fontStyle: italic): Range = js.native
+  @JSName("setFontStyle")
+  def setFontStyle_normal(fontStyle: normal): Range = js.native
+  def setFontStyles(fontStyles: js.Array[js.Array[italic | normal | Null]]): Range = js.native
+  def setFontWeight(): Range = js.native
+  @JSName("setFontWeight")
+  def setFontWeight_bold(fontWeight: bold): Range = js.native
+  @JSName("setFontWeight")
+  def setFontWeight_normal(fontWeight: normal): Range = js.native
+  def setFontWeights(fontWeights: js.Array[js.Array[bold | normal | Null]]): Range = js.native
   def setFormula(formula: String): Range = js.native
   def setFormulaR1C1(formula: String): Range = js.native
   def setFormulas(formulas: js.Array[js.Array[String]]): Range = js.native
   def setFormulasR1C1(formulas: js.Array[js.Array[String]]): Range = js.native
-  def setHorizontalAlignment(alignment: String): Range = js.native
-  def setHorizontalAlignments(alignments: js.Array[js.Array[_]]): Range = js.native
+  def setHorizontalAlignment(): Range = js.native
+  @JSName("setHorizontalAlignment")
+  def setHorizontalAlignment_center(alignment: center): Range = js.native
+  @JSName("setHorizontalAlignment")
+  def setHorizontalAlignment_left(alignment: left): Range = js.native
+  @JSName("setHorizontalAlignment")
+  def setHorizontalAlignment_normal(alignment: normal): Range = js.native
+  def setHorizontalAlignments(alignments: js.Array[js.Array[left | center | normal | Null]]): Range = js.native
+  def setNote(): Range = js.native
   def setNote(note: String): Range = js.native
   def setNotes(notes: js.Array[js.Array[_]]): Range = js.native
   def setNumberFormat(numberFormat: String): Range = js.native
@@ -184,8 +220,9 @@ trait Range extends js.Object {
   def setRichTextValue(value: RichTextValue): Range = js.native
   def setRichTextValues(values: js.Array[js.Array[RichTextValue]]): Range = js.native
   def setShowHyperlink(showHyperlink: Boolean): Range = js.native
+  def setTextDirection(): Range = js.native
   def setTextDirection(direction: TextDirection): Range = js.native
-  def setTextDirections(directions: js.Array[js.Array[TextDirection]]): Range = js.native
+  def setTextDirections(directions: js.Array[js.Array[TextDirection | Null]]): Range = js.native
   def setTextRotation(degrees: Integer): Range = js.native
   def setTextRotation(rotation: TextRotation): Range = js.native
   def setTextRotations(rotations: js.Array[js.Array[TextRotation]]): Range = js.native
@@ -193,8 +230,14 @@ trait Range extends js.Object {
   def setTextStyles(styles: js.Array[js.Array[TextStyle]]): Range = js.native
   def setValue(value: js.Any): Range = js.native
   def setValues(values: js.Array[js.Array[_]]): Range = js.native
-  def setVerticalAlignment(alignment: String): Range = js.native
-  def setVerticalAlignments(alignments: js.Array[js.Array[_]]): Range = js.native
+  def setVerticalAlignment(): Range = js.native
+  @JSName("setVerticalAlignment")
+  def setVerticalAlignment_bottom(alignment: bottom): Range = js.native
+  @JSName("setVerticalAlignment")
+  def setVerticalAlignment_middle(alignment: middle): Range = js.native
+  @JSName("setVerticalAlignment")
+  def setVerticalAlignment_top(alignment: top): Range = js.native
+  def setVerticalAlignments(alignments: js.Array[js.Array[top | middle | bottom | Null]]): Range = js.native
   def setVerticalText(isVertical: Boolean): Range = js.native
   def setWrap(isWrapEnabled: Boolean): Range = js.native
   def setWrapStrategies(strategies: js.Array[js.Array[WrapStrategy]]): Range = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xml2js"
-version := "0.4-dt-20190402Z-5ca391"
+version := "0.4-dt-20190906Z-f61cf6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

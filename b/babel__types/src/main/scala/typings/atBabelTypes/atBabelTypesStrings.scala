@@ -522,6 +522,9 @@ object atBabelTypesStrings {
   sealed trait TSAsExpression extends js.Object
   
   @js.native
+  sealed trait TSBigIntKeyword extends js.Object
+  
+  @js.native
   sealed trait TSBooleanKeyword extends js.Object
   
   @js.native
@@ -745,6 +748,9 @@ object atBabelTypesStrings {
   
   @js.native
   sealed trait UpdateExpression extends js.Object
+  
+  @js.native
+  sealed trait V8IntrinsicIdentifier extends js.Object
   
   @js.native
   sealed trait VariableDeclaration extends js.Object
@@ -1193,6 +1199,8 @@ object atBabelTypesStrings {
   @scala.inline
   def TSAsExpression: TSAsExpression = "TSAsExpression".asInstanceOf[TSAsExpression]
   @scala.inline
+  def TSBigIntKeyword: TSBigIntKeyword = "TSBigIntKeyword".asInstanceOf[TSBigIntKeyword]
+  @scala.inline
   def TSBooleanKeyword: TSBooleanKeyword = "TSBooleanKeyword".asInstanceOf[TSBooleanKeyword]
   @scala.inline
   def TSCallSignatureDeclaration: TSCallSignatureDeclaration = "TSCallSignatureDeclaration".asInstanceOf[TSCallSignatureDeclaration]
@@ -1342,6 +1350,8 @@ object atBabelTypesStrings {
   def UnionTypeAnnotation: UnionTypeAnnotation = "UnionTypeAnnotation".asInstanceOf[UnionTypeAnnotation]
   @scala.inline
   def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
+  @scala.inline
+  def V8IntrinsicIdentifier: V8IntrinsicIdentifier = "V8IntrinsicIdentifier".asInstanceOf[V8IntrinsicIdentifier]
   @scala.inline
   def VariableDeclaration: VariableDeclaration = "VariableDeclaration".asInstanceOf[VariableDeclaration]
   @scala.inline

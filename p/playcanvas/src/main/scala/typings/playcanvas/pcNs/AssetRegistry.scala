@@ -1,12 +1,15 @@
 package typings.playcanvas.pcNs
 
+import typings.playcanvas.pcNs.callbacksNs.FilterAsset
+import typings.playcanvas.pcNs.callbacksNs.LoadAsset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.AssetRegistry
-  * @class Container for all assets that are available to this application
+  * @classdesc Container for all assets that are available to this application
   * @description Create an instance of an AssetRegistry.
   * Note: PlayCanvas scripts are provided with an AssetRegistry instance as 'app.assets'.
   * @param {pc.ResourceLoader} loader The ResourceLoader used to load the asset files.
@@ -16,6 +19,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssetRegistry protected () extends js.Object {
   def this(loader: ResourceLoader) = this()
+  /**
+    * A URL prefix that will be added to all asset loading requests.
+    */
   var prefix: String = js.native
   /**
     * @function
@@ -31,7 +37,7 @@ class AssetRegistry protected () extends js.Object {
     * @function
     * @name pc.AssetRegistry#filter
     * @description Return all Assets that satisfy filter callback
-    * @param {Function} callback The callback function that is used to filter assets, return `true` to include asset to result list
+    * @param {pc.callbacks.FilterAsset} callback The callback function that is used to filter assets, return `true` to include asset to result list
     * @returns {pc.Asset[]} A list of all Assets found
     * @example
     * var assets = app.assets.filter(function(asset) {
@@ -39,7 +45,7 @@ class AssetRegistry protected () extends js.Object {
     * });
     * console.log("Found " + assets.length + " assets, where names contains 'monster'");
     */
-  def filter(callback: js.Function1[/* repeated */ js.Any, js.Object]): js.Array[Asset] = js.native
+  def filter(callback: FilterAsset): js.Array[Asset] = js.native
   /**
     * @function
     * @name pc.AssetRegistry#find
@@ -88,7 +94,6 @@ class AssetRegistry protected () extends js.Object {
     * // returns all assets that tagged by (`level-1` AND `monster`) OR (`level-2` AND `monster`)
     */
   def findByTag(tag: String): js.Array[Asset] = js.native
-  def findByTag(tag: js.Array[String]): js.Array[Asset] = js.native
   /**
     * @function
     * @name pc.AssetRegistry#get
@@ -116,7 +121,7 @@ class AssetRegistry protected () extends js.Object {
     * @param {Object} filters Properties to filter on, currently supports: 'preload: true|false'
     * @returns {pc.Asset[]} The filtered list of assets.
     */
-  def list(filters: js.Object): js.Array[Asset] = js.native
+  def list(filters: js.Any): js.Array[Asset] = js.native
   /**
     * @function
     * @name pc.AssetRegistry#load
@@ -145,22 +150,23 @@ class AssetRegistry protected () extends js.Object {
     * if you are not integrated with the PlayCanvas Editor
     * @param {String} url The url to load
     * @param {String} type The type of asset to load
-    * @param {Function} callback Function called when asset is loaded, passed (err, asset), where err is null if no errors were encountered
+    * @param {pc.callbacks.LoadAsset} callback Function called when asset is loaded, passed (err, asset), where err is null if no errors were encountered
     * @example
     * app.assets.loadFromUrl("../path/to/texture.jpg", "texture", function (err, asset) {
     *     var texture = asset.resource;
     * });
     */
-  def loadFromUrl(url: String, `type`: String, callback: js.Function1[/* repeated */ js.Any, js.Object]): Unit = js.native
+  def loadFromUrl(url: String, `type`: String, callback: LoadAsset): Unit = js.native
   /**
     * @function
     * @name pc.AssetRegistry#remove
     * @description Remove an asset from the registry
     * @param {pc.Asset} asset The asset to remove
+    * @returns {Boolean} True if the asset was successfully removed and false otherwise
     * @example
     * var asset = app.assets.get(100);
     * app.assets.remove(asset);
     */
-  def remove(asset: Asset): Unit = js.native
+  def remove(asset: Asset): Boolean = js.native
 }
 

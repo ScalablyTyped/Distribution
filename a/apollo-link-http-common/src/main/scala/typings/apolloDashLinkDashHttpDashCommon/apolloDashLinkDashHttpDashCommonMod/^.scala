@@ -3,7 +3,7 @@ package typings.apolloDashLinkDashHttpDashCommon.apolloDashLinkDashHttpDashCommo
 import typings.apolloDashLink.libTypesMod.Operation
 import typings.apolloDashLinkDashHttpDashCommon.Anon_Body
 import typings.apolloDashLinkDashHttpDashCommon.Anon_Controller
-import typings.std.Request
+import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
 import scala.scalajs.js
@@ -14,11 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def checkFetcher(
-    fetcher: js.Function2[
-      /* input */ js.UndefOr[String | Request], 
-      /* init */ js.UndefOr[RequestInit], 
-      js.Promise[Response]
-    ]
+    fetcher: js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
   ): Unit = js.native
   def createSignalIfSupported(): Anon_Controller = js.native
   def parseAndCheckHttpResponse(operations: js.Any): js.Function1[/* response */ Response, js.Promise[_]] = js.native

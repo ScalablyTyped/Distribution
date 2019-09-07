@@ -4,9 +4,9 @@ import typings.grommet.Anon_All
 import typings.grommet.Anon_Auto
 import typings.grommet.Anon_Bottom
 import typings.grommet.Anon_BottomBottomleft
-import typings.grommet.Anon_Color
 import typings.grommet.Anon_Delay
 import typings.grommet.Anon_Grow
+import typings.grommet.Anon_Large
 import typings.grommet.grommetStrings.`1/2`
 import typings.grommet.grommetStrings.`1/3`
 import typings.grommet.grommetStrings.`1/4`
@@ -62,6 +62,7 @@ import typings.grommet.grommetStrings.zoomOut
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
@@ -81,7 +82,7 @@ trait BoxProps extends js.Object {
     ])
   ] = js.undefined
   var as: js.UndefOr[PolymorphicType] = js.undefined
-  var background: js.UndefOr[String | Anon_Color] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.undefined
   var basis: js.UndefOr[
     xxsmall | xsmall | small | medium | large | xlarge | xxlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | auto | String
   ] = js.undefined
@@ -92,8 +93,10 @@ trait BoxProps extends js.Object {
   var flex: js.UndefOr[grow | shrink | Boolean | Anon_Grow] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
-  var justify: js.UndefOr[start | center | between | around | evenly | end] = js.undefined
+  var height: js.UndefOr[
+    xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large
+  ] = js.undefined
+  var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var overflow: js.UndefOr[auto | hidden | scroll | visible | Anon_Auto | String] = js.undefined
   var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
@@ -102,7 +105,9 @@ trait BoxProps extends js.Object {
     Boolean | xsmall | small | medium | large | xlarge | full | String | Anon_BottomBottomleft
   ] = js.undefined
   var tag: js.UndefOr[PolymorphicType] = js.undefined
-  var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
+  var width: js.UndefOr[
+    xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large
+  ] = js.undefined
   var wrap: js.UndefOr[Boolean | reverse] = js.undefined
 }
 
@@ -117,7 +122,7 @@ object BoxProps {
       fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Anon_Delay
     ]) = null,
     as: PolymorphicType = null,
-    background: String | Anon_Color = null,
+    background: BackgroundType = null,
     basis: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | auto | String = null,
     border: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All = null,
     direction: row | column | `row-responsive` | `row-reverse` | `column-reverse` = null,
@@ -126,15 +131,15 @@ object BoxProps {
     flex: grow | shrink | Boolean | Anon_Grow = null,
     gap: GapType = null,
     gridArea: GridAreaType = null,
-    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String = null,
-    justify: start | center | between | around | evenly | end = null,
+    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large = null,
+    justify: around | between | center | end | evenly | start | stretch = null,
     margin: MarginType = null,
     overflow: auto | hidden | scroll | visible | Anon_Auto | String = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     round: Boolean | xsmall | small | medium | large | xlarge | full | String | Anon_BottomBottomleft = null,
     tag: PolymorphicType = null,
-    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String = null,
+    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large = null,
     wrap: Boolean | reverse = null
   ): BoxProps = {
     val __obj = js.Dynamic.literal()

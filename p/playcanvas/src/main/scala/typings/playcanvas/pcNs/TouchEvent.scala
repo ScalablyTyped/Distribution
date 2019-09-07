@@ -1,14 +1,14 @@
 package typings.playcanvas.pcNs
 
-import typings.playcanvas.BrowserTouchEvent
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.TouchEvent
-  * @class A Event corresponding to touchstart, touchend, touchmove or touchcancel. TouchEvent wraps the standard
+  * @classdesc A Event corresponding to touchstart, touchend, touchmove or touchcancel. TouchEvent wraps the standard
   * browser event and provides lists of {@link pc.Touch} objects.
   * @description Create a new TouchEvent from an existing browser event
   * @param {pc.TouchDevice} device The source device of the touch events
@@ -20,10 +20,18 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.TouchEvent")
 @js.native
 class TouchEvent protected () extends js.Object {
-  def this(device: TouchDevice, event: BrowserTouchEvent) = this()
+  def this(device: TouchDevice, event: TouchEvent) = this()
+  /**
+    * A list of touches that have changed since the last event
+    */
   var changedTouches: js.Array[Touch] = js.native
+  /**
+    * The target Element that the event was fired from
+    */
   var element: Element = js.native
-  var event: BrowserTouchEvent = js.native
+  /**
+    * A list of all touches currently in contact with the device
+    */
   var touches: js.Array[Touch] = js.native
   /**
     * @function
@@ -34,6 +42,6 @@ class TouchEvent protected () extends js.Object {
     * @param {pc.Touch[]} list An array of touches to search.
     * @returns {pc.Touch} The {@link pc.Touch} object or null.
     */
-  def getTouchById(id: Double, list: js.Array[Touch]): Touch | Null = js.native
+  def getTouchById(id: Double, list: js.Array[Touch]): Touch = js.native
 }
 

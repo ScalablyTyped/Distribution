@@ -1,7 +1,7 @@
 
 # Scala.js typings for grommet
 
-Typings are for version 2.7.7
+Typings are for version 2.7.8
 
 ## Library description:
 focus on the essential experience

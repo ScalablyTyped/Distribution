@@ -5,13 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Lightmapper
-  * @class The lightmapper is used to bake scene lights into textures.
+  * @classdesc The lightmapper is used to bake scene lights into textures.
+  * @param {pc.GraphicsDevice} device The grahpics device used by the lightmapper.
+  * @param {pc.Entity} root The root entity of the scene.
+  * @param {pc.Scene} scene The scene to lightmap.
+  * @param {pc.ForwardRenderer} renderer The renderer.
+  * @param {pc.AssetRegistry} assets Registry of assets to lightmap.
   */
 @JSGlobal("pc.Lightmapper")
 @js.native
 class Lightmapper protected () extends js.Object {
-  def this(device: GraphicsDevice, root: Entity, scene: Scene, renderer: js.Any, assets: js.Array[Asset]) = this()
+  def this(
+    device: GraphicsDevice,
+    root: Entity,
+    scene: Scene,
+    renderer: ForwardRenderer,
+    assets: AssetRegistry
+  ) = this()
   /**
     * @function
     * @name pc.Lightmapper#bake

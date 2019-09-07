@@ -1,14 +1,14 @@
 package typings.playcanvas.pcNs
 
-import typings.playcanvas.playcanvasNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.BoundingBox
   * @description Create a new axis-aligned bounding box.
-  * @class Axis-Aligned Bounding Box.
+  * @classdesc Axis-Aligned Bounding Box.
   * @param {pc.Vec3} [center] Center of box. The constructor takes a reference of this parameter.
   * @param {pc.Vec3} [halfExtents] Half the distance across the box in each axis. The constructor takes a reference of this parameter.
   */
@@ -17,8 +17,6 @@ import scala.scalajs.js.annotation._
 class BoundingBox () extends js.Object {
   def this(center: Vec3) = this()
   def this(center: Vec3, halfExtents: Vec3) = this()
-  var center: Vec3 = js.native
-  var halfExtents: Vec3 = js.native
   /**
     * @function
     * @name pc.BoundingBox#add
@@ -33,8 +31,7 @@ class BoundingBox () extends js.Object {
     * @param {pc.Vec3} point Point to test.
     * @returns {Boolean} true if the point is inside the AABB and false otherwise.
     */
-  def containsPoint(point: Vec3): `true` = js.native
-  def copy(src: BoundingBox): Unit = js.native
+  def containsPoint(point: Vec3): Boolean = js.native
   /**
     * @function
     * @name pc.BoundingBox#getMax
@@ -64,7 +61,7 @@ class BoundingBox () extends js.Object {
     * @param {pc.BoundingSphere} sphere Bounding Sphere to test.
     * @returns {Boolean} true if the Bounding Sphere is overlapping, enveloping, or inside the AABB and false otherwise.
     */
-  def intersectsBoundingSphere(sphere: BoundingSphere): Unit = js.native
+  def intersectsBoundingSphere(sphere: BoundingSphere): Boolean = js.native
   /**
     * @function
     * @name pc.BoundingBox#intersectsRay

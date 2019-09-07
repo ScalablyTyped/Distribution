@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Skeleton
-  * @property {Boolean} looping Determines whether skeleton is looping its animation.
-  * @class Represents a skeleton used to play animations.
+  * @classdesc Represents a skeleton used to play animations.
   * @param {pc.GraphNode} graph The root pc.GraphNode of the skeleton.
+  * @property {Boolean} looping Determines whether skeleton is looping its animation.
   */
 @JSGlobal("pc.Skeleton")
 @js.native
@@ -28,6 +29,10 @@ class Skeleton protected () extends js.Object {
     */
   var currentTime: Double = js.native
   /**
+    * Determines whether skeleton is looping its animation.
+    */
+  var looping: Boolean = js.native
+  /**
     * @readonly
     * @name pc.Skeleton#numNodes
     * @type Number
@@ -43,7 +48,6 @@ class Skeleton protected () extends js.Object {
     * Otherwise, the animation's current time will remain at its duration (i.e. the
     * end).
     * @param {Number} delta The time in seconds to progress the skeleton's animation.
-    * @author Will Eastcott
     */
   def addTime(delta: Double): Unit = js.native
   /**
@@ -55,7 +59,6 @@ class Skeleton protected () extends js.Object {
     * @param {Number} alpha The value controlling the interpolation in relation to the two input
     * skeletons. The value is in the range 0 to 1, 0 generating skel1, 1 generating skel2 and anything
     * in between generating a spherical interpolation between the two.
-    * @author Will Eastcott
     */
   def blend(skel1: Skeleton, skel2: Skeleton, alpha: Double): Unit = js.native
   /**
@@ -65,7 +68,6 @@ class Skeleton protected () extends js.Object {
     * then subsequently used to drive the local transformation matrices of the node
     * hierarchy.
     * @param {pc.GraphNode} graph The root node of the graph that the skeleton is to drive.
-    * @author Will Eastcott
     */
   def setGraph(graph: GraphNode): Unit = js.native
   /**
@@ -75,7 +77,6 @@ class Skeleton protected () extends js.Object {
     * skeleton. Internally, this function converts the interpolated keyframe at each node in the
     * skeleton into the local transformation matrix at each corresponding node in the linked node
     * hierarchy.
-    * @author Will Eastcott
     */
   def updateGraph(): Unit = js.native
 }

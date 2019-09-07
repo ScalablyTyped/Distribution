@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 trait StatusBarPropsAndroid extends js.Object {
   /**
     * The background color of the status bar.
+    *
+    * @platform android
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   /**

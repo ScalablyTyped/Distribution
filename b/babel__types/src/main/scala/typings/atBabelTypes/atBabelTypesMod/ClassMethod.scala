@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
   var optional: Boolean | Null
   var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: TypeAnnotation | TSTypeAnnotation | Noop | Null
-  var static: Boolean | Null
+  var static: Boolean
   var typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | Null
   @JSName("type")
   var type_ClassMethod: typings.atBabelTypes.atBabelTypesStrings.ClassMethod
@@ -48,6 +48,7 @@ object ClassMethod {
     key: Identifier | StringLiteral | NumericLiteral | Expression,
     kind: get | set | method | constructor,
     params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    static: Boolean,
     `type`: typings.atBabelTypes.atBabelTypesStrings.ClassMethod,
     `abstract`: js.UndefOr[Boolean] = js.undefined,
     access: public | `private` | `protected` = null,
@@ -60,11 +61,10 @@ object ClassMethod {
     optional: js.UndefOr[Boolean] = js.undefined,
     returnType: TypeAnnotation | TSTypeAnnotation | Noop = null,
     start: Int | Double = null,
-    static: js.UndefOr[Boolean] = js.undefined,
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
   ): ClassMethod = {
-    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params)
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params, static = static)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
@@ -77,7 +77,6 @@ object ClassMethod {
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassMethod]

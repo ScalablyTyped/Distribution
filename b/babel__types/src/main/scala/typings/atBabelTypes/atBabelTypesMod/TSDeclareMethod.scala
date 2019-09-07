@@ -26,7 +26,7 @@ trait TSDeclareMethod
   var optional: Boolean | Null
   var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: TSTypeAnnotation | Noop | Null
-  var static: Boolean | Null
+  var static: Boolean
   var typeParameters: TSTypeParameterDeclaration | Noop | Null
   @JSName("type")
   var type_TSDeclareMethod: typings.atBabelTypes.atBabelTypesStrings.TSDeclareMethod
@@ -41,6 +41,7 @@ object TSDeclareMethod {
     key: Identifier | StringLiteral | NumericLiteral | Expression,
     kind: get | set | method | constructor,
     params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    static: Boolean,
     `type`: typings.atBabelTypes.atBabelTypesStrings.TSDeclareMethod,
     `abstract`: js.UndefOr[Boolean] = js.undefined,
     access: public | `private` | `protected` = null,
@@ -53,11 +54,10 @@ object TSDeclareMethod {
     optional: js.UndefOr[Boolean] = js.undefined,
     returnType: TSTypeAnnotation | Noop = null,
     start: Int | Double = null,
-    static: js.UndefOr[Boolean] = js.undefined,
     trailingComments: js.Array[Comment] = null,
     typeParameters: TSTypeParameterDeclaration | Noop = null
   ): TSDeclareMethod = {
-    val __obj = js.Dynamic.literal(async = async, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params)
+    val __obj = js.Dynamic.literal(async = async, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params, static = static)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
@@ -70,7 +70,6 @@ object TSDeclareMethod {
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSDeclareMethod]

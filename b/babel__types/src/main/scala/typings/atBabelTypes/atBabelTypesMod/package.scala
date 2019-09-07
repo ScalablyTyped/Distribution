@@ -188,6 +188,7 @@ package object atBabelTypesMod {
     - typings.atBabelTypes.atBabelTypesMod.TSAnyKeyword
     - typings.atBabelTypes.atBabelTypesMod.TSArrayType
     - typings.atBabelTypes.atBabelTypesMod.TSAsExpression
+    - typings.atBabelTypes.atBabelTypesMod.TSBigIntKeyword
     - typings.atBabelTypes.atBabelTypesMod.TSBooleanKeyword
     - typings.atBabelTypes.atBabelTypesMod.TSCallSignatureDeclaration
     - typings.atBabelTypes.atBabelTypesMod.TSConditionalType
@@ -269,6 +270,7 @@ package object atBabelTypesMod {
     - typings.atBabelTypes.atBabelTypesMod.UnionTypeAnnotation
     - typings.atBabelTypes.atBabelTypesMod.UpdateExpression
     - typings.atBabelTypes.atBabelTypesMod.UserWhitespacable
+    - typings.atBabelTypes.atBabelTypesMod.V8IntrinsicIdentifier
     - typings.atBabelTypes.atBabelTypesMod.VariableDeclaration
     - typings.atBabelTypes.atBabelTypesMod.VariableDeclarator
     - typings.atBabelTypes.atBabelTypesMod.Variance

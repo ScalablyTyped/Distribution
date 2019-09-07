@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      with BaseNode
      with JSX {
   var attributes: js.Array[JSXAttribute | JSXSpreadAttribute]
-  var name: JSXIdentifier | JSXMemberExpression
+  var name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName
   var selfClosing: Boolean
   var typeParameters: TypeParameterInstantiation | TSTypeParameterInstantiation | Null
   @JSName("type")
@@ -21,7 +21,7 @@ object JSXOpeningElement {
   @scala.inline
   def apply(
     attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
-    name: JSXIdentifier | JSXMemberExpression,
+    name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName,
     selfClosing: Boolean,
     `type`: typings.atBabelTypes.atBabelTypesStrings.JSXOpeningElement,
     end: Int | Double = null,

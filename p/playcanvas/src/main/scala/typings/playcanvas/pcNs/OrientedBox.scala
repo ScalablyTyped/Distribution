@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.OrientedBox
   * @description Create a new oriented box.
-  * @class Oriented Box.
+  * @classdesc Oriented Box.
   * @property {pc.Mat4} [worldTransform] The world transform of the OBB
   * @param {pc.Mat4} [worldTransform] Transform that has the orientation and position of the box. Scale is assumed to be one.
   * @param {pc.Vec3} [halfExtents] Half the distance across the box in each local axis. The constructor takes a reference of this parameter.
@@ -17,7 +18,10 @@ import scala.scalajs.js.annotation._
 class OrientedBox () extends js.Object {
   def this(worldTransform: Mat4) = this()
   def this(worldTransform: Mat4, halfExtents: Vec3) = this()
-  var worldTransform: Mat4 = js.native
+  /**
+    * The world transform of the OBB
+    */
+  var worldTransform: js.UndefOr[Mat4] = js.native
   /**
     * @function
     * @name pc.OrientedBox#containsPoint

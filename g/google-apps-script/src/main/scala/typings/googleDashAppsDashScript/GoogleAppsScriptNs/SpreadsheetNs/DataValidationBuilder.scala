@@ -12,7 +12,7 @@ trait DataValidationBuilder extends js.Object {
   def getAllowInvalid(): Boolean = js.native
   def getCriteriaType(): DataValidationCriteria = js.native
   def getCriteriaValues(): js.Array[_] = js.native
-  def getHelpText(): String = js.native
+  def getHelpText(): String | Null = js.native
   def requireCheckbox(): DataValidationBuilder = js.native
   def requireCheckbox(checkedValue: js.Any): DataValidationBuilder = js.native
   def requireCheckbox(checkedValue: js.Any, uncheckedValue: js.Any): DataValidationBuilder = js.native

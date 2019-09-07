@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.TransformFeedback
-  * @class Transform feedback helper object
+  * @classdesc Transform feedback helper object.
   * @description This object allows you to configure and use the transform feedback feature (WebGL2 only).
   *  How to use:<br>
   *  <ol>
@@ -88,6 +89,16 @@ class TransformFeedback protected () extends js.Object {
   val outputBuffer: VertexBuffer = js.native
   /**
     * @function
+    * @name pc.TransformFeedback#createShader
+    * @description Creates a transform feedback ready vertex shader from code.
+    * @param {pc.GraphicsDevice} graphicsDevice The graphics device used by the renderer.
+    * @param {String} vsCode Vertex shader code. Should contain output variables starting with "out_".
+    * @param {String} name Unique name for caching the shader.
+    * @returns {pc.Shader} A shader to use in the process() function.
+    */
+  def createShader(graphicsDevice: GraphicsDevice, vsCode: String, name: String): Shader = js.native
+  /**
+    * @function
     * @name pc.TransformFeedback#destroy
     * @description Destroys the transform feedback helper object
     */
@@ -101,21 +112,5 @@ class TransformFeedback protected () extends js.Object {
     */
   def process(shader: Shader): Unit = js.native
   def process(shader: Shader, swap: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("pc.TransformFeedback")
-@js.native
-object TransformFeedback extends js.Object {
-  /**
-    * @function
-    * @name pc.TransformFeedback#createShader
-    * @description Creates a transform feedback ready vertex shader from code.
-    * @param {pc.GraphicsDevice} graphicsDevice The graphics device used by the renderer.
-    * @param {String} vsCode Vertex shader code. Should contain output variables starting with "out_".
-    * @param {String} name Unique name for caching the shader.
-    * @returns {pc.Shader} A shader to use in the process() function.
-    */
-  def createShader(device: GraphicsDevice, vsCode: String, name: String): Shader = js.native
 }
 

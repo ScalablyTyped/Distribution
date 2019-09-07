@@ -1,0 +1,23 @@
+package typings.playcanvas.playcanvasMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * @constructor
+  * @name pc.ContactResult
+  * @classdesc Object holding the result of a contact between two Entities
+  * @description Create a new ContactResult
+  * @param {pc.Entity} other The entity that was involved in the contact with this entity
+  * @param {pc.ContactPoint[]} contacts An array of ContactPoints with the other entity
+  * @property {pc.Entity} other The entity that was involved in the contact with this entity
+  * @property {pc.ContactPoint[]} contacts An array of ContactPoints with the other entity
+  */
+@JSImport("playcanvas", "ContactResult")
+@js.native
+class ContactResult protected ()
+  extends typings.playcanvas.pcNs.ContactResult {
+  def this(other: typings.playcanvas.pcNs.Entity, contacts: js.Array[typings.playcanvas.pcNs.ContactPoint]) = this()
+}
+

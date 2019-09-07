@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-link-ws" : "1.0.18"
+      "apollo-link-ws" : "1.0.19"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-link-ws" : "1.0.18"
+      "apollo-link-ws" : "1.0.19"
     }
   ],
   "compile-devDependencies" : [

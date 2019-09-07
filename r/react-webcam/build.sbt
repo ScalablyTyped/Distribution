@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-webcam"
-version := "1.1-dt-20190416Z-09f664"
+version := "3.0.1-ab4574"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

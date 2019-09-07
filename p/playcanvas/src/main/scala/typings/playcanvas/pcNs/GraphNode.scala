@@ -1,12 +1,15 @@
 package typings.playcanvas.pcNs
 
+import typings.playcanvas.pcNs.callbacksNs.FindNode
+import typings.playcanvas.pcNs.callbacksNs.ForEach
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.GraphNode
-  * @class A hierarchical scene node.
+  * @classdesc A hierarchical scene node.
   * @param {String} [name] The non-unique name of the graph node, default is "Untitled".
   * @property {String} name The non-unique name of a graph node.
   * @property {pc.Tags} tags Interface for tagging graph nodes. Tag based searches can be performed using the {@link pc.GraphNode#findByTag} function.
@@ -37,6 +40,16 @@ class GraphNode () extends js.Object {
     * @type pc.Vec3
     */
   val forward: Vec3 = js.native
+  /**
+    * @readonly
+    * @name pc.GraphNode#graphDepth
+    * @type Number
+    * @description A read-only property to get the depth of this child within the graph. Note that for performance reasons this is only recalculated when a node is added to a new parent, i.e. it is not recalculated when a node is simply removed from the graph.
+    */
+  val graphDepth: Double = js.native
+  /**
+    * The non-unique name of a graph node.
+    */
   var name: String = js.native
   /**
     * @readonly
@@ -45,6 +58,14 @@ class GraphNode () extends js.Object {
     * @description A read-only property to get a parent graph node
     */
   val parent: GraphNode = js.native
+  /**
+    * @readonly
+    * @name pc.GraphNode#path
+    * @type pc.GraphNode
+    * @description A read-only property to get the path of the graph node relative to
+    * the root of the hierarchy
+    */
+  val path: GraphNode = js.native
   /**
     * @readonly
     * @name pc.GraphNode#right
@@ -59,6 +80,9 @@ class GraphNode () extends js.Object {
     * @description A read-only property to get highest graph node from current node
     */
   val root: GraphNode = js.native
+  /**
+    * Interface for tagging graph nodes. Tag based searches can be performed using the {@link pc.GraphNode#findByTag} function.
+    */
   var tags: Tags = js.native
   /**
     * @readonly
@@ -77,53 +101,32 @@ class GraphNode () extends js.Object {
     * this.entity.addChild(e);
     */
   def addChild(node: GraphNode): Unit = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#addLabel
-    * @description Add a string label to this graph node, labels can be used to group
-    * and filter nodes. For example, the 'enemies' label could be applied to a group of NPCs
-    * who are enemies.
-    * @param {String} label The label to apply to this graph node.
-    */
-  /* private */ def addLabel(label: String): Unit = js.native
+  def find(attr: String): js.Array[GraphNode] = js.native
+  def find(attr: String, value: js.Any): js.Array[GraphNode] = js.native
   /**
     * @function
     * @name pc.GraphNode#find
-    * @description Search the graph for nodes that satisfy conditions.
-    * @param {Function|String} attr This can either be a method or a string.
-    * If it's a method it is executed for each descendant node, to test if node satisfies search logic.
-    * Returning true from that method will include node into results.
-    * If it's a string then it represents the name of a field or a method of the node.
-    * If this is the name of a field then the value passed as the second argument will be checked for equality.
-    * If this is the name of a function then the return value of the function will be checked for equality against the valued passed as the second argument to this function.
-    * @param {Object} value If the first argument (attr) is a property name then this value will be checked against the value of the property.
-    * @returns {pc.GraphNode[]} An array of GraphNodes
+    * @description Search the graph node and all of its descendants for the nodes that satisfy some search criteria.
+    * @param {pc.callbacks.FindNode|String} attr This can either be a function or a string. If it's a function, it is executed
+    * for each descendant node to test if node satisfies the search logic. Returning true from the function will
+    * include the node into the results. If it's a string then it represents the name of a field or a method of the
+    * node. If this is the name of a field then the value passed as the second argument will be checked for equality.
+    * If this is the name of a function then the return value of the function will be checked for equality against
+    * the valued passed as the second argument to this function.
+    * @param {Object} [value] If the first argument (attr) is a property name then this value will be checked against
+    * the value of the property.
+    * @returns {pc.GraphNode[]} The array of graph nodes that match the search criteria.
     * @example
-    * // finds all nodes that have model component and have `door` in their lower cased name
+    * // Finds all nodes that have a model component and have `door` in their lower-cased name
     * var doors = house.find(function(node) {
     *     return node.model && node.name.toLowerCase().indexOf('door') !== -1;
     * });
-    *
     * @example
-    * // finds all nodes that have name equal to 'Test'
+    * // Finds all nodes that have the name property set to 'Test'
     * var entities = parent.find('name', 'Test');
-    *
     */
-  def find(attr: String, value: js.Any): js.Array[GraphNode] = js.native
-  def find(attr: js.Function1[/* node */ this.type, Boolean]): js.Array[GraphNode] = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#findByLabel
-    * @description Find all graph nodes from the root and all descendants with the label.
-    * @param {String} label The label to search for.
-    * @param {pc.GraphNode[]} [results] An array to store the results in.
-    * @returns {pc.GraphNode[]} The array passed in or a new array of results.
-    */
-  /* private */ def findByLabel(label: String, results: js.Array[GraphNode]): js.Array[GraphNode] = js.native
+  def find(attr: FindNode): js.Array[GraphNode] = js.native
+  def find(attr: FindNode, value: js.Any): js.Array[GraphNode] = js.native
   /**
     * @function
     * @name pc.GraphNode#findByName
@@ -154,46 +157,59 @@ class GraphNode () extends js.Object {
     * @param {String} query Name of a tag or array of tags
     * @returns {pc.GraphNode[]} A list of all graph nodes that match the query
     * @example
+    * // Return all graph nodes that tagged by `animal`
     * var animals = node.findByTag("animal");
-    * // returns all graph nodes that tagged by `animal`
     * @example
+    * // Return all graph nodes that tagged by `bird` OR `mammal`
     * var birdsAndMammals = node.findByTag("bird", "mammal");
-    * // returns all graph nodes that tagged by `bird` OR `mammal`
     * @example
+    * // Return all assets that tagged by `carnivore` AND `mammal`
     * var meatEatingMammals = node.findByTag([ "carnivore", "mammal" ]);
-    * // returns all assets that tagged by `carnivore` AND `mammal`
     * @example
+    * // Return all assets that tagged by (`carnivore` AND `mammal`) OR (`carnivore` AND `reptile`)
     * var meatEatingMammalsAndReptiles = node.findByTag([ "carnivore", "mammal" ], [ "carnivore", "reptile" ]);
-    * // returns all assets that tagged by (`carnivore` AND `mammal`) OR (`carnivore` AND `reptile`)
     */
-  def findByTag(args: (String | js.Array[String])*): js.Array[GraphNode] = js.native
+  def findByTag(query: String): js.Array[GraphNode] = js.native
+  def findOne(attr: String): GraphNode = js.native
+  def findOne(attr: String, value: js.Any): GraphNode = js.native
   /**
     * @function
     * @name pc.GraphNode#findOne
-    * @description Depth first search the graph for nodes using supplied method to find first matching node.
-    * @param {Function} fn Method which is executed for each descendant node, to test if node satisfies search logic. Returning true from that method will stop search and return that node.
-    * @returns {pc.GraphNode} A single graph node.
+    * @description Search the graph node and all of its descendants for the first node that satisfies some search criteria.
+    * @param {pc.callbacks.FindNode|String} attr This can either be a function or a string. If it's a function, it is executed
+    * for each descendant node to test if node satisfies the search logic. Returning true from the function will
+    * result in that node being returned from findOne. If it's a string then it represents the name of a field or a method of the
+    * node. If this is the name of a field then the value passed as the second argument will be checked for equality.
+    * If this is the name of a function then the return value of the function will be checked for equality against
+    * the valued passed as the second argument to this function.
+    * @param {Object} [value] If the first argument (attr) is a property name then this value will be checked against
+    * the value of the property.
+    * @returns {pc.GraphNode} A graph node that match the search criteria.
     * @example
-    * // find node that is called `head` and have model component
-    * var head = player.find(function(node) {
+    * // Find the first node that is called `head` and has a model component
+    * var head = player.findOne(function(node) {
     *     return node.model && node.name === 'head';
     * });
-    */
-  def findOne(attr: js.Function1[/* node */ this.type, Boolean]): GraphNode = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#getChildren
-    * @description Get the children of this graph node.
-    * @returns {pc.GraphNode[]} The child array of this node.
     * @example
-    * var children = this.entity.getChildren();
-    * for (i = 0; i < children.length; i++) {
-    * // children[i]
-    * }
+    * // Finds the first node that has the name property set to 'Test'
+    * var node = parent.findOne('name', 'Test');
     */
-  /* private */ def getChildren(): js.Array[GraphNode] = js.native
+  def findOne(attr: FindNode): GraphNode = js.native
+  def findOne(attr: FindNode, value: js.Any): GraphNode = js.native
+  /**
+    * @function
+    * @name pc.GraphNode#forEach
+    * @description Executes a provided function once on this graph node and all of its descendants.
+    * @param {pc.callbacks.ForEach} callback The function to execute on the graph node and each descendant.
+    * @param {Object} [thisArg] Optional value to use as this when executing callback function.
+    * @example
+    * // Log the path and name of each node in descendant tree starting with "parent"
+    * parent.forEach(function (node) {
+    *     console.log(node.path + "/" + node.name);
+    * });
+    */
+  def forEach(callback: ForEach): Unit = js.native
+  def forEach(callback: ForEach, thisArg: js.Any): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#getEulerAngles
@@ -208,15 +224,6 @@ class GraphNode () extends js.Object {
     * this.entity.setEulerAngles(angles);
     */
   def getEulerAngles(): Vec3 = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#getLabels
-    * @description Get an array of all labels applied to this graph node.
-    * @returns {String[]} An array of all labels.
-    */
-  /* private */ def getLabels(): String = js.native
   /**
     * @function
     * @name pc.GraphNode#getLocalEulerAngles
@@ -279,40 +286,6 @@ class GraphNode () extends js.Object {
     */
   def getLocalTransform(): Mat4 = js.native
   /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#getName
-    * @description Get the human-readable name for this graph node. Note the name
-    * is not guaranteed to be unique. For Entities, this is the name that is set in the PlayCanvas Editor.
-    * @returns {String} The name of the node.
-    * @example
-    * if (this.entity.getName() === "My Entity") {
-    *     console.log("My Entity Found");
-    * }
-    */
-  def getName(): String = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#getParent
-    * @description Get the parent GraphNode
-    * @returns {pc.GraphNode} The parent node
-    * @example
-    * var parent = this.entity.getParent();
-    */
-  /* private */ def getParent(): GraphNode = js.native
-  /**
-    * @function
-    * @name  pc.GraphNode#getPath
-    * @description Gets the path of the entity relative to the root of the hierarchy
-    * @return {String} The path
-    * @example
-    * var path = this.entity.getPath();
-    */
-  def getPath(): String = js.native
-  /**
     * @function
     * @name pc.GraphNode#getPosition
     * @description Get the world space position for the specified GraphNode. The
@@ -325,17 +298,6 @@ class GraphNode () extends js.Object {
     * this.entity.setPosition(position);
     */
   def getPosition(): Vec3 = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#getRoot
-    * @description Get the highest ancestor node from this graph node.
-    * @return {pc.GraphNode} The root node of the hierarchy to which this node belongs.
-    * @example
-    * var root = this.entity.getRoot();
-    */
-  /* private */ def getRoot(): GraphNode = js.native
   /**
     * @function
     * @name pc.GraphNode#getRotation
@@ -357,17 +319,6 @@ class GraphNode () extends js.Object {
     */
   def getWorldTransform(): Mat4 = js.native
   /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#hasLabel
-    * @description Test if a label has been applied to this graph node.
-    * @param {String} label The label to test for.
-    * @returns {Boolean} True if the label has been added to this GraphNode.
-    *
-    */
-  /* private */ def hasLabel(label: String): Boolean = js.native
-  /**
     * @function
     * @name pc.GraphNode#insertChild
     * @description Insert a new child to the child list at the specified index and update the parent value of the child node
@@ -382,6 +333,7 @@ class GraphNode () extends js.Object {
     * @function
     * @name pc.GraphNode#isAncestorOf
     * @description Check if node is ancestor for another node.
+    * @param {pc.GraphNode} node Potential descendant of node.
     * @returns {Boolean} if node is ancestor for another node
     * @example
     * if (body.isAncestorOf(foot)) {
@@ -393,71 +345,69 @@ class GraphNode () extends js.Object {
     * @function
     * @name pc.GraphNode#isDescendantOf
     * @description Check if node is descendant of another node.
-    * @returns {Boolean} if node is descendant of another node
+    * @param {pc.GraphNode} node Potential ancestor of node.
+    * @returns {Boolean} if node is descendant of another node.
     * @example
     * if (roof.isDescendantOf(house)) {
     *     // roof is descendant of house entity
     * }
     */
   def isDescendantOf(node: GraphNode): Boolean = js.native
+  def lookAt(x: Double, y: Double, z: Double): Unit = js.native
+  def lookAt(x: Double, y: Double, z: Double, ux: Double): Unit = js.native
+  def lookAt(x: Double, y: Double, z: Double, ux: Double, uy: Double): Unit = js.native
+  def lookAt(x: Double, y: Double, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
+  def lookAt(x: Double, y: Vec3, z: Double): Unit = js.native
+  def lookAt(x: Double, y: Vec3, z: Double, ux: Double): Unit = js.native
+  def lookAt(x: Double, y: Vec3, z: Double, ux: Double, uy: Double): Unit = js.native
+  def lookAt(x: Double, y: Vec3, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double, ux: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double, ux: Double, uy: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#lookAt
-    * @description Reorients the graph node so that the negative z axis points towards the target.
-    * @param {pc.Vec3} target The world space coordinate to 'look at'.
-    * @param {pc.Vec3} [up] The up vector for the look at transform. If left unspecified,
-    * this is set to the world space y axis.
+    * @description Reorients the graph node so that the negative z-axis points towards the target.
+    * This function has two valid signatures. Either pass 3D vectors for the look at coordinate and up
+    * vector, or pass numbers to represent the vectors.
+    * @param {pc.Vec3|Number} x - If passing a 3D vector, this is the world-space coordinate to look at.
+    * Otherwise, it is the x-component of the world-space coordinate to look at.
+    * @param {pc.Vec3|Number} y - If passing a 3D vector, this is the world-space up vector for look at
+    * transform. Otherwise, it is the y-component of the world-space coordinate to look at.
+    * @param {Number} z - z-component of the world-space coordinate to look at.
+    * @param {Number} [ux=0] - x-component of the up vector for the look at transform.
+    * @param {Number} [uy=1] - y-component of the up vector for the look at transform.
+    * @param {Number} [uz=0] - z-component of the up vector for the look at transform.
     * @example
-    * var position = ... // get position from somewhere
-    * // Look at a position, use default 'up' of [0,1,0]
+    * // Look at another entity, using the (default) positive y-axis for up
+    * var position = otherEntity.getPosition();
     * this.entity.lookAt(position);
-    * // Use a custom up value
-    * this.entity.lookAt(position, this.entity.up);
-    * // Specify position as elements
-    * this.entity.lookAt(0, 0, 0);
-    */
-  def lookAt(target: Vec3): Unit = js.native
-  def lookAt(target: Vec3, up: Vec3): Unit = js.native
-  def lookAt(tx: Double, ty: Double, tz: Double): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#lookAt^2
-    * @description Reorients the graph node so that the negative z axis points towards the target.
-    * @param {Number} tx X-component of the world space coordinate to 'look at'.
-    * @param {Number} ty Y-component of the world space coordinate to 'look at'.
-    * @param {Number} tz Z-component of the world space coordinate to 'look at'.
-    * @param {Number} [ux] X-component of the up vector for the look at transform. If left unspecified,
-    * this is set to the world space y axis.
-    * @param {Number} [uy] Y-component of the up vector for the look at transform. If left unspecified,
-    * this is set to the world space y axis.
-    * @param {Number} [uz] Z-component of the up vector for the look at transform. If left unspecified,
-    * this is set to the world space y axis.
     * @example
-    * // Look at the world space origin, use default 'up' of [0,1,0]
+    * // Look at another entity, using the negative world y-axis for up
+    * var position = otherEntity.getPosition();
+    * this.entity.lookAt(position, pc.Vec3.DOWN);
+    * @example
+    * // Look at the world space origin, using the (default) positive y-axis for up
     * this.entity.lookAt(0, 0, 0);
-    * // Look at 10, 10, 10 with an inverted up value
+    * @example
+    * // Look at world-space coordinate [10, 10, 10], using the negative world y-axis for up
     * this.entity.lookAt(10, 10, 10, 0, -1, 0);
     */
-  def lookAt(tx: Double, ty: Double, tz: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Vec3, z: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Vec3, z: Double, ux: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Vec3, z: Double, ux: Double, uy: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Vec3, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#removeChild
     * @description Remove the node from the child list and update the parent value of the child.
-    * @param {pc.GraphNode} node The node to remove
+    * @param {pc.GraphNode} child The node to remove.
     * @example
     * var child = this.entity.children[0];
     * this.entity.removeChild(child);
     */
   def removeChild(child: GraphNode): Unit = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#removeLabel
-    * @description Remove label from this graph node.
-    * @param {String} label The label to remove from this node.
-    */
-  /* private */ def removeLabel(label: String): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#reparent
@@ -465,274 +415,278 @@ class GraphNode () extends js.Object {
     * @param {pc.GraphNode} parent New parent to attach graph node to
     * @param {Number} index (optional) The child index where the child node should be placed.
     */
-  def reparent(parent: GraphNode): Unit = js.native
   def reparent(parent: GraphNode, index: Double): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#rotate^2
-    * @description Rotates the graph node in world space by the specified Euler angles.
-    * Eulers are specified in degrees in XYZ order.
-    * @param {pc.Vec3} rot World space rotation (xyz) of graph node.
-    * @example
-    * var r = new pc.Vec3(0, 90, 0);
-    * this.entity.rotate(r);
-    */
-  def rotate(rot: Vec3): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#rotate
-    * @description Rotates the graph node in world space by the specified Euler angles.
-    * Eulers are specified in degrees in XYZ order.
-    * @param {Number} ex Rotation around world space X axis in degrees.
-    * @param {Number} ey Rotation around world space Y axis in degrees.
-    * @param {Number} ez Rotation around world space Z axis in degrees.
-    * @example
-    * this.entity.rotate(0, 90, 0);
-    */
+  def rotate(x: Double): Unit = js.native
+  def rotate(x: Double, y: Double): Unit = js.native
   def rotate(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
-    * @name pc.GraphNode#rotateLocal^2
-    * @description Rotates the graph node in local space by the specified Euler angles.
-    * Eulers are specified in degrees in XYZ order.
-    * @param {pc.Vec3} rot Local space rotation (xyz) of graph node.
+    * @name pc.GraphNode#rotate
+    * @description Rotates the graph node in world-space by the specified Euler angles.
+    * Eulers are specified in degrees in XYZ order. This function has two valid signatures:
+    * you can either pass a 3D vector or 3 numbers to specify the world-space rotation.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding world-space rotation or
+    * rotation around world-space x-axis in degrees.
+    * @param {Number} [y] - Rotation around world-space y-axis in degrees.
+    * @param {Number} [z] - Rotation around world-space z-axis in degrees.
     * @example
+    * // Rotate via 3 numbers
+    * this.entity.rotate(0, 90, 0);
+    * @example
+    * // Rotate via vector
     * var r = new pc.Vec3(0, 90, 0);
-    * this.entity.rotateLocal(r);
+    * this.entity.rotate(r);
     */
-  def rotateLocal(rot: Vec3): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#rotateLocal
-    * @description Rotates the graph node in local space by the specified Euler angles.
-    * Eulers are specified in degrees in XYZ order.
-    * @param {Number} ex Rotation around local space X axis in degrees.
-    * @param {Number} ey Rotation around local space Y axis in degrees.
-    * @param {Number} ez Rotation around local space Z axis in degrees.
-    * @example
-    * this.entity.rotateLocal(0, 90, 0);
-    */
+  def rotate(x: Vec3): Unit = js.native
+  def rotate(x: Vec3, y: Double): Unit = js.native
+  def rotate(x: Vec3, y: Double, z: Double): Unit = js.native
+  def rotateLocal(x: Double): Unit = js.native
+  def rotateLocal(x: Double, y: Double): Unit = js.native
   def rotateLocal(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
-    * @name pc.GraphNode#setEulerAngles^2
-    * @description Sets the world space orientation of the specified graph node
-    * using Euler angles. Angles are specified in degrees in XYZ order.
-    * @param {pc.Vec3} angles Euler angles in degrees (XYZ order).
+    * @name pc.GraphNode#rotateLocal
+    * @description Rotates the graph node in local-space by the specified Euler angles.
+    * Eulers are specified in degrees in XYZ order. This function has two valid signatures:
+    * you can either pass a 3D vector or 3 numbers to specify the local-space rotation.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding local-space rotation or
+    * rotation around local-space x-axis in degrees.
+    * @param {Number} [y] - Rotation around local-space y-axis in degrees.
+    * @param {Number} [z] - Rotation around local-space z-axis in degrees.
     * @example
-    * var angles = new pc.Vec3(0, 90, 0);
-    * this.entity.setEulerAngles(angles);
+    * // Rotate via 3 numbers
+    * this.entity.rotateLocal(0, 90, 0);
+    * @example
+    * // Rotate via vector
+    * var r = new pc.Vec3(0, 90, 0);
+    * this.entity.rotateLocal(r);
     */
-  def setEulerAngles(angles: Vec3): Unit = js.native
-  def setEulerAngles(args: Double*): Unit = js.native
+  def rotateLocal(x: Vec3): Unit = js.native
+  def rotateLocal(x: Vec3, y: Double): Unit = js.native
+  def rotateLocal(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setEulerAngles(x: Double): Unit = js.native
+  def setEulerAngles(x: Double, y: Double): Unit = js.native
+  def setEulerAngles(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#setEulerAngles
-    * @description Sets the world space orientation of the specified graph node
-    * using Euler angles. Angles are specified in degrees in XYZ order.
-    * @param {Number} ex Rotation around world space X axis in degrees.
-    * @param {Number} ey Rotation around world space Y axis in degrees.
-    * @param {Number} ez Rotation around world space Z axis in degrees.
+    * @description Sets the world-space rotation of the specified graph node using euler angles.
+    * Eulers are interpreted in XYZ order. Eulers must be specified in degrees. This function
+    * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
+    * world-space euler rotation.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding eulers or rotation around world-space
+    * x-axis in degrees.
+    * @param {Number} [y] - rotation around world-space y-axis in degrees.
+    * @param {Number} [z] - rotation around world-space z-axis in degrees.
     * @example
+    * // Set rotation of 90 degrees around world-space y-axis via 3 numbers
     * this.entity.setEulerAngles(0, 90, 0);
-    */
-  def setEulerAngles(x: Double, y: Double, z: Double): Unit = js.native
-  def setLocalEulerAngles(args: Double*): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setLocalEulerAngles^2
-    * @description Sets the local space rotation of the specified graph node using euler angles.
-    * Eulers are interpreted in XYZ order. Eulers must be specified in degrees.
-    * @param {pc.Vec3} e vector containing euler angles in XYZ order.
     * @example
+    * // Set rotation of 90 degrees around world-space y-axis via a vector
     * var angles = new pc.Vec3(0, 90, 0);
-    * this.entity.setLocalEulerAngles(angles); // Set rotation of 90 degrees around y-axis.
+    * this.entity.setEulerAngles(angles);
     */
-  def setLocalEulerAngles(e: Vec3): Unit = js.native
+  def setEulerAngles(x: Vec3): Unit = js.native
+  def setEulerAngles(x: Vec3, y: Double): Unit = js.native
+  def setEulerAngles(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setLocalEulerAngles(x: Double): Unit = js.native
+  def setLocalEulerAngles(x: Double, y: Double): Unit = js.native
+  def setLocalEulerAngles(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#setLocalEulerAngles
-    * @description Sets the local space rotation of the specified graph node using euler angles.
-    * Eulers are interpreted in XYZ order. Eulers must be specified in degrees.
-    * @param {Number} x rotation around x-axis in degrees.
-    * @param {Number} y rotation around y-axis in degrees.
-    * @param {Number} z rotation around z-axis in degrees.
+    * @description Sets the local-space rotation of the specified graph node using euler angles.
+    * Eulers are interpreted in XYZ order. Eulers must be specified in degrees. This function
+    * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
+    * local-space euler rotation.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding eulers or rotation around local-space
+    * x-axis in degrees.
+    * @param {Number} [y] - rotation around local-space y-axis in degrees.
+    * @param {Number} [z] - rotation around local-space z-axis in degrees.
     * @example
-    * this.entity.setLocalEulerAngles(0, 90, 0); // Set rotation of 90 degrees around y-axis.
-    */
-  def setLocalEulerAngles(x: Double, y: Double, z: Double): Unit = js.native
-  def setLocalPosition(args: Double*): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setLocalPosition^2
-    * @description Sets the local space position of the specified graph node.
-    * @param {pc.Vec3} pos position vector of graph node in local space.
+    * // Set rotation of 90 degrees around y-axis via 3 numbers
+    * this.entity.setLocalEulerAngles(0, 90, 0);
     * @example
-    * var pos = new pc.Vec3(0, 10, 0);
-    * this.entity.setLocalPosition(pos)
+    * // Set rotation of 90 degrees around y-axis via a vector
+    * var angles = new pc.Vec3(0, 90, 0);
+    * this.entity.setLocalEulerAngles(angles);
     */
-  def setLocalPosition(pos: Vec3): Unit = js.native
+  def setLocalEulerAngles(x: Vec3): Unit = js.native
+  def setLocalEulerAngles(x: Vec3, y: Double): Unit = js.native
+  def setLocalEulerAngles(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setLocalPosition(x: Double): Unit = js.native
+  def setLocalPosition(x: Double, y: Double): Unit = js.native
+  def setLocalPosition(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#setLocalPosition
-    * @description Sets the local space position of the specified graph node.
-    * @param {Number} x x-coordinate of local-space position.
-    * @param {Number} y y-coordinate of local-space position.
-    * @param {Number} z z-coordinate of local-space position.
+    * @description Sets the local-space position of the specified graph node. This function
+    * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
+    * local-space position.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding local-space position or
+    * x-coordinate of local-space position.
+    * @param {Number} [y] - y-coordinate of local-space position.
+    * @param {Number} [z] - z-coordinate of local-space position.
     * @example
+    * // Set via 3 numbers
     * this.entity.setLocalPosition(0, 10, 0);
+    * @example
+    * // Set via vector
+    * var pos = new pc.Vec3(0, 10, 0);
+    * this.entity.setLocalPosition(pos)
     */
-  def setLocalPosition(x: Double, y: Double, z: Double): Unit = js.native
-  def setLocalRotation(args: Double*): Unit = js.native
+  def setLocalPosition(x: Vec3): Unit = js.native
+  def setLocalPosition(x: Vec3, y: Double): Unit = js.native
+  def setLocalPosition(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setLocalRotation(x: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Double, z: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Double, z: Double, w: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#setLocalRotation
-    * @description Sets the local space rotation of the specified graph node.
-    * @param {pc.Quat} q quaternion representing rotation of graph node in local space.
+    * @description Sets the local-space rotation of the specified graph node. This function
+    * has two valid signatures: you can either pass a quaternion or 3 numbers to specify the
+    * local-space rotation.
+    * @param {pc.Quat|Number} x - quaternion holding local-space rotation or x-component of
+    * local-space quaternion rotation.
+    * @param {Number} [y] - y-component of local-space quaternion rotation.
+    * @param {Number} [z] - z-component of local-space quaternion rotation.
+    * @param {Number} [w] - w-component of local-space quaternion rotation.
+    * @example
+    * // Set via 4 numbers
+    * this.entity.setLocalRotation(0, 0, 0, 1);
+    * @example
+    * // Set via quaternion
     * var q = pc.Quat();
     * this.entity.setLocalRotation(q);
     */
-  def setLocalRotation(q: Quat): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setLocalRotation^2
-    * @description Sets the local space rotation of the specified graph node.
-    * @param {Number} x X component of local space quaternion rotation.
-    * @param {Number} y Y component of local space quaternion rotation.
-    * @param {Number} z Z component of local space quaternion rotation.
-    * @param {Number} w W component of local space quaternion rotation.
-    * @example
-    * // Set to the identity quaternion
-    * this.entity.setLocalRotation(0, 0, 0, 1);
-    */
-  def setLocalRotation(x: Double, y: Double, z: Double, w: Double): Unit = js.native
-  def setLocalScale(args: Double*): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setLocalScale^2
-    * @description Sets the local space scale factor of the specified graph node.
-    * @param {pc.Vec3} scale xyz-scale of graph node in local space.
-    * @example
-    * var scale = new pc.Vec3(10, 10, 10);
-    * this.entity.setLocalScale(scale);
-    */
-  def setLocalScale(scale: Vec3): Unit = js.native
+  def setLocalRotation(x: Quat): Unit = js.native
+  def setLocalRotation(x: Quat, y: Double): Unit = js.native
+  def setLocalRotation(x: Quat, y: Double, z: Double): Unit = js.native
+  def setLocalRotation(x: Quat, y: Double, z: Double, w: Double): Unit = js.native
+  def setLocalScale(x: Double): Unit = js.native
+  def setLocalScale(x: Double, y: Double): Unit = js.native
+  def setLocalScale(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#setLocalScale
-    * @description Sets the local space scale factor of the specified graph node.
-    * @param {Number} x x-coordinate of local-space scale.
-    * @param {Number} y y-coordinate of local-space scale.
-    * @param {Number} z z-coordinate of local-space scale.
+    * @description Sets the local-space scale factor of the specified graph node. This function
+    * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
+    * local-space scale.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding local-space scale or x-coordinate
+    * of local-space scale.
+    * @param {Number} [y] - y-coordinate of local-space scale.
+    * @param {Number} [z] - z-coordinate of local-space scale.
     * @example
+    * // Set via 3 numbers
     * this.entity.setLocalScale(10, 10, 10);
-    */
-  def setLocalScale(x: Double, y: Double, z: Double): Unit = js.native
-  /**
-    * @private
-    * @deprecated
-    * @function
-    * @name pc.GraphNode#setName
-    * @description Sets the non-unique name for this graph node.
-    * @param {String} name The name for the node.
     * @example
-    * this.entity.setName("My Entity");
+    * // Set via vector
+    * var scale = new pc.Vec3(10, 10, 10);
+    * this.entity.setLocalScale(scale);
     */
-  /* private */ def setName(name: String): Unit = js.native
-  def setPosition(args: Double*): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setPosition^2
-    * @description Sets the world space position of the specified graph node.
-    * @param {pc.Vec3} position world space position (xyz) of graph node.
-    * @example
-    * var position = new pc.Vec3(0, 10, 0);
-    * this.entity.setPosition(position);
-    */
-  def setPosition(position: Vec3): Unit = js.native
+  def setLocalScale(x: Vec3): Unit = js.native
+  def setLocalScale(x: Vec3, y: Double): Unit = js.native
+  def setLocalScale(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setPosition(x: Double): Unit = js.native
+  def setPosition(x: Double, y: Double): Unit = js.native
+  def setPosition(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#setPosition
-    * @description Sets the world space position of the specified graph node.
-    * @param {Number} x x-coordinate of world-space position.
-    * @param {Number} y y-coordinate of world-space position.
-    * @param {Number} z z-coordinate of world-space position.
+    * @description Sets the world-space position of the specified graph node. This function
+    * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
+    * world-space position.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding world-space position or
+    * x-coordinate of world-space position.
+    * @param {Number} [y] - y-coordinate of world-space position.
+    * @param {Number} [z] - z-coordinate of world-space position.
     * @example
+    * // Set via 3 numbers
     * this.entity.setPosition(0, 10, 0);
-    */
-  def setPosition(x: Double, y: Double, z: Double): Unit = js.native
-  def setRotation(args: Double*): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setRotation
-    * @description Sets the world space rotation of the specified graph node using
-    * a quaternion.
-    * @param {pc.Quat} rot World space rotation (xyz) of graph node.
     * @example
-    * var q = new pc.Quat();
-    * this.entity.setRotation(q);
+    * // Set via vector
+    * var position = new pc.Vec3(0, 10, 0);
+    * this.entity.setPosition(position);
     */
-  def setRotation(rot: Quat): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#setRotation^2
-    * @description Sets the world space rotation of the specified graph node using
-    * the 4 components of a quaternion.
-    * @param {Number} x X component of world space quaternion rotation.
-    * @param {Number} y Y component of world space quaternion rotation.
-    * @param {Number} z Z component of world space quaternion rotation.
-    * @param {Number} w W component of world space quaternion rotation.
-    * @example
-    * this.entity.setRotation(0, 0, 0, 1);
-    */
+  def setPosition(x: Vec3): Unit = js.native
+  def setPosition(x: Vec3, y: Double): Unit = js.native
+  def setPosition(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setRotation(x: Double): Unit = js.native
+  def setRotation(x: Double, y: Double): Unit = js.native
+  def setRotation(x: Double, y: Double, z: Double): Unit = js.native
   def setRotation(x: Double, y: Double, z: Double, w: Double): Unit = js.native
   /**
     * @function
-    * @name pc.GraphNode#syncHierarchy
-    * @description Updates the world transformation matrices at this node and all of its descendants.
-    */
-  def syncHierarchy(): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#translate^2
-    * @description Translates the graph node in world space by the specified translation vector.
-    * @param {pc.Vec3} translation The world space translation vector to apply.
+    * @name pc.GraphNode#setRotation
+    * @description Sets the world-space rotation of the specified graph node. This function
+    * has two valid signatures: you can either pass a quaternion or 3 numbers to specify the
+    * world-space rotation.
+    * @param {pc.Quat|Number} x - quaternion holding world-space rotation or x-component of
+    * world-space quaternion rotation.
+    * @param {Number} [y] - y-component of world-space quaternion rotation.
+    * @param {Number} [z] - z-component of world-space quaternion rotation.
+    * @param {Number} [w] - w-component of world-space quaternion rotation.
     * @example
-    * var t = new pc.Vec3(10, 0, 0);
-    * this.entity.translate(t);
-    */
-  def translate(translation: Vec3): Unit = js.native
-  /**
-    * @function
-    * @name pc.GraphNode#translate
-    * @description Translates the graph node in world space by the specified translation vector.
-    * @param {Number} x x-component of the translation vector.
-    * @param {Number} y y-component of the translation vector.
-    * @param {Number} z z-component of the translation vector.
+    * // Set via 4 numbers
+    * this.entity.setRotation(0, 0, 0, 1);
     * @example
-    * this.entity.translate(10, 0, 0);
+    * // Set via quaternion
+    * var q = pc.Quat();
+    * this.entity.setRotation(q);
     */
+  def setRotation(x: Quat): Unit = js.native
+  def setRotation(x: Quat, y: Double): Unit = js.native
+  def setRotation(x: Quat, y: Double, z: Double): Unit = js.native
+  def setRotation(x: Quat, y: Double, z: Double, w: Double): Unit = js.native
+  def translate(x: Double): Unit = js.native
+  def translate(x: Double, y: Double): Unit = js.native
   def translate(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
-    * @name pc.GraphNode#translateLocal^2
-    * @description Translates the graph node in local space by the specified translation vector.
-    * @param {pc.Vec3} translation The local space translation vector to apply.
+    * @name pc.GraphNode#translate
+    * @description Translates the graph node in world-space by the specified translation vector.
+    * This function has two valid signatures: you can either pass a 3D vector or 3 numbers to
+    * specify the world-space translation.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding world-space translation or
+    * x-coordinate of world-space translation.
+    * @param {Number} [y] - y-coordinate of world-space translation.
+    * @param {Number} [z] - z-coordinate of world-space translation.
     * @example
+    * // Translate via 3 numbers
+    * this.entity.translate(10, 0, 0);
+    * @example
+    * // Translate via vector
     * var t = new pc.Vec3(10, 0, 0);
-    * this.entity.translateLocal(t);
+    * this.entity.translate(t);
     */
-  def translateLocal(translation: Vec3): Unit = js.native
+  def translate(x: Vec3): Unit = js.native
+  def translate(x: Vec3, y: Double): Unit = js.native
+  def translate(x: Vec3, y: Double, z: Double): Unit = js.native
+  def translateLocal(x: Double): Unit = js.native
+  def translateLocal(x: Double, y: Double): Unit = js.native
+  def translateLocal(x: Double, y: Double, z: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphNode#translateLocal
-    * @description Translates the graph node in local space by the specified translation vector.
-    * @param {Number} x x-component of the translation vector.
-    * @param {Number} y y-component of the translation vector.
-    * @param {Number} z z-component of the translation vector.
+    * @description Translates the graph node in local-space by the specified translation vector.
+    * This function has two valid signatures: you can either pass a 3D vector or 3 numbers to
+    * specify the local-space translation.
+    * @param {pc.Vec3|Number} x - 3-dimensional vector holding local-space translation or
+    * x-coordinate of local-space translation.
+    * @param {Number} [y] - y-coordinate of local-space translation.
+    * @param {Number} [z] - z-coordinate of local-space translation.
     * @example
+    * // Translate via 3 numbers
     * this.entity.translateLocal(10, 0, 0);
+    * @example
+    * // Translate via vector
+    * var t = new pc.Vec3(10, 0, 0);
+    * this.entity.translateLocal(t);
     */
-  def translateLocal(x: Double, y: Double, z: Double): Unit = js.native
+  def translateLocal(x: Vec3): Unit = js.native
+  def translateLocal(x: Vec3, y: Double): Unit = js.native
+  def translateLocal(x: Vec3, y: Double, z: Double): Unit = js.native
 }
 

@@ -7,6 +7,7 @@ import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.AnimateType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait CalendarProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var animate: js.UndefOr[Boolean] = js.undefined
+  var animate: js.UndefOr[AnimateType] = js.undefined
   var bounds: js.UndefOr[js.Array[String]] = js.undefined
   var date: js.UndefOr[String] = js.undefined
   var dates: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
@@ -40,7 +41,7 @@ object CalendarProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
+    animate: js.UndefOr[AnimateType] = js.undefined,
     bounds: js.Array[String] = null,
     date: String = null,
     dates: js.Array[String | js.Array[String]] = null,

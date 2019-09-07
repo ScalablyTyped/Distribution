@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.BoundingSphere
-  * @class A bounding sphere is a volume for facilitating fast intersection testing.
+  * @classdesc A bounding sphere is a volume for facilitating fast intersection testing.
   * @description Creates a new bounding sphere.
   * @example
   * // Create a new bounding sphere centered on the origin with a radius of 0.5
@@ -19,8 +20,6 @@ import scala.scalajs.js.annotation._
 class BoundingSphere () extends js.Object {
   def this(center: Vec3) = this()
   def this(center: Vec3, radius: Double) = this()
-  var center: Vec3 = js.native
-  var radius: Double = js.native
   /**
     * @function
     * @name pc.BoundingSphere#intersectsBoundingSphere

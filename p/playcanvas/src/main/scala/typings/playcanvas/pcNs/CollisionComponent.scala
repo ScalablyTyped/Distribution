@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @component
+  * @constructor
   * @name pc.CollisionComponent
-  * @description Create a new CollisionComponent
-  * @class A collision volume. use this in conjunction with a {@link pc.RigidBodyComponent} to make a collision volume that can be simulated using the physics engine.
+  * @classdesc A collision volume. Use this in conjunction with a {@link pc.RigidBodyComponent} to make a collision volume that can be simulated using the physics engine.
   * <p>If the {@link pc.Entity} does not have a {@link pc.RigidBodyComponent} then this collision volume will act as a trigger volume. When an entity with a dynamic
   * or kinematic body enters or leaves an entity with a trigger volume, both entities will receive trigger events.
   * <p>The following table shows all the events that can be fired between two Entities:
@@ -52,6 +52,7 @@ import scala.scalajs.js.annotation._
   *   </tr>
   * </table>
   * </p>
+  * @description Create a new CollisionComponent
   * @param {pc.CollisionComponentSystem} system The ComponentSystem that created this Component
   * @param {pc.Entity} entity The Entity that this Component is attached to.
   * @property {String} type The type of the collision volume. Defaults to 'box'. Can be one of the following:
@@ -74,12 +75,40 @@ import scala.scalajs.js.annotation._
 @js.native
 class CollisionComponent protected () extends Component {
   def this(system: CollisionComponentSystem, entity: Entity) = this()
+  /**
+    * The asset for the model of the mesh collision volume - can also be an asset id.
+    */
   var asset: Asset = js.native
+  /**
+    * The local space axis with which the capsule or cylinder-shaped collision volume's length is aligned. 0 for X, 1 for Y and 2 for Z. Defaults to 1 (Y-axis).
+    */
   var axis: Double = js.native
+  /**
+    * The half-extents of the box-shaped collision volume in the x, y and z axes. Defaults to [0.5, 0.5, 0.5]
+    */
   var halfExtents: Vec3 = js.native
+  /**
+    * The total height of the capsule or cylinder-shaped collision volume from tip to tip. Defaults to 2.
+    */
   var height: Double = js.native
+  /**
+    * The model that is added to the scene graph for the mesh collision volume.
+    */
   var model: Model = js.native
+  /**
+    * The radius of the sphere, capsule or cylinder-shaped collision volumes. Defaults to 0.5
+    */
   var radius: Double = js.native
+  /**
+    * The type of the collision volume. Defaults to 'box'. Can be one of the following:
+    * <ul>
+    * <li><strong>box</strong>: A box-shaped collision volume.</li>
+    * <li><strong>sphere</strong>: A sphere-shaped collision volume.</li>
+    * <li><strong>capsule</strong>: A capsule-shaped collision volume.</li>
+    * <li><strong>cylinder</strong>: A cylinder-shaped collision volume.</li>
+    * <li><strong>mesh</strong>: A collision volume that uses a model asset as its shape.</li>
+    * </ul>
+    */
   var `type`: String = js.native
 }
 

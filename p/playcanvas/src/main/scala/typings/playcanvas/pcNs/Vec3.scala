@@ -1,26 +1,30 @@
 package typings.playcanvas.pcNs
 
-import typings.std.Float32Array
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Vec3
-  * @class A 3-dimensional vector.
-  * @description Creates a new Vec3 object
-  * @param {Number} [x] The x value. If x is an array of length 3, the array will be used to populate all components.
-  * @param {Number} [y] The y value
-  * @param {Number} [z] The z value
+  * @classdesc A 3-dimensional vector.
+  * @description Creates a new Vec3 object.
+  * @param {Number|Number[]} [x] The x value. If x is an array of length 3, the array will be used to populate all components.
+  * @param {Number} [y] The y value.
+  * @param {Number} [z] The z value.
   * @example
-  * var v = new pc.Vec3(1,2,3);
+  * var v = new pc.Vec3(1, 2, 3);
   */
 @JSGlobal("pc.Vec3")
 @js.native
 class Vec3 () extends js.Object {
-  def this(x: js.Tuple3[Double, Double, Double]) = this()
+  def this(x: js.Array[Number]) = this()
+  def this(x: Double) = this()
+  def this(x: js.Array[Number], y: Double) = this()
+  def this(x: Double, y: Double) = this()
+  def this(x: js.Array[Number], y: Double, z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
-  var data: Float32Array = js.native
   /**
     * @name pc.Vec3#x
     * @type Number
@@ -78,7 +82,7 @@ class Vec3 () extends js.Object {
     * // Should output [30, 30, 30]
     * console.log("The result of the addition is: " + a.toString());
     */
-  def add(rhs: Vec3): this.type = js.native
+  def add(rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#add2
@@ -96,7 +100,7 @@ class Vec3 () extends js.Object {
     *
     * console.log("The result of the addition is: " + r.toString());
     */
-  def add2(lhs: Vec3, rhs: Vec3): this.type = js.native
+  def add2(lhs: Vec3, rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#copy
@@ -111,7 +115,7 @@ class Vec3 () extends js.Object {
     *
     * console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
     */
-  def copy(rhs: Vec3): this.type = js.native
+  def copy(rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#cross
@@ -125,7 +129,20 @@ class Vec3 () extends js.Object {
     * // Should print the Z axis (i.e. [0, 0, 1])
     * console.log("The result of the cross product is: " + back.toString());
     */
-  def cross(lhs: Vec3, rhs: Vec3): this.type = js.native
+  def cross(lhs: Vec3, rhs: Vec3): Vec3 = js.native
+  /**
+    * @function
+    * @name pc.Vec3#distance
+    * @description Returns the distance between the two specified 3-dimensional vectors.
+    * @param {pc.Vec3} rhs The second 3-dimensional vector to test.
+    * @returns {Number} The distance between the two vectors.
+    * @example
+    * var v1 = new pc.Vec3(5, 10, 20);
+    * var v2 = new pc.Vec3(10, 20, 40);
+    * var d = v1.distance(v2);
+    * console.log("The between v1 and v2 is: " + d);
+    */
+  def distance(rhs: Vec3): Double = js.native
   /**
     * @function
     * @name pc.Vec3#dot
@@ -194,7 +211,7 @@ class Vec3 () extends js.Object {
     * r.lerp(a, b, 0.5); // r is 5, 5, 5
     * r.lerp(a, b, 1);   // r is equal to b
     */
-  def lerp(lhs: Vec3, rhs: Vec3, alpha: Double): this.type = js.native
+  def lerp(lhs: Vec3, rhs: Vec3, alpha: Double): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#mul
@@ -210,7 +227,7 @@ class Vec3 () extends js.Object {
     * // Should output 8, 15, 24
     * console.log("The result of the multiplication is: " + a.toString());
     */
-  def mul(rhs: Vec3): this.type = js.native
+  def mul(rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#mul2
@@ -228,7 +245,7 @@ class Vec3 () extends js.Object {
     * // Should output 8, 15, 24
     * console.log("The result of the multiplication is: " + r.toString());
     */
-  def mul2(lhs: Vec3, rhs: Vec3): this.type = js.native
+  def mul2(lhs: Vec3, rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#normalize
@@ -243,7 +260,7 @@ class Vec3 () extends js.Object {
     * // Should output 1, 0, 0, 0
     * console.log("The result of the vector normalization is: " + v.toString());
     */
-  def normalize(): this.type = js.native
+  def normalize(): Vec3 = js.native
   /**
     * @function
     * @name  pc.Vec3#project
@@ -259,7 +276,7 @@ class Vec3 () extends js.Object {
     * // Should output 5, 0, 0
     * console.log("The result of the vector projection is: " + v.toString());
     */
-  def project(rhs: Vec3): this.type = js.native
+  def project(rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#scale
@@ -279,7 +296,7 @@ class Vec3 () extends js.Object {
     * // Divide by 2
     * v.scale(0.5);
     */
-  def scale(scalar: Double): this.type = js.native
+  def scale(scalar: Double): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#set
@@ -287,6 +304,7 @@ class Vec3 () extends js.Object {
     * @param {Number} x The value to set on the first component of the vector.
     * @param {Number} y The value to set on the second component of the vector.
     * @param {Number} z The value to set on the third component of the vector.
+    * @returns {pc.Vec3} Self for chaining.
     * @example
     * var v = new pc.Vec3();
     * v.set(5, 10, 20);
@@ -294,7 +312,7 @@ class Vec3 () extends js.Object {
     * // Should output 5, 10, 20
     * console.log("The result of the vector set is: " + v.toString());
     */
-  def set(x: Double, y: Double, z: Double): this.type = js.native
+  def set(x: Double, y: Double, z: Double): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#sub
@@ -310,7 +328,7 @@ class Vec3 () extends js.Object {
     * // Should output [-10, -10, -10]
     * console.log("The result of the addition is: " + a.toString());
     */
-  def sub(rhs: Vec3): this.type = js.native
+  def sub(rhs: Vec3): Vec3 = js.native
   /**
     * @function
     * @name pc.Vec3#sub2
@@ -328,7 +346,7 @@ class Vec3 () extends js.Object {
     * // Should output [-10, -10, -10]
     * console.log("The result of the addition is: " + r.toString());
     */
-  def sub2(lhs: Vec3, rhs: Vec3): this.type = js.native
+  def sub2(lhs: Vec3, rhs: Vec3): Vec3 = js.native
 }
 
 /* static members */

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   extends Expression
      with BaseNode {
   var arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder]
-  var callee: Expression
+  var callee: Expression | V8IntrinsicIdentifier
   var optional: `true` | `false` | Null
   var typeArguments: TypeParameterInstantiation | Null
   var typeParameters: TSTypeParameterInstantiation | Null
@@ -23,7 +23,7 @@ object NewExpression {
   @scala.inline
   def apply(
     arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    callee: Expression,
+    callee: Expression | V8IntrinsicIdentifier,
     `type`: typings.atBabelTypes.atBabelTypesStrings.NewExpression,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
@@ -35,7 +35,7 @@ object NewExpression {
     typeArguments: TypeParameterInstantiation = null,
     typeParameters: TSTypeParameterInstantiation = null
   ): NewExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee)
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

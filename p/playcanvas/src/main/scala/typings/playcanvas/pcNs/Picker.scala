@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Picker
-  * @class Picker object used to select mesh instances from screen coordinates.
+  * @classdesc Picker object used to select mesh instances from screen coordinates.
   * @description Create a new instance of a Picker object
-  * @param {pc.GraphicsDevice} device Graphics device used to manage internal graphics resources.
+  * @param {pc.Application} app The application managing this picker instance.
   * @param {Number} width The width of the pick buffer in pixels.
   * @param {Number} height The height of the pick buffer in pixels.
   * @property {Number} width Width of the pick buffer in pixels (read-only).
@@ -18,9 +19,18 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.Picker")
 @js.native
 class Picker protected () extends js.Object {
-  def this(device: GraphicsDevice, width: Double, height: Double) = this()
+  def this(app: Application, width: Double, height: Double) = this()
+  /**
+    * Height of the pick buffer in pixels (read-only).
+    */
   var height: Double = js.native
+  /**
+    * The render target used by the picker internally (read-only).
+    */
   var renderTarget: RenderTarget = js.native
+  /**
+    * Width of the pick buffer in pixels (read-only).
+    */
   var width: Double = js.native
   /**
     * @function
@@ -49,10 +59,13 @@ class Picker protected () extends js.Object {
     * of the supplied camera. Once the pick buffer has been prepared, pc.Picker#getSelection can be
     * called multiple times on the same picker object. Therefore, if the models or camera do not change
     * in any way, pc.Picker#prepare does not need to be called again.
-    * @param {pc.Camera} camera The camera used to render the scene, note this is the CameraNode, not an Entity
+    * @param {pc.CameraComponent} camera The camera component used to render the scene.
     * @param {pc.Scene} scene The scene containing the pickable mesh instances.
+    * @param {pc.Layer|pc.RenderTarget} [arg] Layer or RenderTarget from which objects will be picked. If not supplied, all layers rendering to backbuffer before this layer will be used.
     */
-  def prepare(camera: Camera, scene: Scene): Unit = js.native
+  def prepare(camera: CameraComponent, scene: Scene): Unit = js.native
+  def prepare(camera: CameraComponent, scene: Scene, arg: Layer): Unit = js.native
+  def prepare(camera: CameraComponent, scene: Scene, arg: RenderTarget): Unit = js.native
   /**
     * @function
     * @name pc.Picker#resize

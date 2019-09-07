@@ -1,14 +1,16 @@
 package typings.playcanvas.pcNs
 
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Quat
-  * @class A quaternion.
-  * @description Create a new Quat object
-  * @param {Number} [x] The quaternion's x component. Default value 0. If x is an array of length 4, the array will be used to populate all components.
+  * @classdesc A quaternion.
+  * @description Create a new Quat object.
+  * @param {Number|Number[]} [x] The quaternion's x component. Default value 0. If x is an array of length 4, the array will be used to populate all components.
   * @param {Number} [y] The quaternion's y component. Default value 0.
   * @param {Number} [z] The quaternion's z component. Default value 0.
   * @param {Number} [w] The quaternion's w component. Default value 1.
@@ -16,7 +18,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.Quat")
 @js.native
 class Quat () extends js.Object {
-  def this(x: js.Tuple4[Double, Double, Double, Double]) = this()
+  def this(x: js.Array[Number]) = this()
+  def this(x: Double) = this()
+  def this(x: js.Array[Number], y: Double) = this()
+  def this(x: Double, y: Double) = this()
+  def this(x: js.Array[Number], y: Double, z: Double) = this()
+  def this(x: Double, y: Double, z: Double) = this()
+  def this(x: js.Array[Number], y: Double, z: Double, w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
   /**
     * @field
@@ -78,7 +86,6 @@ class Quat () extends js.Object {
     * quat.z = 0;
     */
   var z: Double = js.native
-  def conjugate(): this.type = js.native
   /**
     * @function
     * @name pc.Quat#copy
@@ -91,18 +98,40 @@ class Quat () extends js.Object {
     * dst.copy(src, src);
     * console.log("The two quaternions are " + (src.equals(dst) ? "equal" : "different"));
     */
-  def copy(rhs: Quat): this.type = js.native
+  def copy(rhs: Quat): Quat = js.native
   /**
     * @function
     * @name pc.Quat#equals
     * @description Reports whether two quaternions are equal.
+    * @param {pc.Quat} rhs The quaternion to be compared against.
     * @returns {Boolean} true if the quaternions are equal and false otherwise.
     * @example
     * var a = new pc.Quat();
     * var b = new pc.Quat();
     * console.log("The two quaternions are " + (a.equals(b) ? "equal" : "different"));
     */
-  def equals(that: Quat): Boolean = js.native
+  def equals(rhs: Quat): Boolean = js.native
+  /**
+    * @function
+    * @name pc.Quat#getAxisAngle
+    * @description Gets the rotation axis and angle for a given
+    *  quaternion. If a quaternion is created with
+    *  setFromAxisAngle, this method will return the same
+    *  values as provided in the original parameter list
+    *  OR functionally equivalent values.
+    * @param {pc.Vec3} axis The 3-dimensional vector to receive the axis of rotation.
+    * @returns {Number} Angle, in degrees, of the rotation
+    * @example
+    * var q = new pc.Quat();
+    * q.setFromAxisAngle(new pc.Vec3(0, 1, 0), 90);
+    * var v = new pc.Vec3();
+    * var angle = q.getAxisAngle(v);
+    * // Should output 90
+    * console.log(angle)
+    * // Should output [0, 1, 0]
+    * console.log(v.toString());
+    */
+  def getAxisAngle(axis: Vec3): Double = js.native
   /**
     * @function
     * @name pc.Quat#getEulerAngles
@@ -125,7 +154,7 @@ class Quat () extends js.Object {
     * // Invert in place
     * rot.invert();
     */
-  def invert(): this.type = js.native
+  def invert(): Quat = js.native
   /**
     * @function
     * @name pc.Quat#length
@@ -166,7 +195,7 @@ class Quat () extends js.Object {
     *
     * console.log("The result of the multiplication is: " a.toString());
     */
-  def mul(rhs: Quat): this.type = js.native
+  def mul(rhs: Quat): Quat = js.native
   /**
     * @function
     * @name pc.Quat#mul2
@@ -199,7 +228,7 @@ class Quat () extends js.Object {
     * // Should output 0, 0, 0, 1
     * console.log("The result of the vector normalization is: " + v.toString());
     */
-  def normalize(): this.type = js.native
+  def normalize(): Quat = js.native
   /**
     * @function
     * @name pc.Quat#set
@@ -208,6 +237,7 @@ class Quat () extends js.Object {
     * @param {Number} y The y component of the quaternion.
     * @param {Number} z The z component of the quaternion.
     * @param {Number} w The w component of the quaternion.
+    * @returns {pc.Quat} Self for chaining.
     * @example
     * var q = new pc.Quat();
     * q.set(1, 0, 0, 0);
@@ -215,7 +245,7 @@ class Quat () extends js.Object {
     * // Should output 1, 0, 0, 0
     * console.log("The result of the vector set is: " + q.toString());
     */
-  def set(x: Double, y: Double, z: Double, w: Double): this.type = js.native
+  def set(x: Double, y: Double, z: Double, w: Double): Quat = js.native
   /**
     * @function
     * @name pc.Quat#setFromAxisAngle
@@ -227,7 +257,7 @@ class Quat () extends js.Object {
     * var q = new pc.Quat();
     * q.setFromAxisAngle(pc.Vec3.UP, 90);
     */
-  def setFromAxisAngle(axis: Vec3, angle: Double): this.type = js.native
+  def setFromAxisAngle(axis: Vec3, angle: Double): Quat = js.native
   /**
     * @function
     * @name pc.Quat#setFromEulerAngles
@@ -240,7 +270,7 @@ class Quat () extends js.Object {
     * var q = new pc.Quat();
     * q.setFromEulerAngles(45, 90, 180);
     */
-  def setFromEulerAngles(ex: Double, ey: Double, ez: Double): this.type = js.native
+  def setFromEulerAngles(ex: Double, ey: Double, ez: Double): Quat = js.native
   /**
     * @function
     * @name pc.Quat#setFromMat4
@@ -256,7 +286,7 @@ class Quat () extends js.Object {
     * // Convert to a quaternion
     * var q = new pc.Quat().setFromMat4(rot);
     */
-  def setFromMat4(m: Mat4): this.type = js.native
+  def setFromMat4(m: Mat4): Quat = js.native
   /**
     * @function
     * @name pc.Quat#slerp
@@ -277,7 +307,7 @@ class Quat () extends js.Object {
     * result = new pc.Quat().slerp(q1, q2, 0.5); // Return the midpoint interpolant
     * result = new pc.Quat().slerp(q1, q2, 1);   // Return q2
     */
-  def slerp(lhs: Quat, rhs: Quat, alpha: Double): this.type = js.native
+  def slerp(lhs: Quat, rhs: Quat, alpha: Double): Quat = js.native
   /**
     * @function
     * @name pc.Quat#transformVector

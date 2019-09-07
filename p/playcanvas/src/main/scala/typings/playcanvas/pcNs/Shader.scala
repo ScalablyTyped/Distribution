@@ -1,13 +1,14 @@
 package typings.playcanvas.pcNs
 
-import typings.playcanvas.Anon_AttributesFshader
+import typings.playcanvas.Anon_Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Shader
-  * @class A shader is a program that is responsible for rendering graphical primitives on a device's
+  * @classdesc A shader is a program that is responsible for rendering graphical primitives on a device's
   * graphics processor. The shader is generated from a shader definition. This shader definition specifies
   * the code for processing vertices and fragments processed by the GPU. The language of the code is GLSL
   * (or more specifically ESSL, the OpenGL ES Shading Language). The shader definition also describes how
@@ -22,6 +23,7 @@ import scala.scalajs.js.annotation._
   * @param {String} definition.vshader Vertex shader source (GLSL code).
   * @param {String} definition.fshader Fragment shader source (GLSL code).
   * @param {Boolean} definition.useTransformFeedback Specifies that this shader outputs post-VS data to a buffer
+  * @param {Object} precache Triggers imediate link.
   * @example
   * // Create a shader that renders primitives with a solid red color
   * var shaderDefinition = {
@@ -47,12 +49,11 @@ import scala.scalajs.js.annotation._
   * };
   *
   * shader = new pc.Shader(graphicsDevice, shaderDefinition);
-  * @author Will Eastcott
   */
 @JSGlobal("pc.Shader")
 @js.native
 class Shader protected () extends js.Object {
-  def this(graphicsDevice: GraphicsDevice, definition: Anon_AttributesFshader) = this()
+  def this(graphicsDevice: GraphicsDevice, definition: Anon_Attributes, precache: js.Any) = this()
   /**
     * @function
     * @name pc.Shader#destroy

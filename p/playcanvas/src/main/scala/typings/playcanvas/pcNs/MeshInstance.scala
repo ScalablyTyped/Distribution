@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.MeshInstance
-  * @class An instance of a {@link pc.Mesh}. A single mesh can be referenced by many
+  * @classdesc An instance of a {@link pc.Mesh}. A single mesh can be referenced by many
   * mesh instances that can have different transforms and materials.
   * @description Create a new mesh instance.
   * @param {pc.GraphNode} node The graph node defining the transform for this instance.
@@ -24,15 +25,8 @@ import scala.scalajs.js.annotation._
   * Defaults to false.
   * @property {Boolean} visible Enable rendering for this mesh instance. Use visible property to enable/disable rendering without overhead of removing from scene.
   * But note that the mesh instance is still in the hierarchy and still in the draw call list.
-  * @property {Number} layer The layer used by this mesh instance. Layers define drawing order. Can be:
-  * <ul>
-  *     <li>pc.LAYER_WORLD or 15</li>
-  *     <li>pc.LAYER_FX or 2</li>
-  *     <li>pc.LAYER_GIZMO or 1</li>
-  *     <li>pc.LAYER_HUD or 0</li>
-  *     <li>Any number between 3 and 14 can be used as a custom layer.</li>
-  * </ul>
-  * Defaults to pc.LAYER_WORLD.
+  * @property {pc.GraphNode} node The graph node defining the transform for this instance.
+  * @property {pc.Mesh} mesh The graphics mesh being instanced.
   * @property {pc.Material} material The material used by this mesh instance.
   * @property {Number} renderStyle The render style of the mesh instance. Can be:
   * <ul>
@@ -41,31 +35,71 @@ import scala.scalajs.js.annotation._
   *     <li>pc.RENDERSTYLE_POINTS</li>
   * </ul>
   * Defaults to pc.RENDERSTYLE_SOLID.
-  * @property {Boolean} cull Controls whether the mesh instance can be culled with frustum culling
+  * @property {Boolean} cull Controls whether the mesh instance can be culled by with frustum culling ({@link pc.CameraComponent#frustumCulling}).
+  * @property {Number} drawOrder Use this value to affect rendering order of mesh instances.
+  * Only used when mesh instances are added to a {@link pc.Layer} with {@link pc.Layer#opaqueSortMode} or {@link pc.Layer#transparentSortMode} (depending on the material) set to {@link pc.SORTMODE_MANUAL}.
+  * @property {Boolean} visibleThisFrame Read this value in {@link pc.Layer#onPostCull} to determine if the object is actually going to be rendered.
   */
 @JSGlobal("pc.MeshInstance")
 @js.native
 class MeshInstance protected () extends js.Object {
   def this(node: GraphNode, mesh: Mesh, material: Material) = this()
+  /**
+    * The world space axis-aligned bounding box for this
+    * mesh instance.
+    */
   var aabb: BoundingBox = js.native
+  /**
+    * Controls whether the mesh instance casts shadows.
+    * Defaults to false.
+    */
   var castShadow: Boolean = js.native
+  /**
+    * Controls whether the mesh instance can be culled by with frustum culling ({@link pc.CameraComponent#frustumCulling}).
+    */
   var cull: Boolean = js.native
-  var key: Double = js.native
-  var layer: Double = js.native
+  /**
+    * Use this value to affect rendering order of mesh instances.
+    * Only used when mesh instances are added to a {@link pc.Layer} with {@link pc.Layer#opaqueSortMode} or {@link pc.Layer#transparentSortMode} (depending on the material) set to {@link pc.SORTMODE_MANUAL}.
+    */
+  var drawOrder: Double = js.native
   /**
     * @name pc.MeshInstance#mask
     * @type Number
-    * @description Mask controlling which {@link pc.LightComponent}s light this mesh instance.
-    * To ignore all dynamic lights, set mask to 0. Defaults to 1.
+    * @description Mask controlling which {@link pc.LightComponent}s light this mesh instance, which {@link pc.CameraComponent} sees it and in which {@link pc.Layer} it is rendered.
+    * Defaults to 1.
     */
   var mask: Double = js.native
+  /**
+    * The material used by this mesh instance.
+    */
   var material: Material = js.native
+  /**
+    * The graphics mesh being instanced.
+    */
   var mesh: Mesh = js.native
+  /**
+    * The graph node defining the transform for this instance.
+    */
   var node: GraphNode = js.native
-  var receiveShadow: Boolean = js.native
+  /**
+    * The render style of the mesh instance. Can be:
+    * <ul>
+    * <li>pc.RENDERSTYLE_SOLID</li>
+    * <li>pc.RENDERSTYLE_WIREFRAME</li>
+    * <li>pc.RENDERSTYLE_POINTS</li>
+    * </ul>
+    * Defaults to pc.RENDERSTYLE_SOLID.
+    */
   var renderStyle: Double = js.native
-  var screenSpace: Boolean = js.native
-  var skinInstance: SkinInstance = js.native
+  /**
+    * Enable rendering for this mesh instance. Use visible property to enable/disable rendering without overhead of removing from scene.
+    * But note that the mesh instance is still in the hierarchy and still in the draw call list.
+    */
   var visible: Boolean = js.native
+  /**
+    * Read this value in {@link pc.Layer#onPostCull} to determine if the object is actually going to be rendered.
+    */
+  var visibleThisFrame: Boolean = js.native
 }
 

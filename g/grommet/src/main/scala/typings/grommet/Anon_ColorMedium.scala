@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ColorMedium extends js.Object {
   var color: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[weak | medium | strong | Boolean] = js.undefined
+  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
 }
 
 object Anon_ColorMedium {
   @scala.inline
-  def apply(color: String = null, opacity: weak | medium | strong | Boolean = null): Anon_ColorMedium = {
+  def apply(color: String = null, opacity: weak | medium | strong | Boolean | Double = null): Anon_ColorMedium = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

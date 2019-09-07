@@ -145,9 +145,6 @@ object grommetStrings {
   sealed trait b extends _PolymorphicType
   
   @js.native
-  sealed trait background extends js.Object
-  
-  @js.native
   sealed trait backward extends js.Object
   
   @js.native
@@ -1074,8 +1071,6 @@ object grommetStrings {
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline
   def b: b = "b".asInstanceOf[b]
-  @scala.inline
-  def background: background = "background".asInstanceOf[background]
   @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline

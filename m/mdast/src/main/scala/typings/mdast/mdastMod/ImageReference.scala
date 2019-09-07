@@ -20,16 +20,19 @@ trait ImageReference
 object ImageReference {
   @scala.inline
   def apply(
+    identifier: String,
     referenceType: ReferenceType,
     `type`: imageReference,
     alt: String = null,
     data: Data = null,
+    label: String = null,
     position: Position = null
   ): ImageReference = {
-    val __obj = js.Dynamic.literal(referenceType = referenceType)
+    val __obj = js.Dynamic.literal(identifier = identifier, referenceType = referenceType)
     __obj.updateDynamic("type")(`type`)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (data != null) __obj.updateDynamic("data")(data)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[ImageReference]
   }

@@ -17,7 +17,7 @@ object guidNs extends js.Object {
     * @function
     * @name pc.guid.create
     * @description Create an RFC4122 version 4 compliant GUID
-    * @return {String} A new GUID
+    * @returns {String} A new GUID
     */
   def create(): String = js.native
 }

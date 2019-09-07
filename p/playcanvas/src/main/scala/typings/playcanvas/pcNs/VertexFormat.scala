@@ -1,18 +1,18 @@
 package typings.playcanvas.pcNs
 
-import typings.playcanvas.Anon_Components
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.VertexFormat
-  * @class A vertex format is a descriptor that defines the layout of vertex data inside
+  * @classdesc A vertex format is a descriptor that defines the layout of vertex data inside
   * a {@link pc.VertexBuffer}.
   * @description Returns a new pc.VertexFormat object.
   * @param {pc.GraphicsDevice} graphicsDevice The graphics device used to manage this vertex format.
   * @param {Object[]} description An array of vertex attribute descriptions.
-  * @param {Number} description[].semantic The meaning of the vertex element. This is used to link
+  * @param {String} description[].semantic The meaning of the vertex element. This is used to link
   * the vertex data to a shader input. Can be:
   * <ul>
   *     <li>pc.SEMANTIC_POSITION</li>
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
   *     <li>pc.TYPE_UINT32</li>
   *     <li>pc.TYPE_FLOAT32</li>
   * </ul>
-  * @param {Boolean} description[].normalize If true, vertex attribute data will be mapped from a
+  * @param {Boolean} [description[].normalize] If true, vertex attribute data will be mapped from a
   * 0 to 255 range down to 0 to 1 when fed to a shader. If false, vertex attribute data is left
   * unchanged. If this property is unspecified, false is assumed.
   * @example
@@ -59,11 +59,10 @@ import scala.scalajs.js.annotation._
   *     { semantic: pc.SEMANTIC_TEXCOORD0, components: 2, type: pc.TYPE_FLOAT32 },
   *     { semantic: pc.SEMANTIC_COLOR, components: 4, type: pc.TYPE_UINT8, normalize: true }
   * ]);
-  * @author Will Eastcott
   */
 @JSGlobal("pc.VertexFormat")
 @js.native
 class VertexFormat protected () extends js.Object {
-  def this(graphicsDevice: GraphicsDevice, description: js.Array[Anon_Components]) = this()
+  def this(graphicsDevice: GraphicsDevice, description: js.Array[js.Object]) = this()
 }
 

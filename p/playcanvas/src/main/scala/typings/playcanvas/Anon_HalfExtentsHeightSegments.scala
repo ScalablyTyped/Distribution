@@ -6,17 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HalfExtentsHeightSegments extends js.Object {
-  var halfExtents: Vec3
-  var heightSegments: Double
-  var lengthSegments: Double
-  var widthSegments: Double
+  var halfExtents: js.UndefOr[Vec3] = js.undefined
+  var heightSegments: js.UndefOr[Double] = js.undefined
+  var lengthSegments: js.UndefOr[Double] = js.undefined
+  var widthSegments: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_HalfExtentsHeightSegments {
   @scala.inline
-  def apply(halfExtents: Vec3, heightSegments: Double, lengthSegments: Double, widthSegments: Double): Anon_HalfExtentsHeightSegments = {
-    val __obj = js.Dynamic.literal(halfExtents = halfExtents, heightSegments = heightSegments, lengthSegments = lengthSegments, widthSegments = widthSegments)
-  
+  def apply(
+    halfExtents: Vec3 = null,
+    heightSegments: Int | Double = null,
+    lengthSegments: Int | Double = null,
+    widthSegments: Int | Double = null
+  ): Anon_HalfExtentsHeightSegments = {
+    val __obj = js.Dynamic.literal()
+    if (halfExtents != null) __obj.updateDynamic("halfExtents")(halfExtents)
+    if (heightSegments != null) __obj.updateDynamic("heightSegments")(heightSegments.asInstanceOf[js.Any])
+    if (lengthSegments != null) __obj.updateDynamic("lengthSegments")(lengthSegments.asInstanceOf[js.Any])
+    if (widthSegments != null) __obj.updateDynamic("widthSegments")(widthSegments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HalfExtentsHeightSegments]
   }
 }

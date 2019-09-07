@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs
 
+import typings.googleDashAppsDashScript.Anon_FunctionName
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.Blob
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.BlobSource
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.User
@@ -17,7 +18,7 @@ trait Spreadsheet extends js.Object {
   def addEditor(emailAddress: String): Spreadsheet = js.native
   def addEditor(user: User): Spreadsheet = js.native
   def addEditors(emailAddresses: js.Array[String]): Spreadsheet = js.native
-  def addMenu(name: String, subMenus: js.Array[_]): Unit = js.native
+  def addMenu(name: String, subMenus: js.Array[Anon_FunctionName | Null]): Unit = js.native
   def addViewer(emailAddress: String): Spreadsheet = js.native
   def addViewer(user: User): Spreadsheet = js.native
   def addViewers(emailAddresses: js.Array[String]): Spreadsheet = js.native
@@ -34,19 +35,19 @@ trait Spreadsheet extends js.Object {
   def deleteSheet(sheet: Sheet): Unit = js.native
   def duplicateActiveSheet(): Sheet = js.native
   def getActiveCell(): Range = js.native
-  def getActiveRange(): Range = js.native
-  def getActiveRangeList(): RangeList = js.native
+  def getActiveRange(): Range | Null = js.native
+  def getActiveRangeList(): RangeList | Null = js.native
   def getActiveSheet(): Sheet = js.native
   def getAs(contentType: String): Blob = js.native
   def getBandings(): js.Array[Banding] = js.native
   def getBlob(): Blob = js.native
   def getColumnWidth(columnPosition: Integer): Integer = js.native
-  def getCurrentCell(): Range = js.native
+  def getCurrentCell(): Range | Null = js.native
   def getDataRange(): Range = js.native
   def getDataSourceTables(): js.Array[DataSourceTable] = js.native
   def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getEditors(): js.Array[User] = js.native
-  def getFormUrl(): String = js.native
+  def getFormUrl(): String | Null = js.native
   def getFrozenColumns(): Integer = js.native
   def getFrozenRows(): Integer = js.native
   def getId(): String = js.native
@@ -58,10 +59,10 @@ trait Spreadsheet extends js.Object {
   def getName(): String = js.native
   def getNamedRanges(): js.Array[NamedRange] = js.native
   def getNumSheets(): Integer = js.native
-  def getOwner(): User = js.native
+  def getOwner(): User | Null = js.native
   def getProtections(`type`: ProtectionType): js.Array[Protection] = js.native
   def getRange(a1Notation: String): Range = js.native
-  def getRangeByName(name: String): Range = js.native
+  def getRangeByName(name: String): Range | Null = js.native
   def getRangeList(a1Notations: js.Array[String]): RangeList = js.native
   def getRecalculationInterval(): RecalculationInterval = js.native
   def getRowHeight(rowPosition: Integer): Integer = js.native

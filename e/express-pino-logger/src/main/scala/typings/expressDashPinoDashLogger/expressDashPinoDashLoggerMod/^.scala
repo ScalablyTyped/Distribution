@@ -2,6 +2,7 @@ package typings.expressDashPinoDashLogger.expressDashPinoDashLoggerMod
 
 import typings.express.expressMod.Handler
 import typings.expressDashPinoDashLogger.Anon_Logger
+import typings.pino.pinoMod.DestinationStream
 import typings.pino.pinoMod.LoggerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Handler = js.native
-  def apply(options: LoggerOptions | Anon_Logger): Handler = js.native
+  def apply(optionsOrStream: LoggerOptions | DestinationStream | Anon_Logger): Handler = js.native
+  def apply(options: LoggerOptions, stream: DestinationStream): Handler = js.native
 }
 

@@ -5,7 +5,9 @@ import typings.stripe.stripeMod.customerTaxIdsNs.TaxIdType
 import typings.stripe.stripeMod.errorsNs.RawType
 import typings.stripe.stripeMod.fileUploadsNs.IPurpose
 import typings.stripe.stripeMod.ordersNs.OrderStatus
+import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntendDataFutureUsageOptions
 import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentCancellationReason
+import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentDataCaptureMethodOptions
 import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentFutureUsageType
 import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentPaymentMethodType
 import typings.stripe.stripeMod.paymentMethodsNs.CardBrand
@@ -147,7 +149,7 @@ object stripeStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait automatic extends js.Object
+  sealed trait automatic extends PaymentIntentDataCaptureMethodOptions
   
   @js.native
   sealed trait available extends js.Object
@@ -499,7 +501,7 @@ object stripeStrings {
   sealed trait male extends js.Object
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual extends PaymentIntentDataCaptureMethodOptions
   
   @js.native
   sealed trait manual_review extends js.Object
@@ -566,7 +568,8 @@ object stripeStrings {
   
   @js.native
   sealed trait off_session
-    extends PaymentIntentFutureUsageType
+    extends PaymentIntendDataFutureUsageOptions
+       with PaymentIntentFutureUsageType
        with SetupIntentUsageType
   
   @js.native
@@ -574,7 +577,8 @@ object stripeStrings {
   
   @js.native
   sealed trait on_session
-    extends PaymentIntentFutureUsageType
+    extends PaymentIntendDataFutureUsageOptions
+       with PaymentIntentFutureUsageType
        with SetupIntentUsageType
   
   @js.native

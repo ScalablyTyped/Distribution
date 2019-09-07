@@ -1,6 +1,7 @@
 package typings.stripe.stripeMod.checkoutsNs.sessionsNs
 
 import typings.stripe.stripeMod.paymentIntentsNs.IPaymentIntentCaptureOptions
+import typings.stripe.stripeMod.paymentIntentsNs.IPaymentIntentData
 import typings.stripe.stripeMod.subscriptionsNs.ISubscriptionCustCreationOptions
 import typings.stripe.stripeStrings.auto
 import typings.stripe.stripeStrings.da
@@ -57,7 +58,7 @@ trait ICheckoutCreationOptions extends js.Object {
   /**
     * Details for creation of payment intent
     */
-  var payment_intent_data: js.UndefOr[IPaymentIntentCaptureOptions] = js.undefined
+  var payment_intent_data: js.UndefOr[IPaymentIntentCaptureOptions | IPaymentIntentData] = js.undefined
   /**
     * A list of accepted payment types.
     * 'card' is currently the only supported options
@@ -85,7 +86,7 @@ object ICheckoutCreationOptions {
     customer_email: String = null,
     line_items: js.Array[ICheckoutLineItems] = null,
     locale: auto | da | de | en | es | fi | fr | it | ja | nb | nl | pl | pt | sv | zh = null,
-    payment_intent_data: IPaymentIntentCaptureOptions = null,
+    payment_intent_data: IPaymentIntentCaptureOptions | IPaymentIntentData = null,
     subscription_data: ISubscriptionCustCreationOptions = null
   ): ICheckoutCreationOptions = {
     val __obj = js.Dynamic.literal(cancel_url = cancel_url, payment_method_types = payment_method_types, success_url = success_url)
@@ -95,7 +96,7 @@ object ICheckoutCreationOptions {
     if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email)
     if (line_items != null) __obj.updateDynamic("line_items")(line_items)
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (payment_intent_data != null) __obj.updateDynamic("payment_intent_data")(payment_intent_data)
+    if (payment_intent_data != null) __obj.updateDynamic("payment_intent_data")(payment_intent_data.asInstanceOf[js.Any])
     if (subscription_data != null) __obj.updateDynamic("subscription_data")(subscription_data)
     __obj.asInstanceOf[ICheckoutCreationOptions]
   }

@@ -21,17 +21,17 @@ trait YouTubePlayer extends EventEmitter {
   def getDuration(): Double = js.native
   def getPlaybackRate(): Double = js.native
   def getProgress(): Double = js.native
-  def getState(): YoutubePlayerState = js.native
+  def getState(): YouTubePlayerState = js.native
   def getVolume(): Double = js.native
   def isMuted(): Boolean = js.native
   def load(videoId: String): Unit = js.native
   def load(videoId: String, autoplay: Boolean): Unit = js.native
   def mute(): Unit = js.native
-  def on(event: YoutubePlayerState, callback: js.Function0[Unit]): this.type = js.native
+  def on(event: YouTubePlayerState, callback: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, callback: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
-  def on_playbackQualityChange(event: playbackQualityChange, callback: js.Function1[/* quality */ Double, Unit]): this.type = js.native
+  def on_playbackQualityChange(event: playbackQualityChange, callback: js.Function1[/* quality */ YouTubePlayerQuality, Unit]): this.type = js.native
   @JSName("on")
   def on_playbackRateChange(event: playbackRateChange, callback: js.Function1[/* playbackRate */ Double, Unit]): this.type = js.native
   @JSName("on")
@@ -41,6 +41,7 @@ trait YouTubePlayer extends EventEmitter {
   def pause(): Unit = js.native
   def play(): Unit = js.native
   def seek(seconds: Double): Unit = js.native
+  def setPlaybackQuality(suggestedQuality: YouTubePlayerQuality): Unit = js.native
   def setPlaybackRate(rate: Double): Unit = js.native
   def setSize(width: Double, height: Double): Unit = js.native
   def setVolume(volume: Double): Unit = js.native

@@ -1,12 +1,14 @@
 package typings.playcanvas.pcNs
 
+import typings.playcanvas.ScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.ScriptRegistry
-  * @class Container for all Script Types that are available to this application
+  * @classdesc Container for all Script Types that are available to this application
   * @description Create an instance of a pc.ScriptRegistry.
   * Note: PlayCanvas scripts can access the Script Registry from inside the application with {@link pc.Application#scripts} {@link pc.ADDRESS_REPEAT}.
   * @param {pc.Application} app Application to attach registry to.
@@ -15,7 +17,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScriptRegistry protected () extends js.Object {
   def this(app: Application) = this()
-  var app: Application = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#add
@@ -23,14 +24,14 @@ class ScriptRegistry protected () extends js.Object {
     * Note: when {@link pc.createScript} is called, it will add the {@link ScriptType} to the registry automatically.
     * If a script already exists in registry, and the new script has a `swap` method defined,
     * it will perform code hot swapping automatically in async manner.
-    * @param {ScriptType} scriptType Script Type that is created using {@link pc.createScript}
+    * @param {ScriptType} script Script Type that is created using {@link pc.createScript}
     * @returns {Boolean} True if added for the first time or false if script already exists
     * @example
     * var PlayerController = pc.createScript('playerController');
     * // playerController Script Type will be added to pc.ScriptRegistry automatically
     * app.scripts.has('playerController') === true; // true
     */
-  def add(script: typings.playcanvas.pcNs.ScriptType): Boolean = js.native
+  def add(script: ScriptType): Boolean = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#get
@@ -40,7 +41,7 @@ class ScriptRegistry protected () extends js.Object {
     * @example
     * var PlayerController = app.scripts.get('playerController');
     */
-  def get(name: String): typings.playcanvas.pcNs.ScriptType = js.native
+  def get(name: String): ScriptType = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#has
@@ -64,7 +65,7 @@ class ScriptRegistry protected () extends js.Object {
     *     return o.name;
     * }));
     */
-  def list(): js.Array[typings.playcanvas.pcNs.ScriptType] = js.native
+  def list(): js.Array[ScriptType] = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#remove
@@ -74,6 +75,6 @@ class ScriptRegistry protected () extends js.Object {
     * @example
     * app.scripts.remove('playerController');
     */
-  def remove(script: String): Boolean = js.native
+  def remove(name: String): Boolean = js.native
 }
 

@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
   * @component
+  * @constructor
   * @name pc.SoundComponent
-  * @class The Sound Component controls playback of {@link pc.Sound}s.
-  * @description Create a new Sound Component
+  * @classdesc The Sound Component controls playback of {@link pc.Sound}s.
+  * @description Create a new Sound Component.
   * @param {pc.SoundComponentSystem} system The ComponentSystem that created this Component
   * @param {pc.Entity} entity The entity that the Component is attached to
   * @extends pc.Component
@@ -26,12 +27,37 @@ import scala.scalajs.js.annotation._
 @js.native
 class SoundComponent protected () extends Component {
   def this(system: SoundComponentSystem, entity: Entity) = this()
+  /**
+    * Determines which algorithm to use to reduce the volume of the sound as it moves away from the listener. Can be one of {@link pc.DISTANCE_LINEAR}, {@link pc.DISTANCE_INVERSE} or {@link pc.DISTANCE_EXPONENTIAL}. Default is {@link pc.DISTANCE_LINEAR}.
+    */
   var distanceModel: String = js.native
+  /**
+    * The maximum distance from the listener at which audio falloff stops. Note the volume of the audio is not 0 after this distance, but just doesn't fall off anymore.
+    */
   var maxDistance: Double = js.native
+  /**
+    * The pitch modifier to play the audio with. Must be larger than 0.01
+    */
   var pitch: Double = js.native
+  /**
+    * If true the audio will play back at the location of the Entity in space, so the audio will be affect by the position of the {@link pc.AudioListenerComponent}.
+    */
   var positional: Boolean = js.native
+  /**
+    * The reference distance for reducing volume as the sound source moves further from the listener.
+    */
   var refDistance: Double = js.native
+  /**
+    * The factor used in the falloff equation.
+    */
   var rollOffFactor: Double = js.native
+  /**
+    * A dictionary that contains the {@link pc.SoundSlot}s managed by this Component.
+    */
+  var slots: js.Any = js.native
+  /**
+    * The volume modifier to play the audio with. In range 0-1.
+    */
   var volume: Double = js.native
   /**
     * @function
@@ -58,7 +84,6 @@ class SoundComponent protected () extends Component {
     * // play
     * this.entity.sound.play('beep');
     */
-  def addSlot(name: String): SoundSlot = js.native
   def addSlot(name: String, options: Anon_Asset): SoundSlot = js.native
   /**
     * @function
@@ -71,6 +96,7 @@ class SoundComponent protected () extends Component {
     * // pause a specific sound
     * this.entity.sound.pause('beep');
     */
+  def pause(): Unit = js.native
   def pause(name: String): Unit = js.native
   /**
     * @function

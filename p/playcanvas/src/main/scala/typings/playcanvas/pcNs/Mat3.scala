@@ -1,53 +1,38 @@
 package typings.playcanvas.pcNs
 
 import typings.std.Float32Array
+import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @constructor
   * @name pc.Mat3
-  * @class A 3x3 matrix.
-  * @description Creates a new Mat3 object
-  * @param {Number} [v0] The value in row 0, column 0. If v0 is an array of length 9, the array will be used to populate all components.
-  * @param {Number} [v1] The value in row 1, column 0.
-  * @param {Number} [v2] The value in row 2, column 0.
-  * @param {Number} [v3] The value in row 0, column 1.
-  * @param {Number} [v4] The value in row 1, column 1.
-  * @param {Number} [v5] The value in row 2, column 1.
-  * @param {Number} [v6] The value in row 0, column 2.
-  * @param {Number} [v7] The value in row 1, column 2.
-  * @param {Number} [v8] The value in row 2, column 2.
+  * @classdesc A 3x3 matrix.
+  * @description Creates a new identity Mat3 object.
+  * @property {Float32Array} data Matrix elements in the form of a flat array.
   */
 @JSGlobal("pc.Mat3")
 @js.native
-class Mat3 protected () extends js.Object {
-  def this(v0: js.Tuple9[Double, Double, Double, Double, Double, Double, Double, Double, Double]) = this()
-  def this(
-    v0: Double,
-    v1: Double,
-    v2: Double,
-    v3: Double,
-    v4: Double,
-    v5: Double,
-    v6: Double,
-    v7: Double,
-    v8: Double
-  ) = this()
+class Mat3 () extends js.Object {
+  /**
+    * Matrix elements in the form of a flat array.
+    */
   var data: Float32Array = js.native
   /**
     * @function
     * @name pc.Mat3#copy
     * @description Copies the contents of a source 3x3 matrix to a destination 3x3 matrix.
-    * @param {pc.Mat3} src A 3x3 matrix to be copied.
+    * @param {pc.Mat3} rhs A 3x3 matrix to be copied.
     * @returns {pc.Mat3} Self for chaining
     * @example
     * var src = new pc.Mat3().translate(10, 20, 30);
     * var dst = new pc.Mat3();
     * dst.copy(src);
-    * console.log("The two matrices are " + (src.equal(dst) ? "equal" : "different"));
+    * console.log("The two matrices are " + (src.equals(dst) ? "equal" : "different"));
     */
-  def copy(rhs: Mat3): this.type = js.native
+  def copy(rhs: Mat3): Mat3 = js.native
   /**
     * @function
     * @name pc.Mat3#equals
@@ -72,14 +57,25 @@ class Mat3 protected () extends js.Object {
   def isIdentity(): Boolean = js.native
   /**
     * @function
+    * @name pc.Mat3#set
+    * @description Copies the contents of a source array[9] to a destination 3x3 matrix.
+    * @param {Number[]} src An array[9] to be copied.
+    * @returns {pc.Mat3} Self for chaining
+    * @example
+    * var dst = new pc.Mat3();
+    * dst.set([0, 1, 2, 3, 4, 5, 6, 7, 8]);
+    */
+  def set(src: js.Array[Number]): Mat3 = js.native
+  /**
+    * @function
     * @name pc.Mat3#setIdentity
     * @description Sets the matrix to the identity matrix.
     * @returns {pc.Mat3} Self for chaining.
     * @example
     * m.setIdentity();
-    * console.log("The two matrices are " + (src.equal(dst) ? "equal" : "different"));
+    * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
     */
-  def setIdentity(): this.type = js.native
+  def setIdentity(): Mat3 = js.native
   /**
     * @function
     * @name pc.Mat3#transpose
@@ -91,7 +87,7 @@ class Mat3 protected () extends js.Object {
     * // Transpose in place
     * m.transpose();
     */
-  def transpose(): this.type = js.native
+  def transpose(): Mat3 = js.native
 }
 
 /* static members */

@@ -4,11 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @constructor
+  * @name pc.MaterialHandler
+  * @implements {pc.ResourceHandler}
+  * @classdesc Resource handler used for loading {@link pc.Material} resources
+  * @param {pc.Application} app The running {@link pc.Application}
+  */
 @JSGlobal("pc.MaterialHandler")
 @js.native
-class MaterialHandler () extends js.Object {
-  def load(url: String, callback: js.Function): Unit = js.native
-  def open(url: String, data: js.Any): Unit = js.native
-  def patch(asset: Asset, assets: AssetRegistry): Unit = js.native
+class MaterialHandler protected () extends ResourceHandler {
+  def this(app: Application) = this()
 }
 

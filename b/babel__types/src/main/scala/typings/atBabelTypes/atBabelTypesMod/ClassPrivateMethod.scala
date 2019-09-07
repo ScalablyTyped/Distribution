@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
   var optional: Boolean | Null
   var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: js.Any | Null
-  var static: Boolean | Null
+  var static: Boolean
   var typeParameters: js.Any | Null
   @JSName("type")
   var type_ClassPrivateMethod: typings.atBabelTypes.atBabelTypesStrings.ClassPrivateMethod
@@ -49,6 +49,7 @@ object ClassPrivateMethod {
     key: PrivateName,
     kind: get | set | method | constructor,
     params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    static: Boolean,
     `type`: typings.atBabelTypes.atBabelTypesStrings.ClassPrivateMethod,
     `abstract`: js.UndefOr[Boolean] = js.undefined,
     access: public | `private` | `protected` = null,
@@ -61,11 +62,10 @@ object ClassPrivateMethod {
     optional: js.UndefOr[Boolean] = js.undefined,
     returnType: js.Any = null,
     start: Int | Double = null,
-    static: js.UndefOr[Boolean] = js.undefined,
     trailingComments: js.Array[Comment] = null,
     typeParameters: js.Any = null
   ): ClassPrivateMethod = {
-    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key, kind = kind.asInstanceOf[js.Any], params = params)
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key, kind = kind.asInstanceOf[js.Any], params = params, static = static)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
@@ -78,7 +78,6 @@ object ClassPrivateMethod {
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
     if (returnType != null) __obj.updateDynamic("returnType")(returnType)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[ClassPrivateMethod]

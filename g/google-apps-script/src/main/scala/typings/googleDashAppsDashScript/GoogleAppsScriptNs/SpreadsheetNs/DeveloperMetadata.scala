@@ -9,7 +9,7 @@ trait DeveloperMetadata extends js.Object {
   def getId(): Integer
   def getKey(): String
   def getLocation(): DeveloperMetadataLocation
-  def getValue(): String
+  def getValue(): String | Null
   def getVisibility(): DeveloperMetadataVisibility
   def moveToColumn(column: Range): DeveloperMetadata
   def moveToRow(row: Range): DeveloperMetadata
@@ -27,7 +27,7 @@ object DeveloperMetadata {
     getId: () => Integer,
     getKey: () => String,
     getLocation: () => DeveloperMetadataLocation,
-    getValue: () => String,
+    getValue: () => String | Null,
     getVisibility: () => DeveloperMetadataVisibility,
     moveToColumn: Range => DeveloperMetadata,
     moveToRow: Range => DeveloperMetadata,
