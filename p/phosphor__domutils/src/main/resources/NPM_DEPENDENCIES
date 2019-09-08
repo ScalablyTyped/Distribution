@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@phosphor/domutils" : "1.1.3"
+      "@phosphor/domutils" : "1.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@phosphor/domutils" : "1.1.3"
+      "@phosphor/domutils" : "1.1.4"
     }
   ],
   "compile-devDependencies" : [

@@ -1,5 +1,7 @@
 package typings.atPhosphorDomutils
 
+import typings.std.KeyboardEvent
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +28,19 @@ object libPlatformMod extends js.Object {
       * A flag indicating whether the platform is Windows.
       */
     val IS_WIN: Boolean = js.native
+    /**
+      * Test whether the `accel` key is pressed.
+      *
+      * @param event - The keyboard or mouse event of interest.
+      *
+      * @returns Whether the `accel` key is pressed.
+      *
+      * #### Notes
+      * On Mac the `accel` key is the command key. On all other
+      * platforms the `accel` key is the control key.
+      */
+    def accelKey(event: KeyboardEvent): Boolean = js.native
+    def accelKey(event: MouseEvent): Boolean = js.native
   }
   
 }

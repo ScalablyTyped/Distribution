@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__filebrowser
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 JupyterLab - FileBrowser Widget

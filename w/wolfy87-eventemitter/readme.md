@@ -1,7 +1,7 @@
 
 # Scala.js typings for wolfy87-eventemitter
 
-Typings are for version 5.2.6
+Typings are for version 5.2.8
 
 ## Library description:
 Event based JavaScript for the browser

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/launcher" : "1.1.0"
+      "@jupyterlab/launcher" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/launcher" : "1.1.0"
+      "@jupyterlab/launcher" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

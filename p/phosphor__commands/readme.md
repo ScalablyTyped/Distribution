@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__commands
 
-Typings are for version 1.7.0
+Typings are for version 1.7.1
 
 ## Library description:
 PhosphorJS - Commands

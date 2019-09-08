@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@phosphor/application" : "1.7.0"
+      "@phosphor/application" : "1.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@phosphor/application" : "1.7.0"
+      "@phosphor/application" : "1.7.1"
     }
   ],
   "compile-devDependencies" : [

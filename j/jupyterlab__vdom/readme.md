@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__vdom
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 A viewer for VDOM documents.

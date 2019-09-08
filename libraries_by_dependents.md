@@ -929,6 +929,7 @@
 | 231 | [find-cache-dir](./f/find-cache-dir) | Finds the common standard cache directory
 | 231 | [fs-extra-promise](./f/fs-extra-promise) | Node file system library and fs-extra module promi
 | 231 | [hash_dot_js](./h/hash_dot_js) | Various hash functions that could be run by both b
+| 231 | [wolfy87-eventemitter](./w/wolfy87-eventemitter) | Event based JavaScript for the browser
 | 230 | [passport-google-oauth](./p/passport-google-oauth) | Google (OAuth) authentication strategies for Passp
 | 230 | [util_dot_promisify](./u/util_dot_promisify) | Polyfill/shim for util.promisify in node versions 
 | 229 | [kue](./k/kue) | Feature rich priority job queue backed by redis
@@ -5422,6 +5423,7 @@
 | 3 | [mainloop_dot_js](./m/mainloop_dot_js) | A well-constructed JavaScript main loop useful for
 | 3 | [mapbox__mapbox-sdk](./m/mapbox__mapbox-sdk) | JS SDK for accessing Mapbox APIs
 | 3 | [mapbox__s3urls](./m/mapbox__s3urls) | Create S3 urls from bucket/key or extract bucket/k
+| 3 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK
 | 3 | [micromodal](./m/micromodal) | Tiny javascript library for creating accessible mo
 | 3 | [min-indent](./m/min-indent) | Get the shortest leading whitespace from lines in 
 | 3 | [mobservable](./m/mobservable) | Observable data. Reactive functions. Simple code.

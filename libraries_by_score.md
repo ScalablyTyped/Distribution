@@ -2215,6 +2215,7 @@
 | 0.7063942851955916 | [catbox](./c/catbox) | Multi-strategy object caching service
 | 0.7063572620322925 | [unzipper](./u/unzipper) | Unzip cross-platform streaming API
 | 0.7063280911929717 | [ldclient-js-common](./l/ldclient-js-common) | LaunchDarkly SDK for JavaScript - common code
+| 0.7062667978602339 | [wolfy87-eventemitter](./w/wolfy87-eventemitter) | Event based JavaScript for the browser
 | 0.7062455745946448 | [neat-csv](./n/neat-csv) | Fast CSV parser
 | 0.7062107608496888 | [tcp-port-used](./t/tcp-port-used) | A simple Node.js module to check if a TCP port is 
 | 0.7061641730786923 | [pouchdb](./p/pouchdb) | PouchDB is a pocket-sized database
@@ -6378,6 +6379,7 @@
 | 0.2822189060413144 | [underscore-ko](./u/underscore-ko) | Dead simple utility that attaches Underscore.js ar
 | 0.28205908466324664 | [jquery_dot_fullscreen](./j/jquery_dot_fullscreen) | jQuery plugin for showing any DOM element on a pag
 | 0.2820157648824575 | [gulp-jspm](./g/gulp-jspm) | gulp plugin to build assets loaded with jspm/Syste
+| 0.2819209011708793 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK
 | 0.28180898257565773 | [react-native-keyboard-spa](./r/react-native-keyboard-spacer) | Plug and play react-Native keyboard spacer view.
 | 0.28176624749695867 | [cordova-plugin-websql](./c/cordova-plugin-websql) | Cordova Websql Plugin
 | 0.28036202479207933 | [nivo__tooltip](./n/nivo__tooltip) | -

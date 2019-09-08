@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__application
 
-Typings are for version 1.7.0
+Typings are for version 1.7.1
 
 ## Library description:
 PhosphorJS - Pluggable Application

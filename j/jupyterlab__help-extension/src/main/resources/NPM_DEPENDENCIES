@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/help-extension" : "1.1.0"
+      "@jupyterlab/help-extension" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/help-extension" : "1.1.0"
+      "@jupyterlab/help-extension" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

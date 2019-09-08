@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/statusbar" : "1.1.0"
+      "@jupyterlab/statusbar" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/statusbar" : "1.1.0"
+      "@jupyterlab/statusbar" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

@@ -3,6 +3,8 @@ package typings.atPhosphorDomutils
 import typings.atPhosphorDomutils.libElementMod.ElementExtNs.IBoxSizing
 import typings.atPhosphorDomutils.libElementMod.ElementExtNs.ISizeLimits
 import typings.std.Element
+import typings.std.KeyboardEvent
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +12,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@phosphor/domutils", JSImport.Namespace)
 @js.native
 object atPhosphorDomutilsMod extends js.Object {
+  @JSName("ClipboardExt")
+  @js.native
+  object ClipboardExtNs extends js.Object {
+    /**
+      * Copy text to the system clipboard.
+      *
+      * @param text - The text to copy to the clipboard.
+      */
+    def copyText(text: String): Unit = js.native
+  }
+  
   @JSName("ElementExt")
   @js.native
   object ElementExtNs extends js.Object {
@@ -79,6 +92,19 @@ object atPhosphorDomutilsMod extends js.Object {
       * A flag indicating whether the platform is Windows.
       */
     val IS_WIN: Boolean = js.native
+    /**
+      * Test whether the `accel` key is pressed.
+      *
+      * @param event - The keyboard or mouse event of interest.
+      *
+      * @returns Whether the `accel` key is pressed.
+      *
+      * #### Notes
+      * On Mac the `accel` key is the command key. On all other
+      * platforms the `accel` key is the control key.
+      */
+    def accelKey(event: KeyboardEvent): Boolean = js.native
+    def accelKey(event: MouseEvent): Boolean = js.native
   }
   
   @JSName("Selector")

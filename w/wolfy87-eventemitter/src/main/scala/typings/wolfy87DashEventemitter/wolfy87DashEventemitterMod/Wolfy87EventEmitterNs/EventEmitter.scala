@@ -160,6 +160,7 @@ trait EventEmitter extends js.Object {
     * @param {Array} [args] Optional array of arguments to be passed to each listener.
     * @return {EventEmitter} Current instance of EventEmitter for chaining.
     */
+  def emitEvent(event: RegExp): typings.wolfy87DashEventemitter.wolfy87DashEventemitterMod.Wolfy87EventEmitterNs.EventEmitter = js.native
   def emitEvent(event: RegExp, args: js.Array[_]): typings.wolfy87DashEventemitter.wolfy87DashEventemitterMod.Wolfy87EventEmitterNs.EventEmitter = js.native
   /**
     * Takes a list of listener objects and flattens it into a list of listener functions.

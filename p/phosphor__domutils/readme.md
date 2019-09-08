@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__domutils
 
-Typings are for version 1.1.3
+Typings are for version 1.1.4
 
 ## Library description:
 PhosphorJS - DOM Utilities
