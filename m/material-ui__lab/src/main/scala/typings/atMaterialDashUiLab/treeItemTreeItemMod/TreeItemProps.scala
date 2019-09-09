@@ -65,6 +65,9 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLLIElement>, @material-ui/lab.@material-ui/lab/TreeItem/TreeItem.TreeItemClassKey, never> */
 trait TreeItemProps extends js.Object {
+  /**
+    * The component used for the transition.
+    */
   var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
@@ -122,6 +125,9 @@ trait TreeItemProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapTreeItemClassKey] = js.undefined
+  /**
+    * The icon used to collapse the node.
+    */
   var collapseIcon: js.UndefOr[ReactNode] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Boolean] = js.undefined
@@ -132,9 +138,18 @@ trait TreeItemProps extends js.Object {
   var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The icon displayed next to a end node.
+    */
   var endIcon: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * The icon used to expand the node.
+    */
   var expandIcon: js.UndefOr[ReactNode] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The icon to display next to the tree node's label.
+    */
   var icon: js.UndefOr[ReactNode] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -146,8 +161,14 @@ trait TreeItemProps extends js.Object {
   var itemRef: js.UndefOr[String] = js.undefined
   var itemScope: js.UndefOr[Boolean] = js.undefined
   var itemType: js.UndefOr[String] = js.undefined
+  /**
+    * The tree node label.
+    */
   var label: js.UndefOr[ReactNode] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
+  /**
+    * The id of the node.
+    */
   var nodeId: String
   var onAbort: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
   var onAbortCapture: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined

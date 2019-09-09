@@ -20,19 +20,19 @@ trait SwitchPropsIOS extends ViewProps {
   /**
     * Background color when the switch is turned on.
     *
-    * @deprecated
+    * @deprecated use trackColor instead
     */
   var onTintColor: js.UndefOr[String] = js.undefined
   /**
     * Color of the foreground switch grip.
     *
-    * @deprecated
+    * @deprecated use thumbColor instead
     */
   var thumbTintColor: js.UndefOr[String] = js.undefined
   /**
     * Background color when the switch is turned off.
     *
-    * @deprecated
+    * @deprecated use trackColor instead
     */
   var tintColor: js.UndefOr[String] = js.undefined
 }

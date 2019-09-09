@@ -23,14 +23,9 @@ package object reactDashNativeMod {
   type AccessibilityInfo = AccessibilityInfoStatic
   type ActionSheetIOS = ActionSheetIOSStatic
   type ActivityIndicatorComponent = Component[ActivityIndicatorProps, js.Object, js.Any]
-  type AdSupportIOS = AdSupportIOSStatic
   type Alert = AlertStatic
-  type AlertAndroid = AlertAndroidStatic
-  type AlertIOS = AlertIOSStatic
   type AppState = AppStateStatic
-  type AppStateIOS = AppStateStatic
   type AsyncStorage = AsyncStorageStatic
-  type BackAndroid = BackAndroidStatic
   type BackHandler = BackHandlerStatic
   type BackPressEventName = hardwareBackPress
   type CameraRoll = CameraRollStatic
@@ -45,7 +40,6 @@ package object reactDashNativeMod {
   type EasingFunction = js.Function1[/* value */ Double, Double]
   type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[Boolean], Unit]
   type Falsy = js.UndefOr[Null | `false`]
-  type Geolocation = GeolocationStatic
   type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
   type Handle = Double
   type I18nManager = I18nManagerStatic
@@ -57,7 +51,6 @@ package object reactDashNativeMod {
   type ImageRequireSource = Double
   type ImageSourcePropType = ImageURISource | js.Array[ImageURISource] | ImageRequireSource
   type ImageStore = ImageStoreStatic
-  type IntentAndroid = IntentAndroidStatic
   /**
     * It is a component to solve the common problem of views that need to move out of the way of the virtual keyboard.
     * It can automatically adjust either its position or bottom padding based on the position of the keyboard.
@@ -73,7 +66,6 @@ package object reactDashNativeMod {
   type KeyboardTypeOptions = _KeyboardTypeOptions | KeyboardTypeAndroid
   type LayoutAnimation = LayoutAnimationStatic
   type Linking = LinkingStatic
-  type LinkingIOS = LinkingIOSStatic
   type ListRenderItem[ItemT] = js.Function1[/* info */ ListRenderItemInfo[ItemT], ReactElement | Null]
   type ListViewComponent = Component[ListViewProps, js.Object, js.Any]
   /**
@@ -101,7 +93,6 @@ package object reactDashNativeMod {
     */
   type NativeModulesStatic = StringDictionary[js.Any]
   type NativeSyntheticEvent[T] = BaseSyntheticEvent[T, NodeHandle, NodeHandle]
-  type NetInfo = NetInfoStatic
   type PanResponder = PanResponderStatic
   type PermissionsAndroid = PermissionsAndroidStatic
   /**
@@ -278,7 +269,6 @@ package object reactDashNativeMod {
   type TouchableWithoutFeedbackComponent = Component[TouchableWithoutFeedbackProps, js.Object, js.Any]
   type UIManager = UIManagerStatic
   type Vibration = VibrationStatic
-  type VibrationIOS = VibrationIOSStatic
   /**
     * The most fundamental component for building UI, View is a container that supports layout with flexbox, style, some touch handling,
     * and accessibility controls, and is designed to be nested inside other views and to have 0 to many children of any type.

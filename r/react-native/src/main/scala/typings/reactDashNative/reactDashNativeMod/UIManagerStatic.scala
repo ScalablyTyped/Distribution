@@ -1,6 +1,7 @@
 package typings.reactDashNative.reactDashNativeMod
 
 import typings.react.reactMod.ReactElement
+import typings.reactDashNative.Anon_Commands
 import typings.reactDashNative.Anon_Format
 import typings.reactDashNative.reactDashNativeStrings.window
 import scala.scalajs.js
@@ -20,6 +21,7 @@ trait UIManagerStatic extends js.Object {
   def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
+  def getViewManagerConfig(name: String): Anon_Commands = js.native
   /**
     * Determines the location on screen, width, and height of the given view and
     * returns the values via an async callback. If successful, the callback will

@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScrollView ()
   extends Component[ScrollViewProps, js.Object, js.Any] {
-  // Deprecated, do not use.
+  /**
+    * @deprecated Use scrollTo instead
+    */
   var scrollWithoutAnimationTo: js.UndefOr[js.Function2[/* y */ Double, /* x */ Double, Unit]] = js.native
   // Undocumented
   def getInnerViewNode(): js.Any = js.native

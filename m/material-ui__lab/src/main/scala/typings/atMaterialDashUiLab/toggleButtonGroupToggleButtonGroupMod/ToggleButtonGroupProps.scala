@@ -67,7 +67,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/lab.@material-ui/lab/ToggleButtonGroup/ToggleButtonGroup.ToggleButtonGroupClassKey, 'onChange'> */
+/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/lab.@material-ui/lab/ToggleButtonGroup/ToggleButtonGroup.ToggleButtonGroupClassKey, 'onChange' | 'children'> */
 trait ToggleButtonGroupProps extends js.Object {
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
@@ -122,6 +122,9 @@ trait ToggleButtonGroupProps extends js.Object {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
+  /**
+    * The content of the button.
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapToggleButtonGroupClassKey] = js.undefined
@@ -134,6 +137,9 @@ trait ToggleButtonGroupProps extends js.Object {
   var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, only allow one of the child ToggleButton values to be selected.
+    */
   var exclusive: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -165,6 +171,14 @@ trait ToggleButtonGroupProps extends js.Object {
   var onCanPlayCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlayThroughCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  /**
+    * Callback fired when the value changes.
+    *
+    * @param {object} event The event source of the callback.
+    * @param {any} value of the selected buttons. When `exclusive` is true
+    * this is a single value; when false an array of selected values. If no value
+    * is selected and `exclusive` is true the value is null; when false an empty array.
+    */
   var onChange: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* value */ js.Any, Unit]
   ] = js.undefined
@@ -317,7 +331,9 @@ trait ToggleButtonGroupProps extends js.Object {
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The size of the buttons.
+    */
   var size: js.UndefOr[small | medium | large] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var spellCheck: js.UndefOr[Boolean] = js.undefined
@@ -328,6 +344,10 @@ trait ToggleButtonGroupProps extends js.Object {
   var title: js.UndefOr[String] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
+  /**
+    * The currently selected value within the group or an array of selected
+    * values when `exclusive` is false.
+    */
   var value: js.UndefOr[js.Any] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
 }
@@ -500,7 +520,6 @@ object ToggleButtonGroupProps {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -680,7 +699,6 @@ object ToggleButtonGroupProps {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role)
     if (security != null) __obj.updateDynamic("security")(security)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)

@@ -11,6 +11,7 @@ trait TreeshakingOptions extends js.Object {
   /** @deprecated Use `moduleSideEffects` instead */
   var pureExternalModules: js.UndefOr[PureModulesOption] = js.undefined
   var tryCatchDeoptimization: js.UndefOr[Boolean] = js.undefined
+  var unknownGlobalSideEffects: js.UndefOr[Boolean] = js.undefined
 }
 
 object TreeshakingOptions {
@@ -20,7 +21,8 @@ object TreeshakingOptions {
     moduleSideEffects: ModuleSideEffectsOption = null,
     propertyReadSideEffects: js.UndefOr[Boolean] = js.undefined,
     pureExternalModules: PureModulesOption = null,
-    tryCatchDeoptimization: js.UndefOr[Boolean] = js.undefined
+    tryCatchDeoptimization: js.UndefOr[Boolean] = js.undefined,
+    unknownGlobalSideEffects: js.UndefOr[Boolean] = js.undefined
   ): TreeshakingOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations)
@@ -28,6 +30,7 @@ object TreeshakingOptions {
     if (!js.isUndefined(propertyReadSideEffects)) __obj.updateDynamic("propertyReadSideEffects")(propertyReadSideEffects)
     if (pureExternalModules != null) __obj.updateDynamic("pureExternalModules")(pureExternalModules.asInstanceOf[js.Any])
     if (!js.isUndefined(tryCatchDeoptimization)) __obj.updateDynamic("tryCatchDeoptimization")(tryCatchDeoptimization)
+    if (!js.isUndefined(unknownGlobalSideEffects)) __obj.updateDynamic("unknownGlobalSideEffects")(unknownGlobalSideEffects)
     __obj.asInstanceOf[TreeshakingOptions]
   }
 }

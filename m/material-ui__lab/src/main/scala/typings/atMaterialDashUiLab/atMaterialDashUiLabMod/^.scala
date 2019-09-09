@@ -8,6 +8,7 @@ import typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleB
 import typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps
 import typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +17,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Rating: ComponentType[RatingProps] = js.native
-  val Skeleton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverridableComponent<{  props  :{  disableAnimate ? :boolean,   height ? :number | string,   variant ? :'text' | 'rect' | 'circle',   width ? :number | string},   defaultComponent  :'div',   classKey  :SkeletonClassKey}> */ js.Any = js.native
-  val SpeedDial: ComponentType[SpeedDialProps] = js.native
-  val SpeedDialAction: ComponentType[SpeedDialActionProps] = js.native
-  val SpeedDialIcon: ComponentType[SpeedDialIconProps] = js.native
-  val ToggleButton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendButtonBase<{  props  :{  disableFocusRipple ? :boolean,   selected ? :boolean,   value ? :any},   defaultComponent  :'button',   classKey  :ToggleButtonClassKey}> */ js.Any = js.native
-  val ToggleButtonGroup: ComponentType[ToggleButtonGroupProps] = js.native
-  val TreeItem: ComponentType[TreeItemProps] = js.native
-  val TreeView: ComponentType[TreeViewProps] = js.native
+  val Skeleton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
+  val ToggleButton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendButtonBase<ToggleButtonTypeMap> */ js.Any = js.native
+  def SpeedDial(props: SpeedDialProps): Element = js.native
+  def SpeedDialAction(props: SpeedDialActionProps): Element = js.native
+  def SpeedDialIcon(props: SpeedDialIconProps): Element = js.native
+  def ToggleButtonGroup(props: ToggleButtonGroupProps): Element = js.native
+  def TreeItem(props: TreeItemProps): Element = js.native
+  def TreeView(props: TreeViewProps): Element = js.native
 }
 

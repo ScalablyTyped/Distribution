@@ -6,7 +6,7 @@ import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialAc
 import typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
 import typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialClassKey
 import typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
-import typings.atMaterialDashUiLab.toggleButtonToggleButtonMod._ToggleButtonClassKey
+import typings.atMaterialDashUiLab.toggleButtonToggleButtonMod.ToggleButtonClassKey
 import typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemClassKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -92,7 +92,12 @@ object atMaterialDashUiLabStrings {
   sealed trait directionUp extends SpeedDialClassKey
   
   @js.native
-  sealed trait disabled extends RatingClassKey
+  sealed trait disabled
+    extends RatingClassKey
+       with ToggleButtonClassKey
+  
+  @js.native
+  sealed trait div extends js.Object
   
   @js.native
   sealed trait down extends js.Object
@@ -123,6 +128,15 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait group extends TreeItemClassKey
+  
+  @js.native
+  sealed trait grouped extends ToggleButtonGroupClassKey
+  
+  @js.native
+  sealed trait groupedSizeLarge extends ToggleButtonGroupClassKey
+  
+  @js.native
+  sealed trait groupedSizeSmall extends ToggleButtonGroupClassKey
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -162,8 +176,8 @@ object atMaterialDashUiLabStrings {
   @js.native
   sealed trait label
     extends RatingClassKey
+       with ToggleButtonClassKey
        with TreeItemClassKey
-       with _ToggleButtonClassKey
   
   @js.native
   sealed trait large extends js.Object
@@ -265,19 +279,22 @@ object atMaterialDashUiLabStrings {
        with SpeedDialActionClassKey
        with SpeedDialClassKey
        with SpeedDialIconClassKey
+       with ToggleButtonClassKey
        with ToggleButtonGroupClassKey
        with TreeItemClassKey
   
   @js.native
-  sealed trait selected
-    extends ToggleButtonGroupClassKey
-       with _ToggleButtonClassKey
+  sealed trait selected extends ToggleButtonClassKey
   
   @js.native
-  sealed trait sizeLarge extends RatingClassKey
+  sealed trait sizeLarge
+    extends RatingClassKey
+       with ToggleButtonClassKey
   
   @js.native
-  sealed trait sizeSmall extends RatingClassKey
+  sealed trait sizeSmall
+    extends RatingClassKey
+       with ToggleButtonClassKey
   
   @js.native
   sealed trait small extends js.Object
@@ -373,6 +390,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
+  def div: div = "div".asInstanceOf[div]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
@@ -392,6 +411,12 @@ object atMaterialDashUiLabStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
+  @scala.inline
+  def grouped: grouped = "grouped".asInstanceOf[grouped]
+  @scala.inline
+  def groupedSizeLarge: groupedSizeLarge = "groupedSizeLarge".asInstanceOf[groupedSizeLarge]
+  @scala.inline
+  def groupedSizeSmall: groupedSizeSmall = "groupedSizeSmall".asInstanceOf[groupedSizeSmall]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline

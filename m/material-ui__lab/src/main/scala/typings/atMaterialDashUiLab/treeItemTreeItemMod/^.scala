@@ -1,6 +1,6 @@
 package typings.atMaterialDashUiLab.treeItemTreeItemMod
 
-import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/lab/TreeItem/TreeItem", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: ComponentType[TreeItemProps] = js.native
+  def default(props: TreeItemProps): Element = js.native
 }
 

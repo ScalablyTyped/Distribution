@@ -65,7 +65,6 @@ import typings.react.reactMod.FormEventHandler
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.PointerEventHandler
-import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
@@ -79,10 +78,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>, @material-ui/lab.@material-ui/lab/SpeedDialAction/SpeedDialAction.SpeedDialActionClassKey, never> */
+/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>, @material-ui/lab.@material-ui/lab/SpeedDialAction/SpeedDialAction.SpeedDialActionClassKey, 'children'> */
 trait SpeedDialActionProps extends js.Object {
+  /**
+    * Props applied to the [`Button`](/api/button/) component.
+    */
   var ButtonProps: js.UndefOr[PartialButtonProps] = js.undefined
   var PopperProps: js.UndefOr[js.Object] = js.undefined
+  /**
+    * Classes applied to the [`Tooltip`](/api/tooltip/) element.
+    */
   var TooltipClasses: js.UndefOr[PartialClassNameMapTooltipClassKey] = js.undefined
   var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
   var TransitionProps: js.UndefOr[typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps] = js.undefined
@@ -139,7 +144,6 @@ trait SpeedDialActionProps extends js.Object {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
-  var children: js.UndefOr[ReactElement] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapSpeedDialActionClassKey] = js.undefined
   var color: js.UndefOr[String] = js.undefined
@@ -149,6 +153,9 @@ trait SpeedDialActionProps extends js.Object {
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  /**
+    * Adds a transition delay, to allow a series of SpeedDialActions to be animated.
+    */
   var delay: js.UndefOr[Double] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var disableFocusListener: js.UndefOr[Boolean] = js.undefined
@@ -158,7 +165,10 @@ trait SpeedDialActionProps extends js.Object {
   var enterDelay: js.UndefOr[Double] = js.undefined
   var enterTouchDelay: js.UndefOr[Double] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
-  var icon: ReactNode
+  /**
+    * The Icon to display in the SpeedDial Floating Action Button.
+    */
+  var icon: js.UndefOr[ReactNode] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
@@ -354,10 +364,19 @@ trait SpeedDialActionProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * Make the tooltip always visible when the SpeedDial is open.
+    */
   var tooltipOpen: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Placement of the tooltip.
+    */
   var tooltipPlacement: js.UndefOr[
     `bottom-end` | `bottom-start` | bottom | `left-end` | `left-start` | left | `right-end` | `right-start` | right | `top-end` | `top-start` | top
   ] = js.undefined
+  /**
+    * Label to display in the tooltip.
+    */
   var tooltipTitle: js.UndefOr[ReactNode] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -367,7 +386,6 @@ trait SpeedDialActionProps extends js.Object {
 object SpeedDialActionProps {
   @scala.inline
   def apply(
-    icon: ReactNode,
     ButtonProps: PartialButtonProps = null,
     PopperProps: js.Object = null,
     TooltipClasses: PartialClassNameMapTooltipClassKey = null,
@@ -426,7 +444,6 @@ object SpeedDialActionProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    children: ReactElement = null,
     className: String = null,
     classes: PartialClassNameMapSpeedDialActionClassKey = null,
     color: String = null,
@@ -445,6 +462,7 @@ object SpeedDialActionProps {
     enterDelay: Int | Double = null,
     enterTouchDelay: Int | Double = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    icon: ReactNode = null,
     id: String = null,
     inlist: js.Any = null,
     innerRef: Ref[_] | RefObject[_] = null,
@@ -564,7 +582,7 @@ object SpeedDialActionProps {
     unselectable: on | off = null,
     vocab: String = null
   ): SpeedDialActionProps = {
-    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)
     if (PopperProps != null) __obj.updateDynamic("PopperProps")(PopperProps)
     if (TooltipClasses != null) __obj.updateDynamic("TooltipClasses")(TooltipClasses)
@@ -623,7 +641,6 @@ object SpeedDialActionProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave)
-    if (children != null) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (color != null) __obj.updateDynamic("color")(color)
@@ -642,6 +659,7 @@ object SpeedDialActionProps {
     if (enterDelay != null) __obj.updateDynamic("enterDelay")(enterDelay.asInstanceOf[js.Any])
     if (enterTouchDelay != null) __obj.updateDynamic("enterTouchDelay")(enterTouchDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])

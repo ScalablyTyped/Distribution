@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TextInputState extends js.Object {
   /**
-    * @deprecated
+    * @deprecated Use ref.blur instead
     * @param textFieldID id of the text field to focus
     * Unfocuses the specified text field
     * noop if it wasn't focused
@@ -25,7 +25,7 @@ trait TextInputState extends js.Object {
     */
   def currentlyFocusedField(): Double = js.native
   /**
-    * @deprecated
+    * @deprecated Use ref.focus instead
     * @param TextInputID id of the text field to focus
     * Focuses the specified text field
     * noop if the text field was already focused

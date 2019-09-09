@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sparkpost"
-version := "2.1-dt-20180517Z-2fae76"
+version := "2.1-dt-20180517Z-c81901"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-c0ff92",
   "org.scalablytyped" %%% "form-data" % "2.5.1-a9742c",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190713Z-5851d6",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-40153f",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-011dc6")
 publishArtifact in packageDoc := false

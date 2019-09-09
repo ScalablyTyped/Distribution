@@ -65,6 +65,5 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
   ] = js.native
   var View: ReactNativeThemedStyledFunction[TypeofClassView, T] = js.native
   var ViewPagerAndroid: ReactNativeThemedStyledFunction[Instantiable0[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroid], T] = js.native
-  var WebView: ReactNativeThemedStyledFunction[Instantiable0[typings.reactDashNative.reactDashNativeMod.WebView], T] = js.native
 }
 

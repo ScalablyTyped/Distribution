@@ -15,7 +15,7 @@ trait TransformModuleJSON extends js.Object {
   var originalSourcemap: ExistingDecodedSourceMap | Null
   var resolvedIds: js.UndefOr[ResolvedIdMap] = js.undefined
   var sourcemapChain: js.Array[DecodedSourceMapOrMissing]
-  var transformDependencies: js.Array[String] | Null
+  var transformDependencies: js.Array[String]
 }
 
 object TransformModuleJSON {
@@ -26,16 +26,15 @@ object TransformModuleJSON {
     customTransformCache: Boolean,
     originalCode: String,
     sourcemapChain: js.Array[DecodedSourceMapOrMissing],
+    transformDependencies: js.Array[String],
     moduleSideEffects: js.UndefOr[Boolean] = js.undefined,
     originalSourcemap: ExistingDecodedSourceMap = null,
-    resolvedIds: ResolvedIdMap = null,
-    transformDependencies: js.Array[String] = null
+    resolvedIds: ResolvedIdMap = null
   ): TransformModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, originalCode = originalCode, sourcemapChain = sourcemapChain)
+    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, originalCode = originalCode, sourcemapChain = sourcemapChain, transformDependencies = transformDependencies)
     if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
     if (originalSourcemap != null) __obj.updateDynamic("originalSourcemap")(originalSourcemap)
     if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds)
-    if (transformDependencies != null) __obj.updateDynamic("transformDependencies")(transformDependencies)
     __obj.asInstanceOf[TransformModuleJSON]
   }
 }

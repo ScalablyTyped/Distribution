@@ -31,9 +31,6 @@ trait reactDashNativeProps {
   def ActivityIndicatorProps: typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps.type = typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps
   type ActivityIndicatorProps = typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps
   @scala.inline
-  def ActivityIndicatorIOSProps: typings.reactDashNative.reactDashNativeMod.ActivityIndicatorIOSProps.type = typings.reactDashNative.reactDashNativeMod.ActivityIndicatorIOSProps
-  type ActivityIndicatorIOSProps = typings.reactDashNative.reactDashNativeMod.ActivityIndicatorIOSProps
-  @scala.inline
   def ButtonProps: typings.reactDashNative.reactDashNativeMod.ButtonProps.type = typings.reactDashNative.reactDashNativeMod.ButtonProps
   type ButtonProps = typings.reactDashNative.reactDashNativeMod.ButtonProps
   @scala.inline
@@ -166,8 +163,5 @@ trait reactDashNativeProps {
   @scala.inline
   def ViewPagerAndroidProps: typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps.type = typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps
   type ViewPagerAndroidProps = typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps
-  @scala.inline
-  def WebViewProps: typings.reactDashNative.reactDashNativeMod.WebViewProps.type = typings.reactDashNative.reactDashNativeMod.WebViewProps
-  type WebViewProps = typings.reactDashNative.reactDashNativeMod.WebViewProps
 }
 

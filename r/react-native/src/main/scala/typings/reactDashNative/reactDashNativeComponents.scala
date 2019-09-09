@@ -25,8 +25,6 @@ object reactDashNativeComponents extends reactDashNativeProps {
   @scala.inline
   def ActivityIndicator: ComponentType[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ActivityIndicator].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps]]
   @scala.inline
-  def ActivityIndicatorIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorIOSProps]]
-  @scala.inline
   def Button: ComponentType[typings.reactDashNative.reactDashNativeMod.ButtonProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ButtonProps]]
   @scala.inline
   def CheckBox: ComponentType[typings.reactDashNative.reactDashNativeMod.CheckBoxProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.CheckBox].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.CheckBoxProps]]
@@ -120,7 +118,5 @@ object reactDashNativeComponents extends reactDashNativeProps {
   def View: ComponentType[typings.reactDashNative.reactDashNativeMod.ViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.View].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ViewProps]]
   @scala.inline
   def ViewPagerAndroid: ComponentType[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps]]
-  @scala.inline
-  def WebView: ComponentType[typings.reactDashNative.reactDashNativeMod.WebViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.WebView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.WebViewProps]]
 }
 

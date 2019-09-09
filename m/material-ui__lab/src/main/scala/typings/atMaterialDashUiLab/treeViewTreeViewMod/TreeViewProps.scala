@@ -125,10 +125,27 @@ trait TreeViewProps extends js.Object {
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The default icon used to collapse the node.
+    */
   var defaultCollapseIcon: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * The default icon displayed next to a end node. This is applied to all
+    * tree nodes and can be overridden by the TreeItem `icon` prop.
+    */
   var defaultEndIcon: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * The default icon used to expand the node.
+    */
   var defaultExpandIcon: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * Expanded node ids.
+    */
   var defaultExpanded: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * The default icon displayed next to a parent node. This is applied to all
+    * parent nodes and can be overridden by the TreeItem `icon` prop.
+    */
   var defaultParentIcon: js.UndefOr[ReactNode] = js.undefined
   var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
@@ -243,6 +260,12 @@ trait TreeViewProps extends js.Object {
   var onMouseOverCapture: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
   var onMouseUpCapture: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
+  /**
+    * Callback fired when a `TreeItem` is expanded/collapsed.
+    *
+    * @param {string} nodeId The id of the toggled node.
+    * @param {boolean} expanded The node status - If `true` the node was expanded. If `false` the node was collapsed.
+    */
   var onNodeToggle: js.UndefOr[js.Function2[/* nodeId */ String, /* expanded */ Boolean, Unit]] = js.undefined
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined
   var onPasteCapture: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined

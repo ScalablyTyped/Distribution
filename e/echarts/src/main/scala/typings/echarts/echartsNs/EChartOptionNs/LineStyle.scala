@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Line style
   */
 trait LineStyle extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String | js.Array[String]] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var shadowBlur: js.UndefOr[Double] = js.undefined
   var shadowColor: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ trait LineStyle extends js.Object {
 object LineStyle {
   @scala.inline
   def apply(
-    color: String = null,
+    color: String | js.Array[String] = null,
     opacity: Int | Double = null,
     shadowBlur: Int | Double = null,
     shadowColor: String = null,
@@ -34,7 +34,7 @@ object LineStyle {
     width: Int | Double = null
   ): LineStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)

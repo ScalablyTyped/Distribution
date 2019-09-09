@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Dropped 1719 components to please scalac */
+/* Dropped 2034 components to please scalac */
 object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def AcUnit: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AcUnit].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -128,6 +128,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def AccountCircleSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountCircleSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def AccountCircleTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountCircleTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AccountTree: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountTree].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AccountTreeOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountTreeOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AccountTreeRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountTreeRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AccountTreeSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountTreeSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AccountTreeTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountTreeTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def Adb: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Adb].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -499,6 +509,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def AlternateEmailTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AlternateEmailTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def AmpStories: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStories].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AmpStoriesOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStoriesOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AmpStoriesRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStoriesRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AmpStoriesSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStoriesSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def AmpStoriesTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStoriesTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def Android: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Android].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def AndroidOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AndroidOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -518,6 +538,18 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def AnnouncementSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AnnouncementSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def AnnouncementTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AnnouncementTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def Apartment: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Apartment].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ApartmentOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ApartmentOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ApartmentRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ApartmentRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ApartmentSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ApartmentSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ApartmentTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ApartmentTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def Apple: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Apple].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def Apps: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Apps].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -878,6 +910,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def BarChartSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BarChartSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def BarChartTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BarChartTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def Bathtub: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Bathtub].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def BathtubOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BathtubOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def BathtubRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BathtubRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def BathtubSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BathtubSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def BathtubTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BathtubTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def Battery20: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Battery20].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -1735,6 +1777,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def CancelRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def CancelScheduleSend: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelScheduleSend].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def CancelScheduleSendOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelScheduleSendOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def CancelScheduleSendRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelScheduleSendRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def CancelScheduleSendSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelScheduleSendSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def CancelScheduleSendTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelScheduleSendTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def CancelSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def CancelTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CancelTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -2259,6 +2311,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def ContactSupportTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactSupportTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def Contactless: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Contactless].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ContactlessOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactlessOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ContactlessRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactlessRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ContactlessSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactlessSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def ContactlessTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactlessTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def Contacts: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Contacts].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def ContactsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -2488,6 +2550,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def DateRangeSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DateRangeSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def DateRangeTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DateRangeTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def Deck: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Deck].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DeckOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DeckOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DeckRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DeckRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DeckSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DeckSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DeckTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DeckTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def Dehaze: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Dehaze].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -2879,6 +2951,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def DonutSmallTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DonutSmallTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def DoubleArrow: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoubleArrow].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DoubleArrowOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoubleArrowOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DoubleArrowRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoubleArrowRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DoubleArrowSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoubleArrowSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DoubleArrowTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoubleArrowTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def Drafts: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Drafts].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def DraftsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DraftsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -2939,6 +3021,26 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def DvrTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DvrTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def DynamicFeed: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DynamicFeed].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DynamicFeedOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DynamicFeedOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DynamicFeedRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DynamicFeedRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DynamicFeedSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DynamicFeedSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def DynamicFeedTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DynamicFeedTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def Eco: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Eco].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EcoOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EcoOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EcoRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EcoRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EcoSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EcoSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EcoTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EcoTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def Edit: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Edit].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def EditAttributes: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EditAttributes].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -2989,6 +3091,96 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def EmailTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmailTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def EmojiEmotions: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEmotions].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEmotionsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEmotionsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEmotionsRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEmotionsRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEmotionsSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEmotionsSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEmotionsTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEmotionsTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEvents: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEvents].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEventsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEventsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEventsRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEventsRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEventsSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEventsSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiEventsTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiEventsTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFlags: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFlags].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFlagsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFlagsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFlagsRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFlagsRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFlagsSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFlagsSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFlagsTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFlagsTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFoodBeverage: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFoodBeverage].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFoodBeverageOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFoodBeverageOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFoodBeverageRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFoodBeverageRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFoodBeverageSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFoodBeverageSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiFoodBeverageTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiFoodBeverageTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiNature: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiNature].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiNatureOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiNatureOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiNatureRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiNatureRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiNatureSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiNatureSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiNatureTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiNatureTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiObjects: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiObjects].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiObjectsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiObjectsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiObjectsRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiObjectsRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiObjectsSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiObjectsSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiObjectsTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiObjectsTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiPeople: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiPeople].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiPeopleOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiPeopleOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiPeopleRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiPeopleRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiPeopleSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiPeopleSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiPeopleTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiPeopleTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiSymbols: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbols].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiSymbolsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbolsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiSymbolsRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbolsRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiSymbolsSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbolsSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiSymbolsTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbolsTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiTransportation: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiTransportation].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiTransportationOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiTransportationOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiTransportationRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiTransportationRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiTransportationSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiTransportationSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EmojiTransportationTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiTransportationTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def EnhancedEncryption: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EnhancedEncryption].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def EnhancedEncryptionOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EnhancedEncryptionOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -3029,6 +3221,14 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def ErrorTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ErrorTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def Euro: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Euro].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EuroOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EuroRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EuroSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def EuroSymbol: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroSymbol].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def EuroSymbolOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroSymbolOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -3038,6 +3238,8 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def EuroSymbolSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroSymbolSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def EuroSymbolTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroSymbolTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def EuroTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EuroTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def EvStation: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EvStation].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -3238,6 +3440,8 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def FaceSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FaceSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def FaceTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FaceTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def Facebook: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Facebook].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def FastForward: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FastForward].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -3609,6 +3813,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def FingerprintTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FingerprintTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def Fireplace: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Fireplace].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FireplaceOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FireplaceOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FireplaceRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FireplaceRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FireplaceSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FireplaceSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FireplaceTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FireplaceTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def FirstPage: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FirstPage].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def FirstPageOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FirstPageOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -3710,6 +3924,26 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def FlightTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlightTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def Flip: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Flip].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraAndroid: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraAndroidOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraAndroidOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraAndroidRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraAndroidRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraAndroidSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraAndroidSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraAndroidTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraAndroidTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraIos: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraIos].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraIosOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraIosOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraIosRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraIosRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraIosSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraIosSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def FlipCameraIosTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipCameraIosTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def FlipOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -4419,6 +4653,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def HearingTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HearingTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def Height: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Height].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HeightOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HeightOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HeightRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HeightRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HeightSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HeightSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HeightTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HeightTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def Help: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Help].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def HelpOutline: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HelpOutline].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -4489,6 +4733,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def HomeTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HomeTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def HomeWork: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HomeWork].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HomeWorkOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HomeWorkOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HomeWorkRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HomeWorkRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HomeWorkSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HomeWorkSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HomeWorkTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HomeWorkTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def HorizontalSplit: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HorizontalSplit].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def HorizontalSplitOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HorizontalSplitOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -4538,6 +4792,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def HourglassFullSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HourglassFullSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def HourglassFullTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HourglassFullTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def House: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.House].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HouseOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HouseOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HouseRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HouseRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HouseSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HouseSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def HouseTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HouseTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def HowToReg: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HowToReg].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -4757,6 +5021,8 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def InsertPhotoTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.InsertPhotoTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def Instagram: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Instagram].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def InvertColors: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.InvertColors].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def InvertColorsOff: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.InvertColorsOff].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -4896,6 +5162,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def KeyboardVoiceSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardVoiceSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def KeyboardVoiceTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardVoiceTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def KingBed: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KingBed].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def KingBedOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KingBedOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def KingBedRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KingBedRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def KingBedSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KingBedSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def KingBedTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KingBedTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def Kitchen: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Kitchen].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -5156,6 +5432,8 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def LinkedCameraSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LinkedCameraSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def LinkedCameraTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LinkedCameraTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def LinkedIn: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LinkedIn].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def List: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.List].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -5749,6 +6027,26 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def Menu: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Menu].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def MenuBook: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuBook].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuBookOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuBookOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuBookRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuBookRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuBookSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuBookSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuBookTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuBookTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuOpen: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuOpen].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuOpenOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuOpenOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuOpenRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuOpenRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuOpenSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuOpenSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MenuOpenTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuOpenTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def MenuOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def MenuRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MenuRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -6037,6 +6335,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def MultilineChartTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MultilineChartTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def Museum: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Museum].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MuseumOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MuseumOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MuseumRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MuseumRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MuseumSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MuseumSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def MuseumTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MuseumTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def MusicNote: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MusicNote].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def MusicNoteOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MusicNoteOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -6206,6 +6514,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def NfcSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NfcSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def NfcTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NfcTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def NightsStay: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NightsStay].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def NightsStayOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NightsStayOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def NightsStayRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NightsStayRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def NightsStaySharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NightsStaySharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def NightsStayTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NightsStayTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def NoEncryption: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NoEncryption].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
@@ -6417,6 +6735,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def OpenWithTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OpenWithTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def OutdoorGrill: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutdoorGrill].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def OutdoorGrillOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutdoorGrillOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def OutdoorGrillRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutdoorGrillRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def OutdoorGrillSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutdoorGrillSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def OutdoorGrillTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutdoorGrillTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def OutlinedFlag: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutlinedFlag].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def OutlinedFlagOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OutlinedFlagOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -6579,6 +6907,16 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   @scala.inline
   def People: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.People].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
+  def PeopleAlt: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleAlt].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def PeopleAltOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleAltOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def PeopleAltRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleAltRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def PeopleAltSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleAltSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
+  def PeopleAltTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleAltTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
+  @scala.inline
   def PeopleOutline: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleOutline].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def PeopleOutlineOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PeopleOutlineOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
@@ -6670,343 +7008,5 @@ object atMaterialDashUiIconsComponents extends atMaterialDashUiIconsProps {
   def PermScanWifi: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifi].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
   def PermScanWifiOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifiOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PermScanWifiRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifiRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PermScanWifiSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifiSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PermScanWifiTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifiTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def Person: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Person].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAdd: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAdd].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddDisabled: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddDisabled].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddDisabledOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddDisabledOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddDisabledRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddDisabledRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddDisabledSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddDisabledSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddDisabledTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddDisabledTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonAddTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonAddTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonOutline: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonOutline].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonOutlineOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonOutlineOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonOutlineRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonOutlineRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonOutlineSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonOutlineSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonOutlineTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonOutlineTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPin: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPin].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinCircle: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinCircle].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinCircleOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinCircleOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinCircleRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinCircleRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinCircleSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinCircleSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinCircleTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinCircleTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonPinTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonPinTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonalVideo: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonalVideo].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonalVideoOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonalVideoOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonalVideoRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonalVideoRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonalVideoSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonalVideoSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PersonalVideoTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PersonalVideoTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def Pets: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Pets].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PetsOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PetsOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PetsRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PetsRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PetsSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PetsSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PetsTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PetsTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def Phone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Phone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneAndroid: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneAndroidOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneAndroidOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneAndroidRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneAndroidRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneAndroidSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneAndroidSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneAndroidTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneAndroidTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneBluetoothSpeaker: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneBluetoothSpeaker].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneBluetoothSpeakerOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneBluetoothSpeakerOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneBluetoothSpeakerRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneBluetoothSpeakerRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneBluetoothSpeakerSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneBluetoothSpeakerSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneBluetoothSpeakerTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneBluetoothSpeakerTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneCallback: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneCallback].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneCallbackOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneCallbackOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneCallbackRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneCallbackRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneCallbackSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneCallbackSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneCallbackTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneCallbackTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneForwarded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneForwarded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneForwardedOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneForwardedOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneForwardedRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneForwardedRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneForwardedSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneForwardedSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneForwardedTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneForwardedTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneInTalk: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneInTalk].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneInTalkOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneInTalkOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneInTalkRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneInTalkRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneInTalkSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneInTalkSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneInTalkTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneInTalkTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneIphone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneIphone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneIphoneOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneIphoneOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneIphoneRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneIphoneRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneIphoneSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneIphoneSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneIphoneTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneIphoneTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneLocked: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneLocked].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneLockedOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneLockedOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneLockedRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneLockedRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneLockedSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneLockedSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneLockedTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneLockedTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneMissed: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneMissed].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneMissedOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneMissedOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneMissedRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneMissedRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneMissedSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneMissedSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneMissedTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneMissedTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonePaused: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonePaused].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonePausedOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonePausedOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonePausedRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonePausedRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonePausedSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonePausedSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonePausedTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonePausedTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhoneTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhoneTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def Phonelink: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Phonelink].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkErase: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkErase].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkEraseOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkEraseOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkEraseRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkEraseRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkEraseSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkEraseSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkEraseTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkEraseTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkLock: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkLock].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkLockOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkLockOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkLockRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkLockRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkLockSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkLockSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkLockTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkLockTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkOff: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOff].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkOffOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOffOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkOffRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOffRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkOffSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOffSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkOffTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOffTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkRing: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkRing].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkRingOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkRingOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkRingRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkRingRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkRingSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkRingSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkRingTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkRingTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkSetup: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkSetup].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkSetupOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkSetupOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkSetupRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkSetupRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkSetupSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkSetupSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkSetupTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkSetupTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhonelinkTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def Photo: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Photo].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoAlbum: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoAlbum].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoAlbumOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoAlbumOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoAlbumRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoAlbumRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoAlbumSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoAlbumSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoAlbumTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoAlbumTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoCamera: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoCamera].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoCameraOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoCameraOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoCameraRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoCameraRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoCameraSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoCameraSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoCameraTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoCameraTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoFilter: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoFilter].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoFilterOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoFilterOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoFilterRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoFilterRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoFilterSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoFilterSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoFilterTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoFilterTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoLibrary: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoLibrary].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoLibraryOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoLibraryOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoLibraryRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoLibraryRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoLibrarySharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoLibrarySharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoLibraryTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoLibraryTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectActual: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActual].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectActualOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActualOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectActualRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActualRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectActualSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActualSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectActualTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActualTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectLarge: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectLarge].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectLargeOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectLargeOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectLargeRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectLargeRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectLargeSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectLargeSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectLargeTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectLargeTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectSmall: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectSmall].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectSmallOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectSmallOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectSmallRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectSmallRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectSmallSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectSmallSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoSizeSelectSmallTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectSmallTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PhotoTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PictureAsPdf: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PictureAsPdf].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PictureAsPdfOutlined: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PictureAsPdfOutlined].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PictureAsPdfRounded: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PictureAsPdfRounded].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PictureAsPdfSharp: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PictureAsPdfSharp].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PictureAsPdfTwoTone: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PictureAsPdfTwoTone].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
-  @scala.inline
-  def PictureInPicture: ComponentType[SvgIconProps] = js.constructorOf[typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PictureInPicture].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps]]
 }
 

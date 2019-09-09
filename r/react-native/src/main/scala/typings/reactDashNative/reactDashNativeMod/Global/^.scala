@@ -17,7 +17,6 @@ object ^ extends js.Object {
     */
   val __DEV__ : Boolean = js.native
   var console: Console = js.native
-  val navigator: Navigator = js.native
   /**
     * This contains the non-native `XMLHttpRequest` object, which you can use if you want to route network requests
     * through DevTools (to trace them):

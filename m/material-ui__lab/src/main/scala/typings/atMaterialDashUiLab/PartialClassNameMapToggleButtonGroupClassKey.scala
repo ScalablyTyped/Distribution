@@ -6,16 +6,25 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/ToggleButtonGroup/ToggleButtonGroup.ToggleButtonGroupClassKey>> */
 trait PartialClassNameMapToggleButtonGroupClassKey extends js.Object {
+  var grouped: js.UndefOr[String] = js.undefined
+  var groupedSizeLarge: js.UndefOr[String] = js.undefined
+  var groupedSizeSmall: js.UndefOr[String] = js.undefined
   var root: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[String] = js.undefined
 }
 
 object PartialClassNameMapToggleButtonGroupClassKey {
   @scala.inline
-  def apply(root: String = null, selected: String = null): PartialClassNameMapToggleButtonGroupClassKey = {
+  def apply(
+    grouped: String = null,
+    groupedSizeLarge: String = null,
+    groupedSizeSmall: String = null,
+    root: String = null
+  ): PartialClassNameMapToggleButtonGroupClassKey = {
     val __obj = js.Dynamic.literal()
+    if (grouped != null) __obj.updateDynamic("grouped")(grouped)
+    if (groupedSizeLarge != null) __obj.updateDynamic("groupedSizeLarge")(groupedSizeLarge)
+    if (groupedSizeSmall != null) __obj.updateDynamic("groupedSizeSmall")(groupedSizeSmall)
     if (root != null) __obj.updateDynamic("root")(root)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
     __obj.asInstanceOf[PartialClassNameMapToggleButtonGroupClassKey]
   }
 }

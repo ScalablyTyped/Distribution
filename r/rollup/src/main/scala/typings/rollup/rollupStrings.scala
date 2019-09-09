@@ -55,6 +55,9 @@ object rollupStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait placeholder extends js.Object
+  
+  @js.native
   sealed trait system extends ModuleFormat
   
   @js.native
@@ -92,6 +95,8 @@ object rollupStrings {
   def `no-external`: `no-external` = "no-external".asInstanceOf[`no-external`]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   @scala.inline

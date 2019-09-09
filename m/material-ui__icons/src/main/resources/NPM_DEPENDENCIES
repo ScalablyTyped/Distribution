@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material-ui/icons" : "4.2.1"
+      "@material-ui/icons" : "4.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@material-ui/icons" : "4.2.1"
+      "@material-ui/icons" : "4.4.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod
 
-import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Global.JSXNs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/lab/SpeedDialIcon/SpeedDialIcon", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: ComponentType[SpeedDialIconProps] = js.native
+  def default(props: SpeedDialIconProps): Element = js.native
 }
 

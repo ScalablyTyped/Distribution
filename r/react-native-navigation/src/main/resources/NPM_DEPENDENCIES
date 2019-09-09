@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-navigation" : "2.27.4"
+      "react-native-navigation" : "2.27.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-navigation" : "2.27.4"
+      "react-native-navigation" : "2.27.5"
     }
   ],
   "compile-devDependencies" : [

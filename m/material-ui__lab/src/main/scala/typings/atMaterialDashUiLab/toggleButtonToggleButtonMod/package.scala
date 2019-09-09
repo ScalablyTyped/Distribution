@@ -5,13 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object toggleButtonToggleButtonMod {
-  import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
+  import typings.react.reactMod.ElementType
 
-  /* Rewritten from type alias, can be one of: 
-    - typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
-    - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.label
-    - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.selected
-  */
-  type ToggleButtonClassKey = _ToggleButtonClassKey | ButtonBaseClassKey
-  type ToggleButtonProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SimplifiedPropsOf<typeof ToggleButton> */ js.Any
+  type ToggleButtonProps[D /* <: ElementType[_] */, P] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverrideProps<ToggleButtonTypeMap<P, D>, D> */ js.Any
+  type ToggleButtonTypeMap[P, D /* <: ElementType[_] */] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendButtonBaseTypeMap<{  props  :P & {  disableFocusRipple ? :boolean,   selected ? :boolean,   value ? :any},   defaultComponent  :D,   classKey  :ToggleButtonClassKey}> */ js.Any
 }

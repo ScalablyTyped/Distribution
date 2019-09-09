@@ -22,7 +22,7 @@ trait PermissionsAndroidStatic extends Instantiable0[PermissionsAndroidStatic] {
     */
   def check(permission: Permission): js.Promise[Boolean] = js.native
   /**
-    * Deprecated
+    * @deprecated Use check instead
     */
   def checkPermission(permission: Permission): js.Promise[Boolean] = js.native
   /**
@@ -48,7 +48,7 @@ trait PermissionsAndroidStatic extends Instantiable0[PermissionsAndroidStatic] {
     */ typings.reactDashNative.reactDashNativeStrings.PermissionsAndroidStatic with js.Any
   ] = js.native
   /**
-    * Deprecated
+    * @deprecated Use request instead
     */
   def requestPermission(permission: Permission): js.Promise[Boolean] = js.native
   def requestPermission(permission: Permission, rationale: Rationale): js.Promise[Boolean] = js.native

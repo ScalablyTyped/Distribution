@@ -8,8 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModalBaseProps extends js.Object {
-  // Only `animated` is documented. The JS code says `animated` is
-  // deprecated and `animationType` is preferred.
+  /**
+    * @deprecated Use animationType indead
+    */
   var animated: js.UndefOr[Boolean] = js.undefined
   /**
     * The `animationType` prop controls how the modal animates.

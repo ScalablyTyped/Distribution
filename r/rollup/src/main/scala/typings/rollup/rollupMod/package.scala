@@ -41,7 +41,7 @@ package object rollupMod {
   type ModuleSideEffectsOption = Boolean | `no-external` | js.Array[String] | HasModuleSideEffects
   type OptionsPaths = (Record[String, String]) | (js.Function1[/* id */ String, String])
   type OutputBundle = StringDictionary[OutputAsset | OutputChunk]
-  type OutputBundleWithPlaceholders = StringDictionary[OutputAsset | OutputChunk | js.Object]
+  type OutputBundleWithPlaceholders = StringDictionary[OutputAsset | OutputChunk | FilePlaceholder]
   type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
   type PureModulesOption = Boolean | js.Array[String] | IsPureModule
   type RenderChunkHook = js.ThisFunction3[

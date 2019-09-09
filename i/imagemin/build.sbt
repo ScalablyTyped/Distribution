@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imagemin"
-version := "6.0-dt-20180823Z-4444ec"
+version := "7.0-dt-20190909Z-8af796"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

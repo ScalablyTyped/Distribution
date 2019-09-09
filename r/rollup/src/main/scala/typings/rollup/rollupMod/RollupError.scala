@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RollupError extends RollupLogProps {
   var stack: js.UndefOr[String] = js.undefined
+  var watchFiles: js.UndefOr[js.Array[String]] = js.undefined
 }
 
 object RollupError {
@@ -23,7 +24,8 @@ object RollupError {
     pluginCode: String = null,
     pos: Int | Double = null,
     stack: String = null,
-    url: String = null
+    url: String = null,
+    watchFiles: js.Array[String] = null
   ): RollupError = {
     val __obj = js.Dynamic.literal(message = message)
     if (code != null) __obj.updateDynamic("code")(code)
@@ -37,6 +39,7 @@ object RollupError {
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack)
     if (url != null) __obj.updateDynamic("url")(url)
+    if (watchFiles != null) __obj.updateDynamic("watchFiles")(watchFiles)
     __obj.asInstanceOf[RollupError]
   }
 }

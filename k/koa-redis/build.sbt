@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-redis"
-version := "3.0-dt-20180214Z-2affd6"
+version := "3.0-dt-20190909Z-551815"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

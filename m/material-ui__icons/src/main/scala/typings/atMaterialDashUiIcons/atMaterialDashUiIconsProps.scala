@@ -187,6 +187,21 @@ trait atMaterialDashUiIconsProps {
   def AccountCircleTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type AccountCircleTwoToneProps = SvgIconProps
   @scala.inline
+  def AccountTreeProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AccountTreeProps = SvgIconProps
+  @scala.inline
+  def AccountTreeOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AccountTreeOutlinedProps = SvgIconProps
+  @scala.inline
+  def AccountTreeRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AccountTreeRoundedProps = SvgIconProps
+  @scala.inline
+  def AccountTreeSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AccountTreeSharpProps = SvgIconProps
+  @scala.inline
+  def AccountTreeTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AccountTreeTwoToneProps = SvgIconProps
+  @scala.inline
   def AdbProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type AdbProps = SvgIconProps
   @scala.inline
@@ -742,6 +757,21 @@ trait atMaterialDashUiIconsProps {
   def AlternateEmailTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type AlternateEmailTwoToneProps = SvgIconProps
   @scala.inline
+  def AmpStoriesProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AmpStoriesProps = SvgIconProps
+  @scala.inline
+  def AmpStoriesOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AmpStoriesOutlinedProps = SvgIconProps
+  @scala.inline
+  def AmpStoriesRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AmpStoriesRoundedProps = SvgIconProps
+  @scala.inline
+  def AmpStoriesSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AmpStoriesSharpProps = SvgIconProps
+  @scala.inline
+  def AmpStoriesTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AmpStoriesTwoToneProps = SvgIconProps
+  @scala.inline
   def AndroidProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type AndroidProps = SvgIconProps
   @scala.inline
@@ -771,6 +801,24 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def AnnouncementTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type AnnouncementTwoToneProps = SvgIconProps
+  @scala.inline
+  def ApartmentProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ApartmentProps = SvgIconProps
+  @scala.inline
+  def ApartmentOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ApartmentOutlinedProps = SvgIconProps
+  @scala.inline
+  def ApartmentRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ApartmentRoundedProps = SvgIconProps
+  @scala.inline
+  def ApartmentSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ApartmentSharpProps = SvgIconProps
+  @scala.inline
+  def ApartmentTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ApartmentTwoToneProps = SvgIconProps
+  @scala.inline
+  def AppleProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type AppleProps = SvgIconProps
   @scala.inline
   def AppsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type AppsProps = SvgIconProps
@@ -1311,6 +1359,21 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def BarChartTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type BarChartTwoToneProps = SvgIconProps
+  @scala.inline
+  def BathtubProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type BathtubProps = SvgIconProps
+  @scala.inline
+  def BathtubOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type BathtubOutlinedProps = SvgIconProps
+  @scala.inline
+  def BathtubRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type BathtubRoundedProps = SvgIconProps
+  @scala.inline
+  def BathtubSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type BathtubSharpProps = SvgIconProps
+  @scala.inline
+  def BathtubTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type BathtubTwoToneProps = SvgIconProps
   @scala.inline
   def Battery20Props: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type Battery20Props = SvgIconProps
@@ -2596,6 +2659,21 @@ trait atMaterialDashUiIconsProps {
   def CancelRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type CancelRoundedProps = SvgIconProps
   @scala.inline
+  def CancelScheduleSendProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type CancelScheduleSendProps = SvgIconProps
+  @scala.inline
+  def CancelScheduleSendOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type CancelScheduleSendOutlinedProps = SvgIconProps
+  @scala.inline
+  def CancelScheduleSendRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type CancelScheduleSendRoundedProps = SvgIconProps
+  @scala.inline
+  def CancelScheduleSendSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type CancelScheduleSendSharpProps = SvgIconProps
+  @scala.inline
+  def CancelScheduleSendTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type CancelScheduleSendTwoToneProps = SvgIconProps
+  @scala.inline
   def CancelSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type CancelSharpProps = SvgIconProps
   @scala.inline
@@ -3382,6 +3460,21 @@ trait atMaterialDashUiIconsProps {
   def ContactSupportTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type ContactSupportTwoToneProps = SvgIconProps
   @scala.inline
+  def ContactlessProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ContactlessProps = SvgIconProps
+  @scala.inline
+  def ContactlessOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ContactlessOutlinedProps = SvgIconProps
+  @scala.inline
+  def ContactlessRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ContactlessRoundedProps = SvgIconProps
+  @scala.inline
+  def ContactlessSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ContactlessSharpProps = SvgIconProps
+  @scala.inline
+  def ContactlessTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type ContactlessTwoToneProps = SvgIconProps
+  @scala.inline
   def ContactsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type ContactsProps = SvgIconProps
   @scala.inline
@@ -3726,6 +3819,21 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def DateRangeTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DateRangeTwoToneProps = SvgIconProps
+  @scala.inline
+  def DeckProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DeckProps = SvgIconProps
+  @scala.inline
+  def DeckOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DeckOutlinedProps = SvgIconProps
+  @scala.inline
+  def DeckRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DeckRoundedProps = SvgIconProps
+  @scala.inline
+  def DeckSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DeckSharpProps = SvgIconProps
+  @scala.inline
+  def DeckTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DeckTwoToneProps = SvgIconProps
   @scala.inline
   def DehazeProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DehazeProps = SvgIconProps
@@ -4312,6 +4420,21 @@ trait atMaterialDashUiIconsProps {
   def DonutSmallTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DonutSmallTwoToneProps = SvgIconProps
   @scala.inline
+  def DoubleArrowProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DoubleArrowProps = SvgIconProps
+  @scala.inline
+  def DoubleArrowOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DoubleArrowOutlinedProps = SvgIconProps
+  @scala.inline
+  def DoubleArrowRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DoubleArrowRoundedProps = SvgIconProps
+  @scala.inline
+  def DoubleArrowSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DoubleArrowSharpProps = SvgIconProps
+  @scala.inline
+  def DoubleArrowTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DoubleArrowTwoToneProps = SvgIconProps
+  @scala.inline
   def DraftsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DraftsProps = SvgIconProps
   @scala.inline
@@ -4402,6 +4525,36 @@ trait atMaterialDashUiIconsProps {
   def DvrTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DvrTwoToneProps = SvgIconProps
   @scala.inline
+  def DynamicFeedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DynamicFeedProps = SvgIconProps
+  @scala.inline
+  def DynamicFeedOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DynamicFeedOutlinedProps = SvgIconProps
+  @scala.inline
+  def DynamicFeedRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DynamicFeedRoundedProps = SvgIconProps
+  @scala.inline
+  def DynamicFeedSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DynamicFeedSharpProps = SvgIconProps
+  @scala.inline
+  def DynamicFeedTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DynamicFeedTwoToneProps = SvgIconProps
+  @scala.inline
+  def EcoProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EcoProps = SvgIconProps
+  @scala.inline
+  def EcoOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EcoOutlinedProps = SvgIconProps
+  @scala.inline
+  def EcoRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EcoRoundedProps = SvgIconProps
+  @scala.inline
+  def EcoSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EcoSharpProps = SvgIconProps
+  @scala.inline
+  def EcoTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EcoTwoToneProps = SvgIconProps
+  @scala.inline
   def EditProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type EditProps = SvgIconProps
   @scala.inline
@@ -4477,6 +4630,141 @@ trait atMaterialDashUiIconsProps {
   def EmailTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type EmailTwoToneProps = SvgIconProps
   @scala.inline
+  def EmojiEmotionsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEmotionsProps = SvgIconProps
+  @scala.inline
+  def EmojiEmotionsOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEmotionsOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiEmotionsRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEmotionsRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiEmotionsSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEmotionsSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiEmotionsTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEmotionsTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiEventsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEventsProps = SvgIconProps
+  @scala.inline
+  def EmojiEventsOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEventsOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiEventsRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEventsRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiEventsSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEventsSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiEventsTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiEventsTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiFlagsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFlagsProps = SvgIconProps
+  @scala.inline
+  def EmojiFlagsOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFlagsOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiFlagsRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFlagsRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiFlagsSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFlagsSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiFlagsTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFlagsTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiFoodBeverageProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFoodBeverageProps = SvgIconProps
+  @scala.inline
+  def EmojiFoodBeverageOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFoodBeverageOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiFoodBeverageRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFoodBeverageRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiFoodBeverageSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFoodBeverageSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiFoodBeverageTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiFoodBeverageTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiNatureProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiNatureProps = SvgIconProps
+  @scala.inline
+  def EmojiNatureOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiNatureOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiNatureRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiNatureRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiNatureSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiNatureSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiNatureTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiNatureTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiObjectsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiObjectsProps = SvgIconProps
+  @scala.inline
+  def EmojiObjectsOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiObjectsOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiObjectsRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiObjectsRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiObjectsSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiObjectsSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiObjectsTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiObjectsTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiPeopleProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiPeopleProps = SvgIconProps
+  @scala.inline
+  def EmojiPeopleOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiPeopleOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiPeopleRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiPeopleRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiPeopleSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiPeopleSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiPeopleTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiPeopleTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiSymbolsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiSymbolsProps = SvgIconProps
+  @scala.inline
+  def EmojiSymbolsOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiSymbolsOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiSymbolsRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiSymbolsRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiSymbolsSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiSymbolsSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiSymbolsTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiSymbolsTwoToneProps = SvgIconProps
+  @scala.inline
+  def EmojiTransportationProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiTransportationProps = SvgIconProps
+  @scala.inline
+  def EmojiTransportationOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiTransportationOutlinedProps = SvgIconProps
+  @scala.inline
+  def EmojiTransportationRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiTransportationRoundedProps = SvgIconProps
+  @scala.inline
+  def EmojiTransportationSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiTransportationSharpProps = SvgIconProps
+  @scala.inline
+  def EmojiTransportationTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EmojiTransportationTwoToneProps = SvgIconProps
+  @scala.inline
   def EnhancedEncryptionProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type EnhancedEncryptionProps = SvgIconProps
   @scala.inline
@@ -4537,6 +4825,18 @@ trait atMaterialDashUiIconsProps {
   def ErrorTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type ErrorTwoToneProps = SvgIconProps
   @scala.inline
+  def EuroProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EuroProps = SvgIconProps
+  @scala.inline
+  def EuroOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EuroOutlinedProps = SvgIconProps
+  @scala.inline
+  def EuroRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EuroRoundedProps = SvgIconProps
+  @scala.inline
+  def EuroSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EuroSharpProps = SvgIconProps
+  @scala.inline
   def EuroSymbolProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type EuroSymbolProps = SvgIconProps
   @scala.inline
@@ -4551,6 +4851,9 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def EuroSymbolTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type EuroSymbolTwoToneProps = SvgIconProps
+  @scala.inline
+  def EuroTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type EuroTwoToneProps = SvgIconProps
   @scala.inline
   def EvStationProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type EvStationProps = SvgIconProps
@@ -4851,6 +5154,9 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def FaceTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type FaceTwoToneProps = SvgIconProps
+  @scala.inline
+  def FacebookProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FacebookProps = SvgIconProps
   @scala.inline
   def FastForwardProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type FastForwardProps = SvgIconProps
@@ -5407,6 +5713,21 @@ trait atMaterialDashUiIconsProps {
   def FingerprintTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type FingerprintTwoToneProps = SvgIconProps
   @scala.inline
+  def FireplaceProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FireplaceProps = SvgIconProps
+  @scala.inline
+  def FireplaceOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FireplaceOutlinedProps = SvgIconProps
+  @scala.inline
+  def FireplaceRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FireplaceRoundedProps = SvgIconProps
+  @scala.inline
+  def FireplaceSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FireplaceSharpProps = SvgIconProps
+  @scala.inline
+  def FireplaceTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FireplaceTwoToneProps = SvgIconProps
+  @scala.inline
   def FirstPageProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type FirstPageProps = SvgIconProps
   @scala.inline
@@ -5559,6 +5880,36 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def FlipProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type FlipProps = SvgIconProps
+  @scala.inline
+  def FlipCameraAndroidProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraAndroidProps = SvgIconProps
+  @scala.inline
+  def FlipCameraAndroidOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraAndroidOutlinedProps = SvgIconProps
+  @scala.inline
+  def FlipCameraAndroidRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraAndroidRoundedProps = SvgIconProps
+  @scala.inline
+  def FlipCameraAndroidSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraAndroidSharpProps = SvgIconProps
+  @scala.inline
+  def FlipCameraAndroidTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraAndroidTwoToneProps = SvgIconProps
+  @scala.inline
+  def FlipCameraIosProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraIosProps = SvgIconProps
+  @scala.inline
+  def FlipCameraIosOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraIosOutlinedProps = SvgIconProps
+  @scala.inline
+  def FlipCameraIosRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraIosRoundedProps = SvgIconProps
+  @scala.inline
+  def FlipCameraIosSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraIosSharpProps = SvgIconProps
+  @scala.inline
+  def FlipCameraIosTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type FlipCameraIosTwoToneProps = SvgIconProps
   @scala.inline
   def FlipOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type FlipOutlinedProps = SvgIconProps
@@ -6622,6 +6973,21 @@ trait atMaterialDashUiIconsProps {
   def HearingTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type HearingTwoToneProps = SvgIconProps
   @scala.inline
+  def HeightProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HeightProps = SvgIconProps
+  @scala.inline
+  def HeightOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HeightOutlinedProps = SvgIconProps
+  @scala.inline
+  def HeightRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HeightRoundedProps = SvgIconProps
+  @scala.inline
+  def HeightSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HeightSharpProps = SvgIconProps
+  @scala.inline
+  def HeightTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HeightTwoToneProps = SvgIconProps
+  @scala.inline
   def HelpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type HelpProps = SvgIconProps
   @scala.inline
@@ -6727,6 +7093,21 @@ trait atMaterialDashUiIconsProps {
   def HomeTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type HomeTwoToneProps = SvgIconProps
   @scala.inline
+  def HomeWorkProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HomeWorkProps = SvgIconProps
+  @scala.inline
+  def HomeWorkOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HomeWorkOutlinedProps = SvgIconProps
+  @scala.inline
+  def HomeWorkRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HomeWorkRoundedProps = SvgIconProps
+  @scala.inline
+  def HomeWorkSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HomeWorkSharpProps = SvgIconProps
+  @scala.inline
+  def HomeWorkTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HomeWorkTwoToneProps = SvgIconProps
+  @scala.inline
   def HorizontalSplitProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type HorizontalSplitProps = SvgIconProps
   @scala.inline
@@ -6801,6 +7182,21 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def HourglassFullTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type HourglassFullTwoToneProps = SvgIconProps
+  @scala.inline
+  def HouseProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HouseProps = SvgIconProps
+  @scala.inline
+  def HouseOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HouseOutlinedProps = SvgIconProps
+  @scala.inline
+  def HouseRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HouseRoundedProps = SvgIconProps
+  @scala.inline
+  def HouseSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HouseSharpProps = SvgIconProps
+  @scala.inline
+  def HouseTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type HouseTwoToneProps = SvgIconProps
   @scala.inline
   def HowToRegProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type HowToRegProps = SvgIconProps
@@ -7129,6 +7525,9 @@ trait atMaterialDashUiIconsProps {
   def InsertPhotoTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type InsertPhotoTwoToneProps = SvgIconProps
   @scala.inline
+  def InstagramProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type InstagramProps = SvgIconProps
+  @scala.inline
   def InvertColorsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type InvertColorsProps = SvgIconProps
   @scala.inline
@@ -7338,6 +7737,21 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def KeyboardVoiceTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type KeyboardVoiceTwoToneProps = SvgIconProps
+  @scala.inline
+  def KingBedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type KingBedProps = SvgIconProps
+  @scala.inline
+  def KingBedOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type KingBedOutlinedProps = SvgIconProps
+  @scala.inline
+  def KingBedRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type KingBedRoundedProps = SvgIconProps
+  @scala.inline
+  def KingBedSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type KingBedSharpProps = SvgIconProps
+  @scala.inline
+  def KingBedTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type KingBedTwoToneProps = SvgIconProps
   @scala.inline
   def KitchenProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type KitchenProps = SvgIconProps
@@ -7728,6 +8142,9 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def LinkedCameraTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type LinkedCameraTwoToneProps = SvgIconProps
+  @scala.inline
+  def LinkedInProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type LinkedInProps = SvgIconProps
   @scala.inline
   def ListProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type ListProps = SvgIconProps
@@ -8617,6 +9034,36 @@ trait atMaterialDashUiIconsProps {
   def MenuProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type MenuProps = SvgIconProps
   @scala.inline
+  def MenuBookProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuBookProps = SvgIconProps
+  @scala.inline
+  def MenuBookOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuBookOutlinedProps = SvgIconProps
+  @scala.inline
+  def MenuBookRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuBookRoundedProps = SvgIconProps
+  @scala.inline
+  def MenuBookSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuBookSharpProps = SvgIconProps
+  @scala.inline
+  def MenuBookTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuBookTwoToneProps = SvgIconProps
+  @scala.inline
+  def MenuOpenProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuOpenProps = SvgIconProps
+  @scala.inline
+  def MenuOpenOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuOpenOutlinedProps = SvgIconProps
+  @scala.inline
+  def MenuOpenRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuOpenRoundedProps = SvgIconProps
+  @scala.inline
+  def MenuOpenSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuOpenSharpProps = SvgIconProps
+  @scala.inline
+  def MenuOpenTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MenuOpenTwoToneProps = SvgIconProps
+  @scala.inline
   def MenuOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type MenuOutlinedProps = SvgIconProps
   @scala.inline
@@ -9049,6 +9496,21 @@ trait atMaterialDashUiIconsProps {
   def MultilineChartTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type MultilineChartTwoToneProps = SvgIconProps
   @scala.inline
+  def MuseumProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MuseumProps = SvgIconProps
+  @scala.inline
+  def MuseumOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MuseumOutlinedProps = SvgIconProps
+  @scala.inline
+  def MuseumRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MuseumRoundedProps = SvgIconProps
+  @scala.inline
+  def MuseumSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MuseumSharpProps = SvgIconProps
+  @scala.inline
+  def MuseumTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type MuseumTwoToneProps = SvgIconProps
+  @scala.inline
   def MusicNoteProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type MusicNoteProps = SvgIconProps
   @scala.inline
@@ -9303,6 +9765,21 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def NfcTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type NfcTwoToneProps = SvgIconProps
+  @scala.inline
+  def NightsStayProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type NightsStayProps = SvgIconProps
+  @scala.inline
+  def NightsStayOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type NightsStayOutlinedProps = SvgIconProps
+  @scala.inline
+  def NightsStayRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type NightsStayRoundedProps = SvgIconProps
+  @scala.inline
+  def NightsStaySharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type NightsStaySharpProps = SvgIconProps
+  @scala.inline
+  def NightsStayTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type NightsStayTwoToneProps = SvgIconProps
   @scala.inline
   def NoEncryptionProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type NoEncryptionProps = SvgIconProps
@@ -9619,6 +10096,21 @@ trait atMaterialDashUiIconsProps {
   def OpenWithTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type OpenWithTwoToneProps = SvgIconProps
   @scala.inline
+  def OutdoorGrillProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type OutdoorGrillProps = SvgIconProps
+  @scala.inline
+  def OutdoorGrillOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type OutdoorGrillOutlinedProps = SvgIconProps
+  @scala.inline
+  def OutdoorGrillRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type OutdoorGrillRoundedProps = SvgIconProps
+  @scala.inline
+  def OutdoorGrillSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type OutdoorGrillSharpProps = SvgIconProps
+  @scala.inline
+  def OutdoorGrillTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type OutdoorGrillTwoToneProps = SvgIconProps
+  @scala.inline
   def OutlinedFlagProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type OutlinedFlagProps = SvgIconProps
   @scala.inline
@@ -9862,6 +10354,21 @@ trait atMaterialDashUiIconsProps {
   def PeopleProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type PeopleProps = SvgIconProps
   @scala.inline
+  def PeopleAltProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type PeopleAltProps = SvgIconProps
+  @scala.inline
+  def PeopleAltOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type PeopleAltOutlinedProps = SvgIconProps
+  @scala.inline
+  def PeopleAltRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type PeopleAltRoundedProps = SvgIconProps
+  @scala.inline
+  def PeopleAltSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type PeopleAltSharpProps = SvgIconProps
+  @scala.inline
+  def PeopleAltTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type PeopleAltTwoToneProps = SvgIconProps
+  @scala.inline
   def PeopleOutlineProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type PeopleOutlineProps = SvgIconProps
   @scala.inline
@@ -9999,512 +10506,5 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def PermScanWifiOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type PermScanWifiOutlinedProps = SvgIconProps
-  @scala.inline
-  def PermScanWifiRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermScanWifiRoundedProps = SvgIconProps
-  @scala.inline
-  def PermScanWifiSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermScanWifiSharpProps = SvgIconProps
-  @scala.inline
-  def PermScanWifiTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermScanWifiTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonProps = SvgIconProps
-  @scala.inline
-  def PersonAddProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddProps = SvgIconProps
-  @scala.inline
-  def PersonAddDisabledProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddDisabledProps = SvgIconProps
-  @scala.inline
-  def PersonAddDisabledOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddDisabledOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonAddDisabledRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddDisabledRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonAddDisabledSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddDisabledSharpProps = SvgIconProps
-  @scala.inline
-  def PersonAddDisabledTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddDisabledTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonAddOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonAddRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonAddSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddSharpProps = SvgIconProps
-  @scala.inline
-  def PersonAddTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonAddTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonOutlineProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonOutlineProps = SvgIconProps
-  @scala.inline
-  def PersonOutlineOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonOutlineOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonOutlineRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonOutlineRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonOutlineSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonOutlineSharpProps = SvgIconProps
-  @scala.inline
-  def PersonOutlineTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonOutlineTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonPinProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinProps = SvgIconProps
-  @scala.inline
-  def PersonPinCircleProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinCircleProps = SvgIconProps
-  @scala.inline
-  def PersonPinCircleOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinCircleOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonPinCircleRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinCircleRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonPinCircleSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinCircleSharpProps = SvgIconProps
-  @scala.inline
-  def PersonPinCircleTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinCircleTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonPinOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonPinRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonPinSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinSharpProps = SvgIconProps
-  @scala.inline
-  def PersonPinTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonPinTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonSharpProps = SvgIconProps
-  @scala.inline
-  def PersonTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonTwoToneProps = SvgIconProps
-  @scala.inline
-  def PersonalVideoProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonalVideoProps = SvgIconProps
-  @scala.inline
-  def PersonalVideoOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonalVideoOutlinedProps = SvgIconProps
-  @scala.inline
-  def PersonalVideoRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonalVideoRoundedProps = SvgIconProps
-  @scala.inline
-  def PersonalVideoSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonalVideoSharpProps = SvgIconProps
-  @scala.inline
-  def PersonalVideoTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PersonalVideoTwoToneProps = SvgIconProps
-  @scala.inline
-  def PetsProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PetsProps = SvgIconProps
-  @scala.inline
-  def PetsOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PetsOutlinedProps = SvgIconProps
-  @scala.inline
-  def PetsRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PetsRoundedProps = SvgIconProps
-  @scala.inline
-  def PetsSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PetsSharpProps = SvgIconProps
-  @scala.inline
-  def PetsTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PetsTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneProps = SvgIconProps
-  @scala.inline
-  def PhoneAndroidProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneAndroidProps = SvgIconProps
-  @scala.inline
-  def PhoneAndroidOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneAndroidOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneAndroidRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneAndroidRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneAndroidSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneAndroidSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneAndroidTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneAndroidTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneBluetoothSpeakerProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneBluetoothSpeakerProps = SvgIconProps
-  @scala.inline
-  def PhoneBluetoothSpeakerOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneBluetoothSpeakerOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneBluetoothSpeakerRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneBluetoothSpeakerRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneBluetoothSpeakerSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneBluetoothSpeakerSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneBluetoothSpeakerTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneBluetoothSpeakerTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneCallbackProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneCallbackProps = SvgIconProps
-  @scala.inline
-  def PhoneCallbackOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneCallbackOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneCallbackRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneCallbackRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneCallbackSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneCallbackSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneCallbackTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneCallbackTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneForwardedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneForwardedProps = SvgIconProps
-  @scala.inline
-  def PhoneForwardedOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneForwardedOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneForwardedRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneForwardedRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneForwardedSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneForwardedSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneForwardedTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneForwardedTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneInTalkProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneInTalkProps = SvgIconProps
-  @scala.inline
-  def PhoneInTalkOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneInTalkOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneInTalkRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneInTalkRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneInTalkSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneInTalkSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneInTalkTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneInTalkTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneIphoneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneIphoneProps = SvgIconProps
-  @scala.inline
-  def PhoneIphoneOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneIphoneOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneIphoneRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneIphoneRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneIphoneSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneIphoneSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneIphoneTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneIphoneTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneLockedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneLockedProps = SvgIconProps
-  @scala.inline
-  def PhoneLockedOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneLockedOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneLockedRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneLockedRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneLockedSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneLockedSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneLockedTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneLockedTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneMissedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneMissedProps = SvgIconProps
-  @scala.inline
-  def PhoneMissedOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneMissedOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhoneMissedRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneMissedRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneMissedSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneMissedSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneMissedTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneMissedTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonePausedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonePausedProps = SvgIconProps
-  @scala.inline
-  def PhonePausedOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonePausedOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonePausedRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonePausedRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonePausedSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonePausedSharpProps = SvgIconProps
-  @scala.inline
-  def PhonePausedTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonePausedTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhoneRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneRoundedProps = SvgIconProps
-  @scala.inline
-  def PhoneSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneSharpProps = SvgIconProps
-  @scala.inline
-  def PhoneTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhoneTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhonelinkProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkProps = SvgIconProps
-  @scala.inline
-  def PhonelinkEraseProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkEraseProps = SvgIconProps
-  @scala.inline
-  def PhonelinkEraseOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkEraseOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkEraseRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkEraseRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkEraseSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkEraseSharpProps = SvgIconProps
-  @scala.inline
-  def PhonelinkEraseTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkEraseTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhonelinkLockProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkLockProps = SvgIconProps
-  @scala.inline
-  def PhonelinkLockOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkLockOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkLockRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkLockRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkLockSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkLockSharpProps = SvgIconProps
-  @scala.inline
-  def PhonelinkLockTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkLockTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhonelinkOffProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkOffProps = SvgIconProps
-  @scala.inline
-  def PhonelinkOffOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkOffOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkOffRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkOffRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkOffSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkOffSharpProps = SvgIconProps
-  @scala.inline
-  def PhonelinkOffTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkOffTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhonelinkOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkRingProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkRingProps = SvgIconProps
-  @scala.inline
-  def PhonelinkRingOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkRingOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkRingRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkRingRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkRingSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkRingSharpProps = SvgIconProps
-  @scala.inline
-  def PhonelinkRingTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkRingTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhonelinkRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkSetupProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkSetupProps = SvgIconProps
-  @scala.inline
-  def PhonelinkSetupOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkSetupOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkSetupRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkSetupRoundedProps = SvgIconProps
-  @scala.inline
-  def PhonelinkSetupSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkSetupSharpProps = SvgIconProps
-  @scala.inline
-  def PhonelinkSetupTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkSetupTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhonelinkSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkSharpProps = SvgIconProps
-  @scala.inline
-  def PhonelinkTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhonelinkTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoProps = SvgIconProps
-  @scala.inline
-  def PhotoAlbumProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoAlbumProps = SvgIconProps
-  @scala.inline
-  def PhotoAlbumOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoAlbumOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoAlbumRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoAlbumRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoAlbumSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoAlbumSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoAlbumTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoAlbumTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoCameraProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoCameraProps = SvgIconProps
-  @scala.inline
-  def PhotoCameraOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoCameraOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoCameraRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoCameraRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoCameraSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoCameraSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoCameraTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoCameraTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoFilterProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoFilterProps = SvgIconProps
-  @scala.inline
-  def PhotoFilterOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoFilterOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoFilterRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoFilterRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoFilterSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoFilterSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoFilterTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoFilterTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoLibraryProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoLibraryProps = SvgIconProps
-  @scala.inline
-  def PhotoLibraryOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoLibraryOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoLibraryRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoLibraryRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoLibrarySharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoLibrarySharpProps = SvgIconProps
-  @scala.inline
-  def PhotoLibraryTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoLibraryTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectActualProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectActualProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectActualOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectActualOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectActualRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectActualRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectActualSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectActualSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectActualTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectActualTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectLargeProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectLargeProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectLargeOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectLargeOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectLargeRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectLargeRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectLargeSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectLargeSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectLargeTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectLargeTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectSmallProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectSmallProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectSmallOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectSmallOutlinedProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectSmallRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectSmallRoundedProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectSmallSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectSmallSharpProps = SvgIconProps
-  @scala.inline
-  def PhotoSizeSelectSmallTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoSizeSelectSmallTwoToneProps = SvgIconProps
-  @scala.inline
-  def PhotoTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PhotoTwoToneProps = SvgIconProps
-  @scala.inline
-  def PictureAsPdfProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PictureAsPdfProps = SvgIconProps
-  @scala.inline
-  def PictureAsPdfOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PictureAsPdfOutlinedProps = SvgIconProps
-  @scala.inline
-  def PictureAsPdfRoundedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PictureAsPdfRoundedProps = SvgIconProps
-  @scala.inline
-  def PictureAsPdfSharpProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PictureAsPdfSharpProps = SvgIconProps
-  @scala.inline
-  def PictureAsPdfTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PictureAsPdfTwoToneProps = SvgIconProps
-  @scala.inline
-  def PictureInPictureProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PictureInPictureProps = SvgIconProps
 }
 

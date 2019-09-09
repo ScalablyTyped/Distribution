@@ -10,9 +10,7 @@ import typings.reactDashNative.reactDashNativeMod.AppStateEvent
 import typings.reactDashNative.reactDashNativeMod.AppStateStatus
 import typings.reactDashNative.reactDashNativeMod.CameraRollAssetType
 import typings.reactDashNative.reactDashNativeMod.CameraRollGroupType
-import typings.reactDashNative.reactDashNativeMod.ConnectionType
 import typings.reactDashNative.reactDashNativeMod.DataDetectorTypes
-import typings.reactDashNative.reactDashNativeMod.EffectiveConnectionType
 import typings.reactDashNative.reactDashNativeMod.FlexAlignType
 import typings.reactDashNative.reactDashNativeMod.FontVariant
 import typings.reactDashNative.reactDashNativeMod.ImageResizeMode
@@ -41,19 +39,10 @@ object reactDashNativeStrings {
   sealed trait `200` extends js.Object
   
   @js.native
-  sealed trait `2g` extends EffectiveConnectionType
-  
-  @js.native
   sealed trait `300` extends js.Object
   
   @js.native
-  sealed trait `3g` extends EffectiveConnectionType
-  
-  @js.native
   sealed trait `400` extends js.Object
-  
-  @js.native
-  sealed trait `4g` extends EffectiveConnectionType
   
   @js.native
   sealed trait `500` extends js.Object
@@ -79,16 +68,7 @@ object reactDashNativeStrings {
        with CameraRollGroupType
   
   @js.native
-  sealed trait BLUETOOTH extends ConnectionType
-  
-  @js.native
-  sealed trait DUMMY extends ConnectionType
-  
-  @js.native
   sealed trait Dragging extends js.Object
-  
-  @js.native
-  sealed trait ETHERNET extends ConnectionType
   
   @js.native
   sealed trait Empty extends XMLHttpRequestResponseType
@@ -98,9 +78,6 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait Faces extends CameraRollGroupType
-  
-  @js.native
-  sealed trait GET extends js.Object
   
   @js.native
   sealed trait Horizontal extends js.Object
@@ -121,49 +98,10 @@ object reactDashNativeStrings {
   sealed trait Library extends CameraRollGroupType
   
   @js.native
-  sealed trait MOBILE extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_CBS extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_DUN extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_EMERGENCY extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_FOTA extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_HIPRI extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_IA extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_IMS extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_MMS extends ConnectionType
-  
-  @js.native
-  sealed trait MOBILE_SUPL extends ConnectionType
-  
-  @js.native
-  sealed trait NONE extends ConnectionType
-  
-  @js.native
   sealed trait NamedStyles extends js.Object
   
   @js.native
   sealed trait Normal extends js.Object
-  
-  @js.native
-  sealed trait POST extends js.Object
-  
-  @js.native
-  sealed trait PROXY extends ConnectionType
   
   @js.native
   sealed trait PermissionsAndroidStatic extends js.Object
@@ -205,25 +143,10 @@ object reactDashNativeStrings {
   sealed trait UIBackgroundFetchResultNoData extends js.Object
   
   @js.native
-  sealed trait UNKNOWN extends ConnectionType
-  
-  @js.native
   sealed trait URL extends js.Object
   
   @js.native
-  sealed trait VPN extends ConnectionType
-  
-  @js.native
   sealed trait Videos extends CameraRollAssetType
-  
-  @js.native
-  sealed trait WIFI extends ConnectionType
-  
-  @js.native
-  sealed trait WIFI_P2P extends ConnectionType
-  
-  @js.native
-  sealed trait WIMAX extends ConnectionType
   
   @js.native
   sealed trait abort extends js.Object
@@ -354,9 +277,6 @@ object reactDashNativeStrings {
   sealed trait automatic extends js.Object
   
   @js.native
-  sealed trait backforward extends js.Object
-  
-  @js.native
   sealed trait background extends AppStateStatus
   
   @js.native
@@ -437,9 +357,6 @@ object reactDashNativeStrings {
   sealed trait `cc-number` extends js.Object
   
   @js.native
-  sealed trait cell extends ConnectionType
-  
-  @js.native
   sealed trait center
     extends FlexAlignType
        with ImageResizeMode
@@ -462,9 +379,6 @@ object reactDashNativeStrings {
   sealed trait clamp extends ExtrapolateType
   
   @js.native
-  sealed trait click extends js.Object
-  
-  @js.native
   sealed trait clip extends js.Object
   
   @js.native
@@ -484,9 +398,6 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait combobox extends AccessibilityRole
-  
-  @js.native
-  sealed trait compatibility extends js.Object
   
   @js.native
   sealed trait contacts extends js.Object
@@ -646,12 +557,6 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait formSheet extends js.Object
-  
-  @js.native
-  sealed trait formresubmit extends js.Object
-  
-  @js.native
-  sealed trait formsubmit extends js.Object
   
   @js.native
   sealed trait frequentUpdates extends AccessibilityTrait
@@ -944,7 +849,6 @@ object reactDashNativeStrings {
     extends ReturnKeyTypeAndroid
        with AccessibilityRole
        with AccessibilityTrait
-       with ConnectionType
        with DataDetectorTypes
        with StatusBarAnimation
   
@@ -992,9 +896,6 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait organizationName extends js.Object
-  
-  @js.native
-  sealed trait other extends js.Object
   
   @js.native
   sealed trait overFullScreen extends js.Object
@@ -1290,11 +1191,6 @@ object reactDashNativeStrings {
   sealed trait `underline line-through` extends js.Object
   
   @js.native
-  sealed trait unknown
-    extends ConnectionType
-       with EffectiveConnectionType
-  
-  @js.native
   sealed trait `unless-editing` extends js.Object
   
   @js.native
@@ -1334,9 +1230,6 @@ object reactDashNativeStrings {
   sealed trait white extends js.Object
   
   @js.native
-  sealed trait wifi extends ConnectionType
-  
-  @js.native
   sealed trait window extends js.Object
   
   @js.native
@@ -1365,15 +1258,9 @@ object reactDashNativeStrings {
   @scala.inline
   def `200`: `200` = "200".asInstanceOf[`200`]
   @scala.inline
-  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
-  @scala.inline
   def `300`: `300` = "300".asInstanceOf[`300`]
   @scala.inline
-  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
-  @scala.inline
   def `400`: `400` = "400".asInstanceOf[`400`]
-  @scala.inline
-  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   @scala.inline
@@ -1389,21 +1276,13 @@ object reactDashNativeStrings {
   @scala.inline
   def All: All = "All".asInstanceOf[All]
   @scala.inline
-  def BLUETOOTH: BLUETOOTH = "BLUETOOTH".asInstanceOf[BLUETOOTH]
-  @scala.inline
-  def DUMMY: DUMMY = "DUMMY".asInstanceOf[DUMMY]
-  @scala.inline
   def Dragging: Dragging = "Dragging".asInstanceOf[Dragging]
-  @scala.inline
-  def ETHERNET: ETHERNET = "ETHERNET".asInstanceOf[ETHERNET]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Event: Event = "Event".asInstanceOf[Event]
   @scala.inline
   def Faces: Faces = "Faces".asInstanceOf[Faces]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
   @scala.inline
@@ -1417,35 +1296,9 @@ object reactDashNativeStrings {
   @scala.inline
   def Library: Library = "Library".asInstanceOf[Library]
   @scala.inline
-  def MOBILE: MOBILE = "MOBILE".asInstanceOf[MOBILE]
-  @scala.inline
-  def MOBILE_CBS: MOBILE_CBS = "MOBILE_CBS".asInstanceOf[MOBILE_CBS]
-  @scala.inline
-  def MOBILE_DUN: MOBILE_DUN = "MOBILE_DUN".asInstanceOf[MOBILE_DUN]
-  @scala.inline
-  def MOBILE_EMERGENCY: MOBILE_EMERGENCY = "MOBILE_EMERGENCY".asInstanceOf[MOBILE_EMERGENCY]
-  @scala.inline
-  def MOBILE_FOTA: MOBILE_FOTA = "MOBILE_FOTA".asInstanceOf[MOBILE_FOTA]
-  @scala.inline
-  def MOBILE_HIPRI: MOBILE_HIPRI = "MOBILE_HIPRI".asInstanceOf[MOBILE_HIPRI]
-  @scala.inline
-  def MOBILE_IA: MOBILE_IA = "MOBILE_IA".asInstanceOf[MOBILE_IA]
-  @scala.inline
-  def MOBILE_IMS: MOBILE_IMS = "MOBILE_IMS".asInstanceOf[MOBILE_IMS]
-  @scala.inline
-  def MOBILE_MMS: MOBILE_MMS = "MOBILE_MMS".asInstanceOf[MOBILE_MMS]
-  @scala.inline
-  def MOBILE_SUPL: MOBILE_SUPL = "MOBILE_SUPL".asInstanceOf[MOBILE_SUPL]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
   def NamedStyles: NamedStyles = "NamedStyles".asInstanceOf[NamedStyles]
   @scala.inline
   def Normal: Normal = "Normal".asInstanceOf[Normal]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PROXY: PROXY = "PROXY".asInstanceOf[PROXY]
   @scala.inline
   def PermissionsAndroidStatic: PermissionsAndroidStatic = "PermissionsAndroidStatic".asInstanceOf[PermissionsAndroidStatic]
   @scala.inline
@@ -1473,19 +1326,9 @@ object reactDashNativeStrings {
   @scala.inline
   def UIBackgroundFetchResultNoData: UIBackgroundFetchResultNoData = "UIBackgroundFetchResultNoData".asInstanceOf[UIBackgroundFetchResultNoData]
   @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
-  @scala.inline
   def URL: URL = "URL".asInstanceOf[URL]
   @scala.inline
-  def VPN: VPN = "VPN".asInstanceOf[VPN]
-  @scala.inline
   def Videos: Videos = "Videos".asInstanceOf[Videos]
-  @scala.inline
-  def WIFI: WIFI = "WIFI".asInstanceOf[WIFI]
-  @scala.inline
-  def WIFI_P2P: WIFI_P2P = "WIFI_P2P".asInstanceOf[WIFI_P2P]
-  @scala.inline
-  def WIMAX: WIMAX = "WIMAX".asInstanceOf[WIMAX]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
@@ -1571,8 +1414,6 @@ object reactDashNativeStrings {
   @scala.inline
   def automatic: automatic = "automatic".asInstanceOf[automatic]
   @scala.inline
-  def backforward: backforward = "backforward".asInstanceOf[backforward]
-  @scala.inline
   def background: background = "background".asInstanceOf[background]
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
@@ -1625,8 +1466,6 @@ object reactDashNativeStrings {
   @scala.inline
   def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
   @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
-  @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
@@ -1638,8 +1477,6 @@ object reactDashNativeStrings {
   def checked: checked = "checked".asInstanceOf[checked]
   @scala.inline
   def clamp: clamp = "clamp".asInstanceOf[clamp]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
   @scala.inline
   def clip: clip = "clip".asInstanceOf[clip]
   @scala.inline
@@ -1654,8 +1491,6 @@ object reactDashNativeStrings {
   def comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL: comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL]
   @scala.inline
   def combobox: combobox = "combobox".asInstanceOf[combobox]
-  @scala.inline
-  def compatibility: compatibility = "compatibility".asInstanceOf[compatibility]
   @scala.inline
   def contacts: contacts = "contacts".asInstanceOf[contacts]
   @scala.inline
@@ -1756,10 +1591,6 @@ object reactDashNativeStrings {
   def `force-cache`: `force-cache` = "force-cache".asInstanceOf[`force-cache`]
   @scala.inline
   def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
-  @scala.inline
-  def formresubmit: formresubmit = "formresubmit".asInstanceOf[formresubmit]
-  @scala.inline
-  def formsubmit: formsubmit = "formsubmit".asInstanceOf[formsubmit]
   @scala.inline
   def frequentUpdates: frequentUpdates = "frequentUpdates".asInstanceOf[frequentUpdates]
   @scala.inline
@@ -1979,8 +1810,6 @@ object reactDashNativeStrings {
   @scala.inline
   def organizationName: organizationName = "organizationName".asInstanceOf[organizationName]
   @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
   def overFullScreen: overFullScreen = "overFullScreen".asInstanceOf[overFullScreen]
   @scala.inline
   def padding: padding = "padding".asInstanceOf[padding]
@@ -2167,8 +1996,6 @@ object reactDashNativeStrings {
   @scala.inline
   def `underline line-through`: `underline line-through` = "underline line-through".asInstanceOf[`underline line-through`]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
   def `unless-editing`: `unless-editing` = "unless-editing".asInstanceOf[`unless-editing`]
   @scala.inline
   def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
@@ -2194,8 +2021,6 @@ object reactDashNativeStrings {
   def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
   @scala.inline
   def white: white = "white".asInstanceOf[white]
-  @scala.inline
-  def wifi: wifi = "wifi".asInstanceOf[wifi]
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   @scala.inline

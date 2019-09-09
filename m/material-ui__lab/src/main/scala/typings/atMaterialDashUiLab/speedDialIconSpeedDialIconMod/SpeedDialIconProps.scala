@@ -61,7 +61,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLSpanElement>, @material-ui/lab.@material-ui/lab/SpeedDialIcon/SpeedDialIcon.SpeedDialIconClassKey, never> */
+/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLSpanElement>, @material-ui/lab.@material-ui/lab/SpeedDialIcon/SpeedDialIcon.SpeedDialIconClassKey, 'children'> */
 trait SpeedDialIconProps extends js.Object {
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
@@ -116,7 +116,6 @@ trait SpeedDialIconProps extends js.Object {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapSpeedDialIconClassKey] = js.undefined
   var color: js.UndefOr[String] = js.undefined
@@ -129,6 +128,9 @@ trait SpeedDialIconProps extends js.Object {
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The icon to display in the SpeedDial Floating Action Button.
+    */
   var icon: js.UndefOr[ReactNode] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -301,6 +303,14 @@ trait SpeedDialIconProps extends js.Object {
   var onWaitingCapture: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   var onWheel: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
   var onWheelCapture: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
+  /**
+    * @ignore
+    * If `true`, the SpeedDial is open.
+    */
+  var open: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The icon to display in the SpeedDial Floating Action Button when the SpeedDial is open.
+    */
   var openIcon: js.UndefOr[ReactNode] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
@@ -378,7 +388,6 @@ object SpeedDialIconProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    children: ReactNode = null,
     className: String = null,
     classes: PartialClassNameMapSpeedDialIconClassKey = null,
     color: String = null,
@@ -482,6 +491,7 @@ object SpeedDialIconProps {
     onVolumeChange: ReactEventHandler[HTMLSpanElement] = null,
     onWaiting: ReactEventHandler[HTMLSpanElement] = null,
     onWheel: WheelEventHandler[HTMLSpanElement] = null,
+    open: js.UndefOr[Boolean] = js.undefined,
     openIcon: ReactNode = null,
     placeholder: String = null,
     prefix: String = null,
@@ -556,7 +566,6 @@ object SpeedDialIconProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave)
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (color != null) __obj.updateDynamic("color")(color)
@@ -660,6 +669,7 @@ object SpeedDialIconProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
