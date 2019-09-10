@@ -102,6 +102,14 @@ Instantiable2[/* paths */ js.Array[ASTPath[N]], /* parent */ Collection[js.Any],
       /* i */ Double, 
       /* paths */ js.Array[ASTPath[N]], 
       js.UndefOr[ASTPath[T] | js.Array[ASTPath[T]] | Null]
+    ]
+  ): Collection[T] = js.native
+  def map[T](
+    callback: js.Function3[
+      /* path */ ASTPath[N], 
+      /* i */ Double, 
+      /* paths */ js.Array[ASTPath[N]], 
+      js.UndefOr[ASTPath[T] | js.Array[ASTPath[T]] | Null]
     ],
     `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
   ): Collection[T] = js.native

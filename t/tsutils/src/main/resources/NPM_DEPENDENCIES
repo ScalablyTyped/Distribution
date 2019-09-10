@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tsutils" : "2.29.0"
+      "tsutils" : "3.17.1"
     }
   ],
   "test-dependencies" : [
     {
-      "tsutils" : "2.29.0"
+      "tsutils" : "3.17.1"
     }
   ],
   "compile-devDependencies" : [

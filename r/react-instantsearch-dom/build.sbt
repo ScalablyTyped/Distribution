@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch-dom"
-version := "5.2-dt-20190605Z-b801b6"
+version := "5.2-dt-20190909Z-36d8b8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

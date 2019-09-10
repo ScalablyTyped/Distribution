@@ -136,9 +136,14 @@ trait ISubscription extends IResourceObject {
     */
   var quantity: js.UndefOr[Double] = js.undefined
   /**
-    * Date the subscription started
+    * Date of the last substantial change to this subscription. For example, a change to the items array,
+    * or a change of status, will reset this timestamp.
     */
   var start: Double
+  /**
+    * Date when the subscription was first created. The date might differ from the created date due to backdating.
+    */
+  var start_date: Double
   /**
     * Possible values are `incomplete`, `incomplete_expired`, `trialing`, `active`,
     * `past_due`, `canceled`, or `unpaid`.
@@ -196,6 +201,7 @@ object ISubscription {
     metadata: IMetadata,
     `object`: subscription,
     start: Double,
+    start_date: Double,
     status: SubscriptionStatus,
     application_fee_percent: Int | Double = null,
     billing_thresholds: Anon_Amountgte = null,
@@ -213,7 +219,7 @@ object ISubscription {
     trial_end: Int | Double = null,
     trial_start: Int | Double = null
   ): ISubscription = {
-    val __obj = js.Dynamic.literal(billing = billing, billing_cycle_anchor = billing_cycle_anchor, cancel_at_period_end = cancel_at_period_end, collection_method = collection_method, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], id = id, items = items, livemode = livemode, metadata = metadata, start = start, status = status)
+    val __obj = js.Dynamic.literal(billing = billing, billing_cycle_anchor = billing_cycle_anchor, cancel_at_period_end = cancel_at_period_end, collection_method = collection_method, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], id = id, items = items, livemode = livemode, metadata = metadata, start = start, start_date = start_date, status = status)
     __obj.updateDynamic("object")(`object`)
     if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
     if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds)

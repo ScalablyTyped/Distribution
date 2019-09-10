@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gatsby", "StaticQuery")
 @js.native
-class StaticQuery ()
-  extends Component[StaticQueryProps, js.Object, js.Any]
+class StaticQuery[T] ()
+  extends Component[StaticQueryProps[T], js.Object, js.Any]
 

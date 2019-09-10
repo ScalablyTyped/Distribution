@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.ElementComponentSystem
+  * @extends pc.ComponentSystem
   * @classdesc Manages creation of {@link pc.ElementComponent}s.
   * @param {pc.Application} app The application
-  * @extends pc.ComponentSystem
   */
 @JSGlobal("pc.ElementComponentSystem")
 @js.native

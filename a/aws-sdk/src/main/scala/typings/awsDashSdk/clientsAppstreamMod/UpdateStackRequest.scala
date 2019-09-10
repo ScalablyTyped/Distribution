@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateStackRequest extends js.Object {
   /**
-    * The list of virtual private cloud (VPC) interface endpoint objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
+    * The list of interface VPC endpoint (interface endpoint) objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
     */
   var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
   /**

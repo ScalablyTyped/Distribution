@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation._
 abstract class DB () extends js.Object {
   var disableSubscribe: Boolean = js.native
   var projectsSnapshots: Boolean = js.native
+  @JSName("query")
+  var query_Original: DBQueryMethod = js.native
   def canPollDoc(): Boolean = js.native
   def close(): Unit = js.native
-  def close(callback: js.Function0[Unit]): Unit = js.native
+  def close(callback: BasicCallback): Unit = js.native
   def commit(
     collection: String,
     id: String,
@@ -67,21 +69,28 @@ abstract class DB () extends js.Object {
   ): Unit = js.native
   def query(
     collection: String,
-    query: Query,
-    fields: js.Any,
+    query: js.Any,
+    fields: js.UndefOr[scala.Nothing],
     options: js.Any,
-    callback: js.Function1[/* repeated */ js.Any, _]
+    callback: DBQueryCallback
+  ): Unit = js.native
+  def query(
+    collection: String,
+    query: js.Any,
+    fields: ProjectionFields,
+    options: js.Any,
+    callback: DBQueryCallback
   ): Unit = js.native
   def queryPoll(
     collection: String,
-    query: Query,
+    query: js.Any,
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
   def queryPollDoc(
     collection: String,
     id: String,
-    query: Query,
+    query: js.Any,
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native

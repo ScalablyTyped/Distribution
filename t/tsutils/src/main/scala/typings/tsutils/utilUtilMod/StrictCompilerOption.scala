@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.tsutils.tsutilsStrings.strictFunctionTypes
   - typings.tsutils.tsutilsStrings.strictPropertyInitialization
   - typings.tsutils.tsutilsStrings.alwaysStrict
+  - typings.tsutils.tsutilsStrings.strictBindCallApply
 */
 trait StrictCompilerOption extends js.Object
 

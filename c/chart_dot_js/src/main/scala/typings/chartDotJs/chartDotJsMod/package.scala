@@ -10,6 +10,9 @@ package object chartDotJsMod {
   import typings.std.CanvasGradient
   import typings.std.CanvasPattern
 
+  type BorderWidth = Double | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in chart.js.chart.js.PositionType ]:? number}
+    */ typings.chartDotJs.chartDotJsStrings.BorderWidth with js.Any)
   type ChartColor = String | CanvasGradient | CanvasPattern | js.Array[String]
   // NOTE: declare plugin options as interface instead of inline '{ [plugin: string]: any }'
   // to allow module augmentation in case some plugins want to strictly type their options.

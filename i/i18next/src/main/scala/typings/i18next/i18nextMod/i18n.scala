@@ -11,7 +11,6 @@ import typings.i18next.i18nextStrings.ltr
 import typings.i18next.i18nextStrings.missingKey
 import typings.i18next.i18nextStrings.removed
 import typings.i18next.i18nextStrings.rtl
-import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -248,13 +247,18 @@ trait i18n extends js.Object {
     * Changes the default namespace.
     */
   def setDefaultNamespace(ns: String): Unit = js.native
+  // basic usage
   // Expose parameterized t in the i18next interface hierarchy
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: TKeys): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
   /**
     * The use function is there to load additional plugins to i18next.
     * For available module see the plugins page and don't forget to read the documentation of the plugin.

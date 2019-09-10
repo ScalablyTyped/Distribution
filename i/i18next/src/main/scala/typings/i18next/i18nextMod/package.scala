@@ -32,11 +32,8 @@ package object i18nextMod {
   type ResourceLanguage = StringDictionary[ResourceKey]
   // indexer that is open to any value
   type StringMap = StringDictionary[js.Any]
-  type TFunction = js.Function2[
-    /* key */ String | TemplateStringsArray | (js.Array[String | TemplateStringsArray]), 
-    /* options */ js.UndefOr[TOptions[js.Object] | String], 
-    js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null]
-  ]
+  type TFunctionKeys = String | TemplateStringsArray
+  type TFunctionResult = js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null]
   /**
     * Options that allow open ended values for interpolation unless type is provided.
     */

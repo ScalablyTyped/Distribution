@@ -10,6 +10,7 @@ trait IDateRangePickerState extends js.Object {
   var hoverValue: js.UndefOr[DateRange] = js.undefined
   var leftView: js.UndefOr[MonthAndYear] = js.undefined
   var rightView: js.UndefOr[MonthAndYear] = js.undefined
+  var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
   var time: js.UndefOr[DateRange] = js.undefined
   var value: js.UndefOr[DateRange] = js.undefined
 }
@@ -20,6 +21,7 @@ object IDateRangePickerState {
     hoverValue: DateRange = null,
     leftView: MonthAndYear = null,
     rightView: MonthAndYear = null,
+    selectedShortcutIndex: Int | Double = null,
     time: DateRange = null,
     value: DateRange = null
   ): IDateRangePickerState = {
@@ -27,6 +29,7 @@ object IDateRangePickerState {
     if (hoverValue != null) __obj.updateDynamic("hoverValue")(hoverValue)
     if (leftView != null) __obj.updateDynamic("leftView")(leftView)
     if (rightView != null) __obj.updateDynamic("rightView")(rightView)
+    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IDateRangePickerState]

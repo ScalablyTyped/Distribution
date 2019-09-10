@@ -150,6 +150,8 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var pinpointsmsvoice: js.UndefOr[typings.awsDashSdk.clientsPinpointsmsvoiceMod.ClientConfiguration] = js.native
   var polly: js.UndefOr[typings.awsDashSdk.clientsPollyMod.ClientConfiguration] = js.native
   var pricing: js.UndefOr[typings.awsDashSdk.clientsPricingMod.ClientConfiguration] = js.native
+  var qldb: js.UndefOr[typings.awsDashSdk.clientsQldbMod.ClientConfiguration] = js.native
+  var qldbsession: js.UndefOr[typings.awsDashSdk.clientsQldbsessionMod.ClientConfiguration] = js.native
   var quicksight: js.UndefOr[typings.awsDashSdk.clientsQuicksightMod.ClientConfiguration] = js.native
   var ram: js.UndefOr[typings.awsDashSdk.clientsRamMod.ClientConfiguration] = js.native
   var rds: js.UndefOr[typings.awsDashSdk.clientsRdsMod.ClientConfiguration] = js.native

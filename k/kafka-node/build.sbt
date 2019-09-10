@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kafka-node"
-version := "2.0-dt-20190226Z-712991"
+version := "2.0-dt-20190910Z-156cdf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

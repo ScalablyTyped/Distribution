@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "i18next-node-fs-backend"
-version := "2.1-dt-20190819Z-5e239d"
+version := "2.1-dt-20190819Z-4f1eb7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "i18next" % "17.0.13-534618",
+  "org.scalablytyped" %%% "i18next" % "17.0.14-9a784b",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

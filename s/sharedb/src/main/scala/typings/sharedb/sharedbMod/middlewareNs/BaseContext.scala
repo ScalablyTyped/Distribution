@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 
 trait BaseContext extends js.Object {
   var action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit
-  var agent: js.Any
+  var agent: typings.sharedb.libAgentMod.^
   var backend: typings.sharedb.sharedbMod.sharedb
 }
 
@@ -25,7 +25,7 @@ object BaseContext {
   @scala.inline
   def apply(
     action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
-    agent: js.Any,
+    agent: typings.sharedb.libAgentMod.^,
     backend: typings.sharedb.sharedbMod.sharedb
   ): BaseContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend)

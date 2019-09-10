@@ -6,9 +6,25 @@ import scala.scalajs.js.annotation._
 
 package object sharedbMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.sharedb.libSharedbMod.Snapshot
   import typings.sharedb.sharedbNumbers.`true`
 
   type AddNumOp = typings.sharedb.libSharedbMod.AddNumOp
+  type BasicCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type DBQueryCallback = js.Function3[
+    /* err */ Error | Null, 
+    /* snapshots */ js.Array[Snapshot], 
+    /* extra */ js.UndefOr[js.Any], 
+    Unit
+  ]
+  type DBQueryMethod = js.Function5[
+    /* collection */ String, 
+    /* query */ js.Any, 
+    /* fields */ js.UndefOr[ProjectionFields], 
+    /* options */ js.Any, 
+    /* callback */ DBQueryCallback, 
+    Unit
+  ]
   type Doc = typings.sharedb.libSharedbMod.Doc
   type Error = typings.sharedb.libSharedbMod.Error
   type ListDeleteOp = typings.sharedb.libSharedbMod.ListDeleteOp

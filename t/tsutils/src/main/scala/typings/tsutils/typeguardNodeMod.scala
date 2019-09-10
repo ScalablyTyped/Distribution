@@ -16,11 +16,13 @@ object typeguardNodeMod extends js.Object {
   def isAsExpression(node: Node): /* is typescript.typescript.AsExpression */ Boolean = js.native
   def isAssertionExpression(node: Node): /* is typescript.typescript.AssertionExpression */ Boolean = js.native
   def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = js.native
+  def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = js.native
   def isBinaryExpression(node: Node): /* is typescript.typescript.BinaryExpression */ Boolean = js.native
   def isBindingElement(node: Node): /* is typescript.typescript.BindingElement */ Boolean = js.native
   def isBindingPattern(node: Node): /* is typescript.typescript.BindingPattern */ Boolean = js.native
   def isBlock(node: Node): /* is typescript.typescript.Block */ Boolean = js.native
   def isBlockLike(node: Node): /* is typescript.typescript.BlockLike */ Boolean = js.native
+  def isBooleanLiteral(node: Node): /* is typescript.typescript.BooleanLiteral */ Boolean = js.native
   def isBreakOrContinueStatement(node: Node): /* is typescript.typescript.BreakOrContinueStatement */ Boolean = js.native
   def isBreakStatement(node: Node): /* is typescript.typescript.BreakStatement */ Boolean = js.native
   def isCallExpression(node: Node): /* is typescript.typescript.CallExpression */ Boolean = js.native
@@ -89,7 +91,6 @@ object typeguardNodeMod extends js.Object {
   def isJsxElement(node: Node): /* is typescript.typescript.JsxElement */ Boolean = js.native
   def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = js.native
   def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
-  def isJsxFramgment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
   def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = js.native
   def isJsxOpeningFragment(node: Node): /* is typescript.typescript.JsxOpeningFragment */ Boolean = js.native
   def isJsxOpeningLikeElement(node: Node): /* is typescript.typescript.JsxOpeningLikeElement */ Boolean = js.native
@@ -113,10 +114,13 @@ object typeguardNodeMod extends js.Object {
   def isNewExpression(node: Node): /* is typescript.typescript.NewExpression */ Boolean = js.native
   def isNoSubstitutionTemplateLiteral(node: Node): /* is typescript.typescript.NoSubstitutionTemplateLiteral */ Boolean = js.native
   def isNonNullExpression(node: Node): /* is typescript.typescript.NonNullExpression */ Boolean = js.native
+  def isNullLiteral(node: Node): /* is typescript.typescript.NullLiteral */ Boolean = js.native
   def isNumericLiteral(node: Node): /* is typescript.typescript.NumericLiteral */ Boolean = js.native
+  def isNumericOrStringLikeLiteral(node: Node): Boolean = js.native
   def isObjectBindingPattern(node: Node): /* is typescript.typescript.ObjectBindingPattern */ Boolean = js.native
   def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = js.native
   def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = js.native
+  def isOptionalTypeNode(node: Node): /* is typescript.typescript.OptionalTypeNode */ Boolean = js.native
   def isParameterDeclaration(node: Node): /* is typescript.typescript.ParameterDeclaration */ Boolean = js.native
   def isParenthesizedExpression(node: Node): /* is typescript.typescript.ParenthesizedExpression */ Boolean = js.native
   def isParenthesizedTypeNode(node: Node): /* is typescript.typescript.ParenthesizedTypeNode */ Boolean = js.native
@@ -128,6 +132,7 @@ object typeguardNodeMod extends js.Object {
   def isPropertySignature(node: Node): /* is typescript.typescript.PropertySignature */ Boolean = js.native
   def isQualifiedName(node: Node): /* is typescript.typescript.QualifiedName */ Boolean = js.native
   def isRegularExpressionLiteral(node: Node): /* is typescript.typescript.RegularExpressionLiteral */ Boolean = js.native
+  def isRestTypeNode(node: Node): /* is typescript.typescript.RestTypeNode */ Boolean = js.native
   def isReturnStatement(node: Node): /* is typescript.typescript.ReturnStatement */ Boolean = js.native
   def isSetAccessorDeclaration(node: Node): /* is typescript.typescript.SetAccessorDeclaration */ Boolean = js.native
   def isShorthandPropertyAssignment(node: Node): /* is typescript.typescript.ShorthandPropertyAssignment */ Boolean = js.native
@@ -138,10 +143,11 @@ object typeguardNodeMod extends js.Object {
   def isStringLiteral(node: Node): /* is typescript.typescript.StringLiteral */ Boolean = js.native
   def isSwitchStatement(node: Node): /* is typescript.typescript.SwitchStatement */ Boolean = js.native
   def isSyntaxList(node: Node): /* is typescript.typescript.SyntaxList */ Boolean = js.native
+  def isSyntheticExpression(node: Node): /* is typescript.typescript.SyntheticExpression */ Boolean = js.native
   def isTaggedTemplateExpression(node: Node): /* is typescript.typescript.TaggedTemplateExpression */ Boolean = js.native
   def isTemplateExpression(node: Node): /* is typescript.typescript.TemplateExpression */ Boolean = js.native
   def isTemplateLiteral(node: Node): /* is typescript.typescript.TemplateLiteral */ Boolean = js.native
-  def isTextualLiteral(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = js.native
+  def isTextualLiteral(node: Node): Boolean = js.native
   def isThrowStatement(node: Node): /* is typescript.typescript.ThrowStatement */ Boolean = js.native
   def isTryStatement(node: Node): /* is typescript.typescript.TryStatement */ Boolean = js.native
   def isTupleTypeNode(node: Node): /* is typescript.typescript.TupleTypeNode */ Boolean = js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Entity
+  * @extends pc.GraphNode
   * @classdesc The Entity is the core primitive of a PlayCanvas game. Generally speaking an object in your game will consist of an {@link pc.Entity},
   * and a set of {@link pc.Component}s which are managed by their respective {@link pc.ComponentSystem}s. One of those components maybe a
   * {@link pc.ScriptComponent} which allows you to write custom code to attach to your Entity.
@@ -63,8 +64,6 @@ import scala.scalajs.js.annotation._
   *
   * // Or use rotateLocal
   * entity.rotateLocal(0, 90, 0);
-  *
-  * @extends pc.GraphNode
   */
 @JSGlobal("pc.Entity")
 @js.native

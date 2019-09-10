@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
-import typings.reactDashNativeDashSvg.ColumnMajorTransformMatrix
-import typings.reactDashNativeDashSvg.int32ARGBColor
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-none`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-only`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`non-scaling-stroke`
@@ -11,7 +9,6 @@ import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.inherit
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.nonScalingStroke
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.none
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.uri
-import typings.reactDashNativeDashSvg.rgbaArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,12 +31,12 @@ object GProps {
     fillRule: FillRule = null,
     id: String = null,
     mask: String = null,
-    onLongPress: /* event */ js.Any => _ = null,
+    onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onPress: /* event */ js.Any => _ = null,
-    onPressIn: /* event */ js.Any => _ = null,
-    onPressOut: /* event */ js.Any => _ = null,
+    onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null,
     onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
     onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
     onResponderMove: /* event */ GestureResponderEvent => Unit = null,
@@ -51,16 +48,15 @@ object GProps {
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     opacity: NumberProp = null,
-    origin: NumberProp = null,
+    origin: NumberArray = null,
     originX: NumberProp = null,
     originY: NumberProp = null,
     pointerEvents: `box-none` | none | `box-only` | auto = null,
-    rotate: NumberProp = null,
     rotation: NumberProp = null,
-    scale: NumberProp = null,
+    scale: NumberArray = null,
     scaleX: NumberProp = null,
     scaleY: NumberProp = null,
-    skew: NumberProp = null,
+    skew: NumberArray = null,
     skewX: NumberProp = null,
     skewY: NumberProp = null,
     stroke: int32ARGBColor | rgbaArray | String = null,
@@ -72,12 +68,12 @@ object GProps {
     strokeOpacity: NumberProp = null,
     strokeWidth: NumberProp = null,
     transform: ColumnMajorTransformMatrix | String | TransformObject = null,
-    translate: NumberProp = null,
+    translate: NumberArray = null,
     translateX: NumberProp = null,
     translateY: NumberProp = null,
     vectorEffect: none | `non-scaling-stroke` | nonScalingStroke | typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.default | inherit | uri = null,
-    x: NumberProp = null,
-    y: NumberProp = null
+    x: NumberArray = null,
+    y: NumberArray = null
   ): GProps = {
     val __obj = js.Dynamic.literal()
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
@@ -112,7 +108,6 @@ object GProps {
     if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])
     if (originY != null) __obj.updateDynamic("originY")(originY.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])

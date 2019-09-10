@@ -12,6 +12,6 @@ object gatsbyComponents extends gatsbyProps {
   @scala.inline
   def PageRenderer: ComponentType[typings.gatsby.gatsbyMod.PageRendererProps] = js.constructorOf[typings.gatsby.gatsbyMod.PageRenderer].asInstanceOf[typings.react.reactMod.ComponentType[typings.gatsby.gatsbyMod.PageRendererProps]]
   @scala.inline
-  def StaticQuery: ComponentType[typings.gatsby.gatsbyMod.StaticQueryProps] = js.constructorOf[typings.gatsby.gatsbyMod.StaticQuery].asInstanceOf[typings.react.reactMod.ComponentType[typings.gatsby.gatsbyMod.StaticQueryProps]]
+  def StaticQuery[T]: ComponentType[typings.gatsby.gatsbyMod.StaticQueryProps[T]] = js.constructorOf[typings.gatsby.gatsbyMod.StaticQuery[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.gatsby.gatsbyMod.StaticQueryProps[T]]]
 }
 

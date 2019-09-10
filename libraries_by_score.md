@@ -5735,6 +5735,7 @@
 | 0.38288189591930566 | [quixote](./q/quixote) | CSS unit and integration testing
 | 0.38274615255278477 | [sequencify](./s/sequencify) | A module for sequencing tasks and dependencies
 | 0.3825558481104331 | [angular__common](./a/angular__common) | Angular - commonly needed directives and services
+| 0.38253184723188544 | [bristol](./b/bristol) | Insanely configurable logging for Node.js
 | 0.38236640023201074 | [angular-ui-notification](./a/angular-ui-notification) | Angular.js service providing simple notifications 
 | 0.38236500742421364 | [svg-injector](./s/svg-injector) | Fast, caching, dynamic inline SVG DOM injection li
 | 0.3822467496543148 | [magic-number](./m/magic-number) | Determine a file's type from its magic number.
@@ -6880,6 +6881,7 @@
 | 0.18016978736612088 | [pulumi__query](./p/pulumi__query) | An simple, relational SDK for querying TypeScript 
 | 0.18002674225242085 | [heatmap_dot_js](./h/heatmap_dot_js) | Dynamic JavaScript Heatmaps for the Web
 | 0.17996810112969985 | [flipsnap](./f/flipsnap) | Provides UI of snap and slide
+| 0.1798018080430346 | [mta-h5-analysis](./m/mta-h5-analysis) | this is wechat-h5 data analysis js sdk from MTA pl
 | 0.17966872830899916 | [pouchdb-http](./p/pouchdb-http) | PouchDB as an HTTP-only package.
 | 0.17899683826038726 | [jquery_dot_ui_dot_layout](./j/jquery_dot_ui_dot_layout) | Jquery UI Layout package
 | 0.17878865984264145 | [palx](./p/palx) | Automatic UI Color Palette Generator

@@ -14,15 +14,15 @@ class Connection protected () extends js.Object {
   def this(ws: ^) = this()
   def createFetchQuery(
     collectionName: String,
-    query: String,
+    query: js.Any,
     options: Anon_ResultsArray,
-    callback: js.Function2[/* err */ Error, /* results */ js.Any, _]
+    callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]
   ): Query = js.native
   def createSubscribeQuery(
     collectionName: String,
-    query: String,
+    query: js.Any,
     options: Anon_ResultsArray,
-    callback: js.Function2[/* err */ Error, /* results */ js.Any, _]
+    callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]
   ): Query = js.native
   def get(collectionName: String, documentID: String): Doc = js.native
 }

@@ -148,6 +148,8 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var pinpointsmsvoice: js.UndefOr[typings.awsDashSdk.clientsPinpointsmsvoiceMod.apiVersion] = js.undefined
   var polly: js.UndefOr[typings.awsDashSdk.clientsPollyMod.apiVersion] = js.undefined
   var pricing: js.UndefOr[typings.awsDashSdk.clientsPricingMod.apiVersion] = js.undefined
+  var qldb: js.UndefOr[typings.awsDashSdk.clientsQldbMod.apiVersion] = js.undefined
+  var qldbsession: js.UndefOr[typings.awsDashSdk.clientsQldbsessionMod.apiVersion] = js.undefined
   var quicksight: js.UndefOr[typings.awsDashSdk.clientsQuicksightMod.apiVersion] = js.undefined
   var ram: js.UndefOr[typings.awsDashSdk.clientsRamMod.apiVersion] = js.undefined
   var rds: js.UndefOr[typings.awsDashSdk.clientsRdsMod.apiVersion] = js.undefined
@@ -342,6 +344,8 @@ object ConfigurationServiceApiVersions {
     pinpointsmsvoice: typings.awsDashSdk.clientsPinpointsmsvoiceMod.apiVersion = null,
     polly: typings.awsDashSdk.clientsPollyMod.apiVersion = null,
     pricing: typings.awsDashSdk.clientsPricingMod.apiVersion = null,
+    qldb: typings.awsDashSdk.clientsQldbMod.apiVersion = null,
+    qldbsession: typings.awsDashSdk.clientsQldbsessionMod.apiVersion = null,
     quicksight: typings.awsDashSdk.clientsQuicksightMod.apiVersion = null,
     ram: typings.awsDashSdk.clientsRamMod.apiVersion = null,
     rds: typings.awsDashSdk.clientsRdsMod.apiVersion = null,
@@ -533,6 +537,8 @@ object ConfigurationServiceApiVersions {
     if (pinpointsmsvoice != null) __obj.updateDynamic("pinpointsmsvoice")(pinpointsmsvoice.asInstanceOf[js.Any])
     if (polly != null) __obj.updateDynamic("polly")(polly.asInstanceOf[js.Any])
     if (pricing != null) __obj.updateDynamic("pricing")(pricing.asInstanceOf[js.Any])
+    if (qldb != null) __obj.updateDynamic("qldb")(qldb.asInstanceOf[js.Any])
+    if (qldbsession != null) __obj.updateDynamic("qldbsession")(qldbsession.asInstanceOf[js.Any])
     if (quicksight != null) __obj.updateDynamic("quicksight")(quicksight.asInstanceOf[js.Any])
     if (ram != null) __obj.updateDynamic("ram")(ram.asInstanceOf[js.Any])
     if (rds != null) __obj.updateDynamic("rds")(rds.asInstanceOf[js.Any])

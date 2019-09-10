@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-api-middleware"
-version := "3.0-dt-20190826Z-9e998b"
+version := "3.0-dt-20190910Z-9c881a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

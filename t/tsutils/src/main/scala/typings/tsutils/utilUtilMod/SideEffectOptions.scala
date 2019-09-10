@@ -1,31 +1,32 @@
 package typings.tsutils.utilUtilMod
 
-import typings.tsutils.tsutilsNumbers.`0`
-import typings.tsutils.tsutilsNumbers.`1`
-import typings.tsutils.tsutilsNumbers.`2`
-import typings.tsutils.tsutilsNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - typings.tsutils.tsutilsNumbers.`0`
-  - typings.tsutils.tsutilsNumbers.`1`
-  - typings.tsutils.tsutilsNumbers.`2`
-  - typings.tsutils.tsutilsNumbers.`4`
-*/
-trait SideEffectOptions extends js.Object
+@js.native
+sealed trait SideEffectOptions extends js.Object
 
-object SideEffectOptions {
-  @scala.inline
-  def Constructor: `2` = this.cast(2)
-  @scala.inline
-  def JsxElement: `4` = this.cast(4)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def TaggedTemplate: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@JSImport("tsutils/util/util", "SideEffectOptions")
+@js.native
+object SideEffectOptions extends js.Object {
+  @js.native
+  sealed trait Constructor extends SideEffectOptions
+  
+  @js.native
+  sealed trait JsxElement extends SideEffectOptions
+  
+  @js.native
+  sealed trait None extends SideEffectOptions
+  
+  @js.native
+  sealed trait TaggedTemplate extends SideEffectOptions
+  
+  /* 2 */ val Constructor: typings.tsutils.utilUtilMod.SideEffectOptions.Constructor with Double = js.native
+  /* 4 */ val JsxElement: typings.tsutils.utilUtilMod.SideEffectOptions.JsxElement with Double = js.native
+  /* 0 */ val None: typings.tsutils.utilUtilMod.SideEffectOptions.None with Double = js.native
+  /* 1 */ val TaggedTemplate: typings.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[SideEffectOptions with Double] = js.native
 }
 

@@ -53,6 +53,7 @@ package object clientsAppstreamMod {
     - typings.awsDashSdk.awsDashSdkStrings.VPC_CONFIGURATION
     - typings.awsDashSdk.awsDashSdkStrings.VPC_CONFIGURATION_SECURITY_GROUP_IDS
     - typings.awsDashSdk.awsDashSdkStrings.DOMAIN_JOIN_INFO
+    - typings.awsDashSdk.awsDashSdkStrings.IAM_ROLE_ARN
     - java.lang.String
   */
   type FleetAttribute = _FleetAttribute | java.lang.String
@@ -64,6 +65,7 @@ package object clientsAppstreamMod {
     - typings.awsDashSdk.awsDashSdkStrings.NETWORK_INTERFACE_LIMIT_EXCEEDED
     - typings.awsDashSdk.awsDashSdkStrings.INTERNAL_SERVICE_ERROR
     - typings.awsDashSdk.awsDashSdkStrings.IAM_SERVICE_ROLE_IS_MISSING
+    - typings.awsDashSdk.awsDashSdkStrings.MACHINE_ROLE_IS_MISSING
     - typings.awsDashSdk.awsDashSdkStrings.STS_DISABLED_IN_REGION
     - typings.awsDashSdk.awsDashSdkStrings.SUBNET_HAS_INSUFFICIENT_IP_ADDRESSES
     - typings.awsDashSdk.awsDashSdkStrings.IAM_SERVICE_ROLE_MISSING_DESCRIBE_SUBNET_ACTION
@@ -198,6 +200,7 @@ package object clientsAppstreamMod {
     - typings.awsDashSdk.awsDashSdkStrings.FEEDBACK_URL
     - typings.awsDashSdk.awsDashSdkStrings.THEME_NAME
     - typings.awsDashSdk.awsDashSdkStrings.USER_SETTINGS
+    - typings.awsDashSdk.awsDashSdkStrings.IAM_ROLE_ARN
     - typings.awsDashSdk.awsDashSdkStrings.ACCESS_ENDPOINTS
     - java.lang.String
   */

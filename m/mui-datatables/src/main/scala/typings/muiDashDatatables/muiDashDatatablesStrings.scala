@@ -41,7 +41,10 @@ object muiDashDatatablesStrings {
   sealed trait none extends SelectableRows
   
   @js.native
-  sealed trait scroll extends Responsive
+  sealed trait scrollFullHeight extends Responsive
+  
+  @js.native
+  sealed trait scrollMaxHeight extends Responsive
   
   @js.native
   sealed trait single extends SelectableRows
@@ -76,7 +79,9 @@ object muiDashDatatablesStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  def scrollFullHeight: scrollFullHeight = "scrollFullHeight".asInstanceOf[scrollFullHeight]
+  @scala.inline
+  def scrollMaxHeight: scrollMaxHeight = "scrollMaxHeight".asInstanceOf[scrollMaxHeight]
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   @scala.inline

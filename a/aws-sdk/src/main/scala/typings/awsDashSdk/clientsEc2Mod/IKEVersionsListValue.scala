@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsEc2Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IKEVersionsListValue extends js.Object {
+  /**
+    * The IKE version.
+    */
+  var Value: js.UndefOr[String] = js.undefined
+}
+
+object IKEVersionsListValue {
+  @scala.inline
+  def apply(Value: String = null): IKEVersionsListValue = {
+    val __obj = js.Dynamic.literal()
+    if (Value != null) __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[IKEVersionsListValue]
+  }
+}
+

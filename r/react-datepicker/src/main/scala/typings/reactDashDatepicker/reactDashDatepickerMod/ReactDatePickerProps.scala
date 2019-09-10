@@ -45,7 +45,7 @@ trait ReactDatePickerProps extends js.Object {
   var filterDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
   var fixedHeight: js.UndefOr[Boolean] = js.native
   var forceShowMonthNavigation: js.UndefOr[Boolean] = js.native
-  var formatWeekDay: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
+  var formatWeekDay: js.UndefOr[js.Function1[/* formattedDate */ String, String]] = js.native
   var formatWeekNumber: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.native
   var highlightDates: js.UndefOr[js.Array[HighlightDates | Date]] = js.native
   var id: js.UndefOr[String] = js.native

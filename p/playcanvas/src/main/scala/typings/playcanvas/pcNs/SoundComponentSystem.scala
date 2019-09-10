@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SoundComponentSystem
+  * @extends pc.ComponentSystem
   * @classdesc Manages creation of {@link pc.SoundComponent}s.
   * @description Create a SoundComponentSystem
   * @param {pc.Application} app The Application
@@ -16,7 +17,6 @@ import scala.scalajs.js.annotation._
   * multiplied by this value. Valid between [0, 1].
   * @property {AudioContext} context Gets the AudioContext currently used by the sound manager. Requires Web Audio API support.
   * @property {pc.SoundManager} manager Gets / sets the sound manager
-  * @extends pc.ComponentSystem
   */
 @JSGlobal("pc.SoundComponentSystem")
 @js.native

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.ElementTouchEvent
-  * @classdesc Represents a TouchEvent fired on a {@link pc.ElementComponent}.
   * @extends pc.ElementInputEvent
+  * @classdesc Represents a TouchEvent fired on a {@link pc.ElementComponent}.
   * @description Create an instance of a pc.ElementTouchEvent.
   * @param {TouchEvent} event The TouchEvent that was originally raised.
   * @param {pc.ElementComponent} element The ElementComponent that this event was originally raised on.

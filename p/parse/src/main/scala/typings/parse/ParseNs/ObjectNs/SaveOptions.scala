@@ -1,5 +1,6 @@
 package typings.parse.ParseNs.ObjectNs
 
+import typings.parse.ParseNs.CascadeSaveOption
 import typings.parse.ParseNs.ScopeOptions
 import typings.parse.ParseNs.SilentOption
 import typings.parse.ParseNs.SuccessFailureOptions
@@ -10,6 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait SaveOptions
   extends SuccessFailureOptions
+     with CascadeSaveOption
      with SilentOption
      with ScopeOptions
      with WaitOption
@@ -17,6 +19,7 @@ trait SaveOptions
 object SaveOptions {
   @scala.inline
   def apply(
+    cascadeSave: js.UndefOr[Boolean] = js.undefined,
     error: js.Function = null,
     sessionToken: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
@@ -25,6 +28,7 @@ object SaveOptions {
     wait: js.UndefOr[Boolean] = js.undefined
   ): SaveOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cascadeSave)) __obj.updateDynamic("cascadeSave")(cascadeSave)
     if (error != null) __obj.updateDynamic("error")(error)
     if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)

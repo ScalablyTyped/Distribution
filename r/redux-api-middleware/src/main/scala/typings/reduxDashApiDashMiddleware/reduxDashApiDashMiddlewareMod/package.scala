@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashApiDashMiddlewareMod {
-  import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.`@@redux-api-middleware/RSAA`
-
-  type RSAA = `@@redux-api-middleware/RSAA`
+  type TypeOrResolver[Arg, Type] = Type | (js.Function1[/* arg */ Arg, Type])
 }

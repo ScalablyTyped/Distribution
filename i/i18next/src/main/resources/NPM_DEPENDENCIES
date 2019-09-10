@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "i18next" : "17.0.13"
+      "i18next" : "17.0.14"
     }
   ],
   "test-dependencies" : [
     {
-      "i18next" : "17.0.13"
+      "i18next" : "17.0.14"
     }
   ],
   "compile-devDependencies" : [

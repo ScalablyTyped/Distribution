@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-datepicker"
-version := "2.9-dt-20190903Z-e06ad0"
+version := "2.9-dt-20190909Z-21264d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

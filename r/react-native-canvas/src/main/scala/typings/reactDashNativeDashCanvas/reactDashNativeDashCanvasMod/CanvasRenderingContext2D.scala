@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CanvasRenderingContext2D extends js.Object {
-  var fillStyle: String = js.native
+  var fillStyle: String | CanvasGradient | CanvasPattern = js.native
   var font: String = js.native
   var globalAlpha: Double = js.native
   var globalCompositionOperation: String = js.native
@@ -23,7 +23,7 @@ trait CanvasRenderingContext2D extends js.Object {
   var strokeStyle: String = js.native
   var textAlign: String = js.native
   def arc(x: Double, y: Double, r: Double, sAngle: Double, eAngle: Double): Unit = js.native
-  def arc(x: Double, y: Double, r: Double, sAngle: Double, eAngle: Double, counterClockwise: Double): Unit = js.native
+  def arc(x: Double, y: Double, r: Double, sAngle: Double, eAngle: Double, counterClockwise: Boolean): Unit = js.native
   def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, r: Double): Unit = js.native
   def beginPath(): Unit = js.native
   def bezierCurveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Unit = js.native
@@ -32,7 +32,7 @@ trait CanvasRenderingContext2D extends js.Object {
   def closePath(): Unit = js.native
   def createImageData(//
   width: Double, height: Double, imageData: ImageData): Unit = js.native
-  def createLinearGradient(x0: Double, yo: Double, x1: Double, y1: Double): Unit = js.native
+  def createLinearGradient(x0: Double, yo: Double, x1: Double, y1: Double): CanvasGradient = js.native
   def createPattern(): Unit = js.native
   def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): Unit = js.native
   def drawFocusIfNeeded(html: HTMLElement): Unit = js.native
@@ -70,12 +70,13 @@ trait CanvasRenderingContext2D extends js.Object {
     anticlockwise: Boolean
   ): Unit = js.native
    //
+  def fill(): Unit = js.native
   def fill(Path2D: Path2D): Unit = js.native
   def fill(Path2D: Path2D, fillRule: js.Any): Unit = js.native
   def fillRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
   def fillText(text: String, x: Double, y: Double): Unit = js.native
   def fillText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
-  def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ImageData = js.native
+  def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageData] = js.native
   def getLineDash(): js.Array[Double] = js.native
   def isPointInPath(x: Double, y: Double, fillRule: js.Any, path: Path2D): Boolean = js.native
   def isPointInStroke(x: Double, y: Double, path: Path2D): Boolean = js.native

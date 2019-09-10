@@ -24,6 +24,8 @@ package object clientsMarketplacecommerceanalyticsMod {
     - typings.awsDashSdk.awsDashSdkStrings.daily_business_canceled_product_subscribers
     - typings.awsDashSdk.awsDashSdkStrings.monthly_revenue_billing_and_revenue_data
     - typings.awsDashSdk.awsDashSdkStrings.monthly_revenue_annual_subscriptions
+    - typings.awsDashSdk.awsDashSdkStrings.monthly_revenue_field_demonstration_usage
+    - typings.awsDashSdk.awsDashSdkStrings.monthly_revenue_flexible_payment_schedule
     - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_product
     - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_product_with_uncollected_funds
     - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_instance_hours

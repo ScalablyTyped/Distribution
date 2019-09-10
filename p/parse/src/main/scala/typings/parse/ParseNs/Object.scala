@@ -96,6 +96,7 @@ class Object () extends BaseObject {
   def remove(attr: String, item: js.Any): this.type | `false` = js.native
   def removeAll(attr: String, items: js.Any): this.type | `false` = js.native
   def revert(): Unit = js.native
+  def revert(keys: String*): Unit = js.native
   def save(): js.Promise[this.type] = js.native
   def save(attrs: js.Object): js.Promise[this.type] = js.native
   def save(attrs: js.Object, options: SaveOptions): js.Promise[this.type] = js.native

@@ -2,9 +2,13 @@ package typings.muiDashDatatables.muiDashDatatablesMod
 
 import typings.muiDashDatatables.Anon_ColIndex
 import typings.muiDashDatatables.Anon_Data
+import typings.muiDashDatatables.Anon_DataDataIndex
 import typings.muiDashDatatables.Anon_DataIndexRowIndex
-import typings.muiDashDatatables.Anon_DataKey
 import typings.muiDashDatatables.Anon_Filename
+import typings.muiDashDatatables.muiDashDatatablesStrings.checkbox
+import typings.muiDashDatatables.muiDashDatatablesStrings.dropdown
+import typings.muiDashDatatables.muiDashDatatablesStrings.multiselect
+import typings.muiDashDatatables.muiDashDatatablesStrings.textField
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.ReactNode
@@ -51,8 +55,8 @@ trait MUIDataTableOptions extends js.Object {
   var customToolbar: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var customToolbarSelect: js.UndefOr[
     js.Function3[
-      /* selectedRows */ Anon_DataKey, 
-      /* displayData */ js.Array[Anon_Data], 
+      /* selectedRows */ Anon_Data, 
+      /* displayData */ js.Array[Anon_DataDataIndex], 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit], 
       ReactNode
     ]
@@ -63,7 +67,7 @@ trait MUIDataTableOptions extends js.Object {
   var expandableRows: js.UndefOr[Boolean] = js.undefined
   var expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
-  var filterType: js.UndefOr[FilterType] = js.undefined
+  var filterType: js.UndefOr[dropdown | checkbox | multiselect | textField] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   var isRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ Double, Boolean]] = js.undefined
   var onCellClick: js.UndefOr[js.Function2[/* colData */ js.Any, /* cellMeta */ Anon_ColIndex, Unit]] = js.undefined
@@ -128,14 +132,14 @@ object MUIDataTableOptions {
     customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
     customToolbar: () => ReactNode = null,
-    customToolbarSelect: (/* selectedRows */ Anon_DataKey, /* displayData */ js.Array[Anon_Data], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
+    customToolbarSelect: (/* selectedRows */ Anon_Data, /* displayData */ js.Array[Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadOptions: Anon_Filename = null,
     elevation: Int | Double = null,
     expandableRows: js.UndefOr[Boolean] = js.undefined,
     expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
-    filterType: FilterType = null,
+    filterType: dropdown | checkbox | multiselect | textField = null,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     isRowSelectable: /* dataIndex */ Double => Boolean = null,
     onCellClick: (/* colData */ js.Any, /* cellMeta */ Anon_ColIndex) => Unit = null,
@@ -190,7 +194,7 @@ object MUIDataTableOptions {
     if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows)
     if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick)
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))

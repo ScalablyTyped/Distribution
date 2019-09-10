@@ -12,34 +12,42 @@ import typings.tsutils.utilUsageMod.VariableInfo
 import typings.tsutils.utilUtilMod.BooleanCompilerOptions
 import typings.tsutils.utilUtilMod.ForEachCommentCallback
 import typings.tsutils.utilUtilMod.ForEachTokenCallback
+import typings.tsutils.utilUtilMod.ImportLike
+import typings.tsutils.utilUtilMod.LateBoundPropertyNames
 import typings.tsutils.utilUtilMod.LineRange
 import typings.tsutils.utilUtilMod.StrictCompilerOption
+import typings.tsutils.utilUtilMod.WellKnownSymbolLiteral
 import typings.typescript.typescriptMod.ArrowFunction
+import typings.typescript.typescriptMod.AssertionExpression
 import typings.typescript.typescriptMod.BindingElement
 import typings.typescript.typescriptMod.BindingPattern
 import typings.typescript.typescriptMod.BlockLike
 import typings.typescript.typescriptMod.CallExpression
+import typings.typescript.typescriptMod.CheckJsDirective
 import typings.typescript.typescriptMod.ClassElement
+import typings.typescript.typescriptMod.ClassLikeDeclaration
 import typings.typescript.typescriptMod.CommentRange
 import typings.typescript.typescriptMod.CompilerOptions
-import typings.typescript.typescriptMod.Declaration
 import typings.typescript.typescriptMod.Expression
 import typings.typescript.typescriptMod.FunctionExpression
 import typings.typescript.typescriptMod.Identifier
 import typings.typescript.typescriptMod.JSDoc
-import typings.typescript.typescriptMod.LiteralExpression
 import typings.typescript.typescriptMod.Modifier
 import typings.typescript.typescriptMod.ModifierFlags
 import typings.typescript.typescriptMod.ModifiersArray
+import typings.typescript.typescriptMod.ModuleDeclaration
+import typings.typescript.typescriptMod.NoSubstitutionTemplateLiteral
 import typings.typescript.typescriptMod.Node
 import typings.typescript.typescriptMod.NodeFlags
 import typings.typescript.typescriptMod.ObjectFlags
 import typings.typescript.typescriptMod.ObjectType
 import typings.typescript.typescriptMod.ParameterDeclaration
 import typings.typescript.typescriptMod.PropertyName
+import typings.typescript.typescriptMod.ScriptTarget
 import typings.typescript.typescriptMod.Signature
 import typings.typescript.typescriptMod.SourceFile
 import typings.typescript.typescriptMod.Statement
+import typings.typescript.typescriptMod.StringLiteral
 import typings.typescript.typescriptMod.Symbol
 import typings.typescript.typescriptMod.SymbolFlags
 import typings.typescript.typescriptMod.SyntaxKind
@@ -49,6 +57,7 @@ import typings.typescript.typescriptMod.TypeChecker
 import typings.typescript.typescriptMod.TypeFlags
 import typings.typescript.typescriptMod.VariableDeclaration
 import typings.typescript.typescriptMod.VariableDeclarationList
+import typings.typescript.typescriptMod.__String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,11 +67,12 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def canHaveJsDoc(node: Node): /* is typescript.typescript.HasJSDoc */ Boolean = js.native
   def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = js.native
+  def commentText(sourceText: String, comment: CommentRange): String = js.native
   def convertAst(sourceFile: SourceFile): ConvertedAst = js.native
   def endsControlFlow(statement: BlockLike): Boolean = js.native
   def endsControlFlow(statement: Statement): Boolean = js.native
-  def findImports(sourceFile: SourceFile, kinds: typings.tsutils.utilUtilMod.ImportKind): js.Array[LiteralExpression] = js.native
-  def findImports(sourceFile: SourceFile, options: typings.tsutils.utilUtilMod.ImportOptions): js.Array[LiteralExpression] = js.native
+  def findImportLikeNodes(sourceFile: SourceFile, kinds: typings.tsutils.utilUtilMod.ImportKind): js.Array[ImportLike] = js.native
+  def findImports(sourceFile: SourceFile, kinds: typings.tsutils.utilUtilMod.ImportKind): js.Array[StringLiteral | NoSubstitutionTemplateLiteral] = js.native
   def forEachComment(node: Node, cb: ForEachCommentCallback): Unit = js.native
   def forEachComment(node: Node, cb: ForEachCommentCallback, sourceFile: SourceFile): Unit = js.native
   def forEachDeclaredVariable[T](
@@ -74,22 +84,26 @@ object ^ extends js.Object {
   def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit], sourceFile: SourceFile): Unit = js.native
   def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback): Unit = js.native
   def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback, sourceFile: SourceFile): Unit = js.native
+  def getAccessKind(node: Node): typings.tsutils.utilUtilMod.AccessKind = js.native
   def getCallSignaturesOfType(`type`: Type): js.Array[Signature] = js.native
+  def getCheckJsDirective(source: String): js.UndefOr[CheckJsDirective] = js.native
   def getChildOfKind[T /* <: SyntaxKind */](node: Node, kind: T): js.UndefOr[Token[T]] = js.native
   def getChildOfKind[T /* <: SyntaxKind */](node: Node, kind: T, sourceFile: SourceFile): js.UndefOr[Token[T]] = js.native
   def getCommentAtPosition(sourceFile: SourceFile, pos: Double): js.UndefOr[CommentRange] = js.native
   def getCommentAtPosition(sourceFile: SourceFile, pos: Double, parent: Node): js.UndefOr[CommentRange] = js.native
+  def getConstructorTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
   def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = js.native
-  def getControlFlowEnd(statement: BlockLike, label: Identifier): ControlFlowEnd = js.native
   def getControlFlowEnd(statement: Statement): ControlFlowEnd = js.native
-  def getControlFlowEnd(statement: Statement, label: Identifier): ControlFlowEnd = js.native
   def getDeclarationDomain(node: Identifier): js.UndefOr[typings.tsutils.utilUsageMod.DeclarationDomain] = js.native
   def getDeclarationOfBindingElement(node: BindingElement): VariableDeclaration | ParameterDeclaration = js.native
   def getIIFE(func: ArrowFunction): js.UndefOr[CallExpression] = js.native
   def getIIFE(func: FunctionExpression): js.UndefOr[CallExpression] = js.native
-  def getIdentifierText(node: Identifier): String = js.native
+  def getInstanceTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
+  def getIteratorYieldResultFromIteratorResult(`type`: Type, node: Node, checker: TypeChecker): Type = js.native
   def getJsDoc(node: Node): js.Array[JSDoc] = js.native
   def getJsDoc(node: Node, sourceFile: SourceFile): js.Array[JSDoc] = js.native
+  def getLateBoundPropertyNames(node: Expression, checker: TypeChecker): LateBoundPropertyNames = js.native
+  def getLateBoundPropertyNamesOfPropertyName(node: PropertyName, checker: TypeChecker): LateBoundPropertyNames = js.native
   def getLineBreakStyle(sourceFile: SourceFile): BACKSLASHn | BACKSLASHrBACKSLASHn = js.native
   def getLineRanges(sourceFile: SourceFile): js.Array[LineRange] = js.native
   @JSName("getModifier")
@@ -104,8 +118,13 @@ object ^ extends js.Object {
   def getPreviousToken(node: Node): js.UndefOr[Node] = js.native
   def getPreviousToken(node: Node, sourceFile: SourceFile): js.UndefOr[Node] = js.native
   def getPropertyName(propertyName: PropertyName): js.UndefOr[String] = js.native
+  def getPropertyNameFromType(`type`: Type): js.UndefOr[typings.tsutils.utilUtilMod.PropertyName] = js.native
+  def getPropertyNameOfWellKnownSymbol(node: WellKnownSymbolLiteral): typings.tsutils.utilUtilMod.PropertyName = js.native
+  def getPropertyOfType(`type`: Type, name: __String): js.UndefOr[Symbol] = js.native
+  def getSingleLateBoundPropertyNameOfPropertyName(node: PropertyName, checker: TypeChecker): js.UndefOr[typings.tsutils.utilUtilMod.PropertyName] = js.native
   def getTokenAtPosition(parent: Node, pos: Double): js.UndefOr[Node] = js.native
   def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile): js.UndefOr[Node] = js.native
+  def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile, allowJsDoc: Boolean): js.UndefOr[Node] = js.native
   def getUsageDomain(node: Identifier): js.UndefOr[typings.tsutils.utilUsageMod.UsageDomain] = js.native
   def getVariableDeclarationKind(declarationList: VariableDeclarationList): typings.tsutils.utilUtilMod.VariableDeclarationKind = js.native
   def getWrappedNodeAtPosition(wrap: NodeWrap, pos: Double): js.UndefOr[NodeWrap] = js.native
@@ -123,7 +142,9 @@ object ^ extends js.Object {
   def hasOwnThisReference(node: Node): Boolean = js.native
   def hasSideEffects(node: Expression): Boolean = js.native
   def hasSideEffects(node: Expression, options: typings.tsutils.utilUtilMod.SideEffectOptions): Boolean = js.native
+  def intersectionTypeParts(`type`: Type): js.Array[Type] = js.native
   def isAccessorDeclaration(node: Node): /* is typescript.typescript.AccessorDeclaration */ Boolean = js.native
+  def isAmbientModule(node: ModuleDeclaration): Boolean = js.native
   def isAmbientModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = js.native
   def isArrayBindingPattern(node: Node): /* is typescript.typescript.ArrayBindingPattern */ Boolean = js.native
   def isArrayLiteralExpression(node: Node): /* is typescript.typescript.ArrayLiteralExpression */ Boolean = js.native
@@ -133,14 +154,19 @@ object ^ extends js.Object {
   def isAssertionExpression(node: Node): /* is typescript.typescript.AssertionExpression */ Boolean = js.native
   def isAssignmentKind(kind: SyntaxKind): Boolean = js.native
   def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = js.native
+  def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = js.native
   def isBinaryExpression(node: Node): /* is typescript.typescript.BinaryExpression */ Boolean = js.native
+  def isBindableObjectDefinePropertyCall(node: CallExpression): Boolean = js.native
   def isBindingElement(node: Node): /* is typescript.typescript.BindingElement */ Boolean = js.native
   def isBindingPattern(node: Node): /* is typescript.typescript.BindingPattern */ Boolean = js.native
   def isBlock(node: Node): /* is typescript.typescript.Block */ Boolean = js.native
   def isBlockLike(node: Node): /* is typescript.typescript.BlockLike */ Boolean = js.native
-  def isBlockScopeBoundary(node: Node): Boolean = js.native
+  def isBlockScopeBoundary(node: Node): typings.tsutils.utilUtilMod.ScopeBoundary = js.native
+  def isBlockScopedDeclarationStatement(statement: Statement): /* is typescript.typescript.DeclarationStatement */ Boolean = js.native
   def isBlockScopedVariableDeclaration(declaration: VariableDeclaration): Boolean = js.native
   def isBlockScopedVariableDeclarationList(declarationList: VariableDeclarationList): Boolean = js.native
+  def isBooleanLiteral(node: Node): /* is typescript.typescript.BooleanLiteral */ Boolean = js.native
+  def isBooleanLiteralType(`type`: Type, literal: Boolean): Boolean = js.native
   def isBreakOrContinueStatement(node: Node): /* is typescript.typescript.BreakOrContinueStatement */ Boolean = js.native
   def isBreakStatement(node: Node): /* is typescript.typescript.BreakStatement */ Boolean = js.native
   def isCallExpression(node: Node): /* is typescript.typescript.CallExpression */ Boolean = js.native
@@ -161,6 +187,7 @@ object ^ extends js.Object {
   def isConditionalExpression(node: Node): /* is typescript.typescript.ConditionalExpression */ Boolean = js.native
   def isConditionalType(`type`: Type): /* is typescript.typescript.ConditionalType */ Boolean = js.native
   def isConditionalTypeNode(node: Node): /* is typescript.typescript.ConditionalTypeNode */ Boolean = js.native
+  def isConstAssertion(node: AssertionExpression): Boolean = js.native
   def isConstructSignatureDeclaration(node: Node): /* is typescript.typescript.ConstructSignatureDeclaration */ Boolean = js.native
   def isConstructorDeclaration(node: Node): /* is typescript.typescript.ConstructorDeclaration */ Boolean = js.native
   def isConstructorTypeNode(node: Node): /* is typescript.typescript.ConstructorTypeNode */ Boolean = js.native
@@ -193,9 +220,9 @@ object ^ extends js.Object {
   def isForStatement(node: Node): /* is typescript.typescript.ForStatement */ Boolean = js.native
   def isFunctionDeclaration(node: Node): /* is typescript.typescript.FunctionDeclaration */ Boolean = js.native
   def isFunctionExpression(node: Node): /* is typescript.typescript.FunctionExpression */ Boolean = js.native
-  def isFunctionScopeBoundary(node: Node): Boolean = js.native
+  def isFunctionScopeBoundary(node: Node): typings.tsutils.utilUtilMod.ScopeBoundary = js.native
   def isFunctionTypeNode(node: Node): /* is typescript.typescript.FunctionTypeNode */ Boolean = js.native
-  def isFunctionWithBody(node: Node): /* is typescript.typescript.FunctionLikeDeclaration */ Boolean = js.native
+  def isFunctionWithBody(node: Node): Boolean = js.native
   def isGenericType(`type`: Type): /* is typescript.typescript.GenericType */ Boolean = js.native
   def isGetAccessorDeclaration(node: Node): /* is typescript.typescript.GetAccessorDeclaration */ Boolean = js.native
   def isIdentifier(node: Node): /* is typescript.typescript.Identifier */ Boolean = js.native
@@ -205,6 +232,8 @@ object ^ extends js.Object {
   def isImportEqualsDeclaration(node: Node): /* is typescript.typescript.ImportEqualsDeclaration */ Boolean = js.native
   def isImportSpecifier(node: Node): /* is typescript.typescript.ImportSpecifier */ Boolean = js.native
   def isImportTypeNode(node: Node): /* is typescript.typescript.ImportTypeNode */ Boolean = js.native
+  def isInConstContext(node: Expression): Boolean = js.native
+  def isInSingleStatementContext(statement: Statement): Boolean = js.native
   def isIndexSignatureDeclaration(node: Node): /* is typescript.typescript.IndexSignatureDeclaration */ Boolean = js.native
   def isIndexedAccessType(`type`: Type): /* is typescript.typescript.IndexedAccessType */ Boolean = js.native
   def isIndexedAccessTypeNode(node: Node): /* is typescript.typescript.IndexedAccessTypeNode */ Boolean = js.native
@@ -226,13 +255,13 @@ object ^ extends js.Object {
   def isJsxElement(node: Node): /* is typescript.typescript.JsxElement */ Boolean = js.native
   def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = js.native
   def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
-  def isJsxFramgment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
   def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = js.native
   def isJsxOpeningFragment(node: Node): /* is typescript.typescript.JsxOpeningFragment */ Boolean = js.native
   def isJsxOpeningLikeElement(node: Node): /* is typescript.typescript.JsxOpeningLikeElement */ Boolean = js.native
   def isJsxSelfClosingElement(node: Node): /* is typescript.typescript.JsxSelfClosingElement */ Boolean = js.native
   def isJsxSpreadAttribute(node: Node): /* is typescript.typescript.JsxSpreadAttribute */ Boolean = js.native
   def isJsxText(node: Node): /* is typescript.typescript.JsxText */ Boolean = js.native
+  def isKeywordKind(kind: SyntaxKind): Boolean = js.native
   def isLabeledStatement(node: Node): /* is typescript.typescript.LabeledStatement */ Boolean = js.native
   def isLiteralExpression(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = js.native
   def isLiteralType(`type`: Type): /* is typescript.typescript.LiteralType */ Boolean = js.native
@@ -241,8 +270,6 @@ object ^ extends js.Object {
   def isMetaProperty(node: Node): /* is typescript.typescript.MetaProperty */ Boolean = js.native
   def isMethodDeclaration(node: Node): /* is typescript.typescript.MethodDeclaration */ Boolean = js.native
   def isMethodSignature(node: Node): /* is typescript.typescript.MethodSignature */ Boolean = js.native
-  def isModfierFlagSet(node: Node, flag: ModifierFlags): Boolean = js.native
-  def isModifierFlagSet(node: Declaration, flag: ModifierFlags): Boolean = js.native
   def isModifierFlagSet(node: Node, flag: ModifierFlags): Boolean = js.native
   def isModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = js.native
   def isModuleDeclaration(node: Node): /* is typescript.typescript.ModuleDeclaration */ Boolean = js.native
@@ -256,12 +283,17 @@ object ^ extends js.Object {
   def isNodeFlagSet(node: Node, flag: NodeFlags): Boolean = js.native
   def isNodeKind(kind: SyntaxKind): Boolean = js.native
   def isNonNullExpression(node: Node): /* is typescript.typescript.NonNullExpression */ Boolean = js.native
+  def isNullLiteral(node: Node): /* is typescript.typescript.NullLiteral */ Boolean = js.native
   def isNumericLiteral(node: Node): /* is typescript.typescript.NumericLiteral */ Boolean = js.native
+  def isNumericOrStringLikeLiteral(node: Node): Boolean = js.native
+  def isNumericPropertyName(name: String): Boolean = js.native
+  def isNumericPropertyName(name: __String): Boolean = js.native
   def isObjectBindingPattern(node: Node): /* is typescript.typescript.ObjectBindingPattern */ Boolean = js.native
   def isObjectFlagSet(objectType: ObjectType, flag: ObjectFlags): Boolean = js.native
   def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = js.native
   def isObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
   def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = js.native
+  def isOptionalTypeNode(node: Node): /* is typescript.typescript.OptionalTypeNode */ Boolean = js.native
   def isParameterDeclaration(node: Node): /* is typescript.typescript.ParameterDeclaration */ Boolean = js.native
   def isParameterProperty(node: ParameterDeclaration): Boolean = js.native
   def isParenthesizedExpression(node: Node): /* is typescript.typescript.ParenthesizedExpression */ Boolean = js.native
@@ -273,10 +305,13 @@ object ^ extends js.Object {
   def isPropertyAccessExpression(node: Node): /* is typescript.typescript.PropertyAccessExpression */ Boolean = js.native
   def isPropertyAssignment(node: Node): /* is typescript.typescript.PropertyAssignment */ Boolean = js.native
   def isPropertyDeclaration(node: Node): /* is typescript.typescript.PropertyDeclaration */ Boolean = js.native
+  def isPropertyReadonlyInType(`type`: Type, name: __String, checker: TypeChecker): Boolean = js.native
   def isPropertySignature(node: Node): /* is typescript.typescript.PropertySignature */ Boolean = js.native
   def isQualifiedName(node: Node): /* is typescript.typescript.QualifiedName */ Boolean = js.native
+  def isReadonlyAssignmentDeclaration(node: CallExpression, checker: TypeChecker): Boolean = js.native
   def isReassignmentTarget(node: Expression): Boolean = js.native
   def isRegularExpressionLiteral(node: Node): /* is typescript.typescript.RegularExpressionLiteral */ Boolean = js.native
+  def isRestTypeNode(node: Node): /* is typescript.typescript.RestTypeNode */ Boolean = js.native
   def isReturnStatement(node: Node): /* is typescript.typescript.ReturnStatement */ Boolean = js.native
   def isSameLine(sourceFile: SourceFile, pos1: Double, pos2: Double): Boolean = js.native
   def isScopeBoundary(node: Node): typings.tsutils.utilUtilMod.ScopeBoundary = js.native
@@ -293,17 +328,21 @@ object ^ extends js.Object {
   def isSwitchStatement(node: Node): /* is typescript.typescript.SwitchStatement */ Boolean = js.native
   def isSymbolFlagSet(symbol: Symbol, flag: SymbolFlags): Boolean = js.native
   def isSyntaxList(node: Node): /* is typescript.typescript.SyntaxList */ Boolean = js.native
+  def isSyntheticExpression(node: Node): /* is typescript.typescript.SyntheticExpression */ Boolean = js.native
   def isTaggedTemplateExpression(node: Node): /* is typescript.typescript.TaggedTemplateExpression */ Boolean = js.native
   def isTemplateExpression(node: Node): /* is typescript.typescript.TemplateExpression */ Boolean = js.native
   def isTemplateLiteral(node: Node): /* is typescript.typescript.TemplateLiteral */ Boolean = js.native
-  def isTextualLiteral(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = js.native
+  def isTextualLiteral(node: Node): Boolean = js.native
   def isThenableType(checker: TypeChecker, node: Expression): Boolean = js.native
   def isThenableType(checker: TypeChecker, node: Expression, `type`: Type): Boolean = js.native
+  def isThenableType(checker: TypeChecker, node: Node, `type`: Type): Boolean = js.native
   def isThisParameter(parameter: ParameterDeclaration): Boolean = js.native
   def isThrowStatement(node: Node): /* is typescript.typescript.ThrowStatement */ Boolean = js.native
   def isTokenKind(kind: SyntaxKind): Boolean = js.native
   def isTryStatement(node: Node): /* is typescript.typescript.TryStatement */ Boolean = js.native
+  def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = js.native
   def isTupleTypeNode(node: Node): /* is typescript.typescript.TupleTypeNode */ Boolean = js.native
+  def isTupleTypeReference(`type`: Type): Boolean = js.native
   def isTypeAliasDeclaration(node: Node): /* is typescript.typescript.TypeAliasDeclaration */ Boolean = js.native
   def isTypeAssertion(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = js.native
   def isTypeAssignableToNumber(checker: TypeChecker, `type`: Type): Boolean = js.native
@@ -319,25 +358,40 @@ object ^ extends js.Object {
   def isTypeQueryNode(node: Node): /* is typescript.typescript.TypeQueryNode */ Boolean = js.native
   def isTypeReference(`type`: Type): /* is typescript.typescript.TypeReference */ Boolean = js.native
   def isTypeReferenceNode(node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = js.native
+  def isTypeScopeBoundary(node: Node): typings.tsutils.utilUtilMod.ScopeBoundary = js.native
   def isTypeVariable(`type`: Type): Boolean = js.native
   def isUnionOrIntersectionType(`type`: Type): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = js.native
   def isUnionType(`type`: Type): /* is typescript.typescript.UnionType */ Boolean = js.native
   def isUnionTypeNode(node: Node): /* is typescript.typescript.UnionTypeNode */ Boolean = js.native
   def isUniqueESSymbolType(`type`: Type): /* is typescript.typescript.UniqueESSymbolType */ Boolean = js.native
   def isValidIdentifier(text: String): Boolean = js.native
+  def isValidIdentifier(text: String, languageVersion: ScriptTarget): Boolean = js.native
+  def isValidJsxIdentifier(text: String): Boolean = js.native
+  def isValidJsxIdentifier(text: String, languageVersion: ScriptTarget): Boolean = js.native
   def isValidNumericLiteral(text: String): Boolean = js.native
+  def isValidNumericLiteral(text: String, languageVersion: ScriptTarget): Boolean = js.native
   def isValidPropertyAccess(text: String): Boolean = js.native
+  def isValidPropertyAccess(text: String, languageVersion: ScriptTarget): Boolean = js.native
   def isValidPropertyName(text: String): Boolean = js.native
+  def isValidPropertyName(text: String, languageVersion: ScriptTarget): Boolean = js.native
   def isVariableDeclaration(node: Node): /* is typescript.typescript.VariableDeclaration */ Boolean = js.native
   def isVariableDeclarationList(node: Node): /* is typescript.typescript.VariableDeclarationList */ Boolean = js.native
   def isVariableStatement(node: Node): /* is typescript.typescript.VariableStatement */ Boolean = js.native
   def isVoidExpression(node: Node): /* is typescript.typescript.VoidExpression */ Boolean = js.native
+  def isWellKnownSymbolLiterally(node: Expression): /* is tsutils.tsutils/util/util.WellKnownSymbolLiteral */ Boolean = js.native
   def isWhileStatement(node: Node): /* is typescript.typescript.WhileStatement */ Boolean = js.native
   def isWithStatement(node: Node): /* is typescript.typescript.WithStatement */ Boolean = js.native
   def parseJsDocOfNode(node: Node): js.Array[JSDoc] = js.native
   def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean): js.Array[JSDoc] = js.native
   def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean, sourceFile: SourceFile): js.Array[JSDoc] = js.native
   def removeOptionalityFromType(checker: TypeChecker, `type`: Type): Type = js.native
+  def someTypePart(
+    `type`: Type,
+    predicate: js.Function1[/* t */ Type, /* is typescript.typescript.UnionOrIntersectionType */ Boolean],
+    cb: js.Function1[/* t */ Type, Boolean]
+  ): Boolean = js.native
+  def symbolHasReadonlyDeclaration(symbol: Symbol, checker: TypeChecker): Boolean = js.native
   def unionTypeParts(`type`: Type): js.Array[Type] = js.native
+  def unwrapParentheses(node: Expression): Expression = js.native
 }
 

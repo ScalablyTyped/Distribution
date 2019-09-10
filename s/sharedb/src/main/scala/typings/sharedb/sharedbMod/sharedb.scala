@@ -1,5 +1,6 @@
 package typings.sharedb.sharedbMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.sharedb.sharedbMod.middlewareNs.ApplyContext
 import typings.sharedb.sharedbMod.middlewareNs.CommitContext
 import typings.sharedb.sharedbMod.middlewareNs.ConnectContext
@@ -27,6 +28,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait sharedb extends js.Object {
+  var db: DB = js.native
+  var extraDbs: StringDictionary[ExtraDB] = js.native
+  var pubsub: PubSub = js.native
   /**
     * Registers a projection that can be used from clients just like a normal collection.
     *
@@ -36,7 +40,7 @@ trait sharedb extends js.Object {
     */
   def addProjection(name: String, collection: String, fields: ProjectionFields): Unit = js.native
   def close(): Unit = js.native
-  def close(callback: js.Function1[/* err */ js.UndefOr[Error], _]): Unit = js.native
+  def close(callback: BasicCallback): Unit = js.native
   def connect(): Connection = js.native
   def connect(connection: js.Any): Connection = js.native
   def connect(connection: js.Any, req: js.Any): Connection = js.native

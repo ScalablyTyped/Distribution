@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
+import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,10 @@ trait TouchableProps extends js.Object {
   var delayPressIn: js.UndefOr[Double] = js.undefined
   var delayPressOut: js.UndefOr[Double] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var onLongPress: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.undefined
-  var onPress: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.undefined
-  var onPressIn: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.undefined
-  var onPressOut: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.undefined
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
 }
 
 object TouchableProps {
@@ -22,10 +23,10 @@ object TouchableProps {
     delayPressIn: Int | Double = null,
     delayPressOut: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    onLongPress: /* event */ js.Any => _ = null,
-    onPress: /* event */ js.Any => _ = null,
-    onPressIn: /* event */ js.Any => _ = null,
-    onPressOut: /* event */ js.Any => _ = null
+    onLongPress: /* event */ GestureResponderEvent => Unit = null,
+    onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null
   ): TouchableProps = {
     val __obj = js.Dynamic.literal()
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])

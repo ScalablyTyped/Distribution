@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-svg"
-version := "9.8.5-7e8ded"
+version := "9.9.3-a9c481"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

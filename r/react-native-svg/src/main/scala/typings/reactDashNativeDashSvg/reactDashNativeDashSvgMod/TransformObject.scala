@@ -5,49 +5,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TransformObject extends js.Object {
-  var origin: js.UndefOr[NumberProp] = js.undefined
+  var origin: js.UndefOr[NumberArray] = js.undefined
   var originX: js.UndefOr[NumberProp] = js.undefined
   var originY: js.UndefOr[NumberProp] = js.undefined
-  var rotate: js.UndefOr[NumberProp] = js.undefined
   var rotation: js.UndefOr[NumberProp] = js.undefined
-  var scale: js.UndefOr[NumberProp] = js.undefined
+  var scale: js.UndefOr[NumberArray] = js.undefined
   var scaleX: js.UndefOr[NumberProp] = js.undefined
   var scaleY: js.UndefOr[NumberProp] = js.undefined
-  var skew: js.UndefOr[NumberProp] = js.undefined
+  var skew: js.UndefOr[NumberArray] = js.undefined
   var skewX: js.UndefOr[NumberProp] = js.undefined
   var skewY: js.UndefOr[NumberProp] = js.undefined
-  var translate: js.UndefOr[NumberProp] = js.undefined
+  var translate: js.UndefOr[NumberArray] = js.undefined
   var translateX: js.UndefOr[NumberProp] = js.undefined
   var translateY: js.UndefOr[NumberProp] = js.undefined
-  var x: js.UndefOr[NumberProp] = js.undefined
-  var y: js.UndefOr[NumberProp] = js.undefined
+  var x: js.UndefOr[NumberArray] = js.undefined
+  var y: js.UndefOr[NumberArray] = js.undefined
 }
 
 object TransformObject {
   @scala.inline
   def apply(
-    origin: NumberProp = null,
+    origin: NumberArray = null,
     originX: NumberProp = null,
     originY: NumberProp = null,
-    rotate: NumberProp = null,
     rotation: NumberProp = null,
-    scale: NumberProp = null,
+    scale: NumberArray = null,
     scaleX: NumberProp = null,
     scaleY: NumberProp = null,
-    skew: NumberProp = null,
+    skew: NumberArray = null,
     skewX: NumberProp = null,
     skewY: NumberProp = null,
-    translate: NumberProp = null,
+    translate: NumberArray = null,
     translateX: NumberProp = null,
     translateY: NumberProp = null,
-    x: NumberProp = null,
-    y: NumberProp = null
+    x: NumberArray = null,
+    y: NumberArray = null
   ): TransformObject = {
     val __obj = js.Dynamic.literal()
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])
     if (originY != null) __obj.updateDynamic("originY")(originY.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])

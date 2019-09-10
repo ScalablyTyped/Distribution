@@ -1,5 +1,8 @@
 package typings.reactDashNativeDashSvg
 
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.AstProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.UriProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.XmlProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,6 +59,21 @@ trait reactDashNativeDashSvgProps {
   @scala.inline
   def SvgProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgProps
   type SvgProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgProps
+  @scala.inline
+  def SvgAstProps: AstProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.AstProps
+  type SvgAstProps = AstProps
+  @scala.inline
+  def SvgFromUriProps: UriProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.UriProps
+  type SvgFromUriProps = UriProps
+  @scala.inline
+  def SvgFromXmlProps: XmlProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.XmlProps
+  type SvgFromXmlProps = XmlProps
+  @scala.inline
+  def SvgUriProps: UriProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.UriProps
+  type SvgUriProps = UriProps
+  @scala.inline
+  def SvgXmlProps: XmlProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.XmlProps
+  type SvgXmlProps = XmlProps
   @scala.inline
   def SymbolProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SymbolProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SymbolProps
   type SymbolProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SymbolProps

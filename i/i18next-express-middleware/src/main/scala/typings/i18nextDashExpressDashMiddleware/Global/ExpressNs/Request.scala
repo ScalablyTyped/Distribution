@@ -1,8 +1,9 @@
 package typings.i18nextDashExpressDashMiddleware.Global.ExpressNs
 
 import typings.i18next.i18nextMod.TFunction
+import typings.i18next.i18nextMod.TFunctionKeys
+import typings.i18next.i18nextMod.TFunctionResult
 import typings.i18next.i18nextMod.TOptions
-import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,11 +15,16 @@ trait Request extends js.Object {
   var languages: js.Array[String] = js.native
   @JSName("t")
   var t_Original: TFunction = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: TKeys): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
-  def t[TResult /* <: js.UndefOr[String | js.Object | (js.Array[String | js.Object]) | Null] */, TKeys /* <: String | TemplateStringsArray */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
+  // basic usage
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
 }
 

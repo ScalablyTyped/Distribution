@@ -6,7 +6,6 @@ import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FontStretch
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FontStyle
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FontVariant
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FontVariantLigatures
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FontWeight
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.LengthAdjust
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Linecap
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Linejoin
@@ -17,37 +16,38 @@ import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TextPathMidLine
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TextPathSpacing
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Units
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod._BaselineShift
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod._FontWeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSvgStrings {
   @js.native
-  sealed trait `100` extends FontWeight
+  sealed trait `100` extends _FontWeight
   
   @js.native
-  sealed trait `200` extends FontWeight
+  sealed trait `200` extends _FontWeight
   
   @js.native
-  sealed trait `300` extends FontWeight
+  sealed trait `300` extends _FontWeight
   
   @js.native
-  sealed trait `400` extends FontWeight
+  sealed trait `400` extends _FontWeight
   
   @js.native
-  sealed trait `500` extends FontWeight
+  sealed trait `500` extends _FontWeight
   
   @js.native
-  sealed trait `600` extends FontWeight
+  sealed trait `600` extends _FontWeight
   
   @js.native
-  sealed trait `700` extends FontWeight
+  sealed trait `700` extends _FontWeight
   
   @js.native
-  sealed trait `800` extends FontWeight
+  sealed trait `800` extends _FontWeight
   
   @js.native
-  sealed trait `900` extends FontWeight
+  sealed trait `900` extends _FontWeight
   
   @js.native
   sealed trait `after-edge` extends AlignmentBaseline
@@ -76,10 +76,10 @@ object reactDashNativeDashSvgStrings {
   sealed trait blink extends TextDecoration
   
   @js.native
-  sealed trait bold extends FontWeight
+  sealed trait bold extends _FontWeight
   
   @js.native
-  sealed trait bolder extends FontWeight
+  sealed trait bolder extends _FontWeight
   
   @js.native
   sealed trait bottom extends AlignmentBaseline
@@ -136,7 +136,7 @@ object reactDashNativeDashSvgStrings {
   sealed trait italic extends FontStyle
   
   @js.native
-  sealed trait lighter extends FontWeight
+  sealed trait lighter extends _FontWeight
   
   @js.native
   sealed trait `line-through` extends TextDecoration
@@ -175,7 +175,7 @@ object reactDashNativeDashSvgStrings {
        with FontStyle
        with FontVariant
        with FontVariantLigatures
-       with FontWeight
+       with _FontWeight
   
   @js.native
   sealed trait objectBoundingBox extends Units

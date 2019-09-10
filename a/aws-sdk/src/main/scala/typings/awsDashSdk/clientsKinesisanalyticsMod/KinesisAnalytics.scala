@@ -231,12 +231,12 @@ trait KinesisAnalytics extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, Unit]
   ): Request[ListApplicationsResponse, AWSError] = js.native
   /**
-    * Retrieves the list of key-value tags assigned to the application.
+    * Retrieves the list of key-value tags assigned to the application. For more information, see Using Tagging.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Retrieves the list of key-value tags assigned to the application.
+    * Retrieves the list of key-value tags assigned to the application. For more information, see Using Tagging.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -270,12 +270,12 @@ trait KinesisAnalytics extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopApplicationResponse, Unit]
   ): Request[StopApplicationResponse, AWSError] = js.native
   /**
-    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
+    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Tagging.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
+    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Tagging.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -283,12 +283,12 @@ trait KinesisAnalytics extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Removes one or more tags from a Kinesis Analytics application.
+    * Removes one or more tags from a Kinesis Analytics application. For more information, see Using Tagging.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes one or more tags from a Kinesis Analytics application.
+    * Removes one or more tags from a Kinesis Analytics application. For more information, see Using Tagging.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(

@@ -1,13 +1,12 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
-import typings.reactDashNativeDashSvg.ColumnMajorTransformMatrix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PatternProps extends js.Object {
   var height: js.UndefOr[NumberProp] = js.undefined
-  var id: String
+  var id: js.UndefOr[String] = js.undefined
   var patternContentUnits: js.UndefOr[Units] = js.undefined
   var patternTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   var patternUnits: js.UndefOr[Units] = js.undefined
@@ -21,8 +20,8 @@ trait PatternProps extends js.Object {
 object PatternProps {
   @scala.inline
   def apply(
-    id: String,
     height: NumberProp = null,
+    id: String = null,
     patternContentUnits: Units = null,
     patternTransform: ColumnMajorTransformMatrix | String = null,
     patternUnits: Units = null,
@@ -32,8 +31,9 @@ object PatternProps {
     x: NumberProp = null,
     y: NumberProp = null
   ): PatternProps = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
     if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits)
     if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform.asInstanceOf[js.Any])
     if (patternUnits != null) __obj.updateDynamic("patternUnits")(patternUnits)

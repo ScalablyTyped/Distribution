@@ -1,7 +1,7 @@
 
 # Scala.js typings for playcanvas
 
-Typings are for version 1.23.0
+Typings are for version 1.23.1
 
 
 

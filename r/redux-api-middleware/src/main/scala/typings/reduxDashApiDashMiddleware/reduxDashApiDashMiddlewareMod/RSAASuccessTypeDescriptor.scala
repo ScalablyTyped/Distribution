@@ -1,31 +1,32 @@
 package typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareMod
 
+import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RSAASuccessTypeDescriptor[S, P, M] extends js.Object {
+trait RSAASuccessTypeDescriptor[State, Payload, Meta] extends js.Object {
   var meta: js.UndefOr[
-    (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ S, /* res */ js.Any, M]) | M
+    (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ js.Any, Meta]) | Meta
   ] = js.undefined
   var payload: js.UndefOr[
-    (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ S, /* res */ js.Any, P]) | P
+    (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response, Payload]) | Payload
   ] = js.undefined
   var `type`: String | js.Symbol
 }
 
 object RSAASuccessTypeDescriptor {
   @scala.inline
-  def apply[S, P, M](
+  def apply[State, Payload, Meta](
     `type`: String | js.Symbol,
-    meta: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ S, /* res */ js.Any, M]) | M = null,
-    payload: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ S, /* res */ js.Any, P]) | P = null
-  ): RSAASuccessTypeDescriptor[S, P, M] = {
+    meta: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ js.Any, Meta]) | Meta = null,
+    payload: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response, Payload]) | Payload = null
+  ): RSAASuccessTypeDescriptor[State, Payload, Meta] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RSAASuccessTypeDescriptor[S, P, M]]
+    __obj.asInstanceOf[RSAASuccessTypeDescriptor[State, Payload, Meta]]
   }
 }
 

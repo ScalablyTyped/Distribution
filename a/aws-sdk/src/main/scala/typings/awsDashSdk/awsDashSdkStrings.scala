@@ -64,6 +64,7 @@ import typings.awsDashSdk.clientsApplicationautoscalingMod._ServiceNamespace
 import typings.awsDashSdk.clientsApplicationinsightsMod._FeedbackValue
 import typings.awsDashSdk.clientsApplicationinsightsMod._LogFilter
 import typings.awsDashSdk.clientsApplicationinsightsMod._SeverityLevel
+import typings.awsDashSdk.clientsAppmeshMod._DurationUnit
 import typings.awsDashSdk.clientsAppmeshMod._EgressFilterType
 import typings.awsDashSdk.clientsAppmeshMod._HttpMethod
 import typings.awsDashSdk.clientsAppmeshMod._HttpScheme
@@ -424,7 +425,6 @@ import typings.awsDashSdk.clientsDiscoveryMod._BatchDeleteImportDataErrorCode
 import typings.awsDashSdk.clientsDiscoveryMod._ConfigurationItemType
 import typings.awsDashSdk.clientsDiscoveryMod._ContinuousExportStatus
 import typings.awsDashSdk.clientsDiscoveryMod._ExportDataFormat
-import typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
 import typings.awsDashSdk.clientsDiscoveryMod._ImportTaskFilterName
 import typings.awsDashSdk.clientsDiscoveryMod._orderString
 import typings.awsDashSdk.clientsDlmMod._GettablePolicyStateValues
@@ -1473,6 +1473,9 @@ import typings.awsDashSdk.clientsPollyMod._Gender
 import typings.awsDashSdk.clientsPollyMod._SpeechMarkType
 import typings.awsDashSdk.clientsPollyMod._TextType
 import typings.awsDashSdk.clientsPollyMod._VoiceId
+import typings.awsDashSdk.clientsQldbMod._ExportStatus
+import typings.awsDashSdk.clientsQldbMod._LedgerState
+import typings.awsDashSdk.clientsQldbMod._S3ObjectEncryptionType
 import typings.awsDashSdk.clientsQuicksightMod._UserRole
 import typings.awsDashSdk.clientsRamMod._ResourceOwner
 import typings.awsDashSdk.clientsRamMod._ResourceShareAssociationStatus
@@ -2712,6 +2715,10 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsApigatewayv2Mod._apiVersion
   
   @js.native
+  sealed trait `2019-01-02`
+    extends typings.awsDashSdk.clientsQldbMod._apiVersion
+  
+  @js.native
   sealed trait `2019-01-25`
     extends typings.awsDashSdk.clientsAppmeshMod._apiVersion
   
@@ -2726,6 +2733,10 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `2019-06-24`
     extends typings.awsDashSdk.clientsServicequotasMod._apiVersion
+  
+  @js.native
+  sealed trait `2019-07-11`
+    extends typings.awsDashSdk.clientsQldbsessionMod._apiVersion
   
   @js.native
   sealed trait `237` extends _CacheClusterSize
@@ -2913,6 +2924,7 @@ object awsDashSdkStrings {
        with _InputStatus
        with _InstanceStatus
        with _IpSetStatus
+       with _LedgerState
        with _MeshStatusCode
        with _PlayerSessionStatus
        with _QueueStatus
@@ -5573,6 +5585,7 @@ object awsDashSdkStrings {
   sealed trait CANCELLED
     extends _ContactStatus
        with _CrawlState
+       with _ExportStatus
        with _ExportTaskStatusCode
        with _GameSessionPlacementState
        with typings.awsDashSdk.clientsAmplifyMod._JobStatus
@@ -6066,6 +6079,7 @@ object awsDashSdkStrings {
        with _DeploymentStatus
        with _EntityStatus
        with typings.awsDashSdk.clientsDevicefarmMod._ExecutionStatus
+       with _ExportStatus
        with _ExportTaskStatusCode
        with _JobFlowExecutionState
        with typings.awsDashSdk.clientsPinpointMod._JobStatus
@@ -6521,6 +6535,7 @@ object awsDashSdkStrings {
        with _InputStatus
        with _IpAddressStatus
        with _JQStatus
+       with _LedgerState
        with _MemberStatus
        with _NetworkStatus
        with _NodeStatus
@@ -7405,6 +7420,7 @@ object awsDashSdkStrings {
        with _InputState
        with _IpSetStatus
        with _JQStatus
+       with _LedgerState
        with _MemberStatus
        with _MeshStatusCode
        with _NetworkStatus
@@ -7522,6 +7538,7 @@ object awsDashSdkStrings {
        with _InputStatus
        with _IpAddressStatus
        with _JQStatus
+       with _LedgerState
        with _MemberStatus
        with _ModelStatus
        with _NetworkStatus
@@ -9553,7 +9570,7 @@ object awsDashSdkStrings {
        with _EventType
        with _ExecutionResult
        with _ExecutionStatus
-       with _ExportStatus
+       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._ExportStatus
        with _ExportTaskStatusCode
        with _FileSystemLifecycle
@@ -11318,6 +11335,11 @@ object awsDashSdkStrings {
        with _MLModelFilterVariable
   
   @js.native
+  sealed trait IAM_ROLE_ARN
+    extends _FleetAttribute
+       with _StackAttribute
+  
+  @js.native
   sealed trait IAM_ROLE_MISSING extends _ErrorCode
   
   @js.native
@@ -11963,8 +11985,9 @@ object awsDashSdkStrings {
        with _DeliverabilityTestStatus
        with _DeploymentStatus
        with typings.awsDashSdk.clientsAmplifyMod._DomainStatus
-       with _ExportStatus
+       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._ExportStatus
+       with _ExportStatus
        with _ImportStatus
        with _JobExecutionStatus
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
@@ -13557,6 +13580,9 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
   
   @js.native
+  sealed trait MACHINE_ROLE_IS_MISSING extends _FleetErrorCode
+  
+  @js.native
   sealed trait MACRO extends _MalwareType
   
   @js.native
@@ -14941,6 +14967,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait NO_EC2_SUBSCRIPTION extends _ErrorCode
+  
+  @js.native
+  sealed trait NO_ENCRYPTION extends _S3ObjectEncryptionType
   
   @js.native
   sealed trait NO_EVENT_ID extends _SmoothGroupEventIdMode
@@ -18974,10 +19003,14 @@ object awsDashSdkStrings {
   sealed trait `SSE-S3` extends _S3EncryptionMode
   
   @js.native
-  sealed trait SSE_KMS extends _EncryptionOption
+  sealed trait SSE_KMS
+    extends _EncryptionOption
+       with _S3ObjectEncryptionType
   
   @js.native
-  sealed trait SSE_S3 extends _EncryptionOption
+  sealed trait SSE_S3
+    extends _EncryptionOption
+       with _S3ObjectEncryptionType
   
   @js.native
   sealed trait SSH extends _encodingType
@@ -19324,7 +19357,7 @@ object awsDashSdkStrings {
        with _DatasetContentState
        with _DeletionTaskStatusType
        with _ExecutionStatus
-       with _ExportStatus
+       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with _FlowExecutionStatus
        with _JobExecutionStatus
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
@@ -23356,6 +23389,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsCloud9Mod._EnvironmentStatus
   
   @js.native
+  sealed trait `connection-error` extends js.Object
+  
+  @js.native
   sealed trait container extends _JobDefinitionType
   
   @js.native
@@ -25295,6 +25331,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMobileMod._apiVersion
        with typings.awsDashSdk.clientsSsmMod._apiVersion
        with typings.awsDashSdk.clientsEfsMod._apiVersion
+       with typings.awsDashSdk.clientsQldbsessionMod._apiVersion
        with typings.awsDashSdk.clientsComprehendmedicalMod._apiVersion
        with typings.awsDashSdk.clientsApigatewayMod._apiVersion
        with typings.awsDashSdk.clientsAppmeshMod._apiVersion
@@ -25371,6 +25408,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsGuarddutyMod._apiVersion
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._apiVersion
        with typings.awsDashSdk.clientsAmplifyMod._apiVersion
+       with typings.awsDashSdk.clientsQldbMod._apiVersion
        with typings.awsDashSdk.clientsCostexplorerMod._apiVersion
        with typings.awsDashSdk.clientsMedialiveMod._apiVersion
        with typings.awsDashSdk.clientsCloudwatchMod._apiVersion
@@ -25432,6 +25470,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait leftPupil extends _LandmarkType
+  
+  @js.native
+  sealed trait legacy extends js.Object
   
   @js.native
   sealed trait `less-than`
@@ -26132,6 +26173,12 @@ object awsDashSdkStrings {
   sealed trait monthly_revenue_billing_and_revenue_data extends _DataSetType
   
   @js.native
+  sealed trait monthly_revenue_field_demonstration_usage extends _DataSetType
+  
+  @js.native
+  sealed trait monthly_revenue_flexible_payment_schedule extends _DataSetType
+  
+  @js.native
   sealed trait mouthDown extends _LandmarkType
   
   @js.native
@@ -26156,6 +26203,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait mp4 extends _MediaFormat
+  
+  @js.native
+  sealed trait ms extends _DurationUnit
   
   @js.native
   sealed trait msgqueue extends _UlimitName
@@ -27013,6 +27063,9 @@ object awsDashSdkStrings {
   sealed trait refreshing extends _RefreshSchemasStatusTypeValue
   
   @js.native
+  sealed trait regional extends js.Object
+  
+  @js.native
   sealed trait registerTime extends _ApplicationRevisionSortBy
   
   @js.native
@@ -27255,6 +27308,9 @@ object awsDashSdkStrings {
   sealed trait rw
     extends _FileSystemAccessMode
        with typings.awsDashSdk.clientsGreengrassMod._Permission
+  
+  @js.native
+  sealed trait s extends _DurationUnit
   
   @js.native
   sealed trait s3
@@ -28725,6 +28781,8 @@ object awsDashSdkStrings {
   @scala.inline
   def `2018-11-29`: `2018-11-29` = "2018-11-29".asInstanceOf[`2018-11-29`]
   @scala.inline
+  def `2019-01-02`: `2019-01-02` = "2019-01-02".asInstanceOf[`2019-01-02`]
+  @scala.inline
   def `2019-01-25`: `2019-01-25` = "2019-01-25".asInstanceOf[`2019-01-25`]
   @scala.inline
   def `2019-03-26`: `2019-03-26` = "2019-03-26".asInstanceOf[`2019-03-26`]
@@ -28732,6 +28790,8 @@ object awsDashSdkStrings {
   def `2019-05-23`: `2019-05-23` = "2019-05-23".asInstanceOf[`2019-05-23`]
   @scala.inline
   def `2019-06-24`: `2019-06-24` = "2019-06-24".asInstanceOf[`2019-06-24`]
+  @scala.inline
+  def `2019-07-11`: `2019-07-11` = "2019-07-11".asInstanceOf[`2019-07-11`]
   @scala.inline
   def `237`: `237` = "237".asInstanceOf[`237`]
   @scala.inline
@@ -32659,6 +32719,8 @@ object awsDashSdkStrings {
   @scala.inline
   def IAMUser: IAMUser = "IAMUser".asInstanceOf[IAMUser]
   @scala.inline
+  def IAM_ROLE_ARN: IAM_ROLE_ARN = "IAM_ROLE_ARN".asInstanceOf[IAM_ROLE_ARN]
+  @scala.inline
   def IAM_ROLE_MISSING: IAM_ROLE_MISSING = "IAM_ROLE_MISSING".asInstanceOf[IAM_ROLE_MISSING]
   @scala.inline
   def IAM_ROLE_PERMISSIONS: IAM_ROLE_PERMISSIONS = "IAM_ROLE_PERMISSIONS".asInstanceOf[IAM_ROLE_PERMISSIONS]
@@ -33727,6 +33789,8 @@ object awsDashSdkStrings {
   @scala.inline
   def MA: MA = "MA".asInstanceOf[MA]
   @scala.inline
+  def MACHINE_ROLE_IS_MISSING: MACHINE_ROLE_IS_MISSING = "MACHINE_ROLE_IS_MISSING".asInstanceOf[MACHINE_ROLE_IS_MISSING]
+  @scala.inline
   def MACRO: MACRO = "MACRO".asInstanceOf[MACRO]
   @scala.inline
   def MAC_ADDRESS: MAC_ADDRESS = "MAC_ADDRESS".asInstanceOf[MAC_ADDRESS]
@@ -34368,6 +34432,8 @@ object awsDashSdkStrings {
   def NO_CACHE: NO_CACHE = "NO_CACHE".asInstanceOf[NO_CACHE]
   @scala.inline
   def NO_EC2_SUBSCRIPTION: NO_EC2_SUBSCRIPTION = "NO_EC2_SUBSCRIPTION".asInstanceOf[NO_EC2_SUBSCRIPTION]
+  @scala.inline
+  def NO_ENCRYPTION: NO_ENCRYPTION = "NO_ENCRYPTION".asInstanceOf[NO_ENCRYPTION]
   @scala.inline
   def NO_EVENT_ID: NO_EVENT_ID = "NO_EVENT_ID".asInstanceOf[NO_EVENT_ID]
   @scala.inline
@@ -38497,6 +38563,8 @@ object awsDashSdkStrings {
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   @scala.inline
+  def `connection-error`: `connection-error` = "connection-error".asInstanceOf[`connection-error`]
+  @scala.inline
   def container: container = "container".asInstanceOf[container]
   @scala.inline
   def `container-instance`: `container-instance` = "container-instance".asInstanceOf[`container-instance`]
@@ -39469,6 +39537,8 @@ object awsDashSdkStrings {
   @scala.inline
   def leftPupil: leftPupil = "leftPupil".asInstanceOf[leftPupil]
   @scala.inline
+  def legacy: legacy = "legacy".asInstanceOf[legacy]
+  @scala.inline
   def `less-than`: `less-than` = "less-than".asInstanceOf[`less-than`]
   @scala.inline
   def `less-than-equals`: `less-than-equals` = "less-than-equals".asInstanceOf[`less-than-equals`]
@@ -39797,6 +39867,10 @@ object awsDashSdkStrings {
   @scala.inline
   def monthly_revenue_billing_and_revenue_data: monthly_revenue_billing_and_revenue_data = "monthly_revenue_billing_and_revenue_data".asInstanceOf[monthly_revenue_billing_and_revenue_data]
   @scala.inline
+  def monthly_revenue_field_demonstration_usage: monthly_revenue_field_demonstration_usage = "monthly_revenue_field_demonstration_usage".asInstanceOf[monthly_revenue_field_demonstration_usage]
+  @scala.inline
+  def monthly_revenue_flexible_payment_schedule: monthly_revenue_flexible_payment_schedule = "monthly_revenue_flexible_payment_schedule".asInstanceOf[monthly_revenue_flexible_payment_schedule]
+  @scala.inline
   def mouthDown: mouthDown = "mouthDown".asInstanceOf[mouthDown]
   @scala.inline
   def mouthLeft: mouthLeft = "mouthLeft".asInstanceOf[mouthLeft]
@@ -39812,6 +39886,8 @@ object awsDashSdkStrings {
   def mp3: mp3 = "mp3".asInstanceOf[mp3]
   @scala.inline
   def mp4: mp4 = "mp4".asInstanceOf[mp4]
+  @scala.inline
+  def ms: ms = "ms".asInstanceOf[ms]
   @scala.inline
   def msgqueue: msgqueue = "msgqueue".asInstanceOf[msgqueue]
   @scala.inline
@@ -40245,6 +40321,8 @@ object awsDashSdkStrings {
   @scala.inline
   def refreshing: refreshing = "refreshing".asInstanceOf[refreshing]
   @scala.inline
+  def regional: regional = "regional".asInstanceOf[regional]
+  @scala.inline
   def registerTime: registerTime = "registerTime".asInstanceOf[registerTime]
   @scala.inline
   def reject: reject = "reject".asInstanceOf[reject]
@@ -40382,6 +40460,8 @@ object awsDashSdkStrings {
   def running: running = "running".asInstanceOf[running]
   @scala.inline
   def rw: rw = "rw".asInstanceOf[rw]
+  @scala.inline
+  def s: s = "s".asInstanceOf[s]
   @scala.inline
   def s3: s3 = "s3".asInstanceOf[s3]
   @scala.inline

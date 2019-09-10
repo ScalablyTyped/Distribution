@@ -1,6 +1,6 @@
 package typings.tsutils.utilConvertDashAstMod
 
-import typings.typescript.typescriptMod.Node
+import typings.typescript.typescriptMod.SourceFile
 import typings.typescript.typescriptMod.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait WrappedAst extends NodeWrap {
   @JSName("next")
   var next_WrappedAst: NodeWrap
+  @JSName("node")
+  var node_WrappedAst: SourceFile
   @JSName("parent")
   var parent_WrappedAst: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("skip")
@@ -21,7 +23,7 @@ object WrappedAst {
     children: js.Array[NodeWrap],
     kind: SyntaxKind,
     next: NodeWrap,
-    node: Node,
+    node: SourceFile,
     parent: js.UndefOr[scala.Nothing] = js.undefined,
     skip: js.UndefOr[scala.Nothing] = js.undefined
   ): WrappedAst = {

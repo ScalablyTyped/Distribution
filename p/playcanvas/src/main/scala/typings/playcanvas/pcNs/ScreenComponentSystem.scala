@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.ScreenComponentSystem
+  * @extends pc.ComponentSystem
   * @classdesc Manages creation of {@link pc.ScreenComponent}s.
   * @description Create a new ScreenComponentSystem
   * @param {pc.Application} app The application
-  * @extends pc.ComponentSystem
   */
 @JSGlobal("pc.ScreenComponentSystem")
 @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tsutils
 
-Typings are for version 2.29.0
+Typings are for version 3.17.1
 
 ## Library description:
 utilities for working with typescript's AST

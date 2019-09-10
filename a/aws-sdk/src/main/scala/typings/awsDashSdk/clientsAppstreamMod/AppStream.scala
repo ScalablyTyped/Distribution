@@ -590,12 +590,12 @@ trait AppStream extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDirectoryConfigResult, Unit]
   ): Request[UpdateDirectoryConfigResult, AWSError] = js.native
   /**
-    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
+    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
     */
   def updateFleet(): Request[UpdateFleetResult, AWSError] = js.native
   def updateFleet(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFleetResult, Unit]): Request[UpdateFleetResult, AWSError] = js.native
   /**
-    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
+    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
     */
   def updateFleet(params: UpdateFleetRequest): Request[UpdateFleetResult, AWSError] = js.native
   def updateFleet(

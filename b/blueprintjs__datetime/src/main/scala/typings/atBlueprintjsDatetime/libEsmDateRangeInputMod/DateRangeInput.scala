@@ -43,6 +43,7 @@ class DateRangeInput protected () extends AbstractPureComponent[IDateRangeInputP
   var handleInputKeyDown: js.Any = js.native
   var handleInputMouseDown: js.Any = js.native
   var handlePopoverClose: js.Any = js.native
+  var handleShortcutChange: js.Any = js.native
   var handleStartInputEvent: js.Any = js.native
   var isControlled: js.Any = js.native
   var isDateValidAndInRange: js.Any = js.native

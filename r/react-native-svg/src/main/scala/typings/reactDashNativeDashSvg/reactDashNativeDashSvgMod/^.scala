@@ -2,6 +2,7 @@ package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,10 +27,16 @@ object ^ extends js.Object {
   val Rect: ComponentClass[RectProps, ComponentState] = js.native
   val Stop: ComponentClass[StopProps, ComponentState] = js.native
   val Svg: ComponentClass[SvgProps, ComponentState] = js.native
+  val SvgAst: FunctionComponent[AstProps] = js.native
+  val SvgFromUri: ComponentClass[UriProps, UriState] = js.native
+  val SvgFromXml: ComponentClass[XmlProps, XmlState] = js.native
+  val SvgUri: FunctionComponent[UriProps] = js.native
+  val SvgXml: FunctionComponent[XmlProps] = js.native
   val TSpan: ComponentClass[TSpanProps, ComponentState] = js.native
   val Text: ComponentClass[TextProps, ComponentState] = js.native
   val TextPath: ComponentClass[TextPathProps, ComponentState] = js.native
   val Use: ComponentClass[UseProps, ComponentState] = js.native
   val default: ComponentClass[SvgProps, ComponentState] = js.native
+  def parse(xml: String): AST | Null = js.native
 }
 

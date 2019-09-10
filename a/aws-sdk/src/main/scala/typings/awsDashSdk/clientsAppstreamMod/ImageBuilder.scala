@@ -38,6 +38,10 @@ trait ImageBuilder extends js.Object {
     */
   var EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined
   /**
+    * The ARN of the IAM role that is applied to the image builder. To assume a role, the image builder calls the AWS Security Token Service (STS) AssumeRole API operation and passes the ARN of the role to use. The operation creates a new session with temporary credentials. 
+    */
+  var IamRoleArn: js.UndefOr[Arn] = js.undefined
+  /**
     * The ARN of the image from which this builder was created.
     */
   var ImageArn: js.UndefOr[Arn] = js.undefined
@@ -84,6 +88,7 @@ object ImageBuilder {
     DisplayName: String = null,
     DomainJoinInfo: DomainJoinInfo = null,
     EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
+    IamRoleArn: Arn = null,
     ImageArn: Arn = null,
     ImageBuilderErrors: ResourceErrors = null,
     InstanceType: String = null,
@@ -102,6 +107,7 @@ object ImageBuilder {
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
     if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo)
     if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess)
+    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn)
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn)
     if (ImageBuilderErrors != null) __obj.updateDynamic("ImageBuilderErrors")(ImageBuilderErrors)
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)

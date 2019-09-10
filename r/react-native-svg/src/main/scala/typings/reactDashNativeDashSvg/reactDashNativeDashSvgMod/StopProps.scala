@@ -1,7 +1,5 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
-import typings.reactDashNativeDashSvg.int32ARGBColor
-import typings.reactDashNativeDashSvg.rgbaArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

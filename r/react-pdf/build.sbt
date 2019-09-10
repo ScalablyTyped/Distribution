@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-pdf"
-version := "4.0-dt-20190807Z-1f1050"
+version := "4.0-dt-20190909Z-0395b7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "pdfjs-dist" % "v2.1-dt-20190805Z-593ec4",
+  "org.scalablytyped" %%% "pdfjs-dist" % "v2.1-dt-20190909Z-8df7a5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
   "org.scalablytyped" %%% "std" % "3.6-c16502")

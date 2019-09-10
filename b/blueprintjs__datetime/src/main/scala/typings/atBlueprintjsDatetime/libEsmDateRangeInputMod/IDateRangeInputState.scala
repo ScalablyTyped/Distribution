@@ -17,6 +17,7 @@ trait IDateRangeInputState extends js.Object {
   var isStartInputFocused: js.UndefOr[Boolean] = js.undefined
   var lastFocusedField: js.UndefOr[Boundary] = js.undefined
   var selectedEnd: js.UndefOr[Date] = js.undefined
+  var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
   var selectedStart: js.UndefOr[Date] = js.undefined
   var shouldSelectAfterUpdate: js.UndefOr[Boolean] = js.undefined
   var startHoverString: js.UndefOr[String] = js.undefined
@@ -37,6 +38,7 @@ object IDateRangeInputState {
     isStartInputFocused: js.UndefOr[Boolean] = js.undefined,
     lastFocusedField: Boundary = null,
     selectedEnd: Date = null,
+    selectedShortcutIndex: Int | Double = null,
     selectedStart: Date = null,
     shouldSelectAfterUpdate: js.UndefOr[Boolean] = js.undefined,
     startHoverString: String = null,
@@ -54,6 +56,7 @@ object IDateRangeInputState {
     if (!js.isUndefined(isStartInputFocused)) __obj.updateDynamic("isStartInputFocused")(isStartInputFocused)
     if (lastFocusedField != null) __obj.updateDynamic("lastFocusedField")(lastFocusedField)
     if (selectedEnd != null) __obj.updateDynamic("selectedEnd")(selectedEnd)
+    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
     if (selectedStart != null) __obj.updateDynamic("selectedStart")(selectedStart)
     if (!js.isUndefined(shouldSelectAfterUpdate)) __obj.updateDynamic("shouldSelectAfterUpdate")(shouldSelectAfterUpdate)
     if (startHoverString != null) __obj.updateDynamic("startHoverString")(startHoverString)

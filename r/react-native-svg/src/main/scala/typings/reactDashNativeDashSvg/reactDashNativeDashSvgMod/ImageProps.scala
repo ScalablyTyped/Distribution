@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-none`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-only`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.auto
@@ -15,21 +16,18 @@ trait ImageProps
      with ClipProps
      with TouchableProps {
   var height: js.UndefOr[NumberProp] = js.undefined
-  var href: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any
+  var href: js.UndefOr[ImageSourcePropType] = js.undefined
   var opacity: js.UndefOr[NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var width: js.UndefOr[NumberProp] = js.undefined
   var x: js.UndefOr[NumberProp] = js.undefined
-  var xlinkHref: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any
-  ] = js.undefined
+  var xlinkHref: js.UndefOr[ImageSourcePropType] = js.undefined
   var y: js.UndefOr[NumberProp] = js.undefined
 }
 
 object ImageProps {
   @scala.inline
   def apply(
-    href: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any,
     clipPath: String = null,
     clipRule: FillRule = null,
     delayLongPress: Int | Double = null,
@@ -37,13 +35,14 @@ object ImageProps {
     delayPressOut: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     height: NumberProp = null,
+    href: ImageSourcePropType = null,
     mask: String = null,
-    onLongPress: /* event */ js.Any => _ = null,
+    onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onPress: /* event */ js.Any => _ = null,
-    onPressIn: /* event */ js.Any => _ = null,
-    onPressOut: /* event */ js.Any => _ = null,
+    onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null,
     onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
     onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
     onResponderMove: /* event */ GestureResponderEvent => Unit = null,
@@ -59,10 +58,10 @@ object ImageProps {
     preserveAspectRatio: String = null,
     width: NumberProp = null,
     x: NumberProp = null,
-    xlinkHref: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ImageProperties * / any['source'] */ js.Any = null,
+    xlinkHref: ImageSourcePropType = null,
     y: NumberProp = null
   ): ImageProps = {
-    val __obj = js.Dynamic.literal(href = href)
+    val __obj = js.Dynamic.literal()
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
@@ -70,6 +69,7 @@ object ImageProps {
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask)
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
@@ -92,7 +92,7 @@ object ImageProps {
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xlinkHref != null) __obj.updateDynamic("xlinkHref")(xlinkHref)
+    if (xlinkHref != null) __obj.updateDynamic("xlinkHref")(xlinkHref.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }

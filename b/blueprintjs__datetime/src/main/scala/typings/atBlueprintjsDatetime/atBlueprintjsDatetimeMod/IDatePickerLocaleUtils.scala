@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@blueprintjs/datetime", "IDatePickerLocaleUtils")
 @js.native
-object IDatePickerLocaleUtils extends js.Object {
+trait IDatePickerLocaleUtils extends js.Object {
   def formatDay(day: Date): String = js.native
   def formatDay(day: Date, locale: String): String = js.native
   def formatMonthTitle(month: Date): String = js.native

@@ -1,35 +1,36 @@
 package typings.tsutils.utilUsageMod
 
-import typings.tsutils.tsutilsNumbers.`1`
-import typings.tsutils.tsutilsNumbers.`2`
-import typings.tsutils.tsutilsNumbers.`4`
-import typings.tsutils.tsutilsNumbers.`7`
-import typings.tsutils.tsutilsNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - typings.tsutils.tsutilsNumbers.`1`
-  - typings.tsutils.tsutilsNumbers.`2`
-  - typings.tsutils.tsutilsNumbers.`4`
-  - typings.tsutils.tsutilsNumbers.`8`
-  - typings.tsutils.tsutilsNumbers.`7`
-*/
-trait DeclarationDomain extends js.Object
+@js.native
+sealed trait DeclarationDomain extends js.Object
 
-object DeclarationDomain {
-  @scala.inline
-  def Any: `7` = this.cast(7)
-  @scala.inline
-  def Import: `8` = this.cast(8)
-  @scala.inline
-  def Namespace: `1` = this.cast(1)
-  @scala.inline
-  def Type: `2` = this.cast(2)
-  @scala.inline
-  def Value: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@JSImport("tsutils/util/usage", "DeclarationDomain")
+@js.native
+object DeclarationDomain extends js.Object {
+  @js.native
+  sealed trait Any extends DeclarationDomain
+  
+  @js.native
+  sealed trait Import extends DeclarationDomain
+  
+  @js.native
+  sealed trait Namespace extends DeclarationDomain
+  
+  @js.native
+  sealed trait Type extends DeclarationDomain
+  
+  @js.native
+  sealed trait Value extends DeclarationDomain
+  
+  /* 7 */ val Any: typings.tsutils.utilUsageMod.DeclarationDomain.Any with Double = js.native
+  /* 8 */ val Import: typings.tsutils.utilUsageMod.DeclarationDomain.Import with Double = js.native
+  /* 1 */ val Namespace: typings.tsutils.utilUsageMod.DeclarationDomain.Namespace with Double = js.native
+  /* 2 */ val Type: typings.tsutils.utilUsageMod.DeclarationDomain.Type with Double = js.native
+  /* 4 */ val Value: typings.tsutils.utilUsageMod.DeclarationDomain.Value with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[DeclarationDomain with Double] = js.native
 }
 

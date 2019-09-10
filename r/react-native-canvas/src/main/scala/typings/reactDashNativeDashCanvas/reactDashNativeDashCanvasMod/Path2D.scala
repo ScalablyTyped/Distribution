@@ -18,7 +18,7 @@ class Path2D protected () extends js.Object {
     /* r */ Double, 
     /* sAngle */ Double, 
     /* eAngle */ Double, 
-    /* counterClockwise */ js.UndefOr[Double], 
+    /* counterClockwise */ js.UndefOr[Boolean], 
     Unit
   ] = js.native
   var arcTo: js.Function5[/* x1 */ Double, /* y1 */ Double, /* x2 */ Double, /* y2 */ Double, /* r */ Double, Unit] = js.native

@@ -2,6 +2,7 @@ package typings.atBlueprintjsDatetime.libEsmDateRangePickerMod
 
 import typings.atBlueprintjsCore.libEsmCommonBoundaryMod.Boundary
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
+import typings.atBlueprintjsDatetime.Anon_Day
 import typings.atBlueprintjsDatetime.libEsmCommonDateUtilsMod.DateRange
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerModifiers
@@ -72,6 +73,15 @@ trait IDateRangePickerProps
     ]
   ] = js.undefined
   /**
+    * Called when the `shortcuts` props is enabled and the user changes the shortcut.
+    */
+  var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.undefined
+  /**
+    * The currently selected shortcut.
+    * If this prop is provided, the component acts in a controlled manner.
+    */
+  var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
+  /**
     * Whether shortcuts to quickly select a range of dates are displayed or not.
     * If `true`, preset shortcuts will be displayed.
     * If `false`, no shortcuts will be displayed.
@@ -102,13 +112,15 @@ object IDateRangePickerProps {
     defaultValue: DateRange = null,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocaleUtils */ js.Any = null,
+    localeUtils: Anon_Day = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,
     onChange: /* selectedDates */ DateRange => Unit = null,
     onHoverChange: (/* hoveredDates */ DateRange, /* hoveredDay */ Date, /* hoveredBoundary */ Boundary) => Unit = null,
+    onShortcutChange: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit = null,
     reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined,
+    selectedShortcutIndex: Int | Double = null,
     shortcuts: Boolean | js.Array[IDateRangeShortcut] = null,
     singleMonthOnly: js.UndefOr[Boolean] = js.undefined,
     timePickerProps: ITimePickerProps = null,
@@ -130,7 +142,9 @@ object IDateRangePickerProps {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onHoverChange != null) __obj.updateDynamic("onHoverChange")(js.Any.fromFunction3(onHoverChange))
+    if (onShortcutChange != null) __obj.updateDynamic("onShortcutChange")(js.Any.fromFunction2(onShortcutChange))
     if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus)
+    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
     if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
     if (!js.isUndefined(singleMonthOnly)) __obj.updateDynamic("singleMonthOnly")(singleMonthOnly)
     if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps)

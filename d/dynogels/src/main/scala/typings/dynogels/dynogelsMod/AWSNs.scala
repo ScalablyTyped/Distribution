@@ -1465,6 +1465,24 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class QLDB ()
+    extends typings.awsDashSdk.awsDashSdkMod.QLDB {
+    def this(options: typings.awsDashSdk.clientsQldbMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class QLDBSession ()
+    extends typings.awsDashSdk.awsDashSdkMod.QLDBSession {
+    def this(options: typings.awsDashSdk.clientsQldbsessionMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class QuickSight ()
     extends typings.awsDashSdk.awsDashSdkMod.QuickSight {
     def this(options: typings.awsDashSdk.clientsQuicksightMod.ClientConfiguration) = this()

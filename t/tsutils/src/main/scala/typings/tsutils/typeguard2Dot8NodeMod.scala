@@ -21,6 +21,7 @@ object typeguard2Dot8NodeMod extends js.Object {
   def isBindingPattern(node: Node): /* is typescript.typescript.BindingPattern */ Boolean = js.native
   def isBlock(node: Node): /* is typescript.typescript.Block */ Boolean = js.native
   def isBlockLike(node: Node): /* is typescript.typescript.BlockLike */ Boolean = js.native
+  def isBooleanLiteral(node: Node): /* is typescript.typescript.BooleanLiteral */ Boolean = js.native
   def isBreakOrContinueStatement(node: Node): /* is typescript.typescript.BreakOrContinueStatement */ Boolean = js.native
   def isBreakStatement(node: Node): /* is typescript.typescript.BreakStatement */ Boolean = js.native
   def isCallExpression(node: Node): /* is typescript.typescript.CallExpression */ Boolean = js.native
@@ -88,7 +89,6 @@ object typeguard2Dot8NodeMod extends js.Object {
   def isJsxElement(node: Node): /* is typescript.typescript.JsxElement */ Boolean = js.native
   def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = js.native
   def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
-  def isJsxFramgment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
   def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = js.native
   def isJsxOpeningFragment(node: Node): /* is typescript.typescript.JsxOpeningFragment */ Boolean = js.native
   def isJsxOpeningLikeElement(node: Node): /* is typescript.typescript.JsxOpeningLikeElement */ Boolean = js.native
@@ -112,7 +112,9 @@ object typeguard2Dot8NodeMod extends js.Object {
   def isNewExpression(node: Node): /* is typescript.typescript.NewExpression */ Boolean = js.native
   def isNoSubstitutionTemplateLiteral(node: Node): /* is typescript.typescript.NoSubstitutionTemplateLiteral */ Boolean = js.native
   def isNonNullExpression(node: Node): /* is typescript.typescript.NonNullExpression */ Boolean = js.native
+  def isNullLiteral(node: Node): /* is typescript.typescript.NullLiteral */ Boolean = js.native
   def isNumericLiteral(node: Node): /* is typescript.typescript.NumericLiteral */ Boolean = js.native
+  def isNumericOrStringLikeLiteral(node: Node): Boolean = js.native
   def isObjectBindingPattern(node: Node): /* is typescript.typescript.ObjectBindingPattern */ Boolean = js.native
   def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = js.native
   def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = js.native
@@ -140,7 +142,7 @@ object typeguard2Dot8NodeMod extends js.Object {
   def isTaggedTemplateExpression(node: Node): /* is typescript.typescript.TaggedTemplateExpression */ Boolean = js.native
   def isTemplateExpression(node: Node): /* is typescript.typescript.TemplateExpression */ Boolean = js.native
   def isTemplateLiteral(node: Node): /* is typescript.typescript.TemplateLiteral */ Boolean = js.native
-  def isTextualLiteral(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = js.native
+  def isTextualLiteral(node: Node): Boolean = js.native
   def isThrowStatement(node: Node): /* is typescript.typescript.ThrowStatement */ Boolean = js.native
   def isTryStatement(node: Node): /* is typescript.typescript.TryStatement */ Boolean = js.native
   def isTupleTypeNode(node: Node): /* is typescript.typescript.TupleTypeNode */ Boolean = js.native

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.ElementMouseEvent
-  * @classdesc Represents a Mouse event fired on a {@link pc.ElementComponent}.
   * @extends pc.ElementInputEvent
+  * @classdesc Represents a Mouse event fired on a {@link pc.ElementComponent}.
   * @description Create an instance of a pc.ElementMouseEvent.
   * @param {MouseEvent} event The MouseEvent that was originally raised.
   * @param {pc.ElementComponent} element The ElementComponent that this event was originally raised on.

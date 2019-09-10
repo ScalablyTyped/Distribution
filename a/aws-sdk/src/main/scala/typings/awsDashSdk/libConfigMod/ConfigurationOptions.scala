@@ -1,5 +1,7 @@
 package typings.awsDashSdk.libConfigMod
 
+import typings.awsDashSdk.awsDashSdkStrings.legacy
+import typings.awsDashSdk.awsDashSdkStrings.regional
 import typings.awsDashSdk.awsDashSdkStrings.v2
 import typings.awsDashSdk.awsDashSdkStrings.v3
 import typings.awsDashSdk.awsDashSdkStrings.v4
@@ -134,6 +136,11 @@ abstract class ConfigurationOptions () extends js.Object {
     * Whether SSL is enabled for requests.
     */
   var sslEnabled: js.UndefOr[Boolean] = js.native
+  /**
+    * whether to send sts request to global endpoints or
+    * regional endpoints. 
+    */
+  var stsRegionalEndpoints: js.UndefOr[legacy | regional] = js.native
   /**
     * An offset value in milliseconds to apply to all signing times.
     */

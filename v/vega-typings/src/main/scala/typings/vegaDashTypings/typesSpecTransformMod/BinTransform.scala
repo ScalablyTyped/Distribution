@@ -16,6 +16,7 @@ trait BinTransform
   var field: String | TransformField
   var name: js.UndefOr[String | SignalRef] = js.undefined
   var signal: js.UndefOr[String] = js.undefined
+  var span: js.UndefOr[Double | SignalRef] = js.undefined
   var `type`: bin
 }
 
@@ -34,6 +35,7 @@ object BinTransform {
     name: String | SignalRef = null,
     nice: Boolean | SignalRef = null,
     signal: String = null,
+    span: Double | SignalRef = null,
     step: Double | SignalRef = null,
     steps: (js.Array[Double | SignalRef]) | SignalRef = null
   ): BinTransform = {
@@ -48,6 +50,7 @@ object BinTransform {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinTransform]

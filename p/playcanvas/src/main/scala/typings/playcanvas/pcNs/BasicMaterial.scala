@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.BasicMaterial
+  * @extends pc.Material
   * @classdesc A Basic material is for rendering unlit geometry, either using a constant color or a
   * color map modulated with a color.
   * @property {pc.Color} color The flat color of the material (RGBA, where each component is 0 to 1).
@@ -22,8 +23,6 @@ import scala.scalajs.js.annotation._
   *
   * // Notify the material that it has been modified
   * material.update();
-  *
-  * @extends pc.Material
   */
 @JSGlobal("pc.BasicMaterial")
 @js.native

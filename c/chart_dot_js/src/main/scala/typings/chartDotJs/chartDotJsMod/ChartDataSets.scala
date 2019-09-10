@@ -25,7 +25,7 @@ trait ChartDataSets extends js.Object {
   var borderDashOffset: js.UndefOr[Double] = js.undefined
   var borderJoinStyle: js.UndefOr[bevel | round | miter] = js.undefined
   var borderSkipped: js.UndefOr[PositionType | js.Array[PositionType] | Scriptable[PositionType]] = js.undefined
-  var borderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var borderWidth: js.UndefOr[BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth]] = js.undefined
   var cubicInterpolationMode: js.UndefOr[default | monotone] = js.undefined
   var data: js.UndefOr[js.Array[js.UndefOr[ChartPoint | Double | Null]]] = js.undefined
   var fill: js.UndefOr[Boolean | Double | String] = js.undefined
@@ -72,7 +72,7 @@ object ChartDataSets {
     borderDashOffset: Int | Double = null,
     borderJoinStyle: bevel | round | miter = null,
     borderSkipped: PositionType | js.Array[PositionType] | Scriptable[PositionType] = null,
-    borderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
+    borderWidth: BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth] = null,
     cubicInterpolationMode: default | monotone = null,
     data: js.Array[js.UndefOr[ChartPoint | Double | Null]] = null,
     fill: Boolean | Double | String = null,

@@ -1,59 +1,60 @@
 package typings.tsutils.utilUtilMod
 
-import typings.tsutils.tsutilsNumbers.`16`
-import typings.tsutils.tsutilsNumbers.`18`
-import typings.tsutils.tsutilsNumbers.`1`
-import typings.tsutils.tsutilsNumbers.`24`
-import typings.tsutils.tsutilsNumbers.`2`
-import typings.tsutils.tsutilsNumbers.`32`
-import typings.tsutils.tsutilsNumbers.`3`
-import typings.tsutils.tsutilsNumbers.`4`
-import typings.tsutils.tsutilsNumbers.`59`
-import typings.tsutils.tsutilsNumbers.`63`
-import typings.tsutils.tsutilsNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - typings.tsutils.tsutilsNumbers.`1`
-  - typings.tsutils.tsutilsNumbers.`2`
-  - typings.tsutils.tsutilsNumbers.`4`
-  - typings.tsutils.tsutilsNumbers.`8`
-  - typings.tsutils.tsutilsNumbers.`16`
-  - typings.tsutils.tsutilsNumbers.`32`
-  - typings.tsutils.tsutilsNumbers.`63`
-  - typings.tsutils.tsutilsNumbers.`59`
-  - typings.tsutils.tsutilsNumbers.`3`
-  - typings.tsutils.tsutilsNumbers.`24`
-  - typings.tsutils.tsutilsNumbers.`18`
-*/
-trait ImportKind extends js.Object
+@js.native
+sealed trait ImportKind extends js.Object
 
-object ImportKind {
-  @scala.inline
-  def All: `63` = this.cast(63)
-  @scala.inline
-  def AllImportExpressions: `24` = this.cast(24)
-  @scala.inline
-  def AllImports: `59` = this.cast(59)
-  @scala.inline
-  def AllRequireLike: `18` = this.cast(18)
-  @scala.inline
-  def AllStaticImports: `3` = this.cast(3)
-  @scala.inline
-  def DynamicImport: `8` = this.cast(8)
-  @scala.inline
-  def ExportFrom: `4` = this.cast(4)
-  @scala.inline
-  def ImportDeclaration: `1` = this.cast(1)
-  @scala.inline
-  def ImportEquals: `2` = this.cast(2)
-  @scala.inline
-  def ImportType: `32` = this.cast(32)
-  @scala.inline
-  def Require: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@JSImport("tsutils/util/util", "ImportKind")
+@js.native
+object ImportKind extends js.Object {
+  @js.native
+  sealed trait All extends ImportKind
+  
+  @js.native
+  sealed trait AllImportExpressions extends ImportKind
+  
+  @js.native
+  sealed trait AllImports extends ImportKind
+  
+  @js.native
+  sealed trait AllRequireLike extends ImportKind
+  
+  @js.native
+  sealed trait AllStaticImports extends ImportKind
+  
+  @js.native
+  sealed trait DynamicImport extends ImportKind
+  
+  @js.native
+  sealed trait ExportFrom extends ImportKind
+  
+  @js.native
+  sealed trait ImportDeclaration extends ImportKind
+  
+  @js.native
+  sealed trait ImportEquals extends ImportKind
+  
+  @js.native
+  sealed trait ImportType extends ImportKind
+  
+  @js.native
+  sealed trait Require extends ImportKind
+  
+  /* 63 */ val All: typings.tsutils.utilUtilMod.ImportKind.All with Double = js.native
+  /* 24 */ val AllImportExpressions: typings.tsutils.utilUtilMod.ImportKind.AllImportExpressions with Double = js.native
+  /* 59 */ val AllImports: typings.tsutils.utilUtilMod.ImportKind.AllImports with Double = js.native
+  /* 18 */ val AllRequireLike: typings.tsutils.utilUtilMod.ImportKind.AllRequireLike with Double = js.native
+  /* 3 */ val AllStaticImports: typings.tsutils.utilUtilMod.ImportKind.AllStaticImports with Double = js.native
+  /* 8 */ val DynamicImport: typings.tsutils.utilUtilMod.ImportKind.DynamicImport with Double = js.native
+  /* 4 */ val ExportFrom: typings.tsutils.utilUtilMod.ImportKind.ExportFrom with Double = js.native
+  /* 1 */ val ImportDeclaration: typings.tsutils.utilUtilMod.ImportKind.ImportDeclaration with Double = js.native
+  /* 2 */ val ImportEquals: typings.tsutils.utilUtilMod.ImportKind.ImportEquals with Double = js.native
+  /* 32 */ val ImportType: typings.tsutils.utilUtilMod.ImportKind.ImportType with Double = js.native
+  /* 16 */ val Require: typings.tsutils.utilUtilMod.ImportKind.Require with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ImportKind with Double] = js.native
 }
 

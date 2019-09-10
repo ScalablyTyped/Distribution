@@ -35,7 +35,7 @@ object QueryContext {
   @scala.inline
   def apply(
     action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
-    agent: js.Any,
+    agent: typings.sharedb.libAgentMod.^,
     backend: typings.sharedb.sharedbMod.sharedb,
     channel: String,
     collection: String,

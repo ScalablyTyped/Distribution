@@ -745,6 +745,7 @@
 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt | - |
 | [breeze](./b/breeze) | Functional async flow control library | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed  | grid, masonry, layout, packing |
+| [bristol](./b/bristol) | Insanely configurable logging for Node.js | log, datatype, commoninfomodel, json |
 | [bristol-sentry](./b/bristol-sentry) | Sentry transport + formatter for the Bristol logge | - |
 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with | fs, filesystem, html5-fs, html5-filesystem, html5-filesystem-api, browser-fs, browser-filesystem, web-fs, web-filesystem |
 | [broccoli-plugin](./b/broccoli-plugin) | Base class for all Broccoli plugins | broccoli-plugin |
@@ -4381,6 +4382,7 @@
 | [msnodesql](./m/msnodesql) | Microsoft Driver for Node.js for SQL Server | sql, database, mssql, azure, sqlserver, tds, microsoft, msnodesql, node-sqlserver |
 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework | Azure Portal, test framework, testing, test, selenium, webdriver |
 | [mssql](./m/mssql) | Microsoft SQL Server client for Node.js. | database, mssql, sql, server, msnodesql, sqlserver, tds, node-tds, tedious, node-sqlserver, sqlserver, msnodesqlv8, azure, node-mssql |
+| [mta-h5-analysis](./m/mta-h5-analysis) | this is wechat-h5 data analysis js sdk from MTA pl | - |
 | [mu2](./m/mu2) | A Mustache template engine for Node.js | template, mustache |
 | [mui-datatables](./m/mui-datatables) | Datatables for React using Material-UI | material-ui, datatables, react |
 | [muibox](./m/muibox) | Promise-based dialog boxes (alert, confirm, prompt | react, material, material-design, material-ui, mui, dialog, modal |

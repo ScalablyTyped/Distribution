@@ -149,6 +149,8 @@ import typings.atPulumiAws.TypeofPinpointEmail
 import typings.atPulumiAws.TypeofPinpointSMSVoice
 import typings.atPulumiAws.TypeofPolly
 import typings.atPulumiAws.TypeofPricing
+import typings.atPulumiAws.TypeofQLDB
+import typings.atPulumiAws.TypeofQLDBSession
 import typings.atPulumiAws.TypeofQuickSight
 import typings.atPulumiAws.TypeofRAM
 import typings.atPulumiAws.TypeofRDS
@@ -545,6 +547,10 @@ object atPulumiAwsMod extends js.Object {
     var Pricing: Instantiable0[typings.awsDashSdk.awsDashSdkMod.Pricing] = js.native
     val PricingNs: TypeofPricing = js.native
     var ProcessCredentials: Instantiable0[typings.awsDashSdk.awsDashSdkMod.ProcessCredentials] = js.native
+    var QLDB: Instantiable0[typings.awsDashSdk.awsDashSdkMod.QLDB] = js.native
+    val QLDBNs: TypeofQLDB = js.native
+    var QLDBSession: Instantiable0[typings.awsDashSdk.awsDashSdkMod.QLDBSession] = js.native
+    val QLDBSessionNs: TypeofQLDBSession = js.native
     var QuickSight: Instantiable0[typings.awsDashSdk.awsDashSdkMod.QuickSight] = js.native
     val QuickSightNs: TypeofQuickSight = js.native
     var RAM: Instantiable0[typings.awsDashSdk.awsDashSdkMod.RAM] = js.native

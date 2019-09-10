@@ -30,7 +30,7 @@ trait CreateApplicationRequest extends js.Object {
     */
   var Outputs: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.Outputs] = js.undefined
   /**
-    * A list of one or more tags to assign to the application. A tag is a key-value pair that identifies an application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management Guide.
+    * A list of one or more tags to assign to the application. A tag is a key-value pair that identifies an application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Tagging.
     */
   var Tags: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.Tags] = js.undefined
 }

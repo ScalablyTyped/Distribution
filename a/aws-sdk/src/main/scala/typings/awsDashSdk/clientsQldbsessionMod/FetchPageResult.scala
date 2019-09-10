@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsQldbsessionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FetchPageResult extends js.Object {
+  /**
+    * Contains details of the fetched page.
+    */
+  var Page: js.UndefOr[typings.awsDashSdk.clientsQldbsessionMod.Page] = js.undefined
+}
+
+object FetchPageResult {
+  @scala.inline
+  def apply(Page: Page = null): FetchPageResult = {
+    val __obj = js.Dynamic.literal()
+    if (Page != null) __obj.updateDynamic("Page")(Page)
+    __obj.asInstanceOf[FetchPageResult]
+  }
+}
+

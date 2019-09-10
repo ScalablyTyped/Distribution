@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sqs-producer"
-version := "1.5-dt-20190514Z-bf9033"
+version := "1.5-dt-20190514Z-cfdfb3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.524.0-dbb183",
+  "org.scalablytyped" %%% "aws-sdk" % "2.525.0-84a653",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

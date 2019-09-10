@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.StandardMaterial
+  * @extends pc.Material
   * @classdesc A Standard material is the main, general purpose material that is most often used for rendering.
   * It can approximate a wide variety of surface types and can simulate dynamic reflected light.
   * Most maps can use 3 types of input values in any combination: constant (color or number), mesh vertex colors and a texture. All enabled inputs are multiplied together.
@@ -244,8 +245,6 @@ import scala.scalajs.js.annotation._
   *
   * // Notify the material that it has been modified
   * material.update();
-  *
-  * @extends pc.Material
   */
 @JSImport("playcanvas", "StandardMaterial")
 @js.native

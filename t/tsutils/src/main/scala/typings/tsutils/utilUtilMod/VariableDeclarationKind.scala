@@ -1,27 +1,28 @@
 package typings.tsutils.utilUtilMod
 
-import typings.tsutils.tsutilsNumbers.`0`
-import typings.tsutils.tsutilsNumbers.`1`
-import typings.tsutils.tsutilsNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - typings.tsutils.tsutilsNumbers.`0`
-  - typings.tsutils.tsutilsNumbers.`1`
-  - typings.tsutils.tsutilsNumbers.`2`
-*/
-trait VariableDeclarationKind extends js.Object
+@js.native
+sealed trait VariableDeclarationKind extends js.Object
 
-object VariableDeclarationKind {
-  @scala.inline
-  def Const: `2` = this.cast(2)
-  @scala.inline
-  def Let: `1` = this.cast(1)
-  @scala.inline
-  def Var: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@JSImport("tsutils/util/util", "VariableDeclarationKind")
+@js.native
+object VariableDeclarationKind extends js.Object {
+  @js.native
+  sealed trait Const extends VariableDeclarationKind
+  
+  @js.native
+  sealed trait Let extends VariableDeclarationKind
+  
+  @js.native
+  sealed trait Var extends VariableDeclarationKind
+  
+  /* 2 */ val Const: typings.tsutils.utilUtilMod.VariableDeclarationKind.Const with Double = js.native
+  /* 1 */ val Let: typings.tsutils.utilUtilMod.VariableDeclarationKind.Let with Double = js.native
+  /* 0 */ val Var: typings.tsutils.utilUtilMod.VariableDeclarationKind.Var with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[VariableDeclarationKind with Double] = js.native
 }
 

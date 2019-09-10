@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 
 object chartDotJsStrings {
   @js.native
+  sealed trait BorderWidth extends js.Object
+  
+  @js.native
   sealed trait after extends js.Object
   
   @js.native
@@ -303,6 +306,8 @@ object chartDotJsStrings {
   @js.native
   sealed trait zero extends js.Object
   
+  @scala.inline
+  def BorderWidth: BorderWidth = "BorderWidth".asInstanceOf[BorderWidth]
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline

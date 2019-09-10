@@ -590,6 +590,8 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type HypervisorType = _HypervisorType | java.lang.String
+  type IKEVersionsList = js.Array[IKEVersionsListValue]
+  type IKEVersionsRequestList = js.Array[IKEVersionsRequestListValue]
   type IamInstanceProfileAssociationSet = js.Array[IamInstanceProfileAssociation]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.associating
@@ -1135,6 +1137,18 @@ package object clientsEc2Mod {
   */
   type PaymentOption = _PaymentOption | java.lang.String
   type PermissionGroup = all | java.lang.String
+  type Phase1DHGroupNumbersList = js.Array[Phase1DHGroupNumbersListValue]
+  type Phase1DHGroupNumbersRequestList = js.Array[Phase1DHGroupNumbersRequestListValue]
+  type Phase1EncryptionAlgorithmsList = js.Array[Phase1EncryptionAlgorithmsListValue]
+  type Phase1EncryptionAlgorithmsRequestList = js.Array[Phase1EncryptionAlgorithmsRequestListValue]
+  type Phase1IntegrityAlgorithmsList = js.Array[Phase1IntegrityAlgorithmsListValue]
+  type Phase1IntegrityAlgorithmsRequestList = js.Array[Phase1IntegrityAlgorithmsRequestListValue]
+  type Phase2DHGroupNumbersList = js.Array[Phase2DHGroupNumbersListValue]
+  type Phase2DHGroupNumbersRequestList = js.Array[Phase2DHGroupNumbersRequestListValue]
+  type Phase2EncryptionAlgorithmsList = js.Array[Phase2EncryptionAlgorithmsListValue]
+  type Phase2EncryptionAlgorithmsRequestList = js.Array[Phase2EncryptionAlgorithmsRequestListValue]
+  type Phase2IntegrityAlgorithmsList = js.Array[Phase2IntegrityAlgorithmsListValue]
+  type Phase2IntegrityAlgorithmsRequestList = js.Array[Phase2IntegrityAlgorithmsRequestListValue]
   type PlacementGroupList = js.Array[PlacementGroup]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.pending
@@ -1623,7 +1637,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type TransportProtocol = _TransportProtocol | java.lang.String
-  type TunnelOptionsList = js.Array[VpnTunnelOptionsSpecification]
+  type TunnelOptionsList = js.Array[TunnelOption]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.InvalidInstanceIDDOTMalformed
     - typings.awsDashSdk.awsDashSdkStrings.InvalidInstanceIDDOTNotFound
@@ -1785,6 +1799,7 @@ package object clientsEc2Mod {
   type VpnState = _VpnState | java.lang.String
   type VpnStaticRouteList = js.Array[VpnStaticRoute]
   type VpnStaticRouteSource = Static | java.lang.String
+  type VpnTunnelOptionsSpecificationsList = js.Array[VpnTunnelOptionsSpecification]
   type ZoneIdStringList = js.Array[String]
   type ZoneNameStringList = js.Array[String]
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String

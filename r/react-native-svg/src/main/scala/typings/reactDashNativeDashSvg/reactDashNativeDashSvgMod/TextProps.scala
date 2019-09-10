@@ -2,8 +2,6 @@ package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
-import typings.reactDashNativeDashSvg.ColumnMajorTransformMatrix
-import typings.reactDashNativeDashSvg.int32ARGBColor
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-none`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-only`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`non-scaling-stroke`
@@ -12,15 +10,16 @@ import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.inherit
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.nonScalingStroke
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.none
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.uri
-import typings.reactDashNativeDashSvg.rgbaArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextProps extends TextSpecificProps {
-  var dx: js.UndefOr[NumberProp] = js.undefined
-  var dy: js.UndefOr[NumberProp] = js.undefined
+  var dx: js.UndefOr[NumberArray] = js.undefined
+  var dy: js.UndefOr[NumberArray] = js.undefined
+  var inlineSize: js.UndefOr[NumberProp] = js.undefined
   var opacity: js.UndefOr[NumberProp] = js.undefined
+  var rotate: js.UndefOr[NumberArray] = js.undefined
 }
 
 object TextProps {
@@ -34,8 +33,8 @@ object TextProps {
     delayPressIn: Int | Double = null,
     delayPressOut: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    dx: NumberProp = null,
-    dy: NumberProp = null,
+    dx: NumberArray = null,
+    dy: NumberArray = null,
     fill: int32ARGBColor | rgbaArray | String = null,
     fillOpacity: NumberProp = null,
     fillRule: FillRule = null,
@@ -47,19 +46,21 @@ object TextProps {
     fontStretch: FontStretch = null,
     fontStyle: FontStyle = null,
     fontVariant: FontVariant = null,
-    fontVariantLigatures: FontVariantLigatures = null,
+    fontVariantLigatures: String = null,
+    fontVariationSettings: String = null,
     fontWeight: FontWeight = null,
     id: String = null,
+    inlineSize: NumberProp = null,
     kerning: NumberProp = null,
     lengthAdjust: LengthAdjust = null,
     letterSpacing: NumberProp = null,
     mask: String = null,
-    onLongPress: /* event */ js.Any => _ = null,
+    onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onPress: /* event */ js.Any => _ = null,
-    onPressIn: /* event */ js.Any => _ = null,
-    onPressOut: /* event */ js.Any => _ = null,
+    onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null,
     onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
     onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
     onResponderMove: /* event */ GestureResponderEvent => Unit = null,
@@ -71,16 +72,16 @@ object TextProps {
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     opacity: NumberProp = null,
-    origin: NumberProp = null,
+    origin: NumberArray = null,
     originX: NumberProp = null,
     originY: NumberProp = null,
     pointerEvents: `box-none` | none | `box-only` | auto = null,
-    rotate: NumberProp = null,
+    rotate: NumberArray = null,
     rotation: NumberProp = null,
-    scale: NumberProp = null,
+    scale: NumberArray = null,
     scaleX: NumberProp = null,
     scaleY: NumberProp = null,
-    skew: NumberProp = null,
+    skew: NumberArray = null,
     skewX: NumberProp = null,
     skewY: NumberProp = null,
     stroke: int32ARGBColor | rgbaArray | String = null,
@@ -95,14 +96,14 @@ object TextProps {
     textDecoration: TextDecoration = null,
     textLength: NumberProp = null,
     transform: ColumnMajorTransformMatrix | String | TransformObject = null,
-    translate: NumberProp = null,
+    translate: NumberArray = null,
     translateX: NumberProp = null,
     translateY: NumberProp = null,
     vectorEffect: none | `non-scaling-stroke` | nonScalingStroke | typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.default | inherit | uri = null,
     verticalAlign: NumberProp = null,
     wordSpacing: NumberProp = null,
-    x: NumberProp = null,
-    y: NumberProp = null
+    x: NumberArray = null,
+    y: NumberArray = null
   ): TextProps = {
     val __obj = js.Dynamic.literal()
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline)
@@ -127,8 +128,10 @@ object TextProps {
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
     if (fontVariantLigatures != null) __obj.updateDynamic("fontVariantLigatures")(fontVariantLigatures)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
+    if (inlineSize != null) __obj.updateDynamic("inlineSize")(inlineSize.asInstanceOf[js.Any])
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
     if (lengthAdjust != null) __obj.updateDynamic("lengthAdjust")(lengthAdjust)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])

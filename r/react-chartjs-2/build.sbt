@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-chartjs-2"
-version := "2.7.6-f7fd26"
+version := "2.7.6-ae5c2e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chart_dot_js" % "2.8-dt-20190826Z-831508",
+  "org.scalablytyped" %%% "chart_dot_js" % "2.8-dt-20190909Z-0b8ca5",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",

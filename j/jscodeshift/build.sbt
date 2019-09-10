@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jscodeshift"
-version := "0.6-dt-20190718Z-ecb5c6"
+version := "0.6-dt-20190909Z-6d2ece"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

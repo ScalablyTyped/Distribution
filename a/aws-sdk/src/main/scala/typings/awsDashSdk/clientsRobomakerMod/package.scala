@@ -86,10 +86,13 @@ package object clientsRobomakerMod {
   type MaxResults = Double
   type Name = String
   type NonEmptyString = String
+  type NonSystemPort = Double
   type PaginationToken = String
   type Path = String
   type PercentDone = Double
   type Percentage = Double
+  type Port = Double
+  type PortMappingList = js.Array[PortMapping]
   type RenderingEngineType = OGRE | String
   type RenderingEngineVersionType = String
   type RevisionId = String

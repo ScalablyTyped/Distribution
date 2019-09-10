@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SymbolProps extends js.Object {
-  var id: String
+  var id: js.UndefOr[String] = js.undefined
   var opacity: js.UndefOr[NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var viewBox: js.UndefOr[String] = js.undefined
@@ -13,8 +13,14 @@ trait SymbolProps extends js.Object {
 
 object SymbolProps {
   @scala.inline
-  def apply(id: String, opacity: NumberProp = null, preserveAspectRatio: String = null, viewBox: String = null): SymbolProps = {
-    val __obj = js.Dynamic.literal(id = id)
+  def apply(
+    id: String = null,
+    opacity: NumberProp = null,
+    preserveAspectRatio: String = null,
+    viewBox: String = null
+  ): SymbolProps = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)

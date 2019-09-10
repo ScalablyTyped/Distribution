@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.LayoutChildComponentSystem
+  * @extends pc.ComponentSystem
   * @description Create a new LayoutChildComponentSystem
   * @classdesc Manages creation of {@link pc.LayoutChildComponent}s.
   * @param {pc.Application} app The application
-  * @extends pc.ComponentSystem
   */
 @JSGlobal("pc.LayoutChildComponentSystem")
 @js.native

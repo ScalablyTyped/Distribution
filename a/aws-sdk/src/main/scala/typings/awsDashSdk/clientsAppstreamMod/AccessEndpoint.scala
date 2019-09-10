@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AccessEndpoint extends js.Object {
   /**
-    * The type of VPC interface endpoint.
+    * The type of interface endpoint.
     */
   var EndpointType: AccessEndpointType
   /**
-    * The identifier (ID) of the VPC in which the endpoint is used.
+    * The identifier (ID) of the VPC in which the interface endpoint is used.
     */
   var VpceId: js.UndefOr[String] = js.undefined
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SpriteComponentSystem
+  * @extends pc.ComponentSystem
   * @classdesc Manages creation of {@link pc.SpriteComponent}s.
   * @param {pc.Application} app The application
-  * @extends pc.ComponentSystem
   */
 @JSImport("playcanvas", "SpriteComponentSystem")
 @js.native

@@ -34,6 +34,10 @@ trait CreateFleetRequest extends js.Object {
     */
   var FleetType: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.FleetType] = js.undefined
   /**
+    * The Amazon Resource Name (ARN) of the IAM role to apply to the fleet. To assume a role, a fleet instance calls the AWS Security Token Service (STS) AssumeRole API operation and passes the ARN of the role to use. The operation creates a new session with temporary credentials.
+    */
+  var IamRoleArn: js.UndefOr[Arn] = js.undefined
+  /**
     * The amount of time that users can be idle (inactive) before they are disconnected from their streaming session and the DisconnectTimeoutInSeconds time interval begins. Users are notified before they are disconnected due to inactivity. If they try to reconnect to the streaming session before the time interval specified in DisconnectTimeoutInSeconds elapses, they are connected to their previous session. Users are considered idle when they stop providing keyboard or mouse input during their streaming session. File uploads and downloads, audio in, audio out, and pixels changing do not qualify as user activity. If users continue to be idle after the time interval in IdleDisconnectTimeoutInSeconds elapses, they are disconnected. To prevent users from being disconnected due to inactivity, specify a value of 0. Otherwise, specify a value between 60 and 3600. The default value is 0.  If you enable this feature, we recommend that you specify a value that corresponds exactly to a whole number of minutes (for example, 60, 120, and 180). If you don't do this, the value is rounded to the nearest minute. For example, if you specify a value of 70, users are disconnected after 1 minute of inactivity. If you specify a value that is at the midpoint between two different minutes, the value is rounded up. For example, if you specify a value of 90, users are disconnected after 2 minutes of inactivity.  
     */
   var IdleDisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
@@ -79,6 +83,7 @@ object CreateFleetRequest {
     DomainJoinInfo: DomainJoinInfo = null,
     EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
     FleetType: FleetType = null,
+    IamRoleArn: Arn = null,
     IdleDisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
     ImageArn: Arn = null,
     ImageName: String = null,
@@ -93,6 +98,7 @@ object CreateFleetRequest {
     if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo)
     if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess)
     if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])
+    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn)
     if (!js.isUndefined(IdleDisconnectTimeoutInSeconds)) __obj.updateDynamic("IdleDisconnectTimeoutInSeconds")(IdleDisconnectTimeoutInSeconds)
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn)
     if (ImageName != null) __obj.updateDynamic("ImageName")(ImageName)

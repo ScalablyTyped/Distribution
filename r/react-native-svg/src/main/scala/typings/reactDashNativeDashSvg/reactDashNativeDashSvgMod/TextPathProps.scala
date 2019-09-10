@@ -2,8 +2,6 @@ package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
-import typings.reactDashNativeDashSvg.ColumnMajorTransformMatrix
-import typings.reactDashNativeDashSvg.int32ARGBColor
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-none`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-only`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`non-scaling-stroke`
@@ -12,15 +10,14 @@ import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.inherit
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.nonScalingStroke
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.none
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.uri
-import typings.reactDashNativeDashSvg.rgbaArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextPathProps extends TextSpecificProps {
-  var href: String
+  var href: js.UndefOr[String] = js.undefined
   var method: js.UndefOr[TextPathMethod] = js.undefined
-  var midLine: TextPathMidLine
+  var midLine: js.UndefOr[TextPathMidLine] = js.undefined
   var spacing: js.UndefOr[TextPathSpacing] = js.undefined
   var startOffset: js.UndefOr[NumberProp] = js.undefined
   var xlinkHref: js.UndefOr[String] = js.undefined
@@ -29,8 +26,6 @@ trait TextPathProps extends TextSpecificProps {
 object TextPathProps {
   @scala.inline
   def apply(
-    href: String,
-    midLine: TextPathMidLine,
     alignmentBaseline: AlignmentBaseline = null,
     baselineShift: BaselineShift = null,
     clipPath: String = null,
@@ -50,20 +45,23 @@ object TextPathProps {
     fontStretch: FontStretch = null,
     fontStyle: FontStyle = null,
     fontVariant: FontVariant = null,
-    fontVariantLigatures: FontVariantLigatures = null,
+    fontVariantLigatures: String = null,
+    fontVariationSettings: String = null,
     fontWeight: FontWeight = null,
+    href: String = null,
     id: String = null,
     kerning: NumberProp = null,
     lengthAdjust: LengthAdjust = null,
     letterSpacing: NumberProp = null,
     mask: String = null,
     method: TextPathMethod = null,
-    onLongPress: /* event */ js.Any => _ = null,
+    midLine: TextPathMidLine = null,
+    onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onPress: /* event */ js.Any => _ = null,
-    onPressIn: /* event */ js.Any => _ = null,
-    onPressOut: /* event */ js.Any => _ = null,
+    onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null,
     onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
     onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
     onResponderMove: /* event */ GestureResponderEvent => Unit = null,
@@ -74,16 +72,15 @@ object TextPathProps {
     onResponderTerminationRequest: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    origin: NumberProp = null,
+    origin: NumberArray = null,
     originX: NumberProp = null,
     originY: NumberProp = null,
     pointerEvents: `box-none` | none | `box-only` | auto = null,
-    rotate: NumberProp = null,
     rotation: NumberProp = null,
-    scale: NumberProp = null,
+    scale: NumberArray = null,
     scaleX: NumberProp = null,
     scaleY: NumberProp = null,
-    skew: NumberProp = null,
+    skew: NumberArray = null,
     skewX: NumberProp = null,
     skewY: NumberProp = null,
     spacing: TextPathSpacing = null,
@@ -100,17 +97,17 @@ object TextPathProps {
     textDecoration: TextDecoration = null,
     textLength: NumberProp = null,
     transform: ColumnMajorTransformMatrix | String | TransformObject = null,
-    translate: NumberProp = null,
+    translate: NumberArray = null,
     translateX: NumberProp = null,
     translateY: NumberProp = null,
     vectorEffect: none | `non-scaling-stroke` | nonScalingStroke | typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.default | inherit | uri = null,
     verticalAlign: NumberProp = null,
     wordSpacing: NumberProp = null,
-    x: NumberProp = null,
+    x: NumberArray = null,
     xlinkHref: String = null,
-    y: NumberProp = null
+    y: NumberArray = null
   ): TextPathProps = {
-    val __obj = js.Dynamic.literal(href = href, midLine = midLine)
+    val __obj = js.Dynamic.literal()
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline)
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
@@ -131,13 +128,16 @@ object TextPathProps {
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
     if (fontVariantLigatures != null) __obj.updateDynamic("fontVariantLigatures")(fontVariantLigatures)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href)
     if (id != null) __obj.updateDynamic("id")(id)
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
     if (lengthAdjust != null) __obj.updateDynamic("lengthAdjust")(lengthAdjust)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask)
     if (method != null) __obj.updateDynamic("method")(method)
+    if (midLine != null) __obj.updateDynamic("midLine")(midLine)
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
     if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
@@ -158,7 +158,6 @@ object TextPathProps {
     if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])
     if (originY != null) __obj.updateDynamic("originY")(originY.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])

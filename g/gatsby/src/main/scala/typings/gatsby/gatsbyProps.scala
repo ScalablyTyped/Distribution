@@ -14,6 +14,6 @@ trait gatsbyProps {
   type PageRendererProps = typings.gatsby.gatsbyMod.PageRendererProps
   @scala.inline
   def StaticQueryProps: typings.gatsby.gatsbyMod.StaticQueryProps.type = typings.gatsby.gatsbyMod.StaticQueryProps
-  type StaticQueryProps = typings.gatsby.gatsbyMod.StaticQueryProps
+  type StaticQueryProps[T] = typings.gatsby.gatsbyMod.StaticQueryProps[T]
 }
 

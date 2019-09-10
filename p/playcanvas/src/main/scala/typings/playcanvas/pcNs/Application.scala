@@ -239,6 +239,18 @@ class Application protected () extends js.Object {
   def destroy(): Unit = js.native
   /**
     * @function
+    * @name pc.Application#disableVr
+    * @description Destroy the {@link pc.VrManager}
+    */
+  def disableVr(): Unit = js.native
+  /**
+    * @function
+    * @name pc.Application#enableVr
+    * @description Create and assign a {@link pc.VrManager} object to allow this application render in VR.
+    */
+  def enableVr(): Unit = js.native
+  /**
+    * @function
     * @name pc.Application#getSceneUrl
     * @description Look up the URL of the scene hierarchy file via the name given to the scene in the editor. Use this to in {@link pc.Application#loadSceneHierarchy}.
     * @param {String} name The name of the scene file given in the Editor

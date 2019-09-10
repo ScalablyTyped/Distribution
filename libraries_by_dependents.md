@@ -4361,6 +4361,7 @@
 | 9 | [blocking-proxy](./b/blocking-proxy) | WebDriver Proxy for testing rich clients. It block
 | 9 | [bluebird-global](./b/bluebird-global) | Patches global.Promise to use bluebird and returns
 | 9 | [bootstrap3-dialog](./b/bootstrap3-dialog) | Make use of Bootstrap Modal more monkey-friendly.
+| 9 | [bristol](./b/bristol) | Insanely configurable logging for Node.js
 | 9 | [bump-regex](./b/bump-regex) | bump RegEx with semver
 | 9 | [chai-dom](./c/chai-dom) | DOM assertions for the Chai assertion library usin
 | 9 | [circuit-breaker-js](./c/circuit-breaker-js) | Hystrix-like circuit breaker for JavaScript.
@@ -5433,6 +5434,7 @@
 | 3 | [moment-round](./m/moment-round) | Date rounding for Moment.js
 | 3 | [moment-shortformat](./m/moment-shortformat) | An extension to moment.js that formats dates in a 
 | 3 | [msnodesql](./m/msnodesql) | Microsoft Driver for Node.js for SQL Server
+| 3 | [mta-h5-analysis](./m/mta-h5-analysis) | this is wechat-h5 data analysis js sdk from MTA pl
 | 3 | [next-server](./n/next-server) | -
 | 3 | [ngreact](./n/ngreact) | Use React Components in Angular
 | 3 | [nivo__annotations](./n/nivo__annotations) | -

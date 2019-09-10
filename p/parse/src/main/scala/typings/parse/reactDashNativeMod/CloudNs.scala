@@ -52,12 +52,30 @@ object CloudNs extends js.Object {
   def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
   def define(name: String): Unit = js.native
   def define(name: String, func: js.Function1[/* request */ FunctionRequest, js.Promise[_] | _]): Unit = js.native
+  /**
+    * Gets job status by Id
+    * @param jobStatusId The Id of Job Status.
+    * @returns Status of Job.
+    */
+  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.ParseNs.Object] = js.native
+  /**
+    * Gets data for the current set of cloud jobs.
+    * @returns A promise that will be resolved with the result of the function.
+    */
+  def getJobsData(): js.Promise[typings.parse.ParseNs.Object] = js.native
   def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
   def run(name: String): js.Promise[_] = js.native
   def run(name: String, data: js.Any): js.Promise[_] = js.native
   def run(name: String, data: js.Any, options: RunOptions): js.Promise[_] = js.native
+  /**
+    * Starts a given cloud job, which will process asynchronously.
+    * @param jobName The function name.
+    * @param data The parameters to send to the cloud function.
+    * @returns A promise that will be resolved with the jobStatusId of the job.
+    */
+  def startJob(jobName: String, data: js.Any): js.Promise[String] = js.native
   def useMasterKey(): Unit = js.native
   // Read preference describes how MongoDB driver route read operations to the members of a replica set.
   @js.native

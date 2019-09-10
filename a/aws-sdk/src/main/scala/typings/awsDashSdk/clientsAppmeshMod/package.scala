@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsAppmeshMod {
+  import typings.awsDashSdk.awsDashSdkStrings.`connection-error`
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -16,6 +17,13 @@ package object clientsAppmeshMod {
   type Backends = js.Array[Backend]
   type Boolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ms
+    - typings.awsDashSdk.awsDashSdkStrings.s
+    - java.lang.String
+  */
+  type DurationUnit = _DurationUnit | java.lang.String
+  type DurationValue = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ALLOW_ALL
     - typings.awsDashSdk.awsDashSdkStrings.DROP_ALL
@@ -42,6 +50,8 @@ package object clientsAppmeshMod {
     - java.lang.String
   */
   type HttpMethod = _HttpMethod | java.lang.String
+  type HttpRetryPolicyEvent = java.lang.String
+  type HttpRetryPolicyEvents = js.Array[HttpRetryPolicyEvent]
   type HttpRouteHeaders = js.Array[HttpRouteHeader]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.http
@@ -56,6 +66,7 @@ package object clientsAppmeshMod {
   type ListVirtualServicesLimit = Double
   type Listeners = js.Array[Listener]
   type Long = Double
+  type MaxRetries = Double
   type MeshList = js.Array[MeshRef]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
@@ -89,6 +100,8 @@ package object clientsAppmeshMod {
   type TagList = js.Array[TagRef]
   type TagValue = java.lang.String
   type TagsLimit = Double
+  type TcpRetryPolicyEvent = `connection-error` | java.lang.String
+  type TcpRetryPolicyEvents = js.Array[TcpRetryPolicyEvent]
   type Timestamp = Date
   type VirtualNodeList = js.Array[VirtualNodeRef]
   /* Rewritten from type alias, can be one of: 

@@ -1,0 +1,45 @@
+package typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod
+
+import typings.reactDashInstantsearchDashDom.Anon_Args
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UsingManualInfoProps
+  extends InstantSearchBaseProps
+     with InstantSearchProps {
+  var algoliaClient: js.UndefOr[js.Any] = js.undefined
+  var apiKey: String
+  var appId: String
+}
+
+object UsingManualInfoProps {
+  @scala.inline
+  def apply(
+    apiKey: String,
+    appId: String,
+    indexName: String,
+    algoliaClient: js.Any = null,
+    createURL: /* repeated */ js.Any => _ = null,
+    onSearchParameters: /* repeated */ js.Any => _ = null,
+    onSearchStateChange: /* repeated */ js.Any => _ = null,
+    refresh: js.UndefOr[Boolean] = js.undefined,
+    resultsState: js.Any = null,
+    root: Anon_Args = null,
+    searchState: js.Any = null,
+    stalledSearchDelay: Int | Double = null
+  ): UsingManualInfoProps = {
+    val __obj = js.Dynamic.literal(apiKey = apiKey, appId = appId, indexName = indexName)
+    if (algoliaClient != null) __obj.updateDynamic("algoliaClient")(algoliaClient)
+    if (createURL != null) __obj.updateDynamic("createURL")(js.Any.fromFunction1(createURL))
+    if (onSearchParameters != null) __obj.updateDynamic("onSearchParameters")(js.Any.fromFunction1(onSearchParameters))
+    if (onSearchStateChange != null) __obj.updateDynamic("onSearchStateChange")(js.Any.fromFunction1(onSearchStateChange))
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
+    if (resultsState != null) __obj.updateDynamic("resultsState")(resultsState)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (searchState != null) __obj.updateDynamic("searchState")(searchState)
+    if (stalledSearchDelay != null) __obj.updateDynamic("stalledSearchDelay")(stalledSearchDelay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsingManualInfoProps]
+  }
+}
+

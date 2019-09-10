@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateImageBuilderRequest extends js.Object {
   /**
-    * The list of virtual private cloud (VPC) interface endpoint objects. Administrators can connect to the image builder only through the specified endpoints.
+    * The list of interface VPC endpoint (interface endpoint) objects. Administrators can connect to the image builder only through the specified endpoints.
     */
   var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
   /**
@@ -29,6 +29,10 @@ trait CreateImageBuilderRequest extends js.Object {
     * Enables or disables default internet access for the image builder.
     */
   var EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of the IAM role to apply to the image builder. To assume a role, the image builder calls the AWS Security Token Service (STS) AssumeRole API operation and passes the ARN of the role to use. The operation creates a new session with temporary credentials.
+    */
+  var IamRoleArn: js.UndefOr[Arn] = js.undefined
   /**
     * The ARN of the public, private, or shared image to use.
     */
@@ -66,6 +70,7 @@ object CreateImageBuilderRequest {
     DisplayName: DisplayName = null,
     DomainJoinInfo: DomainJoinInfo = null,
     EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
+    IamRoleArn: Arn = null,
     ImageArn: Arn = null,
     ImageName: String = null,
     Tags: Tags = null,
@@ -78,6 +83,7 @@ object CreateImageBuilderRequest {
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
     if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo)
     if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess)
+    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn)
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn)
     if (ImageName != null) __obj.updateDynamic("ImageName")(ImageName)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
