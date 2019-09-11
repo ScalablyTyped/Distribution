@@ -12,6 +12,7 @@ object englishStrings extends js.Object {
   var addRow: String = js.native
   var choices_Item: String = js.native
   var chooseFile: String = js.native
+  var chooseFileCaption: String = js.native
   var cleanCaption: String = js.native
   var clearCaption: String = js.native
   var completeText: String = js.native
@@ -41,6 +42,7 @@ object englishStrings extends js.Object {
   var otherRequiredError: String = js.native
   var pageNextText: String = js.native
   var pagePrevText: String = js.native
+  var panelDynamicProgressText: String = js.native
   var progressText: String = js.native
   var questionsProgressText: String = js.native
   var removeFileCaption: String = js.native

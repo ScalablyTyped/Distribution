@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__components"
-version := "5.1.11-5cb939"
+version := "5.1.11-852795"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-5e90d9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
-  "org.scalablytyped" %%% "react-syntax-highlighter" % "10.2-dt-20190530Z-3731c7",
+  "org.scalablytyped" %%% "react-syntax-highlighter" % "11.0-dt-20190910Z-6c9f4b",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "storybook__theming" % "5.1.11-7b3847")
 publishArtifact in packageDoc := false

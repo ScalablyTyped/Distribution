@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__ui-components"
-version := "1.1.0-3fa5cf"
+version := "1.1.1-10d24f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

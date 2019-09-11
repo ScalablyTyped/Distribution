@@ -17,6 +17,7 @@ object ^ extends js.Object {
     /* desc */ js.Any, 
     js.Any
   ] = js.native
+  var __spreadArrays: js.Function0[js.Array[js.Any]] = js.native
   var koTemplate: js.Any = js.native
   var registerTemplateEngine: js.Function2[/* ko */ js.Any, /* platform */ String, Unit] = js.native
   var surveyCss: js.Any = js.native

@@ -1790,6 +1790,7 @@
 | [expr-eval](./e/expr-eval) | Mathematical expression evaluator | expression, math, evaluate, eval, function, parser |
 | [express](./e/express) | Fast, unopinionated, minimalist web framework | express, framework, sinatra, web, rest, restful, router, app, api |
 | [express-async-wrap](./e/express-async-wrap) | Allows the use of ES2016 async functions as Expres | express, async-await, routes |
+| [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
@@ -4840,6 +4841,7 @@
 | [pako](./p/pako) | zlib port to javascript - fast, modularized, with  | zlib, deflate, inflate, gzip |
 | [palx](./p/palx) | Automatic UI Color Palette Generator | color, color-palette |
 | [pangu](./p/pangu) | Paranoid text spacing for good readability, to aut | pangu, text-spacing, spacing, text, html, typesetting, readability, cli, chinese, japanese, korean, obsessive-compulsive-disorder, ocd, paranoia |
+| [panva__jose](./p/panva__jose) | JSON Web Almost Everything - JWA, JWS, JWE, JWK, J | compact, decode, decrypt, eddsa, electron, encrypt, flattened, general, id token, id_token, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, secp256k1, sign, validate, verify |
 | [papaparse](./p/papaparse) | Fast and powerful CSV parser for the browser that  | csv, parser, parse, parsing, delimited, text, data, auto-detect, comma, tab, pipe, file, filereader, stream, worker, workers, thread, threading, multi-threaded, jquery-plugin |
 | [paper](./p/paper) | The Swiss Army Knife of Vector Graphics Scripting | vector, graphic, graphics, 2d, geometry, bezier, curve, curves, path, paths, canvas, svg, paper, paper.js, paperjs |
 | [parallel-transform](./p/parallel-transform) | Transform stream that allows you to run your trans | transform, stream, parallel, preserve, order |

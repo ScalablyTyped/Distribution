@@ -1,7 +1,7 @@
 
 # Scala.js typings for opossum
 
-Typings are for version 1.10
+Typings are for version 4.0
 
 ## Library description:
 A fail-fast circuit breaker for promises and callbacks

@@ -1,0 +1,12 @@
+package typings.reactDashSyntaxDashHighlighter
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-syntax-highlighter/dist/esm/styles/hljs/atom-one-light", JSImport.Namespace)
+@js.native
+object distEsmStylesHljsAtomDashOneDashLightMod extends js.Object {
+  val default: js.Any = js.native
+}
+

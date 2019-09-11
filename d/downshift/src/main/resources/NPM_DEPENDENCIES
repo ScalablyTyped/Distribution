@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "downshift" : "3.2.14"
+      "downshift" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "downshift" : "3.2.14"
+      "downshift" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

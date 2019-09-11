@@ -221,6 +221,7 @@ class PanelModelBase ()
   def hasErrors(): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
   def hasErrors(fireCallback: Boolean, focuseOnFirstError: Boolean): Boolean = js.native
+  def hasErrors(fireCallback: Boolean, focuseOnFirstError: Boolean, rec: js.Any): Boolean = js.native
   /* protected */ def hasErrorsCore(rec: js.Any): Unit = js.native
   /**
     * Returns the index of element parameter in the elements list.

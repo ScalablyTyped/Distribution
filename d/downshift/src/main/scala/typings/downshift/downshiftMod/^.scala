@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val default: DownshiftInterface[js.Any] = js.native
   def resetIdCounter(): Unit = js.native
+  def useSelect[Item](props: UseSelectInterface[Item]): UseSelectReturnValue[Item] = js.native
 }
 

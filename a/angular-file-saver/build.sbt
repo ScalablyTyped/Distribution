@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-file-saver"
-version := "1.1-dt-20190322Z-5bdb02"
+version := "1.1-dt-20190910Z-3c46a9"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

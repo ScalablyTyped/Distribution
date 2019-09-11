@@ -10,7 +10,7 @@ trait CreateTapesInput extends js.Object {
     */
   var ClientToken: typings.awsDashSdk.clientsStoragegatewayMod.ClientToken
   /**
-    * The unique Amazon Resource Name (ARN) that represents the gateway to associate the virtual tapes with. Use the ListGateways operation to return a list of gateways for your account and region.
+    * The unique Amazon Resource Name (ARN) that represents the gateway to associate the virtual tapes with. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
     */
   var GatewayARN: typings.awsDashSdk.clientsStoragegatewayMod.GatewayARN
   /**

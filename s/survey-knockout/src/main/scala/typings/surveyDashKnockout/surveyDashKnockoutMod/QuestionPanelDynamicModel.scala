@@ -181,6 +181,7 @@ class QuestionPanelDynamicModel protected ()
     * @see templateTitle
     */
   var panelsState: String = js.native
+  val progressText: String = js.native
   /**
     * By default the property equals to "list" and all dynamic panels are rendered one by one on the page. You may change it to: "progressTop", "progressBottom" or "progressTopBottom" to render only one dynamic panel at once. The progress and navigation elements can be rendred on top, bottom or both.
     */

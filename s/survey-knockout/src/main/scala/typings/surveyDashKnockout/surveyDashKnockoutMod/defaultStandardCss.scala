@@ -12,11 +12,11 @@ import typings.surveyDashKnockout.Anon_Complete
 import typings.surveyDashKnockout.Anon_Container
 import typings.surveyDashKnockout.Anon_Control
 import typings.surveyDashKnockout.Anon_Description
+import typings.surveyDashKnockout.Anon_Disabled
 import typings.surveyDashKnockout.Anon_Error
-import typings.surveyDashKnockout.Anon_FileInput
+import typings.surveyDashKnockout.Anon_FileDecorator
 import typings.surveyDashKnockout.Anon_Icon
 import typings.surveyDashKnockout.Anon_Item
-import typings.surveyDashKnockout.Anon_ItemItemText
 import typings.surveyDashKnockout.Anon_ItemTitle
 import typings.surveyDashKnockout.Anon_Root
 import scala.scalajs.js
@@ -35,7 +35,7 @@ object defaultStandardCss extends js.Object {
   var dropdown: Anon_Control = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native
-  var file: Anon_FileInput = js.native
+  var file: Anon_FileDecorator = js.native
   var footer: String = js.native
   var header: String = js.native
   var html: Anon_Root = js.native
@@ -55,7 +55,7 @@ object defaultStandardCss extends js.Object {
   var progressBar: String = js.native
   var question: Anon_Comment = js.native
   var radiogroup: Anon_ClearButton = js.native
-  var rating: Anon_ItemItemText = js.native
+  var rating: Anon_Disabled = js.native
   var root: String = js.native
   var row: String = js.native
   var saveData: Anon_Error = js.native

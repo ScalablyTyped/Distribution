@@ -4,11 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * This behaves like a `WebSocket` in every way, except if it fails to connect,
+  * or it gets disconnected, it will repeatedly poll until it successfully connects
+  * again.
+  *
+  * It is API compatible, so when you have:
+  * ```ts
+  * ws = new WebSocket('ws://....');
+  * ```
+  * you can replace with:
+  * ```ts
+  * ws = new ReconnectingWebSocket('ws://....');
+  * ```
+  *
+  * The event stream will typically look like:
+  * - `onconnecting`
+  * - `onopen`
+  * - `onmessage`
+  * - `onmessage`
+  * - `onclose` // lost connection
+  * - `onconnecting`
+  * - `onopen`  // sometime later...
+  * - `onmessage`
+  * - `onmessage`
+  * - etc...
+  *
+  * It is API compatible with the standard WebSocket API, apart from the following members:
+  * - `bufferedAmount`
+  * - `extensions`
+  * - `binaryType`
+  */
 @JSImport("reconnectingwebsocket", JSImport.Namespace)
 @js.native
 class ^ protected () extends ReconnectingWebSocket {
+  /**
+    * @param url The url you are connecting to.
+    * @param protocols Optional string or array of protocols.
+    * @param options See `ReconnectingWebSocket.Options`
+    */
   def this(url: String) = this()
+  def this(url: String, protocols: String) = this()
   def this(url: String, protocols: js.Array[String]) = this()
+  def this(url: String, protocols: String, options: Options) = this()
   def this(url: String, protocols: js.Array[String], options: Options) = this()
 }
 
@@ -19,6 +57,10 @@ object ^ extends js.Object {
   var CLOSING: Double = js.native
   var CONNECTING: Double = js.native
   var OPEN: Double = js.native
+  /**
+    * Whether all instances of ReconnectingWebSocket should log debug messages.
+    * Setting this to true is the equivalent of setting all instances of ReconnectingWebSocket.debug to true.
+    */
   var debugAll: Boolean = js.native
 }
 

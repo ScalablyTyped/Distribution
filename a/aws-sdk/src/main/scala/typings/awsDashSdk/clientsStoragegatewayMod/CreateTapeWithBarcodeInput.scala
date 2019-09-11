@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateTapeWithBarcodeInput extends js.Object {
   /**
-    * The unique Amazon Resource Name (ARN) that represents the gateway to associate the virtual tape with. Use the ListGateways operation to return a list of gateways for your account and region.
+    * The unique Amazon Resource Name (ARN) that represents the gateway to associate the virtual tape with. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
     */
   var GatewayARN: typings.awsDashSdk.clientsStoragegatewayMod.GatewayARN
   /**

@@ -10,6 +10,8 @@ trait Anon_ClearButton extends js.Object {
   var controlLabel: String
   var item: String
   var itemControl: String
+  var itemDecorator: String
+  var itemInline: String
   var label: String
   var materialDecorator: String
   var other: String
@@ -24,12 +26,14 @@ object Anon_ClearButton {
     controlLabel: String,
     item: String,
     itemControl: String,
+    itemDecorator: String,
+    itemInline: String,
     label: String,
     materialDecorator: String,
     other: String,
     root: String
   ): Anon_ClearButton = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton, column = column, controlLabel = controlLabel, item = item, itemControl = itemControl, label = label, materialDecorator = materialDecorator, other = other, root = root)
+    val __obj = js.Dynamic.literal(clearButton = clearButton, column = column, controlLabel = controlLabel, item = item, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, label = label, materialDecorator = materialDecorator, other = other, root = root)
   
     __obj.asInstanceOf[Anon_ClearButton]
   }

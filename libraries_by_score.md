@@ -2327,6 +2327,7 @@
 | 0.7007311434005827 | [mumath](./m/mumath) | Practical math utils for components
 | 0.7006862063027075 | [bytewise](./b/bytewise) | Binary serialization which sorts bytewise for arbi
 | 0.7006543205203397 | [number-to-words](./n/number-to-words) | Contains some util methods for converting numbers 
+| 0.7005666541278879 | [panva__jose](./p/panva__jose) | JSON Web Almost Everything - JWA, JWS, JWE, JWK, J
 | 0.7005612836185151 | [preferred-pm](./p/preferred-pm) | Detects what package manager was used for installa
 | 0.7005122133112454 | [json-file-plus](./j/json-file-plus) | Read from and write to a JSON file, minimizing dif
 | 0.7004845997457267 | [hapi__hapi](./h/hapi__hapi) | HTTP Server framework
@@ -3732,6 +3733,7 @@
 | 0.638742305777307 | [express-winston](./e/express-winston) | express.js middleware for flatiron/winston
 | 0.6385481407674489 | [forge-di](./f/forge-di) | a dependency injector for node.js
 | 0.6384628220340002 | [vexdb](./v/vexdb) | A simple tool for accessing the VexDB
+| 0.6384587884995256 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.6384328003269553 | [react-icons](./r/react-icons) | SVG React icons of popular icon packs using ES6 im
 | 0.6383241914622128 | [random-obj-prop](./r/random-obj-prop) | Get a random property from an object
 | 0.638321517549087 | [timezonecomplete](./t/timezonecomplete) | DateTime, TimeZone, Duration and Period library ai

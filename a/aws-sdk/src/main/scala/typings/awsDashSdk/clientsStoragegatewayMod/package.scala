@@ -19,6 +19,7 @@ package object clientsStoragegatewayMod {
   type ChapSecret = String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientToken = String
+  type CloudWatchLogGroupARN = String
   type CreatedDate = Date
   type DayOfMonth = Double
   type DayOfWeek = Double

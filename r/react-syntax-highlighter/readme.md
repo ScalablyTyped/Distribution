@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-syntax-highlighter
 
-Typings are for version 10.2
+Typings are for version 11.0
 
 ## Library description:
 syntax highlighting component for react with prismjs or highlightjs ast using inline styles

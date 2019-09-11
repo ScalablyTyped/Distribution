@@ -1,6 +1,7 @@
 package typings.opossum.opossumMod
 
 import typings.node.eventsMod.EventEmitter
+import typings.opossum.opossumStrings.snapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation._
 trait Status extends EventEmitter {
   var stats: Stats = js.native
   var window: Window = js.native
-  def close(): Unit = js.native
-  def increment(property: String): Unit = js.native
-  def increment(property: String, latencyRunTime: Double): Unit = js.native
-  def open(): Unit = js.native
+  @JSName("on")
+  def on_snapshot(event: snapshot, listener: js.Function1[/* snapshot */ Stats, Unit]): this.type = js.native
 }
 

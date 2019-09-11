@@ -14,7 +14,7 @@ trait GatewayInfo extends js.Object {
     */
   var Ec2InstanceRegion: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.Ec2InstanceRegion] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and region.
+    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
     */
   var GatewayARN: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.GatewayARN] = js.undefined
   /**

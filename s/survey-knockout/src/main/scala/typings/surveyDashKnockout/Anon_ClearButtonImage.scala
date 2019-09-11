@@ -9,6 +9,7 @@ trait Anon_ClearButtonImage extends js.Object {
   var image: String
   var item: String
   var itemControl: String
+  var itemInline: String
   var itemText: String
   var label: String
   var root: String
@@ -21,11 +22,12 @@ object Anon_ClearButtonImage {
     image: String,
     item: String,
     itemControl: String,
+    itemInline: String,
     itemText: String,
     label: String,
     root: String
   ): Anon_ClearButtonImage = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton, image = image, item = item, itemControl = itemControl, itemText = itemText, label = label, root = root)
+    val __obj = js.Dynamic.literal(clearButton = clearButton, image = image, item = item, itemControl = itemControl, itemInline = itemInline, itemText = itemText, label = label, root = root)
   
     __obj.asInstanceOf[Anon_ClearButtonImage]
   }

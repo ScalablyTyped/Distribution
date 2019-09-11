@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bowser"
-version := "2.6.0-e6659c"
+version := "2.6.1-0666c3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

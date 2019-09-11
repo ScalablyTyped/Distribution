@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object downshiftMod {
   import typings.downshift.Anon_StateChangeTypes
+  import typings.downshift.Anon_StateChangeTypesAnonFunctionClearKeysSoFar
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentState
   import typings.react.reactMod.HTMLProps
@@ -19,4 +20,9 @@ package object downshiftMod {
   type DownshiftInterface[Item] = (ComponentClass[DownshiftProps[Item], ComponentState]) with Anon_StateChangeTypes
   type GetLabelPropsOptions = HTMLProps[HTMLLabelElement]
   type StateChangeFunction[Item] = js.Function1[/* state */ DownshiftState[Item], Partial[StateChangeOptions[Item]]]
+  type UseSelectInterface[Item] = js.Function1[
+    /* props */ UseSelectProps[Item], 
+    UseSelectReturnValue[Item] with Anon_StateChangeTypesAnonFunctionClearKeysSoFar
+  ]
+  type UseSelectReturnValue[Item] = UseSelectState[Item] with UseSelectPropGetters[Item] with UseSelectActions[Item]
 }

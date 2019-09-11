@@ -17,6 +17,7 @@ trait IProject extends js.Object {
   val details: ProjectDetailsResult = js.native
   val directory: String = js.native
   val filePath: String = js.native
+  val pathPrefix: js.Array[String] = js.native
   val rootDirectory: String = js.native
   val `type`: ProjectType = js.native
   def createIntegration(name: IntegrationName): js.Promise[IIntegration[ProjectIntegration]] = js.native

@@ -4133,6 +4133,7 @@
 | 11 | [escape-latex](./e/escape-latex) | Escape LaTeX special characters with Javascript
 | 11 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations
 | 11 | [event-loop-lag](./e/event-loop-lag) | Measure event loop lag
+| 11 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 11 | [express-formidable](./e/express-formidable) | An Express middleware of Formidable that just work
 | 11 | [express-myconnection](./e/express-myconnection) | Connect/Express middleware that auto provides mysq
 | 11 | [fancybox](./f/fancybox) | fancyBox is a tool that offers a nice and elegant 
@@ -5193,6 +5194,7 @@
 | 4 | [node-snap7](./n/node-snap7) | Native node.js addon/wrapper for snap7
 | 4 | [obj-str](./o/obj-str) | A tiny library for serializing Object values to St
 | 4 | [osrm](./o/osrm) | The Open Source Routing Machine is a high performa
+| 4 | [panva__jose](./p/panva__jose) | JSON Web Almost Everything - JWA, JWS, JWE, JWK, J
 | 4 | [parse-path](./p/parse-path) | Parse paths (local paths, urls: ssh/git/etc)
 | 4 | [phosphor__keyboard](./p/phosphor__keyboard) | PhosphorJS - Keyboard
 | 4 | [plugapi](./p/plugapi) | Generic API for building plug.dj bots

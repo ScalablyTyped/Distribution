@@ -22,9 +22,7 @@ class QuestionFileModel protected () extends Question {
     * Set it to true, to allow select multiple files.
     */
   var allowMultiple: Boolean = js.native
-  /**
-    * The clean files value button caption.
-    */
+  val chooseButtonCaption: String = js.native
   val cleanButtonCaption: String = js.native
   var currentState: String = js.native
   /**
@@ -43,6 +41,10 @@ class QuestionFileModel protected () extends Question {
     * Use this property to setup the maximum allowed file size.
     */
   var maxSize: Double = js.native
+  /**
+    * The clean files value button caption.
+    */
+  val noFileChosenCaption: String = js.native
   /**
     * The event is fired after question state has been changed.
     * <br/> sender the question object that fires the event

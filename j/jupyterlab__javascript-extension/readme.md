@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__javascript-extension
 
-Typings are for version 1.1.1
+Typings are for version 1.1.2
 
 ## Library description:
 JupyterLab - Javascript Renderer

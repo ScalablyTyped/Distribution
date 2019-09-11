@@ -1,28 +1,48 @@
 package typings.openidDashClient.openidDashClientMod
 
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPanvaJose.atPanvaJoseMod.JWKSNs.KeyStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("openid-client", "Issuer")
 @js.native
-class Issuer () extends js.Object {
+class Issuer[TClient /* <: Client */] protected ()
+  extends /* key */ StringDictionary[js.Any] {
   def this(metadata: IssuerMetadata) = this()
-  val Client: Instantiable1[
-    js.UndefOr[/* metadata */ ClientMetadata], 
-    typings.openidDashClient.openidDashClientMod.Client
-  ] = js.native
-  val metadata: IssuerMetadata = js.native
+  /**
+    * Returns the <Client> class tied to this issuer.
+    */
+  var Client: TypeOfGenericClient[TClient] = js.native
+  /**
+    * Returns metadata from the issuer's discovery document.
+    */
+  var metadata: IssuerMetadata = js.native
   var static: js.Any = js.native
-  def keystore(): js.Promise[_] = js.native
-  def keystore(forceReload: Boolean): js.Promise[_] = js.native
+  /**
+    * Returns the issuer's jwks_uri keys as a @panva/jose parsed JWKS.Keystore.
+    * @param forceReload forces a reload of the issuer's jwks_uri
+    */
+  def keystore(): js.Promise[KeyStore] = js.native
+  def keystore(forceReload: Boolean): js.Promise[KeyStore] = js.native
 }
 
 /* static members */
 @JSImport("openid-client", "Issuer")
 @js.native
 object Issuer extends js.Object {
-  def discover(issuer: String): js.Promise[Issuer] = js.native
+  /**
+    * Loads OpenID Connect 1.0 and/or OAuth 2.0 Authorization Server Metadata documents.
+    * When the issuer argument contains '.well-known' only that document is loaded, otherwise
+    * performs both openid-configuration and oauth-authorization-server requests.
+    * @param issuer Issuer Identifier or metadata URL
+    */
+  def discover(issuer: String): js.Promise[Issuer[Client]] = js.native
+  /**
+    * Performs OpenID Provider Issuer Discovery based on End-User input.
+    * @param input EMAIL, URL, Hostname and Port, acct or syntax input
+    */
+  def webfinger(input: String): js.Promise[Issuer[Client]] = js.native
 }
 

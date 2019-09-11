@@ -17,6 +17,7 @@ object OperandMaker extends js.Object {
   var unaryFunctions: HashTable[js.Function] = js.native
   def isBooleanValue(value: String): Boolean = js.native
   def isNumeric(value: String): Boolean = js.native
+  def isSpaceString(str: String): Boolean = js.native
   def operatorToString(operatorName: String): String = js.native
   def safeToString(operand: Operand): String = js.native
   def throwInvalidOperatorError(op: String): Unit = js.native

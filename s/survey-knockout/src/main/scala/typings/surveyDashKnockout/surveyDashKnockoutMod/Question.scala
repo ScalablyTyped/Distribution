@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined value, hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, choicesLoaded */ @JSImport("survey-knockout", "Question")
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -29,6 +29,7 @@ class Question protected ()
     * @see SurveyModel.inCorrectAnswers
     */
   var correctAnswer: js.Any = js.native
+  val correctAnswerCount: Double = js.native
   /**
     * Returns all css classes that used for rendering the question. You may use survey.updateQuestionCssClasses event to override css classes for a question.
     * @see SurveyModel.updateQuestionCssClasses
@@ -142,6 +143,7 @@ class Question protected ()
     * Returns the rendred question title.
     */
   val processedTitle: String = js.native
+  val quizQuestionCount: Double = js.native
   /**
     * The rendered width of the question.
     */
@@ -231,8 +233,6 @@ class Question protected ()
     * Get is question ready to use
     */
   def choicesLoaded(): Unit = js.native
-  @JSName("choicesLoaded")
-  def choicesLoaded_Any(): js.Any = js.native
   /**
     * Call this function to clear all errors in the question
     */
@@ -270,6 +270,7 @@ class Question protected ()
   def getConditionJson(): js.Any = js.native
   def getConditionJson(operator: String): js.Any = js.native
   def getConditionJson(operator: String, path: String): js.Any = js.native
+  /* protected */ def getCorrectAnswerCount(): Double = js.native
   /* CompleteClass */
   override def getDataFilteredProperties(): js.Any = js.native
   /* CompleteClass */
@@ -305,6 +306,7 @@ class Question protected ()
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
   def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
   /* protected */ def getQuestionTitleTemplate(): String = js.native
+  /* protected */ def getQuizQuestionCount(): Double = js.native
   /* protected */ def getRootCss(classes: js.Any): js.Any = js.native
   /**
     * Return the title location based on question titleLocation property and QuestionTitleLocation of it's parents
@@ -326,6 +328,7 @@ class Question protected ()
     */
   def hasErrors(): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
+  def hasErrors(fireCallback: Boolean, rec: js.Any): Boolean = js.native
   /* protected */ def hasOtherChanged(): Unit = js.native
   /* protected */ def hasRequiredError(): Boolean = js.native
   /* protected */ def initCommentFromSurvey(): Unit = js.native

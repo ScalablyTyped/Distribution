@@ -42,6 +42,7 @@ class IconRegistry () extends IIconRegistry {
   /* CompleteClass */
   override def iconReact(props: INodeOptions with Anon_Div): ReactElement = js.native
   def resolveName(name: String): String = js.native
+  def resolveSvg(name: String): HTMLElement | Null = js.native
   def svg(name: String): String = js.native
 }
 

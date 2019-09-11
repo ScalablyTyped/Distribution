@@ -14,7 +14,7 @@ trait ActivateGatewayInput extends js.Object {
     */
   var GatewayName: typings.awsDashSdk.clientsStoragegatewayMod.GatewayName
   /**
-    * A value that indicates the region where you want to store your data. The gateway region specified must be the same region as the region in your Host header in the request. For more information about available regions and endpoints for AWS Storage Gateway, see Regions and Endpoints in the Amazon Web Services Glossary.  Valid Values: See AWS Storage Gateway Regions and Endpoints in the AWS General Reference. 
+    * A value that indicates the AWS Region where you want to store your data. The gateway AWS Region specified must be the same AWS Region as the AWS Region in your Host header in the request. For more information about available AWS Regions and endpoints for AWS Storage Gateway, see Regions and Endpoints in the Amazon Web Services Glossary.  Valid Values: See AWS Storage Gateway Regions and Endpoints in the AWS General Reference. 
     */
   var GatewayRegion: RegionId
   /**
@@ -30,7 +30,7 @@ trait ActivateGatewayInput extends js.Object {
     */
   var MediumChangerType: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.MediumChangerType] = js.undefined
   /**
-    * A list of up to 50 tags that can be assigned to the gateway. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+    * A list of up to 50 tags that you can assign to the gateway. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers that can be represented in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256 characters. 
     */
   var Tags: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.Tags] = js.undefined
   /**

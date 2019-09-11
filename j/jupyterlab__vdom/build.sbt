@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__vdom"
-version := "1.1.1-c6bbac"
+version := "1.1.2-26bda0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.1-f7f3bc",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.2-706931",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.1.0-4d644e",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.1.0-72a313",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.1.1-ff6b1d",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.1.2-09dd64",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.3.0-76dbff",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.1.1-4df33b",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.1.2-8e9b3c",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.4.0-689901",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.1.1-01086e",
-  "org.scalablytyped" %%% "nteract__transform-vdom" % "4.0.2-927e7c",
+  "org.scalablytyped" %%% "nteract__transform-vdom" % "4.0.3-4b7058",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-db25ba",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.1-9cbced",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-2e6e2f",

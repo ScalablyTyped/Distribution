@@ -1,16 +1,13 @@
 package typings.opossum.opossumMod
 
-import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("opossum", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val circuitBreaker: index = js.native
-  val default: index = js.native
-  val stats: Transform = js.native
-  def promisify(action: Action): js.Function1[/* repeated */ js.Any, js.Promise[_]] = js.native
+class ^[TI /* <: js.Array[_] */, TR] protected () extends CircuitBreaker[TI, TR] {
+  def this(action: js.Function1[/* args */ TI, js.Promise[TR]]) = this()
+  def this(action: js.Function1[/* args */ TI, js.Promise[TR]], options: Options) = this()
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nteract__transform-vdom"
-version := "4.0.2-927e7c"
+version := "4.0.3-4b7058"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

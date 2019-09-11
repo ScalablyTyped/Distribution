@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "dts-generator"
-version := "2.1-dt-20190524Z-d6df5b"
+version := "2.1-dt-20190524Z-b3328e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-183d02",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "typescript" % "3.6.2-08574c")
+  "org.scalablytyped" %%% "typescript" % "3.6.3-fd0781")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

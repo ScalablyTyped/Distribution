@@ -428,6 +428,7 @@ class SurveyModel ()
     * <br/> sender the survey object that fires the event
     * <br/> options.question a question on which you have to decide if the answer is correct or not.
     * <br/> options.result return true, if the answer is correct or false if the answer is not correct. Use questions value and correctAnswer properties to return the correct value.
+    * <br/> options.correctAnswers - you may change the default number of correct or incorrect answers in the question, for example for matrix, where each row is a quiz question.
     * @see Question.value
     * @see Question.correctAnswer
     */
@@ -1207,7 +1208,13 @@ class SurveyModel ()
   def getQuestionsByNames(names: js.Array[String]): js.Array[IQuestion] = js.native
   def getQuestionsByNames(names: js.Array[String], caseInsensitive: Boolean): js.Array[IQuestion] = js.native
   /**
+    * Returns quiz question number. It may be different from getQuizQuestions.length because some widgets like matrix may have several questions. For example by number of rows
+    * @see getQuizQuestions
+    */
+  def getQuizQuestionCount(): Double = js.native
+  /**
     * Returns quiz questions. All visible questions that has input(s) widgets.
+    * @see getQuizQuestionCount
     */
   def getQuizQuestions(): js.Array[IQuestion] = js.native
   /**

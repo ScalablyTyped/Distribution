@@ -4,19 +4,19 @@ import typings.surveyDashKnockout.Anon_Body
 import typings.surveyDashKnockout.Anon_Button
 import typings.surveyDashKnockout.Anon_ButtonButtonAddButtonNext
 import typings.surveyDashKnockout.Anon_CellLabel
-import typings.surveyDashKnockout.Anon_ClearButton
-import typings.surveyDashKnockout.Anon_ClearButtonImage
+import typings.surveyDashKnockout.Anon_ClearButtonColumn
+import typings.surveyDashKnockout.Anon_ClearButtonImageItem
 import typings.surveyDashKnockout.Anon_ColumnControlLabel
-import typings.surveyDashKnockout.Anon_CommentDescription
+import typings.surveyDashKnockout.Anon_CommentContent
 import typings.surveyDashKnockout.Anon_Complete
 import typings.surveyDashKnockout.Anon_Container
 import typings.surveyDashKnockout.Anon_ControlOther
 import typings.surveyDashKnockout.Anon_Description
+import typings.surveyDashKnockout.Anon_Disabled
 import typings.surveyDashKnockout.Anon_Error
-import typings.surveyDashKnockout.Anon_FileInput
+import typings.surveyDashKnockout.Anon_FileDecorator
 import typings.surveyDashKnockout.Anon_Icon
 import typings.surveyDashKnockout.Anon_Item
-import typings.surveyDashKnockout.Anon_ItemItemText
 import typings.surveyDashKnockout.Anon_ItemTitleItemValue
 import typings.surveyDashKnockout.Anon_Root
 import scala.scalajs.js
@@ -35,11 +35,11 @@ object defaultBootstrapCss extends js.Object {
   var dropdown: Anon_ControlOther = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native
-  var file: Anon_FileInput = js.native
+  var file: Anon_FileDecorator = js.native
   var footer: String = js.native
   var header: String = js.native
   var html: Anon_Root = js.native
-  var imagepicker: Anon_ClearButtonImage = js.native
+  var imagepicker: Anon_ClearButtonImageItem = js.native
   var matrix: Anon_CellLabel = js.native
   var matrixdropdown: Anon_Root = js.native
   var matrixdynamic: Anon_Button = js.native
@@ -53,9 +53,9 @@ object defaultBootstrapCss extends js.Object {
   var paneldynamic: Anon_ButtonButtonAddButtonNext = js.native
   var progress: String = js.native
   var progressBar: String = js.native
-  var question: Anon_CommentDescription = js.native
-  var radiogroup: Anon_ClearButton = js.native
-  var rating: Anon_ItemItemText = js.native
+  var question: Anon_CommentContent = js.native
+  var radiogroup: Anon_ClearButtonColumn = js.native
+  var rating: Anon_Disabled = js.native
   var root: String = js.native
   var row: String = js.native
   var saveData: Anon_Error = js.native

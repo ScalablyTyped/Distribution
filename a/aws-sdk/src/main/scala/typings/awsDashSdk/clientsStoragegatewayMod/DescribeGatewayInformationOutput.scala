@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait DescribeGatewayInformationOutput extends js.Object {
   /**
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that was used to monitor and log events in the gateway.
+    */
+  var CloudWatchLogGroupARN: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.CloudWatchLogGroupARN] = js.undefined
+  /**
     * The ID of the Amazon EC2 instance that was used to launch the gateway.
     */
   var Ec2InstanceId: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.Ec2InstanceId] = js.undefined
@@ -59,6 +63,7 @@ trait DescribeGatewayInformationOutput extends js.Object {
 object DescribeGatewayInformationOutput {
   @scala.inline
   def apply(
+    CloudWatchLogGroupARN: CloudWatchLogGroupARN = null,
     Ec2InstanceId: Ec2InstanceId = null,
     Ec2InstanceRegion: Ec2InstanceRegion = null,
     GatewayARN: GatewayARN = null,
@@ -74,6 +79,7 @@ object DescribeGatewayInformationOutput {
     VPCEndpoint: String = null
   ): DescribeGatewayInformationOutput = {
     val __obj = js.Dynamic.literal()
+    if (CloudWatchLogGroupARN != null) __obj.updateDynamic("CloudWatchLogGroupARN")(CloudWatchLogGroupARN)
     if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId)
     if (Ec2InstanceRegion != null) __obj.updateDynamic("Ec2InstanceRegion")(Ec2InstanceRegion)
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN)

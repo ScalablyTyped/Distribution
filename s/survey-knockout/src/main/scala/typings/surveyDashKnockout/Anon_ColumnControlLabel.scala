@@ -9,6 +9,8 @@ trait Anon_ColumnControlLabel extends js.Object {
   var controlLabel: String
   var item: String
   var itemControl: String
+  var itemDecorator: String
+  var itemInline: String
   var materialDecorator: String
   var other: String
   var root: String
@@ -21,11 +23,13 @@ object Anon_ColumnControlLabel {
     controlLabel: String,
     item: String,
     itemControl: String,
+    itemDecorator: String,
+    itemInline: String,
     materialDecorator: String,
     other: String,
     root: String
   ): Anon_ColumnControlLabel = {
-    val __obj = js.Dynamic.literal(column = column, controlLabel = controlLabel, item = item, itemControl = itemControl, materialDecorator = materialDecorator, other = other, root = root)
+    val __obj = js.Dynamic.literal(column = column, controlLabel = controlLabel, item = item, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, materialDecorator = materialDecorator, other = other, root = root)
   
     __obj.asInstanceOf[Anon_ColumnControlLabel]
   }
