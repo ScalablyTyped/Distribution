@@ -5,7 +5,8 @@ import typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineP
 import typings.atAntDashDesignIconsDashReactDashNative.{atAntDashDesignIconsDashReactDashNativeComponents => AntdIcons}
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeProps
-import typings.atAntDashDesignReactDashNative.esMod.Toast
+import typings.reactDashNative.reactDashNativeMod.ActionSheetIOSOptions
+import typings.atAntDashDesignReactDashNative.esMod.{ActionSheet, Toast}
 import typings.atAntDashDesignReactDashNative.{atAntDashDesignReactDashNativeComponents => Antd}
 import typings.react.ScalableSlinky._
 
@@ -54,6 +55,8 @@ object AntdNativeFacade extends atAntDashDesignReactDashNativeProps {
   @inline def IconFill:           ExternalComponentP[IconFillProps]           = importSTComponent(AntdIcons.IconFill)
   @inline def IconOutline:        ExternalComponentP[IconOutlineProps]        = importSTComponent(AntdIcons.IconOutline)
 
+  val antdActionSheet: ActionSheet.type = ActionSheet
+  val antdActionSheetOptions: ActionSheetIOSOptions.type = ActionSheetIOSOptions
   val antdToast: Toast.type = Toast
   val antdStrings: atAntDashDesignReactDashNativeStrings.type = atAntDashDesignReactDashNativeStrings
 
