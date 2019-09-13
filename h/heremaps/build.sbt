@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "heremaps"
-version := "3.0-dt-20190719Z-151a73"
+version := "3.0-dt-20190911Z-08930d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

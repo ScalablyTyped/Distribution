@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // graphics
+/**
+  * A GraphicsData object.
+  */
 @JSGlobal("PIXI.GraphicsData")
 @js.native
 class GraphicsData protected () extends js.Object {
@@ -148,11 +151,19 @@ class GraphicsData protected () extends js.Object {
   var shape: Circle | Rectangle | Ellipse | Polygon | RoundedRectangle | js.Any = js.native
   var `type`: js.UndefOr[Double] = js.native
   def addHole(shape: js.Any): Unit = js.native
+  /**
+    * Adds a hole to the shape.
+    *
+    * @param shape - The shape of the hole.
+    */
   def addHole(shape: Circle): Unit = js.native
   def addHole(shape: Ellipse): Unit = js.native
   def addHole(shape: Polygon): Unit = js.native
   def addHole(shape: Rectangle): Unit = js.native
   def addHole(shape: RoundedRectangle): Unit = js.native
+  /**
+    * Destroys the Graphics data.
+    */
   def destroy(): Unit = js.native
   def destroy(options: Boolean): Unit = js.native
   def destroy(options: DestroyOptions): Unit = js.native

@@ -4,6 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Various blend modes supported by PIXI.
+  *
+  * IMPORTANT - The WebGL renderer only supports the NORMAL, ADD, MULTIPLY and SCREEN blend modes.
+  * Anything else will silently act like NORMAL.
+  */
 @JSGlobal("PIXI.BLEND_MODES")
 @js.native
 object BLEND_MODES extends js.Object {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for webidl2
 
-Typings are for version 10.2
+Typings are for version 23.8
 
 ## Library description:
 A WebIDL Parser

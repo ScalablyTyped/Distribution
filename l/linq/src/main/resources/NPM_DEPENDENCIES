@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "linq" : "3.2.0"
+      "linq" : "3.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "linq" : "3.2.0"
+      "linq" : "3.2.1"
     }
   ],
   "compile-devDependencies" : [

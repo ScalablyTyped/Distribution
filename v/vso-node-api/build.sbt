@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "vso-node-api"
-version := "6.5.0-0e2e2f"
+version := "6.5.0-b5bafc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "typed-rest-client" % "1.5.0-a36ff4")
+  "org.scalablytyped" %%% "typed-rest-client" % "1.5.0-4806f1")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

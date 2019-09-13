@@ -1,7 +1,6 @@
 package typings.nock.nockMod
 
 import typings.nock.Fn_Uri
-import typings.nock.Fn_Value
 import typings.node.NodeJSNs.EventEmitter
 import typings.std.Date
 import typings.std.RegExp
@@ -28,7 +27,7 @@ trait Scope extends EventEmitter {
   @JSName("put")
   var put_Original: InterceptFunction = js.native
   def activeMocks(): js.Array[String] = js.native
-  def defaultReplyHeaders(headers: HttpHeaders): this.type = js.native
+  def defaultReplyHeaders(headers: ReplyHeaders): this.type = js.native
   def delete(uri: String): Interceptor = js.native
   def delete(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def delete(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
@@ -72,9 +71,7 @@ trait Scope extends EventEmitter {
   def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
   def isDone(): Boolean = js.native
   def log(out: js.Function2[/* message */ js.Any, /* repeated */ js.Any, Unit]): this.type = js.native
-  def matchHeader(name: String, value: String): this.type = js.native
-  def matchHeader(name: String, value: Fn_Value): this.type = js.native
-  def matchHeader(name: String, value: RegExp): this.type = js.native
+  def matchHeader(name: String, value: RequestHeaderMatcher): this.type = js.native
   def merge(uri: String): Interceptor = js.native
   def merge(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def merge(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
@@ -127,6 +124,5 @@ trait Scope extends EventEmitter {
   def replyDate(): this.type = js.native
   def replyDate(d: Date): this.type = js.native
   def restore(): Unit = js.native
-  def shouldPersist(): Boolean = js.native
 }
 

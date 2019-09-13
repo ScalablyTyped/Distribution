@@ -27,6 +27,12 @@ object webidl2Strings {
   sealed trait const extends js.Object
   
   @js.native
+  sealed trait constructor extends js.Object
+  
+  @js.native
+  sealed trait deleter extends js.Object
+  
+  @js.native
   sealed trait dictionary extends js.Object
   
   @js.native
@@ -39,13 +45,13 @@ object webidl2Strings {
   sealed trait float extends js.Object
   
   @js.native
+  sealed trait getter extends js.Object
+  
+  @js.native
   sealed trait identifier extends js.Object
   
   @js.native
   sealed trait `identifier-list` extends js.Object
-  
-  @js.native
-  sealed trait implements extends js.Object
   
   @js.native
   sealed trait includes extends js.Object
@@ -61,9 +67,6 @@ object webidl2Strings {
   
   @js.native
   sealed trait iterable extends js.Object
-  
-  @js.native
-  sealed trait legacyiterable extends js.Object
   
   @js.native
   sealed trait maplike extends js.Object
@@ -90,7 +93,16 @@ object webidl2Strings {
   sealed trait setlike extends js.Object
   
   @js.native
+  sealed trait setter extends js.Object
+  
+  @js.native
+  sealed trait static extends js.Object
+  
+  @js.native
   sealed trait string extends js.Object
+  
+  @js.native
+  sealed trait stringifier extends js.Object
   
   @js.native
   sealed trait typedef extends js.Object
@@ -113,6 +125,10 @@ object webidl2Strings {
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline
+  def constructor: constructor = "constructor".asInstanceOf[constructor]
+  @scala.inline
+  def deleter: deleter = "deleter".asInstanceOf[deleter]
+  @scala.inline
   def dictionary: dictionary = "dictionary".asInstanceOf[dictionary]
   @scala.inline
   def enum: enum = "enum".asInstanceOf[enum]
@@ -121,11 +137,11 @@ object webidl2Strings {
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   @scala.inline
+  def getter: getter = "getter".asInstanceOf[getter]
+  @scala.inline
   def identifier: identifier = "identifier".asInstanceOf[identifier]
   @scala.inline
   def `identifier-list`: `identifier-list` = "identifier-list".asInstanceOf[`identifier-list`]
-  @scala.inline
-  def implements: implements = "implements".asInstanceOf[implements]
   @scala.inline
   def includes: includes = "includes".asInstanceOf[includes]
   @scala.inline
@@ -136,8 +152,6 @@ object webidl2Strings {
   def `interface mixin`: `interface mixin` = "interface mixin".asInstanceOf[`interface mixin`]
   @scala.inline
   def iterable: iterable = "iterable".asInstanceOf[iterable]
-  @scala.inline
-  def legacyiterable: legacyiterable = "legacyiterable".asInstanceOf[legacyiterable]
   @scala.inline
   def maplike: maplike = "maplike".asInstanceOf[maplike]
   @scala.inline
@@ -155,7 +169,13 @@ object webidl2Strings {
   @scala.inline
   def setlike: setlike = "setlike".asInstanceOf[setlike]
   @scala.inline
+  def setter: setter = "setter".asInstanceOf[setter]
+  @scala.inline
+  def static: static = "static".asInstanceOf[static]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def stringifier: stringifier = "stringifier".asInstanceOf[stringifier]
   @scala.inline
   def typedef: typedef = "typedef".asInstanceOf[typedef]
   @scala.inline

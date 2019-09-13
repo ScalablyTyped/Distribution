@@ -82,7 +82,7 @@ class FormGroup protected () extends AbstractControl {
     * Reports false for disabled controls. If you'd like to check for existence in the group
     * only, use {@link AbstractControl#get get} instead.
     *
-    * @param name The control name to check for existence in the collection
+    * @param controlName The control name to check for existence in the collection
     *
     * @returns false for disabled controls, true otherwise.
     */

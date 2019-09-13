@@ -13,7 +13,7 @@ trait WebCall[T] extends js.Object {
 object WebCall {
   @scala.inline
   def apply[T](headers: WebHttpHeaders, params: T, url: WebUrl): WebCall[T] = {
-    val __obj = js.Dynamic.literal(headers = headers, params = params.asInstanceOf[js.Any], url = url)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], url = url)
   
     __obj.asInstanceOf[WebCall[T]]
   }

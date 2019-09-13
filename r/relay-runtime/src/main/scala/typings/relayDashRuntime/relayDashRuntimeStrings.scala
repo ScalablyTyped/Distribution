@@ -12,6 +12,9 @@ object relayDashRuntimeStrings {
   sealed trait CRITICAL extends js.Object
   
   @js.native
+  sealed trait ClientExtension extends js.Object
+  
+  @js.native
   sealed trait Defer extends js.Object
   
   @js.native
@@ -106,6 +109,8 @@ object relayDashRuntimeStrings {
   
   @scala.inline
   def CRITICAL: CRITICAL = "CRITICAL".asInstanceOf[CRITICAL]
+  @scala.inline
+  def ClientExtension: ClientExtension = "ClientExtension".asInstanceOf[ClientExtension]
   @scala.inline
   def Defer: Defer = "Defer".asInstanceOf[Defer]
   @scala.inline

@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Creates a Canvas element of the given size.
+  */
 @JSGlobal("PIXI.CanvasRenderTarget")
 @js.native
 class CanvasRenderTarget protected () extends js.Object {

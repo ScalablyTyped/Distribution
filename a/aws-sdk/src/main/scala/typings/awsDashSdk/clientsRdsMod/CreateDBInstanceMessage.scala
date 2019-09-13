@@ -46,7 +46,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var DBName: js.UndefOr[String] = js.undefined
   /**
-    * The name of the DB parameter group to associate with this DB instance. If this argument is omitted, the default DBParameterGroup for the specified engine is used. Constraints:   Must be 1 to 255 letters, numbers, or hyphens.   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens  
+    * The name of the DB parameter group to associate with this DB instance. If you do not specify a value for DBParameterGroupName, then the default DBParameterGroup for the specified DB engine is used. Constraints:   Must be 1 to 255 letters, numbers, or hyphens.   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens  
     */
   var DBParameterGroupName: js.UndefOr[String] = js.undefined
   /**

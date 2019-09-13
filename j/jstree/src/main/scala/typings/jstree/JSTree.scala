@@ -1,5 +1,6 @@
 package typings.jstree
 
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,6 +8,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JSTree extends JQuery {
+  /**
+    * example usage in angular:
+    * public sourceTreeNativeElement: JSTree;
+    * this.sourceTreeNativeElement = $(this.sourceTree.nativeElement) as JSTree;
+    * this.sourceTreeNativeElement.jstree(true).settings.core.data = [];
+    * this.sourceTreeNativeElement.jstree(true).refresh();
+    */
+  var settings: js.UndefOr[JSTreeStaticDefaults] = js.native
   /**
     * appends HTML content to the tree. Used internally.
     * @private
@@ -29,15 +38,18 @@ trait JSTree extends JQuery {
     */
   def _append_json_data(dom: js.Any, data: String, cb: js.Function1[/* flag */ Boolean, Unit], force_processing: Boolean): Unit = js.native
   /**
-    * Unchecks a node and all its descendants. This function does NOT affect hidden and disabled nodes (or their descendants).
+    * Cascades checked state to a node and all its descendants. This function does NOT affect hidden and disabled nodes (or their descendants).
     * However if these unaffected nodes are already selected their ids will be included in the returned array.
-    * @param id
-    * @param checkedState
+    * @private
+    * @param {string} id the node ID
+    * @param {bool} checkedState should the nodes be checked or not
     * @returns {Array} Array of all node id's (in this tree branch) that are checked.
     */
-  def _cascade_new_checked_state(id: String, checkedState: String): js.Array[String] = js.native
+  def _cascade_new_checked_state(id: String, checkedState: Boolean): js.Array[String] = js.native
   /**
-    * Create prototype node
+    * Create a prototype node
+    * @name _create_prototype_node()
+    * @return {DOMElement}
     */
   def _create_prototype_node(): HTMLElement = js.native
   /**
@@ -48,6 +60,7 @@ trait JSTree extends JQuery {
     * @return {DOMElement}
     */
   def _firstChild(dom: HTMLElement): HTMLElement = js.native
+  def _kbevent_to_func(e: Event): js.Function1[/* e */ Event, Unit] = js.native
   /**
     * handles the actual loading of a node. Used only internally.
     * @private
@@ -59,7 +72,7 @@ trait JSTree extends JQuery {
   def _load_node(obj: js.Any): Boolean = js.native
   def _load_node(obj: js.Any, callback: js.Function1[/* status */ Boolean, Unit]): Boolean = js.native
   /**
-    * load an array of nodes (will also load unavailable nodes as soon as the appear in the structure). Used internally.
+    * load an array of nodes (will also load unavailable nodes as soon as they appear in the structure). Used internally.
     * @private
     * @name _load_nodes(nodes [, callback])
     * @param  {array} nodes
@@ -99,7 +112,8 @@ trait JSTree extends JQuery {
     */
   def _open_to(obj: js.Any): Unit = js.native
   /**
-    * parses a node from a JSON object (used when dealing with flat data, which has no nesting of children, but has id and parent properties) and appends it to the in memory tree model. Used internally.
+    * parses a node from a JSON object (used when dealing with flat data, which has no nesting of children,
+    * but has id and parent properties) and appends it to the in memory tree model. Used internally.
     * @private
     * @name _parse_model_from_flat_json(d [, p, ps])
     * @param  {Object} d the JSON object to parse
@@ -169,9 +183,6 @@ trait JSTree extends JQuery {
     * @private
     */
   def _show_contextmenu(obj: js.Any, x: Double, y: Double, i: Double): Unit = js.native
-  /**
-    * checkbox plugin
-    */
   /**
     * set the undetermined state where and if necessary. Used internally.
     * @private
@@ -247,7 +258,7 @@ trait JSTree extends JQuery {
     */
   def clear_state(): Unit = js.native
   /**
-    * closes all nodes within a node (or the tree), revaling their children
+    * closes all nodes within a node (or the tree), revealing their children
     * @name close_all([obj, animation])
     * @param {mixed} obj the node to close recursively, omit to close all nodes in the tree
     * @param {Number} animation the animation duration in milliseconds when closing the nodes, the default is no animation
@@ -266,6 +277,18 @@ trait JSTree extends JQuery {
     */
   def close_node(obj: js.Any): Unit = js.native
   def close_node(obj: js.Any, animation: js.Any): Unit = js.native
+  /**
+    * ### Conditionalclose plugin
+    *
+    * This plugin allows defining a callback to allow or deny node close by user input (close node method).
+    */
+  def conditionalclose(options: js.Any, parent: js.Any): js.Any = js.native
+  /**
+    * ### Conditionalselect plugin
+    *
+    * This plugin allows defining a callback to allow or deny node selection by user input (activate node method).
+    */
+  def conditionalselect(options: js.Any, parent: js.Any): js.Any = js.native
   /**
     * copy a node (a later call to `paste(obj)` would copy the node)
     * @name copy(obj)
@@ -408,8 +431,10 @@ trait JSTree extends JQuery {
     * put a node in edit mode (input field to rename the node)
     * @name edit(obj [, default_text, callback])
     * @param  {mixed} obj
-  	* @param  {String} default_text the text to populate the input with (if omitted or set to a non-string value the node's text value is used)
-  	* @param  {Function} callback a function to be called once the text box is blurred, it is called in the instance's scope and receives the node, a status parameter (true if the rename is successful, false otherwise) and a boolean indicating if the user cancelled the edit. You can access the node's title using .text
+    * @param  {String} default_text the text to populate the input with (if omitted or set to a non-string value the node's text value is used)
+    * @param  {Function} callback a function to be called once the text box is blurred,
+    * it is called in the instance's scope and receives the node, a status parameter (true if the rename is successful, false otherwise)
+    * and a boolean indicating if the user cancelled the edit. You can access the node's title using .text
     */
   def edit(obj: js.Any): Unit = js.native
   def edit(obj: js.Any, default_text: String): Unit = js.native
@@ -420,7 +445,7 @@ trait JSTree extends JQuery {
   ): Unit = js.native
   /**
     * enable a node's checkbox
-    * @name disable_checkbox(obj)
+    * @name enable_checkbox(obj)
     * @param {mixed} obj an array can be used too
     * @trigger enable_checkbox.jstree
     * @plugin checkbox
@@ -465,7 +490,10 @@ trait JSTree extends JQuery {
   def get_checked(full: js.Any): js.Array[_] = js.native
   /**
     * Gets ids of nodes selected in branch (of tree) specified by id (does not include the node specified by id)
-    * @param id
+    * @name get_checked_descendants(obj)
+    * @param {string} id the node ID
+    * @return {Array} array of IDs
+    * @plugin checkbox
     */
   def get_checked_descendants(id: String): js.Array[String] = js.native
   /**
@@ -649,6 +677,17 @@ trait JSTree extends JQuery {
   def get_type(obj: js.Any): js.Any = js.native
   def get_type(obj: js.Any, rules: js.Any): js.Any = js.native
   /**
+    * checkbox plugin
+    */
+  /**
+    * get an array of all nodes whose state is "undetermined"
+    * @name get_undetermined([full])
+    * @param  {boolean} full: if set to `true` the returned array will consist of the full node objects, otherwise - only IDs will be returned
+    * @return {Array}
+    * @plugin checkbox
+    */
+  def get_undetermined(full: Boolean): js.Array[_] = js.native
+  /**
     * hides all nodes
     * @name hide_all()
     * @trigger hide_all.jstree
@@ -682,12 +721,12 @@ trait JSTree extends JQuery {
     */
   def hide_icons(): Unit = js.native
   /**
-  	* hides a node - it is still in the structure but will not be visible
-  	* @name hide_node(obj)
-  	* @param {mixed} obj the node to hide
-  	* @param {Boolean} skip_redraw internal parameter controlling if redraw is called
-  	* @trigger hide_node.jstree
-  	*/
+    * hides a node - it is still in the structure but will not be visible
+    * @name hide_node(obj)
+    * @param {mixed} obj the node to hide
+    * @param {Boolean} skip_redraw internal parameter controlling if redraw is called
+    * @trigger hide_node.jstree
+    */
   def hide_node(obj: js.Any, skip_redraw: Boolean): Boolean = js.native
   /**
     * hides the striped background on the container
@@ -859,7 +898,7 @@ trait JSTree extends JQuery {
     origin: Boolean
   ): Unit = js.native
   /**
-    * opens all nodes within a node (or the tree), revaling their children. If the node is not loaded it will be loaded and opened once ready.
+    * opens all nodes within a node (or the tree), revealing their children. If the node is not loaded it will be loaded and opened once ready.
     * @name open_all([obj, animation, original_obj])
     * @param {mixed} obj the node to open recursively, omit to open all nodes in the tree
     * @param {Number} animation the animation duration in milliseconds when opening the nodes, the default is no animation
@@ -871,7 +910,7 @@ trait JSTree extends JQuery {
   def open_all(obj: js.Any, animation: Double): Unit = js.native
   def open_all(obj: js.Any, animation: Double, original_obj: js.Any): Unit = js.native
   /**
-    * opens a node, revaling its children. If the node is not loaded it will be loaded and opened once ready.
+    * opens a node, revealing its children. If the node is not loaded it will be loaded and opened once ready.
     * @name open_node(obj [, callback, animation])
     * @param {mixed} obj the node to open
     * @param {Function} callback a function to execute once the node is opened

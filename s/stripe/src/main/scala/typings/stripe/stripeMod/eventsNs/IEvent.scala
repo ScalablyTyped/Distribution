@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 
 trait IEvent extends IResourceObject {
   /**
+    * The connected account that originated the event.
+    * CONNECT ONLY
+    */
+  var account: js.UndefOr[String] = js.undefined
+  /**
     * The Stripe API version used to render data.
     * Note: this property is populated for events on or after October 31, 2014.
     */
@@ -52,11 +57,13 @@ object IEvent {
     `object`: event,
     pending_webhooks: Double,
     request: Anon_Id,
-    `type`: String
+    `type`: String,
+    account: String = null
   ): IEvent = {
     val __obj = js.Dynamic.literal(api_version = api_version, created = created, data = data, id = id, livemode = livemode, pending_webhooks = pending_webhooks, request = request)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)
+    if (account != null) __obj.updateDynamic("account")(account)
     __obj.asInstanceOf[IEvent]
   }
 }

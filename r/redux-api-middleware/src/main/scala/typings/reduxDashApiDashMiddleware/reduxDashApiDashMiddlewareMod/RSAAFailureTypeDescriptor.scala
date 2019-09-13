@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RSAAFailureTypeDescriptor[State, Payload, Meta] extends js.Object {
   var meta: js.UndefOr[
-    (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ js.Any, Meta]) | Meta
+    (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response, Meta]) | Meta
   ] = js.undefined
   var payload: js.UndefOr[
     (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response, Payload]) | Payload
@@ -19,7 +19,7 @@ object RSAAFailureTypeDescriptor {
   @scala.inline
   def apply[State, Payload, Meta](
     `type`: String | js.Symbol,
-    meta: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ js.Any, Meta]) | Meta = null,
+    meta: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response, Meta]) | Meta = null,
     payload: (js.Function3[/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response, Payload]) | Payload = null
   ): RSAAFailureTypeDescriptor[State, Payload, Meta] = {
     val __obj = js.Dynamic.literal()

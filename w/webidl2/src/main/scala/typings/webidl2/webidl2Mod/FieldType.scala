@@ -9,7 +9,7 @@ trait FieldType extends js.Object {
   /** A default value, absent if there is none. */
   var default: ValueDescription | Null
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** An IDL Type describing what field's type. */
   var idlType: IDLTypeDescription
   /** The name of the field. */
@@ -20,7 +20,7 @@ trait FieldType extends js.Object {
 object FieldType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
     `type`: field,

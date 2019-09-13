@@ -18,25 +18,13 @@ trait Cache extends js.Object {
   def set_T_Unit[T](key: String, value: T, options: CachingConfig): Unit = js.native
   @JSName("set")
   def set_T_Unit[T](key: String, value: T, ttl: Double): Unit = js.native
-  def wrap[T](
-    key: String,
-    wrapper: js.Function1[/* callback */ js.Function2[/* error */ js.Any, /* result */ T, Unit], Unit]
-  ): js.Promise[_] = js.native
-  def wrap[T](
-    key: String,
-    wrapper: js.Function1[/* callback */ js.Function2[/* error */ js.Any, /* result */ T, Unit], Unit],
-    callback: js.Function2[/* error */ js.Any, /* result */ T, Unit]
-  ): Unit = js.native
-  def wrap[T](
-    key: String,
-    wrapper: js.Function1[/* callback */ js.Function2[/* error */ js.Any, /* result */ T, Unit], _],
-    options: CachingConfig
-  ): js.Promise[_] = js.native
-  def wrap[T](
-    key: String,
-    wrapper: js.Function1[/* callback */ js.Function2[/* error */ js.Any, /* result */ T, Unit], Unit],
-    options: CachingConfig,
-    callback: js.Function2[/* error */ js.Any, /* result */ T, Unit]
-  ): Unit = js.native
+  // Because the library accepts multiple keys as arguments but not as an array and rather as individual parameters
+  // of the function, the type definition had to be changed to this rather than specific ones
+  // actual definitions would looks like this (impossible in typescript):
+  // wrap<T>(...keys: string[], work: (callback: (error: any, result: T) => void) => void, options: CachingConfig, callback: (error: any, result: T) => void): void
+  // wrap<T>(...keys: string[], work: (callback: (error: any, result: T) => void) => void, callback: (error: any, result: T) => void): void
+  // wrap<T>(...keys: string[], work: (callback: (error: any, result: T) => void) => void, options: CachingConfig): void
+  // wrap<T>(...keys: string[], work: (callback: (error: any, result: T) => void) => void): Promise<any>;
+  def wrap[T](args: WrapArgsType[T]*): js.Promise[_] = js.native
 }
 

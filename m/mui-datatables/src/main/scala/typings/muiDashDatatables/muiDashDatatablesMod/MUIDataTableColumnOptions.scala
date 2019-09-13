@@ -31,7 +31,7 @@ trait MUIDataTableColumnOptions extends js.Object {
   var empty: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterList: js.UndefOr[js.Array[String]] = js.undefined
-  var filterOptions: js.UndefOr[js.Array[String]] = js.undefined
+  var filterOptions: js.UndefOr[MUIDataTableFilterOptions] = js.undefined
   var hint: js.UndefOr[String] = js.undefined
   var print: js.UndefOr[Boolean] = js.undefined
   var searchable: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +40,7 @@ trait MUIDataTableColumnOptions extends js.Object {
   ] = js.undefined
   var sort: js.UndefOr[Boolean] = js.undefined
   var sortDirection: js.UndefOr[asc | desc] = js.undefined
+  var viewColumns: js.UndefOr[Boolean] = js.undefined
 }
 
 object MUIDataTableColumnOptions {
@@ -52,13 +53,14 @@ object MUIDataTableColumnOptions {
     empty: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterList: js.Array[String] = null,
-    filterOptions: js.Array[String] = null,
+    filterOptions: MUIDataTableFilterOptions = null,
     hint: String = null,
     print: js.UndefOr[Boolean] = js.undefined,
     searchable: js.UndefOr[Boolean] = js.undefined,
     setCellProps: (/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double) => js.Object = null,
     sort: js.UndefOr[Boolean] = js.undefined,
-    sortDirection: asc | desc = null
+    sortDirection: asc | desc = null,
+    viewColumns: js.UndefOr[Boolean] = js.undefined
   ): MUIDataTableColumnOptions = {
     val __obj = js.Dynamic.literal()
     if (customBodyRender != null) __obj.updateDynamic("customBodyRender")(js.Any.fromFunction3(customBodyRender))
@@ -75,6 +77,7 @@ object MUIDataTableColumnOptions {
     if (setCellProps != null) __obj.updateDynamic("setCellProps")(js.Any.fromFunction3(setCellProps))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewColumns)) __obj.updateDynamic("viewColumns")(viewColumns)
     __obj.asInstanceOf[MUIDataTableColumnOptions]
   }
 }

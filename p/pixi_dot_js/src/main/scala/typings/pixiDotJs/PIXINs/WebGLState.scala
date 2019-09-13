@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A WebGL state machines
+  */
 @JSGlobal("PIXI.WebGLState")
 @js.native
 class WebGLState protected () extends js.Object {

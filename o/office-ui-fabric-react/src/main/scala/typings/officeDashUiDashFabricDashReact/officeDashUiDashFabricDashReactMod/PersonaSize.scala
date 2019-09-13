@@ -14,6 +14,7 @@ object PersonaSize extends js.Object {
   /* 4 */ val regular: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.regular with Double = js.native
   /* 9 */ val size10: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.size10 with Double = js.native
   /* 15 */ val size100: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.size100 with Double = js.native
+  /* 18 */ val size120: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.size120 with Double = js.native
   /* 8 */ val size16: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.size16 with Double = js.native
   /* 10 */ val size24: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.size24 with Double = js.native
   /* 7 */ val size28: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize.size28 with Double = js.native

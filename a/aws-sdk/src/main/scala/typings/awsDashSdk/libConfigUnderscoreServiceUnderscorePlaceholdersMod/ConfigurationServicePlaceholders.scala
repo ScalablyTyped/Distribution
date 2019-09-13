@@ -197,6 +197,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var workdocs: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.ClientConfiguration] = js.native
   var worklink: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.ClientConfiguration] = js.native
   var workmail: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.ClientConfiguration] = js.native
+  var workmailmessageflow: js.UndefOr[typings.awsDashSdk.clientsWorkmailmessageflowMod.ClientConfiguration] = js.native
   var workspaces: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.ClientConfiguration] = js.native
   var xray: js.UndefOr[typings.awsDashSdk.clientsXrayMod.ClientConfiguration] = js.native
 }

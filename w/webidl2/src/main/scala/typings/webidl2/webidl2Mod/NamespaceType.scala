@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NamespaceType extends IDLRootType {
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** An array of namespace members (attributes, operations). Empty if there are none. */
   var members: js.Array[IDLNamespaceMemberType]
   /** The enum's name. */
@@ -20,7 +20,7 @@ trait NamespaceType extends IDLRootType {
 object NamespaceType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[IDLNamespaceMemberType],
     name: String,
     partial: Boolean,

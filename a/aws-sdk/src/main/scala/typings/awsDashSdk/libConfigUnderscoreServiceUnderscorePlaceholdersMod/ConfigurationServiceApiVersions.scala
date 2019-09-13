@@ -195,6 +195,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var workdocs: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.apiVersion] = js.undefined
   var worklink: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.apiVersion] = js.undefined
   var workmail: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.apiVersion] = js.undefined
+  var workmailmessageflow: js.UndefOr[typings.awsDashSdk.clientsWorkmailmessageflowMod.apiVersion] = js.undefined
   var workspaces: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.apiVersion] = js.undefined
   var xray: js.UndefOr[typings.awsDashSdk.clientsXrayMod.apiVersion] = js.undefined
 }
@@ -391,6 +392,7 @@ object ConfigurationServiceApiVersions {
     workdocs: typings.awsDashSdk.clientsWorkdocsMod.apiVersion = null,
     worklink: typings.awsDashSdk.clientsWorklinkMod.apiVersion = null,
     workmail: typings.awsDashSdk.clientsWorkmailMod.apiVersion = null,
+    workmailmessageflow: typings.awsDashSdk.clientsWorkmailmessageflowMod.apiVersion = null,
     workspaces: typings.awsDashSdk.clientsWorkspacesMod.apiVersion = null,
     xray: typings.awsDashSdk.clientsXrayMod.apiVersion = null
   ): ConfigurationServiceApiVersions = {
@@ -584,6 +586,7 @@ object ConfigurationServiceApiVersions {
     if (workdocs != null) __obj.updateDynamic("workdocs")(workdocs.asInstanceOf[js.Any])
     if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
     if (workmail != null) __obj.updateDynamic("workmail")(workmail.asInstanceOf[js.Any])
+    if (workmailmessageflow != null) __obj.updateDynamic("workmailmessageflow")(workmailmessageflow.asInstanceOf[js.Any])
     if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces.asInstanceOf[js.Any])
     if (xray != null) __obj.updateDynamic("xray")(xray.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationServiceApiVersions]

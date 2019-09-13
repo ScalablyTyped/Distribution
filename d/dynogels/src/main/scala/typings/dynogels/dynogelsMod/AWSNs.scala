@@ -1979,6 +1979,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class WorkMailMessageFlow ()
+    extends typings.awsDashSdk.awsDashSdkMod.WorkMailMessageFlow {
+    def this(options: typings.awsDashSdk.clientsWorkmailmessageflowMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class WorkSpaces ()
     extends typings.awsDashSdk.awsDashSdkMod.WorkSpaces {
     def this(options: typings.awsDashSdk.clientsWorkspacesMod.ClientConfiguration) = this()

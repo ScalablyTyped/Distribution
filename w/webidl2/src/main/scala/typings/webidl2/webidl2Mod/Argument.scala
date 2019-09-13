@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait Argument extends js.Object {
   var default: ValueDescription
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** An IDL Type describing the type of the argument. */
   var idlType: IDLTypeDescription
   /** The argument's name. */
@@ -22,7 +22,7 @@ object Argument {
   @scala.inline
   def apply(
     default: ValueDescription,
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
     optional: Boolean,

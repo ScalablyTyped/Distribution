@@ -3575,7 +3575,6 @@
 | 0.646877737476681 | [archive-extensions](./a/archive-extensions) | List of archive file extensions
 | 0.6468381932682513 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.6467846940570077 | [react-native-uuid](./r/react-native-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI
-| 0.6467670976593676 | [ts3-nodejs-library](./t/ts3-nodejs-library) | TeamSpeak3 Server Query API
 | 0.6467313233493827 | [hasher](./h/hasher) | Hasher is a set of JavaScript functions to control
 | 0.6467061753881551 | [plugapi](./p/plugapi) | Generic API for building plug.dj bots
 | 0.6466929619037012 | [graphql-resolve-batch](./g/graphql-resolve-batch) | A GraphQL batching model which groups execution by
@@ -5276,6 +5275,7 @@
 | 0.44368653818793796 | [vso-node-api](./v/vso-node-api) | Node client for Visual Studio Online/TFS REST APIs
 | 0.44365557110929393 | [material__top-app-bar](./m/material__top-app-bar) | The Material Components for the web top app bar co
 | 0.4434746465919396 | [mapbox-gl-leaflet](./m/mapbox-gl-leaflet) | binding from mapbox gl to the leaflet api
+| 0.44323117854011357 | [ssdeep](./s/ssdeep) | Node.js wrapper for the ssdeep fuzzy hashing libra
 | 0.44315966062237855 | [forms](./f/forms) | An easy way to create, parse, and validate forms
 | 0.4431354552673281 | [angular-localforage](./a/angular-localforage) | Angular service & directive for https://github.com
 | 0.44309287187342417 | [knockout-secure-binding](./k/knockout-secure-binding) | Knockout Secure Binding =======================
@@ -6437,6 +6437,7 @@
 | 0.26873754481449896 | [deluge](./d/deluge) | add magnet links and torrents to deluge
 | 0.2687082943288279 | [gzip-js](./g/gzip-js) | GZIP in pure JavaScript (works in the browser)
 | 0.2686700881056369 | [mu2](./m/mu2) | A Mustache template engine for Node.js
+| 0.2685666746260663 | [npm-cache-filename](./n/npm-cache-filename) | Given a cache folder and url, return the appropria
 | 0.2685428778382153 | [difflib](./d/difflib) | text diff library ported from Python's difflib mod
 | 0.2685036582172887 | [gapi](./g/gapi) | Node implementation of Google's JavaScript Library
 | 0.26847969023979174 | [swagger-ui-dist](./s/swagger-ui-dist) | -

@@ -22,7 +22,7 @@ trait CreateLoadBalancerInput extends js.Object {
     */
   var SecurityGroups: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SecurityGroups] = js.undefined
   /**
-    * The IDs of the public subnets. You can specify only one subnet per Availability Zone. You must specify either subnets or subnet mappings. [Application Load Balancers] You must specify subnets from at least two Availability Zones. You cannot specify Elastic IP addresses for your subnets. [Network Load Balancers] You can specify subnets from one or more Availability Zones. You can specify one Elastic IP address per subnet.
+    * The IDs of the public subnets. You can specify only one subnet per Availability Zone. You must specify either subnets or subnet mappings. [Application Load Balancers] You must specify subnets from at least two Availability Zones. You cannot specify Elastic IP addresses for your subnets. [Network Load Balancers] You can specify subnets from one or more Availability Zones. You can specify one Elastic IP address per subnet if you need static IP addresses for your load balancer.
     */
   var SubnetMappings: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SubnetMappings] = js.undefined
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-geocoder"
-version := "3.19-dt-20190429Z-8ae665"
+version := "3.24-dt-20190911Z-90e5aa"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

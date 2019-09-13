@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "xml-crypto"
-version := "1.4-dt-20190904Z-ecf0a9"
+version := "1.4-dt-20190904Z-c5e737"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "xpath" % "0.0.27-0af393")
 publishArtifact in packageDoc := false

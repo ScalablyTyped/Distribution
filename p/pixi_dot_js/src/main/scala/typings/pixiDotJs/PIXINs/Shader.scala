@@ -8,6 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // shader
+/**
+  * Wrapper class, webGL Shader for Pixi.
+  * Adds precision string if vertexSrc or fragmentSrc have no mention of it.
+  */
 @JSGlobal("PIXI.Shader")
 @js.native
 class Shader protected () extends GLShader {

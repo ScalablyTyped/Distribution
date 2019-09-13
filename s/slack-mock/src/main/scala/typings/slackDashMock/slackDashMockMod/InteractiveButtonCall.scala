@@ -21,7 +21,7 @@ object InteractiveButtonCall {
     `type`: InteractiveButtonCallType,
     url: InteractiveButtonUrl
   ): InteractiveButtonCall[T] = {
-    val __obj = js.Dynamic.literal(headers = headers, params = params.asInstanceOf[js.Any], statusCode = statusCode, url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], statusCode = statusCode, url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InteractiveButtonCall[T]]
   }

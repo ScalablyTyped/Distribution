@@ -31,7 +31,8 @@ trait JSTreeStaticDefaultsCoreThemes extends js.Object {
     */
   var name: js.UndefOr[String] = js.undefined
   /**
-    * a boolean specifying if a reponsive version of the theme should kick in on smaller screens (if the theme supports it). Defaults to `false`.
+    * a boolean specifying if a reponsive version of the theme should kick in on smaller screens (if the theme supports it).
+    * Defaults to `false`.
     * @name $.jstree.defaults.core.themes.responsive
     */
   var responsive: js.UndefOr[Boolean] = js.undefined
@@ -41,7 +42,8 @@ trait JSTreeStaticDefaultsCoreThemes extends js.Object {
     */
   var stripes: js.UndefOr[Boolean] = js.undefined
   /**
-    * the URL of the theme's CSS file, leave this as `false` if you have manually included the theme CSS (recommended). You can set this to `true` too which will try to autoload the theme.
+    * the URL of the theme's CSS file, leave this as `false` if you have manually included the theme CSS (recommended).
+    * You can set this to `true` too which will try to autoload the theme.
     * @name $.jstree.defaults.core.themes.url
     */
   var url: js.UndefOr[String] = js.undefined

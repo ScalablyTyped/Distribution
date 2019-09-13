@@ -26,6 +26,10 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var DBInstanceIdentifier: String
   /**
+    * The name of the DB parameter group to associate with this DB instance. If you do not specify a value for DBParameterGroupName, then Amazon RDS uses the DBParameterGroup of source DB instance for a same region Read Replica, or the default DBParameterGroup for the specified DB engine for a cross region Read Replica. Constraints:   Must be 1 to 255 letters, numbers, or hyphens.   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens  
+    */
+  var DBParameterGroupName: js.UndefOr[String] = js.undefined
+  /**
     * Specifies a DB subnet group for the DB instance. The new DB instance is created in the VPC associated with the DB subnet group. If no DB subnet group is specified, then the new DB instance is not created in a VPC. Constraints:   Can only be specified if the source DB instance identifier specifies a DB instance in another AWS Region.   If supplied, must match the name of an existing DBSubnetGroup.   The specified DB subnet group must be in the same AWS Region in which the operation is running.   All Read Replicas in one AWS Region that are created from the same source DB instance must either:&gt;   Specify DB subnet groups from the same VPC. All these Read Replicas are created in the same VPC.   Not specify a DB subnet group. All these Read Replicas are created outside of any VPC.     Example: mySubnetgroup 
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
@@ -125,6 +129,7 @@ object CreateDBInstanceReadReplicaMessage {
     AvailabilityZone: String = null,
     CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
     DBInstanceClass: String = null,
+    DBParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
@@ -153,6 +158,7 @@ object CreateDBInstanceReadReplicaMessage {
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
+    if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)

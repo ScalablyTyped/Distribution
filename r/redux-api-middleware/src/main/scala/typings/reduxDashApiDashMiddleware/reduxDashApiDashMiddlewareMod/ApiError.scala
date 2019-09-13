@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-api-middleware", "ApiError")
 @js.native
-class ApiError[T /* <: js.Object */] protected () extends Error {
+class ApiError[T] protected () extends Error {
   def this(status: Double, statusText: String, response: T) = this()
   /* CompleteClass */
   override var message: String = js.native

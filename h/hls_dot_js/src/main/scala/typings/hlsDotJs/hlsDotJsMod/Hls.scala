@@ -1,6 +1,5 @@
 package typings.hlsDotJs.hlsDotJsMod
 
-import typings.std.AudioTrack
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

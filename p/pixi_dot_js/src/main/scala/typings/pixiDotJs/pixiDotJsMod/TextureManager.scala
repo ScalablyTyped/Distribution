@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Helper class to create a webGL Texture
+  */
 @JSImport("pixi.js", "TextureManager")
 @js.native
 class TextureManager protected ()

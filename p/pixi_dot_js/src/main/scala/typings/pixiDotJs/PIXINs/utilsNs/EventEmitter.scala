@@ -26,23 +26,23 @@ class EventEmitter () extends js.Object {
   /**
     * Calls each of the listeners registered for a given event.
     *
-    * @param {(string | symbol)} event The event name.
-    * @param {...*} args Arguments that are passed to registered listeners
-    * @returns {boolean} `true` if the event had listeners, else `false`.
+    * @param event The event name.
+    * @param args Arguments that are passed to registered listeners
+    * @returns `true` if the event had listeners, else `false`.
     */
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   /**
     * Return an array listing the events for which the emitter has registered listeners.
     *
-    * @returns {(string | symbol)[]}
+    * @returns
     */
   def eventNames(): js.Array[String | js.Symbol] = js.native
   /**
     * Return the listeners registered for a given event.
     *
     * @param {(string | symbol)} event The event name.
-    * @returns {Function[]}
+    * @returns
     */
   //tslint:disable-next-line:ban-types forbidden-types
   def listeners(event: String): js.Array[js.Function] = js.native
@@ -50,9 +50,9 @@ class EventEmitter () extends js.Object {
     * Check if there listeners for a given event.
     * If `exists` argument is not `true` lists listeners.
     *
-    * @param {(string | symbol)} event The event name.
-    * @param {boolean} exists Only check if there are listeners.
-    * @returns {boolean}
+    * @param event The event name.
+    * @param exists Only check if there are listeners.
+    * @returns
     */
   def listeners(event: String, exists: Boolean): Boolean = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
@@ -71,10 +71,10 @@ class EventEmitter () extends js.Object {
   /**
     * Add a listener for a given event.
     *
-    * @param {(string | symbol)} event The event name.
-    * @param {Function} fn The listener function.
-    * @param {*} [context=this] The context to invoke the listener with.
-    * @returns {EventEmitter} `this`.
+    * @param event The event name.
+    * @param fn The listener function.
+    * @param [context=this] The context to invoke the listener with.
+    * @returns `this`
     */
   def on(event: String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
   def on(event: String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
@@ -83,10 +83,10 @@ class EventEmitter () extends js.Object {
   /**
     * Add a one-time listener for a given event.
     *
-    * @param {(string | symbol)} event The event name.
-    * @param {Function} fn The listener function.
-    * @param {*} [context=this] The context to invoke the listener with.
-    * @returns {EventEmitter} `this`.
+    * @param event The event name.
+    * @param fn The listener function.
+    * @param [context=this] The context to invoke the listener with.
+    * @returns `this`
     */
   def once(event: String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
   def once(event: String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
@@ -95,8 +95,8 @@ class EventEmitter () extends js.Object {
   /**
     * Remove all listeners, or those of the specified event.
     *
-    * @param {(string | symbol)} event The event name.
-    * @returns {EventEmitter} `this`.
+    * @param event The event name.
+    * @returns `this`.
     */
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
@@ -104,11 +104,11 @@ class EventEmitter () extends js.Object {
   /**
     * Remove the listeners of a given event.
     *
-    * @param {(string | symbol)} event The event name.
-    * @param {Function} fn Only remove the listeners that match this function.
-    * @param {*} context Only remove the listeners that have this context.
-    * @param {boolean} once Only remove one-time listeners.
-    * @returns {EventEmitter} `this`.
+    * @param event The event name.
+    * @param fn Only remove the listeners that match this function.
+    * @param context Only remove the listeners that have this context.
+    * @param once Only remove one-time listeners.
+    * @returns `this`
     */
   def removeListener(event: String): this.type = js.native
   def removeListener(event: String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native

@@ -3,15 +3,17 @@ package typings.reactDashNavigationDashMaterialDashBottomDashTabs.reactDashNavig
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNavigation.reactDashNavigationMod.NavigationPathsConfig
+import typings.reactDashNavigationDashMaterialDashBottomDashTabs.reactDashNavigationDashMaterialDashBottomDashTabsStrings.history
 import typings.reactDashNavigationDashMaterialDashBottomDashTabs.reactDashNavigationDashMaterialDashBottomDashTabsStrings.initialRoute
 import typings.reactDashNavigationDashMaterialDashBottomDashTabs.reactDashNavigationDashMaterialDashBottomDashTabsStrings.none
+import typings.reactDashNavigationDashMaterialDashBottomDashTabs.reactDashNavigationDashMaterialDashBottomDashTabsStrings.order
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabConfig extends js.Object {
   var activeTintColor: js.UndefOr[String] = js.undefined
-  var backBehavior: js.UndefOr[initialRoute | none] = js.undefined
+  var backBehavior: js.UndefOr[initialRoute | order | history | none] = js.undefined
   var barStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var inactiveTintColor: js.UndefOr[String] = js.undefined
   var initialRouteName: js.UndefOr[String] = js.undefined
@@ -25,7 +27,7 @@ object TabConfig {
   @scala.inline
   def apply(
     activeTintColor: String = null,
-    backBehavior: initialRoute | none = null,
+    backBehavior: initialRoute | order | history | none = null,
     barStyle: StyleProp[ViewStyle] = null,
     inactiveTintColor: String = null,
     initialRouteName: String = null,

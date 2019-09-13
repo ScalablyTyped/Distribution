@@ -20,13 +20,13 @@ trait GetOrganizationConfigRuleDetailedStatusRequest extends js.Object {
   /**
     * The name of organization config rule for which you want status details for member accounts.
     */
-  var OrganizationConfigRuleName: StringWithCharLimit64
+  var OrganizationConfigRuleName: typings.awsDashSdk.clientsConfigserviceMod.OrganizationConfigRuleName
 }
 
 object GetOrganizationConfigRuleDetailedStatusRequest {
   @scala.inline
   def apply(
-    OrganizationConfigRuleName: StringWithCharLimit64,
+    OrganizationConfigRuleName: OrganizationConfigRuleName,
     Filters: StatusDetailFilters = null,
     Limit: js.UndefOr[CosmosPageLimit] = js.undefined,
     NextToken: String = null

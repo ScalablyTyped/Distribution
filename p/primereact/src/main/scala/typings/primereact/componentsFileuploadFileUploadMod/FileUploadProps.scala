@@ -1,6 +1,7 @@
 package typings.primereact.componentsFileuploadFileUploadMod
 
 import typings.primereact.Anon_Files
+import typings.primereact.Anon_FilesAny
 import typings.primereact.Anon_FilesOriginalEvent
 import typings.primereact.Anon_FormData
 import typings.primereact.Anon_OriginalEventProgress
@@ -15,6 +16,7 @@ trait FileUploadProps extends js.Object {
   var cancelLabel: js.UndefOr[String] = js.undefined
   var chooseLabel: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var customUpload: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var invalidFileSizeMessageDetail: js.UndefOr[String] = js.undefined
@@ -33,6 +35,7 @@ trait FileUploadProps extends js.Object {
   var onValidationFail: js.UndefOr[js.Function1[/* file */ File, Unit]] = js.undefined
   var previewWidth: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var uploadHandler: js.UndefOr[js.Function1[/* e */ Anon_FilesAny, Unit]] = js.undefined
   var uploadLabel: js.UndefOr[String] = js.undefined
   var url: js.UndefOr[String] = js.undefined
   var withCredentials: js.UndefOr[Boolean] = js.undefined
@@ -46,6 +49,7 @@ object FileUploadProps {
     cancelLabel: String = null,
     chooseLabel: String = null,
     className: String = null,
+    customUpload: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     invalidFileSizeMessageDetail: String = null,
@@ -64,6 +68,7 @@ object FileUploadProps {
     onValidationFail: /* file */ File => Unit = null,
     previewWidth: Int | Double = null,
     style: js.Object = null,
+    uploadHandler: /* e */ Anon_FilesAny => Unit = null,
     uploadLabel: String = null,
     url: String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
@@ -74,6 +79,7 @@ object FileUploadProps {
     if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
     if (chooseLabel != null) __obj.updateDynamic("chooseLabel")(chooseLabel)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(customUpload)) __obj.updateDynamic("customUpload")(customUpload)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)
     if (invalidFileSizeMessageDetail != null) __obj.updateDynamic("invalidFileSizeMessageDetail")(invalidFileSizeMessageDetail)
@@ -92,6 +98,7 @@ object FileUploadProps {
     if (onValidationFail != null) __obj.updateDynamic("onValidationFail")(js.Any.fromFunction1(onValidationFail))
     if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (uploadHandler != null) __obj.updateDynamic("uploadHandler")(js.Any.fromFunction1(uploadHandler))
     if (uploadLabel != null) __obj.updateDynamic("uploadLabel")(uploadLabel)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)

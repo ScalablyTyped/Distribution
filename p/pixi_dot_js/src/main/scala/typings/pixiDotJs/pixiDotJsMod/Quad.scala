@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Helper class to create a quad
+  */
 @JSImport("pixi.js", "Quad")
 @js.native
 class Quad protected ()

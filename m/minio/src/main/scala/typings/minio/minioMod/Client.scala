@@ -3,7 +3,9 @@ package typings.minio.minioMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.node.NodeJSNs.EventEmitter
+import typings.node.httpsMod.AgentOptions
 import typings.node.streamMod.Stream
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,6 +63,7 @@ class Client protected () extends js.Object {
   def listObjectsV2(bucketName: String): BucketStream[BucketItem] = js.native
   def listObjectsV2(bucketName: String, prefix: String): BucketStream[BucketItem] = js.native
   def listObjectsV2(bucketName: String, prefix: String, recursive: Boolean): BucketStream[BucketItem] = js.native
+  def listObjectsV2(bucketName: String, prefix: String, recursive: Boolean, startAfter: String): BucketStream[BucketItem] = js.native
   // todo #low Specify events
   def listenBucketNotification(bucketName: String, prefix: String, suffix: String, events: js.Array[String]): EventEmitter = js.native
   def makeBucket(bucketName: String, region: Region): js.Promise[Unit] = js.native
@@ -72,6 +75,29 @@ class Client protected () extends js.Object {
   def presignedGetObject(bucketName: String, objectName: String, callback: ResultCallback[String]): Unit = js.native
   def presignedGetObject(bucketName: String, objectName: String, expiry: Double): js.Promise[String] = js.native
   def presignedGetObject(bucketName: String, objectName: String, expiry: Double, callback: ResultCallback[String]): Unit = js.native
+  def presignedGetObject(bucketName: String, objectName: String, expiry: Double, respHeaders: StringDictionary[js.Any]): js.Promise[String] = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    respHeaders: StringDictionary[js.Any],
+    callback: ResultCallback[String]
+  ): Unit = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    respHeaders: StringDictionary[js.Any],
+    requestDate: Date
+  ): js.Promise[String] = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    respHeaders: StringDictionary[js.Any],
+    requestDate: Date,
+    callback: ResultCallback[String]
+  ): Unit = js.native
   def presignedPostPolicy(policy: PostPolicy): js.Promise[PostPolicyResult] = js.native
   def presignedPostPolicy(policy: PostPolicy, callback: ResultCallback[PostPolicyResult]): Unit = js.native
   def presignedPutObject(bucketName: String, objectName: String): js.Promise[String] = js.native
@@ -102,6 +128,23 @@ class Client protected () extends js.Object {
     objectName: String,
     expiry: Double,
     reqParams: StringDictionary[js.Any],
+    callback: ResultCallback[String]
+  ): Unit = js.native
+  def presignedUrl(
+    httpMethod: String,
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    reqParams: StringDictionary[js.Any],
+    requestDate: Date
+  ): js.Promise[String] = js.native
+  def presignedUrl(
+    httpMethod: String,
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    reqParams: StringDictionary[js.Any],
+    requestDate: Date,
     callback: ResultCallback[String]
   ): Unit = js.native
   def putObject(bucketName: String, objectName: String, stream: String): js.Promise[String] = js.native
@@ -175,6 +218,7 @@ class Client protected () extends js.Object {
   def setBucketNotification(bucketName: String, bucketNotificationConfig: NotificationConfig, callback: NoResultCallback): Unit = js.native
   def setBucketPolicy(bucketName: String, bucketPolicy: String): js.Promise[Unit] = js.native
   def setBucketPolicy(bucketName: String, bucketPolicy: String, callback: NoResultCallback): Unit = js.native
+  def setRequestOptions(otpions: AgentOptions): Unit = js.native
   def statObject(bucketName: String, objectName: String): js.Promise[BucketItemStat] = js.native
   def statObject(bucketName: String, objectName: String, callback: ResultCallback[BucketItemStat]): Unit = js.native
 }

@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A WebGL state machines
+  */
 @JSImport("pixi.js", "WebGLState")
 @js.native
 class WebGLState protected ()

@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The Ellipse object can be used to specify a hit area for displayObjects
+  */
 @JSImport("pixi.js", "Ellipse")
 @js.native
 class Ellipse ()

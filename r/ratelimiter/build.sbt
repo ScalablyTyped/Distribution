@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ratelimiter"
-version := "2.1.1-dt-20190322Z-b06839"
+version := "2.1.1-dt-20190322Z-91fdeb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-df51ca",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190528Z-2925ac",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

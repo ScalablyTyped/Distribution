@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Generic class to deal with traditional 2D matrix transforms
+  */
 @JSImport("pixi.js", "TransformBase")
 @js.native
 class TransformBase ()

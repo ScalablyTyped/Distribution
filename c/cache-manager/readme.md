@@ -1,7 +1,7 @@
 
 # Scala.js typings for cache-manager
 
-Typings are for version v1.2.0
+Typings are for version v2.10.0
 
 ## Library description:
 Cache module for Node.js

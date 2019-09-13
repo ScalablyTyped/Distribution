@@ -4642,6 +4642,7 @@
 | [nouislider](./n/nouislider) | noUiSlider is a lightweight JavaScript range slide | - |
 | [novnc-core](./n/novnc-core) | noVNC core files for using with node | - |
 | [npm](./n/npm) | a package manager for JavaScript | install, modules, package manager, package.json |
+| [npm-cache-filename](./n/npm-cache-filename) | Given a cache folder and url, return the appropria | - |
 | [npm-email](./n/npm-email) | Get the email of an npm user | npm, email, address, user, username, registry, json, get |
 | [npm-keyword](./n/npm-keyword) | Get a list of npm packages with a certain keyword | npm, keyword, package, packages, pkg, registry, find, search |
 | [npm-license-crawler](./n/npm-license-crawler) | Analyzes license information for multiple node.js  | license, npm, checker, crawler |
@@ -6591,6 +6592,7 @@
 | [srp](./s/srp) | Secure Remote Password (SRP) | - |
 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a numb | servicestack, utils, validation, form-binding, bootstrap-forms, ajax, serverevents, declarative, events, error-handling, data-binding |
 | [ssb-keys](./s/ssb-keys) | keyfile operations for ssb | - |
+| [ssdeep](./s/ssdeep) | Node.js wrapper for the ssdeep fuzzy hashing libra | fuzzy, hash, ssdeep |
 | [ssf](./s/ssf) | Format data using ECMA-376 spreadsheet Format Code | format, sprintf, spreadsheet |
 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys | ssh, key, decrypt, pem, openssl, aes, aes129, aes256, aes128, des3, 3des, des, des-ede3-cbc, passphrase |
 | [ssh2](./s/ssh2) | SSH2 client and server modules written in pure Jav | ssh, ssh2, sftp, secure, shell, exec, remote, client |
@@ -7006,7 +7008,6 @@
 | [ts-nameof](./t/ts-nameof) | nameof in TypeScript | nameof, typescript, transformer, custom-transformer |
 | [ts-node](./t/ts-node) | TypeScript execution environment and REPL for node | typescript, node, runtime, environment, ts, compiler |
 | [ts-pnp](./t/ts-pnp) | plug'n'play resolver for TypeScript | typescript, yarn, plugnplay, pnp |
-| [ts3-nodejs-library](./t/ts3-nodejs-library) | TeamSpeak3 Server Query API | teamspeak, ts3, query, serverquery, ts, teamspeak3 |
 | [tslib](./t/tslib) | Runtime library for TypeScript helper functions | TypeScript, Microsoft, compiler, language, javascript, tslib, runtime |
 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS | cli, typescript, linter |
 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript | typescript, monad, functional |

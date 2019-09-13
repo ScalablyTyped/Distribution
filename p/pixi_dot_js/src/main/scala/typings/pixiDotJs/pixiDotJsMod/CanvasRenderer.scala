@@ -7,6 +7,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The CanvasRenderer draws the scene and all its content onto a 2d canvas. This renderer should
+  * be used for browsers that do not support WebGL. Don"t forget to add the CanvasRenderer.view to
+  * your DOM or you will not see anything :)
+  */
 @JSImport("pixi.js", "CanvasRenderer")
 @js.native
 // plugintarget mixin end
@@ -24,6 +29,12 @@ class CanvasRenderer ()
 object CanvasRenderer extends js.Object {
   // plugintarget mixin start
   var __plugins: StringDictionary[Anon_Renderer] = js.native
+  /**
+    * Adds a plugin to the renderer.
+    *
+    * @param pluginName - The name of the plugin.
+    * @param ctor - The constructor function or class for the plugin.
+    */
   def registerPlugin(pluginName: String, ctor: Anon_Renderer): Unit = js.native
 }
 

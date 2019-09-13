@@ -48,6 +48,13 @@ object utilsNs extends js.Object {
   def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = js.native
   def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array): Float32Array = js.native
   def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
+  /**
+    * Remove a range of items from an array
+    *
+    * @param arr The target array
+    * @param startIdx The index to begin removing from (inclusive)
+    * @param removeCount How many items to remove
+    */
   def removeItems[T](arr: js.Array[T], startIdx: Double, removeCount: Double): Unit = js.native
   def rgb2hex(rgb: js.Array[Double]): Double = js.native
   def sayHello(`type`: String): Unit = js.native

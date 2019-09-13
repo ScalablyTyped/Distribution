@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "heredatalens"
-version := "2.3-dt-20190213Z-7c1c54"
+version := "2.3-dt-20190213Z-38add3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "heremaps" % "3.0-dt-20190719Z-151a73",
+  "org.scalablytyped" %%% "heremaps" % "3.0-dt-20190911Z-08930d",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

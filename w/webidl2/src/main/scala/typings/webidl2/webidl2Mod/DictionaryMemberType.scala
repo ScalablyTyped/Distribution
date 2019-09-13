@@ -13,7 +13,7 @@ trait DictionaryMemberType extends FieldType {
 object DictionaryMemberType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
     required: Boolean,

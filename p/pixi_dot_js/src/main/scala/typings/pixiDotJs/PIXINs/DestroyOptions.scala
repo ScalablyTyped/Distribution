@@ -5,8 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DestroyOptions extends js.Object {
+  /**
+    * Should it destroy the base texture of the sprite as well
+    *
+    * Only used for child Sprites if options.children is set to true
+    */
   var baseTexture: js.UndefOr[Boolean] = js.undefined
+  /** if set to true, all the children will have their destroy method called as well. "options" will be passed on to those calls. */
   var children: js.UndefOr[Boolean] = js.undefined
+  /**
+    * It Should it destroy the current texture of the sprite as well
+    *
+    * Only used for child Sprites if options.children is set to true
+    */
   var texture: js.UndefOr[Boolean] = js.undefined
 }
 

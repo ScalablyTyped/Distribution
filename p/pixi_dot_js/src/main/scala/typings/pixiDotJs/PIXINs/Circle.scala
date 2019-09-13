@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The Circle object can be used to specify a hit area for displayObjects
+  */
 @JSGlobal("PIXI.Circle")
 @js.native
 class Circle () extends HitArea {

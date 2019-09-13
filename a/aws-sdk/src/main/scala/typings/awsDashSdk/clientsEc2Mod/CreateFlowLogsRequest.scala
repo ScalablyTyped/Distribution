@@ -26,6 +26,10 @@ trait CreateFlowLogsRequest extends js.Object {
     */
   var LogDestinationType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.LogDestinationType] = js.undefined
   /**
+    * The fields to include in the flow log record, in the order in which they should appear. For a list of available fields, see Flow Log Records. If you omit this parameter, the flow log is created using the default format. If you specify this parameter, you must specify at least one field. Specify the fields using the ${field-id} format, separated by spaces. For the AWS CLI, use single quotation marks (' ') to surround the parameter value. Only applicable to flow logs that are published to an Amazon S3 bucket.
+    */
+  var LogFormat: js.UndefOr[String] = js.undefined
+  /**
     * The name of a new or existing CloudWatch Logs log group where Amazon EC2 publishes your flow logs. If you specify LogDestinationType as s3, do not specify DeliverLogsPermissionArn or LogGroupName.
     */
   var LogGroupName: js.UndefOr[String] = js.undefined
@@ -54,6 +58,7 @@ object CreateFlowLogsRequest {
     DryRun: js.UndefOr[Boolean] = js.undefined,
     LogDestination: String = null,
     LogDestinationType: LogDestinationType = null,
+    LogFormat: String = null,
     LogGroupName: String = null
   ): CreateFlowLogsRequest = {
     val __obj = js.Dynamic.literal(ResourceIds = ResourceIds, ResourceType = ResourceType.asInstanceOf[js.Any], TrafficType = TrafficType.asInstanceOf[js.Any])
@@ -62,6 +67,7 @@ object CreateFlowLogsRequest {
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (LogDestination != null) __obj.updateDynamic("LogDestination")(LogDestination)
     if (LogDestinationType != null) __obj.updateDynamic("LogDestinationType")(LogDestinationType.asInstanceOf[js.Any])
+    if (LogFormat != null) __obj.updateDynamic("LogFormat")(LogFormat)
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName)
     __obj.asInstanceOf[CreateFlowLogsRequest]
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "primereact"
-version := "3.1.9-ba2646"
+version := "3.2.0-259091"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,19 +8,19 @@ trait MapIterationEventDetails extends js.Object {
   /**
     * The index of the array belonging to the Map state iteration.
     */
-  var Index: js.UndefOr[UnsignedInteger] = js.undefined
+  var index: js.UndefOr[UnsignedInteger] = js.undefined
   /**
     * The name of the iteration’s parent Map state.
     */
-  var Name: js.UndefOr[typings.awsDashSdk.clientsStepfunctionsMod.Name] = js.undefined
+  var name: js.UndefOr[Name] = js.undefined
 }
 
 object MapIterationEventDetails {
   @scala.inline
-  def apply(Index: js.UndefOr[UnsignedInteger] = js.undefined, Name: Name = null): MapIterationEventDetails = {
+  def apply(index: js.UndefOr[UnsignedInteger] = js.undefined, name: Name = null): MapIterationEventDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[MapIterationEventDetails]
   }
 }

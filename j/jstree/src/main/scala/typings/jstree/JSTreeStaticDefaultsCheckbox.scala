@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 trait JSTreeStaticDefaultsCheckbox extends js.Object {
   /**
     * This setting controls how cascading and undetermined nodes are applied.
-    * If 'up' is in the string - cascading up is enabled, if 'down' is in the string - cascading down is enabled, if 'undetermined' is in the string - undetermined nodes will be used.
+    * If 'up' is in the string - cascading up is enabled, if 'down' is in the string - cascading down is enabled,
+    * if 'undetermined' is in the string - undetermined nodes will be used.
     * If `three_state` is set to `true` this setting is automatically set to 'up+down+undetermined'. Defaults to ''.
     * @name $.jstree.defaults.checkbox.cascade
     * @plugin checkbox
@@ -46,7 +47,8 @@ trait JSTreeStaticDefaultsCheckbox extends js.Object {
     */
   var tie_selection: Boolean
   /**
-    * a boolean indicating if checkboxes should be visible (can be changed at a later time using `show_checkboxes()` and `hide_checkboxes`). Defaults to `true`.
+    * a boolean indicating if checkboxes should be visible (can be changed at a later time
+    * using `show_checkboxes()` and `hide_checkboxes`). Defaults to `true`.
     * @name $.jstree.defaults.checkbox.visible
     * @plugin checkbox
     */

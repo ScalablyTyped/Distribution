@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // graphics
+/**
+  * A GraphicsData object.
+  */
 @JSImport("pixi.js", "GraphicsData")
 @js.native
 class GraphicsData protected ()

@@ -58,7 +58,7 @@ trait CreateTargetGroupInput extends js.Object {
     */
   var UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
   /**
-    * The identifier of the virtual private cloud (VPC). If the target is a Lambda function, this parameter does not apply.
+    * The identifier of the virtual private cloud (VPC). If the target is a Lambda function, this parameter does not apply. Otherwise, this parameter is required.
     */
   var VpcId: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.VpcId] = js.undefined
 }

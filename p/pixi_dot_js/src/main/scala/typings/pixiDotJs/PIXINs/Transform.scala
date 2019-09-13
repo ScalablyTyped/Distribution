@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Generic class to deal with traditional 2D matrix transforms
+  * local transformation is calculated from position,scale,skew and rotation
+  */
 @JSGlobal("PIXI.Transform")
 @js.native
 class Transform () extends TransformBase {
@@ -19,6 +23,11 @@ class Transform () extends TransformBase {
   var rotation: Double = js.native
   var scale: Point = js.native
   var skew: ObservablePoint = js.native
+  /**
+    * Decomposes a matrix and sets the transforms properties based on it.
+    *
+    * @param matrix - The matrix to decompose
+    */
   def setFromMatrix(matrix: Matrix): Unit = js.native
   def updateSkew(): Unit = js.native
 }

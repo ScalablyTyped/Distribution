@@ -16,7 +16,7 @@ trait HelmetProps extends js.Object {
   var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
   var noscript: js.UndefOr[js.Array[_]] = js.undefined
   var onChangeClientState: js.UndefOr[
-    js.Function3[/* newState */ js.Any, /* addedTags */ TagUpdates, /* removedTags */ TagUpdates, Unit]
+    js.Function3[/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
   ] = js.undefined
   var script: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Array[_]] = js.undefined
@@ -38,7 +38,7 @@ object HelmetProps {
     link: js.Array[LinkProps] = null,
     meta: js.Array[MetaProps] = null,
     noscript: js.Array[_] = null,
-    onChangeClientState: (/* newState */ js.Any, /* addedTags */ TagUpdates, /* removedTags */ TagUpdates) => Unit = null,
+    onChangeClientState: (/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit = null,
     script: js.Array[_] = null,
     style: js.Array[_] = null,
     title: String = null,

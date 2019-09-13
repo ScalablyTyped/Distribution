@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Transform that takes care about its versions
+  */
 @JSGlobal("PIXI.TransformStatic")
 @js.native
 class TransformStatic () extends TransformBase {
@@ -22,6 +25,11 @@ class TransformStatic () extends TransformBase {
   var scale: ObservablePoint = js.native
   var skew: ObservablePoint = js.native
   /* protected */ def onChange(): Unit = js.native
+  /**
+    * Decomposes a matrix and sets the transforms properties based on it.
+    *
+    * @param matrix - The matrix to decompose
+    */
   def setFromMatrix(matrix: Matrix): Unit = js.native
   def updateSkew(): Unit = js.native
 }

@@ -30,7 +30,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def asEnumerable(): IEnumerable[T] = js.native
   def average(): Double = js.native
   def average(selector: js.Function1[/* element */ T, Double]): Double = js.native
-  def buffer(count: Double): IEnumerable[T] = js.native
+  def buffer(count: Double): IEnumerable[js.Array[T]] = js.native
   def cast[TResult](): IEnumerable[TResult] = js.native
   def catchError(handler: js.Function1[/* exception */ js.Any, Unit]): IEnumerable[T] = js.native
   def choose(selector: js.Function2[/* element */ T, /* index */ Double, T]): IEnumerable[T] = js.native

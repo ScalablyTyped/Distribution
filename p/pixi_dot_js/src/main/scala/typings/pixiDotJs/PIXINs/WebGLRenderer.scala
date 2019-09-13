@@ -14,6 +14,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The WebGLRenderer draws the scene and all its content onto a webGL enabled canvas. This renderer
+  * should be used for browsers that support webGL. This Render works by automatically managing webGLBatchs.
+  * So no need for Sprite Batches or Sprite Clouds.
+  * Don"t forget to add the view to your DOM or you will not see anything :)
+  */
 @JSGlobal("PIXI.WebGLRenderer")
 @js.native
 // plugintarget mixin end
@@ -32,10 +38,22 @@ class WebGLRenderer () extends SystemRenderer {
   var drawModes: js.Any = js.native
   var emptyRenderer: ObjectRenderer = js.native
   var emptyTextures: js.Array[BaseTexture] = js.native
+  /**
+    * Collection of methods for extracting data (image, pixels, etc.) from a display object or render texture
+    */
   var extract: WebGLExtract = js.native
   var filterManager: FilterManager = js.native
   var gl: WebGLRenderingContext = js.native
   var maskManager: MaskManager = js.native
+  /**
+    * Collection of installed plugins. These are included by default in PIXI, but can be excluded
+    * by creating a custom build. Consult the README for more information about creating custom
+    * builds and excluding plugins.
+    * @property {PIXI.accessibility.AccessibilityManager} accessibility Support tabbing interactive elements.
+    * @property {PIXI.extract.WebGLExtract} extract Extract image data from renderer.
+    * @property {PIXI.interaction.InteractionManager} interaction Handles mouse, touch and pointer events.
+    * @property {PIXI.prepare.WebGLPrepare} prepare Pre-render display objects.
+    */
   var plugins: js.Any = js.native
   var renderingToScreen: Boolean = js.native
   var state: js.UndefOr[WebGLState] = js.native
@@ -167,6 +185,9 @@ class WebGLRenderer () extends SystemRenderer {
 object WebGLRenderer extends js.Object {
   // plugintarget mixin start
   var __plugins: StringDictionary[Anon_RendererAny] = js.native
+  /**
+    * Adds a plugin to the renderer.
+    */
   def registerPlugin(pluginName: String, ctor: Anon_RendererAny): Unit = js.native
 }
 

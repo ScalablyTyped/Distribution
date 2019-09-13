@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-geocoder
 
-Typings are for version 3.19
+Typings are for version 3.24
 
 ## Library description:
 Node Geocoder, node geocoding library, supports google maps, mapquest, open street map, tom tom, promise

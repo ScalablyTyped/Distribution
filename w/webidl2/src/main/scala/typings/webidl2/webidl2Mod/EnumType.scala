@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait EnumType extends IDLRootType {
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** The enum's name. */
   var name: String
   var `type`: enum
@@ -18,7 +18,7 @@ trait EnumType extends IDLRootType {
 
 object EnumType {
   @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttributes], name: String, `type`: enum, values: js.Array[Anon_String]): EnumType = {
+  def apply(extAttrs: js.Array[ExtendedAttribute], name: String, `type`: enum, values: js.Array[Anon_String]): EnumType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs, name = name, values = values)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EnumType]

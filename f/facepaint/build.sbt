@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "facepaint"
-version := "1.2-dt-20190401Z-318603"
+version := "1.2-dt-20190911Z-6f92b1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

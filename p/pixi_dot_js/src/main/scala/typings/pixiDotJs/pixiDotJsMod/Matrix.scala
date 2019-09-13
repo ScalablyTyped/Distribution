@@ -4,6 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The PixiJS Matrix class as an object, which makes it a lot faster,
+  * here is a representation of it :
+  * | a | c | tx|
+  * | b | d | ty|
+  * | 0 | 0 | 1 |
+  */
 @JSImport("pixi.js", "Matrix")
 @js.native
 class Matrix protected ()

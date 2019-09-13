@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cache-manager"
-version := "v1.2.0-dt-20190627Z-99b777"
+version := "v2.10.0-dt-20190911Z-2c6407"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

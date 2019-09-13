@@ -12,6 +12,9 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait `100px` extends js.Object
   
   @js.native
+  sealed trait `120px` extends js.Object
+  
+  @js.native
   sealed trait `12px` extends js.Object
   
   @js.native
@@ -757,6 +760,8 @@ object officeDashUiDashFabricDashReactStrings {
   
   @scala.inline
   def `100px`: `100px` = "100px".asInstanceOf[`100px`]
+  @scala.inline
+  def `120px`: `120px` = "120px".asInstanceOf[`120px`]
   @scala.inline
   def `12px`: `12px` = "12px".asInstanceOf[`12px`]
   @scala.inline

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConstantMemberType extends IDLInterfaceMemberType {
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** An IDL Type of the constant that represents a simple type, the type name. */
   var idlType: IDLTypeDescription
   /** The name of the constant. */
@@ -22,7 +22,7 @@ trait ConstantMemberType extends IDLInterfaceMemberType {
 object ConstantMemberType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
     nullable: Boolean,

@@ -26,11 +26,11 @@ trait UpdateFlowSourceRequest extends js.Object {
     */
   var IngestPort: js.UndefOr[__integer] = js.undefined
   /**
-    * The smoothing max bitrate for RTP and RTP-FEC streams.
+    * The smoothing max bitrate for RIST, RTP, and RTP-FEC streams.
     */
   var MaxBitrate: js.UndefOr[__integer] = js.undefined
   /**
-    * The maximum latency in milliseconds for Zixi-based streams.
+    * The maximum latency in milliseconds. This parameter applies only to RIST-based and Zixi-based streams.
     */
   var MaxLatency: js.UndefOr[__integer] = js.undefined
   /**

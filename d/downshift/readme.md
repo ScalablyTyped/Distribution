@@ -1,7 +1,7 @@
 
 # Scala.js typings for downshift
 
-Typings are for version 3.3.0
+Typings are for version 3.3.1
 
 ## Library description:
 A set of primitives to build simple, flexible, WAI-ARIA compliant React autocomplete components

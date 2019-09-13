@@ -10,19 +10,67 @@ import typings.codemirror.Anon_ChLine
 import typings.codemirror.Anon_From
 import typings.codemirror.Anon_FromTo
 import typings.codemirror.Anon_Left
+import typings.codemirror.codemirrorStrings.autoCloseBrackets
+import typings.codemirror.codemirrorStrings.autoCloseTags
+import typings.codemirror.codemirrorStrings.autofocus
 import typings.codemirror.codemirrorStrings.beforeChange
 import typings.codemirror.codemirrorStrings.beforeSelectionChange
 import typings.codemirror.codemirrorStrings.blur
 import typings.codemirror.codemirrorStrings.change
 import typings.codemirror.codemirrorStrings.changes
+import typings.codemirror.codemirrorStrings.coverGutterNextToScrollbar
 import typings.codemirror.codemirrorStrings.cursorActivity
+import typings.codemirror.codemirrorStrings.cursorBlinkRate
+import typings.codemirror.codemirrorStrings.cursorHeight
+import typings.codemirror.codemirrorStrings.cursorScrollMargin
+import typings.codemirror.codemirrorStrings.dragDrop
+import typings.codemirror.codemirrorStrings.electricChars
+import typings.codemirror.codemirrorStrings.extraKeys
+import typings.codemirror.codemirrorStrings.firstLineNumber
+import typings.codemirror.codemirrorStrings.fixedGutter
+import typings.codemirror.codemirrorStrings.flattenSpans
 import typings.codemirror.codemirrorStrings.focus
+import typings.codemirror.codemirrorStrings.foldGutter
 import typings.codemirror.codemirrorStrings.gutterClick
+import typings.codemirror.codemirrorStrings.gutters
+import typings.codemirror.codemirrorStrings.highlightSelectionMatches
+import typings.codemirror.codemirrorStrings.hintOptions
+import typings.codemirror.codemirrorStrings.historyEventDelay
+import typings.codemirror.codemirrorStrings.indentUnit
+import typings.codemirror.codemirrorStrings.indentWithTabs
+import typings.codemirror.codemirrorStrings.inputStyle
+import typings.codemirror.codemirrorStrings.keyMap
+import typings.codemirror.codemirrorStrings.lineNumbers
+import typings.codemirror.codemirrorStrings.lineWiseCopyCut
+import typings.codemirror.codemirrorStrings.lineWrapping
+import typings.codemirror.codemirrorStrings.lint
+import typings.codemirror.codemirrorStrings.matchBrackets
+import typings.codemirror.codemirrorStrings.matchTags
+import typings.codemirror.codemirrorStrings.maxHighlightLength
+import typings.codemirror.codemirrorStrings.mode
 import typings.codemirror.codemirrorStrings.overwriteToggle
+import typings.codemirror.codemirrorStrings.placeholder
+import typings.codemirror.codemirrorStrings.pollInterval
+import typings.codemirror.codemirrorStrings.readOnly
 import typings.codemirror.codemirrorStrings.renderLine
+import typings.codemirror.codemirrorStrings.rtlMoveVisually
 import typings.codemirror.codemirrorStrings.scroll
+import typings.codemirror.codemirrorStrings.scrollPastEnd
+import typings.codemirror.codemirrorStrings.scrollbarStyle
+import typings.codemirror.codemirrorStrings.showCursorWhenSelecting
+import typings.codemirror.codemirrorStrings.showHint
+import typings.codemirror.codemirrorStrings.smartIndent
+import typings.codemirror.codemirrorStrings.styleActiveLine
+import typings.codemirror.codemirrorStrings.tabSize
+import typings.codemirror.codemirrorStrings.tabindex
+import typings.codemirror.codemirrorStrings.theme
+import typings.codemirror.codemirrorStrings.undoDepth
 import typings.codemirror.codemirrorStrings.update
+import typings.codemirror.codemirrorStrings.value
 import typings.codemirror.codemirrorStrings.viewportChange
+import typings.codemirror.codemirrorStrings.viewportMargin
+import typings.codemirror.codemirrorStrings.workDelay
+import typings.codemirror.codemirrorStrings.workTime
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
@@ -133,8 +181,103 @@ trait Editor extends js.Object {
   def getLineTokens(line: Double, precise: Boolean): js.Array[Token] = js.native
   /** Gets the inner mode at a given position. This will return the same as getMode for simple modes, but will return an inner mode for nesting modes (such as htmlmixed). */
   def getModeAt(pos: Position): js.Any = js.native
+  @JSName("getOption")
+  def getOption_autoCloseBrackets(option: autoCloseBrackets): AutoCloseBrackets | Boolean | String = js.native
+  @JSName("getOption")
+  def getOption_autoCloseTags(option: autoCloseTags): AutoCloseTags | Boolean = js.native
+  @JSName("getOption")
+  def getOption_autofocus(option: autofocus): Boolean = js.native
+  @JSName("getOption")
+  def getOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar): Boolean = js.native
+  @JSName("getOption")
+  def getOption_cursorBlinkRate(option: cursorBlinkRate): Double = js.native
+  @JSName("getOption")
+  def getOption_cursorHeight(option: cursorHeight): Double = js.native
+  @JSName("getOption")
+  def getOption_cursorScrollMargin(option: cursorScrollMargin): Double = js.native
+  @JSName("getOption")
+  def getOption_dragDrop(option: dragDrop): Boolean = js.native
+  @JSName("getOption")
+  def getOption_electricChars(option: electricChars): Boolean = js.native
+  @JSName("getOption")
+  def getOption_extraKeys(option: extraKeys): String | KeyMap = js.native
+  @JSName("getOption")
+  def getOption_firstLineNumber(option: firstLineNumber): Double = js.native
+  @JSName("getOption")
+  def getOption_fixedGutter(option: fixedGutter): Boolean = js.native
+  @JSName("getOption")
+  def getOption_flattenSpans(option: flattenSpans): Boolean = js.native
+  @JSName("getOption")
+  def getOption_foldGutter(option: foldGutter): Boolean = js.native
+  @JSName("getOption")
+  def getOption_gutters(option: gutters): js.Array[String] = js.native
+  @JSName("getOption")
+  def getOption_highlightSelectionMatches(option: highlightSelectionMatches): HighlightSelectionMatches | Boolean = js.native
+  @JSName("getOption")
+  def getOption_hintOptions(option: hintOptions): ShowHintOptions = js.native
+  @JSName("getOption")
+  def getOption_historyEventDelay(option: historyEventDelay): Double = js.native
+  @JSName("getOption")
+  def getOption_indentUnit(option: indentUnit): Double = js.native
+  @JSName("getOption")
+  def getOption_indentWithTabs(option: indentWithTabs): Boolean = js.native
+  @JSName("getOption")
+  def getOption_inputStyle(option: inputStyle): InputStyle = js.native
+  @JSName("getOption")
+  def getOption_keyMap(option: keyMap): String = js.native
+  @JSName("getOption")
+  def getOption_lineNumbers(option: lineNumbers): Boolean = js.native
+  @JSName("getOption")
+  def getOption_lineWiseCopyCut(option: lineWiseCopyCut): Boolean = js.native
+  @JSName("getOption")
+  def getOption_lineWrapping(option: lineWrapping): Boolean = js.native
+  @JSName("getOption")
+  def getOption_lint(option: lint): Boolean | LintOptions = js.native
+  @JSName("getOption")
+  def getOption_matchBrackets(option: matchBrackets): MatchBrackets | Boolean = js.native
+  @JSName("getOption")
+  def getOption_matchTags(option: matchTags): MatchTags | Boolean = js.native
+  @JSName("getOption")
+  def getOption_maxHighlightLength(option: maxHighlightLength): Double = js.native
+  @JSName("getOption")
+  def getOption_mode(option: mode): js.Any = js.native
+  @JSName("getOption")
+  def getOption_placeholder(option: placeholder): String = js.native
+  @JSName("getOption")
+  def getOption_pollInterval(option: pollInterval): Double = js.native
+  @JSName("getOption")
+  def getOption_readOnly(option: readOnly): js.Any = js.native
+  @JSName("getOption")
+  def getOption_rtlMoveVisually(option: rtlMoveVisually): Boolean = js.native
+  @JSName("getOption")
+  def getOption_scrollPastEnd(option: scrollPastEnd): Boolean = js.native
+  @JSName("getOption")
+  def getOption_scrollbarStyle(option: scrollbarStyle): String = js.native
+  @JSName("getOption")
+  def getOption_showCursorWhenSelecting(option: showCursorWhenSelecting): Boolean = js.native
+  @JSName("getOption")
+  def getOption_showHint(option: showHint): Boolean = js.native
+  @JSName("getOption")
+  def getOption_smartIndent(option: smartIndent): Boolean = js.native
+  @JSName("getOption")
+  def getOption_styleActiveLine(option: styleActiveLine): StyleActiveLine | Boolean = js.native
+  @JSName("getOption")
+  def getOption_tabSize(option: tabSize): Double = js.native
+  @JSName("getOption")
+  def getOption_tabindex(option: tabindex): Double = js.native
+  @JSName("getOption")
+  def getOption_theme(option: theme): String = js.native
+  @JSName("getOption")
+  def getOption_undoDepth(option: undoDepth): Double = js.native
   /** Retrieves the current value of the given option for this editor instance. */
-  def getOption(option: String): js.Any = js.native
+  @JSName("getOption")
+  def getOption_value(option: value): js.Any = js.native
+  @JSName("getOption")
+  def getOption_viewportMargin(option: viewportMargin): Double = js.native
+  @JSName("getOption")
+  def getOption_workDelay(option: workDelay): Double = js.native
+  @JSName("getOption")
+  def getOption_workTime(option: workTime): Double = js.native
   /** Get an { left , top , width , height , clientWidth , clientHeight } object that represents the current scroll position, the size of the scrollable area,
     and the size of the visible area(minus scrollbars). */
   def getScrollInfo(): ScrollInfo = js.native
@@ -191,7 +334,14 @@ trait Editor extends js.Object {
   def lineInfo(line: js.Any): Anon_BgClass = js.native
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
-  def off(eventName: DOMEvent, handler: js.Function2[/* instance */ this.type, /* event */ Event, Unit]): Unit = js.native
+  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.enterTypeRef Was union type with length 88 */ js.Any) */](
+    eventName: K,
+    handler: js.Function2[
+      /* instance */ this.type, 
+      /* import warning: ImportType.apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
   @JSName("off")
   def off_beforeChange(
     eventName: beforeChange,
@@ -250,7 +400,14 @@ trait Editor extends js.Object {
   /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
   def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   /** Fires when one of the DOM events fires. */
-  def on(eventName: DOMEvent, handler: js.Function2[/* instance */ this.type, /* event */ Event, Unit]): Unit = js.native
+  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.enterTypeRef Was union type with length 88 */ js.Any) */](
+    eventName: K,
+    handler: js.Function2[
+      /* instance */ this.type, 
+      /* import warning: ImportType.apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
   /** This event is fired before a change is applied, and its handler may choose to modify or cancel the change.
     The changeObj never has a next property, since this is fired for each individual change, and not batched per operation.
     Note: you may not do anything from a "beforeChange" handler that would cause changes to the document or its visualization.
@@ -378,8 +535,121 @@ trait Editor extends js.Object {
   /** Sets the gutter marker for the given gutter (identified by its CSS class, see the gutters option) to the given value.
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
   def setGutterMarker(line: js.Any, gutterID: String, value: HTMLElement): LineHandle = js.native
+  @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets, value: AutoCloseBrackets): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseTags(option: autoCloseTags, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseTags(option: autoCloseTags, value: AutoCloseTags): Unit = js.native
+  @JSName("setOption")
+  def setOption_autofocus(option: autofocus, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_cursorBlinkRate(option: cursorBlinkRate, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_cursorHeight(option: cursorHeight, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_cursorScrollMargin(option: cursorScrollMargin, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_dragDrop(option: dragDrop, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_electricChars(option: electricChars, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_extraKeys(option: extraKeys, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_extraKeys(option: extraKeys, value: KeyMap): Unit = js.native
+  @JSName("setOption")
+  def setOption_firstLineNumber(option: firstLineNumber, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_fixedGutter(option: fixedGutter, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_flattenSpans(option: flattenSpans, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_foldGutter(option: foldGutter, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_gutters(option: gutters, value: js.Array[String]): Unit = js.native
+  @JSName("setOption")
+  def setOption_highlightSelectionMatches(option: highlightSelectionMatches, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_highlightSelectionMatches(option: highlightSelectionMatches, value: HighlightSelectionMatches): Unit = js.native
+  @JSName("setOption")
+  def setOption_hintOptions(option: hintOptions, value: ShowHintOptions): Unit = js.native
+  @JSName("setOption")
+  def setOption_historyEventDelay(option: historyEventDelay, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_indentUnit(option: indentUnit, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_indentWithTabs(option: indentWithTabs, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_inputStyle(option: inputStyle, value: InputStyle): Unit = js.native
+  @JSName("setOption")
+  def setOption_keyMap(option: keyMap, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineNumbers(option: lineNumbers, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineWiseCopyCut(option: lineWiseCopyCut, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineWrapping(option: lineWrapping, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_lint(option: lint, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_lint(option: lint, value: LintOptions): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchBrackets(option: matchBrackets, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchBrackets(option: matchBrackets, value: MatchBrackets): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchTags(option: matchTags, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchTags(option: matchTags, value: MatchTags): Unit = js.native
+  @JSName("setOption")
+  def setOption_maxHighlightLength(option: maxHighlightLength, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_mode(option: mode, value: js.Any): Unit = js.native
+  @JSName("setOption")
+  def setOption_placeholder(option: placeholder, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_pollInterval(option: pollInterval, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_readOnly(option: readOnly, value: js.Any): Unit = js.native
+  @JSName("setOption")
+  def setOption_rtlMoveVisually(option: rtlMoveVisually, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_scrollPastEnd(option: scrollPastEnd, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_scrollbarStyle(option: scrollbarStyle, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_showCursorWhenSelecting(option: showCursorWhenSelecting, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_showHint(option: showHint, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_smartIndent(option: smartIndent, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_styleActiveLine(option: styleActiveLine, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_styleActiveLine(option: styleActiveLine, value: StyleActiveLine): Unit = js.native
+  @JSName("setOption")
+  def setOption_tabSize(option: tabSize, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_tabindex(option: tabindex, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_theme(option: theme, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_undoDepth(option: undoDepth, value: Double): Unit = js.native
   /** Change the configuration of the editor. option should the name of an option, and value should be a valid value for that option. */
-  def setOption(option: String, value: js.Any): Unit = js.native
+  @JSName("setOption")
+  def setOption_value(option: value, value: js.Any): Unit = js.native
+  @JSName("setOption")
+  def setOption_viewportMargin(option: viewportMargin, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_workDelay(option: workDelay, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_workTime(option: workTime, value: Double): Unit = js.native
   /** Programatically set the size of the editor (overriding the applicable CSS rules).
     width and height height can be either numbers(interpreted as pixels) or CSS units ("100%", for example).
     You can pass null for either of them to indicate that that dimension should not be changed. */

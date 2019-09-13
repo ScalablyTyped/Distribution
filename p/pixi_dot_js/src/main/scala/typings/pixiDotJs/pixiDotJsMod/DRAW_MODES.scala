@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Various webgl draw modes. These can be used to specify which GL drawMode to use
+  * under certain situations and renderers.
+  */
 @JSImport("pixi.js", "DRAW_MODES")
 @js.native
 object DRAW_MODES extends js.Object {

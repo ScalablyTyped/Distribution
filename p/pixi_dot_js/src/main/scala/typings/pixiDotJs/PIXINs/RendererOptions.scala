@@ -14,7 +14,7 @@ trait RendererOptions extends js.Object {
     */
   var antialias: js.UndefOr[Boolean] = js.undefined
   /**
-    * Deprecated
+    * @deprecated
     */
   var autoResize: js.UndefOr[Boolean] = js.undefined
   /**

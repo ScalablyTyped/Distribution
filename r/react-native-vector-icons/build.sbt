@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-vector-icons"
-version := "6.4-dt-20190530Z-2c7242"
+version := "6.4-dt-20190911Z-8ec8d0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

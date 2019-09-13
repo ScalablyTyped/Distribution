@@ -38,6 +38,10 @@ trait FlowLog extends js.Object {
     */
   var LogDestinationType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.LogDestinationType] = js.undefined
   /**
+    * The format of the flow log record.
+    */
+  var LogFormat: js.UndefOr[String] = js.undefined
+  /**
     * The name of the flow log group.
     */
   var LogGroupName: js.UndefOr[String] = js.undefined
@@ -62,6 +66,7 @@ object FlowLog {
     FlowLogStatus: String = null,
     LogDestination: String = null,
     LogDestinationType: LogDestinationType = null,
+    LogFormat: String = null,
     LogGroupName: String = null,
     ResourceId: String = null,
     TrafficType: TrafficType = null
@@ -75,6 +80,7 @@ object FlowLog {
     if (FlowLogStatus != null) __obj.updateDynamic("FlowLogStatus")(FlowLogStatus)
     if (LogDestination != null) __obj.updateDynamic("LogDestination")(LogDestination)
     if (LogDestinationType != null) __obj.updateDynamic("LogDestinationType")(LogDestinationType.asInstanceOf[js.Any])
+    if (LogFormat != null) __obj.updateDynamic("LogFormat")(LogFormat)
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName)
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)
     if (TrafficType != null) __obj.updateDynamic("TrafficType")(TrafficType.asInstanceOf[js.Any])

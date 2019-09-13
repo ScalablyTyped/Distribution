@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait Destination extends js.Object {
   /**
-    * The BCC: field(s) of the message.
+    * The recipients to place on the BCC: line of the message.
     */
   var BccAddresses: js.UndefOr[AddressList] = js.undefined
   /**
-    * The CC: field(s) of the message.
+    * The recipients to place on the CC: line of the message.
     */
   var CcAddresses: js.UndefOr[AddressList] = js.undefined
   /**
-    * The To: field(s) of the message.
+    * The recipients to place on the To: line of the message.
     */
   var ToAddresses: js.UndefOr[AddressList] = js.undefined
 }

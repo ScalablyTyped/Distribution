@@ -1,7 +1,7 @@
 
 # Scala.js typings for jstree
 
-Typings are for version v3.3.4
+Typings are for version 3.3
 
 ## Library description:
 jQuery tree plugin

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait InterfaceMixinType extends IDLRootType {
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** An array of interface members (attributes, operations, etc.). Empty if there are none. */
   var members: js.Array[IDLInterfaceMemberType]
   /** The name of the interface mixin */
@@ -20,7 +20,7 @@ trait InterfaceMixinType extends IDLRootType {
 object InterfaceMixinType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[IDLInterfaceMemberType],
     name: String,
     partial: Boolean,

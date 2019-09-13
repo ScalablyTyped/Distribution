@@ -13,7 +13,8 @@ trait JQuery extends js.Object {
     * and `arg` is used to extend `$.jstree.defaults` for this new instance. There would be no return value (chaining is not broken).
     *
     * If there is an existing instance and `arg` is a string the command specified by `arg` is executed on the instance,
-    * with any additional arguments passed to the function. If the function returns a value it will be returned (chaining could break depending on function).
+    * with any additional arguments passed to the function. If the function returns a value it will be returned
+    * (chaining could break depending on function).
     *
     * If there is an existing instance and `arg` is not a string the instance itself is returned (similar to `$.jstree.reference`).
     *
@@ -21,12 +22,12 @@ trait JQuery extends js.Object {
     *
     * __Examples__
     *
-    *	$('#tree1').jstree(); // creates an instance
-    *	$('#tree2').jstree({ plugins : [] }); // create an instance with some options
-    *	$('#tree1').jstree('open_node', '#branch_1'); // call a method on an existing instance, passing additional arguments
-    *	$('#tree2').jstree(); // get an existing instance (or create an instance)
-    *	$('#tree2').jstree(true); // get an existing instance (will not create new instance)
-    *	$('#branch_1').jstree().select_node('#branch_1'); // get an instance (using a nested element and call a method)
+    *  $('#tree1').jstree(); // creates an instance
+    *  $('#tree2').jstree({ plugins : [] }); // create an instance with some options
+    *  $('#tree1').jstree('open_node', '#branch_1'); // call a method on an existing instance, passing additional arguments
+    *  $('#tree2').jstree(); // get an existing instance (or create an instance)
+    *  $('#tree2').jstree(true); // get an existing instance (will not create new instance)
+    *  $('#branch_1').jstree().select_node('#branch_1'); // get an instance (using a nested element and call a method)
     *
     * @name $().jstree([arg])
     * @param {String|Object} arg

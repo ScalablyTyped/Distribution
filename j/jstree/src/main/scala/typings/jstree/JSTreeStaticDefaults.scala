@@ -10,6 +10,24 @@ trait JSTreeStaticDefaults extends js.Object {
     */
   var checkbox: js.UndefOr[JSTreeStaticDefaultsCheckbox] = js.undefined
   /**
+    * a callback (function) which is invoked in the instance's scope and receives two arguments
+    * - the node and the event that triggered the `close_node` call.
+    * Returning false prevents working with the node, returning true allows invoking close_node.
+    * Defaults to returning `true`.
+    * @name $.jstree.defaults.conditionalclose
+    * @plugin conditionalclose
+    */
+  var conditionalclose: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  /**
+    * a callback (function) which is invoked in the instance's scope and receives two arguments
+    * - the node and the event that triggered the `activate_node` call.
+    * Returning false prevents working with the node, returning true allows invoking activate_node.
+    * Defaults to returning `true`.
+    * @name $.jstree.defaults.conditionalselect
+    * @plugin conditionalselect
+    */
+  var conditionalselect: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  /**
     * stores all defaults for the contextmenu plugin
     */
   var contextmenu: js.UndefOr[JSTreeStaticDefaultsContextMenu] = js.undefined
@@ -81,6 +99,8 @@ object JSTreeStaticDefaults {
     core: JSTreeStaticDefaultsCore,
     plugins: js.Array[String],
     checkbox: JSTreeStaticDefaultsCheckbox = null,
+    conditionalclose: () => Boolean = null,
+    conditionalselect: () => Boolean = null,
     contextmenu: JSTreeStaticDefaultsContextMenu = null,
     dnd: JSTreeStaticDefaultsDragNDrop = null,
     massload: JSTreeStaticDefaultsMassload = null,
@@ -92,6 +112,8 @@ object JSTreeStaticDefaults {
   ): JSTreeStaticDefaults = {
     val __obj = js.Dynamic.literal(core = core, plugins = plugins)
     if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox)
+    if (conditionalclose != null) __obj.updateDynamic("conditionalclose")(js.Any.fromFunction0(conditionalclose))
+    if (conditionalselect != null) __obj.updateDynamic("conditionalselect")(js.Any.fromFunction0(conditionalselect))
     if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu)
     if (dnd != null) __obj.updateDynamic("dnd")(dnd)
     if (massload != null) __obj.updateDynamic("massload")(massload)

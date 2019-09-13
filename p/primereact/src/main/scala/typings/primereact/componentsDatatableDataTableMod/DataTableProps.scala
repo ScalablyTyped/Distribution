@@ -27,6 +27,7 @@ trait DataTableProps extends js.Object {
   var currentPageReportTemplate: js.UndefOr[String] = js.undefined
   var dataKey: js.UndefOr[String] = js.undefined
   var defaultSortOrder: js.UndefOr[Double] = js.undefined
+  var editMode: js.UndefOr[String] = js.undefined
   var emptyMessage: js.UndefOr[String] = js.undefined
   var expandedRows: js.UndefOr[js.Array[_]] = js.undefined
   var exportFilename: js.UndefOr[String] = js.undefined
@@ -57,6 +58,9 @@ trait DataTableProps extends js.Object {
   var onRowClick: js.UndefOr[js.Function1[/* e */ Anon_DataIndex, Unit]] = js.undefined
   var onRowCollapse: js.UndefOr[js.Function1[/* e */ Anon_DataOriginalEventAny, Unit]] = js.undefined
   var onRowDoubleClick: js.UndefOr[js.Function1[/* e */ Anon_DataIndex, Unit]] = js.undefined
+  var onRowEditCancel: js.UndefOr[js.Function1[/* e */ Anon_DataIndex, Unit]] = js.undefined
+  var onRowEditInit: js.UndefOr[js.Function1[/* e */ Anon_DataOriginalEventAny, Unit]] = js.undefined
+  var onRowEditSave: js.UndefOr[js.Function1[/* e */ Anon_DataOriginalEventAny, Unit]] = js.undefined
   var onRowExpand: js.UndefOr[js.Function1[/* e */ Anon_DataOriginalEventAny, Unit]] = js.undefined
   var onRowReorder: js.UndefOr[js.Function1[/* e */ Anon_DragIndex, Unit]] = js.undefined
   var onRowSelect: js.UndefOr[js.Function1[/* e */ Anon_DataOriginalEvent, Unit]] = js.undefined
@@ -76,6 +80,7 @@ trait DataTableProps extends js.Object {
   var resizableColumns: js.UndefOr[Boolean] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var rowClassName: js.UndefOr[js.Function1[/* rowData */ js.Any, js.Object]] = js.undefined
+  var rowEditorValidator: js.UndefOr[js.Function1[/* rowData */ js.Any, Boolean]] = js.undefined
   var rowExpansionTemplate: js.UndefOr[js.Function1[/* data */ js.Any, js.UndefOr[Element]]] = js.undefined
   var rowGroupFooterTemplate: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.UndefOr[ReactNode]]] = js.undefined
   var rowGroupHeaderTemplate: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.UndefOr[ReactNode]]] = js.undefined
@@ -115,6 +120,7 @@ object DataTableProps {
     currentPageReportTemplate: String = null,
     dataKey: String = null,
     defaultSortOrder: Int | Double = null,
+    editMode: String = null,
     emptyMessage: String = null,
     expandedRows: js.Array[_] = null,
     exportFilename: String = null,
@@ -145,6 +151,9 @@ object DataTableProps {
     onRowClick: /* e */ Anon_DataIndex => Unit = null,
     onRowCollapse: /* e */ Anon_DataOriginalEventAny => Unit = null,
     onRowDoubleClick: /* e */ Anon_DataIndex => Unit = null,
+    onRowEditCancel: /* e */ Anon_DataIndex => Unit = null,
+    onRowEditInit: /* e */ Anon_DataOriginalEventAny => Unit = null,
+    onRowEditSave: /* e */ Anon_DataOriginalEventAny => Unit = null,
     onRowExpand: /* e */ Anon_DataOriginalEventAny => Unit = null,
     onRowReorder: /* e */ Anon_DragIndex => Unit = null,
     onRowSelect: /* e */ Anon_DataOriginalEvent => Unit = null,
@@ -164,6 +173,7 @@ object DataTableProps {
     resizableColumns: js.UndefOr[Boolean] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
     rowClassName: /* rowData */ js.Any => js.Object = null,
+    rowEditorValidator: /* rowData */ js.Any => Boolean = null,
     rowExpansionTemplate: /* data */ js.Any => js.UndefOr[Element] = null,
     rowGroupFooterTemplate: (/* data */ js.Any, /* index */ Double) => js.UndefOr[ReactNode] = null,
     rowGroupHeaderTemplate: (/* data */ js.Any, /* index */ Double) => js.UndefOr[ReactNode] = null,
@@ -200,6 +210,7 @@ object DataTableProps {
     if (currentPageReportTemplate != null) __obj.updateDynamic("currentPageReportTemplate")(currentPageReportTemplate)
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey)
     if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode)
     if (emptyMessage != null) __obj.updateDynamic("emptyMessage")(emptyMessage)
     if (expandedRows != null) __obj.updateDynamic("expandedRows")(expandedRows)
     if (exportFilename != null) __obj.updateDynamic("exportFilename")(exportFilename)
@@ -230,6 +241,9 @@ object DataTableProps {
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction1(onRowClick))
     if (onRowCollapse != null) __obj.updateDynamic("onRowCollapse")(js.Any.fromFunction1(onRowCollapse))
     if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction1(onRowDoubleClick))
+    if (onRowEditCancel != null) __obj.updateDynamic("onRowEditCancel")(js.Any.fromFunction1(onRowEditCancel))
+    if (onRowEditInit != null) __obj.updateDynamic("onRowEditInit")(js.Any.fromFunction1(onRowEditInit))
+    if (onRowEditSave != null) __obj.updateDynamic("onRowEditSave")(js.Any.fromFunction1(onRowEditSave))
     if (onRowExpand != null) __obj.updateDynamic("onRowExpand")(js.Any.fromFunction1(onRowExpand))
     if (onRowReorder != null) __obj.updateDynamic("onRowReorder")(js.Any.fromFunction1(onRowReorder))
     if (onRowSelect != null) __obj.updateDynamic("onRowSelect")(js.Any.fromFunction1(onRowSelect))
@@ -249,6 +263,7 @@ object DataTableProps {
     if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns)
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(js.Any.fromFunction1(rowClassName))
+    if (rowEditorValidator != null) __obj.updateDynamic("rowEditorValidator")(js.Any.fromFunction1(rowEditorValidator))
     if (rowExpansionTemplate != null) __obj.updateDynamic("rowExpansionTemplate")(js.Any.fromFunction1(rowExpansionTemplate))
     if (rowGroupFooterTemplate != null) __obj.updateDynamic("rowGroupFooterTemplate")(js.Any.fromFunction2(rowGroupFooterTemplate))
     if (rowGroupHeaderTemplate != null) __obj.updateDynamic("rowGroupHeaderTemplate")(js.Any.fromFunction2(rowGroupHeaderTemplate))

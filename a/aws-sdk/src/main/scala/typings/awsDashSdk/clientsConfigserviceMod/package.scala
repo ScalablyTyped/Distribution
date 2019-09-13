@@ -171,6 +171,7 @@ package object clientsConfigserviceMod {
   type NextToken = java.lang.String
   type OrderingTimestamp = Date
   type OrganizationConfigRuleDetailedStatus = js.Array[MemberAccountStatus]
+  type OrganizationConfigRuleName = java.lang.String
   type OrganizationConfigRuleNames = js.Array[StringWithCharLimit64]
   type OrganizationConfigRuleStatuses = js.Array[OrganizationConfigRuleStatus]
   /* Rewritten from type alias, can be one of: 

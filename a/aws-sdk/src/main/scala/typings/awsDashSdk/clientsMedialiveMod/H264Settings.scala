@@ -22,13 +22,17 @@ trait H264Settings extends js.Object {
     */
   var BufFillPct: js.UndefOr[__integerMin0Max100] = js.undefined
   /**
-    * Size of buffer (HRD buffer model) in bits/second.
+    * Size of buffer (HRD buffer model) in bits.
     */
   var BufSize: js.UndefOr[__integerMin0] = js.undefined
   /**
     * Includes colorspace metadata in the output.
     */
   var ColorMetadata: js.UndefOr[H264ColorMetadata] = js.undefined
+  /**
+    * Color Space settings
+    */
+  var ColorSpaceSettings: js.UndefOr[H264ColorSpaceSettings] = js.undefined
   /**
     * Entropy encoding mode.  Use cabac (must be in Main or High profile) or cavlc.
     */
@@ -82,7 +86,7 @@ trait H264Settings extends js.Object {
     */
   var LookAheadRateControl: js.UndefOr[H264LookAheadRateControl] = js.undefined
   /**
-    * For QVBR: See the tooltip for Quality level 
+    * For QVBR: See the tooltip for Quality level
   For VBR: Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.
     */
   var MaxBitrate: js.UndefOr[__integerMin1000] = js.undefined
@@ -118,7 +122,7 @@ trait H264Settings extends js.Object {
     */
   var QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.undefined
   /**
-    * Rate control mode. 
+    * Rate control mode.
   QVBR: Quality will match the specified quality level except when it is constrained by the
   maximum bitrate.  Recommended if you or your viewers pay for bandwidth.
   VBR: Quality and bitrate vary, depending on the video complexity. Recommended instead of QVBR
@@ -179,6 +183,7 @@ object H264Settings {
     BufFillPct: js.UndefOr[__integerMin0Max100] = js.undefined,
     BufSize: js.UndefOr[__integerMin0] = js.undefined,
     ColorMetadata: H264ColorMetadata = null,
+    ColorSpaceSettings: H264ColorSpaceSettings = null,
     EntropyEncoding: H264EntropyEncoding = null,
     FixedAfd: FixedAfd = null,
     FlickerAq: H264FlickerAq = null,
@@ -218,6 +223,7 @@ object H264Settings {
     if (!js.isUndefined(BufFillPct)) __obj.updateDynamic("BufFillPct")(BufFillPct)
     if (!js.isUndefined(BufSize)) __obj.updateDynamic("BufSize")(BufSize)
     if (ColorMetadata != null) __obj.updateDynamic("ColorMetadata")(ColorMetadata.asInstanceOf[js.Any])
+    if (ColorSpaceSettings != null) __obj.updateDynamic("ColorSpaceSettings")(ColorSpaceSettings)
     if (EntropyEncoding != null) __obj.updateDynamic("EntropyEncoding")(EntropyEncoding.asInstanceOf[js.Any])
     if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
     if (FlickerAq != null) __obj.updateDynamic("FlickerAq")(FlickerAq.asInstanceOf[js.Any])

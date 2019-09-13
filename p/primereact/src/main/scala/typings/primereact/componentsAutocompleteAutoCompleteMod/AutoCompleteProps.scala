@@ -51,6 +51,7 @@ trait AutoCompleteProps extends js.Object {
   var tabindex: js.UndefOr[Double] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -98,6 +99,7 @@ object AutoCompleteProps {
     tabindex: Int | Double = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,
+    `type`: String = null,
     value: js.Any = null
   ): AutoCompleteProps = {
     val __obj = js.Dynamic.literal()
@@ -142,6 +144,7 @@ object AutoCompleteProps {
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[AutoCompleteProps]
   }

@@ -1,22 +1,22 @@
 package typings.nock
 
-import typings.nock.nockMod.NockBackMode
+import typings.nock.nockMod.BackMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object nockStrings {
   @js.native
-  sealed trait dryrun extends NockBackMode
+  sealed trait dryrun extends BackMode
   
   @js.native
-  sealed trait lockdown extends NockBackMode
+  sealed trait lockdown extends BackMode
   
   @js.native
-  sealed trait record extends NockBackMode
+  sealed trait record extends BackMode
   
   @js.native
-  sealed trait wild extends NockBackMode
+  sealed trait wild extends BackMode
   
   @scala.inline
   def dryrun: dryrun = "dryrun".asInstanceOf[dryrun]

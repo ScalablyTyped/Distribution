@@ -8,6 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Helper class to create a quad
+  */
 @JSGlobal("PIXI.Quad")
 @js.native
 class Quad protected () extends js.Object {

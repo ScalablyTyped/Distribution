@@ -17,19 +17,19 @@ trait Index extends js.Object {
   /**
     * Add key for this index
     */
-  def addApiKey(scopes: js.Array[String]): js.Promise[Task] = js.native
+  def addApiKey(scopes: js.Array[String]): js.Promise[AddApiKeyTask] = js.native
   /**
     * Add key for this index
     */
-  def addApiKey(scopes: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
-  def addApiKey(scopes: js.Array[String], options: ApiKeyOptions): js.Promise[Task] = js.native
+  def addApiKey(scopes: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ AddApiKeyTask, Unit]): Unit = js.native
+  def addApiKey(scopes: js.Array[String], options: ApiKeyOptions): js.Promise[AddApiKeyTask] = js.native
   /**
     * Add key for this index
     */
   def addApiKey(
     scopes: js.Array[String],
     options: ApiKeyOptions,
-    cb: js.Function2[/* err */ Error, /* res */ Task, Unit]
+    cb: js.Function2[/* err */ Error, /* res */ AddApiKeyTask, Unit]
   ): Unit = js.native
   /**
     * Add a list of objects
@@ -138,11 +138,11 @@ trait Index extends js.Object {
   /**
     * Deletes an index specific key
     */
-  def deleteApiKey(key: String): js.Promise[Task] = js.native
+  def deleteApiKey(key: String): js.Promise[DeleteApiKeyTask] = js.native
   /**
     * Deletes an index specific key
     */
-  def deleteApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
+  def deleteApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ DeleteApiKeyTask, Unit]): Unit = js.native
   /**
     * Delete objects that matches the query
     */
@@ -203,11 +203,11 @@ trait Index extends js.Object {
   /**
     * Gets the rights of an index specific key
     */
-  def getApiKey(key: String): js.Promise[_] = js.native
+  def getApiKey(key: String): js.Promise[ApiKey] = js.native
   /**
     * Gets the rights of an index specific key
     */
-  def getApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): Unit = js.native
+  def getApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ ApiKey, Unit]): Unit = js.native
   /**
     * Gets specific attributes from an object
     */
@@ -260,11 +260,11 @@ trait Index extends js.Object {
   /**
     * List index user keys
     */
-  def listApiKeys(): js.Promise[_] = js.native
+  def listApiKeys(): js.Promise[js.Array[ApiKey]] = js.native
   /**
     * List index user keys
     */
-  def listApiKeys(cb: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): Unit = js.native
+  def listApiKeys(cb: js.Function2[/* err */ Error, /* res */ js.Array[ApiKey], Unit]): Unit = js.native
   /**
     * Update parameters of a specific object
     */
@@ -384,15 +384,19 @@ trait Index extends js.Object {
   /**
     * Update a key for this index
     */
-  def updateApiKey(key: String, scopes: js.Array[String]): js.Promise[Task] = js.native
+  def updateApiKey(key: String, scopes: js.Array[String]): js.Promise[UpdateApiKeyTask] = js.native
   /**
     * Update a key for this index
     */
-  def updateApiKey(key: String, scopes: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
+  def updateApiKey(
+    key: String,
+    scopes: js.Array[String],
+    cb: js.Function2[/* err */ Error, /* res */ UpdateApiKeyTask, Unit]
+  ): Unit = js.native
   /**
     * Update a key for this index
     */
-  def updateApiKey(key: String, scopes: js.Array[String], options: ApiKeyOptions): js.Promise[Task] = js.native
+  def updateApiKey(key: String, scopes: js.Array[String], options: ApiKeyOptions): js.Promise[UpdateApiKeyTask] = js.native
   /**
     * Update a key for this index
     */
@@ -400,7 +404,7 @@ trait Index extends js.Object {
     key: String,
     scopes: js.Array[String],
     options: ApiKeyOptions,
-    cb: js.Function2[/* err */ Error, /* res */ Task, Unit]
+    cb: js.Function2[/* err */ Error, /* res */ UpdateApiKeyTask, Unit]
   ): Unit = js.native
   /**
     * Wait for an indexing task to be compete

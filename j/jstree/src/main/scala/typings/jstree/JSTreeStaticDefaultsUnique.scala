@@ -12,6 +12,12 @@ trait JSTreeStaticDefaultsUnique extends js.Object {
     */
   var case_sensitive: Boolean
   /**
+    * Indicates if white space should be trimmed before the comparison. Default is `false`.
+    * @name $.jstree.defaults.unique.trim_whitespace
+    * @plugin unique
+    */
+  var trim_whitespace: Boolean
+  /**
     * A callback executed in the instance's scope when a new node is created
     * and the name is already taken, the two arguments are the conflicting name and the counter.
     * The default will produce results like `New node (2)`.
@@ -23,8 +29,8 @@ trait JSTreeStaticDefaultsUnique extends js.Object {
 
 object JSTreeStaticDefaultsUnique {
   @scala.inline
-  def apply(case_sensitive: Boolean, duplicate: (String, Double) => String): JSTreeStaticDefaultsUnique = {
-    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive, duplicate = js.Any.fromFunction2(duplicate))
+  def apply(case_sensitive: Boolean, duplicate: (String, Double) => String, trim_whitespace: Boolean): JSTreeStaticDefaultsUnique = {
+    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive, duplicate = js.Any.fromFunction2(duplicate), trim_whitespace = trim_whitespace)
   
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }

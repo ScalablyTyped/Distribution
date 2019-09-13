@@ -12,7 +12,7 @@ trait PutOrganizationConfigRuleRequest extends js.Object {
   /**
     * The name that you assign to an organization config rule.
     */
-  var OrganizationConfigRuleName: StringWithCharLimit64
+  var OrganizationConfigRuleName: typings.awsDashSdk.clientsConfigserviceMod.OrganizationConfigRuleName
   /**
     * An OrganizationCustomRuleMetadata object.
     */
@@ -26,7 +26,7 @@ trait PutOrganizationConfigRuleRequest extends js.Object {
 object PutOrganizationConfigRuleRequest {
   @scala.inline
   def apply(
-    OrganizationConfigRuleName: StringWithCharLimit64,
+    OrganizationConfigRuleName: OrganizationConfigRuleName,
     ExcludedAccounts: ExcludedAccounts = null,
     OrganizationCustomRuleMetadata: OrganizationCustomRuleMetadata = null,
     OrganizationManagedRuleMetadata: OrganizationManagedRuleMetadata = null

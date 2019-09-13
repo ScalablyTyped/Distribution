@@ -15,7 +15,7 @@ trait Options extends js.Object {
   // The duration (in milliseconds) of the scrolling animation. Default: 500
   var duration: js.UndefOr[Double] = js.undefined
   // The easing to be used when animating. Default: ease
-  var easing: js.UndefOr[String] = js.undefined
+  var easing: js.UndefOr[String | (js.Tuple4[Double, Double, Double, Double])] = js.undefined
   // The element you want to scroll to.
   var el: js.UndefOr[String | Element] = js.undefined
   var element: js.UndefOr[String | Element] = js.undefined
@@ -44,7 +44,7 @@ object Options {
     cancelable: js.UndefOr[Boolean] = js.undefined,
     container: String | Element = null,
     duration: Int | Double = null,
-    easing: String = null,
+    easing: String | (js.Tuple4[Double, Double, Double, Double]) = null,
     el: String | Element = null,
     element: String | Element = null,
     force: js.UndefOr[Boolean] = js.undefined,
@@ -59,7 +59,7 @@ object Options {
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)

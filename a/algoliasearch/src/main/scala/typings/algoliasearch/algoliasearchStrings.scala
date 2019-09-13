@@ -30,6 +30,9 @@ object algoliasearchStrings {
   sealed trait alpha extends js.Object
   
   @js.native
+  sealed trait analytics extends js.Object
+  
+  @js.native
   sealed trait ar extends js.Object
   
   @js.native
@@ -49,6 +52,9 @@ object algoliasearchStrings {
   
   @js.native
   sealed trait bn extends js.Object
+  
+  @js.native
+  sealed trait browse extends js.Object
   
   @js.native
   sealed trait busStop extends js.Object
@@ -87,10 +93,16 @@ object algoliasearchStrings {
   sealed trait delete extends js.Object
   
   @js.native
+  sealed trait deleteIndex extends js.Object
+  
+  @js.native
   sealed trait deleteObject extends js.Object
   
   @js.native
   sealed trait distinct extends js.Object
+  
+  @js.native
+  sealed trait editSettings extends js.Object
   
   @js.native
   sealed trait el extends js.Object
@@ -192,6 +204,12 @@ object algoliasearchStrings {
   sealed trait lastWords extends js.Object
   
   @js.native
+  sealed trait listIndexes extends js.Object
+  
+  @js.native
+  sealed trait logs extends js.Object
+  
+  @js.native
   sealed trait lt extends js.Object
   
   @js.native
@@ -283,6 +301,12 @@ object algoliasearchStrings {
   
   @js.native
   sealed trait rules extends js.Object
+  
+  @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
+  sealed trait seeUnretrievableAttributes extends js.Object
   
   @js.native
   sealed trait settings extends js.Object
@@ -382,6 +406,8 @@ object algoliasearchStrings {
   @scala.inline
   def alpha: alpha = "alpha".asInstanceOf[alpha]
   @scala.inline
+  def analytics: analytics = "analytics".asInstanceOf[analytics]
+  @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
   @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
@@ -395,6 +421,8 @@ object algoliasearchStrings {
   def bg: bg = "bg".asInstanceOf[bg]
   @scala.inline
   def bn: bn = "bn".asInstanceOf[bn]
+  @scala.inline
+  def browse: browse = "browse".asInstanceOf[browse]
   @scala.inline
   def busStop: busStop = "busStop".asInstanceOf[busStop]
   @scala.inline
@@ -420,9 +448,13 @@ object algoliasearchStrings {
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
+  def deleteIndex: deleteIndex = "deleteIndex".asInstanceOf[deleteIndex]
+  @scala.inline
   def deleteObject: deleteObject = "deleteObject".asInstanceOf[deleteObject]
   @scala.inline
   def distinct: distinct = "distinct".asInstanceOf[distinct]
+  @scala.inline
+  def editSettings: editSettings = "editSettings".asInstanceOf[editSettings]
   @scala.inline
   def el: el = "el".asInstanceOf[el]
   @scala.inline
@@ -490,6 +522,10 @@ object algoliasearchStrings {
   @scala.inline
   def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
   @scala.inline
+  def listIndexes: listIndexes = "listIndexes".asInstanceOf[listIndexes]
+  @scala.inline
+  def logs: logs = "logs".asInstanceOf[logs]
+  @scala.inline
   def lt: lt = "lt".asInstanceOf[lt]
   @scala.inline
   def lv: lv = "lv".asInstanceOf[lv]
@@ -551,6 +587,10 @@ object algoliasearchStrings {
   def ru: ru = "ru".asInstanceOf[ru]
   @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
+  def seeUnretrievableAttributes: seeUnretrievableAttributes = "seeUnretrievableAttributes".asInstanceOf[seeUnretrievableAttributes]
   @scala.inline
   def settings: settings = "settings".asInstanceOf[settings]
   @scala.inline

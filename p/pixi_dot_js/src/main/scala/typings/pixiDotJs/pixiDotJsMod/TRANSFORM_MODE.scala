@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Constants that specify the transform type.
+  */
 @JSImport("pixi.js", "TRANSFORM_MODE")
 @js.native
 object TRANSFORM_MODE extends js.Object {

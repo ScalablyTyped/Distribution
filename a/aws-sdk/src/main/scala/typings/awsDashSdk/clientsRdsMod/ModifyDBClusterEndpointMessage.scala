@@ -10,7 +10,7 @@ trait ModifyDBClusterEndpointMessage extends js.Object {
     */
   var DBClusterEndpointIdentifier: String
   /**
-    * The type of the endpoint. One of: READER, ANY. 
+    * The type of the endpoint. One of: READER, WRITER, ANY.
     */
   var EndpointType: js.UndefOr[String] = js.undefined
   /**

@@ -10,11 +10,15 @@ trait Anon_ButtonButtonAddButtonNext extends js.Object {
   var buttonNext: String
   var buttonPrev: String
   var buttonRemove: String
+  var navigation: String
   var progress: String
   var progressBar: String
+  var progressBottom: String
   var progressContainer: String
   var progressText: String
+  var progressTop: String
   var root: String
+  var title: String
 }
 
 object Anon_ButtonButtonAddButtonNext {
@@ -25,13 +29,17 @@ object Anon_ButtonButtonAddButtonNext {
     buttonNext: String,
     buttonPrev: String,
     buttonRemove: String,
+    navigation: String,
     progress: String,
     progressBar: String,
+    progressBottom: String,
     progressContainer: String,
     progressText: String,
-    root: String
+    progressTop: String,
+    root: String,
+    title: String
   ): Anon_ButtonButtonAddButtonNext = {
-    val __obj = js.Dynamic.literal(button = button, buttonAdd = buttonAdd, buttonNext = buttonNext, buttonPrev = buttonPrev, buttonRemove = buttonRemove, progress = progress, progressBar = progressBar, progressContainer = progressContainer, progressText = progressText, root = root)
+    val __obj = js.Dynamic.literal(button = button, buttonAdd = buttonAdd, buttonNext = buttonNext, buttonPrev = buttonPrev, buttonRemove = buttonRemove, navigation = navigation, progress = progress, progressBar = progressBar, progressBottom = progressBottom, progressContainer = progressContainer, progressText = progressText, progressTop = progressTop, root = root, title = title)
   
     __obj.asInstanceOf[Anon_ButtonButtonAddButtonNext]
   }

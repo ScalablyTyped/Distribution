@@ -1305,6 +1305,14 @@ import typings.awsDashSdk.clientsMedialiveMod._H264SpatialAq
 import typings.awsDashSdk.clientsMedialiveMod._H264SubGopLength
 import typings.awsDashSdk.clientsMedialiveMod._H264TemporalAq
 import typings.awsDashSdk.clientsMedialiveMod._H264TimecodeInsertionBehavior
+import typings.awsDashSdk.clientsMedialiveMod._H265AlternativeTransferFunction
+import typings.awsDashSdk.clientsMedialiveMod._H265ColorMetadata
+import typings.awsDashSdk.clientsMedialiveMod._H265FlickerAq
+import typings.awsDashSdk.clientsMedialiveMod._H265Level
+import typings.awsDashSdk.clientsMedialiveMod._H265LookAheadRateControl
+import typings.awsDashSdk.clientsMedialiveMod._H265Profile
+import typings.awsDashSdk.clientsMedialiveMod._H265Tier
+import typings.awsDashSdk.clientsMedialiveMod._H265TimecodeInsertionBehavior
 import typings.awsDashSdk.clientsMedialiveMod._HlsAdMarkers
 import typings.awsDashSdk.clientsMedialiveMod._HlsAkamaiHttpTransferMode
 import typings.awsDashSdk.clientsMedialiveMod._HlsIvInManifest
@@ -1344,6 +1352,7 @@ import typings.awsDashSdk.clientsMedialiveMod._M2tsTimedMetadataBehavior
 import typings.awsDashSdk.clientsMedialiveMod._M3u8Scte35Behavior
 import typings.awsDashSdk.clientsMedialiveMod._M3u8TimedMetadataBehavior
 import typings.awsDashSdk.clientsMedialiveMod._Mp2CodingMode
+import typings.awsDashSdk.clientsMedialiveMod._MsSmoothH265PackagingType
 import typings.awsDashSdk.clientsMedialiveMod._NetworkInputServerValidation
 import typings.awsDashSdk.clientsMedialiveMod._PipelineId
 import typings.awsDashSdk.clientsMedialiveMod._ReservationCodec
@@ -2725,6 +2734,10 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `2019-03-26`
     extends typings.awsDashSdk.clientsCloudfrontMod._apiVersion
+  
+  @js.native
+  sealed trait `2019-05-01`
+    extends typings.awsDashSdk.clientsWorkmailmessageflowMod._apiVersion
   
   @js.native
   sealed trait `2019-05-23`
@@ -5673,6 +5686,7 @@ object awsDashSdkStrings {
        with _H264RateControlMode
        with typings.awsDashSdk.clientsMedialiveMod._H264RateControlMode
        with _H265RateControlMode
+       with typings.awsDashSdk.clientsMedialiveMod._H265RateControlMode
        with _M2tsRateMode
        with typings.awsDashSdk.clientsMedialiveMod._M2tsRateMode
        with _Mpeg2RateControlMode
@@ -7855,13 +7869,16 @@ object awsDashSdkStrings {
        with _H264UnregisteredSeiTimecode
        with _H265AlternateTransferFunctionSei
        with _H265FlickerAdaptiveQuantization
+       with _H265FlickerAq
        with _H265GopBReference
        with _H265SceneChangeDetect
+       with typings.awsDashSdk.clientsMedialiveMod._H265SceneChangeDetect
        with _H265SlowPal
        with _H265SpatialAdaptiveQuantization
        with _H265TemporalAdaptiveQuantization
        with _H265TemporalIds
        with _H265Tiles
+       with _H265TimecodeInsertionBehavior
        with _H265UnregisteredSeiTimecode
        with _HlsClientCache
        with typings.awsDashSdk.clientsMedialiveMod._HlsClientCache
@@ -8886,8 +8903,10 @@ object awsDashSdkStrings {
        with _H264UnregisteredSeiTimecode
        with _H265AlternateTransferFunctionSei
        with _H265FlickerAdaptiveQuantization
+       with _H265FlickerAq
        with _H265GopBReference
        with _H265SceneChangeDetect
+       with typings.awsDashSdk.clientsMedialiveMod._H265SceneChangeDetect
        with _H265SlowPal
        with _H265SpatialAdaptiveQuantization
        with _H265TemporalAdaptiveQuantization
@@ -10129,6 +10148,7 @@ object awsDashSdkStrings {
     extends _H264GopSizeUnits
        with typings.awsDashSdk.clientsMedialiveMod._H264GopSizeUnits
        with _H265GopSizeUnits
+       with typings.awsDashSdk.clientsMedialiveMod._H265GopSizeUnits
        with _Mpeg2GopSizeUnits
   
   @js.native
@@ -10902,6 +10922,48 @@ object awsDashSdkStrings {
   sealed trait H264_LEVEL_AUTO extends _H264Level
   
   @js.native
+  sealed trait H265_LEVEL_1 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_2 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_2_1 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_3 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_3_1 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_4 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_4_1 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_5 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_5_1 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_5_2 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_6 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_6_1 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_6_2 extends _H265Level
+  
+  @js.native
+  sealed trait H265_LEVEL_AUTO extends _H265Level
+  
+  @js.native
   sealed trait H323 extends _CommsProtocol
   
   @js.native
@@ -11023,6 +11085,7 @@ object awsDashSdkStrings {
     extends _AacCodecProfile
        with _AacProfile
        with _H265WriteMp4PackagingType
+       with _MsSmoothH265PackagingType
   
   @js.native
   sealed trait HEV2
@@ -11047,6 +11110,9 @@ object awsDashSdkStrings {
        with _H264LookAheadRateControl
        with _H264Profile
        with _H265AdaptiveQuantization
+       with typings.awsDashSdk.clientsMedialiveMod._H265AdaptiveQuantization
+       with _H265LookAheadRateControl
+       with _H265Tier
        with _Mpeg2AdaptiveQuantization
        with _Mpeg2CodecLevel
        with _PatchComplianceLevel
@@ -11060,6 +11126,7 @@ object awsDashSdkStrings {
     extends _H264AdaptiveQuantization
        with typings.awsDashSdk.clientsMedialiveMod._H264AdaptiveQuantization
        with _H265AdaptiveQuantization
+       with typings.awsDashSdk.clientsMedialiveMod._H265AdaptiveQuantization
   
   @js.native
   sealed trait HIGHLY_AVAILABLE extends _DeviceAvailability
@@ -11254,7 +11321,9 @@ object awsDashSdkStrings {
   sealed trait HUN extends _LanguageCode
   
   @js.native
-  sealed trait HVC1 extends _H265WriteMp4PackagingType
+  sealed trait HVC1
+    extends _H265WriteMp4PackagingType
+       with _MsSmoothH265PackagingType
   
   @js.native
   sealed trait HYE extends _LanguageCode
@@ -11400,6 +11469,7 @@ object awsDashSdkStrings {
        with _FileHeaderInfo
        with typings.awsDashSdk.clientsGlacierMod._FileHeaderInfo
        with _H264ColorMetadata
+       with _H265ColorMetadata
        with _Scte35AposNoRegionalBlackoutBehavior
        with _Scte35AposWebDeliveryAllowedBehavior
        with _Scte35SpliceInsertNoRegionalBlackoutBehavior
@@ -11688,6 +11758,8 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsWafMod._ChangeAction
        with _ColorMetadata
        with _H264ColorMetadata
+       with _H265AlternativeTransferFunction
+       with _H265ColorMetadata
        with _HlsCaptionLanguageSetting
        with typings.awsDashSdk.clientsMedialiveMod._HlsCaptionLanguageSetting
        with _M2tsNielsenId3
@@ -13243,6 +13315,8 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMedialiveMod._H264AdaptiveQuantization
        with _H264LookAheadRateControl
        with _H265AdaptiveQuantization
+       with typings.awsDashSdk.clientsMedialiveMod._H265AdaptiveQuantization
+       with _H265LookAheadRateControl
        with _Mpeg2AdaptiveQuantization
        with _Mpeg2CodecLevel
        with _PatchComplianceLevel
@@ -13595,6 +13669,8 @@ object awsDashSdkStrings {
   sealed trait MAIN
     extends _H264CodecProfile
        with _H264Profile
+       with _H265Profile
+       with _H265Tier
        with _Mpeg2CodecLevel
        with _Mpeg2CodecProfile
   
@@ -13611,6 +13687,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait MAINTENANCE extends _WorkspaceState
+  
+  @js.native
+  sealed trait MAIN_10BIT extends _H265Profile
   
   @js.native
   sealed trait MAIN_422_10BIT_HIGH extends _H265CodecProfile
@@ -13692,6 +13771,7 @@ object awsDashSdkStrings {
     extends _H264AdaptiveQuantization
        with typings.awsDashSdk.clientsMedialiveMod._H264AdaptiveQuantization
        with _H265AdaptiveQuantization
+       with typings.awsDashSdk.clientsMedialiveMod._H265AdaptiveQuantization
        with typings.awsDashSdk.clientsConnectMod._Statistic
   
   @js.native
@@ -13786,6 +13866,8 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMedialiveMod._H264AdaptiveQuantization
        with _H264LookAheadRateControl
        with _H265AdaptiveQuantization
+       with typings.awsDashSdk.clientsMedialiveMod._H265AdaptiveQuantization
+       with _H265LookAheadRateControl
        with _Mpeg2AdaptiveQuantization
        with _PatchComplianceLevel
        with _SeverityLevel
@@ -14136,7 +14218,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait MULTIPLEX
-    extends _M2tsBufferModel
+    extends typings.awsDashSdk.clientsMedialiveMod._H264RateControlMode
+       with _M2tsBufferModel
        with typings.awsDashSdk.clientsMedialiveMod._M2tsBufferModel
   
   @js.native
@@ -15271,6 +15354,7 @@ object awsDashSdkStrings {
        with _H264AdaptiveQuantization
        with typings.awsDashSdk.clientsMedialiveMod._H264AdaptiveQuantization
        with _H265AdaptiveQuantization
+       with typings.awsDashSdk.clientsMedialiveMod._H265AdaptiveQuantization
        with _H265SampleAdaptiveOffsetFilterMode
        with _Mpeg2AdaptiveQuantization
        with _ObjectLockLegalHoldStatus
@@ -15320,7 +15404,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait OMIT
-    extends _HlsCaptionLanguageSetting
+    extends _H265AlternativeTransferFunction
+       with _HlsCaptionLanguageSetting
        with typings.awsDashSdk.clientsMedialiveMod._HlsCaptionLanguageSetting
   
   @js.native
@@ -16080,6 +16165,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PIC_TIMING_SEI
     extends _H264TimecodeInsertionBehavior
+       with _H265TimecodeInsertionBehavior
        with _VideoTimecodeInsertion
   
   @js.native
@@ -16891,6 +16977,7 @@ object awsDashSdkStrings {
     extends _H264RateControlMode
        with typings.awsDashSdk.clientsMedialiveMod._H264RateControlMode
        with _H265RateControlMode
+       with typings.awsDashSdk.clientsMedialiveMod._H265RateControlMode
   
   @js.native
   sealed trait Quarantined extends _LifecycleState
@@ -18330,6 +18417,7 @@ object awsDashSdkStrings {
     extends _H264GopSizeUnits
        with typings.awsDashSdk.clientsMedialiveMod._H264GopSizeUnits
        with _H265GopSizeUnits
+       with typings.awsDashSdk.clientsMedialiveMod._H265GopSizeUnits
        with _Mpeg2GopSizeUnits
        with typings.awsDashSdk.clientsConnectMod._Unit
        with _Unit
@@ -23817,10 +23905,10 @@ object awsDashSdkStrings {
        with _VpnState
   
   @js.native
-  sealed trait `deleted-running` extends _FleetStateCode
+  sealed trait deleted_running extends _FleetStateCode
   
   @js.native
-  sealed trait `deleted-terminating` extends _FleetStateCode
+  sealed trait deleted_terminating extends _FleetStateCode
   
   @js.native
   sealed trait deleting
@@ -25363,6 +25451,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsWorklinkMod._apiVersion
        with typings.awsDashSdk.clientsComprehendMod._apiVersion
        with typings.awsDashSdk.clientsSimpledbMod._apiVersion
+       with typings.awsDashSdk.clientsWorkmailmessageflowMod._apiVersion
        with typings.awsDashSdk.clientsCognitoidentityMod._apiVersion
        with typings.awsDashSdk.clientsMarketplacecommerceanalyticsMod._apiVersion
        with typings.awsDashSdk.clientsRoute53domainsMod._apiVersion
@@ -26591,9 +26680,6 @@ object awsDashSdkStrings {
   sealed trait `pending-deprovision` extends _ByoipCidrState
   
   @js.native
-  sealed trait `pending-fulfillment` extends _FleetActivityStatus
-  
-  @js.native
   sealed trait `pending-provision` extends _ByoipCidrState
   
   @js.native
@@ -26603,16 +26689,17 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsRdsMod._ApplyMethod
   
   @js.native
-  sealed trait `pending-termination` extends _FleetActivityStatus
-  
-  @js.native
   sealed trait pendingAcceptance extends _TransitGatewayAttachmentState
   
   @js.native
-  sealed trait pending_fulfillment extends _ActivityStatus
+  sealed trait pending_fulfillment
+    extends _ActivityStatus
+       with _FleetActivityStatus
   
   @js.native
-  sealed trait pending_termination extends _ActivityStatus
+  sealed trait pending_termination
+    extends _ActivityStatus
+       with _FleetActivityStatus
   
   @js.native
   sealed trait `performance-ebs-volume` extends _ReportInstanceReasonCodes
@@ -27232,6 +27319,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait rightPupil extends _LandmarkType
+  
+  @js.native
+  sealed trait rist
+    extends typings.awsDashSdk.clientsMediaconnectMod._Protocol
   
   @js.native
   sealed trait rk3288 extends _TargetDevice
@@ -28786,6 +28877,8 @@ object awsDashSdkStrings {
   def `2019-01-25`: `2019-01-25` = "2019-01-25".asInstanceOf[`2019-01-25`]
   @scala.inline
   def `2019-03-26`: `2019-03-26` = "2019-03-26".asInstanceOf[`2019-03-26`]
+  @scala.inline
+  def `2019-05-01`: `2019-05-01` = "2019-05-01".asInstanceOf[`2019-05-01`]
   @scala.inline
   def `2019-05-23`: `2019-05-23` = "2019-05-23".asInstanceOf[`2019-05-23`]
   @scala.inline
@@ -32509,6 +32602,34 @@ object awsDashSdkStrings {
   @scala.inline
   def H264_LEVEL_AUTO: H264_LEVEL_AUTO = "H264_LEVEL_AUTO".asInstanceOf[H264_LEVEL_AUTO]
   @scala.inline
+  def H265_LEVEL_1: H265_LEVEL_1 = "H265_LEVEL_1".asInstanceOf[H265_LEVEL_1]
+  @scala.inline
+  def H265_LEVEL_2: H265_LEVEL_2 = "H265_LEVEL_2".asInstanceOf[H265_LEVEL_2]
+  @scala.inline
+  def H265_LEVEL_2_1: H265_LEVEL_2_1 = "H265_LEVEL_2_1".asInstanceOf[H265_LEVEL_2_1]
+  @scala.inline
+  def H265_LEVEL_3: H265_LEVEL_3 = "H265_LEVEL_3".asInstanceOf[H265_LEVEL_3]
+  @scala.inline
+  def H265_LEVEL_3_1: H265_LEVEL_3_1 = "H265_LEVEL_3_1".asInstanceOf[H265_LEVEL_3_1]
+  @scala.inline
+  def H265_LEVEL_4: H265_LEVEL_4 = "H265_LEVEL_4".asInstanceOf[H265_LEVEL_4]
+  @scala.inline
+  def H265_LEVEL_4_1: H265_LEVEL_4_1 = "H265_LEVEL_4_1".asInstanceOf[H265_LEVEL_4_1]
+  @scala.inline
+  def H265_LEVEL_5: H265_LEVEL_5 = "H265_LEVEL_5".asInstanceOf[H265_LEVEL_5]
+  @scala.inline
+  def H265_LEVEL_5_1: H265_LEVEL_5_1 = "H265_LEVEL_5_1".asInstanceOf[H265_LEVEL_5_1]
+  @scala.inline
+  def H265_LEVEL_5_2: H265_LEVEL_5_2 = "H265_LEVEL_5_2".asInstanceOf[H265_LEVEL_5_2]
+  @scala.inline
+  def H265_LEVEL_6: H265_LEVEL_6 = "H265_LEVEL_6".asInstanceOf[H265_LEVEL_6]
+  @scala.inline
+  def H265_LEVEL_6_1: H265_LEVEL_6_1 = "H265_LEVEL_6_1".asInstanceOf[H265_LEVEL_6_1]
+  @scala.inline
+  def H265_LEVEL_6_2: H265_LEVEL_6_2 = "H265_LEVEL_6_2".asInstanceOf[H265_LEVEL_6_2]
+  @scala.inline
+  def H265_LEVEL_AUTO: H265_LEVEL_AUTO = "H265_LEVEL_AUTO".asInstanceOf[H265_LEVEL_AUTO]
+  @scala.inline
   def H323: H323 = "H323".asInstanceOf[H323]
   @scala.inline
   def HANDLE_TIME: HANDLE_TIME = "HANDLE_TIME".asInstanceOf[HANDLE_TIME]
@@ -33806,6 +33927,8 @@ object awsDashSdkStrings {
   def MAINTAIN_CADENCE: MAINTAIN_CADENCE = "MAINTAIN_CADENCE".asInstanceOf[MAINTAIN_CADENCE]
   @scala.inline
   def MAINTENANCE: MAINTENANCE = "MAINTENANCE".asInstanceOf[MAINTENANCE]
+  @scala.inline
+  def MAIN_10BIT: MAIN_10BIT = "MAIN_10BIT".asInstanceOf[MAIN_10BIT]
   @scala.inline
   def MAIN_422_10BIT_HIGH: MAIN_422_10BIT_HIGH = "MAIN_422_10BIT_HIGH".asInstanceOf[MAIN_422_10BIT_HIGH]
   @scala.inline
@@ -38799,9 +38922,9 @@ object awsDashSdkStrings {
   @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
   @scala.inline
-  def `deleted-running`: `deleted-running` = "deleted-running".asInstanceOf[`deleted-running`]
+  def deleted_running: deleted_running = "deleted_running".asInstanceOf[deleted_running]
   @scala.inline
-  def `deleted-terminating`: `deleted-terminating` = "deleted-terminating".asInstanceOf[`deleted-terminating`]
+  def deleted_terminating: deleted_terminating = "deleted_terminating".asInstanceOf[deleted_terminating]
   @scala.inline
   def deleting: deleting = "deleting".asInstanceOf[deleting]
   @scala.inline
@@ -40081,13 +40204,9 @@ object awsDashSdkStrings {
   @scala.inline
   def `pending-deprovision`: `pending-deprovision` = "pending-deprovision".asInstanceOf[`pending-deprovision`]
   @scala.inline
-  def `pending-fulfillment`: `pending-fulfillment` = "pending-fulfillment".asInstanceOf[`pending-fulfillment`]
-  @scala.inline
   def `pending-provision`: `pending-provision` = "pending-provision".asInstanceOf[`pending-provision`]
   @scala.inline
   def `pending-reboot`: `pending-reboot` = "pending-reboot".asInstanceOf[`pending-reboot`]
-  @scala.inline
-  def `pending-termination`: `pending-termination` = "pending-termination".asInstanceOf[`pending-termination`]
   @scala.inline
   def pendingAcceptance: pendingAcceptance = "pendingAcceptance".asInstanceOf[pendingAcceptance]
   @scala.inline
@@ -40418,6 +40537,8 @@ object awsDashSdkStrings {
   def rightEyeUp: rightEyeUp = "rightEyeUp".asInstanceOf[rightEyeUp]
   @scala.inline
   def rightPupil: rightPupil = "rightPupil".asInstanceOf[rightPupil]
+  @scala.inline
+  def rist: rist = "rist".asInstanceOf[rist]
   @scala.inline
   def rk3288: rk3288 = "rk3288".asInstanceOf[rk3288]
   @scala.inline

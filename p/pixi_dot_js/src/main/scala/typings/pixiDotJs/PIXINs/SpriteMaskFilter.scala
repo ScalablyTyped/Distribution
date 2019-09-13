@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The SpriteMaskFilter class
+  */
 @JSGlobal("PIXI.SpriteMaskFilter")
 @js.native
 class SpriteMaskFilter protected () extends Filter[SpriteMaskFilterUniforms] {

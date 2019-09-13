@@ -10,11 +10,11 @@ trait Transport extends js.Object {
     */
   var CidrAllowList: js.UndefOr[__listOf__string] = js.undefined
   /**
-    * The smoothing max bitrate for RTP and RTP-FEC streams.
+    * The smoothing max bitrate for RIST, RTP, and RTP-FEC streams.
     */
   var MaxBitrate: js.UndefOr[__integer] = js.undefined
   /**
-    * The maximum latency in milliseconds for Zixi-based streams.
+    * The maximum latency in milliseconds. This parameter applies only to RIST-based and Zixi-based streams.
     */
   var MaxLatency: js.UndefOr[__integer] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait Transport extends js.Object {
     */
   var RemoteId: js.UndefOr[__string] = js.undefined
   /**
-    * The smoothing latency in milliseconds for RTP and RTP-FEC streams.
+    * The smoothing latency in milliseconds for RIST, RTP, and RTP-FEC streams.
     */
   var SmoothingLatency: js.UndefOr[__integer] = js.undefined
   /**

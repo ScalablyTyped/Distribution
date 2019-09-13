@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DBClusterEndpoint extends js.Object {
   /**
-    * The type associated with a custom endpoint. One of: READER, ANY.
+    * The type associated with a custom endpoint. One of: READER, WRITER, ANY.
     */
   var CustomEndpointType: js.UndefOr[String] = js.undefined
   /**

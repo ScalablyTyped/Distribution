@@ -13,7 +13,7 @@ trait IDLTypeDescription extends js.Object {
     * If it is a generic type, it contains the IDL type description for the type in the sequence,
     * the eventual value of the promise, etc.
     */
-  var idlType: String | IDLTypeDescription | js.Array[IDLTypeDescription]
+  var idlType: String | js.Array[IDLTypeDescription]
   /** Boolean indicating whether this is nullable or not. */
   var nullable: Boolean
   /** Boolean indicating if it is a sequence. Same as generic === "sequence" */
@@ -27,7 +27,7 @@ trait IDLTypeDescription extends js.Object {
 object IDLTypeDescription {
   @scala.inline
   def apply(
-    idlType: String | IDLTypeDescription | js.Array[IDLTypeDescription],
+    idlType: String | js.Array[IDLTypeDescription],
     nullable: Boolean,
     sequence: Boolean,
     union: Boolean,

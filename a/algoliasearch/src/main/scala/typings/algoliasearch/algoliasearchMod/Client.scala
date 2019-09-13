@@ -23,19 +23,19 @@ trait Client extends js.Object {
   /**
     * Add global API Keys
     */
-  def addApiKey(scopes: js.Array[String]): js.Promise[Task] = js.native
+  def addApiKey(scopes: js.Array[String]): js.Promise[AddApiKeyTask] = js.native
   /**
     * Add global API Keys
     */
-  def addApiKey(scopes: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
-  def addApiKey(scopes: js.Array[String], options: ApiKeyOptions): js.Promise[Task] = js.native
+  def addApiKey(scopes: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ AddApiKeyTask, Unit]): Unit = js.native
+  def addApiKey(scopes: js.Array[String], options: ApiKeyOptions): js.Promise[AddApiKeyTask] = js.native
   /**
     * Add global API Key
     */
   def addApiKey(
     scopes: js.Array[String],
     options: ApiKeyOptions,
-    cb: js.Function2[/* err */ Error, /* res */ Task, Unit]
+    cb: js.Function2[/* err */ Error, /* res */ AddApiKeyTask, Unit]
   ): Unit = js.native
   /**
     * Perform multiple operations with one API call to reduce latency
@@ -70,11 +70,11 @@ trait Client extends js.Object {
   /**
     * Deletes a global key
     */
-  def deleteApiKey(key: String): js.Promise[Task] = js.native
+  def deleteApiKey(key: String): js.Promise[DeleteApiKeyTask] = js.native
   /**
     * Deletes a global key
     */
-  def deleteApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
+  def deleteApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ DeleteApiKeyTask, Unit]): Unit = js.native
   /**
     * Delete a specific index
     */
@@ -94,11 +94,11 @@ trait Client extends js.Object {
   /**
     * Gets the rights of a global key
     */
-  def getApiKey(key: String): js.Promise[_] = js.native
+  def getApiKey(key: String): js.Promise[ApiKey] = js.native
   /**
     * Gets the rights of a global key
     */
-  def getApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): Unit = js.native
+  def getApiKey(key: String, cb: js.Function2[/* err */ Error, /* res */ ApiKey, Unit]): Unit = js.native
   /**
     * Get the value of an extra header
     */
@@ -118,11 +118,11 @@ trait Client extends js.Object {
   /**
     * Lists global API Keys
     */
-  def listApiKeys(): js.Promise[_] = js.native
+  def listApiKeys(): js.Promise[js.Array[ApiKey]] = js.native
   /**
     * Lists global API Keys
     */
-  def listApiKeys(cb: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): Unit = js.native
+  def listApiKeys(cb: js.Function2[/* err */ Error, /* res */ js.Array[ApiKey], Unit]): Unit = js.native
   /**
     * List all your indices along with their associated information (number of entries, disk size, etc.)
     */
@@ -165,12 +165,16 @@ trait Client extends js.Object {
   /**
     * Update global API key
     */
-  def updateApiKey(key: String, scopes: js.Array[String]): js.Promise[Task] = js.native
+  def updateApiKey(key: String, scopes: js.Array[String]): js.Promise[UpdateApiKeyTask] = js.native
   /**
     * Update global API key
     */
-  def updateApiKey(key: String, scopes: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
-  def updateApiKey(key: String, scopes: js.Array[String], options: ApiKeyOptions): js.Promise[Task] = js.native
+  def updateApiKey(
+    key: String,
+    scopes: js.Array[String],
+    cb: js.Function2[/* err */ Error, /* res */ UpdateApiKeyTask, Unit]
+  ): Unit = js.native
+  def updateApiKey(key: String, scopes: js.Array[String], options: ApiKeyOptions): js.Promise[UpdateApiKeyTask] = js.native
   /**
     * Update global API key
     */
@@ -178,7 +182,7 @@ trait Client extends js.Object {
     key: String,
     scopes: js.Array[String],
     options: ApiKeyOptions,
-    cb: js.Function2[/* err */ Error, /* res */ Task, Unit]
+    cb: js.Function2[/* err */ Error, /* res */ UpdateApiKeyTask, Unit]
   ): Unit = js.native
 }
 

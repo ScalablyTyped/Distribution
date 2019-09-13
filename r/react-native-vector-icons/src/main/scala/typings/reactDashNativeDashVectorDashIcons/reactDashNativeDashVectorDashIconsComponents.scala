@@ -25,6 +25,8 @@ object reactDashNativeDashVectorDashIconsComponents extends reactDashNativeDashV
   @scala.inline
   def FontAwesome5Pro: ComponentType[FontAwesome5IconProps] = js.constructorOf[typings.reactDashNativeDashVectorDashIcons.fontAwesome5ProMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.FontAwesome5IconProps]]
   @scala.inline
+  def Fontisto: ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps] = js.constructorOf[typings.reactDashNativeDashVectorDashIcons.fontistoMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
+  @scala.inline
   def Foundation: ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps] = js.constructorOf[typings.reactDashNativeDashVectorDashIcons.foundationMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
   def Icon: ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps] = js.constructorOf[typings.reactDashNativeDashVectorDashIcons.iconMod.Icon].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]

@@ -5,6 +5,7 @@ import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactSt
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`20px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`28px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`2px`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`32px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`6px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`8px`
 import scala.scalajs.js
@@ -22,6 +23,7 @@ object personaPresenceSizeNs extends js.Object {
   val size16: `16px` = js.native
   val size20: `20px` = js.native
   val size28: `28px` = js.native
+  val size32: `32px` = js.native
   val size6: `6px` = js.native
   val size8: `8px` = js.native
 }

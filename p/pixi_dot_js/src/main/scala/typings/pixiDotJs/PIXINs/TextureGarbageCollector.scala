@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * TextureGarbageCollector. This class manages the GPU and ensures that it does not get clogged
+  * up with textures that are no longer being used.
+  */
 @JSGlobal("PIXI.TextureGarbageCollector")
 @js.native
 class TextureGarbageCollector protected () extends js.Object {

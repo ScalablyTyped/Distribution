@@ -1,6 +1,7 @@
 package typings.officeDashUiDashFabricDashReact.libPersonaMod
 
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`100px`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`120px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`16px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`20px`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`24px`
@@ -19,6 +20,7 @@ import scala.scalajs.js.annotation._
 object personaSizeNs extends js.Object {
   val size10: `20px` = js.native
   val size100: `100px` = js.native
+  val size120: `120px` = js.native
   val size16: `16px` = js.native
   val size24: `24px` = js.native
   val size28: `28px` = js.native

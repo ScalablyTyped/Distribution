@@ -3031,6 +3031,7 @@
 | 30 | [markdown-pdf](./m/markdown-pdf) | Markdown to PDF converter
 | 30 | [material__snackbar](./m/material__snackbar) | The Material Components for the web snackbar compo
 | 30 | [nats-hemera](./n/nats-hemera) | The core package of hemera
+| 30 | [npm-cache-filename](./n/npm-cache-filename) | Given a cache folder and url, return the appropria
 | 30 | [number-to-words](./n/number-to-words) | Contains some util methods for converting numbers 
 | 30 | [p-cancelable](./p/p-cancelable) | Create a promise that can be canceled
 | 30 | [paper](./p/paper) | The Swiss Army Knife of Vector Graphics Scripting
@@ -7026,6 +7027,7 @@
 | 0 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan
 | 0 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API"
 | 0 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a numb
+| 0 | [ssdeep](./s/ssdeep) | Node.js wrapper for the ssdeep fuzzy hashing libra
 | 0 | [staticmaps](./s/staticmaps) | A node.js library for creating map images with pol
 | 0 | [storybook__preact](./s/storybook__preact) | Storybook for Preact: Develop Preact Component in 
 | 0 | [stream-csv-as-json](./s/stream-csv-as-json) | Streams CSV files.
@@ -7059,7 +7061,6 @@
 | 0 | [touch-events](./t/touch-events) | Touch events using PEP
 | 0 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension
 | 0 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types
-| 0 | [ts3-nodejs-library](./t/ts3-nodejs-library) | TeamSpeak3 Server Query API
 | 0 | [turbostatus](./t/turbostatus) | CLI util to show status of repos in a main folder.
 | 0 | [tweenjs](./t/tweenjs) | TweenJS is a simple tweening library for use in Ja
 | 0 | [typed-github-api](./t/typed-github-api) | Client for GitHub API written in Typescript. Inclu

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PromoteReadReplicaMessage extends js.Object {
   /**
-    * The number of days to retain automated backups. Setting this parameter to a positive number enables backups. Setting this parameter to 0 disables automated backups. Default: 1 Constraints:   Must be a value from 0 to 8  
+    * The number of days for which automated backups are retained. Setting this parameter to a positive number enables backups. Setting this parameter to 0 disables automated backups. Default: 1 Constraints:   Must be a value from 0 to 35.   Can't be set to 0 if the DB instance is a source to Read Replicas.  
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   /**

@@ -36,6 +36,7 @@ trait ColumnProps extends js.Object {
   var loadingBody: js.UndefOr[js.Any] = js.undefined
   var onEditorCancel: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
   var onEditorSubmit: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
+  var rowEditor: js.UndefOr[Boolean] = js.undefined
   var rowReorder: js.UndefOr[Boolean] = js.undefined
   var rowReorderIcon: js.UndefOr[String] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
@@ -78,6 +79,7 @@ object ColumnProps {
     loadingBody: js.Any = null,
     onEditorCancel: /* props */ js.Any => Unit = null,
     onEditorSubmit: /* props */ js.Any => Unit = null,
+    rowEditor: js.UndefOr[Boolean] = js.undefined,
     rowReorder: js.UndefOr[Boolean] = js.undefined,
     rowReorderIcon: String = null,
     rowSpan: Int | Double = null,
@@ -117,6 +119,7 @@ object ColumnProps {
     if (loadingBody != null) __obj.updateDynamic("loadingBody")(loadingBody)
     if (onEditorCancel != null) __obj.updateDynamic("onEditorCancel")(js.Any.fromFunction1(onEditorCancel))
     if (onEditorSubmit != null) __obj.updateDynamic("onEditorSubmit")(js.Any.fromFunction1(onEditorSubmit))
+    if (!js.isUndefined(rowEditor)) __obj.updateDynamic("rowEditor")(rowEditor)
     if (!js.isUndefined(rowReorder)) __obj.updateDynamic("rowReorder")(rowReorder)
     if (rowReorderIcon != null) __obj.updateDynamic("rowReorderIcon")(rowReorderIcon)
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])

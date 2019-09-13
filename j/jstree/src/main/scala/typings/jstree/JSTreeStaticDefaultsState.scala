@@ -24,6 +24,12 @@ trait JSTreeStaticDefaultsState extends js.Object {
     */
   var key: String
   /**
+    * Should loaded nodes be restored (setting this to true means that it is possible that the whole tree will be loaded for some users - use with caution). Defaults to `false`
+    * @name $.jstree.defaults.state.preserve_loaded
+    * @plugin state
+    */
+  var preserve_loaded: Boolean
+  /**
     * Time in milliseconds after which the state will expire. Defaults to 'false' meaning - no expire.
     * @name $.jstree.defaults.state.ttl
     * @plugin state
@@ -33,8 +39,8 @@ trait JSTreeStaticDefaultsState extends js.Object {
 
 object JSTreeStaticDefaultsState {
   @scala.inline
-  def apply(events: String, filter: js.Any, key: String, ttl: js.Any): JSTreeStaticDefaultsState = {
-    val __obj = js.Dynamic.literal(events = events, filter = filter, key = key, ttl = ttl)
+  def apply(events: String, filter: js.Any, key: String, preserve_loaded: Boolean, ttl: js.Any): JSTreeStaticDefaultsState = {
+    val __obj = js.Dynamic.literal(events = events, filter = filter, key = key, preserve_loaded = preserve_loaded, ttl = ttl)
   
     __obj.asInstanceOf[JSTreeStaticDefaultsState]
   }

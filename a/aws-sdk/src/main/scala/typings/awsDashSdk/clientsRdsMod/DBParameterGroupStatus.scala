@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DBParameterGroupStatus extends js.Object {
   /**
-    * The name of the DP parameter group.
+    * The name of the DB parameter group.
     */
   var DBParameterGroupName: js.UndefOr[String] = js.undefined
   /**

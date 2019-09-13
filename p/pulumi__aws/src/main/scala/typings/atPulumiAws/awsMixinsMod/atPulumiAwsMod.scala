@@ -196,6 +196,7 @@ import typings.atPulumiAws.TypeofWAFRegional
 import typings.atPulumiAws.TypeofWorkDocs
 import typings.atPulumiAws.TypeofWorkLink
 import typings.atPulumiAws.TypeofWorkMail
+import typings.atPulumiAws.TypeofWorkMailMessageFlow
 import typings.atPulumiAws.TypeofWorkSpaces
 import typings.atPulumiAws.TypeofXRay
 import typings.awsDashSdk.libConfigMod.GlobalConfigInstance
@@ -665,6 +666,8 @@ object atPulumiAwsMod extends js.Object {
     var WorkLink: Instantiable0[typings.awsDashSdk.awsDashSdkMod.WorkLink] = js.native
     val WorkLinkNs: TypeofWorkLink = js.native
     var WorkMail: Instantiable0[typings.awsDashSdk.awsDashSdkMod.WorkMail] = js.native
+    var WorkMailMessageFlow: Instantiable0[typings.awsDashSdk.awsDashSdkMod.WorkMailMessageFlow] = js.native
+    val WorkMailMessageFlowNs: TypeofWorkMailMessageFlow = js.native
     val WorkMailNs: TypeofWorkMail = js.native
     var WorkSpaces: Instantiable0[typings.awsDashSdk.awsDashSdkMod.WorkSpaces] = js.native
     val WorkSpacesNs: TypeofWorkSpaces = js.native

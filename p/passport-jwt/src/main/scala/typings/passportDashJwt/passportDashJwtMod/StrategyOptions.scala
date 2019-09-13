@@ -19,6 +19,6 @@ trait StrategyOptions extends js.Object {
   var passReqToCallback: js.UndefOr[Boolean] = js.native
   var secretOrKey: js.UndefOr[String | Buffer] = js.native
   var secretOrKeyProvider: js.UndefOr[js.Any] = js.native
-  def jwtFromRequest(req: Request): String = js.native
+  def jwtFromRequest(req: Request): String | Null = js.native
 }
 

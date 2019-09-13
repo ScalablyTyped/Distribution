@@ -30,6 +30,9 @@ object htmlDashPdfStrings {
   sealed trait landscape extends js.Object
   
   @js.native
+  sealed trait manual extends js.Object
+  
+  @js.native
   sealed trait pdf extends js.Object
   
   @js.native
@@ -54,6 +57,8 @@ object htmlDashPdfStrings {
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
   @scala.inline

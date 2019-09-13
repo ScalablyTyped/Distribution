@@ -11,7 +11,7 @@ trait Response[T] extends js.Object {
     * If a search encounters an index that is being A/B tested, abTestVariantID
     * reports the variant ID of the index used (note, this is the ID not the name).
     * The variant ID is the position in the array of variants (starting at 1).
-    * 
+    *
     * For example, abTestVariantID=1 is variant A (the main index), abTestVariantID=2
     * is variant B (the replica you chose when creating the A/B test , or the queries
     * with the changed query parameters if the A/B test is based on query parameters).

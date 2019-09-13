@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pino-multi-stream"
-version := "3.1-dt-20190816Z-b35ac3"
+version := "3.1-dt-20190816Z-3f5465"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190903Z-da4655",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190830Z-44e8d1",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-61e58c",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-77d114",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190830Z-399f47",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-258b4e",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-f6e2d9",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

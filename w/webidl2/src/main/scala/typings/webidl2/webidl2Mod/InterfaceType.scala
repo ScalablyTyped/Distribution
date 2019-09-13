@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait InterfaceType extends IDLRootType {
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** A string giving the name of an interface this one inherits from, null otherwise. */
   var inheritance: String | Null
   /** An array of interface members (attributes, operations, etc.). Empty if there are none. */
@@ -23,7 +23,7 @@ trait InterfaceType extends IDLRootType {
 object InterfaceType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[IDLInterfaceMemberType],
     name: String,
     partial: Boolean,

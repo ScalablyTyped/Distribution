@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ExtendedAttributeRightHandSideIdentifierList extends js.Object {
   var `type`: `identifier-list`
-  var value: js.Array[String]
+  var value: js.Array[ExtendedAttributeRightHandSideIdentifier]
 }
 
 object ExtendedAttributeRightHandSideIdentifierList {
   @scala.inline
-  def apply(`type`: `identifier-list`, value: js.Array[String]): ExtendedAttributeRightHandSideIdentifierList = {
+  def apply(`type`: `identifier-list`, value: js.Array[ExtendedAttributeRightHandSideIdentifier]): ExtendedAttributeRightHandSideIdentifierList = {
     val __obj = js.Dynamic.literal(value = value)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExtendedAttributeRightHandSideIdentifierList]

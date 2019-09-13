@@ -28,6 +28,7 @@ package object clientsMediaconnectMod {
     - typings.awsDashSdk.awsDashSdkStrings.`rtp-fec`
     - typings.awsDashSdk.awsDashSdkStrings.rtp
     - typings.awsDashSdk.awsDashSdkStrings.`zixi-pull`
+    - typings.awsDashSdk.awsDashSdkStrings.rist
     - java.lang.String
   */
   type Protocol = _Protocol | String

@@ -38,7 +38,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var DBName: js.UndefOr[String] = js.undefined
   /**
-    * The name of the DB parameter group to associate with this DB instance. If this argument is omitted, the default parameter group for the specified engine is used. 
+    * The name of the DB parameter group to associate with this DB instance. If you do not specify a value for DBParameterGroupName, then the default DBParameterGroup for the specified DB engine is used.
     */
   var DBParameterGroupName: js.UndefOr[String] = js.undefined
   /**

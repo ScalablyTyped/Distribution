@@ -4,6 +4,7 @@ import typings.webidl2.webidl2Strings.Infinity
 import typings.webidl2.webidl2Strings.NaN
 import typings.webidl2.webidl2Strings.`null`
 import typings.webidl2.webidl2Strings.boolean
+import typings.webidl2.webidl2Strings.dictionary
 import typings.webidl2.webidl2Strings.number
 import typings.webidl2.webidl2Strings.sequence
 import typings.webidl2.webidl2Strings.string
@@ -13,14 +14,14 @@ import scala.scalajs.js.annotation._
 
 trait ValueDescription extends js.Object {
   var negative: Boolean | Null
-  var `type`: string | number | boolean | `null` | Infinity | NaN | sequence
+  var `type`: string | number | boolean | `null` | Infinity | NaN | sequence | dictionary
   var value: String | js.Array[_] | Null
 }
 
 object ValueDescription {
   @scala.inline
   def apply(
-    `type`: string | number | boolean | `null` | Infinity | NaN | sequence,
+    `type`: string | number | boolean | `null` | Infinity | NaN | sequence | dictionary,
     negative: js.UndefOr[Boolean] = js.undefined,
     value: String | js.Array[_] = null
   ): ValueDescription = {

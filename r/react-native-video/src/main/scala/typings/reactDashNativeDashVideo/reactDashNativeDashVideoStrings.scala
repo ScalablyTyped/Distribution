@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashVideoStrings {
   @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
   sealed trait `application/ttml+xml` extends js.Object
   
   @js.native
@@ -42,6 +45,9 @@ object reactDashNativeDashVideoStrings {
   sealed trait obey extends js.Object
   
   @js.native
+  sealed trait portrait extends js.Object
+  
+  @js.native
   sealed trait stretch extends js.Object
   
   @js.native
@@ -53,6 +59,8 @@ object reactDashNativeDashVideoStrings {
   @js.native
   sealed trait title extends js.Object
   
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def `application/ttml+xml`: `application/ttml+xml` = "application/ttml+xml".asInstanceOf[`application/ttml+xml`]
   @scala.inline
@@ -77,6 +85,8 @@ object reactDashNativeDashVideoStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def obey: obey = "obey".asInstanceOf[obey]
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline

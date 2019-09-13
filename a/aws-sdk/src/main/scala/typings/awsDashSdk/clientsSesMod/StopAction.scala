@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait StopAction extends js.Object {
   /**
-    * The name of the RuleSet that is being stopped.
+    * The scope of the StopAction. The only acceptable value is RuleSet.
     */
   var Scope: StopScope
   /**

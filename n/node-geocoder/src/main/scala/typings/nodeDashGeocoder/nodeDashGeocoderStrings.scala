@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object nodeDashGeocoderStrings {
   @js.native
-  sealed trait agol extends Providers
+  sealed trait agol extends js.Object
   
   @js.native
   sealed trait datasciencetoolkit extends Providers
@@ -19,10 +19,10 @@ object nodeDashGeocoderStrings {
   sealed trait geocodio extends Providers
   
   @js.native
-  sealed trait google extends Providers
+  sealed trait google extends js.Object
   
   @js.native
-  sealed trait here extends Providers
+  sealed trait here extends js.Object
   
   @js.native
   sealed trait http extends js.Object
@@ -43,13 +43,13 @@ object nodeDashGeocoderStrings {
   sealed trait opencage extends Providers
   
   @js.native
-  sealed trait opendatafrance extends Providers
+  sealed trait opendatafrance extends js.Object
   
   @js.native
   sealed trait openmapquest extends Providers
   
   @js.native
-  sealed trait openstreetmap extends Providers
+  sealed trait openstreetmap extends js.Object
   
   @js.native
   sealed trait pickpoint extends Providers
@@ -58,7 +58,7 @@ object nodeDashGeocoderStrings {
   sealed trait request extends js.Object
   
   @js.native
-  sealed trait smartyStreet extends Providers
+  sealed trait smartyStreet extends js.Object
   
   @js.native
   sealed trait teleport extends Providers

@@ -19,12 +19,12 @@ trait ELBv2 extends Service {
   @JSName("config")
   var config_ELBv2: ConfigBase with ClientConfiguration = js.native
   /**
-    * Adds the specified SSL server certificate to the certificate list for the specified HTTPS listener. If the certificate in already in the certificate list, the call is successful but the certificate is not added again. To get the certificate list for a listener, use DescribeListenerCertificates. To remove certificates from the certificate list for a listener, use RemoveListenerCertificates. To replace the default certificate for a listener, use ModifyListener. For more information, see SSL Certificates in the Application Load Balancers Guide.
+    * Adds the specified SSL server certificate to the certificate list for the specified HTTPS or TLS listener. If the certificate in already in the certificate list, the call is successful but the certificate is not added again. To get the certificate list for a listener, use DescribeListenerCertificates. To remove certificates from the certificate list for a listener, use RemoveListenerCertificates. To replace the default certificate for a listener, use ModifyListener. For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def addListenerCertificates(): Request[AddListenerCertificatesOutput, AWSError] = js.native
   def addListenerCertificates(callback: js.Function2[/* err */ AWSError, /* data */ AddListenerCertificatesOutput, Unit]): Request[AddListenerCertificatesOutput, AWSError] = js.native
   /**
-    * Adds the specified SSL server certificate to the certificate list for the specified HTTPS listener. If the certificate in already in the certificate list, the call is successful but the certificate is not added again. To get the certificate list for a listener, use DescribeListenerCertificates. To remove certificates from the certificate list for a listener, use RemoveListenerCertificates. To replace the default certificate for a listener, use ModifyListener. For more information, see SSL Certificates in the Application Load Balancers Guide.
+    * Adds the specified SSL server certificate to the certificate list for the specified HTTPS or TLS listener. If the certificate in already in the certificate list, the call is successful but the certificate is not added again. To get the certificate list for a listener, use DescribeListenerCertificates. To remove certificates from the certificate list for a listener, use RemoveListenerCertificates. To replace the default certificate for a listener, use ModifyListener. For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def addListenerCertificates(params: AddListenerCertificatesInput): Request[AddListenerCertificatesOutput, AWSError] = js.native
   def addListenerCertificates(
@@ -172,12 +172,12 @@ trait ELBv2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountLimitsOutput, Unit]
   ): Request[DescribeAccountLimitsOutput, AWSError] = js.native
   /**
-    * Describes the default certificate and the certificate list for the specified HTTPS listener. If the default certificate is also in the certificate list, it appears twice in the results (once with IsDefault set to true and once with IsDefault set to false). For more information, see SSL Certificates in the Application Load Balancers Guide.
+    * Describes the default certificate and the certificate list for the specified HTTPS or TLS listener. If the default certificate is also in the certificate list, it appears twice in the results (once with IsDefault set to true and once with IsDefault set to false). For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def describeListenerCertificates(): Request[DescribeListenerCertificatesOutput, AWSError] = js.native
   def describeListenerCertificates(callback: js.Function2[/* err */ AWSError, /* data */ DescribeListenerCertificatesOutput, Unit]): Request[DescribeListenerCertificatesOutput, AWSError] = js.native
   /**
-    * Describes the default certificate and the certificate list for the specified HTTPS listener. If the default certificate is also in the certificate list, it appears twice in the results (once with IsDefault set to true and once with IsDefault set to false). For more information, see SSL Certificates in the Application Load Balancers Guide.
+    * Describes the default certificate and the certificate list for the specified HTTPS or TLS listener. If the default certificate is also in the certificate list, it appears twice in the results (once with IsDefault set to true and once with IsDefault set to false). For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def describeListenerCertificates(params: DescribeListenerCertificatesInput): Request[DescribeListenerCertificatesOutput, AWSError] = js.native
   def describeListenerCertificates(
@@ -380,12 +380,12 @@ trait ELBv2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterTargetsOutput, Unit]
   ): Request[RegisterTargetsOutput, AWSError] = js.native
   /**
-    * Removes the specified certificate from the certificate list for the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+    * Removes the specified certificate from the certificate list for the specified HTTPS or TLS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
     */
   def removeListenerCertificates(): Request[RemoveListenerCertificatesOutput, AWSError] = js.native
   def removeListenerCertificates(callback: js.Function2[/* err */ AWSError, /* data */ RemoveListenerCertificatesOutput, Unit]): Request[RemoveListenerCertificatesOutput, AWSError] = js.native
   /**
-    * Removes the specified certificate from the certificate list for the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+    * Removes the specified certificate from the certificate list for the specified HTTPS or TLS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
     */
   def removeListenerCertificates(params: RemoveListenerCertificatesInput): Request[RemoveListenerCertificatesOutput, AWSError] = js.native
   def removeListenerCertificates(

@@ -53,25 +53,25 @@ trait JSTreeStatic extends js.Object {
   def reference(needle: String): JSTree = js.native
   def reference(needle: JQuery): JSTree = js.native
   /**
-  	 * get a reference to an existing instance
-  	 *
-  	 * __Examples__
-  	 *
-  	 *	// provided a container with an ID of "tree", and a nested node with an ID of "branch"
-  	 *	// all of there will return the same instance
-  	 *	$.jstree.reference('tree');
-  	 *	$.jstree.reference('#tree');
-  	 *	$.jstree.reference($('#tree'));
-  	 *	$.jstree.reference(document.getElementByID('tree'));
-  	 *	$.jstree.reference('branch');
-  	 *	$.jstree.reference('#branch');
-  	 *	$.jstree.reference($('#branch'));
-  	 *	$.jstree.reference(document.getElementByID('branch'));
-  	 *
-  	 * @name $.jstree.reference(needle)
-  	 * @param {DOMElement|jQuery|String} needle
-  	 * @return {jsTree|null} the instance or `null` if not found
-  	 */
+    * get a reference to an existing instance
+    *
+    * __Examples__
+    *
+    *  // provided a container with an ID of "tree", and a nested node with an ID of "branch"
+    *  // all of there will return the same instance
+    *  $.jstree.reference('tree');
+    *  $.jstree.reference('#tree');
+    *  $.jstree.reference($('#tree'));
+    *  $.jstree.reference(document.getElementByID('tree'));
+    *  $.jstree.reference('branch');
+    *  $.jstree.reference('#branch');
+    *  $.jstree.reference($('#branch'));
+    *  $.jstree.reference(document.getElementByID('branch'));
+    *
+    * @name $.jstree.reference(needle)
+    * @param {DOMElement|jQuery|String} needle
+    * @return {jsTree|null} the instance or `null` if not found
+    */
   def reference(needle: HTMLElement): JSTree = js.native
 }
 

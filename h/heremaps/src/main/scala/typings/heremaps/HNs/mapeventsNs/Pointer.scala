@@ -40,12 +40,6 @@ class Pointer protected () extends js.Object {
     opt_button: Button,
     opt_buttons: BitMask
   ) = this()
-}
-
-/* static members */
-@JSGlobal("H.mapevents.Pointer")
-@js.native
-object Pointer extends js.Object {
   var button: Button = js.native
   var dragTarget: Object | Map = js.native
   var id: Double = js.native

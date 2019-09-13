@@ -9,6 +9,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // sprites
+/**
+  * The Sprite object is the base for all textured objects that are rendered to the screen
+  *
+  * A sprite can be created directly from an image like this:
+  *
+  * ```js
+  * let sprite = new PIXI.Sprite.fromImage("assets/image.png");
+  * ```
+  *
+  * The more efficient way to create sprites is using a {@link PIXI.Spritesheet}:
+  *
+  * ```js
+  * PIXI.loader.add("assets/spritesheet.json").load(setup);
+  *
+  * function setup() {
+  *   let sheet = PIXI.loader.resources["assets/spritesheet.json"].spritesheet;
+  *   let sprite = new PIXI.Sprite(sheet.textures["image.png"]);
+  *   ...
+  * }
+  * ```
+  */
 @JSGlobal("PIXI.Sprite")
 @js.native
 class Sprite () extends Container {
@@ -33,8 +54,21 @@ class Sprite () extends Container {
   var vertexData: Float32Array = js.native
   var vertexTrimmedData: Float32Array = js.native
   /* protected */ def _onTextureUpdate(): Unit = js.native
+  /**
+    * calculates worldTransform * vertices for a non texture with a trim. store it in vertexTrimmedData
+    * This is used to ensure that the true width and height of a trimmed texture is respected
+    */
   /* protected */ def calculateTrimmedVertices(): Unit = js.native
+  /**
+    * calculates worldTransform * vertices, store it in vertexData
+    */
   def calculateVertices(): Unit = js.native
+  /**
+    * Tests if a point is inside this sprite
+    *
+    * @param point - the point to test
+    * @return the result of the test
+    */
   def containsPoint(point: Point): Boolean = js.native
   /* protected */ def onAnchorUpdate(): Unit = js.native
 }

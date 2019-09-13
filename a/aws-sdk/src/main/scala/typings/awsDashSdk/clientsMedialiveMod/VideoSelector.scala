@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait VideoSelector extends js.Object {
   /**
-    * Specifies the colorspace of an input. This setting works in tandem with colorSpaceConversion to determine if any conversion will be performed.
+    * Specifies the color space of an input. This setting works in tandem with colorSpaceUsage and a video description's colorSpaceSettingsChoice to determine if any conversion will be performed.
     */
   var ColorSpace: js.UndefOr[VideoSelectorColorSpace] = js.undefined
   /**

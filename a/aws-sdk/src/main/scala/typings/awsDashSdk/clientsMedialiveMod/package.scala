@@ -9,6 +9,7 @@ package object clientsMedialiveMod {
   import typings.awsDashSdk.awsDashSdkStrings.CORRECT_AUDIO
   import typings.awsDashSdk.awsDashSdkStrings.MONTHS
   import typings.awsDashSdk.awsDashSdkStrings.NO_UPFRONT
+  import typings.awsDashSdk.awsDashSdkStrings.PROGRESSIVE
   import typings.awsDashSdk.awsDashSdkStrings.TEMPORAL
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 
@@ -549,6 +550,7 @@ package object clientsMedialiveMod {
   type H264Profile = _H264Profile | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CBR
+    - typings.awsDashSdk.awsDashSdkStrings.MULTIPLEX
     - typings.awsDashSdk.awsDashSdkStrings.QVBR
     - typings.awsDashSdk.awsDashSdkStrings.VBR
     - java.lang.String
@@ -596,6 +598,96 @@ package object clientsMedialiveMod {
     - java.lang.String
   */
   type H264TimecodeInsertionBehavior = _H264TimecodeInsertionBehavior | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.HIGH
+    - typings.awsDashSdk.awsDashSdkStrings.HIGHER
+    - typings.awsDashSdk.awsDashSdkStrings.LOW
+    - typings.awsDashSdk.awsDashSdkStrings.MAX
+    - typings.awsDashSdk.awsDashSdkStrings.MEDIUM
+    - typings.awsDashSdk.awsDashSdkStrings.OFF
+    - java.lang.String
+  */
+  type H265AdaptiveQuantization = _H265AdaptiveQuantization | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.INSERT
+    - typings.awsDashSdk.awsDashSdkStrings.OMIT
+    - java.lang.String
+  */
+  type H265AlternativeTransferFunction = _H265AlternativeTransferFunction | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.IGNORE
+    - typings.awsDashSdk.awsDashSdkStrings.INSERT
+    - java.lang.String
+  */
+  type H265ColorMetadata = _H265ColorMetadata | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type H265FlickerAq = _H265FlickerAq | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.FRAMES
+    - typings.awsDashSdk.awsDashSdkStrings.SECONDS
+    - java.lang.String
+  */
+  type H265GopSizeUnits = _H265GopSizeUnits | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_1
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_2
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_2_1
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_3
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_3_1
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_4
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_4_1
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_5
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_5_1
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_5_2
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_6
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_6_1
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_6_2
+    - typings.awsDashSdk.awsDashSdkStrings.H265_LEVEL_AUTO
+    - java.lang.String
+  */
+  type H265Level = _H265Level | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.HIGH
+    - typings.awsDashSdk.awsDashSdkStrings.LOW
+    - typings.awsDashSdk.awsDashSdkStrings.MEDIUM
+    - java.lang.String
+  */
+  type H265LookAheadRateControl = _H265LookAheadRateControl | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.MAIN
+    - typings.awsDashSdk.awsDashSdkStrings.MAIN_10BIT
+    - java.lang.String
+  */
+  type H265Profile = _H265Profile | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CBR
+    - typings.awsDashSdk.awsDashSdkStrings.QVBR
+    - java.lang.String
+  */
+  type H265RateControlMode = _H265RateControlMode | String
+  type H265ScanType = PROGRESSIVE | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type H265SceneChangeDetect = _H265SceneChangeDetect | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.HIGH
+    - typings.awsDashSdk.awsDashSdkStrings.MAIN
+    - java.lang.String
+  */
+  type H265Tier = _H265Tier | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.PIC_TIMING_SEI
+    - java.lang.String
+  */
+  type H265TimecodeInsertionBehavior = _H265TimecodeInsertionBehavior | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ADOBE
     - typings.awsDashSdk.awsDashSdkStrings.ELEMENTAL
@@ -1002,6 +1094,12 @@ package object clientsMedialiveMod {
   */
   type Mp2CodingMode = _Mp2CodingMode | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.HEV1
+    - typings.awsDashSdk.awsDashSdkStrings.HVC1
+    - java.lang.String
+  */
+  type MsSmoothH265PackagingType = _MsSmoothH265PackagingType | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME
     - typings.awsDashSdk.awsDashSdkStrings.CHECK_CRYPTOGRAPHY_ONLY
     - java.lang.String
@@ -1263,6 +1361,7 @@ package object clientsMedialiveMod {
   type __integerMin0Max15 = Double
   type __integerMin0Max255 = Double
   type __integerMin0Max30 = Double
+  type __integerMin0Max32768 = Double
   type __integerMin0Max3600 = Double
   type __integerMin0Max500 = Double
   type __integerMin0Max600 = Double
@@ -1272,11 +1371,14 @@ package object clientsMedialiveMod {
   type __integerMin0Max8191 = Double
   type __integerMin1 = Double
   type __integerMin1000 = Double
+  type __integerMin100000Max40000000 = Double
+  type __integerMin100000Max80000000 = Double
   type __integerMin1000Max30000 = Double
   type __integerMin1Max10 = Double
   type __integerMin1Max1000000 = Double
   type __integerMin1Max16 = Double
   type __integerMin1Max20 = Double
+  type __integerMin1Max3003 = Double
   type __integerMin1Max31 = Double
   type __integerMin1Max32 = Double
   type __integerMin1Max3600 = Double

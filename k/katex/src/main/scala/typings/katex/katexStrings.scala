@@ -6,6 +6,24 @@ import scala.scalajs.js.annotation._
 
 object katexStrings {
   @js.native
+  sealed trait `(` extends js.Object
+  
+  @js.native
+  sealed trait `)` extends js.Object
+  
+  @js.native
+  sealed trait DOLLAR extends js.Object
+  
+  @js.native
+  sealed trait DOLLARDOLLAR extends js.Object
+  
+  @js.native
+  sealed trait `[` extends js.Object
+  
+  @js.native
+  sealed trait `]` extends js.Object
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -362,6 +380,18 @@ object katexStrings {
   @js.native
   sealed trait wbr extends js.Object
   
+  @scala.inline
+  def `(`: `(` = "(".asInstanceOf[`(`]
+  @scala.inline
+  def `)`: `)` = ")".asInstanceOf[`)`]
+  @scala.inline
+  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
+  @scala.inline
+  def DOLLARDOLLAR: DOLLARDOLLAR = "$$".asInstanceOf[DOLLARDOLLAR]
+  @scala.inline
+  def `[`: `[` = "[".asInstanceOf[`[`]
+  @scala.inline
+  def `]`: `]` = "]".asInstanceOf[`]`]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

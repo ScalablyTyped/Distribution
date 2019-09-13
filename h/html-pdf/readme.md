@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-pdf
 
-Typings are for version v2.1.0
+Typings are for version v2.2.0
 
 ## Library description:
 HTML to PDF converter that uses phantomjs

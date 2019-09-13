@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AvailabilityZone extends js.Object {
   /**
-    * [Network Load Balancers] The static IP address.
+    * [Network Load Balancers] If you need static IP addresses for your load balancer, you can specify one Elastic IP address per Availability Zone when you create the load balancer.
     */
   var LoadBalancerAddresses: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.LoadBalancerAddresses] = js.undefined
   /**
-    * The ID of the subnet.
+    * The ID of the subnet. You can specify one subnet per Availability Zone.
     */
   var SubnetId: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SubnetId] = js.undefined
   /**

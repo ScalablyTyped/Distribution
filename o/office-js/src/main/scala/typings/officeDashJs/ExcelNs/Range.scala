@@ -281,16 +281,13 @@ class Range () extends ClientObject {
   def autoFill(destinationRange: String, autoFillType: AutoFillType): Unit = js.native
   /**
     *
-    * Fills range from the current range to the destination range using the specified AutoFill logic. 
-    * The destination range can be null, or can extend the source either horizontally or vertically. 
-    * If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
-    * Discontiguous ranges are not supported.
+    * Fills range from the current range to the destination range using the specified AutoFill logic. The destination range must extend the source either horizontally or vertically.
     * 
     * For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param destinationRange The destination range to autofill.
+    * @param destinationRange The destination range to fill. Discontiguous ranges are not supported.
     * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
     */
   def autoFill(destinationRange: Range): Unit = js.native

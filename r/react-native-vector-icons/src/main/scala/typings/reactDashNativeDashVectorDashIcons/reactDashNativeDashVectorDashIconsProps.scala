@@ -27,6 +27,9 @@ trait reactDashNativeDashVectorDashIconsProps {
   type FontAwesome5Props = FontAwesome5IconProps
   type FontAwesome5ProProps = FontAwesome5IconProps
   @scala.inline
+  def FontistoProps: typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
+  type FontistoProps = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
+  @scala.inline
   def FoundationProps: typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type FoundationProps = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   @scala.inline

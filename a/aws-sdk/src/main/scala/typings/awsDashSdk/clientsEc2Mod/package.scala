@@ -481,8 +481,8 @@ package object clientsEc2Mod {
   type FilterList = js.Array[Filter]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.error
-    - typings.awsDashSdk.awsDashSdkStrings.`pending-fulfillment`
-    - typings.awsDashSdk.awsDashSdkStrings.`pending-termination`
+    - typings.awsDashSdk.awsDashSdkStrings.pending_fulfillment
+    - typings.awsDashSdk.awsDashSdkStrings.pending_termination
     - typings.awsDashSdk.awsDashSdkStrings.fulfilled
     - java.lang.String
   */
@@ -518,8 +518,8 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.active
     - typings.awsDashSdk.awsDashSdkStrings.deleted
     - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.`deleted-running`
-    - typings.awsDashSdk.awsDashSdkStrings.`deleted-terminating`
+    - typings.awsDashSdk.awsDashSdkStrings.deleted_running
+    - typings.awsDashSdk.awsDashSdkStrings.deleted_terminating
     - typings.awsDashSdk.awsDashSdkStrings.modifying
     - java.lang.String
   */

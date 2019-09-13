@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A set of functions used to handle masking.
+  */
 @JSGlobal("PIXI.CanvasMaskManager")
 @js.native
 class CanvasMaskManager protected () extends js.Object {

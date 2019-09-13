@@ -62,7 +62,7 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var Engine: String
   /**
-    * The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, or global.
+    * The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, global, or multimaster.
     */
   var EngineMode: js.UndefOr[String] = js.undefined
   /**

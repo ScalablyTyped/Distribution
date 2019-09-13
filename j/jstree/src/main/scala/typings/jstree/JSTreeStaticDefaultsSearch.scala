@@ -61,11 +61,11 @@ trait JSTreeStaticDefaultsSearch extends js.Object {
     */
   var show_only_matches: Boolean
   /**
-  	* Indicates if the children of matched element are shown (when show_only_matches is true)
-  	* This setting can be changed at runtime when calling the search method. Default is `false`.
-  	* @name $.jstree.defaults.search.show_only_matches_children
-  	* @plugin search
-  	*/
+    * Indicates if the children of matched element are shown (when show_only_matches is true)
+    * This setting can be changed at runtime when calling the search method. Default is `false`.
+    * @name $.jstree.defaults.search.show_only_matches_children
+    * @plugin search
+    */
   var show_only_matches_children: Boolean
 }
 

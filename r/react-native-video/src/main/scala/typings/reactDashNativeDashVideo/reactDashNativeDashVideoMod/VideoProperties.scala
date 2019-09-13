@@ -26,11 +26,14 @@ import typings.reactDashNativeDashVideo.Anon_Applicationttmlxml
 import typings.reactDashNativeDashVideo.Anon_Disabled
 import typings.reactDashNativeDashVideo.Anon_PlaybackRate
 import typings.reactDashNativeDashVideo.Anon_Uri
+import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.all
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.contain
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.cover
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.ignore
+import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.landscape
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.none
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.obey
+import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.portrait
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.stretch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,6 +46,8 @@ trait VideoProperties extends ViewProps {
   var currentTime: js.UndefOr[Double] = js.undefined
   var disableFocus: js.UndefOr[Boolean] = js.undefined
   var fullscreen: js.UndefOr[Boolean] = js.undefined
+  var fullscreenAutorotate: js.UndefOr[Boolean] = js.undefined
+  var fullscreenOrientation: js.UndefOr[all | landscape | portrait] = js.undefined
   var ignoreSilentSwitch: js.UndefOr[ignore | obey] = js.undefined
   var muted: js.UndefOr[Boolean] = js.undefined
   var onAudioBecomingNoisy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -127,6 +132,8 @@ object VideoProperties {
     currentTime: Int | Double = null,
     disableFocus: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
+    fullscreenAutorotate: js.UndefOr[Boolean] = js.undefined,
+    fullscreenOrientation: all | landscape | portrait = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     ignoreSilentSwitch: ignore | obey = null,
@@ -238,6 +245,8 @@ object VideoProperties {
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(fullscreenAutorotate)) __obj.updateDynamic("fullscreenAutorotate")(fullscreenAutorotate)
+    if (fullscreenOrientation != null) __obj.updateDynamic("fullscreenOrientation")(fullscreenOrientation.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (ignoreSilentSwitch != null) __obj.updateDynamic("ignoreSilentSwitch")(ignoreSilentSwitch.asInstanceOf[js.Any])

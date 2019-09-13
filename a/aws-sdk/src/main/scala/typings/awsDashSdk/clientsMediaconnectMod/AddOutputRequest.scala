@@ -42,7 +42,7 @@ trait AddOutputRequest extends js.Object {
     */
   var RemoteId: js.UndefOr[__string] = js.undefined
   /**
-    * The smoothing latency in milliseconds for RTP and RTP-FEC streams.
+    * The smoothing latency in milliseconds for RIST, RTP, and RTP-FEC streams.
     */
   var SmoothingLatency: js.UndefOr[__integer] = js.undefined
   /**

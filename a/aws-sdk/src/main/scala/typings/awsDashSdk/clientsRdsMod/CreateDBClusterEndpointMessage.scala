@@ -14,7 +14,7 @@ trait CreateDBClusterEndpointMessage extends js.Object {
     */
   var DBClusterIdentifier: String
   /**
-    * The type of the endpoint. One of: READER, ANY. 
+    * The type of the endpoint. One of: READER, WRITER, ANY.
     */
   var EndpointType: String
   /**

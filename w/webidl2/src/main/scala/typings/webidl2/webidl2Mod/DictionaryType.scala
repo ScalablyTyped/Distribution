@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DictionaryType extends IDLRootType {
   /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttributes]
+  var extAttrs: js.Array[ExtendedAttribute]
   /** A string indicating which dictionary is being inherited from, null otherwise. */
   var inheritance: String | Null
   /** An array of members (see below). */
@@ -22,7 +22,7 @@ trait DictionaryType extends IDLRootType {
 object DictionaryType {
   @scala.inline
   def apply(
-    extAttrs: js.Array[ExtendedAttributes],
+    extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[DictionaryMemberType],
     name: String,
     partial: Boolean,

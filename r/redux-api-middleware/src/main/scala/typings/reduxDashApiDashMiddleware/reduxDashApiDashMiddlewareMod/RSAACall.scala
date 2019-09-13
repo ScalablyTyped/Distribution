@@ -1,6 +1,13 @@
 package typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareMod
 
 import typings.reduxDashApiDashMiddleware.Fn_Init
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.DELETE
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.GET
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.HEAD
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.OPTIONS
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.PATCH
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.POST
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareStrings.PUT
 import typings.std.BodyInit
 import typings.std.HeadersInit
 import typings.std.RequestCredentials
@@ -17,13 +24,14 @@ trait RSAACall[State, Payload, Meta] extends js.Object {
   var endpoint: TypeOrResolver[State, String]
   var fetch: js.UndefOr[Fn_Init] = js.undefined
   var headers: js.UndefOr[TypeOrResolver[State, HeadersInit]] = js.undefined
-  var method: String
+  // `redux-api-middleware` strictly allows only this methods
+  var method: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS
   var ok: js.UndefOr[js.Function1[/* res */ Response, Boolean]] = js.undefined
   var options: js.UndefOr[TypeOrResolver[State, RequestInit]] = js.undefined
   var types: js.Tuple3[
-    String | js.Symbol | (RSAARequestTypeDescriptor[State, Payload, Meta]), 
-    String | js.Symbol | (RSAASuccessTypeDescriptor[State, Payload, Meta]), 
-    String | js.Symbol | (RSAAFailureTypeDescriptor[State, Payload, Meta])
+    RSAARequestType[State, Payload, Meta], 
+    RSAASuccessType[State, Payload, Meta], 
+    RSAAFailureType[State, Payload, Meta]
   ]
 }
 
@@ -31,11 +39,11 @@ object RSAACall {
   @scala.inline
   def apply[State, Payload, Meta](
     endpoint: TypeOrResolver[State, String],
-    method: String,
+    method: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS,
     types: js.Tuple3[
-      String | js.Symbol | (RSAARequestTypeDescriptor[State, Payload, Meta]), 
-      String | js.Symbol | (RSAASuccessTypeDescriptor[State, Payload, Meta]), 
-      String | js.Symbol | (RSAAFailureTypeDescriptor[State, Payload, Meta])
+      RSAARequestType[State, Payload, Meta], 
+      RSAASuccessType[State, Payload, Meta], 
+      RSAAFailureType[State, Payload, Meta]
     ],
     bailout: TypeOrResolver[State, Boolean] = null,
     body: TypeOrResolver[State, BodyInit | Null] = null,
@@ -45,7 +53,7 @@ object RSAACall {
     ok: /* res */ Response => Boolean = null,
     options: TypeOrResolver[State, RequestInit] = null
   ): RSAACall[State, Payload, Meta] = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], method = method, types = types)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], types = types)
     if (bailout != null) __obj.updateDynamic("bailout")(bailout.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)

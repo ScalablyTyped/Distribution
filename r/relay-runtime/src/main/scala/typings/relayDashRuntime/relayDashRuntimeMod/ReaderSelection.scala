@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.relayDashRuntime.relayDashRuntimeMod.ReaderCondition
+  - typings.relayDashRuntime.relayDashRuntimeMod.ReaderClientExtension
   - typings.relayDashRuntime.relayDashRuntimeMod.ReaderField
   - typings.relayDashRuntime.relayDashRuntimeMod.ReaderFragmentSpread
   - typings.relayDashRuntime.relayDashRuntimeMod.ReaderInlineFragment

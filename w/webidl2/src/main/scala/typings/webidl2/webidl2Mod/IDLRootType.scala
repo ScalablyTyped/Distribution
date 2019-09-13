@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
   - typings.webidl2.webidl2Mod.DictionaryType
   - typings.webidl2.webidl2Mod.EnumType
   - typings.webidl2.webidl2Mod.TypedefType
-  - typings.webidl2.webidl2Mod.ImplementsType
   - typings.webidl2.webidl2Mod.IncludesType
 */
 trait IDLRootType extends js.Object
