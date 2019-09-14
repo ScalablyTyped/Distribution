@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-upload"
-version := "8.0-dt-20190826Z-3d72f7"
+version := "8.0-dt-20190826Z-81d9bf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-915bef",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-48acfb",
   "org.scalablytyped" %%% "fs-capacitor" % "2.0-dt-20190509Z-9ca789",
-  "org.scalablytyped" %%% "graphql" % "14.5.4-73f550",
+  "org.scalablytyped" %%% "graphql" % "14.5.5-67e081",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9360b6",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-f7b87a",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",

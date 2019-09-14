@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openid-client"
-version := "3.7.1-e84e59"
+version := "3.7.2-857aeb"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

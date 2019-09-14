@@ -99,7 +99,7 @@ trait ToolbarAndroidProps extends ViewProps {
 object ToolbarAndroidProps {
   @scala.inline
   def apply(
-    accessibilityActions: js.Array[String] = null,
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,
@@ -124,7 +124,7 @@ object ToolbarAndroidProps {
     nativeID: String = null,
     navIcon: ImageURISource = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: () => Unit = null,
+    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onActionSelected: /* position */ Double => Unit = null,
     onIconClicked: () => Unit = null,
@@ -191,7 +191,7 @@ object ToolbarAndroidProps {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (navIcon != null) __obj.updateDynamic("navIcon")(navIcon)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onActionSelected != null) __obj.updateDynamic("onActionSelected")(js.Any.fromFunction1(onActionSelected))
     if (onIconClicked != null) __obj.updateDynamic("onIconClicked")(js.Any.fromFunction0(onIconClicked))

@@ -1,5 +1,7 @@
 package typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod
 
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
@@ -46,6 +48,7 @@ trait MKSwitchProperties extends TouchableWithoutFeedbackProps {
 object MKSwitchProperties {
   @scala.inline
   def apply(
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,
@@ -56,6 +59,7 @@ object MKSwitchProperties {
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     checked: js.UndefOr[Boolean] = js.undefined,
     delayLongPress: Int | Double = null,
@@ -66,6 +70,7 @@ object MKSwitchProperties {
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     offColor: String = null,
+    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
     onCheckedChange: /* opts */ Anon_Checked => Unit = null,
@@ -91,6 +96,7 @@ object MKSwitchProperties {
     tvParallaxProperties: TVParallaxProperties = null
   ): MKSwitchProperties = {
     val __obj = js.Dynamic.literal()
+    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
@@ -101,6 +107,7 @@ object MKSwitchProperties {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState)
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
@@ -111,6 +118,7 @@ object MKSwitchProperties {
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (offColor != null) __obj.updateDynamic("offColor")(offColor)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCheckedChange != null) __obj.updateDynamic("onCheckedChange")(js.Any.fromFunction1(onCheckedChange))

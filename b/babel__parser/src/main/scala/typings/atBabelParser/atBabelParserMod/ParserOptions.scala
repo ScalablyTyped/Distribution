@@ -25,6 +25,11 @@ trait ParserOptions extends js.Object {
   var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined
   var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.undefined
   /**
+    * By default, exported identifiers must refer to a declared variable.
+    * Set this to true to allow export statements to reference undeclared variables.
+    */
+  var allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined
+  /**
     * By default, the parser adds information about parentheses by setting
     * `extra.parenthesized` to `true` as needed.
     * When this option is `true` the parser creates `ParenthesizedExpression`
@@ -76,6 +81,7 @@ object ParserOptions {
     allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined,
     allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined,
     allowSuperOutsideMethod: js.UndefOr[Boolean] = js.undefined,
+    allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined,
     createParenthesizedExpressions: js.UndefOr[Boolean] = js.undefined,
     plugins: js.Array[ParserPlugin] = null,
     ranges: js.UndefOr[Boolean] = js.undefined,
@@ -90,6 +96,7 @@ object ParserOptions {
     if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere)
     if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
     if (!js.isUndefined(allowSuperOutsideMethod)) __obj.updateDynamic("allowSuperOutsideMethod")(allowSuperOutsideMethod)
+    if (!js.isUndefined(allowUndeclaredExports)) __obj.updateDynamic("allowUndeclaredExports")(allowUndeclaredExports)
     if (!js.isUndefined(createParenthesizedExpressions)) __obj.updateDynamic("createParenthesizedExpressions")(createParenthesizedExpressions)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges)

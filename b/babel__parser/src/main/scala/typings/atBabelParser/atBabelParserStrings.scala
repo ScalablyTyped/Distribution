@@ -61,6 +61,9 @@ object atBabelParserStrings {
   sealed trait jsx extends _ParserPlugin
   
   @js.native
+  sealed trait logicalAssignment extends _ParserPlugin
+  
+  @js.native
   sealed trait minimal extends js.Object
   
   @js.native
@@ -82,7 +85,13 @@ object atBabelParserStrings {
   sealed trait optionalChaining extends _ParserPlugin
   
   @js.native
+  sealed trait partialApplication extends _ParserPlugin
+  
+  @js.native
   sealed trait pipelineOperator extends _ParserPlugin
+  
+  @js.native
+  sealed trait placeholders extends _ParserPlugin
   
   @js.native
   sealed trait script extends js.Object
@@ -98,6 +107,9 @@ object atBabelParserStrings {
   
   @js.native
   sealed trait unambiguous extends js.Object
+  
+  @js.native
+  sealed trait v8intrinsic extends _ParserPlugin
   
   @scala.inline
   def asyncGenerators: asyncGenerators = "asyncGenerators".asInstanceOf[asyncGenerators]
@@ -136,6 +148,8 @@ object atBabelParserStrings {
   @scala.inline
   def jsx: jsx = "jsx".asInstanceOf[jsx]
   @scala.inline
+  def logicalAssignment: logicalAssignment = "logicalAssignment".asInstanceOf[logicalAssignment]
+  @scala.inline
   def minimal: minimal = "minimal".asInstanceOf[minimal]
   @scala.inline
   def module: module = "module".asInstanceOf[module]
@@ -150,7 +164,11 @@ object atBabelParserStrings {
   @scala.inline
   def optionalChaining: optionalChaining = "optionalChaining".asInstanceOf[optionalChaining]
   @scala.inline
+  def partialApplication: partialApplication = "partialApplication".asInstanceOf[partialApplication]
+  @scala.inline
   def pipelineOperator: pipelineOperator = "pipelineOperator".asInstanceOf[pipelineOperator]
+  @scala.inline
+  def placeholders: placeholders = "placeholders".asInstanceOf[placeholders]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
@@ -161,5 +179,7 @@ object atBabelParserStrings {
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline
   def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
+  @scala.inline
+  def v8intrinsic: v8intrinsic = "v8intrinsic".asInstanceOf[v8intrinsic]
 }
 

@@ -35,6 +35,7 @@ object TemplateBuilderOptions {
     allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined,
     allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined,
     allowSuperOutsideMethod: js.UndefOr[Boolean] = js.undefined,
+    allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined,
     createParenthesizedExpressions: js.UndefOr[Boolean] = js.undefined,
     placeholderPattern: RegExp | `false` = null,
     placeholderWhitelist: Set[String] = null,
@@ -52,6 +53,7 @@ object TemplateBuilderOptions {
     if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere)
     if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
     if (!js.isUndefined(allowSuperOutsideMethod)) __obj.updateDynamic("allowSuperOutsideMethod")(allowSuperOutsideMethod)
+    if (!js.isUndefined(allowUndeclaredExports)) __obj.updateDynamic("allowUndeclaredExports")(allowUndeclaredExports)
     if (!js.isUndefined(createParenthesizedExpressions)) __obj.updateDynamic("createParenthesizedExpressions")(createParenthesizedExpressions)
     if (placeholderPattern != null) __obj.updateDynamic("placeholderPattern")(placeholderPattern.asInstanceOf[js.Any])
     if (placeholderWhitelist != null) __obj.updateDynamic("placeholderWhitelist")(placeholderWhitelist)

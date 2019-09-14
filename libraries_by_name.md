@@ -2829,6 +2829,7 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
+| [ineum](./i/ineum) | - | - |
 | [inflation](./i/inflation) | Easily unzip an HTTP stream | decompress, unzip, inflate, zlib, gunzip |
 | [inflected](./i/inflected) | A port of ActiveSupport's inflector to Node.js | inflector, inflection, pluralize, singularize, camelize, titleize, tableize, humanize, capitalize, constantify, dasherize, ordinalize, parameterize, transliterate, activesupport |
 | [inflection](./i/inflection) | A port of inflection-js to node.js module | inflection, inflections, inflection-js, pluralize, singularize, camelize, underscore, humanize, capitalize, dasherize, titleize, demodulize, tableize, classify, foreign_key, ordinalize |

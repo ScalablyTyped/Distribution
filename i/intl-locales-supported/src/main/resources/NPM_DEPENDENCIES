@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "intl-locales-supported" : "1.4.7"
+      "intl-locales-supported" : "1.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "intl-locales-supported" : "1.4.7"
+      "intl-locales-supported" : "1.4.8"
     }
   ],
   "compile-devDependencies" : [

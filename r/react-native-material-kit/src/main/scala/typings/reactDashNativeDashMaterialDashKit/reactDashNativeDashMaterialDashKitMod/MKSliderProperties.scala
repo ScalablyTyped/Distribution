@@ -1,5 +1,7 @@
 package typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod
 
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
@@ -34,7 +36,7 @@ trait MKSliderProperties extends BaseSlider {
 object MKSliderProperties {
   @scala.inline
   def apply(
-    accessibilityActions: js.Array[String] = null,
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,
@@ -57,7 +59,7 @@ object MKSliderProperties {
     min: Int | Double = null,
     nativeID: String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: () => Unit = null,
+    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onChange: /* value */ Double => Unit = null,
     onConfirm: () => Unit = null,
@@ -122,7 +124,7 @@ object MKSliderProperties {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction0(onConfirm))

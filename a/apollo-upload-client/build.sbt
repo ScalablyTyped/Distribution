@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "apollo-upload-client"
-version := "8.1-dt-20190827Z-0758e7"
+version := "8.1-dt-20190827Z-0d844b"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.12-4d60e6",
-  "org.scalablytyped" %%% "apollo-link-http-common" % "0.2.15-c0458d",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.12-645210",
+  "org.scalablytyped" %%% "apollo-link-http-common" % "0.2.15-f91449",
   "org.scalablytyped" %%% "extract-files" % "3.1-dt-20180516Z-06d8af",
-  "org.scalablytyped" %%% "graphql" % "14.5.4-73f550",
+  "org.scalablytyped" %%% "graphql" % "14.5.5-67e081",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "ts-invariant" % "0.4.4-a20522",

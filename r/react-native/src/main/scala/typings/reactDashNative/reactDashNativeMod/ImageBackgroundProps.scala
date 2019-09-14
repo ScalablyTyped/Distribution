@@ -26,6 +26,7 @@ object ImageBackgroundProps {
   @scala.inline
   def apply(
     source: ImageSourcePropType,
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,
@@ -36,6 +37,7 @@ object ImageBackgroundProps {
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     blurRadius: Int | Double = null,
     borderBottomLeftRadius: Int | Double = null,
@@ -51,6 +53,7 @@ object ImageBackgroundProps {
     imageStyle: StyleProp[ImageStyle] = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     loadingIndicatorSource: ImageURISource = null,
+    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onError: /* error */ NativeSyntheticEvent[ImageErrorEventData] => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
@@ -68,6 +71,7 @@ object ImageBackgroundProps {
     width: Int | Double = null
   ): ImageBackgroundProps = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
@@ -78,6 +82,7 @@ object ImageBackgroundProps {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState)
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
     if (borderBottomLeftRadius != null) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.asInstanceOf[js.Any])
@@ -93,6 +98,7 @@ object ImageBackgroundProps {
     if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))

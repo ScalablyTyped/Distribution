@@ -12,6 +12,8 @@ package object reactDashNativeMod {
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.ReactElement
   import typings.reactDashNative.AccessibilityChangeEvent
+  import typings.reactDashNative.Anon_ActionName
+  import typings.reactDashNative.Anon_Label
   import typings.reactDashNative.Anon_RegisteredStyleBrand
   import typings.reactDashNative.NodeHandle
   import typings.reactDashNative.reactDashNativeNumbers.`false`
@@ -19,6 +21,8 @@ package object reactDashNativeMod {
   import typings.reactDashNative.reactDashNativeStrings.hardwareBackPress
 
   type ART = ARTStatic
+  type AccessibilityActionEvent = NativeSyntheticEvent[Anon_ActionName]
+  type AccessibilityActionInfo = Anon_Label
   type AccessibilityEvent = AccessibilityChangeEvent | AccessibilityAnnoucementFinishedEvent
   type AccessibilityInfo = AccessibilityInfoStatic
   type ActionSheetIOS = ActionSheetIOSStatic

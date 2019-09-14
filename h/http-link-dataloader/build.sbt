@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "http-link-dataloader"
-version := "0.1.6-364e6b"
+version := "0.1.6-2951bd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.12-4d60e6",
-  "org.scalablytyped" %%% "graphql" % "14.5.4-73f550",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.12-645210",
+  "org.scalablytyped" %%% "graphql" % "14.5.5-67e081",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.19-8a9e63")
 publishArtifact in packageDoc := false

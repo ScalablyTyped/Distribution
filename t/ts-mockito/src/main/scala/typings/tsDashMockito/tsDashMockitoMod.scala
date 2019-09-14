@@ -79,7 +79,7 @@ object tsDashMockitoMod extends js.Object {
       _
     ]
   ): ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
-  def deepEqual(expectedValue: js.Any): js.Any = js.native
+  def deepEqual[T](expectedValue: T): T = js.native
   def instance[T](mockedValue: T): T = js.native
   def `match`(expectedValue: String): js.Any = js.native
   def `match`(expectedValue: RegExp): js.Any = js.native
@@ -113,7 +113,7 @@ object tsDashMockitoMod extends js.Object {
     @JSName("capture")
     var capture_Original: Fn_A = js.native
     @JSName("deepEqual")
-    var deepEqual_Original: js.Function1[/* expectedValue */ js.Any, _] = js.native
+    var deepEqual_Original: Fn_ExpectedValue = js.native
     @JSName("instance")
     var instance_Original: Fn_MockedValue = js.native
     @JSName("match")
@@ -193,7 +193,7 @@ object tsDashMockitoMod extends js.Object {
           _
         ]
     ): ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
-    def deepEqual(expectedValue: js.Any): js.Any = js.native
+    def deepEqual[T](expectedValue: T): T = js.native
     def instance[T](mockedValue: T): T = js.native
     def `match`(expectedValue: String): js.Any = js.native
     def `match`(expectedValue: RegExp): js.Any = js.native

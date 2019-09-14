@@ -1,5 +1,7 @@
 package typings.reactDashNavigation.reactDashNavigationMod
 
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
@@ -38,7 +40,7 @@ trait NavigationEventsProps extends ViewProps {
 object NavigationEventsProps {
   @scala.inline
   def apply(
-    accessibilityActions: js.Array[String] = null,
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,
@@ -59,7 +61,7 @@ object NavigationEventsProps {
     nativeID: String = null,
     navigation: NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams] = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: () => Unit = null,
+    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onDidBlur: NavigationEventCallback = null,
     onDidFocus: NavigationEventCallback = null,
@@ -118,7 +120,7 @@ object NavigationEventsProps {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (navigation != null) __obj.updateDynamic("navigation")(navigation)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onDidBlur != null) __obj.updateDynamic("onDidBlur")(onDidBlur)
     if (onDidFocus != null) __obj.updateDynamic("onDidFocus")(onDidFocus)

@@ -32,6 +32,7 @@ object defaultStandardCss extends js.Object {
   var checkbox: Anon_Column = js.native
   var comment: String = js.native
   var completedPage: String = js.native
+  var container: String = js.native
   var dropdown: Anon_Control = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native

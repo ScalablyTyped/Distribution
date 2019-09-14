@@ -9,6 +9,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositionin
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,9 +43,15 @@ trait ICalloutProps extends HTMLAttributes[HTMLDivElement] {
     */
   var beakWidth: js.UndefOr[Double] = js.undefined
   /**
-    * The bounding rectangle for which  the contextual menu can appear in.
+    * The bounding rectangle (or callback that returns a rectangle) for which  the contextual menu can appear in.
     */
-  var bounds: js.UndefOr[IRectangle] = js.undefined
+  var bounds: js.UndefOr[
+    IRectangle | (js.Function2[
+      /* target */ js.UndefOr[Target], 
+      /* targetWindow */ js.UndefOr[Window], 
+      js.UndefOr[IRectangle]
+    ])
+  ] = js.undefined
   /**
     * Set max height of callout
     * When not set the callout will expand with contents up to the bottom of the screen
@@ -191,7 +198,11 @@ object ICalloutProps {
     ariaLabelledBy: String = null,
     backgroundColor: String = null,
     beakWidth: Int | Double = null,
-    bounds: IRectangle = null,
+    bounds: IRectangle | (js.Function2[
+      /* target */ js.UndefOr[Target], 
+      /* targetWindow */ js.UndefOr[Window], 
+      js.UndefOr[IRectangle]
+    ]) = null,
     calloutMaxHeight: Int | Double = null,
     calloutMaxWidth: Int | Double = null,
     calloutWidth: Int | Double = null,
@@ -231,7 +242,7 @@ object ICalloutProps {
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (calloutMaxHeight != null) __obj.updateDynamic("calloutMaxHeight")(calloutMaxHeight.asInstanceOf[js.Any])
     if (calloutMaxWidth != null) __obj.updateDynamic("calloutMaxWidth")(calloutMaxWidth.asInstanceOf[js.Any])
     if (calloutWidth != null) __obj.updateDynamic("calloutWidth")(calloutWidth.asInstanceOf[js.Any])

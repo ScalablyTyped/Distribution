@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.relayDashRuntime.relayDashRuntimeMod.NormalizationCondition
+  - typings.relayDashRuntime.relayDashRuntimeMod.NormalizationClientExtension
   - typings.relayDashRuntime.relayDashRuntimeMod.NormalizationField
   - typings.relayDashRuntime.relayDashRuntimeMod.NormalizationHandle
   - typings.relayDashRuntime.relayDashRuntimeMod.NormalizationInlineFragment

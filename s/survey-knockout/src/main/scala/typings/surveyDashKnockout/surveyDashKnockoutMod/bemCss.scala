@@ -34,6 +34,7 @@ object bemCss extends js.Object {
   var checkbox: Anon_Column = js.native
   var comment: Anon_RootSmall = js.native
   var completedPage: String = js.native
+  var container: String = js.native
   var dropdown: Anon_ControlOnError = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native

@@ -140,6 +140,8 @@ trait ITextFieldProps extends AllHTMLAttributes[HTMLInputElement | HTMLTextAreaE
   var onRenderDescription: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
   /**
     * Custom renderer for the label.
+    * If you don't call defaultRender, ensure that you give your custom-rendered label an id and that
+    * you set the textfield's aria-labelledby prop to that id.
     */
   var onRenderLabel: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
   /**

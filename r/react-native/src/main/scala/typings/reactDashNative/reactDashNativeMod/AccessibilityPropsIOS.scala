@@ -23,6 +23,11 @@ trait AccessibilityPropsIOS extends js.Object {
     */
   var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   /**
+    * A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver.
+    * @platform ios
+    */
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
+  /**
     * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
     * @platform ios
     */
@@ -40,6 +45,7 @@ object AccessibilityPropsIOS {
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityTap: () => Unit = null,
     onMagicTap: () => Unit = null
   ): AccessibilityPropsIOS = {
@@ -47,6 +53,7 @@ object AccessibilityPropsIOS {
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
     if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     __obj.asInstanceOf[AccessibilityPropsIOS]
