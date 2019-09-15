@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object randomDashIntMod extends js.Object {
   def apply(): Double = js.native
-  def apply(maximumValue: Double): Double = js.native
-  def apply(minimumValue: Double, maximumValue: Double): Double = js.native
+  def apply(minimum: Double): Double = js.native
+  def apply(minimum: Double, maximum: Double): Double = js.native
 }
 

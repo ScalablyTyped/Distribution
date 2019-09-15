@@ -11,6 +11,7 @@ trait Additions extends js.Object {
   var selectedPanel: js.UndefOr[String] = js.undefined
   var showNav: js.UndefOr[Boolean] = js.undefined
   var showPanel: js.UndefOr[Boolean] = js.undefined
+  var viewMode: js.UndefOr[String] = js.undefined
 }
 
 object Additions {
@@ -20,7 +21,8 @@ object Additions {
     panelPosition: PanelPositions = null,
     selectedPanel: String = null,
     showNav: js.UndefOr[Boolean] = js.undefined,
-    showPanel: js.UndefOr[Boolean] = js.undefined
+    showPanel: js.UndefOr[Boolean] = js.undefined,
+    viewMode: String = null
   ): Additions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(isFullscreen)) __obj.updateDynamic("isFullscreen")(isFullscreen)
@@ -28,6 +30,7 @@ object Additions {
     if (selectedPanel != null) __obj.updateDynamic("selectedPanel")(selectedPanel)
     if (!js.isUndefined(showNav)) __obj.updateDynamic("showNav")(showNav)
     if (!js.isUndefined(showPanel)) __obj.updateDynamic("showPanel")(showPanel)
+    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode)
     __obj.asInstanceOf[Additions]
   }
 }

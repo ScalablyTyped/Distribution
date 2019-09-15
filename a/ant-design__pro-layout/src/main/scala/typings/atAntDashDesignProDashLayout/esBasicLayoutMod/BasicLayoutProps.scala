@@ -2,6 +2,7 @@ package typings.atAntDashDesignProDashLayout.esBasicLayoutMod
 
 import typings.antd.esBreadcrumbBreadcrumbMod.Route
 import typings.antd.esMenuMenuContextMod.MenuTheme
+import typings.antd.libMenuMod.MenuProps
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlboolean
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
@@ -33,6 +34,10 @@ import scala.scalajs.js.annotation._
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
+  /**
+    * 是否禁用移动端模式，有的管理系统不需要移动端模式，此属性设置为true即可
+    */
+  var disableMobile: js.UndefOr[Boolean] = js.undefined
   var fixSiderbar: js.UndefOr[Boolean] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   var footerRender: js.UndefOr[
@@ -84,6 +89,7 @@ object BasicLayoutProps {
     collapsed: js.UndefOr[Boolean] = js.undefined,
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
     contentWidth: ContentWidth = null,
+    disableMobile: js.UndefOr[Boolean] = js.undefined,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     footerRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
@@ -101,6 +107,7 @@ object BasicLayoutProps {
     menuItemRender: WithFalse[
       js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ] = null,
+    menuProps: MenuProps = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
     navTheme: MenuTheme = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
@@ -118,6 +125,7 @@ object BasicLayoutProps {
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth)
+    if (!js.isUndefined(disableMobile)) __obj.updateDynamic("disableMobile")(disableMobile)
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar)
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
     if (footerRender != null) __obj.updateDynamic("footerRender")(footerRender.asInstanceOf[js.Any])
@@ -133,6 +141,7 @@ object BasicLayoutProps {
     if (menuDataRender != null) __obj.updateDynamic("menuDataRender")(js.Any.fromFunction1(menuDataRender))
     if (menuHeaderRender != null) __obj.updateDynamic("menuHeaderRender")(menuHeaderRender.asInstanceOf[js.Any])
     if (menuItemRender != null) __obj.updateDynamic("menuItemRender")(menuItemRender.asInstanceOf[js.Any])
+    if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps)
     if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))

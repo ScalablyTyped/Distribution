@@ -17,6 +17,7 @@ package object distModulesStoriesMod {
   /* Rewritten from type alias, can be one of: 
     - typings.atStorybookApi.atStorybookApiStrings.story
     - typings.atStorybookApi.atStorybookApiStrings.info
+    - typings.atStorybookApi.atStorybookApiStrings.settings
     - `js.undefined`
     - scala.Nothing
   */

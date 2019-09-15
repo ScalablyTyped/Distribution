@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__styled
 
-Typings are for version 10.0.15
+Typings are for version 10.0.17
 
 ## Library description:
 styled API for emotion

@@ -20,7 +20,7 @@ trait WithTooltipPureProps extends js.Object {
   var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit]] = js.undefined
   var placement: js.UndefOr[Placement] = js.undefined
   var svg: js.UndefOr[Boolean] = js.undefined
-  var tooltip: ReactNode
+  var tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode])
   var tooltipShown: js.UndefOr[Boolean] = js.undefined
   var trigger: js.UndefOr[none | hover | click | `right-click`] = js.undefined
 }
@@ -29,7 +29,7 @@ object WithTooltipPureProps {
   @scala.inline
   def apply(
     children: ReactNode,
-    tooltip: ReactNode,
+    tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode]),
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
     hasChrome: js.UndefOr[Boolean] = js.undefined,
     modifiers: Modifiers = null,

@@ -6435,6 +6435,7 @@
 | [simple-websocket](./s/simple-websocket) | Simple, EventEmitter API for WebSockets (browser) | simple, simple websocket, simple-websocket, socket, websocket, ws |
 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs | xml, parser, builder, libxml |
 | [simplebar](./s/simplebar) | Scrollbars, simpler. | - |
+| [simplebar-react](./s/simplebar-react) | React component for SimpleBar | - |
 | [simplecrawler](./s/simplecrawler) | Very straightforward, event driven web crawler. Fe | simple, crawler, spider, cache, queue, simplecrawler, eventemitter |
 | [simplemde](./s/simplemde) | A simple, beautiful, and embeddable JavaScript Mar | embeddable, markdown, editor, javascript, wysiwyg |
 | [simplesignal](./s/simplesignal) | Super-simple signals class | signals, events, callbacks, minimal, small, simple, tiny, typescript |

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-a11y
 
-Typings are for version 5.1.11
+Typings are for version 5.2.0
 
 ## Library description:
 a11y addon for storybook

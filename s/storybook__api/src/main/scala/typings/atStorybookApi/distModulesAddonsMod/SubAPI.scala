@@ -1,27 +1,21 @@
 package typings.atStorybookApi.distModulesAddonsMod
 
+import typings.atStorybookApi.distStoreMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubAPI extends js.Object {
-  def getElements(`type`: Types): Collection
-  def getPanels(): Collection
-  def getSelectedPanel(): String
-  def setSelectedPanel(panelName: String): Unit
-}
-
-object SubAPI {
-  @scala.inline
-  def apply(
-    getElements: Types => Collection,
-    getPanels: () => Collection,
-    getSelectedPanel: () => String,
-    setSelectedPanel: String => Unit
-  ): SubAPI = {
-    val __obj = js.Dynamic.literal(getElements = js.Any.fromFunction1(getElements), getPanels = js.Any.fromFunction0(getPanels), getSelectedPanel = js.Any.fromFunction0(getSelectedPanel), setSelectedPanel = js.Any.fromFunction1(setSelectedPanel))
-  
-    __obj.asInstanceOf[SubAPI]
-  }
+  def getAddonState[S](addonId: String): S = js.native
+  def getElements(`type`: Types): Collection = js.native
+  def getPanels(): Collection = js.native
+  def getSelectedPanel(): String = js.native
+  def getStoryPanels(): Collection = js.native
+  def setAddonState[S](addonId: String, newStateOrMerger: S): js.Promise[S] = js.native
+  def setAddonState[S](addonId: String, newStateOrMerger: S, options: Options): js.Promise[S] = js.native
+  def setAddonState[S](addonId: String, newStateOrMerger: StateMerger[S]): js.Promise[S] = js.native
+  def setAddonState[S](addonId: String, newStateOrMerger: StateMerger[S], options: Options): js.Promise[S] = js.native
+  def setSelectedPanel(panelName: String): Unit = js.native
 }
 

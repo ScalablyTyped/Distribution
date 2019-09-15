@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Direction extends js.Object {
+  def getCurrentParameter[S](parameterName: String): S = js.native
   def getCurrentStoryData(): Group | Story = js.native
   def getData(storyId: String): Group | Story = js.native
   def getParameters(storyId: String): js.Any = js.native

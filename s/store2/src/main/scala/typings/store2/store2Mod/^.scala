@@ -12,8 +12,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val local: StoreAPI = js.native
   val session: StoreAPI = js.native
-  def apply(): StoredData = js.native
   def apply(clearIfFalsy: `false` | `0`): StoreAPI = js.native
+  def apply(eachFn: js.Function2[/* key */ js.Any, /* data */ js.Any, `false` | _]): StoredData = js.native
+  def apply(eachFn: js.Function2[/* key */ js.Any, /* data */ js.Any, `false` | _], value: js.Any): StoredData = js.native
   def apply(key: js.Any): js.Any = js.native
   def apply(key: js.Any, data: js.Any): js.Any = js.native
   def apply(key: js.Any, fn: js.Function1[/* data */ js.Any, _]): StoreAPI = js.native
@@ -39,6 +40,7 @@ object ^ extends js.Object {
   @JSName("namespace")
   def namespace_true(namespace: String, noSession: `true`): StoreAPI = js.native
   def remove(key: js.Any): js.Any = js.native
+  def remove(key: js.Any, alt: js.Any): js.Any = js.native
   def set(key: js.Any, data: js.Any): js.Any = js.native
   def set(key: js.Any, data: js.Any, overwrite: Boolean): js.Any = js.native
   def setAll(data: js.Object): StoredData = js.native

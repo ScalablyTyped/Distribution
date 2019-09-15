@@ -9,5 +9,6 @@ package object distModulesAddonsMod {
 
   type Collection = StringDictionary[Addon]
   type Panels = StringDictionary[Addon]
+  type StateMerger[S] = js.Function1[/* input */ S, S]
   type Types = types | String
 }

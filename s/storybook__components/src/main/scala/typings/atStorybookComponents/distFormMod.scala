@@ -20,6 +20,6 @@ object distFormMod extends js.Object {
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 262 */ js.Any
     ], 
     Theme
-  ]) with Anon_Button = js.native
+  ]) with Anon_About = js.native
 }
 

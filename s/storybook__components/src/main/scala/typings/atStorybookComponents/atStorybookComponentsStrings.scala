@@ -1,12 +1,21 @@
 package typings.atStorybookComponents
 
+import typings.atStorybookComponents.distFormInputInputMod.Alignments
+import typings.atStorybookComponents.distFormInputInputMod.Sizes
+import typings.atStorybookComponents.distFormInputInputMod.ValidationStates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object atStorybookComponentsStrings {
   @js.native
+  sealed trait `100%` extends Sizes
+  
+  @js.native
   sealed trait about extends js.Object
+  
+  @js.native
+  sealed trait accept extends js.Object
   
   @js.native
   sealed trait acceptCharset extends js.Object
@@ -16,6 +25,18 @@ object atStorybookComponentsStrings {
   
   @js.native
   sealed trait action extends js.Object
+  
+  @js.native
+  sealed trait align extends js.Object
+  
+  @js.native
+  sealed trait allowFullScreen extends js.Object
+  
+  @js.native
+  sealed trait allowTransparency extends js.Object
+  
+  @js.native
+  sealed trait alt extends js.Object
   
   @js.native
   sealed trait `aria-activedescendant` extends js.Object
@@ -162,6 +183,15 @@ object atStorybookComponentsStrings {
   sealed trait `aria-valuetext` extends js.Object
   
   @js.native
+  sealed trait as extends js.Object
+  
+  @js.native
+  sealed trait async extends js.Object
+  
+  @js.native
+  sealed trait auto extends Sizes
+  
+  @js.native
   sealed trait autoCapitalize extends js.Object
   
   @js.native
@@ -174,10 +204,40 @@ object atStorybookComponentsStrings {
   sealed trait autoFocus extends js.Object
   
   @js.native
+  sealed trait autoPlay extends js.Object
+  
+  @js.native
   sealed trait autoSave extends js.Object
   
   @js.native
+  sealed trait capture extends js.Object
+  
+  @js.native
+  sealed trait cellPadding extends js.Object
+  
+  @js.native
+  sealed trait cellSpacing extends js.Object
+  
+  @js.native
+  sealed trait center extends Alignments
+  
+  @js.native
+  sealed trait challenge extends js.Object
+  
+  @js.native
+  sealed trait charSet extends js.Object
+  
+  @js.native
+  sealed trait checked extends js.Object
+  
+  @js.native
   sealed trait children extends js.Object
+  
+  @js.native
+  sealed trait cite extends js.Object
+  
+  @js.native
+  sealed trait classID extends js.Object
   
   @js.native
   sealed trait className extends js.Object
@@ -186,10 +246,16 @@ object atStorybookComponentsStrings {
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait closeOnClick extends js.Object
+  sealed trait colSpan extends js.Object
   
   @js.native
   sealed trait color extends js.Object
+  
+  @js.native
+  sealed trait cols extends js.Object
+  
+  @js.native
+  sealed trait content extends js.Object
   
   @js.native
   sealed trait contentEditable extends js.Object
@@ -198,7 +264,16 @@ object atStorybookComponentsStrings {
   sealed trait contextMenu extends js.Object
   
   @js.native
+  sealed trait controls extends js.Object
+  
+  @js.native
+  sealed trait coords extends js.Object
+  
+  @js.native
   sealed trait critical extends js.Object
+  
+  @js.native
+  sealed trait crossOrigin extends js.Object
   
   @js.native
   sealed trait css extends js.Object
@@ -207,7 +282,16 @@ object atStorybookComponentsStrings {
   sealed trait dangerouslySetInnerHTML extends js.Object
   
   @js.native
+  sealed trait data extends js.Object
+  
+  @js.native
   sealed trait datatype extends js.Object
+  
+  @js.native
+  sealed trait dateTime extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
   
   @js.native
   sealed trait defaultChecked extends js.Object
@@ -216,16 +300,31 @@ object atStorybookComponentsStrings {
   sealed trait defaultValue extends js.Object
   
   @js.native
+  sealed trait defer extends js.Object
+  
+  @js.native
   sealed trait dir extends js.Object
   
   @js.native
   sealed trait disabled extends js.Object
   
   @js.native
+  sealed trait download extends js.Object
+  
+  @js.native
   sealed trait draggable extends js.Object
   
   @js.native
   sealed trait encType extends js.Object
+  
+  @js.native
+  sealed trait end extends Alignments
+  
+  @js.native
+  sealed trait error extends ValidationStates
+  
+  @js.native
+  sealed trait flex extends Sizes
   
   @js.native
   sealed trait form extends js.Object
@@ -246,13 +345,34 @@ object atStorybookComponentsStrings {
   sealed trait formTarget extends js.Object
   
   @js.native
-  sealed trait hasChrome extends js.Object
+  sealed trait frameBorder extends js.Object
+  
+  @js.native
+  sealed trait headers extends js.Object
+  
+  @js.native
+  sealed trait height extends js.Object
   
   @js.native
   sealed trait hidden extends js.Object
   
   @js.native
+  sealed trait high extends js.Object
+  
+  @js.native
   sealed trait hover extends js.Object
+  
+  @js.native
+  sealed trait href extends js.Object
+  
+  @js.native
+  sealed trait hrefLang extends js.Object
+  
+  @js.native
+  sealed trait htmlFor extends js.Object
+  
+  @js.native
+  sealed trait httpEquiv extends js.Object
   
   @js.native
   sealed trait id extends js.Object
@@ -262,6 +382,12 @@ object atStorybookComponentsStrings {
   
   @js.native
   sealed trait inputMode extends js.Object
+  
+  @js.native
+  sealed trait inputRef extends js.Object
+  
+  @js.native
+  sealed trait integrity extends js.Object
   
   @js.native
   sealed trait is extends js.Object
@@ -282,13 +408,73 @@ object atStorybookComponentsStrings {
   sealed trait itemType extends js.Object
   
   @js.native
+  sealed trait key extends js.Object
+  
+  @js.native
+  sealed trait keyParams extends js.Object
+  
+  @js.native
+  sealed trait keyType extends js.Object
+  
+  @js.native
+  sealed trait kind extends js.Object
+  
+  @js.native
+  sealed trait label extends js.Object
+  
+  @js.native
   sealed trait lang extends js.Object
+  
+  @js.native
+  sealed trait list extends js.Object
+  
+  @js.native
+  sealed trait loop extends js.Object
+  
+  @js.native
+  sealed trait low extends js.Object
+  
+  @js.native
+  sealed trait manifest extends js.Object
+  
+  @js.native
+  sealed trait marginHeight extends js.Object
+  
+  @js.native
+  sealed trait marginWidth extends js.Object
+  
+  @js.native
+  sealed trait max extends js.Object
+  
+  @js.native
+  sealed trait maxLength extends js.Object
+  
+  @js.native
+  sealed trait maxRows extends js.Object
+  
+  @js.native
+  sealed trait media extends js.Object
+  
+  @js.native
+  sealed trait mediaGroup extends js.Object
   
   @js.native
   sealed trait method extends js.Object
   
   @js.native
-  sealed trait modifiers extends js.Object
+  sealed trait min extends js.Object
+  
+  @js.native
+  sealed trait minLength extends js.Object
+  
+  @js.native
+  sealed trait minRows extends js.Object
+  
+  @js.native
+  sealed trait multiple extends js.Object
+  
+  @js.native
+  sealed trait muted extends js.Object
   
   @js.native
   sealed trait name extends js.Object
@@ -301,6 +487,9 @@ object atStorybookComponentsStrings {
   
   @js.native
   sealed trait noValidate extends js.Object
+  
+  @js.native
+  sealed trait nonce extends js.Object
   
   @js.native
   sealed trait none extends js.Object
@@ -502,6 +691,9 @@ object atStorybookComponentsStrings {
   
   @js.native
   sealed trait onGotPointerCaptureCapture extends js.Object
+  
+  @js.native
+  sealed trait onHeightChange extends js.Object
   
   @js.native
   sealed trait onInput extends js.Object
@@ -768,9 +960,6 @@ object atStorybookComponentsStrings {
   sealed trait onTransitionEndCapture extends js.Object
   
   @js.native
-  sealed trait onVisibilityChange extends js.Object
-  
-  @js.native
   sealed trait onVolumeChange extends js.Object
   
   @js.native
@@ -789,16 +978,31 @@ object atStorybookComponentsStrings {
   sealed trait onWheelCapture extends js.Object
   
   @js.native
+  sealed trait open extends js.Object
+  
+  @js.native
+  sealed trait optimum extends js.Object
+  
+  @js.native
+  sealed trait pattern extends js.Object
+  
+  @js.native
   sealed trait placeholder extends js.Object
   
   @js.native
-  sealed trait placement extends js.Object
+  sealed trait playsInline extends js.Object
   
   @js.native
   sealed trait positive extends js.Object
   
   @js.native
+  sealed trait poster extends js.Object
+  
+  @js.native
   sealed trait prefix extends js.Object
+  
+  @js.native
+  sealed trait preload extends js.Object
   
   @js.native
   sealed trait property extends js.Object
@@ -807,10 +1011,25 @@ object atStorybookComponentsStrings {
   sealed trait radioGroup extends js.Object
   
   @js.native
+  sealed trait readOnly extends js.Object
+  
+  @js.native
+  sealed trait ref extends js.Object
+  
+  @js.native
+  sealed trait rel extends js.Object
+  
+  @js.native
+  sealed trait required extends js.Object
+  
+  @js.native
   sealed trait resource extends js.Object
   
   @js.native
   sealed trait results extends js.Object
+  
+  @js.native
+  sealed trait reversed extends js.Object
   
   @js.native
   sealed trait `right-click` extends js.Object
@@ -819,25 +1038,79 @@ object atStorybookComponentsStrings {
   sealed trait role extends js.Object
   
   @js.native
+  sealed trait rowSpan extends js.Object
+  
+  @js.native
+  sealed trait rows extends js.Object
+  
+  @js.native
+  sealed trait sandbox extends js.Object
+  
+  @js.native
+  sealed trait scope extends js.Object
+  
+  @js.native
+  sealed trait scoped extends js.Object
+  
+  @js.native
+  sealed trait scrolling extends js.Object
+  
+  @js.native
+  sealed trait seamless extends js.Object
+  
+  @js.native
   sealed trait security extends js.Object
+  
+  @js.native
+  sealed trait selected extends js.Object
+  
+  @js.native
+  sealed trait shape extends js.Object
+  
+  @js.native
+  sealed trait size extends js.Object
+  
+  @js.native
+  sealed trait sizes extends js.Object
   
   @js.native
   sealed trait slot extends js.Object
   
   @js.native
+  sealed trait span extends js.Object
+  
+  @js.native
   sealed trait spellCheck extends js.Object
   
   @js.native
+  sealed trait src extends js.Object
+  
+  @js.native
+  sealed trait srcDoc extends js.Object
+  
+  @js.native
+  sealed trait srcLang extends js.Object
+  
+  @js.native
+  sealed trait srcSet extends js.Object
+  
+  @js.native
+  sealed trait start extends Alignments
+  
+  @js.native
+  sealed trait step extends js.Object
+  
+  @js.native
   sealed trait style extends js.Object
+  
+  @js.native
+  sealed trait summary extends js.Object
   
   @js.native
   sealed trait suppressContentEditableWarning extends js.Object
   
   @js.native
   sealed trait suppressHydrationWarning extends js.Object
-  
-  @js.native
-  sealed trait svg extends js.Object
   
   @js.native
   sealed trait tabIndex extends js.Object
@@ -849,15 +1122,6 @@ object atStorybookComponentsStrings {
   sealed trait title extends js.Object
   
   @js.native
-  sealed trait tooltip extends js.Object
-  
-  @js.native
-  sealed trait tooltipShown extends js.Object
-  
-  @js.native
-  sealed trait trigger extends js.Object
-  
-  @js.native
   sealed trait `type` extends js.Object
   
   @js.native
@@ -867,22 +1131,55 @@ object atStorybookComponentsStrings {
   sealed trait unselectable extends js.Object
   
   @js.native
+  sealed trait useCacheForDOMMeasurements extends js.Object
+  
+  @js.native
+  sealed trait useMap extends js.Object
+  
+  @js.native
+  sealed trait valid extends ValidationStates
+  
+  @js.native
   sealed trait value extends js.Object
   
   @js.native
   sealed trait vocab extends js.Object
   
   @js.native
+  sealed trait warn extends ValidationStates
+  
+  @js.native
   sealed trait warning extends js.Object
   
+  @js.native
+  sealed trait width extends js.Object
+  
+  @js.native
+  sealed trait wmode extends js.Object
+  
+  @js.native
+  sealed trait wrap extends js.Object
+  
+  @scala.inline
+  def `100%`: `100%` = "100%".asInstanceOf[`100%`]
   @scala.inline
   def about: about = "about".asInstanceOf[about]
+  @scala.inline
+  def accept: accept = "accept".asInstanceOf[accept]
   @scala.inline
   def acceptCharset: acceptCharset = "acceptCharset".asInstanceOf[acceptCharset]
   @scala.inline
   def accessKey: accessKey = "accessKey".asInstanceOf[accessKey]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
+  @scala.inline
+  def align: align = "align".asInstanceOf[align]
+  @scala.inline
+  def allowFullScreen: allowFullScreen = "allowFullScreen".asInstanceOf[allowFullScreen]
+  @scala.inline
+  def allowTransparency: allowTransparency = "allowTransparency".asInstanceOf[allowTransparency]
+  @scala.inline
+  def alt: alt = "alt".asInstanceOf[alt]
   @scala.inline
   def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
   @scala.inline
@@ -980,6 +1277,12 @@ object atStorybookComponentsStrings {
   @scala.inline
   def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
   @scala.inline
+  def as: as = "as".asInstanceOf[as]
+  @scala.inline
+  def async: async = "async".asInstanceOf[async]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def autoCapitalize: autoCapitalize = "autoCapitalize".asInstanceOf[autoCapitalize]
   @scala.inline
   def autoComplete: autoComplete = "autoComplete".asInstanceOf[autoComplete]
@@ -988,41 +1291,87 @@ object atStorybookComponentsStrings {
   @scala.inline
   def autoFocus: autoFocus = "autoFocus".asInstanceOf[autoFocus]
   @scala.inline
+  def autoPlay: autoPlay = "autoPlay".asInstanceOf[autoPlay]
+  @scala.inline
   def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
   @scala.inline
+  def capture: capture = "capture".asInstanceOf[capture]
+  @scala.inline
+  def cellPadding: cellPadding = "cellPadding".asInstanceOf[cellPadding]
+  @scala.inline
+  def cellSpacing: cellSpacing = "cellSpacing".asInstanceOf[cellSpacing]
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def challenge: challenge = "challenge".asInstanceOf[challenge]
+  @scala.inline
+  def charSet: charSet = "charSet".asInstanceOf[charSet]
+  @scala.inline
+  def checked: checked = "checked".asInstanceOf[checked]
+  @scala.inline
   def children: children = "children".asInstanceOf[children]
+  @scala.inline
+  def cite: cite = "cite".asInstanceOf[cite]
+  @scala.inline
+  def classID: classID = "classID".asInstanceOf[classID]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
-  def closeOnClick: closeOnClick = "closeOnClick".asInstanceOf[closeOnClick]
+  def colSpan: colSpan = "colSpan".asInstanceOf[colSpan]
   @scala.inline
   def color: color = "color".asInstanceOf[color]
+  @scala.inline
+  def cols: cols = "cols".asInstanceOf[cols]
+  @scala.inline
+  def content: content = "content".asInstanceOf[content]
   @scala.inline
   def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
   @scala.inline
   def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
   @scala.inline
+  def controls: controls = "controls".asInstanceOf[controls]
+  @scala.inline
+  def coords: coords = "coords".asInstanceOf[coords]
+  @scala.inline
   def critical: critical = "critical".asInstanceOf[critical]
+  @scala.inline
+  def crossOrigin: crossOrigin = "crossOrigin".asInstanceOf[crossOrigin]
   @scala.inline
   def css: css = "css".asInstanceOf[css]
   @scala.inline
   def dangerouslySetInnerHTML: dangerouslySetInnerHTML = "dangerouslySetInnerHTML".asInstanceOf[dangerouslySetInnerHTML]
   @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def datatype: datatype = "datatype".asInstanceOf[datatype]
+  @scala.inline
+  def dateTime: dateTime = "dateTime".asInstanceOf[dateTime]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
   @scala.inline
   def defaultChecked: defaultChecked = "defaultChecked".asInstanceOf[defaultChecked]
   @scala.inline
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   @scala.inline
+  def defer: defer = "defer".asInstanceOf[defer]
+  @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  @scala.inline
   def draggable: draggable = "draggable".asInstanceOf[draggable]
   @scala.inline
   def encType: encType = "encType".asInstanceOf[encType]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
@@ -1036,17 +1385,35 @@ object atStorybookComponentsStrings {
   @scala.inline
   def formTarget: formTarget = "formTarget".asInstanceOf[formTarget]
   @scala.inline
-  def hasChrome: hasChrome = "hasChrome".asInstanceOf[hasChrome]
+  def frameBorder: frameBorder = "frameBorder".asInstanceOf[frameBorder]
+  @scala.inline
+  def headers: headers = "headers".asInstanceOf[headers]
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
+  @scala.inline
+  def href: href = "href".asInstanceOf[href]
+  @scala.inline
+  def hrefLang: hrefLang = "hrefLang".asInstanceOf[hrefLang]
+  @scala.inline
+  def htmlFor: htmlFor = "htmlFor".asInstanceOf[htmlFor]
+  @scala.inline
+  def httpEquiv: httpEquiv = "httpEquiv".asInstanceOf[httpEquiv]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline
   def inlist: inlist = "inlist".asInstanceOf[inlist]
   @scala.inline
   def inputMode: inputMode = "inputMode".asInstanceOf[inputMode]
+  @scala.inline
+  def inputRef: inputRef = "inputRef".asInstanceOf[inputRef]
+  @scala.inline
+  def integrity: integrity = "integrity".asInstanceOf[integrity]
   @scala.inline
   def is: is = "is".asInstanceOf[is]
   @scala.inline
@@ -1060,11 +1427,51 @@ object atStorybookComponentsStrings {
   @scala.inline
   def itemType: itemType = "itemType".asInstanceOf[itemType]
   @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  @scala.inline
+  def keyParams: keyParams = "keyParams".asInstanceOf[keyParams]
+  @scala.inline
+  def keyType: keyType = "keyType".asInstanceOf[keyType]
+  @scala.inline
+  def kind: kind = "kind".asInstanceOf[kind]
+  @scala.inline
+  def label: label = "label".asInstanceOf[label]
+  @scala.inline
   def lang: lang = "lang".asInstanceOf[lang]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  @scala.inline
+  def loop: loop = "loop".asInstanceOf[loop]
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  @scala.inline
+  def manifest: manifest = "manifest".asInstanceOf[manifest]
+  @scala.inline
+  def marginHeight: marginHeight = "marginHeight".asInstanceOf[marginHeight]
+  @scala.inline
+  def marginWidth: marginWidth = "marginWidth".asInstanceOf[marginWidth]
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  @scala.inline
+  def maxLength: maxLength = "maxLength".asInstanceOf[maxLength]
+  @scala.inline
+  def maxRows: maxRows = "maxRows".asInstanceOf[maxRows]
+  @scala.inline
+  def media: media = "media".asInstanceOf[media]
+  @scala.inline
+  def mediaGroup: mediaGroup = "mediaGroup".asInstanceOf[mediaGroup]
   @scala.inline
   def method: method = "method".asInstanceOf[method]
   @scala.inline
-  def modifiers: modifiers = "modifiers".asInstanceOf[modifiers]
+  def min: min = "min".asInstanceOf[min]
+  @scala.inline
+  def minLength: minLength = "minLength".asInstanceOf[minLength]
+  @scala.inline
+  def minRows: minRows = "minRows".asInstanceOf[minRows]
+  @scala.inline
+  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  @scala.inline
+  def muted: muted = "muted".asInstanceOf[muted]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -1073,6 +1480,8 @@ object atStorybookComponentsStrings {
   def neutral: neutral = "neutral".asInstanceOf[neutral]
   @scala.inline
   def noValidate: noValidate = "noValidate".asInstanceOf[noValidate]
+  @scala.inline
+  def nonce: nonce = "nonce".asInstanceOf[nonce]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -1207,6 +1616,8 @@ object atStorybookComponentsStrings {
   def onGotPointerCapture: onGotPointerCapture = "onGotPointerCapture".asInstanceOf[onGotPointerCapture]
   @scala.inline
   def onGotPointerCaptureCapture: onGotPointerCaptureCapture = "onGotPointerCaptureCapture".asInstanceOf[onGotPointerCaptureCapture]
+  @scala.inline
+  def onHeightChange: onHeightChange = "onHeightChange".asInstanceOf[onHeightChange]
   @scala.inline
   def onInput: onInput = "onInput".asInstanceOf[onInput]
   @scala.inline
@@ -1384,8 +1795,6 @@ object atStorybookComponentsStrings {
   @scala.inline
   def onTransitionEndCapture: onTransitionEndCapture = "onTransitionEndCapture".asInstanceOf[onTransitionEndCapture]
   @scala.inline
-  def onVisibilityChange: onVisibilityChange = "onVisibilityChange".asInstanceOf[onVisibilityChange]
-  @scala.inline
   def onVolumeChange: onVolumeChange = "onVolumeChange".asInstanceOf[onVolumeChange]
   @scala.inline
   def onVolumeChangeCapture: onVolumeChangeCapture = "onVolumeChangeCapture".asInstanceOf[onVolumeChangeCapture]
@@ -1398,39 +1807,95 @@ object atStorybookComponentsStrings {
   @scala.inline
   def onWheelCapture: onWheelCapture = "onWheelCapture".asInstanceOf[onWheelCapture]
   @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  @scala.inline
+  def optimum: optimum = "optimum".asInstanceOf[optimum]
+  @scala.inline
+  def pattern: pattern = "pattern".asInstanceOf[pattern]
+  @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   @scala.inline
-  def placement: placement = "placement".asInstanceOf[placement]
+  def playsInline: playsInline = "playsInline".asInstanceOf[playsInline]
   @scala.inline
   def positive: positive = "positive".asInstanceOf[positive]
   @scala.inline
+  def poster: poster = "poster".asInstanceOf[poster]
+  @scala.inline
   def prefix: prefix = "prefix".asInstanceOf[prefix]
+  @scala.inline
+  def preload: preload = "preload".asInstanceOf[preload]
   @scala.inline
   def property: property = "property".asInstanceOf[property]
   @scala.inline
   def radioGroup: radioGroup = "radioGroup".asInstanceOf[radioGroup]
   @scala.inline
+  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
+  @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
+  @scala.inline
+  def rel: rel = "rel".asInstanceOf[rel]
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
+  @scala.inline
   def resource: resource = "resource".asInstanceOf[resource]
   @scala.inline
   def results: results = "results".asInstanceOf[results]
+  @scala.inline
+  def reversed: reversed = "reversed".asInstanceOf[reversed]
   @scala.inline
   def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
   @scala.inline
   def role: role = "role".asInstanceOf[role]
   @scala.inline
+  def rowSpan: rowSpan = "rowSpan".asInstanceOf[rowSpan]
+  @scala.inline
+  def rows: rows = "rows".asInstanceOf[rows]
+  @scala.inline
+  def sandbox: sandbox = "sandbox".asInstanceOf[sandbox]
+  @scala.inline
+  def scope: scope = "scope".asInstanceOf[scope]
+  @scala.inline
+  def scoped: scoped = "scoped".asInstanceOf[scoped]
+  @scala.inline
+  def scrolling: scrolling = "scrolling".asInstanceOf[scrolling]
+  @scala.inline
+  def seamless: seamless = "seamless".asInstanceOf[seamless]
+  @scala.inline
   def security: security = "security".asInstanceOf[security]
+  @scala.inline
+  def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
+  def shape: shape = "shape".asInstanceOf[shape]
+  @scala.inline
+  def size: size = "size".asInstanceOf[size]
+  @scala.inline
+  def sizes: sizes = "sizes".asInstanceOf[sizes]
   @scala.inline
   def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
+  def span: span = "span".asInstanceOf[span]
+  @scala.inline
   def spellCheck: spellCheck = "spellCheck".asInstanceOf[spellCheck]
   @scala.inline
+  def src: src = "src".asInstanceOf[src]
+  @scala.inline
+  def srcDoc: srcDoc = "srcDoc".asInstanceOf[srcDoc]
+  @scala.inline
+  def srcLang: srcLang = "srcLang".asInstanceOf[srcLang]
+  @scala.inline
+  def srcSet: srcSet = "srcSet".asInstanceOf[srcSet]
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  @scala.inline
   def style: style = "style".asInstanceOf[style]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def suppressContentEditableWarning: suppressContentEditableWarning = "suppressContentEditableWarning".asInstanceOf[suppressContentEditableWarning]
   @scala.inline
   def suppressHydrationWarning: suppressHydrationWarning = "suppressHydrationWarning".asInstanceOf[suppressHydrationWarning]
-  @scala.inline
-  def svg: svg = "svg".asInstanceOf[svg]
   @scala.inline
   def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
   @scala.inline
@@ -1438,22 +1903,30 @@ object atStorybookComponentsStrings {
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   @scala.inline
-  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
-  @scala.inline
-  def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
-  @scala.inline
-  def trigger: trigger = "trigger".asInstanceOf[trigger]
-  @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def typeof: typeof = "typeof".asInstanceOf[typeof]
   @scala.inline
   def unselectable: unselectable = "unselectable".asInstanceOf[unselectable]
   @scala.inline
+  def useCacheForDOMMeasurements: useCacheForDOMMeasurements = "useCacheForDOMMeasurements".asInstanceOf[useCacheForDOMMeasurements]
+  @scala.inline
+  def useMap: useMap = "useMap".asInstanceOf[useMap]
+  @scala.inline
+  def valid: valid = "valid".asInstanceOf[valid]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
   def vocab: vocab = "vocab".asInstanceOf[vocab]
   @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  @scala.inline
+  def wmode: wmode = "wmode".asInstanceOf[wmode]
+  @scala.inline
+  def wrap: wrap = "wrap".asInstanceOf[wrap]
 }
 

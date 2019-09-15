@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-delete"
-version := "1.1.0-a4b632"
+version := "1.1.0-492088"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.1-b87dcd",
   "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "2.0.1-448965",
   "org.scalablytyped" %%% "nodelib__fs_dot_walk" % "1.2.2-80b036",
-  "org.scalablytyped" %%% "rollup" % "1.21.2-3c4c4f",
+  "org.scalablytyped" %%% "rollup" % "1.21.3-703687",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

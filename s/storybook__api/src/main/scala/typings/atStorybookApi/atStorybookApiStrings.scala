@@ -75,6 +75,9 @@ object atStorybookApiStrings {
   sealed trait session extends js.Object
   
   @js.native
+  sealed trait settings extends _ViewMode
+  
+  @js.native
   sealed trait shortcutsPage extends Action
   
   @js.native
@@ -133,6 +136,8 @@ object atStorybookApiStrings {
   def search: search = "search".asInstanceOf[search]
   @scala.inline
   def session: session = "session".asInstanceOf[session]
+  @scala.inline
+  def settings: settings = "settings".asInstanceOf[settings]
   @scala.inline
   def shortcutsPage: shortcutsPage = "shortcutsPage".asInstanceOf[shortcutsPage]
   @scala.inline

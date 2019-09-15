@@ -25,6 +25,7 @@ trait StoreAPI extends js.Object {
   @JSName("namespace")
   def namespace_true(namespace: String, noSession: `true`): StoreAPI = js.native
   def remove(key: js.Any): js.Any = js.native
+  def remove(key: js.Any, alt: js.Any): js.Any = js.native
   def set(key: js.Any, data: js.Any): js.Any = js.native
   def set(key: js.Any, data: js.Any, overwrite: Boolean): js.Any = js.native
   def setAll(data: js.Object): StoredData = js.native

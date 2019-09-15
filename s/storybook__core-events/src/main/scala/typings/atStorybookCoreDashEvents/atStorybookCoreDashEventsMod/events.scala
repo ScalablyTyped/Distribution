@@ -14,6 +14,9 @@ object events extends js.Object {
   sealed trait CHANNEL_CREATED extends events
   
   @js.native
+  sealed trait DOCS_RENDERED extends events
+  
+  @js.native
   sealed trait FORCE_RE_RENDER extends events
   
   @js.native

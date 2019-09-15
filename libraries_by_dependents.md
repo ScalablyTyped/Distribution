@@ -4863,6 +4863,7 @@
 | 6 | [scrollreveal](./s/scrollreveal) | Animate elements as they scroll into view
 | 6 | [should-sinon](./s/should-sinon) | Sinon.js assertions for should.js
 | 6 | [signalr-no-jquery](./s/signalr-no-jquery) | Javascript SignalR client without jQuery dependenc
+| 6 | [simplebar-react](./s/simplebar-react) | React component for SimpleBar
 | 6 | [sinon-chrome](./s/sinon-chrome) | Mock of chrome extensions API for unit testing und
 | 6 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep
 | 6 | [stringify-attributes](./s/stringify-attributes) | Turn an object into a string of HTML attributes

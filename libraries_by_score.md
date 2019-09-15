@@ -757,6 +757,7 @@
 | 0.7879721524762537 | [istanbul-lib-hook](./i/istanbul-lib-hook) | Hooks for require, vm and script used in istanbul
 | 0.7879047973887099 | [istanbul-lib-report](./i/istanbul-lib-report) | Base reporting library for istanbul
 | 0.7878319475919939 | [mobx-react](./m/mobx-react) | React bindings for MobX. Create fully reactive com
+| 0.7878269801640934 | [simplebar-react](./s/simplebar-react) | React component for SimpleBar
 | 0.7878067430631335 | [humanize-ms](./h/humanize-ms) | transform humanize time to ms
 | 0.7877655175349512 | [dompurify](./d/dompurify) | DOMPurify is a DOM-only, super-fast, uber-tolerant
 | 0.7875150044678301 | [http-proxy-agent](./h/http-proxy-agent) | An HTTP(s) proxy http.Agent implementation for HTT

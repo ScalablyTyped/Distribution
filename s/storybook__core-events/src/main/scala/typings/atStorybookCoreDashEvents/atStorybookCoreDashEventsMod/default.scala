@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   /* "channelCreated" */ val CHANNEL_CREATED: typings.atStorybookCoreDashEvents.atStorybookCoreDashEventsMod.events.CHANNEL_CREATED with String = js.native
+  /* "docsRendered" */ val DOCS_RENDERED: typings.atStorybookCoreDashEvents.atStorybookCoreDashEventsMod.events.DOCS_RENDERED with String = js.native
   /* "forceReRender" */ val FORCE_RE_RENDER: typings.atStorybookCoreDashEvents.atStorybookCoreDashEventsMod.events.FORCE_RE_RENDER with String = js.native
   /* "getCurrentStory" */ val GET_CURRENT_STORY: typings.atStorybookCoreDashEvents.atStorybookCoreDashEventsMod.events.GET_CURRENT_STORY with String = js.native
   /* "getStories" */ val GET_STORIES: typings.atStorybookCoreDashEvents.atStorybookCoreDashEventsMod.events.GET_STORIES with String = js.native

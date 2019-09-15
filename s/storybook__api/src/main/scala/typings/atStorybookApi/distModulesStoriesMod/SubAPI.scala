@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubAPI extends js.Object {
   var storyId: js.Function2[/* kind */ String, /* name */ String, String] = js.native
+  def getCurrentParameter[S](): S = js.native
+  def getCurrentParameter[S](parameterName: ParameterName): S = js.native
   def getCurrentStoryData(): Story | Group = js.native
   def getData(storyId: StoryId): Story | Group = js.native
   def getParameters(storyId: StoryId): /* import warning: ImportType.apply Failed type conversion: @storybook/api.@storybook/api/dist/modules/stories.Story['parameters'] */ js.Any = js.native
