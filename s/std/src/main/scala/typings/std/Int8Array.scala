@@ -291,7 +291,7 @@ trait Int8Array extends /* index */ NumberDictionary[Double] {
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
-    * @param end The end of the specified portion of the array.
+    * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): Int8Array = js.native
   def slice(start: Double): Int8Array = js.native
@@ -324,6 +324,7 @@ trait Int8Array extends /* index */ NumberDictionary[Double] {
     * @param begin The index of the beginning of the array.
     * @param end The index of the end of the array.
     */
+  def subarray(): Int8Array = js.native
   def subarray(begin: Double): Int8Array = js.native
   def subarray(begin: Double, end: Double): Int8Array = js.native
   /**

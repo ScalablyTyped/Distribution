@@ -14,12 +14,12 @@ object BaseModifier {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    fn: typings.popperDotJs.popperDotJsMod.PopperNs.ModifierFn = null,
+    fn: (/* data */ typings.popperDotJs.popperDotJsMod.PopperNs.Data, /* options */ js.Object) => typings.popperDotJs.popperDotJsMod.PopperNs.Data = null,
     order: Int | Double = null
   ): BaseModifier = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (fn != null) __obj.updateDynamic("fn")(fn)
+    if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction2(fn))
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseModifier]
   }

@@ -49,7 +49,7 @@ object EvaluateParameterType {
   def apply(
     expression: java.lang.String,
     awaitPromise: js.UndefOr[Boolean] = js.undefined,
-    contextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    contextId: Int | Double = null,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
     includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined,
     objectGroup: java.lang.String = null,
@@ -59,7 +59,7 @@ object EvaluateParameterType {
   ): EvaluateParameterType = {
     val __obj = js.Dynamic.literal(expression = expression)
     if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
-    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId)
+    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
     if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
     if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)

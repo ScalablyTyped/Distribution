@@ -40,45 +40,45 @@ object ExponentFileSystemModule {
     bundleDirectory: String = null,
     bundledAssets: String = null,
     cacheDirectory: String = null,
-    copyAsync: PlatformMethod = null,
-    deleteAsync: PlatformMethod = null,
+    copyAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    deleteAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
     documentDirectory: String = null,
-    downloadAsync: PlatformMethod = null,
-    downloadResumablePauseAsync: PlatformMethod = null,
-    downloadResumableStartAsync: PlatformMethod = null,
-    getContentUriAsync: PlatformMethod = null,
-    getFreeDiskStorageAsync: PlatformMethod = null,
-    getInfoAsync: PlatformMethod = null,
-    getTotalDiskCapacityAsync: PlatformMethod = null,
-    makeDirectoryAsync: PlatformMethod = null,
-    moveAsync: PlatformMethod = null,
-    readAsStringAsync: PlatformMethod = null,
-    readDirectoryAsync: PlatformMethod = null,
+    downloadAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    downloadResumablePauseAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    downloadResumableStartAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    getContentUriAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    getFreeDiskStorageAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    getInfoAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    getTotalDiskCapacityAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    makeDirectoryAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    moveAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    readAsStringAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
+    readDirectoryAsync: /* repeated */ js.Any => js.Promise[js.Any] = null,
     startObserving: () => Unit = null,
     stopObserving: () => Unit = null,
-    writeAsStringAsync: PlatformMethod = null
+    writeAsStringAsync: /* repeated */ js.Any => js.Promise[js.Any] = null
   ): ExponentFileSystemModule = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), name = name, removeListeners = js.Any.fromFunction1(removeListeners))
     if (bundleDirectory != null) __obj.updateDynamic("bundleDirectory")(bundleDirectory)
     if (bundledAssets != null) __obj.updateDynamic("bundledAssets")(bundledAssets)
     if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory)
-    if (copyAsync != null) __obj.updateDynamic("copyAsync")(copyAsync)
-    if (deleteAsync != null) __obj.updateDynamic("deleteAsync")(deleteAsync)
+    if (copyAsync != null) __obj.updateDynamic("copyAsync")(js.Any.fromFunction1(copyAsync))
+    if (deleteAsync != null) __obj.updateDynamic("deleteAsync")(js.Any.fromFunction1(deleteAsync))
     if (documentDirectory != null) __obj.updateDynamic("documentDirectory")(documentDirectory)
-    if (downloadAsync != null) __obj.updateDynamic("downloadAsync")(downloadAsync)
-    if (downloadResumablePauseAsync != null) __obj.updateDynamic("downloadResumablePauseAsync")(downloadResumablePauseAsync)
-    if (downloadResumableStartAsync != null) __obj.updateDynamic("downloadResumableStartAsync")(downloadResumableStartAsync)
-    if (getContentUriAsync != null) __obj.updateDynamic("getContentUriAsync")(getContentUriAsync)
-    if (getFreeDiskStorageAsync != null) __obj.updateDynamic("getFreeDiskStorageAsync")(getFreeDiskStorageAsync)
-    if (getInfoAsync != null) __obj.updateDynamic("getInfoAsync")(getInfoAsync)
-    if (getTotalDiskCapacityAsync != null) __obj.updateDynamic("getTotalDiskCapacityAsync")(getTotalDiskCapacityAsync)
-    if (makeDirectoryAsync != null) __obj.updateDynamic("makeDirectoryAsync")(makeDirectoryAsync)
-    if (moveAsync != null) __obj.updateDynamic("moveAsync")(moveAsync)
-    if (readAsStringAsync != null) __obj.updateDynamic("readAsStringAsync")(readAsStringAsync)
-    if (readDirectoryAsync != null) __obj.updateDynamic("readDirectoryAsync")(readDirectoryAsync)
+    if (downloadAsync != null) __obj.updateDynamic("downloadAsync")(js.Any.fromFunction1(downloadAsync))
+    if (downloadResumablePauseAsync != null) __obj.updateDynamic("downloadResumablePauseAsync")(js.Any.fromFunction1(downloadResumablePauseAsync))
+    if (downloadResumableStartAsync != null) __obj.updateDynamic("downloadResumableStartAsync")(js.Any.fromFunction1(downloadResumableStartAsync))
+    if (getContentUriAsync != null) __obj.updateDynamic("getContentUriAsync")(js.Any.fromFunction1(getContentUriAsync))
+    if (getFreeDiskStorageAsync != null) __obj.updateDynamic("getFreeDiskStorageAsync")(js.Any.fromFunction1(getFreeDiskStorageAsync))
+    if (getInfoAsync != null) __obj.updateDynamic("getInfoAsync")(js.Any.fromFunction1(getInfoAsync))
+    if (getTotalDiskCapacityAsync != null) __obj.updateDynamic("getTotalDiskCapacityAsync")(js.Any.fromFunction1(getTotalDiskCapacityAsync))
+    if (makeDirectoryAsync != null) __obj.updateDynamic("makeDirectoryAsync")(js.Any.fromFunction1(makeDirectoryAsync))
+    if (moveAsync != null) __obj.updateDynamic("moveAsync")(js.Any.fromFunction1(moveAsync))
+    if (readAsStringAsync != null) __obj.updateDynamic("readAsStringAsync")(js.Any.fromFunction1(readAsStringAsync))
+    if (readDirectoryAsync != null) __obj.updateDynamic("readDirectoryAsync")(js.Any.fromFunction1(readDirectoryAsync))
     if (startObserving != null) __obj.updateDynamic("startObserving")(js.Any.fromFunction0(startObserving))
     if (stopObserving != null) __obj.updateDynamic("stopObserving")(js.Any.fromFunction0(stopObserving))
-    if (writeAsStringAsync != null) __obj.updateDynamic("writeAsStringAsync")(writeAsStringAsync)
+    if (writeAsStringAsync != null) __obj.updateDynamic("writeAsStringAsync")(js.Any.fromFunction1(writeAsStringAsync))
     __obj.asInstanceOf[ExponentFileSystemModule]
   }
 }

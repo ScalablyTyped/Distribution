@@ -1,6 +1,8 @@
 package typings.antd.esBackDashTopMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLElement
 import typings.std.Window
@@ -22,7 +24,7 @@ object BackTopProps {
   @scala.inline
   def apply(
     className: String = null,
-    onClick: MouseEventHandler[HTMLElement] = null,
+    onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     style: CSSProperties = null,
     target: () => HTMLElement | Window = null,
@@ -31,7 +33,7 @@ object BackTopProps {
   ): BackTopProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (target != null) __obj.updateDynamic("target")(js.Any.fromFunction0(target))

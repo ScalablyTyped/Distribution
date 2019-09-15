@@ -64,8 +64,8 @@ object TabsProps {
     hideAdd: js.UndefOr[Boolean] = js.undefined,
     onChange: /* activeKey */ String => Unit = null,
     onEdit: (/* targetKey */ String | (MouseEvent[HTMLElement, NativeMouseEvent]), /* action */ add | remove) => Unit = null,
-    onNextClick: MouseEventHandler[HTMLElement] = null,
-    onPrevClick: MouseEventHandler[HTMLElement] = null,
+    onNextClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
+    onPrevClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     onTabClick: js.Function = null,
     prefixCls: String = null,
     renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ ComponentClass[_, ComponentState]) => ReactElement = null,
@@ -86,8 +86,8 @@ object TabsProps {
     if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction2(onEdit))
-    if (onNextClick != null) __obj.updateDynamic("onNextClick")(onNextClick)
-    if (onPrevClick != null) __obj.updateDynamic("onPrevClick")(onPrevClick)
+    if (onNextClick != null) __obj.updateDynamic("onNextClick")(js.Any.fromFunction1(onNextClick))
+    if (onPrevClick != null) __obj.updateDynamic("onPrevClick")(js.Any.fromFunction1(onPrevClick))
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(onTabClick)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction2(renderTabBar))

@@ -1,19 +1,20 @@
 organization := "org.scalablytyped"
 name := "material-ui__icons"
-version := "4.4.1-abc1d4"
+version := "4.4.1-5a8b80"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
+  "me.shadaj" %%% "slinky-web" % "0.6.2",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-d2dd63",
   "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-d9ffbc",
-  "org.scalablytyped" %%% "jss" % "9.5-dt-20190710Z-b13eba",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-df25de",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-5e90d9",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
-  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20190807Z-9afb8a",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "jss" % "9.5-dt-20190710Z-25bdd3",
+  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-1823c1",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-301544",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-b412db",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-076e3c",
+  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20190807Z-1f1ea7",
+  "org.scalablytyped" %%% "std" % "3.7.0-dev-0b7356")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

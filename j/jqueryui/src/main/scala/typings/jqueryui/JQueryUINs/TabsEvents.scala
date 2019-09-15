@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,18 +16,18 @@ trait TabsEvents extends js.Object {
 object TabsEvents {
   @scala.inline
   def apply(
-    activate: TabsEvent[TabsActivationUIParams] = null,
-    beforeActivate: TabsEvent[TabsActivationUIParams] = null,
-    beforeLoad: TabsEvent[TabsBeforeLoadUIParams] = null,
-    create: TabsEvent[TabsCreateOrLoadUIParams] = null,
-    load: TabsEvent[TabsCreateOrLoadUIParams] = null
+    activate: (/* event */ Event, TabsActivationUIParams) => Unit = null,
+    beforeActivate: (/* event */ Event, TabsActivationUIParams) => Unit = null,
+    beforeLoad: (/* event */ Event, TabsBeforeLoadUIParams) => Unit = null,
+    create: (/* event */ Event, TabsCreateOrLoadUIParams) => Unit = null,
+    load: (/* event */ Event, TabsCreateOrLoadUIParams) => Unit = null
   ): TabsEvents = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
-    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2(beforeActivate))
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction2(beforeLoad))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
     __obj.asInstanceOf[TabsEvents]
   }
 }

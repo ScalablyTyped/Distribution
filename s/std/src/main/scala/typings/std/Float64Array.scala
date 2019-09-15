@@ -291,7 +291,7 @@ trait Float64Array extends /* index */ NumberDictionary[Double] {
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
-    * @param end The end of the specified portion of the array.
+    * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): Float64Array = js.native
   def slice(start: Double): Float64Array = js.native
@@ -319,11 +319,11 @@ trait Float64Array extends /* index */ NumberDictionary[Double] {
   def sort(): this.type = js.native
   def sort(compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   /**
-    * Gets a new Float64Array view of the ArrayBuffer store for this array, referencing the elements
     * at begin, inclusive, up to end, exclusive.
     * @param begin The index of the beginning of the array.
     * @param end The index of the end of the array.
     */
+  def subarray(): Float64Array = js.native
   def subarray(begin: Double): Float64Array = js.native
   def subarray(begin: Double, end: Double): Float64Array = js.native
   /**

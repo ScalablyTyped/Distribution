@@ -18,17 +18,18 @@ object AnchorLinkProps {
   @scala.inline
   def apply(
     href: String,
-    title: ReactNode,
     children: ReactNode = null,
     className: String = null,
     prefixCls: String = null,
-    target: String = null
+    target: String = null,
+    title: ReactNode = null
   ): AnchorLinkProps = {
-    val __obj = js.Dynamic.literal(href = href, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (target != null) __obj.updateDynamic("target")(target)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorLinkProps]
   }
 }

@@ -30,7 +30,6 @@ trait PageHeaderProps extends js.Object {
 object PageHeaderProps {
   @scala.inline
   def apply(
-    title: ReactNode,
     avatar: AvatarProps = null,
     backIcon: ReactNode = null,
     breadcrumb: BreadcrumbProps = null,
@@ -41,9 +40,10 @@ object PageHeaderProps {
     prefixCls: String = null,
     style: CSSProperties = null,
     subTitle: ReactNode = null,
-    tags: ReactElement | js.Array[ReactElement] = null
+    tags: ReactElement | js.Array[ReactElement] = null,
+    title: ReactNode = null
   ): PageHeaderProps = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
@@ -55,6 +55,7 @@ object PageHeaderProps {
     if (style != null) __obj.updateDynamic("style")(style)
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageHeaderProps]
   }
 }

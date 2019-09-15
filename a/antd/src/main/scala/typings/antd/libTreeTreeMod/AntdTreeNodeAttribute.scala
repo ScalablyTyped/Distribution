@@ -29,7 +29,6 @@ object AntdTreeNodeAttribute {
   @scala.inline
   def apply(
     checked: Boolean,
-    children: ReactNode,
     className: String,
     disableCheckbox: Boolean,
     disabled: Boolean,
@@ -44,10 +43,12 @@ object AntdTreeNodeAttribute {
     prefixCls: String,
     selectable: Boolean,
     selected: Boolean,
-    title: ReactNode
+    children: ReactNode = null,
+    title: ReactNode = null
   ): AntdTreeNodeAttribute = {
-    val __obj = js.Dynamic.literal(checked = checked, children = children.asInstanceOf[js.Any], className = className, disableCheckbox = disableCheckbox, disabled = disabled, dragOver = dragOver, dragOverGapBottom = dragOverGapBottom, dragOverGapTop = dragOverGapTop, eventKey = eventKey, expanded = expanded, halfChecked = halfChecked, isLeaf = isLeaf, pos = pos, prefixCls = prefixCls, selectable = selectable, selected = selected, title = title.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(checked = checked, className = className, disableCheckbox = disableCheckbox, disabled = disabled, dragOver = dragOver, dragOverGapBottom = dragOverGapBottom, dragOverGapTop = dragOverGapTop, eventKey = eventKey, expanded = expanded, halfChecked = halfChecked, isLeaf = isLeaf, pos = pos, prefixCls = prefixCls, selectable = selectable, selected = selected)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntdTreeNodeAttribute]
   }
 }

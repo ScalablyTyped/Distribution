@@ -6,6 +6,7 @@ import typings.materialDashUi.materialDashUiStrings.x
 import typings.materialDashUi.materialDashUiStrings.y
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
@@ -49,11 +50,11 @@ object SliderProps {
     max: Int | Double = null,
     min: Int | Double = null,
     name: String = null,
-    onBlur: FocusEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
     onChange: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* value */ Double) => Unit = null,
-    onDragStart: MouseEventHandler[js.Object] = null,
-    onDragStop: MouseEventHandler[js.Object] = null,
-    onFocus: FocusEventHandler[js.Object] = null,
+    onDragStart: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onDragStop: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
     required: js.UndefOr[Boolean] = js.undefined,
     sliderStyle: CSSProperties = null,
     step: Int | Double = null,
@@ -70,11 +71,11 @@ object SliderProps {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
+    if (onDragStop != null) __obj.updateDynamic("onDragStop")(js.Any.fromFunction1(onDragStop))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (sliderStyle != null) __obj.updateDynamic("sliderStyle")(sliderStyle)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

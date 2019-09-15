@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,18 +16,18 @@ trait SliderEvents extends js.Object {
 object SliderEvents {
   @scala.inline
   def apply(
-    change: SliderEvent = null,
-    create: SliderEvent = null,
-    slide: SliderEvent = null,
-    start: SliderEvent = null,
-    stop: SliderEvent = null
+    change: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    create: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    slide: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    start: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    stop: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null
   ): SliderEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (slide != null) __obj.updateDynamic("slide")(slide)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[SliderEvents]
   }
 }

@@ -2,11 +2,10 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs.SwitchesNs
 
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactElement
-import typings.react.reactMod.TouchEventHandler
+import typings.react.reactMod.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,14 +53,14 @@ object EnhancedSwitchProps {
     labelPosition: String = null,
     labelStyle: CSSProperties = null,
     name: String = null,
-    onBlur: FocusEventHandler[js.Object] = null,
-    onFocus: FocusEventHandler[js.Object] = null,
-    onMouseDown: MouseEventHandler[js.Object] = null,
-    onMouseLeave: MouseEventHandler[js.Object] = null,
-    onMouseUp: MouseEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
+    onMouseDown: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseUp: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onSwitch: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* isInputChecked */ Boolean) => Unit = null,
-    onTouchEnd: TouchEventHandler[js.Object] = null,
-    onTouchStart: TouchEventHandler[js.Object] = null,
+    onTouchEnd: TouchEvent[js.Object] => Unit = null,
+    onTouchStart: TouchEvent[js.Object] => Unit = null,
     required: js.UndefOr[Boolean] = js.undefined,
     rippleColor: String = null,
     rippleStyle: CSSProperties = null,
@@ -82,14 +81,14 @@ object EnhancedSwitchProps {
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (onSwitch != null) __obj.updateDynamic("onSwitch")(js.Any.fromFunction2(onSwitch))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
     if (rippleStyle != null) __obj.updateDynamic("rippleStyle")(rippleStyle)

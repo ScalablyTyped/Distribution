@@ -3,8 +3,11 @@ package typings.antd.libInputGroupMod
 import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLSpanElement
@@ -31,10 +34,10 @@ object GroupProps {
     children: ReactNode = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
-    onBlur: FocusEventHandler[HTMLSpanElement] = null,
-    onFocus: FocusEventHandler[HTMLSpanElement] = null,
-    onMouseEnter: MouseEventHandler[HTMLSpanElement] = null,
-    onMouseLeave: MouseEventHandler[HTMLSpanElement] = null,
+    onBlur: FocusEvent[HTMLSpanElement] => Unit = null,
+    onFocus: FocusEvent[HTMLSpanElement] => Unit = null,
+    onMouseEnter: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     size: large | small | default = null,
     style: CSSProperties = null
@@ -43,10 +46,10 @@ object GroupProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

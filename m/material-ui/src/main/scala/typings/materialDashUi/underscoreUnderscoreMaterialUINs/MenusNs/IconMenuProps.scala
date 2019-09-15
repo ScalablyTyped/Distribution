@@ -3,10 +3,12 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.origin
 import typings.react.Event
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.FocusEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.SyntheticEvent
@@ -76,10 +78,10 @@ object IconMenuProps {
     onClick: /* e */ SyntheticEvent[js.Object, Event] => Unit = null,
     onItemClick: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit = null,
     onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
-    onMouseDown: MouseEventHandler[js.Object] = null,
-    onMouseEnter: MouseEventHandler[js.Object] = null,
-    onMouseLeave: MouseEventHandler[js.Object] = null,
-    onMouseUp: MouseEventHandler[js.Object] = null,
+    onMouseDown: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseUp: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onRequestChange: (/* opening */ Boolean, /* reason */ String) => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -106,10 +108,10 @@ object IconMenuProps {
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (onRequestChange != null) __obj.updateDynamic("onRequestChange")(js.Any.fromFunction2(onRequestChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (style != null) __obj.updateDynamic("style")(style)

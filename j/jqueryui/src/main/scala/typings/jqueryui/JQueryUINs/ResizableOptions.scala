@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +44,7 @@ object ResizableOptions {
     autoHide: js.UndefOr[Boolean] = js.undefined,
     cancel: String = null,
     containment: js.Any = null,
-    create: ResizableEvent = null,
+    create: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
     delay: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
@@ -55,9 +56,9 @@ object ResizableOptions {
     maxWidth: Int | Double = null,
     minHeight: Int | Double = null,
     minWidth: Int | Double = null,
-    resize: ResizableEvent = null,
-    start: ResizableEvent = null,
-    stop: ResizableEvent = null
+    resize: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
+    start: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
+    stop: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null
   ): ResizableOptions = {
     val __obj = js.Dynamic.literal()
     if (alsoResize != null) __obj.updateDynamic("alsoResize")(alsoResize)
@@ -68,7 +69,7 @@ object ResizableOptions {
     if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (containment != null) __obj.updateDynamic("containment")(containment)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
@@ -80,9 +81,9 @@ object ResizableOptions {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2(resize))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[ResizableOptions]
   }
 }

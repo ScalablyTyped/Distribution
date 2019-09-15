@@ -1,7 +1,9 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
@@ -22,7 +24,7 @@ object OverlayProps {
     autoLockScrolling: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     key: Key = null,
-    onClick: MouseEventHandler[js.Object] = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     ref: LegacyRef[Overlay] = null,
     show: js.UndefOr[Boolean] = js.undefined,
     transitionEnabled: js.UndefOr[Boolean] = js.undefined
@@ -31,7 +33,7 @@ object OverlayProps {
     if (!js.isUndefined(autoLockScrolling)) __obj.updateDynamic("autoLockScrolling")(autoLockScrolling)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (!js.isUndefined(transitionEnabled)) __obj.updateDynamic("transitionEnabled")(transitionEnabled)

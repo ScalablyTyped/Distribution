@@ -18,14 +18,15 @@ trait BadgeProps extends js.Object {
 object BadgeProps {
   @scala.inline
   def apply(
-    badgeContent: ReactNode,
+    badgeContent: ReactNode = null,
     badgeStyle: CSSProperties = null,
     className: String = null,
     primary: js.UndefOr[Boolean] = js.undefined,
     secondary: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): BadgeProps = {
-    val __obj = js.Dynamic.literal(badgeContent = badgeContent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (badgeContent != null) __obj.updateDynamic("badgeContent")(badgeContent.asInstanceOf[js.Any])
     if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)

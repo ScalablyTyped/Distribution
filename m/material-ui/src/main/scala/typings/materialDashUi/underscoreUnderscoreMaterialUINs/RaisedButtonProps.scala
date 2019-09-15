@@ -2,12 +2,14 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
 import typings.materialDashUi.materialDashUiStrings.after
 import typings.materialDashUi.materialDashUiStrings.before
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.KeyboardEventHandler
+import typings.react.reactMod.KeyboardEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,18 +67,18 @@ object RaisedButtonProps {
     labelPosition: before | after = null,
     labelStyle: CSSProperties = null,
     linkButton: js.UndefOr[Boolean] = js.undefined,
-    onBlur: FocusEventHandler[js.Object] = null,
-    onClick: MouseEventHandler[js.Object] = null,
-    onFocus: FocusEventHandler[js.Object] = null,
-    onKeyDown: KeyboardEventHandler[js.Object] = null,
-    onKeyUp: KeyboardEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
+    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
+    onKeyUp: KeyboardEvent[js.Object] => Unit = null,
     onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
-    onMouseDown: MouseEventHandler[js.Object] = null,
-    onMouseEnter: MouseEventHandler[js.Object] = null,
-    onMouseLeave: MouseEventHandler[js.Object] = null,
-    onMouseUp: MouseEventHandler[js.Object] = null,
-    onTouchEnd: TouchEventHandler[js.Object] = null,
-    onTouchStart: TouchEventHandler[js.Object] = null,
+    onMouseDown: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseUp: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onTouchEnd: TouchEvent[js.Object] => Unit = null,
+    onTouchStart: TouchEvent[js.Object] => Unit = null,
     overlayStyle: CSSProperties = null,
     primary: js.UndefOr[Boolean] = js.undefined,
     rippleStyle: CSSProperties = null,
@@ -111,18 +113,18 @@ object RaisedButtonProps {
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
     if (!js.isUndefined(linkButton)) __obj.updateDynamic("linkButton")(linkButton)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (rippleStyle != null) __obj.updateDynamic("rippleStyle")(rippleStyle)

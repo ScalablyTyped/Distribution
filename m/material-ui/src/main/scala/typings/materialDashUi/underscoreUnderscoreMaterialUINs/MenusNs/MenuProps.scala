@@ -3,6 +3,7 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.ReactLink
 import typings.react.Event
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.SyntheticEvent
 import scala.scalajs.js
@@ -44,9 +45,9 @@ object MenuProps {
     maxHeight: Int | Double = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_]) => Unit = null,
-    onEscKeyDown: KeyboardEventHandler[js.Object] = null,
+    onEscKeyDown: KeyboardEvent[js.Object] => Unit = null,
     onItemClick: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit = null,
-    onKeyDown: KeyboardEventHandler[js.Object] = null,
+    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
     selectedMenuItemStyle: CSSProperties = null,
     style: CSSProperties = null,
     value: js.Any | js.Array[_] = null,
@@ -62,9 +63,9 @@ object MenuProps {
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(onEscKeyDown)
+    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(js.Any.fromFunction1(onEscKeyDown))
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle)
     if (style != null) __obj.updateDynamic("style")(style)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

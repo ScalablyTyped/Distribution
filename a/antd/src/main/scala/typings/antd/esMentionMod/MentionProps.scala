@@ -1,6 +1,7 @@
 package typings.antd.esMentionMod
 
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactElement
 import typings.std.Element
@@ -45,9 +46,9 @@ object MentionProps {
     loading: js.UndefOr[Boolean] = js.undefined,
     multiLines: js.UndefOr[Boolean] = js.undefined,
     notFoundContent: js.Any = null,
-    onBlur: FocusEventHandler[HTMLElement] = null,
+    onBlur: FocusEvent[HTMLElement] => Unit = null,
     onChange: /* contentState */ js.Any => Unit = null,
-    onFocus: FocusEventHandler[HTMLElement] = null,
+    onFocus: FocusEvent[HTMLElement] => Unit = null,
     onSearchChange: (/* value */ String, /* trigger */ String) => _ = null,
     onSelect: (/* suggestion */ String, /* data */ js.UndefOr[js.Any]) => Unit = null,
     placeholder: String = null,
@@ -69,9 +70,9 @@ object MentionProps {
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (!js.isUndefined(multiLines)) __obj.updateDynamic("multiLines")(multiLines)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction2(onSearchChange))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

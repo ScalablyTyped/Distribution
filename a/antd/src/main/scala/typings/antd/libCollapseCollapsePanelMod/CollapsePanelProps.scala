@@ -22,22 +22,23 @@ trait CollapsePanelProps extends js.Object {
 object CollapsePanelProps {
   @scala.inline
   def apply(
-    header: ReactNode,
     key: String | Double,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,
     forceRender: js.UndefOr[Boolean] = js.undefined,
+    header: ReactNode = null,
     id: String = null,
     prefixCls: String = null,
     showArrow: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): CollapsePanelProps = {
-    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)

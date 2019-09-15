@@ -32,7 +32,7 @@ import typings.typescript.typescriptMod.SyntaxKind.VoidKeyword
 import typings.typescript.typescriptNumbers.`false`
 import typings.typescript.typescriptStrings.JS
 import typings.typescript.typescriptStrings.`0DOT8`
-import typings.typescript.typescriptStrings.`3DOT6`
+import typings.typescript.typescriptStrings.`3DOT7`
 import typings.typescript.typescriptStrings.dts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,7 +52,7 @@ object ^ extends js.Object {
   val updateStatement: js.Function2[/* node */ ExpressionStatement, /* expression */ Expression, ExpressionStatement] = js.native
   /** The version of the TypeScript compiler release */
   val version: String = js.native
-  val versionMajorMinor: `3DOT6` = js.native
+  val versionMajorMinor: `3DOT7` = js.native
   /**
     * Adds an EmitHelper to a node.
     */

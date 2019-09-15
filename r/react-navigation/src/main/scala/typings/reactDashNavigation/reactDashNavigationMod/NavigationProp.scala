@@ -11,8 +11,8 @@ trait NavigationProp[S] extends js.Object {
 
 object NavigationProp {
   @scala.inline
-  def apply[S](dispatch: NavigationDispatch, state: S): NavigationProp[S] = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch, state = state.asInstanceOf[js.Any])
+  def apply[S](dispatch: /* action */ NavigationAction => Boolean, state: S): NavigationProp[S] = {
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationProp[S]]
   }

@@ -176,7 +176,7 @@ trait ObjectConstructor
   def seal[T](o: T): T = js.native
   def setPrototypeOf(o: js.Any): js.Any = js.native
   /**
-    * Sets the prototype of a specified object o to  object proto or null. Returns the object o.
+    * Sets the prototype of a specified object o to object proto or null. Returns the object o.
     * @param o The object to change its prototype.
     * @param proto The value of the new prototype or null.
     */

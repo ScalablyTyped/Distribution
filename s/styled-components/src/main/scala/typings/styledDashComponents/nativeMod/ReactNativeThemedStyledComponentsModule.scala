@@ -1,7 +1,10 @@
 package typings.styledDashComponents.nativeMod
 
+import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Consumer
 import typings.react.reactMod.Context
+import typings.react.reactMod.ForwardRefExoticComponent
+import typings.styledDashComponents.WithOptionalThemeComponentPropsWithRefCT
 import typings.styledDashComponents.styledDashComponentsMod.ThemeProviderComponent
 import typings.styledDashComponents.styledDashComponentsMod.ThemedCssFunction
 import typings.styledDashComponents.styledDashComponentsMod.WithThemeFnInterface
@@ -32,9 +35,11 @@ object ReactNativeThemedStyledComponentsModule {
     css: ThemedCssFunction[T],
     default: ReactNativeStyledInterface[T],
     isStyledComponent: /* target */ js.Any => /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean,
-    withTheme: WithThemeFnInterface[T]
+    withTheme: /* component */ ComponentType[js.Any] => ForwardRefExoticComponent[
+      WithOptionalThemeComponentPropsWithRefCT[typings.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[T]]
+    ]
   ): ReactNativeThemedStyledComponentsModule[T, U] = {
-    val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer, ThemeContext = ThemeContext, ThemeProvider = ThemeProvider, css = css, default = default, isStyledComponent = js.Any.fromFunction1(isStyledComponent), withTheme = withTheme)
+    val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer, ThemeContext = ThemeContext, ThemeProvider = ThemeProvider, css = css, default = default, isStyledComponent = js.Any.fromFunction1(isStyledComponent), withTheme = js.Any.fromFunction1(withTheme))
   
     __obj.asInstanceOf[ReactNativeThemedStyledComponentsModule[T, U]]
   }

@@ -5,7 +5,9 @@ import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
 import typings.antd.esCheckboxGroupMod.AbstractCheckboxGroupProps
 import typings.antd.esCheckboxGroupMod.CheckboxOptionType
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -37,8 +39,8 @@ object RadioGroupProps {
     id: String = null,
     name: String = null,
     onChange: /* e */ RadioChangeEvent => Unit = null,
-    onMouseEnter: MouseEventHandler[HTMLDivElement] = null,
-    onMouseLeave: MouseEventHandler[HTMLDivElement] = null,
+    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     options: js.Array[CheckboxOptionType | String] = null,
     prefixCls: String = null,
     size: large | default | small = null,
@@ -54,8 +56,8 @@ object RadioGroupProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (options != null) __obj.updateDynamic("options")(options)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

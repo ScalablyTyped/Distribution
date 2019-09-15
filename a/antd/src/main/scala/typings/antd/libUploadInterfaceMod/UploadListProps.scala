@@ -1,5 +1,7 @@
 package typings.antd.libUploadInterfaceMod
 
+import typings.std.Blob
+import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +28,7 @@ object UploadListProps {
     onPreview: /* file */ UploadFile => Unit = null,
     onRemove: /* file */ UploadFile => Unit | Boolean = null,
     prefixCls: String = null,
-    previewFile: PreviewFileHandler = null,
+    previewFile: /* file */ File | Blob => js.Thenable[String] = null,
     progressAttr: js.Object = null,
     showPreviewIcon: js.UndefOr[Boolean] = js.undefined,
     showRemoveIcon: js.UndefOr[Boolean] = js.undefined
@@ -37,7 +39,7 @@ object UploadListProps {
     if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1(onPreview))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (previewFile != null) __obj.updateDynamic("previewFile")(previewFile)
+    if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
     if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr)
     if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon)
     if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon)

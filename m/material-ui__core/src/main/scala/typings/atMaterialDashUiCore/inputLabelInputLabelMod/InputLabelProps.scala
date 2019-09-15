@@ -43,24 +43,40 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.atMaterialDashUiCore.formLabelFormLabelMod.FormLabelBaseProps
 import typings.react.Anon_Html
+import typings.react.Event
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
+import typings.react.reactMod.CompositionEvent
 import typings.react.reactMod.CompositionEventHandler
+import typings.react.reactMod.DragEvent
 import typings.react.reactMod.DragEventHandler
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.PointerEventHandler
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactType
 import typings.react.reactMod.Ref
 import typings.react.reactMod.RefObject
+import typings.react.reactMod.SyntheticEvent
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
+import typings.react.reactMod.TransitionEvent
 import typings.react.reactMod.TransitionEventHandler
+import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
+import typings.react.reactMod.WheelEvent
 import typings.react.reactMod.WheelEventHandler
 import typings.std.HTMLLabelElement
 import scala.scalajs.js
@@ -427,85 +443,85 @@ object InputLabelProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    onAbort: ReactEventHandler[HTMLLabelElement] = null,
-    onAnimationEnd: AnimationEventHandler[HTMLLabelElement] = null,
-    onAnimationIteration: AnimationEventHandler[HTMLLabelElement] = null,
-    onAnimationStart: AnimationEventHandler[HTMLLabelElement] = null,
-    onAuxClick: MouseEventHandler[HTMLLabelElement] = null,
-    onBeforeInput: FormEventHandler[HTMLLabelElement] = null,
-    onBlur: FocusEventHandler[HTMLLabelElement] = null,
-    onCanPlay: ReactEventHandler[HTMLLabelElement] = null,
-    onCanPlayThrough: ReactEventHandler[HTMLLabelElement] = null,
-    onChange: FormEventHandler[HTMLLabelElement] = null,
-    onClick: MouseEventHandler[HTMLLabelElement] = null,
-    onCompositionEnd: CompositionEventHandler[HTMLLabelElement] = null,
-    onCompositionStart: CompositionEventHandler[HTMLLabelElement] = null,
-    onCompositionUpdate: CompositionEventHandler[HTMLLabelElement] = null,
-    onContextMenu: MouseEventHandler[HTMLLabelElement] = null,
-    onCopy: ClipboardEventHandler[HTMLLabelElement] = null,
-    onCut: ClipboardEventHandler[HTMLLabelElement] = null,
-    onDoubleClick: MouseEventHandler[HTMLLabelElement] = null,
-    onDrag: DragEventHandler[HTMLLabelElement] = null,
-    onDragEnd: DragEventHandler[HTMLLabelElement] = null,
-    onDragEnter: DragEventHandler[HTMLLabelElement] = null,
-    onDragExit: DragEventHandler[HTMLLabelElement] = null,
-    onDragLeave: DragEventHandler[HTMLLabelElement] = null,
-    onDragOver: DragEventHandler[HTMLLabelElement] = null,
-    onDragStart: DragEventHandler[HTMLLabelElement] = null,
-    onDrop: DragEventHandler[HTMLLabelElement] = null,
-    onDurationChange: ReactEventHandler[HTMLLabelElement] = null,
-    onEmptied: ReactEventHandler[HTMLLabelElement] = null,
-    onEncrypted: ReactEventHandler[HTMLLabelElement] = null,
-    onEnded: ReactEventHandler[HTMLLabelElement] = null,
-    onError: ReactEventHandler[HTMLLabelElement] = null,
-    onFocus: FocusEventHandler[HTMLLabelElement] = null,
-    onInput: FormEventHandler[HTMLLabelElement] = null,
-    onInvalid: FormEventHandler[HTMLLabelElement] = null,
-    onKeyDown: KeyboardEventHandler[HTMLLabelElement] = null,
-    onKeyPress: KeyboardEventHandler[HTMLLabelElement] = null,
-    onKeyUp: KeyboardEventHandler[HTMLLabelElement] = null,
-    onLoad: ReactEventHandler[HTMLLabelElement] = null,
-    onLoadStart: ReactEventHandler[HTMLLabelElement] = null,
-    onLoadedData: ReactEventHandler[HTMLLabelElement] = null,
-    onLoadedMetadata: ReactEventHandler[HTMLLabelElement] = null,
-    onMouseDown: MouseEventHandler[HTMLLabelElement] = null,
-    onMouseEnter: MouseEventHandler[HTMLLabelElement] = null,
-    onMouseLeave: MouseEventHandler[HTMLLabelElement] = null,
-    onMouseMove: MouseEventHandler[HTMLLabelElement] = null,
-    onMouseOut: MouseEventHandler[HTMLLabelElement] = null,
-    onMouseOver: MouseEventHandler[HTMLLabelElement] = null,
-    onMouseUp: MouseEventHandler[HTMLLabelElement] = null,
-    onPaste: ClipboardEventHandler[HTMLLabelElement] = null,
-    onPause: ReactEventHandler[HTMLLabelElement] = null,
-    onPlay: ReactEventHandler[HTMLLabelElement] = null,
-    onPlaying: ReactEventHandler[HTMLLabelElement] = null,
-    onPointerCancel: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerDown: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerEnter: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerLeave: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerMove: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerOut: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerOver: PointerEventHandler[HTMLLabelElement] = null,
-    onPointerUp: PointerEventHandler[HTMLLabelElement] = null,
-    onProgress: ReactEventHandler[HTMLLabelElement] = null,
-    onRateChange: ReactEventHandler[HTMLLabelElement] = null,
-    onReset: FormEventHandler[HTMLLabelElement] = null,
-    onScroll: UIEventHandler[HTMLLabelElement] = null,
-    onSeeked: ReactEventHandler[HTMLLabelElement] = null,
-    onSeeking: ReactEventHandler[HTMLLabelElement] = null,
-    onSelect: ReactEventHandler[HTMLLabelElement] = null,
-    onStalled: ReactEventHandler[HTMLLabelElement] = null,
-    onSubmit: FormEventHandler[HTMLLabelElement] = null,
-    onSuspend: ReactEventHandler[HTMLLabelElement] = null,
-    onTimeUpdate: ReactEventHandler[HTMLLabelElement] = null,
-    onTouchCancel: TouchEventHandler[HTMLLabelElement] = null,
-    onTouchEnd: TouchEventHandler[HTMLLabelElement] = null,
-    onTouchMove: TouchEventHandler[HTMLLabelElement] = null,
-    onTouchStart: TouchEventHandler[HTMLLabelElement] = null,
-    onTransitionEnd: TransitionEventHandler[HTMLLabelElement] = null,
-    onVolumeChange: ReactEventHandler[HTMLLabelElement] = null,
-    onWaiting: ReactEventHandler[HTMLLabelElement] = null,
-    onWheel: WheelEventHandler[HTMLLabelElement] = null,
+    onAbort: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onAnimationEnd: AnimationEvent[HTMLLabelElement] => Unit = null,
+    onAnimationIteration: AnimationEvent[HTMLLabelElement] => Unit = null,
+    onAnimationStart: AnimationEvent[HTMLLabelElement] => Unit = null,
+    onAuxClick: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onBeforeInput: FormEvent[HTMLLabelElement] => Unit = null,
+    onBlur: FocusEvent[HTMLLabelElement] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onChange: FormEvent[HTMLLabelElement] => Unit = null,
+    onClick: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onCompositionEnd: CompositionEvent[HTMLLabelElement] => Unit = null,
+    onCompositionStart: CompositionEvent[HTMLLabelElement] => Unit = null,
+    onCompositionUpdate: CompositionEvent[HTMLLabelElement] => Unit = null,
+    onContextMenu: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onCopy: ClipboardEvent[HTMLLabelElement] => Unit = null,
+    onCut: ClipboardEvent[HTMLLabelElement] => Unit = null,
+    onDoubleClick: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onDrag: DragEvent[HTMLLabelElement] => Unit = null,
+    onDragEnd: DragEvent[HTMLLabelElement] => Unit = null,
+    onDragEnter: DragEvent[HTMLLabelElement] => Unit = null,
+    onDragExit: DragEvent[HTMLLabelElement] => Unit = null,
+    onDragLeave: DragEvent[HTMLLabelElement] => Unit = null,
+    onDragOver: DragEvent[HTMLLabelElement] => Unit = null,
+    onDragStart: DragEvent[HTMLLabelElement] => Unit = null,
+    onDrop: DragEvent[HTMLLabelElement] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onError: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onFocus: FocusEvent[HTMLLabelElement] => Unit = null,
+    onInput: FormEvent[HTMLLabelElement] => Unit = null,
+    onInvalid: FormEvent[HTMLLabelElement] => Unit = null,
+    onKeyDown: KeyboardEvent[HTMLLabelElement] => Unit = null,
+    onKeyPress: KeyboardEvent[HTMLLabelElement] => Unit = null,
+    onKeyUp: KeyboardEvent[HTMLLabelElement] => Unit = null,
+    onLoad: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onMouseDown: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onMouseEnter: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onMouseMove: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onMouseOut: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onMouseOver: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onMouseUp: MouseEvent[HTMLLabelElement, NativeMouseEvent] => Unit = null,
+    onPaste: ClipboardEvent[HTMLLabelElement] => Unit = null,
+    onPause: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onPointerCancel: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerDown: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerEnter: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerLeave: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerMove: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerOut: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerOver: PointerEvent[HTMLLabelElement] => Unit = null,
+    onPointerUp: PointerEvent[HTMLLabelElement] => Unit = null,
+    onProgress: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onReset: FormEvent[HTMLLabelElement] => Unit = null,
+    onScroll: UIEvent[HTMLLabelElement] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onSelect: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onStalled: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onSubmit: FormEvent[HTMLLabelElement] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onTouchCancel: TouchEvent[HTMLLabelElement] => Unit = null,
+    onTouchEnd: TouchEvent[HTMLLabelElement] => Unit = null,
+    onTouchMove: TouchEvent[HTMLLabelElement] => Unit = null,
+    onTouchStart: TouchEvent[HTMLLabelElement] => Unit = null,
+    onTransitionEnd: TransitionEvent[HTMLLabelElement] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLLabelElement, Event] => Unit = null,
+    onWheel: WheelEvent[HTMLLabelElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
@@ -615,85 +631,85 @@ object InputLabelProps {
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope)
     if (itemType != null) __obj.updateDynamic("itemType")(itemType)
     if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort)
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration)
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick)
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay)
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(onCanPlayThrough)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd)
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart)
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(onCompositionUpdate)
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu)
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
-    if (onCut != null) __obj.updateDynamic("onCut")(onCut)
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick)
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange)
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(onEmptied)
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted)
-    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData)
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(onLoadedMetadata)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying)
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(onPointerCancel)
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(onPointerDown)
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(onPointerEnter)
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(onPointerLeave)
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(onPointerMove)
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut)
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver)
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange)
-    if (onReset != null) __obj.updateDynamic("onReset")(onReset)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked)
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(onSeeking)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onStalled != null) __obj.updateDynamic("onStalled")(onStalled)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(onSuspend)
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
-    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
+    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
+    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
+    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
+    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
+    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
+    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
+    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
+    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
+    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
+    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
+    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
+    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
+    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
+    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
+    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
+    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
+    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
+    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
+    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
+    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
+    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
+    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
+    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
+    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
+    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
+    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
+    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
+    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
+    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
+    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
+    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
+    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
+    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
+    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
+    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
+    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
+    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
+    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)

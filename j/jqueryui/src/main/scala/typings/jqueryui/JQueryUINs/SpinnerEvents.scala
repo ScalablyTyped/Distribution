@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,18 +16,18 @@ trait SpinnerEvents extends js.Object {
 object SpinnerEvents {
   @scala.inline
   def apply(
-    change: SpinnerEvent[js.Object] = null,
-    create: SpinnerEvent[js.Object] = null,
-    spin: SpinnerEvent[SpinnerUIParam] = null,
-    start: SpinnerEvent[js.Object] = null,
-    stop: SpinnerEvent[js.Object] = null
+    change: (/* event */ Event, js.Object) => Unit = null,
+    create: (/* event */ Event, js.Object) => Unit = null,
+    spin: (/* event */ Event, SpinnerUIParam) => Unit = null,
+    start: (/* event */ Event, js.Object) => Unit = null,
+    stop: (/* event */ Event, js.Object) => Unit = null
   ): SpinnerEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (spin != null) __obj.updateDynamic("spin")(spin)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction2(spin))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[SpinnerEvents]
   }
 }

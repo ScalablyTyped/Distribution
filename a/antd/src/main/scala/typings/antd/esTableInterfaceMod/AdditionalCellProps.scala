@@ -1,6 +1,8 @@
 package typings.antd.esTableInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -16,11 +18,11 @@ object AdditionalCellProps {
   @scala.inline
   def apply(
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    onClick: MouseEventHandler[HTMLElement] = null
+    onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null
   ): AdditionalCellProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[AdditionalCellProps]
   }
 }

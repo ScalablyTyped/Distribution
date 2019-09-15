@@ -25,11 +25,11 @@ object BuilderProgramHost {
   def apply(
     useCaseSensitiveFileNames: () => Boolean,
     createHash: /* data */ String => String = null,
-    writeFile: WriteFileCallback = null
+    writeFile: (/* fileName */ String, /* data */ String, /* writeByteOrderMark */ Boolean, /* onError */ js.UndefOr[js.Function1[/* message */ String, Unit]], /* sourceFiles */ js.UndefOr[js.Array[SourceFile]]) => Unit = null
   ): BuilderProgramHost = {
     val __obj = js.Dynamic.literal(useCaseSensitiveFileNames = js.Any.fromFunction0(useCaseSensitiveFileNames))
     if (createHash != null) __obj.updateDynamic("createHash")(js.Any.fromFunction1(createHash))
-    if (writeFile != null) __obj.updateDynamic("writeFile")(writeFile)
+    if (writeFile != null) __obj.updateDynamic("writeFile")(js.Any.fromFunction5(writeFile))
     __obj.asInstanceOf[BuilderProgramHost]
   }
 }

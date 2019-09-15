@@ -1,11 +1,11 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs.TabsNs
 
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.KeyboardEventHandler
-import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.KeyboardEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,11 +39,11 @@ object TabProps {
     keyboardFocused: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null,
     onActive: /* tab */ Tab => Unit = null,
-    onBlur: FocusEventHandler[js.Object] = null,
-    onClick: MouseEventHandler[js.Object] = null,
-    onFocus: FocusEventHandler[js.Object] = null,
-    onKeyDown: KeyboardEventHandler[js.Object] = null,
-    onKeyUp: KeyboardEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
+    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
+    onKeyUp: KeyboardEvent[js.Object] => Unit = null,
     onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
     style: CSSProperties = null,
     tabIndex: Int | Double = null,
@@ -69,11 +69,11 @@ object TabProps {
     if (!js.isUndefined(keyboardFocused)) __obj.updateDynamic("keyboardFocused")(keyboardFocused)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

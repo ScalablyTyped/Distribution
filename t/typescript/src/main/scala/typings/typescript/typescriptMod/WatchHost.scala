@@ -11,7 +11,13 @@ trait WatchHost extends js.Object {
   var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ js.Any, Unit]] = js.native
   /** If provided, called with Diagnostic message that informs about change in watch status */
   var onWatchStatusChange: js.UndefOr[
-    js.Function3[/* diagnostic */ Diagnostic, /* newLine */ String, /* options */ CompilerOptions, Unit]
+    js.Function4[
+      /* diagnostic */ Diagnostic, 
+      /* newLine */ String, 
+      /* options */ CompilerOptions, 
+      /* errorCount */ js.UndefOr[Double], 
+      Unit
+    ]
   ] = js.native
   /** If provided, will be used to set delayed compilation, so that multiple changes in short span are compiled together */
   var setTimeout: js.UndefOr[

@@ -64,7 +64,7 @@ trait StrictTransitionablePortalProps extends js.Object {
 object StrictTransitionablePortalProps {
   @scala.inline
   def apply(
-    children: ReactNode,
+    children: ReactNode = null,
     onClose: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Unit = null,
     onHide: (/* nothing */ Null, /* data */ TransitionEventData with TransitionablePortalState) => Unit = null,
     onOpen: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Unit = null,
@@ -72,7 +72,8 @@ object StrictTransitionablePortalProps {
     open: js.UndefOr[Boolean] = js.undefined,
     transition: TransitionProps = null
   ): StrictTransitionablePortalProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2(onHide))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))

@@ -1,5 +1,6 @@
 package typings.gatsby.gatsbyMod
 
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +13,10 @@ trait StaticQueryProps[T] extends js.Object {
 
 object StaticQueryProps {
   @scala.inline
-  def apply[T](query: js.Any, children: RenderCallback[T] = null, render: RenderCallback[T] = null): StaticQueryProps[T] = {
+  def apply[T](query: js.Any, children: T => ReactNode = null, render: T => ReactNode = null): StaticQueryProps[T] = {
     val __obj = js.Dynamic.literal(query = query)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[StaticQueryProps[T]]
   }
 }

@@ -3,6 +3,7 @@ package typings.atAngularCore
 import typings.atAngularCore.atAngularCoreMod.ContentQueriesFunction
 import typings.atAngularCore.atAngularCoreMod.HostBindingsFunction
 import typings.atAngularCore.atAngularCoreMod.ViewQueriesFunction
+import typings.atAngularCore.atAngularCoreMod.ɵRenderFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,22 +90,22 @@ trait Anon_ContentQueries[T] extends js.Object {
 object Anon_ContentQueries {
   @scala.inline
   def apply[T](
-    contentQueries: ContentQueriesFunction[T] = null,
-    hostBindings: HostBindingsFunction[T] = null,
+    contentQueries: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit = null,
+    hostBindings: (/* rf */ ɵRenderFlags, T, /* elementIndex */ Double) => Unit = null,
     inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueries with js.Any = null,
     outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueries with js.Any = null,
-    viewQuery: ViewQueriesFunction[T] = null
+    viewQuery: (/* rf */ ɵRenderFlags, T) => Unit = null
   ): Anon_ContentQueries[T] = {
     val __obj = js.Dynamic.literal()
-    if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries)
-    if (hostBindings != null) __obj.updateDynamic("hostBindings")(hostBindings)
+    if (contentQueries != null) __obj.updateDynamic("contentQueries")(js.Any.fromFunction3(contentQueries))
+    if (hostBindings != null) __obj.updateDynamic("hostBindings")(js.Any.fromFunction3(hostBindings))
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (viewQuery != null) __obj.updateDynamic("viewQuery")(viewQuery)
+    if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))
     __obj.asInstanceOf[Anon_ContentQueries[T]]
   }
 }

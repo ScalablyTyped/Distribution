@@ -11,8 +11,11 @@ trait LocationContext extends js.Object {
 
 object LocationContext {
   @scala.inline
-  def apply(location: WindowLocation, navigate: NavigateFn): LocationContext = {
-    val __obj = js.Dynamic.literal(location = location, navigate = navigate)
+  def apply(
+    location: WindowLocation,
+    navigate: (/* to */ String, /* options */ js.UndefOr[NavigateOptions[js.Object]]) => Unit
+  ): LocationContext = {
+    val __obj = js.Dynamic.literal(location = location, navigate = js.Any.fromFunction2(navigate))
   
     __obj.asInstanceOf[LocationContext]
   }

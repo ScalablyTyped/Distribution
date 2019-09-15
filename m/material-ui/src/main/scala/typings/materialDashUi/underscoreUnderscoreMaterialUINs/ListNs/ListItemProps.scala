@@ -1,12 +1,13 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs.ListNs
 
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.EnhancedButtonProps
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
-import typings.react.reactMod.TouchEventHandler
+import typings.react.reactMod.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,12 +55,12 @@ object ListItemProps {
     nestedItems: js.Array[ReactElement] = null,
     nestedLevel: Int | Double = null,
     nestedListStyle: CSSProperties = null,
-    onClick: MouseEventHandler[js.Object] = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
-    onMouseEnter: MouseEventHandler[js.Object] = null,
-    onMouseLeave: MouseEventHandler[js.Object] = null,
+    onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onNestedListToggle: /* item */ ListItem => Unit = null,
-    onTouchStart: TouchEventHandler[js.Object] = null,
+    onTouchStart: TouchEvent[js.Object] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     primaryText: ReactNode = null,
     primaryTogglesNestedList: js.UndefOr[Boolean] = js.undefined,
@@ -87,12 +88,12 @@ object ListItemProps {
     if (nestedItems != null) __obj.updateDynamic("nestedItems")(nestedItems)
     if (nestedLevel != null) __obj.updateDynamic("nestedLevel")(nestedLevel.asInstanceOf[js.Any])
     if (nestedListStyle != null) __obj.updateDynamic("nestedListStyle")(nestedListStyle)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (onNestedListToggle != null) __obj.updateDynamic("onNestedListToggle")(js.Any.fromFunction1(onNestedListToggle))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
     if (!js.isUndefined(primaryTogglesNestedList)) __obj.updateDynamic("primaryTogglesNestedList")(primaryTogglesNestedList)

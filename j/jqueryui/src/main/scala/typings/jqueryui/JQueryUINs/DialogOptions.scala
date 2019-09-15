@@ -42,20 +42,20 @@ object DialogOptions {
   def apply(
     appendTo: String = null,
     autoOpen: js.UndefOr[Boolean] = js.undefined,
-    beforeClose: DialogEvent = null,
+    beforeClose: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     buttons: (StringDictionary[js.Function1[/* event */ js.UndefOr[Event], Unit]]) | js.Array[DialogButtonOptions] = null,
     classes: DialogClasses = null,
-    close: DialogEvent = null,
+    close: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     closeOnEscape: js.UndefOr[Boolean] = js.undefined,
     closeText: String = null,
-    create: DialogEvent = null,
+    create: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     dialogClass: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    drag: DialogEvent = null,
-    dragStart: DialogEvent = null,
-    dragStop: DialogEvent = null,
+    drag: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    dragStart: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    dragStop: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    focus: DialogEvent = null,
+    focus: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     height: Double | String = null,
     hide: Boolean | Double | String | DialogShowHideOptions = null,
     maxHeight: Int | Double = null,
@@ -63,12 +63,12 @@ object DialogOptions {
     minHeight: Int | Double = null,
     minWidth: Int | Double = null,
     modal: js.UndefOr[Boolean] = js.undefined,
-    open: DialogEvent = null,
+    open: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     position: js.Any = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
-    resize: DialogEvent = null,
-    resizeStart: DialogEvent = null,
-    resizeStop: DialogEvent = null,
+    resize: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    resizeStart: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    resizeStop: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
     show: Boolean | Double | String | DialogShowHideOptions = null,
     stack: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
@@ -78,20 +78,20 @@ object DialogOptions {
     val __obj = js.Dynamic.literal()
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2(beforeClose))
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
     if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (closeText != null) __obj.updateDynamic("closeText")(closeText)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
+    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
@@ -99,12 +99,12 @@ object DialogOptions {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
-    if (resizeStop != null) __obj.updateDynamic("resizeStop")(resizeStop)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2(resize))
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction2(resizeStart))
+    if (resizeStop != null) __obj.updateDynamic("resizeStop")(js.Any.fromFunction2(resizeStop))
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack)
     if (title != null) __obj.updateDynamic("title")(title)

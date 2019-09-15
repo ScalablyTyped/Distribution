@@ -33,7 +33,6 @@ trait DropDownProps extends js.Object {
 object DropDownProps {
   @scala.inline
   def apply(
-    overlay: ReactNode | OverlayFunc,
     align: Align = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -43,6 +42,7 @@ object DropDownProps {
     mouseLeaveDelay: Int | Double = null,
     onVisibleChange: /* visible */ Boolean => Unit = null,
     openClassName: String = null,
+    overlay: ReactNode | OverlayFunc = null,
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     placement: Placement = null,
@@ -51,7 +51,7 @@ object DropDownProps {
     trigger: js.Array[click | hover | contextMenu] = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): DropDownProps = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
@@ -61,6 +61,7 @@ object DropDownProps {
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (placement != null) __obj.updateDynamic("placement")(placement)

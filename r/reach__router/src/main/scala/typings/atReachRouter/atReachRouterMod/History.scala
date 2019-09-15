@@ -16,10 +16,10 @@ object History {
   def apply(
     listen: HistoryListener => HistoryUnsubscribe,
     location: HistoryLocation,
-    navigate: NavigateFn,
+    navigate: (/* to */ String, /* options */ js.UndefOr[NavigateOptions[js.Object]]) => Unit,
     transitioning: Boolean
   ): History = {
-    val __obj = js.Dynamic.literal(listen = js.Any.fromFunction1(listen), location = location, navigate = navigate, transitioning = transitioning)
+    val __obj = js.Dynamic.literal(listen = js.Any.fromFunction1(listen), location = location, navigate = js.Any.fromFunction2(navigate), transitioning = transitioning)
   
     __obj.asInstanceOf[History]
   }

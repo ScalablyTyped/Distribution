@@ -396,7 +396,7 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
-    * @param end The end of the specified portion of the array.
+    * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native

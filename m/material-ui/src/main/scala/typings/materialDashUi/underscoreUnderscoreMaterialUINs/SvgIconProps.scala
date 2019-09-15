@@ -1,9 +1,10 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.Props
 import typings.react.reactMod.SVGAttributes
 import scala.scalajs.js
@@ -25,8 +26,8 @@ object SvgIconProps {
     SVGAttributes: SVGAttributes[js.Object] = null,
     color: String = null,
     hoverColor: String = null,
-    onMouseEnter: MouseEventHandler[js.Object] = null,
-    onMouseLeave: MouseEventHandler[js.Object] = null,
+    onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     style: CSSProperties = null,
     viewBox: String = null
   ): SvgIconProps = {
@@ -35,8 +36,8 @@ object SvgIconProps {
     js.Dynamic.global.Object.assign(__obj, SVGAttributes)
     if (color != null) __obj.updateDynamic("color")(color)
     if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (style != null) __obj.updateDynamic("style")(style)
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
     __obj.asInstanceOf[SvgIconProps]

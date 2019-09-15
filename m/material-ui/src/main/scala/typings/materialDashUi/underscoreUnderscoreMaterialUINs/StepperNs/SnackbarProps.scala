@@ -1,10 +1,12 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs.StepperNs
 
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.Snackbar
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
@@ -43,7 +45,7 @@ object SnackbarProps {
     children: ReactNode = null,
     className: String = null,
     key: Key = null,
-    onActionClick: MouseEventHandler[js.Object] = null,
+    onActionClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onDismiss: () => Unit = null,
     onShow: () => Unit = null,
     openOnMount: js.UndefOr[Boolean] = js.undefined,
@@ -56,7 +58,7 @@ object SnackbarProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
+    if (onActionClick != null) __obj.updateDynamic("onActionClick")(js.Any.fromFunction1(onActionClick))
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (!js.isUndefined(openOnMount)) __obj.updateDynamic("openOnMount")(openOnMount)

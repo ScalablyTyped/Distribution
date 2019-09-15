@@ -10,9 +10,9 @@ trait IUseObserverOptions extends js.Object {
 
 object IUseObserverOptions {
   @scala.inline
-  def apply(useForceUpdate: ForceUpdateHook = null): IUseObserverOptions = {
+  def apply(useForceUpdate: () => js.Function0[Unit] = null): IUseObserverOptions = {
     val __obj = js.Dynamic.literal()
-    if (useForceUpdate != null) __obj.updateDynamic("useForceUpdate")(useForceUpdate)
+    if (useForceUpdate != null) __obj.updateDynamic("useForceUpdate")(js.Any.fromFunction0(useForceUpdate))
     __obj.asInstanceOf[IUseObserverOptions]
   }
 }

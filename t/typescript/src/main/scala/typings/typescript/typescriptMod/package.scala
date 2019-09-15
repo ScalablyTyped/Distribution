@@ -168,7 +168,13 @@ package object typescriptMod {
     * Creates the watch what generates program using the config file
     */
   type WatchOfConfigFile[T] = Watch[T]
-  type WatchStatusReporter = js.Function3[/* diagnostic */ Diagnostic, /* newLine */ String, /* options */ CompilerOptions, Unit]
+  type WatchStatusReporter = js.Function4[
+    /* diagnostic */ Diagnostic, 
+    /* newLine */ String, 
+    /* options */ CompilerOptions, 
+    /* errorCount */ js.UndefOr[Double], 
+    Unit
+  ]
   type WithMetadata[T] = T with Anon_Metadata
   type WriteFileCallback = js.Function5[
     /* fileName */ String, 

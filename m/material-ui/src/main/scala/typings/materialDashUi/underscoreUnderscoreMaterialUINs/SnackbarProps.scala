@@ -1,6 +1,8 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -23,24 +25,25 @@ trait SnackbarProps extends js.Object {
 object SnackbarProps {
   @scala.inline
   def apply(
-    message: ReactNode,
     open: Boolean,
     action: ReactNode = null,
     autoHideDuration: Int | Double = null,
     bodyStyle: CSSProperties = null,
     className: String = null,
     contentStyle: CSSProperties = null,
-    onActionClick: MouseEventHandler[js.Object] = null,
+    message: ReactNode = null,
+    onActionClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onRequestClose: /* reason */ String => Unit = null,
     style: CSSProperties = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], open = open)
+    val __obj = js.Dynamic.literal(open = open)
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
     if (className != null) __obj.updateDynamic("className")(className)
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
-    if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (onActionClick != null) __obj.updateDynamic("onActionClick")(js.Any.fromFunction1(onActionClick))
     if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1(onRequestClose))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[SnackbarProps]

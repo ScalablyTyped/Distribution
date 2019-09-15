@@ -11,9 +11,9 @@ trait ListLocale extends js.Object {
 
 object ListLocale {
   @scala.inline
-  def apply(emptyText: ReactNode | js.Function0[ReactNode]): ListLocale = {
-    val __obj = js.Dynamic.literal(emptyText = emptyText.asInstanceOf[js.Any])
-  
+  def apply(emptyText: ReactNode | js.Function0[ReactNode] = null): ListLocale = {
+    val __obj = js.Dynamic.literal()
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLocale]
   }
 }

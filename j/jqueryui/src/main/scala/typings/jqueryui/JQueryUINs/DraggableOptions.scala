@@ -2,6 +2,7 @@ package typings.jqueryui.JQueryUINs
 
 import typings.jqueryui.JQuery
 import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +47,13 @@ object DraggableOptions {
     cancel: String = null,
     connectToSortable: Element | js.Array[Element] | JQuery | String = null,
     containment: js.Any = null,
-    create: DraggableEvent = null,
+    create: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
     cursor: String = null,
     cursorAt: js.Any = null,
     delay: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
-    drag: DraggableEvent = null,
+    drag: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
     grid: js.Array[Double] = null,
     handle: js.Any = null,
     helper: js.Any = null,
@@ -69,8 +70,8 @@ object DraggableOptions {
     snapMode: String = null,
     snapTolerance: Int | Double = null,
     stack: String = null,
-    start: DraggableEvent = null,
-    stop: DraggableEvent = null,
+    start: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
+    stop: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
     zIndex: Int | Double = null
   ): DraggableOptions = {
     val __obj = js.Dynamic.literal()
@@ -80,13 +81,13 @@ object DraggableOptions {
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (connectToSortable != null) __obj.updateDynamic("connectToSortable")(connectToSortable.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
     if (grid != null) __obj.updateDynamic("grid")(grid)
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (helper != null) __obj.updateDynamic("helper")(helper)
@@ -103,8 +104,8 @@ object DraggableOptions {
     if (snapMode != null) __obj.updateDynamic("snapMode")(snapMode)
     if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOptions]
   }

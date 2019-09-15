@@ -56,14 +56,14 @@ object ɵɵBaseDef {
     outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any,
-    contentQueries: ContentQueriesFunction[T] = null,
-    hostBindings: HostBindingsFunction[T] = null,
-    viewQuery: ViewQueriesFunction[T] = null
+    contentQueries: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit = null,
+    hostBindings: (/* rf */ ɵRenderFlags, T, /* elementIndex */ Double) => Unit = null,
+    viewQuery: (/* rf */ ɵRenderFlags, T) => Unit = null
   ): ɵɵBaseDef[T] = {
     val __obj = js.Dynamic.literal(declaredInputs = declaredInputs, inputs = inputs, outputs = outputs)
-    if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries)
-    if (hostBindings != null) __obj.updateDynamic("hostBindings")(hostBindings)
-    if (viewQuery != null) __obj.updateDynamic("viewQuery")(viewQuery)
+    if (contentQueries != null) __obj.updateDynamic("contentQueries")(js.Any.fromFunction3(contentQueries))
+    if (hostBindings != null) __obj.updateDynamic("hostBindings")(js.Any.fromFunction3(hostBindings))
+    if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))
     __obj.asInstanceOf[ɵɵBaseDef[T]]
   }
 }

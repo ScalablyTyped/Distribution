@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,12 +22,12 @@ trait AccordionOptions extends AccordionEvents {
 object AccordionOptions {
   @scala.inline
   def apply(
-    activate: AccordionEvent = null,
+    activate: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
     active: js.Any = null,
     animate: js.Any = null,
-    beforeActivate: AccordionEvent = null,
+    beforeActivate: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
-    create: AccordionEvent = null,
+    create: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     event: String = null,
     header: String = null,
@@ -34,12 +35,12 @@ object AccordionOptions {
     icons: js.Any = null
   ): AccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
     if (active != null) __obj.updateDynamic("active")(active)
     if (animate != null) __obj.updateDynamic("animate")(animate)
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2(beforeActivate))
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (event != null) __obj.updateDynamic("event")(event)
     if (header != null) __obj.updateDynamic("header")(header)

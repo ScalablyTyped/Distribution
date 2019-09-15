@@ -2,10 +2,11 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs
 
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.ListNs.ListItemProps
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -39,7 +40,7 @@ object MenuItemProps {
     label: String | ReactNode = null,
     leftIcon: ReactElement = null,
     menuItems: ReactNode = null,
-    onClick: MouseEventHandler[js.Object] = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     primaryText: ReactNode = null,
     rightIcon: ReactElement = null,
     secondaryText: ReactNode = null,
@@ -58,7 +59,7 @@ object MenuItemProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon)
     if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
     if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon)
     if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])

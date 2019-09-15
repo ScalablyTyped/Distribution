@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,33 +23,33 @@ trait TabsOptions extends TabsEvents {
 object TabsOptions {
   @scala.inline
   def apply(
-    activate: TabsEvent[TabsActivationUIParams] = null,
+    activate: (/* event */ Event, TabsActivationUIParams) => Unit = null,
     active: js.Any = null,
-    beforeActivate: TabsEvent[TabsActivationUIParams] = null,
-    beforeLoad: TabsEvent[TabsBeforeLoadUIParams] = null,
+    beforeActivate: (/* event */ Event, TabsActivationUIParams) => Unit = null,
+    beforeLoad: (/* event */ Event, TabsBeforeLoadUIParams) => Unit = null,
     classes: TabClasses = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
-    create: TabsEvent[TabsCreateOrLoadUIParams] = null,
+    create: (/* event */ Event, TabsCreateOrLoadUIParams) => Unit = null,
     disabled: js.Any = null,
     event: String = null,
     heightStyle: String = null,
     hide: js.Any = null,
-    load: TabsEvent[TabsCreateOrLoadUIParams] = null,
+    load: (/* event */ Event, TabsCreateOrLoadUIParams) => Unit = null,
     show: js.Any = null
   ): TabsOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
     if (active != null) __obj.updateDynamic("active")(active)
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
-    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2(beforeActivate))
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction2(beforeLoad))
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (disabled != null) __obj.updateDynamic("disabled")(disabled)
     if (event != null) __obj.updateDynamic("event")(event)
     if (heightStyle != null) __obj.updateDynamic("heightStyle")(heightStyle)
     if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
     if (show != null) __obj.updateDynamic("show")(show)
     __obj.asInstanceOf[TabsOptions]
   }

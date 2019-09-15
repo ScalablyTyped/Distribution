@@ -29,7 +29,6 @@ trait ArgsProps extends js.Object {
 object ArgsProps {
   @scala.inline
   def apply(
-    message: ReactNode,
     bottom: Int | Double = null,
     btn: ReactNode = null,
     className: String = null,
@@ -38,6 +37,7 @@ object ArgsProps {
     getContainer: () => HTMLElement = null,
     icon: ReactNode = null,
     key: String = null,
+    message: ReactNode = null,
     onClick: () => Unit = null,
     onClose: () => Unit = null,
     placement: NotificationPlacement = null,
@@ -46,7 +46,7 @@ object ArgsProps {
     top: Int | Double = null,
     `type`: IconType = null
   ): ArgsProps = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (btn != null) __obj.updateDynamic("btn")(btn.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -55,6 +55,7 @@ object ArgsProps {
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (placement != null) __obj.updateDynamic("placement")(placement)

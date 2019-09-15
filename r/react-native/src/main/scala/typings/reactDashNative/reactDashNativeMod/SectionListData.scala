@@ -2,6 +2,7 @@ package typings.reactDashNative.reactDashNativeMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +19,14 @@ object SectionListData {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     key: String = null,
     keyExtractor: (ItemT, /* index */ Double) => String = null,
-    renderItem: SectionListRenderItem[ItemT] = null
+    renderItem: /* info */ SectionListRenderItemInfo[ItemT] => ReactElement | Null = null
   ): SectionListData[ItemT] = {
     val __obj = js.Dynamic.literal(data = data)
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (key != null) __obj.updateDynamic("key")(key)
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
-    if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem)
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
     __obj.asInstanceOf[SectionListData[ItemT]]
   }
 }

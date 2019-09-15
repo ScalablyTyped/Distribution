@@ -196,7 +196,7 @@ object SectionListProps {
     refreshControl: ReactElement = null,
     refreshing: js.UndefOr[Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderItem: SectionListRenderItem[ItemT] = null,
+    renderItem: /* info */ SectionListRenderItemInfo[ItemT] => ReactElement | Null = null,
     renderScrollComponent: /* props */ ScrollViewProps => ReactElement = null,
     renderSectionFooter: /* info */ Anon_Section[ItemT] => ReactElement | Null = null,
     renderSectionHeader: /* info */ Anon_Section[ItemT] => ReactElement | Null = null,
@@ -334,7 +334,7 @@ object SectionListProps {
     if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl)
     if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing)
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
-    if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem)
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
     if (renderScrollComponent != null) __obj.updateDynamic("renderScrollComponent")(js.Any.fromFunction1(renderScrollComponent))
     if (renderSectionFooter != null) __obj.updateDynamic("renderSectionFooter")(js.Any.fromFunction1(renderSectionFooter))
     if (renderSectionHeader != null) __obj.updateDynamic("renderSectionHeader")(js.Any.fromFunction1(renderSectionHeader))

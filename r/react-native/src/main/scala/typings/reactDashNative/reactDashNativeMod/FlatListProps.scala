@@ -93,7 +93,7 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
 object FlatListProps {
   @scala.inline
   def apply[ItemT](
-    renderItem: ListRenderItem[ItemT],
+    renderItem: /* info */ ListRenderItemInfo[ItemT] => ReactElement | Null,
     ItemSeparatorComponent: ComponentType[_] = null,
     ListEmptyComponent: ComponentType[_] | ReactElement = null,
     ListFooterComponent: ComponentType[_] | ReactElement = null,
@@ -230,7 +230,7 @@ object FlatListProps {
     windowSize: Int | Double = null,
     zoomScale: Int | Double = null
   ): FlatListProps[ItemT] = {
-    val __obj = js.Dynamic.literal(renderItem = renderItem)
+    val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     if (ListEmptyComponent != null) __obj.updateDynamic("ListEmptyComponent")(ListEmptyComponent.asInstanceOf[js.Any])
     if (ListFooterComponent != null) __obj.updateDynamic("ListFooterComponent")(ListFooterComponent.asInstanceOf[js.Any])

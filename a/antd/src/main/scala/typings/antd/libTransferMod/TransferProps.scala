@@ -87,7 +87,7 @@ object TransferProps {
     operationStyle: CSSProperties = null,
     operations: js.Array[String] = null,
     prefixCls: String = null,
-    render: TransferRender = null,
+    render: /* item */ TransferItem => RenderResult = null,
     rowKey: /* record */ TransferItem => String = null,
     searchPlaceholder: String = null,
     selectedKeys: js.Array[String] = null,
@@ -116,7 +116,7 @@ object TransferProps {
     if (operationStyle != null) __obj.updateDynamic("operationStyle")(operationStyle)
     if (operations != null) __obj.updateDynamic("operations")(operations)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (rowKey != null) __obj.updateDynamic("rowKey")(js.Any.fromFunction1(rowKey))
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)

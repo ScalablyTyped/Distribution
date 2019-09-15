@@ -54,14 +54,14 @@ object ExceptionDetails {
     lineNumber: Double,
     text: java.lang.String,
     exception: RemoteObject = null,
-    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    executionContextId: Int | Double = null,
     scriptId: ScriptId = null,
     stackTrace: StackTrace = null,
     url: java.lang.String = null
   ): ExceptionDetails = {
     val __obj = js.Dynamic.literal(columnNumber = columnNumber, exceptionId = exceptionId, lineNumber = lineNumber, text = text)
     if (exception != null) __obj.updateDynamic("exception")(exception)
-    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
     if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId)
     if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
     if (url != null) __obj.updateDynamic("url")(url)

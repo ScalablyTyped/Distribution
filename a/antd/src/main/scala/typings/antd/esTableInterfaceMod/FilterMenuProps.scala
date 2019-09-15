@@ -1,5 +1,6 @@
 package typings.antd.esTableInterfaceMod
 
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +24,10 @@ object FilterMenuProps {
     locale: TableLocale,
     prefixCls: String,
     selectedKeys: js.Array[String],
-    getPopupContainer: GetPopupContainer = null
+    getPopupContainer: /* triggerNode */ js.UndefOr[HTMLElement] => HTMLElement = null
   ): FilterMenuProps[T] = {
     val __obj = js.Dynamic.literal(column = column, confirmFilter = js.Any.fromFunction2(confirmFilter), dropdownPrefixCls = dropdownPrefixCls, locale = locale, prefixCls = prefixCls, selectedKeys = selectedKeys)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     __obj.asInstanceOf[FilterMenuProps[T]]
   }
 }

@@ -254,7 +254,7 @@ object TView {
     template: ComponentTemplate[js.Object] = null,
     viewCheckHooks: HookData = null,
     viewHooks: HookData = null,
-    viewQuery: ViewQueriesFunction[js.Object] = null
+    viewQuery: (/* rf */ ɵRenderFlags, js.Object) => Unit = null
   ): TView = {
     val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex, blueprint = blueprint, data = data, expandoStartIndex = expandoStartIndex, firstTemplatePass = firstTemplatePass, id = id, staticContentQueries = staticContentQueries, staticViewQueries = staticViewQueries)
     if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup)
@@ -275,7 +275,7 @@ object TView {
     if (template != null) __obj.updateDynamic("template")(template)
     if (viewCheckHooks != null) __obj.updateDynamic("viewCheckHooks")(viewCheckHooks)
     if (viewHooks != null) __obj.updateDynamic("viewHooks")(viewHooks)
-    if (viewQuery != null) __obj.updateDynamic("viewQuery")(viewQuery)
+    if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))
     __obj.asInstanceOf[TView]
   }
 }

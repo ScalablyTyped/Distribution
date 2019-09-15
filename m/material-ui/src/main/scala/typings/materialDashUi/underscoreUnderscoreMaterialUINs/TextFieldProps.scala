@@ -1,8 +1,10 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.FormEvent
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -81,12 +83,12 @@ object TextFieldProps {
     minlength: String = null,
     multiLine: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onBlur: FocusEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
     onChange: (/* e */ FormEvent[js.Object], /* newValue */ String) => Unit = null,
-    onFocus: FocusEventHandler[js.Object] = null,
-    onKeyDown: KeyboardEventHandler[js.Object] = null,
-    onKeyPress: KeyboardEventHandler[js.Object] = null,
-    onKeyUp: KeyboardEventHandler[js.Object] = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
+    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
+    onKeyPress: KeyboardEvent[js.Object] => Unit = null,
+    onKeyUp: KeyboardEvent[js.Object] => Unit = null,
     placeholder: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
@@ -126,12 +128,12 @@ object TextFieldProps {
     if (minlength != null) __obj.updateDynamic("minlength")(minlength)
     if (!js.isUndefined(multiLine)) __obj.updateDynamic("multiLine")(multiLine)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])

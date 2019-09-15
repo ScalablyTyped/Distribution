@@ -44,7 +44,6 @@ trait PopconfirmProps extends AbstractTooltipProps {
 object PopconfirmProps {
   @scala.inline
   def apply(
-    title: ReactNode,
     align: TooltipAlignConfig = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
@@ -73,11 +72,12 @@ object PopconfirmProps {
     placement: TooltipPlacement = null,
     prefixCls: String = null,
     style: CSSProperties = null,
+    title: ReactNode = null,
     transitionName: String = null,
     trigger: TooltipTrigger = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PopconfirmProps = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter)
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
@@ -106,6 +106,7 @@ object PopconfirmProps {
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

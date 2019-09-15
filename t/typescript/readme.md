@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript
 
-Typings are for version 3.6.3
+Typings are for version 3.7.0-dev.20190914
 
 ## Library description:
 TypeScript is a language for application scale JavaScript development

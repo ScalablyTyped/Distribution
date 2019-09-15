@@ -13,9 +13,10 @@ trait ColumnFilterItem extends js.Object {
 
 object ColumnFilterItem {
   @scala.inline
-  def apply(text: ReactNode, value: String, children: js.Array[ColumnFilterItem] = null): ColumnFilterItem = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value)
+  def apply(value: String, children: js.Array[ColumnFilterItem] = null, text: ReactNode = null): ColumnFilterItem = {
+    val __obj = js.Dynamic.literal(value = value)
     if (children != null) __obj.updateDynamic("children")(children)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnFilterItem]
   }
 }

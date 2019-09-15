@@ -44,7 +44,7 @@ object RunScriptParameterType {
   def apply(
     scriptId: ScriptId,
     awaitPromise: js.UndefOr[Boolean] = js.undefined,
-    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    executionContextId: Int | Double = null,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
     includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined,
     objectGroup: java.lang.String = null,
@@ -53,7 +53,7 @@ object RunScriptParameterType {
   ): RunScriptParameterType = {
     val __obj = js.Dynamic.literal(scriptId = scriptId)
     if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
-    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
     if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
     if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)

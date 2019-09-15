@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.jquery.JQueryEventObject
 import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
@@ -46,18 +47,18 @@ trait SortableOptions extends SortableEvents {
 object SortableOptions {
   @scala.inline
   def apply(
-    activate: SortableEvent = null,
+    activate: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     appendTo: js.Any = null,
     attribute: String = null,
     axis: String = null,
-    beforeStop: SortableEvent = null,
+    beforeStop: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     cancel: js.Any = null,
-    change: SortableEvent = null,
+    change: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     connectWith: js.Any = null,
     containment: js.Any = null,
     cursor: String = null,
     cursorAt: js.Any = null,
-    deactivate: SortableEvent = null,
+    deactivate: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     delay: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
@@ -69,35 +70,35 @@ object SortableOptions {
     helper: String | (js.Function2[/* event */ Event, /* element */ Sortable, Element]) = null,
     items: js.Any = null,
     opacity: Int | Double = null,
-    out: SortableEvent = null,
-    over: SortableEvent = null,
+    out: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
+    over: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     placeholder: String = null,
-    receive: SortableEvent = null,
-    remove: SortableEvent = null,
+    receive: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
+    remove: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     revert: js.Any = null,
     scroll: js.UndefOr[Boolean] = js.undefined,
     scrollSensitivity: Int | Double = null,
     scrollSpeed: Int | Double = null,
-    sort: SortableEvent = null,
-    start: SortableEvent = null,
-    stop: SortableEvent = null,
+    sort: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
+    start: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
+    stop: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     tolerance: String = null,
-    update: SortableEvent = null,
+    update: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
     zIndex: Int | Double = null
   ): SortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (attribute != null) __obj.updateDynamic("attribute")(attribute)
     if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (beforeStop != null) __obj.updateDynamic("beforeStop")(beforeStop)
+    if (beforeStop != null) __obj.updateDynamic("beforeStop")(js.Any.fromFunction2(beforeStop))
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (connectWith != null) __obj.updateDynamic("connectWith")(connectWith)
     if (containment != null) __obj.updateDynamic("containment")(containment)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt)
-    if (deactivate != null) __obj.updateDynamic("deactivate")(deactivate)
+    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2(deactivate))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
@@ -109,20 +110,20 @@ object SortableOptions {
     if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(out)
-    if (over != null) __obj.updateDynamic("over")(over)
+    if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction2(out))
+    if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction2(over))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (receive != null) __obj.updateDynamic("receive")(receive)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (receive != null) __obj.updateDynamic("receive")(js.Any.fromFunction2(receive))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
     if (revert != null) __obj.updateDynamic("revert")(revert)
     if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
     if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableOptions]
   }

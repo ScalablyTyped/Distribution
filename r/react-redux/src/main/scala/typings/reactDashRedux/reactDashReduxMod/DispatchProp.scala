@@ -12,8 +12,8 @@ trait DispatchProp[A /* <: Action[_] */] extends js.Object {
 
 object DispatchProp {
   @scala.inline
-  def apply[A /* <: Action[_] */](dispatch: Dispatch[A]): DispatchProp[A] = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch)
+  def apply[A /* <: Action[_] */](dispatch: A => A): DispatchProp[A] = {
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
   
     __obj.asInstanceOf[DispatchProp[A]]
   }

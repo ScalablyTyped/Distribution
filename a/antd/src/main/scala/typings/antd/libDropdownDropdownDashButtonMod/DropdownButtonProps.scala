@@ -9,7 +9,9 @@ import typings.antd.libButtonButtonMod.ButtonSize
 import typings.antd.libDropdownDropdownMod.Align
 import typings.antd.libDropdownDropdownMod.OverlayFunc
 import typings.antd.libDropdownDropdownMod.Placement
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLButtonElement
@@ -50,7 +52,6 @@ import scala.scalajs.js.annotation._
 object DropdownButtonProps {
   @scala.inline
   def apply(
-    overlay: ReactNode | OverlayFunc,
     align: Align = null,
     children: ReactNode = null,
     className: String = null,
@@ -62,9 +63,10 @@ object DropdownButtonProps {
     icon: ReactNode = null,
     mouseEnterDelay: Int | Double = null,
     mouseLeaveDelay: Int | Double = null,
-    onClick: MouseEventHandler[HTMLButtonElement] = null,
+    onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onVisibleChange: /* visible */ Boolean => Unit = null,
     openClassName: String = null,
+    overlay: ReactNode | OverlayFunc = null,
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     placement: Placement = null,
@@ -77,7 +79,7 @@ object DropdownButtonProps {
     `type`: DropdownButtonType = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): DropdownButtonProps = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -89,9 +91,10 @@ object DropdownButtonProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (placement != null) __obj.updateDynamic("placement")(placement)

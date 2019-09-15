@@ -29,23 +29,23 @@ object EasingStatic {
   def apply(
     back: Double => EasingFunction,
     bezier: (Double, Double, Double, Double) => EasingFunction,
-    bounce: EasingFunction,
-    circle: EasingFunction,
-    cubic: EasingFunction,
-    ease: EasingFunction,
+    bounce: /* value */ Double => Double,
+    circle: /* value */ Double => Double,
+    cubic: /* value */ Double => Double,
+    ease: /* value */ Double => Double,
     elastic: Double => EasingFunction,
-    exp: EasingFunction,
+    exp: /* value */ Double => Double,
     in: EasingFunction => EasingFunction,
     inOut: EasingFunction => EasingFunction,
-    linear: EasingFunction,
+    linear: /* value */ Double => Double,
     out: EasingFunction => EasingFunction,
     poly: Double => EasingFunction,
-    quad: EasingFunction,
-    sin: EasingFunction,
-    step0: EasingFunction,
-    step1: EasingFunction
+    quad: /* value */ Double => Double,
+    sin: /* value */ Double => Double,
+    step0: /* value */ Double => Double,
+    step1: /* value */ Double => Double
   ): EasingStatic = {
-    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), bezier = js.Any.fromFunction4(bezier), bounce = bounce, circle = circle, cubic = cubic, ease = ease, elastic = js.Any.fromFunction1(elastic), exp = exp, in = js.Any.fromFunction1(in), inOut = js.Any.fromFunction1(inOut), linear = linear, out = js.Any.fromFunction1(out), poly = js.Any.fromFunction1(poly), quad = quad, sin = sin, step0 = step0, step1 = step1)
+    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), bezier = js.Any.fromFunction4(bezier), bounce = js.Any.fromFunction1(bounce), circle = js.Any.fromFunction1(circle), cubic = js.Any.fromFunction1(cubic), ease = js.Any.fromFunction1(ease), elastic = js.Any.fromFunction1(elastic), exp = js.Any.fromFunction1(exp), in = js.Any.fromFunction1(in), inOut = js.Any.fromFunction1(inOut), linear = js.Any.fromFunction1(linear), out = js.Any.fromFunction1(out), poly = js.Any.fromFunction1(poly), quad = js.Any.fromFunction1(quad), sin = js.Any.fromFunction1(sin), step0 = js.Any.fromFunction1(step0), step1 = js.Any.fromFunction1(step1))
   
     __obj.asInstanceOf[EasingStatic]
   }

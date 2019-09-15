@@ -16,10 +16,26 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **7616** Javascript libraries,
+This is the home of Scala.js typings for **360** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
-This should make it one of the biggest Scala repos on the planet with millions of lines of code
+This should make it one of the biggest Scala repos on the planet:
+```
+
+--------------------------------------------------------------------------------
+ Language             Files        Lines        Blank      Comment         Code
+--------------------------------------------------------------------------------
+ Scala               242920     11390010      1040039      2730901      7619070
+ Markdown              7699       273786        90828            0       182958
+ JSON                     9           90            0            0           90
+ Makefile                 2           33            7            0           26
+ HTML                     1            6            0            0            6
+--------------------------------------------------------------------------------
+ Total               250631     11663925      1130874      2730901      7802150
+--------------------------------------------------------------------------------
+
+```
+
 
 The project was introduced in a talk at [flatMap(Oslo) 2019](https://www.youtube.com/watch?v=R1Z_u2rEDj4)
 
@@ -84,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201909150530")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201909150443")
 ```
 
 ### `build.sbt`
@@ -121,8 +137,6 @@ a more scala-like facade will often be a better way.
 
 For now we have the following facades:
 - [antd-slinky](facades/antd-slinky)
-- [react-router-native-slinky](facades/react-router-native-slinky)
-- [antd-native-slinky](facades/antd-native-slinky)
 - [react-router-dom-slinky](facades/react-router-dom-slinky)
 - [react](facades/react)
 - [react-redux](facades/react-redux)

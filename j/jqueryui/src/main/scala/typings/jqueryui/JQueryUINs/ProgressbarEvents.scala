@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +14,14 @@ trait ProgressbarEvents extends js.Object {
 object ProgressbarEvents {
   @scala.inline
   def apply(
-    change: ProgressbarEvent = null,
-    complete: ProgressbarEvent = null,
-    create: ProgressbarEvent = null
+    change: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
+    complete: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
+    create: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null
   ): ProgressbarEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     __obj.asInstanceOf[ProgressbarEvents]
   }
 }

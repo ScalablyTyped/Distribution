@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,26 +18,26 @@ trait MenuOptions extends MenuEvents {
 object MenuOptions {
   @scala.inline
   def apply(
-    blur: MenuEvent = null,
-    create: MenuEvent = null,
+    blur: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null,
+    create: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    focus: MenuEvent = null,
+    focus: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null,
     icons: js.Any = null,
     menus: String = null,
     position: js.Any = null,
     role: String = null,
-    select: MenuEvent = null
+    select: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null
   ): MenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (blur != null) __obj.updateDynamic("blur")(blur)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2(blur))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (icons != null) __obj.updateDynamic("icons")(icons)
     if (menus != null) __obj.updateDynamic("menus")(menus)
     if (position != null) __obj.updateDynamic("position")(position)
     if (role != null) __obj.updateDynamic("role")(role)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     __obj.asInstanceOf[MenuOptions]
   }
 }

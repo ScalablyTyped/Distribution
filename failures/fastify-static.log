@@ -1,8 +1,0 @@
-[info ] ResolveExternalReferences.scala:82 Inferred augmented module None (TsIdentModule(None,List(fastify))) [file => ../node_modules/fastify-static/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(fastify)), id => fastify-static] 
-[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(fastify-static) [id => fastify-static, phase => typescript, file => ../node_modules/fastify-static/index.d.ts] 
-[debug] PhaseRunner.scala:84 Success [id => fastify-static, phase => typescript] 
-[warn ] PhaseRunner.scala:70 Failed because of, [fastify-plugin => Couldn't resolve fastify] [id => fastify-static, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-static, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-static, phase => scala.js] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-static, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-static, phase => publish] 

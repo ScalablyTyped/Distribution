@@ -10,6 +10,7 @@ import typings.reactDashTransitionDashGroup.Anon_Appear
 import typings.reactDashTransitionDashGroup.transitionMod.EndHandler
 import typings.reactDashTransitionDashGroup.transitionMod.EnterHandler
 import typings.reactDashTransitionDashGroup.transitionMod.ExitHandler
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,38 +39,38 @@ trait PartialSlideProps extends js.Object {
 object PartialSlideProps {
   @scala.inline
   def apply(
-    addEndListener: EndHandler = null,
+    addEndListener: (/* node */ HTMLElement, /* done */ js.Function0[Unit]) => Unit = null,
     appear: js.UndefOr[Boolean] = js.undefined,
     direction: left | right | up | down = null,
     enter: js.UndefOr[Boolean] = js.undefined,
     exit: js.UndefOr[Boolean] = js.undefined,
     in: js.UndefOr[Boolean] = js.undefined,
     mountOnEnter: js.UndefOr[Boolean] = js.undefined,
-    onEnter: EnterHandler = null,
-    onEntered: EnterHandler = null,
-    onEntering: EnterHandler = null,
-    onExit: ExitHandler = null,
-    onExited: ExitHandler = null,
-    onExiting: ExitHandler = null,
+    onEnter: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
+    onEntered: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
+    onEntering: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
+    onExit: /* node */ HTMLElement => Unit = null,
+    onExited: /* node */ HTMLElement => Unit = null,
+    onExiting: /* node */ HTMLElement => Unit = null,
     style: CSSProperties = null,
     theme: Theme = null,
     timeout: Double | Anon_Appear = null,
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): PartialSlideProps = {
     val __obj = js.Dynamic.literal()
-    if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener)
+    if (addEndListener != null) __obj.updateDynamic("addEndListener")(js.Any.fromFunction2(addEndListener))
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter)
     if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit)
     if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)
     if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited)
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction2(onEnter))
+    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction2(onEntered))
+    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction2(onEntering))
+    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
+    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
+    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
     if (style != null) __obj.updateDynamic("style")(style)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

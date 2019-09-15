@@ -1,6 +1,8 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
@@ -36,9 +38,9 @@ object AppBarProps {
     iconElementRight: ReactElement = null,
     iconStyleLeft: CSSProperties = null,
     iconStyleRight: CSSProperties = null,
-    onLeftIconButtonClick: MouseEventHandler[js.Object] = null,
-    onRightIconButtonClick: MouseEventHandler[js.Object] = null,
-    onTitleClick: MouseEventHandler[js.Object] = null,
+    onLeftIconButtonClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onRightIconButtonClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onTitleClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     showMenuIconButton: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     title: ReactNode = null,
@@ -53,9 +55,9 @@ object AppBarProps {
     if (iconElementRight != null) __obj.updateDynamic("iconElementRight")(iconElementRight)
     if (iconStyleLeft != null) __obj.updateDynamic("iconStyleLeft")(iconStyleLeft)
     if (iconStyleRight != null) __obj.updateDynamic("iconStyleRight")(iconStyleRight)
-    if (onLeftIconButtonClick != null) __obj.updateDynamic("onLeftIconButtonClick")(onLeftIconButtonClick)
-    if (onRightIconButtonClick != null) __obj.updateDynamic("onRightIconButtonClick")(onRightIconButtonClick)
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(onTitleClick)
+    if (onLeftIconButtonClick != null) __obj.updateDynamic("onLeftIconButtonClick")(js.Any.fromFunction1(onLeftIconButtonClick))
+    if (onRightIconButtonClick != null) __obj.updateDynamic("onRightIconButtonClick")(js.Any.fromFunction1(onRightIconButtonClick))
+    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1(onTitleClick))
     if (!js.isUndefined(showMenuIconButton)) __obj.updateDynamic("showMenuIconButton")(showMenuIconButton)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

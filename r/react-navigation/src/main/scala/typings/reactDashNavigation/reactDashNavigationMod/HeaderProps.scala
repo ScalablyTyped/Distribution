@@ -32,12 +32,13 @@ object HeaderProps {
     router: NavigationRouter[NavigationState, NavigationStackScreenOptions],
     scene: NavigationScene,
     scenes: js.Array[NavigationScene],
-    style: StyleProp[ViewStyle],
     titleInterpolator: NavigationSceneRendererProps => js.Object,
-    screenProps: StringDictionary[js.Any] = null
+    screenProps: StringDictionary[js.Any] = null,
+    style: StyleProp[ViewStyle] = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal(getScreenDetails = js.Any.fromFunction1(getScreenDetails), index = index, layout = layout, leftInterpolator = js.Any.fromFunction1(leftInterpolator), mode = mode, navigation = navigation, position = position, progress = progress, rightInterpolator = js.Any.fromFunction1(rightInterpolator), router = router, scene = scene, scenes = scenes, style = style.asInstanceOf[js.Any], titleInterpolator = js.Any.fromFunction1(titleInterpolator))
+    val __obj = js.Dynamic.literal(getScreenDetails = js.Any.fromFunction1(getScreenDetails), index = index, layout = layout, leftInterpolator = js.Any.fromFunction1(leftInterpolator), mode = mode, navigation = navigation, position = position, progress = progress, rightInterpolator = js.Any.fromFunction1(rightInterpolator), router = router, scene = scene, scenes = scenes, titleInterpolator = js.Any.fromFunction1(titleInterpolator))
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
 }

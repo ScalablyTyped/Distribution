@@ -3,7 +3,7 @@ package typings.antd.esFormFormMod
 import typings.antd.esFormFormItemMod.FormLabelAlign
 import typings.antd.esGridColMod.ColProps
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormHTMLAttributes
 import typings.std.HTMLFormElement
 import scala.scalajs.js
@@ -38,7 +38,7 @@ object FormProps {
     labelAlign: FormLabelAlign = null,
     labelCol: ColProps = null,
     layout: FormLayout = null,
-    onSubmit: FormEventHandler[HTMLFormElement] = null,
+    onSubmit: FormEvent[HTMLFormElement] => Unit = null,
     prefixCls: String = null,
     style: CSSProperties = null,
     wrapperCol: ColProps = null
@@ -52,7 +52,7 @@ object FormProps {
     if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
     if (labelCol != null) __obj.updateDynamic("labelCol")(labelCol)
     if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (wrapperCol != null) __obj.updateDynamic("wrapperCol")(wrapperCol)

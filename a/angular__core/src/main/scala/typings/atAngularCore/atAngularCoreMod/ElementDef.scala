@@ -35,7 +35,7 @@ object ElementDef {
     componentProvider: NodeDef = null,
     componentRendererType: RendererType2 = null,
     componentView: ViewDefinitionFactory = null,
-    handleEvent: ElementHandleEventFn = null,
+    handleEvent: (/* view */ ViewData, /* eventName */ String, /* event */ js.Any) => Boolean = null,
     name: String = null,
     ns: String = null,
     publicProviders: StringDictionary[NodeDef] = null,
@@ -47,7 +47,7 @@ object ElementDef {
     if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider)
     if (componentRendererType != null) __obj.updateDynamic("componentRendererType")(componentRendererType)
     if (componentView != null) __obj.updateDynamic("componentView")(componentView)
-    if (handleEvent != null) __obj.updateDynamic("handleEvent")(handleEvent)
+    if (handleEvent != null) __obj.updateDynamic("handleEvent")(js.Any.fromFunction3(handleEvent))
     if (name != null) __obj.updateDynamic("name")(name)
     if (ns != null) __obj.updateDynamic("ns")(ns)
     if (publicProviders != null) __obj.updateDynamic("publicProviders")(publicProviders)

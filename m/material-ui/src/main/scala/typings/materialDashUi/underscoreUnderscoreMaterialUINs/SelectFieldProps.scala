@@ -3,6 +3,7 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.DropDownMenuProps
 import typings.react.Event
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
@@ -79,9 +80,9 @@ object SelectFieldProps {
     menuStyle: js.Any = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onBlur: FocusEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
     onChange: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ js.Any) => Unit = null,
-    onFocus: FocusEventHandler[js.Object] = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
     openImmediately: js.UndefOr[Boolean] = js.undefined,
     selectFieldRoot: CSSProperties = null,
     selectedMenuItemStyle: CSSProperties = null,
@@ -114,9 +115,9 @@ object SelectFieldProps {
     if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (!js.isUndefined(openImmediately)) __obj.updateDynamic("openImmediately")(openImmediately)
     if (selectFieldRoot != null) __obj.updateDynamic("selectFieldRoot")(selectFieldRoot)
     if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle)

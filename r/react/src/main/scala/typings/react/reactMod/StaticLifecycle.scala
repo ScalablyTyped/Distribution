@@ -1,5 +1,6 @@
 package typings.react.reactMod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +14,12 @@ trait StaticLifecycle[P, S] extends js.Object {
 object StaticLifecycle {
   @scala.inline
   def apply[P, S](
-    getDerivedStateFromError: GetDerivedStateFromError[P, S] = null,
-    getDerivedStateFromProps: GetDerivedStateFromProps[P, S] = null
+    getDerivedStateFromError: /* error */ js.Any => Partial[S] | Null = null,
+    getDerivedStateFromProps: (P, S) => Partial[S] | Null = null
   ): StaticLifecycle[P, S] = {
     val __obj = js.Dynamic.literal()
-    if (getDerivedStateFromError != null) __obj.updateDynamic("getDerivedStateFromError")(getDerivedStateFromError)
-    if (getDerivedStateFromProps != null) __obj.updateDynamic("getDerivedStateFromProps")(getDerivedStateFromProps)
+    if (getDerivedStateFromError != null) __obj.updateDynamic("getDerivedStateFromError")(js.Any.fromFunction1(getDerivedStateFromError))
+    if (getDerivedStateFromProps != null) __obj.updateDynamic("getDerivedStateFromProps")(js.Any.fromFunction2(getDerivedStateFromProps))
     __obj.asInstanceOf[StaticLifecycle[P, S]]
   }
 }

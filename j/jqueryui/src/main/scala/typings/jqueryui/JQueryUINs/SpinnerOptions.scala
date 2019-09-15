@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +24,8 @@ trait SpinnerOptions extends SpinnerEvents {
 object SpinnerOptions {
   @scala.inline
   def apply(
-    change: SpinnerEvent[js.Object] = null,
-    create: SpinnerEvent[js.Object] = null,
+    change: (/* event */ Event, js.Object) => Unit = null,
+    create: (/* event */ Event, js.Object) => Unit = null,
     culture: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     icons: js.Any = null,
@@ -33,14 +34,14 @@ object SpinnerOptions {
     min: js.Any = null,
     numberFormat: String = null,
     page: Int | Double = null,
-    spin: SpinnerEvent[SpinnerUIParam] = null,
-    start: SpinnerEvent[js.Object] = null,
+    spin: (/* event */ Event, SpinnerUIParam) => Unit = null,
+    start: (/* event */ Event, js.Object) => Unit = null,
     step: js.Any = null,
-    stop: SpinnerEvent[js.Object] = null
+    stop: (/* event */ Event, js.Object) => Unit = null
   ): SpinnerOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icons != null) __obj.updateDynamic("icons")(icons)
@@ -49,10 +50,10 @@ object SpinnerOptions {
     if (min != null) __obj.updateDynamic("min")(min)
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (spin != null) __obj.updateDynamic("spin")(spin)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction2(spin))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (step != null) __obj.updateDynamic("step")(step)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[SpinnerOptions]
   }
 }

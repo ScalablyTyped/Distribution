@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,30 +22,30 @@ trait DialogEvents extends js.Object {
 object DialogEvents {
   @scala.inline
   def apply(
-    beforeClose: DialogEvent = null,
-    close: DialogEvent = null,
-    create: DialogEvent = null,
-    drag: DialogEvent = null,
-    dragStart: DialogEvent = null,
-    dragStop: DialogEvent = null,
-    focus: DialogEvent = null,
-    open: DialogEvent = null,
-    resize: DialogEvent = null,
-    resizeStart: DialogEvent = null,
-    resizeStop: DialogEvent = null
+    beforeClose: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    close: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    create: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    drag: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    dragStart: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    dragStop: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    focus: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    open: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    resize: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    resizeStart: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
+    resizeStop: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null
   ): DialogEvents = {
     val __obj = js.Dynamic.literal()
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
-    if (resizeStop != null) __obj.updateDynamic("resizeStop")(resizeStop)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2(beforeClose))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
+    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2(resize))
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction2(resizeStart))
+    if (resizeStop != null) __obj.updateDynamic("resizeStop")(js.Any.fromFunction2(resizeStop))
     __obj.asInstanceOf[DialogEvents]
   }
 }

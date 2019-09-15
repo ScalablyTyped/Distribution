@@ -54,7 +54,7 @@ object CallFunctionOnParameterType {
     functionDeclaration: java.lang.String,
     arguments: js.Array[CallArgument] = null,
     awaitPromise: js.UndefOr[Boolean] = js.undefined,
-    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    executionContextId: Int | Double = null,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
     objectGroup: java.lang.String = null,
     objectId: RemoteObjectId = null,
@@ -65,7 +65,7 @@ object CallFunctionOnParameterType {
     val __obj = js.Dynamic.literal(functionDeclaration = functionDeclaration)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
-    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
     if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
     if (objectId != null) __obj.updateDynamic("objectId")(objectId)

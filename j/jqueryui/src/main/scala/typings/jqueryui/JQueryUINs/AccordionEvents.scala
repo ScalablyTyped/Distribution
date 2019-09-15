@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUINs
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +14,14 @@ trait AccordionEvents extends js.Object {
 object AccordionEvents {
   @scala.inline
   def apply(
-    activate: AccordionEvent = null,
-    beforeActivate: AccordionEvent = null,
-    create: AccordionEvent = null
+    activate: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
+    beforeActivate: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
+    create: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null
   ): AccordionEvents = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2(beforeActivate))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     __obj.asInstanceOf[AccordionEvents]
   }
 }

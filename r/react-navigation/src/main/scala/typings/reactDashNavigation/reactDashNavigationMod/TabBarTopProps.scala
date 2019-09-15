@@ -37,7 +37,6 @@ object TabBarTopProps {
     getLabel: TabScene => ReactNode | String,
     getOnPress: (NavigationRoute[NavigationParams], TabScene) => js.Function1[/* args */ Anon_IndexJumpToIndex, Unit],
     inactiveTintColor: String,
-    indicatorStyle: StyleProp[ViewStyle],
     jumpToIndex: Double => Unit,
     navigation: NavigationScreenProp[NavigationState, NavigationParams],
     position: AnimatedValue,
@@ -47,10 +46,12 @@ object TabBarTopProps {
     tabBarPosition: String,
     upperCaseLabel: Boolean,
     iconStyle: ViewStyle = null,
+    indicatorStyle: StyleProp[ViewStyle] = null,
     labelStyle: TextStyle = null
   ): TabBarTopProps = {
-    val __obj = js.Dynamic.literal(activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = js.Any.fromFunction1(getLabel), getOnPress = js.Any.fromFunction2(getOnPress), inactiveTintColor = inactiveTintColor, indicatorStyle = indicatorStyle.asInstanceOf[js.Any], jumpToIndex = js.Any.fromFunction1(jumpToIndex), navigation = navigation, position = position, renderIcon = js.Any.fromFunction1(renderIcon), showIcon = showIcon, showLabel = showLabel, tabBarPosition = tabBarPosition, upperCaseLabel = upperCaseLabel)
+    val __obj = js.Dynamic.literal(activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = js.Any.fromFunction1(getLabel), getOnPress = js.Any.fromFunction2(getOnPress), inactiveTintColor = inactiveTintColor, jumpToIndex = js.Any.fromFunction1(jumpToIndex), navigation = navigation, position = position, renderIcon = js.Any.fromFunction1(renderIcon), showIcon = showIcon, showLabel = showLabel, tabBarPosition = tabBarPosition, upperCaseLabel = upperCaseLabel)
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
+    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
     __obj.asInstanceOf[TabBarTopProps]
   }

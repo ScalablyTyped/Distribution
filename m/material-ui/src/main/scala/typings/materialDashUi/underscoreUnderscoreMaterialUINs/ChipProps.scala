@@ -1,8 +1,11 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,8 +32,8 @@ object ChipProps {
     deleteIconStyle: CSSProperties = null,
     labelColor: String = null,
     labelStyle: CSSProperties = null,
-    onClick: MouseEventHandler[Chip] = null,
-    onRequestDelete: TouchEventHandler[Chip] = null,
+    onClick: MouseEvent[Chip, NativeMouseEvent] => Unit = null,
+    onRequestDelete: TouchEvent[Chip] => Unit = null,
     style: CSSProperties = null
   ): ChipProps = {
     val __obj = js.Dynamic.literal()
@@ -40,8 +43,8 @@ object ChipProps {
     if (deleteIconStyle != null) __obj.updateDynamic("deleteIconStyle")(deleteIconStyle)
     if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onRequestDelete != null) __obj.updateDynamic("onRequestDelete")(onRequestDelete)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onRequestDelete != null) __obj.updateDynamic("onRequestDelete")(js.Any.fromFunction1(onRequestDelete))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ChipProps]
   }

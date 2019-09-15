@@ -1,8 +1,11 @@
 package typings.antd.esIconMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -32,8 +35,8 @@ object IconProps {
   def apply(
     className: String = null,
     component: ComponentType[CustomIconComponentProps] = null,
-    onClick: MouseEventHandler[HTMLElement] = null,
-    onKeyUp: KeyboardEventHandler[HTMLElement] = null,
+    onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
+    onKeyUp: KeyboardEvent[HTMLElement] => Unit = null,
     prefixCls: String = null,
     role: String = null,
     rotate: Int | Double = null,
@@ -49,8 +52,8 @@ object IconProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])

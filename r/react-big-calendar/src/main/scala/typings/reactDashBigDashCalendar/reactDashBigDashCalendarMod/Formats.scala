@@ -68,35 +68,35 @@ object Formats {
   @scala.inline
   def apply(
     agendaDateFormat: DateFormat = null,
-    agendaHeaderFormat: DateRangeFormatFunction = null,
+    agendaHeaderFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
     agendaTimeFormat: DateFormat = null,
-    agendaTimeRangeFormat: DateRangeFormatFunction = null,
+    agendaTimeRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
     dateFormat: DateFormat = null,
     dayFormat: DateFormat = null,
     dayHeaderFormat: DateFormat = null,
-    dayRangeHeaderFormat: DateRangeFormatFunction = null,
-    eventTimeRangeEndFormat: DateRangeFormatFunction = null,
-    eventTimeRangeFormat: DateRangeFormatFunction = null,
-    eventTimeRangeStartFormat: DateRangeFormatFunction = null,
+    dayRangeHeaderFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    eventTimeRangeEndFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    eventTimeRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    eventTimeRangeStartFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
     monthHeaderFormat: DateFormat = null,
-    selectRangeFormat: DateRangeFormatFunction = null,
+    selectRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
     timeGutterFormat: DateFormat = null,
     weekdayFormat: DateFormat = null
   ): Formats = {
     val __obj = js.Dynamic.literal()
     if (agendaDateFormat != null) __obj.updateDynamic("agendaDateFormat")(agendaDateFormat.asInstanceOf[js.Any])
-    if (agendaHeaderFormat != null) __obj.updateDynamic("agendaHeaderFormat")(agendaHeaderFormat)
+    if (agendaHeaderFormat != null) __obj.updateDynamic("agendaHeaderFormat")(js.Any.fromFunction3(agendaHeaderFormat))
     if (agendaTimeFormat != null) __obj.updateDynamic("agendaTimeFormat")(agendaTimeFormat.asInstanceOf[js.Any])
-    if (agendaTimeRangeFormat != null) __obj.updateDynamic("agendaTimeRangeFormat")(agendaTimeRangeFormat)
+    if (agendaTimeRangeFormat != null) __obj.updateDynamic("agendaTimeRangeFormat")(js.Any.fromFunction3(agendaTimeRangeFormat))
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     if (dayFormat != null) __obj.updateDynamic("dayFormat")(dayFormat.asInstanceOf[js.Any])
     if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
-    if (dayRangeHeaderFormat != null) __obj.updateDynamic("dayRangeHeaderFormat")(dayRangeHeaderFormat)
-    if (eventTimeRangeEndFormat != null) __obj.updateDynamic("eventTimeRangeEndFormat")(eventTimeRangeEndFormat)
-    if (eventTimeRangeFormat != null) __obj.updateDynamic("eventTimeRangeFormat")(eventTimeRangeFormat)
-    if (eventTimeRangeStartFormat != null) __obj.updateDynamic("eventTimeRangeStartFormat")(eventTimeRangeStartFormat)
+    if (dayRangeHeaderFormat != null) __obj.updateDynamic("dayRangeHeaderFormat")(js.Any.fromFunction3(dayRangeHeaderFormat))
+    if (eventTimeRangeEndFormat != null) __obj.updateDynamic("eventTimeRangeEndFormat")(js.Any.fromFunction3(eventTimeRangeEndFormat))
+    if (eventTimeRangeFormat != null) __obj.updateDynamic("eventTimeRangeFormat")(js.Any.fromFunction3(eventTimeRangeFormat))
+    if (eventTimeRangeStartFormat != null) __obj.updateDynamic("eventTimeRangeStartFormat")(js.Any.fromFunction3(eventTimeRangeStartFormat))
     if (monthHeaderFormat != null) __obj.updateDynamic("monthHeaderFormat")(monthHeaderFormat.asInstanceOf[js.Any])
-    if (selectRangeFormat != null) __obj.updateDynamic("selectRangeFormat")(selectRangeFormat)
+    if (selectRangeFormat != null) __obj.updateDynamic("selectRangeFormat")(js.Any.fromFunction3(selectRangeFormat))
     if (timeGutterFormat != null) __obj.updateDynamic("timeGutterFormat")(timeGutterFormat.asInstanceOf[js.Any])
     if (weekdayFormat != null) __obj.updateDynamic("weekdayFormat")(weekdayFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Formats]

@@ -37,7 +37,7 @@ trait AxiosRequestConfig extends js.Object {
 object AxiosRequestConfig {
   @scala.inline
   def apply(
-    adapter: AxiosAdapter = null,
+    adapter: /* config */ AxiosRequestConfig => AxiosPromise[js.Any] = null,
     auth: AxiosBasicCredentials = null,
     baseURL: String = null,
     cancelToken: CancelToken = null,
@@ -65,7 +65,7 @@ object AxiosRequestConfig {
     xsrfHeaderName: String = null
   ): AxiosRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
+    if (adapter != null) __obj.updateDynamic("adapter")(js.Any.fromFunction1(adapter))
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
     if (cancelToken != null) __obj.updateDynamic("cancelToken")(cancelToken)

@@ -1,6 +1,7 @@
 package typings.antd.libTableInterfaceMod
 
 import typings.react.reactMod.ReactNode
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +52,7 @@ object TableRowSelection {
     getCheckboxProps: /* record */ T => js.Object = null,
     hideDefaultSelections: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* selectedRowKeys */ js.Array[Double | String], /* selectedRows */ js.Array[T]) => Unit = null,
-    onSelect: SelectionSelectFn[T] = null,
+    onSelect: (T, /* selected */ Boolean, /* selectedRows */ js.Array[js.Object], /* nativeEvent */ Event) => Unit = null,
     onSelectAll: (/* selected */ Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => Unit = null,
     onSelectInvert: /* selectedRowKeys */ js.Array[Double | String] => Unit = null,
     onSelectMultiple: (/* selected */ Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => Unit = null,
@@ -67,7 +68,7 @@ object TableRowSelection {
     if (getCheckboxProps != null) __obj.updateDynamic("getCheckboxProps")(js.Any.fromFunction1(getCheckboxProps))
     if (!js.isUndefined(hideDefaultSelections)) __obj.updateDynamic("hideDefaultSelections")(hideDefaultSelections)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction4(onSelect))
     if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction3(onSelectAll))
     if (onSelectInvert != null) __obj.updateDynamic("onSelectInvert")(js.Any.fromFunction1(onSelectInvert))
     if (onSelectMultiple != null) __obj.updateDynamic("onSelectMultiple")(js.Any.fromFunction3(onSelectMultiple))

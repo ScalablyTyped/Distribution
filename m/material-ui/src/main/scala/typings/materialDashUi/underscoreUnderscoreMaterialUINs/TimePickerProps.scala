@@ -2,9 +2,13 @@ package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
 import typings.materialDashUi.materialDashUiStrings.`24hr`
 import typings.materialDashUi.materialDashUiStrings.ampm
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.Date
@@ -87,12 +91,12 @@ object TimePickerProps {
     multiLine: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     okLabel: ReactNode = null,
-    onBlur: FocusEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
     onChange: (/* e */ js.Any, /* time */ Date) => Unit = null,
-    onClick: MouseEventHandler[js.Object] = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onDismiss: () => Unit = null,
-    onFocus: FocusEventHandler[js.Object] = null,
-    onKeyDown: KeyboardEventHandler[js.Object] = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
+    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
     onShow: () => Unit = null,
     pedantic: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
@@ -132,12 +136,12 @@ object TimePickerProps {
     if (!js.isUndefined(multiLine)) __obj.updateDynamic("multiLine")(multiLine)
     if (name != null) __obj.updateDynamic("name")(name)
     if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])

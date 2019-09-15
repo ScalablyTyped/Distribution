@@ -13,9 +13,9 @@ trait GlobalLexicalScopeNamesParameterType extends js.Object {
 
 object GlobalLexicalScopeNamesParameterType {
   @scala.inline
-  def apply(executionContextId: js.UndefOr[ExecutionContextId] = js.undefined): GlobalLexicalScopeNamesParameterType = {
+  def apply(executionContextId: Int | Double = null): GlobalLexicalScopeNamesParameterType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalLexicalScopeNamesParameterType]
   }
 }

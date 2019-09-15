@@ -1,6 +1,7 @@
 package typings.atAngularCompiler.srcRender3ViewTemplateMod
 
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,10 +37,10 @@ object BindingData {
     localRef: Boolean,
     priority: Double,
     retrievalLevel: Double,
-    declareLocalCallback: DeclareLocalVarCallback = null
+    declareLocalCallback: (/* scope */ BindingScope, /* relativeLevel */ Double) => js.Array[Statement] = null
   ): BindingData = {
     val __obj = js.Dynamic.literal(declare = declare, lhs = lhs, localRef = localRef, priority = priority, retrievalLevel = retrievalLevel)
-    if (declareLocalCallback != null) __obj.updateDynamic("declareLocalCallback")(declareLocalCallback)
+    if (declareLocalCallback != null) __obj.updateDynamic("declareLocalCallback")(js.Any.fromFunction2(declareLocalCallback))
     __obj.asInstanceOf[BindingData]
   }
 }

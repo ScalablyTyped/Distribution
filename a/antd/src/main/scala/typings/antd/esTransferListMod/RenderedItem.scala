@@ -14,9 +14,9 @@ trait RenderedItem extends js.Object {
 
 object RenderedItem {
   @scala.inline
-  def apply(item: TransferItem, renderedEl: ReactNode, renderedText: String): RenderedItem = {
-    val __obj = js.Dynamic.literal(item = item, renderedEl = renderedEl.asInstanceOf[js.Any], renderedText = renderedText)
-  
+  def apply(item: TransferItem, renderedText: String, renderedEl: ReactNode = null): RenderedItem = {
+    val __obj = js.Dynamic.literal(item = item, renderedText = renderedText)
+    if (renderedEl != null) __obj.updateDynamic("renderedEl")(renderedEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderedItem]
   }
 }

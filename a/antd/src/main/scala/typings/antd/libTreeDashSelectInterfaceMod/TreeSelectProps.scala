@@ -10,6 +10,7 @@ import typings.antd.libSelectMod.AbstractSelectProps
 import typings.antd.libSelectMod.SelectProps
 import typings.antd.libSelectMod.SelectValue
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
@@ -82,10 +83,10 @@ object TreeSelectProps {
     maxTagPlaceholder: ReactNode | (js.Function1[/* omittedValues */ js.Array[_], ReactNode]) = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     notFoundContent: ReactNode = null,
-    onBlur: FocusEventHandler[HTMLInputElement] = null,
+    onBlur: FocusEvent[HTMLInputElement] => Unit = null,
     onChange: (/* value */ T, /* label */ js.Any, /* extra */ js.Any) => Unit = null,
     onDropdownVisibleChange: /* open */ Boolean => Unit = null,
-    onFocus: FocusEventHandler[HTMLInputElement] = null,
+    onFocus: FocusEvent[HTMLInputElement] => Unit = null,
     onSearch: /* value */ js.Any => Unit = null,
     onSelect: /* value */ js.Any => Unit = null,
     onTreeExpand: /* keys */ js.Array[String] => Unit = null,
@@ -141,10 +142,10 @@ object TreeSelectProps {
     if (maxTagPlaceholder != null) __obj.updateDynamic("maxTagPlaceholder")(maxTagPlaceholder.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(js.Any.fromFunction1(onDropdownVisibleChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onTreeExpand != null) __obj.updateDynamic("onTreeExpand")(js.Any.fromFunction1(onTreeExpand))

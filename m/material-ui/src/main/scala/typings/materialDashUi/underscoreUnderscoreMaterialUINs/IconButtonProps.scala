@@ -1,11 +1,11 @@
 package typings.materialDashUi.underscoreUnderscoreMaterialUINs
 
 import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.HTMLAttributes
-import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,12 +51,12 @@ object IconButtonProps {
     hoveredStyle: CSSProperties = null,
     iconClassName: String = null,
     iconStyle: CSSProperties = null,
-    onBlur: FocusEventHandler[js.Object] = null,
-    onFocus: FocusEventHandler[js.Object] = null,
+    onBlur: FocusEvent[js.Object] => Unit = null,
+    onFocus: FocusEvent[js.Object] => Unit = null,
     onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
-    onMouseEnter: MouseEventHandler[js.Object] = null,
-    onMouseLeave: MouseEventHandler[js.Object] = null,
-    onMouseOut: MouseEventHandler[js.Object] = null,
+    onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
+    onMouseOut: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     style: CSSProperties = null,
     tooltip: ReactNode | String = null,
     tooltipPosition: cornersAndCenter = null,
@@ -72,12 +72,12 @@ object IconButtonProps {
     if (hoveredStyle != null) __obj.updateDynamic("hoveredStyle")(hoveredStyle)
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
     if (style != null) __obj.updateDynamic("style")(style)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition)

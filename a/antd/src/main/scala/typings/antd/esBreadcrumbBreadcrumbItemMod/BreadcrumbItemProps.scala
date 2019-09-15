@@ -1,6 +1,8 @@
 package typings.antd.esBreadcrumbBreadcrumbItemMod
 
 import typings.antd.esDropdownDropdownMod.OverlayFunc
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLAnchorElement
@@ -21,14 +23,14 @@ object BreadcrumbItemProps {
   @scala.inline
   def apply(
     href: String = null,
-    onClick: MouseEventHandler[HTMLAnchorElement | HTMLSpanElement] = null,
+    onClick: MouseEvent[HTMLAnchorElement | HTMLSpanElement, NativeMouseEvent] => Unit = null,
     overlay: ReactNode | OverlayFunc = null,
     prefixCls: String = null,
     separator: ReactNode = null
   ): BreadcrumbItemProps = {
     val __obj = js.Dynamic.literal()
     if (href != null) __obj.updateDynamic("href")(href)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
