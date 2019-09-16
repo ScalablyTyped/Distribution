@@ -96,10 +96,11 @@ package object typeDefinitionMod {
     - typings.graphql.typeDefinitionMod.GraphQLNonNull[js.Any]
   */
   type GraphQLType = _GraphQLType | (GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]]) | GraphQLList[js.Any] | GraphQLNonNull[js.Any]
-  type GraphQLTypeResolver[TSource, TContext, TArgs] = js.Function3[
+  type GraphQLTypeResolver[TSource, TContext, TArgs] = js.Function4[
     /* value */ TSource, 
     /* context */ TContext, 
     /* info */ GraphQLResolveInfo, 
+    /* abstractType */ GraphQLAbstractType, 
     PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, TArgs]) | String]]
   ]
   type GraphQLWrappingType = GraphQLList[js.Any] | GraphQLNonNull[js.Any]
