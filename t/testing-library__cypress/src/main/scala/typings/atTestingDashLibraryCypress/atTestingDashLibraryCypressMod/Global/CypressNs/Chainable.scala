@@ -12,319 +12,285 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Chainable[Subject] extends js.Object {
-  def getAllByAltText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByAltText(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByAltText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByAltText(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByAltText")
-  def getAllByAltText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByAltText")
-  def getAllByAltText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllByDisplayValue(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByDisplayValue(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByAltText")
+  def findAllByAltText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByAltText")
+  def findAllByAltText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
+  def findAllByDisplayValue(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByDisplayValue(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByDisplayValue")
-  def getAllByDisplayValue_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByDisplayValue")
-  def getAllByDisplayValue_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllByLabelText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByLabelText(id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByDisplayValue")
+  def findAllByDisplayValue_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByDisplayValue")
+  def findAllByDisplayValue_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
+  def findAllByLabelText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByLabelText(id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByLabelText")
-  def getAllByLabelText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByLabelText")
-  def getAllByLabelText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllByPlaceholderText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getAllByPlaceholderText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findAllByLabelText")
+  def findAllByLabelText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByLabelText")
+  def findAllByLabelText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[E]] = js.native
+  def findAllByPlaceholderText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findAllByPlaceholderText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByPlaceholderText")
-  def getAllByPlaceholderText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getAllByPlaceholderText")
-  def getAllByPlaceholderText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getAllByRole(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByRole(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByPlaceholderText")
+  def findAllByPlaceholderText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findAllByPlaceholderText")
+  def findAllByPlaceholderText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  def findAllByRole(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByRole(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByRole")
-  def getAllByRole_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByRole")
-  def getAllByRole_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllBySelectText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllBySelectText(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByRole")
+  def findAllByRole_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByRole")
+  def findAllByRole_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
+  def findAllByTestId(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByTestId(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllBySelectText")
-  def getAllBySelectText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllBySelectText")
-  def getAllBySelectText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllByTestId(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByTestId(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByTestId")
+  def findAllByTestId_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByTestId")
+  def findAllByTestId_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
+  def findAllByText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByText(id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByTestId")
-  def getAllByTestId_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByTestId")
-  def getAllByTestId_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllByText(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByText(id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByText")
+  def findAllByText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByText")
+  def findAllByText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[E]] = js.native
+  def findAllByTitle(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  def findAllByTitle(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByText")
-  def getAllByText_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByText")
-  def getAllByText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[js.Array[E]] = js.native
-  def getAllByTitle(id: Matcher): Chainable[js.Array[HTMLAnchorElement]] = js.native
-  def getAllByTitle(id: Matcher, options: MatcherOptions): Chainable[js.Array[HTMLAnchorElement]] = js.native
+  @JSName("findAllByTitle")
+  def findAllByTitle_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
+  @JSName("findAllByTitle")
+  def findAllByTitle_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
+  def findByAltText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByAltText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getAllByTitle")
-  def getAllByTitle_E_Node[E /* <: Node */](id: Matcher): Chainable[js.Array[E]] = js.native
-  @JSName("getAllByTitle")
-  def getAllByTitle_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[js.Array[E]] = js.native
-  def getByAltText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByAltText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByAltText")
+  def findByAltText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByAltText")
+  def findByAltText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByDisplayValue(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByDisplayValue(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getByAltText")
-  def getByAltText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByAltText")
-  def getByAltText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByDisplayValue(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByDisplayValue(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByDisplayValue")
+  def findByDisplayValue_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByDisplayValue")
+  def findByDisplayValue_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByLabelText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByLabelText(id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getByDisplayValue")
-  def getByDisplayValue_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByDisplayValue")
-  def getByDisplayValue_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByLabelText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByLabelText(id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByLabelText")
+  def findByLabelText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByLabelText")
+  def findByLabelText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByPlaceholderText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByPlaceholderText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getByLabelText")
-  def getByLabelText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByLabelText")
-  def getByLabelText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByPlaceholderText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByPlaceholderText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByPlaceholderText")
+  def findByPlaceholderText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByPlaceholderText")
+  def findByPlaceholderText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByRole(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByRole(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getByPlaceholderText")
-  def getByPlaceholderText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByPlaceholderText")
-  def getByPlaceholderText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByRole(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByRole(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByRole")
+  def findByRole_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByRole")
+  def findByRole_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByTestId(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByTestId(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getByRole")
-  def getByRole_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByRole")
-  def getByRole_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getBySelectText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getBySelectText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByTestId")
+  def findByTestId_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByTestId")
+  def findByTestId_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByText(id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getBySelectText")
-  def getBySelectText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getBySelectText")
-  def getBySelectText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByTestId(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByTestId(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("findByText")
+  def findByText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByText")
+  def findByText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[E]] = js.native
+  def findByTitle(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def findByTitle(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
     * @see https://github.com/testing-library/cypress-testing-library#usage
     * @see https://github.com/testing-library/dom-testing-library#table-of-contents
     */
-  @JSName("getByTestId")
-  def getByTestId_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByTestId")
-  def getByTestId_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByText(id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  /**
-    * dom-testing-library helpers for Cypress
-    *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
-    * `queryBy*` APIs search for an element and returns null if nothing found
-    * `queryAllBy*` APIs search for all elements and return empty array if nothing found
-    *
-    * @see https://github.com/testing-library/cypress-testing-library#usage
-    * @see https://github.com/testing-library/dom-testing-library#table-of-contents
-    */
-  @JSName("getByText")
-  def getByText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByText")
-  def getByText_E_Node[E /* <: Node */](id: Matcher, options: SelectorMatcherOptions): Chainable[JQuery[E]] = js.native
-  def getByTitle(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def getByTitle(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  /**
-    * dom-testing-library helpers for Cypress
-    *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
-    * `queryBy*` APIs search for an element and returns null if nothing found
-    * `queryAllBy*` APIs search for all elements and return empty array if nothing found
-    *
-    * @see https://github.com/testing-library/cypress-testing-library#usage
-    * @see https://github.com/testing-library/dom-testing-library#table-of-contents
-    */
-  @JSName("getByTitle")
-  def getByTitle_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("getByTitle")
-  def getByTitle_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
+  @JSName("findByTitle")
+  def findByTitle_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
+  @JSName("findByTitle")
+  def findByTitle_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
   def queryAllByAltText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
   def queryAllByAltText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -340,8 +306,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -357,8 +323,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -374,8 +340,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -391,8 +357,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -403,30 +369,13 @@ trait Chainable[Subject] extends js.Object {
   def queryAllByRole_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
   @JSName("queryAllByRole")
   def queryAllByRole_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def queryAllBySelectText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def queryAllBySelectText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  /**
-    * dom-testing-library helpers for Cypress
-    *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
-    * `queryBy*` APIs search for an element and returns null if nothing found
-    * `queryAllBy*` APIs search for all elements and return empty array if nothing found
-    *
-    * @see https://github.com/testing-library/cypress-testing-library#usage
-    * @see https://github.com/testing-library/dom-testing-library#table-of-contents
-    */
-  @JSName("queryAllBySelectText")
-  def queryAllBySelectText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("queryAllBySelectText")
-  def queryAllBySelectText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
   def queryAllByTestId(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
   def queryAllByTestId(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -442,8 +391,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -459,8 +408,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -476,8 +425,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -493,8 +442,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -510,8 +459,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -527,8 +476,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -544,8 +493,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -556,30 +505,13 @@ trait Chainable[Subject] extends js.Object {
   def queryByRole_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
   @JSName("queryByRole")
   def queryByRole_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
-  def queryBySelectText(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  def queryBySelectText(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
-  /**
-    * dom-testing-library helpers for Cypress
-    *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
-    * `queryBy*` APIs search for an element and returns null if nothing found
-    * `queryAllBy*` APIs search for all elements and return empty array if nothing found
-    *
-    * @see https://github.com/testing-library/cypress-testing-library#usage
-    * @see https://github.com/testing-library/dom-testing-library#table-of-contents
-    */
-  @JSName("queryBySelectText")
-  def queryBySelectText_E_Node[E /* <: Node */](id: Matcher): Chainable[JQuery[E]] = js.native
-  @JSName("queryBySelectText")
-  def queryBySelectText_E_Node[E /* <: Node */](id: Matcher, options: MatcherOptions): Chainable[JQuery[E]] = js.native
   def queryByTestId(id: Matcher): Chainable[JQuery[HTMLAnchorElement]] = js.native
   def queryByTestId(id: Matcher, options: MatcherOptions): Chainable[JQuery[HTMLAnchorElement]] = js.native
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -595,8 +527,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *
@@ -612,8 +544,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * dom-testing-library helpers for Cypress
     *
-    * `getBy*` APIs search for an element and throw an error if nothing found
-    * `getAllBy*` APIs search for all elements and an error if nothing found
+    * `findBy*` APIs search for an element and throw an error if nothing found
+    * `findAllBy*` APIs search for all elements and an error if nothing found
     * `queryBy*` APIs search for an element and returns null if nothing found
     * `queryAllBy*` APIs search for all elements and return empty array if nothing found
     *

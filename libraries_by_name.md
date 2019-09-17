@@ -3609,6 +3609,7 @@
 | [launchpad](./l/launchpad) | You can launch browsers | browsers, launcher, chrome, ie, firefox, opera, phantomjs, browserstack |
 | [layzr_dot_js](./l/layzr_dot_js) | A modern lazy loading library for images. | images, lazy, load, scroll |
 | [lazy-ass](./l/lazy-ass) | Lazy assertions without performance penalty | assertion, assertions, browser, debugging, defensive, lazy, node |
+| [lazy-property](./l/lazy-property) | Lazily initialized properties for objects | lazy, property, object, initialize, array, dictionary |
 | [lazy-val](./l/lazy-val) | Lazy value. | - |
 | [lazy-value](./l/lazy-value) | Create a lazily evaluated value | lazy, value, lazily, laziness, val, evaluation, eval, execute, getter, function, fn, memoize, cache, defer, deferred |
 | [lazy_dot_js](./l/lazy_dot_js) | Like Underscore, but lazier | lazy, functional, performance, speed, util |
@@ -3674,6 +3675,7 @@
 | [levenshtein](./l/levenshtein) | Javascript implementation of the L-diggity. | - |
 | [libpq](./l/libpq) | Low-level native bindings to PostgreSQL libpq | postgres, libpq |
 | [libra-core](./l/libra-core) | Library for Crypto | libra, library, crypto, facebook |
+| [librato-node](./l/librato-node) | A node.js client for Librato Metrics (http://metri | librato, metrics, express |
 | [libsodium-wrappers](./l/libsodium-wrappers) | The Sodium cryptographic library compiled to pure  | crypto, sodium, libsodium, nacl, chacha20, poly1305, curve25519, ed25519, blake2, siphash, argon2, ecc |
 | [libsodium-wrappers-sumo](./l/libsodium-wrappers-sumo) | The Sodium cryptographic library compiled to pure  | crypto, sodium, libsodium, nacl, chacha20, poly1305, curve25519, ed25519, blake2, siphash, argon2, ecc |
 | [libxmljs](./l/libxmljs) | libxml bindings for v8 javascript engine | - |
@@ -5897,6 +5899,7 @@
 | [react-window](./r/react-window) | React components for efficiently rendering large,  | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
 | [react-window-infinite-loa](./r/react-window-infinite-loader) | InfiniteLoader component inspired by react-virtual | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
 | [react-window-size](./r/react-window-size) | React HOC that passes browser window size to wrapp | react-component, react, hoc, browser, window, size, reactive |
+| [react-with-styles](./r/react-with-styles) | - | react, css, styles, aphrodite, radium, inline, styles, react, native |
 | [react-wow](./r/react-wow) | Using CSS animation in your react components. | react, react-component, animation |
 | [react-youtube](./r/react-youtube) | react.js powered YouTube player component | react, youtube, player, react-component |
 | [react-youtube-embed](./r/react-youtube-embed) | A responsive YouTube embed component for React. | react, youtube, embed, responsive |
@@ -7097,6 +7100,7 @@
 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components. | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |
 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities. | - |
+| [uifabric__react-hooks](./u/uifabric__react-hooks) | - | - |
 | [uifabric__set-version](./u/uifabric__set-version) | Non-Fabric specific package version setter | - |
 | [uifabric__styling](./u/uifabric__styling) | Defines the core Office UI Fabric styles through a | - |
 | [uifabric__utilities](./u/uifabric__utilities) | Office UI Fabric utilities for building React comp | - |
@@ -7210,6 +7214,7 @@
 | [valiant](./v/valiant) | JavaScript interval arithmetic library | - |
 | [valid-data-url](./v/valid-data-url) | Detect if a string is a data URL | valid, data-uri, data-url, data, uri, url, datauri, dataurl |
 | [valid-url](./v/valid-url) | URI validation functions | url, validation, check, checker, pattern |
+| [validate-npm-package-name](./v/validate-npm-package-name) | Give me a string and I'll tell you if it's a valid | npm, package, names, validation |
 | [validate_dot_js](./v/validate_dot_js) | Declarative validations for JavaScript | validation, validate, server, client |
 | [validator](./v/validator) | String validation and sanitization | validator, validation, validate, sanitization, sanitize, sanitisation, sanitise, assert |
 | [validatorjs](./v/validatorjs) | Validation library inspired by Laravel's Validator | validatorjs, validator.js, data validation, validator, validate, validation, data, laravel, laravel-validator-for-js |

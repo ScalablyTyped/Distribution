@@ -72,9 +72,13 @@ trait Input extends js.Object {
     */
   var SupplementalImps: js.UndefOr[__listOf__stringPatternS3ASSETMAPXml] = js.undefined
   /**
-    * Timecode source under input settings (InputTimecodeSource) only affects the behavior of features that apply to a single input at a time, such as input clipping and synchronizing some captions formats. Use this setting to specify whether the service counts frames by timecodes embedded in the video (EMBEDDED) or by starting the first frame at zero (ZEROBASED). In both cases, the timecode format is HH:MM:SS:FF or HH:MM:SS;FF, where FF is the frame number. Only set this to EMBEDDED if your source video has embedded timecodes.
+    * Use this Timecode source setting, located under the input settings (InputTimecodeSource), to specify how the service counts input video frames. This input frame count affects only the behavior of features that apply to a single input at a time, such as input clipping and synchronizing some captions formats. Choose Embedded (EMBEDDED) to use the timecodes in your input video. Choose Start at zero (ZEROBASED) to start the first frame at zero. Choose Specified start (SPECIFIEDSTART) to start the first frame at the timecode that you specify in the setting Start timecode (timecodeStart). If you don't specify a value for Timecode source, the service will use Embedded by default. For more information about timecodes, see https://docs.aws.amazon.com/console/mediaconvert/timecode.
     */
   var TimecodeSource: js.UndefOr[InputTimecodeSource] = js.undefined
+  /**
+    * Specify the timecode that you want the service to use for this input's initial frame. To use this setting, you must set the Timecode source setting, located under the input settings (InputTimecodeSource), to Specified start (SPECIFIEDSTART). For more information about timecodes, see https://docs.aws.amazon.com/console/mediaconvert/timecode.
+    */
+  var TimecodeStart: js.UndefOr[__stringMin11Max11Pattern01D20305D205D] = js.undefined
   /**
     * Selector for video.
     */
@@ -101,6 +105,7 @@ object Input {
     PsiControl: InputPsiControl = null,
     SupplementalImps: __listOf__stringPatternS3ASSETMAPXml = null,
     TimecodeSource: InputTimecodeSource = null,
+    TimecodeStart: __stringMin11Max11Pattern01D20305D205D = null,
     VideoSelector: VideoSelector = null
   ): Input = {
     val __obj = js.Dynamic.literal()
@@ -121,6 +126,7 @@ object Input {
     if (PsiControl != null) __obj.updateDynamic("PsiControl")(PsiControl.asInstanceOf[js.Any])
     if (SupplementalImps != null) __obj.updateDynamic("SupplementalImps")(SupplementalImps)
     if (TimecodeSource != null) __obj.updateDynamic("TimecodeSource")(TimecodeSource.asInstanceOf[js.Any])
+    if (TimecodeStart != null) __obj.updateDynamic("TimecodeStart")(TimecodeStart)
     if (VideoSelector != null) __obj.updateDynamic("VideoSelector")(VideoSelector)
     __obj.asInstanceOf[Input]
   }

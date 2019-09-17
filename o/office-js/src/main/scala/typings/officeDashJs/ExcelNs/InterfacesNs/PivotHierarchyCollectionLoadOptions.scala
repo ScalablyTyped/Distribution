@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+  * Represents a collection of all the PivotHierarchies that are part of the PivotTable.
   *
   * [Api set: ExcelApi 1.8]
   */

@@ -2930,6 +2930,7 @@
 | 0.6763703075050927 | [adlib](./a/adlib) | Templating for deep JSON object graphs
 | 0.6763452211006824 | [moment-jalaali](./m/moment-jalaali) | Jalaali (Jalali, Persian, Khorshidi, Shamsi) calen
 | 0.676302801053771 | [hapi__lab](./h/hapi__lab) | Test utility
+| 0.67627570174447 | [react-with-styles](./r/react-with-styles) | -
 | 0.6762484906701112 | [mermaid](./m/mermaid) | Markdownish syntax for generating flowcharts, sequ
 | 0.6761826206618655 | [express-correlation-id](./e/express-correlation-id) | Express middleware to correlate requests across ht
 | 0.6761589417981517 | [macos-version](./m/macos-version) | Get or check the current macOS version
@@ -5981,6 +5982,7 @@
 | 0.3486700901248488 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio
 | 0.3485362986917547 | [app-root-dir](./a/app-root-dir) | Simple module to infer the root directory of the c
 | 0.3485362003398511 | [selectables](./s/selectables) | Select html elements on webpage using mouse
+| 0.34843946067875103 | [validate-npm-package-name](./v/validate-npm-package-name) | Give me a string and I'll tell you if it's a valid
 | 0.3484357407848645 | [superagent-prefix](./s/superagent-prefix) | A plugin for superagent that prefixes absolute URL
 | 0.3483415998343428 | [blazy](./b/blazy) | A fast lightweight pure JavaScript script for lazy
 | 0.348231163072952 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration
@@ -6623,6 +6625,7 @@
 | 0.2345490366422122 | [aws-sdk__core-handler](./a/aws-sdk__core-handler) | AWS SDK Core Handler
 | 0.23440885677671625 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-node) | AWS credential provider that sources credentials f
 | 0.23437429676451818 | [countries-and-timezones](./c/countries-and-timezones) | Minimalistic library to work with countries and ti
+| 0.2343181874876662 | [librato-node](./l/librato-node) | A node.js client for Librato Metrics (http://metri
 | 0.23428131100565094 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps
 | 0.23408378677877123 | [material__toolbar](./m/material__toolbar) | The Material Components for the web toolbar compon
 | 0.2340771309162919 | [aws-sdk__hash-node](./a/aws-sdk__hash-node) | -
@@ -6952,6 +6955,7 @@
 | 0.1455490042565788 | [stdin](./s/stdin) | Because stdin with node is annoying
 | 0.14550160748261018 | [mandrill-api](./m/mandrill-api) | The official API client for the Mandrill email as 
 | 0.14538965391688163 | [jqgrid](./j/jqgrid) | jQuery grid plugin
+| 0.1440876613981725 | [lazy-property](./l/lazy-property) | Lazily initialized properties for objects
 | 0.14324334269739425 | [jweixin](./j/jweixin) | wechat js-sdk
 | 0.14279797920533616 | [is-running](./i/is-running) | Test if a process with a given pid is running
 | 0.14086588123296856 | [request-as-curl](./r/request-as-curl) | Serializes http.ClientRequest as curl(1) command s

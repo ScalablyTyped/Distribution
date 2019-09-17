@@ -52,8 +52,8 @@ class DataBarConditionalFormat () extends ClientObject {
   var context_DataBarConditionalFormat: RequestContext = js.native
   /**
     *
-    * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. 
-    * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
+    * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+    The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -81,8 +81,8 @@ class DataBarConditionalFormat () extends ClientObject {
   var showDataBarOnly: Boolean = js.native
   /**
     *
-    * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. 
-    * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
+    * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+    The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
     *
     * [Api set: ExcelApi 1.6]
     */

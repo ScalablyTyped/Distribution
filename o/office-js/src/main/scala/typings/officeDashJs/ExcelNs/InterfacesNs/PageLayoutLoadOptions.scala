@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  *
+  * Represents layout and print settings that are not dependent any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
+  *
   * [Api set: ExcelApi 1.9]
   */
 trait PageLayoutLoadOptions extends js.Object {
@@ -146,6 +149,7 @@ trait PageLayoutLoadOptions extends js.Object {
   /**
     *
     * Gets or sets the worksheet's print zoom options.
+    The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
     *
     * [Api set: ExcelApi 1.9]
     */

@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CustomProtocol2 extends CustomProtocol {
+  /**
+    * If specified, uses proof key exchange.
+    */
+  var pkce: js.UndefOr[PkceSetting] = js.native
   @JSName("profile")
   var profile_Original: ProfileGetter[Credentials2] = js.native
   /**

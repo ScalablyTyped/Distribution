@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga__symbols
 
-Typings are for version 1.0.1
+Typings are for version 1.1.0
 
 ## Library description:
 Redux-saga internal symbol "registry".

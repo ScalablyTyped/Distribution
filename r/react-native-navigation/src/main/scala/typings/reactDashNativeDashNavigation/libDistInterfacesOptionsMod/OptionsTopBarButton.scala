@@ -37,6 +37,11 @@ trait OptionsTopBarButton extends js.Object {
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
+    * Set the font weight, ignore fontFamily and use the iOS system fonts instead
+    * #### (iOS specific)
+    */
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  /**
     * Set the button icon
     */
   var icon: js.UndefOr[ImageRequireSource] = js.undefined
@@ -77,6 +82,7 @@ object OptionsTopBarButton {
     disabledColor: Color = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
+    fontWeight: FontWeight = null,
     icon: js.UndefOr[ImageRequireSource] = js.undefined,
     iconInsets: IconInsets = null,
     showAsAction: ifRoom | withText | always | never = null,
@@ -91,6 +97,7 @@ object OptionsTopBarButton {
     if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)
     if (showAsAction != null) __obj.updateDynamic("showAsAction")(showAsAction.asInstanceOf[js.Any])

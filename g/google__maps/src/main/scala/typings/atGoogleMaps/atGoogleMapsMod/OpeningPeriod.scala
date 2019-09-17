@@ -14,19 +14,12 @@ trait OpeningPeriod extends js.Object {
   var close: js.UndefOr[OpeningHoursTime] = js.undefined
   /** contains a pair of day and time objects describing when the place opens. */
   var open: OpeningHoursTime
-  /**
-    * is an array of seven strings representing the formatted opening hours for each day of the week.
-    * If a `language` parameter was specified in the Place Details request, the Places Service will format
-    * and localize the opening hours appropriately for that language. The ordering of the elements in this array
-    * depends on the `language` parameter. Some languages start the week on Monday while others start on Sunday.
-    */
-  var weekday_text: js.Array[String]
 }
 
 object OpeningPeriod {
   @scala.inline
-  def apply(open: OpeningHoursTime, weekday_text: js.Array[String], close: OpeningHoursTime = null): OpeningPeriod = {
-    val __obj = js.Dynamic.literal(open = open, weekday_text = weekday_text)
+  def apply(open: OpeningHoursTime, close: OpeningHoursTime = null): OpeningPeriod = {
+    val __obj = js.Dynamic.literal(open = open)
     if (close != null) __obj.updateDynamic("close")(close)
     __obj.asInstanceOf[OpeningPeriod]
   }

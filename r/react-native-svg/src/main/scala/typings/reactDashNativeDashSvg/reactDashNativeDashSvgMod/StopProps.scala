@@ -6,17 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait StopProps extends js.Object {
   var offset: js.UndefOr[NumberProp] = js.undefined
-  var stopColor: js.UndefOr[int32ARGBColor | rgbaArray | String] = js.undefined
+  var stopColor: js.UndefOr[Color] = js.undefined
   var stopOpacity: js.UndefOr[NumberProp] = js.undefined
 }
 
 object StopProps {
   @scala.inline
-  def apply(
-    offset: NumberProp = null,
-    stopColor: int32ARGBColor | rgbaArray | String = null,
-    stopOpacity: NumberProp = null
-  ): StopProps = {
+  def apply(offset: NumberProp = null, stopColor: Color = null, stopOpacity: NumberProp = null): StopProps = {
     val __obj = js.Dynamic.literal()
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])

@@ -143,7 +143,7 @@ trait PlaceDetailsResult extends js.Object {
     * but not the province/state, postal code, or country. For example, Google's Sydney, Australia office
     * has a `vicinity` value of `48 Pirrama Road, Pyrmont`.
     */
-  var vicinity: Double
+  var vicinity: String
   /** lists the authoritative website for this place, such as a business' homepage. */
   var website: String
 }
@@ -172,7 +172,7 @@ object PlaceDetailsResult {
     types: js.Array[AddressType],
     url: String,
     utc_offset: Double,
-    vicinity: Double,
+    vicinity: String,
     website: String
   ): PlaceDetailsResult = {
     val __obj = js.Dynamic.literal(address_components = address_components, adr_address = adr_address, alt_ids = alt_ids, formatted_address = formatted_address, formatted_phone_number = formatted_phone_number, geometry = geometry, icon = icon, international_phone_number = international_phone_number, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, reviews = reviews, scope = scope, types = types, url = url, utc_offset = utc_offset, vicinity = vicinity, website = website)

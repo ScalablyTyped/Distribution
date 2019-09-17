@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "koa-joi-router"
-version := "5.2-dt-20190423Z-85b4ae"
+version := "5.2-dt-20190423Z-203889"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-7abcc9",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-8ff114",
-  "org.scalablytyped" %%% "co-body" % "0.0-unknown-dt-20190322Z-1a4080",
+  "org.scalablytyped" %%% "co-body" % "0.0-unknown-dt-20190322Z-b60810",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-090bd5",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-26f1f7",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190916Z-980c44",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-915bef",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-48acfb",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-aeaeee",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9360b6",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-f7b87a",
-  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20190627Z-4fd513",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-ac5534",
+  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20190627Z-85de7e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "qs" % "6.5-dt-20190409Z-db060e",

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-svg" : "9.9.3"
+      "react-native-svg" : "9.9.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-svg" : "9.9.3"
+      "react-native-svg" : "9.9.4"
     }
   ],
   "compile-devDependencies" : [

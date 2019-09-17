@@ -11,7 +11,7 @@ trait FontObject extends js.Object {
   var fontStretch: js.UndefOr[FontStretch] = js.undefined
   var fontStyle: js.UndefOr[FontStyle] = js.undefined
   var fontVariant: js.UndefOr[FontVariant] = js.undefined
-  var fontVariantLigatures: js.UndefOr[String] = js.undefined
+  var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
   var fontVariationSettings: js.UndefOr[String] = js.undefined
   var fontWeight: js.UndefOr[FontWeight] = js.undefined
   var kerning: js.UndefOr[NumberProp] = js.undefined
@@ -30,7 +30,7 @@ object FontObject {
     fontStretch: FontStretch = null,
     fontStyle: FontStyle = null,
     fontVariant: FontVariant = null,
-    fontVariantLigatures: String = null,
+    fontVariantLigatures: FontVariantLigatures = null,
     fontVariationSettings: String = null,
     fontWeight: FontWeight = null,
     kerning: NumberProp = null,

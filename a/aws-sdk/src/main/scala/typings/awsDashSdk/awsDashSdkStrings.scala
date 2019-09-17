@@ -1033,6 +1033,8 @@ import typings.awsDashSdk.clientsMediaconvertMod._Ac3LfeFilter
 import typings.awsDashSdk.clientsMediaconvertMod._Ac3MetadataControl
 import typings.awsDashSdk.clientsMediaconvertMod._AccelerationMode
 import typings.awsDashSdk.clientsMediaconvertMod._AfdSignaling
+import typings.awsDashSdk.clientsMediaconvertMod._AncillaryConvert608To708
+import typings.awsDashSdk.clientsMediaconvertMod._AncillaryTerminateCaptions
 import typings.awsDashSdk.clientsMediaconvertMod._AntiAlias
 import typings.awsDashSdk.clientsMediaconvertMod._AudioCodec
 import typings.awsDashSdk.clientsMediaconvertMod._AudioDefaultSelection
@@ -1053,6 +1055,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._CaptionDestinationType
 import typings.awsDashSdk.clientsMediaconvertMod._CaptionSourceType
 import typings.awsDashSdk.clientsMediaconvertMod._CmafClientCache
 import typings.awsDashSdk.clientsMediaconvertMod._CmafCodecSpecification
+import typings.awsDashSdk.clientsMediaconvertMod._CmafEncryptionType
 import typings.awsDashSdk.clientsMediaconvertMod._CmafInitializationVectorInManifest
 import typings.awsDashSdk.clientsMediaconvertMod._CmafKeyProviderType
 import typings.awsDashSdk.clientsMediaconvertMod._CmafManifestCompression
@@ -1103,6 +1106,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._Eac3StereoDownmix
 import typings.awsDashSdk.clientsMediaconvertMod._Eac3SurroundExMode
 import typings.awsDashSdk.clientsMediaconvertMod._Eac3SurroundMode
 import typings.awsDashSdk.clientsMediaconvertMod._EmbeddedConvert608To708
+import typings.awsDashSdk.clientsMediaconvertMod._EmbeddedTerminateCaptions
 import typings.awsDashSdk.clientsMediaconvertMod._F4vMoovPlacement
 import typings.awsDashSdk.clientsMediaconvertMod._FileSourceConvert608To708
 import typings.awsDashSdk.clientsMediaconvertMod._FontScript
@@ -1171,6 +1175,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._HlsProgramDateTime
 import typings.awsDashSdk.clientsMediaconvertMod._HlsSegmentControl
 import typings.awsDashSdk.clientsMediaconvertMod._HlsStreamInfResolution
 import typings.awsDashSdk.clientsMediaconvertMod._HlsTimedMetadataId3Frame
+import typings.awsDashSdk.clientsMediaconvertMod._ImscStylePassthrough
 import typings.awsDashSdk.clientsMediaconvertMod._InputDeblockFilter
 import typings.awsDashSdk.clientsMediaconvertMod._InputDenoiseFilter
 import typings.awsDashSdk.clientsMediaconvertMod._InputFilterEnable
@@ -3147,7 +3152,9 @@ object awsDashSdkStrings {
   sealed trait AES_CBC extends _DecryptionMode
   
   @js.native
-  sealed trait AES_CTR extends _DecryptionMode
+  sealed trait AES_CTR
+    extends _CmafEncryptionType
+       with _DecryptionMode
   
   @js.native
   sealed trait AES_GCM extends _DecryptionMode
@@ -7811,6 +7818,8 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMedialiveMod._Ac3LfeFilter
        with _AccelerationMode
        with _AccessStatus
+       with _AncillaryConvert608To708
+       with _AncillaryTerminateCaptions
        with _AntiAlias
        with _AssignPublicIp
        with typings.awsDashSdk.clientsEcsMod._AssignPublicIp
@@ -7849,6 +7858,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMedialiveMod._Eac3SurroundMode
        with _EmbeddedConvert608To708
        with typings.awsDashSdk.clientsMedialiveMod._EmbeddedConvert608To708
+       with _EmbeddedTerminateCaptions
        with _EntityState
        with _FileSourceConvert608To708
        with _GettablePolicyStateValues
@@ -7885,6 +7895,7 @@ object awsDashSdkStrings {
        with _HlsOfflineEncrypted
        with _HlsRedundantManifest
        with _IFrameOnlyPlaylistType
+       with _ImscStylePassthrough
        with _InputDeblockFilter
        with typings.awsDashSdk.clientsMedialiveMod._InputDeblockFilter
        with _InputDenoiseFilter
@@ -8917,6 +8928,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMedialiveMod._HlsClientCache
        with _HlsOfflineEncrypted
        with _HlsRedundantManifest
+       with _ImscStylePassthrough
        with _InputDeblockFilter
        with typings.awsDashSdk.clientsMedialiveMod._InputDeblockFilter
        with _InputDenoiseFilter
@@ -8996,6 +9008,11 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait END_DATE extends _ValidityPeriodType
+  
+  @js.native
+  sealed trait END_OF_INPUT
+    extends _AncillaryTerminateCaptions
+       with _EmbeddedTerminateCaptions
   
   @js.native
   sealed trait ENFORCED extends _AdvancedSecurityModeType
@@ -11580,7 +11597,9 @@ object awsDashSdkStrings {
   sealed trait IMPORT_TASK_ID extends _ImportTaskFilterName
   
   @js.native
-  sealed trait IMSC extends _CaptionSourceType
+  sealed trait IMSC
+    extends _CaptionDestinationType
+       with _CaptionSourceType
   
   @js.native
   sealed trait IN
@@ -18261,7 +18280,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait SAMPLE_AES
-    extends _EncryptionMethod
+    extends _CmafEncryptionType
+       with _EncryptionMethod
        with typings.awsDashSdk.clientsMediapackagevodMod._EncryptionMethod
        with _HlsEncryptionType
        with typings.awsDashSdk.clientsMedialiveMod._HlsEncryptionType
@@ -21270,7 +21290,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait UPCONVERT
-    extends _EmbeddedConvert608To708
+    extends _AncillaryConvert608To708
+       with _EmbeddedConvert608To708
        with typings.awsDashSdk.clientsMedialiveMod._EmbeddedConvert608To708
        with _FileSourceConvert608To708
        with _Scte20Convert608To708
@@ -31729,6 +31750,8 @@ object awsDashSdkStrings {
   def ENDS_WITH: ENDS_WITH = "ENDS_WITH".asInstanceOf[ENDS_WITH]
   @scala.inline
   def END_DATE: END_DATE = "END_DATE".asInstanceOf[END_DATE]
+  @scala.inline
+  def END_OF_INPUT: END_OF_INPUT = "END_OF_INPUT".asInstanceOf[END_OF_INPUT]
   @scala.inline
   def ENFORCED: ENFORCED = "ENFORCED".asInstanceOf[ENFORCED]
   @scala.inline

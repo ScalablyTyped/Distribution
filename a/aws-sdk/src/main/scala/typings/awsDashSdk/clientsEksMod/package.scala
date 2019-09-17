@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEksMod {
+  import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -48,6 +49,10 @@ package object clientsEksMod {
   type LogTypes = js.Array[LogType]
   type String = java.lang.String
   type StringList = js.Array[String]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagMap = StringDictionary[TagValue]
+  type TagValue = java.lang.String
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Version

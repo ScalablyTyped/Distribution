@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "client-sessions"
-version := "0.8-dt-20180214Z-7e5b4f"
+version := "0.8-dt-20180214Z-ee0f33"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-8ff114",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-090bd5",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-26f1f7",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190916Z-980c44",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-915bef",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-48acfb",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9360b6",

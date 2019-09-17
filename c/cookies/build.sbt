@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cookies"
-version := "0.7-dt-20190420Z-26f1f7"
+version := "0.7-dt-20190916Z-980c44"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

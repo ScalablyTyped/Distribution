@@ -1,19 +1,25 @@
 package typings.atReduxDashSagaCore
 
-import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.Saga
-import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Args extends js.Object {
-  var args: js.Array[_] = js.native
-  var effectId: Double = js.native
-  @JSName("saga")
-  var saga_Original: Saga[js.Array[_]] = js.native
-  def saga(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: js.Array[_]
-  ): IterableIterator[_] = js.native
+  var args: js.Array[_]
+  var effectId: Double
+  var saga: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Saga */ js.Any
+}
+
+object Anon_Args {
+  @scala.inline
+  def apply(
+    args: js.Array[_],
+    effectId: Double,
+    saga: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Saga */ js.Any
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal(args = args, effectId = effectId, saga = saga)
+  
+    __obj.asInstanceOf[Anon_Args]
+  }
 }
 

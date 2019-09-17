@@ -48,10 +48,14 @@ object vueMod extends js.Object {
   def radios[T](name: String, options: StringDictionary[T]): T = js.native
   def radios[T](name: String, options: StringDictionary[T], value: T): T = js.native
   def radios[T](name: String, options: StringDictionary[T], value: T, groupId: String): T = js.native
-  def select[T /* <: Exclude[js.UndefOr[String | js.Array[String] | Double], js.UndefOr[scala.Nothing]] */](name: String, options: js.Array[T], value: T): T = js.native
-  def select[T /* <: Exclude[js.UndefOr[String | js.Array[String] | Double], js.UndefOr[scala.Nothing]] */](name: String, options: js.Array[T], value: T, groupId: String): T = js.native
+  def select[T](name: String, options: js.Array[T], value: T): T = js.native
+  def select[T](name: String, options: js.Array[T], value: T, groupId: String): T = js.native
   def select[T](name: String, options: StringDictionary[T], value: T): T = js.native
   def select[T](name: String, options: StringDictionary[T], value: T, groupId: String): T = js.native
+  @JSName("select")
+  def `select_T_ExcludeUnionStringArrayStringDoublejs.undefinedNothingUnionjs.undefinedNothing`[T /* <: Exclude[js.UndefOr[String | js.Array[String] | Double], js.UndefOr[scala.Nothing]] */](name: String, options: js.Array[T], value: T): T = js.native
+  @JSName("select")
+  def `select_T_ExcludeUnionStringArrayStringDoublejs.undefinedNothingUnionjs.undefinedNothing`[T /* <: Exclude[js.UndefOr[String | js.Array[String] | Double], js.UndefOr[scala.Nothing]] */](name: String, options: js.Array[T], value: T, groupId: String): T = js.native
   def text(name: String): String = js.native
   def text(name: String, value: String): String = js.native
   def text(name: String, value: String, groupId: String): String = js.native

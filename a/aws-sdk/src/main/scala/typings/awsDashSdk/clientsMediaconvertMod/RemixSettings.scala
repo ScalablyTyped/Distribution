@@ -12,19 +12,19 @@ trait RemixSettings extends js.Object {
   /**
     * Specify the number of audio channels from your input that you want to use in your output. With remixing, you might combine or split the data in these channels, so the number of channels in your final output might be different.
     */
-  var ChannelsIn: js.UndefOr[__integerMin1Max16] = js.undefined
+  var ChannelsIn: js.UndefOr[__integerMin1Max64] = js.undefined
   /**
-    * Specify the number of channels in this output after remixing. Valid values: 1, 2, 4, 6, 8
+    * Specify the number of channels in this output after remixing. Valid values: 1, 2, 4, 6, 8... 64. (1 and even numbers to 64.)
     */
-  var ChannelsOut: js.UndefOr[__integerMin1Max8] = js.undefined
+  var ChannelsOut: js.UndefOr[__integerMin1Max64] = js.undefined
 }
 
 object RemixSettings {
   @scala.inline
   def apply(
     ChannelMapping: ChannelMapping = null,
-    ChannelsIn: js.UndefOr[__integerMin1Max16] = js.undefined,
-    ChannelsOut: js.UndefOr[__integerMin1Max8] = js.undefined
+    ChannelsIn: js.UndefOr[__integerMin1Max64] = js.undefined,
+    ChannelsOut: js.UndefOr[__integerMin1Max64] = js.undefined
   ): RemixSettings = {
     val __obj = js.Dynamic.literal()
     if (ChannelMapping != null) __obj.updateDynamic("ChannelMapping")(ChannelMapping)

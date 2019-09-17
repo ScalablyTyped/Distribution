@@ -1,0 +1,24 @@
+package typings.atReduxDashSagaCore.typesEffectsMod
+
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ActionChannelEffectDescriptor extends js.Object {
+  var buffer: js.UndefOr[Buffer] = js.undefined
+  var pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+}
+
+object ActionChannelEffectDescriptor {
+  @scala.inline
+  def apply(
+    pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
+    buffer: Buffer = null
+  ): ActionChannelEffectDescriptor = {
+    val __obj = js.Dynamic.literal(pattern = pattern)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    __obj.asInstanceOf[ActionChannelEffectDescriptor]
+  }
+}
+

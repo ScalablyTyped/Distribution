@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Administrative extends js.Object {
   var administrative: highlightResultValueInterface
-  var country: Anon_Default
-  var county: Anon_DefaultKey
-  var locale_names: Anon_DefaultKeyArray
+  var country: highlightResultValueInterface
+  var county: js.UndefOr[highlightResultValueInterface] = js.undefined
+  var locale_names: js.Array[highlightResultValueInterface]
   var postcode: js.Array[highlightResultValueInterface]
 }
 
@@ -17,13 +17,13 @@ object Anon_Administrative {
   @scala.inline
   def apply(
     administrative: highlightResultValueInterface,
-    country: Anon_Default,
-    county: Anon_DefaultKey,
-    locale_names: Anon_DefaultKeyArray,
-    postcode: js.Array[highlightResultValueInterface]
+    country: highlightResultValueInterface,
+    locale_names: js.Array[highlightResultValueInterface],
+    postcode: js.Array[highlightResultValueInterface],
+    county: highlightResultValueInterface = null
   ): Anon_Administrative = {
-    val __obj = js.Dynamic.literal(administrative = administrative, country = country, county = county, locale_names = locale_names, postcode = postcode)
-  
+    val __obj = js.Dynamic.literal(administrative = administrative, country = country, locale_names = locale_names, postcode = postcode)
+    if (county != null) __obj.updateDynamic("county")(county)
     __obj.asInstanceOf[Anon_Administrative]
   }
 }

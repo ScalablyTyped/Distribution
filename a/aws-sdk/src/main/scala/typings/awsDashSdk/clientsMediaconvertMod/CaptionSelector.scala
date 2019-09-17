@@ -14,7 +14,7 @@ trait CaptionSelector extends js.Object {
     */
   var LanguageCode: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.LanguageCode] = js.undefined
   /**
-    * Source settings (SourceSettings) contains the group of settings for captions in the input.
+    * If your input captions are SCC, TTML, STL, SMI, SRT, or IMSC in an xml file, specify the URI of the input captions source file. If your input captions are IMSC in an IMF package, use TrackSourceSettings instead of FileSoureSettings.
     */
   var SourceSettings: js.UndefOr[CaptionSourceSettings] = js.undefined
 }

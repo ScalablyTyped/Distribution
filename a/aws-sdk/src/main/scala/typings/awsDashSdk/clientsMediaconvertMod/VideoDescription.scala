@@ -36,7 +36,7 @@ trait VideoDescription extends js.Object {
   /**
     * Use the Height (Height) setting to define the video resolution height for this output. Specify in pixels. If you don't provide a value here, the service will use the input height.
     */
-  var Height: js.UndefOr[__integerMin32Max2160] = js.undefined
+  var Height: js.UndefOr[__integerMin32Max4096] = js.undefined
   /**
     * Use Selection placement (position) to define the video area in your output frame. The area outside of the rectangle that you specify here is black.
     */
@@ -77,7 +77,7 @@ object VideoDescription {
     Crop: Rectangle = null,
     DropFrameTimecode: DropFrameTimecode = null,
     FixedAfd: js.UndefOr[__integerMin0Max15] = js.undefined,
-    Height: js.UndefOr[__integerMin32Max2160] = js.undefined,
+    Height: js.UndefOr[__integerMin32Max4096] = js.undefined,
     Position: Rectangle = null,
     RespondToAfd: RespondToAfd = null,
     ScalingBehavior: ScalingBehavior = null,

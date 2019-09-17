@@ -5,6 +5,7 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.officeDashUiDashFabricDashReact.libButtonMod.BaseButton
 import typings.officeDashUiDashFabricDashReact.libButtonMod.Button
+import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.Global.JSXNs.Element
 import typings.react.reactMod.HTMLAttributes
@@ -34,11 +35,21 @@ trait IMessageBarProps extends HTMLAttributes[HTMLElement] {
     */
   var dismissButtonAriaLabel: js.UndefOr[String] = js.undefined
   /**
+    * Custom icon prop to replace the dismiss icon.
+    * If unset, default will be the Fabric Clear icon.
+    */
+  var dismissIconProps: js.UndefOr[IIconProps] = js.undefined
+  /**
     * Determines if the message bar is multi lined.
     * If false, and the text overflows over buttons or to another line, it is clipped.
     * @defaultvalue true
     */
   var isMultiline: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Custom icon prop to replace the message bar icon.
+    * If unset, default will be the icon set by messageBarType.
+    */
+  var messageBarIconProps: js.UndefOr[IIconProps] = js.undefined
   /**
     * The type of MessageBar to render.
     * @defaultvalue MessageBarType.info
@@ -85,7 +96,9 @@ object IMessageBarProps {
     className: String = null,
     componentRef: IRefObject[IMessageBar] = null,
     dismissButtonAriaLabel: String = null,
+    dismissIconProps: IIconProps = null,
     isMultiline: js.UndefOr[Boolean] = js.undefined,
+    messageBarIconProps: IIconProps = null,
     messageBarType: MessageBarType = null,
     onDismiss: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => _ = null,
     overflowButtonAriaLabel: String = null,
@@ -100,7 +113,9 @@ object IMessageBarProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (dismissButtonAriaLabel != null) __obj.updateDynamic("dismissButtonAriaLabel")(dismissButtonAriaLabel)
+    if (dismissIconProps != null) __obj.updateDynamic("dismissIconProps")(dismissIconProps)
     if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline)
+    if (messageBarIconProps != null) __obj.updateDynamic("messageBarIconProps")(messageBarIconProps)
     if (messageBarType != null) __obj.updateDynamic("messageBarType")(messageBarType)
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (overflowButtonAriaLabel != null) __obj.updateDynamic("overflowButtonAriaLabel")(overflowButtonAriaLabel)

@@ -10,7 +10,7 @@ trait CmafEncryptionSettings extends js.Object {
     */
   var ConstantInitializationVector: js.UndefOr[__stringMin32Max32Pattern09aFAF32] = js.undefined
   /**
-    * For DRM with CMAF, the encryption type is always sample AES.
+    * Specify the encryption scheme that you want the service to use when encrypting your CMAF segments. Choose AES-CBC subsample (SAMPLE-AES) or AES_CTR (AES-CTR).
     */
   var EncryptionMethod: js.UndefOr[CmafEncryptionType] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait CmafEncryptionSettings extends js.Object {
     */
   var InitializationVectorInManifest: js.UndefOr[CmafInitializationVectorInManifest] = js.undefined
   /**
-    * Use these settings when doing DRM encryption with a SPEKE-compliant key provider, if your output group type is CMAF. If your output group type is HLS, MS Smooth, or DASH, use the SpekeKeyProvider settings instead.
+    * If your output group type is CMAF, use these settings when doing DRM encryption with a SPEKE-compliant key provider. If your output group type is HLS, DASH, or Microsoft Smooth, use the SpekeKeyProvider settings instead.
     */
   var SpekeKeyProvider: js.UndefOr[SpekeKeyProviderCmaf] = js.undefined
   /**

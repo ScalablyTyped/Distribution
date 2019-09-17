@@ -18,12 +18,13 @@ trait Cookies extends js.Object {
     */
   def get(name: String): js.UndefOr[String] = js.native
   def get(name: String, opts: GetOption): js.UndefOr[String] = js.native
+  def set(name: String): this.type = js.native
+  def set(name: String, opts: SetOption): this.type = js.native
   /**
     * This sets the given cookie in the response and returns
     * the current context to allow chaining.If the value is omitted,
     * an outbound header with an expired date is used to delete the cookie.
     */
-  def set(name: String): this.type = js.native
   def set(name: String, value: String): this.type = js.native
   def set(name: String, value: String, opts: SetOption): this.type = js.native
 }

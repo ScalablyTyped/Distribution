@@ -18,6 +18,11 @@ trait OptionsTopBarLargeTitle extends js.Object {
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
+    * Set the font weight, ignore fontFamily and use the iOS system fonts instead
+    * #### (iOS specific)
+    */
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  /**
     * Enable large titles
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -29,12 +34,14 @@ object OptionsTopBarLargeTitle {
     color: Color = null,
     fontFamily: FontFamily = null,
     fontSize: Int | Double = null,
+    fontWeight: FontWeight = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): OptionsTopBarLargeTitle = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[OptionsTopBarLargeTitle]
   }

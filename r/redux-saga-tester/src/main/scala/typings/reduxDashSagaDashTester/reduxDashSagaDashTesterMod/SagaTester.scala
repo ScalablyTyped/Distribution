@@ -1,6 +1,5 @@
 package typings.reduxDashSagaDashTester.reduxDashSagaDashTesterMod
 
-import typings.atReduxDashSagaTypes.atReduxDashSagaTypesMod.Task
 import typings.redux.reduxMod.AnyAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +36,7 @@ trait SagaTester[StateType /* <: js.Object */] extends js.Object {
   /**
     * Starts execution of the provided saga.
     */
-  def start(saga: SagaFunction, args: js.Any*): Task = js.native
+  def start(saga: SagaFunction, args: js.Any*): js.Any = js.native
   /**
     * Assigns the newState into the current state. (Only works with the default reducer.)
     */

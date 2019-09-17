@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents the data validation applied to the current range.
-  * To learn more about the data validation object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation | Add data validation to Excel ranges}.
+  To learn more about the data validation object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation | Add data validation to Excel ranges}.
   *
   * [Api set: ExcelApi 1.8]
   */
@@ -49,8 +49,7 @@ class DataValidation () extends ClientObject {
   var ignoreBlanks: Boolean = js.native
   /**
     *
-    * Prompt when users select a cell. 
-    * The `DataValidationPrompt` object must be set as a JSON object (use `x.prompt = {...}` instead of `x.prompt.message = ...`).
+    * Prompt when users select a cell.
     *
     * [Api set: ExcelApi 1.8]
     */

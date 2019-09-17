@@ -1,7 +1,7 @@
 
 # Scala.js typings for filesize
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 JavaScript library to generate a human readable String describing the file size

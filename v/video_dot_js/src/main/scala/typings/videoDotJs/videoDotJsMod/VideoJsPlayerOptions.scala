@@ -25,6 +25,7 @@ trait VideoJsPlayerOptions extends ComponentOptions {
   var inactivityTimeout: js.UndefOr[Double] = js.undefined
   var language: js.UndefOr[String] = js.undefined
   var languages: js.UndefOr[StringDictionary[LanguageTranslations]] = js.undefined
+  var liveui: js.UndefOr[Boolean] = js.undefined
   var loop: js.UndefOr[Boolean] = js.undefined
   var muted: js.UndefOr[Boolean] = js.undefined
   var nativeControlsForTouch: js.UndefOr[Boolean] = js.undefined
@@ -57,6 +58,7 @@ object VideoJsPlayerOptions {
     inactivityTimeout: Int | Double = null,
     language: String = null,
     languages: StringDictionary[LanguageTranslations] = null,
+    liveui: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
     muted: js.UndefOr[Boolean] = js.undefined,
     nativeControlsForTouch: js.UndefOr[Boolean] = js.undefined,
@@ -86,6 +88,7 @@ object VideoJsPlayerOptions {
     if (inactivityTimeout != null) __obj.updateDynamic("inactivityTimeout")(inactivityTimeout.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
     if (languages != null) __obj.updateDynamic("languages")(languages)
+    if (!js.isUndefined(liveui)) __obj.updateDynamic("liveui")(liveui)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
     if (!js.isUndefined(nativeControlsForTouch)) __obj.updateDynamic("nativeControlsForTouch")(nativeControlsForTouch)

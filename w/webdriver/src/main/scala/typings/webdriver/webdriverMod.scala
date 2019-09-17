@@ -29,5 +29,6 @@ object webdriverMod extends js.Object {
     proto: js.Object,
     commandWrapper: js.Function2[/* commandName */ String, /* fn */ js.Function1[/* repeated */ js.Any, _], _]
   ): js.Promise[Client] = js.native
+  def reloadSession(instance: Client): js.Promise[Client] = js.native
 }
 

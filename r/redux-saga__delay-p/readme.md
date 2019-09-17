@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga__delay-p
 
-Typings are for version 1.0.1
+Typings are for version 1.1.0
 
 ## Library description:
 Promisified setTimeout

@@ -10,9 +10,9 @@ trait WavSettings extends js.Object {
     */
   var BitDepth: js.UndefOr[__integerMin16Max24] = js.undefined
   /**
-    * Set Channels to specify the number of channels in this output audio track. With WAV, valid values 1, 2, 4, and 8. In the console, these values are Mono, Stereo, 4-Channel, and 8-Channel, respectively.
+    * Specify the number of channels in this output audio track. Valid values are 1 and even numbers up to 64. For example, 1, 2, 4, 6, and so on, up to 64.
     */
-  var Channels: js.UndefOr[__integerMin1Max8] = js.undefined
+  var Channels: js.UndefOr[__integerMin1Max64] = js.undefined
   /**
     * The service defaults to using RIFF for WAV outputs. If your output audio is likely to exceed 4 GB in file size, or if you otherwise need the extended support of the RF64 format, set your output WAV file format to RF64.
     */
@@ -27,7 +27,7 @@ object WavSettings {
   @scala.inline
   def apply(
     BitDepth: js.UndefOr[__integerMin16Max24] = js.undefined,
-    Channels: js.UndefOr[__integerMin1Max8] = js.undefined,
+    Channels: js.UndefOr[__integerMin1Max64] = js.undefined,
     Format: WavFormat = null,
     SampleRate: js.UndefOr[__integerMin8000Max192000] = js.undefined
   ): WavSettings = {

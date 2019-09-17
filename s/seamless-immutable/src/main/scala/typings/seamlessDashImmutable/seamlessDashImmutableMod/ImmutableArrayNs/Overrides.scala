@@ -27,7 +27,14 @@ trait Overrides[T] extends js.Object {
     ],
     thisArg: js.Any
   ): Unit = js.native
-  def map[TTarget](mapFuction: js.Function1[/* item */ Immutable[T, js.Object], TTarget]): Immutable[js.Array[TTarget], js.Object] = js.native
+  def map[TTarget](
+    mapFuction: js.Function3[
+      /* item */ Immutable[T, js.Object], 
+      /* index */ Double, 
+      /* array */ Immutable[js.Array[T], js.Object], 
+      TTarget
+    ]
+  ): Immutable[js.Array[TTarget], js.Object] = js.native
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Immutable[T, js.Object], 

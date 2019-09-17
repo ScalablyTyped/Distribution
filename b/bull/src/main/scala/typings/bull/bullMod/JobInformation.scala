@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait JobInformation extends js.Object {
   var cron: String
   var endDate: js.UndefOr[Double] = js.undefined
+  var every: Double
   var id: js.UndefOr[String] = js.undefined
   var key: String
   var name: String
@@ -18,6 +19,7 @@ object JobInformation {
   @scala.inline
   def apply(
     cron: String,
+    every: Double,
     key: String,
     name: String,
     next: Double,
@@ -25,7 +27,7 @@ object JobInformation {
     id: String = null,
     tz: String = null
   ): JobInformation = {
-    val __obj = js.Dynamic.literal(cron = cron, key = key, name = name, next = next)
+    val __obj = js.Dynamic.literal(cron = cron, every = every, key = key, name = name, next = next)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (tz != null) __obj.updateDynamic("tz")(tz)

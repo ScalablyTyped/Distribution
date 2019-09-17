@@ -1,8 +1,8 @@
 package typings.algoliasearch.algoliasearchMod.PlacesNs
 
 import typings.algoliasearch.Anon_Administrative
+import typings.algoliasearch.Anon_Default
 import typings.algoliasearch.Anon_DefaultKey
-import typings.algoliasearch.Anon_DefaultKeyArray
 import typings.algoliasearch.Anon_Lat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,6 +18,12 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-latlng
     */
   var _geoloc: Anon_Lat
+  /**
+    * The associated highlighting information.
+    * https://community.algolia.com/places/api-clients.html#api-suggestion-highlightResult
+    */
+  var _highlightResult: Anon_Administrative
+  var _tags: js.Array[String]
   var admin_level: Double
   /**
     * List of associated administrative region names.
@@ -28,12 +34,12 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-city
     * List of the associated city names. If no language parameter is specified, retrieves all of them.
     */
-  var city: js.UndefOr[Anon_DefaultKeyArray] = js.undefined
+  var city: js.UndefOr[Anon_DefaultKey] = js.undefined
   /**
     * Associated country name.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-country
     */
-  var country: Anon_DefaultKey
+  var country: Anon_Default
   /**
     * Two letters country code (ISO 639-1).
     * https://community.algolia.com/places/api-clients.html#api-suggestion-countryCode
@@ -43,13 +49,8 @@ trait HitInterface extends js.Object {
     * List of the associated county names. If no language parameter is specified, retrieves all of them.
     * https://community.algolia.com/places/api-clients.html#api-suggestion-county
     */
-  var county: js.UndefOr[Anon_DefaultKeyArray] = js.undefined
-  var district: String
-  /**
-    * The associated highlighting information.
-    * https://community.algolia.com/places/api-clients.html#api-suggestion-highlightResult
-    */
-  var highlightResult: Anon_Administrative
+  var county: js.UndefOr[Anon_DefaultKey] = js.undefined
+  var district: js.UndefOr[String] = js.undefined
   var importance: Double
   var is_city: Boolean
   var is_country: Boolean
@@ -60,7 +61,7 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-name
     * List of names of the place. If no language parameter is specified, retrieves all of them.
     */
-  var locale_names: Anon_DefaultKeyArray
+  var locale_names: Anon_DefaultKey
   var objectID: String
   /**
     * Associated population.
@@ -72,37 +73,37 @@ trait HitInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-suggestion-postcode
     */
   var postcode: js.UndefOr[js.Array[String]] = js.undefined
-  var tags: js.Array[String]
 }
 
 object HitInterface {
   @scala.inline
   def apply(
     _geoloc: Anon_Lat,
+    _highlightResult: Anon_Administrative,
+    _tags: js.Array[String],
     admin_level: Double,
-    country: Anon_DefaultKey,
+    country: Anon_Default,
     country_code: String,
-    district: String,
-    highlightResult: Anon_Administrative,
     importance: Double,
     is_city: Boolean,
     is_country: Boolean,
     is_highway: Boolean,
     is_popular: Boolean,
     is_suburb: Boolean,
-    locale_names: Anon_DefaultKeyArray,
+    locale_names: Anon_DefaultKey,
     objectID: String,
-    tags: js.Array[String],
     administrative: js.Array[String] = null,
-    city: Anon_DefaultKeyArray = null,
-    county: Anon_DefaultKeyArray = null,
+    city: Anon_DefaultKey = null,
+    county: Anon_DefaultKey = null,
+    district: String = null,
     population: Int | Double = null,
     postcode: js.Array[String] = null
   ): HitInterface = {
-    val __obj = js.Dynamic.literal(_geoloc = _geoloc, admin_level = admin_level, country = country, country_code = country_code, district = district, highlightResult = highlightResult, importance = importance, is_city = is_city, is_country = is_country, is_highway = is_highway, is_popular = is_popular, is_suburb = is_suburb, locale_names = locale_names, objectID = objectID, tags = tags)
+    val __obj = js.Dynamic.literal(_geoloc = _geoloc, _highlightResult = _highlightResult, _tags = _tags, admin_level = admin_level, country = country, country_code = country_code, importance = importance, is_city = is_city, is_country = is_country, is_highway = is_highway, is_popular = is_popular, is_suburb = is_suburb, locale_names = locale_names, objectID = objectID)
     if (administrative != null) __obj.updateDynamic("administrative")(administrative)
     if (city != null) __obj.updateDynamic("city")(city)
     if (county != null) __obj.updateDynamic("county")(county)
+    if (district != null) __obj.updateDynamic("district")(district)
     if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
     if (postcode != null) __obj.updateDynamic("postcode")(postcode)
     __obj.asInstanceOf[HitInterface]

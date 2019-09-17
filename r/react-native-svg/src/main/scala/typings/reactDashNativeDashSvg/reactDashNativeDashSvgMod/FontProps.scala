@@ -18,7 +18,7 @@ object FontProps {
     fontStretch: FontStretch = null,
     fontStyle: FontStyle = null,
     fontVariant: FontVariant = null,
-    fontVariantLigatures: String = null,
+    fontVariantLigatures: FontVariantLigatures = null,
     fontVariationSettings: String = null,
     fontWeight: FontWeight = null,
     kerning: NumberProp = null,

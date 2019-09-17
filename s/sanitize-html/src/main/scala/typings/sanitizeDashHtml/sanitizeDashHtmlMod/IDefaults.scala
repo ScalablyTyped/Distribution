@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDefaults extends js.Object {
-  var allowedAttributes: StringDictionary[js.Array[String]]
+  var allowedAttributes: StringDictionary[js.Array[AllowedAttribute]]
   var allowedSchemes: js.Array[String]
   var allowedSchemesByTag: StringDictionary[js.Array[String]]
   var allowedTags: js.Array[String]
@@ -16,7 +16,7 @@ trait IDefaults extends js.Object {
 object IDefaults {
   @scala.inline
   def apply(
-    allowedAttributes: StringDictionary[js.Array[String]],
+    allowedAttributes: StringDictionary[js.Array[AllowedAttribute]],
     allowedSchemes: js.Array[String],
     allowedSchemesByTag: StringDictionary[js.Array[String]],
     allowedTags: js.Array[String],

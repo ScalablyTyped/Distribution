@@ -9,7 +9,6 @@ package object clientsMediaconvertMod {
   import typings.awsDashSdk.awsDashSdkStrings.CODING_MODE_9_1_6
   import typings.awsDashSdk.awsDashSdkStrings.COMPLETE_MAIN
   import typings.awsDashSdk.awsDashSdkStrings.ONE_YEAR
-  import typings.awsDashSdk.awsDashSdkStrings.SAMPLE_AES
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -112,6 +111,18 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type AfdSignaling = _AfdSignaling | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.UPCONVERT
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type AncillaryConvert608To708 = _AncillaryConvert608To708 | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.END_OF_INPUT
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type AncillaryTerminateCaptions = _AncillaryTerminateCaptions | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
@@ -239,6 +250,7 @@ package object clientsMediaconvertMod {
     - typings.awsDashSdk.awsDashSdkStrings.DVB_SUB
     - typings.awsDashSdk.awsDashSdkStrings.EMBEDDED
     - typings.awsDashSdk.awsDashSdkStrings.EMBEDDED_PLUS_SCTE20
+    - typings.awsDashSdk.awsDashSdkStrings.IMSC
     - typings.awsDashSdk.awsDashSdkStrings.SCTE20_PLUS_EMBEDDED
     - typings.awsDashSdk.awsDashSdkStrings.SCC
     - typings.awsDashSdk.awsDashSdkStrings.SRT
@@ -278,7 +290,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type CmafCodecSpecification = _CmafCodecSpecification | String
-  type CmafEncryptionType = SAMPLE_AES | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SAMPLE_AES
+    - typings.awsDashSdk.awsDashSdkStrings.AES_CTR
+    - java.lang.String
+  */
+  type CmafEncryptionType = _CmafEncryptionType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.INCLUDE
     - typings.awsDashSdk.awsDashSdkStrings.EXCLUDE
@@ -640,6 +657,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type EmbeddedConvert608To708 = _EmbeddedConvert608To708 | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.END_OF_INPUT
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type EmbeddedTerminateCaptions = _EmbeddedTerminateCaptions | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PROGRESSIVE_DOWNLOAD
     - typings.awsDashSdk.awsDashSdkStrings.NORMAL
@@ -1119,6 +1142,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type HlsTimedMetadataId3Frame = _HlsTimedMetadataId3Frame | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type ImscStylePassthrough = _ImscStylePassthrough | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
@@ -1947,7 +1976,6 @@ package object clientsMediaconvertMod {
   type __integerMin1Max100 = Double
   type __integerMin1Max10000000 = Double
   type __integerMin1Max1001 = Double
-  type __integerMin1Max16 = Double
   type __integerMin1Max17895697 = Double
   type __integerMin1Max2 = Double
   type __integerMin1Max20 = Double
@@ -1957,14 +1985,13 @@ package object clientsMediaconvertMod {
   type __integerMin1Max32 = Double
   type __integerMin1Max4 = Double
   type __integerMin1Max6 = Double
-  type __integerMin1Max8 = Double
+  type __integerMin1Max64 = Double
   type __integerMin24Max60000 = Double
   type __integerMin25Max10000 = Double
   type __integerMin25Max2000 = Double
   type __integerMin2Max2147483647 = Double
   type __integerMin32000Max384000 = Double
   type __integerMin32000Max48000 = Double
-  type __integerMin32Max2160 = Double
   type __integerMin32Max4096 = Double
   type __integerMin32Max8182 = Double
   type __integerMin384000Max768000 = Double
@@ -2023,7 +2050,7 @@ package object clientsMediaconvertMod {
   type __stringMin14Max1285PatternS3Mov09Png = String
   type __stringMin14PatternS3BmpBMPPngPNG = String
   type __stringMin14PatternS3BmpBMPPngPNGTgaTGA = String
-  type __stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTSmiSMI = String
+  type __stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = String
   type __stringMin16Max24PatternAZaZ0922AZaZ0916 = String
   type __stringMin1Max256 = String
   type __stringMin24Max512PatternAZaZ0902 = String

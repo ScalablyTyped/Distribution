@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a single pivot field within a PivotHierarchy.
+  * Represents the Excel PivotField.
   *
   * [Api set: ExcelApi 1.8]
   */
@@ -33,7 +33,7 @@ class PivotField () extends ClientObject {
   val id: String = js.native
   /**
     *
-    * Returns the PivotItems that comprise with the PivotField.
+    * Returns the PivotFields associated with the PivotField.
     *
     * [Api set: ExcelApi 1.8]
     */

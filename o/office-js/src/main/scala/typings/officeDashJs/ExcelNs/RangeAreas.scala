@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
-  * To learn how to use discontinguous ranges, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges | Work with multiple ranges simultaneously in Excel add-ins}.
+  To learn how to use discontinguous ranges, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges | Work with multiple ranges simultaneously in Excel add-ins}.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -188,11 +188,11 @@ class RangeAreas () extends ClientObject {
   /**
     *
     * Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas.
-    The destination rangeAreas can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
+    The destination rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must be in the outline form which can be created by removing full rows or columns from a rectangular range.
+    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must able to be created by removing full rows or columns from a rectangular range.
     * @param copyType The type of cell data or formatting to copy over. Default is "All".
     * @param skipBlanks True if to skip blank cells in the source range or RangeAreas. Default is false.
     * @param transpose True if to transpose the cells in the destination RangeAreas. Default is false.

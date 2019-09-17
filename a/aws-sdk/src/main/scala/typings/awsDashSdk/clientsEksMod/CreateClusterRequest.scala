@@ -26,6 +26,10 @@ trait CreateClusterRequest extends js.Object {
     */
   var roleArn: String
   /**
+    * The metadata to apply to the cluster to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define.
+    */
+  var tags: js.UndefOr[TagMap] = js.undefined
+  /**
     * The desired Kubernetes version for your cluster. If you don't specify a value here, the latest version available in Amazon EKS is used.
     */
   var version: js.UndefOr[String] = js.undefined
@@ -39,11 +43,13 @@ object CreateClusterRequest {
     roleArn: String,
     clientRequestToken: String = null,
     logging: Logging = null,
+    tags: TagMap = null,
     version: String = null
   ): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(name = name, resourcesVpcConfig = resourcesVpcConfig, roleArn = roleArn)
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
     if (logging != null) __obj.updateDynamic("logging")(logging)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[CreateClusterRequest]
   }

@@ -6,6 +6,7 @@ import typings.filesize.filesizeStrings.exponent
 import typings.filesize.filesizeStrings.iec
 import typings.filesize.filesizeStrings.jedec
 import typings.filesize.filesizeStrings.string
+import typings.std.IntlNs.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,6 +36,10 @@ trait Options extends js.Object {
     * BCP 47 language tag to specify a locale, or true to use default locale, default is ""
     */
   var locale: js.UndefOr[String | Boolean] = js.undefined
+  /**
+    * ECMA-402 number format option overrides, default is "{}"
+    */
+  var localeOptions: js.UndefOr[NumberFormatOptions] = js.undefined
   /**
     * Output of function (array, exponent, object, or string), default is string
     */
@@ -74,6 +79,7 @@ object Options {
     fullform: js.UndefOr[Boolean] = js.undefined,
     fullforms: js.Array[String] = null,
     locale: String | Boolean = null,
+    localeOptions: NumberFormatOptions = null,
     output: array | exponent | `object` | string = null,
     round: Int | Double = null,
     separator: String = null,
@@ -89,6 +95,7 @@ object Options {
     if (!js.isUndefined(fullform)) __obj.updateDynamic("fullform")(fullform)
     if (fullforms != null) __obj.updateDynamic("fullforms")(fullforms)
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (localeOptions != null) __obj.updateDynamic("localeOptions")(localeOptions)
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@redux-saga/symbols" : "1.0.1"
+      "@redux-saga/symbols" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@redux-saga/symbols" : "1.0.1"
+      "@redux-saga/symbols" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -55,8 +55,8 @@ trait SequenceBaser[T] extends js.Object {
   def sortBy(sortFn: NumberCallback[T]): Sequence[T] = js.native
   def sortBy(sortFn: NumberCallback[T], descending: Boolean): Sequence[T] = js.native
   def sortedIndex(value: T): Double = js.native
-  def sum(): T = js.native
-  def sum(valueFn: NumberCallback[T]): T = js.native
+  def sum(): Double = js.native
+  def sum(valueFn: NumberCallback[T]): Double = js.native
   def takeWhile(predicateFn: TestCallback[T, String | Double]): Sequence[T] = js.native
   def toArray(): js.Array[T] = js.native
   def toObject(): js.Any = js.native

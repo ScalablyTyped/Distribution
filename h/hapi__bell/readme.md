@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__bell
 
-Typings are for version 10.1
+Typings are for version 11.0
 
 ## Library description:
 Third-party login plugin for hapi

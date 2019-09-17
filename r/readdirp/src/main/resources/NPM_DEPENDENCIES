@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "readdirp" : "3.1.1"
+      "readdirp" : "3.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "readdirp" : "3.1.1"
+      "readdirp" : "3.1.2"
     }
   ],
   "compile-devDependencies" : [

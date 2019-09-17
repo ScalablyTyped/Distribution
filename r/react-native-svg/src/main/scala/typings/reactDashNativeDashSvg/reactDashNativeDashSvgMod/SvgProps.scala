@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNative.ViewProperties * / any */ trait SvgProps extends GProps {
-  var color: js.UndefOr[int32ARGBColor | rgbaArray | String] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   var height: js.UndefOr[NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -28,12 +28,12 @@ object SvgProps {
   def apply(
     clipPath: String = null,
     clipRule: FillRule = null,
-    color: int32ARGBColor | rgbaArray | String = null,
+    color: Color = null,
     delayLongPress: Int | Double = null,
     delayPressIn: Int | Double = null,
     delayPressOut: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    fill: int32ARGBColor | rgbaArray | String = null,
+    fill: Color = null,
     fillOpacity: NumberProp = null,
     fillRule: FillRule = null,
     height: NumberProp = null,
@@ -68,7 +68,7 @@ object SvgProps {
     skew: NumberArray = null,
     skewX: NumberProp = null,
     skewY: NumberProp = null,
-    stroke: int32ARGBColor | rgbaArray | String = null,
+    stroke: Color = null,
     strokeDasharray: js.Array[NumberProp] | NumberProp = null,
     strokeDashoffset: NumberProp = null,
     strokeLinecap: Linecap = null,

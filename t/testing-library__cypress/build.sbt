@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__cypress"
-version := "4.2-dt-20190830Z-03b5a7"
+version := "5.0-dt-20190916Z-b167f0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -58,7 +58,8 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-  * To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API} and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+  To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+  and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
   *
   * [Api set: ExcelApi 1.1]
   */
@@ -200,9 +201,11 @@ class Range () extends ClientObject {
   var numberFormat: js.Array[js.Array[_]] = js.native
   /**
     *
-    * Represents Excel's number format code for the given range, based on the language settings of the user.
-    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+    * Represents Excel's number format code for the given range, based on the language settings of the user.​
+    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+    If the argument is a single value, it will be applied to all cells in the range.​
+    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+    Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -281,13 +284,13 @@ class Range () extends ClientObject {
   def autoFill(destinationRange: String, autoFillType: AutoFillType): Unit = js.native
   /**
     *
-    * Fills range from the current range to the destination range using the specified AutoFill logic. The destination range must extend the source either horizontally or vertically.
-    * 
-    * For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+    * Fills range from the current range to the destination range.
+    The destination range must extend the source either horizontally or vertically.
+    For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param destinationRange The destination range to fill. Discontiguous ranges are not supported.
+    * @param destinationRange The destination range to autofill. Discontiguous ranges are not supported.
     * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
     */
   def autoFill(destinationRange: Range): Unit = js.native
@@ -347,11 +350,11 @@ class Range () extends ClientObject {
   /**
     *
     * Copies cell data or formatting from the source range or RangeAreas to the current range.
-    The destination range can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
+    The destination range can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the outline form which can be created by removing full rows or columns from a rectangular range.
+    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must be able to be created by removing full rows or columns from a rectangular range.
     * @param copyType The type of cell data or formatting to copy over. Default is "All".
     * @param skipBlanks True if to skip blank cells in the source range. Default is false.
     * @param transpose True if to transpose the cells in the destination range. Default is false.

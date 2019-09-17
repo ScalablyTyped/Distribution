@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod
 
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Color
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ColumnMajorTransformMatrix
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.CommonPathProps
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FillRule
@@ -9,8 +10,6 @@ import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Linejoin
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.NumberArray
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.NumberProp
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TransformObject
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.int32ARGBColor
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.rgbaArray
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-none`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-only`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`non-scaling-stroke`
@@ -41,7 +40,7 @@ object AnimatedPathProps {
     delayPressIn: Int | Double = null,
     delayPressOut: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    fill: int32ARGBColor | rgbaArray | String = null,
+    fill: Color = null,
     fillOpacity: NumberProp = null,
     fillRule: FillRule = null,
     id: String = null,
@@ -74,7 +73,7 @@ object AnimatedPathProps {
     skew: NumberArray = null,
     skewX: NumberProp = null,
     skewY: NumberProp = null,
-    stroke: int32ARGBColor | rgbaArray | String = null,
+    stroke: Color = null,
     strokeDasharray: js.Array[NumberProp] | NumberProp = null,
     strokeDashoffset: NumberProp = null,
     strokeLinecap: Linecap = null,

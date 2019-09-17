@@ -38,6 +38,7 @@ trait DataBarConditionalFormatLoadOptions extends js.Object {
   /**
     *
     * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+    The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -66,6 +67,7 @@ trait DataBarConditionalFormatLoadOptions extends js.Object {
   /**
     *
     * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+    The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
     *
     * [Api set: ExcelApi 1.6]
     */

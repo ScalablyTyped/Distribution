@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashNavigation
 
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.FontWeight
 import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.LayoutOrientation
 import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.SystemItemIcon
 import scala.scalajs.js
@@ -35,7 +36,10 @@ object reactDashNativeDashNavigationStrings {
   sealed trait bezel extends js.Object
   
   @js.native
-  sealed trait black extends js.Object
+  sealed trait black extends FontWeight
+  
+  @js.native
+  sealed trait bold extends FontWeight
   
   @js.native
   sealed trait bookmarks extends SystemItemIcon
@@ -89,6 +93,9 @@ object reactDashNativeDashNavigationStrings {
   sealed trait flexibleSpace extends SystemItemIcon
   
   @js.native
+  sealed trait heavy extends FontWeight
+  
+  @js.native
   sealed trait hidden extends js.Object
   
   @js.native
@@ -104,10 +111,13 @@ object reactDashNativeDashNavigationStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light extends FontWeight
   
   @js.native
   sealed trait ltr extends js.Object
+  
+  @js.native
+  sealed trait medium extends FontWeight
   
   @js.native
   sealed trait never extends js.Object
@@ -137,6 +147,9 @@ object reactDashNativeDashNavigationStrings {
   sealed trait refresh extends SystemItemIcon
   
   @js.native
+  sealed trait regular extends FontWeight
+  
+  @js.native
   sealed trait reply extends SystemItemIcon
   
   @js.native
@@ -158,6 +171,9 @@ object reactDashNativeDashNavigationStrings {
   sealed trait selected extends js.Object
   
   @js.native
+  sealed trait semibold extends FontWeight
+  
+  @js.native
   sealed trait sharedElement extends js.Object
   
   @js.native
@@ -165,6 +181,9 @@ object reactDashNativeDashNavigationStrings {
   
   @js.native
   sealed trait stop extends SystemItemIcon
+  
+  @js.native
+  sealed trait thin extends FontWeight
   
   @js.native
   sealed trait together extends js.Object
@@ -177,6 +196,9 @@ object reactDashNativeDashNavigationStrings {
   
   @js.native
   sealed trait trash extends SystemItemIcon
+  
+  @js.native
+  sealed trait ultraLight extends FontWeight
   
   @js.native
   sealed trait undo extends SystemItemIcon
@@ -207,6 +229,8 @@ object reactDashNativeDashNavigationStrings {
   def bezel: bezel = "bezel".asInstanceOf[bezel]
   @scala.inline
   def black: black = "black".asInstanceOf[black]
+  @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
   @scala.inline
@@ -242,6 +266,8 @@ object reactDashNativeDashNavigationStrings {
   @scala.inline
   def flexibleSpace: flexibleSpace = "flexibleSpace".asInstanceOf[flexibleSpace]
   @scala.inline
+  def heavy: heavy = "heavy".asInstanceOf[heavy]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
   def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
@@ -255,6 +281,8 @@ object reactDashNativeDashNavigationStrings {
   def light: light = "light".asInstanceOf[light]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
@@ -274,6 +302,8 @@ object reactDashNativeDashNavigationStrings {
   @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
   @scala.inline
+  def regular: regular = "regular".asInstanceOf[regular]
+  @scala.inline
   def reply: reply = "reply".asInstanceOf[reply]
   @scala.inline
   def rewind: rewind = "rewind".asInstanceOf[rewind]
@@ -288,11 +318,15 @@ object reactDashNativeDashNavigationStrings {
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
+  def semibold: semibold = "semibold".asInstanceOf[semibold]
+  @scala.inline
   def sharedElement: sharedElement = "sharedElement".asInstanceOf[sharedElement]
   @scala.inline
   def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def thin: thin = "thin".asInstanceOf[thin]
   @scala.inline
   def together: together = "together".asInstanceOf[together]
   @scala.inline
@@ -301,6 +335,8 @@ object reactDashNativeDashNavigationStrings {
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   @scala.inline
   def trash: trash = "trash".asInstanceOf[trash]
+  @scala.inline
+  def ultraLight: ultraLight = "ultraLight".asInstanceOf[ultraLight]
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   @scala.inline

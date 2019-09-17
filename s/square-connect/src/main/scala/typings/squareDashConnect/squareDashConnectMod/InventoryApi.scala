@@ -12,13 +12,13 @@ class InventoryApi () extends js.Object {
     * On success: returns the current calculated counts for all objects referenced in the request.
     * On failure: returns a list of related errors.
     */
-  def batchChangeInventory(params: BatchChangeInventoryRequest): js.Promise[BatchChangeInventoryResponse] = js.native
+  def batchChangeInventory(args: js.Any*): js.Promise[BatchChangeInventoryResponse] = js.native
   /**
     * Returns historical physical counts and adjustments based on the provided filter criteria.
     * Results are paginated and sorted in ascending order according their `occurred_at` timestamp (oldest first).
     * BatchRetrieveInventoryChanges is a catch-all query endpoint for queries that cannot be handled by other, simpler endpoints.
     */
-  def batchRetrieveInventoryChanges(params: BatchRetrieveInventoryChangesRequest): js.Promise[BatchRetrieveInventoryChangesResponse] = js.native
+  def batchRetrieveInventoryChanges(args: js.Any*): js.Promise[BatchRetrieveInventoryChangesResponse] = js.native
   /**
     * Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.
     * Results are paginated and sorted in descending order according to their `calculated_at` timestamp (newest first).
@@ -26,7 +26,7 @@ class InventoryApi () extends js.Object {
     * the most recent change) are returned. This allows clients to perform a "sync" operation, for example in response to
     * receiving a Webhook notification.
     */
-  def batchRetrieveInventoryCounts(params: BatchRetrieveInventoryCountsRequest): js.Promise[BatchRetrieveInventoryCountsResponse] = js.native
+  def batchRetrieveInventoryCounts(args: js.Any*): js.Promise[BatchRetrieveInventoryCountsResponse] = js.native
   /**
     * Returns the [InventoryAdjustment](#type-inventoryadjustment) object with the provided `adjustment_id`.
     */

@@ -277,6 +277,7 @@
 | 977 | [koa-static](./k/koa-static) | Static file serving middleware for koa
 | 969 | [passport-local](./p/passport-local) | Local username and password authentication strateg
 | 964 | [ts-node](./t/ts-node) | TypeScript execution environment and REPL for node
+| 957 | [validate-npm-package-name](./v/validate-npm-package-name) | Give me a string and I'll tell you if it's a valid
 | 956 | [bn_dot_js](./b/bn_dot_js) | Big number implementation in pure javascript
 | 955 | [unique-random-array](./u/unique-random-array) | Get consecutively unique elements from an array
 | 953 | [acorn](./a/acorn) | ECMAScript parser
@@ -2766,6 +2767,7 @@
 | 38 | [react-native-fetch-blob](./r/react-native-fetch-blob) | A module provides upload, download, and files acce
 | 38 | [react-rnd](./r/react-rnd) | -
 | 38 | [react-sidebar](./r/react-sidebar) | A sidebar component for React.
+| 38 | [react-with-styles](./r/react-with-styles) | -
 | 38 | [redux-api-middleware](./r/redux-api-middleware) | Redux middleware for calling an API.
 | 38 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools.
 | 38 | [rmfr](./r/rmfr) | Node.js implementation of rm -fr – recursive remov
@@ -3152,6 +3154,7 @@
 | 27 | [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells
 | 27 | [kramed](./k/kramed) | A markdown (kramdown compatible) parser and compil
 | 27 | [latinize](./l/latinize) | Simple library to convert accents (diacritics) fro
+| 27 | [lazy-property](./l/lazy-property) | Lazily initialized properties for objects
 | 27 | [lodash_dot_differenceby](./l/lodash_dot_differenceby) | The lodash method _.differenceBy exported as a mod
 | 27 | [lodash_dot_invert](./l/lodash_dot_invert) | The lodash method _.invert exported as a module.
 | 27 | [lodash_dot_uniqwith](./l/lodash_dot_uniqwith) | The lodash method _.uniqWith exported as a module.
@@ -4969,6 +4972,7 @@
 | 5 | [lambda-log](./l/lambda-log) | Basic logging mechanism for Node 6.10+ Lambda Func
 | 5 | [langmap](./l/langmap) | List of all the known languages in their English a
 | 5 | [leaflet-polylinedecorator](./l/leaflet-polylinedecorator) | -
+| 5 | [librato-node](./l/librato-node) | A node.js client for Librato Metrics (http://metri
 | 5 | [lime-js](./l/lime-js) | JavaScript LIME implementation
 | 5 | [lodash_dot_bindkey](./l/lodash_dot_bindkey) | The lodash method _.bindKey exported as a module.
 | 5 | [lodash_dot_dropwhile](./l/lodash_dot_dropwhile) | The lodash method _.dropWhile exported as a module

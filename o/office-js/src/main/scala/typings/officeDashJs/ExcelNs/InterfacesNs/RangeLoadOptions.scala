@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
+  To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+  and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
   *
   * [Api set: ExcelApi 1.1]
   */
@@ -138,9 +140,11 @@ trait RangeLoadOptions extends js.Object {
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents Excel's number format code for the given range, based on the language settings of the user.
-    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+    * Represents Excel's number format code for the given range, based on the language settings of the user.​
+    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+    If the argument is a single value, it will be applied to all cells in the range.​
+    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+    Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
     * [Api set: ExcelApi 1.7]
     */

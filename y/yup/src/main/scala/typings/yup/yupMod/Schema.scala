@@ -22,9 +22,9 @@ trait Schema[T] extends js.Object {
   def meta(): js.Any = js.native
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage[Anon_Values[T], _]): this.type = js.native
+  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage[Anon_Values, _]): this.type = js.native
   def oneOf(arrayOfValues: js.Array[T | Ref | Null]): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[T | Ref | Null], message: TestOptionsMessage[Anon_Values[T], _]): this.type = js.native
+  def oneOf(arrayOfValues: js.Array[T | Ref | Null], message: TestOptionsMessage[Anon_Values, _]): this.type = js.native
   def strict(isStrict: Boolean): this.type = js.native
   def strip(strip: Boolean): this.type = js.native
   def test(

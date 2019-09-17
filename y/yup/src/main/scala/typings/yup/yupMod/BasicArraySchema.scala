@@ -1,7 +1,7 @@
 package typings.yup.yupMod
 
-import typings.yup.Anon_MaxNumber
-import typings.yup.Anon_MinNumber
+import typings.yup.Anon_Max
+import typings.yup.Anon_Min
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +19,12 @@ trait BasicArraySchema[T /* <: js.UndefOr[js.Array[_] | Null] */] extends Schema
   ): this.type = js.native
   def ensure(): this.type = js.native
   def max(limit: Double): this.type = js.native
-  def max(limit: Double, message: TestOptionsMessage[Anon_MaxNumber, _]): this.type = js.native
+  def max(limit: Double, message: TestOptionsMessage[Anon_Max, _]): this.type = js.native
   def max(limit: Ref): this.type = js.native
-  def max(limit: Ref, message: TestOptionsMessage[Anon_MaxNumber, _]): this.type = js.native
+  def max(limit: Ref, message: TestOptionsMessage[Anon_Max, _]): this.type = js.native
   def min(limit: Double): this.type = js.native
-  def min(limit: Double, message: TestOptionsMessage[Anon_MinNumber, _]): this.type = js.native
+  def min(limit: Double, message: TestOptionsMessage[Anon_Min, _]): this.type = js.native
   def min(limit: Ref): this.type = js.native
-  def min(limit: Ref, message: TestOptionsMessage[Anon_MinNumber, _]): this.type = js.native
+  def min(limit: Ref, message: TestOptionsMessage[Anon_Min, _]): this.type = js.native
 }
 

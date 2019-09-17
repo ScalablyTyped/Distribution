@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait IOptions extends js.Object {
   var allowIframeRelativeUrls: js.UndefOr[Boolean] = js.undefined
   var allowProtocolRelative: js.UndefOr[Boolean] = js.undefined
-  var allowedAttributes: js.UndefOr[StringDictionary[js.Array[String]] | Boolean] = js.undefined
+  var allowedAttributes: js.UndefOr[StringDictionary[js.Array[AllowedAttribute]] | Boolean] = js.undefined
   var allowedClasses: js.UndefOr[StringDictionary[js.Array[String]] | Boolean] = js.undefined
   var allowedIframeHostnames: js.UndefOr[js.Array[String]] = js.undefined
   var allowedSchemes: js.UndefOr[js.Array[String] | Boolean] = js.undefined
@@ -31,7 +31,7 @@ object IOptions {
   def apply(
     allowIframeRelativeUrls: js.UndefOr[Boolean] = js.undefined,
     allowProtocolRelative: js.UndefOr[Boolean] = js.undefined,
-    allowedAttributes: StringDictionary[js.Array[String]] | Boolean = null,
+    allowedAttributes: StringDictionary[js.Array[AllowedAttribute]] | Boolean = null,
     allowedClasses: StringDictionary[js.Array[String]] | Boolean = null,
     allowedIframeHostnames: js.Array[String] = null,
     allowedSchemes: js.Array[String] | Boolean = null,

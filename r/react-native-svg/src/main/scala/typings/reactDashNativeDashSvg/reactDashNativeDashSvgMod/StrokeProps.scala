@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StrokeProps extends js.Object {
-  var stroke: js.UndefOr[int32ARGBColor | rgbaArray | String] = js.undefined
+  var stroke: js.UndefOr[Color] = js.undefined
   var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
   var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
   var strokeLinecap: js.UndefOr[Linecap] = js.undefined
@@ -18,7 +18,7 @@ trait StrokeProps extends js.Object {
 object StrokeProps {
   @scala.inline
   def apply(
-    stroke: int32ARGBColor | rgbaArray | String = null,
+    stroke: Color = null,
     strokeDasharray: js.Array[NumberProp] | NumberProp = null,
     strokeDashoffset: NumberProp = null,
     strokeLinecap: Linecap = null,

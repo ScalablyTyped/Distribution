@@ -54,6 +54,10 @@ trait Cluster extends js.Object {
     */
   var status: js.UndefOr[ClusterStatus] = js.undefined
   /**
+    * The metadata that you apply to the cluster to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define.
+    */
+  var tags: js.UndefOr[TagMap] = js.undefined
+  /**
     * The Kubernetes server version for the cluster.
     */
   var version: js.UndefOr[String] = js.undefined
@@ -74,6 +78,7 @@ object Cluster {
     resourcesVpcConfig: VpcConfigResponse = null,
     roleArn: String = null,
     status: ClusterStatus = null,
+    tags: TagMap = null,
     version: String = null
   ): Cluster = {
     val __obj = js.Dynamic.literal()
@@ -89,6 +94,7 @@ object Cluster {
     if (resourcesVpcConfig != null) __obj.updateDynamic("resourcesVpcConfig")(resourcesVpcConfig)
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[Cluster]
   }

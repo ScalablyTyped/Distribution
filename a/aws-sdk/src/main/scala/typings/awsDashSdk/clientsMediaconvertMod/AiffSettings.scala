@@ -10,9 +10,9 @@ trait AiffSettings extends js.Object {
     */
   var BitDepth: js.UndefOr[__integerMin16Max24] = js.undefined
   /**
-    * Set Channels to specify the number of channels in this output audio track. Choosing Mono in the console will give you 1 output channel; choosing Stereo will give you 2. In the API, valid values are 1 and 2.
+    * Specify the number of channels in this output audio track. Valid values are 1 and even numbers up to 64. For example, 1, 2, 4, 6, and so on, up to 64.
     */
-  var Channels: js.UndefOr[__integerMin1Max2] = js.undefined
+  var Channels: js.UndefOr[__integerMin1Max64] = js.undefined
   /**
     * Sample rate in hz.
     */
@@ -23,7 +23,7 @@ object AiffSettings {
   @scala.inline
   def apply(
     BitDepth: js.UndefOr[__integerMin16Max24] = js.undefined,
-    Channels: js.UndefOr[__integerMin1Max2] = js.undefined,
+    Channels: js.UndefOr[__integerMin1Max64] = js.undefined,
     SampleRate: js.UndefOr[__integerMin8000Max192000] = js.undefined
   ): AiffSettings = {
     val __obj = js.Dynamic.literal()

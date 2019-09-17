@@ -1,5 +1,6 @@
 package typings.atHapiBell
 
+import typings.atHapiBell.atHapiBellMod.PkceSetting
 import typings.atHapiBell.atHapiBellMod.Provider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,19 +14,25 @@ object atHapiBellStrings {
   sealed trait `RSA-SHA1` extends js.Object
   
   @js.native
+  sealed trait S256 extends PkceSetting
+  
+  @js.native
   sealed trait arcgisonline extends Provider
   
   @js.native
   sealed trait auth0 extends Provider
   
   @js.native
-  sealed trait azuread extends Provider
+  sealed trait azure extends Provider
   
   @js.native
   sealed trait bell extends js.Object
   
   @js.native
   sealed trait bitbucket extends Provider
+  
+  @js.native
+  sealed trait cognito extends Provider
   
   @js.native
   sealed trait custom extends js.Object
@@ -38,9 +45,6 @@ object atHapiBellStrings {
   
   @js.native
   sealed trait dropbox extends Provider
-  
-  @js.native
-  sealed trait dropboxV2 extends Provider
   
   @js.native
   sealed trait facebook extends Provider
@@ -91,13 +95,7 @@ object atHapiBellStrings {
   sealed trait oauth2 extends js.Object
   
   @js.native
-  sealed trait office365 extends Provider
-  
-  @js.native
   sealed trait okta extends Provider
-  
-  @js.native
-  sealed trait optional extends js.Object
   
   @js.native
   sealed trait phabricator extends Provider
@@ -109,10 +107,10 @@ object atHapiBellStrings {
   sealed trait pinterest extends Provider
   
   @js.native
-  sealed trait reddit extends Provider
+  sealed trait plain extends PkceSetting
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait reddit extends Provider
   
   @js.native
   sealed trait salesforce extends Provider
@@ -128,9 +126,6 @@ object atHapiBellStrings {
   
   @js.native
   sealed trait trakt extends Provider
-  
-  @js.native
-  sealed trait `try` extends js.Object
   
   @js.native
   sealed trait tumblr extends Provider
@@ -155,15 +150,19 @@ object atHapiBellStrings {
   @scala.inline
   def `RSA-SHA1`: `RSA-SHA1` = "RSA-SHA1".asInstanceOf[`RSA-SHA1`]
   @scala.inline
+  def S256: S256 = "S256".asInstanceOf[S256]
+  @scala.inline
   def arcgisonline: arcgisonline = "arcgisonline".asInstanceOf[arcgisonline]
   @scala.inline
   def auth0: auth0 = "auth0".asInstanceOf[auth0]
   @scala.inline
-  def azuread: azuread = "azuread".asInstanceOf[azuread]
+  def azure: azure = "azure".asInstanceOf[azure]
   @scala.inline
   def bell: bell = "bell".asInstanceOf[bell]
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
+  @scala.inline
+  def cognito: cognito = "cognito".asInstanceOf[cognito]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
@@ -172,8 +171,6 @@ object atHapiBellStrings {
   def discord: discord = "discord".asInstanceOf[discord]
   @scala.inline
   def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
-  @scala.inline
-  def dropboxV2: dropboxV2 = "dropboxV2".asInstanceOf[dropboxV2]
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   @scala.inline
@@ -207,11 +204,7 @@ object atHapiBellStrings {
   @scala.inline
   def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
   @scala.inline
-  def office365: office365 = "office365".asInstanceOf[office365]
-  @scala.inline
   def okta: okta = "okta".asInstanceOf[okta]
-  @scala.inline
-  def optional: optional = "optional".asInstanceOf[optional]
   @scala.inline
   def phabricator: phabricator = "phabricator".asInstanceOf[phabricator]
   @scala.inline
@@ -219,9 +212,9 @@ object atHapiBellStrings {
   @scala.inline
   def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   @scala.inline
-  def reddit: reddit = "reddit".asInstanceOf[reddit]
+  def plain: plain = "plain".asInstanceOf[plain]
   @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  def reddit: reddit = "reddit".asInstanceOf[reddit]
   @scala.inline
   def salesforce: salesforce = "salesforce".asInstanceOf[salesforce]
   @scala.inline
@@ -232,8 +225,6 @@ object atHapiBellStrings {
   def stripe: stripe = "stripe".asInstanceOf[stripe]
   @scala.inline
   def trakt: trakt = "trakt".asInstanceOf[trakt]
-  @scala.inline
-  def `try`: `try` = "try".asInstanceOf[`try`]
   @scala.inline
   def tumblr: tumblr = "tumblr".asInstanceOf[tumblr]
   @scala.inline

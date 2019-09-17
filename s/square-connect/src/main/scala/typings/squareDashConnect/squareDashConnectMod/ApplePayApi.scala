@@ -14,6 +14,6 @@ class ApplePayApi () extends js.Object {
     * their platform. To learn more about Apple Pay on Web see the Apple Pay section in
     * the [Embedding the Square Payment Form](/payment-form/add-digital-wallets/apple-pay) guide.
     */
-  def registerDomain(params: RegisterDomainRequest): js.Promise[RegisterDomainResponse] = js.native
+  def registerDomain(args: js.Any*): js.Promise[RegisterDomainResponse] = js.native
 }
 

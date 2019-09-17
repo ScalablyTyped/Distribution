@@ -23,6 +23,11 @@ trait OptionsTopBarSubtitle extends js.Object {
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
+    * Set the font weight, ignore fontFamily and use the iOS system fonts instead
+    * #### (iOS specific)
+    */
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  /**
     * Set subtitle text
     */
   var text: js.UndefOr[String] = js.undefined
@@ -35,6 +40,7 @@ object OptionsTopBarSubtitle {
     color: Color = null,
     fontFamily: FontFamily = null,
     fontSize: Int | Double = null,
+    fontWeight: FontWeight = null,
     text: String = null
   ): OptionsTopBarSubtitle = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +48,7 @@ object OptionsTopBarSubtitle {
     if (color != null) __obj.updateDynamic("color")(color)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[OptionsTopBarSubtitle]
   }

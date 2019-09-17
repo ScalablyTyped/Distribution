@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 package object avaMod {
   import org.scalablytyped.runtime.Instantiable1
   import typings.ava.Anon_Args
+  import typings.std.Error
 
+  type AssertionError = Error
   type CbImplementation[Context] = js.Function1[/* t */ CbExecutionContext[Context], ImplementationResult]
   type CbMacro[Args /* <: js.Array[_] */, Context] = (UntitledCbMacro[Args, Context]) with Anon_Args[Args]
   type Constructor = Instantiable1[/* args (repeated) */ js.Any, js.Any]

@@ -171,6 +171,13 @@ trait IndexSettings extends js.Object {
     */
   var optionalWords: js.UndefOr[js.Array[String]] = js.undefined
   /**
+    * Set the maximum number of hits accessible via pagination.
+    * We set the max number of *hits*, not max number of pages.
+    * Works with the page and hitsByPage settings to establish the full paging logic.
+    * https://www.algolia.com/doc/api-reference/api-parameters/paginationLimitedTo/?language=javascript
+    */
+  var paginationLimitedTo: js.UndefOr[Double] = js.undefined
+  /**
     * This is an advanced use-case to define a token substitutable by a list of words without having the original token searchable
     * default: {}
     */
@@ -292,6 +299,7 @@ object IndexSettings {
     minWordSizefor2Typos: Int | Double = null,
     numericAttributesToIndex: js.Array[String] = null,
     optionalWords: js.Array[String] = null,
+    paginationLimitedTo: Int | Double = null,
     placeholders: StringDictionary[js.Array[String]] = null,
     queryLanguages: js.Array[
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
@@ -339,6 +347,7 @@ object IndexSettings {
     if (minWordSizefor2Typos != null) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.asInstanceOf[js.Any])
     if (numericAttributesToIndex != null) __obj.updateDynamic("numericAttributesToIndex")(numericAttributesToIndex)
     if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords)
+    if (paginationLimitedTo != null) __obj.updateDynamic("paginationLimitedTo")(paginationLimitedTo.asInstanceOf[js.Any])
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
     if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages)
     if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])

@@ -34,6 +34,11 @@ trait OptionsBottomTab extends js.Object {
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
+    * Set the font weight, ignore fontFamily and use the iOS system fonts instead
+    * #### (iOS specific)
+    */
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  /**
     * Set the tab icon
     */
   var icon: js.UndefOr[ImageRequireSource] = js.undefined
@@ -87,6 +92,7 @@ object OptionsBottomTab {
     disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined,
     fontFamily: FontFamily = null,
     fontSize: Int | Double = null,
+    fontWeight: FontWeight = null,
     icon: js.UndefOr[ImageRequireSource] = js.undefined,
     iconColor: Color = null,
     iconInsets: Insets = null,
@@ -105,6 +111,7 @@ object OptionsBottomTab {
     if (!js.isUndefined(disableSelectedIconTint)) __obj.updateDynamic("disableSelectedIconTint")(disableSelectedIconTint)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)

@@ -13,6 +13,7 @@ package object reactDashNativeDashSvgMod {
     - typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.NumberProp
   */
   type BaselineShift = _BaselineShift | js.Array[NumberProp] | NumberProp
+  type Color = int32ARGBColor | rgbaArray | String
   type ColumnMajorTransformMatrix = js.Tuple6[Double, Double, Double, Double, Double, Double]
   /* Rewritten from type alias, can be one of: 
     - typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.NumberProp

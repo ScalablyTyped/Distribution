@@ -39,7 +39,7 @@ trait ChartTrendlineLabelUpdateData extends js.Object {
   /**
     *
     * Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
-    This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
+    This property is valid only when TextOrientation of trendline label is -90, 90, or 180.
     *
     * [Api set: ExcelApi 1.8]
     */

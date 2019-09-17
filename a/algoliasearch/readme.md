@@ -1,7 +1,7 @@
 
 # Scala.js typings for algoliasearch
 
-Typings are for version 3.30.2
+Typings are for version 3.34.0
 
 ## Library description:
 AlgoliaSearch API JavaScript client

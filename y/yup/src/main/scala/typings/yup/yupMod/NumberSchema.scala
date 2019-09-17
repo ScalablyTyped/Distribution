@@ -2,8 +2,8 @@ package typings.yup.yupMod
 
 import typings.std.Exclude
 import typings.yup.Anon_Less
-import typings.yup.Anon_MaxNumber
-import typings.yup.Anon_MinNumber
+import typings.yup.Anon_Max
+import typings.yup.Anon_Min
 import typings.yup.Anon_More
 import typings.yup.yupNumbers.`false`
 import typings.yup.yupNumbers.`true`
@@ -24,13 +24,13 @@ trait NumberSchema[T /* <: js.UndefOr[Double | Null] */] extends Schema[T] {
   def lessThan(limit: Ref): NumberSchema[T] = js.native
   def lessThan(limit: Ref, message: TestOptionsMessage[Anon_Less, _]): NumberSchema[T] = js.native
   def max(limit: Double): NumberSchema[T] = js.native
-  def max(limit: Double, message: TestOptionsMessage[Anon_MaxNumber, _]): NumberSchema[T] = js.native
+  def max(limit: Double, message: TestOptionsMessage[Anon_Max, _]): NumberSchema[T] = js.native
   def max(limit: Ref): NumberSchema[T] = js.native
-  def max(limit: Ref, message: TestOptionsMessage[Anon_MaxNumber, _]): NumberSchema[T] = js.native
+  def max(limit: Ref, message: TestOptionsMessage[Anon_Max, _]): NumberSchema[T] = js.native
   def min(limit: Double): NumberSchema[T] = js.native
-  def min(limit: Double, message: TestOptionsMessage[Anon_MinNumber, _]): NumberSchema[T] = js.native
+  def min(limit: Double, message: TestOptionsMessage[Anon_Min, _]): NumberSchema[T] = js.native
   def min(limit: Ref): NumberSchema[T] = js.native
-  def min(limit: Ref, message: TestOptionsMessage[Anon_MinNumber, _]): NumberSchema[T] = js.native
+  def min(limit: Ref, message: TestOptionsMessage[Anon_Min, _]): NumberSchema[T] = js.native
   def moreThan(limit: Double): NumberSchema[T] = js.native
   def moreThan(limit: Double, message: TestOptionsMessage[Anon_More, _]): NumberSchema[T] = js.native
   def moreThan(limit: Ref): NumberSchema[T] = js.native

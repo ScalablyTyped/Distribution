@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.9.3-a82f29"
+version := "2.9.3-44bb22"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.0-4a2a3e",
   "org.scalablytyped" %%% "apollo-link" % "1.2.12-74f376",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-a17842",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.9.3-568e98",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.9.3-2ace5b",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.3-3c8fde",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.3-496183",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.4-970c0c",
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.24-73113c",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-8ff114",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-090bd5",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-26f1f7",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190916Z-980c44",
   "org.scalablytyped" %%% "cors" % "2.8-dt-20190819Z-8948ae",
   "org.scalablytyped" %%% "eventemitter3" % "4.0.0-ec25ff",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-915bef",
@@ -31,9 +31,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "graphql-extensions" % "0.10.3-7b7946",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-b7220c",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.5-8a5d93",
-  "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190826Z-137d89",
+  "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190826Z-5343e4",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9360b6",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-f7b87a",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-ac5534",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-612693",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-e83d9b",

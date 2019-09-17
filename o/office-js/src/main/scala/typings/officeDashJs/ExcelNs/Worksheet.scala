@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-  * To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+  To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
   *
   * [Api set: ExcelApi 1.1]
   */
@@ -290,7 +290,7 @@ class Worksheet () extends ClientObject {
   def copy_None(positionType: None, relativeTo: Worksheet): Worksheet = js.native
   /**
     *
-    * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
+    * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
     *
     * [Api set: ExcelApi 1.1]
     */

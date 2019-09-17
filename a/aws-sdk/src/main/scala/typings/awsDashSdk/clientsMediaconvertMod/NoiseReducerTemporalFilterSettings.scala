@@ -14,7 +14,7 @@ trait NoiseReducerTemporalFilterSettings extends js.Object {
     */
   var Speed: js.UndefOr[__integerMinNegative1Max3] = js.undefined
   /**
-    * Relative strength of noise reducing filter. Higher values produce stronger filtering. Recommended Range: * [0 .. 2] for complexity reduction with minimal sharpness loss * [2 .. 8] for complexity reduction with image preservation * [8 .. 16] for noise reduction. Reduce noise combined high complexity reduction
+    * Specify the strength of the noise reducing filter on this output. Higher values produce stronger filtering. We recommend the following value ranges, depending on the result that you want: * 0-2 for complexity reduction with minimal sharpness loss * 2-8 for complexity reduction with image preservation * 8-16 for a high level of complexity reduction
     */
   var Strength: js.UndefOr[__integerMin0Max16] = js.undefined
 }

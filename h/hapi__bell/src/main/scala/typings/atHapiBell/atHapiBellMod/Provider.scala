@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.atHapiBell.atHapiBellStrings.arcgisonline
   - typings.atHapiBell.atHapiBellStrings.auth0
-  - typings.atHapiBell.atHapiBellStrings.azuread
+  - typings.atHapiBell.atHapiBellStrings.azure
   - typings.atHapiBell.atHapiBellStrings.bitbucket
+  - typings.atHapiBell.atHapiBellStrings.cognito
   - typings.atHapiBell.atHapiBellStrings.digitalocean
   - typings.atHapiBell.atHapiBellStrings.discord
   - typings.atHapiBell.atHapiBellStrings.dropbox
-  - typings.atHapiBell.atHapiBellStrings.dropboxV2
   - typings.atHapiBell.atHapiBellStrings.facebook
   - typings.atHapiBell.atHapiBellStrings.fitbit
   - typings.atHapiBell.atHapiBellStrings.foursquare
@@ -27,7 +27,6 @@ import scala.scalajs.js.annotation._
   - typings.atHapiBell.atHapiBellStrings.meetup
   - typings.atHapiBell.atHapiBellStrings.mixer
   - typings.atHapiBell.atHapiBellStrings.nest
-  - typings.atHapiBell.atHapiBellStrings.office365
   - typings.atHapiBell.atHapiBellStrings.okta
   - typings.atHapiBell.atHapiBellStrings.phabricator
   - typings.atHapiBell.atHapiBellStrings.pingfed
