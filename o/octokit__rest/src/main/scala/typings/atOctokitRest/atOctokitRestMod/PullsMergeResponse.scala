@@ -1,0 +1,21 @@
+package typings.atOctokitRest.atOctokitRestMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PullsMergeResponse extends js.Object {
+  var merged: Boolean
+  var message: String
+  var sha: String
+}
+
+object PullsMergeResponse {
+  @scala.inline
+  def apply(merged: Boolean, message: String, sha: String): PullsMergeResponse = {
+    val __obj = js.Dynamic.literal(merged = merged, message = message, sha = sha)
+  
+    __obj.asInstanceOf[PullsMergeResponse]
+  }
+}
+

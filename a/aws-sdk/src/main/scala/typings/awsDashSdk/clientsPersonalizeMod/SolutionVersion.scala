@@ -53,6 +53,10 @@ trait SolutionVersion extends js.Object {
     * The status of the solution version. A solution version can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED  
     */
   var status: js.UndefOr[Status] = js.undefined
+  /**
+    * The time used to train the model. 
+    */
+  var trainingHours: js.UndefOr[TrainingHours] = js.undefined
 }
 
 object SolutionVersion {
@@ -69,7 +73,8 @@ object SolutionVersion {
     solutionArn: Arn = null,
     solutionConfig: SolutionConfig = null,
     solutionVersionArn: Arn = null,
-    status: Status = null
+    status: Status = null,
+    trainingHours: js.UndefOr[TrainingHours] = js.undefined
   ): SolutionVersion = {
     val __obj = js.Dynamic.literal()
     if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime)
@@ -84,6 +89,7 @@ object SolutionVersion {
     if (solutionConfig != null) __obj.updateDynamic("solutionConfig")(solutionConfig)
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn)
     if (status != null) __obj.updateDynamic("status")(status)
+    if (!js.isUndefined(trainingHours)) __obj.updateDynamic("trainingHours")(trainingHours)
     __obj.asInstanceOf[SolutionVersion]
   }
 }

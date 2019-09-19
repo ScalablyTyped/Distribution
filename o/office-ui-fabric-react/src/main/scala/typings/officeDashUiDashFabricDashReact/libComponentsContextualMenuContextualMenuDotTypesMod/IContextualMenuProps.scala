@@ -127,6 +127,7 @@ trait IContextualMenuProps
     * to improve rendering performance when it becomes visible.
     * Note: When ContextualMenu is hidden its content will not be rendered. It will only render
     * once the ContextualMenu is visible.
+    * @defaultValue undefined
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**

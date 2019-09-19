@@ -96,7 +96,7 @@ trait UIManagerStatic extends js.Object {
   def showPopupMenu(
     node: Double,
     items: js.Array[String],
-     /* currently unused */ error: js.Function0[Unit],
+    error: js.Function0[Unit],
     success: js.Function2[/* item */ String, /* index */ js.UndefOr[Double], Unit]
   ): Unit = js.native
   /**

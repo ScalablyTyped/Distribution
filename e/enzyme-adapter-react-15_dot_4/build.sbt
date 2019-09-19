@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "enzyme-adapter-react-15_dot_4"
-version := "1.0-dt-20190219Z-3af8c7"
+version := "1.0-dt-20190219Z-f07527"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-3fdb15",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-8bce42",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-7b1268",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

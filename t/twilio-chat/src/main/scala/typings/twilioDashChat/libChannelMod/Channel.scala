@@ -40,6 +40,7 @@ import scala.scalajs.js.annotation._
   * @fires Channel#typingEnded
   * @fires Channel#typingStarted
   * @fires Channel#updated
+  * @fires Channel#removed
   */
 @JSImport("twilio-chat/lib/channel", "Channel")
 @js.native

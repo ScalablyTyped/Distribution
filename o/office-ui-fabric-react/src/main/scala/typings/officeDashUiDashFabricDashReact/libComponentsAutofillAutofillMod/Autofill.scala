@@ -27,11 +27,13 @@ class Autofill protected ()
     */
   var _getDisplayValue: js.Any = js.native
   var _inputElement: js.Any = js.native
+  var _isComposing: js.Any = js.native
   var _notifyInputChange: js.Any = js.native
   var _onChanged: js.Any = js.native
   var _onClick: js.Any = js.native
   var _onCompositionEnd: js.Any = js.native
   var _onCompositionStart: js.Any = js.native
+  var _onCompositionUpdate: js.Any = js.native
   var _onInputChanged: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   /**

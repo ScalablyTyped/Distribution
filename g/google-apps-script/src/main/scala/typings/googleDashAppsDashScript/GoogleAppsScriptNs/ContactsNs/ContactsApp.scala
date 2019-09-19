@@ -18,8 +18,11 @@ trait ContactsApp extends js.Object {
   def createContactGroup(name: String): ContactGroup = js.native
   def deleteContact(contact: Contact): Unit = js.native
   def deleteContactGroup(group: ContactGroup): Unit = js.native
+  /** @deprecated DO NOT USE */
   def findByEmailAddress(email: String): Contact = js.native
+  /** @deprecated DO NOT USE */
   def findContactGroup(name: String): ContactGroup = js.native
+  /** @deprecated DO NOT USE */
   def getAllContacts(): js.Array[Contact] = js.native
   def getContact(emailAddress: String): Contact = js.native
   def getContactById(id: String): Contact = js.native
@@ -31,7 +34,11 @@ trait ContactsApp extends js.Object {
   def getContactsByAddress(query: String, label: String): js.Array[Contact] = js.native
   def getContactsByAddress(query: String, label: Field): js.Array[Contact] = js.native
   def getContactsByCompany(query: String): js.Array[Contact] = js.native
-  def getContactsByCustomField(query: js.Any, label: ExtendedField): js.Array[Contact] = js.native
+  def getContactsByCustomField(query: String, label: ExtendedField): js.Array[Contact] = js.native
+  def getContactsByCustomField(
+    query: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any,
+    label: ExtendedField
+  ): js.Array[Contact] = js.native
   def getContactsByDate(month: Month, day: Integer, label: String): js.Array[Contact] = js.native
   def getContactsByDate(month: Month, day: Integer, label: Field): js.Array[Contact] = js.native
   def getContactsByDate(month: Month, day: Integer, year: Integer, label: String): js.Array[Contact] = js.native

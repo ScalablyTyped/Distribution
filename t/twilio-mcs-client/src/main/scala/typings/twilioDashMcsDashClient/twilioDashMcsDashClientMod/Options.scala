@@ -1,6 +1,6 @@
 package typings.twilioDashMcsDashClient.twilioDashMcsDashClientMod
 
-import typings.twilioDashTransport.twilioDashTransportMod.Transport
+import typings.twilioDashMcsDashClient.libServicesTransportMod.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

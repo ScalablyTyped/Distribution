@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemResponse extends js.Object {
-  def getFeedback(): js.Any
+  def getFeedback(): QuizFeedback
   def getItem(): Item
-  def getResponse(): js.Any
-  def getScore(): js.Any
+  def getResponse(): (js.Array[js.Array[String] | String]) | String
+  def getScore(): Double
   def setFeedback(feedback: js.Any): ItemResponse
   def setScore(score: js.Any): ItemResponse
 }
@@ -16,10 +16,10 @@ trait ItemResponse extends js.Object {
 object ItemResponse {
   @scala.inline
   def apply(
-    getFeedback: () => js.Any,
+    getFeedback: () => QuizFeedback,
     getItem: () => Item,
-    getResponse: () => js.Any,
-    getScore: () => js.Any,
+    getResponse: () => (js.Array[js.Array[String] | String]) | String,
+    getScore: () => Double,
     setFeedback: js.Any => ItemResponse,
     setScore: js.Any => ItemResponse
   ): ItemResponse = {

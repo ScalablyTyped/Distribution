@@ -763,8 +763,8 @@ trait Underscore[T, V] extends js.Object {
     * Wrapped type `string`.
     * @see _.template
     **/
-  def template(): js.Function1[/* repeated */ js.Any, String] = js.native
-  def template(settings: TemplateSettings): js.Function1[/* repeated */ js.Any, String] = js.native
+  def template(): CompiledTemplate = js.native
+  def template(settings: TemplateSettings): CompiledTemplate = js.native
   /**
     * Wrapped type `Function`.
     * @see _.throttle

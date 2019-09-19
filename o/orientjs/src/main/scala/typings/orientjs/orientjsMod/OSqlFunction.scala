@@ -1,0 +1,22 @@
+package typings.orientjs.orientjsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait OSqlFunction extends _OSqlExpression {
+  var abs: AbsSqlFunction
+  var avg: AbsSqlFunction
+  var db: ODB
+  var sequence: SequenceSqlFunction
+}
+
+object OSqlFunction {
+  @scala.inline
+  def apply(abs: AbsSqlFunction, avg: AbsSqlFunction, db: ODB, sequence: SequenceSqlFunction): OSqlFunction = {
+    val __obj = js.Dynamic.literal(abs = abs, avg = avg, db = db, sequence = sequence)
+  
+    __obj.asInstanceOf[OSqlFunction]
+  }
+}
+

@@ -8,7 +8,7 @@ trait InlineDrawing extends js.Object {
   def copy(): InlineDrawing
   def getAltDescription(): String
   def getAltTitle(): String
-  def getAttributes(): js.Object
+  def getAttributes(): js.Any
   def getNextSibling(): Element
   def getParent(): ContainerElement
   def getPreviousSibling(): Element
@@ -18,7 +18,7 @@ trait InlineDrawing extends js.Object {
   def removeFromParent(): InlineDrawing
   def setAltDescription(description: String): InlineDrawing
   def setAltTitle(title: String): InlineDrawing
-  def setAttributes(attributes: js.Object): InlineDrawing
+  def setAttributes(attributes: js.Any): InlineDrawing
 }
 
 object InlineDrawing {
@@ -27,7 +27,7 @@ object InlineDrawing {
     copy: () => InlineDrawing,
     getAltDescription: () => String,
     getAltTitle: () => String,
-    getAttributes: () => js.Object,
+    getAttributes: () => js.Any,
     getNextSibling: () => Element,
     getParent: () => ContainerElement,
     getPreviousSibling: () => Element,
@@ -37,7 +37,7 @@ object InlineDrawing {
     removeFromParent: () => InlineDrawing,
     setAltDescription: String => InlineDrawing,
     setAltTitle: String => InlineDrawing,
-    setAttributes: js.Object => InlineDrawing
+    setAttributes: js.Any => InlineDrawing
   ): InlineDrawing = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAltDescription = js.Any.fromFunction0(getAltDescription), getAltTitle = js.Any.fromFunction0(getAltTitle), getAttributes = js.Any.fromFunction0(getAttributes), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAltDescription = js.Any.fromFunction1(setAltDescription), setAltTitle = js.Any.fromFunction1(setAltTitle), setAttributes = js.Any.fromFunction1(setAttributes))
   

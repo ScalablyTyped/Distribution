@@ -2,7 +2,6 @@ package typings.antd.libButtonButtonMod
 
 import typings.antd.Anon_Args
 import typings.antd.Anon_Block
-import typings.antd.Anon_False
 import typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps
 import typings.react.reactMod.SFC
 import scala.scalajs.js
@@ -23,6 +22,5 @@ object default extends js.Object {
   var __ANT_BUTTON: Boolean = js.native
   var defaultProps: Anon_Block = js.native
   var propTypes: Anon_Args = js.native
-  def getDerivedStateFromProps(nextProps: ButtonProps, prevState: ButtonState): Anon_False | Null = js.native
 }
 

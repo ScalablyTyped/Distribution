@@ -3,6 +3,7 @@ package typings.atOctokitRest
 import typings.atOctokitRest.atOctokitRestMod.Endpoint
 import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentParams
+import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentParamsDeprecatedInReplyTo
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
@@ -17,6 +18,7 @@ trait Anon_EndpointParamsPromisePullsCreateCommentParams extends js.Object {
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def apply(params: PullsCreateCommentParams): js.Promise[Response[PullsCreateCommentResponse]] = js.native
+  def apply(params: PullsCreateCommentParamsDeprecatedInReplyTo): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def apply(params: PullsCreateCommentParamsDeprecatedNumber): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

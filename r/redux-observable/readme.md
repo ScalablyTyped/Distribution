@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-observable
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 RxJS based middleware for Redux. Compose and cancel async actions and more.

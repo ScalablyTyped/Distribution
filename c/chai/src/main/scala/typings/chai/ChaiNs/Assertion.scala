@@ -150,8 +150,10 @@ trait Assertion
   def approximately(expected: Double, delta: Double, message: String): Assertion = js.native
   def arguments(`type`: String): Assertion = js.native
   def arguments(`type`: String, message: String): Assertion = js.native
+  def change(`object`: Object): Assertion = js.native
   def change(`object`: Object, property: String): Assertion = js.native
   def change(`object`: Object, property: String, message: String): Assertion = js.native
+  def changes(`object`: Object): Assertion = js.native
   def changes(`object`: Object, property: String): Assertion = js.native
   def changes(`object`: Object, property: String, message: String): Assertion = js.native
   def closeTo(expected: Double, delta: Double): Assertion = js.native
@@ -160,8 +162,10 @@ trait Assertion
   def contain(value: js.Any, message: String): Assertion = js.native
   def contains(value: js.Any): Assertion = js.native
   def contains(value: js.Any, message: String): Assertion = js.native
+  def decrease(`object`: Object): Assertion = js.native
   def decrease(`object`: Object, property: String): Assertion = js.native
   def decrease(`object`: Object, property: String, message: String): Assertion = js.native
+  def decreases(`object`: Object): Assertion = js.native
   def decreases(`object`: Object, property: String): Assertion = js.native
   def decreases(`object`: Object, property: String, message: String): Assertion = js.native
   def empty(`type`: String): Assertion = js.native
@@ -194,8 +198,10 @@ trait Assertion
   def include(value: js.Any, message: String): Assertion = js.native
   def includes(value: js.Any): Assertion = js.native
   def includes(value: js.Any, message: String): Assertion = js.native
+  def increase(`object`: Object): Assertion = js.native
   def increase(`object`: Object, property: String): Assertion = js.native
   def increase(`object`: Object, property: String, message: String): Assertion = js.native
+  def increases(`object`: Object): Assertion = js.native
   def increases(`object`: Object, property: String): Assertion = js.native
   def increases(`object`: Object, property: String, message: String): Assertion = js.native
   def itself(`type`: String): Assertion = js.native

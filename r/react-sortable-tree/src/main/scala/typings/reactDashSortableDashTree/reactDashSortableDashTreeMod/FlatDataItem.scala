@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 trait FlatDataItem
   extends TreeNode
      with TreePath {
-  var lowerSiblingsCounts: js.Array[Double]
+  var lowerSiblingCounts: js.Array[Double]
   var parentNode: TreeItem
 }
 
 object FlatDataItem {
   @scala.inline
   def apply(
-    lowerSiblingsCounts: js.Array[Double],
+    lowerSiblingCounts: js.Array[Double],
     node: TreeItem,
     parentNode: TreeItem,
     path: NumberOrStringArray
   ): FlatDataItem = {
-    val __obj = js.Dynamic.literal(lowerSiblingsCounts = lowerSiblingsCounts, node = node, parentNode = parentNode, path = path)
+    val __obj = js.Dynamic.literal(lowerSiblingCounts = lowerSiblingCounts, node = node, parentNode = parentNode, path = path)
   
     __obj.asInstanceOf[FlatDataItem]
   }

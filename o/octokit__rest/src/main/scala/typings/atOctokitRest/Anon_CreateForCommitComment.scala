@@ -1,5 +1,6 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.ReactionsCreateForCommitCommentParams
 import typings.atOctokitRest.atOctokitRestMod.ReactionsCreateForCommitCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReactionsCreateForIssueCommentParams
@@ -14,7 +15,6 @@ import typings.atOctokitRest.atOctokitRestMod.ReactionsCreateForTeamDiscussionCo
 import typings.atOctokitRest.atOctokitRestMod.ReactionsCreateForTeamDiscussionParams
 import typings.atOctokitRest.atOctokitRestMod.ReactionsCreateForTeamDiscussionResponse
 import typings.atOctokitRest.atOctokitRestMod.ReactionsDeleteParams
-import typings.atOctokitRest.atOctokitRestMod.ReactionsDeleteResponse
 import typings.atOctokitRest.atOctokitRestMod.ReactionsListForCommitCommentParams
 import typings.atOctokitRest.atOctokitRestMod.ReactionsListForCommitCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReactionsListForIssueCommentParams
@@ -69,7 +69,7 @@ trait Anon_CreateForCommitComment extends js.Object {
     * OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), when deleting a [team discussion](https://developer.github.com/v3/teams/discussions/) or [team discussion comment](https://developer.github.com/v3/teams/discussion_comments/).
     */
   @JSName("delete")
-  var delete_Original: Anon_EndpointParamsPromiseReactionsDeleteParams = js.native
+  var delete_Original: Anon_EndpointParamsAnyResponsePromiseReactionsDeleteParams = js.native
   /**
     * List the reactions to a [commit comment](https://developer.github.com/v3/repos/comments/).
     */
@@ -134,8 +134,8 @@ trait Anon_CreateForCommitComment extends js.Object {
   /**
     * OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), when deleting a [team discussion](https://developer.github.com/v3/teams/discussions/) or [team discussion comment](https://developer.github.com/v3/teams/discussion_comments/).
     */
-  def delete(): js.Promise[Response[ReactionsDeleteResponse]] = js.native
-  def delete(params: ReactionsDeleteParams): js.Promise[Response[ReactionsDeleteResponse]] = js.native
+  def delete(): js.Promise[AnyResponse] = js.native
+  def delete(params: ReactionsDeleteParams): js.Promise[AnyResponse] = js.native
   /**
     * List the reactions to a [commit comment](https://developer.github.com/v3/repos/comments/).
     */

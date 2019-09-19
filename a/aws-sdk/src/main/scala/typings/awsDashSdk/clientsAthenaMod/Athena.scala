@@ -117,12 +117,12 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetQueryExecutionOutput, Unit]
   ): Request[GetQueryExecutionOutput, AWSError] = js.native
   /**
-    * Returns the results of a single query execution specified by QueryExecutionId if you have access to the workgroup in which the query ran. This request does not execute the query but returns results. Use StartQueryExecution to run a query.
+    * Streams the results of a single query execution specified by QueryExecutionId from the Athena query results location in Amazon S3. For more information, see Query Results in the Amazon Athena User Guide. This request does not execute the query but returns results. Use StartQueryExecution to run a query. To stream query results successfully, the IAM principal with permission to call GetQueryResults also must have permissions to the Amazon S3 GetObject action for the Athena query results location.  IAM principals with permission to the Amazon S3 GetObject action for the query results location are able to retrieve query results from Amazon S3 even if permission to the GetQueryResults action is denied. To restrict user or role access, ensure that Amazon S3 permissions to the Athena query location are denied. 
     */
   def getQueryResults(): Request[GetQueryResultsOutput, AWSError] = js.native
   def getQueryResults(callback: js.Function2[/* err */ AWSError, /* data */ GetQueryResultsOutput, Unit]): Request[GetQueryResultsOutput, AWSError] = js.native
   /**
-    * Returns the results of a single query execution specified by QueryExecutionId if you have access to the workgroup in which the query ran. This request does not execute the query but returns results. Use StartQueryExecution to run a query.
+    * Streams the results of a single query execution specified by QueryExecutionId from the Athena query results location in Amazon S3. For more information, see Query Results in the Amazon Athena User Guide. This request does not execute the query but returns results. Use StartQueryExecution to run a query. To stream query results successfully, the IAM principal with permission to call GetQueryResults also must have permissions to the Amazon S3 GetObject action for the Athena query results location.  IAM principals with permission to the Amazon S3 GetObject action for the query results location are able to retrieve query results from Amazon S3 even if permission to the GetQueryResults action is denied. To restrict user or role access, ensure that Amazon S3 permissions to the Athena query location are denied. 
     */
   def getQueryResults(params: GetQueryResultsInput): Request[GetQueryResultsOutput, AWSError] = js.native
   def getQueryResults(

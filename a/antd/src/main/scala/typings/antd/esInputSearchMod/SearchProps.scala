@@ -42,6 +42,7 @@ import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.ClipboardEventHandler
 import typings.react.reactMod.CompositionEventHandler
@@ -303,7 +304,9 @@ trait SearchProps extends js.Object {
   var onSearch: js.UndefOr[
     js.Function2[
       /* value */ String, 
-      /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLInputElement]], 
+      /* event */ js.UndefOr[
+        ChangeEvent[HTMLInputElement] | (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLInputElement]
+      ], 
       Unit
     ]
   ] = js.undefined
@@ -538,7 +541,9 @@ object SearchProps {
     onRateChange: ReactEventHandler[HTMLInputElement] = null,
     onReset: FormEventHandler[HTMLInputElement] = null,
     onScroll: UIEventHandler[HTMLInputElement] = null,
-    onSearch: (/* value */ String, /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLInputElement]]) => Unit = null,
+    onSearch: (/* value */ String, /* event */ js.UndefOr[
+      ChangeEvent[HTMLInputElement] | (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLInputElement]
+    ]) => Unit = null,
     onSeeked: ReactEventHandler[HTMLInputElement] = null,
     onSeeking: ReactEventHandler[HTMLInputElement] = null,
     onSelect: ReactEventHandler[HTMLInputElement] = null,

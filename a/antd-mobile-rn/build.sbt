@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "antd-mobile-rn"
-version := "2.3.3-61b239"
+version := "2.3.3-88a9a6"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-68bf93",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190913Z-df3313",
-  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-24056b",
-  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-59eaf1",
-  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-523cec",
+  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-0fb651",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190917Z-cc8b5c",
+  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-b81513",
+  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-76aec1",
+  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-6a4001",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "utility-types" % "2.1.0-02a4ab")
 publishArtifact in packageDoc := false

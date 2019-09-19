@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GmailAttachment extends js.Object {
   def copyBlob(): Blob = js.native
+  /** @deprecated DO NOT USE */
   def getAllBlobs(): js.Array[Blob] = js.native
   def getAs(contentType: String): Blob = js.native
   def getBytes(): js.Array[Byte] = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait SketchMSStringAttribute extends js.Object {
   var _class: stringAttribute
-  var attributes: Anon_ForegroundColor
+  var attributes: SketchMSAttributes
 }
 
 object SketchMSStringAttribute {
   @scala.inline
-  def apply(_class: stringAttribute, attributes: Anon_ForegroundColor): SketchMSStringAttribute = {
+  def apply(_class: stringAttribute, attributes: SketchMSAttributes): SketchMSStringAttribute = {
     val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
   
     __obj.asInstanceOf[SketchMSStringAttribute]

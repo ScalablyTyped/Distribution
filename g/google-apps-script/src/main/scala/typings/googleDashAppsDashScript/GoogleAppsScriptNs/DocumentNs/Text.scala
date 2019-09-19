@@ -13,8 +13,8 @@ trait Text extends js.Object {
   def editAsText(): Text = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
-  def getAttributes(offset: Integer): js.Object = js.native
+  def getAttributes(): js.Any = js.native
+  def getAttributes(offset: Integer): js.Any = js.native
   def getBackgroundColor(): String = js.native
   def getBackgroundColor(offset: Integer): String = js.native
   def getFontFamily(): String = js.native
@@ -46,8 +46,8 @@ trait Text extends js.Object {
   def merge(): Text = js.native
   def removeFromParent(): Text = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): Text = js.native
-  def setAttributes(startOffset: Integer, endOffsetInclusive: Integer, attributes: js.Object): Text = js.native
+  def setAttributes(attributes: js.Any): Text = js.native
+  def setAttributes(startOffset: Integer, endOffsetInclusive: Integer, attributes: js.Any): Text = js.native
   def setBackgroundColor(color: String): Text = js.native
   def setBackgroundColor(startOffset: Integer, endOffsetInclusive: Integer, color: String): Text = js.native
   def setBold(bold: Boolean): Text = js.native

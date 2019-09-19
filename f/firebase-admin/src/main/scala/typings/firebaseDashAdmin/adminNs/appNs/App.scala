@@ -7,6 +7,7 @@ import typings.firebaseDashAdmin.adminNs.firestoreNs.Firestore
 import typings.firebaseDashAdmin.adminNs.instanceIdNs.InstanceId
 import typings.firebaseDashAdmin.adminNs.messagingNs.Messaging
 import typings.firebaseDashAdmin.adminNs.projectManagementNs.ProjectManagement
+import typings.firebaseDashAdmin.adminNs.securityRulesNs.SecurityRules
 import typings.firebaseDashAdmin.adminNs.storageNs.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -84,6 +85,7 @@ trait App extends js.Object {
   def instanceId(): InstanceId = js.native
   def messaging(): Messaging = js.native
   def projectManagement(): ProjectManagement = js.native
+  def securityRules(): SecurityRules = js.native
   def storage(): Storage = js.native
 }
 

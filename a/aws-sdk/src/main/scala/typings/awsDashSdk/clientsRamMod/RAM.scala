@@ -78,14 +78,14 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceShareResponse, Unit]
   ): Request[DisassociateResourceShareResponse, AWSError] = js.native
   /**
-    * Enables resource sharing within your organization.
+    * Enables resource sharing within your AWS Organization. The caller must be the master account for the AWS Organization.
     */
   def enableSharingWithAwsOrganization(): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   def enableSharingWithAwsOrganization(
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSharingWithAwsOrganizationResponse, Unit]
   ): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   /**
-    * Enables resource sharing within your organization.
+    * Enables resource sharing within your AWS Organization. The caller must be the master account for the AWS Organization.
     */
   def enableSharingWithAwsOrganization(params: EnableSharingWithAwsOrganizationRequest): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   def enableSharingWithAwsOrganization(
@@ -93,12 +93,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSharingWithAwsOrganizationResponse, Unit]
   ): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   /**
-    * Gets the policies for the specifies resources.
+    * Gets the policies for the specified resources that you own and have shared.
     */
   def getResourcePolicies(): Request[GetResourcePoliciesResponse, AWSError] = js.native
   def getResourcePolicies(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePoliciesResponse, Unit]): Request[GetResourcePoliciesResponse, AWSError] = js.native
   /**
-    * Gets the policies for the specifies resources.
+    * Gets the policies for the specified resources that you own and have shared.
     */
   def getResourcePolicies(params: GetResourcePoliciesRequest): Request[GetResourcePoliciesResponse, AWSError] = js.native
   def getResourcePolicies(
@@ -106,12 +106,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePoliciesResponse, Unit]
   ): Request[GetResourcePoliciesResponse, AWSError] = js.native
   /**
-    * Gets the associations for the specified resource share.
+    * Gets the resources or principals for the resource shares that you own.
     */
   def getResourceShareAssociations(): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   def getResourceShareAssociations(callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareAssociationsResponse, Unit]): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   /**
-    * Gets the associations for the specified resource share.
+    * Gets the resources or principals for the resource shares that you own.
     */
   def getResourceShareAssociations(params: GetResourceShareAssociationsRequest): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   def getResourceShareAssociations(
@@ -119,12 +119,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareAssociationsResponse, Unit]
   ): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   /**
-    * Gets the specified invitations for resource sharing.
+    * Gets the invitations for resource sharing that you've received.
     */
   def getResourceShareInvitations(): Request[GetResourceShareInvitationsResponse, AWSError] = js.native
   def getResourceShareInvitations(callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareInvitationsResponse, Unit]): Request[GetResourceShareInvitationsResponse, AWSError] = js.native
   /**
-    * Gets the specified invitations for resource sharing.
+    * Gets the invitations for resource sharing that you've received.
     */
   def getResourceShareInvitations(params: GetResourceShareInvitationsRequest): Request[GetResourceShareInvitationsResponse, AWSError] = js.native
   def getResourceShareInvitations(
@@ -132,12 +132,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareInvitationsResponse, Unit]
   ): Request[GetResourceShareInvitationsResponse, AWSError] = js.native
   /**
-    * Gets the specified resource shares or all of your resource shares.
+    * Gets the resource shares that you own or the resource shares that are shared with you.
     */
   def getResourceShares(): Request[GetResourceSharesResponse, AWSError] = js.native
   def getResourceShares(callback: js.Function2[/* err */ AWSError, /* data */ GetResourceSharesResponse, Unit]): Request[GetResourceSharesResponse, AWSError] = js.native
   /**
-    * Gets the specified resource shares or all of your resource shares.
+    * Gets the resource shares that you own or the resource shares that are shared with you.
     */
   def getResourceShares(params: GetResourceSharesRequest): Request[GetResourceSharesResponse, AWSError] = js.native
   def getResourceShares(
@@ -145,12 +145,27 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceSharesResponse, Unit]
   ): Request[GetResourceSharesResponse, AWSError] = js.native
   /**
-    * Lists the principals with access to the specified resource.
+    * Lists the resources in a resource share that is shared with you but that the invitation is still pending for.
+    */
+  def listPendingInvitationResources(): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
+  def listPendingInvitationResources(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPendingInvitationResourcesResponse, Unit]
+  ): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
+  /**
+    * Lists the resources in a resource share that is shared with you but that the invitation is still pending for.
+    */
+  def listPendingInvitationResources(params: ListPendingInvitationResourcesRequest): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
+  def listPendingInvitationResources(
+    params: ListPendingInvitationResourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPendingInvitationResourcesResponse, Unit]
+  ): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
+  /**
+    * Lists the principals that you have shared resources with or the principals that have shared resources with you.
     */
   def listPrincipals(): Request[ListPrincipalsResponse, AWSError] = js.native
   def listPrincipals(callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsResponse, Unit]): Request[ListPrincipalsResponse, AWSError] = js.native
   /**
-    * Lists the principals with access to the specified resource.
+    * Lists the principals that you have shared resources with or the principals that have shared resources with you.
     */
   def listPrincipals(params: ListPrincipalsRequest): Request[ListPrincipalsResponse, AWSError] = js.native
   def listPrincipals(
@@ -158,12 +173,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsResponse, Unit]
   ): Request[ListPrincipalsResponse, AWSError] = js.native
   /**
-    * Lists the resources that the specified principal can access.
+    * Lists the resources that you added to a resource shares or the resources that are shared with you.
     */
   def listResources(): Request[ListResourcesResponse, AWSError] = js.native
   def listResources(callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResponse, Unit]): Request[ListResourcesResponse, AWSError] = js.native
   /**
-    * Lists the resources that the specified principal can access.
+    * Lists the resources that you added to a resource shares or the resources that are shared with you.
     */
   def listResources(params: ListResourcesRequest): Request[ListResourcesResponse, AWSError] = js.native
   def listResources(
@@ -184,12 +199,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RejectResourceShareInvitationResponse, Unit]
   ): Request[RejectResourceShareInvitationResponse, AWSError] = js.native
   /**
-    * Adds the specified tags to the specified resource share.
+    * Adds the specified tags to the specified resource share that you own.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds the specified tags to the specified resource share.
+    * Adds the specified tags to the specified resource share that you own.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -197,12 +212,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Removes the specified tags from the specified resource share.
+    * Removes the specified tags from the specified resource share that you own.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes the specified tags from the specified resource share.
+    * Removes the specified tags from the specified resource share that you own.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(
@@ -210,12 +225,12 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Updates the specified resource share.
+    * Updates the specified resource share that you own.
     */
   def updateResourceShare(): Request[UpdateResourceShareResponse, AWSError] = js.native
   def updateResourceShare(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceShareResponse, Unit]): Request[UpdateResourceShareResponse, AWSError] = js.native
   /**
-    * Updates the specified resource share.
+    * Updates the specified resource share that you own.
     */
   def updateResourceShare(params: UpdateResourceShareRequest): Request[UpdateResourceShareResponse, AWSError] = js.native
   def updateResourceShare(

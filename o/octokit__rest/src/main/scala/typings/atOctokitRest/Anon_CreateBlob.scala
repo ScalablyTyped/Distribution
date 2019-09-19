@@ -12,7 +12,6 @@ import typings.atOctokitRest.atOctokitRestMod.GitCreateTagResponse
 import typings.atOctokitRest.atOctokitRestMod.GitCreateTreeParams
 import typings.atOctokitRest.atOctokitRestMod.GitCreateTreeResponse
 import typings.atOctokitRest.atOctokitRestMod.GitDeleteRefParams
-import typings.atOctokitRest.atOctokitRestMod.GitDeleteRefResponse
 import typings.atOctokitRest.atOctokitRestMod.GitGetBlobParams
 import typings.atOctokitRest.atOctokitRestMod.GitGetBlobResponse
 import typings.atOctokitRest.atOctokitRestMod.GitGetCommitParams
@@ -111,7 +110,7 @@ trait Anon_CreateBlob extends js.Object {
     * ```
     */
   @JSName("deleteRef")
-  var deleteRef_Original: Anon_EndpointParamsGitDeleteRefParams = js.native
+  var deleteRef_Original: Anon_EndpointParamsAnyResponseGitDeleteRefParams = js.native
   /**
     * The `content` in the response will always be Base64 encoded.
     *
@@ -177,12 +176,12 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("getTag")
   var getTag_Original: Anon_EndpointParamsGitGetTagParams = js.native
   /**
-    * If `truncated` in the response is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, omit the `recursive` parameter, and fetch one sub-tree at a time. If you need to fetch even more items, you can clone the repository and iterate over the Git data locally.
+    * If `truncated` is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
     */
   @JSName("getTree")
   var getTree_Original: Anon_EndpointParamsAnyResponseGitGetTreeParams = js.native
   /**
-    * This will return an array of all the references on the system, including things like notes and stashes if they exist on the server
+    * Returns an array of all the references from your Git database, including notes and stashes if they exist on the server. Anything in the namespace is returned, not just `heads` and `tags`. If there are no references to list, a `404` is returned.
     */
   @JSName("listRefs")
   var listRefs_Original: Anon_EndpointParamsAnyResponseGitListRefsParams = js.native
@@ -267,8 +266,8 @@ trait Anon_CreateBlob extends js.Object {
     * DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
     * ```
     */
-  def deleteRef(): js.Promise[Response[GitDeleteRefResponse]] = js.native
-  def deleteRef(params: GitDeleteRefParams): js.Promise[Response[GitDeleteRefResponse]] = js.native
+  def deleteRef(): js.Promise[AnyResponse] = js.native
+  def deleteRef(params: GitDeleteRefParams): js.Promise[AnyResponse] = js.native
   /**
     * The `content` in the response will always be Base64 encoded.
     *
@@ -334,12 +333,12 @@ trait Anon_CreateBlob extends js.Object {
   def getTag(): js.Promise[Response[GitGetTagResponse]] = js.native
   def getTag(params: GitGetTagParams): js.Promise[Response[GitGetTagResponse]] = js.native
   /**
-    * If `truncated` in the response is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, omit the `recursive` parameter, and fetch one sub-tree at a time. If you need to fetch even more items, you can clone the repository and iterate over the Git data locally.
+    * If `truncated` is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
     */
   def getTree(): js.Promise[AnyResponse] = js.native
   def getTree(params: GitGetTreeParams): js.Promise[AnyResponse] = js.native
   /**
-    * This will return an array of all the references on the system, including things like notes and stashes if they exist on the server
+    * Returns an array of all the references from your Git database, including notes and stashes if they exist on the server. Anything in the namespace is returned, not just `heads` and `tags`. If there are no references to list, a `404` is returned.
     */
   def listRefs(): js.Promise[AnyResponse] = js.native
   def listRefs(params: GitListRefsParams): js.Promise[AnyResponse] = js.native

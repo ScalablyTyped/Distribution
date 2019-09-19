@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The response from a geocoder lookup or reverse lookup.
+  */
 trait GeocoderResponse extends js.Object {
   var results: js.Array[Place]
 }

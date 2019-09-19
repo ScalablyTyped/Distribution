@@ -18,7 +18,7 @@ trait ReposCreateHookParams extends js.Object {
     */
   var events: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * Use `web` to create a webhook. This parameter only accepts the value `web`.
+    * Use `web` to create a webhook. Default: `web`. This parameter only accepts the value `web`.
     */
   var name: js.UndefOr[String] = js.undefined
   var owner: String

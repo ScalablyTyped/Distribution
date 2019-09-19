@@ -1,17 +1,43 @@
 package typings.appleDashMapkitDashJs.mapkitNs
 
+import typings.appleDashMapkitDashJs.Anon_1
+import typings.appleDashMapkitDashJs.Anon_Height
 import typings.std.DOMPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An object containing the options that initialize a marker annotation.
+  */
 trait MarkerAnnotationConstructorOptions extends AnnotationConstructorOptions {
+  /**
+    * The background color of the balloon.
+    */
   var color: js.UndefOr[String] = js.undefined
+  /**
+    * The fill color of the glyph.
+    */
   var glyphColor: js.UndefOr[String] = js.undefined
-  var glyphImage: js.UndefOr[js.Any] = js.undefined
+  /**
+    * The image to display in the marker balloon.
+    */
+  var glyphImage: js.UndefOr[Anon_1] = js.undefined
+  /**
+    * The text to display in the marker balloon.
+    */
   var glyphText: js.UndefOr[String] = js.undefined
-  var selectedGlyphImage: js.UndefOr[js.Any] = js.undefined
+  /**
+    * The image to display in the balloon when the marker is selected.
+    */
+  var selectedGlyphImage: js.UndefOr[js.Object] = js.undefined
+  /**
+    * A value that determines the behavior of the subtitle's visibility.
+    */
   var subtitleVisibility: js.UndefOr[String] = js.undefined
+  /**
+    * A value that determines the behavior of the title's visibility.
+    */
   var titleVisibility: js.UndefOr[String] = js.undefined
 }
 
@@ -33,12 +59,11 @@ object MarkerAnnotationConstructorOptions {
     draggable: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     glyphColor: String = null,
-    glyphImage: js.Any = null,
+    glyphImage: Anon_1 = null,
     glyphText: String = null,
-    padding: Padding = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    selectedGlyphImage: js.Any = null,
-    size: js.Object = null,
+    selectedGlyphImage: js.Object = null,
+    size: Anon_Height = null,
     subtitle: String = null,
     subtitleVisibility: String = null,
     title: String = null,
@@ -63,7 +88,6 @@ object MarkerAnnotationConstructorOptions {
     if (glyphColor != null) __obj.updateDynamic("glyphColor")(glyphColor)
     if (glyphImage != null) __obj.updateDynamic("glyphImage")(glyphImage)
     if (glyphText != null) __obj.updateDynamic("glyphText")(glyphText)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (selectedGlyphImage != null) __obj.updateDynamic("selectedGlyphImage")(selectedGlyphImage)
     if (size != null) __obj.updateDynamic("size")(size)

@@ -8,8 +8,18 @@ import scala.scalajs.js.annotation._
   * A representation of the resources underlying an inline svg icon
   */
 trait IModel extends js.Object {
+  /**
+    * Manually set the className corresponding to the icon name. By default,
+    * the className is generated from the name: 'foo-bar' -> 'jp-FooBarIcon'
+    */
   var className: js.UndefOr[String] = js.undefined
+  /**
+    * The icon name. For a 'foo-bar.svg' file, the icon name is 'foo-bar'.
+    */
   var name: String
+  /**
+    * A string containing the html corresponding to an SVG element
+    */
   var svg: String
 }
 

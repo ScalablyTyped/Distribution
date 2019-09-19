@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "baseui"
-version := "8.18.0-6d3026"
+version := "8.18.0-e0e088"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "styletron-react" % "5.0-dt-20190626Z-cb9242",
+  "org.scalablytyped" %%% "styletron-react" % "5.0-dt-20190626Z-2090a5",
   "org.scalablytyped" %%% "styletron-standard" % "2.0-dt-20190514Z-873ace")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

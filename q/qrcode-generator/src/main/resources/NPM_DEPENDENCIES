@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "qrcode-generator" : "1.4.3"
+      "qrcode-generator" : "1.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "qrcode-generator" : "1.4.3"
+      "qrcode-generator" : "1.4.4"
     }
   ],
   "compile-devDependencies" : [

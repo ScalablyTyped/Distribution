@@ -46,8 +46,10 @@ trait Utilities extends js.Object {
   def getUuid(): String = js.native
   def gzip(blob: BlobSource): Blob = js.native
   def gzip(blob: BlobSource, name: String): Blob = js.native
-  def jsonParse(jsonString: String): js.Object = js.native
-  def jsonStringify(obj: js.Object): String = js.native
+  /** @deprecated DO NOT USE */
+  def jsonParse(jsonString: String): js.Any = js.native
+  /** @deprecated DO NOT USE */
+  def jsonStringify(obj: js.Any): String = js.native
   def newBlob(data: String): Blob = js.native
   def newBlob(data: String, contentType: String): Blob = js.native
   def newBlob(data: String, contentType: String, name: String): Blob = js.native

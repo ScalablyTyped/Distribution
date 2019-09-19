@@ -36,6 +36,12 @@ class ContextualMenuBase protected () extends BaseComponent[IContextualMenuProps
     */
   var _isAltOrMeta: js.Any = js.native
   var _isFocusingPreviousElement: js.Any = js.native
+  /**
+    * Return whether the contextual menu is hidden.
+    * Undefined value for hidden is equivalent to hidden being false.
+    * @param props - Props for the component
+    */
+  var _isHidden: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
   /**
     * Calls `shouldHandleKey` to determine whether the keyboard event should be handled;

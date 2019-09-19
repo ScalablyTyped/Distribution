@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PullsUpdateCommentParams extends js.Object {
   /**
-    * The text of the comment.
+    * The text of the reply to the review comment.
     */
   var body: String
   var comment_id: Double

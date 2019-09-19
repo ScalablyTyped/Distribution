@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonwebtoken"
-version := "8.3-dt-20190807Z-1599c2"
+version := "8.3-dt-20190918Z-75b79a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

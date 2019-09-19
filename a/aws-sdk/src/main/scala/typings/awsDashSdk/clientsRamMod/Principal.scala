@@ -10,7 +10,7 @@ trait Principal extends js.Object {
     */
   var creationTime: js.UndefOr[DateTime] = js.undefined
   /**
-    * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
+    * Indicates whether the principal belongs to the same AWS organization as the AWS account that owns the resource share.
     */
   var external: js.UndefOr[Boolean] = js.undefined
   /**

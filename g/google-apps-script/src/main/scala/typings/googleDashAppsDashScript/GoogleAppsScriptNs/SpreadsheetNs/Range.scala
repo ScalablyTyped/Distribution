@@ -1,5 +1,7 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs
 
+import typings.googleDashAppsDashScript.Anon_CommentsOnly
+import typings.googleDashAppsDashScript.Anon_ContentsOnly
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.ChartsNs.DataTable
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
 import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.`line-through`
@@ -37,7 +39,7 @@ trait Range extends js.Object {
   def canEdit(): Boolean = js.native
   def check(): Range = js.native
   def clear(): Range = js.native
-  def clear(options: js.Any): Range = js.native
+  def clear(options: Anon_CommentsOnly): Range = js.native
   def clearContent(): Range = js.native
   def clearDataValidations(): Range = js.native
   def clearFormat(): Range = js.native
@@ -47,7 +49,7 @@ trait Range extends js.Object {
   def copyFormatToRange(sheet: Sheet, column: Integer, columnEnd: Integer, row: Integer, rowEnd: Integer): Unit = js.native
   def copyTo(destination: Range): Unit = js.native
   def copyTo(destination: Range, copyPasteType: CopyPasteType, transposed: Boolean): Unit = js.native
-  def copyTo(destination: Range, options: js.Any): Unit = js.native
+  def copyTo(destination: Range, options: Anon_ContentsOnly): Unit = js.native
   def copyValuesToRange(gridId: Integer, column: Integer, columnEnd: Integer, row: Integer, rowEnd: Integer): Unit = js.native
   def copyValuesToRange(sheet: Sheet, column: Integer, columnEnd: Integer, row: Integer, rowEnd: Integer): Unit = js.native
   def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
@@ -105,7 +107,7 @@ trait Range extends js.Object {
   def getNumberFormat(): String = js.native
   def getNumberFormats(): js.Array[js.Array[String]] = js.native
   def getRichTextValue(): RichTextValue | Null = js.native
-  def getRichTextValues(): js.Array[js.Array[RichTextValue]] = js.native
+  def getRichTextValues(): js.Array[js.Array[RichTextValue | Null]] = js.native
   def getRow(): Integer = js.native
   def getRowIndex(): Integer = js.native
   def getSheet(): Sheet = js.native
@@ -175,7 +177,7 @@ trait Range extends js.Object {
   def setFontColor(): Range = js.native
   def setFontColor(color: String): Range = js.native
   def setFontColors(colors: js.Array[js.Array[_]]): Range = js.native
-  def setFontFamilies(fontFamilies: js.Array[js.Array[_]]): Range = js.native
+  def setFontFamilies(fontFamilies: js.Array[js.Array[String | Null]]): Range = js.native
   def setFontFamily(): Range = js.native
   def setFontFamily(fontFamily: String): Range = js.native
   def setFontLine(): Range = js.native
@@ -187,7 +189,7 @@ trait Range extends js.Object {
   def setFontLine_underline(fontLine: underline): Range = js.native
   def setFontLines(fontLines: js.Array[js.Array[underline | `line-through` | none | Null]]): Range = js.native
   def setFontSize(size: Integer): Range = js.native
-  def setFontSizes(sizes: js.Array[js.Array[_]]): Range = js.native
+  def setFontSizes(sizes: js.Array[js.Array[Integer]]): Range = js.native
   def setFontStyle(): Range = js.native
   @JSName("setFontStyle")
   def setFontStyle_italic(fontStyle: italic): Range = js.native
@@ -214,9 +216,9 @@ trait Range extends js.Object {
   def setHorizontalAlignments(alignments: js.Array[js.Array[left | center | normal | Null]]): Range = js.native
   def setNote(): Range = js.native
   def setNote(note: String): Range = js.native
-  def setNotes(notes: js.Array[js.Array[_]]): Range = js.native
+  def setNotes(notes: js.Array[js.Array[String | Null]]): Range = js.native
   def setNumberFormat(numberFormat: String): Range = js.native
-  def setNumberFormats(numberFormats: js.Array[js.Array[_]]): Range = js.native
+  def setNumberFormats(numberFormats: js.Array[js.Array[String]]): Range = js.native
   def setRichTextValue(value: RichTextValue): Range = js.native
   def setRichTextValues(values: js.Array[js.Array[RichTextValue]]): Range = js.native
   def setShowHyperlink(showHyperlink: Boolean): Range = js.native
@@ -242,7 +244,7 @@ trait Range extends js.Object {
   def setWrap(isWrapEnabled: Boolean): Range = js.native
   def setWrapStrategies(strategies: js.Array[js.Array[WrapStrategy]]): Range = js.native
   def setWrapStrategy(strategy: WrapStrategy): Range = js.native
-  def setWraps(isWrapEnabled: js.Array[js.Array[_]]): Range = js.native
+  def setWraps(isWrapEnabled: js.Array[js.Array[Boolean]]): Range = js.native
   def shiftColumnGroupDepth(delta: Integer): Range = js.native
   def shiftRowGroupDepth(delta: Integer): Range = js.native
   def sort(sortSpecObj: js.Any): Range = js.native

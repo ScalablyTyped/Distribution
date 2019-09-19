@@ -43,7 +43,7 @@ trait TeamsCreateParams extends js.Object {
     * **For a parent or child team:**
     * \* `closed` - visible to all members of this organization.
     * Default for child team: `closed`
-    * **Note**: You must pass the `hellcat-preview` media type to set privacy default to `closed` for child teams. **For a parent or child team:**
+    * **Note**: You must pass the `hellcat-preview` media type to set privacy default to `closed` for child teams.
     */
   var privacy: js.UndefOr[secret | closed] = js.undefined
   /**

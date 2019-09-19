@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__settingeditor
 
-Typings are for version 1.1.2
+Typings are for version 1.1.3
 
 ## Library description:
 The JupyterLab default setting editor interface

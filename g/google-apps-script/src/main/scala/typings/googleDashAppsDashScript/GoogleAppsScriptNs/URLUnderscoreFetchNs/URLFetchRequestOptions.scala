@@ -1,11 +1,5 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.URLUnderscoreFetchNs
 
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.Blob
-import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.delete
-import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.get
-import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.patch
-import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.post
-import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +22,11 @@ trait URLFetchRequestOptions extends js.Object {
   /**
     * a JavaScript key/value map of HTTP headers for the request
     */
-  var headers: js.UndefOr[js.Object] = js.undefined
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   /**
     * the HTTP method for the request: get, delete, patch, post, or put. The default is get.
     */
-  var method: js.UndefOr[get | delete | patch | post | put] = js.undefined
+  var method: js.UndefOr[HttpMethod] = js.undefined
   /**
     * if this is set to true, the fetch will not throw an exception if the response code indicates
     * failure, and will instead return the HTTPResponse (default: false)
@@ -43,7 +37,7 @@ trait URLFetchRequestOptions extends js.Object {
     * payload. It can be a string, a byte array, or a JavaScript object. A JavaScript object will be
     * interpretted as a map of form field names to values, where the values can be either strings or blobs.
     */
-  var payload: js.UndefOr[String | js.Object | Blob] = js.undefined
+  var payload: js.UndefOr[Payload] = js.undefined
   /**
     * Deprecated. This instructs fetch to resolve the specified URL within the intranet linked to your
     * domain through (deprecated) SDC
@@ -62,10 +56,10 @@ object URLFetchRequestOptions {
     contentType: String = null,
     escaping: js.UndefOr[Boolean] = js.undefined,
     followRedirects: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Object = null,
-    method: get | delete | patch | post | put = null,
+    headers: HttpHeaders = null,
+    method: HttpMethod = null,
     muteHttpExceptions: js.UndefOr[Boolean] = js.undefined,
-    payload: String | js.Object | Blob = null,
+    payload: Payload = null,
     useIntranet: js.UndefOr[Boolean] = js.undefined,
     validateHttpsCertificates: js.UndefOr[Boolean] = js.undefined
   ): URLFetchRequestOptions = {
@@ -74,7 +68,7 @@ object URLFetchRequestOptions {
     if (!js.isUndefined(escaping)) __obj.updateDynamic("escaping")(escaping)
     if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
     if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(muteHttpExceptions)) __obj.updateDynamic("muteHttpExceptions")(muteHttpExceptions)
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (!js.isUndefined(useIntranet)) __obj.updateDynamic("useIntranet")(useIntranet)

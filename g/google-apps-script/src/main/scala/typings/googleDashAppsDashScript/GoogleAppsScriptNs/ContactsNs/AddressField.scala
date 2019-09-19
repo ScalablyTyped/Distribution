@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AddressField extends js.Object {
   def deleteAddressField(): Unit = js.native
   def getAddress(): String = js.native
-  def getLabel(): js.Any = js.native
+  def getLabel(): Field | ExtendedField | String = js.native
   def isPrimary(): Boolean = js.native
   def setAddress(address: String): AddressField = js.native
   def setAsPrimary(): AddressField = js.native

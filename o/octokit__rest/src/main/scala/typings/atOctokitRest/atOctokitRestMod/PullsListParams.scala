@@ -19,7 +19,7 @@ trait PullsListParams extends js.Object {
     */
   var base: js.UndefOr[String] = js.undefined
   /**
-    * The direction of the sort. Can be either `asc` or `desc`.
+    * The direction of the sort. Can be either `asc` or `desc`. Default: `desc` when sort is `created` or sort is not specified, otherwise `asc`.
     */
   var direction: js.UndefOr[asc | desc] = js.undefined
   /**

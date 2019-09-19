@@ -2,20 +2,17 @@ package typings.nodeDashFetch.nodeDashFetchMod
 
 import typings.node.httpMod.Agent
 import typings.node.urlMod.URL
-import typings.nodeDashFetch.Anon_Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("node-fetch", "Request")
 @js.native
-class Request protected () extends Body {
-  def this(input: String) = this()
-  def this(input: Anon_Href) = this()
-  def this(input: Request) = this()
-  def this(input: String, init: RequestInit) = this()
-  def this(input: Anon_Href, init: RequestInit) = this()
-  def this(input: Request, init: RequestInit) = this()
+class Request protected ()
+  extends Body
+     with _RequestInfo {
+  def this(input: RequestInfo) = this()
+  def this(input: RequestInfo, init: RequestInit) = this()
   // node-fetch extensions to the whatwg/fetch spec
   var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL, Agent])] = js.native
   var compress: Boolean = js.native

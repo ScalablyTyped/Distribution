@@ -21,6 +21,8 @@ class ChoicesRestfull () extends Base {
   var titleName: String = js.native
   var url: String = js.native
   var valueName: String = js.native
+  /* protected */ def beforeSendRequest(): Unit = js.native
+  def beforeSendRequestCallback(): Unit = js.native
   def clear(): Unit = js.native
   def getCustomPropertiesNames(): js.Array[String] = js.native
   def getData(): js.Any = js.native

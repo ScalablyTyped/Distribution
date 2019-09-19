@@ -10,7 +10,9 @@ trait Session extends js.Object {
   def getEffectiveUser(): User
   def getScriptTimeZone(): String
   def getTemporaryActiveUserKey(): String
+  /** @deprecated DO NOT USE */
   def getTimeZone(): String
+  /** @deprecated DO NOT USE */
   def getUser(): User
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fortawesome/fontawesome-svg-core" : "1.2.22"
+      "@fortawesome/fontawesome-svg-core" : "1.2.24"
     }
   ],
   "test-dependencies" : [
     {
-      "@fortawesome/fontawesome-svg-core" : "1.2.22"
+      "@fortawesome/fontawesome-svg-core" : "1.2.24"
     }
   ],
   "compile-devDependencies" : [

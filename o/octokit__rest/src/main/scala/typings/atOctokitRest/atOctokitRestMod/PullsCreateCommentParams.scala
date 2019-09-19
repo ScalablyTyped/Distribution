@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PullsCreateCommentParams extends js.Object {
   /**
-    * The text of the comment.
+    * The text of the review comment.
     */
   var body: String
   /**

@@ -15,7 +15,6 @@ trait ChannelDescriptor extends js.Object {
   var entityName: String
   var friendlyName: String
   var lastConsumedMessageIndex: Double
-  var name: String
   var notificationLevel: js.UndefOr[NotificationLevel] = js.undefined
   var `type`: Type
   var uniqueName: String
@@ -31,13 +30,12 @@ object ChannelDescriptor {
     entityName: String,
     friendlyName: String,
     lastConsumedMessageIndex: Double,
-    name: String,
     `type`: Type,
     uniqueName: String,
     createdBy: String = null,
     notificationLevel: NotificationLevel = null
   ): ChannelDescriptor = {
-    val __obj = js.Dynamic.literal(attributes = attributes, channel = channel, dateCreated = dateCreated, dateUpdated = dateUpdated, entityName = entityName, friendlyName = friendlyName, lastConsumedMessageIndex = lastConsumedMessageIndex, name = name, uniqueName = uniqueName)
+    val __obj = js.Dynamic.literal(attributes = attributes, channel = channel, dateCreated = dateCreated, dateUpdated = dateUpdated, entityName = entityName, friendlyName = friendlyName, lastConsumedMessageIndex = lastConsumedMessageIndex, uniqueName = uniqueName)
     __obj.updateDynamic("type")(`type`)
     if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
     if (notificationLevel != null) __obj.updateDynamic("notificationLevel")(notificationLevel)

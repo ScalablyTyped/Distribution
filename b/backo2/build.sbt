@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backo2"
-version := "1.0-dt-20180601Z-2ee994"
+version := "1.0-dt-20190918Z-7fc458"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetResourceShareAssociationsRequest extends js.Object {
   /**
-    * The status of the association.
+    * The association status.
     */
   var associationStatus: js.UndefOr[ResourceShareAssociationStatus] = js.undefined
   /**
@@ -22,11 +22,11 @@ trait GetResourceShareAssociationsRequest extends js.Object {
     */
   var nextToken: js.UndefOr[String] = js.undefined
   /**
-    * The principal.
+    * The principal. You cannot specify this parameter if the association type is RESOURCE.
     */
   var principal: js.UndefOr[String] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the resource.
+    * The Amazon Resource Name (ARN) of the resource. You cannot specify this parameter if the association type is PRINCIPAL.
     */
   var resourceArn: js.UndefOr[String] = js.undefined
   /**

@@ -10,7 +10,7 @@ trait ReposDeleteFileParams extends js.Object {
     */
   var author: js.UndefOr[ReposDeleteFileParamsAuthor] = js.undefined
   /**
-    * The branch name.
+    * The branch name. Default: the repository’s default branch (usually `master`)
     */
   var branch: js.UndefOr[String] = js.undefined
   /**

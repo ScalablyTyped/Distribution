@@ -8,7 +8,7 @@ trait ReposGetContentsParams extends js.Object {
   var owner: String
   var path: String
   /**
-    * The name of the commit/branch/tag.
+    * The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
     */
   var ref: js.UndefOr[String] = js.undefined
   var repo: String

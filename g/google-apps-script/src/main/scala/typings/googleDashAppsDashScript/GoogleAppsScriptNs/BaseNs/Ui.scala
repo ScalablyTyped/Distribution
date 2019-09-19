@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs
 
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.HTMLNs.HtmlOutput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +17,10 @@ trait Ui extends js.Object {
   def prompt(prompt: String): PromptResponse = js.native
   def prompt(prompt: String, buttons: ButtonSet): PromptResponse = js.native
   def prompt(title: String, prompt: String, buttons: ButtonSet): PromptResponse = js.native
-  def showDialog(userInterface: js.Object): Unit = js.native
-  def showModalDialog(userInterface: js.Object, title: String): Unit = js.native
-  def showModelessDialog(userInterface: js.Object, title: String): Unit = js.native
-  def showSidebar(userInterface: js.Object): Unit = js.native
+  /** @deprecated DO NOT USE */
+  def showDialog(userInterface: HtmlOutput): Unit = js.native
+  def showModalDialog(userInterface: HtmlOutput, title: String): Unit = js.native
+  def showModelessDialog(userInterface: HtmlOutput, title: String): Unit = js.native
+  def showSidebar(userInterface: HtmlOutput): Unit = js.native
 }
 

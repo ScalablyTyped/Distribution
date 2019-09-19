@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Bounds")
 @js.native
-class Bounds () extends js.Object
+class Bounds () extends js.Object {
+  var max: Vector = js.native
+  var min: Vector = js.native
+}
 
 /* static members */
 @JSImport("matter-js", "Bounds")

@@ -22,7 +22,7 @@ trait SearchLabelsParams extends js.Object {
     */
   var repository_id: Double
   /**
-    * Sorts the results of your query by when the label was `created` or `updated`.
+    * Sorts the results of your query by when the label was `created` or `updated`. Default: [best match](https://developer.github.com/v3/search/#ranking-search-results)
     */
   var sort: js.UndefOr[created | updated] = js.undefined
 }

@@ -28,14 +28,6 @@ trait ProjectsUpdateParams extends js.Object {
     */
   var organization_permission: js.UndefOr[String] = js.undefined
   /**
-    * Page number of the results to fetch.
-    */
-  var page: js.UndefOr[Double] = js.undefined
-  /**
-    * Results per page (max 100)
-    */
-  var per_page: js.UndefOr[Double] = js.undefined
-  /**
     * Sets the visibility of a project board. Setting `private` is only available for organization and user projects. **Note:** Updating a project's visibility requires `admin` access to the project.
     *
     * Can be one of:
@@ -57,8 +49,6 @@ object ProjectsUpdateParams {
     body: String = null,
     name: String = null,
     organization_permission: String = null,
-    page: Int | Double = null,
-    per_page: Int | Double = null,
     `private`: js.UndefOr[Boolean] = js.undefined,
     state: open | closed = null
   ): ProjectsUpdateParams = {
@@ -66,8 +56,6 @@ object ProjectsUpdateParams {
     if (body != null) __obj.updateDynamic("body")(body)
     if (name != null) __obj.updateDynamic("name")(name)
     if (organization_permission != null) __obj.updateDynamic("organization_permission")(organization_permission)
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateParams]

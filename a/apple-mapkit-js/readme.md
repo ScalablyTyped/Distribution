@@ -1,7 +1,7 @@
 
 # Scala.js typings for apple-mapkit-js
 
-Typings are for version 5.4
+Typings are for version 5.18
 
 ## Library description:
 An NPM installable package of Apple's Mapkit JS

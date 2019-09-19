@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait EquationFunctionArgumentSeparator extends js.Object {
   def copy(): EquationFunctionArgumentSeparator
-  def getAttributes(): js.Object
+  def getAttributes(): js.Any
   def getNextSibling(): Element
   def getParent(): ContainerElement
   def getPreviousSibling(): Element
@@ -14,14 +14,14 @@ trait EquationFunctionArgumentSeparator extends js.Object {
   def isAtDocumentEnd(): Boolean
   def merge(): EquationFunctionArgumentSeparator
   def removeFromParent(): EquationFunctionArgumentSeparator
-  def setAttributes(attributes: js.Object): EquationFunctionArgumentSeparator
+  def setAttributes(attributes: js.Any): EquationFunctionArgumentSeparator
 }
 
 object EquationFunctionArgumentSeparator {
   @scala.inline
   def apply(
     copy: () => EquationFunctionArgumentSeparator,
-    getAttributes: () => js.Object,
+    getAttributes: () => js.Any,
     getNextSibling: () => Element,
     getParent: () => ContainerElement,
     getPreviousSibling: () => Element,
@@ -29,7 +29,7 @@ object EquationFunctionArgumentSeparator {
     isAtDocumentEnd: () => Boolean,
     merge: () => EquationFunctionArgumentSeparator,
     removeFromParent: () => EquationFunctionArgumentSeparator,
-    setAttributes: js.Object => EquationFunctionArgumentSeparator
+    setAttributes: js.Any => EquationFunctionArgumentSeparator
   ): EquationFunctionArgumentSeparator = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
   

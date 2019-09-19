@@ -1,6 +1,6 @@
 package typings.relayDashCompiler.relayDashCompilerMod
 
-import typings.relayDashCompiler.libGraphQLCompilerContextMod.CompilerContextDocument
+import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.CompilerContextDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

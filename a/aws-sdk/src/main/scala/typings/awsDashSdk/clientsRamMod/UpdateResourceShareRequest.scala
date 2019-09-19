@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateResourceShareRequest extends js.Object {
   /**
-    * Indicates whether principals outside your organization can be associated with a resource share.
+    * Indicates whether principals outside your AWS organization can be associated with a resource share.
     */
   var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   /**

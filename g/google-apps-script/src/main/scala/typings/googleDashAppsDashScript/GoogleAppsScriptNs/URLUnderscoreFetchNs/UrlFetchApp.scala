@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait UrlFetchApp extends js.Object {
   def fetch(url: String): HTTPResponse = js.native
   def fetch(url: String, params: URLFetchRequestOptions): HTTPResponse = js.native
-  def fetchAll(requests: js.Array[_]): js.Array[HTTPResponse] = js.native
-  def getRequest(url: String): js.Object = js.native
-  def getRequest(url: String, params: URLFetchRequestOptions): js.Object = js.native
+  def fetchAll(requests: js.Array[URLFetchRequest | String]): js.Array[HTTPResponse] = js.native
+  def getRequest(url: String): URLFetchRequest = js.native
+  def getRequest(url: String, params: URLFetchRequestOptions): URLFetchRequest = js.native
 }
 

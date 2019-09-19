@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/tabmanager-extension" : "1.1.2"
+      "@jupyterlab/tabmanager-extension" : "1.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/tabmanager-extension" : "1.1.2"
+      "@jupyterlab/tabmanager-extension" : "1.1.3"
     }
   ],
   "compile-devDependencies" : [

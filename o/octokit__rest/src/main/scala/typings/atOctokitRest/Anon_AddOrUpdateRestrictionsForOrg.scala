@@ -1,5 +1,6 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.InteractionsAddOrUpdateRestrictionsForOrgParams
 import typings.atOctokitRest.atOctokitRestMod.InteractionsAddOrUpdateRestrictionsForOrgResponse
 import typings.atOctokitRest.atOctokitRestMod.InteractionsAddOrUpdateRestrictionsForRepoParams
@@ -9,9 +10,7 @@ import typings.atOctokitRest.atOctokitRestMod.InteractionsGetRestrictionsForOrgR
 import typings.atOctokitRest.atOctokitRestMod.InteractionsGetRestrictionsForRepoParams
 import typings.atOctokitRest.atOctokitRestMod.InteractionsGetRestrictionsForRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.InteractionsRemoveRestrictionsForOrgParams
-import typings.atOctokitRest.atOctokitRestMod.InteractionsRemoveRestrictionsForOrgResponse
 import typings.atOctokitRest.atOctokitRestMod.InteractionsRemoveRestrictionsForRepoParams
-import typings.atOctokitRest.atOctokitRestMod.InteractionsRemoveRestrictionsForRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,12 +42,12 @@ trait Anon_AddOrUpdateRestrictionsForOrg extends js.Object {
     * Removes all interaction restrictions from public repositories in the given organization. You must be an organization owner to remove restrictions.
     */
   @JSName("removeRestrictionsForOrg")
-  var removeRestrictionsForOrg_Original: Anon_EndpointParamsInteractionsRemoveRestrictionsForOrgParams = js.native
+  var removeRestrictionsForOrg_Original: Anon_EndpointParamsAnyResponseInteractionsRemoveRestrictionsForOrgParams = js.native
   /**
     * Removes all interaction restrictions from the given repository. You must have owner or admin access to remove restrictions.
     */
   @JSName("removeRestrictionsForRepo")
-  var removeRestrictionsForRepo_Original: Anon_EndpointParamsInteractionsRemoveRestrictionsForRepoParams = js.native
+  var removeRestrictionsForRepo_Original: Anon_EndpointParamsAnyResponseInteractionsRemoveRestrictionsForRepoParams = js.native
   /**
     * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
     */
@@ -72,12 +71,12 @@ trait Anon_AddOrUpdateRestrictionsForOrg extends js.Object {
   /**
     * Removes all interaction restrictions from public repositories in the given organization. You must be an organization owner to remove restrictions.
     */
-  def removeRestrictionsForOrg(): js.Promise[Response[InteractionsRemoveRestrictionsForOrgResponse]] = js.native
-  def removeRestrictionsForOrg(params: InteractionsRemoveRestrictionsForOrgParams): js.Promise[Response[InteractionsRemoveRestrictionsForOrgResponse]] = js.native
+  def removeRestrictionsForOrg(): js.Promise[AnyResponse] = js.native
+  def removeRestrictionsForOrg(params: InteractionsRemoveRestrictionsForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * Removes all interaction restrictions from the given repository. You must have owner or admin access to remove restrictions.
     */
-  def removeRestrictionsForRepo(): js.Promise[Response[InteractionsRemoveRestrictionsForRepoResponse]] = js.native
-  def removeRestrictionsForRepo(params: InteractionsRemoveRestrictionsForRepoParams): js.Promise[Response[InteractionsRemoveRestrictionsForRepoResponse]] = js.native
+  def removeRestrictionsForRepo(): js.Promise[AnyResponse] = js.native
+  def removeRestrictionsForRepo(params: InteractionsRemoveRestrictionsForRepoParams): js.Promise[AnyResponse] = js.native
 }
 

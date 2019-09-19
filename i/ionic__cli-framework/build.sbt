@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "2.1.6-ffd4b4"
+version := "2.1.7-c2dd54"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-7db9e7",
-  "org.scalablytyped" %%% "ionic__utils-object" % "1.0.4-081384",
+  "org.scalablytyped" %%% "ionic__utils-object" % "1.0.5-61341f",
   "org.scalablytyped" %%% "log-update" % "3.3.0-83cbac",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-b40bed",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",

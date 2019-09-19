@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait DateField extends js.Object {
   def deleteDateField(): Unit = js.native
   def getDay(): Integer = js.native
-  def getLabel(): js.Any = js.native
+  def getLabel(): Field | ExtendedField | String = js.native
   def getMonth(): Month = js.native
   def getYear(): Integer = js.native
   def setDate(month: Month, day: Integer): DateField = js.native

@@ -26,7 +26,7 @@ trait SearchCommitsParams extends js.Object {
     */
   var q: String
   /**
-    * Sorts the results of your query by `author-date` or `committer-date`.
+    * Sorts the results of your query by `author-date` or `committer-date`. Default: [best match](https://developer.github.com/v3/search/#ranking-search-results)
     */
   var sort: js.UndefOr[`author-date` | `committer-date`] = js.undefined
 }

@@ -17,7 +17,7 @@ trait TableRow extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getCell(cellIndex: Integer): TableCell = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
@@ -41,7 +41,7 @@ trait TableRow extends js.Object {
   def removeChild(child: Element): TableRow = js.native
   def removeFromParent(): TableRow = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): TableRow = js.native
+  def setAttributes(attributes: js.Any): TableRow = js.native
   def setLinkUrl(url: String): TableRow = js.native
   def setMinimumHeight(minHeight: Integer): TableRow = js.native
   def setTextAlignment(textAlignment: TextAlignment): TableRow = js.native

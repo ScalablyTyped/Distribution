@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-unified-numberformat
 
-Typings are for version 0.4.9
+Typings are for version 0.5.2
 
 
 

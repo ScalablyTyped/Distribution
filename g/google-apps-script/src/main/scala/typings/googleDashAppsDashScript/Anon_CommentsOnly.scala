@@ -1,0 +1,33 @@
+package typings.googleDashAppsDashScript
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_CommentsOnly extends js.Object {
+  var commentsOnly: js.UndefOr[Boolean] = js.undefined
+  var contentsOnly: js.UndefOr[Boolean] = js.undefined
+  var formatOnly: js.UndefOr[Boolean] = js.undefined
+  var skipFilteredRows: js.UndefOr[Boolean] = js.undefined
+  var validationsOnly: js.UndefOr[Boolean] = js.undefined
+}
+
+object Anon_CommentsOnly {
+  @scala.inline
+  def apply(
+    commentsOnly: js.UndefOr[Boolean] = js.undefined,
+    contentsOnly: js.UndefOr[Boolean] = js.undefined,
+    formatOnly: js.UndefOr[Boolean] = js.undefined,
+    skipFilteredRows: js.UndefOr[Boolean] = js.undefined,
+    validationsOnly: js.UndefOr[Boolean] = js.undefined
+  ): Anon_CommentsOnly = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(commentsOnly)) __obj.updateDynamic("commentsOnly")(commentsOnly)
+    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly)
+    if (!js.isUndefined(formatOnly)) __obj.updateDynamic("formatOnly")(formatOnly)
+    if (!js.isUndefined(skipFilteredRows)) __obj.updateDynamic("skipFilteredRows")(skipFilteredRows)
+    if (!js.isUndefined(validationsOnly)) __obj.updateDynamic("validationsOnly")(validationsOnly)
+    __obj.asInstanceOf[Anon_CommentsOnly]
+  }
+}
+

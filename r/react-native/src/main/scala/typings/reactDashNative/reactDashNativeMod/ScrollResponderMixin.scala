@@ -237,6 +237,10 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * @platform ios
     */
   def scrollResponderZoomTo(rect: Anon_AnimatedHeight): Unit = js.native
-  def scrollResponderZoomTo(rect: Anon_AnimatedHeight, animated: Boolean): Unit = js.native
+  def scrollResponderZoomTo(
+    rect: Anon_AnimatedHeight,
+     // deprecated, put this inside the rect argument instead
+  animated: Boolean
+  ): Unit = js.native
 }
 

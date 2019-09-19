@@ -24,7 +24,7 @@ trait Paragraph extends js.Object {
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
   def getAlignment(): HorizontalAlignment = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
   def getHeading(): ParagraphHeading = js.native
@@ -59,7 +59,7 @@ trait Paragraph extends js.Object {
   def removePositionedImage(id: String): Boolean = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
   def setAlignment(alignment: HorizontalAlignment): Paragraph = js.native
-  def setAttributes(attributes: js.Object): Paragraph = js.native
+  def setAttributes(attributes: js.Any): Paragraph = js.native
   def setHeading(heading: ParagraphHeading): Paragraph = js.native
   def setIndentEnd(indentEnd: Double): Paragraph = js.native
   def setIndentFirstLine(indentFirstLine: Double): Paragraph = js.native

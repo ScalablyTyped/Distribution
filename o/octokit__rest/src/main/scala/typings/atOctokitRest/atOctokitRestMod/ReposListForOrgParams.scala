@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 trait ReposListForOrgParams extends js.Object {
   /**
-    * Can be one of `asc` or `desc`.
+    * Can be one of `asc` or `desc`. Default: when using `full_name`: `asc`, otherwise `desc`
     */
   var direction: js.UndefOr[asc | desc] = js.undefined
   var org: String

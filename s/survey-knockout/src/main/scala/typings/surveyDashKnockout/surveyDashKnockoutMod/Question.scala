@@ -54,6 +54,13 @@ class Question protected ()
     * @see title
     */
   var description: String = js.native
+  /**
+    * Question description location. By default, value is "default" and it depends on survey questionDescriptionLocation property
+    * You may change it to "underInput" to render it under question input or "underTitle" to rendered it under title.
+    * @see description
+    * @see Survey.questionDescriptionLocation
+    */
+  var descriptionLocation: String = js.native
   val displayValue: js.Any = js.native
   /**
     * An expression that returns true or false. If it returns false the Question becomes read only and an end-user will not able to answer on the qustion. The library runs the expression on survey start and on changing a question value. If the property is empty then readOnly property is used.
@@ -71,6 +78,8 @@ class Question protected ()
     * Set it to true, to add a comment for the question.
     */
   var hasComment: Boolean = js.native
+  val hasDescriptionUnderInput: Boolean = js.native
+  val hasDescriptionUnderTitle: Boolean = js.native
   /**
     * Returns false if the question doesn't have an input element, for example: QuestionHtmlModel
     */

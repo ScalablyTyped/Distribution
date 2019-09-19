@@ -4,8 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The result of an autocomplete query, including display lines and a coordinate.
+  */
 trait SearchAutocompleteResult extends js.Object {
+  /**
+    * The coordinate of the result, provided when it corresponds to a single place.
+    */
   var coordinate: Coordinate
+  /**
+    * Lines of text to display to the user in an autocomplete menu.
+    */
   var displayLines: js.Array[String]
 }
 

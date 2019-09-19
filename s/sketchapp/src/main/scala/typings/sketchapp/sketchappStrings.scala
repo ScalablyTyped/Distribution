@@ -6,7 +6,19 @@ import scala.scalajs.js.annotation._
 
 object sketchappStrings {
   @js.native
+  sealed trait MSImmutableForeignSymbol extends js.Object
+  
+  @js.native
+  sealed trait MSImmutableHotspotLayer extends js.Object
+  
+  @js.native
+  sealed trait MSImmutablePage extends js.Object
+  
+  @js.native
   sealed trait MSInnerShadow extends js.Object
+  
+  @js.native
+  sealed trait MSJSONFileReference extends js.Object
   
   @js.native
   sealed trait assetCollection extends js.Object
@@ -61,9 +73,6 @@ object sketchappStrings {
   
   @js.native
   sealed trait jSONOriginalDataReference extends js.Object
-  
-  @js.native
-  sealed trait layer extends js.Object
   
   @js.native
   sealed trait layoutGrid extends js.Object
@@ -144,13 +153,24 @@ object sketchappStrings {
   sealed trait symbolMaster extends js.Object
   
   @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
   sealed trait textStyle extends js.Object
   
   @js.native
   sealed trait triangle extends js.Object
   
   @scala.inline
+  def MSImmutableForeignSymbol: MSImmutableForeignSymbol = "MSImmutableForeignSymbol".asInstanceOf[MSImmutableForeignSymbol]
+  @scala.inline
+  def MSImmutableHotspotLayer: MSImmutableHotspotLayer = "MSImmutableHotspotLayer".asInstanceOf[MSImmutableHotspotLayer]
+  @scala.inline
+  def MSImmutablePage: MSImmutablePage = "MSImmutablePage".asInstanceOf[MSImmutablePage]
+  @scala.inline
   def MSInnerShadow: MSInnerShadow = "MSInnerShadow".asInstanceOf[MSInnerShadow]
+  @scala.inline
+  def MSJSONFileReference: MSJSONFileReference = "MSJSONFileReference".asInstanceOf[MSJSONFileReference]
   @scala.inline
   def assetCollection: assetCollection = "assetCollection".asInstanceOf[assetCollection]
   @scala.inline
@@ -187,8 +207,6 @@ object sketchappStrings {
   def immutableFlowConnection: immutableFlowConnection = "immutableFlowConnection".asInstanceOf[immutableFlowConnection]
   @scala.inline
   def jSONOriginalDataReference: jSONOriginalDataReference = "jSONOriginalDataReference".asInstanceOf[jSONOriginalDataReference]
-  @scala.inline
-  def layer: layer = "layer".asInstanceOf[layer]
   @scala.inline
   def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
   @scala.inline
@@ -241,6 +259,8 @@ object sketchappStrings {
   def symbolInstance: symbolInstance = "symbolInstance".asInstanceOf[symbolInstance]
   @scala.inline
   def symbolMaster: symbolMaster = "symbolMaster".asInstanceOf[symbolMaster]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
   @scala.inline

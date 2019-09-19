@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/utils-subprocess" : "1.0.7"
+      "@ionic/utils-subprocess" : "1.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/utils-subprocess" : "1.0.7"
+      "@ionic/utils-subprocess" : "1.0.8"
     }
   ],
   "compile-devDependencies" : [

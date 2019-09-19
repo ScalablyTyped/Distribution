@@ -46,7 +46,7 @@ trait Anon_0[T] extends js.Object {
   @JSName("$setOnInsert")
   var $setOnInsert: js.UndefOr[Partial[T] with Dictionary[_]] = js.undefined
   @JSName("$unset")
-  var $unset: js.UndefOr[(PartialMapTo[T, Boolean | `1` | `0`]) with Dictionary[_]] = js.undefined
+  var $unset: js.UndefOr[(PartialMapTo[T, String | Boolean | `1` | `0`]) with Dictionary[_]] = js.undefined
 }
 
 object Anon_0 {
@@ -65,7 +65,7 @@ object Anon_0 {
     $rename: (PartialMapTo[T, String]) with Dictionary[String] = null,
     $set: Partial[T] with Dictionary[_] = null,
     $setOnInsert: Partial[T] with Dictionary[_] = null,
-    $unset: (PartialMapTo[T, Boolean | `1` | `0`]) with Dictionary[_] = null
+    $unset: (PartialMapTo[T, String | Boolean | `1` | `0`]) with Dictionary[_] = null
   ): Anon_0[T] = {
     val __obj = js.Dynamic.literal()
     if ($addToSet != null) __obj.updateDynamic("$addToSet")($addToSet)

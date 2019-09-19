@@ -15,6 +15,7 @@ trait AngularBuildOptions extends BuildOptions[angular] {
   var configuration: js.UndefOr[String] = js.undefined
   var cordovaAssets: js.UndefOr[Boolean] = js.undefined
   var sourcemaps: js.UndefOr[Boolean] = js.undefined
+  var watch: js.UndefOr[Boolean] = js.undefined
 }
 
 object AngularBuildOptions {
@@ -28,7 +29,8 @@ object AngularBuildOptions {
     platform: String = null,
     project: String = null,
     sourcemaps: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
+    verbose: js.UndefOr[Boolean] = js.undefined,
+    watch: js.UndefOr[Boolean] = js.undefined
   ): AngularBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine)
     __obj.updateDynamic("--")(`--`)
@@ -39,6 +41,7 @@ object AngularBuildOptions {
     if (project != null) __obj.updateDynamic("project")(project)
     if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps)
     if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
     __obj.asInstanceOf[AngularBuildOptions]
   }
 }

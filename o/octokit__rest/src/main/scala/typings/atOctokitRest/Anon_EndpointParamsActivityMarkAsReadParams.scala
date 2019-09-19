@@ -1,11 +1,10 @@
 package typings.atOctokitRest
 
 import typings.atOctokitRest.atOctokitRestMod.ActivityMarkAsReadParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityMarkAsReadResponse
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.Endpoint
 import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
-import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait Anon_EndpointParamsActivityMarkAsReadParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
-  def apply(): js.Promise[Response[ActivityMarkAsReadResponse]] = js.native
-  def apply(params: ActivityMarkAsReadParams): js.Promise[Response[ActivityMarkAsReadResponse]] = js.native
+  def apply(): js.Promise[AnyResponse] = js.native
+  def apply(params: ActivityMarkAsReadParams): js.Promise[AnyResponse] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

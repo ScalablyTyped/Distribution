@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-network
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 Network utils for Node

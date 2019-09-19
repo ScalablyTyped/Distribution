@@ -10,7 +10,6 @@ trait SketchMSStyleShadow extends js.Object {
   var blurRadius: Double
   var color: SketchMSColor
   var contextSettings: SketchMSGraphicsContextSettings
-  var do_objectID: js.UndefOr[String] = js.undefined
   var isEnabled: Double
   var offsetX: Double
   var offsetY: Double
@@ -27,11 +26,10 @@ object SketchMSStyleShadow {
     isEnabled: Double,
     offsetX: Double,
     offsetY: Double,
-    spread: Double,
-    do_objectID: String = null
+    spread: Double
   ): SketchMSStyleShadow = {
     val __obj = js.Dynamic.literal(_class = _class, blurRadius = blurRadius, color = color, contextSettings = contextSettings, isEnabled = isEnabled, offsetX = offsetX, offsetY = offsetY, spread = spread)
-    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+  
     __obj.asInstanceOf[SketchMSStyleShadow]
   }
 }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 trait ReposListForUserParams extends js.Object {
   /**
-    * Can be one of `asc` or `desc`.
+    * Can be one of `asc` or `desc`. Default: `asc` when using `full_name`, otherwise `desc`
     */
   var direction: js.UndefOr[asc | desc] = js.undefined
   /**

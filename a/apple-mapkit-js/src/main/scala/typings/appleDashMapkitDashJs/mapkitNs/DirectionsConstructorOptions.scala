@@ -4,7 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Options that you may provide when creating a directions object.
+  */
 trait DirectionsConstructorOptions extends js.Object {
+  /**
+    * A language ID that determines the language for route information.
+    */
   var language: js.UndefOr[String] = js.undefined
 }
 

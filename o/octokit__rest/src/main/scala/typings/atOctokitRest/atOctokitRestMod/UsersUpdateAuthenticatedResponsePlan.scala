@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// response types
 trait UsersUpdateAuthenticatedResponsePlan extends js.Object {
   var collaborators: Double
   var name: String

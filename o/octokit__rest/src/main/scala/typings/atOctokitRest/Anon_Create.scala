@@ -1,5 +1,6 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.ChecksCreateParams
 import typings.atOctokitRest.atOctokitRestMod.ChecksCreateResponse
 import typings.atOctokitRest.atOctokitRestMod.ChecksCreateSuiteParams
@@ -17,7 +18,6 @@ import typings.atOctokitRest.atOctokitRestMod.ChecksListForSuiteResponse
 import typings.atOctokitRest.atOctokitRestMod.ChecksListSuitesForRefParams
 import typings.atOctokitRest.atOctokitRestMod.ChecksListSuitesForRefResponse
 import typings.atOctokitRest.atOctokitRestMod.ChecksRerequestSuiteParams
-import typings.atOctokitRest.atOctokitRestMod.ChecksRerequestSuiteResponse
 import typings.atOctokitRest.atOctokitRestMod.ChecksSetSuitesPreferencesParams
 import typings.atOctokitRest.atOctokitRestMod.ChecksSetSuitesPreferencesResponse
 import typings.atOctokitRest.atOctokitRestMod.ChecksUpdateParams
@@ -40,8 +40,6 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.
-    *
-    * #### [](https://developer.github.com/v3/checks/runs/#actions-object)`actions` object
     */
   @JSName("create")
   var create_Original: Anon_EndpointParamsChecksCreateParams = js.native
@@ -91,7 +89,7 @@ trait Anon_Create extends js.Object {
     * To rerequest a check suite, your GitHub App must have the `checks:read` permission on a private repository or pull access to a public repository.
     */
   @JSName("rerequestSuite")
-  var rerequestSuite_Original: Anon_EndpointParamsChecksRerequestSuiteParams = js.native
+  var rerequestSuite_Original: Anon_EndpointParamsAnyResponseChecksRerequestSuiteParams = js.native
   /**
     * Changes the default automatic flow when creating check suites. By default, the CheckSuiteEvent is automatically created each time code is pushed to a repository. When you disable the automatic creation of check suites, you can manually [Create a check suite](https://developer.github.com/v3/checks/suites/#create-a-check-suite). You must have admin permissions in the repository to set preferences for check suites.
     */
@@ -101,8 +99,6 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Updates a check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to edit check runs.
-    *
-    * #### [](https://developer.github.com/v3/checks/runs/#actions-object-1)`actions` object
     */
   @JSName("update")
   var update_Original: Anon_EndpointParamsChecksUpdateParams = js.native
@@ -110,8 +106,6 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.
-    *
-    * #### [](https://developer.github.com/v3/checks/runs/#actions-object)`actions` object
     */
   def create(): js.Promise[Response[ChecksCreateResponse]] = js.native
   def create(params: ChecksCreateParams): js.Promise[Response[ChecksCreateResponse]] = js.native
@@ -167,8 +161,8 @@ trait Anon_Create extends js.Object {
     *
     * To rerequest a check suite, your GitHub App must have the `checks:read` permission on a private repository or pull access to a public repository.
     */
-  def rerequestSuite(): js.Promise[Response[ChecksRerequestSuiteResponse]] = js.native
-  def rerequestSuite(params: ChecksRerequestSuiteParams): js.Promise[Response[ChecksRerequestSuiteResponse]] = js.native
+  def rerequestSuite(): js.Promise[AnyResponse] = js.native
+  def rerequestSuite(params: ChecksRerequestSuiteParams): js.Promise[AnyResponse] = js.native
   /**
     * Changes the default automatic flow when creating check suites. By default, the CheckSuiteEvent is automatically created each time code is pushed to a repository. When you disable the automatic creation of check suites, you can manually [Create a check suite](https://developer.github.com/v3/checks/suites/#create-a-check-suite). You must have admin permissions in the repository to set preferences for check suites.
     */
@@ -178,8 +172,6 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Updates a check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to edit check runs.
-    *
-    * #### [](https://developer.github.com/v3/checks/runs/#actions-object-1)`actions` object
     */
   def update(): js.Promise[Response[ChecksUpdateResponse]] = js.native
   def update(params: ChecksUpdateParams): js.Promise[Response[ChecksUpdateResponse]] = js.native

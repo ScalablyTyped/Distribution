@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("relay-compiler", "MultiReporter")
 @js.native
 class MultiReporter ()
-  extends typings.relayDashCompiler.libGraphQLMultiReporterMod.^
+  extends typings.relayDashCompiler.libReportersGraphQLMultiReporterMod.^
 

@@ -9,7 +9,6 @@ trait SketchMSStyleColorControls extends js.Object {
   var _class: styleColorControls
   var brightness: Double
   var contrast: Double
-  var do_objectID: js.UndefOr[String] = js.undefined
   var hue: Double
   var isEnabled: Double
   var saturation: Double
@@ -23,11 +22,10 @@ object SketchMSStyleColorControls {
     contrast: Double,
     hue: Double,
     isEnabled: Double,
-    saturation: Double,
-    do_objectID: String = null
+    saturation: Double
   ): SketchMSStyleColorControls = {
     val __obj = js.Dynamic.literal(_class = _class, brightness = brightness, contrast = contrast, hue = hue, isEnabled = isEnabled, saturation = saturation)
-    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+  
     __obj.asInstanceOf[SketchMSStyleColorControls]
   }
 }

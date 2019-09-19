@@ -18,7 +18,7 @@ trait ResourceShareInvitation extends js.Object {
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   /**
-    * The resources associated with the resource share.
+    * To view the resources associated with a pending resource share invitation, use ListPendingInvitationResources.
     */
   var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
   /**

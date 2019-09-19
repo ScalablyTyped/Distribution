@@ -25,17 +25,21 @@ trait HeaderSection extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
+  /** @deprecated DO NOT USE */
   def getFootnotes(): js.Array[Footnote] = js.native
   def getImages(): js.Array[InlineImage] = js.native
+  /** @deprecated DO NOT USE */
   def getLinkUrl(): String = js.native
   def getListItems(): js.Array[ListItem] = js.native
+  /** @deprecated DO NOT USE */
   def getNextSibling(): Element = js.native
   def getNumChildren(): Integer = js.native
   def getParagraphs(): js.Array[Paragraph] = js.native
   def getParent(): ContainerElement = js.native
+  /** @deprecated DO NOT USE */
   def getPreviousSibling(): Element = js.native
   def getTables(): js.Array[Table] = js.native
   def getText(): String = js.native
@@ -51,11 +55,13 @@ trait HeaderSection extends js.Object {
   def insertTable(childIndex: Integer): Table = js.native
   def insertTable(childIndex: Integer, cells: js.Array[js.Array[String]]): Table = js.native
   def insertTable(childIndex: Integer, table: Table): Table = js.native
+  /** @deprecated DO NOT USE */
   def isAtDocumentEnd(): Boolean = js.native
   def removeChild(child: Element): HeaderSection = js.native
   def removeFromParent(): HeaderSection = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): HeaderSection = js.native
+  def setAttributes(attributes: js.Any): HeaderSection = js.native
+  /** @deprecated DO NOT USE */
   def setLinkUrl(url: String): HeaderSection = js.native
   def setText(text: String): HeaderSection = js.native
   def setTextAlignment(textAlignment: TextAlignment): HeaderSection = js.native

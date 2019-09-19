@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs
 
+import typings.googleDashAppsDashScript.Anon_CommentsOnly
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
 import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.`line-through`
 import typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.bold
@@ -22,7 +23,7 @@ trait RangeList extends js.Object {
   def breakApart(): RangeList = js.native
   def check(): RangeList = js.native
   def clear(): RangeList = js.native
-  def clear(options: js.Any): RangeList = js.native
+  def clear(options: Anon_CommentsOnly): RangeList = js.native
   def clearContent(): RangeList = js.native
   def clearDataValidations(): RangeList = js.native
   def clearFormat(): RangeList = js.native

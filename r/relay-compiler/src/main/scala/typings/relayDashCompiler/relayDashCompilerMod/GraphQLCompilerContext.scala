@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("relay-compiler", "GraphQLCompilerContext")
 @js.native
 class GraphQLCompilerContext protected ()
-  extends typings.relayDashCompiler.libGraphQLCompilerContextMod.GraphQLCompilerContext {
+  extends typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.GraphQLCompilerContext {
   def this(serverSchema: GraphQLSchema) = this()
   def this(serverSchema: GraphQLSchema, clientSchema: GraphQLSchema) = this()
 }

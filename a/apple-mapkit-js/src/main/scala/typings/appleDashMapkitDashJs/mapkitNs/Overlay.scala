@@ -4,15 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An abstract base object that defines the methods and attributes for map overlays.
+  */
+@JSGlobal("mapkit.Overlay")
 @js.native
-trait Overlay
-  extends OverlayOptions
-     with _ItemType {
-  var map: Map = js.native
+abstract class Overlay () extends js.Object {
+  /**
+    * Custom data to associate with this overlay.
+    */
+  var data: js.Object = js.native
+  /**
+    * A Boolean value that determines whether the overlay responds to user interaction.
+    */
+  var enabled: Boolean = js.native
+  /**
+    * The map to which the overlay is added.
+    */
+  val map: Map | Null = js.native
+  /**
+    * A Boolean value that indicates whether the overlay is selected.
+    */
+  var selected: Boolean = js.native
+  /**
+    * Style properties to apply to the overlay.
+    */
   var style: Style = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit]): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit], thisObject: js.Any): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit]): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit], thisObject: js.Any): Unit = js.native
+  /**
+    * A Boolean value that determines if an overlay is visible.
+    */
+  var visible: Boolean = js.native
+  /**
+    * Starts listening for the specified type of event.
+    */
+  def addEventListener(`type`: OverlayEventType, listener: js.Function1[/* event */ EventBase[this.type], Unit]): Unit = js.native
+  def addEventListener(
+    `type`: OverlayEventType,
+    listener: js.Function1[/* event */ EventBase[this.type], Unit],
+    thisObject: js.Any
+  ): Unit = js.native
+  /**
+    * Stops listening for the specified type of event.
+    */
+  def removeEventListener(`type`: OverlayEventType, listener: js.Function1[/* event */ EventBase[this.type], Unit]): Unit = js.native
+  def removeEventListener(
+    `type`: OverlayEventType,
+    listener: js.Function1[/* event */ EventBase[this.type], Unit],
+    thisObject: js.Any
+  ): Unit = js.native
 }
 

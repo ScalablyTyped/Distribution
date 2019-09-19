@@ -4,21 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An overlay made up of one or more points, forming a closed shape.
+  */
 @JSGlobal("mapkit.PolygonOverlay")
 @js.native
-class PolygonOverlay protected () extends js.Object {
+class PolygonOverlay protected () extends Overlay {
+  /**
+    * Creates a polygon overlay with an array of points and style options.
+    *
+    * @param points The points in the polygon as an array of arrays of
+    * Coordinate, or an array of Coordinate. If it's the latter,
+    * the array is auto-wrapped by an enclosing array.
+    * @param options An object literal of options with which to initialize the
+    * polygon.
+    */
   def this(points: js.Array[Coordinate]) = this()
   def this(points: js.Array[Coordinate], options: StylesOverlayOptions) = this()
-  var data: js.Any = js.native
-  var enabled: Boolean = js.native
-  var map: Map = js.native
+  /**
+    * One or more arrays of coordinates that define the polygon overlay shape.
+    */
   var points: js.Array[Coordinate] = js.native
-  var selected: Boolean = js.native
-  var style: Style = js.native
-  var visible: Boolean = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit]): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit], thisObject: js.Any): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit]): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit], thisObject: js.Any): Unit = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ReposGetReadmeParams extends js.Object {
   var owner: String
   /**
-    * The name of the commit/branch/tag.
+    * The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
     */
   var ref: js.UndefOr[String] = js.undefined
   var repo: String

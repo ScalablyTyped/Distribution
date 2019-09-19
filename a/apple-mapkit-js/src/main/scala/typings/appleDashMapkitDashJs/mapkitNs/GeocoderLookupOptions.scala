@@ -4,10 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Options that constrain geocoder lookup results to a specific area or set a
+  * language for results.
+  */
 trait GeocoderLookupOptions extends js.Object {
+  /**
+    * Coordinates used to constrain the lookup results.
+    */
   var coordinate: js.UndefOr[Coordinate] = js.undefined
+  /**
+    * The language in which to display the lookup results.
+    */
   var language: js.UndefOr[String] = js.undefined
+  /**
+    * A list of countries in which to constrain the lookup results.
+    */
   var limitToCountries: js.UndefOr[String] = js.undefined
+  /**
+    * A region in which to constrain lookup results.
+    */
   var region: js.UndefOr[CoordinateRegion] = js.undefined
 }
 

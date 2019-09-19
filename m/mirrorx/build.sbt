@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "mirrorx"
-version := "0.2-dt-20190212Z-e87f01"
+version := "0.2-dt-20190212Z-71d134"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-c13957",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-24966d",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-d5d73d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190815Z-77c4ee",
-  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-3c1acc",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190815Z-442a4d",
+  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190918Z-0deff5",
   "org.scalablytyped" %%% "redux" % "4.0.4-a121b5",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

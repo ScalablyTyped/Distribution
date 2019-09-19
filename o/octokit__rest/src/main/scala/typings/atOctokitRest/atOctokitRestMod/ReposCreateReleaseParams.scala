@@ -28,7 +28,7 @@ trait ReposCreateReleaseParams extends js.Object {
     */
   var tag_name: String
   /**
-    * Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists.
+    * Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually `master`).
     */
   var target_commitish: js.UndefOr[String] = js.undefined
 }

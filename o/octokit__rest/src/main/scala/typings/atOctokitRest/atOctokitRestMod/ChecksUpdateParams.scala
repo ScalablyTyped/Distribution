@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 trait ChecksUpdateParams extends js.Object {
   /**
-    * Possible further actions the integrator can perform, which a user may trigger. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description.
+    * Possible further actions the integrator can perform, which a user may trigger. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description. To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
     */
   var actions: js.UndefOr[js.Array[ChecksUpdateParamsActions]] = js.undefined
   var check_run_id: Double

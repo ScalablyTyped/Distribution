@@ -15,5 +15,10 @@ package object nodeDashFetchMod {
   type BodyInit = ArrayBuffer | ArrayBufferView | ReadableStream | String | URLSearchParams
   type HeaderInit = HeadersInit
   type HeadersInit = Headers | js.Array[js.Array[String]] | StringDictionary[String]
-  type RequestInfo = String | Request
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - typings.nodeDashFetch.nodeDashFetchMod.URLLike
+    - typings.nodeDashFetch.nodeDashFetchMod.Request
+  */
+  type RequestInfo = _RequestInfo | String
 }

@@ -3,7 +3,7 @@ package typings.twilioDashMcsDashClient.libServicesNetworkMod
 import typings.node.Buffer
 import typings.std.FormData
 import typings.twilioDashMcsDashClient.libConfigurationMod.Configuration
-import typings.twilioDashTransport.twilioDashTransportMod.Transport
+import typings.twilioDashMcsDashClient.libServicesTransportMod.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

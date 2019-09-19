@@ -4,8 +4,10 @@ import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsCheckIfMergedParams
 import typings.atOctokitRest.atOctokitRestMod.PullsCheckIfMergedParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentParams
+import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentParamsDeprecatedInReplyTo
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentReplyParams
+import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentReplyParamsDeprecatedInReplyTo
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentReplyParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentReplyResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateCommentResponse
@@ -13,6 +15,8 @@ import typings.atOctokitRest.atOctokitRestMod.PullsCreateFromIssueParams
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateFromIssueResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateParams
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateResponse
+import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewCommentReplyParams
+import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewCommentReplyResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewParams
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewRequestParams
@@ -20,13 +24,11 @@ import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewRequestParamsDepr
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewRequestResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsCreateReviewResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsDeleteCommentParams
-import typings.atOctokitRest.atOctokitRestMod.PullsDeleteCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsDeletePendingReviewParams
 import typings.atOctokitRest.atOctokitRestMod.PullsDeletePendingReviewParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsDeletePendingReviewResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsDeleteReviewRequestParams
 import typings.atOctokitRest.atOctokitRestMod.PullsDeleteReviewRequestParamsDeprecatedNumber
-import typings.atOctokitRest.atOctokitRestMod.PullsDeleteReviewRequestResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsDismissReviewParams
 import typings.atOctokitRest.atOctokitRestMod.PullsDismissReviewParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsDismissReviewResponse
@@ -62,6 +64,7 @@ import typings.atOctokitRest.atOctokitRestMod.PullsListReviewsParamsDeprecatedNu
 import typings.atOctokitRest.atOctokitRestMod.PullsListReviewsResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsMergeParams
 import typings.atOctokitRest.atOctokitRestMod.PullsMergeParamsDeprecatedNumber
+import typings.atOctokitRest.atOctokitRestMod.PullsMergeResponse
 import typings.atOctokitRest.atOctokitRestMod.PullsSubmitReviewParams
 import typings.atOctokitRest.atOctokitRestMod.PullsSubmitReviewParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.PullsSubmitReviewResponse
@@ -85,6 +88,8 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("checkIfMerged")
   var checkIfMerged_Original: Anon_EndpointParamsAnyResponsePromise = js.native
   /**
+    * Creates a review comment for a pull request.
+    *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
@@ -94,6 +99,8 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("createCommentReply")
   var createCommentReply_Original: Anon_EndpointParamsPromisePullsCreateCommentReplyParams = js.native
   /**
+    * Creates a review comment for a pull request.
+    *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
@@ -112,6 +119,13 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("createFromIssue")
   var createFromIssue_Original: Anon_EndpointParamsPromisePullsCreateFromIssueParams = js.native
   /**
+    * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    */
+  @JSName("createReviewCommentReply")
+  var createReviewCommentReply_Original: Anon_EndpointParamsPromisePullsCreateReviewCommentReplyParams = js.native
+  /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createReviewRequest")
@@ -126,25 +140,29 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("createReview")
   var createReview_Original: Anon_EndpointParamsPromisePullsCreateReviewParams = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
-    *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: Anon_EndpointParamsPromisePullsCreateParams = js.native
+  var create_Original: Anon_EndpointParamsPromise = js.native
+  /**
+    * Deletes a review comment.
+    */
   @JSName("deleteComment")
-  var deleteComment_Original: Anon_EndpointParamsPromisePullsDeleteCommentParams = js.native
+  var deleteComment_Original: Anon_EndpointParamsAnyResponsePromisePullsDeleteCommentParams = js.native
   @JSName("deletePendingReview")
   var deletePendingReview_Original: Anon_EndpointParamsPromisePullsDeletePendingReviewParams = js.native
   @JSName("deleteReviewRequest")
-  var deleteReviewRequest_Original: Anon_EndpointParamsPromisePullsDeleteReviewRequestParams = js.native
+  var deleteReviewRequest_Original: Anon_EndpointParamsAnyResponsePromisePullsDeleteReviewRequestParams = js.native
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   @JSName("dismissReview")
   var dismissReview_Original: Anon_EndpointParamsPromisePullsDismissReviewParams = js.native
+  /**
+    * Provides details for a review comment.
+    */
   @JSName("getComment")
   var getComment_Original: Anon_EndpointParamsPromisePullsGetCommentParams = js.native
   @JSName("getCommentsForReview")
@@ -171,12 +189,12 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("get")
   var get_Original: Anon_EndpointParamsPromisePullsGetParams = js.native
   /**
-    * By default, review comments are ordered by ascending ID.
+    * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
     */
   @JSName("listCommentsForRepo")
   var listCommentsForRepo_Original: Anon_EndpointParamsPromisePullsListCommentsForRepoParams = js.native
   /**
-    * By default, review comments are ordered by ascending ID.
+    * Lists review comments for a pull request. By default, review comments are in ascending order by ID.
     */
   @JSName("listComments")
   var listComments_Original: Anon_EndpointParamsPromisePullsListCommentsParams = js.native
@@ -201,12 +219,12 @@ trait Anon_CheckIfMerged extends js.Object {
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
   @JSName("list")
-  var list_Original: Anon_EndpointParamsPromise = js.native
+  var list_Original: Anon_EndpointParamsPromisePullsListParams = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("merge")
-  var merge_Original: Anon_EndpointParamsAnyResponsePromisePullsMergeParams = js.native
+  var merge_Original: Anon_EndpointParamsPromisePullsMergeParams = js.native
   @JSName("submitReview")
   var submitReview_Original: Anon_EndpointParamsPromisePullsSubmitReviewParams = js.native
   /**
@@ -214,6 +232,9 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   @JSName("updateBranch")
   var updateBranch_Original: Anon_EndpointParamsPromisePullsUpdateBranchParams = js.native
+  /**
+    * Enables you to edit a review comment.
+    */
   @JSName("updateComment")
   var updateComment_Original: Anon_EndpointParamsPromisePullsUpdateCommentParams = js.native
   /**
@@ -232,8 +253,6 @@ trait Anon_CheckIfMerged extends js.Object {
   def checkIfMerged(params: PullsCheckIfMergedParams): js.Promise[AnyResponse] = js.native
   def checkIfMerged(params: PullsCheckIfMergedParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
-    *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
@@ -241,6 +260,8 @@ trait Anon_CheckIfMerged extends js.Object {
   def create(): js.Promise[Response[PullsCreateResponse]] = js.native
   def create(params: PullsCreateParams): js.Promise[Response[PullsCreateResponse]] = js.native
   /**
+    * Creates a review comment for a pull request.
+    *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
@@ -249,8 +270,11 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   def createComment(): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def createComment(params: PullsCreateCommentParams): js.Promise[Response[PullsCreateCommentResponse]] = js.native
+  def createComment(params: PullsCreateCommentParamsDeprecatedInReplyTo): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def createComment(params: PullsCreateCommentParamsDeprecatedNumber): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   /**
+    * Creates a review comment for a pull request.
+    *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
@@ -259,6 +283,7 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   def createCommentReply(): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
   def createCommentReply(params: PullsCreateCommentReplyParams): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
+  def createCommentReply(params: PullsCreateCommentReplyParamsDeprecatedInReplyTo): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
   def createCommentReply(params: PullsCreateCommentReplyParamsDeprecatedNumber): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
@@ -280,19 +305,29 @@ trait Anon_CheckIfMerged extends js.Object {
   def createReview(params: PullsCreateReviewParams): js.Promise[Response[PullsCreateReviewResponse]] = js.native
   def createReview(params: PullsCreateReviewParamsDeprecatedNumber): js.Promise[Response[PullsCreateReviewResponse]] = js.native
   /**
+    * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    */
+  def createReviewCommentReply(): js.Promise[Response[PullsCreateReviewCommentReplyResponse]] = js.native
+  def createReviewCommentReply(params: PullsCreateReviewCommentReplyParams): js.Promise[Response[PullsCreateReviewCommentReplyResponse]] = js.native
+  /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createReviewRequest(): js.Promise[Response[PullsCreateReviewRequestResponse]] = js.native
   def createReviewRequest(params: PullsCreateReviewRequestParams): js.Promise[Response[PullsCreateReviewRequestResponse]] = js.native
   def createReviewRequest(params: PullsCreateReviewRequestParamsDeprecatedNumber): js.Promise[Response[PullsCreateReviewRequestResponse]] = js.native
-  def deleteComment(): js.Promise[Response[PullsDeleteCommentResponse]] = js.native
-  def deleteComment(params: PullsDeleteCommentParams): js.Promise[Response[PullsDeleteCommentResponse]] = js.native
+  /**
+    * Deletes a review comment.
+    */
+  def deleteComment(): js.Promise[AnyResponse] = js.native
+  def deleteComment(params: PullsDeleteCommentParams): js.Promise[AnyResponse] = js.native
   def deletePendingReview(): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
   def deletePendingReview(params: PullsDeletePendingReviewParams): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
   def deletePendingReview(params: PullsDeletePendingReviewParamsDeprecatedNumber): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
-  def deleteReviewRequest(): js.Promise[Response[PullsDeleteReviewRequestResponse]] = js.native
-  def deleteReviewRequest(params: PullsDeleteReviewRequestParams): js.Promise[Response[PullsDeleteReviewRequestResponse]] = js.native
-  def deleteReviewRequest(params: PullsDeleteReviewRequestParamsDeprecatedNumber): js.Promise[Response[PullsDeleteReviewRequestResponse]] = js.native
+  def deleteReviewRequest(): js.Promise[AnyResponse] = js.native
+  def deleteReviewRequest(params: PullsDeleteReviewRequestParams): js.Promise[AnyResponse] = js.native
+  def deleteReviewRequest(params: PullsDeleteReviewRequestParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
@@ -319,6 +354,9 @@ trait Anon_CheckIfMerged extends js.Object {
   def get(): js.Promise[Response[PullsGetResponse]] = js.native
   def get(params: PullsGetParams): js.Promise[Response[PullsGetResponse]] = js.native
   def get(params: PullsGetParamsDeprecatedNumber): js.Promise[Response[PullsGetResponse]] = js.native
+  /**
+    * Provides details for a review comment.
+    */
   def getComment(): js.Promise[Response[PullsGetCommentResponse]] = js.native
   def getComment(params: PullsGetCommentParams): js.Promise[Response[PullsGetCommentResponse]] = js.native
   def getCommentsForReview(): js.Promise[Response[PullsGetCommentsForReviewResponse]] = js.native
@@ -333,13 +371,13 @@ trait Anon_CheckIfMerged extends js.Object {
   def list(): js.Promise[Response[PullsListResponse]] = js.native
   def list(params: PullsListParams): js.Promise[Response[PullsListResponse]] = js.native
   /**
-    * By default, review comments are ordered by ascending ID.
+    * Lists review comments for a pull request. By default, review comments are in ascending order by ID.
     */
   def listComments(): js.Promise[Response[PullsListCommentsResponse]] = js.native
   def listComments(params: PullsListCommentsParams): js.Promise[Response[PullsListCommentsResponse]] = js.native
   def listComments(params: PullsListCommentsParamsDeprecatedNumber): js.Promise[Response[PullsListCommentsResponse]] = js.native
   /**
-    * By default, review comments are ordered by ascending ID.
+    * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
     */
   def listCommentsForRepo(): js.Promise[Response[PullsListCommentsForRepoResponse]] = js.native
   def listCommentsForRepo(params: PullsListCommentsForRepoParams): js.Promise[Response[PullsListCommentsForRepoResponse]] = js.native
@@ -367,9 +405,9 @@ trait Anon_CheckIfMerged extends js.Object {
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
-  def merge(): js.Promise[AnyResponse] = js.native
-  def merge(params: PullsMergeParams): js.Promise[AnyResponse] = js.native
-  def merge(params: PullsMergeParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
+  def merge(): js.Promise[Response[PullsMergeResponse]] = js.native
+  def merge(params: PullsMergeParams): js.Promise[Response[PullsMergeResponse]] = js.native
+  def merge(params: PullsMergeParamsDeprecatedNumber): js.Promise[Response[PullsMergeResponse]] = js.native
   def submitReview(): js.Promise[Response[PullsSubmitReviewResponse]] = js.native
   def submitReview(params: PullsSubmitReviewParams): js.Promise[Response[PullsSubmitReviewResponse]] = js.native
   def submitReview(params: PullsSubmitReviewParamsDeprecatedNumber): js.Promise[Response[PullsSubmitReviewResponse]] = js.native
@@ -386,6 +424,9 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   def updateBranch(): js.Promise[Response[PullsUpdateBranchResponse]] = js.native
   def updateBranch(params: PullsUpdateBranchParams): js.Promise[Response[PullsUpdateBranchResponse]] = js.native
+  /**
+    * Enables you to edit a review comment.
+    */
   def updateComment(): js.Promise[Response[PullsUpdateCommentResponse]] = js.native
   def updateComment(params: PullsUpdateCommentParams): js.Promise[Response[PullsUpdateCommentResponse]] = js.native
   /**

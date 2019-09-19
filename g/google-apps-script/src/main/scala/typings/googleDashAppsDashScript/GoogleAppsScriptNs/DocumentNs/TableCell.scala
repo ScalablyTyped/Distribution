@@ -25,7 +25,7 @@ trait TableCell extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getBackgroundColor(): String = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
@@ -62,7 +62,7 @@ trait TableCell extends js.Object {
   def removeChild(child: Element): TableCell = js.native
   def removeFromParent(): TableCell = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): TableCell = js.native
+  def setAttributes(attributes: js.Any): TableCell = js.native
   def setBackgroundColor(color: String): TableCell = js.native
   def setLinkUrl(url: String): TableCell = js.native
   def setPaddingBottom(paddingBottom: Double): TableCell = js.native

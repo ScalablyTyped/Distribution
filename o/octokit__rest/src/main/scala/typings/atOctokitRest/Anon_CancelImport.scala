@@ -1,15 +1,11 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsCancelImportParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsCancelImportResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsDeleteArchiveForAuthenticatedUserParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsDeleteArchiveForAuthenticatedUserResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsDeleteArchiveForOrgParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsDeleteArchiveForOrgResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsGetArchiveForAuthenticatedUserParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsGetArchiveForAuthenticatedUserResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsGetArchiveForOrgParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsGetArchiveForOrgResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsGetCommitAuthorsParams
 import typings.atOctokitRest.atOctokitRestMod.MigrationsGetCommitAuthorsResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsGetImportProgressParams
@@ -35,9 +31,7 @@ import typings.atOctokitRest.atOctokitRestMod.MigrationsStartForOrgResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsStartImportParams
 import typings.atOctokitRest.atOctokitRestMod.MigrationsStartImportResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUnlockRepoForAuthenticatedUserParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsUnlockRepoForAuthenticatedUserResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUnlockRepoForOrgParams
-import typings.atOctokitRest.atOctokitRestMod.MigrationsUnlockRepoForOrgResponse
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUpdateImportParams
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUpdateImportResponse
 import typings.atOctokitRest.atOctokitRestMod.Response
@@ -51,17 +45,17 @@ trait Anon_CancelImport extends js.Object {
     * Stop an import for a repository.
     */
   @JSName("cancelImport")
-  var cancelImport_Original: Anon_EndpointParamsMigrationsCancelImportParams = js.native
+  var cancelImport_Original: Anon_EndpointParamsAnyResponseMigrationsCancelImportParams = js.native
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](https://developer.github.com/v3/migrations/users/#get-a-list-of-user-migrations) and [Get the status of a user migration](https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
     */
   @JSName("deleteArchiveForAuthenticatedUser")
-  var deleteArchiveForAuthenticatedUser_Original: Anon_EndpointParamsMigrationsDeleteArchiveForAuthenticatedUserParams = js.native
+  var deleteArchiveForAuthenticatedUser_Original: Anon_EndpointParamsAnyResponseMigrationsDeleteArchiveForAuthenticatedUserParams = js.native
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   @JSName("deleteArchiveForOrg")
-  var deleteArchiveForOrg_Original: Anon_EndpointParamsMigrationsDeleteArchiveForOrgParams = js.native
+  var deleteArchiveForOrg_Original: Anon_EndpointParamsAnyResponseMigrationsDeleteArchiveForOrgParams = js.native
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
@@ -86,12 +80,12 @@ trait Anon_CancelImport extends js.Object {
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
   @JSName("getArchiveForAuthenticatedUser")
-  var getArchiveForAuthenticatedUser_Original: Anon_EndpointParamsMigrationsGetArchiveForAuthenticatedUserParams = js.native
+  var getArchiveForAuthenticatedUser_Original: Anon_EndpointParamsAnyResponseMigrationsGetArchiveForAuthenticatedUserParams = js.native
   /**
     * Fetches the URL to a migration archive.
     */
   @JSName("getArchiveForOrg")
-  var getArchiveForOrg_Original: Anon_EndpointParamsMigrationsGetArchiveForOrgParams = js.native
+  var getArchiveForOrg_Original: Anon_EndpointParamsAnyResponseMigrationsGetArchiveForOrgParams = js.native
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
@@ -205,12 +199,12 @@ trait Anon_CancelImport extends js.Object {
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   @JSName("unlockRepoForAuthenticatedUser")
-  var unlockRepoForAuthenticatedUser_Original: Anon_EndpointParamsMigrationsUnlockRepoForAuthenticatedUserParams = js.native
+  var unlockRepoForAuthenticatedUser_Original: Anon_EndpointParamsAnyResponseMigrationsUnlockRepoForAuthenticatedUserParams = js.native
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   @JSName("unlockRepoForOrg")
-  var unlockRepoForOrg_Original: Anon_EndpointParamsMigrationsUnlockRepoForOrgParams = js.native
+  var unlockRepoForOrg_Original: Anon_EndpointParamsAnyResponseMigrationsUnlockRepoForOrgParams = js.native
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API request. If no parameters are provided, the import will be restarted.
     *
@@ -225,18 +219,18 @@ trait Anon_CancelImport extends js.Object {
   /**
     * Stop an import for a repository.
     */
-  def cancelImport(): js.Promise[Response[MigrationsCancelImportResponse]] = js.native
-  def cancelImport(params: MigrationsCancelImportParams): js.Promise[Response[MigrationsCancelImportResponse]] = js.native
+  def cancelImport(): js.Promise[AnyResponse] = js.native
+  def cancelImport(params: MigrationsCancelImportParams): js.Promise[AnyResponse] = js.native
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](https://developer.github.com/v3/migrations/users/#get-a-list-of-user-migrations) and [Get the status of a user migration](https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
     */
-  def deleteArchiveForAuthenticatedUser(): js.Promise[Response[MigrationsDeleteArchiveForAuthenticatedUserResponse]] = js.native
-  def deleteArchiveForAuthenticatedUser(params: MigrationsDeleteArchiveForAuthenticatedUserParams): js.Promise[Response[MigrationsDeleteArchiveForAuthenticatedUserResponse]] = js.native
+  def deleteArchiveForAuthenticatedUser(): js.Promise[AnyResponse] = js.native
+  def deleteArchiveForAuthenticatedUser(params: MigrationsDeleteArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
-  def deleteArchiveForOrg(): js.Promise[Response[MigrationsDeleteArchiveForOrgResponse]] = js.native
-  def deleteArchiveForOrg(params: MigrationsDeleteArchiveForOrgParams): js.Promise[Response[MigrationsDeleteArchiveForOrgResponse]] = js.native
+  def deleteArchiveForOrg(): js.Promise[AnyResponse] = js.native
+  def deleteArchiveForOrg(params: MigrationsDeleteArchiveForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
@@ -260,13 +254,13 @@ trait Anon_CancelImport extends js.Object {
     *
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
-  def getArchiveForAuthenticatedUser(): js.Promise[Response[MigrationsGetArchiveForAuthenticatedUserResponse]] = js.native
-  def getArchiveForAuthenticatedUser(params: MigrationsGetArchiveForAuthenticatedUserParams): js.Promise[Response[MigrationsGetArchiveForAuthenticatedUserResponse]] = js.native
+  def getArchiveForAuthenticatedUser(): js.Promise[AnyResponse] = js.native
+  def getArchiveForAuthenticatedUser(params: MigrationsGetArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Fetches the URL to a migration archive.
     */
-  def getArchiveForOrg(): js.Promise[Response[MigrationsGetArchiveForOrgResponse]] = js.native
-  def getArchiveForOrg(params: MigrationsGetArchiveForOrgParams): js.Promise[Response[MigrationsGetArchiveForOrgResponse]] = js.native
+  def getArchiveForOrg(): js.Promise[AnyResponse] = js.native
+  def getArchiveForOrg(params: MigrationsGetArchiveForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
@@ -379,13 +373,13 @@ trait Anon_CancelImport extends js.Object {
   /**
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
-  def unlockRepoForAuthenticatedUser(): js.Promise[Response[MigrationsUnlockRepoForAuthenticatedUserResponse]] = js.native
-  def unlockRepoForAuthenticatedUser(params: MigrationsUnlockRepoForAuthenticatedUserParams): js.Promise[Response[MigrationsUnlockRepoForAuthenticatedUserResponse]] = js.native
+  def unlockRepoForAuthenticatedUser(): js.Promise[AnyResponse] = js.native
+  def unlockRepoForAuthenticatedUser(params: MigrationsUnlockRepoForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
-  def unlockRepoForOrg(): js.Promise[Response[MigrationsUnlockRepoForOrgResponse]] = js.native
-  def unlockRepoForOrg(params: MigrationsUnlockRepoForOrgParams): js.Promise[Response[MigrationsUnlockRepoForOrgResponse]] = js.native
+  def unlockRepoForOrg(): js.Promise[AnyResponse] = js.native
+  def unlockRepoForOrg(params: MigrationsUnlockRepoForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API request. If no parameters are provided, the import will be restarted.
     *

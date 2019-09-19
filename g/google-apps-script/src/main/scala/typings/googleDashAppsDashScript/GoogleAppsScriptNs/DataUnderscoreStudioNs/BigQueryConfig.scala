@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BigQueryConfig extends js.Object {
   def addQueryParameter(name: String, `type`: BigQueryParameterType, value: String): BigQueryConfig
-  def build(): js.Object
+  def build(): Config
   def printJson(): String
   def setAccessToken(accessToken: String): BigQueryConfig
   def setBillingProjectId(billingProjectId: String): BigQueryConfig
@@ -18,7 +18,7 @@ object BigQueryConfig {
   @scala.inline
   def apply(
     addQueryParameter: (String, BigQueryParameterType, String) => BigQueryConfig,
-    build: () => js.Object,
+    build: () => Config,
     printJson: () => String,
     setAccessToken: String => BigQueryConfig,
     setBillingProjectId: String => BigQueryConfig,

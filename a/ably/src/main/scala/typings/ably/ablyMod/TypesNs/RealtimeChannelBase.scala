@@ -11,9 +11,11 @@ trait RealtimeChannelBase extends EventEmitter[channelEventCallback, ChannelStat
   var state: ChannelState = js.native
   def setOptions(options: js.Any): Unit = js.native
   def unsubscribe(): Unit = js.native
-  def unsubscribe(eventOrCallback: String): Unit = js.native
-  def unsubscribe(eventOrCallback: String, listener: messageCallback[Message]): Unit = js.native
-  def unsubscribe(eventOrCallback: messageCallback[Message]): Unit = js.native
-  def unsubscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): Unit = js.native
+  def unsubscribe(eventOrListener: String): Unit = js.native
+  def unsubscribe(eventOrListener: String, listener: messageCallback[Message]): Unit = js.native
+  def unsubscribe(eventOrListener: js.Array[String]): Unit = js.native
+  def unsubscribe(eventOrListener: js.Array[String], listener: messageCallback[Message]): Unit = js.native
+  def unsubscribe(eventOrListener: messageCallback[Message]): Unit = js.native
+  def unsubscribe(eventOrListener: messageCallback[Message], listener: messageCallback[Message]): Unit = js.native
 }
 

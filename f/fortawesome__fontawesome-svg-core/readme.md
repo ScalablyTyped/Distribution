@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__fontawesome-svg-core
 
-Typings are for version 1.2.22
+Typings are for version 1.2.24
 
 ## Library description:
 The iconic font, CSS, and SVG framework

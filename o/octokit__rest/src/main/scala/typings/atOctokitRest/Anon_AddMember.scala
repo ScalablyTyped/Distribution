@@ -5,11 +5,12 @@ import typings.atOctokitRest.atOctokitRestMod.Response
 import typings.atOctokitRest.atOctokitRestMod.TeamsAddMemberParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsAddMemberResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsAddOrUpdateMembershipParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsAddOrUpdateMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsAddOrUpdateProjectParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsAddOrUpdateProjectResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsAddOrUpdateRepoParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsAddOrUpdateRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsCheckManagesRepoParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsCheckManagesRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionCommentParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionParams
@@ -17,11 +18,8 @@ import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteDiscussionCommentParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteDiscussionCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteDiscussionParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteDiscussionResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetByNameParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetByNameResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetDiscussionCommentParams
@@ -30,9 +28,11 @@ import typings.atOctokitRest.atOctokitRestMod.TeamsGetDiscussionParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetDiscussionResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetMemberParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetMembershipParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsGetMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsGetResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsListChildParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsListChildResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsListDiscussionCommentsParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsListDiscussionCommentsResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsListDiscussionsParams
@@ -50,13 +50,9 @@ import typings.atOctokitRest.atOctokitRestMod.TeamsListReposParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsListReposResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsListResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveMemberParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveMemberResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveMembershipParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveProjectParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveProjectResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveRepoParams
-import typings.atOctokitRest.atOctokitRestMod.TeamsRemoveRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsReviewProjectParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsReviewProjectResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateDiscussionCommentParams
@@ -98,7 +94,7 @@ trait Anon_AddMember extends js.Object {
     * If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.
     */
   @JSName("addOrUpdateMembership")
-  var addOrUpdateMembership_Original: Anon_EndpointParamsAnyResponsePromiseTeamsAddOrUpdateMembershipParams = js.native
+  var addOrUpdateMembership_Original: Anon_EndpointParamsPromiseResponseTeamsAddOrUpdateMembershipParams = js.native
   /**
     * Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
     */
@@ -112,14 +108,14 @@ trait Anon_AddMember extends js.Object {
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("addOrUpdateRepo")
-  var addOrUpdateRepo_Original: Anon_EndpointParamsPromiseResponseTeamsAddOrUpdateRepoParams = js.native
+  var addOrUpdateRepo_Original: Anon_EndpointParamsAnyResponsePromiseTeamsAddOrUpdateRepoParams = js.native
   /**
     * **Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.
     *
     * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   @JSName("checkManagesRepo")
-  var checkManagesRepo_Original: Anon_EndpointParamsAnyResponsePromiseTeamsCheckManagesRepoParams = js.native
+  var checkManagesRepo_Original: Anon_EndpointParamsPromiseResponseTeamsCheckManagesRepoParams = js.native
   /**
     * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
@@ -143,19 +139,19 @@ trait Anon_AddMember extends js.Object {
     * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deleteDiscussionComment")
-  var deleteDiscussionComment_Original: Anon_EndpointParamsPromiseResponseTeamsDeleteDiscussionCommentParams = js.native
+  var deleteDiscussionComment_Original: Anon_EndpointParamsAnyResponsePromiseTeamsDeleteDiscussionCommentParams = js.native
   /**
     * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deleteDiscussion")
-  var deleteDiscussion_Original: Anon_EndpointParamsPromiseResponseTeamsDeleteDiscussionParams = js.native
+  var deleteDiscussion_Original: Anon_EndpointParamsAnyResponsePromiseTeamsDeleteDiscussionParams = js.native
   /**
     * To delete a team, the authenticated user must be a team maintainer or an owner of the org associated with the team.
     *
     * If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
     */
   @JSName("delete")
-  var delete_Original: Anon_EndpointParamsPromiseResponseTeamsDeleteParams = js.native
+  var delete_Original: Anon_EndpointParamsAnyResponsePromiseTeamsDeleteParams = js.native
   /**
     * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
     */
@@ -188,14 +184,14 @@ trait Anon_AddMember extends js.Object {
     * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
     */
   @JSName("getMembership")
-  var getMembership_Original: Anon_EndpointParamsAnyResponsePromiseTeamsGetMembershipParams = js.native
+  var getMembership_Original: Anon_EndpointParamsPromiseResponseTeamsGetMembershipParams = js.native
   @JSName("get")
   var get_Original: Anon_EndpointParamsPromiseResponseTeamsGetParams = js.native
   /**
     * At this time, the `hellcat-preview` media type is required to use this endpoint.
     */
   @JSName("listChild")
-  var listChild_Original: Anon_EndpointParamsAnyResponsePromiseTeamsListChildParams = js.native
+  var listChild_Original: Anon_EndpointParamsPromiseResponseTeamsListChildParams = js.native
   /**
     * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
@@ -232,7 +228,7 @@ trait Anon_AddMember extends js.Object {
   @JSName("listRepos")
   var listRepos_Original: Anon_EndpointParamsPromiseResponseTeamsListReposParams = js.native
   @JSName("list")
-  var list_Original: Anon_EndpointParamsPromiseResponse = js.native
+  var list_Original: Anon_EndpointParamsPromiseResponseTeamsListParams = js.native
   /**
     * The "Remove team member" API (described below) is deprecated.
     *
@@ -245,7 +241,7 @@ trait Anon_AddMember extends js.Object {
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
   @JSName("removeMember")
-  var removeMember_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveMemberParams = js.native
+  var removeMember_Original: Anon_EndpointParamsAnyResponsePromiseTeamsRemoveMemberParams = js.native
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
     *
@@ -254,17 +250,17 @@ trait Anon_AddMember extends js.Object {
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
   @JSName("removeMembership")
-  var removeMembership_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveMembershipParams = js.native
+  var removeMembership_Original: Anon_EndpointParamsAnyResponsePromiseTeamsRemoveMembershipParams = js.native
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. **Note:** This endpoint removes the project from the team, but does not delete it.
     */
   @JSName("removeProject")
-  var removeProject_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveProjectParams = js.native
+  var removeProject_Original: Anon_EndpointParamsAnyResponsePromiseTeamsRemoveProjectParams = js.native
   /**
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. NOTE: This does not delete the repository, it just removes it from the team.
     */
   @JSName("removeRepo")
-  var removeRepo_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveRepoParams = js.native
+  var removeRepo_Original: Anon_EndpointParamsAnyResponsePromiseTeamsRemoveRepoParams = js.native
   /**
     * Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. If you pass the `hellcat-preview` media type, the response will include projects inherited from a parent team.
     */
@@ -313,8 +309,8 @@ trait Anon_AddMember extends js.Object {
     *
     * If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.
     */
-  def addOrUpdateMembership(): js.Promise[AnyResponse] = js.native
-  def addOrUpdateMembership(params: TeamsAddOrUpdateMembershipParams): js.Promise[AnyResponse] = js.native
+  def addOrUpdateMembership(): js.Promise[Response[TeamsAddOrUpdateMembershipResponse]] = js.native
+  def addOrUpdateMembership(params: TeamsAddOrUpdateMembershipParams): js.Promise[Response[TeamsAddOrUpdateMembershipResponse]] = js.native
   /**
     * Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
     */
@@ -327,15 +323,15 @@ trait Anon_AddMember extends js.Object {
     *
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
-  def addOrUpdateRepo(): js.Promise[Response[TeamsAddOrUpdateRepoResponse]] = js.native
-  def addOrUpdateRepo(params: TeamsAddOrUpdateRepoParams): js.Promise[Response[TeamsAddOrUpdateRepoResponse]] = js.native
+  def addOrUpdateRepo(): js.Promise[AnyResponse] = js.native
+  def addOrUpdateRepo(params: TeamsAddOrUpdateRepoParams): js.Promise[AnyResponse] = js.native
   /**
     * **Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.
     *
     * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
-  def checkManagesRepo(): js.Promise[AnyResponse] = js.native
-  def checkManagesRepo(params: TeamsCheckManagesRepoParams): js.Promise[AnyResponse] = js.native
+  def checkManagesRepo(): js.Promise[Response[TeamsCheckManagesRepoResponse]] = js.native
+  def checkManagesRepo(params: TeamsCheckManagesRepoParams): js.Promise[Response[TeamsCheckManagesRepoResponse]] = js.native
   /**
     * To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
     */
@@ -360,18 +356,18 @@ trait Anon_AddMember extends js.Object {
     *
     * If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
     */
-  def delete(): js.Promise[Response[TeamsDeleteResponse]] = js.native
-  def delete(params: TeamsDeleteParams): js.Promise[Response[TeamsDeleteResponse]] = js.native
+  def delete(): js.Promise[AnyResponse] = js.native
+  def delete(params: TeamsDeleteParams): js.Promise[AnyResponse] = js.native
   /**
     * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
-  def deleteDiscussion(): js.Promise[Response[TeamsDeleteDiscussionResponse]] = js.native
-  def deleteDiscussion(params: TeamsDeleteDiscussionParams): js.Promise[Response[TeamsDeleteDiscussionResponse]] = js.native
+  def deleteDiscussion(): js.Promise[AnyResponse] = js.native
+  def deleteDiscussion(params: TeamsDeleteDiscussionParams): js.Promise[AnyResponse] = js.native
   /**
     * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
-  def deleteDiscussionComment(): js.Promise[Response[TeamsDeleteDiscussionCommentResponse]] = js.native
-  def deleteDiscussionComment(params: TeamsDeleteDiscussionCommentParams): js.Promise[Response[TeamsDeleteDiscussionCommentResponse]] = js.native
+  def deleteDiscussionComment(): js.Promise[AnyResponse] = js.native
+  def deleteDiscussionComment(params: TeamsDeleteDiscussionCommentParams): js.Promise[AnyResponse] = js.native
   def get(): js.Promise[Response[TeamsGetResponse]] = js.native
   def get(params: TeamsGetParams): js.Promise[Response[TeamsGetResponse]] = js.native
   /**
@@ -405,15 +401,15 @@ trait Anon_AddMember extends js.Object {
     *
     * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
     */
-  def getMembership(): js.Promise[AnyResponse] = js.native
-  def getMembership(params: TeamsGetMembershipParams): js.Promise[AnyResponse] = js.native
+  def getMembership(): js.Promise[Response[TeamsGetMembershipResponse]] = js.native
+  def getMembership(params: TeamsGetMembershipParams): js.Promise[Response[TeamsGetMembershipResponse]] = js.native
   def list(): js.Promise[Response[TeamsListResponse]] = js.native
   def list(params: TeamsListParams): js.Promise[Response[TeamsListResponse]] = js.native
   /**
     * At this time, the `hellcat-preview` media type is required to use this endpoint.
     */
-  def listChild(): js.Promise[AnyResponse] = js.native
-  def listChild(params: TeamsListChildParams): js.Promise[AnyResponse] = js.native
+  def listChild(): js.Promise[Response[TeamsListChildResponse]] = js.native
+  def listChild(params: TeamsListChildParams): js.Promise[Response[TeamsListChildResponse]] = js.native
   /**
     * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
@@ -460,8 +456,8 @@ trait Anon_AddMember extends js.Object {
     *
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
-  def removeMember(): js.Promise[Response[TeamsRemoveMemberResponse]] = js.native
-  def removeMember(params: TeamsRemoveMemberParams): js.Promise[Response[TeamsRemoveMemberResponse]] = js.native
+  def removeMember(): js.Promise[AnyResponse] = js.native
+  def removeMember(params: TeamsRemoveMemberParams): js.Promise[AnyResponse] = js.native
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
     *
@@ -469,18 +465,18 @@ trait Anon_AddMember extends js.Object {
     *
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
-  def removeMembership(): js.Promise[Response[TeamsRemoveMembershipResponse]] = js.native
-  def removeMembership(params: TeamsRemoveMembershipParams): js.Promise[Response[TeamsRemoveMembershipResponse]] = js.native
+  def removeMembership(): js.Promise[AnyResponse] = js.native
+  def removeMembership(params: TeamsRemoveMembershipParams): js.Promise[AnyResponse] = js.native
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. **Note:** This endpoint removes the project from the team, but does not delete it.
     */
-  def removeProject(): js.Promise[Response[TeamsRemoveProjectResponse]] = js.native
-  def removeProject(params: TeamsRemoveProjectParams): js.Promise[Response[TeamsRemoveProjectResponse]] = js.native
+  def removeProject(): js.Promise[AnyResponse] = js.native
+  def removeProject(params: TeamsRemoveProjectParams): js.Promise[AnyResponse] = js.native
   /**
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. NOTE: This does not delete the repository, it just removes it from the team.
     */
-  def removeRepo(): js.Promise[Response[TeamsRemoveRepoResponse]] = js.native
-  def removeRepo(params: TeamsRemoveRepoParams): js.Promise[Response[TeamsRemoveRepoResponse]] = js.native
+  def removeRepo(): js.Promise[AnyResponse] = js.native
+  def removeRepo(params: TeamsRemoveRepoParams): js.Promise[AnyResponse] = js.native
   /**
     * Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. If you pass the `hellcat-preview` media type, the response will include projects inherited from a parent team.
     */

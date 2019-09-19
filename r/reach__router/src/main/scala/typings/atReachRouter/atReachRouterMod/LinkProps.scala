@@ -9,22 +9,21 @@ import scala.scalajs.js.annotation._
   var getProps: js.UndefOr[js.Function1[/* props */ LinkGetProps, js.Object]] = js.undefined
   var replace: js.UndefOr[Boolean] = js.undefined
   var state: js.UndefOr[TState] = js.undefined
-  var to: js.UndefOr[String] = js.undefined
+  var to: String
 }
 
 object LinkProps {
   @scala.inline
   def apply[TState](
+    to: String,
     getProps: /* props */ LinkGetProps => js.Object = null,
     replace: js.UndefOr[Boolean] = js.undefined,
-    state: TState = null,
-    to: String = null
+    state: TState = null
   ): LinkProps[TState] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(to = to)
     if (getProps != null) __obj.updateDynamic("getProps")(js.Any.fromFunction1(getProps))
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to)
     __obj.asInstanceOf[LinkProps[TState]]
   }
 }

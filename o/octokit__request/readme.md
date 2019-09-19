@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__request
 
-Typings are for version 5.0.3
+Typings are for version 5.1.0
 
 ## Library description:
 Send parameterized requests to GitHub’s APIs with sensible defaults in browsers and Node

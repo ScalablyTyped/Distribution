@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.atJupyterlabUiDashComponents.atJupyterlabUiDashComponentsStrings.splash
   - typings.atJupyterlabUiDashComponents.atJupyterlabUiDashComponentsStrings.statusBar
   - typings.atJupyterlabUiDashComponents.atJupyterlabUiDashComponentsStrings.tabManager
+  - typings.atJupyterlabUiDashComponents.atJupyterlabUiDashComponentsStrings.toolbarButton
   - typings.atJupyterlabUiDashComponents.atJupyterlabUiDashComponentsStrings.unset
 */
 trait IconKindType extends js.Object

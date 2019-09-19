@@ -27,7 +27,7 @@ trait SearchUsersParams extends js.Object {
     */
   var q: String
   /**
-    * Sorts the results of your query by number of `followers` or `repositories`, or when the person `joined` GitHub.
+    * Sorts the results of your query by number of `followers` or `repositories`, or when the person `joined` GitHub. Default: [best match](https://developer.github.com/v3/search/#ranking-search-results)
     */
   var sort: js.UndefOr[followers | repositories | joined] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for env-editor
 
-Typings are for version 0.4.0
+Typings are for version 0.4.1
 
 ## Library description:
 Get metadata on the default editor or a specific editor

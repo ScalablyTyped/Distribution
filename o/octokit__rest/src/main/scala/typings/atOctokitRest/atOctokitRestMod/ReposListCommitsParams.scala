@@ -24,7 +24,7 @@ trait ReposListCommitsParams extends js.Object {
   var per_page: js.UndefOr[Double] = js.undefined
   var repo: String
   /**
-    * SHA or branch to start listing commits from.
+    * SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`).
     */
   var sha: js.UndefOr[String] = js.undefined
   /**

@@ -1,7 +1,7 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsAddRepoToInstallationParams
-import typings.atOctokitRest.atOctokitRestMod.AppsAddRepoToInstallationResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAnyParams
 import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAnyResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAnyStubbedParams
@@ -13,7 +13,6 @@ import typings.atOctokitRest.atOctokitRestMod.AppsCreateFromManifestResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateInstallationTokenParams
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateInstallationTokenResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsDeleteInstallationParams
-import typings.atOctokitRest.atOctokitRestMod.AppsDeleteInstallationResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsFindOrgInstallationParams
 import typings.atOctokitRest.atOctokitRestMod.AppsFindOrgInstallationResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsFindRepoInstallationParams
@@ -52,7 +51,6 @@ import typings.atOctokitRest.atOctokitRestMod.AppsListPlansStubbedResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsListReposParams
 import typings.atOctokitRest.atOctokitRestMod.AppsListReposResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsRemoveRepoFromInstallationParams
-import typings.atOctokitRest.atOctokitRestMod.AppsRemoveRepoFromInstallationResponse
 import typings.atOctokitRest.atOctokitRestMod.EmptyParams
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
@@ -67,7 +65,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
     */
   @JSName("addRepoToInstallation")
-  var addRepoToInstallation_Original: Anon_EndpointParamsAppsAddRepoToInstallationParams = js.native
+  var addRepoToInstallation_Original: Anon_EndpointParamsAnyResponse = js.native
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
@@ -115,7 +113,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("deleteInstallation")
-  var deleteInstallation_Original: Anon_EndpointParamsAppsDeleteInstallationParams = js.native
+  var deleteInstallation_Original: Anon_EndpointParamsAnyResponseAppsDeleteInstallationParams = js.native
   /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
@@ -253,14 +251,14 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
     */
   @JSName("removeRepoFromInstallation")
-  var removeRepoFromInstallation_Original: Anon_EndpointParamsAppsRemoveRepoFromInstallationParams = js.native
+  var removeRepoFromInstallation_Original: Anon_EndpointParamsAnyResponseAppsRemoveRepoFromInstallationParams = js.native
   /**
     * Add a single repository to an installation. The authenticated user must have admin access to the repository.
     *
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
     */
-  def addRepoToInstallation(): js.Promise[Response[AppsAddRepoToInstallationResponse]] = js.native
-  def addRepoToInstallation(params: AppsAddRepoToInstallationParams): js.Promise[Response[AppsAddRepoToInstallationResponse]] = js.native
+  def addRepoToInstallation(): js.Promise[AnyResponse] = js.native
+  def addRepoToInstallation(params: AppsAddRepoToInstallationParams): js.Promise[AnyResponse] = js.native
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
@@ -307,8 +305,8 @@ trait Anon_AddRepoToInstallation extends js.Object {
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
-  def deleteInstallation(): js.Promise[Response[AppsDeleteInstallationResponse]] = js.native
-  def deleteInstallation(params: AppsDeleteInstallationParams): js.Promise[Response[AppsDeleteInstallationResponse]] = js.native
+  def deleteInstallation(): js.Promise[AnyResponse] = js.native
+  def deleteInstallation(params: AppsDeleteInstallationParams): js.Promise[AnyResponse] = js.native
   /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
@@ -445,7 +443,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     *
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
     */
-  def removeRepoFromInstallation(): js.Promise[Response[AppsRemoveRepoFromInstallationResponse]] = js.native
-  def removeRepoFromInstallation(params: AppsRemoveRepoFromInstallationParams): js.Promise[Response[AppsRemoveRepoFromInstallationResponse]] = js.native
+  def removeRepoFromInstallation(): js.Promise[AnyResponse] = js.native
+  def removeRepoFromInstallation(params: AppsRemoveRepoFromInstallationParams): js.Promise[AnyResponse] = js.native
 }
 

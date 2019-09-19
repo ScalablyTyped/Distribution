@@ -1,6 +1,5 @@
 package typings.frisby.frisbyMod
 
-import typings.nodeDashFetch.Anon_Href
 import typings.nodeDashFetch.Anon_Size
 import typings.nodeDashFetch.nodeDashFetchMod.BlobOptions
 import typings.nodeDashFetch.nodeDashFetchMod.BlobPart
@@ -46,12 +45,8 @@ object nodeFetchNs extends js.Object {
   @js.native
   class Request protected ()
     extends typings.nodeDashFetch.nodeDashFetchMod.Request {
-    def this(input: String) = this()
-    def this(input: Anon_Href) = this()
-    def this(input: typings.nodeDashFetch.nodeDashFetchMod.Request) = this()
-    def this(input: String, init: RequestInit) = this()
-    def this(input: Anon_Href, init: RequestInit) = this()
-    def this(input: typings.nodeDashFetch.nodeDashFetchMod.Request, init: RequestInit) = this()
+    def this(input: RequestInfo) = this()
+    def this(input: RequestInfo, init: RequestInit) = this()
   }
   
   @js.native

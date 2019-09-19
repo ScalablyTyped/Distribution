@@ -1,9 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs
 
 import typings.googleDashAppsDashScript.Anon_FunctionName
+import typings.googleDashAppsDashScript.Anon_Template
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.Blob
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.BlobSource
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.User
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.HTMLNs.HtmlOutput
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -70,6 +72,7 @@ trait Spreadsheet extends js.Object {
   def getSheetByName(name: String): Sheet | Null = js.native
   def getSheetId(): Integer = js.native
   def getSheetName(): String = js.native
+  /** @deprecated DO NOT USE */
   def getSheetProtection(): PageProtection = js.native
   def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[_]] = js.native
   def getSheets(): js.Array[Sheet] = js.native
@@ -92,15 +95,17 @@ trait Spreadsheet extends js.Object {
   def insertRowsAfter(afterPosition: Integer, howMany: Integer): Sheet = js.native
   def insertRowsBefore(beforePosition: Integer, howMany: Integer): Sheet = js.native
   def insertSheet(): Sheet = js.native
-  def insertSheet(options: js.Any): Sheet = js.native
+  def insertSheet(options: Anon_Template): Sheet = js.native
   def insertSheet(sheetIndex: Integer): Sheet = js.native
-  def insertSheet(sheetIndex: Integer, options: js.Any): Sheet = js.native
+  def insertSheet(sheetIndex: Integer, options: Anon_Template): Sheet = js.native
   def insertSheet(sheetName: String): Sheet = js.native
-  def insertSheet(sheetName: String, options: js.Any): Sheet = js.native
+  def insertSheet(sheetName: String, options: Anon_Template): Sheet = js.native
   def insertSheet(sheetName: String, sheetIndex: Integer): Sheet = js.native
-  def insertSheet(sheetName: String, sheetIndex: Integer, options: js.Any): Sheet = js.native
+  def insertSheet(sheetName: String, sheetIndex: Integer, options: Anon_Template): Sheet = js.native
   def insertSheetWithDataSourceTable(spec: DataSourceSpec): Sheet = js.native
+  /** @deprecated DO NOT USE */
   def isAnonymousView(): Boolean = js.native
+  /** @deprecated DO NOT USE */
   def isAnonymousWrite(): Boolean = js.native
   def isColumnHiddenByUser(columnPosition: Integer): Boolean = js.native
   def isIterativeCalculationEnabled(): Boolean = js.native
@@ -122,6 +127,7 @@ trait Spreadsheet extends js.Object {
   def setActiveSelection(range: Range): Range = js.native
   def setActiveSheet(sheet: Sheet): Sheet = js.native
   def setActiveSheet(sheet: Sheet, restoreSelection: Boolean): Sheet = js.native
+  /** @deprecated DO NOT USE */
   def setAnonymousAccess(anonymousReadAllowed: Boolean, anonymousWriteAllowed: Boolean): Unit = js.native
   def setColumnWidth(columnPosition: Integer, width: Integer): Sheet = js.native
   def setCurrentCell(cell: Range): Range = js.native
@@ -133,10 +139,11 @@ trait Spreadsheet extends js.Object {
   def setNamedRange(name: String, range: Range): Unit = js.native
   def setRecalculationInterval(recalculationInterval: RecalculationInterval): Spreadsheet = js.native
   def setRowHeight(rowPosition: Integer, height: Integer): Sheet = js.native
+  /** @deprecated DO NOT USE */
   def setSheetProtection(permissions: PageProtection): Unit = js.native
   def setSpreadsheetLocale(locale: String): Unit = js.native
   def setSpreadsheetTimeZone(timezone: String): Unit = js.native
-  def show(userInterface: js.Any): Unit = js.native
+  def show(userInterface: HtmlOutput): Unit = js.native
   def sort(columnPosition: Integer): Sheet = js.native
   def sort(columnPosition: Integer, ascending: Boolean): Sheet = js.native
   def toast(msg: String): Unit = js.native
@@ -144,6 +151,6 @@ trait Spreadsheet extends js.Object {
   def toast(msg: String, title: String, timeoutSeconds: Double): Unit = js.native
   def unhideColumn(column: Range): Unit = js.native
   def unhideRow(row: Range): Unit = js.native
-  def updateMenu(name: String, subMenus: js.Array[_]): Unit = js.native
+  def updateMenu(name: String, subMenus: js.Array[Anon_FunctionName]): Unit = js.native
 }
 

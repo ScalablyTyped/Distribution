@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IndexEntry extends js.Object {
   var key: String
-  var value: String | RID
+  var value: String | ORID
 }
 
 object IndexEntry {
   @scala.inline
-  def apply(key: String, value: String | RID): IndexEntry = {
+  def apply(key: String, value: String | ORID): IndexEntry = {
     val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndexEntry]

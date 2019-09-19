@@ -6,9 +6,7 @@ import typings.atOctokitRest.atOctokitRestMod.Response
 import typings.atOctokitRest.atOctokitRestMod.UsersAddEmailsParams
 import typings.atOctokitRest.atOctokitRestMod.UsersAddEmailsResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersBlockParams
-import typings.atOctokitRest.atOctokitRestMod.UsersBlockResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersCheckBlockedParams
-import typings.atOctokitRest.atOctokitRestMod.UsersCheckBlockedResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersCheckFollowingForUserParams
 import typings.atOctokitRest.atOctokitRestMod.UsersCheckFollowingParams
 import typings.atOctokitRest.atOctokitRestMod.UsersCreateGpgKeyParams
@@ -16,13 +14,10 @@ import typings.atOctokitRest.atOctokitRestMod.UsersCreateGpgKeyResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersCreatePublicKeyParams
 import typings.atOctokitRest.atOctokitRestMod.UsersCreatePublicKeyResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersDeleteEmailsParams
-import typings.atOctokitRest.atOctokitRestMod.UsersDeleteEmailsResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersDeleteGpgKeyParams
-import typings.atOctokitRest.atOctokitRestMod.UsersDeleteGpgKeyResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersDeletePublicKeyParams
-import typings.atOctokitRest.atOctokitRestMod.UsersDeletePublicKeyResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersFollowParams
-import typings.atOctokitRest.atOctokitRestMod.UsersFollowResponse
+import typings.atOctokitRest.atOctokitRestMod.UsersGetAuthenticatedResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersGetByUsernameParams
 import typings.atOctokitRest.atOctokitRestMod.UsersGetByUsernameResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersGetContextForUserParams
@@ -57,9 +52,7 @@ import typings.atOctokitRest.atOctokitRestMod.UsersListResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersTogglePrimaryEmailVisibilityParams
 import typings.atOctokitRest.atOctokitRestMod.UsersTogglePrimaryEmailVisibilityResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersUnblockParams
-import typings.atOctokitRest.atOctokitRestMod.UsersUnblockResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersUnfollowParams
-import typings.atOctokitRest.atOctokitRestMod.UsersUnfollowResponse
 import typings.atOctokitRest.atOctokitRestMod.UsersUpdateAuthenticatedParams
 import typings.atOctokitRest.atOctokitRestMod.UsersUpdateAuthenticatedResponse
 import scala.scalajs.js
@@ -74,14 +67,14 @@ trait Anon_AddEmails extends js.Object {
   @JSName("addEmails")
   var addEmails_Original: Anon_EndpointParamsPromiseResponseUsersAddEmailsParams = js.native
   @JSName("block")
-  var block_Original: Anon_EndpointParamsPromiseResponseUsersBlockParams = js.native
+  var block_Original: Anon_EndpointParamsAnyResponsePromiseUsersBlockParams = js.native
   /**
     * If the user is blocked:
     *
     * If the user is not blocked:
     */
   @JSName("checkBlocked")
-  var checkBlocked_Original: Anon_EndpointParamsPromiseResponseUsersCheckBlockedParams = js.native
+  var checkBlocked_Original: Anon_EndpointParamsAnyResponsePromiseUsersCheckBlockedParams = js.native
   @JSName("checkFollowingForUser")
   var checkFollowingForUser_Original: Anon_EndpointParamsAnyResponsePromiseUsersCheckFollowingForUserParams = js.native
   @JSName("checkFollowing")
@@ -100,31 +93,31 @@ trait Anon_AddEmails extends js.Object {
     * This endpoint is accessible with the `user` scope.
     */
   @JSName("deleteEmails")
-  var deleteEmails_Original: Anon_EndpointParamsPromiseResponseUsersDeleteEmailsParams = js.native
+  var deleteEmails_Original: Anon_EndpointParamsAnyResponsePromiseUsersDeleteEmailsParams = js.native
   /**
     * Removes a GPG key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:gpg_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deleteGpgKey")
-  var deleteGpgKey_Original: Anon_EndpointParamsPromiseResponseUsersDeleteGpgKeyParams = js.native
+  var deleteGpgKey_Original: Anon_EndpointParamsAnyResponsePromiseUsersDeleteGpgKeyParams = js.native
   /**
     * Removes a public SSH key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:public_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deletePublicKey")
-  var deletePublicKey_Original: Anon_EndpointParamsPromiseResponseUsersDeletePublicKeyParams = js.native
+  var deletePublicKey_Original: Anon_EndpointParamsAnyResponsePromiseUsersDeletePublicKeyParams = js.native
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     *
     * Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
   @JSName("follow")
-  var follow_Original: Anon_EndpointParamsPromiseResponseUsersFollowParams = js.native
+  var follow_Original: Anon_EndpointParamsAnyResponsePromiseUsersFollowParams = js.native
   /**
     * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.
     *
     * Lists public profile information when authenticated through OAuth without the `user` scope.
     */
   @JSName("getAuthenticated")
-  var getAuthenticated_Original: Anon_EndpointParamsAnyResponseEmptyParams = js.native
+  var getAuthenticated_Original: Anon_EndpointParamsEmptyParamsPromiseResponse = js.native
   /**
     * Provides publicly available information about someone with a GitHub account.
     *
@@ -157,7 +150,7 @@ trait Anon_AddEmails extends js.Object {
     * List the users you've blocked on your personal account.
     */
   @JSName("listBlocked")
-  var listBlocked_Original: Anon_EndpointParamsEmptyParamsPromiseResponse = js.native
+  var listBlocked_Original: Anon_EndpointParamsEmptyParamsPromiseResponseUsersListBlockedResponse = js.native
   /**
     * Lists all of your email addresses, and specifies which one is visible to the public. This endpoint is accessible with the `user:email` scope.
     */
@@ -209,12 +202,12 @@ trait Anon_AddEmails extends js.Object {
   @JSName("togglePrimaryEmailVisibility")
   var togglePrimaryEmailVisibility_Original: Anon_EndpointParamsPromiseResponseUsersTogglePrimaryEmailVisibilityParams = js.native
   @JSName("unblock")
-  var unblock_Original: Anon_EndpointParamsPromiseResponseUsersUnblockParams = js.native
+  var unblock_Original: Anon_EndpointParamsAnyResponsePromiseUsersUnblockParams = js.native
   /**
     * Unfollowing a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
   @JSName("unfollow")
-  var unfollow_Original: Anon_EndpointParamsPromiseResponseUsersUnfollowParams = js.native
+  var unfollow_Original: Anon_EndpointParamsAnyResponsePromiseUsersUnfollowParams = js.native
   /**
     * **Note:** If your email is set to private and you send an `email` parameter as part of this request to update your profile, your privacy settings are still enforced: the email address will not be displayed on your public profile or via the API.
     */
@@ -225,15 +218,15 @@ trait Anon_AddEmails extends js.Object {
     */
   def addEmails(): js.Promise[Response[UsersAddEmailsResponse]] = js.native
   def addEmails(params: UsersAddEmailsParams): js.Promise[Response[UsersAddEmailsResponse]] = js.native
-  def block(): js.Promise[Response[UsersBlockResponse]] = js.native
-  def block(params: UsersBlockParams): js.Promise[Response[UsersBlockResponse]] = js.native
+  def block(): js.Promise[AnyResponse] = js.native
+  def block(params: UsersBlockParams): js.Promise[AnyResponse] = js.native
   /**
     * If the user is blocked:
     *
     * If the user is not blocked:
     */
-  def checkBlocked(): js.Promise[Response[UsersCheckBlockedResponse]] = js.native
-  def checkBlocked(params: UsersCheckBlockedParams): js.Promise[Response[UsersCheckBlockedResponse]] = js.native
+  def checkBlocked(): js.Promise[AnyResponse] = js.native
+  def checkBlocked(params: UsersCheckBlockedParams): js.Promise[AnyResponse] = js.native
   def checkFollowing(): js.Promise[AnyResponse] = js.native
   def checkFollowing(params: UsersCheckFollowingParams): js.Promise[AnyResponse] = js.native
   def checkFollowingForUser(): js.Promise[AnyResponse] = js.native
@@ -251,32 +244,32 @@ trait Anon_AddEmails extends js.Object {
   /**
     * This endpoint is accessible with the `user` scope.
     */
-  def deleteEmails(): js.Promise[Response[UsersDeleteEmailsResponse]] = js.native
-  def deleteEmails(params: UsersDeleteEmailsParams): js.Promise[Response[UsersDeleteEmailsResponse]] = js.native
+  def deleteEmails(): js.Promise[AnyResponse] = js.native
+  def deleteEmails(params: UsersDeleteEmailsParams): js.Promise[AnyResponse] = js.native
   /**
     * Removes a GPG key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:gpg_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
-  def deleteGpgKey(): js.Promise[Response[UsersDeleteGpgKeyResponse]] = js.native
-  def deleteGpgKey(params: UsersDeleteGpgKeyParams): js.Promise[Response[UsersDeleteGpgKeyResponse]] = js.native
+  def deleteGpgKey(): js.Promise[AnyResponse] = js.native
+  def deleteGpgKey(params: UsersDeleteGpgKeyParams): js.Promise[AnyResponse] = js.native
   /**
     * Removes a public SSH key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:public_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
-  def deletePublicKey(): js.Promise[Response[UsersDeletePublicKeyResponse]] = js.native
-  def deletePublicKey(params: UsersDeletePublicKeyParams): js.Promise[Response[UsersDeletePublicKeyResponse]] = js.native
+  def deletePublicKey(): js.Promise[AnyResponse] = js.native
+  def deletePublicKey(params: UsersDeletePublicKeyParams): js.Promise[AnyResponse] = js.native
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     *
     * Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
-  def follow(): js.Promise[Response[UsersFollowResponse]] = js.native
-  def follow(params: UsersFollowParams): js.Promise[Response[UsersFollowResponse]] = js.native
+  def follow(): js.Promise[AnyResponse] = js.native
+  def follow(params: UsersFollowParams): js.Promise[AnyResponse] = js.native
   /**
     * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.
     *
     * Lists public profile information when authenticated through OAuth without the `user` scope.
     */
-  def getAuthenticated(): js.Promise[AnyResponse] = js.native
-  def getAuthenticated(params: EmptyParams): js.Promise[AnyResponse] = js.native
+  def getAuthenticated(): js.Promise[Response[UsersGetAuthenticatedResponse]] = js.native
+  def getAuthenticated(params: EmptyParams): js.Promise[Response[UsersGetAuthenticatedResponse]] = js.native
   /**
     * Provides publicly available information about someone with a GitHub account.
     *
@@ -360,13 +353,13 @@ trait Anon_AddEmails extends js.Object {
     */
   def togglePrimaryEmailVisibility(): js.Promise[Response[UsersTogglePrimaryEmailVisibilityResponse]] = js.native
   def togglePrimaryEmailVisibility(params: UsersTogglePrimaryEmailVisibilityParams): js.Promise[Response[UsersTogglePrimaryEmailVisibilityResponse]] = js.native
-  def unblock(): js.Promise[Response[UsersUnblockResponse]] = js.native
-  def unblock(params: UsersUnblockParams): js.Promise[Response[UsersUnblockResponse]] = js.native
+  def unblock(): js.Promise[AnyResponse] = js.native
+  def unblock(params: UsersUnblockParams): js.Promise[AnyResponse] = js.native
   /**
     * Unfollowing a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
-  def unfollow(): js.Promise[Response[UsersUnfollowResponse]] = js.native
-  def unfollow(params: UsersUnfollowParams): js.Promise[Response[UsersUnfollowResponse]] = js.native
+  def unfollow(): js.Promise[AnyResponse] = js.native
+  def unfollow(params: UsersUnfollowParams): js.Promise[AnyResponse] = js.native
   /**
     * **Note:** If your email is set to private and you send an `email` parameter as part of this request to update your profile, your privacy settings are still enforced: the email address will not be displayed on your public profile or via the API.
     */

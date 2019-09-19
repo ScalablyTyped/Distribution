@@ -1,5 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs
 
+import typings.echarts.Anon_Max
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxis
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.DataObject
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Label
@@ -117,8 +118,8 @@ object SingleAxis {
     inverse: js.UndefOr[Boolean] = js.undefined,
     left: String | Double = null,
     logBase: Int | Double = null,
-    max: Double | String = null,
-    min: Double | String = null,
+    max: Double | String | (js.Function1[/* value */ Anon_Max, Double]) = null,
+    min: Double | String | (js.Function1[/* value */ Anon_Max, Double]) = null,
     minInterval: js.Any = null,
     name: String = null,
     nameGap: Int | Double = null,

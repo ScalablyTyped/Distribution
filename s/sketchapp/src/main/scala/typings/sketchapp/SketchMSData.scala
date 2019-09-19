@@ -5,21 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SketchMSData extends js.Object {
-  var document: SketchMSDocumentData
-  var meta: SketchMSMetadata
-  var pages: js.Array[SketchMSPage]
+  var document: SketchMSDocument
+  var meta: SketchMSMeta
+  var pages: js.Array[SketchMSPageLayer]
   var previews: js.Array[SketchMSPreview]
-  var user: SketchMSUserData
+  var user: SketchMSUser
 }
 
 object SketchMSData {
   @scala.inline
   def apply(
-    document: SketchMSDocumentData,
-    meta: SketchMSMetadata,
-    pages: js.Array[SketchMSPage],
+    document: SketchMSDocument,
+    meta: SketchMSMeta,
+    pages: js.Array[SketchMSPageLayer],
     previews: js.Array[SketchMSPreview],
-    user: SketchMSUserData
+    user: SketchMSUser
   ): SketchMSData = {
     val __obj = js.Dynamic.literal(document = document, meta = meta, pages = pages, previews = previews, user = user.asInstanceOf[js.Any])
   

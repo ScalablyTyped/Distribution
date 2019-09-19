@@ -19,6 +19,7 @@ class IconRegistry () extends IIconRegistry {
   var _classNameToName: js.Any = js.native
   var _debug: js.Any = js.native
   var _nameToClassName: js.Any = js.native
+  var _resolveName: js.Any = js.native
   var _svg: js.Any = js.native
   /**
     * Add the raw text representation of an svg icon to this registry

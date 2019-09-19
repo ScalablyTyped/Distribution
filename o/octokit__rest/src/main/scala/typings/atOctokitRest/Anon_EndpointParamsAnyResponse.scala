@@ -1,9 +1,9 @@
 package typings.atOctokitRest
 
 import typings.atOctokitRest.atOctokitRestMod.AnyResponse
+import typings.atOctokitRest.atOctokitRestMod.AppsAddRepoToInstallationParams
 import typings.atOctokitRest.atOctokitRestMod.Endpoint
 import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
-import typings.atOctokitRest.atOctokitRestMod.GistsCheckIsStarredParams
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait Anon_EndpointParamsAnyResponse extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[AnyResponse] = js.native
-  def apply(params: GistsCheckIsStarredParams): js.Promise[AnyResponse] = js.native
+  def apply(params: AppsAddRepoToInstallationParams): js.Promise[AnyResponse] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

@@ -1,15 +1,18 @@
 package typings.appleDashMapkitDashJs.mapkitNs
 
-import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A customized annotation with image resources that you provide.
+  */
 @JSGlobal("mapkit.ImageAnnotation")
 @js.native
 class ImageAnnotation protected () extends Annotation {
-  def this(coordinate: Coordinate) = this()
+  /**
+    * Initializes an image annotation with a URL to its image and a coordinate.
+    */
   def this(coordinate: Coordinate, options: ImageAnnotationConstructorOptions) = this()
-  var url: js.UndefOr[NumberDictionary[String]] = js.native
 }
 

@@ -14,7 +14,7 @@ trait TableOfContents extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
   def getLinkUrl(): String = js.native
@@ -28,7 +28,7 @@ trait TableOfContents extends js.Object {
   def isAtDocumentEnd(): Boolean = js.native
   def removeFromParent(): TableOfContents = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): TableOfContents = js.native
+  def setAttributes(attributes: js.Any): TableOfContents = js.native
   def setLinkUrl(url: String): TableOfContents = js.native
   def setTextAlignment(textAlignment: TextAlignment): TableOfContents = js.native
 }

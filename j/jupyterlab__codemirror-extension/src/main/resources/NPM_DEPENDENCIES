@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/codemirror-extension" : "1.1.2"
+      "@jupyterlab/codemirror-extension" : "1.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/codemirror-extension" : "1.1.2"
+      "@jupyterlab/codemirror-extension" : "1.1.3"
     }
   ],
   "compile-devDependencies" : [

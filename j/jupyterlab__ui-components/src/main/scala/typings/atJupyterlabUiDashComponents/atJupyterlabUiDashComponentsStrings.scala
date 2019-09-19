@@ -52,6 +52,9 @@ object atJupyterlabUiDashComponentsStrings {
   sealed trait tabManager extends IconKindType
   
   @js.native
+  sealed trait toolbarButton extends IconKindType
+  
+  @js.native
   sealed trait unset extends IconKindType
   
   @scala.inline
@@ -84,6 +87,8 @@ object atJupyterlabUiDashComponentsStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def tabManager: tabManager = "tabManager".asInstanceOf[tabManager]
+  @scala.inline
+  def toolbarButton: toolbarButton = "toolbarButton".asInstanceOf[toolbarButton]
   @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
 }

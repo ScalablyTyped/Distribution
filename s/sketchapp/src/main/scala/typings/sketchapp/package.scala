@@ -7,10 +7,11 @@ import scala.scalajs.js.annotation._
 package object sketchapp {
   import org.scalablytyped.runtime.StringDictionary
 
-  type SketchMSEncodedBase64BinaryPlist = String
-  type SketchMSNSColorArchive = SketchMSKeyValueArchive
+  type SketchMSFlow = SketchMSFlowConnection
+  type SketchMSLayerFrame = SketchMSRect
   type SketchMSPagesAndArtboards = StringDictionary[SketchMSArtboards]
+  type SketchMSPoint = SketchMSCurvePoint
   type SketchMSPointString = String
-  type SketchMSUserData = SketchMSUserDocument | SketchMSUserPage
-  type SketchMSUserPage = StringDictionary[Anon_ScrollOrigin]
+  type SketchMSUser = SketchMSUserPages | SketchMSUserDocument
+  type SketchMSUserPages = StringDictionary[Anon_ScrollOrigin]
 }

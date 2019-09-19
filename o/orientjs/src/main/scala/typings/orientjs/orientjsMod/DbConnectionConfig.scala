@@ -8,11 +8,11 @@ trait DbConnectionConfig extends js.Object {
   var forcePrepare: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var password: js.UndefOr[String] = js.undefined
-  var server: js.UndefOr[Server] = js.undefined
+  var server: js.UndefOr[OServer] = js.undefined
   var sessionId: js.UndefOr[Double] = js.undefined
   var storage: js.UndefOr[String] = js.undefined
   var token: js.UndefOr[js.Any] = js.undefined
-  var transformers: js.UndefOr[js.Array[js.Function1[/* item */ Record, _]]] = js.undefined
+  var transformers: js.UndefOr[js.Array[js.Function1[/* item */ ORecord, _]]] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var useToken: js.UndefOr[Boolean] = js.undefined
   var username: js.UndefOr[String] = js.undefined
@@ -24,11 +24,11 @@ object DbConnectionConfig {
     forcePrepare: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     password: String = null,
-    server: Server = null,
+    server: OServer = null,
     sessionId: Int | Double = null,
     storage: String = null,
     token: js.Any = null,
-    transformers: js.Array[js.Function1[/* item */ Record, _]] = null,
+    transformers: js.Array[js.Function1[/* item */ ORecord, _]] = null,
     `type`: String = null,
     useToken: js.UndefOr[Boolean] = js.undefined,
     username: String = null

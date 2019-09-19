@@ -131,6 +131,7 @@ class Client protected () extends EventEmitter {
     * Get the current list of all subscribed Channels.
     * @returns {Promise<Paginator<Channel>>}
     */
+  def getSubscribedChannels(): js.Promise[Paginator[Channel]] = js.native
   def getSubscribedChannels(args: js.Any): js.Promise[Paginator[Channel]] = js.native
   /**
     * @returns {Promise<Array<User>>} List of subscribed User objects

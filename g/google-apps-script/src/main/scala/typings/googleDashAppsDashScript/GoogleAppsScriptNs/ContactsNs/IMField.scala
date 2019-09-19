@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IMField extends js.Object {
   def deleteIMField(): Unit = js.native
   def getAddress(): String = js.native
-  def getLabel(): js.Any = js.native
+  def getLabel(): Field | ExtendedField | String = js.native
   def isPrimary(): Boolean = js.native
   def setAddress(address: String): IMField = js.native
   def setAsPrimary(): IMField = js.native

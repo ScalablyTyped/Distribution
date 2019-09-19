@@ -11,7 +11,7 @@ trait InlineImage extends js.Object {
   def getAltDescription(): String
   def getAltTitle(): String
   def getAs(contentType: String): Blob
-  def getAttributes(): js.Object
+  def getAttributes(): js.Any
   def getBlob(): Blob
   def getHeight(): Integer
   def getLinkUrl(): String
@@ -25,7 +25,7 @@ trait InlineImage extends js.Object {
   def removeFromParent(): InlineImage
   def setAltDescription(description: String): InlineImage
   def setAltTitle(title: String): InlineImage
-  def setAttributes(attributes: js.Object): InlineImage
+  def setAttributes(attributes: js.Any): InlineImage
   def setHeight(height: Integer): InlineImage
   def setLinkUrl(url: String): InlineImage
   def setWidth(width: Integer): InlineImage
@@ -38,7 +38,7 @@ object InlineImage {
     getAltDescription: () => String,
     getAltTitle: () => String,
     getAs: String => Blob,
-    getAttributes: () => js.Object,
+    getAttributes: () => js.Any,
     getBlob: () => Blob,
     getHeight: () => Integer,
     getLinkUrl: () => String,
@@ -52,7 +52,7 @@ object InlineImage {
     removeFromParent: () => InlineImage,
     setAltDescription: String => InlineImage,
     setAltTitle: String => InlineImage,
-    setAttributes: js.Object => InlineImage,
+    setAttributes: js.Any => InlineImage,
     setHeight: Integer => InlineImage,
     setLinkUrl: String => InlineImage,
     setWidth: Integer => InlineImage

@@ -2,10 +2,9 @@ package typings.atOctokitRest
 
 import typings.atOctokitRest.atOctokitRestMod.ActivityCheckStarringRepoParams
 import typings.atOctokitRest.atOctokitRestMod.ActivityDeleteRepoSubscriptionParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityDeleteRepoSubscriptionResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityDeleteThreadSubscriptionParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityDeleteThreadSubscriptionResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityGetRepoSubscriptionParams
+import typings.atOctokitRest.atOctokitRestMod.ActivityGetRepoSubscriptionResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityGetThreadParams
 import typings.atOctokitRest.atOctokitRestMod.ActivityGetThreadResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityGetThreadSubscriptionParams
@@ -37,19 +36,14 @@ import typings.atOctokitRest.atOctokitRestMod.ActivityListWatchedReposForAuthent
 import typings.atOctokitRest.atOctokitRestMod.ActivityListWatchersForRepoParams
 import typings.atOctokitRest.atOctokitRestMod.ActivityListWatchersForRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityMarkAsReadParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityMarkAsReadResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityMarkNotificationsAsReadForRepoParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityMarkNotificationsAsReadForRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityMarkThreadAsReadParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityMarkThreadAsReadResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivitySetRepoSubscriptionParams
 import typings.atOctokitRest.atOctokitRestMod.ActivitySetRepoSubscriptionResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivitySetThreadSubscriptionParams
 import typings.atOctokitRest.atOctokitRestMod.ActivitySetThreadSubscriptionResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityStarRepoParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityStarRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.ActivityUnstarRepoParams
-import typings.atOctokitRest.atOctokitRestMod.ActivityUnstarRepoResponse
 import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.EmptyParams
 import typings.atOctokitRest.atOctokitRestMod.Response
@@ -63,12 +57,12 @@ trait Anon_CheckStarringRepo extends js.Object {
     * Requires for the user to be authenticated.
     */
   @JSName("checkStarringRepo")
-  var checkStarringRepo_Original: Anon_EndpointParamsActivityCheckStarringRepoParams = js.native
+  var checkStarringRepo_Original: Anon_Endpoint = js.native
   /**
     * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://developer.github.com/v3/activity/watching/#set-a-repository-subscription).
     */
   @JSName("deleteRepoSubscription")
-  var deleteRepoSubscription_Original: Anon_EndpointParamsActivityDeleteRepoSubscriptionParams = js.native
+  var deleteRepoSubscription_Original: Anon_EndpointParams = js.native
   /**
     * Mutes all future notifications for a conversation until you comment on the thread or get **@mention**ed.
     */
@@ -132,7 +126,7 @@ trait Anon_CheckStarringRepo extends js.Object {
     * We delay the public events feed by five minutes, which means the most recent event returned by the public events API actually occurred at least five minutes ago.
     */
   @JSName("listPublicEvents")
-  var listPublicEvents_Original: Anon_Endpoint = js.native
+  var listPublicEvents_Original: Anon_EndpointParamsActivityListPublicEventsParams = js.native
   /**
     * These are events that you've received by watching repos and following users. If you are authenticated as the given user, you will see private events. Otherwise, you'll only see public events.
     */
@@ -141,7 +135,7 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("listReceivedPublicEventsForUser")
   var listReceivedPublicEventsForUser_Original: Anon_EndpointParamsActivityListReceivedPublicEventsForUserParams = js.native
   @JSName("listRepoEvents")
-  var listRepoEvents_Original: Anon_EndpointParams = js.native
+  var listRepoEvents_Original: Anon_EndpointParamsActivityListRepoEventsParams = js.native
   /**
     * You can also find out _when_ stars were created by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
@@ -205,15 +199,15 @@ trait Anon_CheckStarringRepo extends js.Object {
   /**
     * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://developer.github.com/v3/activity/watching/#set-a-repository-subscription).
     */
-  def deleteRepoSubscription(): js.Promise[Response[ActivityDeleteRepoSubscriptionResponse]] = js.native
-  def deleteRepoSubscription(params: ActivityDeleteRepoSubscriptionParams): js.Promise[Response[ActivityDeleteRepoSubscriptionResponse]] = js.native
+  def deleteRepoSubscription(): js.Promise[AnyResponse] = js.native
+  def deleteRepoSubscription(params: ActivityDeleteRepoSubscriptionParams): js.Promise[AnyResponse] = js.native
   /**
     * Mutes all future notifications for a conversation until you comment on the thread or get **@mention**ed.
     */
-  def deleteThreadSubscription(): js.Promise[Response[ActivityDeleteThreadSubscriptionResponse]] = js.native
-  def deleteThreadSubscription(params: ActivityDeleteThreadSubscriptionParams): js.Promise[Response[ActivityDeleteThreadSubscriptionResponse]] = js.native
-  def getRepoSubscription(): js.Promise[AnyResponse] = js.native
-  def getRepoSubscription(params: ActivityGetRepoSubscriptionParams): js.Promise[AnyResponse] = js.native
+  def deleteThreadSubscription(): js.Promise[AnyResponse] = js.native
+  def deleteThreadSubscription(params: ActivityDeleteThreadSubscriptionParams): js.Promise[AnyResponse] = js.native
+  def getRepoSubscription(): js.Promise[Response[ActivityGetRepoSubscriptionResponse]] = js.native
+  def getRepoSubscription(params: ActivityGetRepoSubscriptionParams): js.Promise[Response[ActivityGetRepoSubscriptionResponse]] = js.native
   def getThread(): js.Promise[Response[ActivityGetThreadResponse]] = js.native
   def getThread(params: ActivityGetThreadParams): js.Promise[Response[ActivityGetThreadResponse]] = js.native
   /**
@@ -304,15 +298,15 @@ trait Anon_CheckStarringRepo extends js.Object {
   /**
     * Marking a notification as "read" removes it from the [default view on GitHub](https://github.com/notifications). If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List your notifications](https://developer.github.com/v3/activity/notifications/#list-your-notifications) endpoint and pass the query parameter `all=false`.
     */
-  def markAsRead(): js.Promise[Response[ActivityMarkAsReadResponse]] = js.native
-  def markAsRead(params: ActivityMarkAsReadParams): js.Promise[Response[ActivityMarkAsReadResponse]] = js.native
+  def markAsRead(): js.Promise[AnyResponse] = js.native
+  def markAsRead(params: ActivityMarkAsReadParams): js.Promise[AnyResponse] = js.native
   /**
     * Marking all notifications in a repository as "read" removes them from the [default view on GitHub](https://github.com/notifications). If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List your notifications in a repository](https://developer.github.com/v3/activity/notifications/#list-your-notifications-in-a-repository) endpoint and pass the query parameter `all=false`.
     */
-  def markNotificationsAsReadForRepo(): js.Promise[Response[ActivityMarkNotificationsAsReadForRepoResponse]] = js.native
-  def markNotificationsAsReadForRepo(params: ActivityMarkNotificationsAsReadForRepoParams): js.Promise[Response[ActivityMarkNotificationsAsReadForRepoResponse]] = js.native
-  def markThreadAsRead(): js.Promise[Response[ActivityMarkThreadAsReadResponse]] = js.native
-  def markThreadAsRead(params: ActivityMarkThreadAsReadParams): js.Promise[Response[ActivityMarkThreadAsReadResponse]] = js.native
+  def markNotificationsAsReadForRepo(): js.Promise[AnyResponse] = js.native
+  def markNotificationsAsReadForRepo(params: ActivityMarkNotificationsAsReadForRepoParams): js.Promise[AnyResponse] = js.native
+  def markThreadAsRead(): js.Promise[AnyResponse] = js.native
+  def markThreadAsRead(params: ActivityMarkThreadAsReadParams): js.Promise[AnyResponse] = js.native
   /**
     * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://developer.github.com/v3/activity/watching/#delete-a-repository-subscription) completely.
     */
@@ -328,12 +322,12 @@ trait Anon_CheckStarringRepo extends js.Object {
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
-  def starRepo(): js.Promise[Response[ActivityStarRepoResponse]] = js.native
-  def starRepo(params: ActivityStarRepoParams): js.Promise[Response[ActivityStarRepoResponse]] = js.native
+  def starRepo(): js.Promise[AnyResponse] = js.native
+  def starRepo(params: ActivityStarRepoParams): js.Promise[AnyResponse] = js.native
   /**
     * Requires for the user to be authenticated.
     */
-  def unstarRepo(): js.Promise[Response[ActivityUnstarRepoResponse]] = js.native
-  def unstarRepo(params: ActivityUnstarRepoParams): js.Promise[Response[ActivityUnstarRepoResponse]] = js.native
+  def unstarRepo(): js.Promise[AnyResponse] = js.native
+  def unstarRepo(params: ActivityUnstarRepoParams): js.Promise[AnyResponse] = js.native
 }
 

@@ -4,19 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Options you can provide when performing a search.
+  */
 trait SearchOptions extends js.Object {
-  var coordinate: js.UndefOr[Coordinate] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var region: js.UndefOr[CoordinateRegion] = js.undefined
+  /**
+    * A map coordinate that provides a hint for the geographic area to search.
+    */
+  var coordinate: Coordinate
+  /**
+    * A language ID that determines the language for the search result text.
+    */
+  var language: String
+  /**
+    * A map region that provides a hint for the geographic area to search.
+    */
+  var region: CoordinateRegion
 }
 
 object SearchOptions {
   @scala.inline
-  def apply(coordinate: Coordinate = null, language: String = null, region: CoordinateRegion = null): SearchOptions = {
-    val __obj = js.Dynamic.literal()
-    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (region != null) __obj.updateDynamic("region")(region)
+  def apply(coordinate: Coordinate, language: String, region: CoordinateRegion): SearchOptions = {
+    val __obj = js.Dynamic.literal(coordinate = coordinate, language = language, region = region)
+  
     __obj.asInstanceOf[SearchOptions]
   }
 }

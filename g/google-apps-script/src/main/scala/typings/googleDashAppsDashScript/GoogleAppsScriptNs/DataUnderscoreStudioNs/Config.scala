@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Config extends js.Object {
-  def build(): js.Any
+  def build(): Config
   def newCheckbox(): Checkbox
   def newInfo(): Info
   def newOptionBuilder(): OptionBuilder
@@ -20,7 +20,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    build: () => js.Any,
+    build: () => Config,
     newCheckbox: () => Checkbox,
     newInfo: () => Info,
     newOptionBuilder: () => OptionBuilder,

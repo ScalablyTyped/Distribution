@@ -33,6 +33,6 @@ trait GmailDraft extends js.Object {
   /**
     * Replaces the contents of this draft message using optional arguments.
     */
-  def update(recipient: String, subject: String, body: String, options: GmailDraftOptions): GmailDraft = js.native
+  def update(recipient: String, subject: String, body: String, options: GmailAdvancedOptions): GmailDraft = js.native
 }
 

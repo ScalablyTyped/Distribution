@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetAuthTypeResponse extends js.Object {
-  def build(): js.Any
+  def build(): GetAuthTypeResponse
   def printJson(): String
   def setAuthType(authType: AuthType): GetAuthTypeResponse
   def setHelpUrl(helpUrl: String): GetAuthTypeResponse
@@ -14,7 +14,7 @@ trait GetAuthTypeResponse extends js.Object {
 object GetAuthTypeResponse {
   @scala.inline
   def apply(
-    build: () => js.Any,
+    build: () => GetAuthTypeResponse,
     printJson: () => String,
     setAuthType: AuthType => GetAuthTypeResponse,
     setHelpUrl: String => GetAuthTypeResponse

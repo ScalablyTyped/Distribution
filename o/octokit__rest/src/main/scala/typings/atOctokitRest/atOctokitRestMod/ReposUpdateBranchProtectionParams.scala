@@ -21,7 +21,7 @@ trait ReposUpdateBranchProtectionParams extends js.Object {
     */
   var required_status_checks: ReposUpdateBranchProtectionParamsRequiredStatusChecks | Null
   /**
-    * Restrict who can push to this branch. Team and user `restrictions` are only available for organization-owned repositories. Set to `null` to disable.
+    * Restrict who can push to this branch. User, app, and team `restrictions` are only available for organization-owned repositories. Set to `null` to disable.
     */
   var restrictions: ReposUpdateBranchProtectionParamsRestrictions | Null
 }

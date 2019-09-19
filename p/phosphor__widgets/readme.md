@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__widgets
 
-Typings are for version 1.9.1
+Typings are for version 1.9.2
 
 ## Library description:
 PhosphorJS - Widgets

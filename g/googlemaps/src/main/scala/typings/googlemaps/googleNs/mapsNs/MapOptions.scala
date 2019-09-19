@@ -75,7 +75,7 @@ trait MapOptions extends js.Object {
   /** The initial display options for the Map type control. */
   var mapTypeControlOptions: js.UndefOr[MapTypeControlOptions] = js.undefined
   /** The initial Map mapTypeId. Defaults to ROADMAP. */
-  var mapTypeId: js.UndefOr[MapTypeId] = js.undefined
+  var mapTypeId: js.UndefOr[MapTypeId | String] = js.undefined
   /**
     * The maximum zoom level which will be displayed on the map. If omitted, or
     * set to null, the maximum zoom from the current map type is used instead.
@@ -200,7 +200,7 @@ object MapOptions {
     keyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
     mapTypeControl: js.UndefOr[Boolean] = js.undefined,
     mapTypeControlOptions: MapTypeControlOptions = null,
-    mapTypeId: MapTypeId = null,
+    mapTypeId: MapTypeId | String = null,
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     noClear: js.UndefOr[Boolean] = js.undefined,
@@ -238,7 +238,7 @@ object MapOptions {
     if (!js.isUndefined(keyboardShortcuts)) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts)
     if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl)
     if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions)
-    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId)
+    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)

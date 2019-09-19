@@ -16043,6 +16043,7 @@ object awsDashSdkStrings {
        with _RequestStatus
        with _ResourceShareInvitationStatus
        with _ResourceShareStatus
+       with _ResourceStatus
        with _RestoreJobStatus
        with _SessionState
        with _StackSetOperationResultStatus

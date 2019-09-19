@@ -3275,8 +3275,8 @@ trait UnderscoreStatic extends js.Object {
     * @param settings Settings to use while compiling.
     * @return Returns the compiled Underscore HTML template.
     **/
-  def template(templateString: String): js.Function1[/* repeated */ js.Any, String] = js.native
-  def template(templateString: String, settings: TemplateSettings): js.Function1[/* repeated */ js.Any, String] = js.native
+  def template(templateString: String): CompiledTemplate = js.native
+  def template(templateString: String, settings: TemplateSettings): CompiledTemplate = js.native
   /**
     * Creates and returns a new, throttled version of the passed function, that, when invoked repeatedly,
     * will only actually call the original function at most once per every wait milliseconds. Useful for

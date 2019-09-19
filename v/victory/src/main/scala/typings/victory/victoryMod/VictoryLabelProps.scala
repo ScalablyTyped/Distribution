@@ -87,7 +87,7 @@ trait VictoryLabelProps extends js.Object {
   /**
     * The style prop applies CSS properties to the rendered `<text>` element.
     */
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var style: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.undefined
   /**
     * The text prop defines the text VictoryLabel will render. The text prop may be given as a string, number, a function of datum,
     * or an array of any of these. Strings may include newline characters, which VictoryLabel will split into separate
@@ -133,7 +133,7 @@ object VictoryLabelProps {
     origin: Anon_X = null,
     polar: js.UndefOr[Boolean] = js.undefined,
     renderInPortal: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
+    style: CSSProperties | js.Array[CSSProperties] = null,
     text: js.Array[String] | StringOrNumberOrCallback = null,
     textAnchor: TextAnchorType | Fn_TextAnchorType = null,
     transform: String | js.Object | Fn_String = null,
@@ -155,7 +155,7 @@ object VictoryLabelProps {
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar)
     if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])

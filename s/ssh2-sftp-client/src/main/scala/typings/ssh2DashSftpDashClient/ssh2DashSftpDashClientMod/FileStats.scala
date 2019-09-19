@@ -6,27 +6,39 @@ import scala.scalajs.js.annotation._
 
 trait FileStats extends js.Object {
   var accessTime: Double
-  var group: Double
+  var gid: Double
+  var isBlockDevice: Boolean
+  var isCharacterDevice: Boolean
+  var isDirectory: Boolean
+  var isFIFO: Boolean
+  var isFile: Boolean
+  var isSocket: Boolean
+  var isSymbolicLink: Boolean
   var mode: Double
   var modifyTime: Double
-  var owner: Double
-  var permissions: js.UndefOr[js.Any] = js.undefined
   var size: Double
+  var uid: Double
 }
 
 object FileStats {
   @scala.inline
   def apply(
     accessTime: Double,
-    group: Double,
+    gid: Double,
+    isBlockDevice: Boolean,
+    isCharacterDevice: Boolean,
+    isDirectory: Boolean,
+    isFIFO: Boolean,
+    isFile: Boolean,
+    isSocket: Boolean,
+    isSymbolicLink: Boolean,
     mode: Double,
     modifyTime: Double,
-    owner: Double,
     size: Double,
-    permissions: js.Any = null
+    uid: Double
   ): FileStats = {
-    val __obj = js.Dynamic.literal(accessTime = accessTime, group = group, mode = mode, modifyTime = modifyTime, owner = owner, size = size)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    val __obj = js.Dynamic.literal(accessTime = accessTime, gid = gid, isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink, mode = mode, modifyTime = modifyTime, size = size, uid = uid)
+  
     __obj.asInstanceOf[FileStats]
   }
 }

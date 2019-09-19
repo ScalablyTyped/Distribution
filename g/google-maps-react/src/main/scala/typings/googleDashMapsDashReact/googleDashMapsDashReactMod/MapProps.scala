@@ -74,7 +74,7 @@ object MapProps {
     loaded: js.UndefOr[Boolean] = js.undefined,
     mapTypeControl: js.UndefOr[Boolean] = js.undefined,
     mapTypeControlOptions: MapTypeControlOptions = null,
-    mapTypeId: MapTypeId = null,
+    mapTypeId: MapTypeId | String = null,
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     noClear: js.UndefOr[Boolean] = js.undefined,
@@ -137,7 +137,7 @@ object MapProps {
     if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded)
     if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl)
     if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions)
-    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId)
+    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)

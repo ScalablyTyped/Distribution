@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "element-ready" : "4.1.0"
+      "element-ready" : "4.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "element-ready" : "4.1.0"
+      "element-ready" : "4.1.1"
     }
   ],
   "compile-devDependencies" : [

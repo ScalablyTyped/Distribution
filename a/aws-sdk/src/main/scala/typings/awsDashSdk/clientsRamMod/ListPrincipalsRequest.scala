@@ -30,7 +30,7 @@ trait ListPrincipalsRequest extends js.Object {
     */
   var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
   /**
-    * The resource type.
+    * The resource type. Valid values: route53resolver:ResolverRule | ec2:TransitGateway | ec2:Subnet | license-manager:LicenseConfiguration 
     */
   var resourceType: js.UndefOr[String] = js.undefined
 }

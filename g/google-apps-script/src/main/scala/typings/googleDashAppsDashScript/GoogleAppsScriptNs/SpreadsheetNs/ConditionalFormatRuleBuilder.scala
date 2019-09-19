@@ -14,8 +14,10 @@ trait ConditionalFormatRuleBuilder extends js.Object {
   def getRanges(): js.Array[Range] = js.native
   def setBackground(): ConditionalFormatRuleBuilder = js.native
   def setBackground(color: String): ConditionalFormatRuleBuilder = js.native
-  def setBold(bold: Boolean): ConditionalFormatRuleBuilder | Null = js.native
-  def setFontColor(color: String): ConditionalFormatRuleBuilder | Null = js.native
+  def setBold(): ConditionalFormatRuleBuilder = js.native
+  def setBold(bold: Boolean): ConditionalFormatRuleBuilder = js.native
+  def setFontColor(): ConditionalFormatRuleBuilder = js.native
+  def setFontColor(color: String): ConditionalFormatRuleBuilder = js.native
   def setGradientMaxpoint(color: String): ConditionalFormatRuleBuilder = js.native
   def setGradientMaxpointWithValue(color: String, `type`: InterpolationType, value: String): ConditionalFormatRuleBuilder = js.native
   def setGradientMidpointWithValue(color: String, `type`: InterpolationType, value: String): ConditionalFormatRuleBuilder = js.native

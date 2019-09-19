@@ -1,7 +1,7 @@
 
 # Scala.js typings for sketchapp
 
-Typings are for version 1.0
+Typings are for version 56.0
 
 
 

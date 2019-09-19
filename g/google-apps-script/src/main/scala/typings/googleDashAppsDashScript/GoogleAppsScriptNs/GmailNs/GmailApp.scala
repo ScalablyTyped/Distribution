@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GmailApp extends js.Object {
   def createDraft(recipient: String, subject: String, body: String): GmailDraft = js.native
-  def createDraft(recipient: String, subject: String, body: String, options: js.Any): GmailDraft = js.native
+  def createDraft(recipient: String, subject: String, body: String, options: GmailAdvancedOptions): GmailDraft = js.native
   def createLabel(name: String): GmailLabel = js.native
   def deleteLabel(label: GmailLabel): GmailApp = js.native
   def getAliases(): js.Array[String] = js.native
@@ -66,7 +66,7 @@ trait GmailApp extends js.Object {
   def search(query: String): js.Array[GmailThread] = js.native
   def search(query: String, start: Integer, max: Integer): js.Array[GmailThread] = js.native
   def sendEmail(recipient: String, subject: String, body: String): GmailApp = js.native
-  def sendEmail(recipient: String, subject: String, body: String, options: js.Any): GmailApp = js.native
+  def sendEmail(recipient: String, subject: String, body: String, options: GmailAdvancedOptions): GmailApp = js.native
   def setCurrentMessageAccessToken(accessToken: String): Unit = js.native
   def starMessage(message: GmailMessage): GmailApp = js.native
   def starMessages(messages: js.Array[GmailMessage]): GmailApp = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__utils-array"
-version := "1.2.0-002b5b"
+version := "1.2.1-d3b305"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

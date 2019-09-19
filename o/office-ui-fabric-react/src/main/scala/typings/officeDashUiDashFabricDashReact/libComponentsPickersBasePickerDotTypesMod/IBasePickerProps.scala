@@ -104,6 +104,7 @@ trait IBasePickerProps[T]
   ] = js.native
   /**
     * A callback for when the user put focus on the picker
+    * @deprecated Use `inputProps.onFocus` instead
     */
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement | BaseAutoFill]] = js.native
   /**

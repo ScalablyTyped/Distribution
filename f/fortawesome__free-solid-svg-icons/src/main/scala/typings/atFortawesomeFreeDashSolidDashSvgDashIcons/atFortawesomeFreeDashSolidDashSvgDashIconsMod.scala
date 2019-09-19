@@ -440,6 +440,8 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faHanukiah: IconDefinition = js.native
   val faHardHat: IconDefinition = js.native
   val faHashtag: IconDefinition = js.native
+  val faHatCowboy: IconDefinition = js.native
+  val faHatCowboySide: IconDefinition = js.native
   val faHatWizard: IconDefinition = js.native
   val faHaykal: IconDefinition = js.native
   val faHdd: IconDefinition = js.native
@@ -584,6 +586,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faMosque: IconDefinition = js.native
   val faMotorcycle: IconDefinition = js.native
   val faMountain: IconDefinition = js.native
+  val faMouse: IconDefinition = js.native
   val faMousePointer: IconDefinition = js.native
   val faMugHot: IconDefinition = js.native
   val faMusic: IconDefinition = js.native
@@ -677,6 +680,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faRainbow: IconDefinition = js.native
   val faRandom: IconDefinition = js.native
   val faReceipt: IconDefinition = js.native
+  val faRecordVinyl: IconDefinition = js.native
   val faRecycle: IconDefinition = js.native
   val faRedo: IconDefinition = js.native
   val faRedoAlt: IconDefinition = js.native

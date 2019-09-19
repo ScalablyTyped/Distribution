@@ -1,5 +1,6 @@
 package typings.i18next.i18nextMod
 
+import typings.i18next.Anon_Key
 import typings.i18next.Anon_KeySeparator
 import typings.i18next.Anon_KeySeparatorSilent
 import typings.i18next.i18nextStrings.added
@@ -116,6 +117,10 @@ trait i18n extends js.Object {
   def format(value: js.Any): String = js.native
   def format(value: js.Any, format: String): String = js.native
   def format(value: js.Any, format: String, lng: String): String = js.native
+  /**
+    * Returns a resource data by language.
+    */
+  def getDataByLanguage(lng: String): Anon_Key = js.native
   /**
     * Returns a t function that defaults to given language or namespace.
     * Both params could be arrays of languages or namespaces and will be treated as fallbacks in that case.

@@ -18,9 +18,6 @@ trait GatsbyLinkProps[TState] extends LinkProps[TState] {
   var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], Unit]] = js.undefined
   /** Class the link as highlighted if there is a partial match via a the `to` being prefixed to the current url */
   var partiallyActive: js.UndefOr[Boolean] = js.undefined
-  /** The URL you want to link to */
-  @JSName("to")
-  var to_GatsbyLinkProps: String
 }
 
 object GatsbyLinkProps {

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ReposReplaceProtectedBranchTeamRestrictionsResponseItem extends js.Object {
   var description: String
+  var html_url: String
   var id: Double
   var members_url: String
   var name: String
@@ -22,6 +23,7 @@ object ReposReplaceProtectedBranchTeamRestrictionsResponseItem {
   @scala.inline
   def apply(
     description: String,
+    html_url: String,
     id: Double,
     members_url: String,
     name: String,
@@ -33,7 +35,7 @@ object ReposReplaceProtectedBranchTeamRestrictionsResponseItem {
     slug: String,
     url: String
   ): ReposReplaceProtectedBranchTeamRestrictionsResponseItem = {
-    val __obj = js.Dynamic.literal(description = description, id = id, members_url = members_url, name = name, node_id = node_id, parent = parent, permission = permission, privacy = privacy, repositories_url = repositories_url, slug = slug, url = url)
+    val __obj = js.Dynamic.literal(description = description, html_url = html_url, id = id, members_url = members_url, name = name, node_id = node_id, parent = parent, permission = permission, privacy = privacy, repositories_url = repositories_url, slug = slug, url = url)
   
     __obj.asInstanceOf[ReposReplaceProtectedBranchTeamRestrictionsResponseItem]
   }

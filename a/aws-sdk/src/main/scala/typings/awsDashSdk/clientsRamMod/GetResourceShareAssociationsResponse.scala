@@ -10,7 +10,7 @@ trait GetResourceShareAssociationsResponse extends js.Object {
     */
   var nextToken: js.UndefOr[String] = js.undefined
   /**
-    * Information about the association.
+    * Information about the associations.
     */
   var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
 }

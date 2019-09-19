@@ -7,6 +7,7 @@ import typings.firebaseDashAdmin.adminNs.firestoreNs.Firestore
 import typings.firebaseDashAdmin.adminNs.instanceIdNs.InstanceId
 import typings.firebaseDashAdmin.adminNs.messagingNs.Messaging
 import typings.firebaseDashAdmin.adminNs.projectManagementNs.ProjectManagement
+import typings.firebaseDashAdmin.adminNs.securityRulesNs.SecurityRules
 import typings.firebaseDashAdmin.adminNs.storageNs.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -179,6 +180,36 @@ object ^ extends js.Object {
     */
   def projectManagement(): ProjectManagement = js.native
   def projectManagement(app: App): ProjectManagement = js.native
+  /**
+    * Gets the {@link admin.securityRules.SecurityRules
+    * `SecurityRules`} service for the default app or a given app.
+    *
+    * `admin.securityRules()` can be called with no arguments to access the
+    * default app's {@link admin.securityRules.SecurityRules
+    * `SecurityRules`} service, or as `admin.securityRules(app)` to access
+    * the {@link admin.securityRules.SecurityRules `SecurityRules`}
+    * service associated with a specific app.
+    *
+    * @example
+    * ```javascript
+    * // Get the SecurityRules service for the default app
+    * var defaultSecurityRules = admin.securityRules();
+    * ```
+    *
+    * @example
+    * ```javascript
+    * // Get the SecurityRules service for a given app
+    * var otherSecurityRules = admin.securityRules(otherApp);
+    * ```
+    *
+    * @param app Optional app to return the `SecurityRules` service
+    *     for. If not provided, the default `SecurityRules` service
+    *     is returned.
+    * @return The default `SecurityRules` service if no app is provided, or the
+    *   `SecurityRules` service associated with the provided app.
+    */
+  def securityRules(): SecurityRules = js.native
+  def securityRules(app: App): SecurityRules = js.native
   /**
     * Gets the {@link admin.storage.Storage `Storage`} service for the
     * default app or a given app.

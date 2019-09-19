@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript
 
+import typings.googleDashAppsDashScript.GoogleAppsScriptNs.URLUnderscoreFetchNs.HttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +16,13 @@ object googleDashAppsDashScriptStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete extends HttpMethod
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get extends HttpMethod
+  
+  @js.native
+  sealed trait html extends js.Object
   
   @js.native
   sealed trait italic extends js.Object
@@ -39,13 +43,16 @@ object googleDashAppsDashScriptStrings {
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch extends HttpMethod
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post extends HttpMethod
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put extends HttpMethod
+  
+  @js.native
+  sealed trait text extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -64,6 +71,8 @@ object googleDashAppsDashScriptStrings {
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
@@ -81,6 +90,8 @@ object googleDashAppsDashScriptStrings {
   def post: post = "post".asInstanceOf[post]
   @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

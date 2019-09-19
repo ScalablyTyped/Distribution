@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__htmlviewer-extension
 
-Typings are for version 1.1.2
+Typings are for version 1.1.3
 
 ## Library description:
 JupyterLab extension to render HTML files

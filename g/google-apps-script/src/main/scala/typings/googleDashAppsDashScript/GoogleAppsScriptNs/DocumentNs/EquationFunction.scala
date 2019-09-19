@@ -14,7 +14,7 @@ trait EquationFunction extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
   def getCode(): String = js.native
@@ -30,7 +30,7 @@ trait EquationFunction extends js.Object {
   def merge(): EquationFunction = js.native
   def removeFromParent(): EquationFunction = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): EquationFunction = js.native
+  def setAttributes(attributes: js.Any): EquationFunction = js.native
   def setLinkUrl(url: String): EquationFunction = js.native
   def setTextAlignment(textAlignment: TextAlignment): EquationFunction = js.native
 }

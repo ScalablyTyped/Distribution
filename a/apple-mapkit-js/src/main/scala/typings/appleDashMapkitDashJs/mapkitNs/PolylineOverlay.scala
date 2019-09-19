@@ -4,21 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An overlay made up of connected line segments that do not form a closed shape.
+  */
 @JSGlobal("mapkit.PolylineOverlay")
 @js.native
-class PolylineOverlay protected () extends js.Object {
+class PolylineOverlay protected () extends Overlay {
+  /**
+    * Creates a polyline overlay with coordinate points and style options.
+    *
+    * @param points The points in the polyline as an array of Coordinate
+    * @param options An object literal of style options with which to initialize
+    * the polyline.
+    */
   def this(points: js.Array[Coordinate]) = this()
   def this(points: js.Array[Coordinate], options: StylesOverlayOptions) = this()
-  var data: js.Any = js.native
-  var enabled: Boolean = js.native
-  var map: Map = js.native
+  /**
+    * An array of coordinate points that define the polyline overlay's shape.
+    */
   var points: js.Array[Coordinate] = js.native
-  var selected: Boolean = js.native
-  var style: Style = js.native
-  var visible: Boolean = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit]): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit], thisObject: js.Any): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit]): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* type */ String, Unit], thisObject: js.Any): Unit = js.native
 }
 

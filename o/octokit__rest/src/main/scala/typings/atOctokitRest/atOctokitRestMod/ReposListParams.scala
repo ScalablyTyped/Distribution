@@ -24,7 +24,7 @@ trait ReposListParams extends js.Object {
     */
   var affiliation: js.UndefOr[String] = js.undefined
   /**
-    * Can be one of `asc` or `desc`.
+    * Can be one of `asc` or `desc`. Default: `asc` when using `full_name`, otherwise `desc`
     */
   var direction: js.UndefOr[asc | desc] = js.undefined
   /**

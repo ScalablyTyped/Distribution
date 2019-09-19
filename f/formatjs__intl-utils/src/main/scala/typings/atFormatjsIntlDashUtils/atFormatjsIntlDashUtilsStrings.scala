@@ -1,60 +1,198 @@
 package typings.atFormatjsIntlDashUtils
 
 import typings.atFormatjsIntlDashUtils.distDiffMod.Unit
+import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.Field
+import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.LDMLPluralRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object atFormatjsIntlDashUtilsStrings {
   @js.native
+  sealed trait LocaleFieldsData extends js.Object
+  
+  @js.native
+  sealed trait RelativeTimeData extends js.Object
+  
+  @js.native
   sealed trait boolean extends js.Object
   
   @js.native
-  sealed trait day extends Unit
+  sealed trait day
+    extends Field
+       with Unit
   
   @js.native
-  sealed trait hour extends Unit
+  sealed trait `day-narrow` extends Field
   
   @js.native
-  sealed trait minute extends Unit
+  sealed trait `day-short` extends Field
   
   @js.native
-  sealed trait month extends Unit
+  sealed trait few extends LDMLPluralRule
   
   @js.native
-  sealed trait quarter extends Unit
+  sealed trait hour
+    extends Field
+       with Unit
   
   @js.native
-  sealed trait second extends Unit
+  sealed trait `hour-narrow` extends Field
+  
+  @js.native
+  sealed trait `hour-short` extends Field
+  
+  @js.native
+  sealed trait many extends LDMLPluralRule
+  
+  @js.native
+  sealed trait minute
+    extends Field
+       with Unit
+  
+  @js.native
+  sealed trait `minute-narrow` extends Field
+  
+  @js.native
+  sealed trait `minute-short` extends Field
+  
+  @js.native
+  sealed trait month
+    extends Field
+       with Unit
+  
+  @js.native
+  sealed trait `month-narrow` extends Field
+  
+  @js.native
+  sealed trait `month-short` extends Field
+  
+  @js.native
+  sealed trait one extends LDMLPluralRule
+  
+  @js.native
+  sealed trait other extends LDMLPluralRule
+  
+  @js.native
+  sealed trait quarter
+    extends Field
+       with Unit
+  
+  @js.native
+  sealed trait `quarter-narrow` extends Field
+  
+  @js.native
+  sealed trait `quarter-short` extends Field
+  
+  @js.native
+  sealed trait second
+    extends Field
+       with Unit
+  
+  @js.native
+  sealed trait `second-narrow` extends Field
+  
+  @js.native
+  sealed trait `second-short` extends Field
   
   @js.native
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait week extends Unit
+  sealed trait two extends LDMLPluralRule
   
   @js.native
-  sealed trait year extends Unit
+  sealed trait week
+    extends Field
+       with Unit
   
+  @js.native
+  sealed trait `week-narrow` extends Field
+  
+  @js.native
+  sealed trait `week-short` extends Field
+  
+  @js.native
+  sealed trait year
+    extends Field
+       with Unit
+  
+  @js.native
+  sealed trait `year-narrow` extends Field
+  
+  @js.native
+  sealed trait `year-short` extends Field
+  
+  @js.native
+  sealed trait zero extends LDMLPluralRule
+  
+  @scala.inline
+  def LocaleFieldsData: LocaleFieldsData = "LocaleFieldsData".asInstanceOf[LocaleFieldsData]
+  @scala.inline
+  def RelativeTimeData: RelativeTimeData = "RelativeTimeData".asInstanceOf[RelativeTimeData]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
+  def `day-narrow`: `day-narrow` = "day-narrow".asInstanceOf[`day-narrow`]
+  @scala.inline
+  def `day-short`: `day-short` = "day-short".asInstanceOf[`day-short`]
+  @scala.inline
+  def few: few = "few".asInstanceOf[few]
+  @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
+  @scala.inline
+  def `hour-narrow`: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
+  @scala.inline
+  def `hour-short`: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
+  @scala.inline
+  def many: many = "many".asInstanceOf[many]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
+  def `minute-narrow`: `minute-narrow` = "minute-narrow".asInstanceOf[`minute-narrow`]
+  @scala.inline
+  def `minute-short`: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
+  @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
+  def `month-narrow`: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
+  @scala.inline
+  def `month-short`: `month-short` = "month-short".asInstanceOf[`month-short`]
+  @scala.inline
+  def one: one = "one".asInstanceOf[one]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   @scala.inline
+  def `quarter-narrow`: `quarter-narrow` = "quarter-narrow".asInstanceOf[`quarter-narrow`]
+  @scala.inline
+  def `quarter-short`: `quarter-short` = "quarter-short".asInstanceOf[`quarter-short`]
+  @scala.inline
   def second: second = "second".asInstanceOf[second]
+  @scala.inline
+  def `second-narrow`: `second-narrow` = "second-narrow".asInstanceOf[`second-narrow`]
+  @scala.inline
+  def `second-short`: `second-short` = "second-short".asInstanceOf[`second-short`]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
+  def two: two = "two".asInstanceOf[two]
+  @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline
+  def `week-narrow`: `week-narrow` = "week-narrow".asInstanceOf[`week-narrow`]
+  @scala.inline
+  def `week-short`: `week-short` = "week-short".asInstanceOf[`week-short`]
+  @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def `year-narrow`: `year-narrow` = "year-narrow".asInstanceOf[`year-narrow`]
+  @scala.inline
+  def `year-short`: `year-short` = "year-short".asInstanceOf[`year-short`]
+  @scala.inline
+  def zero: zero = "zero".asInstanceOf[zero]
 }
 

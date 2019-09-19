@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 package object orientjsMod {
   import typings.node.Buffer
 
-  type BinaryRecord = Record with Buffer
-  type ODocument = Record
+  type BinaryRecord = ORecord with Buffer
+  type ODocument = ORecord
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.orientjs.orientjsMod.RawExpression
-    - typings.orientjs.orientjsMod.SqlFunction
+    - typings.orientjs.orientjsMod.ORawExpression
+    - typings.orientjs.orientjsMod.OSqlFunction
   */
-  type SqlExpression = _SqlExpression | String
+  type OSqlExpression = _OSqlExpression | String
   type Version = Double | String
 }

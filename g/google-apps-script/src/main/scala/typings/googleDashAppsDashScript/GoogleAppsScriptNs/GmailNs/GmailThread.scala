@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 trait GmailThread extends js.Object {
   def addLabel(label: GmailLabel): GmailThread = js.native
   def createDraftReply(body: String): GmailDraft = js.native
-  def createDraftReply(body: String, options: GmailDraftOptions): GmailDraft = js.native
+  def createDraftReply(body: String, options: GmailAdvancedOptions): GmailDraft = js.native
   def createDraftReplyAll(body: String): GmailDraft = js.native
-  def createDraftReplyAll(body: String, options: GmailDraftOptions): GmailDraft = js.native
+  def createDraftReplyAll(body: String, options: GmailAdvancedOptions): GmailDraft = js.native
   def getFirstMessageSubject(): String = js.native
   def getId(): String = js.native
   def getLabels(): js.Array[GmailLabel] = js.native
@@ -39,8 +39,8 @@ trait GmailThread extends js.Object {
   def refresh(): GmailThread = js.native
   def removeLabel(label: GmailLabel): GmailThread = js.native
   def reply(body: String): GmailThread = js.native
-  def reply(body: String, options: GmailDraftOptions): GmailThread = js.native
+  def reply(body: String, options: GmailAdvancedOptions): GmailThread = js.native
   def replyAll(body: String): GmailThread = js.native
-  def replyAll(body: String, options: GmailDraftOptions): GmailThread = js.native
+  def replyAll(body: String, options: GmailAdvancedOptions): GmailThread = js.native
 }
 

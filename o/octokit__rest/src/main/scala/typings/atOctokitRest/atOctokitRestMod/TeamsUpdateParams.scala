@@ -1,8 +1,10 @@
 package typings.atOctokitRest.atOctokitRestMod
 
 import typings.atOctokitRest.atOctokitRestStrings.admin
+import typings.atOctokitRest.atOctokitRestStrings.closed
 import typings.atOctokitRest.atOctokitRestStrings.pull
 import typings.atOctokitRest.atOctokitRestStrings.push
+import typings.atOctokitRest.atOctokitRestStrings.secret
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +37,7 @@ trait TeamsUpdateParams extends js.Object {
     * **For a parent or child team:**
     * \* `closed` - visible to all members of this organization.
     */
-  var privacy: js.UndefOr[String] = js.undefined
+  var privacy: js.UndefOr[secret | closed] = js.undefined
   var team_id: Double
 }
 
@@ -47,13 +49,13 @@ object TeamsUpdateParams {
     description: String = null,
     parent_team_id: Int | Double = null,
     permission: pull | push | admin = null,
-    privacy: String = null
+    privacy: secret | closed = null
   ): TeamsUpdateParams = {
     val __obj = js.Dynamic.literal(name = name, team_id = team_id)
     if (description != null) __obj.updateDynamic("description")(description)
     if (parent_team_id != null) __obj.updateDynamic("parent_team_id")(parent_team_id.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
-    if (privacy != null) __obj.updateDynamic("privacy")(privacy)
+    if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateParams]
   }
 }

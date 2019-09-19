@@ -21,11 +21,11 @@ object default extends js.Object {
   var __localeData__ : Record[String, LocaleData] = js.native
   var polyfilled: Boolean = js.native
   def __addLocaleData(data: LocaleData*): Unit = js.native
-  def supportedLocalesOf(locales: String): js.Array[String] = js.native
-  def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String): js.Array[js.UndefOr[String]] = js.native
+  def supportedLocalesOf(locales: js.Array[String]): js.Array[js.UndefOr[String]] = js.native
   @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: String, __1_0: Pick[IntlRelativeTimeFormatOptions, localeMatcher]): js.Array[String] = js.native
+  def supportedLocalesOf_localeMatcher(locales: String, __1_0: Pick[IntlRelativeTimeFormatOptions, localeMatcher]): js.Array[js.UndefOr[String]] = js.native
   @JSName("supportedLocalesOf")
-  def supportedLocalesOf_localeMatcher(locales: js.Array[String], __1_0: Pick[IntlRelativeTimeFormatOptions, localeMatcher]): js.Array[String] = js.native
+  def supportedLocalesOf_localeMatcher(locales: js.Array[String], __1_0: Pick[IntlRelativeTimeFormatOptions, localeMatcher]): js.Array[js.UndefOr[String]] = js.native
 }
 

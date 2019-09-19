@@ -7,43 +7,60 @@ import scala.scalajs.js.annotation._
 
 trait SketchMSStyle extends js.Object {
   var _class: style
-  var blur: SketchMSStyleBlur
-  var borderOptions: SketchMSStyleBorderOptions
-  var borders: js.Array[SketchMSStyleBorder]
-  var colorControls: SketchMSStyleColorControls
-  var contextSettings: SketchMSGraphicsContextSettings
-  var do_objectID: js.UndefOr[String] = js.undefined
-  var endDecorationType: Double
-  var fills: js.Array[SketchMSStyleFill]
-  var innerShadows: js.Array[SketchMSStyleShadow]
+  var blur: js.UndefOr[SketchMSStyleBlur] = js.undefined
+  var borderOptions: js.UndefOr[SketchMSStyleBorderOptions] = js.undefined
+  var borders: js.UndefOr[js.Array[SketchMSStyleBorder]] = js.undefined
+  var colorControls: js.UndefOr[SketchMSStyleColorControls] = js.undefined
+  var contextSettings: js.UndefOr[SketchMSGraphicsContextSettings] = js.undefined
+  var do_objectID: String
+  var endDecorationType: js.UndefOr[Double] = js.undefined
+  var endMarkerType: Double
+  var fills: js.UndefOr[js.Array[SketchMSStyleFill]] = js.undefined
+  var innerShadows: js.UndefOr[js.Array[SketchMSStyleShadow]] = js.undefined
   var miterLimit: Double
-  var reflection: SketchMSStyleReflection
-  var shadows: js.Array[SketchMSStyleShadow]
-  var startDecorationType: Double
-  var textStyle: SketchMSTextStyle
+  var reflection: js.UndefOr[SketchMSStyleReflection] = js.undefined
+  var shadows: js.UndefOr[js.Array[SketchMSStyleShadow]] = js.undefined
+  var startDecorationType: js.UndefOr[Double] = js.undefined
+  var startMarkerType: Double
+  var textStyle: js.UndefOr[SketchMSTextStyle] = js.undefined
+  var windingRule: Double
 }
 
 object SketchMSStyle {
   @scala.inline
   def apply(
     _class: style,
-    blur: SketchMSStyleBlur,
-    borderOptions: SketchMSStyleBorderOptions,
-    borders: js.Array[SketchMSStyleBorder],
-    colorControls: SketchMSStyleColorControls,
-    contextSettings: SketchMSGraphicsContextSettings,
-    endDecorationType: Double,
-    fills: js.Array[SketchMSStyleFill],
-    innerShadows: js.Array[SketchMSStyleShadow],
+    do_objectID: String,
+    endMarkerType: Double,
     miterLimit: Double,
-    reflection: SketchMSStyleReflection,
-    shadows: js.Array[SketchMSStyleShadow],
-    startDecorationType: Double,
-    textStyle: SketchMSTextStyle,
-    do_objectID: String = null
+    startMarkerType: Double,
+    windingRule: Double,
+    blur: SketchMSStyleBlur = null,
+    borderOptions: SketchMSStyleBorderOptions = null,
+    borders: js.Array[SketchMSStyleBorder] = null,
+    colorControls: SketchMSStyleColorControls = null,
+    contextSettings: SketchMSGraphicsContextSettings = null,
+    endDecorationType: Int | Double = null,
+    fills: js.Array[SketchMSStyleFill] = null,
+    innerShadows: js.Array[SketchMSStyleShadow] = null,
+    reflection: SketchMSStyleReflection = null,
+    shadows: js.Array[SketchMSStyleShadow] = null,
+    startDecorationType: Int | Double = null,
+    textStyle: SketchMSTextStyle = null
   ): SketchMSStyle = {
-    val __obj = js.Dynamic.literal(_class = _class, blur = blur, borderOptions = borderOptions, borders = borders, colorControls = colorControls, contextSettings = contextSettings, endDecorationType = endDecorationType, fills = fills, innerShadows = innerShadows, miterLimit = miterLimit, reflection = reflection, shadows = shadows, startDecorationType = startDecorationType, textStyle = textStyle)
-    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    val __obj = js.Dynamic.literal(_class = _class, do_objectID = do_objectID, endMarkerType = endMarkerType, miterLimit = miterLimit, startMarkerType = startMarkerType, windingRule = windingRule)
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (borderOptions != null) __obj.updateDynamic("borderOptions")(borderOptions)
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (colorControls != null) __obj.updateDynamic("colorControls")(colorControls)
+    if (contextSettings != null) __obj.updateDynamic("contextSettings")(contextSettings)
+    if (endDecorationType != null) __obj.updateDynamic("endDecorationType")(endDecorationType.asInstanceOf[js.Any])
+    if (fills != null) __obj.updateDynamic("fills")(fills)
+    if (innerShadows != null) __obj.updateDynamic("innerShadows")(innerShadows)
+    if (reflection != null) __obj.updateDynamic("reflection")(reflection)
+    if (shadows != null) __obj.updateDynamic("shadows")(shadows)
+    if (startDecorationType != null) __obj.updateDynamic("startDecorationType")(startDecorationType.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     __obj.asInstanceOf[SketchMSStyle]
   }
 }

@@ -9,7 +9,7 @@ trait EmailField extends js.Object {
   def deleteEmailField(): Unit = js.native
   def getAddress(): String = js.native
   def getDisplayName(): String = js.native
-  def getLabel(): js.Any = js.native
+  def getLabel(): Field | ExtendedField | String = js.native
   def isPrimary(): Boolean = js.native
   def setAddress(address: String): EmailField = js.native
   def setAsPrimary(): EmailField = js.native

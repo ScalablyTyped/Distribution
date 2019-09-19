@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def ThemeProvider[Theme](props: ThemeProviderProps[Theme]): ReactElement = js.native
+  def useTheme[Theme](): Theme = js.native
   def withTheme[C /* <: ComponentType[_] */](component: C): SFC[AddOptionalTo[PropsOf[C], theme]] = js.native
 }
 

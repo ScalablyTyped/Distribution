@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__widgets"
-version := "1.9.1-91cbef"
+version := "1.9.2-a7f9a2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

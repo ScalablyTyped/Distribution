@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Blob extends BlobSource {
   def copyBlob(): Blob = js.native
+  /** @deprecated DO NOT USE */
   def getAllBlobs(): js.Array[Blob] = js.native
   def getBytes(): js.Array[Byte] = js.native
   def getContentType(): String = js.native

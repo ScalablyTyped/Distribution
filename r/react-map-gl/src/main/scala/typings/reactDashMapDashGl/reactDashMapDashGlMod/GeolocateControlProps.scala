@@ -2,6 +2,7 @@ package typings.reactDashMapDashGl.reactDashMapDashGlMod
 
 import typings.mapboxDashGl.mapboxDashGlMod.FitBoundsOptions
 import typings.mapboxDashGl.mapboxDashGlMod.PositionOptions
+import typings.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,7 @@ trait GeolocateControlProps extends BaseControlProps {
   var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
   var positionOptions: js.UndefOr[PositionOptions] = js.undefined
   var showUserLocation: js.UndefOr[Boolean] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
   var trackUserLocation: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -29,6 +31,7 @@ object GeolocateControlProps {
     onViewportChange: ViewportChangeHandler = null,
     positionOptions: PositionOptions = null,
     showUserLocation: js.UndefOr[Boolean] = js.undefined,
+    style: CSSProperties = null,
     trackUserLocation: js.UndefOr[Boolean] = js.undefined
   ): GeolocateControlProps = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +45,7 @@ object GeolocateControlProps {
     if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
     if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions)
     if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation)
+    if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(trackUserLocation)) __obj.updateDynamic("trackUserLocation")(trackUserLocation)
     __obj.asInstanceOf[GeolocateControlProps]
   }

@@ -71,6 +71,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `alarm-snooze` extends IconName
   
   @js.native
+  sealed trait album extends IconName
+  
+  @js.native
+  sealed trait `album-collection` extends IconName
+  
+  @js.native
   sealed trait algolia extends IconName
   
   @js.native
@@ -111,6 +117,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait amilia extends IconName
+  
+  @js.native
+  sealed trait `amp-guitar` extends IconName
   
   @js.native
   sealed trait analytics extends IconName
@@ -413,6 +422,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `badge-percent` extends IconName
   
   @js.native
+  sealed trait `badge-sheriff` extends IconName
+  
+  @js.native
   sealed trait `badger-honey` extends IconName
   
   @js.native
@@ -444,6 +456,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait bandcamp extends IconName
+  
+  @js.native
+  sealed trait banjo extends IconName
   
   @js.native
   sealed trait barcode extends IconName
@@ -534,6 +549,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait bells extends IconName
+  
+  @js.native
+  sealed trait betamax extends IconName
   
   @js.native
   sealed trait `bezier-curve` extends IconName
@@ -657,6 +675,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `books-medical` extends IconName
+  
+  @js.native
+  sealed trait boombox extends IconName
   
   @js.native
   sealed trait boot extends IconName
@@ -842,10 +863,16 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `business-time` extends IconName
   
   @js.native
+  sealed trait `buy-n-large` extends IconName
+  
+  @js.native
   sealed trait buysellads extends IconName
   
   @js.native
   sealed trait `cabinet-filing` extends IconName
+  
+  @js.native
+  sealed trait cactus extends IconName
   
   @js.native
   sealed trait calculator extends IconName
@@ -887,10 +914,19 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `calendar-week` extends IconName
   
   @js.native
+  sealed trait camcorder extends IconName
+  
+  @js.native
   sealed trait camera extends IconName
   
   @js.native
   sealed trait `camera-alt` extends IconName
+  
+  @js.native
+  sealed trait `camera-movie` extends IconName
+  
+  @js.native
+  sealed trait `camera-polaroid` extends IconName
   
   @js.native
   sealed trait `camera-retro` extends IconName
@@ -1007,6 +1043,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `cash-register` extends IconName
   
   @js.native
+  sealed trait `cassette-tape` extends IconName
+  
+  @js.native
   sealed trait cat extends IconName
   
   @js.native
@@ -1041,6 +1080,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `cc-visa` extends IconName
+  
+  @js.native
+  sealed trait cctv extends IconName
   
   @js.native
   sealed trait centercode extends IconName
@@ -1232,6 +1274,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait city extends IconName
   
   @js.native
+  sealed trait clarinet extends IconName
+  
+  @js.native
   sealed trait `claw-marks` extends IconName
   
   @js.native
@@ -1290,6 +1335,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `cloud-moon-rain` extends IconName
+  
+  @js.native
+  sealed trait `cloud-music` extends IconName
   
   @js.native
   sealed trait `cloud-rain` extends IconName
@@ -1418,6 +1466,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `comment-alt-minus` extends IconName
   
   @js.native
+  sealed trait `comment-alt-music` extends IconName
+  
+  @js.native
   sealed trait `comment-alt-plus` extends IconName
   
   @js.native
@@ -1452,6 +1503,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `comment-minus` extends IconName
+  
+  @js.native
+  sealed trait `comment-music` extends IconName
   
   @js.native
   sealed trait `comment-plus` extends IconName
@@ -1497,6 +1551,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `compress-wide` extends IconName
+  
+  @js.native
+  sealed trait `computer-classic` extends IconName
+  
+  @js.native
+  sealed trait `computer-speaker` extends IconName
   
   @js.native
   sealed trait `concierge-bell` extends IconName
@@ -1545,6 +1605,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait cow extends IconName
+  
+  @js.native
+  sealed trait cowbell extends IconName
+  
+  @js.native
+  sealed trait `cowbell-more` extends IconName
   
   @js.native
   sealed trait cpanel extends IconName
@@ -1779,6 +1845,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait directions extends IconName
+  
+  @js.native
+  sealed trait `disc-drive` extends IconName
   
   @js.native
   sealed trait discord extends IconName
@@ -2231,6 +2300,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `file-minus` extends IconName
   
   @js.native
+  sealed trait `file-music` extends IconName
+  
+  @js.native
   sealed trait `file-pdf` extends IconName
   
   @js.native
@@ -2280,6 +2352,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `film-alt` extends IconName
+  
+  @js.native
+  sealed trait `film-cannister` extends IconName
   
   @js.native
   sealed trait filter extends IconName
@@ -2342,6 +2417,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait flame extends IconName
   
   @js.native
+  sealed trait flashlight extends IconName
+  
+  @js.native
   sealed trait flask extends IconName
   
   @js.native
@@ -2367,6 +2445,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait flushed extends IconName
+  
+  @js.native
+  sealed trait flute extends IconName
+  
+  @js.native
+  sealed trait `flux-capacitor` extends IconName
   
   @js.native
   sealed trait fly extends IconName
@@ -2492,7 +2576,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `game-board-alt` extends IconName
   
   @js.native
+  sealed trait `game-console-handheld` extends IconName
+  
+  @js.native
   sealed trait gamepad extends IconName
+  
+  @js.native
+  sealed trait `gamepad-alt` extends IconName
   
   @js.native
   sealed trait `gas-pump` extends IconName
@@ -2660,6 +2750,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `graduation-cap` extends IconName
   
   @js.native
+  sealed trait gramophone extends IconName
+  
+  @js.native
   sealed trait gratipay extends IconName
   
   @js.native
@@ -2733,6 +2826,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait guitar extends IconName
+  
+  @js.native
+  sealed trait `guitar-electric` extends IconName
+  
+  @js.native
+  sealed trait guitars extends IconName
   
   @js.native
   sealed trait gulp extends IconName
@@ -2867,6 +2966,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `hat-chef` extends IconName
   
   @js.native
+  sealed trait `hat-cowboy` extends IconName
+  
+  @js.native
+  sealed trait `hat-cowboy-side` extends IconName
+  
+  @js.native
   sealed trait `hat-santa` extends IconName
   
   @js.native
@@ -2889,6 +2994,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `head-side-brain` extends IconName
+  
+  @js.native
+  sealed trait `head-side-headphones` extends IconName
   
   @js.native
   sealed trait `head-side-medical` extends IconName
@@ -2999,6 +3107,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `horse-head` extends IconName
   
   @js.native
+  sealed trait `horse-saddle` extends IconName
+  
+  @js.native
   sealed trait hospital extends IconName
   
   @js.native
@@ -3093,6 +3204,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait image extends IconName
+  
+  @js.native
+  sealed trait `image-polaroid` extends IconName
   
   @js.native
   sealed trait images extends IconName
@@ -3203,16 +3317,25 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `journal-whills` extends IconName
   
   @js.native
+  sealed trait joystick extends IconName
+  
+  @js.native
   sealed trait `js-square` extends IconName
   
   @js.native
   sealed trait jsfiddle extends IconName
   
   @js.native
+  sealed trait jug extends IconName
+  
+  @js.native
   sealed trait kaaba extends IconName
   
   @js.native
   sealed trait kaggle extends IconName
+  
+  @js.native
+  sealed trait kazoo extends IconName
   
   @js.native
   sealed trait kerning extends IconName
@@ -3294,6 +3417,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait laravel extends IconName
+  
+  @js.native
+  sealed trait lasso extends IconName
   
   @js.native
   sealed trait lastfm extends IconName
@@ -3417,6 +3543,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `list-alt` extends IconName
+  
+  @js.native
+  sealed trait `list-music` extends IconName
   
   @js.native
   sealed trait `list-ol` extends IconName
@@ -3602,6 +3731,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait maxcdn extends IconName
   
   @js.native
+  sealed trait mdb extends IconName
+  
+  @js.native
   sealed trait meat extends IconName
   
   @js.native
@@ -3669,6 +3801,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `microphone-slash` extends IconName
+  
+  @js.native
+  sealed trait `microphone-stand` extends IconName
   
   @js.native
   sealed trait microscope extends IconName
@@ -3785,7 +3920,16 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait mountains extends IconName
   
   @js.native
+  sealed trait mouse extends IconName
+  
+  @js.native
+  sealed trait `mouse-alt` extends IconName
+  
+  @js.native
   sealed trait `mouse-pointer` extends IconName
+  
+  @js.native
+  sealed trait `mp3-player` extends IconName
   
   @js.native
   sealed trait mug extends IconName
@@ -3801,6 +3945,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait music extends IconName
+  
+  @js.native
+  sealed trait `music-alt` extends IconName
+  
+  @js.native
+  sealed trait `music-alt-slash` extends IconName
+  
+  @js.native
+  sealed trait `music-slash` extends IconName
   
   @js.native
   sealed trait napster extends IconName
@@ -3885,6 +4038,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `optin-monster` extends IconName
+  
+  @js.native
+  sealed trait orcid extends IconName
   
   @js.native
   sealed trait ornament extends IconName
@@ -4085,6 +4241,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `phone-plus` extends IconName
   
   @js.native
+  sealed trait `phone-rotary` extends IconName
+  
+  @js.native
   sealed trait `phone-slash` extends IconName
   
   @js.native
@@ -4104,6 +4263,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait pi extends IconName
+  
+  @js.native
+  sealed trait piano extends IconName
+  
+  @js.native
+  sealed trait `piano-keyboard` extends IconName
   
   @js.native
   sealed trait pie extends IconName
@@ -4262,6 +4427,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `project-diagram` extends IconName
   
   @js.native
+  sealed trait projector extends IconName
+  
+  @js.native
   sealed trait pumpkin extends IconName
   
   @js.native
@@ -4325,6 +4493,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `radiation-alt` extends IconName
   
   @js.native
+  sealed trait radio extends IconName
+  
+  @js.native
+  sealed trait `radio-alt` extends IconName
+  
+  @js.native
   sealed trait rainbow extends IconName
   
   @js.native
@@ -4359,6 +4533,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait receipt extends IconName
+  
+  @js.native
+  sealed trait `record-vinyl` extends IconName
   
   @js.native
   sealed trait `rectangle-landscape` extends IconName
@@ -4478,6 +4655,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `route-interstate` extends IconName
   
   @js.native
+  sealed trait router extends IconName
+  
+  @js.native
   sealed trait rss extends IconName
   
   @js.native
@@ -4550,6 +4730,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait save extends IconName
   
   @js.native
+  sealed trait `sax-hot` extends IconName
+  
+  @js.native
+  sealed trait saxophone extends IconName
+  
+  @js.native
   sealed trait scalpel extends IconName
   
   @js.native
@@ -4557,6 +4743,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait scanner extends IconName
+  
+  @js.native
+  sealed trait `scanner-image` extends IconName
   
   @js.native
   sealed trait `scanner-keyboard` extends IconName
@@ -4778,6 +4967,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `signal-slash` extends IconName
   
   @js.native
+  sealed trait `signal-stream` extends IconName
+  
+  @js.native
   sealed trait signature extends IconName
   
   @js.native
@@ -4818,6 +5010,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait skull extends IconName
+  
+  @js.native
+  sealed trait `skull-cow` extends IconName
   
   @js.native
   sealed trait `skull-crossbones` extends IconName
@@ -5024,7 +5219,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait speakap extends IconName
   
   @js.native
+  sealed trait speaker extends IconName
+  
+  @js.native
   sealed trait `speaker-deck` extends IconName
+  
+  @js.native
+  sealed trait speakers extends IconName
   
   @js.native
   sealed trait `spell-check` extends IconName
@@ -5250,6 +5451,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait swatchbook extends IconName
+  
+  @js.native
+  sealed trait swift extends IconName
   
   @js.native
   sealed trait swimmer extends IconName
@@ -5651,6 +5855,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait triangle extends IconName
   
   @js.native
+  sealed trait `triangle-music` extends IconName
+  
+  @js.native
   sealed trait tripadvisor extends IconName
   
   @js.native
@@ -5687,6 +5894,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `truck-ramp` extends IconName
   
   @js.native
+  sealed trait trumpet extends IconName
+  
+  @js.native
   sealed trait tshirt extends IconName
   
   @js.native
@@ -5702,10 +5912,19 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait turkey extends IconName
   
   @js.native
+  sealed trait turntable extends IconName
+  
+  @js.native
   sealed trait turtle extends IconName
   
   @js.native
   sealed trait tv extends IconName
+  
+  @js.native
+  sealed trait `tv-alt` extends IconName
+  
+  @js.native
+  sealed trait `tv-music` extends IconName
   
   @js.native
   sealed trait `tv-retro` extends IconName
@@ -5720,6 +5939,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `twitter-square` extends IconName
   
   @js.native
+  sealed trait typewriter extends IconName
+  
+  @js.native
   sealed trait typo3 extends IconName
   
   @js.native
@@ -5730,6 +5952,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait uikit extends IconName
+  
+  @js.native
+  sealed trait umbraco extends IconName
   
   @js.native
   sealed trait umbrella extends IconName
@@ -5783,6 +6008,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait usb extends IconName
   
   @js.native
+  sealed trait `usb-drive` extends IconName
+  
+  @js.native
   sealed trait `usd-circle` extends IconName
   
   @js.native
@@ -5816,6 +6044,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `user-cog` extends IconName
   
   @js.native
+  sealed trait `user-cowboy` extends IconName
+  
+  @js.native
   sealed trait `user-crown` extends IconName
   
   @js.native
@@ -5847,6 +6078,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `user-minus` extends IconName
+  
+  @js.native
+  sealed trait `user-music` extends IconName
   
   @js.native
   sealed trait `user-ninja` extends IconName
@@ -5930,6 +6164,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `venus-mars` extends IconName
   
   @js.native
+  sealed trait vhs extends IconName
+  
+  @js.native
   sealed trait viacoin extends IconName
   
   @js.native
@@ -5970,6 +6207,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait vine extends IconName
+  
+  @js.native
+  sealed trait violin extends IconName
   
   @js.native
   sealed trait vk extends IconName
@@ -6017,7 +6257,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait vuejs extends IconName
   
   @js.native
+  sealed trait `wagon-covered` extends IconName
+  
+  @js.native
   sealed trait walker extends IconName
+  
+  @js.native
+  sealed trait `walkie-talkie` extends IconName
   
   @js.native
   sealed trait walking extends IconName
@@ -6044,6 +6290,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait watch extends IconName
   
   @js.native
+  sealed trait `watch-calculator` extends IconName
+  
+  @js.native
   sealed trait `watch-fitness` extends IconName
   
   @js.native
@@ -6063,6 +6312,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `wave-triangle` extends IconName
+  
+  @js.native
+  sealed trait waveform extends IconName
+  
+  @js.native
+  sealed trait `waveform-path` extends IconName
   
   @js.native
   sealed trait waze extends IconName
@@ -6296,6 +6551,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `alarm-snooze`: `alarm-snooze` = "alarm-snooze".asInstanceOf[`alarm-snooze`]
   @scala.inline
+  def album: album = "album".asInstanceOf[album]
+  @scala.inline
+  def `album-collection`: `album-collection` = "album-collection".asInstanceOf[`album-collection`]
+  @scala.inline
   def algolia: algolia = "algolia".asInstanceOf[algolia]
   @scala.inline
   def alicorn: alicorn = "alicorn".asInstanceOf[alicorn]
@@ -6323,6 +6582,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `american-sign-language-interpreting`: `american-sign-language-interpreting` = "american-sign-language-interpreting".asInstanceOf[`american-sign-language-interpreting`]
   @scala.inline
   def amilia: amilia = "amilia".asInstanceOf[amilia]
+  @scala.inline
+  def `amp-guitar`: `amp-guitar` = "amp-guitar".asInstanceOf[`amp-guitar`]
   @scala.inline
   def analytics: analytics = "analytics".asInstanceOf[analytics]
   @scala.inline
@@ -6524,6 +6785,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `badge-percent`: `badge-percent` = "badge-percent".asInstanceOf[`badge-percent`]
   @scala.inline
+  def `badge-sheriff`: `badge-sheriff` = "badge-sheriff".asInstanceOf[`badge-sheriff`]
+  @scala.inline
   def `badger-honey`: `badger-honey` = "badger-honey".asInstanceOf[`badger-honey`]
   @scala.inline
   def `bags-shopping`: `bags-shopping` = "bags-shopping".asInstanceOf[`bags-shopping`]
@@ -6545,6 +6808,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `band-aid`: `band-aid` = "band-aid".asInstanceOf[`band-aid`]
   @scala.inline
   def bandcamp: bandcamp = "bandcamp".asInstanceOf[bandcamp]
+  @scala.inline
+  def banjo: banjo = "banjo".asInstanceOf[banjo]
   @scala.inline
   def barcode: barcode = "barcode".asInstanceOf[barcode]
   @scala.inline
@@ -6605,6 +6870,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `bell-slash`: `bell-slash` = "bell-slash".asInstanceOf[`bell-slash`]
   @scala.inline
   def bells: bells = "bells".asInstanceOf[bells]
+  @scala.inline
+  def betamax: betamax = "betamax".asInstanceOf[betamax]
   @scala.inline
   def `bezier-curve`: `bezier-curve` = "bezier-curve".asInstanceOf[`bezier-curve`]
   @scala.inline
@@ -6687,6 +6954,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def books: books = "books".asInstanceOf[books]
   @scala.inline
   def `books-medical`: `books-medical` = "books-medical".asInstanceOf[`books-medical`]
+  @scala.inline
+  def boombox: boombox = "boombox".asInstanceOf[boombox]
   @scala.inline
   def boot: boot = "boot".asInstanceOf[boot]
   @scala.inline
@@ -6810,9 +7079,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `business-time`: `business-time` = "business-time".asInstanceOf[`business-time`]
   @scala.inline
+  def `buy-n-large`: `buy-n-large` = "buy-n-large".asInstanceOf[`buy-n-large`]
+  @scala.inline
   def buysellads: buysellads = "buysellads".asInstanceOf[buysellads]
   @scala.inline
   def `cabinet-filing`: `cabinet-filing` = "cabinet-filing".asInstanceOf[`cabinet-filing`]
+  @scala.inline
+  def cactus: cactus = "cactus".asInstanceOf[cactus]
   @scala.inline
   def calculator: calculator = "calculator".asInstanceOf[calculator]
   @scala.inline
@@ -6840,9 +7113,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `calendar-week`: `calendar-week` = "calendar-week".asInstanceOf[`calendar-week`]
   @scala.inline
+  def camcorder: camcorder = "camcorder".asInstanceOf[camcorder]
+  @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   @scala.inline
   def `camera-alt`: `camera-alt` = "camera-alt".asInstanceOf[`camera-alt`]
+  @scala.inline
+  def `camera-movie`: `camera-movie` = "camera-movie".asInstanceOf[`camera-movie`]
+  @scala.inline
+  def `camera-polaroid`: `camera-polaroid` = "camera-polaroid".asInstanceOf[`camera-polaroid`]
   @scala.inline
   def `camera-retro`: `camera-retro` = "camera-retro".asInstanceOf[`camera-retro`]
   @scala.inline
@@ -6920,6 +7199,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `cash-register`: `cash-register` = "cash-register".asInstanceOf[`cash-register`]
   @scala.inline
+  def `cassette-tape`: `cassette-tape` = "cassette-tape".asInstanceOf[`cassette-tape`]
+  @scala.inline
   def cat: cat = "cat".asInstanceOf[cat]
   @scala.inline
   def cauldron: cauldron = "cauldron".asInstanceOf[cauldron]
@@ -6943,6 +7224,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `cc-stripe`: `cc-stripe` = "cc-stripe".asInstanceOf[`cc-stripe`]
   @scala.inline
   def `cc-visa`: `cc-visa` = "cc-visa".asInstanceOf[`cc-visa`]
+  @scala.inline
+  def cctv: cctv = "cctv".asInstanceOf[cctv]
   @scala.inline
   def centercode: centercode = "centercode".asInstanceOf[centercode]
   @scala.inline
@@ -7070,6 +7353,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def city: city = "city".asInstanceOf[city]
   @scala.inline
+  def clarinet: clarinet = "clarinet".asInstanceOf[clarinet]
+  @scala.inline
   def `claw-marks`: `claw-marks` = "claw-marks".asInstanceOf[`claw-marks`]
   @scala.inline
   def `clinic-medical`: `clinic-medical` = "clinic-medical".asInstanceOf[`clinic-medical`]
@@ -7107,6 +7392,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `cloud-moon`: `cloud-moon` = "cloud-moon".asInstanceOf[`cloud-moon`]
   @scala.inline
   def `cloud-moon-rain`: `cloud-moon-rain` = "cloud-moon-rain".asInstanceOf[`cloud-moon-rain`]
+  @scala.inline
+  def `cloud-music`: `cloud-music` = "cloud-music".asInstanceOf[`cloud-music`]
   @scala.inline
   def `cloud-rain`: `cloud-rain` = "cloud-rain".asInstanceOf[`cloud-rain`]
   @scala.inline
@@ -7192,6 +7479,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `comment-alt-minus`: `comment-alt-minus` = "comment-alt-minus".asInstanceOf[`comment-alt-minus`]
   @scala.inline
+  def `comment-alt-music`: `comment-alt-music` = "comment-alt-music".asInstanceOf[`comment-alt-music`]
+  @scala.inline
   def `comment-alt-plus`: `comment-alt-plus` = "comment-alt-plus".asInstanceOf[`comment-alt-plus`]
   @scala.inline
   def `comment-alt-slash`: `comment-alt-slash` = "comment-alt-slash".asInstanceOf[`comment-alt-slash`]
@@ -7215,6 +7504,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `comment-medical`: `comment-medical` = "comment-medical".asInstanceOf[`comment-medical`]
   @scala.inline
   def `comment-minus`: `comment-minus` = "comment-minus".asInstanceOf[`comment-minus`]
+  @scala.inline
+  def `comment-music`: `comment-music` = "comment-music".asInstanceOf[`comment-music`]
   @scala.inline
   def `comment-plus`: `comment-plus` = "comment-plus".asInstanceOf[`comment-plus`]
   @scala.inline
@@ -7245,6 +7536,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `compress-arrows-alt`: `compress-arrows-alt` = "compress-arrows-alt".asInstanceOf[`compress-arrows-alt`]
   @scala.inline
   def `compress-wide`: `compress-wide` = "compress-wide".asInstanceOf[`compress-wide`]
+  @scala.inline
+  def `computer-classic`: `computer-classic` = "computer-classic".asInstanceOf[`computer-classic`]
+  @scala.inline
+  def `computer-speaker`: `computer-speaker` = "computer-speaker".asInstanceOf[`computer-speaker`]
   @scala.inline
   def `concierge-bell`: `concierge-bell` = "concierge-bell".asInstanceOf[`concierge-bell`]
   @scala.inline
@@ -7277,6 +7572,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def couch: couch = "couch".asInstanceOf[couch]
   @scala.inline
   def cow: cow = "cow".asInstanceOf[cow]
+  @scala.inline
+  def cowbell: cowbell = "cowbell".asInstanceOf[cowbell]
+  @scala.inline
+  def `cowbell-more`: `cowbell-more` = "cowbell-more".asInstanceOf[`cowbell-more`]
   @scala.inline
   def cpanel: cpanel = "cpanel".asInstanceOf[cpanel]
   @scala.inline
@@ -7433,6 +7732,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def diploma: diploma = "diploma".asInstanceOf[diploma]
   @scala.inline
   def directions: directions = "directions".asInstanceOf[directions]
+  @scala.inline
+  def `disc-drive`: `disc-drive` = "disc-drive".asInstanceOf[`disc-drive`]
   @scala.inline
   def discord: discord = "discord".asInstanceOf[discord]
   @scala.inline
@@ -7734,6 +8035,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `file-minus`: `file-minus` = "file-minus".asInstanceOf[`file-minus`]
   @scala.inline
+  def `file-music`: `file-music` = "file-music".asInstanceOf[`file-music`]
+  @scala.inline
   def `file-pdf`: `file-pdf` = "file-pdf".asInstanceOf[`file-pdf`]
   @scala.inline
   def `file-plus`: `file-plus` = "file-plus".asInstanceOf[`file-plus`]
@@ -7767,6 +8070,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def film: film = "film".asInstanceOf[film]
   @scala.inline
   def `film-alt`: `film-alt` = "film-alt".asInstanceOf[`film-alt`]
+  @scala.inline
+  def `film-cannister`: `film-cannister` = "film-cannister".asInstanceOf[`film-cannister`]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
@@ -7808,6 +8113,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def flame: flame = "flame".asInstanceOf[flame]
   @scala.inline
+  def flashlight: flashlight = "flashlight".asInstanceOf[flashlight]
+  @scala.inline
   def flask: flask = "flask".asInstanceOf[flask]
   @scala.inline
   def `flask-poison`: `flask-poison` = "flask-poison".asInstanceOf[`flask-poison`]
@@ -7825,6 +8132,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `flower-tulip`: `flower-tulip` = "flower-tulip".asInstanceOf[`flower-tulip`]
   @scala.inline
   def flushed: flushed = "flushed".asInstanceOf[flushed]
+  @scala.inline
+  def flute: flute = "flute".asInstanceOf[flute]
+  @scala.inline
+  def `flux-capacitor`: `flux-capacitor` = "flux-capacitor".asInstanceOf[`flux-capacitor`]
   @scala.inline
   def fly: fly = "fly".asInstanceOf[fly]
   @scala.inline
@@ -7908,7 +8219,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `game-board-alt`: `game-board-alt` = "game-board-alt".asInstanceOf[`game-board-alt`]
   @scala.inline
+  def `game-console-handheld`: `game-console-handheld` = "game-console-handheld".asInstanceOf[`game-console-handheld`]
+  @scala.inline
   def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
+  @scala.inline
+  def `gamepad-alt`: `gamepad-alt` = "gamepad-alt".asInstanceOf[`gamepad-alt`]
   @scala.inline
   def `gas-pump`: `gas-pump` = "gas-pump".asInstanceOf[`gas-pump`]
   @scala.inline
@@ -8020,6 +8335,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `graduation-cap`: `graduation-cap` = "graduation-cap".asInstanceOf[`graduation-cap`]
   @scala.inline
+  def gramophone: gramophone = "gramophone".asInstanceOf[gramophone]
+  @scala.inline
   def gratipay: gratipay = "gratipay".asInstanceOf[gratipay]
   @scala.inline
   def grav: grav = "grav".asInstanceOf[grav]
@@ -8069,6 +8386,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def grunt: grunt = "grunt".asInstanceOf[grunt]
   @scala.inline
   def guitar: guitar = "guitar".asInstanceOf[guitar]
+  @scala.inline
+  def `guitar-electric`: `guitar-electric` = "guitar-electric".asInstanceOf[`guitar-electric`]
+  @scala.inline
+  def guitars: guitars = "guitars".asInstanceOf[guitars]
   @scala.inline
   def gulp: gulp = "gulp".asInstanceOf[gulp]
   @scala.inline
@@ -8158,6 +8479,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `hat-chef`: `hat-chef` = "hat-chef".asInstanceOf[`hat-chef`]
   @scala.inline
+  def `hat-cowboy`: `hat-cowboy` = "hat-cowboy".asInstanceOf[`hat-cowboy`]
+  @scala.inline
+  def `hat-cowboy-side`: `hat-cowboy-side` = "hat-cowboy-side".asInstanceOf[`hat-cowboy-side`]
+  @scala.inline
   def `hat-santa`: `hat-santa` = "hat-santa".asInstanceOf[`hat-santa`]
   @scala.inline
   def `hat-winter`: `hat-winter` = "hat-winter".asInstanceOf[`hat-winter`]
@@ -8173,6 +8498,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `head-side`: `head-side` = "head-side".asInstanceOf[`head-side`]
   @scala.inline
   def `head-side-brain`: `head-side-brain` = "head-side-brain".asInstanceOf[`head-side-brain`]
+  @scala.inline
+  def `head-side-headphones`: `head-side-headphones` = "head-side-headphones".asInstanceOf[`head-side-headphones`]
   @scala.inline
   def `head-side-medical`: `head-side-medical` = "head-side-medical".asInstanceOf[`head-side-medical`]
   @scala.inline
@@ -8246,6 +8573,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `horse-head`: `horse-head` = "horse-head".asInstanceOf[`horse-head`]
   @scala.inline
+  def `horse-saddle`: `horse-saddle` = "horse-saddle".asInstanceOf[`horse-saddle`]
+  @scala.inline
   def hospital: hospital = "hospital".asInstanceOf[hospital]
   @scala.inline
   def `hospital-alt`: `hospital-alt` = "hospital-alt".asInstanceOf[`hospital-alt`]
@@ -8309,6 +8638,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def igloo: igloo = "igloo".asInstanceOf[igloo]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
+  def `image-polaroid`: `image-polaroid` = "image-polaroid".asInstanceOf[`image-polaroid`]
   @scala.inline
   def images: images = "images".asInstanceOf[images]
   @scala.inline
@@ -8382,13 +8713,19 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `journal-whills`: `journal-whills` = "journal-whills".asInstanceOf[`journal-whills`]
   @scala.inline
+  def joystick: joystick = "joystick".asInstanceOf[joystick]
+  @scala.inline
   def `js-square`: `js-square` = "js-square".asInstanceOf[`js-square`]
   @scala.inline
   def jsfiddle: jsfiddle = "jsfiddle".asInstanceOf[jsfiddle]
   @scala.inline
+  def jug: jug = "jug".asInstanceOf[jug]
+  @scala.inline
   def kaaba: kaaba = "kaaba".asInstanceOf[kaaba]
   @scala.inline
   def kaggle: kaggle = "kaggle".asInstanceOf[kaggle]
+  @scala.inline
+  def kazoo: kazoo = "kazoo".asInstanceOf[kazoo]
   @scala.inline
   def kerning: kerning = "kerning".asInstanceOf[kerning]
   @scala.inline
@@ -8443,6 +8780,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `laptop-medical`: `laptop-medical` = "laptop-medical".asInstanceOf[`laptop-medical`]
   @scala.inline
   def laravel: laravel = "laravel".asInstanceOf[laravel]
+  @scala.inline
+  def lasso: lasso = "lasso".asInstanceOf[lasso]
   @scala.inline
   def lastfm: lastfm = "lastfm".asInstanceOf[lastfm]
   @scala.inline
@@ -8525,6 +8864,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def list: list = "list".asInstanceOf[list]
   @scala.inline
   def `list-alt`: `list-alt` = "list-alt".asInstanceOf[`list-alt`]
+  @scala.inline
+  def `list-music`: `list-music` = "list-music".asInstanceOf[`list-music`]
   @scala.inline
   def `list-ol`: `list-ol` = "list-ol".asInstanceOf[`list-ol`]
   @scala.inline
@@ -8648,6 +8989,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def maxcdn: maxcdn = "maxcdn".asInstanceOf[maxcdn]
   @scala.inline
+  def mdb: mdb = "mdb".asInstanceOf[mdb]
+  @scala.inline
   def meat: meat = "meat".asInstanceOf[meat]
   @scala.inline
   def medal: medal = "medal".asInstanceOf[medal]
@@ -8693,6 +9036,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `microphone-alt-slash`: `microphone-alt-slash` = "microphone-alt-slash".asInstanceOf[`microphone-alt-slash`]
   @scala.inline
   def `microphone-slash`: `microphone-slash` = "microphone-slash".asInstanceOf[`microphone-slash`]
+  @scala.inline
+  def `microphone-stand`: `microphone-stand` = "microphone-stand".asInstanceOf[`microphone-stand`]
   @scala.inline
   def microscope: microscope = "microscope".asInstanceOf[microscope]
   @scala.inline
@@ -8770,7 +9115,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def mountains: mountains = "mountains".asInstanceOf[mountains]
   @scala.inline
+  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  @scala.inline
+  def `mouse-alt`: `mouse-alt` = "mouse-alt".asInstanceOf[`mouse-alt`]
+  @scala.inline
   def `mouse-pointer`: `mouse-pointer` = "mouse-pointer".asInstanceOf[`mouse-pointer`]
+  @scala.inline
+  def `mp3-player`: `mp3-player` = "mp3-player".asInstanceOf[`mp3-player`]
   @scala.inline
   def mug: mug = "mug".asInstanceOf[mug]
   @scala.inline
@@ -8781,6 +9132,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `mug-tea`: `mug-tea` = "mug-tea".asInstanceOf[`mug-tea`]
   @scala.inline
   def music: music = "music".asInstanceOf[music]
+  @scala.inline
+  def `music-alt`: `music-alt` = "music-alt".asInstanceOf[`music-alt`]
+  @scala.inline
+  def `music-alt-slash`: `music-alt-slash` = "music-alt-slash".asInstanceOf[`music-alt-slash`]
+  @scala.inline
+  def `music-slash`: `music-slash` = "music-slash".asInstanceOf[`music-slash`]
   @scala.inline
   def napster: napster = "napster".asInstanceOf[napster]
   @scala.inline
@@ -8837,6 +9194,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def opera: opera = "opera".asInstanceOf[opera]
   @scala.inline
   def `optin-monster`: `optin-monster` = "optin-monster".asInstanceOf[`optin-monster`]
+  @scala.inline
+  def orcid: orcid = "orcid".asInstanceOf[orcid]
   @scala.inline
   def ornament: ornament = "ornament".asInstanceOf[ornament]
   @scala.inline
@@ -8970,6 +9329,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `phone-plus`: `phone-plus` = "phone-plus".asInstanceOf[`phone-plus`]
   @scala.inline
+  def `phone-rotary`: `phone-rotary` = "phone-rotary".asInstanceOf[`phone-rotary`]
+  @scala.inline
   def `phone-slash`: `phone-slash` = "phone-slash".asInstanceOf[`phone-slash`]
   @scala.inline
   def `phone-square`: `phone-square` = "phone-square".asInstanceOf[`phone-square`]
@@ -8983,6 +9344,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def php: php = "php".asInstanceOf[php]
   @scala.inline
   def pi: pi = "pi".asInstanceOf[pi]
+  @scala.inline
+  def piano: piano = "piano".asInstanceOf[piano]
+  @scala.inline
+  def `piano-keyboard`: `piano-keyboard` = "piano-keyboard".asInstanceOf[`piano-keyboard`]
   @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
   @scala.inline
@@ -9088,6 +9453,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `project-diagram`: `project-diagram` = "project-diagram".asInstanceOf[`project-diagram`]
   @scala.inline
+  def projector: projector = "projector".asInstanceOf[projector]
+  @scala.inline
   def pumpkin: pumpkin = "pumpkin".asInstanceOf[pumpkin]
   @scala.inline
   def pushed: pushed = "pushed".asInstanceOf[pushed]
@@ -9130,6 +9497,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `radiation-alt`: `radiation-alt` = "radiation-alt".asInstanceOf[`radiation-alt`]
   @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
+  @scala.inline
+  def `radio-alt`: `radio-alt` = "radio-alt".asInstanceOf[`radio-alt`]
+  @scala.inline
   def rainbow: rainbow = "rainbow".asInstanceOf[rainbow]
   @scala.inline
   def raindrops: raindrops = "raindrops".asInstanceOf[raindrops]
@@ -9153,6 +9524,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def rebel: rebel = "rebel".asInstanceOf[rebel]
   @scala.inline
   def receipt: receipt = "receipt".asInstanceOf[receipt]
+  @scala.inline
+  def `record-vinyl`: `record-vinyl` = "record-vinyl".asInstanceOf[`record-vinyl`]
   @scala.inline
   def `rectangle-landscape`: `rectangle-landscape` = "rectangle-landscape".asInstanceOf[`rectangle-landscape`]
   @scala.inline
@@ -9232,6 +9605,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `route-interstate`: `route-interstate` = "route-interstate".asInstanceOf[`route-interstate`]
   @scala.inline
+  def router: router = "router".asInstanceOf[router]
+  @scala.inline
   def rss: rss = "rss".asInstanceOf[rss]
   @scala.inline
   def `rss-square`: `rss-square` = "rss-square".asInstanceOf[`rss-square`]
@@ -9280,11 +9655,17 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def save: save = "save".asInstanceOf[save]
   @scala.inline
+  def `sax-hot`: `sax-hot` = "sax-hot".asInstanceOf[`sax-hot`]
+  @scala.inline
+  def saxophone: saxophone = "saxophone".asInstanceOf[saxophone]
+  @scala.inline
   def scalpel: scalpel = "scalpel".asInstanceOf[scalpel]
   @scala.inline
   def `scalpel-path`: `scalpel-path` = "scalpel-path".asInstanceOf[`scalpel-path`]
   @scala.inline
   def scanner: scanner = "scanner".asInstanceOf[scanner]
+  @scala.inline
+  def `scanner-image`: `scanner-image` = "scanner-image".asInstanceOf[`scanner-image`]
   @scala.inline
   def `scanner-keyboard`: `scanner-keyboard` = "scanner-keyboard".asInstanceOf[`scanner-keyboard`]
   @scala.inline
@@ -9432,6 +9813,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `signal-slash`: `signal-slash` = "signal-slash".asInstanceOf[`signal-slash`]
   @scala.inline
+  def `signal-stream`: `signal-stream` = "signal-stream".asInstanceOf[`signal-stream`]
+  @scala.inline
   def signature: signature = "signature".asInstanceOf[signature]
   @scala.inline
   def `sim-card`: `sim-card` = "sim-card".asInstanceOf[`sim-card`]
@@ -9459,6 +9842,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `skiing-nordic`: `skiing-nordic` = "skiing-nordic".asInstanceOf[`skiing-nordic`]
   @scala.inline
   def skull: skull = "skull".asInstanceOf[skull]
+  @scala.inline
+  def `skull-cow`: `skull-cow` = "skull-cow".asInstanceOf[`skull-cow`]
   @scala.inline
   def `skull-crossbones`: `skull-crossbones` = "skull-crossbones".asInstanceOf[`skull-crossbones`]
   @scala.inline
@@ -9596,7 +9981,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def speakap: speakap = "speakap".asInstanceOf[speakap]
   @scala.inline
+  def speaker: speaker = "speaker".asInstanceOf[speaker]
+  @scala.inline
   def `speaker-deck`: `speaker-deck` = "speaker-deck".asInstanceOf[`speaker-deck`]
+  @scala.inline
+  def speakers: speakers = "speakers".asInstanceOf[speakers]
   @scala.inline
   def `spell-check`: `spell-check` = "spell-check".asInstanceOf[`spell-check`]
   @scala.inline
@@ -9747,6 +10136,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def suse: suse = "suse".asInstanceOf[suse]
   @scala.inline
   def swatchbook: swatchbook = "swatchbook".asInstanceOf[swatchbook]
+  @scala.inline
+  def swift: swift = "swift".asInstanceOf[swift]
   @scala.inline
   def swimmer: swimmer = "swimmer".asInstanceOf[swimmer]
   @scala.inline
@@ -10014,6 +10405,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def triangle: triangle = "triangle".asInstanceOf[triangle]
   @scala.inline
+  def `triangle-music`: `triangle-music` = "triangle-music".asInstanceOf[`triangle-music`]
+  @scala.inline
   def tripadvisor: tripadvisor = "tripadvisor".asInstanceOf[tripadvisor]
   @scala.inline
   def trophy: trophy = "trophy".asInstanceOf[trophy]
@@ -10038,6 +10431,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `truck-ramp`: `truck-ramp` = "truck-ramp".asInstanceOf[`truck-ramp`]
   @scala.inline
+  def trumpet: trumpet = "trumpet".asInstanceOf[trumpet]
+  @scala.inline
   def tshirt: tshirt = "tshirt".asInstanceOf[tshirt]
   @scala.inline
   def tty: tty = "tty".asInstanceOf[tty]
@@ -10048,9 +10443,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def turkey: turkey = "turkey".asInstanceOf[turkey]
   @scala.inline
+  def turntable: turntable = "turntable".asInstanceOf[turntable]
+  @scala.inline
   def turtle: turtle = "turtle".asInstanceOf[turtle]
   @scala.inline
   def tv: tv = "tv".asInstanceOf[tv]
+  @scala.inline
+  def `tv-alt`: `tv-alt` = "tv-alt".asInstanceOf[`tv-alt`]
+  @scala.inline
+  def `tv-music`: `tv-music` = "tv-music".asInstanceOf[`tv-music`]
   @scala.inline
   def `tv-retro`: `tv-retro` = "tv-retro".asInstanceOf[`tv-retro`]
   @scala.inline
@@ -10060,6 +10461,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `twitter-square`: `twitter-square` = "twitter-square".asInstanceOf[`twitter-square`]
   @scala.inline
+  def typewriter: typewriter = "typewriter".asInstanceOf[typewriter]
+  @scala.inline
   def typo3: typo3 = "typo3".asInstanceOf[typo3]
   @scala.inline
   def uber: uber = "uber".asInstanceOf[uber]
@@ -10067,6 +10470,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def ubuntu: ubuntu = "ubuntu".asInstanceOf[ubuntu]
   @scala.inline
   def uikit: uikit = "uikit".asInstanceOf[uikit]
+  @scala.inline
+  def umbraco: umbraco = "umbraco".asInstanceOf[umbraco]
   @scala.inline
   def umbrella: umbrella = "umbrella".asInstanceOf[umbrella]
   @scala.inline
@@ -10102,6 +10507,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def usb: usb = "usb".asInstanceOf[usb]
   @scala.inline
+  def `usb-drive`: `usb-drive` = "usb-drive".asInstanceOf[`usb-drive`]
+  @scala.inline
   def `usd-circle`: `usd-circle` = "usd-circle".asInstanceOf[`usd-circle`]
   @scala.inline
   def `usd-square`: `usd-square` = "usd-square".asInstanceOf[`usd-square`]
@@ -10124,6 +10531,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `user-cog`: `user-cog` = "user-cog".asInstanceOf[`user-cog`]
   @scala.inline
+  def `user-cowboy`: `user-cowboy` = "user-cowboy".asInstanceOf[`user-cowboy`]
+  @scala.inline
   def `user-crown`: `user-crown` = "user-crown".asInstanceOf[`user-crown`]
   @scala.inline
   def `user-edit`: `user-edit` = "user-edit".asInstanceOf[`user-edit`]
@@ -10145,6 +10554,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `user-md-chat`: `user-md-chat` = "user-md-chat".asInstanceOf[`user-md-chat`]
   @scala.inline
   def `user-minus`: `user-minus` = "user-minus".asInstanceOf[`user-minus`]
+  @scala.inline
+  def `user-music`: `user-music` = "user-music".asInstanceOf[`user-music`]
   @scala.inline
   def `user-ninja`: `user-ninja` = "user-ninja".asInstanceOf[`user-ninja`]
   @scala.inline
@@ -10200,6 +10611,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `venus-mars`: `venus-mars` = "venus-mars".asInstanceOf[`venus-mars`]
   @scala.inline
+  def vhs: vhs = "vhs".asInstanceOf[vhs]
+  @scala.inline
   def viacoin: viacoin = "viacoin".asInstanceOf[viacoin]
   @scala.inline
   def viadeo: viadeo = "viadeo".asInstanceOf[viadeo]
@@ -10227,6 +10640,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `vimeo-v`: `vimeo-v` = "vimeo-v".asInstanceOf[`vimeo-v`]
   @scala.inline
   def vine: vine = "vine".asInstanceOf[vine]
+  @scala.inline
+  def violin: violin = "violin".asInstanceOf[violin]
   @scala.inline
   def vk: vk = "vk".asInstanceOf[vk]
   @scala.inline
@@ -10258,7 +10673,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def vuejs: vuejs = "vuejs".asInstanceOf[vuejs]
   @scala.inline
+  def `wagon-covered`: `wagon-covered` = "wagon-covered".asInstanceOf[`wagon-covered`]
+  @scala.inline
   def walker: walker = "walker".asInstanceOf[walker]
+  @scala.inline
+  def `walkie-talkie`: `walkie-talkie` = "walkie-talkie".asInstanceOf[`walkie-talkie`]
   @scala.inline
   def walking: walking = "walking".asInstanceOf[walking]
   @scala.inline
@@ -10276,6 +10695,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
   @scala.inline
+  def `watch-calculator`: `watch-calculator` = "watch-calculator".asInstanceOf[`watch-calculator`]
+  @scala.inline
   def `watch-fitness`: `watch-fitness` = "watch-fitness".asInstanceOf[`watch-fitness`]
   @scala.inline
   def water: water = "water".asInstanceOf[water]
@@ -10289,6 +10710,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `wave-square`: `wave-square` = "wave-square".asInstanceOf[`wave-square`]
   @scala.inline
   def `wave-triangle`: `wave-triangle` = "wave-triangle".asInstanceOf[`wave-triangle`]
+  @scala.inline
+  def waveform: waveform = "waveform".asInstanceOf[waveform]
+  @scala.inline
+  def `waveform-path`: `waveform-path` = "waveform-path".asInstanceOf[`waveform-path`]
   @scala.inline
   def waze: waze = "waze".asInstanceOf[waze]
   @scala.inline

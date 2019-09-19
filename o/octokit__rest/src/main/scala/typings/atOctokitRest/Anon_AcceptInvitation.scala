@@ -2,12 +2,14 @@ package typings.atOctokitRest
 
 import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposAcceptInvitationParams
-import typings.atOctokitRest.atOctokitRestMod.ReposAcceptInvitationResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposAddCollaboratorParams
+import typings.atOctokitRest.atOctokitRestMod.ReposAddCollaboratorResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposAddDeployKeyParams
 import typings.atOctokitRest.atOctokitRestMod.ReposAddDeployKeyResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchAdminEnforcementParams
 import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchAdminEnforcementResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchAppRestrictionsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchAppRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchRequiredSignaturesParams
 import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchRequiredSignaturesResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposAddProtectedBranchRequiredStatusChecksContextsParams
@@ -24,8 +26,10 @@ import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParams
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParamsDeprecatedSha
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateDeploymentParams
+import typings.atOctokitRest.atOctokitRestMod.ReposCreateDeploymentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateDeploymentStatusParams
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateDeploymentStatusResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposCreateDispatchEventParams
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateFileParams
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateFileResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateForAuthenticatedUserParams
@@ -45,37 +49,26 @@ import typings.atOctokitRest.atOctokitRestMod.ReposCreateStatusResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateUsingTemplateParams
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateUsingTemplateResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeclineInvitationParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeclineInvitationResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteCommitCommentParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeleteCommitCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteDownloadParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeleteDownloadResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteFileParams
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteFileResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteHookParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeleteHookResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteInvitationParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeleteInvitationResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteParams
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteReleaseAssetParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeleteReleaseAssetResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteReleaseParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDeleteReleaseResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDeleteResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDisableAutomatedSecurityFixesParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDisableAutomatedSecurityFixesResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDisablePagesSiteParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDisablePagesSiteResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposDisableVulnerabilityAlertsParams
-import typings.atOctokitRest.atOctokitRestMod.ReposDisableVulnerabilityAlertsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposEnableAutomatedSecurityFixesParams
-import typings.atOctokitRest.atOctokitRestMod.ReposEnableAutomatedSecurityFixesResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposEnablePagesSiteParams
 import typings.atOctokitRest.atOctokitRestMod.ReposEnablePagesSiteResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposEnableVulnerabilityAlertsParams
-import typings.atOctokitRest.atOctokitRestMod.ReposEnableVulnerabilityAlertsResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposGetAppsWithAccessToProtectedBranchParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetAppsWithAccessToProtectedBranchResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetArchiveLinkParams
-import typings.atOctokitRest.atOctokitRestMod.ReposGetArchiveLinkResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetBranchParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetBranchProtectionParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetBranchProtectionResponse
@@ -85,6 +78,7 @@ import typings.atOctokitRest.atOctokitRestMod.ReposGetClonesResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCodeFrequencyStatsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCodeFrequencyStatsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCollaboratorPermissionLevelParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetCollaboratorPermissionLevelResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCombinedStatusForRefParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCombinedStatusForRefResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitActivityStatsParams
@@ -95,9 +89,9 @@ import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitParamsDeprecatedCommitSha
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitParamsDeprecatedSha
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitRefShaParams
-import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitRefShaResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetCommitResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetContentsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetContentsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetContributorsStatsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetContributorsStatsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetDeployKeyParams
@@ -122,12 +116,15 @@ import typings.atOctokitRest.atOctokitRestMod.ReposGetParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetParticipationStatsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetParticipationStatsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchAdminEnforcementParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchAdminEnforcementResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchPullRequestReviewEnforcementParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchPullRequestReviewEnforcementResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchRequiredSignaturesParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchRequiredSignaturesResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchRequiredStatusChecksParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchRequiredStatusChecksResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchRestrictionsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetProtectedBranchRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetPunchCardStatsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetPunchCardStatsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetReadmeParams
@@ -139,12 +136,18 @@ import typings.atOctokitRest.atOctokitRestMod.ReposGetReleaseByTagResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetReleaseParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetReleaseResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposGetTeamsWithAccessToProtectedBranchParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetTeamsWithAccessToProtectedBranchResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetTopPathsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetTopPathsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetTopReferrersParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetTopReferrersResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposGetUsersWithAccessToProtectedBranchParams
+import typings.atOctokitRest.atOctokitRestMod.ReposGetUsersWithAccessToProtectedBranchResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposGetViewsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposGetViewsResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposListAppsWithAccessToProtectedBranchParams
+import typings.atOctokitRest.atOctokitRestMod.ReposListAppsWithAccessToProtectedBranchResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListAssetsForReleaseParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListAssetsForReleaseResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListBranchesForHeadCommitParams
@@ -161,6 +164,7 @@ import typings.atOctokitRest.atOctokitRestMod.ReposListCommitCommentsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListCommitsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListCommitsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListContributorsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposListContributorsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListDeployKeysParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListDeployKeysResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListDeploymentStatusesParams
@@ -186,9 +190,11 @@ import typings.atOctokitRest.atOctokitRestMod.ReposListPagesBuildsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListPagesBuildsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListProtectedBranchRequiredStatusChecksContextsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposListProtectedBranchRequiredStatusChecksContextsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListProtectedBranchTeamRestrictionsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListProtectedBranchTeamRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListProtectedBranchUserRestrictionsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposListProtectedBranchUserRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListPublicParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListPublicResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListPullRequestsAssociatedWithCommitParams
@@ -201,18 +207,21 @@ import typings.atOctokitRest.atOctokitRestMod.ReposListTagsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListTagsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListTeamsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListTeamsResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposListTeamsWithAccessToProtectedBranchParams
+import typings.atOctokitRest.atOctokitRestMod.ReposListTeamsWithAccessToProtectedBranchResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposListTopicsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposListTopicsResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposListUsersWithAccessToProtectedBranchParams
+import typings.atOctokitRest.atOctokitRestMod.ReposListUsersWithAccessToProtectedBranchResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposMergeParams
+import typings.atOctokitRest.atOctokitRestMod.ReposMergeResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposPingHookParams
-import typings.atOctokitRest.atOctokitRestMod.ReposPingHookResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveBranchProtectionParams
-import typings.atOctokitRest.atOctokitRestMod.ReposRemoveBranchProtectionResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveCollaboratorParams
-import typings.atOctokitRest.atOctokitRestMod.ReposRemoveCollaboratorResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveDeployKeyParams
-import typings.atOctokitRest.atOctokitRestMod.ReposRemoveDeployKeyResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchAdminEnforcementParams
+import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchAppRestrictionsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchAppRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchPullRequestReviewEnforcementParams
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchRequiredSignaturesParams
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchRequiredStatusChecksContextsParams
@@ -223,6 +232,8 @@ import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchTeamRest
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchTeamRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchUserRestrictionsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposRemoveProtectedBranchUserRestrictionsResponse
+import typings.atOctokitRest.atOctokitRestMod.ReposReplaceProtectedBranchAppRestrictionsParams
+import typings.atOctokitRest.atOctokitRestMod.ReposReplaceProtectedBranchAppRestrictionsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposReplaceProtectedBranchRequiredStatusChecksContextsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposReplaceProtectedBranchRequiredStatusChecksContextsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposReplaceProtectedBranchTeamRestrictionsParams
@@ -236,7 +247,6 @@ import typings.atOctokitRest.atOctokitRestMod.ReposRequestPageBuildResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposRetrieveCommunityProfileMetricsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposRetrieveCommunityProfileMetricsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposTestPushHookParams
-import typings.atOctokitRest.atOctokitRestMod.ReposTestPushHookResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposTransferParams
 import typings.atOctokitRest.atOctokitRestMod.ReposTransferResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateBranchProtectionParams
@@ -248,7 +258,6 @@ import typings.atOctokitRest.atOctokitRestMod.ReposUpdateFileResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateHookParams
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateHookResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateInformationAboutPagesSiteParams
-import typings.atOctokitRest.atOctokitRestMod.ReposUpdateInformationAboutPagesSiteResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateInvitationParams
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateInvitationResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateParams
@@ -262,6 +271,7 @@ import typings.atOctokitRest.atOctokitRestMod.ReposUpdateReleaseParams
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateReleaseResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUpdateResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposUploadReleaseAssetParams
+import typings.atOctokitRest.atOctokitRestMod.ReposUploadReleaseAssetResponse
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -270,7 +280,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_AcceptInvitation extends js.Object {
   @JSName("acceptInvitation")
-  var acceptInvitation_Original: Anon_EndpointParamsPromiseReposAcceptInvitationParams = js.native
+  var acceptInvitation_Original: Anon_EndpointParamsAnyResponsePromiseReposAcceptInvitationParams = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
@@ -283,7 +293,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   @JSName("addCollaborator")
-  var addCollaborator_Original: Anon_EndpointParamsAnyResponsePromiseReposAddCollaboratorParams = js.native
+  var addCollaborator_Original: Anon_EndpointParamsPromiseReposAddCollaboratorParams = js.native
   /**
     * Here's how you can create a read-only deploy key:
     */
@@ -296,6 +306,17 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("addProtectedBranchAdminEnforcement")
   var addProtectedBranchAdminEnforcement_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchAdminEnforcementParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Grants the specified apps push access for this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    *
+    * | Type    | Description                                                                                                                                                |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
+    */
+  @JSName("addProtectedBranchAppRestrictions")
+  var addProtectedBranchAppRestrictions_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchAppRestrictionsParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -313,9 +334,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.
     *
-    * | Type    | Description                                                                                                                         |
-    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                |
+    * | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchTeamRestrictions")
   var addProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchTeamRestrictionsParams = js.native
@@ -324,9 +345,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Grants the specified people push access for this branch.
     *
-    * | Type    | Description                                                                                                            |
-    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                   |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchUserRestrictions")
   var addProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchUserRestrictionsParams = js.native
@@ -427,7 +448,14 @@ trait Anon_AcceptInvitation extends js.Object {
     * This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   @JSName("createDeployment")
-  var createDeployment_Original: Anon_EndpointParamsAnyResponsePromiseReposCreateDeploymentParams = js.native
+  var createDeployment_Original: Anon_EndpointParamsPromiseReposCreateDeploymentParams = js.native
+  /**
+    * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want to trigger a GitHub Actions workflow for activity that happens outside of GitHub. You must configure your GitHub Actions workflow to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://developer.github.com/v3/activity/events/types/#repositorydispatchevent)."
+    *
+    * To give you write access to the repository, you must use a personal access token with the `repo` scope. For more information, see "[Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.
+    */
+  @JSName("createDispatchEvent")
+  var createDispatchEvent_Original: Anon_EndpointParamsAnyResponsePromiseReposCreateDispatchEventParams = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
     */
@@ -491,7 +519,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createStatus")
   var createStatus_Original: Anon_EndpointParamsPromiseReposCreateStatusParams = js.native
   /**
-    * Creates a new repository using a repository template. Use the `repo` route parameter to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
+    * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
     *
     * **OAuth scope requirements**
     *
@@ -505,11 +533,11 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createUsingTemplate")
   var createUsingTemplate_Original: Anon_EndpointParamsPromiseReposCreateUsingTemplateParams = js.native
   @JSName("declineInvitation")
-  var declineInvitation_Original: Anon_EndpointParamsPromiseReposDeclineInvitationParams = js.native
+  var declineInvitation_Original: Anon_EndpointParamsAnyResponsePromiseReposDeclineInvitationParams = js.native
   @JSName("deleteCommitComment")
-  var deleteCommitComment_Original: Anon_EndpointParamsPromiseReposDeleteCommitCommentParams = js.native
+  var deleteCommitComment_Original: Anon_EndpointParamsAnyResponsePromiseReposDeleteCommitCommentParams = js.native
   @JSName("deleteDownload")
-  var deleteDownload_Original: Anon_EndpointParamsPromiseReposDeleteDownloadParams = js.native
+  var deleteDownload_Original: Anon_EndpointParamsAnyResponsePromiseReposDeleteDownloadParams = js.native
   /**
     * Deletes a file in a repository.
     *
@@ -522,16 +550,16 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("deleteFile")
   var deleteFile_Original: Anon_EndpointParamsPromiseReposDeleteFileParams = js.native
   @JSName("deleteHook")
-  var deleteHook_Original: Anon_EndpointParamsPromiseReposDeleteHookParams = js.native
+  var deleteHook_Original: Anon_EndpointParamsAnyResponsePromiseReposDeleteHookParams = js.native
   @JSName("deleteInvitation")
-  var deleteInvitation_Original: Anon_EndpointParamsPromiseReposDeleteInvitationParams = js.native
+  var deleteInvitation_Original: Anon_EndpointParamsAnyResponsePromiseReposDeleteInvitationParams = js.native
   @JSName("deleteReleaseAsset")
-  var deleteReleaseAsset_Original: Anon_EndpointParamsPromiseReposDeleteReleaseAssetParams = js.native
+  var deleteReleaseAsset_Original: Anon_EndpointParamsAnyResponsePromiseReposDeleteReleaseAssetParams = js.native
   /**
     * Users with push access to the repository can delete a release.
     */
   @JSName("deleteRelease")
-  var deleteRelease_Original: Anon_EndpointParamsPromiseReposDeleteReleaseParams = js.native
+  var deleteRelease_Original: Anon_EndpointParamsAnyResponsePromiseReposDeleteReleaseParams = js.native
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
     *
@@ -543,26 +571,33 @@ trait Anon_AcceptInvitation extends js.Object {
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
     */
   @JSName("disableAutomatedSecurityFixes")
-  var disableAutomatedSecurityFixes_Original: Anon_EndpointParamsPromiseReposDisableAutomatedSecurityFixesParams = js.native
+  var disableAutomatedSecurityFixes_Original: Anon_EndpointParamsAnyResponsePromiseReposDisableAutomatedSecurityFixesParams = js.native
   @JSName("disablePagesSite")
-  var disablePagesSite_Original: Anon_EndpointParamsPromiseReposDisablePagesSiteParams = js.native
+  var disablePagesSite_Original: Anon_EndpointParamsAnyResponsePromiseReposDisablePagesSiteParams = js.native
   /**
     * Disables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
   @JSName("disableVulnerabilityAlerts")
-  var disableVulnerabilityAlerts_Original: Anon_EndpointParamsPromiseReposDisableVulnerabilityAlertsParams = js.native
+  var disableVulnerabilityAlerts_Original: Anon_EndpointParamsAnyResponsePromiseReposDisableVulnerabilityAlertsParams = js.native
   /**
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
     */
   @JSName("enableAutomatedSecurityFixes")
-  var enableAutomatedSecurityFixes_Original: Anon_EndpointParamsPromiseReposEnableAutomatedSecurityFixesParams = js.native
+  var enableAutomatedSecurityFixes_Original: Anon_EndpointParamsAnyResponsePromiseReposEnableAutomatedSecurityFixesParams = js.native
   @JSName("enablePagesSite")
   var enablePagesSite_Original: Anon_EndpointParamsPromiseReposEnablePagesSiteParams = js.native
   /**
     * Enables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
   @JSName("enableVulnerabilityAlerts")
-  var enableVulnerabilityAlerts_Original: Anon_EndpointParamsPromiseReposEnableVulnerabilityAlertsParams = js.native
+  var enableVulnerabilityAlerts_Original: Anon_EndpointParamsAnyResponsePromiseReposEnableVulnerabilityAlertsParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    */
+  @JSName("getAppsWithAccessToProtectedBranch")
+  var getAppsWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposGetAppsWithAccessToProtectedBranchParams = js.native
   /**
     * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
     *
@@ -571,7 +606,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * To follow redirects with curl, use the `-L` switch:
     */
   @JSName("getArchiveLink")
-  var getArchiveLink_Original: Anon_EndpointParamsPromiseReposGetArchiveLinkParams = js.native
+  var getArchiveLink_Original: Anon_EndpointParamsAnyResponsePromiseReposGetArchiveLinkParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
@@ -593,7 +628,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Possible values for the `permission` key: `admin`, `write`, `read`, `none`.
     */
   @JSName("getCollaboratorPermissionLevel")
-  var getCollaboratorPermissionLevel_Original: Anon_EndpointParamsAnyResponsePromiseReposGetCollaboratorPermissionLevelParams = js.native
+  var getCollaboratorPermissionLevel_Original: Anon_EndpointParamsPromiseReposGetCollaboratorPermissionLevelParams = js.native
   /**
     * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
     *
@@ -616,16 +651,13 @@ trait Anon_AcceptInvitation extends js.Object {
   var getCommitComment_Original: Anon_EndpointParamsPromiseReposGetCommitCommentParams = js.native
   /**
     * **Note:** To access this endpoint, you must provide a custom [media type](https://developer.github.com/v3/media) in the `Accept` header:
-    *
     * ```
     * application/vnd.github.VERSION.sha
-    *
     * ```
-    *
     * Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.
     */
   @JSName("getCommitRefSha")
-  var getCommitRefSha_Original: Anon_EndpointParamsPromiseReposGetCommitRefShaParams = js.native
+  var getCommitRefSha_Original: Anon_EndpointParamsAnyResponsePromiseReposGetCommitRefShaParams = js.native
   /**
     * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
     *
@@ -681,7 +713,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   @JSName("getContents")
-  var getContents_Original: Anon_EndpointParamsAnyResponsePromiseReposGetContentsParams = js.native
+  var getContents_Original: Anon_EndpointParamsPromiseReposGetContentsParams = js.native
   /**
     * *   `total` - The Total number of commits authored by the contributor.
     *
@@ -731,12 +763,12 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
   @JSName("getProtectedBranchAdminEnforcement")
-  var getProtectedBranchAdminEnforcement_Original: Anon_EndpointParamsAnyResponsePromiseReposGetProtectedBranchAdminEnforcementParams = js.native
+  var getProtectedBranchAdminEnforcement_Original: Anon_EndpointParamsPromiseReposGetProtectedBranchAdminEnforcementParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
   @JSName("getProtectedBranchPullRequestReviewEnforcement")
-  var getProtectedBranchPullRequestReviewEnforcement_Original: Anon_EndpointParamsAnyResponsePromiseReposGetProtectedBranchPullRequestReviewEnforcementParams = js.native
+  var getProtectedBranchPullRequestReviewEnforcement_Original: Anon_EndpointParamsPromiseReposGetProtectedBranchPullRequestReviewEnforcementParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -754,10 +786,12 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
-    * **Note**: Teams and users `restrictions` are only available for organization-owned repositories.
+    * Lists who has access to this protected branch. {{#note}}
+    *
+    * **Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories.
     */
   @JSName("getProtectedBranchRestrictions")
-  var getProtectedBranchRestrictions_Original: Anon_EndpointParamsAnyResponsePromiseReposGetProtectedBranchRestrictionsParams = js.native
+  var getProtectedBranchRestrictions_Original: Anon_EndpointParamsPromiseReposGetProtectedBranchRestrictionsParams = js.native
   /**
     * Each array contains the day number, hour number, and number of commits:
     *
@@ -792,6 +826,13 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getRelease")
   var getRelease_Original: Anon_EndpointParamsPromiseReposGetReleaseParams = js.native
   /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    */
+  @JSName("getTeamsWithAccessToProtectedBranch")
+  var getTeamsWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposGetTeamsWithAccessToProtectedBranchParams = js.native
+  /**
     * Get the top 10 popular contents over the last 14 days.
     */
   @JSName("getTopPaths")
@@ -802,6 +843,13 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getTopReferrers")
   var getTopReferrers_Original: Anon_EndpointParamsPromiseReposGetTopReferrersParams = js.native
   /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the people who have push access to this branch.
+    */
+  @JSName("getUsersWithAccessToProtectedBranch")
+  var getUsersWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposGetUsersWithAccessToProtectedBranchParams = js.native
+  /**
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getViews")
@@ -811,6 +859,13 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("get")
   var get_Original: Anon_EndpointParamsPromiseReposGetParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    */
+  @JSName("listAppsWithAccessToProtectedBranch")
+  var listAppsWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposListAppsWithAccessToProtectedBranchParams = js.native
   @JSName("listAssetsForRelease")
   var listAssetsForRelease_Original: Anon_EndpointParamsPromiseReposListAssetsForReleaseParams = js.native
   /**
@@ -872,7 +927,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   @JSName("listContributors")
-  var listContributors_Original: Anon_EndpointParamsAnyResponsePromiseReposListContributorsParams = js.native
+  var listContributors_Original: Anon_EndpointParamsPromiseReposListContributorsParams = js.native
   @JSName("listDeployKeys")
   var listDeployKeys_Original: Anon_EndpointParamsPromiseReposListDeployKeysParams = js.native
   /**
@@ -922,7 +977,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
   @JSName("listProtectedBranchRequiredStatusChecksContexts")
-  var listProtectedBranchRequiredStatusChecksContexts_Original: Anon_EndpointParamsAnyResponsePromiseReposListProtectedBranchRequiredStatusChecksContextsParams = js.native
+  var listProtectedBranchRequiredStatusChecksContexts_Original: Anon_EndpointParamsPromiseReposListProtectedBranchRequiredStatusChecksContextsParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -936,7 +991,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Lists the people who have push access to this branch.
     */
   @JSName("listProtectedBranchUserRestrictions")
-  var listProtectedBranchUserRestrictions_Original: Anon_EndpointParamsAnyResponsePromiseReposListProtectedBranchUserRestrictionsParams = js.native
+  var listProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposListProtectedBranchUserRestrictionsParams = js.native
   /**
     * Lists all public repositories in the order that they were created.
     *
@@ -965,10 +1020,24 @@ trait Anon_AcceptInvitation extends js.Object {
   var listStatusesForRef_Original: Anon_EndpointParamsPromiseReposListStatusesForRefParams = js.native
   @JSName("listTags")
   var listTags_Original: Anon_EndpointParamsPromiseReposListTagsParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    */
+  @JSName("listTeamsWithAccessToProtectedBranch")
+  var listTeamsWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposListTeamsWithAccessToProtectedBranchParams = js.native
   @JSName("listTeams")
   var listTeams_Original: Anon_EndpointParamsPromiseReposListTeamsParams = js.native
   @JSName("listTopics")
   var listTopics_Original: Anon_EndpointParamsPromiseReposListTopicsParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the people who have push access to this branch.
+    */
+  @JSName("listUsersWithAccessToProtectedBranch")
+  var listUsersWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposListUsersWithAccessToProtectedBranchParams = js.native
   /**
     * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
@@ -977,21 +1046,21 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("list")
   var list_Original: Anon_EndpointParamsAnyResponsePromiseReposListParams = js.native
   @JSName("merge")
-  var merge_Original: Anon_EndpointParamsAnyResponsePromiseReposMergeParams = js.native
+  var merge_Original: Anon_EndpointParamsPromiseReposMergeParams = js.native
   /**
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   @JSName("pingHook")
-  var pingHook_Original: Anon_EndpointParamsPromiseReposPingHookParams = js.native
+  var pingHook_Original: Anon_EndpointParamsAnyResponsePromiseReposPingHookParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
   @JSName("removeBranchProtection")
-  var removeBranchProtection_Original: Anon_EndpointParamsPromiseReposRemoveBranchProtectionParams = js.native
+  var removeBranchProtection_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveBranchProtectionParams = js.native
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: Anon_EndpointParamsPromiseReposRemoveCollaboratorParams = js.native
+  var removeCollaborator_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveCollaboratorParams = js.native
   @JSName("removeDeployKey")
-  var removeDeployKey_Original: Anon_EndpointParamsPromiseReposRemoveDeployKeyParams = js.native
+  var removeDeployKey_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveDeployKeyParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -999,6 +1068,17 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("removeProtectedBranchAdminEnforcement")
   var removeProtectedBranchAdminEnforcement_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveProtectedBranchAdminEnforcementParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removes the ability of an app to push to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    *
+    * | Type    | Description                                                                                                                                                |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
+    */
+  @JSName("removeProtectedBranchAppRestrictions")
+  var removeProtectedBranchAppRestrictions_Original: Anon_EndpointParamsPromiseReposRemoveProtectedBranchAppRestrictionsParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
@@ -1033,23 +1113,34 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Removes the ability of a team to push to this branch. If you pass the `hellcat-preview` media type, you can include child teams.
     *
-    * | Type    | Description                                                                                                                                  |
-    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                         |
+    * | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchTeamRestrictions")
   var removeProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposRemoveProtectedBranchTeamRestrictionsParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
-    * Removes the ability of a team to push to this branch.
+    * Removes the ability of a user to push to this branch.
     *
-    * | Type    | Description                                                                                                                            |
-    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                   |
+    * | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchUserRestrictions")
   var removeProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposRemoveProtectedBranchUserRestrictionsParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Replaces the list of apps that have push access to this branch. This removes all apps that previously had push access and grants push access to the new list of apps. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    *
+    * | Type    | Description                                                                                                                                                |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
+    */
+  @JSName("replaceProtectedBranchAppRestrictions")
+  var replaceProtectedBranchAppRestrictions_Original: Anon_EndpointParamsPromiseReposReplaceProtectedBranchAppRestrictionsParams = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
@@ -1060,9 +1151,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. If you pass the `hellcat-preview` media type, you can include child teams.
     *
-    * | Type    | Description                                                                                                                         |
-    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                |
+    * | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchTeamRestrictions")
   var replaceProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposReplaceProtectedBranchTeamRestrictionsParams = js.native
@@ -1071,9 +1162,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Replaces the list of people that have push access to this branch. This removes all people that previously had push access and grants push access to the new list of people.
     *
-    * | Type    | Description                                                                                                            |
-    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                   |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchUserRestrictions")
   var replaceProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposReplaceProtectedBranchUserRestrictionsParams = js.native
@@ -1097,7 +1188,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   @JSName("testPushHook")
-  var testPushHook_Original: Anon_EndpointParamsPromiseReposTestPushHookParams = js.native
+  var testPushHook_Original: Anon_EndpointParamsAnyResponsePromiseReposTestPushHookParams = js.native
   /**
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://help.github.com/articles/about-repository-transfers/).
     */
@@ -1110,7 +1201,7 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     *
-    * **Note**: The list of users and teams in total is limited to 100 items.
+    * **Note**: The list of users, apps, and teams in total is limited to 100 items.
     */
   @JSName("updateBranchProtection")
   var updateBranchProtection_Original: Anon_EndpointParamsPromiseReposUpdateBranchProtectionParams = js.native
@@ -1124,7 +1215,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("updateHook")
   var updateHook_Original: Anon_EndpointParamsPromiseReposUpdateHookParams = js.native
   @JSName("updateInformationAboutPagesSite")
-  var updateInformationAboutPagesSite_Original: Anon_EndpointParamsPromiseReposUpdateInformationAboutPagesSiteParams = js.native
+  var updateInformationAboutPagesSite_Original: Anon_EndpointParamsAnyResponsePromiseReposUpdateInformationAboutPagesSiteParams = js.native
   @JSName("updateInvitation")
   var updateInvitation_Original: Anon_EndpointParamsPromiseReposUpdateInvitationParams = js.native
   /**
@@ -1159,18 +1250,20 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("update")
   var update_Original: Anon_EndpointParamsPromiseReposUpdateParams = js.native
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](https://developer.github.com/v3/repos/releases/#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
+    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in the response of the [Create a release endpoint](https://developer.github.com/v3/repos/releases/#create-a-release) to upload a release asset.
     *
-    * The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
+    * You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
     *
-    * Send the raw binary content of the asset as the request body.
+    * Most libraries will set the required `Content-Length` header automatically. Use the required `Content-Type` header to provide the media type of the asset. For a list of media types, see [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml). For example:
     *
-    * This may leave an empty asset with a state of `"new"`. It can be safely deleted.
+    * `application/zip`
+    *
+    * GitHub expects the asset data in its raw binary form, rather than JSON. You will send the raw binary content of the asset as the request body. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
     */
   @JSName("uploadReleaseAsset")
-  var uploadReleaseAsset_Original: Anon_EndpointParamsAnyResponsePromiseReposUploadReleaseAssetParams = js.native
-  def acceptInvitation(): js.Promise[Response[ReposAcceptInvitationResponse]] = js.native
-  def acceptInvitation(params: ReposAcceptInvitationParams): js.Promise[Response[ReposAcceptInvitationResponse]] = js.native
+  var uploadReleaseAsset_Original: Anon_EndpointParamsPromiseReposUploadReleaseAssetParams = js.native
+  def acceptInvitation(): js.Promise[AnyResponse] = js.native
+  def acceptInvitation(params: ReposAcceptInvitationParams): js.Promise[AnyResponse] = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
@@ -1182,8 +1275,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
-  def addCollaborator(): js.Promise[AnyResponse] = js.native
-  def addCollaborator(params: ReposAddCollaboratorParams): js.Promise[AnyResponse] = js.native
+  def addCollaborator(): js.Promise[Response[ReposAddCollaboratorResponse]] = js.native
+  def addCollaborator(params: ReposAddCollaboratorParams): js.Promise[Response[ReposAddCollaboratorResponse]] = js.native
   /**
     * Here's how you can create a read-only deploy key:
     */
@@ -1196,6 +1289,17 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def addProtectedBranchAdminEnforcement(): js.Promise[Response[ReposAddProtectedBranchAdminEnforcementResponse]] = js.native
   def addProtectedBranchAdminEnforcement(params: ReposAddProtectedBranchAdminEnforcementParams): js.Promise[Response[ReposAddProtectedBranchAdminEnforcementResponse]] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Grants the specified apps push access for this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    *
+    * | Type    | Description                                                                                                                                                |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
+    */
+  def addProtectedBranchAppRestrictions(): js.Promise[Response[ReposAddProtectedBranchAppRestrictionsResponse]] = js.native
+  def addProtectedBranchAppRestrictions(params: ReposAddProtectedBranchAppRestrictionsParams): js.Promise[Response[ReposAddProtectedBranchAppRestrictionsResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -1213,9 +1317,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.
     *
-    * | Type    | Description                                                                                                                         |
-    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                |
+    * | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def addProtectedBranchTeamRestrictions(): js.Promise[Response[ReposAddProtectedBranchTeamRestrictionsResponse]] = js.native
   def addProtectedBranchTeamRestrictions(params: ReposAddProtectedBranchTeamRestrictionsParams): js.Promise[Response[ReposAddProtectedBranchTeamRestrictionsResponse]] = js.native
@@ -1224,9 +1328,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Grants the specified people push access for this branch.
     *
-    * | Type    | Description                                                                                                            |
-    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                   |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def addProtectedBranchUserRestrictions(): js.Promise[Response[ReposAddProtectedBranchUserRestrictionsResponse]] = js.native
   def addProtectedBranchUserRestrictions(params: ReposAddProtectedBranchUserRestrictionsParams): js.Promise[Response[ReposAddProtectedBranchUserRestrictionsResponse]] = js.native
@@ -1320,8 +1424,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
-  def createDeployment(): js.Promise[AnyResponse] = js.native
-  def createDeployment(params: ReposCreateDeploymentParams): js.Promise[AnyResponse] = js.native
+  def createDeployment(): js.Promise[Response[ReposCreateDeploymentResponse]] = js.native
+  def createDeployment(params: ReposCreateDeploymentParams): js.Promise[Response[ReposCreateDeploymentResponse]] = js.native
   /**
     * Users with `push` access can create deployment statuses for a given deployment.
     *
@@ -1329,6 +1433,13 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def createDeploymentStatus(): js.Promise[Response[ReposCreateDeploymentStatusResponse]] = js.native
   def createDeploymentStatus(params: ReposCreateDeploymentStatusParams): js.Promise[Response[ReposCreateDeploymentStatusResponse]] = js.native
+  /**
+    * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want to trigger a GitHub Actions workflow for activity that happens outside of GitHub. You must configure your GitHub Actions workflow to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://developer.github.com/v3/activity/events/types/#repositorydispatchevent)."
+    *
+    * To give you write access to the repository, you must use a personal access token with the `repo` scope. For more information, see "[Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.
+    */
+  def createDispatchEvent(): js.Promise[AnyResponse] = js.native
+  def createDispatchEvent(params: ReposCreateDispatchEventParams): js.Promise[AnyResponse] = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
     */
@@ -1392,7 +1503,7 @@ trait Anon_AcceptInvitation extends js.Object {
   def createStatus(): js.Promise[Response[ReposCreateStatusResponse]] = js.native
   def createStatus(params: ReposCreateStatusParams): js.Promise[Response[ReposCreateStatusResponse]] = js.native
   /**
-    * Creates a new repository using a repository template. Use the `repo` route parameter to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
+    * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
     *
     * **OAuth scope requirements**
     *
@@ -1405,8 +1516,8 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def createUsingTemplate(): js.Promise[Response[ReposCreateUsingTemplateResponse]] = js.native
   def createUsingTemplate(params: ReposCreateUsingTemplateParams): js.Promise[Response[ReposCreateUsingTemplateResponse]] = js.native
-  def declineInvitation(): js.Promise[Response[ReposDeclineInvitationResponse]] = js.native
-  def declineInvitation(params: ReposDeclineInvitationParams): js.Promise[Response[ReposDeclineInvitationResponse]] = js.native
+  def declineInvitation(): js.Promise[AnyResponse] = js.native
+  def declineInvitation(params: ReposDeclineInvitationParams): js.Promise[AnyResponse] = js.native
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
     *
@@ -1414,10 +1525,10 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def delete(): js.Promise[Response[ReposDeleteResponse]] = js.native
   def delete(params: ReposDeleteParams): js.Promise[Response[ReposDeleteResponse]] = js.native
-  def deleteCommitComment(): js.Promise[Response[ReposDeleteCommitCommentResponse]] = js.native
-  def deleteCommitComment(params: ReposDeleteCommitCommentParams): js.Promise[Response[ReposDeleteCommitCommentResponse]] = js.native
-  def deleteDownload(): js.Promise[Response[ReposDeleteDownloadResponse]] = js.native
-  def deleteDownload(params: ReposDeleteDownloadParams): js.Promise[Response[ReposDeleteDownloadResponse]] = js.native
+  def deleteCommitComment(): js.Promise[AnyResponse] = js.native
+  def deleteCommitComment(params: ReposDeleteCommitCommentParams): js.Promise[AnyResponse] = js.native
+  def deleteDownload(): js.Promise[AnyResponse] = js.native
+  def deleteDownload(params: ReposDeleteDownloadParams): js.Promise[AnyResponse] = js.native
   /**
     * Deletes a file in a repository.
     *
@@ -1429,46 +1540,53 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def deleteFile(): js.Promise[Response[ReposDeleteFileResponse]] = js.native
   def deleteFile(params: ReposDeleteFileParams): js.Promise[Response[ReposDeleteFileResponse]] = js.native
-  def deleteHook(): js.Promise[Response[ReposDeleteHookResponse]] = js.native
-  def deleteHook(params: ReposDeleteHookParams): js.Promise[Response[ReposDeleteHookResponse]] = js.native
-  def deleteInvitation(): js.Promise[Response[ReposDeleteInvitationResponse]] = js.native
-  def deleteInvitation(params: ReposDeleteInvitationParams): js.Promise[Response[ReposDeleteInvitationResponse]] = js.native
+  def deleteHook(): js.Promise[AnyResponse] = js.native
+  def deleteHook(params: ReposDeleteHookParams): js.Promise[AnyResponse] = js.native
+  def deleteInvitation(): js.Promise[AnyResponse] = js.native
+  def deleteInvitation(params: ReposDeleteInvitationParams): js.Promise[AnyResponse] = js.native
   /**
     * Users with push access to the repository can delete a release.
     */
-  def deleteRelease(): js.Promise[Response[ReposDeleteReleaseResponse]] = js.native
-  def deleteRelease(params: ReposDeleteReleaseParams): js.Promise[Response[ReposDeleteReleaseResponse]] = js.native
-  def deleteReleaseAsset(): js.Promise[Response[ReposDeleteReleaseAssetResponse]] = js.native
-  def deleteReleaseAsset(params: ReposDeleteReleaseAssetParams): js.Promise[Response[ReposDeleteReleaseAssetResponse]] = js.native
+  def deleteRelease(): js.Promise[AnyResponse] = js.native
+  def deleteRelease(params: ReposDeleteReleaseParams): js.Promise[AnyResponse] = js.native
+  def deleteReleaseAsset(): js.Promise[AnyResponse] = js.native
+  def deleteReleaseAsset(params: ReposDeleteReleaseAssetParams): js.Promise[AnyResponse] = js.native
   /**
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
     */
-  def disableAutomatedSecurityFixes(): js.Promise[Response[ReposDisableAutomatedSecurityFixesResponse]] = js.native
-  def disableAutomatedSecurityFixes(params: ReposDisableAutomatedSecurityFixesParams): js.Promise[Response[ReposDisableAutomatedSecurityFixesResponse]] = js.native
-  def disablePagesSite(): js.Promise[Response[ReposDisablePagesSiteResponse]] = js.native
-  def disablePagesSite(params: ReposDisablePagesSiteParams): js.Promise[Response[ReposDisablePagesSiteResponse]] = js.native
+  def disableAutomatedSecurityFixes(): js.Promise[AnyResponse] = js.native
+  def disableAutomatedSecurityFixes(params: ReposDisableAutomatedSecurityFixesParams): js.Promise[AnyResponse] = js.native
+  def disablePagesSite(): js.Promise[AnyResponse] = js.native
+  def disablePagesSite(params: ReposDisablePagesSiteParams): js.Promise[AnyResponse] = js.native
   /**
     * Disables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
-  def disableVulnerabilityAlerts(): js.Promise[Response[ReposDisableVulnerabilityAlertsResponse]] = js.native
-  def disableVulnerabilityAlerts(params: ReposDisableVulnerabilityAlertsParams): js.Promise[Response[ReposDisableVulnerabilityAlertsResponse]] = js.native
+  def disableVulnerabilityAlerts(): js.Promise[AnyResponse] = js.native
+  def disableVulnerabilityAlerts(params: ReposDisableVulnerabilityAlertsParams): js.Promise[AnyResponse] = js.native
   /**
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
     */
-  def enableAutomatedSecurityFixes(): js.Promise[Response[ReposEnableAutomatedSecurityFixesResponse]] = js.native
-  def enableAutomatedSecurityFixes(params: ReposEnableAutomatedSecurityFixesParams): js.Promise[Response[ReposEnableAutomatedSecurityFixesResponse]] = js.native
+  def enableAutomatedSecurityFixes(): js.Promise[AnyResponse] = js.native
+  def enableAutomatedSecurityFixes(params: ReposEnableAutomatedSecurityFixesParams): js.Promise[AnyResponse] = js.native
   def enablePagesSite(): js.Promise[Response[ReposEnablePagesSiteResponse]] = js.native
   def enablePagesSite(params: ReposEnablePagesSiteParams): js.Promise[Response[ReposEnablePagesSiteResponse]] = js.native
   /**
     * Enables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
-  def enableVulnerabilityAlerts(): js.Promise[Response[ReposEnableVulnerabilityAlertsResponse]] = js.native
-  def enableVulnerabilityAlerts(params: ReposEnableVulnerabilityAlertsParams): js.Promise[Response[ReposEnableVulnerabilityAlertsResponse]] = js.native
+  def enableVulnerabilityAlerts(): js.Promise[AnyResponse] = js.native
+  def enableVulnerabilityAlerts(params: ReposEnableVulnerabilityAlertsParams): js.Promise[AnyResponse] = js.native
   /**
     * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
     */
   def get(): js.Promise[Response[ReposGetResponse]] = js.native
   def get(params: ReposGetParams): js.Promise[Response[ReposGetResponse]] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    */
+  def getAppsWithAccessToProtectedBranch(): js.Promise[Response[ReposGetAppsWithAccessToProtectedBranchResponse]] = js.native
+  def getAppsWithAccessToProtectedBranch(params: ReposGetAppsWithAccessToProtectedBranchParams): js.Promise[Response[ReposGetAppsWithAccessToProtectedBranchResponse]] = js.native
   /**
     * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
     *
@@ -1476,8 +1594,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * To follow redirects with curl, use the `-L` switch:
     */
-  def getArchiveLink(): js.Promise[Response[ReposGetArchiveLinkResponse]] = js.native
-  def getArchiveLink(params: ReposGetArchiveLinkParams): js.Promise[Response[ReposGetArchiveLinkResponse]] = js.native
+  def getArchiveLink(): js.Promise[AnyResponse] = js.native
+  def getArchiveLink(params: ReposGetArchiveLinkParams): js.Promise[AnyResponse] = js.native
   def getBranch(): js.Promise[Response[ReposGetBranchResponse]] = js.native
   def getBranch(params: ReposGetBranchParams): js.Promise[Response[ReposGetBranchResponse]] = js.native
   /**
@@ -1498,8 +1616,8 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Possible values for the `permission` key: `admin`, `write`, `read`, `none`.
     */
-  def getCollaboratorPermissionLevel(): js.Promise[AnyResponse] = js.native
-  def getCollaboratorPermissionLevel(params: ReposGetCollaboratorPermissionLevelParams): js.Promise[AnyResponse] = js.native
+  def getCollaboratorPermissionLevel(): js.Promise[Response[ReposGetCollaboratorPermissionLevelResponse]] = js.native
+  def getCollaboratorPermissionLevel(params: ReposGetCollaboratorPermissionLevelParams): js.Promise[Response[ReposGetCollaboratorPermissionLevelResponse]] = js.native
   /**
     * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
     *
@@ -1555,16 +1673,13 @@ trait Anon_AcceptInvitation extends js.Object {
   def getCommitComment(params: ReposGetCommitCommentParams): js.Promise[Response[ReposGetCommitCommentResponse]] = js.native
   /**
     * **Note:** To access this endpoint, you must provide a custom [media type](https://developer.github.com/v3/media) in the `Accept` header:
-    *
     * ```
     * application/vnd.github.VERSION.sha
-    *
     * ```
-    *
     * Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.
     */
-  def getCommitRefSha(): js.Promise[Response[ReposGetCommitRefShaResponse]] = js.native
-  def getCommitRefSha(params: ReposGetCommitRefShaParams): js.Promise[Response[ReposGetCommitRefShaResponse]] = js.native
+  def getCommitRefSha(): js.Promise[AnyResponse] = js.native
+  def getCommitRefSha(params: ReposGetCommitRefShaParams): js.Promise[AnyResponse] = js.native
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.
     *
@@ -1588,8 +1703,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
-  def getContents(): js.Promise[AnyResponse] = js.native
-  def getContents(params: ReposGetContentsParams): js.Promise[AnyResponse] = js.native
+  def getContents(): js.Promise[Response[ReposGetContentsResponse]] = js.native
+  def getContents(params: ReposGetContentsParams): js.Promise[Response[ReposGetContentsResponse]] = js.native
   /**
     * *   `total` - The Total number of commits authored by the contributor.
     *
@@ -1638,13 +1753,13 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
-  def getProtectedBranchAdminEnforcement(): js.Promise[AnyResponse] = js.native
-  def getProtectedBranchAdminEnforcement(params: ReposGetProtectedBranchAdminEnforcementParams): js.Promise[AnyResponse] = js.native
+  def getProtectedBranchAdminEnforcement(): js.Promise[Response[ReposGetProtectedBranchAdminEnforcementResponse]] = js.native
+  def getProtectedBranchAdminEnforcement(params: ReposGetProtectedBranchAdminEnforcementParams): js.Promise[Response[ReposGetProtectedBranchAdminEnforcementResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
-  def getProtectedBranchPullRequestReviewEnforcement(): js.Promise[AnyResponse] = js.native
-  def getProtectedBranchPullRequestReviewEnforcement(params: ReposGetProtectedBranchPullRequestReviewEnforcementParams): js.Promise[AnyResponse] = js.native
+  def getProtectedBranchPullRequestReviewEnforcement(): js.Promise[Response[ReposGetProtectedBranchPullRequestReviewEnforcementResponse]] = js.native
+  def getProtectedBranchPullRequestReviewEnforcement(params: ReposGetProtectedBranchPullRequestReviewEnforcementParams): js.Promise[Response[ReposGetProtectedBranchPullRequestReviewEnforcementResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -1662,10 +1777,12 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
-    * **Note**: Teams and users `restrictions` are only available for organization-owned repositories.
+    * Lists who has access to this protected branch. {{#note}}
+    *
+    * **Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories.
     */
-  def getProtectedBranchRestrictions(): js.Promise[AnyResponse] = js.native
-  def getProtectedBranchRestrictions(params: ReposGetProtectedBranchRestrictionsParams): js.Promise[AnyResponse] = js.native
+  def getProtectedBranchRestrictions(): js.Promise[Response[ReposGetProtectedBranchRestrictionsResponse]] = js.native
+  def getProtectedBranchRestrictions(params: ReposGetProtectedBranchRestrictionsParams): js.Promise[Response[ReposGetProtectedBranchRestrictionsResponse]] = js.native
   /**
     * Each array contains the day number, hour number, and number of commits:
     *
@@ -1700,6 +1817,13 @@ trait Anon_AcceptInvitation extends js.Object {
   def getReleaseByTag(): js.Promise[Response[ReposGetReleaseByTagResponse]] = js.native
   def getReleaseByTag(params: ReposGetReleaseByTagParams): js.Promise[Response[ReposGetReleaseByTagResponse]] = js.native
   /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    */
+  def getTeamsWithAccessToProtectedBranch(): js.Promise[Response[ReposGetTeamsWithAccessToProtectedBranchResponse]] = js.native
+  def getTeamsWithAccessToProtectedBranch(params: ReposGetTeamsWithAccessToProtectedBranchParams): js.Promise[Response[ReposGetTeamsWithAccessToProtectedBranchResponse]] = js.native
+  /**
     * Get the top 10 popular contents over the last 14 days.
     */
   def getTopPaths(): js.Promise[Response[ReposGetTopPathsResponse]] = js.native
@@ -1709,6 +1833,13 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def getTopReferrers(): js.Promise[Response[ReposGetTopReferrersResponse]] = js.native
   def getTopReferrers(params: ReposGetTopReferrersParams): js.Promise[Response[ReposGetTopReferrersResponse]] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the people who have push access to this branch.
+    */
+  def getUsersWithAccessToProtectedBranch(): js.Promise[Response[ReposGetUsersWithAccessToProtectedBranchResponse]] = js.native
+  def getUsersWithAccessToProtectedBranch(params: ReposGetUsersWithAccessToProtectedBranchParams): js.Promise[Response[ReposGetUsersWithAccessToProtectedBranchResponse]] = js.native
   /**
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
@@ -1721,6 +1852,13 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def list(): js.Promise[AnyResponse] = js.native
   def list(params: ReposListParams): js.Promise[AnyResponse] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    */
+  def listAppsWithAccessToProtectedBranch(): js.Promise[Response[ReposListAppsWithAccessToProtectedBranchResponse]] = js.native
+  def listAppsWithAccessToProtectedBranch(params: ReposListAppsWithAccessToProtectedBranchParams): js.Promise[Response[ReposListAppsWithAccessToProtectedBranchResponse]] = js.native
   def listAssetsForRelease(): js.Promise[Response[ReposListAssetsForReleaseResponse]] = js.native
   def listAssetsForRelease(params: ReposListAssetsForReleaseParams): js.Promise[Response[ReposListAssetsForReleaseResponse]] = js.native
   def listBranches(): js.Promise[Response[ReposListBranchesResponse]] = js.native
@@ -1782,8 +1920,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
-  def listContributors(): js.Promise[AnyResponse] = js.native
-  def listContributors(params: ReposListContributorsParams): js.Promise[AnyResponse] = js.native
+  def listContributors(): js.Promise[Response[ReposListContributorsResponse]] = js.native
+  def listContributors(params: ReposListContributorsParams): js.Promise[Response[ReposListContributorsResponse]] = js.native
   def listDeployKeys(): js.Promise[Response[ReposListDeployKeysResponse]] = js.native
   def listDeployKeys(params: ReposListDeployKeysParams): js.Promise[Response[ReposListDeployKeysResponse]] = js.native
   /**
@@ -1832,8 +1970,8 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
-  def listProtectedBranchRequiredStatusChecksContexts(): js.Promise[AnyResponse] = js.native
-  def listProtectedBranchRequiredStatusChecksContexts(params: ReposListProtectedBranchRequiredStatusChecksContextsParams): js.Promise[AnyResponse] = js.native
+  def listProtectedBranchRequiredStatusChecksContexts(): js.Promise[Response[ReposListProtectedBranchRequiredStatusChecksContextsResponse]] = js.native
+  def listProtectedBranchRequiredStatusChecksContexts(params: ReposListProtectedBranchRequiredStatusChecksContextsParams): js.Promise[Response[ReposListProtectedBranchRequiredStatusChecksContextsResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -1846,8 +1984,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Lists the people who have push access to this branch.
     */
-  def listProtectedBranchUserRestrictions(): js.Promise[AnyResponse] = js.native
-  def listProtectedBranchUserRestrictions(params: ReposListProtectedBranchUserRestrictionsParams): js.Promise[AnyResponse] = js.native
+  def listProtectedBranchUserRestrictions(): js.Promise[Response[ReposListProtectedBranchUserRestrictionsResponse]] = js.native
+  def listProtectedBranchUserRestrictions(params: ReposListProtectedBranchUserRestrictionsParams): js.Promise[Response[ReposListProtectedBranchUserRestrictionsResponse]] = js.native
   /**
     * Lists all public repositories in the order that they were created.
     *
@@ -1878,24 +2016,38 @@ trait Anon_AcceptInvitation extends js.Object {
   def listTags(params: ReposListTagsParams): js.Promise[Response[ReposListTagsResponse]] = js.native
   def listTeams(): js.Promise[Response[ReposListTeamsResponse]] = js.native
   def listTeams(params: ReposListTeamsParams): js.Promise[Response[ReposListTeamsResponse]] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    */
+  def listTeamsWithAccessToProtectedBranch(): js.Promise[Response[ReposListTeamsWithAccessToProtectedBranchResponse]] = js.native
+  def listTeamsWithAccessToProtectedBranch(params: ReposListTeamsWithAccessToProtectedBranchParams): js.Promise[Response[ReposListTeamsWithAccessToProtectedBranchResponse]] = js.native
   def listTopics(): js.Promise[Response[ReposListTopicsResponse]] = js.native
   def listTopics(params: ReposListTopicsParams): js.Promise[Response[ReposListTopicsResponse]] = js.native
-  def merge(): js.Promise[AnyResponse] = js.native
-  def merge(params: ReposMergeParams): js.Promise[AnyResponse] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the people who have push access to this branch.
+    */
+  def listUsersWithAccessToProtectedBranch(): js.Promise[Response[ReposListUsersWithAccessToProtectedBranchResponse]] = js.native
+  def listUsersWithAccessToProtectedBranch(params: ReposListUsersWithAccessToProtectedBranchParams): js.Promise[Response[ReposListUsersWithAccessToProtectedBranchResponse]] = js.native
+  def merge(): js.Promise[Response[ReposMergeResponse]] = js.native
+  def merge(params: ReposMergeParams): js.Promise[Response[ReposMergeResponse]] = js.native
   /**
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
     */
-  def pingHook(): js.Promise[Response[ReposPingHookResponse]] = js.native
-  def pingHook(params: ReposPingHookParams): js.Promise[Response[ReposPingHookResponse]] = js.native
+  def pingHook(): js.Promise[AnyResponse] = js.native
+  def pingHook(params: ReposPingHookParams): js.Promise[AnyResponse] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
-  def removeBranchProtection(): js.Promise[Response[ReposRemoveBranchProtectionResponse]] = js.native
-  def removeBranchProtection(params: ReposRemoveBranchProtectionParams): js.Promise[Response[ReposRemoveBranchProtectionResponse]] = js.native
-  def removeCollaborator(): js.Promise[Response[ReposRemoveCollaboratorResponse]] = js.native
-  def removeCollaborator(params: ReposRemoveCollaboratorParams): js.Promise[Response[ReposRemoveCollaboratorResponse]] = js.native
-  def removeDeployKey(): js.Promise[Response[ReposRemoveDeployKeyResponse]] = js.native
-  def removeDeployKey(params: ReposRemoveDeployKeyParams): js.Promise[Response[ReposRemoveDeployKeyResponse]] = js.native
+  def removeBranchProtection(): js.Promise[AnyResponse] = js.native
+  def removeBranchProtection(params: ReposRemoveBranchProtectionParams): js.Promise[AnyResponse] = js.native
+  def removeCollaborator(): js.Promise[AnyResponse] = js.native
+  def removeCollaborator(params: ReposRemoveCollaboratorParams): js.Promise[AnyResponse] = js.native
+  def removeDeployKey(): js.Promise[AnyResponse] = js.native
+  def removeDeployKey(params: ReposRemoveDeployKeyParams): js.Promise[AnyResponse] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -1903,6 +2055,17 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def removeProtectedBranchAdminEnforcement(): js.Promise[AnyResponse] = js.native
   def removeProtectedBranchAdminEnforcement(params: ReposRemoveProtectedBranchAdminEnforcementParams): js.Promise[AnyResponse] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removes the ability of an app to push to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    *
+    * | Type    | Description                                                                                                                                                |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
+    */
+  def removeProtectedBranchAppRestrictions(): js.Promise[Response[ReposRemoveProtectedBranchAppRestrictionsResponse]] = js.native
+  def removeProtectedBranchAppRestrictions(params: ReposRemoveProtectedBranchAppRestrictionsParams): js.Promise[Response[ReposRemoveProtectedBranchAppRestrictionsResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
@@ -1937,23 +2100,34 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Removes the ability of a team to push to this branch. If you pass the `hellcat-preview` media type, you can include child teams.
     *
-    * | Type    | Description                                                                                                                                  |
-    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                         |
+    * | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def removeProtectedBranchTeamRestrictions(): js.Promise[Response[ReposRemoveProtectedBranchTeamRestrictionsResponse]] = js.native
   def removeProtectedBranchTeamRestrictions(params: ReposRemoveProtectedBranchTeamRestrictionsParams): js.Promise[Response[ReposRemoveProtectedBranchTeamRestrictionsResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
-    * Removes the ability of a team to push to this branch.
+    * Removes the ability of a user to push to this branch.
     *
-    * | Type    | Description                                                                                                                            |
-    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                   |
+    * | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def removeProtectedBranchUserRestrictions(): js.Promise[Response[ReposRemoveProtectedBranchUserRestrictionsResponse]] = js.native
   def removeProtectedBranchUserRestrictions(params: ReposRemoveProtectedBranchUserRestrictionsParams): js.Promise[Response[ReposRemoveProtectedBranchUserRestrictionsResponse]] = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Replaces the list of apps that have push access to this branch. This removes all apps that previously had push access and grants push access to the new list of apps. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    *
+    * | Type    | Description                                                                                                                                                |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
+    */
+  def replaceProtectedBranchAppRestrictions(): js.Promise[Response[ReposReplaceProtectedBranchAppRestrictionsResponse]] = js.native
+  def replaceProtectedBranchAppRestrictions(params: ReposReplaceProtectedBranchAppRestrictionsParams): js.Promise[Response[ReposReplaceProtectedBranchAppRestrictionsResponse]] = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
@@ -1964,9 +2138,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. If you pass the `hellcat-preview` media type, you can include child teams.
     *
-    * | Type    | Description                                                                                                                         |
-    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                                |
+    * | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def replaceProtectedBranchTeamRestrictions(): js.Promise[Response[ReposReplaceProtectedBranchTeamRestrictionsResponse]] = js.native
   def replaceProtectedBranchTeamRestrictions(params: ReposReplaceProtectedBranchTeamRestrictionsParams): js.Promise[Response[ReposReplaceProtectedBranchTeamRestrictionsResponse]] = js.native
@@ -1975,9 +2149,9 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * Replaces the list of people that have push access to this branch. This removes all people that previously had push access and grants push access to the new list of people.
     *
-    * | Type    | Description                                                                                                            |
-    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * | Type    | Description                                                                                                                   |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def replaceProtectedBranchUserRestrictions(): js.Promise[Response[ReposReplaceProtectedBranchUserRestrictionsResponse]] = js.native
   def replaceProtectedBranchUserRestrictions(params: ReposReplaceProtectedBranchUserRestrictionsParams): js.Promise[Response[ReposReplaceProtectedBranchUserRestrictionsResponse]] = js.native
@@ -2000,8 +2174,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
-  def testPushHook(): js.Promise[Response[ReposTestPushHookResponse]] = js.native
-  def testPushHook(params: ReposTestPushHookParams): js.Promise[Response[ReposTestPushHookResponse]] = js.native
+  def testPushHook(): js.Promise[AnyResponse] = js.native
+  def testPushHook(params: ReposTestPushHookParams): js.Promise[AnyResponse] = js.native
   /**
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://help.github.com/articles/about-repository-transfers/).
     */
@@ -2019,7 +2193,7 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     *
-    * **Note**: The list of users and teams in total is limited to 100 items.
+    * **Note**: The list of users, apps, and teams in total is limited to 100 items.
     */
   def updateBranchProtection(): js.Promise[Response[ReposUpdateBranchProtectionResponse]] = js.native
   def updateBranchProtection(params: ReposUpdateBranchProtectionParams): js.Promise[Response[ReposUpdateBranchProtectionResponse]] = js.native
@@ -2032,8 +2206,8 @@ trait Anon_AcceptInvitation extends js.Object {
   def updateFile(params: ReposUpdateFileParams): js.Promise[Response[ReposUpdateFileResponse]] = js.native
   def updateHook(): js.Promise[Response[ReposUpdateHookResponse]] = js.native
   def updateHook(params: ReposUpdateHookParams): js.Promise[Response[ReposUpdateHookResponse]] = js.native
-  def updateInformationAboutPagesSite(): js.Promise[Response[ReposUpdateInformationAboutPagesSiteResponse]] = js.native
-  def updateInformationAboutPagesSite(params: ReposUpdateInformationAboutPagesSiteParams): js.Promise[Response[ReposUpdateInformationAboutPagesSiteResponse]] = js.native
+  def updateInformationAboutPagesSite(): js.Promise[AnyResponse] = js.native
+  def updateInformationAboutPagesSite(params: ReposUpdateInformationAboutPagesSiteParams): js.Promise[AnyResponse] = js.native
   def updateInvitation(): js.Promise[Response[ReposUpdateInvitationResponse]] = js.native
   def updateInvitation(params: ReposUpdateInvitationParams): js.Promise[Response[ReposUpdateInvitationResponse]] = js.native
   /**
@@ -2063,15 +2237,17 @@ trait Anon_AcceptInvitation extends js.Object {
   def updateReleaseAsset(): js.Promise[Response[ReposUpdateReleaseAssetResponse]] = js.native
   def updateReleaseAsset(params: ReposUpdateReleaseAssetParams): js.Promise[Response[ReposUpdateReleaseAssetResponse]] = js.native
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](https://developer.github.com/v3/repos/releases/#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
+    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in the response of the [Create a release endpoint](https://developer.github.com/v3/repos/releases/#create-a-release) to upload a release asset.
     *
-    * The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
+    * You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
     *
-    * Send the raw binary content of the asset as the request body.
+    * Most libraries will set the required `Content-Length` header automatically. Use the required `Content-Type` header to provide the media type of the asset. For a list of media types, see [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml). For example:
     *
-    * This may leave an empty asset with a state of `"new"`. It can be safely deleted.
+    * `application/zip`
+    *
+    * GitHub expects the asset data in its raw binary form, rather than JSON. You will send the raw binary content of the asset as the request body. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
     */
-  def uploadReleaseAsset(): js.Promise[AnyResponse] = js.native
-  def uploadReleaseAsset(params: ReposUploadReleaseAssetParams): js.Promise[AnyResponse] = js.native
+  def uploadReleaseAsset(): js.Promise[Response[ReposUploadReleaseAssetResponse]] = js.native
+  def uploadReleaseAsset(params: ReposUploadReleaseAssetParams): js.Promise[Response[ReposUploadReleaseAssetResponse]] = js.native
 }
 

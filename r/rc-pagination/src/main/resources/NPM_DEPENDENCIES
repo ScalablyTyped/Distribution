@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-pagination" : "1.20.5"
+      "rc-pagination" : "1.20.7"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-pagination" : "1.20.5"
+      "rc-pagination" : "1.20.7"
     }
   ],
   "compile-devDependencies" : [

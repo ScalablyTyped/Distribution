@@ -19,6 +19,7 @@ trait RangeBuilder extends js.Object {
   def addRange(range: Range): RangeBuilder = js.native
   def build(): Range = js.native
   def getRangeElements(): js.Array[RangeElement] = js.native
+  /** @deprecated DO NOT USE */
   def getSelectedElements(): js.Array[RangeElement] = js.native
 }
 

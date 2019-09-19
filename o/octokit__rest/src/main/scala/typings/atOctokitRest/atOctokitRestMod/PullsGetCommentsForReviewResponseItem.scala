@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PullsGetCommentsForReviewResponseItem extends js.Object {
   var _links: PullsGetCommentsForReviewResponseItemLinks
+  var author_association: String
   var body: String
   var commit_id: String
   var created_at: String
@@ -29,6 +30,7 @@ object PullsGetCommentsForReviewResponseItem {
   @scala.inline
   def apply(
     _links: PullsGetCommentsForReviewResponseItemLinks,
+    author_association: String,
     body: String,
     commit_id: String,
     created_at: String,
@@ -47,7 +49,7 @@ object PullsGetCommentsForReviewResponseItem {
     url: String,
     user: PullsGetCommentsForReviewResponseItemUser
   ): PullsGetCommentsForReviewResponseItem = {
-    val __obj = js.Dynamic.literal(_links = _links, body = body, commit_id = commit_id, created_at = created_at, diff_hunk = diff_hunk, html_url = html_url, id = id, in_reply_to_id = in_reply_to_id, node_id = node_id, original_commit_id = original_commit_id, original_position = original_position, path = path, position = position, pull_request_review_id = pull_request_review_id, pull_request_url = pull_request_url, updated_at = updated_at, url = url, user = user)
+    val __obj = js.Dynamic.literal(_links = _links, author_association = author_association, body = body, commit_id = commit_id, created_at = created_at, diff_hunk = diff_hunk, html_url = html_url, id = id, in_reply_to_id = in_reply_to_id, node_id = node_id, original_commit_id = original_commit_id, original_position = original_position, path = path, position = position, pull_request_review_id = pull_request_review_id, pull_request_url = pull_request_url, updated_at = updated_at, url = url, user = user)
   
     __obj.asInstanceOf[PullsGetCommentsForReviewResponseItem]
   }

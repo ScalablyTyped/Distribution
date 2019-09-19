@@ -9,7 +9,6 @@ trait SketchMSStyleFill extends js.Object {
   var _class: styleFill
   var color: SketchMSColor
   var contextSettings: SketchMSGraphicsContextSettings
-  var do_objectID: js.UndefOr[String] = js.undefined
   var fillType: Double
   var gradient: SketchMSGradient
   var isEnabled: Double
@@ -31,11 +30,10 @@ object SketchMSStyleFill {
     noiseIndex: Double,
     noiseIntensity: Double,
     patternFillType: Double,
-    patternTileScale: Double,
-    do_objectID: String = null
+    patternTileScale: Double
   ): SketchMSStyleFill = {
     val __obj = js.Dynamic.literal(_class = _class, color = color, contextSettings = contextSettings, fillType = fillType, gradient = gradient, isEnabled = isEnabled, noiseIndex = noiseIndex, noiseIntensity = noiseIntensity, patternFillType = patternFillType, patternTileScale = patternTileScale)
-    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+  
     __obj.asInstanceOf[SketchMSStyleFill]
   }
 }

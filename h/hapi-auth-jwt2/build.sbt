@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi-auth-jwt2"
-version := "8.6.2-f848a8"
+version := "8.6.2-a943d0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hapi__mimos" % "4.1-dt-20190404Z-915dfd",
   "org.scalablytyped" %%% "hapi__podium" % "3.4-dt-20190404Z-a4bd6d",
   "org.scalablytyped" %%% "hapi__shot" % "4.1-dt-20190404Z-b7b862",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190807Z-1599c2",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190918Z-75b79a",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-2b791f",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "std" % "3.6-c16502")

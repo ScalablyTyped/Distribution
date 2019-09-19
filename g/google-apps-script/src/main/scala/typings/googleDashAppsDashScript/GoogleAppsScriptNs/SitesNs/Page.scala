@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SitesNs
 
+import typings.googleDashAppsDashScript.Anon_Max
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.BlobSource
 import typings.std.Date
 import scala.scalajs.js
@@ -9,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Page extends js.Object {
   def addColumn(name: String): Column = js.native
+  /** @deprecated DO NOT USE */
   def addComment(content: String): Comment = js.native
   def addHostedAttachment(blob: BlobSource): Attachment = js.native
   def addHostedAttachment(blob: BlobSource, description: String): Attachment = js.native
@@ -23,29 +25,33 @@ trait Page extends js.Object {
   def createWebPage(title: String, name: String, html: String): Page = js.native
   def deletePage(): Unit = js.native
   def getAllDescendants(): js.Array[Page] = js.native
-  def getAllDescendants(options: js.Any): js.Array[Page] = js.native
+  def getAllDescendants(options: PageAdvancedParameters): js.Array[Page] = js.native
   def getAnnouncements(): js.Array[Page] = js.native
-  def getAnnouncements(optOptions: js.Any): js.Array[Page] = js.native
+  def getAnnouncements(optOptions: PageAdvancedParameters): js.Array[Page] = js.native
   def getAttachments(): js.Array[Attachment] = js.native
-  def getAttachments(optOptions: js.Any): js.Array[Attachment] = js.native
+  def getAttachments(optOptions: Anon_Max): js.Array[Attachment] = js.native
   def getAuthors(): js.Array[String] = js.native
   def getChildByName(name: String): Page = js.native
   def getChildren(): js.Array[Page] = js.native
-  def getChildren(options: js.Any): js.Array[Page] = js.native
+  def getChildren(options: PageAdvancedParameters): js.Array[Page] = js.native
   def getColumns(): js.Array[Column] = js.native
+  /** @deprecated DO NOT USE */
   def getComments(): js.Array[Comment] = js.native
-  def getComments(optOptions: js.Any): js.Array[Comment] = js.native
+  /** @deprecated DO NOT USE */
+  def getComments(optOptions: Anon_Max): js.Array[Comment] = js.native
   def getDatePublished(): Date = js.native
   def getHtmlContent(): String = js.native
   def getIsDraft(): Boolean = js.native
   def getLastEdited(): Date = js.native
   def getLastUpdated(): Date = js.native
   def getListItems(): js.Array[ListItem] = js.native
-  def getListItems(optOptions: js.Any): js.Array[ListItem] = js.native
+  def getListItems(optOptions: Anon_Max): js.Array[ListItem] = js.native
   def getName(): String = js.native
+  /** @deprecated DO NOT USE */
   def getPageName(): String = js.native
   def getPageType(): PageType = js.native
   def getParent(): Page = js.native
+  /** @deprecated DO NOT USE */
   def getSelfLink(): String = js.native
   def getTextContent(): String = js.native
   def getTitle(): String = js.native
@@ -54,7 +60,7 @@ trait Page extends js.Object {
   def isTemplate(): Boolean = js.native
   def publishAsTemplate(name: String): Page = js.native
   def search(query: String): js.Array[Page] = js.native
-  def search(query: String, options: js.Any): js.Array[Page] = js.native
+  def search(query: String, options: PageAdvancedParameters): js.Array[Page] = js.native
   def setHtmlContent(html: String): Page = js.native
   def setIsDraft(draft: Boolean): Page = js.native
   def setName(name: String): Page = js.native

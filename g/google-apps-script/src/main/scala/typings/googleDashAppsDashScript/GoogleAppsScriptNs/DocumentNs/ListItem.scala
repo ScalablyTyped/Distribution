@@ -24,7 +24,7 @@ trait ListItem extends js.Object {
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
   def getAlignment(): HorizontalAlignment = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
   def getGlyphType(): GlyphType = js.native
@@ -62,7 +62,7 @@ trait ListItem extends js.Object {
   def removePositionedImage(id: String): Boolean = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
   def setAlignment(alignment: HorizontalAlignment): ListItem = js.native
-  def setAttributes(attributes: js.Object): ListItem = js.native
+  def setAttributes(attributes: js.Any): ListItem = js.native
   def setGlyphType(glyphType: GlyphType): ListItem = js.native
   def setHeading(heading: ParagraphHeading): ListItem = js.native
   def setIndentEnd(indentEnd: Double): ListItem = js.native

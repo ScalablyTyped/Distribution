@@ -27,7 +27,7 @@ class Map () extends MVCObject {
   def getCenter(): LatLng = js.native
   def getDiv(): Element = js.native
   def getHeading(): Double = js.native
-  def getMapTypeId(): MapTypeId | String = js.native
+  def getMapTypeId(): MapTypeId = js.native
   def getProjection(): Projection | Null = js.native
   def getStreetView(): StreetViewPanorama = js.native
   def getTilt(): Double = js.native

@@ -1,5 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs
 
+import typings.echarts.Anon_Max
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.DataObject
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Label
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Pointer
@@ -142,9 +143,9 @@ trait CartesianAxis extends js.Object {
     * Moreover, it can be set as negative number, like `-3`.
     *
     * @default null
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.max
+    * @see https://echarts.apache.org/option.html#yAxis.max
     */
-  var max: js.UndefOr[Double | String] = js.undefined
+  var max: js.UndefOr[Double | String | (js.Function1[/* value */ Anon_Max, Double])] = js.undefined
   /**
     * The minimun value of axis.
     * It can be set to a special value `'dataMin'` so that
@@ -158,9 +159,9 @@ trait CartesianAxis extends js.Object {
     * Moreover, it can be set as negative number, like `-3`.
     *
     * @default null
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.min
+    * @see https://echarts.apache.org/option.html#yAxis.min
     */
-  var min: js.UndefOr[Double | String] = js.undefined
+  var min: js.UndefOr[Double | String | (js.Function1[/* value */ Anon_Max, Double])] = js.undefined
   /**
     * Maximum gap between split lines.
     * For example, in time axis (type is `'time'`),
@@ -321,8 +322,8 @@ object CartesianAxis {
     interval: Int | Double = null,
     inverse: js.UndefOr[Boolean] = js.undefined,
     logBase: Int | Double = null,
-    max: Double | String = null,
-    min: Double | String = null,
+    max: Double | String | (js.Function1[/* value */ Anon_Max, Double]) = null,
+    min: Double | String | (js.Function1[/* value */ Anon_Max, Double]) = null,
     minInterval: js.Any = null,
     name: String = null,
     nameGap: Int | Double = null,

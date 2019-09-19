@@ -43,7 +43,7 @@ package object ChaiNs {
   ]
   type PropertyChange = js.Function3[
     /* object */ Object, 
-    /* property */ String, 
+    /* property */ js.UndefOr[String], 
     /* message */ js.UndefOr[String], 
     Assertion
   ]

@@ -10,6 +10,7 @@ package object i18nextMod {
   import typings.std.TemplateStringsArray
 
   type Callback = js.Function2[/* error */ js.Any, /* t */ TFunction, Unit]
+  type CallbackError = js.UndefOr[Error | Null]
   /**
     * Uses similar args as the t function and returns true if a key exists.
     */
@@ -26,7 +27,8 @@ package object i18nextMod {
     /* lng */ js.UndefOr[String], 
     String
   ]
-  type ReadCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ Resource, Unit]
+  type MultiReadCallback = js.Function2[/* err */ CallbackError, /* data */ Resource, Unit]
+  type ReadCallback = js.Function2[/* err */ CallbackError, /* data */ ResourceKey, Unit]
   type Resource = StringDictionary[ResourceLanguage]
   type ResourceKey = String | StringDictionary[js.Any]
   type ResourceLanguage = StringDictionary[ResourceKey]

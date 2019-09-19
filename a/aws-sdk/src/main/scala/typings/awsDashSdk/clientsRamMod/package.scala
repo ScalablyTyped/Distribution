@@ -66,6 +66,7 @@ package object clientsRamMod {
     - typings.awsDashSdk.awsDashSdkStrings.ZONAL_RESOURCE_INACCESSIBLE
     - typings.awsDashSdk.awsDashSdkStrings.LIMIT_EXCEEDED
     - typings.awsDashSdk.awsDashSdkStrings.UNAVAILABLE
+    - typings.awsDashSdk.awsDashSdkStrings.PENDING
     - java.lang.String
   */
   type ResourceStatus = _ResourceStatus | java.lang.String

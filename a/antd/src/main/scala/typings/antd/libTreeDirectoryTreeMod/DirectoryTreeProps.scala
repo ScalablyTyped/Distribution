@@ -62,6 +62,8 @@ object DirectoryTreeProps {
     onDrop: /* options */ AntTreeNodeDropEvent => Unit = null,
     onExpand: (/* expandedKeys */ js.Array[String], /* info */ AntTreeNodeExpandedEvent) => Unit | js.Thenable[Unit] = null,
     onLoad: (/* loadedKeys */ js.Array[String], /* info */ Anon_EventLoad) => Unit = null,
+    onMouseEnter: /* options */ AntTreeNodeMouseEvent => Unit = null,
+    onMouseLeave: /* options */ AntTreeNodeMouseEvent => Unit = null,
     onRightClick: /* options */ AntTreeNodeMouseEvent => Unit = null,
     onSelect: (/* selectedKeys */ js.Array[String], /* e */ AntTreeNodeSelectedEvent) => Unit = null,
     prefixCls: String = null,
@@ -107,6 +109,8 @@ object DirectoryTreeProps {
     if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (onRightClick != null) __obj.updateDynamic("onRightClick")(js.Any.fromFunction1(onRightClick))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

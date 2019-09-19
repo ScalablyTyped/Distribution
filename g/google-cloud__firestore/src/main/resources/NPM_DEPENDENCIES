@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/firestore" : "2.2.9"
+      "@google-cloud/firestore" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/firestore" : "2.2.9"
+      "@google-cloud/firestore" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

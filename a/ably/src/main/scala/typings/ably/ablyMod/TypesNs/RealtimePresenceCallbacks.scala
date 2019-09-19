@@ -60,9 +60,6 @@ trait RealtimePresenceCallbacks extends RealtimePresenceBase {
     listener: messageCallback[PresenceMessage],
     callbackWhenAttached: standardCallback
   ): Unit = js.native
-  def unsubscribe(): Unit = js.native
-  def unsubscribe(presence: PresenceAction): Unit = js.native
-  def unsubscribe(presence: PresenceAction, listener: messageCallback[PresenceMessage]): Unit = js.native
   def update(): Unit = js.native
   def update(data: js.Any): Unit = js.native
   def update(data: js.Any, callback: errorCallback): Unit = js.native

@@ -6,7 +6,7 @@ import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimation
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle
 import typings.echarts.Anon_AreaColorEmphasis
 import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_Max
+import typings.echarts.Anon_MaxMin
 import typings.echarts.echartsNs.EChartOptionNs.SeriesMapNs.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -381,7 +381,7 @@ trait SeriesMap extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.scaleLimit
     */
-  var scaleLimit: js.UndefOr[Anon_Max] = js.undefined
+  var scaleLimit: js.UndefOr[Anon_MaxMin] = js.undefined
   /**
     * Selected mode decides whether multiple selecting is supported.
     * By default, `false` is used for disabling selection.
@@ -531,7 +531,7 @@ object SeriesMap {
     nameMap: js.Object = null,
     right: Double | String = null,
     roam: Boolean | String = null,
-    scaleLimit: Anon_Max = null,
+    scaleLimit: Anon_MaxMin = null,
     selectedMode: Boolean | String = null,
     seriesLayoutBy: String = null,
     showLegendSymbol: js.UndefOr[Boolean] = js.undefined,

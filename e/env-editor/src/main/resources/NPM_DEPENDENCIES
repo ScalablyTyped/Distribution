@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "env-editor" : "0.4.0"
+      "env-editor" : "0.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "env-editor" : "0.4.0"
+      "env-editor" : "0.4.1"
     }
   ],
   "compile-devDependencies" : [

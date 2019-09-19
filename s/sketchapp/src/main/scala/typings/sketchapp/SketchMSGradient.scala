@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait SketchMSGradient extends js.Object {
   var _class: gradient
-  var do_objectID: js.UndefOr[String] = js.undefined
   var elipseLength: Double
   var from: Anon_X
   var gradientType: Double
@@ -25,11 +24,10 @@ object SketchMSGradient {
     gradientType: Double,
     shouldSmoothenOpacity: Boolean,
     stops: js.Array[SketchMSGradientStop],
-    to: Anon_X,
-    do_objectID: String = null
+    to: Anon_X
   ): SketchMSGradient = {
     val __obj = js.Dynamic.literal(_class = _class, elipseLength = elipseLength, from = from, gradientType = gradientType, shouldSmoothenOpacity = shouldSmoothenOpacity, stops = stops, to = to)
-    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+  
     __obj.asInstanceOf[SketchMSGradient]
   }
 }

@@ -16,6 +16,9 @@ object atOctokitRestStrings {
   sealed trait `040000` extends js.Object
   
   @js.native
+  sealed trait `1` extends js.Object
+  
+  @js.native
   sealed trait `100644` extends js.Object
   
   @js.native
@@ -414,6 +417,8 @@ object atOctokitRestStrings {
   def `-1`: `-1` = "-1".asInstanceOf[`-1`]
   @scala.inline
   def `040000`: `040000` = "040000".asInstanceOf[`040000`]
+  @scala.inline
+  def `1`: `1` = "1".asInstanceOf[`1`]
   @scala.inline
   def `100644`: `100644` = "100644".asInstanceOf[`100644`]
   @scala.inline

@@ -4,11 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A place object returned from a geocoder lookup or reverse lookup.
+  */
 trait Place extends js.Object {
+  /**
+    * The latitude and longitude for the place.
+    */
   var coordinate: Coordinate
+  /**
+    * The country code associated with the place.
+    */
   var countryCode: String
+  /**
+    * The address of the place, formatted using its country's conventions.
+    */
   var formattedAddress: String
+  /**
+    * The name of the place.
+    */
   var name: String
+  /**
+    * The geographic region associated with the place.
+    */
   var region: CoordinateRegion
 }
 

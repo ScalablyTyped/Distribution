@@ -16,10 +16,12 @@ trait FootnoteSection extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
+  /** @deprecated DO NOT USE */
   def getFootnotes(): js.Array[Footnote] = js.native
+  /** @deprecated DO NOT USE */
   def getLinkUrl(): String = js.native
   def getNextSibling(): Element = js.native
   def getNumChildren(): Integer = js.native
@@ -31,11 +33,13 @@ trait FootnoteSection extends js.Object {
   def getType(): ElementType = js.native
   def insertParagraph(childIndex: Integer, paragraph: Paragraph): Paragraph = js.native
   def insertParagraph(childIndex: Integer, text: String): Paragraph = js.native
+  /** @deprecated DO NOT USE */
   def isAtDocumentEnd(): Boolean = js.native
   def removeChild(child: Element): FootnoteSection = js.native
   def removeFromParent(): FootnoteSection = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): FootnoteSection = js.native
+  def setAttributes(attributes: js.Any): FootnoteSection = js.native
+  /** @deprecated DO NOT USE */
   def setLinkUrl(url: String): FootnoteSection = js.native
   def setText(text: String): FootnoteSection = js.native
   def setTextAlignment(textAlignment: TextAlignment): FootnoteSection = js.native

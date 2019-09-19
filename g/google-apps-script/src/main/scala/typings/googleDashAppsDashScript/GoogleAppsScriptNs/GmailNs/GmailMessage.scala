@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GmailMessage extends js.Object {
   def createDraftReply(body: String): GmailDraft = js.native
-  def createDraftReply(body: String, options: GmailDraftOptions): GmailDraft = js.native
+  def createDraftReply(body: String, options: GmailAdvancedOptions): GmailDraft = js.native
   def createDraftReplyAll(body: String): GmailDraft = js.native
-  def createDraftReplyAll(body: String, options: GmailDraftOptions): GmailDraft = js.native
+  def createDraftReplyAll(body: String, options: GmailAdvancedOptions): GmailDraft = js.native
   def forward(recipient: String): GmailMessage = js.native
-  def forward(recipient: String, options: GmailDraftOptions): GmailMessage = js.native
+  def forward(recipient: String, options: GmailAdvancedOptions): GmailMessage = js.native
   def getAttachments(): js.Array[GmailAttachment] = js.native
   def getAttachments(options: GmailAttachmentOptions): js.Array[GmailAttachment] = js.native
   def getBcc(): String = js.native
@@ -40,9 +40,9 @@ trait GmailMessage extends js.Object {
   def moveToTrash(): GmailMessage = js.native
   def refresh(): GmailMessage = js.native
   def reply(body: String): GmailMessage = js.native
-  def reply(body: String, options: GmailDraftOptions): GmailMessage = js.native
+  def reply(body: String, options: GmailAdvancedOptions): GmailMessage = js.native
   def replyAll(body: String): GmailMessage = js.native
-  def replyAll(body: String, options: GmailDraftOptions): GmailMessage = js.native
+  def replyAll(body: String, options: GmailAdvancedOptions): GmailMessage = js.native
   def star(): GmailMessage = js.native
   def unstar(): GmailMessage = js.native
 }

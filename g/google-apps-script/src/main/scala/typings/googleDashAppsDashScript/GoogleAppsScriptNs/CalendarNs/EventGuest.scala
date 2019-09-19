@@ -10,6 +10,7 @@ trait EventGuest extends js.Object {
   def getEmail(): String
   def getGuestStatus(): GuestStatus
   def getName(): String
+  /** @deprecated DO NOT USE */
   def getStatus(): String
 }
 

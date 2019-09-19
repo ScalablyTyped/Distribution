@@ -24,7 +24,7 @@ trait CreateSolutionRequest extends js.Object {
   /**
     * Whether to perform hyperparameter optimization (HPO) on the specified or selected recipe. The default is false. When performing AutoML, this parameter is always true and you should not set it to false.
     */
-  var performHPO: js.UndefOr[PerformHPO] = js.undefined
+  var performHPO: js.UndefOr[Boolean] = js.undefined
   /**
     * The ARN of the recipe to use for model training. Only specified when performAutoML is false.
     */
@@ -42,7 +42,7 @@ object CreateSolutionRequest {
     name: Name,
     eventType: EventType = null,
     performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
-    performHPO: js.UndefOr[PerformHPO] = js.undefined,
+    performHPO: js.UndefOr[Boolean] = js.undefined,
     recipeArn: Arn = null,
     solutionConfig: SolutionConfig = null
   ): CreateSolutionRequest = {

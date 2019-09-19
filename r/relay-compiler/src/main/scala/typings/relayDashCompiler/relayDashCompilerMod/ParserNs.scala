@@ -2,8 +2,8 @@ package typings.relayDashCompiler.relayDashCompilerMod
 
 import typings.graphql.graphqlMod.GraphQLSchema
 import typings.graphql.languageAstMod.DefinitionNode
-import typings.relayDashCompiler.libGraphQLIRMod.Fragment
-import typings.relayDashCompiler.libGraphQLIRMod.Root
+import typings.relayDashCompiler.libCoreGraphQLIRMod.Fragment
+import typings.relayDashCompiler.libCoreGraphQLIRMod.Root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

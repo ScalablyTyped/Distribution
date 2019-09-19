@@ -7,9 +7,7 @@ import typings.atOctokitRest.atOctokitRestMod.GistsCreateCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsCreateParams
 import typings.atOctokitRest.atOctokitRestMod.GistsCreateResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsDeleteCommentParams
-import typings.atOctokitRest.atOctokitRestMod.GistsDeleteCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsDeleteParams
-import typings.atOctokitRest.atOctokitRestMod.GistsDeleteResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsForkParams
 import typings.atOctokitRest.atOctokitRestMod.GistsForkResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsGetCommentParams
@@ -33,9 +31,7 @@ import typings.atOctokitRest.atOctokitRestMod.GistsListResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsListStarredParams
 import typings.atOctokitRest.atOctokitRestMod.GistsListStarredResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsStarParams
-import typings.atOctokitRest.atOctokitRestMod.GistsStarResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsUnstarParams
-import typings.atOctokitRest.atOctokitRestMod.GistsUnstarResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsUpdateCommentParams
 import typings.atOctokitRest.atOctokitRestMod.GistsUpdateCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.GistsUpdateParams
@@ -48,7 +44,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_CheckIsStarred extends js.Object {
   @JSName("checkIsStarred")
-  var checkIsStarred_Original: Anon_EndpointParamsAnyResponse = js.native
+  var checkIsStarred_Original: Anon_EndpointParamsAnyResponseGistsCheckIsStarredParams = js.native
   @JSName("createComment")
   var createComment_Original: Anon_EndpointParamsGistsCreateCommentParams = js.native
   /**
@@ -59,9 +55,9 @@ trait Anon_CheckIsStarred extends js.Object {
   @JSName("create")
   var create_Original: Anon_EndpointParamsGistsCreateParams = js.native
   @JSName("deleteComment")
-  var deleteComment_Original: Anon_EndpointParamsGistsDeleteCommentParams = js.native
+  var deleteComment_Original: Anon_EndpointParamsAnyResponseGistsDeleteCommentParams = js.native
   @JSName("delete")
-  var delete_Original: Anon_EndpointParamsGistsDeleteParams = js.native
+  var delete_Original: Anon_EndpointParamsAnyResponseGistsDeleteParams = js.native
   /**
     * **Note**: This was previously `/gists/:gist_id/fork`.
     */
@@ -99,9 +95,9 @@ trait Anon_CheckIsStarred extends js.Object {
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("star")
-  var star_Original: Anon_EndpointParamsGistsStarParams = js.native
+  var star_Original: Anon_EndpointParamsAnyResponseGistsStarParams = js.native
   @JSName("unstar")
-  var unstar_Original: Anon_EndpointParamsGistsUnstarParams = js.native
+  var unstar_Original: Anon_EndpointParamsAnyResponseGistsUnstarParams = js.native
   @JSName("updateComment")
   var updateComment_Original: Anon_EndpointParamsGistsUpdateCommentParams = js.native
   /**
@@ -120,10 +116,10 @@ trait Anon_CheckIsStarred extends js.Object {
   def create(params: GistsCreateParams): js.Promise[Response[GistsCreateResponse]] = js.native
   def createComment(): js.Promise[Response[GistsCreateCommentResponse]] = js.native
   def createComment(params: GistsCreateCommentParams): js.Promise[Response[GistsCreateCommentResponse]] = js.native
-  def delete(): js.Promise[Response[GistsDeleteResponse]] = js.native
-  def delete(params: GistsDeleteParams): js.Promise[Response[GistsDeleteResponse]] = js.native
-  def deleteComment(): js.Promise[Response[GistsDeleteCommentResponse]] = js.native
-  def deleteComment(params: GistsDeleteCommentParams): js.Promise[Response[GistsDeleteCommentResponse]] = js.native
+  def delete(): js.Promise[AnyResponse] = js.native
+  def delete(params: GistsDeleteParams): js.Promise[AnyResponse] = js.native
+  def deleteComment(): js.Promise[AnyResponse] = js.native
+  def deleteComment(params: GistsDeleteCommentParams): js.Promise[AnyResponse] = js.native
   /**
     * **Note**: This was previously `/gists/:gist_id/fork`.
     */
@@ -160,10 +156,10 @@ trait Anon_CheckIsStarred extends js.Object {
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
-  def star(): js.Promise[Response[GistsStarResponse]] = js.native
-  def star(params: GistsStarParams): js.Promise[Response[GistsStarResponse]] = js.native
-  def unstar(): js.Promise[Response[GistsUnstarResponse]] = js.native
-  def unstar(params: GistsUnstarParams): js.Promise[Response[GistsUnstarResponse]] = js.native
+  def star(): js.Promise[AnyResponse] = js.native
+  def star(params: GistsStarParams): js.Promise[AnyResponse] = js.native
+  def unstar(): js.Promise[AnyResponse] = js.native
+  def unstar(params: GistsUnstarParams): js.Promise[AnyResponse] = js.native
   /**
     * Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
     */

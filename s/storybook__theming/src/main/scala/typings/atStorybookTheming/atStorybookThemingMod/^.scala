@@ -53,6 +53,7 @@ object ^ extends js.Object {
   def keyframes(args: Interpolation[js.UndefOr[scala.Nothing]]*): Keyframes = js.native
   def keyframes(template: TemplateStringsArray, args: Interpolation[js.UndefOr[scala.Nothing]]*): Keyframes = js.native
   def lighten(color: String): String = js.native
+  def useTheme[Theme](): Theme = js.native
   def withEmotionCache[Props, RefType](
     func: js.Function3[/* props */ Props, /* context */ EmotionCache, /* ref */ Ref[RefType], ReactNode]
   ): SFC[Props with ClassAttributes[RefType]] = js.native

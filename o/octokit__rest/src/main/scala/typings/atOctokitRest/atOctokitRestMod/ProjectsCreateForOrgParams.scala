@@ -14,29 +14,13 @@ trait ProjectsCreateForOrgParams extends js.Object {
     */
   var name: String
   var org: String
-  /**
-    * Page number of the results to fetch.
-    */
-  var page: js.UndefOr[Double] = js.undefined
-  /**
-    * Results per page (max 100)
-    */
-  var per_page: js.UndefOr[Double] = js.undefined
 }
 
 object ProjectsCreateForOrgParams {
   @scala.inline
-  def apply(
-    name: String,
-    org: String,
-    body: String = null,
-    page: Int | Double = null,
-    per_page: Int | Double = null
-  ): ProjectsCreateForOrgParams = {
+  def apply(name: String, org: String, body: String = null): ProjectsCreateForOrgParams = {
     val __obj = js.Dynamic.literal(name = name, org = org)
     if (body != null) __obj.updateDynamic("body")(body)
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateForOrgParams]
   }
 }

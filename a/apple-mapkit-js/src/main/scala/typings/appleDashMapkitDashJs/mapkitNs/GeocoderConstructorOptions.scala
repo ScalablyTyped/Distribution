@@ -4,16 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Initialization options for geocoder objects.
+  */
 trait GeocoderConstructorOptions extends js.Object {
-  var getsUserLocation: Boolean
-  var language: String
+  /**
+    * A Boolean value that indicates whether the geocoder should return results
+    * near the user's current location.
+    */
+  var getsUserLocation: js.UndefOr[Boolean] = js.undefined
+  /**
+    * A Boolean value that indicates whether the geocoder should return results
+    * near the user's current location.
+    */
+  var language: js.UndefOr[String] = js.undefined
 }
 
 object GeocoderConstructorOptions {
   @scala.inline
-  def apply(getsUserLocation: Boolean, language: String): GeocoderConstructorOptions = {
-    val __obj = js.Dynamic.literal(getsUserLocation = getsUserLocation, language = language)
-  
+  def apply(getsUserLocation: js.UndefOr[Boolean] = js.undefined, language: String = null): GeocoderConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(getsUserLocation)) __obj.updateDynamic("getsUserLocation")(getsUserLocation)
+    if (language != null) __obj.updateDynamic("language")(language)
     __obj.asInstanceOf[GeocoderConstructorOptions]
   }
 }

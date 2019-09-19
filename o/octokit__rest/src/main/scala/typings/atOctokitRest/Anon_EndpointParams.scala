@@ -1,6 +1,6 @@
 package typings.atOctokitRest
 
-import typings.atOctokitRest.atOctokitRestMod.ActivityListRepoEventsParams
+import typings.atOctokitRest.atOctokitRestMod.ActivityDeleteRepoSubscriptionParams
 import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.Endpoint
 import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
@@ -14,7 +14,7 @@ trait Anon_EndpointParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[AnyResponse] = js.native
-  def apply(params: ActivityListRepoEventsParams): js.Promise[AnyResponse] = js.native
+  def apply(params: ActivityDeleteRepoSubscriptionParams): js.Promise[AnyResponse] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

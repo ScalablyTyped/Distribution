@@ -7,7 +7,7 @@ import typings.antd.antdStrings.warning
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
-import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait AlertProps extends js.Object {
   /** Content of Alert */
   var message: ReactNode
   /** Callback when close Alert */
-  var onClose: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
+  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   /** Whether to show icon */
   var showIcon: js.UndefOr[Boolean] = js.undefined
@@ -51,7 +51,7 @@ object AlertProps {
     description: ReactNode = null,
     icon: ReactNode = null,
     iconType: String = null,
-    onClose: MouseEventHandler[HTMLAnchorElement] = null,
+    onClose: MouseEventHandler[HTMLButtonElement] = null,
     prefixCls: String = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,

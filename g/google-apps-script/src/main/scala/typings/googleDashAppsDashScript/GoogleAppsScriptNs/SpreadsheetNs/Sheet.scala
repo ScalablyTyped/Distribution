@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs
 
+import typings.googleDashAppsDashScript.Anon_ContentsOnly
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.BlobSource
 import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
 import scala.scalajs.js
@@ -18,7 +19,7 @@ trait Sheet extends js.Object {
   def autoResizeColumns(startColumn: Integer, numColumns: Integer): Sheet = js.native
   def autoResizeRows(startRow: Integer, numRows: Integer): Sheet = js.native
   def clear(): Sheet = js.native
-  def clear(options: js.Any): Sheet = js.native
+  def clear(options: Anon_ContentsOnly): Sheet = js.native
   def clearConditionalFormatRules(): Unit = js.native
   def clearContents(): Sheet = js.native
   def clearFormats(): Sheet = js.native
@@ -77,6 +78,7 @@ trait Sheet extends js.Object {
   def getSelection(): Selection = js.native
   def getSheetId(): Integer = js.native
   def getSheetName(): String = js.native
+  /** @deprecated DO NOT USE */
   def getSheetProtection(): PageProtection = js.native
   def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[_]] = js.native
   def getTabColor(): String | Null = js.native
@@ -133,6 +135,7 @@ trait Sheet extends js.Object {
   def setRowGroupControlPosition(position: GroupControlTogglePosition): Sheet = js.native
   def setRowHeight(rowPosition: Integer, height: Integer): Sheet = js.native
   def setRowHeights(startRow: Integer, numRows: Integer, height: Integer): Sheet = js.native
+  /** @deprecated DO NOT USE */
   def setSheetProtection(permissions: PageProtection): Unit = js.native
   def setTabColor(): Sheet = js.native
   def setTabColor(color: String): Sheet = js.native

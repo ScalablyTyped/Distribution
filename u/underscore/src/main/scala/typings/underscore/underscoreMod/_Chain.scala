@@ -825,8 +825,8 @@ trait _Chain[T, V] extends js.Object {
     * Wrapped type `string`.
     * @see _.template
     **/
-  def template(): js.Function1[/* repeated */ js.Any, _Chain[T, T]] = js.native
-  def template(settings: TemplateSettings): js.Function1[/* repeated */ js.Any, _Chain[T, T]] = js.native
+  def template(): _Chain[CompiledTemplate, CompiledTemplate] = js.native
+  def template(settings: TemplateSettings): _Chain[CompiledTemplate, CompiledTemplate] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.throttle

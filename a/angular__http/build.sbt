@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular__http"
-version := "7.2.15-e0f048"
+version := "7.2.15-ec6740"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__core" % "8.2.6-c700db",
+  "org.scalablytyped" %%% "angular__core" % "8.2.7-53ac19",
   "org.scalablytyped" %%% "rxjs" % "6.5.3-9938ed",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

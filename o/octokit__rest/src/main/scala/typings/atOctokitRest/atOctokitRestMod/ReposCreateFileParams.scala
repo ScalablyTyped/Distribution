@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait ReposCreateFileParams extends js.Object {
   /**
-    * The author of the file.
+    * The author of the file. Default: The `committer` or the authenticated user if you omit `committer`.
     */
   var author: js.UndefOr[ReposCreateFileParamsAuthor] = js.undefined
   /**
-    * The branch name.
+    * The branch name. Default: the repository’s default branch (usually `master`)
     */
   var branch: js.UndefOr[String] = js.undefined
   /**
-    * The person that committed the file.
+    * The person that committed the file. Default: the authenticated user.
     */
   var committer: js.UndefOr[ReposCreateFileParamsCommitter] = js.undefined
   /**

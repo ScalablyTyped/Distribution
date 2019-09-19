@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "emotion-theming" : "10.0.18"
+      "emotion-theming" : "10.0.19"
     }
   ],
   "test-dependencies" : [
     {
-      "emotion-theming" : "10.0.18"
+      "emotion-theming" : "10.0.19"
     }
   ],
   "compile-devDependencies" : [

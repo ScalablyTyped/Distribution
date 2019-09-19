@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-google-maps-loader"
-version := "4.2-dt-20180803Z-cf54e9"
+version := "4.2-dt-20180803Z-a87c5d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190904Z-e0d90d",
+  "org.scalablytyped" %%% "googlemaps" % "3.37-dt-20190917Z-0536f4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190815Z-53b9fb",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

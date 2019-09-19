@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait ReposUploadReleaseAssetParams extends js.Object {
   var file: String | js.Object
-  /**
-    * Request headers containing `content-type` and `content-length`
-    */
   var headers: ReposUploadReleaseAssetParamsHeaders
   /**
     * An alternate short description of the asset. Used in place of the filename. This should be set in a URI query parameter.
@@ -18,6 +15,9 @@ trait ReposUploadReleaseAssetParams extends js.Object {
     * The file name of the asset. This should be set in a URI query parameter.
     */
   var name: String
+  /**
+    * The `upload_url` key returned from creating or getting a release
+    */
   var url: String
 }
 

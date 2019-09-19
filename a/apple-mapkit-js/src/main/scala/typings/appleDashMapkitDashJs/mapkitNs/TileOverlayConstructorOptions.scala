@@ -4,10 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Attributes used when initializing a tile overlay, including minimum and
+  * maximum zoom, opacity, and custom data.
+  */
 trait TileOverlayConstructorOptions extends js.Object {
+  /**
+    * Custom data used to populate the URL template.
+    */
   var data: js.UndefOr[js.Object] = js.undefined
+  /**
+    * Maximum zoom level of the overlay.
+    */
   var maximumZ: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum zoom level of the overlay.
+    */
   var minimumZ: js.UndefOr[Double] = js.undefined
+  /**
+    * Opacity level of the overlay.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 

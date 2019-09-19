@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An observable set of style attributes for an overlay.
+  */
 trait StylesOverlayOptions extends OverlayOptions {
   var style: js.UndefOr[Style] = js.undefined
 }
@@ -11,7 +14,7 @@ trait StylesOverlayOptions extends OverlayOptions {
 object StylesOverlayOptions {
   @scala.inline
   def apply(
-    data: js.Any = null,
+    data: js.Object = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
     style: Style = null,

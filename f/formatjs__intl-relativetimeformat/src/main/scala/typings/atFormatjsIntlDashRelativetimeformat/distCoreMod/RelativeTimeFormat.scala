@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RelativeTimeFormat extends js.Object {
   val _fields: js.Any = js.native
-  val _locale: js.Any = js.native
   val _localeMatcher: js.Any = js.native
   val _nf: js.Any = js.native
   val _numberingSystem: js.Any = js.native

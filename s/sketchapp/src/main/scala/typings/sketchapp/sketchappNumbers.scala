@@ -6,102 +6,94 @@ import scala.scalajs.js.annotation._
 
 object sketchappNumbers {
   @js.native
-  sealed trait `-1` extends SketchMSBooleanOperation
+  sealed trait `-1` extends SketchMSLayerBooleanOperation
   
   @js.native
   sealed trait `0`
-    extends SketchMSBlendModeEnum
-       with SketchMSBooleanOperation
-       with SketchMSBorderLineCapStyle
+    extends SketchMSBorderLineCapStyle
        with SketchMSBorderLineJoinStyle
        with SketchMSBorderPositionEnum
        with SketchMSCurveMode
        with SketchMSFillTypeEnum
-       with SketchMSLayerListExpandedType
-       with SketchMSLineDecorationTypeEnum
+       with SketchMSGraphicsContextSettingsBlendMode
+       with SketchMSLayerBooleanOperation
+       with SketchMSLayerClippingMaskMode
+       with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-       with SketchMSResizingType
   
   @js.native
   sealed trait `1`
-    extends SketchMSBlendModeEnum
-       with SketchMSBooleanOperation
-       with SketchMSBorderLineCapStyle
+    extends SketchMSBorderLineCapStyle
        with SketchMSBorderLineJoinStyle
        with SketchMSBorderPositionEnum
        with SketchMSCurveMode
        with SketchMSFillTypeEnum
-       with SketchMSLayerListExpandedType
-       with SketchMSLineDecorationTypeEnum
+       with SketchMSGraphicsContextSettingsBlendMode
+       with SketchMSLayerBooleanOperation
+       with SketchMSLayerClippingMaskMode
+       with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-       with SketchMSResizingType
   
   @js.native
-  sealed trait `10` extends SketchMSBlendModeEnum
+  sealed trait `10` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `11` extends SketchMSBlendModeEnum
+  sealed trait `11` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `12` extends SketchMSBlendModeEnum
+  sealed trait `12` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `13` extends SketchMSBlendModeEnum
+  sealed trait `13` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `14` extends SketchMSBlendModeEnum
+  sealed trait `14` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `15` extends SketchMSBlendModeEnum
+  sealed trait `15` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
   sealed trait `2`
-    extends SketchMSBlendModeEnum
-       with SketchMSBooleanOperation
-       with SketchMSBorderLineCapStyle
+    extends SketchMSBorderLineCapStyle
        with SketchMSBorderLineJoinStyle
        with SketchMSBorderPositionEnum
        with SketchMSCurveMode
-       with SketchMSLayerListExpandedType
-       with SketchMSLineDecorationTypeEnum
+       with SketchMSGraphicsContextSettingsBlendMode
+       with SketchMSLayerBooleanOperation
+       with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-       with SketchMSResizingType
   
   @js.native
   sealed trait `3`
-    extends SketchMSBlendModeEnum
-       with SketchMSBooleanOperation
-       with SketchMSBorderPositionEnum
+    extends SketchMSBorderPositionEnum
        with SketchMSCurveMode
-       with SketchMSLineDecorationTypeEnum
+       with SketchMSGraphicsContextSettingsBlendMode
+       with SketchMSLayerBooleanOperation
+       with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-       with SketchMSResizingType
   
   @js.native
   sealed trait `4`
-    extends SketchMSBlendModeEnum
-       with SketchMSCurveMode
+    extends SketchMSCurveMode
        with SketchMSFillTypeEnum
+       with SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
   sealed trait `5`
-    extends SketchMSBlendModeEnum
-       with SketchMSFillTypeEnum
+    extends SketchMSFillTypeEnum
+       with SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `6` extends SketchMSBlendModeEnum
+  sealed trait `6` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `63` extends js.Object
+  sealed trait `7` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `7` extends SketchMSBlendModeEnum
+  sealed trait `8` extends SketchMSGraphicsContextSettingsBlendMode
   
   @js.native
-  sealed trait `8` extends SketchMSBlendModeEnum
-  
-  @js.native
-  sealed trait `9` extends SketchMSBlendModeEnum
+  sealed trait `9` extends SketchMSGraphicsContextSettingsBlendMode
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
@@ -131,8 +123,6 @@ object sketchappNumbers {
   def `5`: `5` = 5.asInstanceOf[`5`]
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
-  @scala.inline
-  def `63`: `63` = 63.asInstanceOf[`63`]
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
   @scala.inline

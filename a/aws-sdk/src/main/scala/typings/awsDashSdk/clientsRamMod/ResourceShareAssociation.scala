@@ -18,7 +18,7 @@ trait ResourceShareAssociation extends js.Object {
     */
   var creationTime: js.UndefOr[DateTime] = js.undefined
   /**
-    * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
+    * Indicates whether the principal belongs to the same AWS organization as the AWS account that owns the resource share.
     */
   var external: js.UndefOr[Boolean] = js.undefined
   /**
@@ -29,6 +29,10 @@ trait ResourceShareAssociation extends js.Object {
     * The Amazon Resource Name (ARN) of the resource share.
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
+  /**
+    * The name of the resource share.
+    */
+  var resourceShareName: js.UndefOr[String] = js.undefined
   /**
     * The status of the association.
     */
@@ -48,6 +52,7 @@ object ResourceShareAssociation {
     external: js.UndefOr[Boolean] = js.undefined,
     lastUpdatedTime: DateTime = null,
     resourceShareArn: String = null,
+    resourceShareName: String = null,
     status: ResourceShareAssociationStatus = null,
     statusMessage: String = null
   ): ResourceShareAssociation = {
@@ -58,6 +63,7 @@ object ResourceShareAssociation {
     if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime)
     if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn)
+    if (resourceShareName != null) __obj.updateDynamic("resourceShareName")(resourceShareName)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
     __obj.asInstanceOf[ResourceShareAssociation]

@@ -1,5 +1,6 @@
 package typings.bigDashInteger.bigDashIntegerMod
 
+import typings.std.BigInt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -2030,6 +2031,10 @@ trait BigIntegerStatic extends js.Object {
     * Parse a Javascript number into a bigInt.
     */
   def apply(number: Double): BigInteger = js.native
+  /**
+    * Parse a Javascript native bigint into a bigInt.
+    */
+  def apply(number: BigInt): BigInteger = js.native
   /**
     * Parse a string into a bigInt.
     * Default base is 10.

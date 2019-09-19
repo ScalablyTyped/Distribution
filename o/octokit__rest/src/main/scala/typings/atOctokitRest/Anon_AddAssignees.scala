@@ -1,5 +1,6 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesAddAssigneesParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesAddAssigneesParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesAddAssigneesResponse
@@ -7,7 +8,6 @@ import typings.atOctokitRest.atOctokitRestMod.IssuesAddLabelsParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesAddLabelsParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesAddLabelsResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesCheckAssigneeParams
-import typings.atOctokitRest.atOctokitRestMod.IssuesCheckAssigneeResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateCommentParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateCommentParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateCommentResponse
@@ -18,12 +18,9 @@ import typings.atOctokitRest.atOctokitRestMod.IssuesCreateMilestoneResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteCommentParams
-import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteLabelParams
-import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteLabelResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteMilestoneParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteMilestoneParamsDeprecatedNumber
-import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteMilestoneResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesGetCommentParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesGetCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesGetEventParams
@@ -71,7 +68,6 @@ import typings.atOctokitRest.atOctokitRestMod.IssuesListParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesListResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesLockParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesLockParamsDeprecatedNumber
-import typings.atOctokitRest.atOctokitRestMod.IssuesLockResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveAssigneesParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveAssigneesParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveAssigneesResponse
@@ -80,13 +76,11 @@ import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveLabelParamsDeprecatedN
 import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveLabelResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveLabelsParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveLabelsParamsDeprecatedNumber
-import typings.atOctokitRest.atOctokitRestMod.IssuesRemoveLabelsResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesReplaceLabelsParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesReplaceLabelsParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesReplaceLabelsResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesUnlockParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesUnlockParamsDeprecatedNumber
-import typings.atOctokitRest.atOctokitRestMod.IssuesUnlockResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateCommentParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateLabelParams
@@ -121,7 +115,7 @@ trait Anon_AddAssignees extends js.Object {
     * Otherwise a `404` status code is returned.
     */
   @JSName("checkAssignee")
-  var checkAssignee_Original: Anon_EndpointParamsIssuesCheckAssigneeParams = js.native
+  var checkAssignee_Original: Anon_EndpointParamsAnyResponseIssuesCheckAssigneeParams = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
@@ -139,11 +133,11 @@ trait Anon_AddAssignees extends js.Object {
   @JSName("create")
   var create_Original: Anon_EndpointParamsIssuesCreateParams = js.native
   @JSName("deleteComment")
-  var deleteComment_Original: Anon_EndpointParamsIssuesDeleteCommentParams = js.native
+  var deleteComment_Original: Anon_EndpointParamsAnyResponseIssuesDeleteCommentParams = js.native
   @JSName("deleteLabel")
-  var deleteLabel_Original: Anon_EndpointParamsIssuesDeleteLabelParams = js.native
+  var deleteLabel_Original: Anon_EndpointParamsAnyResponseIssuesDeleteLabelParams = js.native
   @JSName("deleteMilestone")
-  var deleteMilestone_Original: Anon_EndpointParamsIssuesDeleteMilestoneParams = js.native
+  var deleteMilestone_Original: Anon_EndpointParamsAnyResponseIssuesDeleteMilestoneParams = js.native
   @JSName("getComment")
   var getComment_Original: Anon_EndpointParamsIssuesGetCommentParams = js.native
   @JSName("getEvent")
@@ -224,7 +218,7 @@ trait Anon_AddAssignees extends js.Object {
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("lock")
-  var lock_Original: Anon_EndpointParamsIssuesLockParams = js.native
+  var lock_Original: Anon_EndpointParamsAnyResponseIssuesLockParams = js.native
   /**
     * Removes one or more assignees from an issue.
     *
@@ -238,14 +232,14 @@ trait Anon_AddAssignees extends js.Object {
   @JSName("removeLabel")
   var removeLabel_Original: Anon_EndpointParamsIssuesRemoveLabelParams = js.native
   @JSName("removeLabels")
-  var removeLabels_Original: Anon_EndpointParamsIssuesRemoveLabelsParams = js.native
+  var removeLabels_Original: Anon_EndpointParamsAnyResponseIssuesRemoveLabelsParams = js.native
   @JSName("replaceLabels")
   var replaceLabels_Original: Anon_EndpointParamsIssuesReplaceLabelsParams = js.native
   /**
     * Users with push access can unlock an issue's conversation.
     */
   @JSName("unlock")
-  var unlock_Original: Anon_EndpointParamsIssuesUnlockParams = js.native
+  var unlock_Original: Anon_EndpointParamsAnyResponseIssuesUnlockParams = js.native
   @JSName("updateComment")
   var updateComment_Original: Anon_EndpointParamsIssuesUpdateCommentParams = js.native
   @JSName("updateLabel")
@@ -275,8 +269,8 @@ trait Anon_AddAssignees extends js.Object {
     *
     * Otherwise a `404` status code is returned.
     */
-  def checkAssignee(): js.Promise[Response[IssuesCheckAssigneeResponse]] = js.native
-  def checkAssignee(params: IssuesCheckAssigneeParams): js.Promise[Response[IssuesCheckAssigneeResponse]] = js.native
+  def checkAssignee(): js.Promise[AnyResponse] = js.native
+  def checkAssignee(params: IssuesCheckAssigneeParams): js.Promise[AnyResponse] = js.native
   /**
     * Any user with pull access to a repository can create an issue. If [issues are disabled in the repository](https://help.github.com/articles/disabling-issues/), the API returns a `410 Gone` status.
     *
@@ -294,13 +288,13 @@ trait Anon_AddAssignees extends js.Object {
   def createLabel(params: IssuesCreateLabelParams): js.Promise[Response[IssuesCreateLabelResponse]] = js.native
   def createMilestone(): js.Promise[Response[IssuesCreateMilestoneResponse]] = js.native
   def createMilestone(params: IssuesCreateMilestoneParams): js.Promise[Response[IssuesCreateMilestoneResponse]] = js.native
-  def deleteComment(): js.Promise[Response[IssuesDeleteCommentResponse]] = js.native
-  def deleteComment(params: IssuesDeleteCommentParams): js.Promise[Response[IssuesDeleteCommentResponse]] = js.native
-  def deleteLabel(): js.Promise[Response[IssuesDeleteLabelResponse]] = js.native
-  def deleteLabel(params: IssuesDeleteLabelParams): js.Promise[Response[IssuesDeleteLabelResponse]] = js.native
-  def deleteMilestone(): js.Promise[Response[IssuesDeleteMilestoneResponse]] = js.native
-  def deleteMilestone(params: IssuesDeleteMilestoneParams): js.Promise[Response[IssuesDeleteMilestoneResponse]] = js.native
-  def deleteMilestone(params: IssuesDeleteMilestoneParamsDeprecatedNumber): js.Promise[Response[IssuesDeleteMilestoneResponse]] = js.native
+  def deleteComment(): js.Promise[AnyResponse] = js.native
+  def deleteComment(params: IssuesDeleteCommentParams): js.Promise[AnyResponse] = js.native
+  def deleteLabel(): js.Promise[AnyResponse] = js.native
+  def deleteLabel(params: IssuesDeleteLabelParams): js.Promise[AnyResponse] = js.native
+  def deleteMilestone(): js.Promise[AnyResponse] = js.native
+  def deleteMilestone(params: IssuesDeleteMilestoneParams): js.Promise[AnyResponse] = js.native
+  def deleteMilestone(params: IssuesDeleteMilestoneParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
   /**
     * The API returns a [`301 Moved Permanently` status](https://developer.github.com/v3/#http-redirects) if the issue was [transferred](https://help.github.com/articles/transferring-an-issue-to-another-repository/) to another repository. If the issue was transferred to or deleted from a repository where the authenticated user lacks read access, the API returns a `404 Not Found` status. If the issue was deleted from a repository where the authenticated user has read access, the API returns a `410 Gone` status. To receive webhook events for transferred and deleted issues, subscribe to the [`issues`](https://developer.github.com/v3/activity/events/types/#issuesevent) webhook.
     *
@@ -387,9 +381,9 @@ trait Anon_AddAssignees extends js.Object {
     *
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
-  def lock(): js.Promise[Response[IssuesLockResponse]] = js.native
-  def lock(params: IssuesLockParams): js.Promise[Response[IssuesLockResponse]] = js.native
-  def lock(params: IssuesLockParamsDeprecatedNumber): js.Promise[Response[IssuesLockResponse]] = js.native
+  def lock(): js.Promise[AnyResponse] = js.native
+  def lock(params: IssuesLockParams): js.Promise[AnyResponse] = js.native
+  def lock(params: IssuesLockParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
   /**
     * Removes one or more assignees from an issue.
     *
@@ -404,18 +398,18 @@ trait Anon_AddAssignees extends js.Object {
   def removeLabel(): js.Promise[Response[IssuesRemoveLabelResponse]] = js.native
   def removeLabel(params: IssuesRemoveLabelParams): js.Promise[Response[IssuesRemoveLabelResponse]] = js.native
   def removeLabel(params: IssuesRemoveLabelParamsDeprecatedNumber): js.Promise[Response[IssuesRemoveLabelResponse]] = js.native
-  def removeLabels(): js.Promise[Response[IssuesRemoveLabelsResponse]] = js.native
-  def removeLabels(params: IssuesRemoveLabelsParams): js.Promise[Response[IssuesRemoveLabelsResponse]] = js.native
-  def removeLabels(params: IssuesRemoveLabelsParamsDeprecatedNumber): js.Promise[Response[IssuesRemoveLabelsResponse]] = js.native
+  def removeLabels(): js.Promise[AnyResponse] = js.native
+  def removeLabels(params: IssuesRemoveLabelsParams): js.Promise[AnyResponse] = js.native
+  def removeLabels(params: IssuesRemoveLabelsParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
   def replaceLabels(): js.Promise[Response[IssuesReplaceLabelsResponse]] = js.native
   def replaceLabels(params: IssuesReplaceLabelsParams): js.Promise[Response[IssuesReplaceLabelsResponse]] = js.native
   def replaceLabels(params: IssuesReplaceLabelsParamsDeprecatedNumber): js.Promise[Response[IssuesReplaceLabelsResponse]] = js.native
   /**
     * Users with push access can unlock an issue's conversation.
     */
-  def unlock(): js.Promise[Response[IssuesUnlockResponse]] = js.native
-  def unlock(params: IssuesUnlockParams): js.Promise[Response[IssuesUnlockResponse]] = js.native
-  def unlock(params: IssuesUnlockParamsDeprecatedNumber): js.Promise[Response[IssuesUnlockResponse]] = js.native
+  def unlock(): js.Promise[AnyResponse] = js.native
+  def unlock(params: IssuesUnlockParams): js.Promise[AnyResponse] = js.native
+  def unlock(params: IssuesUnlockParamsDeprecatedNumber): js.Promise[AnyResponse] = js.native
   /**
     * Issue owners and users with push access can edit an issue.
     */

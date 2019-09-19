@@ -48,6 +48,10 @@ trait AndroidNotification extends js.Object {
     */
   var icon: js.UndefOr[String] = js.undefined
   /**
+    * URL of an image to be displayed in the notification.
+    */
+  var imageUrl: js.UndefOr[String] = js.undefined
+  /**
     * File name of the sound to be played when the device receives the
     * notification.
     */
@@ -85,6 +89,7 @@ object AndroidNotification {
     clickAction: String = null,
     color: String = null,
     icon: String = null,
+    imageUrl: String = null,
     sound: String = null,
     tag: String = null,
     title: String = null,
@@ -99,6 +104,7 @@ object AndroidNotification {
     if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction)
     if (color != null) __obj.updateDynamic("color")(color)
     if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
     if (sound != null) __obj.updateDynamic("sound")(sound)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (title != null) __obj.updateDynamic("title")(title)

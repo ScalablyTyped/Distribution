@@ -104,6 +104,7 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def hasUnknownValue(`val`: js.Any): Boolean = js.native
   /* protected */ def hasUnknownValue(`val`: js.Any, includeOther: Boolean): Boolean = js.native
   /* protected */ def isValueDisabled(`val`: js.Any): Boolean = js.native
+  /* protected */ def onBeforeSendRequest(): Unit = js.native
   /* protected */ def onLoadChoicesFromUrl(array: js.Array[ItemValue]): Unit = js.native
   /* protected */ def onVisibleChoicesChanged(): Unit = js.native
   /* protected */ def renderedValueFromDataCore(`val`: js.Any): js.Any = js.native

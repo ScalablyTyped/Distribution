@@ -25,7 +25,7 @@ trait SearchCodeParams extends js.Object {
     */
   var q: String
   /**
-    * Sorts the results of your query. Can only be `indexed`, which indicates how recently a file has been indexed by the GitHub search infrastructure.
+    * Sorts the results of your query. Can only be `indexed`, which indicates how recently a file has been indexed by the GitHub search infrastructure. Default: [best match](https://developer.github.com/v3/search/#ranking-search-results)
     */
   var sort: js.UndefOr[indexed] = js.undefined
 }

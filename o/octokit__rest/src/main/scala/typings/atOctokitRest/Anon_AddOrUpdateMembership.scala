@@ -2,14 +2,12 @@ package typings.atOctokitRest
 
 import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsAddOrUpdateMembershipParams
+import typings.atOctokitRest.atOctokitRestMod.OrgsAddOrUpdateMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsBlockUserParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsBlockUserResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsCheckBlockedUserParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsCheckBlockedUserResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsCheckMembershipParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsCheckPublicMembershipParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsConcealMembershipParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsConcealMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsConvertMemberToOutsideCollaboratorParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsConvertMemberToOutsideCollaboratorResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsCreateHookParams
@@ -17,12 +15,12 @@ import typings.atOctokitRest.atOctokitRestMod.OrgsCreateHookResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsCreateInvitationParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsCreateInvitationResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsDeleteHookParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsDeleteHookResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetHookParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetHookResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetMembershipForAuthenticatedUserParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetMembershipForAuthenticatedUserResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetMembershipParams
+import typings.atOctokitRest.atOctokitRestMod.OrgsGetMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsGetResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsListBlockedUsersParams
@@ -48,17 +46,12 @@ import typings.atOctokitRest.atOctokitRestMod.OrgsListPublicMembersParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsListPublicMembersResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsListResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsPingHookParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsPingHookResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsPublicizeMembershipParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsPublicizeMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsRemoveMemberParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsRemoveMemberResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsRemoveMembershipParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsRemoveMembershipResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsRemoveOutsideCollaboratorParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsRemoveOutsideCollaboratorResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsUnblockUserParams
-import typings.atOctokitRest.atOctokitRestMod.OrgsUnblockUserResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsUpdateHookParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsUpdateHookResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsUpdateMembershipParams
@@ -84,16 +77,16 @@ trait Anon_AddOrUpdateMembership extends js.Object {
     * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
     */
   @JSName("addOrUpdateMembership")
-  var addOrUpdateMembership_Original: Anon_EndpointParamsAnyResponseOrgsAddOrUpdateMembershipParams = js.native
+  var addOrUpdateMembership_Original: Anon_EndpointParamsOrgsAddOrUpdateMembershipParams = js.native
   @JSName("blockUser")
-  var blockUser_Original: Anon_EndpointParamsOrgsBlockUserParams = js.native
+  var blockUser_Original: Anon_EndpointParamsAnyResponseOrgsBlockUserParams = js.native
   /**
     * If the user is blocked:
     *
     * If the user is not blocked:
     */
   @JSName("checkBlockedUser")
-  var checkBlockedUser_Original: Anon_EndpointParamsOrgsCheckBlockedUserParams = js.native
+  var checkBlockedUser_Original: Anon_EndpointParamsAnyResponseOrgsCheckBlockedUserParams = js.native
   /**
     * Check if a user is, publicly or privately, a member of the organization.
     */
@@ -102,7 +95,7 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   @JSName("checkPublicMembership")
   var checkPublicMembership_Original: Anon_EndpointParamsAnyResponseOrgsCheckPublicMembershipParams = js.native
   @JSName("concealMembership")
-  var concealMembership_Original: Anon_EndpointParamsOrgsConcealMembershipParams = js.native
+  var concealMembership_Original: Anon_EndpointParamsAnyResponseOrgsConcealMembershipParams = js.native
   /**
     * When an organization member is converted to an outside collaborator, they'll only have access to the repositories that their current team membership allows. The user will no longer be a member of the organization. For more information, see "[Converting an organization member to an outside collaborator](https://help.github.com/articles/converting-an-organization-member-to-an-outside-collaborator/)".
     */
@@ -121,7 +114,7 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   @JSName("createInvitation")
   var createInvitation_Original: Anon_EndpointParamsOrgsCreateInvitationParams = js.native
   @JSName("deleteHook")
-  var deleteHook_Original: Anon_EndpointParamsOrgsDeleteHookParams = js.native
+  var deleteHook_Original: Anon_EndpointParamsAnyResponseOrgsDeleteHookParams = js.native
   @JSName("getHook")
   var getHook_Original: Anon_EndpointParamsOrgsGetHookParams = js.native
   @JSName("getMembershipForAuthenticatedUser")
@@ -130,7 +123,7 @@ trait Anon_AddOrUpdateMembership extends js.Object {
     * In order to get a user's membership with an organization, the authenticated user must be an organization member.
     */
   @JSName("getMembership")
-  var getMembership_Original: Anon_EndpointParamsAnyResponseOrgsGetMembershipParams = js.native
+  var getMembership_Original: Anon_EndpointParamsOrgsGetMembershipParams = js.native
   /**
     * To see many of the organization response values, you need to be an authenticated organization owner with the `admin:org` scope. When the value of `two_factor_requirement_enabled` is `true`, the organization requires all members, billing managers, and outside collaborators to enable [two-factor authentication](https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/).
     *
@@ -199,33 +192,33 @@ trait Anon_AddOrUpdateMembership extends js.Object {
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   @JSName("pingHook")
-  var pingHook_Original: Anon_EndpointParamsOrgsPingHookParams = js.native
+  var pingHook_Original: Anon_EndpointParamsAnyResponseOrgsPingHookParams = js.native
   /**
     * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("publicizeMembership")
-  var publicizeMembership_Original: Anon_EndpointParamsOrgsPublicizeMembershipParams = js.native
+  var publicizeMembership_Original: Anon_EndpointParamsAnyResponseOrgsPublicizeMembershipParams = js.native
   /**
     * Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories.
     */
   @JSName("removeMember")
-  var removeMember_Original: Anon_EndpointParamsOrgsRemoveMemberParams = js.native
+  var removeMember_Original: Anon_EndpointParamsAnyResponseOrgsRemoveMemberParams = js.native
   /**
     * In order to remove a user's membership with an organization, the authenticated user must be an organization owner.
     *
     * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
     */
   @JSName("removeMembership")
-  var removeMembership_Original: Anon_EndpointParamsOrgsRemoveMembershipParams = js.native
+  var removeMembership_Original: Anon_EndpointParamsAnyResponseOrgsRemoveMembershipParams = js.native
   /**
     * Removing a user from this list will remove them from all the organization's repositories.
     */
   @JSName("removeOutsideCollaborator")
   var removeOutsideCollaborator_Original: Anon_EndpointParamsOrgsRemoveOutsideCollaboratorParams = js.native
   @JSName("unblockUser")
-  var unblockUser_Original: Anon_EndpointParamsOrgsUnblockUserParams = js.native
+  var unblockUser_Original: Anon_EndpointParamsAnyResponseOrgsUnblockUserParams = js.native
   @JSName("updateHook")
   var updateHook_Original: Anon_EndpointParamsOrgsUpdateHookParams = js.native
   @JSName("updateMembership")
@@ -252,17 +245,17 @@ trait Anon_AddOrUpdateMembership extends js.Object {
     *
     * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
     */
-  def addOrUpdateMembership(): js.Promise[AnyResponse] = js.native
-  def addOrUpdateMembership(params: OrgsAddOrUpdateMembershipParams): js.Promise[AnyResponse] = js.native
-  def blockUser(): js.Promise[Response[OrgsBlockUserResponse]] = js.native
-  def blockUser(params: OrgsBlockUserParams): js.Promise[Response[OrgsBlockUserResponse]] = js.native
+  def addOrUpdateMembership(): js.Promise[Response[OrgsAddOrUpdateMembershipResponse]] = js.native
+  def addOrUpdateMembership(params: OrgsAddOrUpdateMembershipParams): js.Promise[Response[OrgsAddOrUpdateMembershipResponse]] = js.native
+  def blockUser(): js.Promise[AnyResponse] = js.native
+  def blockUser(params: OrgsBlockUserParams): js.Promise[AnyResponse] = js.native
   /**
     * If the user is blocked:
     *
     * If the user is not blocked:
     */
-  def checkBlockedUser(): js.Promise[Response[OrgsCheckBlockedUserResponse]] = js.native
-  def checkBlockedUser(params: OrgsCheckBlockedUserParams): js.Promise[Response[OrgsCheckBlockedUserResponse]] = js.native
+  def checkBlockedUser(): js.Promise[AnyResponse] = js.native
+  def checkBlockedUser(params: OrgsCheckBlockedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Check if a user is, publicly or privately, a member of the organization.
     */
@@ -270,8 +263,8 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   def checkMembership(params: OrgsCheckMembershipParams): js.Promise[AnyResponse] = js.native
   def checkPublicMembership(): js.Promise[AnyResponse] = js.native
   def checkPublicMembership(params: OrgsCheckPublicMembershipParams): js.Promise[AnyResponse] = js.native
-  def concealMembership(): js.Promise[Response[OrgsConcealMembershipResponse]] = js.native
-  def concealMembership(params: OrgsConcealMembershipParams): js.Promise[Response[OrgsConcealMembershipResponse]] = js.native
+  def concealMembership(): js.Promise[AnyResponse] = js.native
+  def concealMembership(params: OrgsConcealMembershipParams): js.Promise[AnyResponse] = js.native
   /**
     * When an organization member is converted to an outside collaborator, they'll only have access to the repositories that their current team membership allows. The user will no longer be a member of the organization. For more information, see "[Converting an organization member to an outside collaborator](https://help.github.com/articles/converting-an-organization-member-to-an-outside-collaborator/)".
     */
@@ -289,8 +282,8 @@ trait Anon_AddOrUpdateMembership extends js.Object {
     */
   def createInvitation(): js.Promise[Response[OrgsCreateInvitationResponse]] = js.native
   def createInvitation(params: OrgsCreateInvitationParams): js.Promise[Response[OrgsCreateInvitationResponse]] = js.native
-  def deleteHook(): js.Promise[Response[OrgsDeleteHookResponse]] = js.native
-  def deleteHook(params: OrgsDeleteHookParams): js.Promise[Response[OrgsDeleteHookResponse]] = js.native
+  def deleteHook(): js.Promise[AnyResponse] = js.native
+  def deleteHook(params: OrgsDeleteHookParams): js.Promise[AnyResponse] = js.native
   /**
     * To see many of the organization response values, you need to be an authenticated organization owner with the `admin:org` scope. When the value of `two_factor_requirement_enabled` is `true`, the organization requires all members, billing managers, and outside collaborators to enable [two-factor authentication](https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/).
     *
@@ -303,8 +296,8 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   /**
     * In order to get a user's membership with an organization, the authenticated user must be an organization member.
     */
-  def getMembership(): js.Promise[AnyResponse] = js.native
-  def getMembership(params: OrgsGetMembershipParams): js.Promise[AnyResponse] = js.native
+  def getMembership(): js.Promise[Response[OrgsGetMembershipResponse]] = js.native
+  def getMembership(params: OrgsGetMembershipParams): js.Promise[Response[OrgsGetMembershipResponse]] = js.native
   def getMembershipForAuthenticatedUser(): js.Promise[Response[OrgsGetMembershipForAuthenticatedUserResponse]] = js.native
   def getMembershipForAuthenticatedUser(params: OrgsGetMembershipForAuthenticatedUserParams): js.Promise[Response[OrgsGetMembershipForAuthenticatedUserResponse]] = js.native
   /**
@@ -367,34 +360,34 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   /**
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
     */
-  def pingHook(): js.Promise[Response[OrgsPingHookResponse]] = js.native
-  def pingHook(params: OrgsPingHookParams): js.Promise[Response[OrgsPingHookResponse]] = js.native
+  def pingHook(): js.Promise[AnyResponse] = js.native
+  def pingHook(params: OrgsPingHookParams): js.Promise[AnyResponse] = js.native
   /**
     * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
-  def publicizeMembership(): js.Promise[Response[OrgsPublicizeMembershipResponse]] = js.native
-  def publicizeMembership(params: OrgsPublicizeMembershipParams): js.Promise[Response[OrgsPublicizeMembershipResponse]] = js.native
+  def publicizeMembership(): js.Promise[AnyResponse] = js.native
+  def publicizeMembership(params: OrgsPublicizeMembershipParams): js.Promise[AnyResponse] = js.native
   /**
     * Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories.
     */
-  def removeMember(): js.Promise[Response[OrgsRemoveMemberResponse]] = js.native
-  def removeMember(params: OrgsRemoveMemberParams): js.Promise[Response[OrgsRemoveMemberResponse]] = js.native
+  def removeMember(): js.Promise[AnyResponse] = js.native
+  def removeMember(params: OrgsRemoveMemberParams): js.Promise[AnyResponse] = js.native
   /**
     * In order to remove a user's membership with an organization, the authenticated user must be an organization owner.
     *
     * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
     */
-  def removeMembership(): js.Promise[Response[OrgsRemoveMembershipResponse]] = js.native
-  def removeMembership(params: OrgsRemoveMembershipParams): js.Promise[Response[OrgsRemoveMembershipResponse]] = js.native
+  def removeMembership(): js.Promise[AnyResponse] = js.native
+  def removeMembership(params: OrgsRemoveMembershipParams): js.Promise[AnyResponse] = js.native
   /**
     * Removing a user from this list will remove them from all the organization's repositories.
     */
   def removeOutsideCollaborator(): js.Promise[Response[OrgsRemoveOutsideCollaboratorResponse]] = js.native
   def removeOutsideCollaborator(params: OrgsRemoveOutsideCollaboratorParams): js.Promise[Response[OrgsRemoveOutsideCollaboratorResponse]] = js.native
-  def unblockUser(): js.Promise[Response[OrgsUnblockUserResponse]] = js.native
-  def unblockUser(params: OrgsUnblockUserParams): js.Promise[Response[OrgsUnblockUserResponse]] = js.native
+  def unblockUser(): js.Promise[AnyResponse] = js.native
+  def unblockUser(params: OrgsUnblockUserParams): js.Promise[AnyResponse] = js.native
   /**
     * **Note:** The new `members_allowed_repository_creation_type` replaces the functionality of `members_can_create_repositories`.
     *

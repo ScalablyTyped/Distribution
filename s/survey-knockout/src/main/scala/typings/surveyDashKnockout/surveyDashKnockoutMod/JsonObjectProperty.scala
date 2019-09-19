@@ -31,6 +31,7 @@ class JsonObjectProperty protected () extends IObject {
   var isRequired: Boolean = js.native
   var isSerializable: Boolean = js.native
   var layout: String = js.native
+  var maxLength: Double = js.native
   var name: String = js.native
   var readOnly: Boolean = js.native
   var serializationProperty: String = js.native

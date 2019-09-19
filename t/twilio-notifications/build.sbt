@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twilio-notifications"
-version := "0.5.7-51b45f"
+version := "0.5.8-698bb3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

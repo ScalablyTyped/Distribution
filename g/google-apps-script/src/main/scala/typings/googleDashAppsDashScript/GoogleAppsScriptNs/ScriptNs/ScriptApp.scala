@@ -19,9 +19,11 @@ trait ScriptApp extends js.Object {
   def getAuthorizationInfo(authMode: AuthMode): AuthorizationInfo = js.native
   def getInstallationSource(): InstallationSource = js.native
   def getOAuthToken(): String = js.native
+  /** @deprecated DO NOT USE */
   def getProjectKey(): String = js.native
   def getProjectTriggers(): js.Array[Trigger] = js.native
   def getScriptId(): String = js.native
+  /** @deprecated DO NOT USE */
   def getScriptTriggers(): js.Array[Trigger] = js.native
   def getService(): Service = js.native
   def getUserTriggers(document: Document): js.Array[Trigger] = js.native

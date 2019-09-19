@@ -11,6 +11,7 @@ trait RunnerOptionConfig extends js.Object {
   var count: Double
   var createMigrationsSchema: js.UndefOr[Boolean] = js.undefined
   var createSchema: js.UndefOr[Boolean] = js.undefined
+  var decamelize: js.UndefOr[Boolean] = js.undefined
   var dir: String
   var direction: up | down
   var dryRun: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +38,7 @@ object RunnerOptionConfig {
     checkOrder: js.UndefOr[Boolean] = js.undefined,
     createMigrationsSchema: js.UndefOr[Boolean] = js.undefined,
     createSchema: js.UndefOr[Boolean] = js.undefined,
+    decamelize: js.UndefOr[Boolean] = js.undefined,
     dryRun: js.UndefOr[Boolean] = js.undefined,
     fake: js.UndefOr[Boolean] = js.undefined,
     file: String = null,
@@ -51,6 +53,7 @@ object RunnerOptionConfig {
     if (!js.isUndefined(checkOrder)) __obj.updateDynamic("checkOrder")(checkOrder)
     if (!js.isUndefined(createMigrationsSchema)) __obj.updateDynamic("createMigrationsSchema")(createMigrationsSchema)
     if (!js.isUndefined(createSchema)) __obj.updateDynamic("createSchema")(createSchema)
+    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize)
     if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
     if (!js.isUndefined(fake)) __obj.updateDynamic("fake")(fake)
     if (file != null) __obj.updateDynamic("file")(file)

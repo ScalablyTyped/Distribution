@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,18 +15,24 @@ trait CalendarApp extends js.Object {
   var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Visibility */ js.Any = js.native
   var Weekday: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Weekday */ js.Any = js.native
   def createAllDayEvent(title: String, date: Date): CalendarEvent = js.native
-  def createAllDayEvent(title: String, date: Date, options: js.Object): CalendarEvent = js.native
+  def createAllDayEvent(title: String, date: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
   def createAllDayEvent(title: String, startDate: Date, endDate: Date): CalendarEvent = js.native
-  def createAllDayEvent(title: String, startDate: Date, endDate: Date, options: js.Object): CalendarEvent = js.native
+  def createAllDayEvent(title: String, startDate: Date, endDate: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
   def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence): CalendarEventSeries = js.native
-  def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence, options: js.Object): CalendarEventSeries = js.native
+  def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence, options: StringDictionary[js.Any]): CalendarEventSeries = js.native
   def createCalendar(name: String): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
-  def createCalendar(name: String, options: js.Object): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
+  def createCalendar(name: String, options: StringDictionary[js.Any]): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
   def createEvent(title: String, startTime: Date, endTime: Date): CalendarEvent = js.native
-  def createEvent(title: String, startTime: Date, endTime: Date, options: js.Object): CalendarEvent = js.native
+  def createEvent(title: String, startTime: Date, endTime: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
   def createEventFromDescription(description: String): CalendarEvent = js.native
   def createEventSeries(title: String, startTime: Date, endTime: Date, recurrence: EventRecurrence): CalendarEventSeries = js.native
-  def createEventSeries(title: String, startTime: Date, endTime: Date, recurrence: EventRecurrence, options: js.Object): CalendarEventSeries = js.native
+  def createEventSeries(
+    title: String,
+    startTime: Date,
+    endTime: Date,
+    recurrence: EventRecurrence,
+    options: StringDictionary[js.Any]
+  ): CalendarEventSeries = js.native
   def getAllCalendars(): js.Array[typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar] = js.native
   def getAllOwnedCalendars(): js.Array[typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar] = js.native
   def getCalendarById(id: String): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
@@ -36,9 +43,9 @@ trait CalendarApp extends js.Object {
   def getEventById(iCalId: String): CalendarEvent = js.native
   def getEventSeriesById(iCalId: String): CalendarEventSeries = js.native
   def getEvents(startTime: Date, endTime: Date): js.Array[CalendarEvent] = js.native
-  def getEvents(startTime: Date, endTime: Date, options: js.Object): js.Array[CalendarEvent] = js.native
+  def getEvents(startTime: Date, endTime: Date, options: StringDictionary[js.Any]): js.Array[CalendarEvent] = js.native
   def getEventsForDay(date: Date): js.Array[CalendarEvent] = js.native
-  def getEventsForDay(date: Date, options: js.Object): js.Array[CalendarEvent] = js.native
+  def getEventsForDay(date: Date, options: StringDictionary[js.Any]): js.Array[CalendarEvent] = js.native
   def getId(): String = js.native
   def getName(): String = js.native
   def getOwnedCalendarById(id: String): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
@@ -56,6 +63,6 @@ trait CalendarApp extends js.Object {
   def setSelected(selected: Boolean): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
   def setTimeZone(timeZone: String): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
   def subscribeToCalendar(id: String): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
-  def subscribeToCalendar(id: String, options: js.Object): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
+  def subscribeToCalendar(id: String, options: StringDictionary[js.Any]): typings.googleDashAppsDashScript.GoogleAppsScriptNs.CalendarNs.Calendar = js.native
 }
 

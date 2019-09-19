@@ -16,7 +16,7 @@ trait Table extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getBorderColor(): String = js.native
   def getBorderWidth(): Double = js.native
   def getCell(rowIndex: Integer, cellIndex: Integer): TableCell = js.native
@@ -40,7 +40,7 @@ trait Table extends js.Object {
   def removeFromParent(): Table = js.native
   def removeRow(rowIndex: Integer): TableRow = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Object): Table = js.native
+  def setAttributes(attributes: js.Any): Table = js.native
   def setBorderColor(color: String): Table = js.native
   def setBorderWidth(width: Double): Table = js.native
   def setColumnWidth(columnIndex: Integer, width: Double): Table = js.native
