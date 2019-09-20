@@ -22,6 +22,10 @@ trait CreateDevEndpointRequest extends js.Object {
     */
   var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.undefined
   /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Development endpoints that are created without specifying a Glue version default to Glue 0.9. You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
+  /**
     * The number of AWS Glue Data Processing Units (DPUs) to allocate to this DevEndpoint.
     */
   var NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined
@@ -71,6 +75,7 @@ object CreateDevEndpointRequest {
     Arguments: MapValue = null,
     ExtraJarsS3Path: GenericString = null,
     ExtraPythonLibsS3Path: GenericString = null,
+    GlueVersion: GlueVersionString = null,
     NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
     NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     PublicKey: GenericString = null,
@@ -85,6 +90,7 @@ object CreateDevEndpointRequest {
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments)
     if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path)
     if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
     if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
     if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey)

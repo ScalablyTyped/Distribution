@@ -75,6 +75,8 @@ class ec protected () extends js.Object {
   ): Double = js.native
   def keyFromPrivate(priv: String): KeyPair = js.native
   def keyFromPrivate(priv: String, enc: String): KeyPair = js.native
+  def keyFromPrivate(priv: js.Array[Double]): KeyPair = js.native
+  def keyFromPrivate(priv: js.Array[Double], enc: String): KeyPair = js.native
   def keyFromPrivate(priv: KeyPair): KeyPair = js.native
   def keyFromPrivate(priv: KeyPair, enc: String): KeyPair = js.native
   def keyFromPrivate(priv: Buffer): KeyPair = js.native
@@ -83,6 +85,8 @@ class ec protected () extends js.Object {
   def keyFromPrivate(priv: Uint8Array, enc: String): KeyPair = js.native
   def keyFromPublic(pub: String): KeyPair = js.native
   def keyFromPublic(pub: String, enc: String): KeyPair = js.native
+  def keyFromPublic(pub: js.Array[Double]): KeyPair = js.native
+  def keyFromPublic(pub: js.Array[Double], enc: String): KeyPair = js.native
   def keyFromPublic(pub: Anon_X): KeyPair = js.native
   def keyFromPublic(pub: Anon_X, enc: String): KeyPair = js.native
   def keyFromPublic(pub: KeyPair): KeyPair = js.native

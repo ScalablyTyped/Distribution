@@ -908,6 +908,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def ClearAllHTTPFormField(): Boolean = js.native
+  def ClearImageTags(sImageIndex: Double): Boolean = js.native
   /**
     * Clears the content of all custom tiff tags.
     * @method WebTwain#ClearTiffCustomTag
@@ -1312,6 +1313,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def FileExists(localFile: String): Boolean = js.native
+  def FilterImagesByTag(tagName: String): Boolean = js.native
   /**
     * Flips the image of a specified index in buffer.
     * @method WebTwain#Flip
@@ -2463,6 +2465,7 @@ trait WebTwain extends js.Object {
     bResampleImage: Boolean,
     newVal: EnumDWT_InterpolationMethod
   ): Boolean = js.native
+  def SetDefaultTag(tagName: String): Boolean = js.native
   /**
     * Sets file name and file format information used in File Transfer Mode.
     * @method WebTwain#SetFileXferInfo
@@ -2629,6 +2632,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def SwitchImage(sImageIndex1: Double, sImageIndex2: Double): Boolean = js.native
+  def TagImages(aryImageIndices: js.Array[Double], tagName: String): Boolean = js.native
   /**
     * Unbinds an event from the specified function, so that the function stops receiving notifications when the event fires.
     * @method WebTwain#UnregisterEvent

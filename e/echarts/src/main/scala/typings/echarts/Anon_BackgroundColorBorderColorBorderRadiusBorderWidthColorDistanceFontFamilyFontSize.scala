@@ -130,7 +130,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "normal"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.fontWeight
     */
-  var fontWeight: js.UndefOr[String] = js.undefined
+  var fontWeight: js.UndefOr[Double | String] = js.undefined
   /**
     * Height of the text block.
     * It is the width of the text by default.
@@ -376,7 +376,7 @@ object Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFa
     fontFamily: String = null,
     fontSize: Int | Double = null,
     fontStyle: String = null,
-    fontWeight: String = null,
+    fontWeight: Double | String = null,
     height: Double | String = null,
     lineHeight: Int | Double = null,
     offset: js.Array[_] = null,
@@ -410,7 +410,7 @@ object Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFa
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset)

@@ -28,17 +28,13 @@ trait Anon_Alert extends js.Object {
   			 */
   var categories: js.UndefOr[CategoryArray] = js.undefined
   /**
-  			 * If true|"true" the badge will be cleared on app startup. Default is false|"false".
+  			 * If true|"true" the badge will be cleared on app startup. Defaults to false|"false".
   			 */
   var clearBadge: js.UndefOr[Boolean | String] = js.undefined
   /**
   			 * Whether to use prod or sandbox GCM setting. Defaults to false.
   			 */
   var fcmSandbox: js.UndefOr[Boolean] = js.undefined
-  /**
-  			 * Maps to the project number in the Google Developer Console. Setting this uses GCM for notifications instead of native
-  			 */
-  var senderID: js.UndefOr[String] = js.undefined
   /**
   			 * If true|"true" the device plays a sound on receipt of notification.
   			 * Default is false|"false".
@@ -48,9 +44,15 @@ trait Anon_Alert extends js.Object {
   			 */
   var sound: js.UndefOr[Boolean | String] = js.undefined
   /**
-  			 * If the array contains one or more strings each string will be used to subscribe to a GcmPubSub topic. Note: only usable in conjunction with senderID
+  			 * If the array contains one or more strings each string will be used to subscribe to a FcmPubSub topic. Defaults to [].
   			 */
   var topics: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+  			 * If true|"true" the device will be set up to receive VoIP Push notifications and the other options will be ignored
+  			 * since VoIP notifications are silent notifications that should be handled in the "notification" event.
+  			 * Default is false|"false".
+  			 */
+  var voip: js.UndefOr[Boolean | String] = js.undefined
 }
 
 object Anon_Alert {
@@ -61,9 +63,9 @@ object Anon_Alert {
     categories: CategoryArray = null,
     clearBadge: Boolean | String = null,
     fcmSandbox: js.UndefOr[Boolean] = js.undefined,
-    senderID: String = null,
     sound: Boolean | String = null,
-    topics: js.Array[String] = null
+    topics: js.Array[String] = null,
+    voip: Boolean | String = null
   ): Anon_Alert = {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
@@ -71,9 +73,9 @@ object Anon_Alert {
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (clearBadge != null) __obj.updateDynamic("clearBadge")(clearBadge.asInstanceOf[js.Any])
     if (!js.isUndefined(fcmSandbox)) __obj.updateDynamic("fcmSandbox")(fcmSandbox)
-    if (senderID != null) __obj.updateDynamic("senderID")(senderID)
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     if (topics != null) __obj.updateDynamic("topics")(topics)
+    if (voip != null) __obj.updateDynamic("voip")(voip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alert]
   }
 }

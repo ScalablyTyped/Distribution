@@ -1,6 +1,7 @@
 package typings.stripe
 
 import typings.stripe.stripeMod.creditNotesNs.CreditNoteReason
+import typings.stripe.stripeMod.customerBalanceTransactionsNs.CustomerBalanceTransactionType
 import typings.stripe.stripeMod.customerTaxIdsNs.TaxIdType
 import typings.stripe.stripeMod.errorsNs.RawType
 import typings.stripe.stripeMod.fileUploadsNs.IPurpose
@@ -92,7 +93,7 @@ object stripeStrings {
   sealed trait active extends SubscriptionStatus
   
   @js.native
-  sealed trait adjustment extends js.Object
+  sealed trait adjustment extends CustomerBalanceTransactionType
   
   @js.native
   sealed trait alipay extends js.Object
@@ -132,6 +133,9 @@ object stripeStrings {
   
   @js.native
   sealed trait application_fee_refund extends js.Object
+  
+  @js.native
+  sealed trait applied_to_invoice extends CustomerBalanceTransactionType
   
   @js.native
   sealed trait approved extends js.Object
@@ -238,13 +242,16 @@ object stripeStrings {
   sealed trait credit_not_processed extends js.Object
   
   @js.native
-  sealed trait credit_note extends js.Object
+  sealed trait credit_note extends CustomerBalanceTransactionType
   
   @js.native
   sealed trait custom extends js.Object
   
   @js.native
   sealed trait customer extends js.Object
+  
+  @js.native
+  sealed trait customer_balance_transaction extends js.Object
   
   @js.native
   sealed trait da extends js.Object
@@ -432,6 +439,9 @@ object stripeStrings {
   sealed trait infinite extends js.Object
   
   @js.native
+  sealed trait initial extends CustomerBalanceTransactionType
+  
+  @js.native
   sealed trait instant extends PayoutMethods
   
   @js.native
@@ -445,6 +455,12 @@ object stripeStrings {
   
   @js.native
   sealed trait invoice extends js.Object
+  
+  @js.native
+  sealed trait invoice_too_large extends CustomerBalanceTransactionType
+  
+  @js.native
+  sealed trait invoice_too_small extends CustomerBalanceTransactionType
   
   @js.native
   sealed trait invoiceitem extends js.Object
@@ -912,6 +928,9 @@ object stripeStrings {
   sealed trait unrecognized extends js.Object
   
   @js.native
+  sealed trait unspent_receiver_credit extends CustomerBalanceTransactionType
+  
+  @js.native
   sealed trait unverified extends js.Object
   
   @js.native
@@ -1054,6 +1073,8 @@ object stripeStrings {
   @scala.inline
   def application_fee_refund: application_fee_refund = "application_fee_refund".asInstanceOf[application_fee_refund]
   @scala.inline
+  def applied_to_invoice: applied_to_invoice = "applied_to_invoice".asInstanceOf[applied_to_invoice]
+  @scala.inline
   def approved: approved = "approved".asInstanceOf[approved]
   @scala.inline
   def approved_by_network: approved_by_network = "approved_by_network".asInstanceOf[approved_by_network]
@@ -1121,6 +1142,8 @@ object stripeStrings {
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def customer: customer = "customer".asInstanceOf[customer]
+  @scala.inline
+  def customer_balance_transaction: customer_balance_transaction = "customer_balance_transaction".asInstanceOf[customer_balance_transaction]
   @scala.inline
   def da: da = "da".asInstanceOf[da]
   @scala.inline
@@ -1242,6 +1265,8 @@ object stripeStrings {
   @scala.inline
   def infinite: infinite = "infinite".asInstanceOf[infinite]
   @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
+  @scala.inline
   def instant: instant = "instant".asInstanceOf[instant]
   @scala.inline
   def insufficient_funds: insufficient_funds = "insufficient_funds".asInstanceOf[insufficient_funds]
@@ -1251,6 +1276,10 @@ object stripeStrings {
   def invalid_request_error: invalid_request_error = "invalid_request_error".asInstanceOf[invalid_request_error]
   @scala.inline
   def invoice: invoice = "invoice".asInstanceOf[invoice]
+  @scala.inline
+  def invoice_too_large: invoice_too_large = "invoice_too_large".asInstanceOf[invoice_too_large]
+  @scala.inline
+  def invoice_too_small: invoice_too_small = "invoice_too_small".asInstanceOf[invoice_too_small]
   @scala.inline
   def invoiceitem: invoiceitem = "invoiceitem".asInstanceOf[invoiceitem]
   @scala.inline
@@ -1553,6 +1582,8 @@ object stripeStrings {
   def unpaid: unpaid = "unpaid".asInstanceOf[unpaid]
   @scala.inline
   def unrecognized: unrecognized = "unrecognized".asInstanceOf[unrecognized]
+  @scala.inline
+  def unspent_receiver_credit: unspent_receiver_credit = "unspent_receiver_credit".asInstanceOf[unspent_receiver_credit]
   @scala.inline
   def unverified: unverified = "unverified".asInstanceOf[unverified]
   @scala.inline

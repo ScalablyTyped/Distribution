@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phonegap-plugin-push"
-version := "2.2.3-fcd5d4"
+version := "2.3.0-4ce6cc"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

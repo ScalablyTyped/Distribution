@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait GrantEntitlementRequest extends js.Object {
   /**
+    * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
+    */
+  var DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined
+  /**
     * A description of the entitlement. This description appears only on the AWS Elemental MediaConnect console and will not be seen by the subscriber or end user.
     */
   var Description: js.UndefOr[__string] = js.undefined
@@ -27,11 +31,13 @@ object GrantEntitlementRequest {
   @scala.inline
   def apply(
     Subscribers: __listOf__string,
+    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined,
     Description: __string = null,
     Encryption: Encryption = null,
     Name: __string = null
   ): GrantEntitlementRequest = {
     val __obj = js.Dynamic.literal(Subscribers = Subscribers)
+    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (Name != null) __obj.updateDynamic("Name")(Name)

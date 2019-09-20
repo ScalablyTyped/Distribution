@@ -2,6 +2,7 @@ package typings.reactDashPlayer.reactDashPlayerMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactDashPlayer.Anon_Loaded
+import typings.std.MediaStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +46,7 @@ trait ReactPlayerProps
   var progressInterval: js.UndefOr[Double] = js.undefined
   var soundcloudConfig: js.UndefOr[SoundCloudConfig] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
-  var url: js.UndefOr[String | (js.Array[SourceProps | String])] = js.undefined
+  var url: js.UndefOr[String | (js.Array[SourceProps | String]) | MediaStream] = js.undefined
   var vimeoConfig: js.UndefOr[VimeoConfig] = js.undefined
   var volume: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[String | Double] = js.undefined
@@ -87,7 +88,7 @@ object ReactPlayerProps {
     progressInterval: Int | Double = null,
     soundcloudConfig: SoundCloudConfig = null,
     style: js.Object = null,
-    url: String | (js.Array[SourceProps | String]) = null,
+    url: String | (js.Array[SourceProps | String]) | MediaStream = null,
     vimeoConfig: VimeoConfig = null,
     volume: Int | Double = null,
     width: String | Double = null,

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "firebase" : "6.6.1"
+      "firebase" : "6.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "firebase" : "6.6.1"
+      "firebase" : "6.6.2"
     }
   ],
   "compile-devDependencies" : [

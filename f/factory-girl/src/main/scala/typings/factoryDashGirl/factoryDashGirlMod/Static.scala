@@ -71,10 +71,19 @@ trait Static extends js.Object {
     */
   def extend(parent: String, name: String, initializer: js.Any): js.Any = js.native
   def extend(parent: String, name: String, initializer: js.Any, options: Options[_]): js.Any = js.native
+  def resetSeq(): Unit = js.native
+  def resetSeq(name: String): Unit = js.native
+  /**
+    *  Reset sequence generator with the given name
+    *  or all generators if no name is given.
+    */
+  def resetSequence(): Unit = js.native
+  def resetSequence(name: String): Unit = js.native
   /**
     * Generate values sequentially inside a factory
     */
   def seq[T](name: String, fn: js.Function1[/* sequence */ Double, T]): Generator[T] = js.native
+  def sequence[T](name: String, fn: js.Function1[/* sequence */ Double, T]): Generator[T] = js.native
   /**
     * Register an adapter, either as default or tied to a specific model
     */

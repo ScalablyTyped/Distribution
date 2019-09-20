@@ -82,6 +82,15 @@ object mongoNs extends js.Object {
   }
   
   @js.native
+  class Int32 protected ()
+    extends typings.mongodb.mongodbMod.Int32 {
+    /**
+      * @param value The number we want to represent as an int32.
+      */
+    def this(value: scala.Double) = this()
+  }
+  
+  @js.native
   class MaxKey ()
     extends typings.mongodb.mongodbMod.MaxKey
   

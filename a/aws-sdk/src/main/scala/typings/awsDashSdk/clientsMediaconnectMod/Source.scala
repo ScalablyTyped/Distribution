@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Source extends js.Object {
   /**
+    * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
+    */
+  var DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined
+  /**
     * The type of encryption that is used on the content ingested from this source.
     */
   var Decryption: js.UndefOr[Encryption] = js.undefined
@@ -48,6 +52,7 @@ object Source {
   def apply(
     Name: __string,
     SourceArn: __string,
+    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined,
     Decryption: Encryption = null,
     Description: __string = null,
     EntitlementArn: __string = null,
@@ -57,6 +62,7 @@ object Source {
     WhitelistCidr: __string = null
   ): Source = {
     val __obj = js.Dynamic.literal(Name = Name, SourceArn = SourceArn)
+    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
     if (Decryption != null) __obj.updateDynamic("Decryption")(Decryption)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn)

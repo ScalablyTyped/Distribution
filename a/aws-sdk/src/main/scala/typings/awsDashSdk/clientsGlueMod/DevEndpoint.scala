@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DevEndpoint extends js.Object {
   /**
-    * A map of arguments used to configure the DevEndpoint. Currently, only "--enable-glue-datacatalog": "" is supported as a valid argument.
+    * A map of arguments used to configure the DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
   var Arguments: js.UndefOr[MapValue] = js.undefined
   /**
@@ -33,6 +33,10 @@ trait DevEndpoint extends js.Object {
     * The reason for a current failure in this DevEndpoint.
     */
   var FailureReason: js.UndefOr[GenericString] = js.undefined
+  /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints.  For more information about the available AWS Glue versions and corresponding Spark and Python versions, see Glue version in the developer guide. Development endpoints that are created without specifying a Glue version default to Glue 0.9. You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   /**
     * The point in time at which this DevEndpoint was last modified.
     */
@@ -113,6 +117,7 @@ object DevEndpoint {
     ExtraJarsS3Path: GenericString = null,
     ExtraPythonLibsS3Path: GenericString = null,
     FailureReason: GenericString = null,
+    GlueVersion: GlueVersionString = null,
     LastModifiedTimestamp: TimestampValue = null,
     LastUpdateStatus: GenericString = null,
     NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
@@ -139,6 +144,7 @@ object DevEndpoint {
     if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path)
     if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (LastModifiedTimestamp != null) __obj.updateDynamic("LastModifiedTimestamp")(LastModifiedTimestamp)
     if (LastUpdateStatus != null) __obj.updateDynamic("LastUpdateStatus")(LastUpdateStatus)
     if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)

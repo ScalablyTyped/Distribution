@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object webpackDashBundleDashAnalyzerStrings {
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait disabled extends js.Object
   
   @js.native
@@ -35,6 +38,8 @@ object webpackDashBundleDashAnalyzerStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for phonegap-plugin-push
 
-Typings are for version 2.2.3
+Typings are for version 2.3.0
 
 ## Library description:
 Register and receive push notifications.

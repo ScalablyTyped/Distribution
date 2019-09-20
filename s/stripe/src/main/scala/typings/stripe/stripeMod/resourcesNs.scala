@@ -42,6 +42,9 @@ import typings.stripe.stripeMod.creditNotesNs.ICreditNote
 import typings.stripe.stripeMod.creditNotesNs.ICreditNoteCreationOptions
 import typings.stripe.stripeMod.creditNotesNs.ICreditNoteListOptions
 import typings.stripe.stripeMod.creditNotesNs.ICreditNoteUpdateOptions
+import typings.stripe.stripeMod.customerBalanceTransactionsNs.ICustomerBalanceTransaction
+import typings.stripe.stripeMod.customerBalanceTransactionsNs.ICustomerBalanceTransactionCreationOptions
+import typings.stripe.stripeMod.customerBalanceTransactionsNs.ICustomerBalanceTransactionUpdateOptions
 import typings.stripe.stripeMod.customerTaxIdsNs.ITaxId
 import typings.stripe.stripeMod.customerTaxIdsNs.ITaxIdCreationOptions
 import typings.stripe.stripeMod.customersNs.IBankAccountSourceListOptions
@@ -1300,6 +1303,22 @@ object resourcesNs extends js.Object {
     def create(data: ICustomerCreationOptions, options: HeaderOptions): js.Promise[ICustomer] = js.native
     def create(data: ICustomerCreationOptions, options: HeaderOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
     def create(data: ICustomerCreationOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
+    def createBalanceTransaction(customerId: String, data: ICustomerBalanceTransactionCreationOptions): js.Promise[ICustomerBalanceTransaction] = js.native
+    /**
+      * Creates an immutable transaction that updates the customer’s balance.
+      */
+    def createBalanceTransaction(customerId: String, data: ICustomerBalanceTransactionCreationOptions, options: HeaderOptions): js.Promise[ICustomerBalanceTransaction] = js.native
+    def createBalanceTransaction(
+      customerId: String,
+      data: ICustomerBalanceTransactionCreationOptions,
+      options: HeaderOptions,
+      response: IResponseFn[ICustomerBalanceTransaction]
+    ): js.Promise[ICustomerBalanceTransaction] = js.native
+    def createBalanceTransaction(
+      customerId: String,
+      data: ICustomerBalanceTransactionCreationOptions,
+      response: IResponseFn[ICustomerBalanceTransaction]
+    ): js.Promise[ICustomerBalanceTransaction] = js.native
     def createCard(customerId: String, data: Anon_CardICardSourceCreationOptionsExtended): js.Promise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     /**
       * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
@@ -1538,6 +1557,26 @@ object resourcesNs extends js.Object {
     def list(options: HeaderOptions): IListPromise[ICustomer] = js.native
     def list(options: HeaderOptions, response: IResponseFn[IList[ICustomer]]): IListPromise[ICustomer] = js.native
     def list(response: IResponseFn[IList[ICustomer]]): IListPromise[ICustomer] = js.native
+    def listBalanceTransactions(customerId: String): IListPromise[ICustomerBalanceTransaction] = js.native
+    def listBalanceTransactions(customerId: String, data: IListOptions): IListPromise[ICustomerBalanceTransaction] = js.native
+    /**
+      * Returns a list of transactions that updated the customer’s balance.
+      */
+    def listBalanceTransactions(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[ICustomerBalanceTransaction] = js.native
+    def listBalanceTransactions(
+      customerId: String,
+      data: IListOptions,
+      options: HeaderOptions,
+      response: IResponseFn[IList[ICustomerBalanceTransaction]]
+    ): IListPromise[ICustomerBalanceTransaction] = js.native
+    def listBalanceTransactions(customerId: String, data: IListOptions, response: IResponseFn[IList[ICustomerBalanceTransaction]]): IListPromise[ICustomerBalanceTransaction] = js.native
+    def listBalanceTransactions(customerId: String, options: HeaderOptions): IListPromise[ICustomerBalanceTransaction] = js.native
+    def listBalanceTransactions(
+      customerId: String,
+      options: HeaderOptions,
+      response: IResponseFn[IList[ICustomerBalanceTransaction]]
+    ): IListPromise[ICustomerBalanceTransaction] = js.native
+    def listBalanceTransactions(customerId: String, response: IResponseFn[IList[ICustomerBalanceTransaction]]): IListPromise[ICustomerBalanceTransaction] = js.native
     def listCards(customerId: String): IListPromise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     def listCards(customerId: String, data: IListOptions): IListPromise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     /**
@@ -1695,6 +1734,18 @@ object resourcesNs extends js.Object {
     def retrieve(id: String, options: HeaderOptions): js.Promise[ICustomer] = js.native
     def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
     def retrieve(id: String, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
+    def retrieveBalanceTransaction(customerId: String, transactionId: String): js.Promise[ICustomerBalanceTransaction] = js.native
+    /**
+      * Retrieves a specific transaction that updated the customer’s balance.
+      */
+    def retrieveBalanceTransaction(customerId: String, transactionId: String, options: HeaderOptions): js.Promise[ICustomerBalanceTransaction] = js.native
+    def retrieveBalanceTransaction(
+      customerId: String,
+      transactionId: String,
+      options: HeaderOptions,
+      response: IResponseFn[ICustomerBalanceTransaction]
+    ): js.Promise[ICustomerBalanceTransaction] = js.native
+    def retrieveBalanceTransaction(customerId: String, transactionId: String, response: IResponseFn[ICustomerBalanceTransaction]): js.Promise[ICustomerBalanceTransaction] = js.native
     def retrieveCard(customerId: String, cardId: String): js.Promise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     /**
       * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
@@ -1766,6 +1817,29 @@ object resourcesNs extends js.Object {
     def update(id: String, data: ICustomerUpdateOptions, options: HeaderOptions): js.Promise[ICustomer] = js.native
     def update(id: String, data: ICustomerUpdateOptions, options: HeaderOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
     def update(id: String, data: ICustomerUpdateOptions, response: IResponseFn[ICustomer]): js.Promise[ICustomer] = js.native
+    def updateBalanceTransaction(customerId: String, transactionId: String, data: ICustomerBalanceTransactionUpdateOptions): js.Promise[ICustomerBalanceTransaction] = js.native
+    /**
+      * Most customer balance transaction fields are immutable, but you may update its description and metadata.
+      */
+    def updateBalanceTransaction(
+      customerId: String,
+      transactionId: String,
+      data: ICustomerBalanceTransactionUpdateOptions,
+      options: HeaderOptions
+    ): js.Promise[ICustomerBalanceTransaction] = js.native
+    def updateBalanceTransaction(
+      customerId: String,
+      transactionId: String,
+      data: ICustomerBalanceTransactionUpdateOptions,
+      options: HeaderOptions,
+      response: IResponseFn[ICustomerBalanceTransaction]
+    ): js.Promise[ICustomerBalanceTransaction] = js.native
+    def updateBalanceTransaction(
+      customerId: String,
+      transactionId: String,
+      data: ICustomerBalanceTransactionUpdateOptions,
+      response: IResponseFn[ICustomerBalanceTransaction]
+    ): js.Promise[ICustomerBalanceTransaction] = js.native
     def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions): js.Promise[typings.stripe.stripeMod.cardsNs.ICard] = js.native
     /**
       * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the

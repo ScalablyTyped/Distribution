@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "phonegap-plugin-push" : "2.2.3"
+      "phonegap-plugin-push" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "phonegap-plugin-push" : "2.2.3"
+      "phonegap-plugin-push" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

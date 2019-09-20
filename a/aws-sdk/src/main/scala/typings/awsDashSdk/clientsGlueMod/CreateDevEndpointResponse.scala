@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateDevEndpointResponse extends js.Object {
   /**
-    * The map of arguments used to configure this DevEndpoint.
+    * The map of arguments used to configure this DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
   var Arguments: js.UndefOr[MapValue] = js.undefined
   /**
@@ -33,6 +33,10 @@ trait CreateDevEndpointResponse extends js.Object {
     * The reason for a current failure in this DevEndpoint.
     */
   var FailureReason: js.UndefOr[GenericString] = js.undefined
+  /**
+    * Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The Python version indicates the version supported for running your ETL scripts on development endpoints. 
+    */
+  var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   /**
     * The number of AWS Glue Data Processing Units (DPUs) allocated to this DevEndpoint.
     */
@@ -89,6 +93,7 @@ object CreateDevEndpointResponse {
     ExtraJarsS3Path: GenericString = null,
     ExtraPythonLibsS3Path: GenericString = null,
     FailureReason: GenericString = null,
+    GlueVersion: GlueVersionString = null,
     NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
     NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     RoleArn: RoleArn = null,
@@ -109,6 +114,7 @@ object CreateDevEndpointResponse {
     if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path)
     if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
+    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
     if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)

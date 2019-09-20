@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateDevEndpointRequest extends js.Object {
   /**
-    * The map of arguments to add the map of arguments used to configure the DevEndpoint.
+    * The map of arguments to add the map of arguments used to configure the DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
   var AddArguments: js.UndefOr[MapValue] = js.undefined
   /**

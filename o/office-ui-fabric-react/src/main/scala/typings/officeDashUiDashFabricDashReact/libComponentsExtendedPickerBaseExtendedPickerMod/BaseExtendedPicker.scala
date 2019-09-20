@@ -29,6 +29,16 @@ class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
      with IBaseExtendedPicker[T] {
   def this(basePickerProps: P) = this()
   var _addProcessedItem: js.Any = js.native
+  /**
+    * The floating picker is the source of truth for if the menu has been opened or not.
+    *
+    * Because this isn't tracked inside the state of this component, we need to
+    * force an update here to keep the rendered output that depends on the picker being open
+    * in sync with the state
+    *
+    * Called when the suggestions is shown or closed
+    */
+  var _onSuggestionsShownOrHidden: js.Any = js.native
   var floatingPicker: RefObject[BaseFloatingPicker[T, IBaseFloatingPickerProps[T]]] = js.native
   var floatingPickerProps: IBaseFloatingPickerProps[T] = js.native
   val highlightedItems: js.Array[T] = js.native

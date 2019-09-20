@@ -1,10 +1,16 @@
 package typings.mssql.mssqlMod
 
+import typings.tedious.tediousMod.Connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait config extends js.Object {
+  /**
+    * Invoked before opening the connection. The parameter conn is the configured
+    * tedious Connection. It can be used for attaching event handlers.
+    */
+  var beforeConnect: js.UndefOr[js.Function1[/* conn */ Connection, Unit]] = js.undefined
   var connectionTimeout: js.UndefOr[Double] = js.undefined
   var database: String
   var domain: js.UndefOr[String] = js.undefined
@@ -25,6 +31,7 @@ object config {
   def apply(
     database: String,
     server: String,
+    beforeConnect: /* conn */ Connection => Unit = null,
     connectionTimeout: Int | Double = null,
     domain: String = null,
     driver: String = null,
@@ -38,6 +45,7 @@ object config {
     user: String = null
   ): config = {
     val __obj = js.Dynamic.literal(database = database, server = server)
+    if (beforeConnect != null) __obj.updateDynamic("beforeConnect")(js.Any.fromFunction1(beforeConnect))
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (driver != null) __obj.updateDynamic("driver")(driver)

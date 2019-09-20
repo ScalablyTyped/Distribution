@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Entitlement extends js.Object {
   /**
+    * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
+    */
+  var DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined
+  /**
     * A description of the entitlement.
     */
   var Description: js.UndefOr[__string] = js.undefined
@@ -33,10 +37,12 @@ object Entitlement {
     EntitlementArn: __string,
     Name: __string,
     Subscribers: __listOf__string,
+    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined,
     Description: __string = null,
     Encryption: Encryption = null
   ): Entitlement = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn, Name = Name, Subscribers = Subscribers)
+    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     __obj.asInstanceOf[Entitlement]

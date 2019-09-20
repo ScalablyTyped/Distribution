@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-intl"
-version := "3.2.3-7e37b1"
+version := "3.3.0-7d1d1d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "3.1.0-bd2b1b",
-  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "0.5.2-45b972",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.1.1-7545c0",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.1.0-b0295f",
+  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "0.5.2-7ab2e6",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.2.0-2b6434",
   "org.scalablytyped" %%% "intl-messageformat" % "5.4.3-b8923c",
   "org.scalablytyped" %%% "intl-messageformat-parser" % "2.1.3-a6564a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",

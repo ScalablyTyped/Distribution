@@ -30,6 +30,14 @@ trait Container extends js.Object {
     */
   var healthStatus: js.UndefOr[HealthStatus] = js.undefined
   /**
+    * The image used for the container.
+    */
+  var image: js.UndefOr[String] = js.undefined
+  /**
+    * The container image manifest digest.  The imageDigest is only returned if the container is using an image hosted in Amazon ECR, otherwise it is omitted. 
+    */
+  var imageDigest: js.UndefOr[String] = js.undefined
+  /**
     * The last known status of the container.
     */
   var lastStatus: js.UndefOr[String] = js.undefined
@@ -76,6 +84,8 @@ object Container {
     firelensConfiguration: FirelensConfiguration = null,
     gpuIds: GpuIds = null,
     healthStatus: HealthStatus = null,
+    image: String = null,
+    imageDigest: String = null,
     lastStatus: String = null,
     memory: String = null,
     memoryReservation: String = null,
@@ -93,6 +103,8 @@ object Container {
     if (firelensConfiguration != null) __obj.updateDynamic("firelensConfiguration")(firelensConfiguration)
     if (gpuIds != null) __obj.updateDynamic("gpuIds")(gpuIds)
     if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest)
     if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus)
     if (memory != null) __obj.updateDynamic("memory")(memory)
     if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation)

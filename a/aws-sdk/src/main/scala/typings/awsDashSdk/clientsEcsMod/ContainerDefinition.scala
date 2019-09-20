@@ -54,7 +54,7 @@ trait ContainerDefinition extends js.Object {
     */
   var extraHosts: js.UndefOr[HostEntryList] = js.undefined
   /**
-    * The FireLens configuration for the container. This is used to specify and configure a log router for container logs.
+    * The FireLens configuration for the container. This is used to specify and configure a log router for container logs. For more information, see Custom Log Routing in the Amazon Elastic Container Service Developer Guide.
     */
   var firelensConfiguration: js.UndefOr[FirelensConfiguration] = js.undefined
   /**

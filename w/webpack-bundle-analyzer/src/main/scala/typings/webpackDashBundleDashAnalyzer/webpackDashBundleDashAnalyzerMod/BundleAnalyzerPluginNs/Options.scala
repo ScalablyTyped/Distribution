@@ -1,6 +1,7 @@
 package typings.webpackDashBundleDashAnalyzer.webpackDashBundleDashAnalyzerMod.BundleAnalyzerPluginNs
 
 import typings.webpack.webpackMod.StatsNs.ToJsonOptionsObject
+import typings.webpackDashBundleDashAnalyzer.webpackDashBundleDashAnalyzerStrings.auto
 import typings.webpackDashBundleDashAnalyzer.webpackDashBundleDashAnalyzerStrings.disabled
 import typings.webpackDashBundleDashAnalyzer.webpackDashBundleDashAnalyzerStrings.error
 import typings.webpackDashBundleDashAnalyzer.webpackDashBundleDashAnalyzerStrings.gzip
@@ -33,7 +34,7 @@ trait Options extends js.Object {
     * Port that will be used in `server` mode to start HTTP server.
     * Defaults to 8888
     */
-  var analyzerPort: js.UndefOr[Double] = js.undefined
+  var analyzerPort: js.UndefOr[Double | auto] = js.undefined
   /**
     * Module sizes to show in report by default.
     * Should be one of "stat", "parsed" or "gzip".
@@ -88,7 +89,7 @@ object Options {
   def apply(
     analyzerHost: String = null,
     analyzerMode: server | static | disabled = null,
-    analyzerPort: Int | Double = null,
+    analyzerPort: Double | auto = null,
     defaultSizes: parsed | stat | gzip = null,
     excludeAssets: ExcludeAssetsPattern | js.Array[ExcludeAssetsPattern] = null,
     generateStatsFile: js.UndefOr[Boolean] = js.undefined,

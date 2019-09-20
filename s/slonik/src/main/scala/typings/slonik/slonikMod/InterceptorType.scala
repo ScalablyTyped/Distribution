@@ -40,12 +40,16 @@ trait InterceptorType extends js.Object {
       MaybePromiseType[js.UndefOr[QueryResultType[QueryResultRowType[String]]]]
     ]
   ] = js.undefined
-  var transformQuery: js.UndefOr[
-    js.Function2[
+  var queryExecutionError: js.UndefOr[
+    js.Function3[
       /* queryContext */ QueryContextType, 
       /* query */ QueryType, 
-      MaybePromiseType[QueryType]
+      /* error */ SlonikError, 
+      MaybePromiseType[Unit]
     ]
+  ] = js.undefined
+  var transformQuery: js.UndefOr[
+    js.Function2[/* queryContext */ QueryContextType, /* query */ QueryType, QueryType]
   ] = js.undefined
   var transformRow: js.UndefOr[
     js.Function4[
@@ -66,7 +70,8 @@ object InterceptorType {
     beforePoolConnection: /* connectionContext */ PoolContextType => MaybePromiseType[js.UndefOr[DatabasePoolType | Null]] = null,
     beforePoolConnectionRelease: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Unit] = null,
     beforeQueryExecution: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[js.UndefOr[QueryResultType[QueryResultRowType[String]]]] = null,
-    transformQuery: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[QueryType] = null,
+    queryExecutionError: (/* queryContext */ QueryContextType, /* query */ QueryType, /* error */ SlonikError) => MaybePromiseType[Unit] = null,
+    transformQuery: (/* queryContext */ QueryContextType, /* query */ QueryType) => QueryType = null,
     transformRow: (/* queryContext */ QueryContextType, /* query */ QueryType, /* row */ QueryResultRowType[String], /* fields */ js.Array[FieldType]) => QueryResultRowType[String] = null
   ): InterceptorType = {
     val __obj = js.Dynamic.literal()
@@ -75,6 +80,7 @@ object InterceptorType {
     if (beforePoolConnection != null) __obj.updateDynamic("beforePoolConnection")(js.Any.fromFunction1(beforePoolConnection))
     if (beforePoolConnectionRelease != null) __obj.updateDynamic("beforePoolConnectionRelease")(js.Any.fromFunction2(beforePoolConnectionRelease))
     if (beforeQueryExecution != null) __obj.updateDynamic("beforeQueryExecution")(js.Any.fromFunction2(beforeQueryExecution))
+    if (queryExecutionError != null) __obj.updateDynamic("queryExecutionError")(js.Any.fromFunction3(queryExecutionError))
     if (transformQuery != null) __obj.updateDynamic("transformQuery")(js.Any.fromFunction2(transformQuery))
     if (transformRow != null) __obj.updateDynamic("transformRow")(js.Any.fromFunction4(transformRow))
     __obj.asInstanceOf[InterceptorType]

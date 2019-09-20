@@ -1,7 +1,7 @@
 
 # Scala.js typings for elastic-apm-node
 
-Typings are for version 2.16.2
+Typings are for version 2.17.0
 
 ## Library description:
 The official Elastic APM agent for Node.js

@@ -56,6 +56,7 @@ object mongo extends js.Object {
     /* filename */ String, 
     typings.mongodb.mongodbMod.GridFSBucketWriteStream
   ] = js.native
+  var Int32: Instantiable1[/* value */ Double, typings.mongodb.mongodbMod.Int32] = js.native
   var Logger: TypeofClassLogger = js.native
   var Long: TypeofClassLong = js.native
   var MaxKey: Instantiable0[typings.mongodb.mongodbMod.MaxKey] = js.native
