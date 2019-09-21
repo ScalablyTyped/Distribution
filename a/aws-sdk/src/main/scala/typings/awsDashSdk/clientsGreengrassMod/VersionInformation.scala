@@ -14,11 +14,11 @@ trait VersionInformation extends js.Object {
     */
   var CreationTimestamp: js.UndefOr[__string] = js.undefined
   /**
-    * The ID of the version.
+    * The ID of the parent definition that the version is associated with.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * The unique ID of the version.
+    * The ID of the version.
     */
   var Version: js.UndefOr[__string] = js.undefined
 }

@@ -18,6 +18,21 @@ package object nockMod {
   import typings.std.RegExp
 
   type Body = String | (Record[String, js.Any])
+  // Essentially valid, decoded JSON with the addition of possible RegExp. TS doesn't currently have
+  // a great way to represent JSON type data, this data matcher design is based off this comment.
+  // https://github.com/microsoft/TypeScript/issues/1897#issuecomment-338650717
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - scala.Double
+    - java.lang.String
+    - scala.Null
+    - `js.undefined`
+    - scala.Nothing
+    - typings.std.RegExp
+    - typings.nock.nockMod.DataMatcherArray
+    - typings.nock.nockMod.DataMatcherMap
+  */
+  type DataMatcher = js.UndefOr[_DataMatcher | Boolean | Double | String | Null | RegExp]
   type InterceptFunction = js.Function3[
     /* uri */ String | RegExp | Fn_Uri, 
     /* requestBody */ js.UndefOr[RequestBodyMatcher], 
@@ -40,7 +55,8 @@ package object nockMod {
     - java.lang.String
     - typings.node.Buffer
     - typings.std.RegExp
-    - typings.nock.nockMod.DataMatcher
+    - typings.nock.nockMod.DataMatcherArray
+    - typings.nock.nockMod.DataMatcherMap
     - typings.nock.Fn_Body
   */
   type RequestBodyMatcher = _RequestBodyMatcher | String | Buffer | RegExp

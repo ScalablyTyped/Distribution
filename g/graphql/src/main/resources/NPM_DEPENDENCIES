@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql" : "14.5.6"
+      "graphql" : "14.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql" : "14.5.6"
+      "graphql" : "14.5.7"
     }
   ],
   "compile-devDependencies" : [

@@ -18,11 +18,11 @@ trait GetGroupVersionResponse extends js.Object {
     */
   var Definition: js.UndefOr[GroupVersion] = js.undefined
   /**
-    * The ID of the group version.
+    * The ID of the group that the version is associated with.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * The unique ID for the version of the group.
+    * The ID of the group version.
     */
   var Version: js.UndefOr[__string] = js.undefined
 }

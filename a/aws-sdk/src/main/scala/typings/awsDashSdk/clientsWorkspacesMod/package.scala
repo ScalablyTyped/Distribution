@@ -123,6 +123,7 @@ package object clientsWorkspacesMod {
   type RunningMode = _RunningMode | String
   type RunningModeAutoStopTimeoutInMinutes = Double
   type SecurityGroupId = String
+  type SnapshotList = js.Array[Snapshot]
   type StartWorkspaceRequests = js.Array[StartRequest]
   type StopWorkspaceRequests = js.Array[StopRequest]
   type SubnetId = String
@@ -197,6 +198,7 @@ package object clientsWorkspacesMod {
     - typings.awsDashSdk.awsDashSdkStrings.REBOOTING
     - typings.awsDashSdk.awsDashSdkStrings.STARTING
     - typings.awsDashSdk.awsDashSdkStrings.REBUILDING
+    - typings.awsDashSdk.awsDashSdkStrings.RESTORING
     - typings.awsDashSdk.awsDashSdkStrings.MAINTENANCE
     - typings.awsDashSdk.awsDashSdkStrings.ADMIN_MAINTENANCE
     - typings.awsDashSdk.awsDashSdkStrings.TERMINATING

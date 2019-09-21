@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__common
 
-Typings are for version 2.1.2
+Typings are for version 2.2.2
 
 ## Library description:
 Common components for Cloud APIs Node.js Client Libraries

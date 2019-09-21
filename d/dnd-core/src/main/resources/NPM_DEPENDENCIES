@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dnd-core" : "9.3.4"
+      "dnd-core" : "9.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dnd-core" : "9.3.4"
+      "dnd-core" : "9.4.0"
     }
   ],
   "compile-devDependencies" : [

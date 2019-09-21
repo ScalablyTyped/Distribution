@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-ratings" : "6.4.0"
+      "react-native-ratings" : "6.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-ratings" : "6.4.0"
+      "react-native-ratings" : "6.5.0"
     }
   ],
   "compile-devDependencies" : [

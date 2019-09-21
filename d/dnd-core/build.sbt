@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dnd-core"
-version := "9.3.4-f6114f"
+version := "9.4.0-2f03d2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

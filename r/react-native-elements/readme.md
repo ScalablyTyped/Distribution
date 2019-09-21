@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-elements
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 React Native Elements & UI Toolkit

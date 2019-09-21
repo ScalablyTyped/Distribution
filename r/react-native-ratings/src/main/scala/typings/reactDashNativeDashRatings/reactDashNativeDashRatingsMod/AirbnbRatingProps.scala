@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashRatings.reactDashNativeDashRatingsMod
 
+import typings.reactDashNative.reactDashNativeMod.ImageStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,9 +53,7 @@ trait AirbnbRatingProps extends js.Object {
     *
     * Default is true
     */
-  var starStyle: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageStyle */ js.Any
-  ] = js.undefined
+  var starStyle: js.UndefOr[ImageStyle] = js.undefined
 }
 
 object AirbnbRatingProps {
@@ -67,7 +66,7 @@ object AirbnbRatingProps {
     reviews: js.Array[String] = null,
     showRating: js.UndefOr[Boolean] = js.undefined,
     size: Int | Double = null,
-    starStyle: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageStyle */ js.Any = null
+    starStyle: ImageStyle = null
   ): AirbnbRatingProps = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])

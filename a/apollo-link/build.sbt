@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "apollo-link"
-version := "1.2.12-74f376"
+version := "1.2.12-651cca"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.5.6-6d234a",
+  "org.scalablytyped" %%% "graphql" % "14.5.7-aa2c84",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.19-8a9e63")
 publishArtifact in packageDoc := false

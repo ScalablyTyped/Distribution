@@ -26,6 +26,10 @@ trait ReservedDBInstance extends js.Object {
     */
   var FixedPrice: js.UndefOr[Double] = js.undefined
   /**
+    * The unique identifier for the lease associated with the reserved DB instance.  AWS Support might request the lease ID for an issue related to a reserved DB instance. 
+    */
+  var LeaseId: js.UndefOr[String] = js.undefined
+  /**
     * Indicates if the reservation applies to Multi-AZ deployments.
     */
   var MultiAZ: js.UndefOr[Boolean] = js.undefined
@@ -75,6 +79,7 @@ object ReservedDBInstance {
     DBInstanceCount: js.UndefOr[Integer] = js.undefined,
     Duration: js.UndefOr[Integer] = js.undefined,
     FixedPrice: js.UndefOr[Double] = js.undefined,
+    LeaseId: String = null,
     MultiAZ: js.UndefOr[Boolean] = js.undefined,
     OfferingType: String = null,
     ProductDescription: String = null,
@@ -92,6 +97,7 @@ object ReservedDBInstance {
     if (!js.isUndefined(DBInstanceCount)) __obj.updateDynamic("DBInstanceCount")(DBInstanceCount)
     if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
     if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (LeaseId != null) __obj.updateDynamic("LeaseId")(LeaseId)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType)
     if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription)

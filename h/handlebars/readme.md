@@ -1,7 +1,7 @@
 
 # Scala.js typings for handlebars
 
-Typings are for version 4.2.0
+Typings are for version 4.2.1
 
 ## Library description:
 Handlebars provides the power necessary to let you build semantic templates effectively with no frustration

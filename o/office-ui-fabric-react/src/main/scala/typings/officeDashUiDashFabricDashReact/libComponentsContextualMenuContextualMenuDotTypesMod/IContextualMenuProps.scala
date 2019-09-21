@@ -20,6 +20,7 @@ import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLElement
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,9 +44,15 @@ trait IContextualMenuProps
     */
   var beakWidth: js.UndefOr[Double] = js.undefined
   /**
-    * The bounding rectangle for which the contextual menu can appear in.
+    * The bounding rectangle (or callback that returns a rectangle) for which  the contextual menu can appear in.
     */
-  var bounds: js.UndefOr[IRectangle] = js.undefined
+  var bounds: js.UndefOr[
+    IRectangle | (js.Function2[
+      /* target */ js.UndefOr[Target], 
+      /* targetWindow */ js.UndefOr[Window], 
+      js.UndefOr[IRectangle]
+    ])
+  ] = js.undefined
   /**
     * Pass in custom callout props
     */
@@ -237,7 +244,11 @@ object IContextualMenuProps {
     alignTargetEdge: js.UndefOr[Boolean] = js.undefined,
     ariaLabel: String = null,
     beakWidth: Int | Double = null,
-    bounds: IRectangle = null,
+    bounds: IRectangle | (js.Function2[
+      /* target */ js.UndefOr[Target], 
+      /* targetWindow */ js.UndefOr[Window], 
+      js.UndefOr[IRectangle]
+    ]) = null,
     calloutProps: ICalloutProps = null,
     className: String = null,
     componentRef: IRefObject[IContextualMenu] = null,
@@ -277,7 +288,7 @@ object IContextualMenuProps {
     if (!js.isUndefined(alignTargetEdge)) __obj.updateDynamic("alignTargetEdge")(alignTargetEdge)
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])

@@ -22,7 +22,7 @@ trait Interceptor extends js.Object {
   def query(matcher: String): this.type = js.native
   def query(matcher: Boolean): this.type = js.native
   def query(matcher: Fn_ParsedObj): this.type = js.native
-  def query(matcher: DataMatcher): this.type = js.native
+  def query(matcher: DataMatcherMap): this.type = js.native
   def query(matcher: URLSearchParams): this.type = js.native
   def reply(): Scope = js.native
   // tslint (as of 5.16) is under the impression that the callback types can be unified,

@@ -294,6 +294,24 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait grow extends js.Object
   
   @js.native
+  sealed trait h1 extends js.Object
+  
+  @js.native
+  sealed trait h2 extends js.Object
+  
+  @js.native
+  sealed trait h3 extends js.Object
+  
+  @js.native
+  sealed trait h4 extends js.Object
+  
+  @js.native
+  sealed trait h5 extends js.Object
+  
+  @js.native
+  sealed trait h6 extends js.Object
+  
+  @js.native
   sealed trait hasCondensedHeadline extends js.Object
   
   @js.native
@@ -948,6 +966,18 @@ object officeDashUiDashFabricDashReactStrings {
   def greenLight: greenLight = "greenLight".asInstanceOf[greenLight]
   @scala.inline
   def grow: grow = "grow".asInstanceOf[grow]
+  @scala.inline
+  def h1: h1 = "h1".asInstanceOf[h1]
+  @scala.inline
+  def h2: h2 = "h2".asInstanceOf[h2]
+  @scala.inline
+  def h3: h3 = "h3".asInstanceOf[h3]
+  @scala.inline
+  def h4: h4 = "h4".asInstanceOf[h4]
+  @scala.inline
+  def h5: h5 = "h5".asInstanceOf[h5]
+  @scala.inline
+  def h6: h6 = "h6".asInstanceOf[h6]
   @scala.inline
   def hasCondensedHeadline: hasCondensedHeadline = "hasCondensedHeadline".asInstanceOf[hasCondensedHeadline]
   @scala.inline

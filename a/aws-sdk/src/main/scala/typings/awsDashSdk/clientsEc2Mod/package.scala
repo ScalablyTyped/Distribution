@@ -874,6 +874,12 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.g3DOT8xlarge
     - typings.awsDashSdk.awsDashSdkStrings.g3DOT16xlarge
     - typings.awsDashSdk.awsDashSdkStrings.g3sDOTxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOTxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT16xlarge
     - typings.awsDashSdk.awsDashSdkStrings.cg1DOT4xlarge
     - typings.awsDashSdk.awsDashSdkStrings.p2DOTxlarge
     - typings.awsDashSdk.awsDashSdkStrings.p2DOT8xlarge

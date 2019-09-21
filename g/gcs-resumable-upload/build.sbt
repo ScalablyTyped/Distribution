@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gcs-resumable-upload"
-version := "2.2.4-15f8ce"
+version := "2.2.5-0f39ed"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

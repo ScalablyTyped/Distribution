@@ -15,7 +15,7 @@ object ^ extends js.Object {
   var default_Original: Anon_Default = js.native
   /**
   	[Normalize](https://en.wikipedia.org/wiki/URL_normalization) a URL.
-  	@param url - URL to normalize.
+  	@param url - URL to normalize, including [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
   	@example
   	```
   	import normalizeUrl = require('normalize-url');
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   def apply(url: String, options: Options): String = js.native
   /**
   	[Normalize](https://en.wikipedia.org/wiki/URL_normalization) a URL.
-  	@param url - URL to normalize.
+  	@param url - URL to normalize, including [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
   	@example
   	```
   	import normalizeUrl = require('normalize-url');

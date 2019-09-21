@@ -18,6 +18,10 @@ trait DescribeReservedDBInstancesMessage extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
+    * The lease identifier filter value. Specify this parameter to show only the reservation that matches the specified lease ID.  AWS Support might request the lease ID for an issue related to a reserved DB instance. 
+    */
+  var LeaseId: js.UndefOr[String] = js.undefined
+  /**
     *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
     */
   var Marker: js.UndefOr[String] = js.undefined
@@ -53,6 +57,7 @@ object DescribeReservedDBInstancesMessage {
     DBInstanceClass: String = null,
     Duration: String = null,
     Filters: FilterList = null,
+    LeaseId: String = null,
     Marker: String = null,
     MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
@@ -65,6 +70,7 @@ object DescribeReservedDBInstancesMessage {
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
     if (Duration != null) __obj.updateDynamic("Duration")(Duration)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
+    if (LeaseId != null) __obj.updateDynamic("LeaseId")(LeaseId)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)

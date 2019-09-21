@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait StorageOptions extends GoogleAuthOptions {
   /**
     * The API endpoint of the service used to make requests.
-    * Defaults to `www.googleapis.com`.
+    * Defaults to `storage.googleapis.com`.
     */
   var apiEndpoint: js.UndefOr[String] = js.undefined
   var autoRetry: js.UndefOr[Boolean] = js.undefined

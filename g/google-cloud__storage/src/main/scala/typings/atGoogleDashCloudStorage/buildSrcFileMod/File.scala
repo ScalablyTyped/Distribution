@@ -380,6 +380,39 @@ class File protected () extends ServiceObject[File] {
     */
   def createWriteStream(): Writable = js.native
   def createWriteStream(options: CreateWriteStreamOptions): Writable = js.native
+  /**
+    * Delete failed resumable upload file cache.
+    *
+    * Resumable file upload cache the config file to restart upload in case of
+    * failure. In certain scenarios, the resumable upload will not works and
+    * upload file cache needs to be deleted to upload the same file.
+    *
+    * Following are some of the scenarios.
+    *
+    * Resumable file upload failed even though the file is successfully saved
+    * on the google storage and need to clean up a resumable file cache to
+    * update the same file.
+    *
+    * Resumable file upload failed due to pre-condition
+    * (i.e generation number is not matched) and want to upload a same
+    * file with the new generation number.
+    *
+    * @example
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * const myBucket = storage.bucket('my-bucket');
+    *
+    * const file = myBucket.file('my-file', { generation: 0 });
+    * const contents = 'This is the contents of the file.';
+    *
+    * file.save(contents, function(err) {
+    *   if (err) {
+    *     file.deleteResumableCache();
+    *   }
+    * });
+    *
+    */
+  def deleteResumableCache(): Unit = js.native
   def download(): js.Promise[DownloadResponse] = js.native
   def download(callback: DownloadCallback): Unit = js.native
   def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native

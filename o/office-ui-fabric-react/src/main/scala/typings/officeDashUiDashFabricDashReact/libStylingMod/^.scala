@@ -2,6 +2,7 @@ package typings.officeDashUiDashFabricDashReact.libStylingMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atUifabricMergeDashStyles.libIRawStyleBaseMod.IFontFace
+import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricMergeDashStyles.libIStyleMod.IRawStyle
 import typings.atUifabricMergeDashStyles.libIStyleMod.IStyle
 import typings.atUifabricMergeDashStyles.libIStyleMod.IStyleBaseArray
@@ -137,6 +138,7 @@ object ^ extends js.Object {
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet3 | TStyleSet4
   ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](styleProps: TStyleProps, allStyles: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): Partial[TStyleSet] = js.native
   @JSName("concatStyleSets")
   def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   @JSName("concatStyleSets")

@@ -17548,6 +17548,7 @@ object awsDashSdkStrings {
   sealed trait RESTORING
     extends _ResourceStateType
        with _ServerStatus
+       with _WorkspaceState
   
   @js.native
   sealed trait RESTRICTED extends _AdsOnDeliveryRestrictions
@@ -24636,6 +24637,30 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait g3sDOTxlarge
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait g4dnDOT12xlarge
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait g4dnDOT16xlarge
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait g4dnDOT2xlarge
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait g4dnDOT4xlarge
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait g4dnDOT8xlarge
+    extends typings.awsDashSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait g4dnDOTxlarge
     extends typings.awsDashSdk.clientsEc2Mod._InstanceType
   
   @js.native
@@ -39267,6 +39292,18 @@ object awsDashSdkStrings {
   def g3DOT8xlarge: g3DOT8xlarge = "g3.8xlarge".asInstanceOf[g3DOT8xlarge]
   @scala.inline
   def g3sDOTxlarge: g3sDOTxlarge = "g3s.xlarge".asInstanceOf[g3sDOTxlarge]
+  @scala.inline
+  def g4dnDOT12xlarge: g4dnDOT12xlarge = "g4dn.12xlarge".asInstanceOf[g4dnDOT12xlarge]
+  @scala.inline
+  def g4dnDOT16xlarge: g4dnDOT16xlarge = "g4dn.16xlarge".asInstanceOf[g4dnDOT16xlarge]
+  @scala.inline
+  def g4dnDOT2xlarge: g4dnDOT2xlarge = "g4dn.2xlarge".asInstanceOf[g4dnDOT2xlarge]
+  @scala.inline
+  def g4dnDOT4xlarge: g4dnDOT4xlarge = "g4dn.4xlarge".asInstanceOf[g4dnDOT4xlarge]
+  @scala.inline
+  def g4dnDOT8xlarge: g4dnDOT8xlarge = "g4dn.8xlarge".asInstanceOf[g4dnDOT8xlarge]
+  @scala.inline
+  def g4dnDOTxlarge: g4dnDOTxlarge = "g4dn.xlarge".asInstanceOf[g4dnDOTxlarge]
   @scala.inline
   def ga: ga = "ga".asInstanceOf[ga]
   @scala.inline

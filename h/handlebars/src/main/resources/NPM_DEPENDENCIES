@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "handlebars" : "4.2.0"
+      "handlebars" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "handlebars" : "4.2.0"
+      "handlebars" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

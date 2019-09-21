@@ -234,6 +234,19 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceImagesResult, Unit]
   ): Request[DescribeWorkspaceImagesResult, AWSError] = js.native
   /**
+    * Describes the snapshots for the specified WorkSpace.
+    */
+  def describeWorkspaceSnapshots(): Request[DescribeWorkspaceSnapshotsResult, AWSError] = js.native
+  def describeWorkspaceSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceSnapshotsResult, Unit]): Request[DescribeWorkspaceSnapshotsResult, AWSError] = js.native
+  /**
+    * Describes the snapshots for the specified WorkSpace.
+    */
+  def describeWorkspaceSnapshots(params: DescribeWorkspaceSnapshotsRequest): Request[DescribeWorkspaceSnapshotsResult, AWSError] = js.native
+  def describeWorkspaceSnapshots(
+    params: DescribeWorkspaceSnapshotsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceSnapshotsResult, Unit]
+  ): Request[DescribeWorkspaceSnapshotsResult, AWSError] = js.native
+  /**
     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
     */
   def describeWorkspaces(): Request[DescribeWorkspacesResult, AWSError] = js.native
@@ -380,6 +393,19 @@ trait WorkSpaces extends Service {
     params: RebuildWorkspacesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RebuildWorkspacesResult, Unit]
   ): Request[RebuildWorkspacesResult, AWSError] = js.native
+  /**
+    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
+    */
+  def restoreWorkspace(): Request[RestoreWorkspaceResult, AWSError] = js.native
+  def restoreWorkspace(callback: js.Function2[/* err */ AWSError, /* data */ RestoreWorkspaceResult, Unit]): Request[RestoreWorkspaceResult, AWSError] = js.native
+  /**
+    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
+    */
+  def restoreWorkspace(params: RestoreWorkspaceRequest): Request[RestoreWorkspaceResult, AWSError] = js.native
+  def restoreWorkspace(
+    params: RestoreWorkspaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreWorkspaceResult, Unit]
+  ): Request[RestoreWorkspaceResult, AWSError] = js.native
   /**
     * Removes one or more rules from the specified IP access control group.
     */
