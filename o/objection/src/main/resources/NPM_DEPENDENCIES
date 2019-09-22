@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "objection" : "1.6.9"
+      "objection" : "1.6.11"
     }
   ],
   "test-dependencies" : [
     {
-      "objection" : "1.6.9"
+      "objection" : "1.6.11"
     }
   ],
   "compile-devDependencies" : [

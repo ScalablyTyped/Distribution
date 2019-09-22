@@ -28,7 +28,7 @@ trait PullsCreateParams extends js.Object {
   var owner: String
   var repo: String
   /**
-    * The title of the pull request.
+    * The title of the new pull request.
     */
   var title: String
 }

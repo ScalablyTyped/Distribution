@@ -16,6 +16,7 @@ trait AbstractTooltipProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var defaultVisible: js.UndefOr[Boolean] = js.undefined
+  /** Internal. Hide tooltip when hidden. This will be renamed in future. */
   var destroyTooltipOnHide: js.UndefOr[Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var getTooltipContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined

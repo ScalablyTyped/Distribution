@@ -15,6 +15,8 @@ object ^ extends js.Object {
   val ref: ReferenceBuilder = js.native
   val transaction: typings.objection.objectionMod.transaction[js.Any] = js.native
   def knexSnakeCaseMappers(): KnexMappers = js.native
+  def knexSnakeCaseMappers(opt: SnakeCaseMappersOptions): KnexMappers = js.native
   def snakeCaseMappers(): ColumnNameMappers = js.native
+  def snakeCaseMappers(opt: SnakeCaseMappersOptions): ColumnNameMappers = js.native
 }
 

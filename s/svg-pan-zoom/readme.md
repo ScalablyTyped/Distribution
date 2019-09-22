@@ -1,7 +1,7 @@
 
 # Scala.js typings for svg-pan-zoom
 
-Typings are for version 3.6.0
+Typings are for version 3.6.1
 
 ## Library description:
 JavaScript library for panning and zooming an SVG image from the mouse, touches and programmatically.

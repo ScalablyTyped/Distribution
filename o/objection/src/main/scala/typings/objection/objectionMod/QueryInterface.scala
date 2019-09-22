@@ -2,6 +2,7 @@ package typings.objection.objectionMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.knex.knexMod.JoinClause
+import typings.objection.Anon_Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -143,10 +144,10 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   @JSName("table")
   var table_Original: Table[QM, RM, RV] = js.native
   @JSName("unionAll")
-  var unionAll_Original: SetOperations[QM] = js.native
+  var unionAll_Original: Union[QM] = js.native
   // Union
   @JSName("union")
-  var union_Original: SetOperations[QM] = js.native
+  var union_Original: Union[QM] = js.native
   @JSName("whereBetween")
   var whereBetween_Original: WhereBetween[QM, RM, RV] = js.native
   @JSName("whereColumn")
@@ -1794,8 +1795,10 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def orWhereRaw(sql: String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def orWhereRaw(sql: String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   // Order by
+  def orderBy(columns: js.Array[Anon_Column | String]): QueryBuilder[QM, RM, RV] = js.native
+  // Order by
   def orderBy(column: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
-  def orderBy(column: ColumnRef, direction: String): QueryBuilder[QM, RM, RV] = js.native
+  def orderBy(column: ColumnRef, order: String): QueryBuilder[QM, RM, RV] = js.native
   def orderByRaw(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def orderByRaw(sql: String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def orderByRaw(sql: String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
@@ -1862,6 +1865,140 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def transacting(trx: Transaction): this.type = js.native
   def truncate(): this.type = js.native
   // Union
+  def union(arg1: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], arg3: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], arg3: QBOrCallback[QM], arg4: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM],
+    arg7: QBOrCallback[QM]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM],
+    arg7: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], arg3: QBOrCallback[QM], wrap: Boolean): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], wrap: Boolean): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def union(arg1: QBOrCallback[QM], wrap: Boolean): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
+  def union(args: QBOrCallback[QM]*): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  // Union
   def union(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
@@ -1896,26 +2033,6 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       Unit
     ],
     wrap: Boolean
-  ): QueryBuilder[
-    QM, 
-    js.Array[QM], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-  ] = js.native
-  // Union
-  def union(
-    callbacks: (js.ThisFunction1[
-      /* this */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-      ], 
-      /* queryBuilder */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-      ], 
-      Unit
-    ])*
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
@@ -1965,6 +2082,132 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
+  def unionAll(arg1: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], arg3: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], arg3: QBOrCallback[QM], arg4: QBOrCallback[QM]): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM],
+    arg7: QBOrCallback[QM]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM],
+    arg7: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    arg6: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    arg5: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    arg1: QBOrCallback[QM],
+    arg2: QBOrCallback[QM],
+    arg3: QBOrCallback[QM],
+    arg4: QBOrCallback[QM],
+    wrap: Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], arg3: QBOrCallback[QM], wrap: Boolean): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(arg1: QBOrCallback[QM], arg2: QBOrCallback[QM], wrap: Boolean): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(arg1: QBOrCallback[QM], wrap: Boolean): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(args: QBOrCallback[QM]*): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
   def unionAll(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
@@ -1999,25 +2242,6 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       Unit
     ],
     wrap: Boolean
-  ): QueryBuilder[
-    QM, 
-    js.Array[QM], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-  ] = js.native
-  def unionAll(
-    callbacks: (js.ThisFunction1[
-      /* this */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-      ], 
-      /* queryBuilder */ QueryBuilder[
-        QM, 
-        js.Array[QM], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-      ], 
-      Unit
-    ])*
   ): QueryBuilder[
     QM, 
     js.Array[QM], 

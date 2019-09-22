@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobile-detect
 
-Typings are for version 1.4.3
+Typings are for version 1.4.4
 
 ## Library description:
 Device detection (phone, tablet, desktop, mobile grade, os, versions)

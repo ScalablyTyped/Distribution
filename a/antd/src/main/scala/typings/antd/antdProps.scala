@@ -393,9 +393,6 @@ trait antdProps {
   def UploadProps: typings.antd.esUploadInterfaceMod.UploadProps.type = typings.antd.esUploadInterfaceMod.UploadProps
   type UploadProps = typings.antd.esUploadInterfaceMod.UploadProps
   @scala.inline
-  def UploadDraggerProps: typings.antd.esUploadDraggerMod.DraggerProps.type = typings.antd.esUploadDraggerMod.DraggerProps
-  type UploadDraggerProps = typings.antd.esUploadDraggerMod.DraggerProps
-  @scala.inline
   def operationProps: typings.antd.esTransferOperationMod.TransferOperationProps.type = typings.antd.esTransferOperationMod.TransferOperationProps
   type operationProps = typings.antd.esTransferOperationMod.TransferOperationProps
   @scala.inline

@@ -136,9 +136,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
       Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
-  def findById(id: Id): QueryBuilderYieldingOneOrNone[QM] = js.native
-  @JSName("findById")
-  def findById_This(idOrIds: IdOrIds): this.type = js.native
+  def findById(idOrIds: IdOrIds): QueryBuilderYieldingOneOrNone[QM] = js.native
   def findByIds(ids: js.Array[js.Array[Id] | Id]): this.type = js.native
   /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(
@@ -207,12 +205,12 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def first(): QueryBuilderYieldingOneOrNone[QM] = js.native
   def forShare(): this.type = js.native
   def forUpdate(): this.type = js.native
-  def fullOuterJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def fullOuterJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def fullOuterJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def fullOuterJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -220,12 +218,12 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def hasEager(): Boolean = js.native
   def hasSelects(): Boolean = js.native
   def hasWheres(): Boolean = js.native
-  def innerJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def innerJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def innerJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def innerJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -381,32 +379,32 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def isUpdate(): Boolean = js.native
   def joinEager(relationExpression: RelationExpression): this.type = js.native
   def joinEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
-  def joinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def joinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def joinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def joinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def leftJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def leftJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def leftJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def leftJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def leftOuterJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def leftOuterJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def leftOuterJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def leftOuterJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -462,12 +460,12 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def orWhereJsonNotSupersetOf(fieldExpression: FieldExpression, jsonObjectOrFieldExpression: JsonObjectOrFieldExpression): QueryBuilder[QM, RM, RV] = js.native
   def orWhereJsonSubsetOf(fieldExpression: FieldExpression, jsonObjectOrFieldExpression: JsonObjectOrFieldExpression): QueryBuilder[QM, RM, RV] = js.native
   def orWhereJsonSupersetOf(fieldExpression: FieldExpression, jsonObjectOrFieldExpression: JsonObjectOrFieldExpression): QueryBuilder[QM, RM, RV] = js.native
-  def outerJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def outerJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def outerJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def outerJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -521,22 +519,22 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
     RM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def rightJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def rightJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def rightJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def rightJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def rightOuterJoinRelation[QM /* <: Model */](relationName: String): QueryBuilder[
+  def rightOuterJoinRelation[QM /* <: Model */](expr: RelationExpression): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def rightOuterJoinRelation[QM /* <: Model */](relationName: String, opt: RelationOptions): QueryBuilder[
+  def rightOuterJoinRelation[QM /* <: Model */](expr: RelationExpression, opt: RelationOptions): QueryBuilder[
     QM, 
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _

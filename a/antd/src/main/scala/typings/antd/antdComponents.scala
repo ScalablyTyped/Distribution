@@ -109,7 +109,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def Divider: ComponentType[typings.antd.esDividerMod.DividerProps] = typings.antd.esDividerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDividerMod.DividerProps]]
   @scala.inline
-  def Dragger: ComponentType[typings.antd.esUploadDraggerMod.DraggerProps] = typings.antd.esUploadDraggerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadDraggerMod.DraggerProps]]
+  def Dragger: ComponentType[typings.antd.esUploadDraggerMod.DraggerProps] = js.constructorOf[typings.antd.esUploadDraggerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadDraggerMod.DraggerProps]]
   @scala.inline
   def Drawer: ComponentType[typings.antd.esDrawerMod.DrawerProps] = typings.antd.esDrawerMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esDrawerMod.DrawerProps]]
   @scala.inline
@@ -276,8 +276,6 @@ object antdComponents extends antdProps {
   def Typography: ComponentType[InternalTypographyProps] = typings.antd.esTypographyTypographyMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTypographyTypographyMod.InternalTypographyProps]]
   @scala.inline
   def Upload: ComponentType[typings.antd.esUploadInterfaceMod.UploadProps] = js.constructorOf[typings.antd.esUploadMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadInterfaceMod.UploadProps]]
-  @scala.inline
-  def UploadDragger: ComponentType[typings.antd.esUploadDraggerMod.DraggerProps] = typings.antd.esMod.Upload.Dragger.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadDraggerMod.DraggerProps]]
   @scala.inline
   def operation: ComponentType[typings.antd.esTransferOperationMod.TransferOperationProps] = typings.antd.esTransferOperationMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTransferOperationMod.TransferOperationProps]]
   @scala.inline

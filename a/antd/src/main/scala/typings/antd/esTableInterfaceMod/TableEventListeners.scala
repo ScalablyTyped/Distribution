@@ -2,30 +2,30 @@ package typings.antd.esTableInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.Element
-import typings.react.Event
-import typings.react.reactMod.SyntheticEvent
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableEventListeners
   extends /* name */ StringDictionary[js.Any] {
-  var onClick: js.UndefOr[js.Function1[/* arg */ SyntheticEvent[Element, Event], Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* arg */ SyntheticEvent[Element, Event], Unit]] = js.undefined
-  var onDoubleClick: js.UndefOr[js.Function1[/* arg */ SyntheticEvent[Element, Event], Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* arg */ SyntheticEvent[Element, Event], Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* arg */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
+  var onDoubleClick: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
 }
 
 object TableEventListeners {
   @scala.inline
   def apply(
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    onClick: /* arg */ SyntheticEvent[Element, Event] => Unit = null,
-    onContextMenu: /* arg */ SyntheticEvent[Element, Event] => Unit = null,
-    onDoubleClick: /* arg */ SyntheticEvent[Element, Event] => Unit = null,
-    onMouseEnter: /* arg */ SyntheticEvent[Element, Event] => Unit = null,
-    onMouseLeave: /* arg */ SyntheticEvent[Element, Event] => Unit = null
+    onClick: /* arg */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
+    onContextMenu: /* arg */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
+    onDoubleClick: /* arg */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
+    onMouseEnter: /* arg */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
+    onMouseLeave: /* arg */ MouseEvent[Element, NativeMouseEvent] => Unit = null
   ): TableEventListeners = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

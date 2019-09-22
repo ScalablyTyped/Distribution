@@ -68,7 +68,7 @@ package object objectionMod {
   type Ids = js.Array[Id]
   type JoinRaw[QM /* <: Model */, RM, RV] = js.Function2[/* sql */ String, /* bindings */ js.UndefOr[js.Any], QueryBuilder[QM, RM, RV]]
   type JoinRelation = js.Function2[
-    /* relationName */ String, 
+    /* expr */ RelationExpression, 
     /* opt */ js.UndefOr[RelationOptions], 
     QueryBuilder[
       Model, 
@@ -92,13 +92,29 @@ package object objectionMod {
   ]
   type NodeStyleCallback = js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], Unit]
   type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
-  type OrderBy[QM /* <: Model */, RM, RV] = js.Function2[/* column */ ColumnRef, /* direction */ js.UndefOr[String], QueryBuilder[QM, RM, RV]]
   type PartialUpdate[QM /* <: Model */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof QM ]:? QM[P] | objection.objection.Raw | objection.objection.Reference | objection.objection.QueryBuilder<any, std.Array<any>, / * import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV * / any>}
     */ typings.objection.objectionStrings.PartialUpdate with QM
   type Plugin = js.Function1[/* modelClass */ TypeofClassModel, TypeofClassModel]
   type Pojo = StringDictionary[js.Any]
   type Properties = StringDictionary[Boolean]
+  type QBOrCallback[QM /* <: Model */] = (QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+  ]) | (js.ThisFunction1[
+    /* this */ QueryBuilder[
+      QM, 
+      js.Array[QM], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+    ], 
+    /* queryBuilder */ QueryBuilder[
+      QM, 
+      js.Array[QM], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+    ], 
+    Unit
+  ])
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]
   type QueryBuilderYieldingOneOrNone[QM /* <: Model */] = QueryBuilder[QM, QM, js.UndefOr[QM]]
   type Raw = typings.knex.knexMod.Raw[js.Any]

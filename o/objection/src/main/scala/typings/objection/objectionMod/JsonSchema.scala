@@ -64,6 +64,11 @@ trait JsonSchema extends js.Object {
     * If true minimum must be < value, <= otherwise
     */
   var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
+  /**
+    * fallback raw string for custom formats,
+    * or formats that aren't in the standard yet
+    */
+  var format: js.UndefOr[JsonSchemaFormatType | String] = js.undefined
   /////////////////////////////////////////////////
   // Schema Metadata
   /////////////////////////////////////////////////
@@ -145,6 +150,7 @@ object JsonSchema {
     enum: js.Array[_] = null,
     exclusiveMaximum: js.UndefOr[Boolean] = js.undefined,
     exclusiveMinimum: js.UndefOr[Boolean] = js.undefined,
+    format: JsonSchemaFormatType | String = null,
     id: String = null,
     items: JsonSchema | js.Array[JsonSchema] = null,
     maxItems: Int | Double = null,
@@ -180,6 +186,7 @@ object JsonSchema {
     if (enum != null) __obj.updateDynamic("enum")(enum)
     if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum)
     if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])

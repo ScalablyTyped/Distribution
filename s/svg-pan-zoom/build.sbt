@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg-pan-zoom"
-version := "3.6.0-3fd5f3"
+version := "3.6.1-7c6948"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
