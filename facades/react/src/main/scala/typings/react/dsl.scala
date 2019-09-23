@@ -2,10 +2,11 @@ package typings.react
 
 import org.scalablytyped.runtime.{Instantiable1, Instantiable2}
 import typings.react.reactMod._
-import typings.std.^.{Object, console}
+import typings.std.{Object, console}
 import typings.{react, std}
 
 import scala.language.{higherKinds, implicitConversions}
+import scala.scalajs.js.annotation.JSImport
 import scala.scalajs.js.|
 import scala.scalajs.{LinkingInfo, js}
 
@@ -61,10 +62,10 @@ object dsl {
       )
 
     @inline def noprops(children: ReactNode*): ReactElement =
-      ^.createElement[P[E], E](tpe, fullProps(null.asInstanceOf[P[E]]), children: _*)
+      createElement[P[E], E](tpe, fullProps(null.asInstanceOf[P[E]]), children: _*)
 
     @inline def props(props: P[E], children: ReactNode*): ReactElement =
-      ^.createElement[P[E], E](tpe, fullProps(props), children: _*)
+      createElement[P[E], E](tpe, fullProps(props), children: _*)
   }
 
   lazy val a =
@@ -447,12 +448,13 @@ object dsl {
   }
 
   /* we're having some instability with createElement and overloads, so just inline it for now*/
+  @JSImport("react", "createElement")
   @js.native
-  sealed trait Hack extends js.Object {
-    def createElement[P /* <: js.Object */ ](
-        `type`: ComponentClass[P, ComponentState],
-        props: Attributes with P,
-        children: ReactNode*): ReactElement = js.native
+  object createElementHack extends js.Object {
+    def apply[P /* <: js.Object */ ](
+      `type`: ComponentClass[P, ComponentState],
+      props: Attributes with P,
+      children: ReactNode*): ReactElement = js.native
   }
 
   @inline final class BuildComponent[P] private[dsl] (
@@ -485,7 +487,7 @@ object dsl {
                      _ref.asInstanceOf[js.Any],
                      children)
 
-      ^.asInstanceOf[Hack].createElement(ctor, fullProps(props), children: _*)
+      createElementHack(ctor, fullProps(props), children: _*)
     }
 
     @inline def noprops(children: ReactNode*): ReactElement = {
@@ -495,8 +497,7 @@ object dsl {
                      _ref.asInstanceOf[js.Any],
                      children)
 
-      ^.asInstanceOf[Hack].createElement(ctor, fullProps(null.asInstanceOf[P]), children: _*)
+      createElementHack(ctor, fullProps(null.asInstanceOf[P]), children: _*)
     }
   }
-
 }

@@ -1,7 +1,7 @@
 package typings.react
 
 import typings.react.reactMod._
-import typings.std.^.{console, Object}
+import typings.std.{console, Object}
 import typings.{react, std}
 
 import scala.language.{higherKinds, implicitConversions}
