@@ -2,8 +2,8 @@ package typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod
 
 import typings.atMaterialDashUiCore.PartialClassNameMapTooltipClassKey
 import typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps
-import typings.atMaterialDashUiLab.PartialButtonProps
 import typings.atMaterialDashUiLab.PartialClassNameMapSpeedDialActionClassKey
+import typings.atMaterialDashUiLab.PartialFabProps
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`bottom-end`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`bottom-start`
@@ -81,9 +81,9 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>, @material-ui/lab.@material-ui/lab/SpeedDialAction/SpeedDialAction.SpeedDialActionClassKey, 'children'> */
 trait SpeedDialActionProps extends js.Object {
   /**
-    * Props applied to the [`Button`](/api/button/) component.
+    * Props applied to the [`Fab`](/api/fab/) component.
     */
-  var ButtonProps: js.UndefOr[PartialButtonProps] = js.undefined
+  var FabProps: js.UndefOr[PartialFabProps] = js.undefined
   var PopperProps: js.UndefOr[js.Object] = js.undefined
   /**
     * Classes applied to the [`Tooltip`](/api/tooltip/) element.
@@ -166,7 +166,7 @@ trait SpeedDialActionProps extends js.Object {
   var enterTouchDelay: js.UndefOr[Double] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**
-    * The Icon to display in the SpeedDial Floating Action Button.
+    * The Icon to display in the SpeedDial Fab.
     */
   var icon: js.UndefOr[ReactNode] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -386,7 +386,7 @@ trait SpeedDialActionProps extends js.Object {
 object SpeedDialActionProps {
   @scala.inline
   def apply(
-    ButtonProps: PartialButtonProps = null,
+    FabProps: PartialFabProps = null,
     PopperProps: js.Object = null,
     TooltipClasses: PartialClassNameMapTooltipClassKey = null,
     TransitionComponent: ComponentType[TransitionProps] = null,
@@ -583,7 +583,7 @@ object SpeedDialActionProps {
     vocab: String = null
   ): SpeedDialActionProps = {
     val __obj = js.Dynamic.literal()
-    if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)
+    if (FabProps != null) __obj.updateDynamic("FabProps")(FabProps)
     if (PopperProps != null) __obj.updateDynamic("PopperProps")(PopperProps)
     if (TooltipClasses != null) __obj.updateDynamic("TooltipClasses")(TooltipClasses)
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])

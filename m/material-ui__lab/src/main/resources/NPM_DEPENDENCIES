@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material-ui/lab" : "4.0.0-alpha.26"
+      "@material-ui/lab" : "4.0.0-alpha.27"
     }
   ],
   "test-dependencies" : [
     {
-      "@material-ui/lab" : "4.0.0-alpha.26"
+      "@material-ui/lab" : "4.0.0-alpha.27"
     }
   ],
   "compile-devDependencies" : [

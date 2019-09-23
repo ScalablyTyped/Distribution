@@ -3,7 +3,7 @@ package typings.atMaterialDashUiLab.speedDialSpeedDialMod
 import typings.atMaterialDashUiCore.Anon_ClassName
 import typings.atMaterialDashUiCore.stylesWithStylesMod.ClassNameMap
 import typings.atMaterialDashUiCore.stylesWithStylesMod.StyledComponentProps
-import typings.atMaterialDashUiLab.PartialButtonProps
+import typings.atMaterialDashUiLab.PartialFabProps
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.down
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.left
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.right
@@ -27,9 +27,9 @@ import scala.scalajs.js.annotation._
   extends StyledComponentProps[SpeedDialClassKey]
      with Anon_ClassName {
   /**
-    * Props applied to the [`Button`](/api/button/) element.
+    * Props applied to the [`Fab`](/api/fab/) element.
     */
-  var ButtonProps: js.UndefOr[PartialButtonProps] = js.undefined
+  var FabProps: js.UndefOr[PartialFabProps] = js.undefined
   /**
     * The component used for the transition.
     */
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
     */
   var TransitionProps: js.UndefOr[typings.reactDashTransitionDashGroup.transitionMod.TransitionProps] = js.undefined
   /**
-    * The aria-label of the `Button` element.
+    * The aria-label of the button element.
     * Also used to provide the `id` for the `SpeedDial` element and its children.
     */
   var ariaLabel: String
@@ -56,7 +56,7 @@ import scala.scalajs.js.annotation._
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**
-    * The icon to display in the SpeedDial Floating Action Button. The `SpeedDialIcon` component
+    * The icon to display in the SpeedDial Fab. The `SpeedDialIcon` component
     * provides a default Icon with animation.
     */
   var icon: js.UndefOr[ReactNode] = js.undefined
@@ -70,11 +70,17 @@ import scala.scalajs.js.annotation._
     js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* key */ String, Unit]
   ] = js.undefined
   /**
+    * Callback fired when the component requests to be open.
+    *
+    * @param {object} event The event source of the callback.
+    */
+  var onOpen: js.UndefOr[js.Function1[/* event */ SyntheticEvent[js.Object, Event], Unit]] = js.undefined
+  /**
     * If `true`, the SpeedDial is open.
     */
   var open: Boolean
   /**
-    * The icon to display in the SpeedDial Floating Action Button when the SpeedDial is open.
+    * The icon to display in the SpeedDial Fab when the SpeedDial is open.
     */
   var openIcon: js.UndefOr[ReactNode] = js.undefined
   /**
@@ -89,7 +95,7 @@ object SpeedDialProps {
   def apply(
     ariaLabel: String,
     open: Boolean,
-    ButtonProps: PartialButtonProps = null,
+    FabProps: PartialFabProps = null,
     TransitionComponent: ComponentType[TransitionProps] = null,
     TransitionProps: TransitionProps = null,
     children: ReactNode = null,
@@ -100,12 +106,13 @@ object SpeedDialProps {
     icon: ReactNode = null,
     innerRef: Ref[_] | RefObject[_] = null,
     onClose: (/* event */ SyntheticEvent[js.Object, Event], /* key */ String) => Unit = null,
+    onOpen: /* event */ SyntheticEvent[js.Object, Event] => Unit = null,
     openIcon: ReactNode = null,
     style: CSSProperties = null,
     transitionDuration: Double | Anon_Appear = null
   ): SpeedDialProps = {
     val __obj = js.Dynamic.literal(ariaLabel = ariaLabel, open = open)
-    if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)
+    if (FabProps != null) __obj.updateDynamic("FabProps")(FabProps)
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -116,6 +123,7 @@ object SpeedDialProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

@@ -1,10 +1,10 @@
 package typings.atMaterialDashUiLab
 
-import typings.atMaterialDashUiCore.PartialClassNameMapButtonClassKey
+import typings.atMaterialDashUiCore.PartialClassNameMapFabClassKey
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypesNs.Color
 import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.atMaterialDashUiCore.buttonBaseTouchRippleMod.TouchRippleProps
-import typings.atMaterialDashUiCore.buttonButtonMod.ButtonProps
+import typings.atMaterialDashUiCore.fabFabMod.FabProps
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`inline`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.additions
@@ -13,15 +13,12 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.ascending
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.assertive
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.both
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.button
-import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.contained
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.copy
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.date
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.descending
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.dialog
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.execute
-import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.extendedFab
-import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.fab
-import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.flat
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.extended
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grammar
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grid
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.horizontal
@@ -38,13 +35,12 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.none
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.off
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.on
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.other
-import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.outlined
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.page
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.polite
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.popup
-import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.raised
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.removals
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.reset
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.round
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.small
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.spelling
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.step
@@ -79,8 +75,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/Button.ButtonProps> */
-trait PartialButtonProps extends js.Object {
+/* Inlined std.Partial<@material-ui/core.@material-ui/core/Fab.FabProps> */
+trait PartialFabProps extends js.Object {
   var TouchRippleProps: js.UndefOr[Partial[typings.atMaterialDashUiCore.buttonBaseTouchRippleMod.TouchRippleProps]] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
@@ -141,9 +137,9 @@ trait PartialButtonProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var classes: js.UndefOr[PartialClassNameMapButtonClassKey] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapFabClassKey] = js.undefined
   var color: js.UndefOr[Color] = js.undefined
-  var component: js.UndefOr[ReactType[ButtonProps]] = js.undefined
+  var component: js.UndefOr[ReactType[FabProps]] = js.undefined
   var contentEditable: js.UndefOr[Boolean] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
@@ -165,7 +161,6 @@ trait PartialButtonProps extends js.Object {
   var formMethod: js.UndefOr[String] = js.undefined
   var formNoValidate: js.UndefOr[Boolean] = js.undefined
   var formTarget: js.UndefOr[String] = js.undefined
-  var fullWidth: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   var hrefLang: js.UndefOr[String] = js.undefined
@@ -181,7 +176,6 @@ trait PartialButtonProps extends js.Object {
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
   var media: js.UndefOr[String] = js.undefined
-  var mini: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   var onAbortCapture: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
@@ -368,11 +362,11 @@ trait PartialButtonProps extends js.Object {
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
-  var variant: js.UndefOr[text | flat | outlined | contained | raised | fab | extendedFab] = js.undefined
+  var variant: js.UndefOr[round | extended] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
 }
 
-object PartialButtonProps {
+object PartialFabProps {
   @scala.inline
   def apply(
     TouchRippleProps: Partial[TouchRippleProps] = null,
@@ -435,9 +429,9 @@ object PartialButtonProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapButtonClassKey = null,
+    classes: PartialClassNameMapFabClassKey = null,
     color: Color = null,
-    component: ReactType[ButtonProps] = null,
+    component: ReactType[FabProps] = null,
     contentEditable: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -459,7 +453,6 @@ object PartialButtonProps {
     formMethod: String = null,
     formNoValidate: js.UndefOr[Boolean] = js.undefined,
     formTarget: String = null,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
     hrefLang: String = null,
@@ -475,7 +468,6 @@ object PartialButtonProps {
     itemType: String = null,
     lang: String = null,
     media: String = null,
-    mini: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onAbort: ReactEventHandler[HTMLElement] = null,
     onAnimationEnd: AnimationEventHandler[HTMLElement] = null,
@@ -581,9 +573,9 @@ object PartialButtonProps {
     typeof: String = null,
     unselectable: on | off = null,
     value: String | js.Array[String] | Double = null,
-    variant: text | flat | outlined | contained | raised | fab | extendedFab = null,
+    variant: round | extended = null,
     vocab: String = null
-  ): PartialButtonProps = {
+  ): PartialFabProps = {
     val __obj = js.Dynamic.literal()
     if (TouchRippleProps != null) __obj.updateDynamic("TouchRippleProps")(TouchRippleProps)
     if (about != null) __obj.updateDynamic("about")(about)
@@ -669,7 +661,6 @@ object PartialButtonProps {
     if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod)
     if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate)
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget)
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (href != null) __obj.updateDynamic("href")(href)
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang)
@@ -685,7 +676,6 @@ object PartialButtonProps {
     if (itemType != null) __obj.updateDynamic("itemType")(itemType)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (media != null) __obj.updateDynamic("media")(media)
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort)
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
@@ -793,7 +783,7 @@ object PartialButtonProps {
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)
-    __obj.asInstanceOf[PartialButtonProps]
+    __obj.asInstanceOf[PartialFabProps]
   }
 }
 

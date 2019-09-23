@@ -50,16 +50,10 @@ object atMaterialDashUiLabStrings {
   sealed trait `bottom-start` extends js.Object
   
   @js.native
-  sealed trait button extends SpeedDialActionClassKey
-  
-  @js.native
-  sealed trait buttonClosed extends SpeedDialActionClassKey
+  sealed trait button extends js.Object
   
   @js.native
   sealed trait circle extends SkeletonClassKey
-  
-  @js.native
-  sealed trait contained extends js.Object
   
   @js.native
   sealed trait content extends TreeItemClassKey
@@ -109,13 +103,15 @@ object atMaterialDashUiLabStrings {
   sealed trait expanded extends TreeItemClassKey
   
   @js.native
-  sealed trait extendedFab extends js.Object
+  sealed trait extended extends js.Object
   
   @js.native
-  sealed trait fab extends SpeedDialClassKey
+  sealed trait fab
+    extends SpeedDialActionClassKey
+       with SpeedDialClassKey
   
   @js.native
-  sealed trait flat extends js.Object
+  sealed trait fabClosed extends SpeedDialActionClassKey
   
   @js.native
   sealed trait focusVisible extends RatingClassKey
@@ -234,9 +230,6 @@ object atMaterialDashUiLabStrings {
   sealed trait other extends js.Object
   
   @js.native
-  sealed trait outlined extends js.Object
-  
-  @js.native
   sealed trait page extends js.Object
   
   @js.native
@@ -247,9 +240,6 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait pristine extends RatingClassKey
-  
-  @js.native
-  sealed trait raised extends js.Object
   
   @js.native
   sealed trait readOnly extends RatingClassKey
@@ -276,12 +266,14 @@ object atMaterialDashUiLabStrings {
   sealed trait root
     extends RatingClassKey
        with SkeletonClassKey
-       with SpeedDialActionClassKey
        with SpeedDialClassKey
        with SpeedDialIconClassKey
        with ToggleButtonClassKey
        with ToggleButtonGroupClassKey
        with TreeItemClassKey
+  
+  @js.native
+  sealed trait round extends js.Object
   
   @js.native
   sealed trait selected extends ToggleButtonClassKey
@@ -303,6 +295,15 @@ object atMaterialDashUiLabStrings {
   sealed trait spelling extends js.Object
   
   @js.native
+  sealed trait staticTooltip extends SpeedDialActionClassKey
+  
+  @js.native
+  sealed trait staticTooltipClosed extends SpeedDialActionClassKey
+  
+  @js.native
+  sealed trait staticTooltipLabel extends SpeedDialActionClassKey
+  
+  @js.native
   sealed trait step extends js.Object
   
   @js.native
@@ -313,6 +314,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait time extends js.Object
+  
+  @js.native
+  sealed trait tooltipPlacementLeft extends SpeedDialActionClassKey
   
   @js.native
   sealed trait top extends js.Object
@@ -362,11 +366,7 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
-  def buttonClosed: buttonClosed = "buttonClosed".asInstanceOf[buttonClosed]
-  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
-  def contained: contained = "contained".asInstanceOf[contained]
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
@@ -398,11 +398,11 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   @scala.inline
-  def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
+  def extended: extended = "extended".asInstanceOf[extended]
   @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
   @scala.inline
-  def flat: flat = "flat".asInstanceOf[flat]
+  def fabClosed: fabClosed = "fabClosed".asInstanceOf[fabClosed]
   @scala.inline
   def focusVisible: focusVisible = "focusVisible".asInstanceOf[focusVisible]
   @scala.inline
@@ -478,8 +478,6 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
-  def outlined: outlined = "outlined".asInstanceOf[outlined]
-  @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
@@ -487,8 +485,6 @@ object atMaterialDashUiLabStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def pristine: pristine = "pristine".asInstanceOf[pristine]
-  @scala.inline
-  def raised: raised = "raised".asInstanceOf[raised]
   @scala.inline
   def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   @scala.inline
@@ -506,6 +502,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def sizeLarge: sizeLarge = "sizeLarge".asInstanceOf[sizeLarge]
@@ -516,6 +514,12 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline
+  def staticTooltip: staticTooltip = "staticTooltip".asInstanceOf[staticTooltip]
+  @scala.inline
+  def staticTooltipClosed: staticTooltipClosed = "staticTooltipClosed".asInstanceOf[staticTooltipClosed]
+  @scala.inline
+  def staticTooltipLabel: staticTooltipLabel = "staticTooltipLabel".asInstanceOf[staticTooltipLabel]
+  @scala.inline
   def step: step = "step".asInstanceOf[step]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
@@ -523,6 +527,8 @@ object atMaterialDashUiLabStrings {
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def tooltipPlacementLeft: tooltipPlacementLeft = "tooltipPlacementLeft".asInstanceOf[tooltipPlacementLeft]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
