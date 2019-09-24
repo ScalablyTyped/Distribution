@@ -15,7 +15,7 @@ trait Anon_EndpointParamsMigrationsStartForOrgParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[MigrationsStartForOrgResponse]] = js.native
-  def apply(params: MigrationsStartForOrgParams): js.Promise[Response[MigrationsStartForOrgResponse]] = js.native
+  def apply(params: RequestOptions with MigrationsStartForOrgParams): js.Promise[Response[MigrationsStartForOrgResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

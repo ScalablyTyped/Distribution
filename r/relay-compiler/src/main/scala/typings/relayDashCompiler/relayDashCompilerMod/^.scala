@@ -1,6 +1,7 @@
 package typings.relayDashCompiler.relayDashCompilerMod
 
 import typings.graphql.graphqlMod.GraphQLSchema
+import typings.relayDashCompiler.libBinRelayCompilerMainMod.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var transformASTSchema: js.Function2[/* schema */ GraphQLSchema, /* transforms */ js.Array[String], GraphQLSchema] = js.native
+  def relayCompiler(config: Config): js.Promise[Unit] = js.native
 }
 

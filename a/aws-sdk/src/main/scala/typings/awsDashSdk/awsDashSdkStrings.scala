@@ -1499,6 +1499,8 @@ import typings.awsDashSdk.clientsRamMod._ResourceShareStatus
 import typings.awsDashSdk.clientsRamMod._ResourceStatus
 import typings.awsDashSdk.clientsRdsMod._ActivityStreamMode
 import typings.awsDashSdk.clientsRdsMod._ActivityStreamStatus
+import typings.awsDashSdk.clientsRdsdataserviceMod._DecimalReturnType
+import typings.awsDashSdk.clientsRedshiftMod._NodeConfigurationOptionsFilterName
 import typings.awsDashSdk.clientsRedshiftMod._ParameterApplyType
 import typings.awsDashSdk.clientsRedshiftMod._ReservedNodeOfferingType
 import typings.awsDashSdk.clientsRedshiftMod._ScheduleState
@@ -8191,6 +8193,9 @@ object awsDashSdkStrings {
   sealed trait DOTNET extends _LanguageType
   
   @js.native
+  sealed trait DOUBLE_OR_LONG extends _DecimalReturnType
+  
+  @js.native
   sealed trait DOWN extends _TelemetryStatus
   
   @js.native
@@ -9447,6 +9452,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait EssentialContainerExited extends _TaskStopCode
+  
+  @js.native
+  sealed trait EstimatedDiskUtilizationPercent extends _NodeConfigurationOptionsFilterName
   
   @js.native
   sealed trait EtagMismatch extends _DeploymentJobErrorCode
@@ -15266,6 +15274,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsEc2Mod._PaymentOption
   
   @js.native
+  sealed trait NodeType extends _NodeConfigurationOptionsFilterName
+  
+  @js.native
   sealed trait NodejsVersion extends _LayerAttributesKeys
   
   @js.native
@@ -15333,6 +15344,9 @@ object awsDashSdkStrings {
   sealed trait Number
     extends _ActionConfigurationPropertyType
        with _AttributeDataType
+  
+  @js.native
+  sealed trait NumberOfNodes extends _NodeConfigurationOptionsFilterName
   
   @js.native
   sealed trait NumberOfRetries extends _ProcessorParameterName
@@ -19400,7 +19414,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait STRING
-    extends _DynamoKeyType
+    extends _DecimalReturnType
+       with _DynamoKeyType
        with _FacetAttributeType
   
   @js.native
@@ -23017,6 +23032,10 @@ object awsDashSdkStrings {
   sealed trait beta extends js.Object
   
   @js.native
+  sealed trait between
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
+  
+  @js.native
   sealed trait bg extends _AnalysisSchemeLanguage
   
   @js.native
@@ -24312,6 +24331,10 @@ object awsDashSdkStrings {
   sealed trait endpointInService extends js.Object
   
   @js.native
+  sealed trait eq
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
+  
+  @js.native
   sealed trait error
     extends _ActivityStatus
        with _DiskSnapshotState
@@ -24676,6 +24699,10 @@ object awsDashSdkStrings {
   sealed trait gbk extends _CloudWatchLogsEncoding
   
   @js.native
+  sealed trait ge
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
+  
+  @js.native
   sealed trait gelf extends _LogDriver
   
   @js.native
@@ -24715,6 +24742,10 @@ object awsDashSdkStrings {
   sealed trait groupSet
     extends _InstanceAttributeName
        with _NetworkInterfaceAttribute
+  
+  @js.native
+  sealed trait gt
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
   
   @js.native
   sealed trait gzip extends _CompressionTypeValue
@@ -24995,6 +25026,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait important extends _ServiceUpdateSeverity
+  
+  @js.native
+  sealed trait in
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
   
   @js.native
   sealed trait `in-alarm` extends _ViolationEventType
@@ -25584,6 +25619,10 @@ object awsDashSdkStrings {
   sealed trait lb extends _LayerType
   
   @js.native
+  sealed trait le
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
+  
+  @js.native
   sealed trait leftEyeBrowLeft extends _LandmarkType
   
   @js.native
@@ -25669,6 +25708,10 @@ object awsDashSdkStrings {
   sealed trait lowestPrice
     extends _AllocationStrategy
        with _OnDemandAllocationStrategy
+  
+  @js.native
+  sealed trait lt
+    extends typings.awsDashSdk.clientsRedshiftMod._OperatorType
   
   @js.native
   sealed trait lucene extends _QueryParser
@@ -27320,6 +27363,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait restart extends _DeploymentCommandName
+  
+  @js.native
+  sealed trait `restore-cluster` extends js.Object
   
   @js.native
   sealed trait restoringToClassic extends _MoveStatus
@@ -31421,6 +31467,8 @@ object awsDashSdkStrings {
   @scala.inline
   def DOTNET: DOTNET = "DOTNET".asInstanceOf[DOTNET]
   @scala.inline
+  def DOUBLE_OR_LONG: DOUBLE_OR_LONG = "DOUBLE_OR_LONG".asInstanceOf[DOUBLE_OR_LONG]
+  @scala.inline
   def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
   @scala.inline
   def DOWNLOADING: DOWNLOADING = "DOWNLOADING".asInstanceOf[DOWNLOADING]
@@ -31980,6 +32028,8 @@ object awsDashSdkStrings {
   def Equals: Equals = "Equals".asInstanceOf[Equals]
   @scala.inline
   def EssentialContainerExited: EssentialContainerExited = "EssentialContainerExited".asInstanceOf[EssentialContainerExited]
+  @scala.inline
+  def EstimatedDiskUtilizationPercent: EstimatedDiskUtilizationPercent = "EstimatedDiskUtilizationPercent".asInstanceOf[EstimatedDiskUtilizationPercent]
   @scala.inline
   def EtagMismatch: EtagMismatch = "EtagMismatch".asInstanceOf[EtagMismatch]
   @scala.inline
@@ -34699,6 +34749,8 @@ object awsDashSdkStrings {
   @scala.inline
   def NoUpfront: NoUpfront = "NoUpfront".asInstanceOf[NoUpfront]
   @scala.inline
+  def NodeType: NodeType = "NodeType".asInstanceOf[NodeType]
+  @scala.inline
   def NodejsVersion: NodejsVersion = "NodejsVersion".asInstanceOf[NodejsVersion]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
@@ -34730,6 +34782,8 @@ object awsDashSdkStrings {
   def Not_Applicable: Not_Applicable = "Not_Applicable".asInstanceOf[Not_Applicable]
   @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
+  @scala.inline
+  def NumberOfNodes: NumberOfNodes = "NumberOfNodes".asInstanceOf[NumberOfNodes]
   @scala.inline
   def NumberOfRetries: NumberOfRetries = "NumberOfRetries".asInstanceOf[NumberOfRetries]
   @scala.inline
@@ -38489,6 +38543,8 @@ object awsDashSdkStrings {
   @scala.inline
   def beta: beta = "beta".asInstanceOf[beta]
   @scala.inline
+  def between: between = "between".asInstanceOf[between]
+  @scala.inline
   def bg: bg = "bg".asInstanceOf[bg]
   @scala.inline
   def big5: big5 = "big5".asInstanceOf[big5]
@@ -39141,6 +39197,8 @@ object awsDashSdkStrings {
   @scala.inline
   def endpointInService: endpointInService = "endpointInService".asInstanceOf[endpointInService]
   @scala.inline
+  def eq: eq = "eq".asInstanceOf[eq]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def es: es = "es".asInstanceOf[es]
@@ -39313,6 +39371,8 @@ object awsDashSdkStrings {
   @scala.inline
   def gbk: gbk = "gbk".asInstanceOf[gbk]
   @scala.inline
+  def ge: ge = "ge".asInstanceOf[ge]
+  @scala.inline
   def gelf: gelf = "gelf".asInstanceOf[gelf]
   @scala.inline
   def generalPurpose: generalPurpose = "generalPurpose".asInstanceOf[generalPurpose]
@@ -39334,6 +39394,8 @@ object awsDashSdkStrings {
   def group: group = "group".asInstanceOf[group]
   @scala.inline
   def groupSet: groupSet = "groupSet".asInstanceOf[groupSet]
+  @scala.inline
+  def gt: gt = "gt".asInstanceOf[gt]
   @scala.inline
   def gzip: gzip = "gzip".asInstanceOf[gzip]
   @scala.inline
@@ -39480,6 +39542,8 @@ object awsDashSdkStrings {
   def implicitDeny: implicitDeny = "implicitDeny".asInstanceOf[implicitDeny]
   @scala.inline
   def important: important = "important".asInstanceOf[important]
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
   @scala.inline
   def `in-alarm`: `in-alarm` = "in-alarm".asInstanceOf[`in-alarm`]
   @scala.inline
@@ -39705,6 +39769,8 @@ object awsDashSdkStrings {
   @scala.inline
   def lb: lb = "lb".asInstanceOf[lb]
   @scala.inline
+  def le: le = "le".asInstanceOf[le]
+  @scala.inline
   def leftEyeBrowLeft: leftEyeBrowLeft = "leftEyeBrowLeft".asInstanceOf[leftEyeBrowLeft]
   @scala.inline
   def leftEyeBrowRight: leftEyeBrowRight = "leftEyeBrowRight".asInstanceOf[leftEyeBrowRight]
@@ -39756,6 +39822,8 @@ object awsDashSdkStrings {
   def `lowest-price`: `lowest-price` = "lowest-price".asInstanceOf[`lowest-price`]
   @scala.inline
   def lowestPrice: lowestPrice = "lowestPrice".asInstanceOf[lowestPrice]
+  @scala.inline
+  def lt: lt = "lt".asInstanceOf[lt]
   @scala.inline
   def lucene: lucene = "lucene".asInstanceOf[lucene]
   @scala.inline
@@ -40570,6 +40638,8 @@ object awsDashSdkStrings {
   def resourceRecordSetsChanged: resourceRecordSetsChanged = "resourceRecordSetsChanged".asInstanceOf[resourceRecordSetsChanged]
   @scala.inline
   def restart: restart = "restart".asInstanceOf[restart]
+  @scala.inline
+  def `restore-cluster`: `restore-cluster` = "restore-cluster".asInstanceOf[`restore-cluster`]
   @scala.inline
   def restoringToClassic: restoringToClassic = "restoringToClassic".asInstanceOf[restoringToClassic]
   @scala.inline

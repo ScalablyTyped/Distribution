@@ -1,5 +1,6 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait ScalarField
   extends Field
      with IR
-     with Selection {
+     with Selection
+     with VisitNode {
   var alias: String
   var args: js.Array[Argument]
   var directives: js.Array[Directive]

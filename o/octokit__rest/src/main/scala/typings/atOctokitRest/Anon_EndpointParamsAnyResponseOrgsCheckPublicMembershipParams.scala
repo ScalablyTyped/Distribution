@@ -14,7 +14,7 @@ trait Anon_EndpointParamsAnyResponseOrgsCheckPublicMembershipParams extends js.O
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[AnyResponse] = js.native
-  def apply(params: OrgsCheckPublicMembershipParams): js.Promise[AnyResponse] = js.native
+  def apply(params: RequestOptions with OrgsCheckPublicMembershipParams): js.Promise[AnyResponse] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

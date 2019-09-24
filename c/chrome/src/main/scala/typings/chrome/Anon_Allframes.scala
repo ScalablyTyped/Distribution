@@ -12,6 +12,7 @@ trait Anon_Allframes extends js.Object {
   var include_globs: js.UndefOr[js.Array[String]] = js.undefined
   @JSName("js")
   var js_ : js.UndefOr[js.Array[String]] = js.undefined
+  var match_about_blank: js.UndefOr[Boolean] = js.undefined
   var matches: js.UndefOr[js.Array[String]] = js.undefined
   var run_at: js.UndefOr[String] = js.undefined
 }
@@ -25,6 +26,7 @@ object Anon_Allframes {
     exclude_matches: js.Array[String] = null,
     include_globs: js.Array[String] = null,
     js_ : js.Array[String] = null,
+    match_about_blank: js.UndefOr[Boolean] = js.undefined,
     matches: js.Array[String] = null,
     run_at: String = null
   ): Anon_Allframes = {
@@ -35,6 +37,7 @@ object Anon_Allframes {
     if (exclude_matches != null) __obj.updateDynamic("exclude_matches")(exclude_matches)
     if (include_globs != null) __obj.updateDynamic("include_globs")(include_globs)
     if (js_ != null) __obj.updateDynamic("js")(js_)
+    if (!js.isUndefined(match_about_blank)) __obj.updateDynamic("match_about_blank")(match_about_blank)
     if (matches != null) __obj.updateDynamic("matches")(matches)
     if (run_at != null) __obj.updateDynamic("run_at")(run_at)
     __obj.asInstanceOf[Anon_Allframes]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-shuffle"
-version := "1.0-dt-20190808Z-496261"
+version := "1.0-dt-20190923Z-c65a6a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

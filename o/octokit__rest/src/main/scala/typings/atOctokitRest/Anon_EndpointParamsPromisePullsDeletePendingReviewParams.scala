@@ -16,8 +16,9 @@ trait Anon_EndpointParamsPromisePullsDeletePendingReviewParams extends js.Object
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
-  def apply(params: PullsDeletePendingReviewParams): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
-  def apply(params: PullsDeletePendingReviewParamsDeprecatedNumber): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
+  def apply(
+    params: RequestOptions with (PullsDeletePendingReviewParams | PullsDeletePendingReviewParamsDeprecatedNumber)
+  ): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

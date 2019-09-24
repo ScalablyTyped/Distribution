@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposGetPagesParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposGetPagesResponse]] = js.native
-  def apply(params: ReposGetPagesParams): js.Promise[Response[ReposGetPagesResponse]] = js.native
+  def apply(params: RequestOptions with ReposGetPagesParams): js.Promise[Response[ReposGetPagesResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

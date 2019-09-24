@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposCreateDeploymentStatusParams extends js.Obj
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposCreateDeploymentStatusResponse]] = js.native
-  def apply(params: ReposCreateDeploymentStatusParams): js.Promise[Response[ReposCreateDeploymentStatusResponse]] = js.native
+  def apply(params: RequestOptions with ReposCreateDeploymentStatusParams): js.Promise[Response[ReposCreateDeploymentStatusResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

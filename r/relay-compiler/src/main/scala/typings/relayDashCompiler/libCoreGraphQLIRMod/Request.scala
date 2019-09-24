@@ -1,12 +1,14 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request
   extends GeneratedDefinition
-     with IR {
+     with IR
+     with VisitNode {
   var fragment: Fragment
   var id: js.UndefOr[String] = js.undefined
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.Request

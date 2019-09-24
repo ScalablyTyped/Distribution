@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposListProtectedBranchTeamRestrictionsParams e
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposListProtectedBranchTeamRestrictionsResponse]] = js.native
-  def apply(params: ReposListProtectedBranchTeamRestrictionsParams): js.Promise[Response[ReposListProtectedBranchTeamRestrictionsResponse]] = js.native
+  def apply(params: RequestOptions with ReposListProtectedBranchTeamRestrictionsParams): js.Promise[Response[ReposListProtectedBranchTeamRestrictionsResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

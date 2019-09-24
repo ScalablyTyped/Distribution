@@ -14,7 +14,7 @@ trait Anon_EndpointParamsActivityListReceivedPublicEventsForUserParams extends j
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[AnyResponse] = js.native
-  def apply(params: ActivityListReceivedPublicEventsForUserParams): js.Promise[AnyResponse] = js.native
+  def apply(params: RequestOptions with ActivityListReceivedPublicEventsForUserParams): js.Promise[AnyResponse] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

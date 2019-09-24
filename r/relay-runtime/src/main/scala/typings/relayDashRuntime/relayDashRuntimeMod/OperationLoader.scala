@@ -1,5 +1,6 @@
 package typings.relayDashRuntime.relayDashRuntimeMod
 
+import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationSplitOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

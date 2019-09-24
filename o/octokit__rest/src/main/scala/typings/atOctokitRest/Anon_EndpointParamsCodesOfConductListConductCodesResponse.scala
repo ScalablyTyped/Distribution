@@ -15,7 +15,7 @@ trait Anon_EndpointParamsCodesOfConductListConductCodesResponse extends js.Objec
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[CodesOfConductListConductCodesResponse]] = js.native
-  def apply(params: EmptyParams): js.Promise[Response[CodesOfConductListConductCodesResponse]] = js.native
+  def apply(params: RequestOptions with EmptyParams): js.Promise[Response[CodesOfConductListConductCodesResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

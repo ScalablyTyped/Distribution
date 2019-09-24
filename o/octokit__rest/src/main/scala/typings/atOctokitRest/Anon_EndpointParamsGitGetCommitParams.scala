@@ -15,7 +15,7 @@ trait Anon_EndpointParamsGitGetCommitParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[GitGetCommitResponse]] = js.native
-  def apply(params: GitGetCommitParams): js.Promise[Response[GitGetCommitResponse]] = js.native
+  def apply(params: RequestOptions with GitGetCommitParams): js.Promise[Response[GitGetCommitResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

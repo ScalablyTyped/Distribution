@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-serverless-express"
-version := "3.3-dt-20190506Z-efb654"
+version := "3.3-dt-20190506Z-edcd4e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20190722Z-bbb5ae",
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20190923Z-ae4527",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-8ff114",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-090bd5",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-915bef",

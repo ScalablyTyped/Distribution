@@ -1,5 +1,6 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait InlineDataFragmentSpread
   extends IR
      with Node
-     with Selection {
+     with Selection
+     with VisitNode {
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.InlineDataFragmentSpread
   var loc: Location
   var metadata: Metadata

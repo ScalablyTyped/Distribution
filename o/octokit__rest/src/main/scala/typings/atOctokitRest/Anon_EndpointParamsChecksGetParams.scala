@@ -15,7 +15,7 @@ trait Anon_EndpointParamsChecksGetParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ChecksGetResponse]] = js.native
-  def apply(params: ChecksGetParams): js.Promise[Response[ChecksGetResponse]] = js.native
+  def apply(params: RequestOptions with ChecksGetParams): js.Promise[Response[ChecksGetResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

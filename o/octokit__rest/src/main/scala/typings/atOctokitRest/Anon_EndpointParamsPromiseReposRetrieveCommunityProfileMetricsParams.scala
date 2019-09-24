@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposRetrieveCommunityProfileMetricsParams exten
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposRetrieveCommunityProfileMetricsResponse]] = js.native
-  def apply(params: ReposRetrieveCommunityProfileMetricsParams): js.Promise[Response[ReposRetrieveCommunityProfileMetricsResponse]] = js.native
+  def apply(params: RequestOptions with ReposRetrieveCommunityProfileMetricsParams): js.Promise[Response[ReposRetrieveCommunityProfileMetricsResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

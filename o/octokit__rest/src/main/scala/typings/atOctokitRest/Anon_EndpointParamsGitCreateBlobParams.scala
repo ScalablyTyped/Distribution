@@ -15,7 +15,7 @@ trait Anon_EndpointParamsGitCreateBlobParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[GitCreateBlobResponse]] = js.native
-  def apply(params: GitCreateBlobParams): js.Promise[Response[GitCreateBlobResponse]] = js.native
+  def apply(params: RequestOptions with GitCreateBlobParams): js.Promise[Response[GitCreateBlobResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

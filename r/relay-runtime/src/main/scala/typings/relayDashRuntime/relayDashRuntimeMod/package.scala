@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 package object relayDashRuntimeMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.relayDashRuntime.Anon_FragmentReference
+  import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationSelectableNode
+  import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
+  import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderSelectableNode
+  import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+  import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.RequestParameters
   import typings.std.Blob
   import typings.std.Error
   import typings.std.File
@@ -32,10 +37,10 @@ package object relayDashRuntimeMod {
   type FragmentReference = scala.Nothing with Anon_FragmentReference
   type FragmentSpecResults = StringDictionary[js.Any]
   /* Rewritten from type alias, can be one of: 
-    - typings.relayDashRuntime.relayDashRuntimeMod.ReaderFragment
-    - typings.relayDashRuntime.relayDashRuntimeMod.ConcreteRequest
+    - typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
+    - typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
     - js.Function0[
-  typings.relayDashRuntime.relayDashRuntimeMod.ReaderFragment | typings.relayDashRuntime.relayDashRuntimeMod.ConcreteRequest]
+  typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment | typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest]
     - typings.relayDashRuntime.Anon_Modern
   */
   type GraphQLTaggedNode = _GraphQLTaggedNode | (js.Function0[ReaderFragment | ConcreteRequest])

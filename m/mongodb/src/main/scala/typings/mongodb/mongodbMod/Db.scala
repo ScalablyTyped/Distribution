@@ -39,6 +39,7 @@ class Db protected () extends EventEmitter {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#collection */
   def collection[TSchema](name: String): Collection[TSchema] = js.native
   def collection[TSchema](name: String, callback: MongoCallback[Collection[TSchema]]): Collection[TSchema] = js.native
+  def collection[TSchema](name: String, options: DbCollectionOptions): Collection[TSchema] = js.native
   def collection[TSchema](name: String, options: DbCollectionOptions, callback: MongoCallback[Collection[TSchema]]): Collection[TSchema] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#collections */
   def collections(): js.Promise[js.Array[Collection[Default]]] = js.native

@@ -16,8 +16,7 @@ trait Anon_EndpointParamsPromisePullsListCommitsParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[PullsListCommitsResponse]] = js.native
-  def apply(params: PullsListCommitsParams): js.Promise[Response[PullsListCommitsResponse]] = js.native
-  def apply(params: PullsListCommitsParamsDeprecatedNumber): js.Promise[Response[PullsListCommitsResponse]] = js.native
+  def apply(params: RequestOptions with (PullsListCommitsParams | PullsListCommitsParamsDeprecatedNumber)): js.Promise[Response[PullsListCommitsResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

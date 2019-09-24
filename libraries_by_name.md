@@ -308,6 +308,7 @@
 | [argparse](./a/argparse) | Very powerful CLI arguments parser. Native port of | cli, parser, argparse, option, args |
 | [args](./a/args) | Minimal toolkit for building CLIs | cli, command, arguments, util, bin, commander, nanomist |
 | [argv](./a/argv) | CLI Argument Parser | cli, argv, options |
+| [aria-query](./a/aria-query) | Programmatic access to the ARIA specification | accessibility, ARIA |
 | [arr-diff](./a/arr-diff) | Returns an array with only the unique values from  | arr, array, array differ, array-differ, diff, differ, difference |
 | [arr-union](./a/arr-union) | Combines a list of arrays, returning a single arra | add, append, array, arrays, combine, concat, extend, union, uniq, unique, util, utility, utils |
 | [array-binarysearch_dot_cl](./a/array-binarysearch_dot_closest) | Get index of closest value in sorted array. | array, binary, search, closest |
@@ -4698,6 +4699,7 @@
 | [object-diff](./o/object-diff) | Get the diff from objectA to objectB | object, diff, patch |
 | [object-hash](./o/object-hash) | Generate hashes from javascript objects in node an | object, hash, sha1, md5 |
 | [object-inspect](./o/object-inspect) | string representations of objects in node and the  | inspect, util.inspect, object, stringify, pretty |
+| [object-joiner](./o/object-joiner) | A tiny utility that merges JavaScript objects by b | javascript, object, merge, join, combine |
 | [object-keys](./o/object-keys) | An Object.keys replacement, in case Object.keys is | Object.keys, keys, ES5, shim |
 | [object-keys-mapping](./o/object-keys-mapping) | mapping object keys | mapping, object, keys |
 | [object-map](./o/object-map) | Map a function over some Object's values to produc | object, map, functional |
@@ -5186,6 +5188,7 @@
 | [promise-map-limit](./p/promise-map-limit) | Map an array n items at a time with promises | promise, limit, limited, concurrency, throttle, rate, batch, ratelimit, queue, async, await, promises |
 | [promise-memoize](./p/promise-memoize) | Memoize promise-returning functions. Includes cach | promise, memoize, cache |
 | [promise-pg](./p/promise-pg) | Promise wrapper for node-postgres | postgres, promise |
+| [promise-poller](./p/promise-poller) | A basic poller built on top of promises | promise, promises, poller, polling, poll, timeout, ajax |
 | [promise-polyfill](./p/promise-polyfill) | Lightweight promise polyfill. A+ compliant | promise, promise-polyfill, ES6, promises-aplus |
 | [promise-pool](./p/promise-pool) | just another simple task pool based on promise (Q) | task, pool, promise, concurrency |
 | [promise-queue](./p/promise-queue) | Promise-based queue | - |
@@ -5382,6 +5385,7 @@
 | [rdflib](./r/rdflib) | an RDF library for node.js. Suitable for client an | linkeddata, linked data, rdf, rdfa, turtle, semantic, web, read-write web |
 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F | - |
 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization | react, redux, reselect, memoize, cache |
+| [re2](./r/re2) | Bindings for RE2: fast, safe alternative to backtr | RegExp, RegEx, text processing, PCRE alternative |
 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages. | - |
 | [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog. | - |
 | [reach__auto-id](./r/reach__auto-id) | Autogenerate IDs to facilitate WAI-ARIA and server | - |
@@ -6566,6 +6570,7 @@
 | [speakingurl](./s/speakingurl) | Generate a slug – transliteration with a lot of op | slug, slugify, speakingurl, transliteration, permalink, seo, url, nice url, static url, clean url, pretty url, nice looking url, user friendly url, seo friendly url |
 | [spectacle](./s/spectacle) | ReactJS Powered Presentation Framework | - |
 | [spected](./s/spected) | Validation Library | Validation, Deeply Nested Validation Rules, Forms |
+| [spectrogram](./s/spectrogram) | Audio spectrogram in canvas. | audio, spectrogram, canvas |
 | [spectrum](./s/spectrum) | JavaScript Template Library | - |
 | [spellchecker](./s/spellchecker) | Bindings to native spellchecker | - |
 | [spex](./s/spex) | Specialized Promise Extensions | promise, throttle, throttling, load balancing |

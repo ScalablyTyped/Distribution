@@ -46,6 +46,7 @@ import typings.atOctokitRest.atOctokitRestMod.ActivityStarRepoParams
 import typings.atOctokitRest.atOctokitRestMod.ActivityUnstarRepoParams
 import typings.atOctokitRest.atOctokitRestMod.AnyResponse
 import typings.atOctokitRest.atOctokitRestMod.EmptyParams
+import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -195,38 +196,38 @@ trait Anon_CheckStarringRepo extends js.Object {
     * Requires for the user to be authenticated.
     */
   def checkStarringRepo(): js.Promise[AnyResponse] = js.native
-  def checkStarringRepo(params: ActivityCheckStarringRepoParams): js.Promise[AnyResponse] = js.native
+  def checkStarringRepo(params: RequestOptions with ActivityCheckStarringRepoParams): js.Promise[AnyResponse] = js.native
   /**
     * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://developer.github.com/v3/activity/watching/#set-a-repository-subscription).
     */
   def deleteRepoSubscription(): js.Promise[AnyResponse] = js.native
-  def deleteRepoSubscription(params: ActivityDeleteRepoSubscriptionParams): js.Promise[AnyResponse] = js.native
+  def deleteRepoSubscription(params: RequestOptions with ActivityDeleteRepoSubscriptionParams): js.Promise[AnyResponse] = js.native
   /**
     * Mutes all future notifications for a conversation until you comment on the thread or get **@mention**ed.
     */
   def deleteThreadSubscription(): js.Promise[AnyResponse] = js.native
-  def deleteThreadSubscription(params: ActivityDeleteThreadSubscriptionParams): js.Promise[AnyResponse] = js.native
+  def deleteThreadSubscription(params: RequestOptions with ActivityDeleteThreadSubscriptionParams): js.Promise[AnyResponse] = js.native
   def getRepoSubscription(): js.Promise[Response[ActivityGetRepoSubscriptionResponse]] = js.native
-  def getRepoSubscription(params: ActivityGetRepoSubscriptionParams): js.Promise[Response[ActivityGetRepoSubscriptionResponse]] = js.native
+  def getRepoSubscription(params: RequestOptions with ActivityGetRepoSubscriptionParams): js.Promise[Response[ActivityGetRepoSubscriptionResponse]] = js.native
   def getThread(): js.Promise[Response[ActivityGetThreadResponse]] = js.native
-  def getThread(params: ActivityGetThreadParams): js.Promise[Response[ActivityGetThreadResponse]] = js.native
+  def getThread(params: RequestOptions with ActivityGetThreadParams): js.Promise[Response[ActivityGetThreadResponse]] = js.native
   /**
     * This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://developer.github.com/v3/activity/watching/#get-a-repository-subscription).
     *
     * Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
     */
   def getThreadSubscription(): js.Promise[Response[ActivityGetThreadSubscriptionResponse]] = js.native
-  def getThreadSubscription(params: ActivityGetThreadSubscriptionParams): js.Promise[Response[ActivityGetThreadSubscriptionResponse]] = js.native
+  def getThreadSubscription(params: RequestOptions with ActivityGetThreadSubscriptionParams): js.Promise[Response[ActivityGetThreadSubscriptionResponse]] = js.native
   /**
     * This is the user's organization dashboard. You must be authenticated as the user to view this.
     */
   def listEventsForOrg(): js.Promise[AnyResponse] = js.native
-  def listEventsForOrg(params: ActivityListEventsForOrgParams): js.Promise[AnyResponse] = js.native
+  def listEventsForOrg(params: RequestOptions with ActivityListEventsForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events.
     */
   def listEventsForUser(): js.Promise[AnyResponse] = js.native
-  def listEventsForUser(params: ActivityListEventsForUserParams): js.Promise[AnyResponse] = js.native
+  def listEventsForUser(params: RequestOptions with ActivityListEventsForUserParams): js.Promise[AnyResponse] = js.native
   /**
     * GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:
     *
@@ -241,93 +242,93 @@ trait Anon_CheckStarringRepo extends js.Object {
     * **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://developer.github.com/v3/#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
     */
   def listFeeds(): js.Promise[Response[ActivityListFeedsResponse]] = js.native
-  def listFeeds(params: EmptyParams): js.Promise[Response[ActivityListFeedsResponse]] = js.native
+  def listFeeds(params: RequestOptions with EmptyParams): js.Promise[Response[ActivityListFeedsResponse]] = js.native
   /**
     * List all notifications for the current user, sorted by most recently updated.
     *
     * The following example uses the `since` parameter to list notifications that have been updated after the specified time.
     */
   def listNotifications(): js.Promise[Response[ActivityListNotificationsResponse]] = js.native
-  def listNotifications(params: ActivityListNotificationsParams): js.Promise[Response[ActivityListNotificationsResponse]] = js.native
+  def listNotifications(params: RequestOptions with ActivityListNotificationsParams): js.Promise[Response[ActivityListNotificationsResponse]] = js.native
   /**
     * List all notifications for the current user.
     */
   def listNotificationsForRepo(): js.Promise[Response[ActivityListNotificationsForRepoResponse]] = js.native
-  def listNotificationsForRepo(params: ActivityListNotificationsForRepoParams): js.Promise[Response[ActivityListNotificationsForRepoResponse]] = js.native
+  def listNotificationsForRepo(params: RequestOptions with ActivityListNotificationsForRepoParams): js.Promise[Response[ActivityListNotificationsForRepoResponse]] = js.native
   /**
     * We delay the public events feed by five minutes, which means the most recent event returned by the public events API actually occurred at least five minutes ago.
     */
   def listPublicEvents(): js.Promise[AnyResponse] = js.native
-  def listPublicEvents(params: ActivityListPublicEventsParams): js.Promise[AnyResponse] = js.native
+  def listPublicEvents(params: RequestOptions with ActivityListPublicEventsParams): js.Promise[AnyResponse] = js.native
   def listPublicEventsForOrg(): js.Promise[AnyResponse] = js.native
-  def listPublicEventsForOrg(params: ActivityListPublicEventsForOrgParams): js.Promise[AnyResponse] = js.native
+  def listPublicEventsForOrg(params: RequestOptions with ActivityListPublicEventsForOrgParams): js.Promise[AnyResponse] = js.native
   def listPublicEventsForRepoNetwork(): js.Promise[AnyResponse] = js.native
-  def listPublicEventsForRepoNetwork(params: ActivityListPublicEventsForRepoNetworkParams): js.Promise[AnyResponse] = js.native
+  def listPublicEventsForRepoNetwork(params: RequestOptions with ActivityListPublicEventsForRepoNetworkParams): js.Promise[AnyResponse] = js.native
   def listPublicEventsForUser(): js.Promise[AnyResponse] = js.native
-  def listPublicEventsForUser(params: ActivityListPublicEventsForUserParams): js.Promise[AnyResponse] = js.native
+  def listPublicEventsForUser(params: RequestOptions with ActivityListPublicEventsForUserParams): js.Promise[AnyResponse] = js.native
   /**
     * These are events that you've received by watching repos and following users. If you are authenticated as the given user, you will see private events. Otherwise, you'll only see public events.
     */
   def listReceivedEventsForUser(): js.Promise[AnyResponse] = js.native
-  def listReceivedEventsForUser(params: ActivityListReceivedEventsForUserParams): js.Promise[AnyResponse] = js.native
+  def listReceivedEventsForUser(params: RequestOptions with ActivityListReceivedEventsForUserParams): js.Promise[AnyResponse] = js.native
   def listReceivedPublicEventsForUser(): js.Promise[AnyResponse] = js.native
-  def listReceivedPublicEventsForUser(params: ActivityListReceivedPublicEventsForUserParams): js.Promise[AnyResponse] = js.native
+  def listReceivedPublicEventsForUser(params: RequestOptions with ActivityListReceivedPublicEventsForUserParams): js.Promise[AnyResponse] = js.native
   def listRepoEvents(): js.Promise[AnyResponse] = js.native
-  def listRepoEvents(params: ActivityListRepoEventsParams): js.Promise[AnyResponse] = js.native
+  def listRepoEvents(params: RequestOptions with ActivityListRepoEventsParams): js.Promise[AnyResponse] = js.native
   /**
     * You can also find out _when_ stars were created by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   def listReposStarredByAuthenticatedUser(): js.Promise[Response[ActivityListReposStarredByAuthenticatedUserResponse]] = js.native
-  def listReposStarredByAuthenticatedUser(params: ActivityListReposStarredByAuthenticatedUserParams): js.Promise[Response[ActivityListReposStarredByAuthenticatedUserResponse]] = js.native
+  def listReposStarredByAuthenticatedUser(params: RequestOptions with ActivityListReposStarredByAuthenticatedUserParams): js.Promise[Response[ActivityListReposStarredByAuthenticatedUserResponse]] = js.native
   /**
     * You can also find out _when_ stars were created by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   def listReposStarredByUser(): js.Promise[Response[ActivityListReposStarredByUserResponse]] = js.native
-  def listReposStarredByUser(params: ActivityListReposStarredByUserParams): js.Promise[Response[ActivityListReposStarredByUserResponse]] = js.native
+  def listReposStarredByUser(params: RequestOptions with ActivityListReposStarredByUserParams): js.Promise[Response[ActivityListReposStarredByUserResponse]] = js.native
   def listReposWatchedByUser(): js.Promise[Response[ActivityListReposWatchedByUserResponse]] = js.native
-  def listReposWatchedByUser(params: ActivityListReposWatchedByUserParams): js.Promise[Response[ActivityListReposWatchedByUserResponse]] = js.native
+  def listReposWatchedByUser(params: RequestOptions with ActivityListReposWatchedByUserParams): js.Promise[Response[ActivityListReposWatchedByUserResponse]] = js.native
   /**
     * You can also find out _when_ stars were created by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   def listStargazersForRepo(): js.Promise[Response[ActivityListStargazersForRepoResponse]] = js.native
-  def listStargazersForRepo(params: ActivityListStargazersForRepoParams): js.Promise[Response[ActivityListStargazersForRepoResponse]] = js.native
+  def listStargazersForRepo(params: RequestOptions with ActivityListStargazersForRepoParams): js.Promise[Response[ActivityListStargazersForRepoResponse]] = js.native
   def listWatchedReposForAuthenticatedUser(): js.Promise[Response[ActivityListWatchedReposForAuthenticatedUserResponse]] = js.native
-  def listWatchedReposForAuthenticatedUser(params: ActivityListWatchedReposForAuthenticatedUserParams): js.Promise[Response[ActivityListWatchedReposForAuthenticatedUserResponse]] = js.native
+  def listWatchedReposForAuthenticatedUser(params: RequestOptions with ActivityListWatchedReposForAuthenticatedUserParams): js.Promise[Response[ActivityListWatchedReposForAuthenticatedUserResponse]] = js.native
   def listWatchersForRepo(): js.Promise[Response[ActivityListWatchersForRepoResponse]] = js.native
-  def listWatchersForRepo(params: ActivityListWatchersForRepoParams): js.Promise[Response[ActivityListWatchersForRepoResponse]] = js.native
+  def listWatchersForRepo(params: RequestOptions with ActivityListWatchersForRepoParams): js.Promise[Response[ActivityListWatchersForRepoResponse]] = js.native
   /**
     * Marking a notification as "read" removes it from the [default view on GitHub](https://github.com/notifications). If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List your notifications](https://developer.github.com/v3/activity/notifications/#list-your-notifications) endpoint and pass the query parameter `all=false`.
     */
   def markAsRead(): js.Promise[AnyResponse] = js.native
-  def markAsRead(params: ActivityMarkAsReadParams): js.Promise[AnyResponse] = js.native
+  def markAsRead(params: RequestOptions with ActivityMarkAsReadParams): js.Promise[AnyResponse] = js.native
   /**
     * Marking all notifications in a repository as "read" removes them from the [default view on GitHub](https://github.com/notifications). If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List your notifications in a repository](https://developer.github.com/v3/activity/notifications/#list-your-notifications-in-a-repository) endpoint and pass the query parameter `all=false`.
     */
   def markNotificationsAsReadForRepo(): js.Promise[AnyResponse] = js.native
-  def markNotificationsAsReadForRepo(params: ActivityMarkNotificationsAsReadForRepoParams): js.Promise[AnyResponse] = js.native
+  def markNotificationsAsReadForRepo(params: RequestOptions with ActivityMarkNotificationsAsReadForRepoParams): js.Promise[AnyResponse] = js.native
   def markThreadAsRead(): js.Promise[AnyResponse] = js.native
-  def markThreadAsRead(params: ActivityMarkThreadAsReadParams): js.Promise[AnyResponse] = js.native
+  def markThreadAsRead(params: RequestOptions with ActivityMarkThreadAsReadParams): js.Promise[AnyResponse] = js.native
   /**
     * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://developer.github.com/v3/activity/watching/#delete-a-repository-subscription) completely.
     */
   def setRepoSubscription(): js.Promise[Response[ActivitySetRepoSubscriptionResponse]] = js.native
-  def setRepoSubscription(params: ActivitySetRepoSubscriptionParams): js.Promise[Response[ActivitySetRepoSubscriptionResponse]] = js.native
+  def setRepoSubscription(params: RequestOptions with ActivitySetRepoSubscriptionParams): js.Promise[Response[ActivitySetRepoSubscriptionResponse]] = js.native
   /**
     * This lets you subscribe or unsubscribe from a conversation.
     */
   def setThreadSubscription(): js.Promise[Response[ActivitySetThreadSubscriptionResponse]] = js.native
-  def setThreadSubscription(params: ActivitySetThreadSubscriptionParams): js.Promise[Response[ActivitySetThreadSubscriptionResponse]] = js.native
+  def setThreadSubscription(params: RequestOptions with ActivitySetThreadSubscriptionParams): js.Promise[Response[ActivitySetThreadSubscriptionResponse]] = js.native
   /**
     * Requires for the user to be authenticated.
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   def starRepo(): js.Promise[AnyResponse] = js.native
-  def starRepo(params: ActivityStarRepoParams): js.Promise[AnyResponse] = js.native
+  def starRepo(params: RequestOptions with ActivityStarRepoParams): js.Promise[AnyResponse] = js.native
   /**
     * Requires for the user to be authenticated.
     */
   def unstarRepo(): js.Promise[AnyResponse] = js.native
-  def unstarRepo(params: ActivityUnstarRepoParams): js.Promise[AnyResponse] = js.native
+  def unstarRepo(params: RequestOptions with ActivityUnstarRepoParams): js.Promise[AnyResponse] = js.native
 }
 

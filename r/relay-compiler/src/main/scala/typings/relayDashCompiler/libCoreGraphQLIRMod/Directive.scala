@@ -1,10 +1,13 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Directive extends IR {
+trait Directive
+  extends IR
+     with VisitNode {
   var args: js.Array[Argument]
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.Directive
   var loc: Location

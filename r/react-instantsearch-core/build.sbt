@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch-core"
-version := "5.2-dt-20190605Z-e4d50a"
+version := "5.2-dt-20190605Z-f1afe8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "algoliasearch" % "3.34.0-dt-20190916Z-9dffbe",
-  "org.scalablytyped" %%% "algoliasearch-helper" % "2.26-dt-20190524Z-ea9a71",
+  "org.scalablytyped" %%% "algoliasearch" % "3.34.0-dt-20190923Z-23ed7a",
+  "org.scalablytyped" %%% "algoliasearch-helper" % "2.26-dt-20190524Z-f643bb",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",

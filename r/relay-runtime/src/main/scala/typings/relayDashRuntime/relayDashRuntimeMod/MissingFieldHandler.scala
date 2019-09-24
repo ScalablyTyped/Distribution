@@ -1,5 +1,7 @@
 package typings.relayDashRuntime.relayDashRuntimeMod
 
+import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationLinkedField
+import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationScalarField
 import typings.relayDashRuntime.relayDashRuntimeStrings.linked
 import typings.relayDashRuntime.relayDashRuntimeStrings.pluralLinked
 import typings.relayDashRuntime.relayDashRuntimeStrings.scalar

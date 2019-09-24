@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposListBranchesForHeadCommitParams extends js.
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposListBranchesForHeadCommitResponse]] = js.native
-  def apply(params: ReposListBranchesForHeadCommitParams): js.Promise[Response[ReposListBranchesForHeadCommitResponse]] = js.native
+  def apply(params: RequestOptions with ReposListBranchesForHeadCommitParams): js.Promise[Response[ReposListBranchesForHeadCommitResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

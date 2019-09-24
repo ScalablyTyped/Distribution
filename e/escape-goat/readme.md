@@ -1,7 +1,7 @@
 
 # Scala.js typings for escape-goat
 
-Typings are for version 2.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 Escape a string for use in HTML or the inverse

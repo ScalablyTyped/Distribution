@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ember__routing"
-version := "3.0-dt-20190405Z-9c5546"
+version := "3.0-dt-20190405Z-2c04e0"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20190213Z-f31d17",
+  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20190923Z-f31d17",
   "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-7333ad",
   "org.scalablytyped" %%% "ember__object" % "3.1-dt-20190611Z-062b53",
   "org.scalablytyped" %%% "ember__service" % "3.0-dt-20190503Z-a81d9c",

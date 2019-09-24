@@ -1,6 +1,7 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
 import typings.graphql.typeDefinitionMod.GraphQLOutputType
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ trait ConnectionField
   extends Field
      with IR
      with Node
-     with Selection {
+     with Selection
+     with VisitNode {
   var alias: String
   var args: js.Array[Argument]
   var directives: js.Array[Directive]

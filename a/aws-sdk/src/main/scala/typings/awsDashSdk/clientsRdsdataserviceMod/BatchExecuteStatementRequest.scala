@@ -30,11 +30,7 @@ trait BatchExecuteStatementRequest extends js.Object {
     */
   var sql: SqlStatement
   /**
-    * The identifier of a transaction that was started by using the
-    BeginTransaction operation. Specify the transaction ID of the
-    transaction that you want to include the SQL statement in.
-    If the SQL statement is not part of a transaction, don't set this
-    parameter.
+    * The identifier of a transaction that was started by using the BeginTransaction operation. Specify the transaction ID of the transaction that you want to include the SQL statement in. If the SQL statement is not part of a transaction, don't set this parameter.
     */
   var transactionId: js.UndefOr[Id] = js.undefined
 }

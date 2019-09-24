@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposGetUsersWithAccessToProtectedBranchParams e
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposGetUsersWithAccessToProtectedBranchResponse]] = js.native
-  def apply(params: ReposGetUsersWithAccessToProtectedBranchParams): js.Promise[Response[ReposGetUsersWithAccessToProtectedBranchResponse]] = js.native
+  def apply(params: RequestOptions with ReposGetUsersWithAccessToProtectedBranchParams): js.Promise[Response[ReposGetUsersWithAccessToProtectedBranchResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

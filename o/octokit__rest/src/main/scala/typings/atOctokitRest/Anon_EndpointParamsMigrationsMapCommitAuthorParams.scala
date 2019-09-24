@@ -15,7 +15,7 @@ trait Anon_EndpointParamsMigrationsMapCommitAuthorParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[MigrationsMapCommitAuthorResponse]] = js.native
-  def apply(params: MigrationsMapCommitAuthorParams): js.Promise[Response[MigrationsMapCommitAuthorResponse]] = js.native
+  def apply(params: RequestOptions with MigrationsMapCommitAuthorParams): js.Promise[Response[MigrationsMapCommitAuthorResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

@@ -54,7 +54,7 @@ class Tree () extends js.Object {
   /**
     * Get an entry at a path. Unlike by name, this takes a fully qualified path, like /foo/bar/baz.javascript
     */
-  def getEntry(filePath: String): TreeEntry = js.native
+  def getEntry(filePath: String): js.Promise[TreeEntry] = js.native
   def id(): Oid = js.native
   def owner(): Repository = js.native
   /**

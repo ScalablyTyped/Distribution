@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chrome"
-version := "0.0-unknown-dt-20190805Z-a955d3"
+version := "0.0-unknown-dt-20190923Z-aedc46"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

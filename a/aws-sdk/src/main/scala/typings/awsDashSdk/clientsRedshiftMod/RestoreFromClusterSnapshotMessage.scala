@@ -74,6 +74,10 @@ trait RestoreFromClusterSnapshotMessage extends js.Object {
     */
   var NodeType: js.UndefOr[String] = js.undefined
   /**
+    * The number of nodes specified when provisioning the restored cluster.
+    */
+  var NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined
+  /**
     * The AWS customer account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
     */
   var OwnerAccount: js.UndefOr[String] = js.undefined
@@ -128,6 +132,7 @@ object RestoreFromClusterSnapshotMessage {
     MaintenanceTrackName: String = null,
     ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     NodeType: String = null,
+    NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
     OwnerAccount: String = null,
     Port: js.UndefOr[IntegerOptional] = js.undefined,
     PreferredMaintenanceWindow: String = null,
@@ -153,6 +158,7 @@ object RestoreFromClusterSnapshotMessage {
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName)
     if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
     if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount)
     if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)

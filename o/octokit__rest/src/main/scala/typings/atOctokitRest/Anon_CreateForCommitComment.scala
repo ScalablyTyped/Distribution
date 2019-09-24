@@ -28,6 +28,7 @@ import typings.atOctokitRest.atOctokitRestMod.ReactionsListForTeamDiscussionComm
 import typings.atOctokitRest.atOctokitRestMod.ReactionsListForTeamDiscussionCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReactionsListForTeamDiscussionParams
 import typings.atOctokitRest.atOctokitRestMod.ReactionsListForTeamDiscussionResponse
+import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -104,68 +105,70 @@ trait Anon_CreateForCommitComment extends js.Object {
     * Create a reaction to a [commit comment](https://developer.github.com/v3/repos/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this commit comment.
     */
   def createForCommitComment(): js.Promise[Response[ReactionsCreateForCommitCommentResponse]] = js.native
-  def createForCommitComment(params: ReactionsCreateForCommitCommentParams): js.Promise[Response[ReactionsCreateForCommitCommentResponse]] = js.native
+  def createForCommitComment(params: RequestOptions with ReactionsCreateForCommitCommentParams): js.Promise[Response[ReactionsCreateForCommitCommentResponse]] = js.native
   /**
     * Create a reaction to an [issue](https://developer.github.com/v3/issues/). A response with a `Status: 200 OK` means that you already added the reaction type to this issue.
     */
   def createForIssue(): js.Promise[Response[ReactionsCreateForIssueResponse]] = js.native
-  def createForIssue(params: ReactionsCreateForIssueParams): js.Promise[Response[ReactionsCreateForIssueResponse]] = js.native
-  def createForIssue(params: ReactionsCreateForIssueParamsDeprecatedNumber): js.Promise[Response[ReactionsCreateForIssueResponse]] = js.native
+  def createForIssue(
+    params: RequestOptions with (ReactionsCreateForIssueParams | ReactionsCreateForIssueParamsDeprecatedNumber)
+  ): js.Promise[Response[ReactionsCreateForIssueResponse]] = js.native
   /**
     * Create a reaction to an [issue comment](https://developer.github.com/v3/issues/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this issue comment.
     */
   def createForIssueComment(): js.Promise[Response[ReactionsCreateForIssueCommentResponse]] = js.native
-  def createForIssueComment(params: ReactionsCreateForIssueCommentParams): js.Promise[Response[ReactionsCreateForIssueCommentResponse]] = js.native
+  def createForIssueComment(params: RequestOptions with ReactionsCreateForIssueCommentParams): js.Promise[Response[ReactionsCreateForIssueCommentResponse]] = js.native
   /**
     * Create a reaction to a [pull request review comment](https://developer.github.com/v3/pulls/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this pull request review comment.
     */
   def createForPullRequestReviewComment(): js.Promise[Response[ReactionsCreateForPullRequestReviewCommentResponse]] = js.native
-  def createForPullRequestReviewComment(params: ReactionsCreateForPullRequestReviewCommentParams): js.Promise[Response[ReactionsCreateForPullRequestReviewCommentResponse]] = js.native
+  def createForPullRequestReviewComment(params: RequestOptions with ReactionsCreateForPullRequestReviewCommentParams): js.Promise[Response[ReactionsCreateForPullRequestReviewCommentResponse]] = js.native
   /**
     * Create a reaction to a [team discussion](https://developer.github.com/v3/teams/discussions/). OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). A response with a `Status: 200 OK` means that you already added the reaction type to this team discussion.
     */
   def createForTeamDiscussion(): js.Promise[Response[ReactionsCreateForTeamDiscussionResponse]] = js.native
-  def createForTeamDiscussion(params: ReactionsCreateForTeamDiscussionParams): js.Promise[Response[ReactionsCreateForTeamDiscussionResponse]] = js.native
+  def createForTeamDiscussion(params: RequestOptions with ReactionsCreateForTeamDiscussionParams): js.Promise[Response[ReactionsCreateForTeamDiscussionResponse]] = js.native
   /**
     * Create a reaction to a [team discussion comment](https://developer.github.com/v3/teams/discussion_comments/). OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). A response with a `Status: 200 OK` means that you already added the reaction type to this team discussion comment.
     */
   def createForTeamDiscussionComment(): js.Promise[Response[ReactionsCreateForTeamDiscussionCommentResponse]] = js.native
-  def createForTeamDiscussionComment(params: ReactionsCreateForTeamDiscussionCommentParams): js.Promise[Response[ReactionsCreateForTeamDiscussionCommentResponse]] = js.native
+  def createForTeamDiscussionComment(params: RequestOptions with ReactionsCreateForTeamDiscussionCommentParams): js.Promise[Response[ReactionsCreateForTeamDiscussionCommentResponse]] = js.native
   /**
     * OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), when deleting a [team discussion](https://developer.github.com/v3/teams/discussions/) or [team discussion comment](https://developer.github.com/v3/teams/discussion_comments/).
     */
   def delete(): js.Promise[AnyResponse] = js.native
-  def delete(params: ReactionsDeleteParams): js.Promise[AnyResponse] = js.native
+  def delete(params: RequestOptions with ReactionsDeleteParams): js.Promise[AnyResponse] = js.native
   /**
     * List the reactions to a [commit comment](https://developer.github.com/v3/repos/comments/).
     */
   def listForCommitComment(): js.Promise[Response[ReactionsListForCommitCommentResponse]] = js.native
-  def listForCommitComment(params: ReactionsListForCommitCommentParams): js.Promise[Response[ReactionsListForCommitCommentResponse]] = js.native
+  def listForCommitComment(params: RequestOptions with ReactionsListForCommitCommentParams): js.Promise[Response[ReactionsListForCommitCommentResponse]] = js.native
   /**
     * List the reactions to an [issue](https://developer.github.com/v3/issues/).
     */
   def listForIssue(): js.Promise[Response[ReactionsListForIssueResponse]] = js.native
-  def listForIssue(params: ReactionsListForIssueParams): js.Promise[Response[ReactionsListForIssueResponse]] = js.native
-  def listForIssue(params: ReactionsListForIssueParamsDeprecatedNumber): js.Promise[Response[ReactionsListForIssueResponse]] = js.native
+  def listForIssue(
+    params: RequestOptions with (ReactionsListForIssueParams | ReactionsListForIssueParamsDeprecatedNumber)
+  ): js.Promise[Response[ReactionsListForIssueResponse]] = js.native
   /**
     * List the reactions to an [issue comment](https://developer.github.com/v3/issues/comments/).
     */
   def listForIssueComment(): js.Promise[Response[ReactionsListForIssueCommentResponse]] = js.native
-  def listForIssueComment(params: ReactionsListForIssueCommentParams): js.Promise[Response[ReactionsListForIssueCommentResponse]] = js.native
+  def listForIssueComment(params: RequestOptions with ReactionsListForIssueCommentParams): js.Promise[Response[ReactionsListForIssueCommentResponse]] = js.native
   /**
     * List the reactions to a [pull request review comment](https://developer.github.com/v3/pulls/comments/).
     */
   def listForPullRequestReviewComment(): js.Promise[Response[ReactionsListForPullRequestReviewCommentResponse]] = js.native
-  def listForPullRequestReviewComment(params: ReactionsListForPullRequestReviewCommentParams): js.Promise[Response[ReactionsListForPullRequestReviewCommentResponse]] = js.native
+  def listForPullRequestReviewComment(params: RequestOptions with ReactionsListForPullRequestReviewCommentParams): js.Promise[Response[ReactionsListForPullRequestReviewCommentResponse]] = js.native
   /**
     * List the reactions to a [team discussion](https://developer.github.com/v3/teams/discussions/). OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   def listForTeamDiscussion(): js.Promise[Response[ReactionsListForTeamDiscussionResponse]] = js.native
-  def listForTeamDiscussion(params: ReactionsListForTeamDiscussionParams): js.Promise[Response[ReactionsListForTeamDiscussionResponse]] = js.native
+  def listForTeamDiscussion(params: RequestOptions with ReactionsListForTeamDiscussionParams): js.Promise[Response[ReactionsListForTeamDiscussionResponse]] = js.native
   /**
     * List the reactions to a [team discussion comment](https://developer.github.com/v3/teams/discussion_comments/). OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   def listForTeamDiscussionComment(): js.Promise[Response[ReactionsListForTeamDiscussionCommentResponse]] = js.native
-  def listForTeamDiscussionComment(params: ReactionsListForTeamDiscussionCommentParams): js.Promise[Response[ReactionsListForTeamDiscussionCommentResponse]] = js.native
+  def listForTeamDiscussionComment(params: RequestOptions with ReactionsListForTeamDiscussionCommentParams): js.Promise[Response[ReactionsListForTeamDiscussionCommentResponse]] = js.native
 }
 

@@ -15,7 +15,7 @@ trait Anon_EndpointParamsGitCreateTreeParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[GitCreateTreeResponse]] = js.native
-  def apply(params: GitCreateTreeParams): js.Promise[Response[GitCreateTreeResponse]] = js.native
+  def apply(params: RequestOptions with GitCreateTreeParams): js.Promise[Response[GitCreateTreeResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

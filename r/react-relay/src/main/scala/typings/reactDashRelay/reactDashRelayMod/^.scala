@@ -76,6 +76,7 @@ object ^ extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
   ] = js.native
   def graphql(strings: js.Array[String]): GraphQLTaggedNode = js.native
+  def readInlineData[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentOrRegularProp[T]): T = js.native
   // ./subscription/requestRelaySubscription
   def requestSubscription(
     environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment,

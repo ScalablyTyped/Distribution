@@ -936,6 +936,7 @@
 | 0.7753509563535208 | [p-reduce](./p/p-reduce) | Reduce a list of values using promises into a prom
 | 0.7753417740304802 | [archiver](./a/archiver) | a streaming interface for archive generation
 | 0.775328265796162 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
+| 0.7751928308733431 | [aria-query](./a/aria-query) | Programmatic access to the ARIA specification
 | 0.775183742745352 | [p-retry](./p/p-retry) | Retry a promise-returning or async function
 | 0.7750712948739287 | [flux-standard-action](./f/flux-standard-action) | A human-friendly standard for Flux action objects
 | 0.7750210506181485 | [material-ui__lab](./m/material-ui__lab) | Material-UI Lab - Incubator for Material-UI React 
@@ -2428,6 +2429,7 @@
 | 0.6965389996972063 | [stats-lite](./s/stats-lite) | A light statistical package that operates on numer
 | 0.6965271025001163 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API
 | 0.6964837307937327 | [insert-css](./i/insert-css) | insert a string of css into the 
+| 0.6964027300095426 | [promise-poller](./p/promise-poller) | A basic poller built on top of promises
 | 0.696339580935033 | [react-axe](./r/react-axe) | Dynamic accessibility analysis for React using axe
 | 0.6962785100630295 | [react-easy-crop](./r/react-easy-crop) | A React component to crop images with easy interac
 | 0.6962180028525404 | [react-hyperscript](./r/react-hyperscript) | Hyperscript syntax for React.js markup
@@ -2508,6 +2510,7 @@
 | 0.6926879435922793 | [standard-http-error](./s/standard-http-error) | Standard HTTP error class. Proper serialization, n
 | 0.6926753785543864 | [log-process-errors](./l/log-process-errors) | Show some ❤️ to process errors
 | 0.6925962167293996 | [koa-json-error](./k/koa-json-error) | Error handler for pure-JSON Koa apps
+| 0.6925498748454784 | [re2](./r/re2) | Bindings for RE2: fast, safe alternative to backtr
 | 0.6925121735124299 | [file-exists](./f/file-exists) | Check if filepath exists and is a file
 | 0.6925115596552711 | [in-app-purchase](./i/in-app-purchase) | In-App-Purchase validation and subscription manage
 | 0.6924701165640478 | [gradient-string](./g/gradient-string) | Beautiful color gradients in terminal output
@@ -3876,6 +3879,7 @@
 | 0.6278894996996897 | [rc-gesture](./r/rc-gesture) | Support gesture for react component
 | 0.6278679546720239 | [flatbuffers](./f/flatbuffers) | Memory Efficient Serialization Library
 | 0.6278612415007517 | [shopify-buy](./s/shopify-buy) | The JS Buy SDK is a lightweight library that allow
+| 0.627733685643616 | [object-joiner](./o/object-joiner) | A tiny utility that merges JavaScript objects by b
 | 0.6277221439670748 | [node-geocoder](./n/node-geocoder) | Node Geocoder, node geocoding library, supports go
 | 0.6276905338961588 | [ionic__discover](./i/ionic__discover) | Simple UDP based protocol for service discovery im
 | 0.6275786670351786 | [microgears](./m/microgears) | super lightweight micro framework for reactive ser
@@ -5702,6 +5706,7 @@
 | 0.38986951164987665 | [angular__core](./a/angular__core) | Angular - the core framework
 | 0.38978546519233254 | [memwatch-next](./m/memwatch-next) | Keep an eye on your memory usage, and discover and
 | 0.3896260265444334 | [socketty](./s/socketty) | Server side socketty, based on ws
+| 0.38950054408529583 | [spectrogram](./s/spectrogram) | Audio spectrogram in canvas.
 | 0.38934885870690994 | [should-sinon](./s/should-sinon) | Sinon.js assertions for should.js
 | 0.3893241589956124 | [ng-cordova](./n/ng-cordova) | -
 | 0.38926988482776614 | [cuint](./c/cuint) | Unsigned integers for Javascript

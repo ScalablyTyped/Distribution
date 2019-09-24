@@ -16,8 +16,7 @@ trait Anon_EndpointParamsIssuesAddAssigneesParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
-  def apply(params: IssuesAddAssigneesParams): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
-  def apply(params: IssuesAddAssigneesParamsDeprecatedNumber): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
+  def apply(params: RequestOptions with (IssuesAddAssigneesParams | IssuesAddAssigneesParamsDeprecatedNumber)): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

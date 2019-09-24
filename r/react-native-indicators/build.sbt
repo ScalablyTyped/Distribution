@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-indicators"
-version := "0.13-dt-20190524Z-b06791"
+version := "0.13-dt-20190923Z-967265"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

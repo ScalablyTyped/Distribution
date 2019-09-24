@@ -1,6 +1,8 @@
 package typings.reactDashNativeDashIndicators.reactDashNativeDashIndicatorsMod
 
 import typings.reactDashNative.reactDashNativeMod.EasingFunction
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashIndicators.reactDashNativeDashIndicatorsStrings.fill
 import typings.reactDashNativeDashIndicators.reactDashNativeDashIndicatorsStrings.outline
 import scala.scalajs.js
@@ -45,6 +47,7 @@ object WaveIndicatorProps {
     count: Int | Double = null,
     interaction: js.UndefOr[Boolean] = js.undefined,
     size: Int | Double = null,
+    style: StyleProp[ViewStyle] = null,
     waveFactor: Int | Double = null,
     waveMode: fill | outline = null
   ): WaveIndicatorProps = {
@@ -56,6 +59,7 @@ object WaveIndicatorProps {
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (waveFactor != null) __obj.updateDynamic("waveFactor")(waveFactor.asInstanceOf[js.Any])
     if (waveMode != null) __obj.updateDynamic("waveMode")(waveMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaveIndicatorProps]

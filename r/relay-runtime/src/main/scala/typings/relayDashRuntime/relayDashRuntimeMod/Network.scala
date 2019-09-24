@@ -1,5 +1,6 @@
 package typings.relayDashRuntime.relayDashRuntimeMod
 
+import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.RequestParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

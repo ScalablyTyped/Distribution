@@ -10,8 +10,10 @@ package object clientsRdsdataserviceMod {
   import typings.std.Uint8Array
 
   type Arn = java.lang.String
+  type ArrayOfArray = js.Array[ArrayValue]
   type ArrayValueList = js.Array[Value]
   type Boolean = scala.Boolean
+  type BooleanArray = js.Array[BoxedBoolean]
   type BoxedBoolean = scala.Boolean
   type BoxedDouble = Double
   type BoxedFloat = Double
@@ -19,10 +21,18 @@ package object clientsRdsdataserviceMod {
   type BoxedLong = Double
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DbName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DOUBLE_OR_LONG
+    - typings.awsDashSdk.awsDashSdkStrings.STRING
+    - java.lang.String
+  */
+  type DecimalReturnType = _DecimalReturnType | java.lang.String
+  type DoubleArray = js.Array[BoxedDouble]
   type FieldList = js.Array[Field]
   type Id = java.lang.String
   type Integer = Double
   type Long = Double
+  type LongArray = js.Array[BoxedLong]
   type Metadata = js.Array[ColumnMetadata]
   type ParameterName = java.lang.String
   type Records = js.Array[Record]
@@ -34,6 +44,7 @@ package object clientsRdsdataserviceMod {
   type SqlStatement = java.lang.String
   type SqlStatementResults = js.Array[SqlStatementResult]
   type String = java.lang.String
+  type StringArray = js.Array[String]
   type TransactionStatus = java.lang.String
   type UpdateResults = js.Array[UpdateResult]
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String

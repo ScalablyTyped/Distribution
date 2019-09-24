@@ -10,7 +10,7 @@ trait ExecuteStatementResponse extends js.Object {
     */
   var columnMetadata: js.UndefOr[Metadata] = js.undefined
   /**
-    * Values for fields generated during the request.
+    * Values for fields generated during the request.  &lt;note&gt; &lt;p&gt;The &lt;code&gt;generatedFields&lt;/code&gt; data isn't supported by Aurora PostgreSQL. To get the values of generated fields, use the &lt;code&gt;RETURNING&lt;/code&gt; clause. For more information, see &lt;a href=&quot;https://www.postgresql.org/docs/10/dml-returning.html&quot;&gt;Returning Data From Modified Rows&lt;/a&gt; in the PostgreSQL documentation.&lt;/p&gt; &lt;/note&gt; 
     */
   var generatedFields: js.UndefOr[FieldList] = js.undefined
   /**

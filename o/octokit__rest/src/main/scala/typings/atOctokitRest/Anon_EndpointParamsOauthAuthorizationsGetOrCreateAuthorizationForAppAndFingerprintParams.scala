@@ -17,7 +17,7 @@ trait Anon_EndpointParamsOauthAuthorizationsGetOrCreateAuthorizationForAppAndFin
   def apply(): js.Promise[
     Response[OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintResponse]
   ] = js.native
-  def apply(params: OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintParams): js.Promise[
+  def apply(params: RequestOptions with OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintParams): js.Promise[
     Response[OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintResponse]
   ] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native

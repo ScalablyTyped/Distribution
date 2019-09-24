@@ -15,7 +15,7 @@ trait Anon_EndpointParamsLicensesGetForRepoParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[LicensesGetForRepoResponse]] = js.native
-  def apply(params: LicensesGetForRepoParams): js.Promise[Response[LicensesGetForRepoResponse]] = js.native
+  def apply(params: RequestOptions with LicensesGetForRepoParams): js.Promise[Response[LicensesGetForRepoResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

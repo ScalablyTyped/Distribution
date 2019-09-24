@@ -15,7 +15,7 @@ trait Anon_EndpointParamsGistsUpdateParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[GistsUpdateResponse]] = js.native
-  def apply(params: GistsUpdateParams): js.Promise[Response[GistsUpdateResponse]] = js.native
+  def apply(params: RequestOptions with GistsUpdateParams): js.Promise[Response[GistsUpdateResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

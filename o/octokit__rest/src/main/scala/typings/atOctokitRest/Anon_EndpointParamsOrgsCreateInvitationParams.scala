@@ -15,7 +15,7 @@ trait Anon_EndpointParamsOrgsCreateInvitationParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[OrgsCreateInvitationResponse]] = js.native
-  def apply(params: OrgsCreateInvitationParams): js.Promise[Response[OrgsCreateInvitationResponse]] = js.native
+  def apply(params: RequestOptions with OrgsCreateInvitationParams): js.Promise[Response[OrgsCreateInvitationResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

@@ -1,5 +1,6 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait ModuleImport
   extends IR
      with Node
-     with Selection {
+     with Selection
+     with VisitNode {
   var documentName: String
   var id: String
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.ModuleImport

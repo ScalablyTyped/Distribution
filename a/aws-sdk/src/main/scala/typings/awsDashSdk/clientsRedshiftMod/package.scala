@@ -5,10 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsRedshiftMod {
+  import typings.awsDashSdk.awsDashSdkStrings.`restore-cluster`
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
   type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
+  type ActionType = `restore-cluster` | java.lang.String
   type AssociatedClusterList = js.Array[ClusterAssociatedToSchedule]
   type AttributeList = js.Array[AccountAttribute]
   type AttributeNameList = js.Array[String]
@@ -53,6 +55,26 @@ package object clientsRedshiftMod {
   type IntegerOptional = scala.Double
   type Long = scala.Double
   type LongOptional = scala.Double
+  type NodeConfigurationOptionList = js.Array[NodeConfigurationOption]
+  type NodeConfigurationOptionsFilterList = js.Array[NodeConfigurationOptionsFilter]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NodeType
+    - typings.awsDashSdk.awsDashSdkStrings.NumberOfNodes
+    - typings.awsDashSdk.awsDashSdkStrings.EstimatedDiskUtilizationPercent
+    - java.lang.String
+  */
+  type NodeConfigurationOptionsFilterName = _NodeConfigurationOptionsFilterName | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.eq
+    - typings.awsDashSdk.awsDashSdkStrings.lt
+    - typings.awsDashSdk.awsDashSdkStrings.gt
+    - typings.awsDashSdk.awsDashSdkStrings.le
+    - typings.awsDashSdk.awsDashSdkStrings.ge
+    - typings.awsDashSdk.awsDashSdkStrings.in
+    - typings.awsDashSdk.awsDashSdkStrings.between
+    - java.lang.String
+  */
+  type OperatorType = _OperatorType | java.lang.String
   type OrderableClusterOptionsList = js.Array[OrderableClusterOption]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.static
@@ -132,6 +154,7 @@ package object clientsRedshiftMod {
   type TagValueList = js.Array[String]
   type TaggedResourceList = js.Array[TaggedResource]
   type TrackList = js.Array[MaintenanceTrack]
+  type ValueStringList = js.Array[String]
   type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
   /* Rewritten from type alias, can be one of: 

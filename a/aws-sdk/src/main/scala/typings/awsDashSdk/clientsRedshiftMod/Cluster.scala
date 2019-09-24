@@ -134,6 +134,10 @@ trait Cluster extends js.Object {
     */
   var ModifyStatus: js.UndefOr[String] = js.undefined
   /**
+    * The date and time in UTC when system maintenance can begin.
+    */
+  var NextMaintenanceWindowStartTime: js.UndefOr[TStamp] = js.undefined
+  /**
     * The node type for the nodes in the cluster.
     */
   var NodeType: js.UndefOr[String] = js.undefined
@@ -222,6 +226,7 @@ object Cluster {
     ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined,
     MasterUsername: String = null,
     ModifyStatus: String = null,
+    NextMaintenanceWindowStartTime: TStamp = null,
     NodeType: String = null,
     NumberOfNodes: js.UndefOr[Integer] = js.undefined,
     PendingActions: PendingActionsList = null,
@@ -269,6 +274,7 @@ object Cluster {
     if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (ModifyStatus != null) __obj.updateDynamic("ModifyStatus")(ModifyStatus)
+    if (NextMaintenanceWindowStartTime != null) __obj.updateDynamic("NextMaintenanceWindowStartTime")(NextMaintenanceWindowStartTime)
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
     if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
     if (PendingActions != null) __obj.updateDynamic("PendingActions")(PendingActions)

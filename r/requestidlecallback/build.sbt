@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "requestidlecallback"
-version := "0.1-dt-20190212Z-3f4fb5"
+version := "0.1-dt-20190923Z-433c4c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

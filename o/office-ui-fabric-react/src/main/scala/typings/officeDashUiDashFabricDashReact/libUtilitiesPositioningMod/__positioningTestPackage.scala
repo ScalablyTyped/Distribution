@@ -23,13 +23,14 @@ object __positioningTestPackage extends js.Object {
     ], 
     ICalloutBeakPositionedInfo
   ] = js.native
-  var _finalizePositionData: js.Function4[
+  var _finalizePositionData: js.Function5[
     /* positionedElement */ IElementPosition, 
     /* hostElement */ HTMLElement, 
     /* bounds */ js.UndefOr[
       typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningMod.Rectangle
     ], 
     /* coverTarget */ js.UndefOr[Boolean], 
+    /* previousPositions */ js.UndefOr[Boolean], 
     IPositionedData
   ] = js.native
   var _getMaxHeightFromTargetRectangle: js.Function5[

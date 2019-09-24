@@ -15,7 +15,7 @@ trait Anon_EndpointParamsOrgsCreateHookParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[OrgsCreateHookResponse]] = js.native
-  def apply(params: OrgsCreateHookParams): js.Promise[Response[OrgsCreateHookResponse]] = js.native
+  def apply(params: RequestOptions with OrgsCreateHookParams): js.Promise[Response[OrgsCreateHookResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

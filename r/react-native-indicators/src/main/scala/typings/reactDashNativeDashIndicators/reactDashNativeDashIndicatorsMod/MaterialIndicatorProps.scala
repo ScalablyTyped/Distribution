@@ -1,6 +1,8 @@
 package typings.reactDashNativeDashIndicators.reactDashNativeDashIndicatorsMod
 
 import typings.reactDashNative.reactDashNativeMod.EasingFunction
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +28,8 @@ object MaterialIndicatorProps {
     animationEasing: EasingFunction = null,
     color: String = null,
     interaction: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null
+    size: Int | Double = null,
+    style: StyleProp[ViewStyle] = null
   ): MaterialIndicatorProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
@@ -35,6 +38,7 @@ object MaterialIndicatorProps {
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialIndicatorProps]
   }
 }

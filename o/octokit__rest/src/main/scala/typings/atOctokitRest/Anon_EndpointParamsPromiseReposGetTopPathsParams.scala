@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposGetTopPathsParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposGetTopPathsResponse]] = js.native
-  def apply(params: ReposGetTopPathsParams): js.Promise[Response[ReposGetTopPathsResponse]] = js.native
+  def apply(params: RequestOptions with ReposGetTopPathsParams): js.Promise[Response[ReposGetTopPathsResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

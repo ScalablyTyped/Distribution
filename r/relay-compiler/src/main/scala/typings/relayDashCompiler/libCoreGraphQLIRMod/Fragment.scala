@@ -2,6 +2,7 @@ package typings.relayDashCompiler.libCoreGraphQLIRMod
 
 import typings.graphql.typeDefinitionMod.GraphQLCompositeType
 import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.CompilerContextDocument
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,8 @@ trait Fragment
      with Definition
      with GeneratedDefinition
      with IR
-     with Node {
+     with Node
+     with VisitNode {
   var argumentDefinitions: js.Array[ArgumentDefinition]
   var directives: js.Array[Directive]
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.Fragment

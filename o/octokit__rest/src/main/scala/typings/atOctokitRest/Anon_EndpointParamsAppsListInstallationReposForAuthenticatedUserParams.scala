@@ -15,7 +15,7 @@ trait Anon_EndpointParamsAppsListInstallationReposForAuthenticatedUserParams ext
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[AppsListInstallationReposForAuthenticatedUserResponse]] = js.native
-  def apply(params: AppsListInstallationReposForAuthenticatedUserParams): js.Promise[Response[AppsListInstallationReposForAuthenticatedUserResponse]] = js.native
+  def apply(params: RequestOptions with AppsListInstallationReposForAuthenticatedUserParams): js.Promise[Response[AppsListInstallationReposForAuthenticatedUserResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

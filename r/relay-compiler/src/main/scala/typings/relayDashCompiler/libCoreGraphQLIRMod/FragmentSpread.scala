@@ -1,12 +1,14 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FragmentSpread
   extends IR
-     with Selection {
+     with Selection
+     with VisitNode {
   var args: js.Array[Argument]
   var directives: js.Array[Directive]
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.FragmentSpread

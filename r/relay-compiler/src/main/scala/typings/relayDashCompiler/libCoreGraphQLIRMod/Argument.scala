@@ -1,11 +1,14 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
 import typings.graphql.typeDefinitionMod.GraphQLInputType
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Argument extends IR {
+trait Argument
+  extends IR
+     with VisitNode {
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.Argument
   var loc: Location
   var metadata: Metadata

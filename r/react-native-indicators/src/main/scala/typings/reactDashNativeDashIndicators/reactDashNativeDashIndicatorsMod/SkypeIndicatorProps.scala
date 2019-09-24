@@ -1,6 +1,8 @@
 package typings.reactDashNativeDashIndicators.reactDashNativeDashIndicatorsMod
 
 import typings.reactDashNative.reactDashNativeMod.EasingFunction
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +46,8 @@ object SkypeIndicatorProps {
     interaction: js.UndefOr[Boolean] = js.undefined,
     maxScale: Int | Double = null,
     minScale: Int | Double = null,
-    size: Int | Double = null
+    size: Int | Double = null,
+    style: StyleProp[ViewStyle] = null
   ): SkypeIndicatorProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
@@ -56,6 +59,7 @@ object SkypeIndicatorProps {
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkypeIndicatorProps]
   }
 }

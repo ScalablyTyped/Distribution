@@ -12,6 +12,15 @@ object relayDashRuntimeStrings {
   sealed trait CRITICAL extends js.Object
   
   @js.native
+  sealed trait ClientExtension extends js.Object
+  
+  @js.native
+  sealed trait Condition extends js.Object
+  
+  @js.native
+  sealed trait ConnectionField extends js.Object
+  
+  @js.native
   sealed trait Defer extends js.Object
   
   @js.native
@@ -24,13 +33,46 @@ object relayDashRuntimeStrings {
   sealed trait FIELDS_CHANGE extends MutationType
   
   @js.native
+  sealed trait Fragment extends js.Object
+  
+  @js.native
   sealed trait FragmentReference extends js.Object
+  
+  @js.native
+  sealed trait FragmentSpread extends js.Object
+  
+  @js.native
+  sealed trait InlineDataFragment extends js.Object
+  
+  @js.native
+  sealed trait InlineDataFragmentSpread extends js.Object
+  
+  @js.native
+  sealed trait InlineFragment extends js.Object
+  
+  @js.native
+  sealed trait LinkedField extends js.Object
+  
+  @js.native
+  sealed trait LinkedHandle extends js.Object
+  
+  @js.native
+  sealed trait Literal extends js.Object
+  
+  @js.native
+  sealed trait LocalArgument extends js.Object
+  
+  @js.native
+  sealed trait ModuleImport extends js.Object
   
   @js.native
   sealed trait NODE_DELETE extends MutationType
   
   @js.native
   sealed trait NONEXISTENT extends RecordState
+  
+  @js.native
+  sealed trait Operation extends js.Object
   
   @js.native
   sealed trait PageInfo extends js.Object
@@ -45,7 +87,28 @@ object relayDashRuntimeStrings {
   sealed trait REQUIRED_CHILDREN extends MutationType
   
   @js.native
+  sealed trait Request extends js.Object
+  
+  @js.native
+  sealed trait RootArgument extends js.Object
+  
+  @js.native
+  sealed trait ScalarField extends js.Object
+  
+  @js.native
+  sealed trait ScalarHandle extends js.Object
+  
+  @js.native
+  sealed trait SplitOperation extends js.Object
+  
+  @js.native
+  sealed trait Stream extends js.Object
+  
+  @js.native
   sealed trait UNKNOWN extends RecordState
+  
+  @js.native
+  sealed trait Variable extends js.Object
   
   @js.native
   sealed trait Viewer extends js.Object
@@ -107,6 +170,12 @@ object relayDashRuntimeStrings {
   @scala.inline
   def CRITICAL: CRITICAL = "CRITICAL".asInstanceOf[CRITICAL]
   @scala.inline
+  def ClientExtension: ClientExtension = "ClientExtension".asInstanceOf[ClientExtension]
+  @scala.inline
+  def Condition: Condition = "Condition".asInstanceOf[Condition]
+  @scala.inline
+  def ConnectionField: ConnectionField = "ConnectionField".asInstanceOf[ConnectionField]
+  @scala.inline
   def Defer: Defer = "Defer".asInstanceOf[Defer]
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
@@ -115,11 +184,33 @@ object relayDashRuntimeStrings {
   @scala.inline
   def FIELDS_CHANGE: FIELDS_CHANGE = "FIELDS_CHANGE".asInstanceOf[FIELDS_CHANGE]
   @scala.inline
+  def Fragment: Fragment = "Fragment".asInstanceOf[Fragment]
+  @scala.inline
   def FragmentReference: FragmentReference = "FragmentReference".asInstanceOf[FragmentReference]
+  @scala.inline
+  def FragmentSpread: FragmentSpread = "FragmentSpread".asInstanceOf[FragmentSpread]
+  @scala.inline
+  def InlineDataFragment: InlineDataFragment = "InlineDataFragment".asInstanceOf[InlineDataFragment]
+  @scala.inline
+  def InlineDataFragmentSpread: InlineDataFragmentSpread = "InlineDataFragmentSpread".asInstanceOf[InlineDataFragmentSpread]
+  @scala.inline
+  def InlineFragment: InlineFragment = "InlineFragment".asInstanceOf[InlineFragment]
+  @scala.inline
+  def LinkedField: LinkedField = "LinkedField".asInstanceOf[LinkedField]
+  @scala.inline
+  def LinkedHandle: LinkedHandle = "LinkedHandle".asInstanceOf[LinkedHandle]
+  @scala.inline
+  def Literal: Literal = "Literal".asInstanceOf[Literal]
+  @scala.inline
+  def LocalArgument: LocalArgument = "LocalArgument".asInstanceOf[LocalArgument]
+  @scala.inline
+  def ModuleImport: ModuleImport = "ModuleImport".asInstanceOf[ModuleImport]
   @scala.inline
   def NODE_DELETE: NODE_DELETE = "NODE_DELETE".asInstanceOf[NODE_DELETE]
   @scala.inline
   def NONEXISTENT: NONEXISTENT = "NONEXISTENT".asInstanceOf[NONEXISTENT]
+  @scala.inline
+  def Operation: Operation = "Operation".asInstanceOf[Operation]
   @scala.inline
   def PageInfo: PageInfo = "PageInfo".asInstanceOf[PageInfo]
   @scala.inline
@@ -129,7 +220,21 @@ object relayDashRuntimeStrings {
   @scala.inline
   def REQUIRED_CHILDREN: REQUIRED_CHILDREN = "REQUIRED_CHILDREN".asInstanceOf[REQUIRED_CHILDREN]
   @scala.inline
+  def Request: Request = "Request".asInstanceOf[Request]
+  @scala.inline
+  def RootArgument: RootArgument = "RootArgument".asInstanceOf[RootArgument]
+  @scala.inline
+  def ScalarField: ScalarField = "ScalarField".asInstanceOf[ScalarField]
+  @scala.inline
+  def ScalarHandle: ScalarHandle = "ScalarHandle".asInstanceOf[ScalarHandle]
+  @scala.inline
+  def SplitOperation: SplitOperation = "SplitOperation".asInstanceOf[SplitOperation]
+  @scala.inline
+  def Stream: Stream = "Stream".asInstanceOf[Stream]
+  @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  @scala.inline
+  def Variable: Variable = "Variable".asInstanceOf[Variable]
   @scala.inline
   def Viewer: Viewer = "Viewer".asInstanceOf[Viewer]
   @scala.inline

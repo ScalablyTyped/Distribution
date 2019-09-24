@@ -618,6 +618,19 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ LoggingStatus, Unit]
   ): Request[LoggingStatus, AWSError] = js.native
   /**
+    * Returns properties of possible node configurations such as node type, number of nodes, and disk usage for the specified action type.
+    */
+  def describeNodeConfigurationOptions(): Request[NodeConfigurationOptionsMessage, AWSError] = js.native
+  def describeNodeConfigurationOptions(callback: js.Function2[/* err */ AWSError, /* data */ NodeConfigurationOptionsMessage, Unit]): Request[NodeConfigurationOptionsMessage, AWSError] = js.native
+  /**
+    * Returns properties of possible node configurations such as node type, number of nodes, and disk usage for the specified action type.
+    */
+  def describeNodeConfigurationOptions(params: DescribeNodeConfigurationOptionsMessage): Request[NodeConfigurationOptionsMessage, AWSError] = js.native
+  def describeNodeConfigurationOptions(
+    params: DescribeNodeConfigurationOptionsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ NodeConfigurationOptionsMessage, Unit]
+  ): Request[NodeConfigurationOptionsMessage, AWSError] = js.native
+  /**
     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
   def describeOrderableClusterOptions(): Request[OrderableClusterOptionsMessage, AWSError] = js.native

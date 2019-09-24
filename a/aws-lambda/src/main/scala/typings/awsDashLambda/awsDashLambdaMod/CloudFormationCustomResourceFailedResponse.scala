@@ -22,10 +22,12 @@ object CloudFormationCustomResourceFailedResponse {
     RequestId: String,
     StackId: String,
     Status: FAILED,
-    Data: StringDictionary[js.Any] = null
+    Data: StringDictionary[js.Any] = null,
+    NoEcho: js.UndefOr[Boolean] = js.undefined
   ): CloudFormationCustomResourceFailedResponse = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, PhysicalResourceId = PhysicalResourceId, Reason = Reason, RequestId = RequestId, StackId = StackId, Status = Status)
     if (Data != null) __obj.updateDynamic("Data")(Data)
+    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho)
     __obj.asInstanceOf[CloudFormationCustomResourceFailedResponse]
   }
 }

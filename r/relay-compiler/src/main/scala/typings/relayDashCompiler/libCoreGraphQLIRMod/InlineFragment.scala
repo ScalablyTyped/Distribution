@@ -1,6 +1,7 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
 import typings.graphql.typeDefinitionMod.GraphQLCompositeType
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,8 @@ import scala.scalajs.js.annotation._
 trait InlineFragment
   extends IR
      with Node
-     with Selection {
+     with Selection
+     with VisitNode {
   var directives: js.Array[Directive]
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.InlineFragment
   var loc: Location

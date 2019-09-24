@@ -2354,7 +2354,7 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `film-alt` extends IconName
   
   @js.native
-  sealed trait `film-cannister` extends IconName
+  sealed trait `film-canister` extends IconName
   
   @js.native
   sealed trait filter extends IconName
@@ -8071,7 +8071,7 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `film-alt`: `film-alt` = "film-alt".asInstanceOf[`film-alt`]
   @scala.inline
-  def `film-cannister`: `film-cannister` = "film-cannister".asInstanceOf[`film-cannister`]
+  def `film-canister`: `film-canister` = "film-canister".asInstanceOf[`film-canister`]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline

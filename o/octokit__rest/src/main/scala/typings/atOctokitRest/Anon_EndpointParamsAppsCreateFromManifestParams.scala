@@ -15,7 +15,7 @@ trait Anon_EndpointParamsAppsCreateFromManifestParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[AppsCreateFromManifestResponse]] = js.native
-  def apply(params: AppsCreateFromManifestParams): js.Promise[Response[AppsCreateFromManifestResponse]] = js.native
+  def apply(params: RequestOptions with AppsCreateFromManifestParams): js.Promise[Response[AppsCreateFromManifestResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

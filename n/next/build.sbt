@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next"
-version := "8.0-dt-20190709Z-d781ec"
+version := "8.0-dt-20190709Z-04506d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "next-server" % "8.1-dt-20190629Z-cc3bfb",
   "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190918Z-5abc69",
+  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-5abc69",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
   "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-cf05c1",

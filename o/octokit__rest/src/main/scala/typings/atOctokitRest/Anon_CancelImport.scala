@@ -34,6 +34,7 @@ import typings.atOctokitRest.atOctokitRestMod.MigrationsUnlockRepoForAuthenticat
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUnlockRepoForOrgParams
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUpdateImportParams
 import typings.atOctokitRest.atOctokitRestMod.MigrationsUpdateImportResponse
+import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -220,17 +221,17 @@ trait Anon_CancelImport extends js.Object {
     * Stop an import for a repository.
     */
   def cancelImport(): js.Promise[AnyResponse] = js.native
-  def cancelImport(params: MigrationsCancelImportParams): js.Promise[AnyResponse] = js.native
+  def cancelImport(params: RequestOptions with MigrationsCancelImportParams): js.Promise[AnyResponse] = js.native
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](https://developer.github.com/v3/migrations/users/#get-a-list-of-user-migrations) and [Get the status of a user migration](https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
     */
   def deleteArchiveForAuthenticatedUser(): js.Promise[AnyResponse] = js.native
-  def deleteArchiveForAuthenticatedUser(params: MigrationsDeleteArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
+  def deleteArchiveForAuthenticatedUser(params: RequestOptions with MigrationsDeleteArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   def deleteArchiveForOrg(): js.Promise[AnyResponse] = js.native
-  def deleteArchiveForOrg(params: MigrationsDeleteArchiveForOrgParams): js.Promise[AnyResponse] = js.native
+  def deleteArchiveForOrg(params: RequestOptions with MigrationsDeleteArchiveForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
@@ -255,19 +256,19 @@ trait Anon_CancelImport extends js.Object {
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
   def getArchiveForAuthenticatedUser(): js.Promise[AnyResponse] = js.native
-  def getArchiveForAuthenticatedUser(params: MigrationsGetArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
+  def getArchiveForAuthenticatedUser(params: RequestOptions with MigrationsGetArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Fetches the URL to a migration archive.
     */
   def getArchiveForOrg(): js.Promise[AnyResponse] = js.native
-  def getArchiveForOrg(params: MigrationsGetArchiveForOrgParams): js.Promise[AnyResponse] = js.native
+  def getArchiveForOrg(params: RequestOptions with MigrationsGetArchiveForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
     * This API method and the "Map a commit author" method allow you to provide correct Git author information.
     */
   def getCommitAuthors(): js.Promise[Response[MigrationsGetCommitAuthorsResponse]] = js.native
-  def getCommitAuthors(params: MigrationsGetCommitAuthorsParams): js.Promise[Response[MigrationsGetCommitAuthorsResponse]] = js.native
+  def getCommitAuthors(params: RequestOptions with MigrationsGetCommitAuthorsParams): js.Promise[Response[MigrationsGetCommitAuthorsResponse]] = js.native
   /**
     * View the progress of an import.
     *
@@ -305,12 +306,12 @@ trait Anon_CancelImport extends js.Object {
     * *   `large_files_count` - the total number of files larger than 100MB found in the originating repository. To see a list of these files, make a "Get Large Files" request.
     */
   def getImportProgress(): js.Promise[Response[MigrationsGetImportProgressResponse]] = js.native
-  def getImportProgress(params: MigrationsGetImportProgressParams): js.Promise[Response[MigrationsGetImportProgressResponse]] = js.native
+  def getImportProgress(params: RequestOptions with MigrationsGetImportProgressParams): js.Promise[Response[MigrationsGetImportProgressResponse]] = js.native
   /**
     * List files larger than 100MB found during the import
     */
   def getLargeFiles(): js.Promise[Response[MigrationsGetLargeFilesResponse]] = js.native
-  def getLargeFiles(params: MigrationsGetLargeFilesParams): js.Promise[Response[MigrationsGetLargeFilesResponse]] = js.native
+  def getLargeFiles(params: RequestOptions with MigrationsGetLargeFilesParams): js.Promise[Response[MigrationsGetLargeFilesResponse]] = js.native
   /**
     * Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
     *
@@ -322,7 +323,7 @@ trait Anon_CancelImport extends js.Object {
     * Once the migration has been `exported` you can [download the migration archive](https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive).
     */
   def getStatusForAuthenticatedUser(): js.Promise[Response[MigrationsGetStatusForAuthenticatedUserResponse]] = js.native
-  def getStatusForAuthenticatedUser(params: MigrationsGetStatusForAuthenticatedUserParams): js.Promise[Response[MigrationsGetStatusForAuthenticatedUserResponse]] = js.native
+  def getStatusForAuthenticatedUser(params: RequestOptions with MigrationsGetStatusForAuthenticatedUserParams): js.Promise[Response[MigrationsGetStatusForAuthenticatedUserResponse]] = js.native
   /**
     * Fetches the status of a migration.
     *
@@ -334,52 +335,52 @@ trait Anon_CancelImport extends js.Object {
     * *   `failed`, which means the migration failed.
     */
   def getStatusForOrg(): js.Promise[Response[MigrationsGetStatusForOrgResponse]] = js.native
-  def getStatusForOrg(params: MigrationsGetStatusForOrgParams): js.Promise[Response[MigrationsGetStatusForOrgResponse]] = js.native
+  def getStatusForOrg(params: RequestOptions with MigrationsGetStatusForOrgParams): js.Promise[Response[MigrationsGetStatusForOrgResponse]] = js.native
   /**
     * Lists all migrations a user has started.
     */
   def listForAuthenticatedUser(): js.Promise[Response[MigrationsListForAuthenticatedUserResponse]] = js.native
-  def listForAuthenticatedUser(params: MigrationsListForAuthenticatedUserParams): js.Promise[Response[MigrationsListForAuthenticatedUserResponse]] = js.native
+  def listForAuthenticatedUser(params: RequestOptions with MigrationsListForAuthenticatedUserParams): js.Promise[Response[MigrationsListForAuthenticatedUserResponse]] = js.native
   /**
     * Lists the most recent migrations.
     */
   def listForOrg(): js.Promise[Response[MigrationsListForOrgResponse]] = js.native
-  def listForOrg(params: MigrationsListForOrgParams): js.Promise[Response[MigrationsListForOrgResponse]] = js.native
+  def listForOrg(params: RequestOptions with MigrationsListForOrgParams): js.Promise[Response[MigrationsListForOrgResponse]] = js.native
   /**
     * Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
     */
   def mapCommitAuthor(): js.Promise[Response[MigrationsMapCommitAuthorResponse]] = js.native
-  def mapCommitAuthor(params: MigrationsMapCommitAuthorParams): js.Promise[Response[MigrationsMapCommitAuthorResponse]] = js.native
+  def mapCommitAuthor(params: RequestOptions with MigrationsMapCommitAuthorParams): js.Promise[Response[MigrationsMapCommitAuthorResponse]] = js.native
   /**
     * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://help.github.com/articles/versioning-large-files/).
     */
   def setLfsPreference(): js.Promise[Response[MigrationsSetLfsPreferenceResponse]] = js.native
-  def setLfsPreference(params: MigrationsSetLfsPreferenceParams): js.Promise[Response[MigrationsSetLfsPreferenceResponse]] = js.native
+  def setLfsPreference(params: RequestOptions with MigrationsSetLfsPreferenceParams): js.Promise[Response[MigrationsSetLfsPreferenceResponse]] = js.native
   /**
     * Initiates the generation of a user migration archive.
     */
   def startForAuthenticatedUser(): js.Promise[Response[MigrationsStartForAuthenticatedUserResponse]] = js.native
-  def startForAuthenticatedUser(params: MigrationsStartForAuthenticatedUserParams): js.Promise[Response[MigrationsStartForAuthenticatedUserResponse]] = js.native
+  def startForAuthenticatedUser(params: RequestOptions with MigrationsStartForAuthenticatedUserParams): js.Promise[Response[MigrationsStartForAuthenticatedUserResponse]] = js.native
   /**
     * Initiates the generation of a migration archive.
     */
   def startForOrg(): js.Promise[Response[MigrationsStartForOrgResponse]] = js.native
-  def startForOrg(params: MigrationsStartForOrgParams): js.Promise[Response[MigrationsStartForOrgResponse]] = js.native
+  def startForOrg(params: RequestOptions with MigrationsStartForOrgParams): js.Promise[Response[MigrationsStartForOrgResponse]] = js.native
   /**
     * Start a source import to a GitHub repository using GitHub Importer.
     */
   def startImport(): js.Promise[Response[MigrationsStartImportResponse]] = js.native
-  def startImport(params: MigrationsStartImportParams): js.Promise[Response[MigrationsStartImportResponse]] = js.native
+  def startImport(params: RequestOptions with MigrationsStartImportParams): js.Promise[Response[MigrationsStartImportResponse]] = js.native
   /**
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   def unlockRepoForAuthenticatedUser(): js.Promise[AnyResponse] = js.native
-  def unlockRepoForAuthenticatedUser(params: MigrationsUnlockRepoForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
+  def unlockRepoForAuthenticatedUser(params: RequestOptions with MigrationsUnlockRepoForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   def unlockRepoForOrg(): js.Promise[AnyResponse] = js.native
-  def unlockRepoForOrg(params: MigrationsUnlockRepoForOrgParams): js.Promise[AnyResponse] = js.native
+  def unlockRepoForOrg(params: RequestOptions with MigrationsUnlockRepoForOrgParams): js.Promise[AnyResponse] = js.native
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API request. If no parameters are provided, the import will be restarted.
     *
@@ -390,6 +391,6 @@ trait Anon_CancelImport extends js.Object {
     * To restart an import, no parameters are provided in the update request.
     */
   def updateImport(): js.Promise[Response[MigrationsUpdateImportResponse]] = js.native
-  def updateImport(params: MigrationsUpdateImportParams): js.Promise[Response[MigrationsUpdateImportResponse]] = js.native
+  def updateImport(params: RequestOptions with MigrationsUpdateImportParams): js.Promise[Response[MigrationsUpdateImportResponse]] = js.native
 }
 

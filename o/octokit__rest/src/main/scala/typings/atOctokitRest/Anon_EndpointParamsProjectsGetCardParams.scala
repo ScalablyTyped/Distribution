@@ -15,7 +15,7 @@ trait Anon_EndpointParamsProjectsGetCardParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ProjectsGetCardResponse]] = js.native
-  def apply(params: ProjectsGetCardParams): js.Promise[Response[ProjectsGetCardResponse]] = js.native
+  def apply(params: RequestOptions with ProjectsGetCardParams): js.Promise[Response[ProjectsGetCardResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

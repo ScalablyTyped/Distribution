@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposGetParticipationStatsParams extends js.Obje
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposGetParticipationStatsResponse]] = js.native
-  def apply(params: ReposGetParticipationStatsParams): js.Promise[Response[ReposGetParticipationStatsResponse]] = js.native
+  def apply(params: RequestOptions with ReposGetParticipationStatsParams): js.Promise[Response[ReposGetParticipationStatsResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

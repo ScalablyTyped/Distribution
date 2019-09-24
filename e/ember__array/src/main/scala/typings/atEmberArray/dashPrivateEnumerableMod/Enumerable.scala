@@ -334,7 +334,7 @@ trait Enumerable[T] extends js.Object {
     * Converts the enumerable into an array and sorts by the keys
     * specified in the argument.
     */
-  def sortBy(property: String): NativeArray[T] = js.native
+  def sortBy(properties: String*): NativeArray[T] = js.native
   /**
     * Simply converts the enumerable into a genuine array. The order is not
     * guaranteed. Corresponds to the method implemented by Prototype.

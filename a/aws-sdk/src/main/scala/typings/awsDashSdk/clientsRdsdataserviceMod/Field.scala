@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Field extends js.Object {
   /**
+    * An array of values.
+    */
+  var arrayValue: js.UndefOr[ArrayValue] = js.undefined
+  /**
     * A value of BLOB data type.
     */
   var blobValue: js.UndefOr[_Blob] = js.undefined
@@ -34,6 +38,7 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(
+    arrayValue: ArrayValue = null,
     blobValue: _Blob = null,
     booleanValue: js.UndefOr[BoxedBoolean] = js.undefined,
     doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
@@ -42,6 +47,7 @@ object Field {
     stringValue: String = null
   ): Field = {
     val __obj = js.Dynamic.literal()
+    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue)
     if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
     if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue)
     if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue)

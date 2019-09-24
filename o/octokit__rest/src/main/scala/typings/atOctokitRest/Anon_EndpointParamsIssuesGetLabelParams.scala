@@ -15,7 +15,7 @@ trait Anon_EndpointParamsIssuesGetLabelParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[IssuesGetLabelResponse]] = js.native
-  def apply(params: IssuesGetLabelParams): js.Promise[Response[IssuesGetLabelResponse]] = js.native
+  def apply(params: RequestOptions with IssuesGetLabelParams): js.Promise[Response[IssuesGetLabelResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

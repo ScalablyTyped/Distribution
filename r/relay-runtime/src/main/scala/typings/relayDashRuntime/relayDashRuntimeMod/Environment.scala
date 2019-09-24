@@ -2,6 +2,10 @@ package typings.relayDashRuntime.relayDashRuntimeMod
 
 import typings.relayDashRuntime.Anon_CacheConfig
 import typings.relayDashRuntime.Anon_Operation
+import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationSelectableNode
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderSelectableNode
+import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

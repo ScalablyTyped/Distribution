@@ -1,7 +1,7 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.relayDashRuntimeMod.ConnectionMetadata
-import typings.relayDashRuntime.relayDashRuntimeMod.ReaderRefetchMetadata
+import typings.relayDashRuntime.libHandlersConnectionRelayConnectionHandlerMod.ConnectionMetadata
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderRefetchMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

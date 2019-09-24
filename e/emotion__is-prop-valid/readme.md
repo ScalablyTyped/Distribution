@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__is-prop-valid
 
-Typings are for version 0.8.2
+Typings are for version 0.8.3
 
 ## Library description:
 A function to check whether a prop is valid for HTML and SVG elements

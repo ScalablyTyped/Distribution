@@ -20,10 +20,10 @@ object isDashWhatMod extends js.Object {
   def isObject(payload: js.Any): Boolean = js.native
   def isObjectLike[T /* <: js.Object */](payload: js.Any): /* is T */ Boolean = js.native
   def isPlainObject(payload: js.Any): Boolean = js.native
-  def isPrimitive(payload: js.Any): js.Any = js.native
+  def isPrimitive(payload: js.Any): Boolean = js.native
   def isRegExp(payload: js.Any): /* is std.RegExp */ Boolean = js.native
   def isString(payload: js.Any): /* is string */ Boolean = js.native
-  def isSymbol(payload: js.Any): /* is std.Symbol */ Boolean = js.native
+  def isSymbol(payload: js.Any): /* is symbol */ Boolean = js.native
   def isType[T /* <: js.Function */](payload: js.Any, `type`: T): /* is T */ Boolean = js.native
   def isUndefined(payload: js.Any): /* is undefined */ Boolean = js.native
 }

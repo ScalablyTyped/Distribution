@@ -22,10 +22,7 @@ trait ExecuteSqlRequest extends js.Object {
     */
   var schema: js.UndefOr[DbName] = js.undefined
   /**
-    * One or more SQL statements to run on the DB cluster.
-    You can separate SQL statements from each other with a semicolon (;). Any valid SQL
-    statement is permitted, including data definition, data manipulation, and commit
-    statements. 
+    * One or more SQL statements to run on the DB cluster. You can separate SQL statements from each other with a semicolon (;). Any valid SQL statement is permitted, including data definition, data manipulation, and commit statements. 
     */
   var sqlStatements: SqlStatement
 }

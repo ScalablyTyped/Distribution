@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposListForksParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposListForksResponse]] = js.native
-  def apply(params: ReposListForksParams): js.Promise[Response[ReposListForksResponse]] = js.native
+  def apply(params: RequestOptions with ReposListForksParams): js.Promise[Response[ReposListForksResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

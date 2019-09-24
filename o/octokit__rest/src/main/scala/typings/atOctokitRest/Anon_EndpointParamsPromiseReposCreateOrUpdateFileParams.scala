@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposCreateOrUpdateFileParams extends js.Object 
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposCreateOrUpdateFileResponse]] = js.native
-  def apply(params: ReposCreateOrUpdateFileParams): js.Promise[Response[ReposCreateOrUpdateFileResponse]] = js.native
+  def apply(params: RequestOptions with ReposCreateOrUpdateFileParams): js.Promise[Response[ReposCreateOrUpdateFileResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

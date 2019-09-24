@@ -2,6 +2,7 @@ package typings.relayDashCompiler.libCoreGraphQLIRMod
 
 import typings.graphql.typeDefinitionMod.GraphQLCompositeType
 import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.CompilerContextDocument
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import typings.relayDashCompiler.relayDashCompilerStrings.mutation
 import typings.relayDashCompiler.relayDashCompilerStrings.query
 import typings.relayDashCompiler.relayDashCompilerStrings.subscription
@@ -13,9 +14,10 @@ trait Root
   extends CompilerContextDocument
      with Definition
      with IR
-     with Node {
-  var argumentDefinitions: LocalArgumentDefinition
-  var directives: Directive
+     with Node
+     with VisitNode {
+  var argumentDefinitions: js.Array[LocalArgumentDefinition]
+  var directives: js.Array[Directive]
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.Root
   var loc: Location
   var metadata: Metadata
@@ -28,8 +30,8 @@ trait Root
 object Root {
   @scala.inline
   def apply(
-    argumentDefinitions: LocalArgumentDefinition,
-    directives: Directive,
+    argumentDefinitions: js.Array[LocalArgumentDefinition],
+    directives: js.Array[Directive],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Root,
     loc: Location,
     metadata: Metadata,

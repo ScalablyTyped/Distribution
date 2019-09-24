@@ -2,6 +2,7 @@ package typings.atOctokitRest
 
 import typings.atOctokitRest.atOctokitRestMod.EmptyParams
 import typings.atOctokitRest.atOctokitRestMod.RateLimitGetResponse
+import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,6 +53,6 @@ trait Anon_GetAnonEndpointParamsEmptyParamsPromise extends js.Object {
     * If you're writing new API client code or updating existing code, you should use the `core` object instead of the `rate` object. The `core` object contains the same information that is present in the `rate` object.
     */
   def get(): js.Promise[Response[RateLimitGetResponse]] = js.native
-  def get(params: EmptyParams): js.Promise[Response[RateLimitGetResponse]] = js.native
+  def get(params: RequestOptions with EmptyParams): js.Promise[Response[RateLimitGetResponse]] = js.native
 }
 

@@ -1,27 +1,27 @@
 package typings.reactDashBigDashCalendar
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.SFC
+import typings.react.reactMod.ComponentType
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod.ViewStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Agenda extends js.Object {
-  var agenda: js.UndefOr[Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _])] = js.undefined
-  var day: js.UndefOr[Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _])] = js.undefined
-  var month: js.UndefOr[Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _])] = js.undefined
-  var week: js.UndefOr[Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _])] = js.undefined
-  var work_week: js.UndefOr[Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _])] = js.undefined
+  var agenda: js.UndefOr[Boolean | (ComponentType[_] with ViewStatic)] = js.undefined
+  var day: js.UndefOr[Boolean | (ComponentType[_] with ViewStatic)] = js.undefined
+  var month: js.UndefOr[Boolean | (ComponentType[_] with ViewStatic)] = js.undefined
+  var week: js.UndefOr[Boolean | (ComponentType[_] with ViewStatic)] = js.undefined
+  var work_week: js.UndefOr[Boolean | (ComponentType[_] with ViewStatic)] = js.undefined
 }
 
 object Anon_Agenda {
   @scala.inline
   def apply(
-    agenda: Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _]) = null,
-    day: Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _]) = null,
-    month: Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _]) = null,
-    week: Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _]) = null,
-    work_week: Boolean | SFC[js.Object] | (Component[js.Object, js.Object, _]) = null
+    agenda: Boolean | (ComponentType[_] with ViewStatic) = null,
+    day: Boolean | (ComponentType[_] with ViewStatic) = null,
+    month: Boolean | (ComponentType[_] with ViewStatic) = null,
+    week: Boolean | (ComponentType[_] with ViewStatic) = null,
+    work_week: Boolean | (ComponentType[_] with ViewStatic) = null
   ): Anon_Agenda = {
     val __obj = js.Dynamic.literal()
     if (agenda != null) __obj.updateDynamic("agenda")(agenda.asInstanceOf[js.Any])

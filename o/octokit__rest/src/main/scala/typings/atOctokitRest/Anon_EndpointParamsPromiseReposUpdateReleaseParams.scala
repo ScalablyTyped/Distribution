@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposUpdateReleaseParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposUpdateReleaseResponse]] = js.native
-  def apply(params: ReposUpdateReleaseParams): js.Promise[Response[ReposUpdateReleaseResponse]] = js.native
+  def apply(params: RequestOptions with ReposUpdateReleaseParams): js.Promise[Response[ReposUpdateReleaseResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

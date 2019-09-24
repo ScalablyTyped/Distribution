@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposAddDeployKeyParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposAddDeployKeyResponse]] = js.native
-  def apply(params: ReposAddDeployKeyParams): js.Promise[Response[ReposAddDeployKeyResponse]] = js.native
+  def apply(params: RequestOptions with ReposAddDeployKeyParams): js.Promise[Response[ReposAddDeployKeyResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

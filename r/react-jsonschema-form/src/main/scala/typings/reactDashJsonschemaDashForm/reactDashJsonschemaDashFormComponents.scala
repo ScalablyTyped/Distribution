@@ -10,9 +10,9 @@ object reactDashJsonschemaDashFormComponents extends reactDashJsonschemaDashForm
   @scala.inline
   def ReactDashJsonschemaDashForm[T]: ComponentType[FormProps[T]] = js.constructorOf[typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormMod.FormProps[T]]]
   @scala.inline
-  def SchemaField[T]: ComponentType[
-    typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaFieldProps[T]
-  ] = js.constructorOf[typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaField[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaFieldProps[T]]]
+  def SchemaField: ComponentType[
+    typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaFieldProps[js.Any]
+  ] = js.constructorOf[typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaFieldProps[js.Any]]]
 }
 

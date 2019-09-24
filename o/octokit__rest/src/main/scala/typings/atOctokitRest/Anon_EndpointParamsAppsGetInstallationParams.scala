@@ -15,7 +15,7 @@ trait Anon_EndpointParamsAppsGetInstallationParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[AppsGetInstallationResponse]] = js.native
-  def apply(params: AppsGetInstallationParams): js.Promise[Response[AppsGetInstallationResponse]] = js.native
+  def apply(params: RequestOptions with AppsGetInstallationParams): js.Promise[Response[AppsGetInstallationResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

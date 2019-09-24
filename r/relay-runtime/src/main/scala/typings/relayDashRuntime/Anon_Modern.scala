@@ -1,7 +1,7 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.relayDashRuntimeMod.ConcreteRequest
-import typings.relayDashRuntime.relayDashRuntimeMod.ReaderFragment
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import typings.relayDashRuntime.relayDashRuntimeMod._GraphQLTaggedNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

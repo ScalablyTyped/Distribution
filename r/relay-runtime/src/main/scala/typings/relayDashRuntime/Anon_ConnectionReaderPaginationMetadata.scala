@@ -1,6 +1,6 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.relayDashRuntimeMod.ReaderPaginationMetadata
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderPaginationMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

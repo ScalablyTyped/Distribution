@@ -19,11 +19,12 @@ object __positioningTestPackage extends js.Object {
     /* bounds */ js.UndefOr[Rectangle], 
     ICalloutBeakPositionedInfo
   ] = js.native
-  var _finalizePositionData: js.Function4[
+  var _finalizePositionData: js.Function5[
     /* positionedElement */ IElementPosition, 
     /* hostElement */ HTMLElement, 
     /* bounds */ js.UndefOr[Rectangle], 
     /* coverTarget */ js.UndefOr[Boolean], 
+    /* previousPositions */ js.UndefOr[Boolean], 
     IPositionedData
   ] = js.native
   var _getMaxHeightFromTargetRectangle: js.Function5[

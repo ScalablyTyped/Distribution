@@ -15,7 +15,7 @@ trait Anon_EndpointParamsInteractionsGetRestrictionsForOrgParams extends js.Obje
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[InteractionsGetRestrictionsForOrgResponse]] = js.native
-  def apply(params: InteractionsGetRestrictionsForOrgParams): js.Promise[Response[InteractionsGetRestrictionsForOrgResponse]] = js.native
+  def apply(params: RequestOptions with InteractionsGetRestrictionsForOrgParams): js.Promise[Response[InteractionsGetRestrictionsForOrgResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

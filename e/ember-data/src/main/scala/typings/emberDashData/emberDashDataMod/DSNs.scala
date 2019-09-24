@@ -797,7 +797,7 @@ object DSNs extends js.Object {
       * specified in the argument.
       */
     /* InferMemberOverrides */
-    override def sortBy(property: String): NativeArray[js.Any] = js.native
+    override def sortBy(properties: String*): NativeArray[js.Any] = js.native
     /**
       * Simply converts the enumerable into a genuine array. The order is not
       * guaranteed. Corresponds to the method implemented by Prototype.

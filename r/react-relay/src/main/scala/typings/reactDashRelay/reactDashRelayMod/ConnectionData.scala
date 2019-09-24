@@ -1,6 +1,6 @@
 package typings.reactDashRelay.reactDashRelayMod
 
-import typings.relayDashRuntime.relayDashRuntimeMod.PageInfo
+import typings.relayDashRuntime.libHandlersConnectionRelayConnectionInterfaceMod.PageInfo
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

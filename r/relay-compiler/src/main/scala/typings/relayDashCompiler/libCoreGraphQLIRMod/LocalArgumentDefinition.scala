@@ -1,13 +1,15 @@
 package typings.relayDashCompiler.libCoreGraphQLIRMod
 
 import typings.graphql.typeDefinitionMod.GraphQLInputType
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocalArgumentDefinition
   extends ArgumentDefinition
-     with IR {
+     with IR
+     with VisitNode {
   var defaultValue: js.Any
   var kind: typings.relayDashCompiler.relayDashCompilerStrings.LocalArgumentDefinition
   var loc: Location

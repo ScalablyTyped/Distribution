@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "escape-goat"
-version := "2.1.0-b4ca3c"
+version := "2.1.1-6a71e1"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

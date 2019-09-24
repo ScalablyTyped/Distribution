@@ -15,7 +15,7 @@ trait Anon_EndpointParamsPromiseReposMergeParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposMergeResponse]] = js.native
-  def apply(params: ReposMergeParams): js.Promise[Response[ReposMergeResponse]] = js.native
+  def apply(params: RequestOptions with ReposMergeParams): js.Promise[Response[ReposMergeResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

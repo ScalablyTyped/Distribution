@@ -1,5 +1,6 @@
 package typings.atOctokitRest
 
+import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
 import typings.atOctokitRest.atOctokitRestMod.SearchCodeParams
 import typings.atOctokitRest.atOctokitRestMod.SearchCodeResponse
@@ -43,7 +44,7 @@ trait Anon_CodeCommits extends js.Object {
     * Here, we're searching for the keyword `addClass` within a file's contents. We're making sure that we're only looking in files where the language is JavaScript. And we're scoping the search to the `repo:jquery/jquery` repository.
     */
   @JSName("code")
-  var code_Original: Anon_EndpointParamsPromiseResponse = js.native
+  var code_Original: Anon_EndpointParamsPromiseRequestOptions = js.native
   /**
     * Find commits via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -56,7 +57,7 @@ trait Anon_CodeCommits extends js.Object {
     * Suppose you want to find commits related to CSS in the [octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife) repository. Your query would look something like this:
     */
   @JSName("commits")
-  var commits_Original: Anon_EndpointParamsPromiseResponseSearchCommitsParams = js.native
+  var commits_Original: Anon_EndpointParamsPromiseRequestOptionsResponse = js.native
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -67,7 +68,7 @@ trait Anon_CodeCommits extends js.Object {
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
     */
   @JSName("issuesAndPullRequests")
-  var issuesAndPullRequests_Original: Anon_EndpointParamsPromiseResponseSearchIssuesAndPullRequestsParams = js.native
+  var issuesAndPullRequests_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchIssuesAndPullRequestsParams = js.native
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -78,7 +79,7 @@ trait Anon_CodeCommits extends js.Object {
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
     */
   @JSName("issues")
-  var issues_Original: Anon_EndpointParamsPromiseResponseSearchIssuesParams = js.native
+  var issues_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchIssuesParams = js.native
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -89,7 +90,7 @@ trait Anon_CodeCommits extends js.Object {
     * The labels that best match for the query appear first in the search results.
     */
   @JSName("labels")
-  var labels_Original: Anon_EndpointParamsPromiseResponseSearchLabelsParams = js.native
+  var labels_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchLabelsParams = js.native
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -102,7 +103,7 @@ trait Anon_CodeCommits extends js.Object {
     * In this request, we're searching for repositories with the word `tetris` in the name, the description, or the README. We're limiting the results to only find repositories where the primary language is Assembly. We're sorting by stars in descending order, so that the most popular repositories appear first in the search results.
     */
   @JSName("repos")
-  var repos_Original: Anon_EndpointParamsPromiseResponseSearchReposParams = js.native
+  var repos_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchReposParams = js.native
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -117,7 +118,7 @@ trait Anon_CodeCommits extends js.Object {
     * **Note:** A search for featured Ruby topics only has 6 total results, so a [Link header](https://developer.github.com/v3/#link-header) indicating pagination is not included in the response.
     */
   @JSName("topics")
-  var topics_Original: Anon_EndpointParamsPromiseResponseSearchTopicsParams = js.native
+  var topics_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchTopicsParams = js.native
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -128,7 +129,7 @@ trait Anon_CodeCommits extends js.Object {
     * Here, we're looking at users with the name Tom. We're only interested in those with more than 42 repositories, and only if they have over 1,000 followers.
     */
   @JSName("users")
-  var users_Original: Anon_EndpointParamsPromiseResponseSearchUsersParams = js.native
+  var users_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchUsersParams = js.native
   /**
     * Find file contents via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -149,7 +150,7 @@ trait Anon_CodeCommits extends js.Object {
     * Here, we're searching for the keyword `addClass` within a file's contents. We're making sure that we're only looking in files where the language is JavaScript. And we're scoping the search to the `repo:jquery/jquery` repository.
     */
   def code(): js.Promise[Response[SearchCodeResponse]] = js.native
-  def code(params: SearchCodeParams): js.Promise[Response[SearchCodeResponse]] = js.native
+  def code(params: RequestOptions with SearchCodeParams): js.Promise[Response[SearchCodeResponse]] = js.native
   /**
     * Find commits via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -162,7 +163,7 @@ trait Anon_CodeCommits extends js.Object {
     * Suppose you want to find commits related to CSS in the [octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife) repository. Your query would look something like this:
     */
   def commits(): js.Promise[Response[SearchCommitsResponse]] = js.native
-  def commits(params: SearchCommitsParams): js.Promise[Response[SearchCommitsResponse]] = js.native
+  def commits(params: RequestOptions with SearchCommitsParams): js.Promise[Response[SearchCommitsResponse]] = js.native
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -173,7 +174,7 @@ trait Anon_CodeCommits extends js.Object {
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
     */
   def issues(): js.Promise[Response[SearchIssuesResponse]] = js.native
-  def issues(params: SearchIssuesParams): js.Promise[Response[SearchIssuesResponse]] = js.native
+  def issues(params: RequestOptions with SearchIssuesParams): js.Promise[Response[SearchIssuesResponse]] = js.native
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -184,7 +185,7 @@ trait Anon_CodeCommits extends js.Object {
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
     */
   def issuesAndPullRequests(): js.Promise[Response[SearchIssuesAndPullRequestsResponse]] = js.native
-  def issuesAndPullRequests(params: SearchIssuesAndPullRequestsParams): js.Promise[Response[SearchIssuesAndPullRequestsResponse]] = js.native
+  def issuesAndPullRequests(params: RequestOptions with SearchIssuesAndPullRequestsParams): js.Promise[Response[SearchIssuesAndPullRequestsResponse]] = js.native
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -195,7 +196,7 @@ trait Anon_CodeCommits extends js.Object {
     * The labels that best match for the query appear first in the search results.
     */
   def labels(): js.Promise[Response[SearchLabelsResponse]] = js.native
-  def labels(params: SearchLabelsParams): js.Promise[Response[SearchLabelsResponse]] = js.native
+  def labels(params: RequestOptions with SearchLabelsParams): js.Promise[Response[SearchLabelsResponse]] = js.native
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -208,7 +209,7 @@ trait Anon_CodeCommits extends js.Object {
     * In this request, we're searching for repositories with the word `tetris` in the name, the description, or the README. We're limiting the results to only find repositories where the primary language is Assembly. We're sorting by stars in descending order, so that the most popular repositories appear first in the search results.
     */
   def repos(): js.Promise[Response[SearchReposResponse]] = js.native
-  def repos(params: SearchReposParams): js.Promise[Response[SearchReposResponse]] = js.native
+  def repos(params: RequestOptions with SearchReposParams): js.Promise[Response[SearchReposResponse]] = js.native
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -223,7 +224,7 @@ trait Anon_CodeCommits extends js.Object {
     * **Note:** A search for featured Ruby topics only has 6 total results, so a [Link header](https://developer.github.com/v3/#link-header) indicating pagination is not included in the response.
     */
   def topics(): js.Promise[Response[SearchTopicsResponse]] = js.native
-  def topics(params: SearchTopicsParams): js.Promise[Response[SearchTopicsResponse]] = js.native
+  def topics(params: RequestOptions with SearchTopicsParams): js.Promise[Response[SearchTopicsResponse]] = js.native
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -234,6 +235,6 @@ trait Anon_CodeCommits extends js.Object {
     * Here, we're looking at users with the name Tom. We're only interested in those with more than 42 repositories, and only if they have over 1,000 followers.
     */
   def users(): js.Promise[Response[SearchUsersResponse]] = js.native
-  def users(params: SearchUsersParams): js.Promise[Response[SearchUsersResponse]] = js.native
+  def users(params: RequestOptions with SearchUsersParams): js.Promise[Response[SearchUsersResponse]] = js.native
 }
 

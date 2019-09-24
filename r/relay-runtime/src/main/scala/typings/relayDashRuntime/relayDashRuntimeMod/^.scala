@@ -1,6 +1,13 @@
 package typings.relayDashRuntime.relayDashRuntimeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationField
+import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationHandle
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderField
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderPaginationFragment
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderRefetchableFragment
+import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +15,6 @@ import scala.scalajs.js.annotation._
 @JSImport("relay-runtime", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ConnectionHandler: RelayConnectionHandler = js.native
   val FRAGMENTS_KEY: String = js.native
   val FRAGMENT_OWNER_KEY: String = js.native
   val ID_KEY: String = js.native

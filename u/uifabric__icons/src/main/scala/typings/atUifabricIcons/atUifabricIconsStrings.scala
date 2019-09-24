@@ -73,6 +73,9 @@ object atUifabricIconsStrings {
   sealed trait AddIn extends IconNames
   
   @js.native
+  sealed trait AddLink extends IconNames
+  
+  @js.native
   sealed trait AddNotes extends IconNames
   
   @js.native
@@ -602,6 +605,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait BulletedListTextMirrored extends IconNames
+  
+  @js.native
+  sealed trait BulletedTreeList extends IconNames
   
   @js.native
   sealed trait Bullseye extends IconNames
@@ -1210,6 +1216,9 @@ object atUifabricIconsStrings {
   sealed trait CompletedSolid extends IconNames
   
   @js.native
+  sealed trait ComplianceAudit extends IconNames
+  
+  @js.native
   sealed trait ConfigurationSolid extends IconNames
   
   @js.native
@@ -1328,6 +1337,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait Dataflows extends IconNames
+  
+  @js.native
+  sealed trait DataflowsLink extends IconNames
   
   @js.native
   sealed trait DateTime extends IconNames
@@ -2410,6 +2422,9 @@ object atUifabricIconsStrings {
   sealed trait HorizontalDistributeCenter extends IconNames
   
   @js.native
+  sealed trait HorizontalTabKey extends IconNames
+  
+  @js.native
   sealed trait Hospital extends IconNames
   
   @js.native
@@ -2501,6 +2516,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait InkingTool extends IconNames
+  
+  @js.native
+  sealed trait Insert extends IconNames
   
   @js.native
   sealed trait InsertColumnsLeft extends IconNames
@@ -2836,6 +2854,9 @@ object atUifabricIconsStrings {
   sealed trait MicOff extends IconNames
   
   @js.native
+  sealed trait MicOff2 extends IconNames
+  
+  @js.native
   sealed trait Microphone extends IconNames
   
   @js.native
@@ -2918,6 +2939,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait MusicNote extends IconNames
+  
+  @js.native
+  sealed trait MuteChat extends IconNames
   
   @js.native
   sealed trait MyMoviesTV extends IconNames
@@ -3262,6 +3286,9 @@ object atUifabricIconsStrings {
   sealed trait PageRight extends IconNames
   
   @js.native
+  sealed trait PageShared extends IconNames
+  
+  @js.native
   sealed trait PageSolid extends IconNames
   
   @js.native
@@ -3416,6 +3443,12 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait Pin extends IconNames
+  
+  @js.native
+  sealed trait PinSolid12 extends IconNames
+  
+  @js.native
+  sealed trait PinSolidOff12 extends IconNames
   
   @js.native
   sealed trait Pinned extends IconNames
@@ -3817,6 +3850,9 @@ object atUifabricIconsStrings {
   sealed trait ReminderPerson extends IconNames
   
   @js.native
+  sealed trait ReminderTime extends IconNames
+  
+  @js.native
   sealed trait Remote extends IconNames
   
   @js.native
@@ -4042,6 +4078,9 @@ object atUifabricIconsStrings {
   sealed trait ScheduleEventAction extends IconNames
   
   @js.native
+  sealed trait SchoolDataSyncLogo extends IconNames
+  
+  @js.native
   sealed trait ScopeTemplate extends IconNames
   
   @js.native
@@ -4136,6 +4175,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait ShareiOS extends IconNames
+  
+  @js.native
+  sealed trait SharepointAppIcon16 extends IconNames
   
   @js.native
   sealed trait SharepointLogo extends IconNames
@@ -4771,6 +4813,9 @@ object atUifabricIconsStrings {
   sealed trait TimeEntry extends IconNames
   
   @js.native
+  sealed trait TimePicker extends IconNames
+  
+  @js.native
   sealed trait TimeSheet extends IconNames
   
   @js.native
@@ -4901,6 +4946,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait TriggerUser extends IconNames
+  
+  @js.native
+  sealed trait Trim extends IconNames
   
   @js.native
   sealed trait TrimEnd extends IconNames
@@ -5045,6 +5093,9 @@ object atUifabricIconsStrings {
   
   @js.native
   sealed trait UserSync extends IconNames
+  
+  @js.native
+  sealed trait UserWarning extends IconNames
   
   @js.native
   sealed trait VB extends IconNames
@@ -5251,6 +5302,9 @@ object atUifabricIconsStrings {
   sealed trait WebTemplate extends IconNames
   
   @js.native
+  sealed trait Webcam2 extends IconNames
+  
+  @js.native
   sealed trait Website extends IconNames
   
   @js.native
@@ -5399,6 +5453,8 @@ object atUifabricIconsStrings {
   def AddHome: AddHome = "AddHome".asInstanceOf[AddHome]
   @scala.inline
   def AddIn: AddIn = "AddIn".asInstanceOf[AddIn]
+  @scala.inline
+  def AddLink: AddLink = "AddLink".asInstanceOf[AddLink]
   @scala.inline
   def AddNotes: AddNotes = "AddNotes".asInstanceOf[AddNotes]
   @scala.inline
@@ -5753,6 +5809,8 @@ object atUifabricIconsStrings {
   def BulletedListText: BulletedListText = "BulletedListText".asInstanceOf[BulletedListText]
   @scala.inline
   def BulletedListTextMirrored: BulletedListTextMirrored = "BulletedListTextMirrored".asInstanceOf[BulletedListTextMirrored]
+  @scala.inline
+  def BulletedTreeList: BulletedTreeList = "BulletedTreeList".asInstanceOf[BulletedTreeList]
   @scala.inline
   def Bullseye: Bullseye = "Bullseye".asInstanceOf[Bullseye]
   @scala.inline
@@ -6158,6 +6216,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def CompletedSolid: CompletedSolid = "CompletedSolid".asInstanceOf[CompletedSolid]
   @scala.inline
+  def ComplianceAudit: ComplianceAudit = "ComplianceAudit".asInstanceOf[ComplianceAudit]
+  @scala.inline
   def ConfigurationSolid: ConfigurationSolid = "ConfigurationSolid".asInstanceOf[ConfigurationSolid]
   @scala.inline
   def ConnectContacts: ConnectContacts = "ConnectContacts".asInstanceOf[ConnectContacts]
@@ -6237,6 +6297,8 @@ object atUifabricIconsStrings {
   def DatabaseSync: DatabaseSync = "DatabaseSync".asInstanceOf[DatabaseSync]
   @scala.inline
   def Dataflows: Dataflows = "Dataflows".asInstanceOf[Dataflows]
+  @scala.inline
+  def DataflowsLink: DataflowsLink = "DataflowsLink".asInstanceOf[DataflowsLink]
   @scala.inline
   def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
   @scala.inline
@@ -6958,6 +7020,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def HorizontalDistributeCenter: HorizontalDistributeCenter = "HorizontalDistributeCenter".asInstanceOf[HorizontalDistributeCenter]
   @scala.inline
+  def HorizontalTabKey: HorizontalTabKey = "HorizontalTabKey".asInstanceOf[HorizontalTabKey]
+  @scala.inline
   def Hospital: Hospital = "Hospital".asInstanceOf[Hospital]
   @scala.inline
   def Hotel: Hotel = "Hotel".asInstanceOf[Hotel]
@@ -7019,6 +7083,8 @@ object atUifabricIconsStrings {
   def InformationBarriers: InformationBarriers = "InformationBarriers".asInstanceOf[InformationBarriers]
   @scala.inline
   def InkingTool: InkingTool = "InkingTool".asInstanceOf[InkingTool]
+  @scala.inline
+  def Insert: Insert = "Insert".asInstanceOf[Insert]
   @scala.inline
   def InsertColumnsLeft: InsertColumnsLeft = "InsertColumnsLeft".asInstanceOf[InsertColumnsLeft]
   @scala.inline
@@ -7242,6 +7308,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def MicOff: MicOff = "MicOff".asInstanceOf[MicOff]
   @scala.inline
+  def MicOff2: MicOff2 = "MicOff2".asInstanceOf[MicOff2]
+  @scala.inline
   def Microphone: Microphone = "Microphone".asInstanceOf[Microphone]
   @scala.inline
   def MicrosoftFlowLogo: MicrosoftFlowLogo = "MicrosoftFlowLogo".asInstanceOf[MicrosoftFlowLogo]
@@ -7297,6 +7365,8 @@ object atUifabricIconsStrings {
   def MusicInCollectionFill: MusicInCollectionFill = "MusicInCollectionFill".asInstanceOf[MusicInCollectionFill]
   @scala.inline
   def MusicNote: MusicNote = "MusicNote".asInstanceOf[MusicNote]
+  @scala.inline
+  def MuteChat: MuteChat = "MuteChat".asInstanceOf[MuteChat]
   @scala.inline
   def MyMoviesTV: MyMoviesTV = "MyMoviesTV".asInstanceOf[MyMoviesTV]
   @scala.inline
@@ -7526,6 +7596,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def PageRight: PageRight = "PageRight".asInstanceOf[PageRight]
   @scala.inline
+  def PageShared: PageShared = "PageShared".asInstanceOf[PageShared]
+  @scala.inline
   def PageSolid: PageSolid = "PageSolid".asInstanceOf[PageSolid]
   @scala.inline
   def PanoIndicator: PanoIndicator = "PanoIndicator".asInstanceOf[PanoIndicator]
@@ -7629,6 +7701,10 @@ object atUifabricIconsStrings {
   def Pill: Pill = "Pill".asInstanceOf[Pill]
   @scala.inline
   def Pin: Pin = "Pin".asInstanceOf[Pin]
+  @scala.inline
+  def PinSolid12: PinSolid12 = "PinSolid12".asInstanceOf[PinSolid12]
+  @scala.inline
+  def PinSolidOff12: PinSolidOff12 = "PinSolidOff12".asInstanceOf[PinSolidOff12]
   @scala.inline
   def Pinned: Pinned = "Pinned".asInstanceOf[Pinned]
   @scala.inline
@@ -7896,6 +7972,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def ReminderPerson: ReminderPerson = "ReminderPerson".asInstanceOf[ReminderPerson]
   @scala.inline
+  def ReminderTime: ReminderTime = "ReminderTime".asInstanceOf[ReminderTime]
+  @scala.inline
   def Remote: Remote = "Remote".asInstanceOf[Remote]
   @scala.inline
   def Remove: Remove = "Remove".asInstanceOf[Remove]
@@ -8046,6 +8124,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def ScheduleEventAction: ScheduleEventAction = "ScheduleEventAction".asInstanceOf[ScheduleEventAction]
   @scala.inline
+  def SchoolDataSyncLogo: SchoolDataSyncLogo = "SchoolDataSyncLogo".asInstanceOf[SchoolDataSyncLogo]
+  @scala.inline
   def ScopeTemplate: ScopeTemplate = "ScopeTemplate".asInstanceOf[ScopeTemplate]
   @scala.inline
   def ScreenCast: ScreenCast = "ScreenCast".asInstanceOf[ScreenCast]
@@ -8109,6 +8189,8 @@ object atUifabricIconsStrings {
   def Share: Share = "Share".asInstanceOf[Share]
   @scala.inline
   def ShareiOS: ShareiOS = "ShareiOS".asInstanceOf[ShareiOS]
+  @scala.inline
+  def SharepointAppIcon16: SharepointAppIcon16 = "SharepointAppIcon16".asInstanceOf[SharepointAppIcon16]
   @scala.inline
   def SharepointLogo: SharepointLogo = "SharepointLogo".asInstanceOf[SharepointLogo]
   @scala.inline
@@ -8532,6 +8614,8 @@ object atUifabricIconsStrings {
   @scala.inline
   def TimeEntry: TimeEntry = "TimeEntry".asInstanceOf[TimeEntry]
   @scala.inline
+  def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
+  @scala.inline
   def TimeSheet: TimeSheet = "TimeSheet".asInstanceOf[TimeSheet]
   @scala.inline
   def Timeline: Timeline = "Timeline".asInstanceOf[Timeline]
@@ -8619,6 +8703,8 @@ object atUifabricIconsStrings {
   def TriggerAuto: TriggerAuto = "TriggerAuto".asInstanceOf[TriggerAuto]
   @scala.inline
   def TriggerUser: TriggerUser = "TriggerUser".asInstanceOf[TriggerUser]
+  @scala.inline
+  def Trim: Trim = "Trim".asInstanceOf[Trim]
   @scala.inline
   def TrimEnd: TrimEnd = "TrimEnd".asInstanceOf[TrimEnd]
   @scala.inline
@@ -8715,6 +8801,8 @@ object atUifabricIconsStrings {
   def UserRemove: UserRemove = "UserRemove".asInstanceOf[UserRemove]
   @scala.inline
   def UserSync: UserSync = "UserSync".asInstanceOf[UserSync]
+  @scala.inline
+  def UserWarning: UserWarning = "UserWarning".asInstanceOf[UserWarning]
   @scala.inline
   def VB: VB = "VB".asInstanceOf[VB]
   @scala.inline
@@ -8851,6 +8939,8 @@ object atUifabricIconsStrings {
   def WebPublish: WebPublish = "WebPublish".asInstanceOf[WebPublish]
   @scala.inline
   def WebTemplate: WebTemplate = "WebTemplate".asInstanceOf[WebTemplate]
+  @scala.inline
+  def Webcam2: Webcam2 = "Webcam2".asInstanceOf[Webcam2]
   @scala.inline
   def Website: Website = "Website".asInstanceOf[Website]
   @scala.inline

@@ -16,7 +16,7 @@ trait RouteConfig
   var exact: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   var location: js.UndefOr[Location[LocationState]] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | js.Array[String]] = js.undefined
   var render: js.UndefOr[js.Function1[/* props */ RouteConfigComponentProps[_], ReactNode]] = js.undefined
   var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
   var strict: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +30,7 @@ object RouteConfig {
     exact: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
     location: Location[LocationState] = null,
-    path: String = null,
+    path: String | js.Array[String] = null,
     render: /* props */ RouteConfigComponentProps[_] => ReactNode = null,
     routes: js.Array[RouteConfig] = null,
     strict: js.UndefOr[Boolean] = js.undefined
@@ -41,7 +41,7 @@ object RouteConfig {
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (routes != null) __obj.updateDynamic("routes")(routes)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)

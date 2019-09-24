@@ -4356,6 +4356,7 @@
 | 9 | [angular-scenario](./a/angular-scenario) | AngularJS module for end-to-end testing
 | 9 | [anybar](./a/anybar) | Control the AnyBar app
 | 9 | [arcgis-js-api](./a/arcgis-js-api) | Minified, unbuilt version of the ArcGIS API for Ja
+| 9 | [aria-query](./a/aria-query) | Programmatic access to the ARIA specification
 | 9 | [audiosprite](./a/audiosprite) | Concat small audio files into single file and expo
 | 9 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
 | 9 | [aws-sdk__node-http-handle](./a/aws-sdk__node-http-handler) | Provides a way to make requests
@@ -4687,10 +4688,12 @@
 | 7 | [prettier-package-json](./p/prettier-package-json) | Prettier formatter for package.json files
 | 7 | [proclaim](./p/proclaim) | A simple assertion library for server and client s
 | 7 | [progressbar](./p/progressbar) | A nice wrapper around 
+| 7 | [promise-poller](./p/promise-poller) | A basic poller built on top of promises
 | 7 | [radius](./r/radius) | RADIUS packet encoding/decoding
 | 7 | [radix64](./r/radix64) | radix64, library to convert Unsigned Interger into
 | 7 | [raspi-board](./r/raspi-board) | Pin mapping functionality for the Raspberry Pi in 
 | 7 | [rdf-data-model](./r/rdf-data-model) | A basic implementation of the RDFJS Data Model
+| 7 | [re2](./r/re2) | Bindings for RE2: fast, safe alternative to backtr
 | 7 | [react-async](./r/react-async) | React component for declarative promise resolution
 | 7 | [react-devtools](./r/react-devtools) | Use react-devtools outside of the browser
 | 7 | [react-dnd-test-backend](./r/react-dnd-test-backend) | A mock backend for testing React DnD apps
@@ -6844,6 +6847,7 @@
 | 0 | [nssm](./n/nssm) | Wrapper for nssm.exe to manage windows services
 | 0 | [o_dot_js](./o/o_dot_js) | o.js is a isomorphic Odata Javascript library to s
 | 0 | [oakdex-pokedex](./o/oakdex-pokedex) | Comprehensive Pokedex for Gen 1-7
+| 0 | [object-joiner](./o/object-joiner) | A tiny utility that merges JavaScript objects by b
 | 0 | [object-keys-mapping](./o/object-keys-mapping) | mapping object keys
 | 0 | [oblo-util](./o/oblo-util) | Utilities module suitable for both Node.js and cli
 | 0 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
@@ -7030,6 +7034,7 @@
 | 0 | [socketty](./s/socketty) | Server side socketty, based on ws
 | 0 | [soundjs](./s/soundjs) | A JavaScript library that provides a simple API, a
 | 0 | [soupbintcp](./s/soupbintcp) | NASDAQ SoupBinTCP 3.00 client and server
+| 0 | [spectrogram](./s/spectrogram) | Audio spectrogram in canvas.
 | 0 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan
 | 0 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API"
 | 0 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a numb

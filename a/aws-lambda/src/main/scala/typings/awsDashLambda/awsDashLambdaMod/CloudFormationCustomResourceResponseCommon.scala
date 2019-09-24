@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait CloudFormationCustomResourceResponseCommon extends js.Object {
   var Data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var LogicalResourceId: String
+  var NoEcho: js.UndefOr[Boolean] = js.undefined
   var PhysicalResourceId: String
   var RequestId: String
   var StackId: String
@@ -20,10 +21,12 @@ object CloudFormationCustomResourceResponseCommon {
     PhysicalResourceId: String,
     RequestId: String,
     StackId: String,
-    Data: StringDictionary[js.Any] = null
+    Data: StringDictionary[js.Any] = null,
+    NoEcho: js.UndefOr[Boolean] = js.undefined
   ): CloudFormationCustomResourceResponseCommon = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, PhysicalResourceId = PhysicalResourceId, RequestId = RequestId, StackId = StackId)
     if (Data != null) __obj.updateDynamic("Data")(Data)
+    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho)
     __obj.asInstanceOf[CloudFormationCustomResourceResponseCommon]
   }
 }
