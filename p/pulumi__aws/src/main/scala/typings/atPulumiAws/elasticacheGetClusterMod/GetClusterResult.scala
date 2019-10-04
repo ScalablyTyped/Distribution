@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheGetClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Address
+import typings.atPulumiAws.typesOutputMod.elasticacheNs.GetClusterCacheNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GetClusterResult extends js.Object {
     * List of node objects including `id`, `address`, `port` and `availabilityZone`.
     * Referenceable e.g. as `${data.aws_elasticache_cluster.bar.cache_nodes.0.address}`
     */
-  val cacheNodes: js.Array[Anon_Address]
+  val cacheNodes: js.Array[GetClusterCacheNode]
   /**
     * (Memcached only) The DNS name of the cache cluster without the port appended.
     */
@@ -102,7 +102,7 @@ object GetClusterResult {
   def apply(
     arn: String,
     availabilityZone: String,
-    cacheNodes: js.Array[Anon_Address],
+    cacheNodes: js.Array[GetClusterCacheNode],
     clusterAddress: String,
     clusterId: String,
     configurationEndpoint: String,

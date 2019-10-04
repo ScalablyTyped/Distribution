@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.VrDisplay
+  * @extends pc.EventHandler
   * @classdesc Represents a single Display for VR content. This could be a Head Mounted display that can present content on a separate screen
   * or a phone which can display content full screen on the same screen. This object contains the native `navigator.VRDisplay` object
   * from the WebVR API.
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.VrDisplay")
 @js.native
-class VrDisplay protected () extends js.Object {
+class VrDisplay protected () extends EventHandler {
   def this(app: Application, display: VRDisplay) = this()
   /**
     * Returns the <a href="https://w3c.github.io/webvr/#interface-vrdisplaycapabilities" target="_blank">VRDisplayCapabilities</a> object from the VRDisplay.

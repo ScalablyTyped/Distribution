@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-relay
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 A framework for building GraphQL-driven React applications.

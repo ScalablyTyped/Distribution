@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsOptionGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DbSecurityGroupMembershipsOptionName
+import typings.atPulumiAws.typesInputMod.rdsNs.OptionGroupOption
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait OptionGroupArgs extends js.Object {
   /**
     * A list of Options to apply.
     */
-  val options: js.UndefOr[Input[js.Array[Input[Anon_DbSecurityGroupMembershipsOptionName]]]] = js.undefined
+  val options: js.UndefOr[Input[js.Array[Input[OptionGroupOption]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -46,7 +46,7 @@ object OptionGroupArgs {
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     optionGroupDescription: Input[String] = null,
-    options: Input[js.Array[Input[Anon_DbSecurityGroupMembershipsOptionName]]] = null,
+    options: Input[js.Array[Input[OptionGroupOption]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): OptionGroupArgs = {
     val __obj = js.Dynamic.literal(engineName = engineName.asInstanceOf[js.Any], majorEngineVersion = majorEngineVersion.asInstanceOf[js.Any])

@@ -28,10 +28,12 @@ import typings.electron.electronStrings.`did-start-loading`
 import typings.electron.electronStrings.`did-start-navigation`
 import typings.electron.electronStrings.`did-stop-loading`
 import typings.electron.electronStrings.`dom-ready`
+import typings.electron.electronStrings.`enter-html-full-screen`
 import typings.electron.electronStrings.`foreground-tab`
 import typings.electron.electronStrings.`found-in-page`
 import typings.electron.electronStrings.`ipc-message-sync`
 import typings.electron.electronStrings.`ipc-message`
+import typings.electron.electronStrings.`leave-html-full-screen`
 import typings.electron.electronStrings.`media-paused`
 import typings.electron.electronStrings.`media-started-playing`
 import typings.electron.electronStrings.`new-window`
@@ -265,6 +267,8 @@ class WebContents () extends EventEmitter {
   @JSName("addListener")
   def addListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("addListener")
+  def addListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
+  @JSName("addListener")
   def addListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_ipcmessage(
@@ -276,6 +280,8 @@ class WebContents () extends EventEmitter {
     event: `ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
+  @JSName("addListener")
+  def addListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_login(
     event: login,
@@ -419,7 +425,7 @@ class WebContents () extends EventEmitter {
     * Captures a snapshot of the page within rect. Omitting rect will capture the
     * whole visible page.
     */
-  def capturePage(): Unit = js.native
+  def capturePage(): js.Promise[NativeImage] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
@@ -427,7 +433,7 @@ class WebContents () extends EventEmitter {
     * Deprecated Soon
     */
   def capturePage(callback: js.Function1[/* image */ NativeImage, Unit]): Unit = js.native
-  def capturePage(rect: Rectangle): Unit = js.native
+  def capturePage(rect: Rectangle): js.Promise[NativeImage] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
@@ -479,10 +485,7 @@ class WebContents () extends EventEmitter {
   /**
     * Evaluates code in page. In the browser window some HTML APIs like
     * requestFullScreen can only be invoked by a gesture from the user. Setting
-    * userGesture to true will remove this limitation. If the result of the executed
-    * code is a promise the callback result will be the resolved value of the promise.
-    * We recommend that you use the returned Promise to handle code that results in a
-    * Promise.
+    * userGesture to true will remove this limitation. Deprecated Soon
     */
   def executeJavaScript(code: String): js.Promise[_] = js.native
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
@@ -528,11 +531,6 @@ class WebContents () extends EventEmitter {
     */
   def goToOffset(offset: Double): Unit = js.native
   /**
-    * Checks if any ServiceWorker is registered and returns a boolean as response to
-    * callback.
-    */
-  def hasServiceWorker(callback: js.Function1[/* hasWorker */ Boolean, Unit]): Unit = js.native
-  /**
     * Injects CSS into the current web page.
     */
   def insertCSS(css: String): Unit = js.native
@@ -548,6 +546,10 @@ class WebContents () extends EventEmitter {
     * Opens the developer tools for the service worker context.
     */
   def inspectServiceWorker(): Unit = js.native
+  /**
+    * Opens the developer tools for the shared worker context.
+    */
+  def inspectSharedWorker(): Unit = js.native
   /**
     * Schedules a full repaint of the window this web contents is in. If offscreen
     * rendering is enabled invalidates the frame and generates a new one through the
@@ -871,6 +873,11 @@ class WebContents () extends EventEmitter {
   @JSName("on")
   def on_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
+    * Emitted when the window enters a full-screen state triggered by HTML API.
+    */
+  @JSName("on")
+  def on_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
+  /**
     * Emitted when a result is available for [webContents.findInPage] request.
     */
   @JSName("on")
@@ -893,6 +900,11 @@ class WebContents () extends EventEmitter {
     event: `ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
+  /**
+    * Emitted when the window leaves a full-screen state triggered by HTML API.
+    */
+  @JSName("on")
+  def on_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when webContents wants to do basic auth. The usage is the same with the
     * login event of app.
@@ -1286,6 +1298,8 @@ class WebContents () extends EventEmitter {
   @JSName("once")
   def once_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("once")
+  def once_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
+  @JSName("once")
   def once_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
   @JSName("once")
   def once_ipcmessage(
@@ -1297,6 +1311,8 @@ class WebContents () extends EventEmitter {
     event: `ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
+  @JSName("once")
+  def once_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_login(
     event: login,
@@ -1434,11 +1450,16 @@ class WebContents () extends EventEmitter {
   def print(options: PrintOptions, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   /**
     * Prints window's web page as PDF with Chromium's preview printing custom
+    * settings. The landscape will be ignored if @page CSS at-rule is used in the web
+    * page. By default, an empty options will be regarded as: Use page-break-before:
+    * always; CSS style to force to print to a new page. An example of
+    * webContents.printToPDF:
+    */
+  def printToPDF(options: PrintToPDFOptions): js.Promise[Buffer] = js.native
+  /**
+    * Prints window's web page as PDF with Chromium's preview printing custom
     * settings. The callback will be called with callback(error, data) on completion.
-    * The data is a Buffer that contains the generated PDF data. The landscape will be
-    * ignored if @page CSS at-rule is used in the web page. By default, an empty
-    * options will be regarded as: Use page-break-before: always; CSS style to force
-    * to print to a new page. An example of webContents.printToPDF:
+    * The data is a Buffer that contains the generated PDF data. Deprecated Soon
     */
   def printToPDF(options: PrintToPDFOptions, callback: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native
   /**
@@ -1631,6 +1652,8 @@ class WebContents () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeListener")
+  def removeListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
   def removeListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_ipcmessage(
@@ -1642,6 +1665,8 @@ class WebContents () extends EventEmitter {
     event: `ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_login(
     event: login,
@@ -1765,11 +1790,11 @@ class WebContents () extends EventEmitter {
     */
   def replaceMisspelling(text: String): Unit = js.native
   @JSName("savePage")
-  def savePage_HTMLComplete(fullPath: String, saveType: HTMLComplete, callback: js.Function1[/* error */ Error, Unit]): Boolean = js.native
+  def savePage_HTMLComplete(fullPath: String, saveType: HTMLComplete): js.Promise[Unit] = js.native
   @JSName("savePage")
-  def savePage_HTMLOnly(fullPath: String, saveType: HTMLOnly, callback: js.Function1[/* error */ Error, Unit]): Boolean = js.native
+  def savePage_HTMLOnly(fullPath: String, saveType: HTMLOnly): js.Promise[Unit] = js.native
   @JSName("savePage")
-  def savePage_MHTML(fullPath: String, saveType: MHTML, callback: js.Function1[/* error */ Error, Unit]): Boolean = js.native
+  def savePage_MHTML(fullPath: String, saveType: MHTML): js.Promise[Unit] = js.native
   /**
     * Executes the editing command selectAll in web page.
     */
@@ -1910,12 +1935,6 @@ class WebContents () extends EventEmitter {
     * Executes the editing command undo in web page.
     */
   def undo(): Unit = js.native
-  /**
-    * Unregisters any ServiceWorker if present and returns a boolean as response to
-    * callback when the JS promise is fulfilled or false when the JS promise is
-    * rejected.
-    */
-  def unregisterServiceWorker(callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   /**
     * Executes the editing command unselect in web page.
     */

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-centered"
-version := "3.4-dt-20190605Z-7d31d1"
+version := "3.4-dt-20190605Z-2c51d8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-06c3ac",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-b3917f",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-f64966")
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-7f1dac")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

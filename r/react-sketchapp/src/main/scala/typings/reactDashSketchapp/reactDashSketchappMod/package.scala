@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 package object reactDashSketchappMod {
   import typings.reactDashSketchapp.Anon_Src
 
-  type Color = String | Double
   type ImageSource = String | Anon_Src
   type StyleReference = Double
 }

@@ -1,8 +1,6 @@
 package typings.tstl.tstlMod
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.Pick
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerSetContainerMod.SetContainer
@@ -19,12 +17,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "experimental")
 @js.native
 object experimentalNs extends js.Object {
-  @js.native
-  class Barrier protected ()
-    extends typings.tstl.experimentalMod.Barrier {
-    def this(size: Double) = this()
-  }
-  
   @js.native
   /**
     * Default Constructor.
@@ -187,41 +179,6 @@ object experimentalNs extends js.Object {
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
       comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
     ) = this()
-  }
-  
-  @js.native
-  class FlexBarrier protected ()
-    extends typings.tstl.experimentalMod.FlexBarrier {
-    /**
-      * Initializer Constructor.
-      *
-      * @param size Size of the downward counter.
-      * @param complete Complete function re-configuring *size* when downward count be zero. Default is a function always returning -1, which means the barrier is not reusable more.
-      */
-    def this(size: Double) = this()
-    def this(size: Double, complete: js.Function0[Double]) = this()
-  }
-  
-  @js.native
-  class Latch protected ()
-    extends typings.tstl.experimentalMod.Latch {
-    /**
-      * Initializer Constructor.
-      *
-      * @param size Size of the downward counter.
-      */
-    def this(size: Double) = this()
-  }
-  
-  @js.native
-  class Semaphore[Max /* <: Double */] protected ()
-    extends typings.tstl.experimentalMod.Semaphore[Max] {
-    /**
-      * Initializer Constructor.
-      *
-      * @param max Number of maximum sections lockable.
-      */
-    def this(max: Max) = this()
   }
   
   @js.native
@@ -388,17 +345,6 @@ object experimentalNs extends js.Object {
     ) = this()
   }
   
-  val barrier: Instantiable1[/* size */ Double, typings.tstl.experimentalThreadBarrierMod.Barrier] = js.native
-  val couting_semaphore: Instantiable1[
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam Max */ /* max */ js.Any, 
-    typings.tstl.experimentalThreadSemaphoreMod.Semaphore[Double]
-  ] = js.native
-  val flex_barrier: Instantiable2[
-    /* size */ Double, 
-    js.UndefOr[/* complete */ js.Function0[Double]], 
-    typings.tstl.experimentalThreadFlexBarrierMod.FlexBarrier
-  ] = js.native
-  val latch: Instantiable1[/* size */ Double, typings.tstl.experimentalThreadLatchMod.Latch] = js.native
   def erase[Container /* <: Pick[_IListAlgorithm[ValueType[Container], Container], remove_if] */](contaier: Container, `val`: ValueType[Container]): Unit = js.native
   @JSName("erase")
   def erase_Container_IErasableContainerIteratorIterator_IForwardIteratorValueTypeIteratorIterator[Container /* <: IErasableContainer[Iterator] */, Iterator /* <: IForwardIterator[typings.tstl.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator] */](container: Container, `val`: typings.tstl.functionalIPointerMod.IPointerNs.ValueType[Iterator]): Unit = js.native

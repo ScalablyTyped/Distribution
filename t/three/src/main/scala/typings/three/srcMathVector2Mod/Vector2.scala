@@ -103,12 +103,19 @@ class Vector2 () extends Vector {
   	 */
   def floor(): this.type = js.native
   /**
-  	 * Sets this vector's x value to be array[offset] and y value to be array[offset + 1].
+  	 * Sets this vector's x and y value from the provided array.
   	 * @param array the source array.
   	 * @param offset (optional) offset into the array. Default is 0.
   	 */
   def fromArray(array: js.Array[Double]): this.type = js.native
   def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this vector's x and y value from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): this.type = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
   /**
   	 * Sets this vector's x and y values from the attribute.
   	 * @param attribute the source attribute.

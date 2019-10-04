@@ -42,17 +42,17 @@ trait View extends js.Object {
   /* Find contextual template resource */
   def getRsc(namedCollection: String, itemName: String): js.Any = js.native
   /**
-    * Template render method: render the template as a string, using the specified data and helpers/context
-    * var htmlString = template(data, myHelpersObject);
-    * var htmlString = template.render(data, myHelpersObject);
-    *
-    * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
-    *
-    * @param {any}        data
-    * @param {hash}       [helpersOrContext]
-    * @param {boolean}    [noIteration]
-    * @returns {string}   rendered template
-    */
+  	 * Template render method: render the template as a string, using the specified data and helpers/context
+  	 * var htmlString = template(data, myHelpersObject);
+  	 * var htmlString = template.render(data, myHelpersObject);
+  	 *
+  	 * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
+  	 *
+  	 * @param {any}        data
+  	 * @param {hash}       [helpersOrContext]
+  	 * @param {boolean}    [noIteration]
+  	 * @returns {string}   rendered template
+  	 */
   /* Template rendered by view */
   def tmpl(): String = js.native
   def tmpl(data: js.Any): String = js.native

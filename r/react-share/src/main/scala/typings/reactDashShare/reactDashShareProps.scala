@@ -18,14 +18,8 @@ trait reactDashShareProps {
   def FacebookShareCountProps: ShareCountComponentProps.type = typings.reactDashShare.reactDashShareMod.ShareCountComponentProps
   type FacebookShareCountProps = ShareCountComponentProps
   @scala.inline
-  def GooglePlusIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
-  type GooglePlusIconProps = IconComponentProps
-  @scala.inline
-  def GooglePlusShareButtonProps: CommonShareButtonProps.type = typings.reactDashShare.reactDashShareMod.CommonShareButtonProps
-  type GooglePlusShareButtonProps = CommonShareButtonProps
-  @scala.inline
-  def GooglePlusShareCountProps: ShareCountComponentProps.type = typings.reactDashShare.reactDashShareMod.ShareCountComponentProps
-  type GooglePlusShareCountProps = ShareCountComponentProps
+  def InstapaperIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
+  type InstapaperIconProps = IconComponentProps
   @scala.inline
   def LineIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
   type LineIconProps = IconComponentProps
@@ -33,8 +27,8 @@ trait reactDashShareProps {
   def LinkedinIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
   type LinkedinIconProps = IconComponentProps
   @scala.inline
-  def LinkedinShareCountProps: ShareCountComponentProps.type = typings.reactDashShare.reactDashShareMod.ShareCountComponentProps
-  type LinkedinShareCountProps = ShareCountComponentProps
+  def LinkedinShareButtonProps: CommonShareButtonProps.type = typings.reactDashShare.reactDashShareMod.CommonShareButtonProps
+  type LinkedinShareButtonProps = CommonShareButtonProps
   @scala.inline
   def LivejournalIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
   type LivejournalIconProps = IconComponentProps
@@ -53,6 +47,9 @@ trait reactDashShareProps {
   @scala.inline
   def PinterestShareCountProps: ShareCountComponentProps.type = typings.reactDashShare.reactDashShareMod.ShareCountComponentProps
   type PinterestShareCountProps = ShareCountComponentProps
+  @scala.inline
+  def PocketIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
+  type PocketIconProps = IconComponentProps
   @scala.inline
   def RedditIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
   type RedditIconProps = IconComponentProps
@@ -78,7 +75,13 @@ trait reactDashShareProps {
   def VKShareCountProps: ShareCountComponentProps.type = typings.reactDashShare.reactDashShareMod.ShareCountComponentProps
   type VKShareCountProps = ShareCountComponentProps
   @scala.inline
+  def ViberIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
+  type ViberIconProps = IconComponentProps
+  @scala.inline
   def WhatsappIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
   type WhatsappIconProps = IconComponentProps
+  @scala.inline
+  def WorkplaceIconProps: IconComponentProps.type = typings.reactDashShare.reactDashShareMod.IconComponentProps
+  type WorkplaceIconProps = IconComponentProps
 }
 

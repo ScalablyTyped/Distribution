@@ -1,16 +1,16 @@
 package typings.atPulumiAws.ec2GetRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlockEgressOnlyGatewayIdGatewayId
-import typings.atPulumiAws.Anon_Main
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetRouteTableAssociation
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetRouteTableFilter
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetRouteTableRoute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetRouteTableResult extends js.Object {
-  val associations: js.Array[Anon_Main]
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val associations: js.Array[GetRouteTableAssociation]
+  val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -23,7 +23,7 @@ trait GetRouteTableResult extends js.Object {
     * The Route Table ID.
     */
   val routeTableId: String
-  val routes: js.Array[Anon_CidrBlockEgressOnlyGatewayIdGatewayId]
+  val routes: js.Array[GetRouteTableRoute]
   /**
     * The Subnet ID.
     */
@@ -35,15 +35,15 @@ trait GetRouteTableResult extends js.Object {
 object GetRouteTableResult {
   @scala.inline
   def apply(
-    associations: js.Array[Anon_Main],
+    associations: js.Array[GetRouteTableAssociation],
     id: String,
     ownerId: String,
     routeTableId: String,
-    routes: js.Array[Anon_CidrBlockEgressOnlyGatewayIdGatewayId],
+    routes: js.Array[GetRouteTableRoute],
     subnetId: String,
     tags: StringDictionary[js.Any],
     vpcId: String,
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetRouteTableFilter] = null
   ): GetRouteTableResult = {
     val __obj = js.Dynamic.literal(associations = associations, id = id, ownerId = ownerId, routeTableId = routeTableId, routes = routes, subnetId = subnetId, tags = tags, vpcId = vpcId)
     if (filters != null) __obj.updateDynamic("filters")(filters)

@@ -2076,5 +2076,6 @@ trait BigIntegerStatic extends js.Object {
     * Returns a random number between min and max.
     */
   def randBetween(min: BigNumber, max: BigNumber): BigInteger = js.native
+  def randBetween(min: BigNumber, max: BigNumber, rng: js.Function0[Double]): BigInteger = js.native
 }
 

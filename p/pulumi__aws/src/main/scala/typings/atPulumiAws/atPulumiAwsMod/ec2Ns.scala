@@ -1800,6 +1800,13 @@ object ec2Ns extends js.Object {
     val T3_Nano: InstanceType = js.native
     val T3_Small: InstanceType = js.native
     val T3_XLarge: InstanceType = js.native
+    val T3a_2XLarge: InstanceType = js.native
+    val T3a_Large: InstanceType = js.native
+    val T3a_Medium: InstanceType = js.native
+    val T3a_Micro: InstanceType = js.native
+    val T3a_Nano: InstanceType = js.native
+    val T3a_Small: InstanceType = js.native
+    val T3a_XLarge: InstanceType = js.native
     val U_12tb1Metal: InstanceType = js.native
     val U_6tb1Metal: InstanceType = js.native
     val U_9tb1Metal: InstanceType = js.native

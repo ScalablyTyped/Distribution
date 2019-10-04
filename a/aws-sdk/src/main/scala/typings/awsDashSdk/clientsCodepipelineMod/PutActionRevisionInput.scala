@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PutActionRevisionInput extends js.Object {
   /**
-    * The name of the action that will process the revision.
+    * The name of the action that processes the revision.
     */
   var actionName: ActionName
   /**
@@ -14,11 +14,11 @@ trait PutActionRevisionInput extends js.Object {
     */
   var actionRevision: ActionRevision
   /**
-    * The name of the pipeline that will start processing the revision to the source.
+    * The name of the pipeline that starts processing the revision to the source.
     */
   var pipelineName: PipelineName
   /**
-    * The name of the stage that contains the action that will act upon the revision.
+    * The name of the stage that contains the action that acts on the revision.
     */
   var stageName: StageName
 }

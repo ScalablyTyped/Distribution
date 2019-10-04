@@ -1,7 +1,7 @@
 
 # Scala.js typings for rox-react-native
 
-Typings are for version 4.5
+Typings are for version 4.8
 
 ## Library description:
 Rollout.io ROX JS SDK Client

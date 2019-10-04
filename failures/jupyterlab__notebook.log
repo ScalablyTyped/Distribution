@@ -306,4 +306,3 @@
 [E] Failed to compile 'jupyterlab__notebook'
  [id => @jupyterlab/notebook, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@jupyterlab/notebook => Compilation failed] [id => @jupyterlab/notebook, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@jupyterlab/notebook => Compilation failed] [id => @jupyterlab/notebook, phase => publish] 

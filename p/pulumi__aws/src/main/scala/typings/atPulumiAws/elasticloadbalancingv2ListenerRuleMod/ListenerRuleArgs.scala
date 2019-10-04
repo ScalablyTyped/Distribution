@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticloadbalancingv2ListenerRuleMod
 
-import typings.atPulumiAws.Anon_AuthenticateCognitoAuthenticateOidc
-import typings.atPulumiAws.Anon_FieldValues
+import typings.atPulumiAws.typesInputMod.elasticloadbalancingv2Ns.ListenerRuleAction
+import typings.atPulumiAws.typesInputMod.elasticloadbalancingv2Ns.ListenerRuleCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,11 +11,11 @@ trait ListenerRuleArgs extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: Input[js.Array[Input[Anon_AuthenticateCognitoAuthenticateOidc]]]
+  val actions: Input[js.Array[Input[ListenerRuleAction]]]
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: Input[js.Array[Input[Anon_FieldValues]]]
+  val conditions: Input[js.Array[Input[ListenerRuleCondition]]]
   /**
     * The ARN of the listener to which to attach the rule.
     */
@@ -29,8 +29,8 @@ trait ListenerRuleArgs extends js.Object {
 object ListenerRuleArgs {
   @scala.inline
   def apply(
-    actions: Input[js.Array[Input[Anon_AuthenticateCognitoAuthenticateOidc]]],
-    conditions: Input[js.Array[Input[Anon_FieldValues]]],
+    actions: Input[js.Array[Input[ListenerRuleAction]]],
+    conditions: Input[js.Array[Input[ListenerRuleCondition]]],
     listenerArn: Input[String],
     priority: Input[Double] = null
   ): ListenerRuleArgs = {

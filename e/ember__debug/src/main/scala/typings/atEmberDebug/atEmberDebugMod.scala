@@ -10,6 +10,7 @@ object atEmberDebugMod extends js.Object {
   def assert(desc: String): Unit | scala.Nothing = js.native
   def assert(desc: String, test: Boolean): Unit | scala.Nothing = js.native
   def debug(message: String): Unit = js.native
+  def deprecate(message: String, test: Boolean, options: Anon_IdUntil): Unit = js.native
   def inspect(obj: js.Any): String = js.native
   def registerDeprecationHandler(
     handler: js.Function3[/* message */ String, /* options */ Anon_Id, /* next */ js.Function0[Unit], Unit]

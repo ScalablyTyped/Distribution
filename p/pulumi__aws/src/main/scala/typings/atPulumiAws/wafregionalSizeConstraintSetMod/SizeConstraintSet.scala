@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalSizeConstraintSetMod
 
-import typings.atPulumiAws.Anon_ComparisonOperatorFieldToMatch
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.SizeConstraintSetSizeConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class SizeConstraintSet protected () extends CustomResource {
   /**
     * Specifies the parts of web requests that you want to inspect the size of.
     */
-  val sizeConstraints: Output[js.UndefOr[js.Array[Anon_ComparisonOperatorFieldToMatch]]] = js.native
+  val sizeConstraints: Output[js.UndefOr[js.Array[SizeConstraintSetSizeConstraint]]] = js.native
 }
 
 /* static members */

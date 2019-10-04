@@ -1,6 +1,6 @@
 package typings.atPulumiAws.redshiftSecurityGroupMod
 
-import typings.atPulumiAws.Anon_CidrSecurityGroupNameSecurityGroupOwnerId
+import typings.atPulumiAws.typesInputMod.redshiftNs.SecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait SecurityGroupArgs extends js.Object {
   /**
     * A list of ingress rules.
     */
-  val ingress: Input[js.Array[Input[Anon_CidrSecurityGroupNameSecurityGroupOwnerId]]]
+  val ingress: Input[js.Array[Input[SecurityGroupIngress]]]
   /**
     * The name of the Redshift security group.
     */
@@ -24,7 +24,7 @@ trait SecurityGroupArgs extends js.Object {
 object SecurityGroupArgs {
   @scala.inline
   def apply(
-    ingress: Input[js.Array[Input[Anon_CidrSecurityGroupNameSecurityGroupOwnerId]]],
+    ingress: Input[js.Array[Input[SecurityGroupIngress]]],
     description: Input[String] = null,
     name: Input[String] = null
   ): SecurityGroupArgs = {

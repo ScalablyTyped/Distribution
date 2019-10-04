@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Tags
+  * @extends pc.EventHandler
   * @classdesc Set of tag names
   * @description Create an instance of a Tags.
   * @param {Object} [parent] Parent object who tags belong to.
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.Tags")
 @js.native
-class Tags () extends js.Object {
+class Tags () extends EventHandler {
   def this(parent: js.Any) = this()
   /**
     * @field

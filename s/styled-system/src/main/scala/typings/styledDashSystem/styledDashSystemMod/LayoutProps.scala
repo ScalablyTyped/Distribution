@@ -6,6 +6,9 @@ import typings.csstype.csstypeMod.MaxHeightProperty
 import typings.csstype.csstypeMod.MaxWidthProperty
 import typings.csstype.csstypeMod.MinHeightProperty
 import typings.csstype.csstypeMod.MinWidthProperty
+import typings.csstype.csstypeMod.OverflowProperty
+import typings.csstype.csstypeMod.OverflowXProperty
+import typings.csstype.csstypeMod.OverflowYProperty
 import typings.csstype.csstypeMod.VerticalAlignProperty
 import typings.csstype.csstypeMod.WidthProperty
 import scala.scalajs.js
@@ -22,6 +25,7 @@ trait LayoutProps
      with DisplayProps
      with VerticalAlignProps[TLengthStyledSystem]
      with SizeProps[TLengthStyledSystem]
+     with OverflowProps
 
 object LayoutProps {
   @scala.inline
@@ -32,6 +36,9 @@ object LayoutProps {
     maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem]] = null,
     minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem]] = null,
     minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem]] = null,
+    overflow: ResponsiveValue[OverflowProperty] = null,
+    overflowX: ResponsiveValue[OverflowXProperty] = null,
+    overflowY: ResponsiveValue[OverflowYProperty] = null,
     size: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
     verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem]] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
@@ -43,6 +50,9 @@ object LayoutProps {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

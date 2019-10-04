@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ProviderAnonVirtualNodeVirtualRouterAnonVirtualNodeNameInput
+import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualServiceSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait VirtualServiceState extends js.Object {
   /**
     * The virtual service specification to apply.
     */
-  val spec: js.UndefOr[Input[Anon_ProviderAnonVirtualNodeVirtualRouterAnonVirtualNodeNameInput]] = js.undefined
+  val spec: js.UndefOr[Input[VirtualServiceSpec]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -46,7 +46,7 @@ object VirtualServiceState {
     lastUpdatedDate: Input[String] = null,
     meshName: Input[String] = null,
     name: Input[String] = null,
-    spec: Input[Anon_ProviderAnonVirtualNodeVirtualRouterAnonVirtualNodeNameInput] = null,
+    spec: Input[VirtualServiceSpec] = null,
     tags: Input[StringDictionary[_]] = null
   ): VirtualServiceState = {
     val __obj = js.Dynamic.literal()

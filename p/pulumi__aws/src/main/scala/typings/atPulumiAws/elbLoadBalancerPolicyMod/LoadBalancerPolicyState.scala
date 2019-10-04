@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elbLoadBalancerPolicyMod
 
-import typings.atPulumiAws.Anon_NameValueInput
+import typings.atPulumiAws.typesInputMod.elbNs.LoadBalancerPolicyPolicyAttribute
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait LoadBalancerPolicyState extends js.Object {
   /**
     * Policy attribute to apply to the policy.
     */
-  val policyAttributes: js.UndefOr[Input[js.Array[Input[Anon_NameValueInput]]]] = js.undefined
+  val policyAttributes: js.UndefOr[Input[js.Array[Input[LoadBalancerPolicyPolicyAttribute]]]] = js.undefined
   /**
     * The name of the load balancer policy.
     */
@@ -29,7 +29,7 @@ object LoadBalancerPolicyState {
   @scala.inline
   def apply(
     loadBalancerName: Input[String] = null,
-    policyAttributes: Input[js.Array[Input[Anon_NameValueInput]]] = null,
+    policyAttributes: Input[js.Array[Input[LoadBalancerPolicyPolicyAttribute]]] = null,
     policyName: Input[String] = null,
     policyTypeName: Input[String] = null
   ): LoadBalancerPolicyState = {

@@ -1,16 +1,16 @@
 package typings.atPulumiAws.iotTopicRuleMod
 
-import typings.atPulumiAws.Anon_AlarmName
-import typings.atPulumiAws.Anon_BucketName
-import typings.atPulumiAws.Anon_DeliveryStreamName
-import typings.atPulumiAws.Anon_EndpointIdIndex
-import typings.atPulumiAws.Anon_FunctionArn
-import typings.atPulumiAws.Anon_HashKeyField
-import typings.atPulumiAws.Anon_MessageFormat
-import typings.atPulumiAws.Anon_MetricName
-import typings.atPulumiAws.Anon_PartitionKey
-import typings.atPulumiAws.Anon_QueueUrl
-import typings.atPulumiAws.Anon_RoleArn
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleCloudwatchAlarm
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleCloudwatchMetric
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleDynamodb
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleElasticsearch
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleFirehose
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleKinesis
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleLambda
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleRepublish
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleS3
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleSns
+import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleSqs
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -36,28 +36,28 @@ class TopicRule protected () extends CustomResource {
     * The ARN of the topic rule
     */
   val arn: Output[String] = js.native
-  val cloudwatchAlarm: Output[js.UndefOr[Anon_AlarmName]] = js.native
-  val cloudwatchMetric: Output[js.UndefOr[Anon_MetricName]] = js.native
+  val cloudwatchAlarm: Output[js.UndefOr[TopicRuleCloudwatchAlarm]] = js.native
+  val cloudwatchMetric: Output[js.UndefOr[TopicRuleCloudwatchMetric]] = js.native
   /**
     * The description of the rule.
     */
   val description: Output[js.UndefOr[String]] = js.native
-  val dynamodb: Output[js.UndefOr[Anon_HashKeyField]] = js.native
-  val elasticsearch: Output[js.UndefOr[Anon_EndpointIdIndex]] = js.native
+  val dynamodb: Output[js.UndefOr[TopicRuleDynamodb]] = js.native
+  val elasticsearch: Output[js.UndefOr[TopicRuleElasticsearch]] = js.native
   /**
     * Specifies whether the rule is enabled.
     */
   val enabled: Output[Boolean] = js.native
-  val firehose: Output[js.UndefOr[Anon_DeliveryStreamName]] = js.native
-  val kinesis: Output[js.UndefOr[Anon_PartitionKey]] = js.native
-  val lambda: Output[js.UndefOr[Anon_FunctionArn]] = js.native
+  val firehose: Output[js.UndefOr[TopicRuleFirehose]] = js.native
+  val kinesis: Output[js.UndefOr[TopicRuleKinesis]] = js.native
+  val lambda: Output[js.UndefOr[TopicRuleLambda]] = js.native
   /**
     * The name of the rule.
     */
   val name: Output[String] = js.native
-  val republish: Output[js.UndefOr[Anon_RoleArn]] = js.native
-  val s3: Output[js.UndefOr[Anon_BucketName]] = js.native
-  val sns: Output[js.UndefOr[Anon_MessageFormat]] = js.native
+  val republish: Output[js.UndefOr[TopicRuleRepublish]] = js.native
+  val s3: Output[js.UndefOr[TopicRuleS3]] = js.native
+  val sns: Output[js.UndefOr[TopicRuleSns]] = js.native
   /**
     * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
     */
@@ -66,7 +66,7 @@ class TopicRule protected () extends CustomResource {
     * The version of the SQL rules engine to use when evaluating the rule.
     */
   val sqlVersion: Output[String] = js.native
-  val sqs: Output[js.UndefOr[Anon_QueueUrl]] = js.native
+  val sqs: Output[js.UndefOr[TopicRuleSqs]] = js.native
 }
 
 /* static members */

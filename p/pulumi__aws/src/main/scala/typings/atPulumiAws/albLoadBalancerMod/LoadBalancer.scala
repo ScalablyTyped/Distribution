@@ -1,10 +1,10 @@
 package typings.atPulumiAws.albLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationId
-import typings.atPulumiAws.Anon_BucketEnabled
 import typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
 import typings.atPulumiAws.albLoadBalancerTypeMod.LoadBalancerType
+import typings.atPulumiAws.typesOutputMod.albNs.LoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.albNs.LoadBalancerSubnetMapping
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class LoadBalancer protected () extends CustomResource {
   /**
     * An Access Logs block. Access Logs documented below.
     */
-  val accessLogs: Output[js.UndefOr[Anon_BucketEnabled]] = js.native
+  val accessLogs: Output[js.UndefOr[LoadBalancerAccessLogs]] = js.native
   /**
     * The ARN of the load balancer (matches `id`).
     */
@@ -90,7 +90,7 @@ class LoadBalancer protected () extends CustomResource {
   /**
     * A subnet mapping block as documented below.
     */
-  val subnetMappings: Output[js.Array[Anon_AllocationId]] = js.native
+  val subnetMappings: Output[js.Array[LoadBalancerSubnetMapping]] = js.native
   /**
     * A list of subnet IDs to attach to the LB. Subnets
     * cannot be updated for Load Balancers of type `network`. Changing this value

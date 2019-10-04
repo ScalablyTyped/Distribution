@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pdfkit/js/mixins/vector", JSImport.Namespace)
 @js.native
-object jsMixinsVectorMod extends TopLevel[PDFVector[Unit]]
+object jsMixinsVectorMod extends TopLevel[PDFVector]
 

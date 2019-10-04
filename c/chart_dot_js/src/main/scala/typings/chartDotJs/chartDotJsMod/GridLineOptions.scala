@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait GridLineOptions extends js.Object {
   var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
   var borderDashOffset: js.UndefOr[Double] = js.undefined
+  var circular: js.UndefOr[Boolean] = js.undefined
   var color: js.UndefOr[ChartColor] = js.undefined
   var display: js.UndefOr[Boolean] = js.undefined
   var drawBorder: js.UndefOr[Boolean] = js.undefined
@@ -26,6 +27,7 @@ object GridLineOptions {
   def apply(
     borderDash: js.Array[Double] = null,
     borderDashOffset: Int | Double = null,
+    circular: js.UndefOr[Boolean] = js.undefined,
     color: ChartColor = null,
     display: js.UndefOr[Boolean] = js.undefined,
     drawBorder: js.UndefOr[Boolean] = js.undefined,
@@ -42,6 +44,7 @@ object GridLineOptions {
     val __obj = js.Dynamic.literal()
     if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash)
     if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
     if (!js.isUndefined(drawBorder)) __obj.updateDynamic("drawBorder")(drawBorder)

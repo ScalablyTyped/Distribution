@@ -1,23 +1,19 @@
 package typings.sipDotJs
 
-import typings.sipDotJs.libCoreMessagesBodyMod.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Body extends js.Object {
-  var body: js.UndefOr[Body] = js.undefined
-  var cseq: js.UndefOr[Double] = js.undefined
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
+  var body: String
+  var contentType: String
 }
 
 object Anon_Body {
   @scala.inline
-  def apply(body: Body = null, cseq: Int | Double = null, extraHeaders: js.Array[String] = null): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (cseq != null) __obj.updateDynamic("cseq")(cseq.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+  def apply(body: String, contentType: String): Anon_Body = {
+    val __obj = js.Dynamic.literal(body = body, contentType = contentType)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

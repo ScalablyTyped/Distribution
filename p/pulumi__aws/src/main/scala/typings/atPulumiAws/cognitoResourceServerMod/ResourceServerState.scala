@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cognitoResourceServerMod
 
-import typings.atPulumiAws.Anon_ScopeDescriptionScopeName
+import typings.atPulumiAws.typesInputMod.cognitoNs.ResourceServerScope
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait ResourceServerState extends js.Object {
   /**
     * A list of Authorization Scope.
     */
-  val scopes: js.UndefOr[Input[js.Array[Input[Anon_ScopeDescriptionScopeName]]]] = js.undefined
+  val scopes: js.UndefOr[Input[js.Array[Input[ResourceServerScope]]]] = js.undefined
   val userPoolId: js.UndefOr[Input[String]] = js.undefined
 }
 
@@ -32,7 +32,7 @@ object ResourceServerState {
     identifier: Input[String] = null,
     name: Input[String] = null,
     scopeIdentifiers: Input[js.Array[Input[String]]] = null,
-    scopes: Input[js.Array[Input[Anon_ScopeDescriptionScopeName]]] = null,
+    scopes: Input[js.Array[Input[ResourceServerScope]]] = null,
     userPoolId: Input[String] = null
   ): ResourceServerState = {
     val __obj = js.Dynamic.literal()

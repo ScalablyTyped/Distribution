@@ -2,6 +2,8 @@ package typings.atPulumiKubernetes.nodeV1beta1RuntimeClassMod
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`nodeDOTk8sDOTio/v1beta1`
 import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ObjectMeta
+import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.Overhead
+import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.Scheduling
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,7 +34,7 @@ class RuntimeClass protected () extends CustomResource {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output[`nodeDOTk8sDOTio/v1beta1`] = js.native
   /**
@@ -49,13 +51,28 @@ class RuntimeClass protected () extends CustomResource {
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.RuntimeClass] = js.native
   /**
-    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output[ObjectMeta] = js.native
+  /**
+    * Overhead represents the resource overhead associated with running a pod for a given
+    * RuntimeClass. For more details, see
+    * https://git.k8s.io/enhancements/keps/sig-node/20190226-pod-overhead.md This field is
+    * alpha-level as of Kubernetes v1.15, and is only honored by servers that enable the
+    * PodOverhead feature.
+    */
+  val overhead: Output[Overhead] = js.native
+  /**
+    * Scheduling holds the scheduling constraints to ensure that pods running with this
+    * RuntimeClass are scheduled to nodes that support it. If scheduling is nil, this
+    * RuntimeClass is assumed to be supported by all nodes.
+    */
+  val scheduling: Output[Scheduling] = js.native
 }
 
 /* static members */
@@ -64,14 +81,13 @@ class RuntimeClass protected () extends CustomResource {
 object RuntimeClass extends js.Object {
   /**
     * Get the state of an existing `RuntimeClass` resource, as identified by `id`.
-    * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-    * Kubernetes convention) the ID becomes default/<name>.
+    * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+    * Kubernetes convention) the ID becomes `default/<name>`.
     *
     * Pulumi will keep track of this resource using `name` as the Pulumi ID.
     *
     * @param name _Unique_ name used to register this resource with Pulumi.
-    * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-    *  <namespace>/<name> or <name>.
+    * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
     * @param opts Uniquely specifies a CustomResource to select.
     */
   def get(name: String, id: Input[ID]): RuntimeClass = js.native

@@ -1,6 +1,6 @@
 package typings.sipDotJs.libSessionDTMFMod
 
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libCoreMessagesIncomingDashRequestMod.IncomingRequest
 import typings.sipDotJs.libCoreMod.IncomingResponseMessage
 import typings.sipDotJs.libEnumsMod.TypeStrings

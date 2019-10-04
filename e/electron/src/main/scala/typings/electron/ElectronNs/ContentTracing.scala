@@ -10,7 +10,7 @@ trait ContentTracing extends EventEmitter {
     * Get a set of category groups. The category groups can change as new code paths
     * are reached.
     */
-  def getCategories(): js.Promise[String] = js.native
+  def getCategories(): js.Promise[js.Array[String]] = js.native
   // Docs: http://electronjs.org/docs/api/content-tracing
   /**
     * Get a set of category groups. The category groups can change as new code paths
@@ -21,10 +21,15 @@ trait ContentTracing extends EventEmitter {
   def getCategories(callback: js.Function1[/* categories */ js.Array[String], Unit]): Unit = js.native
   /**
     * Get the maximum usage across processes of trace buffer as a percentage of the
-    * full state. When the TraceBufferUsage value is determined the callback is
-    * called.
+    * full state.
     */
-  def getTraceBufferUsage(callback: js.Function2[/* value */ Double, /* percentage */ Double, Unit]): Unit = js.native
+  def getTraceBufferUsage(): js.Promise[_] = js.native
+  /**
+    * Get the maximum usage across processes of trace buffer as a percentage of the
+    * full state. When the TraceBufferUsage value is determined the callback is
+    * called. Deprecated Soon
+    */
+  def getTraceBufferUsage(callback: js.Function1[/* value */ Double, Unit]): Unit = js.native
   /**
     * Start recording on all processes. Recording begins immediately locally and
     * asynchronously on child processes as soon as they receive the EnableRecording

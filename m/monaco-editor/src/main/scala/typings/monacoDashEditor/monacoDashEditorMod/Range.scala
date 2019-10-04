@@ -70,6 +70,10 @@ class Range protected () extends js.Object {
     * Create a new range using this range's end position, and using startLineNumber and startColumn as the start position.
     */
   def setStartPosition(startLineNumber: Double, startColumn: Double): Range = js.native
+  /**
+    * Test if `range` is strictly in this range. `range` must start after and end before this range for the result to be true.
+    */
+  def strictContainsRange(range: IRange): Boolean = js.native
 }
 
 /* static members */
@@ -145,5 +149,9 @@ object Range extends js.Object {
     * Test if the range spans multiple lines.
     */
   def spansMultipleLines(range: IRange): Boolean = js.native
+  /**
+    * Test if `otherRange` is strinctly in `range` (must start after, and end before). If the ranges are equal, will return false.
+    */
+  def strictContainsRange(range: IRange, otherRange: IRange): Boolean = js.native
 }
 

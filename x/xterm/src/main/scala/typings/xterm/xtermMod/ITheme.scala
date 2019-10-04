@@ -29,7 +29,7 @@ trait ITheme extends js.Object {
   var brightYellow: js.UndefOr[String] = js.undefined
   /** The cursor color */
   var cursor: js.UndefOr[String] = js.undefined
-  /** The accent color of the cursor (used as the foreground color for a block cursor) */
+  /** The accent color of the cursor (fg color for a block cursor) */
   var cursorAccent: js.UndefOr[String] = js.undefined
   /** ANSI cyan (eg. `\x1b[36m`) */
   var cyan: js.UndefOr[String] = js.undefined
@@ -41,7 +41,7 @@ trait ITheme extends js.Object {
   var magenta: js.UndefOr[String] = js.undefined
   /** ANSI red (eg. `\x1b[31m`) */
   var red: js.UndefOr[String] = js.undefined
-  /** The selection color (can be transparent) */
+  /** The selection background color (can be transparent) */
   var selection: js.UndefOr[String] = js.undefined
   /** ANSI white (eg. `\x1b[37m`) */
   var white: js.UndefOr[String] = js.undefined

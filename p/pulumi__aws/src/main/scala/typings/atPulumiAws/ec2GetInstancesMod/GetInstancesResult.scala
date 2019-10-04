@@ -1,13 +1,13 @@
 package typings.atPulumiAws.ec2GetInstancesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstancesFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetInstancesResult extends js.Object {
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetInstancesFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -36,7 +36,7 @@ object GetInstancesResult {
     instanceTags: StringDictionary[js.Any],
     privateIps: js.Array[String],
     publicIps: js.Array[String],
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetInstancesFilter] = null,
     instanceStateNames: js.Array[String] = null
   ): GetInstancesResult = {
     val __obj = js.Dynamic.literal(id = id, ids = ids, instanceTags = instanceTags, privateIps = privateIps, publicIps = publicIps)

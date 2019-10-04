@@ -14,6 +14,7 @@ class Tracer protected () extends js.Object {
   var id: TraceId = js.native
   /** Creates a child of the current trace ID or a new root span. */
   def createChildId(): TraceId = js.native
+  def createChildId(parentId: TraceId): TraceId = js.native
   def createRootId(): TraceId = js.native
   def createRootId(isSampled: IOption[Boolean]): TraceId = js.native
   def createRootId(isSampled: IOption[Boolean], isDebug: Boolean): TraceId = js.native

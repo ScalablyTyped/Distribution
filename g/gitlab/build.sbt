@@ -1,10 +1,12 @@
 organization := "org.scalablytyped"
 name := "gitlab"
-version := "9.1.0-1df1d0"
+version := "11.2.1-a874d2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-60834f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

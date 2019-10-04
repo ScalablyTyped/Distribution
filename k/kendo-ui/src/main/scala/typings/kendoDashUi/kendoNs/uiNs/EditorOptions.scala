@@ -26,7 +26,7 @@ trait EditorOptions extends js.Object {
   var select: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.undefined
   var serialization: js.UndefOr[EditorSerialization] = js.undefined
   var stylesheets: js.UndefOr[js.Any] = js.undefined
-  var tools: js.UndefOr[js.Array[EditorTool]] = js.undefined
+  var tools: js.UndefOr[js.Array[EditorTool | String]] = js.undefined
 }
 
 object EditorOptions {
@@ -53,7 +53,7 @@ object EditorOptions {
     select: /* e */ EditorEvent => Unit = null,
     serialization: EditorSerialization = null,
     stylesheets: js.Any = null,
-    tools: js.Array[EditorTool] = null
+    tools: js.Array[EditorTool | String] = null
   ): EditorOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))

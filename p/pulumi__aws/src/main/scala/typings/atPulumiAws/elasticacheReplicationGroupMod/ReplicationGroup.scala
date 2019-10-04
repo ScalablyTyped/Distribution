@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheReplicationGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NumNodeGroups
+import typings.atPulumiAws.typesOutputMod.elasticacheNs.ReplicationGroupClusterMode
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -50,7 +50,7 @@ class ReplicationGroup protected () extends CustomResource {
   /**
     * Create a native redis cluster. `automaticFailoverEnabled` must be set to true. Cluster Mode documented below. Only 1 `clusterMode` block is allowed.
     */
-  val clusterMode: Output[Anon_NumNodeGroups] = js.native
+  val clusterMode: Output[ReplicationGroupClusterMode] = js.native
   /**
     * The address of the replication group configuration endpoint when cluster mode is enabled.
     */

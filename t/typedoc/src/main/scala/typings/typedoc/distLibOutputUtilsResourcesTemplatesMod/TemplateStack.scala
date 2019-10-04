@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typedoc/dist/lib/output/utils/resources/templates", "TemplateStack")
 @js.native
-class TemplateStack () extends ResourceStack[Template]
+class TemplateStack ()
+  extends ResourceStack[Template[js.Any]]
 

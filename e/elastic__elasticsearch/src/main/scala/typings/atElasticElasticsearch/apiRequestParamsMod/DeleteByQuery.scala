@@ -22,7 +22,6 @@ trait DeleteByQuery[T] extends Generic {
   var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
   var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   var analyze_wildcard: js.UndefOr[Boolean] = js.undefined
-  var analyzer: js.UndefOr[String] = js.undefined
   var body: T
   var conflicts: js.UndefOr[abort | proceed] = js.undefined
   var default_operator: js.UndefOr[AND | OR] = js.undefined
@@ -67,7 +66,6 @@ object DeleteByQuery {
     _source_includes: String | js.Array[String] = null,
     allow_no_indices: js.UndefOr[Boolean] = js.undefined,
     analyze_wildcard: js.UndefOr[Boolean] = js.undefined,
-    analyzer: String = null,
     conflicts: abort | proceed = null,
     default_operator: AND | OR = null,
     df: String = null,
@@ -112,7 +110,6 @@ object DeleteByQuery {
     if (_source_includes != null) __obj.updateDynamic("_source_includes")(_source_includes.asInstanceOf[js.Any])
     if (!js.isUndefined(allow_no_indices)) __obj.updateDynamic("allow_no_indices")(allow_no_indices)
     if (!js.isUndefined(analyze_wildcard)) __obj.updateDynamic("analyze_wildcard")(analyze_wildcard)
-    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer)
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
     if (default_operator != null) __obj.updateDynamic("default_operator")(default_operator.asInstanceOf[js.Any])
     if (df != null) __obj.updateDynamic("df")(df)

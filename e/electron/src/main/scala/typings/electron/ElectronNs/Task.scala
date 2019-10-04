@@ -35,6 +35,10 @@ trait Task extends js.Object {
     * The string to be displayed in a JumpList.
     */
   var title: String
+  /**
+    * The working directory. Default is empty.
+    */
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 
 object Task {
@@ -45,10 +49,11 @@ object Task {
     iconIndex: Double,
     iconPath: String,
     program: String,
-    title: String
+    title: String,
+    workingDirectory: String = null
   ): Task = {
     val __obj = js.Dynamic.literal(arguments = arguments, description = description, iconIndex = iconIndex, iconPath = iconPath, program = program, title = title)
-  
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
     __obj.asInstanceOf[Task]
   }
 }

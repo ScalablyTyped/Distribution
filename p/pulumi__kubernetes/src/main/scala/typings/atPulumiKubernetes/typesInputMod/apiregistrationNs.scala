@@ -5,7 +5,6 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiregistrationDOTk
 import typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1Ns.APIService
 import typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1Ns.APIServiceCondition
 import typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1Ns.APIServiceSpec
-import typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1Ns.APIServiceStatus
 import typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1Ns.ServiceReference
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ListMeta
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ObjectMeta
@@ -28,14 +27,14 @@ object apiregistrationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apiregistrationDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIService]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -43,10 +42,6 @@ object apiregistrationNs extends js.Object {
         * Spec contains information for locating and communicating with a server
         */
       var spec: js.UndefOr[Input[APIServiceSpec]] = js.undefined
-      /**
-        * Status contains derived information about an API server
-        */
-      var status: js.UndefOr[Input[APIServiceStatus]] = js.undefined
     }
     
     /**
@@ -83,7 +78,7 @@ object apiregistrationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apiregistrationDOTk8sDOTio/v1`]] = js.undefined
       var items: Input[js.Array[Input[APIService]]]
@@ -91,7 +86,7 @@ object apiregistrationNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIServiceList]] = js.undefined
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
@@ -197,14 +192,14 @@ object apiregistrationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apiregistrationDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIService]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -214,14 +209,6 @@ object apiregistrationNs extends js.Object {
       var spec: js.UndefOr[
             Input[
               typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec
-            ]
-          ] = js.undefined
-      /**
-        * Status contains derived information about an API server
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.apiregistrationNs.v1beta1Ns.APIServiceStatus
             ]
           ] = js.undefined
     }
@@ -260,7 +247,7 @@ object apiregistrationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apiregistrationDOTk8sDOTio/v1beta1`]] = js.undefined
       var items: Input[
@@ -272,7 +259,7 @@ object apiregistrationNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIServiceList]] = js.undefined
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined

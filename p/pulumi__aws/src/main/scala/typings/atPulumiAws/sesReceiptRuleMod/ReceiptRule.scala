@@ -1,12 +1,12 @@
 package typings.atPulumiAws.sesReceiptRuleMod
 
-import typings.atPulumiAws.Anon_BucketNameKmsKeyArn
-import typings.atPulumiAws.Anon_FunctionArnInvocationType
-import typings.atPulumiAws.Anon_HeaderName
-import typings.atPulumiAws.Anon_Message
-import typings.atPulumiAws.Anon_OrganizationArn
-import typings.atPulumiAws.Anon_Position
-import typings.atPulumiAws.Anon_PositionScope
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleAddHeaderAction
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleBounceAction
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleLambdaAction
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleS3Action
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleSnsAction
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleStopAction
+import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleWorkmailAction
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +31,7 @@ class ReceiptRule protected () extends CustomResource {
   /**
     * A list of Add Header Action blocks. Documented below.
     */
-  val addHeaderActions: Output[js.UndefOr[js.Array[Anon_HeaderName]]] = js.native
+  val addHeaderActions: Output[js.UndefOr[js.Array[ReceiptRuleAddHeaderAction]]] = js.native
   /**
     * The name of the rule to place this rule after
     */
@@ -39,7 +39,7 @@ class ReceiptRule protected () extends CustomResource {
   /**
     * A list of Bounce Action blocks. Documented below.
     */
-  val bounceActions: Output[js.UndefOr[js.Array[Anon_Message]]] = js.native
+  val bounceActions: Output[js.UndefOr[js.Array[ReceiptRuleBounceAction]]] = js.native
   /**
     * If true, the rule will be enabled
     */
@@ -47,7 +47,7 @@ class ReceiptRule protected () extends CustomResource {
   /**
     * A list of Lambda Action blocks. Documented below.
     */
-  val lambdaActions: Output[js.UndefOr[js.Array[Anon_FunctionArnInvocationType]]] = js.native
+  val lambdaActions: Output[js.UndefOr[js.Array[ReceiptRuleLambdaAction]]] = js.native
   /**
     * The name of the rule
     */
@@ -63,7 +63,7 @@ class ReceiptRule protected () extends CustomResource {
   /**
     * A list of S3 Action blocks. Documented below.
     */
-  val s3Actions: Output[js.UndefOr[js.Array[Anon_BucketNameKmsKeyArn]]] = js.native
+  val s3Actions: Output[js.UndefOr[js.Array[ReceiptRuleS3Action]]] = js.native
   /**
     * If true, incoming emails will be scanned for spam and viruses
     */
@@ -71,11 +71,11 @@ class ReceiptRule protected () extends CustomResource {
   /**
     * A list of SNS Action blocks. Documented below.
     */
-  val snsActions: Output[js.UndefOr[js.Array[Anon_Position]]] = js.native
+  val snsActions: Output[js.UndefOr[js.Array[ReceiptRuleSnsAction]]] = js.native
   /**
     * A list of Stop Action blocks. Documented below.
     */
-  val stopActions: Output[js.UndefOr[js.Array[Anon_PositionScope]]] = js.native
+  val stopActions: Output[js.UndefOr[js.Array[ReceiptRuleStopAction]]] = js.native
   /**
     * Require or Optional
     */
@@ -83,7 +83,7 @@ class ReceiptRule protected () extends CustomResource {
   /**
     * A list of WorkMail Action blocks. Documented below.
     */
-  val workmailActions: Output[js.UndefOr[js.Array[Anon_OrganizationArn]]] = js.native
+  val workmailActions: Output[js.UndefOr[js.Array[ReceiptRuleWorkmailAction]]] = js.native
 }
 
 /* static members */

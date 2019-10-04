@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodelib__fs_dot_scandir
 
-Typings are for version 2.1.1
+Typings are for version 2.1.2
 
 ## Library description:
 List files and directories inside the specified directory

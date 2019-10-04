@@ -1,5 +1,7 @@
 package typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs
 
+import typings.echarts.echartsNs.EChartOptionNs.RichStyle
+import typings.echarts.echartsNs.EChartOptionNs.TextStyleWithRich
 import typings.echarts.echartsStrings.`100`
 import typings.echarts.echartsStrings.`200`
 import typings.echarts.echartsStrings.`300`
@@ -17,8 +19,7 @@ import scala.scalajs.js.annotation._
 /**
   * @todo describe
   */
-trait Label
-  extends typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.TextStyle {
+trait Label extends TextStyleWithRich {
   var formatter: js.UndefOr[String | js.Function] = js.undefined
   var inside: js.UndefOr[Boolean] = js.undefined
   var interval: js.UndefOr[Double | js.Function] = js.undefined

@@ -14,6 +14,10 @@ trait Accelerator extends js.Object {
     */
   var CreatedTime: js.UndefOr[Timestamp] = js.undefined
   /**
+    * The Domain Name System (DNS) name that Global Accelerator creates that points to your accelerator's static IP addresses.  The naming convention for the DNS name is: a lower case letter a, followed by a 16-bit random hex string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com. For more information about the default DNS name, see Support for DNS Addressing in Global Accelerator in the AWS Global Accelerator Developer Guide.
+    */
+  var DnsName: js.UndefOr[GenericString] = js.undefined
+  /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.  If the value is set to true, the accelerator cannot be deleted. If set to false, accelerator can be deleted.
     */
   var Enabled: js.UndefOr[GenericBoolean] = js.undefined
@@ -44,6 +48,7 @@ object Accelerator {
   def apply(
     AcceleratorArn: GenericString = null,
     CreatedTime: Timestamp = null,
+    DnsName: GenericString = null,
     Enabled: js.UndefOr[GenericBoolean] = js.undefined,
     IpAddressType: IpAddressType = null,
     IpSets: IpSets = null,
@@ -54,6 +59,7 @@ object Accelerator {
     val __obj = js.Dynamic.literal()
     if (AcceleratorArn != null) __obj.updateDynamic("AcceleratorArn")(AcceleratorArn)
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime)
+    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     if (IpAddressType != null) __obj.updateDynamic("IpAddressType")(IpAddressType.asInstanceOf[js.Any])
     if (IpSets != null) __obj.updateDynamic("IpSets")(IpSets)

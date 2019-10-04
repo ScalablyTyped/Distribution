@@ -1,7 +1,7 @@
 
 # Scala.js typings for expr-eval
 
-Typings are for version 1.2.3
+Typings are for version 2.0.2
 
 ## Library description:
 Mathematical expression evaluator

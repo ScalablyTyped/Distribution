@@ -1,7 +1,7 @@
 package typings.atPulumiAws.datasyncNfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AgentArnsArray
+import typings.atPulumiAws.typesInputMod.datasyncNs.NfsLocationOnPremConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait NfsLocationArgs extends js.Object {
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: Input[Anon_AgentArnsArray]
+  val onPremConfig: Input[NfsLocationOnPremConfig]
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */
@@ -29,7 +29,7 @@ trait NfsLocationArgs extends js.Object {
 object NfsLocationArgs {
   @scala.inline
   def apply(
-    onPremConfig: Input[Anon_AgentArnsArray],
+    onPremConfig: Input[NfsLocationOnPremConfig],
     serverHostname: Input[String],
     subdirectory: Input[String],
     tags: Input[StringDictionary[Input[String]]] = null

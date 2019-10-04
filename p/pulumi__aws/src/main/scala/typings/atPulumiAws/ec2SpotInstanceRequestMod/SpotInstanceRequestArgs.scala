@@ -1,11 +1,11 @@
 package typings.atPulumiAws.ec2SpotInstanceRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CpuCreditsInput
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeId
-import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeIdVolumeSize
-import typings.atPulumiAws.Anon_DeviceNameNoDeviceVirtualName
+import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestCreditSpecification
+import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestNetworkInterface
+import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestRootBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +43,7 @@ trait SpotInstanceRequestArgs extends js.Object {
   /**
     * Customize the credit specification of the instance. See Credit Specification below for more details.
     */
-  val creditSpecification: js.UndefOr[Input[Anon_CpuCreditsInput]] = js.undefined
+  val creditSpecification: js.UndefOr[Input[SpotInstanceRequestCreditSpecification]] = js.undefined
   /**
     * If true, enables [EC2 Instance
     * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
@@ -53,11 +53,7 @@ trait SpotInstanceRequestArgs extends js.Object {
     * Additional EBS block devices to attach to the
     * instance.  Block device configurations only apply on resource creation. See Block Devices below for details on attributes and drift detection.
     */
-  val ebsBlockDevices: js.UndefOr[
-    Input[
-      js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeId]]
-    ]
-  ] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[SpotInstanceRequestEbsBlockDevice]]]] = js.undefined
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     * Note that if this is not set on an instance type that is optimized by default then
@@ -70,7 +66,7 @@ trait SpotInstanceRequestArgs extends js.Object {
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameNoDeviceVirtualName]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[SpotInstanceRequestEphemeralBlockDevice]]]] = js.undefined
   /**
     * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `passwordData` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
@@ -121,7 +117,7 @@ trait SpotInstanceRequestArgs extends js.Object {
   /**
     * Customize network interfaces to be attached at instance boot time. See Network Interfaces below for more details.
     */
-  val networkInterfaces: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]]]] = js.undefined
+  val networkInterfaces: js.UndefOr[Input[js.Array[Input[SpotInstanceRequestNetworkInterface]]]] = js.undefined
   /**
     * The Placement Group to start the instance in.
     */
@@ -135,7 +131,7 @@ trait SpotInstanceRequestArgs extends js.Object {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: js.UndefOr[Input[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeIdVolumeSize]] = js.undefined
+  val rootBlockDevice: js.UndefOr[Input[SpotInstanceRequestRootBlockDevice]] = js.undefined
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
     */
@@ -208,13 +204,11 @@ object SpotInstanceRequestArgs {
     blockDurationMinutes: Input[Double] = null,
     cpuCoreCount: Input[Double] = null,
     cpuThreadsPerCore: Input[Double] = null,
-    creditSpecification: Input[Anon_CpuCreditsInput] = null,
+    creditSpecification: Input[SpotInstanceRequestCreditSpecification] = null,
     disableApiTermination: Input[Boolean] = null,
-    ebsBlockDevices: Input[
-      js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotIdVolumeId]]
-    ] = null,
+    ebsBlockDevices: Input[js.Array[Input[SpotInstanceRequestEbsBlockDevice]]] = null,
     ebsOptimized: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameNoDeviceVirtualName]]] = null,
+    ephemeralBlockDevices: Input[js.Array[Input[SpotInstanceRequestEphemeralBlockDevice]]] = null,
     getPasswordData: Input[Boolean] = null,
     hostId: Input[String] = null,
     iamInstanceProfile: Input[String] = null,
@@ -225,10 +219,10 @@ object SpotInstanceRequestArgs {
     keyName: Input[String] = null,
     launchGroup: Input[String] = null,
     monitoring: Input[Boolean] = null,
-    networkInterfaces: Input[js.Array[Input[Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]]] = null,
+    networkInterfaces: Input[js.Array[Input[SpotInstanceRequestNetworkInterface]]] = null,
     placementGroup: Input[String] = null,
     privateIp: Input[String] = null,
-    rootBlockDevice: Input[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeIdVolumeSize] = null,
+    rootBlockDevice: Input[SpotInstanceRequestRootBlockDevice] = null,
     securityGroups: Input[js.Array[Input[String]]] = null,
     sourceDestCheck: Input[Boolean] = null,
     spotPrice: Input[String] = null,

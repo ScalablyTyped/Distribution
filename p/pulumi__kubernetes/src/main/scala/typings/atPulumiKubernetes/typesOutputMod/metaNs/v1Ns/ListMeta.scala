@@ -28,19 +28,20 @@ trait ListMeta extends js.Object {
     * unset and omitted during serialization. Servers older than v1.15 do not set this field. The
     * intended use of the remainingItemCount is *estimating* the size of a collection. Clients
     * should not rely on the remainingItemCount to be set or to be exact.
-    *
-    * This field is alpha and can be changed or removed without notice.
     */
   val remainingItemCount: Double
   /**
     * String that identifies the server's internal version of this object that can be used by
     * clients to determine when objects have changed. Value must be treated as opaque by clients
     * and passed unmodified back to the server. Populated by the system. Read-only. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
     */
   val resourceVersion: String
   /**
     * selfLink is a URL representing this object. Populated by the system. Read-only.
+    *
+    * DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is
+    * planned to be removed in 1.21 release.
     */
   val selfLink: String
 }

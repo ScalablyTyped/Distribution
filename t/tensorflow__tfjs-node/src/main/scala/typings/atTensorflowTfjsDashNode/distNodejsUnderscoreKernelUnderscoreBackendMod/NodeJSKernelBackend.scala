@@ -2,10 +2,7 @@ package typings.atTensorflowTfjsDashNode.distNodejsUnderscoreKernelUnderscoreBac
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
-import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.DataMover
-import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
-import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
@@ -36,6 +33,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NodeJSKernelBackend protected () extends KernelBackend {
   def this(binding: TFJSBinding, packageName: String) = this()
+  var applyActivation: js.Any = js.native
   var binding: TFJSBinding = js.native
   var createOutputTensor: js.Any = js.native
   var createReductionOpAttrs: js.Any = js.native
@@ -43,6 +41,7 @@ class NodeJSKernelBackend protected () extends KernelBackend {
   var getDTypeInteger: js.Any = js.native
   var getInputTensorIds: js.Any = js.native
   var isGPUPackage: Boolean = js.native
+  var isUsingGpuDevice: Boolean = js.native
   var tensorMap: js.Any = js.native
   var typeAttributeFromTensor: js.Any = js.native
   def add(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
@@ -201,14 +200,6 @@ class NodeJSKernelBackend protected () extends KernelBackend {
   def fft(x: Tensor[R2]): Tensor[R2] = js.native
   def floorDiv(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def flushSummaryWriter(resourceHandle: Tensor[Rank]): Unit = js.native
-  def fusedConv2d(
-    x: Tensor4D,
-    filter: Tensor4D,
-    convInfo: Conv2DInfo,
-    bias: Tensor4D,
-    activation: Activation,
-    preluActivationWeights: Tensor[Rank]
-  ): Tensor4D = js.native
   def gatherND(x: Tensor[Rank], indices: Tensor[Rank]): Tensor[Rank] = js.native
   def greater(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def greaterEqual(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
@@ -234,7 +225,6 @@ class NodeJSKernelBackend protected () extends KernelBackend {
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def select(condition: Tensor[Rank], a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
-  def setDataMover(dataMover: DataMover): Unit = js.native
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],

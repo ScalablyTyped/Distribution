@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTaskMod
 
-import typings.atPulumiAws.Anon_AutomationParametersLambdaParameters
-import typings.atPulumiAws.Anon_KeyValuesArray
-import typings.atPulumiAws.Anon_NameValuesArray
-import typings.atPulumiAws.Anon_S3BucketNameS3BucketPrefixS3Region
+import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskLoggingInfo
+import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskTarget
+import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskTaskInvocationParameters
+import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskTaskParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait MaintenanceWindowTaskState extends js.Object {
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
-  val loggingInfo: js.UndefOr[Input[Anon_S3BucketNameS3BucketPrefixS3Region]] = js.undefined
+  val loggingInfo: js.UndefOr[Input[MaintenanceWindowTaskLoggingInfo]] = js.undefined
   /**
     * The maximum number of targets this task can be run for in parallel.
     */
@@ -41,7 +41,7 @@ trait MaintenanceWindowTaskState extends js.Object {
   /**
     * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
     */
-  val targets: js.UndefOr[Input[js.Array[Input[Anon_KeyValuesArray]]]] = js.undefined
+  val targets: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTarget]]]] = js.undefined
   /**
     * The ARN of the task to execute.
     */
@@ -49,11 +49,11 @@ trait MaintenanceWindowTaskState extends js.Object {
   /**
     * The parameters for task execution. This argument is conflict with `taskParameters` and `loggingInfo`.
     */
-  val taskInvocationParameters: js.UndefOr[Input[Anon_AutomationParametersLambdaParameters]] = js.undefined
+  val taskInvocationParameters: js.UndefOr[Input[MaintenanceWindowTaskTaskInvocationParameters]] = js.undefined
   /**
     * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
-  val taskParameters: js.UndefOr[Input[js.Array[Input[Anon_NameValuesArray]]]] = js.undefined
+  val taskParameters: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]]] = js.undefined
   /**
     * The type of task being registered. The only allowed value is `RUN_COMMAND`.
     */
@@ -68,16 +68,16 @@ object MaintenanceWindowTaskState {
   @scala.inline
   def apply(
     description: Input[String] = null,
-    loggingInfo: Input[Anon_S3BucketNameS3BucketPrefixS3Region] = null,
+    loggingInfo: Input[MaintenanceWindowTaskLoggingInfo] = null,
     maxConcurrency: Input[String] = null,
     maxErrors: Input[String] = null,
     name: Input[String] = null,
     priority: Input[Double] = null,
     serviceRoleArn: Input[String] = null,
-    targets: Input[js.Array[Input[Anon_KeyValuesArray]]] = null,
+    targets: Input[js.Array[Input[MaintenanceWindowTaskTarget]]] = null,
     taskArn: Input[String] = null,
-    taskInvocationParameters: Input[Anon_AutomationParametersLambdaParameters] = null,
-    taskParameters: Input[js.Array[Input[Anon_NameValuesArray]]] = null,
+    taskInvocationParameters: Input[MaintenanceWindowTaskTaskInvocationParameters] = null,
+    taskParameters: Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]] = null,
     taskType: Input[String] = null,
     windowId: Input[String] = null
   ): MaintenanceWindowTaskState = {

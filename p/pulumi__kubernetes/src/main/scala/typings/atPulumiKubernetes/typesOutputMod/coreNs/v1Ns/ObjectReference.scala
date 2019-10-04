@@ -24,7 +24,7 @@ trait ObjectReference extends js.Object {
   val fieldPath: String
   /**
     * Kind of the referent. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: String
   /**
@@ -39,7 +39,7 @@ trait ObjectReference extends js.Object {
   val namespace: String
   /**
     * Specific resourceVersion to which this reference is made, if any. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
     */
   val resourceVersion: String
   /**

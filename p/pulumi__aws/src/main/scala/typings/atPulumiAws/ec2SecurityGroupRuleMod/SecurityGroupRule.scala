@@ -39,7 +39,6 @@ class SecurityGroupRule protected () extends CustomResource {
   val ipv6CidrBlocks: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
     * List of prefix list IDs (for allowing access to VPC endpoints).
-    * Only valid with `egress`.
     */
   val prefixListIds: Output[js.UndefOr[js.Array[String]]] = js.native
   /**

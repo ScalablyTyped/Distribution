@@ -1,13 +1,13 @@
 package typings.atPulumiAws.getAmiIdsMod
 
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.GetAmiIdsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetAmiIdsResult extends js.Object {
   val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetAmiIdsFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -25,7 +25,7 @@ object GetAmiIdsResult {
     ids: js.Array[String],
     owners: js.Array[String],
     executableUsers: js.Array[String] = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetAmiIdsFilter] = null,
     nameRegex: String = null,
     sortAscending: js.UndefOr[Boolean] = js.undefined
   ): GetAmiIdsResult = {

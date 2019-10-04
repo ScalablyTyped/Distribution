@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalGeoMatchSetMod
 
-import typings.atPulumiAws.Anon_TypeValueInputString
+import typings.atPulumiAws.typesInputMod.wafregionalNs.GeoMatchSetGeoMatchConstraint
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait GeoMatchSetArgs extends js.Object {
   /**
     * The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.
     */
-  val geoMatchConstraints: js.UndefOr[Input[js.Array[Input[Anon_TypeValueInputString]]]] = js.undefined
+  val geoMatchConstraints: js.UndefOr[Input[js.Array[Input[GeoMatchSetGeoMatchConstraint]]]] = js.undefined
   /**
     * The name or description of the Geo Match Set.
     */
@@ -20,7 +20,7 @@ trait GeoMatchSetArgs extends js.Object {
 object GeoMatchSetArgs {
   @scala.inline
   def apply(
-    geoMatchConstraints: Input[js.Array[Input[Anon_TypeValueInputString]]] = null,
+    geoMatchConstraints: Input[js.Array[Input[GeoMatchSetGeoMatchConstraint]]] = null,
     name: Input[String] = null
   ): GeoMatchSetArgs = {
     val __obj = js.Dynamic.literal()

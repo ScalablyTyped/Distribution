@@ -1,8 +1,8 @@
 package typings.atPulumiAws.providerMod
 
-import typings.atPulumiAws.Anon_AcmAcmpca
-import typings.atPulumiAws.Anon_ExternalIdPolicyRoleArn
 import typings.atPulumiAws.regionMod.Region
+import typings.atPulumiAws.typesInputMod.ProviderAssumeRole
+import typings.atPulumiAws.typesInputMod.ProviderEndpoint
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +15,8 @@ trait ProviderArgs extends js.Object {
     */
   val accessKey: js.UndefOr[Input[String]] = js.undefined
   val allowedAccountIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  val assumeRole: js.UndefOr[Input[Anon_ExternalIdPolicyRoleArn]] = js.undefined
-  val endpoints: js.UndefOr[Input[js.Array[Input[Anon_AcmAcmpca]]]] = js.undefined
+  val assumeRole: js.UndefOr[Input[ProviderAssumeRole]] = js.undefined
+  val endpoints: js.UndefOr[Input[js.Array[Input[ProviderEndpoint]]]] = js.undefined
   val forbiddenAccountIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
     * Explicitly allow the provider to perform "insecure" SSL requests. If omitted,default value is `false`
@@ -80,8 +80,8 @@ object ProviderArgs {
   def apply(
     accessKey: Input[String] = null,
     allowedAccountIds: Input[js.Array[Input[String]]] = null,
-    assumeRole: Input[Anon_ExternalIdPolicyRoleArn] = null,
-    endpoints: Input[js.Array[Input[Anon_AcmAcmpca]]] = null,
+    assumeRole: Input[ProviderAssumeRole] = null,
+    endpoints: Input[js.Array[Input[ProviderEndpoint]]] = null,
     forbiddenAccountIds: Input[js.Array[Input[String]]] = null,
     insecure: Input[Boolean] = null,
     maxRetries: Input[Double] = null,

@@ -26,6 +26,10 @@ class StaticIpAttachment protected () extends CustomResource {
     */
   val instanceName: Output[String] = js.native
   /**
+    * The allocated static IP address
+    */
+  val ipAddress: Output[String] = js.native
+  /**
     * The name of the allocated static IP
     */
   val staticIpName: Output[String] = js.native

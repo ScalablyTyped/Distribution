@@ -1,11 +1,12 @@
 package typings.reactDashSelect.srcSelectMod
 
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait State[OptionType] extends js.Object {
+trait State[OptionType /* <: OptionTypeBase */] extends js.Object {
   var ariaLiveContext: String
   var ariaLiveSelection: String
   var focusedOption: OptionType | Null
@@ -19,7 +20,7 @@ trait State[OptionType] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     ariaLiveContext: String,
     ariaLiveSelection: String,
     inputIsHidden: Boolean,

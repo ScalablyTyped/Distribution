@@ -1,22 +1,42 @@
 package typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod
 
-import typings.atFormatjsIntlDashUtils.Anon_0
-import typings.atFormatjsIntlDashUtils.Anon_Future
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldData extends js.Object {
-  var displayName: String
-  var relative: Anon_0
-  var relativeTime: Anon_Future
+  var `-1`: js.UndefOr[String] = js.undefined
+  var `-2`: js.UndefOr[String] = js.undefined
+  var `-3`: js.UndefOr[String] = js.undefined
+  var `0`: js.UndefOr[String] = js.undefined
+  var `1`: js.UndefOr[String] = js.undefined
+  var `2`: js.UndefOr[String] = js.undefined
+  var `3`: js.UndefOr[String] = js.undefined
+  var future: RelativeTimeData
+  var past: RelativeTimeData
 }
 
 object FieldData {
   @scala.inline
-  def apply(displayName: String, relative: Anon_0, relativeTime: Anon_Future): FieldData = {
-    val __obj = js.Dynamic.literal(displayName = displayName, relative = relative, relativeTime = relativeTime)
-  
+  def apply(
+    future: RelativeTimeData,
+    past: RelativeTimeData,
+    `-1`: String = null,
+    `-2`: String = null,
+    `-3`: String = null,
+    `0`: String = null,
+    `1`: String = null,
+    `2`: String = null,
+    `3`: String = null
+  ): FieldData = {
+    val __obj = js.Dynamic.literal(future = future, past = past)
+    if (`-1` != null) __obj.updateDynamic("-1")(`-1`)
+    if (`-2` != null) __obj.updateDynamic("-2")(`-2`)
+    if (`-3` != null) __obj.updateDynamic("-3")(`-3`)
+    if (`0` != null) __obj.updateDynamic("0")(`0`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    if (`2` != null) __obj.updateDynamic("2")(`2`)
+    if (`3` != null) __obj.updateDynamic("3")(`3`)
     __obj.asInstanceOf[FieldData]
   }
 }

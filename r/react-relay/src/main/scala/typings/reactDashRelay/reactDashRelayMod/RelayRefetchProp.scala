@@ -1,7 +1,7 @@
 package typings.reactDashRelay.reactDashRelayMod
 
-import typings.relayDashRuntime.relayDashRuntimeMod.Disposable
-import typings.relayDashRuntime.relayDashRuntimeMod.Variables
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Variables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

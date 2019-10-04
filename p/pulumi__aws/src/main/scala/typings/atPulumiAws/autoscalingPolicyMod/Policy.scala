@@ -1,7 +1,7 @@
 package typings.atPulumiAws.autoscalingPolicyMod
 
-import typings.atPulumiAws.Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecification
-import typings.atPulumiAws.Anon_MetricIntervalLowerBound
+import typings.atPulumiAws.typesOutputMod.autoscalingNs.PolicyStepAdjustment
+import typings.atPulumiAws.typesOutputMod.autoscalingNs.PolicyTargetTrackingConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -62,13 +62,11 @@ class Policy protected () extends CustomResource {
     * up. A negative value scales down.
     */
   val scalingAdjustment: Output[js.UndefOr[Double]] = js.native
-  val stepAdjustments: Output[js.UndefOr[js.Array[Anon_MetricIntervalLowerBound]]] = js.native
+  val stepAdjustments: Output[js.UndefOr[js.Array[PolicyStepAdjustment]]] = js.native
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: Output[
-    js.UndefOr[Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecification]
-  ] = js.native
+  val targetTrackingConfiguration: Output[js.UndefOr[PolicyTargetTrackingConfiguration]] = js.native
 }
 
 /* static members */

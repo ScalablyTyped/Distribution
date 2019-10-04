@@ -10,7 +10,7 @@ trait FileSystemDataSource extends js.Object {
     */
   var DirectoryPath: typings.awsDashSdk.clientsSagemakerMod.DirectoryPath
   /**
-    * The access mode of the mount of the directory associated with the channel. A directory can be mounted either in ro (read-only) or rw (read-write).
+    * The access mode of the mount of the directory associated with the channel. A directory can be mounted either in ro (read-only) or rw (read-write) mode.
     */
   var FileSystemAccessMode: typings.awsDashSdk.clientsSagemakerMod.FileSystemAccessMode
   /**

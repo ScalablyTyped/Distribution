@@ -1,6 +1,6 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.relayDashRuntimeMod.Variables
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Variables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -56,4 +56,3 @@
 [E] Failed to compile 'vuelidate'
  [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => publish] 

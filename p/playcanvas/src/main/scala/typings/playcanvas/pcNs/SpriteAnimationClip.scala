@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SpriteAnimationClip
+  * @extends pc.EventHandler
   * @classdesc Handles playing of sprite animations and loading of relevant sprite assets.
   * @param {pc.SpriteComponent} component The sprite component managing this clip.
   * @param {Object} data Data for the new animation clip.
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.SpriteAnimationClip")
 @js.native
-class SpriteAnimationClip protected () extends js.Object {
+class SpriteAnimationClip protected () extends EventHandler {
   def this(component: SpriteComponent, data: Anon_Fps) = this()
   /**
     * The total duration of the animation in seconds.

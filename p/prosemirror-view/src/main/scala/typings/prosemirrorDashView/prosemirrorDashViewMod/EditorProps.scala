@@ -247,8 +247,8 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
       js.Function4[
         /* node */ Node[S], 
         /* view */ EditorView[S], 
-        /* getPos */ js.Function0[Double], 
-        /* decorations */ js.Array[Decoration], 
+        /* getPos */ js.Function0[Double] | Boolean, 
+        /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
         NodeView[S]
       ]
     ]) | Null
@@ -312,8 +312,8 @@ object EditorProps {
       js.Function4[
         /* node */ Node[S], 
         /* view */ EditorView[S], 
-        /* getPos */ js.Function0[Double], 
-        /* decorations */ js.Array[Decoration], 
+        /* getPos */ js.Function0[Double] | Boolean, 
+        /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
         NodeView[S]
       ]
     ] = null,

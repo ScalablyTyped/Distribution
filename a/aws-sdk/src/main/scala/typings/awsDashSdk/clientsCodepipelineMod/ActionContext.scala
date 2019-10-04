@@ -10,7 +10,7 @@ trait ActionContext extends js.Object {
     */
   var actionExecutionId: js.UndefOr[ActionExecutionId] = js.undefined
   /**
-    * The name of the action within the context of a job.
+    * The name of the action in the context of a job.
     */
   var name: js.UndefOr[ActionName] = js.undefined
 }

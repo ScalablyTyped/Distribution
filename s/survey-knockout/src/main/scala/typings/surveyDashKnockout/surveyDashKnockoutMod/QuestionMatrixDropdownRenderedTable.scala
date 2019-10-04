@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class QuestionMatrixDropdownRenderedTable protected () extends Base {
   def this(matrix: QuestionMatrixDropdownModelBase) = this()
   val footerRow: QuestionMatrixDropdownRenderedRow = js.native
+  val hasFooter: Boolean = js.native
   val hasRemoveRow: Boolean = js.native
   val headerRow: QuestionMatrixDropdownRenderedRow = js.native
   var matrix: QuestionMatrixDropdownModelBase = js.native

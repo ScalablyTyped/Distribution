@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IWorkerContext extends js.Object {
+trait IWorkerContext[H] extends js.Object {
+  /**
+    * A proxy to the main thread host object.
+    */
+  var host: H
   /**
     * Get all available mirror models in this worker.
     */
@@ -13,10 +17,10 @@ trait IWorkerContext extends js.Object {
 
 object IWorkerContext {
   @scala.inline
-  def apply(getMirrorModels: () => js.Array[IMirrorModel]): IWorkerContext = {
-    val __obj = js.Dynamic.literal(getMirrorModels = js.Any.fromFunction0(getMirrorModels))
+  def apply[H](getMirrorModels: () => js.Array[IMirrorModel], host: H): IWorkerContext[H] = {
+    val __obj = js.Dynamic.literal(getMirrorModels = js.Any.fromFunction0(getMirrorModels), host = host.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[IWorkerContext]
+    __obj.asInstanceOf[IWorkerContext[H]]
   }
 }
 

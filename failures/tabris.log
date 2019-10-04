@@ -852,4 +852,3 @@
 [E] Failed to compile 'tabris'
  [id => tabris, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris, phase => publish] 

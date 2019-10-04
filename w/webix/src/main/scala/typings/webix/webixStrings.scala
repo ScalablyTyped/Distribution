@@ -95,6 +95,7 @@ import typings.webix.webixMod.uiNs.tabviewEventName
 import typings.webix.webixMod.uiNs.templateEventName
 import typings.webix.webixMod.uiNs.textEventName
 import typings.webix.webixMod.uiNs.textareaEventName
+import typings.webix.webixMod.uiNs.timelineEventName
 import typings.webix.webixMod.uiNs.toggleEventName
 import typings.webix.webixMod.uiNs.toolbarEventName
 import typings.webix.webixMod.uiNs.tooltipEventName
@@ -135,6 +136,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -220,6 +222,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -265,6 +268,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -375,6 +379,7 @@ object webixStrings {
        with spreadsheetEventName
        with submenuEventName
        with templateEventName
+       with timelineEventName
        with toolbarEventName
        with treeEventName
        with treemapEventName
@@ -466,6 +471,7 @@ object webixStrings {
        with templateEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with tooltipEventName
        with treeEventName
@@ -547,6 +553,7 @@ object webixStrings {
        with templateEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with toolbarEventName
        with tooltipEventName
@@ -609,6 +616,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -681,6 +689,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -774,6 +783,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -819,6 +829,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -978,6 +989,7 @@ object webixStrings {
        with spreadsheetEventName
        with submenuEventName
        with templateEventName
+       with timelineEventName
        with toolbarEventName
        with treeEventName
        with treemapEventName
@@ -1064,6 +1076,7 @@ object webixStrings {
        with templateEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with tooltipEventName
        with treeEventName
@@ -1145,6 +1158,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -1286,6 +1300,7 @@ object webixStrings {
        with templateEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with toolbarEventName
        with tooltipEventName
@@ -1489,6 +1504,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -1520,6 +1536,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -1627,6 +1644,7 @@ object webixStrings {
        with templateEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with toolbarEventName
        with tooltipEventName
@@ -1932,6 +1950,7 @@ object webixStrings {
        with tabbarEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with treeEventName
        with treemapEventName
@@ -1957,6 +1976,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -1976,6 +1996,7 @@ object webixStrings {
        with protoEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with unitlistEventName
@@ -2143,6 +2164,7 @@ object webixStrings {
        with spreadsheetEventName
        with submenuEventName
        with templateEventName
+       with timelineEventName
        with toolbarEventName
        with treeEventName
        with treemapEventName
@@ -2262,6 +2284,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -2285,6 +2308,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -2308,6 +2332,7 @@ object webixStrings {
        with rangechartEventName
        with sidebarEventName
        with submenuEventName
+       with timelineEventName
        with treeEventName
        with treemapEventName
        with treetableEventName
@@ -2320,8 +2345,15 @@ object webixStrings {
   sealed trait onNext extends hintEventName
   
   @js.native
+  sealed trait onOptionAdd
+    extends radioEventName
+       with segmentedEventName
+       with tabbarEventName
+  
+  @js.native
   sealed trait onOptionRemove
-    extends segmentedEventName
+    extends radioEventName
+       with segmentedEventName
        with tabbarEventName
   
   @js.native
@@ -3294,6 +3326,7 @@ object webixStrings {
        with templateEventName
        with textEventName
        with textareaEventName
+       with timelineEventName
        with toggleEventName
        with toolbarEventName
        with tooltipEventName
@@ -3722,6 +3755,8 @@ object webixStrings {
   def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
   @scala.inline
   def onNext: onNext = "onNext".asInstanceOf[onNext]
+  @scala.inline
+  def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
   @scala.inline
   def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
   @scala.inline

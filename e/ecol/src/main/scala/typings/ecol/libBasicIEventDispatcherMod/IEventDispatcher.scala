@@ -3,9 +3,9 @@ package typings.ecol.libBasicIEventDispatcherMod
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEventNs.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEventNs.Type
-import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseIteratorIteratorMod.Iterator
-import typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator
+import typings.tstl.tstlMod.baseNs.Container
+import typings.tstl.tstlMod.baseNs.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

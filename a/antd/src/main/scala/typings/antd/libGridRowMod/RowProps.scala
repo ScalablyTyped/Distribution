@@ -9,6 +9,7 @@ import typings.antd.antdStrings.end
 import typings.antd.antdStrings.flex
 import typings.antd.antdStrings.middle
 import typings.antd.antdStrings.start
+import typings.antd.antdStrings.stretch
 import typings.antd.antdStrings.top
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
@@ -17,7 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowProps extends HTMLAttributes[HTMLDivElement] {
-  var align: js.UndefOr[top | middle | bottom] = js.undefined
+  var align: js.UndefOr[top | middle | bottom | stretch] = js.undefined
   var gutter: js.UndefOr[Double | PartialRecordBreakpointnumber] = js.undefined
   var justify: js.UndefOr[start | end | center | `space-around` | `space-between`] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -28,7 +29,7 @@ object RowProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
-    align: top | middle | bottom = null,
+    align: top | middle | bottom | stretch = null,
     gutter: Double | PartialRecordBreakpointnumber = null,
     justify: start | end | center | `space-around` | `space-between` = null,
     prefixCls: String = null,

@@ -10,7 +10,6 @@ class QuestionFileImplementor protected () extends QuestionImplementor {
   def this(question: Question) = this()
   var koChooseFileClass: js.Any = js.native
   var koData: js.Any = js.native
-  var koFileRootClass: js.Any = js.native
   var koHasValue: js.Any = js.native
   var koInputTitle: js.Any = js.native
   var koState: js.Any = js.native

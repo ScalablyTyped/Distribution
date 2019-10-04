@@ -337,7 +337,7 @@ trait Legend extends js.Object {
   /**
     * Legend text style.
     */
-  var textStyle: js.UndefOr[TextStyle] = js.undefined
+  var textStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   /**
     * Tooltip configuration for legend tooltip, which is similar to tooltip.
     *
@@ -436,7 +436,7 @@ object Legend {
     shadowOffsetY: Int | Double = null,
     show: js.UndefOr[Boolean] = js.undefined,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
-    textStyle: TextStyle = null,
+    textStyle: TextStyleWithRich = null,
     tooltip: Tooltip = null,
     top: String | Double = null,
     `type`: plain | scroll = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kendo-ui"
-version := "v2019.2.619-dt-20190904Z-05b44b"
+version := "v2019.3.917-dt-20190926Z-9bff9c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

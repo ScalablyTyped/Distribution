@@ -85,7 +85,7 @@ class WebGLRenderer () extends Renderer {
   	 */
   var maxMorphTargets: Double = js.native
   var physicallyCorrectLights: Boolean = js.native
-  var pixelRation: Double = js.native
+  var pixelRatio: Double = js.native
   var properties: WebGLProperties = js.native
   var renderLists: WebGLRenderLists = js.native
   var shadowMap: WebGLShadowMap = js.native
@@ -147,7 +147,7 @@ class WebGLRenderer () extends Renderer {
   /**
   	 * Returns the current active mipmap level.
   	 */
-  def getActiveMipMapLevel(): Double = js.native
+  def getActiveMipmapLevel(): Double = js.native
   /**
   	 * Returns a float with the current clear alpha. Ranges from 0 to 1.
   	 */
@@ -230,6 +230,7 @@ class WebGLRenderer () extends Renderer {
   	 * @deprecated Use {@link WebGLState#reset .state.reset()} instead.
   	 */
   def resetGLState(): Unit = js.native
+  def setAnimationLoop(): Unit = js.native
   /**
   	 * A build in function that can be used instead of requestAnimationFrame. For WebVR projects this function must be used.
   	 * @param callback The function will be called every available frame. If `null` is passed it will stop any already ongoing animation.
@@ -249,17 +250,17 @@ class WebGLRenderer () extends Renderer {
   def setPixelRatio(value: Double): Unit = js.native
   def setRenderTarget(): Unit = js.native
   def setRenderTarget(renderTarget: Null, activeCubeFace: Double): Unit = js.native
-  def setRenderTarget(renderTarget: Null, activeCubeFace: Double, activeMipMapLevel: Double): Unit = js.native
+  def setRenderTarget(renderTarget: Null, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
   /**
   	 * Sets the active render target.
   	 *
   	 * @param renderTarget The {@link WebGLRenderTarget renderTarget} that needs to be activated. When `null` is given, the canvas is set as the active render target instead.
   	 * @param activeCubeFace Specifies the active cube side (PX 0, NX 1, PY 2, NY 3, PZ 4, NZ 5) of {@link WebGLRenderTargetCube}.
-  	 * @param activeMipMapLevel Specifies the active mipmap level.
+  	 * @param activeMipmapLevel Specifies the active mipmap level.
   	 */
   def setRenderTarget(renderTarget: RenderTarget): Unit = js.native
   def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double): Unit = js.native
-  def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double, activeMipMapLevel: Double): Unit = js.native
+  def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
   def setScissor(x: Double): Unit = js.native
   def setScissor(x: Double, y: Double): Unit = js.native
   def setScissor(x: Double, y: Double, width: Double): Unit = js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object srcAnimatedMultiValueMod {
   import typings.reactDashSelect.Anon_In
   import typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps
+  import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 
-  type AnimatedMultiValueProps[OptionType] = Anon_In with MultiValueProps[OptionType]
+  type AnimatedMultiValueProps[OptionType /* <: OptionTypeBase */] = Anon_In with MultiValueProps[OptionType]
 }

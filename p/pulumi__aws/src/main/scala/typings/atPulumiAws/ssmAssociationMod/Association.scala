@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmAssociationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_KeyValues
-import typings.atPulumiAws.Anon_S3BucketName
+import typings.atPulumiAws.typesOutputMod.ssmNs.AssociationOutputLocation
+import typings.atPulumiAws.typesOutputMod.ssmNs.AssociationTarget
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,6 +25,9 @@ class Association protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: AssociationArgs) = this()
   def this(name: String, args: AssociationArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The ID of the SSM association.
+    */
   val associationId: Output[String] = js.native
   /**
     * The descriptive name for the association.
@@ -57,7 +60,7 @@ class Association protected () extends CustomResource {
   /**
     * An output location block. Output Location is documented below.
     */
-  val outputLocation: Output[js.UndefOr[Anon_S3BucketName]] = js.native
+  val outputLocation: Output[js.UndefOr[AssociationOutputLocation]] = js.native
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
@@ -69,7 +72,7 @@ class Association protected () extends CustomResource {
   /**
     * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
     */
-  val targets: Output[js.Array[Anon_KeyValues]] = js.native
+  val targets: Output[js.Array[AssociationTarget]] = js.native
 }
 
 /* static members */

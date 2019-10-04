@@ -17,7 +17,13 @@ trait DmgContent extends js.Object {
     */
   var path: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[link | file | dir] = js.undefined
+  /**
+    * The device-independent pixel offset from the left of the window to the **center** of the icon.
+    */
   var x: Double
+  /**
+    * The device-independent pixel offset from the top of the window to the **center** of the icon.
+    */
   var y: Double
 }
 

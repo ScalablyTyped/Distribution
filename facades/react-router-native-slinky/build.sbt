@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-native-slinky-facade"
-version := "201908231211-17c446"
+version := "201908231211-c72926"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,11 +8,11 @@ libraryDependencies ++= Seq(
   "me.shadaj" %%% "slinky-native" % "0.6.2",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-c13957",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
-  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190918Z-0deff5",
-  "org.scalablytyped" %%% "react-router-native" % "4.2-dt-20190212Z-c4da20",
-  "org.scalablytyped" %%% "react-slinky-facade" % "201907271058-a8d585",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-06c3ac",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-b3917f",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20190930Z-06da54",
+  "org.scalablytyped" %%% "react-router-native" % "5.1-dt-20190925Z-b5f2f3",
+  "org.scalablytyped" %%% "react-slinky-facade" % "201907271058-83c539",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

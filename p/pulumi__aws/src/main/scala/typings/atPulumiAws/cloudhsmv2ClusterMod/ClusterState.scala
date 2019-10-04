@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudhsmv2ClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AwsHardwareCertificateClusterCertificate
+import typings.atPulumiAws.typesInputMod.cloudhsmv2Ns.ClusterClusterCertificates
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait ClusterState extends js.Object {
     * * `cluster_certificates.0.hsm_certificate` - The HSM certificate issued (signed) by the HSM hardware.
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     */
-  val clusterCertificates: js.UndefOr[Input[Anon_AwsHardwareCertificateClusterCertificate]] = js.undefined
+  val clusterCertificates: js.UndefOr[Input[ClusterClusterCertificates]] = js.undefined
   /**
     * The id of the CloudHSM cluster.
     */
@@ -54,7 +54,7 @@ trait ClusterState extends js.Object {
 object ClusterState {
   @scala.inline
   def apply(
-    clusterCertificates: Input[Anon_AwsHardwareCertificateClusterCertificate] = null,
+    clusterCertificates: Input[ClusterClusterCertificates] = null,
     clusterId: Input[String] = null,
     clusterState: Input[String] = null,
     hsmType: Input[String] = null,

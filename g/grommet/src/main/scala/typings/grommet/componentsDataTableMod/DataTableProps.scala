@@ -47,6 +47,7 @@ trait DataTableProps extends js.Object {
     none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BodyBottom | String
   ] = js.undefined
   var primaryKey: js.UndefOr[String] = js.undefined
+  var replace: js.UndefOr[Boolean] = js.undefined
   var resizeable: js.UndefOr[Boolean] = js.undefined
   var rowProps: js.UndefOr[StringDictionary[Anon_Background]] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
@@ -70,6 +71,7 @@ object DataTableProps {
     onSearch: /* repeated */ js.Any => _ = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BodyBottom | String = null,
     primaryKey: String = null,
+    replace: js.UndefOr[Boolean] = js.undefined,
     resizeable: js.UndefOr[Boolean] = js.undefined,
     rowProps: StringDictionary[Anon_Background] = null,
     size: small | medium | large | xlarge | String = null,
@@ -90,6 +92,7 @@ object DataTableProps {
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
     if (!js.isUndefined(resizeable)) __obj.updateDynamic("resizeable")(resizeable)
     if (rowProps != null) __obj.updateDynamic("rowProps")(rowProps)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

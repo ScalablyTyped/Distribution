@@ -5,12 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Sheet extends js.Object {
-  /** The banded (i.e. alternating colors) ranges on this sheet. */
+  /** The banded (alternating colors) ranges on this sheet. */
   var bandedRanges: js.UndefOr[js.Array[BandedRange]] = js.undefined
   /** The filter on this sheet, if any. */
   var basicFilter: js.UndefOr[BasicFilter] = js.undefined
   /** The specifications of every chart on this sheet. */
   var charts: js.UndefOr[js.Array[EmbeddedChart]] = js.undefined
+  /**
+    * All column groups on this sheet, ordered by increasing range start index,
+    * then by group depth.
+    */
+  var columnGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
   /** The conditional format rules in this sheet. */
   var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatRule]] = js.undefined
   /**
@@ -34,6 +39,11 @@ trait Sheet extends js.Object {
   var properties: js.UndefOr[SheetProperties] = js.undefined
   /** The protected ranges in this sheet. */
   var protectedRanges: js.UndefOr[js.Array[ProtectedRange]] = js.undefined
+  /**
+    * All row groups on this sheet, ordered by increasing range start index, then
+    * by group depth.
+    */
+  var rowGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
 }
 
 object Sheet {
@@ -42,18 +52,21 @@ object Sheet {
     bandedRanges: js.Array[BandedRange] = null,
     basicFilter: BasicFilter = null,
     charts: js.Array[EmbeddedChart] = null,
+    columnGroups: js.Array[DimensionGroup] = null,
     conditionalFormats: js.Array[ConditionalFormatRule] = null,
     data: js.Array[GridData] = null,
     developerMetadata: js.Array[DeveloperMetadata] = null,
     filterViews: js.Array[FilterView] = null,
     merges: js.Array[GridRange] = null,
     properties: SheetProperties = null,
-    protectedRanges: js.Array[ProtectedRange] = null
+    protectedRanges: js.Array[ProtectedRange] = null,
+    rowGroups: js.Array[DimensionGroup] = null
   ): Sheet = {
     val __obj = js.Dynamic.literal()
     if (bandedRanges != null) __obj.updateDynamic("bandedRanges")(bandedRanges)
     if (basicFilter != null) __obj.updateDynamic("basicFilter")(basicFilter)
     if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (columnGroups != null) __obj.updateDynamic("columnGroups")(columnGroups)
     if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats)
     if (data != null) __obj.updateDynamic("data")(data)
     if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
@@ -61,6 +74,7 @@ object Sheet {
     if (merges != null) __obj.updateDynamic("merges")(merges)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (protectedRanges != null) __obj.updateDynamic("protectedRanges")(protectedRanges)
+    if (rowGroups != null) __obj.updateDynamic("rowGroups")(rowGroups)
     __obj.asInstanceOf[Sheet]
   }
 }

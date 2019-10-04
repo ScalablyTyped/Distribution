@@ -1,8 +1,8 @@
 package typings.atPulumiAws.applicationloadbalancingTargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CookieDurationEnabledType
-import typings.atPulumiAws.Anon_EnabledHealthyThresholdInterval
+import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.TargetGroupHealthCheck
+import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.TargetGroupStickiness
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait TargetGroupArgs extends js.Object {
   /**
     * A Health Check block. Health Check blocks are documented below.
     */
-  val healthCheck: js.UndefOr[Input[Anon_EnabledHealthyThresholdInterval]] = js.undefined
+  val healthCheck: js.UndefOr[Input[TargetGroupHealthCheck]] = js.undefined
   /**
     * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `targetType` is `lambda`.
     */
@@ -48,7 +48,7 @@ trait TargetGroupArgs extends js.Object {
   /**
     * A Stickiness block. Stickiness blocks are documented below. `stickiness` is only valid if used with Load Balancers of type `Application`
     */
-  val stickiness: js.UndefOr[Input[Anon_CookieDurationEnabledType]] = js.undefined
+  val stickiness: js.UndefOr[Input[TargetGroupStickiness]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -72,7 +72,7 @@ object TargetGroupArgs {
   @scala.inline
   def apply(
     deregistrationDelay: Input[Double] = null,
-    healthCheck: Input[Anon_EnabledHealthyThresholdInterval] = null,
+    healthCheck: Input[TargetGroupHealthCheck] = null,
     lambdaMultiValueHeadersEnabled: Input[Boolean] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
@@ -80,7 +80,7 @@ object TargetGroupArgs {
     protocol: Input[String] = null,
     proxyProtocolV2: Input[Boolean] = null,
     slowStart: Input[Double] = null,
-    stickiness: Input[Anon_CookieDurationEnabledType] = null,
+    stickiness: Input[TargetGroupStickiness] = null,
     tags: Input[StringDictionary[_]] = null,
     targetType: Input[String] = null,
     vpcId: Input[String] = null

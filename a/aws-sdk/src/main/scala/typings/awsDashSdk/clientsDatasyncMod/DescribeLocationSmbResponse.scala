@@ -14,7 +14,7 @@ trait DescribeLocationSmbResponse extends js.Object {
     */
   var CreationTime: js.UndefOr[Time] = js.undefined
   /**
-    * The name of the domain that the SMB server belongs to.
+    * The name of the Windows domain that the SMB server belongs to.
     */
   var Domain: js.UndefOr[SmbDomain] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait DescribeLocationSmbResponse extends js.Object {
     */
   var MountOptions: js.UndefOr[SmbMountOptions] = js.undefined
   /**
-    * The user who is logged on the SMB server.
+    * The user who can mount the share, has the permissions to access files and folders in the SMB share.
     */
   var User: js.UndefOr[SmbUser] = js.undefined
 }

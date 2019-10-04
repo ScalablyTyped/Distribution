@@ -1,10 +1,10 @@
 package typings.atPulumiAws.kinesisAnalyticsApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IdKinesisFirehoseKinesisStreamLambda
-import typings.atPulumiAws.Anon_IdKinesisFirehoseKinesisStreamNamePrefix
-import typings.atPulumiAws.Anon_IdLogStreamArnRoleArn
-import typings.atPulumiAws.Anon_IdS3Schema
+import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationCloudwatchLoggingOptions
+import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationInputs
+import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationOutput
+import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationReferenceDataSources
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait AnalyticsApplicationArgs extends js.Object {
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: js.UndefOr[Input[Anon_IdLogStreamArnRoleArn]] = js.undefined
+  val cloudwatchLoggingOptions: js.UndefOr[Input[AnalyticsApplicationCloudwatchLoggingOptions]] = js.undefined
   /**
     * SQL Code to transform input data, and generate output.
     */
@@ -27,7 +27,7 @@ trait AnalyticsApplicationArgs extends js.Object {
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: js.UndefOr[Input[Anon_IdKinesisFirehoseKinesisStreamNamePrefix]] = js.undefined
+  val inputs: js.UndefOr[Input[AnalyticsApplicationInputs]] = js.undefined
   /**
     * Name of the Kinesis Analytics Application.
     */
@@ -35,12 +35,12 @@ trait AnalyticsApplicationArgs extends js.Object {
   /**
     * Output destination configuration of the application. See Outputs below for more details.
     */
-  val outputs: js.UndefOr[Input[js.Array[Input[Anon_IdKinesisFirehoseKinesisStreamLambda]]]] = js.undefined
+  val outputs: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationOutput]]]] = js.undefined
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: js.UndefOr[Input[Anon_IdS3Schema]] = js.undefined
+  val referenceDataSources: js.UndefOr[Input[AnalyticsApplicationReferenceDataSources]] = js.undefined
   /**
     * Key-value mapping of tags for the Kinesis Analytics Application.
     */
@@ -50,13 +50,13 @@ trait AnalyticsApplicationArgs extends js.Object {
 object AnalyticsApplicationArgs {
   @scala.inline
   def apply(
-    cloudwatchLoggingOptions: Input[Anon_IdLogStreamArnRoleArn] = null,
+    cloudwatchLoggingOptions: Input[AnalyticsApplicationCloudwatchLoggingOptions] = null,
     code: Input[String] = null,
     description: Input[String] = null,
-    inputs: Input[Anon_IdKinesisFirehoseKinesisStreamNamePrefix] = null,
+    inputs: Input[AnalyticsApplicationInputs] = null,
     name: Input[String] = null,
-    outputs: Input[js.Array[Input[Anon_IdKinesisFirehoseKinesisStreamLambda]]] = null,
-    referenceDataSources: Input[Anon_IdS3Schema] = null,
+    outputs: Input[js.Array[Input[AnalyticsApplicationOutput]]] = null,
+    referenceDataSources: Input[AnalyticsApplicationReferenceDataSources] = null,
     tags: Input[StringDictionary[_]] = null
   ): AnalyticsApplicationArgs = {
     val __obj = js.Dynamic.literal()

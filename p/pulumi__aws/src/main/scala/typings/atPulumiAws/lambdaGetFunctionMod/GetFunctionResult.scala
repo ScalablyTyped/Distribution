@@ -1,10 +1,10 @@
 package typings.atPulumiAws.lambdaGetFunctionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_KeyVariablesString
-import typings.atPulumiAws.Anon_Mode
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetIds
-import typings.atPulumiAws.Anon_TargetArn
+import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionDeadLetterConfig
+import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionEnvironment
+import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionTracingConfig
+import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionVpcConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait GetFunctionResult extends js.Object {
   /**
     * Configure the function's *dead letter queue*.
     */
-  val deadLetterConfig: Anon_TargetArn
+  val deadLetterConfig: GetFunctionDeadLetterConfig
   /**
     * Description of what your Lambda Function does.
     */
@@ -25,7 +25,7 @@ trait GetFunctionResult extends js.Object {
   /**
     * The Lambda environment's configuration settings.
     */
-  val environment: Anon_KeyVariablesString
+  val environment: GetFunctionEnvironment
   val functionName: String
   /**
     * The function entrypoint in your code.
@@ -88,7 +88,7 @@ trait GetFunctionResult extends js.Object {
   /**
     * Tracing settings of the function.
     */
-  val tracingConfig: Anon_Mode
+  val tracingConfig: GetFunctionTracingConfig
   /**
     * The version of the Lambda function.
     */
@@ -96,16 +96,16 @@ trait GetFunctionResult extends js.Object {
   /**
     * VPC configuration associated with your Lambda function.
     */
-  val vpcConfig: Anon_SecurityGroupIdsSubnetIds
+  val vpcConfig: GetFunctionVpcConfig
 }
 
 object GetFunctionResult {
   @scala.inline
   def apply(
     arn: String,
-    deadLetterConfig: Anon_TargetArn,
+    deadLetterConfig: GetFunctionDeadLetterConfig,
     description: String,
-    environment: Anon_KeyVariablesString,
+    environment: GetFunctionEnvironment,
     functionName: String,
     handler: String,
     id: String,
@@ -122,9 +122,9 @@ object GetFunctionResult {
     sourceCodeSize: Double,
     tags: StringDictionary[js.Any],
     timeout: Double,
-    tracingConfig: Anon_Mode,
+    tracingConfig: GetFunctionTracingConfig,
     version: String,
-    vpcConfig: Anon_SecurityGroupIdsSubnetIds,
+    vpcConfig: GetFunctionVpcConfig,
     qualifier: String = null
   ): GetFunctionResult = {
     val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, functionName = functionName, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, tags = tags, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)

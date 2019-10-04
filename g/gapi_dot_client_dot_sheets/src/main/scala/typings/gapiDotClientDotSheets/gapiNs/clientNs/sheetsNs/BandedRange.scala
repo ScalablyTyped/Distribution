@@ -8,7 +8,7 @@ trait BandedRange extends js.Object {
   /** The id of the banded range. */
   var bandedRangeId: js.UndefOr[Double] = js.undefined
   /**
-    * Properties for column bands. These properties will be applied on a column-
+    * Properties for column bands. These properties are applied on a column-
     * by-column basis throughout all the columns in the range. At least one of
     * row_properties or column_properties must be specified.
     */
@@ -16,7 +16,7 @@ trait BandedRange extends js.Object {
   /** The range over which these properties are applied. */
   var range: js.UndefOr[GridRange] = js.undefined
   /**
-    * Properties for row bands. These properties will be applied on a row-by-row
+    * Properties for row bands. These properties are applied on a row-by-row
     * basis throughout all the rows in the range. At least one of
     * row_properties or column_properties must be specified.
     */

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DnsName
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcEndpointDnsEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait GetVpcEndpointResult extends js.Object {
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: js.Array[Anon_DnsName]
+  val dnsEntries: js.Array[GetVpcEndpointDnsEntry]
   val id: String
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
@@ -69,7 +69,7 @@ object GetVpcEndpointResult {
   @scala.inline
   def apply(
     cidrBlocks: js.Array[String],
-    dnsEntries: js.Array[Anon_DnsName],
+    dnsEntries: js.Array[GetVpcEndpointDnsEntry],
     id: String,
     networkInterfaceIds: js.Array[String],
     ownerId: String,

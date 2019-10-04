@@ -1,10 +1,10 @@
 package typings.atPulumiAws.mskClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ArnRevision
-import typings.atPulumiAws.Anon_AzDistribution
-import typings.atPulumiAws.Anon_EncryptionAtRestKmsKeyArn
-import typings.atPulumiAws.Anon_Tls
+import typings.atPulumiAws.typesOutputMod.mskNs.ClusterBrokerNodeGroupInfo
+import typings.atPulumiAws.typesOutputMod.mskNs.ClusterClientAuthentication
+import typings.atPulumiAws.typesOutputMod.mskNs.ClusterConfigurationInfo
+import typings.atPulumiAws.typesOutputMod.mskNs.ClusterEncryptionInfo
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -41,11 +41,11 @@ class Cluster protected () extends CustomResource {
   /**
     * Configuration block for the broker nodes of the Kafka cluster.
     */
-  val brokerNodeGroupInfo: Output[Anon_AzDistribution] = js.native
+  val brokerNodeGroupInfo: Output[ClusterBrokerNodeGroupInfo] = js.native
   /**
     * Configuration block for specifying a client authentication. See below.
     */
-  val clientAuthentication: Output[js.UndefOr[Anon_Tls]] = js.native
+  val clientAuthentication: Output[js.UndefOr[ClusterClientAuthentication]] = js.native
   /**
     * Name of the MSK cluster.
     */
@@ -53,7 +53,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
     */
-  val configurationInfo: Output[js.UndefOr[Anon_ArnRevision]] = js.native
+  val configurationInfo: Output[js.UndefOr[ClusterConfigurationInfo]] = js.native
   /**
     * Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
     * * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
@@ -62,7 +62,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Configuration block for specifying encryption. See below.
     */
-  val encryptionInfo: Output[js.UndefOr[Anon_EncryptionAtRestKmsKeyArn]] = js.native
+  val encryptionInfo: Output[js.UndefOr[ClusterEncryptionInfo]] = js.native
   /**
     * Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
     */

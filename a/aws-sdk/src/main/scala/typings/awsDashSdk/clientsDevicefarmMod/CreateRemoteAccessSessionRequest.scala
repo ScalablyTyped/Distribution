@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateRemoteAccessSessionRequest extends js.Object {
   /**
-    * Unique identifier for the client. If you want access to multiple devices on the same client, you should pass the same clientId value in each call to CreateRemoteAccessSession. This is required only if remoteDebugEnabled is set to true.
+    * Unique identifier for the client. If you want access to multiple devices on the same client, you should pass the same clientId value in each call to CreateRemoteAccessSession. This is required only if remoteDebugEnabled is set to true.  Remote debugging is no longer supported. 
     */
   var clientId: js.UndefOr[ClientId] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait CreateRemoteAccessSessionRequest extends js.Object {
     */
   var projectArn: AmazonResourceName
   /**
-    * Set to true if you want to access devices remotely for debugging in your remote access session.
+    * Set to true if you want to access devices remotely for debugging in your remote access session.  Remote debugging is no longer supported. 
     */
   var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait CreateRemoteAccessSessionRequest extends js.Object {
     */
   var skipAppResign: js.UndefOr[Boolean] = js.undefined
   /**
-    * The public key of the ssh key pair you want to use for connecting to remote devices in your remote debugging session. This is only required if remoteDebugEnabled is set to true.
+    *  Ignored. The public key of the ssh key pair you want to use for connecting to remote devices in your remote debugging session. This is only required if remoteDebugEnabled is set to true.  Remote debugging is no longer supported. 
     */
   var sshPublicKey: js.UndefOr[SshPublicKey] = js.undefined
 }

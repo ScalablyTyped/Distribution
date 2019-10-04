@@ -18,8 +18,8 @@ class ODatabaseSession () extends js.Object {
     * @param   {Object|Array} [options.params]   Batch parameters
     * @return           The results of the batch script
     */
-  def batch(batch: String): OResult = js.native
-  def batch(batch: String, options: Anon_PageSize): OResult = js.native
+  def batch[R](batch: String): OResult[R] = js.native
+  def batch[R](batch: String, options: Anon_PageSize): OResult[R] = js.native
   /**
     * Close the database session. If the session is pooled, the instance is returned to the pool,
     * leaving the session open on the server.
@@ -36,8 +36,8 @@ class ODatabaseSession () extends js.Object {
     * @param   {Object|Array} [options.params]   Command parameters
     * @return            The results of the command
     */
-  def command(command: String): OResult = js.native
-  def command(command: String, options: Anon_PageSize): OResult = js.native
+  def command[R](command: String): OResult[R] = js.native
+  def command[R](command: String, options: Anon_PageSize): OResult[R] = js.native
   /**
     * Commit the transaction.
     * @param   changes
@@ -54,8 +54,8 @@ class ODatabaseSession () extends js.Object {
     * @param   {Object|Array} [options.params]   Script parameters
     * @return                          The results of the script
     */
-  def execute(language: String, script: String): OResult = js.native
-  def execute(language: String, script: String, options: Anon_PageSize): OResult = js.native
+  def execute[R](language: String, script: String): OResult[R] = js.native
+  def execute[R](language: String, script: String, options: Anon_PageSize): OResult[R] = js.native
   /**
     * Execute an SQL Live query against the database and retreive the results
     *
@@ -63,8 +63,8 @@ class ODatabaseSession () extends js.Object {
     * @param    options  The options for the batch script
     * @returns        The live query object
     */
-  def liveQuery(query: String): js.Any = js.native
-  def liveQuery(query: String, options: js.Any): js.Any = js.native
+  def liveQuery(query: String): LiveQuery = js.native
+  def liveQuery(query: String, options: js.Any): LiveQuery = js.native
   /**
     * Execute an SQL query against the database and retreive the results
     * @param   query                    The query to execute.
@@ -73,8 +73,8 @@ class ODatabaseSession () extends js.Object {
     * @param   {Object|Array} [options.params]   Query parameters
     * @returns                         The results of the query
     */
-  def query(query: String): OResult = js.native
-  def query(query: String, options: Anon_PageSize): OResult = js.native
+  def query[R](query: String): OResult[R] = js.native
+  def query[R](query: String, options: Anon_PageSize): OResult[R] = js.native
   /**
     * Execute a unit of work in a transaction
     *

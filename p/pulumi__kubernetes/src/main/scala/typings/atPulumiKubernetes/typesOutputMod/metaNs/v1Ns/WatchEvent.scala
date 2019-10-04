@@ -1,6 +1,5 @@
 package typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns
 
-import typings.atPulumiKubernetes.typesOutputMod.pkgNs.runtimeNs.RawExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +15,13 @@ trait WatchEvent extends js.Object {
     *  * If Type is Error: *Status is recommended; other types may make sense
     *    depending on context.
     */
-  val `object`: RawExtension
+  val `object`: js.Object
   val `type`: String
 }
 
 object WatchEvent {
   @scala.inline
-  def apply(`object`: RawExtension, `type`: String): WatchEvent = {
+  def apply(`object`: js.Object, `type`: String): WatchEvent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)

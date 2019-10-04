@@ -1,6 +1,7 @@
 package typings.electron.electronMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.electron.ElectronNs.CreateFromBitmapOptions
 import typings.electron.ElectronNs.CreateFromBufferOptions
 import typings.node.Buffer
 import scala.scalajs.js
@@ -27,7 +28,13 @@ object NativeImage extends js.Object {
     */
   def createEmpty(): typings.electron.ElectronNs.NativeImage = js.native
   /**
-    * Creates a new NativeImage instance from buffer.
+    * Creates a new NativeImage instance from buffer that contains the raw bitmap
+    * pixel data returned by toBitmap(). The specific format is platform-dependent.
+    */
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.ElectronNs.NativeImage = js.native
+  /**
+    * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
+    * first.
     */
   def createFromBuffer(buffer: Buffer): typings.electron.ElectronNs.NativeImage = js.native
   def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.ElectronNs.NativeImage = js.native
@@ -67,7 +74,13 @@ object nativeImage
     */
   def createEmpty(): typings.electron.ElectronNs.NativeImage = js.native
   /**
-    * Creates a new NativeImage instance from buffer.
+    * Creates a new NativeImage instance from buffer that contains the raw bitmap
+    * pixel data returned by toBitmap(). The specific format is platform-dependent.
+    */
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.ElectronNs.NativeImage = js.native
+  /**
+    * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
+    * first.
     */
   def createFromBuffer(buffer: Buffer): typings.electron.ElectronNs.NativeImage = js.native
   def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.ElectronNs.NativeImage = js.native

@@ -23,7 +23,13 @@ trait NetLog extends EventEmitter {
     * Stops recording network events. If not called, net logging will automatically
     * end when app quits.
     */
-  def stopLogging(): Unit = js.native
+  def stopLogging(): js.Promise[String] = js.native
   def stopLogging(callback: js.Function1[/* path */ String, Unit]): Unit = js.native
+  /**
+    * Stops recording network events. If not called, net logging will automatically
+    * end when app quits. Deprecated Soon
+    */
+  @JSName("stopLogging")
+  def stopLogging_Unit(): Unit = js.native
 }
 

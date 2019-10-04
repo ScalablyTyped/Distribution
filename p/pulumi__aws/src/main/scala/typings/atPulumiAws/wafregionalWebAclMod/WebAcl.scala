@@ -1,8 +1,8 @@
 package typings.atPulumiAws.wafregionalWebAclMod
 
-import typings.atPulumiAws.Anon_ActionOverrideAction
-import typings.atPulumiAws.Anon_LogDestination
-import typings.atPulumiAws.Anon_TypeString
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.WebAclDefaultAction
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.WebAclLoggingConfiguration
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.WebAclRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,11 +31,11 @@ class WebAcl protected () extends CustomResource {
   /**
     * The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.
     */
-  val defaultAction: Output[Anon_TypeString] = js.native
+  val defaultAction: Output[WebAclDefaultAction] = js.native
   /**
     * Configuration block to enable WAF logging. Detailed below.
     */
-  val loggingConfiguration: Output[js.UndefOr[Anon_LogDestination]] = js.native
+  val loggingConfiguration: Output[js.UndefOr[WebAclLoggingConfiguration]] = js.native
   /**
     * The name or description for the Amazon CloudWatch metric of this web ACL.
     */
@@ -47,7 +47,7 @@ class WebAcl protected () extends CustomResource {
   /**
     * Set of configuration blocks containing rules for the web ACL. Detailed below.
     */
-  val rules: Output[js.UndefOr[js.Array[Anon_ActionOverrideAction]]] = js.native
+  val rules: Output[js.UndefOr[js.Array[WebAclRule]]] = js.native
 }
 
 /* static members */

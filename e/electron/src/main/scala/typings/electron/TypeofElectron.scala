@@ -81,6 +81,7 @@ trait TypeofElectron extends js.Object {
   var Cookies: Instantiable0[typings.electron.ElectronNs.Cookies]
   var Debugger: Instantiable0[typings.electron.ElectronNs.Debugger]
   var DownloadItem: Instantiable0[typings.electron.ElectronNs.DownloadItem]
+  // TODO: Replace this declaration with NodeJS.EventEmitter
   var EventEmitter: Instantiable0[typings.electron.ElectronNs.EventEmitter]
   var IncomingMessage: Instantiable0[typings.electron.ElectronNs.IncomingMessage]
   var Menu: TypeofClassMenu

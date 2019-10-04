@@ -61,6 +61,7 @@ package object fpMod {
   import typings.lodash.lodashStrings.desc
   import typings.std.Error
   import typings.std.Exclude
+  import typings.std.NonNullable
   import typings.std.Pick
   import typings.std.RegExp
 
@@ -182,8 +183,8 @@ package object fpMod {
   type LodashDeburr = js.Function1[/* string */ String, String]
   type LodashDefaultTo1x1[T] = js.Function1[/* value */ js.UndefOr[T | Null], T]
   type LodashDefaultTo2x1[TDefault] = js.Function1[/* value */ js.UndefOr[js.Any | Null], js.Any | TDefault]
-  type LodashDefaults1x1[TSource] = js.Function1[/* object */ js.Any, TSource with js.Any]
-  type LodashDefaults1x2[TObject] = js.Function1[/* source */ js.Any, js.Any with TObject]
+  type LodashDefaults1x1[TSource] = js.Function1[/* object */ js.Any, NonNullable[TSource with js.Any]]
+  type LodashDefaults1x2[TObject] = js.Function1[/* source */ js.Any, NonNullable[js.Any with TObject]]
   type LodashDefaultsDeep1x1 = js.Function1[/* object */ js.Any, js.Any]
   type LodashDefaultsDeep1x2 = js.Function1[/* sources */ js.Any, js.Any]
   type LodashDefaultsDeepAll = js.Function1[/* object */ js.Array[js.Any], js.Any]

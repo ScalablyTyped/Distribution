@@ -25,8 +25,6 @@ trait SelectProps[T] extends AbstractSelectProps {
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[String | js.Array[String]] = js.undefined
   var getInputElement: js.UndefOr[js.Function0[ReactElement]] = js.undefined
-  /** @deprecated Use `searchValue` instead. */
-  var inputValue: js.UndefOr[String] = js.undefined
   var labelInValue: js.UndefOr[Boolean] = js.undefined
   var maxTagCount: js.UndefOr[Double] = js.undefined
   var maxTagPlaceholder: js.UndefOr[ReactNode | (js.Function1[/* omittedValues */ js.Array[T], ReactNode])] = js.undefined
@@ -47,7 +45,6 @@ trait SelectProps[T] extends AbstractSelectProps {
   var optionFilterProp: js.UndefOr[String] = js.undefined
   var optionLabelProp: js.UndefOr[String] = js.undefined
   var removeIcon: js.UndefOr[ReactNode] = js.undefined
-  var searchValue: js.UndefOr[String] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
   var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
   var value: js.UndefOr[T] = js.undefined
@@ -76,7 +73,6 @@ object SelectProps {
     getInputElement: () => ReactElement = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     id: String = null,
-    inputValue: String = null,
     labelInValue: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
     maxTagCount: Int | Double = null,
@@ -102,7 +98,6 @@ object SelectProps {
     placeholder: String | ReactNode = null,
     prefixCls: String = null,
     removeIcon: ReactNode = null,
-    searchValue: String = null,
     showAction: String | js.Array[String] = null,
     showArrow: js.UndefOr[Boolean] = js.undefined,
     showSearch: js.UndefOr[Boolean] = js.undefined,
@@ -135,7 +130,6 @@ object SelectProps {
     if (getInputElement != null) __obj.updateDynamic("getInputElement")(js.Any.fromFunction0(getInputElement))
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
     if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])
@@ -161,7 +155,6 @@ object SelectProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
-    if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue)
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)

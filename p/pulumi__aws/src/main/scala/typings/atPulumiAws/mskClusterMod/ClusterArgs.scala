@@ -1,10 +1,10 @@
 package typings.atPulumiAws.mskClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ArnRevisionInput
-import typings.atPulumiAws.Anon_AzDistributionClientSubnets
-import typings.atPulumiAws.Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit
-import typings.atPulumiAws.Anon_TlsAnonCertificateAuthorityArnsArray
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterBrokerNodeGroupInfo
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterClientAuthentication
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterConfigurationInfo
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterEncryptionInfo
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,11 +14,11 @@ trait ClusterArgs extends js.Object {
   /**
     * Configuration block for the broker nodes of the Kafka cluster.
     */
-  val brokerNodeGroupInfo: Input[Anon_AzDistributionClientSubnets]
+  val brokerNodeGroupInfo: Input[ClusterBrokerNodeGroupInfo]
   /**
     * Configuration block for specifying a client authentication. See below.
     */
-  val clientAuthentication: js.UndefOr[Input[Anon_TlsAnonCertificateAuthorityArnsArray]] = js.undefined
+  val clientAuthentication: js.UndefOr[Input[ClusterClientAuthentication]] = js.undefined
   /**
     * Name of the MSK cluster.
     */
@@ -26,11 +26,11 @@ trait ClusterArgs extends js.Object {
   /**
     * Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
     */
-  val configurationInfo: js.UndefOr[Input[Anon_ArnRevisionInput]] = js.undefined
+  val configurationInfo: js.UndefOr[Input[ClusterConfigurationInfo]] = js.undefined
   /**
     * Configuration block for specifying encryption. See below.
     */
-  val encryptionInfo: js.UndefOr[Input[Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit]] = js.undefined
+  val encryptionInfo: js.UndefOr[Input[ClusterEncryptionInfo]] = js.undefined
   /**
     * Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
     */
@@ -52,13 +52,13 @@ trait ClusterArgs extends js.Object {
 object ClusterArgs {
   @scala.inline
   def apply(
-    brokerNodeGroupInfo: Input[Anon_AzDistributionClientSubnets],
+    brokerNodeGroupInfo: Input[ClusterBrokerNodeGroupInfo],
     clusterName: Input[String],
     kafkaVersion: Input[String],
     numberOfBrokerNodes: Input[Double],
-    clientAuthentication: Input[Anon_TlsAnonCertificateAuthorityArnsArray] = null,
-    configurationInfo: Input[Anon_ArnRevisionInput] = null,
-    encryptionInfo: Input[Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit] = null,
+    clientAuthentication: Input[ClusterClientAuthentication] = null,
+    configurationInfo: Input[ClusterConfigurationInfo] = null,
+    encryptionInfo: Input[ClusterEncryptionInfo] = null,
     enhancedMonitoring: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): ClusterArgs = {

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.secretsmanagerSecretMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AutomaticallyAfterDays
+import typings.atPulumiAws.typesOutputMod.secretsmanagerNs.SecretRotationRules
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -63,7 +63,7 @@ class Secret protected () extends CustomResource {
   /**
     * A structure that defines the rotation configuration for this secret. Defined below.
     */
-  val rotationRules: Output[js.UndefOr[Anon_AutomaticallyAfterDays]] = js.native
+  val rotationRules: Output[js.UndefOr[SecretRotationRules]] = js.native
   /**
     * Specifies a key-value map of user-defined tags that are attached to the secret.
     */

@@ -15,7 +15,6 @@ import scala.scalajs.js.annotation._
 trait SearchTemplate[T] extends Generic {
   var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   var body: T
-  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
   var expand_wildcards: js.UndefOr[open | closed | none | all] = js.undefined
   var explain: js.UndefOr[Boolean] = js.undefined
   var ignore_throttled: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +35,6 @@ object SearchTemplate {
   def apply[T](
     body: T,
     allow_no_indices: js.UndefOr[Boolean] = js.undefined,
-    ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     expand_wildcards: open | closed | none | all = null,
     explain: js.UndefOr[Boolean] = js.undefined,
@@ -60,7 +58,6 @@ object SearchTemplate {
   ): SearchTemplate[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     if (!js.isUndefined(allow_no_indices)) __obj.updateDynamic("allow_no_indices")(allow_no_indices)
-    if (!js.isUndefined(ccs_minimize_roundtrips)) __obj.updateDynamic("ccs_minimize_roundtrips")(ccs_minimize_roundtrips)
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (expand_wildcards != null) __obj.updateDynamic("expand_wildcards")(expand_wildcards.asInstanceOf[js.Any])
     if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain)

@@ -18,9 +18,6 @@ class Asset protected () extends js.Object {
   var `type`: String = js.native
   var uri: String = js.native
   var width: Double | Null = js.native
-  def _downloadAsyncManagedEnv(): js.Promise[Unit] = js.native
-  def _downloadAsyncUnmanagedEnv(): js.Promise[Unit] = js.native
-  def _downloadAsyncWeb(): js.Promise[Unit] = js.native
   def downloadAsync(): js.Promise[Unit] = js.native
 }
 

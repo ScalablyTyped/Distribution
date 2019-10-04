@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2DefaultSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlocks
+import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultSecurityGroupEgress
+import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultSecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,12 +30,12 @@ class DefaultSecurityGroup protected () extends CustomResource {
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
     */
-  val egress: Output[js.UndefOr[js.Array[Anon_CidrBlocks]]] = js.native
+  val egress: Output[js.UndefOr[js.Array[DefaultSecurityGroupEgress]]] = js.native
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
     */
-  val ingress: Output[js.UndefOr[js.Array[Anon_CidrBlocks]]] = js.native
+  val ingress: Output[js.UndefOr[js.Array[DefaultSecurityGroupIngress]]] = js.native
   /**
     * The name of the security group
     */

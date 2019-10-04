@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartPlotArea object, for use in "chartPlotArea.set({ ... })". */
+/** An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`. */
 trait ChartPlotAreaUpdateData extends js.Object {
   /**
     *

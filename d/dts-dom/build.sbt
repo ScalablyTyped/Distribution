@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dts-dom"
-version := "3.3.0-f6591c"
+version := "3.4.0-4390d5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

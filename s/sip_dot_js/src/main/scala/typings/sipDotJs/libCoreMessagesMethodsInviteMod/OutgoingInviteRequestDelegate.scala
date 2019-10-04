@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait OutgoingInviteRequestDelegate extends OutgoingRequestDelegate {
   /**
     * Received a 2xx positive final response to this request.
-    * @param response Incoming response (including a confirmed Session).
+    * @param response - Incoming response (including a confirmed Session).
     */
   @JSName("onAccept")
   var onAccept_OutgoingInviteRequestDelegate: js.UndefOr[js.Function1[/* response */ AckableIncomingResponseWithSession, Unit]] = js.undefined
   /**
     * Received a 1xx provisional response to this request. Excluding 100 responses.
-    * @param response Incoming response (including an early Session).
+    * @param response - Incoming response (including an early Session).
     */
   @JSName("onProgress")
   var onProgress_OutgoingInviteRequestDelegate: js.UndefOr[js.Function1[/* response */ PrackableIncomingResponseWithSession, Unit]] = js.undefined

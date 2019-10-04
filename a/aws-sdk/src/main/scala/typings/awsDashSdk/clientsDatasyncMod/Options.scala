@@ -22,11 +22,15 @@ trait Options extends js.Object {
     */
   var Mtime: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.Mtime] = js.undefined
   /**
+    * A value that determines whether files at the destination should be overwritten or preserved when copying files. If set to NEVER a destination file will not be replaced by a source file, even if the destination file differs from the source file. If you modify files in the destination and you sync the files, you can use this value to protect against overwriting those changes.  Some storage classes have specific behaviors that can affect your S3 storage cost. For detailed information, see using-storage-classes in the AWS DataSync User Guide.
+    */
+  var OverwriteMode: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.OverwriteMode] = js.undefined
+  /**
     * A value that determines which users or groups can access a file for a specific purpose such as reading, writing, or execution of the file.  Default value: PRESERVE. PRESERVE: Preserve POSIX-style permissions (recommended). NONE: Ignore permissions.   AWS DataSync can preserve extant permissions of a source location. 
     */
   var PosixPermissions: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.PosixPermissions] = js.undefined
   /**
-    * A value that specifies whether files in the destination that don't exist in the source file system should be preserved.  Default value: PRESERVE. PRESERVE: Ignore such destination files (recommended).  REMOVE: Delete destination files that aren’t present in the source.
+    * A value that specifies whether files in the destination that don't exist in the source file system should be preserved. This option can affect your storage cost. If your task deletes objects, you might incur minimum storage duration charges for certain storage classes. For detailed information, see using-storage-classes in the AWS DataSync User Guide. Default value: PRESERVE. PRESERVE: Ignore such destination files (recommended).  REMOVE: Delete destination files that aren’t present in the source.
     */
   var PreserveDeletedFiles: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.PreserveDeletedFiles] = js.undefined
   /**
@@ -38,7 +42,7 @@ trait Options extends js.Object {
     */
   var Uid: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.Uid] = js.undefined
   /**
-    * A value that determines whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred.  Default value: POINT_IN_TIME_CONSISTENT. POINT_IN_TIME_CONSISTENT: Perform verification (recommended).  NONE: Skip verification.
+    * A value that determines whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred.  Default value: POINT_IN_TIME_CONSISTENT. POINT_IN_TIME_CONSISTENT: Perform verification (recommended).  ONLY_FILES_TRANSFERRED: Perform verification on only files that were transferred. NONE: Skip verification.
     */
   var VerifyMode: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.VerifyMode] = js.undefined
 }
@@ -50,6 +54,7 @@ object Options {
     BytesPerSecond: js.UndefOr[BytesPerSecond] = js.undefined,
     Gid: Gid = null,
     Mtime: Mtime = null,
+    OverwriteMode: OverwriteMode = null,
     PosixPermissions: PosixPermissions = null,
     PreserveDeletedFiles: PreserveDeletedFiles = null,
     PreserveDevices: PreserveDevices = null,
@@ -61,6 +66,7 @@ object Options {
     if (!js.isUndefined(BytesPerSecond)) __obj.updateDynamic("BytesPerSecond")(BytesPerSecond)
     if (Gid != null) __obj.updateDynamic("Gid")(Gid.asInstanceOf[js.Any])
     if (Mtime != null) __obj.updateDynamic("Mtime")(Mtime.asInstanceOf[js.Any])
+    if (OverwriteMode != null) __obj.updateDynamic("OverwriteMode")(OverwriteMode.asInstanceOf[js.Any])
     if (PosixPermissions != null) __obj.updateDynamic("PosixPermissions")(PosixPermissions.asInstanceOf[js.Any])
     if (PreserveDeletedFiles != null) __obj.updateDynamic("PreserveDeletedFiles")(PreserveDeletedFiles.asInstanceOf[js.Any])
     if (PreserveDevices != null) __obj.updateDynamic("PreserveDevices")(PreserveDevices.asInstanceOf[js.Any])

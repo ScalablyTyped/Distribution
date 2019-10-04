@@ -138,6 +138,9 @@ object atIonicCoreStrings {
   sealed trait clear extends js.Object
   
   @js.native
+  sealed trait condense extends js.Object
+  
+  @js.native
   sealed trait cordova extends js.Object
   
   @js.native
@@ -649,6 +652,8 @@ object atIonicCoreStrings {
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
+  @scala.inline
+  def condense: condense = "condense".asInstanceOf[condense]
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   @scala.inline

@@ -17,14 +17,18 @@
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
-[debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
-[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
+[debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
+[debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
@@ -35,7 +39,6 @@
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(openfin) [id => openfin, phase => typescript, file => ../_v2/api/fin.d.ts] 
-[debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:92 Ignored [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => typescript] 
@@ -106,6 +109,8 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, application)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/base.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, base))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, base)) [id => openfin, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/browserview.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, browserview))) [id => openfin, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, browserview)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/channel.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, channel))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, channel)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/emitterMap.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, emitterMap))) [id => openfin, phase => typescript] 
@@ -124,6 +129,8 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, notifications)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/system.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, system))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, system)) [id => openfin, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/webcontents.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, webcontents))) [id => openfin, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, webcontents)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/events/window.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, events, window))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin, _v2, api, events, window)) [id => openfin, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/_v2/api/external-application/external-application.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin, _v2, api, external-application, external-application))) [id => openfin, phase => typescript] 
@@ -239,6 +246,15 @@
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/openfin),TsIdentLibrarySimple(openfin)),TsIdentModule(None,List(openfin))) [id => openfin, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(openfin)) [id => openfin, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(openfin) [id => openfin, phase => typescript] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timing))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timing))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof window.performance.timing [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timeOrigin))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timeOrigin))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof window.performance.timeOrigin [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(navigation))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(navigation))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof window.performance.navigation [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/elipc) / TsExport() / TsExporteeTree() / TsDeclClass(ElIPCTransport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclClass(Transport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/websocket) / TsExport() / TsExporteeTree() / TsDeclClass(WebSocketTransport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
@@ -251,6 +267,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getManifest) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getParentUuid) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getShortcuts) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getViews) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getZoomLevel) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(registerUser) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
@@ -271,6 +288,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wrapSync) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(create) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(start) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(startManyManifests) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrent) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrentSync) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(startFromManifest) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclInterface(ApplicationModule))] 
@@ -296,8 +314,13 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(create) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserViewModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wrapSync) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserViewModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(attach) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(destroy) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(show) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hide) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(setBounds) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getInfo) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrentWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/browserview/browserview) / TsDeclClass(BrowserView))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(writeText) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/clipboard/clipboard) / TsDeclInterface(Clipboard))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(readText) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/clipboard/clipboard) / TsDeclInterface(Clipboard))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(writeHtml) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/clipboard/clipboard) / TsDeclInterface(Clipboard))] 
@@ -321,8 +344,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(bringToFront) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(disableUserMovement) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(enableUserMovement) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(flash) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(focus) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getBounds) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
@@ -349,7 +370,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(stopFlashing) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(updateOptions) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclClass(ExternalWindow))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wrap) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclInterface(ExternalWindowModule))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wrapSync) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/external-window/external-window) / TsDeclInterface(ExternalWindowModule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/fin) / TsDeclClass(default))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/frame/frame) / TsDeclClass(_Frame))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getInfo) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/frame/frame) / TsDeclClass(_Frame))] 
@@ -425,6 +445,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getEnvironmentVariable) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getFocusedWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getFocusedExternalWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getInstalledRuntimes) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getLog) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getMachineId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getMinLogLevel) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/system/system) / TsDeclInterface(System))] 
@@ -465,17 +486,20 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(navigateBack) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/webcontents/webcontents) / TsDeclClass(WebContents))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(navigateForward) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/webcontents/webcontents) / TsDeclClass(WebContents))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(stopNavigation) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/webcontents/webcontents) / TsDeclClass(WebContents))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(reload) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/webcontents/webcontents) / TsDeclClass(WebContents))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(createWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAllFrames) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getBounds) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(focus) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(center) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(blur) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(bringToFront) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(animate) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hide) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getNativeId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrentViews) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(disableFrame) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(disableUserMovement) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(enableFrame) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
@@ -493,7 +517,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isMainWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isShowing) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(joinGroup) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(reload) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(leaveGroup) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(maximize) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mergeGroups) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/window) / TsDeclClass(_Window))] 
@@ -523,6 +546,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(createChildWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/environment) / TsDeclInterface(Environment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isWindowExists) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/environment) / TsDeclInterface(Environment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getWebWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/environment) / TsDeclInterface(Environment))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrentEntityIdentity) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/environment) / TsDeclInterface(Environment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(writeToken) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(retrievePort) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getNextMessageId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
@@ -530,6 +554,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getRandomId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isWindowExists) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getWebWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrentEntityIdentity) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/node-env) / TsDeclInterface(NodeEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(writeToken) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(retrievePort) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getNextMessageId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
@@ -537,6 +562,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getRandomId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isWindowExists) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getWebWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getCurrentEntityIdentity) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/environment/openfin-env) / TsDeclInterface(OpenFinEnvironment))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/launcher/launcher) / TsDeclClass(default))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(IS_SUPPORTED) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/launcher/launcher) / TsDeclClass(default))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(launch) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/launcher/launcher) / TsDeclInterface(Launcher))] 
@@ -572,6 +598,8 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport-errors) / TsDeclClass(RuntimeError))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclClass(default))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(connectSync) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getPort) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(shutdown) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(connect) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(connectByPort) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(ferryAction) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport))] 
@@ -689,6 +717,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getEnvironmentVariable) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getFocusedWindow) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getHostSpecs) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getInstalledRuntimes) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getLog) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getLogList) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getMachineId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin) / TsDeclNamespace(fin) / TsDeclInterface(OpenFinSystem))] 
@@ -812,6 +841,8 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_Action) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/interappbus/channel/provider) / TsDeclClass(ChannelProvider) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_SubscriberAdded) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/interappbus/interappbus) / TsDeclInterface(InterApplicationBus) / TsMemberProperty(events) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Click) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/notification/notification) / TsDeclInterface(_NotificationModule) / TsMemberProperty(events) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Bottom) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/windowOption) / TsDeclInterface(ResizeRegion) / TsMemberProperty(sides) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_CrossOriginInjection) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/window/windowOption) / TsDeclInterface(Api) / TsMemberProperty(iframe) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NotificationId) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(NotificationEvent) / TsMemberProperty(payload) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Reject) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclInterface(Transport) / TsMemberProperty(wireListeners) / TsTypeRef() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Alias) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/wire) / TsDeclInterface(BaseConfig) / TsMemberProperty(appAssets) / TsTypeTuple() / TsTypeObject())] 
@@ -881,8 +912,8 @@
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - typings.openfin.underscoreV2ApiEventsBaseMod.RuntimeEvent because Already inherited [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2ApiEventsFrameMod) / Name(FrameEvent)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(uuid) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2ApiBaseMod) / Name(Reply)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(messageCounter, getNextMessageId, createChildWindow, isWindowExists, getRandomId, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentNodeDashEnvMod) / Name(default)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(resolveUrl, getNextMessageId, createChildWindow, isWindowExists, getRandomId, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentOpenfinDashEnvMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(messageCounter, getNextMessageId, createChildWindow, isWindowExists, getRandomId, getCurrentEntityIdentity, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentNodeDashEnvMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(resolveUrl, getNextMessageId, createChildWindow, isWindowExists, getRandomId, getCurrentEntityIdentity, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentOpenfinDashEnvMod) / Name(default)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(os, macLaunch, winLaunch, Security_Realm_Config_Key, OpenFin_Installer, Installer_Work_Dir, launch) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2LauncherLauncherMod) / Name(default)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(DisconnectedError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(DuplicateCorrelationError)] 
@@ -892,27 +923,19 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(RuntimeError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(UnexpectedActionError)] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => scala.js] 
-[warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibrarySimple(openfin) [id => openfin, phase => build] gigahorse.StatusError: Unexpected status: 404
-	at gigahorse.StatusError$.apply(StatusError.scala:29)
-	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
-	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
-	at gigahorse.support.okhttp.OkHandler$FullOkHandler.onStatusReceived(OkHandler.scala:31)
-	at gigahorse.support.okhttp.OkhClient$$anon$1.onResponse(OkhClient.scala:163)
-	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:141)
-	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
 [warn ] Phase3Compile.scala:214 Building openfin... [id => openfin, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E6] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:17:85
+[error] Phase3Compile.scala:240 [E] [E7] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:17:85
 [E]      not found: type Type
 [E]      L17:     */ typings.openfin.openfinStrings.WindowEvents with (WindowEventMapping[window, Type])
 [E]                                                                                               ^
-[E] [E5] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod/package.scala:37:112
+[E] [E6] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod/package.scala:37:112
 [E]      not found: type Type
 [E]      L37:     */ typings.openfin.openfinStrings.ExternalWindowEvents with (ExternalWindowEventMapping[`external-window`, Type])
 [E]                                                                                                                          ^
+[E] [E5] src/main/scala/typings/openfin/underscoreV2ApiEventsBrowserviewMod/package.scala:12:79
+[E]      not found: type Type
+[E]      L12:     */ typings.openfin.openfinStrings.ViewEvents with (ViewEventMapping[view, Type])
+[E]                                                                                         ^
 [E] [E4] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala:11:161
 [E]      not found: type Type
 [E]      L11:   type ApplicationEvents = PropagatedWindowEvents[application] with typings.openfin.openfinStrings.ApplicationEvents with (ApplicationEventMapping[application, Type])
@@ -930,10 +953,22 @@
 [E]      L13:     */ typings.openfin.openfinStrings.PropagatedWindowEvents with (PropagatedWindowEventMapping[Topic, Type])
 [E]                                                                                                                  ^
 [E] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala: L11 [E4], L14 [E2]
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod/package.scala: L37 [E5]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod/package.scala: L37 [E6]
 [E] src/main/scala/typings/openfin/underscoreV2ApiEventsSystemMod/package.scala: L15 [E3]
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala: L13 [E1], L17 [E6]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala: L13 [E1], L17 [E7]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsBrowserviewMod/package.scala: L12 [E5]
 [E] Failed to compile 'openfin'
  [id => openfin, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => publish] 
+[warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibrarySimple(openfin) [id => openfin, phase => build] gigahorse.StatusError: Unexpected status: 404
+	at gigahorse.StatusError$.apply(StatusError.scala:29)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
+	at gigahorse.support.okhttp.OkHandler$FullOkHandler.onStatusReceived(OkHandler.scala:31)
+	at gigahorse.support.okhttp.OkhClient$$anon$1.onResponse(OkhClient.scala:163)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:141)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

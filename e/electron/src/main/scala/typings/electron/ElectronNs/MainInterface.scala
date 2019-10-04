@@ -52,6 +52,7 @@ trait MainInterface extends CommonInterface {
   var powerMonitor: PowerMonitor
   var powerSaveBlocker: PowerSaveBlocker
   var protocol: Protocol
+  var screen: Screen
   var session: TypeofClassSession
   var systemPreferences: SystemPreferences
   var webContents: TypeofClassWebContents

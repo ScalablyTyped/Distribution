@@ -19,6 +19,7 @@ object ^ extends js.Object {
   def getStack(): String = js.native
   def hasMonitor(): Boolean = js.native
   def isDryRun(): Boolean = js.native
+  def isLegacyApplyEnabled(): Boolean = js.native
   def isQueryMode(): Boolean = js.native
   def isTestModeEnabled(): Boolean = js.native
   def monitorSupportsSecrets(): js.Promise[Boolean] = js.native

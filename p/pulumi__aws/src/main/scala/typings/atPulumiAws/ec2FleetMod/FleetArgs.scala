@@ -1,10 +1,10 @@
 package typings.atPulumiAws.ec2FleetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationStrategyInput
-import typings.atPulumiAws.Anon_AllocationStrategyInstanceInterruptionBehaviorInstancePoolsToUseCount
-import typings.atPulumiAws.Anon_DefaultTargetCapacityTypeOnDemandTargetCapacity
-import typings.atPulumiAws.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType
+import typings.atPulumiAws.typesInputMod.ec2Ns.FleetLaunchTemplateConfig
+import typings.atPulumiAws.typesInputMod.ec2Ns.FleetOnDemandOptions
+import typings.atPulumiAws.typesInputMod.ec2Ns.FleetSpotOptions
+import typings.atPulumiAws.typesInputMod.ec2Ns.FleetTargetCapacitySpecification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,11 +18,11 @@ trait FleetArgs extends js.Object {
   /**
     * Nested argument containing EC2 Launch Template configurations. Defined below.
     */
-  val launchTemplateConfig: Input[Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType]
+  val launchTemplateConfig: Input[FleetLaunchTemplateConfig]
   /**
     * Nested argument containing On-Demand configurations. Defined below.
     */
-  val onDemandOptions: js.UndefOr[Input[Anon_AllocationStrategyInput]] = js.undefined
+  val onDemandOptions: js.UndefOr[Input[FleetOnDemandOptions]] = js.undefined
   /**
     * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
     */
@@ -30,9 +30,7 @@ trait FleetArgs extends js.Object {
   /**
     * Nested argument containing Spot configurations. Defined below.
     */
-  val spotOptions: js.UndefOr[
-    Input[Anon_AllocationStrategyInstanceInterruptionBehaviorInstancePoolsToUseCount]
-  ] = js.undefined
+  val spotOptions: js.UndefOr[Input[FleetSpotOptions]] = js.undefined
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
@@ -40,7 +38,7 @@ trait FleetArgs extends js.Object {
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
-  val targetCapacitySpecification: Input[Anon_DefaultTargetCapacityTypeOnDemandTargetCapacity]
+  val targetCapacitySpecification: Input[FleetTargetCapacitySpecification]
   /**
     * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
     */
@@ -58,12 +56,12 @@ trait FleetArgs extends js.Object {
 object FleetArgs {
   @scala.inline
   def apply(
-    launchTemplateConfig: Input[Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType],
-    targetCapacitySpecification: Input[Anon_DefaultTargetCapacityTypeOnDemandTargetCapacity],
+    launchTemplateConfig: Input[FleetLaunchTemplateConfig],
+    targetCapacitySpecification: Input[FleetTargetCapacitySpecification],
     excessCapacityTerminationPolicy: Input[String] = null,
-    onDemandOptions: Input[Anon_AllocationStrategyInput] = null,
+    onDemandOptions: Input[FleetOnDemandOptions] = null,
     replaceUnhealthyInstances: Input[Boolean] = null,
-    spotOptions: Input[Anon_AllocationStrategyInstanceInterruptionBehaviorInstancePoolsToUseCount] = null,
+    spotOptions: Input[FleetSpotOptions] = null,
     tags: Input[StringDictionary[Input[String]]] = null,
     terminateInstances: Input[Boolean] = null,
     terminateInstancesWithExpiration: Input[Boolean] = null,

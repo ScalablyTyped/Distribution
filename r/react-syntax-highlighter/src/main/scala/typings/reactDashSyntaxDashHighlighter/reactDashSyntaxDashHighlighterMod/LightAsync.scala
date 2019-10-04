@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-syntax-highlighter", "LightAsync")
 @js.native
 class LightAsync ()
-  extends typings.reactDashSyntaxDashHighlighter.lightDashAsyncMod.default
+  extends typings.reactDashSyntaxDashHighlighter.distEsmLightDashAsyncMod.default
 
 /* static members */
 @JSImport("react-syntax-highlighter", "LightAsync")

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@fortawesome/react-fontawesome", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def FontAwesomeIcon(props: Props): Element = js.native
+  def FontAwesomeIcon(props: FontAwesomeIconProps): Element = js.native
 }
 

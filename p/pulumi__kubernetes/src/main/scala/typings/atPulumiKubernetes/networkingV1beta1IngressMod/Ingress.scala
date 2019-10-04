@@ -34,29 +34,29 @@ class Ingress protected () extends CustomResource {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output[`networkingDOTk8sDOTio/v1beta1`] = js.native
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Ingress] = js.native
   /**
     * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output[ObjectMeta] = js.native
   /**
     * Spec is the desired state of the Ingress. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val spec: Output[IngressSpec] = js.native
   /**
     * Status is the current state of the Ingress. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val status: Output[IngressStatus] = js.native
 }
@@ -67,14 +67,13 @@ class Ingress protected () extends CustomResource {
 object Ingress extends js.Object {
   /**
     * Get the state of an existing `Ingress` resource, as identified by `id`.
-    * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-    * Kubernetes convention) the ID becomes default/<name>.
+    * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+    * Kubernetes convention) the ID becomes `default/<name>`.
     *
     * Pulumi will keep track of this resource using `name` as the Pulumi ID.
     *
     * @param name _Unique_ name used to register this resource with Pulumi.
-    * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-    *  <namespace>/<name> or <name>.
+    * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
     * @param opts Uniquely specifies a CustomResource to select.
     */
   def get(name: String, id: Input[ID]): Ingress = js.native

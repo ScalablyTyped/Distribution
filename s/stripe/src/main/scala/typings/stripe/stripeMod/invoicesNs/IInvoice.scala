@@ -1,13 +1,18 @@
 package typings.stripe.stripeMod.invoicesNs
 
+import typings.stripe.Anon_AmountInclusive
+import typings.stripe.stripeMod.IAddress
 import typings.stripe.stripeMod.IList
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
+import typings.stripe.stripeMod.IShippingInformation
 import typings.stripe.stripeMod.chargesNs.ICharge
 import typings.stripe.stripeMod.couponsNs.IDiscount
+import typings.stripe.stripeMod.customerTaxIdsNs.ITaxIdCreationOptions
 import typings.stripe.stripeMod.customersNs.ICustomer
 import typings.stripe.stripeMod.paymentIntentsNs.IPaymentIntent
 import typings.stripe.stripeMod.subscriptionsNs.ISubscription
+import typings.stripe.stripeMod.taxRatesNs.ITaxRate
 import typings.stripe.stripeStrings.charge_automatically
 import typings.stripe.stripeStrings.draft
 import typings.stripe.stripeStrings.invoice
@@ -41,6 +46,14 @@ import scala.scalajs.js.annotation._
   * the amount due for the next invoice.
   */
 trait IInvoice extends IResourceObject {
+  /**
+    * The country of the business associated with this invoice, most often the business creating the invoice.
+    */
+  var account_country: String
+  /**
+    * The public name of the business associated with this invoice, most often the business creating the invoice.
+    */
+  var account_name: String
   /**
     * Final amount due at this time for this invoice. If the invoice's total is smaller than the minimum charge
     * amount, for example, or if there is account credit that can be applied to the invoice, the amount_due may
@@ -116,10 +129,10 @@ trait IInvoice extends IResourceObject {
     */
   var charge: String | ICharge | Null
   /**
-    * Whether or not the invoice is still trying to collect payment. An invoice is closed if it's either paid or
+    * @deprecated Whether or not the invoice is still trying to collect payment. An invoice is closed if it's either paid or
     * it has been marked closed. A closed invoice will no longer attempt to collect payment.
     */
-  var closed: Boolean
+  var closed: js.UndefOr[Boolean] = js.undefined
   /**
     * Either charge_automatically, or send_invoice. When charging automatically, Stripe will attempt to pay
     * this invoice using the default source attached to the customer. When sending an invoice, Stripe will
@@ -140,6 +153,11 @@ trait IInvoice extends IResourceObject {
   var custom_fields: js.Array[ICustomField]
   var customer: String | ICustomer
   /**
+    * The customer’s address. Until the invoice is finalized, this field will equal customer.address.
+    * Once the invoice is finalized, this field will no longer be updated.
+    */
+  var customer_address: IAddress | Null
+  /**
     * The customer’s email. Until the invoice is finalized, this field will equal customer.email.
     * Once the invoice is finalized, this field will no longer be updated.
     */
@@ -155,15 +173,40 @@ trait IInvoice extends IResourceObject {
     */
   var customer_phone: String
   /**
-    * Time at which the object was created. Measured in seconds since the Unix epoch.
+    * The customer’s shipping information. Until the invoice is finalized, this field will equal customer.shipping.
+    * Once the invoice is finalized, this field will no longer be updated.
     */
-  var date: Double
+  var customer_shipping: IShippingInformation
+  /**
+    * The customer’s tax exempt status. Until the invoice is finalized, this field will equal customer.tax_exempt.
+    * Once the invoice is finalized, this field will no longer be updated.
+    */
+  var customer_tax_exempt: String
+  /**
+    * The customer’s tax IDs. Until the invoice is finalized, this field will contain the same tax IDs as customer.tax_ids.
+    * Once the invoice is finalized, this field will no longer be updated.
+    */
+  var customer_tax_ids: js.Array[ITaxIdCreationOptions]
+  /**
+    * @deprecated Time at which the object was created. Measured in seconds since the Unix epoch.
+    */
+  var date: js.UndefOr[Double] = js.undefined
+  /**
+    * ID of the default payment method for the invoice. It must belong to the customer associated with the invoice.
+    * If not set, defaults to the subscription’s default payment method, if any, or to the default payment method in
+    * the customer’s invoice settings.
+    */
+  var default_payment_method: String
   /**
     * ID of the default payment source for the invoice. It must belong to the customer
     * associated with the invoice and be in a chargeable state. If not set, defaults to
     * the subscription’s default source, if any, or to the customer’s default source.
     */
   var default_source: String
+  /**
+    * The tax rates applied to this invoice, if any.
+    */
+  var default_tax_rates: js.Array[ITaxRate]
   /**
     * An arbitrary string attached to the object. Often useful for displaying to users.
     * Referenced as ‘memo’ in the Dashboard.
@@ -185,11 +228,11 @@ trait IInvoice extends IResourceObject {
     */
   var footer: String
   /**
-    * Whether or not the invoice has been forgiven. Forgiving an invoice instructs us to update the subscription
+    * @deprecated Whether or not the invoice has been forgiven. Forgiving an invoice instructs us to update the subscription
     * status as if the invoice were succcessfully paid. Once an invoice has been forgiven, it cannot be unforgiven
     * or reopened
     */
-  var forgiven: Boolean
+  var forgiven: js.UndefOr[Boolean] = js.undefined
   /**
     * The URL for the hosted invoice page, which allows customers to view and pay an
     * invoice. If the invoice has not been finalized yet, this will be null.
@@ -308,6 +351,10 @@ trait IInvoice extends IResourceObject {
     */
   var total: Double
   /**
+    * The aggregate amounts calculated per tax rate for all line items.
+    */
+  var total_tax_amounts: Anon_AmountInclusive
+  /**
     * The time at which webhooks for this invoice were successfully delivered (if the invoice had no webhooks to
     * deliver, this will match date). Invoice payment is delayed until webhooks are delivered, or until all webhook
     * delivery attempts have been exhausted.
@@ -318,6 +365,8 @@ trait IInvoice extends IResourceObject {
 object IInvoice {
   @scala.inline
   def apply(
+    account_country: String,
+    account_name: String,
     amount_due: Double,
     amount_paid: Double,
     amount_remaining: Double,
@@ -328,7 +377,6 @@ object IInvoice {
     auto_advance: Boolean,
     billing: charge_automatically | send_invoice,
     billing_reason: subscription_cycle | subscription_create | subscription_update | subscription | manual | upcoming | subscription_threshold,
-    closed: Boolean,
     created: Double,
     currency: String,
     custom_fields: js.Array[ICustomField],
@@ -336,11 +384,14 @@ object IInvoice {
     customer_email: String,
     customer_name: String,
     customer_phone: String,
-    date: Double,
+    customer_shipping: IShippingInformation,
+    customer_tax_exempt: String,
+    customer_tax_ids: js.Array[ITaxIdCreationOptions],
+    default_payment_method: String,
     default_source: String,
+    default_tax_rates: js.Array[ITaxRate],
     description: String,
     footer: String,
-    forgiven: Boolean,
     id: String,
     lines: IList[IInvoiceLineItem],
     livemode: Boolean,
@@ -363,25 +414,34 @@ object IInvoice {
     subtotal: Double,
     threshold_reason: IThresholdReason,
     total: Double,
+    total_tax_amounts: Anon_AmountInclusive,
     webhooks_delivered_at: Double,
     charge: String | ICharge = null,
+    closed: js.UndefOr[Boolean] = js.undefined,
     collection_method: charge_automatically | send_invoice = null,
+    customer_address: IAddress = null,
+    date: Int | Double = null,
     discount: IDiscount = null,
     due_date: Int | Double = null,
     ending_balance: Int | Double = null,
+    forgiven: js.UndefOr[Boolean] = js.undefined,
     hosted_invoice_url: String = null,
     invoice_pdf: String = null,
     payment_intent: IPaymentIntent = null,
     tax: Int | Double = null,
     tax_percent: Int | Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(account_country = account_country, account_name = account_name, amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, customer_shipping = customer_shipping, customer_tax_exempt = customer_tax_exempt, customer_tax_ids = customer_tax_ids, default_payment_method = default_payment_method, default_source = default_source, default_tax_rates = default_tax_rates, description = description, footer = footer, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, total_tax_amounts = total_tax_amounts, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
     if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
+    if (customer_address != null) __obj.updateDynamic("customer_address")(customer_address)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
     if (ending_balance != null) __obj.updateDynamic("ending_balance")(ending_balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(forgiven)) __obj.updateDynamic("forgiven")(forgiven)
     if (hosted_invoice_url != null) __obj.updateDynamic("hosted_invoice_url")(hosted_invoice_url)
     if (invoice_pdf != null) __obj.updateDynamic("invoice_pdf")(invoice_pdf)
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent)

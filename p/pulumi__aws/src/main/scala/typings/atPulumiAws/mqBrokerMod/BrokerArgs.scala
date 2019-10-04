@@ -1,10 +1,11 @@
 package typings.atPulumiAws.mqBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AuditGeneral
-import typings.atPulumiAws.Anon_ConsoleAccessGroups
-import typings.atPulumiAws.Anon_DayOfWeekTimeOfDay
-import typings.atPulumiAws.Anon_IdRevisionInput
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerConfiguration
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerEncryptionOptions
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerLogs
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerMaintenanceWindowStartTime
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerUser
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,11 +28,15 @@ trait BrokerArgs extends js.Object {
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: js.UndefOr[Input[Anon_IdRevisionInput]] = js.undefined
+  val configuration: js.UndefOr[Input[BrokerConfiguration]] = js.undefined
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
   val deploymentMode: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Configuration block containing encryption options. See below.
+    */
+  val encryptionOptions: js.UndefOr[Input[BrokerEncryptionOptions]] = js.undefined
   /**
     * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
     */
@@ -47,11 +52,11 @@ trait BrokerArgs extends js.Object {
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: js.UndefOr[Input[Anon_AuditGeneral]] = js.undefined
+  val logs: js.UndefOr[Input[BrokerLogs]] = js.undefined
   /**
     * Maintenance window start time. See below.
     */
-  val maintenanceWindowStartTime: js.UndefOr[Input[Anon_DayOfWeekTimeOfDay]] = js.undefined
+  val maintenanceWindowStartTime: js.UndefOr[Input[BrokerMaintenanceWindowStartTime]] = js.undefined
   /**
     * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
     */
@@ -71,7 +76,7 @@ trait BrokerArgs extends js.Object {
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
-  val users: Input[js.Array[Input[Anon_ConsoleAccessGroups]]]
+  val users: Input[js.Array[Input[BrokerUser]]]
 }
 
 object BrokerArgs {
@@ -82,13 +87,14 @@ object BrokerArgs {
     engineVersion: Input[String],
     hostInstanceType: Input[String],
     securityGroups: Input[js.Array[Input[String]]],
-    users: Input[js.Array[Input[Anon_ConsoleAccessGroups]]],
+    users: Input[js.Array[Input[BrokerUser]]],
     applyImmediately: Input[Boolean] = null,
     autoMinorVersionUpgrade: Input[Boolean] = null,
-    configuration: Input[Anon_IdRevisionInput] = null,
+    configuration: Input[BrokerConfiguration] = null,
     deploymentMode: Input[String] = null,
-    logs: Input[Anon_AuditGeneral] = null,
-    maintenanceWindowStartTime: Input[Anon_DayOfWeekTimeOfDay] = null,
+    encryptionOptions: Input[BrokerEncryptionOptions] = null,
+    logs: Input[BrokerLogs] = null,
+    maintenanceWindowStartTime: Input[BrokerMaintenanceWindowStartTime] = null,
     publiclyAccessible: Input[Boolean] = null,
     subnetIds: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null
@@ -98,6 +104,7 @@ object BrokerArgs {
     if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (deploymentMode != null) __obj.updateDynamic("deploymentMode")(deploymentMode.asInstanceOf[js.Any])
+    if (encryptionOptions != null) __obj.updateDynamic("encryptionOptions")(encryptionOptions.asInstanceOf[js.Any])
     if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
     if (maintenanceWindowStartTime != null) __obj.updateDynamic("maintenanceWindowStartTime")(maintenanceWindowStartTime.asInstanceOf[js.Any])
     if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])

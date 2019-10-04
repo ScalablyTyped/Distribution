@@ -19,16 +19,16 @@ class NonInviteClientTransaction protected () extends ClientTransaction {
     * After construction the transaction will be in the "calling" state and the transaction id
     * will equal the branch parameter set in the Via header of the outgoing request.
     * https://tools.ietf.org/html/rfc3261#section-17.1.2
-    * @param request The outgoing Non-INVITE request.
-    * @param transport The transport.
-    * @param user The transaction user.
+    * @param request - The outgoing Non-INVITE request.
+    * @param transport - The transport.
+    * @param user - The transaction user.
     */
   def this(request: OutgoingRequestMessage, transport: Transport, user: ClientTransactionUser) = this()
   var F: js.Any = js.native
   var K: js.Any = js.native
   /**
     * Execute a state transition.
-    * @param newState New state.
+    * @param newState - New state.
     */
   var stateTransition: js.Any = js.native
   /**
@@ -51,7 +51,7 @@ class NonInviteClientTransaction protected () extends ClientTransaction {
     * and the client transaction SHOULD transition directly to the "Terminated" state.
     * The TU will handle the failover mechanisms described in [4].
     * https://tools.ietf.org/html/rfc3261#section-17.1.4
-    * @param error Trasnsport error
+    * @param error - Trasnsport error
     */
   /* protected */ def onTransportError(error: Error): Unit = js.native
 }

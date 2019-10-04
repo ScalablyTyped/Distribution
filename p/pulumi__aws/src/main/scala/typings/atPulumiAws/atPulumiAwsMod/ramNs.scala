@@ -6,6 +6,8 @@ import typings.atPulumiAws.ramPrincipalAssociationMod.PrincipalAssociationArgs
 import typings.atPulumiAws.ramPrincipalAssociationMod.PrincipalAssociationState
 import typings.atPulumiAws.ramResourceAssociationMod.ResourceAssociationArgs
 import typings.atPulumiAws.ramResourceAssociationMod.ResourceAssociationState
+import typings.atPulumiAws.ramResourceShareAccepterMod.ResourceShareAccepterArgs
+import typings.atPulumiAws.ramResourceShareAccepterMod.ResourceShareAccepterState
 import typings.atPulumiAws.ramResourceShareMod.ResourceShareArgs
 import typings.atPulumiAws.ramResourceShareMod.ResourceShareState
 import typings.atPulumiPulumi.invokeMod.InvokeOptions
@@ -60,6 +62,20 @@ object ramNs extends js.Object {
     def this(name: String) = this()
     def this(name: String, args: ResourceShareArgs) = this()
     def this(name: String, args: ResourceShareArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class ResourceShareAccepter protected ()
+    extends typings.atPulumiAws.ramMod.ResourceShareAccepter {
+    /**
+      * Create a ResourceShareAccepter resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ResourceShareAccepterArgs) = this()
+    def this(name: String, args: ResourceShareAccepterArgs, opts: CustomResourceOptions) = this()
   }
   
   def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] with GetResourceShareResult = js.native
@@ -125,6 +141,27 @@ object ramNs extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ResourceShareAccepter extends js.Object {
+    /**
+      * Get an existing ResourceShareAccepter resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.ramResourceShareAccepterMod.ResourceShareAccepter = js.native
+    def get(name: String, id: Input[ID], state: ResourceShareAccepterState): typings.atPulumiAws.ramResourceShareAccepterMod.ResourceShareAccepter = js.native
+    def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): typings.atPulumiAws.ramResourceShareAccepterMod.ResourceShareAccepter = js.native
+    /**
+      * Returns true if the given object is an instance of ResourceShareAccepter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = js.native
   }
   
 }

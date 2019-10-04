@@ -1,9 +1,8 @@
 package typings.reduxDashPersist.esCreateTransformMod
 
-import typings.reduxDashPersist.esTypesMod.PersistConfig
-import typings.reduxDashPersist.reduxDashPersistStrings.blacklist
-import typings.reduxDashPersist.reduxDashPersistStrings.whitelist
-import typings.std.Pick
+import typings.reduxDashPersist.esTypesMod.Transform
+import typings.reduxDashPersist.esTypesMod.TransformInbound
+import typings.reduxDashPersist.esTypesMod.TransformOutbound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +10,17 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-persist/es/createTransform", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createTransform[S, R](inbound: TransformIn[S, R], outbound: TransformOut[R, S]): Transform[S, R] = js.native
-  def createTransform[S, R](
-    inbound: TransformIn[S, R],
-    outbound: TransformOut[R, S],
-    config: Pick[PersistConfig, whitelist | blacklist]
-  ): Transform[S, R] = js.native
+  def default[HSS, ESS, S, RS](): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](inbound: Null, outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S]): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
+  def default[HSS, ESS, S, RS](
+    inbound: TransformInbound[HSS, ESS, S],
+    outbound: TransformOutbound[ESS, HSS, RS],
+    config: TransformConfig
+  ): Transform[HSS, ESS, S, RS] = js.native
 }
 

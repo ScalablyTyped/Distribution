@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartErrorBars object, for use in "chartErrorBars.set({ ... })". */
+/** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
 trait ChartErrorBarsUpdateData extends js.Object {
   /**
     *

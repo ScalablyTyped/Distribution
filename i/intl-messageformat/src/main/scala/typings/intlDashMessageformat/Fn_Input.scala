@@ -1,7 +1,7 @@
 package typings.intlDashMessageformat
 
+import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
 import typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod.ParseOptions
-import typings.intlDashMessageformatDashParser.libTypesMod.MessageFormatElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.elasticloadbalancingv2TargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CookieDurationEnabled
-import typings.atPulumiAws.Anon_EnabledHealthyThreshold
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2Ns.TargetGroupHealthCheck
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2Ns.TargetGroupStickiness
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -40,7 +40,7 @@ class TargetGroup protected () extends CustomResource {
   /**
     * A Health Check block. Health Check blocks are documented below.
     */
-  val healthCheck: Output[Anon_EnabledHealthyThreshold] = js.native
+  val healthCheck: Output[TargetGroupHealthCheck] = js.native
   /**
     * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `targetType` is `lambda`.
     */
@@ -72,7 +72,7 @@ class TargetGroup protected () extends CustomResource {
   /**
     * A Stickiness block. Stickiness blocks are documented below. `stickiness` is only valid if used with Load Balancers of type `Application`
     */
-  val stickiness: Output[Anon_CookieDurationEnabled] = js.native
+  val stickiness: Output[TargetGroupStickiness] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

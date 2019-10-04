@@ -55,8 +55,10 @@ class MultipleTextItemModel ()
   var title: String = js.native
   /* CompleteClass */
   override var validatedValue: js.Any = js.native
-  /* CompleteClass */
-  override var validators: js.Array[SurveyValidator] = js.native
+  /**
+    * The list of question validators.
+    */
+  var validators: js.Array[SurveyValidator] = js.native
   /**
     * The item value.
     */
@@ -83,6 +85,8 @@ class MultipleTextItemModel ()
   override def getTextProcessor(): ITextProcessor = js.native
   /* CompleteClass */
   override def getValidatorTitle(): String = js.native
+  /* CompleteClass */
+  override def getValidators(): js.Array[SurveyValidator] = js.native
   /* CompleteClass */
   override def getValue(name: String): js.Any = js.native
   /* CompleteClass */

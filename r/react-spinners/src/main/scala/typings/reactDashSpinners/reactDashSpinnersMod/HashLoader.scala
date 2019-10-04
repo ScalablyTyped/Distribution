@@ -1,13 +1,17 @@
 package typings.reactDashSpinners.reactDashSpinnersMod
 
 import typings.react.reactMod.Component
-import typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.HashLoaderProps
+import typings.react.reactMod.ComponentState
+import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-spinners", "HashLoader")
 @js.native
-class HashLoader ()
-  extends Component[HashLoaderProps, js.Object, js.Any]
+class HashLoader protected ()
+  extends Component[LoaderSizeProps, ComponentState, js.Any] {
+  def this(props: LoaderSizeProps) = this()
+  def this(props: LoaderSizeProps, context: js.Any) = this()
+}
 

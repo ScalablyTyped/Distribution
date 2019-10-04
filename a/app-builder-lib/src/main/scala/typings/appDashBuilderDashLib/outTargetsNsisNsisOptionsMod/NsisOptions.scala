@@ -1,9 +1,9 @@
 package typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod
 
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.always
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
 import typings.appDashBuilderDashLib.outOptionsCommonWindowsInstallerConfigurationMod.CommonWindowsInstallerConfiguration
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait NsisOptions
     */
   val deleteAppDataOnUninstall: js.UndefOr[Boolean] = js.undefined
   /**
-    * Defaults to `true` for web installer (`nsis-web`)
+    * @private
     */
   var differentialPackage: js.UndefOr[Boolean] = js.undefined
   /**

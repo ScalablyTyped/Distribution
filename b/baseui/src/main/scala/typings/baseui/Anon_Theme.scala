@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Theme extends js.Object {
+trait Anon_Theme[T] extends js.Object {
   @JSName("$theme")
-  var $theme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any
+  var $theme: T
 }
 
 object Anon_Theme {
   @scala.inline
-  def apply($theme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any): Anon_Theme = {
-    val __obj = js.Dynamic.literal($theme = $theme)
+  def apply[T]($theme: T): Anon_Theme[T] = {
+    val __obj = js.Dynamic.literal($theme = $theme.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[Anon_Theme]
+    __obj.asInstanceOf[Anon_Theme[T]]
   }
 }
 

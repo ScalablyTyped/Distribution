@@ -1,12 +1,10 @@
 organization := "org.scalablytyped"
 name := "create-hash"
-version := "1.2-dt-20181126Z-e7e5cd"
+version := "1.2-dt-20191002Z-858727"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

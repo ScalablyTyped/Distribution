@@ -10,7 +10,7 @@ package object reactDashMonacoDashEditorMod {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IModelContentChangedEvent */ /* event */ js.Any, 
     Unit
   ]
-  type DiffChangeHandler = js.Function1[/* value */ String, Unit]
+  type DiffChangeHandler = ChangeHandler
   type DiffEditorDidMount = js.Function2[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IStandaloneDiffEditor */ /* editor */ js.Any, 
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof monacoEditor */ /* monaco */ js.Any, 

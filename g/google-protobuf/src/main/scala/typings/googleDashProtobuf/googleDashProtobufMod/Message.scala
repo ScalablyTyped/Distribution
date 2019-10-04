@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf", "Message")
 @js.native
 abstract class Message () extends js.Object {
-  def cloneMessage(): Message = js.native
+  def cloneMessage(): this.type = js.native
   def getExtension[T](fieldInfo: ExtensionFieldInfo[T]): T = js.native
   def getJsPbMessageId(): js.UndefOr[String] = js.native
   def readBinaryExtension(

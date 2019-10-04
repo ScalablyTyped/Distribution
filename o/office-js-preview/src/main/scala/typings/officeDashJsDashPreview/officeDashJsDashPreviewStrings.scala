@@ -2124,6 +2124,9 @@ object officeDashJsDashPreviewStrings {
   sealed trait Medium extends js.Object
   
   @js.native
+  sealed trait Mention extends js.Object
+  
+  @js.native
   sealed trait Mercator extends js.Object
   
   @js.native
@@ -4906,6 +4909,8 @@ object officeDashJsDashPreviewStrings {
   def Maximum: Maximum = "Maximum".asInstanceOf[Maximum]
   @scala.inline
   def Medium: Medium = "Medium".asInstanceOf[Medium]
+  @scala.inline
+  def Mention: Mention = "Mention".asInstanceOf[Mention]
   @scala.inline
   def Mercator: Mercator = "Mercator".asInstanceOf[Mercator]
   @scala.inline

@@ -1,8 +1,8 @@
 package typings.reactDashIntl
 
-import typings.intlDashMessageformat.libCoreMod.Options
-import typings.intlDashMessageformat.libFormattersMod.Formats
-import typings.intlDashMessageformatDashParser.libTypesMod.MessageFormatElement
+import typings.intlDashMessageformat.distCoreMod.Options
+import typings.intlDashMessageformat.distFormattersMod.Formats
+import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
 import typings.std.IntlNs.DateTimeFormatOptions
 import typings.std.IntlNs.NumberFormatOptions
 import typings.std.IntlNs.PluralRulesOptions

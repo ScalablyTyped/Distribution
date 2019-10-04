@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-publish", "HttpPublisher")
 @js.native
 abstract class HttpPublisher protected () extends Publisher {
-  def this(context: PublishContext) = this()
-  def this(context: PublishContext, useSafeArtifactName: Boolean) = this()
+  protected def this(context: PublishContext) = this()
+  protected def this(context: PublishContext, useSafeArtifactName: Boolean) = this()
   val useSafeArtifactName: js.Any = js.native
   /* protected */ def doUpload(
     fileName: String,

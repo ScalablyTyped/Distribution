@@ -10,7 +10,7 @@ trait ListIPSetsResponse extends js.Object {
     */
   var IPSets: js.UndefOr[IPSetSummaries] = js.undefined
   /**
-    * If you have more IPSet objects than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more IPSet objects, submit another ListIPSets request, and specify the NextMarker value from the response in the NextMarker value in the next request.
+    * To list more IPSet objects, submit another ListIPSets request, and in the next request use the NextMarker response value as the NextMarker value.
     */
   var NextMarker: js.UndefOr[typings.awsDashSdk.clientsWafMod.NextMarker] = js.undefined
 }

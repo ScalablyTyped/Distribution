@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 object mapValuesSeries extends js.Object {
   def apply[T, R, E](
     obj: Dictionary[T],
+    iteratee: js.Function3[/* value */ T, /* key */ String, /* callback */ AsyncResultCallback[R, E], Unit]
+  ): js.Promise[R] = js.native
+  def apply[T, R, E](
+    obj: Dictionary[T],
     iteratee: js.Function3[/* value */ T, /* key */ String, /* callback */ AsyncResultCallback[R, E], Unit],
     callback: AsyncResultObjectCallback[R, E]
   ): Unit = js.native

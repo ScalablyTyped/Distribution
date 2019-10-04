@@ -29,7 +29,7 @@ trait ObjectMeta extends js.Object {
     * may not set this value. It is represented in RFC3339 form and is in UTC.
     *
     * Populated by the system. Read-only. Null for lists. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val creationTimestamp: String
   /**
@@ -55,7 +55,7 @@ trait ObjectMeta extends js.Object {
     * has not been requested.
     *
     * Populated by the system when a graceful deletion is requested. Read-only. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val deletionTimestamp: String
   /**
@@ -77,7 +77,7 @@ trait ObjectMeta extends js.Object {
     * (optionally after the time indicated in the Retry-After header).
     *
     * Applied only if Name is not specified. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
     */
   val generateName: String
   /**
@@ -85,20 +85,6 @@ trait ObjectMeta extends js.Object {
     * system. Read-only.
     */
   val generation: Double
-  /**
-    * An initializer is a controller which enforces some system invariant at object creation
-    * time. This field is a list of initializers that have not yet acted on this object. If nil
-    * or empty, this object has been completely initialized. Otherwise, the object is considered
-    * uninitialized and is hidden (in list/watch and get calls) from clients that haven't
-    * explicitly asked to observe uninitialized objects.
-    *
-    * When an object is created, the system will populate this list with the current set of
-    * initializers. Only privileged users may set or modify this list. Once it is empty, it may
-    * not be modified further by any user.
-    *
-    * DEPRECATED - initializers are an alpha field and will be removed in v1.15.
-    */
-  val initializers: Initializers
   /**
     * Map of string keys and values that can be used to organize and categorize (scope and
     * select) objects. May match selectors of replication controllers and services. More info:
@@ -111,8 +97,6 @@ trait ObjectMeta extends js.Object {
     * set or understand this field. A workflow can be the user's name, a controller's name, or
     * the name of a specific apply path like "ci-cd". The set of fields is always in the version
     * that the workflow used when modifying the object.
-    *
-    * This field is alpha and can be changed or removed without notice.
     */
   val managedFields: js.Array[ManagedFieldsEntry]
   /**
@@ -149,11 +133,14 @@ trait ObjectMeta extends js.Object {
     *
     * Populated by the system. Read-only. Value must be treated as opaque by clients and . More
     * info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
     */
   val resourceVersion: String
   /**
     * SelfLink is a URL representing this object. Populated by the system. Read-only.
+    *
+    * DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is
+    * planned to be removed in 1.21 release.
     */
   val selfLink: String
   /**
@@ -177,7 +164,6 @@ object ObjectMeta {
     finalizers: js.Array[String],
     generateName: String,
     generation: Double,
-    initializers: Initializers,
     labels: StringDictionary[String],
     managedFields: js.Array[ManagedFieldsEntry],
     name: String,
@@ -187,7 +173,7 @@ object ObjectMeta {
     selfLink: String,
     uid: String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, initializers = initializers, labels = labels, managedFields = managedFields, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
+    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, labels = labels, managedFields = managedFields, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
   
     __obj.asInstanceOf[ObjectMeta]
   }

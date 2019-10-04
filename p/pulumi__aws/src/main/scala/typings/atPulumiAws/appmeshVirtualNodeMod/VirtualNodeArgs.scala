@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BackendsListener
+import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualNodeSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait VirtualNodeArgs extends js.Object {
   /**
     * The virtual node specification to apply.
     */
-  val spec: Input[Anon_BackendsListener]
+  val spec: Input[VirtualNodeSpec]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -30,7 +30,7 @@ object VirtualNodeArgs {
   @scala.inline
   def apply(
     meshName: Input[String],
-    spec: Input[Anon_BackendsListener],
+    spec: Input[VirtualNodeSpec],
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): VirtualNodeArgs = {

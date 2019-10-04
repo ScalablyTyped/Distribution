@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsrsasign"
-version := "8.0-dt-20190821Z-5fe3aa"
+version := "8.0-dt-20190924Z-4d4801"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

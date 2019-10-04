@@ -157,7 +157,7 @@ trait TablePaginationProps extends js.Object {
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.native
   var datatype: js.UndefOr[String] = js.native
   var defaultChecked: js.UndefOr[Boolean] = js.native
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
   var dir: js.UndefOr[String] = js.native
   var draggable: js.UndefOr[Boolean] = js.native
   var headers: js.UndefOr[String] = js.native

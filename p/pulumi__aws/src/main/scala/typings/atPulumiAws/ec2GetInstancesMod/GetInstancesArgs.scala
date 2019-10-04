@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetInstancesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetInstancesFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait GetInstancesArgs extends js.Object {
     * several valid keys, for a full reference, check out
     * [describe-instances in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetInstancesFilter]] = js.undefined
   /**
     * A list of instance states that should be applicable to the desired instances. The permitted values are: `pending, running, shutting-down, stopped, stopping, terminated`. The default value is `running`.
     */
@@ -27,7 +27,7 @@ trait GetInstancesArgs extends js.Object {
 object GetInstancesArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetInstancesFilter] = null,
     instanceStateNames: js.Array[String] = null,
     instanceTags: StringDictionary[js.Any] = null
   ): GetInstancesArgs = {

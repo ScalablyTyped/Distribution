@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudhsmv2GetClusterMod
 
-import typings.atPulumiAws.Anon_AwsHardwareCertificate
+import typings.atPulumiAws.typesOutputMod.cloudhsmv2Ns.GetClusterClusterCertificates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait GetClusterResult extends js.Object {
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     * The number of available cluster certificates may vary depending on state of the cluster.
     */
-  val clusterCertificates: Anon_AwsHardwareCertificate
+  val clusterCertificates: GetClusterClusterCertificates
   val clusterId: String
   val clusterState: String
   /**
@@ -39,7 +39,7 @@ trait GetClusterResult extends js.Object {
 object GetClusterResult {
   @scala.inline
   def apply(
-    clusterCertificates: Anon_AwsHardwareCertificate,
+    clusterCertificates: GetClusterClusterCertificates,
     clusterId: String,
     clusterState: String,
     id: String,

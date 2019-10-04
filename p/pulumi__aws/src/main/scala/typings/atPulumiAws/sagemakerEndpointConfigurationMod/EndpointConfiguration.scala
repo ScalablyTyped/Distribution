@@ -1,7 +1,7 @@
 package typings.atPulumiAws.sagemakerEndpointConfigurationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcceleratorType
+import typings.atPulumiAws.typesOutputMod.sagemakerNs.EndpointConfigurationProductionVariant
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -38,7 +38,7 @@ class EndpointConfiguration protected () extends CustomResource {
   /**
     * Fields are documented below.
     */
-  val productionVariants: Output[js.Array[Anon_AcceleratorType]] = js.native
+  val productionVariants: Output[js.Array[EndpointConfigurationProductionVariant]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

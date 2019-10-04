@@ -11,7 +11,7 @@ trait PivotTable extends js.Object {
   /**
     * An optional mapping of filters per source column offset.
     *
-    * The filters will be applied before aggregating data into the pivot table.
+    * The filters are applied before aggregating data into the pivot table.
     * The map's key is the column offset of the source range that you want to
     * filter, and the value is the criteria for that column.
     *

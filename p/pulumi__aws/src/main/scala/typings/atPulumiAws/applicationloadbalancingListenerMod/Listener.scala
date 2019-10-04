@@ -1,6 +1,6 @@
 package typings.atPulumiAws.applicationloadbalancingListenerMod
 
-import typings.atPulumiAws.Anon_AuthenticateCognito
+import typings.atPulumiAws.typesOutputMod.applicationloadbalancingNs.ListenerDefaultAction
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class Listener protected () extends CustomResource {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultActions: Output[js.Array[Anon_AuthenticateCognito]] = js.native
+  val defaultActions: Output[js.Array[ListenerDefaultAction]] = js.native
   /**
     * The ARN of the load balancer.
     */

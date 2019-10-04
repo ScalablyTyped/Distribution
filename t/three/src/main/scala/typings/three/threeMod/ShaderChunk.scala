@@ -17,6 +17,9 @@ object ShaderChunk extends /* name */ StringDictionary[String] {
   var beginnormal_vertex: String = js.native
   var bsdfs: String = js.native
   var bumpmap_pars_fragment: String = js.native
+  var clearcoat_normal_fragment_begin: String = js.native
+  var clearcoat_normal_fragment_maps: String = js.native
+  var clearcoat_normalmap_pars_fragment: String = js.native
   var clipping_planes_fragment: String = js.native
   var clipping_planes_pars_fragment: String = js.native
   var clipping_planes_pars_vertex: String = js.native
@@ -40,9 +43,11 @@ object ShaderChunk extends /* name */ StringDictionary[String] {
   var emissivemap_pars_fragment: String = js.native
   var encodings_fragment: String = js.native
   var encodings_pars_fragment: String = js.native
+  var envmap_common_pars_fragment: String = js.native
   var envmap_fragment: String = js.native
   var envmap_pars_fragment: String = js.native
   var envmap_pars_vertex: String = js.native
+  var envmap_physical_pars_fragment: String = js.native
   var envmap_vertex: String = js.native
   var equirect_frag: String = js.native
   var equirect_vert: String = js.native

@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait Labels extends BaseService {
   def all(projectId: ProjectId): js.Promise[GetResponse] = js.native
   def all(projectId: ProjectId, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
-  def create(projectId: ProjectId): js.Promise[js.Object] = js.native
-  def create(projectId: ProjectId, options: BaseRequestOptions): js.Promise[js.Object] = js.native
+  def create(projectId: ProjectId, labelName: String, color: String): js.Promise[js.Object] = js.native
+  def create(projectId: ProjectId, labelName: String, color: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
   def edit(projectId: ProjectId, labelName: String): js.Promise[js.Object] = js.native
   def edit(projectId: ProjectId, labelName: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
   def remove(projectId: ProjectId, labelName: String): js.Promise[js.Object] = js.native

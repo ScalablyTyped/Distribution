@@ -11,7 +11,6 @@ import typings.meteor.DDPNs.DDPStatus
 import typings.meteor.EJSONable
 import typings.meteor.EJSONableProperty
 import typings.meteor.MongoNs.Collection
-import typings.meteor.global_Error
 import typings.meteor.meteorMeteorMod.MeteorNs.Connection
 import typings.meteor.meteorMeteorMod.MeteorNs.Error
 import typings.meteor.meteorMeteorMod.MeteorNs.ErrorStatic
@@ -210,9 +209,13 @@ object MeteorNs extends js.Object {
     name: String,
     args: js.Array[EJSONable | EJSONableProperty],
     options: Anon_ErrorOnResultReceivedResult[Result],
-    asyncCallback: js.Function2[/* error */ js.UndefOr[global_Error | Error], /* result */ js.UndefOr[Result], Unit]
+    asyncCallback: js.Function2[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error], 
+      /* result */ js.UndefOr[Result], 
+      Unit
+    ]
   ): js.Any = js.native
-  def bindEnvironment(func: js.Function): js.Any = js.native
+  def bindEnvironment[TFunc /* <: js.Function */](func: TFunc): TFunc = js.native
   def call(name: String, args: js.Any*): js.Any = js.native
   def clearInterval(id: Double): Unit = js.native
   def clearTimeout(id: Double): Unit = js.native
@@ -223,71 +226,114 @@ object MeteorNs extends js.Object {
   def loginWith[ExternalService](options: Anon_LoginStyle): Unit = js.native
   def loginWith[ExternalService](
     options: Anon_LoginStyle,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithFacebook(): Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithFacebook(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithGithub(): Unit = js.native
   def loginWithGithub(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithGithub(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithGoogle(): Unit = js.native
   def loginWithGoogle(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithGoogle(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithMeetup(): Unit = js.native
   def loginWithMeetup(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithMeetup(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithMeteorDeveloperAccount(): Unit = js.native
   def loginWithMeteorDeveloperAccount(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithMeteorDeveloperAccount(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithPassword(user: String, password: String): Unit = js.native
   def loginWithPassword(
     user: String,
     password: String,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithPassword(user: js.Object, password: String): Unit = js.native
   def loginWithPassword(
     user: js.Object,
     password: String,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithToken(token: String): Unit = js.native
   def loginWithToken(
     token: String,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithTwitter(): Unit = js.native
   def loginWithTwitter(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithTwitter(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def loginWithWeibo(): Unit = js.native
   def loginWithWeibo(options: LoginWithExternalServiceOptions): Unit = js.native
   def loginWithWeibo(
     options: LoginWithExternalServiceOptions,
-    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
   ): Unit = js.native
   def logout(): Unit = js.native
-  def logout(callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]): Unit = js.native
+  def logout(
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
+  ): Unit = js.native
   def logoutOtherClients(): Unit = js.native
-  def logoutOtherClients(callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]): Unit = js.native
+  def logoutOtherClients(
+    callback: js.Function1[
+      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
+      Unit
+    ]
+  ): Unit = js.native
   def methods(methods: StringDictionary[js.ThisFunction1[/* this */ MethodThisType, /* repeated */ js.Any, _]]): Unit = js.native
   def onConnection(callback: js.Function): Unit = js.native
   /** Connection **/

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gulp-terser"
-version := "1.2-dt-20190605Z-b7a3b4"
+version := "1.2-dt-20190605Z-cee096"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "source-map" % "0.7.3-bb5048",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "terser" % "4.3.1-b5deb4")
+  "org.scalablytyped" %%% "terser" % "4.3.4-07ec98")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

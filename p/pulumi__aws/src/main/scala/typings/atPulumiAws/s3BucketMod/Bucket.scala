@@ -1,19 +1,19 @@
 package typings.atPulumiAws.s3BucketMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AbortIncompleteMultipartUploadDays
-import typings.atPulumiAws.Anon_AllowedHeaders
-import typings.atPulumiAws.Anon_EnabledMfaDelete
-import typings.atPulumiAws.Anon_ErrorDocument
-import typings.atPulumiAws.Anon_ObjectLockEnabled
-import typings.atPulumiAws.Anon_Role
-import typings.atPulumiAws.Anon_Rule
-import typings.atPulumiAws.Anon_TargetBucket
 import typings.atPulumiAws.s3S3MixinsMod.BucketEventHandler
 import typings.atPulumiAws.s3S3MixinsMod.BucketEventSubscription
 import typings.atPulumiAws.s3S3MixinsMod.BucketEventSubscriptionArgs
 import typings.atPulumiAws.s3S3MixinsMod.ObjectCreatedSubscriptionArgs
 import typings.atPulumiAws.s3S3MixinsMod.ObjectRemovedSubscriptionArgs
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketCorsRule
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketLifecycleRule
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketLogging
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketObjectLockConfiguration
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketReplicationConfiguration
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketServerSideEncryptionConfiguration
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketVersioning
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketWebsite
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -68,9 +68,9 @@ class Bucket protected () extends CustomResource {
   /**
     * A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) (documented below).
     */
-  val corsRules: Output[js.UndefOr[js.Array[Anon_AllowedHeaders]]] = js.native
+  val corsRules: Output[js.UndefOr[js.Array[BucketCorsRule]]] = js.native
   /**
-    * A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
+    * A boolean that indicates all objects (including any [locked objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html)) should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
     */
   val forceDestroy: Output[js.UndefOr[Boolean]] = js.native
   /**
@@ -80,15 +80,15 @@ class Bucket protected () extends CustomResource {
   /**
     * A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) (documented below).
     */
-  val lifecycleRules: Output[js.UndefOr[js.Array[Anon_AbortIncompleteMultipartUploadDays]]] = js.native
+  val lifecycleRules: Output[js.UndefOr[js.Array[BucketLifecycleRule]]] = js.native
   /**
     * A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
     */
-  val loggings: Output[js.UndefOr[js.Array[Anon_TargetBucket]]] = js.native
+  val loggings: Output[js.UndefOr[js.Array[BucketLogging]]] = js.native
   /**
     * A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) (documented below)
     */
-  val objectLockConfiguration: Output[js.UndefOr[Anon_ObjectLockEnabled]] = js.native
+  val objectLockConfiguration: Output[js.UndefOr[BucketObjectLockConfiguration]] = js.native
   /**
     * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), this provider may view the policy as constantly changing in a deployment. In this case, please make sure you use the verbose/specific version of the policy.
     */
@@ -100,7 +100,7 @@ class Bucket protected () extends CustomResource {
   /**
     * A configuration of [replication configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html) (documented below).
     */
-  val replicationConfiguration: Output[js.UndefOr[Anon_Role]] = js.native
+  val replicationConfiguration: Output[js.UndefOr[BucketReplicationConfiguration]] = js.native
   /**
     * Specifies who should bear the cost of Amazon S3 data transfer.
     * Can be either `BucketOwner` or `Requester`. By default, the owner of the S3 bucket would incur
@@ -111,7 +111,7 @@ class Bucket protected () extends CustomResource {
   /**
     * A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html) (documented below)
     */
-  val serverSideEncryptionConfiguration: Output[js.UndefOr[Anon_Rule]] = js.native
+  val serverSideEncryptionConfiguration: Output[js.UndefOr[BucketServerSideEncryptionConfiguration]] = js.native
   /**
     * A mapping of tags that identifies subset of objects to which the rule applies.
     * The rule applies only to objects having all the tags in its tagset.
@@ -120,11 +120,11 @@ class Bucket protected () extends CustomResource {
   /**
     * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
     */
-  val versioning: Output[Anon_EnabledMfaDelete] = js.native
+  val versioning: Output[BucketVersioning] = js.native
   /**
     * A website object (documented below).
     */
-  val website: Output[js.UndefOr[Anon_ErrorDocument]] = js.native
+  val website: Output[js.UndefOr[BucketWebsite]] = js.native
   /**
     * The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records.
     */

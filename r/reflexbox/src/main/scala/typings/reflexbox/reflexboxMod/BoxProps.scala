@@ -30,6 +30,9 @@ import typings.csstype.csstypeMod.MaxHeightProperty
 import typings.csstype.csstypeMod.MaxWidthProperty
 import typings.csstype.csstypeMod.MinHeightProperty
 import typings.csstype.csstypeMod.MinWidthProperty
+import typings.csstype.csstypeMod.OverflowProperty
+import typings.csstype.csstypeMod.OverflowXProperty
+import typings.csstype.csstypeMod.OverflowYProperty
 import typings.csstype.csstypeMod.PaddingBottomProperty
 import typings.csstype.csstypeMod.PaddingLeftProperty
 import typings.csstype.csstypeMod.PaddingProperty
@@ -106,6 +109,9 @@ object BoxProps {
     my: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
     opacity: ResponsiveValue[GlobalsNumber] = null,
     order: ResponsiveValue[GlobalsNumber] = null,
+    overflow: ResponsiveValue[OverflowProperty] = null,
+    overflowX: ResponsiveValue[OverflowXProperty] = null,
+    overflowY: ResponsiveValue[OverflowYProperty] = null,
     p: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     padding: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     paddingBottom: ResponsiveValue[PaddingBottomProperty[TLengthStyledSystem]] = null,
@@ -170,6 +176,9 @@ object BoxProps {
     if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
     if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])

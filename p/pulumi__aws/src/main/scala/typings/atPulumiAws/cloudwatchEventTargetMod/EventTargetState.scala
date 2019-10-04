@@ -1,11 +1,11 @@
 package typings.atPulumiAws.cloudwatchEventTargetMod
 
-import typings.atPulumiAws.Anon_ArraySizeJobAttempts
-import typings.atPulumiAws.Anon_GroupLaunchType
-import typings.atPulumiAws.Anon_InputPathsInputTemplate
-import typings.atPulumiAws.Anon_KeyValuesArray
-import typings.atPulumiAws.Anon_MessageGroupIdInput
-import typings.atPulumiAws.Anon_PartitionKeyPathInput
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetBatchTarget
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetEcsTarget
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetInputTransformer
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetKinesisTarget
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetRunCommandTarget
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetSqsTarget
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,11 +19,11 @@ trait EventTargetState extends js.Object {
   /**
     * Parameters used when you are using the rule to invoke an Amazon Batch Job. Documented below. A maximum of 1 are allowed.
     */
-  val batchTarget: js.UndefOr[Input[Anon_ArraySizeJobAttempts]] = js.undefined
+  val batchTarget: js.UndefOr[Input[EventTargetBatchTarget]] = js.undefined
   /**
     * Parameters used when you are using the rule to invoke Amazon ECS Task. Documented below. A maximum of 1 are allowed.
     */
-  val ecsTarget: js.UndefOr[Input[Anon_GroupLaunchType]] = js.undefined
+  val ecsTarget: js.UndefOr[Input[EventTargetEcsTarget]] = js.undefined
   /**
     * Valid JSON text passed to the target.
     */
@@ -36,11 +36,11 @@ trait EventTargetState extends js.Object {
   /**
     * Parameters used when you are providing a custom input to a target based on certain event data.
     */
-  val inputTransformer: js.UndefOr[Input[Anon_InputPathsInputTemplate]] = js.undefined
+  val inputTransformer: js.UndefOr[Input[EventTargetInputTransformer]] = js.undefined
   /**
     * Parameters used when you are using the rule to invoke an Amazon Kinesis Stream. Documented below. A maximum of 1 are allowed.
     */
-  val kinesisTarget: js.UndefOr[Input[Anon_PartitionKeyPathInput]] = js.undefined
+  val kinesisTarget: js.UndefOr[Input[EventTargetKinesisTarget]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecsTarget` is used.
     */
@@ -52,11 +52,11 @@ trait EventTargetState extends js.Object {
   /**
     * Parameters used when you are using the rule to invoke Amazon EC2 Run Command. Documented below. A maximum of 5 are allowed.
     */
-  val runCommandTargets: js.UndefOr[Input[js.Array[Input[Anon_KeyValuesArray]]]] = js.undefined
+  val runCommandTargets: js.UndefOr[Input[js.Array[Input[EventTargetRunCommandTarget]]]] = js.undefined
   /**
     * Parameters used when you are using the rule to invoke an Amazon SQS Queue. Documented below. A maximum of 1 are allowed.
     */
-  val sqsTarget: js.UndefOr[Input[Anon_MessageGroupIdInput]] = js.undefined
+  val sqsTarget: js.UndefOr[Input[EventTargetSqsTarget]] = js.undefined
   /**
     * The unique target assignment ID.  If missing, will generate a random, unique id.
     */
@@ -67,16 +67,16 @@ object EventTargetState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    batchTarget: Input[Anon_ArraySizeJobAttempts] = null,
-    ecsTarget: Input[Anon_GroupLaunchType] = null,
+    batchTarget: Input[EventTargetBatchTarget] = null,
+    ecsTarget: Input[EventTargetEcsTarget] = null,
     input: Input[String] = null,
     inputPath: Input[String] = null,
-    inputTransformer: Input[Anon_InputPathsInputTemplate] = null,
-    kinesisTarget: Input[Anon_PartitionKeyPathInput] = null,
+    inputTransformer: Input[EventTargetInputTransformer] = null,
+    kinesisTarget: Input[EventTargetKinesisTarget] = null,
     roleArn: Input[String] = null,
     rule: Input[String] = null,
-    runCommandTargets: Input[js.Array[Input[Anon_KeyValuesArray]]] = null,
-    sqsTarget: Input[Anon_MessageGroupIdInput] = null,
+    runCommandTargets: Input[js.Array[Input[EventTargetRunCommandTarget]]] = null,
+    sqsTarget: Input[EventTargetSqsTarget] = null,
     targetId: Input[String] = null
   ): EventTargetState = {
     val __obj = js.Dynamic.literal()

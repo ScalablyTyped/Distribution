@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListPipelinesOutput extends js.Object {
   /**
-    * If the amount of returned information is significantly large, an identifier is also returned which can be used in a subsequent list pipelines call to return the next set of pipelines in the list.
+    * If the amount of returned information is significantly large, an identifier is also returned. It can be used in a subsequent list pipelines call to return the next set of pipelines in the list.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**

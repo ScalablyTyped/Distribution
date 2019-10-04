@@ -5,6 +5,7 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.Ref
 import typings.reactDashSelect.srcTypesMod.ActionMeta
 import typings.reactDashSelect.srcTypesMod.InputActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
 import scala.scalajs.js
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-select/src/AsyncCreatable", "AsyncCreatable")
 @js.native
-class AsyncCreatable[OptionType] ()
+class AsyncCreatable[OptionType /* <: OptionTypeBase */] ()
   extends Component[Props[OptionType], State[OptionType], js.Any] {
   var mounted: Boolean = js.native
   var optionsCache: StringDictionary[OptionsType[OptionType]] = js.native

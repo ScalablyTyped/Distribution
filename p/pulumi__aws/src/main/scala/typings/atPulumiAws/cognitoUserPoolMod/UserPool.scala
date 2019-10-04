@@ -1,15 +1,15 @@
 package typings.atPulumiAws.cognitoUserPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AdvancedSecurityMode
-import typings.atPulumiAws.Anon_AllowAdminCreateUserOnly
-import typings.atPulumiAws.Anon_AttributeDataType
-import typings.atPulumiAws.Anon_ChallengeRequiredOnNewDevice
-import typings.atPulumiAws.Anon_CreateAuthChallenge
-import typings.atPulumiAws.Anon_DefaultEmailOption
-import typings.atPulumiAws.Anon_EmailSendingAccount
-import typings.atPulumiAws.Anon_ExternalId
-import typings.atPulumiAws.Anon_MinimumLength
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolAdminCreateUserConfig
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolDeviceConfiguration
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolEmailConfiguration
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolLambdaConfig
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolPasswordPolicy
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolSchema
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolSmsConfiguration
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolUserPoolAddOns
+import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolVerificationMessageTemplate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,7 +35,7 @@ class UserPool protected () extends CustomResource {
   /**
     * The configuration for AdminCreateUser requests.
     */
-  val adminCreateUserConfig: Output[Anon_AllowAdminCreateUserOnly] = js.native
+  val adminCreateUserConfig: Output[UserPoolAdminCreateUserConfig] = js.native
   /**
     * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
     */
@@ -55,11 +55,11 @@ class UserPool protected () extends CustomResource {
   /**
     * The configuration for the user pool's device tracking.
     */
-  val deviceConfiguration: Output[js.UndefOr[Anon_ChallengeRequiredOnNewDevice]] = js.native
+  val deviceConfiguration: Output[js.UndefOr[UserPoolDeviceConfiguration]] = js.native
   /**
     * The Email Configuration.
     */
-  val emailConfiguration: Output[js.UndefOr[Anon_EmailSendingAccount]] = js.native
+  val emailConfiguration: Output[js.UndefOr[UserPoolEmailConfiguration]] = js.native
   /**
     * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
     */
@@ -75,7 +75,7 @@ class UserPool protected () extends CustomResource {
   /**
     * A container for the AWS Lambda triggers associated with the user pool.
     */
-  val lambdaConfig: Output[Anon_CreateAuthChallenge] = js.native
+  val lambdaConfig: Output[UserPoolLambdaConfig] = js.native
   /**
     * The date the user pool was last modified.
     */
@@ -91,11 +91,11 @@ class UserPool protected () extends CustomResource {
   /**
     * A container for information about the user pool password policy.
     */
-  val passwordPolicy: Output[Anon_MinimumLength] = js.native
+  val passwordPolicy: Output[UserPoolPasswordPolicy] = js.native
   /**
     * A container with the schema attributes of a user pool. Maximum of 50 attributes.
     */
-  val schemas: Output[js.UndefOr[js.Array[Anon_AttributeDataType]]] = js.native
+  val schemas: Output[js.UndefOr[js.Array[UserPoolSchema]]] = js.native
   /**
     * A string representing the SMS authentication message.
     */
@@ -103,11 +103,11 @@ class UserPool protected () extends CustomResource {
   /**
     * The SMS Configuration.
     */
-  val smsConfiguration: Output[js.UndefOr[Anon_ExternalId]] = js.native
+  val smsConfiguration: Output[js.UndefOr[UserPoolSmsConfiguration]] = js.native
   /**
     * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
-  val smsVerificationMessage: Output[js.UndefOr[String]] = js.native
+  val smsVerificationMessage: Output[String] = js.native
   /**
     * A mapping of tags to assign to the User Pool.
     */
@@ -115,7 +115,7 @@ class UserPool protected () extends CustomResource {
   /**
     * Configuration block for user pool add-ons to enable user pool advanced security mode features.
     */
-  val userPoolAddOns: Output[js.UndefOr[Anon_AdvancedSecurityMode]] = js.native
+  val userPoolAddOns: Output[js.UndefOr[UserPoolUserPoolAddOns]] = js.native
   /**
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
@@ -123,7 +123,7 @@ class UserPool protected () extends CustomResource {
   /**
     * The verification message templates configuration.
     */
-  val verificationMessageTemplate: Output[Anon_DefaultEmailOption] = js.native
+  val verificationMessageTemplate: Output[UserPoolVerificationMessageTemplate] = js.native
 }
 
 /* static members */

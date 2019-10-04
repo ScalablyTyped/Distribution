@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3BucketNotificationMod
 
-import typings.atPulumiAws.Anon_EventsFilterPrefix
-import typings.atPulumiAws.Anon_EventsFilterPrefixFilterSuffix
-import typings.atPulumiAws.Anon_EventsFilterPrefixFilterSuffixId
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketNotificationLambdaFunction
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketNotificationQueue
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketNotificationTopic
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,15 +31,15 @@ class BucketNotification protected () extends CustomResource {
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
-  val lambdaFunctions: Output[js.UndefOr[js.Array[Anon_EventsFilterPrefix]]] = js.native
+  val lambdaFunctions: Output[js.UndefOr[js.Array[BucketNotificationLambdaFunction]]] = js.native
   /**
     * The notification configuration to SQS Queue (documented below).
     */
-  val queues: Output[js.UndefOr[js.Array[Anon_EventsFilterPrefixFilterSuffix]]] = js.native
+  val queues: Output[js.UndefOr[js.Array[BucketNotificationQueue]]] = js.native
   /**
     * The notification configuration to SNS Topic (documented below).
     */
-  val topics: Output[js.UndefOr[js.Array[Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
+  val topics: Output[js.UndefOr[js.Array[BucketNotificationTopic]]] = js.native
 }
 
 /* static members */

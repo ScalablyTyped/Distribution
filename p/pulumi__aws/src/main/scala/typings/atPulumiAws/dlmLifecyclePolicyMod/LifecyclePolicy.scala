@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dlmLifecyclePolicyMod
 
-import typings.atPulumiAws.Anon_KeyResourceTypes
+import typings.atPulumiAws.typesOutputMod.dlmNs.LifecyclePolicyPolicyDetails
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class LifecyclePolicy protected () extends CustomResource {
   /**
     * See the `policyDetails` configuration block. Max of 1.
     */
-  val policyDetails: Output[Anon_KeyResourceTypes] = js.native
+  val policyDetails: Output[LifecyclePolicyPolicyDetails] = js.native
   /**
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */

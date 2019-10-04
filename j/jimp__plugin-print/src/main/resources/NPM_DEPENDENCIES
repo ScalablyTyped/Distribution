@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jimp/plugin-print" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jimp/plugin-print" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -18,9 +18,9 @@ class InviteServerTransaction protected () extends ServerTransaction {
     * After construction the transaction will be in the "proceeding" state and the transaction
     * `id` will equal the branch parameter set in the Via header of the incoming request.
     * https://tools.ietf.org/html/rfc3261#section-17.2.1
-    * @param request Incoming INVITE request from the transport.
-    * @param transport The transport.
-    * @param user The transaction user.
+    * @param request - Incoming INVITE request from the transport.
+    * @param transport - The transport.
+    * @param user - The transaction user.
     */
   def this(request: IncomingRequestMessage, transport: Transport, user: ServerTransactionUser) = this()
   var H: js.Any = js.native
@@ -54,7 +54,7 @@ class InviteServerTransaction protected () extends ServerTransaction {
   var startProgressExtensionTimer: js.Any = js.native
   /**
     * Execute a state transition.
-    * @param newState New state.
+    * @param newState - New state.
     */
   var stateTransition: js.Any = js.native
   /**

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2NetworkInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AttachmentIdDeviceIndex
+import typings.atPulumiAws.typesOutputMod.ec2Ns.NetworkInterfaceAttachment
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,7 +26,7 @@ class NetworkInterface protected () extends CustomResource {
   /**
     * Block to define the attachment of the ENI. Documented below.
     */
-  val attachments: Output[js.Array[Anon_AttachmentIdDeviceIndex]] = js.native
+  val attachments: Output[js.Array[NetworkInterfaceAttachment]] = js.native
   /**
     * A description for the network interface.
     */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-font
 
-Typings are for version 6.0.1
+Typings are for version 7.0.0
 
 ## Library description:
 Load fonts at runtime and use them in React Native components.

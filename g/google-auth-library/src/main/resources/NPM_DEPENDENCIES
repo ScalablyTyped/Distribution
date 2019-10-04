@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "google-auth-library" : "5.1.1"
+      "google-auth-library" : "5.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "google-auth-library" : "5.1.1"
+      "google-auth-library" : "5.3.0"
     }
   ],
   "compile-devDependencies" : [

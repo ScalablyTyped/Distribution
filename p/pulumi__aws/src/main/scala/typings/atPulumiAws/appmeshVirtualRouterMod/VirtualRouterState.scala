@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualRouterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ListenerAnonPortMappingAnonPortProtocol
+import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualRouterSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait VirtualRouterState extends js.Object {
   /**
     * The virtual router specification to apply.
     */
-  val spec: js.UndefOr[Input[Anon_ListenerAnonPortMappingAnonPortProtocol]] = js.undefined
+  val spec: js.UndefOr[Input[VirtualRouterSpec]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -46,7 +46,7 @@ object VirtualRouterState {
     lastUpdatedDate: Input[String] = null,
     meshName: Input[String] = null,
     name: Input[String] = null,
-    spec: Input[Anon_ListenerAnonPortMappingAnonPortProtocol] = null,
+    spec: Input[VirtualRouterSpec] = null,
     tags: Input[StringDictionary[_]] = null
   ): VirtualRouterState = {
     val __obj = js.Dynamic.literal()

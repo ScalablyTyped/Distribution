@@ -1,6 +1,6 @@
 package typings.intlDashMessageformatDashParser
 
-import typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+import typings.intlDashMessageformatDashParser.distTypesMod._ValidPluralRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

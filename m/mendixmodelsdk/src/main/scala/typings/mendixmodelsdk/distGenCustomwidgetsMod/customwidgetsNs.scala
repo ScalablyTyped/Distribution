@@ -367,6 +367,10 @@ object customwidgetsNs extends js.Object {
     var translatableValue: Text | Null = js.native
     var `type`: WidgetValueType = js.native
     /**
+      * In version 8.2.0: introduced
+      */
+    val widgets: IList[Widget] = js.native
+    /**
       * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
       */
     var xPathConstraint: String = js.native
@@ -861,6 +865,15 @@ object customwidgetsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): CustomWidget = js.native
+    /**
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): CustomWidget = js.native
   }
   
   /* static members */
@@ -1142,6 +1155,7 @@ object customwidgetsNs extends js.Object {
     var System: WidgetValueTypeEnum = js.native
     var TextTemplate: WidgetValueTypeEnum = js.native
     var TranslatableString: WidgetValueTypeEnum = js.native
+    var Widgets: WidgetValueTypeEnum = js.native
   }
   
 }

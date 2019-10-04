@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueCatalogTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketColumnsColumns
-import typings.atPulumiAws.Anon_CommentName
+import typings.atPulumiAws.typesInputMod.glueNs.CatalogTablePartitionKey
+import typings.atPulumiAws.typesInputMod.glueNs.CatalogTableStorageDescriptor
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ trait CatalogTableArgs extends js.Object {
   /**
     * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.
     */
-  val partitionKeys: js.UndefOr[Input[js.Array[Input[Anon_CommentName]]]] = js.undefined
+  val partitionKeys: js.UndefOr[Input[js.Array[Input[CatalogTablePartitionKey]]]] = js.undefined
   /**
     * Retention time for this table.
     */
@@ -44,7 +44,7 @@ trait CatalogTableArgs extends js.Object {
   /**
     * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
     */
-  val storageDescriptor: js.UndefOr[Input[Anon_BucketColumnsColumns]] = js.undefined
+  val storageDescriptor: js.UndefOr[Input[CatalogTableStorageDescriptor]] = js.undefined
   /**
     * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
     */
@@ -68,9 +68,9 @@ object CatalogTableArgs {
     name: Input[String] = null,
     owner: Input[String] = null,
     parameters: Input[StringDictionary[Input[String]]] = null,
-    partitionKeys: Input[js.Array[Input[Anon_CommentName]]] = null,
+    partitionKeys: Input[js.Array[Input[CatalogTablePartitionKey]]] = null,
     retention: Input[Double] = null,
-    storageDescriptor: Input[Anon_BucketColumnsColumns] = null,
+    storageDescriptor: Input[CatalogTableStorageDescriptor] = null,
     tableType: Input[String] = null,
     viewExpandedText: Input[String] = null,
     viewOriginalText: Input[String] = null

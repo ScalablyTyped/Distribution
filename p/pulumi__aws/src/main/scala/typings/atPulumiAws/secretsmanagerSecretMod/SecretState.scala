@@ -1,7 +1,7 @@
 package typings.atPulumiAws.secretsmanagerSecretMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AutomaticallyAfterDaysInput
+import typings.atPulumiAws.typesInputMod.secretsmanagerNs.SecretRotationRules
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ trait SecretState extends js.Object {
   /**
     * A structure that defines the rotation configuration for this secret. Defined below.
     */
-  val rotationRules: js.UndefOr[Input[Anon_AutomaticallyAfterDaysInput]] = js.undefined
+  val rotationRules: js.UndefOr[Input[SecretRotationRules]] = js.undefined
   /**
     * Specifies a key-value map of user-defined tags that are attached to the secret.
     */
@@ -66,7 +66,7 @@ object SecretState {
     recoveryWindowInDays: Input[Double] = null,
     rotationEnabled: Input[Boolean] = null,
     rotationLambdaArn: Input[String] = null,
-    rotationRules: Input[Anon_AutomaticallyAfterDaysInput] = null,
+    rotationRules: Input[SecretRotationRules] = null,
     tags: Input[StringDictionary[_]] = null
   ): SecretState = {
     val __obj = js.Dynamic.literal()

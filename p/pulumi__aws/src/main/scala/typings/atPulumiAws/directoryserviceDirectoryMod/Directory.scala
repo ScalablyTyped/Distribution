@@ -1,8 +1,8 @@
 package typings.atPulumiAws.directoryserviceDirectoryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CustomerDnsIps
-import typings.atPulumiAws.Anon_SubnetIds
+import typings.atPulumiAws.typesOutputMod.directoryserviceNs.DirectoryConnectSettings
+import typings.atPulumiAws.typesOutputMod.directoryserviceNs.DirectoryVpcSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,7 +35,7 @@ class Directory protected () extends CustomResource {
   /**
     * Connector related information about the directory. Fields documented below.
     */
-  val connectSettings: Output[js.UndefOr[Anon_CustomerDnsIps]] = js.native
+  val connectSettings: Output[js.UndefOr[DirectoryConnectSettings]] = js.native
   /**
     * A textual description for the directory.
     */
@@ -83,7 +83,7 @@ class Directory protected () extends CustomResource {
   /**
     * VPC related information about the directory. Fields documented below.
     */
-  val vpcSettings: Output[js.UndefOr[Anon_SubnetIds]] = js.native
+  val vpcSettings: Output[js.UndefOr[DirectoryVpcSettings]] = js.native
 }
 
 /* static members */

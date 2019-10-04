@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory
 
-Typings are for version 31.0
+Typings are for version 33.0
 
 ## Library description:
 Data viz for React

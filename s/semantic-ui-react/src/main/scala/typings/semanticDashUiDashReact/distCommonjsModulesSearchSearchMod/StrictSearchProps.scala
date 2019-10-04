@@ -54,7 +54,7 @@ trait StrictSearchProps extends js.Object {
   var fluid: js.UndefOr[Boolean] = js.undefined
   /** Shorthand for Icon. */
   var icon: js.UndefOr[js.Any] = js.undefined
-  /** A search input can take up the width of its container. */
+  /** Shorthand for input element. */
   var input: js.UndefOr[SemanticShorthandItem[InputProps]] = js.undefined
   /** A search can show a loading indicator. */
   var loading: js.UndefOr[Boolean] = js.undefined

@@ -30,7 +30,7 @@ trait OrderableReplicationInstance extends js.Object {
     */
   var MinAllocatedStorage: js.UndefOr[Integer] = js.undefined
   /**
-    * The value returned when the specified EngineVersion of the replication instance is in Beta or test mode. This indicates some features might not work as expected.  AWS DMS supports ReleaseStatus in versions 3.1.4 and later. 
+    * The value returned when the specified EngineVersion of the replication instance is in Beta or test mode. This indicates some features might not work as expected.  AWS DMS supports the ReleaseStatus parameter in versions 3.1.4 and later. 
     */
   var ReleaseStatus: js.UndefOr[ReleaseStatusValues] = js.undefined
   /**

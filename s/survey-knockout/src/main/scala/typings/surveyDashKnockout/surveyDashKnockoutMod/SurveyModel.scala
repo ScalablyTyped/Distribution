@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, requiredText, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
+- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, requiredText, beforeSettingQuestionErrors, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 class SurveyModel ()
   extends Base
@@ -145,6 +145,10 @@ class SurveyModel ()
     * @see state
     */
   val hasCookie: Boolean = js.native
+  /**
+    * Set this property to true to make all requried errors invisible
+    */
+  var hideRequiredErrors: Boolean = js.native
   /**
     * Set it to true, to ignore validation, like requried questions and others, on nextPage and completeLastPage functions.
     * @see nextPage
@@ -642,6 +646,14 @@ class SurveyModel ()
     */
   var onServerValidateQuestions: js.Any = js.native
   /**
+    * The event is fired before errors are setting into question. You may add/remove/modify errors for a question.
+    * <br/> sender the survey object that fires the event
+    * <br/> options.question a question
+    * <br/> options.errors the list of errors. The list can be empty if by default there is no errors
+    * @see onValidateQuestion
+    */
+  var onSettingQuestionErrors: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
     * The event is fired after the survey changed it's state from "starting" to "running". The "starting" state means that survey shows the started page.
     * The firstPageIsStarted property should be set to the true, if you want to have the started page in your survey. The end-user should click on the "Start" button to start the survey.
     * @see firstPageIsStarted
@@ -709,6 +721,7 @@ class SurveyModel ()
     * <br/> options.value the current question value
     * <br/> options.error an error string. It is empty by default.
     * @see onServerValidateQuestions
+    * @see onSettingQuestionErrors
     */
   var onValidateQuestion: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
@@ -991,6 +1004,7 @@ class SurveyModel ()
   @JSName("afterRenderQuestion")
   def afterRenderQuestion_Any(question: IQuestion, htmlElement: js.Any): js.Any = js.native
   /* protected */ def afterRenderSurvey(htmlElement: js.Any): Unit = js.native
+  def beforeSettingQuestionErrors(question: IQuestion, errors: js.Array[SurveyError]): Unit = js.native
   /**
     * Clear the survey data and state. If the survey has a 'completed' state, it will have a 'running' state.
     * @param clearData clear the data

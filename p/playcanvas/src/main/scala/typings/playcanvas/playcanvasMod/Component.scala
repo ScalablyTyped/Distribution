@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Component
+  * @extends pc.EventHandler
   * @classdesc Components are used to attach functionality on a {@link pc.Entity}. Components
   * can receive update events each frame, and expose properties to the PlayCanvas Editor.
   * @description Base constructor for a Component

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jimp/jpeg" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jimp/jpeg" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,11 +1,12 @@
 package typings.atPulumiAws.mqBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Audit
-import typings.atPulumiAws.Anon_ConsoleAccess
-import typings.atPulumiAws.Anon_ConsoleUrl
-import typings.atPulumiAws.Anon_DayOfWeek
-import typings.atPulumiAws.Anon_IdRevision
+import typings.atPulumiAws.typesOutputMod.mqNs.BrokerConfiguration
+import typings.atPulumiAws.typesOutputMod.mqNs.BrokerEncryptionOptions
+import typings.atPulumiAws.typesOutputMod.mqNs.BrokerInstance
+import typings.atPulumiAws.typesOutputMod.mqNs.BrokerLogs
+import typings.atPulumiAws.typesOutputMod.mqNs.BrokerMaintenanceWindowStartTime
+import typings.atPulumiAws.typesOutputMod.mqNs.BrokerUser
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -47,11 +48,15 @@ class Broker protected () extends CustomResource {
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: Output[Anon_IdRevision] = js.native
+  val configuration: Output[BrokerConfiguration] = js.native
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
   val deploymentMode: Output[js.UndefOr[String]] = js.native
+  /**
+    * Configuration block containing encryption options. See below.
+    */
+  val encryptionOptions: Output[js.UndefOr[BrokerEncryptionOptions]] = js.native
   /**
     * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
     */
@@ -75,15 +80,15 @@ class Broker protected () extends CustomResource {
     * * `mqtt+ssl://broker-id.mq.us-west-2.amazonaws.com:8883`
     * * `wss://broker-id.mq.us-west-2.amazonaws.com:61619`
     */
-  val instances: Output[js.Array[Anon_ConsoleUrl]] = js.native
+  val instances: Output[js.Array[BrokerInstance]] = js.native
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: Output[js.UndefOr[Anon_Audit]] = js.native
+  val logs: Output[js.UndefOr[BrokerLogs]] = js.native
   /**
     * Maintenance window start time. See below.
     */
-  val maintenanceWindowStartTime: Output[Anon_DayOfWeek] = js.native
+  val maintenanceWindowStartTime: Output[BrokerMaintenanceWindowStartTime] = js.native
   /**
     * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
     */
@@ -103,7 +108,7 @@ class Broker protected () extends CustomResource {
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
-  val users: Output[js.Array[Anon_ConsoleAccess]] = js.native
+  val users: Output[js.Array[BrokerUser]] = js.native
 }
 
 /* static members */

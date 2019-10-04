@@ -1,6 +1,6 @@
 package typings.atPulumiAws.glueSecurityConfigurationMod
 
-import typings.atPulumiAws.Anon_CloudwatchEncryptionJobBookmarksEncryption
+import typings.atPulumiAws.typesInputMod.glueNs.SecurityConfigurationEncryptionConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait SecurityConfigurationState extends js.Object {
   /**
     * Configuration block containing encryption configuration. Detailed below.
     */
-  val encryptionConfiguration: js.UndefOr[Input[Anon_CloudwatchEncryptionJobBookmarksEncryption]] = js.undefined
+  val encryptionConfiguration: js.UndefOr[Input[SecurityConfigurationEncryptionConfiguration]] = js.undefined
   /**
     * Name of the security configuration.
     */
@@ -20,7 +20,7 @@ trait SecurityConfigurationState extends js.Object {
 object SecurityConfigurationState {
   @scala.inline
   def apply(
-    encryptionConfiguration: Input[Anon_CloudwatchEncryptionJobBookmarksEncryption] = null,
+    encryptionConfiguration: Input[SecurityConfigurationEncryptionConfiguration] = null,
     name: Input[String] = null
   ): SecurityConfigurationState = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "workbox-sw"
-version := "4.2-dt-20190408Z-bc1c64"
+version := "4.2-dt-20191003Z-e526e2"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

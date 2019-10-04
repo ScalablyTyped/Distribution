@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 trait TypeofShapeUtils extends js.Object {
   def area(contour: js.Array[Vec2]): Double
   def isClockWise(pts: js.Array[Vec2]): Boolean
-  def triangulate(contour: js.Array[Vec2], indices: Boolean): js.Array[Double]
-  def triangulateShape(contour: js.Array[Vec2], holes: js.Array[Vec2]): js.Array[js.Array[Double]]
+  def triangulateShape(contour: js.Array[Vec2], holes: js.Array[js.Array[Vec2]]): js.Array[js.Array[Double]]
 }
 
 object TypeofShapeUtils {
@@ -17,10 +16,9 @@ object TypeofShapeUtils {
   def apply(
     area: js.Array[Vec2] => Double,
     isClockWise: js.Array[Vec2] => Boolean,
-    triangulate: (js.Array[Vec2], Boolean) => js.Array[Double],
-    triangulateShape: (js.Array[Vec2], js.Array[Vec2]) => js.Array[js.Array[Double]]
+    triangulateShape: (js.Array[Vec2], js.Array[js.Array[Vec2]]) => js.Array[js.Array[Double]]
   ): TypeofShapeUtils = {
-    val __obj = js.Dynamic.literal(area = js.Any.fromFunction1(area), isClockWise = js.Any.fromFunction1(isClockWise), triangulate = js.Any.fromFunction2(triangulate), triangulateShape = js.Any.fromFunction2(triangulateShape))
+    val __obj = js.Dynamic.literal(area = js.Any.fromFunction1(area), isClockWise = js.Any.fromFunction1(isClockWise), triangulateShape = js.Any.fromFunction2(triangulateShape))
   
     __obj.asInstanceOf[TypeofShapeUtils]
   }

@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents a chart object in a workbook.
+  To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
   *
   * [Api set: ExcelApi 1.1]
   */
 trait ChartLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**

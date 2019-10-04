@@ -9,6 +9,7 @@ trait Anon_ClearButtonColumn extends js.Object {
   var column: String
   var controlLabel: String
   var item: String
+  var itemChecked: String
   var itemControl: String
   var itemDecorator: String
   var itemInline: String
@@ -25,6 +26,7 @@ object Anon_ClearButtonColumn {
     column: String,
     controlLabel: String,
     item: String,
+    itemChecked: String,
     itemControl: String,
     itemDecorator: String,
     itemInline: String,
@@ -33,7 +35,7 @@ object Anon_ClearButtonColumn {
     other: String,
     root: String
   ): Anon_ClearButtonColumn = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton, column = column, controlLabel = controlLabel, item = item, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, label = label, materialDecorator = materialDecorator, other = other, root = root)
+    val __obj = js.Dynamic.literal(clearButton = clearButton, column = column, controlLabel = controlLabel, item = item, itemChecked = itemChecked, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, label = label, materialDecorator = materialDecorator, other = other, root = root)
   
     __obj.asInstanceOf[Anon_ClearButtonColumn]
   }

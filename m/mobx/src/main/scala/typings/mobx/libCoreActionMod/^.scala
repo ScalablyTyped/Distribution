@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx/lib/core/action", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def _endAction(runInfo: IActionRunInfo): Unit = js.native
+  def _startAction(actionName: String, scope: js.Any): IActionRunInfo = js.native
+  def _startAction(actionName: String, scope: js.Any, args: IArguments): IActionRunInfo = js.native
   def allowStateChanges[T](allowStateChanges: Boolean, func: js.Function0[T]): T = js.native
   def allowStateChangesEnd(prev: Boolean): Unit = js.native
   def allowStateChangesInsideComputed[T](func: js.Function0[T]): T = js.native

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 object ddDashTraceStrings {
   @js.native
+  sealed trait `agent-exporter` extends js.Object
+  
+  @js.native
   sealed trait amqp10 extends js.Object
   
   @js.native
   sealed trait amqplib extends js.Object
-  
-  @js.native
-  sealed trait `async-listener` extends js.Object
   
   @js.native
   sealed trait async_hooks extends js.Object
@@ -28,6 +28,9 @@ object ddDashTraceStrings {
   
   @js.native
   sealed trait connect extends js.Object
+  
+  @js.native
+  sealed trait couchbase extends js.Object
   
   @js.native
   sealed trait dns extends js.Object
@@ -48,10 +51,16 @@ object ddDashTraceStrings {
   sealed trait graphql extends js.Object
   
   @js.native
+  sealed trait grpc extends js.Object
+  
+  @js.native
   sealed trait hapi extends js.Object
   
   @js.native
   sealed trait http extends js.Object
+  
+  @js.native
+  sealed trait http2 extends js.Object
   
   @js.native
   sealed trait ioredis extends js.Object
@@ -61,6 +70,12 @@ object ddDashTraceStrings {
   
   @js.native
   sealed trait koa extends js.Object
+  
+  @js.native
+  sealed trait `limitd-client` extends js.Object
+  
+  @js.native
+  sealed trait `log-exporter` extends js.Object
   
   @js.native
   sealed trait memcached extends js.Object
@@ -117,11 +132,11 @@ object ddDashTraceStrings {
   sealed trait winston extends js.Object
   
   @scala.inline
+  def `agent-exporter`: `agent-exporter` = "agent-exporter".asInstanceOf[`agent-exporter`]
+  @scala.inline
   def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
   @scala.inline
   def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
-  @scala.inline
-  def `async-listener`: `async-listener` = "async-listener".asInstanceOf[`async-listener`]
   @scala.inline
   def async_hooks: async_hooks = "async_hooks".asInstanceOf[async_hooks]
   @scala.inline
@@ -132,6 +147,8 @@ object ddDashTraceStrings {
   def `cassandra-driver`: `cassandra-driver` = "cassandra-driver".asInstanceOf[`cassandra-driver`]
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
+  def couchbase: couchbase = "couchbase".asInstanceOf[couchbase]
   @scala.inline
   def dns: dns = "dns".asInstanceOf[dns]
   @scala.inline
@@ -145,15 +162,23 @@ object ddDashTraceStrings {
   @scala.inline
   def graphql: graphql = "graphql".asInstanceOf[graphql]
   @scala.inline
+  def grpc: grpc = "grpc".asInstanceOf[grpc]
+  @scala.inline
   def hapi: hapi = "hapi".asInstanceOf[hapi]
   @scala.inline
   def http: http = "http".asInstanceOf[http]
+  @scala.inline
+  def http2: http2 = "http2".asInstanceOf[http2]
   @scala.inline
   def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
   @scala.inline
   def knex: knex = "knex".asInstanceOf[knex]
   @scala.inline
   def koa: koa = "koa".asInstanceOf[koa]
+  @scala.inline
+  def `limitd-client`: `limitd-client` = "limitd-client".asInstanceOf[`limitd-client`]
+  @scala.inline
+  def `log-exporter`: `log-exporter` = "log-exporter".asInstanceOf[`log-exporter`]
   @scala.inline
   def memcached: memcached = "memcached".asInstanceOf[memcached]
   @scala.inline

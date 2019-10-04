@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiCopyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIops
-import typings.atPulumiAws.Anon_DeviceNameVirtualNameInput
+import typings.atPulumiAws.typesInputMod.ec2Ns.AmiCopyEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.AmiCopyEphemeralBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait AmiCopyArgs extends js.Object {
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIops]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEbsBlockDevice]]]] = js.undefined
   /**
     * Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`
     */
@@ -26,7 +26,7 @@ trait AmiCopyArgs extends js.Object {
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameVirtualNameInput]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEphemeralBlockDevice]]]] = js.undefined
   /**
     * The full ARN of the KMS Key to use when encrypting the snapshots of an image during a copy operation. If not specified, then the default AWS KMS Key will be used
     */
@@ -57,9 +57,9 @@ object AmiCopyArgs {
     sourceAmiId: Input[String],
     sourceAmiRegion: Input[String],
     description: Input[String] = null,
-    ebsBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIops]]] = null,
+    ebsBlockDevices: Input[js.Array[Input[AmiCopyEbsBlockDevice]]] = null,
     encrypted: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameVirtualNameInput]]] = null,
+    ephemeralBlockDevices: Input[js.Array[Input[AmiCopyEphemeralBlockDevice]]] = null,
     kmsKeyId: Input[String] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null

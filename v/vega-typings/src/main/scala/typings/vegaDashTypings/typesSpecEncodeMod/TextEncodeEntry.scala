@@ -9,18 +9,20 @@ trait TextEncodeEntry
      with AlignProperty
      with ThetaProperty {
   var angle: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var baseline: js.UndefOr[ProductionRule[ScaledValueRef[TextBaseline]]] = js.undefined
+  var baseline: js.UndefOr[ProductionRule[TextBaselineValueRef]] = js.undefined
   var dir: js.UndefOr[ProductionRule[ScaledValueRef[TextDirection]]] = js.undefined
   var dx: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var dy: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var ellipsis: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
   var font: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
   var fontSize: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var fontStyle: js.UndefOr[ProductionRule[ScaledValueRef[FontStyle]]] = js.undefined
-  var fontWeight: js.UndefOr[ProductionRule[ScaledValueRef[FontWeight]]] = js.undefined
+  var fontStyle: js.UndefOr[ProductionRule[FontStyleValueRef]] = js.undefined
+  var fontWeight: js.UndefOr[ProductionRule[FontWeightValueRef]] = js.undefined
   var limit: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
+  var lineBreak: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var lineHeight: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var radius: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var text: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var text: js.UndefOr[ProductionRule[TextValueRef]] = js.undefined
 }
 
 object TextEncodeEntry {
@@ -28,7 +30,7 @@ object TextEncodeEntry {
   def apply(
     align: ProductionRule[ScaledValueRef[Align]] = null,
     angle: ProductionRule[NumericValueRef] = null,
-    baseline: ProductionRule[ScaledValueRef[TextBaseline]] = null,
+    baseline: ProductionRule[TextBaselineValueRef] = null,
     cursor: ProductionRule[StringValueRef] = null,
     dir: ProductionRule[ScaledValueRef[TextDirection]] = null,
     dx: ProductionRule[NumericValueRef] = null,
@@ -38,10 +40,12 @@ object TextEncodeEntry {
     fillOpacity: ProductionRule[NumericValueRef] = null,
     font: ProductionRule[StringValueRef] = null,
     fontSize: ProductionRule[NumericValueRef] = null,
-    fontStyle: ProductionRule[ScaledValueRef[FontStyle]] = null,
-    fontWeight: ProductionRule[ScaledValueRef[FontWeight]] = null,
+    fontStyle: ProductionRule[FontStyleValueRef] = null,
+    fontWeight: ProductionRule[FontWeightValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
     limit: ProductionRule[NumericValueRef] = null,
+    lineBreak: ProductionRule[StringValueRef] = null,
+    lineHeight: ProductionRule[NumericValueRef] = null,
     opacity: ProductionRule[NumericValueRef] = null,
     radius: ProductionRule[NumericValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
@@ -52,7 +56,7 @@ object TextEncodeEntry {
     strokeMiterLimit: ProductionRule[NumericValueRef] = null,
     strokeOpacity: ProductionRule[NumericValueRef] = null,
     strokeWidth: ProductionRule[NumericValueRef] = null,
-    text: ProductionRule[StringValueRef] = null,
+    text: ProductionRule[TextValueRef] = null,
     theta: ProductionRule[NumericValueRef] = null,
     tooltip: ProductionRule[StringValueRef] = null,
     width: ProductionRule[NumericValueRef] = null,
@@ -80,6 +84,8 @@ object TextEncodeEntry {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])

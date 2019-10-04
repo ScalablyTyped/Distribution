@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Slicer object, for use in "slicer.set({ ... })". */
+/** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
 trait SlicerUpdateData extends js.Object {
   /**
     *
@@ -21,7 +21,7 @@ trait SlicerUpdateData extends js.Object {
   /**
     *
     * Represents the height, in points, of the slicer.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -30,7 +30,7 @@ trait SlicerUpdateData extends js.Object {
   /**
     *
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -54,7 +54,7 @@ trait SlicerUpdateData extends js.Object {
   var nameInFormula: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
+    * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -71,7 +71,7 @@ trait SlicerUpdateData extends js.Object {
   /**
     *
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -80,7 +80,7 @@ trait SlicerUpdateData extends js.Object {
   /**
     *
     * Represents the width, in points, of the slicer.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -1,11 +1,11 @@
 package typings.reactDashSketchapp.libComponentsSvgSvgMod
 
 import typings.react.reactMod.ReactNode
-import typings.reactDashSketchapp.reactDashSketchappMod.ResizingConstraintPropTypes
-import typings.reactDashSketchapp.reactDashSketchappMod.ShadowsPropTypes
 import typings.reactDashSketchapp.reactDashSketchappMod.Style
 import typings.reactDashSketchapp.reactDashSketchappMod.StyleReference
 import typings.reactDashSketchapp.reactDashSketchappMod.ViewProps
+import typings.reactDashSketchapp.typesMod.ResizeConstraints
+import typings.reactDashSketchapp.typesMod.SketchShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +27,8 @@ object SvgProps {
     name: String = null,
     opacity: String | Double = null,
     preserveAspectRatio: String = null,
-    resizingConstraint: ResizingConstraintPropTypes = null,
-    shadows: js.Array[ShadowsPropTypes] = null,
+    resizingConstraint: ResizeConstraints = null,
+    shadows: js.Array[SketchShadow] = null,
     style: Style | StyleReference = null,
     viewBox: String = null,
     width: String | Double = null

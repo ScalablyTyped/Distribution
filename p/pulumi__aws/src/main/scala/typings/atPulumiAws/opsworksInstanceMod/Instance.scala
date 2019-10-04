@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksInstanceMod
 
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameIops
-import typings.atPulumiAws.Anon_DeleteOnTerminationIops
-import typings.atPulumiAws.Anon_DeviceName
+import typings.atPulumiAws.typesOutputMod.opsworksNs.InstanceEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.opsworksNs.InstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.opsworksNs.InstanceRootBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -52,7 +52,7 @@ class Instance protected () extends CustomResource {
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTerminationDeviceNameIops]] = js.native
+  val ebsBlockDevices: Output[js.Array[InstanceEbsBlockDevice]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
@@ -67,7 +67,7 @@ class Instance protected () extends CustomResource {
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: Output[js.Array[Anon_DeviceName]] = js.native
+  val ephemeralBlockDevices: Output[js.Array[InstanceEphemeralBlockDevice]] = js.native
   /**
     * The instance's host name.
     */
@@ -120,7 +120,7 @@ class Instance protected () extends CustomResource {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevices: Output[js.Array[Anon_DeleteOnTerminationIops]] = js.native
+  val rootBlockDevices: Output[js.Array[InstanceRootBlockDevice]] = js.native
   /**
     * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
     */

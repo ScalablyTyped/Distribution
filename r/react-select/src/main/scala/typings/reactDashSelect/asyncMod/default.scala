@@ -1,13 +1,14 @@
 package typings.reactDashSelect.asyncMod
 
 import typings.reactDashSelect.srcAsyncMod.Props
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-select/async", "default")
 @js.native
-class default[OptionType] ()
+class default[OptionType /* <: OptionTypeBase */] ()
   extends typings.reactDashSelect.srcAsyncMod.default[OptionType]
 
 /* static members */

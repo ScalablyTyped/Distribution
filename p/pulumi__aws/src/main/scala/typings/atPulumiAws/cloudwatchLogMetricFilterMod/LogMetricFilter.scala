@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchLogMetricFilterMod
 
-import typings.atPulumiAws.Anon_DefaultValue
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.LogMetricFilterMetricTransformation
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class LogMetricFilter protected () extends CustomResource {
     * A block defining collection of information
     * needed to define how metric data gets emitted. See below.
     */
-  val metricTransformation: Output[Anon_DefaultValue] = js.native
+  val metricTransformation: Output[LogMetricFilterMetricTransformation] = js.native
   /**
     * A name for the metric filter.
     */

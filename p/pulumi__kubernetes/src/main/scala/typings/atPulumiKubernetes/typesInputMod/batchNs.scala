@@ -6,10 +6,8 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`batch/v2alpha1`
 import typings.atPulumiKubernetes.typesInputMod.batchNs.v1Ns.Job
 import typings.atPulumiKubernetes.typesInputMod.batchNs.v1Ns.JobCondition
 import typings.atPulumiKubernetes.typesInputMod.batchNs.v1Ns.JobSpec
-import typings.atPulumiKubernetes.typesInputMod.batchNs.v1Ns.JobStatus
 import typings.atPulumiKubernetes.typesInputMod.batchNs.v1beta1Ns.CronJob
 import typings.atPulumiKubernetes.typesInputMod.batchNs.v1beta1Ns.CronJobSpec
-import typings.atPulumiKubernetes.typesInputMod.batchNs.v1beta1Ns.CronJobStatus
 import typings.atPulumiKubernetes.typesInputMod.batchNs.v1beta1Ns.JobTemplateSpec
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ObjectReference
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodTemplateSpec
@@ -35,31 +33,26 @@ object batchNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`batch/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Job]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of a job. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[JobSpec]] = js.undefined
-      /**
-        * Current status of a job. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[JobStatus]] = js.undefined
     }
     
     /**
@@ -100,7 +93,7 @@ object batchNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`batch/v1`]] = js.undefined
       /**
@@ -111,12 +104,12 @@ object batchNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.JobList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -234,31 +227,26 @@ object batchNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`batch/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJob]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of a cron job, including the schedule. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[CronJobSpec]] = js.undefined
-      /**
-        * Current status of a cron job. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[CronJobStatus]] = js.undefined
     }
     
     /**
@@ -269,7 +257,7 @@ object batchNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`batch/v1beta1`]] = js.undefined
       /**
@@ -280,12 +268,12 @@ object batchNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJobList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -351,12 +339,12 @@ object batchNs extends js.Object {
     trait JobTemplateSpec extends js.Object {
       /**
         * Standard object's metadata of the jobs created from this template. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of the job. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[JobSpec]] = js.undefined
     }
@@ -376,31 +364,26 @@ object batchNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`batch/v2alpha1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJob]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of a cron job, including the schedule. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.batchNs.v2alpha1Ns.CronJobSpec]] = js.undefined
-      /**
-        * Current status of a cron job. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.batchNs.v2alpha1Ns.CronJobStatus]] = js.undefined
     }
     
     /**
@@ -411,7 +394,7 @@ object batchNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`batch/v2alpha1`]] = js.undefined
       /**
@@ -424,12 +407,12 @@ object batchNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJobList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -495,12 +478,12 @@ object batchNs extends js.Object {
     trait JobTemplateSpec extends js.Object {
       /**
         * Standard object's metadata of the jobs created from this template. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of the job. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[JobSpec]] = js.undefined
     }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for into-stream
 
-Typings are for version 5.1.0
+Typings are for version 5.1.1
 
 ## Library description:
 Convert a string/promise/array/iterable/buffer/typedarray/arraybuffer/object into a stream

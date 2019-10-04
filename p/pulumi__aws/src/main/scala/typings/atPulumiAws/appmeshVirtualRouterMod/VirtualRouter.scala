@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualRouterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Listener
+import typings.atPulumiAws.typesOutputMod.appmeshNs.VirtualRouterSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class VirtualRouter protected () extends CustomResource {
   /**
     * The virtual router specification to apply.
     */
-  val spec: Output[Anon_Listener] = js.native
+  val spec: Output[VirtualRouterSpec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

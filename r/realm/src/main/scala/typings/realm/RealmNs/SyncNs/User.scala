@@ -2,10 +2,8 @@ package typings.realm.RealmNs.SyncNs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.realm.Anon_Provider
-import typings.realm.Realm
 import typings.realm.RealmNs.Configuration
 import typings.realm.RealmNs.PartialConfiguration
-import typings.realm.RealmNs.Results
 import typings.realm.realmStrings.any
 import typings.realm.realmStrings.currentUser
 import typings.realm.realmStrings.otherUser
@@ -27,21 +25,21 @@ class User () extends js.Object {
   val server: String = js.native
   val token: String = js.native
   def acceptPermissionOffer(token: String): js.Promise[String] = js.native
-  def applyPermissions(condition: PermissionCondition, realmUrl: String, accessLevel: AccessLevel): js.Promise[PermissionChange] = js.native
+  def applyPermissions(condition: PermissionCondition, realmUrl: String, accessLevel: AccessLevel): js.Promise[Unit] = js.native
   def createConfiguration(): Configuration = js.native
   def createConfiguration(config: PartialConfiguration): Configuration = js.native
   @JSName("getGrantedPermissions")
-  def getGrantedPermissions_any(recipient: any): js.Promise[Results[Permission]] = js.native
+  def getGrantedPermissions_any(recipient: any): js.Promise[js.Array[Permission]] = js.native
   @JSName("getGrantedPermissions")
-  def getGrantedPermissions_currentUser(recipient: currentUser): js.Promise[Results[Permission]] = js.native
+  def getGrantedPermissions_currentUser(recipient: currentUser): js.Promise[js.Array[Permission]] = js.native
   @JSName("getGrantedPermissions")
-  def getGrantedPermissions_otherUser(recipient: otherUser): js.Promise[Results[Permission]] = js.native
+  def getGrantedPermissions_otherUser(recipient: otherUser): js.Promise[js.Array[Permission]] = js.native
+  def getPermissionOffers(): js.Promise[js.Array[PermissionOffer]] = js.native
   def invalidatePermissionOffer(permissionOfferOrToken: String): js.Promise[Unit] = js.native
   def invalidatePermissionOffer(permissionOfferOrToken: PermissionOffer): js.Promise[Unit] = js.native
   def logout(): js.Promise[Unit] = js.native
   def offerPermissions(realmUrl: String, accessLevel: AccessLevel): js.Promise[String] = js.native
   def offerPermissions(realmUrl: String, accessLevel: AccessLevel, expiresAt: Date): js.Promise[String] = js.native
-  def openManagementRealm(): Realm = js.native
   def retrieveAccount(provider: String, username: String): js.Promise[Account] = js.native
   def serialize(): SerializedUser | SerializedTokenUser = js.native
 }

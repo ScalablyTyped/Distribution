@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "isbinaryfile" : "4.0.1"
+      "isbinaryfile" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "isbinaryfile" : "4.0.1"
+      "isbinaryfile" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

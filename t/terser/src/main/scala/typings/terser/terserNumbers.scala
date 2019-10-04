@@ -21,6 +21,9 @@ object terserNumbers {
   @js.native
   sealed trait `9` extends ECMA
   
+  @js.native
+  sealed trait `false` extends js.Object
+  
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
   @scala.inline
@@ -31,5 +34,7 @@ object terserNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
+  @scala.inline
+  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

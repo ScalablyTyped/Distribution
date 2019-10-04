@@ -124,7 +124,7 @@ trait WeakValidationMapBasicProps extends js.Object {
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Anon_Html | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null | String]]] = js.undefined
+  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
   var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var draggable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var hasSider: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
@@ -384,7 +384,7 @@ object WeakValidationMapBasicProps {
     dangerouslySetInnerHTML: Validator[js.UndefOr[Anon_Html | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
-    defaultValue: Validator[js.UndefOr[js.Array[String] | Null | String]] = null,
+    defaultValue: Validator[js.UndefOr[js.Array[String] | Double | Null | String]] = null,
     dir: Validator[js.UndefOr[Null | String]] = null,
     draggable: Validator[js.UndefOr[Boolean | Null]] = null,
     hasSider: Validator[js.UndefOr[Boolean | Null]] = null,

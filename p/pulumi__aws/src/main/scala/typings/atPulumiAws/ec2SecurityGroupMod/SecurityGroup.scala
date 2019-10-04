@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2SecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlocks
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SecurityGroupEgress
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -40,13 +41,13 @@ class SecurityGroup protected () extends CustomResource {
     * egress rule. Each egress block supports fields documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val egress: Output[js.Array[Anon_CidrBlocks]] = js.native
+  val egress: Output[js.Array[SecurityGroupEgress]] = js.native
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val ingress: Output[js.Array[Anon_CidrBlocks]] = js.native
+  val ingress: Output[js.Array[SecurityGroupIngress]] = js.native
   /**
     * The name of the security group. If omitted, this provider will
     * assign a random, unique name

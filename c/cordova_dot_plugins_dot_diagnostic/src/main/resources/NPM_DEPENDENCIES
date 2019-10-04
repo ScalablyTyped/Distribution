@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova.plugins.diagnostic" : "5.0.0"
+      "cordova.plugins.diagnostic" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova.plugins.diagnostic" : "5.0.0"
+      "cordova.plugins.diagnostic" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

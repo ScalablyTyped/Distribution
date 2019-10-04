@@ -1,5 +1,7 @@
 package typings.koaDashJoiDashRouter.koaDashJoiDashRouterMod
 
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import typings.koaDashJoiDashRouter.Fn_Middleware
 import typings.koaDashRouter.koaDashRouterMod.IMiddleware
@@ -48,7 +50,7 @@ trait Router extends js.Object {
   def head(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def head(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
   def head(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-  def middleware(): Middleware[_, js.Object] = js.native
+  def middleware(): Middleware[DefaultState, DefaultContext] = js.native
   def options(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
   def options(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def options(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native

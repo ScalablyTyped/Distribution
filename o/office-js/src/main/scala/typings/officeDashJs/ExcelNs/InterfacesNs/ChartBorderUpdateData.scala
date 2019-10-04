@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartBorder object, for use in "chartBorder.set({ ... })". */
+/** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
 trait ChartBorderUpdateData extends js.Object {
   /**
     *

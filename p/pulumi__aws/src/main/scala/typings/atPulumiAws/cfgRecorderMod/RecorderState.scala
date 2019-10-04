@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgRecorderMod
 
-import typings.atPulumiAws.Anon_AllSupportedIncludeGlobalResourceTypes
+import typings.atPulumiAws.typesInputMod.cfgNs.RecorderRecordingGroup
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait RecorderState extends js.Object {
   /**
     * Recording group - see below.
     */
-  val recordingGroup: js.UndefOr[Input[Anon_AllSupportedIncludeGlobalResourceTypes]] = js.undefined
+  val recordingGroup: js.UndefOr[Input[RecorderRecordingGroup]] = js.undefined
   /**
     * Amazon Resource Name (ARN) of the IAM role.
     * used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account.
@@ -27,7 +27,7 @@ object RecorderState {
   @scala.inline
   def apply(
     name: Input[String] = null,
-    recordingGroup: Input[Anon_AllSupportedIncludeGlobalResourceTypes] = null,
+    recordingGroup: Input[RecorderRecordingGroup] = null,
     roleArn: Input[String] = null
   ): RecorderState = {
     val __obj = js.Dynamic.literal()

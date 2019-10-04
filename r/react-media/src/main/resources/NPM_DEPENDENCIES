@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-media" : "1.9.2"
+      "react-media" : "1.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-media" : "1.9.2"
+      "react-media" : "1.10.0"
     }
   ],
   "compile-devDependencies" : [

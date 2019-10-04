@@ -1,5 +1,6 @@
 package typings.gitlab.distServicesProjectsMod
 
+import typings.gitlab.Anon_ForkedFromId
 import typings.gitlab.Anon_Metadata
 import typings.gitlab.Anon_UserId
 import typings.gitlab.distInfrastructureMod.BaseRequestOptions
@@ -27,7 +28,7 @@ trait Projects extends BaseService {
   def events(projectId: ProjectId): js.Promise[GetResponse] = js.native
   def events(projectId: ProjectId, options: BaseRequestOptions with EventOptions): js.Promise[GetResponse] = js.native
   def fork(projectId: ProjectId): js.Promise[js.Object] = js.native
-  def fork(projectId: ProjectId, options: BaseRequestOptions): js.Promise[js.Object] = js.native
+  def fork(projectId: ProjectId, hasForkedFromIdOptions: Anon_ForkedFromId with BaseRequestOptions): js.Promise[js.Object] = js.native
   def forks(projectId: ProjectId): js.Promise[GetResponse] = js.native
   def forks(projectId: ProjectId, options: BaseRequestOptions): js.Promise[GetResponse] = js.native
   def languages(projectId: ProjectId): js.Promise[GetResponse] = js.native

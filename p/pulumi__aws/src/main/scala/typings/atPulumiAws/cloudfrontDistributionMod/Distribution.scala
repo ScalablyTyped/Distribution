@@ -1,14 +1,14 @@
 package typings.atPulumiAws.cloudfrontDistributionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcmCertificateArn
-import typings.atPulumiAws.Anon_AllowedMethods
-import typings.atPulumiAws.Anon_AllowedMethodsCachedMethods
-import typings.atPulumiAws.Anon_BucketIncludeCookies
-import typings.atPulumiAws.Anon_CustomHeaders
-import typings.atPulumiAws.Anon_ErrorCachingMinTtl
-import typings.atPulumiAws.Anon_FailoverCriteria
-import typings.atPulumiAws.Anon_GeoRestriction
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionCustomErrorResponse
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionDefaultCacheBehavior
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionLoggingConfig
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionOrderedCacheBehavior
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionOrigin
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionOriginGroup
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionRestrictions
+import typings.atPulumiAws.typesOutputMod.cloudfrontNs.DistributionViewerCertificate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -58,12 +58,12 @@ class Distribution protected () extends CustomResource {
   /**
     * One or more custom error response elements (multiples allowed).
     */
-  val customErrorResponses: Output[js.UndefOr[js.Array[Anon_ErrorCachingMinTtl]]] = js.native
+  val customErrorResponses: Output[js.UndefOr[js.Array[DistributionCustomErrorResponse]]] = js.native
   /**
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: Output[Anon_AllowedMethods] = js.native
+  val defaultCacheBehavior: Output[DistributionDefaultCacheBehavior] = js.native
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
@@ -114,23 +114,23 @@ class Distribution protected () extends CustomResource {
     * configuration that controls how logs are written
     * to your distribution (maximum one).
     */
-  val loggingConfig: Output[js.UndefOr[Anon_BucketIncludeCookies]] = js.native
+  val loggingConfig: Output[js.UndefOr[DistributionLoggingConfig]] = js.native
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
     * in order of precedence. The topmost cache behavior will have precedence 0.
     */
-  val orderedCacheBehaviors: Output[js.UndefOr[js.Array[Anon_AllowedMethodsCachedMethods]]] = js.native
+  val orderedCacheBehaviors: Output[js.UndefOr[js.Array[DistributionOrderedCacheBehavior]]] = js.native
   /**
     * One or more originGroup for this
     * distribution (multiples allowed).
     */
-  val originGroups: Output[js.UndefOr[js.Array[Anon_FailoverCriteria]]] = js.native
+  val originGroups: Output[js.UndefOr[js.Array[DistributionOriginGroup]]] = js.native
   /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
-  val origins: Output[js.Array[Anon_CustomHeaders]] = js.native
+  val origins: Output[js.Array[DistributionOrigin]] = js.native
   /**
     * The price class for this distribution. One of
     * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
@@ -140,7 +140,7 @@ class Distribution protected () extends CustomResource {
     * The restriction
     * configuration for this distribution (maximum one).
     */
-  val restrictions: Output[Anon_GeoRestriction] = js.native
+  val restrictions: Output[DistributionRestrictions] = js.native
   /**
     * Disables the distribution instead of
     * deleting it when destroying the resource. If this is set,
@@ -162,7 +162,7 @@ class Distribution protected () extends CustomResource {
     * configuration for this distribution (maximum
     * one).
     */
-  val viewerCertificate: Output[Anon_AcmCertificateArn] = js.native
+  val viewerCertificate: Output[DistributionViewerCertificate] = js.native
   /**
     * If enabled, the resource will wait for
     * the distribution status to change from `InProgress` to `Deployed`. Setting

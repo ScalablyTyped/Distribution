@@ -1,6 +1,8 @@
 package typings.koaDashLog
 
 import typings.koa.koaMod.BaseContext
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-log", JSImport.Namespace)
 @js.native
 object koaDashLogMod extends js.Object {
-  def apply(`type`: String): Middleware[_, js.Object] = js.native
+  def apply(`type`: String): Middleware[DefaultState, DefaultContext] = js.native
   @JSName("morgan")
   @js.native
   object morganNs extends js.Object {

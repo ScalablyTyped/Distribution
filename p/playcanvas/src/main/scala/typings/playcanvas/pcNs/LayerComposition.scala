@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.LayerComposition
+  * @extends pc.EventHandler
   * @classdesc Layer Composition is a collection of {@link pc.Layer} that is fed to {@link pc.Scene#layers} to define rendering order.
   * @description Create a new layer composition.
   * @property {pc.Layer[]} layerList A read-only array of {@link pc.Layer} sorted in the order they will be rendered.
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.LayerComposition")
 @js.native
-class LayerComposition () extends js.Object {
+class LayerComposition () extends EventHandler {
   /**
     * A read-only array of {@link pc.CameraComponent} that can be used during rendering, e.g. inside
     * {@link pc.Layer#onPreCull}, {@link pc.Layer#onPostCull}, {@link pc.Layer#onPreRender}, {@link pc.Layer#onPostRender}.

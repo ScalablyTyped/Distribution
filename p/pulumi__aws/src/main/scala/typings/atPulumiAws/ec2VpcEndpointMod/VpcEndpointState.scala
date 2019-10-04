@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2VpcEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DnsNameHostedZoneId
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpcEndpointDnsEntry
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait VpcEndpointState extends js.Object {
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: js.UndefOr[Input[js.Array[Input[Anon_DnsNameHostedZoneId]]]] = js.undefined
+  val dnsEntries: js.UndefOr[Input[js.Array[Input[VpcEndpointDnsEntry]]]] = js.undefined
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
     */
@@ -84,7 +84,7 @@ object VpcEndpointState {
   def apply(
     autoAccept: Input[Boolean] = null,
     cidrBlocks: Input[js.Array[Input[String]]] = null,
-    dnsEntries: Input[js.Array[Input[Anon_DnsNameHostedZoneId]]] = null,
+    dnsEntries: Input[js.Array[Input[VpcEndpointDnsEntry]]] = null,
     networkInterfaceIds: Input[js.Array[Input[String]]] = null,
     ownerId: Input[String] = null,
     policy: Input[String] = null,

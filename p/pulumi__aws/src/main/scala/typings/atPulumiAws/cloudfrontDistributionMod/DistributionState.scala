@@ -1,14 +1,14 @@
 package typings.atPulumiAws.cloudfrontDistributionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcmCertificateArnCloudfrontDefaultCertificate
-import typings.atPulumiAws.Anon_AllowedMethodsCachedMethodsCompress
-import typings.atPulumiAws.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl
-import typings.atPulumiAws.Anon_BucketIncludeCookiesPrefix
-import typings.atPulumiAws.Anon_CustomHeadersCustomOriginConfig
-import typings.atPulumiAws.Anon_ErrorCachingMinTtlErrorCode
-import typings.atPulumiAws.Anon_FailoverCriteriaMembers
-import typings.atPulumiAws.Anon_GeoRestrictionAnonLocationsRestrictionType
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionCustomErrorResponse
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionDefaultCacheBehavior
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionLoggingConfig
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOrderedCacheBehavior
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOrigin
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOriginGroup
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionRestrictions
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionViewerCertificate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,12 +43,12 @@ trait DistributionState extends js.Object {
   /**
     * One or more custom error response elements (multiples allowed).
     */
-  val customErrorResponses: js.UndefOr[Input[js.Array[Input[Anon_ErrorCachingMinTtlErrorCode]]]] = js.undefined
+  val customErrorResponses: js.UndefOr[Input[js.Array[Input[DistributionCustomErrorResponse]]]] = js.undefined
   /**
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: js.UndefOr[Input[Anon_AllowedMethodsCachedMethodsCompress]] = js.undefined
+  val defaultCacheBehavior: js.UndefOr[Input[DistributionDefaultCacheBehavior]] = js.undefined
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
@@ -99,23 +99,23 @@ trait DistributionState extends js.Object {
     * configuration that controls how logs are written
     * to your distribution (maximum one).
     */
-  val loggingConfig: js.UndefOr[Input[Anon_BucketIncludeCookiesPrefix]] = js.undefined
+  val loggingConfig: js.UndefOr[Input[DistributionLoggingConfig]] = js.undefined
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
     * in order of precedence. The topmost cache behavior will have precedence 0.
     */
-  val orderedCacheBehaviors: js.UndefOr[Input[js.Array[Input[Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]]]] = js.undefined
+  val orderedCacheBehaviors: js.UndefOr[Input[js.Array[Input[DistributionOrderedCacheBehavior]]]] = js.undefined
   /**
     * One or more originGroup for this
     * distribution (multiples allowed).
     */
-  val originGroups: js.UndefOr[Input[js.Array[Input[Anon_FailoverCriteriaMembers]]]] = js.undefined
+  val originGroups: js.UndefOr[Input[js.Array[Input[DistributionOriginGroup]]]] = js.undefined
   /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
-  val origins: js.UndefOr[Input[js.Array[Input[Anon_CustomHeadersCustomOriginConfig]]]] = js.undefined
+  val origins: js.UndefOr[Input[js.Array[Input[DistributionOrigin]]]] = js.undefined
   /**
     * The price class for this distribution. One of
     * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
@@ -125,7 +125,7 @@ trait DistributionState extends js.Object {
     * The restriction
     * configuration for this distribution (maximum one).
     */
-  val restrictions: js.UndefOr[Input[Anon_GeoRestrictionAnonLocationsRestrictionType]] = js.undefined
+  val restrictions: js.UndefOr[Input[DistributionRestrictions]] = js.undefined
   /**
     * Disables the distribution instead of
     * deleting it when destroying the resource. If this is set,
@@ -147,7 +147,7 @@ trait DistributionState extends js.Object {
     * configuration for this distribution (maximum
     * one).
     */
-  val viewerCertificate: js.UndefOr[Input[Anon_AcmCertificateArnCloudfrontDefaultCertificate]] = js.undefined
+  val viewerCertificate: js.UndefOr[Input[DistributionViewerCertificate]] = js.undefined
   /**
     * If enabled, the resource will wait for
     * the distribution status to change from `InProgress` to `Deployed`. Setting
@@ -172,8 +172,8 @@ object DistributionState {
     arn: Input[String] = null,
     callerReference: Input[String] = null,
     comment: Input[String] = null,
-    customErrorResponses: Input[js.Array[Input[Anon_ErrorCachingMinTtlErrorCode]]] = null,
-    defaultCacheBehavior: Input[Anon_AllowedMethodsCachedMethodsCompress] = null,
+    customErrorResponses: Input[js.Array[Input[DistributionCustomErrorResponse]]] = null,
+    defaultCacheBehavior: Input[DistributionDefaultCacheBehavior] = null,
     defaultRootObject: Input[String] = null,
     domainName: Input[String] = null,
     enabled: Input[Boolean] = null,
@@ -183,16 +183,16 @@ object DistributionState {
     inProgressValidationBatches: Input[Double] = null,
     isIpv6Enabled: Input[Boolean] = null,
     lastModifiedTime: Input[String] = null,
-    loggingConfig: Input[Anon_BucketIncludeCookiesPrefix] = null,
-    orderedCacheBehaviors: Input[js.Array[Input[Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]]] = null,
-    originGroups: Input[js.Array[Input[Anon_FailoverCriteriaMembers]]] = null,
-    origins: Input[js.Array[Input[Anon_CustomHeadersCustomOriginConfig]]] = null,
+    loggingConfig: Input[DistributionLoggingConfig] = null,
+    orderedCacheBehaviors: Input[js.Array[Input[DistributionOrderedCacheBehavior]]] = null,
+    originGroups: Input[js.Array[Input[DistributionOriginGroup]]] = null,
+    origins: Input[js.Array[Input[DistributionOrigin]]] = null,
     priceClass: Input[String] = null,
-    restrictions: Input[Anon_GeoRestrictionAnonLocationsRestrictionType] = null,
+    restrictions: Input[DistributionRestrictions] = null,
     retainOnDelete: Input[Boolean] = null,
     status: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
-    viewerCertificate: Input[Anon_AcmCertificateArnCloudfrontDefaultCertificate] = null,
+    viewerCertificate: Input[DistributionViewerCertificate] = null,
     waitForDeployment: Input[Boolean] = null,
     webAclId: Input[String] = null
   ): DistributionState = {

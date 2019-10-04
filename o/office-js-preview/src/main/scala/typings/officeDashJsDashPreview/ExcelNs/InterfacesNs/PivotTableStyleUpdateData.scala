@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the PivotTableStyle object, for use in "pivotTableStyle.set({ ... })". */
+/** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
 trait PivotTableStyleUpdateData extends js.Object {
   /**
     *

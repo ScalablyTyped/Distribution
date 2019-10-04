@@ -1,7 +1,7 @@
 
 # Scala.js typings for 7zip-bin
 
-Typings are for version 4.1.0
+Typings are for version 5.0.3
 
 ## Library description:
 7-Zip precompiled binaries

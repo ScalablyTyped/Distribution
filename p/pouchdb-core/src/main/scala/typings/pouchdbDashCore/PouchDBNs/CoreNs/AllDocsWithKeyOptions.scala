@@ -21,7 +21,8 @@ object AllDocsWithKeyOptions {
     fetch: Fetch = null,
     include_docs: js.UndefOr[Boolean] = js.undefined,
     limit: Int | Double = null,
-    skip: Int | Double = null
+    skip: Int | Double = null,
+    update_seq: js.UndefOr[Boolean] = js.undefined
   ): AllDocsWithKeyOptions = {
     val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
@@ -32,6 +33,7 @@ object AllDocsWithKeyOptions {
     if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
     __obj.asInstanceOf[AllDocsWithKeyOptions]
   }
 }

@@ -6,16 +6,25 @@ import scala.scalajs.js.annotation._
 
 object kendoDashUiStrings {
   @js.native
+  sealed trait continuous extends js.Object
+  
+  @js.native
   sealed trait create extends js.Object
   
   @js.native
   sealed trait destroy extends js.Object
   
   @js.native
+  sealed trait half extends js.Object
+  
+  @js.native
   sealed trait incell extends js.Object
   
   @js.native
   sealed trait `inline` extends js.Object
+  
+  @js.native
+  sealed trait item extends js.Object
   
   @js.native
   sealed trait kendoAlert extends js.Object
@@ -94,6 +103,9 @@ object kendoDashUiStrings {
   
   @js.native
   sealed trait kendoEditor extends js.Object
+  
+  @js.native
+  sealed trait kendoFilter extends js.Object
   
   @js.native
   sealed trait kendoFilterMenu extends js.Object
@@ -237,6 +249,9 @@ object kendoDashUiStrings {
   sealed trait kendoRangeSlider extends js.Object
   
   @js.native
+  sealed trait kendoRating extends js.Object
+  
+  @js.native
   sealed trait kendoResponsivePanel extends js.Object
   
   @js.native
@@ -273,6 +288,9 @@ object kendoDashUiStrings {
   sealed trait kendoTimePicker extends js.Object
   
   @js.native
+  sealed trait kendoTimeline extends js.Object
+  
+  @js.native
   sealed trait kendoToolBar extends js.Object
   
   @js.native
@@ -306,16 +324,25 @@ object kendoDashUiStrings {
   sealed trait read extends js.Object
   
   @js.native
+  sealed trait single extends js.Object
+  
+  @js.native
   sealed trait update extends js.Object
   
+  @scala.inline
+  def continuous: continuous = "continuous".asInstanceOf[continuous]
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
+  def half: half = "half".asInstanceOf[half]
+  @scala.inline
   def incell: incell = "incell".asInstanceOf[incell]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
+  def item: item = "item".asInstanceOf[item]
   @scala.inline
   def kendoAlert: kendoAlert = "kendoAlert".asInstanceOf[kendoAlert]
   @scala.inline
@@ -368,6 +395,8 @@ object kendoDashUiStrings {
   def kendoDropTargetArea: kendoDropTargetArea = "kendoDropTargetArea".asInstanceOf[kendoDropTargetArea]
   @scala.inline
   def kendoEditor: kendoEditor = "kendoEditor".asInstanceOf[kendoEditor]
+  @scala.inline
+  def kendoFilter: kendoFilter = "kendoFilter".asInstanceOf[kendoFilter]
   @scala.inline
   def kendoFilterMenu: kendoFilterMenu = "kendoFilterMenu".asInstanceOf[kendoFilterMenu]
   @scala.inline
@@ -463,6 +492,8 @@ object kendoDashUiStrings {
   @scala.inline
   def kendoRangeSlider: kendoRangeSlider = "kendoRangeSlider".asInstanceOf[kendoRangeSlider]
   @scala.inline
+  def kendoRating: kendoRating = "kendoRating".asInstanceOf[kendoRating]
+  @scala.inline
   def kendoResponsivePanel: kendoResponsivePanel = "kendoResponsivePanel".asInstanceOf[kendoResponsivePanel]
   @scala.inline
   def kendoScheduler: kendoScheduler = "kendoScheduler".asInstanceOf[kendoScheduler]
@@ -487,6 +518,8 @@ object kendoDashUiStrings {
   @scala.inline
   def kendoTimePicker: kendoTimePicker = "kendoTimePicker".asInstanceOf[kendoTimePicker]
   @scala.inline
+  def kendoTimeline: kendoTimeline = "kendoTimeline".asInstanceOf[kendoTimeline]
+  @scala.inline
   def kendoToolBar: kendoToolBar = "kendoToolBar".asInstanceOf[kendoToolBar]
   @scala.inline
   def kendoTooltip: kendoTooltip = "kendoTooltip".asInstanceOf[kendoTooltip]
@@ -508,6 +541,8 @@ object kendoDashUiStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def read: read = "read".asInstanceOf[read]
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
 }

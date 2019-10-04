@@ -5,6 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Title extends js.Object {
+  /**
+    * Title of the shared page. Note that if Pocket detects a title tag
+    * on the page being saved, this parameter will be ignored
+    * and the title tag of the saved page will be used instead.
+    */
   var title: js.UndefOr[String] = js.undefined
 }
 

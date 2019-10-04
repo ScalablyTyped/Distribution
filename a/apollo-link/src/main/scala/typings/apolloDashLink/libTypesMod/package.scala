@@ -20,7 +20,7 @@ package object libTypesMod {
   ]
   type RequestHandler = js.Function2[
     /* operation */ Operation, 
-    /* forward */ js.UndefOr[NextLink], 
+    /* forward */ NextLink, 
     (Observable[
       FetchResult[StringDictionary[js.Any], Record[String, js.Any], Record[String, js.Any]]
     ]) | Null

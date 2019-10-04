@@ -32,6 +32,12 @@ object reactDashRouterStrings {
   @js.native
   sealed trait matchPath extends js.Object
   
+  @js.native
+  sealed trait useParams extends js.Object
+  
+  @js.native
+  sealed trait useRouteMatch extends js.Object
+  
   @scala.inline
   def Anon_History: Anon_History = "Anon_History".asInstanceOf[Anon_History]
   @scala.inline
@@ -50,5 +56,9 @@ object reactDashRouterStrings {
   def `match`: `match` = "match".asInstanceOf[`match`]
   @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
+  @scala.inline
+  def useParams: useParams = "useParams".asInstanceOf[useParams]
+  @scala.inline
+  def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
 }
 

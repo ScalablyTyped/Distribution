@@ -16,6 +16,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJobList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.CustomResourceDefinitionList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSetList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.DeploymentList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSliceList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointsList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.EventList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscalerList
@@ -51,14 +52,23 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSetList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.Status
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.StorageClassList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.SubjectAccessReview
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.TokenRequest
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.TokenReview
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.ValidatingWebhookConfigurationList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1beta1`
@@ -104,6 +114,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta2`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1/TokenRequest`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1/TokenReview`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1beta1/TokenReview`
@@ -145,6 +156,9 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sD
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1alpha1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1/EventList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1/Event`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1`
@@ -270,6 +284,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`v1/ServiceList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`v1/Service`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`v1/Status`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.action
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.address_type
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.aggregation_rule
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.allow_volume_expansion
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.allowed_topologies
@@ -286,6 +301,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.deprecated_last_time
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.deprecated_source
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.description
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.details
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.endpoints
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.event_time
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.first_timestamp
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.global_default
@@ -299,7 +315,9 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.message
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.metadata
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.mount_options
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.note
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.overhead
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.parameters
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.ports
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.preemption_policy
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.provisioner
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.reason
@@ -312,6 +330,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.reporting_instance
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.revision
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.role_ref
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rules
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.scheduling
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.secrets
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.series
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.source
@@ -326,13 +345,13 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.value
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.volume_binding_mode
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.webhooks
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
-import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
-import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionSpec
-import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionStatus
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.MutatingWebhook
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.MutatingWebhookConfiguration
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.ValidatingWebhook
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfiguration
+import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1Ns.CustomResourceDefinition
+import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1Ns.CustomResourceDefinitionSpec
+import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1Ns.CustomResourceDefinitionStatus
 import typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1Ns.APIService
 import typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1Ns.APIServiceSpec
 import typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1Ns.APIServiceStatus
@@ -351,6 +370,8 @@ import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.StatefulSetSpec
 import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.StatefulSetStatus
 import typings.atPulumiKubernetes.typesOutputMod.auditregistrationNs.v1alpha1Ns.AuditSink
 import typings.atPulumiKubernetes.typesOutputMod.auditregistrationNs.v1alpha1Ns.AuditSinkSpec
+import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenRequestSpec
+import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenRequestStatus
 import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenReviewSpec
 import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenReviewStatus
 import typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1Ns.SelfSubjectAccessReviewSpec
@@ -411,6 +432,9 @@ import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ServiceAccount
 import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ServiceSpec
 import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ServiceStatus
 import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.TopologySelectorTerm
+import typings.atPulumiKubernetes.typesOutputMod.discoveryNs.v1alpha1Ns.Endpoint
+import typings.atPulumiKubernetes.typesOutputMod.discoveryNs.v1alpha1Ns.EndpointPort
+import typings.atPulumiKubernetes.typesOutputMod.discoveryNs.v1alpha1Ns.EndpointSlice
 import typings.atPulumiKubernetes.typesOutputMod.eventsNs.v1beta1Ns.Event
 import typings.atPulumiKubernetes.typesOutputMod.eventsNs.v1beta1Ns.EventSeries
 import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.Ingress
@@ -425,7 +449,8 @@ import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ObjectMeta
 import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.StatusDetails
 import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1alpha1Ns.RuntimeClass
 import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1alpha1Ns.RuntimeClassSpec
-import typings.atPulumiKubernetes.typesOutputMod.pkgNs.runtimeNs.RawExtension
+import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.Overhead
+import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.Scheduling
 import typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodDisruptionBudget
 import typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodDisruptionBudgetSpec
 import typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodDisruptionBudgetStatus
@@ -472,45 +497,45 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getCustomResource[T /* <: CustomResource */](groupVersionKind: String, namespace: String): Output[T] = js.native
   def getCustomResource[T /* <: CustomResource */](groupVersionKind: String, namespace: String, name: String): Output[T] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     name: String,
     property: api_version
-  ): Output[`admissionregistrationDOTk8sDOTio/v1beta1`] = js.native
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     name: String,
     property: items
   ): Output[js.Array[MutatingWebhookConfiguration]] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     name: String,
     property: kind
   ): Output[MutatingWebhookConfigurationList] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     name: String,
     property: metadata
   ): Output[ListMeta] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     namespace: String,
     name: String,
     property: api_version
-  ): Output[`admissionregistrationDOTk8sDOTio/v1beta1`] = js.native
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     namespace: String,
     name: String,
     property: items
   ): Output[js.Array[MutatingWebhookConfiguration]] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     namespace: String,
     name: String,
     property: kind
   ): Output[MutatingWebhookConfigurationList] = js.native
   def getResourceProperty(
-    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     namespace: String,
     name: String,
     property: metadata
@@ -522,6 +547,198 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     *     getResourceProperty("v1/Service", "nginx", "spec")
     */
   def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    name: String,
+    property: kind
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesStrings.MutatingWebhookConfiguration
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    name: String,
+    property: webhooks
+  ): Output[js.Array[MutatingWebhook]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesStrings.MutatingWebhookConfiguration
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: webhooks
+  ): Output[js.Array[MutatingWebhook]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    name: String,
+    property: items
+  ): Output[js.Array[ValidatingWebhookConfiguration]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    name: String,
+    property: kind
+  ): Output[ValidatingWebhookConfigurationList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[js.Array[ValidatingWebhookConfiguration]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[ValidatingWebhookConfigurationList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    name: String,
+    property: kind
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesStrings.ValidatingWebhookConfiguration
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    name: String,
+    property: webhooks
+  ): Output[js.Array[ValidatingWebhook]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesStrings.ValidatingWebhookConfiguration
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    namespace: String,
+    name: String,
+    property: webhooks
+  ): Output[js.Array[ValidatingWebhook]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1beta1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    name: String,
+    property: items
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
+    ]
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    name: String,
+    property: kind
+  ): Output[MutatingWebhookConfigurationList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`admissionregistrationDOTk8sDOTio/v1beta1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
+    ]
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[MutatingWebhookConfigurationList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
     name: String,
     property: api_version
@@ -542,7 +759,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
     name: String,
     property: webhooks
-  ): Output[js.Array[MutatingWebhook]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
     namespace: String,
@@ -568,7 +789,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: webhooks
-  ): Output[js.Array[MutatingWebhook]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
     name: String,
@@ -578,7 +803,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
     name: String,
     property: items
-  ): Output[js.Array[ValidatingWebhookConfiguration]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
     name: String,
@@ -600,7 +829,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[ValidatingWebhookConfiguration]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
     namespace: String,
@@ -634,7 +867,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
     name: String,
     property: webhooks
-  ): Output[js.Array[ValidatingWebhook]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
     namespace: String,
@@ -660,7 +897,110 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: webhooks
-  ): Output[js.Array[ValidatingWebhook]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
+    ]
+  ] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    name: String,
+    property: api_version
+  ): Output[`apiextensionsDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    name: String,
+    property: items
+  ): Output[js.Array[CustomResourceDefinition]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    name: String,
+    property: kind
+  ): Output[CustomResourceDefinitionList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`apiextensionsDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[js.Array[CustomResourceDefinition]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[CustomResourceDefinitionList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    name: String,
+    property: api_version
+  ): Output[`apiextensionsDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CustomResourceDefinition] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    name: String,
+    property: spec
+  ): Output[CustomResourceDefinitionSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    name: String,
+    property: status
+  ): Output[CustomResourceDefinitionStatus] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`apiextensionsDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CustomResourceDefinition] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    namespace: String,
+    name: String,
+    property: spec
+  ): Output[CustomResourceDefinitionSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    namespace: String,
+    name: String,
+    property: status
+  ): Output[CustomResourceDefinitionStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
     name: String,
@@ -670,7 +1010,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
     name: String,
     property: items
-  ): Output[js.Array[CustomResourceDefinition]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
     name: String,
@@ -692,7 +1036,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[CustomResourceDefinition]] = js.native
+  ): Output[
+    js.Array[
+      typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
+    ]
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
     namespace: String,
@@ -724,12 +1072,16 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
     name: String,
     property: spec
-  ): Output[CustomResourceDefinitionSpec] = js.native
+  ): Output[
+    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionSpec
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
     name: String,
     property: status
-  ): Output[CustomResourceDefinitionStatus] = js.native
+  ): Output[
+    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionStatus
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
     namespace: String,
@@ -753,13 +1105,17 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[CustomResourceDefinitionSpec] = js.native
+  ): Output[
+    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionSpec
+  ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
     namespace: String,
     name: String,
     property: status
-  ): Output[CustomResourceDefinitionStatus] = js.native
+  ): Output[
+    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionStatus
+  ] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1/APIServiceList`, name: String, property: api_version): Output[`apiregistrationDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1/APIServiceList`, name: String, property: items): Output[js.Array[APIService]] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1/APIServiceList`, name: String, property: kind): Output[APIServiceList] = js.native
@@ -1083,7 +1439,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: metadata
   ): Output[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, name: String, property: api_version): Output[`apps/v1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, name: String, property: data): Output[RawExtension] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, name: String, property: data): Output[js.Object] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, name: String, property: metadata): Output[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, name: String, property: revision): Output[Double] = js.native
@@ -1093,7 +1449,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, namespace: String, name: String, property: data): Output[RawExtension] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, namespace: String, name: String, property: data): Output[js.Object] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevision`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1/ControllerRevision`,
@@ -1217,7 +1573,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: metadata
   ): Output[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String, property: api_version): Output[`apps/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String, property: data): Output[RawExtension] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String, property: data): Output[js.Object] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String, property: metadata): Output[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String, property: revision): Output[Double] = js.native
@@ -1232,7 +1588,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: data
-  ): Output[RawExtension] = js.native
+  ): Output[js.Object] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta1/ControllerRevision`,
     namespace: String,
@@ -1350,7 +1706,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: metadata
   ): Output[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String, property: data): Output[RawExtension] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String, property: data): Output[js.Object] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String, property: metadata): Output[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String, property: revision): Output[Double] = js.native
@@ -1365,7 +1721,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: data
-  ): Output[RawExtension] = js.native
+  ): Output[js.Object] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/ControllerRevision`,
     namespace: String,
@@ -1591,6 +1947,41 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[AuditSinkSpec] = js.native
+  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String, property: api_version): Output[`authenticationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String, property: kind): Output[TokenRequest] = js.native
+  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String, property: metadata): Output[ObjectMeta] = js.native
+  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String, property: spec): Output[TokenRequestSpec] = js.native
+  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String, property: status): Output[TokenRequestStatus] = js.native
+  def getResourceProperty(
+    groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`authenticationDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[TokenRequest] = js.native
+  def getResourceProperty(
+    groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`,
+    namespace: String,
+    name: String,
+    property: spec
+  ): Output[TokenRequestSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`,
+    namespace: String,
+    name: String,
+    property: status
+  ): Output[TokenRequestStatus] = js.native
   def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, name: String, property: api_version): Output[`authenticationDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, name: String, property: kind): Output[TokenReview] = js.native
   def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, name: String, property: metadata): Output[ObjectMeta] = js.native
@@ -2674,6 +3065,92 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1beta1Ns.LeaseSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    name: String,
+    property: api_version
+  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String, property: items): Output[js.Array[EndpointSlice]] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String, property: kind): Output[EndpointSliceList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[js.Array[EndpointSlice]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[EndpointSliceList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    name: String,
+    property: address_type
+  ): Output[String] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    name: String,
+    property: api_version
+  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: endpoints): Output[js.Array[Endpoint]] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSlice] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: metadata): Output[ObjectMeta] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: ports): Output[js.Array[EndpointPort]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    namespace: String,
+    name: String,
+    property: address_type
+  ): Output[String] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    namespace: String,
+    name: String,
+    property: api_version
+  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    namespace: String,
+    name: String,
+    property: endpoints
+  ): Output[js.Array[Endpoint]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSlice] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    namespace: String,
+    name: String,
+    property: ports
+  ): Output[js.Array[EndpointPort]] = js.native
   def getResourceProperty(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, name: String, property: api_version): Output[`eventsDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, name: String, property: items): Output[js.Array[Event]] = js.native
   def getResourceProperty(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, name: String, property: kind): Output[EventList] = js.native
@@ -3391,6 +3868,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String, property: handler): Output[String] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.RuntimeClass] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String, property: metadata): Output[ObjectMeta] = js.native
+  def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String, property: overhead): Output[Overhead] = js.native
+  def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String, property: scheduling): Output[Scheduling] = js.native
   def getResourceProperty(
     groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`,
     namespace: String,
@@ -3415,6 +3894,18 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`,
+    namespace: String,
+    name: String,
+    property: overhead
+  ): Output[Overhead] = js.native
+  def getResourceProperty(
+    groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`,
+    namespace: String,
+    name: String,
+    property: scheduling
+  ): Output[Scheduling] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodDisruptionBudgetList`, name: String, property: api_version): Output[`policy/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodDisruptionBudgetList`, name: String, property: items): Output[js.Array[PodDisruptionBudget]] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodDisruptionBudgetList`, name: String, property: kind): Output[PodDisruptionBudgetList] = js.native
@@ -5977,6 +6468,63 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     *     getResource("apps/v1/Deployment", "nginx")
     */
   @JSName("getResource")
+  def getResource_admissionregistrationk8siov1MutatingWebhookConfiguration(groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfiguration
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1MutatingWebhookConfiguration(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfiguration
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1MutatingWebhookConfigurationList(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfigurationList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1MutatingWebhookConfigurationList(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfigurationList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1ValidatingWebhookConfiguration(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfiguration
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1ValidatingWebhookConfiguration(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfiguration
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1ValidatingWebhookConfigurationList(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfigurationList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_admissionregistrationk8siov1ValidatingWebhookConfigurationList(
+    groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfigurationList
+  ] = js.native
+  @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1MutatingWebhookConfiguration(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
     name: String
@@ -6035,6 +6583,30 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String
   ): Output[
     typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_apiextensionsk8siov1CustomResourceDefinition(groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinition
+  ] = js.native
+  @JSName("getResource")
+  def getResource_apiextensionsk8siov1CustomResourceDefinition(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinition
+  ] = js.native
+  @JSName("getResource")
+  def getResource_apiextensionsk8siov1CustomResourceDefinitionList(groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinitionList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_apiextensionsk8siov1CustomResourceDefinitionList(
+    groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinitionList
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1beta1CustomResourceDefinition(groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`, name: String): Output[
@@ -6285,6 +6857,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistrationNs.v1alpha1Ns.AuditSinkList
   ] = js.native
   @JSName("getResource")
+  def getResource_authenticationk8siov1TokenRequest(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenRequest
+  ] = js.native
+  @JSName("getResource")
+  def getResource_authenticationk8siov1TokenRequest(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, namespace: String, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenRequest
+  ] = js.native
+  @JSName("getResource")
   def getResource_authenticationk8siov1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, name: String): Output[
     typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenReview
   ] = js.native
@@ -6519,6 +7099,26 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   @JSName("getResource")
   def getResource_coordinationk8siov1beta1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, namespace: String, name: String): Output[
     typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1beta1Ns.LeaseList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_discoveryk8siov1alpha1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSlice
+  ] = js.native
+  @JSName("getResource")
+  def getResource_discoveryk8siov1alpha1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, namespace: String, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSlice
+  ] = js.native
+  @JSName("getResource")
+  def getResource_discoveryk8siov1alpha1EndpointSliceList(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSliceList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_discoveryk8siov1alpha1EndpointSliceList(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSliceList
   ] = js.native
   @JSName("getResource")
   def getResource_eventsk8siov1beta1Event(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/Event`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.eventsNs.v1beta1Ns.Event] = js.native

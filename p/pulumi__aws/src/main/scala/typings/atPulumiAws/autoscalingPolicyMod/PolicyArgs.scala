@@ -1,7 +1,7 @@
 package typings.atPulumiAws.autoscalingPolicyMod
 
-import typings.atPulumiAws.Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
-import typings.atPulumiAws.Anon_MetricIntervalLowerBoundMetricIntervalUpperBound
+import typings.atPulumiAws.typesInputMod.autoscalingNs.PolicyStepAdjustment
+import typings.atPulumiAws.typesInputMod.autoscalingNs.PolicyTargetTrackingConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,15 +43,11 @@ trait PolicyArgs extends js.Object {
     * up. A negative value scales down.
     */
   val scalingAdjustment: js.UndefOr[Input[Double]] = js.undefined
-  val stepAdjustments: js.UndefOr[Input[js.Array[Input[Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]]]] = js.undefined
+  val stepAdjustments: js.UndefOr[Input[js.Array[Input[PolicyStepAdjustment]]]] = js.undefined
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: js.UndefOr[
-    Input[
-      Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
-    ]
-  ] = js.undefined
+  val targetTrackingConfiguration: js.UndefOr[Input[PolicyTargetTrackingConfiguration]] = js.undefined
 }
 
 object PolicyArgs {
@@ -66,10 +62,8 @@ object PolicyArgs {
     name: Input[String] = null,
     policyType: Input[String] = null,
     scalingAdjustment: Input[Double] = null,
-    stepAdjustments: Input[js.Array[Input[Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]]] = null,
-    targetTrackingConfiguration: Input[
-      Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
-    ] = null
+    stepAdjustments: Input[js.Array[Input[PolicyStepAdjustment]]] = null,
+    targetTrackingConfiguration: Input[PolicyTargetTrackingConfiguration] = null
   ): PolicyArgs = {
     val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any])
     if (adjustmentType != null) __obj.updateDynamic("adjustmentType")(adjustmentType.asInstanceOf[js.Any])

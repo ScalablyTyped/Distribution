@@ -12,7 +12,7 @@ trait StackTransform extends _Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var field: js.UndefOr[String | TransformField] = js.undefined
   var groupby: js.UndefOr[js.Array[String | TransformField]] = js.undefined
-  var offset: js.UndefOr[StackOffset] = js.undefined
+  var offset: js.UndefOr[StackOffset | SignalRef] = js.undefined
   var sort: js.UndefOr[Compare] = js.undefined
   var `type`: stack
 }
@@ -24,7 +24,7 @@ object StackTransform {
     as: (Vector2[String | SignalRef]) | SignalRef = null,
     field: String | TransformField = null,
     groupby: js.Array[String | TransformField] = null,
-    offset: StackOffset = null,
+    offset: StackOffset | SignalRef = null,
     sort: Compare = null
   ): StackTransform = {
     val __obj = js.Dynamic.literal()
@@ -32,7 +32,7 @@ object StackTransform {
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort)
     __obj.asInstanceOf[StackTransform]
   }

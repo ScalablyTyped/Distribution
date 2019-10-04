@@ -1,6 +1,6 @@
 package typings.relayDashRuntime.libHandlersConnectionRelayConnectionInterfaceMod
 
-import typings.relayDashRuntime.relayDashRuntimeMod.DataID
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.DataID
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

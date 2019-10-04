@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AddressAvailabilityZone
+import typings.atPulumiAws.typesInputMod.elasticacheNs.ClusterCacheNode
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait ClusterState extends js.Object {
     * List of node objects including `id`, `address`, `port` and `availabilityZone`.
     * Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
     */
-  val cacheNodes: js.UndefOr[Input[js.Array[Input[Anon_AddressAvailabilityZone]]]] = js.undefined
+  val cacheNodes: js.UndefOr[Input[js.Array[Input[ClusterCacheNode]]]] = js.undefined
   /**
     * (Memcached only) The DNS name of the cache cluster without the port appended.
     */
@@ -144,7 +144,7 @@ object ClusterState {
     applyImmediately: Input[Boolean] = null,
     availabilityZone: Input[String] = null,
     azMode: Input[String] = null,
-    cacheNodes: Input[js.Array[Input[Anon_AddressAvailabilityZone]]] = null,
+    cacheNodes: Input[js.Array[Input[ClusterCacheNode]]] = null,
     clusterAddress: Input[String] = null,
     clusterId: Input[String] = null,
     configurationEndpoint: Input[String] = null,

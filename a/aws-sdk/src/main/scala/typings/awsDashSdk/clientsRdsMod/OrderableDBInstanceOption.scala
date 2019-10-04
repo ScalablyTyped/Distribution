@@ -82,6 +82,10 @@ trait OrderableDBInstanceOption extends js.Object {
     */
   var SupportsIops: js.UndefOr[Boolean] = js.undefined
   /**
+    * Whether a DB instance supports Kerberos Authentication.
+    */
+  var SupportsKerberosAuthentication: js.UndefOr[BooleanOptional] = js.undefined
+  /**
     * True if a DB instance supports Performance Insights, otherwise false.
     */
   var SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined
@@ -121,6 +125,7 @@ object OrderableDBInstanceOption {
     SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined,
     SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined,
     SupportsIops: js.UndefOr[Boolean] = js.undefined,
+    SupportsKerberosAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined,
     SupportsStorageAutoscaling: js.UndefOr[BooleanOptional] = js.undefined,
     SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined,
@@ -146,6 +151,7 @@ object OrderableDBInstanceOption {
     if (!js.isUndefined(SupportsEnhancedMonitoring)) __obj.updateDynamic("SupportsEnhancedMonitoring")(SupportsEnhancedMonitoring)
     if (!js.isUndefined(SupportsIAMDatabaseAuthentication)) __obj.updateDynamic("SupportsIAMDatabaseAuthentication")(SupportsIAMDatabaseAuthentication)
     if (!js.isUndefined(SupportsIops)) __obj.updateDynamic("SupportsIops")(SupportsIops)
+    if (!js.isUndefined(SupportsKerberosAuthentication)) __obj.updateDynamic("SupportsKerberosAuthentication")(SupportsKerberosAuthentication)
     if (!js.isUndefined(SupportsPerformanceInsights)) __obj.updateDynamic("SupportsPerformanceInsights")(SupportsPerformanceInsights)
     if (!js.isUndefined(SupportsStorageAutoscaling)) __obj.updateDynamic("SupportsStorageAutoscaling")(SupportsStorageAutoscaling)
     if (!js.isUndefined(SupportsStorageEncryption)) __obj.updateDynamic("SupportsStorageEncryption")(SupportsStorageEncryption)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChunkNames extends js.Object {
   var chunkNames: js.Array[String]
-  var chunks: js.Array[Double]
+  var chunks: js.Array[Double | String]
   var emitted: Boolean
   var isOverSizeLimit: js.UndefOr[Boolean] = js.undefined
   var name: String
@@ -17,7 +17,7 @@ object Anon_ChunkNames {
   @scala.inline
   def apply(
     chunkNames: js.Array[String],
-    chunks: js.Array[Double],
+    chunks: js.Array[Double | String],
     emitted: Boolean,
     name: String,
     size: Double,

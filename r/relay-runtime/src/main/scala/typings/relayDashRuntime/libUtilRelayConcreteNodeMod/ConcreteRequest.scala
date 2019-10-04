@@ -1,8 +1,8 @@
 package typings.relayDashRuntime.libUtilRelayConcreteNodeMod
 
+import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod._GraphQLTaggedNode
 import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationOperation
 import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
-import typings.relayDashRuntime.relayDashRuntimeMod._GraphQLTaggedNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

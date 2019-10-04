@@ -22,6 +22,10 @@ trait UpdateBrokerRequest extends js.Object {
     */
   var EngineVersion: js.UndefOr[__string] = js.undefined
   /**
+    * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
+    */
+  var HostInstanceType: js.UndefOr[__string] = js.undefined
+  /**
     * Enables Amazon CloudWatch logging for brokers.
     */
   var Logs: js.UndefOr[typings.awsDashSdk.clientsMqMod.Logs] = js.undefined
@@ -38,6 +42,7 @@ object UpdateBrokerRequest {
     AutoMinorVersionUpgrade: js.UndefOr[__boolean] = js.undefined,
     Configuration: ConfigurationId = null,
     EngineVersion: __string = null,
+    HostInstanceType: __string = null,
     Logs: Logs = null,
     SecurityGroups: __listOf__string = null
   ): UpdateBrokerRequest = {
@@ -45,6 +50,7 @@ object UpdateBrokerRequest {
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
+    if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType)
     if (Logs != null) __obj.updateDynamic("Logs")(Logs)
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)
     __obj.asInstanceOf[UpdateBrokerRequest]

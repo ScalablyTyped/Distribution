@@ -1,0 +1,22 @@
+package typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod
+
+import typings.react.reactMod.ReactNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TimelineGroupBase extends js.Object {
+  var id: Double
+  var rightTitle: js.UndefOr[ReactNode] = js.undefined
+  var title: ReactNode
+}
+
+object TimelineGroupBase {
+  @scala.inline
+  def apply(id: Double, title: ReactNode, rightTitle: ReactNode = null): TimelineGroupBase = {
+    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
+    if (rightTitle != null) __obj.updateDynamic("rightTitle")(rightTitle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimelineGroupBase]
+  }
+}
+

@@ -8,6 +8,7 @@ import typings.realm.RealmNs.SyncNs.LogLevel
 import typings.realm.RealmNs.SyncNs.OpenRealmBehaviorConfiguration
 import typings.realm.RealmNs.SyncNs.RealmListenerConfiguration
 import typings.realm.RealmNs.SyncNs.RealmListenerEventName
+import typings.realm.RealmNs.SyncNs.RealmWatchPredicate
 import typings.realm.RealmNs.SyncNs.SSLConfiguration
 import typings.realm.RealmNs.SyncNs.SerializedTokenUser
 import typings.realm.RealmNs.SyncNs.SerializedUser
@@ -29,14 +30,29 @@ object SyncNs extends js.Object {
       local_path: String,
       server_url: String,
       admin_user: typings.realm.RealmNs.SyncNs.User,
-      regex: String,
+      filter: String,
       change_callback: js.Function
     ) = this()
     def this(
       local_path: String,
       server_url: String,
       admin_user: typings.realm.RealmNs.SyncNs.User,
-      regex: String,
+      filter: RealmWatchPredicate,
+      change_callback: js.Function
+    ) = this()
+    def this(
+      local_path: String,
+      server_url: String,
+      admin_user: typings.realm.RealmNs.SyncNs.User,
+      filter: String,
+      change_callback: js.Function,
+      ssl: SSLConfiguration
+    ) = this()
+    def this(
+      local_path: String,
+      server_url: String,
+      admin_user: typings.realm.RealmNs.SyncNs.User,
+      filter: RealmWatchPredicate,
       change_callback: js.Function,
       ssl: SSLConfiguration
     ) = this()
@@ -206,6 +222,7 @@ object SyncNs extends js.Object {
     def requestPasswordReset(server: String, email: String): js.Promise[Unit] = js.native
   }
   
+  type ClientResyncMode = typings.realm.RealmNs.SyncNs.ClientResyncMode
   type OpenRealmBehaviorType = typings.realm.RealmNs.SyncNs.OpenRealmBehaviorType
   type OpenRealmTimeOutBehavior = typings.realm.RealmNs.SyncNs.OpenRealmTimeOutBehavior
   type SessionStopPolicy = typings.realm.RealmNs.SyncNs.SessionStopPolicy

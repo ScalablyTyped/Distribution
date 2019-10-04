@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait EmbeddedObjectPosition extends js.Object {
   /**
-    * If true, the embedded object will be put on a new sheet whose ID
+    * If true, the embedded object is put on a new sheet whose ID
     * is chosen for you. Used only when writing.
     */
   var newSheet: js.UndefOr[Boolean] = js.undefined

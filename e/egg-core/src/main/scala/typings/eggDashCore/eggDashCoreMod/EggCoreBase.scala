@@ -2,6 +2,8 @@ package typings.eggDashCore.eggDashCoreMod
 
 import typings.depd.depdMod.Deprecate
 import typings.eggDashCore.Anon_IsWeakDep
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.^
 import typings.std.Error
 import typings.std.IterableIterator
@@ -10,8 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait EggCoreBase[Config]
-  extends ^[js.Any, js.Object] {
+trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
   /**
     * The current directory of application
     * @member {String}

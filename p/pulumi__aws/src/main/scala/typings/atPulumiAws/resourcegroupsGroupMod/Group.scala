@@ -1,6 +1,6 @@
 package typings.atPulumiAws.resourcegroupsGroupMod
 
-import typings.atPulumiAws.Anon_Query
+import typings.atPulumiAws.typesOutputMod.resourcegroupsNs.GroupResourceQuery
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class Group protected () extends CustomResource {
   /**
     * A `resourceQuery` block. Resource queries are documented below.
     */
-  val resourceQuery: Output[Anon_Query] = js.native
+  val resourceQuery: Output[GroupResourceQuery] = js.native
 }
 
 /* static members */

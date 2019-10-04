@@ -4,6 +4,7 @@ import typings.gcpDashMetadata.Anon_HEADERNAME
 import typings.gcpDashMetadata.gcpDashMetadataStrings.Google
 import typings.gcpDashMetadata.gcpDashMetadataStrings.`/computeMetadata/v1`
 import typings.gcpDashMetadata.gcpDashMetadataStrings.`Metadata-Flavor`
+import typings.gcpDashMetadata.gcpDashMetadataStrings.`http://169DOT254DOT169DOT254`
 import typings.gcpDashMetadata.gcpDashMetadataStrings.`http://metadataDOTgoogleDOTinternalDOT`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,9 @@ object ^ extends js.Object {
   val HEADERS: Anon_HEADERNAME = js.native
   val HEADER_NAME: `Metadata-Flavor` = js.native
   val HEADER_VALUE: Google = js.native
-  val HOST_ADDRESS: `http://metadataDOTgoogleDOTinternalDOT` = js.native
+  val HOST_ADDRESS: `http://169DOT254DOT169DOT254` = js.native
+  val SECONDARY_BASE_URL: String = js.native
+  val SECONDARY_HOST_ADDRESS: `http://metadataDOTgoogleDOTinternalDOT` = js.native
   def instance[T](): js.Promise[T] = js.native
   def instance[T](options: String): js.Promise[T] = js.native
   def instance[T](options: Options): js.Promise[T] = js.native

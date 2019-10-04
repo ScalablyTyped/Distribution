@@ -1,6 +1,6 @@
 package typings.atPulumiAws.iotThingTypeMod
 
-import typings.atPulumiAws.Anon_DescriptionSearchableAttributes
+import typings.atPulumiAws.typesInputMod.iotNs.ThingTypeProperties
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait ThingTypeState extends js.Object {
     * The name of the thing type.
     */
   val name: js.UndefOr[Input[String]] = js.undefined
-  val properties: js.UndefOr[Input[Anon_DescriptionSearchableAttributes]] = js.undefined
+  val properties: js.UndefOr[Input[ThingTypeProperties]] = js.undefined
 }
 
 object ThingTypeState {
@@ -28,7 +28,7 @@ object ThingTypeState {
     arn: Input[String] = null,
     deprecated: Input[Boolean] = null,
     name: Input[String] = null,
-    properties: Input[Anon_DescriptionSearchableAttributes] = null
+    properties: Input[ThingTypeProperties] = null
   ): ThingTypeState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

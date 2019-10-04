@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appsyncResolverMod
 
-import typings.atPulumiAws.Anon_Functions
+import typings.atPulumiAws.typesOutputMod.appsyncNs.ResolverPipelineConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -45,7 +45,7 @@ class Resolver protected () extends CustomResource {
   /**
     * The PipelineConfig. A `pipelineConfig` block is documented below.
     */
-  val pipelineConfig: Output[js.UndefOr[Anon_Functions]] = js.native
+  val pipelineConfig: Output[js.UndefOr[ResolverPipelineConfig]] = js.native
   /**
     * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
     */

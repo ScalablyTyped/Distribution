@@ -582,6 +582,7 @@ trait Redis
   def ttl(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
   def `type`(key: KeyType): js.Promise[String] = js.native
   def `type`(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Unit = js.native
+  def unlink(keys: KeyType*): js.Promise[Double] = js.native
   def unsubscribe(channels: String*): js.Any = js.native
   def unwatch(): js.Promise[String] = js.native
   def unwatch(callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Unit = js.native

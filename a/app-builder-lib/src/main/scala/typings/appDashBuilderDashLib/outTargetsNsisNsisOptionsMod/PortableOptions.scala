@@ -3,8 +3,8 @@ package typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.admin
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.highest
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.user
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

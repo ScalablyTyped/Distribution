@@ -4,23 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Registration extends js.Object {
-  /**
-    * Called by the container to register the resolver.
-    * @param container The container the resolver is being registered with.
-    * @param key The key the resolver should be registered as.
-    * @param fn The function to create the resolver for.
-    * @return The resolver that was registered.
-    */
-  def registerResolver(container: Container, key: js.Any, fn: js.Function): Resolver
+trait Registration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends js.Object {
+  def registerResolver(
+    container: Container,
+    key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs],
+    fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]
+  ): Resolver
 }
 
 object Registration {
   @scala.inline
-  def apply(registerResolver: (Container, js.Any, js.Function) => Resolver): Registration = {
+  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+    registerResolver: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], DependencyCtorOrFunctor[TBase, TImpl, TArgs]) => Resolver
+  ): Registration[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(registerResolver = js.Any.fromFunction3(registerResolver))
   
-    __obj.asInstanceOf[Registration]
+    __obj.asInstanceOf[Registration[TBase, TImpl, TArgs]]
   }
 }
 

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.macieS3BucketAssociationMod
 
-import typings.atPulumiAws.Anon_ContinuousOneTime
+import typings.atPulumiAws.typesInputMod.macieNs.S3BucketAssociationClassificationType
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait S3BucketAssociationArgs extends js.Object {
   /**
     * The configuration of how Amazon Macie classifies the S3 objects.
     */
-  val classificationType: js.UndefOr[Input[Anon_ContinuousOneTime]] = js.undefined
+  val classificationType: js.UndefOr[Input[S3BucketAssociationClassificationType]] = js.undefined
   /**
     * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */
@@ -29,7 +29,7 @@ object S3BucketAssociationArgs {
   @scala.inline
   def apply(
     bucketName: Input[String],
-    classificationType: Input[Anon_ContinuousOneTime] = null,
+    classificationType: Input[S3BucketAssociationClassificationType] = null,
     memberAccountId: Input[String] = null,
     prefix: Input[String] = null
   ): S3BucketAssociationArgs = {

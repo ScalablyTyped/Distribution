@@ -10,7 +10,7 @@ trait DisableStageTransitionInput extends js.Object {
     */
   var pipelineName: PipelineName
   /**
-    * The reason given to the user why a stage is disabled, such as waiting for manual approval or manual tests. This message is displayed in the pipeline console UI.
+    * The reason given to the user that a stage is disabled, such as waiting for manual approval or manual tests. This message is displayed in the pipeline console UI.
     */
   var reason: DisabledReason
   /**
@@ -18,7 +18,7 @@ trait DisableStageTransitionInput extends js.Object {
     */
   var stageName: StageName
   /**
-    * Specifies whether artifacts will be prevented from transitioning into the stage and being processed by the actions in that stage (inbound), or prevented from transitioning from the stage after they have been processed by the actions in that stage (outbound).
+    * Specifies whether artifacts are prevented from transitioning into the stage and being processed by the actions in that stage (inbound), or prevented from transitioning from the stage after they have been processed by the actions in that stage (outbound).
     */
   var transitionType: StageTransitionType
 }

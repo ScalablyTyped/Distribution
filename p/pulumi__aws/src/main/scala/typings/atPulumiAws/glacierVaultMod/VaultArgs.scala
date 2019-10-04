@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glacierVaultMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_EventsSnsTopic
+import typings.atPulumiAws.typesInputMod.glacierNs.VaultNotification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait VaultArgs extends js.Object {
   /**
     * The notifications for the Vault. Fields documented below.
     */
-  val notifications: js.UndefOr[Input[js.Array[Input[Anon_EventsSnsTopic]]]] = js.undefined
+  val notifications: js.UndefOr[Input[js.Array[Input[VaultNotification]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -32,7 +32,7 @@ object VaultArgs {
   def apply(
     accessPolicy: Input[String] = null,
     name: Input[String] = null,
-    notifications: Input[js.Array[Input[Anon_EventsSnsTopic]]] = null,
+    notifications: Input[js.Array[Input[VaultNotification]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): VaultArgs = {
     val __obj = js.Dynamic.literal()

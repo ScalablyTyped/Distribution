@@ -24,8 +24,6 @@ class Scene () extends Object3D {
   var overrideMaterial: Material | Null = js.native
   @JSName("type")
   var type_Scene: typings.three.threeStrings.Scene = js.native
-  def copy(source: this.type): this.type = js.native
-  def copy(source: this.type, recursive: Boolean): this.type = js.native
   def dispose(): Unit = js.native
   def toJSON(meta: js.Any): js.Any = js.native
 }

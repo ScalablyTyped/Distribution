@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ErrorDetails extends js.Object {
   /**
-    * The system ID or error number code of the error.
+    * The system ID or number code of the error.
     */
   var code: js.UndefOr[Code] = js.undefined
   /**

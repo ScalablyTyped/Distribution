@@ -1,7 +1,7 @@
 package typings.echarts.echartsNs.VisualMapNs
 
 import typings.echarts.Anon_InRange
-import typings.echarts.echartsNs.EChartOptionNs.TextStyle
+import typings.echarts.echartsNs.EChartOptionNs.BaseTextStyleWithRich
 import typings.echarts.echartsNs.EChartOptionNs.VisualMap
 import typings.echarts.echartsStrings.auto
 import typings.echarts.echartsStrings.bottom
@@ -46,7 +46,7 @@ trait Continuous extends VisualMap {
   var show: js.UndefOr[Boolean] = js.undefined
   var text: js.UndefOr[js.Array[String]] = js.undefined
   var textGap: js.UndefOr[Double] = js.undefined
-  var textStyle: js.UndefOr[TextStyle] = js.undefined
+  var textStyle: js.UndefOr[BaseTextStyleWithRich] = js.undefined
   var top: js.UndefOr[Double | String] = js.undefined
   var `type`: js.UndefOr[continuous] = js.undefined
   var z: js.UndefOr[Double] = js.undefined
@@ -86,7 +86,7 @@ object Continuous {
     show: js.UndefOr[Boolean] = js.undefined,
     text: js.Array[String] = null,
     textGap: Int | Double = null,
-    textStyle: TextStyle = null,
+    textStyle: BaseTextStyleWithRich = null,
     top: Double | String = null,
     `type`: continuous = null,
     z: Int | Double = null,

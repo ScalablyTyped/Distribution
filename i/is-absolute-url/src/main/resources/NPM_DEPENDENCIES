@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-absolute-url" : "3.0.2"
+      "is-absolute-url" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "is-absolute-url" : "3.0.2"
+      "is-absolute-url" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

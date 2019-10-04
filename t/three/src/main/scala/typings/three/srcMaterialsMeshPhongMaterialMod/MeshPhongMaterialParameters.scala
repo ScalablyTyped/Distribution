@@ -9,6 +9,8 @@ import typings.three.srcConstantsMod.Combine
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.NormalMapTypes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathColorMod.Color
 import typings.three.srcMathPlaneMod.Plane
@@ -22,27 +24,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MeshPhongMaterialParameters extends MaterialParameters {
-  var alphaMap: js.UndefOr[Texture] = js.undefined
-  var aoMap: js.UndefOr[Texture] = js.undefined
+  var alphaMap: js.UndefOr[Texture | Null] = js.undefined
+  var aoMap: js.UndefOr[Texture | Null] = js.undefined
   var aoMapIntensity: js.UndefOr[Double] = js.undefined
-  var bumpMap: js.UndefOr[Texture] = js.undefined
+  var bumpMap: js.UndefOr[Texture | Null] = js.undefined
   var bumpScale: js.UndefOr[Double] = js.undefined
   /** geometry color in hexadecimal. Default is 0xffffff. */
   var color: js.UndefOr[Color | String | Double] = js.undefined
   var combine: js.UndefOr[Combine] = js.undefined
   var displacementBias: js.UndefOr[Double] = js.undefined
-  var displacementMap: js.UndefOr[Texture] = js.undefined
+  var displacementMap: js.UndefOr[Texture | Null] = js.undefined
   var displacementScale: js.UndefOr[Double] = js.undefined
   var emissive: js.UndefOr[Color | String | Double] = js.undefined
   var emissiveIntensity: js.UndefOr[Double] = js.undefined
-  var emissiveMap: js.UndefOr[Texture] = js.undefined
-  var envMap: js.UndefOr[Texture] = js.undefined
-  var lightMap: js.UndefOr[Texture] = js.undefined
+  var emissiveMap: js.UndefOr[Texture | Null] = js.undefined
+  var envMap: js.UndefOr[Texture | Null] = js.undefined
+  var lightMap: js.UndefOr[Texture | Null] = js.undefined
   var lightMapIntensity: js.UndefOr[Double] = js.undefined
-  var map: js.UndefOr[Texture] = js.undefined
+  var map: js.UndefOr[Texture | Null] = js.undefined
   var morphNormals: js.UndefOr[Boolean] = js.undefined
   var morphTargets: js.UndefOr[Boolean] = js.undefined
-  var normalMap: js.UndefOr[Texture] = js.undefined
+  var normalMap: js.UndefOr[Texture | Null] = js.undefined
   var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
   var normalScale: js.UndefOr[Vector2] = js.undefined
   var reflectivity: js.UndefOr[Double] = js.undefined
@@ -50,7 +52,7 @@ trait MeshPhongMaterialParameters extends MaterialParameters {
   var shininess: js.UndefOr[Double] = js.undefined
   var skinning: js.UndefOr[Boolean] = js.undefined
   var specular: js.UndefOr[Color | String | Double] = js.undefined
-  var specularMap: js.UndefOr[Texture] = js.undefined
+  var specularMap: js.UndefOr[Texture | Null] = js.undefined
   var wireframe: js.UndefOr[Boolean] = js.undefined
   var wireframeLinecap: js.UndefOr[String] = js.undefined
   var wireframeLinejoin: js.UndefOr[String] = js.undefined
@@ -94,7 +96,6 @@ object MeshPhongMaterialParameters {
     fog: js.UndefOr[Boolean] = js.undefined,
     lightMap: Texture = null,
     lightMapIntensity: Int | Double = null,
-    lights: js.UndefOr[Boolean] = js.undefined,
     map: Texture = null,
     morphNormals: js.UndefOr[Boolean] = js.undefined,
     morphTargets: js.UndefOr[Boolean] = js.undefined,
@@ -117,6 +118,14 @@ object MeshPhongMaterialParameters {
     skinning: js.UndefOr[Boolean] = js.undefined,
     specular: Color | String | Double = null,
     specularMap: Texture = null,
+    stencilFail: StencilOp = null,
+    stencilFunc: StencilFunc = null,
+    stencilMask: Int | Double = null,
+    stencilRef: Int | Double = null,
+    stencilWrite: js.UndefOr[Boolean] = js.undefined,
+    stencilZFail: StencilOp = null,
+    stencilZPass: StencilOp = null,
+    toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     vertexColors: Colors = null,
     vertexTangents: js.UndefOr[Boolean] = js.undefined,
@@ -161,7 +170,6 @@ object MeshPhongMaterialParameters {
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
     if (lightMap != null) __obj.updateDynamic("lightMap")(lightMap)
     if (lightMapIntensity != null) __obj.updateDynamic("lightMapIntensity")(lightMapIntensity.asInstanceOf[js.Any])
-    if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
     if (map != null) __obj.updateDynamic("map")(map)
     if (!js.isUndefined(morphNormals)) __obj.updateDynamic("morphNormals")(morphNormals)
     if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets)
@@ -184,6 +192,14 @@ object MeshPhongMaterialParameters {
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
     if (specular != null) __obj.updateDynamic("specular")(specular.asInstanceOf[js.Any])
     if (specularMap != null) __obj.updateDynamic("specularMap")(specularMap)
+    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail)
+    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc)
+    if (stencilMask != null) __obj.updateDynamic("stencilMask")(stencilMask.asInstanceOf[js.Any])
+    if (stencilRef != null) __obj.updateDynamic("stencilRef")(stencilRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite)
+    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail)
+    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass)
+    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents)

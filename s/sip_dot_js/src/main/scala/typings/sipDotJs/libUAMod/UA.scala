@@ -1,7 +1,7 @@
 package typings.sipDotJs.libUAMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.Anon_ACCEPTEDBODYTYPES
 import typings.sipDotJs.Anon_Options
 import typings.sipDotJs.libClientContextMod.ClientContext

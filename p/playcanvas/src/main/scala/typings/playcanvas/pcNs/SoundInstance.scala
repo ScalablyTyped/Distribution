@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SoundInstance
+  * @extends pc.EventHandler
   * @classdesc A pc.SoundInstance plays a {@link pc.Sound}
   * @param {pc.SoundManager} manager The sound manager
   * @param {pc.Sound} sound The sound to play
@@ -39,7 +40,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.SoundInstance")
 @js.native
-class SoundInstance protected () extends js.Object {
+class SoundInstance protected () extends EventHandler {
   def this(manager: SoundManager, sound: Sound, options: Anon_Duration) = this()
   /**
     * Gets or sets the current time of the sound that is playing. If the value provided is bigger than the duration of the instance it will wrap from the beginning.

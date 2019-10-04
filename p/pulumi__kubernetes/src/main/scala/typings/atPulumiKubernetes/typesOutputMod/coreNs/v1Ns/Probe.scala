@@ -34,7 +34,7 @@ trait Probe extends js.Object {
   val periodSeconds: Double
   /**
     * Minimum consecutive successes for the probe to be considered successful after having
-    * failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.
+    * failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
     */
   val successThreshold: Double
   /**

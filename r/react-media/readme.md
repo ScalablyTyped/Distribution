@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-media
 
-Typings are for version 1.9.2
+Typings are for version 1.10.0
 
 ## Library description:
 CSS media queries for React

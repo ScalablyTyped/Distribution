@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cfb"
-version := "1.1.2-6f6338"
+version := "1.1.3-6648d7"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,7 @@ import typings.atIonicCliDashFramework.definitionsMod.CommandMetadataOption
 import typings.atIonicCliDashFramework.definitionsMod.ICommand
 import typings.atIonicCliDashFramework.definitionsMod.INamespace
 import typings.atIonicCliDashFramework.libColorsMod.Colors
-import typings.node.NodeJSNs.WriteStream
+import typings.node.processMod.Global.NodeJSNs.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

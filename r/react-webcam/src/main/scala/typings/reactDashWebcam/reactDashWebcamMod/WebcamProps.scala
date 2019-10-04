@@ -14,6 +14,7 @@ trait WebcamProps extends js.Object {
   var imageSmoothing: Boolean
   var minScreenshotHeight: js.UndefOr[Double] = js.undefined
   var minScreenshotWidth: js.UndefOr[Double] = js.undefined
+  var mirrored: js.UndefOr[Boolean] = js.undefined
   var screenshotFormat: `image/webp` | `image/png` | `image/jpeg`
   var screenshotQuality: Double
   var videoConstraints: js.UndefOr[Boolean | MediaTrackConstraints] = js.undefined
@@ -33,12 +34,14 @@ object WebcamProps {
     audioConstraints: Boolean | MediaTrackConstraints = null,
     minScreenshotHeight: Int | Double = null,
     minScreenshotWidth: Int | Double = null,
+    mirrored: js.UndefOr[Boolean] = js.undefined,
     videoConstraints: Boolean | MediaTrackConstraints = null
   ): WebcamProps = {
     val __obj = js.Dynamic.literal(audio = audio, imageSmoothing = imageSmoothing, onUserMedia = js.Any.fromFunction0(onUserMedia), onUserMediaError = js.Any.fromFunction1(onUserMediaError), screenshotFormat = screenshotFormat.asInstanceOf[js.Any], screenshotQuality = screenshotQuality)
     if (audioConstraints != null) __obj.updateDynamic("audioConstraints")(audioConstraints.asInstanceOf[js.Any])
     if (minScreenshotHeight != null) __obj.updateDynamic("minScreenshotHeight")(minScreenshotHeight.asInstanceOf[js.Any])
     if (minScreenshotWidth != null) __obj.updateDynamic("minScreenshotWidth")(minScreenshotWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirrored)) __obj.updateDynamic("mirrored")(mirrored)
     if (videoConstraints != null) __obj.updateDynamic("videoConstraints")(videoConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebcamProps]
   }

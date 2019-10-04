@@ -2,13 +2,14 @@ package typings.reactDashSelect.srcComponentsMenuMod
 
 import typings.react.reactMod.Component
 import typings.reactDashSelect.Anon_GetPortalPlacement
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-select/src/components/Menu", "MenuPortal")
 @js.native
-class MenuPortal[OptionType] ()
+class MenuPortal[OptionType /* <: OptionTypeBase */] ()
   extends Component[MenuPortalProps[OptionType], MenuPortalState, js.Any] {
   def getChildContext(): Anon_GetPortalPlacement = js.native
   // callback for occassions where the menu must "flip"

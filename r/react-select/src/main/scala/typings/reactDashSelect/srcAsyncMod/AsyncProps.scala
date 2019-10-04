@@ -1,11 +1,12 @@
 package typings.reactDashSelect.srcAsyncMod
 
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AsyncProps[OptionType] extends js.Object {
+trait AsyncProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   /* If cacheOptions is truthy, then the loaded data will be cached. The cache
     will remain until `cacheOptions` changes value.
     Default: false. */
@@ -21,7 +22,7 @@ trait AsyncProps[OptionType] extends js.Object {
 
 object AsyncProps {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     loadOptions: (String, js.Function1[/* options */ OptionsType[OptionType], Unit]) => js.Promise[_] | Unit,
     cacheOptions: js.Any = null,
     defaultOptions: OptionsType[OptionType] | Boolean = null

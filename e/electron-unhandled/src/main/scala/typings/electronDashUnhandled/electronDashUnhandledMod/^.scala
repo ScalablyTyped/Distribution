@@ -15,12 +15,10 @@ object ^ extends js.Object {
   def apply(): Unit = js.native
   def apply(options: UnhandledOptions): Unit = js.native
   /**
-  	 * Log an error. This does the same as with caught unhandled errors.
-  	 *
-  	 * It will use the same options specified in the `unhandled()` call or the defaults.
-  	 *
-  	 * @param error - Error to log.
-  	 */
+  	Log an error. This does the same as with caught unhandled errors.
+  	It will use the same options specified in the `unhandled()` call or the defaults.
+  	@param error - Error to log.
+  	*/
   def logError(error: Error): Unit = js.native
   def logError(error: Error, options: LogErrorOptions): Unit = js.native
 }

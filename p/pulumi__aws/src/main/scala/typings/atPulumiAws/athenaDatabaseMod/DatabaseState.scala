@@ -1,6 +1,6 @@
 package typings.atPulumiAws.athenaDatabaseMod
 
-import typings.atPulumiAws.Anon_EncryptionOptionKmsKey
+import typings.atPulumiAws.typesInputMod.athenaNs.DatabaseEncryptionConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait DatabaseState extends js.Object {
   /**
     * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryptionConfiguration` block is documented below.
     */
-  val encryptionConfiguration: js.UndefOr[Input[Anon_EncryptionOptionKmsKey]] = js.undefined
+  val encryptionConfiguration: js.UndefOr[Input[DatabaseEncryptionConfiguration]] = js.undefined
   /**
     * A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.
     */
@@ -29,7 +29,7 @@ object DatabaseState {
   @scala.inline
   def apply(
     bucket: Input[String] = null,
-    encryptionConfiguration: Input[Anon_EncryptionOptionKmsKey] = null,
+    encryptionConfiguration: Input[DatabaseEncryptionConfiguration] = null,
     forceDestroy: Input[Boolean] = null,
     name: Input[String] = null
   ): DatabaseState = {

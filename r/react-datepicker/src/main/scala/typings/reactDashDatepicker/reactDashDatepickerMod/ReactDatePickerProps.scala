@@ -1,5 +1,6 @@
 package typings.reactDashDatepicker.reactDashDatepickerMod
 
+import typings.dateDashFns.dateDashFnsMod.Locale
 import typings.popperDotJs.popperDotJsMod.Modifiers
 import typings.react.Event
 import typings.react.NativeMouseEvent
@@ -55,9 +56,7 @@ trait ReactDatePickerProps extends js.Object {
   var `inline`: js.UndefOr[Boolean] = js.native
   var inlineFocusSelectedMonth: js.UndefOr[Boolean] = js.native
   var isClearable: js.UndefOr[Boolean] = js.native
-  var locale: js.UndefOr[
-    String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Locale */ js.Any)
-  ] = js.native
+  var locale: js.UndefOr[String | Locale] = js.native
   var maxDate: js.UndefOr[Date | Null] = js.native
   var maxTime: js.UndefOr[Date] = js.native
   var minDate: js.UndefOr[Date | Null] = js.native

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 trait ResponseArgs extends js.Object {
   /**
-    * A map specifying the templates used to transform the response body.
+    * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
     */
   val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
-    * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
+    * A map specifying the templates used to transform the response body.
     */
   val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**

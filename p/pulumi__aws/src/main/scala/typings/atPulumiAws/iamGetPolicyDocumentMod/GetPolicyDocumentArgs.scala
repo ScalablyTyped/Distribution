@@ -1,6 +1,6 @@
 package typings.atPulumiAws.iamGetPolicyDocumentMod
 
-import typings.atPulumiAws.Anon_ActionsConditions
+import typings.atPulumiAws.typesInputMod.iamNs.GetPolicyDocumentStatement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait GetPolicyDocumentArgs extends js.Object {
     * A nested configuration block (described below)
     * configuring one *statement* to be included in the policy document.
     */
-  val statements: js.UndefOr[js.Array[Anon_ActionsConditions]] = js.undefined
+  val statements: js.UndefOr[js.Array[GetPolicyDocumentStatement]] = js.undefined
   /**
     * IAM policy document version. Valid values: `2008-10-17`, `2012-10-17`. Defaults to `2012-10-17`. For more information, see the [AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html).
     */
@@ -41,7 +41,7 @@ object GetPolicyDocumentArgs {
     overrideJson: String = null,
     policyId: String = null,
     sourceJson: String = null,
-    statements: js.Array[Anon_ActionsConditions] = null,
+    statements: js.Array[GetPolicyDocumentStatement] = null,
     version: String = null
   ): GetPolicyDocumentArgs = {
     val __obj = js.Dynamic.literal()

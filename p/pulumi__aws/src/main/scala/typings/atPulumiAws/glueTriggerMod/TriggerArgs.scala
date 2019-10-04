@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueTriggerMod
 
-import typings.atPulumiAws.Anon_ArgumentsJobName
-import typings.atPulumiAws.Anon_ConditionsLogical
+import typings.atPulumiAws.typesInputMod.glueNs.TriggerAction
+import typings.atPulumiAws.typesInputMod.glueNs.TriggerPredicate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait TriggerArgs extends js.Object {
   /**
     * List of actions initiated by this trigger when it fires. Defined below.
     */
-  val actions: Input[js.Array[Input[Anon_ArgumentsJobName]]]
+  val actions: Input[js.Array[Input[TriggerAction]]]
   /**
     * A description of the new trigger.
     */
@@ -27,7 +27,7 @@ trait TriggerArgs extends js.Object {
   /**
     * A predicate to specify when the new trigger should fire. Required when trigger type is `CONDITIONAL`. Defined below.
     */
-  val predicate: js.UndefOr[Input[Anon_ConditionsLogical]] = js.undefined
+  val predicate: js.UndefOr[Input[TriggerPredicate]] = js.undefined
   /**
     * A cron expression used to specify the schedule. [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html)
     */
@@ -41,12 +41,12 @@ trait TriggerArgs extends js.Object {
 object TriggerArgs {
   @scala.inline
   def apply(
-    actions: Input[js.Array[Input[Anon_ArgumentsJobName]]],
+    actions: Input[js.Array[Input[TriggerAction]]],
     `type`: Input[String],
     description: Input[String] = null,
     enabled: Input[Boolean] = null,
     name: Input[String] = null,
-    predicate: Input[Anon_ConditionsLogical] = null,
+    predicate: Input[TriggerPredicate] = null,
     schedule: Input[String] = null
   ): TriggerArgs = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])

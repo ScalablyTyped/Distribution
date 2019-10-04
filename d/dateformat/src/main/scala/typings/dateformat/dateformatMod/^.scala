@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("dateformat", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val i18n: DateFormatI18n = js.native
+  var i18n: DateFormatI18n = js.native
   val masks: DateFormatMasks = js.native
   /**
     * dateFormat()

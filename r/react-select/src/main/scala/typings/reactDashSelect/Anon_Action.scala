@@ -2,6 +2,7 @@ package typings.reactDashSelect
 
 import typings.reactDashSelect.srcSelectMod.Props
 import typings.reactDashSelect.srcTypesMod.ActionTypes
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon_Action[OptionType] extends js.Object {
+trait Anon_Action[OptionType /* <: OptionTypeBase */] extends js.Object {
   var cx: js.Any = js.native
   var hasValue: Boolean = js.native
   var isMulti: Boolean = js.native

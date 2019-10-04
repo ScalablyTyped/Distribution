@@ -21,6 +21,12 @@ object electronStrings {
   sealed trait `3d-shadow` extends js.Object
   
   @js.native
+  sealed trait Browser extends js.Object
+  
+  @js.native
+  sealed trait GPU extends js.Object
+  
+  @js.native
   sealed trait HTMLComplete extends js.Object
   
   @js.native
@@ -28,6 +34,18 @@ object electronStrings {
   
   @js.native
   sealed trait MHTML extends js.Object
+  
+  @js.native
+  sealed trait Tab extends js.Object
+  
+  @js.native
+  sealed trait Unknown extends js.Object
+  
+  @js.native
+  sealed trait Utility extends js.Object
+  
+  @js.native
+  sealed trait Zygote extends js.Object
   
   @js.native
   sealed trait abort extends js.Object
@@ -220,6 +238,9 @@ object electronStrings {
   
   @js.native
   sealed trait `checking-for-update` extends js.Object
+  
+  @js.native
+  sealed trait clearRecentDocuments extends js.Object
   
   @js.native
   sealed trait clearSelection extends js.Object
@@ -534,7 +555,7 @@ object electronStrings {
   sealed trait focusout extends js.Object
   
   @js.native
-  sealed trait forcereload extends js.Object
+  sealed trait forceReload extends js.Object
   
   @js.native
   sealed trait `foreground-tab` extends js.Object
@@ -588,7 +609,7 @@ object electronStrings {
   sealed trait hide extends js.Object
   
   @js.native
-  sealed trait hideothers extends js.Object
+  sealed trait hideOthers extends js.Object
   
   @js.native
   sealed trait `high-contrast-color-scheme-changed` extends js.Object
@@ -765,6 +786,9 @@ object electronStrings {
   sealed trait menubar extends js.Object
   
   @js.native
+  sealed trait mergeAllWindows extends js.Object
+  
+  @js.native
   sealed trait message extends js.Object
   
   @js.native
@@ -817,6 +841,9 @@ object electronStrings {
   
   @js.native
   sealed trait move extends js.Object
+  
+  @js.native
+  sealed trait moveTabToNewWindow extends js.Object
   
   @js.native
   sealed trait moved extends js.Object
@@ -915,7 +942,7 @@ object electronStrings {
   sealed trait paste extends js.Object
   
   @js.native
-  sealed trait pasteandmatchstyle extends js.Object
+  sealed trait pasteAndMatchStyle extends js.Object
   
   @js.native
   sealed trait path extends js.Object
@@ -1029,6 +1056,9 @@ object electronStrings {
   sealed trait recent extends js.Object
   
   @js.native
+  sealed trait recentDocuments extends js.Object
+  
+  @js.native
   sealed trait red extends js.Object
   
   @js.native
@@ -1062,6 +1092,9 @@ object electronStrings {
   sealed trait `remote-require` extends js.Object
   
   @js.native
+  sealed trait `renderer-process-crashed` extends js.Object
+  
+  @js.native
   sealed trait replace extends js.Object
   
   @js.native
@@ -1071,7 +1104,7 @@ object electronStrings {
   sealed trait reset extends js.Object
   
   @js.native
-  sealed trait resetzoom extends js.Object
+  sealed trait resetZoom extends js.Object
   
   @js.native
   sealed trait resize extends js.Object
@@ -1158,7 +1191,13 @@ object electronStrings {
   sealed trait `select-client-certificate` extends js.Object
   
   @js.native
-  sealed trait selectall extends js.Object
+  sealed trait selectAll extends js.Object
+  
+  @js.native
+  sealed trait selectNextTab extends js.Object
+  
+  @js.native
+  sealed trait selectPreviousTab extends js.Object
   
   @js.native
   sealed trait `selected-content-background` extends js.Object
@@ -1239,13 +1278,13 @@ object electronStrings {
   sealed trait stalled extends js.Object
   
   @js.native
-  sealed trait startspeaking extends js.Object
+  sealed trait startSpeaking extends js.Object
   
   @js.native
   sealed trait status extends js.Object
   
   @js.native
-  sealed trait stopspeaking extends js.Object
+  sealed trait stopSpeaking extends js.Object
   
   @js.native
   sealed trait `strict-origin` extends js.Object
@@ -1299,7 +1338,10 @@ object electronStrings {
   sealed trait toggle extends js.Object
   
   @js.native
-  sealed trait toggledevtools extends js.Object
+  sealed trait toggleDevTools extends js.Object
+  
+  @js.native
+  sealed trait toggleTabBar extends js.Object
   
   @js.native
   sealed trait togglefullscreen extends js.Object
@@ -1491,10 +1533,10 @@ object electronStrings {
   sealed trait zoom extends js.Object
   
   @js.native
-  sealed trait zoomin extends js.Object
+  sealed trait zoomIn extends js.Object
   
   @js.native
-  sealed trait zoomout extends js.Object
+  sealed trait zoomOut extends js.Object
   
   @scala.inline
   def `3d-dark-shadow`: `3d-dark-shadow` = "3d-dark-shadow".asInstanceOf[`3d-dark-shadow`]
@@ -1507,11 +1549,23 @@ object electronStrings {
   @scala.inline
   def `3d-shadow`: `3d-shadow` = "3d-shadow".asInstanceOf[`3d-shadow`]
   @scala.inline
+  def Browser: Browser = "Browser".asInstanceOf[Browser]
+  @scala.inline
+  def GPU: GPU = "GPU".asInstanceOf[GPU]
+  @scala.inline
   def HTMLComplete: HTMLComplete = "HTMLComplete".asInstanceOf[HTMLComplete]
   @scala.inline
   def HTMLOnly: HTMLOnly = "HTMLOnly".asInstanceOf[HTMLOnly]
   @scala.inline
   def MHTML: MHTML = "MHTML".asInstanceOf[MHTML]
+  @scala.inline
+  def Tab: Tab = "Tab".asInstanceOf[Tab]
+  @scala.inline
+  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  @scala.inline
+  def Utility: Utility = "Utility".asInstanceOf[Utility]
+  @scala.inline
+  def Zygote: Zygote = "Zygote".asInstanceOf[Zygote]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
@@ -1640,6 +1694,8 @@ object electronStrings {
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
   def `checking-for-update`: `checking-for-update` = "checking-for-update".asInstanceOf[`checking-for-update`]
+  @scala.inline
+  def clearRecentDocuments: clearRecentDocuments = "clearRecentDocuments".asInstanceOf[clearRecentDocuments]
   @scala.inline
   def clearSelection: clearSelection = "clearSelection".asInstanceOf[clearSelection]
   @scala.inline
@@ -1849,7 +1905,7 @@ object electronStrings {
   @scala.inline
   def focusout: focusout = "focusout".asInstanceOf[focusout]
   @scala.inline
-  def forcereload: forcereload = "forcereload".asInstanceOf[forcereload]
+  def forceReload: forceReload = "forceReload".asInstanceOf[forceReload]
   @scala.inline
   def `foreground-tab`: `foreground-tab` = "foreground-tab".asInstanceOf[`foreground-tab`]
   @scala.inline
@@ -1885,7 +1941,7 @@ object electronStrings {
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def hideothers: hideothers = "hideothers".asInstanceOf[hideothers]
+  def hideOthers: hideOthers = "hideOthers".asInstanceOf[hideOthers]
   @scala.inline
   def `high-contrast-color-scheme-changed`: `high-contrast-color-scheme-changed` = "high-contrast-color-scheme-changed".asInstanceOf[`high-contrast-color-scheme-changed`]
   @scala.inline
@@ -2003,6 +2059,8 @@ object electronStrings {
   @scala.inline
   def menubar: menubar = "menubar".asInstanceOf[menubar]
   @scala.inline
+  def mergeAllWindows: mergeAllWindows = "mergeAllWindows".asInstanceOf[mergeAllWindows]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
   def method: method = "method".asInstanceOf[method]
@@ -2038,6 +2096,8 @@ object electronStrings {
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
+  def moveTabToNewWindow: moveTabToNewWindow = "moveTabToNewWindow".asInstanceOf[moveTabToNewWindow]
   @scala.inline
   def moved: moved = "moved".asInstanceOf[moved]
   @scala.inline
@@ -2103,7 +2163,7 @@ object electronStrings {
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
-  def pasteandmatchstyle: pasteandmatchstyle = "pasteandmatchstyle".asInstanceOf[pasteandmatchstyle]
+  def pasteAndMatchStyle: pasteAndMatchStyle = "pasteAndMatchStyle".asInstanceOf[pasteAndMatchStyle]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
@@ -2179,6 +2239,8 @@ object electronStrings {
   @scala.inline
   def recent: recent = "recent".asInstanceOf[recent]
   @scala.inline
+  def recentDocuments: recentDocuments = "recentDocuments".asInstanceOf[recentDocuments]
+  @scala.inline
   def red: red = "red".asInstanceOf[red]
   @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
@@ -2201,13 +2263,15 @@ object electronStrings {
   @scala.inline
   def `remote-require`: `remote-require` = "remote-require".asInstanceOf[`remote-require`]
   @scala.inline
+  def `renderer-process-crashed`: `renderer-process-crashed` = "renderer-process-crashed".asInstanceOf[`renderer-process-crashed`]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def reply: reply = "reply".asInstanceOf[reply]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
-  def resetzoom: resetzoom = "resetzoom".asInstanceOf[resetzoom]
+  def resetZoom: resetZoom = "resetZoom".asInstanceOf[resetZoom]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
@@ -2265,7 +2329,11 @@ object electronStrings {
   @scala.inline
   def `select-client-certificate`: `select-client-certificate` = "select-client-certificate".asInstanceOf[`select-client-certificate`]
   @scala.inline
-  def selectall: selectall = "selectall".asInstanceOf[selectall]
+  def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
+  @scala.inline
+  def selectNextTab: selectNextTab = "selectNextTab".asInstanceOf[selectNextTab]
+  @scala.inline
+  def selectPreviousTab: selectPreviousTab = "selectPreviousTab".asInstanceOf[selectPreviousTab]
   @scala.inline
   def `selected-content-background`: `selected-content-background` = "selected-content-background".asInstanceOf[`selected-content-background`]
   @scala.inline
@@ -2319,11 +2387,11 @@ object electronStrings {
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
-  def startspeaking: startspeaking = "startspeaking".asInstanceOf[startspeaking]
+  def startSpeaking: startSpeaking = "startSpeaking".asInstanceOf[startSpeaking]
   @scala.inline
   def status: status = "status".asInstanceOf[status]
   @scala.inline
-  def stopspeaking: stopspeaking = "stopspeaking".asInstanceOf[stopspeaking]
+  def stopSpeaking: stopSpeaking = "stopSpeaking".asInstanceOf[stopSpeaking]
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   @scala.inline
@@ -2359,7 +2427,9 @@ object electronStrings {
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   @scala.inline
-  def toggledevtools: toggledevtools = "toggledevtools".asInstanceOf[toggledevtools]
+  def toggleDevTools: toggleDevTools = "toggleDevTools".asInstanceOf[toggleDevTools]
+  @scala.inline
+  def toggleTabBar: toggleTabBar = "toggleTabBar".asInstanceOf[toggleTabBar]
   @scala.inline
   def togglefullscreen: togglefullscreen = "togglefullscreen".asInstanceOf[togglefullscreen]
   @scala.inline
@@ -2487,8 +2557,8 @@ object electronStrings {
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   @scala.inline
-  def zoomin: zoomin = "zoomin".asInstanceOf[zoomin]
+  def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
   @scala.inline
-  def zoomout: zoomout = "zoomout".asInstanceOf[zoomout]
+  def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
 }
 

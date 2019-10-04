@@ -46,13 +46,14 @@ trait DataCollection extends js.Object {
   def getBindData(key: String, update: Boolean): Unit = js.native
   def getBindData(key: Double, update: Boolean): Unit = js.native
   def getCursor(): Double = js.native
-  def getFirstId(): String | Double = js.native
+  def getFirstId(): Double | String = js.native
+  def getIdByIndex(index: String): String | Double = js.native
   def getIdByIndex(index: Double): String | Double = js.native
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   def getItem(id: String): js.Any = js.native
   def getItem(id: Double): js.Any = js.native
-  def getLastId(): String | Double = js.native
+  def getLastId(): Double | String = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   def getPrevId(id: String, step: Double): String | Double = js.native
@@ -81,6 +82,7 @@ trait DataCollection extends js.Object {
   def refresh(id: Double): Unit = js.native
   def refreshCursor(): Unit = js.native
   def remove(id: String): Unit = js.native
+  def remove(id: js.Array[_]): Unit = js.native
   def remove(id: Double): Unit = js.native
   def removeBind(source: js.Any): Unit = js.native
   def saveBatch(handler: WebixCallback): Unit = js.native

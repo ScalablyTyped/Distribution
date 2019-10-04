@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceName
-import typings.atPulumiAws.Anon_DeviceNameVirtualName
+import typings.atPulumiAws.typesInputMod.ec2Ns.AmiEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.AmiEphemeralBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait AmiState extends js.Object {
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationDeviceName]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiEbsBlockDevice]]]] = js.undefined
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
@@ -30,7 +30,7 @@ trait AmiState extends js.Object {
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameVirtualName]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiEphemeralBlockDevice]]]] = js.undefined
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.
@@ -81,9 +81,9 @@ object AmiState {
   def apply(
     architecture: Input[String] = null,
     description: Input[String] = null,
-    ebsBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationDeviceName]]] = null,
+    ebsBlockDevices: Input[js.Array[Input[AmiEbsBlockDevice]]] = null,
     enaSupport: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameVirtualName]]] = null,
+    ephemeralBlockDevices: Input[js.Array[Input[AmiEphemeralBlockDevice]]] = null,
     imageLocation: Input[String] = null,
     kernelId: Input[String] = null,
     manageEbsSnapshots: Input[Boolean] = null,

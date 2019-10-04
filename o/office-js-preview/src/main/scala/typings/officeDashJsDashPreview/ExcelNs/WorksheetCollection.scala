@@ -68,7 +68,7 @@ class WorksheetCollection () extends ClientObject {
   val onChanged: EventHandlers[WorksheetChangedEventArgs] = js.native
   /**
     *
-    * Occurs when sorting on columns.
+    * Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -115,7 +115,7 @@ class WorksheetCollection () extends ClientObject {
   val onFormatChanged: EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
     *
-    * Occurs when any worksheet in the workbook has row hidden state changed.
+    * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -125,7 +125,7 @@ class WorksheetCollection () extends ClientObject {
   val onRowHiddenChanged: EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
   /**
     *
-    * Occurs when sorting on rows.
+    * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -146,9 +146,8 @@ class WorksheetCollection () extends ClientObject {
     *
     * Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases:
     * 
-    * - The user drags the mouse for multi-selection.
-    * 
-    * - The user selects a cell in the mode when cell arguments are selected for formula references.
+    - The user drags the mouse for multi-selection.
+    - The user selects a cell in the mode when cell arguments are selected for formula references.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -305,25 +304,15 @@ class WorksheetCollection () extends ClientObject {
   def getLast(): Worksheet = js.native
   def getLast(visibleOnly: Boolean): Worksheet = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): WorksheetCollection = js.native
-  def load(option: WorksheetCollectionLoadOptions with CollectionLoadOptions): WorksheetCollection = js.native
-  def load(option: String): WorksheetCollection = js.native
-  def load(option: js.Array[String]): WorksheetCollection = js.native
-  def load(option: LoadOption): WorksheetCollection = js.native
+  def load(options: WorksheetCollectionLoadOptions with CollectionLoadOptions): WorksheetCollection = js.native
+  def load(propertyNamesAndPaths: LoadOption): WorksheetCollection = js.native
+  def load(propertyNames: String): WorksheetCollection = js.native
+  def load(propertyNames: js.Array[String]): WorksheetCollection = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.

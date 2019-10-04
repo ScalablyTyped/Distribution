@@ -34,14 +34,28 @@ object StalkerNs extends js.Object {
     */
   var trustThreshold: Double = js.native
   /**
-    * Calls `callback` synchronously when a `CALL` is made to `address`.
+    * Calls `callback` synchronously when a call is made to `address`.
     * Returns an id that can be passed to `removeCallProbe()` later.
     *
     * @param address Address of function to monitor stalked calls to.
     * @param callback Function to be called synchronously when a stalked
     *                 thread is about to call the function at `address`.
+    * @param data User data to be passed to `StalkerNativeCallProbeCallback`.
     */
   def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback): StalkerCallProbeId = js.native
+  def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback, data: NativePointerValue): StalkerCallProbeId = js.native
+  /**
+    * Marks a memory range as excluded. This means Stalker will not follow
+    * execution when encountering a call to an instruction in such a range.
+    * You will thus be able to observe/modify the arguments going in, and
+    * the return value coming back, but won't see the instructions that
+    * happened between.
+    *
+    * Useful to improve performance and reduce noise.
+    *
+    * @param range Range to exclude.
+    */
+  def exclude(range: MemoryRange): Unit = js.native
   /**
     * Flushes out any buffered events. Useful when you don't want to wait
     * until the next `queueDrainInterval` tick.

@@ -1,10 +1,9 @@
 package typings.ddDashTrace.ddDashTraceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ddDashTrace.Anon_B3
+import typings.ddDashTrace.Anon_Agentexporter
 import typings.ddDashTrace.Anon_Debug
 import typings.ddDashTrace.Anon_Port
-import typings.ddDashTrace.ddDashTraceStrings.`async-listener`
 import typings.ddDashTrace.ddDashTraceStrings.async_hooks
 import typings.ddDashTrace.ddDashTraceStrings.noop
 import scala.scalajs.js
@@ -39,7 +38,7 @@ trait TracerOptions extends js.Object {
     * Experimental features can be enabled all at once by using true or individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[Boolean | Anon_B3] = js.undefined
+  var experimental: js.UndefOr[Boolean | Anon_Agentexporter] = js.undefined
   /**
     * The address of the trace agent that the tracer will submit to.
     * @default 'localhost'
@@ -82,7 +81,7 @@ trait TracerOptions extends js.Object {
     * implementation for the runtime. Only change this if you know what you are
     * doing.
     */
-  var scope: js.UndefOr[async_hooks | `async-listener` | noop] = js.undefined
+  var scope: js.UndefOr[async_hooks | noop] = js.undefined
   /**
     * The service name to be used for this program. If not set, the service name
     * will attempted to be inferred from package.json
@@ -107,7 +106,7 @@ object TracerOptions {
     dogstatsd: Anon_Port = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     env: String = null,
-    experimental: Boolean | Anon_B3 = null,
+    experimental: Boolean | Anon_Agentexporter = null,
     hostname: String = null,
     logInjection: js.UndefOr[Boolean] = js.undefined,
     logger: Anon_Debug = null,
@@ -115,7 +114,7 @@ object TracerOptions {
     port: Double | String = null,
     runtimeMetrics: js.UndefOr[Boolean] = js.undefined,
     sampleRate: Int | Double = null,
-    scope: async_hooks | `async-listener` | noop = null,
+    scope: async_hooks | noop = null,
     service: String = null,
     tags: StringDictionary[js.Any] = null,
     url: String = null

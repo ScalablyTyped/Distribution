@@ -1,66 +1,79 @@
 package typings.reactDashSpinners
 
+import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps
+import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
+import typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashSpinnersProps {
   @scala.inline
-  def BarLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BarLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BarLoaderProps
-  type BarLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BarLoaderProps
+  def BarLoaderProps: LoaderHeightWidthProps.type = typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps
+  type BarLoaderProps = LoaderHeightWidthProps
   @scala.inline
-  def BeatLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BeatLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BeatLoaderProps
-  type BeatLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BeatLoaderProps
+  def BeatLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type BeatLoaderProps = LoaderSizeMarginProps
   @scala.inline
-  def BounceLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BounceLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BounceLoaderProps
-  type BounceLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BounceLoaderProps
+  def BounceLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type BounceLoaderProps = LoaderSizeProps
   @scala.inline
-  def CircleLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.CircleLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.CircleLoaderProps
-  type CircleLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.CircleLoaderProps
+  def CircleLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type CircleLoaderProps = LoaderSizeProps
   @scala.inline
-  def ClimbingBoxLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClimbingBoxLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClimbingBoxLoaderProps
-  type ClimbingBoxLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClimbingBoxLoaderProps
+  def ClimbingBoxLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type ClimbingBoxLoaderProps = LoaderSizeProps
   @scala.inline
-  def ClipLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClipLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClipLoaderProps
-  type ClipLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClipLoaderProps
+  def ClipLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type ClipLoaderProps = LoaderSizeProps
   @scala.inline
-  def DotLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.DotLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.DotLoaderProps
-  type DotLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.DotLoaderProps
+  def DotLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type DotLoaderProps = LoaderSizeProps
   @scala.inline
-  def FadeLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.FadeLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.FadeLoaderProps
-  type FadeLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.FadeLoaderProps
+  def FadeLoaderProps: LoaderHeightWidthRadiusProps.type = typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
+  type FadeLoaderProps = LoaderHeightWidthRadiusProps
   @scala.inline
-  def GridLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.GridLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.GridLoaderProps
-  type GridLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.GridLoaderProps
+  def GridLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type GridLoaderProps = LoaderSizeMarginProps
   @scala.inline
-  def HashLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.HashLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.HashLoaderProps
-  type HashLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.HashLoaderProps
+  def HashLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type HashLoaderProps = LoaderSizeProps
   @scala.inline
-  def MoonLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.MoonLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.MoonLoaderProps
-  type MoonLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.MoonLoaderProps
+  def LoaderProps: LoaderHeightWidthProps.type = typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps
+  type LoaderProps = LoaderHeightWidthProps
   @scala.inline
-  def PacmanLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PacmanLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PacmanLoaderProps
-  type PacmanLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PacmanLoaderProps
+  def MoonLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type MoonLoaderProps = LoaderSizeProps
   @scala.inline
-  def PropagateLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PropagateLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PropagateLoaderProps
-  type PropagateLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PropagateLoaderProps
+  def PacmanLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type PacmanLoaderProps = LoaderSizeMarginProps
   @scala.inline
-  def PulseLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PulseLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PulseLoaderProps
-  type PulseLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PulseLoaderProps
+  def PropagateLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type PropagateLoaderProps = LoaderSizeProps
   @scala.inline
-  def RingLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RingLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RingLoaderProps
-  type RingLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RingLoaderProps
+  def PulseLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type PulseLoaderProps = LoaderSizeMarginProps
   @scala.inline
-  def RiseLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RiseLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RiseLoaderProps
-  type RiseLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RiseLoaderProps
+  def RingLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type RingLoaderProps = LoaderSizeProps
   @scala.inline
-  def RotateLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RotateLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RotateLoaderProps
-  type RotateLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RotateLoaderProps
+  def RiseLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type RiseLoaderProps = LoaderSizeMarginProps
   @scala.inline
-  def ScaleLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ScaleLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ScaleLoaderProps
-  type ScaleLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ScaleLoaderProps
+  def RotateLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type RotateLoaderProps = LoaderSizeMarginProps
   @scala.inline
-  def SyncLoaderProps: typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.SyncLoaderProps.type = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.SyncLoaderProps
-  type SyncLoaderProps = typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.SyncLoaderProps
+  def ScaleLoaderProps: LoaderHeightWidthRadiusProps.type = typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
+  type ScaleLoaderProps = LoaderHeightWidthRadiusProps
+  @scala.inline
+  def SkewLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type SkewLoaderProps = LoaderSizeProps
+  @scala.inline
+  def SquareLoaderProps: LoaderSizeProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeProps
+  type SquareLoaderProps = LoaderSizeProps
+  @scala.inline
+  def SyncLoaderProps: LoaderSizeMarginProps.type = typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+  type SyncLoaderProps = LoaderSizeMarginProps
 }
 

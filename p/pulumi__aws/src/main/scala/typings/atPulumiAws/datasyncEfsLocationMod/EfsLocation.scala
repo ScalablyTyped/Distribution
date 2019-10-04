@@ -1,8 +1,8 @@
 package typings.atPulumiAws.datasyncEfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_SecurityGroupArns
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesOutputMod.datasyncNs.EfsLocationEc2Config
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +31,7 @@ class EfsLocation protected () extends CustomResource {
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: Output[Anon_SecurityGroupArns] = js.native
+  val ec2Config: Output[EfsLocationEc2Config] = js.native
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */

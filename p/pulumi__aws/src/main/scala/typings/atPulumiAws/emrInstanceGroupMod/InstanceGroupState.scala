@@ -1,6 +1,6 @@
 package typings.atPulumiAws.emrInstanceGroupMod
 
-import typings.atPulumiAws.Anon_IopsSize
+import typings.atPulumiAws.typesInputMod.emrNs.InstanceGroupEbsConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait InstanceGroupState extends js.Object {
   /**
     * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
     */
-  val ebsConfigs: js.UndefOr[Input[js.Array[Input[Anon_IopsSize]]]] = js.undefined
+  val ebsConfigs: js.UndefOr[Input[js.Array[Input[InstanceGroupEbsConfig]]]] = js.undefined
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
     */
@@ -49,7 +49,7 @@ object InstanceGroupState {
     autoscalingPolicy: Input[String] = null,
     bidPrice: Input[String] = null,
     clusterId: Input[String] = null,
-    ebsConfigs: Input[js.Array[Input[Anon_IopsSize]]] = null,
+    ebsConfigs: Input[js.Array[Input[InstanceGroupEbsConfig]]] = null,
     ebsOptimized: Input[Boolean] = null,
     instanceCount: Input[Double] = null,
     instanceType: Input[String] = null,

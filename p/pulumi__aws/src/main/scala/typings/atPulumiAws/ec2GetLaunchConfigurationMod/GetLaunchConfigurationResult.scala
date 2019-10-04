@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2GetLaunchConfigurationMod
 
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncrypted
-import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIops
-import typings.atPulumiAws.Anon_DeviceName
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchConfigurationEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchConfigurationEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchConfigurationRootBlockDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The EBS Block Devices attached to the instance.
     */
-  val ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncrypted]
+  val ebsBlockDevices: js.Array[GetLaunchConfigurationEbsBlockDevice]
   /**
     * Whether the launched EC2 instance will be EBS-optimized.
     */
@@ -27,7 +27,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The Ephemeral volumes on the instance.
     */
-  val ephemeralBlockDevices: js.Array[Anon_DeviceName]
+  val ephemeralBlockDevices: js.Array[GetLaunchConfigurationEphemeralBlockDevice]
   /**
     * The IAM Instance Profile to associate with launched instances.
     */
@@ -59,7 +59,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The Root Block Device of the instance.
     */
-  val rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncryptedIops]
+  val rootBlockDevices: js.Array[GetLaunchConfigurationRootBlockDevice]
   /**
     * A list of associated Security Group IDS.
     */
@@ -86,10 +86,10 @@ object GetLaunchConfigurationResult {
   @scala.inline
   def apply(
     associatePublicIpAddress: Boolean,
-    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncrypted],
+    ebsBlockDevices: js.Array[GetLaunchConfigurationEbsBlockDevice],
     ebsOptimized: Boolean,
     enableMonitoring: Boolean,
-    ephemeralBlockDevices: js.Array[Anon_DeviceName],
+    ephemeralBlockDevices: js.Array[GetLaunchConfigurationEphemeralBlockDevice],
     iamInstanceProfile: String,
     id: String,
     imageId: String,
@@ -97,7 +97,7 @@ object GetLaunchConfigurationResult {
     keyName: String,
     name: String,
     placementTenancy: String,
-    rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncryptedIops],
+    rootBlockDevices: js.Array[GetLaunchConfigurationRootBlockDevice],
     securityGroups: js.Array[String],
     spotPrice: String,
     userData: String,

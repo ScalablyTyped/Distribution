@@ -1,8 +1,8 @@
 package typings.atPulumiAws.datasyncTaskMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AtimeBytesPerSecond
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesInputMod.datasyncNs.TaskOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ trait TaskArgs extends js.Object {
   /**
     * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
     */
-  val options: js.UndefOr[Input[Anon_AtimeBytesPerSecond]] = js.undefined
+  val options: js.UndefOr[Input[TaskOptions]] = js.undefined
   /**
     * Amazon Resource Name (ARN) of source DataSync Location.
     */
@@ -42,7 +42,7 @@ object TaskArgs {
     sourceLocationArn: Input[ARN],
     cloudwatchLogGroupArn: Input[ARN] = null,
     name: Input[String] = null,
-    options: Input[Anon_AtimeBytesPerSecond] = null,
+    options: Input[TaskOptions] = null,
     tags: Input[StringDictionary[Input[String]]] = null
   ): TaskArgs = {
     val __obj = js.Dynamic.literal(destinationLocationArn = destinationLocationArn.asInstanceOf[js.Any], sourceLocationArn = sourceLocationArn.asInstanceOf[js.Any])

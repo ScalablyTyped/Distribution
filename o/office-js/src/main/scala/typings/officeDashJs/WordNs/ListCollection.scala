@@ -25,7 +25,7 @@ class ListCollection () extends ClientObject {
   val items: js.Array[List] = js.native
   /**
     *
-    * Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
+    * Gets a list by its identifier. Throws an error if there isn't a list with the identifier in this collection.
     *
     * [Api set: WordApi 1.3]
     *
@@ -43,7 +43,7 @@ class ListCollection () extends ClientObject {
   def getByIdOrNullObject(id: Double): List = js.native
   /**
     *
-    * Gets the first list in this collection. Throws if this collection is empty.
+    * Gets the first list in this collection. Throws an error if this collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

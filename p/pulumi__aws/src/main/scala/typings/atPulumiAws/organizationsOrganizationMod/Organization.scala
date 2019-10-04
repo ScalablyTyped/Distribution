@@ -1,7 +1,8 @@
 package typings.atPulumiAws.organizationsOrganizationMod
 
-import typings.atPulumiAws.Anon_ArnEmail
-import typings.atPulumiAws.Anon_ArnId
+import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationAccount
+import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationNonMasterAccount
+import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationRoot
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,7 +28,7 @@ class Organization protected () extends CustomResource {
   /**
     * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
     */
-  val accounts: Output[js.Array[Anon_ArnEmail]] = js.native
+  val accounts: Output[js.Array[OrganizationAccount]] = js.native
   /**
     * ARN of the root
     */
@@ -59,11 +60,11 @@ class Organization protected () extends CustomResource {
   /**
     * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
     */
-  val nonMasterAccounts: Output[js.Array[Anon_ArnEmail]] = js.native
+  val nonMasterAccounts: Output[js.Array[OrganizationNonMasterAccount]] = js.native
   /**
     * List of organization roots. All elements have these attributes:
     */
-  val roots: Output[js.Array[Anon_ArnId]] = js.native
+  val roots: Output[js.Array[OrganizationRoot]] = js.native
 }
 
 /* static members */

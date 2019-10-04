@@ -1,5 +1,6 @@
 package typings.seleniumDashWebdriver.seleniumDashWebdriverMod
 
+import typings.seleniumDashWebdriver.chromeMod.ServiceBuilder
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.loggingNs.Preferences
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,6 +63,25 @@ class Builder () extends js.Object {
     */
   def getCapabilities(): Capabilities = js.native
   /**
+    * @return {chrome.Options} the Chrome specific options currently configured
+    *     for this builder.
+    */
+  def getChromeOptions(): typings.seleniumDashWebdriver.chromeMod.Options = js.native
+  /**
+    * @return {firefox.Options} the Firefox specific options currently configured
+    *     for this instance.
+    */
+  def getFirefoxOptions(): typings.seleniumDashWebdriver.firefoxMod.Options = js.native
+  /**
+    * @return {http.Agent} The http agent used for each request
+    */
+  def getHttpAgent(): js.Any | Null = js.native
+  /**
+    * @return {safari.Options} the Safari specific options currently configured
+    *     for this instance.
+    */
+  def getSafariOptions(): typings.seleniumDashWebdriver.safariMod.Options = js.native
+  /**
     * @return {string} The URL of the WebDriver server this instance is
     *     configured to use.
     */
@@ -70,7 +90,7 @@ class Builder () extends js.Object {
     * @return {?string} The URL of the proxy server to use for the WebDriver's
     *    HTTP connections, or `null` if not set.
     */
-  def getWebDriverProxy(): String = js.native
+  def getWebDriverProxy(): String | Null = js.native
   /**
     * Sets the default action to take with an unexpected alert before returning
     * an error.
@@ -78,6 +98,7 @@ class Builder () extends js.Object {
     *     'dismiss', or 'ignore'. Defaults to 'dismiss'.
     * @return {!Builder} A self reference.
     */
+  def setAlertBehavior(): Builder = js.native
   def setAlertBehavior(behavior: String): Builder = js.native
   /**
     * Sets Chrome-specific options for drivers created by this builder. Any
@@ -90,6 +111,14 @@ class Builder () extends js.Object {
     */
   def setChromeOptions(options: typings.seleniumDashWebdriver.chromeMod.Options): Builder = js.native
   /**
+    * Sets the service builder to use for managing the chromedriver child process
+    * when creating new Chrome sessions.
+    *
+    * @param {chrome.ServiceBuilder} service the service to use.
+    * @return {!Builder} A self reference.
+    */
+  def setChromeService(service: ServiceBuilder): Builder = js.native
+  /**
     * Set {@linkplain edge.Options options} specific to Microsoft's Edge browser
     * for drivers created by this builder. Any proxy settings defined on the
     * given options will take precedence over those set through
@@ -99,6 +128,14 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setEdgeOptions(options: typings.seleniumDashWebdriver.edgeMod.Options): Builder = js.native
+  /**
+    * Sets the {@link edge.ServiceBuilder} to use to manage the
+    * MicrosoftEdgeDriver child process when creating sessions locally.
+    *
+    * @param {edge.ServiceBuilder} service the service to use.
+    * @return {!Builder} a self reference.
+    */
+  def setEdgeService(service: typings.seleniumDashWebdriver.edgeMod.ServiceBuilder): Builder = js.native
   /**
     * Sets Firefox-specific options for drivers created by this builder. Any
     * logging or proxy settings defined on the given options will take precedence
@@ -110,6 +147,14 @@ class Builder () extends js.Object {
     */
   def setFirefoxOptions(options: typings.seleniumDashWebdriver.firefoxMod.Options): Builder = js.native
   /**
+    * Sets the {@link firefox.ServiceBuilder} to use to manage the geckodriver
+    * child process when creating Firefox sessions locally.
+    *
+    * @param {firefox.ServiceBuilder} service the service to use.
+    * @return {!Builder} a self reference.
+    */
+  def setFirefoxService(service: typings.seleniumDashWebdriver.firefoxMod.ServiceBuilder): Builder = js.native
+  /**
     * Set Internet Explorer specific {@linkplain ie.Options options} for drivers
     * created by this builder. Any proxy settings defined on the given options
     * will take precedence over those set through {@link #setProxy}.
@@ -118,6 +163,14 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setIeOptions(options: typings.seleniumDashWebdriver.ieMod.Options): Builder = js.native
+  /**
+    * Sets the {@link ie.ServiceBuilder} to use to manage the geckodriver
+    * child process when creating IE sessions locally.
+    *
+    * @param {ie.ServiceBuilder} service the service to use.
+    * @return {!Builder} a self reference.
+    */
+  def setIeService(service: typings.seleniumDashWebdriver.ieMod.ServiceBuilder): Builder = js.native
   def setLoggingPrefs(prefs: js.Object): Builder = js.native
   /**
     * Sets the logging preferences for the created session. Preferences may be
@@ -143,7 +196,7 @@ class Builder () extends js.Object {
     * @param {!safari.Options} options The Safari options to use.
     * @return {!Builder} A self reference.
     */
-  def setSafari(options: typings.seleniumDashWebdriver.safariMod.Options): Builder = js.native
+  def setSafariOptions(options: typings.seleniumDashWebdriver.safariMod.Options): Builder = js.native
   /**
     * Sets the http agent to use for each request.
     * If this method is not called, the Builder will use http.globalAgent by

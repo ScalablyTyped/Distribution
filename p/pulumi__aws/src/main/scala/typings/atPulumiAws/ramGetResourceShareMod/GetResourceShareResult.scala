@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ramGetResourceShareMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ramNs.GetResourceShareFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait GetResourceShareResult extends js.Object {
     * The Amazon Resource Name (ARN) of the resource share.
     */
   val arn: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetResourceShareFilter]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
@@ -37,7 +37,7 @@ object GetResourceShareResult {
     resourceOwner: String,
     status: String,
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetResourceShareFilter] = null
   ): GetResourceShareResult = {
     val __obj = js.Dynamic.literal(arn = arn, id = id, name = name, resourceOwner = resourceOwner, status = status, tags = tags)
     if (filters != null) __obj.updateDynamic("filters")(filters)

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "rangeFont.toJSON()". */
+/** An interface describing the data returned by calling `rangeFont.toJSON()`. */
 trait RangeFontData extends js.Object {
   /**
     *

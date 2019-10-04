@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftBuildMod
 
-import typings.atPulumiAws.Anon_BucketKeyRoleArn
+import typings.atPulumiAws.typesInputMod.gameliftNs.BuildStorageLocation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait BuildArgs extends js.Object {
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: Input[Anon_BucketKeyRoleArn]
+  val storageLocation: Input[BuildStorageLocation]
   /**
     * Version that is associated with this build.
     */
@@ -29,7 +29,7 @@ object BuildArgs {
   @scala.inline
   def apply(
     operatingSystem: Input[String],
-    storageLocation: Input[Anon_BucketKeyRoleArn],
+    storageLocation: Input[BuildStorageLocation],
     name: Input[String] = null,
     version: Input[String] = null
   ): BuildArgs = {

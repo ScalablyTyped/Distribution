@@ -10,7 +10,7 @@ trait Config extends js.Object {
   var asyncStackTraces: js.UndefOr[Boolean] = js.undefined
   var client: js.UndefOr[String | (Instantiable1[/* config */ Config, typings.knex.knexMod.Client])] = js.undefined
   var connection: js.UndefOr[
-    String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig
+    String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | OracleDbConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig
   ] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var dialect: js.UndefOr[String] = js.undefined
@@ -38,7 +38,7 @@ object Config {
     acquireConnectionTimeout: Int | Double = null,
     asyncStackTraces: js.UndefOr[Boolean] = js.undefined,
     client: String | (Instantiable1[/* config */ Config, typings.knex.knexMod.Client]) = null,
-    connection: String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig = null,
+    connection: String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | OracleDbConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     dialect: String = null,
     log: Logger = null,

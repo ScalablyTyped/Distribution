@@ -23,6 +23,12 @@ trait NodeSpec extends js.Object {
     */
   val podCIDR: String
   /**
+    * podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If
+    * this field is specified, the 0th entry must match the podCIDR field. It may contain at most
+    * 1 value for each of IPv4 and IPv6.
+    */
+  val podCIDRs: js.Array[String]
+  /**
     * ID of the node assigned by the cloud provider in the format:
     * <ProviderName>://<ProviderSpecificNodeID>
     */
@@ -44,11 +50,12 @@ object NodeSpec {
     configSource: NodeConfigSource,
     externalID: String,
     podCIDR: String,
+    podCIDRs: js.Array[String],
     providerID: String,
     taints: js.Array[Taint],
     unschedulable: Boolean
   ): NodeSpec = {
-    val __obj = js.Dynamic.literal(configSource = configSource, externalID = externalID, podCIDR = podCIDR, providerID = providerID, taints = taints, unschedulable = unschedulable)
+    val __obj = js.Dynamic.literal(configSource = configSource, externalID = externalID, podCIDR = podCIDR, podCIDRs = podCIDRs, providerID = providerID, taints = taints, unschedulable = unschedulable)
   
     __obj.asInstanceOf[NodeSpec]
   }

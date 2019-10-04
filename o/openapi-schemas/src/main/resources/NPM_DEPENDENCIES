@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-schemas" : "1.0.1"
+      "openapi-schemas" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-schemas" : "1.0.1"
+      "openapi-schemas" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -24,7 +24,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.electron.ElectronNs.RendererInterface because var conflicts: clipboard, crashReporter, nativeImage, screen, shell. Inlined BrowserWindowProxy, desktopCapturer, ipcRenderer, remote, webFrame, webviewTag */ trait AllElectron extends MainInterface {
+- typings.electron.ElectronNs.RendererInterface because var conflicts: clipboard, crashReporter, nativeImage, shell. Inlined BrowserWindowProxy, desktopCapturer, ipcRenderer, remote, webFrame, webviewTag */ trait AllElectron extends MainInterface {
   var BrowserWindowProxy: Instantiable0[typings.electron.ElectronNs.BrowserWindowProxy]
   var desktopCapturer: DesktopCapturer
   var ipcRenderer: IpcRenderer

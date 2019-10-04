@@ -58,16 +58,17 @@ trait WebFrame extends EventEmitter {
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
   def executeJavaScript(code: String, userGesture: Boolean, callback: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   /**
-    * Work like executeJavaScript but evaluates scripts in an isolated context.
+    * Works like executeJavaScript but evaluates scripts in an isolated context.
+    * Deprecated Soon
     */
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): Unit = js.native
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): Unit = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[_] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[_] = js.native
   def executeJavaScriptInIsolatedWorld(
     worldId: Double,
     scripts: js.Array[WebSource],
     userGesture: Boolean,
     callback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  ): js.Promise[_] = js.native
   def findFrameByName(name: String): WebFrame = js.native
   def findFrameByRoutingId(routingId: Double): WebFrame = js.native
   def getFrameForSelector(selector: String): WebFrame = js.native
@@ -78,6 +79,10 @@ trait WebFrame extends EventEmitter {
   def getResourceUsage(): ResourceUsage = js.native
   def getZoomFactor(): Double = js.native
   def getZoomLevel(): Double = js.native
+  /**
+    * Inserts css as a style sheet in the document.
+    */
+  def insertCSS(css: String): Unit = js.native
   /**
     * Inserts text to the focused element.
     */

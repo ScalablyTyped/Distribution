@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArcGaugeOptions extends js.Object {
+  var centerTemplate: js.UndefOr[String | js.Function] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var colors: js.UndefOr[js.Array[ArcGaugeColor]] = js.undefined
   var gaugeArea: js.UndefOr[ArcGaugeGaugeArea] = js.undefined
@@ -20,6 +21,7 @@ trait ArcGaugeOptions extends js.Object {
 object ArcGaugeOptions {
   @scala.inline
   def apply(
+    centerTemplate: String | js.Function = null,
     color: String = null,
     colors: js.Array[ArcGaugeColor] = null,
     gaugeArea: ArcGaugeGaugeArea = null,
@@ -32,6 +34,7 @@ object ArcGaugeOptions {
     value: Int | Double = null
   ): ArcGaugeOptions = {
     val __obj = js.Dynamic.literal()
+    if (centerTemplate != null) __obj.updateDynamic("centerTemplate")(centerTemplate.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (gaugeArea != null) __obj.updateDynamic("gaugeArea")(gaugeArea)

@@ -14,6 +14,10 @@ trait IDerivation extends IDepTreeNode {
   @JSName("observing")
   var observing_IDerivation: js.Array[IObservable]
   /**
+    *  warn if the derivation has no dependencies after creation/update
+    */
+  var requiresObservable: js.UndefOr[Boolean] = js.undefined
+  /**
     * Id of the current run of a derivation. Each time the derivation is tracked
     * this number is increased by one. This number is globally unique
     */
@@ -36,10 +40,12 @@ object IDerivation {
     onBecomeStale: () => Unit,
     runId: Double,
     unboundDepsCount: Double,
-    newObserving: js.Array[IObservable] = null
+    newObserving: js.Array[IObservable] = null,
+    requiresObservable: js.UndefOr[Boolean] = js.undefined
   ): IDerivation = {
     val __obj = js.Dynamic.literal(__mapid = __mapid, dependenciesState = dependenciesState, isTracing = isTracing, name = name, observing = observing, onBecomeStale = js.Any.fromFunction0(onBecomeStale), runId = runId, unboundDepsCount = unboundDepsCount)
     if (newObserving != null) __obj.updateDynamic("newObserving")(newObserving)
+    if (!js.isUndefined(requiresObservable)) __obj.updateDynamic("requiresObservable")(requiresObservable)
     __obj.asInstanceOf[IDerivation]
   }
 }

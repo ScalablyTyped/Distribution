@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticbeanstalkConfigurationTemplateMod
 
-import typings.atPulumiAws.Anon_NameNamespace
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.ConfigurationTemplateSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -43,7 +43,7 @@ class ConfigurationTemplate protected () extends CustomResource {
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: Output[js.Array[Anon_NameNamespace]] = js.native
+  val settings: Output[js.Array[ConfigurationTemplateSetting]] = js.native
   /**
     * A solution stack to base your Template
     * off of. Example stacks can be found in the [Amazon API documentation][1]

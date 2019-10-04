@@ -65,12 +65,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationNfsResponse, Unit]
   ): Request[CreateLocationNfsResponse, AWSError] = js.native
   /**
-    * Creates an endpoint for an Amazon S3 bucket. For AWS DataSync to access a destination S3 bucket, it needs an AWS Identity and Access Management (IAM) role that has the required permissions. You can set up the required permissions by creating an IAM policy that grants the required permissions and attaching the policy to the role. An example of such a policy is shown in the examples section. For more information, see Configuring Amazon S3 Location Settings in the AWS DataSync User Guide. 
+    * Creates an endpoint for an Amazon S3 bucket. For AWS DataSync to access a destination S3 bucket, it needs an AWS Identity and Access Management (IAM) role that has the required permissions. You can set up the required permissions by creating an IAM policy that grants the required permissions and attaching the policy to the role. An example of such a policy is shown in the examples section. For more information, see https://docs.aws.amazon.com/datasync/latest/userguide/working-with-locations.html#create-s3-location in the AWS DataSync User Guide. 
     */
   def createLocationS3(): Request[CreateLocationS3Response, AWSError] = js.native
   def createLocationS3(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]): Request[CreateLocationS3Response, AWSError] = js.native
   /**
-    * Creates an endpoint for an Amazon S3 bucket. For AWS DataSync to access a destination S3 bucket, it needs an AWS Identity and Access Management (IAM) role that has the required permissions. You can set up the required permissions by creating an IAM policy that grants the required permissions and attaching the policy to the role. An example of such a policy is shown in the examples section. For more information, see Configuring Amazon S3 Location Settings in the AWS DataSync User Guide. 
+    * Creates an endpoint for an Amazon S3 bucket. For AWS DataSync to access a destination S3 bucket, it needs an AWS Identity and Access Management (IAM) role that has the required permissions. You can set up the required permissions by creating an IAM policy that grants the required permissions and attaching the policy to the role. An example of such a policy is shown in the examples section. For more information, see https://docs.aws.amazon.com/datasync/latest/userguide/working-with-locations.html#create-s3-location in the AWS DataSync User Guide. 
     */
   def createLocationS3(params: CreateLocationS3Request): Request[CreateLocationS3Response, AWSError] = js.native
   def createLocationS3(

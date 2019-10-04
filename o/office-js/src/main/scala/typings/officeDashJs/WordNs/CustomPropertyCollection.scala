@@ -50,7 +50,7 @@ class CustomPropertyCollection () extends ClientObject {
   def getCount(): ClientResult[Double] = js.native
   /**
     *
-    * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.
     *
     * [Api set: WordApi 1.3]
     *

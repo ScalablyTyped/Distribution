@@ -124,14 +124,14 @@ class Paragraph () extends ClientObject {
   var lineUnitBefore: Double = js.native
   /**
     *
-    * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
+    * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
   val list: List = js.native
   /**
     *
-    * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
+    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -166,7 +166,7 @@ class Paragraph () extends ClientObject {
   val parentBody: Body = js.native
   /**
     *
-    * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
     *
     * [Api set: WordApi 1.1]
     */
@@ -180,14 +180,14 @@ class Paragraph () extends ClientObject {
   val parentContentControlOrNullObject: ContentControl = js.native
   /**
     *
-    * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
+    * Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
   val parentTable: Table = js.native
   /**
     *
-    * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -288,14 +288,14 @@ class Paragraph () extends ClientObject {
   def detachFromList(): Unit = js.native
   /**
     *
-    * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+    * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
   def getHtml(): ClientResult[String] = js.native
   /**
     *
-    * Gets the next paragraph. Throws if the paragraph is the last one.
+    * Gets the next paragraph. Throws an error if the paragraph is the last one.
     *
     * [Api set: WordApi 1.3]
     */
@@ -316,7 +316,7 @@ class Paragraph () extends ClientObject {
   def getOoxml(): ClientResult[String] = js.native
   /**
     *
-    * Gets the previous paragraph. Throws if the paragraph is the first one.
+    * Gets the previous paragraph. Throws an error if the paragraph is the first one.
     *
     * [Api set: WordApi 1.3]
     */
@@ -363,7 +363,7 @@ class Paragraph () extends ClientObject {
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
     *
@@ -376,7 +376,7 @@ class Paragraph () extends ClientObject {
   ): Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
     *
@@ -393,7 +393,7 @@ class Paragraph () extends ClientObject {
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a document into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -405,7 +405,7 @@ class Paragraph () extends ClientObject {
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a document into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -422,7 +422,7 @@ class Paragraph () extends ClientObject {
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts HTML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -434,7 +434,7 @@ class Paragraph () extends ClientObject {
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts HTML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -451,7 +451,7 @@ class Paragraph () extends ClientObject {
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a picture into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -463,7 +463,7 @@ class Paragraph () extends ClientObject {
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
     *
-    * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a picture into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -480,7 +480,7 @@ class Paragraph () extends ClientObject {
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
     *
-    * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts OOXML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -492,7 +492,7 @@ class Paragraph () extends ClientObject {
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts OOXML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -509,7 +509,7 @@ class Paragraph () extends ClientObject {
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -521,7 +521,7 @@ class Paragraph () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -538,7 +538,7 @@ class Paragraph () extends ClientObject {
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -560,7 +560,7 @@ class Paragraph () extends ClientObject {
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -587,7 +587,7 @@ class Paragraph () extends ClientObject {
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts text into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -599,7 +599,7 @@ class Paragraph () extends ClientObject {
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts text into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *

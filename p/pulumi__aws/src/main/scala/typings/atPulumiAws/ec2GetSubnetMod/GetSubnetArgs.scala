@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetSubnetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetSubnetFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait GetSubnetArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSubnetFilter]] = js.undefined
   /**
     * The id of the specific subnet to retrieve.
     */
@@ -59,7 +59,7 @@ object GetSubnetArgs {
     availabilityZoneId: String = null,
     cidrBlock: String = null,
     defaultForAz: js.UndefOr[Boolean] = js.undefined,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetSubnetFilter] = null,
     id: String = null,
     ipv6CidrBlock: String = null,
     state: String = null,

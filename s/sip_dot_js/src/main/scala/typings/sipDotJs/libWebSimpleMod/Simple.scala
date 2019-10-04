@@ -1,6 +1,6 @@
 package typings.sipDotJs.libWebSimpleMod
 
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext

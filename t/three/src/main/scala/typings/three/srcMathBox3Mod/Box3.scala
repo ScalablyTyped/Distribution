@@ -5,6 +5,7 @@ import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathSphereMod.Sphere
+import typings.three.srcMathTriangleMod.Triangle
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,6 +41,7 @@ class Box3 () extends js.Object {
   def intersectsBox(box: Box3): Boolean = js.native
   def intersectsPlane(plane: Plane): Boolean = js.native
   def intersectsSphere(sphere: Sphere): Boolean = js.native
+  def intersectsTriangle(triangle: Triangle): Boolean = js.native
   def isEmpty(): Boolean = js.native
   /**
   	 * @deprecated Use {@link Box3#intersectsBox .intersectsBox()} instead.

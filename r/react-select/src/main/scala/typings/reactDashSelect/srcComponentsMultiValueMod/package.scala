@@ -8,7 +8,8 @@ package object srcComponentsMultiValueMod {
   import typings.reactDashSelect.Anon_ChildrenComponents
   import typings.reactDashSelect.Anon_ChildrenInnerPropsSelectProps
   import typings.reactDashSelect.srcTypesMod.CommonProps
+  import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 
-  type MultiValueProps[OptionType] = CommonProps[OptionType] with Anon_ChildrenComponents[OptionType]
-  type MultiValueRemoveProps[OptionType] = CommonProps[OptionType] with Anon_ChildrenInnerPropsSelectProps
+  type MultiValueProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with Anon_ChildrenComponents[OptionType]
+  type MultiValueRemoveProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with Anon_ChildrenInnerPropsSelectProps
 }

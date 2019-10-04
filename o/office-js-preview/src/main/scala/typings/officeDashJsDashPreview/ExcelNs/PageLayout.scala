@@ -67,6 +67,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  *
+  * Represents layout and print settings that are not dependent any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
+  *
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PageLayout")
@@ -211,7 +214,7 @@ class PageLayout () extends ClientObject {
   /**
     *
     * Gets or sets the worksheet's print zoom options.
-    * The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
+    The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -259,25 +262,15 @@ class PageLayout () extends ClientObject {
     */
   def getPrintTitleRowsOrNullObject(): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.PageLayout` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.PageLayout` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PageLayout` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PageLayout = js.native
-  def load(option: String): PageLayout = js.native
-  def load(option: js.Array[String]): PageLayout = js.native
-  def load(option: Anon_Expand): PageLayout = js.native
-  def load(option: PageLayoutLoadOptions): PageLayout = js.native
+  def load(options: PageLayoutLoadOptions): PageLayout = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): PageLayout = js.native
+  def load(propertyNames: String): PageLayout = js.native
+  def load(propertyNames: js.Array[String]): PageLayout = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

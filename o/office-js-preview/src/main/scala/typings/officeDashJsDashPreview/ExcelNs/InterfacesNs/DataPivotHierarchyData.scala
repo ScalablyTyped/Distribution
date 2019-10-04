@@ -19,7 +19,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "dataPivotHierarchy.toJSON()". */
+/** An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`. */
 trait DataPivotHierarchyData extends js.Object {
   /**
     *

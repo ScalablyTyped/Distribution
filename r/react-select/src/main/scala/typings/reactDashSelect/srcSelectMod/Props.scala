@@ -19,6 +19,7 @@ import typings.reactDashSelect.srcTypesMod.InputActionMeta
 import typings.reactDashSelect.srcTypesMod.KeyboardEventHandler
 import typings.reactDashSelect.srcTypesMod.MenuPlacement
 import typings.reactDashSelect.srcTypesMod.MenuPosition
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
 import typings.std.EventListener
@@ -28,7 +29,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ key in string ]: any} */ trait Props[OptionType] extends js.Object {
+- Dropped {[ key in string ]: any} */ trait Props[OptionType /* <: OptionTypeBase */] extends js.Object {
   /* Aria label (for assistive tech) */
   var `aria-label`: js.UndefOr[String] = js.undefined
   /* HTML ID of an element that should be used as the label (for assistive tech) */
@@ -187,7 +188,7 @@ import scala.scalajs.js.annotation._
 
 object Props {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,

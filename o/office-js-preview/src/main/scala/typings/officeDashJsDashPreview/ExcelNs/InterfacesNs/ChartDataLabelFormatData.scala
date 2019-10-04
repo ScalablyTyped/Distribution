@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartDataLabelFormat.toJSON()". */
+/** An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`. */
 trait ChartDataLabelFormatData extends js.Object {
   /**
     *

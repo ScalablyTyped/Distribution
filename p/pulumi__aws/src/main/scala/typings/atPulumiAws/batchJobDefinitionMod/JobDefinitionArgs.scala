@@ -1,8 +1,8 @@
 package typings.atPulumiAws.batchJobDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AttemptDurationSecondsInput
-import typings.atPulumiAws.Anon_AttemptsInput
+import typings.atPulumiAws.typesInputMod.batchNs.JobDefinitionRetryStrategy
+import typings.atPulumiAws.typesInputMod.batchNs.JobDefinitionTimeout
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,11 +26,11 @@ trait JobDefinitionArgs extends js.Object {
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
     * Maximum number of `retryStrategy` is `1`.  Defined below.
     */
-  val retryStrategy: js.UndefOr[Input[Anon_AttemptsInput]] = js.undefined
+  val retryStrategy: js.UndefOr[Input[JobDefinitionRetryStrategy]] = js.undefined
   /**
     * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
     */
-  val timeout: js.UndefOr[Input[Anon_AttemptDurationSecondsInput]] = js.undefined
+  val timeout: js.UndefOr[Input[JobDefinitionTimeout]] = js.undefined
   /**
     * The type of job definition.  Must be `container`
     */
@@ -44,8 +44,8 @@ object JobDefinitionArgs {
     containerProperties: Input[String] = null,
     name: Input[String] = null,
     parameters: Input[StringDictionary[Input[String]]] = null,
-    retryStrategy: Input[Anon_AttemptsInput] = null,
-    timeout: Input[Anon_AttemptDurationSecondsInput] = null
+    retryStrategy: Input[JobDefinitionRetryStrategy] = null,
+    timeout: Input[JobDefinitionTimeout] = null
   ): JobDefinitionArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -1,10 +1,10 @@
 package typings.atPulumiAws.albLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationIdSubnetId
-import typings.atPulumiAws.Anon_BucketEnabledPrefix
 import typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
 import typings.atPulumiAws.albLoadBalancerTypeMod.LoadBalancerType
+import typings.atPulumiAws.typesInputMod.albNs.LoadBalancerAccessLogs
+import typings.atPulumiAws.typesInputMod.albNs.LoadBalancerSubnetMapping
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait LoadBalancerState extends js.Object {
   /**
     * An Access Logs block. Access Logs documented below.
     */
-  val accessLogs: js.UndefOr[Input[Anon_BucketEnabledPrefix]] = js.undefined
+  val accessLogs: js.UndefOr[Input[LoadBalancerAccessLogs]] = js.undefined
   /**
     * The ARN of the load balancer (matches `id`).
     */
@@ -74,7 +74,7 @@ trait LoadBalancerState extends js.Object {
   /**
     * A subnet mapping block as documented below.
     */
-  val subnetMappings: js.UndefOr[Input[js.Array[Input[Anon_AllocationIdSubnetId]]]] = js.undefined
+  val subnetMappings: js.UndefOr[Input[js.Array[Input[LoadBalancerSubnetMapping]]]] = js.undefined
   /**
     * A list of subnet IDs to attach to the LB. Subnets
     * cannot be updated for Load Balancers of type `network`. Changing this value
@@ -95,7 +95,7 @@ trait LoadBalancerState extends js.Object {
 object LoadBalancerState {
   @scala.inline
   def apply(
-    accessLogs: Input[Anon_BucketEnabledPrefix] = null,
+    accessLogs: Input[LoadBalancerAccessLogs] = null,
     arn: Input[String] = null,
     arnSuffix: Input[String] = null,
     dnsName: Input[String] = null,
@@ -109,7 +109,7 @@ object LoadBalancerState {
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     securityGroups: Input[js.Array[Input[String]]] = null,
-    subnetMappings: Input[js.Array[Input[Anon_AllocationIdSubnetId]]] = null,
+    subnetMappings: Input[js.Array[Input[LoadBalancerSubnetMapping]]] = null,
     subnets: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,
     vpcId: Input[String] = null,

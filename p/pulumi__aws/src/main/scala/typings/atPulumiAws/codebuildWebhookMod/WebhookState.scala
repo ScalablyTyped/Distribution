@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codebuildWebhookMod
 
-import typings.atPulumiAws.Anon_FiltersAnonExcludeMatchedPatternPattern
+import typings.atPulumiAws.typesInputMod.codebuildNs.WebhookFilterGroup
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait WebhookState extends js.Object {
   /**
     * Information about the webhook's trigger. Filter group blocks are documented below.
     */
-  val filterGroups: js.UndefOr[Input[js.Array[Input[Anon_FiltersAnonExcludeMatchedPatternPattern]]]] = js.undefined
+  val filterGroups: js.UndefOr[Input[js.Array[Input[WebhookFilterGroup]]]] = js.undefined
   /**
     * The CodeBuild endpoint where webhook events are sent.
     */
@@ -37,7 +37,7 @@ object WebhookState {
   @scala.inline
   def apply(
     branchFilter: Input[String] = null,
-    filterGroups: Input[js.Array[Input[Anon_FiltersAnonExcludeMatchedPatternPattern]]] = null,
+    filterGroups: Input[js.Array[Input[WebhookFilterGroup]]] = null,
     payloadUrl: Input[String] = null,
     projectName: Input[String] = null,
     secret: Input[String] = null,

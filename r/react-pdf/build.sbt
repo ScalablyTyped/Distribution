@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-pdf"
-version := "4.0-dt-20190909Z-fe2279"
+version := "4.0-dt-20190909Z-2f09ef"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "pdfjs-dist" % "v2.1-dt-20190909Z-8df7a5",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
+  "org.scalablytyped" %%% "pdfjs-dist" % "v2.1-dt-20191002Z-dc4830",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-06c3ac",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-b3917f",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

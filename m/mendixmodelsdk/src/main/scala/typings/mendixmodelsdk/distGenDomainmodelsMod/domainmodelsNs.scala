@@ -55,6 +55,7 @@ import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IFloatAttrib
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IGeneralizationBase
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IIntegerAttributeTypeBase
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.INumericAttributeTypeBase
+import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IRemoteEntitySourceDocument
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IValueType
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.Index
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IndexedAttribute
@@ -96,6 +97,9 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSetSelector
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SelectorXPathSource
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SingleSearchField
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.StaticOrDynamicString
+import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IDocument
+import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IFolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IModule
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IModuleDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.Module
@@ -512,7 +516,7 @@ object domainmodelsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/entities relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IEntity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, generalization, attributes */ @js.native
+  - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IEntity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, generalization, attributes, isRemote, remoteSourceDocument, remoteSourceDocumentQualifiedName */ @js.native
   class Entity protected () extends Element {
     def this(
       model: AbstractModel,
@@ -533,6 +537,7 @@ object domainmodelsNs extends js.Object {
     val imageQualifiedName: String | Null = js.native
     val indexes: IList[Index] = js.native
     /**
+      * In version 8.2.0: added public
       * In version 7.17.0: introduced
       */
     var isRemote: Boolean = js.native
@@ -545,6 +550,13 @@ object domainmodelsNs extends js.Object {
       * In version 7.17.0: introduced
       */
     var remoteSource: String = js.native
+    /**
+      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      *
+      * In version 8.2.0: introduced
+      */
+    var remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
+    val remoteSourceDocumentQualifiedName: Null | String = js.native
     val validationRules: IList[ValidationRule] = js.native
   }
   
@@ -854,9 +866,21 @@ object domainmodelsNs extends js.Object {
       * This property is required and cannot be set to null.
       */
     val generalization: IGeneralizationBase = js.native
+    /**
+      * In version 8.2.0: added public
+      * In version 7.17.0: introduced
+      */
+    val isRemote: Boolean = js.native
     @JSName("model")
     val model_IEntity: IModel = js.native
     val name: String = js.native
+    /**
+      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      *
+      * In version 8.2.0: introduced
+      */
+    val remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
+    val remoteSourceDocumentQualifiedName: String | Null = js.native
   }
   
   @js.native
@@ -907,11 +931,35 @@ object domainmodelsNs extends js.Object {
   
   @js.native
   trait INoGeneralization extends IGeneralizationBase {
+    /**
+      * In version 8.2.0: added public
+      */
+    val hasChangedBy: Boolean = js.native
+    /**
+      * In version 8.2.0: added public
+      */
+    val hasChangedDate: Boolean = js.native
+    /**
+      * In version 8.2.0: added public
+      */
+    val hasCreatedDate: Boolean = js.native
+    /**
+      * In version 8.2.0: added public
+      */
+    val hasOwner: Boolean = js.native
     val persistable: Boolean = js.native
   }
   
   @js.native
   trait INumericAttributeTypeBase extends IAttributeType
+  
+  /**
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.2.0: introduced
+    */
+  @js.native
+  trait IRemoteEntitySourceDocument extends IDocument
   
   /**
     * In version 6.6.0: added public
@@ -1100,7 +1148,7 @@ object domainmodelsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.INoGeneralization because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined persistable */ @js.native
+  - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.INoGeneralization because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined hasChangedDate, hasCreatedDate, hasOwner, hasChangedBy, persistable */ @js.native
   class NoGeneralization protected () extends GeneralizationBase {
     def this(
       model: AbstractModel,
@@ -1112,9 +1160,21 @@ object domainmodelsNs extends js.Object {
     ) = this()
     @JSName("containerAsEntity")
     val containerAsEntity_NoGeneralization: Entity = js.native
+    /**
+      * In version 8.2.0: added public
+      */
     var hasChangedBy: Boolean = js.native
+    /**
+      * In version 8.2.0: added public
+      */
     var hasChangedDate: Boolean = js.native
+    /**
+      * In version 8.2.0: added public
+      */
     var hasCreatedDate: Boolean = js.native
+    /**
+      * In version 8.2.0: added public
+      */
     var hasOwner: Boolean = js.native
     var persistable: Boolean = js.native
   }
@@ -1170,6 +1230,23 @@ object domainmodelsNs extends js.Object {
     ) = this()
     var regularExpression: IRegularExpression | Null = js.native
     val regularExpressionQualifiedName: String | Null = js.native
+  }
+  
+  /**
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.2.0: introduced
+    */
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IRemoteEntitySourceDocument because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
+  abstract class RemoteEntitySourceDocument protected () extends Document {
+    def this(
+      model: AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      container: IFolderBase
+    ) = this()
   }
   
   @js.native
@@ -2323,6 +2400,13 @@ object domainmodelsNs extends js.Object {
       * of the parent ValidationRule element passed as argument.
       */
     def createIn(container: ValidationRule): RegExRuleInfo = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object RemoteEntitySourceDocument extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: StructureVersionInfo = js.native
   }
   
   /* static members */

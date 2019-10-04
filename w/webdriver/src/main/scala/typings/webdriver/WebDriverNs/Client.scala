@@ -272,20 +272,8 @@ trait Client extends js.Object {
     optionalIntentArguments: js.UndefOr[String],
     dontStopAppOnReset: js.UndefOr[String]
   ): Unit = js.native
-  def startRecordingScreen(
-    remotePath: js.UndefOr[String],
-    username: js.UndefOr[String],
-    password: js.UndefOr[String],
-    method: js.UndefOr[String],
-    forceRestart: js.UndefOr[Boolean],
-    timeLimit: js.UndefOr[String],
-    videoType: js.UndefOr[String],
-    videoQuality: js.UndefOr[String],
-    videoFps: js.UndefOr[String],
-    bitRate: js.UndefOr[String],
-    videoSize: js.UndefOr[String],
-    bugReport: js.UndefOr[String]
-  ): Unit = js.native
+  def startRecordingScreen(): Unit = js.native
+  def startRecordingScreen(options: js.Object): Unit = js.native
   def status(): StatusReturn = js.native
   def stopRecordingScreen(): String = js.native
   def stopRecordingScreen(remotePath: String): String = js.native

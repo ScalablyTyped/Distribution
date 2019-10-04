@@ -1,9 +1,9 @@
 package typings.appDashBuilderDashLib.outOptionsMsiOptionsMod
 
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.always
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
 import typings.appDashBuilderDashLib.outOptionsCommonWindowsInstallerConfigurationMod.CommonWindowsInstallerConfiguration
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,16 +5,19 @@ import typings.appDashBuilderDashLib.outConfigurationMod.AfterPackContext
 import typings.appDashBuilderDashLib.outConfigurationMod.Configuration
 import typings.appDashBuilderDashLib.outCoreMod.SourceRepositoryInfo
 import typings.appDashBuilderDashLib.outFrameworkMod.Framework
+import typings.appDashBuilderDashLib.outMod.Platform
 import typings.appDashBuilderDashLib.outMod.Target
 import typings.appDashBuilderDashLib.outOptionsMetadataMod.Metadata
 import typings.appDashBuilderDashLib.outPackagerApiMod.ArtifactBuildStarted
 import typings.appDashBuilderDashLib.outPackagerApiMod.ArtifactCreated
 import typings.appDashBuilderDashLib.outPackagerApiMod.PackagerOptions
 import typings.appDashBuilderDashLib.outPlatformPackagerMod.PlatformPackager
+import typings.appDashBuilderDashLib.outUtilPackageDependenciesMod.NodeModuleDirInfo
 import typings.builderDashUtil.builderDashUtilMod.DebugLogger
 import typings.builderDashUtil.builderDashUtilMod.TmpDir
 import typings.builderDashUtil.outArchMod.Arch
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeMod.CancellationToken
+import typings.lazyDashVal.lazyDashValMod.Lazy
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +37,6 @@ class Packager protected () extends js.Object {
   var _isPrepackedAppAsar: js.Any = js.native
   var _metadata: js.Any = js.native
   var _nodeModulesHandledExternally: js.Any = js.native
-  var _productionDeps: js.Any = js.native
   var _repositoryInfo: js.Any = js.native
   val afterPackHandlers: js.Any = js.native
   val appDir: String = js.native
@@ -53,13 +55,14 @@ class Packager protected () extends js.Object {
   val isPrepackedAppAsar: Boolean = js.native
   var isTwoPackageJsonProjectLayoutUsed: Boolean = js.native
   val metadata: Metadata = js.native
+  var nodeDependencyInfo: js.Any = js.native
   val options: PackagerOptions = js.native
-  val productionDeps: js.Any = js.native
   val projectDir: String = js.native
   var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
   val relativeBuildResourcesDirname: String = js.native
   val repositoryInfo: js.Promise[SourceRepositoryInfo | Null] = js.native
   val tempDirManager: TmpDir = js.native
+  val toDispose: js.Any = js.native
   def _build(configuration: Configuration, metadata: Metadata): js.Promise[BuildResult] = js.native
   def _build(
     configuration: Configuration,
@@ -85,6 +88,9 @@ class Packager protected () extends js.Object {
     * Only for sub artifacts (update info), for main artifacts use `callArtifactBuildCompleted`.
     */
   def dispatchArtifactCreated(event: ArtifactCreated): Unit = js.native
+  def disposeOnBuildFinish(disposer: js.Function0[js.Promise[Unit]]): Unit = js.native
+  def getNodeDependencyInfo(): Lazy[js.Array[NodeModuleDirInfo]] = js.native
+  def getNodeDependencyInfo(platform: Platform): Lazy[js.Array[NodeModuleDirInfo]] = js.native
   def stageDirPathCustomizer(target: Target, packager: PlatformPackager[_], arch: Arch): String = js.native
 }
 

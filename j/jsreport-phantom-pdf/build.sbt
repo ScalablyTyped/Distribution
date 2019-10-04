@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jsreport-phantom-pdf"
-version := "1.4-dt-20180222Z-56b8d1"
+version := "1.4-dt-20180222Z-436c4a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-a4ad59",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-ae86c5",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

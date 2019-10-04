@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dynamodbGlobalTableMod
 
-import typings.atPulumiAws.Anon_RegionName
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.GlobalTableReplica
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class GlobalTable protected () extends CustomResource {
   /**
     * Underlying DynamoDB Table. At least 1 replica must be defined. See below.
     */
-  val replicas: Output[js.Array[Anon_RegionName]] = js.native
+  val replicas: Output[js.Array[GlobalTableReplica]] = js.native
 }
 
 /* static members */

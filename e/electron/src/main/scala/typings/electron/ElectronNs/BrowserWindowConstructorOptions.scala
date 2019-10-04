@@ -179,8 +179,9 @@ trait BrowserWindowConstructorOptions extends js.Object {
     */
   var thickFrame: js.UndefOr[Boolean] = js.undefined
   /**
-    * Default window title. Default is "Electron". If the HTML tag is defined in the
-    * HTML file loaded by loadURL(), this property will be ignored.
+    * Default window title. Default is "Electron". If the HTML tag </code> is defined
+    * in the HTML file loaded by <code>loadURL()</code>, this property will be
+    * ignored.</foo>
     */
   var title: js.UndefOr[String] = js.undefined
   /**

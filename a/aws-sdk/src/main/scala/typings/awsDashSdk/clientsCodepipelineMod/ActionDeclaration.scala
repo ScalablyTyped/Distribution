@@ -30,7 +30,7 @@ trait ActionDeclaration extends js.Object {
     */
   var region: js.UndefOr[AWSRegionName] = js.undefined
   /**
-    * The ARN of the IAM service role that will perform the declared action. This is assumed through the roleArn for the pipeline.
+    * The ARN of the IAM service role that performs the declared action. This is assumed through the roleArn for the pipeline.
     */
   var roleArn: js.UndefOr[RoleArn] = js.undefined
   /**

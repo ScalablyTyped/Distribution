@@ -247,6 +247,15 @@
 [debug] PhaseRunner.scala:84 Success [id => dhtmlxgantt, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing dhtmlxgantt [id => dhtmlxgantt, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => dhtmlxgantt, phase => scala.js] 
+[warn ] Phase3Compile.scala:214 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/dhtmlxgantt/ganttMod.scala:14:8
+[E]      ganttMod is already defined as object ganttMod
+[E]      L14: object ganttMod extends TopLevel[GanttEnterprise]
+[E]                  ^
+[E] src/main/scala/typings/dhtmlxgantt/ganttMod.scala: L14 [E1]
+[E] Failed to compile 'dhtmlxgantt'
+ [id => dhtmlxgantt, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => build] 
 [warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => build] gigahorse.StatusError: Unexpected status: 404
 	at gigahorse.StatusError$.apply(StatusError.scala:29)
 	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
@@ -259,13 +268,3 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[warn ] Phase3Compile.scala:214 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/dhtmlxgantt/ganttMod.scala:14:8
-[E]      ganttMod is already defined as object ganttMod
-[E]      L14: object ganttMod extends TopLevel[GanttEnterprise]
-[E]                  ^
-[E] src/main/scala/typings/dhtmlxgantt/ganttMod.scala: L14 [E1]
-[E] Failed to compile 'dhtmlxgantt'
- [id => dhtmlxgantt, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => publish] 

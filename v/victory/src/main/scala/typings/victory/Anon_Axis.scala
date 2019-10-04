@@ -6,24 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Axis extends js.Object {
-  var axis: CSSProperties
-  var axisLabel: CSSProperties
-  var grid: CSSProperties
-  var tickLabels: CSSProperties
-  var ticks: CSSProperties
+  var axis: js.UndefOr[CSSProperties] = js.undefined
+  var axisLabel: js.UndefOr[CSSProperties] = js.undefined
+  var grid: js.UndefOr[CSSProperties] = js.undefined
+  var tickLabels: js.UndefOr[CSSProperties] = js.undefined
+  var ticks: js.UndefOr[CSSProperties] = js.undefined
 }
 
 object Anon_Axis {
   @scala.inline
   def apply(
-    axis: CSSProperties,
-    axisLabel: CSSProperties,
-    grid: CSSProperties,
-    tickLabels: CSSProperties,
-    ticks: CSSProperties
+    axis: CSSProperties = null,
+    axisLabel: CSSProperties = null,
+    grid: CSSProperties = null,
+    tickLabels: CSSProperties = null,
+    ticks: CSSProperties = null
   ): Anon_Axis = {
-    val __obj = js.Dynamic.literal(axis = axis, axisLabel = axisLabel, grid = grid, tickLabels = tickLabels, ticks = ticks)
-  
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (tickLabels != null) __obj.updateDynamic("tickLabels")(tickLabels)
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
     __obj.asInstanceOf[Anon_Axis]
   }
 }

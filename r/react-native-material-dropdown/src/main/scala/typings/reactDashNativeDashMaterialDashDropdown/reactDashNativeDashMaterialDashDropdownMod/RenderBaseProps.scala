@@ -75,6 +75,7 @@ object RenderBaseProps {
     itemTextStyle: StyleProp[TextStyle] = null,
     label: String = null,
     labelExtractor: (/* item */ DropDownData, /* index */ Double) => String = null,
+    labelFontSize: Int | Double = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: () => Unit = null,
@@ -146,6 +147,7 @@ object RenderBaseProps {
     if (itemTextStyle != null) __obj.updateDynamic("itemTextStyle")(itemTextStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelExtractor != null) __obj.updateDynamic("labelExtractor")(js.Any.fromFunction2(labelExtractor))
+    if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))

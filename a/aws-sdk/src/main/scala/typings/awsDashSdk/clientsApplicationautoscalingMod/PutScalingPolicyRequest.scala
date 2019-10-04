@@ -10,7 +10,7 @@ trait PutScalingPolicyRequest extends js.Object {
     */
   var PolicyName: typings.awsDashSdk.clientsApplicationautoscalingMod.PolicyName
   /**
-    * The policy type. This parameter is required if you are creating a scaling policy. The following policy types are supported:   TargetTrackingScaling—Not supported for Amazon EMR or AppStream  StepScaling—Not supported for Amazon DynamoDB For more information, see Step Scaling Policies for Application Auto Scaling and Target Tracking Scaling Policies for Application Auto Scaling in the Application Auto Scaling User Guide.
+    * The policy type. This parameter is required if you are creating a scaling policy. The following policy types are supported:   TargetTrackingScaling—Not supported for Amazon EMR or AppStream  StepScaling—Not supported for Amazon DynamoDB For more information, see Target Tracking Scaling Policies and Step Scaling Policies in the Application Auto Scaling User Guide.
     */
   var PolicyType: js.UndefOr[typings.awsDashSdk.clientsApplicationautoscalingMod.PolicyType] = js.undefined
   /**

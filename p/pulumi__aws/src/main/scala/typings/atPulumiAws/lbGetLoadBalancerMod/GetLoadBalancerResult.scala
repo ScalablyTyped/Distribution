@@ -1,14 +1,14 @@
 package typings.atPulumiAws.lbGetLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationId
-import typings.atPulumiAws.Anon_Bucket
+import typings.atPulumiAws.typesOutputMod.lbNs.GetLoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.lbNs.GetLoadBalancerSubnetMapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetLoadBalancerResult extends js.Object {
-  val accessLogs: Anon_Bucket
+  val accessLogs: GetLoadBalancerAccessLogs
   val arn: String
   val arnSuffix: String
   val dnsName: String
@@ -22,7 +22,7 @@ trait GetLoadBalancerResult extends js.Object {
   val loadBalancerType: String
   val name: String
   val securityGroups: js.Array[String]
-  val subnetMappings: js.Array[Anon_AllocationId]
+  val subnetMappings: js.Array[GetLoadBalancerSubnetMapping]
   val subnets: js.Array[String]
   val tags: StringDictionary[js.Any]
   val vpcId: String
@@ -32,7 +32,7 @@ trait GetLoadBalancerResult extends js.Object {
 object GetLoadBalancerResult {
   @scala.inline
   def apply(
-    accessLogs: Anon_Bucket,
+    accessLogs: GetLoadBalancerAccessLogs,
     arn: String,
     arnSuffix: String,
     dnsName: String,
@@ -43,7 +43,7 @@ object GetLoadBalancerResult {
     loadBalancerType: String,
     name: String,
     securityGroups: js.Array[String],
-    subnetMappings: js.Array[Anon_AllocationId],
+    subnetMappings: js.Array[GetLoadBalancerSubnetMapping],
     subnets: js.Array[String],
     tags: StringDictionary[js.Any],
     vpcId: String,

@@ -1,9 +1,9 @@
 package typings.atPulumiAws.appsyncDataSourceMod
 
-import typings.atPulumiAws.Anon_Endpoint
-import typings.atPulumiAws.Anon_EndpointString
-import typings.atPulumiAws.Anon_FunctionArn
-import typings.atPulumiAws.Anon_Region
+import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceDynamodbConfig
+import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceElasticsearchConfig
+import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceHttpConfig
+import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceLambdaConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -40,19 +40,19 @@ class DataSource protected () extends CustomResource {
   /**
     * DynamoDB settings. See below
     */
-  val dynamodbConfig: Output[js.UndefOr[Anon_Region]] = js.native
+  val dynamodbConfig: Output[js.UndefOr[DataSourceDynamodbConfig]] = js.native
   /**
     * Amazon Elasticsearch settings. See below
     */
-  val elasticsearchConfig: Output[js.UndefOr[Anon_Endpoint]] = js.native
+  val elasticsearchConfig: Output[js.UndefOr[DataSourceElasticsearchConfig]] = js.native
   /**
     * HTTP settings. See below
     */
-  val httpConfig: Output[js.UndefOr[Anon_EndpointString]] = js.native
+  val httpConfig: Output[js.UndefOr[DataSourceHttpConfig]] = js.native
   /**
     * AWS Lambda settings. See below
     */
-  val lambdaConfig: Output[js.UndefOr[Anon_FunctionArn]] = js.native
+  val lambdaConfig: Output[js.UndefOr[DataSourceLambdaConfig]] = js.native
   /**
     * A user-supplied name for the DataSource.
     */

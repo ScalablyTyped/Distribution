@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafRateBasedRuleMod
 
-import typings.atPulumiAws.Anon_DataIdNegated
+import typings.atPulumiAws.typesInputMod.wafNs.RateBasedRulePredicate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ trait RateBasedRuleState extends js.Object {
   /**
     * The objects to include in a rule (documented below).
     */
-  val predicates: js.UndefOr[Input[js.Array[Input[Anon_DataIdNegated]]]] = js.undefined
+  val predicates: js.UndefOr[Input[js.Array[Input[RateBasedRulePredicate]]]] = js.undefined
   /**
     * Valid value is IP.
     */
   val rateKey: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 2000.
+    * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 100.
     */
   val rateLimit: js.UndefOr[Input[Double]] = js.undefined
 }
@@ -34,7 +34,7 @@ object RateBasedRuleState {
   def apply(
     metricName: Input[String] = null,
     name: Input[String] = null,
-    predicates: Input[js.Array[Input[Anon_DataIdNegated]]] = null,
+    predicates: Input[js.Array[Input[RateBasedRulePredicate]]] = null,
     rateKey: Input[String] = null,
     rateLimit: Input[Double] = null
   ): RateBasedRuleState = {

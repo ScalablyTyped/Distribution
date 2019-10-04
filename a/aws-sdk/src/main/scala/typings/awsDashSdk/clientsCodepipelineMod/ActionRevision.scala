@@ -10,7 +10,7 @@ trait ActionRevision extends js.Object {
     */
   var created: Timestamp
   /**
-    * The unique identifier of the change that set the state to this revision, for example a deployment ID or timestamp.
+    * The unique identifier of the change that set the state to this revision (for example, a deployment ID or timestamp).
     */
   var revisionChangeId: RevisionChangeIdentifier
   /**

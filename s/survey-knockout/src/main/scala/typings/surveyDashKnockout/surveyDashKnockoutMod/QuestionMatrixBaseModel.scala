@@ -43,7 +43,6 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
   /* protected */ def clearInvisibleValuesInRows(): Unit = js.native
   /* protected */ def createColumnValues(): js.Any = js.native
   /* protected */ def filterItems(): Boolean = js.native
-  /* protected */ def getRowName(row: js.Any): js.Any = js.native
   /* protected */ def getVisibleRows(): js.Array[TRow] = js.native
   /* protected */ def hasRowsAsItems(): Boolean = js.native
   /* protected */ def onColumnsChanged(): Unit = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "auto-bind" : "2.1.0"
+      "auto-bind" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "auto-bind" : "2.1.0"
+      "auto-bind" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

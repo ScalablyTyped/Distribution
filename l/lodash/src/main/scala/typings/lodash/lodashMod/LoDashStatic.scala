@@ -12,6 +12,7 @@ import typings.lodash.lodashStrings.asc
 import typings.lodash.lodashStrings.desc
 import typings.std.Error
 import typings.std.Exclude
+import typings.std.NonNullable
 import typings.std.Pick
 import typings.std.RegExp
 import scala.scalajs.js
@@ -1204,7 +1205,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.defaults
     */
-  def defaults[TObject](`object`: TObject): TObject = js.native
+  def defaults[TObject](`object`: TObject): NonNullable[TObject] = js.native
   /**
     * Assigns own enumerable properties of source object(s) to the destination object for all destination
     * properties that resolve to undefined. Once a property is set, additional values of the same property are
@@ -1216,19 +1217,19 @@ trait LoDashStatic extends js.Object {
     * @param sources The source objects.
     * @return The destination object.
     */
-  def defaults[TObject, TSource](`object`: TObject, source: TSource): TSource with TObject = js.native
+  def defaults[TObject, TSource](`object`: TObject, source: TSource): NonNullable[TSource with TObject] = js.native
   /**
     * @see _.defaults
     */
-  def defaults[TObject, TSource1, TSource2](`object`: TObject, source1: TSource1, source2: TSource2): TSource2 with TSource1 with TObject = js.native
+  def defaults[TObject, TSource1, TSource2](`object`: TObject, source1: TSource1, source2: TSource2): NonNullable[TSource2 with TSource1 with TObject] = js.native
   /**
     * @see _.defaults
     */
-  def defaults[TObject, TSource1, TSource2, TSource3](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3): TSource3 with TSource2 with TSource1 with TObject = js.native
+  def defaults[TObject, TSource1, TSource2, TSource3](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3): NonNullable[TSource3 with TSource2 with TSource1 with TObject] = js.native
   /**
     * @see _.defaults
     */
-  def defaults[TObject, TSource1, TSource2, TSource3, TSource4](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TSource4 with TSource3 with TSource2 with TSource1 with TObject = js.native
+  def defaults[TObject, TSource1, TSource2, TSource3, TSource4](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): NonNullable[TSource4 with TSource3 with TSource2 with TSource1 with TObject] = js.native
   /**
     * This method is like _.defaults except that it recursively assigns default properties.
     * @param object The destination object.

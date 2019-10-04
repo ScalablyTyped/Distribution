@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Instance extends js.Object {
   /**
+    * An array of objects representing the add-ons enabled on the instance.
+    */
+  var addOns: js.UndefOr[AddOnList] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) of the instance (e.g., arn:aws:lightsail:us-east-2:123456789101:Instance/244ad76f-8aad-4741-809f-12345EXAMPLE).
     */
   var arn: js.UndefOr[NonEmptyString] = js.undefined
@@ -86,6 +90,7 @@ trait Instance extends js.Object {
 object Instance {
   @scala.inline
   def apply(
+    addOns: AddOnList = null,
     arn: NonEmptyString = null,
     blueprintId: NonEmptyString = null,
     blueprintName: NonEmptyString = null,
@@ -107,6 +112,7 @@ object Instance {
     username: NonEmptyString = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
+    if (addOns != null) __obj.updateDynamic("addOns")(addOns)
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId)
     if (blueprintName != null) __obj.updateDynamic("blueprintName")(blueprintName)

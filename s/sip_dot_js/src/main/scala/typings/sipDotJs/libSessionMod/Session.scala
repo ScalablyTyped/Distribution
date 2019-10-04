@@ -1,7 +1,7 @@
 package typings.sipDotJs.libSessionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libConstantsMod.CNs.causes
 import typings.sipDotJs.libCoreMessagesIncomingDashRequestMod.IncomingRequest
 import typings.sipDotJs.libCoreMessagesMethodsAckMod.IncomingAckRequest

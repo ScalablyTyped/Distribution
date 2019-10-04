@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-  * To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+  To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
   *
   * [Api set: ExcelApi 1.1]
   */
@@ -127,7 +127,7 @@ class Worksheet () extends ClientObject {
   val onChanged: EventHandlers[WorksheetChangedEventArgs] = js.native
   /**
     *
-    * Occurs when sorting on columns.
+    * Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -165,7 +165,7 @@ class Worksheet () extends ClientObject {
   val onFormatChanged: EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
     *
-    * Occurs when row hidden state changed on a specific worksheet.
+    * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -175,7 +175,7 @@ class Worksheet () extends ClientObject {
   val onRowHiddenChanged: EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
   /**
     *
-    * Occurs when sorting on rows.
+    * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -196,9 +196,8 @@ class Worksheet () extends ClientObject {
     *
     * Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in the following cases:
     * 
-    * - The user drags the mouse for multi-selection.
-    * 
-    * - The user selects a cell in the mode when cell arguments are selected for formula references.
+    - The user drags the mouse for multi-selection.
+    - The user selects a cell in the mode when cell arguments are selected for formula references.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -490,25 +489,15 @@ class Worksheet () extends ClientObject {
   def getUsedRangeOrNullObject(): Range = js.native
   def getUsedRangeOrNullObject(valuesOnly: Boolean): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Worksheet = js.native
-  def load(option: String): Worksheet = js.native
-  def load(option: js.Array[String]): Worksheet = js.native
-  def load(option: Anon_Expand): Worksheet = js.native
-  def load(option: WorksheetLoadOptions): Worksheet = js.native
+  def load(options: WorksheetLoadOptions): Worksheet = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Worksheet = js.native
+  def load(propertyNames: String): Worksheet = js.native
+  def load(propertyNames: js.Array[String]): Worksheet = js.native
   /**
     *
     * Finds and replaces the given string based on the criteria specified within the current worksheet.

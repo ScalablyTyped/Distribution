@@ -1,0 +1,20 @@
+package typings.appDashBuilderDashLib.outUtilPackageDependenciesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait NodeModuleDirInfo extends js.Object {
+  val deps: js.Array[NodeModuleInfo]
+  val dir: String
+}
+
+object NodeModuleDirInfo {
+  @scala.inline
+  def apply(deps: js.Array[NodeModuleInfo], dir: String): NodeModuleDirInfo = {
+    val __obj = js.Dynamic.literal(deps = deps, dir = dir)
+  
+    __obj.asInstanceOf[NodeModuleDirInfo]
+  }
+}
+

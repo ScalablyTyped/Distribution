@@ -1,6 +1,6 @@
 package typings.atPulumiAws.daxParameterGroupMod
 
-import typings.atPulumiAws.Anon_Name
+import typings.atPulumiAws.typesOutputMod.daxNs.ParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,7 +34,7 @@ class ParameterGroup protected () extends CustomResource {
   /**
     * The parameters of the parameter group.
     */
-  val parameters: Output[js.Array[Anon_Name]] = js.native
+  val parameters: Output[js.Array[ParameterGroupParameter]] = js.native
 }
 
 /* static members */

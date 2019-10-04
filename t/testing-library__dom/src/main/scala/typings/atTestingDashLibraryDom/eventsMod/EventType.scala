@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.input
   - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.invalid
   - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.submit
+  - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.reset
   - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.click
   - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.contextMenu
   - typings.atTestingDashLibraryDom.atTestingDashLibraryDomStrings.dblClick

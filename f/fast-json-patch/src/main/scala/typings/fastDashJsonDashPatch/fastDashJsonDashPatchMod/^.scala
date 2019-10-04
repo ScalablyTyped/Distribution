@@ -1,10 +1,13 @@
 package typings.fastDashJsonDashPatch.fastDashJsonDashPatchMod
 
-import typings.fastDashJsonDashPatch.libCoreMod.Operation
-import typings.fastDashJsonDashPatch.libCoreMod.OperationResult
-import typings.fastDashJsonDashPatch.libCoreMod.PatchResult
-import typings.fastDashJsonDashPatch.libCoreMod.Validator
-import typings.fastDashJsonDashPatch.libHelpersMod.PatchError
+import org.scalablytyped.runtime.Instantiable5
+import typings.fastDashJsonDashPatch.moduleCoreMod.Operation
+import typings.fastDashJsonDashPatch.moduleCoreMod.OperationResult
+import typings.fastDashJsonDashPatch.moduleCoreMod.PatchResult
+import typings.fastDashJsonDashPatch.moduleCoreMod.Validator
+import typings.fastDashJsonDashPatch.moduleDuplexMod.Observer
+import typings.fastDashJsonDashPatch.moduleHelpersMod.JsonPatchErrorName
+import typings.fastDashJsonDashPatch.moduleHelpersMod.PatchError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +15,16 @@ import scala.scalajs.js.annotation._
 @JSImport("fast-json-patch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val JsonPatchError: Instantiable5[
+    /* message */ String, 
+    /* name */ JsonPatchErrorName, 
+    js.UndefOr[/* index */ Double], 
+    js.UndefOr[/* operation */ js.Any], 
+    js.UndefOr[/* tree */ js.Any], 
+    PatchError
+  ] = js.native
+  val deepClone: js.Function1[/* obj */ js.Any, js.Any] = js.native
+  def _areEquals(a: js.Any, b: js.Any): Boolean = js.native
   def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = js.native

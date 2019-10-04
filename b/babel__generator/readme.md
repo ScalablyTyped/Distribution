@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__generator
 
-Typings are for version 7.0
+Typings are for version 7.6
 
 ## Library description:
 Turns an AST into code.

@@ -1,5 +1,6 @@
 package typings.vegaDashTypings.typesSpecConfigMod
 
+import typings.vegaDashTypings.typesSpecAxisMod.TickCount
 import typings.vegaDashTypings.typesSpecEncodeMod.Orientation
 import typings.vegaDashTypings.typesSpecLegendMod.BaseLegend
 import scala.scalajs.js
@@ -101,12 +102,14 @@ object LegendConfig {
     symbolDashOffset: N = null,
     symbolDirection: Orientation = null,
     symbolFillColor: C = null,
+    symbolLimit: N = null,
     symbolOffset: N = null,
     symbolOpacity: N = null,
     symbolSize: N = null,
     symbolStrokeColor: C = null,
     symbolStrokeWidth: N = null,
     symbolType: SY = null,
+    tickCount: TickCount = null,
     titleAlign: A = null,
     titleAnchor: AN = null,
     titleBaseline: TB = null,
@@ -116,6 +119,7 @@ object LegendConfig {
     titleFontStyle: FS = null,
     titleFontWeight: FW = null,
     titleLimit: N = null,
+    titleLineHeight: N = null,
     titleOpacity: N = null,
     titleOrient: O = null,
     titlePadding: N = null
@@ -164,12 +168,14 @@ object LegendConfig {
     if (symbolDashOffset != null) __obj.updateDynamic("symbolDashOffset")(symbolDashOffset.asInstanceOf[js.Any])
     if (symbolDirection != null) __obj.updateDynamic("symbolDirection")(symbolDirection)
     if (symbolFillColor != null) __obj.updateDynamic("symbolFillColor")(symbolFillColor.asInstanceOf[js.Any])
+    if (symbolLimit != null) __obj.updateDynamic("symbolLimit")(symbolLimit.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
     if (symbolOpacity != null) __obj.updateDynamic("symbolOpacity")(symbolOpacity.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (symbolStrokeColor != null) __obj.updateDynamic("symbolStrokeColor")(symbolStrokeColor.asInstanceOf[js.Any])
     if (symbolStrokeWidth != null) __obj.updateDynamic("symbolStrokeWidth")(symbolStrokeWidth.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
+    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
     if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
     if (titleAnchor != null) __obj.updateDynamic("titleAnchor")(titleAnchor.asInstanceOf[js.Any])
     if (titleBaseline != null) __obj.updateDynamic("titleBaseline")(titleBaseline.asInstanceOf[js.Any])
@@ -179,6 +185,7 @@ object LegendConfig {
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
     if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
     if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
+    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titleOrient != null) __obj.updateDynamic("titleOrient")(titleOrient.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])

@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A persistor is a redux store unto itself, allowing you to purge stored state, flush all
+  * pending state serialization and immediately write to disk
+  */
 trait Persistor extends js.Object {
   def dispatch(action: PersistorAction): PersistorAction
   def flush(): js.Promise[_]

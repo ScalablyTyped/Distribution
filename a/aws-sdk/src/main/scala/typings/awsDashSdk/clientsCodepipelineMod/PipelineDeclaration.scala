@@ -10,7 +10,7 @@ trait PipelineDeclaration extends js.Object {
     */
   var artifactStore: js.UndefOr[ArtifactStore] = js.undefined
   /**
-    * A mapping of artifactStore objects and their corresponding regions. There must be an artifact store for the pipeline region and for each cross-region action within the pipeline.  You must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
+    * A mapping of artifactStore objects and their corresponding AWS Regions. There must be an artifact store for the pipeline Region and for each cross-region action in the pipeline.  You must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
     */
   var artifactStores: js.UndefOr[ArtifactStoreMap] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait PipelineDeclaration extends js.Object {
     */
   var stages: PipelineStageDeclarationList
   /**
-    * The version number of the pipeline. A new pipeline always has a version number of 1. This number is automatically incremented when a pipeline is updated.
+    * The version number of the pipeline. A new pipeline always has a version number of 1. This number is incremented when a pipeline is updated.
     */
   var version: js.UndefOr[PipelineVersion] = js.undefined
 }

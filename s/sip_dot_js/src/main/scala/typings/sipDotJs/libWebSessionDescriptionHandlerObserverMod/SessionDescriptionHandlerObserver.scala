@@ -1,5 +1,6 @@
 package typings.sipDotJs.libWebSessionDescriptionHandlerObserverMod
 
+import typings.sipDotJs.libApiSessionMod.Session
 import typings.sipDotJs.libEnumsMod.TypeStrings
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext
@@ -10,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Web/SessionDescriptionHandlerObserver", "SessionDescriptionHandlerObserver")
 @js.native
 class SessionDescriptionHandlerObserver protected () extends js.Object {
+  def this(session: Session, options: js.Any) = this()
   def this(session: InviteClientContext, options: js.Any) = this()
   def this(session: InviteServerContext, options: js.Any) = this()
   var options: js.Any = js.native

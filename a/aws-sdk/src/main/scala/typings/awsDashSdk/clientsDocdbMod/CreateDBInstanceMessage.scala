@@ -38,7 +38,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * The tags to be assigned to the DB instance.
+    * The tags to be assigned to the DB instance. You can assign up to 10 tags to an instance.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

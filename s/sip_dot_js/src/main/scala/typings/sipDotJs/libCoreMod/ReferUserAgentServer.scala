@@ -11,8 +11,8 @@ class ReferUserAgentServer protected ()
   extends typings.sipDotJs.libCoreUserDashAgentsMod.ReferUserAgentServer {
   /**
     * REFER UAS constructor.
-    * @param dialogOrCore Dialog for in dialog REFER, UserAgentCore for out of dialog REFER.
-    * @param message Incoming REFER request message.
+    * @param dialogOrCore - Dialog for in dialog REFER, UserAgentCore for out of dialog REFER.
+    * @param message - Incoming REFER request message.
     */
   def this(
     dialogOrCore: typings.sipDotJs.libCoreDialogsMod.SessionDialog,

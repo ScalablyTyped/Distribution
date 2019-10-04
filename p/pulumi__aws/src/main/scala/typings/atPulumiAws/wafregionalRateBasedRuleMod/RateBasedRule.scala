@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRateBasedRuleMod
 
-import typings.atPulumiAws.Anon_DataId
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.RateBasedRulePredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,13 +33,13 @@ class RateBasedRule protected () extends CustomResource {
   /**
     * The objects to include in a rule (documented below).
     */
-  val predicates: Output[js.UndefOr[js.Array[Anon_DataId]]] = js.native
+  val predicates: Output[js.UndefOr[js.Array[RateBasedRulePredicate]]] = js.native
   /**
     * Valid value is IP.
     */
   val rateKey: Output[String] = js.native
   /**
-    * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 2000.
+    * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 100.
     */
   val rateLimit: Output[Double] = js.native
 }

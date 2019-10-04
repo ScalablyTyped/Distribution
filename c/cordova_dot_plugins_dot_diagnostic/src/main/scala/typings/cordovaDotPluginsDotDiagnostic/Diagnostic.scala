@@ -14,19 +14,19 @@ trait Diagnostic extends js.Object {
     * Constants for the various NFC power states.
     * @type {Object}
     */
-  var NFCState: js.UndefOr[js.Any] = js.native
+  var NFCState: Anon_POWEREDOFFPOWEREDON = js.native
   /**
     * ANDROID and iOS ONLY
     * Constants for the various Bluetooth hardware states.
     * @type {Object}
     */
-  var bluetoothState: js.UndefOr[js.Any] = js.native
+  var bluetoothState: Anon_POWEREDOFF = js.native
   /**
     * ANDROID ONLY
     * Constants for the various CPU architectures.
     * @type {Object}
     */
-  var cpuArchitecture: js.UndefOr[js.Any] = js.native
+  var cpuArchitecture: Anon_ARMv6 = js.native
   /**
     * ANDROID and iOS ONLY
     * Enables debug mode, which logs native plugin debug messages to the native and JS consoles.
@@ -682,39 +682,39 @@ trait Diagnostic extends js.Object {
     * Location authorization mode
     * @type {Object}
     */
-  var locationAuthorizationMode: js.UndefOr[js.Any] = js.native
+  var locationAuthorizationMode: Anon_ALWAYS = js.native
   /**
     * ANDROID ONLY
     * Constants for the various location modes on Android.
     * @type {Object}
     */
-  var locationMode: js.UndefOr[js.Any] = js.native
+  var locationMode: Anon_BATTERYSAVING = js.native
   /**
     * iOS ONLY
     * Constants for requesting and reporting the various motion states.
     * @type {Object}
     */
-  var motionStatus: js.UndefOr[js.Any] = js.native
+  var motionStatus: Anon_AuthorizedDENIEDALWAYS = js.native
   /**
     * ANDROID ONLY
     * "Dangerous" permissions that need to be requested at run-time (Android 6.0/API 23 and above)
     * See http://developer.android.com/guide/topics/security/permissions.html#perm-groups
     * @type {Object}
     */
-  var permission: js.UndefOr[js.Any] = js.native
+  var permission: Anon_ACCESSCOARSELOCATION = js.native
   /**
     * ANDROID ONLY
     * Permission groups indicate which associated permissions will also be requested if a given permission is requested.
     * See http://developer.android.com/guide/topics/security/permissions.html#perm-groups
     * @type {Object}
     */
-  var permissionGroups: js.UndefOr[js.Any] = js.native
+  var permissionGroups: Anon_ACCESSCOARSELOCATIONACCESSFINELOCATION = js.native
   /**
     * ANDROID and iOS ONLY
     * Constants for requesting and reporting the various permission states.
     * @type {Object}
     */
-  var permissionStatus: js.UndefOr[js.Any] = js.native
+  var permissionStatus: Anon_Authorized = js.native
   /**
     * ANDROID and iOS ONLY
     * Registers a function to be called when a change in Bluetooth state occurs. Pass in a falsey value to de-register the currently registered function.
@@ -749,7 +749,7 @@ trait Diagnostic extends js.Object {
     * Constants for requesting/reporting the various types of remote notification permission types on iOS devices.
     * @type {Object}
     */
-  var remoteNotificationType: js.UndefOr[js.Any] = js.native
+  var remoteNotificationType: Anon_ALERT = js.native
   /**
     * iOS ONLY
     * Requests Bluetooth authorization for the application.

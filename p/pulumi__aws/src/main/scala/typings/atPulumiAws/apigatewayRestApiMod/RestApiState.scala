@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayRestApiMod
 
-import typings.atPulumiAws.Anon_TypesInput
+import typings.atPulumiAws.typesInputMod.apigatewayNs.RestApiEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ trait RestApiState extends js.Object {
   /**
     * Nested argument defining API endpoint configuration including endpoint type. Defined below.
     */
-  val endpointConfiguration: js.UndefOr[Input[Anon_TypesInput]] = js.undefined
+  val endpointConfiguration: js.UndefOr[Input[RestApiEndpointConfiguration]] = js.undefined
   /**
     * The execution ARN part to be used in [`lambdaPermission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn`
     * when allowing API Gateway to invoke a Lambda function,
@@ -63,7 +63,7 @@ object RestApiState {
     body: Input[String] = null,
     createdDate: Input[String] = null,
     description: Input[String] = null,
-    endpointConfiguration: Input[Anon_TypesInput] = null,
+    endpointConfiguration: Input[RestApiEndpointConfiguration] = null,
     executionArn: Input[String] = null,
     minimumCompressionSize: Input[Double] = null,
     name: Input[String] = null,

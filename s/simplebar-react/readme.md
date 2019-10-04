@@ -1,7 +1,7 @@
 
 # Scala.js typings for simplebar-react
 
-Typings are for version 1.2.1
+Typings are for version 1.2.3
 
 ## Library description:
 React component for SimpleBar

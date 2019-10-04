@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-responsive
 
-Typings are for version 3.0
+Typings are for version 8.0
 
 ## Library description:
 Media queries in react for responsive design

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uirouter__core"
-version := "5.0.23-0526b5"
+version := "6.0.1-fb4768"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

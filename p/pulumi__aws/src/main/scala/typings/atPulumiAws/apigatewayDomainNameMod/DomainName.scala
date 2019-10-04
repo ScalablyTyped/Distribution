@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDomainNameMod
 
-import typings.atPulumiAws.Anon_Types
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.DomainNameEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -71,7 +71,7 @@ class DomainName protected () extends CustomResource {
   /**
     * Configuration block defining API endpoint information including type. Defined below.
     */
-  val endpointConfiguration: Output[Anon_Types] = js.native
+  val endpointConfiguration: Output[DomainNameEndpointConfiguration] = js.native
   /**
     * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and `certificatePrivateKey`.
     */

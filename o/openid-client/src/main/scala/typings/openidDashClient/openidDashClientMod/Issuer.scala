@@ -1,7 +1,7 @@
 package typings.openidDashClient.openidDashClientMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPanvaJose.atPanvaJoseMod.JWKSNs.KeyStore
+import typings.jose.joseMod.JWKSNs.KeyStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Issuer[TClient /* <: Client */] protected ()
   extends /* key */ StringDictionary[js.Any] {
+  // tslint:disable-line:no-unnecessary-generics
   def this(metadata: IssuerMetadata) = this()
   /**
     * Returns the <Client> class tied to this issuer.
@@ -21,7 +22,7 @@ class Issuer[TClient /* <: Client */] protected ()
   var metadata: IssuerMetadata = js.native
   var static: js.Any = js.native
   /**
-    * Returns the issuer's jwks_uri keys as a @panva/jose parsed JWKS.Keystore.
+    * Returns the issuer's jwks_uri keys as a `jose` parsed JWKS.Keystore.
     * @param forceReload forces a reload of the issuer's jwks_uri
     */
   def keystore(): js.Promise[KeyStore] = js.native

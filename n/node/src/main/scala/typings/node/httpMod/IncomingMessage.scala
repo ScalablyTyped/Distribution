@@ -37,6 +37,7 @@ class IncomingMessage protected () extends Readable {
     * Only valid for request obtained from http.Server.
     */
   var url: js.UndefOr[java.lang.String] = js.native
+  def setTimeout(msecs: Double): this.type = js.native
   def setTimeout(msecs: Double, callback: js.Function0[Unit]): this.type = js.native
 }
 

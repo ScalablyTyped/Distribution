@@ -151,7 +151,7 @@ class BrowserWindow () extends EventEmitter {
     * Captures a snapshot of the page within rect. Omitting rect will capture the
     * whole visible page.
     */
-  def capturePage(): Unit = js.native
+  def capturePage(): js.Promise[NativeImage] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
@@ -159,7 +159,7 @@ class BrowserWindow () extends EventEmitter {
     * Deprecated Soon
     */
   def capturePage(callback: js.Function1[/* image */ NativeImage, Unit]): Unit = js.native
-  def capturePage(rect: Rectangle): Unit = js.native
+  def capturePage(rect: Rectangle): js.Promise[NativeImage] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores

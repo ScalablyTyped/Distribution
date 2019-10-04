@@ -17,6 +17,7 @@ object Helpers extends js.Object {
   def isArrayContainsEqual(x: js.Any, y: js.Any): Boolean = js.native
   def isArraysEqual(x: js.Any, y: js.Any): Boolean = js.native
   def isArraysEqual(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = js.native
+  def isNumber(value: js.Any): Boolean = js.native
   def isTwoValueEquals(x: js.Any, y: js.Any): Boolean = js.native
   def isTwoValueEquals(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = js.native
   /**

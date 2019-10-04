@@ -1,7 +1,7 @@
 package typings.atPulumiAws.albListenerRuleMod
 
-import typings.atPulumiAws.Anon_AuthenticateCognito
-import typings.atPulumiAws.Anon_Field
+import typings.atPulumiAws.typesOutputMod.albNs.ListenerRuleAction
+import typings.atPulumiAws.typesOutputMod.albNs.ListenerRuleCondition
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,7 +26,7 @@ class ListenerRule protected () extends CustomResource {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: Output[js.Array[Anon_AuthenticateCognito]] = js.native
+  val actions: Output[js.Array[ListenerRuleAction]] = js.native
   /**
     * The ARN of the rule (matches `id`)
     */
@@ -34,7 +34,7 @@ class ListenerRule protected () extends CustomResource {
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: Output[js.Array[Anon_Field]] = js.native
+  val conditions: Output[js.Array[ListenerRuleCondition]] = js.native
   /**
     * The ARN of the listener to which to attach the rule.
     */

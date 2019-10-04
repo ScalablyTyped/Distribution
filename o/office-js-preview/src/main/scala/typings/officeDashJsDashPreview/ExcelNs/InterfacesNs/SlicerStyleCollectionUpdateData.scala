@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the SlicerStyleCollection object, for use in "slicerStyleCollection.set({ ... })". */
+/** An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ... })`. */
 trait SlicerStyleCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
 }

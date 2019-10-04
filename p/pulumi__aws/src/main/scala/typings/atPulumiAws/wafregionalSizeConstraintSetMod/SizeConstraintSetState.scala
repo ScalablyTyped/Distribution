@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalSizeConstraintSetMod
 
-import typings.atPulumiAws.Anon_ComparisonOperatorFieldToMatchSize
+import typings.atPulumiAws.typesInputMod.wafregionalNs.SizeConstraintSetSizeConstraint
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,14 +14,14 @@ trait SizeConstraintSetState extends js.Object {
   /**
     * Specifies the parts of web requests that you want to inspect the size of.
     */
-  val sizeConstraints: js.UndefOr[Input[js.Array[Input[Anon_ComparisonOperatorFieldToMatchSize]]]] = js.undefined
+  val sizeConstraints: js.UndefOr[Input[js.Array[Input[SizeConstraintSetSizeConstraint]]]] = js.undefined
 }
 
 object SizeConstraintSetState {
   @scala.inline
   def apply(
     name: Input[String] = null,
-    sizeConstraints: Input[js.Array[Input[Anon_ComparisonOperatorFieldToMatchSize]]] = null
+    sizeConstraints: Input[js.Array[Input[SizeConstraintSetSizeConstraint]]] = null
   ): SizeConstraintSetState = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -63,7 +63,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the PageLayout object, for use in "pageLayout.set({ ... })". */
+/** An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`. */
 trait PageLayoutUpdateData extends js.Object {
   /**
     *
@@ -203,6 +203,7 @@ trait PageLayoutUpdateData extends js.Object {
   /**
     *
     * Gets or sets the worksheet's print zoom options.
+    The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
     *
     * [Api set: ExcelApi 1.9]
     */

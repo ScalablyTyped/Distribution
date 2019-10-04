@@ -26,8 +26,6 @@ class Mesh () extends Object3D {
   var material: Material | js.Array[Material] = js.native
   var morphTargetDictionary: js.UndefOr[StringDictionary[Double]] = js.native
   var morphTargetInfluences: js.UndefOr[js.Array[Double]] = js.native
-  def copy(source: this.type): this.type = js.native
-  def copy(source: this.type, recursive: Boolean): this.type = js.native
   def setDrawMode(drawMode: TrianglesDrawModes): Unit = js.native
   def updateMorphTargets(): Unit = js.native
 }

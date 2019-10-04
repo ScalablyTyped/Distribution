@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftGameSessionQueueMod
 
-import typings.atPulumiAws.Anon_MaximumIndividualPlayerLatencyMilliseconds
+import typings.atPulumiAws.typesOutputMod.gameliftNs.GameSessionQueuePlayerLatencyPolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -38,7 +38,7 @@ class GameSessionQueue protected () extends CustomResource {
   /**
     * One or more policies used to choose fleet based on player latency. See below.
     */
-  val playerLatencyPolicies: Output[js.UndefOr[js.Array[Anon_MaximumIndividualPlayerLatencyMilliseconds]]] = js.native
+  val playerLatencyPolicies: Output[js.UndefOr[js.Array[GameSessionQueuePlayerLatencyPolicy]]] = js.native
   /**
     * Maximum time a game session request can remain in the queue.
     */

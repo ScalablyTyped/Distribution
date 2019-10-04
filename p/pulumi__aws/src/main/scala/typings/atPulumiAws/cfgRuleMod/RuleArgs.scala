@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cfgRuleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ComplianceResourceIdComplianceResourceTypes
-import typings.atPulumiAws.Anon_OwnerSourceDetails
+import typings.atPulumiAws.typesInputMod.cfgNs.RuleScope
+import typings.atPulumiAws.typesInputMod.cfgNs.RuleSource
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,12 +29,12 @@ trait RuleArgs extends js.Object {
   /**
     * Scope defines which resources can trigger an evaluation for the rule as documented below.
     */
-  val scope: js.UndefOr[Input[Anon_ComplianceResourceIdComplianceResourceTypes]] = js.undefined
+  val scope: js.UndefOr[Input[RuleScope]] = js.undefined
   /**
     * Source specifies the rule owner, the rule identifier, and the notifications that cause
     * the function to evaluate your AWS resources as documented below.
     */
-  val source: Input[Anon_OwnerSourceDetails]
+  val source: Input[RuleSource]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -44,12 +44,12 @@ trait RuleArgs extends js.Object {
 object RuleArgs {
   @scala.inline
   def apply(
-    source: Input[Anon_OwnerSourceDetails],
+    source: Input[RuleSource],
     description: Input[String] = null,
     inputParameters: Input[String] = null,
     maximumExecutionFrequency: Input[String] = null,
     name: Input[String] = null,
-    scope: Input[Anon_ComplianceResourceIdComplianceResourceTypes] = null,
+    scope: Input[RuleScope] = null,
     tags: Input[StringDictionary[_]] = null
   ): RuleArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])

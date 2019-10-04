@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ClientIdProviderName
+import typings.atPulumiAws.typesInputMod.cognitoNs.IdentityPoolCognitoIdentityProvider
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait IdentityPoolArgs extends js.Object {
   /**
     * An array of Amazon Cognito Identity user pools and their client IDs.
     */
-  val cognitoIdentityProviders: js.UndefOr[Input[js.Array[Input[Anon_ClientIdProviderName]]]] = js.undefined
+  val cognitoIdentityProviders: js.UndefOr[Input[js.Array[Input[IdentityPoolCognitoIdentityProvider]]]] = js.undefined
   /**
     * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
     * backend and the Cognito service to communicate about the developer provider.
@@ -48,7 +48,7 @@ object IdentityPoolArgs {
   def apply(
     identityPoolName: Input[String],
     allowUnauthenticatedIdentities: Input[Boolean] = null,
-    cognitoIdentityProviders: Input[js.Array[Input[Anon_ClientIdProviderName]]] = null,
+    cognitoIdentityProviders: Input[js.Array[Input[IdentityPoolCognitoIdentityProvider]]] = null,
     developerProviderName: Input[String] = null,
     openidConnectProviderArns: Input[js.Array[Input[String]]] = null,
     samlProviderArns: Input[js.Array[Input[String]]] = null,

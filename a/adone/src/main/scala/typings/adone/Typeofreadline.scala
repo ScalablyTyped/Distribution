@@ -39,7 +39,7 @@ trait Typeofreadline extends js.Object {
   def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = js.native
   def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
   def emitKeypressEvents(stream: ReadableStream): Unit = js.native
-  def emitKeypressEvents(stream: ReadableStream, interface: Interface): Unit = js.native
+  def emitKeypressEvents(stream: ReadableStream, readlineInterface: Interface): Unit = js.native
   /**
     * Moves this WriteStream's cursor relative to its current position.
     */

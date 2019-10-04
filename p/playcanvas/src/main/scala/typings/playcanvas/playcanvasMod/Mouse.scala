@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Mouse
+  * @extends pc.EventHandler
   * @classdesc A Mouse Device, bound to a DOM Element.
   * @description Create a new Mouse device
   * @param {Element} [element] The Element that the mouse events are attached to

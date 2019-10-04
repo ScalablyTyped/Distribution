@@ -1,5 +1,6 @@
 package typings.three.srcMathMatrix4Mod
 
+import typings.std.ArrayLike
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix3Mod.Matrix
@@ -51,8 +52,20 @@ class Matrix4 () extends Matrix {
   	 * @deprecated Use {@link Matrix4#toArray .toArray()} instead.
   	 */
   def flattenToArrayOffset(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  /**
+  	 * Sets the values of this matrix from the provided array.
+  	 * @param array the source array.
+  	 * @param offset (optional) offset into the array. Default is 0.
+  	 */
   def fromArray(array: js.Array[Double]): Matrix4 = js.native
   def fromArray(array: js.Array[Double], offset: Double): Matrix4 = js.native
+  /**
+  	 * Sets the values of this matrix from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): Matrix4 = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): Matrix4 = js.native
   /**
   	 * Sets this matrix to the inverse of matrix m.
   	 * Based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm.
@@ -184,6 +197,24 @@ class Matrix4 () extends Matrix {
   	 * @deprecated Use {@link Matrix4#makeRotationFromQuaternion .makeRotationFromQuaternion()} instead.
   	 */
   def setRotationFromQuaternion(q: Quaternion): Matrix4 = js.native
+  /**
+  	 * Returns an array with the values of this matrix, or copies them into the provided array.
+  	 * @param array (optional) array to store the matrix to. If this is not provided, a new array will be created.
+  	 * @param offset (optional) optional offset into the array.
+  	 * @return The created or provided array.
+  	 */
   def toArray(): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double]): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
+  def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+  /**
+  	 * Copies he values of this matrix into the provided array-like.
+  	 * @param array array-like to store the matrix to.
+  	 * @param offset (optional) optional offset into the array-like.
+  	 * @return The provided array-like.
+  	 */
+  @JSName("toArray")
+  def toArray_ArrayLike(): ArrayLike[Double] = js.native
 }
 

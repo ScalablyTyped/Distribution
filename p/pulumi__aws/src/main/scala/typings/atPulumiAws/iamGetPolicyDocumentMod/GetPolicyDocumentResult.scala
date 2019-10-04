@@ -1,6 +1,6 @@
 package typings.atPulumiAws.iamGetPolicyDocumentMod
 
-import typings.atPulumiAws.Anon_ActionsConditions
+import typings.atPulumiAws.typesOutputMod.iamNs.GetPolicyDocumentStatement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait GetPolicyDocumentResult extends js.Object {
   val overrideJson: js.UndefOr[String] = js.undefined
   val policyId: js.UndefOr[String] = js.undefined
   val sourceJson: js.UndefOr[String] = js.undefined
-  val statements: js.UndefOr[js.Array[Anon_ActionsConditions]] = js.undefined
+  val statements: js.UndefOr[js.Array[GetPolicyDocumentStatement]] = js.undefined
   val version: js.UndefOr[String] = js.undefined
 }
 
@@ -29,7 +29,7 @@ object GetPolicyDocumentResult {
     overrideJson: String = null,
     policyId: String = null,
     sourceJson: String = null,
-    statements: js.Array[Anon_ActionsConditions] = null,
+    statements: js.Array[GetPolicyDocumentStatement] = null,
     version: String = null
   ): GetPolicyDocumentResult = {
     val __obj = js.Dynamic.literal(id = id, json = json)

@@ -1,5 +1,7 @@
 package typings.expressDashToDashKoa
 
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
@@ -17,6 +19,6 @@ object expressDashToDashKoaMod extends js.Object {
       /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
       Unit
     ]
-  ): Middleware[_, js.Object] = js.native
+  ): Middleware[DefaultState, DefaultContext] = js.native
 }
 

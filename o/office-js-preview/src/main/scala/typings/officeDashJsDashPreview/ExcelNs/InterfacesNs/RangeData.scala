@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "range.toJSON()". */
+/** An interface describing the data returned by calling `range.toJSON()`. */
 trait RangeData extends js.Object {
   /**
     *
@@ -167,9 +167,11 @@ trait RangeData extends js.Object {
   var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
-    * Represents Excel's number format code for the given range, based on the language settings of the user.
-    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+    * Represents Excel's number format code for the given range, based on the language settings of the user.​
+    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+    If the argument is a single value, it will be applied to all cells in the range.​
+    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+    Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -198,8 +200,8 @@ trait RangeData extends js.Object {
   /**
     *
     * Represents if ALL the cells would be saved as an array formula.
-    * Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-    * Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+    Returns true if ALL cells would be saved as an array formula, or false if ALL cells would NOT be saved as an array formula.
+    Returns null if some cells would be saved as an array formula and some would not be.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

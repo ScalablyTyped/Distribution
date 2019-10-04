@@ -18,7 +18,7 @@ class default () extends Settings {
   /* CompleteClass */
   override val fs: FileSystemAdapter = js.native
   /* CompleteClass */
-  override val fsStatSettings: typings.atNodelibFsDotStat.atNodelibFsDotStatMod.Settings = js.native
+  override val fsStatSettings: Settings = js.native
   /* CompleteClass */
   override val pathSegmentSeparator: String = js.native
   /* CompleteClass */

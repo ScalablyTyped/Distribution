@@ -34,6 +34,10 @@ trait InstanceSnapshot extends js.Object {
     */
   var fromInstanceName: js.UndefOr[ResourceName] = js.undefined
   /**
+    * A Boolean value indicating whether the snapshot was created from an automatic snapshot.
+    */
+  var isFromAutoSnapshot: js.UndefOr[Boolean] = js.undefined
+  /**
     * The region name and Availability Zone where you created the snapshot.
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
@@ -77,6 +81,7 @@ object InstanceSnapshot {
     fromBundleId: String = null,
     fromInstanceArn: NonEmptyString = null,
     fromInstanceName: ResourceName = null,
+    isFromAutoSnapshot: js.UndefOr[Boolean] = js.undefined,
     location: ResourceLocation = null,
     name: ResourceName = null,
     progress: String = null,
@@ -94,6 +99,7 @@ object InstanceSnapshot {
     if (fromBundleId != null) __obj.updateDynamic("fromBundleId")(fromBundleId)
     if (fromInstanceArn != null) __obj.updateDynamic("fromInstanceArn")(fromInstanceArn)
     if (fromInstanceName != null) __obj.updateDynamic("fromInstanceName")(fromInstanceName)
+    if (!js.isUndefined(isFromAutoSnapshot)) __obj.updateDynamic("isFromAutoSnapshot")(isFromAutoSnapshot)
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)
     if (progress != null) __obj.updateDynamic("progress")(progress)

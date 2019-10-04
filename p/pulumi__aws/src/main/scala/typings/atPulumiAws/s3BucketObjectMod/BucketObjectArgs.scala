@@ -2,6 +2,7 @@ package typings.atPulumiAws.s3BucketObjectMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.s3BucketMod.Bucket
+import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
 import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Asset
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -51,6 +52,11 @@ trait BucketObjectArgs extends js.Object {
     */
   val etag: js.UndefOr[Input[String]] = js.undefined
   /**
+    * Allow the object to be deleted by removing any legal hold on any object version.
+    * Default is `false`. This value should be set to `true` only if the bucket has S3 object lock enabled.
+    */
+  val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
     * The name of the object once it is in the bucket.
     */
   val key: js.UndefOr[Input[String]] = js.undefined
@@ -66,13 +72,25 @@ trait BucketObjectArgs extends js.Object {
     */
   val metadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
+    * The [legal hold](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-legal-holds) status that you want to apply to the specified object. Valid values are `ON` and `OFF`.
+    */
+  val objectLockLegalHoldStatus: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The object lock [retention mode](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-modes) that you want to apply to this object. Valid values are `GOVERNANCE` and `COMPLIANCE`.
+    */
+  val objectLockMode: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * The date and time, in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8), when this object's object lock will [expire](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-periods).
+    */
+  val objectLockRetainUntilDate: js.UndefOr[Input[String]] = js.undefined
+  /**
     * Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
     */
   val serverSideEncryption: js.UndefOr[Input[String]] = js.undefined
   /**
     * The path to a file that will be read and uploaded as raw bytes for the object content.
     */
-  val source: js.UndefOr[Input[Asset]] = js.undefined
+  val source: js.UndefOr[Input[Asset | Archive]] = js.undefined
   /**
     * Specifies the desired [Storage Class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html)
     * for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA`", "`INTELLIGENT_TIERING`", "`GLACIER`", "`DEEP_ARCHIVE`", or "`STANDARD_IA`". Defaults to "`STANDARD`".
@@ -101,11 +119,15 @@ object BucketObjectArgs {
     contentLanguage: Input[String] = null,
     contentType: Input[String] = null,
     etag: Input[String] = null,
+    forceDestroy: Input[Boolean] = null,
     key: Input[String] = null,
     kmsKeyId: Input[String] = null,
     metadata: Input[StringDictionary[Input[String]]] = null,
+    objectLockLegalHoldStatus: Input[String] = null,
+    objectLockMode: Input[String] = null,
+    objectLockRetainUntilDate: Input[String] = null,
     serverSideEncryption: Input[String] = null,
-    source: Input[Asset] = null,
+    source: Input[Asset | Archive] = null,
     storageClass: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     websiteRedirect: Input[String] = null
@@ -120,9 +142,13 @@ object BucketObjectArgs {
     if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (objectLockLegalHoldStatus != null) __obj.updateDynamic("objectLockLegalHoldStatus")(objectLockLegalHoldStatus.asInstanceOf[js.Any])
+    if (objectLockMode != null) __obj.updateDynamic("objectLockMode")(objectLockMode.asInstanceOf[js.Any])
+    if (objectLockRetainUntilDate != null) __obj.updateDynamic("objectLockRetainUntilDate")(objectLockRetainUntilDate.asInstanceOf[js.Any])
     if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appsyncResolverMod
 
-import typings.atPulumiAws.Anon_FunctionsArray
+import typings.atPulumiAws.typesInputMod.appsyncNs.ResolverPipelineConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait ResolverArgs extends js.Object {
   /**
     * The PipelineConfig. A `pipelineConfig` block is documented below.
     */
-  val pipelineConfig: js.UndefOr[Input[Anon_FunctionsArray]] = js.undefined
+  val pipelineConfig: js.UndefOr[Input[ResolverPipelineConfig]] = js.undefined
   /**
     * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
     */
@@ -51,7 +51,7 @@ object ResolverArgs {
     `type`: Input[String],
     dataSource: Input[String] = null,
     kind: Input[String] = null,
-    pipelineConfig: Input[Anon_FunctionsArray] = null
+    pipelineConfig: Input[ResolverPipelineConfig] = null
   ): ResolverArgs = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], requestTemplate = requestTemplate.asInstanceOf[js.Any], responseTemplate = responseTemplate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

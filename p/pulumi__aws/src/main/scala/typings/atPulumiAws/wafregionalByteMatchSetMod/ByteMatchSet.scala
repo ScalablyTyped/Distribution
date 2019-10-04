@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalByteMatchSetMod
 
-import typings.atPulumiAws.Anon_FieldToMatch
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.ByteMatchSetByteMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,7 +26,7 @@ class ByteMatchSet protected () extends CustomResource {
   /**
     * Settings for the ByteMatchSet, such as the bytes (typically a string that corresponds with ASCII characters) that you want AWS WAF to search for in web requests. ByteMatchTuple documented below.
     */
-  val byteMatchTuples: Output[js.UndefOr[js.Array[Anon_FieldToMatch]]] = js.native
+  val byteMatchTuples: Output[js.UndefOr[js.Array[ByteMatchSetByteMatchTuple]]] = js.native
   /**
     * The name or description of the ByteMatchSet.
     */

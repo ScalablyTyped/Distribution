@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "argon2" : "0.24.1"
+      "argon2" : "0.25.0"
     }
   ],
   "test-dependencies" : [
     {
-      "argon2" : "0.24.1"
+      "argon2" : "0.25.0"
     }
   ],
   "compile-devDependencies" : [

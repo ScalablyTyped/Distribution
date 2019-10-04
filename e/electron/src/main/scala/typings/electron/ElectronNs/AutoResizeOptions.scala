@@ -11,6 +11,16 @@ trait AutoResizeOptions extends js.Object {
     */
   var height: Boolean
   /**
+    * If true, the view's x position and width will grow and shrink proportionly with
+    * the window. false by default.
+    */
+  var horizontal: Boolean
+  /**
+    * If true, the view's y position and height will grow and shrink proportinaly with
+    * the window. false by default.
+    */
+  var vertical: Boolean
+  /**
     * If true, the view's width will grow and shrink together with the window. false
     * by default.
     */
@@ -19,8 +29,8 @@ trait AutoResizeOptions extends js.Object {
 
 object AutoResizeOptions {
   @scala.inline
-  def apply(height: Boolean, width: Boolean): AutoResizeOptions = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+  def apply(height: Boolean, horizontal: Boolean, vertical: Boolean, width: Boolean): AutoResizeOptions = {
+    val __obj = js.Dynamic.literal(height = height, horizontal = horizontal, vertical = vertical, width = width)
   
     __obj.asInstanceOf[AutoResizeOptions]
   }

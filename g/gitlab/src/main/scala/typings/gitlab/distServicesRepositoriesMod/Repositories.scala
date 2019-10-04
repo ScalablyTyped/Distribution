@@ -16,6 +16,8 @@ trait Repositories extends BaseService {
   def compare(projectId: ProjectId, from: String, to: String, options: Sudo): js.Promise[GetResponse] = js.native
   def contributors(projectId: ProjectId): js.Promise[GetResponse] = js.native
   def contributors(projectId: ProjectId, options: Sudo): js.Promise[GetResponse] = js.native
+  def mergeBase(projectId: ProjectId, refs: js.Array[String]): js.Promise[GetResponse] = js.native
+  def mergeBase(projectId: ProjectId, refs: js.Array[String], options: Sudo): js.Promise[GetResponse] = js.native
   def showArchive(projectId: ProjectId): js.Promise[GetResponse] = js.native
   def showArchive(projectId: ProjectId, options: Anon_ShaString with Sudo): js.Promise[GetResponse] = js.native
   def showBlob(projectId: ProjectId, sha: String): js.Promise[GetResponse] = js.native

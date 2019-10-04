@@ -12,6 +12,7 @@ class Strategy[TUser, TClient /* <: Client */] protected () extends js.Object {
     options: StrategyOptions[TClient],
     verify: StrategyVerifyCallbackReq[TUser] | StrategyVerifyCallbackUserInfo[TUser]
   ) = this()
+  // tslint:disable-line:no-unnecessary-generics
   def this(options: StrategyOptions[TClient], verify: StrategyVerifyCallback[TUser]) = this()
   def this(options: StrategyOptions[TClient], verify: StrategyVerifyCallbackReqUserInfo[TUser]) = this()
   def authenticate(req: js.Any): Unit = js.native

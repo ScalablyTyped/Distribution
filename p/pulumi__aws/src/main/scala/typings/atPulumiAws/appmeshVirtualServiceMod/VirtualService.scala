@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Provider
+import typings.atPulumiAws.typesOutputMod.appmeshNs.VirtualServiceSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class VirtualService protected () extends CustomResource {
   /**
     * The virtual service specification to apply.
     */
-  val spec: Output[Anon_Provider] = js.native
+  val spec: Output[VirtualServiceSpec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

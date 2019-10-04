@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cognitoResourceServerMod
 
-import typings.atPulumiAws.Anon_ScopeDescription
+import typings.atPulumiAws.typesOutputMod.cognitoNs.ResourceServerScope
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class ResourceServer protected () extends CustomResource {
   /**
     * A list of Authorization Scope.
     */
-  val scopes: Output[js.UndefOr[js.Array[Anon_ScopeDescription]]] = js.native
+  val scopes: Output[js.UndefOr[js.Array[ResourceServerScope]]] = js.native
   val userPoolId: Output[String] = js.native
 }
 

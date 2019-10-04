@@ -1,6 +1,6 @@
 package typings.atPulumiAws.resourcegroupsGroupMod
 
-import typings.atPulumiAws.Anon_QueryType
+import typings.atPulumiAws.typesInputMod.resourcegroupsNs.GroupResourceQuery
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ trait GroupArgs extends js.Object {
   /**
     * A `resourceQuery` block. Resource queries are documented below.
     */
-  val resourceQuery: Input[Anon_QueryType]
+  val resourceQuery: Input[GroupResourceQuery]
 }
 
 object GroupArgs {
   @scala.inline
   def apply(
-    resourceQuery: Input[Anon_QueryType],
+    resourceQuery: Input[GroupResourceQuery],
     description: Input[String] = null,
     name: Input[String] = null
   ): GroupArgs = {

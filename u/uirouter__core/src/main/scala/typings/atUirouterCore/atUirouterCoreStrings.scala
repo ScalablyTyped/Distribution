@@ -1,7 +1,7 @@
 package typings.atUirouterCore
 
-import typings.atUirouterCore.libResolveInterfaceMod.PolicyAsync
 import typings.atUirouterCore.libResolveInterfaceMod.PolicyWhen
+import typings.atUirouterCore.libResolveInterfaceMod._PolicyAsync
 import typings.atUirouterCore.libUrlInterfaceMod.UrlRuleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ object atUirouterCoreStrings {
   sealed trait LAZY extends PolicyWhen
   
   @js.native
-  sealed trait NOWAIT extends PolicyAsync
+  sealed trait NOWAIT extends _PolicyAsync
   
   @js.native
   sealed trait OTHER extends UrlRuleType
@@ -25,9 +25,6 @@ object atUirouterCoreStrings {
   
   @js.native
   sealed trait REGEXP extends UrlRuleType
-  
-  @js.native
-  sealed trait RXWAIT extends PolicyAsync
   
   @js.native
   sealed trait STATE extends UrlRuleType
@@ -42,7 +39,7 @@ object atUirouterCoreStrings {
   sealed trait URLMATCHER extends UrlRuleType
   
   @js.native
-  sealed trait WAIT extends PolicyAsync
+  sealed trait WAIT extends _PolicyAsync
   
   @js.native
   sealed trait auto extends js.Object
@@ -80,8 +77,6 @@ object atUirouterCoreStrings {
   def RAW: RAW = "RAW".asInstanceOf[RAW]
   @scala.inline
   def REGEXP: REGEXP = "REGEXP".asInstanceOf[REGEXP]
-  @scala.inline
-  def RXWAIT: RXWAIT = "RXWAIT".asInstanceOf[RXWAIT]
   @scala.inline
   def STATE: STATE = "STATE".asInstanceOf[STATE]
   @scala.inline

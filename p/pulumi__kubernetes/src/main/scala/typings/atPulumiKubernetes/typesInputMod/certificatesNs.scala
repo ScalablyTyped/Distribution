@@ -4,7 +4,6 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`certificatesDOTk8sD
 import typings.atPulumiKubernetes.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequest
 import typings.atPulumiKubernetes.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestCondition
 import typings.atPulumiKubernetes.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestSpec
-import typings.atPulumiKubernetes.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestStatus
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ListMeta
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
@@ -26,14 +25,14 @@ object certificatesNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`certificatesDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CertificateSigningRequest]
@@ -43,12 +42,11 @@ object certificatesNs extends js.Object {
         * The certificate request itself and any additional information.
         */
       var spec: js.UndefOr[Input[CertificateSigningRequestSpec]] = js.undefined
-      /**
-        * Derived information about the request.
-        */
-      var status: js.UndefOr[Input[CertificateSigningRequestStatus]] = js.undefined
     }
     
+    /**
+      *
+      */
     trait CertificateSigningRequestCondition extends js.Object {
       /**
         * timestamp for the last update to this condition
@@ -68,12 +66,15 @@ object certificatesNs extends js.Object {
       var `type`: Input[String]
     }
     
+    /**
+      *
+      */
     trait CertificateSigningRequestList extends js.Object {
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`certificatesDOTk8sDOTio/v1beta1`]] = js.undefined
       var items: Input[js.Array[Input[CertificateSigningRequest]]]
@@ -81,7 +82,7 @@ object certificatesNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[
@@ -125,6 +126,9 @@ object certificatesNs extends js.Object {
       var username: js.UndefOr[Input[String]] = js.undefined
     }
     
+    /**
+      *
+      */
     trait CertificateSigningRequestStatus extends js.Object {
       /**
         * If request was approved, the controller will place the issued certificate here.

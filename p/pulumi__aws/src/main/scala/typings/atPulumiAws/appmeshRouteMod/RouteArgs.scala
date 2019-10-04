@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshRouteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_HttpRouteTcpRoute
+import typings.atPulumiAws.typesInputMod.appmeshNs.RouteSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait RouteArgs extends js.Object {
   /**
     * The route specification to apply.
     */
-  val spec: Input[Anon_HttpRouteTcpRoute]
+  val spec: Input[RouteSpec]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -34,7 +34,7 @@ object RouteArgs {
   @scala.inline
   def apply(
     meshName: Input[String],
-    spec: Input[Anon_HttpRouteTcpRoute],
+    spec: Input[RouteSpec],
     virtualRouterName: Input[String],
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null

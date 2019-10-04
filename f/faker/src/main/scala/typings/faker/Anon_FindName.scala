@@ -12,6 +12,7 @@ trait Anon_FindName extends js.Object {
   def findName(firstName: String, lastName: String, gender: Double): String = js.native
   def firstName(): String = js.native
   def firstName(gender: Double): String = js.native
+  def gender(): String = js.native
   def jobArea(): String = js.native
   def jobDescriptor(): String = js.native
   def jobTitle(): String = js.native

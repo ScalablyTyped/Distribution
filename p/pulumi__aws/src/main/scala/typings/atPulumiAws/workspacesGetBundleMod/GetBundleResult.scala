@@ -1,7 +1,8 @@
 package typings.atPulumiAws.workspacesGetBundleMod
 
-import typings.atPulumiAws.Anon_Capacity
-import typings.atPulumiAws.Anon_NameString_1260399121
+import typings.atPulumiAws.typesOutputMod.workspacesNs.GetBundleComputeType
+import typings.atPulumiAws.typesOutputMod.workspacesNs.GetBundleRootStorage
+import typings.atPulumiAws.typesOutputMod.workspacesNs.GetBundleUserStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait GetBundleResult extends js.Object {
   /**
     * The compute type. See supported fields below.
     */
-  val computeTypes: js.Array[Anon_NameString_1260399121]
+  val computeTypes: js.Array[GetBundleComputeType]
   /**
     * The description of the bundle.
     */
@@ -31,24 +32,24 @@ trait GetBundleResult extends js.Object {
   /**
     * The root volume. See supported fields below.
     */
-  val rootStorages: js.Array[Anon_Capacity]
+  val rootStorages: js.Array[GetBundleRootStorage]
   /**
     * The user storage. See supported fields below.
     */
-  val userStorages: js.Array[Anon_Capacity]
+  val userStorages: js.Array[GetBundleUserStorage]
 }
 
 object GetBundleResult {
   @scala.inline
   def apply(
     bundleId: String,
-    computeTypes: js.Array[Anon_NameString_1260399121],
+    computeTypes: js.Array[GetBundleComputeType],
     description: String,
     id: String,
     name: String,
     owner: String,
-    rootStorages: js.Array[Anon_Capacity],
-    userStorages: js.Array[Anon_Capacity]
+    rootStorages: js.Array[GetBundleRootStorage],
+    userStorages: js.Array[GetBundleUserStorage]
   ): GetBundleResult = {
     val __obj = js.Dynamic.literal(bundleId = bundleId, computeTypes = computeTypes, description = description, id = id, name = name, owner = owner, rootStorages = rootStorages, userStorages = userStorages)
   

@@ -74,6 +74,12 @@ package object clientsDatasyncMod {
   */
   type NfsVersion = _NfsVersion | String
   type NonEmptySubdirectory = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ALWAYS
+    - typings.awsDashSdk.awsDashSdkStrings.NEVER
+    - java.lang.String
+  */
+  type OverwriteMode = _OverwriteMode | String
   type PLSecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
   type PLSubnetArnList = js.Array[Ec2SubnetArn]
   /* Rewritten from type alias, can be one of: 
@@ -103,6 +109,16 @@ package object clientsDatasyncMod {
   */
   type PreserveDevices = _PreserveDevices | String
   type S3BucketArn = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.STANDARD
+    - typings.awsDashSdk.awsDashSdkStrings.STANDARD_IA
+    - typings.awsDashSdk.awsDashSdkStrings.ONEZONE_IA
+    - typings.awsDashSdk.awsDashSdkStrings.INTELLIGENT_TIERING
+    - typings.awsDashSdk.awsDashSdkStrings.GLACIER
+    - typings.awsDashSdk.awsDashSdkStrings.DEEP_ARCHIVE
+    - java.lang.String
+  */
+  type S3StorageClass = _S3StorageClass | String
   type ServerHostname = String
   type SmbDomain = String
   type SmbPassword = String
@@ -154,6 +170,7 @@ package object clientsDatasyncMod {
   type Uid = _Uid | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.POINT_IN_TIME_CONSISTENT
+    - typings.awsDashSdk.awsDashSdkStrings.ONLY_FILES_TRANSFERRED
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - java.lang.String
   */

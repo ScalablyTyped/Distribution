@@ -2,6 +2,8 @@ package typings.atUifabricUtilities.libAsyncMod
 
 import typings.atUifabricUtilities.Anon_Leading
 import typings.atUifabricUtilities.Anon_LeadingMaxWait
+import typings.react.reactMod.Component
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +23,16 @@ class Async () extends js.Object {
   var _timeoutIds: js.Any = js.native
   /* protected */ def _logError(e: js.Any): Unit = js.native
   def cancelAnimationFrame(id: Double): Unit = js.native
+  def cancelAnimationFrame(id: Double, targetElement: Component[js.Object, js.Object, _]): Unit = js.native
+  def cancelAnimationFrame(id: Double, targetElement: Element): Unit = js.native
   /**
     * Clears the immediate.
     * @param id - Id to cancel.
+    * @param targetElement - Optional target element to use for identifying the correct window.
     */
   def clearImmediate(id: Double): Unit = js.native
+  def clearImmediate(id: Double, targetElement: Component[js.Object, js.Object, _]): Unit = js.native
+  def clearImmediate(id: Double, targetElement: Element): Unit = js.native
   /**
     * Clears the interval.
     * @param id - Id to cancel.
@@ -59,12 +66,17 @@ class Async () extends js.Object {
     */
   def dispose(): Unit = js.native
   def requestAnimationFrame(callback: js.Function0[Unit]): Double = js.native
+  def requestAnimationFrame(callback: js.Function0[Unit], targetElement: Component[js.Object, js.Object, _]): Double = js.native
+  def requestAnimationFrame(callback: js.Function0[Unit], targetElement: Element): Double = js.native
   /**
     * SetImmediate override, which will auto cancel the immediate during dispose.
     * @param callback - Callback to execute.
+    * @param targetElement - Optional target element to use for identifying the correct window.
     * @returns The setTimeout id.
     */
   def setImmediate(callback: js.Function0[Unit]): Double = js.native
+  def setImmediate(callback: js.Function0[Unit], targetElement: Component[js.Object, js.Object, _]): Double = js.native
+  def setImmediate(callback: js.Function0[Unit], targetElement: Element): Double = js.native
   /**
     * SetInterval override, which will auto cancel the timeout during dispose.
     * @param callback - Callback to execute.

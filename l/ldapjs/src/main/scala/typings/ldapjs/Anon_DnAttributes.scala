@@ -1,0 +1,29 @@
+package typings.ldapjs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_DnAttributes extends js.Object {
+  var dnAttributes: js.UndefOr[Boolean] = js.undefined
+  var matchType: js.UndefOr[String] = js.undefined
+  var rule: js.UndefOr[String] = js.undefined
+  var value: String
+}
+
+object Anon_DnAttributes {
+  @scala.inline
+  def apply(
+    value: String,
+    dnAttributes: js.UndefOr[Boolean] = js.undefined,
+    matchType: String = null,
+    rule: String = null
+  ): Anon_DnAttributes = {
+    val __obj = js.Dynamic.literal(value = value)
+    if (!js.isUndefined(dnAttributes)) __obj.updateDynamic("dnAttributes")(dnAttributes)
+    if (matchType != null) __obj.updateDynamic("matchType")(matchType)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[Anon_DnAttributes]
+  }
+}
+

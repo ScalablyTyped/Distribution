@@ -8,6 +8,7 @@ package object pinoDashHttpMod {
   import typings.node.httpMod.IncomingMessage
   import typings.node.httpMod.ServerResponse
 
-  type GenReqId = js.Function1[/* req */ IncomingMessage, Double | String | js.Object]
+  type GenReqId = js.Function1[/* req */ IncomingMessage, ReqId]
   type HttpLogger = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, Unit]
+  type ReqId = Double | String | js.Object
 }

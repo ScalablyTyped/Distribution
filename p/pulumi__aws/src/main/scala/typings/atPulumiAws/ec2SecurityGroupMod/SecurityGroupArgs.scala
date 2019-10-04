@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2SecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlocksDescription
+import typings.atPulumiAws.typesInputMod.ec2Ns.SecurityGroupEgress
+import typings.atPulumiAws.typesInputMod.ec2Ns.SecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,13 +21,13 @@ trait SecurityGroupArgs extends js.Object {
     * egress rule. Each egress block supports fields documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val egress: js.UndefOr[Input[js.Array[Input[Anon_CidrBlocksDescription]]]] = js.undefined
+  val egress: js.UndefOr[Input[js.Array[Input[SecurityGroupEgress]]]] = js.undefined
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val ingress: js.UndefOr[Input[js.Array[Input[Anon_CidrBlocksDescription]]]] = js.undefined
+  val ingress: js.UndefOr[Input[js.Array[Input[SecurityGroupIngress]]]] = js.undefined
   /**
     * The name of the security group. If omitted, this provider will
     * assign a random, unique name
@@ -61,8 +62,8 @@ object SecurityGroupArgs {
   @scala.inline
   def apply(
     description: Input[String] = null,
-    egress: Input[js.Array[Input[Anon_CidrBlocksDescription]]] = null,
-    ingress: Input[js.Array[Input[Anon_CidrBlocksDescription]]] = null,
+    egress: Input[js.Array[Input[SecurityGroupEgress]]] = null,
+    ingress: Input[js.Array[Input[SecurityGroupIngress]]] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     revokeRulesOnDelete: Input[Boolean] = null,

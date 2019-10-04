@@ -1,7 +1,7 @@
 package typings.atPulumiAws.worklinkFleetMod
 
-import typings.atPulumiAws.Anon_SamlMetadataType
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+import typings.atPulumiAws.typesInputMod.worklinkNs.FleetIdentityProvider
+import typings.atPulumiAws.typesInputMod.worklinkNs.FleetNetwork
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait FleetState extends js.Object {
   /**
     * Provide this to allow manage the identity provider configuration for the fleet. Fields documented below.
     */
-  val identityProvider: js.UndefOr[Input[Anon_SamlMetadataType]] = js.undefined
+  val identityProvider: js.UndefOr[Input[FleetIdentityProvider]] = js.undefined
   /**
     * The time that the fleet was last updated.
     */
@@ -47,7 +47,7 @@ trait FleetState extends js.Object {
   /**
     * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
     */
-  val network: js.UndefOr[Input[Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.undefined
+  val network: js.UndefOr[Input[FleetNetwork]] = js.undefined
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
     */
@@ -63,10 +63,10 @@ object FleetState {
     createdTime: Input[String] = null,
     deviceCaCertificate: Input[String] = null,
     displayName: Input[String] = null,
-    identityProvider: Input[Anon_SamlMetadataType] = null,
+    identityProvider: Input[FleetIdentityProvider] = null,
     lastUpdatedTime: Input[String] = null,
     name: Input[String] = null,
-    network: Input[Anon_SecurityGroupIdsSubnetIdsVpcIdArray] = null,
+    network: Input[FleetNetwork] = null,
     optimizeForEndUserLocation: Input[Boolean] = null
   ): FleetState = {
     val __obj = js.Dynamic.literal()

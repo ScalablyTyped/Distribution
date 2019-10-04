@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("webix", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var ActiveContent: typings.webix.webixMod.ActiveContent = js.native
   var AtomDataLoader: typings.webix.webixMod.AtomDataLoader = js.native
   var AtomRender: typings.webix.webixMod.AtomRender = js.native
   var AutoScroll: typings.webix.webixMod.AutoScroll = js.native
@@ -58,7 +57,6 @@ object ^ extends js.Object {
   var Number: typings.webix.webixMod.Number = js.native
   var OverlayBox: typings.webix.webixMod.OverlayBox = js.native
   var PagingAbility: typings.webix.webixMod.PagingAbility = js.native
-  var PowerArray: typings.webix.webixMod.PowerArray = js.native
   var ProgressBar: typings.webix.webixMod.ProgressBar = js.native
   var RecordBind: typings.webix.webixMod.RecordBind = js.native
   var RenderStack: typings.webix.webixMod.RenderStack = js.native
@@ -138,7 +136,7 @@ object ^ extends js.Object {
   def delay(code: WebixCallback, owner: js.Any, params: js.Array[_]): Double = js.native
   def delay(code: WebixCallback, owner: js.Any, params: js.Array[_], delay: Double): Double = js.native
   def detachEvent(id: String): Unit = js.native
-  def dp(name: String): js.Any = js.native
+  def dp(name: js.Any): js.Any = js.native
   def editStop(): Unit = js.native
   def event(node: String, event: String, handler: WebixCallback): String | Double = js.native
   def event(node: String, event: String, handler: WebixCallback, context: js.Any): String | Double = js.native
@@ -153,10 +151,6 @@ object ^ extends js.Object {
   def isArray(check: js.Any): Boolean = js.native
   def isDate(check: js.Any): Boolean = js.native
   def isUndefined(check: js.Any): Boolean = js.native
-  def jsonp(url: String): Unit = js.native
-  def jsonp(url: String, params: js.Any): Unit = js.native
-  def jsonp(url: String, params: js.Any, callback: WebixCallback): Unit = js.native
-  def jsonp(url: String, params: js.Any, callback: WebixCallback, master: js.Any): Unit = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def message(content: js.Any): String = js.native
   def message(content: js.Any, `type`: String): String = js.native
@@ -183,7 +177,6 @@ object ^ extends js.Object {
   def single(source: WebixCallback): WebixCallback = js.native
   def stringify(obj: js.Any): String = js.native
   def template(template: String): WebixCallback = js.native
-  def toArray(array: js.Array[_]): js.Array[_] = js.native
   def toCSV(id: js.Any): js.Any = js.native
   def toCSV(id: js.Any, options: js.Any): js.Any = js.native
   def toExcel(id: js.Any): js.Any = js.native

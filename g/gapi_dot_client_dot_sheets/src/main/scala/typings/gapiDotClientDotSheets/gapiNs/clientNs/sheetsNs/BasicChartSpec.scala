@@ -46,7 +46,7 @@ trait BasicChartSpec extends js.Object {
   var series: js.UndefOr[js.Array[BasicChartSeries]] = js.undefined
   /**
     * The stacked type for charts that support vertical stacking.
-    * Applies to Area, Bar, Column, and Stepped Area charts.
+    * Applies to Area, Bar, Column, Combo, and Stepped Area charts.
     */
   var stackedType: js.UndefOr[String] = js.undefined
   /**

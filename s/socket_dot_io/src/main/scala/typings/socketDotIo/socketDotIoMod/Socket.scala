@@ -91,6 +91,11 @@ trait Socket extends EventEmitter {
   def disconnect(): Socket = js.native
   def disconnect(close: Boolean): Socket = js.native
   /**
+    * Emits the error
+    * @param err Error message=
+    */
+  def error(err: js.Any): Unit = js.native
+  /**
   		 * @see to( room )
   		 */
   def in(room: String): Socket = js.native

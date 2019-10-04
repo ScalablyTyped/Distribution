@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__is
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 Type check values: `is.string('🦄') //=> true`

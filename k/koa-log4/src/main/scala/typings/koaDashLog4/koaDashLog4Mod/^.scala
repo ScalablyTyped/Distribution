@@ -1,5 +1,7 @@
 package typings.koaDashLog4.koaDashLog4Mod
 
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import typings.log4js.Anon_Context
 import typings.log4js.log4jsMod.Configuration
@@ -21,9 +23,9 @@ object ^ extends js.Object {
   def connectLogger(logger: typings.log4js.log4jsMod.Logger, options: Anon_Context): js.Any = js.native
   def getLogger(): typings.log4js.log4jsMod.Logger = js.native
   def getLogger(category: String): typings.log4js.log4jsMod.Logger = js.native
-  def koaLogger(logger4js: typings.log4js.log4jsMod.Logger): Middleware[_, js.Object] = js.native
-  def koaLogger(logger4js: typings.log4js.log4jsMod.Logger, optionsOrFormat: String): Middleware[_, js.Object] = js.native
-  def koaLogger(logger4js: typings.log4js.log4jsMod.Logger, optionsOrFormat: Options): Middleware[_, js.Object] = js.native
+  def koaLogger(logger4js: typings.log4js.log4jsMod.Logger): Middleware[DefaultState, DefaultContext] = js.native
+  def koaLogger(logger4js: typings.log4js.log4jsMod.Logger, optionsOrFormat: String): Middleware[DefaultState, DefaultContext] = js.native
+  def koaLogger(logger4js: typings.log4js.log4jsMod.Logger, optionsOrFormat: Options): Middleware[DefaultState, DefaultContext] = js.native
   def shutdown(): Unit | Null = js.native
   def shutdown(cb: js.Function1[/* error */ Error, Unit]): Unit | Null = js.native
 }

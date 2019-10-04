@@ -657,6 +657,15 @@ object customwidgetsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
+    /**
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
   }
   
   /* static members */
@@ -938,6 +947,7 @@ object customwidgetsNs extends js.Object {
     var System: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var TextTemplate: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var TranslatableString: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
+    var Widgets: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
   }
   
 }

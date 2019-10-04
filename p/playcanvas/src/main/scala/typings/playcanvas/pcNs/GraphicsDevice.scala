@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.GraphicsDevice
+  * @extends pc.EventHandler
   * @classdesc The graphics device manages the underlying graphics context. It is responsible
   * for submitting render state changes and graphics primitives to the hardware. A graphics
   * device is tied to a specific canvas HTML element. It is valid to have more than one
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.GraphicsDevice")
 @js.native
-class GraphicsDevice protected () extends js.Object {
+class GraphicsDevice protected () extends EventHandler {
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, options: js.Any) = this()
   /**

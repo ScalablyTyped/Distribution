@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelineWebhookMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllowedIpRangeSecretToken
-import typings.atPulumiAws.Anon_JsonPathMatchEquals
+import typings.atPulumiAws.typesInputMod.codepipelineNs.WebhookAuthenticationConfiguration
+import typings.atPulumiAws.typesInputMod.codepipelineNs.WebhookFilter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +16,11 @@ trait WebhookState extends js.Object {
   /**
     * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
     */
-  val authenticationConfiguration: js.UndefOr[Input[Anon_AllowedIpRangeSecretToken]] = js.undefined
+  val authenticationConfiguration: js.UndefOr[Input[WebhookAuthenticationConfiguration]] = js.undefined
   /**
     * One or more `filter` blocks. Filter blocks are documented below.
     */
-  val filters: js.UndefOr[Input[js.Array[Input[Anon_JsonPathMatchEquals]]]] = js.undefined
+  val filters: js.UndefOr[Input[js.Array[Input[WebhookFilter]]]] = js.undefined
   /**
     * The name of the webhook.
     */
@@ -47,8 +47,8 @@ object WebhookState {
   @scala.inline
   def apply(
     authentication: Input[String] = null,
-    authenticationConfiguration: Input[Anon_AllowedIpRangeSecretToken] = null,
-    filters: Input[js.Array[Input[Anon_JsonPathMatchEquals]]] = null,
+    authenticationConfiguration: Input[WebhookAuthenticationConfiguration] = null,
+    filters: Input[js.Array[Input[WebhookFilter]]] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     targetAction: Input[String] = null,

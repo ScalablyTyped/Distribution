@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ember__polyfills"
-version := "3.0-dt-20190301Z-fc734b"
+version := "3.0-dt-20191003Z-71215d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

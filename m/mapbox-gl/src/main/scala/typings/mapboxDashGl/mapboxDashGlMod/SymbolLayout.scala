@@ -44,9 +44,9 @@ trait SymbolLayout extends js.Object {
   var `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined
   var `text-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
   var `text-field`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
-  var `text-font`: js.UndefOr[String | js.Array[String]] = js.undefined
+  var `text-font`: js.UndefOr[String | js.Array[String] | Expression] = js.undefined
   var `text-ignore-placement`: js.UndefOr[Boolean] = js.undefined
-  var `text-justify`: js.UndefOr[left | center | right] = js.undefined
+  var `text-justify`: js.UndefOr[left | center | right | Expression] = js.undefined
   var `text-keep-upright`: js.UndefOr[Boolean] = js.undefined
   var `text-letter-spacing`: js.UndefOr[Double | Expression] = js.undefined
   var `text-line-height`: js.UndefOr[Double | Expression] = js.undefined
@@ -87,9 +87,9 @@ object SymbolLayout {
     `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined,
     `text-anchor`: Anchor | StyleFunction | Expression = null,
     `text-field`: String | StyleFunction | Expression = null,
-    `text-font`: String | js.Array[String] = null,
+    `text-font`: String | js.Array[String] | Expression = null,
     `text-ignore-placement`: js.UndefOr[Boolean] = js.undefined,
-    `text-justify`: left | center | right = null,
+    `text-justify`: left | center | right | Expression = null,
     `text-keep-upright`: js.UndefOr[Boolean] = js.undefined,
     `text-letter-spacing`: Double | Expression = null,
     `text-line-height`: Double | Expression = null,

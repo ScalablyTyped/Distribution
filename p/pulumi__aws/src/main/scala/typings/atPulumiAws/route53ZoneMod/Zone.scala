@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ZoneMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_VpcId
+import typings.atPulumiAws.typesOutputMod.route53Ns.ZoneVpc
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -52,7 +52,7 @@ class Zone protected () extends CustomResource {
   /**
     * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any [`aws.route53.ZoneAssociation` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
     */
-  val vpcs: Output[js.UndefOr[js.Array[Anon_VpcId]]] = js.native
+  val vpcs: Output[js.UndefOr[js.Array[ZoneVpc]]] = js.native
   /**
     * The Hosted Zone ID. This can be referenced by zone records.
     */

@@ -204,6 +204,14 @@ trait IContextualMenuProps
     */
   var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
   /**
+    * If true, the component will be updated even when hidden=true.
+    * Note that this would consume resources to update even though
+    * nothing is being shown to the user.
+    * This might be helpful though if your updates are small and you want the
+    * contextual menu to be revealed fast to the user when hidden is set to false.
+    */
+  var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined
+  /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[IContextualMenuStyleProps, IContextualMenuStyles]] = js.undefined
@@ -276,6 +284,7 @@ object IContextualMenuProps {
     responsiveMode: ResponsiveMode = null,
     shouldFocusOnContainer: js.UndefOr[Boolean] = js.undefined,
     shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined,
+    shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IContextualMenuStyleProps, IContextualMenuStyles] = null,
     subMenuHoverDelay: Int | Double = null,
     target: Target = null,
@@ -316,6 +325,7 @@ object IContextualMenuProps {
     if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode)
     if (!js.isUndefined(shouldFocusOnContainer)) __obj.updateDynamic("shouldFocusOnContainer")(shouldFocusOnContainer)
     if (!js.isUndefined(shouldFocusOnMount)) __obj.updateDynamic("shouldFocusOnMount")(shouldFocusOnMount)
+    if (!js.isUndefined(shouldUpdateWhenHidden)) __obj.updateDynamic("shouldUpdateWhenHidden")(shouldUpdateWhenHidden)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (subMenuHoverDelay != null) __obj.updateDynamic("subMenuHoverDelay")(subMenuHoverDelay.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

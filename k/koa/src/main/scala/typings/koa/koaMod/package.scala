@@ -7,7 +7,17 @@ import scala.scalajs.js.annotation._
 package object koaMod {
   import typings.koa.Anon_State
 
-  type Context = ParameterizedContext[js.Any, js.Object]
+  type Context = ParameterizedContext[DefaultState, DefaultContext]
+  /**
+    * This interface can be augmented by users to add types to Koa's default context
+    */
+  type DefaultContext = DefaultContextExtends
+  type DefaultContextExtends = js.Object
+  /**
+    * This interface can be augmented by users to add types to Koa's default state
+    */
+  type DefaultState = DefaultStateExtends
+  type DefaultStateExtends = js.Any
   type Middleware[StateT, CustomT] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> */ js.Any
   type ParameterizedContext[StateT, CustomT] = ExtendableContext with Anon_State[StateT] with CustomT
 }

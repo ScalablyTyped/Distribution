@@ -1,6 +1,6 @@
 package typings.signale.signaleMod
 
-import typings.node.NodeJSNs.WriteStream
+import typings.node.processMod.Global.NodeJSNs.WriteStream
 import typings.std.Date
 import typings.std.Map
 import typings.std.Partial

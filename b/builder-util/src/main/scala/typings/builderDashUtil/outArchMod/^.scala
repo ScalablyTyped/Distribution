@@ -10,7 +10,7 @@ object ^ extends js.Object {
   def archFromString(name: String): Arch = js.native
   def getArchCliNames(): js.Array[String] = js.native
   def getArchSuffix(arch: Arch): String = js.native
-  def toLinuxArchString(arch: Arch): String = js.native
-  def toLinuxArchString(arch: Arch, isSnap: Boolean): String = js.native
+  def getArtifactArchName(arch: Arch, ext: String): String = js.native
+  def toLinuxArchString(arch: Arch, targetName: String): String = js.native
 }
 

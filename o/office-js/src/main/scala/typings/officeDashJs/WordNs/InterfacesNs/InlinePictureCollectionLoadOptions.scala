@@ -57,7 +57,7 @@ trait InlinePictureCollectionLoadOptions extends js.Object {
   var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+    * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
     *
     * [Api set: WordApi 1.1]
     */
@@ -71,14 +71,14 @@ trait InlinePictureCollectionLoadOptions extends js.Object {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a table.
+    * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws an error if it is not contained in a table.
     *
     * [Api set: WordApi 1.3]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
+    * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.
     *
     * [Api set: WordApi 1.3]
     */

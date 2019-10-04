@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ODB () extends EventEmitter {
   var `class`: OClass = js.native
-  var cluster: Cluster = js.native
+  var cluster: OCluster = js.native
   var dataSegments: js.Array[_] = js.native
   var forcePrepare: Boolean = js.native
-  var index: Index = js.native
+  var index: OIndex = js.native
   var name: String = js.native
   var password: String = js.native
   var record: ORecord = js.native
@@ -104,8 +104,8 @@ class ODB () extends EventEmitter {
     * @param   options The options for the query / command.
     * @promise {Mixed}          The results of the query / command.
     */
-  def exec(query: String): js.Promise[_] = js.native
-  def exec(query: String, options: QueryOptions): js.Promise[_] = js.native
+  def exec[R](query: String): js.Promise[R] = js.native
+  def exec[R](query: String, options: QueryOptions): js.Promise[R] = js.native
   /**
     * Create a transactional query with if.
     *
@@ -149,8 +149,8 @@ class ODB () extends EventEmitter {
     * @param   options The options for the query / command.
     * @promise {Mixed}          The token of the live query.
     */
-  def liveQuery(command: String): js.Promise[_] = js.native
-  def liveQuery(command: String, options: QueryOptions): js.Promise[_] = js.native
+  def liveQuery[R](command: String): js.Promise[R] = js.native
+  def liveQuery[R](command: String, options: QueryOptions): js.Promise[R] = js.native
   /**
     * Normalize a result, where possible.
     * @param  result The result to normalize.
@@ -176,8 +176,8 @@ class ODB () extends EventEmitter {
     * @param   options The options for the query / command.
     * @promise {Mixed}          The results of the query / command.
     */
-  def query(command: String): js.Promise[_] = js.native
-  def query(command: String, options: QueryOptions): js.Promise[_] = js.native
+  def query[R](command: String): js.Promise[R] = js.native
+  def query[R](command: String, options: QueryOptions): js.Promise[R] = js.native
   /**
     * Create a raw expression.
     *
@@ -215,7 +215,7 @@ class ODB () extends EventEmitter {
     * @param  data       The data for the operation.
     * @promise {Mixed}            The result of the operation.
     */
-  def send(operation: Double, data: js.Any): js.Promise[_] = js.native
+  def send[R](operation: Double, data: js.Any): js.Promise[R] = js.native
   /**
     * Create a sql Function.
     *

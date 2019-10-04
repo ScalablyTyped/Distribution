@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function allKeys<ObjectType extends {[key: string]: unknown}>(
+  // declare function allKeys<ObjectType extends {[key: string]: any}>(
   // 	object: ObjectType,
   // 	options?: allKeys.Options
   // ): Set<LiteralUnion<keyof ObjectType, string | number | symbol>>;
@@ -88,7 +88,7 @@ object ^ extends js.Object {
   	```
   	*/
   // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function allKeys<ObjectType extends {[key: string]: unknown}>(
+  // declare function allKeys<ObjectType extends {[key: string]: any}>(
   // 	object: ObjectType,
   // 	options?: allKeys.Options
   // ): Set<LiteralUnion<keyof ObjectType, string | number | symbol>>;

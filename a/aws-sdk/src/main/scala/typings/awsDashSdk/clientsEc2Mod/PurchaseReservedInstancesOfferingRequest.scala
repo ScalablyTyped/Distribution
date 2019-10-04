@@ -18,6 +18,10 @@ trait PurchaseReservedInstancesOfferingRequest extends js.Object {
     */
   var LimitPrice: js.UndefOr[ReservedInstanceLimitPrice] = js.undefined
   /**
+    * The time at which to purchase the Reserved Instance.
+    */
+  var PurchaseTime: js.UndefOr[DateTime] = js.undefined
+  /**
     * The ID of the Reserved Instance offering to purchase.
     */
   var ReservedInstancesOfferingId: String
@@ -29,11 +33,13 @@ object PurchaseReservedInstancesOfferingRequest {
     InstanceCount: Integer,
     ReservedInstancesOfferingId: String,
     DryRun: js.UndefOr[Boolean] = js.undefined,
-    LimitPrice: ReservedInstanceLimitPrice = null
+    LimitPrice: ReservedInstanceLimitPrice = null,
+    PurchaseTime: DateTime = null
   ): PurchaseReservedInstancesOfferingRequest = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount, ReservedInstancesOfferingId = ReservedInstancesOfferingId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (LimitPrice != null) __obj.updateDynamic("LimitPrice")(LimitPrice)
+    if (PurchaseTime != null) __obj.updateDynamic("PurchaseTime")(PurchaseTime)
     __obj.asInstanceOf[PurchaseReservedInstancesOfferingRequest]
   }
 }

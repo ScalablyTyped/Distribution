@@ -1,6 +1,6 @@
 package typings.mongodb.mongodbMod
 
-import typings.mongodb.Anon_IdObjectID
+import typings.mongodb.Anon_IdObjectId
 import typings.mongodb.Anon_NNModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait UpdateWriteOpResult extends js.Object {
   var modifiedCount: scala.Double
   var result: Anon_NNModified
   var upsertedCount: scala.Double
-  var upsertedId: Anon_IdObjectID
+  var upsertedId: Anon_IdObjectId
 }
 
 object UpdateWriteOpResult {
@@ -23,7 +23,7 @@ object UpdateWriteOpResult {
     modifiedCount: scala.Double,
     result: Anon_NNModified,
     upsertedCount: scala.Double,
-    upsertedId: Anon_IdObjectID
+    upsertedId: Anon_IdObjectId
   ): UpdateWriteOpResult = {
     val __obj = js.Dynamic.literal(connection = connection, matchedCount = matchedCount, modifiedCount = modifiedCount, result = result, upsertedCount = upsertedCount, upsertedId = upsertedId)
   

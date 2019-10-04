@@ -32,6 +32,7 @@ package object typesSpecTransformMod {
     - typings.vegaDashTypings.typesSpecTransformMod.ContourTransform
     - typings.vegaDashTypings.typesSpecTransformMod._TODO_[
   typings.vegaDashTypings.vegaDashTypingsStrings.cross | typings.vegaDashTypings.vegaDashTypingsStrings.crossfilter | typings.vegaDashTypings.vegaDashTypingsStrings.density | typings.vegaDashTypings.vegaDashTypingsStrings.force | typings.vegaDashTypings.vegaDashTypingsStrings.geopath | typings.vegaDashTypings.vegaDashTypingsStrings.linkpath | typings.vegaDashTypings.vegaDashTypingsStrings.nest | typings.vegaDashTypings.vegaDashTypingsStrings.pack | typings.vegaDashTypings.vegaDashTypingsStrings.partition | typings.vegaDashTypings.vegaDashTypingsStrings.pie | typings.vegaDashTypings.vegaDashTypingsStrings.project | typings.vegaDashTypings.vegaDashTypingsStrings.resolvefilter | typings.vegaDashTypings.vegaDashTypingsStrings.sequence | typings.vegaDashTypings.vegaDashTypingsStrings.stratify | typings.vegaDashTypings.vegaDashTypingsStrings.tree | typings.vegaDashTypings.vegaDashTypingsStrings.treelinks | typings.vegaDashTypings.vegaDashTypingsStrings.treemap | typings.vegaDashTypings.vegaDashTypingsStrings.voronoi]
+    - typings.vegaDashTypings.typesSpecTransformMod.DotBinTransform
     - typings.vegaDashTypings.typesSpecTransformMod.ExtentTransform
     - typings.vegaDashTypings.typesSpecTransformMod.FilterTransform
     - typings.vegaDashTypings.typesSpecTransformMod.FlattenTransform
@@ -47,6 +48,7 @@ package object typesSpecTransformMod {
     - typings.vegaDashTypings.typesSpecTransformMod.KDETransform
     - typings.vegaDashTypings.typesSpecTransformMod.LoessTransform
     - typings.vegaDashTypings.typesSpecTransformMod.LookupTransform
+    - typings.vegaDashTypings.typesSpecTransformMod.QuantileTransform
     - typings.vegaDashTypings.typesSpecTransformMod.RegressionTransform
     - typings.vegaDashTypings.typesSpecTransformMod.SampleTransform
     - typings.vegaDashTypings.typesSpecTransformMod.StackTransform

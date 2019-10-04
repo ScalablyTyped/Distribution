@@ -10,5 +10,6 @@ abstract class StalkerArm64Iterator () extends Arm64Writer {
   def keep(): Unit = js.native
   def next(): Arm64Instruction | Null = js.native
   def putCallout(callout: StalkerCallout): Unit = js.native
+  def putCallout(callout: StalkerCallout, data: NativePointerValue): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRuleGroupMod
 
-import typings.atPulumiAws.Anon_ActionPriorityRuleId
+import typings.atPulumiAws.typesInputMod.wafregionalNs.RuleGroupActivatedRule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait RuleGroupState extends js.Object {
   /**
     * A list of activated rules, see below
     */
-  val activatedRules: js.UndefOr[Input[js.Array[Input[Anon_ActionPriorityRuleId]]]] = js.undefined
+  val activatedRules: js.UndefOr[Input[js.Array[Input[RuleGroupActivatedRule]]]] = js.undefined
   /**
     * A friendly name for the metrics from the rule group
     */
@@ -24,7 +24,7 @@ trait RuleGroupState extends js.Object {
 object RuleGroupState {
   @scala.inline
   def apply(
-    activatedRules: Input[js.Array[Input[Anon_ActionPriorityRuleId]]] = null,
+    activatedRules: Input[js.Array[Input[RuleGroupActivatedRule]]] = null,
     metricName: Input[String] = null,
     name: Input[String] = null
   ): RuleGroupState = {

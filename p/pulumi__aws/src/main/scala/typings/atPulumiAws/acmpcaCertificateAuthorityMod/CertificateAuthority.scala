@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmpcaCertificateAuthorityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CrlConfiguration
-import typings.atPulumiAws.Anon_KeyAlgorithm
+import typings.atPulumiAws.typesOutputMod.acmpcaNs.CertificateAuthorityCertificateAuthorityConfiguration
+import typings.atPulumiAws.typesOutputMod.acmpcaNs.CertificateAuthorityRevocationConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,7 +35,7 @@ class CertificateAuthority protected () extends CustomResource {
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: Output[Anon_KeyAlgorithm] = js.native
+  val certificateAuthorityConfiguration: Output[CertificateAuthorityCertificateAuthorityConfiguration] = js.native
   /**
     * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
     */
@@ -63,7 +63,7 @@ class CertificateAuthority protected () extends CustomResource {
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: Output[js.UndefOr[Anon_CrlConfiguration]] = js.native
+  val revocationConfiguration: Output[js.UndefOr[CertificateAuthorityRevocationConfiguration]] = js.native
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */

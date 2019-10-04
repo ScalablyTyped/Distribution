@@ -56,6 +56,10 @@ trait IAccount
     */
   var payouts_enabled: Boolean
   /**
+    * Information about the requirements for the account, including what information needs to be collected, and by when.
+    */
+  var requirements: js.UndefOr[IAccountRequirements] = js.undefined
+  /**
     * The state of the account’s information requests, including what
     * information is needed and by when it must be provided.
     */
@@ -82,6 +86,7 @@ object IAccount {
     individual: IIndividual = null,
     metadata: IMetadata = null,
     product_description: String = null,
+    requirements: IAccountRequirements = null,
     settings: Anon_Branding = null,
     tos_acceptance: Anon_Date = null
   ): IAccount = {
@@ -96,6 +101,7 @@ object IAccount {
     if (individual != null) __obj.updateDynamic("individual")(individual)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
     if (settings != null) __obj.updateDynamic("settings")(settings)
     if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance)
     __obj.asInstanceOf[IAccount]

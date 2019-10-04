@@ -1,6 +1,7 @@
 package typings.sipDotJs.libWebSessionDescriptionHandlerMod
 
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
+import typings.sipDotJs.libApiSessionMod.Session
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libEnumsMod.TypeStrings
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.BodyObj
@@ -78,16 +79,6 @@ class SessionDescriptionHandler protected ()
   var triggerIceGatheringComplete: js.Any = js.native
   var `type`: TypeStrings = js.native
   var waitForIceGatheringComplete: js.Any = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
   def getDescription(options: WebSessionDescriptionHandlerOptions): js.Promise[BodyObj] = js.native
   def getDescription(options: WebSessionDescriptionHandlerOptions, modifiers: SessionDescriptionHandlerModifiers): js.Promise[BodyObj] = js.native
   /**
@@ -95,24 +86,7 @@ class SessionDescriptionHandler protected ()
     * @returns {String} direction of the description
     */
   def getDirection(): String = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  /* protected */ def getMediaStream(constraints: MediaStreamConstraints): js.Promise[MediaStream] = js.native
   @JSName("on")
   def on_addStream(event: addStream, listener: js.Function1[/* track */ MediaStream, Unit]): this.type = js.native
   @JSName("on")
@@ -186,47 +160,19 @@ class SessionDescriptionHandler protected ()
   def on_userMediaFailed(event: userMediaFailed, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_userMediaRequest(event: userMediaRequest, listener: js.Function1[/* constraints */ MediaStreamConstraints, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def setDescription(sessionDescription: String, options: WebSessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
   def setDescription(
     sessionDescription: String,
     options: WebSessionDescriptionHandlerOptions,
     modifiers: SessionDescriptionHandlerModifiers
   ): js.Promise[Unit] = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
 }
 
 /* static members */
 @JSImport("sip.js/lib/Web/SessionDescriptionHandler", "SessionDescriptionHandler")
 @js.native
 object SessionDescriptionHandler extends js.Object {
+  def defaultFactory(session: Session, options: js.Any): SessionDescriptionHandler = js.native
   /**
     * @param {SIP.Session} session
     * @param {Object} [options]

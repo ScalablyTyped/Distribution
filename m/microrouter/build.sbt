@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "microrouter"
-version := "3.1-dt-20180615Z-d906b8"
+version := "3.1-dt-20190930Z-f23c65"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "micro" % "7.3-dt-20181017Z-475a92",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "micro" % "7.3-dt-20181017Z-a12e64",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -8,6 +8,8 @@ import typings.three.srcConstantsMod.Colors
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.NormalMapTypes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcMaterialsMeshStandardMaterialMod.MeshStandardMaterialParameters
 import typings.three.srcMathColorMod.Color
 import typings.three.srcMathPlaneMod.Plane
@@ -21,9 +23,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MeshPhysicalMaterialParameters extends MeshStandardMaterialParameters {
-  var clearCoat: js.UndefOr[Double] = js.undefined
-  var clearCoatRoughness: js.UndefOr[Double] = js.undefined
+  var clearcoat: js.UndefOr[Double] = js.undefined
+  var clearcoatNormalMap: js.UndefOr[Texture | Null] = js.undefined
+  var clearcoatNormalScale: js.UndefOr[Vector2] = js.undefined
+  var clearcoatRoughness: js.UndefOr[Double] = js.undefined
   var reflectivity: js.UndefOr[Double] = js.undefined
+  var sheen: js.UndefOr[Color] = js.undefined
 }
 
 object MeshPhysicalMaterialParameters {
@@ -42,8 +47,10 @@ object MeshPhysicalMaterialParameters {
     blending: Blending = null,
     bumpMap: Texture = null,
     bumpScale: Int | Double = null,
-    clearCoat: Int | Double = null,
-    clearCoatRoughness: Int | Double = null,
+    clearcoat: Int | Double = null,
+    clearcoatNormalMap: Texture = null,
+    clearcoatNormalScale: Vector2 = null,
+    clearcoatRoughness: Int | Double = null,
     clipIntersection: js.UndefOr[Boolean] = js.undefined,
     clipShadows: js.UndefOr[Boolean] = js.undefined,
     clippingPlanes: js.Array[Plane] = null,
@@ -65,7 +72,6 @@ object MeshPhysicalMaterialParameters {
     fog: js.UndefOr[Boolean] = js.undefined,
     lightMap: Texture = null,
     lightMapIntensity: Int | Double = null,
-    lights: js.UndefOr[Boolean] = js.undefined,
     map: Texture = null,
     metalness: Int | Double = null,
     metalnessMap: Texture = null,
@@ -87,8 +93,17 @@ object MeshPhysicalMaterialParameters {
     roughness: Int | Double = null,
     roughnessMap: Texture = null,
     shadowSide: Side = null,
+    sheen: Color = null,
     side: Side = null,
     skinning: js.UndefOr[Boolean] = js.undefined,
+    stencilFail: StencilOp = null,
+    stencilFunc: StencilFunc = null,
+    stencilMask: Int | Double = null,
+    stencilRef: Int | Double = null,
+    stencilWrite: js.UndefOr[Boolean] = js.undefined,
+    stencilZFail: StencilOp = null,
+    stencilZPass: StencilOp = null,
+    toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     vertexColors: Colors = null,
     vertexTangents: js.UndefOr[Boolean] = js.undefined,
@@ -110,8 +125,10 @@ object MeshPhysicalMaterialParameters {
     if (blending != null) __obj.updateDynamic("blending")(blending)
     if (bumpMap != null) __obj.updateDynamic("bumpMap")(bumpMap)
     if (bumpScale != null) __obj.updateDynamic("bumpScale")(bumpScale.asInstanceOf[js.Any])
-    if (clearCoat != null) __obj.updateDynamic("clearCoat")(clearCoat.asInstanceOf[js.Any])
-    if (clearCoatRoughness != null) __obj.updateDynamic("clearCoatRoughness")(clearCoatRoughness.asInstanceOf[js.Any])
+    if (clearcoat != null) __obj.updateDynamic("clearcoat")(clearcoat.asInstanceOf[js.Any])
+    if (clearcoatNormalMap != null) __obj.updateDynamic("clearcoatNormalMap")(clearcoatNormalMap)
+    if (clearcoatNormalScale != null) __obj.updateDynamic("clearcoatNormalScale")(clearcoatNormalScale)
+    if (clearcoatRoughness != null) __obj.updateDynamic("clearcoatRoughness")(clearcoatRoughness.asInstanceOf[js.Any])
     if (!js.isUndefined(clipIntersection)) __obj.updateDynamic("clipIntersection")(clipIntersection)
     if (!js.isUndefined(clipShadows)) __obj.updateDynamic("clipShadows")(clipShadows)
     if (clippingPlanes != null) __obj.updateDynamic("clippingPlanes")(clippingPlanes)
@@ -133,7 +150,6 @@ object MeshPhysicalMaterialParameters {
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
     if (lightMap != null) __obj.updateDynamic("lightMap")(lightMap)
     if (lightMapIntensity != null) __obj.updateDynamic("lightMapIntensity")(lightMapIntensity.asInstanceOf[js.Any])
-    if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
     if (map != null) __obj.updateDynamic("map")(map)
     if (metalness != null) __obj.updateDynamic("metalness")(metalness.asInstanceOf[js.Any])
     if (metalnessMap != null) __obj.updateDynamic("metalnessMap")(metalnessMap)
@@ -155,8 +171,17 @@ object MeshPhysicalMaterialParameters {
     if (roughness != null) __obj.updateDynamic("roughness")(roughness.asInstanceOf[js.Any])
     if (roughnessMap != null) __obj.updateDynamic("roughnessMap")(roughnessMap)
     if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
+    if (sheen != null) __obj.updateDynamic("sheen")(sheen)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
+    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail)
+    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc)
+    if (stencilMask != null) __obj.updateDynamic("stencilMask")(stencilMask.asInstanceOf[js.Any])
+    if (stencilRef != null) __obj.updateDynamic("stencilRef")(stencilRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite)
+    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail)
+    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass)
+    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents)

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the TextRange object, for use in "textRange.set({ ... })". */
+/** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
 trait TextRangeUpdateData extends js.Object {
   /**
     *

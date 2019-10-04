@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ssmDocumentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AccountIdsTypeInput
+import typings.atPulumiAws.typesInputMod.ssmNs.DocumentPermissions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait DocumentArgs extends js.Object {
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[Input[Anon_AccountIdsTypeInput]] = js.undefined
+  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.undefined
   /**
     * A mapping of tags to assign to the object.
     */
@@ -41,7 +41,7 @@ object DocumentArgs {
     documentType: Input[String],
     documentFormat: Input[String] = null,
     name: Input[String] = null,
-    permissions: Input[Anon_AccountIdsTypeInput] = null,
+    permissions: Input[DocumentPermissions] = null,
     tags: Input[StringDictionary[_]] = null
   ): DocumentArgs = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], documentType = documentType.asInstanceOf[js.Any])

@@ -182,7 +182,7 @@ trait Chance extends Seeded {
    // API return type not defined in docs
   def months(): js.Array[Month] = js.native
   def n[T](generator: js.Function0[T], count: Double): js.Array[T] = js.native
-  def n[T](generator: js.Function0[T], count: Double, opts: Options): js.Array[T] = js.native
+  def n[T, O /* <: Options */](generator: js.Function1[/* options */ O, T], count: Double, options: O): js.Array[T] = js.native
   def name(): String = js.native
   def name(
     opts: AtLeastOneKey[
@@ -309,7 +309,7 @@ trait Chance extends Seeded {
   def tv(opts: Options): String = js.native
   def twitter(): String = js.native
   def unique[T](generator: js.Function0[T], count: Double): js.Array[T] = js.native
-  def unique[T](generator: js.Function0[T], count: Double, opts: Options): js.Array[T] = js.native
+  def unique[T, O /* <: Options */](generator: js.Function1[/* options */ O, T], count: Double, options: O): js.Array[T] = js.native
   def url(): String = js.native
   def url(
     opts: AtLeastOneKey[

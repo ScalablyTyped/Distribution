@@ -28,7 +28,7 @@ trait AutoCompleteOptions extends js.Object {
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
   var minLength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var noDataTemplate: js.UndefOr[String | js.Function] = js.undefined
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
   var open: js.UndefOr[js.Function1[/* e */ AutoCompleteOpenEvent, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var popup: js.UndefOr[js.Any] = js.undefined
@@ -66,7 +66,7 @@ object AutoCompleteOptions {
     ignoreCase: js.UndefOr[Boolean] = js.undefined,
     minLength: Int | Double = null,
     name: String = null,
-    noDataTemplate: String | js.Function = null,
+    noDataTemplate: String | js.Function | Boolean = null,
     open: /* e */ AutoCompleteOpenEvent => Unit = null,
     placeholder: String = null,
     popup: js.Any = null,

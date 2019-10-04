@@ -1,6 +1,6 @@
 package typings.sipDotJs.libCoreDialogsDialogMod
 
-import typings.sipDotJs.Anon_Body
+import typings.sipDotJs.Anon_BodyCseq
 import typings.sipDotJs.libCoreDialogsDialogDashStateMod.DialogState
 import typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage
 import typings.sipDotJs.libCoreMessagesMod.IncomingResponseMessage
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 class Dialog protected () extends js.Object {
   /**
     * Dialog constructor.
-    * @param core User agent core.
-    * @param dialogState Initial dialog state.
+    * @param core - User agent core.
+    * @param dialogState - Initial dialog state.
     */
   protected def this(core: UserAgentCore, dialogState: DialogState) = this()
   /** Call identifier component of the dialog id. */
@@ -81,10 +81,10 @@ class Dialog protected () extends js.Object {
     * A request within a dialog is constructed by using many of the
     * components of the state stored as part of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.2.1.1
-    * @param method Outgoing request method.
+    * @param method - Outgoing request method.
     */
   def createOutgoingRequestMessage(method: String): OutgoingRequestMessage = js.native
-  def createOutgoingRequestMessage(method: String, options: Anon_Body): OutgoingRequestMessage = js.native
+  def createOutgoingRequestMessage(method: String, options: Anon_BodyCseq): OutgoingRequestMessage = js.native
   /** Destructor. */
   def dispose(): Unit = js.native
   /**
@@ -97,7 +97,7 @@ class Dialog protected () extends js.Object {
     *    state.
     *
     * https://tools.ietf.org/html/rfc3261#section-12.2.2
-    * @param message Incoming request message within this dialog.
+    * @param message - Incoming request message within this dialog.
     */
   def receiveRequest(message: IncomingRequestMessage): Unit = js.native
   /**
@@ -126,7 +126,7 @@ class Dialog protected () extends js.Object {
     * is out of order and MUST be rejected with a 500 (Server Internal
     * Error) response.
     * https://tools.ietf.org/html/rfc3261#section-12.2.2
-    * @param request Incoming request to guard.
+    * @param request - Incoming request to guard.
     * @returns True if the program execution is to continue in the branch in question.
     *          Otherwise a 500 Server Internal Error was stateless sent and request processing must stop.
     */
@@ -142,16 +142,16 @@ object Dialog extends js.Object {
     * constructs the state of the dialog.  This state MUST be maintained
     * for the duration of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.1.2
-    * @param outgoingRequestMessage Outgoing request message for dialog.
-    * @param incomingResponseMessage Incoming response message creating dialog.
+    * @param outgoingRequestMessage - Outgoing request message for dialog.
+    * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = js.native
   /**
     * The UAS then constructs the state of the dialog.  This state MUST be
     * maintained for the duration of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.1.1
-    * @param incomingRequestMessage Incoming request message creating dialog.
-    * @param toTag Tag in the To field in the response to the incoming request.
+    * @param incomingRequestMessage - Incoming request message creating dialog.
+    * @param toTag - Tag in the To field in the response to the incoming request.
     */
   def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = js.native
   def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = js.native

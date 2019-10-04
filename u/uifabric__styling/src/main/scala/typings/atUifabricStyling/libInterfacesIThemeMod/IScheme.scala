@@ -23,6 +23,7 @@ trait IScheme extends js.Object {
   var fonts: IFontStyles
   var isInverted: Boolean
   var palette: IPalette
+  var rtl: js.UndefOr[Boolean] = js.undefined
   var semanticColors: ISemanticColors
   /**
     * @internal
@@ -42,10 +43,11 @@ object IScheme {
     isInverted: Boolean,
     palette: IPalette,
     semanticColors: ISemanticColors,
-    spacing: ISpacing
+    spacing: ISpacing,
+    rtl: js.UndefOr[Boolean] = js.undefined
   ): IScheme = {
     val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
-  
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
     __obj.asInstanceOf[IScheme]
   }
 }

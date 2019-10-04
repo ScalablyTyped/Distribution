@@ -86,7 +86,7 @@ class Document () extends ClientObject {
   val settings: SettingCollection = js.native
   /**
     *
-    * Deletes a bookmark, if exists, from the document.
+    * Deletes a bookmark, if it exists, from the document.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
@@ -96,7 +96,7 @@ class Document () extends ClientObject {
   def deleteBookmark(name: String): Unit = js.native
   /**
     *
-    * Gets a bookmark's range. Throws if the bookmark does not exist.
+    * Gets a bookmark's range. Throws an error if the bookmark does not exist.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
@@ -143,7 +143,7 @@ class Document () extends ClientObject {
   def load(option: DocumentLoadOptions): Document = js.native
   /**
     *
-    * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
+    * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
     *
     * [Api set: WordApi 1.1]
     */

@@ -92,8 +92,8 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     *
     * @param records List of objects (key/value pairs) to create instances from
     */
-  def bulkCreate(records: js.Array[TAttributes]): typings.bluebird.bluebirdMod.^[js.Array[TInstance]] = js.native
-  def bulkCreate(records: js.Array[TAttributes], options: BulkCreateOptions): typings.bluebird.bluebirdMod.^[js.Array[TInstance]] = js.native
+  def bulkCreate(records: js.Array[TCreationAttributes]): typings.bluebird.bluebirdMod.^[js.Array[TInstance]] = js.native
+  def bulkCreate(records: js.Array[TCreationAttributes], options: BulkCreateOptions): typings.bluebird.bluebirdMod.^[js.Array[TInstance]] = js.native
   /**
     * Count the number of records matching the provided where clause.
     *

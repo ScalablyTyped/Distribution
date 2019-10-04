@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mochaccino"
-version := "1.2-dt-20181212Z-8ef36d"
+version := "1.2-dt-20181212Z-e67d8e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190612Z-357112",
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191001Z-ee8eaf",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

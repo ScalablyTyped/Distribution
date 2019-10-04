@@ -1,0 +1,33 @@
+package typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.add_payment_info
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.add_to_cart
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.add_to_wishlist
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.begin_checkout
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.checkout_progress
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.exception
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.generate_lead
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.login
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.page_view
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.purchase
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.refund
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.remove_from_cart
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.screen_view
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.search
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.select_content
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.set_checkout_option
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.share
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.sign_up
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.timing_complete
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.view_item
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.view_item_list
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.view_promotion
+  - typings.atFirebaseAnalyticsDashTypes.atFirebaseAnalyticsDashTypesStrings.view_search_results
+*/
+trait EventNameString extends js.Object
+

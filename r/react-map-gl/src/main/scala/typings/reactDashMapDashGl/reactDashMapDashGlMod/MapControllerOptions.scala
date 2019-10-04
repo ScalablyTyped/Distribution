@@ -12,7 +12,7 @@ trait MapControllerOptions extends js.Object {
   var isInteractive: Boolean
   var keyboard: js.UndefOr[Boolean] = js.undefined
   var onStateChange: js.UndefOr[js.Function1[/* state */ MapState, Unit]] = js.undefined
-  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
   var scrollZoom: js.UndefOr[Boolean] = js.undefined
   var touchRotate: js.UndefOr[Boolean] = js.undefined
   var touchZoom: js.UndefOr[Boolean] = js.undefined
@@ -28,7 +28,7 @@ object MapControllerOptions {
     eventManager: js.Any = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     onStateChange: /* state */ MapState => Unit = null,
-    onViewportChange: ViewportChangeHandler = null,
+    onViewportChange: ContextViewportChangeHandler = null,
     scrollZoom: js.UndefOr[Boolean] = js.undefined,
     touchRotate: js.UndefOr[Boolean] = js.undefined,
     touchZoom: js.UndefOr[Boolean] = js.undefined

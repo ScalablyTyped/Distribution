@@ -1,8 +1,8 @@
 package typings.atPulumiAws.redshiftClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketNameEnableS3KeyPrefix
-import typings.atPulumiAws.Anon_DestinationRegionGrantName
+import typings.atPulumiAws.typesInputMod.redshiftNs.ClusterLogging
+import typings.atPulumiAws.typesInputMod.redshiftNs.ClusterSnapshotCopy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -91,7 +91,7 @@ trait ClusterArgs extends js.Object {
   /**
     * Logging, documented below.
     */
-  val logging: js.UndefOr[Input[Anon_BucketNameEnableS3KeyPrefix]] = js.undefined
+  val logging: js.UndefOr[Input[ClusterLogging]] = js.undefined
   /**
     * Password for the master DB user.
     * Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
@@ -139,7 +139,7 @@ trait ClusterArgs extends js.Object {
   /**
     * Configuration of automatic copy of snapshots from one region to another. Documented below.
     */
-  val snapshotCopy: js.UndefOr[Input[Anon_DestinationRegionGrantName]] = js.undefined
+  val snapshotCopy: js.UndefOr[Input[ClusterSnapshotCopy]] = js.undefined
   /**
     * The name of the snapshot from which to create the new cluster.
     */
@@ -177,7 +177,7 @@ object ClusterArgs {
     finalSnapshotIdentifier: Input[String] = null,
     iamRoles: Input[js.Array[Input[String]]] = null,
     kmsKeyId: Input[String] = null,
-    logging: Input[Anon_BucketNameEnableS3KeyPrefix] = null,
+    logging: Input[ClusterLogging] = null,
     masterPassword: Input[String] = null,
     masterUsername: Input[String] = null,
     numberOfNodes: Input[Double] = null,
@@ -187,7 +187,7 @@ object ClusterArgs {
     publiclyAccessible: Input[Boolean] = null,
     skipFinalSnapshot: Input[Boolean] = null,
     snapshotClusterIdentifier: Input[String] = null,
-    snapshotCopy: Input[Anon_DestinationRegionGrantName] = null,
+    snapshotCopy: Input[ClusterSnapshotCopy] = null,
     snapshotIdentifier: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     vpcSecurityGroupIds: Input[js.Array[Input[String]]] = null

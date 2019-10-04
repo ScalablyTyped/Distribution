@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codecommitTriggerMod
 
-import typings.atPulumiAws.Anon_BranchesCustomData
+import typings.atPulumiAws.typesInputMod.codecommitNs.TriggerTrigger
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait TriggerState extends js.Object {
     * The name for the repository. This needs to be less than 100 characters.
     */
   val repositoryName: js.UndefOr[Input[String]] = js.undefined
-  val triggers: js.UndefOr[Input[js.Array[Input[Anon_BranchesCustomData]]]] = js.undefined
+  val triggers: js.UndefOr[Input[js.Array[Input[TriggerTrigger]]]] = js.undefined
 }
 
 object TriggerState {
@@ -20,7 +20,7 @@ object TriggerState {
   def apply(
     configurationId: Input[String] = null,
     repositoryName: Input[String] = null,
-    triggers: Input[js.Array[Input[Anon_BranchesCustomData]]] = null
+    triggers: Input[js.Array[Input[TriggerTrigger]]] = null
   ): TriggerState = {
     val __obj = js.Dynamic.literal()
     if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId.asInstanceOf[js.Any])

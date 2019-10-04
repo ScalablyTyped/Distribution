@@ -1,7 +1,7 @@
 
 # Scala.js typings for big-integer
 
-Typings are for version 1.6.45
+Typings are for version 1.6.46
 
 ## Library description:
 An arbitrary length integer library for Javascript

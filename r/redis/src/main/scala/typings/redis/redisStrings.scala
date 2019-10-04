@@ -9,6 +9,9 @@ object redisStrings {
   sealed trait AFTER extends js.Object
   
   @js.native
+  sealed trait ASYNC extends js.Object
+  
+  @js.native
   sealed trait BEFORE extends js.Object
   
   @js.native
@@ -40,6 +43,8 @@ object redisStrings {
   
   @scala.inline
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
+  @scala.inline
+  def ASYNC: ASYNC = "ASYNC".asInstanceOf[ASYNC]
   @scala.inline
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   @scala.inline

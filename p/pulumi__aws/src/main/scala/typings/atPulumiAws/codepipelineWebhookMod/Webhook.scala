@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelineWebhookMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllowedIpRange
-import typings.atPulumiAws.Anon_JsonPath
+import typings.atPulumiAws.typesOutputMod.codepipelineNs.WebhookAuthenticationConfiguration
+import typings.atPulumiAws.typesOutputMod.codepipelineNs.WebhookFilter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,11 +31,11 @@ class Webhook protected () extends CustomResource {
   /**
     * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
     */
-  val authenticationConfiguration: Output[js.UndefOr[Anon_AllowedIpRange]] = js.native
+  val authenticationConfiguration: Output[js.UndefOr[WebhookAuthenticationConfiguration]] = js.native
   /**
     * One or more `filter` blocks. Filter blocks are documented below.
     */
-  val filters: Output[js.Array[Anon_JsonPath]] = js.native
+  val filters: Output[js.Array[WebhookFilter]] = js.native
   /**
     * The name of the webhook.
     */

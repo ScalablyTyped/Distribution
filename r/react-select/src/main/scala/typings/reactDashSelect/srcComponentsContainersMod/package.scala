@@ -9,8 +9,9 @@ package object srcComponentsContainersMod {
   import typings.reactDashSelect.Anon_ChildrenInnerPropsAnonOnKeyDown
   import typings.reactDashSelect.Anon_ChildrenReactNode
   import typings.reactDashSelect.srcTypesMod.CommonProps
+  import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 
-  type ContainerProps[OptionType] = CommonProps[OptionType] with ContainerState with Anon_ChildrenInnerPropsAnonOnKeyDown
-  type IndicatorContainerProps[OptionType] = CommonProps[OptionType] with IndicatorsState with Anon_ChildrenReactNode
-  type ValueContainerProps[OptionType] = CommonProps[OptionType] with Anon_ChildrenHasValue
+  type ContainerProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with ContainerState with Anon_ChildrenInnerPropsAnonOnKeyDown
+  type IndicatorContainerProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with IndicatorsState with Anon_ChildrenReactNode
+  type ValueContainerProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with Anon_ChildrenHasValue
 }

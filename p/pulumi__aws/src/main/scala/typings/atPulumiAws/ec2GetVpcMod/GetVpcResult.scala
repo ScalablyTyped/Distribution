@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2GetVpcMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AssociationId
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcCidrBlockAssociation
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GetVpcResult extends js.Object {
     * The CIDR block for the association.
     */
   val cidrBlock: String
-  val cidrBlockAssociations: js.Array[Anon_AssociationId]
+  val cidrBlockAssociations: js.Array[GetVpcCidrBlockAssociation]
   val default: Boolean
   val dhcpOptionsId: String
   /**
@@ -27,7 +27,7 @@ trait GetVpcResult extends js.Object {
     * Whether or not the VPC has DNS support
     */
   val enableDnsSupport: Boolean
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcFilter]] = js.undefined
   val id: String
   /**
     * The allowed tenancy of instances launched into the
@@ -62,7 +62,7 @@ object GetVpcResult {
   def apply(
     arn: String,
     cidrBlock: String,
-    cidrBlockAssociations: js.Array[Anon_AssociationId],
+    cidrBlockAssociations: js.Array[GetVpcCidrBlockAssociation],
     default: Boolean,
     dhcpOptionsId: String,
     enableDnsHostnames: Boolean,
@@ -75,7 +75,7 @@ object GetVpcResult {
     ownerId: String,
     state: String,
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetVpcFilter] = null
   ): GetVpcResult = {
     val __obj = js.Dynamic.literal(arn = arn, cidrBlock = cidrBlock, cidrBlockAssociations = cidrBlockAssociations, default = default, dhcpOptionsId = dhcpOptionsId, enableDnsHostnames = enableDnsHostnames, enableDnsSupport = enableDnsSupport, id = id, instanceTenancy = instanceTenancy, ipv6AssociationId = ipv6AssociationId, ipv6CidrBlock = ipv6CidrBlock, mainRouteTableId = mainRouteTableId, ownerId = ownerId, state = state, tags = tags)
     if (filters != null) __obj.updateDynamic("filters")(filters)

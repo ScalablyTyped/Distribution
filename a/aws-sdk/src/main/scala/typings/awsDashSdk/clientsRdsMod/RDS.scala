@@ -1,6 +1,8 @@
 package typings.awsDashSdk.clientsRdsMod
 
 import typings.awsDashSdk.Anon_Waiter
+import typings.awsDashSdk.awsDashSdkStrings.dBClusterSnapshotAvailable
+import typings.awsDashSdk.awsDashSdkStrings.dBClusterSnapshotDeleted
 import typings.awsDashSdk.awsDashSdkStrings.dBInstanceAvailable
 import typings.awsDashSdk.awsDashSdkStrings.dBInstanceDeleted
 import typings.awsDashSdk.awsDashSdkStrings.dBSnapshotAvailable
@@ -1474,6 +1476,48 @@ trait RDS extends Service {
     params: StopDBInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ StopDBInstanceResult, Unit]
   ): Request[StopDBInstanceResult, AWSError] = js.native
+  /**
+    * Waits for the dBClusterSnapshotAvailable state by periodically calling the underlying RDS.describeDBClusterSnapshotsoperation every 30 seconds (at most 60 times).
+    */
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotAvailable(state: dBClusterSnapshotAvailable): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotAvailable(
+    state: dBClusterSnapshotAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
+  ): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  /**
+    * Waits for the dBClusterSnapshotAvailable state by periodically calling the underlying RDS.describeDBClusterSnapshotsoperation every 30 seconds (at most 60 times).
+    */
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotAvailable(state: dBClusterSnapshotAvailable, params: DescribeDBClusterSnapshotsMessage with Anon_Waiter): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotAvailable(
+    state: dBClusterSnapshotAvailable,
+    params: DescribeDBClusterSnapshotsMessage with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
+  ): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  /**
+    * Waits for the dBClusterSnapshotDeleted state by periodically calling the underlying RDS.describeDBClusterSnapshotsoperation every 30 seconds (at most 60 times).
+    */
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotDeleted(state: dBClusterSnapshotDeleted): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotDeleted(
+    state: dBClusterSnapshotDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
+  ): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  /**
+    * Waits for the dBClusterSnapshotDeleted state by periodically calling the underlying RDS.describeDBClusterSnapshotsoperation every 30 seconds (at most 60 times).
+    */
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotDeleted(state: dBClusterSnapshotDeleted, params: DescribeDBClusterSnapshotsMessage with Anon_Waiter): Request[DBClusterSnapshotMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_dBClusterSnapshotDeleted(
+    state: dBClusterSnapshotDeleted,
+    params: DescribeDBClusterSnapshotsMessage with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
+  ): Request[DBClusterSnapshotMessage, AWSError] = js.native
   /**
     * Waits for the dBInstanceAvailable state by periodically calling the underlying RDS.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */

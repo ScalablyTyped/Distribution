@@ -158,9 +158,7 @@ trait Protocol extends EventEmitter {
     * request will fail with the error number you specified. For the available error
     * numbers you can use, please see the net error list. By default the scheme is
     * treated like http:, which is parsed differently than protocols that follow the
-    * "generic URI syntax" like file:, so you probably want to call
-    * protocol.registerStandardSchemes to have your scheme treated as a standard
-    * scheme.
+    * "generic URI syntax" like file:.
     */
   def registerFileProtocol(
     scheme: String,
@@ -223,6 +221,10 @@ trait Protocol extends EventEmitter {
     * sessionStorage, webSQL, indexedDB, cookies) are disabled for non standard
     * schemes. So in general if you want to register a custom protocol to replace the
     * http protocol, you have to register it as a standard scheme.
+    * protocol.registerSchemesAsPrivileged can be used to replicate the functionality
+    * of the previous protocol.registerStandardSchemes, webFrame.registerURLSchemeAs*
+    * and protocol.registerServiceWorkerSchemes functions that existed prior to
+    * Electron 5.0.0, for example: before (<= v4.x) after (>= v5.x)
     */
   def registerSchemesAsPrivileged(customSchemes: js.Array[CustomScheme]): Unit = js.native
   /**

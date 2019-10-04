@@ -11,6 +11,8 @@ trait Request extends js.Object {
   var addChart: js.UndefOr[AddChartRequest] = js.undefined
   /** Adds a new conditional format rule. */
   var addConditionalFormatRule: js.UndefOr[AddConditionalFormatRuleRequest] = js.undefined
+  /** Creates a group over the specified range. */
+  var addDimensionGroup: js.UndefOr[AddDimensionGroupRequest] = js.undefined
   /** Adds a filter view. */
   var addFilterView: js.UndefOr[AddFilterViewRequest] = js.undefined
   /** Adds a named range. */
@@ -46,6 +48,13 @@ trait Request extends js.Object {
   var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataRequest] = js.undefined
   /** Deletes rows or columns in a sheet. */
   var deleteDimension: js.UndefOr[DeleteDimensionRequest] = js.undefined
+  /** Deletes a group over the specified range. */
+  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupRequest] = js.undefined
+  /**
+    * Removes rows containing duplicate values in specified columns of a cell
+    * range.
+    */
+  var deleteDuplicates: js.UndefOr[DeleteDuplicatesRequest] = js.undefined
   /** Deletes an embedded object (e.g, chart, image) in a sheet. */
   var deleteEmbeddedObject: js.UndefOr[DeleteEmbeddedObjectRequest] = js.undefined
   /** Deletes a filter view from a sheet. */
@@ -86,6 +95,8 @@ trait Request extends js.Object {
   var sortRange: js.UndefOr[SortRangeRequest] = js.undefined
   /** Converts a column of text into many columns of text. */
   var textToColumns: js.UndefOr[TextToColumnsRequest] = js.undefined
+  /** Trims cells of whitespace (such as spaces, tabs, or new lines). */
+  var trimWhitespace: js.UndefOr[TrimWhitespaceRequest] = js.undefined
   /** Unmerges merged cells. */
   var unmergeCells: js.UndefOr[UnmergeCellsRequest] = js.undefined
   /** Updates a banded range */
@@ -100,6 +111,8 @@ trait Request extends js.Object {
   var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleRequest] = js.undefined
   /** Updates an existing developer metadata entry */
   var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataRequest] = js.undefined
+  /** Updates the state of the specified group. */
+  var updateDimensionGroup: js.UndefOr[UpdateDimensionGroupRequest] = js.undefined
   /** Updates dimensions' properties. */
   var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.undefined
   /** Updates an embedded object's (e.g. chart, image) position. */
@@ -122,6 +135,7 @@ object Request {
     addBanding: AddBandingRequest = null,
     addChart: AddChartRequest = null,
     addConditionalFormatRule: AddConditionalFormatRuleRequest = null,
+    addDimensionGroup: AddDimensionGroupRequest = null,
     addFilterView: AddFilterViewRequest = null,
     addNamedRange: AddNamedRangeRequest = null,
     addProtectedRange: AddProtectedRangeRequest = null,
@@ -138,6 +152,8 @@ object Request {
     deleteConditionalFormatRule: DeleteConditionalFormatRuleRequest = null,
     deleteDeveloperMetadata: DeleteDeveloperMetadataRequest = null,
     deleteDimension: DeleteDimensionRequest = null,
+    deleteDimensionGroup: DeleteDimensionGroupRequest = null,
+    deleteDuplicates: DeleteDuplicatesRequest = null,
     deleteEmbeddedObject: DeleteEmbeddedObjectRequest = null,
     deleteFilterView: DeleteFilterViewRequest = null,
     deleteNamedRange: DeleteNamedRangeRequest = null,
@@ -158,6 +174,7 @@ object Request {
     setDataValidation: SetDataValidationRequest = null,
     sortRange: SortRangeRequest = null,
     textToColumns: TextToColumnsRequest = null,
+    trimWhitespace: TrimWhitespaceRequest = null,
     unmergeCells: UnmergeCellsRequest = null,
     updateBanding: UpdateBandingRequest = null,
     updateBorders: UpdateBordersRequest = null,
@@ -165,6 +182,7 @@ object Request {
     updateChartSpec: UpdateChartSpecRequest = null,
     updateConditionalFormatRule: UpdateConditionalFormatRuleRequest = null,
     updateDeveloperMetadata: UpdateDeveloperMetadataRequest = null,
+    updateDimensionGroup: UpdateDimensionGroupRequest = null,
     updateDimensionProperties: UpdateDimensionPropertiesRequest = null,
     updateEmbeddedObjectPosition: UpdateEmbeddedObjectPositionRequest = null,
     updateFilterView: UpdateFilterViewRequest = null,
@@ -177,6 +195,7 @@ object Request {
     if (addBanding != null) __obj.updateDynamic("addBanding")(addBanding)
     if (addChart != null) __obj.updateDynamic("addChart")(addChart)
     if (addConditionalFormatRule != null) __obj.updateDynamic("addConditionalFormatRule")(addConditionalFormatRule)
+    if (addDimensionGroup != null) __obj.updateDynamic("addDimensionGroup")(addDimensionGroup)
     if (addFilterView != null) __obj.updateDynamic("addFilterView")(addFilterView)
     if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange)
     if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange)
@@ -193,6 +212,8 @@ object Request {
     if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule)
     if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata)
     if (deleteDimension != null) __obj.updateDynamic("deleteDimension")(deleteDimension)
+    if (deleteDimensionGroup != null) __obj.updateDynamic("deleteDimensionGroup")(deleteDimensionGroup)
+    if (deleteDuplicates != null) __obj.updateDynamic("deleteDuplicates")(deleteDuplicates)
     if (deleteEmbeddedObject != null) __obj.updateDynamic("deleteEmbeddedObject")(deleteEmbeddedObject)
     if (deleteFilterView != null) __obj.updateDynamic("deleteFilterView")(deleteFilterView)
     if (deleteNamedRange != null) __obj.updateDynamic("deleteNamedRange")(deleteNamedRange)
@@ -213,6 +234,7 @@ object Request {
     if (setDataValidation != null) __obj.updateDynamic("setDataValidation")(setDataValidation)
     if (sortRange != null) __obj.updateDynamic("sortRange")(sortRange)
     if (textToColumns != null) __obj.updateDynamic("textToColumns")(textToColumns)
+    if (trimWhitespace != null) __obj.updateDynamic("trimWhitespace")(trimWhitespace)
     if (unmergeCells != null) __obj.updateDynamic("unmergeCells")(unmergeCells)
     if (updateBanding != null) __obj.updateDynamic("updateBanding")(updateBanding)
     if (updateBorders != null) __obj.updateDynamic("updateBorders")(updateBorders)
@@ -220,6 +242,7 @@ object Request {
     if (updateChartSpec != null) __obj.updateDynamic("updateChartSpec")(updateChartSpec)
     if (updateConditionalFormatRule != null) __obj.updateDynamic("updateConditionalFormatRule")(updateConditionalFormatRule)
     if (updateDeveloperMetadata != null) __obj.updateDynamic("updateDeveloperMetadata")(updateDeveloperMetadata)
+    if (updateDimensionGroup != null) __obj.updateDynamic("updateDimensionGroup")(updateDimensionGroup)
     if (updateDimensionProperties != null) __obj.updateDynamic("updateDimensionProperties")(updateDimensionProperties)
     if (updateEmbeddedObjectPosition != null) __obj.updateDynamic("updateEmbeddedObjectPosition")(updateEmbeddedObjectPosition)
     if (updateFilterView != null) __obj.updateDynamic("updateFilterView")(updateFilterView)

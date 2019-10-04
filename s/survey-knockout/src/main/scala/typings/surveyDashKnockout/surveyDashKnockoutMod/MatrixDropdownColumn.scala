@@ -43,6 +43,7 @@ class MatrixDropdownColumn protected ()
   var validators: js.Array[SurveyValidator] = js.native
   val value: String = js.native
   var visibleIf: String = js.native
+  var width: String = js.native
   /* protected */ def calcCellQuestionType(): String = js.native
   def createCellQuestion(data: js.Any): Question = js.native
   /* protected */ def createNewQuestion(cellType: String): Question = js.native

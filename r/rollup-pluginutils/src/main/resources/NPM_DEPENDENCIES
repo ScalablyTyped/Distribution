@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rollup-pluginutils" : "2.8.1"
+      "rollup-pluginutils" : "2.8.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rollup-pluginutils" : "2.8.1"
+      "rollup-pluginutils" : "2.8.2"
     }
   ],
   "compile-devDependencies" : [

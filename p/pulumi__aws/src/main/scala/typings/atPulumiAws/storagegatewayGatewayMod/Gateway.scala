@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayGatewayMod
 
-import typings.atPulumiAws.Anon_DomainNamePassword
+import typings.atPulumiAws.typesOutputMod.storagegatewayNs.GatewaySmbActiveDirectorySettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -54,7 +54,7 @@ class Gateway protected () extends CustomResource {
   /**
     * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
     */
-  val smbActiveDirectorySettings: Output[js.UndefOr[Anon_DomainNamePassword]] = js.native
+  val smbActiveDirectorySettings: Output[js.UndefOr[GatewaySmbActiveDirectorySettings]] = js.native
   /**
     * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. This provider can only detect drift of the existence of a guest password, not its actual value from the gateway. This provider can however update the password with changing the argument.
     */

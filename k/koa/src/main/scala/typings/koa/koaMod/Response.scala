@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Response extends BaseResponse {
-  var app: Application[_, js.Object] = js.native
+  var app: Application[DefaultState, DefaultContext] = js.native
   var ctx: Context = js.native
   var req: IncomingMessage = js.native
   var request: Request = js.native

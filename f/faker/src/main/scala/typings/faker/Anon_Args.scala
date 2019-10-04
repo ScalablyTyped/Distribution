@@ -20,6 +20,11 @@ trait Anon_Args extends js.Object {
   ): String = js.native
   def randomize(): String = js.native
   def randomize[T](array: js.Array[T]): T = js.native
+  def regexpStyleStringParse(string: String): String = js.native
+  def repeatString(string: String): String = js.native
+  def repeatString(string: String, num: Double): String = js.native
+  def replaceCreditCardSymbols(string: String): String = js.native
+  def replaceCreditCardSymbols(string: String, symbol: String): String = js.native
   def replaceSymbolWithNumber(): String = js.native
   def replaceSymbolWithNumber(string: String): String = js.native
   def replaceSymbolWithNumber(string: String, symbol: String): String = js.native

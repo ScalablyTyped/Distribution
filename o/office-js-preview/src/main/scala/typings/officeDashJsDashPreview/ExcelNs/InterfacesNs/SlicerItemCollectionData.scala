@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "slicerItemCollection.toJSON()". */
+/** An interface describing the data returned by calling `slicerItemCollection.toJSON()`. */
 trait SlicerItemCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[SlicerItemData]] = js.undefined
 }

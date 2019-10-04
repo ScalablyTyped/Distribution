@@ -1,7 +1,7 @@
 
 # Scala.js typings for bowser
 
-Typings are for version 2.6.1
+Typings are for version 2.7.0
 
 ## Library description:
 Lightweight browser detector

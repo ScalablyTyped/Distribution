@@ -15,7 +15,7 @@ trait CrossVersionObjectReference extends js.Object {
   val apiVersion: String
   /**
     * Kind of the referent; More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
     */
   val kind: String
   /**

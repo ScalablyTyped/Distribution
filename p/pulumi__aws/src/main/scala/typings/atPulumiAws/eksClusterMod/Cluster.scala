@@ -1,7 +1,9 @@
 package typings.atPulumiAws.eksClusterMod
 
-import typings.atPulumiAws.Anon_Data
-import typings.atPulumiAws.Anon_EndpointPrivateAccess
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.typesOutputMod.eksNs.ClusterCertificateAuthority
+import typings.atPulumiAws.typesOutputMod.eksNs.ClusterIdentity
+import typings.atPulumiAws.typesOutputMod.eksNs.ClusterVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +32,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Nested attribute containing `certificate-authority-data` for your cluster.
     */
-  val certificateAuthority: Output[Anon_Data] = js.native
+  val certificateAuthority: Output[ClusterCertificateAuthority] = js.native
   val createdAt: Output[String] = js.native
   /**
     * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
@@ -40,6 +42,10 @@ class Cluster protected () extends CustomResource {
     * The endpoint for your Kubernetes API server.
     */
   val endpoint: Output[String] = js.native
+  /**
+    * Nested attribute containing identity provider information for your cluster. Only available on Kubernetes version 1.13 and 1.14 clusters created or upgraded on or after September 3, 2019.
+    */
+  val identities: Output[js.Array[ClusterIdentity]] = js.native
   /**
     * Name of the cluster.
     */
@@ -57,13 +63,17 @@ class Cluster protected () extends CustomResource {
     */
   val status: Output[String] = js.native
   /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
     * Desired Kubernetes master version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except those automatically triggered by EKS. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by EKS.
     */
   val version: Output[String] = js.native
   /**
     * Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html) and [Cluster Security Group Considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html) in the Amazon EKS User Guide. Configuration detailed below.
     */
-  val vpcConfig: Output[Anon_EndpointPrivateAccess] = js.native
+  val vpcConfig: Output[ClusterVpcConfig] = js.native
 }
 
 /* static members */

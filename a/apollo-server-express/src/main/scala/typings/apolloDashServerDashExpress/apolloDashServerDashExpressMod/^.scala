@@ -102,7 +102,6 @@ object ^ extends js.Object {
   def mockServer(schema: GraphQLSchema, mocks: IMocks, preserveResolvers: Boolean): IMockServer = js.native
   def mockServer(schema: ITypeDefinitions, mocks: IMocks): IMockServer = js.native
   def mockServer(schema: ITypeDefinitions, mocks: IMocks, preserveResolvers: Boolean): IMockServer = js.native
-  def registerServer(): scala.Nothing = js.native
   def toApolloError(error: Error with Anon_Extensions): Error with Anon_ExtensionsAny = js.native
   def toApolloError(error: Error with Anon_Extensions, code: String): Error with Anon_ExtensionsAny = js.native
   def transformSchema(targetSchema: GraphQLSchema, transforms: js.Array[Transform]): GraphQLSchema with Anon_Transforms = js.native

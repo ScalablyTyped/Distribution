@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ResolverEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Ip
+import typings.atPulumiAws.typesOutputMod.route53Ns.ResolverEndpointIpAddress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -41,7 +41,7 @@ class ResolverEndpoint protected () extends CustomResource {
     * The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs
     * to your network (for outbound endpoints) or on the way from your network to your VPCs (for inbound endpoints). Described below.
     */
-  val ipAddresses: Output[js.Array[Anon_Ip]] = js.native
+  val ipAddresses: Output[js.Array[ResolverEndpointIpAddress]] = js.native
   /**
     * The friendly name of the Route 53 Resolver endpoint.
     */

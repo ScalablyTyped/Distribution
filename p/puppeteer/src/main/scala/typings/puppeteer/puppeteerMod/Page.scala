@@ -84,7 +84,7 @@ trait Page
     * @param fn The function to be evaluated in browser context.
     * @param args The arguments to pass to the `fn`.
     */
-  def evaluateOnNewDocument(fn: EvaluateFn, args: SerializableOrJSHandle*): js.Promise[Unit] = js.native
+  def evaluateOnNewDocument(fn: EvaluateFn[_], args: SerializableOrJSHandle*): js.Promise[Unit] = js.native
   /* InferMemberOverrides */
   override def eventNames(): js.Array[String | js.Symbol] = js.native
   /**
@@ -260,7 +260,7 @@ trait Page
     * The method iterates JavaScript heap and finds all the objects with the given prototype.
     * @param prototypeHandle A handle to the object prototype.
     */
-  def queryObjects(prototypeHandle: JSHandle): js.Promise[JSHandle] = js.native
+  def queryObjects(prototypeHandle: JSHandle[_]): js.Promise[JSHandle[_]] = js.native
   /* InferMemberOverrides */
   override def rawListeners(event: String): js.Array[js.Function] = js.native
   /* InferMemberOverrides */

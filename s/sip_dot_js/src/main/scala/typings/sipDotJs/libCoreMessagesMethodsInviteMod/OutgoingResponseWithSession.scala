@@ -7,7 +7,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OutgoingResponseWithSession extends OutgoingResponse {
-  /** Session associated with incoming request acceptance. */
+  /**
+    * Session associated with incoming request acceptance, or
+    * Session associated with incoming request progress (if an out of dialog request, an early dialog).
+    */
   val session: Session
 }
 

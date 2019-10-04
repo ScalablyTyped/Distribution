@@ -1,10 +1,10 @@
 package typings.atPulumiAws.mskClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ArnRevisionInput
-import typings.atPulumiAws.Anon_AzDistributionClientSubnets
-import typings.atPulumiAws.Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit
-import typings.atPulumiAws.Anon_TlsAnonCertificateAuthorityArnsArray
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterBrokerNodeGroupInfo
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterClientAuthentication
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterConfigurationInfo
+import typings.atPulumiAws.typesInputMod.mskNs.ClusterEncryptionInfo
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,11 +26,11 @@ trait ClusterState extends js.Object {
   /**
     * Configuration block for the broker nodes of the Kafka cluster.
     */
-  val brokerNodeGroupInfo: js.UndefOr[Input[Anon_AzDistributionClientSubnets]] = js.undefined
+  val brokerNodeGroupInfo: js.UndefOr[Input[ClusterBrokerNodeGroupInfo]] = js.undefined
   /**
     * Configuration block for specifying a client authentication. See below.
     */
-  val clientAuthentication: js.UndefOr[Input[Anon_TlsAnonCertificateAuthorityArnsArray]] = js.undefined
+  val clientAuthentication: js.UndefOr[Input[ClusterClientAuthentication]] = js.undefined
   /**
     * Name of the MSK cluster.
     */
@@ -38,7 +38,7 @@ trait ClusterState extends js.Object {
   /**
     * Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
     */
-  val configurationInfo: js.UndefOr[Input[Anon_ArnRevisionInput]] = js.undefined
+  val configurationInfo: js.UndefOr[Input[ClusterConfigurationInfo]] = js.undefined
   /**
     * Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
     * * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
@@ -47,7 +47,7 @@ trait ClusterState extends js.Object {
   /**
     * Configuration block for specifying encryption. See below.
     */
-  val encryptionInfo: js.UndefOr[Input[Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit]] = js.undefined
+  val encryptionInfo: js.UndefOr[Input[ClusterEncryptionInfo]] = js.undefined
   /**
     * Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
     */
@@ -76,12 +76,12 @@ object ClusterState {
     arn: Input[String] = null,
     bootstrapBrokers: Input[String] = null,
     bootstrapBrokersTls: Input[String] = null,
-    brokerNodeGroupInfo: Input[Anon_AzDistributionClientSubnets] = null,
-    clientAuthentication: Input[Anon_TlsAnonCertificateAuthorityArnsArray] = null,
+    brokerNodeGroupInfo: Input[ClusterBrokerNodeGroupInfo] = null,
+    clientAuthentication: Input[ClusterClientAuthentication] = null,
     clusterName: Input[String] = null,
-    configurationInfo: Input[Anon_ArnRevisionInput] = null,
+    configurationInfo: Input[ClusterConfigurationInfo] = null,
     currentVersion: Input[String] = null,
-    encryptionInfo: Input[Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit] = null,
+    encryptionInfo: Input[ClusterEncryptionInfo] = null,
     enhancedMonitoring: Input[String] = null,
     kafkaVersion: Input[String] = null,
     numberOfBrokerNodes: Input[Double] = null,

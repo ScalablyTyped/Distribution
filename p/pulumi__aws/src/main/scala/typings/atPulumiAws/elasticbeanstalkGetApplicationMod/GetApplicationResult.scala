@@ -1,12 +1,12 @@
 package typings.atPulumiAws.elasticbeanstalkGetApplicationMod
 
-import typings.atPulumiAws.Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.GetApplicationAppversionLifecycle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetApplicationResult extends js.Object {
-  val appversionLifecycle: Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount
+  val appversionLifecycle: GetApplicationAppversionLifecycle
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
@@ -25,7 +25,7 @@ trait GetApplicationResult extends js.Object {
 object GetApplicationResult {
   @scala.inline
   def apply(
-    appversionLifecycle: Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount,
+    appversionLifecycle: GetApplicationAppversionLifecycle,
     arn: String,
     description: String,
     id: String,

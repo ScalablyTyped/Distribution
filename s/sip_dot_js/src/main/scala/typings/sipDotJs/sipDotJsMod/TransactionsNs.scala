@@ -21,9 +21,9 @@ object TransactionsNs extends js.Object {
       * After construction the transaction will be in the "calling" state and the transaction id
       * will equal the branch parameter set in the Via header of the outgoing request.
       * https://tools.ietf.org/html/rfc3261#section-17.1.1
-      * @param request The outgoing INVITE request.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - The outgoing INVITE request.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: OutgoingRequestMessage,
@@ -41,9 +41,9 @@ object TransactionsNs extends js.Object {
       * After construction the transaction will be in the "proceeding" state and the transaction
       * `id` will equal the branch parameter set in the Via header of the incoming request.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
-      * @param request Incoming INVITE request from the transport.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - Incoming INVITE request from the transport.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: IncomingRequestMessage,
@@ -62,9 +62,9 @@ object TransactionsNs extends js.Object {
       * After construction the transaction will be in the "calling" state and the transaction id
       * will equal the branch parameter set in the Via header of the outgoing request.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2
-      * @param request The outgoing Non-INVITE request.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - The outgoing Non-INVITE request.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: OutgoingRequestMessage,
@@ -81,9 +81,9 @@ object TransactionsNs extends js.Object {
       * After construction the transaction will be in the "trying": state and the transaction
       * `id` will equal the branch parameter set in the Via header of the incoming request.
       * https://tools.ietf.org/html/rfc3261#section-17.2.2
-      * @param request Incoming Non-INVITE request from the transport.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - Incoming Non-INVITE request from the transport.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: IncomingRequestMessage,

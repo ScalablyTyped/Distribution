@@ -26,7 +26,7 @@ trait Entity extends js.Object {
     */
   var Id: js.UndefOr[Integer] = js.undefined
   /**
-    * The level of confidence that Comprehend Medical has in the accuracy of the detection.
+    * The level of confidence that Amazon Comprehend Medical has in the accuracy of the detection.
     */
   var Score: js.UndefOr[Float] = js.undefined
   /**

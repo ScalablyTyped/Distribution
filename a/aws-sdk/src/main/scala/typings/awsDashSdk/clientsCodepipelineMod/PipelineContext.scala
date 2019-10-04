@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PipelineContext extends js.Object {
   /**
-    * The context of an action to a job worker within the stage of a pipeline.
+    * The context of an action to a job worker in the stage of a pipeline.
     */
   var action: js.UndefOr[ActionContext] = js.undefined
   /**

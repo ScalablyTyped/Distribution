@@ -37,7 +37,9 @@ trait Stripe extends js.Object {
   def handleCardPayment(clientSecret: String, element: Element): js.Promise[PaymentIntentResponse] = js.native
   def handleCardPayment(clientSecret: String, element: Element, options: HandleCardPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
   def handleCardPayment(clientSecret: String, options: HandleCardPaymentWithoutElementsOptions): js.Promise[PaymentIntentResponse] = js.native
+  def handleCardSetup(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
   def handleCardSetup(clientSecret: String, data: HandleCardSetupOptionsWithoutElementsOptions): js.Promise[SetupIntentResponse] = js.native
+  def handleCardSetup(clientSecret: String, element: Element): js.Promise[SetupIntentResponse] = js.native
   def handleCardSetup(clientSecret: String, element: Element, data: HandleCardSetupOptions): js.Promise[SetupIntentResponse] = js.native
   def paymentRequest(options: StripePaymentRequestOptions): StripePaymentRequest = js.native
   // We use function overloading instead of a union here to ensure that redirectToCheckout can only be

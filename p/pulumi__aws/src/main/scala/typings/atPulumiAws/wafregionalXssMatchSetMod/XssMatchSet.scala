@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalXssMatchSetMod
 
-import typings.atPulumiAws.Anon_FieldToMatchTextTransformation
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.XssMatchSetXssMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class XssMatchSet protected () extends CustomResource {
   /**
     * The parts of web requests that you want to inspect for cross-site scripting attacks.
     */
-  val xssMatchTuples: Output[js.UndefOr[js.Array[Anon_FieldToMatchTextTransformation]]] = js.native
+  val xssMatchTuples: Output[js.UndefOr[js.Array[XssMatchSetXssMatchTuple]]] = js.native
 }
 
 /* static members */

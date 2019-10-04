@@ -50,6 +50,9 @@ object chartDotJsStrings {
        with TextAlignment
   
   @js.native
+  sealed trait chartArea extends PositionType
+  
+  @js.native
   sealed trait circle extends PointStyle
   
   @js.native
@@ -328,6 +331,8 @@ object chartDotJsStrings {
   def category: category = "category".asInstanceOf[category]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def chartArea: chartArea = "chartArea".asInstanceOf[chartArea]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline

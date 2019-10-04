@@ -62,6 +62,7 @@ import typings.lodash.lodashStrings.asc
 import typings.lodash.lodashStrings.desc
 import typings.std.Error
 import typings.std.Exclude
+import typings.std.NonNullable
 import typings.std.Pick
 import typings.std.RegExp
 import scala.scalajs.js
@@ -1439,14 +1440,14 @@ trait LoDashFp extends js.Object {
   def defaultTo_T_T[T](defaultValue: T): T = js.native
   def defaults[TSource](source: TSource): LodashDefaults1x1[TSource] = js.native
   def defaults[TObject](source: __, `object`: TObject): LodashDefaults1x2[TObject] = js.native
-  def defaults[TObject, TSource](source: TSource, `object`: TObject): TSource with TObject = js.native
+  def defaults[TObject, TSource](source: TSource, `object`: TObject): NonNullable[TSource with TObject] = js.native
   def defaultsAll(`object`: js.Array[_]): js.Any = js.native
-  def defaultsAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TSource with TObject = js.native
-  def defaultsAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TSource2 with TSource1 with TObject = js.native
-  def defaultsAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TSource3 with TSource2 with TSource1 with TObject = js.native
-  def defaultsAll[TObject, TSource1, TSource2, TSource3, TSource4](`object`: js.Tuple5[TObject, TSource1, TSource2, TSource3, TSource4]): TSource4 with TSource3 with TSource2 with TSource1 with TObject = js.native
+  def defaultsAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): NonNullable[TSource with TObject] = js.native
+  def defaultsAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): NonNullable[TSource2 with TSource1 with TObject] = js.native
+  def defaultsAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): NonNullable[TSource3 with TSource2 with TSource1 with TObject] = js.native
+  def defaultsAll[TObject, TSource1, TSource2, TSource3, TSource4](`object`: js.Tuple5[TObject, TSource1, TSource2, TSource3, TSource4]): NonNullable[TSource4 with TSource3 with TSource2 with TSource1 with TObject] = js.native
   @JSName("defaultsAll")
-  def defaultsAll_TObject_TObject[TObject](`object`: js.Array[TObject]): TObject = js.native
+  def defaultsAll_TObject_NonNullable[TObject](`object`: js.Array[TObject]): NonNullable[TObject] = js.native
   def defaultsDeep(sources: js.Any): LodashDefaultsDeep1x1 = js.native
   def defaultsDeep(sources: js.Any, `object`: js.Any): js.Any = js.native
   def defaultsDeep(sources: __, `object`: js.Any): LodashDefaultsDeep1x2 = js.native

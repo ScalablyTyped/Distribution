@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cloudwatchMetricAlarmMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ExpressionId
 import typings.atPulumiAws.snsTopicMod.Topic
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.MetricAlarmMetricQuery
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,7 +66,7 @@ trait MetricAlarmState extends js.Object {
   /**
     * Enables you to create an alarm based on a metric math expression. You may specify at most 20.
     */
-  val metricQueries: js.UndefOr[Input[js.Array[Input[Anon_ExpressionId]]]] = js.undefined
+  val metricQueries: js.UndefOr[Input[js.Array[Input[MetricAlarmMetricQuery]]]] = js.undefined
   /**
     * The descriptive name for the alarm. This name must be unique within the user's AWS account
     */
@@ -122,7 +122,7 @@ object MetricAlarmState {
     extendedStatistic: Input[String] = null,
     insufficientDataActions: Input[js.Array[Input[String | Topic]]] = null,
     metricName: Input[String] = null,
-    metricQueries: Input[js.Array[Input[Anon_ExpressionId]]] = null,
+    metricQueries: Input[js.Array[Input[MetricAlarmMetricQuery]]] = null,
     name: Input[String] = null,
     namespace: Input[String] = null,
     okActions: Input[js.Array[Input[String | Topic]]] = null,

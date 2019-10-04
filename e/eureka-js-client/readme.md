@@ -1,7 +1,7 @@
 
 # Scala.js typings for eureka-js-client
 
-Typings are for version 4.4
+Typings are for version 4.5
 
 ## Library description:
 A JavaScript implementation the Netflix OSS service registry, Eureka.

@@ -19,8 +19,6 @@ trait Anon_FieldNameSize extends js.Object {
   var headerPairs: js.UndefOr[Double] = js.undefined
   /** For multipart forms, the max number of parts (fields + files)(Default: Infinity) */
   var parts: js.UndefOr[Double] = js.undefined
-  /** Keep the full path of files instead of just the base name (Default: false) */
-  var preservePath: js.UndefOr[Boolean] = js.undefined
 }
 
 object Anon_FieldNameSize {
@@ -32,8 +30,7 @@ object Anon_FieldNameSize {
     fileSize: Int | Double = null,
     files: Int | Double = null,
     headerPairs: Int | Double = null,
-    parts: Int | Double = null,
-    preservePath: js.UndefOr[Boolean] = js.undefined
+    parts: Int | Double = null
   ): Anon_FieldNameSize = {
     val __obj = js.Dynamic.literal()
     if (fieldNameSize != null) __obj.updateDynamic("fieldNameSize")(fieldNameSize.asInstanceOf[js.Any])
@@ -43,7 +40,6 @@ object Anon_FieldNameSize {
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (headerPairs != null) __obj.updateDynamic("headerPairs")(headerPairs.asInstanceOf[js.Any])
     if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
     __obj.asInstanceOf[Anon_FieldNameSize]
   }
 }

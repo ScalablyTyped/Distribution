@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticacheParameterGroupMod
 
-import typings.atPulumiAws.Anon_Name
+import typings.atPulumiAws.typesOutputMod.elasticacheNs.ParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class ParameterGroup protected () extends CustomResource {
   /**
     * A list of ElastiCache parameters to apply.
     */
-  val parameters: Output[js.UndefOr[js.Array[Anon_Name]]] = js.native
+  val parameters: Output[js.UndefOr[js.Array[ParameterGroupParameter]]] = js.native
 }
 
 /* static members */

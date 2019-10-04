@@ -20,5 +20,7 @@ object ^ extends js.Object {
   def getSupportInfo(version: String): SupportInfo = js.native
   def resolveConfig(filePath: String): js.Promise[Null | Options] = js.native
   def resolveConfig(filePath: String, options: ResolveConfigOptions): js.Promise[Null | Options] = js.native
+  def resolveConfigFile(): js.Promise[Null | String] = js.native
+  def resolveConfigFile(filePath: String): js.Promise[Null | String] = js.native
 }
 

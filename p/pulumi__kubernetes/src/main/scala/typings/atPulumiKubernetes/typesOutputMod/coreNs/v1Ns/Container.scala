@@ -94,6 +94,16 @@ trait Container extends js.Object {
     */
   val securityContext: SecurityContext
   /**
+    * StartupProbe indicates that the Pod has successfully initialized. If specified, no other
+    * probes are executed until this completes successfully. If this probe fails, the Pod will be
+    * restarted, just as if the livenessProbe failed. This can be used to provide different probe
+    * parameters at the beginning of a Pod's lifecycle, when it might take a long time to load
+    * data or warm a cache, than during steady-state operation. This cannot be updated. This is
+    * an alpha feature enabled by the StartupProbe feature flag. More info:
+    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    */
+  val startupProbe: Probe
+  /**
     * Whether this container should allocate a buffer for stdin in the container runtime. If this
     * is not set, reads from stdin in the container will always result in EOF. Default is false.
     */
@@ -162,6 +172,7 @@ object Container {
     readinessProbe: Probe,
     resources: ResourceRequirements,
     securityContext: SecurityContext,
+    startupProbe: Probe,
     stdin: Boolean,
     stdinOnce: Boolean,
     terminationMessagePath: String,
@@ -171,7 +182,7 @@ object Container {
     volumeMounts: js.Array[VolumeMount],
     workingDir: String
   ): Container = {
-    val __obj = js.Dynamic.literal(args = args, command = command, env = env, envFrom = envFrom, image = image, imagePullPolicy = imagePullPolicy, lifecycle = lifecycle, livenessProbe = livenessProbe, name = name, ports = ports, readinessProbe = readinessProbe, resources = resources, securityContext = securityContext, stdin = stdin, stdinOnce = stdinOnce, terminationMessagePath = terminationMessagePath, terminationMessagePolicy = terminationMessagePolicy, tty = tty, volumeDevices = volumeDevices, volumeMounts = volumeMounts, workingDir = workingDir)
+    val __obj = js.Dynamic.literal(args = args, command = command, env = env, envFrom = envFrom, image = image, imagePullPolicy = imagePullPolicy, lifecycle = lifecycle, livenessProbe = livenessProbe, name = name, ports = ports, readinessProbe = readinessProbe, resources = resources, securityContext = securityContext, startupProbe = startupProbe, stdin = stdin, stdinOnce = stdinOnce, terminationMessagePath = terminationMessagePath, terminationMessagePolicy = terminationMessagePolicy, tty = tty, volumeDevices = volumeDevices, volumeMounts = volumeMounts, workingDir = workingDir)
   
     __obj.asInstanceOf[Container]
   }

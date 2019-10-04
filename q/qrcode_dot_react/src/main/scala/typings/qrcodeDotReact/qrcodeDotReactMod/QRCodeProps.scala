@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 trait QRCodeProps extends js.Object {
   var bgColor: js.UndefOr[String] = js.undefined
   var fgColor: js.UndefOr[String] = js.undefined
+  var includeMargin: js.UndefOr[Boolean] = js.undefined
   var level: js.UndefOr[L | M | Q | H] = js.undefined
   var renderAs: js.UndefOr[svg | canvas] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
@@ -25,6 +26,7 @@ object QRCodeProps {
     value: String,
     bgColor: String = null,
     fgColor: String = null,
+    includeMargin: js.UndefOr[Boolean] = js.undefined,
     level: L | M | Q | H = null,
     renderAs: svg | canvas = null,
     size: Int | Double = null
@@ -32,6 +34,7 @@ object QRCodeProps {
     val __obj = js.Dynamic.literal(value = value)
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
     if (fgColor != null) __obj.updateDynamic("fgColor")(fgColor)
+    if (!js.isUndefined(includeMargin)) __obj.updateDynamic("includeMargin")(includeMargin)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

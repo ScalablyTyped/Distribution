@@ -24,6 +24,11 @@ class Raycaster () extends js.Object {
   def this(origin: Vector3, direction: Vector3, near: Double) = this()
   def this(origin: Vector3, direction: Vector3, near: Double, far: Double) = this()
   /**
+  	 * The camera to use when raycasting against view-dependent objects such as billboarded objects like Sprites. This field
+  	 * can be set manually or is set when calling "setFromCamera".
+  	 */
+  var camera: Camera = js.native
+  /**
   	 * The far factor of the raycaster. This value indicates which objects can be discarded based on the
   	 * distance. This value shouldn't be negative and should be larger than the near property.
   	 */

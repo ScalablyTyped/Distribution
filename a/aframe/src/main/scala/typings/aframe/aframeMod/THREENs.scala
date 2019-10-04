@@ -709,10 +709,6 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class JSONLoader ()
-    extends typings.three.threeMod.JSONLoader
-  
-  @js.native
   class LOD ()
     extends typings.three.threeMod.LOD
   
@@ -787,6 +783,10 @@ object THREENs extends js.Object {
     extends typings.three.threeMod.LinearInterpolant {
     def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()
   }
+  
+  @js.native
+  class Loader ()
+    extends typings.three.threeMod.Loader
   
   @js.native
   class LoadingManager ()
@@ -1488,8 +1488,7 @@ object THREENs extends js.Object {
       code: String,
       material: typings.three.srcMaterialsShaderMaterialMod.ShaderMaterial,
       shader: typings.three.srcRenderersWebglWebGLShaderMod.WebGLShader,
-      parameters: WebGLRendererParameters,
-      capabilities: typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
+      parameters: WebGLRendererParameters
     ) = this()
   }
   
@@ -1578,6 +1577,12 @@ object THREENs extends js.Object {
       paramThreeToGL: js.Function,
       info: js.Any
     ) = this()
+  }
+  
+  @js.native
+  class WebVRManager protected ()
+    extends typings.three.threeMod.WebVRManager {
+    def this(renderer: js.Any) = this()
   }
   
   @js.native

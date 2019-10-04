@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmpcaCertificateAuthorityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CrlConfigurationAnonCustomCnameEnabled
-import typings.atPulumiAws.Anon_KeyAlgorithmSigningAlgorithm
+import typings.atPulumiAws.typesInputMod.acmpcaNs.CertificateAuthorityCertificateAuthorityConfiguration
+import typings.atPulumiAws.typesInputMod.acmpcaNs.CertificateAuthorityRevocationConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait CertificateAuthorityState extends js.Object {
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: js.UndefOr[Input[Anon_KeyAlgorithmSigningAlgorithm]] = js.undefined
+  val certificateAuthorityConfiguration: js.UndefOr[Input[CertificateAuthorityCertificateAuthorityConfiguration]] = js.undefined
   /**
     * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
     */
@@ -48,7 +48,7 @@ trait CertificateAuthorityState extends js.Object {
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: js.UndefOr[Input[Anon_CrlConfigurationAnonCustomCnameEnabled]] = js.undefined
+  val revocationConfiguration: js.UndefOr[Input[CertificateAuthorityRevocationConfiguration]] = js.undefined
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */
@@ -72,14 +72,14 @@ object CertificateAuthorityState {
   def apply(
     arn: Input[String] = null,
     certificate: Input[String] = null,
-    certificateAuthorityConfiguration: Input[Anon_KeyAlgorithmSigningAlgorithm] = null,
+    certificateAuthorityConfiguration: Input[CertificateAuthorityCertificateAuthorityConfiguration] = null,
     certificateChain: Input[String] = null,
     certificateSigningRequest: Input[String] = null,
     enabled: Input[Boolean] = null,
     notAfter: Input[String] = null,
     notBefore: Input[String] = null,
     permanentDeletionTimeInDays: Input[Double] = null,
-    revocationConfiguration: Input[Anon_CrlConfigurationAnonCustomCnameEnabled] = null,
+    revocationConfiguration: Input[CertificateAuthorityRevocationConfiguration] = null,
     serial: Input[String] = null,
     status: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,

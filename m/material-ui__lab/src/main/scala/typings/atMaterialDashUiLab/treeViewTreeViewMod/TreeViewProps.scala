@@ -147,7 +147,7 @@ trait TreeViewProps extends js.Object {
     * parent nodes and can be overridden by the TreeItem `icon` prop.
     */
   var defaultParentIcon: js.UndefOr[ReactNode] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -419,7 +419,7 @@ object TreeViewProps {
     defaultExpandIcon: ReactNode = null,
     defaultExpanded: js.Array[String] = null,
     defaultParentIcon: ReactNode = null,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,

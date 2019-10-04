@@ -1,5 +1,6 @@
 package typings.three.srcObjectsPointsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreGeometryMod.Geometry
 import typings.three.srcCoreObject3DMod.Object3D
@@ -31,7 +32,10 @@ class Points () extends Object3D {
   	 * An instance of Material, defining the object's appearance. Default is a PointsMaterial with randomised colour.
   	 */
   var material: Material | js.Array[Material] = js.native
+  var morphTargetDictionary: js.UndefOr[StringDictionary[Double]] = js.native
+  var morphTargetInfluences: js.UndefOr[js.Array[Double]] = js.native
   @JSName("type")
   var type_Points: typings.three.threeStrings.Points = js.native
+  def updateMorphTargets(): Unit = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.mediapackageChannelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IngestEndpointsAnonPasswordUrl
+import typings.atPulumiAws.typesInputMod.mediapackageNs.ChannelHlsIngest
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait ChannelState extends js.Object {
   /**
     * A single item list of HLS ingest information
     */
-  val hlsIngests: js.UndefOr[Input[js.Array[Input[Anon_IngestEndpointsAnonPasswordUrl]]]] = js.undefined
+  val hlsIngests: js.UndefOr[Input[js.Array[Input[ChannelHlsIngest]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -36,7 +36,7 @@ object ChannelState {
     arn: Input[String] = null,
     channelId: Input[String] = null,
     description: Input[String] = null,
-    hlsIngests: Input[js.Array[Input[Anon_IngestEndpointsAnonPasswordUrl]]] = null,
+    hlsIngests: Input[js.Array[Input[ChannelHlsIngest]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): ChannelState = {
     val __obj = js.Dynamic.literal()

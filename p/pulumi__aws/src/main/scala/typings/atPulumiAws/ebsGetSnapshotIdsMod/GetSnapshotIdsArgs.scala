@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ebsGetSnapshotIdsMod
 
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ebsNs.GetSnapshotIdsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait GetSnapshotIdsArgs extends js.Object {
     * several valid keys, for a full reference, check out
     * [describe-volumes in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSnapshotIdsFilter]] = js.undefined
   /**
     * Returns the snapshots owned by the specified owner id. Multiple owners can be specified.
     */
@@ -25,7 +25,7 @@ trait GetSnapshotIdsArgs extends js.Object {
 object GetSnapshotIdsArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetSnapshotIdsFilter] = null,
     owners: js.Array[String] = null,
     restorableByUserIds: js.Array[String] = null
   ): GetSnapshotIdsArgs = {

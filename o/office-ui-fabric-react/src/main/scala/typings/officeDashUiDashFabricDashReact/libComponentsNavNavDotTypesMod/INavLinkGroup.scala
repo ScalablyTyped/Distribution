@@ -13,9 +13,17 @@ trait INavLinkGroup extends js.Object {
     */
   var automationId: js.UndefOr[String] = js.undefined
   /**
+    * ARIA label when group is collapsed and can be expanded.
+    */
+  var collapseAriaLabel: js.UndefOr[String] = js.undefined
+  /**
     * If true, the group should render collapsed by default
     */
   var collapseByDefault: js.UndefOr[Boolean] = js.undefined
+  /**
+    * ARIA label when group is collapsed and can be expanded.
+    */
+  var expandAriaLabel: js.UndefOr[String] = js.undefined
   /**
     * Links to render within this group
     */
@@ -41,13 +49,17 @@ object INavLinkGroup {
   def apply(
     links: js.Array[INavLink],
     automationId: String = null,
+    collapseAriaLabel: String = null,
     collapseByDefault: js.UndefOr[Boolean] = js.undefined,
+    expandAriaLabel: String = null,
     name: String = null,
     onHeaderClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* isCollapsing */ js.UndefOr[Boolean]) => Unit = null
   ): INavLinkGroup = {
     val __obj = js.Dynamic.literal(links = links)
     if (automationId != null) __obj.updateDynamic("automationId")(automationId)
+    if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel)
     if (!js.isUndefined(collapseByDefault)) __obj.updateDynamic("collapseByDefault")(collapseByDefault)
+    if (expandAriaLabel != null) __obj.updateDynamic("expandAriaLabel")(expandAriaLabel)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onHeaderClick != null) __obj.updateDynamic("onHeaderClick")(js.Any.fromFunction2(onHeaderClick))
     __obj.asInstanceOf[INavLinkGroup]

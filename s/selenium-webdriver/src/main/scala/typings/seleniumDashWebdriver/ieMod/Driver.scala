@@ -1,5 +1,6 @@
 package typings.seleniumDashWebdriver.ieMod
 
+import typings.seleniumDashWebdriver.remoteMod.DriverService
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Capabilities
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
 import scala.scalajs.js
@@ -24,12 +25,15 @@ object Driver extends js.Object {
   /**
     * Creates a new session for Microsoft's Internet Explorer.
     *
-    * @param {(capabilities.Capabilities|Options)=} opt_config The configuration
-    *     options.
+    * @param {(Capabilities|Options)=} options The configuration options.
+    * @param {(remote.DriverService)=} opt_service The `DriverService` to use
+    *   to start the IEDriverServer in a child process, optionally.
     * @return {!Driver} A new driver instance.
     */
   def createSession(): Driver = js.native
-  def createSession(opt_config: Options): Driver = js.native
-  def createSession(opt_config: Capabilities): Driver = js.native
+  def createSession(options: Options): Driver = js.native
+  def createSession(options: Options, opt_service: DriverService): Driver = js.native
+  def createSession(options: Capabilities): Driver = js.native
+  def createSession(options: Capabilities, opt_service: DriverService): Driver = js.native
 }
 

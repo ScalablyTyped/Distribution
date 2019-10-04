@@ -1,11 +1,11 @@
 package typings.atPulumiAws.lambdaFunctionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_KeyVariablesInput
-import typings.atPulumiAws.Anon_ModeInput
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetIdsVpcId
-import typings.atPulumiAws.Anon_TargetArnInput
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionDeadLetterConfig
+import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionEnvironment
+import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionTracingConfig
+import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -24,7 +24,7 @@ trait FunctionState extends js.Object {
   /**
     * Nested block to configure the function's *dead letter queue*. See details below.
     */
-  val deadLetterConfig: js.UndefOr[Input[Anon_TargetArnInput]] = js.undefined
+  val deadLetterConfig: js.UndefOr[Input[FunctionDeadLetterConfig]] = js.undefined
   /**
     * Description of what your Lambda Function does.
     */
@@ -32,7 +32,7 @@ trait FunctionState extends js.Object {
   /**
     * The Lambda environment's configuration settings. Fields documented below.
     */
-  val environment: js.UndefOr[Input[Anon_KeyVariablesInput]] = js.undefined
+  val environment: js.UndefOr[Input[FunctionEnvironment]] = js.undefined
   /**
     * The function [entrypoint][3] in your code.
     */
@@ -110,7 +110,7 @@ trait FunctionState extends js.Object {
     * The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
     */
   val timeout: js.UndefOr[Input[Double]] = js.undefined
-  val tracingConfig: js.UndefOr[Input[Anon_ModeInput]] = js.undefined
+  val tracingConfig: js.UndefOr[Input[FunctionTracingConfig]] = js.undefined
   /**
     * Latest published version of your Lambda Function.
     */
@@ -118,7 +118,7 @@ trait FunctionState extends js.Object {
   /**
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
-  val vpcConfig: js.UndefOr[Input[Anon_SecurityGroupIdsSubnetIdsVpcId]] = js.undefined
+  val vpcConfig: js.UndefOr[Input[FunctionVpcConfig]] = js.undefined
 }
 
 object FunctionState {
@@ -126,9 +126,9 @@ object FunctionState {
   def apply(
     arn: Input[String] = null,
     code: Input[Archive] = null,
-    deadLetterConfig: Input[Anon_TargetArnInput] = null,
+    deadLetterConfig: Input[FunctionDeadLetterConfig] = null,
     description: Input[String] = null,
-    environment: Input[Anon_KeyVariablesInput] = null,
+    environment: Input[FunctionEnvironment] = null,
     handler: Input[String] = null,
     invokeArn: Input[String] = null,
     kmsKeyArn: Input[String] = null,
@@ -148,9 +148,9 @@ object FunctionState {
     sourceCodeSize: Input[Double] = null,
     tags: Input[StringDictionary[_]] = null,
     timeout: Input[Double] = null,
-    tracingConfig: Input[Anon_ModeInput] = null,
+    tracingConfig: Input[FunctionTracingConfig] = null,
     version: Input[String] = null,
-    vpcConfig: Input[Anon_SecurityGroupIdsSubnetIdsVpcId] = null
+    vpcConfig: Input[FunctionVpcConfig] = null
   ): FunctionState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

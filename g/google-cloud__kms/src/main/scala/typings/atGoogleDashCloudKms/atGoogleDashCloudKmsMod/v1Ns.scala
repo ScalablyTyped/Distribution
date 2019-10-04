@@ -310,7 +310,7 @@ object v1Ns extends js.Object {
     
     trait DecryptRequest extends js.Object {
       var additionalAuthenticatedData: js.UndefOr[String] = js.undefined
-      var ciphertext: String
+      var ciphertext: Buffer
       var name: String
     }
     
@@ -321,7 +321,7 @@ object v1Ns extends js.Object {
     trait EncryptRequest extends js.Object {
       var additionalAuthenticatedData: js.UndefOr[String] = js.undefined
       var name: String
-      var plaintext: String
+      var plaintext: Buffer
     }
     
     trait EncryptResponse extends js.Object {

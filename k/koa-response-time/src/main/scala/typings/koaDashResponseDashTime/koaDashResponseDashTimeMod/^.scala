@@ -1,5 +1,7 @@
 package typings.koaDashResponseDashTime.koaDashResponseDashTimeMod
 
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +20,7 @@ object ^ extends js.Object {
     *          Default is `false` to keep back compatible.
     * @api public
     */
-  def apply(): Middleware[_, js.Object] = js.native
-  def apply(options: KoaResponseTimeOptions): Middleware[_, js.Object] = js.native
+  def apply(): Middleware[DefaultState, DefaultContext] = js.native
+  def apply(options: KoaResponseTimeOptions): Middleware[DefaultState, DefaultContext] = js.native
 }
 

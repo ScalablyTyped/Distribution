@@ -1,7 +1,6 @@
 package typings.typedoc.distLibModelsSourcesDirectoryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory
 import typings.typedoc.distLibModelsReflectionGroupMod.ReflectionGroup
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
 import typings.typedoc.distLibModelsSourcesFileMod.SourceFile
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation._
 class SourceDirectory () extends js.Object {
   def this(name: String) = this()
   def this(name: String, parent: SourceDirectory) = this()
-  var categories: js.UndefOr[js.Array[ReflectionCategory]] = js.native
   var dirName: js.UndefOr[String] = js.native
   var directories: StringDictionary[SourceDirectory] = js.native
   var files: js.Array[SourceFile] = js.native

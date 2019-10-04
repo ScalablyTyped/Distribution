@@ -2,8 +2,8 @@ package typings.appDashBuilderDashLib.outOptionsPkgOptionsMod
 
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.update
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.upgrade
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

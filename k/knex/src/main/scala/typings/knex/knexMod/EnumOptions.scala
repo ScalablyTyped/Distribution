@@ -6,15 +6,22 @@ import scala.scalajs.js.annotation._
 
 trait EnumOptions extends js.Object {
   var enumName: String
-  var existingType: Boolean
+  var existingType: js.UndefOr[Boolean] = js.undefined
+  var schemaName: js.UndefOr[String] = js.undefined
   var useNative: Boolean
 }
 
 object EnumOptions {
   @scala.inline
-  def apply(enumName: String, existingType: Boolean, useNative: Boolean): EnumOptions = {
-    val __obj = js.Dynamic.literal(enumName = enumName, existingType = existingType, useNative = useNative)
-  
+  def apply(
+    enumName: String,
+    useNative: Boolean,
+    existingType: js.UndefOr[Boolean] = js.undefined,
+    schemaName: String = null
+  ): EnumOptions = {
+    val __obj = js.Dynamic.literal(enumName = enumName, useNative = useNative)
+    if (!js.isUndefined(existingType)) __obj.updateDynamic("existingType")(existingType)
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
     __obj.asInstanceOf[EnumOptions]
   }
 }

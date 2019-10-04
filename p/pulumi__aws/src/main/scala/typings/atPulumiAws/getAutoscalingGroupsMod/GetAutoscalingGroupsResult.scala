@@ -1,6 +1,6 @@
 package typings.atPulumiAws.getAutoscalingGroupsMod
 
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.GetAutoscalingGroupsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetAutoscalingGroupsResult extends js.Object {
     * A list of the Autoscaling Groups Arns in the current region.
     */
   val arns: js.Array[String]
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetAutoscalingGroupsFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -27,7 +27,7 @@ object GetAutoscalingGroupsResult {
     arns: js.Array[String],
     id: String,
     names: js.Array[String],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetAutoscalingGroupsFilter] = null
   ): GetAutoscalingGroupsResult = {
     val __obj = js.Dynamic.literal(arns = arns, id = id, names = names)
     if (filters != null) __obj.updateDynamic("filters")(filters)

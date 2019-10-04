@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "customXmlPart.toJSON()". */
+/** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
 trait CustomXmlPartData extends js.Object {
   /**
     *

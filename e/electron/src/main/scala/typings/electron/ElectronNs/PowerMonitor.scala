@@ -31,6 +31,15 @@ trait PowerMonitor extends EventEmitter {
   def addListener_suspend(event: suspend, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  /**
+    * Calculate the system idle state. idleThreshold is the amount of time (in
+    * seconds) before considered idle.  locked is available on supported systems only.
+    */
+  def getSystemIdleState(idleThreshold: Double): active | idle | locked | unknown = js.native
+  /**
+    * Calculate system idle time in seconds.
+    */
+  def getSystemIdleTime(): Double = js.native
   // Docs: http://electronjs.org/docs/api/power-monitor
   /**
     * Emitted when the system is about to lock the screen.

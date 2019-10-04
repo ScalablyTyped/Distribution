@@ -6,20 +6,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aurelia-dependency-injection", "SingletonRegistration")
 @js.native
-/**
-  * Creates an instance of SingletonRegistration.
-  * @param key The key to register as.
-  */
-class SingletonRegistration () extends js.Object {
-  def this(keyOrRegisterInChild: js.Any) = this()
-  def this(keyOrRegisterInChild: js.Any, registerInChild: Boolean) = this()
-  /**
-    * Called by the container to register the resolver.
-    * @param container The container the resolver is being registered with.
-    * @param key The key the resolver should be registered as.
-    * @param fn The function to create the resolver for.
-    * @return The resolver that was registered.
-    */
-  def registerResolver(container: Container, key: js.Any, fn: js.Function): Resolver = js.native
+class SingletonRegistration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] () extends Registration[TBase, TImpl, TArgs] {
+  def this(keyOrRegisterInChild: Boolean) = this()
+  def this(keyOrRegisterInChild: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
+  def this(keyOrRegisterInChild: Boolean, registerInChild: Boolean) = this()
+  def this(keyOrRegisterInChild: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], registerInChild: Boolean) = this()
+  /* CompleteClass */
+  override def registerResolver(
+    container: Container,
+    key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs],
+    fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]
+  ): Resolver = js.native
 }
 

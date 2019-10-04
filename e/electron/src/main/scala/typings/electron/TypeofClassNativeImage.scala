@@ -1,6 +1,7 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.electron.ElectronNs.CreateFromBitmapOptions
 import typings.electron.ElectronNs.CreateFromBufferOptions
 import typings.electron.ElectronNs.NativeImage
 import typings.node.Buffer
@@ -16,7 +17,13 @@ trait TypeofClassNativeImage extends Instantiable0[NativeImage] {
     */
   def createEmpty(): NativeImage = js.native
   /**
-    * Creates a new NativeImage instance from buffer.
+    * Creates a new NativeImage instance from buffer that contains the raw bitmap
+    * pixel data returned by toBitmap(). The specific format is platform-dependent.
+    */
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): NativeImage = js.native
+  /**
+    * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
+    * first.
     */
   def createFromBuffer(buffer: Buffer): NativeImage = js.native
   def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): NativeImage = js.native

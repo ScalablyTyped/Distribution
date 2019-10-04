@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("msgpack-lite", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def Decoder(): typings.msgpackDashLite.msgpackDashLiteMod.Decoder = js.native
+  def Decoder(options: DecoderOptions): typings.msgpackDashLite.msgpackDashLiteMod.Decoder = js.native
   def createCodec(): Codec = js.native
   def createCodec(options: CodecOptions): Codec = js.native
   def createDecodeStream(): DecodeStream = js.native

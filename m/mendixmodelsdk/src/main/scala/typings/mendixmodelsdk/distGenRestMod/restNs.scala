@@ -6,6 +6,8 @@ import typings.mendixmodelsdk.distGenDatatypesMod.datatypesNs.DataType
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAssociationBase
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAttribute
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IEntity
+import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IRemoteEntitySourceDocument
+import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.RemoteEntitySourceDocument
 import typings.mendixmodelsdk.distGenExportmappingsMod.exportmappingsNs.IExportMapping
 import typings.mendixmodelsdk.distGenImportmappingsMod.importmappingsNs.IImportMapping
 import typings.mendixmodelsdk.distGenMappingsMod.mappingsNs.ObjectHandlingBackupEnum
@@ -54,8 +56,8 @@ object restNs extends js.Object {
     * In version 7.18.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.mendixmodelsdk.distGenRestMod.restNs.IConsumedODataService because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
-  class ConsumedODataService protected () extends Document {
+  - typings.mendixmodelsdk.distGenRestMod.restNs.IConsumedODataService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  class ConsumedODataService protected () extends RemoteEntitySourceDocument {
     def this(
       model: AbstractModel,
       structureTypeName: String,
@@ -132,7 +134,7 @@ object restNs extends js.Object {
     * In version 7.18.0: introduced
     */
   @js.native
-  trait IConsumedODataService extends IDocument
+  trait IConsumedODataService extends IRemoteEntitySourceDocument
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/published-odata-services relevant section in reference guide}
@@ -716,6 +718,7 @@ object restNs extends js.Object {
   @js.native
   object RestOperationParameterType extends js.Object {
     var Body: RestOperationParameterType = js.native
+    var Form: RestOperationParameterType = js.native
     var Header: RestOperationParameterType = js.native
     var Path: RestOperationParameterType = js.native
     var Query: RestOperationParameterType = js.native

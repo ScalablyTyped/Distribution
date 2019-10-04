@@ -1,6 +1,7 @@
 package typings.atPulumiAws.ecsClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.typesOutputMod.ecsNs.ClusterSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,6 +32,10 @@ class Cluster protected () extends CustomResource {
     * The name of the cluster (up to 255 letters, numbers, hyphens, and underscores)
     */
   val name: Output[String] = js.native
+  /**
+    * Configuration block(s) with cluster settings. For example, this can be used to enable CloudWatch Container Insights for a cluster. Defined below.
+    */
+  val settings: Output[js.Array[ClusterSetting]] = js.native
   /**
     * Key-value mapping of resource tags
     */

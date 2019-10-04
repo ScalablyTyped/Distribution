@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the RangeView object, for use in "rangeView.set({ ... })". */
+/** An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`. */
 trait RangeViewUpdateData extends js.Object {
   /**
     *

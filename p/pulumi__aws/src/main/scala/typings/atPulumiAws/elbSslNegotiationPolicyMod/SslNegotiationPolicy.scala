@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elbSslNegotiationPolicyMod
 
-import typings.atPulumiAws.Anon_Name
+import typings.atPulumiAws.typesOutputMod.elbNs.SslNegotiationPolicyAttribute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,7 +25,7 @@ class SslNegotiationPolicy protected () extends CustomResource {
   /**
     * An SSL Negotiation policy attribute. Each has two properties:
     */
-  val attributes: Output[js.UndefOr[js.Array[Anon_Name]]] = js.native
+  val attributes: Output[js.UndefOr[js.Array[SslNegotiationPolicyAttribute]]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load

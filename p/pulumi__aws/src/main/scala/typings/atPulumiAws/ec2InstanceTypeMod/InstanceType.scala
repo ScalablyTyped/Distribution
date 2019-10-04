@@ -140,6 +140,13 @@ import scala.scalajs.js.annotation._
   - typings.atPulumiAws.atPulumiAwsStrings.t3DOTnano
   - typings.atPulumiAws.atPulumiAwsStrings.t3DOTsmall
   - typings.atPulumiAws.atPulumiAwsStrings.t3DOTxlarge
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOT2xlarge
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOTlarge
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOTmedium
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOTmicro
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOTnano
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOTsmall
+  - typings.atPulumiAws.atPulumiAwsStrings.t3aDOTxlarge
   - typings.atPulumiAws.atPulumiAwsStrings.`u-12tb1DOTmetal`
   - typings.atPulumiAws.atPulumiAwsStrings.`u-6tb1DOTmetal`
   - typings.atPulumiAws.atPulumiAwsStrings.`u-9tb1DOTmetal`

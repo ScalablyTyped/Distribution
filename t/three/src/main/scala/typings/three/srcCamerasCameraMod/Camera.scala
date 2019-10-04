@@ -26,7 +26,5 @@ class Camera () extends Object3D {
   	 * This is the inverse of projectionMatrix.
   	 */
   var projectionMatrixInverse: Matrix4 = js.native
-  def copy(source: Camera): this.type = js.native
-  def copy(source: Camera, recursive: Boolean): this.type = js.native
 }
 

@@ -1,9 +1,10 @@
 package typings.atPulumiAws.appsyncGraphQLApiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AppIdClientRegexAwsRegion
-import typings.atPulumiAws.Anon_AuthTtlClientId
-import typings.atPulumiAws.Anon_CloudwatchLogsRoleArnFieldLogLevel
+import typings.atPulumiAws.typesInputMod.appsyncNs.GraphQLApiAdditionalAuthenticationProvider
+import typings.atPulumiAws.typesInputMod.appsyncNs.GraphQLApiLogConfig
+import typings.atPulumiAws.typesInputMod.appsyncNs.GraphQLApiOpenidConnectConfig
+import typings.atPulumiAws.typesInputMod.appsyncNs.GraphQLApiUserPoolConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,13 +12,17 @@ import scala.scalajs.js.annotation._
 
 trait GraphQLApiArgs extends js.Object {
   /**
+    * One or more additional authentication providers for the GraphqlApi. Defined below.
+    */
+  val additionalAuthenticationProviders: js.UndefOr[Input[js.Array[Input[GraphQLApiAdditionalAuthenticationProvider]]]] = js.undefined
+  /**
     * The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`
     */
   val authenticationType: Input[String]
   /**
     * Nested argument containing logging configuration. Defined below.
     */
-  val logConfig: js.UndefOr[Input[Anon_CloudwatchLogsRoleArnFieldLogLevel]] = js.undefined
+  val logConfig: js.UndefOr[Input[GraphQLApiLogConfig]] = js.undefined
   /**
     * A user-supplied name for the GraphqlApi.
     */
@@ -25,7 +30,7 @@ trait GraphQLApiArgs extends js.Object {
   /**
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
-  val openidConnectConfig: js.UndefOr[Input[Anon_AuthTtlClientId]] = js.undefined
+  val openidConnectConfig: js.UndefOr[Input[GraphQLApiOpenidConnectConfig]] = js.undefined
   /**
     * The schema definition, in GraphQL schema language format. This provider cannot perform drift detection of this configuration.
     */
@@ -37,21 +42,23 @@ trait GraphQLApiArgs extends js.Object {
   /**
     * The Amazon Cognito User Pool configuration. Defined below.
     */
-  val userPoolConfig: js.UndefOr[Input[Anon_AppIdClientRegexAwsRegion]] = js.undefined
+  val userPoolConfig: js.UndefOr[Input[GraphQLApiUserPoolConfig]] = js.undefined
 }
 
 object GraphQLApiArgs {
   @scala.inline
   def apply(
     authenticationType: Input[String],
-    logConfig: Input[Anon_CloudwatchLogsRoleArnFieldLogLevel] = null,
+    additionalAuthenticationProviders: Input[js.Array[Input[GraphQLApiAdditionalAuthenticationProvider]]] = null,
+    logConfig: Input[GraphQLApiLogConfig] = null,
     name: Input[String] = null,
-    openidConnectConfig: Input[Anon_AuthTtlClientId] = null,
+    openidConnectConfig: Input[GraphQLApiOpenidConnectConfig] = null,
     schema: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
-    userPoolConfig: Input[Anon_AppIdClientRegexAwsRegion] = null
+    userPoolConfig: Input[GraphQLApiUserPoolConfig] = null
   ): GraphQLApiArgs = {
     val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any])
+    if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
     if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (openidConnectConfig != null) __obj.updateDynamic("openidConnectConfig")(openidConnectConfig.asInstanceOf[js.Any])

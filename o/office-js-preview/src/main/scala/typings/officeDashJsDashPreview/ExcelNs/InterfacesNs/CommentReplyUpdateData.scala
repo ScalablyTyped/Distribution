@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the CommentReply object, for use in "commentReply.set({ ... })". */
+/** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
 trait CommentReplyUpdateData extends js.Object {
   /**
     *

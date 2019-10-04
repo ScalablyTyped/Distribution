@@ -23,8 +23,8 @@ trait NativeConstants
   var linkingUri: String
   var manifest: AppManifest
   var name: ExponentConstants
-  var nativeAppVersion: Null
-  var nativeBuildVersion: Null
+  var nativeAppVersion: String | Null
+  var nativeBuildVersion: String | Null
   var platform: js.UndefOr[PlatformManifest] = js.undefined
   var sessionId: String
   var statusBarHeight: Double
@@ -48,8 +48,6 @@ object NativeConstants {
     linkingUri: String,
     manifest: AppManifest,
     name: ExponentConstants,
-    nativeAppVersion: Null,
-    nativeBuildVersion: Null,
     sessionId: String,
     statusBarHeight: Double,
     systemFonts: js.Array[String],
@@ -58,15 +56,19 @@ object NativeConstants {
     deviceYearClass: Int | Double = null,
     intentUri: String = null,
     isDetached: js.UndefOr[Boolean] = js.undefined,
+    nativeAppVersion: String = null,
+    nativeBuildVersion: String = null,
     platform: PlatformManifest = null,
     systemVersion: Int | Double = null
   ): NativeConstants = {
-    val __obj = js.Dynamic.literal(appOwnership = appOwnership, debugMode = debugMode, experienceUrl = experienceUrl, expoRuntimeVersion = expoRuntimeVersion, expoVersion = expoVersion, getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId, isDevice = isDevice, isHeadless = isHeadless, linkingUri = linkingUri, manifest = manifest, name = name, nativeAppVersion = nativeAppVersion, nativeBuildVersion = nativeBuildVersion, sessionId = sessionId, statusBarHeight = statusBarHeight, systemFonts = systemFonts)
+    val __obj = js.Dynamic.literal(appOwnership = appOwnership, debugMode = debugMode, experienceUrl = experienceUrl, expoRuntimeVersion = expoRuntimeVersion, expoVersion = expoVersion, getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId, isDevice = isDevice, isHeadless = isHeadless, linkingUri = linkingUri, manifest = manifest, name = name, sessionId = sessionId, statusBarHeight = statusBarHeight, systemFonts = systemFonts)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
     if (deviceYearClass != null) __obj.updateDynamic("deviceYearClass")(deviceYearClass.asInstanceOf[js.Any])
     if (intentUri != null) __obj.updateDynamic("intentUri")(intentUri)
     if (!js.isUndefined(isDetached)) __obj.updateDynamic("isDetached")(isDetached)
+    if (nativeAppVersion != null) __obj.updateDynamic("nativeAppVersion")(nativeAppVersion)
+    if (nativeBuildVersion != null) __obj.updateDynamic("nativeBuildVersion")(nativeBuildVersion)
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (systemVersion != null) __obj.updateDynamic("systemVersion")(systemVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeConstants]

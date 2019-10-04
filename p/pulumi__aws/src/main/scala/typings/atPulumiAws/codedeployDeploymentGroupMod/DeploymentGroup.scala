@@ -1,14 +1,15 @@
 package typings.atPulumiAws.codedeployDeploymentGroupMod
 
-import typings.atPulumiAws.Anon_Alarms
-import typings.atPulumiAws.Anon_ClusterName
-import typings.atPulumiAws.Anon_DeploymentOption
-import typings.atPulumiAws.Anon_DeploymentReadyOption
-import typings.atPulumiAws.Anon_Ec2TagFilters
-import typings.atPulumiAws.Anon_ElbInfos
-import typings.atPulumiAws.Anon_EnabledEvents
-import typings.atPulumiAws.Anon_KeyTypeValueString
-import typings.atPulumiAws.Anon_TriggerEvents
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupAlarmConfiguration
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupAutoRollbackConfiguration
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupBlueGreenDeploymentConfig
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupDeploymentStyle
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupEc2TagFilter
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupEc2TagSet
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupEcsService
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupLoadBalancerInfo
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupOnPremisesInstanceTagFilter
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentGroupTriggerConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +34,7 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Configuration block of alarms associated with the deployment group (documented below).
     */
-  val alarmConfiguration: Output[js.UndefOr[Anon_Alarms]] = js.native
+  val alarmConfiguration: Output[js.UndefOr[DeploymentGroupAlarmConfiguration]] = js.native
   /**
     * The name of the application.
     */
@@ -41,7 +42,7 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
     */
-  val autoRollbackConfiguration: Output[js.UndefOr[Anon_EnabledEvents]] = js.native
+  val autoRollbackConfiguration: Output[js.UndefOr[DeploymentGroupAutoRollbackConfiguration]] = js.native
   /**
     * Autoscaling groups associated with the deployment group.
     */
@@ -49,7 +50,7 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Configuration block of the blue/green deployment options for a deployment group (documented below).
     */
-  val blueGreenDeploymentConfig: Output[Anon_DeploymentReadyOption] = js.native
+  val blueGreenDeploymentConfig: Output[DeploymentGroupBlueGreenDeploymentConfig] = js.native
   /**
     * The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
     */
@@ -61,27 +62,27 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
     */
-  val deploymentStyle: Output[Anon_DeploymentOption] = js.native
+  val deploymentStyle: Output[DeploymentGroupDeploymentStyle] = js.native
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
-  val ec2TagFilters: Output[js.UndefOr[js.Array[Anon_KeyTypeValueString]]] = js.native
+  val ec2TagFilters: Output[js.UndefOr[js.Array[DeploymentGroupEc2TagFilter]]] = js.native
   /**
     * Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.
     */
-  val ec2TagSets: Output[js.UndefOr[js.Array[Anon_Ec2TagFilters]]] = js.native
+  val ec2TagSets: Output[js.UndefOr[js.Array[DeploymentGroupEc2TagSet]]] = js.native
   /**
     * Configuration block(s) of the ECS services for a deployment group (documented below).
     */
-  val ecsService: Output[js.UndefOr[Anon_ClusterName]] = js.native
+  val ecsService: Output[js.UndefOr[DeploymentGroupEcsService]] = js.native
   /**
     * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
     */
-  val loadBalancerInfo: Output[Anon_ElbInfos] = js.native
+  val loadBalancerInfo: Output[DeploymentGroupLoadBalancerInfo] = js.native
   /**
     * On premise tag filters associated with the group. See the AWS docs for details.
     */
-  val onPremisesInstanceTagFilters: Output[js.UndefOr[js.Array[Anon_KeyTypeValueString]]] = js.native
+  val onPremisesInstanceTagFilters: Output[js.UndefOr[js.Array[DeploymentGroupOnPremisesInstanceTagFilter]]] = js.native
   /**
     * The service role ARN that allows deployments.
     */
@@ -89,7 +90,7 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Configuration block(s) of the triggers for the deployment group (documented below).
     */
-  val triggerConfigurations: Output[js.UndefOr[js.Array[Anon_TriggerEvents]]] = js.native
+  val triggerConfigurations: Output[js.UndefOr[js.Array[DeploymentGroupTriggerConfiguration]]] = js.native
 }
 
 /* static members */

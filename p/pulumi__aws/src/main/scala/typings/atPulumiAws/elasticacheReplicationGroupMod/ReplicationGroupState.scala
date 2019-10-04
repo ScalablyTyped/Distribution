@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheReplicationGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NumNodeGroupsReplicasPerNodeGroup
+import typings.atPulumiAws.typesInputMod.elasticacheNs.ReplicationGroupClusterMode
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait ReplicationGroupState extends js.Object {
   /**
     * Create a native redis cluster. `automaticFailoverEnabled` must be set to true. Cluster Mode documented below. Only 1 `clusterMode` block is allowed.
     */
-  val clusterMode: js.UndefOr[Input[Anon_NumNodeGroupsReplicasPerNodeGroup]] = js.undefined
+  val clusterMode: js.UndefOr[Input[ReplicationGroupClusterMode]] = js.undefined
   /**
     * The address of the replication group configuration endpoint when cluster mode is enabled.
     */
@@ -146,7 +146,7 @@ object ReplicationGroupState {
     autoMinorVersionUpgrade: Input[Boolean] = null,
     automaticFailoverEnabled: Input[Boolean] = null,
     availabilityZones: Input[js.Array[Input[String]]] = null,
-    clusterMode: Input[Anon_NumNodeGroupsReplicasPerNodeGroup] = null,
+    clusterMode: Input[ReplicationGroupClusterMode] = null,
     configurationEndpointAddress: Input[String] = null,
     engine: Input[String] = null,
     engineVersion: Input[String] = null,

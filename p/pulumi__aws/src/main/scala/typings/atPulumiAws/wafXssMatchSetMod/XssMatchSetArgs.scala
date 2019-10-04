@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafXssMatchSetMod
 
-import typings.atPulumiAws.Anon_FieldToMatchTextTransformationAnonDataTypeInput
+import typings.atPulumiAws.typesInputMod.wafNs.XssMatchSetXssMatchTuple
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,14 +14,14 @@ trait XssMatchSetArgs extends js.Object {
   /**
     * The parts of web requests that you want to inspect for cross-site scripting attacks.
     */
-  val xssMatchTuples: js.UndefOr[Input[js.Array[Input[Anon_FieldToMatchTextTransformationAnonDataTypeInput]]]] = js.undefined
+  val xssMatchTuples: js.UndefOr[Input[js.Array[Input[XssMatchSetXssMatchTuple]]]] = js.undefined
 }
 
 object XssMatchSetArgs {
   @scala.inline
   def apply(
     name: Input[String] = null,
-    xssMatchTuples: Input[js.Array[Input[Anon_FieldToMatchTextTransformationAnonDataTypeInput]]] = null
+    xssMatchTuples: Input[js.Array[Input[XssMatchSetXssMatchTuple]]] = null
   ): XssMatchSetArgs = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

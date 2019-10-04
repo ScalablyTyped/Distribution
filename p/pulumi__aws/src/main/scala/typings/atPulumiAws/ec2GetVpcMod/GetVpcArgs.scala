@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpcFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait GetVpcArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcFilter]] = js.undefined
   /**
     * The id of the specific VPC to retrieve.
     */
@@ -46,7 +46,7 @@ object GetVpcArgs {
     cidrBlock: String = null,
     default: js.UndefOr[Boolean] = js.undefined,
     dhcpOptionsId: String = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetVpcFilter] = null,
     id: String = null,
     state: String = null,
     tags: StringDictionary[js.Any] = null

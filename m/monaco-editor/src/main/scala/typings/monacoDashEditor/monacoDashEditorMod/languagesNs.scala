@@ -2,6 +2,7 @@ package typings.monacoDashEditor.monacoDashEditorMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.monacoDashEditor.Anon_ArgumentsInColorFunction
+import typings.monacoDashEditor.Anon_DocComment
 import typings.monacoDashEditor.Anon_FileMatch
 import typings.monacoDashEditor.Anon_IgnoreIfExists
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EndOfLineSequence
@@ -11,7 +12,10 @@ import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ITextModel
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CharacterPair
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeAction
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeActionContext
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeActionList
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeActionProvider
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeLens
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeLensList
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CodeLensProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.Command
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CommentRule
@@ -20,8 +24,10 @@ import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItem
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItemInsertTextRule
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItemKind
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItemProvider
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItemTag
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionList
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionTriggerKind
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.DeclarationProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.Definition
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.DefinitionProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.DocumentColorProvider
@@ -45,12 +51,9 @@ import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.Hover
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.HoverProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IAutoClosingPair
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IAutoClosingPairConditional
-import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IBracketElectricCharacterContribution
-import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.ICodeLensSymbol
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IColor
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IColorInformation
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IColorPresentation
-import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IDocComment
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IEncodedLineTokens
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IExpandedMonarchLanguageAction
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.IExpandedMonarchLanguageRule
@@ -86,12 +89,15 @@ import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.RenameProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.ResourceFileEdit
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.ResourceTextEdit
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SelectionRange
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SelectionRangeProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SignatureHelp
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SignatureHelpContext
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SignatureHelpProvider
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SignatureHelpResult
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SignatureHelpTriggerKind
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SignatureInformation
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SymbolKind
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SymbolTag
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.TextEdit
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.TokensProvider
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.TypeDefinitionProvider
@@ -101,6 +107,7 @@ import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.cssNs.LanguageSe
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.htmlNs.CompletionConfiguration
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.htmlNs.HTMLFormatConfiguration
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.htmlNs.Options
+import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.jsonNs.ModeConfiguration
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.CompilerOptions
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.CompilerOptionsValue
 import typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.JsxEmit
@@ -142,11 +149,26 @@ object languagesNs extends js.Object {
     val only: js.UndefOr[String] = js.undefined
   }
   
+  trait CodeActionList extends IDisposable {
+    val actions: js.Array[CodeAction]
+  }
+  
   trait CodeActionProvider extends js.Object {
     /**
       * Provide commands for the given document and range.
       */
-    def provideCodeActions(model: ITextModel, range: Range, context: CodeActionContext, token: CancellationToken): (js.Array[Command | CodeAction]) | (js.Promise[js.Array[Command | CodeAction]])
+    def provideCodeActions(model: ITextModel, range: Range, context: CodeActionContext, token: CancellationToken): CodeActionList | js.Promise[CodeActionList]
+  }
+  
+  trait CodeLens extends js.Object {
+    var command: js.UndefOr[Command] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
+    var range: IRange
+  }
+  
+  trait CodeLensList extends js.Object {
+    var lenses: js.Array[CodeLens]
+    def dispose(): Unit
   }
   
   trait CodeLensProvider extends js.Object {
@@ -154,12 +176,12 @@ object languagesNs extends js.Object {
     var resolveCodeLens: js.UndefOr[
         js.Function3[
           /* model */ ITextModel, 
-          /* codeLens */ ICodeLensSymbol, 
+          /* codeLens */ CodeLens, 
           /* token */ CancellationToken, 
-          ProviderResult[ICodeLensSymbol]
+          ProviderResult[CodeLens]
         ]
       ] = js.undefined
-    def provideCodeLenses(model: ITextModel, token: CancellationToken): ProviderResult[js.Array[ICodeLensSymbol]]
+    def provideCodeLenses(model: ITextModel, token: CancellationToken): ProviderResult[CodeLensList]
   }
   
   trait Command extends js.Object {
@@ -269,6 +291,11 @@ object languagesNs extends js.Object {
       * is used.
       */
     var sortText: js.UndefOr[String] = js.undefined
+    /**
+      * A modifier to the `kind` which affect how the item
+      * is rendered, e.g. Deprecated is rendered with a strikeout
+      */
+    var tags: js.UndefOr[js.Array[CompletionItemTag]] = js.undefined
   }
   
   @js.native
@@ -299,6 +326,9 @@ object languagesNs extends js.Object {
       */
     def provideCompletionItems(model: ITextModel, position: Position, context: CompletionContext, token: CancellationToken): ProviderResult[CompletionList]
   }
+  
+  @js.native
+  sealed trait CompletionItemTag extends js.Object
   
   trait CompletionList extends js.Object {
     var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -384,6 +414,7 @@ object languagesNs extends js.Object {
     var name: String
     var range: IRange
     var selectionRange: IRange
+    var tags: js.Array[SymbolTag]
   }
   
   trait DocumentSymbolProvider extends js.Object {
@@ -519,16 +550,6 @@ object languagesNs extends js.Object {
     var notIn: js.UndefOr[js.Array[String]] = js.undefined
   }
   
-  trait IBracketElectricCharacterContribution extends js.Object {
-    var docComment: js.UndefOr[IDocComment] = js.undefined
-  }
-  
-  trait ICodeLensSymbol extends js.Object {
-    var command: js.UndefOr[Command] = js.undefined
-    var id: js.UndefOr[String] = js.undefined
-    var range: IRange
-  }
-  
   trait IColor extends js.Object {
     /**
       * The alpha component in the range [0-1].
@@ -612,7 +633,7 @@ object languagesNs extends js.Object {
       *  - f = foreground ColorId (9 bits)
       *  - b = background ColorId (9 bits)
       *  - The color value for each colorId is defined in IStandaloneThemeData.customTokenColors:
-      * e.g colorId = 1 is stored in IStandaloneThemeData.customTokenColors[1]. Color id = 0 means no color,
+      * e.g. colorId = 1 is stored in IStandaloneThemeData.customTokenColors[1]. Color id = 0 means no color,
       * id = 1 is for the default foreground color, id = 2 for the default background.
       */
     var tokens: Uint32Array
@@ -697,6 +718,7 @@ object languagesNs extends js.Object {
   
   trait ILink extends js.Object {
     var range: IRange
+    var tooltip: js.UndefOr[String] = js.undefined
     var url: js.UndefOr[Uri | String] = js.undefined
   }
   
@@ -791,7 +813,7 @@ object languagesNs extends js.Object {
       *
       * @deprecated Will be replaced by a better API soon.
       */
-    var __electricCharacterSupport: js.UndefOr[IBracketElectricCharacterContribution] = js.undefined
+    var __electricCharacterSupport: js.UndefOr[Anon_DocComment] = js.undefined
     /**
       * Defines what characters must be after the cursor for bracket or quote autoclosing to occur when using the \'languageDefined\' autoclosing setting.
       *
@@ -976,7 +998,6 @@ object languagesNs extends js.Object {
   }
   
   trait SelectionRange extends js.Object {
-    var kind: String
     var range: IRange
   }
   
@@ -1015,7 +1036,11 @@ object languagesNs extends js.Object {
     /**
       * Provide help for the signature at the given position and document.
       */
-    def provideSignatureHelp(model: ITextModel, position: Position, token: CancellationToken, context: SignatureHelpContext): ProviderResult[SignatureHelp]
+    def provideSignatureHelp(model: ITextModel, position: Position, token: CancellationToken, context: SignatureHelpContext): ProviderResult[SignatureHelpResult]
+  }
+  
+  trait SignatureHelpResult extends IDisposable {
+    var value: SignatureHelp
   }
   
   @js.native
@@ -1040,6 +1065,9 @@ object languagesNs extends js.Object {
   
   @js.native
   sealed trait SymbolKind extends js.Object
+  
+  @js.native
+  sealed trait SymbolTag extends js.Object
   
   trait TextEdit extends js.Object {
     var eol: js.UndefOr[EndOfLineSequence] = js.undefined
@@ -1077,6 +1105,7 @@ object languagesNs extends js.Object {
   def registerCodeLensProvider(languageId: String, provider: CodeLensProvider): IDisposable = js.native
   def registerColorProvider(languageId: String, provider: DocumentColorProvider): IDisposable = js.native
   def registerCompletionItemProvider(languageId: String, provider: CompletionItemProvider): IDisposable = js.native
+  def registerDeclarationProvider(languageId: String, provider: DeclarationProvider): IDisposable = js.native
   def registerDefinitionProvider(languageId: String, provider: DefinitionProvider): IDisposable = js.native
   def registerDocumentFormattingEditProvider(languageId: String, provider: DocumentFormattingEditProvider): IDisposable = js.native
   def registerDocumentHighlightProvider(languageId: String, provider: DocumentHighlightProvider): IDisposable = js.native
@@ -1089,6 +1118,7 @@ object languagesNs extends js.Object {
   def registerOnTypeFormattingEditProvider(languageId: String, provider: OnTypeFormattingEditProvider): IDisposable = js.native
   def registerReferenceProvider(languageId: String, provider: ReferenceProvider): IDisposable = js.native
   def registerRenameProvider(languageId: String, provider: RenameProvider): IDisposable = js.native
+  def registerSelectionRangeProvider(languageId: String, provider: SelectionRangeProvider): IDisposable = js.native
   def registerSignatureHelpProvider(languageId: String, provider: SignatureHelpProvider): IDisposable = js.native
   def registerTypeDefinitionProvider(languageId: String, provider: TypeDefinitionProvider): IDisposable = js.native
   def setLanguageConfiguration(languageId: String, configuration: LanguageConfiguration): IDisposable = js.native
@@ -1226,6 +1256,16 @@ object languagesNs extends js.Object {
     /* 4 */ val Variable: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItemKind.Variable with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CompletionItemKind with Double] = js.native
+  }
+  
+  @js.native
+  object CompletionItemTag extends js.Object {
+    @js.native
+    sealed trait Deprecated extends CompletionItemTag
+    
+    /* 1 */ val Deprecated: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.CompletionItemTag.Deprecated with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[CompletionItemTag with Double] = js.native
   }
   
   @js.native
@@ -1455,6 +1495,16 @@ object languagesNs extends js.Object {
     def apply(value: Double): js.UndefOr[SymbolKind with Double] = js.native
   }
   
+  @js.native
+  object SymbolTag extends js.Object {
+    @js.native
+    sealed trait Deprecated extends SymbolTag
+    
+    /* 1 */ val Deprecated: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.SymbolTag.Deprecated with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[SymbolTag with Double] = js.native
+  }
+  
   @JSName("css")
   @js.native
   object cssNs extends js.Object {
@@ -1555,6 +1605,7 @@ object languagesNs extends js.Object {
     @js.native
     trait LanguageServiceDefaults extends js.Object {
       val diagnosticsOptions: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.jsonNs.DiagnosticsOptions = js.native
+      val modeConfiguration: ModeConfiguration = js.native
       def onDidChange(
         listener: js.Function1[
               /* e */ typings.monacoDashEditor.monacoDashEditorMod.languagesNs.jsonNs.LanguageServiceDefaults, 
@@ -1569,6 +1620,46 @@ object languagesNs extends js.Object {
         thisArg: js.Any
       ): IDisposable = js.native
       def setDiagnosticsOptions(options: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.jsonNs.DiagnosticsOptions): Unit = js.native
+      def setModeConfiguration(modeConfiguration: ModeConfiguration): Unit = js.native
+    }
+    
+    trait ModeConfiguration extends js.Object {
+      /**
+        * Defines whether the built-in color provider is enabled.
+        */
+      val colors: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in completionItemProvider is enabled.
+        */
+      val completionItems: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in diagnostic provider is enabled.
+        */
+      val diagnostics: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in documentFormattingEdit provider is enabled.
+        */
+      val documentFormattingEdits: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in documentRangeFormattingEdit provider is enabled.
+        */
+      val documentRangeFormattingEdits: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in documentSymbolProvider is enabled.
+        */
+      val documentSymbols: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in foldingRange provider is enabled.
+        */
+      val foldingRanges: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in hoverProvider is enabled.
+        */
+      val hovers: js.UndefOr[Boolean] = js.undefined
+      /**
+        * Defines whether the built-in tokens provider is enabled.
+        */
+      val tokens: js.UndefOr[Boolean] = js.undefined
     }
     
     var jsonDefaults: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.jsonNs.LanguageServiceDefaults = js.native
@@ -1717,6 +1808,7 @@ object languagesNs extends js.Object {
     var getTypeScriptWorker: js.Function0[js.Promise[js.Any]] = js.native
     var javascriptDefaults: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.LanguageServiceDefaults = js.native
     var typescriptDefaults: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.LanguageServiceDefaults = js.native
+    var typescriptVersion: String = js.native
     @js.native
     object JsxEmit extends js.Object {
       @js.native
@@ -1765,7 +1857,7 @@ object languagesNs extends js.Object {
       /* 2 */ val AMD: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.AMD with Double = js.native
       /* 1 */ val CommonJS: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.CommonJS with Double = js.native
       /* 5 */ val ES2015: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.ES2015 with Double = js.native
-      /* 6 */ val ESNext: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.ESNext with Double = js.native
+      /* 99 */ val ESNext: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.ESNext with Double = js.native
       /* 0 */ val None: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.None with Double = js.native
       /* 4 */ val System: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.System with Double = js.native
       /* 3 */ val UMD: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ModuleKind.UMD with Double = js.native
@@ -1816,6 +1908,12 @@ object languagesNs extends js.Object {
       sealed trait ES2018 extends ScriptTarget
       
       @js.native
+      sealed trait ES2019 extends ScriptTarget
+      
+      @js.native
+      sealed trait ES2020 extends ScriptTarget
+      
+      @js.native
       sealed trait ES3 extends ScriptTarget
       
       @js.native
@@ -1834,11 +1932,13 @@ object languagesNs extends js.Object {
       /* 3 */ val ES2016: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES2016 with Double = js.native
       /* 4 */ val ES2017: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES2017 with Double = js.native
       /* 5 */ val ES2018: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES2018 with Double = js.native
+      /* 6 */ val ES2019: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES2019 with Double = js.native
+      /* 7 */ val ES2020: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES2020 with Double = js.native
       /* 0 */ val ES3: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES3 with Double = js.native
       /* 1 */ val ES5: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ES5 with Double = js.native
-      /* 6 */ val ESNext: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ESNext with Double = js.native
+      /* 99 */ val ESNext: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.ESNext with Double = js.native
       /* 100 */ val JSON: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.JSON with Double = js.native
-      /* 6 */ val Latest: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.Latest with Double = js.native
+      /* 99 */ val Latest: typings.monacoDashEditor.monacoDashEditorMod.languagesNs.typescriptNs.ScriptTarget.Latest with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[ScriptTarget with Double] = js.native
     }

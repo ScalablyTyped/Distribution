@@ -1,12 +1,13 @@
 package typings.atPulumiAws.kinesisFirehoseDeliveryStreamMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketArnBufferInterval
-import typings.atPulumiAws.Anon_BucketArnBufferIntervalBufferSize
-import typings.atPulumiAws.Anon_BufferingInterval
-import typings.atPulumiAws.Anon_CloudwatchLoggingOptions
-import typings.atPulumiAws.Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeout
-import typings.atPulumiAws.Anon_KinesisStreamArn
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamElasticsearchConfiguration
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamExtendedS3Configuration
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamKinesisSourceConfiguration
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamRedshiftConfiguration
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamS3Configuration
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamServerSideEncryption
+import typings.atPulumiAws.typesOutputMod.kinesisNs.FirehoseDeliveryStreamSplunkConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,15 +38,15 @@ class FirehoseDeliveryStream protected () extends CustomResource {
     */
   val destination: Output[String] = js.native
   val destinationId: Output[String] = js.native
-  val elasticsearchConfiguration: Output[js.UndefOr[Anon_BufferingInterval]] = js.native
+  val elasticsearchConfiguration: Output[js.UndefOr[FirehoseDeliveryStreamElasticsearchConfiguration]] = js.native
   /**
     * Enhanced configuration options for the s3 destination. More details are given below.
     */
-  val extendedS3Configuration: Output[js.UndefOr[Anon_BucketArnBufferIntervalBufferSize]] = js.native
+  val extendedS3Configuration: Output[js.UndefOr[FirehoseDeliveryStreamExtendedS3Configuration]] = js.native
   /**
     * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
     */
-  val kinesisSourceConfiguration: Output[js.UndefOr[Anon_KinesisStreamArn]] = js.native
+  val kinesisSourceConfiguration: Output[js.UndefOr[FirehoseDeliveryStreamKinesisSourceConfiguration]] = js.native
   /**
     * A name to identify the stream. This is unique to the
     * AWS account and region the Stream is created in.
@@ -56,13 +57,18 @@ class FirehoseDeliveryStream protected () extends CustomResource {
     * Using `redshiftConfiguration` requires the user to also specify a
     * `s3Configuration` block. More details are given below.
     */
-  val redshiftConfiguration: Output[js.UndefOr[Anon_CloudwatchLoggingOptions]] = js.native
+  val redshiftConfiguration: Output[js.UndefOr[FirehoseDeliveryStreamRedshiftConfiguration]] = js.native
   /**
     * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
-  val s3Configuration: Output[js.UndefOr[Anon_BucketArnBufferInterval]] = js.native
-  val splunkConfiguration: Output[js.UndefOr[Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeout]] = js.native
+  val s3Configuration: Output[js.UndefOr[FirehoseDeliveryStreamS3Configuration]] = js.native
+  /**
+    * Encrypt at rest options.
+    * Server-side encryption should not be enabled when a kinesis stream is configured as the source of the firehose delivery stream.
+    */
+  val serverSideEncryption: Output[js.UndefOr[FirehoseDeliveryStreamServerSideEncryption]] = js.native
+  val splunkConfiguration: Output[js.UndefOr[FirehoseDeliveryStreamSplunkConfiguration]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

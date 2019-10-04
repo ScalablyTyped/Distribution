@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-sqlite"
-version := "6.0.0-d96b90"
+version := "7.0.0-4ccefd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

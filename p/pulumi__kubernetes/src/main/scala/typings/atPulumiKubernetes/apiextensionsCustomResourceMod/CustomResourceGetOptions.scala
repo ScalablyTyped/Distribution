@@ -19,8 +19,8 @@ trait CustomResourceGetOptions extends CustomResourceOptions {
     */
   var apiVersion: Input[String]
   /**
-    * An ID for the Kubernetes resource to retrive. Takes the form <namespace>/<name> or
-    * <name>.
+    * An ID for the Kubernetes resource to retrieve. Takes the form [namespace]/[name] or
+    * [name].
     */
   @JSName("id")
   var id_CustomResourceGetOptions: Input[ID]

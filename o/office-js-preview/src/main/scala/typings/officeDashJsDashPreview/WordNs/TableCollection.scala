@@ -25,7 +25,7 @@ class TableCollection () extends ClientObject {
   val items: js.Array[Table] = js.native
   /**
     *
-    * Gets the first table in this collection. Throws if this collection is empty.
+    * Gets the first table in this collection. Throws an error if this collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

@@ -10,24 +10,26 @@ import scala.scalajs.js.annotation._
 
 trait DatabaseOptions extends js.Object {
   var name: String
-  var password: String
+  var password: js.UndefOr[String] = js.undefined
   var storage: js.UndefOr[plocal | memory] = js.undefined
   var `type`: js.UndefOr[graph | document] = js.undefined
-  var username: String
+  var username: js.UndefOr[String] = js.undefined
 }
 
 object DatabaseOptions {
   @scala.inline
   def apply(
     name: String,
-    password: String,
-    username: String,
+    password: String = null,
     storage: plocal | memory = null,
-    `type`: graph | document = null
+    `type`: graph | document = null,
+    username: String = null
   ): DatabaseOptions = {
-    val __obj = js.Dynamic.literal(name = name, password = password, username = username)
+    val __obj = js.Dynamic.literal(name = name)
+    if (password != null) __obj.updateDynamic("password")(password)
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[DatabaseOptions]
   }
 }

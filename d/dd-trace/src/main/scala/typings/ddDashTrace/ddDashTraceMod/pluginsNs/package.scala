@@ -9,14 +9,14 @@ package object pluginsNs {
     * This plugin automatically instruments the
     * [amqp10](https://github.com/noodlefrenzy/node-amqp10) module.
     */
-  type amqp10 = Integration
+  type amqp10 = Instrumentation
   /**
     * This plugin automatically instruments the
     * [amqplib](https://github.com/squaremo/amqp.node) module.
     */
-  type amqplib = Integration
+  type amqplib = Instrumentation
   /**
-    * This plugin patches the [bluebird](https://github.com/squaremo/amqp.node)
+    * This plugin patches the [bluebird](https://github.com/petkaantonov/bluebird)
     * module to bind the promise callback the the caller context.
     */
   type bluebird = Integration
@@ -31,7 +31,7 @@ package object pluginsNs {
     * This plugin automatically instruments the
     * [cassandra-driver](https://github.com/datastax/nodejs-driver) module.
     */
-  type cassandra_driver = Integration
+  type cassandra_driver = Instrumentation
   /**
     * This plugin automatically instruments the
     * [connect](https://github.com/senchalabs/connect) module.
@@ -39,14 +39,19 @@ package object pluginsNs {
   type connect = HttpServer
   /**
     * This plugin automatically instruments the
+    * [couchbase](https://www.npmjs.com/package/couchbase) module.
+    */
+  type couchbase = Instrumentation
+  /**
+    * This plugin automatically instruments the
     * [dns](https://nodejs.org/api/dns.html) module.
     */
-  type dns = Integration
+  type dns = Instrumentation
   /**
     * This plugin automatically instruments the
     * [elasticsearch](https://github.com/elastic/elasticsearch-js) module.
     */
-  type elasticsearch = Integration
+  type elasticsearch = Instrumentation
   /**
     * This plugin automatically instruments the
     * [express](http://expressjs.com/) module.
@@ -71,7 +76,7 @@ package object pluginsNs {
     * This plugin automatically instruments the
     * [ioredis](https://github.com/luin/ioredis) module.
     */
-  type ioredis = Integration
+  type ioredis = Instrumentation
   /**
     * This plugin patches the [knex](https://knexjs.org/)
     * module to bind the promise callback the the caller context.
@@ -84,29 +89,34 @@ package object pluginsNs {
   type koa = HttpServer
   /**
     * This plugin automatically instruments the
+    * [limitd-client](https://github.com/limitd/node-client) module.
+    */
+  type limitd_client = Integration
+  /**
+    * This plugin automatically instruments the
     * [memcached](https://github.com/3rd-Eden/memcached) module.
     */
-  type memcached = Integration
+  type memcached = Instrumentation
   /**
     * This plugin automatically instruments the
     * [mongodb-core](https://github.com/mongodb-js/mongodb-core) module.
     */
-  type mongodb_core = Integration
+  type mongodb_core = Instrumentation
   /**
     * This plugin automatically instruments the
     * [mysql](https://github.com/mysqljs/mysql) module.
     */
-  type mysql = Integration
+  type mysql = Instrumentation
   /**
     * This plugin automatically instruments the
     * [mysql2](https://github.com/brianmario/mysql2) module.
     */
-  type mysql2 = Integration
+  type mysql2 = Instrumentation
   /**
     * This plugin automatically instruments the
     * [net](https://nodejs.org/api/net.html) module.
     */
-  type net = Integration
+  type net = Instrumentation
   /**
     * This plugin automatically instruments the
     * [paperplane](https://github.com/articulate/paperplane) module.
@@ -116,7 +126,7 @@ package object pluginsNs {
     * This plugin automatically instruments the
     * [pg](https://node-postgres.com/) module.
     */
-  type pg = Integration
+  type pg = Instrumentation
   /**
     * This plugin patches the [pino](http://getpino.io)
     * to automatically inject trace identifiers in log records when the
@@ -143,7 +153,7 @@ package object pluginsNs {
     * This plugin automatically instruments the
     * [redis](https://github.com/NodeRedis/node_redis) module.
     */
-  type redis = Integration
+  type redis = Instrumentation
   /**
     * This plugin automatically instruments the
     * [restify](http://restify.com/) module.
@@ -158,7 +168,7 @@ package object pluginsNs {
     * This plugin automatically instruments the
     * [tedious](https://github.com/tediousjs/tedious/) module.
     */
-  type tedious = Integration
+  type tedious = Instrumentation
   /**
     * This plugin patches the [when](https://github.com/cujojs/when)
     * module to bind the promise callback the the caller context.

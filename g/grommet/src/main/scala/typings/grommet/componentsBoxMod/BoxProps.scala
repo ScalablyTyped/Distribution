@@ -1,9 +1,9 @@
 package typings.grommet.componentsBoxMod
 
-import typings.grommet.Anon_All
 import typings.grommet.Anon_Auto
 import typings.grommet.Anon_Bottom
 import typings.grommet.Anon_BottomBottomleft
+import typings.grommet.Anon_Color
 import typings.grommet.Anon_Delay
 import typings.grommet.Anon_Grow
 import typings.grommet.Anon_Large
@@ -16,12 +16,10 @@ import typings.grommet.grommetStrings.`3/4`
 import typings.grommet.grommetStrings.`column-reverse`
 import typings.grommet.grommetStrings.`row-responsive`
 import typings.grommet.grommetStrings.`row-reverse`
-import typings.grommet.grommetStrings.all
 import typings.grommet.grommetStrings.around
 import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.baseline
 import typings.grommet.grommetStrings.between
-import typings.grommet.grommetStrings.bottom
 import typings.grommet.grommetStrings.center
 import typings.grommet.grommetStrings.column
 import typings.grommet.grommetStrings.end
@@ -34,12 +32,10 @@ import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.jiggle
 import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.left
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.pulse
 import typings.grommet.grommetStrings.reverse
-import typings.grommet.grommetStrings.right
 import typings.grommet.grommetStrings.row
 import typings.grommet.grommetStrings.scroll
 import typings.grommet.grommetStrings.shrink
@@ -50,7 +46,6 @@ import typings.grommet.grommetStrings.slideUp
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.stretch
-import typings.grommet.grommetStrings.top
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.visible
 import typings.grommet.grommetStrings.xlarge
@@ -86,7 +81,7 @@ trait BoxProps extends js.Object {
   var basis: js.UndefOr[
     xxsmall | xsmall | small | medium | large | xlarge | xxlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | auto | String
   ] = js.undefined
-  var border: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All] = js.undefined
+  var border: js.UndefOr[Boolean | SideType | Anon_Color | js.Array[Anon_Color]] = js.undefined
   var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.undefined
   var elevation: js.UndefOr[none | xsmall | small | medium | large | xlarge | String] = js.undefined
   var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
@@ -124,7 +119,7 @@ object BoxProps {
     as: PolymorphicType = null,
     background: BackgroundType = null,
     basis: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | auto | String = null,
-    border: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All = null,
+    border: Boolean | SideType | Anon_Color | js.Array[Anon_Color] = null,
     direction: row | column | `row-responsive` | `row-reverse` | `column-reverse` = null,
     elevation: none | xsmall | small | medium | large | xlarge | String = null,
     fill: horizontal | vertical | Boolean = null,

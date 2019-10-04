@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "style-value-types"
-version := "3.1.5-c32a75"
+version := "3.1.6-270307"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

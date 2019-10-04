@@ -26,9 +26,11 @@ class Writable ()
       Unit
     ]
   ] = js.native
+  var destroyed: Boolean = js.native
   val writableFinished: Boolean = js.native
   val writableHighWaterMark: Double = js.native
   val writableLength: Double = js.native
+  val writableObjectMode: Boolean = js.native
   def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native

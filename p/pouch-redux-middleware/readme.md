@@ -1,7 +1,7 @@
 
 # Scala.js typings for pouch-redux-middleware
 
-Typings are for version 0.5
+Typings are for version 1.2
 
 ## Library description:
 PouchDB Redux Middleware

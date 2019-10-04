@@ -13,8 +13,8 @@ class ODatabaseTransaction () extends js.Object {
     * @param   options  The options for the command
     * @return           The results of the command
     */
-  def command(command: String): OResult = js.native
-  def command(command: String, options: js.Any): OResult = js.native
+  def command[R](command: String): OResult[R] = js.native
+  def command[R](command: String, options: js.Any): OResult[R] = js.native
   /**
     * Commit the transaction.
     * @return The results of the transaction.

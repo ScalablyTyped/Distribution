@@ -9,6 +9,9 @@ object expoDashLinearDashGradientStrings {
   sealed trait adjustable extends js.Object
   
   @js.native
+  sealed trait alert extends js.Object
+  
+  @js.native
   sealed trait allowsDirectInteraction extends js.Object
   
   @js.native
@@ -25,6 +28,12 @@ object expoDashLinearDashGradientStrings {
   
   @js.native
   sealed trait button extends js.Object
+  
+  @js.native
+  sealed trait checkbox extends js.Object
+  
+  @js.native
+  sealed trait combobox extends js.Object
   
   @js.native
   sealed trait disabled extends js.Object
@@ -51,6 +60,15 @@ object expoDashLinearDashGradientStrings {
   sealed trait link extends js.Object
   
   @js.native
+  sealed trait menu extends js.Object
+  
+  @js.native
+  sealed trait menubar extends js.Object
+  
+  @js.native
+  sealed trait menuitem extends js.Object
+  
+  @js.native
   sealed trait no extends js.Object
   
   @js.native
@@ -69,10 +87,22 @@ object expoDashLinearDashGradientStrings {
   sealed trait polite extends js.Object
   
   @js.native
+  sealed trait progressbar extends js.Object
+  
+  @js.native
+  sealed trait radio extends js.Object
+  
+  @js.native
   sealed trait radiobutton_checked extends js.Object
   
   @js.native
   sealed trait radiobutton_unchecked extends js.Object
+  
+  @js.native
+  sealed trait radiogroup extends js.Object
+  
+  @js.native
+  sealed trait scrollbar extends js.Object
   
   @js.native
   sealed trait search extends js.Object
@@ -81,19 +111,39 @@ object expoDashLinearDashGradientStrings {
   sealed trait selected extends js.Object
   
   @js.native
+  sealed trait spinbutton extends js.Object
+  
+  @js.native
   sealed trait startsMedia extends js.Object
   
   @js.native
   sealed trait summary extends js.Object
   
   @js.native
+  sealed trait switch extends js.Object
+  
+  @js.native
+  sealed trait tab extends js.Object
+  
+  @js.native
+  sealed trait tablist extends js.Object
+  
+  @js.native
   sealed trait text extends js.Object
+  
+  @js.native
+  sealed trait timer extends js.Object
+  
+  @js.native
+  sealed trait toolbar extends js.Object
   
   @js.native
   sealed trait yes extends js.Object
   
   @scala.inline
   def adjustable: adjustable = "adjustable".asInstanceOf[adjustable]
+  @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
   @scala.inline
   def allowsDirectInteraction: allowsDirectInteraction = "allowsDirectInteraction".asInstanceOf[allowsDirectInteraction]
   @scala.inline
@@ -106,6 +156,10 @@ object expoDashLinearDashGradientStrings {
   def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
+  def combobox: combobox = "combobox".asInstanceOf[combobox]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
@@ -123,6 +177,12 @@ object expoDashLinearDashGradientStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
+  def menubar: menubar = "menubar".asInstanceOf[menubar]
+  @scala.inline
+  def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
   def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
@@ -135,19 +195,39 @@ object expoDashLinearDashGradientStrings {
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
+  def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
+  @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
+  @scala.inline
   def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
   @scala.inline
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
+  @scala.inline
+  def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
+  @scala.inline
+  def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
+  def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
+  @scala.inline
   def startsMedia: startsMedia = "startsMedia".asInstanceOf[startsMedia]
   @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
+  def switch: switch = "switch".asInstanceOf[switch]
+  @scala.inline
+  def tab: tab = "tab".asInstanceOf[tab]
+  @scala.inline
+  def tablist: tablist = "tablist".asInstanceOf[tablist]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def timer: timer = "timer".asInstanceOf[timer]
+  @scala.inline
+  def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
 }

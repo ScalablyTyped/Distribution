@@ -198,6 +198,19 @@ trait DocDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Returns a list of certificate authority (CA) certificates provided by Amazon RDS for this AWS account.
+    */
+  def describeCertificates(): Request[CertificateMessage, AWSError] = js.native
+  def describeCertificates(callback: js.Function2[/* err */ AWSError, /* data */ CertificateMessage, Unit]): Request[CertificateMessage, AWSError] = js.native
+  /**
+    * Returns a list of certificate authority (CA) certificates provided by Amazon RDS for this AWS account.
+    */
+  def describeCertificates(params: DescribeCertificatesMessage): Request[CertificateMessage, AWSError] = js.native
+  def describeCertificates(
+    params: DescribeCertificatesMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CertificateMessage, Unit]
+  ): Request[CertificateMessage, AWSError] = js.native
+  /**
     * Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list contains only the description of the specified DB cluster parameter group. 
     */
   def describeDBClusterParameterGroups(): Request[DBClusterParameterGroupsMessage, AWSError] = js.native

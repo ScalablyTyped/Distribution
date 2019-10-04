@@ -372,6 +372,7 @@ trait OpHandler extends js.Object {
   def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
   def reciprocal[T /* <: Tensor[Rank] */](x: T): T = js.native
   def relu[T /* <: Tensor[Rank] */](x: T): T = js.native
+  def relu6[T /* <: Tensor[Rank] */](x: T): T = js.native
   def reshape[R2 /* <: Rank */](
     x: Tensor[Rank],
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R2] */ js.Any

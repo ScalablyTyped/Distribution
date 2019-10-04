@@ -16,10 +16,10 @@ import typings.atEmberPolyfills.typesMod.Mix
 import typings.atEmberPolyfills.typesMod.Mix3
 import typings.atEmberPolyfills.typesMod.Mix4
 import typings.atEmberRunloop.atEmberRunloopMod.RunNamespace
-import typings.atEmberString.dashPrivateHandlebarsMod.SafeString
+import typings.atEmberTemplate.dashPrivateHandlebarsMod.SafeString
 import typings.atEmberUtils.dashPrivateTypesMod.FunctionArgs
-import typings.atEmberUtils.dashPrivateTypesMod.KeysOfType
 import typings.atEmberUtils.dashPrivateTypesMod.TypeLookup
+import typings.atEmberUtils.dashPrivateTypesMod.TypeOf
 import typings.ember.TypeofClassEventTarget
 import typings.ember.TypeofClassPromise
 import typings.ember.emberMod.EmberNs.Application
@@ -445,7 +445,7 @@ object EmberNs extends js.Object {
     
     @js.native
     class SafeString ()
-      extends typings.atEmberString.dashPrivateHandlebarsMod.SafeString
+      extends typings.atEmberTemplate.dashPrivateHandlebarsMod.SafeString
     
     def Exception(message: String): Unit = js.native
     def K(): js.Any = js.native
@@ -1110,7 +1110,7 @@ object EmberNs extends js.Object {
     val htmlSafe: js.Function1[/* str */ String, SafeString] = js.native
     val isHTMLSafe: js.Function1[
         /* str */ js.Any, 
-        /* is @ember/string.@ember/string/-private/handlebars.SafeString */ Boolean
+        /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean
       ] = js.native
     val underscore: js.Function1[/* str */ String, String] = js.native
     val w: js.Function1[/* str */ String, js.Array[String]] = js.native
@@ -1257,6 +1257,7 @@ object EmberNs extends js.Object {
     */
   @js.native
   object assign extends js.Object {
+    def apply(target: js.Object): scala.Nothing = js.native
     def apply(target: js.Object, sources: js.Object*): js.Any = js.native
     def apply[T /* <: js.Object */, U /* <: js.Object */](target: T, source: U): Mix[T, U] = js.native
     def apply[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */](target: T, source1: U, source2: V): Mix3[T, U, V] = js.native
@@ -1515,7 +1516,7 @@ object EmberNs extends js.Object {
   object typeOf extends js.Object {
     def apply(): undefined = js.native
     def apply(item: js.Any): String = js.native
-    def apply[T](value: T): KeysOfType[TypeLookup, T] = js.native
+    def apply[T](value: T): TypeOf[TypeLookup, T] = js.native
   }
   
   @js.native

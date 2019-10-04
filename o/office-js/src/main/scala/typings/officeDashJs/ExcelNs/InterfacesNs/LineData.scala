@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "line.toJSON()". */
+/** An interface describing the data returned by calling `line.toJSON()`. */
 trait LineData extends js.Object {
   /**
     *

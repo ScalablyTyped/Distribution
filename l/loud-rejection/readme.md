@@ -1,7 +1,7 @@
 
 # Scala.js typings for loud-rejection
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 Make unhandled promise rejections fail loudly instead of the default silent fail

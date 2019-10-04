@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-font" : "6.0.1"
+      "expo-font" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-font" : "6.0.1"
+      "expo-font" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 
 trait MsearchTemplate[T] extends Generic {
   var body: T
-  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
   var index: js.UndefOr[String | js.Array[String]] = js.undefined
   var max_concurrent_searches: js.UndefOr[Double] = js.undefined
   var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
@@ -23,7 +22,6 @@ object MsearchTemplate {
   @scala.inline
   def apply[T](
     body: T,
-    ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
@@ -39,7 +37,6 @@ object MsearchTemplate {
     typed_keys: js.UndefOr[Boolean] = js.undefined
   ): MsearchTemplate[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccs_minimize_roundtrips)) __obj.updateDynamic("ccs_minimize_roundtrips")(ccs_minimize_roundtrips)
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)

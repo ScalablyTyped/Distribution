@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartMapOptions object, for use in "chartMapOptions.set({ ... })". */
+/** An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`. */
 trait ChartMapOptionsUpdateData extends js.Object {
   /**
     *

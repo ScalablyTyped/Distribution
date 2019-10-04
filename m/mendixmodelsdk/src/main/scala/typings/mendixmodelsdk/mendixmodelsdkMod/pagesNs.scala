@@ -3602,6 +3602,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionButton = js.native
+    /**
+      * Creates and returns a new ActionButton instance in the SDK and on the server.
+      * The new ActionButton will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ActionButton = js.native
   }
   
   /* static members */
@@ -4992,6 +5001,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CheckBox = js.native
+    /**
+      * Creates and returns a new CheckBox instance in the SDK and on the server.
+      * The new CheckBox will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.CheckBox = js.native
   }
   
   /* static members */
@@ -6079,6 +6097,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DataGrid = js.native
+    /**
+      * Creates and returns a new DataGrid instance in the SDK and on the server.
+      * The new DataGrid will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DataGrid = js.native
   }
   
   /* static members */
@@ -6616,6 +6643,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DataView = js.native
+    /**
+      * Creates and returns a new DataView instance in the SDK and on the server.
+      * The new DataView will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DataView = js.native
   }
   
   /* static members */
@@ -7279,6 +7315,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DatePicker = js.native
+    /**
+      * Creates and returns a new DatePicker instance in the SDK and on the server.
+      * The new DatePicker will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DatePicker = js.native
   }
   
   /* static members */
@@ -7910,6 +7955,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DivContainer = js.native
+    /**
+      * Creates and returns a new DivContainer instance in the SDK and on the server.
+      * The new DivContainer will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DivContainer = js.native
   }
   
   /* static members */
@@ -8364,6 +8418,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DropDown = js.native
+    /**
+      * Creates and returns a new DropDown instance in the SDK and on the server.
+      * The new DropDown will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DropDown = js.native
   }
   
   /* static members */
@@ -8818,6 +8881,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DropDownButton = js.native
+    /**
+      * Creates and returns a new DropDownButton instance in the SDK and on the server.
+      * The new DropDownButton will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DropDownButton = js.native
   }
   
   /* static members */
@@ -9310,6 +9382,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
+    /**
+      * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
+      * The new DynamicImageViewer will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
   }
   
   /* static members */
@@ -9764,6 +9845,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DynamicText = js.native
+    /**
+      * Creates and returns a new DynamicText instance in the SDK and on the server.
+      * The new DynamicText will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.DynamicText = js.native
   }
   
   /* static members */
@@ -10247,6 +10337,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.FileManager = js.native
+    /**
+      * Creates and returns a new FileManager instance in the SDK and on the server.
+      * The new FileManager will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.FileManager = js.native
   }
   
   /* static members */
@@ -11162,6 +11261,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.GroupBox = js.native
+    /**
+      * Creates and returns a new GroupBox instance in the SDK and on the server.
+      * The new GroupBox will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.GroupBox = js.native
   }
   
   /* static members */
@@ -11624,6 +11732,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Header = js.native
+    /**
+      * Creates and returns a new Header instance in the SDK and on the server.
+      * The new Header will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Header = js.native
   }
   
   /* static members */
@@ -12578,6 +12695,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ImageUploader = js.native
+    /**
+      * Creates and returns a new ImageUploader instance in the SDK and on the server.
+      * The new ImageUploader will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ImageUploader = js.native
   }
   
   /* static members */
@@ -13051,6 +13177,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
+    /**
+      * Creates and returns a new InputReferenceSetSelector instance in the SDK and on the server.
+      * The new InputReferenceSetSelector will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
   }
   
   /* static members */
@@ -13523,6 +13658,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Label = js.native
+    /**
+      * Creates and returns a new Label instance in the SDK and on the server.
+      * The new Label will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Label = js.native
   }
   
   /* static members */
@@ -14069,6 +14213,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.LayoutGrid = js.native
+    /**
+      * Creates and returns a new LayoutGrid instance in the SDK and on the server.
+      * The new LayoutGrid will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.LayoutGrid = js.native
   }
   
   /* static members */
@@ -14815,6 +14968,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ListView = js.native
+    /**
+      * Creates and returns a new ListView instance in the SDK and on the server.
+      * The new ListView will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ListView = js.native
   }
   
   /* static members */
@@ -15359,6 +15521,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.LoginButton = js.native
+    /**
+      * Creates and returns a new LoginButton instance in the SDK and on the server.
+      * The new LoginButton will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.LoginButton = js.native
   }
   
   /* static members */
@@ -15795,6 +15966,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
+    /**
+      * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
+      * The new LoginIdTextBox will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
   }
   
   /* static members */
@@ -16736,6 +16916,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.MenuBar = js.native
+    /**
+      * Creates and returns a new MenuBar instance in the SDK and on the server.
+      * The new MenuBar will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.MenuBar = js.native
   }
   
   /* static members */
@@ -17583,6 +17772,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.NavigationList = js.native
+    /**
+      * Creates and returns a new NavigationList instance in the SDK and on the server.
+      * The new NavigationList will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.NavigationList = js.native
   }
   
   /* static members */
@@ -18075,6 +18273,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.NavigationTree = js.native
+    /**
+      * Creates and returns a new NavigationTree instance in the SDK and on the server.
+      * The new NavigationTree will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.NavigationTree = js.native
   }
   
   /* static members */
@@ -19607,6 +19814,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.PasswordTextBox = js.native
+    /**
+      * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
+      * The new PasswordTextBox will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.PasswordTextBox = js.native
   }
   
   /* static members */
@@ -20070,6 +20286,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Placeholder = js.native
+    /**
+      * Creates and returns a new Placeholder instance in the SDK and on the server.
+      * The new Placeholder will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Placeholder = js.native
   }
   
   /* static members */
@@ -20532,6 +20757,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
+    /**
+      * Creates and returns a new RadioButtonGroup instance in the SDK and on the server.
+      * The new RadioButtonGroup will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
   }
   
   /* static members */
@@ -21013,6 +21247,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSelector = js.native
+    /**
+      * Creates and returns a new ReferenceSelector instance in the SDK and on the server.
+      * The new ReferenceSelector will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSelector = js.native
   }
   
   /* static members */
@@ -21474,6 +21717,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
+    /**
+      * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
+      * The new ReferenceSetSelector will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
   }
   
   /* static members */
@@ -22346,6 +22598,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ScrollContainer = js.native
+    /**
+      * Creates and returns a new ScrollContainer instance in the SDK and on the server.
+      * The new ScrollContainer will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ScrollContainer = js.native
   }
   
   /* static members */
@@ -23005,6 +23266,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
+    /**
+      * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
+      * The new SidebarToggleButton will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
   }
   
   /* static members */
@@ -23622,6 +23892,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
+    /**
+      * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
+      * The new SimpleMenuBar will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
   }
   
   /* static members */
@@ -24129,6 +24408,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
+    /**
+      * Creates and returns a new SnippetCallWidget instance in the SDK and on the server.
+      * The new SnippetCallWidget will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
   }
   
   /* static members */
@@ -24611,6 +24899,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.StaticImageViewer = js.native
+    /**
+      * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
+      * The new StaticImageViewer will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.StaticImageViewer = js.native
   }
   
   /* static members */
@@ -25455,6 +25752,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TabContainer = js.native
+    /**
+      * Creates and returns a new TabContainer instance in the SDK and on the server.
+      * The new TabContainer will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TabContainer = js.native
   }
   
   /* static members */
@@ -25928,6 +26234,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Table = js.native
+    /**
+      * Creates and returns a new Table instance in the SDK and on the server.
+      * The new Table will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Table = js.native
   }
   
   /* static members */
@@ -26454,6 +26769,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TemplateGrid = js.native
+    /**
+      * Creates and returns a new TemplateGrid instance in the SDK and on the server.
+      * The new TemplateGrid will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TemplateGrid = js.native
   }
   
   /* static members */
@@ -26927,6 +27251,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TextArea = js.native
+    /**
+      * Creates and returns a new TextArea instance in the SDK and on the server.
+      * The new TextArea will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TextArea = js.native
   }
   
   /* static members */
@@ -27381,6 +27714,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TextBox = js.native
+    /**
+      * Creates and returns a new TextBox instance in the SDK and on the server.
+      * The new TextBox will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.TextBox = js.native
   }
   
   /* static members */
@@ -27855,6 +28197,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Title = js.native
+    /**
+      * Creates and returns a new Title instance in the SDK and on the server.
+      * The new Title will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.Title = js.native
   }
   
   /* static members */
@@ -28308,6 +28659,15 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pagesNs.WebLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ValidationMessage = js.native
+    /**
+      * Creates and returns a new ValidationMessage instance in the SDK and on the server.
+      * The new ValidationMessage will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pagesNs.ValidationMessage = js.native
   }
   
   /* static members */

@@ -57,6 +57,6 @@ trait Result extends js.Object {
   /**
     * @returns Warnings from plugins, filtered from messages.
     */
-  def warnings(): js.Array[ResultMessage] = js.native
+  def warnings(): js.Array[Warning] = js.native
 }
 

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 class NameAddrHeader protected () extends Parameters {
   /**
     * Constructor
-    * @param uri
-    * @param displayName
-    * @param parameters
+    * @param uri -
+    * @param displayName -
+    * @param parameters -
     */
   def this(uri: URI, displayName: String, parameters: StringDictionary[String]) = this()
   var _displayName: js.Any = js.native

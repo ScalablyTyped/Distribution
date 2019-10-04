@@ -11,26 +11,11 @@ import scala.scalajs.js.annotation._
 class LayerBase protected ()
   extends Component[ILayerProps, ILayerBaseState, js.Any] {
   def this(props: ILayerProps) = this()
-  /**
-    * Helper to stop events from bubbling up out of Layer.
-    */
-  var _filterEvent: js.Any = js.native
+  var _createLayerElement: js.Any = js.native
   var _getClassNames: js.Any = js.native
   var _getHost: js.Any = js.native
-  var _getLayerElement: js.Any = js.native
-  /**
-    * rootElement wrapper for setting virtual parent as soon as root element ref is available.
-    */
-  var _handleRootElementRef: js.Any = js.native
-  var _host: js.Any = js.native
-  var _layerElement: js.Any = js.native
   var _removeLayerElement: js.Any = js.native
-  var _rootElement: js.Any = js.native
-  var _setVirtualParent: js.Any = js.native
-  @JSName("UNSAFE_componentWillMount")
-  def UNSAFE_componentWillMount_MLayerBase(): Unit = js.native
-  @JSName("UNSAFE_componentWillUpdate")
-  def UNSAFE_componentWillUpdate_MLayerBase(): Unit = js.native
+  var _rootRef: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MLayerBase(): Unit = js.native
   @JSName("componentDidUpdate")

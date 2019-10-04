@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elbSslNegotiationPolicyMod
 
-import typings.atPulumiAws.Anon_NameValue
+import typings.atPulumiAws.typesInputMod.elbNs.SslNegotiationPolicyAttribute
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait SslNegotiationPolicyArgs extends js.Object {
   /**
     * An SSL Negotiation policy attribute. Each has two properties:
     */
-  val attributes: js.UndefOr[Input[js.Array[Input[Anon_NameValue]]]] = js.undefined
+  val attributes: js.UndefOr[Input[js.Array[Input[SslNegotiationPolicyAttribute]]]] = js.undefined
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
@@ -33,7 +33,7 @@ object SslNegotiationPolicyArgs {
   def apply(
     lbPort: Input[Double],
     loadBalancer: Input[String],
-    attributes: Input[js.Array[Input[Anon_NameValue]]] = null,
+    attributes: Input[js.Array[Input[SslNegotiationPolicyAttribute]]] = null,
     name: Input[String] = null
   ): SslNegotiationPolicyArgs = {
     val __obj = js.Dynamic.literal(lbPort = lbPort.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])

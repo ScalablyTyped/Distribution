@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the PivotHierarchy object, for use in "pivotHierarchy.set({ ... })". */
+/** An interface for updating data on the PivotHierarchy object, for use in `pivotHierarchy.set({ ... })`. */
 trait PivotHierarchyUpdateData extends js.Object {
   /**
     *

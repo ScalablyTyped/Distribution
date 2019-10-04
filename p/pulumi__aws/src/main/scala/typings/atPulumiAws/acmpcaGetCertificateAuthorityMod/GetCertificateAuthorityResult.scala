@@ -1,7 +1,7 @@
 package typings.atPulumiAws.acmpcaGetCertificateAuthorityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName
+import typings.atPulumiAws.typesOutputMod.acmpcaNs.GetCertificateAuthorityRevocationConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ trait GetCertificateAuthorityResult extends js.Object {
     * * `revocation_configuration.0.crl_configuration.0.expiration_in_days` - Number of days until a certificate expires.
     * * `revocation_configuration.0.crl_configuration.0.s3_bucket_name` - Name of the S3 bucket that contains the CRL.
     */
-  val revocationConfigurations: js.Array[Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName]
+  val revocationConfigurations: js.Array[GetCertificateAuthorityRevocationConfiguration]
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */
@@ -69,7 +69,7 @@ object GetCertificateAuthorityResult {
     id: String,
     notAfter: String,
     notBefore: String,
-    revocationConfigurations: js.Array[Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName],
+    revocationConfigurations: js.Array[GetCertificateAuthorityRevocationConfiguration],
     serial: String,
     status: String,
     tags: StringDictionary[js.Any],

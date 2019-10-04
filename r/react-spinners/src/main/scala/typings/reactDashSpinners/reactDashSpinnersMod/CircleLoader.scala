@@ -1,13 +1,17 @@
 package typings.reactDashSpinners.reactDashSpinnersMod
 
 import typings.react.reactMod.Component
-import typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.CircleLoaderProps
+import typings.react.reactMod.ComponentState
+import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-spinners", "CircleLoader")
 @js.native
-class CircleLoader ()
-  extends Component[CircleLoaderProps, js.Object, js.Any]
+class CircleLoader protected ()
+  extends Component[LoaderSizeProps, ComponentState, js.Any] {
+  def this(props: LoaderSizeProps) = this()
+  def this(props: LoaderSizeProps, context: js.Any) = this()
+}
 

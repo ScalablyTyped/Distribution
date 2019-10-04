@@ -16,11 +16,12 @@ import typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps
 import typings.reactDashSelect.srcComponentsOptionMod.OptionProps
 import typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps
 import typings.reactDashSelect.srcComponentsSingleValueMod.SingleValueProps
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SelectComponents[OptionType] extends js.Object {
+trait SelectComponents[OptionType /* <: OptionTypeBase */] extends js.Object {
   var ClearIndicator: IndicatorComponentType[OptionType] | Null
   var Control: ComponentType[ControlProps[OptionType]]
   var CrossIcon: ComponentType[_]
@@ -50,7 +51,7 @@ trait SelectComponents[OptionType] extends js.Object {
 
 object SelectComponents {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     Control: ComponentType[ControlProps[OptionType]],
     CrossIcon: ComponentType[_],
     DownChevron: ComponentType[_],

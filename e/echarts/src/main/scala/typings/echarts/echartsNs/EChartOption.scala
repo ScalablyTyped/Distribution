@@ -1,13 +1,13 @@
 package typings.echarts.echartsNs
 
 import typings.echarts.echartsNs.EChartOptionNs.AxisPointer
+import typings.echarts.echartsNs.EChartOptionNs.BaseTextStyle
 import typings.echarts.echartsNs.EChartOptionNs.Calendar
 import typings.echarts.echartsNs.EChartOptionNs.DataZoom
 import typings.echarts.echartsNs.EChartOptionNs.Dataset
 import typings.echarts.echartsNs.EChartOptionNs.Grid
 import typings.echarts.echartsNs.EChartOptionNs.Legend
 import typings.echarts.echartsNs.EChartOptionNs.SingleAxis
-import typings.echarts.echartsNs.EChartOptionNs.TextStyle
 import typings.echarts.echartsNs.EChartOptionNs.Tooltip
 import typings.echarts.echartsNs.EChartOptionNs.VisualMap
 import typings.echarts.echartsNs.EChartOptionNs.XAxis
@@ -325,7 +325,7 @@ trait EChartOption[TSeries] extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#textStyle
     */
-  var textStyle: js.UndefOr[TextStyle] = js.undefined
+  var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
   /**
     * `timeline` component, which provides functions like switching and playing
     * between multiple ECharts `options`.
@@ -477,7 +477,7 @@ object EChartOption {
     radiusAxis: js.Object = null,
     series: js.Array[TSeries] = null,
     singleAxis: SingleAxis | js.Array[SingleAxis] = null,
-    textStyle: TextStyle = null,
+    textStyle: BaseTextStyle = null,
     timeline: js.Object = null,
     title: EChartTitleOption | js.Array[EChartTitleOption] = null,
     toolbox: js.Object = null,

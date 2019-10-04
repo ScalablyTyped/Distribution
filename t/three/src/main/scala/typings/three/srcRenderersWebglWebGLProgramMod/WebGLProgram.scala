@@ -3,7 +3,6 @@ package typings.three.srcRenderersWebglWebGLProgramMod
 import typings.three.srcMaterialsShaderMaterialMod.ShaderMaterial
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
 import typings.three.srcRenderersWebGLRendererMod.WebGLRendererParameters
-import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
 import typings.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions
 import typings.three.srcRenderersWebglWebGLShaderMod.WebGLShader
 import typings.three.srcRenderersWebglWebGLUniformsMod.WebGLUniforms
@@ -20,8 +19,7 @@ class WebGLProgram protected () extends js.Object {
     code: String,
     material: ShaderMaterial,
     shader: WebGLShader,
-    parameters: WebGLRendererParameters,
-    capabilities: WebGLCapabilities
+    parameters: WebGLRendererParameters
   ) = this()
   /**
   	 * @deprecated Use {@link WebGLProgram#getAttributes getAttributes()} instead.

@@ -21,6 +21,9 @@ object prosemirrorDashViewStrings {
   sealed trait right extends js.Object
   
   @js.native
+  sealed trait selection extends js.Object
+  
+  @js.native
   sealed trait up extends js.Object
   
   @scala.inline
@@ -33,6 +36,8 @@ object prosemirrorDashViewStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def selection: selection = "selection".asInstanceOf[selection]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
 }

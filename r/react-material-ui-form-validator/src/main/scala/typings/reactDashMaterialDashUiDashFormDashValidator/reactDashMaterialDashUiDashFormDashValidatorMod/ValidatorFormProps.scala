@@ -2,7 +2,7 @@ package typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDa
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.Element
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.FormEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +13,13 @@ trait ValidatorFormProps
   var debounceTime: js.UndefOr[Double] = js.undefined
   var instantValidate: js.UndefOr[Boolean] = js.undefined
   var onError: js.UndefOr[js.Function1[/* errors */ js.Array[_], Unit]] = js.undefined
-  def onSubmit(event: FormEventHandler[Element]): Unit
+  def onSubmit(event: FormEvent[Element]): Unit
 }
 
 object ValidatorFormProps {
   @scala.inline
   def apply(
-    onSubmit: FormEventHandler[Element] => Unit,
+    onSubmit: FormEvent[Element] => Unit,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     debounceTime: Int | Double = null,

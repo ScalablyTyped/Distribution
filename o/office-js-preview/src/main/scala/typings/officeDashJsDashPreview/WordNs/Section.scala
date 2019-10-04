@@ -80,7 +80,7 @@ class Section () extends ClientObject {
   def getHeader_Primary(`type`: Primary): Body = js.native
   /**
     *
-    * Gets the next section. Throws if this section is the last one.
+    * Gets the next section. Throws an error if this section is the last one.
     *
     * [Api set: WordApi 1.3]
     */

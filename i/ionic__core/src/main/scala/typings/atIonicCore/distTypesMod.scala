@@ -14,6 +14,7 @@ import typings.atIonicCore.atIonicCoreStrings.ionViewWillUnload
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.ipad
 import typings.atIonicCore.atIonicCoreStrings.iphone
+import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.mobile
 import typings.atIonicCore.atIonicCoreStrings.mobileweb
 import typings.atIonicCore.atIonicCoreStrings.phablet
@@ -57,6 +58,7 @@ object distTypesMod extends js.Object {
   val isPlatform: IsPlatformSignature = js.native
   def createAnimation(): Animation = js.native
   def createGesture(config: GestureConfig): Gesture = js.native
+  def getMode(): ios | md = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof intl-messageformat.intl-messageformat/lib/formatters.Formats ]:? intl-messageformat.intl-messageformat/lib/formatters.Formats[P]} */ trait CustomFormats extends js.Object {
+- Dropped {[ P in keyof intl-messageformat.intl-messageformat/dist/formatters.Formats ]:? intl-messageformat.intl-messageformat/dist/formatters.Formats[P]} */ trait CustomFormats extends js.Object {
   var relative: js.UndefOr[Record[String, IntlRelativeTimeFormatOptions]] = js.undefined
 }
 

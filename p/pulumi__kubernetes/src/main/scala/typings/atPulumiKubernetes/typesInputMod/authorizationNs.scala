@@ -9,8 +9,6 @@ import typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1Ns.ResourceRul
 import typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1Ns.SelfSubjectAccessReviewSpec
 import typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1Ns.SelfSubjectRulesReviewSpec
 import typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1Ns.SubjectAccessReviewSpec
-import typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1Ns.SubjectAccessReviewStatus
-import typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1Ns.SubjectRulesReviewStatus
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -33,14 +31,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.LocalSubjectAccessReview]
@@ -51,10 +49,6 @@ object authorizationNs extends js.Object {
         * the namespace you made the request against.  If empty, it is defaulted.
         */
       var spec: Input[SubjectAccessReviewSpec]
-      /**
-        * Status is filled in by the server and indicates whether the request is allowed or not
-        */
-      var status: js.UndefOr[Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -168,14 +162,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SelfSubjectAccessReview]
@@ -185,10 +179,6 @@ object authorizationNs extends js.Object {
         * Spec holds information about the request being evaluated.  user and groups must be empty
         */
       var spec: Input[SelfSubjectAccessReviewSpec]
-      /**
-        * Status is filled in by the server and indicates whether the request is allowed or not
-        */
-      var status: js.UndefOr[Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -221,14 +211,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SelfSubjectRulesReview]
@@ -238,12 +228,11 @@ object authorizationNs extends js.Object {
         * Spec holds information about the request being evaluated.
         */
       var spec: Input[SelfSubjectRulesReviewSpec]
-      /**
-        * Status is filled in by the server and indicates the set of actions a user can perform.
-        */
-      var status: js.UndefOr[Input[SubjectRulesReviewStatus]] = js.undefined
     }
     
+    /**
+      *
+      */
     trait SelfSubjectRulesReviewSpec extends js.Object {
       /**
         * Namespace to evaluate rules for. Required.
@@ -259,14 +248,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SubjectAccessReview]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -274,10 +263,6 @@ object authorizationNs extends js.Object {
         * Spec holds information about the request being evaluated
         */
       var spec: Input[SubjectAccessReviewSpec]
-      /**
-        * Status is filled in by the server and indicates whether the request is allowed or not
-        */
-      var status: js.UndefOr[Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -390,14 +375,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.LocalSubjectAccessReview]
@@ -410,14 +395,6 @@ object authorizationNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
           ]
-      /**
-        * Status is filled in by the server and indicates whether the request is allowed or not
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
-            ]
-          ] = js.undefined
     }
     
     /**
@@ -531,14 +508,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SelfSubjectAccessReview]
@@ -550,14 +527,6 @@ object authorizationNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReviewSpec
           ]
-      /**
-        * Status is filled in by the server and indicates whether the request is allowed or not
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
-            ]
-          ] = js.undefined
     }
     
     /**
@@ -598,14 +567,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SelfSubjectRulesReview]
@@ -617,16 +586,11 @@ object authorizationNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReviewSpec
           ]
-      /**
-        * Status is filled in by the server and indicates the set of actions a user can perform.
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SubjectRulesReviewStatus
-            ]
-          ] = js.undefined
     }
     
+    /**
+      *
+      */
     trait SelfSubjectRulesReviewSpec extends js.Object {
       /**
         * Namespace to evaluate rules for. Required.
@@ -642,14 +606,14 @@ object authorizationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authorizationDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SubjectAccessReview]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -659,14 +623,6 @@ object authorizationNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
           ]
-      /**
-        * Status is filled in by the server and indicates whether the request is allowed or not
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
-            ]
-          ] = js.undefined
     }
     
     /**

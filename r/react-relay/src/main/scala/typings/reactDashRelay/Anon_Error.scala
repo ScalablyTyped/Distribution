@@ -1,6 +1,6 @@
 package typings.reactDashRelay
 
-import typings.relayDashRuntime.relayDashRuntimeMod.OperationType
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

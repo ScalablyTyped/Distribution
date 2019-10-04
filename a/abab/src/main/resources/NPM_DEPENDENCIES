@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "abab" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "abab" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

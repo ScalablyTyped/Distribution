@@ -27,6 +27,7 @@ object Config {
     idleTimeoutMillis: Int | Double = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveInitialDelayMillis: Int | Double = null,
+    log: /* repeated */ js.Any => Unit = null,
     max: Int | Double = null,
     min: Int | Double = null,
     password: String = null,
@@ -47,6 +48,7 @@ object Config {
     if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
     if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password)

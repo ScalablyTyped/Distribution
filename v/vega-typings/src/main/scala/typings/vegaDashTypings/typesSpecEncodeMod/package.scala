@@ -64,5 +64,7 @@ package object typesSpecEncodeMod {
   */
   type SymbolShape = _SymbolShape | String
   type SymbolShapeValueRef = ScaledValueRef[SymbolShape]
+  type Text = String | js.Array[String]
   type TextBaselineValueRef = ScaledValueRef[TextBaseline]
+  type TextValueRef = ScaledValueRef[Text]
 }

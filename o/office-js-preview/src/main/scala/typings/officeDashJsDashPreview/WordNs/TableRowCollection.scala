@@ -25,7 +25,7 @@ class TableRowCollection () extends ClientObject {
   val items: js.Array[TableRow] = js.native
   /**
     *
-    * Gets the first row in this collection. Throws if this collection is empty.
+    * Gets the first row in this collection. Throws an error if this collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

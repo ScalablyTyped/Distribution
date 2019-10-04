@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SoundManager
+  * @extends pc.EventHandler
   * @classdesc The SoundManager is used to load and play audio. As well as apply system-wide settings
   * like global volume, suspend and resume.
   * @description Creates a new sound manager.
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.SoundManager")
 @js.native
-class SoundManager () extends js.Object {
+class SoundManager () extends EventHandler {
   def this(options: Anon_ForceWebAudioApi) = this()
   /**
     * Global volume for the manager. All {@link pc.SoundInstance}s will scale their volume with this volume. Valid between [0, 1].

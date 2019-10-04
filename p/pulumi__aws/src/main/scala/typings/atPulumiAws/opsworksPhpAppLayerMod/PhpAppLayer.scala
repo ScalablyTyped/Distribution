@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksPhpAppLayerMod
 
-import typings.atPulumiAws.Anon_IopsMountPoint
+import typings.atPulumiAws.typesOutputMod.opsworksNs.PhpAppLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -58,7 +58,7 @@ class PhpAppLayer protected () extends CustomResource {
   /**
     * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
-  val ebsVolumes: Output[js.UndefOr[js.Array[Anon_IopsMountPoint]]] = js.native
+  val ebsVolumes: Output[js.UndefOr[js.Array[PhpAppLayerEbsVolume]]] = js.native
   /**
     * Name of an Elastic Load Balancer to attach to this layer
     */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "textConditionalFormat.toJSON()". */
+/** An interface describing the data returned by calling `textConditionalFormat.toJSON()`. */
 trait TextConditionalFormatData extends js.Object {
   /**
     *

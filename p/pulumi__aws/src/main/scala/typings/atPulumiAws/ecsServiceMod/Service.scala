@@ -1,12 +1,12 @@
 package typings.atPulumiAws.ecsServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AssignPublicIp
-import typings.atPulumiAws.Anon_ContainerName
-import typings.atPulumiAws.Anon_ContainerNameContainerPort
-import typings.atPulumiAws.Anon_ExpressionType
-import typings.atPulumiAws.Anon_FieldType
-import typings.atPulumiAws.Anon_Type
+import typings.atPulumiAws.typesOutputMod.ecsNs.ServiceDeploymentController
+import typings.atPulumiAws.typesOutputMod.ecsNs.ServiceLoadBalancer
+import typings.atPulumiAws.typesOutputMod.ecsNs.ServiceNetworkConfiguration
+import typings.atPulumiAws.typesOutputMod.ecsNs.ServiceOrderedPlacementStrategy
+import typings.atPulumiAws.typesOutputMod.ecsNs.ServicePlacementConstraint
+import typings.atPulumiAws.typesOutputMod.ecsNs.ServiceServiceRegistries
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,7 +35,7 @@ class Service protected () extends CustomResource {
   /**
     * Configuration block containing deployment controller configuration. Defined below.
     */
-  val deploymentController: Output[js.UndefOr[Anon_Type]] = js.native
+  val deploymentController: Output[js.UndefOr[ServiceDeploymentController]] = js.native
   /**
     * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
     */
@@ -67,7 +67,7 @@ class Service protected () extends CustomResource {
   /**
     * A load balancer block. Load balancers documented below.
     */
-  val loadBalancers: Output[js.UndefOr[js.Array[Anon_ContainerName]]] = js.native
+  val loadBalancers: Output[js.UndefOr[js.Array[ServiceLoadBalancer]]] = js.native
   /**
     * The name of the service (up to 255 letters, numbers, hyphens, and underscores)
     */
@@ -75,16 +75,16 @@ class Service protected () extends CustomResource {
   /**
     * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
     */
-  val networkConfiguration: Output[js.UndefOr[Anon_AssignPublicIp]] = js.native
+  val networkConfiguration: Output[js.UndefOr[ServiceNetworkConfiguration]] = js.native
   /**
     * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
     */
-  val orderedPlacementStrategies: Output[js.UndefOr[js.Array[Anon_FieldType]]] = js.native
+  val orderedPlacementStrategies: Output[js.UndefOr[js.Array[ServiceOrderedPlacementStrategy]]] = js.native
   /**
     * rules that are taken into consideration during task placement. Maximum number of
     * `placementConstraints` is `10`. Defined below.
     */
-  val placementConstraints: Output[js.UndefOr[js.Array[Anon_ExpressionType]]] = js.native
+  val placementConstraints: Output[js.UndefOr[js.Array[ServicePlacementConstraint]]] = js.native
   /**
     * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
     */
@@ -100,7 +100,7 @@ class Service protected () extends CustomResource {
   /**
     * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
     */
-  val serviceRegistries: Output[js.UndefOr[Anon_ContainerNameContainerPort]] = js.native
+  val serviceRegistries: Output[js.UndefOr[ServiceServiceRegistries]] = js.native
   /**
     * Key-value mapping of resource tags
     */

@@ -11,6 +11,7 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteFilter
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteForecast
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteJob
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlDeleteModelSnapshot
+import typings.atElasticElasticsearch.apiRequestParamsMod.MlEstimateMemoryUsage
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlEvaluateDataFrame
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlFindFileStructure
 import typings.atElasticElasticsearch.apiRequestParamsMod.MlFlushJob
@@ -108,6 +109,10 @@ trait Anon_CloseJob extends js.Object {
   var delete_job_Original: ApiMethod[MlDeleteJob, _] = js.native
   @JSName("delete_model_snapshot")
   var delete_model_snapshot_Original: ApiMethod[MlDeleteModelSnapshot, _] = js.native
+  @JSName("estimateMemoryUsage")
+  var estimateMemoryUsage_Original: ApiMethod[MlEstimateMemoryUsage[_], _] = js.native
+  @JSName("estimate_memory_usage")
+  var estimate_memory_usage_Original: ApiMethod[MlEstimateMemoryUsage[_], _] = js.native
   @JSName("evaluateDataFrame")
   var evaluateDataFrame_Original: ApiMethod[MlEvaluateDataFrame[_], _] = js.native
   @JSName("evaluate_data_frame")
@@ -446,6 +451,22 @@ trait Anon_CloseJob extends js.Object {
   def delete_model_snapshot(params: MlDeleteModelSnapshot, callback: callbackFn[_]): TransportRequestCallback = js.native
   def delete_model_snapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def delete_model_snapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def estimateMemoryUsage(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def estimateMemoryUsage(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def estimate_memory_usage(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def estimate_memory_usage(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def estimate_memory_usage(params: MlEstimateMemoryUsage[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def estimate_memory_usage(params: MlEstimateMemoryUsage[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def estimate_memory_usage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def estimate_memory_usage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def evaluateDataFrame(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

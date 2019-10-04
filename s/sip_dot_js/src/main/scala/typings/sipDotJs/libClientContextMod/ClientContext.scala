@@ -1,6 +1,6 @@
 package typings.sipDotJs.libClientContextMod
 
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libClientContextMod.ClientContextNs.Options
 import typings.sipDotJs.libCoreMod.IncomingResponseMessage
 import typings.sipDotJs.libCoreMod.Logger

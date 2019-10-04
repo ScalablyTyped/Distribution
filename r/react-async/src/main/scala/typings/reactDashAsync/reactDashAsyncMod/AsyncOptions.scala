@@ -14,7 +14,7 @@ trait AsyncOptions[T]
     js.Function3[
       /* action */ AsyncAction[T], 
       /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], Unit], 
-      /* props */ js.Object, 
+      /* props */ AsyncProps[T], 
       Unit
     ]
   ] = js.undefined
@@ -32,7 +32,7 @@ trait AsyncOptions[T]
     ]
   ] = js.undefined
   var watch: js.UndefOr[js.Any] = js.undefined
-  var watchFn: js.UndefOr[js.Function2[/* props */ js.Object, /* prevProps */ js.Object, _]] = js.undefined
+  var watchFn: js.UndefOr[js.Function2[/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T], _]] = js.undefined
 }
 
 object AsyncOptions {
@@ -41,7 +41,7 @@ object AsyncOptions {
     StringDictionary: /* prop */ StringDictionary[js.Any] = null,
     debugLabel: String = null,
     deferFn: DeferFn[T] = null,
-    dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], Unit], /* props */ js.Object) => Unit = null,
+    dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], Unit], /* props */ AsyncProps[T]) => Unit = null,
     initialValue: T = null,
     onReject: /* error */ Error => Unit = null,
     onResolve: /* data */ T => Unit = null,
@@ -49,7 +49,7 @@ object AsyncOptions {
     promiseFn: PromiseFn[T] = null,
     reducer: (/* state */ AsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ AsyncState[T], /* action */ AsyncAction[T], AsyncState[T]]) => AsyncState[T] = null,
     watch: js.Any = null,
-    watchFn: (/* props */ js.Object, /* prevProps */ js.Object) => _ = null
+    watchFn: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => _ = null
   ): AsyncOptions[T] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

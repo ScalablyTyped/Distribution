@@ -7,6 +7,8 @@ import typings.three.srcConstantsMod.BlendingSrcFactor
 import typings.three.srcConstantsMod.Colors
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathVector3Mod.Vector3
@@ -20,7 +22,7 @@ import scala.scalajs.js.annotation._
 
 trait MeshDistanceMaterialParameters extends MaterialParameters {
   var displacementBias: js.UndefOr[Double] = js.undefined
-  var displacementMap: js.UndefOr[Texture] = js.undefined
+  var displacementMap: js.UndefOr[Texture | Null] = js.undefined
   var displacementScale: js.UndefOr[Double] = js.undefined
   var farDistance: js.UndefOr[Double] = js.undefined
   var nearDistance: js.UndefOr[Double] = js.undefined
@@ -52,7 +54,6 @@ object MeshDistanceMaterialParameters {
     farDistance: Int | Double = null,
     flatShading: js.UndefOr[Boolean] = js.undefined,
     fog: js.UndefOr[Boolean] = js.undefined,
-    lights: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     nearDistance: Int | Double = null,
     opacity: Int | Double = null,
@@ -65,6 +66,14 @@ object MeshDistanceMaterialParameters {
     referencePosition: Vector3 = null,
     shadowSide: Side = null,
     side: Side = null,
+    stencilFail: StencilOp = null,
+    stencilFunc: StencilFunc = null,
+    stencilMask: Int | Double = null,
+    stencilRef: Int | Double = null,
+    stencilWrite: js.UndefOr[Boolean] = js.undefined,
+    stencilZFail: StencilOp = null,
+    stencilZPass: StencilOp = null,
+    toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     vertexColors: Colors = null,
     vertexTangents: js.UndefOr[Boolean] = js.undefined,
@@ -93,7 +102,6 @@ object MeshDistanceMaterialParameters {
     if (farDistance != null) __obj.updateDynamic("farDistance")(farDistance.asInstanceOf[js.Any])
     if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading)
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
-    if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
     if (name != null) __obj.updateDynamic("name")(name)
     if (nearDistance != null) __obj.updateDynamic("nearDistance")(nearDistance.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
@@ -106,6 +114,14 @@ object MeshDistanceMaterialParameters {
     if (referencePosition != null) __obj.updateDynamic("referencePosition")(referencePosition)
     if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
+    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail)
+    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc)
+    if (stencilMask != null) __obj.updateDynamic("stencilMask")(stencilMask.asInstanceOf[js.Any])
+    if (stencilRef != null) __obj.updateDynamic("stencilRef")(stencilRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite)
+    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail)
+    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass)
+    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents)

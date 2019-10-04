@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorListenerMod
 
-import typings.atPulumiAws.Anon_FromPortToPort
+import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.ListenerPortRange
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class Listener protected () extends CustomResource {
   /**
     * The list of port ranges for the connections from clients to the accelerator. Fields documented below.
     */
-  val portRanges: Output[js.Array[Anon_FromPortToPort]] = js.native
+  val portRanges: Output[js.Array[ListenerPortRange]] = js.native
   /**
     * The protocol for the connections from clients to the accelerator. Valid values are `TCP`, `UDP`.
     */

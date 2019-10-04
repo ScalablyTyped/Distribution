@@ -19,6 +19,7 @@ package object yargsMod {
     /* done */ js.Function1[/* completion */ js.Array[String], Unit], 
     Unit
   ]
+  type BuilderCallback[T, R] = js.Function1[/* args */ Argv[T], Argv[R] | Unit]
   type Choices = js.Array[js.UndefOr[String | Double | `true`]]
   type CommandBuilder[T, U] = StringDictionary[Options] | (js.Function1[/* args */ Argv[T], Argv[U]])
   /** Remove undefined as a possible value for keys K in T */

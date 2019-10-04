@@ -11,8 +11,8 @@ class NotifyUserAgentServer protected ()
   extends typings.sipDotJs.libCoreUserDashAgentsMod.NotifyUserAgentServer {
   /**
     * NOTIFY UAS constructor.
-    * @param dialogOrCore Dialog for in dialog NOTIFY, UserAgentCore for out of dialog NOTIFY (deprecated).
-    * @param message Incoming NOTIFY request message.
+    * @param dialogOrCore - Dialog for in dialog NOTIFY, UserAgentCore for out of dialog NOTIFY (deprecated).
+    * @param message - Incoming NOTIFY request message.
     */
   def this(
     dialogOrCore: typings.sipDotJs.libCoreDialogsMod.Dialog,

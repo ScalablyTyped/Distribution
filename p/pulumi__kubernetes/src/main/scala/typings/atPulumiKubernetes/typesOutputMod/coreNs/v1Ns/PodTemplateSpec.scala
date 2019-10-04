@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 trait PodTemplateSpec extends js.Object {
   /**
     * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: ObjectMeta
   /**
     * Specification of the desired behavior of the pod. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val spec: PodSpec
 }

@@ -24,8 +24,15 @@ trait MonacoEditorProps extends MonacoEditorBaseProps {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any
   ] = js.undefined
   /**
+    * Refer to Monaco interface {monaco.editor.IEditorOverrideServices}.
+    */
+  var overrideServices: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorOverrideServices */ js.Any
+  ] = js.undefined
+  /**
     * Value of the auto created model in the editor.
-    * If you specify value property, the component behaves in controlled mode. Otherwise, it behaves in uncontrolled mode.
+    * If you specify `null` or `undefined` for this property, the component behaves in uncontrolled mode.
+    * Otherwise, it behaves in controlled mode.
     */
   var value: js.UndefOr[String | Null] = js.undefined
 }
@@ -41,7 +48,7 @@ object MonacoEditorProps {
     language: String = null,
     onChange: ChangeHandler = null,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any = null,
-    requireConfig: js.Any = null,
+    overrideServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorOverrideServices */ js.Any = null,
     theme: String = null,
     value: String = null,
     width: String | Double = null
@@ -55,7 +62,7 @@ object MonacoEditorProps {
     if (language != null) __obj.updateDynamic("language")(language)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (options != null) __obj.updateDynamic("options")(options)
-    if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig)
+    if (overrideServices != null) __obj.updateDynamic("overrideServices")(overrideServices)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (value != null) __obj.updateDynamic("value")(value)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

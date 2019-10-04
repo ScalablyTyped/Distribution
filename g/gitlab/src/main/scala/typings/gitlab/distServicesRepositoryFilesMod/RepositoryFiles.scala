@@ -39,6 +39,8 @@ trait RepositoryFiles extends BaseService {
   ): js.Promise[js.Object] = js.native
   def show(projectId: ProjectId, filePath: String, ref: String): js.Promise[GetResponse] = js.native
   def show(projectId: ProjectId, filePath: String, ref: String, options: Sudo): js.Promise[GetResponse] = js.native
+  def showBlame(projectId: ProjectId, filePath: String): js.Promise[GetResponse] = js.native
+  def showBlame(projectId: ProjectId, filePath: String, options: Sudo): js.Promise[GetResponse] = js.native
   def showRaw(projectId: ProjectId, filePath: String, ref: String): js.Promise[GetResponse] = js.native
   def showRaw(projectId: ProjectId, filePath: String, ref: String, options: Sudo): js.Promise[GetResponse] = js.native
 }

@@ -84,7 +84,7 @@ class List () extends ClientObject {
   def getLevelParagraphs(level: Double): ParagraphCollection = js.native
   /**
     *
-    * Gets the bullet, number or picture at the specified level as a string.
+    * Gets the bullet, number, or picture at the specified level as a string.
     *
     * [Api set: WordApi 1.3]
     *
@@ -93,7 +93,7 @@ class List () extends ClientObject {
   def getLevelString(level: Double): ClientResult[String] = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.3]
     *
@@ -105,7 +105,7 @@ class List () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.3]
     *
@@ -142,7 +142,7 @@ class List () extends ClientObject {
   def load(option: ListLoadOptions): List = js.native
   /**
     *
-    * Sets the alignment of the bullet, number or picture at the specified level in the list.
+    * Sets the alignment of the bullet, number, or picture at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
     *
@@ -158,7 +158,7 @@ class List () extends ClientObject {
   def setLevelAlignment_Left(level: Double, alignment: Left): Unit = js.native
   /**
     *
-    * Sets the alignment of the bullet, number or picture at the specified level in the list.
+    * Sets the alignment of the bullet, number, or picture at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
     *
@@ -246,7 +246,7 @@ class List () extends ClientObject {
     *
     * @param level Required. The level in the list.
     * @param textIndent Required. The text indent in points. It is the same as paragraph left indent.
-    * @param bulletNumberPictureIndent Required. The relative indent, in points, of the bullet, number or picture. It is the same as paragraph first line indent.
+    * @param bulletNumberPictureIndent Required. The relative indent, in points, of the bullet, number, or picture. It is the same as paragraph first line indent.
     */
   def setLevelIndents(level: Double, textIndent: Double, bulletNumberPictureIndent: Double): Unit = js.native
   /**

@@ -2,10 +2,10 @@ package typings.intlDashMessageformat.intlDashMessageformatMod
 
 import typings.intlDashMessageformat.Anon_Date
 import typings.intlDashMessageformat.Fn_Input
-import typings.intlDashMessageformat.libCoreMod.Options
-import typings.intlDashMessageformat.libFormattersMod.Formats
-import typings.intlDashMessageformatDashParser.libParserMod.ParseFunction
-import typings.intlDashMessageformatDashParser.libTypesMod.MessageFormatElement
+import typings.intlDashMessageformat.distCoreMod.Options
+import typings.intlDashMessageformat.distFormattersMod.Formats
+import typings.intlDashMessageformatDashParser.distParserMod.ParseFunction
+import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("intl-messageformat", JSImport.Default)
 @js.native
 class default protected ()
-  extends typings.intlDashMessageformat.libCoreMod.default {
+  extends typings.intlDashMessageformat.distCoreMod.default {
   def this(message: String) = this()
   def this(message: js.Array[MessageFormatElement]) = this()
   def this(message: String, locales: String) = this()

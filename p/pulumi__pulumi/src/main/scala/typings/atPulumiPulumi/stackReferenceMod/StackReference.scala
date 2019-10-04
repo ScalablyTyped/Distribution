@@ -33,6 +33,10 @@ class StackReference protected () extends CustomResource {
     */
   val outputs: Output[StringDictionary[_]] = js.native
   /**
+    * The names of any stack outputs which contain secrets.
+    */
+  val secretOutputNames: Output[js.Array[String]] = js.native
+  /**
     * Fetches the value of the named stack output, or undefined if the stack output was not found.
     *
     * @param name The name of the stack output to fetch.

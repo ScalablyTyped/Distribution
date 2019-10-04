@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AvailabilityZoneSecurityGroupIdLists
+import typings.atPulumiAws.typesOutputMod.glueNs.ConnectionPhysicalConnectionRequirements
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -50,7 +50,7 @@ class Connection protected () extends CustomResource {
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: Output[js.UndefOr[Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
+  val physicalConnectionRequirements: Output[js.UndefOr[ConnectionPhysicalConnectionRequirements]] = js.native
 }
 
 /* static members */

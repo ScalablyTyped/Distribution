@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hystrixjs"
-version := "0.2-dt-20180214Z-58a6de"
+version := "0.2-dt-20191002Z-0f6059"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

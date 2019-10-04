@@ -112,12 +112,17 @@ trait Process extends EventEmitter {
     * private memory is more representative of the actual pre-compression memory usage
     * of the process on macOS.
     */
-  def getProcessMemoryInfo(): ProcessMemoryInfo = js.native
+  def getProcessMemoryInfo(): js.Promise[ProcessMemoryInfo] = js.native
   /**
     * Returns an object giving memory usage statistics about the entire system. Note
     * that all statistics are reported in Kilobytes.
     */
   def getSystemMemoryInfo(): SystemMemoryInfo = js.native
+  /**
+    * Examples: Note: It returns the actual operating system version instead of kernel
+    * version on macOS unlike os.release().
+    */
+  def getSystemVersion(): String = js.native
   /**
     * Causes the main thread of the current process hang.
     */

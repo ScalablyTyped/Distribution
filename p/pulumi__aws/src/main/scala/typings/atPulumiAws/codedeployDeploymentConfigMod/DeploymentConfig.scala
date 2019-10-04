@@ -1,7 +1,7 @@
 package typings.atPulumiAws.codedeployDeploymentConfigMod
 
-import typings.atPulumiAws.Anon_TimeBasedCanary
-import typings.atPulumiAws.Anon_TypeValue
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentConfigMinimumHealthyHosts
+import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentConfigTrafficRoutingConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -38,11 +38,11 @@ class DeploymentConfig protected () extends CustomResource {
   /**
     * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
     */
-  val minimumHealthyHosts: Output[js.UndefOr[Anon_TypeValue]] = js.native
+  val minimumHealthyHosts: Output[js.UndefOr[DeploymentConfigMinimumHealthyHosts]] = js.native
   /**
     * A trafficRoutingConfig block. Traffic Routing Config is documented below.
     */
-  val trafficRoutingConfig: Output[js.UndefOr[Anon_TimeBasedCanary]] = js.native
+  val trafficRoutingConfig: Output[js.UndefOr[DeploymentConfigTrafficRoutingConfig]] = js.native
 }
 
 /* static members */

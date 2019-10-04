@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait CephFSVolumeSource extends js.Object {
   /**
     * Required: Monitors is a collection of Ceph monitors More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
   val monitors: js.Array[String]
   /**
@@ -20,23 +20,22 @@ trait CephFSVolumeSource extends js.Object {
   val path: String
   /**
     * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
-    * VolumeMounts. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+    * VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
   val readOnly: Boolean
   /**
     * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret
-    * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+    * More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
   val secretFile: String
   /**
     * Optional: SecretRef is reference to the authentication secret for User, default is empty.
-    * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+    * More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
   val secretRef: LocalObjectReference
   /**
     * Optional: User is the rados user name, default is admin More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
   val user: String
 }

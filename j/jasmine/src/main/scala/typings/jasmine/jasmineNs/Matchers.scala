@@ -13,19 +13,22 @@ import scala.scalajs.js.annotation._
 trait Matchers[T]
   extends Instantiable3[/* env */ Env, /* actual */ T, /* spec */ Env, js.Any]
      with Instantiable4[/* env */ Env, /* actual */ T, /* spec */ Env, /* isNot */ Boolean, js.Any] {
-  @JSName("Any")
-  var Any_Original: Any = js.native
   var actual: T = js.native
   var env: Env = js.native
   var isNot: js.UndefOr[Boolean] = js.native
+  /**
+    * Invert the matcher following this expect.
+    */
   var not: Matchers[T] = js.native
   var spec: Env = js.native
-  def Any(params: js.Any*): js.Any = js.native
   def message(): js.Any = js.native
   /**
+    * Expect the actual value to be `===` to the expected value.
     *
-    * @param expected the actual value to be === to the expected value.
+    * @param expected - The expected value to compare against.
     * @param expectationFailOutput
+    * @example
+    * expect(thing).toBe(realThing);
     */
   def toBe(expected: Expected[T]): Boolean = js.native
   def toBe(expected: Expected[T], expectationFailOutput: js.Any): Boolean = js.native
@@ -58,9 +61,11 @@ trait Matchers[T]
   def toContain(expected: js.Any): Boolean = js.native
   def toContain(expected: js.Any, expectationFailOutput: js.Any): Boolean = js.native
   /**
-    *
-    * @param expected the actual value to be equal to the expected, using deep equality comparison.
+    * Expect the actual value to be equal to the expected, using deep equality comparison.
+    * @param expected - Expected value.
     * @param expectationFailOutput
+    * @example
+    * expect(bigObject).toEqual({ "foo": ['bar', 'baz'] });
     */
   def toEqual(expected: Expected[T]): Boolean = js.native
   def toEqual(expected: Expected[T], expectationFailOutput: js.Any): Boolean = js.native
@@ -68,8 +73,24 @@ trait Matchers[T]
   def toHaveBeenCalledBefore(expected: Spy): Boolean = js.native
   def toHaveBeenCalledTimes(expected: Double): Boolean = js.native
   def toHaveBeenCalledWith(params: js.Any*): Boolean = js.native
-  def toHaveClass(expected: js.Any): Boolean = js.native
-  def toHaveClass(expected: js.Any, expectationFailOutput: js.Any): Boolean = js.native
+  /**
+    * Expect the actual value to be a DOM element that has the expected class.
+    * @since 3.0.0
+    * @param expected - The class name to test for.
+    * @example
+    * var el = document.createElement('div');
+    * el.className = 'foo bar baz';
+    * expect(el).toHaveClass('bar');
+    */
+  def toHaveClass(expected: String): Boolean = js.native
+  def toHaveClass(expected: String, expectationFailOutput: js.Any): Boolean = js.native
+  /**
+    * Expect the actual value to match a regular expression.
+    * @param expected - Value to look for in the string.
+    * @example
+    * expect("my string").toMatch(/string$/);
+    * expect("other string").toMatch("her");
+    */
   def toMatch(expected: String): Boolean = js.native
   def toMatch(expected: String, expectationFailOutput: js.Any): Boolean = js.native
   def toMatch(expected: RegExp): Boolean = js.native

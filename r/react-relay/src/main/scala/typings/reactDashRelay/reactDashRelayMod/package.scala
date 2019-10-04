@@ -11,10 +11,10 @@ package object reactDashRelayMod {
   import typings.reactDashRelay.Anon_CacheConfig
   import typings.reactDashRelay.Anon_ComponentRef
   import typings.reactDashRelay.reactDashRelayStrings.relay
-  import typings.relayDashRuntime.relayDashRuntimeMod.GraphQLTaggedNode
-  import typings.relayDashRuntime.relayDashRuntimeMod.Observer
-  import typings.relayDashRuntime.relayDashRuntimeMod.OperationType
-  import typings.relayDashRuntime.relayDashRuntimeMod.Variables
+  import typings.relayDashRuntime.libNetworkRelayObservableMod.Observer
+  import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+  import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType
+  import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Variables
   import typings.std.Error
   import typings.std.Exclude
   import typings.std.Pick

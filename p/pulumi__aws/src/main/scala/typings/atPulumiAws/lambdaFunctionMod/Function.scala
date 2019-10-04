@@ -1,12 +1,12 @@
 package typings.atPulumiAws.lambdaFunctionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_KeyVariables
-import typings.atPulumiAws.Anon_Mode
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetIds
-import typings.atPulumiAws.Anon_TargetArn
 import typings.atPulumiAws.arnMod.ARN
 import typings.atPulumiAws.iamMod.Role
+import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionDeadLetterConfig
+import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionEnvironment
+import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionTracingConfig
+import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
 import typings.atPulumiPulumi.outputMod.Input
@@ -40,7 +40,7 @@ class Function protected () extends CustomResource {
   /**
     * Nested block to configure the function's *dead letter queue*. See details below.
     */
-  val deadLetterConfig: Output[js.UndefOr[Anon_TargetArn]] = js.native
+  val deadLetterConfig: Output[js.UndefOr[FunctionDeadLetterConfig]] = js.native
   /**
     * Description of what your Lambda Function does.
     */
@@ -48,7 +48,7 @@ class Function protected () extends CustomResource {
   /**
     * The Lambda environment's configuration settings. Fields documented below.
     */
-  val environment: Output[js.UndefOr[Anon_KeyVariables]] = js.native
+  val environment: Output[js.UndefOr[FunctionEnvironment]] = js.native
   /**
     * The function [entrypoint][3] in your code.
     */
@@ -131,7 +131,7 @@ class Function protected () extends CustomResource {
     * The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
     */
   val timeout: Output[js.UndefOr[Double]] = js.native
-  val tracingConfig: Output[Anon_Mode] = js.native
+  val tracingConfig: Output[FunctionTracingConfig] = js.native
   /**
     * Latest published version of your Lambda Function.
     */
@@ -139,7 +139,7 @@ class Function protected () extends CustomResource {
   /**
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
-  val vpcConfig: Output[js.UndefOr[Anon_SecurityGroupIdsSubnetIds]] = js.native
+  val vpcConfig: Output[js.UndefOr[FunctionVpcConfig]] = js.native
 }
 
 /* static members */

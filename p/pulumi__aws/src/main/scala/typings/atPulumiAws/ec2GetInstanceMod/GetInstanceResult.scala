@@ -1,11 +1,11 @@
 package typings.atPulumiAws.ec2GetInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CpuCredits
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyId
-import typings.atPulumiAws.Anon_DeleteOnTerminationEncrypted
-import typings.atPulumiAws.Anon_DeviceNameNoDevice
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceFilter
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceRootBlockDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +30,12 @@ trait GetInstanceResult extends js.Object {
   /**
     * The credit specification of the Instance.
     */
-  val creditSpecifications: js.Array[Anon_CpuCredits]
+  val creditSpecifications: js.Array[GetInstanceCreditSpecification]
   val disableApiTermination: Boolean
   /**
     * The EBS block device mappings of the Instance.
     */
-  val ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyId]
+  val ebsBlockDevices: js.Array[GetInstanceEbsBlockDevice]
   /**
     * Whether the Instance is EBS optimized or not (Boolean).
     */
@@ -43,8 +43,8 @@ trait GetInstanceResult extends js.Object {
   /**
     * The ephemeral block device mappings of the Instance.
     */
-  val ephemeralBlockDevices: js.Array[Anon_DeviceNameNoDevice]
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val ephemeralBlockDevices: js.Array[GetInstanceEphemeralBlockDevice]
+  val filters: js.UndefOr[js.Array[GetInstanceFilter]] = js.undefined
   val getPasswordData: js.UndefOr[Boolean] = js.undefined
   val getUserData: js.UndefOr[Boolean] = js.undefined
   /**
@@ -114,7 +114,7 @@ trait GetInstanceResult extends js.Object {
   /**
     * The root block device mappings of the Instance
     */
-  val rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncrypted]
+  val rootBlockDevices: js.Array[GetInstanceRootBlockDevice]
   /**
     * The associated security groups.
     */
@@ -156,11 +156,11 @@ object GetInstanceResult {
     arn: String,
     associatePublicIpAddress: Boolean,
     availabilityZone: String,
-    creditSpecifications: js.Array[Anon_CpuCredits],
+    creditSpecifications: js.Array[GetInstanceCreditSpecification],
     disableApiTermination: Boolean,
-    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyId],
+    ebsBlockDevices: js.Array[GetInstanceEbsBlockDevice],
     ebsOptimized: Boolean,
-    ephemeralBlockDevices: js.Array[Anon_DeviceNameNoDevice],
+    ephemeralBlockDevices: js.Array[GetInstanceEphemeralBlockDevice],
     hostId: String,
     iamInstanceProfile: String,
     id: String,
@@ -176,7 +176,7 @@ object GetInstanceResult {
     privateIp: String,
     publicDns: String,
     publicIp: String,
-    rootBlockDevices: js.Array[Anon_DeleteOnTerminationEncrypted],
+    rootBlockDevices: js.Array[GetInstanceRootBlockDevice],
     securityGroups: js.Array[String],
     sourceDestCheck: Boolean,
     subnetId: String,
@@ -185,7 +185,7 @@ object GetInstanceResult {
     userData: String,
     userDataBase64: String,
     vpcSecurityGroupIds: js.Array[String],
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetInstanceFilter] = null,
     getPasswordData: js.UndefOr[Boolean] = js.undefined,
     getUserData: js.UndefOr[Boolean] = js.undefined,
     instanceId: String = null

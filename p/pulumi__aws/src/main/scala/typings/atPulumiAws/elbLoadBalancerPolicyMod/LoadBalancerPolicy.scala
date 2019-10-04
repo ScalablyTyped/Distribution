@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elbLoadBalancerPolicyMod
 
-import typings.atPulumiAws.Anon_NameValueString
+import typings.atPulumiAws.typesOutputMod.elbNs.LoadBalancerPolicyPolicyAttribute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class LoadBalancerPolicy protected () extends CustomResource {
   /**
     * Policy attribute to apply to the policy.
     */
-  val policyAttributes: Output[js.UndefOr[js.Array[Anon_NameValueString]]] = js.native
+  val policyAttributes: Output[js.UndefOr[js.Array[LoadBalancerPolicyPolicyAttribute]]] = js.native
   /**
     * The name of the load balancer policy.
     */

@@ -7,6 +7,7 @@ import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisN
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.SplitArea
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.SplitLine
 import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Tick
+import typings.echarts.echartsNs.EChartOptionNs.TextStyleWithRich
 import typings.echarts.echartsStrings.center
 import typings.echarts.echartsStrings.end
 import typings.echarts.echartsStrings.middle
@@ -202,9 +203,7 @@ trait CartesianAxis extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.nameTextStyle
     */
-  var nameTextStyle: js.UndefOr[
-    typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.TextStyle
-  ] = js.undefined
+  var nameTextStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   /**
     * Offset of this axis relative to default position.
     * Useful when multiple axis of this type has same position value.
@@ -329,7 +328,7 @@ object CartesianAxis {
     nameGap: Int | Double = null,
     nameLocation: start | middle | center | end = null,
     nameRotate: Int | Double = null,
-    nameTextStyle: typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.TextStyle = null,
+    nameTextStyle: TextStyleWithRich = null,
     offset: Int | Double = null,
     scale: js.UndefOr[Boolean] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,

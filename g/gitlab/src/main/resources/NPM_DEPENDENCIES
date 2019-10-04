@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gitlab" : "9.1.0"
+      "gitlab" : "11.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "gitlab" : "9.1.0"
+      "gitlab" : "11.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -32,8 +32,8 @@ abstract class Reflection protected () extends js.Object {
   def findReflectionByName(arg: String): js.UndefOr[Reflection] = js.native
   def findReflectionByName(arg: js.Array[String]): js.UndefOr[Reflection] = js.native
   def getAlias(): String = js.native
-  def getChildByName(name: String): Reflection = js.native
-  def getChildByName(names: js.Array[String]): Reflection = js.native
+  def getChildByName(arg: String): js.UndefOr[Reflection] = js.native
+  def getChildByName(arg: js.Array[String]): js.UndefOr[Reflection] = js.native
   def getFullName(): String = js.native
   def getFullName(separator: String): String = js.native
   def hasComment(): Boolean = js.native

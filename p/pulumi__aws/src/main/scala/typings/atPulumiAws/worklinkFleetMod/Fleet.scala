@@ -1,7 +1,7 @@
 package typings.atPulumiAws.worklinkFleetMod
 
-import typings.atPulumiAws.Anon_SamlMetadata
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetIds
+import typings.atPulumiAws.typesOutputMod.worklinkNs.FleetIdentityProvider
+import typings.atPulumiAws.typesOutputMod.worklinkNs.FleetNetwork
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -51,7 +51,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Provide this to allow manage the identity provider configuration for the fleet. Fields documented below.
     */
-  val identityProvider: Output[js.UndefOr[Anon_SamlMetadata]] = js.native
+  val identityProvider: Output[js.UndefOr[FleetIdentityProvider]] = js.native
   /**
     * The time that the fleet was last updated.
     */
@@ -63,7 +63,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
     */
-  val network: Output[js.UndefOr[Anon_SecurityGroupIdsSubnetIds]] = js.native
+  val network: Output[js.UndefOr[FleetNetwork]] = js.native
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
     */

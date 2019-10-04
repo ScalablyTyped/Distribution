@@ -28,6 +28,10 @@ trait ProviderArgs extends js.Object {
     * Note: if .metadata.namespace is set on a resource, that value takes precedence over the provider default.
     */
   val namespace: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * If present and set to true, suppress apiVersion deprecation warnings from the CLI.
+    */
+  val suppressDeprecationWarnings: js.UndefOr[Input[Boolean]] = js.undefined
 }
 
 object ProviderArgs {
@@ -37,7 +41,8 @@ object ProviderArgs {
     context: Input[String] = null,
     enableDryRun: Input[Boolean] = null,
     kubeconfig: Input[String] = null,
-    namespace: Input[String] = null
+    namespace: Input[String] = null,
+    suppressDeprecationWarnings: Input[Boolean] = null
   ): ProviderArgs = {
     val __obj = js.Dynamic.literal()
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
@@ -45,6 +50,7 @@ object ProviderArgs {
     if (enableDryRun != null) __obj.updateDynamic("enableDryRun")(enableDryRun.asInstanceOf[js.Any])
     if (kubeconfig != null) __obj.updateDynamic("kubeconfig")(kubeconfig.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (suppressDeprecationWarnings != null) __obj.updateDynamic("suppressDeprecationWarnings")(suppressDeprecationWarnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderArgs]
   }
 }

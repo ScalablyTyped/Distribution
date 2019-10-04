@@ -17,7 +17,6 @@ class Converter () extends ChildableComponent[Application, ConverterComponent] {
   var addNodeConverter: js.Any = js.native
   var addTypeConverter: js.Any = js.native
   var compile: js.Any = js.native
-  var compilerHost: js.Any = js.native
   var excludeExternals: Boolean = js.native
   var excludeNotExported: Boolean = js.native
   var excludePrivate: Boolean = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * An object representing a selecrtion within the terminal.
+  * An object representing a selection within the terminal.
   */
 trait ISelectionPosition extends js.Object {
   /**

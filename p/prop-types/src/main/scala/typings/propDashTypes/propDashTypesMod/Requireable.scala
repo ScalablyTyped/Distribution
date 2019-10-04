@@ -1,5 +1,6 @@
 package typings.propDashTypes.propDashTypesMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import typings.std.NonNullable
 import scala.scalajs.js
@@ -11,6 +12,12 @@ trait Requireable[T]
   extends Validator[js.UndefOr[T | Null]] {
   @JSName("isRequired")
   var isRequired_Original: Validator[NonNullable[T]] = js.native
-  def isRequired(props: js.Object, propName: String, componentName: String, location: String, propFullName: String): Error | Null = js.native
+  def isRequired(
+    props: StringDictionary[js.Any],
+    propName: String,
+    componentName: String,
+    location: String,
+    propFullName: String
+  ): Error | Null = js.native
 }
 

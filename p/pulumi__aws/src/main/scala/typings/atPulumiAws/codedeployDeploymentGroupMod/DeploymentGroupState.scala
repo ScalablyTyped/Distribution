@@ -1,14 +1,15 @@
 package typings.atPulumiAws.codedeployDeploymentGroupMod
 
-import typings.atPulumiAws.Anon_AlarmsEnabled
-import typings.atPulumiAws.Anon_ClusterNameServiceName
-import typings.atPulumiAws.Anon_DeploymentOptionDeploymentType
-import typings.atPulumiAws.Anon_DeploymentReadyOptionGreenFleetProvisioningOption
-import typings.atPulumiAws.Anon_Ec2TagFiltersAnonKeyTypeValueInput
-import typings.atPulumiAws.Anon_ElbInfosTargetGroupInfos
-import typings.atPulumiAws.Anon_EnabledEventsArray
-import typings.atPulumiAws.Anon_KeyTypeValueInput
-import typings.atPulumiAws.Anon_TriggerEventsTriggerName
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupAlarmConfiguration
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupAutoRollbackConfiguration
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupBlueGreenDeploymentConfig
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupDeploymentStyle
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupEc2TagFilter
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupEc2TagSet
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupEcsService
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupLoadBalancerInfo
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupOnPremisesInstanceTagFilter
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentGroupTriggerConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block of alarms associated with the deployment group (documented below).
     */
-  val alarmConfiguration: js.UndefOr[Input[Anon_AlarmsEnabled]] = js.undefined
+  val alarmConfiguration: js.UndefOr[Input[DeploymentGroupAlarmConfiguration]] = js.undefined
   /**
     * The name of the application.
     */
@@ -26,7 +27,7 @@ trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
     */
-  val autoRollbackConfiguration: js.UndefOr[Input[Anon_EnabledEventsArray]] = js.undefined
+  val autoRollbackConfiguration: js.UndefOr[Input[DeploymentGroupAutoRollbackConfiguration]] = js.undefined
   /**
     * Autoscaling groups associated with the deployment group.
     */
@@ -34,7 +35,7 @@ trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block of the blue/green deployment options for a deployment group (documented below).
     */
-  val blueGreenDeploymentConfig: js.UndefOr[Input[Anon_DeploymentReadyOptionGreenFleetProvisioningOption]] = js.undefined
+  val blueGreenDeploymentConfig: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfig]] = js.undefined
   /**
     * The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
     */
@@ -46,27 +47,27 @@ trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
     */
-  val deploymentStyle: js.UndefOr[Input[Anon_DeploymentOptionDeploymentType]] = js.undefined
+  val deploymentStyle: js.UndefOr[Input[DeploymentGroupDeploymentStyle]] = js.undefined
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
-  val ec2TagFilters: js.UndefOr[Input[js.Array[Input[Anon_KeyTypeValueInput]]]] = js.undefined
+  val ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagFilter]]]] = js.undefined
   /**
     * Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.
     */
-  val ec2TagSets: js.UndefOr[Input[js.Array[Input[Anon_Ec2TagFiltersAnonKeyTypeValueInput]]]] = js.undefined
+  val ec2TagSets: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSet]]]] = js.undefined
   /**
     * Configuration block(s) of the ECS services for a deployment group (documented below).
     */
-  val ecsService: js.UndefOr[Input[Anon_ClusterNameServiceName]] = js.undefined
+  val ecsService: js.UndefOr[Input[DeploymentGroupEcsService]] = js.undefined
   /**
     * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
     */
-  val loadBalancerInfo: js.UndefOr[Input[Anon_ElbInfosTargetGroupInfos]] = js.undefined
+  val loadBalancerInfo: js.UndefOr[Input[DeploymentGroupLoadBalancerInfo]] = js.undefined
   /**
     * On premise tag filters associated with the group. See the AWS docs for details.
     */
-  val onPremisesInstanceTagFilters: js.UndefOr[Input[js.Array[Input[Anon_KeyTypeValueInput]]]] = js.undefined
+  val onPremisesInstanceTagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupOnPremisesInstanceTagFilter]]]] = js.undefined
   /**
     * The service role ARN that allows deployments.
     */
@@ -74,27 +75,27 @@ trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block(s) of the triggers for the deployment group (documented below).
     */
-  val triggerConfigurations: js.UndefOr[Input[js.Array[Input[Anon_TriggerEventsTriggerName]]]] = js.undefined
+  val triggerConfigurations: js.UndefOr[Input[js.Array[Input[DeploymentGroupTriggerConfiguration]]]] = js.undefined
 }
 
 object DeploymentGroupState {
   @scala.inline
   def apply(
-    alarmConfiguration: Input[Anon_AlarmsEnabled] = null,
+    alarmConfiguration: Input[DeploymentGroupAlarmConfiguration] = null,
     appName: Input[String] = null,
-    autoRollbackConfiguration: Input[Anon_EnabledEventsArray] = null,
+    autoRollbackConfiguration: Input[DeploymentGroupAutoRollbackConfiguration] = null,
     autoscalingGroups: Input[js.Array[Input[String]]] = null,
-    blueGreenDeploymentConfig: Input[Anon_DeploymentReadyOptionGreenFleetProvisioningOption] = null,
+    blueGreenDeploymentConfig: Input[DeploymentGroupBlueGreenDeploymentConfig] = null,
     deploymentConfigName: Input[String] = null,
     deploymentGroupName: Input[String] = null,
-    deploymentStyle: Input[Anon_DeploymentOptionDeploymentType] = null,
-    ec2TagFilters: Input[js.Array[Input[Anon_KeyTypeValueInput]]] = null,
-    ec2TagSets: Input[js.Array[Input[Anon_Ec2TagFiltersAnonKeyTypeValueInput]]] = null,
-    ecsService: Input[Anon_ClusterNameServiceName] = null,
-    loadBalancerInfo: Input[Anon_ElbInfosTargetGroupInfos] = null,
-    onPremisesInstanceTagFilters: Input[js.Array[Input[Anon_KeyTypeValueInput]]] = null,
+    deploymentStyle: Input[DeploymentGroupDeploymentStyle] = null,
+    ec2TagFilters: Input[js.Array[Input[DeploymentGroupEc2TagFilter]]] = null,
+    ec2TagSets: Input[js.Array[Input[DeploymentGroupEc2TagSet]]] = null,
+    ecsService: Input[DeploymentGroupEcsService] = null,
+    loadBalancerInfo: Input[DeploymentGroupLoadBalancerInfo] = null,
+    onPremisesInstanceTagFilters: Input[js.Array[Input[DeploymentGroupOnPremisesInstanceTagFilter]]] = null,
     serviceRoleArn: Input[String] = null,
-    triggerConfigurations: Input[js.Array[Input[Anon_TriggerEventsTriggerName]]] = null
+    triggerConfigurations: Input[js.Array[Input[DeploymentGroupTriggerConfiguration]]] = null
   ): DeploymentGroupState = {
     val __obj = js.Dynamic.literal()
     if (alarmConfiguration != null) __obj.updateDynamic("alarmConfiguration")(alarmConfiguration.asInstanceOf[js.Any])

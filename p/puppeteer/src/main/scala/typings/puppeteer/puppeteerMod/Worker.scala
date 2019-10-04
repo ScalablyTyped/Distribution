@@ -4,7 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Worker extends JSEvalable {
+trait Worker
+  extends JSEvalable[js.Any] {
   def executionContext(): js.Promise[ExecutionContext]
   def url(): String
 }
@@ -13,7 +14,7 @@ object Worker {
   @scala.inline
   def apply(
     evaluate: (js.Any, /* repeated */ SerializableOrJSHandle) => js.Promise[EvaluateFnReturnType[js.Any]],
-    evaluateHandle: (js.Function1[/* repeated */ js.Any, _], /* repeated */ SerializableOrJSHandle) => js.Promise[JSHandle],
+    evaluateHandle: (js.Function2[js.Any, /* repeated */ js.Any, _], /* repeated */ SerializableOrJSHandle) => js.Promise[JSHandle[_]],
     executionContext: () => js.Promise[ExecutionContext],
     url: () => String
   ): Worker = {

@@ -17,6 +17,12 @@ package object queriesMod {
     /* options */ js.UndefOr[MatcherOptions], 
     js.Array[HTMLElement]
   ]
+  type AllByRole = js.Function3[
+    /* container */ HTMLElement, 
+    /* role */ Matcher, 
+    /* options */ js.UndefOr[ByRoleOptions], 
+    js.Array[HTMLElement]
+  ]
   type AllByText = js.Function3[
     /* container */ HTMLElement, 
     /* id */ Matcher, 
@@ -27,6 +33,13 @@ package object queriesMod {
     /* container */ HTMLElement, 
     /* id */ Matcher, 
     /* options */ js.UndefOr[MatcherOptions], 
+    /* waitForElementOptions */ js.UndefOr[WaitForElementOptions], 
+    js.Promise[js.Array[HTMLElement]]
+  ]
+  type FindAllByRole = js.Function4[
+    /* container */ HTMLElement, 
+    /* role */ Matcher, 
+    /* options */ js.UndefOr[ByRoleOptions], 
     /* waitForElementOptions */ js.UndefOr[WaitForElementOptions], 
     js.Promise[js.Array[HTMLElement]]
   ]
@@ -44,6 +57,13 @@ package object queriesMod {
     /* waitForElementOptions */ js.UndefOr[WaitForElementOptions], 
     js.Promise[HTMLElement]
   ]
+  type FindByRole = js.Function4[
+    /* container */ HTMLElement, 
+    /* role */ Matcher, 
+    /* options */ js.UndefOr[ByRoleOptions], 
+    /* waitForElementOptions */ js.UndefOr[WaitForElementOptions], 
+    js.Promise[HTMLElement]
+  ]
   type FindByText = js.Function4[
     /* container */ HTMLElement, 
     /* id */ Matcher, 
@@ -57,6 +77,12 @@ package object queriesMod {
     /* options */ js.UndefOr[MatcherOptions], 
     HTMLElement
   ]
+  type GetByRole = js.Function3[
+    /* container */ HTMLElement, 
+    /* role */ Matcher, 
+    /* options */ js.UndefOr[ByRoleOptions], 
+    HTMLElement
+  ]
   type GetByText = js.Function3[
     /* container */ HTMLElement, 
     /* id */ Matcher, 
@@ -67,6 +93,12 @@ package object queriesMod {
     /* container */ HTMLElement, 
     /* id */ Matcher, 
     /* options */ js.UndefOr[MatcherOptions], 
+    HTMLElement | Null
+  ]
+  type QueryByRole = js.Function3[
+    /* container */ HTMLElement, 
+    /* role */ Matcher, 
+    /* options */ js.UndefOr[ByRoleOptions], 
     HTMLElement | Null
   ]
   type QueryByText = js.Function3[

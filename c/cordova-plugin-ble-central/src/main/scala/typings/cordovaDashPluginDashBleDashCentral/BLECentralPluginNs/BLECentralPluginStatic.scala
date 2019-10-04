@@ -6,23 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BLECentralPluginStatic extends js.Object {
+trait BLECentralPluginStatic extends BLECentralPluginCommon {
+  var withPromises: BLECentralPluginPromises = js.native
   /* Automatically connect to a device when it is in range of the phone
     [iOS] background notifications on ios must be enabled if you want to run in the background
     [Android] this relies on the autoConnect argument of BluetoothDevice.connectGatt(). Not all Android devices implement this feature correctly. */
   def autoConnect(
     device_id: String,
-    success: js.Function1[/* data */ PeripheralDataExtended, _],
-    failure: js.Function1[/* error */ String | BLEError, _]
+    connectCallback: js.Function1[/* data */ PeripheralDataExtended, _],
+    disconnectCallback: js.Function1[/* error */ String | BLEError, _]
   ): Unit = js.native
   /* Find the bonded devices.
     [iOS] bondedDevices is not supported on iOS. */
   def bondedDevices(success: js.Function1[/* data */ js.Array[PeripheralData], _], failure: js.Function0[_]): Unit = js.native
-  def connect(
-    device_id: String,
-    success: js.Function1[/* data */ PeripheralDataExtended, _],
-    failure: js.Function1[/* error */ String | BLEError, _]
-  ): Unit = js.native
   /* Find connected peripherals offering the listed service UUIDs.
     This function wraps CBCentralManager.retrieveConnectedPeripheralsWithServices.
     [Android] peripheralsWithIdentifiers is not supported on Android. */
@@ -94,49 +90,9 @@ trait BLECentralPluginStatic extends js.Object {
   def requestMtu(device_id: String, mtu: Double): Unit = js.native
   def requestMtu(device_id: String, mtu: Double, success: js.Function0[_]): Unit = js.native
   def requestMtu(device_id: String, mtu: Double, success: js.Function0[_], failure: js.Function0[_]): Unit = js.native
-  def scan(services: js.Array[String], seconds: Double, success: js.Function1[/* data */ PeripheralData, _]): Unit = js.native
-  def scan(
-    services: js.Array[String],
-    seconds: Double,
-    success: js.Function1[/* data */ PeripheralData, _],
-    failure: js.Function1[/* error */ String, _]
-  ): Unit = js.native
   /* Opens the Bluetooth settings for the operating systems.
     [iOS] showBluetoothSettings is not supported on iOS. */
   def showBluetoothSettings(success: js.Function0[_], failure: js.Function0[_]): Unit = js.native
-  /* Register to be notified when the value of a characteristic changes. */
-  def startNotification(
-    device_id: String,
-    service_uuid: String,
-    characteristic_uuid: String,
-    success: js.Function1[/* rawData */ ArrayBuffer, _]
-  ): Unit = js.native
-  def startNotification(
-    device_id: String,
-    service_uuid: String,
-    characteristic_uuid: String,
-    success: js.Function1[/* rawData */ ArrayBuffer, _],
-    failure: js.Function1[/* error */ String | BLEError, _]
-  ): Unit = js.native
-  def startScan(services: js.Array[String], success: js.Function1[/* data */ PeripheralData, _]): Unit = js.native
-  def startScan(
-    services: js.Array[String],
-    success: js.Function1[/* data */ PeripheralData, _],
-    failure: js.Function1[/* error */ String | BLEError, _]
-  ): Unit = js.native
-  def startScanWithOptions(
-    services: js.Array[String],
-    options: StartScanOptions,
-    success: js.Function1[/* data */ PeripheralData, _]
-  ): Unit = js.native
-  def startScanWithOptions(
-    services: js.Array[String],
-    options: StartScanOptions,
-    success: js.Function1[/* data */ PeripheralData, _],
-    failure: js.Function1[/* error */ String, _]
-  ): Unit = js.native
-  def startStateNotifications(success: js.Function1[/* state */ String, _]): Unit = js.native
-  def startStateNotifications(success: js.Function1[/* state */ String, _], failure: js.Function1[/* error */ String, _]): Unit = js.native
   def stopNotification(device_id: String, service_uuid: String, characteristic_uuid: String): Unit = js.native
   def stopNotification(device_id: String, service_uuid: String, characteristic_uuid: String, success: js.Function0[_]): Unit = js.native
   def stopNotification(

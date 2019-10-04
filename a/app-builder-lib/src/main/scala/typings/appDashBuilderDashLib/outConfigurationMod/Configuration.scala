@@ -2,6 +2,7 @@ package typings.appDashBuilderDashLib.outConfigurationMod
 
 import typings.appDashBuilderDashLib.outCoreMod.BeforeBuildContext
 import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetConfiguration
 import typings.appDashBuilderDashLib.outElectronElectronFrameworkMod.ElectronDownloadOptions
 import typings.appDashBuilderDashLib.outOptionsAppXOptionsMod.AppXOptions
@@ -29,7 +30,6 @@ import typings.appDashBuilderDashLib.outPackagerMod.BuildResult
 import typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod.NsisOptions
 import typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod.NsisWebOptions
 import typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod.PortableOptions
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,7 +126,7 @@ trait Configuration extends PlatformSpecificBuildOptions {
     */
   val extraMetadata: js.UndefOr[js.Any] = js.undefined
   /**
-    * The framework name. One of `electron`, `proton-native`, `libui`. Defaults to `electron`.
+    * The framework name. One of `electron`, `proton`, `libui`. Defaults to `electron`.
     */
   val framework: js.UndefOr[String | Null] = js.undefined
   val freebsd: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
@@ -151,6 +151,10 @@ trait Configuration extends PlatformSpecificBuildOptions {
     * MAS (Mac Application Store) options.
     */
   val mas: js.UndefOr[MasConfiguration | Null] = js.undefined
+  /**
+    * MAS (Mac Application Store) development options (`mas-dev` target).
+    */
+  val masDev: js.UndefOr[MasConfiguration | Null] = js.undefined
   /** @private */
   val msi: js.UndefOr[MsiOptions | Null] = js.undefined
   /**
@@ -174,11 +178,6 @@ trait Configuration extends PlatformSpecificBuildOptions {
     * @default true
     */
   val npmRebuild: js.UndefOr[Boolean] = js.undefined
-  /**
-    * @deprecated Please use npmBuildFromSource.
-    * @private
-    */
-  val npmSkipBuildFromSource: js.UndefOr[Boolean] = js.undefined
   val nsis: js.UndefOr[NsisOptions | Null] = js.undefined
   val nsisWeb: js.UndefOr[NsisWebOptions | Null] = js.undefined
   /**
@@ -196,11 +195,6 @@ trait Configuration extends PlatformSpecificBuildOptions {
     * As [name](#Metadata-name), but allows you to specify a product name for your executable which contains spaces and other special characters not allowed in the [name property](https://docs.npmjs.com/files/package.json#name).
     */
   val productName: js.UndefOr[String | Null] = js.undefined
-  /**
-    * @private
-    * @deprecated Set framework and nodeVersion if need.
-    */
-  val protonNodeVersion: js.UndefOr[String | Null] = js.undefined
   /**
     * Whether to fail if the application is not signed (to prevent unsigned app if code signing configuration is not correct).
     * @default false
@@ -276,12 +270,12 @@ object Configuration {
     linux: LinuxConfiguration = null,
     mac: MacConfiguration = null,
     mas: MasConfiguration = null,
+    masDev: MasConfiguration = null,
     msi: MsiOptions = null,
     nodeGypRebuild: js.UndefOr[Boolean] = js.undefined,
     nodeVersion: String = null,
     npmArgs: js.Array[String] | String = null,
     npmRebuild: js.UndefOr[Boolean] = js.undefined,
-    npmSkipBuildFromSource: js.UndefOr[Boolean] = js.undefined,
     nsis: NsisOptions = null,
     nsisWeb: NsisWebOptions = null,
     onNodeModuleFile: (js.Function1[/* file */ String, Unit]) | String = null,
@@ -291,7 +285,6 @@ object Configuration {
     portable: PortableOptions = null,
     productName: String = null,
     protocols: js.Array[Protocol] | Protocol = null,
-    protonNodeVersion: String = null,
     publish: Publish = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     releaseInfo: ReleaseInfo = null,
@@ -348,12 +341,12 @@ object Configuration {
     if (linux != null) __obj.updateDynamic("linux")(linux)
     if (mac != null) __obj.updateDynamic("mac")(mac)
     if (mas != null) __obj.updateDynamic("mas")(mas)
+    if (masDev != null) __obj.updateDynamic("masDev")(masDev)
     if (msi != null) __obj.updateDynamic("msi")(msi)
     if (!js.isUndefined(nodeGypRebuild)) __obj.updateDynamic("nodeGypRebuild")(nodeGypRebuild)
     if (nodeVersion != null) __obj.updateDynamic("nodeVersion")(nodeVersion)
     if (npmArgs != null) __obj.updateDynamic("npmArgs")(npmArgs.asInstanceOf[js.Any])
     if (!js.isUndefined(npmRebuild)) __obj.updateDynamic("npmRebuild")(npmRebuild)
-    if (!js.isUndefined(npmSkipBuildFromSource)) __obj.updateDynamic("npmSkipBuildFromSource")(npmSkipBuildFromSource)
     if (nsis != null) __obj.updateDynamic("nsis")(nsis)
     if (nsisWeb != null) __obj.updateDynamic("nsisWeb")(nsisWeb)
     if (onNodeModuleFile != null) __obj.updateDynamic("onNodeModuleFile")(onNodeModuleFile.asInstanceOf[js.Any])
@@ -363,7 +356,6 @@ object Configuration {
     if (portable != null) __obj.updateDynamic("portable")(portable)
     if (productName != null) __obj.updateDynamic("productName")(productName)
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (protonNodeVersion != null) __obj.updateDynamic("protonNodeVersion")(protonNodeVersion)
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
     if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo)

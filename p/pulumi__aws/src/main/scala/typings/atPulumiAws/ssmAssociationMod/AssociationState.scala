@@ -1,14 +1,17 @@
 package typings.atPulumiAws.ssmAssociationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_KeyValuesArray
-import typings.atPulumiAws.Anon_S3BucketNameS3KeyPrefix
+import typings.atPulumiAws.typesInputMod.ssmNs.AssociationOutputLocation
+import typings.atPulumiAws.typesInputMod.ssmNs.AssociationTarget
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AssociationState extends js.Object {
+  /**
+    * The ID of the SSM association.
+    */
   val associationId: js.UndefOr[Input[String]] = js.undefined
   /**
     * The descriptive name for the association.
@@ -41,7 +44,7 @@ trait AssociationState extends js.Object {
   /**
     * An output location block. Output Location is documented below.
     */
-  val outputLocation: js.UndefOr[Input[Anon_S3BucketNameS3KeyPrefix]] = js.undefined
+  val outputLocation: js.UndefOr[Input[AssociationOutputLocation]] = js.undefined
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
@@ -53,7 +56,7 @@ trait AssociationState extends js.Object {
   /**
     * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
     */
-  val targets: js.UndefOr[Input[js.Array[Input[Anon_KeyValuesArray]]]] = js.undefined
+  val targets: js.UndefOr[Input[js.Array[Input[AssociationTarget]]]] = js.undefined
 }
 
 object AssociationState {
@@ -67,10 +70,10 @@ object AssociationState {
     maxConcurrency: Input[String] = null,
     maxErrors: Input[String] = null,
     name: Input[String] = null,
-    outputLocation: Input[Anon_S3BucketNameS3KeyPrefix] = null,
+    outputLocation: Input[AssociationOutputLocation] = null,
     parameters: Input[StringDictionary[_]] = null,
     scheduleExpression: Input[String] = null,
-    targets: Input[js.Array[Input[Anon_KeyValuesArray]]] = null
+    targets: Input[js.Array[Input[AssociationTarget]]] = null
   ): AssociationState = {
     val __obj = js.Dynamic.literal()
     if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])

@@ -128,7 +128,7 @@ object IconContainerProps {
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,

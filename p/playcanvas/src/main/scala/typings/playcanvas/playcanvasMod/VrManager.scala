@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.VrManager
+  * @extends pc.EventHandler
   * @classdesc Manage and update {@link pc.VrDisplay}s that are attached to this device.
   * @description Manage and update {@link pc.VrDisplay}s that are attached to this device.
   * @param {pc.Application} app The main application

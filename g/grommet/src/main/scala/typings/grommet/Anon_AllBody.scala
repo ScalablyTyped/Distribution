@@ -17,16 +17,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AllBody extends js.Object {
-  var body: js.UndefOr[
-    Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_AllBottom
-  ] = js.undefined
+  var body: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All] = js.undefined
   var color: js.UndefOr[String | Anon_Dark] = js.undefined
-  var footer: js.UndefOr[
-    Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_AllBottom
-  ] = js.undefined
-  var header: js.UndefOr[
-    Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_AllBottom
-  ] = js.undefined
+  var footer: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All] = js.undefined
+  var header: js.UndefOr[Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All] = js.undefined
   var side: js.UndefOr[top | left | bottom | right | horizontal | vertical | all] = js.undefined
   var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
 }
@@ -34,10 +28,10 @@ trait Anon_AllBody extends js.Object {
 object Anon_AllBody {
   @scala.inline
   def apply(
-    body: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_AllBottom = null,
+    body: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All = null,
     color: String | Anon_Dark = null,
-    footer: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_AllBottom = null,
-    header: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_AllBottom = null,
+    footer: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All = null,
+    header: Boolean | top | left | bottom | right | horizontal | vertical | all | Anon_All = null,
     side: top | left | bottom | right | horizontal | vertical | all = null,
     size: xsmall | small | medium | large | xlarge | String = null
   ): Anon_AllBody = {

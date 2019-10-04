@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3BucketNotificationMod
 
-import typings.atPulumiAws.Anon_EventsFilterPrefixFilterSuffixIdLambdaFunctionArn
-import typings.atPulumiAws.Anon_EventsFilterPrefixFilterSuffixIdQueueArn
-import typings.atPulumiAws.Anon_EventsFilterPrefixFilterSuffixIdTopicArn
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketNotificationLambdaFunction
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketNotificationQueue
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketNotificationTopic
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,24 +16,24 @@ trait BucketNotificationState extends js.Object {
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
-  val lambdaFunctions: js.UndefOr[Input[js.Array[Input[Anon_EventsFilterPrefixFilterSuffixIdLambdaFunctionArn]]]] = js.undefined
+  val lambdaFunctions: js.UndefOr[Input[js.Array[Input[BucketNotificationLambdaFunction]]]] = js.undefined
   /**
     * The notification configuration to SQS Queue (documented below).
     */
-  val queues: js.UndefOr[Input[js.Array[Input[Anon_EventsFilterPrefixFilterSuffixIdQueueArn]]]] = js.undefined
+  val queues: js.UndefOr[Input[js.Array[Input[BucketNotificationQueue]]]] = js.undefined
   /**
     * The notification configuration to SNS Topic (documented below).
     */
-  val topics: js.UndefOr[Input[js.Array[Input[Anon_EventsFilterPrefixFilterSuffixIdTopicArn]]]] = js.undefined
+  val topics: js.UndefOr[Input[js.Array[Input[BucketNotificationTopic]]]] = js.undefined
 }
 
 object BucketNotificationState {
   @scala.inline
   def apply(
     bucket: Input[String] = null,
-    lambdaFunctions: Input[js.Array[Input[Anon_EventsFilterPrefixFilterSuffixIdLambdaFunctionArn]]] = null,
-    queues: Input[js.Array[Input[Anon_EventsFilterPrefixFilterSuffixIdQueueArn]]] = null,
-    topics: Input[js.Array[Input[Anon_EventsFilterPrefixFilterSuffixIdTopicArn]]] = null
+    lambdaFunctions: Input[js.Array[Input[BucketNotificationLambdaFunction]]] = null,
+    queues: Input[js.Array[Input[BucketNotificationQueue]]] = null,
+    topics: Input[js.Array[Input[BucketNotificationTopic]]] = null
   ): BucketNotificationState = {
     val __obj = js.Dynamic.literal()
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])

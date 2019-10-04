@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait MongoDbSettings extends js.Object {
   /**
-    *  The authentication mechanism you use to access the MongoDB source endpoint. Valid values: DEFAULT, MONGODB_CR, SCRAM_SHA_1  DEFAULT – For MongoDB version 2.x, use MONGODB_CR. For MongoDB version 3.x, use SCRAM_SHA_1. This attribute is not used when authType=No.
+    *  The authentication mechanism you use to access the MongoDB source endpoint. Valid values: DEFAULT, MONGODB_CR, SCRAM_SHA_1  DEFAULT – For MongoDB version 2.x, use MONGODB_CR. For MongoDB version 3.x, use SCRAM_SHA_1. This setting is not used when authType=No.
     */
   var AuthMechanism: js.UndefOr[AuthMechanismValue] = js.undefined
   /**
-    *  The MongoDB database name. This attribute is not used when authType=NO.  The default is admin.
+    *  The MongoDB database name. This setting is not used when authType=NO.  The default is admin.
     */
   var AuthSource: js.UndefOr[String] = js.undefined
   /**
@@ -22,11 +22,11 @@ trait MongoDbSettings extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
-    *  Indicates the number of documents to preview to determine the document organization. Use this attribute when NestingLevel is set to ONE.  Must be a positive value greater than 0. Default value is 1000.
+    *  Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to ONE.  Must be a positive value greater than 0. Default value is 1000.
     */
   var DocsToInvestigate: js.UndefOr[String] = js.undefined
   /**
-    *  Specifies the document ID. Use this attribute when NestingLevel is set to NONE.  Default value is false. 
+    *  Specifies the document ID. Use this setting when NestingLevel is set to NONE.  Default value is false. 
     */
   var ExtractDocId: js.UndefOr[String] = js.undefined
   /**

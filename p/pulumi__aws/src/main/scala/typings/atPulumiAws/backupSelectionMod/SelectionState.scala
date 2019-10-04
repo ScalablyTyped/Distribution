@@ -1,6 +1,6 @@
 package typings.atPulumiAws.backupSelectionMod
 
-import typings.atPulumiAws.Anon_KeyTypeValue
+import typings.atPulumiAws.typesInputMod.backupNs.SelectionSelectionTag
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait SelectionState extends js.Object {
   /**
     * Tag-based conditions used to specify a set of resources to assign to a backup plan.
     */
-  val selectionTags: js.UndefOr[Input[js.Array[Input[Anon_KeyTypeValue]]]] = js.undefined
+  val selectionTags: js.UndefOr[Input[js.Array[Input[SelectionSelectionTag]]]] = js.undefined
 }
 
 object SelectionState {
@@ -36,7 +36,7 @@ object SelectionState {
     name: Input[String] = null,
     planId: Input[String] = null,
     resources: Input[js.Array[Input[String]]] = null,
-    selectionTags: Input[js.Array[Input[Anon_KeyTypeValue]]] = null
+    selectionTags: Input[js.Array[Input[SelectionSelectionTag]]] = null
   ): SelectionState = {
     val __obj = js.Dynamic.literal()
     if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])

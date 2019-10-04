@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pdfkit/js/mixins/color", JSImport.Namespace)
 @js.native
-object jsMixinsColorMod extends TopLevel[PDFColor[Unit]]
+object jsMixinsColorMod extends TopLevel[PDFColor]
 

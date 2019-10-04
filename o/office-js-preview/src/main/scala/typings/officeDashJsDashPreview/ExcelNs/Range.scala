@@ -60,7 +60,8 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-  * To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API} and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+  To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+  and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
   *
   * [Api set: ExcelApi 1.1]
   */
@@ -228,9 +229,11 @@ class Range () extends ClientObject {
   var numberFormat: js.Array[js.Array[_]] = js.native
   /**
     *
-    * Represents Excel's number format code for the given range, based on the language settings of the user.
-    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+    * Represents Excel's number format code for the given range, based on the language settings of the user.​
+    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+    If the argument is a single value, it will be applied to all cells in the range.​
+    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+    Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -259,8 +262,8 @@ class Range () extends ClientObject {
   /**
     *
     * Represents if ALL the cells would be saved as an array formula.
-    Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-    Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+    Returns true if ALL cells would be saved as an array formula, or false if ALL cells would NOT be saved as an array formula.
+    Returns null if some cells would be saved as an array formula and some would not be.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -335,16 +338,15 @@ class Range () extends ClientObject {
   def autoFill(destinationRange: String, autoFillType: AutoFillType): Unit = js.native
   /**
     *
-    * Fills range from the current range to the destination range using the specified AutoFill logic. 
-    * The destination range can be null, or can extend the source either horizontally or vertically. 
-    * If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
-    * 
-    * For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+    * Fills range from the current range to the destination range using the specified AutoFill logic.
+  The destination range can be null, or can extend the source either horizontally or vertically.
+  Discontiguous ranges are not supported.
+  For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
     *
     * [Api set: ExcelApi 1.9, ExcelApi BETA (PREVIEW ONLY) for null `destinationRange`]
     *
-    * @param destinationRange The destination range to fill. Discontiguous ranges are not supported.
-    * @param autoFillType The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
+    * @param destinationRange The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
+    * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
     */
   def autoFill(destinationRange: Range): Unit = js.native
   def autoFill(
@@ -403,11 +405,11 @@ class Range () extends ClientObject {
   /**
     *
     * Copies cell data or formatting from the source range or RangeAreas to the current range.
-    The destination range can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
+    The destination range can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the outline form which can be created by removing full rows or columns from a rectangular range.
+    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must be able to be created by removing full rows or columns from a rectangular range.
     * @param copyType The type of cell data or formatting to copy over. Default is "All".
     * @param skipBlanks True if to skip blank cells in the source range. Default is false.
     * @param transpose True if to transpose the cells in the destination range. Default is false.
@@ -522,7 +524,7 @@ class Range () extends ClientObject {
     *
     * @param text The string to find.
     * @param criteria Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
-    * @returns The Range which matched the search criteria.
+    * @returns The Range object representing the first cell that contains a value matching the search text and criteria.
     */
   def find(text: String, criteria: SearchCriteria): Range = js.native
   /**
@@ -1035,25 +1037,15 @@ class Range () extends ClientObject {
   @JSName("insert")
   def insert_Right(shift: Right): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Range = js.native
-  def load(option: String): Range = js.native
-  def load(option: js.Array[String]): Range = js.native
-  def load(option: Anon_Expand): Range = js.native
-  def load(option: RangeLoadOptions): Range = js.native
+  def load(options: RangeLoadOptions): Range = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Range = js.native
+  def load(propertyNames: String): Range = js.native
+  def load(propertyNames: js.Array[String]): Range = js.native
   /**
     *
     * Merge the range cells into one region in the worksheet.
@@ -1178,7 +1170,7 @@ class Range () extends ClientObject {
     */
   def toJSON(): RangeData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Range = js.native
   /**
@@ -1211,7 +1203,7 @@ class Range () extends ClientObject {
     */
   def unmerge(): Unit = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Range = js.native
 }

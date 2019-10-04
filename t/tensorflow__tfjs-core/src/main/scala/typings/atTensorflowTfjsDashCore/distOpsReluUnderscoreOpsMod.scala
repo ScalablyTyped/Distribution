@@ -39,6 +39,12 @@ object distOpsReluUnderscoreOpsMod extends js.Object {
   }
   
   @js.native
+  object relu6 extends js.Object {
+    def apply[T /* <: Tensor[Rank] */](x: T): T = js.native
+    def apply[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  }
+  
+  @js.native
   object selu extends js.Object {
     def apply[T /* <: Tensor[Rank] */](x: T): T = js.native
     def apply[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native

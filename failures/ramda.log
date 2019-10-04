@@ -533,6 +533,34 @@
 [warn ] QualifyReferences.scala:32 Couldn't qualify T.Merge<[P[1], P[0]], P> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(flip) / TsFunSig() / TsTypeRef() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(F), TsIdentSimple(Curry))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(maxBy) / TsFunSig() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify F.Curry<(a : T, b : T): T> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(maxBy) / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T2, T1> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T2, T1> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T2, T1> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T2, T1> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(merge) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(AssignUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeAll) / TsFunSig() / TsTypeConditional() / TsTypeExtends() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.AssignUp<{}, T> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeAll) / TsFunSig() / TsTypeConditional() / TsTypeExtends() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(A), TsIdentSimple(Compute))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeAll) / TsFunSig() / TsTypeConditional() / TsTypeConditional() / TsTypeIntersect() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify A.Compute<M> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeAll) / TsFunSig() / TsTypeConditional() / TsTypeConditional() / TsTypeIntersect() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepLeft) / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<O1, O2, 'deep'> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepLeft) / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepLeft) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<O1, O2, 'deep'> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepLeft) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepRight) / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<O2, O1, 'deep'> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepRight) / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepRight) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<O2, O1, 'deep'> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeDeepRight) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeLeft) / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T1, T2> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeLeft) / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeLeft) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T1, T2> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeLeft) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeRight) / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T2, T1> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeRight) / TsFunSig() / TsTypeRef())] 
+[warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(O), TsIdentSimple(MergeUp))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeRight) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify O.MergeUp<T2, T1> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(mergeRight) / TsFunSig() / TsTypeFunction() / TsFunSig() / TsTypeRef())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(F), TsIdentSimple(Curry))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(minBy) / TsFunSig() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify F.Curry<(a : T, b : T): T> [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(minBy) / TsFunSig() / TsTypeRef())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(F), TsIdentSimple(Curry))) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsExport() / TsExporteeTree() / TsDeclInterface(Static) / TsMemberFunction(pathEq) / TsFunSig() / TsTypeRef())] 
@@ -892,7 +920,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(merge) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(merge) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(merge) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mergeAll) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mergeAll) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mergeDeepLeft) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mergeDeepLeft) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
@@ -1294,27 +1321,46 @@
 [info ] ImportType.scala:245 Failed type conversion: T[keyof T] [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(prop) / TsTypeFunction() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: T[P] [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(prop) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: T[K] [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(values) / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportTree.scala:403 Dropping TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(ramda), TsIdentModule(None,List(ramda)), TsIdentSimple(CommonPropsThatAreObjects))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()), TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()))),Noop,TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(ramda), TsIdentModule(None,List(ramda)), TsIdentSimple(MergeDeep))),List(TsTypeLookup(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(K))),List())), TsTypeLookup(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(K))),List()))))) [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(MergeDeep) / TsMemberTypeMapped())] 
-[info ] ImportTree.scala:403 Dropping TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Exclude))),List(TsTypeKeyOf(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List())), TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(ramda), TsIdentModule(None,List(ramda)), TsIdentSimple(CommonPropsThatAreObjects))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()), TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()))))),Noop,TsTypeLookup(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(K))),List()))) [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(MergeDeep) / TsMemberTypeMapped())] 
-[info ] ImportTree.scala:403 Dropping TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Exclude))),List(TsTypeKeyOf(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List())), TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(ramda), TsIdentModule(None,List(ramda)), TsIdentSimple(CommonKeys))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()), TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()))))),Noop,TsTypeLookup(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(K))),List()))) [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(MergeDeep) / TsMemberTypeMapped())] 
-[info ] ImportTree.scala:403 Dropping TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(K),TsTypeKeyOf(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List())),Noop,TsTypeLookup(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(K))),List()))) [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Merge) / TsMemberTypeMapped())] 
-[info ] ImportTree.scala:403 Dropping TsMemberTypeMapped(NoComments,Default,false,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Exclude))),List(TsTypeKeyOf(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List())), TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(ramda), TsIdentModule(None,List(ramda)), TsIdentSimple(CommonKeys))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Primary))),List()), TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()))))),Noop,TsTypeLookup(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(Secondary))),List()),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(K))),List()))) [id => ramda, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Merge) / TsMemberTypeMapped())] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter) [id => ramda, phase => scala.js, this => Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter)] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter) [id => ramda, phase => scala.js, this => Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter)] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building ramda... [id => ramda, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E5] src/main/scala/typings/ramda/ramdaMod/Static.scala:2252:75
+[error] Phase3Compile.scala:240 [E] [E11] src/main/scala/typings/ramda/ramdaMod/Static.scala:2448:48
+[E]       not found: type UnNest
+[E]       L2448:   def unnest[T /* <: js.Array[_] */](list: T): UnNest[T] = js.native
+[E]                                                             ^
+[E] [E10] src/main/scala/typings/ramda/ramdaMod/Static.scala:2275:75
+[E]       not found: type Curry
+[E]       L2275:   def thunkify[F /* <: js.Function1[/* repeated */ js.Any, _] */](fn: F): Curry[js.Function1[/* args */ Parameters[F], js.Function0[ReturnType[F]]]] = js.native
+[E]                                                                                        ^
+[E] [E9] src/main/scala/typings/ramda/ramdaMod/Static.scala:1187:176
+[E]      not found: type UnionOf
+[E]      L1187:   def mergeAll[T /* <: js.Array[js.Object] */](list: T): ((/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify A.Compute<M> */ js.Any) with js.Object) | UnionOf[T] = js.native
+[E]                                                                                                                                                                                            ^
+[E] [E8] src/main/scala/typings/ramda/ramdaMod/Static.scala:732:103
 [E]      not found: type Curry
-[E]      L2252:   def thunkify[F /* <: js.Function1[/* repeated */ js.Any, _] */](fn: F): Curry[js.Function1[/* args */ Parameters[F], js.Function0[ReturnType[F]]]] = js.native
-[E]                                                                                       ^
-[E] [E4] src/main/scala/typings/ramda/ramdaMod/Static.scala:729:103
-[E]      not found: type Curry
-[E]      L729:   def flip[F /* <: js.Function1[/* args */ js.Any, _] */, P /* <: typings.F.Parameters[F] */](fn: F): Curry[
+[E]      L732:   def flip[F /* <: js.Function1[/* args */ js.Any, _] */, P /* <: typings.F.Parameters[F] */](fn: F): Curry[
 [E]                                                                                                                  ^
-[E] [E3] src/main/scala/typings/ramda/ramdaMod/Static.scala:544:67
+[E] [E7] src/main/scala/typings/ramda/ramdaMod/Static.scala:731:49
+[E]      not found: type Flatten
+[E]      L731:   def flatten[T /* <: js.Array[_] */](list: T): Flatten[T] = js.native
+[E]                                                            ^
+[E] [E6] src/main/scala/typings/ramda/ramdaMod/Static.scala:547:67
 [E]      not found: type Curry
-[E]      L544:   def curry[F /* <: js.Function1[/* args */ js.Any, _] */](f: F): Curry[F] = js.native
+[E]      L547:   def curry[F /* <: js.Function1[/* args */ js.Any, _] */](f: F): Curry[F] = js.native
 [E]                                                                              ^
+[E] [E5] src/main/scala/typings/ramda/ramdaMod/Static.scala:9:16
+[E]      object T is not a member of package typings
+[E]      L9: import typings.T.UnionOf
+[E]                         ^
+[E] [E4] src/main/scala/typings/ramda/ramdaMod/Static.scala:8:16
+[E]      object T is not a member of package typings
+[E]      L8: import typings.T.UnNest
+[E]                         ^
+[E] [E3] src/main/scala/typings/ramda/ramdaMod/Static.scala:7:16
+[E]      object T is not a member of package typings
+[E]      L7: import typings.T.Flatten
+[E]                         ^
 [E] [E2] src/main/scala/typings/ramda/ramdaMod/Static.scala:6:16
 [E]      object F is not a member of package typings
 [E]      L6: import typings.F.Return
@@ -1323,8 +1369,7 @@
 [E]      object F is not a member of package typings
 [E]      L5: import typings.F.Curry
 [E]                         ^
-[E] src/main/scala/typings/ramda/ramdaMod/Static.scala: L5 [E1], L6 [E2], L544 [E3], L729 [E4], L2252 [E5]
+[E] src/main/scala/typings/ramda/ramdaMod/Static.scala: L5 [E1], L6 [E2], L7 [E3], L8 [E4], L9 [E5], L547 [E6], L731 [E7], L732 [E8], L1187 [E9], L2275 [E10], L2448 [E11]
 [E] Failed to compile 'ramda'
  [id => ramda, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [ramda => Compilation failed] [id => ramda, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [ramda => Compilation failed] [id => ramda, phase => publish] 

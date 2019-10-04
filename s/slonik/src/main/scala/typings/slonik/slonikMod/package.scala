@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object slonikMod {
   import typings.node.streamMod.Readable
-  import typings.slonik.Anon_Alias
   import typings.slonik.Anon_Connect
   import typings.slonik.Anon_Database
   import typings.slonik.Anon_Handler
@@ -21,7 +20,6 @@ package object slonikMod {
   type DatabasePoolConnectionType = CommonQueryMethodsType with Anon_HandlerSql
   type DatabasePoolType = CommonQueryMethodsType with Anon_Connect
   type DatabaseTransactionConnectionType = CommonQueryMethodsType with Anon_Handler
-  type IdentifierListMemberType = js.Array[String] | Anon_Alias
   type IdentifierNormalizerType = js.Function1[/* identifierName */ String, String]
   type LoggerType = js.Function1[/* repeated */ String, scala.Nothing]
   type MaybePromiseType[T] = T | js.Promise[T]
@@ -77,18 +75,11 @@ package object slonikMod {
   type SqlSqlTokenType[T] = TaggedTemplateLiteralInvocationType[T]
   /* Rewritten from type alias, can be one of: 
     - typings.slonik.slonikMod.ArraySqlTokenType
-    - typings.slonik.slonikMod.AssignmentListTokenType
     - typings.slonik.slonikMod.IdentifierTokenType
-    - typings.slonik.slonikMod.IdentifierListTokenType
     - typings.slonik.slonikMod.JsonSqlTokenType
     - typings.slonik.slonikMod.RawSqlTokenType
     - typings.slonik.slonikMod.SqlSqlTokenType[js.Any]
-    - typings.slonik.slonikMod.TupleListSqlTokenType
-    - typings.slonik.slonikMod.TupleSqlTokenType
     - typings.slonik.slonikMod.UnnestSqlTokenType
-    - typings.slonik.slonikMod.ValueListSqlTokenType
-    - typings.slonik.slonikMod.ComparisonPredicateTokenType
-    - typings.slonik.slonikMod.BooleanExpressionTokenType
   */
   type SqlTokenType = _SqlTokenType | SqlSqlTokenType[js.Any]
   type StreamHandlerType = js.Function1[/* stream */ Readable, Unit]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-safe-stringify"
-version := "2.0.6-0b24cd"
+version := "2.0.7-85fd81"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

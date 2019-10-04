@@ -1,7 +1,7 @@
 package typings.adone.glossesStdMod
 
+import typings.node.Anon_BuiltinModules
 import typings.node.NodeJSNs.Module
-import typings.node.TypeofClassModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ class module protected ()
 @JSImport("adone/glosses/std", "module")
 @js.native
 object module extends js.Object {
-  var Module: TypeofClassModule = js.native
+  var Module: Anon_BuiltinModules = js.native
   var builtinModules: js.Array[String] = js.native
   def createRequireFromPath(path: String): js.Function1[/* path */ String, _] = js.native
   def runMain(): Unit = js.native

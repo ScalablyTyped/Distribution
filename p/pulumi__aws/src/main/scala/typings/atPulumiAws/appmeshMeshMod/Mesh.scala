@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshMeshMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_EgressFilter
+import typings.atPulumiAws.typesOutputMod.appmeshNs.MeshSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -43,7 +43,7 @@ class Mesh protected () extends CustomResource {
   /**
     * The service mesh specification to apply.
     */
-  val spec: Output[js.UndefOr[Anon_EgressFilter]] = js.native
+  val spec: Output[js.UndefOr[MeshSpec]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

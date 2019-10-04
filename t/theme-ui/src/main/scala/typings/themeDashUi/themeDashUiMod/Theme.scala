@@ -40,7 +40,7 @@ trait Theme
     */
   var styles: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in theme-ui.theme-ui.StyledTags ]: @styled-system/css.@styled-system/css.SystemStyleObject}
+  {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeDashUi.themeDashUiStrings.Theme with js.Any
   ] = js.undefined
 }
@@ -67,7 +67,7 @@ object Theme {
     sizes: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object]] = null,
     space: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[Double | String] = null,
     styles: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in theme-ui.theme-ui.StyledTags ]: @styled-system/css.@styled-system/css.SystemStyleObject}
+  {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeDashUi.themeDashUiStrings.Theme with js.Any = null,
     textStyles: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[StandardProperties[String | `0`]] = null,
     zIndices: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[ZIndexProperty] = null

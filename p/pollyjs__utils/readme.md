@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__utils
 
-Typings are for version 2.0
+Typings are for version 2.6
 
 ## Library description:
 Shared utilities and constants between @pollyjs packages

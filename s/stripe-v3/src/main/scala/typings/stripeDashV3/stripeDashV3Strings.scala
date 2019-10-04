@@ -206,6 +206,9 @@ object stripeDashV3Strings {
   sealed trait errored extends statusType
   
   @js.native
+  sealed trait es extends js.Object
+  
+  @js.native
   sealed trait expired_or_canceled_card extends js.Object
   
   @js.native
@@ -270,6 +273,9 @@ object stripeDashV3Strings {
   
   @js.native
   sealed trait issuer_declined extends js.Object
+  
+  @js.native
+  sealed trait it extends js.Object
   
   @js.native
   sealed trait jcb extends paymentMethodCardBrand
@@ -360,6 +366,9 @@ object stripeDashV3Strings {
   
   @js.native
   sealed trait pii extends js.Object
+  
+  @js.native
+  sealed trait pl extends js.Object
   
   @js.native
   sealed trait postalCode extends elementsType
@@ -644,6 +653,8 @@ object stripeDashV3Strings {
   @scala.inline
   def errored: errored = "errored".asInstanceOf[errored]
   @scala.inline
+  def es: es = "es".asInstanceOf[es]
+  @scala.inline
   def expired_or_canceled_card: expired_or_canceled_card = "expired_or_canceled_card".asInstanceOf[expired_or_canceled_card]
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
@@ -687,6 +698,8 @@ object stripeDashV3Strings {
   def invalid_shipping_address: invalid_shipping_address = "invalid_shipping_address".asInstanceOf[invalid_shipping_address]
   @scala.inline
   def issuer_declined: issuer_declined = "issuer_declined".asInstanceOf[issuer_declined]
+  @scala.inline
+  def it: it = "it".asInstanceOf[it]
   @scala.inline
   def jcb: jcb = "jcb".asInstanceOf[jcb]
   @scala.inline
@@ -747,6 +760,8 @@ object stripeDashV3Strings {
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
   def pii: pii = "pii".asInstanceOf[pii]
+  @scala.inline
+  def pl: pl = "pl".asInstanceOf[pl]
   @scala.inline
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   @scala.inline

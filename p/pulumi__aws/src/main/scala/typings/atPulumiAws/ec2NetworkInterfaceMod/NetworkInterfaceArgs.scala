@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2NetworkInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AttachmentIdDeviceIndexInstance
+import typings.atPulumiAws.typesInputMod.ec2Ns.NetworkInterfaceAttachment
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait NetworkInterfaceArgs extends js.Object {
   /**
     * Block to define the attachment of the ENI. Documented below.
     */
-  val attachments: js.UndefOr[Input[js.Array[Input[Anon_AttachmentIdDeviceIndexInstance]]]] = js.undefined
+  val attachments: js.UndefOr[Input[js.Array[Input[NetworkInterfaceAttachment]]]] = js.undefined
   /**
     * A description for the network interface.
     */
@@ -47,7 +47,7 @@ object NetworkInterfaceArgs {
   @scala.inline
   def apply(
     subnetId: Input[String],
-    attachments: Input[js.Array[Input[Anon_AttachmentIdDeviceIndexInstance]]] = null,
+    attachments: Input[js.Array[Input[NetworkInterfaceAttachment]]] = null,
     description: Input[String] = null,
     privateIp: Input[String] = null,
     privateIps: Input[js.Array[Input[String]]] = null,

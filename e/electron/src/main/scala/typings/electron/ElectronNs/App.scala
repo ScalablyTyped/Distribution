@@ -20,6 +20,7 @@ import typings.electron.electronStrings.`remote-get-current-window`
 import typings.electron.electronStrings.`remote-get-global`
 import typings.electron.electronStrings.`remote-get-guest-web-contents`
 import typings.electron.electronStrings.`remote-require`
+import typings.electron.electronStrings.`renderer-process-crashed`
 import typings.electron.electronStrings.`second-instance`
 import typings.electron.electronStrings.`select-client-certificate`
 import typings.electron.electronStrings.`session-created`
@@ -40,6 +41,34 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait App extends EventEmitter {
+  /**
+    * A Boolean property that's true if Chrome's accessibility support is enabled,
+    * false otherwise. This property will be true if the use of assistive
+    * technologies, such as screen readers, has been detected. Setting this property
+    * to true manually enables Chrome's accessibility support, allowing developers to
+    * expose accessibility switch to users in application settings. See Chromium's
+    * accessibility docs for more details. Disabled by default. This API must be
+    * called after the ready event is emitted. Note: Rendering accessibility tree can
+    * significantly affect the performance of your app. It should not be enabled by
+    * default.
+    */
+  var accessibilitySupportEnabled: js.UndefOr[Boolean] = js.native
+  /**
+    * A Boolean which when true disables the overrides that Electron has in place to
+    * ensure renderer processes are restarted on every navigation.  The current
+    * default value for this property is false. The intention is for these overrides
+    * to become disabled by default and then at some point in the future this property
+    * will be removed.  This property impacts which native modules you can use in the
+    * renderer process.  For more information on the direction Electron is going with
+    * renderer process restarts and usage of native modules in the renderer process
+    * please check out this Tracking Issue.
+    */
+  var allowRendererProcessReuse: js.UndefOr[Boolean] = js.native
+  /**
+    * A Menu property that return Menu if one has been set and null otherwise. Users
+    * can pass a Menu to set this property.
+    */
+  var applicationMenu: js.UndefOr[Menu] = js.native
   var commandLine: CommandLine = js.native
   var dock: Dock = js.native
   /**
@@ -48,6 +77,14 @@ trait App extends EventEmitter {
     * production environments.
     */
   var isPackaged: js.UndefOr[Boolean] = js.native
+  /**
+    * A String which is the user agent string Electron will use as a global fallback.
+    * This is the user agent that will be used when no user agent is set at the
+    * webContents or session level.  Useful for ensuring your entire app has the same
+    * user agent.  Set to a custom value as early as possible in your apps
+    * initialization to ensure that your overridden value is used.
+    */
+  var userAgentFallback: js.UndefOr[String] = js.native
   @JSName("addListener")
   def addListener_accessibilitysupportchanged(
     event: `accessibility-support-changed`,
@@ -168,6 +205,11 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* moduleName */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def addListener_rendererprocesscrashed(
+    event: `renderer-process-crashed`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_secondinstance(
     event: `second-instance`,
     listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
@@ -255,15 +297,15 @@ trait App extends EventEmitter {
     */
   def getFileIcon(path: String): js.Promise[NativeImage] = js.native
   /**
-    * Fetches a path's associated icon. On Windows, there a 2 kinds of icons: On Linux
-    * and macOS, icons depend on the application associated with file mime type.
+    * Fetches a path's associated icon. On Windows, there are 2 kinds of icons: On
+    * Linux and macOS, icons depend on the application associated with file mime type.
     * Deprecated Soon
     */
   def getFileIcon(path: String, callback: js.Function2[/* error */ Error, /* icon */ NativeImage, Unit]): Unit = js.native
   def getFileIcon(path: String, options: FileIconOptions): js.Promise[NativeImage] = js.native
   /**
-    * Fetches a path's associated icon. On Windows, there a 2 kinds of icons: On Linux
-    * and macOS, icons depend on the application associated with file mime type.
+    * Fetches a path's associated icon. On Windows, there are 2 kinds of icons: On
+    * Linux and macOS, icons depend on the application associated with file mime type.
     * Deprecated Soon
     */
   def getFileIcon(
@@ -332,6 +374,9 @@ trait App extends EventEmitter {
     * Invalidates the current Handoff user activity.
     */
   def invalidateCurrentActivity(`type`: String): Unit = js.native
+  /**
+    * Deprecated Soon
+    */
   def isAccessibilitySupportEnabled(): Boolean = js.native
   /**
     * This method checks if the current executable is the default handler for a
@@ -345,6 +390,7 @@ trait App extends EventEmitter {
   def isDefaultProtocolClient(protocol: String): Boolean = js.native
   def isDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def isDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
+  def isEmojiPanelSupported(): Boolean = js.native
   def isInApplicationsFolder(): Boolean = js.native
   def isReady(): Boolean = js.native
   def isUnityRunning(): Boolean = js.native
@@ -603,6 +649,14 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* moduleName */ String, Unit]
   ): this.type = js.native
   /**
+    * Emitted when the renderer process of webContents crashes or is killed.
+    */
+  @JSName("on")
+  def on_rendererprocesscrashed(
+    event: `renderer-process-crashed`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  /**
     * This event will be emitted inside the primary instance of your application when
     * a second instance has been executed and calls app.requestSingleInstanceLock().
     * argv is an Array of the second instance's command line arguments, and
@@ -820,6 +874,11 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* moduleName */ String, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_rendererprocesscrashed(
+    event: `renderer-process-crashed`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_secondinstance(
     event: `second-instance`,
     listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
@@ -1014,6 +1073,11 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* moduleName */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def removeListener_rendererprocesscrashed(
+    event: `renderer-process-crashed`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_secondinstance(
     event: `second-instance`,
     listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
@@ -1054,22 +1118,19 @@ trait App extends EventEmitter {
   @JSName("removeListener")
   def removeListener_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   /**
-    * This method makes your application a Single Instance Application - instead of
-    * allowing multiple instances of your app to run, this will ensure that only a
-    * single instance of your app is running, and other instances signal this instance
-    * and exit. The return value of this method indicates whether or not this instance
-    * of your application successfully obtained the lock.  If it failed to obtain the
-    * lock, you can assume that another instance of your application is already
-    * running with the lock and exit immediately. I.e. This method returns true if
-    * your process is the primary instance of your application and your app should
-    * continue loading.  It returns false if your process should immediately quit as
-    * it has sent its parameters to another instance that has already acquired the
-    * lock. On macOS, the system enforces single instance automatically when users try
-    * to open a second instance of your app in Finder, and the open-file and open-url
-    * events will be emitted for that. However when users start your app in command
-    * line, the system's single instance mechanism will be bypassed, and you have to
-    * use this method to ensure single instance. An example of activating the window
-    * of primary instance when a second instance starts:
+    * The return value of this method indicates whether or not this instance of your
+    * application successfully obtained the lock.  If it failed to obtain the lock,
+    * you can assume that another instance of your application is already running with
+    * the lock and exit immediately. I.e. This method returns true if your process is
+    * the primary instance of your application and your app should continue loading.
+    * It returns false if your process should immediately quit as it has sent its
+    * parameters to another instance that has already acquired the lock. On macOS, the
+    * system enforces single instance automatically when users try to open a second
+    * instance of your app in Finder, and the open-file and open-url events will be
+    * emitted for that. However when users start your app in command line, the
+    * system's single instance mechanism will be bypassed, and you have to use this
+    * method to ensure single instance. An example of activating the window of primary
+    * instance when a second instance starts:
     */
   def requestSingleInstanceLock(): Boolean = js.native
   /**
@@ -1084,9 +1145,18 @@ trait App extends EventEmitter {
     * accessibility docs for more details. Disabled by default. This API must be
     * called after the ready event is emitted. Note: Rendering accessibility tree can
     * significantly affect the performance of your app. It should not be enabled by
-    * default.
+    * default. Deprecated Soon
     */
   def setAccessibilitySupportEnabled(enabled: Boolean): Unit = js.native
+  /**
+    * Sets or creates a directory your app's logs which can then be manipulated with
+    * app.getPath() or app.setPath(pathName, newPath). Calling app.setAppLogsPath()
+    * without a path parameter will result in this directory being set to
+    * /Library/Logs/YourAppName on macOS, and inside the userData directory on Linux
+    * and Windows.
+    */
+  def setAppLogsPath(): Unit = js.native
+  def setAppLogsPath(path: String): Unit = js.native
   /**
     * Changes the Application User Model ID to id.
     */
@@ -1102,8 +1172,11 @@ trait App extends EventEmitter {
     * protocols that have been added to your app's info.plist, which can not be
     * modified at runtime. You can however change the file with a simple text editor
     * or script during build time. Please refer to Apple's documentation for details.
-    * The API uses the Windows Registry and LSSetDefaultHandlerForURLScheme
-    * internally.
+    * Note: In a Windows Store environment (when packaged as an appx) this API will
+    * return true for all calls but the registry key it sets won't be accessible by
+    * other applications.  In order to register your Windows Store application as a
+    * default protocol handler you must declare the protocol in your manifest. The API
+    * uses the Windows Registry and LSSetDefaultHandlerForURLScheme internally.
     */
   def setAsDefaultProtocolClient(protocol: String): Boolean = js.native
   def setAsDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
@@ -1143,12 +1216,12 @@ trait App extends EventEmitter {
   def setName(name: String): Unit = js.native
   /**
     * Overrides the path to a special directory or file associated with name. If the
-    * path specifies a directory that does not exist, the directory will be created by
-    * this method. On failure an Error is thrown. You can only override paths of a
-    * name defined in app.getPath. By default, web pages' cookies and caches will be
-    * stored under the userData directory. If you want to change this location, you
-    * have to override the userData path before the ready event of the app module is
-    * emitted.
+    * path specifies a directory that does not exist, an Error is thrown. In that
+    * case, the directory should be created with fs.mkdirSync or similar. You can only
+    * override paths of a name defined in app.getPath. By default, web pages' cookies
+    * and caches will be stored under the userData directory. If you want to change
+    * this location, you have to override the userData path before the ready event of
+    * the app module is emitted.
     */
   def setPath(name: String, path: String): Unit = js.native
   /**
@@ -1173,6 +1246,10 @@ trait App extends EventEmitter {
     * app.setAboutPanelOptions(options).
     */
   def showAboutPanel(): Unit = js.native
+  /**
+    * Show the platform's native emoji picker.
+    */
+  def showEmojiPanel(): Unit = js.native
   /**
     * Start accessing a security scoped resource. With this method Electron
     * applications that are packaged for the Mac App Store may reach outside their

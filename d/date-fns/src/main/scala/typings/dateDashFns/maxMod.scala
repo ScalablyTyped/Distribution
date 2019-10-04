@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/max", JSImport.Namespace)
 @js.native
 object maxMod extends js.Object {
-  def apply(dates: (Date | String | Double)*): Date = js.native
+  def default(datesArray: js.Array[Date | Double]): Date = js.native
 }
 

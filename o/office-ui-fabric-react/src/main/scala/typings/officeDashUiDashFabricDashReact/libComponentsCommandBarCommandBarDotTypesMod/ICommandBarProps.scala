@@ -56,7 +56,7 @@ trait ICommandBarProps extends HTMLAttributes[HTMLDivElement] {
     * Custom function to grow data if items are too small for the given space.
     * Return `undefined` if no more steps can be taken to avoid infinate loop.
     */
-  var onGrowData: js.UndefOr[js.Function1[/* data */ ICommandBarData, ICommandBarData]] = js.undefined
+  var onGrowData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.undefined
   /**
     * Custom function to reduce data if items do not fit in given space. Return `undefined`
     * if no more steps can be taken to avoid infinate loop.
@@ -102,7 +102,7 @@ object ICommandBarProps {
     farItems: js.Array[ICommandBarItemProps] = null,
     onDataGrown: /* movedItem */ ICommandBarItemProps => Unit = null,
     onDataReduced: /* movedItem */ ICommandBarItemProps => Unit = null,
-    onGrowData: /* data */ ICommandBarData => ICommandBarData = null,
+    onGrowData: /* data */ ICommandBarData => js.UndefOr[ICommandBarData] = null,
     onReduceData: /* data */ ICommandBarData => js.UndefOr[ICommandBarData] = null,
     overflowButtonAs: IComponentAs[IButtonProps] = null,
     overflowButtonProps: IButtonProps = null,

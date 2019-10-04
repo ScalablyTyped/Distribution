@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gulp-cheerio"
-version := "0.0-unknown-dt-20190322Z-a169ed"
+version := "0.0-unknown-dt-20190322Z-3395da"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-3fdb15",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-f1664d",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-541c52")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-788ddb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -41,8 +41,12 @@ class SessionDialog protected ()
   ) = this()
   /** The current answer. Undefined unless signaling state Stable. */
   var _answer: js.Any = js.native
-  /** The current offer. Undefined unless signaling state HaveLocalOffer, HaveRemoteOffer, of Stable. */
+  /** The current offer. Undefined unless signaling state HaveLocalOffer, HaveRemoteOffer, or Stable. */
   var _offer: js.Any = js.native
+  /** The rollback answer. Undefined unless signaling state HaveLocalOffer or HaveRemoteOffer. */
+  var _rollbackAnswer: js.Any = js.native
+  /** The rollback offer. Undefined unless signaling state HaveLocalOffer or HaveRemoteOffer. */
+  var _rollbackOffer: js.Any = js.native
   /** The state of the offer/answer exchange. */
   var _signalingState: js.Any = js.native
   /** True if waiting for an ACK to the initial transaction 2xx (UAS only). */
@@ -91,7 +95,7 @@ class SessionDialog protected ()
     * acceptable, the UAC core MUST generate a valid answer in the ACK and
     * then send a BYE immediately.
     * https://tools.ietf.org/html/rfc3261#section-13.2.2.4
-    * @param options ACK options bucket.
+    * @param options - ACK options bucket.
     */
   def ack(): OutgoingAckRequest = js.native
   def ack(options: RequestOptions): OutgoingAckRequest = js.native
@@ -101,10 +105,14 @@ class SessionDialog protected ()
   /** Re-confirm the dialog. Only matters if handling re-INVITE request. */
   def reConfirm(): Unit = js.native
   def reliableSequenceGuard(message: IncomingResponseMessage): Boolean = js.native
+  /**
+    * If not in a stable signaling state, rollback to prior stable signaling state.
+    */
+  def signalingStateRollback(): Unit = js.native
   def signalingStateTransition(message: Body): Unit = js.native
   /**
     * Update the signaling state of the dialog.
-    * @param message The message to base the update off of.
+    * @param message - The message to base the update off of.
     */
   def signalingStateTransition(message: IncomingRequestMessage): Unit = js.native
   def signalingStateTransition(message: IncomingResponseMessage): Unit = js.native

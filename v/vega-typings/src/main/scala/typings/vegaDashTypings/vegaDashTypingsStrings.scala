@@ -584,6 +584,9 @@ object vegaDashTypingsStrings {
   sealed trait dodgerblue extends ColorName
   
   @js.native
+  sealed trait dotbin extends js.Object
+  
+  @js.native
   sealed trait dragenter extends EventType
   
   @js.native
@@ -2527,6 +2530,8 @@ object vegaDashTypingsStrings {
   def diverging: diverging = "diverging".asInstanceOf[diverging]
   @scala.inline
   def dodgerblue: dodgerblue = "dodgerblue".asInstanceOf[dodgerblue]
+  @scala.inline
+  def dotbin: dotbin = "dotbin".asInstanceOf[dotbin]
   @scala.inline
   def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   @scala.inline

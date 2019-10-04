@@ -15,8 +15,8 @@ class Dialog protected ()
   extends typings.sipDotJs.libCoreDialogsDialogMod.Dialog {
   /**
     * Dialog constructor.
-    * @param core User agent core.
-    * @param dialogState Initial dialog state.
+    * @param core - User agent core.
+    * @param dialogState - Initial dialog state.
     */
   protected def this(core: UserAgentCore, dialogState: DialogState) = this()
 }
@@ -30,16 +30,16 @@ object Dialog extends js.Object {
     * constructs the state of the dialog.  This state MUST be maintained
     * for the duration of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.1.2
-    * @param outgoingRequestMessage Outgoing request message for dialog.
-    * @param incomingResponseMessage Incoming response message creating dialog.
+    * @param outgoingRequestMessage - Outgoing request message for dialog.
+    * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = js.native
   /**
     * The UAS then constructs the state of the dialog.  This state MUST be
     * maintained for the duration of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.1.1
-    * @param incomingRequestMessage Incoming request message creating dialog.
-    * @param toTag Tag in the To field in the response to the incoming request.
+    * @param incomingRequestMessage - Incoming request message creating dialog.
+    * @param toTag - Tag in the To field in the response to the incoming request.
     */
   def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = js.native
   def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = js.native

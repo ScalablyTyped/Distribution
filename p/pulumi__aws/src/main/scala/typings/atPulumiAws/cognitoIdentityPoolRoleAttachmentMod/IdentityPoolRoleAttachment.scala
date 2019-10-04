@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolRoleAttachmentMod
 
-import typings.atPulumiAws.Anon_AmbiguousRoleResolution
-import typings.atPulumiAws.Anon_Authenticated
+import typings.atPulumiAws.typesOutputMod.cognitoNs.IdentityPoolRoleAttachmentRoleMapping
+import typings.atPulumiAws.typesOutputMod.cognitoNs.IdentityPoolRoleAttachmentRoles
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,11 +30,11 @@ class IdentityPoolRoleAttachment protected () extends CustomResource {
   /**
     * A List of Role Mapping.
     */
-  val roleMappings: Output[js.UndefOr[js.Array[Anon_AmbiguousRoleResolution]]] = js.native
+  val roleMappings: Output[js.UndefOr[js.Array[IdentityPoolRoleAttachmentRoleMapping]]] = js.native
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
-  val roles: Output[Anon_Authenticated] = js.native
+  val roles: Output[IdentityPoolRoleAttachmentRoles] = js.native
 }
 
 /* static members */

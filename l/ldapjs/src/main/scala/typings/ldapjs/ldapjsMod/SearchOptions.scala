@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SearchOptions extends js.Object {
-  var attributes: js.UndefOr[js.Array[String]] = js.undefined
+  var attributes: js.UndefOr[String | js.Array[String]] = js.undefined
   var derefAliases: js.UndefOr[Double] = js.undefined
   var filter: js.UndefOr[String | Filter] = js.undefined
   var paged: js.UndefOr[Boolean | Anon_PagePause] = js.undefined
@@ -19,7 +19,7 @@ trait SearchOptions extends js.Object {
 object SearchOptions {
   @scala.inline
   def apply(
-    attributes: js.Array[String] = null,
+    attributes: String | js.Array[String] = null,
     derefAliases: Int | Double = null,
     filter: String | Filter = null,
     paged: Boolean | Anon_PagePause = null,
@@ -29,7 +29,7 @@ object SearchOptions {
     typesOnly: js.UndefOr[Boolean] = js.undefined
   ): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (derefAliases != null) __obj.updateDynamic("derefAliases")(derefAliases.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (paged != null) __obj.updateDynamic("paged")(paged.asInstanceOf[js.Any])

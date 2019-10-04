@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListRemoteAccessSessionsRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the remote access session about which you are requesting information.
+    * The Amazon Resource Name (ARN) of the project about which you are requesting information.
     */
   var arn: AmazonResourceName
   /**

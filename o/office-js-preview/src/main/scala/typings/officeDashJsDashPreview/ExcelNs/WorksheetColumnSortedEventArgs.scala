@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Provides information about the worksheet that raised the ColumnSorted event.
+  * Provides information about the column-sorted event and its related worksheet.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait WorksheetColumnSortedEventArgs extends js.Object {
   /**
     *
-    * Gets the range address that represents the sorted areas of a specific worksheet.
+    * Gets the range address that represents the sorted areas of a specific worksheet. Only columns changed as a result of the sort operation are returned.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nanoid
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 A tiny (141 bytes), secure URL-friendly unique string ID generator

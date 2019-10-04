@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "serialize-error"
-version := "4.1.0-8d93cb"
+version := "5.0.0-0ef10f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

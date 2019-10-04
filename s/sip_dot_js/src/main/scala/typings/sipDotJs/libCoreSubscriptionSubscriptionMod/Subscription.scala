@@ -33,8 +33,8 @@ trait Subscription extends js.Object {
     * Send re-SUBSCRIBE request.
     * Refreshing a subscription and unsubscribing.
     * https://tools.ietf.org/html/rfc6665#section-4.1.2.2
-    * @param delegate Request delegate.
-    * @param options Options bucket
+    * @param delegate - Request delegate.
+    * @param options - Options bucket
     */
   def subscribe(): OutgoingSubscribeRequest = js.native
   def subscribe(delegate: OutgoingSubscribeRequestDelegate): OutgoingSubscribeRequest = js.native

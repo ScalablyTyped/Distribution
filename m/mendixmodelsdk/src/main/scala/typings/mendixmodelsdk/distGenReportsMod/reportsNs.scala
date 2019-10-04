@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenReportsMod
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue
 import typings.mendixmodelsdk.distGenDatasetsMod.datasetsNs.IDataSet
 import typings.mendixmodelsdk.distGenDatasetsMod.datasetsNs.IDataSetParameter
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAttribute
@@ -829,6 +830,15 @@ object reportsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): BasicReport = js.native
+    /**
+      * Creates and returns a new BasicReport instance in the SDK and on the server.
+      * The new BasicReport will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): BasicReport = js.native
   }
   
   /* static members */
@@ -1349,6 +1359,15 @@ object reportsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReportButton = js.native
+    /**
+      * Creates and returns a new ReportButton instance in the SDK and on the server.
+      * The new ReportButton will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): ReportButton = js.native
   }
   
   /* static members */
@@ -1803,6 +1822,15 @@ object reportsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReportChart = js.native
+    /**
+      * Creates and returns a new ReportChart instance in the SDK and on the server.
+      * The new ReportChart will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): ReportChart = js.native
   }
   
   /* static members */
@@ -2295,6 +2323,15 @@ object reportsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReportDateRangeSelector = js.native
+    /**
+      * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
+      * The new ReportDateRangeSelector will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): ReportDateRangeSelector = js.native
   }
   
   /* static members */
@@ -2749,6 +2786,15 @@ object reportsNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReportDropDown = js.native
+    /**
+      * Creates and returns a new ReportDropDown instance in the SDK and on the server.
+      * The new ReportDropDown will be automatically stored in the 'widgets' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.2.0 and higher
+      */
+    def createInWidgetValueUnderWidgets(container: WidgetValue): ReportDropDown = js.native
   }
   
   /* static members */

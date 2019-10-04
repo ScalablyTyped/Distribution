@@ -1,7 +1,7 @@
 package typings.atPulumiAws.efsFileSystemMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_TransitionToIa
+import typings.atPulumiAws.typesOutputMod.efsNs.FileSystemLifecyclePolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -50,7 +50,7 @@ class FileSystem protected () extends CustomResource {
   /**
     * A file system [lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/API_LifecyclePolicy.html) object (documented below).
     */
-  val lifecyclePolicy: Output[js.UndefOr[Anon_TransitionToIa]] = js.native
+  val lifecyclePolicy: Output[js.UndefOr[FileSystemLifecyclePolicy]] = js.native
   /**
     * The file system performance mode. Can be either `"generalPurpose"` or `"maxIO"` (Default: `"generalPurpose"`).
     */

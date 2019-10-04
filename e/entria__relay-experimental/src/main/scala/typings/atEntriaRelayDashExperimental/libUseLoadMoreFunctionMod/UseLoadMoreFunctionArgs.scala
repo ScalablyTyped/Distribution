@@ -1,0 +1,49 @@
+package typings.atEntriaRelayDashExperimental.libUseLoadMoreFunctionMod
+
+import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
+import typings.relayDashRuntime.libNetworkRelayObservableMod.Observer
+import typings.relayDashRuntime.libStoreRelayStoreTypesMod.RequestDescriptor
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderPaginationMetadata
+import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UseLoadMoreFunctionArgs extends js.Object {
+  var componentDisplayName: String
+  var connectionPathInFragmentData: js.Array[String | Double]
+  var direction: Direction
+  var fragmentData: js.Any
+  var fragmentIdentifier: String
+  var fragmentNode: ReaderFragment
+  var fragmentOwner: RequestDescriptor | (js.Array[RequestDescriptor | Null]) | Null
+  var fragmentRefPathInResponse: js.Array[String | Double]
+  var observer: Observer[GraphQLResponse]
+  var paginationMetadata: ReaderPaginationMetadata
+  var paginationRequest: ConcreteRequest
+  def onReset(): Unit
+}
+
+object UseLoadMoreFunctionArgs {
+  @scala.inline
+  def apply(
+    componentDisplayName: String,
+    connectionPathInFragmentData: js.Array[String | Double],
+    direction: Direction,
+    fragmentData: js.Any,
+    fragmentIdentifier: String,
+    fragmentNode: ReaderFragment,
+    fragmentRefPathInResponse: js.Array[String | Double],
+    observer: Observer[GraphQLResponse],
+    onReset: () => Unit,
+    paginationMetadata: ReaderPaginationMetadata,
+    paginationRequest: ConcreteRequest,
+    fragmentOwner: RequestDescriptor | (js.Array[RequestDescriptor | Null]) = null
+  ): UseLoadMoreFunctionArgs = {
+    val __obj = js.Dynamic.literal(componentDisplayName = componentDisplayName, connectionPathInFragmentData = connectionPathInFragmentData, direction = direction, fragmentData = fragmentData, fragmentIdentifier = fragmentIdentifier, fragmentNode = fragmentNode, fragmentRefPathInResponse = fragmentRefPathInResponse, observer = observer, onReset = js.Any.fromFunction0(onReset), paginationMetadata = paginationMetadata, paginationRequest = paginationRequest)
+    if (fragmentOwner != null) __obj.updateDynamic("fragmentOwner")(fragmentOwner.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UseLoadMoreFunctionArgs]
+  }
+}
+

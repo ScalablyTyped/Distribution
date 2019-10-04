@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayRestApiMod
 
-import typings.atPulumiAws.Anon_TypesInput
+import typings.atPulumiAws.typesInputMod.apigatewayNs.RestApiEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait RestApiArgs extends js.Object {
   /**
     * Nested argument defining API endpoint configuration including endpoint type. Defined below.
     */
-  val endpointConfiguration: js.UndefOr[Input[Anon_TypesInput]] = js.undefined
+  val endpointConfiguration: js.UndefOr[Input[RestApiEndpointConfiguration]] = js.undefined
   /**
     * Minimum response size to compress for the REST API. Integer between -1 and 10485760 (10MB). Setting a value greater than -1 will enable compression, -1 disables compression (default).
     */
@@ -48,7 +48,7 @@ object RestApiArgs {
     binaryMediaTypes: Input[js.Array[Input[String]]] = null,
     body: Input[String] = null,
     description: Input[String] = null,
-    endpointConfiguration: Input[Anon_TypesInput] = null,
+    endpointConfiguration: Input[RestApiEndpointConfiguration] = null,
     minimumCompressionSize: Input[Double] = null,
     name: Input[String] = null,
     policy: Input[String] = null

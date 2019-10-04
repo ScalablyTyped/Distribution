@@ -1,11 +1,11 @@
 package typings.atPulumiAws.cloudwatchEventTargetMod
 
-import typings.atPulumiAws.Anon_ArraySize
-import typings.atPulumiAws.Anon_Group
-import typings.atPulumiAws.Anon_InputPaths
-import typings.atPulumiAws.Anon_KeyValues
-import typings.atPulumiAws.Anon_MessageGroupId
-import typings.atPulumiAws.Anon_PartitionKeyPath
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetBatchTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetEcsTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetInputTransformer
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetKinesisTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetRunCommandTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetSqsTarget
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,11 +34,11 @@ class EventTarget protected () extends CustomResource {
   /**
     * Parameters used when you are using the rule to invoke an Amazon Batch Job. Documented below. A maximum of 1 are allowed.
     */
-  val batchTarget: Output[js.UndefOr[Anon_ArraySize]] = js.native
+  val batchTarget: Output[js.UndefOr[EventTargetBatchTarget]] = js.native
   /**
     * Parameters used when you are using the rule to invoke Amazon ECS Task. Documented below. A maximum of 1 are allowed.
     */
-  val ecsTarget: Output[js.UndefOr[Anon_Group]] = js.native
+  val ecsTarget: Output[js.UndefOr[EventTargetEcsTarget]] = js.native
   /**
     * Valid JSON text passed to the target.
     */
@@ -51,11 +51,11 @@ class EventTarget protected () extends CustomResource {
   /**
     * Parameters used when you are providing a custom input to a target based on certain event data.
     */
-  val inputTransformer: Output[js.UndefOr[Anon_InputPaths]] = js.native
+  val inputTransformer: Output[js.UndefOr[EventTargetInputTransformer]] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon Kinesis Stream. Documented below. A maximum of 1 are allowed.
     */
-  val kinesisTarget: Output[js.UndefOr[Anon_PartitionKeyPath]] = js.native
+  val kinesisTarget: Output[js.UndefOr[EventTargetKinesisTarget]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecsTarget` is used.
     */
@@ -67,11 +67,11 @@ class EventTarget protected () extends CustomResource {
   /**
     * Parameters used when you are using the rule to invoke Amazon EC2 Run Command. Documented below. A maximum of 5 are allowed.
     */
-  val runCommandTargets: Output[js.UndefOr[js.Array[Anon_KeyValues]]] = js.native
+  val runCommandTargets: Output[js.UndefOr[js.Array[EventTargetRunCommandTarget]]] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon SQS Queue. Documented below. A maximum of 1 are allowed.
     */
-  val sqsTarget: Output[js.UndefOr[Anon_MessageGroupId]] = js.native
+  val sqsTarget: Output[js.UndefOr[EventTargetSqsTarget]] = js.native
   /**
     * The unique target assignment ID.  If missing, will generate a random, unique id.
     */

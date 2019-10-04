@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "slate-react"
-version := "0.22-dt-20190802Z-c5cdc9"
+version := "0.22-dt-20190802Z-c84632"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-ca7e6c",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-06c3ac",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-b3917f",
   "org.scalablytyped" %%% "slate" % "0.47-dt-20190812Z-88855d",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

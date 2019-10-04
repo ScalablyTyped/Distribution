@@ -5,6 +5,7 @@ import typings.awsDashLambda.awsDashLambdaMod.CodePipelineActionState
 import typings.awsDashLambda.awsDashLambdaMod.CodePipelineStageState
 import typings.awsDashLambda.awsDashLambdaMod.CodePipelineState
 import typings.awsDashLambda.awsDashLambdaMod.FirehoseRecordTransformationStatus
+import typings.awsDashLambda.awsDashLambdaMod.S3BatchResultResultCode
 import typings.awsDashLambda.awsDashLambdaMod._SQSMessageAttributeDataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -180,6 +181,9 @@ object awsDashLambdaStrings {
   sealed trait PASSWORD_VERIFIER extends js.Object
   
   @js.native
+  sealed trait PermanentFailure extends S3BatchResultResultCode
+  
+  @js.native
   sealed trait PlainText extends js.Object
   
   @js.native
@@ -255,6 +259,12 @@ object awsDashLambdaStrings {
   
   @js.native
   sealed trait String extends _SQSMessageAttributeDataType
+  
+  @js.native
+  sealed trait Succeeded extends S3BatchResultResultCode
+  
+  @js.native
+  sealed trait TemporaryFailure extends S3BatchResultResultCode
   
   @js.native
   sealed trait Test extends CodePipelineActionCategory
@@ -440,6 +450,8 @@ object awsDashLambdaStrings {
   @scala.inline
   def PASSWORD_VERIFIER: PASSWORD_VERIFIER = "PASSWORD_VERIFIER".asInstanceOf[PASSWORD_VERIFIER]
   @scala.inline
+  def PermanentFailure: PermanentFailure = "PermanentFailure".asInstanceOf[PermanentFailure]
+  @scala.inline
   def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
   @scala.inline
   def PostAuthentication_Authentication: PostAuthentication_Authentication = "PostAuthentication_Authentication".asInstanceOf[PostAuthentication_Authentication]
@@ -485,6 +497,10 @@ object awsDashLambdaStrings {
   def Source: Source = "Source".asInstanceOf[Source]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
+  @scala.inline
+  def Succeeded: Succeeded = "Succeeded".asInstanceOf[Succeeded]
+  @scala.inline
+  def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   @scala.inline
   def Test: Test = "Test".asInstanceOf[Test]
   @scala.inline

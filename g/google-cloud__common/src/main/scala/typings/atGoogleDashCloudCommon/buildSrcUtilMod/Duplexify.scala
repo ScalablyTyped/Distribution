@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Duplexify extends Duplex {
-  val destroyed: Boolean = js.native
   def setReadable(): Unit = js.native
   def setReadable(readable: Readable): Unit = js.native
   @JSName("setReadable")

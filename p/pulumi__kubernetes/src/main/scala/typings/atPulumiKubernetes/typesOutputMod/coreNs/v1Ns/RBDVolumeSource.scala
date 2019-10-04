@@ -18,38 +18,37 @@ trait RBDVolumeSource extends js.Object {
   val fsType: String
   /**
     * The rados image name. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val image: String
   /**
     * Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val keyring: String
   /**
     * A collection of Ceph monitors. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val monitors: js.Array[String]
   /**
     * The rados pool name. Default is rbd. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val pool: String
   /**
     * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More
-    * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val readOnly: Boolean
   /**
     * SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring.
-    * Default is nil. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val secretRef: LocalObjectReference
   /**
     * The rados user name. Default is admin. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+    * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
   val user: String
 }

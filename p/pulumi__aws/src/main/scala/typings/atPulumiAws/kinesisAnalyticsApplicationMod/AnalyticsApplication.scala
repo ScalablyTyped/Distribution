@@ -1,11 +1,11 @@
 package typings.atPulumiAws.kinesisAnalyticsApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IdKinesisFirehose
-import typings.atPulumiAws.Anon_IdKinesisFirehoseKinesisStream
-import typings.atPulumiAws.Anon_IdLogStreamArn
-import typings.atPulumiAws.Anon_IdS3
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesOutputMod.kinesisNs.AnalyticsApplicationCloudwatchLoggingOptions
+import typings.atPulumiAws.typesOutputMod.kinesisNs.AnalyticsApplicationInputs
+import typings.atPulumiAws.typesOutputMod.kinesisNs.AnalyticsApplicationOutput
+import typings.atPulumiAws.typesOutputMod.kinesisNs.AnalyticsApplicationReferenceDataSources
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -36,7 +36,7 @@ class AnalyticsApplication protected () extends CustomResource {
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: Output[js.UndefOr[Anon_IdLogStreamArn]] = js.native
+  val cloudwatchLoggingOptions: Output[js.UndefOr[AnalyticsApplicationCloudwatchLoggingOptions]] = js.native
   /**
     * SQL Code to transform input data, and generate output.
     */
@@ -52,7 +52,7 @@ class AnalyticsApplication protected () extends CustomResource {
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: Output[js.UndefOr[Anon_IdKinesisFirehose]] = js.native
+  val inputs: Output[js.UndefOr[AnalyticsApplicationInputs]] = js.native
   /**
     * The Timestamp when the application was last updated.
     */
@@ -64,12 +64,12 @@ class AnalyticsApplication protected () extends CustomResource {
   /**
     * Output destination configuration of the application. See Outputs below for more details.
     */
-  val outputs: Output[js.UndefOr[js.Array[Anon_IdKinesisFirehoseKinesisStream]]] = js.native
+  val outputs: Output[js.UndefOr[js.Array[AnalyticsApplicationOutput]]] = js.native
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: Output[js.UndefOr[Anon_IdS3]] = js.native
+  val referenceDataSources: Output[js.UndefOr[AnalyticsApplicationReferenceDataSources]] = js.native
   /**
     * The Status of the application.
     */

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ec2SpotFleetRequestMod
 
-import typings.atPulumiAws.Anon_Ami
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotFleetRequestLaunchSpecification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -66,7 +66,7 @@ class SpotFleetRequest protected () extends CustomResource {
     * spot-fleet request. Can be specified multiple times to define different bids
     * across different markets and instance types.
     */
-  val launchSpecifications: Output[js.Array[Anon_Ami]] = js.native
+  val launchSpecifications: Output[js.Array[SpotFleetRequestLaunchSpecification]] = js.native
   /**
     * A list of elastic load balancer names to add to the Spot fleet.
     */

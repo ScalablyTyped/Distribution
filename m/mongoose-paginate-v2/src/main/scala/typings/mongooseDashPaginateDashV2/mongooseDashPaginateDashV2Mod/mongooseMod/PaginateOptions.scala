@@ -14,7 +14,7 @@ trait PaginateOptions extends js.Object {
   var offset: js.UndefOr[Double] = js.undefined
   var page: js.UndefOr[Double] = js.undefined
   /* tslint:disable-next-line: ban-types */
-  var populate: js.UndefOr[(js.Array[js.Object | String]) | js.Object | String] = js.undefined
+  var populate: js.UndefOr[(js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions] = js.undefined
   /* tslint:disable-next-line: ban-types */
   var select: js.UndefOr[js.Object | String] = js.undefined
   /* tslint:disable-next-line: ban-types */
@@ -31,7 +31,7 @@ object PaginateOptions {
     limit: Int | Double = null,
     offset: Int | Double = null,
     page: Int | Double = null,
-    populate: (js.Array[js.Object | String]) | js.Object | String = null,
+    populate: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions = null,
     select: js.Object | String = null,
     sort: js.Object | String = null
   ): PaginateOptions = {

@@ -1,9 +1,9 @@
 package typings.atPulumiAws.appsyncDataSourceMod
 
-import typings.atPulumiAws.Anon_EndpointInput
-import typings.atPulumiAws.Anon_EndpointRegion
-import typings.atPulumiAws.Anon_FunctionArnInput
-import typings.atPulumiAws.Anon_RegionTableName
+import typings.atPulumiAws.typesInputMod.appsyncNs.DataSourceDynamodbConfig
+import typings.atPulumiAws.typesInputMod.appsyncNs.DataSourceElasticsearchConfig
+import typings.atPulumiAws.typesInputMod.appsyncNs.DataSourceHttpConfig
+import typings.atPulumiAws.typesInputMod.appsyncNs.DataSourceLambdaConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,19 +25,19 @@ trait DataSourceState extends js.Object {
   /**
     * DynamoDB settings. See below
     */
-  val dynamodbConfig: js.UndefOr[Input[Anon_RegionTableName]] = js.undefined
+  val dynamodbConfig: js.UndefOr[Input[DataSourceDynamodbConfig]] = js.undefined
   /**
     * Amazon Elasticsearch settings. See below
     */
-  val elasticsearchConfig: js.UndefOr[Input[Anon_EndpointRegion]] = js.undefined
+  val elasticsearchConfig: js.UndefOr[Input[DataSourceElasticsearchConfig]] = js.undefined
   /**
     * HTTP settings. See below
     */
-  val httpConfig: js.UndefOr[Input[Anon_EndpointInput]] = js.undefined
+  val httpConfig: js.UndefOr[Input[DataSourceHttpConfig]] = js.undefined
   /**
     * AWS Lambda settings. See below
     */
-  val lambdaConfig: js.UndefOr[Input[Anon_FunctionArnInput]] = js.undefined
+  val lambdaConfig: js.UndefOr[Input[DataSourceLambdaConfig]] = js.undefined
   /**
     * A user-supplied name for the DataSource.
     */
@@ -58,10 +58,10 @@ object DataSourceState {
     apiId: Input[String] = null,
     arn: Input[String] = null,
     description: Input[String] = null,
-    dynamodbConfig: Input[Anon_RegionTableName] = null,
-    elasticsearchConfig: Input[Anon_EndpointRegion] = null,
-    httpConfig: Input[Anon_EndpointInput] = null,
-    lambdaConfig: Input[Anon_FunctionArnInput] = null,
+    dynamodbConfig: Input[DataSourceDynamodbConfig] = null,
+    elasticsearchConfig: Input[DataSourceElasticsearchConfig] = null,
+    httpConfig: Input[DataSourceHttpConfig] = null,
+    lambdaConfig: Input[DataSourceLambdaConfig] = null,
     name: Input[String] = null,
     serviceRoleArn: Input[String] = null,
     `type`: Input[String] = null

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.kmsGetSecretsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Context
+import typings.atPulumiAws.typesOutputMod.kmsNs.GetSecretsSecret
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait GetSecretsResult extends js.Object {
     * Map containing each `secret` `name` as the key with its decrypted plaintext value
     */
   val plaintext: StringDictionary[String]
-  val secrets: js.Array[Anon_Context]
+  val secrets: js.Array[GetSecretsSecret]
 }
 
 object GetSecretsResult {
   @scala.inline
-  def apply(id: String, plaintext: StringDictionary[String], secrets: js.Array[Anon_Context]): GetSecretsResult = {
+  def apply(id: String, plaintext: StringDictionary[String], secrets: js.Array[GetSecretsSecret]): GetSecretsResult = {
     val __obj = js.Dynamic.literal(id = id, plaintext = plaintext, secrets = secrets)
   
     __obj.asInstanceOf[GetSecretsResult]

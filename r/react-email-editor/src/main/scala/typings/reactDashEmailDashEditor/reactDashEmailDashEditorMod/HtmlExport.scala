@@ -1,0 +1,20 @@
+package typings.reactDashEmailDashEditor.reactDashEmailDashEditorMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HtmlExport extends js.Object {
+  val design: Design
+  val html: String
+}
+
+object HtmlExport {
+  @scala.inline
+  def apply(design: Design, html: String): HtmlExport = {
+    val __obj = js.Dynamic.literal(design = design, html = html)
+  
+    __obj.asInstanceOf[HtmlExport]
+  }
+}
+

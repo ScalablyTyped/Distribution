@@ -16,12 +16,12 @@ trait IncomingRequestDelegate extends js.Object {
     * As such, there is currently no way to externally impact the
     * response to the a CANCEL request and thus the method here is
     * receiving a "message" (as apposed to a "uas").
-    * @param message Incoming CANCEL request message.
+    * @param message - Incoming CANCEL request message.
     */
   var onCancel: js.UndefOr[js.Function1[/* message */ IncomingRequestMessage, Unit]] = js.undefined
   /**
     * A transport error occurred attempted to send a response.
-    * @param error Transport error.
+    * @param error - Transport error.
     */
   var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.undefined
 }

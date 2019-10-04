@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FrameBase
   extends Evalable
-     with JSEvalable {
+     with JSEvalable[js.Any] {
   /**
     * The method queries frame for the selector.
     * If there's no such element within the frame, the method will resolve to null.
@@ -107,13 +107,13 @@ trait FrameBase
   /**
     * Shortcut for waitForFunction.
     */
-  def waitFor(selector: EvaluateFn): js.Promise[JSHandle] = js.native
-  def waitFor(selector: EvaluateFn, options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle] = js.native
+  def waitFor(selector: EvaluateFn[_]): js.Promise[JSHandle[_]] = js.native
+  def waitFor(selector: EvaluateFn[_], options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
   /**
     * Allows waiting for various conditions.
     */
-  def waitForFunction(fn: EvaluateFn): js.Promise[JSHandle] = js.native
-  def waitForFunction(fn: EvaluateFn, options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle] = js.native
+  def waitForFunction(fn: EvaluateFn[_]): js.Promise[JSHandle[_]] = js.native
+  def waitForFunction(fn: EvaluateFn[_], options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
   /**
     * Wait for the page navigation occur.
     * @param options The navigation parameters.

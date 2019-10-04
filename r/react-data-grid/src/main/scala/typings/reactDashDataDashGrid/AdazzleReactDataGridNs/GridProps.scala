@@ -175,6 +175,10 @@ trait GridProps[T] extends js.Object {
     */
   var onRowUpdated: js.UndefOr[js.Function1[/* e */ RowUpdateEvent[T], Unit]] = js.undefined
   /**
+    * Called when the grid is scrolled
+    */
+  var onScroll: js.UndefOr[js.Function1[/* scrollState */ ScrollState, Unit]] = js.undefined
+  /**
     * A custom formatter for select row column
     * @default AdazzleReactDataGridPlugins.Editors.CheckboxEditor
     */
@@ -270,6 +274,7 @@ object GridProps {
     onRowExpandToggle: /* props */ OnRowExpandToggle => Unit = null,
     onRowSelect: /* rows */ js.Array[T] => Unit = null,
     onRowUpdated: /* e */ RowUpdateEvent[T] => Unit = null,
+    onScroll: /* scrollState */ ScrollState => Unit = null,
     rowActionsCell: (ComponentClass[_, ComponentState]) | StatelessComponent[_] = null,
     rowGroupRenderer: ComponentType[js.Object] = null,
     rowHeight: Int | Double = null,
@@ -311,6 +316,7 @@ object GridProps {
     if (onRowExpandToggle != null) __obj.updateDynamic("onRowExpandToggle")(js.Any.fromFunction1(onRowExpandToggle))
     if (onRowSelect != null) __obj.updateDynamic("onRowSelect")(js.Any.fromFunction1(onRowSelect))
     if (onRowUpdated != null) __obj.updateDynamic("onRowUpdated")(js.Any.fromFunction1(onRowUpdated))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (rowActionsCell != null) __obj.updateDynamic("rowActionsCell")(rowActionsCell.asInstanceOf[js.Any])
     if (rowGroupRenderer != null) __obj.updateDynamic("rowGroupRenderer")(rowGroupRenderer.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])

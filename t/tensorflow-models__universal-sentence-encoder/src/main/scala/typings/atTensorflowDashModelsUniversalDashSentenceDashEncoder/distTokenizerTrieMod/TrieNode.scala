@@ -8,25 +8,14 @@ import scala.scalajs.js.annotation._
 trait TrieNode extends js.Object {
   var children: StringDictionary[TrieNode]
   var end: Boolean
-  var index: Double
-  var key: js.Any
   var parent: TrieNode
-  var score: Double
-  def getWord(): OutputNode
+  var word: OutputNode
 }
 
 object TrieNode {
   @scala.inline
-  def apply(
-    children: StringDictionary[TrieNode],
-    end: Boolean,
-    getWord: () => OutputNode,
-    index: Double,
-    key: js.Any,
-    parent: TrieNode,
-    score: Double
-  ): TrieNode = {
-    val __obj = js.Dynamic.literal(children = children, end = end, getWord = js.Any.fromFunction0(getWord), index = index, key = key, parent = parent, score = score)
+  def apply(children: StringDictionary[TrieNode], end: Boolean, parent: TrieNode, word: OutputNode): TrieNode = {
+    val __obj = js.Dynamic.literal(children = children, end = end, parent = parent, word = word)
   
     __obj.asInstanceOf[TrieNode]
   }

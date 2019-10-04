@@ -1,8 +1,8 @@
 package typings.samchon.collectionsMod
 
-import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseIteratorIteratorMod.Iterator
-import typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator
+import typings.tstl.tstlMod.baseNs.Container
+import typings.tstl.tstlMod.baseNs.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

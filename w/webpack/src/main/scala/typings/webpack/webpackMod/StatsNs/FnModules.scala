@@ -9,7 +9,7 @@ trait FnModules extends js.Object {
   var assets: js.UndefOr[js.Array[String]] = js.undefined
   var built: Boolean
   var cacheable: Boolean
-  var chunks: js.Array[Double]
+  var chunks: js.Array[Double | String]
   var depth: js.UndefOr[Double] = js.undefined
   var errors: Double
   var failed: Boolean
@@ -43,7 +43,7 @@ object FnModules {
   def apply(
     built: Boolean,
     cacheable: Boolean,
-    chunks: js.Array[Double],
+    chunks: js.Array[Double | String],
     errors: Double,
     failed: Boolean,
     id: Double | String,

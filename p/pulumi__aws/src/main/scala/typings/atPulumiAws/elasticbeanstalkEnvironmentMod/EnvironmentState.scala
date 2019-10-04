@@ -1,9 +1,10 @@
 package typings.atPulumiAws.elasticbeanstalkEnvironmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameNamespaceResource
 import typings.atPulumiAws.elasticbeanstalkApplicationMod.Application
 import typings.atPulumiAws.elasticbeanstalkApplicationVersionMod.ApplicationVersion
+import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.EnvironmentAllSetting
+import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.EnvironmentSetting
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,11 +12,11 @@ import scala.scalajs.js.annotation._
 
 trait EnvironmentState extends js.Object {
   /**
-    * List of all option settings configured in the Environment. These
+    * List of all option settings configured in this Environment. These
     * are a combination of default settings and their overrides from `setting` in
     * the configuration.
     */
-  val allSettings: js.UndefOr[Input[js.Array[Input[Anon_NameNamespaceResource]]]] = js.undefined
+  val allSettings: js.UndefOr[Input[js.Array[Input[EnvironmentAllSetting]]]] = js.undefined
   /**
     * Name of the application that contains the version
     * to be deployed
@@ -23,11 +24,11 @@ trait EnvironmentState extends js.Object {
   val application: js.UndefOr[Input[Application]] = js.undefined
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
-    * The autoscaling groups used by this environment.
+    * The autoscaling groups used by this Environment.
     */
   val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * Fully qualified DNS name for the Environment.
+    * Fully qualified DNS name for this Environment.
     */
   val cname: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -40,15 +41,19 @@ trait EnvironmentState extends js.Object {
     */
   val description: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Instances used by this environment.
+    * The URL to the Load Balancer for this Environment
+    */
+  val endpointUrl: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Instances used by this Environment.
     */
   val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * Launch configurations in use by this environment.
+    * Launch configurations in use by this Environment.
     */
   val launchConfigurations: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
-    * Elastic load balancers in use by this environment.
+    * Elastic load balancers in use by this Environment.
     */
   val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -69,7 +74,7 @@ trait EnvironmentState extends js.Object {
     */
   val pollInterval: js.UndefOr[Input[String]] = js.undefined
   /**
-    * SQS queues in use by this environment.
+    * SQS queues in use by this Environment.
     */
   val queues: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -77,7 +82,7 @@ trait EnvironmentState extends js.Object {
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: js.UndefOr[Input[js.Array[Input[Anon_NameNamespaceResource]]]] = js.undefined
+  val settings: js.UndefOr[Input[js.Array[Input[EnvironmentSetting]]]] = js.undefined
   /**
     * A solution stack to base your environment
     * off of. Example stacks can be found in the [Amazon API documentation][1]
@@ -98,7 +103,7 @@ trait EnvironmentState extends js.Object {
     */
   val tier: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Autoscaling triggers in use by this environment.
+    * Autoscaling triggers in use by this Environment.
     */
   val triggers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
@@ -118,13 +123,14 @@ trait EnvironmentState extends js.Object {
 object EnvironmentState {
   @scala.inline
   def apply(
-    allSettings: Input[js.Array[Input[Anon_NameNamespaceResource]]] = null,
+    allSettings: Input[js.Array[Input[EnvironmentAllSetting]]] = null,
     application: Input[Application] = null,
     arn: Input[String] = null,
     autoscalingGroups: Input[js.Array[Input[String]]] = null,
     cname: Input[String] = null,
     cnamePrefix: Input[String] = null,
     description: Input[String] = null,
+    endpointUrl: Input[String] = null,
     instances: Input[js.Array[Input[String]]] = null,
     launchConfigurations: Input[js.Array[Input[String]]] = null,
     loadBalancers: Input[js.Array[Input[String]]] = null,
@@ -132,7 +138,7 @@ object EnvironmentState {
     platformArn: Input[String] = null,
     pollInterval: Input[String] = null,
     queues: Input[js.Array[Input[String]]] = null,
-    settings: Input[js.Array[Input[Anon_NameNamespaceResource]]] = null,
+    settings: Input[js.Array[Input[EnvironmentSetting]]] = null,
     solutionStackName: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     templateName: Input[String] = null,
@@ -149,6 +155,7 @@ object EnvironmentState {
     if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])
     if (cnamePrefix != null) __obj.updateDynamic("cnamePrefix")(cnamePrefix.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
     if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
     if (launchConfigurations != null) __obj.updateDynamic("launchConfigurations")(launchConfigurations.asInstanceOf[js.Any])
     if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])

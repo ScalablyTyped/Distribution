@@ -50,6 +50,7 @@ class Capabilities () extends CreateSessionCapabilities {
     *     'dismiss', or 'ignore'. Defaults to 'dismiss'.
     * @return {!Capabilities} A self reference.
     */
+  def setAlertBehavior(): Capabilities = js.native
   def setAlertBehavior(behavior: String): Capabilities = js.native
   /**
     * Sets whether native events should be used.

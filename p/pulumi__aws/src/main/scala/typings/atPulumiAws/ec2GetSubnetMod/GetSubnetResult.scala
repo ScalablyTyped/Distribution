@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetSubnetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetSubnetFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GetSubnetResult extends js.Object {
   val availabilityZoneId: String
   val cidrBlock: String
   val defaultForAz: Boolean
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSubnetFilter]] = js.undefined
   val id: String
   val ipv6CidrBlock: String
   val ipv6CidrBlockAssociationId: String
@@ -47,7 +47,7 @@ object GetSubnetResult {
     state: String,
     tags: StringDictionary[js.Any],
     vpcId: String,
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetSubnetFilter] = null
   ): GetSubnetResult = {
     val __obj = js.Dynamic.literal(arn = arn, assignIpv6AddressOnCreation = assignIpv6AddressOnCreation, availabilityZone = availabilityZone, availabilityZoneId = availabilityZoneId, cidrBlock = cidrBlock, defaultForAz = defaultForAz, id = id, ipv6CidrBlock = ipv6CidrBlock, ipv6CidrBlockAssociationId = ipv6CidrBlockAssociationId, mapPublicIpOnLaunch = mapPublicIpOnLaunch, ownerId = ownerId, state = state, tags = tags, vpcId = vpcId)
     if (filters != null) __obj.updateDynamic("filters")(filters)

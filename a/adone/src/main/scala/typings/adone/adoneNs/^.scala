@@ -1,5 +1,6 @@
 package typings.adone.adoneNs
 
+import typings.adone.Fn_String
 import typings.adone.adoneNs.INs.LazifyOptions
 import typings.adone.adoneNs.INs.Runtime
 import typings.adone.adoneNs.INs.Tag
@@ -10,9 +11,7 @@ import typings.adone.adoneNumbers.`false`
 import typings.adone.adoneNumbers.`true`
 import typings.lodash.lodashMod.LoDashStatic
 import typings.node.Buffer
-import typings.node.NodeJSNs.Immediate
 import typings.node.NodeJSNs.Process
-import typings.node.NodeJSNs.Timeout
 import typings.std.DateConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,16 +20,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone")
 @js.native
 object ^ extends js.Object {
-  val Date: js.Function0[String] with DateConstructor = js.native
+  val Date: Fn_String with DateConstructor = js.native
   val EMPTY_BUFFER: Buffer = js.native
   val ETC_PATH: String = js.native
   val ROOT_PATH: String = js.native
   val _null: js.Symbol = js.native
   val assert: AssertFunction = js.native
   val bad: typings.adone.adoneStrings.bad = js.native
-  val clearImmediate: js.Function1[/* immediateId */ Immediate, Unit] = js.native
-  val clearInterval: js.Function1[/* intervalId */ Timeout, Unit] = js.native
-  val clearTimeout: js.Function1[/* timeoutId */ Timeout, Unit] = js.native
   val configuration: js.Object = js.native
   /**
     * Creates a new datetime object
@@ -42,23 +38,6 @@ object ^ extends js.Object {
   val ok: typings.adone.adoneStrings.ok = js.native
   val `package`: js.Object = js.native
   val runtime: Runtime = js.native
-  val setImmediate: js.Function2[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* repeated */ js.Any, 
-    Immediate
-  ] = js.native
-  val setInterval: js.Function3[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* ms */ Double, 
-    /* repeated */ js.Any, 
-    Timeout
-  ] = js.native
-  val setTimeout: js.Function3[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* ms */ Double, 
-    /* repeated */ js.Any, 
-    Timeout
-  ] = js.native
   val tag: Tag = js.native
   def definePrivate(modules: js.Object, obj: js.Object): js.Object = js.native
   def falsely(): `false` = js.native

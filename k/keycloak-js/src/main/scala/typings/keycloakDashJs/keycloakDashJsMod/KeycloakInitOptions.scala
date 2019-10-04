@@ -38,6 +38,12 @@ trait KeycloakInitOptions extends js.Object {
   		 */
   var onLoad: js.UndefOr[KeycloakOnLoad] = js.undefined
   /**
+  		 * Configures the Proof Key for Code Exchange (PKCE) method to use.
+  		 * The currently allowed method is 'S256'.
+  		 * If not configured, PKCE will not be used.
+  		 */
+  var pkceMethod: js.UndefOr[KeycloakPkceMethod] = js.undefined
+  /**
   		 * Set the promise type. If set to `'native'` all methods returning a promise
   		 * will return a native JavaScript promise. If not set will return
   		 * Keycloak specific promise objects.
@@ -84,6 +90,7 @@ object KeycloakInitOptions {
     flow: KeycloakFlow = null,
     idToken: String = null,
     onLoad: KeycloakOnLoad = null,
+    pkceMethod: KeycloakPkceMethod = null,
     promiseType: KeycloakPromiseType = null,
     redirectUri: String = null,
     refreshToken: String = null,
@@ -99,6 +106,7 @@ object KeycloakInitOptions {
     if (flow != null) __obj.updateDynamic("flow")(flow)
     if (idToken != null) __obj.updateDynamic("idToken")(idToken)
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (pkceMethod != null) __obj.updateDynamic("pkceMethod")(pkceMethod)
     if (promiseType != null) __obj.updateDynamic("promiseType")(promiseType)
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)

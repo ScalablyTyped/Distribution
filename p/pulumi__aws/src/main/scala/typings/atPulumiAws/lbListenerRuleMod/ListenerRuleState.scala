@@ -1,7 +1,7 @@
 package typings.atPulumiAws.lbListenerRuleMod
 
-import typings.atPulumiAws.Anon_AuthenticateCognitoAuthenticateOidc
-import typings.atPulumiAws.Anon_FieldValues
+import typings.atPulumiAws.typesInputMod.lbNs.ListenerRuleAction
+import typings.atPulumiAws.typesInputMod.lbNs.ListenerRuleCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ListenerRuleState extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: js.UndefOr[Input[js.Array[Input[Anon_AuthenticateCognitoAuthenticateOidc]]]] = js.undefined
+  val actions: js.UndefOr[Input[js.Array[Input[ListenerRuleAction]]]] = js.undefined
   /**
     * The ARN of the rule (matches `id`)
     */
@@ -19,7 +19,7 @@ trait ListenerRuleState extends js.Object {
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: js.UndefOr[Input[js.Array[Input[Anon_FieldValues]]]] = js.undefined
+  val conditions: js.UndefOr[Input[js.Array[Input[ListenerRuleCondition]]]] = js.undefined
   /**
     * The ARN of the listener to which to attach the rule.
     */
@@ -33,9 +33,9 @@ trait ListenerRuleState extends js.Object {
 object ListenerRuleState {
   @scala.inline
   def apply(
-    actions: Input[js.Array[Input[Anon_AuthenticateCognitoAuthenticateOidc]]] = null,
+    actions: Input[js.Array[Input[ListenerRuleAction]]] = null,
     arn: Input[String] = null,
-    conditions: Input[js.Array[Input[Anon_FieldValues]]] = null,
+    conditions: Input[js.Array[Input[ListenerRuleCondition]]] = null,
     listenerArn: Input[String] = null,
     priority: Input[Double] = null
   ): ListenerRuleState = {

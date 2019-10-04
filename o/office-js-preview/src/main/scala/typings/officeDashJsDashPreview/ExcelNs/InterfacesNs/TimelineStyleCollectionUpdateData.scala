@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the TimelineStyleCollection object, for use in "timelineStyleCollection.set({ ... })". */
+/** An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ... })`. */
 trait TimelineStyleCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[TimelineStyleData]] = js.undefined
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ffi"
-version := "0.2-dt-20190717Z-d1303f"
+version := "0.2-dt-20190717Z-c245a3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
-  "org.scalablytyped" %%% "ref" % "0.0-unknown-dt-20190322Z-a38f0a",
-  "org.scalablytyped" %%% "ref-struct" % "0.0-unknown-dt-20190322Z-e8857b",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
+  "org.scalablytyped" %%% "ref" % "0.0-unknown-dt-20190322Z-21e306",
+  "org.scalablytyped" %%% "ref-struct" % "0.0-unknown-dt-20190322Z-b6fd25",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

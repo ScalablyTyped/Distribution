@@ -37,8 +37,8 @@ trait InteractiveMapProps extends StaticMapProps {
   var onTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onTransitionInterrupt: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
-  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
+  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.undefined
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
   var onWheel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var scrollZoom: js.UndefOr[Boolean] = js.undefined
   var touchAction: js.UndefOr[String] = js.undefined
@@ -96,8 +96,8 @@ object InteractiveMapProps {
     onTransitionEnd: () => Unit = null,
     onTransitionInterrupt: () => Unit = null,
     onTransitionStart: () => Unit = null,
-    onViewStateChange: ViewStateChangeHandler = null,
-    onViewportChange: ViewportChangeHandler = null,
+    onViewStateChange: ContextViewStateChangeHandler = null,
+    onViewportChange: ContextViewportChangeHandler = null,
     onWheel: /* event */ PointerEvent => Unit = null,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[Boolean] = js.undefined,

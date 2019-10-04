@@ -176,6 +176,9 @@ object stripeStrings {
   sealed trait blocked extends js.Object
   
   @js.native
+  sealed trait book extends js.Object
+  
+  @js.native
   sealed trait bucket extends js.Object
   
   @js.native
@@ -294,6 +297,9 @@ object stripeStrings {
   
   @js.native
   sealed trait disputed extends js.Object
+  
+  @js.native
+  sealed trait donate extends js.Object
   
   @js.native
   sealed trait down extends js.Object
@@ -639,6 +645,9 @@ object stripeStrings {
   sealed trait past_due extends SubscriptionStatus
   
   @js.native
+  sealed trait pay extends js.Object
+  
+  @js.native
   sealed trait payment extends js.Object
   
   @js.native
@@ -803,6 +812,9 @@ object stripeStrings {
   sealed trait set extends IUsageRecordAction
   
   @js.native
+  sealed trait setup extends js.Object
+  
+  @js.native
   sealed trait setup_intent extends js.Object
   
   @js.native
@@ -870,6 +882,9 @@ object stripeStrings {
   
   @js.native
   sealed trait tax_id extends js.Object
+  
+  @js.native
+  sealed trait tax_rate extends js.Object
   
   @js.native
   sealed trait terms_of_service extends js.Object
@@ -1099,6 +1114,8 @@ object stripeStrings {
   @scala.inline
   def blocked: blocked = "blocked".asInstanceOf[blocked]
   @scala.inline
+  def book: book = "book".asInstanceOf[book]
+  @scala.inline
   def bucket: bucket = "bucket".asInstanceOf[bucket]
   @scala.inline
   def business_logo: business_logo = "business_logo".asInstanceOf[business_logo]
@@ -1172,6 +1189,8 @@ object stripeStrings {
   def dispute_evidence: dispute_evidence = "dispute_evidence".asInstanceOf[dispute_evidence]
   @scala.inline
   def disputed: disputed = "disputed".asInstanceOf[disputed]
+  @scala.inline
+  def donate: donate = "donate".asInstanceOf[donate]
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
@@ -1393,6 +1412,8 @@ object stripeStrings {
   @scala.inline
   def past_due: past_due = "past_due".asInstanceOf[past_due]
   @scala.inline
+  def pay: pay = "pay".asInstanceOf[pay]
+  @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline
   def payment_intent: payment_intent = "payment_intent".asInstanceOf[payment_intent]
@@ -1501,6 +1522,8 @@ object stripeStrings {
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline
+  def setup: setup = "setup".asInstanceOf[setup]
+  @scala.inline
   def setup_intent: setup_intent = "setup_intent".asInstanceOf[setup_intent]
   @scala.inline
   def shipping: shipping = "shipping".asInstanceOf[shipping]
@@ -1546,6 +1569,8 @@ object stripeStrings {
   def tax: tax = "tax".asInstanceOf[tax]
   @scala.inline
   def tax_id: tax_id = "tax_id".asInstanceOf[tax_id]
+  @scala.inline
+  def tax_rate: tax_rate = "tax_rate".asInstanceOf[tax_rate]
   @scala.inline
   def terms_of_service: terms_of_service = "terms_of_service".asInstanceOf[terms_of_service]
   @scala.inline

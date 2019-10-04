@@ -1,6 +1,7 @@
 package typings.echarts.echartsNs.EChartOptionNs.CalendarNs
 
-import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.RichStyle
+import typings.echarts.echartsNs.EChartOptionNs.RichStyle
+import typings.echarts.echartsNs.EChartOptionNs.TextStyleWithRich
 import typings.echarts.echartsStrings.`100`
 import typings.echarts.echartsStrings.`200`
 import typings.echarts.echartsStrings.`300`
@@ -15,8 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Label
-  extends typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.TextStyle {
+trait Label extends TextStyleWithRich {
   /**
     * The margin between the label and the axis line.
     */

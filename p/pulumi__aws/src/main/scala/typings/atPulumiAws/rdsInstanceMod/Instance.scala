@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketNameBucketPrefix
+import typings.atPulumiAws.typesOutputMod.rdsNs.InstanceS3Import
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -135,7 +135,8 @@ class Instance protected () extends CustomResource {
   val engineVersion: Output[String] = js.native
   /**
     * The name of your final DB snapshot
-    * when this DB instance is deleted. If omitted, no final snapshot will be made.
+    * when this DB instance is deleted. Must be provided if `skipFinalSnapshot` is
+    * set to `false`.
     */
   val finalSnapshotIdentifier: Output[js.UndefOr[String]] = js.native
   /**
@@ -267,7 +268,7 @@ class Instance protected () extends CustomResource {
   /**
     * Restore from a Percona Xtrabackup in S3.  See [Importing Data into an Amazon RDS MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
     */
-  val s3Import: Output[js.UndefOr[Anon_BucketNameBucketPrefix]] = js.native
+  val s3Import: Output[js.UndefOr[InstanceS3Import]] = js.native
   /**
     * List of DB Security Groups to
     * associate. Only used for [DB Instances on the _EC2-Classic_

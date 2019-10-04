@@ -1,9 +1,8 @@
 package typings.sipDotJs.libWebTransportMod
 
-import typings.sipDotJs.Anon_Msg
 import typings.sipDotJs.libCoreMod.Logger
-import typings.sipDotJs.libCoreMod.OutgoingRequestMessage
 import typings.sipDotJs.libEnumsMod.TypeStrings
+import typings.std.WebSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,7 +113,7 @@ class Transport protected ()
     */
   var stopSendingKeepAlives: js.Any = js.native
   var `type`: TypeStrings = js.native
-  var ws: js.Any = js.native
+  var ws: js.UndefOr[WebSocket] = js.native
   /**
     * Connect socket.
     */
@@ -123,14 +122,6 @@ class Transport protected ()
     * Disconnect socket.
     */
   /* protected */ def disconnectPromise(): js.Promise[_] = js.native
-  /**
-    * Send a message.
-    * @param {SIP.OutgoingRequest|String} msg
-    * @param {Object} [options]
-    * @returns {Promise}
-    */
-  /* protected */ def sendPromise(msg: OutgoingRequestMessage): js.Promise[Anon_Msg] = js.native
-  /* protected */ def sendPromise(msg: OutgoingRequestMessage, options: js.Any): js.Promise[Anon_Msg] = js.native
 }
 
 /* static members */

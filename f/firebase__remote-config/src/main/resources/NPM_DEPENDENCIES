@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/remote-config" : "0.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/remote-config" : "0.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

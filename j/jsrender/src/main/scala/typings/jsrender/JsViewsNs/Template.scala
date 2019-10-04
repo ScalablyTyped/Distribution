@@ -19,17 +19,17 @@ trait Template extends TemplateRender {
   var tmplName: String = js.native
   var useViews: js.UndefOr[Boolean] = js.native
   /**
-    * Template render method: render the template as a string, using the specified data and helpers/context
-    * var htmlString = template(data, myHelpersObject);
-    * var htmlString = template.render(data, myHelpersObject);
-    *
-    * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
-    *
-    * @param {any}        data
-    * @param {hash}       [helpersOrContext]
-    * @param {boolean}    [noIteration]
-    * @returns {string}   rendered template
-    */
+  	 * Template render method: render the template as a string, using the specified data and helpers/context
+  	 * var htmlString = template(data, myHelpersObject);
+  	 * var htmlString = template.render(data, myHelpersObject);
+  	 *
+  	 * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
+  	 *
+  	 * @param {any}        data
+  	 * @param {hash}       [helpersOrContext]
+  	 * @param {boolean}    [noIteration]
+  	 * @returns {string}   rendered template
+  	 */
   def render(): String = js.native
   def render(data: js.Any): String = js.native
   def render(data: js.Any, helpersOrContext: Hash[_]): String = js.native

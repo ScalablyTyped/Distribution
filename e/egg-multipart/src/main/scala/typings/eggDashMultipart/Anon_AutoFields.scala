@@ -1,6 +1,6 @@
 package typings.eggDashMultipart
 
-import typings.std.RegExp
+import typings.eggDashMultipart.eggMod.MatchItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Anon_AutoFields extends js.Object {
   var fieldSize: js.UndefOr[String | Double] = js.undefined
   var fields: js.UndefOr[Double] = js.undefined
   var fileExtensions: js.UndefOr[js.Array[String]] = js.undefined
-  var fileModeMatch: js.UndefOr[RegExp] = js.undefined
+  var fileModeMatch: js.UndefOr[MatchItem | js.Array[MatchItem]] = js.undefined
   var fileSize: js.UndefOr[String | Double] = js.undefined
   var files: js.UndefOr[Double] = js.undefined
   var mode: js.UndefOr[String] = js.undefined
@@ -31,7 +31,7 @@ object Anon_AutoFields {
     fieldSize: String | Double = null,
     fields: Int | Double = null,
     fileExtensions: js.Array[String] = null,
-    fileModeMatch: RegExp = null,
+    fileModeMatch: MatchItem | js.Array[MatchItem] = null,
     fileSize: String | Double = null,
     files: Int | Double = null,
     mode: String = null,
@@ -46,7 +46,7 @@ object Anon_AutoFields {
     if (fieldSize != null) __obj.updateDynamic("fieldSize")(fieldSize.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (fileExtensions != null) __obj.updateDynamic("fileExtensions")(fileExtensions)
-    if (fileModeMatch != null) __obj.updateDynamic("fileModeMatch")(fileModeMatch)
+    if (fileModeMatch != null) __obj.updateDynamic("fileModeMatch")(fileModeMatch.asInstanceOf[js.Any])
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)

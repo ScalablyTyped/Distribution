@@ -1270,6 +1270,10 @@ object iamNs extends js.Object {
       */
     val CloudtrailPrincipal: Principal = js.native
     /**
+      * Service Principal for CodeBuild
+      */
+    val CodeBuildPrincipal: Principal = js.native
+    /**
       * Service Principal for CodeCommit
       */
     val CodeCommitPrincipal: Principal = js.native

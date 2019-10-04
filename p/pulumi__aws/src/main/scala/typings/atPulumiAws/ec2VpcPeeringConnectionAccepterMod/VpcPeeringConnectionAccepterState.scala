@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2VpcPeeringConnectionAccepterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpcPeeringConnectionAccepterAccepter
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpcPeeringConnectionAccepterRequester
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ trait VpcPeeringConnectionAccepterState extends js.Object {
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
     */
-  val accepter: js.UndefOr[Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]] = js.undefined
+  val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepterAccepter]] = js.undefined
   /**
     * Whether or not to accept the peering request. Defaults to `false`.
     */
@@ -37,7 +38,7 @@ trait VpcPeeringConnectionAccepterState extends js.Object {
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
     */
-  val requester: js.UndefOr[Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]] = js.undefined
+  val requester: js.UndefOr[Input[VpcPeeringConnectionAccepterRequester]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -56,12 +57,12 @@ object VpcPeeringConnectionAccepterState {
   @scala.inline
   def apply(
     acceptStatus: Input[String] = null,
-    accepter: Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    accepter: Input[VpcPeeringConnectionAccepterAccepter] = null,
     autoAccept: Input[Boolean] = null,
     peerOwnerId: Input[String] = null,
     peerRegion: Input[String] = null,
     peerVpcId: Input[String] = null,
-    requester: Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    requester: Input[VpcPeeringConnectionAccepterRequester] = null,
     tags: Input[StringDictionary[_]] = null,
     vpcId: Input[String] = null,
     vpcPeeringConnectionId: Input[String] = null

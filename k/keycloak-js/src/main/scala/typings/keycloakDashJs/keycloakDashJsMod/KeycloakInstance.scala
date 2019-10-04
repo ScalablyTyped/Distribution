@@ -4,13 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// export interface KeycloakUserInfo {}
 /**
 	 * A client for the Keycloak authentication server.
 	 * @see {@link https://keycloak.gitbooks.io/securing-client-applications-guide/content/topics/oidc/javascript-adapter.html|Keycloak JS adapter documentation}
 	 */
 @js.native
-trait KeycloakInstance extends js.Object {
+trait KeycloakInstance[TPromise /* <: PromiseType */] extends js.Object {
   /**
   		 * @private Undocumented.
   		 */
@@ -144,7 +143,7 @@ trait KeycloakInstance extends js.Object {
   /**
   		 * Redirects to the Account Management Console.
   		 */
-  def accountManagement(): KeycloakPromise[Unit, Unit] = js.native
+  def accountManagement(): CompatPromise[TPromise, Unit, Unit] = js.native
   /**
   		 * Clears authentication state, including tokens. This can be useful if
   		 * the application has detected the session was expired, for example if
@@ -193,7 +192,7 @@ trait KeycloakInstance extends js.Object {
   		 * @param initOptions Initialization options.
   		 * @returns A promise to set functions to be invoked on success or error.
   		 */
-  def init(initOptions: KeycloakInitOptions): KeycloakPromise[Boolean, KeycloakError] = js.native
+  def init(initOptions: KeycloakInitOptions): CompatPromise[TPromise, Boolean, KeycloakError] = js.native
   /**
   		 * Returns true if the token has less than `minValidity` seconds left before
   		 * it expires.
@@ -204,32 +203,32 @@ trait KeycloakInstance extends js.Object {
   /**
   		 * @private Undocumented.
   		 */
-  def loadUserInfo(): KeycloakPromise[js.Object, Unit] = js.native
+  def loadUserInfo(): CompatPromise[TPromise, js.Object, Unit] = js.native
   /**
   		 * Loads the user's profile.
   		 * @returns A promise to set functions to be invoked on success or error.
   		 */
-  def loadUserProfile(): KeycloakPromise[KeycloakProfile, Unit] = js.native
+  def loadUserProfile(): CompatPromise[TPromise, KeycloakProfile, Unit] = js.native
   /**
   		 * Redirects to login form.
   		 * @param options Login options.
   		 */
-  def login(): KeycloakPromise[Unit, Unit] = js.native
-  def login(options: KeycloakLoginOptions): KeycloakPromise[Unit, Unit] = js.native
+  def login(): CompatPromise[TPromise, Unit, Unit] = js.native
+  def login(options: KeycloakLoginOptions): CompatPromise[TPromise, Unit, Unit] = js.native
   /**
   		 * Redirects to logout.
   		 * @param options Logout options.
   		 * @param options.redirectUri Specifies the uri to redirect to after logout.
   		 */
-  def logout(): KeycloakPromise[Unit, Unit] = js.native
-  def logout(options: js.Any): KeycloakPromise[Unit, Unit] = js.native
+  def logout(): CompatPromise[TPromise, Unit, Unit] = js.native
+  def logout(options: js.Any): CompatPromise[TPromise, Unit, Unit] = js.native
   /**
   		 * Redirects to registration form.
   		 * @param options Supports same options as Keycloak#login but `action` is
   		 *                set to `'register'`.
   		 */
-  def register(): KeycloakPromise[Unit, Unit] = js.native
-  def register(options: js.Any): KeycloakPromise[Unit, Unit] = js.native
+  def register(): CompatPromise[TPromise, Unit, Unit] = js.native
+  def register(options: js.Any): CompatPromise[TPromise, Unit, Unit] = js.native
   /**
   		 * If the token expires within `minValidity` seconds, the token is refreshed.
   		 * If the session status iframe is enabled, the session status is also
@@ -248,6 +247,6 @@ trait KeycloakInstance extends js.Object {
   		 *   alert('Failed to refresh the token, or the session has expired');
   		 * });
   		 */
-  def updateToken(minValidity: Double): KeycloakPromise[Boolean, Boolean] = js.native
+  def updateToken(minValidity: Double): CompatPromise[TPromise, Boolean, Boolean] = js.native
 }
 

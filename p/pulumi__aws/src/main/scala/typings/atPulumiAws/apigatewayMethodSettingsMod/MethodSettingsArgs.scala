@@ -1,7 +1,7 @@
 package typings.atPulumiAws.apigatewayMethodSettingsMod
 
-import typings.atPulumiAws.Anon_CacheDataEncryptedCacheTtlInSeconds
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
+import typings.atPulumiAws.typesInputMod.apigatewayNs.MethodSettingsSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait MethodSettingsArgs extends js.Object {
   /**
     * The settings block, see below.
     */
-  val settings: Input[Anon_CacheDataEncryptedCacheTtlInSeconds]
+  val settings: Input[MethodSettingsSettings]
   /**
     * The name of the stage
     */
@@ -31,7 +31,7 @@ object MethodSettingsArgs {
   def apply(
     methodPath: Input[String],
     restApi: Input[RestApi],
-    settings: Input[Anon_CacheDataEncryptedCacheTtlInSeconds],
+    settings: Input[MethodSettingsSettings],
     stageName: Input[String]
   ): MethodSettingsArgs = {
     val __obj = js.Dynamic.literal(methodPath = methodPath.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])

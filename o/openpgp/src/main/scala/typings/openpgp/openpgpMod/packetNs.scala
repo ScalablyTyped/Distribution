@@ -121,7 +121,7 @@ object packetNs extends js.Object {
       * class instance.
       * @returns A Uint8Array containing valid openpgp packets.
       */
-    def write(): Uint8Array = js.native
+    def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
   }
   
   @js.native

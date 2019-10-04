@@ -1,6 +1,6 @@
 package typings.atPulumiAws.organizationsOrganizationalUnitMod
 
-import typings.atPulumiAws.Anon_ArnEmail
+import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationalUnitAccount
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,7 +25,7 @@ class OrganizationalUnit protected () extends CustomResource {
   /**
     * List of child accounts for this Organizational Unit. Does not return account information for child Organizational Units. All elements have these attributes:
     */
-  val accounts: Output[js.Array[Anon_ArnEmail]] = js.native
+  val accounts: Output[js.Array[OrganizationalUnitAccount]] = js.native
   /**
     * ARN of the organizational unit
     */

@@ -127,7 +127,7 @@ trait CardProps extends js.Object {
   var datatype: js.UndefOr[String] = js.undefined
   var defaultActiveTabKey: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var extra: js.UndefOr[ReactNode] = js.undefined
@@ -402,7 +402,7 @@ object CardProps {
     datatype: String = null,
     defaultActiveTabKey: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,

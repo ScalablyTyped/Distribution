@@ -1,7 +1,7 @@
 package typings.atPulumiAws.globalacceleratorAcceleratorMod
 
-import typings.atPulumiAws.Anon_FlowLogsEnabled
-import typings.atPulumiAws.Anon_IpAddresses
+import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.AcceleratorAttributes
+import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.AcceleratorIpSet
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,7 +27,7 @@ class Accelerator protected () extends CustomResource {
   /**
     * The attributes of the accelerator. Fields documented below.
     */
-  val attributes: Output[js.UndefOr[Anon_FlowLogsEnabled]] = js.native
+  val attributes: Output[js.UndefOr[AcceleratorAttributes]] = js.native
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
@@ -39,7 +39,7 @@ class Accelerator protected () extends CustomResource {
   /**
     * IP address set associated with the accelerator.
     */
-  val ipSets: Output[js.Array[Anon_IpAddresses]] = js.native
+  val ipSets: Output[js.Array[AcceleratorIpSet]] = js.native
   /**
     * The name of the accelerator.
     */

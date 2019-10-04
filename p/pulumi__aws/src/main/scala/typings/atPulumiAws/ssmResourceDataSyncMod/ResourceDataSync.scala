@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmResourceDataSyncMod
 
-import typings.atPulumiAws.Anon_BucketNameKmsKeyArnPrefix
+import typings.atPulumiAws.typesOutputMod.ssmNs.ResourceDataSyncS3Destination
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class ResourceDataSync protected () extends CustomResource {
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: Output[Anon_BucketNameKmsKeyArnPrefix] = js.native
+  val s3Destination: Output[ResourceDataSyncS3Destination] = js.native
 }
 
 /* static members */

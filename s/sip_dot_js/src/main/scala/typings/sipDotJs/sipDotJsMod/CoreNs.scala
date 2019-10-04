@@ -1,10 +1,9 @@
 package typings.sipDotJs.sipDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sipDotJs.Anon_BodyContentType
+import typings.sipDotJs.Anon_Body
 import typings.sipDotJs.libCoreDialogsDialogDashStateMod.DialogState
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
-import typings.sipDotJs.libCoreMessagesBodyMod.OutgoingResponseBody
 import typings.sipDotJs.libCoreMessagesIncomingDashRequestMod.IncomingRequestDelegate
 import typings.sipDotJs.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate
 import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequestDelegate
@@ -86,8 +85,8 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.Dialog {
     /**
       * Dialog constructor.
-      * @param core User agent core.
-      * @param dialogState Initial dialog state.
+      * @param core - User agent core.
+      * @param dialogState - Initial dialog state.
       */
     protected def this(core: typings.sipDotJs.libCoreUserDashAgentDashCoreMod.UserAgentCore, dialogState: DialogState) = this()
   }
@@ -130,6 +129,18 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.IncomingResponseMessage
   
   @js.native
+  class InfoUserAgentClient protected ()
+    extends typings.sipDotJs.libCoreMod.InfoUserAgentClient {
+    def this(dialog: typings.sipDotJs.libCoreDialogsMod.SessionDialog) = this()
+    def this(dialog: typings.sipDotJs.libCoreDialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()
+    def this(
+      dialog: typings.sipDotJs.libCoreDialogsMod.SessionDialog,
+      delegate: OutgoingRequestDelegate,
+      options: RequestOptions
+    ) = this()
+  }
+  
+  @js.native
   class InfoUserAgentServer protected ()
     extends typings.sipDotJs.libCoreMod.InfoUserAgentServer {
     def this(
@@ -153,9 +164,9 @@ object CoreNs extends js.Object {
       * After construction the transaction will be in the "calling" state and the transaction id
       * will equal the branch parameter set in the Via header of the outgoing request.
       * https://tools.ietf.org/html/rfc3261#section-17.1.1
-      * @param request The outgoing INVITE request.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - The outgoing INVITE request.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: typings.sipDotJs.libCoreMessagesMod.OutgoingRequestMessage,
@@ -173,9 +184,9 @@ object CoreNs extends js.Object {
       * After construction the transaction will be in the "proceeding" state and the transaction
       * `id` will equal the branch parameter set in the Via header of the incoming request.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
-      * @param request Incoming INVITE request from the transport.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - Incoming INVITE request from the transport.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage,
@@ -260,9 +271,9 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.NameAddrHeader {
     /**
       * Constructor
-      * @param uri
-      * @param displayName
-      * @param parameters
+      * @param uri -
+      * @param displayName -
+      * @param parameters -
       */
     def this(
       uri: typings.sipDotJs.libCoreMessagesUriMod.URI,
@@ -281,9 +292,9 @@ object CoreNs extends js.Object {
       * After construction the transaction will be in the "calling" state and the transaction id
       * will equal the branch parameter set in the Via header of the outgoing request.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2
-      * @param request The outgoing Non-INVITE request.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - The outgoing Non-INVITE request.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: typings.sipDotJs.libCoreMessagesMod.OutgoingRequestMessage,
@@ -300,9 +311,9 @@ object CoreNs extends js.Object {
       * After construction the transaction will be in the "trying": state and the transaction
       * `id` will equal the branch parameter set in the Via header of the incoming request.
       * https://tools.ietf.org/html/rfc3261#section-17.2.2
-      * @param request Incoming Non-INVITE request from the transport.
-      * @param transport The transport.
-      * @param user The transaction user.
+      * @param request - Incoming Non-INVITE request from the transport.
+      * @param transport - The transport.
+      * @param user - The transaction user.
       */
     def this(
       request: typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage,
@@ -328,8 +339,8 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.NotifyUserAgentServer {
     /**
       * NOTIFY UAS constructor.
-      * @param dialogOrCore Dialog for in dialog NOTIFY, UserAgentCore for out of dialog NOTIFY (deprecated).
-      * @param message Incoming NOTIFY request message.
+      * @param dialogOrCore - Dialog for in dialog NOTIFY, UserAgentCore for out of dialog NOTIFY (deprecated).
+      * @param message - Incoming NOTIFY request message.
       */
     def this(
       dialogOrCore: typings.sipDotJs.libCoreDialogsMod.Dialog,
@@ -501,8 +512,8 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.ReferUserAgentServer {
     /**
       * REFER UAS constructor.
-      * @param dialogOrCore Dialog for in dialog REFER, UserAgentCore for out of dialog REFER.
-      * @param message Incoming REFER request message.
+      * @param dialogOrCore - Dialog for in dialog REFER, UserAgentCore for out of dialog REFER.
+      * @param message - Incoming REFER request message.
       */
     def this(
       dialogOrCore: typings.sipDotJs.libCoreDialogsMod.SessionDialog,
@@ -535,6 +546,20 @@ object CoreNs extends js.Object {
       core: typings.sipDotJs.libCoreUserDashAgentDashCoreMod.UserAgentCore,
       message: typings.sipDotJs.libCoreMessagesMod.OutgoingRequestMessage,
       delegate: OutgoingRequestDelegate
+    ) = this()
+  }
+  
+  @js.native
+  class RegisterUserAgentServer protected ()
+    extends typings.sipDotJs.libCoreMod.RegisterUserAgentServer {
+    def this(
+      core: typings.sipDotJs.libCoreUserDashAgentDashCoreMod.UserAgentCore,
+      message: typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage
+    ) = this()
+    def this(
+      core: typings.sipDotJs.libCoreUserDashAgentDashCoreMod.UserAgentCore,
+      message: typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage,
+      delegate: IncomingRequestDelegate
     ) = this()
   }
   
@@ -646,6 +671,12 @@ object CoreNs extends js.Object {
   @js.native
   abstract class Transport protected ()
     extends typings.sipDotJs.libCoreMod.Transport {
+    /**
+      * Constructor
+      * @param logger - Logger.
+      * @param options - Options bucket. Deprecated.
+      */
+    def this(logger: typings.sipDotJs.libCoreLogMod.Logger) = this()
     def this(logger: typings.sipDotJs.libCoreLogMod.Logger, options: js.Any) = this()
   }
   
@@ -660,12 +691,12 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.URI {
     /**
       * Constructor
-      * @param scheme
-      * @param user
-      * @param host
-      * @param port
-      * @param parameters
-      * @param headers
+      * @param scheme -
+      * @param user -
+      * @param host -
+      * @param port -
+      * @param parameters -
+      * @param headers -
       */
     def this(scheme: String, user: String, host: String) = this()
     def this(scheme: String, user: String, host: String, port: Double) = this()
@@ -694,8 +725,8 @@ object CoreNs extends js.Object {
     extends typings.sipDotJs.libCoreMod.UserAgentCore {
     /**
       * Constructor.
-      * @param configuration Configuration.
-      * @param delegate Delegate.
+      * @param configuration - Configuration.
+      * @param delegate - Delegate.
       */
     def this(configuration: UserAgentCoreConfiguration) = this()
     def this(configuration: UserAgentCoreConfiguration, delegate: UserAgentCoreDelegate) = this()
@@ -722,8 +753,8 @@ object CoreNs extends js.Object {
     options: ResponseOptions
   ): OutgoingResponse = js.native
   def fromBodyLegacy(bodyLegacy: String): Body = js.native
-  def fromBodyLegacy(bodyLegacy: Anon_BodyContentType): Body = js.native
-  def getBody(message: OutgoingResponseBody): js.UndefOr[Body] = js.native
+  def fromBodyLegacy(bodyLegacy: Anon_Body): Body = js.native
+  def getBody(message: Body): js.UndefOr[Body] = js.native
   def getBody(message: typings.sipDotJs.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage): js.UndefOr[Body] = js.native
   def getBody(
     message: typings.sipDotJs.libCoreMessagesIncomingDashResponseDashMessageMod.IncomingResponseMessage
@@ -763,8 +794,8 @@ object CoreNs extends js.Object {
       * constructs the state of the dialog.  This state MUST be maintained
       * for the duration of the dialog.
       * https://tools.ietf.org/html/rfc3261#section-12.1.2
-      * @param outgoingRequestMessage Outgoing request message for dialog.
-      * @param incomingResponseMessage Incoming response message creating dialog.
+      * @param outgoingRequestMessage - Outgoing request message for dialog.
+      * @param incomingResponseMessage - Incoming response message creating dialog.
       */
     def initialDialogStateForUserAgentClient(
       outgoingRequestMessage: typings.sipDotJs.libCoreMessagesMod.OutgoingRequestMessage,
@@ -774,8 +805,8 @@ object CoreNs extends js.Object {
       * The UAS then constructs the state of the dialog.  This state MUST be
       * maintained for the duration of the dialog.
       * https://tools.ietf.org/html/rfc3261#section-12.1.1
-      * @param incomingRequestMessage Incoming request message creating dialog.
-      * @param toTag Tag in the To field in the response to the incoming request.
+      * @param incomingRequestMessage - Incoming request message creating dialog.
+      * @param toTag - Tag in the To field in the response to the incoming request.
       */
     def initialDialogStateForUserAgentServer(incomingRequestMessage: typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage, toTag: String): DialogState = js.native
     def initialDialogStateForUserAgentServer(
@@ -856,8 +887,8 @@ object CoreNs extends js.Object {
       * constructs the state of the dialog.  This state MUST be maintained
       * for the duration of the dialog.
       * https://tools.ietf.org/html/rfc3261#section-12.1.2
-      * @param outgoingRequestMessage Outgoing request message for dialog.
-      * @param incomingResponseMessage Incoming response message creating dialog.
+      * @param outgoingRequestMessage - Outgoing request message for dialog.
+      * @param incomingResponseMessage - Incoming response message creating dialog.
       */
     def initialDialogStateForSubscription(
       outgoingSubscribeRequestMessage: typings.sipDotJs.libCoreMessagesMod.OutgoingRequestMessage,

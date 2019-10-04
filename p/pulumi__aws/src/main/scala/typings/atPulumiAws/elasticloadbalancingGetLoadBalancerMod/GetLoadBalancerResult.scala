@@ -1,21 +1,21 @@
 package typings.atPulumiAws.elasticloadbalancingGetLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketBucketPrefix
-import typings.atPulumiAws.Anon_HealthyThresholdInterval
-import typings.atPulumiAws.Anon_InstancePort
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.GetLoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.GetLoadBalancerHealthCheck
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.GetLoadBalancerListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetLoadBalancerResult extends js.Object {
-  val accessLogs: Anon_BucketBucketPrefix
+  val accessLogs: GetLoadBalancerAccessLogs
   val availabilityZones: js.Array[String]
   val connectionDraining: Boolean
   val connectionDrainingTimeout: Double
   val crossZoneLoadBalancing: Boolean
   val dnsName: String
-  val healthCheck: Anon_HealthyThresholdInterval
+  val healthCheck: GetLoadBalancerHealthCheck
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -23,7 +23,7 @@ trait GetLoadBalancerResult extends js.Object {
   val idleTimeout: Double
   val instances: js.Array[String]
   val internal: Boolean
-  val listeners: js.Array[Anon_InstancePort]
+  val listeners: js.Array[GetLoadBalancerListener]
   val name: String
   val securityGroups: js.Array[String]
   val sourceSecurityGroup: String
@@ -36,18 +36,18 @@ trait GetLoadBalancerResult extends js.Object {
 object GetLoadBalancerResult {
   @scala.inline
   def apply(
-    accessLogs: Anon_BucketBucketPrefix,
+    accessLogs: GetLoadBalancerAccessLogs,
     availabilityZones: js.Array[String],
     connectionDraining: Boolean,
     connectionDrainingTimeout: Double,
     crossZoneLoadBalancing: Boolean,
     dnsName: String,
-    healthCheck: Anon_HealthyThresholdInterval,
+    healthCheck: GetLoadBalancerHealthCheck,
     id: String,
     idleTimeout: Double,
     instances: js.Array[String],
     internal: Boolean,
-    listeners: js.Array[Anon_InstancePort],
+    listeners: js.Array[GetLoadBalancerListener],
     name: String,
     securityGroups: js.Array[String],
     sourceSecurityGroup: String,

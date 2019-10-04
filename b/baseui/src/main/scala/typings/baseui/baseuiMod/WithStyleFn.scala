@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WithStyleFn extends js.Object {
   def apply[C /* <: StyletronComponent[_] */](component: C, style: StyleObject): StyletronComponent[ComponentProps[C]] = js.native
-  def apply[C /* <: StyletronComponent[_] */, P /* <: js.Object */](component: C, style: js.Function1[/* props */ P with Anon_Theme, StyleObject]): StyletronComponent[ComponentProps[C] with P] = js.native
+  def apply[C /* <: StyletronComponent[_] */, P /* <: js.Object */, T](component: C, style: js.Function1[/* props */ P with Anon_Theme[T], StyleObject]): StyletronComponent[ComponentProps[C] with P] = js.native
 }
 

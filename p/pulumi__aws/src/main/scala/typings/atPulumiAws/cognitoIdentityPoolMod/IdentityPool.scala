@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ClientId
+import typings.atPulumiAws.typesOutputMod.cognitoNs.IdentityPoolCognitoIdentityProvider
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,7 +34,7 @@ class IdentityPool protected () extends CustomResource {
   /**
     * An array of Amazon Cognito Identity user pools and their client IDs.
     */
-  val cognitoIdentityProviders: Output[js.UndefOr[js.Array[Anon_ClientId]]] = js.native
+  val cognitoIdentityProviders: Output[js.UndefOr[js.Array[IdentityPoolCognitoIdentityProvider]]] = js.native
   /**
     * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
     * backend and the Cognito service to communicate about the developer provider.

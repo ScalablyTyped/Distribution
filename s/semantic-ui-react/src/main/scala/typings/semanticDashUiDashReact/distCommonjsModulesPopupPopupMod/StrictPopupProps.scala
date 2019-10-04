@@ -44,6 +44,8 @@ trait StrictPopupProps extends StrictPortalProps {
   var context: js.UndefOr[js.Object | RefObject[HTMLElement]] = js.undefined
   /** A disabled popup only renders its trigger. */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  /** Enables the Popper.js event listeners. */
+  var eventsEnabled: js.UndefOr[Boolean] = js.undefined
   /** A flowing Popup has no maximum width and continues to flow to fit its content. */
   var flowing: js.UndefOr[Boolean] = js.undefined
   /** Header displayed above the content in bold. */
@@ -110,6 +112,8 @@ trait StrictPopupProps extends StrictPortalProps {
   var position: js.UndefOr[
     (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
   ] = js.undefined
+  /** Tells `Popper.js` to use the `position: fixed` strategy to position the popover. */
+  var positionFixed: js.UndefOr[Boolean] = js.undefined
   /** Popup size. */
   var size: js.UndefOr[mini | tiny | small | large | huge] = js.undefined
   /** Custom Popup style. */
@@ -136,6 +140,7 @@ object StrictPopupProps {
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     eventPool: String = null,
+    eventsEnabled: js.UndefOr[Boolean] = js.undefined,
     flowing: js.UndefOr[Boolean] = js.undefined,
     header: SemanticShorthandItem[PopupHeaderProps] = null,
     hideOnScroll: js.UndefOr[Boolean] = js.undefined,
@@ -158,6 +163,7 @@ object StrictPopupProps {
     popperDependencies: js.Array[_] = null,
     popperModifiers: js.Object = null,
     position: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`) = null,
+    positionFixed: js.UndefOr[Boolean] = js.undefined,
     size: mini | tiny | small | large | huge = null,
     style: js.Object = null,
     trigger: ReactNode = null,
@@ -180,6 +186,7 @@ object StrictPopupProps {
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (eventPool != null) __obj.updateDynamic("eventPool")(eventPool)
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
     if (!js.isUndefined(flowing)) __obj.updateDynamic("flowing")(flowing)
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
@@ -202,6 +209,7 @@ object StrictPopupProps {
     if (popperDependencies != null) __obj.updateDynamic("popperDependencies")(popperDependencies)
     if (popperModifiers != null) __obj.updateDynamic("popperModifiers")(popperModifiers)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

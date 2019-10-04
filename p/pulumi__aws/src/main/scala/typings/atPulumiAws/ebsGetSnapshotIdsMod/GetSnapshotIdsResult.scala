@@ -1,12 +1,12 @@
 package typings.atPulumiAws.ebsGetSnapshotIdsMod
 
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ebsNs.GetSnapshotIdsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetSnapshotIdsResult extends js.Object {
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSnapshotIdsFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -21,7 +21,7 @@ object GetSnapshotIdsResult {
   def apply(
     id: String,
     ids: js.Array[String],
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetSnapshotIdsFilter] = null,
     owners: js.Array[String] = null,
     restorableByUserIds: js.Array[String] = null
   ): GetSnapshotIdsResult = {

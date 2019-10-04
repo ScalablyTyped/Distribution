@@ -1,6 +1,6 @@
 package typings.atPulumiAws.emrInstanceGroupMod
 
-import typings.atPulumiAws.Anon_Iops
+import typings.atPulumiAws.typesOutputMod.emrNs.InstanceGroupEbsConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class InstanceGroup protected () extends CustomResource {
   /**
     * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
     */
-  val ebsConfigs: Output[js.Array[Anon_Iops]] = js.native
+  val ebsConfigs: Output[js.Array[InstanceGroupEbsConfig]] = js.native
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
     */

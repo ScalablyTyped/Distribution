@@ -10,7 +10,7 @@ trait JobDetails extends js.Object {
     */
   var accountId: js.UndefOr[AccountId] = js.undefined
   /**
-    * Represents additional information about a job required for a job worker to complete the job. 
+    * Represents other information about a job required for a job worker to complete the job. 
     */
   var data: js.UndefOr[JobData] = js.undefined
   /**

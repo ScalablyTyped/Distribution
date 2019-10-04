@@ -11,12 +11,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// The type parameter T is the expected shape of the parsed options.
-// Arguments<T> is those options plus _ and $0, and an indexer falling
-// back to unknown for unknown options.
-//
-// For the return type / argv property, we create a mapped type over
-// Arguments<T> to simplify the inferred type signature in client code.
+/**
+  * The type parameter `T` is the expected shape of the parsed options.
+  * `Arguments<T>` is those options plus `_` and `$0`, and an indexer falling
+  * back to `unknown` for unknown options.
+  *
+  * For the return type / `argv` property, we create a mapped type over
+  * `Arguments<T>` to simplify the inferred type signature in client code.
+  */
 @js.native
 trait Argv[T] extends js.Object {
   /**
@@ -124,6 +126,8 @@ trait Argv[T] extends js.Object {
     * Set `description` to false to create a hidden command. Hidden commands don't show up in the help output and aren't available for completion.
     * @param [builder] Object to give hints about the options that your command accepts.
     * Can also be a function. This function is executed with a yargs instance, and can be used to provide advanced command specific help.
+    *
+    * Note that when `void` is returned, the handler `argv` object type will not include command-specific arguments.
     * @param [handler] Function, which will be executed with the parsed `argv` object.
     */
   def command[U](command: String, description: String): Argv[T] = js.native
@@ -134,11 +138,11 @@ trait Argv[T] extends js.Object {
     builder: O,
     handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], Unit]
   ): Argv[T] = js.native
-  def command[U](command: String, description: String, builder: js.Function1[/* args */ Argv[T], Argv[U]]): Argv[T] = js.native
+  def command[U](command: String, description: String, builder: BuilderCallback[T, U]): Argv[T] = js.native
   def command[U](
     command: String,
     description: String,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]],
+    builder: BuilderCallback[T, U],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
   def command[U](command: String, description: String, module: CommandModule[T, U]): Argv[U] = js.native
@@ -150,11 +154,11 @@ trait Argv[T] extends js.Object {
     builder: O,
     handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], Unit]
   ): Argv[T] = js.native
-  def command[U](command: js.Array[String], description: String, builder: js.Function1[/* args */ Argv[T], Argv[U]]): Argv[T] = js.native
+  def command[U](command: js.Array[String], description: String, builder: BuilderCallback[T, U]): Argv[T] = js.native
   def command[U](
     command: js.Array[String],
     description: String,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]],
+    builder: BuilderCallback[T, U],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
   def command[U](command: js.Array[String], description: String, module: CommandModule[T, U]): Argv[U] = js.native
@@ -179,12 +183,12 @@ trait Argv[T] extends js.Object {
     handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], Unit]
   ): Argv[T] = js.native
   @JSName("command")
-  def command_false[U](command: String, showInHelp: `false`, builder: js.Function1[/* args */ Argv[T], Argv[U]]): Argv[T] = js.native
+  def command_false[U](command: String, showInHelp: `false`, builder: BuilderCallback[T, U]): Argv[T] = js.native
   @JSName("command")
   def command_false[U](
     command: String,
     showInHelp: `false`,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]],
+    builder: BuilderCallback[T, U],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
   @JSName("command")
@@ -201,12 +205,12 @@ trait Argv[T] extends js.Object {
     handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], Unit]
   ): Argv[T] = js.native
   @JSName("command")
-  def command_false[U](command: js.Array[String], showInHelp: `false`, builder: js.Function1[/* args */ Argv[T], Argv[U]]): Argv[T] = js.native
+  def command_false[U](command: js.Array[String], showInHelp: `false`, builder: BuilderCallback[T, U]): Argv[T] = js.native
   @JSName("command")
   def command_false[U](
     command: js.Array[String],
     showInHelp: `false`,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]],
+    builder: BuilderCallback[T, U],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
   @JSName("command")

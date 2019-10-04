@@ -1,6 +1,6 @@
 package typings.atPulumiAws.getAmiIdsMod
 
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.GetAmiIdsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GetAmiIdsArgs extends js.Object {
     * are several valid keys, for a full reference, check out
     * [describe-images in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetAmiIdsFilter]] = js.undefined
   /**
     * A regex string to apply to the AMI list returned
     * by AWS. This allows more advanced filtering not supported from the AWS API.
@@ -40,7 +40,7 @@ object GetAmiIdsArgs {
   def apply(
     owners: js.Array[String],
     executableUsers: js.Array[String] = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetAmiIdsFilter] = null,
     nameRegex: String = null,
     sortAscending: js.UndefOr[Boolean] = js.undefined
   ): GetAmiIdsArgs = {

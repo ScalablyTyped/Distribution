@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object terserMod {
   type AST_Accessor = AST_Lambda
+  type AST_Arrow = AST_Lambda
   type AST_Assign = AST_Binary
   type AST_Atom = AST_Constant
   type AST_BlockStatement = AST_Block
@@ -19,11 +20,13 @@ package object terserMod {
   type AST_DefClass = AST_Class
   type AST_Default = AST_SwitchBranch
   type AST_DefaultAssign = AST_Binary
+  type AST_Defun = AST_Lambda
   type AST_Do = AST_DWLoop
   type AST_Dot = AST_PropAccess
   type AST_EmptyStatement = AST_Statement
   type AST_False = AST_Boolean
   type AST_Finally = AST_Block
+  type AST_Function = AST_Lambda
   type AST_Hole = AST_Atom
   type AST_Infinity = AST_Atom
   type AST_Jump = AST_Statement

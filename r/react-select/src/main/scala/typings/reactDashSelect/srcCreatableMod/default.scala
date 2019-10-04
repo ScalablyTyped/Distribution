@@ -1,12 +1,13 @@
 package typings.reactDashSelect.srcCreatableMod
 
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-select/src/Creatable", JSImport.Default)
 @js.native
-class default[OptionType] () extends Creatable[OptionType]
+class default[OptionType /* <: OptionTypeBase */] () extends Creatable[OptionType]
 
 /* static members */
 @JSImport("react-select/src/Creatable", JSImport.Default)

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueCatalogTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketColumns
-import typings.atPulumiAws.Anon_Comment
+import typings.atPulumiAws.typesOutputMod.glueNs.CatalogTablePartitionKey
+import typings.atPulumiAws.typesOutputMod.glueNs.CatalogTableStorageDescriptor
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -51,7 +51,7 @@ class CatalogTable protected () extends CustomResource {
   /**
     * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.
     */
-  val partitionKeys: Output[js.UndefOr[js.Array[Anon_Comment]]] = js.native
+  val partitionKeys: Output[js.UndefOr[js.Array[CatalogTablePartitionKey]]] = js.native
   /**
     * Retention time for this table.
     */
@@ -59,7 +59,7 @@ class CatalogTable protected () extends CustomResource {
   /**
     * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
     */
-  val storageDescriptor: Output[js.UndefOr[Anon_BucketColumns]] = js.native
+  val storageDescriptor: Output[js.UndefOr[CatalogTableStorageDescriptor]] = js.native
   /**
     * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
     */

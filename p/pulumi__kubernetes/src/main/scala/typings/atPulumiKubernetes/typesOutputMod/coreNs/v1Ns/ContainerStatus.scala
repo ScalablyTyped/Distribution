@@ -42,6 +42,13 @@ trait ContainerStatus extends js.Object {
     */
   val restartCount: Double
   /**
+    * Specifies whether the container has passed its startup probe. Initialized as false, becomes
+    * true after startupProbe is considered successful. Resets to false when the container is
+    * restarted, or if kubelet loses state temporarily. Is always true when no startupProbe is
+    * defined.
+    */
+  val started: Boolean
+  /**
     * Details about the container's current condition.
     */
   val state: ContainerState
@@ -57,9 +64,10 @@ object ContainerStatus {
     name: String,
     ready: Boolean,
     restartCount: Double,
+    started: Boolean,
     state: ContainerState
   ): ContainerStatus = {
-    val __obj = js.Dynamic.literal(containerID = containerID, image = image, imageID = imageID, lastState = lastState, name = name, ready = ready, restartCount = restartCount, state = state)
+    val __obj = js.Dynamic.literal(containerID = containerID, image = image, imageID = imageID, lastState = lastState, name = name, ready = ready, restartCount = restartCount, started = started, state = state)
   
     __obj.asInstanceOf[ContainerStatus]
   }

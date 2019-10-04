@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftAliasMod
 
-import typings.atPulumiAws.Anon_FleetId
+import typings.atPulumiAws.typesOutputMod.gameliftNs.AliasRoutingStrategy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class Alias protected () extends CustomResource {
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: Output[Anon_FleetId] = js.native
+  val routingStrategy: Output[AliasRoutingStrategy] = js.native
 }
 
 /* static members */

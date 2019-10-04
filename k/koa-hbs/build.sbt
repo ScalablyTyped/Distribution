@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "koa-hbs"
-version := "v1.x-dt-20190322Z-108077"
+version := "v1.x-dt-20190322Z-8d4b9f"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "handlebars" % "4.2.1-c9edcc",
+  "org.scalablytyped" %%% "handlebars" % "4.4.2-810c9b",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

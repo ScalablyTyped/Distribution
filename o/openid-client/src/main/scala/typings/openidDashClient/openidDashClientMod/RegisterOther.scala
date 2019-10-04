@@ -1,6 +1,6 @@
 package typings.openidDashClient.openidDashClientMod
 
-import typings.atPanvaJose.atPanvaJoseMod.JSONWebKeySet
+import typings.jose.joseMod.JSONWebKeySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

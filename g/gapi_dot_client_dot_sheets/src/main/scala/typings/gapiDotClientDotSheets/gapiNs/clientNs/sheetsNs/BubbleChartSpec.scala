@@ -43,7 +43,7 @@ trait BubbleChartSpec extends js.Object {
   var domain: js.UndefOr[ChartData] = js.undefined
   /**
     * The data containing the bubble group IDs. All bubbles with the same group
-    * ID will be drawn in the same color. If bubble_sizes is specified then
+    * ID are drawn in the same color. If bubble_sizes is specified then
     * this field must also be specified but may contain blank values.
     * This field is optional.
     */

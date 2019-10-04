@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "customXmlPartCollection.toJSON()". */
+/** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
 trait CustomXmlPartCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
 }

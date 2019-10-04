@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartAreaFormat object, for use in "chartAreaFormat.set({ ... })". */
+/** An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`. */
 trait ChartAreaFormatUpdateData extends js.Object {
   /**
     *

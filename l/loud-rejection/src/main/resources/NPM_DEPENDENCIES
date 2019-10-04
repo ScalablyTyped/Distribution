@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "loud-rejection" : "2.1.0"
+      "loud-rejection" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "loud-rejection" : "2.1.0"
+      "loud-rejection" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -19,8 +19,8 @@ class KeyframeTrack protected () extends js.Object {
   var ValueBufferType: Float32Array = js.native
   var ValueTypeName: String = js.native
   var name: String = js.native
-  var times: js.Array[_] = js.native
-  var values: js.Array[_] = js.native
+  var times: Float32Array = js.native
+  var values: Float32Array = js.native
   def InterpolantFactoryMethodDiscrete(result: js.Any): DiscreteInterpolant = js.native
   def InterpolantFactoryMethodLinear(result: js.Any): LinearInterpolant = js.native
   def InterpolantFactoryMethodSmooth(result: js.Any): CubicInterpolant = js.native

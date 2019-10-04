@@ -1,6 +1,7 @@
 package typings.xterm
 
 import typings.xterm.xtermMod.FontWeight
+import typings.xterm.xtermMod.LogLevel
 import typings.xterm.xtermMod.RendererType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,9 +51,6 @@ object xtermStrings {
   sealed trait block extends js.Object
   
   @js.native
-  sealed trait blur extends js.Object
-  
-  @js.native
   sealed trait bold extends FontWeight
   
   @js.native
@@ -80,10 +78,7 @@ object xtermStrings {
   sealed trait cursorStyle extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
-  
-  @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug extends LogLevel
   
   @js.native
   sealed trait disableStdin extends js.Object
@@ -92,13 +87,7 @@ object xtermStrings {
   sealed trait dom extends RendererType
   
   @js.native
-  sealed trait dynamic extends js.Object
-  
-  @js.native
-  sealed trait enableBold extends js.Object
-  
-  @js.native
-  sealed trait focus extends js.Object
+  sealed trait error extends LogLevel
   
   @js.native
   sealed trait fontFamily extends js.Object
@@ -116,13 +105,7 @@ object xtermStrings {
   sealed trait handler extends js.Object
   
   @js.native
-  sealed trait key extends js.Object
-  
-  @js.native
-  sealed trait keydown extends js.Object
-  
-  @js.native
-  sealed trait keypress extends js.Object
+  sealed trait info extends LogLevel
   
   @js.native
   sealed trait letterSpacing extends js.Object
@@ -131,7 +114,7 @@ object xtermStrings {
   sealed trait lineHeight extends js.Object
   
   @js.native
-  sealed trait linefeed extends js.Object
+  sealed trait logLevel extends js.Object
   
   @js.native
   sealed trait macOptionIsMeta extends js.Object
@@ -143,16 +126,13 @@ object xtermStrings {
   sealed trait normal extends FontWeight
   
   @js.native
+  sealed trait off extends LogLevel
+  
+  @js.native
   sealed trait popOnBell extends js.Object
   
   @js.native
-  sealed trait refresh extends js.Object
-  
-  @js.native
   sealed trait rendererType extends js.Object
-  
-  @js.native
-  sealed trait resize extends js.Object
   
   @js.native
   sealed trait rightClickSelectsWord extends js.Object
@@ -164,19 +144,10 @@ object xtermStrings {
   sealed trait screenKeys extends js.Object
   
   @js.native
-  sealed trait scroll extends js.Object
-  
-  @js.native
   sealed trait scrollback extends js.Object
   
   @js.native
-  sealed trait selection extends js.Object
-  
-  @js.native
   sealed trait sound extends js.Object
-  
-  @js.native
-  sealed trait static extends js.Object
   
   @js.native
   sealed trait tabStopWidth extends js.Object
@@ -186,9 +157,6 @@ object xtermStrings {
   
   @js.native
   sealed trait theme extends js.Object
-  
-  @js.native
-  sealed trait title extends js.Object
   
   @js.native
   sealed trait underline extends js.Object
@@ -203,7 +171,13 @@ object xtermStrings {
   sealed trait visualBell extends js.Object
   
   @js.native
+  sealed trait warn extends LogLevel
+  
+  @js.native
   sealed trait windowsMode extends js.Object
+  
+  @js.native
+  sealed trait wordSeparator extends js.Object
   
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
@@ -234,8 +208,6 @@ object xtermStrings {
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
@@ -254,19 +226,13 @@ object xtermStrings {
   @scala.inline
   def cursorStyle: cursorStyle = "cursorStyle".asInstanceOf[cursorStyle]
   @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def disableStdin: disableStdin = "disableStdin".asInstanceOf[disableStdin]
   @scala.inline
   def dom: dom = "dom".asInstanceOf[dom]
   @scala.inline
-  def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
-  @scala.inline
-  def enableBold: enableBold = "enableBold".asInstanceOf[enableBold]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
   @scala.inline
@@ -278,17 +244,13 @@ object xtermStrings {
   @scala.inline
   def handler: handler = "handler".asInstanceOf[handler]
   @scala.inline
-  def key: key = "key".asInstanceOf[key]
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
-  @scala.inline
-  def keypress: keypress = "keypress".asInstanceOf[keypress]
+  def info: info = "info".asInstanceOf[info]
   @scala.inline
   def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
   @scala.inline
   def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
   @scala.inline
-  def linefeed: linefeed = "linefeed".asInstanceOf[linefeed]
+  def logLevel: logLevel = "logLevel".asInstanceOf[logLevel]
   @scala.inline
   def macOptionIsMeta: macOptionIsMeta = "macOptionIsMeta".asInstanceOf[macOptionIsMeta]
   @scala.inline
@@ -296,13 +258,11 @@ object xtermStrings {
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def popOnBell: popOnBell = "popOnBell".asInstanceOf[popOnBell]
   @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
   def rendererType: rendererType = "rendererType".asInstanceOf[rendererType]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
   def rightClickSelectsWord: rightClickSelectsWord = "rightClickSelectsWord".asInstanceOf[rightClickSelectsWord]
   @scala.inline
@@ -310,23 +270,15 @@ object xtermStrings {
   @scala.inline
   def screenKeys: screenKeys = "screenKeys".asInstanceOf[screenKeys]
   @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
   def scrollback: scrollback = "scrollback".asInstanceOf[scrollback]
   @scala.inline
-  def selection: selection = "selection".asInstanceOf[selection]
-  @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
-  @scala.inline
-  def static: static = "static".asInstanceOf[static]
   @scala.inline
   def tabStopWidth: tabStopWidth = "tabStopWidth".asInstanceOf[tabStopWidth]
   @scala.inline
   def termName: termName = "termName".asInstanceOf[termName]
   @scala.inline
   def theme: theme = "theme".asInstanceOf[theme]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
@@ -336,6 +288,10 @@ object xtermStrings {
   @scala.inline
   def visualBell: visualBell = "visualBell".asInstanceOf[visualBell]
   @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
   def windowsMode: windowsMode = "windowsMode".asInstanceOf[windowsMode]
+  @scala.inline
+  def wordSeparator: wordSeparator = "wordSeparator".asInstanceOf[wordSeparator]
 }
 

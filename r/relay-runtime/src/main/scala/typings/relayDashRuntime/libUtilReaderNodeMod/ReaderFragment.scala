@@ -1,8 +1,8 @@
 package typings.relayDashRuntime.libUtilReaderNodeMod
 
 import typings.relayDashRuntime.Anon_Connection
+import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod._GraphQLTaggedNode
 import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.GeneratedNode
-import typings.relayDashRuntime.relayDashRuntimeMod._GraphQLTaggedNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

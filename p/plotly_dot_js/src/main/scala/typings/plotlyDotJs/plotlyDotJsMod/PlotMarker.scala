@@ -17,7 +17,7 @@ trait PlotMarker extends js.Object {
   var color: Color | js.Array[Color]
   var colorbar: Partial[ColorBar]
   var colors: js.Array[Color]
-  var colorscale: String | (js.Array[(js.Array[String | Double]) | String])
+  var colorscale: ColorScale
   var gradient: Anon_Color
   var line: Partial[ScatterMarkerLine]
   var maxdisplayed: Double
@@ -43,7 +43,7 @@ object PlotMarker {
     color: Color | js.Array[Color],
     colorbar: Partial[ColorBar],
     colors: js.Array[Color],
-    colorscale: String | (js.Array[(js.Array[String | Double]) | String]),
+    colorscale: ColorScale,
     gradient: Anon_Color,
     line: Partial[ScatterMarkerLine],
     maxdisplayed: Double,

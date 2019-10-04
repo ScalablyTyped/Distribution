@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "screenfull" : "4.2.1"
+      "screenfull" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "screenfull" : "4.2.1"
+      "screenfull" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

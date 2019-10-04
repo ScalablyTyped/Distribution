@@ -15,7 +15,7 @@ trait Knex[TRecord /* <: js.Object */, TResult]
   var fn: FunctionHelper = js.native
   var migrate: Migrator = js.native
   @JSName("raw")
-  var raw_Original: RawBuilder[TRecord, TResult] = js.native
+  var raw_Original: RawBuilder[TRecord, _] = js.native
   @JSName("ref")
   var ref_Original: RefBuilder = js.native
   var schema: SchemaBuilder = js.native

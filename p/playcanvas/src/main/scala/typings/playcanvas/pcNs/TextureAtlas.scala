@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.TextureAtlas
+  * @extends pc.EventHandler
   * @classdesc A pc.TextureAtlas contains a number of frames from a texture. Each frame defines a region in
   * a texture. The pc.TextureAtlas is referenced by {@link pc.Sprite}s.
   * @property {pc.Texture} texture The texture atlas.
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.TextureAtlas")
 @js.native
-class TextureAtlas () extends js.Object {
+class TextureAtlas () extends EventHandler {
   /**
     * Contains frames which define portions of the texture atlas.
     */

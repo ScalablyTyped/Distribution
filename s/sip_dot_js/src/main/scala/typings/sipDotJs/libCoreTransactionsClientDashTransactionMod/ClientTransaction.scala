@@ -38,7 +38,7 @@ abstract class ClientTransaction protected () extends Transaction {
   /**
     * Receive incoming responses from the transport which match this transaction.
     * Responses will be delivered to the transaction user as necessary.
-    * @param response The incoming response.
+    * @param response - The incoming response.
     */
   def receiveResponse(response: IncomingResponseMessage): Unit = js.native
 }

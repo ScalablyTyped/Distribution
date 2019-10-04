@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo" : "34.0.4"
+      "expo" : "35.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo" : "34.0.4"
+      "expo" : "35.0.0"
     }
   ],
   "compile-devDependencies" : [

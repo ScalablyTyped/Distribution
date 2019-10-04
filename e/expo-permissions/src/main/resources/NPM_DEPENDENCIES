@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-permissions" : "6.0.0"
+      "expo-permissions" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-permissions" : "6.0.0"
+      "expo-permissions" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

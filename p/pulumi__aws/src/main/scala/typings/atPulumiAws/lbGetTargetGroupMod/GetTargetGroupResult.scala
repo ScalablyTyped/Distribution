@@ -1,8 +1,8 @@
 package typings.atPulumiAws.lbGetTargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CookieDuration
-import typings.atPulumiAws.Anon_Enabled
+import typings.atPulumiAws.typesOutputMod.lbNs.GetTargetGroupHealthCheck
+import typings.atPulumiAws.typesOutputMod.lbNs.GetTargetGroupStickiness
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait GetTargetGroupResult extends js.Object {
   val arn: String
   val arnSuffix: String
   val deregistrationDelay: Double
-  val healthCheck: Anon_Enabled
+  val healthCheck: GetTargetGroupHealthCheck
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -22,7 +22,7 @@ trait GetTargetGroupResult extends js.Object {
   val protocol: String
   val proxyProtocolV2: Boolean
   val slowStart: Double
-  val stickiness: Anon_CookieDuration
+  val stickiness: GetTargetGroupStickiness
   val tags: StringDictionary[js.Any]
   val targetType: String
   val vpcId: String
@@ -34,7 +34,7 @@ object GetTargetGroupResult {
     arn: String,
     arnSuffix: String,
     deregistrationDelay: Double,
-    healthCheck: Anon_Enabled,
+    healthCheck: GetTargetGroupHealthCheck,
     id: String,
     lambdaMultiValueHeadersEnabled: Boolean,
     name: String,
@@ -42,7 +42,7 @@ object GetTargetGroupResult {
     protocol: String,
     proxyProtocolV2: Boolean,
     slowStart: Double,
-    stickiness: Anon_CookieDuration,
+    stickiness: GetTargetGroupStickiness,
     tags: StringDictionary[js.Any],
     targetType: String,
     vpcId: String

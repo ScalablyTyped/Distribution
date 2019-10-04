@@ -46,11 +46,11 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
-    * The password for the master database user. This password can contain any printable ASCII character except forward slash (/), double quote ("), or the "at" symbol (@). Constraints: Must contain from 8 to 41 characters.
+    * The password for the master database user. This password can contain any printable ASCII character except forward slash (/), double quote ("), or the "at" symbol (@). Constraints: Must contain from 8 to 100 characters.
     */
   var MasterUserPassword: String
   /**
-    * The name of the master user for the DB cluster. Constraints:   Must be from 1 to 16 letters or numbers.   The first character must be a letter.   Cannot be a reserved word for the chosen database engine.  
+    * The name of the master user for the DB cluster. Constraints:   Must be from 1 to 63 letters or numbers.   The first character must be a letter.   Cannot be a reserved word for the chosen database engine.  
     */
   var MasterUsername: String
   /**

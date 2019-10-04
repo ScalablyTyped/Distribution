@@ -11,6 +11,7 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
+import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
@@ -232,6 +233,32 @@ object distOpsConvMod extends js.Object {
       dilations: (js.Tuple2[Double, Double]) | Double,
       dimRoundingMode: floor | round | ceil
     ): T = js.native
+  }
+  
+  @js.native
+  object depthwiseConv2dDerFilter extends js.Object {
+    def apply(
+      x: Tensor[R3 | R4],
+      dy: Tensor[R3 | R4],
+      filterShape: js.Tuple4[Double, Double, Double, Double],
+      convInfo: Conv2DInfo
+    ): Tensor4D = js.native
+  }
+  
+  @js.native
+  object depthwiseConv2dDerInput extends js.Object {
+    def apply(
+      xShape: js.Tuple3[Double, Double, Double],
+      dy: Tensor[R3 | R4],
+      filter: Tensor4D,
+      convInfo: Conv2DInfo
+    ): Tensor[R3] = js.native
+    def apply(
+      xShape: js.Tuple4[Double, Double, Double, Double],
+      dy: Tensor[R3 | R4],
+      filter: Tensor4D,
+      convInfo: Conv2DInfo
+    ): Tensor[R3] = js.native
   }
   
   @js.native

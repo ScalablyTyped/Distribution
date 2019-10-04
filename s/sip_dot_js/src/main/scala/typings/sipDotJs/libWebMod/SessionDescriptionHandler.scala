@@ -1,5 +1,6 @@
 package typings.sipDotJs.libWebMod
 
+import typings.sipDotJs.libApiSessionMod.Session
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext
@@ -19,6 +20,7 @@ class SessionDescriptionHandler protected ()
 @JSImport("sip.js/lib/Web", "SessionDescriptionHandler")
 @js.native
 object SessionDescriptionHandler extends js.Object {
+  def defaultFactory(session: Session, options: js.Any): typings.sipDotJs.libWebSessionDescriptionHandlerMod.SessionDescriptionHandler = js.native
   /**
     * @param {SIP.Session} session
     * @param {Object} [options]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqs-producer
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 Enqueues messages onto a given SQS queue

@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Disk extends js.Object {
   /**
+    * An array of objects representing the add-ons enabled on the disk.
+    */
+  var addOns: js.UndefOr[AddOnList] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) of the disk.
     */
   var arn: js.UndefOr[NonEmptyString] = js.undefined
@@ -74,6 +78,7 @@ trait Disk extends js.Object {
 object Disk {
   @scala.inline
   def apply(
+    addOns: AddOnList = null,
     arn: NonEmptyString = null,
     attachedTo: ResourceName = null,
     attachmentState: String = null,
@@ -92,6 +97,7 @@ object Disk {
     tags: TagList = null
   ): Disk = {
     val __obj = js.Dynamic.literal()
+    if (addOns != null) __obj.updateDynamic("addOns")(addOns)
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (attachedTo != null) __obj.updateDynamic("attachedTo")(attachedTo)
     if (attachmentState != null) __obj.updateDynamic("attachmentState")(attachmentState)

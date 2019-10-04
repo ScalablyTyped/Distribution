@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vorpal"
-version := "1.11-dt-20180914Z-0414dd"
+version := "1.12-dt-20190925Z-f81a73"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

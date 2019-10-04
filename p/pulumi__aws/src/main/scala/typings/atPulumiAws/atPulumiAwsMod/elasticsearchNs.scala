@@ -4,6 +4,9 @@ import typings.atPulumiAws.elasticsearchDomainMod.DomainArgs
 import typings.atPulumiAws.elasticsearchDomainMod.DomainState
 import typings.atPulumiAws.elasticsearchDomainPolicyMod.DomainPolicyArgs
 import typings.atPulumiAws.elasticsearchDomainPolicyMod.DomainPolicyState
+import typings.atPulumiAws.elasticsearchGetDomainMod.GetDomainArgs
+import typings.atPulumiAws.elasticsearchGetDomainMod.GetDomainResult
+import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
 import typings.atPulumiPulumi.resourceMod.ID
@@ -43,6 +46,8 @@ object elasticsearchNs extends js.Object {
     def this(name: String, args: DomainPolicyArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] with GetDomainResult = js.native
+  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] with GetDomainResult = js.native
   /* static members */
   @js.native
   object Domain extends js.Object {

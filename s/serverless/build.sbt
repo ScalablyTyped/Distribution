@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "serverless"
-version := "1.18-dt-20190318Z-846e56"
+version := "1.18-dt-20191001Z-bb8348"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -31,15 +31,15 @@ trait Views extends js.Object {
   def converters(namedItems: Hash[Converter]): Views = js.native
   def converters(namedItems: Hash[Converter], parentTmpl: Template): Views = js.native
   /**
-    * Generic store() function to register item, named item, or hash of items
-    * Also used as hash to store the registered items
-    * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
-    *
-    * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
-    * @param {any}           [item]       (e.g. markup for named template)
-    * @param {Template}      [parentTmpl] For item being registered as private resource of template
-    * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
-    */
+  	 * Generic store() function to register item, named item, or hash of items
+  	 * Also used as hash to store the registered items
+  	 * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
+  	 *
+  	 * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
+  	 * @param {any}           [item]       (e.g. markup for named template)
+  	 * @param {Template}      [parentTmpl] For item being registered as private resource of template
+  	 * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
+  	 */
   /* $.views.converters() */
   def converters(name: String): Converter = js.native
   def converters(name: String, item: Converter): Converter = js.native
@@ -49,15 +49,15 @@ trait Views extends js.Object {
   def helpers(namedItems: Hash[_]): Views = js.native
   def helpers(namedItems: Hash[_], parentTmpl: Template): Views = js.native
   /**
-    * Generic store() function to register item, named item, or hash of items
-    * Also used as hash to store the registered items
-    * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
-    *
-    * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
-    * @param {any}           [item]       (e.g. markup for named template)
-    * @param {Template}      [parentTmpl] For item being registered as private resource of template
-    * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
-    */
+  	 * Generic store() function to register item, named item, or hash of items
+  	 * Also used as hash to store the registered items
+  	 * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
+  	 *
+  	 * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
+  	 * @param {any}           [item]       (e.g. markup for named template)
+  	 * @param {Template}      [parentTmpl] For item being registered as private resource of template
+  	 * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
+  	 */
   /* $.views.helpers() */
   def helpers(name: String): js.Any = js.native
   def helpers(name: String, item: js.Any): js.Any = js.native
@@ -69,37 +69,37 @@ trait Views extends js.Object {
   def tags(namedItems: Hash[TagSetter]): Views = js.native
   def tags(namedItems: Hash[TagSetter], parentTmpl: Template): Views = js.native
   /**
-    * Generic store() function to register item, named item, or hash of items
-    * Also used as hash to store the registered items
-    * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
-    *
-    * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
-    * @param {any}           [item]       (e.g. markup for named template)
-    * @param {Template}      [parentTmpl] For item being registered as private resource of template
-    * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
-    */
+  	 * Generic store() function to register item, named item, or hash of items
+  	 * Also used as hash to store the registered items
+  	 * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
+  	 *
+  	 * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
+  	 * @param {any}           [item]       (e.g. markup for named template)
+  	 * @param {Template}      [parentTmpl] For item being registered as private resource of template
+  	 * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
+  	 */
   /* $.views.tags() */
   def tags(name: String): Tag = js.native
   def tags(name: String, item: TagSetter): Tag = js.native
   def tags(name: String, item: TagSetter, parentTmpl: Template): Tag = js.native
   /**
-    * Additional $.templates() signature for compiling unnamed template
-    *
-    * @param {string|TemplateOptions}   markup or selector
-    * @param {Template}                 [parentTmpl] For compling template as private resource of parent template
-    * @returns {Template}               compiled template
-    */
+  	 * Additional $.templates() signature for compiling unnamed template
+  	 *
+  	 * @param {string|TemplateOptions}   markup or selector
+  	 * @param {Template}                 [parentTmpl] For compling template as private resource of parent template
+  	 * @returns {Template}               compiled template
+  	 */
   /* $.views.templates() */
   /**
-    * Generic store() function to register item, named item, or hash of items
-    * Also used as hash to store the registered items
-    * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
-    *
-    * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
-    * @param {any}           [item]       (e.g. markup for named template)
-    * @param {Template}      [parentTmpl] For item being registered as private resource of template
-    * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
-    */
+  	 * Generic store() function to register item, named item, or hash of items
+  	 * Also used as hash to store the registered items
+  	 * Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
+  	 *
+  	 * @param {string|hash}   name         name - or selector, in case of $.templates(). Or hash of items
+  	 * @param {any}           [item]       (e.g. markup for named template)
+  	 * @param {Template}      [parentTmpl] For item being registered as private resource of template
+  	 * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
+  	 */
   def templates(markupOrSelectorOrOptions: String): Template = js.native
   def templates(markupOrSelectorOrOptions: String, parentTmpl: Template): Template = js.native
   def templates(markupOrSelectorOrOptions: TemplateOptions): Template = js.native

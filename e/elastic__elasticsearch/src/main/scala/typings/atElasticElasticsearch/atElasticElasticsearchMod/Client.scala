@@ -8,14 +8,15 @@ import typings.atElasticElasticsearch.Anon_Authenticate
 import typings.atElasticElasticsearch.Anon_Bulk
 import typings.atElasticElasticsearch.Anon_Cancel
 import typings.atElasticElasticsearch.Anon_Certificates
+import typings.atElasticElasticsearch.Anon_CleanupRepository
 import typings.atElasticElasticsearch.Anon_ClearCursor
 import typings.atElasticElasticsearch.Anon_CloseJob
-import typings.atElasticElasticsearch.Anon_Create
 import typings.atElasticElasticsearch.Anon_Delete
 import typings.atElasticElasticsearch.Anon_DeleteAutoFollowPattern
 import typings.atElasticElasticsearch.Anon_DeleteDataFrameTransform
 import typings.atElasticElasticsearch.Anon_DeleteJob
 import typings.atElasticElasticsearch.Anon_DeleteLifecycle
+import typings.atElasticElasticsearch.Anon_DeleteLifecycleDeletelifecycle
 import typings.atElasticElasticsearch.Anon_DeletePipeline
 import typings.atElasticElasticsearch.Anon_Deprecations
 import typings.atElasticElasticsearch.Anon_Explore
@@ -188,7 +189,8 @@ class Client () extends EventEmitter {
   var search_template_Original: ApiMethod[SearchTemplate[_], _] = js.native
   var security: Anon_Authenticate = js.native
   var serializer: default = js.native
-  var snapshot: Anon_Create = js.native
+  var slm: Anon_DeleteLifecycleDeletelifecycle = js.native
+  var snapshot: Anon_CleanupRepository = js.native
   var sql: Anon_ClearCursor = js.native
   var ssl: Anon_Certificates = js.native
   var tasks: Anon_Cancel = js.native

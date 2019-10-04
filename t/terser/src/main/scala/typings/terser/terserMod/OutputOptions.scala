@@ -1,6 +1,7 @@
 package typings.terser.terserMod
 
 import typings.std.RegExp
+import typings.terser.terserNumbers.`false`
 import typings.terser.terserStrings.all
 import typings.terser.terserStrings.some
 import scala.scalajs.js
@@ -15,10 +16,10 @@ trait OutputOptions extends js.Object {
   var ecma: js.UndefOr[ECMA] = js.undefined
   var ie8: js.UndefOr[Boolean] = js.undefined
   var indent_level: js.UndefOr[Double] = js.undefined
-  var indent_start: js.UndefOr[Boolean] = js.undefined
+  var indent_start: js.UndefOr[Double] = js.undefined
   var inline_script: js.UndefOr[Boolean] = js.undefined
   var keep_quoted_props: js.UndefOr[Boolean] = js.undefined
-  var max_line_len: js.UndefOr[Boolean] = js.undefined
+  var max_line_len: js.UndefOr[Double | `false`] = js.undefined
   var preamble: js.UndefOr[String] = js.undefined
   var quote_keys: js.UndefOr[Boolean] = js.undefined
   var quote_style: js.UndefOr[OutputQuoteStyle] = js.undefined
@@ -42,10 +43,10 @@ object OutputOptions {
     ecma: ECMA = null,
     ie8: js.UndefOr[Boolean] = js.undefined,
     indent_level: Int | Double = null,
-    indent_start: js.UndefOr[Boolean] = js.undefined,
+    indent_start: Int | Double = null,
     inline_script: js.UndefOr[Boolean] = js.undefined,
     keep_quoted_props: js.UndefOr[Boolean] = js.undefined,
-    max_line_len: js.UndefOr[Boolean] = js.undefined,
+    max_line_len: Double | `false` = null,
     preamble: String = null,
     quote_keys: js.UndefOr[Boolean] = js.undefined,
     quote_style: OutputQuoteStyle = null,
@@ -66,10 +67,10 @@ object OutputOptions {
     if (ecma != null) __obj.updateDynamic("ecma")(ecma)
     if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8)
     if (indent_level != null) __obj.updateDynamic("indent_level")(indent_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_start)) __obj.updateDynamic("indent_start")(indent_start)
+    if (indent_start != null) __obj.updateDynamic("indent_start")(indent_start.asInstanceOf[js.Any])
     if (!js.isUndefined(inline_script)) __obj.updateDynamic("inline_script")(inline_script)
     if (!js.isUndefined(keep_quoted_props)) __obj.updateDynamic("keep_quoted_props")(keep_quoted_props)
-    if (!js.isUndefined(max_line_len)) __obj.updateDynamic("max_line_len")(max_line_len)
+    if (max_line_len != null) __obj.updateDynamic("max_line_len")(max_line_len.asInstanceOf[js.Any])
     if (preamble != null) __obj.updateDynamic("preamble")(preamble)
     if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys)
     if (quote_style != null) __obj.updateDynamic("quote_style")(quote_style)

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.backupSelectionMod
 
-import typings.atPulumiAws.Anon_KeyType
+import typings.atPulumiAws.typesOutputMod.backupNs.SelectionSelectionTag
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -41,7 +41,7 @@ class Selection protected () extends CustomResource {
   /**
     * Tag-based conditions used to specify a set of resources to assign to a backup plan.
     */
-  val selectionTags: Output[js.UndefOr[js.Array[Anon_KeyType]]] = js.native
+  val selectionTags: Output[js.UndefOr[js.Array[SelectionSelectionTag]]] = js.native
 }
 
 /* static members */

@@ -9,12 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait AuthenticateResult extends js.Object {
   var authenticated: KeycloakPromise[Boolean, KeycloakError]
-  var keycloak: KeycloakInstance
+  var keycloak: KeycloakInstance[js.UndefOr[scala.Nothing]]
 }
 
 object AuthenticateResult {
   @scala.inline
-  def apply(authenticated: KeycloakPromise[Boolean, KeycloakError], keycloak: KeycloakInstance): AuthenticateResult = {
+  def apply(
+    authenticated: KeycloakPromise[Boolean, KeycloakError],
+    keycloak: KeycloakInstance[js.UndefOr[scala.Nothing]]
+  ): AuthenticateResult = {
     val __obj = js.Dynamic.literal(authenticated = authenticated, keycloak = keycloak)
   
     __obj.asInstanceOf[AuthenticateResult]

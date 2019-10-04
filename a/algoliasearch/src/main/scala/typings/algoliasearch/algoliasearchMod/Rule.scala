@@ -13,7 +13,7 @@ trait Rule extends js.Object {
   /**
     * Condition of the rule
     */
-  var condition: Anon_Anchoring
+  var condition: js.UndefOr[Anon_Anchoring] = js.undefined
   /**
     * Consequence of the rule. At least one of the following must be used:
     */
@@ -32,8 +32,14 @@ trait Rule extends js.Object {
 
 object Rule {
   @scala.inline
-  def apply(condition: Anon_Anchoring, consequence: Anon_Params, objectID: String, description: String = null): Rule = {
-    val __obj = js.Dynamic.literal(condition = condition, consequence = consequence, objectID = objectID)
+  def apply(
+    consequence: Anon_Params,
+    objectID: String,
+    condition: Anon_Anchoring = null,
+    description: String = null
+  ): Rule = {
+    val __obj = js.Dynamic.literal(consequence = consequence, objectID = objectID)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[Rule]
   }

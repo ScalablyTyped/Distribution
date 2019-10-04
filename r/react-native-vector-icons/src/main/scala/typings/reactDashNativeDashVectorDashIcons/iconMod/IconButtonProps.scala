@@ -76,7 +76,7 @@ import scala.scalajs.js.annotation._
     *
     * @default {marginRight: 10}
     */
-  var iconStyle: js.UndefOr[ViewStyle] = js.undefined
+  var iconStyle: js.UndefOr[TextStyle] = js.undefined
   /**
     *
     * Called immediately after the underlay is hidden
@@ -131,7 +131,7 @@ object IconButtonProps {
     ellipsizeMode: head | middle | tail | clip = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
-    iconStyle: ViewStyle = null,
+    iconStyle: TextStyle = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     lineBreakMode: head | middle | tail | clip = null,
     maxFontSizeMultiplier: Int | Double = null,

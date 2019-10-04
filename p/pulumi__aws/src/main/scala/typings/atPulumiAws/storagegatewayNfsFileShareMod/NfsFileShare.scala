@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayNfsFileShareMod
 
-import typings.atPulumiAws.Anon_DirectoryMode
+import typings.atPulumiAws.typesOutputMod.storagegatewayNs.NfsFileShareNfsFileShareDefaults
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -61,7 +61,7 @@ class NfsFileShare protected () extends CustomResource {
   /**
     * Nested argument with file share default values. More information below.
     */
-  val nfsFileShareDefaults: Output[js.UndefOr[Anon_DirectoryMode]] = js.native
+  val nfsFileShareDefaults: Output[js.UndefOr[NfsFileShareNfsFileShareDefaults]] = js.native
   /**
     * Access Control List permission for S3 bucket objects. Defaults to `private`.
     */

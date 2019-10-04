@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the PivotLayout object, for use in "pivotLayout.set({ ... })". */
+/** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
 trait PivotLayoutUpdateData extends js.Object {
   /**
     *

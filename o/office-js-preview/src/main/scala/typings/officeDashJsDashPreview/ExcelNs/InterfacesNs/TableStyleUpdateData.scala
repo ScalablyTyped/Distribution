@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the TableStyle object, for use in "tableStyle.set({ ... })". */
+/** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
 trait TableStyleUpdateData extends js.Object {
   /**
     *

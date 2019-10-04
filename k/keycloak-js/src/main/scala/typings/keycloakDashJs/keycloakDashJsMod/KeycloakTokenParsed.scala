@@ -1,6 +1,5 @@
 package typings.keycloakDashJs.keycloakDashJsMod
 
-import typings.keycloakDashJs.Anon_Roles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,8 @@ trait KeycloakTokenParsed extends js.Object {
   var exp: js.UndefOr[Double] = js.undefined
   var iat: js.UndefOr[Double] = js.undefined
   var nonce: js.UndefOr[String] = js.undefined
-  var realm_access: js.UndefOr[Anon_Roles] = js.undefined
-  var resource_access: js.UndefOr[js.Array[String]] = js.undefined
+  var realm_access: js.UndefOr[KeycloakRoles] = js.undefined
+  var resource_access: js.UndefOr[KeycloakResourceAccess] = js.undefined
   var session_state: js.UndefOr[String] = js.undefined
   var sub: js.UndefOr[String] = js.undefined
 }
@@ -21,8 +20,8 @@ object KeycloakTokenParsed {
     exp: Int | Double = null,
     iat: Int | Double = null,
     nonce: String = null,
-    realm_access: Anon_Roles = null,
-    resource_access: js.Array[String] = null,
+    realm_access: KeycloakRoles = null,
+    resource_access: KeycloakResourceAccess = null,
     session_state: String = null,
     sub: String = null
   ): KeycloakTokenParsed = {

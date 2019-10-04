@@ -11,11 +11,14 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi 1.1]
   */
 trait RangeFillLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+    * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
     *
     * [Api set: ExcelApi 1.1]
     */

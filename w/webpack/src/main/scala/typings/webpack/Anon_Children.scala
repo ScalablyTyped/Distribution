@@ -13,7 +13,7 @@ trait Anon_Children extends js.Object {
   var files: js.Array[String]
   var filteredModules: js.UndefOr[Boolean] = js.undefined
   var hash: js.UndefOr[String] = js.undefined
-  var id: Double
+  var id: Double | String
   var initial: Boolean
   var modules: js.UndefOr[js.Array[FnModules]] = js.undefined
   var names: js.Array[String]
@@ -33,7 +33,7 @@ object Anon_Children {
     childrenByOrder: Record[String, js.Array[Double]],
     entry: Boolean,
     files: js.Array[String],
-    id: Double,
+    id: Double | String,
     initial: Boolean,
     names: js.Array[String],
     parents: js.Array[Double],
@@ -47,7 +47,7 @@ object Anon_Children {
     reason: String = null,
     recorded: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, childrenByOrder = childrenByOrder, entry = entry, files = files, id = id, initial = initial, names = names, parents = parents, rendered = rendered, siblings = siblings, size = size)
+    val __obj = js.Dynamic.literal(children = children, childrenByOrder = childrenByOrder, entry = entry, files = files, id = id.asInstanceOf[js.Any], initial = initial, names = names, parents = parents, rendered = rendered, siblings = siblings, size = size)
     if (!js.isUndefined(filteredModules)) __obj.updateDynamic("filteredModules")(filteredModules)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (modules != null) __obj.updateDynamic("modules")(modules)

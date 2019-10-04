@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the PivotTableStyleCollection object, for use in "pivotTableStyleCollection.set({ ... })". */
+/** An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({ ... })`. */
 trait PivotTableStyleCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
 }

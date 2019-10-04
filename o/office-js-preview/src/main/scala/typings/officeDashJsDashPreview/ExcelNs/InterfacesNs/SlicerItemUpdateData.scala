@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the SlicerItem object, for use in "slicerItem.set({ ... })". */
+/** An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`. */
 trait SlicerItemUpdateData extends js.Object {
   /**
     *

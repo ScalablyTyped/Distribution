@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorListenerMod
 
-import typings.atPulumiAws.Anon_FromPortToPortInput
+import typings.atPulumiAws.typesInputMod.globalacceleratorNs.ListenerPortRange
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait ListenerState extends js.Object {
   /**
     * The list of port ranges for the connections from clients to the accelerator. Fields documented below.
     */
-  val portRanges: js.UndefOr[Input[js.Array[Input[Anon_FromPortToPortInput]]]] = js.undefined
+  val portRanges: js.UndefOr[Input[js.Array[Input[ListenerPortRange]]]] = js.undefined
   /**
     * The protocol for the connections from clients to the accelerator. Valid values are `TCP`, `UDP`.
     */
@@ -30,7 +30,7 @@ object ListenerState {
   def apply(
     acceleratorArn: Input[String] = null,
     clientAffinity: Input[String] = null,
-    portRanges: Input[js.Array[Input[Anon_FromPortToPortInput]]] = null,
+    portRanges: Input[js.Array[Input[ListenerPortRange]]] = null,
     protocol: Input[String] = null
   ): ListenerState = {
     val __obj = js.Dynamic.literal()

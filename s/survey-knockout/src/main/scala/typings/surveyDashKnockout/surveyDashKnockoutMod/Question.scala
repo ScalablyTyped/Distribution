@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: containsErrors, isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -198,8 +198,10 @@ class Question protected ()
   var useDisplayValuesInTitle: Boolean = js.native
   /* CompleteClass */
   override var validatedValue: js.Any = js.native
-  /* CompleteClass */
-  override var validators: js.Array[SurveyValidator] = js.native
+  /**
+    * The list of question validators.
+    */
+  var validators: js.Array[SurveyValidator] = js.native
   /**
     * Get/Set the question value.
     * @see SurveyMode.setValue
@@ -329,6 +331,8 @@ class Question protected ()
   override def getType(): String = js.native
   /* CompleteClass */
   override def getValidatorTitle(): String = js.native
+  /* CompleteClass */
+  override def getValidators(): js.Array[SurveyValidator] = js.native
   /* protected */ def getValueCore(): js.Any = js.native
   def getValueName(): String = js.native
   /**

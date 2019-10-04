@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 trait Anon_Acm extends js.Object {
   var acm: js.UndefOr[String] = js.undefined
   var acmpca: js.UndefOr[String] = js.undefined
+  var amplify: js.UndefOr[String] = js.undefined
   var apigateway: js.UndefOr[String] = js.undefined
   var applicationautoscaling: js.UndefOr[String] = js.undefined
   var applicationinsights: js.UndefOr[String] = js.undefined
   var appmesh: js.UndefOr[String] = js.undefined
+  var appstream: js.UndefOr[String] = js.undefined
   var appsync: js.UndefOr[String] = js.undefined
   var athena: js.UndefOr[String] = js.undefined
   var autoscaling: js.UndefOr[String] = js.undefined
@@ -58,6 +60,7 @@ trait Anon_Acm extends js.Object {
   var es: js.UndefOr[String] = js.undefined
   var firehose: js.UndefOr[String] = js.undefined
   var fms: js.UndefOr[String] = js.undefined
+  var forecast: js.UndefOr[String] = js.undefined
   var fsx: js.UndefOr[String] = js.undefined
   var gamelift: js.UndefOr[String] = js.undefined
   var glacier: js.UndefOr[String] = js.undefined
@@ -67,12 +70,15 @@ trait Anon_Acm extends js.Object {
   var iam: js.UndefOr[String] = js.undefined
   var inspector: js.UndefOr[String] = js.undefined
   var iot: js.UndefOr[String] = js.undefined
+  var iotanalytics: js.UndefOr[String] = js.undefined
+  var iotevents: js.UndefOr[String] = js.undefined
   var kafka: js.UndefOr[String] = js.undefined
   var kinesis: js.UndefOr[String] = js.undefined
   var kinesisAnalytics: js.UndefOr[String] = js.undefined
   var kinesisanalytics: js.UndefOr[String] = js.undefined
   var kinesisvideo: js.UndefOr[String] = js.undefined
   var kms: js.UndefOr[String] = js.undefined
+  var lakeformation: js.UndefOr[String] = js.undefined
   var lambda: js.UndefOr[String] = js.undefined
   var lexmodels: js.UndefOr[String] = js.undefined
   var licensemanager: js.UndefOr[String] = js.undefined
@@ -89,6 +95,7 @@ trait Anon_Acm extends js.Object {
   var neptune: js.UndefOr[String] = js.undefined
   var opsworks: js.UndefOr[String] = js.undefined
   var organizations: js.UndefOr[String] = js.undefined
+  var personalize: js.UndefOr[String] = js.undefined
   var pinpoint: js.UndefOr[String] = js.undefined
   var pricing: js.UndefOr[String] = js.undefined
   var quicksight: js.UndefOr[String] = js.undefined
@@ -131,10 +138,12 @@ object Anon_Acm {
   def apply(
     acm: String = null,
     acmpca: String = null,
+    amplify: String = null,
     apigateway: String = null,
     applicationautoscaling: String = null,
     applicationinsights: String = null,
     appmesh: String = null,
+    appstream: String = null,
     appsync: String = null,
     athena: String = null,
     autoscaling: String = null,
@@ -182,6 +191,7 @@ object Anon_Acm {
     es: String = null,
     firehose: String = null,
     fms: String = null,
+    forecast: String = null,
     fsx: String = null,
     gamelift: String = null,
     glacier: String = null,
@@ -191,12 +201,15 @@ object Anon_Acm {
     iam: String = null,
     inspector: String = null,
     iot: String = null,
+    iotanalytics: String = null,
+    iotevents: String = null,
     kafka: String = null,
     kinesis: String = null,
     kinesisAnalytics: String = null,
     kinesisanalytics: String = null,
     kinesisvideo: String = null,
     kms: String = null,
+    lakeformation: String = null,
     lambda: String = null,
     lexmodels: String = null,
     licensemanager: String = null,
@@ -213,6 +226,7 @@ object Anon_Acm {
     neptune: String = null,
     opsworks: String = null,
     organizations: String = null,
+    personalize: String = null,
     pinpoint: String = null,
     pricing: String = null,
     quicksight: String = null,
@@ -252,10 +266,12 @@ object Anon_Acm {
     val __obj = js.Dynamic.literal()
     if (acm != null) __obj.updateDynamic("acm")(acm)
     if (acmpca != null) __obj.updateDynamic("acmpca")(acmpca)
+    if (amplify != null) __obj.updateDynamic("amplify")(amplify)
     if (apigateway != null) __obj.updateDynamic("apigateway")(apigateway)
     if (applicationautoscaling != null) __obj.updateDynamic("applicationautoscaling")(applicationautoscaling)
     if (applicationinsights != null) __obj.updateDynamic("applicationinsights")(applicationinsights)
     if (appmesh != null) __obj.updateDynamic("appmesh")(appmesh)
+    if (appstream != null) __obj.updateDynamic("appstream")(appstream)
     if (appsync != null) __obj.updateDynamic("appsync")(appsync)
     if (athena != null) __obj.updateDynamic("athena")(athena)
     if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling)
@@ -303,6 +319,7 @@ object Anon_Acm {
     if (es != null) __obj.updateDynamic("es")(es)
     if (firehose != null) __obj.updateDynamic("firehose")(firehose)
     if (fms != null) __obj.updateDynamic("fms")(fms)
+    if (forecast != null) __obj.updateDynamic("forecast")(forecast)
     if (fsx != null) __obj.updateDynamic("fsx")(fsx)
     if (gamelift != null) __obj.updateDynamic("gamelift")(gamelift)
     if (glacier != null) __obj.updateDynamic("glacier")(glacier)
@@ -312,12 +329,15 @@ object Anon_Acm {
     if (iam != null) __obj.updateDynamic("iam")(iam)
     if (inspector != null) __obj.updateDynamic("inspector")(inspector)
     if (iot != null) __obj.updateDynamic("iot")(iot)
+    if (iotanalytics != null) __obj.updateDynamic("iotanalytics")(iotanalytics)
+    if (iotevents != null) __obj.updateDynamic("iotevents")(iotevents)
     if (kafka != null) __obj.updateDynamic("kafka")(kafka)
     if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis)
     if (kinesisAnalytics != null) __obj.updateDynamic("kinesisAnalytics")(kinesisAnalytics)
     if (kinesisanalytics != null) __obj.updateDynamic("kinesisanalytics")(kinesisanalytics)
     if (kinesisvideo != null) __obj.updateDynamic("kinesisvideo")(kinesisvideo)
     if (kms != null) __obj.updateDynamic("kms")(kms)
+    if (lakeformation != null) __obj.updateDynamic("lakeformation")(lakeformation)
     if (lambda != null) __obj.updateDynamic("lambda")(lambda)
     if (lexmodels != null) __obj.updateDynamic("lexmodels")(lexmodels)
     if (licensemanager != null) __obj.updateDynamic("licensemanager")(licensemanager)
@@ -334,6 +354,7 @@ object Anon_Acm {
     if (neptune != null) __obj.updateDynamic("neptune")(neptune)
     if (opsworks != null) __obj.updateDynamic("opsworks")(opsworks)
     if (organizations != null) __obj.updateDynamic("organizations")(organizations)
+    if (personalize != null) __obj.updateDynamic("personalize")(personalize)
     if (pinpoint != null) __obj.updateDynamic("pinpoint")(pinpoint)
     if (pricing != null) __obj.updateDynamic("pricing")(pricing)
     if (quicksight != null) __obj.updateDynamic("quicksight")(quicksight)

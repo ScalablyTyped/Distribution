@@ -1,5 +1,6 @@
 package typings.vegaDashTypings.typesSpecLegendMod
 
+import typings.vegaDashTypings.typesSpecAxisMod.TickCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -183,6 +184,10 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     */
   var symbolFillColor: js.UndefOr[C] = js.undefined
   /**
+    * The maximum number of allowed entries for a symbol legend. Additional entries will be dropped.
+    */
+  var symbolLimit: js.UndefOr[N] = js.undefined
+  /**
     * Horizontal pixel offset for legend symbols.
     *
     * __Default value:__ `0`.
@@ -216,6 +221,10 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     * __Default value:__ `"circle"`.
     */
   var symbolType: js.UndefOr[SY] = js.undefined
+  /**
+    * The desired number of tick values for quantitative legends.
+    */
+  var tickCount: js.UndefOr[TickCount] = js.undefined
   // ---------- Title ----------
   /**
     * Horizontal text alignment for legend titles.
@@ -261,6 +270,10 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     * @minimum 0
     */
   var titleLimit: js.UndefOr[N] = js.undefined
+  /**
+    * Line height in pixels for multi-line title text.
+    */
+  var titleLineHeight: js.UndefOr[N] = js.undefined
   /**
     * Opacity of the legend title.
     */
@@ -314,12 +327,14 @@ object BaseLegend {
     symbolDash: DA = null,
     symbolDashOffset: N = null,
     symbolFillColor: C = null,
+    symbolLimit: N = null,
     symbolOffset: N = null,
     symbolOpacity: N = null,
     symbolSize: N = null,
     symbolStrokeColor: C = null,
     symbolStrokeWidth: N = null,
     symbolType: SY = null,
+    tickCount: TickCount = null,
     titleAlign: A = null,
     titleAnchor: AN = null,
     titleBaseline: TB = null,
@@ -329,6 +344,7 @@ object BaseLegend {
     titleFontStyle: FS = null,
     titleFontWeight: FW = null,
     titleLimit: N = null,
+    titleLineHeight: N = null,
     titleOpacity: N = null,
     titleOrient: O = null,
     titlePadding: N = null
@@ -368,12 +384,14 @@ object BaseLegend {
     if (symbolDash != null) __obj.updateDynamic("symbolDash")(symbolDash.asInstanceOf[js.Any])
     if (symbolDashOffset != null) __obj.updateDynamic("symbolDashOffset")(symbolDashOffset.asInstanceOf[js.Any])
     if (symbolFillColor != null) __obj.updateDynamic("symbolFillColor")(symbolFillColor.asInstanceOf[js.Any])
+    if (symbolLimit != null) __obj.updateDynamic("symbolLimit")(symbolLimit.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
     if (symbolOpacity != null) __obj.updateDynamic("symbolOpacity")(symbolOpacity.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (symbolStrokeColor != null) __obj.updateDynamic("symbolStrokeColor")(symbolStrokeColor.asInstanceOf[js.Any])
     if (symbolStrokeWidth != null) __obj.updateDynamic("symbolStrokeWidth")(symbolStrokeWidth.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
+    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
     if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
     if (titleAnchor != null) __obj.updateDynamic("titleAnchor")(titleAnchor.asInstanceOf[js.Any])
     if (titleBaseline != null) __obj.updateDynamic("titleBaseline")(titleBaseline.asInstanceOf[js.Any])
@@ -383,6 +401,7 @@ object BaseLegend {
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
     if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
     if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
+    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titleOrient != null) __obj.updateDynamic("titleOrient")(titleOrient.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])

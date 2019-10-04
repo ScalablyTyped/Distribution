@@ -27,6 +27,9 @@ object reactDashAsyncStrings {
   sealed trait rejected extends js.Object
   
   @js.native
+  sealed trait run extends js.Object
+  
+  @js.native
   sealed trait start extends js.Object
   
   @scala.inline
@@ -43,6 +46,8 @@ object reactDashAsyncStrings {
   def reject: reject = "reject".asInstanceOf[reject]
   @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
+  @scala.inline
+  def run: run = "run".asInstanceOf[run]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
 }

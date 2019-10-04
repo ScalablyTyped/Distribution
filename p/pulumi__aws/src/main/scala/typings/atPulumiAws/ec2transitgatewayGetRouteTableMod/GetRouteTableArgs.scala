@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2transitgatewayGetRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2transitgatewayNs.GetRouteTableFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetRouteTableArgs extends js.Object {
   /**
     * One or more configuration blocks containing name-values filters. Detailed below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.undefined
   /**
     * Identifier of the EC2 Transit Gateway Route Table.
     */
@@ -21,7 +21,7 @@ trait GetRouteTableArgs extends js.Object {
 object GetRouteTableArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetRouteTableFilter] = null,
     id: String = null,
     tags: StringDictionary[js.Any] = null
   ): GetRouteTableArgs = {

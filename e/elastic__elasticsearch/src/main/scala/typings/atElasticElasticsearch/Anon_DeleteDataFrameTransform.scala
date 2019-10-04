@@ -7,6 +7,7 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.DataFramePreviewDataFr
 import typings.atElasticElasticsearch.apiRequestParamsMod.DataFramePutDataFrameTransform
 import typings.atElasticElasticsearch.apiRequestParamsMod.DataFrameStartDataFrameTransform
 import typings.atElasticElasticsearch.apiRequestParamsMod.DataFrameStopDataFrameTransform
+import typings.atElasticElasticsearch.apiRequestParamsMod.DataFrameUpdateDataFrameTransform
 import typings.atElasticElasticsearch.atElasticElasticsearchMod.ApiMethod
 import typings.atElasticElasticsearch.atElasticElasticsearchMod.callbackFn
 import typings.atElasticElasticsearch.libTransportMod.ApiResponse
@@ -46,6 +47,10 @@ trait Anon_DeleteDataFrameTransform extends js.Object {
   var stopDataFrameTransform_Original: ApiMethod[DataFrameStopDataFrameTransform, _] = js.native
   @JSName("stop_data_frame_transform")
   var stop_data_frame_transform_Original: ApiMethod[DataFrameStopDataFrameTransform, _] = js.native
+  @JSName("updateDataFrameTransform")
+  var updateDataFrameTransform_Original: ApiMethod[DataFrameUpdateDataFrameTransform[_], _] = js.native
+  @JSName("update_data_frame_transform")
+  var update_data_frame_transform_Original: ApiMethod[DataFrameUpdateDataFrameTransform[_], _] = js.native
   // Promise API
   def deleteDataFrameTransform(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -198,5 +203,29 @@ trait Anon_DeleteDataFrameTransform extends js.Object {
   def stop_data_frame_transform(params: DataFrameStopDataFrameTransform, callback: callbackFn[_]): TransportRequestCallback = js.native
   def stop_data_frame_transform(params: DataFrameStopDataFrameTransform, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def stop_data_frame_transform(params: DataFrameStopDataFrameTransform, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def updateDataFrameTransform(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def updateDataFrameTransform(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def updateDataFrameTransform(params: DataFrameUpdateDataFrameTransform[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def updateDataFrameTransform(params: DataFrameUpdateDataFrameTransform[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def updateDataFrameTransform(params: DataFrameUpdateDataFrameTransform[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def updateDataFrameTransform(
+    params: DataFrameUpdateDataFrameTransform[_],
+    options: TransportRequestOptions,
+    callback: callbackFn[_]
+  ): TransportRequestCallback = js.native
+  // Promise API
+  def update_data_frame_transform(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def update_data_frame_transform(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def update_data_frame_transform(params: DataFrameUpdateDataFrameTransform[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def update_data_frame_transform(params: DataFrameUpdateDataFrameTransform[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def update_data_frame_transform(params: DataFrameUpdateDataFrameTransform[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def update_data_frame_transform(
+    params: DataFrameUpdateDataFrameTransform[_],
+    options: TransportRequestOptions,
+    callback: callbackFn[_]
+  ): TransportRequestCallback = js.native
 }
 

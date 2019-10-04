@@ -1,7 +1,7 @@
 package typings.atPulumiAws.mqGetBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Audit
+import typings.atPulumiAws.typesInputMod.mqNs.GetBrokerLogs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait GetBrokerArgs extends js.Object {
     * The unique name of the mq broker.
     */
   val brokerName: js.UndefOr[String] = js.undefined
-  val logs: js.UndefOr[Anon_Audit] = js.undefined
+  val logs: js.UndefOr[GetBrokerLogs] = js.undefined
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object GetBrokerArgs {
   def apply(
     brokerId: String = null,
     brokerName: String = null,
-    logs: Anon_Audit = null,
+    logs: GetBrokerLogs = null,
     tags: StringDictionary[js.Any] = null
   ): GetBrokerArgs = {
     val __obj = js.Dynamic.literal()

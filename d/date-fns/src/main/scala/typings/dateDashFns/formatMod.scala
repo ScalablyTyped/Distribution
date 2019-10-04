@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/format", JSImport.Namespace)
 @js.native
 object formatMod extends js.Object {
-  def apply(date: Date | String | Double): String = js.native
-  def apply(date: Date | String | Double, format: String): String = js.native
-  def apply(date: Date | String | Double, format: String, options: Anon_Locale): String = js.native
+  def default(date: Double, format: String): String = js.native
+  def default(date: Double, format: String, options: Anon_0123): String = js.native
+  def default(date: Date, format: String): String = js.native
+  def default(date: Date, format: String, options: Anon_0123): String = js.native
 }
 

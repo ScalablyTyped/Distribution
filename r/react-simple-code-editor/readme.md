@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-simple-code-editor
 
-Typings are for version 0.9.14
+Typings are for version 0.10.0
 
 ## Library description:
 Simple no-frills code editor with syntax highlighting

@@ -195,7 +195,7 @@ class TableCell () extends ClientObject {
   def getCellPadding_Top(cellPaddingLocation: Top): ClientResult[Double] = js.native
   /**
     *
-    * Gets the next cell. Throws if this cell is the last one.
+    * Gets the next cell. Throws an error if this cell is the last one.
     *
     * [Api set: WordApi 1.3]
     */

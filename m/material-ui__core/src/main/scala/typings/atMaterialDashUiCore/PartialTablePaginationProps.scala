@@ -155,7 +155,7 @@ trait PartialTablePaginationProps extends js.Object {
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var headers: js.UndefOr[String] = js.undefined
@@ -444,7 +444,7 @@ object PartialTablePaginationProps {
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     headers: String = null,

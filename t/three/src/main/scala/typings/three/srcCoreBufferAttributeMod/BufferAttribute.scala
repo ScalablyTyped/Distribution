@@ -24,12 +24,12 @@ class BufferAttribute protected () extends js.Object {
   	 * @deprecated Use {@link BufferAttribute#count .count} instead.
   	 */
   var length: Double = js.native
+   // array parameter should be TypedArray.
+  var name: String = js.native
   var needsUpdate: Boolean = js.native
   var normalized: Boolean = js.native
   var onUpload: js.Function = js.native
   var updateRange: Anon_Count = js.native
-   // array parameter should be TypedArray.
-  var uuid: String = js.native
   var version: Double = js.native
   def copy(source: BufferAttribute): this.type = js.native
   def copyArray(array: ArrayLike[Double]): BufferAttribute = js.native
@@ -46,8 +46,6 @@ class BufferAttribute protected () extends js.Object {
   def set(value: ArrayBufferView, offset: Double): BufferAttribute = js.native
   def set(value: ArrayLike[Double]): BufferAttribute = js.native
   def set(value: ArrayLike[Double], offset: Double): BufferAttribute = js.native
-  def setArray(): Unit = js.native
-  def setArray(array: ArrayBufferView): Unit = js.native
   def setDynamic(dynamic: Boolean): BufferAttribute = js.native
   def setW(index: Double, z: Double): BufferAttribute = js.native
   def setX(index: Double, x: Double): BufferAttribute = js.native

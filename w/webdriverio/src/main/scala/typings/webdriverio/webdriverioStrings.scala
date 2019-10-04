@@ -24,6 +24,12 @@ object webdriverioStrings {
   sealed trait addCommand extends js.Object
   
   @js.native
+  sealed trait dragAndDrop extends js.Object
+  
+  @js.native
+  sealed trait element extends js.Object
+  
+  @js.native
   sealed trait `element-6066-11e4-a52e-4f735466cecf` extends js.Object
   
   @js.native
@@ -38,6 +44,9 @@ object webdriverioStrings {
   @js.native
   sealed trait selector extends js.Object
   
+  @js.native
+  sealed trait touchAction extends js.Object
+  
   @scala.inline
   def BrowserAsync: BrowserAsync = "BrowserAsync".asInstanceOf[BrowserAsync]
   @scala.inline
@@ -51,6 +60,10 @@ object webdriverioStrings {
   @scala.inline
   def addCommand: addCommand = "addCommand".asInstanceOf[addCommand]
   @scala.inline
+  def dragAndDrop: dragAndDrop = "dragAndDrop".asInstanceOf[dragAndDrop]
+  @scala.inline
+  def element: element = "element".asInstanceOf[element]
+  @scala.inline
   def `element-6066-11e4-a52e-4f735466cecf`: `element-6066-11e4-a52e-4f735466cecf` = "element-6066-11e4-a52e-4f735466cecf".asInstanceOf[`element-6066-11e4-a52e-4f735466cecf`]
   @scala.inline
   def elementId: elementId = "elementId".asInstanceOf[elementId]
@@ -60,5 +73,7 @@ object webdriverioStrings {
   def overwriteCommand: overwriteCommand = "overwriteCommand".asInstanceOf[overwriteCommand]
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
+  @scala.inline
+  def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
 }
 

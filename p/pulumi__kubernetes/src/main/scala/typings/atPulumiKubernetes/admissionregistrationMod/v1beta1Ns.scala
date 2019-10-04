@@ -103,14 +103,13 @@ object v1beta1Ns extends js.Object {
   object MutatingWebhookConfiguration extends js.Object {
     /**
       * Get the state of an existing `MutatingWebhookConfiguration` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.admissionregistrationV1beta1MutatingWebhookConfigurationMod.MutatingWebhookConfiguration = js.native
@@ -127,14 +126,13 @@ object v1beta1Ns extends js.Object {
   object MutatingWebhookConfigurationList extends js.Object {
     /**
       * Get the state of an existing `MutatingWebhookConfigurationList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.admissionregistrationV1beta1MutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = js.native
@@ -151,14 +149,13 @@ object v1beta1Ns extends js.Object {
   object ValidatingWebhookConfiguration extends js.Object {
     /**
       * Get the state of an existing `ValidatingWebhookConfiguration` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.admissionregistrationV1beta1ValidatingWebhookConfigurationMod.ValidatingWebhookConfiguration = js.native
@@ -175,14 +172,13 @@ object v1beta1Ns extends js.Object {
   object ValidatingWebhookConfigurationList extends js.Object {
     /**
       * Get the state of an existing `ValidatingWebhookConfigurationList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.admissionregistrationV1beta1ValidatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = js.native

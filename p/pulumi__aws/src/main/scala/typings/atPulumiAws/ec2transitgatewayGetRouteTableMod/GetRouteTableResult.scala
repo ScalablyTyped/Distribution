@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2transitgatewayGetRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2transitgatewayNs.GetRouteTableFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait GetRouteTableResult extends js.Object {
     * Boolean whether this is the default propagation route table for the EC2 Transit Gateway
     */
   val defaultPropagationRouteTable: Boolean
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.undefined
   /**
     * EC2 Transit Gateway Route Table identifier
     */
@@ -37,7 +37,7 @@ object GetRouteTableResult {
     defaultPropagationRouteTable: Boolean,
     tags: StringDictionary[js.Any],
     transitGatewayId: String,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetRouteTableFilter] = null,
     id: String = null
   ): GetRouteTableResult = {
     val __obj = js.Dynamic.literal(defaultAssociationRouteTable = defaultAssociationRouteTable, defaultPropagationRouteTable = defaultPropagationRouteTable, tags = tags, transitGatewayId = transitGatewayId)

@@ -18,6 +18,10 @@ trait ElasticsearchDomainConfig extends js.Object {
     */
   var CognitoOptions: js.UndefOr[CognitoOptionsStatus] = js.undefined
   /**
+    * Specifies the DomainEndpointOptions for the Elasticsearch domain.
+    */
+  var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.undefined
+  /**
     * Specifies the EBSOptions for the Elasticsearch domain.
     */
   var EBSOptions: js.UndefOr[EBSOptionsStatus] = js.undefined
@@ -57,6 +61,7 @@ object ElasticsearchDomainConfig {
     AccessPolicies: AccessPoliciesStatus = null,
     AdvancedOptions: AdvancedOptionsStatus = null,
     CognitoOptions: CognitoOptionsStatus = null,
+    DomainEndpointOptions: DomainEndpointOptionsStatus = null,
     EBSOptions: EBSOptionsStatus = null,
     ElasticsearchClusterConfig: ElasticsearchClusterConfigStatus = null,
     ElasticsearchVersion: ElasticsearchVersionStatus = null,
@@ -70,6 +75,7 @@ object ElasticsearchDomainConfig {
     if (AccessPolicies != null) __obj.updateDynamic("AccessPolicies")(AccessPolicies)
     if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions)
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions)
+    if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions)
     if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions)
     if (ElasticsearchClusterConfig != null) __obj.updateDynamic("ElasticsearchClusterConfig")(ElasticsearchClusterConfig)
     if (ElasticsearchVersion != null) __obj.updateDynamic("ElasticsearchVersion")(ElasticsearchVersion)

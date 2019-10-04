@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("aurelia-binding", "EventManager")
 @js.native
 class EventManager () extends js.Object {
+  def this(escapeShadowRoot: Boolean) = this()
+  var escapeShadowRoot: Boolean = js.native
   def addEventListener(
     target: EventTarget,
     targetEvent: String,

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set({ ... })". */
+/** An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`. */
 trait ChartBinOptionsUpdateData extends js.Object {
   /**
     *

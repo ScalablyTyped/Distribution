@@ -1,6 +1,7 @@
 package typings.xrm.XrmNs.ControlsNs
 
 import typings.xrm.XrmEnumNs.GridControlContext
+import typings.xrm.XrmNs.EventsNs.ContextSensitiveHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ trait GridControl extends Control {
     *
     * @param handler The event handler.
     */
-  def addOnLoad(handler: js.Function0[Unit]): Unit
+  def addOnLoad(handler: ContextSensitiveHandler): Unit
   /**
     * This method returns context information about the GridControl.
     *
@@ -54,7 +55,7 @@ trait GridControl extends Control {
 object GridControl {
   @scala.inline
   def apply(
-    addOnLoad: js.Function0[Unit] => Unit,
+    addOnLoad: ContextSensitiveHandler => Unit,
     getContextType: () => GridControlContext,
     getControlType: () => ControlType | String,
     getEntityName: () => String,

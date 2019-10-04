@@ -1,0 +1,16 @@
+package typings.sicDashEcies.sicDashEciesMod
+
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait AES extends js.Object {
+  def apply(): AES = js.native
+  def buf2words(buf: Buffer): js.Array[Double] = js.native
+  def decrypt(encbuf: Buffer, keybuf: Buffer): Buffer = js.native
+  def encrypt(messagebuf: Buffer, keybuf: Buffer): Buffer = js.native
+  def words2buf(words: js.Array[Double]): Buffer = js.native
+}
+

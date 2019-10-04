@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object outFsMod {
-  import typings.fsDashExtraDashP.fsDashExtraDashPMod.Stats
+  import typings.fsDashExtra.fsDashExtraMod.Stats
   import typings.node.Buffer
 
   type AfterCopyFileTransformer = js.Function1[/* file */ String, js.Promise[Unit]]

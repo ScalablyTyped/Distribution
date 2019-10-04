@@ -36,7 +36,7 @@ trait DropDownTreeOptions extends js.Object {
   var messages: js.UndefOr[DropDownTreeMessages] = js.undefined
   var minLength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var noDataTemplate: js.UndefOr[String | js.Function] = js.undefined
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
   var open: js.UndefOr[js.Function1[/* e */ DropDownTreeOpenEvent, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var popup: js.UndefOr[DropDownTreePopup] = js.undefined
@@ -82,7 +82,7 @@ object DropDownTreeOptions {
     messages: DropDownTreeMessages = null,
     minLength: Int | Double = null,
     name: String = null,
-    noDataTemplate: String | js.Function = null,
+    noDataTemplate: String | js.Function | Boolean = null,
     open: /* e */ DropDownTreeOpenEvent => Unit = null,
     placeholder: String = null,
     popup: DropDownTreePopup = null,

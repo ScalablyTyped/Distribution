@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetInstanceFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait GetInstanceArgs extends js.Object {
     * several valid keys, for a full reference, check out
     * [describe-instances in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetInstanceFilter]] = js.undefined
   /**
     * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `passwordData` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
@@ -36,7 +36,7 @@ trait GetInstanceArgs extends js.Object {
 object GetInstanceArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetInstanceFilter] = null,
     getPasswordData: js.UndefOr[Boolean] = js.undefined,
     getUserData: js.UndefOr[Boolean] = js.undefined,
     instanceId: String = null,

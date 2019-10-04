@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ebsGetSnapshotMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ebsNs.GetSnapshotFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait GetSnapshotArgs extends js.Object {
     * several valid keys, for a full reference, check out
     * [describe-snapshots in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSnapshotFilter]] = js.undefined
   /**
     * If more than one result is returned, use the most recent snapshot.
     */
@@ -35,7 +35,7 @@ trait GetSnapshotArgs extends js.Object {
 object GetSnapshotArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetSnapshotFilter] = null,
     mostRecent: js.UndefOr[Boolean] = js.undefined,
     owners: js.Array[String] = null,
     restorableByUserIds: js.Array[String] = null,

@@ -16,6 +16,9 @@ trait Anon_Account extends js.Object {
   def amount(min: Double, max: Double, dec: Double, symbol: String): String = js.native
   def bic(): String = js.native
   def bitcoinAddress(): String = js.native
+  def creditCardCVV(): String = js.native
+  def creditCardNumber(): String = js.native
+  def creditCardNumber(provider: String): String = js.native
   def currencyCode(): String = js.native
   def currencyName(): String = js.native
   def currencySymbol(): String = js.native
@@ -26,6 +29,7 @@ trait Anon_Account extends js.Object {
   def mask(length: Double): String = js.native
   def mask(length: Double, parens: Boolean): String = js.native
   def mask(length: Double, parens: Boolean, elipsis: Boolean): String = js.native
+  def routingNumber(): String = js.native
   def transactionType(): String = js.native
 }
 

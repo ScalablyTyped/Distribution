@@ -1,11 +1,12 @@
 package typings.atPulumiAws.dynamodbTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AttributeNameEnabledBoolean
-import typings.atPulumiAws.Anon_EnabledBooleanInput_2072549229
-import typings.atPulumiAws.Anon_HashKeyNameNonKeyAttributes
-import typings.atPulumiAws.Anon_NameNonKeyAttributesProjectionTypeRangeKey
-import typings.atPulumiAws.Anon_NameTypeInput
+import typings.atPulumiAws.typesInputMod.dynamodbNs.TableAttribute
+import typings.atPulumiAws.typesInputMod.dynamodbNs.TableGlobalSecondaryIndex
+import typings.atPulumiAws.typesInputMod.dynamodbNs.TableLocalSecondaryIndex
+import typings.atPulumiAws.typesInputMod.dynamodbNs.TablePointInTimeRecovery
+import typings.atPulumiAws.typesInputMod.dynamodbNs.TableServerSideEncryption
+import typings.atPulumiAws.typesInputMod.dynamodbNs.TableTtl
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ trait TableArgs extends js.Object {
   /**
     * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
     */
-  val attributes: Input[js.Array[Input[Anon_NameTypeInput]]]
+  val attributes: Input[js.Array[Input[TableAttribute]]]
   /**
     * Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
     */
@@ -25,7 +26,7 @@ trait TableArgs extends js.Object {
     * subject to the normal limits on the number of GSIs, projected
     * attributes, etc.
     */
-  val globalSecondaryIndexes: js.UndefOr[Input[js.Array[Input[Anon_HashKeyNameNonKeyAttributes]]]] = js.undefined
+  val globalSecondaryIndexes: js.UndefOr[Input[js.Array[Input[TableGlobalSecondaryIndex]]]] = js.undefined
   /**
     * The name of the hash key in the index; must be
     * defined as an attribute in the resource.
@@ -36,7 +37,7 @@ trait TableArgs extends js.Object {
     * these can only be allocated *at creation* so you cannot change this
     * definition after you have created the resource.
     */
-  val localSecondaryIndexes: js.UndefOr[Input[js.Array[Input[Anon_NameNonKeyAttributesProjectionTypeRangeKey]]]] = js.undefined
+  val localSecondaryIndexes: js.UndefOr[Input[js.Array[Input[TableLocalSecondaryIndex]]]] = js.undefined
   /**
     * The name of the index
     */
@@ -44,7 +45,7 @@ trait TableArgs extends js.Object {
   /**
     * Point-in-time recovery options.
     */
-  val pointInTimeRecovery: js.UndefOr[Input[Anon_EnabledBooleanInput_2072549229]] = js.undefined
+  val pointInTimeRecovery: js.UndefOr[Input[TablePointInTimeRecovery]] = js.undefined
   /**
     * The name of the range key; must be defined
     */
@@ -56,7 +57,7 @@ trait TableArgs extends js.Object {
   /**
     * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
     */
-  val serverSideEncryption: js.UndefOr[Input[Anon_EnabledBooleanInput_2072549229]] = js.undefined
+  val serverSideEncryption: js.UndefOr[Input[TableServerSideEncryption]] = js.undefined
   /**
     * Indicates whether Streams are to be enabled (true) or disabled (false).
     */
@@ -72,7 +73,7 @@ trait TableArgs extends js.Object {
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
-  val ttl: js.UndefOr[Input[Anon_AttributeNameEnabledBoolean]] = js.undefined
+  val ttl: js.UndefOr[Input[TableTtl]] = js.undefined
   /**
     * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
     */
@@ -82,20 +83,20 @@ trait TableArgs extends js.Object {
 object TableArgs {
   @scala.inline
   def apply(
-    attributes: Input[js.Array[Input[Anon_NameTypeInput]]],
+    attributes: Input[js.Array[Input[TableAttribute]]],
     hashKey: Input[String],
     billingMode: Input[String] = null,
-    globalSecondaryIndexes: Input[js.Array[Input[Anon_HashKeyNameNonKeyAttributes]]] = null,
-    localSecondaryIndexes: Input[js.Array[Input[Anon_NameNonKeyAttributesProjectionTypeRangeKey]]] = null,
+    globalSecondaryIndexes: Input[js.Array[Input[TableGlobalSecondaryIndex]]] = null,
+    localSecondaryIndexes: Input[js.Array[Input[TableLocalSecondaryIndex]]] = null,
     name: Input[String] = null,
-    pointInTimeRecovery: Input[Anon_EnabledBooleanInput_2072549229] = null,
+    pointInTimeRecovery: Input[TablePointInTimeRecovery] = null,
     rangeKey: Input[String] = null,
     readCapacity: Input[Double] = null,
-    serverSideEncryption: Input[Anon_EnabledBooleanInput_2072549229] = null,
+    serverSideEncryption: Input[TableServerSideEncryption] = null,
     streamEnabled: Input[Boolean] = null,
     streamViewType: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
-    ttl: Input[Anon_AttributeNameEnabledBoolean] = null,
+    ttl: Input[TableTtl] = null,
     writeCapacity: Input[Double] = null
   ): TableArgs = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], hashKey = hashKey.asInstanceOf[js.Any])

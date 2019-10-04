@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.Component
 import typings.react.reactMod.Ref
 import typings.reactDashSelect.srcTypesMod.InputActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-select/src/Async", "Async")
 @js.native
-class Async[OptionType] ()
+class Async[OptionType /* <: OptionTypeBase */] ()
   extends Component[Props[OptionType], State[OptionType], js.Any] {
   var mounted: Boolean = js.native
   var optionsCache: StringDictionary[OptionsType[OptionType]] = js.native

@@ -9,8 +9,10 @@ package object utilsMod {
   import typings.grommet.Anon_Dark
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.KeyboardEvent
   import typings.react.reactMod.ReactNode
   import typings.std.Exclude
+  import typings.std.HTMLElement
   import typings.std.Pick
 
   type A11yTitleType = String
@@ -33,6 +35,7 @@ package object utilsMod {
   */
   type GapType = _GapType | String
   type GridAreaType = String
+  type KeyboardType = js.Function1[/* event */ KeyboardEvent[HTMLElement], Unit]
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.none
     - typings.grommet.grommetStrings.xxsmall

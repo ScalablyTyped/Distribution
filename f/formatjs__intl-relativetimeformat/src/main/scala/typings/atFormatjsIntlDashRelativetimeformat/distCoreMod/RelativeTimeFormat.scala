@@ -5,19 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait RelativeTimeFormat extends js.Object {
-  val _fields: js.Any = js.native
-  val _localeMatcher: js.Any = js.native
-  val _nf: js.Any = js.native
-  val _numberingSystem: js.Any = js.native
-  val _numeric: js.Any = js.native
-  val _pl: js.Any = js.native
-  val _style: js.Any = js.native
-  def format(value: String, unit: FormattableUnit): String = js.native
-  def format(value: Double, unit: FormattableUnit): String = js.native
-  def formatToParts(value: String, unit: FormattableUnit): js.Array[Part] = js.native
-  def formatToParts(value: Double, unit: FormattableUnit): js.Array[Part] = js.native
-  def resolvedOptions(): ResolvedIntlRelativeTimeFormatOptions = js.native
+  def format(value: Double, unit: FormattableUnit): String
+  def formatToParts(value: Double, unit: FormattableUnit): js.Array[Part]
+  def resolvedOptions(): ResolvedIntlRelativeTimeFormatOptions
+}
+
+object RelativeTimeFormat {
+  @scala.inline
+  def apply(
+    format: (Double, FormattableUnit) => String,
+    formatToParts: (Double, FormattableUnit) => js.Array[Part],
+    resolvedOptions: () => ResolvedIntlRelativeTimeFormatOptions
+  ): RelativeTimeFormat = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatToParts = js.Any.fromFunction2(formatToParts), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
+  
+    __obj.asInstanceOf[RelativeTimeFormat]
+  }
 }
 

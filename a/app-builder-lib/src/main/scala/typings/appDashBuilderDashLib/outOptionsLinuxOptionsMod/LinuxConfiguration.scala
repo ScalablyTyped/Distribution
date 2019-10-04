@@ -1,6 +1,7 @@
 package typings.appDashBuilderDashLib.outOptionsLinuxOptionsMod
 
 import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetConfigType
 import typings.appDashBuilderDashLib.outOptionsFileAssociationMod.FileAssociation
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.AsarOptions
@@ -8,7 +9,6 @@ import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.F
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.Protocol
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.ReleaseInfo
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +16,6 @@ import scala.scalajs.js.annotation._
 trait LinuxConfiguration
   extends PlatformSpecificBuildOptions
      with CommonLinuxOptions {
-  /**
-    * @deprecated
-    * @private
-    */
-  val depends: js.UndefOr[js.Array[String] | Null] = js.undefined
   /**
     * The executable name. Defaults to `productName`.
     * Cannot be specified per target, allowed only in the `linux`.
@@ -68,7 +63,6 @@ object LinuxConfiguration {
     compression: CompressionLevel = null,
     cscKeyPassword: String = null,
     cscLink: String = null,
-    depends: js.Array[String] = null,
     description: String = null,
     desktop: js.Any = null,
     detectUpdateChannel: js.UndefOr[Boolean] = js.undefined,
@@ -100,7 +94,6 @@ object LinuxConfiguration {
     if (compression != null) __obj.updateDynamic("compression")(compression)
     if (cscKeyPassword != null) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword)
     if (cscLink != null) __obj.updateDynamic("cscLink")(cscLink)
-    if (depends != null) __obj.updateDynamic("depends")(depends)
     if (description != null) __obj.updateDynamic("description")(description)
     if (desktop != null) __obj.updateDynamic("desktop")(desktop)
     if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel)

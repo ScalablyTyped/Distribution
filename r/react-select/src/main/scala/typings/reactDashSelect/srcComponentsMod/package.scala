@@ -8,9 +8,10 @@ package object srcComponentsMod {
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.ReactElement
   import typings.reactDashSelect.srcComponentsIndicatorsMod.IndicatorProps
+  import typings.reactDashSelect.srcTypesMod.OptionTypeBase
   import typings.std.Partial
 
-  type IndicatorComponentType[OptionType] = ComponentType[IndicatorProps[OptionType]]
-  type PlaceholderOrValue[OptionType] = ReactElement | js.Array[ReactElement]
-  type SelectComponentsConfig[OptionType] = Partial[SelectComponents[OptionType]]
+  type IndicatorComponentType[OptionType /* <: OptionTypeBase */] = ComponentType[IndicatorProps[OptionType]]
+  type PlaceholderOrValue[OptionType /* <: OptionTypeBase */] = ReactElement | js.Array[ReactElement]
+  type SelectComponentsConfig[OptionType /* <: OptionTypeBase */] = Partial[SelectComponents[OptionType]]
 }

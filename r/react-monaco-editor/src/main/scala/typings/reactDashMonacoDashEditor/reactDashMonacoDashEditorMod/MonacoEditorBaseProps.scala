@@ -22,10 +22,6 @@ trait MonacoEditorBaseProps extends js.Object {
     */
   var language: js.UndefOr[String] = js.undefined
   /**
-    * Optional, allow to config loader url and relative path of module, refer to require.config.
-    */
-  var requireConfig: js.UndefOr[js.Any] = js.undefined
-  /**
     * Theme to be used for rendering.
     * The current out-of-the-box available themes are: 'vs' (default), 'vs-dark', 'hc-black'.
     * You can create custom themes via `monaco.editor.defineTheme`.
@@ -44,7 +40,6 @@ object MonacoEditorBaseProps {
     defaultValue: String = null,
     height: String | Double = null,
     language: String = null,
-    requireConfig: js.Any = null,
     theme: String = null,
     width: String | Double = null
   ): MonacoEditorBaseProps = {
@@ -53,7 +48,6 @@ object MonacoEditorBaseProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
-    if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonacoEditorBaseProps]

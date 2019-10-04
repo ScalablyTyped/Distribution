@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ebsGetSnapshotMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ebsNs.GetSnapshotFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait GetSnapshotResult extends js.Object {
     * Whether the snapshot is encrypted.
     */
   val encrypted: Boolean
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSnapshotFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -77,7 +77,7 @@ object GetSnapshotResult {
     tags: StringDictionary[js.Any],
     volumeId: String,
     volumeSize: Double,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetSnapshotFilter] = null,
     mostRecent: js.UndefOr[Boolean] = js.undefined,
     owners: js.Array[String] = null,
     restorableByUserIds: js.Array[String] = null,

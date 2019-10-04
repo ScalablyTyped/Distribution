@@ -1,7 +1,8 @@
 package typings.atPulumiAws.organizationsOrganizationMod
 
-import typings.atPulumiAws.Anon_ArnEmailId
-import typings.atPulumiAws.Anon_ArnIdName
+import typings.atPulumiAws.typesInputMod.organizationsNs.OrganizationAccount
+import typings.atPulumiAws.typesInputMod.organizationsNs.OrganizationNonMasterAccount
+import typings.atPulumiAws.typesInputMod.organizationsNs.OrganizationRoot
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ trait OrganizationState extends js.Object {
   /**
     * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
     */
-  val accounts: js.UndefOr[Input[js.Array[Input[Anon_ArnEmailId]]]] = js.undefined
+  val accounts: js.UndefOr[Input[js.Array[Input[OrganizationAccount]]]] = js.undefined
   /**
     * ARN of the root
     */
@@ -43,17 +44,17 @@ trait OrganizationState extends js.Object {
   /**
     * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
     */
-  val nonMasterAccounts: js.UndefOr[Input[js.Array[Input[Anon_ArnEmailId]]]] = js.undefined
+  val nonMasterAccounts: js.UndefOr[Input[js.Array[Input[OrganizationNonMasterAccount]]]] = js.undefined
   /**
     * List of organization roots. All elements have these attributes:
     */
-  val roots: js.UndefOr[Input[js.Array[Input[Anon_ArnIdName]]]] = js.undefined
+  val roots: js.UndefOr[Input[js.Array[Input[OrganizationRoot]]]] = js.undefined
 }
 
 object OrganizationState {
   @scala.inline
   def apply(
-    accounts: Input[js.Array[Input[Anon_ArnEmailId]]] = null,
+    accounts: Input[js.Array[Input[OrganizationAccount]]] = null,
     arn: Input[String] = null,
     awsServiceAccessPrincipals: Input[js.Array[Input[String]]] = null,
     enabledPolicyTypes: Input[js.Array[Input[String]]] = null,
@@ -61,8 +62,8 @@ object OrganizationState {
     masterAccountArn: Input[String] = null,
     masterAccountEmail: Input[String] = null,
     masterAccountId: Input[String] = null,
-    nonMasterAccounts: Input[js.Array[Input[Anon_ArnEmailId]]] = null,
-    roots: Input[js.Array[Input[Anon_ArnIdName]]] = null
+    nonMasterAccounts: Input[js.Array[Input[OrganizationNonMasterAccount]]] = null,
+    roots: Input[js.Array[Input[OrganizationRoot]]] = null
   ): OrganizationState = {
     val __obj = js.Dynamic.literal()
     if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])

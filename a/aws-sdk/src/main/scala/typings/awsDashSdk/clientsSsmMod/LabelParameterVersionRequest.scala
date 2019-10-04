@@ -14,7 +14,7 @@ trait LabelParameterVersionRequest extends js.Object {
     */
   var Name: PSParameterName
   /**
-    * The specific version of the parameter on which you want to attach one or more labels. If no version is specified, the system attaches the label to the latest version.)
+    * The specific version of the parameter on which you want to attach one or more labels. If no version is specified, the system attaches the label to the latest version.
     */
   var ParameterVersion: js.UndefOr[PSParameterVersion] = js.undefined
 }

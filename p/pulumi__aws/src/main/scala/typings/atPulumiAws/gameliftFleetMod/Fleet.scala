@@ -1,8 +1,8 @@
 package typings.atPulumiAws.gameliftFleetMod
 
-import typings.atPulumiAws.Anon_FromPort
-import typings.atPulumiAws.Anon_GameSessionActivationTimeoutSeconds
-import typings.atPulumiAws.Anon_NewGameSessionsPerCreator
+import typings.atPulumiAws.typesOutputMod.gameliftNs.FleetEc2InboundPermission
+import typings.atPulumiAws.typesOutputMod.gameliftNs.FleetResourceCreationLimitPolicy
+import typings.atPulumiAws.typesOutputMod.gameliftNs.FleetRuntimeConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -39,7 +39,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
     */
-  val ec2InboundPermissions: Output[js.UndefOr[js.Array[Anon_FromPort]]] = js.native
+  val ec2InboundPermissions: Output[js.UndefOr[js.Array[FleetEc2InboundPermission]]] = js.native
   /**
     * Name of an EC2 instance type. e.g. `t2.micro`
     */
@@ -64,11 +64,11 @@ class Fleet protected () extends CustomResource {
   /**
     * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
     */
-  val resourceCreationLimitPolicy: Output[js.UndefOr[Anon_NewGameSessionsPerCreator]] = js.native
+  val resourceCreationLimitPolicy: Output[js.UndefOr[FleetResourceCreationLimitPolicy]] = js.native
   /**
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
-  val runtimeConfiguration: Output[js.UndefOr[Anon_GameSessionActivationTimeoutSeconds]] = js.native
+  val runtimeConfiguration: Output[js.UndefOr[FleetRuntimeConfiguration]] = js.native
 }
 
 /* static members */

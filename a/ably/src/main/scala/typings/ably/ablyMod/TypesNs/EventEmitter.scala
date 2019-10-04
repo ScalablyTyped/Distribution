@@ -20,9 +20,10 @@ trait EventEmitter[CallbackType, ResultType, EventType, StateType] extends js.Ob
   def on(eventOrCallback: CallbackType | EventType, callback: CallbackType): Unit = js.native
   def on(eventOrCallback: js.Array[EventType]): Unit = js.native
   def on(eventOrCallback: js.Array[EventType], callback: CallbackType): Unit = js.native
+  def once(): js.Promise[ResultType] = js.native
   def once(event: EventType): js.Promise[ResultType] = js.native
-  def once(eventOrCallback: CallbackType | EventType, callback: CallbackType): Unit = js.native
+  def once(event: EventType, callback: CallbackType): Unit = js.native
   @JSName("once")
-  def once_Unit(eventOrCallback: CallbackType | EventType): Unit = js.native
+  def once_Unit(callback: CallbackType): Unit = js.native
 }
 

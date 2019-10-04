@@ -1,6 +1,6 @@
 package typings.atPulumiAws.resourcegroupsGroupMod
 
-import typings.atPulumiAws.Anon_QueryType
+import typings.atPulumiAws.typesInputMod.resourcegroupsNs.GroupResourceQuery
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait GroupState extends js.Object {
   /**
     * A `resourceQuery` block. Resource queries are documented below.
     */
-  val resourceQuery: js.UndefOr[Input[Anon_QueryType]] = js.undefined
+  val resourceQuery: js.UndefOr[Input[GroupResourceQuery]] = js.undefined
 }
 
 object GroupState {
@@ -31,7 +31,7 @@ object GroupState {
     arn: Input[String] = null,
     description: Input[String] = null,
     name: Input[String] = null,
-    resourceQuery: Input[Anon_QueryType] = null
+    resourceQuery: Input[GroupResourceQuery] = null
   ): GroupState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

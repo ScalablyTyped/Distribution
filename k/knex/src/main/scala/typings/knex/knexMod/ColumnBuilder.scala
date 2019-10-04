@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait ColumnBuilder extends js.Object {
   def alter(): ColumnBuilder = js.native
   def comment(value: String): ColumnBuilder = js.native
+  def defaultTo(): ColumnBuilder = js.native
   def defaultTo(value: Value): ColumnBuilder = js.native
   def index(): ColumnBuilder = js.native
   def index(indexName: String): ColumnBuilder = js.native

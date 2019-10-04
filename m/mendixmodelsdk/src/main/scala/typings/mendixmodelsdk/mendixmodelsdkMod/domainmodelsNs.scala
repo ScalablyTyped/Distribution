@@ -20,6 +20,7 @@ import typings.mendixmodelsdk.distGenPagesMod.pagesNs.ReferenceSetSelector
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SelectorXPathSource
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.SingleSearchField
 import typings.mendixmodelsdk.distGenPagesMod.pagesNs.StaticOrDynamicString
+import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IFolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projectsNs.IModule
 import typings.mendixmodelsdk.distGenSecurityMod.securityNs.AccessRuleContainerBase
 import scala.scalajs.js
@@ -689,6 +690,23 @@ object domainmodelsNs extends js.Object {
       isPartial: Boolean,
       unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
       container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    ) = this()
+  }
+  
+  /**
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.2.0: introduced
+    */
+  @js.native
+  abstract class RemoteEntitySourceDocument protected ()
+    extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.domainmodelsNs.RemoteEntitySourceDocument {
+    def this(
+      model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      container: IFolderBase
     ) = this()
   }
   
@@ -1828,6 +1846,13 @@ object domainmodelsNs extends js.Object {
       * of the parent ValidationRule element passed as argument.
       */
     def createIn(container: typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.RegExRuleInfo = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object RemoteEntitySourceDocument extends js.Object {
+    var structureTypeName: String = js.native
+    var versionInfo: typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
   /* static members */

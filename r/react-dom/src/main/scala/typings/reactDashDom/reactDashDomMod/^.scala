@@ -29,6 +29,10 @@ object ^ extends js.Object {
   def unstable_batchedUpdates(callback: js.Function0[_]): Unit = js.native
   def unstable_batchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
   def unstable_batchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
+  def unstable_createRoot(container: Element): Root = js.native
+  def unstable_createRoot(container: Element, options: RootOptions): Root = js.native
+  def unstable_createSyncRoot(container: Element): SyncRoot = js.native
+  def unstable_createSyncRoot(container: Element, options: RootOptions): SyncRoot = js.native
   def unstable_renderSubtreeIntoContainer[T /* <: Element */](
     parentComponent: Component[_, js.Object, _],
     element: DOMElement[DOMAttributes[T], T],

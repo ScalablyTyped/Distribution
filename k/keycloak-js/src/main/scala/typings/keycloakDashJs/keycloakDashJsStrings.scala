@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
 
 object keycloakDashJsStrings {
   @js.native
+  sealed trait S256 extends js.Object
+  
+  @js.native
   sealed trait `check-sso` extends KeycloakOnLoad
   
   @js.native
@@ -61,6 +64,8 @@ object keycloakDashJsStrings {
   @js.native
   sealed trait standard extends KeycloakFlow
   
+  @scala.inline
+  def S256: S256 = "S256".asInstanceOf[S256]
   @scala.inline
   def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]
   @scala.inline

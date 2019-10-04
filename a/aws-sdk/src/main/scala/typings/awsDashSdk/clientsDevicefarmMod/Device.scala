@@ -82,7 +82,7 @@ trait Device extends js.Object {
     */
   var remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * This flag is set to true if remote debugging is enabled for the device.
+    * This flag is set to true if remote debugging is enabled for the device.  Remote debugging is no longer supported. 
     */
   var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
   /**

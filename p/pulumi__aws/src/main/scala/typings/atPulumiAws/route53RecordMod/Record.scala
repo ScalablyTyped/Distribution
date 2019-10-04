@@ -1,10 +1,10 @@
 package typings.atPulumiAws.route53RecordMod
 
-import typings.atPulumiAws.Anon_Continent
-import typings.atPulumiAws.Anon_EvaluateTargetHealth
-import typings.atPulumiAws.Anon_RegionString
-import typings.atPulumiAws.Anon_TypeString
-import typings.atPulumiAws.Anon_Weight
+import typings.atPulumiAws.typesOutputMod.route53Ns.RecordAlias
+import typings.atPulumiAws.typesOutputMod.route53Ns.RecordFailoverRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53Ns.RecordGeolocationRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53Ns.RecordLatencyRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53Ns.RecordWeightedRoutingPolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class Record protected () extends CustomResource {
     * An alias block. Conflicts with `ttl` & `records`.
     * Alias record documented below.
     */
-  val aliases: Output[js.UndefOr[js.Array[Anon_EvaluateTargetHealth]]] = js.native
+  val aliases: Output[js.UndefOr[js.Array[RecordAlias]]] = js.native
   /**
     * Allow creation of this record to overwrite an existing record, if any. This does not affect the ability to update the record using this provider and does not prevent other resources within this provider or manual Route 53 changes outside this provider from overwriting this record. `false` by default. This configuration is not recommended for most environments.
     */
@@ -38,7 +38,7 @@ class Record protected () extends CustomResource {
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
     */
-  val failoverRoutingPolicies: Output[js.UndefOr[js.Array[Anon_TypeString]]] = js.native
+  val failoverRoutingPolicies: Output[js.UndefOr[js.Array[RecordFailoverRoutingPolicy]]] = js.native
   /**
     * [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) built using the zone domain and `name`.
     */
@@ -46,7 +46,7 @@ class Record protected () extends CustomResource {
   /**
     * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
     */
-  val geolocationRoutingPolicies: Output[js.UndefOr[js.Array[Anon_Continent]]] = js.native
+  val geolocationRoutingPolicies: Output[js.UndefOr[js.Array[RecordGeolocationRoutingPolicy]]] = js.native
   /**
     * The health check the record should be associated with.
     */
@@ -54,7 +54,7 @@ class Record protected () extends CustomResource {
   /**
     * A block indicating a routing policy based on the latency between the requestor and an AWS region. Conflicts with any other routing policy. Documented below.
     */
-  val latencyRoutingPolicies: Output[js.UndefOr[js.Array[Anon_RegionString]]] = js.native
+  val latencyRoutingPolicies: Output[js.UndefOr[js.Array[RecordLatencyRoutingPolicy]]] = js.native
   /**
     * Set to `true` to indicate a multivalue answer routing policy. Conflicts with any other routing policy.
     */
@@ -82,7 +82,7 @@ class Record protected () extends CustomResource {
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */
-  val weightedRoutingPolicies: Output[js.UndefOr[js.Array[Anon_Weight]]] = js.native
+  val weightedRoutingPolicies: Output[js.UndefOr[js.Array[RecordWeightedRoutingPolicy]]] = js.native
   /**
     * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.
     */

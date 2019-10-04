@@ -1,11 +1,12 @@
 package typings.officeDashJsDashPreview.ExcelNs.InterfacesNs
 
+import typings.officeDashJsDashPreview.ExcelNs.CommentMention
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "comment.toJSON()". */
+/** An interface describing the data returned by calling `comment.toJSON()`. */
 trait CommentData extends js.Object {
   /**
     *
@@ -49,6 +50,14 @@ trait CommentData extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   /**
     *
+    * Gets the entities (e.g. people) that are mentioned in comments.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
+  /**
+    *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -63,6 +72,14 @@ trait CommentData extends js.Object {
     * @beta
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var richContent: js.UndefOr[String] = js.undefined
 }
 
 object CommentData {
@@ -73,8 +90,10 @@ object CommentData {
     content: String = null,
     creationDate: Date = null,
     id: String = null,
+    mentions: js.Array[CommentMention] = null,
     replies: js.Array[CommentReplyData] = null,
-    resolved: js.UndefOr[Boolean] = js.undefined
+    resolved: js.UndefOr[Boolean] = js.undefined,
+    richContent: String = null
   ): CommentData = {
     val __obj = js.Dynamic.literal()
     if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail)
@@ -82,8 +101,10 @@ object CommentData {
     if (content != null) __obj.updateDynamic("content")(content)
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
     if (replies != null) __obj.updateDynamic("replies")(replies)
     if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
+    if (richContent != null) __obj.updateDynamic("richContent")(richContent)
     __obj.asInstanceOf[CommentData]
   }
 }

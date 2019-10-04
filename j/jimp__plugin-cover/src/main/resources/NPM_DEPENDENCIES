@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jimp/plugin-cover" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jimp/plugin-cover" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,68 @@
+package typings.pgDashPromise.pgDashPromiseMod
+
+import typings.pgDashPromise.typescriptPgDashSubsetMod.IClient
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+// Library's Initialization Options
+// API: http://vitaly-t.github.io/pg-promise/module-pg-promise.html
+trait IInitOptions[Ext] extends js.Object {
+  var capSQL: js.UndefOr[Boolean] = js.undefined
+  var connect: js.UndefOr[js.Function3[/* client */ IClient, /* dc */ js.Any, /* useCount */ Double, Unit]] = js.undefined
+  var disconnect: js.UndefOr[js.Function2[/* client */ IClient, /* dc */ js.Any, Unit]] = js.undefined
+  var error: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ IEventContext, Unit]] = js.undefined
+  var extend: js.UndefOr[js.Function2[/* obj */ IDatabase[Ext] with Ext, /* dc */ js.Any, Unit]] = js.undefined
+  var noLocking: js.UndefOr[Boolean] = js.undefined
+  var noWarnings: js.UndefOr[Boolean] = js.undefined
+  var pgFormatting: js.UndefOr[Boolean] = js.undefined
+  var pgNative: js.UndefOr[Boolean] = js.undefined
+  var promiseLib: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[js.Function1[/* e */ IEventContext, Unit]] = js.undefined
+  var receive: js.UndefOr[
+    js.Function3[/* data */ js.Array[_], /* result */ IResultExt, /* e */ IEventContext, Unit]
+  ] = js.undefined
+  var schema: js.UndefOr[ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema])] = js.undefined
+  var task: js.UndefOr[js.Function1[/* e */ IEventContext, Unit]] = js.undefined
+  var transact: js.UndefOr[js.Function1[/* e */ IEventContext, Unit]] = js.undefined
+}
+
+object IInitOptions {
+  @scala.inline
+  def apply[Ext](
+    capSQL: js.UndefOr[Boolean] = js.undefined,
+    connect: (/* client */ IClient, /* dc */ js.Any, /* useCount */ Double) => Unit = null,
+    disconnect: (/* client */ IClient, /* dc */ js.Any) => Unit = null,
+    error: (/* err */ js.Any, /* e */ IEventContext) => Unit = null,
+    extend: (/* obj */ IDatabase[Ext] with Ext, /* dc */ js.Any) => Unit = null,
+    noLocking: js.UndefOr[Boolean] = js.undefined,
+    noWarnings: js.UndefOr[Boolean] = js.undefined,
+    pgFormatting: js.UndefOr[Boolean] = js.undefined,
+    pgNative: js.UndefOr[Boolean] = js.undefined,
+    promiseLib: js.Any = null,
+    query: /* e */ IEventContext => Unit = null,
+    receive: (/* data */ js.Array[_], /* result */ IResultExt, /* e */ IEventContext) => Unit = null,
+    schema: ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema]) = null,
+    task: /* e */ IEventContext => Unit = null,
+    transact: /* e */ IEventContext => Unit = null
+  ): IInitOptions[Ext] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL)
+    if (connect != null) __obj.updateDynamic("connect")(js.Any.fromFunction3(connect))
+    if (disconnect != null) __obj.updateDynamic("disconnect")(js.Any.fromFunction2(disconnect))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
+    if (extend != null) __obj.updateDynamic("extend")(js.Any.fromFunction2(extend))
+    if (!js.isUndefined(noLocking)) __obj.updateDynamic("noLocking")(noLocking)
+    if (!js.isUndefined(noWarnings)) __obj.updateDynamic("noWarnings")(noWarnings)
+    if (!js.isUndefined(pgFormatting)) __obj.updateDynamic("pgFormatting")(pgFormatting)
+    if (!js.isUndefined(pgNative)) __obj.updateDynamic("pgNative")(pgNative)
+    if (promiseLib != null) __obj.updateDynamic("promiseLib")(promiseLib)
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (receive != null) __obj.updateDynamic("receive")(js.Any.fromFunction3(receive))
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(js.Any.fromFunction1(task))
+    if (transact != null) __obj.updateDynamic("transact")(js.Any.fromFunction1(transact))
+    __obj.asInstanceOf[IInitOptions[Ext]]
+  }
+}
+

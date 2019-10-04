@@ -25,7 +25,7 @@ class InlinePictureCollection () extends ClientObject {
   val items: js.Array[InlinePicture] = js.native
   /**
     *
-    * Gets the first inline image in this collection. Throws if this collection is empty.
+    * Gets the first inline image in this collection. Throws an error if this collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

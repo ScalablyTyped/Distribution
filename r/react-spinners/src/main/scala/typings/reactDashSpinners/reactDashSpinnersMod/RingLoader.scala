@@ -1,13 +1,17 @@
 package typings.reactDashSpinners.reactDashSpinnersMod
 
 import typings.react.reactMod.Component
-import typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RingLoaderProps
+import typings.react.reactMod.ComponentState
+import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-spinners", "RingLoader")
 @js.native
-class RingLoader ()
-  extends Component[RingLoaderProps, js.Object, js.Any]
+class RingLoader protected ()
+  extends Component[LoaderSizeProps, ComponentState, js.Any] {
+  def this(props: LoaderSizeProps) = this()
+  def this(props: LoaderSizeProps, context: js.Any) = this()
+}
 

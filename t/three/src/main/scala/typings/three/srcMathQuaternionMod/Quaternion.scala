@@ -1,5 +1,6 @@
 package typings.three.srcMathQuaternionMod
 
+import typings.std.ArrayLike
 import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector3Mod.Vector3
@@ -34,8 +35,20 @@ class Quaternion () extends js.Object {
   def copy(q: Quaternion): this.type = js.native
   def dot(v: Quaternion): Double = js.native
   def equals(v: Quaternion): Boolean = js.native
-  def fromArray(n: js.Array[Double]): Quaternion = js.native
-  def fromArray(xyzw: js.Array[Double], offset: Double): Quaternion = js.native
+  /**
+  	 * Sets this quaternion's x, y, z and w value from the provided array.
+  	 * @param array the source array.
+  	 * @param offset (optional) offset into the array. Default is 0.
+  	 */
+  def fromArray(array: js.Array[Double]): this.type = js.native
+  def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this quaternion's x, y, z and w value from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): this.type = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
   /**
   	 * Inverts this quaternion.
   	 */
@@ -84,9 +97,23 @@ class Quaternion () extends js.Object {
   def setFromRotationMatrix(m: Matrix4): Quaternion = js.native
   def setFromUnitVectors(vFrom: Vector3, vTo: Vector3): Quaternion = js.native
   def slerp(qb: Quaternion, t: Double): Quaternion = js.native
+  /**
+  	 * Returns an array [x, y, z, w], or copies x, y, z and w into the provided array.
+  	 * @param array (optional) array to store the quaternion to. If this is not provided, a new array will be created.
+  	 * @param offset (optional) optional offset into the array.
+  	 * @return The created or provided array.
+  	 */
   def toArray(): js.Array[Double] = js.native
-  def toArray(xyzw: js.Array[Double]): js.Array[Double] = js.native
-  def toArray(xyzw: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double]): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  /**
+  	 * Copies x, y, z and w into the provided array-like.
+  	 * @param array array-like to store the quaternion to.
+  	 * @param offset (optional) optional offset into the array.
+  	 * @return The provided array-like.
+  	 */
+  def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
+  def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
 }
 
 /* static members */

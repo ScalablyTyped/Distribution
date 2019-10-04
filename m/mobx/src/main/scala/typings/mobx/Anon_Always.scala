@@ -14,6 +14,16 @@ trait Anon_Always extends js.Object {
   var disableErrorBoundaries: js.UndefOr[Boolean] = js.undefined
   var enforceActions: js.UndefOr[Boolean | strict | never | always | observed] = js.undefined
   var isolateGlobalState: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Experimental)
+    * Warn if observables are accessed outside a reactive context
+    */
+  var observableRequiresReaction: js.UndefOr[Boolean] = js.undefined
+  /**
+    * (Experimental)
+    * Warn if you try to create to derivation / reactive context without accessing any observable.
+    */
+  var reactionRequiresObservable: js.UndefOr[Boolean] = js.undefined
   var reactionScheduler: js.UndefOr[js.Function1[/* f */ js.Function0[Unit], Unit]] = js.undefined
 }
 
@@ -25,6 +35,8 @@ object Anon_Always {
     disableErrorBoundaries: js.UndefOr[Boolean] = js.undefined,
     enforceActions: Boolean | strict | never | always | observed = null,
     isolateGlobalState: js.UndefOr[Boolean] = js.undefined,
+    observableRequiresReaction: js.UndefOr[Boolean] = js.undefined,
+    reactionRequiresObservable: js.UndefOr[Boolean] = js.undefined,
     reactionScheduler: /* f */ js.Function0[Unit] => Unit = null
   ): Anon_Always = {
     val __obj = js.Dynamic.literal()
@@ -33,6 +45,8 @@ object Anon_Always {
     if (!js.isUndefined(disableErrorBoundaries)) __obj.updateDynamic("disableErrorBoundaries")(disableErrorBoundaries)
     if (enforceActions != null) __obj.updateDynamic("enforceActions")(enforceActions.asInstanceOf[js.Any])
     if (!js.isUndefined(isolateGlobalState)) __obj.updateDynamic("isolateGlobalState")(isolateGlobalState)
+    if (!js.isUndefined(observableRequiresReaction)) __obj.updateDynamic("observableRequiresReaction")(observableRequiresReaction)
+    if (!js.isUndefined(reactionRequiresObservable)) __obj.updateDynamic("reactionRequiresObservable")(reactionRequiresObservable)
     if (reactionScheduler != null) __obj.updateDynamic("reactionScheduler")(js.Any.fromFunction1(reactionScheduler))
     __obj.asInstanceOf[Anon_Always]
   }

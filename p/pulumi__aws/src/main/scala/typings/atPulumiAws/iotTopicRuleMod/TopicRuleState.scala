@@ -1,16 +1,16 @@
 package typings.atPulumiAws.iotTopicRuleMod
 
-import typings.atPulumiAws.Anon_AlarmNameRoleArn
-import typings.atPulumiAws.Anon_BucketNameKey
-import typings.atPulumiAws.Anon_DeliveryStreamNameRoleArn
-import typings.atPulumiAws.Anon_EndpointIdIndexRoleArn
-import typings.atPulumiAws.Anon_FunctionArnInput
-import typings.atPulumiAws.Anon_HashKeyFieldHashKeyType
-import typings.atPulumiAws.Anon_MessageFormatRoleArn
-import typings.atPulumiAws.Anon_MetricNameMetricNamespace
-import typings.atPulumiAws.Anon_PartitionKeyRoleArn
-import typings.atPulumiAws.Anon_QueueUrlRoleArn
-import typings.atPulumiAws.Anon_RoleArnTopic
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleCloudwatchAlarm
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleCloudwatchMetric
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleDynamodb
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleElasticsearch
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleFirehose
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleKinesis
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleLambda
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleRepublish
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleS3
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleSns
+import typings.atPulumiAws.typesInputMod.iotNs.TopicRuleSqs
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,28 +21,28 @@ trait TopicRuleState extends js.Object {
     * The ARN of the topic rule
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
-  val cloudwatchAlarm: js.UndefOr[Input[Anon_AlarmNameRoleArn]] = js.undefined
-  val cloudwatchMetric: js.UndefOr[Input[Anon_MetricNameMetricNamespace]] = js.undefined
+  val cloudwatchAlarm: js.UndefOr[Input[TopicRuleCloudwatchAlarm]] = js.undefined
+  val cloudwatchMetric: js.UndefOr[Input[TopicRuleCloudwatchMetric]] = js.undefined
   /**
     * The description of the rule.
     */
   val description: js.UndefOr[Input[String]] = js.undefined
-  val dynamodb: js.UndefOr[Input[Anon_HashKeyFieldHashKeyType]] = js.undefined
-  val elasticsearch: js.UndefOr[Input[Anon_EndpointIdIndexRoleArn]] = js.undefined
+  val dynamodb: js.UndefOr[Input[TopicRuleDynamodb]] = js.undefined
+  val elasticsearch: js.UndefOr[Input[TopicRuleElasticsearch]] = js.undefined
   /**
     * Specifies whether the rule is enabled.
     */
   val enabled: js.UndefOr[Input[Boolean]] = js.undefined
-  val firehose: js.UndefOr[Input[Anon_DeliveryStreamNameRoleArn]] = js.undefined
-  val kinesis: js.UndefOr[Input[Anon_PartitionKeyRoleArn]] = js.undefined
-  val lambda: js.UndefOr[Input[Anon_FunctionArnInput]] = js.undefined
+  val firehose: js.UndefOr[Input[TopicRuleFirehose]] = js.undefined
+  val kinesis: js.UndefOr[Input[TopicRuleKinesis]] = js.undefined
+  val lambda: js.UndefOr[Input[TopicRuleLambda]] = js.undefined
   /**
     * The name of the rule.
     */
   val name: js.UndefOr[Input[String]] = js.undefined
-  val republish: js.UndefOr[Input[Anon_RoleArnTopic]] = js.undefined
-  val s3: js.UndefOr[Input[Anon_BucketNameKey]] = js.undefined
-  val sns: js.UndefOr[Input[Anon_MessageFormatRoleArn]] = js.undefined
+  val republish: js.UndefOr[Input[TopicRuleRepublish]] = js.undefined
+  val s3: js.UndefOr[Input[TopicRuleS3]] = js.undefined
+  val sns: js.UndefOr[Input[TopicRuleSns]] = js.undefined
   /**
     * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
     */
@@ -51,29 +51,29 @@ trait TopicRuleState extends js.Object {
     * The version of the SQL rules engine to use when evaluating the rule.
     */
   val sqlVersion: js.UndefOr[Input[String]] = js.undefined
-  val sqs: js.UndefOr[Input[Anon_QueueUrlRoleArn]] = js.undefined
+  val sqs: js.UndefOr[Input[TopicRuleSqs]] = js.undefined
 }
 
 object TopicRuleState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    cloudwatchAlarm: Input[Anon_AlarmNameRoleArn] = null,
-    cloudwatchMetric: Input[Anon_MetricNameMetricNamespace] = null,
+    cloudwatchAlarm: Input[TopicRuleCloudwatchAlarm] = null,
+    cloudwatchMetric: Input[TopicRuleCloudwatchMetric] = null,
     description: Input[String] = null,
-    dynamodb: Input[Anon_HashKeyFieldHashKeyType] = null,
-    elasticsearch: Input[Anon_EndpointIdIndexRoleArn] = null,
+    dynamodb: Input[TopicRuleDynamodb] = null,
+    elasticsearch: Input[TopicRuleElasticsearch] = null,
     enabled: Input[Boolean] = null,
-    firehose: Input[Anon_DeliveryStreamNameRoleArn] = null,
-    kinesis: Input[Anon_PartitionKeyRoleArn] = null,
-    lambda: Input[Anon_FunctionArnInput] = null,
+    firehose: Input[TopicRuleFirehose] = null,
+    kinesis: Input[TopicRuleKinesis] = null,
+    lambda: Input[TopicRuleLambda] = null,
     name: Input[String] = null,
-    republish: Input[Anon_RoleArnTopic] = null,
-    s3: Input[Anon_BucketNameKey] = null,
-    sns: Input[Anon_MessageFormatRoleArn] = null,
+    republish: Input[TopicRuleRepublish] = null,
+    s3: Input[TopicRuleS3] = null,
+    sns: Input[TopicRuleSns] = null,
     sql: Input[String] = null,
     sqlVersion: Input[String] = null,
-    sqs: Input[Anon_QueueUrlRoleArn] = null
+    sqs: Input[TopicRuleSqs] = null
   ): TopicRuleState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

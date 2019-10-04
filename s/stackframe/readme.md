@@ -1,7 +1,7 @@
 
 # Scala.js typings for stackframe
 
-Typings are for version 1.0.4
+Typings are for version 1.1.0
 
 ## Library description:
 JS Object representation of a stack frame

@@ -1,0 +1,22 @@
+package typings.awsDashSdk.clientsComprehendmedicalMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StopEntitiesDetectionV2JobResponse extends js.Object {
+  /**
+    * The identifier of the medical entities detection job that was stopped.
+    */
+  var JobId: js.UndefOr[typings.awsDashSdk.clientsComprehendmedicalMod.JobId] = js.undefined
+}
+
+object StopEntitiesDetectionV2JobResponse {
+  @scala.inline
+  def apply(JobId: JobId = null): StopEntitiesDetectionV2JobResponse = {
+    val __obj = js.Dynamic.literal()
+    if (JobId != null) __obj.updateDynamic("JobId")(JobId)
+    __obj.asInstanceOf[StopEntitiesDetectionV2JobResponse]
+  }
+}
+

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.glueSecurityConfigurationMod
 
-import typings.atPulumiAws.Anon_CloudwatchEncryption
+import typings.atPulumiAws.typesOutputMod.glueNs.SecurityConfigurationEncryptionConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,7 +25,7 @@ class SecurityConfiguration protected () extends CustomResource {
   /**
     * Configuration block containing encryption configuration. Detailed below.
     */
-  val encryptionConfiguration: Output[Anon_CloudwatchEncryption] = js.native
+  val encryptionConfiguration: Output[SecurityConfigurationEncryptionConfiguration] = js.native
   /**
     * Name of the security configuration.
     */

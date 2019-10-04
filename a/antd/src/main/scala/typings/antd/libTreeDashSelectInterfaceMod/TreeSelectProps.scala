@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 
 trait TreeSelectProps[T /* <: TreeNodeValue */] extends AbstractSelectProps {
   var autoFocus: js.UndefOr[Boolean] = js.undefined
+  var clearIcon: js.UndefOr[ReactNode] = js.undefined
   var defaultValue: js.UndefOr[T] = js.undefined
   var filterTreeNode: js.UndefOr[js.Function2[/* inputValue */ String, /* treeNode */ js.Any, Boolean]] = js.undefined
   var labelInValue: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +38,7 @@ trait TreeSelectProps[T /* <: TreeNodeValue */] extends AbstractSelectProps {
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
   var onTreeExpand: js.UndefOr[js.Function1[/* keys */ js.Array[String], Unit]] = js.undefined
+  var removeIcon: js.UndefOr[ReactNode] = js.undefined
   var searchPlaceholder: js.UndefOr[String] = js.undefined
   var searchValue: js.UndefOr[String] = js.undefined
   var showCheckedStrategy: js.UndefOr[SHOW_ALL | SHOW_PARENT | SHOW_CHILD] = js.undefined
@@ -62,6 +64,7 @@ object TreeSelectProps {
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     choiceTransitionName: String = null,
     className: String = null,
+    clearIcon: ReactNode = null,
     defaultActiveFirstOption: js.UndefOr[Boolean] = js.undefined,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultValue: T = null,
@@ -92,6 +95,7 @@ object TreeSelectProps {
     open: js.UndefOr[Boolean] = js.undefined,
     placeholder: String | ReactNode = null,
     prefixCls: String = null,
+    removeIcon: ReactNode = null,
     searchPlaceholder: String = null,
     searchValue: String = null,
     showAction: String | js.Array[String] = null,
@@ -121,6 +125,7 @@ object TreeSelectProps {
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (choiceTransitionName != null) __obj.updateDynamic("choiceTransitionName")(choiceTransitionName)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultActiveFirstOption)) __obj.updateDynamic("defaultActiveFirstOption")(defaultActiveFirstOption)
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
@@ -151,6 +156,7 @@ object TreeSelectProps {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
     if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue)
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])

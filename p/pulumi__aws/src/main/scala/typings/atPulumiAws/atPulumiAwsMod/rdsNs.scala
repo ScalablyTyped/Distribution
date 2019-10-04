@@ -487,6 +487,12 @@ object rdsNs extends js.Object {
     val T2_Micro: InstanceType = js.native
     val T2_Small: InstanceType = js.native
     val T2_XLarge: InstanceType = js.native
+    val T3_2XLarge: InstanceType = js.native
+    val T3_Large: InstanceType = js.native
+    val T3_Medium: InstanceType = js.native
+    val T3_Micro: InstanceType = js.native
+    val T3_Small: InstanceType = js.native
+    val T3_XLarge: InstanceType = js.native
     val X1E_2XLarge: InstanceType = js.native
     val X1E_32XLarge: InstanceType = js.native
     val X1E_4XLarge: InstanceType = js.native

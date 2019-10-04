@@ -82,7 +82,7 @@ trait IButtonProps extends AllHTMLAttributes[
     * @defaultvalue getBaseButtonClassNames
     */
   var getClassNames: js.UndefOr[
-    js.Function10[
+    js.Function11[
       /* theme */ ITheme, 
       /* className */ String, 
       /* variantClassName */ String, 
@@ -91,6 +91,7 @@ trait IButtonProps extends AllHTMLAttributes[
       /* disabled */ Boolean, 
       /* checked */ Boolean, 
       /* expanded */ Boolean, 
+      /* hasMenu */ Boolean, 
       /* isSplit */ js.UndefOr[Boolean], 
       /* allowDisabledFocus */ Boolean, 
       IButtonClassNames
@@ -276,7 +277,7 @@ object IButtonProps {
     defaultRender: js.Any = null,
     description: IStyle = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    getClassNames: (/* theme */ ITheme, /* className */ String, /* variantClassName */ String, /* iconClassName */ js.UndefOr[String], /* menuIconClassName */ js.UndefOr[String], /* disabled */ Boolean, /* checked */ Boolean, /* expanded */ Boolean, /* isSplit */ js.UndefOr[Boolean], /* allowDisabledFocus */ Boolean) => IButtonClassNames = null,
+    getClassNames: (/* theme */ ITheme, /* className */ String, /* variantClassName */ String, /* iconClassName */ js.UndefOr[String], /* menuIconClassName */ js.UndefOr[String], /* disabled */ Boolean, /* checked */ Boolean, /* expanded */ Boolean, /* hasMenu */ Boolean, /* isSplit */ js.UndefOr[Boolean], /* allowDisabledFocus */ Boolean) => IButtonClassNames = null,
     getSplitButtonClassNames: (/* disabled */ Boolean, /* expanded */ Boolean, /* checked */ Boolean, /* allowDisabledFocus */ Boolean) => ISplitButtonClassNames = null,
     href: String = null,
     iconProps: IIconProps = null,
@@ -324,7 +325,7 @@ object IButtonProps {
     if (defaultRender != null) __obj.updateDynamic("defaultRender")(defaultRender)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (getClassNames != null) __obj.updateDynamic("getClassNames")(js.Any.fromFunction10(getClassNames))
+    if (getClassNames != null) __obj.updateDynamic("getClassNames")(js.Any.fromFunction11(getClassNames))
     if (getSplitButtonClassNames != null) __obj.updateDynamic("getSplitButtonClassNames")(js.Any.fromFunction4(getSplitButtonClassNames))
     if (href != null) __obj.updateDynamic("href")(href)
     if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps)

@@ -22,6 +22,10 @@ trait AutoBranchCreationConfig extends js.Object {
     */
   var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined
   /**
+    *  Enables Pull Request Preview for auto created branch. 
+    */
+  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined
+  /**
     *  Environment Variables for the auto created branch. 
     */
   var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
@@ -42,6 +46,7 @@ object AutoBranchCreationConfig {
     buildSpec: BuildSpec = null,
     enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
     enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
+    enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     framework: Framework = null,
     stage: Stage = null
@@ -51,6 +56,7 @@ object AutoBranchCreationConfig {
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec)
     if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild)
     if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth)
+    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview)
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
     if (framework != null) __obj.updateDynamic("framework")(framework)
     if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])

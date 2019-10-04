@@ -6,6 +6,7 @@ import typings.atUifabricMergeDashStyles.libIRawStyleBaseMod.IFontFace
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricMergeDashStyles.libIStyleMod.IStyle
 import typings.atUifabricMergeDashStyles.libIStyleMod.IStyleBaseArray
+import typings.atUifabricMergeDashStyles.libIStyleOptionsMod.IStyleOptions
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IConcatenatedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IProcessedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
@@ -102,6 +103,69 @@ object ^ extends js.Object {
   ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   def fontFace(font: IFontFace): Unit = js.native
   def keyframes(timeline: StringDictionary[js.Object]): String = js.native
+  def mergeCss(): String = js.native
+  def mergeCss(args: js.UndefOr[IStyle], options: IStyleOptions): String = js.native
+  def mergeCss(args: Null, options: IStyleOptions): String = js.native
+  def mergeCss(args: IStyle): String = js.native
+  def mergeCss(args: IStyleBaseArray): String = js.native
+  def mergeCss(args: IStyleBaseArray, options: IStyleOptions): String = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSets: js.Array[js.UndefOr[TStyleSet | `false` | Null]]): IProcessedStyleSet[TStyleSet] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSets: js.Array[js.UndefOr[TStyleSet | `false` | Null]], options: IStyleOptions): IProcessedStyleSet[TStyleSet] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](
+    styleSets: js.Tuple2[js.UndefOr[TStyleSet1 | `false` | Null], js.UndefOr[TStyleSet2 | `false` | Null]]
+  ): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](
+    styleSets: js.Tuple2[js.UndefOr[TStyleSet1 | `false` | Null], js.UndefOr[TStyleSet2 | `false` | Null]],
+    options: IStyleOptions
+  ): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](
+    styleSets: js.Tuple3[
+      js.UndefOr[TStyleSet1 | `false` | Null], 
+      js.UndefOr[TStyleSet2 | `false` | Null], 
+      js.UndefOr[TStyleSet3 | `false` | Null]
+    ]
+  ): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](
+    styleSets: js.Tuple3[
+      js.UndefOr[TStyleSet1 | `false` | Null], 
+      js.UndefOr[TStyleSet2 | `false` | Null], 
+      js.UndefOr[TStyleSet3 | `false` | Null]
+    ],
+    options: IStyleOptions
+  ): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](
+    styleSets: js.Tuple4[
+      js.UndefOr[TStyleSet1 | `false` | Null], 
+      js.UndefOr[TStyleSet2 | `false` | Null], 
+      js.UndefOr[TStyleSet3 | `false` | Null], 
+      js.UndefOr[TStyleSet4 | `false` | Null]
+    ]
+  ): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeCssSets")
+  def mergeCssSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](
+    styleSets: js.Tuple4[
+      js.UndefOr[TStyleSet1 | `false` | Null], 
+      js.UndefOr[TStyleSet2 | `false` | Null], 
+      js.UndefOr[TStyleSet3 | `false` | Null], 
+      js.UndefOr[TStyleSet4 | `false` | Null]
+    ],
+    options: IStyleOptions
+  ): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeCss")
+  def mergeCss_false(args: js.Array[js.UndefOr[IStyle | IStyleBaseArray | `false` | Null]]): String = js.native
+  @JSName("mergeCss")
+  def mergeCss_false(args: js.Array[js.UndefOr[IStyle | IStyleBaseArray | `false` | Null]], options: IStyleOptions): String = js.native
+  @JSName("mergeCss")
+  def mergeCss_false(args: `false`): String = js.native
+  @JSName("mergeCss")
+  def mergeCss_false(args: `false`, options: IStyleOptions): String = js.native
   def mergeStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](): IProcessedStyleSet[TStyleSet] = js.native
   def mergeStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSet: TStyleSet): IProcessedStyleSet[TStyleSet] = js.native
   def mergeStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native

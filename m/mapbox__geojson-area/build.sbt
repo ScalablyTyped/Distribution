@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mapbox__geojson-area"
-version := "0.2-dt-20180516Z-7d3504"
+version := "0.2-dt-20180516Z-46bafd"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-2af848",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-2af848",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

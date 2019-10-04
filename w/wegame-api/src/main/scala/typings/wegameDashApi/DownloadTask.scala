@@ -17,6 +17,6 @@ class DownloadTask () extends js.Object {
     * @param res.totalBytesWritten 已经下载的数据长度，单位 Bytes
     * @param res.totalBytesExpectedToWrite 预期需要下载的数据总长度，单位 Bytes
     */
-  def onProgressUpdate(callback: Anon_Res): Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* res */ Anon_Progress, Unit]): Unit = js.native
 }
 

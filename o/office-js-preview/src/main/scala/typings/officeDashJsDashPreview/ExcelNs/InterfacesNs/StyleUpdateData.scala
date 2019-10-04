@@ -20,7 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Style object, for use in "style.set({ ... })". */
+/** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
 trait StyleUpdateData extends js.Object {
   /**
     *

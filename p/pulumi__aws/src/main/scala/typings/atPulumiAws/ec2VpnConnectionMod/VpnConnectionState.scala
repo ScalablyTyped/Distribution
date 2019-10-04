@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2VpnConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcceptedRouteCountLastStatusChange
-import typings.atPulumiAws.Anon_DestinationCidrBlockSource
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpnConnectionRoute
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpnConnectionVgwTelemetry
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait VpnConnectionState extends js.Object {
     * The ID of the customer gateway.
     */
   val customerGatewayId: js.UndefOr[Input[String]] = js.undefined
-  val routes: js.UndefOr[Input[js.Array[Input[Anon_DestinationCidrBlockSource]]]] = js.undefined
+  val routes: js.UndefOr[Input[js.Array[Input[VpnConnectionRoute]]]] = js.undefined
   /**
     * Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
     */
@@ -94,7 +94,7 @@ trait VpnConnectionState extends js.Object {
     * The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
     */
   val `type`: js.UndefOr[Input[String]] = js.undefined
-  val vgwTelemetries: js.UndefOr[Input[js.Array[Input[Anon_AcceptedRouteCountLastStatusChange]]]] = js.undefined
+  val vgwTelemetries: js.UndefOr[Input[js.Array[Input[VpnConnectionVgwTelemetry]]]] = js.undefined
   /**
     * The ID of the Virtual Private Gateway.
     */
@@ -106,7 +106,7 @@ object VpnConnectionState {
   def apply(
     customerGatewayConfiguration: Input[String] = null,
     customerGatewayId: Input[String] = null,
-    routes: Input[js.Array[Input[Anon_DestinationCidrBlockSource]]] = null,
+    routes: Input[js.Array[Input[VpnConnectionRoute]]] = null,
     staticRoutesOnly: Input[Boolean] = null,
     tags: Input[StringDictionary[_]] = null,
     transitGatewayAttachmentId: Input[String] = null,
@@ -126,7 +126,7 @@ object VpnConnectionState {
     tunnel2PresharedKey: Input[String] = null,
     tunnel2VgwInsideAddress: Input[String] = null,
     `type`: Input[String] = null,
-    vgwTelemetries: Input[js.Array[Input[Anon_AcceptedRouteCountLastStatusChange]]] = null,
+    vgwTelemetries: Input[js.Array[Input[VpnConnectionVgwTelemetry]]] = null,
     vpnGatewayId: Input[String] = null
   ): VpnConnectionState = {
     val __obj = js.Dynamic.literal()

@@ -13,12 +13,12 @@ trait CodePipeline extends Service {
   @JSName("config")
   var config_CodePipeline: ConfigBase with ClientConfiguration = js.native
   /**
-    * Returns information about a specified job and whether that job has been received by the job worker. Only used for custom actions.
+    * Returns information about a specified job and whether that job has been received by the job worker. Used for custom actions only.
     */
   def acknowledgeJob(): Request[AcknowledgeJobOutput, AWSError] = js.native
   def acknowledgeJob(callback: js.Function2[/* err */ AWSError, /* data */ AcknowledgeJobOutput, Unit]): Request[AcknowledgeJobOutput, AWSError] = js.native
   /**
-    * Returns information about a specified job and whether that job has been received by the job worker. Only used for custom actions.
+    * Returns information about a specified job and whether that job has been received by the job worker. Used for custom actions only.
     */
   def acknowledgeJob(params: AcknowledgeJobInput): Request[AcknowledgeJobOutput, AWSError] = js.native
   def acknowledgeJob(
@@ -26,12 +26,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AcknowledgeJobOutput, Unit]
   ): Request[AcknowledgeJobOutput, AWSError] = js.native
   /**
-    * Confirms a job worker has received the specified job. Only used for partner actions.
+    * Confirms a job worker has received the specified job. Used for partner actions only.
     */
   def acknowledgeThirdPartyJob(): Request[AcknowledgeThirdPartyJobOutput, AWSError] = js.native
   def acknowledgeThirdPartyJob(callback: js.Function2[/* err */ AWSError, /* data */ AcknowledgeThirdPartyJobOutput, Unit]): Request[AcknowledgeThirdPartyJobOutput, AWSError] = js.native
   /**
-    * Confirms a job worker has received the specified job. Only used for partner actions.
+    * Confirms a job worker has received the specified job. Used for partner actions only.
     */
   def acknowledgeThirdPartyJob(params: AcknowledgeThirdPartyJobInput): Request[AcknowledgeThirdPartyJobOutput, AWSError] = js.native
   def acknowledgeThirdPartyJob(
@@ -65,12 +65,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePipelineOutput, Unit]
   ): Request[CreatePipelineOutput, AWSError] = js.native
   /**
-    * Marks a custom action as deleted. PollForJobs for the custom action will fail after the action is marked for deletion. Only used for custom actions.  To re-create a custom action after it has been deleted you must use a string in the version field that has never been used before. This string can be an incremented version number, for example. To restore a deleted custom action, use a JSON file that is identical to the deleted action, including the original string in the version field. 
+    * Marks a custom action as deleted. PollForJobs for the custom action fails after the action is marked for deletion. Used for custom actions only.  To re-create a custom action after it has been deleted you must use a string in the version field that has never been used before. This string can be an incremented version number, for example. To restore a deleted custom action, use a JSON file that is identical to the deleted action, including the original string in the version field. 
     */
   def deleteCustomActionType(): Request[js.Object, AWSError] = js.native
   def deleteCustomActionType(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Marks a custom action as deleted. PollForJobs for the custom action will fail after the action is marked for deletion. Only used for custom actions.  To re-create a custom action after it has been deleted you must use a string in the version field that has never been used before. This string can be an incremented version number, for example. To restore a deleted custom action, use a JSON file that is identical to the deleted action, including the original string in the version field. 
+    * Marks a custom action as deleted. PollForJobs for the custom action fails after the action is marked for deletion. Used for custom actions only.  To re-create a custom action after it has been deleted you must use a string in the version field that has never been used before. This string can be an incremented version number, for example. To restore a deleted custom action, use a JSON file that is identical to the deleted action, including the original string in the version field. 
     */
   def deleteCustomActionType(params: DeleteCustomActionTypeInput): Request[js.Object, AWSError] = js.native
   def deleteCustomActionType(
@@ -91,12 +91,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a previously created webhook by name. Deleting the webhook stops AWS CodePipeline from starting a pipeline every time an external event occurs. The API will return successfully when trying to delete a webhook that is already deleted. If a deleted webhook is re-created by calling PutWebhook with the same name, it will have a different URL.
+    * Deletes a previously created webhook by name. Deleting the webhook stops AWS CodePipeline from starting a pipeline every time an external event occurs. The API returns successfully when trying to delete a webhook that is already deleted. If a deleted webhook is re-created by calling PutWebhook with the same name, it will have a different URL.
     */
   def deleteWebhook(): Request[DeleteWebhookOutput, AWSError] = js.native
   def deleteWebhook(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookOutput, Unit]): Request[DeleteWebhookOutput, AWSError] = js.native
   /**
-    * Deletes a previously created webhook by name. Deleting the webhook stops AWS CodePipeline from starting a pipeline every time an external event occurs. The API will return successfully when trying to delete a webhook that is already deleted. If a deleted webhook is re-created by calling PutWebhook with the same name, it will have a different URL.
+    * Deletes a previously created webhook by name. Deleting the webhook stops AWS CodePipeline from starting a pipeline every time an external event occurs. The API returns successfully when trying to delete a webhook that is already deleted. If a deleted webhook is re-created by calling PutWebhook with the same name, it will have a different URL.
     */
   def deleteWebhook(params: DeleteWebhookInput): Request[DeleteWebhookOutput, AWSError] = js.native
   def deleteWebhook(
@@ -104,12 +104,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookOutput, Unit]
   ): Request[DeleteWebhookOutput, AWSError] = js.native
   /**
-    * Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently only supported for webhooks that target an action type of GitHub.
+    * Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently supported only for webhooks that target an action type of GitHub.
     */
   def deregisterWebhookWithThirdParty(): Request[DeregisterWebhookWithThirdPartyOutput, AWSError] = js.native
   def deregisterWebhookWithThirdParty(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterWebhookWithThirdPartyOutput, Unit]): Request[DeregisterWebhookWithThirdPartyOutput, AWSError] = js.native
   /**
-    * Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently only supported for webhooks that target an action type of GitHub.
+    * Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently supported only for webhooks that target an action type of GitHub.
     */
   def deregisterWebhookWithThirdParty(params: DeregisterWebhookWithThirdPartyInput): Request[DeregisterWebhookWithThirdPartyOutput, AWSError] = js.native
   def deregisterWebhookWithThirdParty(
@@ -143,12 +143,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Returns information about a job. Only used for custom actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
+    * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getJobDetails(): Request[GetJobDetailsOutput, AWSError] = js.native
   def getJobDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetJobDetailsOutput, Unit]): Request[GetJobDetailsOutput, AWSError] = js.native
   /**
-    * Returns information about a job. Only used for custom actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
+    * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getJobDetails(params: GetJobDetailsInput): Request[GetJobDetailsOutput, AWSError] = js.native
   def getJobDetails(
@@ -195,12 +195,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetPipelineStateOutput, Unit]
   ): Request[GetPipelineStateOutput, AWSError] = js.native
   /**
-    * Requests the details of a job for a third party action. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
+    * Requests the details of a job for a third party action. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getThirdPartyJobDetails(): Request[GetThirdPartyJobDetailsOutput, AWSError] = js.native
   def getThirdPartyJobDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetThirdPartyJobDetailsOutput, Unit]): Request[GetThirdPartyJobDetailsOutput, AWSError] = js.native
   /**
-    * Requests the details of a job for a third party action. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
+    * Requests the details of a job for a third party action. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getThirdPartyJobDetails(params: GetThirdPartyJobDetailsInput): Request[GetThirdPartyJobDetailsOutput, AWSError] = js.native
   def getThirdPartyJobDetails(
@@ -260,12 +260,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPipelinesOutput, Unit]
   ): Request[ListPipelinesOutput, AWSError] = js.native
   /**
-    * Gets the set of key/value pairs (metadata) that are used to manage the resource.
+    * Gets the set of key-value pairs (metadata) that are used to manage the resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * Gets the set of key/value pairs (metadata) that are used to manage the resource.
+    * Gets the set of key-value pairs (metadata) that are used to manage the resource.
     */
   def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(
@@ -273,12 +273,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * Gets a listing of all the webhooks in this region for this account. The output lists all webhooks and includes the webhook URL and ARN, as well the configuration for each webhook.
+    * Gets a listing of all the webhooks in this AWS Region for this account. The output lists all webhooks and includes the webhook URL and ARN and the configuration for each webhook.
     */
   def listWebhooks(): Request[ListWebhooksOutput, AWSError] = js.native
   def listWebhooks(callback: js.Function2[/* err */ AWSError, /* data */ ListWebhooksOutput, Unit]): Request[ListWebhooksOutput, AWSError] = js.native
   /**
-    * Gets a listing of all the webhooks in this region for this account. The output lists all webhooks and includes the webhook URL and ARN, as well the configuration for each webhook.
+    * Gets a listing of all the webhooks in this AWS Region for this account. The output lists all webhooks and includes the webhook URL and ARN and the configuration for each webhook.
     */
   def listWebhooks(params: ListWebhooksInput): Request[ListWebhooksOutput, AWSError] = js.native
   def listWebhooks(
@@ -286,12 +286,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListWebhooksOutput, Unit]
   ): Request[ListWebhooksOutput, AWSError] = js.native
   /**
-    * Returns information about any jobs for AWS CodePipeline to act upon. PollForJobs is only valid for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
+    * Returns information about any jobs for AWS CodePipeline to act on. PollForJobs is valid only for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def pollForJobs(): Request[PollForJobsOutput, AWSError] = js.native
   def pollForJobs(callback: js.Function2[/* err */ AWSError, /* data */ PollForJobsOutput, Unit]): Request[PollForJobsOutput, AWSError] = js.native
   /**
-    * Returns information about any jobs for AWS CodePipeline to act upon. PollForJobs is only valid for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
+    * Returns information about any jobs for AWS CodePipeline to act on. PollForJobs is valid only for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def pollForJobs(params: PollForJobsInput): Request[PollForJobsOutput, AWSError] = js.native
   def pollForJobs(
@@ -299,12 +299,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PollForJobsOutput, Unit]
   ): Request[PollForJobsOutput, AWSError] = js.native
   /**
-    * Determines whether there are any third party jobs for a job worker to act on. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
+    * Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
     */
   def pollForThirdPartyJobs(): Request[PollForThirdPartyJobsOutput, AWSError] = js.native
   def pollForThirdPartyJobs(callback: js.Function2[/* err */ AWSError, /* data */ PollForThirdPartyJobsOutput, Unit]): Request[PollForThirdPartyJobsOutput, AWSError] = js.native
   /**
-    * Determines whether there are any third party jobs for a job worker to act on. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
+    * Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
     */
   def pollForThirdPartyJobs(params: PollForThirdPartyJobsInput): Request[PollForThirdPartyJobsOutput, AWSError] = js.native
   def pollForThirdPartyJobs(
@@ -338,12 +338,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutApprovalResultOutput, Unit]
   ): Request[PutApprovalResultOutput, AWSError] = js.native
   /**
-    * Represents the failure of a job as returned to the pipeline by a job worker. Only used for custom actions.
+    * Represents the failure of a job as returned to the pipeline by a job worker. Used for custom actions only.
     */
   def putJobFailureResult(): Request[js.Object, AWSError] = js.native
   def putJobFailureResult(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the failure of a job as returned to the pipeline by a job worker. Only used for custom actions.
+    * Represents the failure of a job as returned to the pipeline by a job worker. Used for custom actions only.
     */
   def putJobFailureResult(params: PutJobFailureResultInput): Request[js.Object, AWSError] = js.native
   def putJobFailureResult(
@@ -351,12 +351,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the success of a job as returned to the pipeline by a job worker. Only used for custom actions.
+    * Represents the success of a job as returned to the pipeline by a job worker. Used for custom actions only.
     */
   def putJobSuccessResult(): Request[js.Object, AWSError] = js.native
   def putJobSuccessResult(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the success of a job as returned to the pipeline by a job worker. Only used for custom actions.
+    * Represents the success of a job as returned to the pipeline by a job worker. Used for custom actions only.
     */
   def putJobSuccessResult(params: PutJobSuccessResultInput): Request[js.Object, AWSError] = js.native
   def putJobSuccessResult(
@@ -364,12 +364,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the failure of a third party job as returned to the pipeline by a job worker. Only used for partner actions.
+    * Represents the failure of a third party job as returned to the pipeline by a job worker. Used for partner actions only.
     */
   def putThirdPartyJobFailureResult(): Request[js.Object, AWSError] = js.native
   def putThirdPartyJobFailureResult(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the failure of a third party job as returned to the pipeline by a job worker. Only used for partner actions.
+    * Represents the failure of a third party job as returned to the pipeline by a job worker. Used for partner actions only.
     */
   def putThirdPartyJobFailureResult(params: PutThirdPartyJobFailureResultInput): Request[js.Object, AWSError] = js.native
   def putThirdPartyJobFailureResult(
@@ -377,12 +377,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the success of a third party job as returned to the pipeline by a job worker. Only used for partner actions.
+    * Represents the success of a third party job as returned to the pipeline by a job worker. Used for partner actions only.
     */
   def putThirdPartyJobSuccessResult(): Request[js.Object, AWSError] = js.native
   def putThirdPartyJobSuccessResult(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Represents the success of a third party job as returned to the pipeline by a job worker. Only used for partner actions.
+    * Represents the success of a third party job as returned to the pipeline by a job worker. Used for partner actions only.
     */
   def putThirdPartyJobSuccessResult(params: PutThirdPartyJobSuccessResultInput): Request[js.Object, AWSError] = js.native
   def putThirdPartyJobSuccessResult(
@@ -416,12 +416,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterWebhookWithThirdPartyOutput, Unit]
   ): Request[RegisterWebhookWithThirdPartyOutput, AWSError] = js.native
   /**
-    * Resumes the pipeline execution by retrying the last failed actions in a stage.
+    * Resumes the pipeline execution by retrying the last failed actions in a stage. You can retry a stage immediately if any of the actions in the stage fail. When you retry, all actions that are still in progress continue working, and failed actions are triggered again.
     */
   def retryStageExecution(): Request[RetryStageExecutionOutput, AWSError] = js.native
   def retryStageExecution(callback: js.Function2[/* err */ AWSError, /* data */ RetryStageExecutionOutput, Unit]): Request[RetryStageExecutionOutput, AWSError] = js.native
   /**
-    * Resumes the pipeline execution by retrying the last failed actions in a stage.
+    * Resumes the pipeline execution by retrying the last failed actions in a stage. You can retry a stage immediately if any of the actions in the stage fail. When you retry, all actions that are still in progress continue working, and failed actions are triggered again.
     */
   def retryStageExecution(params: RetryStageExecutionInput): Request[RetryStageExecutionOutput, AWSError] = js.native
   def retryStageExecution(
@@ -468,12 +468,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
   /**
-    * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure in conjunction with UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
+    * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure and UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
     */
   def updatePipeline(): Request[UpdatePipelineOutput, AWSError] = js.native
   def updatePipeline(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePipelineOutput, Unit]): Request[UpdatePipelineOutput, AWSError] = js.native
   /**
-    * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure in conjunction with UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
+    * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure and UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
     */
   def updatePipeline(params: UpdatePipelineInput): Request[UpdatePipelineOutput, AWSError] = js.native
   def updatePipeline(

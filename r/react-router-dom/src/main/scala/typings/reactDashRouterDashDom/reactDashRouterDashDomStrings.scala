@@ -17,6 +17,12 @@ object reactDashRouterDashDomStrings {
   @js.native
   sealed trait slash extends js.Object
   
+  @js.native
+  sealed trait useParams extends js.Object
+  
+  @js.native
+  sealed trait useRouteMatch extends js.Object
+  
   @scala.inline
   def hashbang: hashbang = "hashbang".asInstanceOf[hashbang]
   @scala.inline
@@ -25,5 +31,9 @@ object reactDashRouterDashDomStrings {
   def noslash: noslash = "noslash".asInstanceOf[noslash]
   @scala.inline
   def slash: slash = "slash".asInstanceOf[slash]
+  @scala.inline
+  def useParams: useParams = "useParams".asInstanceOf[useParams]
+  @scala.inline
+  def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Application
+  * @extends pc.EventHandler
   * @classdesc A pc.Application represents and manages your PlayCanvas application.
   * If you are developing using the PlayCanvas Editor, the pc.Application is created
   * for you. You can access your pc.Application instance in your scripts. Below is a

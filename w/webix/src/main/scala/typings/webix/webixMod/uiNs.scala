@@ -181,6 +181,8 @@ import typings.webix.webixMod.uiNs.textConfig
 import typings.webix.webixMod.uiNs.textEventName
 import typings.webix.webixMod.uiNs.textareaConfig
 import typings.webix.webixMod.uiNs.textareaEventName
+import typings.webix.webixMod.uiNs.timelineConfig
+import typings.webix.webixMod.uiNs.timelineEventName
 import typings.webix.webixMod.uiNs.toggleConfig
 import typings.webix.webixMod.uiNs.toggleEventName
 import typings.webix.webixMod.uiNs.toolbarConfig
@@ -909,6 +911,7 @@ object uiNs extends js.Object {
     var minTime: js.UndefOr[String] = js.undefined
     var minWidth: js.UndefOr[Double] = js.undefined
     var minuteStep: js.UndefOr[Double] = js.undefined
+    var monthHeader: js.UndefOr[Boolean] = js.undefined
     var monthSelect: js.UndefOr[Boolean] = js.undefined
     var mouseEventDelay: js.UndefOr[Double] = js.undefined
     var multiselect: js.UndefOr[Boolean | String] = js.undefined
@@ -1088,13 +1091,14 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPrevId(id: String, step: Double): String | Double = js.native
@@ -1118,6 +1122,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeAllSeries(): Unit = js.native
     def render(id: String, data: js.Any, `type`: String): Unit = js.native
@@ -1183,7 +1188,7 @@ object uiNs extends js.Object {
     var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     var onDblClick: js.UndefOr[WebixCallback] = js.undefined
     var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
-    var origin: js.UndefOr[Double] = js.undefined
+    var origin: js.UndefOr[Double | String] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var pieHeight: js.UndefOr[Double] = js.undefined
     var pieInnerText: js.UndefOr[String | WebixCallback] = js.undefined
@@ -1191,7 +1196,7 @@ object uiNs extends js.Object {
     var radius: js.UndefOr[Double] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scale: js.UndefOr[String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var series: js.UndefOr[js.Any] = js.undefined
@@ -1694,7 +1699,6 @@ object uiNs extends js.Object {
     var required: js.UndefOr[Boolean] = js.undefined
     var stringResult: js.UndefOr[Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var timepicker: js.UndefOr[Boolean] = js.undefined
     var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[String] = js.undefined
@@ -1842,7 +1846,6 @@ object uiNs extends js.Object {
     var required: js.UndefOr[Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[js.Any] = js.undefined
-    var `type`: js.UndefOr[String] = js.undefined
     var validate: js.UndefOr[WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[String] = js.undefined
     var value: js.UndefOr[String | Double] = js.undefined
@@ -2135,8 +2138,9 @@ object uiNs extends js.Object {
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
     def getBody(): js.Any = js.native
     def getContext(): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
     def getHead(): js.Any = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -2144,7 +2148,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMenu(id: String): js.Any = js.native
     def getMenu(id: Double): js.Any = js.native
     def getMenuItem(id: String): js.Any = js.native
@@ -2167,6 +2171,7 @@ object uiNs extends js.Object {
     def hasEvent(name: String): Boolean = js.native
     def hideItem(id: String): Unit = js.native
     def hideItem(id: Double): Unit = js.native
+    def isEnabledItem(): Boolean = js.native
     def isSelected(id: String): Boolean = js.native
     def isSelected(id: Double): Boolean = js.native
     def load(url: String): js.Promise[_] = js.native
@@ -2195,6 +2200,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -2289,7 +2295,7 @@ object uiNs extends js.Object {
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var resize: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -2633,13 +2639,14 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPrevId(id: String, step: Double): String | Double = js.native
@@ -2658,6 +2665,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeView(id: js.Any): Unit = js.native
     def render(id: String, obj: js.Any, mode: String): Unit = js.native
@@ -2704,7 +2712,7 @@ object uiNs extends js.Object {
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var responsive: js.UndefOr[String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -2989,13 +2997,14 @@ object uiNs extends js.Object {
     def getEditorValue(): String = js.native
     def getFilter(columnID: String): js.Any = js.native
     def getFilter(columnID: Double): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
     def getFooterNode(columnId: String): HTMLElement = js.native
     def getFooterNode(columnId: String, rowIndex: Double): HTMLElement = js.native
     def getHeaderContent(id: String): StringDictionary[js.Any] = js.native
     def getHeaderContent(id: Double): StringDictionary[js.Any] = js.native
     def getHeaderNode(columnId: String): HTMLElement = js.native
     def getHeaderNode(columnId: String, rowIndex: Double): HTMLElement = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -3003,7 +3012,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPage(): Double = js.native
@@ -3085,6 +3094,7 @@ object uiNs extends js.Object {
     def refreshSelectArea(): Unit = js.native
     def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCellCss(id: String, name: String, css_name: String): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
@@ -3196,11 +3206,13 @@ object uiNs extends js.Object {
     var loadahead: js.UndefOr[Double] = js.undefined
     var map: js.UndefOr[js.Any] = js.undefined
     var math: js.UndefOr[Boolean] = js.undefined
+    var maxColumnWidth: js.UndefOr[Double] = js.undefined
     var maxHeight: js.UndefOr[Double] = js.undefined
+    var maxRowHeight: js.UndefOr[Double] = js.undefined
     var maxWidth: js.UndefOr[Double] = js.undefined
-    var minColumnHeight: js.UndefOr[Double] = js.undefined
     var minColumnWidth: js.UndefOr[Double] = js.undefined
     var minHeight: js.UndefOr[Double] = js.undefined
+    var minRowHeight: js.UndefOr[Double] = js.undefined
     var minWidth: js.UndefOr[Double] = js.undefined
     var mouseEventDelay: js.UndefOr[Double] = js.undefined
     var multiselect: js.UndefOr[Boolean] = js.undefined
@@ -3215,12 +3227,12 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var resizeColumn: js.UndefOr[js.Any] = js.undefined
-    var resizeRow: js.UndefOr[Boolean] = js.undefined
+    var resizeRow: js.UndefOr[js.Any] = js.undefined
     var rightSplit: js.UndefOr[Double] = js.undefined
     var rowHeight: js.UndefOr[Double] = js.undefined
     var rowLineHeight: js.UndefOr[Double] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollAlignY: js.UndefOr[Boolean] = js.undefined
@@ -3232,7 +3244,7 @@ object uiNs extends js.Object {
     var subrow: js.UndefOr[String] = js.undefined
     var subview: js.UndefOr[baseview | WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var topSplit: js.UndefOr[Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var undo: js.UndefOr[Boolean] = js.undefined
@@ -3419,7 +3431,8 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -3427,7 +3440,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPage(): Double = js.native
@@ -3468,6 +3481,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -3536,14 +3550,16 @@ object uiNs extends js.Object {
     var onDblClick: js.UndefOr[WebixCallback] = js.undefined
     var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
+    var prerender: js.UndefOr[Boolean] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
     var select: js.UndefOr[Boolean | String] = js.undefined
+    var sizeToContent: js.UndefOr[Boolean] = js.undefined
     var template: js.UndefOr[String | WebixCallback] = js.undefined
     var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
@@ -4298,13 +4314,14 @@ object uiNs extends js.Object {
     def getEditorValue(): String = js.native
     def getFilter(columnID: String): js.Any = js.native
     def getFilter(columnID: Double): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
     def getFooterNode(columnId: String): HTMLElement = js.native
     def getFooterNode(columnId: String, rowIndex: Double): HTMLElement = js.native
     def getHeaderContent(id: String): StringDictionary[js.Any] = js.native
     def getHeaderContent(id: Double): StringDictionary[js.Any] = js.native
     def getHeaderNode(columnId: String): HTMLElement = js.native
     def getHeaderNode(columnId: String, rowIndex: Double): HTMLElement = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -4312,7 +4329,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPage(): Double = js.native
@@ -4391,6 +4408,7 @@ object uiNs extends js.Object {
     def refreshSelectArea(): Unit = js.native
     def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCellCss(id: String, name: String, css_name: String): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
@@ -4487,11 +4505,13 @@ object uiNs extends js.Object {
     var loadahead: js.UndefOr[Double] = js.undefined
     var map: js.UndefOr[js.Any] = js.undefined
     var math: js.UndefOr[Boolean] = js.undefined
+    var maxColumnWidth: js.UndefOr[Double] = js.undefined
     var maxHeight: js.UndefOr[Double] = js.undefined
+    var maxRowHeight: js.UndefOr[Double] = js.undefined
     var maxWidth: js.UndefOr[Double] = js.undefined
-    var minColumnHeight: js.UndefOr[Double] = js.undefined
     var minColumnWidth: js.UndefOr[Double] = js.undefined
     var minHeight: js.UndefOr[Double] = js.undefined
+    var minRowHeight: js.UndefOr[Double] = js.undefined
     var minWidth: js.UndefOr[Double] = js.undefined
     var mouseEventDelay: js.UndefOr[Double] = js.undefined
     var multiselect: js.UndefOr[Boolean] = js.undefined
@@ -4506,12 +4526,12 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var resizeColumn: js.UndefOr[js.Any] = js.undefined
-    var resizeRow: js.UndefOr[Boolean] = js.undefined
+    var resizeRow: js.UndefOr[js.Any] = js.undefined
     var rightSplit: js.UndefOr[Double] = js.undefined
     var rowHeight: js.UndefOr[Double] = js.undefined
     var rowLineHeight: js.UndefOr[Double] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollAlignY: js.UndefOr[Boolean] = js.undefined
@@ -4727,7 +4747,7 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getActive(): String = js.native
+    def getActive(): String | js.Array[_] = js.native
     def getActiveView(): js.Any = js.native
     def getBranchIndex(id: String): Double = js.native
     def getBranchIndex(id: String, parent: String): Double = js.native
@@ -4738,13 +4758,14 @@ object uiNs extends js.Object {
     def getCurrentFolder(): String = js.native
     def getFirstChildId(id: String): String = js.native
     def getFirstChildId(id: Double): String = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMenu(): js.Any = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
@@ -4794,6 +4815,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def renameFile(id: String, name: String, property: String): Unit = js.native
     def setDefaultHandlers(url: String): Unit = js.native
@@ -4823,7 +4845,6 @@ object uiNs extends js.Object {
     var datathrottle: js.UndefOr[Double] = js.undefined
     var datatype: js.UndefOr[String] = js.undefined
     var disabled: js.UndefOr[Boolean] = js.undefined
-    var disabledHistory: js.UndefOr[Boolean] = js.undefined
     var filterMode: js.UndefOr[js.Any] = js.undefined
     var gravity: js.UndefOr[Double] = js.undefined
     var handlers: js.UndefOr[js.Any] = js.undefined
@@ -4847,7 +4868,7 @@ object uiNs extends js.Object {
     var readonly: js.UndefOr[Boolean] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var structure: js.UndefOr[js.Any] = js.undefined
     var templateCreate: js.UndefOr[WebixCallback] = js.undefined
@@ -5008,7 +5029,7 @@ object uiNs extends js.Object {
     var datatype: js.UndefOr[String] = js.undefined
     var disabled: js.UndefOr[Boolean] = js.undefined
     var elements: js.UndefOr[js.Array[_]] = js.undefined
-    var elementsConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var elementsConfig: js.UndefOr[js.Any] = js.undefined
     var gravity: js.UndefOr[Double] = js.undefined
     var height: js.UndefOr[Double] = js.undefined
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -5135,6 +5156,7 @@ object uiNs extends js.Object {
   trait gageConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var borderless: js.UndefOr[Boolean] = js.undefined
+    var color: js.UndefOr[String | WebixCallback] = js.undefined
     var container: js.UndefOr[String | HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -5207,13 +5229,14 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMap(): js.Any = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
@@ -5230,6 +5253,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def render(): Unit = js.native
     def serialize(): js.Array[_] = js.native
@@ -5270,7 +5294,7 @@ object uiNs extends js.Object {
     var on: js.UndefOr[EventHash] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[String | WebixCallback] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -5346,13 +5370,14 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMap(): js.Any = js.native
     def getMap(waitMap: Boolean): js.Any = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
@@ -5370,6 +5395,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def render(): Unit = js.native
     def serialize(): js.Array[_] = js.native
@@ -5410,7 +5436,7 @@ object uiNs extends js.Object {
     var on: js.UndefOr[EventHash] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[String] = js.undefined
@@ -5680,8 +5706,9 @@ object uiNs extends js.Object {
     def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
     @JSName("$tooltipOut")
     def $tooltipOut(): Unit = js.native
-    def add(obj: js.Any): String | Double = js.native
-    def add(obj: js.Any, index: Double): String | Double = js.native
+    def add(obj: js.Any): String = js.native
+    def add(obj: js.Any, index: Double): String = js.native
+    def add(obj: js.Any, index: Double, parentId: String): String = js.native
     def addCss(id: String, css: String): Unit = js.native
     def addCss(id: String, css: String, silent: Boolean): Unit = js.native
     def addCss(id: Double, css: String): Unit = js.native
@@ -5704,6 +5731,10 @@ object uiNs extends js.Object {
     def count(): Double = js.native
     def customize(obj: js.Any): Unit = js.native
     def detachEvent(id: String): Unit = js.native
+    def disableItem(id: String): Unit = js.native
+    def disableItem(id: Double): Unit = js.native
+    def enableItem(id: String): Unit = js.native
+    def enableItem(id: Double): Unit = js.native
     def exists(id: String): Boolean = js.native
     def exists(id: Double): Boolean = js.native
     def filter(text: WebixCallback | WebixTemplate): Unit = js.native
@@ -5714,7 +5745,8 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -5722,7 +5754,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getOpenState(): js.Any = js.native
@@ -5740,6 +5772,7 @@ object uiNs extends js.Object {
     def hasCss(id: String, css: String): Boolean = js.native
     def hasCss(id: Double, css: String): Boolean = js.native
     def hasEvent(name: String): Boolean = js.native
+    def isEnabledItem(): Boolean = js.native
     def isSelected(id: String): Boolean = js.native
     def isSelected(id: Double): Boolean = js.native
     def load(url: String): js.Promise[_] = js.native
@@ -5768,6 +5801,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -5841,7 +5875,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -6365,13 +6399,14 @@ object uiNs extends js.Object {
     def getColors(): DataCollection = js.native
     def getComments(): baseview = js.native
     def getEditor(): baseview = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMenu(): baseview = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
@@ -6397,6 +6432,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeView(id: js.Any): Unit = js.native
     def resizeChildren(): Unit = js.native
@@ -6458,7 +6494,7 @@ object uiNs extends js.Object {
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var responsive: js.UndefOr[String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var tags: js.UndefOr[js.Array[_] | String] = js.undefined
     var `type`: js.UndefOr[String] = js.undefined
@@ -6749,6 +6785,10 @@ object uiNs extends js.Object {
     def count(): Double = js.native
     def customize(obj: js.Any): Unit = js.native
     def detachEvent(id: String): Unit = js.native
+    def disableItem(id: String): Unit = js.native
+    def disableItem(id: Double): Unit = js.native
+    def enableItem(id: String): Unit = js.native
+    def enableItem(id: Double): Unit = js.native
     def exists(id: String): Boolean = js.native
     def exists(id: Double): Boolean = js.native
     def filter(text: WebixCallback | WebixTemplate): Unit = js.native
@@ -6759,7 +6799,8 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -6767,7 +6808,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPage(): Double = js.native
@@ -6781,6 +6822,7 @@ object uiNs extends js.Object {
     def hasCss(id: String, css: String): Boolean = js.native
     def hasCss(id: Double, css: String): Boolean = js.native
     def hasEvent(name: String): Boolean = js.native
+    def isEnabledItem(): Boolean = js.native
     def isSelected(id: String): Boolean = js.native
     def isSelected(id: Double): Boolean = js.native
     def load(url: String): js.Promise[_] = js.native
@@ -6809,6 +6851,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -6884,7 +6927,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -7041,7 +7084,8 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -7049,7 +7093,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMenu(id: String): js.Any = js.native
     def getMenu(id: Double): js.Any = js.native
     def getMenuItem(id: String): js.Any = js.native
@@ -7072,6 +7116,7 @@ object uiNs extends js.Object {
     def hasEvent(name: String): Boolean = js.native
     def hideItem(id: String): Unit = js.native
     def hideItem(id: Double): Unit = js.native
+    def isEnabledItem(): Boolean = js.native
     def isSelected(id: String): Boolean = js.native
     def isSelected(id: Double): Boolean = js.native
     def load(url: String): js.Promise[_] = js.native
@@ -7100,6 +7145,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -7174,7 +7220,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -7301,7 +7347,8 @@ object uiNs extends js.Object {
     def getList(): baseview = js.native
     def getPopup(): baseview = js.native
     def getText(): String = js.native
-    def getValue(): String = js.native
+    def getValue(): String | js.Array[_] = js.native
+    def getValue(config: js.Any): String | js.Array[_] = js.native
     def hasEvent(name: String): Boolean = js.native
     def mapEvent(map: js.Any): Unit = js.native
     def on_click(args: js.Any*): js.Any = js.native
@@ -7367,7 +7414,7 @@ object uiNs extends js.Object {
     var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[String] = js.undefined
-    var value: js.UndefOr[String | Double] = js.undefined
+    var value: js.UndefOr[Double | String | js.Array[_]] = js.undefined
     var view: js.UndefOr[String] = js.undefined
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7933,7 +7980,8 @@ object uiNs extends js.Object {
     def getBranchIndex(id: Double, parent: Double): Double = js.native
     def getFirstChildId(id: String): String = js.native
     def getFirstChildId(id: Double): String = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -7941,7 +7989,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getNextSiblingId(id: String): String | Double = js.native
@@ -7990,6 +8038,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -8056,7 +8105,7 @@ object uiNs extends js.Object {
     var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -8400,13 +8449,14 @@ object uiNs extends js.Object {
     def getConfigWindow(): js.Any = js.native
     def getFields(): js.Any = js.native
     def getFilterView(): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPrevId(id: String, step: Double): String | Double = js.native
@@ -8424,6 +8474,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def render(): Unit = js.native
     def setStructure(config: js.Any): Unit = js.native
@@ -8874,7 +8925,8 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -8882,7 +8934,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPage(): Double = js.native
@@ -8903,6 +8955,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -8952,7 +9005,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var template: js.UndefOr[String | WebixCallback] = js.undefined
     var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -9158,25 +9211,43 @@ object uiNs extends js.Object {
     def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
     @JSName("$tooltipOut")
     def $tooltipOut(): Unit = js.native
+    def addOption(id: String, value: js.Any): Unit = js.native
+    def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
+    def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
+    def addOption(id: Double, value: js.Any): Unit = js.native
+    def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
+    def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
     def attachEvent(`type`: radioEventName, functor: WebixCallback): String | Double = js.native
     def attachEvent(`type`: radioEventName, functor: WebixCallback, id: String): String | Double = js.native
     def blockEvent(): Unit = js.native
     def blur(): Unit = js.native
     def callEvent(name: String, params: js.Array[_]): Boolean = js.native
     def detachEvent(id: String): Unit = js.native
+    def disableOption(id: String): Unit = js.native
+    def disableOption(id: Double): Unit = js.native
+    def enableOption(id: String): Unit = js.native
+    def enableOption(id: Double): Unit = js.native
     def focus(): Unit = js.native
     def getInputNode(): HTMLElement = js.native
     def getOption(id: String): js.Any = js.native
     def getOption(id: Double): js.Any = js.native
     def getValue(): String = js.native
     def hasEvent(name: String): Boolean = js.native
+    def hideOption(id: String): Unit = js.native
+    def hideOption(id: Double): Unit = js.native
     def mapEvent(map: js.Any): Unit = js.native
     def on_click(args: js.Any*): js.Any = js.native
+    def optionIndex(ID: String): Double = js.native
+    def optionIndex(ID: Double): Double = js.native
     def refresh(): Unit = js.native
+    def removeOption(id: String): Unit = js.native
+    def removeOption(id: Double): Unit = js.native
     def render(id: String, data: js.Any, `type`: String): Unit = js.native
     def render(id: Double, data: js.Any, `type`: String): Unit = js.native
     def setBottomText(text: String): Unit = js.native
     def setValue(value: String): Unit = js.native
+    def showOption(id: String): Unit = js.native
+    def showOption(id: Double): Unit = js.native
     def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
     def unblockEvent(): Unit = js.native
     def validate(): Boolean = js.native
@@ -9246,6 +9317,8 @@ object uiNs extends js.Object {
     - typings.webix.webixStrings.onItemClick
     - typings.webix.webixStrings.onKeyPress
     - typings.webix.webixStrings.onLongTouch
+    - typings.webix.webixStrings.onOptionAdd
+    - typings.webix.webixStrings.onOptionRemove
     - typings.webix.webixStrings.onSwipeX
     - typings.webix.webixStrings.onSwipeY
     - typings.webix.webixStrings.onTimedKeyPress
@@ -9302,15 +9375,16 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
     def getFrameData(): js.Array[_] = js.native
     def getFrameRange(): js.Any = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
     def getItem(id: String): js.Any = js.native
     def getItem(id: Double): js.Any = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPrevId(id: String, step: Double): String | Double = js.native
@@ -9334,6 +9408,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeAllSeries(): Unit = js.native
     def render(id: String, data: js.Any, `type`: String): Unit = js.native
@@ -9398,7 +9473,7 @@ object uiNs extends js.Object {
     var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     var onDblClick: js.UndefOr[WebixCallback] = js.undefined
     var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
-    var origin: js.UndefOr[Double] = js.undefined
+    var origin: js.UndefOr[Double | String] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var pieHeight: js.UndefOr[Double] = js.undefined
     var pieInnerText: js.UndefOr[String | WebixCallback] = js.undefined
@@ -9407,7 +9482,7 @@ object uiNs extends js.Object {
     var range: js.UndefOr[js.Any] = js.undefined
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scale: js.UndefOr[String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var series: js.UndefOr[js.Any] = js.undefined
@@ -9687,7 +9762,6 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[Double] = js.undefined
     var minHeight: js.UndefOr[Double] = js.undefined
     var minWidth: js.UndefOr[Double] = js.undefined
-    var mouseEventDelay: js.UndefOr[Double] = js.undefined
     var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     var view: js.UndefOr[String] = js.undefined
     var width: js.UndefOr[Double] = js.undefined
@@ -10163,6 +10237,10 @@ object uiNs extends js.Object {
     def blur(): Unit = js.native
     def callEvent(name: String, params: js.Array[_]): Boolean = js.native
     def detachEvent(id: String): Unit = js.native
+    def disableOption(id: String): Unit = js.native
+    def disableOption(id: Double): Unit = js.native
+    def enableOption(id: String): Unit = js.native
+    def enableOption(id: Double): Unit = js.native
     def focus(): Unit = js.native
     def getInputNode(): HTMLElement = js.native
     def getOption(id: String): js.Any = js.native
@@ -10223,7 +10301,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[String] = js.undefined
     var on: js.UndefOr[EventHash] = js.undefined
     var optionWidth: js.UndefOr[Double] = js.undefined
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[js.Array[_]] = js.undefined
     var popup: js.UndefOr[String] = js.undefined
     var relatedAction: js.UndefOr[String] = js.undefined
     var relatedView: js.UndefOr[String] = js.undefined
@@ -10252,6 +10330,7 @@ object uiNs extends js.Object {
     - typings.webix.webixStrings.onItemClick
     - typings.webix.webixStrings.onKeyPress
     - typings.webix.webixStrings.onLongTouch
+    - typings.webix.webixStrings.onOptionAdd
     - typings.webix.webixStrings.onOptionRemove
     - typings.webix.webixStrings.onSwipeX
     - typings.webix.webixStrings.onSwipeY
@@ -10504,7 +10583,8 @@ object uiNs extends js.Object {
     def getChecked(): js.Array[_] = js.native
     def getFirstChildId(id: String): String = js.native
     def getFirstChildId(id: Double): String = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -10512,7 +10592,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getNextSiblingId(id: String): String | Double = js.native
@@ -10570,6 +10650,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -10652,7 +10733,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -11085,10 +11166,14 @@ object uiNs extends js.Object {
     def setCellFilter(rowId: Double, columnId: Double, options: String): Unit = js.native
     def setCellFilter(rowId: Double, columnId: Double, options: js.Array[_]): Unit = js.native
     def setCellValue(row: Double, column: js.Any, value: String): Unit = js.native
+    def setColumnWidth(id: String, width: Double): Unit = js.native
+    def setColumnWidth(id: Double, width: Double): Unit = js.native
     def setFormat(rowId: Double, columnId: Double, format: String): Unit = js.native
     def setPlaceholder(placeholder: js.Any): Unit = js.native
     def setRangeStyle(rangeStr: String, style: js.Any): Unit = js.native
     def setRangeValue(range: String): Unit = js.native
+    def setRowHeight(id: String, height: Double): Unit = js.native
+    def setRowHeight(id: Double, height: Double): Unit = js.native
     def setStyle(row: Double, column: Double, style: js.Any): Unit = js.native
     def showSheet(name: String): Unit = js.native
     def sortRange(): Unit = js.native
@@ -11108,6 +11193,7 @@ object uiNs extends js.Object {
     var clipboard: js.UndefOr[Boolean] = js.undefined
     var clipboardDecimalDelimiter: js.UndefOr[String] = js.undefined
     var columnCount: js.UndefOr[Double] = js.undefined
+    var columnWidth: js.UndefOr[Double] = js.undefined
     var conditionStyle: js.UndefOr[js.Array[_]] = js.undefined
     var container: js.UndefOr[String | HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
@@ -11131,6 +11217,7 @@ object uiNs extends js.Object {
     var readonly: js.UndefOr[Boolean] = js.undefined
     var resizeCell: js.UndefOr[Boolean] = js.undefined
     var rowCount: js.UndefOr[Double] = js.undefined
+    var rowHeight: js.UndefOr[Double] = js.undefined
     var sheetTabWidth: js.UndefOr[Double] = js.undefined
     var subbar: js.UndefOr[js.Any] = js.undefined
     var toolbar: js.UndefOr[String | Boolean] = js.undefined
@@ -11262,8 +11349,9 @@ object uiNs extends js.Object {
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
     def getBody(): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
     def getHead(): js.Any = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -11271,7 +11359,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getMenu(id: String): js.Any = js.native
     def getMenu(id: Double): js.Any = js.native
     def getMenuItem(id: String): js.Any = js.native
@@ -11294,6 +11382,7 @@ object uiNs extends js.Object {
     def hasEvent(name: String): Boolean = js.native
     def hideItem(id: String): Unit = js.native
     def hideItem(id: Double): Unit = js.native
+    def isEnabledItem(): Boolean = js.native
     def isSelected(id: String): Boolean = js.native
     def isSelected(id: Double): Boolean = js.native
     def load(url: String): js.Promise[_] = js.native
@@ -11322,6 +11411,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -11415,7 +11505,7 @@ object uiNs extends js.Object {
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var resize: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -11808,6 +11898,10 @@ object uiNs extends js.Object {
     def blur(): Unit = js.native
     def callEvent(name: String, params: js.Array[_]): Boolean = js.native
     def detachEvent(id: String): Unit = js.native
+    def disableOption(id: String): Unit = js.native
+    def disableOption(id: Double): Unit = js.native
+    def enableOption(id: String): Unit = js.native
+    def enableOption(id: Double): Unit = js.native
     def focus(): Unit = js.native
     def getInputNode(): HTMLElement = js.native
     def getOption(id: String): js.Any = js.native
@@ -11914,6 +12008,7 @@ object uiNs extends js.Object {
     - typings.webix.webixStrings.onItemClick
     - typings.webix.webixStrings.onKeyPress
     - typings.webix.webixStrings.onLongTouch
+    - typings.webix.webixStrings.onOptionAdd
     - typings.webix.webixStrings.onOptionRemove
     - typings.webix.webixStrings.onSwipeX
     - typings.webix.webixStrings.onSwipeY
@@ -12354,6 +12449,166 @@ object uiNs extends js.Object {
   trait textareaEventName extends js.Object
   
   @js.native
+  class timeline () extends baseview {
+    @JSName("config")
+    var config_timeline: timelineConfig = js.native
+    var data: DataStore = js.native
+    @JSName("on_click")
+    var on_click_Original: WebixCallback = js.native
+    var on_context: StringDictionary[js.Any] = js.native
+    @JSName("on_dblclick")
+    var on_dblclick_Original: WebixCallback = js.native
+    @JSName("on_mouse_move")
+    var on_mouse_move_Original: WebixCallback = js.native
+    var `type`: StringDictionary[js.Any] = js.native
+    var types: StringDictionary[js.Any] = js.native
+    var waitData: js.Promise[_] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: HTMLElement): HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): Unit = js.native
+    def add(obj: js.Any): String | Double = js.native
+    def add(obj: js.Any, index: Double): String | Double = js.native
+    def attachEvent(`type`: timelineEventName, functor: WebixCallback): String | Double = js.native
+    def attachEvent(`type`: timelineEventName, functor: WebixCallback, id: String): String | Double = js.native
+    def blockEvent(): Unit = js.native
+    def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+    def clearAll(): Unit = js.native
+    def clearAll(soft: Boolean): Unit = js.native
+    def count(): Double = js.native
+    def customize(obj: js.Any): Unit = js.native
+    def detachEvent(id: String): Unit = js.native
+    def exists(id: String): Boolean = js.native
+    def exists(id: Double): Boolean = js.native
+    def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+    def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
+    def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
+    def filter(text: String): Unit = js.native
+    def filter(text: String, value: String): Unit = js.native
+    def filter(text: String, value: String, preserve: Boolean): Unit = js.native
+    def find(criterion: WebixCallback): js.Any = js.native
+    def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
+    def getIdByIndex(index: Double): String | Double = js.native
+    def getIndexById(id: String): Double = js.native
+    def getIndexById(id: Double): Double = js.native
+    def getItem(id: String): js.Any = js.native
+    def getItem(id: Double): js.Any = js.native
+    def getItemNode(id: String): HTMLElement = js.native
+    def getItemNode(id: Double): HTMLElement = js.native
+    def getLastId(): Double | String = js.native
+    def getNextId(id: String, step: Double): String | Double = js.native
+    def getNextId(id: Double, step: Double): String | Double = js.native
+    def getPrevId(id: String, step: Double): String | Double = js.native
+    def getPrevId(id: Double, step: Double): String | Double = js.native
+    def getScrollState(): js.Any = js.native
+    def hasEvent(name: String): Boolean = js.native
+    def load(url: String): js.Promise[_] = js.native
+    def load(url: String, `type`: String): js.Promise[_] = js.native
+    def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+    def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
+    def locate(e: Event): String | Double = js.native
+    def mapEvent(map: js.Any): Unit = js.native
+    def on_click(args: js.Any*): js.Any = js.native
+    def on_dblclick(args: js.Any*): js.Any = js.native
+    def on_mouse_move(args: js.Any*): js.Any = js.native
+    def parse(data: js.Any, `type`: String): Unit = js.native
+    def refresh(): Unit = js.native
+    def refresh(id: String): Unit = js.native
+    def refresh(id: Double): Unit = js.native
+    def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
+    def remove(id: Double): Unit = js.native
+    def render(id: String, data: js.Any, `type`: String): Unit = js.native
+    def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+    def scrollTo(x: Double, y: Double): Unit = js.native
+    def serialize(): js.Array[_] = js.native
+    def serialize(all: Boolean): js.Array[_] = js.native
+    def showItem(id: String): Unit = js.native
+    def showItem(id: Double): Unit = js.native
+    def sort(by: String): Unit = js.native
+    def sort(by: String, dir: String): Unit = js.native
+    def sort(by: String, dir: String, as: String): Unit = js.native
+    def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+    def unblockEvent(): Unit = js.native
+    def updateItem(id: String, data: js.Any): Unit = js.native
+    def updateItem(id: Double, data: js.Any): Unit = js.native
+    def waitSave(handler: WebixCallback): js.Promise[_] = js.native
+  }
+  
+  trait timelineConfig extends js.Object {
+    var animate: js.UndefOr[js.Any] = js.undefined
+    var borderless: js.UndefOr[Boolean] = js.undefined
+    var click: js.UndefOr[String | WebixCallback] = js.undefined
+    var container: js.UndefOr[String | HTMLElement] = js.undefined
+    var css: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[String | js.Array[_]] = js.undefined
+    var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
+    var datathrottle: js.UndefOr[Double] = js.undefined
+    var datatype: js.UndefOr[String] = js.undefined
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    var gravity: js.UndefOr[Double] = js.undefined
+    var height: js.UndefOr[Double] = js.undefined
+    var hidden: js.UndefOr[Boolean] = js.undefined
+    var id: js.UndefOr[String | Double] = js.undefined
+    var item: js.UndefOr[js.Any] = js.undefined
+    var maxHeight: js.UndefOr[Double] = js.undefined
+    var maxWidth: js.UndefOr[Double] = js.undefined
+    var minHeight: js.UndefOr[Double] = js.undefined
+    var minWidth: js.UndefOr[Double] = js.undefined
+    var mouseEventDelay: js.UndefOr[Double] = js.undefined
+    var on: js.UndefOr[EventHash] = js.undefined
+    var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var onDblClick: js.UndefOr[WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
+    var ready: js.UndefOr[WebixCallback] = js.undefined
+    var removeMissed: js.UndefOr[Boolean] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
+    var scheme: js.UndefOr[js.Any] = js.undefined
+    var scroll: js.UndefOr[Boolean | String] = js.undefined
+    var scrollSpeed: js.UndefOr[String] = js.undefined
+    var template: js.UndefOr[String | WebixCallback] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[js.Any] = js.undefined
+    var url: js.UndefOr[js.Any] = js.undefined
+    var view: js.UndefOr[String] = js.undefined
+    var width: js.UndefOr[Double] = js.undefined
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.webix.webixStrings.onAfterAdd
+    - typings.webix.webixStrings.onAfterContextMenu
+    - typings.webix.webixStrings.onAfterDelete
+    - typings.webix.webixStrings.onAfterLoad
+    - typings.webix.webixStrings.onAfterRender
+    - typings.webix.webixStrings.onAfterScroll
+    - typings.webix.webixStrings.onAfterSort
+    - typings.webix.webixStrings.onBeforeAdd
+    - typings.webix.webixStrings.onBeforeContextMenu
+    - typings.webix.webixStrings.onBeforeDelete
+    - typings.webix.webixStrings.onBeforeLoad
+    - typings.webix.webixStrings.onBeforeRender
+    - typings.webix.webixStrings.onBeforeSort
+    - typings.webix.webixStrings.onBindRequest
+    - typings.webix.webixStrings.onDataRequest
+    - typings.webix.webixStrings.onDataUpdate
+    - typings.webix.webixStrings.onDestruct
+    - typings.webix.webixStrings.onItemClick
+    - typings.webix.webixStrings.onItemDblClick
+    - typings.webix.webixStrings.onItemRender
+    - typings.webix.webixStrings.onLoadError
+    - typings.webix.webixStrings.onMouseMove
+    - typings.webix.webixStrings.onMouseMoving
+    - typings.webix.webixStrings.onMouseOut
+    - typings.webix.webixStrings.onViewShow
+  */
+  trait timelineEventName extends js.Object
+  
+  @js.native
   class toggle () extends baseview {
     @JSName("$allowsClear")
     var $allowsClear: Boolean = js.native
@@ -12529,7 +12784,7 @@ object uiNs extends js.Object {
     var datatype: js.UndefOr[String] = js.undefined
     var disabled: js.UndefOr[Boolean] = js.undefined
     var elements: js.UndefOr[js.Array[_]] = js.undefined
-    var elementsConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var elementsConfig: js.UndefOr[js.Any] = js.undefined
     var gravity: js.UndefOr[Double] = js.undefined
     var height: js.UndefOr[Double] = js.undefined
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -12769,7 +13024,8 @@ object uiNs extends js.Object {
     def getChecked(): js.Array[_] = js.native
     def getFirstChildId(id: String): String = js.native
     def getFirstChildId(id: Double): String = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -12777,7 +13033,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getNextSiblingId(id: String): String | Double = js.native
@@ -12832,6 +13088,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -12905,7 +13162,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -13042,7 +13299,8 @@ object uiNs extends js.Object {
     def getBranchIndex(id: Double, parent: Double): Double = js.native
     def getFirstChildId(id: String): String = js.native
     def getFirstChildId(id: Double): String = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -13050,7 +13308,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getNextSiblingId(id: String): String | Double = js.native
@@ -13102,6 +13360,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -13179,7 +13438,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -13413,13 +13672,14 @@ object uiNs extends js.Object {
     def getFilter(columnID: Double): js.Any = js.native
     def getFirstChildId(id: String): String = js.native
     def getFirstChildId(id: Double): String = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
     def getFooterNode(columnId: String): HTMLElement = js.native
     def getFooterNode(columnId: String, rowIndex: Double): HTMLElement = js.native
     def getHeaderContent(id: String): StringDictionary[js.Any] = js.native
     def getHeaderContent(id: Double): StringDictionary[js.Any] = js.native
     def getHeaderNode(columnId: String): HTMLElement = js.native
     def getHeaderNode(columnId: String, rowIndex: Double): HTMLElement = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -13427,7 +13687,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getNextSiblingId(id: String): String | Double = js.native
@@ -13532,6 +13792,7 @@ object uiNs extends js.Object {
     def refreshSelectArea(): Unit = js.native
     def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCellCss(id: String, name: String, css_name: String): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
@@ -13560,7 +13821,10 @@ object uiNs extends js.Object {
     def selectRange(row_id: Double, end_row_id: Double): Unit = js.native
     def selectRange(row_id: Double, end_row_id: Double, preserve: Boolean): Unit = js.native
     def serialize(): js.Array[_] = js.native
-    def serialize(all: Boolean): js.Array[_] = js.native
+    def serialize(id: String): js.Array[_] = js.native
+    def serialize(id: String, all: Boolean): js.Array[_] = js.native
+    def serialize(id: Double): js.Array[_] = js.native
+    def serialize(id: Double, all: Boolean): js.Array[_] = js.native
     def setColumnWidth(id: String, width: Double): Unit = js.native
     def setColumnWidth(id: Double, width: Double): Unit = js.native
     def setPage(page: Double): Unit = js.native
@@ -13646,11 +13910,13 @@ object uiNs extends js.Object {
     var loadahead: js.UndefOr[Double] = js.undefined
     var map: js.UndefOr[js.Any] = js.undefined
     var math: js.UndefOr[Boolean] = js.undefined
+    var maxColumnWidth: js.UndefOr[Double] = js.undefined
     var maxHeight: js.UndefOr[Double] = js.undefined
+    var maxRowHeight: js.UndefOr[Double] = js.undefined
     var maxWidth: js.UndefOr[Double] = js.undefined
-    var minColumnHeight: js.UndefOr[Double] = js.undefined
     var minColumnWidth: js.UndefOr[Double] = js.undefined
     var minHeight: js.UndefOr[Double] = js.undefined
+    var minRowHeight: js.UndefOr[Double] = js.undefined
     var minWidth: js.UndefOr[Double] = js.undefined
     var mouseEventDelay: js.UndefOr[Double] = js.undefined
     var multiselect: js.UndefOr[Boolean] = js.undefined
@@ -13665,12 +13931,12 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var resizeColumn: js.UndefOr[js.Any] = js.undefined
-    var resizeRow: js.UndefOr[Boolean] = js.undefined
+    var resizeRow: js.UndefOr[js.Any] = js.undefined
     var rightSplit: js.UndefOr[Double] = js.undefined
     var rowHeight: js.UndefOr[Double] = js.undefined
     var rowLineHeight: js.UndefOr[Double] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollAlignY: js.UndefOr[Boolean] = js.undefined
@@ -13678,12 +13944,12 @@ object uiNs extends js.Object {
     var scrollY: js.UndefOr[Boolean] = js.undefined
     var select: js.UndefOr[Boolean | String] = js.undefined
     var spans: js.UndefOr[js.Array[_]] = js.undefined
-    var subRowHeight: js.UndefOr[String] = js.undefined
+    var subRowHeight: js.UndefOr[String | Double] = js.undefined
     var subrow: js.UndefOr[String] = js.undefined
     var subview: js.UndefOr[baseview | WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[WebixCallback] = js.undefined
     var threeState: js.UndefOr[Boolean] = js.undefined
-    var tooltip: js.UndefOr[Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var undo: js.UndefOr[Boolean] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -13864,6 +14130,10 @@ object uiNs extends js.Object {
     def count(): Double = js.native
     def customize(obj: js.Any): Unit = js.native
     def detachEvent(id: String): Unit = js.native
+    def disableItem(id: String): Unit = js.native
+    def disableItem(id: Double): Unit = js.native
+    def enableItem(id: String): Unit = js.native
+    def enableItem(id: Double): Unit = js.native
     def exists(id: String): Boolean = js.native
     def exists(id: Double): Boolean = js.native
     def filter(text: WebixCallback | WebixTemplate): Unit = js.native
@@ -13874,7 +14144,8 @@ object uiNs extends js.Object {
     def filter(text: String, value: String, preserve: Boolean): Unit = js.native
     def find(criterion: WebixCallback): js.Any = js.native
     def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-    def getFirstId(): String | Double = js.native
+    def getFirstId(): Double | String = js.native
+    def getIdByIndex(index: String): String | Double = js.native
     def getIdByIndex(index: Double): String | Double = js.native
     def getIndexById(id: String): Double = js.native
     def getIndexById(id: Double): Double = js.native
@@ -13882,7 +14153,7 @@ object uiNs extends js.Object {
     def getItem(id: Double): js.Any = js.native
     def getItemNode(id: String): HTMLElement = js.native
     def getItemNode(id: Double): HTMLElement = js.native
-    def getLastId(): String | Double = js.native
+    def getLastId(): Double | String = js.native
     def getNextId(id: String, step: Double): String | Double = js.native
     def getNextId(id: Double, step: Double): String | Double = js.native
     def getPage(): Double = js.native
@@ -13898,6 +14169,7 @@ object uiNs extends js.Object {
     def hasCss(id: String, css: String): Boolean = js.native
     def hasCss(id: Double, css: String): Boolean = js.native
     def hasEvent(name: String): Boolean = js.native
+    def isEnabledItem(): Boolean = js.native
     def isSelected(id: String): Boolean = js.native
     def isSelected(id: Double): Boolean = js.native
     def load(url: String): js.Promise[_] = js.native
@@ -13926,6 +14198,7 @@ object uiNs extends js.Object {
     def refresh(id: String): Unit = js.native
     def refresh(id: Double): Unit = js.native
     def remove(id: String): Unit = js.native
+    def remove(id: js.Array[_]): Unit = js.native
     def remove(id: Double): Unit = js.native
     def removeCss(id: String, css: String): Unit = js.native
     def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -13995,7 +14268,7 @@ object uiNs extends js.Object {
     var ready: js.UndefOr[WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
-    var save: js.UndefOr[String] = js.undefined
+    var save: js.UndefOr[js.Any] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[Boolean | String] = js.undefined
     var scrollSpeed: js.UndefOr[String] = js.undefined
@@ -14074,8 +14347,6 @@ object uiNs extends js.Object {
     var $compareValue_Original: WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: String = js.native
-    @JSName("$onUploadComplete")
-    var $onUploadComplete_Original: WebixCallback = js.native
     @JSName("$prepareValue")
     var $prepareValue_Original: WebixCallback = js.native
     @JSName("$scope")
@@ -14092,8 +14363,6 @@ object uiNs extends js.Object {
     def $compareValue(args: js.Any*): js.Any = js.native
     @JSName("$getValue")
     def $getValue(): String = js.native
-    @JSName("$onUploadComplete")
-    def $onUploadComplete(args: js.Any*): js.Any = js.native
     @JSName("$prepareValue")
     def $prepareValue(args: js.Any*): js.Any = js.native
     @JSName("$renderInput")
@@ -14176,7 +14445,7 @@ object uiNs extends js.Object {
     var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[String] = js.undefined
     var upload: js.UndefOr[String] = js.undefined
-    var urlData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var urlData: js.UndefOr[js.Any] = js.undefined
     var value: js.UndefOr[String | Double] = js.undefined
     var view: js.UndefOr[String] = js.undefined
     var width: js.UndefOr[Double] = js.undefined
@@ -14235,7 +14504,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[Double] = js.undefined
     var minHeight: js.UndefOr[Double] = js.undefined
     var minWidth: js.UndefOr[Double] = js.undefined
-    var src: js.UndefOr[String] = js.undefined
+    var src: js.UndefOr[String | js.Array[_]] = js.undefined
     var view: js.UndefOr[String] = js.undefined
     var width: js.UndefOr[Double] = js.undefined
   }

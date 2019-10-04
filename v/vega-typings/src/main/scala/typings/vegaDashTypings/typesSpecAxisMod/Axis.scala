@@ -1,5 +1,6 @@
 package typings.vegaDashTypings.typesSpecAxisMod
 
+import typings.vegaDashTypings.typesSpecEncodeMod.Text
 import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecValuesMod.AlignValue
@@ -83,7 +84,7 @@ trait Axis extends BaseAxis[
   /**
     * A title for the axis (none by default).
     */
-  var title: js.UndefOr[StringValue] = js.undefined
+  var title: js.UndefOr[Text | SignalRef] = js.undefined
   /**
     * Explicitly set the visible axis tick and label values.
     */
@@ -152,7 +153,7 @@ object Axis {
     tickSize: NumberValue = null,
     tickWidth: NumberValue = null,
     ticks: BooleanValue = null,
-    title: StringValue = null,
+    title: Text | SignalRef = null,
     titleAlign: AlignValue = null,
     titleAnchor: AnchorValue = null,
     titleAngle: NumberValue = null,
@@ -163,6 +164,7 @@ object Axis {
     titleFontStyle: FontStyleValue = null,
     titleFontWeight: FontWeightValue = null,
     titleLimit: NumberValue = null,
+    titleLineHeight: NumberValue = null,
     titleOpacity: NumberValue = null,
     titlePadding: NumberValue = null,
     titleX: NumberValue = null,
@@ -232,6 +234,7 @@ object Axis {
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
     if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
     if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
+    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
     if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])

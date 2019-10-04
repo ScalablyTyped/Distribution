@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codebuildWebhookMod
 
-import typings.atPulumiAws.Anon_Filters
+import typings.atPulumiAws.typesOutputMod.codebuildNs.WebhookFilterGroup
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class Webhook protected () extends CustomResource {
   /**
     * Information about the webhook's trigger. Filter group blocks are documented below.
     */
-  val filterGroups: Output[js.UndefOr[js.Array[Anon_Filters]]] = js.native
+  val filterGroups: Output[js.UndefOr[js.Array[WebhookFilterGroup]]] = js.native
   /**
     * The CodeBuild endpoint where webhook events are sent.
     */

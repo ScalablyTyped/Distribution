@@ -25,6 +25,8 @@ trait AppManifest
   var orientation: js.UndefOr[String] = js.undefined
   var packagerOpts: js.UndefOr[Anon_Dev] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
+  /** Published Apps Only */
+  var revisionId: js.UndefOr[String] = js.undefined
   var sdkVersion: js.UndefOr[String] = js.undefined
   var slug: js.UndefOr[String] = js.undefined
   var version: js.UndefOr[String] = js.undefined
@@ -49,6 +51,7 @@ object AppManifest {
     orientation: String = null,
     packagerOpts: Anon_Dev = null,
     primaryColor: String = null,
+    revisionId: String = null,
     sdkVersion: String = null,
     slug: String = null,
     version: String = null,
@@ -69,6 +72,7 @@ object AppManifest {
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (packagerOpts != null) __obj.updateDynamic("packagerOpts")(packagerOpts)
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
     if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion)
     if (slug != null) __obj.updateDynamic("slug")(slug)
     if (version != null) __obj.updateDynamic("version")(version)

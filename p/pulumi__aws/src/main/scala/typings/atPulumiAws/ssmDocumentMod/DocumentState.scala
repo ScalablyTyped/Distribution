@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmDocumentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AccountIdsTypeInput
-import typings.atPulumiAws.Anon_DefaultValueDescriptionName
+import typings.atPulumiAws.typesInputMod.ssmNs.DocumentParameter
+import typings.atPulumiAws.typesInputMod.ssmNs.DocumentPermissions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,11 +57,11 @@ trait DocumentState extends js.Object {
   /**
     * The parameters that are available to this document.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[Anon_DefaultValueDescriptionName]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[DocumentParameter]]]] = js.undefined
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[Input[Anon_AccountIdsTypeInput]] = js.undefined
+  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.undefined
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */
@@ -95,8 +95,8 @@ object DocumentState {
     latestVersion: Input[String] = null,
     name: Input[String] = null,
     owner: Input[String] = null,
-    parameters: Input[js.Array[Input[Anon_DefaultValueDescriptionName]]] = null,
-    permissions: Input[Anon_AccountIdsTypeInput] = null,
+    parameters: Input[js.Array[Input[DocumentParameter]]] = null,
+    permissions: Input[DocumentPermissions] = null,
     platformTypes: Input[js.Array[Input[String]]] = null,
     schemaVersion: Input[String] = null,
     status: Input[String] = null,

@@ -6,29 +6,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aurelia-dependency-injection", "Factory")
 @js.native
-class Factory protected () extends js.Object {
-  /**
-    * Creates an instance of the Factory class.
-    * @param key The key to resolve from the parent container.
-    */
-  def this(key: js.Any) = this()
-  /**
-    * Called by the container to pass the dependencies to the constructor.
-    * @param container The container to invoke the constructor with dependencies and other parameters.
-    * @return Returns a function that can be invoked to resolve dependencies later, and the rest of the parameters.
-    */
-  def get(container: Container): js.Any = js.native
+class Factory[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends js.Object {
+  def this(key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs]) = this()
+  def get(container: Container): DependencyFunctor[TBase, TImpl, TArgs] = js.native
 }
 
 /* static members */
 @JSImport("aurelia-dependency-injection", "Factory")
 @js.native
 object Factory extends js.Object {
-  /**
-    * Creates a Factory Resolver for the supplied key.
-    * @param key The key to resolve.
-    * @return Returns an instance of Factory for the key.
-    */
-  def of(key: js.Any): Factory = js.native
+  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: DependencyCtor[TBase, TImpl, TArgs]): Factory[TBase, TImpl, TArgs] = js.native
 }
 

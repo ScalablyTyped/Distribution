@@ -1,6 +1,6 @@
 package typings.atPulumiAws.macieS3BucketAssociationMod
 
-import typings.atPulumiAws.Anon_Continuous
+import typings.atPulumiAws.typesOutputMod.macieNs.S3BucketAssociationClassificationType
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class S3BucketAssociation protected () extends CustomResource {
   /**
     * The configuration of how Amazon Macie classifies the S3 objects.
     */
-  val classificationType: Output[Anon_Continuous] = js.native
+  val classificationType: Output[S3BucketAssociationClassificationType] = js.native
   /**
     * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait TableFilteredEventArgs extends js.Object {
   /**
     *
-    * Represents the id of the table in which the filter is applied..
+    * Represents the id of the table in which the filter is applied.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

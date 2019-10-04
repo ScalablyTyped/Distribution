@@ -1,6 +1,6 @@
 package typings.sipDotJs.libServerContextMod
 
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libCoreMessagesIncomingDashRequestMod.IncomingRequest
 import typings.sipDotJs.libCoreMod.IncomingRequestMessage
 import typings.sipDotJs.libCoreMod.InviteServerTransaction

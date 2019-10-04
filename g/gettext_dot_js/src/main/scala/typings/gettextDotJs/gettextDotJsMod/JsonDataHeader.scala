@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JsonDataHeader extends js.Object {
-  var locale: String
+  var language: String
   var `plural-forms`: String
 }
 
 object JsonDataHeader {
   @scala.inline
-  def apply(locale: String, `plural-forms`: String): JsonDataHeader = {
-    val __obj = js.Dynamic.literal(locale = locale)
+  def apply(language: String, `plural-forms`: String): JsonDataHeader = {
+    val __obj = js.Dynamic.literal(language = language)
     __obj.updateDynamic("plural-forms")(`plural-forms`)
     __obj.asInstanceOf[JsonDataHeader]
   }

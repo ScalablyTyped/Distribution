@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dotenv-expand"
-version := "4.2.0-165405"
+version := "5.1.0-f2ff13"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

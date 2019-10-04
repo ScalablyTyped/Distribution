@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ForwardRefExoticComponent[P] extends NamedExoticComponent[P] {
   var defaultProps: js.UndefOr[Partial[P]] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[P]] = js.native
 }
 

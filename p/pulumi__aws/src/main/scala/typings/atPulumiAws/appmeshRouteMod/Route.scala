@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshRouteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_HttpRoute
+import typings.atPulumiAws.typesOutputMod.appmeshNs.RouteSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class Route protected () extends CustomResource {
   /**
     * The route specification to apply.
     */
-  val spec: Output[Anon_HttpRoute] = js.native
+  val spec: Output[RouteSpec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

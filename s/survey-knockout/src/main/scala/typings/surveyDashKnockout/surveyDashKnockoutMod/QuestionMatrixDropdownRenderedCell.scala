@@ -17,5 +17,6 @@ class QuestionMatrixDropdownRenderedCell () extends js.Object {
   var minWidth: String = js.native
   var question: Question = js.native
   var row: MatrixDropdownRowModelBase = js.native
+  var width: String = js.native
 }
 

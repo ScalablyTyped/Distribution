@@ -1,6 +1,6 @@
 package typings.atPulumiAws.iotThingTypeMod
 
-import typings.atPulumiAws.Anon_Description
+import typings.atPulumiAws.typesOutputMod.iotNs.ThingTypeProperties
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,7 +35,7 @@ class ThingType protected () extends CustomResource {
     * The name of the thing type.
     */
   val name: Output[String] = js.native
-  val properties: Output[js.UndefOr[Anon_Description]] = js.native
+  val properties: Output[js.UndefOr[ThingTypeProperties]] = js.native
 }
 
 /* static members */

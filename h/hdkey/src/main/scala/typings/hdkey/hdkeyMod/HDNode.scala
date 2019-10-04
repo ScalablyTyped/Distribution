@@ -1,5 +1,6 @@
 package typings.hdkey.hdkeyMod
 
+import typings.hdkey.Anon_Xpriv
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +11,19 @@ trait HDNode extends js.Object {
   var privateKey: Buffer
   var publicKey: Buffer
   def derive(path: String): HDNode
+  def toJSON(): Anon_Xpriv
 }
 
 object HDNode {
   @scala.inline
-  def apply(chainCode: Buffer, derive: String => HDNode, privateKey: Buffer, publicKey: Buffer): HDNode = {
-    val __obj = js.Dynamic.literal(chainCode = chainCode, derive = js.Any.fromFunction1(derive), privateKey = privateKey, publicKey = publicKey)
+  def apply(
+    chainCode: Buffer,
+    derive: String => HDNode,
+    privateKey: Buffer,
+    publicKey: Buffer,
+    toJSON: () => Anon_Xpriv
+  ): HDNode = {
+    val __obj = js.Dynamic.literal(chainCode = chainCode, derive = js.Any.fromFunction1(derive), privateKey = privateKey, publicKey = publicKey, toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[HDNode]
   }

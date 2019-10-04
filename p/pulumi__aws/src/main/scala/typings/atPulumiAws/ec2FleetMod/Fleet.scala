@@ -1,10 +1,10 @@
 package typings.atPulumiAws.ec2FleetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationStrategy
-import typings.atPulumiAws.Anon_AllocationStrategyInstanceInterruptionBehavior
-import typings.atPulumiAws.Anon_DefaultTargetCapacityType
-import typings.atPulumiAws.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone
+import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetLaunchTemplateConfig
+import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetOnDemandOptions
+import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetSpotOptions
+import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetTargetCapacitySpecification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,11 +33,11 @@ class Fleet protected () extends CustomResource {
   /**
     * Nested argument containing EC2 Launch Template configurations. Defined below.
     */
-  val launchTemplateConfig: Output[Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone] = js.native
+  val launchTemplateConfig: Output[FleetLaunchTemplateConfig] = js.native
   /**
     * Nested argument containing On-Demand configurations. Defined below.
     */
-  val onDemandOptions: Output[js.UndefOr[Anon_AllocationStrategy]] = js.native
+  val onDemandOptions: Output[js.UndefOr[FleetOnDemandOptions]] = js.native
   /**
     * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
     */
@@ -45,7 +45,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Nested argument containing Spot configurations. Defined below.
     */
-  val spotOptions: Output[js.UndefOr[Anon_AllocationStrategyInstanceInterruptionBehavior]] = js.native
+  val spotOptions: Output[js.UndefOr[FleetSpotOptions]] = js.native
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
@@ -53,7 +53,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
-  val targetCapacitySpecification: Output[Anon_DefaultTargetCapacityType] = js.native
+  val targetCapacitySpecification: Output[FleetTargetCapacitySpecification] = js.native
   /**
     * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
     */

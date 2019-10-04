@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartPivotOptions object, for use in "chartPivotOptions.set({ ... })". */
+/** An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`. */
 trait ChartPivotOptionsUpdateData extends js.Object {
   /**
     *

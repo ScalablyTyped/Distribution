@@ -1,17 +1,18 @@
 package typings.atPulumiAws.ec2LaunchTemplateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AffinityAvailabilityZoneGroupName
-import typings.atPulumiAws.Anon_ArnNameInput
-import typings.atPulumiAws.Anon_AssociatePublicIpAddressDeleteOnTerminationDescription
-import typings.atPulumiAws.Anon_CapacityReservationPreferenceCapacityReservationTarget
-import typings.atPulumiAws.Anon_CpuCreditsInput
-import typings.atPulumiAws.Anon_DeviceNameEbsNoDeviceVirtualName
-import typings.atPulumiAws.Anon_EnabledBooleanInput
-import typings.atPulumiAws.Anon_KeyResourceTypeTagsAny
-import typings.atPulumiAws.Anon_LicenseConfigurationArnInput
-import typings.atPulumiAws.Anon_MarketTypeSpotOptionsAnonBlockDurationMinutesInstanceInterruptionBehaviorMaxPrice
-import typings.atPulumiAws.Anon_TypeInputString
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateBlockDeviceMapping
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateCapacityReservationSpecification
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateCreditSpecification
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateElasticGpuSpecification
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateElasticInferenceAccelerator
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateIamInstanceProfile
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateInstanceMarketOptions
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateLicenseSpecification
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateMonitoring
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateNetworkInterface
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplatePlacement
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchTemplateTagSpecification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,16 +23,16 @@ trait LaunchTemplateArgs extends js.Object {
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     * See Block Devices below for details.
     */
-  val blockDeviceMappings: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameEbsNoDeviceVirtualName]]]] = js.undefined
+  val blockDeviceMappings: js.UndefOr[Input[js.Array[Input[LaunchTemplateBlockDeviceMapping]]]] = js.undefined
   /**
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
-  val capacityReservationSpecification: js.UndefOr[Input[Anon_CapacityReservationPreferenceCapacityReservationTarget]] = js.undefined
+  val capacityReservationSpecification: js.UndefOr[Input[LaunchTemplateCapacityReservationSpecification]] = js.undefined
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecification: js.UndefOr[Input[Anon_CpuCreditsInput]] = js.undefined
+  val creditSpecification: js.UndefOr[Input[LaunchTemplateCreditSpecification]] = js.undefined
   /**
     * Description of the launch template.
     */
@@ -49,16 +50,16 @@ trait LaunchTemplateArgs extends js.Object {
     * The elastic GPU to attach to the instance. See Elastic GPU
     * below for more details.
     */
-  val elasticGpuSpecifications: js.UndefOr[Input[js.Array[Input[Anon_TypeInputString]]]] = js.undefined
+  val elasticGpuSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateElasticGpuSpecification]]]] = js.undefined
   /**
     * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
     */
-  val elasticInferenceAccelerator: js.UndefOr[Input[Anon_TypeInputString]] = js.undefined
+  val elasticInferenceAccelerator: js.UndefOr[Input[LaunchTemplateElasticInferenceAccelerator]] = js.undefined
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
-  val iamInstanceProfile: js.UndefOr[Input[Anon_ArnNameInput]] = js.undefined
+  val iamInstanceProfile: js.UndefOr[Input[LaunchTemplateIamInstanceProfile]] = js.undefined
   /**
     * The AMI from which to launch the instance.
     */
@@ -72,11 +73,7 @@ trait LaunchTemplateArgs extends js.Object {
     * The market (purchasing) option for the instance. See Market Options
     * below for details.
     */
-  val instanceMarketOptions: js.UndefOr[
-    Input[
-      Anon_MarketTypeSpotOptionsAnonBlockDurationMinutesInstanceInterruptionBehaviorMaxPrice
-    ]
-  ] = js.undefined
+  val instanceMarketOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptions]] = js.undefined
   /**
     * The type of the instance.
     */
@@ -92,11 +89,11 @@ trait LaunchTemplateArgs extends js.Object {
   /**
     * A list of license specifications to associate with. See License Specification below for more details.
     */
-  val licenseSpecifications: js.UndefOr[Input[js.Array[Input[Anon_LicenseConfigurationArnInput]]]] = js.undefined
+  val licenseSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateLicenseSpecification]]]] = js.undefined
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */
-  val monitoring: js.UndefOr[Input[Anon_EnabledBooleanInput]] = js.undefined
+  val monitoring: js.UndefOr[Input[LaunchTemplateMonitoring]] = js.undefined
   /**
     * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
     */
@@ -109,13 +106,11 @@ trait LaunchTemplateArgs extends js.Object {
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: js.UndefOr[
-    Input[js.Array[Input[Anon_AssociatePublicIpAddressDeleteOnTerminationDescription]]]
-  ] = js.undefined
+  val networkInterfaces: js.UndefOr[Input[js.Array[Input[LaunchTemplateNetworkInterface]]]] = js.undefined
   /**
     * The placement of the instance. See Placement below for more details.
     */
-  val placement: js.UndefOr[Input[Anon_AffinityAvailabilityZoneGroupName]] = js.undefined
+  val placement: js.UndefOr[Input[LaunchTemplatePlacement]] = js.undefined
   /**
     * The ID of the RAM disk.
     */
@@ -128,7 +123,7 @@ trait LaunchTemplateArgs extends js.Object {
   /**
     * The tags to apply to the resources during launch. See Tag Specifications below for more details.
     */
-  val tagSpecifications: js.UndefOr[Input[js.Array[Input[Anon_KeyResourceTypeTagsAny]]]] = js.undefined
+  val tagSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateTagSpecification]]]] = js.undefined
   /**
     * A mapping of tags to assign to the launch template.
     */
@@ -146,32 +141,30 @@ trait LaunchTemplateArgs extends js.Object {
 object LaunchTemplateArgs {
   @scala.inline
   def apply(
-    blockDeviceMappings: Input[js.Array[Input[Anon_DeviceNameEbsNoDeviceVirtualName]]] = null,
-    capacityReservationSpecification: Input[Anon_CapacityReservationPreferenceCapacityReservationTarget] = null,
-    creditSpecification: Input[Anon_CpuCreditsInput] = null,
+    blockDeviceMappings: Input[js.Array[Input[LaunchTemplateBlockDeviceMapping]]] = null,
+    capacityReservationSpecification: Input[LaunchTemplateCapacityReservationSpecification] = null,
+    creditSpecification: Input[LaunchTemplateCreditSpecification] = null,
     description: Input[String] = null,
     disableApiTermination: Input[Boolean] = null,
     ebsOptimized: Input[String] = null,
-    elasticGpuSpecifications: Input[js.Array[Input[Anon_TypeInputString]]] = null,
-    elasticInferenceAccelerator: Input[Anon_TypeInputString] = null,
-    iamInstanceProfile: Input[Anon_ArnNameInput] = null,
+    elasticGpuSpecifications: Input[js.Array[Input[LaunchTemplateElasticGpuSpecification]]] = null,
+    elasticInferenceAccelerator: Input[LaunchTemplateElasticInferenceAccelerator] = null,
+    iamInstanceProfile: Input[LaunchTemplateIamInstanceProfile] = null,
     imageId: Input[String] = null,
     instanceInitiatedShutdownBehavior: Input[String] = null,
-    instanceMarketOptions: Input[
-      Anon_MarketTypeSpotOptionsAnonBlockDurationMinutesInstanceInterruptionBehaviorMaxPrice
-    ] = null,
+    instanceMarketOptions: Input[LaunchTemplateInstanceMarketOptions] = null,
     instanceType: Input[String] = null,
     kernelId: Input[String] = null,
     keyName: Input[String] = null,
-    licenseSpecifications: Input[js.Array[Input[Anon_LicenseConfigurationArnInput]]] = null,
-    monitoring: Input[Anon_EnabledBooleanInput] = null,
+    licenseSpecifications: Input[js.Array[Input[LaunchTemplateLicenseSpecification]]] = null,
+    monitoring: Input[LaunchTemplateMonitoring] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
-    networkInterfaces: Input[js.Array[Input[Anon_AssociatePublicIpAddressDeleteOnTerminationDescription]]] = null,
-    placement: Input[Anon_AffinityAvailabilityZoneGroupName] = null,
+    networkInterfaces: Input[js.Array[Input[LaunchTemplateNetworkInterface]]] = null,
+    placement: Input[LaunchTemplatePlacement] = null,
     ramDiskId: Input[String] = null,
     securityGroupNames: Input[js.Array[Input[String]]] = null,
-    tagSpecifications: Input[js.Array[Input[Anon_KeyResourceTypeTagsAny]]] = null,
+    tagSpecifications: Input[js.Array[Input[LaunchTemplateTagSpecification]]] = null,
     tags: Input[StringDictionary[_]] = null,
     userData: Input[String] = null,
     vpcSecurityGroupIds: Input[js.Array[Input[String]]] = null

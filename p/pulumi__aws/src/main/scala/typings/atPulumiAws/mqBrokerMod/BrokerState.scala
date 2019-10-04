@@ -1,11 +1,12 @@
 package typings.atPulumiAws.mqBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AuditGeneral
-import typings.atPulumiAws.Anon_ConsoleAccessGroups
-import typings.atPulumiAws.Anon_ConsoleUrlEndpoints
-import typings.atPulumiAws.Anon_DayOfWeekTimeOfDay
-import typings.atPulumiAws.Anon_IdRevisionInput
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerConfiguration
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerEncryptionOptions
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerInstance
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerLogs
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerMaintenanceWindowStartTime
+import typings.atPulumiAws.typesInputMod.mqNs.BrokerUser
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,11 +33,15 @@ trait BrokerState extends js.Object {
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: js.UndefOr[Input[Anon_IdRevisionInput]] = js.undefined
+  val configuration: js.UndefOr[Input[BrokerConfiguration]] = js.undefined
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
   val deploymentMode: js.UndefOr[Input[String]] = js.undefined
+  /**
+    * Configuration block containing encryption options. See below.
+    */
+  val encryptionOptions: js.UndefOr[Input[BrokerEncryptionOptions]] = js.undefined
   /**
     * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
     */
@@ -60,15 +65,15 @@ trait BrokerState extends js.Object {
     * * `mqtt+ssl://broker-id.mq.us-west-2.amazonaws.com:8883`
     * * `wss://broker-id.mq.us-west-2.amazonaws.com:61619`
     */
-  val instances: js.UndefOr[Input[js.Array[Input[Anon_ConsoleUrlEndpoints]]]] = js.undefined
+  val instances: js.UndefOr[Input[js.Array[Input[BrokerInstance]]]] = js.undefined
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: js.UndefOr[Input[Anon_AuditGeneral]] = js.undefined
+  val logs: js.UndefOr[Input[BrokerLogs]] = js.undefined
   /**
     * Maintenance window start time. See below.
     */
-  val maintenanceWindowStartTime: js.UndefOr[Input[Anon_DayOfWeekTimeOfDay]] = js.undefined
+  val maintenanceWindowStartTime: js.UndefOr[Input[BrokerMaintenanceWindowStartTime]] = js.undefined
   /**
     * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
     */
@@ -88,7 +93,7 @@ trait BrokerState extends js.Object {
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
-  val users: js.UndefOr[Input[js.Array[Input[Anon_ConsoleAccessGroups]]]] = js.undefined
+  val users: js.UndefOr[Input[js.Array[Input[BrokerUser]]]] = js.undefined
 }
 
 object BrokerState {
@@ -98,19 +103,20 @@ object BrokerState {
     arn: Input[String] = null,
     autoMinorVersionUpgrade: Input[Boolean] = null,
     brokerName: Input[String] = null,
-    configuration: Input[Anon_IdRevisionInput] = null,
+    configuration: Input[BrokerConfiguration] = null,
     deploymentMode: Input[String] = null,
+    encryptionOptions: Input[BrokerEncryptionOptions] = null,
     engineType: Input[String] = null,
     engineVersion: Input[String] = null,
     hostInstanceType: Input[String] = null,
-    instances: Input[js.Array[Input[Anon_ConsoleUrlEndpoints]]] = null,
-    logs: Input[Anon_AuditGeneral] = null,
-    maintenanceWindowStartTime: Input[Anon_DayOfWeekTimeOfDay] = null,
+    instances: Input[js.Array[Input[BrokerInstance]]] = null,
+    logs: Input[BrokerLogs] = null,
+    maintenanceWindowStartTime: Input[BrokerMaintenanceWindowStartTime] = null,
     publiclyAccessible: Input[Boolean] = null,
     securityGroups: Input[js.Array[Input[String]]] = null,
     subnetIds: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,
-    users: Input[js.Array[Input[Anon_ConsoleAccessGroups]]] = null
+    users: Input[js.Array[Input[BrokerUser]]] = null
   ): BrokerState = {
     val __obj = js.Dynamic.literal()
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
@@ -119,6 +125,7 @@ object BrokerState {
     if (brokerName != null) __obj.updateDynamic("brokerName")(brokerName.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (deploymentMode != null) __obj.updateDynamic("deploymentMode")(deploymentMode.asInstanceOf[js.Any])
+    if (encryptionOptions != null) __obj.updateDynamic("encryptionOptions")(encryptionOptions.asInstanceOf[js.Any])
     if (engineType != null) __obj.updateDynamic("engineType")(engineType.asInstanceOf[js.Any])
     if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
     if (hostInstanceType != null) __obj.updateDynamic("hostInstanceType")(hostInstanceType.asInstanceOf[js.Any])

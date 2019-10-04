@@ -1,7 +1,7 @@
 package typings.atPulumiAws.opsworksStackMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_PasswordRevisionSshKeyType
+import typings.atPulumiAws.typesOutputMod.opsworksNs.StackCustomCookbooksSource
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -48,7 +48,7 @@ class Stack protected () extends CustomResource {
     * When `useCustomCookbooks` is set, provide this sub-object as
     * described below.
     */
-  val customCookbooksSources: Output[js.Array[Anon_PasswordRevisionSshKeyType]] = js.native
+  val customCookbooksSources: Output[js.Array[StackCustomCookbooksSource]] = js.native
   /**
     * Custom JSON attributes to apply to the entire stack.
     */

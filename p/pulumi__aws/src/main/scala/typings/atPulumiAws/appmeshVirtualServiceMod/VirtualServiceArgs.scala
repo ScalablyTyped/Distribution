@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ProviderAnonVirtualNodeVirtualRouterAnonVirtualNodeNameInput
+import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualServiceSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait VirtualServiceArgs extends js.Object {
   /**
     * The virtual service specification to apply.
     */
-  val spec: Input[Anon_ProviderAnonVirtualNodeVirtualRouterAnonVirtualNodeNameInput]
+  val spec: Input[VirtualServiceSpec]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -30,7 +30,7 @@ object VirtualServiceArgs {
   @scala.inline
   def apply(
     meshName: Input[String],
-    spec: Input[Anon_ProviderAnonVirtualNodeVirtualRouterAnonVirtualNodeNameInput],
+    spec: Input[VirtualServiceSpec],
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): VirtualServiceArgs = {

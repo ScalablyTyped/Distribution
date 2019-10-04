@@ -82,7 +82,11 @@ class KEYUTIL ()
 object KEYUTIL extends js.Object {
   val version: String = js.native
   @JSName("generateKeypair")
+  def generateKeypair_EC(alg: EC, keylenOrCurve: String): Anon_PrvKeyObj = js.native
+  @JSName("generateKeypair")
   def generateKeypair_EC(alg: EC, keylenOrCurve: Double): Anon_PrvKeyObj = js.native
+  @JSName("generateKeypair")
+  def generateKeypair_RSA(alg: RSA, keylenOrCurve: String): Anon_PrvKeyObj = js.native
   /**
     * @param alg 'RSA' or 'EC'
     * @param keylenOrCurve key length for RSA or curve name for EC

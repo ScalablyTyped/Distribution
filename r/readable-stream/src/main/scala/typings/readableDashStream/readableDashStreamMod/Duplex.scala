@@ -20,6 +20,7 @@ class Duplex () extends Writable {
   var readable: Boolean = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
+  val readableObjectMode: Boolean = js.native
   def _destroy(err: Error, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
   def _read(): Unit = js.native
   def _read(size: Double): Unit = js.native

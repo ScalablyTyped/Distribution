@@ -19,6 +19,10 @@ trait QueryFindOneAndUpdateOptions extends QueryFindOneAndRemoveOptions {
   var multipleCastError: js.UndefOr[Boolean] = js.undefined
   /** if true, return the modified document rather than the original. defaults to false (changed in 4.0) */
   var `new`: js.UndefOr[Boolean] = js.undefined
+  /** If true, delete any properties whose value is undefined when casting an update. In other words,
+    if this is set, Mongoose will delete baz from the update in Model.updateOne({}, { foo: 'bar', baz: undefined })
+    before sending the update to the server.**/
+  var omitUndefined: js.UndefOr[Boolean] = js.undefined
   /** if true, runs update validators on this command. Update validators validate the update operation against the model's schema. */
   var runValidators: js.UndefOr[Boolean] = js.undefined
   /**
@@ -38,6 +42,7 @@ object QueryFindOneAndUpdateOptions {
     maxTimeMS: Int | Double = null,
     multipleCastError: js.UndefOr[Boolean] = js.undefined,
     `new`: js.UndefOr[Boolean] = js.undefined,
+    omitUndefined: js.UndefOr[Boolean] = js.undefined,
     projection: js.Any = null,
     rawResult: js.UndefOr[Boolean] = js.undefined,
     runValidators: js.UndefOr[Boolean] = js.undefined,
@@ -53,6 +58,7 @@ object QueryFindOneAndUpdateOptions {
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
     if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError)
     if (!js.isUndefined(`new`)) __obj.updateDynamic("new")(`new`)
+    if (!js.isUndefined(omitUndefined)) __obj.updateDynamic("omitUndefined")(omitUndefined)
     if (projection != null) __obj.updateDynamic("projection")(projection)
     if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult)
     if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators)

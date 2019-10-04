@@ -67,6 +67,9 @@ object chromaDashJsStrings {
   sealed trait lighten extends js.Object
   
   @js.native
+  sealed trait lrgb extends InterpolationMode
+  
+  @js.native
   sealed trait luminance extends js.Object
   
   @js.native
@@ -136,6 +139,8 @@ object chromaDashJsStrings {
   def lch: lch = "lch".asInstanceOf[lch]
   @scala.inline
   def lighten: lighten = "lighten".asInstanceOf[lighten]
+  @scala.inline
+  def lrgb: lrgb = "lrgb".asInstanceOf[lrgb]
   @scala.inline
   def luminance: luminance = "luminance".asInstanceOf[luminance]
   @scala.inline

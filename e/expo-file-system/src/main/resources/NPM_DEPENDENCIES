@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-file-system" : "6.0.2"
+      "expo-file-system" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-file-system" : "6.0.2"
+      "expo-file-system" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for all-keys
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Get all property keys of an object including non-enumerable and inherited ones

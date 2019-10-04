@@ -146,6 +146,9 @@ object gitlabStrings {
   sealed trait NotificationSettings extends js.Object
   
   @js.native
+  sealed trait Packages extends js.Object
+  
+  @js.native
   sealed trait PagesDomains extends js.Object
   
   @js.native
@@ -580,6 +583,8 @@ object gitlabStrings {
   def Namespaces: Namespaces = "Namespaces".asInstanceOf[Namespaces]
   @scala.inline
   def NotificationSettings: NotificationSettings = "NotificationSettings".asInstanceOf[NotificationSettings]
+  @scala.inline
+  def Packages: Packages = "Packages".asInstanceOf[Packages]
   @scala.inline
   def PagesDomains: PagesDomains = "PagesDomains".asInstanceOf[PagesDomains]
   @scala.inline

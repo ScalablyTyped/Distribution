@@ -1,7 +1,7 @@
 package typings.reactDashIntl.distTypesMod
 
-import typings.intlDashMessageformat.libFormattersMod.FormatXMLElementFn
-import typings.intlDashMessageformat.libFormattersMod.PrimitiveType
+import typings.intlDashMessageformat.distFormattersMod.FormatXMLElementFn
+import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNodeArray
 import typings.std.IntlNs.DateTimeFormatPart
@@ -75,17 +75,17 @@ trait IntlFormatters extends js.Object {
     opts: FormatPluralOptions
   ): ReturnType[js.Function1[/* n */ Double, String]] = js.native
   def formatRelativeTime(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
-    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[1] */ js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[0] */ js.Any,
+    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[1] */ js.Any
   ): String = js.native
   def formatRelativeTime(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any,
-    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[1] */ js.Any,
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[0] */ js.Any,
+    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[1] */ js.Any,
     opts: FormatRelativeTimeOptions
   ): String = js.native
   @JSName("formatRelativeTime")
   def formatRelativeTime_0(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Unit>[0] */ js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[0] */ js.Any
   ): String = js.native
   def formatTime(value: String): String = js.native
   def formatTime(value: String, opts: FormatDateOptions): String = js.native

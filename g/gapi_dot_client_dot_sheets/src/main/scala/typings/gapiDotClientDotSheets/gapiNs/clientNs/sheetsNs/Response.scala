@@ -9,6 +9,8 @@ trait Response extends js.Object {
   var addBanding: js.UndefOr[AddBandingResponse] = js.undefined
   /** A reply from adding a chart. */
   var addChart: js.UndefOr[AddChartResponse] = js.undefined
+  /** A reply from adding a dimension group. */
+  var addDimensionGroup: js.UndefOr[AddDimensionGroupResponse] = js.undefined
   /** A reply from adding a filter view. */
   var addFilterView: js.UndefOr[AddFilterViewResponse] = js.undefined
   /** A reply from adding a named range. */
@@ -23,12 +25,18 @@ trait Response extends js.Object {
   var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleResponse] = js.undefined
   /** A reply from deleting a developer metadata entry. */
   var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataResponse] = js.undefined
+  /** A reply from deleting a dimension group. */
+  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupResponse] = js.undefined
+  /** A reply from removing rows containing duplicate values. */
+  var deleteDuplicates: js.UndefOr[DeleteDuplicatesResponse] = js.undefined
   /** A reply from duplicating a filter view. */
   var duplicateFilterView: js.UndefOr[DuplicateFilterViewResponse] = js.undefined
   /** A reply from duplicating a sheet. */
   var duplicateSheet: js.UndefOr[DuplicateSheetResponse] = js.undefined
   /** A reply from doing a find/replace. */
   var findReplace: js.UndefOr[FindReplaceResponse] = js.undefined
+  /** A reply from trimming whitespace. */
+  var trimWhitespace: js.UndefOr[TrimWhitespaceResponse] = js.undefined
   /** A reply from updating a conditional format rule. */
   var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleResponse] = js.undefined
   /** A reply from updating a developer metadata entry. */
@@ -42,6 +50,7 @@ object Response {
   def apply(
     addBanding: AddBandingResponse = null,
     addChart: AddChartResponse = null,
+    addDimensionGroup: AddDimensionGroupResponse = null,
     addFilterView: AddFilterViewResponse = null,
     addNamedRange: AddNamedRangeResponse = null,
     addProtectedRange: AddProtectedRangeResponse = null,
@@ -49,9 +58,12 @@ object Response {
     createDeveloperMetadata: CreateDeveloperMetadataResponse = null,
     deleteConditionalFormatRule: DeleteConditionalFormatRuleResponse = null,
     deleteDeveloperMetadata: DeleteDeveloperMetadataResponse = null,
+    deleteDimensionGroup: DeleteDimensionGroupResponse = null,
+    deleteDuplicates: DeleteDuplicatesResponse = null,
     duplicateFilterView: DuplicateFilterViewResponse = null,
     duplicateSheet: DuplicateSheetResponse = null,
     findReplace: FindReplaceResponse = null,
+    trimWhitespace: TrimWhitespaceResponse = null,
     updateConditionalFormatRule: UpdateConditionalFormatRuleResponse = null,
     updateDeveloperMetadata: UpdateDeveloperMetadataResponse = null,
     updateEmbeddedObjectPosition: UpdateEmbeddedObjectPositionResponse = null
@@ -59,6 +71,7 @@ object Response {
     val __obj = js.Dynamic.literal()
     if (addBanding != null) __obj.updateDynamic("addBanding")(addBanding)
     if (addChart != null) __obj.updateDynamic("addChart")(addChart)
+    if (addDimensionGroup != null) __obj.updateDynamic("addDimensionGroup")(addDimensionGroup)
     if (addFilterView != null) __obj.updateDynamic("addFilterView")(addFilterView)
     if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange)
     if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange)
@@ -66,9 +79,12 @@ object Response {
     if (createDeveloperMetadata != null) __obj.updateDynamic("createDeveloperMetadata")(createDeveloperMetadata)
     if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule)
     if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata)
+    if (deleteDimensionGroup != null) __obj.updateDynamic("deleteDimensionGroup")(deleteDimensionGroup)
+    if (deleteDuplicates != null) __obj.updateDynamic("deleteDuplicates")(deleteDuplicates)
     if (duplicateFilterView != null) __obj.updateDynamic("duplicateFilterView")(duplicateFilterView)
     if (duplicateSheet != null) __obj.updateDynamic("duplicateSheet")(duplicateSheet)
     if (findReplace != null) __obj.updateDynamic("findReplace")(findReplace)
+    if (trimWhitespace != null) __obj.updateDynamic("trimWhitespace")(trimWhitespace)
     if (updateConditionalFormatRule != null) __obj.updateDynamic("updateConditionalFormatRule")(updateConditionalFormatRule)
     if (updateDeveloperMetadata != null) __obj.updateDynamic("updateDeveloperMetadata")(updateDeveloperMetadata)
     if (updateEmbeddedObjectPosition != null) __obj.updateDynamic("updateEmbeddedObjectPosition")(updateEmbeddedObjectPosition)

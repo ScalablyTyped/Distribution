@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticloadbalancingv2GetListenerMod
 
-import typings.atPulumiAws.Anon_AuthenticateCognitos
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2Ns.GetListenerDefaultAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GetListenerResult extends js.Object {
   val arn: String
   val certificateArn: String
-  val defaultActions: js.Array[Anon_AuthenticateCognitos]
+  val defaultActions: js.Array[GetListenerDefaultAction]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -24,7 +24,7 @@ object GetListenerResult {
   def apply(
     arn: String,
     certificateArn: String,
-    defaultActions: js.Array[Anon_AuthenticateCognitos],
+    defaultActions: js.Array[GetListenerDefaultAction],
     id: String,
     loadBalancerArn: String,
     port: Double,

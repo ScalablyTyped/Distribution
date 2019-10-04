@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashLayersStrings {
   @js.native
-  sealed trait `1DOT2DOT9` extends js.Object
+  sealed trait `1DOT2DOT10` extends js.Object
   
   @js.native
   sealed trait Adadelta extends js.Object
@@ -332,7 +332,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait zeros extends _InitializerIdentifier
   
   @scala.inline
-  def `1DOT2DOT9`: `1DOT2DOT9` = "1.2.9".asInstanceOf[`1DOT2DOT9`]
+  def `1DOT2DOT10`: `1DOT2DOT10` = "1.2.10".asInstanceOf[`1DOT2DOT10`]
   @scala.inline
   def Adadelta: Adadelta = "Adadelta".asInstanceOf[Adadelta]
   @scala.inline

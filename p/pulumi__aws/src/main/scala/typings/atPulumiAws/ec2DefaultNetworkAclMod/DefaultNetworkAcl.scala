@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2DefaultNetworkAclMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActionCidrBlock
+import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultNetworkAclEgress
+import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultNetworkAclIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,11 +32,11 @@ class DefaultNetworkAcl protected () extends CustomResource {
   /**
     * Specifies an egress rule. Parameters defined below.
     */
-  val egress: Output[js.UndefOr[js.Array[Anon_ActionCidrBlock]]] = js.native
+  val egress: Output[js.UndefOr[js.Array[DefaultNetworkAclEgress]]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
-  val ingress: Output[js.UndefOr[js.Array[Anon_ActionCidrBlock]]] = js.native
+  val ingress: Output[js.UndefOr[js.Array[DefaultNetworkAclIngress]]] = js.native
   /**
     * The ID of the AWS account that owns the Default Network ACL
     */

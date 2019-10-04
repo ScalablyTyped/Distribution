@@ -1,7 +1,7 @@
 
 # Scala.js typings for scheduler
 
-Typings are for version 0.12
+Typings are for version 0.16
 
 ## Library description:
 Cooperative scheduler for the browser environment.

@@ -420,25 +420,15 @@ class Worksheet () extends ClientObject {
   def getUsedRangeOrNullObject(): Range = js.native
   def getUsedRangeOrNullObject(valuesOnly: Boolean): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Worksheet = js.native
-  def load(option: String): Worksheet = js.native
-  def load(option: js.Array[String]): Worksheet = js.native
-  def load(option: Anon_Expand): Worksheet = js.native
-  def load(option: WorksheetLoadOptions): Worksheet = js.native
+  def load(options: WorksheetLoadOptions): Worksheet = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Worksheet = js.native
+  def load(propertyNames: String): Worksheet = js.native
+  def load(propertyNames: js.Array[String]): Worksheet = js.native
   /**
     *
     * Finds and replaces the given string based on the criteria specified within the current worksheet.

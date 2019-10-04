@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTargetMod
 
-import typings.atPulumiAws.Anon_KeyValuesArray
+import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTargetTarget
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait MaintenanceWindowTargetArgs extends js.Object {
   /**
     * The targets (either instances or tags). Instances are specified using Key=InstanceIds,Values=InstanceId1,InstanceId2. Tags are specified using Key=tag name,Values=tag value.
     */
-  val targets: Input[js.Array[Input[Anon_KeyValuesArray]]]
+  val targets: Input[js.Array[Input[MaintenanceWindowTargetTarget]]]
   /**
     * The Id of the maintenance window to register the target with.
     */
@@ -37,7 +37,7 @@ object MaintenanceWindowTargetArgs {
   @scala.inline
   def apply(
     resourceType: Input[String],
-    targets: Input[js.Array[Input[Anon_KeyValuesArray]]],
+    targets: Input[js.Array[Input[MaintenanceWindowTargetTarget]]],
     windowId: Input[String],
     description: Input[String] = null,
     name: Input[String] = null,

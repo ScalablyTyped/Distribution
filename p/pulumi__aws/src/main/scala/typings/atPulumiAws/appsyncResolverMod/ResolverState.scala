@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appsyncResolverMod
 
-import typings.atPulumiAws.Anon_FunctionsArray
+import typings.atPulumiAws.typesInputMod.appsyncNs.ResolverPipelineConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ trait ResolverState extends js.Object {
   /**
     * The PipelineConfig. A `pipelineConfig` block is documented below.
     */
-  val pipelineConfig: js.UndefOr[Input[Anon_FunctionsArray]] = js.undefined
+  val pipelineConfig: js.UndefOr[Input[ResolverPipelineConfig]] = js.undefined
   /**
     * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
     */
@@ -53,7 +53,7 @@ object ResolverState {
     dataSource: Input[String] = null,
     field: Input[String] = null,
     kind: Input[String] = null,
-    pipelineConfig: Input[Anon_FunctionsArray] = null,
+    pipelineConfig: Input[ResolverPipelineConfig] = null,
     requestTemplate: Input[String] = null,
     responseTemplate: Input[String] = null,
     `type`: Input[String] = null

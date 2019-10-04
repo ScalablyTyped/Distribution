@@ -1,6 +1,5 @@
 package typings.three.srcCoreInterleavedBufferMod
 
-import typings.std.ArrayBufferView
 import typings.std.ArrayLike
 import typings.three.Anon_Count
 import typings.three.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttribute
@@ -23,8 +22,6 @@ class InterleavedBuffer protected () extends js.Object {
   def copy(source: InterleavedBuffer): this.type = js.native
   def copyAt(index1: Double, attribute: InterleavedBufferAttribute, index2: Double): InterleavedBuffer = js.native
   def set(value: ArrayLike[Double], index: Double): InterleavedBuffer = js.native
-  def setArray(): Unit = js.native
-  def setArray(array: ArrayBufferView): Unit = js.native
   def setDynamic(dynamic: Boolean): InterleavedBuffer = js.native
 }
 

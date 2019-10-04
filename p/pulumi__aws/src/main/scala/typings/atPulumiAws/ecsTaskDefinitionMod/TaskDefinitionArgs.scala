@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ecsTaskDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ContainerNameKeyProperties
-import typings.atPulumiAws.Anon_DockerVolumeConfigurationHostPath
-import typings.atPulumiAws.Anon_ExpressionTypeInput
+import typings.atPulumiAws.typesInputMod.ecsNs.TaskDefinitionPlacementConstraint
+import typings.atPulumiAws.typesInputMod.ecsNs.TaskDefinitionProxyConfiguration
+import typings.atPulumiAws.typesInputMod.ecsNs.TaskDefinitionVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,11 +50,11 @@ trait TaskDefinitionArgs extends js.Object {
   /**
     * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placementConstraints` is `10`.
     */
-  val placementConstraints: js.UndefOr[Input[js.Array[Input[Anon_ExpressionTypeInput]]]] = js.undefined
+  val placementConstraints: js.UndefOr[Input[js.Array[Input[TaskDefinitionPlacementConstraint]]]] = js.undefined
   /**
     * The proxy configuration details for the App Mesh proxy.
     */
-  val proxyConfiguration: js.UndefOr[Input[Anon_ContainerNameKeyProperties]] = js.undefined
+  val proxyConfiguration: js.UndefOr[Input[TaskDefinitionProxyConfiguration]] = js.undefined
   /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
@@ -70,7 +70,7 @@ trait TaskDefinitionArgs extends js.Object {
   /**
     * A set of volume blocks that containers in your task may use.
     */
-  val volumes: js.UndefOr[Input[js.Array[Input[Anon_DockerVolumeConfigurationHostPath]]]] = js.undefined
+  val volumes: js.UndefOr[Input[js.Array[Input[TaskDefinitionVolume]]]] = js.undefined
 }
 
 object TaskDefinitionArgs {
@@ -84,12 +84,12 @@ object TaskDefinitionArgs {
     memory: Input[String] = null,
     networkMode: Input[String] = null,
     pidMode: Input[String] = null,
-    placementConstraints: Input[js.Array[Input[Anon_ExpressionTypeInput]]] = null,
-    proxyConfiguration: Input[Anon_ContainerNameKeyProperties] = null,
+    placementConstraints: Input[js.Array[Input[TaskDefinitionPlacementConstraint]]] = null,
+    proxyConfiguration: Input[TaskDefinitionProxyConfiguration] = null,
     requiresCompatibilities: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,
     taskRoleArn: Input[String] = null,
-    volumes: Input[js.Array[Input[Anon_DockerVolumeConfigurationHostPath]]] = null
+    volumes: Input[js.Array[Input[TaskDefinitionVolume]]] = null
   ): TaskDefinitionArgs = {
     val __obj = js.Dynamic.literal(containerDefinitions = containerDefinitions.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])

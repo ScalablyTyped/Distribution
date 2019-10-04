@@ -14,7 +14,7 @@ trait GetPipelineStateOutput extends js.Object {
     */
   var pipelineName: js.UndefOr[PipelineName] = js.undefined
   /**
-    * The version number of the pipeline.  A newly-created pipeline is always assigned a version number of 1. 
+    * The version number of the pipeline.  A newly created pipeline is always assigned a version number of 1. 
     */
   var pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined
   /**

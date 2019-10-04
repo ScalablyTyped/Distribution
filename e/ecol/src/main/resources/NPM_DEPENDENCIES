@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ecol" : "1.0.4"
+      "ecol" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ecol" : "1.0.4"
+      "ecol" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

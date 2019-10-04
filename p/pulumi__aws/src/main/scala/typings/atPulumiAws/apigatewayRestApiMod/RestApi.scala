@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayRestApiMod
 
-import typings.atPulumiAws.Anon_Types
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.RestApiEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class RestApi protected () extends CustomResource {
   /**
     * Nested argument defining API endpoint configuration including endpoint type. Defined below.
     */
-  val endpointConfiguration: Output[Anon_Types] = js.native
+  val endpointConfiguration: Output[RestApiEndpointConfiguration] = js.native
   /**
     * The execution ARN part to be used in [`lambdaPermission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn`
     * when allowing API Gateway to invoke a Lambda function,

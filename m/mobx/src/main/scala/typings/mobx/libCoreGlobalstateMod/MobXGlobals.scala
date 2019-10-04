@@ -23,6 +23,11 @@ class MobXGlobals () extends js.Object {
     */
   var allowStateChanges: Boolean = js.native
   /**
+    * Is it allowed to read observables at this point?
+    * Used to hold the state needed for `observableRequiresReaction`
+    */
+  var allowStateReads: Boolean = js.native
+  /**
     * Are we running a computation currently? (not a reaction)
     */
   var computationDepth: Double = js.native
@@ -35,6 +40,7 @@ class MobXGlobals () extends js.Object {
     * Warn if computed values are accessed outside a reactive context
     */
   var computedRequiresReaction: Boolean = js.native
+  var currentActionId: Double = js.native
   var disableErrorBoundaries: Boolean = js.native
   /**
     * If strict mode is enabled, state changes are by default not allowed
@@ -56,6 +62,12 @@ class MobXGlobals () extends js.Object {
     * 'guid' for general purpose. Will be persisted amongst resets.
     */
   var mobxGuid: Double = js.native
+  var nextActionId: Double = js.native
+  /**
+    * (Experimental)
+    * Warn if observables are accessed outside a reactive context
+    */
+  var observableRequiresReaction: Boolean = js.native
   /**
     * List of scheduled, not yet executed, reactions.
     */
@@ -67,6 +79,11 @@ class MobXGlobals () extends js.Object {
     * @type {IObservable[]}
     */
   var pendingUnobservations: js.Array[IObservable] = js.native
+  /**
+    * (Experimental)
+    * Warn if you try to create to derivation / reactive context without accessing any observable.
+    */
+  var reactionRequiresObservable: Boolean = js.native
   /**
     * Each time a derivation is tracked, it is assigned a unique run-id
     */

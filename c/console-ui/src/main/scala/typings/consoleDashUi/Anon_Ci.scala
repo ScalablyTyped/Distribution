@@ -1,17 +1,17 @@
 package typings.consoleDashUi
 
 import typings.consoleDashUi.consoleDashUiMod.WriteLevel
-import typings.node.streamMod.Readable
-import typings.node.streamMod.Writable
+import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJSNs.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Ci extends js.Object {
   var ci: js.UndefOr[Boolean] = js.undefined
-  var errorStream: js.UndefOr[Writable] = js.undefined
-  var inputStream: js.UndefOr[Readable] = js.undefined
-  var outputStream: js.UndefOr[Writable] = js.undefined
+  var errorStream: js.UndefOr[WritableStream] = js.undefined
+  var inputStream: js.UndefOr[ReadableStream] = js.undefined
+  var outputStream: js.UndefOr[WritableStream] = js.undefined
   var writeLevel: js.UndefOr[WriteLevel] = js.undefined
 }
 
@@ -19,9 +19,9 @@ object Anon_Ci {
   @scala.inline
   def apply(
     ci: js.UndefOr[Boolean] = js.undefined,
-    errorStream: Writable = null,
-    inputStream: Readable = null,
-    outputStream: Writable = null,
+    errorStream: WritableStream = null,
+    inputStream: ReadableStream = null,
+    outputStream: WritableStream = null,
     writeLevel: WriteLevel = null
   ): Anon_Ci = {
     val __obj = js.Dynamic.literal()

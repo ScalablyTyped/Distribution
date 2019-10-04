@@ -1,7 +1,7 @@
 package typings.electronDashPublish.electronDashPublishMod
 
 import typings.electronDashPublish.outProgressMod.ProgressBar
-import typings.fsDashExtraDashP.fsDashExtraDashPMod.Stats
+import typings.fsDashExtra.fsDashExtraMod.Stats
 import typings.node.NodeJSNs.ReadableStream
 import typings.std.Error
 import scala.scalajs.js

@@ -6,15 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait DropDatabaseOptions extends js.Object {
   var options: js.UndefOr[DatabaseOptions] = js.undefined
-  var password: String
-  var username: String
+  var password: js.UndefOr[String] = js.undefined
+  var username: js.UndefOr[String] = js.undefined
 }
 
 object DropDatabaseOptions {
   @scala.inline
-  def apply(password: String, username: String, options: DatabaseOptions = null): DropDatabaseOptions = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
+  def apply(options: DatabaseOptions = null, password: String = null, username: String = null): DropDatabaseOptions = {
+    val __obj = js.Dynamic.literal()
     if (options != null) __obj.updateDynamic("options")(options)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[DropDatabaseOptions]
   }
 }

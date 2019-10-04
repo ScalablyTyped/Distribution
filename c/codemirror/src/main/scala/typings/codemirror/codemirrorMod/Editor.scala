@@ -2,6 +2,7 @@ package typings.codemirror.codemirrorMod
 
 import typings.codemirror.Anon_Anchor
 import typings.codemirror.Anon_BgClass
+import typings.codemirror.Anon_Bias
 import typings.codemirror.Anon_Bottom
 import typings.codemirror.Anon_BottomLeft
 import typings.codemirror.Anon_BottomLeftRight
@@ -170,6 +171,11 @@ trait Editor extends js.Object {
   def findWordAt(pos: Position): Range = js.native
   /** Give the editor focus. */
   def focus(): Unit = js.native
+  /** start is a an optional string indicating which end of the selection to return.
+    It may be "from", "to", "head" (the side of the selection that moves when you press shift+arrow),
+    or "anchor" (the fixed side of the selection).Omitting the argument is the same as passing "head". A {line, ch} object will be returned. **/
+  def getCursor(): Position = js.native
+  def getCursor(start: String): Position = js.native
   /** Retrieve the currently active document from an editor. */
   def getDoc(): Doc = js.native
   /** Fetches the DOM node that contains the editor gutters. */
@@ -531,6 +537,15 @@ trait Editor extends js.Object {
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Null, y: Double): Unit = js.native
+  def setCursor(pos: Double): Unit = js.native
+  def setCursor(pos: Double, ch: Double): Unit = js.native
+  def setCursor(pos: Double, ch: Double, options: Anon_Bias): Unit = js.native
+  /** Set the cursor position. You can either pass a single {line, ch} object, or the line and the character as two separate parameters.
+    Will replace all selections with a single, empty selection at the given position.
+    The supported options are the same as for setSelection */
+  def setCursor(pos: Position): Unit = js.native
+  def setCursor(pos: Position, ch: Double): Unit = js.native
+  def setCursor(pos: Position, ch: Double, options: Anon_Bias): Unit = js.native
   def setGutterMarker(line: js.Any, gutterID: String): LineHandle = js.native
   /** Sets the gutter marker for the given gutter (identified by its CSS class, see the gutters option) to the given value.
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */

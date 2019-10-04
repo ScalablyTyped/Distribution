@@ -1,0 +1,31 @@
+
+# Scala.js typings for rollup-plugin-peer-deps-external
+
+Typings are for version 2.2
+
+## Library description:
+Rollup plugin to automatically add a library's peerDependencies to its bundle's external config.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | rollup-plugin-peer-deps-external |
+| Keywords           | rollup, plugin, rollup-plugin, peerDependencies, external, optimize, exclude |
+| # releases         | 5 |
+| # dependents       | 25 |
+| # downloads        | 624749 |
+| # stars            | 1 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/rollup-plugin-peer-deps-external)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+

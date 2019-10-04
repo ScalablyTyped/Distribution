@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2DefaultRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlockEgressOnlyGatewayId
+import typings.atPulumiAws.typesInputMod.ec2Ns.DefaultRouteTableRoute
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait DefaultRouteTableArgs extends js.Object {
     * A list of route objects. Their keys are documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val routes: js.UndefOr[Input[js.Array[Input[Anon_CidrBlockEgressOnlyGatewayId]]]] = js.undefined
+  val routes: js.UndefOr[Input[js.Array[Input[DefaultRouteTableRoute]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -32,7 +32,7 @@ object DefaultRouteTableArgs {
   def apply(
     defaultRouteTableId: Input[String],
     propagatingVgws: Input[js.Array[Input[String]]] = null,
-    routes: Input[js.Array[Input[Anon_CidrBlockEgressOnlyGatewayId]]] = null,
+    routes: Input[js.Array[Input[DefaultRouteTableRoute]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): DefaultRouteTableArgs = {
     val __obj = js.Dynamic.literal(defaultRouteTableId = defaultRouteTableId.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.neptuneParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ApplyMethodName
+import typings.atPulumiAws.typesInputMod.neptuneNs.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait ParameterGroupArgs extends js.Object {
   /**
     * A list of Neptune parameters to apply.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[Anon_ApplyMethodName]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -36,7 +36,7 @@ object ParameterGroupArgs {
     family: Input[String],
     description: Input[String] = null,
     name: Input[String] = null,
-    parameters: Input[js.Array[Input[Anon_ApplyMethodName]]] = null,
+    parameters: Input[js.Array[Input[ParameterGroupParameter]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): ParameterGroupArgs = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any])

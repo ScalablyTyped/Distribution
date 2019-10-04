@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ResolverEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IpIpId
+import typings.atPulumiAws.typesInputMod.route53Ns.ResolverEndpointIpAddress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait ResolverEndpointArgs extends js.Object {
     * The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs
     * to your network (for outbound endpoints) or on the way from your network to your VPCs (for inbound endpoints). Described below.
     */
-  val ipAddresses: Input[js.Array[Input[Anon_IpIpId]]]
+  val ipAddresses: Input[js.Array[Input[ResolverEndpointIpAddress]]]
   /**
     * The friendly name of the Route 53 Resolver endpoint.
     */
@@ -37,7 +37,7 @@ object ResolverEndpointArgs {
   @scala.inline
   def apply(
     direction: Input[String],
-    ipAddresses: Input[js.Array[Input[Anon_IpIpId]]],
+    ipAddresses: Input[js.Array[Input[ResolverEndpointIpAddress]]],
     securityGroupIds: Input[js.Array[Input[String]]],
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null

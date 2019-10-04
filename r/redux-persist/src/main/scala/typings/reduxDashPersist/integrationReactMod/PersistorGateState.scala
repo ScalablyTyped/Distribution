@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @see PersistGate */
 trait PersistorGateState extends js.Object {
   var bootstrapped: Boolean
 }

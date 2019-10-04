@@ -10,19 +10,20 @@ import typings.reactDashSelect.srcComponentsMenuMod.MenuListComponentProps
 import typings.reactDashSelect.srcComponentsMenuMod.NoticeProps
 import typings.reactDashSelect.srcSelectMod.default
 import typings.reactDashSelect.srcStateManagerMod.StateProps
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashSelectComponents extends reactDashSelectProps {
   @scala.inline
-  def Async[OptionType]: ComponentType[Props[OptionType]] = js.constructorOf[typings.reactDashSelect.asyncMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcAsyncMod.Props[OptionType]]]
+  def Async[OptionType /* <: OptionTypeBase */]: ComponentType[Props[OptionType]] = js.constructorOf[typings.reactDashSelect.asyncMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcAsyncMod.Props[OptionType]]]
   @scala.inline
-  def AsyncCreatable[OptionType]: ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.srcAsyncCreatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]]]
+  def AsyncCreatable[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.srcAsyncCreatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]]]
   @scala.inline
-  def AsyncDashCreatable[OptionType]: ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.asyncDashCreatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]]]
+  def AsyncDashCreatable[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.asyncDashCreatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcAsyncCreatableMod.Props[OptionType]]]
   @scala.inline
-  def Base[OptionType]: ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.baseMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]]]
+  def Base[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.baseMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]]]
   @scala.inline
   def ClearIndicator: ComponentType[IndicatorProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsIndicatorsMod.ClearIndicator].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsIndicatorsMod.IndicatorProps[js.Any]]]
   @scala.inline
@@ -30,7 +31,7 @@ object reactDashSelectComponents extends reactDashSelectProps {
   @scala.inline
   def Control: ComponentType[typings.reactDashSelect.srcComponentsControlMod.ControlProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsControlMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsControlMod.ControlProps[js.Any]]]
   @scala.inline
-  def Creatable[OptionType]: ComponentType[typings.reactDashSelect.srcCreatableMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.creatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcCreatableMod.Props[OptionType]]]
+  def Creatable[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcCreatableMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.creatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcCreatableMod.Props[OptionType]]]
   @scala.inline
   def DropdownIndicator: ComponentType[IndicatorProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsIndicatorsMod.DropdownIndicator].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsIndicatorsMod.IndicatorProps[js.Any]]]
   @scala.inline
@@ -51,13 +52,13 @@ object reactDashSelectComponents extends reactDashSelectProps {
   @scala.inline
   def LoadingMessage: ComponentType[NoticeProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.LoadingMessage].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMenuMod.NoticeProps[js.Any]]]
   @scala.inline
-  def Menu[OptionType]: ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuProps[OptionType]]]
+  def Menu[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuProps[OptionType]]]
   @scala.inline
   def MenuList: ComponentType[MenuListComponentProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.MenuList].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuListComponentProps[js.Any]]]
   @scala.inline
-  def MenuPortal[OptionType]: ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuPortalProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.MenuPortal[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuPortalProps[OptionType]]]
+  def MenuPortal[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuPortalProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.MenuPortal[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMenuMod.MenuPortalProps[OptionType]]]
   @scala.inline
-  def MultiValue[OptionType]: ComponentType[typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcComponentsMultiValueMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps[OptionType]]]
+  def MultiValue[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcComponentsMultiValueMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps[OptionType]]]
   @scala.inline
   def MultiValueContainer: ComponentType[
     typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueGenericProps[js.Any]
@@ -74,7 +75,7 @@ object reactDashSelectComponents extends reactDashSelectProps {
   ] = js.constructorOf[typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueLabel].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
   @scala.inline
-  def MultiValueRemove[OptionType]: ComponentType[
+  def MultiValueRemove[OptionType /* <: OptionTypeBase */]: ComponentType[
     typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueRemoveProps[OptionType]
   ] = js.constructorOf[typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueRemove[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueRemoveProps[OptionType]]]
@@ -85,18 +86,18 @@ object reactDashSelectComponents extends reactDashSelectProps {
   @scala.inline
   def Placeholder: ComponentType[typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsPlaceholderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps[js.Any]]]
   @scala.inline
-  def ReactDashSelect[OptionType, T /* <: default[OptionType] */]: ComponentType[
+  def ReactDashSelect[OptionType /* <: OptionTypeBase */, T /* <: default[OptionType] */]: ComponentType[
     StateProps[typings.reactDashSelect.srcSelectMod.Props[OptionType]] with typings.reactDashSelect.srcStateManagerMod.Props[OptionType] with typings.reactDashSelect.srcSelectMod.Props[OptionType]
   ] = js.constructorOf[typings.reactDashSelect.reactDashSelectMod.default[OptionType, T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashSelect.srcStateManagerMod.StateProps[typings.reactDashSelect.srcSelectMod.Props[OptionType]] with typings.reactDashSelect.srcStateManagerMod.Props[OptionType] with typings.reactDashSelect.srcSelectMod.Props[OptionType]]]
   @scala.inline
-  def Select[OptionType]: ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.srcSelectMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]]]
+  def Select[OptionType /* <: OptionTypeBase */]: ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]] = js.constructorOf[typings.reactDashSelect.srcSelectMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcSelectMod.Props[OptionType]]]
   @scala.inline
   def SelectContainer: ComponentType[ContainerProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsContainersMod.SelectContainer].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsContainersMod.ContainerProps[js.Any]]]
   @scala.inline
   def SingleValue: ComponentType[typings.reactDashSelect.srcComponentsSingleValueMod.SingleValueProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsSingleValueMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSelect.srcComponentsSingleValueMod.SingleValueProps[js.Any]]]
   @scala.inline
-  def StateManager[OptionType, T /* <: default[OptionType] */]: ComponentType[
+  def StateManager[OptionType /* <: OptionTypeBase */, T /* <: default[OptionType] */]: ComponentType[
     StateProps[typings.reactDashSelect.srcSelectMod.Props[OptionType]] with typings.reactDashSelect.srcStateManagerMod.Props[OptionType] with typings.reactDashSelect.srcSelectMod.Props[OptionType]
   ] = js.constructorOf[typings.reactDashSelect.srcStateManagerMod.StateManager[OptionType, T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashSelect.srcStateManagerMod.StateProps[typings.reactDashSelect.srcSelectMod.Props[OptionType]] with typings.reactDashSelect.srcStateManagerMod.Props[OptionType] with typings.reactDashSelect.srcSelectMod.Props[OptionType]]]

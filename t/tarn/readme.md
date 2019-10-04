@@ -1,7 +1,7 @@
 
 # Scala.js typings for tarn
 
-Typings are for version 1.1.5
+Typings are for version 2.0.0
 
 ## Library description:
 Simple and robust resource pool for node.js

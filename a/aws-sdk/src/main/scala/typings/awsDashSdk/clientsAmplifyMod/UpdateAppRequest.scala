@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait UpdateAppRequest extends js.Object {
   /**
+    *  Personal Access token for 3rd party source control system for an Amplify App, used to create webhook and read-only deploy key. Token is not stored. 
+    */
+  var accessToken: js.UndefOr[AccessToken] = js.undefined
+  /**
     *  Unique Id for an Amplify App. 
     */
   var appId: AppId
   /**
-    *  Automated branch creation config for the Amplify App. 
+    *  Automated branch creation branchConfig for the Amplify App. 
     */
   var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.undefined
   /**
@@ -58,15 +62,24 @@ trait UpdateAppRequest extends js.Object {
     */
   var name: js.UndefOr[Name] = js.undefined
   /**
+    *  OAuth token for 3rd party source control system for an Amplify App, used to create webhook and read-only deploy key. OAuth token is not stored. 
+    */
+  var oauthToken: js.UndefOr[OauthToken] = js.undefined
+  /**
     *  Platform for an Amplify App. 
     */
   var platform: js.UndefOr[Platform] = js.undefined
+  /**
+    *  Repository for an Amplify App 
+    */
+  var repository: js.UndefOr[Repository] = js.undefined
 }
 
 object UpdateAppRequest {
   @scala.inline
   def apply(
     appId: AppId,
+    accessToken: AccessToken = null,
     autoBranchCreationConfig: AutoBranchCreationConfig = null,
     autoBranchCreationPatterns: AutoBranchCreationPatterns = null,
     basicAuthCredentials: BasicAuthCredentials = null,
@@ -79,9 +92,12 @@ object UpdateAppRequest {
     environmentVariables: EnvironmentVariables = null,
     iamServiceRoleArn: ServiceRoleArn = null,
     name: Name = null,
-    platform: Platform = null
+    oauthToken: OauthToken = null,
+    platform: Platform = null,
+    repository: Repository = null
   ): UpdateAppRequest = {
     val __obj = js.Dynamic.literal(appId = appId)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (autoBranchCreationConfig != null) __obj.updateDynamic("autoBranchCreationConfig")(autoBranchCreationConfig)
     if (autoBranchCreationPatterns != null) __obj.updateDynamic("autoBranchCreationPatterns")(autoBranchCreationPatterns)
     if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials)
@@ -94,7 +110,9 @@ object UpdateAppRequest {
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
     if (iamServiceRoleArn != null) __obj.updateDynamic("iamServiceRoleArn")(iamServiceRoleArn)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken)
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (repository != null) __obj.updateDynamic("repository")(repository)
     __obj.asInstanceOf[UpdateAppRequest]
   }
 }

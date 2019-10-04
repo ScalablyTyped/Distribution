@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashNodeStrings {
   @js.native
-  sealed trait `1DOT2DOT9` extends js.Object
+  sealed trait `1DOT2DOT10` extends js.Object
   
   @js.native
   sealed trait Empty extends js.Object
@@ -114,7 +114,7 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait weightsDOTbin extends js.Object
   
   @scala.inline
-  def `1DOT2DOT9`: `1DOT2DOT9` = "1.2.9".asInstanceOf[`1DOT2DOT9`]
+  def `1DOT2DOT10`: `1DOT2DOT10` = "1.2.10".asInstanceOf[`1DOT2DOT10`]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline

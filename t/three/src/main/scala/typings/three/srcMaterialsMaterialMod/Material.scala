@@ -7,6 +7,8 @@ import typings.three.srcConstantsMod.BlendingSrcFactor
 import typings.three.srcConstantsMod.Colors
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcRenderersShadersShaderLibMod.Shader
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
@@ -103,10 +105,6 @@ class Material () extends EventDispatcher {
   	 */
   var isMaterial: Boolean = js.native
   /**
-  	 * Whether the material is affected by lights. Default is true.
-  	 */
-  var lights: Boolean = js.native
-  /**
   	 * Material name. Default is an empty string.
   	 */
   var name: String = js.native
@@ -148,6 +146,39 @@ class Material () extends EventDispatcher {
   	 * Default is THREE.FrontSide. Other options are THREE.BackSide and THREE.DoubleSide.
   	 */
   var side: Side = js.native
+  /**
+    * Which stencil operation to perform when the comparison function returns false. Default is {@link KeepStencilOp}. See the stencil operation constants for all possible values.
+    */
+  var stencilFail: StencilOp = js.native
+  /**
+    * The stencil comparison function to use. Default is {@link AlwaysStencilFunc}. See stencil operation constants for all possible values.
+    */
+  var stencilFunc: StencilFunc = js.native
+  /**
+    * The bit mask to use when comparing against or writing to the stencil buffer. Default is *0xFF*.
+    */
+  var stencilMask: Double = js.native
+  /**
+    * The value to use when performing stencil comparisons or stencil operations. Default is *0*.
+    */
+  var stencilRef: Double = js.native
+  /**
+    * Whether rendering this material has any effect on the stencil buffer. Default is *false*.
+    */
+  var stencilWrite: Boolean = js.native
+  /**
+    * Which stencil operation to perform when the comparison function returns true but the depth test fails. Default is {@link KeepStencilOp}. See the stencil operation constants for all possible values.
+    */
+  var stencilZFail: StencilOp = js.native
+  /**
+    * Which stencil operation to perform when the comparison function returns true and the depth test passes. Default is {@link KeepStencilOp}. See the stencil operation constants for all possible values.
+    */
+  var stencilZPass: StencilOp = js.native
+  /**
+  	 * Defines whether this material is tone mapped according to the renderer's toneMapping setting.
+  	 * Default is true.
+  	 */
+  var toneMapped: Boolean = js.native
   /**
   	 * Defines whether this material is transparent. This has an effect on rendering as transparent objects need special treatment and are rendered after non-transparent objects.
   	 * When set to true, the extent to which the material is transparent is controlled by setting it's .opacity property.
@@ -204,9 +235,5 @@ class Material () extends EventDispatcher {
   	 */
   def toJSON(): js.Any = js.native
   def toJSON(meta: js.Any): js.Any = js.native
-  /**
-  	 * Call .dispatchEvent ( { type: 'update' }) on the material.
-  	 */
-  def update(): Unit = js.native
 }
 

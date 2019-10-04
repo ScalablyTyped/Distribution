@@ -88,7 +88,7 @@ package object TabulatorNs {
     - js.Function5[
   / * cell * / typings.tabulatorDashTables.TabulatorNs.CellComponent, 
   / * onRendered * / typings.tabulatorDashTables.TabulatorNs.EmptyCallback, 
-  / * success * / typings.tabulatorDashTables.TabulatorNs.ValueVoidCallback, 
+  / * success * / typings.tabulatorDashTables.TabulatorNs.ValueBooleanCallback, 
   / * cancel * / typings.tabulatorDashTables.TabulatorNs.ValueVoidCallback, 
   / * editorParams * / js.Object, 
   typings.std.HTMLElement | typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`]
@@ -96,7 +96,7 @@ package object TabulatorNs {
   type Editor = _Editor | (js.Function5[
     /* cell */ CellComponent, 
     /* onRendered */ EmptyCallback, 
-    /* success */ ValueVoidCallback, 
+    /* success */ ValueBooleanCallback, 
     /* cancel */ ValueVoidCallback, 
     /* editorParams */ js.Object, 
     HTMLElement | `false`

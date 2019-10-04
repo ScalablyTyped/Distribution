@@ -1,6 +1,8 @@
 package typings.webpackDashPluginDashServe.webpackDashPluginDashServeMod
 
 import typings.connectDashHistoryDashApiDashFallback.connectDashHistoryDashApiDashFallbackMod.Options
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.^
 import typings.node.http2Mod.SecureServerOptions
 import typings.node.http2Mod.ServerOptions
@@ -22,7 +24,9 @@ trait WebpackPluginServeOptions extends js.Object {
   var https: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
   var liveReload: js.UndefOr[Boolean] = js.undefined
   var log: js.UndefOr[Anon_Debug] = js.undefined
-  var middleware: js.UndefOr[js.Function2[/* app */ ^[_, js.Object], /* builtins */ Builtins, Unit]] = js.undefined
+  var middleware: js.UndefOr[
+    js.Function2[/* app */ ^[DefaultState, DefaultContext], /* builtins */ Builtins, Unit]
+  ] = js.undefined
   var open: js.UndefOr[Boolean | Anon_App] = js.undefined
   var port: js.UndefOr[Double | js.Promise[Double]] = js.undefined
   var progress: js.UndefOr[Boolean | minimal] = js.undefined
@@ -43,7 +47,7 @@ object WebpackPluginServeOptions {
     https: typings.node.httpsMod.ServerOptions = null,
     liveReload: js.UndefOr[Boolean] = js.undefined,
     log: Anon_Debug = null,
-    middleware: (/* app */ ^[_, js.Object], /* builtins */ Builtins) => Unit = null,
+    middleware: (/* app */ ^[DefaultState, DefaultContext], /* builtins */ Builtins) => Unit = null,
     open: Boolean | Anon_App = null,
     port: Double | js.Promise[Double] = null,
     progress: Boolean | minimal = null,

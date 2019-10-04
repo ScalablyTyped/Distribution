@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ec2GetNetworkInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationIdAssociationId
-import typings.atPulumiAws.Anon_AttachmentId
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetNetworkInterfaceAssociation
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetNetworkInterfaceAttachment
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetNetworkInterfaceFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ trait GetNetworkInterfaceResult extends js.Object {
   /**
     * The association information for an Elastic IP address (IPv4) associated with the network interface. See supported fields below.
     */
-  val associations: js.Array[Anon_AllocationIdAssociationId]
-  val attachments: js.Array[Anon_AttachmentId]
+  val associations: js.Array[GetNetworkInterfaceAssociation]
+  val attachments: js.Array[GetNetworkInterfaceAttachment]
   /**
     * The Availability Zone.
     */
@@ -22,7 +22,7 @@ trait GetNetworkInterfaceResult extends js.Object {
     * Description of the network interface.
     */
   val description: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetNetworkInterfaceFilter]] = js.undefined
   val id: String
   /**
     * The type of interface.
@@ -77,8 +77,8 @@ trait GetNetworkInterfaceResult extends js.Object {
 object GetNetworkInterfaceResult {
   @scala.inline
   def apply(
-    associations: js.Array[Anon_AllocationIdAssociationId],
-    attachments: js.Array[Anon_AttachmentId],
+    associations: js.Array[GetNetworkInterfaceAssociation],
+    attachments: js.Array[GetNetworkInterfaceAttachment],
     availabilityZone: String,
     description: String,
     id: String,
@@ -94,7 +94,7 @@ object GetNetworkInterfaceResult {
     subnetId: String,
     tags: StringDictionary[js.Any],
     vpcId: String,
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetNetworkInterfaceFilter] = null
   ): GetNetworkInterfaceResult = {
     val __obj = js.Dynamic.literal(associations = associations, attachments = attachments, availabilityZone = availabilityZone, description = description, id = id, interfaceType = interfaceType, ipv6Addresses = ipv6Addresses, macAddress = macAddress, ownerId = ownerId, privateDnsName = privateDnsName, privateIp = privateIp, privateIps = privateIps, requesterId = requesterId, securityGroups = securityGroups, subnetId = subnetId, tags = tags, vpcId = vpcId)
     if (filters != null) __obj.updateDynamic("filters")(filters)

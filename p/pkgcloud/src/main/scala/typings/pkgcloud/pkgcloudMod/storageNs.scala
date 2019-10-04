@@ -1,7 +1,7 @@
 package typings.pkgcloud.pkgcloudMod
 
-import typings.node.NodeJSNs.ReadStream
-import typings.node.NodeJSNs.WriteStream
+import typings.node.processMod.Global.NodeJSNs.ReadStream
+import typings.node.processMod.Global.NodeJSNs.WriteStream
 import typings.pkgcloud.pkgcloudMod.storageNs.Client
 import typings.pkgcloud.pkgcloudMod.storageNs.Container
 import typings.pkgcloud.pkgcloudMod.storageNs.File

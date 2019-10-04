@@ -14,6 +14,10 @@ trait ModifyDBInstanceMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
+    * Indicates the certificate that needs to be associated with the instance.
+    */
+  var CACertificateIdentifier: js.UndefOr[String] = js.undefined
+  /**
     * The new compute and memory capacity of the DB instance; for example, db.r5.large. Not all DB instance classes are available in all AWS Regions.  If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is specified as true for this request.  Default: Uses existing setting.
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
@@ -41,6 +45,7 @@ object ModifyDBInstanceMessage {
     DBInstanceIdentifier: String,
     ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
     AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    CACertificateIdentifier: String = null,
     DBInstanceClass: String = null,
     NewDBInstanceIdentifier: String = null,
     PreferredMaintenanceWindow: String = null,
@@ -49,6 +54,7 @@ object ModifyDBInstanceMessage {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
+    if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
     if (NewDBInstanceIdentifier != null) __obj.updateDynamic("NewDBInstanceIdentifier")(NewDBInstanceIdentifier)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)

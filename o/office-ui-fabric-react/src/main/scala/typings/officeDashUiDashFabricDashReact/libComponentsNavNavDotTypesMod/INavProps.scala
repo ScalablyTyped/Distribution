@@ -31,6 +31,8 @@ trait INavProps extends js.Object {
   /**
     * (Optional) The nav container aria label. The link name is prepended to this label.
     * If not provided, the aria label will default to the link name.
+    *
+    * @deprecated - Use expandAriaLabel and collapseAriaLabel on groups instead
     */
   var expandButtonAriaLabel: js.UndefOr[String] = js.undefined
   /**

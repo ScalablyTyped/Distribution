@@ -4,6 +4,7 @@ import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.sha1
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.sha256
 import typings.appDashBuilderDashLib.outCodeSignWindowsCodeSignMod.CustomWindowsSign
 import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetConfigType
 import typings.appDashBuilderDashLib.outOptionsFileAssociationMod.FileAssociation
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.AsarOptions
@@ -11,7 +12,6 @@ import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.F
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.Protocol
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.ReleaseInfo
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.chromaDashJs.chromaDashJsStrings.lab
   - typings.chromaDashJs.chromaDashJsStrings.lch
   - typings.chromaDashJs.chromaDashJsStrings.hcl
+  - typings.chromaDashJs.chromaDashJsStrings.lrgb
 */
 trait InterpolationMode extends js.Object
 

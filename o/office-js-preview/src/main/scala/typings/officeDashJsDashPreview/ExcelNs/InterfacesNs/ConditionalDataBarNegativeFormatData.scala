@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "conditionalDataBarNegativeFormat.toJSON()". */
+/** An interface describing the data returned by calling `conditionalDataBarNegativeFormat.toJSON()`. */
 trait ConditionalDataBarNegativeFormatData extends js.Object {
   /**
     *

@@ -36,7 +36,7 @@ class Cookies () extends EventEmitter {
     * Sends a request to get all cookies matching filter, and resolves a promise with
     * the response.
     */
-  def get(filter: Filter): js.Promise[Cookie] = js.native
+  def get(filter: Filter): js.Promise[js.Array[Cookie]] = js.native
   /**
     * Sends a request to get all cookies matching filter, callback will be called with
     * callback(error, cookies) on complete. Deprecated Soon

@@ -42,6 +42,7 @@ object ^ extends js.Object {
   def find(path: String, options: WalkEventListener): WalkEmitter = js.native
   def find(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = js.native
   def sync(path: String): js.Array[String] = js.native
+  def sync(path: String, eventListener: WalkEventListener): js.Array[String] = js.native
   def sync(path: String, options: WalkOptions with Anon_FalseReturnobject): js.Array[String] = js.native
   def sync(path: String, options: WalkOptions with Anon_FalseReturnobject, eventListener: WalkEventListener): js.Array[String] = js.native
   @JSName("sync")

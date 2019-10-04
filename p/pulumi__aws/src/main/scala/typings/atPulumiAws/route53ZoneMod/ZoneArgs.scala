@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ZoneMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_VpcIdVpcRegion
+import typings.atPulumiAws.typesInputMod.route53Ns.ZoneVpc
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait ZoneArgs extends js.Object {
   /**
     * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any [`aws.route53.ZoneAssociation` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
     */
-  val vpcs: js.UndefOr[Input[js.Array[Input[Anon_VpcIdVpcRegion]]]] = js.undefined
+  val vpcs: js.UndefOr[Input[js.Array[Input[ZoneVpc]]]] = js.undefined
 }
 
 object ZoneArgs {
@@ -42,7 +42,7 @@ object ZoneArgs {
     forceDestroy: Input[Boolean] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
-    vpcs: Input[js.Array[Input[Anon_VpcIdVpcRegion]]] = null
+    vpcs: Input[js.Array[Input[ZoneVpc]]] = null
   ): ZoneArgs = {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])

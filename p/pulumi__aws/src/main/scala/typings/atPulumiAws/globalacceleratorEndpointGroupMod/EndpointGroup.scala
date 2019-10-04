@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorEndpointGroupMod
 
-import typings.atPulumiAws.Anon_EndpointId
+import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.EndpointGroupEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,7 +25,7 @@ class EndpointGroup protected () extends CustomResource {
   /**
     * The list of endpoint objects. Fields documented below.
     */
-  val endpointConfigurations: Output[js.UndefOr[js.Array[Anon_EndpointId]]] = js.native
+  val endpointConfigurations: Output[js.UndefOr[js.Array[EndpointGroupEndpointConfiguration]]] = js.native
   val endpointGroupRegion: Output[String] = js.native
   /**
     * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.

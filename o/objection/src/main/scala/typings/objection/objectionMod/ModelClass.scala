@@ -40,7 +40,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var pickJsonSchemaProperties: Boolean = js.native
   var propRefRegex: RegExp = js.native
   @JSName("raw")
-  var raw_Original: RawBuilder[_, js.Array[_]] = js.native
+  var raw_Original: RawBuilder[_, _] = js.native
   var relatedFindQueryMutates: Boolean = js.native
   var relatedInsertQueryMutates: Boolean = js.native
   var relationMappings: RelationMappings | js.Function0[RelationMappings] = js.native

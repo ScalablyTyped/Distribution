@@ -22,7 +22,10 @@ package object plotlyDotJsMod {
   import typings.std.Uint8ClampedArray
 
   type ButtonClickEvent = js.Function2[/* gd */ PlotlyHTMLElement, /* ev */ MouseEvent, Unit]
-  type Color = String | (js.Array[js.UndefOr[(js.Array[js.UndefOr[String | Null]]) | Null | String]])
+  type Color = String | Double | (js.Array[
+    js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String]
+  ])
+  type ColorScale = String | (js.Array[String | (js.Tuple2[Double, String])])
   type Data = Partial[PlotData]
   type DataTransform = Partial[Transform]
   type Datum = String | Double | Date | Null

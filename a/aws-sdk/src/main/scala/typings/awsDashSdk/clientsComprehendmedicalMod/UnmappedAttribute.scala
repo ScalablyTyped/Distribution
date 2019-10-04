@@ -10,7 +10,7 @@ trait UnmappedAttribute extends js.Object {
     */
   var Attribute: js.UndefOr[typings.awsDashSdk.clientsComprehendmedicalMod.Attribute] = js.undefined
   /**
-    *  The type of the attribute, could be one of the following values: "MEDICATION", "MEDICAL_CONDITION", "ANATOMY", "TEST_AND_TREATMENT_PROCEDURE" or "PERSONAL_HEALTH_INFORMATION". 
+    *  The type of the attribute, could be one of the following values: "MEDICATION", "MEDICAL_CONDITION", "ANATOMY", "TEST_AND_TREATMENT_PROCEDURE" or "PROTECTED_HEALTH_INFORMATION". 
     */
   var Type: js.UndefOr[EntityType] = js.undefined
 }

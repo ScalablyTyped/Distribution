@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sourcemapped-stacktrace" : "1.1.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sourcemapped-stacktrace" : "1.1.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

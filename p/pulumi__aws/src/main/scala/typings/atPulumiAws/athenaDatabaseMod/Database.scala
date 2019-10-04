@@ -1,6 +1,6 @@
 package typings.atPulumiAws.athenaDatabaseMod
 
-import typings.atPulumiAws.Anon_EncryptionOption
+import typings.atPulumiAws.typesOutputMod.athenaNs.DatabaseEncryptionConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class Database protected () extends CustomResource {
   /**
     * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryptionConfiguration` block is documented below.
     */
-  val encryptionConfiguration: Output[js.UndefOr[Anon_EncryptionOption]] = js.native
+  val encryptionConfiguration: Output[js.UndefOr[DatabaseEncryptionConfiguration]] = js.native
   /**
     * A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.
     */

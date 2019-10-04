@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-json-schema
 
-Typings are for version 1.2
+Typings are for version 2.1
 
 ## Library description:
 JSON schema matcher for jest

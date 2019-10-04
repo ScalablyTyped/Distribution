@@ -60,6 +60,18 @@ trait GetBucketObjectResult extends js.Object {
     * A map of metadata stored with the object in S3
     */
   val metadata: StringDictionary[js.Any]
+  /**
+    * Indicates whether this object has an active [legal hold](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-legal-holds). This field is only returned if you have permission to view an object's legal hold status.
+    */
+  val objectLockLegalHoldStatus: String
+  /**
+    * The object lock [retention mode](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-modes) currently in place for this object.
+    */
+  val objectLockMode: String
+  /**
+    * The date and time when this object's object lock will expire.
+    */
+  val objectLockRetainUntilDate: String
   val range: js.UndefOr[String] = js.undefined
   /**
     * If the object is stored using server-side encryption (KMS or Amazon S3-managed encryption key), this field includes the chosen encryption and algorithm used.
@@ -105,6 +117,9 @@ object GetBucketObjectResult {
     key: String,
     lastModified: String,
     metadata: StringDictionary[js.Any],
+    objectLockLegalHoldStatus: String,
+    objectLockMode: String,
+    objectLockRetainUntilDate: String,
     serverSideEncryption: String,
     sseKmsKeyId: String,
     storageClass: String,
@@ -113,7 +128,7 @@ object GetBucketObjectResult {
     websiteRedirectLocation: String,
     range: String = null
   ): GetBucketObjectResult = {
-    val __obj = js.Dynamic.literal(body = body, bucket = bucket, cacheControl = cacheControl, contentDisposition = contentDisposition, contentEncoding = contentEncoding, contentLanguage = contentLanguage, contentLength = contentLength, contentType = contentType, etag = etag, expiration = expiration, expires = expires, id = id, key = key, lastModified = lastModified, metadata = metadata, serverSideEncryption = serverSideEncryption, sseKmsKeyId = sseKmsKeyId, storageClass = storageClass, tags = tags, versionId = versionId, websiteRedirectLocation = websiteRedirectLocation)
+    val __obj = js.Dynamic.literal(body = body, bucket = bucket, cacheControl = cacheControl, contentDisposition = contentDisposition, contentEncoding = contentEncoding, contentLanguage = contentLanguage, contentLength = contentLength, contentType = contentType, etag = etag, expiration = expiration, expires = expires, id = id, key = key, lastModified = lastModified, metadata = metadata, objectLockLegalHoldStatus = objectLockLegalHoldStatus, objectLockMode = objectLockMode, objectLockRetainUntilDate = objectLockRetainUntilDate, serverSideEncryption = serverSideEncryption, sseKmsKeyId = sseKmsKeyId, storageClass = storageClass, tags = tags, versionId = versionId, websiteRedirectLocation = websiteRedirectLocation)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[GetBucketObjectResult]
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "eslint-plugin-react" : "7.14.3"
+      "eslint-plugin-react" : "7.15.1"
     }
   ],
   "test-dependencies" : [
     {
-      "eslint-plugin-react" : "7.14.3"
+      "eslint-plugin-react" : "7.15.1"
     }
   ],
   "compile-devDependencies" : [

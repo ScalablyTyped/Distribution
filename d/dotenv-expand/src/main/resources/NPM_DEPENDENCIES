@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dotenv-expand" : "4.2.0"
+      "dotenv-expand" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dotenv-expand" : "4.2.0"
+      "dotenv-expand" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

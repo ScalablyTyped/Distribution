@@ -14,7 +14,7 @@ trait AckableIncomingResponseWithSession extends IncomingResponse {
   val session: Session = js.native
   /**
     * Send an ACK to acknowledge this response.
-    * @param options Request options bucket.
+    * @param options - Request options bucket.
     */
   def ack(): OutgoingAckRequest = js.native
   def ack(options: RequestOptions): OutgoingAckRequest = js.native

@@ -1,6 +1,6 @@
 package typings.preactDashI18n.preactDashI18nMod
 
-import typings.preact.preactMod.Component
+import typings.preact.srcMod.Component
 import typings.preactDashI18n.Anon_Definition
 import scala.scalajs.js
 import scala.scalajs.js.`|`

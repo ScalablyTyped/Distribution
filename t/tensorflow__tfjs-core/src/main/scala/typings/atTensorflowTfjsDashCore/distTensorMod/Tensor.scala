@@ -616,6 +616,7 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def prod[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
   def reciprocal[T /* <: Tensor[Rank] */](`this`: T): T = js.native
   def relu[T /* <: Tensor[Rank] */](`this`: T): T = js.native
+  def relu6[T /* <: Tensor[Rank] */](`this`: T): T = js.native
   /**
     * Reshapes the tensor into the provided shape.
     * See `tf.reshape` for more details.

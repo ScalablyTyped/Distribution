@@ -37,8 +37,8 @@ trait PersistentVolumeSpec extends js.Object {
     */
   val cephfs: CephFSPersistentVolumeSource
   /**
-    * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
-    * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+    * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info:
+    * https://examples.k8s.io/mysql-cinder-pd/README.md
     */
   val cinder: CinderPersistentVolumeSource
   /**
@@ -75,8 +75,7 @@ trait PersistentVolumeSpec extends js.Object {
   val gcePersistentDisk: GCEPersistentDiskVolumeSource
   /**
     * Glusterfs represents a Glusterfs volume that is attached to a host and exposed to the pod.
-    * Provisioned by an admin. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
+    * Provisioned by an admin. More info: https://examples.k8s.io/volumes/glusterfs/README.md
     */
   val glusterfs: GlusterfsPersistentVolumeSource
   /**
@@ -134,7 +133,7 @@ trait PersistentVolumeSpec extends js.Object {
   val quobyte: QuobyteVolumeSource
   /**
     * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
-    * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
+    * info: https://examples.k8s.io/volumes/rbd/README.md
     */
   val rbd: RBDPersistentVolumeSource
   /**
@@ -148,8 +147,7 @@ trait PersistentVolumeSpec extends js.Object {
   val storageClassName: String
   /**
     * StorageOS represents a StorageOS volume that is attached to the kubelet's host machine and
-    * mounted into the pod More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/storageos/README.md
+    * mounted into the pod More info: https://examples.k8s.io/volumes/storageos/README.md
     */
   val storageos: StorageOSPersistentVolumeSource
   /**

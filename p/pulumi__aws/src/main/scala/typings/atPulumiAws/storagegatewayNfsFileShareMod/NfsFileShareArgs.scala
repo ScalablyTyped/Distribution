@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayNfsFileShareMod
 
-import typings.atPulumiAws.Anon_DirectoryModeFileMode
+import typings.atPulumiAws.typesInputMod.storagegatewayNs.NfsFileShareNfsFileShareDefaults
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ trait NfsFileShareArgs extends js.Object {
   /**
     * Nested argument with file share default values. More information below.
     */
-  val nfsFileShareDefaults: js.UndefOr[Input[Anon_DirectoryModeFileMode]] = js.undefined
+  val nfsFileShareDefaults: js.UndefOr[Input[NfsFileShareNfsFileShareDefaults]] = js.undefined
   /**
     * Access Control List permission for S3 bucket objects. Defaults to `private`.
     */
@@ -72,7 +72,7 @@ object NfsFileShareArgs {
     guessMimeTypeEnabled: Input[Boolean] = null,
     kmsEncrypted: Input[Boolean] = null,
     kmsKeyArn: Input[String] = null,
-    nfsFileShareDefaults: Input[Anon_DirectoryModeFileMode] = null,
+    nfsFileShareDefaults: Input[NfsFileShareNfsFileShareDefaults] = null,
     objectAcl: Input[String] = null,
     readOnly: Input[Boolean] = null,
     requesterPays: Input[Boolean] = null,

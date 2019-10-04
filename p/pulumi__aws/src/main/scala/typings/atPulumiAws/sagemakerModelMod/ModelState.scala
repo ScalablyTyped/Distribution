@@ -1,8 +1,9 @@
 package typings.atPulumiAws.sagemakerModelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ContainerHostnameEnvironment
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetsArrayInput
+import typings.atPulumiAws.typesInputMod.sagemakerNs.ModelContainer
+import typings.atPulumiAws.typesInputMod.sagemakerNs.ModelPrimaryContainer
+import typings.atPulumiAws.typesInputMod.sagemakerNs.ModelVpcConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ trait ModelState extends js.Object {
   /**
     * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
     */
-  val containers: js.UndefOr[Input[js.Array[Input[Anon_ContainerHostnameEnvironment]]]] = js.undefined
+  val containers: js.UndefOr[Input[js.Array[Input[ModelContainer]]]] = js.undefined
   /**
     * Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
     */
@@ -32,7 +33,7 @@ trait ModelState extends js.Object {
   /**
     * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
     */
-  val primaryContainer: js.UndefOr[Input[Anon_ContainerHostnameEnvironment]] = js.undefined
+  val primaryContainer: js.UndefOr[Input[ModelPrimaryContainer]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -40,20 +41,20 @@ trait ModelState extends js.Object {
   /**
     * Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
     */
-  val vpcConfig: js.UndefOr[Input[Anon_SecurityGroupIdsSubnetsArrayInput]] = js.undefined
+  val vpcConfig: js.UndefOr[Input[ModelVpcConfig]] = js.undefined
 }
 
 object ModelState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    containers: Input[js.Array[Input[Anon_ContainerHostnameEnvironment]]] = null,
+    containers: Input[js.Array[Input[ModelContainer]]] = null,
     enableNetworkIsolation: Input[Boolean] = null,
     executionRoleArn: Input[String] = null,
     name: Input[String] = null,
-    primaryContainer: Input[Anon_ContainerHostnameEnvironment] = null,
+    primaryContainer: Input[ModelPrimaryContainer] = null,
     tags: Input[StringDictionary[_]] = null,
-    vpcConfig: Input[Anon_SecurityGroupIdsSubnetsArrayInput] = null
+    vpcConfig: Input[ModelVpcConfig] = null
   ): ModelState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod
 
 import typings.react.reactMod.Global.JSXNs.Element
+import typings.reactDashNative.reactDashNativeMod.FlatListProps
 import typings.reactDashNative.reactDashNativeMod.KeyboardAvoidingView
 import typings.reactDashNative.reactDashNativeMod.ListViewProps
 import typings.reactDashNative.reactDashNativeMod.ModalProps
@@ -26,13 +27,13 @@ trait ModalFilterPickerProps[T /* <: ModalFilterPickerOption */] extends js.Obje
   var filterTextInputStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var keyboardShouldPersistTaps: js.UndefOr[never | always | handle] = js.undefined
   var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var listViewProps: js.UndefOr[Partial[ListViewProps]] = js.undefined
+  var listViewProps: js.UndefOr[Partial[ListViewProps | FlatListProps[T]]] = js.undefined
   var modal: js.UndefOr[ModalProps] = js.undefined
   var noResultsText: js.UndefOr[String] = js.undefined
   var optionTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var options: js.Array[T]
   // styling props
-  var overlayStyle: js.UndefOr[StyleProp[KeyboardAvoidingView]] = js.undefined
+  var overlayStyle: js.UndefOr[StyleProp[KeyboardAvoidingView | ViewStyle]] = js.undefined
   var placeholderText: js.UndefOr[String] = js.undefined
   var placeholderTextColor: js.UndefOr[String] = js.undefined
   var renderCancelButton: js.UndefOr[js.Function0[Element]] = js.undefined
@@ -64,11 +65,11 @@ object ModalFilterPickerProps {
     filterTextInputStyle: StyleProp[TextStyle] = null,
     keyboardShouldPersistTaps: never | always | handle = null,
     listContainerStyle: StyleProp[ViewStyle] = null,
-    listViewProps: Partial[ListViewProps] = null,
+    listViewProps: Partial[ListViewProps | FlatListProps[T]] = null,
     modal: ModalProps = null,
     noResultsText: String = null,
     optionTextStyle: StyleProp[TextStyle] = null,
-    overlayStyle: StyleProp[KeyboardAvoidingView] = null,
+    overlayStyle: StyleProp[KeyboardAvoidingView | ViewStyle] = null,
     placeholderText: String = null,
     placeholderTextColor: String = null,
     renderCancelButton: () => Element = null,

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the HeaderFooter object, for use in "headerFooter.set({ ... })". */
+/** An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`. */
 trait HeaderFooterUpdateData extends js.Object {
   /**
     *

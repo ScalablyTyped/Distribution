@@ -37,6 +37,9 @@ object rollupStrings {
   sealed trait esm extends ModuleFormat
   
   @js.native
+  sealed trait hidden extends js.Object
+  
+  @js.native
   sealed trait iife extends ModuleFormat
   
   @js.native
@@ -83,6 +86,8 @@ object rollupStrings {
   def es: es = "es".asInstanceOf[es]
   @scala.inline
   def esm: esm = "esm".asInstanceOf[esm]
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
   def iife: iife = "iife".asInstanceOf[iife]
   @scala.inline

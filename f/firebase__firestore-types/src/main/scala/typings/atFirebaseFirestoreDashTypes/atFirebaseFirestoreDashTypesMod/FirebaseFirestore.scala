@@ -1,5 +1,6 @@
 package typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod
 
+import typings.atFirebaseFirestoreDashTypes.Anon_Complete
 import typings.atFirebaseFirestoreDashTypes.Anon_Delete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -111,6 +112,37 @@ class FirebaseFirestore protected () extends js.Object {
     */
   def enablePersistence(): js.Promise[Unit] = js.native
   def enablePersistence(settings: PersistenceSettings): js.Promise[Unit] = js.native
+  /**
+    * Attaches a listener for a snapshots-in-sync event. The snapshots-in-sync
+    * event indicates that all listeners affected by a given change have fired,
+    * even if a single server-generated change affects multiple listeners.
+    *
+    * NOTE: The snapshots-in-sync event only indicates that listeners are in sync
+    * with each other, but does not relate to whether those snapshots are in sync
+    * with the server. Use SnapshotMetadata in the individual listeners to
+    * determine if a snapshot is from the cache or the server.
+    *
+    * @param observer A single object containing `next` and `error` callbacks.
+    * @return An unsubscribe function that can be called to cancel the snapshot
+    * listener.
+    */
+  def onSnapshotsInSync(observer: Anon_Complete): js.Function0[Unit] = js.native
+  /**
+    * Attaches a listener for a snapshots-in-sync event. The snapshots-in-sync
+    * event indicates that all listeners affected by a given change have fired,
+    * even if a single server-generated change affects multiple listeners.
+    *
+    * NOTE: The snapshots-in-sync event only indicates that listeners are in sync
+    * with each other, but does not relate to whether those snapshots are in sync
+    * with the server. Use SnapshotMetadata in the individual listeners to
+    * determine if a snapshot is from the cache or the server.
+    *
+    * @param onSync A callback to be called every time all snapshot listeners are
+    * in sync with each other.
+    * @return An unsubscribe function that can be called to cancel the snapshot
+    * listener.
+    */
+  def onSnapshotsInSync(onSync: js.Function0[Unit]): js.Function0[Unit] = js.native
   /**
     * Executes the given updateFunction and then attempts to commit the
     * changes applied within the transaction. If any document read within the

@@ -1,5 +1,8 @@
 package typings.atPollyjsCore
 
+import typings.atPollyjsCore.atPollyjsCoreMod.ACTION
+import typings.atPollyjsCore.atPollyjsCoreMod.EXPIRY_STRATEGY
+import typings.atPollyjsCore.atPollyjsCoreMod.MODE
 import typings.atPollyjsCore.atPollyjsCoreMod.PollyEvent
 import typings.atPollyjsCore.atPollyjsCoreMod.RecordingRouteEvent
 import typings.atPollyjsCore.atPollyjsCoreMod.ResponseRouteEvent
@@ -21,13 +24,29 @@ object atPollyjsCoreStrings {
   sealed trait create extends PollyEvent
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends EXPIRY_STRATEGY
   
   @js.native
-  sealed trait record extends js.Object
+  sealed trait intercept extends ACTION
+  
+  @js.native
+  sealed trait passthrough
+    extends ACTION
+       with MODE
+  
+  @js.native
+  sealed trait record
+    extends ACTION
+       with EXPIRY_STRATEGY
+       with MODE
   
   @js.native
   sealed trait register extends PollyEvent
+  
+  @js.native
+  sealed trait replay
+    extends ACTION
+       with MODE
   
   @js.native
   sealed trait request extends js.Object
@@ -39,7 +58,10 @@ object atPollyjsCoreStrings {
   sealed trait stop extends PollyEvent
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait stopped extends MODE
+  
+  @js.native
+  sealed trait warn extends EXPIRY_STRATEGY
   
   @scala.inline
   def beforePersist: beforePersist = "beforePersist".asInstanceOf[beforePersist]
@@ -52,15 +74,23 @@ object atPollyjsCoreStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def intercept: intercept = "intercept".asInstanceOf[intercept]
+  @scala.inline
+  def passthrough: passthrough = "passthrough".asInstanceOf[passthrough]
+  @scala.inline
   def record: record = "record".asInstanceOf[record]
   @scala.inline
   def register: register = "register".asInstanceOf[register]
+  @scala.inline
+  def replay: replay = "replay".asInstanceOf[replay]
   @scala.inline
   def request: request = "request".asInstanceOf[request]
   @scala.inline
   def response: response = "response".asInstanceOf[response]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def stopped: stopped = "stopped".asInstanceOf[stopped]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

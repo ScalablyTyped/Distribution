@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-dependency-injection
 
-Typings are for version 1.4.2
+Typings are for version 1.5.1
 
 ## Library description:
 A lightweight, extensible dependency injection container for JavaScript.

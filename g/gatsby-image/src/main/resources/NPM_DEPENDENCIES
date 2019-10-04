@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby-image" : "2.2.20"
+      "gatsby-image" : "2.2.23"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby-image" : "2.2.20"
+      "gatsby-image" : "2.2.23"
     }
   ],
   "compile-devDependencies" : [

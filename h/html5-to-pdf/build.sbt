@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "html5-to-pdf"
-version := "3.1-dt-20190329Z-01c139"
+version := "3.1-dt-20190329Z-e47ce4"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
-  "org.scalablytyped" %%% "puppeteer" % "1.19-dt-20190812Z-4f9d4d",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
+  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191003Z-a7485a",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

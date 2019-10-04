@@ -70,6 +70,10 @@ trait DescribeBrokerResponse extends js.Object {
     */
   var PendingEngineVersion: js.UndefOr[__string] = js.undefined
   /**
+    * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
+    */
+  var PendingHostInstanceType: js.UndefOr[__string] = js.undefined
+  /**
     * The list of pending security groups to authorize connections to brokers.
     */
   var PendingSecurityGroups: js.UndefOr[__listOf__string] = js.undefined
@@ -114,6 +118,7 @@ object DescribeBrokerResponse {
     Logs: LogsSummary = null,
     MaintenanceWindowStartTime: WeeklyStartTime = null,
     PendingEngineVersion: __string = null,
+    PendingHostInstanceType: __string = null,
     PendingSecurityGroups: __listOf__string = null,
     PubliclyAccessible: js.UndefOr[__boolean] = js.undefined,
     SecurityGroups: __listOf__string = null,
@@ -138,6 +143,7 @@ object DescribeBrokerResponse {
     if (Logs != null) __obj.updateDynamic("Logs")(Logs)
     if (MaintenanceWindowStartTime != null) __obj.updateDynamic("MaintenanceWindowStartTime")(MaintenanceWindowStartTime)
     if (PendingEngineVersion != null) __obj.updateDynamic("PendingEngineVersion")(PendingEngineVersion)
+    if (PendingHostInstanceType != null) __obj.updateDynamic("PendingHostInstanceType")(PendingHostInstanceType)
     if (PendingSecurityGroups != null) __obj.updateDynamic("PendingSecurityGroups")(PendingSecurityGroups)
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)

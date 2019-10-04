@@ -17,6 +17,7 @@ object ^ extends js.Object {
     iconClassName: js.UndefOr[scala.Nothing],
     menuIconClassName: js.UndefOr[scala.Nothing],
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean
   ): IButtonClassNames = js.native
@@ -28,6 +29,7 @@ object ^ extends js.Object {
     iconClassName: js.UndefOr[scala.Nothing],
     menuIconClassName: js.UndefOr[scala.Nothing],
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean,
     isSplit: Boolean
@@ -40,6 +42,7 @@ object ^ extends js.Object {
     iconClassName: js.UndefOr[scala.Nothing],
     menuIconClassName: String,
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean
   ): IButtonClassNames = js.native
@@ -51,6 +54,7 @@ object ^ extends js.Object {
     iconClassName: js.UndefOr[scala.Nothing],
     menuIconClassName: String,
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean,
     isSplit: Boolean
@@ -63,6 +67,7 @@ object ^ extends js.Object {
     iconClassName: String,
     menuIconClassName: js.UndefOr[scala.Nothing],
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean
   ): IButtonClassNames = js.native
@@ -74,6 +79,7 @@ object ^ extends js.Object {
     iconClassName: String,
     menuIconClassName: js.UndefOr[scala.Nothing],
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean,
     isSplit: Boolean
@@ -86,6 +92,7 @@ object ^ extends js.Object {
     iconClassName: String,
     menuIconClassName: String,
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean
   ): IButtonClassNames = js.native
@@ -97,6 +104,7 @@ object ^ extends js.Object {
     iconClassName: String,
     menuIconClassName: String,
     disabled: Boolean,
+    hasMenu: Boolean,
     checked: Boolean,
     expanded: Boolean,
     isSplit: Boolean

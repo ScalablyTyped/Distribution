@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 trait TypeofClassPopup
   extends Instantiable1[/* element */ Element, Popup]
      with Instantiable2[/* element */ Element, /* options */ PopupOptions, Popup] {
+  var TabKeyTrap: js.Any = js.native
   var fn: Popup = js.native
   def extend(proto: js.Object): Popup = js.native
 }

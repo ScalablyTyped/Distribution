@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Keyboard
+  * @extends pc.EventHandler
   * @classdesc A Keyboard device bound to an Element. Allows you to detect the state of the key presses.
   * Note, Keyboard object must be attached to an Element before it can detect any key presses.
   * @description Create a new Keyboard object
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.Keyboard")
 @js.native
-class Keyboard () extends js.Object {
+class Keyboard () extends EventHandler {
   def this(element: Element) = this()
   def this(element: Window) = this()
   def this(element: Element, options: Anon_PreventDefault) = this()

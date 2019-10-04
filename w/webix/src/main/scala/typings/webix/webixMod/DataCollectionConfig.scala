@@ -17,7 +17,7 @@ trait DataCollectionConfig extends js.Object {
   var ready: js.UndefOr[WebixCallback] = js.undefined
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   var rules: js.UndefOr[js.Any] = js.undefined
-  var save: js.UndefOr[String] = js.undefined
+  var save: js.UndefOr[js.Any] = js.undefined
   var scheme: js.UndefOr[js.Any] = js.undefined
   var url: js.UndefOr[js.Any] = js.undefined
   var view: js.UndefOr[String] = js.undefined
@@ -38,7 +38,7 @@ object DataCollectionConfig {
     ready: WebixCallback = null,
     removeMissed: js.UndefOr[Boolean] = js.undefined,
     rules: js.Any = null,
-    save: String = null,
+    save: js.Any = null,
     scheme: js.Any = null,
     url: js.Any = null,
     view: String = null

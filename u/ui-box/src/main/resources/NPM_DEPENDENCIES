@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ui-box" : "2.1.1"
+      "ui-box" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ui-box" : "2.1.1"
+      "ui-box" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

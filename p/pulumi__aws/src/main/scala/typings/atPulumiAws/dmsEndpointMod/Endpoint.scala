@@ -1,8 +1,8 @@
 package typings.atPulumiAws.dmsEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AuthMechanism
-import typings.atPulumiAws.Anon_BucketFolder
+import typings.atPulumiAws.typesOutputMod.dmsNs.EndpointMongodbSettings
+import typings.atPulumiAws.typesOutputMod.dmsNs.EndpointS3Settings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -59,7 +59,7 @@ class Endpoint protected () extends CustomResource {
   /**
     * Settings for the source MongoDB endpoint. Available settings are `authType` (default: `password`), `authMechanism` (default: `default`), `nestingLevel` (default: `none`), `extractDocId` (default: `false`), `docsToInvestigate` (default: `1000`) and `authSource` (default: `admin`). For more details, see [Using MongoDB as a Source for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB.html).
     */
-  val mongodbSettings: Output[js.UndefOr[Anon_AuthMechanism]] = js.native
+  val mongodbSettings: Output[js.UndefOr[EndpointMongodbSettings]] = js.native
   /**
     * The password to be used to login to the endpoint database.
     */
@@ -71,7 +71,7 @@ class Endpoint protected () extends CustomResource {
   /**
     * Settings for the target S3 endpoint. Available settings are `serviceAccessRoleArn`, `externalTableDefinition`, `csvRowDelimiter` (default: `\\n`), `csvDelimiter` (default: `,`), `bucketFolder`, `bucketName` and `compressionType` (default: `NONE`). For more details, see [Using Amazon S3 as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html).
     */
-  val s3Settings: Output[js.UndefOr[Anon_BucketFolder]] = js.native
+  val s3Settings: Output[js.UndefOr[EndpointS3Settings]] = js.native
   /**
     * The host name of the server.
     */

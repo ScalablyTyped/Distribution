@@ -1,6 +1,8 @@
 package typings.koaDashPug.koaDashPugMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +15,7 @@ object PugCtxOptions {
   @scala.inline
   def apply(
     fromString: Boolean,
-    app: typings.koa.koaMod.^[_, js.Object] = null,
+    app: typings.koa.koaMod.^[DefaultState, DefaultContext] = null,
     basedir: String = null,
     compileDebug: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GraphExplore[T] extends Generic {
   var body: js.UndefOr[T] = js.undefined
-  var index: js.UndefOr[String | js.Array[String]] = js.undefined
+  var index: String | js.Array[String]
   var routing: js.UndefOr[String] = js.undefined
   var timeout: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -15,12 +15,12 @@ trait GraphExplore[T] extends Generic {
 object GraphExplore {
   @scala.inline
   def apply[T](
+    index: String | js.Array[String],
     body: T = null,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
-    index: String | js.Array[String] = null,
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     routing: String = null,
@@ -28,13 +28,12 @@ object GraphExplore {
     timeout: String = null,
     `type`: String | js.Array[String] = null
   ): GraphExplore[T] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
     if (routing != null) __obj.updateDynamic("routing")(routing)

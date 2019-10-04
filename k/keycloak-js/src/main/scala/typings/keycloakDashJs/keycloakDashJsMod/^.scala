@@ -11,7 +11,7 @@ object ^ extends js.Object {
     * Creates a new Keycloak client instance.
     * @param config Path to a JSON config file or a plain config object.
     */
-  def apply(): KeycloakInstance = js.native
-  def apply(config: String | js.Object): KeycloakInstance = js.native
+  def apply[TPromise /* <: PromiseType */](): KeycloakInstance[TPromise] = js.native
+  def apply[TPromise /* <: PromiseType */](config: String | js.Object): KeycloakInstance[TPromise] = js.native
 }
 

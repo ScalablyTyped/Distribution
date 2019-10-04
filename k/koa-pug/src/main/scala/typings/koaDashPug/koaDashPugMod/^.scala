@@ -1,6 +1,8 @@
 package typings.koaDashPug.koaDashPugMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +15,6 @@ class ^ () extends Pug {
   /* CompleteClass */
   override var locals: StringDictionary[js.Any] = js.native
   /* CompleteClass */
-  override def use(app: typings.koa.koaMod.^[_, js.Object]): Unit = js.native
+  override def use(app: typings.koa.koaMod.^[DefaultState, DefaultContext]): Unit = js.native
 }
 

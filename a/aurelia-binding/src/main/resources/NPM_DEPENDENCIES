@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "aurelia-binding" : "2.3.1"
+      "aurelia-binding" : "2.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "aurelia-binding" : "2.3.1"
+      "aurelia-binding" : "2.5.0"
     }
   ],
   "compile-devDependencies" : [

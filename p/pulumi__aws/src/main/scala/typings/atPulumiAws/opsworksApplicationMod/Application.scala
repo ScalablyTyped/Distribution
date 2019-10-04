@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksApplicationMod
 
-import typings.atPulumiAws.Anon_CertificateChain
-import typings.atPulumiAws.Anon_KeySecure
-import typings.atPulumiAws.Anon_PasswordRevision
+import typings.atPulumiAws.typesOutputMod.opsworksNs.ApplicationAppSource
+import typings.atPulumiAws.typesOutputMod.opsworksNs.ApplicationEnvironment
+import typings.atPulumiAws.typesOutputMod.opsworksNs.ApplicationSslConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,7 +27,7 @@ class Application protected () extends CustomResource {
   /**
     * SCM configuration of the app as described below.
     */
-  val appSources: Output[js.Array[Anon_PasswordRevision]] = js.native
+  val appSources: Output[js.Array[ApplicationAppSource]] = js.native
   /**
     * Run bundle install when deploying for application of type `rails`.
     */
@@ -67,7 +67,7 @@ class Application protected () extends CustomResource {
   /**
     * Object to define environment variables.  Object is described below.
     */
-  val environments: Output[js.UndefOr[js.Array[Anon_KeySecure]]] = js.native
+  val environments: Output[js.UndefOr[js.Array[ApplicationEnvironment]]] = js.native
   /**
     * A human-readable name for the application.
     */
@@ -83,7 +83,7 @@ class Application protected () extends CustomResource {
   /**
     * The SSL configuration of the app. Object is described below.
     */
-  val sslConfigurations: Output[js.UndefOr[js.Array[Anon_CertificateChain]]] = js.native
+  val sslConfigurations: Output[js.UndefOr[js.Array[ApplicationSslConfiguration]]] = js.native
   /**
     * The id of the stack the application will belong to.
     */

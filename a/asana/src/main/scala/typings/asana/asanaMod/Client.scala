@@ -5,6 +5,7 @@ import typings.asana.asanaMod.authNs.OauthAuthenticatorOptions
 import typings.asana.asanaMod.resourcesNs.Attachments
 import typings.asana.asanaMod.resourcesNs.Events
 import typings.asana.asanaMod.resourcesNs.Projects
+import typings.asana.asanaMod.resourcesNs.Sections
 import typings.asana.asanaMod.resourcesNs.Stories
 import typings.asana.asanaMod.resourcesNs.Tags
 import typings.asana.asanaMod.resourcesNs.Tasks
@@ -43,6 +44,11 @@ trait Client extends js.Object {
     * @type {Projects}
     */
   var projects: Projects = js.native
+  /**
+    * An instance of the Sections resource.
+    * @type {Sections}
+    */
+  var sections: Sections = js.native
   /**
     * An instance of the Stories resource.
     * @type {Stories}

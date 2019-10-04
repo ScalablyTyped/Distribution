@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TreeChanges
   extends /** @nodoc */
-/* key */ StringDictionary[js.Array[PathNode]] {
+/* key */ StringDictionary[js.UndefOr[js.Array[PathNode]]] {
   /**
     * The path of nodes that the transition is entering.
     *
@@ -61,7 +61,7 @@ object TreeChanges {
     retainedWithToParams: js.Array[PathNode],
     to: js.Array[PathNode],
     StringDictionary: /** @nodoc */
-  /* key */ StringDictionary[js.Array[PathNode]] = null
+  /* key */ StringDictionary[js.UndefOr[js.Array[PathNode]]] = null
   ): TreeChanges = {
     val __obj = js.Dynamic.literal(entering = entering, exiting = exiting, from = from, retained = retained, retainedWithToParams = retainedWithToParams, to = to)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

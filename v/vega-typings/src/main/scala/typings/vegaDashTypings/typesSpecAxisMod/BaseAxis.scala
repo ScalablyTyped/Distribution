@@ -273,6 +273,10 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     */
   var titleLimit: js.UndefOr[N] = js.undefined
   /**
+    * Line height in pixels for multi-line title text.
+    */
+  var titleLineHeight: js.UndefOr[N] = js.undefined
+  /**
     * Opacity of the axis title.
     */
   var titleOpacity: js.UndefOr[N] = js.undefined
@@ -346,6 +350,7 @@ object BaseAxis {
     titleFontStyle: FS = null,
     titleFontWeight: FW = null,
     titleLimit: N = null,
+    titleLineHeight: N = null,
     titleOpacity: N = null,
     titlePadding: N = null,
     titleX: N = null,
@@ -404,6 +409,7 @@ object BaseAxis {
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
     if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
     if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
+    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
     if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])

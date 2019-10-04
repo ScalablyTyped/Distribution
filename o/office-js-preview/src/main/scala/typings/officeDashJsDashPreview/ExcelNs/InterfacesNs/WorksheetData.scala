@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "worksheet.toJSON()". */
+/** An interface describing the data returned by calling `worksheet.toJSON()`. */
 trait WorksheetData extends js.Object {
   /**
     *

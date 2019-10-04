@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-pkg-up
 
-Typings are for version 6.0.0
+Typings are for version 7.0.0
 
 ## Library description:
 Read the closest package.json file

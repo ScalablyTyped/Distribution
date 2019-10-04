@@ -15,8 +15,7 @@ class WebGLProgram protected ()
     code: String,
     material: typings.three.srcMaterialsShaderMaterialMod.ShaderMaterial,
     shader: typings.three.srcRenderersWebglWebGLShaderMod.WebGLShader,
-    parameters: WebGLRendererParameters,
-    capabilities: typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
+    parameters: WebGLRendererParameters
   ) = this()
 }
 

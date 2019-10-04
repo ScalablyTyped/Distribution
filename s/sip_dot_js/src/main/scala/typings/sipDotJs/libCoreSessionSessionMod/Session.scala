@@ -46,10 +46,8 @@ trait Session extends js.Object {
     * Send a BYE request.
     * Terminating a session.
     * https://tools.ietf.org/html/rfc3261#section-15
-    * @param delegate Request delegate.
-    * @param options Options bucket.
-    * @returns A promise which resolves when a 2xx response to the BYE is received.
-    * @throws {RequestFailedReason} If a non-2xx final response to the BYE is received.
+    * @param delegate - Request delegate.
+    * @param options - Options bucket.
     */
   def bye(): OutgoingByeRequest = js.native
   def bye(delegate: OutgoingRequestDelegate): OutgoingByeRequest = js.native
@@ -62,10 +60,8 @@ trait Session extends js.Object {
     * Send an INFO request.
     * Exchange information during a session.
     * https://tools.ietf.org/html/rfc6086#section-4.2.1
-    * @param delegate Request delegate.
-    * @param options Options bucket.
-    * @returns A promise which resolves when a 2xx response to the BYE is received.
-    * @throws {RequestFailedReason} If a non-2xx final response to the BYE is received.
+    * @param delegate - Request delegate.
+    * @param options - Options bucket.
     */
   def info(): OutgoingInfoRequest = js.native
   def info(delegate: OutgoingRequestDelegate): OutgoingInfoRequest = js.native
@@ -74,11 +70,8 @@ trait Session extends js.Object {
     * Send re-INVITE request.
     * Modifying a session.
     * https://tools.ietf.org/html/rfc3261#section-14.1
-    * @param delegate Request delegate.
-    * @param options Options bucket.
-    * @returns A promise which resolves when a 2xx response to the INVITE is received.
-    * @throws {PendingRequestError} If there is a re-invite "pending".
-    * @throws {RequestFailedReason} If a non-2xx final response to the INVITE is received.
+    * @param delegate - Request delegate.
+    * @param options - Options bucket.
     */
   def invite(): OutgoingInviteRequest = js.native
   def invite(delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
@@ -89,10 +82,8 @@ trait Session extends js.Object {
     * Send PRACK request.
     * Acknowledge a reliable provisional response.
     * https://tools.ietf.org/html/rfc3262#section-4
-    * @param delegate Request delegate.
-    * @param options Options bucket.
-    * @returns A promise which resolves when a 2xx response to the PRACK is received.
-    * @throws {RequestFailedReason} If a non-2xx final response to the PRACK is received.
+    * @param delegate - Request delegate.
+    * @param options - Options bucket.
     */
   def prack(): OutgoingPrackRequest = js.native
   def prack(delegate: OutgoingRequestDelegate): OutgoingPrackRequest = js.native
@@ -101,10 +92,8 @@ trait Session extends js.Object {
     * Send REFER request (in dialog).
     * Transfer a session.
     * https://tools.ietf.org/html/rfc3515#section-2.4.1
-    * @param delegate Request delegate.
-    * @param options Options bucket.
-    * @returns A promise which resolves when a 2xx response to the REFER is received.
-    * @throws {RequestFailedReason} If a non-2xx final response to the REFER is received.
+    * @param delegate - Request delegate.
+    * @param options - Options bucket.
     */
   def refer(): OutgoingReferRequest = js.native
   def refer(delegate: OutgoingRequestDelegate): OutgoingReferRequest = js.native

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueClassifierMod
 
-import typings.atPulumiAws.Anon_Classification
-import typings.atPulumiAws.Anon_ClassificationRowTag
-import typings.atPulumiAws.Anon_JsonPathString
+import typings.atPulumiAws.typesOutputMod.glueNs.ClassifierGrokClassifier
+import typings.atPulumiAws.typesOutputMod.glueNs.ClassifierJsonClassifier
+import typings.atPulumiAws.typesOutputMod.glueNs.ClassifierXmlClassifier
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -28,11 +28,11 @@ class Classifier protected () extends CustomResource {
   /**
     * A classifier that uses grok patterns. Defined below.
     */
-  val grokClassifier: Output[js.UndefOr[Anon_Classification]] = js.native
+  val grokClassifier: Output[js.UndefOr[ClassifierGrokClassifier]] = js.native
   /**
     * A classifier for JSON content. Defined below.
     */
-  val jsonClassifier: Output[js.UndefOr[Anon_JsonPathString]] = js.native
+  val jsonClassifier: Output[js.UndefOr[ClassifierJsonClassifier]] = js.native
   /**
     * The name of the classifier.
     */
@@ -40,7 +40,7 @@ class Classifier protected () extends CustomResource {
   /**
     * A classifier for XML content. Defined below.
     */
-  val xmlClassifier: Output[js.UndefOr[Anon_ClassificationRowTag]] = js.native
+  val xmlClassifier: Output[js.UndefOr[ClassifierXmlClassifier]] = js.native
 }
 
 /* static members */

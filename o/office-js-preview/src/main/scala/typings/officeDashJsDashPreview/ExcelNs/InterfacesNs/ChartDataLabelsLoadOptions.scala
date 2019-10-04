@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi 1.1]
   */
 trait ChartDataLabelsLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
@@ -115,7 +118,7 @@ trait ChartDataLabelsLoadOptions extends js.Object {
   /**
     *
     * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
-    This property is valid only when TextOrientation of data label is 90, -90 or 180.
+    This property is valid only when TextOrientation of data label is -90, 90, or 180.
     *
     * [Api set: ExcelApi 1.8]
     */

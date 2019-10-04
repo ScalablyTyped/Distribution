@@ -1,8 +1,10 @@
 package typings.twilioDashVideo
 
 import typings.twilioDashVideo.twilioDashVideoMod.AudioCodec
+import typings.twilioDashVideo.twilioDashVideoMod.BandwidthProfileMode
 import typings.twilioDashVideo.twilioDashVideoMod.LogLevel
 import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.Kind
+import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.Priority
 import typings.twilioDashVideo.twilioDashVideoMod.VideoCodec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -175,10 +177,22 @@ object twilioDashVideoStrings {
   sealed trait VP9 extends VideoCodec
   
   @js.native
+  sealed trait au1 extends js.Object
+  
+  @js.native
   sealed trait audio extends Kind
   
   @js.native
+  sealed trait br1 extends js.Object
+  
+  @js.native
+  sealed trait collaboration extends BandwidthProfileMode
+  
+  @js.native
   sealed trait data extends Kind
+  
+  @js.native
+  sealed trait de1 extends js.Object
   
   @js.native
   sealed trait debug extends LogLevel
@@ -187,16 +201,49 @@ object twilioDashVideoStrings {
   sealed trait error extends LogLevel
   
   @js.native
+  sealed trait gll extends js.Object
+  
+  @js.native
+  sealed trait grid extends BandwidthProfileMode
+  
+  @js.native
+  sealed trait high extends Priority
+  
+  @js.native
+  sealed trait ie1 extends js.Object
+  
+  @js.native
   sealed trait info extends LogLevel
   
   @js.native
   sealed trait isac extends AudioCodec
   
   @js.native
+  sealed trait jp1 extends js.Object
+  
+  @js.native
+  sealed trait low extends Priority
+  
+  @js.native
   sealed trait off extends LogLevel
   
   @js.native
   sealed trait opus extends AudioCodec
+  
+  @js.native
+  sealed trait presentation extends BandwidthProfileMode
+  
+  @js.native
+  sealed trait sg1 extends js.Object
+  
+  @js.native
+  sealed trait standard extends Priority
+  
+  @js.native
+  sealed trait us1 extends js.Object
+  
+  @js.native
+  sealed trait us2 extends js.Object
   
   @js.native
   sealed trait video extends Kind
@@ -315,21 +362,51 @@ object twilioDashVideoStrings {
   @scala.inline
   def VP9: VP9 = "VP9".asInstanceOf[VP9]
   @scala.inline
+  def au1: au1 = "au1".asInstanceOf[au1]
+  @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
+  def br1: br1 = "br1".asInstanceOf[br1]
+  @scala.inline
+  def collaboration: collaboration = "collaboration".asInstanceOf[collaboration]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
+  def de1: de1 = "de1".asInstanceOf[de1]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def gll: gll = "gll".asInstanceOf[gll]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  @scala.inline
+  def ie1: ie1 = "ie1".asInstanceOf[ie1]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline
   def isac: isac = "isac".asInstanceOf[isac]
   @scala.inline
+  def jp1: jp1 = "jp1".asInstanceOf[jp1]
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def opus: opus = "opus".asInstanceOf[opus]
+  @scala.inline
+  def presentation: presentation = "presentation".asInstanceOf[presentation]
+  @scala.inline
+  def sg1: sg1 = "sg1".asInstanceOf[sg1]
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
+  @scala.inline
+  def us1: us1 = "us1".asInstanceOf[us1]
+  @scala.inline
+  def us2: us2 = "us2".asInstanceOf[us2]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline

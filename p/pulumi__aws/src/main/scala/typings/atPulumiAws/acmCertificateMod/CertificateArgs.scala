@@ -1,7 +1,7 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CertificateTransparencyLoggingPreferenceInput
+import typings.atPulumiAws.typesInputMod.acmNs.CertificateOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait CertificateArgs extends js.Object {
     * A domain name for which the certificate should be issued
     */
   val domainName: js.UndefOr[Input[String]] = js.undefined
-  val options: js.UndefOr[Input[Anon_CertificateTransparencyLoggingPreferenceInput]] = js.undefined
+  val options: js.UndefOr[Input[CertificateOptions]] = js.undefined
   /**
     * The certificate's PEM-formatted private key
     */
@@ -52,7 +52,7 @@ object CertificateArgs {
     certificateBody: Input[String] = null,
     certificateChain: Input[String] = null,
     domainName: Input[String] = null,
-    options: Input[Anon_CertificateTransparencyLoggingPreferenceInput] = null,
+    options: Input[CertificateOptions] = null,
     privateKey: Input[String] = null,
     subjectAlternativeNames: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,

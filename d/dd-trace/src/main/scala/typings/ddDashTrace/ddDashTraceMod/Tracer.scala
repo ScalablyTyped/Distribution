@@ -2,10 +2,12 @@ package typings.ddDashTrace.ddDashTraceMod
 
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.cassandra_driver
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.generic_pool
+import typings.ddDashTrace.ddDashTraceMod.pluginsNs.limitd_client
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mongodb_core
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.promise_js
 import typings.ddDashTrace.ddDashTraceStrings.`cassandra-driver`
 import typings.ddDashTrace.ddDashTraceStrings.`generic-pool`
+import typings.ddDashTrace.ddDashTraceStrings.`limitd-client`
 import typings.ddDashTrace.ddDashTraceStrings.`mongodb-core`
 import typings.ddDashTrace.ddDashTraceStrings.`promise-js`
 import typings.ddDashTrace.ddDashTraceStrings.amqp10
@@ -13,13 +15,16 @@ import typings.ddDashTrace.ddDashTraceStrings.amqplib
 import typings.ddDashTrace.ddDashTraceStrings.bluebird
 import typings.ddDashTrace.ddDashTraceStrings.bunyan
 import typings.ddDashTrace.ddDashTraceStrings.connect
+import typings.ddDashTrace.ddDashTraceStrings.couchbase
 import typings.ddDashTrace.ddDashTraceStrings.dns
 import typings.ddDashTrace.ddDashTraceStrings.elasticsearch
 import typings.ddDashTrace.ddDashTraceStrings.express
 import typings.ddDashTrace.ddDashTraceStrings.fastify
 import typings.ddDashTrace.ddDashTraceStrings.graphql
+import typings.ddDashTrace.ddDashTraceStrings.grpc
 import typings.ddDashTrace.ddDashTraceStrings.hapi
 import typings.ddDashTrace.ddDashTraceStrings.http
+import typings.ddDashTrace.ddDashTraceStrings.http2
 import typings.ddDashTrace.ddDashTraceStrings.ioredis
 import typings.ddDashTrace.ddDashTraceStrings.knex
 import typings.ddDashTrace.ddDashTraceStrings.koa
@@ -141,6 +146,12 @@ trait Tracer
   @JSName("use")
   def use_connect(plugin: connect, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.connect): this.type = js.native
   @JSName("use")
+  def use_couchbase(plugin: couchbase): this.type = js.native
+  @JSName("use")
+  def use_couchbase(plugin: couchbase, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_couchbase(plugin: couchbase, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.couchbase): this.type = js.native
+  @JSName("use")
   def use_dns(plugin: dns): this.type = js.native
   @JSName("use")
   def use_dns(plugin: dns, config: Boolean): this.type = js.native
@@ -177,6 +188,12 @@ trait Tracer
   @JSName("use")
   def use_graphql(plugin: graphql, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.graphql): this.type = js.native
   @JSName("use")
+  def use_grpc(plugin: grpc): this.type = js.native
+  @JSName("use")
+  def use_grpc(plugin: grpc, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_grpc(plugin: grpc, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.grpc): this.type = js.native
+  @JSName("use")
   def use_hapi(plugin: hapi): this.type = js.native
   @JSName("use")
   def use_hapi(plugin: hapi, config: Boolean): this.type = js.native
@@ -188,6 +205,12 @@ trait Tracer
   def use_http(plugin: http, config: Boolean): this.type = js.native
   @JSName("use")
   def use_http(plugin: http, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http): this.type = js.native
+  @JSName("use")
+  def use_http2(plugin: http2): this.type = js.native
+  @JSName("use")
+  def use_http2(plugin: http2, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_http2(plugin: http2, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http2): this.type = js.native
   @JSName("use")
   def use_ioredis(plugin: ioredis): this.type = js.native
   @JSName("use")
@@ -206,6 +229,12 @@ trait Tracer
   def use_koa(plugin: koa, config: Boolean): this.type = js.native
   @JSName("use")
   def use_koa(plugin: koa, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.koa): this.type = js.native
+  @JSName("use")
+  def use_limitdclient(plugin: `limitd-client`): this.type = js.native
+  @JSName("use")
+  def use_limitdclient(plugin: `limitd-client`, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_limitdclient(plugin: `limitd-client`, config: limitd_client): this.type = js.native
   @JSName("use")
   def use_memcached(plugin: memcached): this.type = js.native
   @JSName("use")

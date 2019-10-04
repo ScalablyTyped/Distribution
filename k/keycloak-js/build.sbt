@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keycloak-js"
-version := "6.0.1-870950"
+version := "7.0.0-418bad"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -19,6 +19,7 @@ package object clientsDocdbMod {
   type AvailabilityZones = js.Array[String]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
+  type CertificateList = js.Array[Certificate]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DBClusterList = js.Array[DBCluster]
   type DBClusterMemberList = js.Array[DBClusterMember]

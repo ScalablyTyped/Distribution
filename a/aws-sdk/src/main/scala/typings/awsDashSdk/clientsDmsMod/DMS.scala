@@ -126,6 +126,19 @@ trait DMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCertificateResponse, Unit]
   ): Request[DeleteCertificateResponse, AWSError] = js.native
   /**
+    * Deletes the connection between a replication instance and an endpoint.
+    */
+  def deleteConnection(): Request[DeleteConnectionResponse, AWSError] = js.native
+  def deleteConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteConnectionResponse, Unit]): Request[DeleteConnectionResponse, AWSError] = js.native
+  /**
+    * Deletes the connection between a replication instance and an endpoint.
+    */
+  def deleteConnection(params: DeleteConnectionMessage): Request[DeleteConnectionResponse, AWSError] = js.native
+  def deleteConnection(
+    params: DeleteConnectionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteConnectionResponse, Unit]
+  ): Request[DeleteConnectionResponse, AWSError] = js.native
+  /**
     * Deletes the specified endpoint.  All tasks associated with the endpoint must be deleted before you can delete the endpoint.  
     */
   def deleteEndpoint(): Request[DeleteEndpointResponse, AWSError] = js.native

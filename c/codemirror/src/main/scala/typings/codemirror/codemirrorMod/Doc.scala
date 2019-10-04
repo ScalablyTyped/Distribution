@@ -54,8 +54,8 @@ trait Doc extends js.Object {
   /** Returns an array containing all marked ranges in the document. */
   def getAllMarks(): js.Array[TextMarker] = js.native
   /** start is a an optional string indicating which end of the selection to return.
-    It may be "start" , "end" , "head"(the side of the selection that moves when you press shift + arrow),
-    or "anchor"(the fixed side of the selection).Omitting the argument is the same as passing "head".A { line , ch } object will be returned. */
+    It may be "from", "to", "head" (the side of the selection that moves when you press shift+arrow),
+    or "anchor" (the fixed side of the selection).Omitting the argument is the same as passing "head". A {line, ch} object will be returned. **/
   def getCursor(): Position = js.native
   def getCursor(start: String): Position = js.native
   /** Retrieve the editor associated with a document. May return null. */

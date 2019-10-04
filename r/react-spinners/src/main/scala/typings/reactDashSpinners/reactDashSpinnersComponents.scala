@@ -1,54 +1,58 @@
 package typings.reactDashSpinners
 
 import typings.react.reactMod.ComponentType
+import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps
+import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
+import typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
+import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashSpinnersComponents extends reactDashSpinnersProps {
   @scala.inline
-  def BarLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BarLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.BarLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BarLoaderProps]]
+  def BarLoader: ComponentType[LoaderHeightWidthProps] = js.constructorOf[typings.reactDashSpinners.barLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps]]
   @scala.inline
-  def BeatLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BeatLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.BeatLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BeatLoaderProps]]
+  def BeatLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.beatLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
   @scala.inline
-  def BounceLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BounceLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.BounceLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.BounceLoaderProps]]
+  def BounceLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.bounceLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def CircleLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.CircleLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.CircleLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.CircleLoaderProps]]
+  def CircleLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.circleLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def ClimbingBoxLoader: ComponentType[
-    typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClimbingBoxLoaderProps
-  ] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.ClimbingBoxLoader].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClimbingBoxLoaderProps]]
+  def ClimbingBoxLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.climbingBoxLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def ClipLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClipLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.ClipLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ClipLoaderProps]]
+  def ClipLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.clipLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def DotLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.DotLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.DotLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.DotLoaderProps]]
+  def DotLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.dotLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def FadeLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.FadeLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.FadeLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.FadeLoaderProps]]
+  def FadeLoader: ComponentType[LoaderHeightWidthRadiusProps] = js.constructorOf[typings.reactDashSpinners.fadeLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps]]
   @scala.inline
-  def GridLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.GridLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.GridLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.GridLoaderProps]]
+  def GridLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.gridLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
   @scala.inline
-  def HashLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.HashLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.HashLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.HashLoaderProps]]
+  def HashLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.hashLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def MoonLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.MoonLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.MoonLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.MoonLoaderProps]]
+  def Loader: ComponentType[LoaderHeightWidthProps] = js.constructorOf[typings.reactDashSpinners.barLoaderMod.Loader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps]]
   @scala.inline
-  def PacmanLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PacmanLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.PacmanLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PacmanLoaderProps]]
+  def MoonLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.moonLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def PropagateLoader: ComponentType[
-    typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PropagateLoaderProps
-  ] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.PropagateLoader].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PropagateLoaderProps]]
+  def PacmanLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.pacmanLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
   @scala.inline
-  def PulseLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PulseLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.PulseLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.PulseLoaderProps]]
+  def PropagateLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.propagateLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def RingLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RingLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.RingLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RingLoaderProps]]
+  def PulseLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.pulseLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
   @scala.inline
-  def RiseLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RiseLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.RiseLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RiseLoaderProps]]
+  def RingLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.ringLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
   @scala.inline
-  def RotateLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RotateLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.RotateLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.RotateLoaderProps]]
+  def RiseLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.riseLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
   @scala.inline
-  def ScaleLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ScaleLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.ScaleLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.ScaleLoaderProps]]
+  def RotateLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.rotateLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
   @scala.inline
-  def SyncLoader: ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.SyncLoaderProps] = js.constructorOf[typings.reactDashSpinners.reactDashSpinnersMod.SyncLoader].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.reactDashSpinnersMod.ReactSpinnersNs.SyncLoaderProps]]
+  def ScaleLoader: ComponentType[LoaderHeightWidthRadiusProps] = js.constructorOf[typings.reactDashSpinners.scaleLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps]]
+  @scala.inline
+  def SkewLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.skewLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
+  @scala.inline
+  def SquareLoader: ComponentType[LoaderSizeProps] = js.constructorOf[typings.reactDashSpinners.squareLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeProps]]
+  @scala.inline
+  def SyncLoader: ComponentType[LoaderSizeMarginProps] = js.constructorOf[typings.reactDashSpinners.syncLoaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps]]
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prettier"
-version := "1.18-dt-20190812Z-62038d"
+version := "1.18-dt-20191003Z-595d98"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

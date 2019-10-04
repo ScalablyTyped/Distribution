@@ -9,7 +9,6 @@ trait PoolConfig extends js.Object {
   var acquireTimeoutMillis: js.UndefOr[Double] = js.undefined
   var afterCreate: js.UndefOr[js.Function] = js.undefined
   var autostart: js.UndefOr[Boolean] = js.undefined
-  var beforeDestroy: js.UndefOr[js.Function] = js.undefined
   var create: js.UndefOr[js.Function] = js.undefined
   var destroy: js.UndefOr[js.Function] = js.undefined
   var evictionRunIntervalMillis: js.UndefOr[Double] = js.undefined
@@ -38,7 +37,6 @@ object PoolConfig {
     acquireTimeoutMillis: Int | Double = null,
     afterCreate: js.Function = null,
     autostart: js.UndefOr[Boolean] = js.undefined,
-    beforeDestroy: js.Function = null,
     create: js.Function = null,
     destroy: js.Function = null,
     evictionRunIntervalMillis: Int | Double = null,
@@ -63,7 +61,6 @@ object PoolConfig {
     if (acquireTimeoutMillis != null) __obj.updateDynamic("acquireTimeoutMillis")(acquireTimeoutMillis.asInstanceOf[js.Any])
     if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate)
     if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
     if (create != null) __obj.updateDynamic("create")(create)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (evictionRunIntervalMillis != null) __obj.updateDynamic("evictionRunIntervalMillis")(evictionRunIntervalMillis.asInstanceOf[js.Any])

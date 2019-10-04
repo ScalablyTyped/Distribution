@@ -1,7 +1,7 @@
 package typings.atPulumiAws.neptuneClusterParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ApplyMethod
+import typings.atPulumiAws.typesOutputMod.neptuneNs.ClusterParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class ClusterParameterGroup protected () extends CustomResource {
   /**
     * A list of neptune parameters to apply.
     */
-  val parameters: Output[js.UndefOr[js.Array[Anon_ApplyMethod]]] = js.native
+  val parameters: Output[js.UndefOr[js.Array[ClusterParameterGroupParameter]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

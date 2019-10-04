@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ecsTaskDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ContainerNameKey
-import typings.atPulumiAws.Anon_DockerVolumeConfiguration
-import typings.atPulumiAws.Anon_ExpressionType
+import typings.atPulumiAws.typesOutputMod.ecsNs.TaskDefinitionPlacementConstraint
+import typings.atPulumiAws.typesOutputMod.ecsNs.TaskDefinitionProxyConfiguration
+import typings.atPulumiAws.typesOutputMod.ecsNs.TaskDefinitionVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -69,11 +69,11 @@ class TaskDefinition protected () extends CustomResource {
   /**
     * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placementConstraints` is `10`.
     */
-  val placementConstraints: Output[js.UndefOr[js.Array[Anon_ExpressionType]]] = js.native
+  val placementConstraints: Output[js.UndefOr[js.Array[TaskDefinitionPlacementConstraint]]] = js.native
   /**
     * The proxy configuration details for the App Mesh proxy.
     */
-  val proxyConfiguration: Output[js.UndefOr[Anon_ContainerNameKey]] = js.native
+  val proxyConfiguration: Output[js.UndefOr[TaskDefinitionProxyConfiguration]] = js.native
   /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
@@ -93,7 +93,7 @@ class TaskDefinition protected () extends CustomResource {
   /**
     * A set of volume blocks that containers in your task may use.
     */
-  val volumes: Output[js.UndefOr[js.Array[Anon_DockerVolumeConfiguration]]] = js.native
+  val volumes: Output[js.UndefOr[js.Array[TaskDefinitionVolume]]] = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glacierVaultMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Events
+import typings.atPulumiAws.typesOutputMod.glacierNs.VaultNotification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -44,7 +44,7 @@ class Vault protected () extends CustomResource {
   /**
     * The notifications for the Vault. Fields documented below.
     */
-  val notifications: Output[js.UndefOr[js.Array[Anon_Events]]] = js.native
+  val notifications: Output[js.UndefOr[js.Array[VaultNotification]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

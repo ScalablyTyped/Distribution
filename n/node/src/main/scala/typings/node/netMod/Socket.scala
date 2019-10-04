@@ -21,7 +21,6 @@ class Socket () extends Duplex {
   val bytesRead: Double = js.native
   val bytesWritten: Double = js.native
   val connecting: Boolean = js.native
-  val destroyed: Boolean = js.native
   val localAddress: java.lang.String = js.native
   val localPort: Double = js.native
   val remoteAddress: js.UndefOr[java.lang.String] = js.native

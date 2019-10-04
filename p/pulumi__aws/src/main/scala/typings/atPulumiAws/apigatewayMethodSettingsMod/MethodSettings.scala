@@ -1,7 +1,7 @@
 package typings.atPulumiAws.apigatewayMethodSettingsMod
 
-import typings.atPulumiAws.Anon_CacheDataEncrypted
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.MethodSettingsSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,7 +34,7 @@ class MethodSettings protected () extends CustomResource {
   /**
     * The settings block, see below.
     */
-  val settings: Output[Anon_CacheDataEncrypted] = js.native
+  val settings: Output[MethodSettingsSettings] = js.native
   /**
     * The name of the stage
     */

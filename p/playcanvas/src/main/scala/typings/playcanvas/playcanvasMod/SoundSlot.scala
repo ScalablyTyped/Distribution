@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SoundSlot
+  * @extends pc.EventHandler
   * @classdesc The SoundSlot controls playback of an audio asset.
   * @description Create a new SoundSlot
   * @param {pc.SoundComponent} component The Component that created this slot.

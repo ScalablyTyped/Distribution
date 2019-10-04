@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetCustomerGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetCustomerGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait GetCustomerGatewayResult extends js.Object {
     * (Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
     */
   val bgpAsn: Double
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetCustomerGatewayFilter]] = js.undefined
   val id: js.UndefOr[String] = js.undefined
   /**
     * (Optional) The IP address of the gateway's Internet-routable external interface.
@@ -34,7 +34,7 @@ object GetCustomerGatewayResult {
     ipAddress: String,
     tags: StringDictionary[js.Any],
     `type`: String,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetCustomerGatewayFilter] = null,
     id: String = null
   ): GetCustomerGatewayResult = {
     val __obj = js.Dynamic.literal(bgpAsn = bgpAsn, ipAddress = ipAddress, tags = tags)

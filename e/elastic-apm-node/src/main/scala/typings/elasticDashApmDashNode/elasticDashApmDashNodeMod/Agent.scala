@@ -64,7 +64,6 @@ trait Agent
   def setCustomContext(custom: js.Object): Unit = js.native
   def setFramework(options: Anon_Name): Unit = js.native
   def setTransactionName(name: String): Unit = js.native
-   // Deprecated
   def setUserContext(user: UserObject): Unit = js.native
   // Configuration
   def start(): Agent = js.native
@@ -72,7 +71,49 @@ trait Agent
   // Transactions
   def startTransaction(): Transaction | Null = js.native
   def startTransaction(name: String): Transaction | Null = js.native
+  def startTransaction(name: String, options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: String, `type`: String): Transaction | Null = js.native
   def startTransaction(name: String, `type`: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: String): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: String, action: String): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: String, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: String, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: Null, action: String): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: Null, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: Null, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: String, subtype: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: String): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: String, action: String): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: String, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: String, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: Null, action: String): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: Null, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: Null, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: String, `type`: Null, subtype: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: String, action: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: String, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: String, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: Null, action: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: Null, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: Null, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: String, subtype: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: String, action: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: String, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: String, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: Null, action: String): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: Null, action: String, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: Null, action: Null, options: TransactionOptions): Transaction | Null = js.native
+  def startTransaction(name: Null, `type`: Null, subtype: Null, options: TransactionOptions): Transaction | Null = js.native
 }
 

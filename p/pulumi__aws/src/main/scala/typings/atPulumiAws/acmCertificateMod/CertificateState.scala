@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CertificateTransparencyLoggingPreferenceInput
-import typings.atPulumiAws.Anon_DomainNameResourceRecordName
+import typings.atPulumiAws.typesInputMod.acmNs.CertificateDomainValidationOption
+import typings.atPulumiAws.typesInputMod.acmNs.CertificateOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,8 +33,8 @@ trait CertificateState extends js.Object {
   /**
     * A list of attributes to feed into other resources to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
     */
-  val domainValidationOptions: js.UndefOr[Input[js.Array[Input[Anon_DomainNameResourceRecordName]]]] = js.undefined
-  val options: js.UndefOr[Input[Anon_CertificateTransparencyLoggingPreferenceInput]] = js.undefined
+  val domainValidationOptions: js.UndefOr[Input[js.Array[Input[CertificateDomainValidationOption]]]] = js.undefined
+  val options: js.UndefOr[Input[CertificateOptions]] = js.undefined
   /**
     * The certificate's PEM-formatted private key
     */
@@ -66,8 +66,8 @@ object CertificateState {
     certificateBody: Input[String] = null,
     certificateChain: Input[String] = null,
     domainName: Input[String] = null,
-    domainValidationOptions: Input[js.Array[Input[Anon_DomainNameResourceRecordName]]] = null,
-    options: Input[Anon_CertificateTransparencyLoggingPreferenceInput] = null,
+    domainValidationOptions: Input[js.Array[Input[CertificateDomainValidationOption]]] = null,
+    options: Input[CertificateOptions] = null,
     privateKey: Input[String] = null,
     subjectAlternativeNames: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,

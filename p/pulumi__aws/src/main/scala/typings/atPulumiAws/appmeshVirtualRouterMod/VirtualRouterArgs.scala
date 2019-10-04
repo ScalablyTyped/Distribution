@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualRouterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ListenerAnonPortMappingAnonPortProtocol
+import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualRouterSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait VirtualRouterArgs extends js.Object {
   /**
     * The virtual router specification to apply.
     */
-  val spec: Input[Anon_ListenerAnonPortMappingAnonPortProtocol]
+  val spec: Input[VirtualRouterSpec]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -30,7 +30,7 @@ object VirtualRouterArgs {
   @scala.inline
   def apply(
     meshName: Input[String],
-    spec: Input[Anon_ListenerAnonPortMappingAnonPortProtocol],
+    spec: Input[VirtualRouterSpec],
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): VirtualRouterArgs = {

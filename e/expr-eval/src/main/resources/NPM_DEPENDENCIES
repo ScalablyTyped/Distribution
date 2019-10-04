@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expr-eval" : "1.2.3"
+      "expr-eval" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "expr-eval" : "1.2.3"
+      "expr-eval" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

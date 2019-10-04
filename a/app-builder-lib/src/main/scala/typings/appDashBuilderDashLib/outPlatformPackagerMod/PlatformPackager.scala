@@ -36,8 +36,6 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   var copyAppFiles: js.Any = js.native
   val debugLogger: DebugLogger = js.native
   val defaultTarget: js.Array[String] = js.native
-  val electronDistExecutableName: String = js.native
-  val electronDistMacOsExecutableName: String = js.native
   val fileAssociations: js.Array[FileAssociation] = js.native
   val forceCodeSigning: Boolean = js.native
   var getExtraFileMatchers: js.Any = js.native

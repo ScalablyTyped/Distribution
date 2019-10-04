@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents a single cell in the terminal's buffer.
+  */
 trait IBufferCell extends js.Object {
   /**
     * The character within the cell.

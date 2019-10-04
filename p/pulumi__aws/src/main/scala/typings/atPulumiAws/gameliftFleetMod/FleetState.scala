@@ -1,8 +1,8 @@
 package typings.atPulumiAws.gameliftFleetMod
 
-import typings.atPulumiAws.Anon_FromPortIpRange
-import typings.atPulumiAws.Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations
-import typings.atPulumiAws.Anon_NewGameSessionsPerCreatorPolicyPeriodInMinutes
+import typings.atPulumiAws.typesInputMod.gameliftNs.FleetEc2InboundPermission
+import typings.atPulumiAws.typesInputMod.gameliftNs.FleetResourceCreationLimitPolicy
+import typings.atPulumiAws.typesInputMod.gameliftNs.FleetRuntimeConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ trait FleetState extends js.Object {
   /**
     * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
     */
-  val ec2InboundPermissions: js.UndefOr[Input[js.Array[Input[Anon_FromPortIpRange]]]] = js.undefined
+  val ec2InboundPermissions: js.UndefOr[Input[js.Array[Input[FleetEc2InboundPermission]]]] = js.undefined
   /**
     * Name of an EC2 instance type. e.g. `t2.micro`
     */
@@ -49,13 +49,11 @@ trait FleetState extends js.Object {
   /**
     * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
     */
-  val resourceCreationLimitPolicy: js.UndefOr[Input[Anon_NewGameSessionsPerCreatorPolicyPeriodInMinutes]] = js.undefined
+  val resourceCreationLimitPolicy: js.UndefOr[Input[FleetResourceCreationLimitPolicy]] = js.undefined
   /**
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
-  val runtimeConfiguration: js.UndefOr[
-    Input[Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations]
-  ] = js.undefined
+  val runtimeConfiguration: js.UndefOr[Input[FleetRuntimeConfiguration]] = js.undefined
 }
 
 object FleetState {
@@ -64,15 +62,15 @@ object FleetState {
     arn: Input[String] = null,
     buildId: Input[String] = null,
     description: Input[String] = null,
-    ec2InboundPermissions: Input[js.Array[Input[Anon_FromPortIpRange]]] = null,
+    ec2InboundPermissions: Input[js.Array[Input[FleetEc2InboundPermission]]] = null,
     ec2InstanceType: Input[String] = null,
     logPaths: Input[js.Array[Input[String]]] = null,
     metricGroups: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
     newGameSessionProtectionPolicy: Input[String] = null,
     operatingSystem: Input[String] = null,
-    resourceCreationLimitPolicy: Input[Anon_NewGameSessionsPerCreatorPolicyPeriodInMinutes] = null,
-    runtimeConfiguration: Input[Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations] = null
+    resourceCreationLimitPolicy: Input[FleetResourceCreationLimitPolicy] = null,
+    runtimeConfiguration: Input[FleetRuntimeConfiguration] = null
   ): FleetState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

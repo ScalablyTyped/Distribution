@@ -86,7 +86,7 @@ class Document () extends ClientObject {
   def load(option: DocumentLoadOptions): Document = js.native
   /**
     *
-    * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
+    * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
     *
     * [Api set: WordApi 1.1]
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg-parser"
-version := "1.0-dt-20180214Z-7044b0"
+version := "2.0-dt-20191003Z-7ffc61"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

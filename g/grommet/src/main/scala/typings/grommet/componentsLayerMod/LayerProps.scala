@@ -16,6 +16,7 @@ import typings.grommet.grommetStrings.slide
 import typings.grommet.grommetStrings.top
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.utilsMod.AnimateType
+import typings.grommet.utilsMod.KeyboardType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +29,7 @@ trait LayerProps extends js.Object {
   var margin: js.UndefOr[MarginType] = js.undefined
   var modal: js.UndefOr[Boolean] = js.undefined
   var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onEsc: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onEsc: js.UndefOr[KeyboardType] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var position: js.UndefOr[
     bottom | `bottom-left` | `bottom-right` | center | hidden | left | right | top | `top-left` | `top-right`
@@ -45,7 +46,7 @@ object LayerProps {
     margin: MarginType = null,
     modal: js.UndefOr[Boolean] = js.undefined,
     onClickOutside: /* repeated */ js.Any => _ = null,
-    onEsc: /* repeated */ js.Any => _ = null,
+    onEsc: KeyboardType = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     position: bottom | `bottom-left` | `bottom-right` | center | hidden | left | right | top | `top-left` | `top-right` = null,
     responsive: js.UndefOr[Boolean] = js.undefined
@@ -57,7 +58,7 @@ object LayerProps {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))
-    if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1(onEsc))
+    if (onEsc != null) __obj.updateDynamic("onEsc")(onEsc)
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)

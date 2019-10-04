@@ -20,7 +20,7 @@ trait Ora extends js.Object {
   		*/
   val isSpinning: Boolean = js.native
   /**
-  		Change the text before the spinner.
+  		Change the text before the spinner. No prefix text will be displayed if set to an empty string.
   		*/
   var prefixText: String = js.native
   /**
@@ -45,9 +45,9 @@ trait Ora extends js.Object {
   def fail(text: String): Ora = js.native
   /**
   		Get a new frame.
-  		@returns The spinner instance.
+  		@returns The spinner instance text.
   		*/
-  def frame(): Ora = js.native
+  def frame(): String = js.native
   /**
   		Stop the spinner, change it to a blue `ℹ` and persist the current text, or `text` if provided.
   		@param text - Will persist text if provided.

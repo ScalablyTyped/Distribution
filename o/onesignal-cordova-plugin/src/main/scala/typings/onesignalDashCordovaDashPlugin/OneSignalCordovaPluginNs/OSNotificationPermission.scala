@@ -7,6 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * iOS only
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.onesignalDashCordovaDashPlugin.onesignalDashCordovaDashPluginNumbers.`0`
   - typings.onesignalDashCordovaDashPlugin.onesignalDashCordovaDashPluginNumbers.`1`

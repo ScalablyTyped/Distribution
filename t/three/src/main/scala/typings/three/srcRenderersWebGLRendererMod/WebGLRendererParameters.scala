@@ -1,6 +1,7 @@
 package typings.three.srcRenderersWebGLRendererMod
 
 import typings.std.HTMLCanvasElement
+import typings.std.OffscreenCanvas
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ trait WebGLRendererParameters extends js.Object {
   /**
   	 * A Canvas where the renderer draws its output.
   	 */
-  var canvas: js.UndefOr[HTMLCanvasElement] = js.undefined
+  var canvas: js.UndefOr[HTMLCanvasElement | OffscreenCanvas] = js.undefined
   /**
   	 * A WebGL Rendering Context.
   	 * (https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext)
@@ -60,7 +61,7 @@ object WebGLRendererParameters {
   def apply(
     alpha: js.UndefOr[Boolean] = js.undefined,
     antialias: js.UndefOr[Boolean] = js.undefined,
-    canvas: HTMLCanvasElement = null,
+    canvas: HTMLCanvasElement | OffscreenCanvas = null,
     context: WebGLRenderingContext = null,
     depth: js.UndefOr[Boolean] = js.undefined,
     logarithmicDepthBuffer: js.UndefOr[Boolean] = js.undefined,
@@ -73,7 +74,7 @@ object WebGLRendererParameters {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha)
     if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth)
     if (!js.isUndefined(logarithmicDepthBuffer)) __obj.updateDynamic("logarithmicDepthBuffer")(logarithmicDepthBuffer)

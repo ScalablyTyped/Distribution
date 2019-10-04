@@ -102,7 +102,7 @@ object IconProps {
     containerStyle: StyleProp[ViewStyle] = null,
     disabledStyle: StyleProp[ViewStyle] = null,
     ellipsizeMode: head | middle | tail | clip = null,
-    iconStyle: ViewStyle = null,
+    iconStyle: TextStyle = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     lineBreakMode: head | middle | tail | clip = null,
     maxFontSizeMultiplier: Int | Double = null,

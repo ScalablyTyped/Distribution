@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AvailabilityZoneSecurityGroupIdListsSubnetId
+import typings.atPulumiAws.typesInputMod.glueNs.ConnectionPhysicalConnectionRequirements
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait ConnectionArgs extends js.Object {
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: js.UndefOr[Input[Anon_AvailabilityZoneSecurityGroupIdListsSubnetId]] = js.undefined
+  val physicalConnectionRequirements: js.UndefOr[Input[ConnectionPhysicalConnectionRequirements]] = js.undefined
 }
 
 object ConnectionArgs {
@@ -47,7 +47,7 @@ object ConnectionArgs {
     description: Input[String] = null,
     matchCriterias: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
-    physicalConnectionRequirements: Input[Anon_AvailabilityZoneSecurityGroupIdListsSubnetId] = null
+    physicalConnectionRequirements: Input[ConnectionPhysicalConnectionRequirements] = null
   ): ConnectionArgs = {
     val __obj = js.Dynamic.literal(connectionProperties = connectionProperties.asInstanceOf[js.Any])
     if (catalogId != null) __obj.updateDynamic("catalogId")(catalogId.asInstanceOf[js.Any])

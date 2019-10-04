@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RuntimeOptions extends js.Object {
+  var allowCallsToHelperMissing: js.UndefOr[Boolean] = js.undefined
   var blockParams: js.UndefOr[js.Array[_]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var decorators: js.UndefOr[StringDictionary[js.Function]] = js.undefined
@@ -19,6 +20,7 @@ trait RuntimeOptions extends js.Object {
 object RuntimeOptions {
   @scala.inline
   def apply(
+    allowCallsToHelperMissing: js.UndefOr[Boolean] = js.undefined,
     blockParams: js.Array[_] = null,
     data: js.Any = null,
     decorators: StringDictionary[js.Function] = null,
@@ -28,6 +30,7 @@ object RuntimeOptions {
     partials: StringDictionary[HandlebarsTemplateDelegate[_]] = null
   ): RuntimeOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowCallsToHelperMissing)) __obj.updateDynamic("allowCallsToHelperMissing")(allowCallsToHelperMissing)
     if (blockParams != null) __obj.updateDynamic("blockParams")(blockParams)
     if (data != null) __obj.updateDynamic("data")(data)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)

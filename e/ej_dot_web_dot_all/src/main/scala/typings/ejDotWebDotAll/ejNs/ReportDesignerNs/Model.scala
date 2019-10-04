@@ -34,6 +34,10 @@ trait Model extends js.Object {
   /** This event will be triggered while clicking open menu items.
     */
   var openReportClick: js.UndefOr[js.Function1[/* e */ OpenReportClickEventArgs, Unit]] = js.undefined
+  /** Shows or hides the create, edit, and delete options in data source and dataset panels.
+    * @Default {ej.ReportDesigner.Permission.All}
+    */
+  var permissionSettings: js.UndefOr[PermissionSettings] = js.undefined
   /** Gets or sets the list of custom data extension items.
     * @Default {[]}
     */
@@ -59,6 +63,10 @@ trait Model extends js.Object {
     * @Default {null}
     */
   var reportServerUrl: js.UndefOr[String] = js.undefined
+  /** Gets or sets the report type.
+    * @Default {ej.ReportDesigner.ReportType.RDL}
+    */
+  var reportType: js.UndefOr[String] = js.undefined
   /** This event will be triggered when the save menu items are clicked.
     */
   var saveReportClick: js.UndefOr[js.Function1[/* e */ SaveReportClickEventArgs, Unit]] = js.undefined
@@ -97,6 +105,7 @@ object Model {
     extensionLocaleChanged: /* e */ ExtensionLocaleChangedEventArgs => Unit = null,
     locale: String = null,
     openReportClick: /* e */ OpenReportClickEventArgs => Unit = null,
+    permissionSettings: PermissionSettings = null,
     reportDataExtensions: js.Array[ReportDataExtension] = null,
     reportItemExtensions: js.Array[ReportItemExtension] = null,
     reportModified: /* e */ ReportModifiedEventArgs => Unit = null,
@@ -104,6 +113,7 @@ object Model {
     reportPath: String = null,
     reportSaved: /* e */ ReportSavedEventArgs => Unit = null,
     reportServerUrl: String = null,
+    reportType: String = null,
     saveReportClick: /* e */ SaveReportClickEventArgs => Unit = null,
     serviceAuthorizationToken: String = null,
     serviceUrl: String = null,
@@ -122,6 +132,7 @@ object Model {
     if (extensionLocaleChanged != null) __obj.updateDynamic("extensionLocaleChanged")(js.Any.fromFunction1(extensionLocaleChanged))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (openReportClick != null) __obj.updateDynamic("openReportClick")(js.Any.fromFunction1(openReportClick))
+    if (permissionSettings != null) __obj.updateDynamic("permissionSettings")(permissionSettings)
     if (reportDataExtensions != null) __obj.updateDynamic("reportDataExtensions")(reportDataExtensions)
     if (reportItemExtensions != null) __obj.updateDynamic("reportItemExtensions")(reportItemExtensions)
     if (reportModified != null) __obj.updateDynamic("reportModified")(js.Any.fromFunction1(reportModified))
@@ -129,6 +140,7 @@ object Model {
     if (reportPath != null) __obj.updateDynamic("reportPath")(reportPath)
     if (reportSaved != null) __obj.updateDynamic("reportSaved")(js.Any.fromFunction1(reportSaved))
     if (reportServerUrl != null) __obj.updateDynamic("reportServerUrl")(reportServerUrl)
+    if (reportType != null) __obj.updateDynamic("reportType")(reportType)
     if (saveReportClick != null) __obj.updateDynamic("saveReportClick")(js.Any.fromFunction1(saveReportClick))
     if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken)
     if (serviceUrl != null) __obj.updateDynamic("serviceUrl")(serviceUrl)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for glob-parent
 
-Typings are for version 3.1
+Typings are for version 5.1
 
 ## Library description:
 Extract the non-magic parent path from a glob string.

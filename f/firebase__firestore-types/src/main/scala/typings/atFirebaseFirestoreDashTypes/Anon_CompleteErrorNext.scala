@@ -1,6 +1,6 @@
 package typings.atFirebaseFirestoreDashTypes
 
-import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.QuerySnapshot
+import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_CompleteErrorNext extends js.Object {
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
-  var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot, Unit]] = js.undefined
+  var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot, Unit]] = js.undefined
 }
 
 object Anon_CompleteErrorNext {
@@ -17,7 +17,7 @@ object Anon_CompleteErrorNext {
   def apply(
     complete: () => Unit = null,
     error: /* error */ Error => Unit = null,
-    next: /* snapshot */ QuerySnapshot => Unit = null
+    next: /* snapshot */ DocumentSnapshot => Unit = null
   ): Anon_CompleteErrorNext = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.expectDashPuppeteer.expectDashPuppeteerMod.ExpectTimingActions
 import typings.expectDashPuppeteer.expectDashPuppeteerMod.ExpectToClickOptions
 import typings.puppeteer.puppeteerMod.Dialog
+import typings.puppeteer.puppeteerMod.ElementHandle
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +24,8 @@ trait Matchers[R] extends js.Object {
   def toFillForm(selector: String, value: StringDictionary[js.Any], options: ExpectTimingActions): js.Promise[Unit] = js.native
   def toMatch(selector: String): js.Promise[Unit] = js.native
   def toMatch(selector: String, options: ExpectTimingActions): js.Promise[Unit] = js.native
-  def toMatchElement(selector: String): js.Promise[Unit] = js.native
-  def toMatchElement(selector: String, options: ExpectToClickOptions): js.Promise[Unit] = js.native
+  def toMatchElement(selector: String): js.Promise[ElementHandle[Element]] = js.native
+  def toMatchElement(selector: String, options: ExpectToClickOptions): js.Promise[ElementHandle[Element]] = js.native
   def toSelect(selector: String, valueOrText: String): js.Promise[Unit] = js.native
   def toSelect(selector: String, valueOrText: String, options: ExpectTimingActions): js.Promise[Unit] = js.native
   def toUploadFile(selector: String, filePath: String): js.Promise[Unit] = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pg-minify" : "1.4.1"
+      "pg-minify" : "1.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "pg-minify" : "1.4.1"
+      "pg-minify" : "1.5.1"
     }
   ],
   "compile-devDependencies" : [

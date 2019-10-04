@@ -19,6 +19,18 @@ class Reaction protected ()
     onInvalidate: js.Function0[Unit],
     errorHandler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]
   ) = this()
+  def this(
+    name: String,
+    onInvalidate: js.Function0[Unit],
+    errorHandler: js.UndefOr[scala.Nothing],
+    requiresObservable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    onInvalidate: js.Function0[Unit],
+    errorHandler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit],
+    requiresObservable: Boolean
+  ) = this()
   /* CompleteClass */
   override var __mapid: String = js.native
   var _isRunning: Boolean = js.native
@@ -41,6 +53,8 @@ class Reaction protected ()
   @JSName("observing")
   override var observing_IDerivation: js.Array[IObservable] = js.native
   var onInvalidate: js.Any = js.native
+  @JSName("requiresObservable")
+  var requiresObservable_Reaction: Boolean = js.native
   /**
     * Id of the current run of a derivation. Each time the derivation is tracked
     * this number is increased by one. This number is globally unique

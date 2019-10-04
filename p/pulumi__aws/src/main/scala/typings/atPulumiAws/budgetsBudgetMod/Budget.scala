@@ -1,8 +1,8 @@
 package typings.atPulumiAws.budgetsBudgetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ComparisonOperator
-import typings.atPulumiAws.Anon_IncludeCredit
+import typings.atPulumiAws.typesOutputMod.budgetsNs.BudgetCostTypes
+import typings.atPulumiAws.typesOutputMod.budgetsNs.BudgetNotification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -39,7 +39,7 @@ class Budget protected () extends CustomResource {
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
-  val costTypes: Output[Anon_IncludeCredit] = js.native
+  val costTypes: Output[BudgetCostTypes] = js.native
   /**
     * The amount of cost or usage being measured for a budget.
     */
@@ -59,7 +59,7 @@ class Budget protected () extends CustomResource {
   /**
     * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
     */
-  val notifications: Output[js.UndefOr[js.Array[Anon_ComparisonOperator]]] = js.native
+  val notifications: Output[js.UndefOr[js.Array[BudgetNotification]]] = js.native
   /**
     * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
     */

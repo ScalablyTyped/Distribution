@@ -31,6 +31,10 @@ trait VictoryLabelProps extends js.Object {
     */
   var children: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   /**
+    * The className prop specifies a class name that will be applied to the rendered text element.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  /**
     * Labels that apply to an entire data series will recieve the entire series as `data` instead of an individual datum prop.
     */
   var data: js.UndefOr[js.Array[_]] = js.undefined
@@ -123,6 +127,7 @@ object VictoryLabelProps {
     angle: String | Double = null,
     capHeight: StringOrNumberOrCallback = null,
     children: StringOrNumberOrCallback = null,
+    className: String = null,
     data: js.Array[_] = null,
     datum: js.Object = null,
     dx: StringOrNumberOrCallback = null,
@@ -145,6 +150,7 @@ object VictoryLabelProps {
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (data != null) __obj.updateDynamic("data")(data)
     if (datum != null) __obj.updateDynamic("datum")(datum)
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])

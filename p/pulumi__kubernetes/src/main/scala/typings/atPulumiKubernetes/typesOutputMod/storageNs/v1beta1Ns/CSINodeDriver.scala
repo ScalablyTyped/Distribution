@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
   */
 trait CSINodeDriver extends js.Object {
   /**
+    * allocatable represents the volume resources of a node that are available for scheduling.
+    */
+  val allocatable: VolumeNodeResources
+  /**
     * This is the name of the CSI driver that this object refers to. This MUST be the same name
     * returned by the CSI GetPluginName() call for that driver.
     */
@@ -38,8 +42,8 @@ trait CSINodeDriver extends js.Object {
 
 object CSINodeDriver {
   @scala.inline
-  def apply(name: String, nodeID: String, topologyKeys: js.Array[String]): CSINodeDriver = {
-    val __obj = js.Dynamic.literal(name = name, nodeID = nodeID, topologyKeys = topologyKeys)
+  def apply(allocatable: VolumeNodeResources, name: String, nodeID: String, topologyKeys: js.Array[String]): CSINodeDriver = {
+    val __obj = js.Dynamic.literal(allocatable = allocatable, name = name, nodeID = nodeID, topologyKeys = topologyKeys)
   
     __obj.asInstanceOf[CSINodeDriver]
   }

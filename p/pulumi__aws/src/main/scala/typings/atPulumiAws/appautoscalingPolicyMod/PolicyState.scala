@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appautoscalingPolicyMod
 
-import typings.atPulumiAws.Anon_AdjustmentTypeCooldown
-import typings.atPulumiAws.Anon_CustomizedMetricSpecificationDisableScaleIn
+import typings.atPulumiAws.typesInputMod.appautoscalingNs.PolicyStepScalingPolicyConfiguration
+import typings.atPulumiAws.typesInputMod.appautoscalingNs.PolicyTargetTrackingScalingPolicyConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,11 +36,11 @@ trait PolicyState extends js.Object {
   /**
     * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
     */
-  val stepScalingPolicyConfiguration: js.UndefOr[Input[Anon_AdjustmentTypeCooldown]] = js.undefined
+  val stepScalingPolicyConfiguration: js.UndefOr[Input[PolicyStepScalingPolicyConfiguration]] = js.undefined
   /**
     * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
     */
-  val targetTrackingScalingPolicyConfiguration: js.UndefOr[Input[Anon_CustomizedMetricSpecificationDisableScaleIn]] = js.undefined
+  val targetTrackingScalingPolicyConfiguration: js.UndefOr[Input[PolicyTargetTrackingScalingPolicyConfiguration]] = js.undefined
 }
 
 object PolicyState {
@@ -53,8 +53,8 @@ object PolicyState {
     resourceId: Input[String] = null,
     scalableDimension: Input[String] = null,
     serviceNamespace: Input[String] = null,
-    stepScalingPolicyConfiguration: Input[Anon_AdjustmentTypeCooldown] = null,
-    targetTrackingScalingPolicyConfiguration: Input[Anon_CustomizedMetricSpecificationDisableScaleIn] = null
+    stepScalingPolicyConfiguration: Input[PolicyStepScalingPolicyConfiguration] = null,
+    targetTrackingScalingPolicyConfiguration: Input[PolicyTargetTrackingScalingPolicyConfiguration] = null
   ): PolicyState = {
     val __obj = js.Dynamic.literal()
     if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])

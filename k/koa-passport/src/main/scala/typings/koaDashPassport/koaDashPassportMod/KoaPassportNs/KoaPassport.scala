@@ -1,5 +1,7 @@
 package typings.koaDashPassport.koaDashPassportMod.KoaPassportNs
 
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import typings.koaDashPassport.Anon_PauseStream
 import typings.koaDashPassport.Anon_UserProperty
@@ -39,30 +41,30 @@ trait KoaPassport extends js.Object {
     ], 
     Unit
   ] = js.native
-  def authenticate(strategy: String): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: String, options: js.Object): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: String, options: AuthenticateOptions): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: String, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: js.Array[String]): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: js.Array[String], options: js.Object): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: js.Array[String], options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authenticate(strategy: js.Array[String], options: AuthenticateOptions): Middleware[_, js.Object] = js.native
+  def authenticate(strategy: String): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: String, options: js.Object): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: String, options: AuthenticateOptions): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: String, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: js.Array[String]): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: js.Array[String], options: js.Object): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: js.Array[String], options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authenticate(strategy: js.Array[String], options: AuthenticateOptions): Middleware[DefaultState, DefaultContext] = js.native
   def authenticate(
     strategy: js.Array[String],
     options: AuthenticateOptions,
     callback: js.Function1[/* repeated */ js.Any, _]
-  ): Middleware[_, js.Object] = js.native
-  def authorize(strategy: String): Middleware[_, js.Object] = js.native
-  def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authorize(strategy: String, options: js.Any): Middleware[_, js.Object] = js.native
-  def authorize(strategy: String, options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authorize(strategy: js.Array[String]): Middleware[_, js.Object] = js.native
-  def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
-  def authorize(strategy: js.Array[String], options: js.Any): Middleware[_, js.Object] = js.native
-  def authorize(strategy: js.Array[String], options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[_, js.Object] = js.native
+  ): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: String): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: String, options: js.Any): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: String, options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: js.Array[String]): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: js.Array[String], options: js.Any): Middleware[DefaultState, DefaultContext] = js.native
+  def authorize(strategy: js.Array[String], options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
   def deserializeUser[TUser, TID](
     fn: js.Function2[
       /* id */ TID, 
@@ -71,8 +73,8 @@ trait KoaPassport extends js.Object {
     ]
   ): Unit = js.native
   def framework(fw: Framework[_, _, _]): this.type = js.native
-  def initialize(): Middleware[_, js.Object] = js.native
-  def initialize(options: Anon_UserProperty): Middleware[_, js.Object] = js.native
+  def initialize(): Middleware[DefaultState, DefaultContext] = js.native
+  def initialize(options: Anon_UserProperty): Middleware[DefaultState, DefaultContext] = js.native
   def serializeUser[TUser, TID](
     fn: js.Function2[
       /* user */ TUser, 
@@ -80,8 +82,8 @@ trait KoaPassport extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def session(): Middleware[_, js.Object] = js.native
-  def session(options: Anon_PauseStream): Middleware[_, js.Object] = js.native
+  def session(): Middleware[DefaultState, DefaultContext] = js.native
+  def session(options: Anon_PauseStream): Middleware[DefaultState, DefaultContext] = js.native
   def transformAuthInfo(
     fn: js.Function2[
       /* info */ js.Any, 

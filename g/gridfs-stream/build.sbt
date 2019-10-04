@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gridfs-stream"
-version := "0.5.0-dt-20190807Z-799c47"
+version := "0.5.0-dt-20191003Z-b6b7bf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-893ce4",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20190923Z-668b6e",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-093380",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191003Z-bfea37",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

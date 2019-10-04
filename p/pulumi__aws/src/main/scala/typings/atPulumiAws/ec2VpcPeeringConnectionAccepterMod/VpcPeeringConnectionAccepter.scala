@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2VpcPeeringConnectionAccepterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllowClassicLinkToRemoteVpc
+import typings.atPulumiAws.typesOutputMod.ec2Ns.VpcPeeringConnectionAccepterAccepter
+import typings.atPulumiAws.typesOutputMod.ec2Ns.VpcPeeringConnectionAccepterRequester
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +32,7 @@ class VpcPeeringConnectionAccepter protected () extends CustomResource {
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
     */
-  val accepter: Output[Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val accepter: Output[VpcPeeringConnectionAccepterAccepter] = js.native
   /**
     * Whether or not to accept the peering request. Defaults to `false`.
     */
@@ -52,7 +53,7 @@ class VpcPeeringConnectionAccepter protected () extends CustomResource {
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
     */
-  val requester: Output[Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val requester: Output[VpcPeeringConnectionAccepterRequester] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

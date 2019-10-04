@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set({ ... })". */
+/** An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`. */
 trait ChartGridlinesUpdateData extends js.Object {
   /**
     *

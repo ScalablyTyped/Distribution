@@ -31,7 +31,8 @@ object AllDocsWithinRangeOptions {
     include_docs: js.UndefOr[Boolean] = js.undefined,
     inclusive_end: js.UndefOr[Boolean] = js.undefined,
     limit: Int | Double = null,
-    skip: Int | Double = null
+    skip: Int | Double = null,
+    update_seq: js.UndefOr[Boolean] = js.undefined
   ): AllDocsWithinRangeOptions = {
     val __obj = js.Dynamic.literal(endkey = endkey, startkey = startkey)
     if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
@@ -43,6 +44,7 @@ object AllDocsWithinRangeOptions {
     if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
     __obj.asInstanceOf[AllDocsWithinRangeOptions]
   }
 }

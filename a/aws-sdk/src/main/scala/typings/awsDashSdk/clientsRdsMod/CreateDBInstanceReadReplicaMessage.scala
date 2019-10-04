@@ -38,6 +38,14 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
+    * The Active Directory directory ID to create the DB instance in. For Oracle DB instances, Amazon RDS can use Kerberos Authentication to authenticate users that connect to the DB instance. For more information, see  Using Kerberos Authentication with Amazon RDS for Oracle in the Amazon RDS User Guide.
+    */
+  var Domain: js.UndefOr[String] = js.undefined
+  /**
+    * Specify the name of the IAM role to be used when making API calls to the Directory Service.
+    */
+  var DomainIAMRoleName: js.UndefOr[String] = js.undefined
+  /**
     * The list of logs that the new DB instance is to export to CloudWatch Logs. The values in the list depend on the DB engine being used. For more information, see Publishing Database Logs to Amazon CloudWatch Logs  in the Amazon RDS User Guide.
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
@@ -132,6 +140,8 @@ object CreateDBInstanceReadReplicaMessage {
     DBParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    Domain: String = null,
+    DomainIAMRoleName: String = null,
     EnableCloudwatchLogsExports: LogTypeList = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined,
@@ -161,6 +171,8 @@ object CreateDBInstanceReadReplicaMessage {
     if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
+    if (Domain != null) __obj.updateDynamic("Domain")(Domain)
+    if (DomainIAMRoleName != null) __obj.updateDynamic("DomainIAMRoleName")(DomainIAMRoleName)
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (!js.isUndefined(EnablePerformanceInsights)) __obj.updateDynamic("EnablePerformanceInsights")(EnablePerformanceInsights)

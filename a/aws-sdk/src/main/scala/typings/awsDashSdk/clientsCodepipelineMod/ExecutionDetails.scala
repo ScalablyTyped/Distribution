@@ -10,7 +10,7 @@ trait ExecutionDetails extends js.Object {
     */
   var externalExecutionId: js.UndefOr[ExecutionId] = js.undefined
   /**
-    * The percentage of work completed on the action, represented on a scale of zero to one hundred percent.
+    * The percentage of work completed on the action, represented on a scale of 0 to 100 percent.
     */
   var percentComplete: js.UndefOr[Percentage] = js.undefined
   /**

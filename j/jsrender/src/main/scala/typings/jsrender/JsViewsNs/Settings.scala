@@ -53,30 +53,30 @@ trait Settings extends js.Object {
     ]
   ): Settings = js.native
   /**
-    * Set debug mode
-    * $.views.settings.debugMode(true)
-    *
-    * @param {boolean}  debugMode
-    * @returns {Settings}
-    */
+  	 * Set debug mode
+  	 * $.views.settings.debugMode(true)
+  	 *
+  	 * @param {boolean}  debugMode
+  	 * @returns {Settings}
+  	 */
   def debugMode(debugMode: Boolean): Settings = js.native
   /**
-    * Get delimiters
-    * delimsArray = $.views.settings.delimiters()
-    *
-    * @returns {string[]}
-    */
+  	 * Get delimiters
+  	 * delimsArray = $.views.settings.delimiters()
+  	 *
+  	 * @returns {string[]}
+  	 */
   def delimiters(): js.Array[String] = js.native
   def delimiters(chars: js.Array[String]): Settings = js.native
   /**
-    * Set delimiters
-    * $.views.settings.delimiters(...)
-    *
-    * @param {string}   openChars
-    * @param {string}   [closeChars]
-    * @param {string}   [link]
-    * @returns {Settings}
-    */
+  	 * Set delimiters
+  	 * $.views.settings.delimiters(...)
+  	 *
+  	 * @param {string}   openChars
+  	 * @param {string}   [closeChars]
+  	 * @param {string}   [link]
+  	 * @returns {Settings}
+  	 */
   def delimiters(openChars: String): Settings = js.native
   def delimiters(openChars: String, closeChars: String): Settings = js.native
   def delimiters(openChars: String, closeChars: String, link: String): Settings = js.native

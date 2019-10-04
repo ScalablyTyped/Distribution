@@ -1,5 +1,6 @@
 package typings.three.srcMaterialsShaderMaterialMod
 
+import typings.three.Anon_Derivatives
 import typings.three.srcConstantsMod.Blending
 import typings.three.srcConstantsMod.BlendingDstFactor
 import typings.three.srcConstantsMod.BlendingEquation
@@ -7,6 +8,8 @@ import typings.three.srcConstantsMod.BlendingSrcFactor
 import typings.three.srcConstantsMod.Colors
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.threeStrings.highp
@@ -19,7 +22,9 @@ import scala.scalajs.js.annotation._
 trait ShaderMaterialParameters extends MaterialParameters {
   var clipping: js.UndefOr[Boolean] = js.undefined
   var defines: js.UndefOr[js.Any] = js.undefined
+  var extensions: js.UndefOr[Anon_Derivatives] = js.undefined
   var fragmentShader: js.UndefOr[String] = js.undefined
+  var lights: js.UndefOr[Boolean] = js.undefined
   var linewidth: js.UndefOr[Double] = js.undefined
   var morphNormals: js.UndefOr[Boolean] = js.undefined
   var morphTargets: js.UndefOr[Boolean] = js.undefined
@@ -51,6 +56,7 @@ object ShaderMaterialParameters {
     depthTest: js.UndefOr[Boolean] = js.undefined,
     depthWrite: js.UndefOr[Boolean] = js.undefined,
     dithering: js.UndefOr[Boolean] = js.undefined,
+    extensions: Anon_Derivatives = null,
     flatShading: js.UndefOr[Boolean] = js.undefined,
     fog: js.UndefOr[Boolean] = js.undefined,
     fragmentShader: String = null,
@@ -69,6 +75,14 @@ object ShaderMaterialParameters {
     shadowSide: Side = null,
     side: Side = null,
     skinning: js.UndefOr[Boolean] = js.undefined,
+    stencilFail: StencilOp = null,
+    stencilFunc: StencilFunc = null,
+    stencilMask: Int | Double = null,
+    stencilRef: Int | Double = null,
+    stencilWrite: js.UndefOr[Boolean] = js.undefined,
+    stencilZFail: StencilOp = null,
+    stencilZPass: StencilOp = null,
+    toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     uniforms: js.Any = null,
     vertexColors: Colors = null,
@@ -97,6 +111,7 @@ object ShaderMaterialParameters {
     if (!js.isUndefined(depthTest)) __obj.updateDynamic("depthTest")(depthTest)
     if (!js.isUndefined(depthWrite)) __obj.updateDynamic("depthWrite")(depthWrite)
     if (!js.isUndefined(dithering)) __obj.updateDynamic("dithering")(dithering)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading)
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
     if (fragmentShader != null) __obj.updateDynamic("fragmentShader")(fragmentShader)
@@ -115,6 +130,14 @@ object ShaderMaterialParameters {
     if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
+    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail)
+    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc)
+    if (stencilMask != null) __obj.updateDynamic("stencilMask")(stencilMask.asInstanceOf[js.Any])
+    if (stencilRef != null) __obj.updateDynamic("stencilRef")(stencilRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite)
+    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail)
+    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass)
+    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)

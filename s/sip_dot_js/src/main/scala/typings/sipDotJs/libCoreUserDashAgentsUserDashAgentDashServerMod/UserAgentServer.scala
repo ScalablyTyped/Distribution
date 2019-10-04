@@ -48,8 +48,8 @@ class UserAgentServer protected () extends IncomingRequest {
     * been completed, the UAS hands the response back to the server
     * transaction from which it received the request.
     * https://tools.ietf.org/html/rfc3261#section-8.2.6
-    * @param statusCode Status code to reply with.
-    * @param options Reply options bucket.
+    * @param statusCode - Status code to reply with.
+    * @param options - Reply options bucket.
     */
   var reply: js.Any = js.native
   var toTag: String = js.native
@@ -74,7 +74,7 @@ class UserAgentServer protected () extends IncomingRequest {
     * Terminated).  A CANCEL request has no impact on the processing of
     * transactions with any other method defined in this specification.
     * https://tools.ietf.org/html/rfc3261#section-9.2
-    * @param request Incoming CANCEL request.
+    * @param request - Incoming CANCEL request.
     */
   def receiveCancel(message: IncomingRequestMessage): Unit = js.native
 }

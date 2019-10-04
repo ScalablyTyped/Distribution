@@ -1,6 +1,6 @@
 package typings.atPulumiAws.kmsGrantMod
 
-import typings.atPulumiAws.Anon_EncryptionContextEquals
+import typings.atPulumiAws.typesOutputMod.kmsNs.GrantConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,7 +25,7 @@ class Grant protected () extends CustomResource {
   /**
     * A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see [Encryption Context](http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html).
     */
-  val constraints: Output[js.UndefOr[js.Array[Anon_EncryptionContextEquals]]] = js.native
+  val constraints: Output[js.UndefOr[js.Array[GrantConstraint]]] = js.native
   /**
     * A list of grant tokens to be used when creating the grant. See [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token) for more information about grant tokens.
     * * `retireOnDelete` -(Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
@@ -57,6 +57,9 @@ class Grant protected () extends CustomResource {
     */
   val operations: Output[js.Array[String]] = js.native
   val retireOnDelete: Output[js.UndefOr[Boolean]] = js.native
+  /**
+    * The principal that is given permission to retire the grant by using RetireGrant operation in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
+    */
   val retiringPrincipal: Output[js.UndefOr[String]] = js.native
 }
 

@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2DefaultSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlocksDescription
+import typings.atPulumiAws.typesInputMod.ec2Ns.DefaultSecurityGroupEgress
+import typings.atPulumiAws.typesInputMod.ec2Ns.DefaultSecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,12 +13,12 @@ trait DefaultSecurityGroupArgs extends js.Object {
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
     */
-  val egress: js.UndefOr[Input[js.Array[Input[Anon_CidrBlocksDescription]]]] = js.undefined
+  val egress: js.UndefOr[Input[js.Array[Input[DefaultSecurityGroupEgress]]]] = js.undefined
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
     */
-  val ingress: js.UndefOr[Input[js.Array[Input[Anon_CidrBlocksDescription]]]] = js.undefined
+  val ingress: js.UndefOr[Input[js.Array[Input[DefaultSecurityGroupIngress]]]] = js.undefined
   val revokeRulesOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
@@ -34,8 +35,8 @@ trait DefaultSecurityGroupArgs extends js.Object {
 object DefaultSecurityGroupArgs {
   @scala.inline
   def apply(
-    egress: Input[js.Array[Input[Anon_CidrBlocksDescription]]] = null,
-    ingress: Input[js.Array[Input[Anon_CidrBlocksDescription]]] = null,
+    egress: Input[js.Array[Input[DefaultSecurityGroupEgress]]] = null,
+    ingress: Input[js.Array[Input[DefaultSecurityGroupIngress]]] = null,
     revokeRulesOnDelete: Input[Boolean] = null,
     tags: Input[StringDictionary[_]] = null,
     vpcId: Input[String] = null

@@ -50,6 +50,10 @@ trait JumpListItem extends js.Object {
     * One of the following:
     */
   var `type`: js.UndefOr[task | separator | file] = js.undefined
+  /**
+    * The working directory. Default is empty.
+    */
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 
 object JumpListItem {
@@ -62,7 +66,8 @@ object JumpListItem {
     path: String = null,
     program: String = null,
     title: String = null,
-    `type`: task | separator | file = null
+    `type`: task | separator | file = null,
+    workingDirectory: String = null
   ): JumpListItem = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args)
@@ -73,6 +78,7 @@ object JumpListItem {
     if (program != null) __obj.updateDynamic("program")(program)
     if (title != null) __obj.updateDynamic("title")(title)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
     __obj.asInstanceOf[JumpListItem]
   }
 }

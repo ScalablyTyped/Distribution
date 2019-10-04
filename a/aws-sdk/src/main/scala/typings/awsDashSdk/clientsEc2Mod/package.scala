@@ -339,6 +339,14 @@ package object clientsEc2Mod {
   type DeleteFleetSuccessSet = js.Array[DeleteFleetSuccessItem]
   type DeleteLaunchTemplateVersionsResponseErrorSet = js.Array[DeleteLaunchTemplateVersionsResponseErrorItem]
   type DeleteLaunchTemplateVersionsResponseSuccessSet = js.Array[DeleteLaunchTemplateVersionsResponseSuccessItem]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.`reserved-instances-id-invalid`
+    - typings.awsDashSdk.awsDashSdkStrings.`reserved-instances-not-in-queued-state`
+    - typings.awsDashSdk.awsDashSdkStrings.`unexpected-error`
+    - java.lang.String
+  */
+  type DeleteQueuedReservedInstancesErrorCode = _DeleteQueuedReservedInstancesErrorCode | java.lang.String
+  type DeleteQueuedReservedInstancesIdList = js.Array[String]
   type DescribeByoipCidrsMaxResults = scala.Double
   type DescribeCapacityReservationsMaxResults = scala.Double
   type DescribeClassicLinkInstancesMaxResults = scala.Double
@@ -478,6 +486,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type ExportTaskState = _ExportTaskState | java.lang.String
+  type FailedQueuedPurchaseDeletionSet = js.Array[FailedQueuedPurchaseDeletion]
   type FilterList = js.Array[Filter]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.error
@@ -1260,6 +1269,8 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.active
     - typings.awsDashSdk.awsDashSdkStrings.`payment-failed`
     - typings.awsDashSdk.awsDashSdkStrings.retired
+    - typings.awsDashSdk.awsDashSdkStrings.queued
+    - typings.awsDashSdk.awsDashSdkStrings.`queued-deleted`
     - java.lang.String
   */
   type ReservedInstanceState = _ReservedInstanceState | java.lang.String
@@ -1475,6 +1486,7 @@ package object clientsEc2Mod {
   */
   type SubnetState = _SubnetState | java.lang.String
   type SuccessfulInstanceCreditSpecificationSet = js.Array[SuccessfulInstanceCreditSpecificationItem]
+  type SuccessfulQueuedPurchaseDeletionSet = js.Array[SuccessfulQueuedPurchaseDeletion]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ok
     - typings.awsDashSdk.awsDashSdkStrings.impaired

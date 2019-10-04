@@ -11,8 +11,8 @@ trait MapContextProps extends js.Object {
   var isDragging: Boolean
   var map: js.UndefOr[Map] = js.undefined
   var mapContainer: HTMLElement | Null
-  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
-  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
+  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.undefined
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
   var viewport: js.UndefOr[
     typings.viewportDashMercatorDashProject.viewportDashMercatorDashProjectMod.default
   ] = js.undefined
@@ -25,8 +25,8 @@ object MapContextProps {
     eventManager: EventManager = null,
     map: Map = null,
     mapContainer: HTMLElement = null,
-    onViewStateChange: ViewStateChangeHandler = null,
-    onViewportChange: ViewportChangeHandler = null,
+    onViewStateChange: ContextViewStateChangeHandler = null,
+    onViewportChange: ContextViewportChangeHandler = null,
     viewport: typings.viewportDashMercatorDashProject.viewportDashMercatorDashProjectMod.default = null
   ): MapContextProps = {
     val __obj = js.Dynamic.literal(isDragging = isDragging)

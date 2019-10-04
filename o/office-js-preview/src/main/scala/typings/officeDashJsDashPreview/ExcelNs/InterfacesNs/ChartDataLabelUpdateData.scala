@@ -21,7 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartDataLabel object, for use in "chartDataLabel.set({ ... })". */
+/** An interface for updating data on the ChartDataLabel object, for use in `chartDataLabel.set({ ... })`. */
 trait ChartDataLabelUpdateData extends js.Object {
   /**
     *
@@ -47,7 +47,7 @@ trait ChartDataLabelUpdateData extends js.Object {
   /**
     *
     * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
-    This property is valid only when TextOrientation of data label is 90, -90 or 180.
+    This property is valid only when TextOrientation of data label is -90, 90, or 180.
     *
     * [Api set: ExcelApi 1.8]
     */

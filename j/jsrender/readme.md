@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsrender
 
-Typings are for version 1.0
+Typings are for version 1.0.5
 
 ## Library description:
 Best-of-breed templating in browser or on Node.js (with Express 4, Hapi and Browserify integration)
@@ -24,7 +24,7 @@ Best-of-breed templating in browser or on Node.js (with Express 4, Hapi and Brow
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

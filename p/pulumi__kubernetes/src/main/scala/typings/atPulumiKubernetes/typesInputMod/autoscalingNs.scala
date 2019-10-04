@@ -6,9 +6,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`autoscaling/v2beta2
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v1Ns.CrossVersionObjectReference
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerSpec
-import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerStatus
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v1Ns.ScaleSpec
-import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v1Ns.ScaleStatus
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta1Ns.ExternalMetricSource
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta1Ns.ExternalMetricStatus
 import typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerCondition
@@ -48,7 +46,7 @@ object autoscalingNs extends js.Object {
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind of the referent; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
         */
       var kind: Input[String]
       /**
@@ -65,32 +63,28 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`autoscaling/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscaler]
           ] = js.undefined
       /**
         * Standard object metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * behaviour of autoscaler. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[Input[HorizontalPodAutoscalerSpec]] = js.undefined
-      /**
-        * current information about the autoscaler.
-        */
-      var status: js.UndefOr[Input[HorizontalPodAutoscalerStatus]] = js.undefined
     }
     
     /**
@@ -101,7 +95,7 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`autoscaling/v1`]] = js.undefined
       /**
@@ -112,7 +106,7 @@ object autoscalingNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscalerList]
@@ -133,7 +127,10 @@ object autoscalingNs extends js.Object {
         */
       var maxReplicas: Input[Double]
       /**
-        * lower limit for the number of pods that can be set by the autoscaler, default 1.
+        * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale
+        * down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate
+        * HPAScaleToZero is enabled and at least one Object or External metric is configured.
+        * Scaling is active as long as at least one metric value is available.
         */
       var minReplicas: js.UndefOr[Input[Double]] = js.undefined
       /**
@@ -184,32 +181,26 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
         * Standard object metadata; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * defines the behavior of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[Input[ScaleSpec]] = js.undefined
-      /**
-        * current status of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
-        * Read-only.
-        */
-      var status: js.UndefOr[Input[ScaleStatus]] = js.undefined
     }
     
     /**
@@ -259,7 +250,7 @@ object autoscalingNs extends js.Object {
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind of the referent; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
         */
       var kind: Input[String]
       /**
@@ -327,38 +318,30 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`autoscaling/v2beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscaler]
           ] = js.undefined
       /**
         * metadata is the standard object metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * spec is the specification for the behaviour of the autoscaler. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[
             Input[
               typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerSpec
-            ]
-          ] = js.undefined
-      /**
-        * status is the current information about the autoscaler.
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerStatus
             ]
           ] = js.undefined
     }
@@ -398,7 +381,7 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`autoscaling/v2beta1`]] = js.undefined
       /**
@@ -415,7 +398,7 @@ object autoscalingNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscalerList]
@@ -447,7 +430,9 @@ object autoscalingNs extends js.Object {
       var metrics: js.UndefOr[Input[js.Array[Input[MetricSpec]]]] = js.undefined
       /**
         * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale
-        * down. It defaults to 1 pod.
+        * down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate
+        * HPAScaleToZero is enabled and at least one Object or External metric is configured.
+        * Scaling is active as long as at least one metric value is available.
         */
       var minReplicas: js.UndefOr[Input[Double]] = js.undefined
       /**
@@ -750,7 +735,7 @@ object autoscalingNs extends js.Object {
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind of the referent; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
         */
       var kind: Input[String]
       /**
@@ -800,38 +785,30 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`autoscaling/v2beta2`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscaler]
           ] = js.undefined
       /**
         * metadata is the standard object metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * spec is the specification for the behaviour of the autoscaler. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[
             Input[
               typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerSpec
-            ]
-          ] = js.undefined
-      /**
-        * status is the current information about the autoscaler.
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerStatus
             ]
           ] = js.undefined
     }
@@ -871,7 +848,7 @@ object autoscalingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`autoscaling/v2beta2`]] = js.undefined
       /**
@@ -888,7 +865,7 @@ object autoscalingNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscalerList]
@@ -927,7 +904,9 @@ object autoscalingNs extends js.Object {
           ] = js.undefined
       /**
         * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale
-        * down. It defaults to 1 pod.
+        * down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate
+        * HPAScaleToZero is enabled and at least one Object or External metric is configured.
+        * Scaling is active as long as at least one metric value is available.
         */
       var minReplicas: js.UndefOr[Input[Double]] = js.undefined
       /**

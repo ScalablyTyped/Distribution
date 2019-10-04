@@ -8,7 +8,6 @@ import typings.atTensorflowTfjsDashCore.distIoTypesMod.SaveConfig
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.SaveResult
 import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.ModelPredictConfig
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
-import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensor
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.distBaseUnderscoreCallbacksMod.History
@@ -22,6 +21,7 @@ import typings.atTensorflowTfjsDashLayers.distEngineTrainingUnderscoreUtilsMod.C
 import typings.atTensorflowTfjsDashLayers.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap
 import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatTrainingUnderscoreConfigMod.TrainingConfig
 import typings.atTensorflowTfjsDashLayers.distTypesMod.LossOrMetricFn
+import typings.atTensorflowTfjsDashLayers.distTypesMod.NamedTensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

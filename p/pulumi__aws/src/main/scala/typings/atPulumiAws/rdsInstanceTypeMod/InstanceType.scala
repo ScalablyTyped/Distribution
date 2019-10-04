@@ -5,6 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt3DOTmicro
+  - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt3DOTsmall
+  - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt3DOTmedium
+  - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt3DOTlarge
+  - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt3DOTxlarge
+  - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt3DOT2xlarge
   - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt2DOTmicro
   - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt2DOTsmall
   - typings.atPulumiAws.atPulumiAwsStrings.dbDOTt2DOTmedium

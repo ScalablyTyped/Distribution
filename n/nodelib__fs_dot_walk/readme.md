@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodelib__fs_dot_walk
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 A library for efficiently walking a directory recursively

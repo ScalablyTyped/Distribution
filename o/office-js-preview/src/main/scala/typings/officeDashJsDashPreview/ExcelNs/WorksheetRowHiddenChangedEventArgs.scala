@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Provides information about the worksheet row hidden change event.
+  * Provides information about the worksheet's row hidden change event.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -27,7 +27,7 @@ trait WorksheetRowHiddenChangedEventArgs extends js.Object {
   var address: String
   /**
     *
-    * Gets the change type that represents how the RowHiddenChanged event is triggered. See Excel.RowHiddenChangeType for details.
+    * Gets the type of change that represents how the event was triggered. See `Excel.RowHiddenChangeType` for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

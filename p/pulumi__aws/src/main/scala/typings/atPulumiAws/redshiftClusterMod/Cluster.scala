@@ -1,8 +1,8 @@
 package typings.atPulumiAws.redshiftClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketNameEnable
-import typings.atPulumiAws.Anon_DestinationRegion
+import typings.atPulumiAws.typesOutputMod.redshiftNs.ClusterLogging
+import typings.atPulumiAws.typesOutputMod.redshiftNs.ClusterSnapshotCopy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -114,7 +114,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Logging, documented below.
     */
-  val logging: Output[js.UndefOr[Anon_BucketNameEnable]] = js.native
+  val logging: Output[js.UndefOr[ClusterLogging]] = js.native
   /**
     * Password for the master DB user.
     * Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
@@ -162,7 +162,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Configuration of automatic copy of snapshots from one region to another. Documented below.
     */
-  val snapshotCopy: Output[js.UndefOr[Anon_DestinationRegion]] = js.native
+  val snapshotCopy: Output[js.UndefOr[ClusterSnapshotCopy]] = js.native
   /**
     * The name of the snapshot from which to create the new cluster.
     */

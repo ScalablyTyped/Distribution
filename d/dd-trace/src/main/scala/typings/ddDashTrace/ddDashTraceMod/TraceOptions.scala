@@ -4,12 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TraceOptions extends js.Object {
-  /**
-    * Set the sample rate for Trace Analytics. Setting to `true` or `false` will
-    * set the rate to `1` and `0` respectively.
-    */
-  var analytics: js.UndefOr[Boolean | Double] = js.undefined
+trait TraceOptions extends Analyzable {
   /**
     * The resource you are tracing. The resource name must not be longer than
     * 5000 characters.

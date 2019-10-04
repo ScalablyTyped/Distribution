@@ -1,17 +1,18 @@
 package typings.atPulumiAws.ec2LaunchTemplateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AffinityAvailabilityZone
-import typings.atPulumiAws.Anon_ArnName
-import typings.atPulumiAws.Anon_AssociatePublicIpAddressDeleteOnTermination
-import typings.atPulumiAws.Anon_CapacityReservationPreference
-import typings.atPulumiAws.Anon_CpuCreditsString
-import typings.atPulumiAws.Anon_DeviceNameEbsNoDevice
-import typings.atPulumiAws.Anon_EnabledBoolean
-import typings.atPulumiAws.Anon_KeyResourceTypeTags
-import typings.atPulumiAws.Anon_LicenseConfigurationArn
-import typings.atPulumiAws.Anon_MarketTypeSpotOptions
-import typings.atPulumiAws.Anon_TypeString
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateBlockDeviceMapping
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateCapacityReservationSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateElasticGpuSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateElasticInferenceAccelerator
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateIamInstanceProfile
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateInstanceMarketOptions
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateLicenseSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateMonitoring
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateNetworkInterface
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplatePlacement
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchTemplateTagSpecification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -42,16 +43,16 @@ class LaunchTemplate protected () extends CustomResource {
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     * See Block Devices below for details.
     */
-  val blockDeviceMappings: Output[js.UndefOr[js.Array[Anon_DeviceNameEbsNoDevice]]] = js.native
+  val blockDeviceMappings: Output[js.UndefOr[js.Array[LaunchTemplateBlockDeviceMapping]]] = js.native
   /**
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
-  val capacityReservationSpecification: Output[js.UndefOr[Anon_CapacityReservationPreference]] = js.native
+  val capacityReservationSpecification: Output[js.UndefOr[LaunchTemplateCapacityReservationSpecification]] = js.native
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecification: Output[js.UndefOr[Anon_CpuCreditsString]] = js.native
+  val creditSpecification: Output[js.UndefOr[LaunchTemplateCreditSpecification]] = js.native
   /**
     * The default version of the launch template.
     */
@@ -73,16 +74,16 @@ class LaunchTemplate protected () extends CustomResource {
     * The elastic GPU to attach to the instance. See Elastic GPU
     * below for more details.
     */
-  val elasticGpuSpecifications: Output[js.UndefOr[js.Array[Anon_TypeString]]] = js.native
+  val elasticGpuSpecifications: Output[js.UndefOr[js.Array[LaunchTemplateElasticGpuSpecification]]] = js.native
   /**
     * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
     */
-  val elasticInferenceAccelerator: Output[js.UndefOr[Anon_TypeString]] = js.native
+  val elasticInferenceAccelerator: Output[js.UndefOr[LaunchTemplateElasticInferenceAccelerator]] = js.native
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
-  val iamInstanceProfile: Output[js.UndefOr[Anon_ArnName]] = js.native
+  val iamInstanceProfile: Output[js.UndefOr[LaunchTemplateIamInstanceProfile]] = js.native
   /**
     * The AMI from which to launch the instance.
     */
@@ -96,7 +97,7 @@ class LaunchTemplate protected () extends CustomResource {
     * The market (purchasing) option for the instance. See Market Options
     * below for details.
     */
-  val instanceMarketOptions: Output[js.UndefOr[Anon_MarketTypeSpotOptions]] = js.native
+  val instanceMarketOptions: Output[js.UndefOr[LaunchTemplateInstanceMarketOptions]] = js.native
   /**
     * The type of the instance.
     */
@@ -116,11 +117,11 @@ class LaunchTemplate protected () extends CustomResource {
   /**
     * A list of license specifications to associate with. See License Specification below for more details.
     */
-  val licenseSpecifications: Output[js.UndefOr[js.Array[Anon_LicenseConfigurationArn]]] = js.native
+  val licenseSpecifications: Output[js.UndefOr[js.Array[LaunchTemplateLicenseSpecification]]] = js.native
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */
-  val monitoring: Output[js.UndefOr[Anon_EnabledBoolean]] = js.native
+  val monitoring: Output[js.UndefOr[LaunchTemplateMonitoring]] = js.native
   /**
     * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
     */
@@ -133,11 +134,11 @@ class LaunchTemplate protected () extends CustomResource {
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: Output[js.UndefOr[js.Array[Anon_AssociatePublicIpAddressDeleteOnTermination]]] = js.native
+  val networkInterfaces: Output[js.UndefOr[js.Array[LaunchTemplateNetworkInterface]]] = js.native
   /**
     * The placement of the instance. See Placement below for more details.
     */
-  val placement: Output[js.UndefOr[Anon_AffinityAvailabilityZone]] = js.native
+  val placement: Output[js.UndefOr[LaunchTemplatePlacement]] = js.native
   /**
     * The ID of the RAM disk.
     */
@@ -150,7 +151,7 @@ class LaunchTemplate protected () extends CustomResource {
   /**
     * The tags to apply to the resources during launch. See Tag Specifications below for more details.
     */
-  val tagSpecifications: Output[js.UndefOr[js.Array[Anon_KeyResourceTypeTags]]] = js.native
+  val tagSpecifications: Output[js.UndefOr[js.Array[LaunchTemplateTagSpecification]]] = js.native
   /**
     * A mapping of tags to assign to the launch template.
     */

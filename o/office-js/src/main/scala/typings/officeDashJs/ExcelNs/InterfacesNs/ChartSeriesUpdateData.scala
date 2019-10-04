@@ -36,7 +36,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartSeries object, for use in "chartSeries.set({ ... })". */
+/** An interface for updating data on the ChartSeries object, for use in `chartSeries.set({ ... })`. */
 trait ChartSeriesUpdateData extends js.Object {
   /**
     *

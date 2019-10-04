@@ -139,6 +139,10 @@ trait IButtonStyles extends js.Object {
     */
   var rootFocused: js.UndefOr[IStyle] = js.undefined
   /**
+    * Style override for the root element when it has a menu button, layered on top of the root style.
+    */
+  var rootHasMenu: js.UndefOr[IStyle] = js.undefined
+  /**
     * Style override applied to the root on hover in the default, enabled, non-toggled state.
     */
   var rootHovered: js.UndefOr[IStyle] = js.undefined
@@ -258,6 +262,7 @@ object IButtonStyles {
     rootExpanded: IStyle = null,
     rootExpandedHovered: IStyle = null,
     rootFocused: IStyle = null,
+    rootHasMenu: IStyle = null,
     rootHovered: IStyle = null,
     rootPressed: IStyle = null,
     screenReaderText: IStyle = null,
@@ -313,6 +318,7 @@ object IButtonStyles {
     if (rootExpanded != null) __obj.updateDynamic("rootExpanded")(rootExpanded.asInstanceOf[js.Any])
     if (rootExpandedHovered != null) __obj.updateDynamic("rootExpandedHovered")(rootExpandedHovered.asInstanceOf[js.Any])
     if (rootFocused != null) __obj.updateDynamic("rootFocused")(rootFocused.asInstanceOf[js.Any])
+    if (rootHasMenu != null) __obj.updateDynamic("rootHasMenu")(rootHasMenu.asInstanceOf[js.Any])
     if (rootHovered != null) __obj.updateDynamic("rootHovered")(rootHovered.asInstanceOf[js.Any])
     if (rootPressed != null) __obj.updateDynamic("rootPressed")(rootPressed.asInstanceOf[js.Any])
     if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])

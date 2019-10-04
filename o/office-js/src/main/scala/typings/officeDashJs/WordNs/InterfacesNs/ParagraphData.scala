@@ -85,7 +85,7 @@ trait ParagraphData extends js.Object {
   var lineUnitBefore: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
+    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
     *
     * [Api set: WordApi 1.3]
     */

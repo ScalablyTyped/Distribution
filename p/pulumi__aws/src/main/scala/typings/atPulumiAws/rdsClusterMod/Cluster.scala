@@ -1,10 +1,10 @@
 package typings.atPulumiAws.rdsClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AutoPause
-import typings.atPulumiAws.Anon_BucketNameBucketPrefix
 import typings.atPulumiAws.rdsEngineModeMod.EngineMode
 import typings.atPulumiAws.rdsEngineTypeMod.EngineType
+import typings.atPulumiAws.typesOutputMod.rdsNs.ClusterS3Import
+import typings.atPulumiAws.typesOutputMod.rdsNs.ClusterScalingConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -87,7 +87,7 @@ class Cluster protected () extends CustomResource {
   val deletionProtection: Output[js.UndefOr[Boolean]] = js.native
   /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
-    * The following log types are supported: `audit`, `error`, `general`, `slowquery`.
+    * The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
     */
   val enabledCloudwatchLogsExports: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -99,7 +99,7 @@ class Cluster protected () extends CustomResource {
     */
   val engine: Output[js.UndefOr[EngineType]] = js.native
   /**
-    * The database engine mode. Valid values: `global`, `parallelquery`, `provisioned`, `serverless`. Defaults to: `provisioned`. See the [RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/aurora-serverless.html) for limitations when using `serverless`.
+    * The database engine mode. Valid values: `global`, `multimaster`, `parallelquery`, `provisioned`, `serverless`. Defaults to: `provisioned`. See the [RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/aurora-serverless.html) for limitations when using `serverless`.
     */
   val engineMode: Output[js.UndefOr[EngineMode]] = js.native
   /**
@@ -163,11 +163,11 @@ class Cluster protected () extends CustomResource {
     * ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica.
     */
   val replicationSourceIdentifier: Output[js.UndefOr[String]] = js.native
-  val s3Import: Output[js.UndefOr[Anon_BucketNameBucketPrefix]] = js.native
+  val s3Import: Output[js.UndefOr[ClusterS3Import]] = js.native
   /**
     * Nested attribute with scaling properties. Only valid when `engineMode` is set to `serverless`. More details below.
     */
-  val scalingConfiguration: Output[js.UndefOr[Anon_AutoPause]] = js.native
+  val scalingConfiguration: Output[js.UndefOr[ClusterScalingConfiguration]] = js.native
   /**
     * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `finalSnapshotIdentifier`. Default is `false`.
     */

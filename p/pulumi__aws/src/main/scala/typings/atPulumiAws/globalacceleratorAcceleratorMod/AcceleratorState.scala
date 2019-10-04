@@ -1,7 +1,7 @@
 package typings.atPulumiAws.globalacceleratorAcceleratorMod
 
-import typings.atPulumiAws.Anon_FlowLogsEnabledFlowLogsS3Bucket
-import typings.atPulumiAws.Anon_IpAddressesIpFamily
+import typings.atPulumiAws.typesInputMod.globalacceleratorNs.AcceleratorAttributes
+import typings.atPulumiAws.typesInputMod.globalacceleratorNs.AcceleratorIpSet
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait AcceleratorState extends js.Object {
   /**
     * The attributes of the accelerator. Fields documented below.
     */
-  val attributes: js.UndefOr[Input[Anon_FlowLogsEnabledFlowLogsS3Bucket]] = js.undefined
+  val attributes: js.UndefOr[Input[AcceleratorAttributes]] = js.undefined
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
@@ -23,7 +23,7 @@ trait AcceleratorState extends js.Object {
   /**
     * IP address set associated with the accelerator.
     */
-  val ipSets: js.UndefOr[Input[js.Array[Input[Anon_IpAddressesIpFamily]]]] = js.undefined
+  val ipSets: js.UndefOr[Input[js.Array[Input[AcceleratorIpSet]]]] = js.undefined
   /**
     * The name of the accelerator.
     */
@@ -33,10 +33,10 @@ trait AcceleratorState extends js.Object {
 object AcceleratorState {
   @scala.inline
   def apply(
-    attributes: Input[Anon_FlowLogsEnabledFlowLogsS3Bucket] = null,
+    attributes: Input[AcceleratorAttributes] = null,
     enabled: Input[Boolean] = null,
     ipAddressType: Input[String] = null,
-    ipSets: Input[js.Array[Input[Anon_IpAddressesIpFamily]]] = null,
+    ipSets: Input[js.Array[Input[AcceleratorIpSet]]] = null,
     name: Input[String] = null
   ): AcceleratorState = {
     val __obj = js.Dynamic.literal()

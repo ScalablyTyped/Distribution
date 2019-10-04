@@ -4,7 +4,7 @@ import typings.ink.Anon_BgBlack
 import typings.ink.inkStrings.br
 import typings.ink.inkStrings.div
 import typings.ink.inkStrings.span
-import typings.node.NodeJSNs.WriteStream
+import typings.node.processMod.Global.NodeJSNs.WriteStream
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

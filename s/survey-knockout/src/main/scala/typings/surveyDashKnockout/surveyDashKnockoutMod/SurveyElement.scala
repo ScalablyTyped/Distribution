@@ -11,6 +11,8 @@ class SurveyElement protected ()
      with ISurveyElement {
   def this(name: String) = this()
   val areInvisibleElementsShowing: Boolean = js.native
+  /* CompleteClass */
+  override var containsErrors: Boolean = js.native
   val data: ISurveyData = js.native
   /**
     * The list of errors. It is created by callig hasErrors functions
@@ -45,6 +47,7 @@ class SurveyElement protected ()
   /* protected */ def copyCssClasses(dest: js.Any, source: js.Any): Unit = js.native
   /* CompleteClass */
   override def delete(): js.Any = js.native
+  /* protected */ def getContainsErrors(): Boolean = js.native
   def getElementsInDesign(): js.Array[IElement] = js.native
   def getElementsInDesign(includeHidden: Boolean): js.Array[IElement] = js.native
   /* protected */ def getPage(parent: IPanel): IPage = js.native
@@ -72,6 +75,7 @@ class SurveyElement protected ()
   override def setSurveyImpl(value: ISurveyImpl): js.Any = js.native
   /* CompleteClass */
   override def setVisibleIndex(value: Double): Double = js.native
+  /* protected */ def updateContainsErrors(): Unit = js.native
   def updateCustomWidgets(): Unit = js.native
 }
 

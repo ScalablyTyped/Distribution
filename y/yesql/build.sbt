@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yesql"
-version := "3.2-dt-20180709Z-fa947a"
+version := "3.2-dt-20191003Z-51de16"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,8 +2,8 @@ package typings.atUirouterAngularjs.atUirouterAngularjsMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.IRootScopeService
 import typings.atUirouterAngularjs.atUirouterAngularjsStrings.uiDOTrouter
+import typings.atUirouterAngularjs.libInterfaceMod.Ng1ViewDeclaration
 import typings.atUirouterCore.Anon_Configuration
 import typings.atUirouterCore.Anon_Hash
 import typings.atUirouterCore.Anon_IsHtml5
@@ -111,7 +111,7 @@ object ^ extends js.Object {
   def find[T](collection: js.Array[T], callback: Predicate[T]): T = js.native
   def find[T](collection: TypedMap[T], callback: Predicate[T]): T = js.native
   def flatten(arr: js.Array[_]): js.Any = js.native
-  def flattenR(memo: js.Array[_], elem: js.Any): js.Any = js.native
+  def flattenR(memo: js.Array[_], elem: js.Any): js.Array[_] = js.native
   def fnToString(fn: IInjectable): js.Any = js.native
   def functionToString(fn: js.Function): js.Any = js.native
   def getLocals(ctx: typings.atUirouterCore.atUirouterCoreMod.ResolveContext): TypedMap[_] = js.native
@@ -170,7 +170,7 @@ object ^ extends js.Object {
   def maxLength(max: Double, str: String): String = js.native
   def memoryLocationPlugin(router: typings.atUirouterCore.libRouterMod.UIRouter): LocationPlugin = js.native
   def mergeR(memo: Obj, item: Obj): Obj = js.native
-  def ng1ViewsBuilder(state: typings.atUirouterCore.atUirouterCoreMod.StateObject): js.Object = js.native
+  def ng1ViewsBuilder(state: typings.atUirouterCore.atUirouterCoreMod.StateObject): StringDictionary[Ng1ViewDeclaration] = js.native
   def noop(): js.Any = js.native
   def not(fn: Predicate[_]): Predicate[_] = js.native
   def omit(obj: Obj, propNames: js.Array[String]): Obj = js.native
@@ -204,6 +204,5 @@ object ^ extends js.Object {
   def unnestR(memo: js.Array[_], elem: js.Array[_]): js.Array[_] = js.native
   def `val`[T](v: T): js.Function0[T] = js.native
   def values[T](obj: TypedMap[T]): js.Array[T] = js.native
-  def watchDigests($rootScope: IRootScopeService): Unit = js.native
 }
 

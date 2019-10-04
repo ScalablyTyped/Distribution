@@ -252,14 +252,13 @@ object v1beta1Ns extends js.Object {
   object DaemonSet extends js.Object {
     /**
       * Get the state of an existing `DaemonSet` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1DaemonSetMod.DaemonSet = js.native
@@ -276,14 +275,13 @@ object v1beta1Ns extends js.Object {
   object DaemonSetList extends js.Object {
     /**
       * Get the state of an existing `DaemonSetList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1DaemonSetListMod.DaemonSetList = js.native
@@ -300,14 +298,13 @@ object v1beta1Ns extends js.Object {
   object Deployment extends js.Object {
     /**
       * Get the state of an existing `Deployment` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1DeploymentMod.Deployment = js.native
@@ -324,14 +321,13 @@ object v1beta1Ns extends js.Object {
   object DeploymentList extends js.Object {
     /**
       * Get the state of an existing `DeploymentList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1DeploymentListMod.DeploymentList = js.native
@@ -348,14 +344,13 @@ object v1beta1Ns extends js.Object {
   object Ingress extends js.Object {
     /**
       * Get the state of an existing `Ingress` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1IngressMod.Ingress = js.native
@@ -372,14 +367,13 @@ object v1beta1Ns extends js.Object {
   object IngressList extends js.Object {
     /**
       * Get the state of an existing `IngressList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1IngressListMod.IngressList = js.native
@@ -396,14 +390,13 @@ object v1beta1Ns extends js.Object {
   object NetworkPolicy extends js.Object {
     /**
       * Get the state of an existing `NetworkPolicy` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1NetworkPolicyMod.NetworkPolicy = js.native
@@ -420,14 +413,13 @@ object v1beta1Ns extends js.Object {
   object NetworkPolicyList extends js.Object {
     /**
       * Get the state of an existing `NetworkPolicyList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1NetworkPolicyListMod.NetworkPolicyList = js.native
@@ -444,14 +436,13 @@ object v1beta1Ns extends js.Object {
   object PodSecurityPolicy extends js.Object {
     /**
       * Get the state of an existing `PodSecurityPolicy` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
@@ -468,14 +459,13 @@ object v1beta1Ns extends js.Object {
   object PodSecurityPolicyList extends js.Object {
     /**
       * Get the state of an existing `PodSecurityPolicyList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
@@ -492,14 +482,13 @@ object v1beta1Ns extends js.Object {
   object ReplicaSet extends js.Object {
     /**
       * Get the state of an existing `ReplicaSet` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1ReplicaSetMod.ReplicaSet = js.native
@@ -516,14 +505,13 @@ object v1beta1Ns extends js.Object {
   object ReplicaSetList extends js.Object {
     /**
       * Get the state of an existing `ReplicaSetList` resource, as identified by `id`.
-      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-      * Kubernetes convention) the ID becomes default/<name>.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
       *
       * Pulumi will keep track of this resource using `name` as the Pulumi ID.
       *
       * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-      *  <namespace>/<name> or <name>.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
       * @param opts Uniquely specifies a CustomResource to select.
       */
     def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.extensionsV1beta1ReplicaSetListMod.ReplicaSetList = js.native

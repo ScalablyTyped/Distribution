@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait GetPipelineInput extends js.Object {
   /**
-    * The name of the pipeline for which you want to get information. Pipeline names must be unique under an Amazon Web Services (AWS) user account.
+    * The name of the pipeline for which you want to get information. Pipeline names must be unique under an AWS user account.
     */
   var name: PipelineName
   /**
-    * The version number of the pipeline. If you do not specify a version, defaults to the most current version.
+    * The version number of the pipeline. If you do not specify a version, defaults to the current version.
     */
   var version: js.UndefOr[PipelineVersion] = js.undefined
 }

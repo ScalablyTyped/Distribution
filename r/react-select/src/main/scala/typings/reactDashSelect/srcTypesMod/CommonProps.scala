@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CommonProps[OptionType] extends js.Object {
+trait CommonProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var className: js.UndefOr[String] = js.native
   var hasValue: Boolean = js.native
   var isMulti: Boolean = js.native

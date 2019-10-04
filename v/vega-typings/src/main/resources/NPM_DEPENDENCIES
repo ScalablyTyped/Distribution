@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-typings" : "0.9.0"
+      "vega-typings" : "0.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-typings" : "0.9.0"
+      "vega-typings" : "0.10.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 package typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod
 
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.always
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -36,8 +36,8 @@ object SubscriptionDialog extends js.Object {
     * constructs the state of the dialog.  This state MUST be maintained
     * for the duration of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.1.2
-    * @param outgoingRequestMessage Outgoing request message for dialog.
-    * @param incomingResponseMessage Incoming response message creating dialog.
+    * @param outgoingRequestMessage - Outgoing request message for dialog.
+    * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   def initialDialogStateForSubscription(
     outgoingSubscribeRequestMessage: typings.sipDotJs.libCoreMessagesMod.OutgoingRequestMessage,

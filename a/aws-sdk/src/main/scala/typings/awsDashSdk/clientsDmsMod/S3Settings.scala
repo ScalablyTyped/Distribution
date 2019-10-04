@@ -14,7 +14,7 @@ trait S3Settings extends js.Object {
     */
   var BucketName: js.UndefOr[String] = js.undefined
   /**
-    * A value that enables a change data capture (CDC) load to write only INSERT operations to .csv or columnar storage (.parquet) output files. By default (the false setting), the first field in a .csv or .parquet record contains the letter I (INSERT), U (UPDATE), or D (DELETE). These values indicate whether the row was inserted, updated, or deleted at the source database for a CDC load to the target. If cdcInsertsOnly is set to true or y, only INSERTs from the source database are migrated to the .csv or .parquet file. For .csv format only, how these INSERTs are recorded depends on the value of IncludeOpForFullLoad. If IncludeOpForFullLoad is set to true, the first field of every CDC record is set to I to indicate the INSERT operation at the source. If IncludeOpForFullLoad is set to false, every CDC record is written without a first field to indicate the INSERT operation at the source. For more information about how these settings work together, see Indicating Source DB Operations in Migrated S3 Data in the AWS Database Migration Service User Guide..  AWS DMS supports this interaction between CdcInsertsOnly and IncludeOpForFullLoad in versions 3.1.4 and later.  
+    * A value that enables a change data capture (CDC) load to write only INSERT operations to .csv or columnar storage (.parquet) output files. By default (the false setting), the first field in a .csv or .parquet record contains the letter I (INSERT), U (UPDATE), or D (DELETE). These values indicate whether the row was inserted, updated, or deleted at the source database for a CDC load to the target. If CdcInsertsOnly is set to true or y, only INSERTs from the source database are migrated to the .csv or .parquet file. For .csv format only, how these INSERTs are recorded depends on the value of IncludeOpForFullLoad. If IncludeOpForFullLoad is set to true, the first field of every CDC record is set to I to indicate the INSERT operation at the source. If IncludeOpForFullLoad is set to false, every CDC record is written without a first field to indicate the INSERT operation at the source. For more information about how these settings work together, see Indicating Source DB Operations in Migrated S3 Data in the AWS Database Migration Service User Guide..  AWS DMS supports this interaction between the CdcInsertsOnly and IncludeOpForFullLoad parameters in versions 3.1.4 and later.  
     */
   var CdcInsertsOnly: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -58,9 +58,13 @@ trait S3Settings extends js.Object {
     */
   var ExternalTableDefinition: js.UndefOr[String] = js.undefined
   /**
-    * A value that enables a full load to write INSERT operations to the comma-separated value (.csv) output files only to indicate how the rows were added to the source database.  AWS DMS supports IncludeOpForFullLoad in versions 3.1.4 and later.  For full load, records can only be inserted. By default (the false setting), no information is recorded in these output files for a full load to indicate that the rows were inserted at the source database. If IncludeOpForFullLoad is set to true or y, the INSERT is recorded as an I annotation in the first field of the .csv file. This allows the format of your target records from a full load to be consistent with the target records from a CDC load.  This setting works together with CdcInsertsOnly for output to .csv files only. For more information about how these settings work together, see Indicating Source DB Operations in Migrated S3 Data in the AWS Database Migration Service User Guide.. 
+    * A value that enables a full load to write INSERT operations to the comma-separated value (.csv) output files only to indicate how the rows were added to the source database.  AWS DMS supports the IncludeOpForFullLoad parameter in versions 3.1.4 and later.  For full load, records can only be inserted. By default (the false setting), no information is recorded in these output files for a full load to indicate that the rows were inserted at the source database. If IncludeOpForFullLoad is set to true or y, the INSERT is recorded as an I annotation in the first field of the .csv file. This allows the format of your target records from a full load to be consistent with the target records from a CDC load.  This setting works together with the CdcInsertsOnly parameter for output to .csv files only. For more information about how these settings work together, see Indicating Source DB Operations in Migrated S3 Data in the AWS Database Migration Service User Guide.. 
     */
   var IncludeOpForFullLoad: js.UndefOr[BooleanOptional] = js.undefined
+  /**
+    * A value that specifies the precision of any TIMESTAMP column values that are written to an Amazon S3 object file in .parquet format.  AWS DMS supports the ParquetTimestampInMillisecond parameter in versions 3.1.4 and later.  When ParquetTimestampInMillisecond is set to true or y, AWS DMS writes all TIMESTAMP columns in a .parquet formatted file with millisecond precision. Otherwise, DMS writes them with microsecond precision. Currently, Amazon Athena and AWS Glue can handle only millisecond precision for TIMESTAMP values. Set this parameter to true for S3 endpoint object files that are .parquet formatted only if you plan to query or process the data with Athena or AWS Glue.  AWS DMS writes any TIMESTAMP column values written to an S3 file in .csv format with microsecond precision. Setting ParquetTimestampInMillisecond has no effect on the string format of the timestamp column value that is inserted by setting the TimestampColumnName parameter. 
+    */
+  var ParquetTimestampInMillisecond: js.UndefOr[BooleanOptional] = js.undefined
   /**
     * The version of the Apache Parquet format that you want to use: parquet_1_0 (the default) or parquet_2_0.
     */
@@ -78,7 +82,7 @@ trait S3Settings extends js.Object {
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * A value that includes a timestamp column in the Amazon S3 target endpoint data. AWS DMS includes an additional column in the migrated data when you set timestampColumnName to a non-blank value.   AWS DMS supports TimestampColumnName in versions 3.1.4 and later.  For a full load, each row of the timestamp column contains a timestamp for when the data was transferred from the source to the target by DMS. For a CDC load, each row of the timestamp column contains the timestamp for the commit of that row in the source database. The format for the timestamp column value is yyyy-MM-dd HH:mm:ss.SSSSSS. For CDC, the microsecond precision depends on the commit timestamp supported by DMS for the source database. When the AddColumnName setting is set to true, DMS also includes the name for the timestamp column that you set as the nonblank value of timestampColumnName.
+    * A value that when nonblank causes AWS DMS to add a column with timestamp information to the endpoint data for an Amazon S3 target.  AWS DMS supports the TimestampColumnName parameter in versions 3.1.4 and later.  DMS includes an additional STRING column in the .csv or .parquet object files of your migrated data when you set TimestampColumnName to a nonblank value. For a full load, each row of this timestamp column contains a timestamp for when the data was transferred from the source to the target by DMS.  For a change data capture (CDC) load, each row of the timestamp column contains the timestamp for the commit of that row in the source database. The string format for this timestamp column value is yyyy-MM-dd HH:mm:ss.SSSSSS. By default, the precision of this value is in microseconds. For a CDC load, the rounding of the precision depends on the commit timestamp supported by DMS for the source database. When the AddColumnName parameter is set to true, DMS also includes a name for the timestamp column that you set with TimestampColumnName.
     */
   var TimestampColumnName: js.UndefOr[String] = js.undefined
 }
@@ -100,6 +104,7 @@ object S3Settings {
     EncryptionMode: EncryptionModeValue = null,
     ExternalTableDefinition: String = null,
     IncludeOpForFullLoad: js.UndefOr[BooleanOptional] = js.undefined,
+    ParquetTimestampInMillisecond: js.UndefOr[BooleanOptional] = js.undefined,
     ParquetVersion: ParquetVersionValue = null,
     RowGroupLength: js.UndefOr[IntegerOptional] = js.undefined,
     ServerSideEncryptionKmsKeyId: String = null,
@@ -121,6 +126,7 @@ object S3Settings {
     if (EncryptionMode != null) __obj.updateDynamic("EncryptionMode")(EncryptionMode.asInstanceOf[js.Any])
     if (ExternalTableDefinition != null) __obj.updateDynamic("ExternalTableDefinition")(ExternalTableDefinition)
     if (!js.isUndefined(IncludeOpForFullLoad)) __obj.updateDynamic("IncludeOpForFullLoad")(IncludeOpForFullLoad)
+    if (!js.isUndefined(ParquetTimestampInMillisecond)) __obj.updateDynamic("ParquetTimestampInMillisecond")(ParquetTimestampInMillisecond)
     if (ParquetVersion != null) __obj.updateDynamic("ParquetVersion")(ParquetVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(RowGroupLength)) __obj.updateDynamic("RowGroupLength")(RowGroupLength)
     if (ServerSideEncryptionKmsKeyId != null) __obj.updateDynamic("ServerSideEncryptionKmsKeyId")(ServerSideEncryptionKmsKeyId)

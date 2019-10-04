@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "read-pkg-up" : "6.0.0"
+      "read-pkg-up" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "read-pkg-up" : "6.0.0"
+      "read-pkg-up" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

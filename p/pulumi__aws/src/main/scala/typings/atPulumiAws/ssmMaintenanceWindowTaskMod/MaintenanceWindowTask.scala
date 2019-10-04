@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTaskMod
 
-import typings.atPulumiAws.Anon_AutomationParameters
-import typings.atPulumiAws.Anon_KeyValues
-import typings.atPulumiAws.Anon_NameValues
-import typings.atPulumiAws.Anon_S3BucketNameS3BucketPrefix
+import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskLoggingInfo
+import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskTarget
+import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskTaskInvocationParameters
+import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskTaskParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,7 +32,7 @@ class MaintenanceWindowTask protected () extends CustomResource {
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
-  val loggingInfo: Output[js.UndefOr[Anon_S3BucketNameS3BucketPrefix]] = js.native
+  val loggingInfo: Output[js.UndefOr[MaintenanceWindowTaskLoggingInfo]] = js.native
   /**
     * The maximum number of targets this task can be run for in parallel.
     */
@@ -56,7 +56,7 @@ class MaintenanceWindowTask protected () extends CustomResource {
   /**
     * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
     */
-  val targets: Output[js.Array[Anon_KeyValues]] = js.native
+  val targets: Output[js.Array[MaintenanceWindowTaskTarget]] = js.native
   /**
     * The ARN of the task to execute.
     */
@@ -64,11 +64,11 @@ class MaintenanceWindowTask protected () extends CustomResource {
   /**
     * The parameters for task execution. This argument is conflict with `taskParameters` and `loggingInfo`.
     */
-  val taskInvocationParameters: Output[js.UndefOr[Anon_AutomationParameters]] = js.native
+  val taskInvocationParameters: Output[js.UndefOr[MaintenanceWindowTaskTaskInvocationParameters]] = js.native
   /**
     * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
-  val taskParameters: Output[js.UndefOr[js.Array[Anon_NameValues]]] = js.native
+  val taskParameters: Output[js.UndefOr[js.Array[MaintenanceWindowTaskTaskParameter]]] = js.native
   /**
     * The type of task being registered. The only allowed value is `RUN_COMMAND`.
     */

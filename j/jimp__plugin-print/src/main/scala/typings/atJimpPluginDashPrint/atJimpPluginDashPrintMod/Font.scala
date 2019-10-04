@@ -1,0 +1,30 @@
+package typings.atJimpPluginDashPrint.atJimpPluginDashPrintMod
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Font extends js.Object {
+  var chars: StringDictionary[FontChar]
+  var common: FontCommon
+  var info: FontInfo
+  var kernings: StringDictionary[StringDictionary[Double]]
+  var pages: js.Array[String]
+}
+
+object Font {
+  @scala.inline
+  def apply(
+    chars: StringDictionary[FontChar],
+    common: FontCommon,
+    info: FontInfo,
+    kernings: StringDictionary[StringDictionary[Double]],
+    pages: js.Array[String]
+  ): Font = {
+    val __obj = js.Dynamic.literal(chars = chars, common = common, info = info, kernings = kernings, pages = pages)
+  
+    __obj.asInstanceOf[Font]
+  }
+}
+

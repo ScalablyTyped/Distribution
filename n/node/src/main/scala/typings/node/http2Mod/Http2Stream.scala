@@ -19,7 +19,6 @@ class Http2Stream protected () extends Duplex {
   val aborted: Boolean = js.native
   val bufferSize: Double = js.native
   val closed: Boolean = js.native
-  val destroyed: Boolean = js.native
   /**
     * Set the true if the END_STREAM flag was set in the request or response HEADERS frame received,
     * indicating that no additional data should be received and the readable side of the Http2Stream will be closed.

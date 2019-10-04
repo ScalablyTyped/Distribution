@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalize-url"
-version := "4.4.1-30b5f7"
+version := "4.5.0-231a94"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

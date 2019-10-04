@@ -34,6 +34,10 @@ object constantsNs extends js.Object {
     var dataType: String = js.native
     var defaultValue: String = js.native
     /**
+      * In version 8.2.0: introduced
+      */
+    var exposedToClient: Boolean = js.native
+    /**
       * In version 7.9.0: introduced
       */
     var `type`: DataType = js.native

@@ -15,6 +15,12 @@ class Logger protected () extends js.Object {
   val stream: WritableStream = js.native
   def debug(fields: Null, message: String): Unit = js.native
   def debug(fields: Fields, message: String): Unit = js.native
+  def error(): Unit = js.native
+  def error(messageOrFields: String): Unit = js.native
+  def error(messageOrFields: String, message: String): Unit = js.native
+  def error(messageOrFields: Null, message: String): Unit = js.native
+  def error(messageOrFields: Fields): Unit = js.native
+  def error(messageOrFields: Fields, message: String): Unit = js.native
   def filePath(file: String): String = js.native
   def info(): Unit = js.native
   def info(messageOrFields: String): Unit = js.native
@@ -24,12 +30,6 @@ class Logger protected () extends js.Object {
   def info(messageOrFields: Fields, message: String): Unit = js.native
   def log(message: String): Unit = js.native
   def messageTransformer(message: String, level: LogLevel): String = js.native
-  def notice(): Unit = js.native
-  def notice(messageOrFields: String): Unit = js.native
-  def notice(messageOrFields: String, message: String): Unit = js.native
-  def notice(messageOrFields: Null, message: String): Unit = js.native
-  def notice(messageOrFields: Fields): Unit = js.native
-  def notice(messageOrFields: Fields, message: String): Unit = js.native
   def warn(): Unit = js.native
   def warn(messageOrFields: String): Unit = js.native
   def warn(messageOrFields: String, message: String): Unit = js.native

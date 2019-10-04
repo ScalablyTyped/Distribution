@@ -1,6 +1,6 @@
 package typings.atEmberString
 
-import typings.atEmberString.dashPrivateHandlebarsMod.SafeString
+import typings.atEmberTemplate.dashPrivateHandlebarsMod.SafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object atEmberStringMod extends js.Object {
   def dasherize(str: String): String = js.native
   def decamelize(str: String): String = js.native
   def htmlSafe(str: String): SafeString = js.native
-  def isHTMLSafe(str: js.Any): /* is @ember/string.@ember/string/-private/handlebars.SafeString */ Boolean = js.native
+  def isHTMLSafe(str: js.Any): /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean = js.native
   def loc(template: String): String = js.native
   def loc(template: String, args: js.Array[String]): String = js.native
   def underscore(str: String): String = js.native

@@ -19,6 +19,7 @@ import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.ClientMoved
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.Debug
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.ServerEdit
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.TextMessage
+import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.TokenUsed
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.BanAdd
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ChannelEdit
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientDBEdit
@@ -88,6 +89,7 @@ import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.flooding
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.ready
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.serveredit
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.textmessage
+import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.tokenused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -145,6 +147,11 @@ class TeamSpeak protected () extends EventEmitter {
     * @param event the raw teamspeak event
     */
   var evtextmessage: js.Any = js.native
+  /**
+    * Gets called when a client uses a privilege key
+    * @param event the raw teamspeak event
+    */
+  var evtokenused: js.Any = js.native
   /**
     * Parses the whole Cache by given Objects
     * @param cache the cache object
@@ -771,6 +778,8 @@ class TeamSpeak protected () extends EventEmitter {
   def on_serveredit(event: serveredit, listener: js.Function1[/* event */ ServerEdit, Unit]): this.type = js.native
   @JSName("on")
   def on_textmessage(event: textmessage, listener: js.Function1[/* event */ TextMessage, Unit]): this.type = js.native
+  @JSName("on")
+  def on_tokenused(event: tokenused, listener: js.Function1[/* event */ TokenUsed, Unit]): this.type = js.native
   def permFind(perm: String): js.Promise[js.Array[PermFind]] = js.native
   /**
     * Retrieves detailed information about all assignments of the permission.

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-persist/lib/purgeStoredState", JSImport.Namespace)
 @js.native
 object libPurgeStoredStateMod extends js.Object {
-  def purgeStoredState(config: PersistConfig): js.Any = js.native
+  def default[S](config: PersistConfig[S, _, _, _]): js.Any = js.native
 }
 

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-helmet-async"
-version := "1.0-dt-20190328Z-335423"
+version := "0.0-dt-20190926Z-22cc4e"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190903Z-bd378a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20190917Z-53b9fb",
-  "org.scalablytyped" %%% "react-helmet" % "5.0-dt-20190911Z-e7b6bd",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-06c3ac",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-b3917f",
+  "org.scalablytyped" %%% "react-helmet" % "5.0-dt-20190926Z-a1527e",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

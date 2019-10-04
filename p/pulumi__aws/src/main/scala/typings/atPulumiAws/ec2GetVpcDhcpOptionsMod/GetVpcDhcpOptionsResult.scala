@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcDhcpOptionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcDhcpOptionsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait GetVpcDhcpOptionsResult extends js.Object {
     * List of name servers.
     */
   val domainNameServers: js.Array[String]
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcDhcpOptionsFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -58,7 +58,7 @@ object GetVpcDhcpOptionsResult {
     ntpServers: js.Array[String],
     ownerId: String,
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetVpcDhcpOptionsFilter] = null
   ): GetVpcDhcpOptionsResult = {
     val __obj = js.Dynamic.literal(dhcpOptionsId = dhcpOptionsId, domainName = domainName, domainNameServers = domainNameServers, id = id, netbiosNameServers = netbiosNameServers, netbiosNodeType = netbiosNodeType, ntpServers = ntpServers, ownerId = ownerId, tags = tags)
     if (filters != null) __obj.updateDynamic("filters")(filters)

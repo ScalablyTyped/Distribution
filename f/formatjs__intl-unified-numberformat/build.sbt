@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "formatjs__intl-unified-numberformat"
-version := "0.5.2-7ab2e6"
+version := "1.0.1-a75b73"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.2.0-2b6434",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.4.0-47f64b",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

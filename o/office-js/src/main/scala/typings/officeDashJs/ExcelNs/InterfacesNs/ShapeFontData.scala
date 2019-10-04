@@ -21,7 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "shapeFont.toJSON()". */
+/** An interface describing the data returned by calling `shapeFont.toJSON()`. */
 trait ShapeFontData extends js.Object {
   /**
     *

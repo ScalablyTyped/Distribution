@@ -19,6 +19,7 @@ import typings.mobx.libApiObservableMod.IObservableFactories
 import typings.mobx.libApiObservableMod.IObservableFactory
 import typings.mobx.libApiTojsMod.ToJSOptions
 import typings.mobx.libApiWhenMod.IWhenOptions
+import typings.mobx.libCoreActionMod.IActionRunInfo
 import typings.mobx.libCoreAtomMod.IAtom
 import typings.mobx.libCoreComputedvalueMod.IComputedValue
 import typings.mobx.libCoreDerivationMod.IDerivation
@@ -42,6 +43,7 @@ import typings.mobx.libTypesObservablevalueMod.IObservableValue
 import typings.mobx.libTypesObservablevalueMod.IValueDidChange
 import typings.mobx.libTypesObservablevalueMod.IValueWillChange
 import typings.mobx.libUtilsUtilsMod.Lambda
+import typings.std.IArguments
 import typings.std.IterableIterator
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -58,6 +60,7 @@ object ^ extends js.Object {
   val observable: IObservableFactory with IObservableFactories with Anon_Enhancer = js.native
   def _allowStateChanges[T](allowStateChanges: Boolean, func: js.Function0[T]): T = js.native
   def _allowStateChangesInsideComputed[T](func: js.Function0[T]): T = js.native
+  def _endAction(runInfo: IActionRunInfo): Unit = js.native
   def _getAdministration(thing: js.Any): js.Any = js.native
   def _getAdministration(thing: js.Any, property: String): js.Any = js.native
   def _getGlobalState(): js.Any = js.native
@@ -68,6 +71,8 @@ object ^ extends js.Object {
   def _interceptReads[K, V](observableMap: typings.mobx.libInternalMod.ObservableMap[K, V], handler: ReadInterceptor[V]): Lambda = js.native
   def _isComputingDerivation(): Boolean = js.native
   def _resetGlobalState(): Unit = js.native
+  def _startAction(actionName: String, scope: js.Any): IActionRunInfo = js.native
+  def _startAction(actionName: String, scope: js.Any, args: IArguments): IActionRunInfo = js.native
   def autorun(view: js.Function1[/* r */ IReactionPublic, _]): IReactionDisposer = js.native
   def autorun(view: js.Function1[/* r */ IReactionPublic, _], opts: IAutorunOptions): IReactionDisposer = js.native
   def configure(options: Anon_Always): Unit = js.native

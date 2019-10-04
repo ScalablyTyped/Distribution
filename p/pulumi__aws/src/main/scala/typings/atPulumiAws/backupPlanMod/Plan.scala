@@ -1,7 +1,7 @@
 package typings.atPulumiAws.backupPlanMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CompletionWindow
+import typings.atPulumiAws.typesOutputMod.backupNs.PlanRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,7 +34,7 @@ class Plan protected () extends CustomResource {
   /**
     * A rule object that specifies a scheduled task that is used to back up a selection of resources.
     */
-  val rules: Output[js.Array[Anon_CompletionWindow]] = js.native
+  val rules: Output[js.Array[PlanRule]] = js.native
   /**
     * Metadata that you can assign to help organize the plans you create.
     */

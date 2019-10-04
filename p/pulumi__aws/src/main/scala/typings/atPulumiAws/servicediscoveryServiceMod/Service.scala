@@ -1,8 +1,8 @@
 package typings.atPulumiAws.servicediscoveryServiceMod
 
-import typings.atPulumiAws.Anon_DnsRecords
-import typings.atPulumiAws.Anon_FailureThreshold
-import typings.atPulumiAws.Anon_FailureThresholdNumber
+import typings.atPulumiAws.typesOutputMod.servicediscoveryNs.ServiceDnsConfig
+import typings.atPulumiAws.typesOutputMod.servicediscoveryNs.ServiceHealthCheckConfig
+import typings.atPulumiAws.typesOutputMod.servicediscoveryNs.ServiceHealthCheckCustomConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -36,15 +36,15 @@ class Service protected () extends CustomResource {
   /**
     * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
     */
-  val dnsConfig: Output[js.UndefOr[Anon_DnsRecords]] = js.native
+  val dnsConfig: Output[js.UndefOr[ServiceDnsConfig]] = js.native
   /**
     * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
     */
-  val healthCheckConfig: Output[js.UndefOr[Anon_FailureThreshold]] = js.native
+  val healthCheckConfig: Output[js.UndefOr[ServiceHealthCheckConfig]] = js.native
   /**
     * A complex type that contains settings for ECS managed health checks.
     */
-  val healthCheckCustomConfig: Output[js.UndefOr[Anon_FailureThresholdNumber]] = js.native
+  val healthCheckCustomConfig: Output[js.UndefOr[ServiceHealthCheckCustomConfig]] = js.native
   /**
     * The name of the service.
     */

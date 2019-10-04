@@ -80,6 +80,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     */
   def getColumnWidth(column: MatrixDropdownColumn): String = js.native
   /* protected */ def getFirstCellQuestion(onError: Boolean): Question = js.native
+  def getFooterText(): LocalizableString = js.native
   def getRequiredText(): String = js.native
   /* protected */ def getRowDisplayValue(row: MatrixDropdownRowModelBase, rowValue: js.Any): js.Any = js.native
   def getRowIndex(row: MatrixDropdownRowModelBase): Double = js.native

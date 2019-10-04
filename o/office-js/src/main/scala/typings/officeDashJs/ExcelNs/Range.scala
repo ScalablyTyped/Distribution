@@ -285,12 +285,11 @@ class Range () extends ClientObject {
   /**
     *
     * Fills range from the current range to the destination range.
-    The destination range must extend the source either horizontally or vertically.
-    For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+    The destination range must extend the source either horizontally or vertically. Discontiguous ranges are not supported.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param destinationRange The destination range to autofill. Discontiguous ranges are not supported.
+    * @param destinationRange The destination range to autofill.
     * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
     */
   def autoFill(destinationRange: Range): Unit = js.native
@@ -469,7 +468,7 @@ class Range () extends ClientObject {
     *
     * @param text The string to find.
     * @param criteria Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
-    * @returns The Range which matched the search criteria.
+    * @returns The Range object representing the first cell that contains a value matching the search text and criteria.
     */
   def find(text: String, criteria: SearchCriteria): Range = js.native
   /**
@@ -898,25 +897,15 @@ class Range () extends ClientObject {
   @JSName("insert")
   def insert_Right(shift: Right): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Range = js.native
-  def load(option: String): Range = js.native
-  def load(option: js.Array[String]): Range = js.native
-  def load(option: Anon_Expand): Range = js.native
-  def load(option: RangeLoadOptions): Range = js.native
+  def load(options: RangeLoadOptions): Range = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Range = js.native
+  def load(propertyNames: String): Range = js.native
+  def load(propertyNames: js.Array[String]): Range = js.native
   /**
     *
     * Merge the range cells into one region in the worksheet.
@@ -1019,7 +1008,7 @@ class Range () extends ClientObject {
     */
   def toJSON(): RangeData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Range = js.native
   /**
@@ -1030,7 +1019,7 @@ class Range () extends ClientObject {
     */
   def unmerge(): Unit = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Range = js.native
 }

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticbeanstalkConfigurationTemplateMod
 
-import typings.atPulumiAws.Anon_NameNamespaceResource
+import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.ConfigurationTemplateSetting
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ trait ConfigurationTemplateState extends js.Object {
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: js.UndefOr[Input[js.Array[Input[Anon_NameNamespaceResource]]]] = js.undefined
+  val settings: js.UndefOr[Input[js.Array[Input[ConfigurationTemplateSetting]]]] = js.undefined
   /**
     * A solution stack to base your Template
     * off of. Example stacks can be found in the [Amazon API documentation][1]
@@ -43,7 +43,7 @@ object ConfigurationTemplateState {
     description: Input[String] = null,
     environmentId: Input[String] = null,
     name: Input[String] = null,
-    settings: Input[js.Array[Input[Anon_NameNamespaceResource]]] = null,
+    settings: Input[js.Array[Input[ConfigurationTemplateSetting]]] = null,
     solutionStackName: Input[String] = null
   ): ConfigurationTemplateState = {
     val __obj = js.Dynamic.literal()

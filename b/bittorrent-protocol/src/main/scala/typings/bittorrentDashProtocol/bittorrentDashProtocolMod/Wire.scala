@@ -124,8 +124,8 @@ trait Wire extends Duplex {
   def request[T /* <: js.Any */](index: Double, offset: Double, length: Double): T | Unit = js.native
   def request[T /* <: js.Any */](index: Double, offset: Double, length: Double, cb: js.Function1[/* err */ Error, T]): T | Unit = js.native
   def setKeepAlive(enable: Boolean): Unit = js.native
-  def setTimeot(ms: Double): Unit = js.native
-  def setTimeot(ms: Double, unref: Boolean): Unit = js.native
+  def setTimeout(ms: Double): Unit = js.native
+  def setTimeout(ms: Double, unref: Boolean): Unit = js.native
   def unchoke(): Unit = js.native
   def uninterested(): Unit = js.native
   def use(ext: ExtensionConstructor): Unit = js.native

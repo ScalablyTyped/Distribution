@@ -10,7 +10,7 @@ trait ListTagsForResourceInput extends js.Object {
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   /**
-    * The token that was returned from the previous API call, which would be used to return the next page of the list. However, the ListTagsforResource call lists all available tags in one call and does not use pagination.
+    * The token that was returned from the previous API call, which would be used to return the next page of the list. The ListTagsforResource call lists all available tags in one call and does not use pagination.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**

@@ -104,7 +104,7 @@ class InlinePicture () extends ClientObject {
   val paragraph: Paragraph = js.native
   /**
     *
-    * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.
     *
     * [Api set: WordApi 1.1]
     */
@@ -118,14 +118,14 @@ class InlinePicture () extends ClientObject {
   val parentContentControlOrNullObject: ContentControl = js.native
   /**
     *
-    * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
+    * Gets the table that contains the inline image. Throws an error if it is not contained in a table. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
   val parentTable: Table = js.native
   /**
     *
-    * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -167,7 +167,7 @@ class InlinePicture () extends ClientObject {
   def getBase64ImageSrc(): ClientResult[String] = js.native
   /**
     *
-    * Gets the next inline image. Throws if this inline image is the last one.
+    * Gets the next inline image. Throws an error if this inline image is the last one.
     *
     * [Api set: WordApi 1.3]
     */
@@ -203,7 +203,7 @@ class InlinePicture () extends ClientObject {
   def getRange_Whole(rangeLocation: Whole): Range = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.2]
     *
@@ -216,7 +216,7 @@ class InlinePicture () extends ClientObject {
   ): Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.2]
     *
@@ -233,7 +233,7 @@ class InlinePicture () extends ClientObject {
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -245,7 +245,7 @@ class InlinePicture () extends ClientObject {
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -262,7 +262,7 @@ class InlinePicture () extends ClientObject {
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -274,7 +274,7 @@ class InlinePicture () extends ClientObject {
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -291,7 +291,7 @@ class InlinePicture () extends ClientObject {
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
+    * Inserts an inline picture at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -303,7 +303,7 @@ class InlinePicture () extends ClientObject {
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
     *
-    * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
+    * Inserts an inline picture at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -320,7 +320,7 @@ class InlinePicture () extends ClientObject {
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+    * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -332,7 +332,7 @@ class InlinePicture () extends ClientObject {
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+    * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -349,7 +349,7 @@ class InlinePicture () extends ClientObject {
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -361,7 +361,7 @@ class InlinePicture () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -378,7 +378,7 @@ class InlinePicture () extends ClientObject {
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
     *
-    * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -390,7 +390,7 @@ class InlinePicture () extends ClientObject {
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.2]
     *

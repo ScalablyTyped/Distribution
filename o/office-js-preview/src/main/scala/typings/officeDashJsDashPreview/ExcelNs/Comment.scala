@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a cell comment object in the workbook.
+  * Represents a comment in the workbook.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -66,6 +66,14 @@ class Comment () extends ClientObject {
   val id: String = js.native
   /**
     *
+    * Gets the entities (e.g. people) that are mentioned in comments.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val mentions: js.Array[CommentMention] = js.native
+  /**
+    *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -82,7 +90,15 @@ class Comment () extends ClientObject {
   var resolved: Boolean = js.native
   /**
     *
-    * Deletes the comment thread.
+    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val richContent: String = js.native
+  /**
+    *
+    * Deletes the comment and all the connected replies.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -97,25 +113,15 @@ class Comment () extends ClientObject {
     */
   def getLocation(): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Comment = js.native
-  def load(option: String): Comment = js.native
-  def load(option: js.Array[String]): Comment = js.native
-  def load(option: Anon_Expand): Comment = js.native
-  def load(option: CommentLoadOptions): Comment = js.native
+  def load(options: CommentLoadOptions): Comment = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Comment = js.native
+  def load(propertyNames: String): Comment = js.native
+  def load(propertyNames: js.Array[String]): Comment = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Comment): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -136,5 +142,15 @@ class Comment () extends ClientObject {
     * Whereas the original Excel.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): CommentData = js.native
+  /**
+    *
+    * Updates the comment content with a specially formatted string and a list of mentions.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param contentWithMentions The content for the comment. This contains a specially formatted string and a list of mentions that will be parsed into the string when displayed by Excel.
+    */
+  def updateMentions(contentWithMentions: CommentRichContent): Unit = js.native
 }
 

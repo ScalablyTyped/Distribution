@@ -12,6 +12,7 @@ package object clientsTranscribeserviceMod {
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DateTime = Date
   type FailureReason = String
+  type KMSKeyId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`en-US`
     - typings.awsDashSdk.awsDashSdkStrings.`es-US`

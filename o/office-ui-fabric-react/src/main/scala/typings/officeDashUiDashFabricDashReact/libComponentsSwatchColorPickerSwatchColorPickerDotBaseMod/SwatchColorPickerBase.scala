@@ -12,6 +12,7 @@ class SwatchColorPickerBase protected ()
   extends Component[ISwatchColorPickerProps, ISwatchColorPickerState, js.Any] {
   def this(props: ISwatchColorPickerProps) = this()
   var _cellFocused: js.Any = js.native
+  var _getItemsWithIndex: js.Any = js.native
   /**
     * Get the selected item's index
     * @param items - The items to search

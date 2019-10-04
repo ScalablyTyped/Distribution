@@ -6,8 +6,8 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.bilinear
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.nearest
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
-import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
 import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.FusedBatchMatMulConfig
+import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.FusedConv2DConfig
 import typings.atTensorflowTfjsDashCore.distTensorMod.Backend
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
@@ -148,17 +148,8 @@ class KernelBackend ()
   def floor[T /* <: Tensor[Rank] */](x: T): T = js.native
   def floorDiv(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def fusedBatchMatMul(hasABTransposeATransposeBBiasActivationPreluActivationWeights: FusedBatchMatMulConfig): Tensor3D = js.native
-  def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
-  def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo, bias: Tensor4D): Tensor4D = js.native
-  def fusedConv2d(x: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo, bias: Tensor4D, activation: Activation): Tensor4D = js.native
-  def fusedConv2d(
-    x: Tensor4D,
-    filter: Tensor4D,
-    convInfo: Conv2DInfo,
-    bias: Tensor4D,
-    activation: Activation,
-    preluActivationWeights: Tensor[Rank]
-  ): Tensor4D = js.native
+  def fusedConv2d(hasInputFilterConvInfoBiasActivationPreluActivationWeights: FusedConv2DConfig): Tensor4D = js.native
+  def fusedDepthwiseConv2D(hasInputFilterConvInfoBiasActivationPreluActivationWeights: FusedConv2DConfig): Tensor4D = js.native
   def gather[T /* <: Tensor[Rank] */](x: T, indices: Tensor1D, axis: Double): T = js.native
   def gatherND(x: Tensor[Rank], indices: Tensor[Rank]): Tensor[Rank] = js.native
   def greater(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
@@ -213,6 +204,7 @@ class KernelBackend ()
   def realDivide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def reciprocal[T /* <: Tensor[Rank] */](x: T): T = js.native
   def relu[T /* <: Tensor[Rank] */](x: T): T = js.native
+  def relu6[T /* <: Tensor[Rank] */](x: T): T = js.native
   def reshape[T /* <: Tensor[Rank] */, R /* <: Rank */](
     x: T,
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any

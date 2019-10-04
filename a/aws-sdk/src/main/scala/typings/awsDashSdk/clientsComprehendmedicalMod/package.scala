@@ -5,8 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsComprehendmedicalMod {
+  import typings.awsDashSdk.awsDashSdkStrings.en
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
+  import typings.std.Date
 
+  type AnyLengthString = java.lang.String
   type AttributeList = js.Array[Attribute]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SIGN
@@ -18,6 +21,8 @@ package object clientsComprehendmedicalMod {
   type AttributeName = _AttributeName | java.lang.String
   type BoundedLengthString = java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  type ClientRequestTokenString = java.lang.String
+  type ComprehendMedicalAsyncJobPropertiesList = js.Array[ComprehendMedicalAsyncJobProperties]
   type EntityList = js.Array[Entity]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NAME
@@ -61,8 +66,30 @@ package object clientsComprehendmedicalMod {
   */
   type EntityType = _EntityType | java.lang.String
   type Float = Double
+  type IamRoleArn = java.lang.String
   type Integer = Double
+  type JobId = java.lang.String
+  type JobName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SUBMITTED
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
+    - typings.awsDashSdk.awsDashSdkStrings.PARTIAL_SUCCESS
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.STOP_REQUESTED
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPED
+    - java.lang.String
+  */
+  type JobStatus = _JobStatus | java.lang.String
+  type KMSKey = java.lang.String
+  type LanguageCode = en | java.lang.String
+  type ManifestFilePath = java.lang.String
+  type MaxResultsInteger = Double
+  type ModelVersion = java.lang.String
+  type S3Bucket = java.lang.String
+  type S3Key = java.lang.String
   type String = java.lang.String
+  type Timestamp = Date
   type TraitList = js.Array[Trait]
   type UnmappedAttributeList = js.Array[UnmappedAttribute]
   /* Rewritten from type alias, can be one of: 

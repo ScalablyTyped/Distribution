@@ -20,4 +20,3 @@
 [E] Failed to compile 'p-lazy'
  [id => p-lazy, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [p-lazy => Compilation failed] [id => p-lazy, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [p-lazy => Compilation failed] [id => p-lazy, phase => publish] 

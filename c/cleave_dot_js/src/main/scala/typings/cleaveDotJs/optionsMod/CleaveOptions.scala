@@ -14,6 +14,7 @@ trait CleaveOptions extends js.Object {
   var date: js.UndefOr[Boolean] = js.undefined
   var datePattern: js.UndefOr[js.Array[String]] = js.undefined
   var delimiter: js.UndefOr[String] = js.undefined
+  var delimiterLazyShow: js.UndefOr[Boolean] = js.undefined
   var delimiters: js.UndefOr[js.Array[String]] = js.undefined
   var initValue: js.UndefOr[js.Any] = js.undefined
   var lowercase: js.UndefOr[Boolean] = js.undefined
@@ -48,6 +49,7 @@ object CleaveOptions {
     date: js.UndefOr[Boolean] = js.undefined,
     datePattern: js.Array[String] = null,
     delimiter: String = null,
+    delimiterLazyShow: js.UndefOr[Boolean] = js.undefined,
     delimiters: js.Array[String] = null,
     initValue: js.Any = null,
     lowercase: js.UndefOr[Boolean] = js.undefined,
@@ -79,6 +81,7 @@ object CleaveOptions {
     if (!js.isUndefined(date)) __obj.updateDynamic("date")(date)
     if (datePattern != null) __obj.updateDynamic("datePattern")(datePattern)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(delimiterLazyShow)) __obj.updateDynamic("delimiterLazyShow")(delimiterLazyShow)
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
     if (initValue != null) __obj.updateDynamic("initValue")(initValue)
     if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase)

@@ -1,5 +1,6 @@
 package typings.atGuardianProsemirrorDashInvisibles.atGuardianProsemirrorDashInvisiblesMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Node
 import typings.prosemirrorDashState.prosemirrorDashStateMod.Plugin
 import typings.prosemirrorDashView.prosemirrorDashViewMod.Decoration
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def character(`type`: String): js.Function1[/* predicate */ js.Function1[/* char */ String, Boolean], Builder] = js.native
-  def createDeco(pos: Double, `type`: String): Decoration = js.native
+  def createDeco(pos: Double, `type`: String): Decoration[StringDictionary[_]] = js.native
   def default(builders: js.Array[Builder]): Plugin[_, _] = js.native
   def hardBreak(): Builder = js.native
   def hardBreak(predicate: js.Function1[/* node */ Node[_], Boolean]): Builder = js.native

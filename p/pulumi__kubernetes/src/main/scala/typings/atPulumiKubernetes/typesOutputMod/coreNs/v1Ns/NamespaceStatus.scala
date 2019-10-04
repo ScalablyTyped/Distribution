@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
   */
 trait NamespaceStatus extends js.Object {
   /**
+    * Represents the latest available observations of a namespace's current state.
+    */
+  val conditions: js.Array[NamespaceCondition]
+  /**
     * Phase is the current lifecycle phase of the namespace. More info:
     * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
     */
@@ -17,8 +21,8 @@ trait NamespaceStatus extends js.Object {
 
 object NamespaceStatus {
   @scala.inline
-  def apply(phase: String): NamespaceStatus = {
-    val __obj = js.Dynamic.literal(phase = phase)
+  def apply(conditions: js.Array[NamespaceCondition], phase: String): NamespaceStatus = {
+    val __obj = js.Dynamic.literal(conditions = conditions, phase = phase)
   
     __obj.asInstanceOf[NamespaceStatus]
   }

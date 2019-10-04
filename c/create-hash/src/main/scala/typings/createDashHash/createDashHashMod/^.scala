@@ -1,6 +1,5 @@
 package typings.createDashHash.createDashHashMod
 
-import typings.node.cryptoMod.Hash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("create-hash", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(algo: Algorithm): Hash = js.native
+  def apply(algorithm: algorithm): HashAlgorithm = js.native
+  def apply(algorithm: algorithm, options: js.Any): HashAlgorithm = js.native
 }
 

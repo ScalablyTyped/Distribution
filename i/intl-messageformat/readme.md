@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-messageformat
 
-Typings are for version 5.4.3
+Typings are for version 7.3.2
 
 ## Library description:
 Formats ICU Message strings with number, date, plural, and select placeholders to create localized messages.

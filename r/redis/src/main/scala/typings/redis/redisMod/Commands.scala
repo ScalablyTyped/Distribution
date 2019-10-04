@@ -2,6 +2,7 @@ package typings.redis.redisMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.redis.redisStrings.AFTER
+import typings.redis.redisStrings.ASYNC
 import typings.redis.redisStrings.BEFORE
 import typings.redis.redisStrings.OK
 import scala.scalajs.js
@@ -1108,7 +1109,15 @@ trait Commands[R] extends js.Object {
   def EXPIREAT(key: String, timestamp: Double, cb: Callback[Double]): R = js.native
   def FLUSHALL(): R = js.native
   def FLUSHALL(cb: Callback[String]): R = js.native
+  @JSName("FLUSHALL")
+  def FLUSHALL_ASYNC(async: ASYNC): R = js.native
+  @JSName("FLUSHALL")
+  def FLUSHALL_ASYNC(async: ASYNC, cb: Callback[String]): R = js.native
   def FLUSHDB(): R = js.native
+  @JSName("FLUSHDB")
+  def FLUSHDB_ASYNC(async: ASYNC): R = js.native
+  @JSName("FLUSHDB")
+  def FLUSHDB_ASYNC(async: ASYNC, cb: Callback[String]): R = js.native
   @JSName("FLUSHDB")
   def FLUSHDB_OK(cb: Callback[OK]): R = js.native
   def GEOADD(args: (String | Double | Callback[Double])*): R = js.native
@@ -5101,10 +5110,18 @@ trait Commands[R] extends js.Object {
     */
   def flushall(): R = js.native
   def flushall(cb: Callback[String]): R = js.native
+  @JSName("flushall")
+  def flushall_ASYNC(async: ASYNC): R = js.native
+  @JSName("flushall")
+  def flushall_ASYNC(async: ASYNC, cb: Callback[String]): R = js.native
   /**
     * Remove all keys from the current database.
     */
   def flushdb(): R = js.native
+  @JSName("flushdb")
+  def flushdb_ASYNC(async: ASYNC): R = js.native
+  @JSName("flushdb")
+  def flushdb_ASYNC(async: ASYNC, cb: Callback[String]): R = js.native
   @JSName("flushdb")
   def flushdb_OK(cb: Callback[OK]): R = js.native
   /**

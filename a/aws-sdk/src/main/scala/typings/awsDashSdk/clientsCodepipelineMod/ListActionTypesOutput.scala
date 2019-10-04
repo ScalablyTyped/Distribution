@@ -10,7 +10,7 @@ trait ListActionTypesOutput extends js.Object {
     */
   var actionTypes: ActionTypeList
   /**
-    * If the amount of returned information is significantly large, an identifier is also returned which can be used in a subsequent list action types call to return the next set of action types in the list.
+    * If the amount of returned information is significantly large, an identifier is also returned. It can be used in a subsequent list action types call to return the next set of action types in the list.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }

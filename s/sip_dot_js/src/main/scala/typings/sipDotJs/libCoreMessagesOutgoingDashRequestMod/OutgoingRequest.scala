@@ -13,8 +13,8 @@ trait OutgoingRequest extends js.Object {
   val message: OutgoingRequestMessage = js.native
   /**
     * Sends a CANCEL message targeting this request to the UAS.
-    * @param reason Reason for canceling request.
-    * @param options Request options bucket.
+    * @param reason - Reason for canceling request.
+    * @param options - Request options bucket.
     */
   def cancel(): Unit = js.native
   def cancel(reason: String): Unit = js.native

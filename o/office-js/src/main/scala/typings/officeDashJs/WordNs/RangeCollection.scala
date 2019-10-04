@@ -25,7 +25,7 @@ class RangeCollection () extends ClientObject {
   val items: js.Array[Range] = js.native
   /**
     *
-    * Gets the first range in this collection. Throws if this collection is empty.
+    * Gets the first range in this collection. Throws an error if this collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

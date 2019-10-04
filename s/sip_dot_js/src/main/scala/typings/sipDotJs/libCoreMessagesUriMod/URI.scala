@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class URI protected () extends Parameters {
   /**
     * Constructor
-    * @param scheme
-    * @param user
-    * @param host
-    * @param port
-    * @param parameters
-    * @param headers
+    * @param scheme -
+    * @param user -
+    * @param host -
+    * @param port -
+    * @param parameters -
+    * @param headers -
     */
   def this(scheme: String, user: String, host: String) = this()
   def this(scheme: String, user: String, host: String, port: Double) = this()

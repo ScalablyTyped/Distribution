@@ -7,11 +7,11 @@ import typings.surveyDashKnockout.Anon_ButtonButtonAddButtonRemoveCell
 import typings.surveyDashKnockout.Anon_Cell
 import typings.surveyDashKnockout.Anon_CellCellText
 import typings.surveyDashKnockout.Anon_CellHeaderCell
-import typings.surveyDashKnockout.Anon_CheckedMark
+import typings.surveyDashKnockout.Anon_CheckedPath
 import typings.surveyDashKnockout.Anon_ChooseFile
-import typings.surveyDashKnockout.Anon_ClearButtonColumn
-import typings.surveyDashKnockout.Anon_ClearButtonImageItem
-import typings.surveyDashKnockout.Anon_Column
+import typings.surveyDashKnockout.Anon_ClearButtonColumnControlLabel
+import typings.surveyDashKnockout.Anon_ClearButtonImageItemItemChecked
+import typings.surveyDashKnockout.Anon_ColumnControlLabelItemItemChecked
 import typings.surveyDashKnockout.Anon_Complete
 import typings.surveyDashKnockout.Anon_ContainerDescription
 import typings.surveyDashKnockout.Anon_ControlOnError
@@ -30,8 +30,8 @@ import scala.scalajs.js.annotation._
 object bemCss extends js.Object {
   var body: String = js.native
   var bodyEmpty: String = js.native
-  var boolean: Anon_CheckedMark = js.native
-  var checkbox: Anon_Column = js.native
+  var boolean: Anon_CheckedPath = js.native
+  var checkbox: Anon_ColumnControlLabelItemItemChecked = js.native
   var comment: Anon_RootSmall = js.native
   var completedPage: String = js.native
   var container: String = js.native
@@ -41,7 +41,7 @@ object bemCss extends js.Object {
   var file: Anon_ChooseFile = js.native
   var footer: String = js.native
   var header: String = js.native
-  var imagepicker: Anon_ClearButtonImageItem = js.native
+  var imagepicker: Anon_ClearButtonImageItemItemChecked = js.native
   var matrix: Anon_CellCellText = js.native
   var matrixdropdown: Anon_CellHeaderCell = js.native
   var matrixdynamic: Anon_ButtonButtonAddButtonRemoveCell = js.native
@@ -57,7 +57,7 @@ object bemCss extends js.Object {
   var progressBar: String = js.native
   var progressText: String = js.native
   var question: Anon_AsCell = js.native
-  var radiogroup: Anon_ClearButtonColumn = js.native
+  var radiogroup: Anon_ClearButtonColumnControlLabel = js.native
   var rating: Anon_Disabled = js.native
   var root: String = js.native
   var row: String = js.native

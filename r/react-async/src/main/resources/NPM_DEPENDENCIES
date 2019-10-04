@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-async" : "7.0.6"
+      "react-async" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-async" : "7.0.6"
+      "react-async" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

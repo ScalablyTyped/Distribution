@@ -1,6 +1,5 @@
 package typings.chartDotJs.chartDotJsMod
 
-import typings.chartDotJs.Anon_Display
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +33,7 @@ trait ChartOptions extends js.Object {
   var responsive: js.UndefOr[Boolean] = js.undefined
   var responsiveAnimationDuration: js.UndefOr[Double] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Anon_Display] = js.undefined
+  var scale: js.UndefOr[RadialLinearScale] = js.undefined
   var scales: js.UndefOr[ChartScales] = js.undefined
   var showLines: js.UndefOr[Boolean] = js.undefined
   var spanGaps: js.UndefOr[Boolean] = js.undefined
@@ -64,7 +63,7 @@ object ChartOptions {
     responsive: js.UndefOr[Boolean] = js.undefined,
     responsiveAnimationDuration: Int | Double = null,
     rotation: Int | Double = null,
-    scale: Anon_Display = null,
+    scale: RadialLinearScale = null,
     scales: ChartScales = null,
     showLines: js.UndefOr[Boolean] = js.undefined,
     spanGaps: js.UndefOr[Boolean] = js.undefined,

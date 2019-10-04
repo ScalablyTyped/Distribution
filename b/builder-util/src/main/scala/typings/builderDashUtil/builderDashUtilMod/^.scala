@@ -40,7 +40,7 @@ object ^ extends js.Object {
   def executeAppBuilder(
     args: js.Array[String],
     childProcessConsumer: js.Function1[/* childProcess */ ChildProcess, Unit],
-    extraOptions: ExecFileOptions
+    extraOptions: SpawnOptions
   ): js.Promise[String] = js.native
   def getArchCliNames(): js.Array[String] = js.native
   def getArchSuffix(arch: typings.builderDashUtil.outArchMod.Arch): String = js.native
@@ -59,9 +59,9 @@ object ^ extends js.Object {
   def replaceDefault(inList: Null, defaultList: js.Array[String]): js.Array[String] = js.native
   def safeStringifyJson(data: js.Any): String = js.native
   def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = js.native
-  def serializeToYaml(`object`: js.Object): String = js.native
-  def serializeToYaml(`object`: js.Object, skipInvalid: Boolean): String = js.native
-  def serializeToYaml(`object`: js.Object, skipInvalid: Boolean, noRefs: Boolean): String = js.native
+  def serializeToYaml(`object`: js.Any): String = js.native
+  def serializeToYaml(`object`: js.Any, skipInvalid: Boolean): String = js.native
+  def serializeToYaml(`object`: js.Any, skipInvalid: Boolean, noRefs: Boolean): String = js.native
   def spawn(command: String): js.Promise[_] = js.native
   def spawn(command: String, args: js.Array[String]): js.Promise[_] = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptions): js.Promise[_] = js.native
@@ -70,8 +70,7 @@ object ^ extends js.Object {
   def spawn(command: String, args: Null, options: SpawnOptions, extraOptions: ExtraSpawnOptions): js.Promise[_] = js.native
   def spawnAndWrite(command: String, args: js.Array[String], data: String): js.Promise[_] = js.native
   def spawnAndWrite(command: String, args: js.Array[String], data: String, options: SpawnOptions): js.Promise[_] = js.native
-  def toLinuxArchString(arch: typings.builderDashUtil.outArchMod.Arch): String = js.native
-  def toLinuxArchString(arch: typings.builderDashUtil.outArchMod.Arch, isSnap: Boolean): String = js.native
+  def toLinuxArchString(arch: typings.builderDashUtil.outArchMod.Arch, targetName: String): String = js.native
   def use[T, R](value: T, task: js.Function1[/* it */ T, R]): R | Null = js.native
   def use[T, R](value: Null, task: js.Function1[/* it */ T, R]): R | Null = js.native
 }

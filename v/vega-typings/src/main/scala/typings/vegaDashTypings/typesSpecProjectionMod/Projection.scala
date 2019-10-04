@@ -7,65 +7,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Projection extends js.Object {
-  /*
-    * The center of the projection.
-    */
-  var center: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
-  /*
-    * The clip angle of the projection.
-    */
-  var clipAngle: js.UndefOr[Double | SignalRef] = js.undefined
-  /*
-    * Sets the projection’s viewport clip extent to the specified bounds in pixels
-    */
-  var clipExtent: js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef] = js.undefined
-  // TODO: use a union tagged by the projection type to determine which of the following is applicable
-  /* The following properties are all supported for specific types of projections. Consult the d3-geo-projection library for more information: https://github.com/d3/d3-geo-projection */
-  var coefficient: js.UndefOr[Double] = js.undefined
-  var distance: js.UndefOr[Double] = js.undefined
-  /*
-    * Used in conjunction with fit, provides the pixel area to which the projection should be automatically fit.
-    */
-  var extent: js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef] = js.undefined
-  /*
-    * GeoJSON data to which the projection should attempt to automatically fit the translate and scale parameters..
-    */
-  var fit: js.UndefOr[Fit | js.Array[Fit] | SignalRef] = js.undefined
-  var fraction: js.UndefOr[Double] = js.undefined
-  var lobes: js.UndefOr[Double] = js.undefined
+trait Projection extends BaseProjection {
   /*
     * The name of the projection.
     */
   var name: String
-  var parallel: js.UndefOr[Double] = js.undefined
-  var parallels: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
-  var pointRadius: js.UndefOr[Double | SignalRef] = js.undefined
-  /*
-    * The desired precision of the projection.
-    */
-  var precision: js.UndefOr[Double | SignalRef] = js.undefined
-  var radius: js.UndefOr[Double] = js.undefined
-  var ratio: js.UndefOr[Double] = js.undefined
-  /**
-    * The rotation of the projection.
-    */
-  var rotate: js.UndefOr[(Vector3[Double | SignalRef]) | SignalRef] = js.undefined
-  var scale: js.UndefOr[Double | SignalRef] = js.undefined
-  /*
-    * Used in conjunction with fit, provides the width and height in pixels of the area to which the projection should be automatically fit.
-    */
-  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
-  var spacing: js.UndefOr[Double] = js.undefined
-  var tilt: js.UndefOr[Double] = js.undefined
-  /*
-    * The translation of the projection.
-    */
-  var translate: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
-  /*
-    * The type of the projection.
-    */
-  var `type`: ProjectionType | SignalRef
 }
 
 object Projection {

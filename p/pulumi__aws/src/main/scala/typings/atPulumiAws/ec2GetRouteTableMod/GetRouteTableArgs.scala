@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetRouteTableFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetRouteTableArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.undefined
   /**
     * The id of the specific Route Table to retrieve.
     */
@@ -33,7 +33,7 @@ trait GetRouteTableArgs extends js.Object {
 object GetRouteTableArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetRouteTableFilter] = null,
     routeTableId: String = null,
     subnetId: String = null,
     tags: StringDictionary[js.Any] = null,

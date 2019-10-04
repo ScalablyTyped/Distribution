@@ -1,8 +1,8 @@
 package typings.atPulumiAws.wafregionalWebAclMod
 
-import typings.atPulumiAws.Anon_ActionOverrideActionPriority
-import typings.atPulumiAws.Anon_LogDestinationRedactedFields
-import typings.atPulumiAws.Anon_TypeInputString
+import typings.atPulumiAws.typesInputMod.wafregionalNs.WebAclDefaultAction
+import typings.atPulumiAws.typesInputMod.wafregionalNs.WebAclLoggingConfiguration
+import typings.atPulumiAws.typesInputMod.wafregionalNs.WebAclRule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +16,11 @@ trait WebAclState extends js.Object {
   /**
     * The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.
     */
-  val defaultAction: js.UndefOr[Input[Anon_TypeInputString]] = js.undefined
+  val defaultAction: js.UndefOr[Input[WebAclDefaultAction]] = js.undefined
   /**
     * Configuration block to enable WAF logging. Detailed below.
     */
-  val loggingConfiguration: js.UndefOr[Input[Anon_LogDestinationRedactedFields]] = js.undefined
+  val loggingConfiguration: js.UndefOr[Input[WebAclLoggingConfiguration]] = js.undefined
   /**
     * The name or description for the Amazon CloudWatch metric of this web ACL.
     */
@@ -32,18 +32,18 @@ trait WebAclState extends js.Object {
   /**
     * Set of configuration blocks containing rules for the web ACL. Detailed below.
     */
-  val rules: js.UndefOr[Input[js.Array[Input[Anon_ActionOverrideActionPriority]]]] = js.undefined
+  val rules: js.UndefOr[Input[js.Array[Input[WebAclRule]]]] = js.undefined
 }
 
 object WebAclState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    defaultAction: Input[Anon_TypeInputString] = null,
-    loggingConfiguration: Input[Anon_LogDestinationRedactedFields] = null,
+    defaultAction: Input[WebAclDefaultAction] = null,
+    loggingConfiguration: Input[WebAclLoggingConfiguration] = null,
     metricName: Input[String] = null,
     name: Input[String] = null,
-    rules: Input[js.Array[Input[Anon_ActionOverrideActionPriority]]] = null
+    rules: Input[js.Array[Input[WebAclRule]]] = null
   ): WebAclState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

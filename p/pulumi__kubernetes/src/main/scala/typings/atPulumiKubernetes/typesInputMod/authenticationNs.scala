@@ -2,8 +2,9 @@ package typings.atPulumiKubernetes.typesInputMod
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1Ns.BoundObjectReference
+import typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1Ns.TokenRequestSpec
 import typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1Ns.TokenReviewSpec
-import typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1Ns.TokenReviewStatus
 import typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1Ns.UserInfo
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
@@ -18,6 +19,91 @@ object authenticationNs extends js.Object {
   @js.native
   object v1Ns extends js.Object {
     /**
+      * BoundObjectReference is a reference to an object that a token is bound to.
+      */
+    trait BoundObjectReference extends js.Object {
+      /**
+        * API version of the referent.
+        */
+      var apiVersion: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
+        */
+      var kind: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Name of the referent.
+        */
+      var name: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * UID of the referent.
+        */
+      var uid: js.UndefOr[Input[String]] = js.undefined
+    }
+    
+    /**
+      * TokenRequest requests a token for a given service account.
+      */
+    trait TokenRequest extends js.Object {
+      /**
+        * APIVersion defines the versioned schema of this representation of an object. Servers should
+        * convert recognized schemas to the latest internal value, and may reject unrecognized
+        * values. More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+        */
+      var apiVersion: js.UndefOr[Input[`authenticationDOTk8sDOTio/v1`]] = js.undefined
+      /**
+        * Kind is a string value representing the REST resource this object represents. Servers may
+        * infer this from the endpoint the client submits requests to. Cannot be updated. In
+        * CamelCase. More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+        */
+      var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.TokenRequest]] = js.undefined
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
+      var spec: Input[TokenRequestSpec]
+    }
+    
+    /**
+      * TokenRequestSpec contains client provided parameters of a token request.
+      */
+    trait TokenRequestSpec extends js.Object {
+      /**
+        * Audiences are the intendend audiences of the token. A recipient of a token must identitfy
+        * themself with an identifier in the list of audiences of the token, and otherwise should
+        * reject the token. A token issued for multiple audiences may be used to authenticate against
+        * any of the audiences listed but implies a high degree of trust between the target
+        * audiences.
+        */
+      var audiences: Input[js.Array[Input[String]]]
+      /**
+        * BoundObjectRef is a reference to an object that the token will be bound to. The token will
+        * only be valid for as long as the bound object exists. NOTE: The API server's TokenReview
+        * endpoint will validate the BoundObjectRef, but other audiences may not. Keep
+        * ExpirationSeconds small if you want prompt revocation.
+        */
+      var boundObjectRef: js.UndefOr[Input[BoundObjectReference]] = js.undefined
+      /**
+        * ExpirationSeconds is the requested duration of validity of the request. The token issuer
+        * may return a token with a different validity duration so a client needs to check the
+        * 'expiration' field in a response.
+        */
+      var expirationSeconds: js.UndefOr[Input[Double]] = js.undefined
+    }
+    
+    /**
+      * TokenRequestStatus is the result of a token request.
+      */
+    trait TokenRequestStatus extends js.Object {
+      /**
+        * ExpirationTimestamp is the time of expiration of the returned token.
+        */
+      var expirationTimestamp: Input[String]
+      /**
+        * Token is the opaque bearer token.
+        */
+      var token: Input[String]
+    }
+    
+    /**
       * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may
       * be cached by the webhook token authenticator plugin in the kube-apiserver.
       */
@@ -26,14 +112,14 @@ object authenticationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authenticationDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.TokenReview]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -41,10 +127,6 @@ object authenticationNs extends js.Object {
         * Spec holds information about the request being evaluated
         */
       var spec: Input[TokenReviewSpec]
-      /**
-        * Status is filled in by the server and indicates whether the request can be authenticated.
-        */
-      var status: js.UndefOr[Input[TokenReviewStatus]] = js.undefined
     }
     
     /**
@@ -115,6 +197,8 @@ object authenticationNs extends js.Object {
       var username: js.UndefOr[Input[String]] = js.undefined
     }
     
+    def isBoundObjectReference(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.BoundObjectReference */ Boolean = js.native
+    def isTokenRequest(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.TokenRequest */ Boolean = js.native
     def isTokenReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.TokenReview */ Boolean = js.native
   }
   
@@ -130,14 +214,14 @@ object authenticationNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`authenticationDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.TokenReview]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -147,14 +231,6 @@ object authenticationNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1beta1Ns.TokenReviewSpec
           ]
-      /**
-        * Status is filled in by the server and indicates whether the request can be authenticated.
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.authenticationNs.v1beta1Ns.TokenReviewStatus
-            ]
-          ] = js.undefined
     }
     
     /**

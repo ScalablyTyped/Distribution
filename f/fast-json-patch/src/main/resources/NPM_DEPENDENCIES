@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fast-json-patch" : "2.2.1"
+      "fast-json-patch" : "3.0.0-1"
     }
   ],
   "test-dependencies" : [
     {
-      "fast-json-patch" : "2.2.1"
+      "fast-json-patch" : "3.0.0-1"
     }
   ],
   "compile-devDependencies" : [

@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation._
   * @beta
   */
 trait CommentReplyCollectionLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
@@ -56,12 +59,28 @@ trait CommentReplyCollectionLoadOptions extends js.Object {
   var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Gets the entities (e.g. people) that are mentioned in comments.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var mentions: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * For EACH ITEM in the collection: Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var richContent: js.UndefOr[Boolean] = js.undefined
 }
 
 object CommentReplyCollectionLoadOptions {
@@ -73,7 +92,9 @@ object CommentReplyCollectionLoadOptions {
     content: js.UndefOr[Boolean] = js.undefined,
     creationDate: js.UndefOr[Boolean] = js.undefined,
     id: js.UndefOr[Boolean] = js.undefined,
-    resolved: js.UndefOr[Boolean] = js.undefined
+    mentions: js.UndefOr[Boolean] = js.undefined,
+    resolved: js.UndefOr[Boolean] = js.undefined,
+    richContent: js.UndefOr[Boolean] = js.undefined
   ): CommentReplyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
@@ -82,7 +103,9 @@ object CommentReplyCollectionLoadOptions {
     if (!js.isUndefined(content)) __obj.updateDynamic("content")(content)
     if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions)
     if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
+    if (!js.isUndefined(richContent)) __obj.updateDynamic("richContent")(richContent)
     __obj.asInstanceOf[CommentReplyCollectionLoadOptions]
   }
 }

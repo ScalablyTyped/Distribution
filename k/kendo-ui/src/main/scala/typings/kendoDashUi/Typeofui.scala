@@ -41,6 +41,7 @@ trait Typeofui extends js.Object {
     typings.kendoDashUi.kendoNs.uiNs.DropTargetArea
   ] = js.native
   var Editor: TypeofClassEditor = js.native
+  var Filter: TypeofClassFilter = js.native
   var FilterMenu: TypeofClassFilterMenu = js.native
   var FlatColorPicker: TypeofClassFlatColorPicker = js.native
   var Gantt: TypeofClassGantt = js.native
@@ -64,6 +65,7 @@ trait Typeofui extends js.Object {
   var ProgressBar: TypeofClassProgressBar = js.native
   var Prompt: TypeofClassPrompt = js.native
   var RangeSlider: TypeofClassRangeSlider = js.native
+  var Rating: TypeofClassRating = js.native
   var ResponsivePanel: TypeofClassResponsivePanel = js.native
   var Scheduler: TypeofClassScheduler = js.native
   var ScrollView: TypeofClassScrollView = js.native
@@ -74,6 +76,7 @@ trait Typeofui extends js.Object {
   var Switch: TypeofClassSwitch = js.native
   var TabStrip: TypeofClassTabStrip = js.native
   var TimePicker: TypeofClassTimePicker = js.native
+  var Timeline: TypeofClassTimeline = js.native
   var ToolBar: TypeofClassToolBar = js.native
   var Tooltip: TypeofClassTooltip = js.native
   var Touch: TypeofClassTouch = js.native

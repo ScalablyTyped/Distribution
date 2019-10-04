@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Asset
+  * @extends pc.EventHandler
   * @classdesc An asset record of a file or data resource that can be loaded by the engine.
   * The asset contains three important fields:<br/>
   * <strong>file</strong>: contains the details of a file (filename, url) which contains the resource data, e.g. an image file for a texture asset<br/>
@@ -48,7 +49,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.Asset")
 @js.native
-class Asset protected () extends js.Object {
+class Asset protected () extends EventHandler {
   def this(name: String, `type`: String, file: js.Any) = this()
   def this(name: String, `type`: String, file: js.Any, data: js.Any) = this()
   /**

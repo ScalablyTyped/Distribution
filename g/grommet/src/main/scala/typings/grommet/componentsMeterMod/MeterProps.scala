@@ -1,7 +1,7 @@
 package typings.grommet.componentsMeterMod
 
 import typings.grommet.Anon_ArgsColor
-import typings.grommet.Anon_Color
+import typings.grommet.Anon_ColorMedium
 import typings.grommet.grommetStrings.bar
 import typings.grommet.grommetStrings.circle
 import typings.grommet.grommetStrings.full
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 trait MeterProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var background: js.UndefOr[String | Anon_Color] = js.undefined
+  var background: js.UndefOr[String | Anon_ColorMedium] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var round: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ object MeterProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
-    background: String | Anon_Color = null,
+    background: String | Anon_ColorMedium = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
     round: js.UndefOr[Boolean] = js.undefined,

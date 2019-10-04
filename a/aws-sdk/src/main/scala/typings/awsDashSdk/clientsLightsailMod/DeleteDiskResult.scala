@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteDiskResult extends js.Object {
   /**
-    * An object describing the API operations.
+    * An array of objects that describe the result of your request.
     */
   var operations: js.UndefOr[OperationList] = js.undefined
 }

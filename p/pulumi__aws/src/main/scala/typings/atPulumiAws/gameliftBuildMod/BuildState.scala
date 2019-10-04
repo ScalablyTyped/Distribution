@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftBuildMod
 
-import typings.atPulumiAws.Anon_BucketKeyRoleArn
+import typings.atPulumiAws.typesInputMod.gameliftNs.BuildStorageLocation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait BuildState extends js.Object {
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: js.UndefOr[Input[Anon_BucketKeyRoleArn]] = js.undefined
+  val storageLocation: js.UndefOr[Input[BuildStorageLocation]] = js.undefined
   /**
     * Version that is associated with this build.
     */
@@ -30,7 +30,7 @@ object BuildState {
   def apply(
     name: Input[String] = null,
     operatingSystem: Input[String] = null,
-    storageLocation: Input[Anon_BucketKeyRoleArn] = null,
+    storageLocation: Input[BuildStorageLocation] = null,
     version: Input[String] = null
   ): BuildState = {
     val __obj = js.Dynamic.literal()

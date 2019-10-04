@@ -1,13 +1,14 @@
 package typings.appDashBuilderDashLib.outOptionsSnapOptionsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.classic
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.devel
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.devmode
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.stable
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.strict
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
 import typings.appDashBuilderDashLib.outOptionsLinuxOptionsMod.CommonLinuxOptions
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +39,7 @@ trait SnapOptions
   /**
     * The custom environment. Defaults to `{"TMPDIR: "$XDG_RUNTIME_DIR"}`. If you set custom, it will be merged with default.
     */
-  val environment: js.UndefOr[js.Object | Null] = js.undefined
+  val environment: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   /**
     * The quality grade of the snap. It can be either `devel` (i.e. a development version of the snap, so not to be published to the “stable” or “candidate” channels) or “stable” (i.e. a stable release or release candidate, which can be released to all channels).
     * @default stable
@@ -97,7 +98,7 @@ object SnapOptions {
     confinement: devmode | strict | classic = null,
     description: String = null,
     desktop: js.Any = null,
-    environment: js.Object = null,
+    environment: StringDictionary[String] = null,
     grade: devel | stable = null,
     hooks: String = null,
     mimeTypes: js.Array[String] = null,

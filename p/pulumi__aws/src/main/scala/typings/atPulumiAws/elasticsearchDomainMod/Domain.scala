@@ -1,14 +1,14 @@
 package typings.atPulumiAws.elasticsearchDomainMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AutomatedSnapshotStartHour
-import typings.atPulumiAws.Anon_AvailabilityZones
-import typings.atPulumiAws.Anon_CloudwatchLogGroupArn
-import typings.atPulumiAws.Anon_DedicatedMasterCount
-import typings.atPulumiAws.Anon_EbsEnabled
-import typings.atPulumiAws.Anon_EnabledBoolean_1082978225
-import typings.atPulumiAws.Anon_EnabledIdentityPoolId
-import typings.atPulumiAws.Anon_EnabledKmsKeyId
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainClusterConfig
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainCognitoOptions
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainEbsOptions
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainEncryptAtRest
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainLogPublishingOption
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainNodeToNodeEncryption
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainSnapshotOptions
+import typings.atPulumiAws.typesOutputMod.elasticsearchNs.DomainVpcOptions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -49,8 +49,8 @@ class Domain protected () extends CustomResource {
   /**
     * Cluster configuration of the domain, see below.
     */
-  val clusterConfig: Output[Anon_DedicatedMasterCount] = js.native
-  val cognitoOptions: Output[js.UndefOr[Anon_EnabledIdentityPoolId]] = js.native
+  val clusterConfig: Output[DomainClusterConfig] = js.native
+  val cognitoOptions: Output[js.UndefOr[DomainCognitoOptions]] = js.native
   /**
     * Unique identifier for the domain.
     */
@@ -62,7 +62,7 @@ class Domain protected () extends CustomResource {
   /**
     * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
     */
-  val ebsOptions: Output[Anon_EbsEnabled] = js.native
+  val ebsOptions: Output[DomainEbsOptions] = js.native
   /**
     * The version of Elasticsearch to deploy. Defaults to `1.5`
     */
@@ -70,7 +70,7 @@ class Domain protected () extends CustomResource {
   /**
     * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
     */
-  val encryptAtRest: Output[Anon_EnabledKmsKeyId] = js.native
+  val encryptAtRest: Output[DomainEncryptAtRest] = js.native
   /**
     * Domain-specific endpoint used to submit index, search, and data upload requests.
     */
@@ -84,15 +84,15 @@ class Domain protected () extends CustomResource {
   /**
     * Options for publishing slow logs to CloudWatch Logs.
     */
-  val logPublishingOptions: Output[js.UndefOr[js.Array[Anon_CloudwatchLogGroupArn]]] = js.native
+  val logPublishingOptions: Output[js.UndefOr[js.Array[DomainLogPublishingOption]]] = js.native
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: Output[Anon_EnabledBoolean_1082978225] = js.native
+  val nodeToNodeEncryption: Output[DomainNodeToNodeEncryption] = js.native
   /**
     * Snapshot related options, see below.
     */
-  val snapshotOptions: Output[js.UndefOr[Anon_AutomatedSnapshotStartHour]] = js.native
+  val snapshotOptions: Output[js.UndefOr[DomainSnapshotOptions]] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
@@ -100,7 +100,7 @@ class Domain protected () extends CustomResource {
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
-  val vpcOptions: Output[js.UndefOr[Anon_AvailabilityZones]] = js.native
+  val vpcOptions: Output[js.UndefOr[DomainVpcOptions]] = js.native
 }
 
 /* static members */

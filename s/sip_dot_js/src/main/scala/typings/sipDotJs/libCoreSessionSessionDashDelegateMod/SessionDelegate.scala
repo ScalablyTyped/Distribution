@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait SessionDelegate extends js.Object {
   /**
     * Receive ACK request.
-    * @param request Incoming ACK request.
+    * @param request - Incoming ACK request.
     */
   var onAck: js.UndefOr[js.Function1[/* request */ IncomingAckRequest, Unit]] = js.undefined
   /**
@@ -26,36 +26,36 @@ trait SessionDelegate extends js.Object {
   /**
     * Receive BYE request.
     * https://tools.ietf.org/html/rfc3261#section-15.1.2
-    * @param request Incoming BYE request.
+    * @param request - Incoming BYE request.
     */
   var onBye: js.UndefOr[js.Function1[/* request */ IncomingByeRequest, Unit]] = js.undefined
   /**
     * Receive INFO request.
-    * @param request Incoming INFO request.
+    * @param request - Incoming INFO request.
     */
   var onInfo: js.UndefOr[js.Function1[/* request */ IncomingInfoRequest, Unit]] = js.undefined
   /**
     * Receive re-INVITE request.
     * https://tools.ietf.org/html/rfc3261#section-14.2
-    * @param request Incoming INVITE request.
+    * @param request - Incoming INVITE request.
     */
   var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.undefined
   /**
     * Receive NOTIFY request.
     * https://tools.ietf.org/html/rfc6665#section-4.1.3
-    * @param request Incoming NOTIFY request.
+    * @param request - Incoming NOTIFY request.
     */
   var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.undefined
   /**
     * Receive PRACK request.
     * https://tools.ietf.org/html/rfc3262#section-3
-    * @param request Incoming PRACK request.
+    * @param request - Incoming PRACK request.
     */
   var onPrack: js.UndefOr[js.Function1[/* request */ IncomingPrackRequest, Unit]] = js.undefined
   /**
     * Receive REFER request.
     * https://tools.ietf.org/html/rfc3515#section-2.4.2
-    * @param request Incoming REFER request.
+    * @param request - Incoming REFER request.
     */
   var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.undefined
 }

@@ -9,16 +9,37 @@ package object unistDashUtilDashIsMod {
   import typings.unist.unistMod.Node
   import typings.unist.unistMod.Parent
 
-  type Test = TestFunction | Partial[Node] | String | Null
   /**
-    * @param node Node to test
-    * @param index Position of node in parent
-    * @param parent Parent of node
+    * Union of all the types of tests
+    *
+    * @typeParam T type of node that passes test
     */
-  type TestFunction = js.Function3[
+  type Test[T /* <: Node */] = TestType[T] | TestObject[T] | TestFunction[T]
+  /**
+    * Check if a node passes a test
+    *
+    * @param node node to check
+    * @param index index of node in parent
+    * @param parent parent of node
+    * @typeParam T type of node that passes test
+    * @returns true if type T is found, false otherwise
+    */
+  type TestFunction[T /* <: Node */] = js.Function3[
     /* node */ js.Any, 
     /* index */ js.UndefOr[Double], 
     /* parent */ js.UndefOr[Parent], 
-    Boolean | Unit
+    /* is T */ Boolean
   ]
+  /**
+    * Check that some attributes on a node are matched
+    *
+    * @typeParam T type of node that passes test
+    */
+  type TestObject[T /* <: Node */] = Partial[T]
+  /**
+    * Check that type property matches expectation for a node
+    *
+    * @typeParam T type of node that passes test
+    */
+  type TestType[T /* <: Node */] = /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any
 }

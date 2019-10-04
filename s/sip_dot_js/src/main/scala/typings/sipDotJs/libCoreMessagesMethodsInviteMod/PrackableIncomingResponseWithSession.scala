@@ -14,7 +14,7 @@ trait PrackableIncomingResponseWithSession extends IncomingResponse {
   val session: Session = js.native
   /**
     * Send an PRACK to acknowledge this response.
-    * @param options Request options bucket.
+    * @param options - Request options bucket.
     */
   def prack(): OutgoingPrackRequest = js.native
   def prack(options: RequestOptions): OutgoingPrackRequest = js.native

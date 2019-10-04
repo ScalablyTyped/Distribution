@@ -1,6 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.CalendarNs
 
-import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.RichStyle
+import typings.echarts.echartsNs.EChartOptionNs.RichStyle
 import typings.echarts.echartsStrings.`100`
 import typings.echarts.echartsStrings.`200`
 import typings.echarts.echartsStrings.`300`

@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Negative extends js.Object {
-  var negative: String
-  var positive: String
+  var negative: js.UndefOr[String] = js.undefined
+  var positive: js.UndefOr[String] = js.undefined
 }
 
 object Anon_Negative {
   @scala.inline
-  def apply(negative: String, positive: String): Anon_Negative = {
-    val __obj = js.Dynamic.literal(negative = negative, positive = positive)
-  
+  def apply(negative: String = null, positive: String = null): Anon_Negative = {
+    val __obj = js.Dynamic.literal()
+    if (negative != null) __obj.updateDynamic("negative")(negative)
+    if (positive != null) __obj.updateDynamic("positive")(positive)
     __obj.asInstanceOf[Anon_Negative]
   }
 }

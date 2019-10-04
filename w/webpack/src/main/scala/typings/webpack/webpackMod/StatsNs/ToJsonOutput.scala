@@ -14,7 +14,7 @@ trait ToJsonOutput extends js.Object {
   var assets: js.UndefOr[js.Array[Anon_ChunkNames]] = js.undefined
   var assetsByChunkName: js.UndefOr[Record[String, Record[String, js.Array[String]]]] = js.undefined
   var builtAt: js.UndefOr[Double] = js.undefined
-  var children: js.UndefOr[js.Array[ToJsonOptions] with Anon_Name] = js.undefined
+  var children: js.UndefOr[js.Array[ToJsonOutput with Anon_Name]] = js.undefined
   var chunks: js.UndefOr[js.Array[Anon_Children]] = js.undefined
   var entrypoints: js.UndefOr[Record[String, ChunkGroup]] = js.undefined
   var env: js.UndefOr[Record[String, _]] = js.undefined
@@ -42,7 +42,7 @@ object ToJsonOutput {
     assets: js.Array[Anon_ChunkNames] = null,
     assetsByChunkName: Record[String, Record[String, js.Array[String]]] = null,
     builtAt: Int | Double = null,
-    children: js.Array[ToJsonOptions] with Anon_Name = null,
+    children: js.Array[ToJsonOutput with Anon_Name] = null,
     chunks: js.Array[Anon_Children] = null,
     entrypoints: Record[String, ChunkGroup] = null,
     env: Record[String, _] = null,

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolRoleAttachmentMod
 
-import typings.atPulumiAws.Anon_AmbiguousRoleResolutionIdentityProvider
-import typings.atPulumiAws.Anon_AuthenticatedUnauthenticated
+import typings.atPulumiAws.typesInputMod.cognitoNs.IdentityPoolRoleAttachmentRoleMapping
+import typings.atPulumiAws.typesInputMod.cognitoNs.IdentityPoolRoleAttachmentRoles
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,19 +15,19 @@ trait IdentityPoolRoleAttachmentState extends js.Object {
   /**
     * A List of Role Mapping.
     */
-  val roleMappings: js.UndefOr[Input[js.Array[Input[Anon_AmbiguousRoleResolutionIdentityProvider]]]] = js.undefined
+  val roleMappings: js.UndefOr[Input[js.Array[Input[IdentityPoolRoleAttachmentRoleMapping]]]] = js.undefined
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
-  val roles: js.UndefOr[Input[Anon_AuthenticatedUnauthenticated]] = js.undefined
+  val roles: js.UndefOr[Input[IdentityPoolRoleAttachmentRoles]] = js.undefined
 }
 
 object IdentityPoolRoleAttachmentState {
   @scala.inline
   def apply(
     identityPoolId: Input[String] = null,
-    roleMappings: Input[js.Array[Input[Anon_AmbiguousRoleResolutionIdentityProvider]]] = null,
-    roles: Input[Anon_AuthenticatedUnauthenticated] = null
+    roleMappings: Input[js.Array[Input[IdentityPoolRoleAttachmentRoleMapping]]] = null,
+    roles: Input[IdentityPoolRoleAttachmentRoles] = null
   ): IdentityPoolRoleAttachmentState = {
     val __obj = js.Dynamic.literal()
     if (identityPoolId != null) __obj.updateDynamic("identityPoolId")(identityPoolId.asInstanceOf[js.Any])

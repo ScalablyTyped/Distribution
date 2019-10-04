@@ -35,8 +35,8 @@ import scala.scalajs.js.annotation._
   *
   */
 trait ConnectionOptions extends MongoClientOptions {
-  /** Before Mongoose builds indexes, it calls Model.createCollection() 
-    * to create the underlying collection in MongoDB if autoCreate 
+  /** Before Mongoose builds indexes, it calls Model.createCollection()
+    * to create the underlying collection in MongoDB if autoCreate
     * is set to true.(default: false) */
   var autoCreate: js.UndefOr[Boolean] = js.undefined
   var autoIndex: js.UndefOr[Boolean] = js.undefined

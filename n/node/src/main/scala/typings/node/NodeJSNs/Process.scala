@@ -17,6 +17,8 @@ import typings.node.nodeStrings.removeListener
 import typings.node.nodeStrings.uncaughtException
 import typings.node.nodeStrings.unhandledRejection
 import typings.node.nodeStrings.warning
+import typings.node.processMod.Global.NodeJSNs.ReadStream
+import typings.node.processMod.Global.NodeJSNs.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

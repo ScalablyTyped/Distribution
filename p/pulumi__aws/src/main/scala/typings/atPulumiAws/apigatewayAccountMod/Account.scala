@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayAccountMod
 
-import typings.atPulumiAws.Anon_BurstLimit
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.AccountThrottleSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,7 +32,7 @@ class Account protected () extends CustomResource {
   /**
     * Account-Level throttle settings. See exported fields below.
     */
-  val throttleSettings: Output[Anon_BurstLimit] = js.native
+  val throttleSettings: Output[AccountThrottleSettings] = js.native
 }
 
 /* static members */

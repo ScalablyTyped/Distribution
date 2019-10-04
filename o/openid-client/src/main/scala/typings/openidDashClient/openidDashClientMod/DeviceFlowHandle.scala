@@ -15,6 +15,7 @@ class DeviceFlowHandle[TClient /* <: Client */] () extends js.Object {
   var verification_uri: String = js.native
   var verification_uri_complete: String = js.native
   def expired(): Boolean = js.native
+  // tslint:disable-line:no-unnecessary-generics
   def poll(): js.Promise[TokenSet] = js.native
 }
 

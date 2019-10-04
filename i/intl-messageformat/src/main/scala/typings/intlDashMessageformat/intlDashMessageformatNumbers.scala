@@ -1,6 +1,6 @@
 package typings.intlDashMessageformat
 
-import typings.intlDashMessageformat.libFormattersMod.PART_TYPE
+import typings.intlDashMessageformat.distFormattersMod.PART_TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

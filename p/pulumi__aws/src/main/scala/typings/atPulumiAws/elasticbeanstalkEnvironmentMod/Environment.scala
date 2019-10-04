@@ -1,9 +1,10 @@
 package typings.atPulumiAws.elasticbeanstalkEnvironmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameNamespace
 import typings.atPulumiAws.elasticbeanstalkApplicationMod.Application
 import typings.atPulumiAws.elasticbeanstalkApplicationVersionMod.ApplicationVersion
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.EnvironmentAllSetting
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.EnvironmentSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,11 +27,11 @@ class Environment protected () extends CustomResource {
   def this(name: String, args: EnvironmentArgs) = this()
   def this(name: String, args: EnvironmentArgs, opts: CustomResourceOptions) = this()
   /**
-    * List of all option settings configured in the Environment. These
+    * List of all option settings configured in this Environment. These
     * are a combination of default settings and their overrides from `setting` in
     * the configuration.
     */
-  val allSettings: Output[js.Array[Anon_NameNamespace]] = js.native
+  val allSettings: Output[js.Array[EnvironmentAllSetting]] = js.native
   /**
     * Name of the application that contains the version
     * to be deployed
@@ -38,11 +39,11 @@ class Environment protected () extends CustomResource {
   val application: Output[Application] = js.native
   val arn: Output[String] = js.native
   /**
-    * The autoscaling groups used by this environment.
+    * The autoscaling groups used by this Environment.
     */
   val autoscalingGroups: Output[js.Array[String]] = js.native
   /**
-    * Fully qualified DNS name for the Environment.
+    * Fully qualified DNS name for this Environment.
     */
   val cname: Output[String] = js.native
   /**
@@ -55,15 +56,19 @@ class Environment protected () extends CustomResource {
     */
   val description: Output[js.UndefOr[String]] = js.native
   /**
-    * Instances used by this environment.
+    * The URL to the Load Balancer for this Environment
+    */
+  val endpointUrl: Output[String] = js.native
+  /**
+    * Instances used by this Environment.
     */
   val instances: Output[js.Array[String]] = js.native
   /**
-    * Launch configurations in use by this environment.
+    * Launch configurations in use by this Environment.
     */
   val launchConfigurations: Output[js.Array[String]] = js.native
   /**
-    * Elastic load balancers in use by this environment.
+    * Elastic load balancers in use by this Environment.
     */
   val loadBalancers: Output[js.Array[String]] = js.native
   /**
@@ -84,7 +89,7 @@ class Environment protected () extends CustomResource {
     */
   val pollInterval: Output[js.UndefOr[String]] = js.native
   /**
-    * SQS queues in use by this environment.
+    * SQS queues in use by this Environment.
     */
   val queues: Output[js.Array[String]] = js.native
   /**
@@ -92,7 +97,7 @@ class Environment protected () extends CustomResource {
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: Output[js.UndefOr[js.Array[Anon_NameNamespace]]] = js.native
+  val settings: Output[js.UndefOr[js.Array[EnvironmentSetting]]] = js.native
   /**
     * A solution stack to base your environment
     * off of. Example stacks can be found in the [Amazon API documentation][1]
@@ -113,7 +118,7 @@ class Environment protected () extends CustomResource {
     */
   val tier: Output[js.UndefOr[String]] = js.native
   /**
-    * Autoscaling triggers in use by this environment.
+    * Autoscaling triggers in use by this Environment.
     */
   val triggers: Output[js.Array[String]] = js.native
   /**

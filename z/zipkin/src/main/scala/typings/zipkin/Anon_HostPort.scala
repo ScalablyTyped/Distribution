@@ -6,17 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HostPort extends js.Object {
-  var host: js.UndefOr[InetAddress] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var serviceName: String
+  var host: InetAddress
+  var port: Double
 }
 
 object Anon_HostPort {
   @scala.inline
-  def apply(serviceName: String, host: InetAddress = null, port: Int | Double = null): Anon_HostPort = {
-    val __obj = js.Dynamic.literal(serviceName = serviceName)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+  def apply(host: InetAddress, port: Double): Anon_HostPort = {
+    val __obj = js.Dynamic.literal(host = host, port = port)
+  
     __obj.asInstanceOf[Anon_HostPort]
   }
 }

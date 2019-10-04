@@ -9,12 +9,15 @@ trait Anon_ChooseFile extends js.Object {
   var disabled: String
   var fileDecorator: String
   var fileInput: String
-  var highlighted: String
+  var fileSign: String
+  var fileSignBottom: String
   var noFileChosen: String
   var placeholderInput: String
   var preview: String
   var removeButton: String
+  var removeButtonBottom: String
   var removeFile: String
+  var removeFileSvg: String
   var root: String
 }
 
@@ -25,15 +28,18 @@ object Anon_ChooseFile {
     disabled: String,
     fileDecorator: String,
     fileInput: String,
-    highlighted: String,
+    fileSign: String,
+    fileSignBottom: String,
     noFileChosen: String,
     placeholderInput: String,
     preview: String,
     removeButton: String,
+    removeButtonBottom: String,
     removeFile: String,
+    removeFileSvg: String,
     root: String
   ): Anon_ChooseFile = {
-    val __obj = js.Dynamic.literal(chooseFile = chooseFile, disabled = disabled, fileDecorator = fileDecorator, fileInput = fileInput, highlighted = highlighted, noFileChosen = noFileChosen, placeholderInput = placeholderInput, preview = preview, removeButton = removeButton, removeFile = removeFile, root = root)
+    val __obj = js.Dynamic.literal(chooseFile = chooseFile, disabled = disabled, fileDecorator = fileDecorator, fileInput = fileInput, fileSign = fileSign, fileSignBottom = fileSignBottom, noFileChosen = noFileChosen, placeholderInput = placeholderInput, preview = preview, removeButton = removeButton, removeButtonBottom = removeButtonBottom, removeFile = removeFile, removeFileSvg = removeFileSvg, root = root)
   
     __obj.asInstanceOf[Anon_ChooseFile]
   }

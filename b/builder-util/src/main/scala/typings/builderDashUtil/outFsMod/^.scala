@@ -1,7 +1,7 @@
 package typings.builderDashUtil.outFsMod
 
 import typings.builderDashUtil.builderDashUtilNumbers.`8`
-import typings.fsDashExtraDashP.fsDashExtraDashPMod.Stats
+import typings.fsDashExtra.fsDashExtraMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ object ^ extends js.Object {
   ): js.Promise[_] = js.native
   def exists(file: String): js.Promise[Boolean] = js.native
   def statOrNull(file: String): js.Promise[Stats | Null] = js.native
-  def unlinkIfExists(file: String): js.Promise[String | Unit] = js.native
+  def unlinkIfExists(file: String): js.Promise[Unit] = js.native
   def walk(initialDirPath: String): js.Promise[js.Array[String]] = js.native
   def walk(initialDirPath: String, filter: Null, consumer: FileConsumer): js.Promise[js.Array[String]] = js.native
   def walk(initialDirPath: String, filter: Filter): js.Promise[js.Array[String]] = js.native

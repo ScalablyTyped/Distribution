@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ScheduleRunConfiguration extends js.Object {
   /**
-    * A list of auxiliary apps for the run.
+    * A list of Upload ARNs for app packages that will be installed alongside your app.
     */
   var auxiliaryApps: js.UndefOr[AmazonResourceNames] = js.undefined
   /**

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.getAmiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.GetAmiFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait GetAmiArgs extends js.Object {
     * several valid keys, for a full reference, check out
     * [describe-images in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetAmiFilter]] = js.undefined
   /**
     * If more than one result is returned, use the most
     * recent AMI.
@@ -43,7 +43,7 @@ object GetAmiArgs {
   def apply(
     owners: js.Array[String],
     executableUsers: js.Array[String] = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetAmiFilter] = null,
     mostRecent: js.UndefOr[Boolean] = js.undefined,
     nameRegex: String = null,
     tags: StringDictionary[js.Any] = null

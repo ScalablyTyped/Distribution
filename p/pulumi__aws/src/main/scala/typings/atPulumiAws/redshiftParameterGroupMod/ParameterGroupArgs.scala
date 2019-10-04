@@ -1,7 +1,7 @@
 package typings.atPulumiAws.redshiftParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValue
+import typings.atPulumiAws.typesInputMod.redshiftNs.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait ParameterGroupArgs extends js.Object {
   /**
     * A list of Redshift parameters to apply.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[Anon_NameValue]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -36,7 +36,7 @@ object ParameterGroupArgs {
     family: Input[String],
     description: Input[String] = null,
     name: Input[String] = null,
-    parameters: Input[js.Array[Input[Anon_NameValue]]] = null,
+    parameters: Input[js.Array[Input[ParameterGroupParameter]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): ParameterGroupArgs = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any])

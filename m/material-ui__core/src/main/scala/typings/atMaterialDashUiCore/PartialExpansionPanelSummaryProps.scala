@@ -136,7 +136,7 @@ trait PartialExpansionPanelSummaryProps extends js.Object {
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var disableRipple: js.UndefOr[Boolean] = js.undefined
   var disableTouchRipple: js.UndefOr[Boolean] = js.undefined
@@ -428,7 +428,7 @@ object PartialExpansionPanelSummaryProps {
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     disableRipple: js.UndefOr[Boolean] = js.undefined,
     disableTouchRipple: js.UndefOr[Boolean] = js.undefined,

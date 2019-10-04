@@ -14,7 +14,7 @@ trait ActionExecution extends js.Object {
     */
   var externalExecutionId: js.UndefOr[ExecutionId] = js.undefined
   /**
-    * The URL of a resource external to AWS that will be used when running the action, for example an external repository URL.
+    * The URL of a resource external to AWS that is used when running the action (for example, an external repository URL).
     */
   var externalExecutionUrl: js.UndefOr[Url] = js.undefined
   /**
@@ -38,7 +38,7 @@ trait ActionExecution extends js.Object {
     */
   var summary: js.UndefOr[ExecutionSummary] = js.undefined
   /**
-    * The system-generated token used to identify a unique approval request. The token for each open approval request can be obtained using the GetPipelineState command and is used to validate that the approval request corresponding to this token is still valid.
+    * The system-generated token used to identify a unique approval request. The token for each open approval request can be obtained using the GetPipelineState command. It is used to validate that the approval request corresponding to this token is still valid.
     */
   var token: js.UndefOr[ActionExecutionToken] = js.undefined
 }

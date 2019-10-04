@@ -5,4 +5,3 @@
 [error] PhaseRunner.scala:88 Failure, [azure-mobile-apps => Couldn't resolve DirectivePathRef(../azure-sb/azure-sb.d.ts)] [id => azure-mobile-apps, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [azure-mobile-apps => Couldn't resolve DirectivePathRef(../azure-sb/azure-sb.d.ts)] [id => azure-mobile-apps, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [azure-mobile-apps => Couldn't resolve DirectivePathRef(../azure-sb/azure-sb.d.ts)] [id => azure-mobile-apps, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [azure-mobile-apps => Couldn't resolve DirectivePathRef(../azure-sb/azure-sb.d.ts)] [id => azure-mobile-apps, phase => publish] 

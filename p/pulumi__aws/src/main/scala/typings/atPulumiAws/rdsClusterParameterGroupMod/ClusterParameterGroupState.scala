@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsClusterParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ApplyMethodName
+import typings.atPulumiAws.typesInputMod.rdsNs.ClusterParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait ClusterParameterGroupState extends js.Object {
   /**
     * A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-cluster-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) after initial creation of the group.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[Anon_ApplyMethodName]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[ClusterParameterGroupParameter]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -46,7 +46,7 @@ object ClusterParameterGroupState {
     family: Input[String] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
-    parameters: Input[js.Array[Input[Anon_ApplyMethodName]]] = null,
+    parameters: Input[js.Array[Input[ClusterParameterGroupParameter]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): ClusterParameterGroupState = {
     val __obj = js.Dynamic.literal()

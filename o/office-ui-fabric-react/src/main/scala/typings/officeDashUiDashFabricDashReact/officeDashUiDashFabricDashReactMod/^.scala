@@ -796,6 +796,7 @@ object ^ extends js.Object {
   def getContrastRatio(color1: IColor, color2: IColor): Double = js.native
   def getDistanceBetweenPoints(point1: IPoint, point2: IPoint): Double = js.native
   def getDocument(): js.UndefOr[Document] = js.native
+  def getDocument(rootElement: Component[js.Object, js.Object, _]): js.UndefOr[Document] = js.native
   def getDocument(rootElement: HTMLElement): js.UndefOr[Document] = js.native
   def getElementIndexPath(fromElement: HTMLElement, toElement: HTMLElement): js.Array[Double] = js.native
   def getFadedOverflowStyle(theme: ITheme): IRawStyle = js.native
@@ -1126,6 +1127,7 @@ object ^ extends js.Object {
   def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = js.native
   def getVirtualParent(child: HTMLElement): js.UndefOr[HTMLElement] = js.native
   def getWindow(): js.UndefOr[Window] = js.native
+  def getWindow(rootElement: Component[js.Object, js.Object, _]): js.UndefOr[Window] = js.native
   def getWindow(rootElement: typings.std.Element): js.UndefOr[Window] = js.native
   def hasHorizontalOverflow(element: HTMLElement): Boolean = js.native
   def hasOverflow(element: HTMLElement): Boolean = js.native
@@ -1178,7 +1180,8 @@ object ^ extends js.Object {
   def memoize[T /* <: js.Function */](target: js.Any, key: String, descriptor: TypedPropertyDescriptor[T]): Anon_Configurable[T] = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: Double): T = js.native
-  def mergeAriaAttributeValues(ariaAttributes: js.UndefOr[String]*): js.UndefOr[String] = js.native
+  @JSName("mergeAriaAttributeValues")
+  def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = js.native
   def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = js.native
   def mergeScopedSettings(): ISettings = js.native
   def mergeScopedSettings(oldSettings: ISettings): ISettings = js.native

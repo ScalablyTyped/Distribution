@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation._
 trait NodeStatus extends js.Object {
   /**
     * List of addresses reachable to the node. Queried from cloud provider, if available. More
-    * info: https://kubernetes.io/docs/concepts/nodes/node/#addresses
+    * info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is
+    * declared as mergeable, but the merge key is not sufficiently unique, which can cause data
+    * corruption when it is merged. Callers should instead use a full-replacement patch. See
+    * http://pr.k8s.io/79391 for an example.
     */
   val addresses: js.Array[NodeAddress]
   /**

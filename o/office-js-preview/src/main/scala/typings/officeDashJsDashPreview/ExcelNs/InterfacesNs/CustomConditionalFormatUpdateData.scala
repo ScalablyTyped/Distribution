@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set({ ... })". */
+/** An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ... })`. */
 trait CustomConditionalFormatUpdateData extends js.Object {
   /**
     *

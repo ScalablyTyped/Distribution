@@ -1,6 +1,5 @@
 package typings.jasmine.jasmineNs
 
-import typings.jasmine.ImplementationCallback
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,16 +13,16 @@ trait Env extends js.Object {
   def addMatchers(matchers: CustomMatcherFactories): Unit = js.native
   def addReporter(reporter: CustomReporter): Unit = js.native
   def addReporter(reporter: Reporter): Unit = js.native
-  def afterAll(afterAllFunction: ImplementationCallback): Unit = js.native
-  def afterAll(afterAllFunction: ImplementationCallback, timeout: Double): Unit = js.native
-  def afterEach(afterEachFunction: ImplementationCallback): Unit = js.native
-  def afterEach(afterEachFunction: ImplementationCallback, timeout: Double): Unit = js.native
+  def afterAll(afterAllFunction: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def afterAll(afterAllFunction: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
+  def afterEach(afterEachFunction: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def afterEach(afterEachFunction: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   def allowRespy(allow: Boolean): Unit = js.native
-  def beforeAll(beforeAllFunction: ImplementationCallback): Unit = js.native
-  def beforeAll(beforeAllFunction: ImplementationCallback, timeout: Double): Unit = js.native
+  def beforeAll(beforeAllFunction: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def beforeAll(beforeAllFunction: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   // ddescribe(description: string, specDefinitions: () => void): Suite; Not a part of jasmine. Angular team adds these
-  def beforeEach(beforeEachFunction: ImplementationCallback): Unit = js.native
-  def beforeEach(beforeEachFunction: ImplementationCallback, timeout: Double): Unit = js.native
+  def beforeEach(beforeEachFunction: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def beforeEach(beforeEachFunction: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   def clearReporters(): Unit = js.native
   def compareObjects_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
   def compareRegExps_(a: RegExp, b: RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native

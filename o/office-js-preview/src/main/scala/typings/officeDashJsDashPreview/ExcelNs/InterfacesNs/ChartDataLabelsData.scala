@@ -21,7 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartDataLabels.toJSON()". */
+/** An interface describing the data returned by calling `chartDataLabels.toJSON()`. */
 trait ChartDataLabelsData extends js.Object {
   /**
     *
@@ -127,7 +127,7 @@ trait ChartDataLabelsData extends js.Object {
   /**
     *
     * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
-    This property is valid only when TextOrientation of data label is 90, -90 or 180.
+    This property is valid only when TextOrientation of data label is -90, 90, or 180.
     *
     * [Api set: ExcelApi 1.8]
     */

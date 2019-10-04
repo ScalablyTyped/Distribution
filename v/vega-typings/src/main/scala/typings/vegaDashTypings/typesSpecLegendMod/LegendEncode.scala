@@ -9,23 +9,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LegendEncode extends js.Object {
-  var entries: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.undefined
+  var entries: js.UndefOr[GuideEncodeEntry[GroupEncodeEntry]] = js.undefined
   var gradient: js.UndefOr[GuideEncodeEntry[RectEncodeEntry]] = js.undefined
   var labels: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.undefined
   var legend: js.UndefOr[GuideEncodeEntry[GroupEncodeEntry]] = js.undefined
   var symbols: js.UndefOr[GuideEncodeEntry[SymbolEncodeEntry]] = js.undefined
-  var title: js.UndefOr[GuideEncodeEntry[GroupEncodeEntry]] = js.undefined
+  var title: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.undefined
 }
 
 object LegendEncode {
   @scala.inline
   def apply(
-    entries: GuideEncodeEntry[TextEncodeEntry] = null,
+    entries: GuideEncodeEntry[GroupEncodeEntry] = null,
     gradient: GuideEncodeEntry[RectEncodeEntry] = null,
     labels: GuideEncodeEntry[TextEncodeEntry] = null,
     legend: GuideEncodeEntry[GroupEncodeEntry] = null,
     symbols: GuideEncodeEntry[SymbolEncodeEntry] = null,
-    title: GuideEncodeEntry[GroupEncodeEntry] = null
+    title: GuideEncodeEntry[TextEncodeEntry] = null
   ): LegendEncode = {
     val __obj = js.Dynamic.literal()
     if (entries != null) __obj.updateDynamic("entries")(entries)

@@ -1,8 +1,5 @@
 package typings.prosemirrorDashView.prosemirrorDashViewMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.prosemirrorDashView.Anon_Event
-import typings.prosemirrorDashView.Anon_InclusiveEnd
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("prosemirror-view", "Decoration")
 @js.native
-class Decoration () extends js.Object {
+class Decoration[T /* <: js.Object */] () extends js.Object {
   /**
     * The start position of the decoration.
     */
@@ -19,7 +16,7 @@ class Decoration () extends js.Object {
     * The spec provided when creating this decoration. Can be useful
     * if you've stored extra information in that object.
     */
-  var spec: StringDictionary[js.Any] = js.native
+  var spec: T = js.native
   /**
     * The end position. Will be the same as `from` for [widget
     * decorations](#view.Decoration^widget).
@@ -35,15 +32,15 @@ object Decoration extends js.Object {
     * Creates an inline decoration, which adds the given attributes to
     * each inline node between `from` and `to`.
     */
-  def `inline`(from: Double, to: Double, attrs: DecorationAttrs): Decoration = js.native
-  def `inline`(from: Double, to: Double, attrs: DecorationAttrs, spec: Anon_InclusiveEnd): Decoration = js.native
+  def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T with InlineDecorationSpec] = js.native
+  def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T with InlineDecorationSpec): Decoration[T with InlineDecorationSpec] = js.native
   /**
     * Creates a node decoration. `from` and `to` should point precisely
     * before and after a node in the document. That node, and only that
     * node, will receive the given attributes.
     */
-  def node(from: Double, to: Double, attrs: DecorationAttrs): Decoration = js.native
-  def node(from: Double, to: Double, attrs: DecorationAttrs, spec: StringDictionary[js.Any]): Decoration = js.native
+  def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T] = js.native
+  def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T): Decoration[T] = js.native
   /**
     * Creates a widget decoration, which is a DOM node that's shown in
     * the document at the given position. It is recommended that you
@@ -52,16 +49,16 @@ object Decoration extends js.Object {
     * also directly pass a DOM node. getPos can be used to find the
     * widget's current document position.
     */
-  def widget(
+  def widget[T /* <: js.Object */](
     pos: Double,
     toDOM: js.Function2[/* view */ EditorView[_], /* getPos */ js.Function0[Double], Node]
-  ): Decoration = js.native
-  def widget(
+  ): Decoration[T with WidgetDecorationSpec] = js.native
+  def widget[T /* <: js.Object */](
     pos: Double,
     toDOM: js.Function2[/* view */ EditorView[_], /* getPos */ js.Function0[Double], Node],
-    spec: Anon_Event
-  ): Decoration = js.native
-  def widget(pos: Double, toDOM: Node): Decoration = js.native
-  def widget(pos: Double, toDOM: Node, spec: Anon_Event): Decoration = js.native
+    spec: T with WidgetDecorationSpec
+  ): Decoration[T with WidgetDecorationSpec] = js.native
+  def widget[T /* <: js.Object */](pos: Double, toDOM: Node): Decoration[T with WidgetDecorationSpec] = js.native
+  def widget[T /* <: js.Object */](pos: Double, toDOM: Node, spec: T with WidgetDecorationSpec): Decoration[T with WidgetDecorationSpec] = js.native
 }
 

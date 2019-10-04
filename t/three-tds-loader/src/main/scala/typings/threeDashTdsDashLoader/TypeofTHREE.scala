@@ -41,6 +41,8 @@ import typings.three.srcConstantsMod.PixelType
 import typings.three.srcConstantsMod.Shading
 import typings.three.srcConstantsMod.ShadowMapType
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.TextureFilter
@@ -87,6 +89,7 @@ trait TypeofTHREE extends js.Object {
   val AdditiveBlending: Blending = js.native
   val AlphaFormat: PixelFormat = js.native
   val AlwaysDepth: DepthModes = js.native
+  val AlwaysStencilFunc: StencilFunc = js.native
   var AmbientLight: Instantiable0[typings.three.threeMod.AmbientLight] = js.native
   var AmbientLightProbe: Instantiable0[typings.three.threeMod.AmbientLightProbe] = js.native
   var AnimationAction: Instantiable0[typings.three.threeMod.AnimationAction] = js.native
@@ -182,7 +185,6 @@ trait TypeofTHREE extends js.Object {
     /* values */ js.Array[js.Any], 
     typings.three.threeMod.ColorKeyframeTrack
   ] = js.native
-  val ColorKeywordsNs: TypeofColorKeywords = js.native
   var CompressedTexture: Instantiable12[
     /* mipmaps */ js.Array[ImageData], 
     /* width */ Double, 
@@ -312,6 +314,8 @@ trait TypeofTHREE extends js.Object {
     typings.three.threeMod.DataTexture3D
   ] = js.native
   var DataTextureLoader: Instantiable0[typings.three.threeMod.DataTextureLoader] = js.native
+  val DecrementStencilOp: StencilOp = js.native
+  val DecrementWrapStencilOp: StencilOp = js.native
   val DefaultLoadingManager: LoadingManager = js.native
   val DepthFormat: PixelFormat = js.native
   val DepthStencilFormat: PixelFormat = js.native
@@ -355,6 +359,7 @@ trait TypeofTHREE extends js.Object {
     typings.three.threeMod.EllipseCurve
   ] = js.native
   val EqualDepth: DepthModes = js.native
+  val EqualStencilFunc: StencilFunc = js.native
   val EquirectangularReflectionMapping: Mapping = js.native
   val EquirectangularRefractionMapping: Mapping = js.native
   var Euler: TypeofClassEuler = js.native
@@ -401,6 +406,8 @@ trait TypeofTHREE extends js.Object {
   val GeometryUtilsNs: TypeofGeometryUtils = js.native
   val GreaterDepth: DepthModes = js.native
   val GreaterEqualDepth: DepthModes = js.native
+  val GreaterEqualStencilFunc: StencilFunc = js.native
+  val GreaterStencilFunc: StencilFunc = js.native
   var GridHelper: Instantiable2[/* size */ Double, /* divisions */ Double, typings.three.threeMod.GridHelper] = js.native
   var Group: Instantiable0[typings.three.threeMod.Group] = js.native
   val HalfFloatType: TextureDataType = js.native
@@ -417,6 +424,8 @@ trait TypeofTHREE extends js.Object {
   var ImageLoader: Instantiable0[typings.three.threeMod.ImageLoader] = js.native
   val ImageUtilsNs: TypeofImageUtils = js.native
   var ImmediateRenderObject: Instantiable1[/* material */ Material, typings.three.threeMod.ImmediateRenderObject] = js.native
+  val IncrementStencilOp: StencilOp = js.native
+  val IncrementWrapStencilOp: StencilOp = js.native
   var InstancedBufferAttribute: Instantiable2[
     /* array */ ArrayLike[Double], 
     /* itemSize */ Double, 
@@ -467,7 +476,8 @@ trait TypeofTHREE extends js.Object {
   val InterpolateDiscrete: InterpolationModes = js.native
   val InterpolateLinear: InterpolationModes = js.native
   val InterpolateSmooth: InterpolationModes = js.native
-  var JSONLoader: Instantiable0[typings.three.threeMod.JSONLoader] = js.native
+  val InvertStencilOp: StencilOp = js.native
+  val KeepStencilOp: StencilOp = js.native
   var KeyframeTrack: TypeofClassKeyframeTrack = js.native
   var LOD: Instantiable0[typings.three.threeMod.LOD] = js.native
   var LatheBufferGeometry: Instantiable1[/* points */ js.Array[Vector2], typings.three.threeMod.LatheBufferGeometry] = js.native
@@ -475,6 +485,8 @@ trait TypeofTHREE extends js.Object {
   var Layers: Instantiable0[typings.three.threeMod.Layers] = js.native
   val LessDepth: DepthModes = js.native
   val LessEqualDepth: DepthModes = js.native
+  val LessEqualStencilFunc: StencilFunc = js.native
+  val LessStencilFunc: StencilFunc = js.native
   var Light: Instantiable0[typings.three.threeMod.Light] = js.native
   var LightProbe: Instantiable0[typings.three.threeMod.LightProbe] = js.native
   var LightShadow: Instantiable1[/* camera */ Camera, typings.three.threeMod.LightShadow] = js.native
@@ -498,8 +510,10 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   val LinearMipMapLinearFilter: TextureFilter = js.native
   val LinearMipMapNearestFilter: TextureFilter = js.native
+  val LinearMipmapLinearFilter: TextureFilter = js.native
+  val LinearMipmapNearestFilter: TextureFilter = js.native
   val LinearToneMapping: ToneMapping = js.native
-  var Loader: TypeofClassLoader = js.native
+  var Loader: Instantiable0[typings.three.threeMod.Loader] = js.native
   var LoaderUtils: TypeofClassLoaderUtils = js.native
   var LoadingManager: Instantiable0[typings.three.threeMod.LoadingManager] = js.native
   val LogLuvEncoding: TextureEncoding = js.native
@@ -538,12 +552,16 @@ trait TypeofTHREE extends js.Object {
   val NearestFilter: TextureFilter = js.native
   val NearestMipMapLinearFilter: TextureFilter = js.native
   val NearestMipMapNearestFilter: TextureFilter = js.native
+  val NearestMipmapLinearFilter: TextureFilter = js.native
+  val NearestMipmapNearestFilter: TextureFilter = js.native
   val NeverDepth: DepthModes = js.native
+  val NeverStencilFunc: StencilFunc = js.native
   val NoBlending: Blending = js.native
   val NoColors: Colors = js.native
   val NoToneMapping: ToneMapping = js.native
   val NormalBlending: Blending = js.native
   val NotEqualDepth: DepthModes = js.native
+  val NotEqualStencilFunc: StencilFunc = js.native
   var NumberKeyframeTrack: Instantiable3[
     /* name */ String, 
     /* times */ js.Array[js.Any], 
@@ -687,6 +705,7 @@ trait TypeofTHREE extends js.Object {
   val RedFormat: PixelFormat = js.native
   val ReinhardToneMapping: ToneMapping = js.native
   val RepeatWrapping: Wrapping = js.native
+  val ReplaceStencilOp: StencilOp = js.native
   val ReverseSubtractEquation: BlendingEquation = js.native
   var RingBufferGeometry: Instantiable6[
     js.UndefOr[/* innerRadius */ Double], 
@@ -709,7 +728,7 @@ trait TypeofTHREE extends js.Object {
   var Scene: Instantiable0[typings.three.threeMod.Scene] = js.native
   val SceneUtilsNs: TypeofSceneUtils = js.native
   var ShaderChunk: Anon_Alphamapfragment = js.native
-  var ShaderLib: Anon_Basic = js.native
+  var ShaderLib: Anon_Background = js.native
   var ShaderMaterial: Instantiable0[typings.three.threeMod.ShaderMaterial] = js.native
   var ShadowMaterial: Instantiable0[typings.three.threeMod.ShadowMaterial] = js.native
   var Shape: Instantiable0[typings.three.threeMod.Shape] = js.native
@@ -838,7 +857,7 @@ trait TypeofTHREE extends js.Object {
   val Uncharted2ToneMapping: ToneMapping = js.native
   var Uniform: Instantiable1[/* value */ js.Any, typings.three.threeMod.Uniform] = js.native
   var UniformsLib: Anon_Aomap = js.native
-  val UniformsUtilsNs: TypeofUniformsUtils = js.native
+  val UniformsUtilsNs: js.Any = js.native
   val UnsignedByteType: TextureDataType = js.native
   val UnsignedInt248Type: PixelType = js.native
   val UnsignedIntType: TextureDataType = js.native
@@ -846,6 +865,7 @@ trait TypeofTHREE extends js.Object {
   val UnsignedShort5551Type: PixelType = js.native
   val UnsignedShort565Type: PixelType = js.native
   val UnsignedShortType: TextureDataType = js.native
+  val VSMShadowMap: ShadowMapType = js.native
   var Vector2: Instantiable0[typings.three.threeMod.Vector2] = js.native
   var Vector3: Instantiable0[typings.three.threeMod.Vector3] = js.native
   var Vector4: Instantiable0[typings.three.threeMod.Vector4] = js.native
@@ -915,14 +935,13 @@ trait TypeofTHREE extends js.Object {
     /* info */ js.Any, 
     typings.three.threeMod.WebGLObjects
   ] = js.native
-  var WebGLProgram: Instantiable7[
+  var WebGLProgram: Instantiable6[
     /* renderer */ WebGLRenderer, 
     /* extensions */ WebGLExtensions, 
     /* code */ String, 
     /* material */ ShaderMaterial, 
     /* shader */ WebGLShader, 
     /* parameters */ WebGLRendererParameters, 
-    /* capabilities */ WebGLCapabilities, 
     typings.three.threeMod.WebGLProgram
   ] = js.native
   var WebGLPrograms: Instantiable3[
@@ -973,16 +992,20 @@ trait TypeofTHREE extends js.Object {
     typings.three.threeMod.WebGLTextures
   ] = js.native
   var WebGLUniforms: TypeofClassWebGLUniforms = js.native
+  var WebVRManager: Instantiable1[/* renderer */ js.Any, typings.three.threeMod.WebVRManager] = js.native
   var WireframeGeometry: Instantiable1[/* geometry */ Geometry, typings.three.threeMod.WireframeGeometry] = js.native
   val WrapAroundEnding: InterpolationEndingModes = js.native
   val ZeroCurvatureEnding: InterpolationEndingModes = js.native
   val ZeroFactor: BlendingDstFactor = js.native
   val ZeroSlopeEnding: InterpolationEndingModes = js.native
+  val ZeroStencilOp: StencilOp = js.native
   val sRGBEncoding: TextureEncoding = js.native
+  def cloneUniforms(uniforms_src: js.Any): js.Any = js.native
   def error(): Unit = js.native
   def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def log(): Unit = js.native
   def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+  def mergeUniforms(uniforms: js.Array[_]): js.Any = js.native
   def warn(): Unit = js.native
   def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
 }

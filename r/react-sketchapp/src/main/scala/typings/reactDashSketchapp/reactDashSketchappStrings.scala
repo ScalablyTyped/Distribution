@@ -15,6 +15,9 @@ import typings.reactDashSketchapp.libComponentsSvgPropsMod.TextAnchor
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.TextDecoration
 import typings.reactDashSketchapp.libComponentsSvgPropsMod._BaselineShift
 import typings.reactDashSketchapp.reactDashSketchappMod.ResizeMode
+import typings.reactDashSketchapp.typesMod.BorderStyle
+import typings.reactDashSketchapp.typesMod.MeasureMode
+import typings.reactDashSketchapp.typesMod.Overflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,6 +64,9 @@ object reactDashSketchappStrings {
   
   @js.native
   sealed trait alphabetic extends AlignmentBaseline
+  
+  @js.native
+  sealed trait `at-most` extends MeasureMode
   
   @js.native
   sealed trait auto extends Spacing
@@ -115,10 +121,10 @@ object reactDashSketchappStrings {
   sealed trait cover extends ResizeMode
   
   @js.native
-  sealed trait dashed extends js.Object
+  sealed trait dashed extends BorderStyle
   
   @js.native
-  sealed trait dotted extends js.Object
+  sealed trait dotted extends BorderStyle
   
   @js.native
   sealed trait double extends js.Object
@@ -131,6 +137,9 @@ object reactDashSketchappStrings {
   
   @js.native
   sealed trait exact extends Spacing
+  
+  @js.native
+  sealed trait exactly extends MeasureMode
   
   @js.native
   sealed trait expanded extends FontStretch
@@ -151,7 +160,7 @@ object reactDashSketchappStrings {
   sealed trait hanging extends AlignmentBaseline
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden extends Overflow
   
   @js.native
   sealed trait ideographic extends AlignmentBaseline
@@ -170,6 +179,9 @@ object reactDashSketchappStrings {
   
   @js.native
   sealed trait `line-through` extends TextDecoration
+  
+  @js.native
+  sealed trait lowercase extends js.Object
   
   @js.native
   sealed trait ltr extends js.Object
@@ -239,7 +251,7 @@ object reactDashSketchappStrings {
   sealed trait rtl extends js.Object
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll extends Overflow
   
   @js.native
   sealed trait `semi-condensed` extends FontStretch
@@ -260,7 +272,7 @@ object reactDashSketchappStrings {
   sealed trait smooth extends MidLine
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid extends BorderStyle
   
   @js.native
   sealed trait `space-around` extends js.Object
@@ -313,13 +325,19 @@ object reactDashSketchappStrings {
   sealed trait `ultra-expanded` extends FontStretch
   
   @js.native
+  sealed trait undefined extends MeasureMode
+  
+  @js.native
   sealed trait underline extends TextDecoration
+  
+  @js.native
+  sealed trait uppercase extends js.Object
   
   @js.native
   sealed trait userSpaceOnUse extends js.Object
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait visible extends Overflow
   
   @js.native
   sealed trait wider extends FontStretch
@@ -355,6 +373,8 @@ object reactDashSketchappStrings {
   def align: align = "align".asInstanceOf[align]
   @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  @scala.inline
+  def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -400,6 +420,8 @@ object reactDashSketchappStrings {
   @scala.inline
   def exact: exact = "exact".asInstanceOf[exact]
   @scala.inline
+  def exactly: exactly = "exactly".asInstanceOf[exactly]
+  @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   @scala.inline
   def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
@@ -425,6 +447,8 @@ object reactDashSketchappStrings {
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   @scala.inline
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
+  @scala.inline
+  def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
@@ -512,7 +536,11 @@ object reactDashSketchappStrings {
   @scala.inline
   def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
   @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
+  @scala.inline
+  def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   @scala.inline
   def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
   @scala.inline

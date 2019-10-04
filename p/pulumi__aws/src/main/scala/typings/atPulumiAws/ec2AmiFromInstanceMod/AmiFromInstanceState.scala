@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiFromInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIops
-import typings.atPulumiAws.Anon_DeviceNameVirtualNameInput
+import typings.atPulumiAws.typesInputMod.ec2Ns.AmiFromInstanceEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.AmiFromInstanceEphemeralBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait AmiFromInstanceState extends js.Object {
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIops]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiFromInstanceEbsBlockDevice]]]] = js.undefined
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
@@ -30,7 +30,7 @@ trait AmiFromInstanceState extends js.Object {
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameVirtualNameInput]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiFromInstanceEphemeralBlockDevice]]]] = js.undefined
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.
@@ -89,9 +89,9 @@ object AmiFromInstanceState {
   def apply(
     architecture: Input[String] = null,
     description: Input[String] = null,
-    ebsBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIops]]] = null,
+    ebsBlockDevices: Input[js.Array[Input[AmiFromInstanceEbsBlockDevice]]] = null,
     enaSupport: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameVirtualNameInput]]] = null,
+    ephemeralBlockDevices: Input[js.Array[Input[AmiFromInstanceEphemeralBlockDevice]]] = null,
     imageLocation: Input[String] = null,
     kernelId: Input[String] = null,
     manageEbsSnapshots: Input[Boolean] = null,

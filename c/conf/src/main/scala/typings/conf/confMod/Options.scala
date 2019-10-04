@@ -1,7 +1,6 @@
 package typings.conf.confMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchema
 import typings.node.Buffer
 import typings.node.NodeJSNs.TypedArray
 import typings.std.DataView
@@ -58,13 +57,13 @@ trait Options[T] extends js.Object {
   		Config used if there are no existing config.
   		**Note:** The values in `defaults` will overwrite the `default` key in the `schema` option.
   		*/
-  val defaults: js.UndefOr[StringDictionary[T]] = js.undefined
+  val defaults: js.UndefOr[T] = js.undefined
   /**
   		Function to deserialize the config object from a UTF-8 string when reading the config file.
   		You would usually not need this, but it could be useful if you want to use a format other than JSON.
   		@default JSON.parse
   		*/
-  val deserialize: js.UndefOr[js.Function1[/* text */ String, StringDictionary[T]]] = js.undefined
+  val deserialize: js.UndefOr[js.Function1[/* text */ String, T]] = js.undefined
   /**
   		Note that this is __not intended for security purposes__, since the encryption key would be easily found inside a plain-text Node.js app.
   		Its main use is for obscurity. If a user looks through the config directory and finds the config file, since it's just a JSON file, they may be tempted to modify it. By providing an encryption key, the file will be obfuscated, which should hopefully deter any users from doing so.
@@ -78,8 +77,32 @@ trait Options[T] extends js.Object {
   		@default 'json'
   		*/
   val fileExtension: js.UndefOr[String] = js.undefined
+  /*
+  		You can use migrations to perform operations to the store whenever a version is changed.
+  		The `migrations` object should consist of a key-value pair of `version`: `handler`.
+  		@example
+  		```
+  		import Conf = require('conf');
+  		const store = new Conf({
+  			migrations: {
+  				'0.0.1': store => {
+  					store.set('debug phase', true);
+  				},
+  				'1.0.0': store => {
+  					store.delete('debug phase');
+  					store.set('phase', '1.0');
+  				},
+  				'1.0.2': store => {
+  					store.set('phase', '>1.0');
+  				}
+  			}
+  		});
+  		```
+  		*/
+  val migrations: js.UndefOr[StringDictionary[js.Function1[/* store */ Conf[T], Unit]]] = js.undefined
   /**
-  		You only need to specify this if you don't have a `package.json` file in your project. Default: The name field in the `package.json` closest to where `conf` is imported.
+  		You only need to specify this if you don't have a package.json file in your project or if it doesn't have a name defined within it.
+  		Default: The name field in the `package.json` closest to where `conf` is imported.
   		*/
   val projectName: js.UndefOr[String] = js.undefined
   /**
@@ -90,6 +113,11 @@ trait Options[T] extends js.Object {
   		@default 'nodejs'
   		*/
   val projectSuffix: js.UndefOr[String] = js.undefined
+  /**
+  		You only need to specify this if you don't have a package.json file in your project or if it doesn't have a version defined within it.
+  		Default: The name field in the `package.json` closest to where `conf` is imported.
+  		*/
+  val projectVersion: js.UndefOr[String] = js.undefined
   /**
   		[JSON Schema](https://json-schema.org) to validate your config data.
   		Under the hood, the JSON Schema validator [ajv](https://github.com/epoberezkin/ajv) is used to validate your config. We use [JSON Schema draft-07](http://json-schema.org/latest/json-schema-validation.html) and support all [validation keywords](https://github.com/epoberezkin/ajv/blob/master/KEYWORDS.md) and [formats](https://github.com/epoberezkin/ajv#formats).
@@ -117,13 +145,23 @@ trait Options[T] extends js.Object {
   		```
   		**Note:** The `default` value will be overwritten by the `defaults` option if set.
   		*/
-  val schema: js.UndefOr[StringDictionary[JSONSchema]] = js.undefined
+  val schema: js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: conf.conf.Schema}
+    */ typings.conf.confStrings.Options with js.Any
+  ] = js.undefined
   /**
   		Function to serialize the config object to a UTF-8 string when writing the config file.
   		You would usually not need this, but it could be useful if you want to use a format other than JSON.
   		@default value => JSON.stringify(value, null, '\t')
   		*/
-  val serialize: js.UndefOr[js.Function1[/* value */ StringDictionary[T], String]] = js.undefined
+  val serialize: js.UndefOr[js.Function1[/* value */ T, String]] = js.undefined
+  /**
+  		Watch for any changes in the config file and call the callback for `onDidChange` if set. This is useful if there are multiple processes changing the same config file.
+  		__Currently this option doesn't work on Node.js 8 on macOS.__
+  		@default false
+  		*/
+  val watch: js.UndefOr[Boolean] = js.undefined
 }
 
 object Options {
@@ -133,28 +171,36 @@ object Options {
     clearInvalidConfig: js.UndefOr[Boolean] = js.undefined,
     configName: String = null,
     cwd: String = null,
-    defaults: StringDictionary[T] = null,
-    deserialize: /* text */ String => StringDictionary[T] = null,
+    defaults: T = null,
+    deserialize: /* text */ String => T = null,
     encryptionKey: String | Buffer | TypedArray | DataView = null,
     fileExtension: String = null,
+    migrations: StringDictionary[js.Function1[/* store */ Conf[T], Unit]] = null,
     projectName: String = null,
     projectSuffix: String = null,
-    schema: StringDictionary[JSONSchema] = null,
-    serialize: /* value */ StringDictionary[T] => String = null
+    projectVersion: String = null,
+    schema: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: conf.conf.Schema}
+    */ typings.conf.confStrings.Options with js.Any = null,
+    serialize: /* value */ T => String = null,
+    watch: js.UndefOr[Boolean] = js.undefined
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(accessPropertiesByDotNotation)) __obj.updateDynamic("accessPropertiesByDotNotation")(accessPropertiesByDotNotation)
     if (!js.isUndefined(clearInvalidConfig)) __obj.updateDynamic("clearInvalidConfig")(clearInvalidConfig)
     if (configName != null) __obj.updateDynamic("configName")(configName)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
+    if (migrations != null) __obj.updateDynamic("migrations")(migrations)
     if (projectName != null) __obj.updateDynamic("projectName")(projectName)
     if (projectSuffix != null) __obj.updateDynamic("projectSuffix")(projectSuffix)
+    if (projectVersion != null) __obj.updateDynamic("projectVersion")(projectVersion)
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
     __obj.asInstanceOf[Options[T]]
   }
 }

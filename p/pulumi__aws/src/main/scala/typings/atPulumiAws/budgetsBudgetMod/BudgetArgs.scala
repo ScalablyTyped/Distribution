@@ -1,8 +1,8 @@
 package typings.atPulumiAws.budgetsBudgetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ComparisonOperatorNotificationType
-import typings.atPulumiAws.Anon_IncludeCreditIncludeDiscount
+import typings.atPulumiAws.typesInputMod.budgetsNs.BudgetCostTypes
+import typings.atPulumiAws.typesInputMod.budgetsNs.BudgetNotification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ trait BudgetArgs extends js.Object {
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
-  val costTypes: js.UndefOr[Input[Anon_IncludeCreditIncludeDiscount]] = js.undefined
+  val costTypes: js.UndefOr[Input[BudgetCostTypes]] = js.undefined
   /**
     * The amount of cost or usage being measured for a budget.
     */
@@ -44,7 +44,7 @@ trait BudgetArgs extends js.Object {
   /**
     * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
     */
-  val notifications: js.UndefOr[Input[js.Array[Input[Anon_ComparisonOperatorNotificationType]]]] = js.undefined
+  val notifications: js.UndefOr[Input[js.Array[Input[BudgetNotification]]]] = js.undefined
   /**
     * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
     */
@@ -69,10 +69,10 @@ object BudgetArgs {
     timeUnit: Input[String],
     accountId: Input[String] = null,
     costFilters: Input[StringDictionary[_]] = null,
-    costTypes: Input[Anon_IncludeCreditIncludeDiscount] = null,
+    costTypes: Input[BudgetCostTypes] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
-    notifications: Input[js.Array[Input[Anon_ComparisonOperatorNotificationType]]] = null,
+    notifications: Input[js.Array[Input[BudgetNotification]]] = null,
     timePeriodEnd: Input[String] = null
   ): BudgetArgs = {
     val __obj = js.Dynamic.literal(budgetType = budgetType.asInstanceOf[js.Any], limitAmount = limitAmount.asInstanceOf[js.Any], limitUnit = limitUnit.asInstanceOf[js.Any], timePeriodStart = timePeriodStart.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])

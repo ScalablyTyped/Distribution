@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchComputeEnvironmentMod
 
-import typings.atPulumiAws.Anon_BidPercentageDesiredVcpus
+import typings.atPulumiAws.typesInputMod.batchNs.ComputeEnvironmentComputeResources
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait ComputeEnvironmentArgs extends js.Object {
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
-  val computeResources: js.UndefOr[Input[Anon_BidPercentageDesiredVcpus]] = js.undefined
+  val computeResources: js.UndefOr[Input[ComputeEnvironmentComputeResources]] = js.undefined
   /**
     * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
     */
@@ -35,7 +35,7 @@ object ComputeEnvironmentArgs {
     computeEnvironmentName: Input[String],
     serviceRole: Input[String],
     `type`: Input[String],
-    computeResources: Input[Anon_BidPercentageDesiredVcpus] = null,
+    computeResources: Input[ComputeEnvironmentComputeResources] = null,
     state: Input[String] = null
   ): ComputeEnvironmentArgs = {
     val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])

@@ -10,6 +10,7 @@ trait PointLabelOptions extends js.Object {
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[Double] = js.undefined
   var fontStyle: js.UndefOr[String] = js.undefined
+  var lineHeight: js.UndefOr[Double | String] = js.undefined
 }
 
 object PointLabelOptions {
@@ -19,7 +20,8 @@ object PointLabelOptions {
     fontColor: ChartColor = null,
     fontFamily: String = null,
     fontSize: Int | Double = null,
-    fontStyle: String = null
+    fontStyle: String = null,
+    lineHeight: Double | String = null
   ): PointLabelOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
@@ -27,6 +29,7 @@ object PointLabelOptions {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointLabelOptions]
   }
 }

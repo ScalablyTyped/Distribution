@@ -1,8 +1,8 @@
 package typings.atPulumiAws.sesEventDestinationMod
 
-import typings.atPulumiAws.Anon_DefaultValueDimensionNameValueSource
-import typings.atPulumiAws.Anon_RoleArnStreamArnInput
-import typings.atPulumiAws.Anon_TopicArnInput
+import typings.atPulumiAws.typesInputMod.sesNs.EventDestinationCloudwatchDestination
+import typings.atPulumiAws.typesInputMod.sesNs.EventDestinationKinesisDestination
+import typings.atPulumiAws.typesInputMod.sesNs.EventDestinationSnsDestination
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait EventDestinationState extends js.Object {
   /**
     * CloudWatch destination for the events
     */
-  val cloudwatchDestinations: js.UndefOr[Input[js.Array[Input[Anon_DefaultValueDimensionNameValueSource]]]] = js.undefined
+  val cloudwatchDestinations: js.UndefOr[Input[js.Array[Input[EventDestinationCloudwatchDestination]]]] = js.undefined
   /**
     * The name of the configuration set
     */
@@ -24,7 +24,7 @@ trait EventDestinationState extends js.Object {
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: js.UndefOr[Input[Anon_RoleArnStreamArnInput]] = js.undefined
+  val kinesisDestination: js.UndefOr[Input[EventDestinationKinesisDestination]] = js.undefined
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
@@ -36,19 +36,19 @@ trait EventDestinationState extends js.Object {
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: js.UndefOr[Input[Anon_TopicArnInput]] = js.undefined
+  val snsDestination: js.UndefOr[Input[EventDestinationSnsDestination]] = js.undefined
 }
 
 object EventDestinationState {
   @scala.inline
   def apply(
-    cloudwatchDestinations: Input[js.Array[Input[Anon_DefaultValueDimensionNameValueSource]]] = null,
+    cloudwatchDestinations: Input[js.Array[Input[EventDestinationCloudwatchDestination]]] = null,
     configurationSetName: Input[String] = null,
     enabled: Input[Boolean] = null,
-    kinesisDestination: Input[Anon_RoleArnStreamArnInput] = null,
+    kinesisDestination: Input[EventDestinationKinesisDestination] = null,
     matchingTypes: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
-    snsDestination: Input[Anon_TopicArnInput] = null
+    snsDestination: Input[EventDestinationSnsDestination] = null
   ): EventDestinationState = {
     val __obj = js.Dynamic.literal()
     if (cloudwatchDestinations != null) __obj.updateDynamic("cloudwatchDestinations")(cloudwatchDestinations.asInstanceOf[js.Any])

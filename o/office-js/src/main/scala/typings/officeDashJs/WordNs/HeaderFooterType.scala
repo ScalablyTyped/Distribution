@@ -31,7 +31,7 @@ object HeaderFooterType extends js.Object {
   
   /**
     *
-    * Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are different.
+    * Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are different.
     *
     */
   @js.native

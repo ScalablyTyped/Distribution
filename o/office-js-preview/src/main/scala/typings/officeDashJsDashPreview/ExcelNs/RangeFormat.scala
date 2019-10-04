@@ -157,6 +157,18 @@ class RangeFormat () extends ClientObject {
   var wrapText: Boolean = js.native
   /**
     *
+    * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param amount The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
+    **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
+    Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
+    */
+  def adjustIndent(amount: Double): Unit = js.native
+  /**
+    *
     * Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
     *
     * [Api set: ExcelApi 1.2]
@@ -170,25 +182,15 @@ class RangeFormat () extends ClientObject {
     */
   def autofitRows(): Unit = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): RangeFormat = js.native
-  def load(option: String): RangeFormat = js.native
-  def load(option: js.Array[String]): RangeFormat = js.native
-  def load(option: Anon_Expand): RangeFormat = js.native
-  def load(option: RangeFormatLoadOptions): RangeFormat = js.native
+  def load(options: RangeFormatLoadOptions): RangeFormat = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): RangeFormat = js.native
+  def load(propertyNames: String): RangeFormat = js.native
+  def load(propertyNames: js.Array[String]): RangeFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

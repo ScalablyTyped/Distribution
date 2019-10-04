@@ -1,8 +1,8 @@
 package typings.atPulumiAws.daxClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AddressAvailabilityZone
-import typings.atPulumiAws.Anon_EnabledBooleanInput
+import typings.atPulumiAws.typesInputMod.daxNs.ClusterNode
+import typings.atPulumiAws.typesInputMod.daxNs.ClusterServerSideEncryption
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,7 +59,7 @@ trait ClusterState extends js.Object {
     * `availabilityZone`. Referenceable e.g. as
     * `${aws_dax_cluster.test.nodes.0.address}`
     */
-  val nodes: js.UndefOr[Input[js.Array[Input[Anon_AddressAvailabilityZone]]]] = js.undefined
+  val nodes: js.UndefOr[Input[js.Array[Input[ClusterNode]]]] = js.undefined
   /**
     * An Amazon Resource Name (ARN) of an
     * SNS topic to send DAX notifications to. Example:
@@ -89,7 +89,7 @@ trait ClusterState extends js.Object {
   /**
     * Encrypt at rest options
     */
-  val serverSideEncryption: js.UndefOr[Input[Anon_EnabledBooleanInput]] = js.undefined
+  val serverSideEncryption: js.UndefOr[Input[ClusterServerSideEncryption]] = js.undefined
   /**
     * Name of the subnet group to be used for the
     * cluster
@@ -113,13 +113,13 @@ object ClusterState {
     iamRoleArn: Input[String] = null,
     maintenanceWindow: Input[String] = null,
     nodeType: Input[String] = null,
-    nodes: Input[js.Array[Input[Anon_AddressAvailabilityZone]]] = null,
+    nodes: Input[js.Array[Input[ClusterNode]]] = null,
     notificationTopicArn: Input[String] = null,
     parameterGroupName: Input[String] = null,
     port: Input[Double] = null,
     replicationFactor: Input[Double] = null,
     securityGroupIds: Input[js.Array[Input[String]]] = null,
-    serverSideEncryption: Input[Anon_EnabledBooleanInput] = null,
+    serverSideEncryption: Input[ClusterServerSideEncryption] = null,
     subnetGroupName: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): ClusterState = {

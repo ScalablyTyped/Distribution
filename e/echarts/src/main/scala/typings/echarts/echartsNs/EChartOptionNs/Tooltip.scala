@@ -263,7 +263,7 @@ trait Tooltip extends js.Object {
   /**
     * The text style of tooltip's floating layer.
     */
-  var textStyle: js.UndefOr[js.Object] = js.undefined
+  var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
   /**
     * The transition duration of tooltip's animation, in seconds.
     * When it is set to be 0, it would move closely with the mouse.
@@ -325,7 +325,7 @@ object Tooltip {
     show: js.UndefOr[Boolean] = js.undefined,
     showContent: js.UndefOr[Boolean] = js.undefined,
     showDelay: Int | Double = null,
-    textStyle: js.Object = null,
+    textStyle: BaseTextStyle = null,
     transitionDuration: Int | Double = null,
     trigger: item | axis | none = null,
     triggerOn: mousemove | click | `mousemove|click` | none = null

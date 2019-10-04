@@ -3,6 +3,7 @@ package typings.appDashBuilderDashLib.outOptionsMacOptionsMod
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.development
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.distribution
 import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetConfiguration
 import typings.appDashBuilderDashLib.outOptionsFileAssociationMod.FileAssociation
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.AsarOptions
@@ -10,7 +11,6 @@ import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.F
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.Protocol
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.ReleaseInfo
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,7 +76,7 @@ trait MacConfiguration extends PlatformSpecificBuildOptions {
   val gatekeeperAssess: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether your app has to be signed with hardened runtime.
-    * @default false
+    * @default true
     */
   val hardenedRuntime: js.UndefOr[Boolean] = js.undefined
   /**

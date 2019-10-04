@@ -1,6 +1,6 @@
 package typings.antd.antdMod
 
-import typings.antd.antdStrings.`3DOT23DOT4`
+import typings.antd.antdStrings.`3DOT23DOT5`
 import typings.antd.libDateDashPickerInterfaceMod.DatePickerDecorator
 import typings.antd.libDividerMod.DividerProps
 import typings.antd.libDrawerMod.DrawerProps
@@ -31,6 +31,6 @@ object ^ extends js.Object {
   val Typography: TypographyProps = js.native
   val message: MessageApi = js.native
   val notification: NotificationApi = js.native
-  var version: `3DOT23DOT4` = js.native
+  var version: `3DOT23DOT5` = js.native
 }
 

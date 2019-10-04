@@ -9,6 +9,7 @@ package object typesSpecConfigMod {
   import typings.vegaDashTypings.typesSpecAxisMod.BaseAxis
   import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
   import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
+  import typings.vegaDashTypings.typesSpecProjectionMod.BaseProjection
   import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
   import typings.vegaDashTypings.typesSpecStreamMod.EventType
   import typings.vegaDashTypings.typesSpecTitleMod.BaseTitle
@@ -46,6 +47,7 @@ package object typesSpecConfigMod {
   ]
   type DefaultsConfig = Record[prevent | allow, Boolean | js.Array[EventType]]
   type MarkConfigKeys = mark | (/* import warning: ImportType.apply Failed type conversion: vega-typings.vega-typings/types/spec/mark.Mark['type'] */ js.Any)
+  type ProjectionConfig = BaseProjection
   type TitleConfig = BaseTitle[
     NumberValue, 
     StringValue, 

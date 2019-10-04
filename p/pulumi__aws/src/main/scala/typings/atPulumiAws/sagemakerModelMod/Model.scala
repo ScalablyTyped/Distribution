@@ -1,8 +1,9 @@
 package typings.atPulumiAws.sagemakerModelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ContainerHostname
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnetsArray
+import typings.atPulumiAws.typesOutputMod.sagemakerNs.ModelContainer
+import typings.atPulumiAws.typesOutputMod.sagemakerNs.ModelPrimaryContainer
+import typings.atPulumiAws.typesOutputMod.sagemakerNs.ModelVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +32,7 @@ class Model protected () extends CustomResource {
   /**
     * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
     */
-  val containers: Output[js.UndefOr[js.Array[Anon_ContainerHostname]]] = js.native
+  val containers: Output[js.UndefOr[js.Array[ModelContainer]]] = js.native
   /**
     * Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
     */
@@ -47,7 +48,7 @@ class Model protected () extends CustomResource {
   /**
     * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
     */
-  val primaryContainer: Output[js.UndefOr[Anon_ContainerHostname]] = js.native
+  val primaryContainer: Output[js.UndefOr[ModelPrimaryContainer]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -55,7 +56,7 @@ class Model protected () extends CustomResource {
   /**
     * Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
     */
-  val vpcConfig: Output[js.UndefOr[Anon_SecurityGroupIdsSubnetsArray]] = js.native
+  val vpcConfig: Output[js.UndefOr[ModelVpcConfig]] = js.native
 }
 
 /* static members */

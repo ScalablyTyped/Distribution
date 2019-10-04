@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait ArtifactCreated extends UploadTask {
   val isWriteUpdateInfo: js.UndefOr[Boolean] = js.undefined
   val packager: PlatformPackager[_]
-  val publishConfig: js.UndefOr[PublishConfiguration] = js.undefined
+  val publishConfig: js.UndefOr[PublishConfiguration | Null] = js.undefined
   val target: Target | Null
   var updateInfo: js.UndefOr[js.Any] = js.undefined
 }

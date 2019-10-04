@@ -1,6 +1,7 @@
 package typings.antd.libAffixMod
 
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
@@ -8,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AffixProps extends js.Object {
+  var children: ReactElement
   var className: js.UndefOr[String] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   /** 距离窗口底部达到指定偏移量后触发 */
@@ -27,6 +29,7 @@ trait AffixProps extends js.Object {
 object AffixProps {
   @scala.inline
   def apply(
+    children: ReactElement,
     className: String = null,
     offset: Int | Double = null,
     offsetBottom: Int | Double = null,
@@ -36,7 +39,7 @@ object AffixProps {
     style: CSSProperties = null,
     target: () => Window | HTMLElement | Null = null
   ): AffixProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(children = children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])

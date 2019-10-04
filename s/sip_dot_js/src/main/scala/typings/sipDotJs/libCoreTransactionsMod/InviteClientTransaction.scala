@@ -18,9 +18,9 @@ class InviteClientTransaction protected ()
     * After construction the transaction will be in the "calling" state and the transaction id
     * will equal the branch parameter set in the Via header of the outgoing request.
     * https://tools.ietf.org/html/rfc3261#section-17.1.1
-    * @param request The outgoing INVITE request.
-    * @param transport The transport.
-    * @param user The transaction user.
+    * @param request - The outgoing INVITE request.
+    * @param transport - The transport.
+    * @param user - The transaction user.
     */
   def this(request: OutgoingRequestMessage, transport: Transport, user: ClientTransactionUser) = this()
 }

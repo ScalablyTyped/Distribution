@@ -47,7 +47,7 @@ object ^ extends js.Object {
     options: Anon_ErrorOnResultReceived[Result],
     asyncCallback: js.Function2[/* error */ js.UndefOr[global_Error | Error], /* result */ js.UndefOr[Result], Unit]
   ): js.Any = js.native
-  def bindEnvironment(func: js.Function): js.Any = js.native
+  def bindEnvironment[TFunc /* <: js.Function */](func: TFunc): TFunc = js.native
   def call(name: String, args: js.Any*): js.Any = js.native
   def clearInterval(id: Double): Unit = js.native
   def clearTimeout(id: Double): Unit = js.native

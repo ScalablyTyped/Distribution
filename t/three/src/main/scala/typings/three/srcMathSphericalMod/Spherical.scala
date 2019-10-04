@@ -16,7 +16,8 @@ class Spherical () extends js.Object {
   var theta: Double = js.native
   def copy(other: Spherical): this.type = js.native
   def makeSafe(): Unit = js.native
-  def set(radius: Double, phi: Double, theta: Double): Spherical = js.native
-  def setFromVector3(vec3: Vector3): Spherical = js.native
+  def set(radius: Double, phi: Double, theta: Double): this.type = js.native
+  def setFromCartesianCoords(x: Double, y: Double, z: Double): this.type = js.native
+  def setFromVector3(v: Vector3): this.type = js.native
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jimp/plugin-mask" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jimp/plugin-mask" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

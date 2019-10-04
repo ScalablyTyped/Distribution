@@ -4,6 +4,7 @@ import typings.rollup.Anon_Define
 import typings.rollup.rollupStrings.`inline`
 import typings.rollup.rollupStrings.auto
 import typings.rollup.rollupStrings.default
+import typings.rollup.rollupStrings.hidden
 import typings.rollup.rollupStrings.named
 import typings.rollup.rollupStrings.none
 import scala.scalajs.js
@@ -42,7 +43,7 @@ trait OutputOptions extends js.Object {
   var outro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
   var paths: js.UndefOr[OptionsPaths] = js.undefined
   var preferConst: js.UndefOr[Boolean] = js.undefined
-  var sourcemap: js.UndefOr[Boolean | `inline`] = js.undefined
+  var sourcemap: js.UndefOr[Boolean | `inline` | hidden] = js.undefined
   var sourcemapExcludeSources: js.UndefOr[Boolean] = js.undefined
   var sourcemapFile: js.UndefOr[String] = js.undefined
   var sourcemapPathTransform: js.UndefOr[js.Function1[/* sourcePath */ String, String]] = js.undefined
@@ -79,7 +80,7 @@ object OutputOptions {
     outro: String | (js.Function0[String | js.Promise[String]]) = null,
     paths: OptionsPaths = null,
     preferConst: js.UndefOr[Boolean] = js.undefined,
-    sourcemap: Boolean | `inline` = null,
+    sourcemap: Boolean | `inline` | hidden = null,
     sourcemapExcludeSources: js.UndefOr[Boolean] = js.undefined,
     sourcemapFile: String = null,
     sourcemapPathTransform: /* sourcePath */ String => String = null,

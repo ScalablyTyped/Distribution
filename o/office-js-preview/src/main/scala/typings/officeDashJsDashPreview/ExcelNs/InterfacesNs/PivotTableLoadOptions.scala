@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents an Excel PivotTable.
+  To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
   *
   * [Api set: ExcelApi 1.3]
   */
 trait PivotTableLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**

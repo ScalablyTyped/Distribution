@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SoundInstance
+  * @extends pc.EventHandler
   * @classdesc A pc.SoundInstance plays a {@link pc.Sound}
   * @param {pc.SoundManager} manager The sound manager
   * @param {pc.Sound} sound The sound to play

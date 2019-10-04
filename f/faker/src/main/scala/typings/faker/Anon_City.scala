@@ -26,5 +26,6 @@ trait Anon_City extends js.Object {
   def streetSuffix(): String = js.native
   def zipCode(): String = js.native
   def zipCode(format: String): String = js.native
+  def zipCodeByState(state: String): String = js.native
 }
 

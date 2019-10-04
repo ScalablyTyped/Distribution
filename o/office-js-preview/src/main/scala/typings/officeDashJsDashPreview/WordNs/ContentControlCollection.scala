@@ -25,7 +25,7 @@ class ContentControlCollection () extends ClientObject {
   val items: js.Array[ContentControl] = js.native
   /**
     *
-    * Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this collection.
+    * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.
     *
     * [Api set: WordApi 1.1]
     *
@@ -70,7 +70,7 @@ class ContentControlCollection () extends ClientObject {
   def getByTypes(types: js.Array[ContentControlType]): ContentControlCollection = js.native
   /**
     *
-    * Gets the first content control in this collection. Throws if this collection is empty.
+    * Gets the first content control in this collection. Throws an error if this collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

@@ -24,11 +24,6 @@ class Instance protected () extends CustomResource {
   def this(name: String, args: InstanceArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the Lightsail instance (matches `id`).
-    * * `availabilityZone`
-    * * `blueprintId`
-    * * `bundleId`
-    * * `keyPairName`
-    * * `userData`
     */
   val arn: Output[String] = js.native
   /**
@@ -46,6 +41,14 @@ class Instance protected () extends CustomResource {
     */
   val bundleId: Output[String] = js.native
   val cpuCount: Output[Double] = js.native
+  /**
+    * The timestamp when the instance was created.
+    * * `availabilityZone`
+    * * `blueprintId`
+    * * `bundleId`
+    * * `keyPairName`
+    * * `userData`
+    */
   val createdAt: Output[String] = js.native
   val ipv6Address: Output[String] = js.native
   val isStaticIp: Output[Boolean] = js.native

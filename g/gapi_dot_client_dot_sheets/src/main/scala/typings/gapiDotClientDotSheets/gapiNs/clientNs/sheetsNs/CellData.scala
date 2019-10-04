@@ -21,8 +21,8 @@ trait CellData extends js.Object {
     */
   var effectiveFormat: js.UndefOr[CellFormat] = js.undefined
   /**
-    * The effective value of the cell. For cells with formulas, this will be
-    * the calculated value.  For cells with literals, this will be
+    * The effective value of the cell. For cells with formulas, this is
+    * the calculated value.  For cells with literals, this is
     * the same as the user_entered_value.
     * This field is read-only.
     */
@@ -59,7 +59,7 @@ trait CellData extends js.Object {
     * the properties of the cell unless explicitly changed).
     *
     * When writing, the new runs will overwrite any prior runs.  When writing a
-    * new user_entered_value, previous runs will be erased.
+    * new user_entered_value, previous runs are erased.
     */
   var textFormatRuns: js.UndefOr[js.Array[TextFormatRun]] = js.undefined
   /**

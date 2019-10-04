@@ -38,6 +38,7 @@ trait ModalProps
   // Required
   var onHide: js.Function
   var onShow: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
+  var restoreFocus: js.UndefOr[Boolean] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
   var transition: js.UndefOr[ReactElement] = js.undefined
 }
@@ -67,6 +68,7 @@ object ModalProps {
     onEscapeKeyDown: /* node */ HTMLElement => _ = null,
     onEscapeKeyUp: /* node */ HTMLElement => _ = null,
     onShow: /* node */ HTMLElement => _ = null,
+    restoreFocus: js.UndefOr[Boolean] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     transition: ReactElement = null
   ): ModalProps = {
@@ -92,6 +94,7 @@ object ModalProps {
     if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(js.Any.fromFunction1(onEscapeKeyDown))
     if (onEscapeKeyUp != null) __obj.updateDynamic("onEscapeKeyUp")(js.Any.fromFunction1(onEscapeKeyUp))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
+    if (!js.isUndefined(restoreFocus)) __obj.updateDynamic("restoreFocus")(restoreFocus)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (transition != null) __obj.updateDynamic("transition")(transition)
     __obj.asInstanceOf[ModalProps]

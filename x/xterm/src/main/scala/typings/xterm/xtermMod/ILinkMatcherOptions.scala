@@ -17,8 +17,8 @@ trait ILinkMatcherOptions extends js.Object {
     */
   var matchIndex: js.UndefOr[Double] = js.undefined
   /**
-    * The priority of the link matcher, this defines the order in which the link
-    * matcher is evaluated relative to others, from highest to lowest. The
+    * The priority of the link matcher, this defines the order in which the
+    * link matcher is evaluated relative to others, from highest to lowest. The
     * default value is 0.
     */
   var priority: js.UndefOr[Double] = js.undefined

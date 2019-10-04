@@ -1,5 +1,6 @@
 package typings.atUifabricUtilities
 
+import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/aria", JSImport.Namespace)
 @js.native
 object libAriaMod extends js.Object {
-  def mergeAriaAttributeValues(ariaAttributes: js.UndefOr[String]*): js.UndefOr[String] = js.native
+  @JSName("mergeAriaAttributeValues")
+  def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = js.native
 }
 

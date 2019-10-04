@@ -48,6 +48,18 @@ trait ServiceSpec extends js.Object {
     */
   val healthCheckNodePort: Double
   /**
+    * ipFamily specifies whether this Service has a preference for a particular IP family (e.g.
+    * IPv4 vs. IPv6).  If a specific IP family is requested, the clusterIP field will be
+    * allocated from that family, if it is available in the cluster.  If no IP family is
+    * requested, the cluster's primary IP family will be used. Other IP fields (loadBalancerIP,
+    * loadBalancerSourceRanges, externalIPs) and controllers which allocate external
+    * load-balancers should use the same IP family.  Endpoints for this Service will be of this
+    * family.  This field is immutable after creation. Assigning a ServiceIPFamily not available
+    * in the cluster (e.g. IPv6 in IPv4 only cluster) is an error condition and will fail during
+    * clusterIP assignment.
+    */
+  val ipFamily: String
+  /**
     * Only applies to Service Type: LoadBalancer LoadBalancer will get created with the IP
     * specified in this field. This feature depends on whether the underlying cloud-provider
     * supports specifying the loadBalancerIP when a load balancer is created. This field will be
@@ -115,6 +127,7 @@ object ServiceSpec {
     externalName: String,
     externalTrafficPolicy: String,
     healthCheckNodePort: Double,
+    ipFamily: String,
     loadBalancerIP: String,
     loadBalancerSourceRanges: js.Array[String],
     ports: js.Array[ServicePort],
@@ -124,7 +137,7 @@ object ServiceSpec {
     sessionAffinityConfig: SessionAffinityConfig,
     `type`: String
   ): ServiceSpec = {
-    val __obj = js.Dynamic.literal(clusterIP = clusterIP, externalIPs = externalIPs, externalName = externalName, externalTrafficPolicy = externalTrafficPolicy, healthCheckNodePort = healthCheckNodePort, loadBalancerIP = loadBalancerIP, loadBalancerSourceRanges = loadBalancerSourceRanges, ports = ports, publishNotReadyAddresses = publishNotReadyAddresses, selector = selector, sessionAffinity = sessionAffinity, sessionAffinityConfig = sessionAffinityConfig)
+    val __obj = js.Dynamic.literal(clusterIP = clusterIP, externalIPs = externalIPs, externalName = externalName, externalTrafficPolicy = externalTrafficPolicy, healthCheckNodePort = healthCheckNodePort, ipFamily = ipFamily, loadBalancerIP = loadBalancerIP, loadBalancerSourceRanges = loadBalancerSourceRanges, ports = ports, publishNotReadyAddresses = publishNotReadyAddresses, selector = selector, sessionAffinity = sessionAffinity, sessionAffinityConfig = sessionAffinityConfig)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ServiceSpec]
   }

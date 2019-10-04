@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartSeriesFormat.toJSON()". */
+/** An interface describing the data returned by calling `chartSeriesFormat.toJSON()`. */
 trait ChartSeriesFormatData extends js.Object {
   /**
     *

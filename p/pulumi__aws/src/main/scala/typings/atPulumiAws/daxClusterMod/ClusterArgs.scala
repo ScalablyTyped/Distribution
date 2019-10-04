@@ -1,7 +1,7 @@
 package typings.atPulumiAws.daxClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_EnabledBooleanInput
+import typings.atPulumiAws.typesInputMod.daxNs.ClusterServerSideEncryption
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,7 +65,7 @@ trait ClusterArgs extends js.Object {
   /**
     * Encrypt at rest options
     */
-  val serverSideEncryption: js.UndefOr[Input[Anon_EnabledBooleanInput]] = js.undefined
+  val serverSideEncryption: js.UndefOr[Input[ClusterServerSideEncryption]] = js.undefined
   /**
     * Name of the subnet group to be used for the
     * cluster
@@ -90,7 +90,7 @@ object ClusterArgs {
     notificationTopicArn: Input[String] = null,
     parameterGroupName: Input[String] = null,
     securityGroupIds: Input[js.Array[Input[String]]] = null,
-    serverSideEncryption: Input[Anon_EnabledBooleanInput] = null,
+    serverSideEncryption: Input[ClusterServerSideEncryption] = null,
     subnetGroupName: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): ClusterArgs = {

@@ -41,6 +41,14 @@ trait Step extends js.Object {
     *  Name of the execution step. 
     */
   var stepName: StepName
+  /**
+    *  URL to the test artifact for the execution step. 
+    */
+  var testArtifactsUrl: js.UndefOr[TestArtifactsUrl] = js.undefined
+  /**
+    *  URL to the test config for the execution step. 
+    */
+  var testConfigUrl: js.UndefOr[TestConfigUrl] = js.undefined
 }
 
 object Step {
@@ -54,7 +62,9 @@ object Step {
     context: Context = null,
     logUrl: LogUrl = null,
     screenshots: Screenshots = null,
-    statusReason: StatusReason = null
+    statusReason: StatusReason = null,
+    testArtifactsUrl: TestArtifactsUrl = null,
+    testConfigUrl: TestConfigUrl = null
   ): Step = {
     val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime, status = status.asInstanceOf[js.Any], stepName = stepName)
     if (artifactsUrl != null) __obj.updateDynamic("artifactsUrl")(artifactsUrl)
@@ -62,6 +72,8 @@ object Step {
     if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl)
     if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots)
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
+    if (testArtifactsUrl != null) __obj.updateDynamic("testArtifactsUrl")(testArtifactsUrl)
+    if (testConfigUrl != null) __obj.updateDynamic("testConfigUrl")(testConfigUrl)
     __obj.asInstanceOf[Step]
   }
 }

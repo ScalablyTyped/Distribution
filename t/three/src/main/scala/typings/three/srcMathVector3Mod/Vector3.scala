@@ -82,8 +82,20 @@ class Vector3 () extends Vector {
   	 */
   def equals(v: Vector3): Boolean = js.native
   def floor(): this.type = js.native
-  def fromArray(xyz: js.Array[Double]): Vector3 = js.native
-  def fromArray(xyz: js.Array[Double], offset: Double): Vector3 = js.native
+  /**
+  	 * Sets this vector's x, y and z value from the provided array.
+  	 * @param array the source array.
+  	 * @param offset (optional) offset into the array. Default is 0.
+  	 */
+  def fromArray(array: js.Array[Double]): this.type = js.native
+  def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this vector's x, y and z value from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): this.type = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
   def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
   def fromBufferAttribute(attribute: BufferAttribute, index: Double, offset: Double): this.type = js.native
   /**
@@ -128,10 +140,12 @@ class Vector3 () extends Vector {
   	 */
   def set(x: Double, y: Double, z: Double): this.type = js.native
   def setFromCylindrical(s: Cylindrical): this.type = js.native
+  def setFromCylindricalCoords(radius: Double, theta: Double, y: Double): this.type = js.native
   def setFromMatrixColumn(matrix: Matrix4, index: Double): this.type = js.native
   def setFromMatrixPosition(m: Matrix4): this.type = js.native
   def setFromMatrixScale(m: Matrix4): this.type = js.native
   def setFromSpherical(s: Spherical): this.type = js.native
+  def setFromSphericalCoords(r: Double, phi: Double, theta: Double): this.type = js.native
   /**
   	 * Sets x value of this vector.
   	 */
@@ -160,16 +174,16 @@ class Vector3 () extends Vector {
   	 * @return The created or provided array.
   	 */
   def toArray(): js.Array[Double] = js.native
-  def toArray(xyz: js.Array[Double]): js.Array[Double] = js.native
-  def toArray(xyz: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double]): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
   /**
   	 * Copies x, y and z into the provided array-like.
   	 * @param array array-like to store the vector to.
-  	 * @param offset (optional) optional offset into the array.
+  	 * @param offset (optional) optional offset into the array-like.
   	 * @return The provided array-like.
   	 */
-  def toArray(xyz: ArrayLike[Double]): ArrayLike[Double] = js.native
-  def toArray(xyz: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+  def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
+  def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
   def transformDirection(m: Matrix4): this.type = js.native
   def unproject(camera: Camera): this.type = js.native
 }

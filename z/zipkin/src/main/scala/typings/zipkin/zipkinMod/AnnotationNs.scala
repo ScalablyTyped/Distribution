@@ -21,7 +21,7 @@ object AnnotationNs extends js.Object {
   
   @js.native
   class ClientAddr protected () extends IAnnotation {
-    def this(args: Anon_Host) = this()
+    def this(args: Anon_HostPort) = this()
     /* CompleteClass */
     override val annotationType: String = js.native
   }
@@ -34,6 +34,18 @@ object AnnotationNs extends js.Object {
   
   @js.native
   class ClientSend () extends IAnnotation {
+    /* CompleteClass */
+    override val annotationType: String = js.native
+  }
+  
+  @js.native
+  class ConsumerStart () extends IAnnotation {
+    /* CompleteClass */
+    override val annotationType: String = js.native
+  }
+  
+  @js.native
+  class ConsumerStop () extends IAnnotation {
     /* CompleteClass */
     override val annotationType: String = js.native
   }
@@ -70,6 +82,28 @@ object AnnotationNs extends js.Object {
   }
   
   @js.native
+  class MessageAddr protected () extends IAnnotation {
+    def this(args: Anon_Host) = this()
+    /* CompleteClass */
+    override val annotationType: String = js.native
+    var host: InetAddress = js.native
+    var port: Double = js.native
+    var serviceName: String = js.native
+  }
+  
+  @js.native
+  class ProducerStart () extends IAnnotation {
+    /* CompleteClass */
+    override val annotationType: String = js.native
+  }
+  
+  @js.native
+  class ProducerStop () extends IAnnotation {
+    /* CompleteClass */
+    override val annotationType: String = js.native
+  }
+  
+  @js.native
   class Rpc protected () extends IAnnotation {
     def this(name: String) = this()
     /* CompleteClass */
@@ -79,7 +113,7 @@ object AnnotationNs extends js.Object {
   
   @js.native
   class ServerAddr protected () extends IAnnotation {
-    def this(args: Anon_HostPort) = this()
+    def this(args: Anon_Host) = this()
     /* CompleteClass */
     override val annotationType: String = js.native
     var host: InetAddress = js.native

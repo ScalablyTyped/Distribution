@@ -36,13 +36,20 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val barrier: Instantiable1[/* size */ Double, typings.tstl.threadBarrierMod.Barrier] = js.native
   val condition_variable: Instantiable0[typings.tstl.threadConditionVariableMod.ConditionVariable] = js.native
   var domain_error: Instantiable1[/* message */ String, typings.tstl.exceptionLogicErrorMod.DomainError] = js.native
   var error_category: Instantiable0[typings.tstl.exceptionErrorCategoryMod.ErrorCategory] = js.native
   var error_code: Instantiable0[typings.tstl.exceptionErrorCodeMod.ErrorCode] = js.native
   var error_condition: Instantiable0[typings.tstl.exceptionErrorConditionMod.ErrorCondition] = js.native
   val exception: Instantiable0[typings.tstl.exceptionExceptionMod.Exception] = js.native
+  val flex_barrier: Instantiable2[
+    /* size */ Double, 
+    js.UndefOr[/* complete */ js.Function0[Double]], 
+    typings.tstl.threadFlexBarrierMod.FlexBarrier
+  ] = js.native
   var invalid_argument: Instantiable1[/* message */ String, typings.tstl.exceptionLogicErrorMod.InvalidArgument] = js.native
+  val latch: Instantiable1[/* size */ Double, typings.tstl.threadLatchMod.Latch] = js.native
   var length_error: Instantiable1[/* message */ String, typings.tstl.exceptionLogicErrorMod.LengthError] = js.native
   var logic_error: Instantiable1[/* message */ String, typings.tstl.exceptionLogicErrorMod.LogicError] = js.native
   val mutex: Instantiable0[typings.tstl.threadMutexMod.Mutex] = js.native

@@ -5,18 +5,14 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.APIGroup
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.APIResource
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.GroupVersionForDiscovery
-import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.Initializer
-import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.Initializers
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.LabelSelectorRequirement
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ListMeta
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ManagedFieldsEntry
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.OwnerReference
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.Preconditions
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ServerAddressByClientCIDR
-import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.Status
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.StatusCause
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.StatusDetails
-import typings.atPulumiKubernetes.typesInputMod.pkgNs.runtimeNs.RawExtension
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,14 +32,14 @@ object metaNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -79,7 +75,7 @@ object metaNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -90,7 +86,7 @@ object metaNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
     }
@@ -160,7 +156,7 @@ object metaNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -171,7 +167,7 @@ object metaNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -189,14 +185,14 @@ object metaNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -223,7 +219,7 @@ object metaNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -243,7 +239,7 @@ object metaNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -283,34 +279,6 @@ object metaNs extends js.Object {
         * trouble of splitting the GroupVersion.
         */
       var version: Input[String]
-    }
-    
-    /**
-      * Initializer is information about an initializer that has not yet completed.
-      */
-    trait Initializer extends js.Object {
-      /**
-        * name of the process that is responsible for initializing this object.
-        */
-      var name: Input[String]
-    }
-    
-    /**
-      * Initializers tracks the progress of initialization.
-      */
-    trait Initializers extends js.Object {
-      /**
-        * Pending is a list of initializers that must execute in order before this object is visible.
-        * When the last pending initializer is removed, and no failing result is set, the
-        * initializers struct will be set to nil and the object is considered as initialized and
-        * visible to all clients.
-        */
-      var pending: Input[js.Array[Input[Initializer]]]
-      /**
-        * If result is set with the Failure field, the object will be persisted to storage and then
-        * deleted, ensuring that other clients can observe the deletion.
-        */
-      var result: js.UndefOr[Input[Status]] = js.undefined
     }
     
     /**
@@ -377,19 +345,20 @@ object metaNs extends js.Object {
         * unset and omitted during serialization. Servers older than v1.15 do not set this field. The
         * intended use of the remainingItemCount is *estimating* the size of a collection. Clients
         * should not rely on the remainingItemCount to be set or to be exact.
-        *
-        * This field is alpha and can be changed or removed without notice.
         */
       var remainingItemCount: js.UndefOr[Input[Double]] = js.undefined
       /**
         * String that identifies the server's internal version of this object that can be used by
         * clients to determine when objects have changed. Value must be treated as opaque by clients
         * and passed unmodified back to the server. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
         */
       var resourceVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * selfLink is a URL representing this object. Populated by the system. Read-only.
+        *
+        * DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is
+        * planned to be removed in 1.21 release.
         */
       var selfLink: js.UndefOr[Input[String]] = js.undefined
     }
@@ -406,9 +375,14 @@ object metaNs extends js.Object {
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
-        * Fields identifies a set of fields.
+        * FieldsType is the discriminator for the different fields format and version. There is
+        * currently only one possible value: "FieldsV1"
         */
-      var fields: js.UndefOr[Input[js.Object]] = js.undefined
+      var fieldsType: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * FieldsV1 holds the first JSON version format as described in the "FieldsV1" type.
+        */
+      var fieldsV1: js.UndefOr[Input[js.Object]] = js.undefined
       /**
         * Manager is an identifier of the workflow managing these fields.
         */
@@ -449,7 +423,7 @@ object metaNs extends js.Object {
         * may not set this value. It is represented in RFC3339 form and is in UTC.
         *
         * Populated by the system. Read-only. Null for lists. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var creationTimestamp: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -475,7 +449,7 @@ object metaNs extends js.Object {
         * has not been requested.
         *
         * Populated by the system when a graceful deletion is requested. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var deletionTimestamp: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -497,7 +471,7 @@ object metaNs extends js.Object {
         * (optionally after the time indicated in the Retry-After header).
         *
         * Applied only if Name is not specified. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
         */
       var generateName: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -505,20 +479,6 @@ object metaNs extends js.Object {
         * system. Read-only.
         */
       var generation: js.UndefOr[Input[Double]] = js.undefined
-      /**
-        * An initializer is a controller which enforces some system invariant at object creation
-        * time. This field is a list of initializers that have not yet acted on this object. If nil
-        * or empty, this object has been completely initialized. Otherwise, the object is considered
-        * uninitialized and is hidden (in list/watch and get calls) from clients that haven't
-        * explicitly asked to observe uninitialized objects.
-        *
-        * When an object is created, the system will populate this list with the current set of
-        * initializers. Only privileged users may set or modify this list. Once it is empty, it may
-        * not be modified further by any user.
-        *
-        * DEPRECATED - initializers are an alpha field and will be removed in v1.15.
-        */
-      var initializers: js.UndefOr[Input[Initializers]] = js.undefined
       /**
         * Map of string keys and values that can be used to organize and categorize (scope and
         * select) objects. May match selectors of replication controllers and services. More info:
@@ -531,8 +491,6 @@ object metaNs extends js.Object {
         * set or understand this field. A workflow can be the user's name, a controller's name, or
         * the name of a specific apply path like "ci-cd". The set of fields is always in the version
         * that the workflow used when modifying the object.
-        *
-        * This field is alpha and can be changed or removed without notice.
         */
       var managedFields: js.UndefOr[Input[js.Array[Input[ManagedFieldsEntry]]]] = js.undefined
       /**
@@ -569,11 +527,14 @@ object metaNs extends js.Object {
         *
         * Populated by the system. Read-only. Value must be treated as opaque by clients and . More
         * info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
         */
       var resourceVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * SelfLink is a URL representing this object. Populated by the system. Read-only.
+        *
+        * DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is
+        * planned to be removed in 1.21 release.
         */
       var selfLink: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -609,7 +570,7 @@ object metaNs extends js.Object {
       var controller: js.UndefOr[Input[Boolean]] = js.undefined
       /**
         * Kind of the referent. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: Input[String]
       /**
@@ -661,7 +622,7 @@ object metaNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -678,7 +639,7 @@ object metaNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Status]] = js.undefined
       /**
@@ -687,7 +648,7 @@ object metaNs extends js.Object {
       var message: js.UndefOr[Input[String]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
       /**
@@ -696,11 +657,6 @@ object metaNs extends js.Object {
         * but does not override it.
         */
       var reason: js.UndefOr[Input[String]] = js.undefined
-      /**
-        * Status of the operation. One of: "Success" or "Failure". More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[String]] = js.undefined
     }
     
     /**
@@ -750,7 +706,7 @@ object metaNs extends js.Object {
       /**
         * The kind attribute of the resource associated with the status StatusReason. On some
         * operations may differ from the requested resource Kind. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -782,7 +738,7 @@ object metaNs extends js.Object {
         *  * If Type is Error: *Status is recommended; other types may make sense
         *    depending on context.
         */
-      var `object`: Input[RawExtension]
+      var `object`: Input[js.Object]
       var `type`: Input[String]
     }
     

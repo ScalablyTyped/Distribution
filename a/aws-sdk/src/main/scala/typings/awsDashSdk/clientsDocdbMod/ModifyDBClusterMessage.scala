@@ -34,7 +34,7 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    * The password for the master database user. This password can contain any printable ASCII character except forward slash (/), double quote ("), or the "at" symbol (@). Constraints: Must contain from 8 to 41 characters.
+    * The password for the master database user. This password can contain any printable ASCII character except forward slash (/), double quote ("), or the "at" symbol (@). Constraints: Must contain from 8 to 100 characters.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   /**

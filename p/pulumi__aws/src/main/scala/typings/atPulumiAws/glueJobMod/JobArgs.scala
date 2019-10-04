@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueJobMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_MaxConcurrentRunsInput
-import typings.atPulumiAws.Anon_NameScriptLocationInput
+import typings.atPulumiAws.typesInputMod.glueNs.JobCommand
+import typings.atPulumiAws.typesInputMod.glueNs.JobExecutionProperty
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait JobArgs extends js.Object {
   /**
     * The command of the job. Defined below.
     */
-  val command: Input[Anon_NameScriptLocationInput]
+  val command: Input[JobCommand]
   /**
     * The list of connections used for this job.
     */
@@ -32,7 +32,7 @@ trait JobArgs extends js.Object {
   /**
     * Execution property of the job. Defined below.
     */
-  val executionProperty: js.UndefOr[Input[Anon_MaxConcurrentRunsInput]] = js.undefined
+  val executionProperty: js.UndefOr[Input[JobExecutionProperty]] = js.undefined
   /**
     * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
     */
@@ -62,13 +62,13 @@ trait JobArgs extends js.Object {
 object JobArgs {
   @scala.inline
   def apply(
-    command: Input[Anon_NameScriptLocationInput],
+    command: Input[JobCommand],
     roleArn: Input[String],
     allocatedCapacity: Input[Double] = null,
     connections: Input[js.Array[Input[String]]] = null,
     defaultArguments: Input[StringDictionary[_]] = null,
     description: Input[String] = null,
-    executionProperty: Input[Anon_MaxConcurrentRunsInput] = null,
+    executionProperty: Input[JobExecutionProperty] = null,
     maxCapacity: Input[Double] = null,
     maxRetries: Input[Double] = null,
     name: Input[String] = null,

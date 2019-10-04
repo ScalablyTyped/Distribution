@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dlmLifecyclePolicyMod
 
-import typings.atPulumiAws.Anon_KeyResourceTypesSchedules
+import typings.atPulumiAws.typesInputMod.dlmNs.LifecyclePolicyPolicyDetails
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait LifecyclePolicyState extends js.Object {
   /**
     * See the `policyDetails` configuration block. Max of 1.
     */
-  val policyDetails: js.UndefOr[Input[Anon_KeyResourceTypesSchedules]] = js.undefined
+  val policyDetails: js.UndefOr[Input[LifecyclePolicyPolicyDetails]] = js.undefined
   /**
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */
@@ -30,7 +30,7 @@ object LifecyclePolicyState {
   def apply(
     description: Input[String] = null,
     executionRoleArn: Input[String] = null,
-    policyDetails: Input[Anon_KeyResourceTypesSchedules] = null,
+    policyDetails: Input[LifecyclePolicyPolicyDetails] = null,
     state: Input[String] = null
   ): LifecyclePolicyState = {
     val __obj = js.Dynamic.literal()

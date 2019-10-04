@@ -1,14 +1,15 @@
 package typings.atPulumiAws.dynamodbTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AttributeNameEnabled
-import typings.atPulumiAws.Anon_EnabledBoolean_1082978225
-import typings.atPulumiAws.Anon_HashKeyName
-import typings.atPulumiAws.Anon_NameNonKeyAttributesProjectionType
-import typings.atPulumiAws.Anon_NameTypeString
 import typings.atPulumiAws.dynamodbDynamodbMixinsMod.TableEventHandler
 import typings.atPulumiAws.dynamodbDynamodbMixinsMod.TableEventSubscription
 import typings.atPulumiAws.dynamodbDynamodbMixinsMod.TableEventSubscriptionArgs
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.TableAttribute
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.TableGlobalSecondaryIndex
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.TableLocalSecondaryIndex
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.TablePointInTimeRecovery
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.TableServerSideEncryption
+import typings.atPulumiAws.typesOutputMod.dynamodbNs.TableTtl
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -38,7 +39,7 @@ class Table protected () extends CustomResource {
   /**
     * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
     */
-  val attributes: Output[js.Array[Anon_NameTypeString]] = js.native
+  val attributes: Output[js.Array[TableAttribute]] = js.native
   /**
     * Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
     */
@@ -48,7 +49,7 @@ class Table protected () extends CustomResource {
     * subject to the normal limits on the number of GSIs, projected
     * attributes, etc.
     */
-  val globalSecondaryIndexes: Output[js.UndefOr[js.Array[Anon_HashKeyName]]] = js.native
+  val globalSecondaryIndexes: Output[js.UndefOr[js.Array[TableGlobalSecondaryIndex]]] = js.native
   /**
     * The name of the hash key in the index; must be
     * defined as an attribute in the resource.
@@ -59,7 +60,7 @@ class Table protected () extends CustomResource {
     * these can only be allocated *at creation* so you cannot change this
     * definition after you have created the resource.
     */
-  val localSecondaryIndexes: Output[js.UndefOr[js.Array[Anon_NameNonKeyAttributesProjectionType]]] = js.native
+  val localSecondaryIndexes: Output[js.UndefOr[js.Array[TableLocalSecondaryIndex]]] = js.native
   /**
     * The name of the index
     */
@@ -67,7 +68,7 @@ class Table protected () extends CustomResource {
   /**
     * Point-in-time recovery options.
     */
-  val pointInTimeRecovery: Output[Anon_EnabledBoolean_1082978225] = js.native
+  val pointInTimeRecovery: Output[TablePointInTimeRecovery] = js.native
   /**
     * The name of the range key; must be defined
     */
@@ -79,7 +80,7 @@ class Table protected () extends CustomResource {
   /**
     * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
     */
-  val serverSideEncryption: Output[Anon_EnabledBoolean_1082978225] = js.native
+  val serverSideEncryption: Output[TableServerSideEncryption] = js.native
   /**
     * The ARN of the Table Stream. Only available when `streamEnabled = true`
     */
@@ -106,7 +107,7 @@ class Table protected () extends CustomResource {
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
-  val ttl: Output[js.UndefOr[Anon_AttributeNameEnabled]] = js.native
+  val ttl: Output[js.UndefOr[TableTtl]] = js.native
   /**
     * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
     */

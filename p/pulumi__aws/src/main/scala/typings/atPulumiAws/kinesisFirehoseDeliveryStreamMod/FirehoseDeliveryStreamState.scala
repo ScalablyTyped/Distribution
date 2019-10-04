@@ -1,12 +1,13 @@
 package typings.atPulumiAws.kinesisFirehoseDeliveryStreamMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions
-import typings.atPulumiAws.Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptionsCompressionFormat
-import typings.atPulumiAws.Anon_BufferingIntervalBufferingSize
-import typings.atPulumiAws.Anon_CloudwatchLoggingOptionsClusterJdbcurl
-import typings.atPulumiAws.Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint
-import typings.atPulumiAws.Anon_KinesisStreamArnRoleArn
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamElasticsearchConfiguration
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamExtendedS3Configuration
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamKinesisSourceConfiguration
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamRedshiftConfiguration
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamS3Configuration
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamServerSideEncryption
+import typings.atPulumiAws.typesInputMod.kinesisNs.FirehoseDeliveryStreamSplunkConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,17 +23,15 @@ trait FirehoseDeliveryStreamState extends js.Object {
     */
   val destination: js.UndefOr[Input[String]] = js.undefined
   val destinationId: js.UndefOr[Input[String]] = js.undefined
-  val elasticsearchConfiguration: js.UndefOr[Input[Anon_BufferingIntervalBufferingSize]] = js.undefined
+  val elasticsearchConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamElasticsearchConfiguration]] = js.undefined
   /**
     * Enhanced configuration options for the s3 destination. More details are given below.
     */
-  val extendedS3Configuration: js.UndefOr[
-    Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptionsCompressionFormat]
-  ] = js.undefined
+  val extendedS3Configuration: js.UndefOr[Input[FirehoseDeliveryStreamExtendedS3Configuration]] = js.undefined
   /**
     * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
     */
-  val kinesisSourceConfiguration: js.UndefOr[Input[Anon_KinesisStreamArnRoleArn]] = js.undefined
+  val kinesisSourceConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamKinesisSourceConfiguration]] = js.undefined
   /**
     * A name to identify the stream. This is unique to the
     * AWS account and region the Stream is created in.
@@ -43,13 +42,18 @@ trait FirehoseDeliveryStreamState extends js.Object {
     * Using `redshiftConfiguration` requires the user to also specify a
     * `s3Configuration` block. More details are given below.
     */
-  val redshiftConfiguration: js.UndefOr[Input[Anon_CloudwatchLoggingOptionsClusterJdbcurl]] = js.undefined
+  val redshiftConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamRedshiftConfiguration]] = js.undefined
   /**
     * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
-  val s3Configuration: js.UndefOr[Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions]] = js.undefined
-  val splunkConfiguration: js.UndefOr[Input[Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint]] = js.undefined
+  val s3Configuration: js.UndefOr[Input[FirehoseDeliveryStreamS3Configuration]] = js.undefined
+  /**
+    * Encrypt at rest options.
+    * Server-side encryption should not be enabled when a kinesis stream is configured as the source of the firehose delivery stream.
+    */
+  val serverSideEncryption: js.UndefOr[Input[FirehoseDeliveryStreamServerSideEncryption]] = js.undefined
+  val splunkConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamSplunkConfiguration]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -66,13 +70,14 @@ object FirehoseDeliveryStreamState {
     arn: Input[String] = null,
     destination: Input[String] = null,
     destinationId: Input[String] = null,
-    elasticsearchConfiguration: Input[Anon_BufferingIntervalBufferingSize] = null,
-    extendedS3Configuration: Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptionsCompressionFormat] = null,
-    kinesisSourceConfiguration: Input[Anon_KinesisStreamArnRoleArn] = null,
+    elasticsearchConfiguration: Input[FirehoseDeliveryStreamElasticsearchConfiguration] = null,
+    extendedS3Configuration: Input[FirehoseDeliveryStreamExtendedS3Configuration] = null,
+    kinesisSourceConfiguration: Input[FirehoseDeliveryStreamKinesisSourceConfiguration] = null,
     name: Input[String] = null,
-    redshiftConfiguration: Input[Anon_CloudwatchLoggingOptionsClusterJdbcurl] = null,
-    s3Configuration: Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions] = null,
-    splunkConfiguration: Input[Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint] = null,
+    redshiftConfiguration: Input[FirehoseDeliveryStreamRedshiftConfiguration] = null,
+    s3Configuration: Input[FirehoseDeliveryStreamS3Configuration] = null,
+    serverSideEncryption: Input[FirehoseDeliveryStreamServerSideEncryption] = null,
+    splunkConfiguration: Input[FirehoseDeliveryStreamSplunkConfiguration] = null,
     tags: Input[StringDictionary[_]] = null,
     versionId: Input[String] = null
   ): FirehoseDeliveryStreamState = {
@@ -86,6 +91,7 @@ object FirehoseDeliveryStreamState {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (redshiftConfiguration != null) __obj.updateDynamic("redshiftConfiguration")(redshiftConfiguration.asInstanceOf[js.Any])
     if (s3Configuration != null) __obj.updateDynamic("s3Configuration")(s3Configuration.asInstanceOf[js.Any])
+    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
     if (splunkConfiguration != null) __obj.updateDynamic("splunkConfiguration")(splunkConfiguration.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])

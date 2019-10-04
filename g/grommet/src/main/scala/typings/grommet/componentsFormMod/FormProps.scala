@@ -3,6 +3,7 @@ package typings.grommet.componentsFormMod
 import typings.grommet.Anon_Invalid
 import typings.react.Element
 import typings.react.Event
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.SyntheticEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ trait FormProps extends js.Object {
   var messages: js.UndefOr[Anon_Invalid] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], _]] = js.undefined
-  var onSubmit: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onSubmit: js.UndefOr[js.Function1[/* event */ FormEvent[Element], Unit]] = js.undefined
   var value: js.UndefOr[js.Object] = js.undefined
 }
 
@@ -24,7 +25,7 @@ object FormProps {
     messages: Anon_Invalid = null,
     onChange: /* repeated */ js.Any => _ = null,
     onReset: /* event */ SyntheticEvent[Element, Event] => _ = null,
-    onSubmit: /* repeated */ js.Any => _ = null,
+    onSubmit: /* event */ FormEvent[Element] => Unit = null,
     value: js.Object = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()

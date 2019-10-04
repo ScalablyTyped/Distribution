@@ -12,7 +12,7 @@ trait Anon_Anchoring extends js.Object {
   /**
     * Whether the pattern must match the beginning or the end of the query string, or both, or none.
     */
-  var anchoring: is | startsWith | endsWith | contains
+  var anchoring: js.UndefOr[is | startsWith | endsWith | contains] = js.undefined
   /**
     * Rule context (format: [A-Za-z0-9_-]+).
     * When specified, the rule is contextual and applies only when the same context is specified
@@ -24,14 +24,20 @@ trait Anon_Anchoring extends js.Object {
   /**
     * Query pattern
     */
-  var pattern: String
+  var pattern: js.UndefOr[String] = js.undefined
 }
 
 object Anon_Anchoring {
   @scala.inline
-  def apply(anchoring: is | startsWith | endsWith | contains, pattern: String, context: String = null): Anon_Anchoring = {
-    val __obj = js.Dynamic.literal(anchoring = anchoring.asInstanceOf[js.Any], pattern = pattern)
+  def apply(
+    anchoring: is | startsWith | endsWith | contains = null,
+    context: String = null,
+    pattern: String = null
+  ): Anon_Anchoring = {
+    val __obj = js.Dynamic.literal()
+    if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     __obj.asInstanceOf[Anon_Anchoring]
   }
 }

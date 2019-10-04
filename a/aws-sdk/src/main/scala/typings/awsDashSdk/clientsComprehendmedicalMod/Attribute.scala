@@ -18,11 +18,11 @@ trait Attribute extends js.Object {
     */
   var Id: js.UndefOr[Integer] = js.undefined
   /**
-    *  The level of confidence that Comprehend Medical has that this attribute is correctly related to this entity. 
+    *  The level of confidence that Amazon Comprehend Medical has that this attribute is correctly related to this entity. 
     */
   var RelationshipScore: js.UndefOr[Float] = js.undefined
   /**
-    *  The level of confidence that Comprehend Medical has that the segment of text is correctly recognized as an attribute. 
+    *  The level of confidence that Amazon Comprehend Medical has that the segment of text is correctly recognized as an attribute. 
     */
   var Score: js.UndefOr[Float] = js.undefined
   /**

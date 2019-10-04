@@ -1,5 +1,6 @@
 package typings.echarts.echartsNs.EChartOptionNs.DataZoomNs
 
+import typings.echarts.echartsNs.EChartOptionNs.BaseTextStyle
 import typings.echarts.echartsNs.EChartOptionNs.DataZoom
 import typings.echarts.echartsStrings.empty
 import typings.echarts.echartsStrings.filter
@@ -47,7 +48,7 @@ trait Slider extends DataZoom {
   var singleAxisIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var start: js.UndefOr[Double] = js.undefined
   var startValue: js.UndefOr[Double | String | Date] = js.undefined
-  var textStyle: js.UndefOr[js.Object] = js.undefined
+  var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
   var throttle: js.UndefOr[Double] = js.undefined
   var top: js.UndefOr[String | Double] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -92,7 +93,7 @@ object Slider {
     singleAxisIndex: Double | js.Array[Double] = null,
     start: Int | Double = null,
     startValue: Double | String | Date = null,
-    textStyle: js.Object = null,
+    textStyle: BaseTextStyle = null,
     throttle: Int | Double = null,
     top: String | Double = null,
     `type`: String = null,

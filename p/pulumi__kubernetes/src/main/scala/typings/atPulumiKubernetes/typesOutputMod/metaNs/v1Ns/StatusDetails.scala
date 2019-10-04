@@ -23,7 +23,7 @@ trait StatusDetails extends js.Object {
   /**
     * The kind attribute of the resource associated with the status StatusReason. On some
     * operations may differ from the requested resource Kind. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: String
   /**

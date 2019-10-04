@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaAliasMod
 
-import typings.atPulumiAws.Anon_AdditionalVersionWeightsKey
+import typings.atPulumiAws.typesInputMod.lambdaNs.AliasRoutingConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ trait AliasState extends js.Object {
   /**
     * The Lambda alias' route configuration settings. Fields documented below
     */
-  val routingConfig: js.UndefOr[Input[Anon_AdditionalVersionWeightsKey]] = js.undefined
+  val routingConfig: js.UndefOr[Input[AliasRoutingConfig]] = js.undefined
 }
 
 object AliasState {
@@ -46,7 +46,7 @@ object AliasState {
     functionVersion: Input[String] = null,
     invokeArn: Input[String] = null,
     name: Input[String] = null,
-    routingConfig: Input[Anon_AdditionalVersionWeightsKey] = null
+    routingConfig: Input[AliasRoutingConfig] = null
   ): AliasState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

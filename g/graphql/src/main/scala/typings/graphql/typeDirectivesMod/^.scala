@@ -15,6 +15,6 @@ object ^ extends js.Object {
   val specifiedDirectives: js.Array[GraphQLDirective] = js.native
   def assertDirective(directive: js.Any): GraphQLDirective = js.native
   def isDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ Boolean = js.native
-  def isSpecifiedDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ Boolean = js.native
+  def isSpecifiedDirective(directive: js.Any): Boolean = js.native
 }
 

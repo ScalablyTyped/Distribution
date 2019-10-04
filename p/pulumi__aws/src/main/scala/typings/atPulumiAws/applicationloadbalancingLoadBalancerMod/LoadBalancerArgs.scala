@@ -1,10 +1,10 @@
 package typings.atPulumiAws.applicationloadbalancingLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllocationIdSubnetId
-import typings.atPulumiAws.Anon_BucketEnabledPrefix
 import typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
 import typings.atPulumiAws.albLoadBalancerTypeMod.LoadBalancerType
+import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.LoadBalancerAccessLogs
+import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.LoadBalancerSubnetMapping
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait LoadBalancerArgs extends js.Object {
   /**
     * An Access Logs block. Access Logs documented below.
     */
-  val accessLogs: js.UndefOr[Input[Anon_BucketEnabledPrefix]] = js.undefined
+  val accessLogs: js.UndefOr[Input[LoadBalancerAccessLogs]] = js.undefined
   /**
     * If true, cross-zone load balancing of the load balancer will be enabled.
     * This is a `network` load balancer feature. Defaults to `false`.
@@ -62,7 +62,7 @@ trait LoadBalancerArgs extends js.Object {
   /**
     * A subnet mapping block as documented below.
     */
-  val subnetMappings: js.UndefOr[Input[js.Array[Input[Anon_AllocationIdSubnetId]]]] = js.undefined
+  val subnetMappings: js.UndefOr[Input[js.Array[Input[LoadBalancerSubnetMapping]]]] = js.undefined
   /**
     * A list of subnet IDs to attach to the LB. Subnets
     * cannot be updated for Load Balancers of type `network`. Changing this value
@@ -78,7 +78,7 @@ trait LoadBalancerArgs extends js.Object {
 object LoadBalancerArgs {
   @scala.inline
   def apply(
-    accessLogs: Input[Anon_BucketEnabledPrefix] = null,
+    accessLogs: Input[LoadBalancerAccessLogs] = null,
     enableCrossZoneLoadBalancing: Input[Boolean] = null,
     enableDeletionProtection: Input[Boolean] = null,
     enableHttp2: Input[Boolean] = null,
@@ -89,7 +89,7 @@ object LoadBalancerArgs {
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     securityGroups: Input[js.Array[Input[String]]] = null,
-    subnetMappings: Input[js.Array[Input[Anon_AllocationIdSubnetId]]] = null,
+    subnetMappings: Input[js.Array[Input[LoadBalancerSubnetMapping]]] = null,
     subnets: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): LoadBalancerArgs = {

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the NamedItem object, for use in "namedItem.set({ ... })". */
+/** An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`. */
 trait NamedItemUpdateData extends js.Object {
   /**
     *

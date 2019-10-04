@@ -78,14 +78,14 @@ trait ParagraphCollectionLoadOptions extends js.Object {
   var lineUnitBefore: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
+    * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.
     *
     * [Api set: WordApi 1.3]
     */
   var list: js.UndefOr[ListLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+    * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
     *
     * [Api set: WordApi 1.3]
     */
@@ -120,7 +120,7 @@ trait ParagraphCollectionLoadOptions extends js.Object {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+    * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
     *
     * [Api set: WordApi 1.1]
     */
@@ -134,14 +134,14 @@ trait ParagraphCollectionLoadOptions extends js.Object {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a table.
+    * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an error if it is not contained in a table.
     *
     * [Api set: WordApi 1.3]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
+    * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
     *
     * [Api set: WordApi 1.3]
     */

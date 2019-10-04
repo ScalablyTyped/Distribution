@@ -125,7 +125,7 @@ object SingleAxis {
     nameGap: Int | Double = null,
     nameLocation: start | middle | center | end = null,
     nameRotate: Int | Double = null,
-    nameTextStyle: typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.TextStyle = null,
+    nameTextStyle: TextStyleWithRich = null,
     offset: Int | Double = null,
     orient: horizontal | vertical = null,
     right: String | Double = null,

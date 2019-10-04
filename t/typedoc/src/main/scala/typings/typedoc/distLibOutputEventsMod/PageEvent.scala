@@ -1,6 +1,6 @@
 package typings.typedoc.distLibOutputEventsMod
 
-import typings.handlebars.HandlebarsTemplateDelegate
+import typings.handlebars.HandlebarsNs.TemplateDelegate
 import typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
 import typings.typedoc.distLibOutputModelsNavigationItemMod.NavigationItem
 import typings.typedoc.distLibUtilsEventsMod.Event
@@ -17,7 +17,7 @@ class PageEvent () extends Event {
   var navigation: js.UndefOr[NavigationItem] = js.native
   var project: ProjectReflection = js.native
   var settings: js.Any = js.native
-  var template: js.UndefOr[HandlebarsTemplateDelegate[_]] = js.native
+  var template: js.UndefOr[TemplateDelegate[_]] = js.native
   var templateName: String = js.native
   var toc: js.UndefOr[NavigationItem] = js.native
   var url: String = js.native

@@ -2,6 +2,7 @@ package typings.reactDashSelect.srcAnimatedPlaceholderMod
 
 import typings.react.reactMod.ComponentType
 import typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/src/animated/Placeholder", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def AnimatedPlaceholder[OptionType](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = js.native
-  def default[OptionType](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = js.native
+  def AnimatedPlaceholder[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = js.native
+  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = js.native
 }
 

@@ -2,8 +2,8 @@ package typings.atEmberUtils
 
 import typings.atEmberUtils.atEmberUtilsStrings.undefined
 import typings.atEmberUtils.dashPrivateTypesMod.FunctionArgs
-import typings.atEmberUtils.dashPrivateTypesMod.KeysOfType
 import typings.atEmberUtils.dashPrivateTypesMod.TypeLookup
+import typings.atEmberUtils.dashPrivateTypesMod.TypeOf
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,6 +36,6 @@ object atEmberUtilsMod extends js.Object {
   ] = js.native
   def typeOf(): undefined = js.native
   def typeOf(item: js.Any): String = js.native
-  def typeOf[T](value: T): KeysOfType[TypeLookup, T] = js.native
+  def typeOf[T](value: T): TypeOf[TypeLookup, T] = js.native
 }
 

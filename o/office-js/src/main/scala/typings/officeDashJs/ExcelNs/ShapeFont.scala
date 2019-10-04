@@ -81,25 +81,15 @@ class ShapeFont () extends ClientObject {
     */
   var underline: ShapeFontUnderlineStyle | None | Single | typings.officeDashJs.officeDashJsStrings.Double | Heavy | Dotted | DottedHeavy | Dash | DashHeavy | DashLong | DashLongHeavy | DotDash | DotDashHeavy | DotDotDash | DotDotDashHeavy | Wavy | WavyHeavy | WavyDouble = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.ShapeFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.ShapeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ShapeFont = js.native
-  def load(option: String): ShapeFont = js.native
-  def load(option: js.Array[String]): ShapeFont = js.native
-  def load(option: Anon_Expand): ShapeFont = js.native
-  def load(option: ShapeFontLoadOptions): ShapeFont = js.native
+  def load(options: ShapeFontLoadOptions): ShapeFont = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): ShapeFont = js.native
+  def load(propertyNames: String): ShapeFont = js.native
+  def load(propertyNames: js.Array[String]): ShapeFont = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

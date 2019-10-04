@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "simple-websocket"
-version := "7.0-dt-20181009Z-db4f7a"
+version := "7.0-dt-20181009Z-c51bac"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-a3a190")
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-46b3ba")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

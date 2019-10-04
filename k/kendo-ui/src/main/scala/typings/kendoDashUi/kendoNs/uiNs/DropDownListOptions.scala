@@ -32,7 +32,7 @@ trait DropDownListOptions extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   var minLength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var noDataTemplate: js.UndefOr[String | js.Function] = js.undefined
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
   var open: js.UndefOr[js.Function1[/* e */ DropDownListOpenEvent, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String | js.Any] = js.undefined
   var optionLabelTemplate: js.UndefOr[String | js.Function] = js.undefined
@@ -75,7 +75,7 @@ object DropDownListOptions {
     index: Int | Double = null,
     minLength: Int | Double = null,
     name: String = null,
-    noDataTemplate: String | js.Function = null,
+    noDataTemplate: String | js.Function | Boolean = null,
     open: /* e */ DropDownListOpenEvent => Unit = null,
     optionLabel: String | js.Any = null,
     optionLabelTemplate: String | js.Function = null,

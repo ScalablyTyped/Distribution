@@ -1,5 +1,6 @@
 package typings.atPulumiAws.ecsGetClusterMod
 
+import typings.atPulumiAws.typesOutputMod.ecsNs.GetClusterSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +28,10 @@ trait GetClusterResult extends js.Object {
     */
   val runningTasksCount: Double
   /**
+    * The settings associated with the ECS Cluster.
+    */
+  val settings: js.Array[GetClusterSetting]
+  /**
     * The status of the ECS Cluster
     */
   val status: String
@@ -41,9 +46,10 @@ object GetClusterResult {
     pendingTasksCount: Double,
     registeredContainerInstancesCount: Double,
     runningTasksCount: Double,
+    settings: js.Array[GetClusterSetting],
     status: String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, clusterName = clusterName, id = id, pendingTasksCount = pendingTasksCount, registeredContainerInstancesCount = registeredContainerInstancesCount, runningTasksCount = runningTasksCount, status = status)
+    val __obj = js.Dynamic.literal(arn = arn, clusterName = clusterName, id = id, pendingTasksCount = pendingTasksCount, registeredContainerInstancesCount = registeredContainerInstancesCount, runningTasksCount = runningTasksCount, settings = settings, status = status)
   
     __obj.asInstanceOf[GetClusterResult]
   }

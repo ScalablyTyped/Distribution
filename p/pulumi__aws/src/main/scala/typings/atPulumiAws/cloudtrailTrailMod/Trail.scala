@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudtrailTrailMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DataResources
+import typings.atPulumiAws.typesOutputMod.cloudtrailNs.TrailEventSelector
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -50,7 +50,7 @@ class Trail protected () extends CustomResource {
   /**
     * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
     */
-  val eventSelectors: Output[js.UndefOr[js.Array[Anon_DataResources]]] = js.native
+  val eventSelectors: Output[js.UndefOr[js.Array[TrailEventSelector]]] = js.native
   /**
     * The region in which the trail was created.
     */

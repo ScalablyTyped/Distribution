@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2VpnConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcceptedRouteCount
-import typings.atPulumiAws.Anon_DestinationCidrBlock
+import typings.atPulumiAws.typesOutputMod.ec2Ns.VpnConnectionRoute
+import typings.atPulumiAws.typesOutputMod.ec2Ns.VpnConnectionVgwTelemetry
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,7 +32,7 @@ class VpnConnection protected () extends CustomResource {
     * The ID of the customer gateway.
     */
   val customerGatewayId: Output[String] = js.native
-  val routes: Output[js.Array[Anon_DestinationCidrBlock]] = js.native
+  val routes: Output[js.Array[VpnConnectionRoute]] = js.native
   /**
     * Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
     */
@@ -109,7 +109,7 @@ class VpnConnection protected () extends CustomResource {
     * The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
     */
   val `type`: Output[String] = js.native
-  val vgwTelemetries: Output[js.Array[Anon_AcceptedRouteCount]] = js.native
+  val vgwTelemetries: Output[js.Array[VpnConnectionVgwTelemetry]] = js.native
   /**
     * The ID of the Virtual Private Gateway.
     */

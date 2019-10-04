@@ -10,7 +10,7 @@ trait Job extends js.Object {
     */
   var accountId: js.UndefOr[AccountId] = js.undefined
   /**
-    * Additional data about a job.
+    * Other data about a job.
     */
   var data: js.UndefOr[JobData] = js.undefined
   /**

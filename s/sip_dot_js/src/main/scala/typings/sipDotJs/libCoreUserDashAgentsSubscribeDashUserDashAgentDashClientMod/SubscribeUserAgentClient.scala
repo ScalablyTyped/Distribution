@@ -44,7 +44,7 @@ class SubscribeUserAgentClient protected () extends UserAgentClient {
   /**
     * Handle out of dialog NOTIFY assoicated with SUBSCRIBE request.
     * This is the first NOTIFY received after the SUBSCRIBE request.
-    * @param uas User agent server handling the subscription creating NOTIFY.
+    * @param uas - User agent server handling the subscription creating NOTIFY.
     */
   def onNotify(uas: NotifyUserAgentServer): Unit = js.native
   def waitNotifyStart(): Unit = js.native

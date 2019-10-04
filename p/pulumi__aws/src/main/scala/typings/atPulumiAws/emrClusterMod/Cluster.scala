@@ -1,13 +1,13 @@
 package typings.atPulumiAws.emrClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActionOnFailure
-import typings.atPulumiAws.Anon_AdDomainJoinPassword
-import typings.atPulumiAws.Anon_AdditionalMasterSecurityGroups
-import typings.atPulumiAws.Anon_Args
-import typings.atPulumiAws.Anon_AutoscalingPolicy
-import typings.atPulumiAws.Anon_AutoscalingPolicyBidPrice
-import typings.atPulumiAws.Anon_BidPrice
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterBootstrapAction
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterCoreInstanceGroup
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterEc2Attributes
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterInstanceGroup
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterKerberosAttributes
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterMasterInstanceGroup
+import typings.atPulumiAws.typesOutputMod.emrNs.ClusterStep
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -44,7 +44,7 @@ class Cluster protected () extends CustomResource {
   /**
     * List of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below
     */
-  val bootstrapActions: Output[js.UndefOr[js.Array[Anon_Args]]] = js.native
+  val bootstrapActions: Output[js.UndefOr[js.Array[ClusterBootstrapAction]]] = js.native
   val clusterState: Output[String] = js.native
   /**
     * List of configurations supplied for the EMR cluster you are creating
@@ -61,7 +61,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [core node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-core). Cannot be specified if `coreInstanceCount` argument, `coreInstanceType` argument, or `instanceGroup` configuration blocks are set. Detailed below.
     */
-  val coreInstanceGroup: Output[Anon_AutoscalingPolicy] = js.native
+  val coreInstanceGroup: Output[ClusterCoreInstanceGroup] = js.native
   /**
     * Use the `coreInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the slave nodes. Cannot be specified if `coreInstanceGroup` or `instanceGroup` configuration blocks are set.
     */
@@ -77,11 +77,11 @@ class Cluster protected () extends CustomResource {
   /**
     * Attributes for the EC2 instances running the job flow. Defined below
     */
-  val ec2Attributes: Output[js.UndefOr[Anon_AdditionalMasterSecurityGroups]] = js.native
+  val ec2Attributes: Output[js.UndefOr[ClusterEc2Attributes]] = js.native
   /**
     * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and [`aws.emr.InstanceGroup` resource(s)](https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
     */
-  val instanceGroups: Output[js.Array[Anon_AutoscalingPolicyBidPrice]] = js.native
+  val instanceGroups: Output[js.Array[ClusterInstanceGroup]] = js.native
   /**
     * Switch on/off run cluster with no steps or when all steps are complete (default is on)
     */
@@ -89,7 +89,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Kerberos configuration for the cluster. Defined below
     */
-  val kerberosAttributes: Output[js.UndefOr[Anon_AdDomainJoinPassword]] = js.native
+  val kerberosAttributes: Output[js.UndefOr[ClusterKerberosAttributes]] = js.native
   /**
     * S3 bucket to write the log files of the job flow. If a value is not provided, logs are not created
     */
@@ -97,7 +97,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [master node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-master). Cannot be specified if `masterInstanceType` argument or `instanceGroup` configuration blocks are set. Detailed below.
     */
-  val masterInstanceGroup: Output[Anon_BidPrice] = js.native
+  val masterInstanceGroup: Output[ClusterMasterInstanceGroup] = js.native
   /**
     * Use the `masterInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the master node. Cannot be specified if `masterInstanceGroup` or `instanceGroup` configuration blocks are set.
     */
@@ -130,7 +130,7 @@ class Cluster protected () extends CustomResource {
   /**
     * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignoreChanges` if other steps are being managed outside of this provider. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val steps: Output[js.Array[Anon_ActionOnFailure]] = js.native
+  val steps: Output[js.Array[ClusterStep]] = js.native
   /**
     * list of tags to apply to the EMR Cluster
     */

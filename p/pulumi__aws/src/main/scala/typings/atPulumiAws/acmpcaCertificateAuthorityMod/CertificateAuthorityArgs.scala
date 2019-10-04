@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmpcaCertificateAuthorityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CrlConfigurationAnonCustomCnameEnabled
-import typings.atPulumiAws.Anon_KeyAlgorithmSigningAlgorithm
+import typings.atPulumiAws.typesInputMod.acmpcaNs.CertificateAuthorityCertificateAuthorityConfiguration
+import typings.atPulumiAws.typesInputMod.acmpcaNs.CertificateAuthorityRevocationConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait CertificateAuthorityArgs extends js.Object {
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: Input[Anon_KeyAlgorithmSigningAlgorithm]
+  val certificateAuthorityConfiguration: Input[CertificateAuthorityCertificateAuthorityConfiguration]
   /**
     * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. Defaults to `false`.
     */
@@ -24,7 +24,7 @@ trait CertificateAuthorityArgs extends js.Object {
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: js.UndefOr[Input[Anon_CrlConfigurationAnonCustomCnameEnabled]] = js.undefined
+  val revocationConfiguration: js.UndefOr[Input[CertificateAuthorityRevocationConfiguration]] = js.undefined
   /**
     * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
     */
@@ -38,10 +38,10 @@ trait CertificateAuthorityArgs extends js.Object {
 object CertificateAuthorityArgs {
   @scala.inline
   def apply(
-    certificateAuthorityConfiguration: Input[Anon_KeyAlgorithmSigningAlgorithm],
+    certificateAuthorityConfiguration: Input[CertificateAuthorityCertificateAuthorityConfiguration],
     enabled: Input[Boolean] = null,
     permanentDeletionTimeInDays: Input[Double] = null,
-    revocationConfiguration: Input[Anon_CrlConfigurationAnonCustomCnameEnabled] = null,
+    revocationConfiguration: Input[CertificateAuthorityRevocationConfiguration] = null,
     tags: Input[StringDictionary[_]] = null,
     `type`: Input[String] = null
   ): CertificateAuthorityArgs = {

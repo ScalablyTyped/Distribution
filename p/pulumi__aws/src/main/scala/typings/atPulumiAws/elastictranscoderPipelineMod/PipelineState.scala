@@ -1,8 +1,10 @@
 package typings.atPulumiAws.elastictranscoderPipelineMod
 
-import typings.atPulumiAws.Anon_AccessesGrantee
-import typings.atPulumiAws.Anon_BucketStorageClassInput
-import typings.atPulumiAws.Anon_CompletedError
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineContentConfig
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineContentConfigPermission
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineNotifications
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineThumbnailConfig
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineThumbnailConfigPermission
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,11 +19,11 @@ trait PipelineState extends js.Object {
   /**
     * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
     */
-  val contentConfig: js.UndefOr[Input[Anon_BucketStorageClassInput]] = js.undefined
+  val contentConfig: js.UndefOr[Input[PipelineContentConfig]] = js.undefined
   /**
     * The permissions for the `contentConfig` object. (documented below)
     */
-  val contentConfigPermissions: js.UndefOr[Input[js.Array[Input[Anon_AccessesGrantee]]]] = js.undefined
+  val contentConfigPermissions: js.UndefOr[Input[js.Array[Input[PipelineContentConfigPermission]]]] = js.undefined
   /**
     * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
     */
@@ -33,7 +35,7 @@ trait PipelineState extends js.Object {
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
     */
-  val notifications: js.UndefOr[Input[Anon_CompletedError]] = js.undefined
+  val notifications: js.UndefOr[Input[PipelineNotifications]] = js.undefined
   /**
     * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
     */
@@ -45,11 +47,11 @@ trait PipelineState extends js.Object {
   /**
     * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
     */
-  val thumbnailConfig: js.UndefOr[Input[Anon_BucketStorageClassInput]] = js.undefined
+  val thumbnailConfig: js.UndefOr[Input[PipelineThumbnailConfig]] = js.undefined
   /**
     * The permissions for the `thumbnailConfig` object. (documented below)
     */
-  val thumbnailConfigPermissions: js.UndefOr[Input[js.Array[Input[Anon_AccessesGrantee]]]] = js.undefined
+  val thumbnailConfigPermissions: js.UndefOr[Input[js.Array[Input[PipelineThumbnailConfigPermission]]]] = js.undefined
 }
 
 object PipelineState {
@@ -57,15 +59,15 @@ object PipelineState {
   def apply(
     arn: Input[String] = null,
     awsKmsKeyArn: Input[String] = null,
-    contentConfig: Input[Anon_BucketStorageClassInput] = null,
-    contentConfigPermissions: Input[js.Array[Input[Anon_AccessesGrantee]]] = null,
+    contentConfig: Input[PipelineContentConfig] = null,
+    contentConfigPermissions: Input[js.Array[Input[PipelineContentConfigPermission]]] = null,
     inputBucket: Input[String] = null,
     name: Input[String] = null,
-    notifications: Input[Anon_CompletedError] = null,
+    notifications: Input[PipelineNotifications] = null,
     outputBucket: Input[String] = null,
     role: Input[String] = null,
-    thumbnailConfig: Input[Anon_BucketStorageClassInput] = null,
-    thumbnailConfigPermissions: Input[js.Array[Input[Anon_AccessesGrantee]]] = null
+    thumbnailConfig: Input[PipelineThumbnailConfig] = null,
+    thumbnailConfigPermissions: Input[js.Array[Input[PipelineThumbnailConfigPermission]]] = null
   ): PipelineState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

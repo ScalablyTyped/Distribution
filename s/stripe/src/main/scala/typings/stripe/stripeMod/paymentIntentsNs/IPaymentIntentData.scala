@@ -1,6 +1,6 @@
 package typings.stripe.stripeMod.paymentIntentsNs
 
-import typings.stripe.stripeMod.IOptionsMetadata
+import typings.stripe.stripeMod.IMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait IPaymentIntentData extends js.Object {
   /**
     * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
     */
-  var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
+  var metadata: js.UndefOr[IMetadata] = js.undefined
   /**
     * The account (if any) for which the funds of the PaymentIntent are intended. Used with connected accounts.
     */
@@ -53,7 +53,7 @@ object IPaymentIntentData {
     application_fee_amount: Int | Double = null,
     capture_method: PaymentIntentDataCaptureMethodOptions = null,
     description: String = null,
-    metadata: IOptionsMetadata = null,
+    metadata: IMetadata = null,
     on_behalf_of: String = null,
     receipt_email: String = null,
     setup_future_usage: PaymentIntendDataFutureUsageOptions = null,

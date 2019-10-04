@@ -12,6 +12,7 @@ import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAssociation
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IAttribute
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IDomainModel
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IEntity
+import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodelsNs.IRemoteEntitySourceDocument
 import typings.mendixmodelsdk.distGenEnumerationsMod.enumerationsNs.IEnumeration
 import typings.mendixmodelsdk.distGenEnumerationsMod.enumerationsNs.IEnumerationValue
 import typings.mendixmodelsdk.distGenExportmappingsMod.exportmappingsNs.IExportMapping
@@ -126,6 +127,7 @@ trait IBaseModel extends IAbstractModel {
   def allPublishedServiceBases(): js.Array[IPublishedServiceBase] = js.native
   def allPublishedWebServices(): js.Array[IPublishedWebService] = js.native
   def allRegularExpressions(): js.Array[IRegularExpression] = js.native
+  def allRemoteEntitySourceDocuments(): js.Array[IRemoteEntitySourceDocument] = js.native
   def allRules(): js.Array[IRule] = js.native
   def allScheduledEvents(): js.Array[IScheduledEvent] = js.native
   def allServerSideMicroflows(): js.Array[IServerSideMicroflow] = js.native
@@ -167,6 +169,7 @@ trait IBaseModel extends IAbstractModel {
   def findNavigationProfileByQualifiedName(qname: String): INavigationProfile = js.native
   def findPageByQualifiedName(qname: String): IPage = js.native
   def findRegularExpressionByQualifiedName(qname: String): IRegularExpression = js.native
+  def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument = js.native
   def findRuleByQualifiedName(qname: String): IRule = js.native
   def findRuleParameterByQualifiedName(qname: String): IRuleParameter = js.native
   def findSnippetByQualifiedName(qname: String): ISnippet = js.native

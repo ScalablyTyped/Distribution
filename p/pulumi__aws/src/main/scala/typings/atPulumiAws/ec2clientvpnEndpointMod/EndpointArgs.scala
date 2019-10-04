@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2clientvpnEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActiveDirectoryIdRootCertificateChainArn
-import typings.atPulumiAws.Anon_CloudwatchLogGroupCloudwatchLogStream
+import typings.atPulumiAws.typesInputMod.ec2clientvpnNs.EndpointAuthenticationOptions
+import typings.atPulumiAws.typesInputMod.ec2clientvpnNs.EndpointConnectionLogOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait EndpointArgs extends js.Object {
   /**
     * Information about the authentication method to be used to authenticate clients.
     */
-  val authenticationOptions: Input[Anon_ActiveDirectoryIdRootCertificateChainArn]
+  val authenticationOptions: Input[EndpointAuthenticationOptions]
   /**
     * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
     */
@@ -20,7 +20,7 @@ trait EndpointArgs extends js.Object {
   /**
     * Information about the client connection logging options.
     */
-  val connectionLogOptions: Input[Anon_CloudwatchLogGroupCloudwatchLogStream]
+  val connectionLogOptions: Input[EndpointConnectionLogOptions]
   /**
     * Name of the repository.
     */
@@ -50,9 +50,9 @@ trait EndpointArgs extends js.Object {
 object EndpointArgs {
   @scala.inline
   def apply(
-    authenticationOptions: Input[Anon_ActiveDirectoryIdRootCertificateChainArn],
+    authenticationOptions: Input[EndpointAuthenticationOptions],
     clientCidrBlock: Input[String],
-    connectionLogOptions: Input[Anon_CloudwatchLogGroupCloudwatchLogStream],
+    connectionLogOptions: Input[EndpointConnectionLogOptions],
     serverCertificateArn: Input[String],
     description: Input[String] = null,
     dnsServers: Input[js.Array[Input[String]]] = null,

@@ -5,10 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RadialChartOptions extends ChartOptions {
-  @JSName("scale")
-  var scale_RadialChartOptions: js.UndefOr[RadialLinearScale] = js.undefined
-}
+trait RadialChartOptions extends ChartOptions
 
 object RadialChartOptions {
   @scala.inline

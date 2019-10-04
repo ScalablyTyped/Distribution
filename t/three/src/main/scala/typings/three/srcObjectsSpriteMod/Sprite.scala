@@ -19,6 +19,5 @@ class Sprite () extends Object3D {
   var material: SpriteMaterial = js.native
   @JSName("type")
   var type_Sprite: typings.three.threeStrings.Sprite = js.native
-  def copy(source: this.type): this.type = js.native
 }
 

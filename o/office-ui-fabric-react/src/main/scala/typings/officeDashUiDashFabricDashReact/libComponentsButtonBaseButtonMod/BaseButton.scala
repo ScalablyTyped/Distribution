@@ -21,7 +21,6 @@ class BaseButton protected ()
   var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
   var _handleTouchAndPointerEvent: js.Any = js.native
   var _hasText: js.Any = js.native
-  val _isExpanded: js.Any = js.native
   val _isSplitButton: js.Any = js.native
   /**
     * Returns if the user hits a valid keyboard key to open the menu
@@ -31,6 +30,8 @@ class BaseButton protected ()
   var _isValidMenuOpenKey: js.Any = js.native
   var _labelId: js.Any = js.native
   var _lastTouchTimeoutId: js.Any = js.native
+  var _menuShouldFocusOnContainer: js.Any = js.native
+  var _menuShouldFocusOnMount: js.Any = js.native
   var _onClick: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _onKeyPress: js.Any = js.native
@@ -59,7 +60,13 @@ class BaseButton protected ()
   var _onTouchStart: js.Any = js.native
   var _openMenu: js.Any = js.native
   var _processingTouch: js.Any = js.native
-  var _renderedPersistentMenu: js.Any = js.native
+  var _renderedVisibleMenu: js.Any = js.native
+  /**
+    * Method to help determine if the menu's component tree should
+    * be rendered. It takes into account whether the menu is expanded,
+    * whether it is a persisted menu and whether it has been shown to the user.
+    */
+  var _shouldRenderMenu: js.Any = js.native
   var _splitButtonContainer: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MBaseButton(): Unit = js.native

@@ -6,29 +6,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aurelia-dependency-injection", "Parent")
 @js.native
-class Parent protected () extends js.Object {
-  /**
-    * Creates an instance of the Parent class.
-    * @param key The key to resolve from the parent container.
-    */
-  def this(key: js.Any) = this()
-  /**
-    * Called by the container to load the dependency from the parent container
-    * @param container The container to resolve the parent from.
-    * @return Returns the matching instance from the parent container
-    */
-  def get(container: Container): js.Any = js.native
+class Parent[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends js.Object {
+  def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
+  def get(container: Container): TImpl = js.native
 }
 
 /* static members */
 @JSImport("aurelia-dependency-injection", "Parent")
 @js.native
 object Parent extends js.Object {
-  /**
-    * Creates a Parent Resolver for the supplied key.
-    * @param key The key to resolve.
-    * @return Returns an instance of Parent for the key.
-    */
-  def of(key: js.Any): Parent = js.native
+  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Parent[TBase, TImpl, TArgs] = js.native
 }
 

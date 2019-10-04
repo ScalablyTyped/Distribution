@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codecommitTriggerMod
 
-import typings.atPulumiAws.Anon_Branches
+import typings.atPulumiAws.typesOutputMod.codecommitNs.TriggerTrigger
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,7 +27,7 @@ class Trigger protected () extends CustomResource {
     * The name for the repository. This needs to be less than 100 characters.
     */
   val repositoryName: Output[String] = js.native
-  val triggers: Output[js.Array[Anon_Branches]] = js.native
+  val triggers: Output[js.Array[TriggerTrigger]] = js.native
 }
 
 /* static members */

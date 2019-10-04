@@ -3,6 +3,7 @@ package typings.three.srcRenderersWebGLRenderTargetMod
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
+import typings.three.srcTexturesDepthTextureMod.DepthTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,8 @@ trait WebGLRenderTargetOptions extends js.Object {
   var anisotropy: js.UndefOr[Double] = js.undefined
    // 1;
   var depthBuffer: js.UndefOr[Boolean] = js.undefined
+   // true;
+  var depthTexture: js.UndefOr[DepthTexture] = js.undefined
   var format: js.UndefOr[Double] = js.undefined
    // true;
   var generateMipmaps: js.UndefOr[Boolean] = js.undefined
@@ -30,6 +33,7 @@ object WebGLRenderTargetOptions {
   def apply(
     anisotropy: Int | Double = null,
     depthBuffer: js.UndefOr[Boolean] = js.undefined,
+    depthTexture: DepthTexture = null,
     format: Int | Double = null,
     generateMipmaps: js.UndefOr[Boolean] = js.undefined,
     magFilter: TextureFilter = null,
@@ -42,6 +46,7 @@ object WebGLRenderTargetOptions {
     val __obj = js.Dynamic.literal()
     if (anisotropy != null) __obj.updateDynamic("anisotropy")(anisotropy.asInstanceOf[js.Any])
     if (!js.isUndefined(depthBuffer)) __obj.updateDynamic("depthBuffer")(depthBuffer)
+    if (depthTexture != null) __obj.updateDynamic("depthTexture")(depthTexture)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(generateMipmaps)) __obj.updateDynamic("generateMipmaps")(generateMipmaps)
     if (magFilter != null) __obj.updateDynamic("magFilter")(magFilter)

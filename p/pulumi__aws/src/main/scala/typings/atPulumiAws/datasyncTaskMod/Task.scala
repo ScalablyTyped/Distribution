@@ -1,8 +1,8 @@
 package typings.atPulumiAws.datasyncTaskMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Atime
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesOutputMod.datasyncNs.TaskOptions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -43,7 +43,7 @@ class Task protected () extends CustomResource {
   /**
     * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
     */
-  val options: Output[js.UndefOr[Anon_Atime]] = js.native
+  val options: Output[js.UndefOr[TaskOptions]] = js.native
   /**
     * Amazon Resource Name (ARN) of source DataSync Location.
     */

@@ -1,6 +1,5 @@
 package typings.semanticDashUiDashReact
 
-import typings.semanticDashUiDashReact.distCommonjsAddonsRefRefFindNodeMod.RefFindNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -392,12 +391,8 @@ trait semanticDashUiDashReactProps {
   def RatingIconProps: typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps.type = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
   type RatingIconProps = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
   @scala.inline
-  def RefProps: typings.semanticDashUiDashReact.distCommonjsAddonsRefRefMod.RefProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsRefRefMod.RefProps
-  type RefProps = typings.semanticDashUiDashReact.distCommonjsAddonsRefRefMod.RefProps
-  type RefFindNodeProps = RefFindNode
-  @scala.inline
-  def RefForwardProps: typings.semanticDashUiDashReact.distCommonjsAddonsRefRefForwardMod.RefForwardProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsRefRefForwardMod.RefForwardProps
-  type RefForwardProps = typings.semanticDashUiDashReact.distCommonjsAddonsRefRefForwardMod.RefForwardProps
+  def RefProps: typings.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps.type = typings.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps
+  type RefProps = typings.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps
   @scala.inline
   def ResponsiveProps: typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps
   type ResponsiveProps = typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps

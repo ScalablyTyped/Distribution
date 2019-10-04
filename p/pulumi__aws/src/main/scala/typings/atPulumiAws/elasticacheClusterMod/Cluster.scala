@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Address
+import typings.atPulumiAws.typesOutputMod.elasticacheNs.ClusterCacheNode
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -43,7 +43,7 @@ class Cluster protected () extends CustomResource {
     * List of node objects including `id`, `address`, `port` and `availabilityZone`.
     * Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
     */
-  val cacheNodes: Output[js.Array[Anon_Address]] = js.native
+  val cacheNodes: Output[js.Array[ClusterCacheNode]] = js.native
   /**
     * (Memcached only) The DNS name of the cache cluster without the port appended.
     */

@@ -12,6 +12,7 @@ trait Anon_AsCell extends js.Object {
   var description: String
   var flowRoot: String
   var footer: String
+  var formGroup: String
   var hasAnswer: String
   var hasError: String
   var header: String
@@ -22,6 +23,7 @@ trait Anon_AsCell extends js.Object {
   var mainRoot: String
   var number: String
   var required: String
+  var requiredText: String
   var title: String
   var titleLeftRoot: String
   var titleOnAnswer: String
@@ -39,6 +41,7 @@ object Anon_AsCell {
     description: String,
     flowRoot: String,
     footer: String,
+    formGroup: String,
     hasAnswer: String,
     hasError: String,
     header: String,
@@ -49,13 +52,14 @@ object Anon_AsCell {
     mainRoot: String,
     number: String,
     required: String,
+    requiredText: String,
     title: String,
     titleLeftRoot: String,
     titleOnAnswer: String,
     titleOnError: String,
     titleRequired: String
   ): Anon_AsCell = {
-    val __obj = js.Dynamic.literal(asCell = asCell, comment = comment, content = content, contentLeft = contentLeft, description = description, flowRoot = flowRoot, footer = footer, hasAnswer = hasAnswer, hasError = hasError, header = header, headerBottom = headerBottom, headerLeft = headerLeft, headerTop = headerTop, indent = indent, mainRoot = mainRoot, number = number, required = required, title = title, titleLeftRoot = titleLeftRoot, titleOnAnswer = titleOnAnswer, titleOnError = titleOnError, titleRequired = titleRequired)
+    val __obj = js.Dynamic.literal(asCell = asCell, comment = comment, content = content, contentLeft = contentLeft, description = description, flowRoot = flowRoot, footer = footer, formGroup = formGroup, hasAnswer = hasAnswer, hasError = hasError, header = header, headerBottom = headerBottom, headerLeft = headerLeft, headerTop = headerTop, indent = indent, mainRoot = mainRoot, number = number, required = required, requiredText = requiredText, title = title, titleLeftRoot = titleLeftRoot, titleOnAnswer = titleOnAnswer, titleOnError = titleOnError, titleRequired = titleRequired)
   
     __obj.asInstanceOf[Anon_AsCell]
   }

@@ -1,5 +1,6 @@
 package typings.reactDashSketchapp.reactDashSketchappMod
 
+import typings.reactDashSketchapp.typesMod.SketchContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

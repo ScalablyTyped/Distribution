@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hogan_dot_js"
-version := "3.0-dt-20190404Z-f78dae"
+version := "3.0-dt-20190925Z-f78dae"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

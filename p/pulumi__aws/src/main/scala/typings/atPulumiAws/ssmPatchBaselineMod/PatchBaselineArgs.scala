@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmPatchBaselineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ApproveAfterDaysComplianceLevel
-import typings.atPulumiAws.Anon_KeyValuesArray
+import typings.atPulumiAws.typesInputMod.ssmNs.PatchBaselineApprovalRule
+import typings.atPulumiAws.typesInputMod.ssmNs.PatchBaselineGlobalFilter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait PatchBaselineArgs extends js.Object {
   /**
     * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approvalRule block requires the fields documented below.
     */
-  val approvalRules: js.UndefOr[Input[js.Array[Input[Anon_ApproveAfterDaysComplianceLevel]]]] = js.undefined
+  val approvalRules: js.UndefOr[Input[js.Array[Input[PatchBaselineApprovalRule]]]] = js.undefined
   /**
     * A list of explicitly approved patches for the baseline.
     */
@@ -28,7 +28,7 @@ trait PatchBaselineArgs extends js.Object {
   /**
     * A set of global filters used to exclude patches from the baseline. Up to 4 global filters can be specified using Key/Value pairs. Valid Keys are `PRODUCT | CLASSIFICATION | MSRC_SEVERITY | PATCH_ID`.
     */
-  val globalFilters: js.UndefOr[Input[js.Array[Input[Anon_KeyValuesArray]]]] = js.undefined
+  val globalFilters: js.UndefOr[Input[js.Array[Input[PatchBaselineGlobalFilter]]]] = js.undefined
   /**
     * The name of the patch baseline.
     */
@@ -47,11 +47,11 @@ trait PatchBaselineArgs extends js.Object {
 object PatchBaselineArgs {
   @scala.inline
   def apply(
-    approvalRules: Input[js.Array[Input[Anon_ApproveAfterDaysComplianceLevel]]] = null,
+    approvalRules: Input[js.Array[Input[PatchBaselineApprovalRule]]] = null,
     approvedPatches: Input[js.Array[Input[String]]] = null,
     approvedPatchesComplianceLevel: Input[String] = null,
     description: Input[String] = null,
-    globalFilters: Input[js.Array[Input[Anon_KeyValuesArray]]] = null,
+    globalFilters: Input[js.Array[Input[PatchBaselineGlobalFilter]]] = null,
     name: Input[String] = null,
     operatingSystem: Input[String] = null,
     rejectedPatches: Input[js.Array[Input[String]]] = null,

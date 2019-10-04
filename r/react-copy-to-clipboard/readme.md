@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-copy-to-clipboard
 
-Typings are for version 4.2
+Typings are for version 4.3
 
 ## Library description:
 Copy-to-clipboard React component

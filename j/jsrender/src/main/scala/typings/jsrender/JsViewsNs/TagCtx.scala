@@ -33,17 +33,17 @@ trait TagCtx extends js.Object {
   /* tagCtx.bndArgs() method */
   def bndArgs(): js.Array[_] | Unit = js.native
   /**
-    * Template render method: render the template as a string, using the specified data and helpers/context
-    * var htmlString = template(data, myHelpersObject);
-    * var htmlString = template.render(data, myHelpersObject);
-    *
-    * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
-    *
-    * @param {any}        data
-    * @param {hash}       [helpersOrContext]
-    * @param {boolean}    [noIteration]
-    * @returns {string}   rendered template
-    */
+  	 * Template render method: render the template as a string, using the specified data and helpers/context
+  	 * var htmlString = template(data, myHelpersObject);
+  	 * var htmlString = template.render(data, myHelpersObject);
+  	 *
+  	 * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
+  	 *
+  	 * @param {any}        data
+  	 * @param {hash}       [helpersOrContext]
+  	 * @param {boolean}    [noIteration]
+  	 * @returns {string}   rendered template
+  	 */
   /* Template for wrapped content, or else external template. Otherwise, false */
   def content(): String = js.native
   def content(data: js.Any): String = js.native
@@ -59,17 +59,17 @@ trait TagCtx extends js.Object {
   /* Tag render method */
   def render(arguments: js.Any*): String = js.native
   /**
-    * Template render method: render the template as a string, using the specified data and helpers/context
-    * var htmlString = template(data, myHelpersObject);
-    * var htmlString = template.render(data, myHelpersObject);
-    *
-    * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
-    *
-    * @param {any}        data
-    * @param {hash}       [helpersOrContext]
-    * @param {boolean}    [noIteration]
-    * @returns {string}   rendered template
-    */
+  	 * Template render method: render the template as a string, using the specified data and helpers/context
+  	 * var htmlString = template(data, myHelpersObject);
+  	 * var htmlString = template.render(data, myHelpersObject);
+  	 *
+  	 * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
+  	 *
+  	 * @param {any}        data
+  	 * @param {hash}       [helpersOrContext]
+  	 * @param {boolean}    [noIteration]
+  	 * @returns {string}   rendered template
+  	 */
   /* External tmpl, or else template for wrapped content. Otherwise, false */
   def tmpl(): String = js.native
   def tmpl(data: js.Any): String = js.native

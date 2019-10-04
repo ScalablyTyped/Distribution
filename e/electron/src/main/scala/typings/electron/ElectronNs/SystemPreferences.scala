@@ -68,9 +68,17 @@ trait SystemPreferences extends EventEmitter {
   @JSName("askForMediaAccess")
   def askForMediaAccess_microphone(mediaType: microphone): js.Promise[Boolean] = js.native
   /**
+    * NOTE: This API will return false on macOS systems older than Sierra 10.12.2.
+    */
+  def canPromptTouchID(): Boolean = js.native
+  /**
     * This API is only available on macOS 10.14 Mojave or newer.
     */
   def getAccentColor(): String = js.native
+  /**
+    * Returns an object with system animation settings.
+    */
+  def getAnimationSettings(): AnimationSettings = js.native
   /**
     * Gets the macOS appearance setting that you have declared you want for your
     * application, maps to NSApplication.appearance. You can use the
@@ -197,6 +205,16 @@ trait SystemPreferences extends EventEmitter {
     * contains the user information dictionary sent along with the notification.
     */
   def postWorkspaceNotification(event: String, userInfo: js.Any): Unit = js.native
+  /**
+    * This API itself will not protect your user data; rather, it is a mechanism to
+    * allow you to do so. Native apps will need to set Access Control Constants like
+    * kSecAccessControlUserPresence on the their keychain entry so that reading it
+    * would auto-prompt for Touch ID biometric consent. This could be done with
+    * node-keytar, such that one would store an encryption key with node-keytar and
+    * only fetch it if promptTouchID() resolves. NOTE: This API will return a rejected
+    * Promise on macOS systems older than Sierra 10.12.2.
+    */
+  def promptTouchID(reason: String): js.Promise[Unit] = js.native
   /**
     * Add the specified defaults to your application's NSUserDefaults.
     */

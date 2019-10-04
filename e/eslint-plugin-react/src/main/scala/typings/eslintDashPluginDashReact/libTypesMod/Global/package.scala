@@ -10,6 +10,8 @@ package object Global {
 
   type Fixer = RuleFixer
   type JSXAttribute = ASTNode
+  type JSXElement = ASTNode
+  type JSXFragment = ASTNode
   type JSXSpreadAttribute = ASTNode
   type Scope = typings.eslint.eslintMod.ScopeNs.Scope
   type Token = typings.eslint.eslintMod.ASTNs.Token

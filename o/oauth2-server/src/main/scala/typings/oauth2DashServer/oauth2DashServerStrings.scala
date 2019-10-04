@@ -9,7 +9,27 @@ object oauth2DashServerStrings {
   @js.native
   sealed trait Empty extends _Falsey
   
+  @js.native
+  sealed trait authorizationCode extends js.Object
+  
+  @js.native
+  sealed trait expiresAt extends js.Object
+  
+  @js.native
+  sealed trait redirectUri extends js.Object
+  
+  @js.native
+  sealed trait scope extends js.Object
+  
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def authorizationCode: authorizationCode = "authorizationCode".asInstanceOf[authorizationCode]
+  @scala.inline
+  def expiresAt: expiresAt = "expiresAt".asInstanceOf[expiresAt]
+  @scala.inline
+  def redirectUri: redirectUri = "redirectUri".asInstanceOf[redirectUri]
+  @scala.inline
+  def scope: scope = "scope".asInstanceOf[scope]
 }
 

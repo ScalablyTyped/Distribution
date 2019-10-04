@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsClusterParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ApplyMethod
+import typings.atPulumiAws.typesOutputMod.rdsNs.ClusterParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class ClusterParameterGroup protected () extends CustomResource {
   /**
     * A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-cluster-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) after initial creation of the group.
     */
-  val parameters: Output[js.UndefOr[js.Array[Anon_ApplyMethod]]] = js.native
+  val parameters: Output[js.UndefOr[js.Array[ClusterParameterGroupParameter]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

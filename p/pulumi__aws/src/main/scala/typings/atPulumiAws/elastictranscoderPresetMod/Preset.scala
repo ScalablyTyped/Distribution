@@ -1,11 +1,11 @@
 package typings.atPulumiAws.elastictranscoderPresetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AspectRatio
-import typings.atPulumiAws.Anon_AspectRatioBitRate
-import typings.atPulumiAws.Anon_AudioPackingMode
-import typings.atPulumiAws.Anon_BitDepth
-import typings.atPulumiAws.Anon_HorizontalAlign
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetAudio
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetAudioCodecOptions
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetThumbnails
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetVideo
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetVideoWatermark
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,11 +31,11 @@ class Preset protected () extends CustomResource {
   /**
     * Audio parameters object (documented below).
     */
-  val audio: Output[js.UndefOr[Anon_AudioPackingMode]] = js.native
+  val audio: Output[js.UndefOr[PresetAudio]] = js.native
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: Output[js.UndefOr[Anon_BitDepth]] = js.native
+  val audioCodecOptions: Output[js.UndefOr[PresetAudioCodecOptions]] = js.native
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
@@ -51,18 +51,18 @@ class Preset protected () extends CustomResource {
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: Output[js.UndefOr[Anon_AspectRatio]] = js.native
+  val thumbnails: Output[js.UndefOr[PresetThumbnails]] = js.native
   val `type`: Output[String] = js.native
   /**
     * Video parameters object (documented below)
     */
-  val video: Output[js.UndefOr[Anon_AspectRatioBitRate]] = js.native
+  val video: Output[js.UndefOr[PresetVideo]] = js.native
   val videoCodecOptions: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
     * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
-  val videoWatermarks: Output[js.UndefOr[js.Array[Anon_HorizontalAlign]]] = js.native
+  val videoWatermarks: Output[js.UndefOr[js.Array[PresetVideoWatermark]]] = js.native
 }
 
 /* static members */

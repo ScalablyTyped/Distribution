@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDomainNameMod
 
-import typings.atPulumiAws.Anon_TypesInput
+import typings.atPulumiAws.typesInputMod.apigatewayNs.DomainNameEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,7 +56,7 @@ trait DomainNameState extends js.Object {
   /**
     * Configuration block defining API endpoint information including type. Defined below.
     */
-  val endpointConfiguration: js.UndefOr[Input[Anon_TypesInput]] = js.undefined
+  val endpointConfiguration: js.UndefOr[Input[DomainNameEndpointConfiguration]] = js.undefined
   /**
     * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and `certificatePrivateKey`.
     */
@@ -92,7 +92,7 @@ object DomainNameState {
     cloudfrontDomainName: Input[String] = null,
     cloudfrontZoneId: Input[String] = null,
     domainName: Input[String] = null,
-    endpointConfiguration: Input[Anon_TypesInput] = null,
+    endpointConfiguration: Input[DomainNameEndpointConfiguration] = null,
     regionalCertificateArn: Input[String] = null,
     regionalCertificateName: Input[String] = null,
     regionalDomainName: Input[String] = null,

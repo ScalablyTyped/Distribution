@@ -18,7 +18,7 @@ trait CreateAgentRequest extends js.Object {
     */
   var SecurityGroupArns: js.UndefOr[PLSecurityGroupArnList] = js.undefined
   /**
-    * The Amazon Resource Names (ARNs) of the subnets in which DataSync will create Elastic Network Interfaces (ENIs) for each data transfer task. The agent that runs a task must be private. When you start a task that is associated with an agent created in a VPC, or one that has access to an IP address in a VPC, then the task is also private. In this case, DataSync creates four ENIs for each task in your subnet. For a data transfer to work, the agent must be able to route to all these four ENIs.
+    * The Amazon Resource Names (ARNs) of the subnets in which DataSync will create elastic network interfaces for each data transfer task. The agent that runs a task must be private. When you start a task that is associated with an agent created in a VPC, or one that has access to an IP address in a VPC, then the task is also private. In this case, DataSync creates four network interfaces for each task in your subnet. For a data transfer to work, the agent must be able to route to all these four network interfaces.
     */
   var SubnetArns: js.UndefOr[PLSubnetArnList] = js.undefined
   /**

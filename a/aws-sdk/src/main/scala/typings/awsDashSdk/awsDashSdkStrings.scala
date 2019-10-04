@@ -361,10 +361,12 @@ import typings.awsDashSdk.clientsDatasyncMod._Atime
 import typings.awsDashSdk.clientsDatasyncMod._Gid
 import typings.awsDashSdk.clientsDatasyncMod._Mtime
 import typings.awsDashSdk.clientsDatasyncMod._NfsVersion
+import typings.awsDashSdk.clientsDatasyncMod._OverwriteMode
 import typings.awsDashSdk.clientsDatasyncMod._PhaseStatus
 import typings.awsDashSdk.clientsDatasyncMod._PosixPermissions
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDeletedFiles
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDevices
+import typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
 import typings.awsDashSdk.clientsDatasyncMod._SmbVersion
 import typings.awsDashSdk.clientsDatasyncMod._TaskExecutionStatus
 import typings.awsDashSdk.clientsDatasyncMod._TaskStatus
@@ -503,6 +505,7 @@ import typings.awsDashSdk.clientsEc2Mod._DefaultRouteTableAssociationValue
 import typings.awsDashSdk.clientsEc2Mod._DefaultRouteTablePropagationValue
 import typings.awsDashSdk.clientsEc2Mod._DefaultTargetCapacityType
 import typings.awsDashSdk.clientsEc2Mod._DeleteFleetErrorCode
+import typings.awsDashSdk.clientsEc2Mod._DeleteQueuedReservedInstancesErrorCode
 import typings.awsDashSdk.clientsEc2Mod._DeviceType
 import typings.awsDashSdk.clientsEc2Mod._DiskImageFormat
 import typings.awsDashSdk.clientsEc2Mod._DnsSupportValue
@@ -711,6 +714,7 @@ import typings.awsDashSdk.clientsEsMod._DeploymentStatus
 import typings.awsDashSdk.clientsEsMod._ESPartitionInstanceType
 import typings.awsDashSdk.clientsEsMod._LogType
 import typings.awsDashSdk.clientsEsMod._ReservedElasticsearchInstancePaymentOption
+import typings.awsDashSdk.clientsEsMod._TLSSecurityPolicy
 import typings.awsDashSdk.clientsEsMod._UpgradeStatus
 import typings.awsDashSdk.clientsEsMod._UpgradeStep
 import typings.awsDashSdk.clientsEventbridgeMod._AssignPublicIp
@@ -967,6 +971,7 @@ import typings.awsDashSdk.clientsLicensemanagerMod._InventoryFilterCondition
 import typings.awsDashSdk.clientsLicensemanagerMod._LicenseConfigurationStatus
 import typings.awsDashSdk.clientsLicensemanagerMod._LicenseCountingType
 import typings.awsDashSdk.clientsLightsailMod._AccessDirection
+import typings.awsDashSdk.clientsLightsailMod._AutoSnapshotStatus
 import typings.awsDashSdk.clientsLightsailMod._BlueprintType
 import typings.awsDashSdk.clientsLightsailMod._DiskSnapshotState
 import typings.awsDashSdk.clientsLightsailMod._DiskState
@@ -1608,7 +1613,6 @@ import typings.awsDashSdk.clientsS3controlMod._S3ObjectLockLegalHoldStatus
 import typings.awsDashSdk.clientsS3controlMod._S3ObjectLockMode
 import typings.awsDashSdk.clientsS3controlMod._S3Permission
 import typings.awsDashSdk.clientsS3controlMod._S3SSEAlgorithm
-import typings.awsDashSdk.clientsS3controlMod._S3StorageClass
 import typings.awsDashSdk.clientsSagemakerMod._AlgorithmSortBy
 import typings.awsDashSdk.clientsSagemakerMod._AlgorithmStatus
 import typings.awsDashSdk.clientsSagemakerMod._AssemblyType
@@ -3420,6 +3424,7 @@ object awsDashSdkStrings {
        with _DASHDisplayFragmentTimestamp
        with _HLSDiscontinuityMode
        with _HLSDisplayFragmentTimestamp
+       with _OverwriteMode
        with _QuoteFields
        with typings.awsDashSdk.clientsGlacierMod._QuoteFields
        with _RequiresRecreation
@@ -4878,6 +4883,9 @@ object awsDashSdkStrings {
   sealed trait AutoBundleOnDeploy extends _AppAttributesKeys
   
   @js.native
+  sealed trait AutoSnapshot extends js.Object
+  
+  @js.native
   sealed trait Automatic extends _ChangeSource
   
   @js.native
@@ -6105,6 +6113,7 @@ object awsDashSdkStrings {
        with _ExportStatus
        with _ExportTaskStatusCode
        with _JobFlowExecutionState
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsPinpointMod._JobStatus
        with typings.awsDashSdk.clientsIotMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
@@ -7305,6 +7314,7 @@ object awsDashSdkStrings {
   sealed trait DEEP_ARCHIVE
     extends _ObjectStorageClass
        with _S3StorageClass
+       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -8532,6 +8542,10 @@ object awsDashSdkStrings {
   sealed trait DirectoryNotEnabledException extends _BatchReadExceptionType
   
   @js.native
+  sealed trait DisableAddOn
+    extends typings.awsDashSdk.clientsLightsailMod._OperationType
+  
+  @js.native
   sealed trait DisableSchema extends _InventorySchemaDeleteOption
   
   @js.native
@@ -9371,6 +9385,10 @@ object awsDashSdkStrings {
   sealed trait Emma extends _VoiceId
   
   @js.native
+  sealed trait EnableAddOn
+    extends typings.awsDashSdk.clientsLightsailMod._OperationType
+  
+  @js.native
   sealed trait EnableHaproxyStats extends _LayerAttributesKeys
   
   @js.native
@@ -9629,6 +9647,7 @@ object awsDashSdkStrings {
        with _JobFlowExecutionState
        with _JobRunState
        with typings.awsDashSdk.clientsTextractMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsPinpointMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with typings.awsDashSdk.clientsBatchMod._JobStatus
@@ -10254,6 +10273,7 @@ object awsDashSdkStrings {
        with _AlgorithmStatus
        with _ApplicationVersionStatus
        with _AssociationStatusName
+       with _AutoSnapshotStatus
        with _AutomationExecutionStatus
        with _BulkDeploymentStatus
        with _BulkEmailStatus
@@ -10573,6 +10593,7 @@ object awsDashSdkStrings {
   sealed trait GLACIER
     extends _ObjectStorageClass
        with _S3StorageClass
+       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -11902,6 +11923,7 @@ object awsDashSdkStrings {
   sealed trait INTELLIGENT_TIERING
     extends _ObjectStorageClass
        with _S3StorageClass
+       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -12091,6 +12113,7 @@ object awsDashSdkStrings {
        with _JobExecutionStatus
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
        with typings.awsDashSdk.clientsTextractMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsIotMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with _LifecyclePolicyPreviewStatus
@@ -12305,6 +12328,7 @@ object awsDashSdkStrings {
   sealed trait InProgress
     extends _ActionExecutionStatus
        with _AlgorithmStatus
+       with _AutoSnapshotStatus
        with _AutomationExecutionStatus
        with _CommandInvocationStatus
        with _CommandPluginStatus
@@ -14699,6 +14723,7 @@ object awsDashSdkStrings {
        with _DASHDisplayFragmentTimestamp
        with _HLSDiscontinuityMode
        with _HLSDisplayFragmentTimestamp
+       with _OverwriteMode
        with _PassthroughBehavior
        with _RequiresRecreation
   
@@ -15309,7 +15334,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait NotFound
-    extends typings.awsDashSdk.clientsChimeMod._ErrorCode
+    extends _AutoSnapshotStatus
+       with typings.awsDashSdk.clientsChimeMod._ErrorCode
   
   @js.native
   sealed trait NotIn extends _Comparator
@@ -15460,6 +15486,7 @@ object awsDashSdkStrings {
   sealed trait ONEZONE_IA
     extends _ObjectStorageClass
        with _S3StorageClass
+       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -15489,6 +15516,9 @@ object awsDashSdkStrings {
     extends typings.awsDashSdk.clientsDatasyncMod._AgentStatus
        with typings.awsDashSdk.clientsAlexaforbusinessMod._ConnectionStatus
        with typings.awsDashSdk.clientsTransferMod._State
+  
+  @js.native
+  sealed trait ONLY_FILES_TRANSFERRED extends _VerifyMode
   
   @js.native
   sealed trait ONNX extends _Framework
@@ -15883,6 +15913,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PARTIAL_SUCCESS
     extends typings.awsDashSdk.clientsTextractMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
   
   @js.native
   sealed trait PARTIAL_UPFRONT
@@ -16563,6 +16594,9 @@ object awsDashSdkStrings {
   sealed trait PUBLISH_FINDING_TO_SNS extends _MitigationActionType
   
   @js.native
+  sealed trait PULL_REQUEST extends _Stage
+  
+  @js.native
   sealed trait PULL_REQUEST_CREATED extends _PullRequestEventType
   
   @js.native
@@ -16835,6 +16869,12 @@ object awsDashSdkStrings {
   sealed trait Policy
     extends _DocumentType
        with _QueueAttributeName
+  
+  @js.native
+  sealed trait `Policy-Min-TLS-1-0-2019-07` extends _TLSSecurityPolicy
+  
+  @js.native
+  sealed trait `Policy-Min-TLS-1-2-2019-07` extends _TLSSecurityPolicy
   
   @js.native
   sealed trait PolicySizeQuota extends _summaryKeyType
@@ -19188,6 +19228,7 @@ object awsDashSdkStrings {
        with _ReservationVideoQuality
        with _S3GlacierJobTier
        with _S3StorageClass
+       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
        with _ShippingOption
        with _SnowballType
        with typings.awsDashSdk.clientsS3Mod._StorageClass
@@ -19198,6 +19239,7 @@ object awsDashSdkStrings {
   sealed trait STANDARD_IA
     extends _ObjectStorageClass
        with _S3StorageClass
+       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with typings.awsDashSdk.clientsGlacierMod._StorageClass
        with _TransitionStorageClass
@@ -19332,6 +19374,7 @@ object awsDashSdkStrings {
        with _FleetState
        with _ImageBuilderState
        with _JobRunState
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with _ModelStatus
        with _StackSetOperationStatus
@@ -19374,7 +19417,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait STOP_REQUESTED
-    extends typings.awsDashSdk.clientsComprehendMod._JobStatus
+    extends typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with _ModelStatus
   
   @js.native
@@ -19440,6 +19484,7 @@ object awsDashSdkStrings {
     extends _BuildPhaseType
        with _CancelStepsRequestStatus
        with typings.awsDashSdk.clientsMediaconvertMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with typings.awsDashSdk.clientsBatchMod._JobStatus
        with _ModelStatus
@@ -20155,6 +20200,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait Success
     extends _AssociationStatusName
+       with _AutoSnapshotStatus
        with _AutomationExecutionStatus
        with _BulkEmailStatus
        with _ChallengeResponse
@@ -20405,6 +20451,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait TERM_MATCH extends js.Object
+  
+  @js.native
+  sealed trait TEST extends js.Object
   
   @js.native
   sealed trait TESTSPEC_OUTPUT extends _ArtifactType
@@ -23778,6 +23827,12 @@ object awsDashSdkStrings {
   sealed trait d2DOTxlargeDOTelasticsearch extends _ESPartitionInstanceType
   
   @js.native
+  sealed trait dBClusterSnapshotAvailable extends js.Object
+  
+  @js.native
+  sealed trait dBClusterSnapshotDeleted extends js.Object
+  
+  @js.native
   sealed trait dBInstanceAvailable extends js.Object
   
   @js.native
@@ -26157,6 +26212,24 @@ object awsDashSdkStrings {
        with _ProductionVariantAcceleratorType
   
   @js.native
+  sealed trait mlDOTg4dnDOT12xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTg4dnDOT16xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTg4dnDOT2xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTg4dnDOT4xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTg4dnDOT8xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTg4dnDOTxlarge extends _ProductionVariantInstanceType
+  
+  @js.native
   sealed trait mlDOTm4DOT10xlarge
     extends typings.awsDashSdk.clientsSagemakerMod._InstanceType
        with _ProductionVariantInstanceType
@@ -26276,6 +26349,24 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait mlDOTp3dnDOT24xlarge extends _TrainingInstanceType
+  
+  @js.native
+  sealed trait mlDOTr5DOT12xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTr5DOT24xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTr5DOT2xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTr5DOT4xlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTr5DOTlarge extends _ProductionVariantInstanceType
+  
+  @js.native
+  sealed trait mlDOTr5DOTxlarge extends _ProductionVariantInstanceType
   
   @js.native
   sealed trait mlDOTt2DOT2xlarge
@@ -26937,6 +27028,12 @@ object awsDashSdkStrings {
   sealed trait qcs605 extends _TargetDevice
   
   @js.native
+  sealed trait queued extends _ReservedInstanceState
+  
+  @js.native
+  sealed trait `queued-deleted` extends _ReservedInstanceState
+  
+  @js.native
   sealed trait r3DOT2xlarge
     extends _EC2InstanceType
        with typings.awsDashSdk.clientsEc2Mod._InstanceType
@@ -27351,6 +27448,12 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `reserved-instances`
     extends typings.awsDashSdk.clientsEc2Mod._ResourceType
+  
+  @js.native
+  sealed trait `reserved-instances-id-invalid` extends _DeleteQueuedReservedInstancesErrorCode
+  
+  @js.native
+  sealed trait `reserved-instances-not-in-queued-state` extends _DeleteQueuedReservedInstancesErrorCode
   
   @js.native
   sealed trait resource extends _PolicySourceType
@@ -28171,6 +28274,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `under-assessment` extends _AllocationState
+  
+  @js.native
+  sealed trait `unexpected-error` extends _DeleteQueuedReservedInstancesErrorCode
   
   @js.native
   sealed trait unexpectedError
@@ -30007,6 +30113,8 @@ object awsDashSdkStrings {
   @scala.inline
   def AutoBundleOnDeploy: AutoBundleOnDeploy = "AutoBundleOnDeploy".asInstanceOf[AutoBundleOnDeploy]
   @scala.inline
+  def AutoSnapshot: AutoSnapshot = "AutoSnapshot".asInstanceOf[AutoSnapshot]
+  @scala.inline
   def Automatic: Automatic = "Automatic".asInstanceOf[Automatic]
   @scala.inline
   def Automation: Automation = "Automation".asInstanceOf[Automation]
@@ -31643,6 +31751,8 @@ object awsDashSdkStrings {
   @scala.inline
   def DirectoryNotEnabledException: DirectoryNotEnabledException = "DirectoryNotEnabledException".asInstanceOf[DirectoryNotEnabledException]
   @scala.inline
+  def DisableAddOn: DisableAddOn = "DisableAddOn".asInstanceOf[DisableAddOn]
+  @scala.inline
   def DisableSchema: DisableSchema = "DisableSchema".asInstanceOf[DisableSchema]
   @scala.inline
   def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
@@ -31988,6 +32098,8 @@ object awsDashSdkStrings {
   def EmailAddress: EmailAddress = "EmailAddress".asInstanceOf[EmailAddress]
   @scala.inline
   def Emma: Emma = "Emma".asInstanceOf[Emma]
+  @scala.inline
+  def EnableAddOn: EnableAddOn = "EnableAddOn".asInstanceOf[EnableAddOn]
   @scala.inline
   def EnableHaproxyStats: EnableHaproxyStats = "EnableHaproxyStats".asInstanceOf[EnableHaproxyStats]
   @scala.inline
@@ -34849,6 +34961,8 @@ object awsDashSdkStrings {
   @scala.inline
   def ONLINE: ONLINE = "ONLINE".asInstanceOf[ONLINE]
   @scala.inline
+  def ONLY_FILES_TRANSFERRED: ONLY_FILES_TRANSFERRED = "ONLY_FILES_TRANSFERRED".asInstanceOf[ONLY_FILES_TRANSFERRED]
+  @scala.inline
   def ONNX: ONNX = "ONNX".asInstanceOf[ONNX]
   @scala.inline
   def ON_DEMAND: ON_DEMAND = "ON_DEMAND".asInstanceOf[ON_DEMAND]
@@ -35361,6 +35475,8 @@ object awsDashSdkStrings {
   @scala.inline
   def PUBLISH_FINDING_TO_SNS: PUBLISH_FINDING_TO_SNS = "PUBLISH_FINDING_TO_SNS".asInstanceOf[PUBLISH_FINDING_TO_SNS]
   @scala.inline
+  def PULL_REQUEST: PULL_REQUEST = "PULL_REQUEST".asInstanceOf[PULL_REQUEST]
+  @scala.inline
   def PULL_REQUEST_CREATED: PULL_REQUEST_CREATED = "PULL_REQUEST_CREATED".asInstanceOf[PULL_REQUEST_CREATED]
   @scala.inline
   def PULL_REQUEST_MERGE_STATE_CHANGED: PULL_REQUEST_MERGE_STATE_CHANGED = "PULL_REQUEST_MERGE_STATE_CHANGED".asInstanceOf[PULL_REQUEST_MERGE_STATE_CHANGED]
@@ -35502,6 +35618,10 @@ object awsDashSdkStrings {
   def PoliciesQuota: PoliciesQuota = "PoliciesQuota".asInstanceOf[PoliciesQuota]
   @scala.inline
   def Policy: Policy = "Policy".asInstanceOf[Policy]
+  @scala.inline
+  def `Policy-Min-TLS-1-0-2019-07`: `Policy-Min-TLS-1-0-2019-07` = "Policy-Min-TLS-1-0-2019-07".asInstanceOf[`Policy-Min-TLS-1-0-2019-07`]
+  @scala.inline
+  def `Policy-Min-TLS-1-2-2019-07`: `Policy-Min-TLS-1-2-2019-07` = "Policy-Min-TLS-1-2-2019-07".asInstanceOf[`Policy-Min-TLS-1-2-2019-07`]
   @scala.inline
   def PolicySizeQuota: PolicySizeQuota = "PolicySizeQuota".asInstanceOf[PolicySizeQuota]
   @scala.inline
@@ -37263,6 +37383,8 @@ object awsDashSdkStrings {
   @scala.inline
   def TERM_MATCH: TERM_MATCH = "TERM_MATCH".asInstanceOf[TERM_MATCH]
   @scala.inline
+  def TEST: TEST = "TEST".asInstanceOf[TEST]
+  @scala.inline
   def TESTSPEC_OUTPUT: TESTSPEC_OUTPUT = "TESTSPEC_OUTPUT".asInstanceOf[TESTSPEC_OUTPUT]
   @scala.inline
   def TEST_NAME: TEST_NAME = "TEST_NAME".asInstanceOf[TEST_NAME]
@@ -38953,6 +39075,10 @@ object awsDashSdkStrings {
   @scala.inline
   def d2DOTxlargeDOTelasticsearch: d2DOTxlargeDOTelasticsearch = "d2.xlarge.elasticsearch".asInstanceOf[d2DOTxlargeDOTelasticsearch]
   @scala.inline
+  def dBClusterSnapshotAvailable: dBClusterSnapshotAvailable = "dBClusterSnapshotAvailable".asInstanceOf[dBClusterSnapshotAvailable]
+  @scala.inline
+  def dBClusterSnapshotDeleted: dBClusterSnapshotDeleted = "dBClusterSnapshotDeleted".asInstanceOf[dBClusterSnapshotDeleted]
+  @scala.inline
   def dBInstanceAvailable: dBInstanceAvailable = "dBInstanceAvailable".asInstanceOf[dBInstanceAvailable]
   @scala.inline
   def dBInstanceDeleted: dBInstanceDeleted = "dBInstanceDeleted".asInstanceOf[dBInstanceDeleted]
@@ -40045,6 +40171,18 @@ object awsDashSdkStrings {
   @scala.inline
   def mlDOTeia1DOTxlarge: mlDOTeia1DOTxlarge = "ml.eia1.xlarge".asInstanceOf[mlDOTeia1DOTxlarge]
   @scala.inline
+  def mlDOTg4dnDOT12xlarge: mlDOTg4dnDOT12xlarge = "ml.g4dn.12xlarge".asInstanceOf[mlDOTg4dnDOT12xlarge]
+  @scala.inline
+  def mlDOTg4dnDOT16xlarge: mlDOTg4dnDOT16xlarge = "ml.g4dn.16xlarge".asInstanceOf[mlDOTg4dnDOT16xlarge]
+  @scala.inline
+  def mlDOTg4dnDOT2xlarge: mlDOTg4dnDOT2xlarge = "ml.g4dn.2xlarge".asInstanceOf[mlDOTg4dnDOT2xlarge]
+  @scala.inline
+  def mlDOTg4dnDOT4xlarge: mlDOTg4dnDOT4xlarge = "ml.g4dn.4xlarge".asInstanceOf[mlDOTg4dnDOT4xlarge]
+  @scala.inline
+  def mlDOTg4dnDOT8xlarge: mlDOTg4dnDOT8xlarge = "ml.g4dn.8xlarge".asInstanceOf[mlDOTg4dnDOT8xlarge]
+  @scala.inline
+  def mlDOTg4dnDOTxlarge: mlDOTg4dnDOTxlarge = "ml.g4dn.xlarge".asInstanceOf[mlDOTg4dnDOTxlarge]
+  @scala.inline
   def mlDOTm4DOT10xlarge: mlDOTm4DOT10xlarge = "ml.m4.10xlarge".asInstanceOf[mlDOTm4DOT10xlarge]
   @scala.inline
   def mlDOTm4DOT16xlarge: mlDOTm4DOT16xlarge = "ml.m4.16xlarge".asInstanceOf[mlDOTm4DOT16xlarge]
@@ -40080,6 +40218,18 @@ object awsDashSdkStrings {
   def mlDOTp3DOT8xlarge: mlDOTp3DOT8xlarge = "ml.p3.8xlarge".asInstanceOf[mlDOTp3DOT8xlarge]
   @scala.inline
   def mlDOTp3dnDOT24xlarge: mlDOTp3dnDOT24xlarge = "ml.p3dn.24xlarge".asInstanceOf[mlDOTp3dnDOT24xlarge]
+  @scala.inline
+  def mlDOTr5DOT12xlarge: mlDOTr5DOT12xlarge = "ml.r5.12xlarge".asInstanceOf[mlDOTr5DOT12xlarge]
+  @scala.inline
+  def mlDOTr5DOT24xlarge: mlDOTr5DOT24xlarge = "ml.r5.24xlarge".asInstanceOf[mlDOTr5DOT24xlarge]
+  @scala.inline
+  def mlDOTr5DOT2xlarge: mlDOTr5DOT2xlarge = "ml.r5.2xlarge".asInstanceOf[mlDOTr5DOT2xlarge]
+  @scala.inline
+  def mlDOTr5DOT4xlarge: mlDOTr5DOT4xlarge = "ml.r5.4xlarge".asInstanceOf[mlDOTr5DOT4xlarge]
+  @scala.inline
+  def mlDOTr5DOTlarge: mlDOTr5DOTlarge = "ml.r5.large".asInstanceOf[mlDOTr5DOTlarge]
+  @scala.inline
+  def mlDOTr5DOTxlarge: mlDOTr5DOTxlarge = "ml.r5.xlarge".asInstanceOf[mlDOTr5DOTxlarge]
   @scala.inline
   def mlDOTt2DOT2xlarge: mlDOTt2DOT2xlarge = "ml.t2.2xlarge".asInstanceOf[mlDOTt2DOT2xlarge]
   @scala.inline
@@ -40413,6 +40563,10 @@ object awsDashSdkStrings {
   @scala.inline
   def qcs605: qcs605 = "qcs605".asInstanceOf[qcs605]
   @scala.inline
+  def queued: queued = "queued".asInstanceOf[queued]
+  @scala.inline
+  def `queued-deleted`: `queued-deleted` = "queued-deleted".asInstanceOf[`queued-deleted`]
+  @scala.inline
   def r3DOT2xlarge: r3DOT2xlarge = "r3.2xlarge".asInstanceOf[r3DOT2xlarge]
   @scala.inline
   def r3DOT2xlargeDOTelasticsearch: r3DOT2xlargeDOTelasticsearch = "r3.2xlarge.elasticsearch".asInstanceOf[r3DOT2xlargeDOTelasticsearch]
@@ -40630,6 +40784,10 @@ object awsDashSdkStrings {
   def `requires-reboot`: `requires-reboot` = "requires-reboot".asInstanceOf[`requires-reboot`]
   @scala.inline
   def `reserved-instances`: `reserved-instances` = "reserved-instances".asInstanceOf[`reserved-instances`]
+  @scala.inline
+  def `reserved-instances-id-invalid`: `reserved-instances-id-invalid` = "reserved-instances-id-invalid".asInstanceOf[`reserved-instances-id-invalid`]
+  @scala.inline
+  def `reserved-instances-not-in-queued-state`: `reserved-instances-not-in-queued-state` = "reserved-instances-not-in-queued-state".asInstanceOf[`reserved-instances-not-in-queued-state`]
   @scala.inline
   def resource: resource = "resource".asInstanceOf[resource]
   @scala.inline
@@ -41084,6 +41242,8 @@ object awsDashSdkStrings {
   def undeploy: undeploy = "undeploy".asInstanceOf[undeploy]
   @scala.inline
   def `under-assessment`: `under-assessment` = "under-assessment".asInstanceOf[`under-assessment`]
+  @scala.inline
+  def `unexpected-error`: `unexpected-error` = "unexpected-error".asInstanceOf[`unexpected-error`]
   @scala.inline
   def unexpectedError: unexpectedError = "unexpectedError".asInstanceOf[unexpectedError]
   @scala.inline

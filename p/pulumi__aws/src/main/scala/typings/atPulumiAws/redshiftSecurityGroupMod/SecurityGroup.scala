@@ -1,6 +1,6 @@
 package typings.atPulumiAws.redshiftSecurityGroupMod
 
-import typings.atPulumiAws.Anon_CidrSecurityGroupName
+import typings.atPulumiAws.typesOutputMod.redshiftNs.SecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class SecurityGroup protected () extends CustomResource {
   /**
     * A list of ingress rules.
     */
-  val ingress: Output[js.Array[Anon_CidrSecurityGroupName]] = js.native
+  val ingress: Output[js.Array[SecurityGroupIngress]] = js.native
   /**
     * The name of the Redshift security group.
     */

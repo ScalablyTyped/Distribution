@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 class OServer () extends js.Object {
   def this(options: ServerConfig) = this()
   var config: ServerConfiguration = js.native
-  var logger: Logger = js.native
+  var logger: OLogger = js.native
   /**
     * Close the connection to the server.
     *
@@ -35,7 +35,7 @@ class OServer () extends js.Object {
     * @param  config The logger config
     * @return        The server instance with the configured logger.
     */
-  def configureLogger(logger: Logger): OServer = js.native
+  def configureLogger(logger: OLogger): OServer = js.native
   /**
     * Configure the transport for the server.
     *

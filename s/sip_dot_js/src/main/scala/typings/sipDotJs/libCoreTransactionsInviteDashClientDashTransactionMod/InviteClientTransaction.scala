@@ -18,9 +18,9 @@ class InviteClientTransaction protected () extends ClientTransaction {
     * After construction the transaction will be in the "calling" state and the transaction id
     * will equal the branch parameter set in the Via header of the outgoing request.
     * https://tools.ietf.org/html/rfc3261#section-17.1.1
-    * @param request The outgoing INVITE request.
-    * @param transport The transport.
-    * @param user The transaction user.
+    * @param request - The outgoing INVITE request.
+    * @param transport - The transport.
+    * @param user - The transaction user.
     */
   def this(request: OutgoingRequestMessage, transport: Transport, user: ClientTransactionUser) = this()
   var B: js.Any = js.native
@@ -28,7 +28,7 @@ class InviteClientTransaction protected () extends ClientTransaction {
   var M: js.Any = js.native
   var ack: js.Any = js.native
   /**
-    * Map of 2xx to-tag => ACK.
+    * Map of 2xx to-tag to ACK.
     * If value is not undefined, value is the ACK which was sent.
     * If key exists but value is undefined, a 2xx was received but the ACK not yet sent.
     * Otherwise, a 2xx was not (yet) received for this transaction.
@@ -36,7 +36,7 @@ class InviteClientTransaction protected () extends ClientTransaction {
   var ackRetransmissionCache: js.Any = js.native
   /**
     * Execute a state transition.
-    * @param newState New state.
+    * @param newState - New state.
     */
   var stateTransition: js.Any = js.native
   /**
@@ -86,7 +86,7 @@ class InviteClientTransaction protected () extends ClientTransaction {
     * the transport directly. Herein the transaction layer manages sending ACKs to 2xx responses
     * and any retransmissions of those ACKs as needed.
     *
-    * @param ack The outgoing ACK request.
+    * @param ack - The outgoing ACK request.
     */
   def ackResponse(ack: OutgoingRequestMessage): Unit = js.native
 }

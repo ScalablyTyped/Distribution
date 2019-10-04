@@ -1,6 +1,5 @@
 package typings.typedoc.distLibModelsSourcesFileMod
 
-import typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory
 import typings.typedoc.distLibModelsReflectionGroupMod.ReflectionGroup
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
 import typings.typedoc.distLibModelsSourcesDirectoryMod.SourceDirectory
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SourceFile protected () extends js.Object {
   def this(fullFileName: String) = this()
-  var categories: js.UndefOr[js.Array[ReflectionCategory]] = js.native
   var fileName: String = js.native
   var fullFileName: String = js.native
   var groups: js.UndefOr[js.Array[ReflectionGroup]] = js.native

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshRouteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_HttpRouteTcpRoute
+import typings.atPulumiAws.typesInputMod.appmeshNs.RouteSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait RouteState extends js.Object {
   /**
     * The route specification to apply.
     */
-  val spec: js.UndefOr[Input[Anon_HttpRouteTcpRoute]] = js.undefined
+  val spec: js.UndefOr[Input[RouteSpec]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -50,7 +50,7 @@ object RouteState {
     lastUpdatedDate: Input[String] = null,
     meshName: Input[String] = null,
     name: Input[String] = null,
-    spec: Input[Anon_HttpRouteTcpRoute] = null,
+    spec: Input[RouteSpec] = null,
     tags: Input[StringDictionary[_]] = null,
     virtualRouterName: Input[String] = null
   ): RouteState = {

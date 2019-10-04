@@ -7,9 +7,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1/StatefulSet. See the
-  * release notes for more information. StatefulSet represents a set of pods with consistent
-  * identities. Identities are defined as:
+  * @deprecated apps/v1beta2/StatefulSet is not supported by Kubernetes 1.16+ clusters. Use
+  * apps/v1/StatefulSet instead.
+  *
+  * StatefulSet represents a set of pods with consistent identities. Identities are defined as:
   *  - Network: A single stable DNS and hostname.
   *  - Storage: As many VolumeClaims as requested.
   * The StatefulSet guarantees that a given network identity will always map to the same storage
@@ -20,14 +21,14 @@ trait StatefulSet extends js.Object {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: `apps/v1beta2`
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet
   val metadata: ObjectMeta

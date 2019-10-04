@@ -14,7 +14,10 @@ package object oracledbMod {
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#executebindParams
     */
-  type BindParameters = (Record[String, BindParameter | String | Double | Date | DBObject | Buffer | Null]) | (js.Array[js.Any | BindParameter])
+  type BindParameters = (Record[
+    String, 
+    js.UndefOr[BindParameter | String | Double | Date | DBObject | Buffer | Null]
+  ]) | (js.Array[js.Any | BindParameter])
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.node.Buffer

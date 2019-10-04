@@ -14,16 +14,16 @@ trait ISpexBase extends js.Object {
   def batch(values: js.Array[_]): js.Promise[IArrayExt[_]] = js.native
   def batch(values: js.Array[_], options: Anon_Cb): js.Promise[IArrayExt[_]] = js.native
   // API: http://vitaly-t.github.io/spex/global.html#page
-  def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[TPageResult] = js.native
+  def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[IPageResult] = js.native
   def page(
     source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _],
     options: Anon_Data
-  ): js.Promise[TPageResult] = js.native
+  ): js.Promise[IPageResult] = js.native
   // API: http://vitaly-t.github.io/spex/global.html#sequence
-  def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[TSequenceResult | IArrayExt[_]] = js.native
+  def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[ISequenceResult | IArrayExt[_]] = js.native
   def sequence(
     source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _],
     options: Anon_DataDelay
-  ): js.Promise[TSequenceResult | IArrayExt[_]] = js.native
+  ): js.Promise[ISequenceResult | IArrayExt[_]] = js.native
 }
 

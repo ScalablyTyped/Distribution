@@ -2,6 +2,7 @@ package typings.atElasticElasticsearch
 
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesAnalyze
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesClearCache
+import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesClone
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesClose
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesCreate
 import typings.atElasticElasticsearch.apiRequestParamsMod.IndicesDelete
@@ -57,6 +58,8 @@ trait Anon_Analyze extends js.Object {
   var clearCache_Original: ApiMethod[IndicesClearCache, _] = js.native
   @JSName("clear_cache")
   var clear_cache_Original: ApiMethod[IndicesClearCache, _] = js.native
+  @JSName("clone")
+  var clone_Original: ApiMethod[IndicesClone[_], _] = js.native
   @JSName("close")
   var close_Original: ApiMethod[IndicesClose, _] = js.native
   @JSName("create")
@@ -197,6 +200,12 @@ trait Anon_Analyze extends js.Object {
   def clear_cache(params: IndicesClearCache, callback: callbackFn[_]): TransportRequestCallback = js.native
   def clear_cache(params: IndicesClearCache, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def clear_cache(params: IndicesClearCache, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Callback API
+  def clone(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def clone(params: IndicesClone[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def clone(params: IndicesClone[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def clone(params: IndicesClone[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def clone(params: IndicesClone[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def close(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

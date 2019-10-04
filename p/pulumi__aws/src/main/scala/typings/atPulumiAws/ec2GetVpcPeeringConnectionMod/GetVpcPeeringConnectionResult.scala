@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcPeeringConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcPeeringConnectionFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait GetVpcPeeringConnectionResult extends js.Object {
     */
   val accepter: StringDictionary[Boolean]
   val cidrBlock: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcPeeringConnectionFilter]] = js.undefined
   val id: String
   val ownerId: String
   val peerCidrBlock: String
@@ -47,7 +47,7 @@ object GetVpcPeeringConnectionResult {
     status: String,
     tags: StringDictionary[js.Any],
     vpcId: String,
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetVpcPeeringConnectionFilter] = null
   ): GetVpcPeeringConnectionResult = {
     val __obj = js.Dynamic.literal(accepter = accepter, cidrBlock = cidrBlock, id = id, ownerId = ownerId, peerCidrBlock = peerCidrBlock, peerOwnerId = peerOwnerId, peerRegion = peerRegion, peerVpcId = peerVpcId, region = region, requester = requester, status = status, tags = tags, vpcId = vpcId)
     if (filters != null) __obj.updateDynamic("filters")(filters)

@@ -19,6 +19,13 @@ object fusedNs extends js.Object {
   }
   
   @js.native
+  object depthwiseConv2d extends js.Object {
+    def apply[T /* <: Tensor3D | Tensor4D */](
+      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Anon_Activation[T]
+    ): T = js.native
+  }
+  
+  @js.native
   object matMul extends js.Object {
     def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: Anon_A[T]): T = js.native
   }

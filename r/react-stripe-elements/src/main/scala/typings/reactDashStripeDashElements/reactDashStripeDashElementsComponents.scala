@@ -32,8 +32,10 @@ object reactDashStripeDashElementsComponents extends reactDashStripeDashElements
   def IdealBankElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.IdealBankElement].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps]]
   @scala.inline
-  def PaymentRequestButtonElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PaymentRequestButtonElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps]]
+  def PaymentRequestButtonElement: ComponentType[
+    typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.PaymentRequestButtonElementProps
+  ] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PaymentRequestButtonElement].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.PaymentRequestButtonElementProps]]
   @scala.inline
   def PostalCodeElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PostalCodeElement].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps]]

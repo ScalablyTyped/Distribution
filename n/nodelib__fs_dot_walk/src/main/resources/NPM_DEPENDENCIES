@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nodelib/fs.walk" : "1.2.2"
+      "@nodelib/fs.walk" : "1.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@nodelib/fs.walk" : "1.2.2"
+      "@nodelib/fs.walk" : "1.2.3"
     }
   ],
   "compile-devDependencies" : [

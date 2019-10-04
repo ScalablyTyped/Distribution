@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionBoolean protected () extends QuestionBooleanModel {
   def this(name: String) = this()
-  def getItemCss(row: js.Any, column: js.Any): String = js.native
+  def getItemCss(row: js.Any, column: js.Any): js.Any = js.native
 }
 

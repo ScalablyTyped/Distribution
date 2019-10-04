@@ -1,7 +1,7 @@
 package typings.colorDashSupport.colorDashSupportMod
 
 import typings.node.NodeJSNs.ProcessEnv
-import typings.node.NodeJSNs.WriteStream
+import typings.node.processMod.Global.NodeJSNs.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,6 +9,7 @@ trait RadialGradientProps extends js.Object {
   var cy: js.UndefOr[NumberProp] = js.undefined
   var fx: js.UndefOr[NumberProp] = js.undefined
   var fy: js.UndefOr[NumberProp] = js.undefined
+  var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   var gradientUnits: js.UndefOr[Units] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var r: js.UndefOr[NumberProp] = js.undefined
@@ -23,6 +24,7 @@ object RadialGradientProps {
     cy: NumberProp = null,
     fx: NumberProp = null,
     fy: NumberProp = null,
+    gradientTransform: ColumnMajorTransformMatrix | String = null,
     gradientUnits: Units = null,
     id: String = null,
     r: NumberProp = null,
@@ -34,6 +36,7 @@ object RadialGradientProps {
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
     if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
     if (fy != null) __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
+    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
     if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits)
     if (id != null) __obj.updateDynamic("id")(id)
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])

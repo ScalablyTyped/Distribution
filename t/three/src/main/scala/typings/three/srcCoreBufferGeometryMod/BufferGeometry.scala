@@ -38,6 +38,7 @@ class BufferGeometry () extends EventDispatcher {
   	 */
   var id: Double = js.native
   var index: BufferAttribute = js.native
+  var isBufferGeometry: Boolean = js.native
   var morphAttributes: js.Any = js.native
   var name: String = js.native
   /**

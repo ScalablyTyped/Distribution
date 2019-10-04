@@ -1,10 +1,10 @@
 package typings.atPulumiAws.glueCrawlerMod
 
-import typings.atPulumiAws.Anon_ConnectionNameExclusions
-import typings.atPulumiAws.Anon_DatabaseNameTables
-import typings.atPulumiAws.Anon_DeleteBehaviorUpdateBehavior
-import typings.atPulumiAws.Anon_ExclusionsPath
-import typings.atPulumiAws.Anon_PathInput
+import typings.atPulumiAws.typesInputMod.glueNs.CrawlerCatalogTarget
+import typings.atPulumiAws.typesInputMod.glueNs.CrawlerDynamodbTarget
+import typings.atPulumiAws.typesInputMod.glueNs.CrawlerJdbcTarget
+import typings.atPulumiAws.typesInputMod.glueNs.CrawlerS3Target
+import typings.atPulumiAws.typesInputMod.glueNs.CrawlerSchemaChangePolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait CrawlerState extends js.Object {
     * The ARN of the crawler
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
-  val catalogTargets: js.UndefOr[Input[js.Array[Input[Anon_DatabaseNameTables]]]] = js.undefined
+  val catalogTargets: js.UndefOr[Input[js.Array[Input[CrawlerCatalogTarget]]]] = js.undefined
   /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
@@ -35,11 +35,11 @@ trait CrawlerState extends js.Object {
   /**
     * List of nested DynamoDB target arguments. See below.
     */
-  val dynamodbTargets: js.UndefOr[Input[js.Array[Input[Anon_PathInput]]]] = js.undefined
+  val dynamodbTargets: js.UndefOr[Input[js.Array[Input[CrawlerDynamodbTarget]]]] = js.undefined
   /**
     * List of nested JBDC target arguments. See below.
     */
-  val jdbcTargets: js.UndefOr[Input[js.Array[Input[Anon_ConnectionNameExclusions]]]] = js.undefined
+  val jdbcTargets: js.UndefOr[Input[js.Array[Input[CrawlerJdbcTarget]]]] = js.undefined
   /**
     * Name of the crawler.
     */
@@ -51,7 +51,7 @@ trait CrawlerState extends js.Object {
   /**
     * List nested Amazon S3 target arguments. See below.
     */
-  val s3Targets: js.UndefOr[Input[js.Array[Input[Anon_ExclusionsPath]]]] = js.undefined
+  val s3Targets: js.UndefOr[Input[js.Array[Input[CrawlerS3Target]]]] = js.undefined
   /**
     * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
     */
@@ -59,7 +59,7 @@ trait CrawlerState extends js.Object {
   /**
     * Policy for the crawler's update and deletion behavior.
     */
-  val schemaChangePolicy: js.UndefOr[Input[Anon_DeleteBehaviorUpdateBehavior]] = js.undefined
+  val schemaChangePolicy: js.UndefOr[Input[CrawlerSchemaChangePolicy]] = js.undefined
   /**
     * The name of Security Configuration to be used by the crawler
     */
@@ -74,18 +74,18 @@ object CrawlerState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    catalogTargets: Input[js.Array[Input[Anon_DatabaseNameTables]]] = null,
+    catalogTargets: Input[js.Array[Input[CrawlerCatalogTarget]]] = null,
     classifiers: Input[js.Array[Input[String]]] = null,
     configuration: Input[String] = null,
     databaseName: Input[String] = null,
     description: Input[String] = null,
-    dynamodbTargets: Input[js.Array[Input[Anon_PathInput]]] = null,
-    jdbcTargets: Input[js.Array[Input[Anon_ConnectionNameExclusions]]] = null,
+    dynamodbTargets: Input[js.Array[Input[CrawlerDynamodbTarget]]] = null,
+    jdbcTargets: Input[js.Array[Input[CrawlerJdbcTarget]]] = null,
     name: Input[String] = null,
     role: Input[String] = null,
-    s3Targets: Input[js.Array[Input[Anon_ExclusionsPath]]] = null,
+    s3Targets: Input[js.Array[Input[CrawlerS3Target]]] = null,
     schedule: Input[String] = null,
-    schemaChangePolicy: Input[Anon_DeleteBehaviorUpdateBehavior] = null,
+    schemaChangePolicy: Input[CrawlerSchemaChangePolicy] = null,
     securityConfiguration: Input[String] = null,
     tablePrefix: Input[String] = null
   ): CrawlerState = {

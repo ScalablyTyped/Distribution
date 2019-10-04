@@ -1,9 +1,7 @@
 package typings.atIonicReact
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAnchorElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAppElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAvatarElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonBackButtonElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonBackdropElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonBadgeElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonButtonElement
@@ -25,6 +23,7 @@ import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonFooterElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonGridElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonHeaderElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonImgElement
+import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonInfiniteScrollContentElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonInfiniteScrollElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonInputElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonItemDividerElement
@@ -52,7 +51,7 @@ import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRefresherElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonReorderElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonReorderGroupElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRippleEffectElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRouterOutletElement
+import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRouterLinkElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRowElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSearchbarElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSegmentButtonElement
@@ -65,7 +64,6 @@ import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSlideElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSlidesElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSpinnerElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonSplitPaneElement
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTabBarElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTabButtonElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTabElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTextElement
@@ -75,9 +73,35 @@ import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTitleElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToggleElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToolbarElement
 import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonVirtualScrollElement
-import typings.atIonicReact.distTypesComponentsReactPropsMod.ReactProps
+import typings.atIonicReact.atIonicReactStrings.`type`
+import typings.atIonicReact.atIonicReactStrings.activated
+import typings.atIonicReact.atIonicReactStrings.button
+import typings.atIonicReact.atIonicReactStrings.buttonType
+import typings.atIonicReact.atIonicReactStrings.color
+import typings.atIonicReact.atIonicReactStrings.detail
+import typings.atIonicReact.atIonicReactStrings.detailIcon
+import typings.atIonicReact.atIonicReactStrings.disabled
+import typings.atIonicReact.atIonicReactStrings.download
+import typings.atIonicReact.atIonicReactStrings.expand
+import typings.atIonicReact.atIonicReactStrings.expandable
+import typings.atIonicReact.atIonicReactStrings.fill
+import typings.atIonicReact.atIonicReactStrings.href
+import typings.atIonicReact.atIonicReactStrings.lines
+import typings.atIonicReact.atIonicReactStrings.mode
+import typings.atIonicReact.atIonicReactStrings.onIonBlur
+import typings.atIonicReact.atIonicReactStrings.onIonFocus
+import typings.atIonicReact.atIonicReactStrings.rel
+import typings.atIonicReact.atIonicReactStrings.shape
+import typings.atIonicReact.atIonicReactStrings.show
+import typings.atIonicReact.atIonicReactStrings.size
+import typings.atIonicReact.atIonicReactStrings.strong
+import typings.atIonicReact.atIonicReactStrings.target
+import typings.atIonicReact.atIonicReactStrings.translucent
+import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
+import typings.atIonicReact.distTypesComponentsUtilsMod.IonicReactExternalProps
 import typings.ionicons.distTypesComponentsMod.Global.HTMLIonIconElement
 import typings.react.reactMod.ForwardRefExoticComponent
+import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.RefAttributes
 import typings.std.Pick
 import scala.scalajs.js
@@ -87,461 +111,467 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react/dist/types/components/proxies", JSImport.Namespace)
 @js.native
 object distTypesComponentsProxiesMod extends js.Object {
-  val IonAnchor: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonAnchor */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonAnchorElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
-    ]) with RefAttributes[HTMLIonAnchorElement]
-  ] = js.native
-  val IonAppInner: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonApp */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonAppElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonAppElement]
+  val IonApp: ForwardRefExoticComponent[
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonApp */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonAppElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonAppElement]
   ] = js.native
   val IonAvatar: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonAvatar */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonAvatarElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonAvatarElement]
-  ] = js.native
-  val IonBackButtonInner: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBackButton */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonBackButtonElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any
-    ]) with RefAttributes[HTMLIonBackButtonElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonAvatar */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonAvatarElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonAvatarElement]
   ] = js.native
   val IonBackdrop: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBackdrop */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonBackdropElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonBackdropElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBackdrop */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonBackdropElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonBackdropElement]
   ] = js.native
   val IonBadge: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBadge */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonBadgeElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonBadgeElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBadge */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonBadgeElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonBadgeElement]
   ] = js.native
   val IonButton: ForwardRefExoticComponent[
     (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButton */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonButtonElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 184 */ js.Any
-    ]) with RefAttributes[HTMLIonButtonElement]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButton */ _, 
+      disabled | strong | color | size | fill | mode | href | download | rel | target | buttonType | expand | onIonBlur | onIonFocus | shape | `type`
+    ]) with Anon_Back with (Pick[
+      HTMLAttributes[HTMLIonButtonElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonButtonElement]
   ] = js.native
   val IonButtons: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButtons */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonButtonsElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonButtonsElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButtons */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonButtonsElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonButtonsElement]
   ] = js.native
   val IonCard: ForwardRefExoticComponent[
     (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCard */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonCardElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ js.Any
-    ]) with RefAttributes[HTMLIonCardElement]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCard */ _, 
+      disabled | button | color | mode | href | download | rel | target | `type`
+    ]) with Anon_Back with (Pick[
+      HTMLAttributes[HTMLIonCardElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonCardElement]
   ] = js.native
   val IonCardContent: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardContent */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonCardContentElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonCardContentElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardContent */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonCardContentElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonCardContentElement]
   ] = js.native
   val IonCardHeader: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardHeader */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonCardHeaderElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonCardHeaderElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardHeader */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonCardHeaderElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonCardHeaderElement]
   ] = js.native
   val IonCardSubtitle: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardSubtitle */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonCardSubtitleElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonCardSubtitleElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardSubtitle */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonCardSubtitleElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonCardSubtitleElement]
   ] = js.native
   val IonCardTitle: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardTitle */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonCardTitleElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonCardTitleElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardTitle */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonCardTitleElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonCardTitleElement]
   ] = js.native
   val IonCheckbox: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCheckbox */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonCheckboxElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ js.Any
-    ]) with RefAttributes[HTMLIonCheckboxElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCheckbox */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonCheckboxElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonCheckboxElement]
   ] = js.native
   val IonChip: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonChip */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonChipElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonChipElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonChip */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonChipElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonChipElement]
   ] = js.native
   val IonCol: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCol */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonColElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 192 */ js.Any
-    ]) with RefAttributes[HTMLIonColElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCol */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonColElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonColElement]
   ] = js.native
   val IonContent: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonContent */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonContentElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 176 */ js.Any
-    ]) with RefAttributes[HTMLIonContentElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonContent */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonContentElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonContentElement]
   ] = js.native
   val IonDatetime: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonDatetime */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonDatetimeElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 194 */ js.Any
-    ]) with RefAttributes[HTMLIonDatetimeElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonDatetime */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonDatetimeElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonDatetimeElement]
   ] = js.native
   val IonFab: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFab */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonFabElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonFabElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFab */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonFabElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonFabElement]
   ] = js.native
   val IonFabButton: ForwardRefExoticComponent[
     (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabButton */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonFabButtonElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 182 */ js.Any
-    ]) with RefAttributes[HTMLIonFabButtonElement]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabButton */ _, 
+      show | disabled | activated | color | size | mode | href | download | rel | target | onIonBlur | onIonFocus | `type` | translucent
+    ]) with Anon_Back with (Pick[
+      HTMLAttributes[HTMLIonFabButtonElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonFabButtonElement]
   ] = js.native
   val IonFabList: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabList */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonFabListElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonFabListElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabList */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonFabListElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonFabListElement]
   ] = js.native
   val IonFooter: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFooter */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonFooterElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonFooterElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFooter */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonFooterElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonFooterElement]
   ] = js.native
   val IonGrid: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonGrid */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonGridElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonGridElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonGrid */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonGridElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonGridElement]
   ] = js.native
   val IonHeader: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonHeader */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonHeaderElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonHeaderElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonHeader */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonHeaderElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonHeaderElement]
   ] = js.native
   val IonIcon: ForwardRefExoticComponent[
     (Pick[
-      typings.ionicons.distTypesComponentsMod.LocalJSXNs.IonIcon with ReactProps with Anon_ChildrenRef, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any
+      IonicReactExternalProps[typings.ionicons.distTypesComponentsMod.LocalJSXNs.IonIcon, HTMLIonIconElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 283 */ js.Any
     ]) with RefAttributes[HTMLIonIconElement]
   ] = js.native
   val IonImg: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonImg */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonImgElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
-    ]) with RefAttributes[HTMLIonImgElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonImg */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonImgElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonImgElement]
   ] = js.native
   val IonInfiniteScroll: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScroll */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonInfiniteScrollElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonInfiniteScrollElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScroll */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonInfiniteScrollElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonInfiniteScrollElement]
+  ] = js.native
+  val IonInfiniteScrollContent: ForwardRefExoticComponent[
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScrollContent */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonInfiniteScrollContentElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonInfiniteScrollContentElement]
   ] = js.native
   val IonInput: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInput */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonInputElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 194 */ js.Any
-    ]) with RefAttributes[HTMLIonInputElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInput */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonInputElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonInputElement]
   ] = js.native
   val IonItem: ForwardRefExoticComponent[
     (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItem */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonItemElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 180 */ js.Any
-    ]) with RefAttributes[HTMLIonItemElement]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItem */ _, 
+      disabled | button | color | lines | mode | href | download | rel | target | `type` | detail | detailIcon
+    ]) with Anon_Back with (Pick[
+      HTMLAttributes[HTMLIonItemElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonItemElement]
   ] = js.native
   val IonItemDivider: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemDivider */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonItemDividerElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonItemDividerElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemDivider */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonItemDividerElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonItemDividerElement]
   ] = js.native
   val IonItemGroup: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemGroup */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonItemGroupElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonItemGroupElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemGroup */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonItemGroupElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonItemGroupElement]
   ] = js.native
   val IonItemOption: ForwardRefExoticComponent[
     (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOption */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonItemOptionElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 176 */ js.Any
-    ]) with RefAttributes[HTMLIonItemOptionElement]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOption */ _, 
+      disabled | color | mode | href | download | rel | target | `type` | expandable
+    ]) with Anon_Back with (Pick[
+      HTMLAttributes[HTMLIonItemOptionElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonItemOptionElement]
   ] = js.native
   val IonItemOptions: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOptions */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonItemOptionsElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonItemOptionsElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOptions */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonItemOptionsElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonItemOptionsElement]
   ] = js.native
   val IonItemSliding: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemSliding */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonItemSlidingElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonItemSlidingElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemSliding */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonItemSlidingElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonItemSlidingElement]
   ] = js.native
   val IonLabel: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonLabel */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonLabelElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonLabelElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonLabel */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonLabelElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonLabelElement]
   ] = js.native
   val IonList: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonList */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonListElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
-    ]) with RefAttributes[HTMLIonListElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonList */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonListElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonListElement]
   ] = js.native
   val IonListHeader: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonListHeader */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonListHeaderElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonListHeaderElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonListHeader */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonListHeaderElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonListHeaderElement]
   ] = js.native
   val IonMenu: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenu */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonMenuElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 179 */ js.Any
-    ]) with RefAttributes[HTMLIonMenuElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenu */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonMenuElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonMenuElement]
   ] = js.native
   val IonMenuButton: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuButton */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonMenuButtonElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonMenuButtonElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuButton */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonMenuButtonElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonMenuButtonElement]
   ] = js.native
   val IonMenuToggle: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuToggle */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonMenuToggleElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonMenuToggleElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuToggle */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonMenuToggleElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonMenuToggleElement]
   ] = js.native
   val IonNav: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNav */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonNavElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-    ]) with RefAttributes[HTMLIonNavElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNav */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonNavElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonNavElement]
   ] = js.native
   val IonNote: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNote */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonNoteElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonNoteElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNote */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonNoteElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonNoteElement]
   ] = js.native
   val IonPicker: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPicker */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonPickerElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 183 */ js.Any
-    ]) with RefAttributes[HTMLIonPickerElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPicker */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonPickerElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonPickerElement]
   ] = js.native
   val IonPickerColumn: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonPickerColumnElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonPickerColumnElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonPickerColumnElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonPickerColumnElement]
   ] = js.native
   val IonProgressBar: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonProgressBar */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonProgressBarElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
-    ]) with RefAttributes[HTMLIonProgressBarElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonProgressBar */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonProgressBarElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonProgressBarElement]
   ] = js.native
   val IonRadio: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadio */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRadioElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 176 */ js.Any
-    ]) with RefAttributes[HTMLIonRadioElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadio */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRadioElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRadioElement]
   ] = js.native
   val IonRadioGroup: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadioGroup */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRadioGroupElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonRadioGroupElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadioGroup */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRadioGroupElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRadioGroupElement]
   ] = js.native
   val IonRange: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRange */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRangeElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 183 */ js.Any
-    ]) with RefAttributes[HTMLIonRangeElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRange */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRangeElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRangeElement]
   ] = js.native
   val IonRefresher: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresher */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRefresherElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ js.Any
-    ]) with RefAttributes[HTMLIonRefresherElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresher */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRefresherElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRefresherElement]
   ] = js.native
   val IonRefresherContent: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresherContent */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRefresherContentElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonRefresherContentElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresherContent */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRefresherContentElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRefresherContentElement]
   ] = js.native
   val IonReorder: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorder */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonReorderElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonReorderElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorder */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonReorderElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonReorderElement]
   ] = js.native
   val IonReorderGroup: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorderGroup */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonReorderGroupElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonReorderGroupElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorderGroup */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonReorderGroupElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonReorderGroupElement]
   ] = js.native
   val IonRippleEffect: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRippleEffect */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRippleEffectElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonRippleEffectElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRippleEffect */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRippleEffectElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRippleEffectElement]
   ] = js.native
-  val IonRouterOutletInner: ForwardRefExoticComponent[
+  val IonRouterLink: ForwardRefExoticComponent[
     (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRouterOutlet */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRouterOutletElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonRouterOutletElement]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRouterLink */ _, 
+      color | href | rel | target
+    ]) with Anon_Back with (Pick[
+      HTMLAttributes[HTMLIonRouterLinkElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRouterLinkElement]
   ] = js.native
   val IonRow: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRow */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonRowElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonRowElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRow */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonRowElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRowElement]
   ] = js.native
   val IonSearchbar: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSearchbar */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSearchbarElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 187 */ js.Any
-    ]) with RefAttributes[HTMLIonSearchbarElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSearchbar */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSearchbarElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSearchbarElement]
   ] = js.native
   val IonSegment: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegment */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSegmentElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any
-    ]) with RefAttributes[HTMLIonSegmentElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegment */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSegmentElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSegmentElement]
   ] = js.native
   val IonSegmentButton: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegmentButton */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSegmentButtonElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-    ]) with RefAttributes[HTMLIonSegmentButtonElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegmentButton */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSegmentButtonElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSegmentButtonElement]
   ] = js.native
   val IonSelect: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelect */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSelectElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 184 */ js.Any
-    ]) with RefAttributes[HTMLIonSelectElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelect */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSelectElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSelectElement]
   ] = js.native
   val IonSelectOption: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectOption */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSelectOptionElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
-    ]) with RefAttributes[HTMLIonSelectOptionElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectOption */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSelectOptionElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSelectOptionElement]
   ] = js.native
   val IonSelectPopover: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectPopover */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSelectPopoverElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonSelectPopoverElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectPopover */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSelectPopoverElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSelectPopoverElement]
   ] = js.native
   val IonSkeletonText: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSkeletonText */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSkeletonTextElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonSkeletonTextElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSkeletonText */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSkeletonTextElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSkeletonTextElement]
   ] = js.native
   val IonSlide: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlide */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSlideElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonSlideElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlide */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSlideElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSlideElement]
   ] = js.native
   val IonSlides: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlides */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSlidesElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 188 */ js.Any
-    ]) with RefAttributes[HTMLIonSlidesElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlides */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSlidesElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSlidesElement]
   ] = js.native
   val IonSpinner: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSpinner */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSpinnerElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
-    ]) with RefAttributes[HTMLIonSpinnerElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSpinner */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSpinnerElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSpinnerElement]
   ] = js.native
   val IonSplitPane: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSplitPane */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonSplitPaneElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
-    ]) with RefAttributes[HTMLIonSplitPaneElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSplitPane */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonSplitPaneElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonSplitPaneElement]
   ] = js.native
   val IonTab: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTab */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonTabElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ js.Any
-    ]) with RefAttributes[HTMLIonTabElement]
-  ] = js.native
-  val IonTabBarInner: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTabBar */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonTabBarElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
-    ]) with RefAttributes[HTMLIonTabBarElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTab */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonTabElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonTabElement]
   ] = js.native
   val IonTabButton: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTabButton */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonTabButtonElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ js.Any
-    ]) with RefAttributes[HTMLIonTabButtonElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTabButton */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonTabButtonElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonTabButtonElement]
   ] = js.native
   val IonText: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonText */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonTextElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonTextElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonText */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonTextElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonTextElement]
   ] = js.native
   val IonTextarea: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTextarea */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonTextareaElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 188 */ js.Any
-    ]) with RefAttributes[HTMLIonTextareaElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTextarea */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonTextareaElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonTextareaElement]
   ] = js.native
   val IonThumbnail: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonThumbnail */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonThumbnailElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonThumbnailElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonThumbnail */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonThumbnailElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonThumbnailElement]
   ] = js.native
   val IonTitle: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTitle */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonTitleElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 168 */ js.Any
-    ]) with RefAttributes[HTMLIonTitleElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTitle */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonTitleElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonTitleElement]
   ] = js.native
   val IonToggle: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToggle */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonToggleElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 176 */ js.Any
-    ]) with RefAttributes[HTMLIonToggleElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToggle */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonToggleElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonToggleElement]
   ] = js.native
   val IonToolbar: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToolbar */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonToolbarElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 169 */ js.Any
-    ]) with RefAttributes[HTMLIonToolbarElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToolbar */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonToolbarElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonToolbarElement]
   ] = js.native
   val IonVirtualScroll: ForwardRefExoticComponent[
-    (Pick[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonVirtualScroll */ js.Any) with ReactProps with Anon_ChildrenRefHTMLIonVirtualScrollElement, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 179 */ js.Any
-    ]) with RefAttributes[HTMLIonVirtualScrollElement]
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonVirtualScroll */ js.Any) with (Pick[
+      HTMLAttributes[HTMLIonVirtualScrollElement], 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonVirtualScrollElement]
   ] = js.native
 }
 

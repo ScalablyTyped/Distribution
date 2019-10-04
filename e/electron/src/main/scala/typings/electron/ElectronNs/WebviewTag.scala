@@ -133,7 +133,6 @@ import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLElement
-import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
@@ -154,14 +153,6 @@ trait WebviewTag extends HTMLElement {
     */
   var allowpopups: js.UndefOr[String] = js.native
   /**
-    * When this attribute is present the webview container will automatically resize
-    * within the bounds specified by the attributes minwidth, minheight, maxwidth, and
-    * maxheight. These constraints do not impact the webview unless autosize is
-    * enabled. When autosize is enabled, the webview container size cannot be less
-    * than the minimum values or greater than the maximum.
-    */
-  var autosize: js.UndefOr[String] = js.native
-  /**
     * A list of strings which specifies the blink features to be disabled separated by
     * ,. The full list of supported feature strings can be found in the
     * RuntimeEnabledFeatures.json5 file.
@@ -180,7 +171,7 @@ trait WebviewTag extends HTMLElement {
   var enableblinkfeatures: js.UndefOr[String] = js.native
   /**
     * When this attribute is false the guest page in webview will not have access to
-    * the remote module. The remote module is avaiable by default.
+    * the remote module. The remote module is available by default.
     */
   var enableremotemodule: js.UndefOr[String] = js.native
   /**
@@ -769,27 +760,36 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
+  def addEventListener_keydown(
+    `type`: keydown,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keydown(
     `type`: keydown,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keypress(
     `type`: keypress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keypress(
+    `type`: keypress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
+  def addEventListener_keyup(
+    `type`: keyup,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keyup(
     `type`: keyup,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   /**
@@ -1379,7 +1379,7 @@ trait WebviewTag extends HTMLElement {
     * Captures a snapshot of the page within rect. Omitting rect will capture the
     * whole visible page.
     */
-  def capturePage(): Unit = js.native
+  def capturePage(): js.Promise[NativeImage] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
@@ -1387,7 +1387,7 @@ trait WebviewTag extends HTMLElement {
     * Deprecated Soon
     */
   def capturePage(callback: js.Function1[/* image */ NativeImage, Unit]): Unit = js.native
-  def capturePage(rect: Rectangle): Unit = js.native
+  def capturePage(rect: Rectangle): js.Promise[NativeImage] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
@@ -1422,11 +1422,11 @@ trait WebviewTag extends HTMLElement {
   /**
     * Evaluates code in page. If userGesture is set, it will create the user gesture
     * context in the page. HTML APIs like requestFullScreen, which require user
-    * action, can take advantage of this option for automation.
+    * action, can take advantage of this option for automation. Deprecated Soon
     */
-  def executeJavaScript(code: String): Unit = js.native
-  def executeJavaScript(code: String, userGesture: Boolean): Unit = js.native
-  def executeJavaScript(code: String, userGesture: Boolean, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def executeJavaScript(code: String): js.Promise[_] = js.native
+  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScript(code: String, userGesture: Boolean, callback: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   /**
     * Starts a request to find all matches for the text in the web page. The result of
     * the request can be obtained by subscribing to found-in-page event.
@@ -1441,6 +1441,7 @@ trait WebviewTag extends HTMLElement {
     * is disabled.
     */
   def getWebContents(): WebContents = js.native
+  def getWebContentsId(): Double = js.native
   def getZoomFactor(): Double = js.native
   def getZoomLevel(): Double = js.native
   /**
@@ -1475,6 +1476,10 @@ trait WebviewTag extends HTMLElement {
     * Opens the DevTools for the service worker context present in the guest page.
     */
   def inspectServiceWorker(): Unit = js.native
+  /**
+    * Opens the DevTools for the shared worker context present in the guest page.
+    */
+  def inspectSharedWorker(): Unit = js.native
   def isAudioMuted(): Boolean = js.native
   def isCrashed(): Boolean = js.native
   def isCurrentlyAudible(): Boolean = js.native
@@ -1487,8 +1492,8 @@ trait WebviewTag extends HTMLElement {
     * Loads the url in the webview, the url must contain the protocol prefix, e.g. the
     * http:// or file://.
     */
-  def loadURL(url: String): Unit = js.native
-  def loadURL(url: String, options: LoadURLOptions): Unit = js.native
+  def loadURL(url: String): js.Promise[Unit] = js.native
+  def loadURL(url: String, options: LoadURLOptions): js.Promise[Unit] = js.native
   /**
     * Opens a DevTools window for guest page.
     */
@@ -1507,8 +1512,12 @@ trait WebviewTag extends HTMLElement {
   def print(): Unit = js.native
   def print(options: PrintOptions): Unit = js.native
   /**
+    * Prints webview's web page as PDF, Same as webContents.printToPDF(options).
+    */
+  def printToPDF(options: PrintToPDFOptions): js.Promise[Buffer] = js.native
+  /**
     * Prints webview's web page as PDF, Same as webContents.printToPDF(options,
-    * callback).
+    * callback). Deprecated Soon
     */
   def printToPDF(options: PrintToPDFOptions, callback: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native
   /**
@@ -1902,27 +1911,36 @@ trait WebviewTag extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_ipcmessage(event: `ipc-message`, listener: js.Function1[/* event */ IpcMessageEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
+  def removeEventListener_keydown(
+    `type`: keydown,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keydown(
     `type`: keydown,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keypress(
     `type`: keypress,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keypress(
+    `type`: keypress,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
+  def removeEventListener_keyup(
+    `type`: keyup,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keyup(
     `type`: keyup,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.KeyboardEvent, _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmPatchBaselineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ApproveAfterDays
-import typings.atPulumiAws.Anon_KeyValues
+import typings.atPulumiAws.typesOutputMod.ssmNs.PatchBaselineApprovalRule
+import typings.atPulumiAws.typesOutputMod.ssmNs.PatchBaselineGlobalFilter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -28,7 +28,7 @@ class PatchBaseline protected () extends CustomResource {
   /**
     * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approvalRule block requires the fields documented below.
     */
-  val approvalRules: Output[js.UndefOr[js.Array[Anon_ApproveAfterDays]]] = js.native
+  val approvalRules: Output[js.UndefOr[js.Array[PatchBaselineApprovalRule]]] = js.native
   /**
     * A list of explicitly approved patches for the baseline.
     */
@@ -44,7 +44,7 @@ class PatchBaseline protected () extends CustomResource {
   /**
     * A set of global filters used to exclude patches from the baseline. Up to 4 global filters can be specified using Key/Value pairs. Valid Keys are `PRODUCT | CLASSIFICATION | MSRC_SEVERITY | PATCH_ID`.
     */
-  val globalFilters: Output[js.UndefOr[js.Array[Anon_KeyValues]]] = js.native
+  val globalFilters: Output[js.UndefOr[js.Array[PatchBaselineGlobalFilter]]] = js.native
   /**
     * The name of the patch baseline.
     */

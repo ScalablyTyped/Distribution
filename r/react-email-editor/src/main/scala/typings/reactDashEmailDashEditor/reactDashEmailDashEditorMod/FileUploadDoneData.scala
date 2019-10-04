@@ -1,0 +1,20 @@
+package typings.reactDashEmailDashEditor.reactDashEmailDashEditorMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FileUploadDoneData extends js.Object {
+  val progress: Double
+  val url: js.UndefOr[String] = js.undefined
+}
+
+object FileUploadDoneData {
+  @scala.inline
+  def apply(progress: Double, url: String = null): FileUploadDoneData = {
+    val __obj = js.Dynamic.literal(progress = progress)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[FileUploadDoneData]
+  }
+}
+

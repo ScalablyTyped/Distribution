@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router-dom
 
-Typings are for version 4.3
+Typings are for version 5.1
 
 ## Library description:
 DOM bindings for React Router

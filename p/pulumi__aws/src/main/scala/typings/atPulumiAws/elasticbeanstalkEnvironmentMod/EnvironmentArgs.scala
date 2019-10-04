@@ -1,9 +1,9 @@
 package typings.atPulumiAws.elasticbeanstalkEnvironmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameNamespaceResource
 import typings.atPulumiAws.elasticbeanstalkApplicationMod.Application
 import typings.atPulumiAws.elasticbeanstalkApplicationVersionMod.ApplicationVersion
+import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.EnvironmentSetting
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,7 +46,7 @@ trait EnvironmentArgs extends js.Object {
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: js.UndefOr[Input[js.Array[Input[Anon_NameNamespaceResource]]]] = js.undefined
+  val settings: js.UndefOr[Input[js.Array[Input[EnvironmentSetting]]]] = js.undefined
   /**
     * A solution stack to base your environment
     * off of. Example stacks can be found in the [Amazon API documentation][1]
@@ -89,7 +89,7 @@ object EnvironmentArgs {
     name: Input[String] = null,
     platformArn: Input[String] = null,
     pollInterval: Input[String] = null,
-    settings: Input[js.Array[Input[Anon_NameNamespaceResource]]] = null,
+    settings: Input[js.Array[Input[EnvironmentSetting]]] = null,
     solutionStackName: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     templateName: Input[String] = null,

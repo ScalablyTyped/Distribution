@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-is
 
-Typings are for version 2.1
+Typings are for version 4.0.0
 
 ## Library description:
 Utility to check if a node passes a test
@@ -24,7 +24,7 @@ Utility to check if a node passes a test
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

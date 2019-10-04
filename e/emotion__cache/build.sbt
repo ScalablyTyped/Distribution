@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__cache"
-version := "10.0.14-e14f1e"
+version := "10.0.19-4d0d32"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

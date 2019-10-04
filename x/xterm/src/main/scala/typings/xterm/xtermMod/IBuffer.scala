@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents a terminal buffer.
+  */
 trait IBuffer extends js.Object {
   /**
     * The line within the buffer where the top of the bottom page is (when
@@ -30,10 +33,12 @@ trait IBuffer extends js.Object {
     */
   val viewportY: Double
   /**
-    * Gets a line from the buffer, or undefined if the line index does not exist.
+    * Gets a line from the buffer, or undefined if the line index does not
+    * exist.
     *
-    * Note that the result of this function should be used immediately after calling as when the
-    * terminal updates it could lead to unexpected behavior.
+    * Note that the result of this function should be used immediately after
+    * calling as when the terminal updates it could lead to unexpected
+    * behavior.
     *
     * @param y The line index to get.
     */

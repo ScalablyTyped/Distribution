@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalSqlInjectionMatchSetMod
 
-import typings.atPulumiAws.Anon_FieldToMatchTextTransformation
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.SqlInjectionMatchSetSqlInjectionMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class SqlInjectionMatchSet protected () extends CustomResource {
   /**
     * The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
     */
-  val sqlInjectionMatchTuples: Output[js.UndefOr[js.Array[Anon_FieldToMatchTextTransformation]]] = js.native
+  val sqlInjectionMatchTuples: Output[js.UndefOr[js.Array[SqlInjectionMatchSetSqlInjectionMatchTuple]]] = js.native
 }
 
 /* static members */

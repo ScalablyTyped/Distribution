@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appautoscalingPolicyMod
 
-import typings.atPulumiAws.Anon_AdjustmentType
-import typings.atPulumiAws.Anon_CustomizedMetricSpecification
+import typings.atPulumiAws.typesOutputMod.appautoscalingNs.PolicyStepScalingPolicyConfiguration
+import typings.atPulumiAws.typesOutputMod.appautoscalingNs.PolicyTargetTrackingScalingPolicyConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -51,11 +51,11 @@ class Policy protected () extends CustomResource {
   /**
     * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
     */
-  val stepScalingPolicyConfiguration: Output[js.UndefOr[Anon_AdjustmentType]] = js.native
+  val stepScalingPolicyConfiguration: Output[js.UndefOr[PolicyStepScalingPolicyConfiguration]] = js.native
   /**
     * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
     */
-  val targetTrackingScalingPolicyConfiguration: Output[js.UndefOr[Anon_CustomizedMetricSpecification]] = js.native
+  val targetTrackingScalingPolicyConfiguration: Output[js.UndefOr[PolicyTargetTrackingScalingPolicyConfiguration]] = js.native
 }
 
 /* static members */

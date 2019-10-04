@@ -1,15 +1,15 @@
 package typings.atPulumiAws.elasticsearchDomainMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AutomatedSnapshotStartHourInput
-import typings.atPulumiAws.Anon_AvailabilityZonesSecurityGroupIds
-import typings.atPulumiAws.Anon_CloudwatchLogGroupArnEnabled
-import typings.atPulumiAws.Anon_DedicatedMasterCountDedicatedMasterEnabled
-import typings.atPulumiAws.Anon_EbsEnabledIops
-import typings.atPulumiAws.Anon_EnabledBooleanInput_2072549229
-import typings.atPulumiAws.Anon_EnabledIdentityPoolIdRoleArn
-import typings.atPulumiAws.Anon_EnabledKmsKeyIdBoolean
 import typings.atPulumiAws.iamDocumentsMod.PolicyDocument
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainClusterConfig
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainCognitoOptions
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainEbsOptions
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainEncryptAtRest
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainLogPublishingOption
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainNodeToNodeEncryption
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainSnapshotOptions
+import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainVpcOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,8 +34,8 @@ trait DomainState extends js.Object {
   /**
     * Cluster configuration of the domain, see below.
     */
-  val clusterConfig: js.UndefOr[Input[Anon_DedicatedMasterCountDedicatedMasterEnabled]] = js.undefined
-  val cognitoOptions: js.UndefOr[Input[Anon_EnabledIdentityPoolIdRoleArn]] = js.undefined
+  val clusterConfig: js.UndefOr[Input[DomainClusterConfig]] = js.undefined
+  val cognitoOptions: js.UndefOr[Input[DomainCognitoOptions]] = js.undefined
   /**
     * Unique identifier for the domain.
     */
@@ -47,7 +47,7 @@ trait DomainState extends js.Object {
   /**
     * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
     */
-  val ebsOptions: js.UndefOr[Input[Anon_EbsEnabledIops]] = js.undefined
+  val ebsOptions: js.UndefOr[Input[DomainEbsOptions]] = js.undefined
   /**
     * The version of Elasticsearch to deploy. Defaults to `1.5`
     */
@@ -55,7 +55,7 @@ trait DomainState extends js.Object {
   /**
     * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
     */
-  val encryptAtRest: js.UndefOr[Input[Anon_EnabledKmsKeyIdBoolean]] = js.undefined
+  val encryptAtRest: js.UndefOr[Input[DomainEncryptAtRest]] = js.undefined
   /**
     * Domain-specific endpoint used to submit index, search, and data upload requests.
     */
@@ -69,15 +69,15 @@ trait DomainState extends js.Object {
   /**
     * Options for publishing slow logs to CloudWatch Logs.
     */
-  val logPublishingOptions: js.UndefOr[Input[js.Array[Input[Anon_CloudwatchLogGroupArnEnabled]]]] = js.undefined
+  val logPublishingOptions: js.UndefOr[Input[js.Array[Input[DomainLogPublishingOption]]]] = js.undefined
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: js.UndefOr[Input[Anon_EnabledBooleanInput_2072549229]] = js.undefined
+  val nodeToNodeEncryption: js.UndefOr[Input[DomainNodeToNodeEncryption]] = js.undefined
   /**
     * Snapshot related options, see below.
     */
-  val snapshotOptions: js.UndefOr[Input[Anon_AutomatedSnapshotStartHourInput]] = js.undefined
+  val snapshotOptions: js.UndefOr[Input[DomainSnapshotOptions]] = js.undefined
   /**
     * A mapping of tags to assign to the resource
     */
@@ -85,7 +85,7 @@ trait DomainState extends js.Object {
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
-  val vpcOptions: js.UndefOr[Input[Anon_AvailabilityZonesSecurityGroupIds]] = js.undefined
+  val vpcOptions: js.UndefOr[Input[DomainVpcOptions]] = js.undefined
 }
 
 object DomainState {
@@ -94,20 +94,20 @@ object DomainState {
     accessPolicies: Input[String | PolicyDocument] = null,
     advancedOptions: Input[StringDictionary[_]] = null,
     arn: Input[String] = null,
-    clusterConfig: Input[Anon_DedicatedMasterCountDedicatedMasterEnabled] = null,
-    cognitoOptions: Input[Anon_EnabledIdentityPoolIdRoleArn] = null,
+    clusterConfig: Input[DomainClusterConfig] = null,
+    cognitoOptions: Input[DomainCognitoOptions] = null,
     domainId: Input[String] = null,
     domainName: Input[String] = null,
-    ebsOptions: Input[Anon_EbsEnabledIops] = null,
+    ebsOptions: Input[DomainEbsOptions] = null,
     elasticsearchVersion: Input[String] = null,
-    encryptAtRest: Input[Anon_EnabledKmsKeyIdBoolean] = null,
+    encryptAtRest: Input[DomainEncryptAtRest] = null,
     endpoint: Input[String] = null,
     kibanaEndpoint: Input[String] = null,
-    logPublishingOptions: Input[js.Array[Input[Anon_CloudwatchLogGroupArnEnabled]]] = null,
-    nodeToNodeEncryption: Input[Anon_EnabledBooleanInput_2072549229] = null,
-    snapshotOptions: Input[Anon_AutomatedSnapshotStartHourInput] = null,
+    logPublishingOptions: Input[js.Array[Input[DomainLogPublishingOption]]] = null,
+    nodeToNodeEncryption: Input[DomainNodeToNodeEncryption] = null,
+    snapshotOptions: Input[DomainSnapshotOptions] = null,
     tags: Input[StringDictionary[_]] = null,
-    vpcOptions: Input[Anon_AvailabilityZonesSecurityGroupIds] = null
+    vpcOptions: Input[DomainVpcOptions] = null
   ): DomainState = {
     val __obj = js.Dynamic.literal()
     if (accessPolicies != null) __obj.updateDynamic("accessPolicies")(accessPolicies.asInstanceOf[js.Any])

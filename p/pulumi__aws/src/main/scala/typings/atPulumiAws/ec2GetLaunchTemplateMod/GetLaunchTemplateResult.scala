@@ -1,15 +1,15 @@
 package typings.atPulumiAws.ec2GetLaunchTemplateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Affinity
-import typings.atPulumiAws.Anon_Arn
-import typings.atPulumiAws.Anon_AssociatePublicIpAddress
-import typings.atPulumiAws.Anon_CpuCredits
-import typings.atPulumiAws.Anon_DeviceNameEbs
-import typings.atPulumiAws.Anon_EnabledBoolean_1082978225
-import typings.atPulumiAws.Anon_KeyResourceType
-import typings.atPulumiAws.Anon_MarketType
-import typings.atPulumiAws.Anon_TypeString
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateBlockDeviceMapping
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateElasticGpuSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateIamInstanceProfile
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateInstanceMarketOption
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateMonitoring
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateNetworkInterface
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplatePlacement
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateTagSpecification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,12 +22,12 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     */
-  val blockDeviceMappings: js.Array[Anon_DeviceNameEbs]
+  val blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping]
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecifications: js.Array[Anon_CpuCredits]
+  val creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification]
   /**
     * The default version of the launch template.
     */
@@ -49,12 +49,12 @@ trait GetLaunchTemplateResult extends js.Object {
     * The elastic GPU to attach to the instance. See Elastic GPU
     * below for more details.
     */
-  val elasticGpuSpecifications: js.Array[Anon_TypeString]
+  val elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification]
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
-  val iamInstanceProfiles: js.Array[Anon_Arn]
+  val iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -72,7 +72,7 @@ trait GetLaunchTemplateResult extends js.Object {
     * The market (purchasing) option for the instance.
     * below for details.
     */
-  val instanceMarketOptions: js.Array[Anon_MarketType]
+  val instanceMarketOptions: js.Array[GetLaunchTemplateInstanceMarketOption]
   /**
     * The type of the instance.
     */
@@ -92,17 +92,17 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * The monitoring option for the instance.
     */
-  val monitorings: js.Array[Anon_EnabledBoolean_1082978225]
+  val monitorings: js.Array[GetLaunchTemplateMonitoring]
   val name: String
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: js.Array[Anon_AssociatePublicIpAddress]
+  val networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface]
   /**
     * The placement of the instance.
     */
-  val placements: js.Array[Anon_Affinity]
+  val placements: js.Array[GetLaunchTemplatePlacement]
   /**
     * The ID of the RAM disk.
     */
@@ -115,7 +115,7 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * The tags to apply to the resources during launch.
     */
-  val tagSpecifications: js.Array[Anon_KeyResourceType]
+  val tagSpecifications: js.Array[GetLaunchTemplateTagSpecification]
   /**
     * (Optional) A mapping of tags to assign to the launch template.
     */
@@ -134,29 +134,29 @@ object GetLaunchTemplateResult {
   @scala.inline
   def apply(
     arn: String,
-    blockDeviceMappings: js.Array[Anon_DeviceNameEbs],
-    creditSpecifications: js.Array[Anon_CpuCredits],
+    blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping],
+    creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification],
     defaultVersion: Double,
     description: String,
     disableApiTermination: Boolean,
     ebsOptimized: String,
-    elasticGpuSpecifications: js.Array[Anon_TypeString],
-    iamInstanceProfiles: js.Array[Anon_Arn],
+    elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification],
+    iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile],
     id: String,
     imageId: String,
     instanceInitiatedShutdownBehavior: String,
-    instanceMarketOptions: js.Array[Anon_MarketType],
+    instanceMarketOptions: js.Array[GetLaunchTemplateInstanceMarketOption],
     instanceType: String,
     kernelId: String,
     keyName: String,
     latestVersion: Double,
-    monitorings: js.Array[Anon_EnabledBoolean_1082978225],
+    monitorings: js.Array[GetLaunchTemplateMonitoring],
     name: String,
-    networkInterfaces: js.Array[Anon_AssociatePublicIpAddress],
-    placements: js.Array[Anon_Affinity],
+    networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface],
+    placements: js.Array[GetLaunchTemplatePlacement],
     ramDiskId: String,
     securityGroupNames: js.Array[String],
-    tagSpecifications: js.Array[Anon_KeyResourceType],
+    tagSpecifications: js.Array[GetLaunchTemplateTagSpecification],
     tags: StringDictionary[js.Any],
     userData: String,
     vpcSecurityGroupIds: js.Array[String]

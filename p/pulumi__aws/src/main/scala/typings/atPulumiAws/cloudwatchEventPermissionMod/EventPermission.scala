@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchEventPermissionMod
 
-import typings.atPulumiAws.Anon_KeyType
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventPermissionCondition
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class EventPermission protected () extends CustomResource {
   /**
     * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
     */
-  val condition: Output[js.UndefOr[Anon_KeyType]] = js.native
+  val condition: Output[js.UndefOr[EventPermissionCondition]] = js.native
   /**
     * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
     */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for log4js
 
-Typings are for version 4.5.1
+Typings are for version 5.1.0
 
 ## Library description:
 Port of Log4js to work with node.

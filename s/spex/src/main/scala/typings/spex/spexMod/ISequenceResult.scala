@@ -1,0 +1,20 @@
+package typings.spex.spexMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ISequenceResult extends js.Object {
+  var duration: Double
+  var total: Double
+}
+
+object ISequenceResult {
+  @scala.inline
+  def apply(duration: Double, total: Double): ISequenceResult = {
+    val __obj = js.Dynamic.literal(duration = duration, total = total)
+  
+    __obj.asInstanceOf[ISequenceResult]
+  }
+}
+

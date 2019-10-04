@@ -42,6 +42,10 @@ trait UpdateBranchRequest extends js.Object {
     */
   var enableNotification: js.UndefOr[EnableNotification] = js.undefined
   /**
+    *  Enables Pull Request Preview for this branch. 
+    */
+  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined
+  /**
     *  Environment Variables for the branch. 
     */
   var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
@@ -71,6 +75,7 @@ object UpdateBranchRequest {
     enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
     enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
     enableNotification: js.UndefOr[EnableNotification] = js.undefined,
+    enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     framework: Framework = null,
     stage: Stage = null,
@@ -84,6 +89,7 @@ object UpdateBranchRequest {
     if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild)
     if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth)
     if (!js.isUndefined(enableNotification)) __obj.updateDynamic("enableNotification")(enableNotification)
+    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview)
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
     if (framework != null) __obj.updateDynamic("framework")(framework)
     if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])

@@ -64,6 +64,9 @@ import typings.react.reactMod.SVGFactory
 import typings.react.reactMod.SetStateAction
 import typings.react.reactMod.SuspenseProps
 import typings.reactDashDom.reactDashDomMod.Renderer
+import typings.reactDashDom.reactDashDomMod.Root
+import typings.reactDashDom.reactDashDomMod.RootOptions
+import typings.reactDashDom.reactDashDomMod.SyncRoot
 import typings.std.HTMLElement
 import typings.std.Partial
 import typings.std.Text
@@ -515,6 +518,10 @@ object BdApiModuleNs extends js.Object {
     def unstable_batchedUpdates(callback: js.Function0[_]): Unit = js.native
     def unstable_batchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
     def unstable_batchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
+    def unstable_createRoot(container: typings.std.Element): Root = js.native
+    def unstable_createRoot(container: typings.std.Element, options: RootOptions): Root = js.native
+    def unstable_createSyncRoot(container: typings.std.Element): SyncRoot = js.native
+    def unstable_createSyncRoot(container: typings.std.Element, options: RootOptions): SyncRoot = js.native
     def unstable_renderSubtreeIntoContainer[T /* <: typings.std.Element */](
       parentComponent: Component[_, js.Object, _],
       element: DOMElement[DOMAttributes[T], T],

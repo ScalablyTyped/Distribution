@@ -86,7 +86,7 @@ class DocumentCreated () extends ClientObject {
   def open(): Unit = js.native
   /**
     *
-    * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
+    * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */

@@ -1,9 +1,9 @@
 package typings.atPulumiAws.apigatewayStageMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DestinationArnFormat
 import typings.atPulumiAws.apigatewayDeploymentMod.Deployment
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
+import typings.atPulumiAws.typesInputMod.apigatewayNs.StageAccessLogSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait StageState extends js.Object {
   /**
     * Enables access logs for the API stage. Detailed below.
     */
-  val accessLogSettings: js.UndefOr[Input[Anon_DestinationArnFormat]] = js.undefined
+  val accessLogSettings: js.UndefOr[Input[StageAccessLogSettings]] = js.undefined
   /**
     * Specifies whether a cache cluster is enabled for the stage
     */
@@ -75,7 +75,7 @@ trait StageState extends js.Object {
 object StageState {
   @scala.inline
   def apply(
-    accessLogSettings: Input[Anon_DestinationArnFormat] = null,
+    accessLogSettings: Input[StageAccessLogSettings] = null,
     cacheClusterEnabled: Input[Boolean] = null,
     cacheClusterSize: Input[String] = null,
     clientCertificateId: Input[String] = null,

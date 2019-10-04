@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-sketchapp
 
-Typings are for version 0.16
+Typings are for version 3.0
 
 ## Library description:
 A React renderer for Sketch.app

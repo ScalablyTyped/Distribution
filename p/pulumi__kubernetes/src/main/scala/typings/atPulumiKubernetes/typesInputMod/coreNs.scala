@@ -44,6 +44,7 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Endpoints
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.EnvFromSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.EnvVar
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.EnvVarSource
+import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.EphemeralContainer
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Event
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.EventSeries
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.EventSource
@@ -74,8 +75,8 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.LocalObjectReference
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.LocalVolumeSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NFSVolumeSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Namespace
+import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NamespaceCondition
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NamespaceSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NamespaceStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Node
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeAddress
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeAffinity
@@ -87,7 +88,6 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeSelector
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeSelectorRequirement
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeSelectorTerm
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.NodeSystemInfo
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ObjectFieldSelector
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ObjectReference
@@ -95,10 +95,8 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolume
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaimCondition
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaimSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaimStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaimVolumeSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PhotonPersistentDiskVolumeSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Pod
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodAffinity
@@ -107,10 +105,10 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodAntiAffinity
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodCondition
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodDNSConfig
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodDNSConfigOption
+import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodIP
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodReadinessGate
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodSecurityContext
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodTemplate
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodTemplateSpec
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PortworxVolumeSource
@@ -123,11 +121,9 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.RBDVolumeSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ReplicationController
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ReplicationControllerCondition
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ReplicationControllerSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ReplicationControllerStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceFieldSelector
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceQuota
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceQuotaSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceQuotaStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceRequirements
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.SELinuxOptions
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ScaleIOPersistentVolumeSource
@@ -146,7 +142,6 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServiceAccount
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServiceAccountTokenProjection
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServicePort
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServiceSpec
-import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServiceStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.SessionAffinityConfig
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.StorageOSPersistentVolumeSource
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.StorageOSVolumeSource
@@ -155,6 +150,7 @@ import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.TCPSocketAction
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Taint
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Toleration
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.TopologySelectorLabelRequirement
+import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.TopologySpreadConstraint
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.TypedLocalObjectReference
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Volume
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.VolumeDevice
@@ -332,19 +328,19 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Binding]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -464,7 +460,7 @@ object coreNs extends js.Object {
     trait CephFSPersistentVolumeSource extends js.Object {
       /**
         * Required: Monitors is a collection of Ceph monitors More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var monitors: Input[js.Array[Input[String]]]
       /**
@@ -473,23 +469,22 @@ object coreNs extends js.Object {
       var path: js.UndefOr[Input[String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
-        * VolumeMounts. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
       /**
         * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret
-        * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var secretFile: js.UndefOr[Input[String]] = js.undefined
       /**
         * Optional: SecretRef is reference to the authentication secret for User, default is empty.
-        * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var secretRef: js.UndefOr[Input[SecretReference]] = js.undefined
       /**
         * Optional: User is the rados user name, default is admin More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var user: js.UndefOr[Input[String]] = js.undefined
     }
@@ -501,7 +496,7 @@ object coreNs extends js.Object {
     trait CephFSVolumeSource extends js.Object {
       /**
         * Required: Monitors is a collection of Ceph monitors More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var monitors: Input[js.Array[Input[String]]]
       /**
@@ -510,23 +505,22 @@ object coreNs extends js.Object {
       var path: js.UndefOr[Input[String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
-        * VolumeMounts. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
       /**
         * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret
-        * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var secretFile: js.UndefOr[Input[String]] = js.undefined
       /**
         * Optional: SecretRef is reference to the authentication secret for User, default is empty.
-        * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
       /**
         * Optional: User is the rados user name, default is admin More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         */
       var user: js.UndefOr[Input[String]] = js.undefined
     }
@@ -540,12 +534,12 @@ object coreNs extends js.Object {
       /**
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More
-        * info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * info: https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var fsType: js.UndefOr[Input[String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
-        * VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
       /**
@@ -553,8 +547,8 @@ object coreNs extends js.Object {
         */
       var secretRef: js.UndefOr[Input[SecretReference]] = js.undefined
       /**
-        * volume id used to identify the volume in cinder More info:
-        * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * volume id used to identify the volume in cinder. More info:
+        * https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var volumeID: Input[String]
     }
@@ -568,12 +562,12 @@ object coreNs extends js.Object {
       /**
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More
-        * info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * info: https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var fsType: js.UndefOr[Input[String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
-        * VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
       /**
@@ -581,8 +575,8 @@ object coreNs extends js.Object {
         */
       var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
       /**
-        * volume id used to identify the volume in cinder More info:
-        * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * volume id used to identify the volume in cinder. More info:
+        * https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var volumeID: Input[String]
     }
@@ -630,7 +624,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -641,12 +635,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ComponentStatus]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     }
@@ -659,7 +653,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -670,12 +664,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ComponentStatusList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -688,7 +682,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -709,12 +703,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ConfigMap]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     }
@@ -764,7 +758,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -775,11 +769,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ConfigMapList]] = js.undefined
       /**
-        * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -969,6 +964,16 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
         */
       var securityContext: js.UndefOr[Input[SecurityContext]] = js.undefined
+      /**
+        * StartupProbe indicates that the Pod has successfully initialized. If specified, no other
+        * probes are executed until this completes successfully. If this probe fails, the Pod will be
+        * restarted, just as if the livenessProbe failed. This can be used to provide different probe
+        * parameters at the beginning of a Pod's lifecycle, when it might take a long time to load
+        * data or warm a cache, than during steady-state operation. This cannot be updated. This is
+        * an alpha feature enabled by the StartupProbe feature flag. More info:
+        * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+        */
+      var startupProbe: js.UndefOr[Input[Probe]] = js.undefined
       /**
         * Whether this container should allocate a buffer for stdin in the container runtime. If this
         * is not set, reads from stdin in the container will always result in EOF. Default is false.
@@ -1182,6 +1187,13 @@ object coreNs extends js.Object {
         */
       var restartCount: Input[Double]
       /**
+        * Specifies whether the container has passed its startup probe. Initialized as false, becomes
+        * true after startupProbe is considered successful. Resets to false when the container is
+        * restarted, or if kubelet loses state temporarily. Is always true when no startupProbe is
+        * defined.
+        */
+      var started: js.UndefOr[Input[Boolean]] = js.undefined
+      /**
         * Details about the container's current condition.
         */
       var state: js.UndefOr[Input[ContainerState]] = js.undefined
@@ -1305,8 +1317,8 @@ object coreNs extends js.Object {
       */
     trait EndpointPort extends js.Object {
       /**
-        * The name of this port (corresponds to ServicePort.Name). Must be a DNS_LABEL. Optional only
-        * if one port is defined.
+        * The name of this port.  This must match the 'name' field in the corresponding ServicePort.
+        * Must be a DNS_LABEL. Optional only if one port is defined.
         */
       var name: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -1367,19 +1379,19 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Endpoints]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -1401,7 +1413,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -1412,12 +1424,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointsList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -1488,6 +1500,153 @@ object coreNs extends js.Object {
     }
     
     /**
+      * An EphemeralContainer is a container that may be added temporarily to an existing pod for
+      * user-initiated activities such as debugging. Ephemeral containers have no resource or
+      * scheduling guarantees, and they will not be restarted when they exit or when a pod is removed
+      * or restarted. If an ephemeral container causes a pod to exceed its resource allocation, the
+      * pod may be evicted. Ephemeral containers may not be added by directly updating the pod spec.
+      * They must be added via the pod's ephemeralcontainers subresource, and they will appear in the
+      * pod spec once added. This is an alpha feature enabled by the EphemeralContainers feature
+      * flag.
+      */
+    trait EphemeralContainer extends js.Object {
+      /**
+        * Arguments to the entrypoint. The docker image's CMD is used if this is not provided.
+        * Variable references $(VAR_NAME) are expanded using the container's environment. If a
+        * variable cannot be resolved, the reference in the input string will be unchanged. The
+        * $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references
+        * will never be expanded, regardless of whether the variable exists or not. Cannot be
+        * updated. More info:
+        * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+        */
+      var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+      /**
+        * Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if
+        * this is not provided. Variable references $(VAR_NAME) are expanded using the container's
+        * environment. If a variable cannot be resolved, the reference in the input string will be
+        * unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME).
+        * Escaped references will never be expanded, regardless of whether the variable exists or
+        * not. Cannot be updated. More info:
+        * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+        */
+      var command: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+      /**
+        * List of environment variables to set in the container. Cannot be updated.
+        */
+      var env: js.UndefOr[Input[js.Array[Input[EnvVar]]]] = js.undefined
+      /**
+        * List of sources to populate environment variables in the container. The keys defined within
+        * a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the
+        * container is starting. When a key exists in multiple sources, the value associated with the
+        * last source will take precedence. Values defined by an Env with a duplicate key will take
+        * precedence. Cannot be updated.
+        */
+      var envFrom: js.UndefOr[Input[js.Array[Input[EnvFromSource]]]] = js.undefined
+      /**
+        * Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images
+        */
+      var image: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is
+        * specified, or IfNotPresent otherwise. Cannot be updated. More info:
+        * https://kubernetes.io/docs/concepts/containers/images#updating-images
+        */
+      var imagePullPolicy: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Lifecycle is not allowed for ephemeral containers.
+        */
+      var lifecycle: js.UndefOr[Input[Lifecycle]] = js.undefined
+      /**
+        * Probes are not allowed for ephemeral containers.
+        */
+      var livenessProbe: js.UndefOr[Input[Probe]] = js.undefined
+      /**
+        * Name of the ephemeral container specified as a DNS_LABEL. This name must be unique among
+        * all containers, init containers and ephemeral containers.
+        */
+      var name: Input[String]
+      /**
+        * Ports are not allowed for ephemeral containers.
+        */
+      var ports: js.UndefOr[Input[js.Array[Input[ContainerPort]]]] = js.undefined
+      /**
+        * Probes are not allowed for ephemeral containers.
+        */
+      var readinessProbe: js.UndefOr[Input[Probe]] = js.undefined
+      /**
+        * Resources are not allowed for ephemeral containers. Ephemeral containers use spare
+        * resources already allocated to the pod.
+        */
+      var resources: js.UndefOr[Input[ResourceRequirements]] = js.undefined
+      /**
+        * SecurityContext is not allowed for ephemeral containers.
+        */
+      var securityContext: js.UndefOr[Input[SecurityContext]] = js.undefined
+      /**
+        * Probes are not allowed for ephemeral containers.
+        */
+      var startupProbe: js.UndefOr[Input[Probe]] = js.undefined
+      /**
+        * Whether this container should allocate a buffer for stdin in the container runtime. If this
+        * is not set, reads from stdin in the container will always result in EOF. Default is false.
+        */
+      var stdin: js.UndefOr[Input[Boolean]] = js.undefined
+      /**
+        * Whether the container runtime should close the stdin channel after it has been opened by a
+        * single attach. When stdin is true the stdin stream will remain open across multiple attach
+        * sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until
+        * the first client attaches to stdin, and then remains open and accepts data until the client
+        * disconnects, at which time stdin is closed and remains closed until the container is
+        * restarted. If this flag is false, a container processes that reads from stdin will never
+        * receive an EOF. Default is false
+        */
+      var stdinOnce: js.UndefOr[Input[Boolean]] = js.undefined
+      /**
+        * If set, the name of the container from PodSpec that this ephemeral container targets. The
+        * ephemeral container will be run in the namespaces (IPC, PID, etc) of this container. If not
+        * set then the ephemeral container is run in whatever namespaces are shared for the pod. Note
+        * that the container runtime must support this feature.
+        */
+      var targetContainerName: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Optional: Path at which the file to which the container's termination message will be
+        * written is mounted into the container's filesystem. Message written is intended to be brief
+        * final status, such as an assertion failure message. Will be truncated by the node if
+        * greater than 4096 bytes. The total message length across all containers will be limited to
+        * 12kb. Defaults to /dev/termination-log. Cannot be updated.
+        */
+      var terminationMessagePath: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Indicate how the termination message should be populated. File will use the contents of
+        * terminationMessagePath to populate the container status message on both success and
+        * failure. FallbackToLogsOnError will use the last chunk of container log output if the
+        * termination message file is empty and the container exited with an error. The log output is
+        * limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be
+        * updated.
+        */
+      var terminationMessagePolicy: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * Whether this container should allocate a TTY for itself, also requires 'stdin' to be true.
+        * Default is false.
+        */
+      var tty: js.UndefOr[Input[Boolean]] = js.undefined
+      /**
+        * volumeDevices is the list of block devices to be used by the container. This is a beta
+        * feature.
+        */
+      var volumeDevices: js.UndefOr[Input[js.Array[Input[VolumeDevice]]]] = js.undefined
+      /**
+        * Pod volumes to mount into the container's filesystem. Cannot be updated.
+        */
+      var volumeMounts: js.UndefOr[Input[js.Array[Input[VolumeMount]]]] = js.undefined
+      /**
+        * Container's working directory. If not specified, the container runtime's default will be
+        * used, which might be configured in the container image. Cannot be updated.
+        */
+      var workingDir: js.UndefOr[Input[String]] = js.undefined
+    }
+    
+    /**
       * Event is a report of an event somewhere in the cluster.
       */
     trait Event extends js.Object {
@@ -1499,7 +1658,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -1522,7 +1681,7 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Event]] = js.undefined
       /**
@@ -1535,7 +1694,7 @@ object coreNs extends js.Object {
       var message: js.UndefOr[Input[String]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: Input[ObjectMeta]
       /**
@@ -1577,7 +1736,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -1588,12 +1747,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EventList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -1820,24 +1979,24 @@ object coreNs extends js.Object {
     trait GlusterfsPersistentVolumeSource extends js.Object {
       /**
         * EndpointsName is the endpoint name that details Glusterfs topology. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var endpoints: Input[String]
       /**
         * EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is
         * empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var endpointsNamespace: js.UndefOr[Input[String]] = js.undefined
       /**
         * Path is the Glusterfs volume path. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var path: Input[String]
       /**
         * ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions.
         * Defaults to false. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
     }
@@ -1849,18 +2008,18 @@ object coreNs extends js.Object {
     trait GlusterfsVolumeSource extends js.Object {
       /**
         * EndpointsName is the endpoint name that details Glusterfs topology. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var endpoints: Input[String]
       /**
         * Path is the Glusterfs volume path. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var path: Input[String]
       /**
         * ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions.
         * Defaults to false. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+        * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
     }
@@ -2110,13 +2269,13 @@ object coreNs extends js.Object {
       var postStart: js.UndefOr[Input[Handler]] = js.undefined
       /**
         * PreStop is called immediately before a container is terminated due to an API request or
-        * management event such as liveness probe failure, preemption, resource contention, etc. The
-        * handler is not called if the container crashes or exits. The reason for termination is
-        * passed to the handler. The Pod's termination grace period countdown begins before the
-        * PreStop hooked is executed. Regardless of the outcome of the handler, the container will
-        * eventually terminate within the Pod's termination grace period. Other management of the
-        * container blocks until the hook completes or until the termination grace period is reached.
-        * More info:
+        * management event such as liveness/startup probe failure, preemption, resource contention,
+        * etc. The handler is not called if the container crashes or exits. The reason for
+        * termination is passed to the handler. The Pod's termination grace period countdown begins
+        * before the PreStop hooked is executed. Regardless of the outcome of the handler, the
+        * container will eventually terminate within the Pod's termination grace period. Other
+        * management of the container blocks until the hook completes or until the termination grace
+        * period is reached. More info:
         * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
         */
       var preStop: js.UndefOr[Input[Handler]] = js.undefined
@@ -2130,24 +2289,24 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.LimitRange]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the limits enforced. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[LimitRangeSpec]] = js.undefined
     }
@@ -2193,7 +2352,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -2205,12 +2364,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.LimitRangeList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -2312,31 +2471,43 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Namespace]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the behavior of the Namespace. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[NamespaceSpec]] = js.undefined
+    }
+    
+    /**
+      * NamespaceCondition contains details about state of namespace.
+      */
+    trait NamespaceCondition extends js.Object {
+      var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
+      var message: js.UndefOr[Input[String]] = js.undefined
+      var reason: js.UndefOr[Input[String]] = js.undefined
       /**
-        * Status describes the current status of a Namespace. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * Status of the condition, one of True, False, Unknown.
         */
-      var status: js.UndefOr[Input[NamespaceStatus]] = js.undefined
+      var status: Input[String]
+      /**
+        * Type of namespace controller condition.
+        */
+      var `type`: Input[String]
     }
     
     /**
@@ -2347,7 +2518,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -2359,12 +2530,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.NamespaceList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -2385,6 +2556,10 @@ object coreNs extends js.Object {
       */
     trait NamespaceStatus extends js.Object {
       /**
+        * Represents the latest available observations of a namespace's current state.
+        */
+      var conditions: js.UndefOr[Input[js.Array[Input[NamespaceCondition]]]] = js.undefined
+      /**
         * Phase is the current lifecycle phase of the namespace. More info:
         * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
         */
@@ -2400,31 +2575,26 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Node]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the behavior of a node.
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[NodeSpec]] = js.undefined
-      /**
-        * Most recently observed status of the node. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[NodeStatus]] = js.undefined
     }
     
     /**
@@ -2573,7 +2743,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -2584,12 +2754,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.NodeList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -2663,6 +2833,12 @@ object coreNs extends js.Object {
         */
       var podCIDR: js.UndefOr[Input[String]] = js.undefined
       /**
+        * podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If
+        * this field is specified, the 0th entry must match the podCIDR field. It may contain at most
+        * 1 value for each of IPv4 and IPv6.
+        */
+      var podCIDRs: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+      /**
         * ID of the node assigned by the cloud provider in the format:
         * <ProviderName>://<ProviderSpecificNodeID>
         */
@@ -2684,7 +2860,10 @@ object coreNs extends js.Object {
     trait NodeStatus extends js.Object {
       /**
         * List of addresses reachable to the node. Queried from cloud provider, if available. More
-        * info: https://kubernetes.io/docs/concepts/nodes/node/#addresses
+        * info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is
+        * declared as mergeable, but the merge key is not sufficiently unique, which can cause data
+        * corruption when it is merged. Callers should instead use a full-replacement patch. See
+        * http://pr.k8s.io/79391 for an example.
         */
       var addresses: js.UndefOr[Input[js.Array[Input[NodeAddress]]]] = js.undefined
       /**
@@ -2820,7 +2999,7 @@ object coreNs extends js.Object {
       var fieldPath: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind of the referent. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -2835,7 +3014,7 @@ object coreNs extends js.Object {
       var namespace: js.UndefOr[Input[String]] = js.undefined
       /**
         * Specific resourceVersion to which this reference is made, if any. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
         */
       var resourceVersion: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -2854,19 +3033,19 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PersistentVolume]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -2875,12 +3054,6 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
         */
       var spec: js.UndefOr[Input[PersistentVolumeSpec]] = js.undefined
-      /**
-        * Status represents the current information/status for the persistent volume. Populated by
-        * the system. Read-only. More info:
-        * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
-        */
-      var status: js.UndefOr[Input[PersistentVolumeStatus]] = js.undefined
     }
     
     /**
@@ -2891,21 +3064,21 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PersistentVolumeClaim]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -2913,12 +3086,6 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
       var spec: js.UndefOr[Input[PersistentVolumeClaimSpec]] = js.undefined
-      /**
-        * Status represents the current information/status of a persistent volume claim. Read-only.
-        * More info:
-        * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
-        */
-      var status: js.UndefOr[Input[PersistentVolumeClaimStatus]] = js.undefined
     }
     
     /**
@@ -2955,7 +3122,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -2967,14 +3134,14 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PersistentVolumeClaimList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -3074,7 +3241,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -3086,12 +3253,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PersistentVolumeList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -3129,8 +3296,8 @@ object coreNs extends js.Object {
         */
       var cephfs: js.UndefOr[Input[CephFSPersistentVolumeSource]] = js.undefined
       /**
-        * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
-        * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info:
+        * https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var cinder: js.UndefOr[Input[CinderPersistentVolumeSource]] = js.undefined
       /**
@@ -3167,8 +3334,7 @@ object coreNs extends js.Object {
       var gcePersistentDisk: js.UndefOr[Input[GCEPersistentDiskVolumeSource]] = js.undefined
       /**
         * Glusterfs represents a Glusterfs volume that is attached to a host and exposed to the pod.
-        * Provisioned by an admin. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
+        * Provisioned by an admin. More info: https://examples.k8s.io/volumes/glusterfs/README.md
         */
       var glusterfs: js.UndefOr[Input[GlusterfsPersistentVolumeSource]] = js.undefined
       /**
@@ -3226,7 +3392,7 @@ object coreNs extends js.Object {
       var quobyte: js.UndefOr[Input[QuobyteVolumeSource]] = js.undefined
       /**
         * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
-        * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
+        * info: https://examples.k8s.io/volumes/rbd/README.md
         */
       var rbd: js.UndefOr[Input[RBDPersistentVolumeSource]] = js.undefined
       /**
@@ -3240,8 +3406,7 @@ object coreNs extends js.Object {
       var storageClassName: js.UndefOr[Input[String]] = js.undefined
       /**
         * StorageOS represents a StorageOS volume that is attached to the kubelet's host machine and
-        * mounted into the pod More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/storageos/README.md
+        * mounted into the pod More info: https://examples.k8s.io/volumes/storageos/README.md
         */
       var storageos: js.UndefOr[Input[StorageOSPersistentVolumeSource]] = js.undefined
       /**
@@ -3300,32 +3465,26 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Pod]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of the pod. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[PodSpec]] = js.undefined
-      /**
-        * Most recently observed status of the pod. This data may not be up to date. Populated by the
-        * system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[PodStatus]] = js.undefined
     }
     
     /**
@@ -3472,6 +3631,17 @@ object coreNs extends js.Object {
     }
     
     /**
+      * IP address information for entries in the (plural) PodIPs field. Each entry includes:
+      *    IP: An IP address allocated to the pod. Routable at least within the cluster.
+      */
+    trait PodIP extends js.Object {
+      /**
+        * ip is an IP address (IPv4 or IPv6) assigned to the pod
+        */
+      var ip: js.UndefOr[Input[String]] = js.undefined
+    }
+    
+    /**
       * PodList is a list of Pods.
       */
     trait PodList extends js.Object {
@@ -3479,23 +3649,24 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
-        * List of pods. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md
+        * List of pods. More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md
         */
       var items: Input[js.Array[Input[Pod]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -3565,7 +3736,9 @@ object coreNs extends js.Object {
         */
       var sysctls: js.UndefOr[Input[js.Array[Input[Sysctl]]]] = js.undefined
       /**
-        * Windows security options.
+        * The Windows specific settings applied to all containers. If unspecified, the options within
+        * a container's SecurityContext will be used. If set in both SecurityContext and
+        * PodSecurityContext, the value specified in SecurityContext takes precedence.
         */
       var windowsOptions: js.UndefOr[Input[WindowsSecurityContextOptions]] = js.undefined
     }
@@ -3614,6 +3787,15 @@ object coreNs extends js.Object {
         */
       var enableServiceLinks: js.UndefOr[Input[Boolean]] = js.undefined
       /**
+        * List of ephemeral containers run in this pod. Ephemeral containers may be run in an
+        * existing pod to perform user-initiated actions such as debugging. This list cannot be
+        * specified when creating a pod, and it cannot be modified by updating the pod spec. In order
+        * to add an ephemeral container to an existing pod, use the pod's ephemeralcontainers
+        * subresource. This field is alpha-level and is only honored by servers that enable the
+        * EphemeralContainers feature.
+        */
+      var ephemeralContainers: js.UndefOr[Input[js.Array[Input[EphemeralContainer]]]] = js.undefined
+      /**
         * HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts
         * file if specified. This is only valid for non-hostNetwork pods.
         */
@@ -3649,12 +3831,12 @@ object coreNs extends js.Object {
         * order prior to containers being started. If any init container fails, the pod is considered
         * to have failed and is handled according to its restartPolicy. The name for an init
         * container or normal container must be unique among all containers. Init containers may not
-        * have Lifecycle actions, Readiness probes, or Liveness probes. The resourceRequirements of
-        * an init container are taken into account during scheduling by finding the highest
-        * request/limit for each resource type, and then using the max of of that value or the sum of
-        * the normal containers. Limits are applied to init containers in a similar fashion. Init
-        * containers cannot currently be added or removed. Cannot be updated. More info:
-        * https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
+        * have Lifecycle actions, Readiness probes, Liveness probes, or Startup probes. The
+        * resourceRequirements of an init container are taken into account during scheduling by
+        * finding the highest request/limit for each resource type, and then using the max of of that
+        * value or the sum of the normal containers. Limits are applied to init containers in a
+        * similar fashion. Init containers cannot currently be added or removed. Cannot be updated.
+        * More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
         */
       var initContainers: js.UndefOr[Input[js.Array[Input[Container]]]] = js.undefined
       /**
@@ -3669,6 +3851,19 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
         */
       var nodeSelector: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+      /**
+        * Overhead represents the resource overhead associated with running a pod for a given
+        * RuntimeClass. This field will be autopopulated at admission time by the RuntimeClass
+        * admission controller. If the RuntimeClass admission controller is enabled, overhead must
+        * not be set in Pod create requests. The RuntimeClass admission controller will reject Pod
+        * create requests which have the overhead already set. If RuntimeClass is configured and
+        * selected in the PodSpec, Overhead will be set to the value defined in the corresponding
+        * RuntimeClass, otherwise it will remain unset and treated as zero. More info:
+        * https://git.k8s.io/enhancements/keps/sig-node/20190226-pod-overhead.md This field is
+        * alpha-level as of Kubernetes v1.16, and is only honored by servers that enable the
+        * PodOverhead feature.
+        */
+      var overhead: js.UndefOr[Input[js.Object]] = js.undefined
       /**
         * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never,
         * PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level
@@ -3761,6 +3956,13 @@ object coreNs extends js.Object {
         */
       var tolerations: js.UndefOr[Input[js.Array[Input[Toleration]]]] = js.undefined
       /**
+        * TopologySpreadConstraints describes how a group of pods ought to spread across topology
+        * domains. Scheduler will schedule pods in a way which abides by the constraints. This field
+        * is alpha-level and is only honored by clusters that enables the EvenPodsSpread feature. All
+        * topologySpreadConstraints are ANDed.
+        */
+      var topologySpreadConstraints: js.UndefOr[Input[js.Array[Input[TopologySpreadConstraint]]]] = js.undefined
+      /**
         * List of volumes that can be mounted by containers belonging to the pod. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes
         */
@@ -3783,6 +3985,11 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-and-container-status
         */
       var containerStatuses: js.UndefOr[Input[js.Array[Input[ContainerStatus]]]] = js.undefined
+      /**
+        * Status for any ephemeral containers that have run in this pod. This field is alpha-level
+        * and is only populated by servers that enable the EphemeralContainers feature.
+        */
+      var ephemeralContainerStatuses: js.UndefOr[Input[js.Array[Input[ContainerStatus]]]] = js.undefined
       /**
         * IP address of the host to which the pod is assigned. Empty if not yet scheduled.
         */
@@ -3833,6 +4040,12 @@ object coreNs extends js.Object {
         */
       var podIP: js.UndefOr[Input[String]] = js.undefined
       /**
+        * podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th
+        * entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4
+        * and IPv6. This list is empty if no IPs have been allocated yet.
+        */
+      var podIPs: js.UndefOr[Input[js.Array[Input[PodIP]]]] = js.undefined
+      /**
         * The Quality of Service (QOS) classification assigned to the pod based on resource
         * requirements See PodQOSClass type for available QOS classes More info:
         * https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md
@@ -3858,24 +4071,24 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodTemplate]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Template defines the pods that will be created from this pod template.
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var template: js.UndefOr[Input[PodTemplateSpec]] = js.undefined
     }
@@ -3888,7 +4101,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -3899,12 +4112,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodTemplateList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -3915,12 +4128,12 @@ object coreNs extends js.Object {
     trait PodTemplateSpec extends js.Object {
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Specification of the desired behavior of the pod. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[PodSpec]] = js.undefined
     }
@@ -3990,7 +4203,7 @@ object coreNs extends js.Object {
       var periodSeconds: js.UndefOr[Input[Double]] = js.undefined
       /**
         * Minimum consecutive successes for the probe to be considered successful after having
-        * failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.
+        * failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
         */
       var successThreshold: js.UndefOr[Input[Double]] = js.undefined
       /**
@@ -4071,38 +4284,37 @@ object coreNs extends js.Object {
       var fsType: js.UndefOr[Input[String]] = js.undefined
       /**
         * The rados image name. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var image: Input[String]
       /**
         * Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var keyring: js.UndefOr[Input[String]] = js.undefined
       /**
         * A collection of Ceph monitors. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var monitors: Input[js.Array[Input[String]]]
       /**
         * The rados pool name. Default is rbd. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var pool: js.UndefOr[Input[String]] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More
-        * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
       /**
         * SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring.
-        * Default is nil. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var secretRef: js.UndefOr[Input[SecretReference]] = js.undefined
       /**
         * The rados user name. Default is admin. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var user: js.UndefOr[Input[String]] = js.undefined
     }
@@ -4121,38 +4333,37 @@ object coreNs extends js.Object {
       var fsType: js.UndefOr[Input[String]] = js.undefined
       /**
         * The rados image name. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var image: Input[String]
       /**
         * Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var keyring: js.UndefOr[Input[String]] = js.undefined
       /**
         * A collection of Ceph monitors. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var monitors: Input[js.Array[Input[String]]]
       /**
         * The rados pool name. Default is rbd. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var pool: js.UndefOr[Input[String]] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More
-        * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
       /**
         * SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring.
-        * Default is nil. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
       /**
         * The rados user name. Default is admin. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+        * https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         */
       var user: js.UndefOr[Input[String]] = js.undefined
     }
@@ -4165,14 +4376,14 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicationController]
@@ -4180,20 +4391,15 @@ object coreNs extends js.Object {
       /**
         * If the Labels of a ReplicationController are empty, they are defaulted to be the same as
         * the Pod(s) that the replication controller manages. Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the replication controller. More
-        * info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[ReplicationControllerSpec]] = js.undefined
-      /**
-        * Status is the most recently observed status of the replication controller. This data may be
-        * out of date by some window of time. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[ReplicationControllerStatus]] = js.undefined
     }
     
     /**
@@ -4231,7 +4437,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -4243,14 +4449,14 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicationControllerList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -4347,31 +4553,26 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ResourceQuota]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the desired quota.
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[ResourceQuotaSpec]] = js.undefined
-      /**
-        * Status defines the actual enforced quota and its current usage.
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[ResourceQuotaStatus]] = js.undefined
     }
     
     /**
@@ -4382,7 +4583,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -4394,12 +4595,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ResourceQuotaList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -4626,7 +4827,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -4640,12 +4841,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Secret]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -4705,7 +4906,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -4717,12 +4918,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.SecretList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -4867,7 +5068,9 @@ object coreNs extends js.Object {
         */
       var seLinuxOptions: js.UndefOr[Input[SELinuxOptions]] = js.undefined
       /**
-        * Windows security options.
+        * The Windows specific settings applied to all containers. If unspecified, the options from
+        * the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext,
+        * the value specified in SecurityContext takes precedence.
         */
       var windowsOptions: js.UndefOr[Input[WindowsSecurityContextOptions]] = js.undefined
     }
@@ -4882,31 +5085,26 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Service]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the behavior of a service.
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[ServiceSpec]] = js.undefined
-      /**
-        * Most recently observed status of the service. Populated by the system. Read-only. More
-        * info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[ServiceStatus]] = js.undefined
     }
     
     /**
@@ -4919,7 +5117,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -4939,12 +5137,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ServiceAccount]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -4962,7 +5160,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -4974,12 +5172,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ServiceAccountList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -5018,7 +5216,7 @@ object coreNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[v1]] = js.undefined
       /**
@@ -5029,12 +5227,12 @@ object coreNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ServiceList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -5045,8 +5243,9 @@ object coreNs extends js.Object {
     trait ServicePort extends js.Object {
       /**
         * The name of this port within the service. This must be a DNS_LABEL. All ports within a
-        * ServiceSpec must have unique names. This maps to the 'Name' field in EndpointPort objects.
-        * Optional if only one ServicePort is defined on this service.
+        * ServiceSpec must have unique names. When considering the endpoints for a Service, this must
+        * match the 'name' field in the EndpointPort. Optional if only one ServicePort is defined on
+        * this service.
         */
       var name: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -5118,6 +5317,18 @@ object coreNs extends js.Object {
         * to LoadBalancer and ExternalTrafficPolicy is set to Local.
         */
       var healthCheckNodePort: js.UndefOr[Input[Double]] = js.undefined
+      /**
+        * ipFamily specifies whether this Service has a preference for a particular IP family (e.g.
+        * IPv4 vs. IPv6).  If a specific IP family is requested, the clusterIP field will be
+        * allocated from that family, if it is available in the cluster.  If no IP family is
+        * requested, the cluster's primary IP family will be used. Other IP fields (loadBalancerIP,
+        * loadBalancerSourceRanges, externalIPs) and controllers which allocate external
+        * load-balancers should use the same IP family.  Endpoints for this Service will be of this
+        * family.  This field is immutable after creation. Assigning a ServiceIPFamily not available
+        * in the cluster (e.g. IPv6 in IPv4 only cluster) is an error condition and will fail during
+        * clusterIP assignment.
+        */
+      var ipFamily: js.UndefOr[Input[String]] = js.undefined
       /**
         * Only applies to Service Type: LoadBalancer LoadBalancer will get created with the IP
         * specified in this field. This feature depends on whether the underlying cloud-provider
@@ -5385,6 +5596,46 @@ object coreNs extends js.Object {
     }
     
     /**
+      * TopologySpreadConstraint specifies how to spread matching pods among the given topology.
+      */
+    trait TopologySpreadConstraint extends js.Object {
+      /**
+        * LabelSelector is used to find matching pods. Pods that match this label selector are
+        * counted to determine the number of pods in their corresponding topology domain.
+        */
+      var labelSelector: js.UndefOr[Input[LabelSelector]] = js.undefined
+      /**
+        * MaxSkew describes the degree to which pods may be unevenly distributed. It's the maximum
+        * permitted difference between the number of matching pods in any two topology domains of a
+        * given topology type. For example, in a 3-zone cluster, MaxSkew is set to 1, and pods with
+        * the same labelSelector spread as 1/1/0: | zone1 | zone2 | zone3 | |   P   |   P   |       |
+        * - if MaxSkew is 1, incoming pod can only be scheduled to zone3 to become 1/1/1; scheduling
+        * it onto zone1(zone2) would make the ActualSkew(2-0) on zone1(zone2) violate MaxSkew(1). -
+        * if MaxSkew is 2, incoming pod can be scheduled onto any zone. It's a required field.
+        * Default value is 1 and 0 is not allowed.
+        */
+      var maxSkew: Input[Double]
+      /**
+        * TopologyKey is the key of node labels. Nodes that have a label with this key and identical
+        * values are considered to be in the same topology. We consider each <key, value> as a
+        * "bucket", and try to put balanced number of pods into each bucket. It's a required field.
+        */
+      var topologyKey: Input[String]
+      /**
+        * WhenUnsatisfiable indicates how to deal with a pod if it doesn't satisfy the spread
+        * constraint. - DoNotSchedule (default) tells the scheduler not to schedule it -
+        * ScheduleAnyway tells the scheduler to still schedule it It's considered as "Unsatisfiable"
+        * if and only if placing incoming pod on any topology violates "MaxSkew". For example, in a
+        * 3-zone cluster, MaxSkew is set to 1, and pods with the same labelSelector spread as 3/1/1:
+        * | zone1 | zone2 | zone3 | | P P P |   P   |   P   | If WhenUnsatisfiable is set to
+        * DoNotSchedule, incoming pod can only be scheduled to zone2(zone3) to become 3/2/1(3/1/2) as
+        * ActualSkew(2-1) on zone2(zone3) satisfies MaxSkew(1). In other words, the cluster can still
+        * be imbalanced, but scheduler won't make it *more* imbalanced. It's a required field.
+        */
+      var whenUnsatisfiable: Input[String]
+    }
+    
+    /**
       * TypedLocalObjectReference contains enough information to let you locate the typed referenced
       * object inside the same namespace.
       */
@@ -5428,8 +5679,8 @@ object coreNs extends js.Object {
         */
       var cephfs: js.UndefOr[Input[CephFSVolumeSource]] = js.undefined
       /**
-        * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
-        * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+        * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info:
+        * https://examples.k8s.io/mysql-cinder-pd/README.md
         */
       var cinder: js.UndefOr[Input[CinderVolumeSource]] = js.undefined
       /**
@@ -5480,7 +5731,7 @@ object coreNs extends js.Object {
       var gitRepo: js.UndefOr[Input[GitRepoVolumeSource]] = js.undefined
       /**
         * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
+        * https://examples.k8s.io/volumes/glusterfs/README.md
         */
       var glusterfs: js.UndefOr[Input[GlusterfsVolumeSource]] = js.undefined
       /**
@@ -5492,8 +5743,7 @@ object coreNs extends js.Object {
       var hostPath: js.UndefOr[Input[HostPathVolumeSource]] = js.undefined
       /**
         * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and
-        * then exposed to the pod. More info:
-        * https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md
+        * then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
         */
       var iscsi: js.UndefOr[Input[ISCSIVolumeSource]] = js.undefined
       /**
@@ -5531,7 +5781,7 @@ object coreNs extends js.Object {
       var quobyte: js.UndefOr[Input[QuobyteVolumeSource]] = js.undefined
       /**
         * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
-        * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
+        * info: https://examples.k8s.io/volumes/rbd/README.md
         */
       var rbd: js.UndefOr[Input[RBDVolumeSource]] = js.undefined
       /**
@@ -5689,6 +5939,14 @@ object coreNs extends js.Object {
         * alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
         */
       var gmsaCredentialSpecName: js.UndefOr[Input[String]] = js.undefined
+      /**
+        * The UserName in Windows to run the entrypoint of the container process. Defaults to the
+        * user specified in image metadata if unspecified. May also be set in PodSecurityContext. If
+        * set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+        * takes precedence. This field is alpha-level and it is only honored by servers that enable
+        * the WindowsRunAsUserName feature flag.
+        */
+      var runAsUserName: js.UndefOr[Input[String]] = js.undefined
     }
     
     def isBinding(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.core.v1.Binding */ Boolean = js.native

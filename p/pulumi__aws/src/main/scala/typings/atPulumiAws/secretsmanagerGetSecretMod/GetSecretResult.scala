@@ -1,7 +1,7 @@
 package typings.atPulumiAws.secretsmanagerGetSecretMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AutomaticallyAfterDays
+import typings.atPulumiAws.typesOutputMod.secretsmanagerNs.GetSecretRotationRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ trait GetSecretResult extends js.Object {
   /**
     * Rotation rules if rotation is enabled.
     */
-  val rotationRules: js.Array[Anon_AutomaticallyAfterDays]
+  val rotationRules: js.Array[GetSecretRotationRule]
   /**
     * Tags of the secret.
     */
@@ -57,7 +57,7 @@ object GetSecretResult {
     policy: String,
     rotationEnabled: Boolean,
     rotationLambdaArn: String,
-    rotationRules: js.Array[Anon_AutomaticallyAfterDays],
+    rotationRules: js.Array[GetSecretRotationRule],
     tags: StringDictionary[js.Any]
   ): GetSecretResult = {
     val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, kmsKeyId = kmsKeyId, name = name, policy = policy, rotationEnabled = rotationEnabled, rotationLambdaArn = rotationLambdaArn, rotationRules = rotationRules, tags = tags)

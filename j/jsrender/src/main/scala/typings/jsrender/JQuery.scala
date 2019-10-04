@@ -12,17 +12,17 @@ trait JQuery extends js.Object {
   @JSName("render")
   var render_Original: TemplateRender = js.native
   /**
-    * Template render method: render the template as a string, using the specified data and helpers/context
-    * var htmlString = template(data, myHelpersObject);
-    * var htmlString = template.render(data, myHelpersObject);
-    *
-    * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
-    *
-    * @param {any}        data
-    * @param {hash}       [helpersOrContext]
-    * @param {boolean}    [noIteration]
-    * @returns {string}   rendered template
-    */
+  	 * Template render method: render the template as a string, using the specified data and helpers/context
+  	 * var htmlString = template(data, myHelpersObject);
+  	 * var htmlString = template.render(data, myHelpersObject);
+  	 *
+  	 * $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
+  	 *
+  	 * @param {any}        data
+  	 * @param {hash}       [helpersOrContext]
+  	 * @param {boolean}    [noIteration]
+  	 * @returns {string}   rendered template
+  	 */
   /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
   def render(): String = js.native
   def render(data: js.Any): String = js.native

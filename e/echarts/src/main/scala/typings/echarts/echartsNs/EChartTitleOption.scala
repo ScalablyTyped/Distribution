@@ -1,5 +1,6 @@
 package typings.echarts.echartsNs
 
+import typings.echarts.echartsNs.EChartOptionNs.TextStyleWithRich
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +24,11 @@ trait EChartTitleOption extends js.Object {
   var sublink: js.UndefOr[String] = js.undefined
   var subtarget: js.UndefOr[String] = js.undefined
   var subtext: js.UndefOr[String] = js.undefined
-  var subtextStyle: js.UndefOr[js.Object] = js.undefined
+  var subtextStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   var target: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
   var textAlign: js.UndefOr[String] = js.undefined
-  var textStyle: js.UndefOr[js.Object] = js.undefined
+  var textStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   var textVerticalAlign: js.UndefOr[String] = js.undefined
   var top: js.UndefOr[String | Double] = js.undefined
   var triggerEvent: js.UndefOr[Boolean] = js.undefined
@@ -56,11 +57,11 @@ object EChartTitleOption {
     sublink: String = null,
     subtarget: String = null,
     subtext: String = null,
-    subtextStyle: js.Object = null,
+    subtextStyle: TextStyleWithRich = null,
     target: String = null,
     text: String = null,
     textAlign: String = null,
-    textStyle: js.Object = null,
+    textStyle: TextStyleWithRich = null,
     textVerticalAlign: String = null,
     top: String | Double = null,
     triggerEvent: js.UndefOr[Boolean] = js.undefined,

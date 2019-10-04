@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3InventoryMod
 
-import typings.atPulumiAws.Anon_BucketAnonAccountIdBucketArn
-import typings.atPulumiAws.Anon_FrequencyInput
-import typings.atPulumiAws.Anon_PrefixInputString
+import typings.atPulumiAws.typesInputMod.s3Ns.InventoryDestination
+import typings.atPulumiAws.typesInputMod.s3Ns.InventoryFilter
+import typings.atPulumiAws.typesInputMod.s3Ns.InventorySchedule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait InventoryArgs extends js.Object {
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: Input[Anon_BucketAnonAccountIdBucketArn]
+  val destination: Input[InventoryDestination]
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
@@ -24,7 +24,7 @@ trait InventoryArgs extends js.Object {
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: js.UndefOr[Input[Anon_PrefixInputString]] = js.undefined
+  val filter: js.UndefOr[Input[InventoryFilter]] = js.undefined
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
@@ -40,18 +40,18 @@ trait InventoryArgs extends js.Object {
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: Input[Anon_FrequencyInput]
+  val schedule: Input[InventorySchedule]
 }
 
 object InventoryArgs {
   @scala.inline
   def apply(
     bucket: Input[String],
-    destination: Input[Anon_BucketAnonAccountIdBucketArn],
+    destination: Input[InventoryDestination],
     includedObjectVersions: Input[String],
-    schedule: Input[Anon_FrequencyInput],
+    schedule: Input[InventorySchedule],
     enabled: Input[Boolean] = null,
-    filter: Input[Anon_PrefixInputString] = null,
+    filter: Input[InventoryFilter] = null,
     name: Input[String] = null,
     optionalFields: Input[js.Array[Input[String]]] = null
   ): InventoryArgs = {

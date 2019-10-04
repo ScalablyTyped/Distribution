@@ -78,14 +78,14 @@ trait ParagraphLoadOptions extends js.Object {
   var lineUnitBefore: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
+    * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.
     *
     * [Api set: WordApi 1.3]
     */
   var list: js.UndefOr[ListLoadOptions] = js.undefined
   /**
     *
-    * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
     *
     * [Api set: WordApi 1.3]
     */
@@ -120,7 +120,7 @@ trait ParagraphLoadOptions extends js.Object {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   /**
     *
-    * Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+    * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
     *
     * [Api set: WordApi 1.1]
     */
@@ -134,14 +134,14 @@ trait ParagraphLoadOptions extends js.Object {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   /**
     *
-    * Gets the table that contains the paragraph. Throws if it is not contained in a table.
+    * Gets the table that contains the paragraph. Throws an error if it is not contained in a table.
     *
     * [Api set: WordApi 1.3]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   /**
     *
-    * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
+    * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
     *
     * [Api set: WordApi 1.3]
     */

@@ -1,7 +1,6 @@
 package typings.three.srcCoreDirectGeometryMod
 
 import typings.three.Anon_MaterialIndex
-import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcCoreGeometryMod.Geometry
 import typings.three.srcCoreGeometryMod.MorphTarget
 import typings.three.srcMathBox3Mod.Box3
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three/src/core/DirectGeometry", "DirectGeometry")
 @js.native
-class DirectGeometry () extends EventDispatcher {
+class DirectGeometry () extends js.Object {
   var boundingBox: Box3 = js.native
   var boundingSphere: Sphere = js.native
   var colors: js.Array[Color] = js.native

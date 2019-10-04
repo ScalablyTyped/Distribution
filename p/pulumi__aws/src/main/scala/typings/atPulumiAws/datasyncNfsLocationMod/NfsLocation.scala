@@ -1,7 +1,7 @@
 package typings.atPulumiAws.datasyncNfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AgentArns
+import typings.atPulumiAws.typesOutputMod.datasyncNs.NfsLocationOnPremConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class NfsLocation protected () extends CustomResource {
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: Output[Anon_AgentArns] = js.native
+  val onPremConfig: Output[NfsLocationOnPremConfig] = js.native
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */

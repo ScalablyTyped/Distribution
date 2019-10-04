@@ -1,5 +1,11 @@
 package typings.adone.adoneNs.utilNs.INs.fakeClockNs
 
+import typings.adone.Fn_ArgsCallback
+import typings.adone.Fn_ArgsCallbackAny
+import typings.adone.Fn_ImmediateId
+import typings.adone.Fn_IntervalId
+import typings.adone.Fn_String
+import typings.adone.Fn_TimeoutId
 import typings.node.NodeJSNs.Immediate
 import typings.node.NodeJSNs.Process
 import typings.node.NodeJSNs.Timeout
@@ -11,35 +17,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Timers extends js.Object {
   @JSName("Date")
-  var Date_Original: js.Function0[String] with DateConstructor = js.native
+  var Date_Original: Fn_String with DateConstructor = js.native
   @JSName("clearImmediate")
-  var clearImmediate_Original: js.Function1[/* immediateId */ Immediate, Unit] = js.native
+  var clearImmediate_Original: Fn_ImmediateId = js.native
   @JSName("clearInterval")
-  var clearInterval_Original: js.Function1[/* intervalId */ Timeout, Unit] = js.native
+  var clearInterval_Original: Fn_IntervalId = js.native
   @JSName("clearTimeout")
-  var clearTimeout_Original: js.Function1[/* timeoutId */ Timeout, Unit] = js.native
+  var clearTimeout_Original: Fn_TimeoutId = js.native
   var hrtime: Process = js.native
   var nextTick: Process = js.native
   @JSName("setImmediate")
-  var setImmediate_Original: js.Function2[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* repeated */ js.Any, 
-    Immediate
-  ] = js.native
+  var setImmediate_Original: Fn_ArgsCallbackAny = js.native
   @JSName("setInterval")
-  var setInterval_Original: js.Function3[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* ms */ Double, 
-    /* repeated */ js.Any, 
-    Timeout
-  ] = js.native
+  var setInterval_Original: Fn_ArgsCallback = js.native
   @JSName("setTimeout")
-  var setTimeout_Original: js.Function3[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* ms */ Double, 
-    /* repeated */ js.Any, 
-    Timeout
-  ] = js.native
+  var setTimeout_Original: Fn_ArgsCallback = js.native
   def Date(): String = js.native
   def clearImmediate(immediateId: Immediate): Unit = js.native
   def clearInterval(intervalId: Timeout): Unit = js.native

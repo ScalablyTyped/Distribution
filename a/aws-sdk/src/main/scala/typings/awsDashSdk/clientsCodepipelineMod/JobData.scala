@@ -18,7 +18,7 @@ trait JobData extends js.Object {
     */
   var artifactCredentials: js.UndefOr[AWSSessionCredentials] = js.undefined
   /**
-    * A system-generated token, such as a AWS CodeDeploy deployment ID, that a job requires in order to continue the job asynchronously.
+    * A system-generated token, such as a AWS CodeDeploy deployment ID, required by a job to continue the job asynchronously.
     */
   var continuationToken: js.UndefOr[ContinuationToken] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait JobData extends js.Object {
     */
   var outputArtifacts: js.UndefOr[ArtifactList] = js.undefined
   /**
-    * Represents information about a pipeline to a job worker.  Includes pipelineArn and pipelineExecutionId for Custom jobs. 
+    * Represents information about a pipeline to a job worker.  Includes pipelineArn and pipelineExecutionId for custom jobs. 
     */
   var pipelineContext: js.UndefOr[PipelineContext] = js.undefined
 }

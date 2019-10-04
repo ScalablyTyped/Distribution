@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ElementHandle[E /* <: Element */]
-  extends JSHandle
+  extends JSHandle[E]
      with Evalable {
   /**
     * The method runs element.querySelector within the page.
@@ -84,6 +84,14 @@ trait ElementHandle[E /* <: Element */]
   def screenshot(options: Base64ScreenShotOptions): js.Promise[String] = js.native
   def screenshot(options: BinaryScreenShotOptions): js.Promise[Buffer] = js.native
   def screenshot(options: ScreenshotOptions): js.Promise[String | Buffer] = js.native
+  /**
+    * Triggers a change and input event once all the provided options have been selected. If there's no <select> element
+    * matching selector, the method throws an error.
+    * @param values Values of options to select. If the <select> has the multiple attribute, all values are considered, otherwise only the first one is taken into account.
+    * @returns An array of option values that have been successfully selected.
+    * @since 1.12.0
+    */
+  def select(values: String*): js.Promise[js.Array[String]] = js.native
   /**
     * This method scrolls element into view if needed, and then uses touchscreen.tap to tap in the center of the element.
     * If the element is detached from DOM, the method throws an error.

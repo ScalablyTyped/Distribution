@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DataFramePutDataFrameTransform[T] extends Generic {
   var body: T
+  var defer_validation: js.UndefOr[Boolean] = js.undefined
   var transform_id: String
 }
 
@@ -14,6 +15,7 @@ object DataFramePutDataFrameTransform {
   def apply[T](
     body: T,
     transform_id: String,
+    defer_validation: js.UndefOr[Boolean] = js.undefined,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
@@ -23,6 +25,7 @@ object DataFramePutDataFrameTransform {
     source: String = null
   ): DataFramePutDataFrameTransform[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], transform_id = transform_id)
+    if (!js.isUndefined(defer_validation)) __obj.updateDynamic("defer_validation")(defer_validation)
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)

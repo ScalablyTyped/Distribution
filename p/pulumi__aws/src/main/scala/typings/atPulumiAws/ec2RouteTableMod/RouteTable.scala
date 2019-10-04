@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2RouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlock
+import typings.atPulumiAws.typesOutputMod.ec2Ns.RouteTableRoute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -24,7 +24,7 @@ class RouteTable protected () extends CustomResource {
   def this(name: String, args: RouteTableArgs) = this()
   def this(name: String, args: RouteTableArgs, opts: CustomResourceOptions) = this()
   /**
-    * The ID of the AWS account that owns the route table
+    * The ID of the AWS account that owns the route table.
     */
   val ownerId: Output[String] = js.native
   /**
@@ -34,7 +34,7 @@ class RouteTable protected () extends CustomResource {
   /**
     * A list of route objects. Their keys are documented below. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val routes: Output[js.Array[Anon_CidrBlock]] = js.native
+  val routes: Output[js.Array[RouteTableRoute]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

@@ -145,8 +145,8 @@ class Object3D () extends EventDispatcher {
   	 * @param object
   	 * @param recursive
   	 */
-  def copy(source: Object3D): this.type = js.native
-  def copy(source: Object3D, recursive: Boolean): this.type = js.native
+  def copy(source: this.type): this.type = js.native
+  def copy(source: this.type, recursive: Boolean): this.type = js.native
   /**
   	 * Searches through the object's children and returns the first with a matching id.
   	 * @param id	Unique number of the object instance

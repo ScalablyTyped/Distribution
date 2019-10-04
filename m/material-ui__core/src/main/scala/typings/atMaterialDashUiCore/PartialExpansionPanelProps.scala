@@ -130,7 +130,7 @@ trait PartialExpansionPanelProps extends js.Object {
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultExpanded: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
@@ -397,7 +397,7 @@ object PartialExpansionPanelProps {
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultExpanded: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,

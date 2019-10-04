@@ -1,5 +1,6 @@
 package typings.firebase.firebaseMod
 
+import typings.firebase.firebaseMod.analyticsNs.Analytics
 import typings.firebase.firebaseMod.appNs.App
 import typings.firebase.firebaseMod.authNs.Auth
 import typings.firebase.firebaseMod.databaseNs.Database
@@ -7,6 +8,7 @@ import typings.firebase.firebaseMod.firestoreNs.Firestore
 import typings.firebase.firebaseMod.functionsNs.Functions
 import typings.firebase.firebaseMod.messagingNs.Messaging
 import typings.firebase.firebaseMod.performanceNs.Performance
+import typings.firebase.firebaseMod.remoteConfigNs.RemoteConfig
 import typings.firebase.firebaseMod.storageNs.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,6 +25,25 @@ object ^ extends js.Object {
     * A (read-only) array of all initialized apps.
     */
   var apps: js.Array[App] = js.native
+  /**
+    * Gets the {@link firebase.analytics.Analytics `Analytics`} service.
+    *
+    * `firebase.analytics()` can be called with no arguments to access the default
+    * app's {@link firebase.analytics.Analytics `Analytics`} service.
+    *
+    * @webonly
+    *
+    * @example
+    * ```javascript
+    * // Get the Analytics service for the default app
+    * const defaultAnalytics = firebase.analytics();
+    * ```
+    *
+    * @param app The app to create an analytics service for.
+    * If not passed, uses the default app.
+    */
+  def analytics(): Analytics = js.native
+  def analytics(app: App): Analytics = js.native
   /**
     * Retrieves a Firebase {@link firebase.app.App app} instance.
     *
@@ -217,6 +238,21 @@ object ^ extends js.Object {
     */
   def performance(): Performance = js.native
   def performance(app: App): Performance = js.native
+  /**
+    * Gets the {@link firebase.remoteConfig.RemoteConfig `RemoteConfig`} instance.
+    *
+    * @webonly
+    *
+    * @example
+    * ```javascript
+    * // Get the RemoteConfig instance for the default app
+    * const defaultRemoteConfig = firebase.remoteConfig();
+    * ```
+    *
+    * @param app The app to create a Remote Config service for. If not passed, uses the default app.
+    */
+  def remoteConfig(): RemoteConfig = js.native
+  def remoteConfig(app: App): RemoteConfig = js.native
   /**
     * Gets the {@link firebase.storage.Storage `Storage`} service for the default
     * app or a given app.

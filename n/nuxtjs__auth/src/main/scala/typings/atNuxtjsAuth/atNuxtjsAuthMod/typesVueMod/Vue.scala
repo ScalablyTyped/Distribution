@@ -1,0 +1,21 @@
+package typings.atNuxtjsAuth.atNuxtjsAuthMod.typesVueMod
+
+import typings.atNuxtjsAuth.atNuxtjsAuthMod.Auth
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Vue extends js.Object {
+  @JSName("$auth")
+  var $auth: Auth[_]
+}
+
+object Vue {
+  @scala.inline
+  def apply($auth: Auth[_]): Vue = {
+    val __obj = js.Dynamic.literal($auth = $auth)
+  
+    __obj.asInstanceOf[Vue]
+  }
+}
+

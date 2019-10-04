@@ -2,6 +2,7 @@ package typings.playcanvas
 
 import typings.playcanvas.pcNs.Application
 import typings.playcanvas.pcNs.Entity
+import typings.playcanvas.pcNs.EventHandler
 import typings.playcanvas.pcNs.ScriptAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +11,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name ScriptType
+  * @extends pc.EventHandler
   * @classdesc Represents the type of a script. It is returned by {@link pc.createScript}. Also referred to as Script Type.<br />
   * The type is to be extended using its JavaScript prototype. There is a <strong>list of methods</strong>
   * that will be executed by the engine on instances of this type, such as: <ul><li>initialize</li><li>postInitialize</li><li>update</li><li>postUpdate</li><li>swap</li></ul>
@@ -30,7 +32,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ScriptType")
 @js.native
-class ScriptType protected () extends js.Object {
+class ScriptType protected () extends EventHandler {
   def this(args: Anon_App) = this()
   /**
     * The {@link pc.Application} that the instance of this type belongs to.

@@ -87,25 +87,15 @@ class AutoFilter () extends ClientObject {
     */
   def getRangeOrNullObject(): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.AutoFilter` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.AutoFilter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.AutoFilter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): AutoFilter = js.native
-  def load(option: String): AutoFilter = js.native
-  def load(option: js.Array[String]): AutoFilter = js.native
-  def load(option: Anon_Expand): AutoFilter = js.native
-  def load(option: AutoFilterLoadOptions): AutoFilter = js.native
+  def load(options: AutoFilterLoadOptions): AutoFilter = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): AutoFilter = js.native
+  def load(propertyNames: String): AutoFilter = js.native
+  def load(propertyNames: js.Array[String]): AutoFilter = js.native
   /**
     *
     * Applies the specified Autofilter object currently on the range.

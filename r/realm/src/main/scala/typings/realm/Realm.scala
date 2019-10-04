@@ -41,7 +41,7 @@ class Realm () extends js.Object {
   val syncSession: Session | Null = js.native
   /**
     * Update the schema of the Realm.
-    * 
+    *
     * @param schema The schema which the Realm should be updated to use.
     * @private Not a part of the public API: Consider passing a `schema` when constructing the `Realm` instead.
     */

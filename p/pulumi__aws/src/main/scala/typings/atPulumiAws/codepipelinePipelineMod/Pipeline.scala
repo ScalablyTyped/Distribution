@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelinePipelineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Actions
-import typings.atPulumiAws.Anon_EncryptionKey
+import typings.atPulumiAws.typesOutputMod.codepipelineNs.PipelineArtifactStore
+import typings.atPulumiAws.typesOutputMod.codepipelineNs.PipelineStage
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,7 +32,7 @@ class Pipeline protected () extends CustomResource {
     * An artifactStore block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
-  val artifactStore: Output[Anon_EncryptionKey] = js.native
+  val artifactStore: Output[PipelineArtifactStore] = js.native
   /**
     * The name of the pipeline.
     */
@@ -41,7 +41,7 @@ class Pipeline protected () extends CustomResource {
     * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
     */
   val roleArn: Output[String] = js.native
-  val stages: Output[js.Array[Anon_Actions]] = js.native
+  val stages: Output[js.Array[PipelineStage]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

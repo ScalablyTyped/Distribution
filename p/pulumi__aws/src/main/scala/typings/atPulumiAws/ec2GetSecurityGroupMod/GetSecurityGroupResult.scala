@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetSecurityGroupFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait GetSecurityGroupResult extends js.Object {
     * The description of the security group.
     */
   val description: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSecurityGroupFilter]] = js.undefined
   val id: String
   val name: String
   val tags: StringDictionary[js.Any]
@@ -31,7 +31,7 @@ object GetSecurityGroupResult {
     name: String,
     tags: StringDictionary[js.Any],
     vpcId: String,
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetSecurityGroupFilter] = null
   ): GetSecurityGroupResult = {
     val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, name = name, tags = tags, vpcId = vpcId)
     if (filters != null) __obj.updateDynamic("filters")(filters)

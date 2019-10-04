@@ -1,8 +1,8 @@
 package typings.atPulumiAws.datasyncS3LocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketAccessRoleArn
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesOutputMod.datasyncNs.S3LocationS3Config
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,7 +35,7 @@ class S3Location protected () extends CustomResource {
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: Output[Anon_BucketAccessRoleArn] = js.native
+  val s3Config: Output[S3LocationS3Config] = js.native
   /**
     * Prefix to perform actions as source or destination.
     */

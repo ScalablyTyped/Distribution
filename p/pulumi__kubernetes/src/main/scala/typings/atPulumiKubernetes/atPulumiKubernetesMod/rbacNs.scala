@@ -170,14 +170,13 @@ object rbacNs extends js.Object {
     object ClusterRole extends js.Object {
       /**
         * Get the state of an existing `ClusterRole` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1ClusterRoleMod.ClusterRole = js.native
@@ -194,14 +193,13 @@ object rbacNs extends js.Object {
     object ClusterRoleBinding extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleBinding` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1ClusterRoleBindingMod.ClusterRoleBinding = js.native
@@ -218,14 +216,13 @@ object rbacNs extends js.Object {
     object ClusterRoleBindingList extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleBindingList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
@@ -242,14 +239,13 @@ object rbacNs extends js.Object {
     object ClusterRoleList extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1ClusterRoleListMod.ClusterRoleList = js.native
@@ -266,14 +262,13 @@ object rbacNs extends js.Object {
     object Role extends js.Object {
       /**
         * Get the state of an existing `Role` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1RoleMod.Role = js.native
@@ -290,14 +285,13 @@ object rbacNs extends js.Object {
     object RoleBinding extends js.Object {
       /**
         * Get the state of an existing `RoleBinding` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1RoleBindingMod.RoleBinding = js.native
@@ -314,14 +308,13 @@ object rbacNs extends js.Object {
     object RoleBindingList extends js.Object {
       /**
         * Get the state of an existing `RoleBindingList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1RoleBindingListMod.RoleBindingList = js.native
@@ -338,14 +331,13 @@ object rbacNs extends js.Object {
     object RoleList extends js.Object {
       /**
         * Get the state of an existing `RoleList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1RoleListMod.RoleList = js.native
@@ -522,14 +514,13 @@ object rbacNs extends js.Object {
     object ClusterRole extends js.Object {
       /**
         * Get the state of an existing `ClusterRole` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRole = js.native
@@ -546,14 +537,13 @@ object rbacNs extends js.Object {
     object ClusterRoleBinding extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleBinding` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding = js.native
@@ -570,14 +560,13 @@ object rbacNs extends js.Object {
     object ClusterRoleBindingList extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleBindingList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
@@ -594,14 +583,13 @@ object rbacNs extends js.Object {
     object ClusterRoleList extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleList = js.native
@@ -618,14 +606,13 @@ object rbacNs extends js.Object {
     object Role extends js.Object {
       /**
         * Get the state of an existing `Role` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1RoleMod.Role = js.native
@@ -642,14 +629,13 @@ object rbacNs extends js.Object {
     object RoleBinding extends js.Object {
       /**
         * Get the state of an existing `RoleBinding` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBinding = js.native
@@ -666,14 +652,13 @@ object rbacNs extends js.Object {
     object RoleBindingList extends js.Object {
       /**
         * Get the state of an existing `RoleBindingList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingList = js.native
@@ -690,14 +675,13 @@ object rbacNs extends js.Object {
     object RoleList extends js.Object {
       /**
         * Get the state of an existing `RoleList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1alpha1RoleListMod.RoleList = js.native
@@ -874,14 +858,13 @@ object rbacNs extends js.Object {
     object ClusterRole extends js.Object {
       /**
         * Get the state of an existing `ClusterRole` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1ClusterRoleMod.ClusterRole = js.native
@@ -898,14 +881,13 @@ object rbacNs extends js.Object {
     object ClusterRoleBinding extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleBinding` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding = js.native
@@ -922,14 +904,13 @@ object rbacNs extends js.Object {
     object ClusterRoleBindingList extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleBindingList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
@@ -946,14 +927,13 @@ object rbacNs extends js.Object {
     object ClusterRoleList extends js.Object {
       /**
         * Get the state of an existing `ClusterRoleList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1ClusterRoleListMod.ClusterRoleList = js.native
@@ -970,14 +950,13 @@ object rbacNs extends js.Object {
     object Role extends js.Object {
       /**
         * Get the state of an existing `Role` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1RoleMod.Role = js.native
@@ -994,14 +973,13 @@ object rbacNs extends js.Object {
     object RoleBinding extends js.Object {
       /**
         * Get the state of an existing `RoleBinding` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1RoleBindingMod.RoleBinding = js.native
@@ -1018,14 +996,13 @@ object rbacNs extends js.Object {
     object RoleBindingList extends js.Object {
       /**
         * Get the state of an existing `RoleBindingList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1RoleBindingListMod.RoleBindingList = js.native
@@ -1042,14 +1019,13 @@ object rbacNs extends js.Object {
     object RoleList extends js.Object {
       /**
         * Get the state of an existing `RoleList` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
+        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+        * Kubernetes convention) the ID becomes `default/<name>`.
         *
         * Pulumi will keep track of this resource using `name` as the Pulumi ID.
         *
         * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form
-        *  <namespace>/<name> or <name>.
+        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
         * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: String, id: Input[ID]): typings.atPulumiKubernetes.rbacV1beta1RoleListMod.RoleList = js.native

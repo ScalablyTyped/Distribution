@@ -1,8 +1,8 @@
 package typings.atPulumiAws.datasyncEfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_SecurityGroupArnsSubnetArn
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesInputMod.datasyncNs.EfsLocationEc2Config
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait EfsLocationArgs extends js.Object {
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: Input[Anon_SecurityGroupArnsSubnetArn]
+  val ec2Config: Input[EfsLocationEc2Config]
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */
@@ -30,7 +30,7 @@ trait EfsLocationArgs extends js.Object {
 object EfsLocationArgs {
   @scala.inline
   def apply(
-    ec2Config: Input[Anon_SecurityGroupArnsSubnetArn],
+    ec2Config: Input[EfsLocationEc2Config],
     efsFileSystemArn: Input[ARN],
     subdirectory: Input[String] = null,
     tags: Input[StringDictionary[Input[String]]] = null

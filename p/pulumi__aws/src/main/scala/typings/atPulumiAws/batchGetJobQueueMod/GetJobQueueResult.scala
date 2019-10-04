@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchGetJobQueueMod
 
-import typings.atPulumiAws.Anon_ComputeEnvironment
+import typings.atPulumiAws.typesOutputMod.batchNs.GetJobQueueComputeEnvironmentOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GetJobQueueResult extends js.Object {
     * * `compute_environment_order.#.order` - The order of the compute environment.
     * * `compute_environment_order.#.compute_environment` - The ARN of the compute environment.
     */
-  val computeEnvironmentOrders: js.Array[Anon_ComputeEnvironment]
+  val computeEnvironmentOrders: js.Array[GetJobQueueComputeEnvironmentOrder]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -46,7 +46,7 @@ object GetJobQueueResult {
   @scala.inline
   def apply(
     arn: String,
-    computeEnvironmentOrders: js.Array[Anon_ComputeEnvironment],
+    computeEnvironmentOrders: js.Array[GetJobQueueComputeEnvironmentOrder],
     id: String,
     name: String,
     priority: Double,

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ResolverRuleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IpPortInput
+import typings.atPulumiAws.typesInputMod.route53Ns.ResolverRuleTargetIp
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,7 +46,7 @@ trait ResolverRuleState extends js.Object {
     * Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
     * This argument should only be specified for `FORWARD` type rules.
     */
-  val targetIps: js.UndefOr[Input[js.Array[Input[Anon_IpPortInput]]]] = js.undefined
+  val targetIps: js.UndefOr[Input[js.Array[Input[ResolverRuleTargetIp]]]] = js.undefined
 }
 
 object ResolverRuleState {
@@ -60,7 +60,7 @@ object ResolverRuleState {
     ruleType: Input[String] = null,
     shareStatus: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
-    targetIps: Input[js.Array[Input[Anon_IpPortInput]]] = null
+    targetIps: Input[js.Array[Input[ResolverRuleTargetIp]]] = null
   ): ResolverRuleState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

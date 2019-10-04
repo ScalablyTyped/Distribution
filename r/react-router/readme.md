@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 Declarative routing for React

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTargetMod
 
-import typings.atPulumiAws.Anon_KeyValues
+import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTargetTarget
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -41,7 +41,7 @@ class MaintenanceWindowTarget protected () extends CustomResource {
   /**
     * The targets (either instances or tags). Instances are specified using Key=InstanceIds,Values=InstanceId1,InstanceId2. Tags are specified using Key=tag name,Values=tag value.
     */
-  val targets: Output[js.Array[Anon_KeyValues]] = js.native
+  val targets: Output[js.Array[MaintenanceWindowTargetTarget]] = js.native
   /**
     * The Id of the maintenance window to register the target with.
     */

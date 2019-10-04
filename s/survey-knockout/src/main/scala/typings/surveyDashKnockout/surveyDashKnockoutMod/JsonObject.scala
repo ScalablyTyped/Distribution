@@ -14,6 +14,7 @@ class JsonObject () extends js.Object {
   /* protected */ def toJsonObjectCore(obj: js.Any, property: JsonObjectProperty): js.Any = js.native
   /* protected */ def toJsonObjectCore(obj: js.Any, property: JsonObjectProperty, storeDefaults: Boolean): js.Any = js.native
   def toObject(jsonObj: js.Any, obj: js.Any): Unit = js.native
+  def toObjectCore(jsonObj: js.Any, obj: js.Any): Unit = js.native
   def valueToJson(obj: js.Any, result: js.Any, property: JsonObjectProperty): Unit = js.native
   def valueToJson(obj: js.Any, result: js.Any, property: JsonObjectProperty, storeDefaults: Boolean): Unit = js.native
   /* protected */ def valueToObj(value: js.Any, obj: js.Any, property: JsonObjectProperty): Unit = js.native

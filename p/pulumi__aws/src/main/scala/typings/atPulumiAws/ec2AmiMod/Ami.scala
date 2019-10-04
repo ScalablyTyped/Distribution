@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteOnTermination
-import typings.atPulumiAws.Anon_DeviceName
+import typings.atPulumiAws.typesOutputMod.ec2Ns.AmiEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.AmiEphemeralBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class Ami protected () extends CustomResource {
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTermination]] = js.native
+  val ebsBlockDevices: Output[js.Array[AmiEbsBlockDevice]] = js.native
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
@@ -46,7 +46,7 @@ class Ami protected () extends CustomResource {
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: Output[js.Array[Anon_DeviceName]] = js.native
+  val ephemeralBlockDevices: Output[js.Array[AmiEphemeralBlockDevice]] = js.native
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.

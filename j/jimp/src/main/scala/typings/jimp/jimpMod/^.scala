@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jimp", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: Jimp = js.native
+  val default: DepreciatedJimp = js.native
 }
 

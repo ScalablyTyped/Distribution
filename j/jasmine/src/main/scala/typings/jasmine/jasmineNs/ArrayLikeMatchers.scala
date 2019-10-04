@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ArrayLikeMatchers[T] extends Matchers[ArrayLike[T]] {
+  /**
+    * Invert the matcher following this expect.
+    */
   @JSName("not")
   var not_ArrayLikeMatchers: ArrayLikeMatchers[T] = js.native
   def toBe(expected: ArrayContaining[T]): Boolean = js.native

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Pubnub extends js.Object {
+  var channelGroups: ChannelGroups = js.native
   def addListener(params: ListenerParameters): Unit = js.native
   def decrypt(data: String): js.Any = js.native
   def decrypt(data: String, customCipherKey: String): js.Any = js.native
@@ -58,6 +59,7 @@ trait Pubnub extends js.Object {
   def setUUID(uuid: String): Unit = js.native
   def stop(): Unit = js.native
   def subscribe(params: SubscribeParameters): Unit = js.native
+  def time(): js.Promise[FetchTimeResponse] = js.native
   def unsubscribe(params: UnsubscribeParameters): Unit = js.native
   def unsubscribeAll(): Unit = js.native
   def whereNow(params: WhereNowParameters): js.Promise[WhereNowResponse] = js.native

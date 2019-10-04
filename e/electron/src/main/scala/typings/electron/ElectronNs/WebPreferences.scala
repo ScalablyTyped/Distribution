@@ -82,6 +82,11 @@ trait WebPreferences extends js.Object {
     */
   var disableBlinkFeatures: js.UndefOr[String] = js.undefined
   /**
+    * Whether to prevent the window from resizing when entering HTML Fullscreen.
+    * Default is false.
+    */
+  var disableHtmlFullscreenWindowResize: js.UndefOr[Boolean] = js.undefined
+  /**
     * A list of feature strings separated by ,, like CSSVariables,KeyboardEventKey to
     * enable. The full list of supported feature strings can be found in the file.
     */
@@ -108,7 +113,8 @@ trait WebPreferences extends js.Object {
   var minimumFontSize: js.UndefOr[Double] = js.undefined
   /**
     * Whether to use native window.open(). Defaults to false. Child windows will
-    * always have node integration disabled. This option is currently experimental.
+    * always have node integration disabled unless nodeIntegrationInSubFrames is true.
+    * This option is currently experimental.
     */
   var nativeWindowOpen: js.UndefOr[Boolean] = js.undefined
   /**
@@ -121,9 +127,9 @@ trait WebPreferences extends js.Object {
     */
   var nodeIntegration: js.UndefOr[Boolean] = js.undefined
   /**
-    * Experimental option for enabling NodeJS support in sub-frames such as iframes.
-    * All your preloads will load for every iframe, you can use process.isMainFrame to
-    * determine if you are in the main frame or not.
+    * Experimental option for enabling Node.js support in sub-frames such as iframes
+    * and child windows. All your preloads will load for every iframe, you can use
+    * process.isMainFrame to determine if you are in the main frame or not.
     */
   var nodeIntegrationInSubFrames: js.UndefOr[Boolean] = js.undefined
   /**
@@ -197,10 +203,6 @@ trait WebPreferences extends js.Object {
     */
   var webSecurity: js.UndefOr[Boolean] = js.undefined
   /**
-    * Enables WebAudio support. Default is true.
-    */
-  var webaudio: js.UndefOr[Boolean] = js.undefined
-  /**
     * Enables WebGL support. Default is true.
     */
   var webgl: js.UndefOr[Boolean] = js.undefined
@@ -233,6 +235,7 @@ object WebPreferences {
     defaultMonospaceFontSize: Int | Double = null,
     devTools: js.UndefOr[Boolean] = js.undefined,
     disableBlinkFeatures: String = null,
+    disableHtmlFullscreenWindowResize: js.UndefOr[Boolean] = js.undefined,
     enableBlinkFeatures: String = null,
     enableRemoteModule: js.UndefOr[Boolean] = js.undefined,
     experimentalFeatures: js.UndefOr[Boolean] = js.undefined,
@@ -255,7 +258,6 @@ object WebPreferences {
     session: Session = null,
     textAreasAreResizable: js.UndefOr[Boolean] = js.undefined,
     webSecurity: js.UndefOr[Boolean] = js.undefined,
-    webaudio: js.UndefOr[Boolean] = js.undefined,
     webgl: js.UndefOr[Boolean] = js.undefined,
     webviewTag: js.UndefOr[Boolean] = js.undefined,
     zoomFactor: Int | Double = null
@@ -273,6 +275,7 @@ object WebPreferences {
     if (defaultMonospaceFontSize != null) __obj.updateDynamic("defaultMonospaceFontSize")(defaultMonospaceFontSize.asInstanceOf[js.Any])
     if (!js.isUndefined(devTools)) __obj.updateDynamic("devTools")(devTools)
     if (disableBlinkFeatures != null) __obj.updateDynamic("disableBlinkFeatures")(disableBlinkFeatures)
+    if (!js.isUndefined(disableHtmlFullscreenWindowResize)) __obj.updateDynamic("disableHtmlFullscreenWindowResize")(disableHtmlFullscreenWindowResize)
     if (enableBlinkFeatures != null) __obj.updateDynamic("enableBlinkFeatures")(enableBlinkFeatures)
     if (!js.isUndefined(enableRemoteModule)) __obj.updateDynamic("enableRemoteModule")(enableRemoteModule)
     if (!js.isUndefined(experimentalFeatures)) __obj.updateDynamic("experimentalFeatures")(experimentalFeatures)
@@ -295,7 +298,6 @@ object WebPreferences {
     if (session != null) __obj.updateDynamic("session")(session)
     if (!js.isUndefined(textAreasAreResizable)) __obj.updateDynamic("textAreasAreResizable")(textAreasAreResizable)
     if (!js.isUndefined(webSecurity)) __obj.updateDynamic("webSecurity")(webSecurity)
-    if (!js.isUndefined(webaudio)) __obj.updateDynamic("webaudio")(webaudio)
     if (!js.isUndefined(webgl)) __obj.updateDynamic("webgl")(webgl)
     if (!js.isUndefined(webviewTag)) __obj.updateDynamic("webviewTag")(webviewTag)
     if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])

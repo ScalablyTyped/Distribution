@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Backends
+import typings.atPulumiAws.typesOutputMod.appmeshNs.VirtualNodeSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -46,7 +46,7 @@ class VirtualNode protected () extends CustomResource {
   /**
     * The virtual node specification to apply.
     */
-  val spec: Output[Anon_Backends] = js.native
+  val spec: Output[VirtualNodeSpec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

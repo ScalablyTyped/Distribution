@@ -18,7 +18,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartPoint object, for use in "chartPoint.set({ ... })". */
+/** An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`. */
 trait ChartPointUpdateData extends js.Object {
   /**
     *

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDocumentationPartMod
 
-import typings.atPulumiAws.Anon_MethodName
+import typings.atPulumiAws.typesInputMod.apigatewayNs.DocumentationPartLocation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait DocumentationPartState extends js.Object {
   /**
     * The location of the targeted API entity of the to-be-created documentation part. See below.
     */
-  val location: js.UndefOr[Input[Anon_MethodName]] = js.undefined
+  val location: js.UndefOr[Input[DocumentationPartLocation]] = js.undefined
   /**
     * A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., "{ \"description\": \"The API does ...\" }". Only Swagger-compliant key-value pairs can be exported and, hence, published.
     */
@@ -24,7 +24,7 @@ trait DocumentationPartState extends js.Object {
 object DocumentationPartState {
   @scala.inline
   def apply(
-    location: Input[Anon_MethodName] = null,
+    location: Input[DocumentationPartLocation] = null,
     properties: Input[String] = null,
     restApiId: Input[String] = null
   ): DocumentationPartState = {

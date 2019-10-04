@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 object reactDashHelmetComponents extends reactDashHelmetProps {
   @scala.inline
   def Helmet: ComponentType[typings.reactDashHelmet.reactDashHelmetMod.HelmetProps] = js.constructorOf[typings.reactDashHelmet.reactDashHelmetMod.Helmet].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashHelmet.reactDashHelmetMod.HelmetProps]]
-  @scala.inline
-  def ReactDashHelmet: ComponentType[typings.reactDashHelmet.reactDashHelmetMod.HelmetProps] = js.constructorOf[typings.reactDashHelmet.reactDashHelmetMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashHelmet.reactDashHelmetMod.HelmetProps]]
 }
 

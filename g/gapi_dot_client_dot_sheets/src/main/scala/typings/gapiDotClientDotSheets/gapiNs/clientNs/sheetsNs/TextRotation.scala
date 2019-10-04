@@ -10,8 +10,9 @@ trait TextRotation extends js.Object {
     * Measured in degrees. Valid values are between -90 and 90. Positive
     * angles are angled upwards, negative are angled downwards.
     *
-    * Note: For LTR text direction positive angles are in the counterclockwise
-    * direction, whereas for RTL they are in the clockwise direction
+    * Note: For LTR text direction positive angles are in the
+    * counterclockwise direction, whereas for RTL they are in the clockwise
+    * direction
     */
   var angle: js.UndefOr[Double] = js.undefined
   /**

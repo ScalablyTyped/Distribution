@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcPeeringConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpcPeeringConnectionFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait GetVpcPeeringConnectionArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcPeeringConnectionFilter]] = js.undefined
   /**
     * The ID of the specific VPC Peering Connection to retrieve.
     */
@@ -62,7 +62,7 @@ object GetVpcPeeringConnectionArgs {
   @scala.inline
   def apply(
     cidrBlock: String = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetVpcPeeringConnectionFilter] = null,
     id: String = null,
     ownerId: String = null,
     peerCidrBlock: String = null,

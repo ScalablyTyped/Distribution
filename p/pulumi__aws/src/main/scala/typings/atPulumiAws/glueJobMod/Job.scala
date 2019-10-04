@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueJobMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_MaxConcurrentRuns
-import typings.atPulumiAws.Anon_NameScriptLocation
+import typings.atPulumiAws.typesOutputMod.glueNs.JobCommand
+import typings.atPulumiAws.typesOutputMod.glueNs.JobExecutionProperty
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +31,7 @@ class Job protected () extends CustomResource {
   /**
     * The command of the job. Defined below.
     */
-  val command: Output[Anon_NameScriptLocation] = js.native
+  val command: Output[JobCommand] = js.native
   /**
     * The list of connections used for this job.
     */
@@ -47,7 +47,7 @@ class Job protected () extends CustomResource {
   /**
     * Execution property of the job. Defined below.
     */
-  val executionProperty: Output[Anon_MaxConcurrentRuns] = js.native
+  val executionProperty: Output[JobExecutionProperty] = js.native
   /**
     * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
     */

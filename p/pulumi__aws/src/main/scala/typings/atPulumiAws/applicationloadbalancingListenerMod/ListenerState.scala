@@ -1,6 +1,6 @@
 package typings.atPulumiAws.applicationloadbalancingListenerMod
 
-import typings.atPulumiAws.Anon_AuthenticateCognitoAuthenticateOidc
+import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.ListenerDefaultAction
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait ListenerState extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultActions: js.UndefOr[Input[js.Array[Input[Anon_AuthenticateCognitoAuthenticateOidc]]]] = js.undefined
+  val defaultActions: js.UndefOr[Input[js.Array[Input[ListenerDefaultAction]]]] = js.undefined
   /**
     * The ARN of the load balancer.
     */
@@ -42,7 +42,7 @@ object ListenerState {
   def apply(
     arn: Input[String] = null,
     certificateArn: Input[String] = null,
-    defaultActions: Input[js.Array[Input[Anon_AuthenticateCognitoAuthenticateOidc]]] = null,
+    defaultActions: Input[js.Array[Input[ListenerDefaultAction]]] = null,
     loadBalancerArn: Input[String] = null,
     port: Input[Double] = null,
     protocol: Input[String] = null,

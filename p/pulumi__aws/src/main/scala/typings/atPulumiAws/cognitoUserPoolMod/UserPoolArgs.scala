@@ -1,15 +1,15 @@
 package typings.atPulumiAws.cognitoUserPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AdvancedSecurityModeInput
-import typings.atPulumiAws.Anon_AllowAdminCreateUserOnlyInviteMessageTemplate
-import typings.atPulumiAws.Anon_AttributeDataTypeDeveloperOnlyAttribute
-import typings.atPulumiAws.Anon_ChallengeRequiredOnNewDeviceDeviceOnlyRememberedOnUserPrompt
-import typings.atPulumiAws.Anon_CreateAuthChallengeCustomMessage
-import typings.atPulumiAws.Anon_DefaultEmailOptionEmailMessage
-import typings.atPulumiAws.Anon_EmailSendingAccountReplyToEmailAddress
-import typings.atPulumiAws.Anon_ExternalIdSnsCallerArn
-import typings.atPulumiAws.Anon_MinimumLengthRequireLowercase
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolAdminCreateUserConfig
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolDeviceConfiguration
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolEmailConfiguration
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolLambdaConfig
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolPasswordPolicy
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolSchema
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolSmsConfiguration
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolUserPoolAddOns
+import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolVerificationMessageTemplate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait UserPoolArgs extends js.Object {
   /**
     * The configuration for AdminCreateUser requests.
     */
-  val adminCreateUserConfig: js.UndefOr[Input[Anon_AllowAdminCreateUserOnlyInviteMessageTemplate]] = js.undefined
+  val adminCreateUserConfig: js.UndefOr[Input[UserPoolAdminCreateUserConfig]] = js.undefined
   /**
     * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
     */
@@ -31,11 +31,11 @@ trait UserPoolArgs extends js.Object {
   /**
     * The configuration for the user pool's device tracking.
     */
-  val deviceConfiguration: js.UndefOr[Input[Anon_ChallengeRequiredOnNewDeviceDeviceOnlyRememberedOnUserPrompt]] = js.undefined
+  val deviceConfiguration: js.UndefOr[Input[UserPoolDeviceConfiguration]] = js.undefined
   /**
     * The Email Configuration.
     */
-  val emailConfiguration: js.UndefOr[Input[Anon_EmailSendingAccountReplyToEmailAddress]] = js.undefined
+  val emailConfiguration: js.UndefOr[Input[UserPoolEmailConfiguration]] = js.undefined
   /**
     * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
     */
@@ -47,7 +47,7 @@ trait UserPoolArgs extends js.Object {
   /**
     * A container for the AWS Lambda triggers associated with the user pool.
     */
-  val lambdaConfig: js.UndefOr[Input[Anon_CreateAuthChallengeCustomMessage]] = js.undefined
+  val lambdaConfig: js.UndefOr[Input[UserPoolLambdaConfig]] = js.undefined
   /**
     * Set to enable multi-factor authentication. Must be one of the following values (ON, OFF, OPTIONAL)
     */
@@ -59,11 +59,11 @@ trait UserPoolArgs extends js.Object {
   /**
     * A container for information about the user pool password policy.
     */
-  val passwordPolicy: js.UndefOr[Input[Anon_MinimumLengthRequireLowercase]] = js.undefined
+  val passwordPolicy: js.UndefOr[Input[UserPoolPasswordPolicy]] = js.undefined
   /**
     * A container with the schema attributes of a user pool. Maximum of 50 attributes.
     */
-  val schemas: js.UndefOr[Input[js.Array[Input[Anon_AttributeDataTypeDeveloperOnlyAttribute]]]] = js.undefined
+  val schemas: js.UndefOr[Input[js.Array[Input[UserPoolSchema]]]] = js.undefined
   /**
     * A string representing the SMS authentication message.
     */
@@ -71,7 +71,7 @@ trait UserPoolArgs extends js.Object {
   /**
     * The SMS Configuration.
     */
-  val smsConfiguration: js.UndefOr[Input[Anon_ExternalIdSnsCallerArn]] = js.undefined
+  val smsConfiguration: js.UndefOr[Input[UserPoolSmsConfiguration]] = js.undefined
   /**
     * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
@@ -83,7 +83,7 @@ trait UserPoolArgs extends js.Object {
   /**
     * Configuration block for user pool add-ons to enable user pool advanced security mode features.
     */
-  val userPoolAddOns: js.UndefOr[Input[Anon_AdvancedSecurityModeInput]] = js.undefined
+  val userPoolAddOns: js.UndefOr[Input[UserPoolUserPoolAddOns]] = js.undefined
   /**
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
@@ -91,31 +91,31 @@ trait UserPoolArgs extends js.Object {
   /**
     * The verification message templates configuration.
     */
-  val verificationMessageTemplate: js.UndefOr[Input[Anon_DefaultEmailOptionEmailMessage]] = js.undefined
+  val verificationMessageTemplate: js.UndefOr[Input[UserPoolVerificationMessageTemplate]] = js.undefined
 }
 
 object UserPoolArgs {
   @scala.inline
   def apply(
-    adminCreateUserConfig: Input[Anon_AllowAdminCreateUserOnlyInviteMessageTemplate] = null,
+    adminCreateUserConfig: Input[UserPoolAdminCreateUserConfig] = null,
     aliasAttributes: Input[js.Array[Input[String]]] = null,
     autoVerifiedAttributes: Input[js.Array[Input[String]]] = null,
-    deviceConfiguration: Input[Anon_ChallengeRequiredOnNewDeviceDeviceOnlyRememberedOnUserPrompt] = null,
-    emailConfiguration: Input[Anon_EmailSendingAccountReplyToEmailAddress] = null,
+    deviceConfiguration: Input[UserPoolDeviceConfiguration] = null,
+    emailConfiguration: Input[UserPoolEmailConfiguration] = null,
     emailVerificationMessage: Input[String] = null,
     emailVerificationSubject: Input[String] = null,
-    lambdaConfig: Input[Anon_CreateAuthChallengeCustomMessage] = null,
+    lambdaConfig: Input[UserPoolLambdaConfig] = null,
     mfaConfiguration: Input[String] = null,
     name: Input[String] = null,
-    passwordPolicy: Input[Anon_MinimumLengthRequireLowercase] = null,
-    schemas: Input[js.Array[Input[Anon_AttributeDataTypeDeveloperOnlyAttribute]]] = null,
+    passwordPolicy: Input[UserPoolPasswordPolicy] = null,
+    schemas: Input[js.Array[Input[UserPoolSchema]]] = null,
     smsAuthenticationMessage: Input[String] = null,
-    smsConfiguration: Input[Anon_ExternalIdSnsCallerArn] = null,
+    smsConfiguration: Input[UserPoolSmsConfiguration] = null,
     smsVerificationMessage: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
-    userPoolAddOns: Input[Anon_AdvancedSecurityModeInput] = null,
+    userPoolAddOns: Input[UserPoolUserPoolAddOns] = null,
     usernameAttributes: Input[js.Array[Input[String]]] = null,
-    verificationMessageTemplate: Input[Anon_DefaultEmailOptionEmailMessage] = null
+    verificationMessageTemplate: Input[UserPoolVerificationMessageTemplate] = null
   ): UserPoolArgs = {
     val __obj = js.Dynamic.literal()
     if (adminCreateUserConfig != null) __obj.updateDynamic("adminCreateUserConfig")(adminCreateUserConfig.asInstanceOf[js.Any])

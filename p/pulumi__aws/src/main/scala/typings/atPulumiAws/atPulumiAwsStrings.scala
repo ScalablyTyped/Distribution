@@ -679,6 +679,30 @@ object atPulumiAwsStrings {
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
+  sealed trait dbDOTt3DOT2xlarge
+    extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt3DOTlarge
+    extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt3DOTmedium
+    extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt3DOTmicro
+    extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt3DOTsmall
+    extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt3DOTxlarge
+    extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
   sealed trait dbDOTx1DOT16xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
@@ -1193,6 +1217,27 @@ object atPulumiAwsStrings {
   sealed trait t3DOTxlarge extends InstanceType
   
   @js.native
+  sealed trait t3aDOT2xlarge extends InstanceType
+  
+  @js.native
+  sealed trait t3aDOTlarge extends InstanceType
+  
+  @js.native
+  sealed trait t3aDOTmedium extends InstanceType
+  
+  @js.native
+  sealed trait t3aDOTmicro extends InstanceType
+  
+  @js.native
+  sealed trait t3aDOTnano extends InstanceType
+  
+  @js.native
+  sealed trait t3aDOTsmall extends InstanceType
+  
+  @js.native
+  sealed trait t3aDOTxlarge extends InstanceType
+  
+  @js.native
   sealed trait tagged extends js.Object
   
   @js.native
@@ -1674,6 +1719,18 @@ object atPulumiAwsStrings {
   @scala.inline
   def dbDOTt2DOTxlarge: dbDOTt2DOTxlarge = "db.t2.xlarge".asInstanceOf[dbDOTt2DOTxlarge]
   @scala.inline
+  def dbDOTt3DOT2xlarge: dbDOTt3DOT2xlarge = "db.t3.2xlarge".asInstanceOf[dbDOTt3DOT2xlarge]
+  @scala.inline
+  def dbDOTt3DOTlarge: dbDOTt3DOTlarge = "db.t3.large".asInstanceOf[dbDOTt3DOTlarge]
+  @scala.inline
+  def dbDOTt3DOTmedium: dbDOTt3DOTmedium = "db.t3.medium".asInstanceOf[dbDOTt3DOTmedium]
+  @scala.inline
+  def dbDOTt3DOTmicro: dbDOTt3DOTmicro = "db.t3.micro".asInstanceOf[dbDOTt3DOTmicro]
+  @scala.inline
+  def dbDOTt3DOTsmall: dbDOTt3DOTsmall = "db.t3.small".asInstanceOf[dbDOTt3DOTsmall]
+  @scala.inline
+  def dbDOTt3DOTxlarge: dbDOTt3DOTxlarge = "db.t3.xlarge".asInstanceOf[dbDOTt3DOTxlarge]
+  @scala.inline
   def dbDOTx1DOT16xlarge: dbDOTx1DOT16xlarge = "db.x1.16xlarge".asInstanceOf[dbDOTx1DOT16xlarge]
   @scala.inline
   def dbDOTx1DOT32xlarge: dbDOTx1DOT32xlarge = "db.x1.32xlarge".asInstanceOf[dbDOTx1DOT32xlarge]
@@ -2007,6 +2064,20 @@ object atPulumiAwsStrings {
   def t3DOTsmall: t3DOTsmall = "t3.small".asInstanceOf[t3DOTsmall]
   @scala.inline
   def t3DOTxlarge: t3DOTxlarge = "t3.xlarge".asInstanceOf[t3DOTxlarge]
+  @scala.inline
+  def t3aDOT2xlarge: t3aDOT2xlarge = "t3a.2xlarge".asInstanceOf[t3aDOT2xlarge]
+  @scala.inline
+  def t3aDOTlarge: t3aDOTlarge = "t3a.large".asInstanceOf[t3aDOTlarge]
+  @scala.inline
+  def t3aDOTmedium: t3aDOTmedium = "t3a.medium".asInstanceOf[t3aDOTmedium]
+  @scala.inline
+  def t3aDOTmicro: t3aDOTmicro = "t3a.micro".asInstanceOf[t3aDOTmicro]
+  @scala.inline
+  def t3aDOTnano: t3aDOTnano = "t3a.nano".asInstanceOf[t3aDOTnano]
+  @scala.inline
+  def t3aDOTsmall: t3aDOTsmall = "t3a.small".asInstanceOf[t3aDOTsmall]
+  @scala.inline
+  def t3aDOTxlarge: t3aDOTxlarge = "t3a.xlarge".asInstanceOf[t3aDOTxlarge]
   @scala.inline
   def tagged: tagged = "tagged".asInstanceOf[tagged]
   @scala.inline

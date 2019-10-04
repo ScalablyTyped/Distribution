@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-pluginutils"
-version := "2.8.1-c71181"
+version := "2.8.2-9b5c07"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

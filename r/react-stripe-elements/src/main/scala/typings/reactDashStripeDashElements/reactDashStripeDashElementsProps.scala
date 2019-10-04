@@ -32,8 +32,8 @@ trait reactDashStripeDashElementsProps {
   def IdealBankElementProps: ElementProps.type = typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   type IdealBankElementProps = ElementProps
   @scala.inline
-  def PaymentRequestButtonElementProps: ElementProps.type = typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
-  type PaymentRequestButtonElementProps = ElementProps
+  def PaymentRequestButtonElementProps: typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.PaymentRequestButtonElementProps.type = typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.PaymentRequestButtonElementProps
+  type PaymentRequestButtonElementProps = typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.PaymentRequestButtonElementProps
   @scala.inline
   def PostalCodeElementProps: ElementProps.type = typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.ElementProps
   type PostalCodeElementProps = ElementProps

@@ -21,6 +21,11 @@ trait PodStatus extends js.Object {
     */
   val containerStatuses: js.Array[ContainerStatus]
   /**
+    * Status for any ephemeral containers that have run in this pod. This field is alpha-level
+    * and is only populated by servers that enable the EphemeralContainers feature.
+    */
+  val ephemeralContainerStatuses: js.Array[ContainerStatus]
+  /**
     * IP address of the host to which the pod is assigned. Empty if not yet scheduled.
     */
   val hostIP: String
@@ -70,6 +75,12 @@ trait PodStatus extends js.Object {
     */
   val podIP: String
   /**
+    * podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th
+    * entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4
+    * and IPv6. This list is empty if no IPs have been allocated yet.
+    */
+  val podIPs: js.Array[PodIP]
+  /**
     * The Quality of Service (QOS) classification assigned to the pod based on resource
     * requirements See PodQOSClass type for available QOS classes More info:
     * https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md
@@ -92,17 +103,19 @@ object PodStatus {
   def apply(
     conditions: js.Array[PodCondition],
     containerStatuses: js.Array[ContainerStatus],
+    ephemeralContainerStatuses: js.Array[ContainerStatus],
     hostIP: String,
     initContainerStatuses: js.Array[ContainerStatus],
     message: String,
     nominatedNodeName: String,
     phase: String,
     podIP: String,
+    podIPs: js.Array[PodIP],
     qosClass: String,
     reason: String,
     startTime: String
   ): PodStatus = {
-    val __obj = js.Dynamic.literal(conditions = conditions, containerStatuses = containerStatuses, hostIP = hostIP, initContainerStatuses = initContainerStatuses, message = message, nominatedNodeName = nominatedNodeName, phase = phase, podIP = podIP, qosClass = qosClass, reason = reason, startTime = startTime)
+    val __obj = js.Dynamic.literal(conditions = conditions, containerStatuses = containerStatuses, ephemeralContainerStatuses = ephemeralContainerStatuses, hostIP = hostIP, initContainerStatuses = initContainerStatuses, message = message, nominatedNodeName = nominatedNodeName, phase = phase, podIP = podIP, podIPs = podIPs, qosClass = qosClass, reason = reason, startTime = startTime)
   
     __obj.asInstanceOf[PodStatus]
   }

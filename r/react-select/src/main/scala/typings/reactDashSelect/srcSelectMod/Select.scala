@@ -23,6 +23,7 @@ import typings.reactDashSelect.srcComponentsMod.SelectComponents
 import typings.reactDashSelect.srcTypesMod.ActionTypes
 import typings.reactDashSelect.srcTypesMod.FocusDirection
 import typings.reactDashSelect.srcTypesMod.InputActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
 import typings.std.Event
@@ -33,7 +34,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Select[OptionType]
+trait Select[OptionType /* <: OptionTypeBase */]
   extends Component[Props[OptionType], State[OptionType], js.Any] {
   // Misc. Instance Properties
   // ------------------------------

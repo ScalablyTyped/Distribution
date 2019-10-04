@@ -16,6 +16,6 @@ class GridFSBucketReadStream protected () extends Readable {
     filter: js.Object,
     options: GridFSBucketReadStreamOptions
   ) = this()
-  var id: typings.bson.bsonMod.ObjectID = js.native
+  var id: typings.bson.bsonMod.ObjectId = js.native
 }
 

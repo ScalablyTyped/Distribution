@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-persist
 
-Typings are for version 5.10.0
+Typings are for version 6.0.0
 
 ## Library description:
 persist and rehydrate redux stores

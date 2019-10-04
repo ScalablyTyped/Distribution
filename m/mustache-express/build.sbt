@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mustache-express"
-version := "1.2-dt-20190217Z-415467"
+version := "1.2-dt-20190925Z-415467"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

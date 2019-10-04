@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi 1.9]
   */
 trait RangeCollectionLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
@@ -161,9 +164,11 @@ trait RangeCollectionLoadOptions extends js.Object {
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language settings of the user.
-    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+    * For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language settings of the user.​
+    When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+    If the argument is a single value, it will be applied to all cells in the range.​
+    Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+    Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -192,8 +197,8 @@ trait RangeCollectionLoadOptions extends js.Object {
   /**
     *
     * For EACH ITEM in the collection: Represents if ALL the cells would be saved as an array formula.
-    * Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-    * Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+    Returns true if ALL cells would be saved as an array formula, or false if ALL cells would NOT be saved as an array formula.
+    Returns null if some cells would be saved as an array formula and some would not be.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

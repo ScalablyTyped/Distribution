@@ -21,7 +21,7 @@ trait Commands extends js.Object {
   var bin_Original: CommandFunction = js.native
   @JSName("bugs")
   var bugs_Original: CommandFunction = js.native
-                  // view
+                // dedupe
   // plumbing
   @JSName("build")
   var build_Original: CommandFunction = js.native
@@ -52,7 +52,7 @@ trait Commands extends js.Object {
                   // test
   @JSName("find-dupes")
   var `find-dupes_Original`: CommandFunction = js.native
-               // view
+                  // config
   @JSName("find")
   var find_Original: CommandFunction = js.native
   @JSName("get")
@@ -67,12 +67,8 @@ trait Commands extends js.Object {
                  // ls
   @JSName("i")
   var i_Original: CommandFunction = js.native
-                  // config
-  @JSName("info")
-  var info_Original: CommandFunction = js.native
   @JSName("init")
   var init_Original: CommandFunction = js.native
-  // Commands
   @JSName("install")
   var install_Original: CommandFunction = js.native
                   // install
@@ -141,9 +137,6 @@ trait Commands extends js.Object {
   var search_Original: CommandFunction = js.native
   @JSName("set")
   var set_Original: CommandFunction = js.native
-               // view
-  @JSName("show")
-  var show_Original: CommandFunction = js.native
   @JSName("shrinkwrap")
   var shrinkwrap_Original: CommandFunction = js.native
   @JSName("star")
@@ -188,13 +181,8 @@ trait Commands extends js.Object {
   var up_Original: CommandFunction = js.native
   @JSName("update")
   var update_Original: CommandFunction = js.native
-                // dedupe
-  @JSName("v")
-  var v_Original: CommandFunction = js.native
   @JSName("version")
   var version_Original: CommandFunction = js.native
-  @JSName("view")
-  var view_Original: CommandFunction = js.native
   @JSName("visnup")
   var visnup_Original: CommandFunction = js.native
   @JSName("whoami")
@@ -210,7 +198,7 @@ trait Commands extends js.Object {
   def author(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def bin(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def bugs(args: js.Array[String], callback: CommandCallback): Unit = js.native
-                  // view
+                // dedupe
   // plumbing
   def build(args: js.Array[String], callback: CommandCallback): Unit = js.native
                  // update
@@ -226,7 +214,7 @@ trait Commands extends js.Object {
   def edit(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def explore(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def faq(args: js.Array[String], callback: CommandCallback): Unit = js.native
-               // view
+                  // config
   def find(args: js.Array[String], callback: CommandCallback): Unit = js.native
                   // test
   def `find-dupes`(args: js.Array[String], callback: CommandCallback): Unit = js.native
@@ -237,10 +225,9 @@ trait Commands extends js.Object {
   def home(args: js.Array[String], callback: CommandCallback): Unit = js.native
                  // ls
   def i(args: js.Array[String], callback: CommandCallback): Unit = js.native
-                  // config
   def info(args: js.Array[String], callback: CommandCallback): Unit = js.native
+  def info(args: js.Array[String], silent: Boolean, callback: CommandCallback): Unit = js.native
   def init(args: js.Array[String], callback: CommandCallback): Unit = js.native
-  // Commands
   def install(args: js.Array[String], callback: CommandCallback): Unit = js.native
                   // install
   def isntall(args: js.Array[String], callback: CommandCallback): Unit = js.native
@@ -281,8 +268,8 @@ trait Commands extends js.Object {
   def se(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def search(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def set(args: js.Array[String], callback: CommandCallback): Unit = js.native
-               // view
   def show(args: js.Array[String], callback: CommandCallback): Unit = js.native
+  def show(args: js.Array[String], silent: Boolean, callback: CommandCallback): Unit = js.native
   def shrinkwrap(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def star(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def stars(args: js.Array[String], callback: CommandCallback): Unit = js.native
@@ -308,10 +295,12 @@ trait Commands extends js.Object {
             // install
   def up(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def update(args: js.Array[String], callback: CommandCallback): Unit = js.native
-                // dedupe
   def v(args: js.Array[String], callback: CommandCallback): Unit = js.native
+  def v(args: js.Array[String], silent: Boolean, callback: CommandCallback): Unit = js.native
   def version(args: js.Array[String], callback: CommandCallback): Unit = js.native
+  // view and its aliases
   def view(args: js.Array[String], callback: CommandCallback): Unit = js.native
+  def view(args: js.Array[String], silent: Boolean, callback: CommandCallback): Unit = js.native
   def visnup(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def whoami(args: js.Array[String], callback: CommandCallback): Unit = js.native
   def xmas(args: js.Array[String], callback: CommandCallback): Unit = js.native

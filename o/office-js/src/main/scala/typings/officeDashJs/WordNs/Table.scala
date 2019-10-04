@@ -97,7 +97,7 @@ class Table () extends ClientObject {
   val parentBody: Body = js.native
   /**
     *
-    * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the table. Throws an error if there isn't a parent content control. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -111,14 +111,14 @@ class Table () extends ClientObject {
   val parentContentControlOrNullObject: ContentControl = js.native
   /**
     *
-    * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
+    * Gets the table that contains this table. Throws an error if it is not contained in a table. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
   val parentTable: Table = js.native
   /**
     *
-    * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -406,7 +406,7 @@ class Table () extends ClientObject {
   def getBorder_Top(borderLocation: Top): TableBorder = js.native
   /**
     *
-    * Gets the table cell at a specified row and column. Throws if the specified table cell does not exist.
+    * Gets the table cell at a specified row and column. Throws an error if the specified table cell does not exist.
     *
     * [Api set: WordApi 1.3]
     *
@@ -451,7 +451,7 @@ class Table () extends ClientObject {
   def getCellPadding_Top(cellPaddingLocation: Top): ClientResult[Double] = js.native
   /**
     *
-    * Gets the next table. Throws if this table is the last one.
+    * Gets the next table. Throws an error if this table is the last one.
     *
     * [Api set: WordApi 1.3]
     */
@@ -465,7 +465,7 @@ class Table () extends ClientObject {
   def getNextOrNullObject(): Table = js.native
   /**
     *
-    * Gets the paragraph after the table. Throws if there isn't a paragraph after the table.
+    * Gets the paragraph after the table. Throws an error if there isn't a paragraph after the table.
     *
     * [Api set: WordApi 1.3]
     */
@@ -479,7 +479,7 @@ class Table () extends ClientObject {
   def getParagraphAfterOrNullObject(): Paragraph = js.native
   /**
     *
-    * Gets the paragraph before the table. Throws if there isn't a paragraph before the table.
+    * Gets the paragraph before the table. Throws an error if there isn't a paragraph before the table.
     *
     * [Api set: WordApi 1.3]
     */
@@ -522,7 +522,7 @@ class Table () extends ClientObject {
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.3]
     *
@@ -534,7 +534,7 @@ class Table () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.3]
     *
@@ -551,7 +551,7 @@ class Table () extends ClientObject {
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -573,7 +573,7 @@ class Table () extends ClientObject {
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *

@@ -3,13 +3,14 @@ package typings.reactDashSelect.srcCreatableMod
 import typings.react.reactMod.ReactNode
 import typings.reactDashSelect.reactDashSelectStrings.first
 import typings.reactDashSelect.reactDashSelectStrings.last
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CreatableProps[OptionType] extends js.Object {
+trait CreatableProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   /* Allow options to be created while the `isLoading` prop is true. Useful to
     prevent the "create new ..." option being displayed while async results are
     still being loaded. */
@@ -40,7 +41,7 @@ trait CreatableProps[OptionType] extends js.Object {
 
 object CreatableProps {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     allowCreateWhileLoading: js.UndefOr[Boolean] = js.undefined,
     createOptionPosition: first | last = null,
     formatCreateLabel: /* inputValue */ String => ReactNode = null,

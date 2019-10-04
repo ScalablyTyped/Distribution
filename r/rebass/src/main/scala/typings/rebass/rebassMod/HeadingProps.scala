@@ -3,6 +3,7 @@ package typings.rebass.rebassMod
 import typings.csstype.csstypeMod.AlignSelfProperty
 import typings.csstype.csstypeMod.BackgroundProperty
 import typings.csstype.csstypeMod.ColorProperty
+import typings.csstype.csstypeMod.DisplayProperty
 import typings.csstype.csstypeMod.FlexProperty
 import typings.csstype.csstypeMod.FontFamilyProperty
 import typings.csstype.csstypeMod.FontSizeProperty
@@ -16,12 +17,20 @@ import typings.csstype.csstypeMod.MarginLeftProperty
 import typings.csstype.csstypeMod.MarginProperty
 import typings.csstype.csstypeMod.MarginRightProperty
 import typings.csstype.csstypeMod.MarginTopProperty
+import typings.csstype.csstypeMod.MaxHeightProperty
+import typings.csstype.csstypeMod.MaxWidthProperty
+import typings.csstype.csstypeMod.MinHeightProperty
+import typings.csstype.csstypeMod.MinWidthProperty
+import typings.csstype.csstypeMod.OverflowProperty
+import typings.csstype.csstypeMod.OverflowXProperty
+import typings.csstype.csstypeMod.OverflowYProperty
 import typings.csstype.csstypeMod.PaddingBottomProperty
 import typings.csstype.csstypeMod.PaddingLeftProperty
 import typings.csstype.csstypeMod.PaddingProperty
 import typings.csstype.csstypeMod.PaddingRightProperty
 import typings.csstype.csstypeMod.PaddingTopProperty
 import typings.csstype.csstypeMod.TextAlignProperty
+import typings.csstype.csstypeMod.VerticalAlignProperty
 import typings.csstype.csstypeMod.WidthProperty
 import typings.react.reactMod.ElementType
 import typings.react.reactMod.Key
@@ -46,6 +55,7 @@ object HeadingProps {
     bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
     color: ResponsiveValue[ColorProperty] = null,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
+    display: ResponsiveValue[DisplayProperty] = null,
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
     fontFamily: ResponsiveValue[FontFamilyProperty] = null,
     fontSize: ResponsiveValue[FontSizeProperty[TLengthStyledSystem]] = null,
@@ -62,7 +72,11 @@ object HeadingProps {
     marginTop: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
     marginX: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
     marginY: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
+    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem]] = null,
+    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem]] = null,
     mb: ResponsiveValue[MarginBottomProperty[TLengthStyledSystem]] = null,
+    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem]] = null,
+    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem]] = null,
     ml: ResponsiveValue[MarginLeftProperty[TLengthStyledSystem]] = null,
     mr: ResponsiveValue[MarginRightProperty[TLengthStyledSystem]] = null,
     mt: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
@@ -70,6 +84,9 @@ object HeadingProps {
     my: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
     opacity: ResponsiveValue[GlobalsNumber] = null,
     order: ResponsiveValue[GlobalsNumber] = null,
+    overflow: ResponsiveValue[OverflowProperty] = null,
+    overflowX: ResponsiveValue[OverflowXProperty] = null,
+    overflowY: ResponsiveValue[OverflowYProperty] = null,
     p: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     padding: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     paddingBottom: ResponsiveValue[PaddingBottomProperty[TLengthStyledSystem]] = null,
@@ -85,9 +102,11 @@ object HeadingProps {
     px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
     ref: Ref[js.Any] = null,
+    size: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
     sx: SxStyleProp = null,
     textAlign: ResponsiveValue[TextAlignProperty] = null,
     variant: ResponsiveValue[String] = null,
+    verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem]] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
   ): HeadingProps = {
     val __obj = js.Dynamic.literal()
@@ -97,6 +116,7 @@ object HeadingProps {
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
@@ -113,7 +133,11 @@ object HeadingProps {
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
     if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
     if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
     if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
@@ -121,6 +145,9 @@ object HeadingProps {
     if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
     if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
@@ -136,9 +163,11 @@ object HeadingProps {
     if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
     if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadingProps]
   }

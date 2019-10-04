@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmResourceDataSyncMod
 
-import typings.atPulumiAws.Anon_BucketNameKmsKeyArnPrefixRegion
+import typings.atPulumiAws.typesInputMod.ssmNs.ResourceDataSyncS3Destination
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,12 +14,12 @@ trait ResourceDataSyncArgs extends js.Object {
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: Input[Anon_BucketNameKmsKeyArnPrefixRegion]
+  val s3Destination: Input[ResourceDataSyncS3Destination]
 }
 
 object ResourceDataSyncArgs {
   @scala.inline
-  def apply(s3Destination: Input[Anon_BucketNameKmsKeyArnPrefixRegion], name: Input[String] = null): ResourceDataSyncArgs = {
+  def apply(s3Destination: Input[ResourceDataSyncS3Destination], name: Input[String] = null): ResourceDataSyncArgs = {
     val __obj = js.Dynamic.literal(s3Destination = s3Destination.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncArgs]

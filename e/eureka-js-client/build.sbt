@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eureka-js-client"
-version := "4.4-dt-20190208Z-51864d"
+version := "4.5-dt-20191003Z-49de5d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

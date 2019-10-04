@@ -1440,6 +1440,19 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Deletes the queued purchases for the specified Reserved Instances.
+    */
+  def deleteQueuedReservedInstances(): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  def deleteQueuedReservedInstances(callback: js.Function2[/* err */ AWSError, /* data */ DeleteQueuedReservedInstancesResult, Unit]): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  /**
+    * Deletes the queued purchases for the specified Reserved Instances.
+    */
+  def deleteQueuedReservedInstances(params: DeleteQueuedReservedInstancesRequest): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  def deleteQueuedReservedInstances(
+    params: DeleteQueuedReservedInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteQueuedReservedInstancesResult, Unit]
+  ): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  /**
     * Deletes the specified route from the specified route table.
     */
   def deleteRoute(): Request[js.Object, AWSError] = js.native
@@ -4287,14 +4300,14 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseHostReservationResult, Unit]
   ): Request[PurchaseHostReservationResult, AWSError] = js.native
   /**
-    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
+    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
     */
   def purchaseReservedInstancesOffering(): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
   def purchaseReservedInstancesOffering(
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedInstancesOfferingResult, Unit]
   ): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
   /**
-    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
+    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
     */
   def purchaseReservedInstancesOffering(params: PurchaseReservedInstancesOfferingRequest): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
   def purchaseReservedInstancesOffering(

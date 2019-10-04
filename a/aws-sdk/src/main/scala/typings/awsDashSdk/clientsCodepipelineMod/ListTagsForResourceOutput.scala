@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListTagsForResourceOutput extends js.Object {
   /**
-    * If the amount of returned information is significantly large, an identifier is also returned and can be used in a subsequent API call to return the next page of the list. However, the ListTagsforResource call lists all available tags in one call and does not use pagination.
+    * If the amount of returned information is significantly large, an identifier is also returned and can be used in a subsequent API call to return the next page of the list. The ListTagsforResource call lists all available tags in one call and does not use pagination.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   /**

@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
-  * To learn how to use discontinguous ranges, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges | Work with multiple ranges simultaneously in Excel add-ins}.
+  To learn how to use discontinguous ranges, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges | Work with multiple ranges simultaneously in Excel add-ins}.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -188,11 +188,11 @@ class RangeAreas () extends ClientObject {
   /**
     *
     * Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas.
-    The destination rangeAreas can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
+    The destination rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must be in the outline form which can be created by removing full rows or columns from a rectangular range.
+    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must able to be created by removing full rows or columns from a rectangular range.
     * @param copyType The type of cell data or formatting to copy over. Default is "All".
     * @param skipBlanks True if to skip blank cells in the source range or RangeAreas. Default is false.
     * @param transpose True if to transpose the cells in the destination RangeAreas. Default is false.
@@ -492,25 +492,15 @@ class RangeAreas () extends ClientObject {
   def getUsedRangeAreasOrNullObject(): RangeAreas = js.native
   def getUsedRangeAreasOrNullObject(valuesOnly: Boolean): RangeAreas = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.RangeAreas` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.RangeAreas` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeAreas` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): RangeAreas = js.native
-  def load(option: String): RangeAreas = js.native
-  def load(option: js.Array[String]): RangeAreas = js.native
-  def load(option: Anon_Expand): RangeAreas = js.native
-  def load(option: RangeAreasLoadOptions): RangeAreas = js.native
+  def load(options: RangeAreasLoadOptions): RangeAreas = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): RangeAreas = js.native
+  def load(propertyNames: String): RangeAreas = js.native
+  def load(propertyNames: js.Array[String]): RangeAreas = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -539,11 +529,11 @@ class RangeAreas () extends ClientObject {
     */
   def toJSON(): RangeAreasData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): RangeAreas = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): RangeAreas = js.native
 }

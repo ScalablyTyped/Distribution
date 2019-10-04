@@ -1,14 +1,14 @@
 package typings.atPulumiAws.cloudfrontDistributionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcmCertificateArnCloudfrontDefaultCertificate
-import typings.atPulumiAws.Anon_AllowedMethodsCachedMethodsCompress
-import typings.atPulumiAws.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl
-import typings.atPulumiAws.Anon_BucketIncludeCookiesPrefix
-import typings.atPulumiAws.Anon_CustomHeadersCustomOriginConfig
-import typings.atPulumiAws.Anon_ErrorCachingMinTtlErrorCode
-import typings.atPulumiAws.Anon_FailoverCriteriaMembers
-import typings.atPulumiAws.Anon_GeoRestrictionAnonLocationsRestrictionType
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionCustomErrorResponse
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionDefaultCacheBehavior
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionLoggingConfig
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOrderedCacheBehavior
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOrigin
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOriginGroup
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionRestrictions
+import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionViewerCertificate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,12 +28,12 @@ trait DistributionArgs extends js.Object {
   /**
     * One or more custom error response elements (multiples allowed).
     */
-  val customErrorResponses: js.UndefOr[Input[js.Array[Input[Anon_ErrorCachingMinTtlErrorCode]]]] = js.undefined
+  val customErrorResponses: js.UndefOr[Input[js.Array[Input[DistributionCustomErrorResponse]]]] = js.undefined
   /**
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: Input[Anon_AllowedMethodsCachedMethodsCompress]
+  val defaultCacheBehavior: Input[DistributionDefaultCacheBehavior]
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
@@ -59,23 +59,23 @@ trait DistributionArgs extends js.Object {
     * configuration that controls how logs are written
     * to your distribution (maximum one).
     */
-  val loggingConfig: js.UndefOr[Input[Anon_BucketIncludeCookiesPrefix]] = js.undefined
+  val loggingConfig: js.UndefOr[Input[DistributionLoggingConfig]] = js.undefined
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
     * in order of precedence. The topmost cache behavior will have precedence 0.
     */
-  val orderedCacheBehaviors: js.UndefOr[Input[js.Array[Input[Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]]]] = js.undefined
+  val orderedCacheBehaviors: js.UndefOr[Input[js.Array[Input[DistributionOrderedCacheBehavior]]]] = js.undefined
   /**
     * One or more originGroup for this
     * distribution (multiples allowed).
     */
-  val originGroups: js.UndefOr[Input[js.Array[Input[Anon_FailoverCriteriaMembers]]]] = js.undefined
+  val originGroups: js.UndefOr[Input[js.Array[Input[DistributionOriginGroup]]]] = js.undefined
   /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
-  val origins: Input[js.Array[Input[Anon_CustomHeadersCustomOriginConfig]]]
+  val origins: Input[js.Array[Input[DistributionOrigin]]]
   /**
     * The price class for this distribution. One of
     * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
@@ -85,7 +85,7 @@ trait DistributionArgs extends js.Object {
     * The restriction
     * configuration for this distribution (maximum one).
     */
-  val restrictions: Input[Anon_GeoRestrictionAnonLocationsRestrictionType]
+  val restrictions: Input[DistributionRestrictions]
   /**
     * Disables the distribution instead of
     * deleting it when destroying the resource. If this is set,
@@ -101,7 +101,7 @@ trait DistributionArgs extends js.Object {
     * configuration for this distribution (maximum
     * one).
     */
-  val viewerCertificate: Input[Anon_AcmCertificateArnCloudfrontDefaultCertificate]
+  val viewerCertificate: Input[DistributionViewerCertificate]
   /**
     * If enabled, the resource will wait for
     * the distribution status to change from `InProgress` to `Deployed`. Setting
@@ -121,20 +121,20 @@ trait DistributionArgs extends js.Object {
 object DistributionArgs {
   @scala.inline
   def apply(
-    defaultCacheBehavior: Input[Anon_AllowedMethodsCachedMethodsCompress],
+    defaultCacheBehavior: Input[DistributionDefaultCacheBehavior],
     enabled: Input[Boolean],
-    origins: Input[js.Array[Input[Anon_CustomHeadersCustomOriginConfig]]],
-    restrictions: Input[Anon_GeoRestrictionAnonLocationsRestrictionType],
-    viewerCertificate: Input[Anon_AcmCertificateArnCloudfrontDefaultCertificate],
+    origins: Input[js.Array[Input[DistributionOrigin]]],
+    restrictions: Input[DistributionRestrictions],
+    viewerCertificate: Input[DistributionViewerCertificate],
     aliases: Input[js.Array[Input[String]]] = null,
     comment: Input[String] = null,
-    customErrorResponses: Input[js.Array[Input[Anon_ErrorCachingMinTtlErrorCode]]] = null,
+    customErrorResponses: Input[js.Array[Input[DistributionCustomErrorResponse]]] = null,
     defaultRootObject: Input[String] = null,
     httpVersion: Input[String] = null,
     isIpv6Enabled: Input[Boolean] = null,
-    loggingConfig: Input[Anon_BucketIncludeCookiesPrefix] = null,
-    orderedCacheBehaviors: Input[js.Array[Input[Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]]] = null,
-    originGroups: Input[js.Array[Input[Anon_FailoverCriteriaMembers]]] = null,
+    loggingConfig: Input[DistributionLoggingConfig] = null,
+    orderedCacheBehaviors: Input[js.Array[Input[DistributionOrderedCacheBehavior]]] = null,
+    originGroups: Input[js.Array[Input[DistributionOriginGroup]]] = null,
     priceClass: Input[String] = null,
     retainOnDelete: Input[Boolean] = null,
     tags: Input[StringDictionary[_]] = null,

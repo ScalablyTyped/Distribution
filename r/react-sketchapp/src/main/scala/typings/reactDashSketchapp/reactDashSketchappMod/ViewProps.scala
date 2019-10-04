@@ -1,6 +1,8 @@
 package typings.reactDashSketchapp.reactDashSketchappMod
 
 import typings.react.reactMod.ReactNode
+import typings.reactDashSketchapp.typesMod.ResizeConstraints
+import typings.reactDashSketchapp.typesMod.SketchShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait ViewProps extends js.Object {
   var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var resizingConstraint: js.UndefOr[ResizingConstraintPropTypes] = js.undefined
-  var shadows: js.UndefOr[js.Array[ShadowsPropTypes]] = js.undefined
+  var resizingConstraint: js.UndefOr[ResizeConstraints] = js.undefined
+  var shadows: js.UndefOr[js.Array[SketchShadow]] = js.undefined
   var style: js.UndefOr[Style | StyleReference] = js.undefined
 }
 
@@ -18,8 +20,8 @@ object ViewProps {
   def apply(
     children: js.Array[ReactNode] | ReactNode = null,
     name: String = null,
-    resizingConstraint: ResizingConstraintPropTypes = null,
-    shadows: js.Array[ShadowsPropTypes] = null,
+    resizingConstraint: ResizeConstraints = null,
+    shadows: js.Array[SketchShadow] = null,
     style: Style | StyleReference = null
   ): ViewProps = {
     val __obj = js.Dynamic.literal()

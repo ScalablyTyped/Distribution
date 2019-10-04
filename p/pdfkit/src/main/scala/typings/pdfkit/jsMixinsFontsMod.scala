@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pdfkit/js/mixins/fonts", JSImport.Namespace)
 @js.native
-object jsMixinsFontsMod extends TopLevel[PDFFont[Unit]]
+object jsMixinsFontsMod extends TopLevel[PDFFont]
 

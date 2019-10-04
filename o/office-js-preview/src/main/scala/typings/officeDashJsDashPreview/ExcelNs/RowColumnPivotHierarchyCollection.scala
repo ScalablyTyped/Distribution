@@ -58,25 +58,15 @@ class RowColumnPivotHierarchyCollection () extends ClientObject {
     */
   def getItemOrNullObject(name: String): RowColumnPivotHierarchy = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.RowColumnPivotHierarchyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RowColumnPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): RowColumnPivotHierarchyCollection = js.native
-  def load(option: RowColumnPivotHierarchyCollectionLoadOptions with CollectionLoadOptions): RowColumnPivotHierarchyCollection = js.native
-  def load(option: String): RowColumnPivotHierarchyCollection = js.native
-  def load(option: js.Array[String]): RowColumnPivotHierarchyCollection = js.native
-  def load(option: LoadOption): RowColumnPivotHierarchyCollection = js.native
+  def load(options: RowColumnPivotHierarchyCollectionLoadOptions with CollectionLoadOptions): RowColumnPivotHierarchyCollection = js.native
+  def load(propertyNamesAndPaths: LoadOption): RowColumnPivotHierarchyCollection = js.native
+  def load(propertyNames: String): RowColumnPivotHierarchyCollection = js.native
+  def load(propertyNames: js.Array[String]): RowColumnPivotHierarchyCollection = js.native
   /**
     *
     * Removes the PivotHierarchy from the current axis.

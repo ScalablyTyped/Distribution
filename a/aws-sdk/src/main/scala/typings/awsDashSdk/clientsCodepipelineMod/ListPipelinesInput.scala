@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListPipelinesInput extends js.Object {
   /**
-    * An identifier that was returned from the previous list pipelines call, which can be used to return the next set of pipelines in the list.
+    * An identifier that was returned from the previous list pipelines call. It can be used to return the next set of pipelines in the list.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }

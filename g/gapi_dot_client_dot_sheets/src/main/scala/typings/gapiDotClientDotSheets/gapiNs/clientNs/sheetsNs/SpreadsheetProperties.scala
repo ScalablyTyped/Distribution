@@ -9,9 +9,8 @@ trait SpreadsheetProperties extends js.Object {
   var autoRecalc: js.UndefOr[String] = js.undefined
   /**
     * The default format of all cells in the spreadsheet.
-    * CellData.effectiveFormat will not be set if the
-    * cell's format is equal to this default format.
-    * This field is read-only.
+    * CellData.effectiveFormat will not be set if
+    * the cell's format is equal to this default format. This field is read-only.
     */
   var defaultFormat: js.UndefOr[CellFormat] = js.undefined
   /**

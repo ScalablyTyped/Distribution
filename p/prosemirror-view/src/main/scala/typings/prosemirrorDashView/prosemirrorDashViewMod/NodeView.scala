@@ -1,6 +1,8 @@
 package typings.prosemirrorDashView.prosemirrorDashViewMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
+import typings.prosemirrorDashView.Anon_Selection
 import typings.std.Document
 import typings.std.Event
 import typings.std.MutationRecord
@@ -37,11 +39,14 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
   /**
     * Called when a DOM
     * [mutation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
-    * happens within the view. Return false if the editor should
+    * or a selection change happens within the view. When the change is
+    * a selection change, the record will have a `type` property of
+    * `"selection"` (which doesn't occur for native mutation records).
+    * Return false if the editor should re-read the selection or
     * re-parse the range around the mutation, true if it can safely be
     * ignored.
     */
-  var ignoreMutation: js.UndefOr[(js.Function1[/* p */ MutationRecord, Boolean]) | Null] = js.undefined
+  var ignoreMutation: js.UndefOr[(js.Function1[/* p */ MutationRecord | Anon_Selection, Boolean]) | Null] = js.undefined
   /**
     * Can be used to override the way the node's selected status (as a
     * node selection) is displayed.
@@ -76,7 +81,7 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
   var update: js.UndefOr[
     (js.Function2[
       /* node */ typings.prosemirrorDashModel.prosemirrorDashModelMod.Node[S], 
-      /* decorations */ js.Array[Decoration], 
+      /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
       Boolean
     ]) | Null
   ] = js.undefined
@@ -89,11 +94,11 @@ object NodeView {
     deselectNode: () => Unit = null,
     destroy: () => Unit = null,
     dom: Node = null,
-    ignoreMutation: /* p */ MutationRecord => Boolean = null,
+    ignoreMutation: /* p */ MutationRecord | Anon_Selection => Boolean = null,
     selectNode: () => Unit = null,
     setSelection: (/* anchor */ Double, /* head */ Double, /* root */ Document) => Unit = null,
     stopEvent: /* event */ Event => Boolean = null,
-    update: (/* node */ typings.prosemirrorDashModel.prosemirrorDashModelMod.Node[S], /* decorations */ js.Array[Decoration]) => Boolean = null
+    update: (/* node */ typings.prosemirrorDashModel.prosemirrorDashModelMod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[_]]]) => Boolean = null
   ): NodeView[S] = {
     val __obj = js.Dynamic.literal()
     if (contentDOM != null) __obj.updateDynamic("contentDOM")(contentDOM)

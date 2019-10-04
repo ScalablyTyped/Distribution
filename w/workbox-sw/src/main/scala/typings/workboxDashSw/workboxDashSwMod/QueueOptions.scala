@@ -1,5 +1,6 @@
 package typings.workboxDashSw.workboxDashSwMod
 
+import typings.workboxDashSw.Anon_Queue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,12 +22,12 @@ trait QueueOptions extends js.Object {
   	 * Note: if the replay fails after a sync event, make sure you throw an
   	 * error, so the browser knows to retry the sync event later.
   	 */
-  def onSync(queue: Queue): Unit
+  def onSync(queue: Anon_Queue): Unit
 }
 
 object QueueOptions {
   @scala.inline
-  def apply(maxRetentionTime: Double, onSync: Queue => Unit): QueueOptions = {
+  def apply(maxRetentionTime: Double, onSync: Anon_Queue => Unit): QueueOptions = {
     val __obj = js.Dynamic.literal(maxRetentionTime = maxRetentionTime, onSync = js.Any.fromFunction1(onSync))
   
     __obj.asInstanceOf[QueueOptions]

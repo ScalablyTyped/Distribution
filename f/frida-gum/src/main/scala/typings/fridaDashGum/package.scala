@@ -33,6 +33,7 @@ package object fridaDashGum {
   */
   type ArmCallArgument = _ArmCallArgument | Double
   type ArmSystemRegister = `apsr-nzcvq`
+  type CSymbols = StringDictionary[NativePointerValue]
   type EnumerateAction = stop
   type ExceptionHandlerCallback = js.Function1[/* exception */ ExceptionDetails, Boolean | Unit]
   /**
@@ -93,19 +94,38 @@ package object fridaDashGum {
   type StalkerBlockEventFull = js.Tuple3[block, NativePointer | String, NativePointer | String]
   type StalkerCallEventBare = js.Tuple3[NativePointer | String, NativePointer | String, Double]
   type StalkerCallEventFull = js.Tuple4[call, NativePointer | String, NativePointer | String, Double]
-  type StalkerCallProbeCallback = js.Function1[/* args */ InvocationArguments, Unit]
+  type StalkerCallProbeCallback = StalkerScriptCallProbeCallback | StalkerNativeCallProbeCallback
   type StalkerCallProbeId = Double
   type StalkerCallSummary = StringDictionary[Double]
-  type StalkerCallout = js.Function1[/* context */ CpuContext, Unit]
+  type StalkerCallout = StalkerScriptCallout | StalkerNativeCallout
   type StalkerCompileEventBare = js.Tuple2[NativePointer | String, NativePointer | String]
   type StalkerCompileEventFull = js.Tuple3[compile, NativePointer | String, NativePointer | String]
   type StalkerEventBare = StalkerCallEventBare | StalkerRetEventBare | StalkerExecEventBare | StalkerBlockEventBare | StalkerCompileEventBare
   type StalkerEventFull = StalkerCallEventFull | StalkerRetEventFull | StalkerExecEventFull | StalkerBlockEventFull | StalkerCompileEventFull
   type StalkerExecEventBare = js.Array[NativePointer | String]
   type StalkerExecEventFull = js.Tuple2[exec, NativePointer | String]
+  /**
+    * Called synchronously when a call is made to the given address.
+    *
+    * Signature: `void onCall (GumCallSite * site, gpointer user_data)`
+    */
+  type StalkerNativeCallProbeCallback = NativePointer
+  /**
+    * Signature: `void onAesEnc (GumCpuContext * cpu_context, gpointer user_data)`
+    */
+  type StalkerNativeCallout = NativePointer
+  /**
+    * Signature: `void transform (GumStalkerIterator * iterator, GumStalkerWriter * output, gpointer user_data)`
+    */
+  type StalkerNativeTransformCallback = NativePointer
   type StalkerRetEventBare = js.Tuple3[NativePointer | String, NativePointer | String, Double]
   type StalkerRetEventFull = js.Tuple4[ret, NativePointer | String, NativePointer | String, Double]
-  type StalkerTransformCallback = StalkerX86TransformCallback | StalkerArm64TransformCallback
+  /**
+    * Called synchronously when a call is made to the given address.
+    */
+  type StalkerScriptCallProbeCallback = js.Function1[/* args */ InvocationArguments, Unit]
+  type StalkerScriptCallout = js.Function1[/* context */ CpuContext, Unit]
+  type StalkerTransformCallback = StalkerX86TransformCallback | StalkerArm64TransformCallback | StalkerNativeTransformCallback
   type StalkerX86TransformCallback = js.Function1[/* iterator */ StalkerX86Iterator, Unit]
   type ThreadId = Double
   /**

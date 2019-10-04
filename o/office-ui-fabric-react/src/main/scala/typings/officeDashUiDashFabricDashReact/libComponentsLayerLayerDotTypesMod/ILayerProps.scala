@@ -39,7 +39,10 @@ trait ILayerProps extends HTMLAttributes[HTMLDivElement | LayerBase] {
     * Callback for when the layer is mounted.
     */
   var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.undefined
-  /** Callback for when the layer is mounted. */
+  /**
+    * Callback for when the layer is mounted.
+    * @deprecated Use onLayerDidMount.
+    */
   var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
     * Callback for when the layer is unmounted.

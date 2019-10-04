@@ -26,7 +26,7 @@ trait Operation extends js.Object {
     */
   var isTerminal: js.UndefOr[Boolean] = js.undefined
   /**
-    * The region and Availability Zone.
+    * The AWS Region and Availability Zone.
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   /**

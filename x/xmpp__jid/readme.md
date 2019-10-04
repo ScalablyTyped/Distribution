@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmpp__jid
 
-Typings are for version 0.6
+Typings are for version 1.3
 
 ## Library description:
 XMPP identifiers (JID) for JavaScript

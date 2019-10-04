@@ -197,7 +197,7 @@ class TableRow () extends ClientObject {
   def getCellPadding_Top(cellPaddingLocation: Top): ClientResult[Double] = js.native
   /**
     *
-    * Gets the next row. Throws if this row is the last one.
+    * Gets the next row. Throws an error if this row is the last one.
     *
     * [Api set: WordApi 1.3]
     */

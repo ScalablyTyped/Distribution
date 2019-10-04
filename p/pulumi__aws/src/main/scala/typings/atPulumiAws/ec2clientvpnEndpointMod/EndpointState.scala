@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2clientvpnEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActiveDirectoryIdRootCertificateChainArn
-import typings.atPulumiAws.Anon_CloudwatchLogGroupCloudwatchLogStream
+import typings.atPulumiAws.typesInputMod.ec2clientvpnNs.EndpointAuthenticationOptions
+import typings.atPulumiAws.typesInputMod.ec2clientvpnNs.EndpointConnectionLogOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait EndpointState extends js.Object {
   /**
     * Information about the authentication method to be used to authenticate clients.
     */
-  val authenticationOptions: js.UndefOr[Input[Anon_ActiveDirectoryIdRootCertificateChainArn]] = js.undefined
+  val authenticationOptions: js.UndefOr[Input[EndpointAuthenticationOptions]] = js.undefined
   /**
     * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
     */
@@ -20,7 +20,7 @@ trait EndpointState extends js.Object {
   /**
     * Information about the client connection logging options.
     */
-  val connectionLogOptions: js.UndefOr[Input[Anon_CloudwatchLogGroupCloudwatchLogStream]] = js.undefined
+  val connectionLogOptions: js.UndefOr[Input[EndpointConnectionLogOptions]] = js.undefined
   /**
     * Name of the repository.
     */
@@ -58,9 +58,9 @@ trait EndpointState extends js.Object {
 object EndpointState {
   @scala.inline
   def apply(
-    authenticationOptions: Input[Anon_ActiveDirectoryIdRootCertificateChainArn] = null,
+    authenticationOptions: Input[EndpointAuthenticationOptions] = null,
     clientCidrBlock: Input[String] = null,
-    connectionLogOptions: Input[Anon_CloudwatchLogGroupCloudwatchLogStream] = null,
+    connectionLogOptions: Input[EndpointConnectionLogOptions] = null,
     description: Input[String] = null,
     dnsName: Input[String] = null,
     dnsServers: Input[js.Array[Input[String]]] = null,

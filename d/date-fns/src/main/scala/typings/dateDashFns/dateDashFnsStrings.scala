@@ -6,49 +6,49 @@ import scala.scalajs.js.annotation._
 
 object dateDashFnsStrings {
   @js.native
-  sealed trait M extends js.Object
-  
-  @js.native
-  sealed trait Y extends js.Object
-  
-  @js.native
   sealed trait ceil extends js.Object
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait day extends js.Object
   
   @js.native
   sealed trait floor extends js.Object
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait hour extends js.Object
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait minute extends js.Object
+  
+  @js.native
+  sealed trait month extends js.Object
   
   @js.native
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait second extends js.Object
   
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def Y: Y = "Y".asInstanceOf[Y]
+  @js.native
+  sealed trait year extends js.Object
+  
   @scala.inline
   def ceil: ceil = "ceil".asInstanceOf[ceil]
   @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  def day: day = "day".asInstanceOf[day]
   @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
   @scala.inline
-  def h: h = "h".asInstanceOf[h]
+  def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def minute: minute = "minute".asInstanceOf[minute]
+  @scala.inline
+  def month: month = "month".asInstanceOf[month]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  def second: second = "second".asInstanceOf[second]
+  @scala.inline
+  def year: year = "year".asInstanceOf[year]
 }
 

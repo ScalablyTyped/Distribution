@@ -1,7 +1,7 @@
 package typings.atPulumiAws.transferServerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_VpcEndpointIdInput
+import typings.atPulumiAws.typesInputMod.transferNs.ServerEndpointDetails
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,9 +19,9 @@ trait ServerState extends js.Object {
   /**
     * The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. Fields documented below.
     */
-  val endpointDetails: js.UndefOr[Input[Anon_VpcEndpointIdInput]] = js.undefined
+  val endpointDetails: js.UndefOr[Input[ServerEndpointDetails]] = js.undefined
   /**
-    * The type of endpoint that you want your SFTP server connect to. If you connect to a `VPC_ENDPOINT`, your SFTP server isn't accessible over the public internet. If you want to connect your SFTP server via public internet, set `PUBLIC`.
+    * The type of endpoint that you want your SFTP server connect to. If you connect to a `VPC_ENDPOINT`, your SFTP server isn't accessible over the public internet. If you want to connect your SFTP server via public internet, set `PUBLIC`.  Defaults to `PUBLIC`.
     */
   val endpointType: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -55,7 +55,7 @@ object ServerState {
   def apply(
     arn: Input[String] = null,
     endpoint: Input[String] = null,
-    endpointDetails: Input[Anon_VpcEndpointIdInput] = null,
+    endpointDetails: Input[ServerEndpointDetails] = null,
     endpointType: Input[String] = null,
     forceDestroy: Input[Boolean] = null,
     identityProviderType: Input[String] = null,

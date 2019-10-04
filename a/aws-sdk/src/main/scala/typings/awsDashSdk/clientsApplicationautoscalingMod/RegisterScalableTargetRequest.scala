@@ -18,7 +18,7 @@ trait RegisterScalableTargetRequest extends js.Object {
     */
   var ResourceId: ResourceIdMaxLen1600
   /**
-    * Application Auto Scaling creates a service-linked role that grants it permissions to modify the scalable target on your behalf. For more information, see Service-Linked Roles for Application Auto Scaling. For resources that are not supported using a service-linked role, this parameter is required, and it must specify the ARN of an IAM role that allows Application Auto Scaling to modify the scalable target on your behalf.
+    * Application Auto Scaling creates a service-linked role that grants it permissions to modify the scalable target on your behalf. For more information, see Service-Linked Roles for Application Auto Scaling. For Amazon EMR, this parameter is required, and it must specify the ARN of an IAM role that allows Application Auto Scaling to modify the scalable target on your behalf.
     */
   var RoleARN: js.UndefOr[ResourceIdMaxLen1600] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait RegisterScalableTargetRequest extends js.Object {
     */
   var ScalableDimension: typings.awsDashSdk.clientsApplicationautoscalingMod.ScalableDimension
   /**
-    * The namespace of the AWS service that provides the resource or custom-resource for a resource provided by your own application or service. For more information, see AWS Service Namespaces in the Amazon Web Services General Reference.
+    * The namespace of the AWS service that provides the resource or custom-resource for a resource provided by your own application or service. For more information, see AWS Service Namespaces in the Amazon Web Services General Reference. 
     */
   var ServiceNamespace: typings.awsDashSdk.clientsApplicationautoscalingMod.ServiceNamespace
   /**

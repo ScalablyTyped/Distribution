@@ -1,9 +1,21 @@
 package typings.atIonicReact.distTypesComponentsMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.atIonicReact.Anon_AboutAccessKey
-import typings.atIonicReact.Anon_ChildrenEvent
-import typings.atIonicReact.distTypesComponentsReactPropsMod.ReactProps
+import typings.atIonicReact.Anon_AnimatedBackdropDismiss
+import typings.atIonicReact.Anon_ChildrenReactNode
+import typings.atIonicReact.atIonicReactStrings.animated
+import typings.atIonicReact.atIonicReactStrings.backdropDismiss
+import typings.atIonicReact.atIonicReactStrings.cssClass
+import typings.atIonicReact.atIonicReactStrings.delegate
+import typings.atIonicReact.atIonicReactStrings.enterAnimation
+import typings.atIonicReact.atIonicReactStrings.event
+import typings.atIonicReact.atIonicReactStrings.id
+import typings.atIonicReact.atIonicReactStrings.keyboardClose
+import typings.atIonicReact.atIonicReactStrings.leaveAnimation
+import typings.atIonicReact.atIonicReactStrings.mode
+import typings.atIonicReact.atIonicReactStrings.showBackdrop
+import typings.atIonicReact.atIonicReactStrings.translucent
+import typings.atIonicReact.distTypesComponentsCreateOverlayComponentMod.ReactOverlayProps
 import typings.react.reactMod.Context
 import typings.std.Pick
 import scala.scalajs.js
@@ -12,22 +24,22 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/react/dist/types/components", "IonPopover")
 @js.native
-class IonPopover protected () extends Anon_AboutAccessKey {
-  def this(props: Anon_ChildrenEvent with (Pick[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPopover */ _, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 181 */ js.Any
-      ]) with ReactProps) = this()
+class IonPopover protected () extends Anon_AnimatedBackdropDismiss {
+  def this(props: (Pick[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+        id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+      ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
 }
 
 @JSImport("@ionic/react/dist/types/components", "IonPopover")
 @js.native
 object IonPopover
   extends Instantiable1[
-      /* props */ Anon_ChildrenEvent with (Pick[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPopover */ _, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 181 */ js.Any
-      ]) with ReactProps, 
-      Anon_AboutAccessKey
+      /* props */ (Pick[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+        id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+      ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
+      Anon_AnimatedBackdropDismiss
     ] {
   var contextType: js.UndefOr[Context[_]] = js.native
   val displayName: String = js.native

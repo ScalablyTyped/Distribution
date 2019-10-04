@@ -149,6 +149,12 @@ package object clientsEsMod {
   type StorageTypeName = java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.`Policy-Min-TLS-1-0-2019-07`
+    - typings.awsDashSdk.awsDashSdkStrings.`Policy-Min-TLS-1-2-2019-07`
+    - java.lang.String
+  */
+  type TLSSecurityPolicy = _TLSSecurityPolicy | java.lang.String
   type TagKey = java.lang.String
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String

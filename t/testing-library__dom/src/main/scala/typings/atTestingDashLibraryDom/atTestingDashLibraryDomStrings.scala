@@ -211,6 +211,9 @@ object atTestingDashLibraryDomStrings {
   sealed trait rateChange extends EventType
   
   @js.native
+  sealed trait reset extends EventType
+  
+  @js.native
   sealed trait scroll extends EventType
   
   @js.native
@@ -394,6 +397,8 @@ object atTestingDashLibraryDomStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def rateChange: rateChange = "rateChange".asInstanceOf[rateChange]
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline

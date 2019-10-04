@@ -11,11 +11,11 @@ trait IStream extends js.Object {
   def read(
     stream: js.Any,
     receiver: js.Function3[/* index */ Double, /* data */ js.Array[_], /* delay */ Double, _]
-  ): js.Promise[TStreamReadResult] = js.native
+  ): js.Promise[IStreamReadResult] = js.native
   def read(
     stream: js.Any,
     receiver: js.Function3[/* index */ Double, /* data */ js.Array[_], /* delay */ Double, _],
-    options: TStreamReadOptions
-  ): js.Promise[TStreamReadResult] = js.native
+    options: IStreamReadOptions
+  ): js.Promise[IStreamReadResult] = js.native
 }
 

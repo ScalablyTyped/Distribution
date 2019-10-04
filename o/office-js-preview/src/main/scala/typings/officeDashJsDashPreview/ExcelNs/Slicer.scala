@@ -38,7 +38,7 @@ class Slicer () extends ClientObject {
   /**
     *
     * Represents the height, in points, of the slicer.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -63,7 +63,7 @@ class Slicer () extends ClientObject {
   /**
     *
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -95,7 +95,7 @@ class Slicer () extends ClientObject {
   val slicerItems: SlicerItemCollection = js.native
   /**
     *
-    * Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
+    * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -112,7 +112,7 @@ class Slicer () extends ClientObject {
   /**
     *
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -121,7 +121,7 @@ class Slicer () extends ClientObject {
   /**
     *
     * Represents the width, in points, of the slicer.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -160,28 +160,18 @@ class Slicer () extends ClientObject {
     */
   def getSelectedItems(): ClientResult[js.Array[String]] = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Slicer` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Slicer` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Slicer` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Slicer = js.native
-  def load(option: String): Slicer = js.native
-  def load(option: js.Array[String]): Slicer = js.native
-  def load(option: Anon_Expand): Slicer = js.native
-  def load(option: SlicerLoadOptions): Slicer = js.native
+  def load(options: SlicerLoadOptions): Slicer = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Slicer = js.native
+  def load(propertyNames: String): Slicer = js.native
+  def load(propertyNames: js.Array[String]): Slicer = js.native
   /**
     *
-    * Select slicer items based on their keys. Previous selection will be cleared.
+    * Selects slicer items based on their keys. The previous selections are cleared.
     All items will be selected by default if the array is empty.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

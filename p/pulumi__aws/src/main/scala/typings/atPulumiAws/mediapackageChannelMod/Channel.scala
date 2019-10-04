@@ -1,7 +1,7 @@
 package typings.atPulumiAws.mediapackageChannelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IngestEndpoints
+import typings.atPulumiAws.typesOutputMod.mediapackageNs.ChannelHlsIngest
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -38,7 +38,7 @@ class Channel protected () extends CustomResource {
   /**
     * A single item list of HLS ingest information
     */
-  val hlsIngests: Output[js.Array[Anon_IngestEndpoints]] = js.native
+  val hlsIngests: Output[js.Array[ChannelHlsIngest]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

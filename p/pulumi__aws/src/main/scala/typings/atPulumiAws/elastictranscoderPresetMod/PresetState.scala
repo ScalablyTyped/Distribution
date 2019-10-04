@@ -1,11 +1,11 @@
 package typings.atPulumiAws.elastictranscoderPresetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AspectRatioBitRateCodec
-import typings.atPulumiAws.Anon_AspectRatioFormat
-import typings.atPulumiAws.Anon_AudioPackingModeBitRate
-import typings.atPulumiAws.Anon_BitDepthBitOrder
-import typings.atPulumiAws.Anon_HorizontalAlignHorizontalOffset
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetAudio
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetAudioCodecOptions
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetThumbnails
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetVideo
+import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetVideoWatermark
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +16,11 @@ trait PresetState extends js.Object {
   /**
     * Audio parameters object (documented below).
     */
-  val audio: js.UndefOr[Input[Anon_AudioPackingModeBitRate]] = js.undefined
+  val audio: js.UndefOr[Input[PresetAudio]] = js.undefined
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: js.UndefOr[Input[Anon_BitDepthBitOrder]] = js.undefined
+  val audioCodecOptions: js.UndefOr[Input[PresetAudioCodecOptions]] = js.undefined
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
@@ -36,34 +36,34 @@ trait PresetState extends js.Object {
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: js.UndefOr[Input[Anon_AspectRatioFormat]] = js.undefined
+  val thumbnails: js.UndefOr[Input[PresetThumbnails]] = js.undefined
   val `type`: js.UndefOr[Input[String]] = js.undefined
   /**
     * Video parameters object (documented below)
     */
-  val video: js.UndefOr[Input[Anon_AspectRatioBitRateCodec]] = js.undefined
+  val video: js.UndefOr[Input[PresetVideo]] = js.undefined
   val videoCodecOptions: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
   /**
     * Watermark parameters for the video parameters (documented below)
     * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
-  val videoWatermarks: js.UndefOr[Input[js.Array[Input[Anon_HorizontalAlignHorizontalOffset]]]] = js.undefined
+  val videoWatermarks: js.UndefOr[Input[js.Array[Input[PresetVideoWatermark]]]] = js.undefined
 }
 
 object PresetState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    audio: Input[Anon_AudioPackingModeBitRate] = null,
-    audioCodecOptions: Input[Anon_BitDepthBitOrder] = null,
+    audio: Input[PresetAudio] = null,
+    audioCodecOptions: Input[PresetAudioCodecOptions] = null,
     container: Input[String] = null,
     description: Input[String] = null,
     name: Input[String] = null,
-    thumbnails: Input[Anon_AspectRatioFormat] = null,
+    thumbnails: Input[PresetThumbnails] = null,
     `type`: Input[String] = null,
-    video: Input[Anon_AspectRatioBitRateCodec] = null,
+    video: Input[PresetVideo] = null,
     videoCodecOptions: Input[StringDictionary[_]] = null,
-    videoWatermarks: Input[js.Array[Input[Anon_HorizontalAlignHorizontalOffset]]] = null
+    videoWatermarks: Input[js.Array[Input[PresetVideoWatermark]]] = null
   ): PresetState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

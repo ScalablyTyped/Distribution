@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "portfinder"
-version := "1.0.20-fef00e"
+version := "1.0.24-1b23d5"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

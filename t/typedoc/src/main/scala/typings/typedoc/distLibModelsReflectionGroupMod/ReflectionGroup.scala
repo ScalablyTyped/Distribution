@@ -1,5 +1,6 @@
 package typings.typedoc.distLibModelsReflectionGroupMod
 
+import typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind
 import scala.scalajs.js
@@ -15,6 +16,7 @@ class ReflectionGroup protected () extends js.Object {
   var allChildrenArePrivate: js.UndefOr[Boolean] = js.native
   var allChildrenAreProtectedOrPrivate: js.UndefOr[Boolean] = js.native
   var allChildrenHaveOwnDocument: js.Function = js.native
+  var categories: js.UndefOr[js.Array[ReflectionCategory]] = js.native
   var children: js.Array[Reflection] = js.native
   var cssClasses: js.UndefOr[String] = js.native
   var getAllChildrenHaveOwnDocument: js.Any = js.native

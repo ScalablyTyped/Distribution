@@ -1,12 +1,12 @@
 package typings.atPulumiAws.ecsServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AssignPublicIpSecurityGroups
-import typings.atPulumiAws.Anon_ContainerNameContainerPortElbName
-import typings.atPulumiAws.Anon_ContainerNameContainerPortPort
-import typings.atPulumiAws.Anon_ExpressionTypeInput
-import typings.atPulumiAws.Anon_FieldTypeInput
-import typings.atPulumiAws.Anon_TypeInput
+import typings.atPulumiAws.typesInputMod.ecsNs.ServiceDeploymentController
+import typings.atPulumiAws.typesInputMod.ecsNs.ServiceLoadBalancer
+import typings.atPulumiAws.typesInputMod.ecsNs.ServiceNetworkConfiguration
+import typings.atPulumiAws.typesInputMod.ecsNs.ServiceOrderedPlacementStrategy
+import typings.atPulumiAws.typesInputMod.ecsNs.ServicePlacementConstraint
+import typings.atPulumiAws.typesInputMod.ecsNs.ServiceServiceRegistries
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait ServiceState extends js.Object {
   /**
     * Configuration block containing deployment controller configuration. Defined below.
     */
-  val deploymentController: js.UndefOr[Input[Anon_TypeInput]] = js.undefined
+  val deploymentController: js.UndefOr[Input[ServiceDeploymentController]] = js.undefined
   /**
     * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
     */
@@ -52,7 +52,7 @@ trait ServiceState extends js.Object {
   /**
     * A load balancer block. Load balancers documented below.
     */
-  val loadBalancers: js.UndefOr[Input[js.Array[Input[Anon_ContainerNameContainerPortElbName]]]] = js.undefined
+  val loadBalancers: js.UndefOr[Input[js.Array[Input[ServiceLoadBalancer]]]] = js.undefined
   /**
     * The name of the service (up to 255 letters, numbers, hyphens, and underscores)
     */
@@ -60,16 +60,16 @@ trait ServiceState extends js.Object {
   /**
     * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
     */
-  val networkConfiguration: js.UndefOr[Input[Anon_AssignPublicIpSecurityGroups]] = js.undefined
+  val networkConfiguration: js.UndefOr[Input[ServiceNetworkConfiguration]] = js.undefined
   /**
     * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
     */
-  val orderedPlacementStrategies: js.UndefOr[Input[js.Array[Input[Anon_FieldTypeInput]]]] = js.undefined
+  val orderedPlacementStrategies: js.UndefOr[Input[js.Array[Input[ServiceOrderedPlacementStrategy]]]] = js.undefined
   /**
     * rules that are taken into consideration during task placement. Maximum number of
     * `placementConstraints` is `10`. Defined below.
     */
-  val placementConstraints: js.UndefOr[Input[js.Array[Input[Anon_ExpressionTypeInput]]]] = js.undefined
+  val placementConstraints: js.UndefOr[Input[js.Array[Input[ServicePlacementConstraint]]]] = js.undefined
   /**
     * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
     */
@@ -85,7 +85,7 @@ trait ServiceState extends js.Object {
   /**
     * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
     */
-  val serviceRegistries: js.UndefOr[Input[Anon_ContainerNameContainerPortPort]] = js.undefined
+  val serviceRegistries: js.UndefOr[Input[ServiceServiceRegistries]] = js.undefined
   /**
     * Key-value mapping of resource tags
     */
@@ -104,7 +104,7 @@ object ServiceState {
   @scala.inline
   def apply(
     cluster: Input[String] = null,
-    deploymentController: Input[Anon_TypeInput] = null,
+    deploymentController: Input[ServiceDeploymentController] = null,
     deploymentMaximumPercent: Input[Double] = null,
     deploymentMinimumHealthyPercent: Input[Double] = null,
     desiredCount: Input[Double] = null,
@@ -112,15 +112,15 @@ object ServiceState {
     healthCheckGracePeriodSeconds: Input[Double] = null,
     iamRole: Input[String] = null,
     launchType: Input[String] = null,
-    loadBalancers: Input[js.Array[Input[Anon_ContainerNameContainerPortElbName]]] = null,
+    loadBalancers: Input[js.Array[Input[ServiceLoadBalancer]]] = null,
     name: Input[String] = null,
-    networkConfiguration: Input[Anon_AssignPublicIpSecurityGroups] = null,
-    orderedPlacementStrategies: Input[js.Array[Input[Anon_FieldTypeInput]]] = null,
-    placementConstraints: Input[js.Array[Input[Anon_ExpressionTypeInput]]] = null,
+    networkConfiguration: Input[ServiceNetworkConfiguration] = null,
+    orderedPlacementStrategies: Input[js.Array[Input[ServiceOrderedPlacementStrategy]]] = null,
+    placementConstraints: Input[js.Array[Input[ServicePlacementConstraint]]] = null,
     platformVersion: Input[String] = null,
     propagateTags: Input[String] = null,
     schedulingStrategy: Input[String] = null,
-    serviceRegistries: Input[Anon_ContainerNameContainerPortPort] = null,
+    serviceRegistries: Input[ServiceServiceRegistries] = null,
     tags: Input[StringDictionary[_]] = null,
     taskDefinition: Input[String] = null,
     waitForSteadyState: Input[Boolean] = null

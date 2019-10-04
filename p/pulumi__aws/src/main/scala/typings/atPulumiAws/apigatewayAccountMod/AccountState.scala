@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayAccountMod
 
-import typings.atPulumiAws.Anon_BurstLimitRateLimit
+import typings.atPulumiAws.typesInputMod.apigatewayNs.AccountThrottleSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,12 +16,12 @@ trait AccountState extends js.Object {
   /**
     * Account-Level throttle settings. See exported fields below.
     */
-  val throttleSettings: js.UndefOr[Input[Anon_BurstLimitRateLimit]] = js.undefined
+  val throttleSettings: js.UndefOr[Input[AccountThrottleSettings]] = js.undefined
 }
 
 object AccountState {
   @scala.inline
-  def apply(cloudwatchRoleArn: Input[String] = null, throttleSettings: Input[Anon_BurstLimitRateLimit] = null): AccountState = {
+  def apply(cloudwatchRoleArn: Input[String] = null, throttleSettings: Input[AccountThrottleSettings] = null): AccountState = {
     val __obj = js.Dynamic.literal()
     if (cloudwatchRoleArn != null) __obj.updateDynamic("cloudwatchRoleArn")(cloudwatchRoleArn.asInstanceOf[js.Any])
     if (throttleSettings != null) __obj.updateDynamic("throttleSettings")(throttleSettings.asInstanceOf[js.Any])

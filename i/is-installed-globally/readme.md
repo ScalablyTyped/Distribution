@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-installed-globally
 
-Typings are for version 0.2.0
+Typings are for version 0.3.0
 
 ## Library description:
 Check if your package was installed globally

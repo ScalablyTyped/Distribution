@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd-touch-backend"
-version := "0.4-dt-20180803Z-a4a2a4"
+version := "9.4.0-9bca9c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,7 @@
 package typings.three.srcLoadersLoadingManagerMod
 
+import typings.std.RegExp
+import typings.three.srcLoadersLoaderMod.Loader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +20,9 @@ class LoadingManager () extends js.Object {
     onError: js.Function1[/* url */ String, Unit]
   ) = this()
   var onStart: js.UndefOr[js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit]] = js.native
+  // handlers
+  def addHandler(regex: RegExp, loader: Loader): this.type = js.native
+  def getHandler(file: String): Loader | Null = js.native
   def itemEnd(url: String): Unit = js.native
   def itemError(url: String): Unit = js.native
   def itemStart(url: String): Unit = js.native
@@ -36,6 +41,7 @@ class LoadingManager () extends js.Object {
   	 * The default is a function with empty body.
   	 */
   def onProgress(item: js.Any, loaded: Double, total: Double): Unit = js.native
+  def removeHandler(regex: RegExp): this.type = js.native
   /**
   	 * Given a URL, uses the URL modifier callback (if any) and returns a resolved URL.
   	 * If no URL modifier is set, returns the original URL.
@@ -48,7 +54,7 @@ class LoadingManager () extends js.Object {
   	 * This behavior can be used to load assets from .ZIP files, drag-and-drop APIs, and Data URIs.
   	 * @param callback URL modifier callback. Called with url argument, and must return resolvedURL.
   	 */
-  def setURLModifier(): Unit = js.native
-  def setURLModifier(callback: js.Function1[/* url */ String, String]): Unit = js.native
+  def setURLModifier(): this.type = js.native
+  def setURLModifier(callback: js.Function1[/* url */ String, String]): this.type = js.native
 }
 

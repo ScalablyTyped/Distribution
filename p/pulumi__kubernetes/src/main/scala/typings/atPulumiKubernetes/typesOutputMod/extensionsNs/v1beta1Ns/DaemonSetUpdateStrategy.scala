@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  */
 trait DaemonSetUpdateStrategy extends js.Object {
   /**
     * Rolling update config params. Present only if type = "RollingUpdate".

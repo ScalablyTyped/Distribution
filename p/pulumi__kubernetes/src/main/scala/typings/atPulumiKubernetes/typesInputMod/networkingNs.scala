@@ -19,7 +19,6 @@ import typings.atPulumiKubernetes.typesInputMod.networkingNs.v1beta1Ns.Ingress
 import typings.atPulumiKubernetes.typesInputMod.networkingNs.v1beta1Ns.IngressBackend
 import typings.atPulumiKubernetes.typesInputMod.networkingNs.v1beta1Ns.IngressRule
 import typings.atPulumiKubernetes.typesInputMod.networkingNs.v1beta1Ns.IngressSpec
-import typings.atPulumiKubernetes.typesInputMod.networkingNs.v1beta1Ns.IngressStatus
 import typings.atPulumiKubernetes.typesInputMod.networkingNs.v1beta1Ns.IngressTLS
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -57,14 +56,14 @@ object networkingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`networkingDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.NetworkPolicy]] = js.undefined
       /**
@@ -110,7 +109,7 @@ object networkingNs extends js.Object {
         * List of sources which should be able to access the pods selected for this rule. Items in
         * this list are combined using a logical OR operation. If this field is empty or missing,
         * this rule matches all sources (traffic not restricted by source). If this field is present
-        * and contains at least on item, this rule allows traffic only if the traffic matches at
+        * and contains at least one item, this rule allows traffic only if the traffic matches at
         * least one item in the from list.
         */
       var from: js.UndefOr[Input[js.Array[Input[NetworkPolicyPeer]]]] = js.undefined
@@ -132,7 +131,7 @@ object networkingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`networkingDOTk8sDOTio/v1`]] = js.undefined
       /**
@@ -143,7 +142,7 @@ object networkingNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.NetworkPolicyList]] = js.undefined
       /**
@@ -292,31 +291,26 @@ object networkingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`networkingDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Ingress]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec is the desired state of the Ingress. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[IngressSpec]] = js.undefined
-      /**
-        * Status is the current state of the Ingress. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[IngressStatus]] = js.undefined
     }
     
     /**
@@ -341,7 +335,7 @@ object networkingNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`networkingDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
@@ -352,12 +346,12 @@ object networkingNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.IngressList]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }

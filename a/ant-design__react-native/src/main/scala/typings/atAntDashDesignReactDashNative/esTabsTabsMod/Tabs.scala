@@ -9,6 +9,7 @@ import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStri
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.vertical
 import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.PropsType
 import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.TabData
+import typings.atReactDashNativeDashCommunityViewpager.atReactDashNativeDashCommunityViewpagerMod.default
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.Global.JSXNs.Element
@@ -17,7 +18,6 @@ import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.NativeScrollEvent
 import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
-import typings.reactDashNative.reactDashNativeMod.ViewPagerAndroid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ class Tabs protected ()
   var prevCurrentTab: Double = js.native
   var scrollView: Anon_Component = js.native
   var tabCache: NumberDictionary[ReactNode] = js.native
-  var viewPager: ViewPagerAndroid | Null = js.native
+  var viewPager: default | Null = js.native
   @JSName("componentDidMount")
   def componentDidMount_MTabs(): Unit = js.native
   @JSName("componentDidUpdate")

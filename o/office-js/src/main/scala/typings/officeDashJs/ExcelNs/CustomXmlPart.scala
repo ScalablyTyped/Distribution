@@ -50,25 +50,15 @@ class CustomXmlPart () extends ClientObject {
     */
   def getXml(): ClientResult[String] = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.CustomXmlPart` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CustomXmlPart = js.native
-  def load(option: String): CustomXmlPart = js.native
-  def load(option: js.Array[String]): CustomXmlPart = js.native
-  def load(option: Anon_Expand): CustomXmlPart = js.native
-  def load(option: CustomXmlPartLoadOptions): CustomXmlPart = js.native
+  def load(options: CustomXmlPartLoadOptions): CustomXmlPart = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): CustomXmlPart = js.native
+  def load(propertyNames: String): CustomXmlPart = js.native
+  def load(propertyNames: js.Array[String]): CustomXmlPart = js.native
   /**
     *
     * Sets the custom XML part's full XML content.

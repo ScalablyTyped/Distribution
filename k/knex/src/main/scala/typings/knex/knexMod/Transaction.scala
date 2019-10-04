@@ -9,6 +9,7 @@ trait Transaction[TRecord /* <: js.Object */, TResult] extends Knex[TRecord, TRe
   var executionPromise: js.Promise[TResult] = js.native
   def commit(): QueryBuilder[TRecord, TResult] = js.native
   def commit(value: js.Any): QueryBuilder[TRecord, TResult] = js.native
+  def isCompleted(): Boolean = js.native
   def query[TRecord /* <: js.Object */, TResult](conn: js.Any, sql: js.Any, status: js.Any, value: js.Any): QueryBuilder[TRecord, TResult] = js.native
   def rollback(): QueryBuilder[TRecord, TResult] = js.native
   def rollback(error: js.Any): QueryBuilder[TRecord, TResult] = js.native

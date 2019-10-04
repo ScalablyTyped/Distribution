@@ -1,10 +1,14 @@
 package typings.sipDotJs
 
+import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object sipDotJsStrings {
+  @js.native
+  sealed trait `0DOT15DOT6` extends js.Object
+  
   @js.native
   sealed trait ACK extends js.Object
   
@@ -75,6 +79,9 @@ object sipDotJsStrings {
   sealed trait connecting extends js.Object
   
   @js.native
+  sealed trait debug extends LogLevel
+  
+  @js.native
   sealed trait dialog extends js.Object
   
   @js.native
@@ -82,6 +89,9 @@ object sipDotJsStrings {
   
   @js.native
   sealed trait dtmf extends js.Object
+  
+  @js.native
+  sealed trait error extends LogLevel
   
   @js.native
   sealed trait failed extends js.Object
@@ -124,6 +134,9 @@ object sipDotJsStrings {
   
   @js.native
   sealed trait inviteSent extends js.Object
+  
+  @js.native
+  sealed trait log extends LogLevel
   
   @js.native
   sealed trait message extends js.Object
@@ -207,6 +220,9 @@ object sipDotJsStrings {
   sealed trait sip extends js.Object
   
   @js.native
+  sealed trait sipDOTjs extends js.Object
+  
+  @js.native
   sealed trait sips extends js.Object
   
   @js.native
@@ -236,6 +252,11 @@ object sipDotJsStrings {
   @js.native
   sealed trait userMediaRequest extends js.Object
   
+  @js.native
+  sealed trait warn extends LogLevel
+  
+  @scala.inline
+  def `0DOT15DOT6`: `0DOT15DOT6` = "0.15.6".asInstanceOf[`0DOT15DOT6`]
   @scala.inline
   def ACK: ACK = "ACK".asInstanceOf[ACK]
   @scala.inline
@@ -283,11 +304,15 @@ object sipDotJsStrings {
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def directionChanged: directionChanged = "directionChanged".asInstanceOf[directionChanged]
   @scala.inline
   def dtmf: dtmf = "dtmf".asInstanceOf[dtmf]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
@@ -316,6 +341,8 @@ object sipDotJsStrings {
   def invite: invite = "invite".asInstanceOf[invite]
   @scala.inline
   def inviteSent: inviteSent = "inviteSent".asInstanceOf[inviteSent]
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
@@ -369,6 +396,8 @@ object sipDotJsStrings {
   @scala.inline
   def sip: sip = "sip".asInstanceOf[sip]
   @scala.inline
+  def sipDOTjs: sipDOTjs = "sip.js".asInstanceOf[sipDOTjs]
+  @scala.inline
   def sips: sips = "sips".asInstanceOf[sips]
   @scala.inline
   def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
@@ -388,5 +417,7 @@ object sipDotJsStrings {
   def userMediaFailed: userMediaFailed = "userMediaFailed".asInstanceOf[userMediaFailed]
   @scala.inline
   def userMediaRequest: userMediaRequest = "userMediaRequest".asInstanceOf[userMediaRequest]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
 }
 

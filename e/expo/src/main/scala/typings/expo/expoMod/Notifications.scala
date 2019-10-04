@@ -2,7 +2,9 @@ package typings.expo.expoMod
 
 import typings.expo.Anon_Data
 import typings.expo.Anon_Day
+import typings.expo.Anon_DayHour
 import typings.expo.Anon_GcmSenderId
+import typings.expo.Anon_Interval
 import typings.expo.buildNotificationsNotificationsDotTypesMod.ActionType
 import typings.expo.buildNotificationsNotificationsDotTypesMod.Channel
 import typings.expo.buildNotificationsNotificationsDotTypesMod.LocalNotification
@@ -32,6 +34,9 @@ object Notifications extends js.Object {
   def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
   def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
   def scheduleLocalNotificationAsync(notification: LocalNotification, options: Anon_Day): js.Promise[ReactText] = js.native
+  def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = js.native
+  def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Anon_DayHour): js.Promise[String] = js.native
+  def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Anon_Interval): js.Promise[String] = js.native
   def setBadgeNumberAsync(number: Double): js.Promise[Unit] = js.native
 }
 

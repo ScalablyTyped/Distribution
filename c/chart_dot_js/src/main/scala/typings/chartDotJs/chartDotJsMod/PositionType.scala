@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.chartDotJs.chartDotJsStrings.right
   - typings.chartDotJs.chartDotJsStrings.top
   - typings.chartDotJs.chartDotJsStrings.bottom
+  - typings.chartDotJs.chartDotJsStrings.chartArea
 */
 trait PositionType extends js.Object
 

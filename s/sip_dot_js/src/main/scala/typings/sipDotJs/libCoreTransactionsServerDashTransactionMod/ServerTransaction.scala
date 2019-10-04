@@ -25,14 +25,14 @@ abstract class ServerTransaction protected () extends Transaction {
   var user: ServerTransactionUser = js.native
   /**
     * Receive incoming requests from the transport which match this transaction.
-    * @param request The incoming request.
+    * @param request - The incoming request.
     */
   def receiveRequest(request: IncomingRequestMessage): Unit = js.native
   /**
     * Receive outgoing responses to this request from the transaction user.
     * Responses will be delivered to the transport as necessary.
-    * @param statusCode Response status code.
-    * @param response Response.
+    * @param statusCode - Response status code.
+    * @param response - Response.
     */
   def receiveResponse(statusCode: Double, response: String): Unit = js.native
 }

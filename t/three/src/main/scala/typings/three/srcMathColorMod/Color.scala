@@ -74,8 +74,20 @@ class Color () extends js.Object {
   	 */
   def copySRGBToLinear(color: Color): Color = js.native
   def equals(color: Color): Boolean = js.native
-  def fromArray(rgb: js.Array[Double]): this.type = js.native
-  def fromArray(rgb: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this color's red, green and blue value from the provided array.
+  	 * @param array the source array.
+  	 * @param offset (optional) offset into the array. Default is 0.
+  	 */
+  def fromArray(array: js.Array[Double]): this.type = js.native
+  def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this color's red, green and blue value from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): this.type = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
   def getHSL(target: HSL): HSL = js.native
   /**
   	 * Returns the hexadecimal value of this color.
@@ -122,9 +134,21 @@ class Color () extends js.Object {
   	 */
   def setStyle(style: String): Color = js.native
   def sub(color: Color): this.type = js.native
+  /**
+  	 * Returns an array [red, green, blue], or copies red, green and blue into the provided array.
+  	 * @param array (optional) array to store the color to. If this is not provided, a new array will be created.
+  	 * @param offset (optional) optional offset into the array.
+  	 * @return The created or provided array.
+  	 */
   def toArray(): js.Array[Double] = js.native
   def toArray(array: js.Array[Double]): js.Array[Double] = js.native
   def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  /**
+  	 * Copies red, green and blue into the provided array-like.
+  	 * @param array array-like to store the color to.
+  	 * @param offset (optional) optional offset into the array-like.
+  	 * @return The provided array-like.
+  	 */
   def toArray(xyz: ArrayLike[Double]): ArrayLike[Double] = js.native
   def toArray(xyz: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
 }

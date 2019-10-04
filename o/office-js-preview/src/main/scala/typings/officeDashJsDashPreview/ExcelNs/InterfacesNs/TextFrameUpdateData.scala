@@ -38,7 +38,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the TextFrame object, for use in "textFrame.set({ ... })". */
+/** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
 trait TextFrameUpdateData extends js.Object {
   /**
     *

@@ -14,7 +14,7 @@ object errorsNs extends js.Object {
   @js.native
   class BatchError () extends Error {
     // extended properties:
-    var data: js.Array[TBatchData] = js.native
+    var data: js.Array[IBatchData] = js.native
     var first: js.Any = js.native
     /* CompleteClass */
     override var message: String = js.native

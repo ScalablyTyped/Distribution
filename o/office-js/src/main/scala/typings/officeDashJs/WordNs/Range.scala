@@ -97,7 +97,7 @@ class Range () extends ClientObject {
   val parentBody: Body = js.native
   /**
     *
-    * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.
     *
     * [Api set: WordApi 1.1]
     */
@@ -111,14 +111,14 @@ class Range () extends ClientObject {
   val parentContentControlOrNullObject: ContentControl = js.native
   /**
     *
-    * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.
+    * Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
   val parentTable: Table = js.native
   /**
     *
-    * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -190,7 +190,7 @@ class Range () extends ClientObject {
   def delete(): Unit = js.native
   /**
     *
-    * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws if the two ranges do not have a union.
+    * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an error if the two ranges do not have a union.
     *
     * [Api set: WordApi 1.3]
     *
@@ -208,7 +208,7 @@ class Range () extends ClientObject {
   def expandToOrNullObject(range: Range): Range = js.native
   /**
     *
-    * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+    * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
@@ -222,7 +222,7 @@ class Range () extends ClientObject {
   def getHyperlinkRanges(): RangeCollection = js.native
   /**
     *
-    * Gets the next text range by using punctuation marks and/or other ending marks. Throws if this text range is the last one.
+    * Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range is the last one.
     *
     * [Api set: WordApi 1.3]
     *
@@ -284,7 +284,7 @@ class Range () extends ClientObject {
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
     *
@@ -297,7 +297,7 @@ class Range () extends ClientObject {
   ): Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
     *
@@ -314,7 +314,7 @@ class Range () extends ClientObject {
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -326,7 +326,7 @@ class Range () extends ClientObject {
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -343,7 +343,7 @@ class Range () extends ClientObject {
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -355,7 +355,7 @@ class Range () extends ClientObject {
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -372,7 +372,7 @@ class Range () extends ClientObject {
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts a picture at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -384,7 +384,7 @@ class Range () extends ClientObject {
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
     *
-    * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts a picture at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -401,7 +401,7 @@ class Range () extends ClientObject {
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -413,7 +413,7 @@ class Range () extends ClientObject {
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -430,7 +430,7 @@ class Range () extends ClientObject {
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -442,7 +442,7 @@ class Range () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -459,7 +459,7 @@ class Range () extends ClientObject {
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -481,7 +481,7 @@ class Range () extends ClientObject {
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -508,7 +508,7 @@ class Range () extends ClientObject {
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -520,7 +520,7 @@ class Range () extends ClientObject {
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -537,7 +537,7 @@ class Range () extends ClientObject {
   def insertText_Start(text: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Returns a new range as the intersection of this range with another range. This range is not changed. Throws if the two ranges are not overlapped or adjacent.
+    * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an error if the two ranges are not overlapped or adjacent.
     *
     * [Api set: WordApi 1.3]
     *

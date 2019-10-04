@@ -8,8 +8,8 @@ trait NumberFormat extends js.Object {
   /**
     * Pattern string used for formatting.  If not set, a default pattern based on
     * the user's locale will be used if necessary for the given type.
-    * See the [Date and Number Formats guide](/sheets/api/guides/formats) for more
-    * information about the supported patterns.
+    * See the [Date and Number Formats guide](/sheets/api/guides/formats) for
+    * more information about the supported patterns.
     */
   var pattern: js.UndefOr[String] = js.undefined
   /**

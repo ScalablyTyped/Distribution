@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "uirouter__angularjs"
-version := "1.0.22-d15d40"
+version := "1.0.23-e7510d"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20190812Z-3daf65",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "uirouter__core" % "5.0.23-0526b5")
+  "org.scalablytyped" %%% "uirouter__core" % "6.0.1-fb4768")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,7 +1,7 @@
 package typings.fastDashJsonDashPatch.fastDashJsonDashPatchMod
 
-import typings.fastDashJsonDashPatch.libHelpersMod.JsonPatchErrorName
-import typings.fastDashJsonDashPatch.libHelpersMod.PatchError
+import typings.fastDashJsonDashPatch.moduleHelpersMod.JsonPatchErrorName
+import typings.fastDashJsonDashPatch.moduleHelpersMod.PatchError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

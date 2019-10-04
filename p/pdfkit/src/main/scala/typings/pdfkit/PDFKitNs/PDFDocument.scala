@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PDFDocument
   extends ReadableStream
-     with PDFAnnotation[PDFDocument]
-     with PDFColor[PDFDocument]
-     with PDFImage[PDFDocument]
-     with PDFText[PDFDocument]
-     with PDFVector[PDFDocument]
-     with PDFFont[PDFDocument]
+     with PDFAnnotation
+     with PDFColor
+     with PDFImage
+     with PDFText
+     with PDFVector
+     with PDFFont
      with Instantiable0[PDFDocument]
      with Instantiable1[/* options */ PDFDocumentOptions, PDFDocument] {
   /**

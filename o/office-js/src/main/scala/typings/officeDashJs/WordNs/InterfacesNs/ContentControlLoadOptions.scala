@@ -64,7 +64,7 @@ trait ContentControlLoadOptions extends js.Object {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   /**
     *
-    * Gets the content control that contains the content control. Throws if there isn't a parent content control.
+    * Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
     *
     * [Api set: WordApi 1.1]
     */
@@ -78,14 +78,14 @@ trait ContentControlLoadOptions extends js.Object {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   /**
     *
-    * Gets the table that contains the content control. Throws if it is not contained in a table.
+    * Gets the table that contains the content control. Throws an error if it is not contained in a table.
     *
     * [Api set: WordApi 1.3]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   /**
     *
-    * Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
+    * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
     *
     * [Api set: WordApi 1.3]
     */

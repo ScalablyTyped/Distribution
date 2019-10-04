@@ -30,9 +30,11 @@ object ITheme {
     palette: IPalette,
     semanticColors: ISemanticColors,
     spacing: ISpacing,
+    rtl: js.UndefOr[Boolean] = js.undefined,
     schemes: PinISchemeNamesIScheme = null
   ): ITheme = {
     val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
     if (schemes != null) __obj.updateDynamic("schemes")(schemes)
     __obj.asInstanceOf[ITheme]
   }

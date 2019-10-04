@@ -1,9 +1,10 @@
 package typings.atPulumiAws.appsyncGraphQLApiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AppIdClientRegex
-import typings.atPulumiAws.Anon_AuthTtl
-import typings.atPulumiAws.Anon_CloudwatchLogsRoleArn
+import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiAdditionalAuthenticationProvider
+import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiLogConfig
+import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiOpenidConnectConfig
+import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiUserPoolConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,6 +27,10 @@ class GraphQLApi protected () extends CustomResource {
   def this(name: String, args: GraphQLApiArgs) = this()
   def this(name: String, args: GraphQLApiArgs, opts: CustomResourceOptions) = this()
   /**
+    * One or more additional authentication providers for the GraphqlApi. Defined below.
+    */
+  val additionalAuthenticationProviders: Output[js.UndefOr[js.Array[GraphQLApiAdditionalAuthenticationProvider]]] = js.native
+  /**
     * The ARN
     */
   val arn: Output[String] = js.native
@@ -36,7 +41,7 @@ class GraphQLApi protected () extends CustomResource {
   /**
     * Nested argument containing logging configuration. Defined below.
     */
-  val logConfig: Output[js.UndefOr[Anon_CloudwatchLogsRoleArn]] = js.native
+  val logConfig: Output[js.UndefOr[GraphQLApiLogConfig]] = js.native
   /**
     * A user-supplied name for the GraphqlApi.
     */
@@ -44,7 +49,7 @@ class GraphQLApi protected () extends CustomResource {
   /**
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
-  val openidConnectConfig: Output[js.UndefOr[Anon_AuthTtl]] = js.native
+  val openidConnectConfig: Output[js.UndefOr[GraphQLApiOpenidConnectConfig]] = js.native
   /**
     * The schema definition, in GraphQL schema language format. This provider cannot perform drift detection of this configuration.
     */
@@ -60,7 +65,7 @@ class GraphQLApi protected () extends CustomResource {
   /**
     * The Amazon Cognito User Pool configuration. Defined below.
     */
-  val userPoolConfig: Output[js.UndefOr[Anon_AppIdClientRegex]] = js.native
+  val userPoolConfig: Output[js.UndefOr[GraphQLApiUserPoolConfig]] = js.native
 }
 
 /* static members */

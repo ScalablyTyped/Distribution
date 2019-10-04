@@ -11,6 +11,10 @@ trait StaticIpAttachmentState extends js.Object {
     */
   val instanceName: js.UndefOr[Input[String]] = js.undefined
   /**
+    * The allocated static IP address
+    */
+  val ipAddress: js.UndefOr[Input[String]] = js.undefined
+  /**
     * The name of the allocated static IP
     */
   val staticIpName: js.UndefOr[Input[String]] = js.undefined
@@ -18,9 +22,14 @@ trait StaticIpAttachmentState extends js.Object {
 
 object StaticIpAttachmentState {
   @scala.inline
-  def apply(instanceName: Input[String] = null, staticIpName: Input[String] = null): StaticIpAttachmentState = {
+  def apply(
+    instanceName: Input[String] = null,
+    ipAddress: Input[String] = null,
+    staticIpName: Input[String] = null
+  ): StaticIpAttachmentState = {
     val __obj = js.Dynamic.literal()
     if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (staticIpName != null) __obj.updateDynamic("staticIpName")(staticIpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticIpAttachmentState]
   }

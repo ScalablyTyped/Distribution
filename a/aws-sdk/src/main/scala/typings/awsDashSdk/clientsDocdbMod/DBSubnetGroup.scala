@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DBSubnetGroup extends js.Object {
   /**
-    * The Amazon Resource Identifier (ARN) for the DB subnet group.
+    * The Amazon Resource Name (ARN) for the DB subnet group.
     */
   var DBSubnetGroupArn: js.UndefOr[String] = js.undefined
   /**

@@ -1,7 +1,6 @@
 package typings.ddDashTrace.ddDashTraceMod.pluginsNs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ddDashTrace.Anon_Enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,7 @@ import scala.scalajs.js.annotation._
   * }
   * ```
   */
-trait graphql extends Integration {
+trait graphql extends Instrumentation {
   /**
     * Whether to collapse list items into a single element. (i.e. single
     * `users.*.name` span instead of `users.0.name`, `users.1.name`, etc)
@@ -65,7 +64,7 @@ trait graphql extends Integration {
 object graphql {
   @scala.inline
   def apply(
-    analytics: Boolean | Anon_Enabled = null,
+    analytics: Boolean | Double = null,
     collapse: js.UndefOr[Boolean] = js.undefined,
     depth: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,

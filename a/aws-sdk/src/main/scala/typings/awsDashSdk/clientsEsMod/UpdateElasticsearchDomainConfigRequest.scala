@@ -18,6 +18,10 @@ trait UpdateElasticsearchDomainConfigRequest extends js.Object {
     */
   var CognitoOptions: js.UndefOr[typings.awsDashSdk.clientsEsMod.CognitoOptions] = js.undefined
   /**
+    * Options to specify configuration that will be applied to the domain endpoint.
+    */
+  var DomainEndpointOptions: js.UndefOr[typings.awsDashSdk.clientsEsMod.DomainEndpointOptions] = js.undefined
+  /**
     * The name of the Elasticsearch domain that you are updating. 
     */
   var DomainName: typings.awsDashSdk.clientsEsMod.DomainName
@@ -50,6 +54,7 @@ object UpdateElasticsearchDomainConfigRequest {
     AccessPolicies: PolicyDocument = null,
     AdvancedOptions: AdvancedOptions = null,
     CognitoOptions: CognitoOptions = null,
+    DomainEndpointOptions: DomainEndpointOptions = null,
     EBSOptions: EBSOptions = null,
     ElasticsearchClusterConfig: ElasticsearchClusterConfig = null,
     LogPublishingOptions: LogPublishingOptions = null,
@@ -60,6 +65,7 @@ object UpdateElasticsearchDomainConfigRequest {
     if (AccessPolicies != null) __obj.updateDynamic("AccessPolicies")(AccessPolicies)
     if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions)
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions)
+    if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions)
     if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions)
     if (ElasticsearchClusterConfig != null) __obj.updateDynamic("ElasticsearchClusterConfig")(ElasticsearchClusterConfig)
     if (LogPublishingOptions != null) __obj.updateDynamic("LogPublishingOptions")(LogPublishingOptions)

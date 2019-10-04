@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "spex" : "2.2.0"
+      "spex" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "spex" : "2.2.0"
+      "spex" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

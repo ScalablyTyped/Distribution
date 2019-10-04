@@ -1,11 +1,11 @@
 package typings.atPulumiAws.ec2SpotInstanceRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CpuCreditsString
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceIndex
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotId
-import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeId
-import typings.atPulumiAws.Anon_DeviceNameNoDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotInstanceRequestCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotInstanceRequestEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotInstanceRequestEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotInstanceRequestNetworkInterface
+import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotInstanceRequestRootBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -59,7 +59,7 @@ class SpotInstanceRequest protected () extends CustomResource {
   /**
     * Customize the credit specification of the instance. See Credit Specification below for more details.
     */
-  val creditSpecification: Output[js.UndefOr[Anon_CpuCreditsString]] = js.native
+  val creditSpecification: Output[js.UndefOr[SpotInstanceRequestCreditSpecification]] = js.native
   /**
     * If true, enables [EC2 Instance
     * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
@@ -69,7 +69,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * Additional EBS block devices to attach to the
     * instance.  Block device configurations only apply on resource creation. See Block Devices below for details on attributes and drift detection.
     */
-  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsKmsKeyIdSnapshotId]] = js.native
+  val ebsBlockDevices: Output[js.Array[SpotInstanceRequestEbsBlockDevice]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     * Note that if this is not set on an instance type that is optimized by default then
@@ -82,7 +82,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: Output[js.Array[Anon_DeviceNameNoDevice]] = js.native
+  val ephemeralBlockDevices: Output[js.Array[SpotInstanceRequestEphemeralBlockDevice]] = js.native
   /**
     * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `passwordData` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
@@ -134,7 +134,7 @@ class SpotInstanceRequest protected () extends CustomResource {
   /**
     * Customize network interfaces to be attached at instance boot time. See Network Interfaces below for more details.
     */
-  val networkInterfaces: Output[js.Array[Anon_DeleteOnTerminationDeviceIndex]] = js.native
+  val networkInterfaces: Output[js.Array[SpotInstanceRequestNetworkInterface]] = js.native
   val passwordData: Output[String] = js.native
   /**
     * The Placement Group to start the instance in.
@@ -165,7 +165,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: Output[Anon_DeleteOnTerminationEncryptedIopsKmsKeyIdVolumeId] = js.native
+  val rootBlockDevice: Output[SpotInstanceRequestRootBlockDevice] = js.native
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
     */

@@ -29,6 +29,7 @@ trait Range
   def componentDidUpdate_MRange(prevProps: IProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MRange(): Unit = js.native
+  def fireOnFinalChange(): Unit = js.native
   def getOffsets(): js.Array[Anon_X] = js.native
   def getTargetIndex(e: Event): Double = js.native
   def getThumbs(): js.Array[Element] = js.native

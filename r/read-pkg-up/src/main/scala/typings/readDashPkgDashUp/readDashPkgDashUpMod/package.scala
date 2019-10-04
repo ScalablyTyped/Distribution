@@ -6,11 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object readDashPkgDashUpMod {
   import typings.readDashPkgDashUp.Anon_Cwd
-  import typings.readDashPkgDashUp.readDashPkgDashUpStrings.cwd
-  import typings.typeDashFest.typeDashFestMod.Omit
 
-  type NormalizeOptions = Anon_Cwd with (Omit[typings.readDashPkg.readDashPkgMod.NormalizeOptions, cwd])
+  type NormalizeOptions = Anon_Cwd with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Except<readPkg.NormalizeOptions, 'cwd'> */ js.Any)
   type NormalizedPackageJson = typings.readDashPkg.readDashPkgMod.NormalizedPackageJson
-  type Options = Anon_Cwd with (Omit[typings.readDashPkg.readDashPkgMod.Options, cwd])
+  type Options = Anon_Cwd with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Except<readPkg.Options, 'cwd'> */ js.Any)
   type PackageJson = typings.readDashPkg.readDashPkgMod.PackageJson
 }

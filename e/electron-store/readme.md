@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-store
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Simple data persistence for your Electron app or module - Save and load user preferences, app state, cache, etc

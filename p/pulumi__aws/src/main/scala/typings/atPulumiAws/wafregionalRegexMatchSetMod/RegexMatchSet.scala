@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRegexMatchSetMod
 
-import typings.atPulumiAws.Anon_FieldToMatchRegexPatternSetId
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.RegexMatchSetRegexMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +31,7 @@ class RegexMatchSet protected () extends CustomResource {
     * The regular expression pattern that you want AWS WAF to search for in web requests,
     * the location in requests that you want AWS WAF to search, and other settings. See below.
     */
-  val regexMatchTuples: Output[js.UndefOr[js.Array[Anon_FieldToMatchRegexPatternSetId]]] = js.native
+  val regexMatchTuples: Output[js.UndefOr[js.Array[RegexMatchSetRegexMatchTuple]]] = js.native
 }
 
 /* static members */

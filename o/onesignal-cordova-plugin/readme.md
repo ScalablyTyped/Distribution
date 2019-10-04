@@ -1,7 +1,7 @@
 
 # Scala.js typings for onesignal-cordova-plugin
 
-Typings are for version 2.2
+Typings are for version 2.6
 
 ## Library description:
 OneSignal is a high volume Push Notification service for mobile apps. In addition to basic notification delivery, OneSignal also provides tools to localize, target, schedule, and automate notifications that you send.

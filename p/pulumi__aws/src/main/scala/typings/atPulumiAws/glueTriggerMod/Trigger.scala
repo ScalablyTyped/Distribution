@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueTriggerMod
 
-import typings.atPulumiAws.Anon_Arguments
-import typings.atPulumiAws.Anon_Conditions
+import typings.atPulumiAws.typesOutputMod.glueNs.TriggerAction
+import typings.atPulumiAws.typesOutputMod.glueNs.TriggerPredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,7 +26,7 @@ class Trigger protected () extends CustomResource {
   /**
     * List of actions initiated by this trigger when it fires. Defined below.
     */
-  val actions: Output[js.Array[Anon_Arguments]] = js.native
+  val actions: Output[js.Array[TriggerAction]] = js.native
   /**
     * A description of the new trigger.
     */
@@ -42,7 +42,7 @@ class Trigger protected () extends CustomResource {
   /**
     * A predicate to specify when the new trigger should fire. Required when trigger type is `CONDITIONAL`. Defined below.
     */
-  val predicate: Output[js.UndefOr[Anon_Conditions]] = js.native
+  val predicate: Output[js.UndefOr[TriggerPredicate]] = js.native
   /**
     * A cron expression used to specify the schedule. [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html)
     */

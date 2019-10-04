@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 trait ChartLegendItem extends js.Object {
   var fillStyle: js.UndefOr[String] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
+  var index: js.UndefOr[Double] = js.undefined
   var lineCap: js.UndefOr[butt | round | square] = js.undefined
   var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
   var lineDashOffset: js.UndefOr[Double] = js.undefined
@@ -27,6 +28,7 @@ object ChartLegendItem {
   def apply(
     fillStyle: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    index: Int | Double = null,
     lineCap: butt | round | square = null,
     lineDash: js.Array[Double] = null,
     lineDashOffset: Int | Double = null,
@@ -39,6 +41,7 @@ object ChartLegendItem {
     val __obj = js.Dynamic.literal()
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
     if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash)
     if (lineDashOffset != null) __obj.updateDynamic("lineDashOffset")(lineDashOffset.asInstanceOf[js.Any])

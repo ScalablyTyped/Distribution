@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelinePipelineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActionsName
-import typings.atPulumiAws.Anon_EncryptionKeyLocation
+import typings.atPulumiAws.typesInputMod.codepipelineNs.PipelineArtifactStore
+import typings.atPulumiAws.typesInputMod.codepipelineNs.PipelineStage
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait PipelineState extends js.Object {
     * An artifactStore block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
-  val artifactStore: js.UndefOr[Input[Anon_EncryptionKeyLocation]] = js.undefined
+  val artifactStore: js.UndefOr[Input[PipelineArtifactStore]] = js.undefined
   /**
     * The name of the pipeline.
     */
@@ -26,7 +26,7 @@ trait PipelineState extends js.Object {
     * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
     */
   val roleArn: js.UndefOr[Input[String]] = js.undefined
-  val stages: js.UndefOr[Input[js.Array[Input[Anon_ActionsName]]]] = js.undefined
+  val stages: js.UndefOr[Input[js.Array[Input[PipelineStage]]]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -37,10 +37,10 @@ object PipelineState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    artifactStore: Input[Anon_EncryptionKeyLocation] = null,
+    artifactStore: Input[PipelineArtifactStore] = null,
     name: Input[String] = null,
     roleArn: Input[String] = null,
-    stages: Input[js.Array[Input[Anon_ActionsName]]] = null,
+    stages: Input[js.Array[Input[PipelineStage]]] = null,
     tags: Input[StringDictionary[_]] = null
   ): PipelineState = {
     val __obj = js.Dynamic.literal()

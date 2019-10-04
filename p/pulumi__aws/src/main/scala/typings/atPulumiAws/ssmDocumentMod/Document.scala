@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmDocumentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AccountIdsType
-import typings.atPulumiAws.Anon_DefaultValueDescription
+import typings.atPulumiAws.typesOutputMod.ssmNs.DocumentParameter
+import typings.atPulumiAws.typesOutputMod.ssmNs.DocumentPermissions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -72,11 +72,11 @@ class Document protected () extends CustomResource {
   /**
     * The parameters that are available to this document.
     */
-  val parameters: Output[js.Array[Anon_DefaultValueDescription]] = js.native
+  val parameters: Output[js.Array[DocumentParameter]] = js.native
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: Output[js.UndefOr[Anon_AccountIdsType]] = js.native
+  val permissions: Output[js.UndefOr[DocumentPermissions]] = js.native
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */

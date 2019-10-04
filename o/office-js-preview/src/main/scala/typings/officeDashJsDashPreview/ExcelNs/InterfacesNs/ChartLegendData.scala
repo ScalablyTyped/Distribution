@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartLegend.toJSON()". */
+/** An interface describing the data returned by calling `chartLegend.toJSON()`. */
 trait ChartLegendData extends js.Object {
   /**
     *

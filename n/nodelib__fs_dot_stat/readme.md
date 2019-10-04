@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodelib__fs_dot_stat
 
-Typings are for version 2.0.1
+Typings are for version 1.1.3
 
 ## Library description:
 Get the status of a file with some features

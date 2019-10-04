@@ -1,6 +1,6 @@
 package typings.scheduler.schedulerMod
 
-import typings.scheduler.Anon_Timeout
+import typings.scheduler.Anon_Delay
 import typings.scheduler.schedulerNumbers.`1`
 import typings.scheduler.schedulerNumbers.`2`
 import typings.scheduler.schedulerNumbers.`3`
@@ -25,8 +25,8 @@ object ^ extends js.Object {
   def unstable_now(): Double = js.native
   def unstable_pauseExecution(): Unit = js.native
   def unstable_runWithPriority[T](priorityLevel: Double, eventHandler: js.Function0[T]): js.UndefOr[T] = js.native
-  def unstable_scheduleCallback(callback: FrameCallbackType): CallbackNode = js.native
-  def unstable_scheduleCallback(callback: FrameCallbackType, deprecated_options: Anon_Timeout): CallbackNode = js.native
+  def unstable_scheduleCallback(priorityLevel: Double, callback: FrameCallbackType): CallbackNode = js.native
+  def unstable_scheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: Anon_Delay): CallbackNode = js.native
   def unstable_shouldYield(): Boolean = js.native
   def unstable_wrapCallback(callback: FrameCallbackType): js.Function0[js.UndefOr[FrameCallbackType]] = js.native
 }

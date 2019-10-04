@@ -22,7 +22,7 @@ trait BodyLoadOptions extends js.Object {
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   /**
     *
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body.
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body.
     *
     * [Api set: WordApi 1.3]
     */
@@ -36,7 +36,7 @@ trait BodyLoadOptions extends js.Object {
   var parentBodyOrNullObject: js.UndefOr[BodyLoadOptions] = js.undefined
   /**
     *
-    * Gets the content control that contains the body. Throws if there isn't a parent content control.
+    * Gets the content control that contains the body. Throws an error if there isn't a parent content control.
     *
     * [Api set: WordApi 1.1]
     */
@@ -50,7 +50,7 @@ trait BodyLoadOptions extends js.Object {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   /**
     *
-    * Gets the parent section of the body. Throws if there isn't a parent section.
+    * Gets the parent section of the body. Throws an error if there isn't a parent section.
     *
     * [Api set: WordApi 1.3]
     */

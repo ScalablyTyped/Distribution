@@ -27,8 +27,8 @@ trait Volume extends js.Object {
     */
   val cephfs: CephFSVolumeSource
   /**
-    * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
-    * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+    * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info:
+    * https://examples.k8s.io/mysql-cinder-pd/README.md
     */
   val cinder: CinderVolumeSource
   /**
@@ -79,7 +79,7 @@ trait Volume extends js.Object {
   val gitRepo: GitRepoVolumeSource
   /**
     * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
+    * https://examples.k8s.io/volumes/glusterfs/README.md
     */
   val glusterfs: GlusterfsVolumeSource
   /**
@@ -91,8 +91,7 @@ trait Volume extends js.Object {
   val hostPath: HostPathVolumeSource
   /**
     * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and
-    * then exposed to the pod. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md
+    * then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
     */
   val iscsi: ISCSIVolumeSource
   /**
@@ -130,7 +129,7 @@ trait Volume extends js.Object {
   val quobyte: QuobyteVolumeSource
   /**
     * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
-    * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
+    * info: https://examples.k8s.io/volumes/rbd/README.md
     */
   val rbd: RBDVolumeSource
   /**

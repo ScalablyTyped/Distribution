@@ -173,6 +173,14 @@ trait ICalloutProps extends HTMLAttributes[HTMLDivElement] {
     */
   var shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined
   /**
+    * If true, the component will be updated even when hidden=true.
+    * Note that this would consume resources to update even though
+    * nothing is being shown to the user.
+    * This might be helpful though if your updates are small and you want the
+    * callout to be revealed fast to the user when hidden is set to false.
+    */
+  var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined
+  /**
     * Optional styles for the component.
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[ICalloutContentStyleProps, ICalloutContentStyles]] = js.undefined
@@ -229,6 +237,7 @@ object ICalloutProps {
     role: String = null,
     setInitialFocus: js.UndefOr[Boolean] = js.undefined,
     shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined,
+    shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStyleFunctionOrObject[ICalloutContentStyleProps, ICalloutContentStyles] = null,
     target: Target = null,
@@ -269,6 +278,7 @@ object ICalloutProps {
     if (role != null) __obj.updateDynamic("role")(role)
     if (!js.isUndefined(setInitialFocus)) __obj.updateDynamic("setInitialFocus")(setInitialFocus)
     if (!js.isUndefined(shouldRestoreFocus)) __obj.updateDynamic("shouldRestoreFocus")(shouldRestoreFocus)
+    if (!js.isUndefined(shouldUpdateWhenHidden)) __obj.updateDynamic("shouldUpdateWhenHidden")(shouldUpdateWhenHidden)
     if (style != null) __obj.updateDynamic("style")(style)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

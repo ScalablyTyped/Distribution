@@ -1,18 +1,21 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotBaseMod
 
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ILayerBaseState extends js.Object {
-  var hasMounted: Boolean
+  var hostId: js.UndefOr[String] = js.undefined
+  var layerElement: js.UndefOr[HTMLElement] = js.undefined
 }
 
 object ILayerBaseState {
   @scala.inline
-  def apply(hasMounted: Boolean): ILayerBaseState = {
-    val __obj = js.Dynamic.literal(hasMounted = hasMounted)
-  
+  def apply(hostId: String = null, layerElement: HTMLElement = null): ILayerBaseState = {
+    val __obj = js.Dynamic.literal()
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId)
+    if (layerElement != null) __obj.updateDynamic("layerElement")(layerElement)
     __obj.asInstanceOf[ILayerBaseState]
   }
 }

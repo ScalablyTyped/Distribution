@@ -50,25 +50,15 @@ class PivotFieldCollection () extends ClientObject {
     */
   def getItemOrNullObject(name: String): PivotField = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.PivotFieldCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.PivotFieldCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotFieldCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PivotFieldCollection = js.native
-  def load(option: PivotFieldCollectionLoadOptions with CollectionLoadOptions): PivotFieldCollection = js.native
-  def load(option: String): PivotFieldCollection = js.native
-  def load(option: js.Array[String]): PivotFieldCollection = js.native
-  def load(option: LoadOption): PivotFieldCollection = js.native
+  def load(options: PivotFieldCollectionLoadOptions with CollectionLoadOptions): PivotFieldCollection = js.native
+  def load(propertyNamesAndPaths: LoadOption): PivotFieldCollection = js.native
+  def load(propertyNames: String): PivotFieldCollection = js.native
+  def load(propertyNames: js.Array[String]): PivotFieldCollection = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.PivotFieldCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var gridFrame: js.UndefOr[ExtendedBreakpoints] = js.undefined

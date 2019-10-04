@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  */
 trait CertificateSigningRequestCondition extends js.Object {
   /**
     * timestamp for the last update to this condition

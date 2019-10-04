@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vue__component-compiler-utils"
-version := "3.0.0-95398a"
+version := "3.0.0-a707c8"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "postcss" % "7.0.17-d7148c",
+  "org.scalablytyped" %%% "postcss" % "7.0.18-cf43a5",
   "org.scalablytyped" %%% "source-map" % "0.7.3-bb5048",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

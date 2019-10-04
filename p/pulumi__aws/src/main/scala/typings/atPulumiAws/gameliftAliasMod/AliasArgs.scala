@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftAliasMod
 
-import typings.atPulumiAws.Anon_FleetIdMessage
+import typings.atPulumiAws.typesInputMod.gameliftNs.AliasRoutingStrategy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ trait AliasArgs extends js.Object {
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: Input[Anon_FleetIdMessage]
+  val routingStrategy: Input[AliasRoutingStrategy]
 }
 
 object AliasArgs {
   @scala.inline
   def apply(
-    routingStrategy: Input[Anon_FleetIdMessage],
+    routingStrategy: Input[AliasRoutingStrategy],
     description: Input[String] = null,
     name: Input[String] = null
   ): AliasArgs = {

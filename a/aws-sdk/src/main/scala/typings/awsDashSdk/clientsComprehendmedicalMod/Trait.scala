@@ -10,7 +10,7 @@ trait Trait extends js.Object {
     */
   var Name: js.UndefOr[AttributeName] = js.undefined
   /**
-    *  The level of confidence that Comprehend Medical has in the accuracy of this trait.
+    *  The level of confidence that Amazon Comprehend Medical has in the accuracy of this trait.
     */
   var Score: js.UndefOr[Float] = js.undefined
 }

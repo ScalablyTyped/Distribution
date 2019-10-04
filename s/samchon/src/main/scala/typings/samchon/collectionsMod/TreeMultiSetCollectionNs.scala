@@ -2,8 +2,8 @@ package typings.samchon.collectionsMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseContainerSetContainerMod.SetContainer
+import typings.tstl.tstlMod.baseNs.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ object TreeMultiSetCollectionNs extends js.Object {
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
       ], 
-      typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator[
+      typings.tstl.tstlMod.baseNs.ReverseIterator[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 

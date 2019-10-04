@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-syntax-highlighter", "Light")
 @js.native
 class Light ()
-  extends typings.reactDashSyntaxDashHighlighter.lightMod.default
+  extends typings.reactDashSyntaxDashHighlighter.distEsmLightMod.default
 
 /* static members */
 @JSImport("react-syntax-highlighter", "Light")

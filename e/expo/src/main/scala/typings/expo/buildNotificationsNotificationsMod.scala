@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("expo/build/Notifications/Notifications", JSImport.Namespace)
 @js.native
 object buildNotificationsNotificationsMod extends js.Object {
+  def emitNotification(notification: js.Any): Unit = js.native
   @js.native
   object default extends js.Object {
     def _setInitialNotification(notification: Notification): Unit = js.native
@@ -31,6 +32,9 @@ object buildNotificationsNotificationsMod extends js.Object {
     def presentLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
     def scheduleLocalNotificationAsync(notification: LocalNotification): js.Promise[ReactText] = js.native
     def scheduleLocalNotificationAsync(notification: LocalNotification, options: Anon_Day): js.Promise[ReactText] = js.native
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification): js.Promise[String] = js.native
+    def scheduleNotificationWithCalendarAsync(notification: LocalNotification, options: Anon_DayHour): js.Promise[String] = js.native
+    def scheduleNotificationWithTimerAsync(notification: LocalNotification, options: Anon_Interval): js.Promise[String] = js.native
     def setBadgeNumberAsync(number: Double): js.Promise[Unit] = js.native
   }
   

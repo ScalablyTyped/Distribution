@@ -89,7 +89,7 @@ trait Model extends js.Object {
   /** Specifies the print option of the report.
     * @Default {ej.ReportViewer.PrintOptions.Default}
     */
-  var printOptions: js.UndefOr[PrintOptions | String] = js.undefined
+  var printOption: js.UndefOr[PrintOptions | String] = js.undefined
   /** Fires when the print progress is changed. To perform any operation when the print progress is changed, use the printProgressChanged event.
     */
   var printProgressChanged: js.UndefOr[js.Function1[/* e */ PrintProgressChangedEventArgs, Unit]] = js.undefined
@@ -187,7 +187,7 @@ object Model {
     parameterSettings: ParameterSettings = null,
     parameters: js.Array[Parameter] = null,
     printMode: js.UndefOr[Boolean] = js.undefined,
-    printOptions: PrintOptions | String = null,
+    printOption: PrintOptions | String = null,
     printProgressChanged: /* e */ PrintProgressChangedEventArgs => Unit = null,
     processingMode: ProcessingMode | String = null,
     renderMode: RenderMode | String = null,
@@ -233,7 +233,7 @@ object Model {
     if (parameterSettings != null) __obj.updateDynamic("parameterSettings")(parameterSettings)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     if (!js.isUndefined(printMode)) __obj.updateDynamic("printMode")(printMode)
-    if (printOptions != null) __obj.updateDynamic("printOptions")(printOptions.asInstanceOf[js.Any])
+    if (printOption != null) __obj.updateDynamic("printOption")(printOption.asInstanceOf[js.Any])
     if (printProgressChanged != null) __obj.updateDynamic("printProgressChanged")(js.Any.fromFunction1(printProgressChanged))
     if (processingMode != null) __obj.updateDynamic("processingMode")(processingMode.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])

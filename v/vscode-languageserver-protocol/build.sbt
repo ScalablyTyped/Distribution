@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "vscode-languageserver-protocol"
-version := "3.14.1-30c0d4"
+version := "3.14.1-634212"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "vscode-jsonrpc" % "4.0.0-fa6c26",
+  "org.scalablytyped" %%% "vscode-jsonrpc" % "4.0.0-09f91d",
   "org.scalablytyped" %%% "vscode-languageserver-types" % "3.14.0-40ce5f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

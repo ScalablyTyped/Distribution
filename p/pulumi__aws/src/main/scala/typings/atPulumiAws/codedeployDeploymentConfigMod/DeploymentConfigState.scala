@@ -1,7 +1,7 @@
 package typings.atPulumiAws.codedeployDeploymentConfigMod
 
-import typings.atPulumiAws.Anon_TimeBasedCanaryTimeBasedLinear
-import typings.atPulumiAws.Anon_TypeValueInput
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentConfigMinimumHealthyHosts
+import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentConfigTrafficRoutingConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,11 +23,11 @@ trait DeploymentConfigState extends js.Object {
   /**
     * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
     */
-  val minimumHealthyHosts: js.UndefOr[Input[Anon_TypeValueInput]] = js.undefined
+  val minimumHealthyHosts: js.UndefOr[Input[DeploymentConfigMinimumHealthyHosts]] = js.undefined
   /**
     * A trafficRoutingConfig block. Traffic Routing Config is documented below.
     */
-  val trafficRoutingConfig: js.UndefOr[Input[Anon_TimeBasedCanaryTimeBasedLinear]] = js.undefined
+  val trafficRoutingConfig: js.UndefOr[Input[DeploymentConfigTrafficRoutingConfig]] = js.undefined
 }
 
 object DeploymentConfigState {
@@ -36,8 +36,8 @@ object DeploymentConfigState {
     computePlatform: Input[String] = null,
     deploymentConfigId: Input[String] = null,
     deploymentConfigName: Input[String] = null,
-    minimumHealthyHosts: Input[Anon_TypeValueInput] = null,
-    trafficRoutingConfig: Input[Anon_TimeBasedCanaryTimeBasedLinear] = null
+    minimumHealthyHosts: Input[DeploymentConfigMinimumHealthyHosts] = null,
+    trafficRoutingConfig: Input[DeploymentConfigTrafficRoutingConfig] = null
   ): DeploymentConfigState = {
     val __obj = js.Dynamic.literal()
     if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])

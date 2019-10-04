@@ -1,7 +1,8 @@
 package typings.atPulumiAws.organizationsGetOrganizationMod
 
-import typings.atPulumiAws.Anon_ArnEmail
-import typings.atPulumiAws.Anon_ArnId
+import typings.atPulumiAws.typesOutputMod.organizationsNs.GetOrganizationAccount
+import typings.atPulumiAws.typesOutputMod.organizationsNs.GetOrganizationNonMasterAccount
+import typings.atPulumiAws.typesOutputMod.organizationsNs.GetOrganizationRoot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait GetOrganizationResult extends js.Object {
   /**
     * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
     */
-  val accounts: js.Array[Anon_ArnEmail]
+  val accounts: js.Array[GetOrganizationAccount]
   /**
     * ARN of the root
     */
@@ -46,17 +47,17 @@ trait GetOrganizationResult extends js.Object {
   /**
     * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
     */
-  val nonMasterAccounts: js.Array[Anon_ArnEmail]
+  val nonMasterAccounts: js.Array[GetOrganizationNonMasterAccount]
   /**
     * List of organization roots. All elements have these attributes:
     */
-  val roots: js.Array[Anon_ArnId]
+  val roots: js.Array[GetOrganizationRoot]
 }
 
 object GetOrganizationResult {
   @scala.inline
   def apply(
-    accounts: js.Array[Anon_ArnEmail],
+    accounts: js.Array[GetOrganizationAccount],
     arn: String,
     awsServiceAccessPrincipals: js.Array[String],
     enabledPolicyTypes: js.Array[String],
@@ -65,8 +66,8 @@ object GetOrganizationResult {
     masterAccountArn: String,
     masterAccountEmail: String,
     masterAccountId: String,
-    nonMasterAccounts: js.Array[Anon_ArnEmail],
-    roots: js.Array[Anon_ArnId]
+    nonMasterAccounts: js.Array[GetOrganizationNonMasterAccount],
+    roots: js.Array[GetOrganizationRoot]
   ): GetOrganizationResult = {
     val __obj = js.Dynamic.literal(accounts = accounts, arn = arn, awsServiceAccessPrincipals = awsServiceAccessPrincipals, enabledPolicyTypes = enabledPolicyTypes, featureSet = featureSet, id = id, masterAccountArn = masterAccountArn, masterAccountEmail = masterAccountEmail, masterAccountId = masterAccountId, nonMasterAccounts = nonMasterAccounts, roots = roots)
   

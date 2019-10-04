@@ -1,7 +1,7 @@
 package typings.atPulumiAws.athenaWorkgroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BytesScannedCutoffPerQuery
+import typings.atPulumiAws.typesOutputMod.athenaNs.WorkgroupConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +31,7 @@ class Workgroup protected () extends CustomResource {
   /**
     * Configuration block with various settings for the workgroup. Documented below.
     */
-  val configuration: Output[js.UndefOr[Anon_BytesScannedCutoffPerQuery]] = js.native
+  val configuration: Output[js.UndefOr[WorkgroupConfiguration]] = js.native
   /**
     * Description of the workgroup.
     */

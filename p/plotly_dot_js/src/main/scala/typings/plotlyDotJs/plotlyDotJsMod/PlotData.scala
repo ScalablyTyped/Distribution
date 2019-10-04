@@ -115,7 +115,7 @@ import scala.scalajs.js.annotation._
 trait PlotData extends js.Object {
   var autobinx: Boolean
   var boxmean: Boolean | sd
-  var colorscale: String | (js.Array[js.Tuple2[Double, String]])
+  var colorscale: ColorScale
   var connectgaps: Boolean
   var error_x: ErrorBar
   var error_y: ErrorBar
@@ -182,7 +182,7 @@ object PlotData {
   def apply(
     autobinx: Boolean,
     boxmean: Boolean | sd,
-    colorscale: String | (js.Array[js.Tuple2[Double, String]]),
+    colorscale: ColorScale,
     connectgaps: Boolean,
     error_x: ErrorBar,
     error_y: ErrorBar,

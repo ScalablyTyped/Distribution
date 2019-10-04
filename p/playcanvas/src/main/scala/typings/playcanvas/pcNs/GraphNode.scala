@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.GraphNode
+  * @extends pc.EventHandler
   * @classdesc A hierarchical scene node.
   * @param {String} [name] The non-unique name of the graph node, default is "Untitled".
   * @property {String} name The non-unique name of a graph node.
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.GraphNode")
 @js.native
-class GraphNode () extends js.Object {
+class GraphNode () extends EventHandler {
   def this(name: String) = this()
   /**
     * @readonly

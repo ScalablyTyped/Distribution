@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "headerFooterGroup.toJSON()". */
+/** An interface describing the data returned by calling `headerFooterGroup.toJSON()`. */
 trait HeaderFooterGroupData extends js.Object {
   /**
     *

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("orientjs", "OResult")
 @js.native
-class OResult protected () extends Readable {
+class OResult[R] protected () extends Readable {
   def this(db: ODatabase, pageSize: Double) = this()
   /**
     *
     * @return
     */
-  def all[R](): js.Promise[js.Array[R]] = js.native
+  def all(): js.Promise[js.Array[R]] = js.native
   def close(): js.Promise[Unit] = js.native
-  def one[R](): js.Promise[R] = js.native
+  def one(): js.Promise[R] = js.native
 }
 

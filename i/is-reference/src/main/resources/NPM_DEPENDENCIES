@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-reference" : "1.1.3"
+      "is-reference" : "1.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "is-reference" : "1.1.3"
+      "is-reference" : "1.1.4"
     }
   ],
   "compile-devDependencies" : [

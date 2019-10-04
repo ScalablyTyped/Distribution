@@ -2,9 +2,9 @@ package typings.ecol.libLinearListCollectionMod
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
-import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseIteratorListIteratorMod.ListIterator
 import typings.tstl.containerListMod.List
+import typings.tstl.tstlMod.baseNs.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +71,7 @@ object ListCollectionNs extends js.Object {
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
       ], 
-      typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator[
+      typings.tstl.tstlMod.baseNs.ReverseIterator[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 

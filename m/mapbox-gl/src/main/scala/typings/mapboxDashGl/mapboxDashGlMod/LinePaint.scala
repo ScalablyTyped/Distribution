@@ -11,7 +11,7 @@ trait LinePaint extends js.Object {
   var `line-blur-transition`: js.UndefOr[Transition] = js.undefined
   var `line-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   var `line-color-transition`: js.UndefOr[Transition] = js.undefined
-  var `line-dasharray`: js.UndefOr[js.Array[Double]] = js.undefined
+  var `line-dasharray`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   var `line-dasharray-transition`: js.UndefOr[Transition] = js.undefined
   var `line-gap-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `line-gap-width-transition`: js.UndefOr[Transition] = js.undefined
@@ -36,7 +36,7 @@ object LinePaint {
     `line-blur-transition`: Transition = null,
     `line-color`: String | StyleFunction | Expression = null,
     `line-color-transition`: Transition = null,
-    `line-dasharray`: js.Array[Double] = null,
+    `line-dasharray`: js.Array[Double] | Expression = null,
     `line-dasharray-transition`: Transition = null,
     `line-gap-width`: Double | StyleFunction | Expression = null,
     `line-gap-width-transition`: Transition = null,
@@ -58,7 +58,7 @@ object LinePaint {
     if (`line-blur-transition` != null) __obj.updateDynamic("line-blur-transition")(`line-blur-transition`)
     if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
     if (`line-color-transition` != null) __obj.updateDynamic("line-color-transition")(`line-color-transition`)
-    if (`line-dasharray` != null) __obj.updateDynamic("line-dasharray")(`line-dasharray`)
+    if (`line-dasharray` != null) __obj.updateDynamic("line-dasharray")(`line-dasharray`.asInstanceOf[js.Any])
     if (`line-dasharray-transition` != null) __obj.updateDynamic("line-dasharray-transition")(`line-dasharray-transition`)
     if (`line-gap-width` != null) __obj.updateDynamic("line-gap-width")(`line-gap-width`.asInstanceOf[js.Any])
     if (`line-gap-width-transition` != null) __obj.updateDynamic("line-gap-width-transition")(`line-gap-width-transition`)

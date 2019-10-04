@@ -322,4 +322,3 @@
 [debug] PhaseRunner.scala:84 Success [id => leadfoot, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [dojo => Compilation failed] [id => leadfoot, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [dojo => Compilation failed] [id => leadfoot, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [dojo => Compilation failed] [id => leadfoot, phase => publish] 

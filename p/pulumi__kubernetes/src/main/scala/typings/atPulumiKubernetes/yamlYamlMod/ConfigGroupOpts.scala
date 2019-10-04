@@ -18,6 +18,25 @@ trait ConfigGroupOpts extends js.Object {
   /**
     * A set of transformations to apply to Kubernetes resource definitions before registering
     * with engine.
+    *
+    * @example
+    * ```typescript
+    * transformations: [
+    * (obj: any, opts: pulumi.CustomResourceOptions) => {
+    *        if (obj.kind === "Deployment" && obj.metadata.name == "cert-manager") {
+    *            opts.aliases = [
+    *                "urn:pulumi:dev::example::kubernetes:yaml:ConfigFile$kubernetes:apps/v1beta1:Deployment::default/cert-manager",
+    *            ];
+    *        }
+    *
+    *        if (obj.metadata) {
+    *            obj.metadata.namespace = namespaceName;
+    *        } else {
+    *            obj.metadata = {namespace: namespaceName};
+    *        }
+    *    },
+    * ]
+    * ```
     */
   var transformations: js.UndefOr[js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]] = js.undefined
   /** YAML text containing Kubernetes resource definitions. */

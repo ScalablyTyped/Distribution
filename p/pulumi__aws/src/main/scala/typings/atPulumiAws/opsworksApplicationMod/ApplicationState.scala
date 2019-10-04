@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksApplicationMod
 
-import typings.atPulumiAws.Anon_CertificateChainPrivateKey
-import typings.atPulumiAws.Anon_KeySecureValue
-import typings.atPulumiAws.Anon_PasswordRevisionSshKey
+import typings.atPulumiAws.typesInputMod.opsworksNs.ApplicationAppSource
+import typings.atPulumiAws.typesInputMod.opsworksNs.ApplicationEnvironment
+import typings.atPulumiAws.typesInputMod.opsworksNs.ApplicationSslConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait ApplicationState extends js.Object {
   /**
     * SCM configuration of the app as described below.
     */
-  val appSources: js.UndefOr[Input[js.Array[Input[Anon_PasswordRevisionSshKey]]]] = js.undefined
+  val appSources: js.UndefOr[Input[js.Array[Input[ApplicationAppSource]]]] = js.undefined
   /**
     * Run bundle install when deploying for application of type `rails`.
     */
@@ -52,7 +52,7 @@ trait ApplicationState extends js.Object {
   /**
     * Object to define environment variables.  Object is described below.
     */
-  val environments: js.UndefOr[Input[js.Array[Input[Anon_KeySecureValue]]]] = js.undefined
+  val environments: js.UndefOr[Input[js.Array[Input[ApplicationEnvironment]]]] = js.undefined
   /**
     * A human-readable name for the application.
     */
@@ -68,7 +68,7 @@ trait ApplicationState extends js.Object {
   /**
     * The SSL configuration of the app. Object is described below.
     */
-  val sslConfigurations: js.UndefOr[Input[js.Array[Input[Anon_CertificateChainPrivateKey]]]] = js.undefined
+  val sslConfigurations: js.UndefOr[Input[js.Array[Input[ApplicationSslConfiguration]]]] = js.undefined
   /**
     * The id of the stack the application will belong to.
     */
@@ -82,7 +82,7 @@ trait ApplicationState extends js.Object {
 object ApplicationState {
   @scala.inline
   def apply(
-    appSources: Input[js.Array[Input[Anon_PasswordRevisionSshKey]]] = null,
+    appSources: Input[js.Array[Input[ApplicationAppSource]]] = null,
     autoBundleOnDeploy: Input[String] = null,
     awsFlowRubySettings: Input[String] = null,
     dataSourceArn: Input[String] = null,
@@ -92,11 +92,11 @@ object ApplicationState {
     documentRoot: Input[String] = null,
     domains: Input[js.Array[Input[String]]] = null,
     enableSsl: Input[Boolean] = null,
-    environments: Input[js.Array[Input[Anon_KeySecureValue]]] = null,
+    environments: Input[js.Array[Input[ApplicationEnvironment]]] = null,
     name: Input[String] = null,
     railsEnv: Input[String] = null,
     shortName: Input[String] = null,
-    sslConfigurations: Input[js.Array[Input[Anon_CertificateChainPrivateKey]]] = null,
+    sslConfigurations: Input[js.Array[Input[ApplicationSslConfiguration]]] = null,
     stackId: Input[String] = null,
     `type`: Input[String] = null
   ): ApplicationState = {

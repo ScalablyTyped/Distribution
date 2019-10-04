@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalIpSetMod
 
-import typings.atPulumiAws.Anon_TypeValueString
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.IpSetIpSetDescriptor
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class IpSet protected () extends CustomResource {
   /**
     * One or more pairs specifying the IP address type (IPV4 or IPV6) and the IP address range (in CIDR notation) from which web requests originate.
     */
-  val ipSetDescriptors: Output[js.UndefOr[js.Array[Anon_TypeValueString]]] = js.native
+  val ipSetDescriptors: Output[js.UndefOr[js.Array[IpSetIpSetDescriptor]]] = js.native
   /**
     * The name or description of the IPSet.
     */

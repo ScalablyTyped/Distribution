@@ -1,6 +1,6 @@
 package typings.builderDashUtil.outFsMod
 
-import typings.fsDashExtraDashP.fsDashExtraDashPMod.Stats
+import typings.fsDashExtra.fsDashExtraMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

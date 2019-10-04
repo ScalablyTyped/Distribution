@@ -19,7 +19,7 @@ trait RuntimeClass extends js.Object {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: `nodeDOTk8sDOTio/v1beta1`
   /**
@@ -36,13 +36,28 @@ trait RuntimeClass extends js.Object {
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.RuntimeClass
   /**
-    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: ObjectMeta
+  /**
+    * Overhead represents the resource overhead associated with running a pod for a given
+    * RuntimeClass. For more details, see
+    * https://git.k8s.io/enhancements/keps/sig-node/20190226-pod-overhead.md This field is
+    * alpha-level as of Kubernetes v1.15, and is only honored by servers that enable the
+    * PodOverhead feature.
+    */
+  val overhead: Overhead
+  /**
+    * Scheduling holds the scheduling constraints to ensure that pods running with this
+    * RuntimeClass are scheduled to nodes that support it. If scheduling is nil, this
+    * RuntimeClass is assumed to be supported by all nodes.
+    */
+  val scheduling: Scheduling
 }
 
 object RuntimeClass {
@@ -51,9 +66,11 @@ object RuntimeClass {
     apiVersion: `nodeDOTk8sDOTio/v1beta1`,
     handler: String,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.RuntimeClass,
-    metadata: ObjectMeta
+    metadata: ObjectMeta,
+    overhead: Overhead,
+    scheduling: Scheduling
   ): RuntimeClass = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, handler = handler, kind = kind, metadata = metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, handler = handler, kind = kind, metadata = metadata, overhead = overhead, scheduling = scheduling)
   
     __obj.asInstanceOf[RuntimeClass]
   }

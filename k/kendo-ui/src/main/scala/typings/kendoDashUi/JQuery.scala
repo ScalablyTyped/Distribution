@@ -26,6 +26,7 @@ import typings.kendoDashUi.kendoDashUiStrings.kendoDropDownTree
 import typings.kendoDashUi.kendoDashUiStrings.kendoDropTarget
 import typings.kendoDashUi.kendoDashUiStrings.kendoDropTargetArea
 import typings.kendoDashUi.kendoDashUiStrings.kendoEditor
+import typings.kendoDashUi.kendoDashUiStrings.kendoFilter
 import typings.kendoDashUi.kendoDashUiStrings.kendoFilterMenu
 import typings.kendoDashUi.kendoDashUiStrings.kendoFlatColorPicker
 import typings.kendoDashUi.kendoDashUiStrings.kendoGantt
@@ -73,6 +74,7 @@ import typings.kendoDashUi.kendoDashUiStrings.kendoPrompt
 import typings.kendoDashUi.kendoDashUiStrings.kendoQRCode
 import typings.kendoDashUi.kendoDashUiStrings.kendoRadialGauge
 import typings.kendoDashUi.kendoDashUiStrings.kendoRangeSlider
+import typings.kendoDashUi.kendoDashUiStrings.kendoRating
 import typings.kendoDashUi.kendoDashUiStrings.kendoResponsivePanel
 import typings.kendoDashUi.kendoDashUiStrings.kendoScheduler
 import typings.kendoDashUi.kendoDashUiStrings.kendoScrollView
@@ -85,6 +87,7 @@ import typings.kendoDashUi.kendoDashUiStrings.kendoStockChart
 import typings.kendoDashUi.kendoDashUiStrings.kendoSwitch
 import typings.kendoDashUi.kendoDashUiStrings.kendoTabStrip
 import typings.kendoDashUi.kendoDashUiStrings.kendoTimePicker
+import typings.kendoDashUi.kendoDashUiStrings.kendoTimeline
 import typings.kendoDashUi.kendoDashUiStrings.kendoToolBar
 import typings.kendoDashUi.kendoDashUiStrings.kendoTooltip
 import typings.kendoDashUi.kendoDashUiStrings.kendoTouch
@@ -194,8 +197,10 @@ import typings.kendoDashUi.kendoNs.uiNs.DropTargetAreaOptions
 import typings.kendoDashUi.kendoNs.uiNs.DropTargetOptions
 import typings.kendoDashUi.kendoNs.uiNs.Editor
 import typings.kendoDashUi.kendoNs.uiNs.EditorOptions
+import typings.kendoDashUi.kendoNs.uiNs.Filter
 import typings.kendoDashUi.kendoNs.uiNs.FilterMenu
 import typings.kendoDashUi.kendoNs.uiNs.FilterMenuOptions
+import typings.kendoDashUi.kendoNs.uiNs.FilterOptions
 import typings.kendoDashUi.kendoNs.uiNs.FlatColorPicker
 import typings.kendoDashUi.kendoNs.uiNs.FlatColorPickerOptions
 import typings.kendoDashUi.kendoNs.uiNs.Gantt
@@ -240,6 +245,8 @@ import typings.kendoDashUi.kendoNs.uiNs.Prompt
 import typings.kendoDashUi.kendoNs.uiNs.PromptOptions
 import typings.kendoDashUi.kendoNs.uiNs.RangeSlider
 import typings.kendoDashUi.kendoNs.uiNs.RangeSliderOptions
+import typings.kendoDashUi.kendoNs.uiNs.Rating
+import typings.kendoDashUi.kendoNs.uiNs.RatingOptions
 import typings.kendoDashUi.kendoNs.uiNs.ResponsivePanel
 import typings.kendoDashUi.kendoNs.uiNs.ResponsivePanelOptions
 import typings.kendoDashUi.kendoNs.uiNs.Scheduler
@@ -254,6 +261,8 @@ import typings.kendoDashUi.kendoNs.uiNs.Spreadsheet
 import typings.kendoDashUi.kendoNs.uiNs.SpreadsheetOptions
 import typings.kendoDashUi.kendoNs.uiNs.TimePicker
 import typings.kendoDashUi.kendoNs.uiNs.TimePickerOptions
+import typings.kendoDashUi.kendoNs.uiNs.Timeline
+import typings.kendoDashUi.kendoNs.uiNs.TimelineOptions
 import typings.kendoDashUi.kendoNs.uiNs.ToolBar
 import typings.kendoDashUi.kendoNs.uiNs.ToolBarOptions
 import typings.kendoDashUi.kendoNs.uiNs.Tooltip
@@ -329,6 +338,8 @@ trait JQuery extends js.Object {
   def data_kendoDropTargetArea(key: kendoDropTargetArea): DropTargetArea = js.native
   @JSName("data")
   def data_kendoEditor(key: kendoEditor): Editor = js.native
+  @JSName("data")
+  def data_kendoFilter(key: kendoFilter): Filter = js.native
   @JSName("data")
   def data_kendoFilterMenu(key: kendoFilterMenu): FilterMenu = js.native
   @JSName("data")
@@ -424,6 +435,8 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoRangeSlider(key: kendoRangeSlider): RangeSlider = js.native
   @JSName("data")
+  def data_kendoRating(key: kendoRating): Rating = js.native
+  @JSName("data")
   def data_kendoResponsivePanel(key: kendoResponsivePanel): ResponsivePanel = js.native
   @JSName("data")
   def data_kendoScheduler(key: kendoScheduler): Scheduler = js.native
@@ -447,6 +460,8 @@ trait JQuery extends js.Object {
   def data_kendoTabStrip(key: kendoTabStrip): typings.kendoDashUi.kendoNs.uiNs.TabStrip = js.native
   @JSName("data")
   def data_kendoTimePicker(key: kendoTimePicker): TimePicker = js.native
+  @JSName("data")
+  def data_kendoTimeline(key: kendoTimeline): Timeline = js.native
   @JSName("data")
   def data_kendoToolBar(key: kendoToolBar): ToolBar = js.native
   @JSName("data")
@@ -517,6 +532,8 @@ trait JQuery extends js.Object {
   def kendoDropTargetArea(options: DropTargetAreaOptions): JQuery = js.native
   def kendoEditor(): JQuery = js.native
   def kendoEditor(options: EditorOptions): JQuery = js.native
+  def kendoFilter(): JQuery = js.native
+  def kendoFilter(options: FilterOptions): JQuery = js.native
   def kendoFilterMenu(): JQuery = js.native
   def kendoFilterMenu(options: FilterMenuOptions): JQuery = js.native
   def kendoFlatColorPicker(): JQuery = js.native
@@ -611,6 +628,8 @@ trait JQuery extends js.Object {
   def kendoRadialGauge(options: RadialGaugeOptions): JQuery = js.native
   def kendoRangeSlider(): JQuery = js.native
   def kendoRangeSlider(options: RangeSliderOptions): JQuery = js.native
+  def kendoRating(): JQuery = js.native
+  def kendoRating(options: RatingOptions): JQuery = js.native
   def kendoResponsivePanel(): JQuery = js.native
   def kendoResponsivePanel(options: ResponsivePanelOptions): JQuery = js.native
   def kendoScheduler(): JQuery = js.native
@@ -635,6 +654,8 @@ trait JQuery extends js.Object {
   def kendoTabStrip(options: typings.kendoDashUi.kendoNs.uiNs.TabStripOptions): JQuery = js.native
   def kendoTimePicker(): JQuery = js.native
   def kendoTimePicker(options: TimePickerOptions): JQuery = js.native
+  def kendoTimeline(): JQuery = js.native
+  def kendoTimeline(options: TimelineOptions): JQuery = js.native
   def kendoToolBar(): JQuery = js.native
   def kendoToolBar(options: ToolBarOptions): JQuery = js.native
   def kendoTooltip(): JQuery = js.native

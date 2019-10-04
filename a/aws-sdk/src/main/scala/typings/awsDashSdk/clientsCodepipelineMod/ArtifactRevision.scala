@@ -10,7 +10,7 @@ trait ArtifactRevision extends js.Object {
     */
   var created: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The name of an artifact. This name might be system-generated, such as "MyApp", or might be defined by the user when an action is created.
+    * The name of an artifact. This name might be system-generated, such as "MyApp", or defined by the user when an action is created.
     */
   var name: js.UndefOr[ArtifactName] = js.undefined
   /**

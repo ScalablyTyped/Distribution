@@ -25,6 +25,7 @@ import typings.mobx.libApiObservabledecoratorMod.IObservableDecorator
 import typings.mobx.libApiTojsMod.ToJSOptions
 import typings.mobx.libApiWhenMod.IWhenOptions
 import typings.mobx.libCoreActionMod.IAction
+import typings.mobx.libCoreActionMod.IActionRunInfo
 import typings.mobx.libCoreAtomMod.IAtom
 import typings.mobx.libCoreComputedvalueMod.IComputedValue
 import typings.mobx.libCoreDerivationMod.IDerivation
@@ -83,8 +84,11 @@ object ^ extends js.Object {
   val mobxPendingDecorators: js.Symbol = js.native
   val observable: IObservableFactory with IObservableFactories with Anon_Enhancer = js.native
   val refDecorator: IObservableDecorator = js.native
+  def _endAction(runInfo: IActionRunInfo): Unit = js.native
   def _isComputed(value: js.Any): Boolean = js.native
   def _isComputed(value: js.Any, property: String): Boolean = js.native
+  def _startAction(actionName: String, scope: js.Any): IActionRunInfo = js.native
+  def _startAction(actionName: String, scope: js.Any, args: IArguments): IActionRunInfo = js.native
   def actionFieldDecorator(name: String): js.Function3[/* target */ js.Any, /* prop */ js.Any, /* descriptor */ js.Any, Unit] = js.native
   def addHiddenFinalProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = js.native
   def addHiddenProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = js.native
@@ -93,6 +97,8 @@ object ^ extends js.Object {
   def allowStateChangesEnd(prev: Boolean): Unit = js.native
   def allowStateChangesInsideComputed[T](func: js.Function0[T]): T = js.native
   def allowStateChangesStart(allowStateChanges: Boolean): Boolean = js.native
+  def allowStateReadsEnd(prev: Boolean): Unit = js.native
+  def allowStateReadsStart(allowStateReads: Boolean): Boolean = js.native
   def asCreateObservableOptions(thing: js.Any): CreateObservableOptions = js.native
   def asObservableObject(target: js.Any): typings.mobx.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
   def asObservableObject(target: js.Any, name: PropertyKey): typings.mobx.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
@@ -104,6 +110,7 @@ object ^ extends js.Object {
   def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any, applyToInstance: Boolean): Anon_ConfigurableEnumerableGet | Anon_ConfigurableEnumerableGetSet | Null = js.native
   def changeDependenciesStateTo0(derivation: IDerivation): Unit = js.native
   def checkIfStateModificationsAreAllowed(atom: IAtom): Unit = js.native
+  def checkIfStateReadsAreAllowed(observable: IObservable): Unit = js.native
   def clearObserving(derivation: IDerivation): Unit = js.native
   def configure(options: Anon_Always): Unit = js.native
   def createAction(actionName: String, fn: js.Function): js.Function with IAction = js.native

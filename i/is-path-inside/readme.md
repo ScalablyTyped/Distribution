@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-inside
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 Check if a path is inside another path

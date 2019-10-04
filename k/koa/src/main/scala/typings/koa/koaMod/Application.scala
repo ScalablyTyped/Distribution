@@ -38,7 +38,7 @@ trait Application[StateT, CustomT] extends EventEmitter {
     *
     * @api private
     */
-  def createContext[StateT](req: IncomingMessage, res: ServerResponse): ParameterizedContext[StateT, js.Object] = js.native
+  def createContext[StateT](req: IncomingMessage, res: ServerResponse): ParameterizedContext[StateT, DefaultContext] = js.native
   /**
     * Return JSON representation.
     * We only bother showing settings.

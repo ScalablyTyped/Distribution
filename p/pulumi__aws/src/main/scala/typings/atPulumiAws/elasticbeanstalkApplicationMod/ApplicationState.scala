@@ -1,14 +1,14 @@
 package typings.atPulumiAws.elasticbeanstalkApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteSourceFromS3MaxAgeInDays
+import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.ApplicationAppversionLifecycle
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApplicationState extends js.Object {
-  val appversionLifecycle: js.UndefOr[Input[Anon_DeleteSourceFromS3MaxAgeInDays]] = js.undefined
+  val appversionLifecycle: js.UndefOr[Input[ApplicationAppversionLifecycle]] = js.undefined
   /**
     * The ARN assigned by AWS for this Elastic Beanstalk Application.
     */
@@ -30,7 +30,7 @@ trait ApplicationState extends js.Object {
 object ApplicationState {
   @scala.inline
   def apply(
-    appversionLifecycle: Input[Anon_DeleteSourceFromS3MaxAgeInDays] = null,
+    appversionLifecycle: Input[ApplicationAppversionLifecycle] = null,
     arn: Input[String] = null,
     description: Input[String] = null,
     name: Input[String] = null,

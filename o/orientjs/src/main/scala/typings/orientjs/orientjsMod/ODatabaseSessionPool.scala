@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("orientjs", "ODatabaseSessionPool")
 @js.native
-class ODatabaseSessionPool () extends BasePool
+class ODatabaseSessionPool () extends BasePool[ODatabasePoolFactory]
 

@@ -4,6 +4,7 @@ import typings.react.reactMod.Component
 import typings.reactDashSelect.srcSelectMod.default
 import typings.reactDashSelect.srcTypesMod.ActionMeta
 import typings.reactDashSelect.srcTypesMod.InputActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-select/src/stateManager", "StateManager")
 @js.native
-class StateManager[OptionType, T /* <: default[OptionType] */] ()
+class StateManager[OptionType /* <: OptionTypeBase */, T /* <: default[OptionType] */] ()
   extends Component[
       StateProps[typings.reactDashSelect.srcSelectMod.Props[OptionType]] with Props[OptionType] with typings.reactDashSelect.srcSelectMod.Props[OptionType], 
       State[OptionType], 

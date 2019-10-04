@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafRuleMod
 
-import typings.atPulumiAws.Anon_DataIdNegated
+import typings.atPulumiAws.typesInputMod.wafNs.RulePredicate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait RuleState extends js.Object {
   /**
     * The objects to include in a rule (documented below).
     */
-  val predicates: js.UndefOr[Input[js.Array[Input[Anon_DataIdNegated]]]] = js.undefined
+  val predicates: js.UndefOr[Input[js.Array[Input[RulePredicate]]]] = js.undefined
 }
 
 object RuleState {
@@ -26,7 +26,7 @@ object RuleState {
   def apply(
     metricName: Input[String] = null,
     name: Input[String] = null,
-    predicates: Input[js.Array[Input[Anon_DataIdNegated]]] = null
+    predicates: Input[js.Array[Input[RulePredicate]]] = null
   ): RuleState = {
     val __obj = js.Dynamic.literal()
     if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])

@@ -1,8 +1,7 @@
 package typings.atBabelGenerator.atBabelGeneratorMod
 
+import typings.atBabelGenerator.Anon_Double
 import typings.atBabelGenerator.atBabelGeneratorStrings.auto
-import typings.atBabelGenerator.atBabelGeneratorStrings.double
-import typings.atBabelGenerator.atBabelGeneratorStrings.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +28,18 @@ trait GeneratorOptions extends js.Object {
     */
   var concise: js.UndefOr[Boolean] = js.undefined
   /**
+    * Set to true to enable support for experimental decorators syntax before module exports.
+    * Defaults to `false`.
+    */
+  var decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined
+  /**
     * Used in warning messages
     */
   var filename: js.UndefOr[String] = js.undefined
+  /**
+    * Options for outputting jsesc representation.
+    */
+  var jsescOption: js.UndefOr[Anon_Double] = js.undefined
   /**
     * Set to true to run jsesc with "json": true to print "\\u00A9" vs. "©";
     */
@@ -41,9 +49,10 @@ trait GeneratorOptions extends js.Object {
     */
   var minified: js.UndefOr[Boolean] = js.undefined
   /**
-    * The type of quote to use in the output. If omitted, autodetects based on `ast.tokens`.
+    * Retain parens around function expressions (could be used to change engine parsing behavior)
+    * Defaults to `false`.
     */
-  var quotes: js.UndefOr[single | double] = js.undefined
+  var retainFunctionParens: js.UndefOr[Boolean] = js.undefined
   /**
     * Attempt to use the same line numbers in the output code as in the source code (helps preserve stack traces).
     * Defaults to `false`.
@@ -60,10 +69,6 @@ trait GeneratorOptions extends js.Object {
     * This will only be used if `code` is a string.
     */
   var sourceFileName: js.UndefOr[String] = js.undefined
-  /**
-    * The filename of the generated code that the source map will be associated with.
-    */
-  var sourceMapTarget: js.UndefOr[String] = js.undefined
   /**
     * Enable generating source maps. Defaults to `false`.
     */
@@ -82,14 +87,15 @@ object GeneratorOptions {
     comments: js.UndefOr[Boolean] = js.undefined,
     compact: Boolean | auto = null,
     concise: js.UndefOr[Boolean] = js.undefined,
+    decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
+    jsescOption: Anon_Double = null,
     jsonCompatibleStrings: js.UndefOr[Boolean] = js.undefined,
     minified: js.UndefOr[Boolean] = js.undefined,
-    quotes: single | double = null,
+    retainFunctionParens: js.UndefOr[Boolean] = js.undefined,
     retainLines: js.UndefOr[Boolean] = js.undefined,
     shouldPrintComment: /* comment */ String => Boolean = null,
     sourceFileName: String = null,
-    sourceMapTarget: String = null,
     sourceMaps: js.UndefOr[Boolean] = js.undefined,
     sourceRoot: String = null
   ): GeneratorOptions = {
@@ -99,14 +105,15 @@ object GeneratorOptions {
     if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
     if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (!js.isUndefined(concise)) __obj.updateDynamic("concise")(concise)
+    if (!js.isUndefined(decoratorsBeforeExport)) __obj.updateDynamic("decoratorsBeforeExport")(decoratorsBeforeExport)
     if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (jsescOption != null) __obj.updateDynamic("jsescOption")(jsescOption)
     if (!js.isUndefined(jsonCompatibleStrings)) __obj.updateDynamic("jsonCompatibleStrings")(jsonCompatibleStrings)
     if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified)
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainFunctionParens)) __obj.updateDynamic("retainFunctionParens")(retainFunctionParens)
     if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines)
     if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(js.Any.fromFunction1(shouldPrintComment))
     if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName)
-    if (sourceMapTarget != null) __obj.updateDynamic("sourceMapTarget")(sourceMapTarget)
     if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps)
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
     __obj.asInstanceOf[GeneratorOptions]

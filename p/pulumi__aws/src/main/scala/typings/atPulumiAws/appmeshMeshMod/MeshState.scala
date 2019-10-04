@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshMeshMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_EgressFilterAnonTypeInput
+import typings.atPulumiAws.typesInputMod.appmeshNs.MeshSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait MeshState extends js.Object {
   /**
     * The service mesh specification to apply.
     */
-  val spec: js.UndefOr[Input[Anon_EgressFilterAnonTypeInput]] = js.undefined
+  val spec: js.UndefOr[Input[MeshSpec]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -41,7 +41,7 @@ object MeshState {
     createdDate: Input[String] = null,
     lastUpdatedDate: Input[String] = null,
     name: Input[String] = null,
-    spec: Input[Anon_EgressFilterAnonTypeInput] = null,
+    spec: Input[MeshSpec] = null,
     tags: Input[StringDictionary[_]] = null
   ): MeshState = {
     val __obj = js.Dynamic.literal()

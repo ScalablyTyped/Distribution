@@ -16,6 +16,10 @@ import scala.scalajs.js.annotation._
   */
 trait StalkerOptions extends js.Object {
   /**
+    * User data to be passed to `StalkerNativeTransformCallback`.
+    */
+  var data: js.UndefOr[NativePointerValue] = js.undefined
+  /**
     * Which events, if any, should be generated and periodically delivered to
     * `onReceive()` and/or `onCallSummary()`.
     */
@@ -52,12 +56,14 @@ trait StalkerOptions extends js.Object {
 object StalkerOptions {
   @scala.inline
   def apply(
+    data: NativePointerValue = null,
     events: Anon_Block = null,
     onCallSummary: /* summary */ StalkerCallSummary => Unit = null,
     onReceive: /* events */ ArrayBuffer => Unit = null,
     transform: StalkerTransformCallback = null
   ): StalkerOptions = {
     val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
     if (events != null) __obj.updateDynamic("events")(events)
     if (onCallSummary != null) __obj.updateDynamic("onCallSummary")(js.Any.fromFunction1(onCallSummary))
     if (onReceive != null) __obj.updateDynamic("onReceive")(js.Any.fromFunction1(onReceive))

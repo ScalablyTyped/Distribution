@@ -54,7 +54,7 @@ class SettingCollection () extends ClientObject {
   def getCount(): ClientResult[Double] = js.native
   /**
     *
-    * Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist.
+    * Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta

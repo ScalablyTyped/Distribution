@@ -16,12 +16,12 @@ trait Screenfull extends js.Object {
   		Whether you are allowed to enter fullscreen. If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
   		@example
   		```
-  		if (screenfull.enabled) {
+  		if (screenfull.isEnabled) {
   			screenfull.request();
   		}
   		```
   		*/
-  val enabled: Boolean = js.native
+  val isEnabled: Boolean = js.native
   /**
   		Whether fullscreen is active.
   		*/
@@ -48,13 +48,13 @@ trait Screenfull extends js.Object {
   		@example
   		```
   		// Detect fullscreen change
-  		if (screenfull.enabled) {
+  		if (screenfull.isEnabled) {
   			screenfull.on('change', () => {
   				console.log('Am I fullscreen?', screenfull.isFullscreen ? 'Yes' : 'No');
   			});
   		}
   		// Detect fullscreen error
-  		if (screenfull.enabled) {
+  		if (screenfull.isEnabled) {
   			screenfull.on('error', event => {
   				console.error('Failed to enable fullscreen', event);
   			});
@@ -80,24 +80,24 @@ trait Screenfull extends js.Object {
   		```
   		// Fullscreen the page
   		document.getElementById('button').addEventListener('click', () => {
-  			if (screenfull.enabled) {
+  			if (screenfull.isEnabled) {
   				screenfull.request();
   			} else {
   				// Ignore or do something else
   			}
   		});
   		// Fullscreen an element
-  		const el = document.getElementById('target');
+  		const element = document.getElementById('target');
   		document.getElementById('button').addEventListener('click', () => {
-  			if (screenfull.enabled) {
-  				screenfull.request(el);
+  			if (screenfull.isEnabled) {
+  				screenfull.request(element);
   			}
   		});
   		// Fullscreen an element with jQuery
-  		const target = $('#target')[0]; // Get DOM element from jQuery collection
+  		const element = $('#target')[0]; // Get DOM element from jQuery collection
   		$('#button').on('click', () => {
-  			if (screenfull.enabled) {
-  				screenfull.request(target);
+  			if (screenfull.isEnabled) {
+  				screenfull.request(element);
   			}
   		});
   		```
@@ -111,7 +111,7 @@ trait Screenfull extends js.Object {
   		```
   		// Toggle fullscreen on a image with jQuery
   		$('img').on('click', event => {
-  			if (screenfull.enabled) {
+  			if (screenfull.isEnabled) {
   				screenfull.toggle(event.target);
   			}
   		});

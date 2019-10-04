@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.intlDashMessageformat.Anon_Date
 import typings.intlDashMessageformat.Fn_Input
 import typings.intlDashMessageformat.intlDashMessageformatMod.default
-import typings.intlDashMessageformatDashParser.libParserMod.ParseFunction
+import typings.intlDashMessageformatDashParser.distParserMod.ParseFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.sipDotJs.libCoreTransactionsTransactionMod
 
-import typings.node.eventsMod.EventEmitter
+import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libCoreExceptionsMod.TransportError
 import typings.sipDotJs.libCoreLogMod.Logger
 import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState
@@ -53,7 +53,8 @@ abstract class Transaction protected () extends EventEmitter {
   /**
     * Pass message to transport for transmission. If transport fails,
     * the transaction user is notified by callback to onTransportError().
-    * @throws {TransportError} If transport fails.
+    * @returns
+    * Rejects with `TransportError` if transport fails.
     */
   /* protected */ def send(message: String): js.Promise[Unit] = js.native
   /* protected */ def setState(state: TransactionState): Unit = js.native

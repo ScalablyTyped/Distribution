@@ -25,6 +25,8 @@ trait Options extends js.Object {
     * directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods
     */
   var limits: js.UndefOr[Anon_FieldNameSize] = js.undefined
+  /** Keep the full path of files instead of just the base name (Default: false) */
+  var preservePath: js.UndefOr[Boolean] = js.undefined
   /** The storage engine to use for uploaded files. */
   var storage: js.UndefOr[StorageEngine] = js.undefined
 }
@@ -35,12 +37,14 @@ object Options {
     dest: String = null,
     fileFilter: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* acceptFile */ Boolean, Unit]) => Unit = null,
     limits: Anon_FieldNameSize = null,
+    preservePath: js.UndefOr[Boolean] = js.undefined,
     storage: StorageEngine = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (dest != null) __obj.updateDynamic("dest")(dest)
     if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
     if (limits != null) __obj.updateDynamic("limits")(limits)
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
     if (storage != null) __obj.updateDynamic("storage")(storage)
     __obj.asInstanceOf[Options]
   }

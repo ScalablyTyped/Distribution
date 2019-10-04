@@ -142,6 +142,14 @@ trait MarkConfig extends js.Object {
     * The maximum length of the text mark in pixels (default 0, indicating no limit). The text value will be automatically truncated if the rendered size exceeds the limit.
     */
   var limit: js.UndefOr[Double] = js.undefined
+  /**
+    * A delimiter, such as a newline character, upon which to break text strings into multiple lines. This property is ignored if the text is array-valued.
+    */
+  var lineBreak: js.UndefOr[String] = js.undefined
+  /**
+    * The line height in pixels (the spacing between subsequent lines of text) for multi-line text marks.
+    */
+  var lineHeight: js.UndefOr[Double] = js.undefined
   // ---------- Opacity ----------
   /**
     * The overall opacity (value between [0,1]).
@@ -269,6 +277,8 @@ object MarkConfig {
     href: String = null,
     interpolate: Interpolate = null,
     limit: Int | Double = null,
+    lineBreak: String = null,
+    lineHeight: Int | Double = null,
     opacity: Int | Double = null,
     orient: Orientation = null,
     radius: Int | Double = null,
@@ -302,6 +312,8 @@ object MarkConfig {
     if (href != null) __obj.updateDynamic("href")(href)
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak)
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient)
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

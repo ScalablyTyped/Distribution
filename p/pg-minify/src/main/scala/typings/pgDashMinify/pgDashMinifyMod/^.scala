@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(sql: String): String = js.native
-  def apply(sql: String, options: minifyOptions): String = js.native
+  def apply(sql: String, options: IMinifyOptions): String = js.native
 }
 

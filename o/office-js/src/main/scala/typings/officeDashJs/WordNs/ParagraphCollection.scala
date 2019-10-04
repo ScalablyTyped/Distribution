@@ -25,7 +25,7 @@ class ParagraphCollection () extends ClientObject {
   val items: js.Array[Paragraph] = js.native
   /**
     *
-    * Gets the first paragraph in this collection. Throws if the collection is empty.
+    * Gets the first paragraph in this collection. Throws an error if the collection is empty.
     *
     * [Api set: WordApi 1.3]
     */
@@ -39,7 +39,7 @@ class ParagraphCollection () extends ClientObject {
   def getFirstOrNullObject(): Paragraph = js.native
   /**
     *
-    * Gets the last paragraph in this collection. Throws if the collection is empty.
+    * Gets the last paragraph in this collection. Throws an error if the collection is empty.
     *
     * [Api set: WordApi 1.3]
     */

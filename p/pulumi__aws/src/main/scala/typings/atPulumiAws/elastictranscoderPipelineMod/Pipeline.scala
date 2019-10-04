@@ -1,8 +1,10 @@
 package typings.atPulumiAws.elastictranscoderPipelineMod
 
-import typings.atPulumiAws.Anon_Accesses
-import typings.atPulumiAws.Anon_BucketStorageClass
-import typings.atPulumiAws.Anon_Completed
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PipelineContentConfig
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PipelineContentConfigPermission
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PipelineNotifications
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PipelineThumbnailConfig
+import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PipelineThumbnailConfigPermission
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,11 +34,11 @@ class Pipeline protected () extends CustomResource {
   /**
     * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
     */
-  val contentConfig: Output[Anon_BucketStorageClass] = js.native
+  val contentConfig: Output[PipelineContentConfig] = js.native
   /**
     * The permissions for the `contentConfig` object. (documented below)
     */
-  val contentConfigPermissions: Output[js.UndefOr[js.Array[Anon_Accesses]]] = js.native
+  val contentConfigPermissions: Output[js.UndefOr[js.Array[PipelineContentConfigPermission]]] = js.native
   /**
     * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
     */
@@ -48,7 +50,7 @@ class Pipeline protected () extends CustomResource {
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
     */
-  val notifications: Output[js.UndefOr[Anon_Completed]] = js.native
+  val notifications: Output[js.UndefOr[PipelineNotifications]] = js.native
   /**
     * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
     */
@@ -60,11 +62,11 @@ class Pipeline protected () extends CustomResource {
   /**
     * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
     */
-  val thumbnailConfig: Output[Anon_BucketStorageClass] = js.native
+  val thumbnailConfig: Output[PipelineThumbnailConfig] = js.native
   /**
     * The permissions for the `thumbnailConfig` object. (documented below)
     */
-  val thumbnailConfigPermissions: Output[js.UndefOr[js.Array[Anon_Accesses]]] = js.native
+  val thumbnailConfigPermissions: Output[js.UndefOr[js.Array[PipelineThumbnailConfigPermission]]] = js.native
 }
 
 /* static members */

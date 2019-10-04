@@ -1,0 +1,21 @@
+package typings.atPulumiAws.typesOutputMod.codedeployNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DeploymentConfigMinimumHealthyHosts extends js.Object {
+  var `type`: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[Double] = js.undefined
+}
+
+object DeploymentConfigMinimumHealthyHosts {
+  @scala.inline
+  def apply(`type`: String = null, value: Int | Double = null): DeploymentConfigMinimumHealthyHosts = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeploymentConfigMinimumHealthyHosts]
+  }
+}
+

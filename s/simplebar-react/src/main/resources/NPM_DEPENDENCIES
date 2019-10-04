@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "simplebar-react" : "1.2.1"
+      "simplebar-react" : "1.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "simplebar-react" : "1.2.1"
+      "simplebar-react" : "1.2.3"
     }
   ],
   "compile-devDependencies" : [

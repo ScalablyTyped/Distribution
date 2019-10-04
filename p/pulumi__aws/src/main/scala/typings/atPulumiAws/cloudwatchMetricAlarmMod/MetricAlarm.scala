@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudwatchMetricAlarmMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Expression
+import typings.atPulumiAws.typesOutputMod.cloudwatchNs.MetricAlarmMetricQuery
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -80,7 +80,7 @@ class MetricAlarm protected () extends CustomResource {
   /**
     * Enables you to create an alarm based on a metric math expression. You may specify at most 20.
     */
-  val metricQueries: Output[js.UndefOr[js.Array[Anon_Expression]]] = js.native
+  val metricQueries: Output[js.UndefOr[js.Array[MetricAlarmMetricQuery]]] = js.native
   /**
     * The descriptive name for the alarm. This name must be unique within the user's AWS account
     */

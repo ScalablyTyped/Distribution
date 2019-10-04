@@ -9,7 +9,6 @@ trait CommonInterface extends js.Object {
   var clipboard: Clipboard
   var crashReporter: CrashReporter
   var nativeImage: TypeofClassNativeImage
-  var screen: Screen
   var shell: Shell
 }
 
@@ -19,10 +18,9 @@ object CommonInterface {
     clipboard: Clipboard,
     crashReporter: CrashReporter,
     nativeImage: TypeofClassNativeImage,
-    screen: Screen,
     shell: Shell
   ): CommonInterface = {
-    val __obj = js.Dynamic.literal(clipboard = clipboard, crashReporter = crashReporter, nativeImage = nativeImage, screen = screen, shell = shell)
+    val __obj = js.Dynamic.literal(clipboard = clipboard, crashReporter = crashReporter, nativeImage = nativeImage, shell = shell)
   
     __obj.asInstanceOf[CommonInterface]
   }

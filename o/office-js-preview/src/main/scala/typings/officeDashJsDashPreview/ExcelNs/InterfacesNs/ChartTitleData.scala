@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartTitle.toJSON()". */
+/** An interface describing the data returned by calling `chartTitle.toJSON()`. */
 trait ChartTitleData extends js.Object {
   /**
     *

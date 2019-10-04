@@ -19,7 +19,7 @@ trait DmgWindow extends js.Object {
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
-    * The Y position relative to top of the screen.
+    * The Y position relative to bottom of the screen.
     * @default 100
     */
   var y: js.UndefOr[Double] = js.undefined

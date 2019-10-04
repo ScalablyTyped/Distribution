@@ -1,8 +1,8 @@
 package typings.atPulumiAws.batchJobDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AttemptDurationSeconds
-import typings.atPulumiAws.Anon_Attempts
+import typings.atPulumiAws.typesOutputMod.batchNs.JobDefinitionRetryStrategy
+import typings.atPulumiAws.typesOutputMod.batchNs.JobDefinitionTimeout
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -45,7 +45,7 @@ class JobDefinition protected () extends CustomResource {
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
     * Maximum number of `retryStrategy` is `1`.  Defined below.
     */
-  val retryStrategy: Output[js.UndefOr[Anon_Attempts]] = js.native
+  val retryStrategy: Output[js.UndefOr[JobDefinitionRetryStrategy]] = js.native
   /**
     * The revision of the job definition.
     */
@@ -53,7 +53,7 @@ class JobDefinition protected () extends CustomResource {
   /**
     * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
     */
-  val timeout: Output[js.UndefOr[Anon_AttemptDurationSeconds]] = js.native
+  val timeout: Output[js.UndefOr[JobDefinitionTimeout]] = js.native
   /**
     * The type of job definition.  Must be `container`
     */

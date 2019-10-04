@@ -3,8 +3,8 @@ package typings.appDashBuilderDashLib.outOptionsLinuxOptionsMod
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.bzip2
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.gz
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.xz
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

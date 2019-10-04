@@ -143,6 +143,19 @@ trait Amplify extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookResult, Unit]
   ): Request[DeleteWebhookResult, AWSError] = js.native
   /**
+    *  Retrieve website access logs for a specific time range via a pre-signed URL. Optionally, deliver the logs to a given S3 bucket. 
+    */
+  def generateAccessLogs(): Request[GenerateAccessLogsResult, AWSError] = js.native
+  def generateAccessLogs(callback: js.Function2[/* err */ AWSError, /* data */ GenerateAccessLogsResult, Unit]): Request[GenerateAccessLogsResult, AWSError] = js.native
+  /**
+    *  Retrieve website access logs for a specific time range via a pre-signed URL. Optionally, deliver the logs to a given S3 bucket. 
+    */
+  def generateAccessLogs(params: GenerateAccessLogsRequest): Request[GenerateAccessLogsResult, AWSError] = js.native
+  def generateAccessLogs(
+    params: GenerateAccessLogsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GenerateAccessLogsResult, Unit]
+  ): Request[GenerateAccessLogsResult, AWSError] = js.native
+  /**
     *  Retrieves an existing Amplify App by appId. 
     */
   def getApp(): Request[GetAppResult, AWSError] = js.native
@@ -152,6 +165,19 @@ trait Amplify extends Service {
     */
   def getApp(params: GetAppRequest): Request[GetAppResult, AWSError] = js.native
   def getApp(params: GetAppRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetAppResult, Unit]): Request[GetAppResult, AWSError] = js.native
+  /**
+    *  Retrieves artifact info that corresponds to a artifactId. 
+    */
+  def getArtifactUrl(): Request[GetArtifactUrlResult, AWSError] = js.native
+  def getArtifactUrl(callback: js.Function2[/* err */ AWSError, /* data */ GetArtifactUrlResult, Unit]): Request[GetArtifactUrlResult, AWSError] = js.native
+  /**
+    *  Retrieves artifact info that corresponds to a artifactId. 
+    */
+  def getArtifactUrl(params: GetArtifactUrlRequest): Request[GetArtifactUrlResult, AWSError] = js.native
+  def getArtifactUrl(
+    params: GetArtifactUrlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetArtifactUrlResult, Unit]
+  ): Request[GetArtifactUrlResult, AWSError] = js.native
   /**
     *  Retrieves a branch for an Amplify App. 
     */
@@ -214,6 +240,19 @@ trait Amplify extends Service {
     params: ListAppsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAppsResult, Unit]
   ): Request[ListAppsResult, AWSError] = js.native
+  /**
+    *  List artifacts with an app, a branch, a job and an artifact type. 
+    */
+  def listArtifacts(): Request[ListArtifactsResult, AWSError] = js.native
+  def listArtifacts(callback: js.Function2[/* err */ AWSError, /* data */ ListArtifactsResult, Unit]): Request[ListArtifactsResult, AWSError] = js.native
+  /**
+    *  List artifacts with an app, a branch, a job and an artifact type. 
+    */
+  def listArtifacts(params: ListArtifactsRequest): Request[ListArtifactsResult, AWSError] = js.native
+  def listArtifacts(
+    params: ListArtifactsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListArtifactsResult, Unit]
+  ): Request[ListArtifactsResult, AWSError] = js.native
   /**
     *  Lists branches for an Amplify App. 
     */

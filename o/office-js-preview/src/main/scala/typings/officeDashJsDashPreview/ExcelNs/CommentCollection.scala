@@ -6,6 +6,7 @@ import typings.officeDashJsDashPreview.ExcelNs.InterfacesNs.CommentCollectionLoa
 import typings.officeDashJsDashPreview.OfficeExtensionNs.ClientObject
 import typings.officeDashJsDashPreview.OfficeExtensionNs.ClientResult
 import typings.officeDashJsDashPreview.OfficeExtensionNs.LoadOption
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Mention
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Plain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,25 +27,41 @@ class CommentCollection () extends ClientObject {
   var context_CommentCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Comment] = js.native
-  def add(content: String, cellAddress: String): Comment = js.native
-  def add(content: String, cellAddress: String, contentType: ContentType): Comment = js.native
+  def add(cellAddress: String, content: String): Comment = js.native
+  def add(cellAddress: String, content: String, contentType: ContentType): Comment = js.native
+  def add(cellAddress: String, content: CommentRichContent): Comment = js.native
+  def add(cellAddress: String, content: CommentRichContent, contentType: ContentType): Comment = js.native
+  def add(cellAddress: Range, content: String): Comment = js.native
+  def add(cellAddress: Range, content: String, contentType: ContentType): Comment = js.native
   /**
     *
-    * Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
+    * Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param content The comment content.
     * @param cellAddress The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
-    * @param contentType Optional. The type of the comment content
+    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi BETA (PREVIEW ONLY) for string, ExcelApi Preview for CommentRichContent object]
+    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.plain`.
     */
-  def add(content: String, cellAddress: Range): Comment = js.native
-  def add(content: String, cellAddress: Range, contentType: ContentType): Comment = js.native
+  def add(cellAddress: Range, content: CommentRichContent): Comment = js.native
+  def add(cellAddress: Range, content: CommentRichContent, contentType: ContentType): Comment = js.native
   @JSName("add")
-  def add_Plain(content: String, cellAddress: String, contentType: Plain): Comment = js.native
+  def add_Mention(cellAddress: String, content: String, contentType: Mention): Comment = js.native
   @JSName("add")
-  def add_Plain(content: String, cellAddress: Range, contentType: Plain): Comment = js.native
+  def add_Mention(cellAddress: String, content: CommentRichContent, contentType: Mention): Comment = js.native
+  @JSName("add")
+  def add_Mention(cellAddress: Range, content: String, contentType: Mention): Comment = js.native
+  @JSName("add")
+  def add_Mention(cellAddress: Range, content: CommentRichContent, contentType: Mention): Comment = js.native
+  @JSName("add")
+  def add_Plain(cellAddress: String, content: String, contentType: Plain): Comment = js.native
+  @JSName("add")
+  def add_Plain(cellAddress: String, content: CommentRichContent, contentType: Plain): Comment = js.native
+  @JSName("add")
+  def add_Plain(cellAddress: Range, content: String, contentType: Plain): Comment = js.native
+  @JSName("add")
+  def add_Plain(cellAddress: Range, content: CommentRichContent, contentType: Plain): Comment = js.native
   /**
     *
     * Gets the number of comments in the collection.
@@ -76,7 +93,7 @@ class CommentCollection () extends ClientObject {
   def getItemByCell(cellAddress: String): Comment = js.native
   /**
     *
-    * Gets the comment from the specifed cell.
+    * Gets the comment from the specified cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -86,7 +103,7 @@ class CommentCollection () extends ClientObject {
   def getItemByCell(cellAddress: Range): Comment = js.native
   /**
     *
-    * Gets a comment related to its reply ID in the collection.
+    * Gets the comment to which the given reply is connected.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -95,25 +112,15 @@ class CommentCollection () extends ClientObject {
     */
   def getItemByReplyId(replyId: String): Comment = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CommentCollection = js.native
-  def load(option: CommentCollectionLoadOptions with CollectionLoadOptions): CommentCollection = js.native
-  def load(option: String): CommentCollection = js.native
-  def load(option: js.Array[String]): CommentCollection = js.native
-  def load(option: LoadOption): CommentCollection = js.native
+  def load(options: CommentCollectionLoadOptions with CollectionLoadOptions): CommentCollection = js.native
+  def load(propertyNamesAndPaths: LoadOption): CommentCollection = js.native
+  def load(propertyNames: String): CommentCollection = js.native
+  def load(propertyNames: js.Array[String]): CommentCollection = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.

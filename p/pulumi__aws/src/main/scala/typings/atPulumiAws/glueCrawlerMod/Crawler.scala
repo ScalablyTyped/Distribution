@@ -1,10 +1,10 @@
 package typings.atPulumiAws.glueCrawlerMod
 
-import typings.atPulumiAws.Anon_ConnectionName
-import typings.atPulumiAws.Anon_DatabaseName
-import typings.atPulumiAws.Anon_DeleteBehavior
-import typings.atPulumiAws.Anon_Exclusions
-import typings.atPulumiAws.Anon_Path
+import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerCatalogTarget
+import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerDynamodbTarget
+import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerJdbcTarget
+import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerS3Target
+import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerSchemaChangePolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +30,7 @@ class Crawler protected () extends CustomResource {
     * The ARN of the crawler
     */
   val arn: Output[String] = js.native
-  val catalogTargets: Output[js.UndefOr[js.Array[Anon_DatabaseName]]] = js.native
+  val catalogTargets: Output[js.UndefOr[js.Array[CrawlerCatalogTarget]]] = js.native
   /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
@@ -50,11 +50,11 @@ class Crawler protected () extends CustomResource {
   /**
     * List of nested DynamoDB target arguments. See below.
     */
-  val dynamodbTargets: Output[js.UndefOr[js.Array[Anon_Path]]] = js.native
+  val dynamodbTargets: Output[js.UndefOr[js.Array[CrawlerDynamodbTarget]]] = js.native
   /**
     * List of nested JBDC target arguments. See below.
     */
-  val jdbcTargets: Output[js.UndefOr[js.Array[Anon_ConnectionName]]] = js.native
+  val jdbcTargets: Output[js.UndefOr[js.Array[CrawlerJdbcTarget]]] = js.native
   /**
     * Name of the crawler.
     */
@@ -66,7 +66,7 @@ class Crawler protected () extends CustomResource {
   /**
     * List nested Amazon S3 target arguments. See below.
     */
-  val s3Targets: Output[js.UndefOr[js.Array[Anon_Exclusions]]] = js.native
+  val s3Targets: Output[js.UndefOr[js.Array[CrawlerS3Target]]] = js.native
   /**
     * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
     */
@@ -74,7 +74,7 @@ class Crawler protected () extends CustomResource {
   /**
     * Policy for the crawler's update and deletion behavior.
     */
-  val schemaChangePolicy: Output[js.UndefOr[Anon_DeleteBehavior]] = js.native
+  val schemaChangePolicy: Output[js.UndefOr[CrawlerSchemaChangePolicy]] = js.native
   /**
     * The name of Security Configuration to be used by the crawler
     */

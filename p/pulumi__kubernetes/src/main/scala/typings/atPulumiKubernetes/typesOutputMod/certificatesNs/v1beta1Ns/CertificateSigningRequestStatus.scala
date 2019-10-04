@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  */
 trait CertificateSigningRequestStatus extends js.Object {
   /**
     * If request was approved, the controller will place the issued certificate here.

@@ -1,12 +1,12 @@
 package typings.atPulumiAws.pricingGetProductMod
 
-import typings.atPulumiAws.Anon_FieldValue
+import typings.atPulumiAws.typesOutputMod.pricingNs.GetProductFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetProductResult extends js.Object {
-  val filters: js.Array[Anon_FieldValue]
+  val filters: js.Array[GetProductFilter]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -20,7 +20,7 @@ trait GetProductResult extends js.Object {
 
 object GetProductResult {
   @scala.inline
-  def apply(filters: js.Array[Anon_FieldValue], id: String, result: String, serviceCode: String): GetProductResult = {
+  def apply(filters: js.Array[GetProductFilter], id: String, result: String, serviceCode: String): GetProductResult = {
     val __obj = js.Dynamic.literal(filters = filters, id = id, result = result, serviceCode = serviceCode)
   
     __obj.asInstanceOf[GetProductResult]

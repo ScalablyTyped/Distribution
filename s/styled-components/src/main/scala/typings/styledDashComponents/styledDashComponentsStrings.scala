@@ -405,6 +405,9 @@ object styledDashComponentsStrings {
   sealed trait progress extends js.Object
   
   @js.native
+  sealed trait propTypes extends js.Object
+  
+  @js.native
   sealed trait q extends js.Object
   
   @js.native
@@ -808,6 +811,8 @@ object styledDashComponentsStrings {
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
+  def propTypes: propTypes = "propTypes".asInstanceOf[propTypes]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline

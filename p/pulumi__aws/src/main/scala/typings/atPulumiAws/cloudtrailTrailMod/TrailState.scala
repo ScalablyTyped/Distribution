@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudtrailTrailMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DataResourcesIncludeManagementEvents
+import typings.atPulumiAws.typesInputMod.cloudtrailNs.TrailEventSelector
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait TrailState extends js.Object {
   /**
     * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
     */
-  val eventSelectors: js.UndefOr[Input[js.Array[Input[Anon_DataResourcesIncludeManagementEvents]]]] = js.undefined
+  val eventSelectors: js.UndefOr[Input[js.Array[Input[TrailEventSelector]]]] = js.undefined
   /**
     * The region in which the trail was created.
     */
@@ -90,7 +90,7 @@ object TrailState {
     cloudWatchLogsRoleArn: Input[String] = null,
     enableLogFileValidation: Input[Boolean] = null,
     enableLogging: Input[Boolean] = null,
-    eventSelectors: Input[js.Array[Input[Anon_DataResourcesIncludeManagementEvents]]] = null,
+    eventSelectors: Input[js.Array[Input[TrailEventSelector]]] = null,
     homeRegion: Input[String] = null,
     includeGlobalServiceEvents: Input[Boolean] = null,
     isMultiRegionTrail: Input[Boolean] = null,

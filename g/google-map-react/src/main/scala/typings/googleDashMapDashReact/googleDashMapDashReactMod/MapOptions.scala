@@ -19,6 +19,7 @@ trait MapOptions extends js.Object {
   var fullscreenControlOptions: js.UndefOr[Anon_Position] = js.undefined
   var gestureHandling: js.UndefOr[String] = js.undefined
   var heading: js.UndefOr[Double] = js.undefined
+  var heatmapLibrary: js.UndefOr[Boolean] = js.undefined
   var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   var mapTypeControl: js.UndefOr[Boolean] = js.undefined
   var mapTypeControlOptions: js.UndefOr[js.Any] = js.undefined
@@ -27,6 +28,7 @@ trait MapOptions extends js.Object {
   var minZoom: js.UndefOr[Double] = js.undefined
   var minZoomOverride: js.UndefOr[Boolean] = js.undefined
   var noClear: js.UndefOr[Boolean] = js.undefined
+  var options: js.UndefOr[js.Function1[/* maps */ Maps, Props]] = js.undefined
   var panControl: js.UndefOr[Boolean] = js.undefined
   var panControlOptions: js.UndefOr[Anon_Position] = js.undefined
   var rotateControl: js.UndefOr[Boolean] = js.undefined
@@ -57,6 +59,7 @@ object MapOptions {
     fullscreenControlOptions: Anon_Position = null,
     gestureHandling: String = null,
     heading: Int | Double = null,
+    heatmapLibrary: js.UndefOr[Boolean] = js.undefined,
     keyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
     mapTypeControl: js.UndefOr[Boolean] = js.undefined,
     mapTypeControlOptions: js.Any = null,
@@ -65,6 +68,7 @@ object MapOptions {
     minZoom: Int | Double = null,
     minZoomOverride: js.UndefOr[Boolean] = js.undefined,
     noClear: js.UndefOr[Boolean] = js.undefined,
+    options: /* maps */ Maps => Props = null,
     panControl: js.UndefOr[Boolean] = js.undefined,
     panControlOptions: Anon_Position = null,
     rotateControl: js.UndefOr[Boolean] = js.undefined,
@@ -92,6 +96,7 @@ object MapOptions {
     if (fullscreenControlOptions != null) __obj.updateDynamic("fullscreenControlOptions")(fullscreenControlOptions)
     if (gestureHandling != null) __obj.updateDynamic("gestureHandling")(gestureHandling)
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(heatmapLibrary)) __obj.updateDynamic("heatmapLibrary")(heatmapLibrary)
     if (!js.isUndefined(keyboardShortcuts)) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts)
     if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl)
     if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions)
@@ -100,6 +105,7 @@ object MapOptions {
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(minZoomOverride)) __obj.updateDynamic("minZoomOverride")(minZoomOverride)
     if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)
+    if (options != null) __obj.updateDynamic("options")(js.Any.fromFunction1(options))
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
     if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl)

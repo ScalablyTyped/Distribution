@@ -20,8 +20,8 @@ trait ConditionValue extends js.Object {
   var relativeDate: js.UndefOr[String] = js.undefined
   /**
     * A value the condition is based on.
-    * The value will be parsed as if the user typed into a cell.
-    * Formulas are supported (and must begin with an `=`).
+    * The value is parsed as if the user typed into a cell.
+    * Formulas are supported (and must begin with an `=` or a '+').
     */
   var userEnteredValue: js.UndefOr[String] = js.undefined
 }

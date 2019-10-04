@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait BooleanRule extends js.Object {
   /**
     * The condition of the rule. If the condition evaluates to true,
-    * the format will be applied.
+    * the format is applied.
     */
   var condition: js.UndefOr[BooleanCondition] = js.undefined
   /**

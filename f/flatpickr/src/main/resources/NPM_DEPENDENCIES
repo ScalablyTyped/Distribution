@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "flatpickr" : "4.6.2"
+      "flatpickr" : "4.6.3"
     }
   ],
   "test-dependencies" : [
     {
-      "flatpickr" : "4.6.2"
+      "flatpickr" : "4.6.3"
     }
   ],
   "compile-devDependencies" : [

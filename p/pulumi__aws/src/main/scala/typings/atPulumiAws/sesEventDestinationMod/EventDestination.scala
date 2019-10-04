@@ -1,8 +1,8 @@
 package typings.atPulumiAws.sesEventDestinationMod
 
-import typings.atPulumiAws.Anon_DefaultValueDimensionName
-import typings.atPulumiAws.Anon_RoleArnStreamArn
-import typings.atPulumiAws.Anon_TopicArn
+import typings.atPulumiAws.typesOutputMod.sesNs.EventDestinationCloudwatchDestination
+import typings.atPulumiAws.typesOutputMod.sesNs.EventDestinationKinesisDestination
+import typings.atPulumiAws.typesOutputMod.sesNs.EventDestinationSnsDestination
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,7 +27,7 @@ class EventDestination protected () extends CustomResource {
   /**
     * CloudWatch destination for the events
     */
-  val cloudwatchDestinations: Output[js.UndefOr[js.Array[Anon_DefaultValueDimensionName]]] = js.native
+  val cloudwatchDestinations: Output[js.UndefOr[js.Array[EventDestinationCloudwatchDestination]]] = js.native
   /**
     * The name of the configuration set
     */
@@ -39,7 +39,7 @@ class EventDestination protected () extends CustomResource {
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: Output[js.UndefOr[Anon_RoleArnStreamArn]] = js.native
+  val kinesisDestination: Output[js.UndefOr[EventDestinationKinesisDestination]] = js.native
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
@@ -51,7 +51,7 @@ class EventDestination protected () extends CustomResource {
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: Output[js.UndefOr[Anon_TopicArn]] = js.native
+  val snsDestination: Output[js.UndefOr[EventDestinationSnsDestination]] = js.native
 }
 
 /* static members */

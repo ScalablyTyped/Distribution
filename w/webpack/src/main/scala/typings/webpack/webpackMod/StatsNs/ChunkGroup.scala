@@ -10,7 +10,7 @@ trait ChunkGroup extends js.Object {
   var assets: js.Array[String]
   var childAssets: Record[String, js.Array[String]]
   var children: Record[String, Anon_Assets]
-  var chunks: js.Array[Double]
+  var chunks: js.Array[Double | String]
   var isOverSizeLimit: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -20,7 +20,7 @@ object ChunkGroup {
     assets: js.Array[String],
     childAssets: Record[String, js.Array[String]],
     children: Record[String, Anon_Assets],
-    chunks: js.Array[Double],
+    chunks: js.Array[Double | String],
     isOverSizeLimit: js.UndefOr[Boolean] = js.undefined
   ): ChunkGroup = {
     val __obj = js.Dynamic.literal(assets = assets, childAssets = childAssets, children = children, chunks = chunks)

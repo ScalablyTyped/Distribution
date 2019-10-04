@@ -2,6 +2,7 @@ package typings.sipDotJs.sipDotJsMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.sipDotJs.sipDotJsStrings.`0DOT15DOT6`
 import typings.sipDotJs.sipDotJsStrings.sip
 import typings.sipDotJs.sipDotJsStrings.sips
 import scala.scalajs.js
@@ -28,6 +29,7 @@ object CNs extends js.Object {
   val SUBSCRIBE: typings.sipDotJs.sipDotJsStrings.SUBSCRIBE = js.native
   val UPDATE: typings.sipDotJs.sipDotJsStrings.UPDATE = js.native
   val USER_AGENT: String = js.native
+  val version: `0DOT15DOT6` = js.native
   @js.native
   object OPTION_TAGS extends /* option */ StringDictionary[Boolean]
   

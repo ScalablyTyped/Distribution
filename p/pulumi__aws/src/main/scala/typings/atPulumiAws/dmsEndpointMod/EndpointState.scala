@@ -1,8 +1,8 @@
 package typings.atPulumiAws.dmsEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AuthMechanismAuthSource
-import typings.atPulumiAws.Anon_BucketFolderBucketName
+import typings.atPulumiAws.typesInputMod.dmsNs.EndpointMongodbSettings
+import typings.atPulumiAws.typesInputMod.dmsNs.EndpointS3Settings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ trait EndpointState extends js.Object {
   /**
     * Settings for the source MongoDB endpoint. Available settings are `authType` (default: `password`), `authMechanism` (default: `default`), `nestingLevel` (default: `none`), `extractDocId` (default: `false`), `docsToInvestigate` (default: `1000`) and `authSource` (default: `admin`). For more details, see [Using MongoDB as a Source for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB.html).
     */
-  val mongodbSettings: js.UndefOr[Input[Anon_AuthMechanismAuthSource]] = js.undefined
+  val mongodbSettings: js.UndefOr[Input[EndpointMongodbSettings]] = js.undefined
   /**
     * The password to be used to login to the endpoint database.
     */
@@ -56,7 +56,7 @@ trait EndpointState extends js.Object {
   /**
     * Settings for the target S3 endpoint. Available settings are `serviceAccessRoleArn`, `externalTableDefinition`, `csvRowDelimiter` (default: `\\n`), `csvDelimiter` (default: `,`), `bucketFolder`, `bucketName` and `compressionType` (default: `NONE`). For more details, see [Using Amazon S3 as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html).
     */
-  val s3Settings: js.UndefOr[Input[Anon_BucketFolderBucketName]] = js.undefined
+  val s3Settings: js.UndefOr[Input[EndpointS3Settings]] = js.undefined
   /**
     * The host name of the server.
     */
@@ -90,10 +90,10 @@ object EndpointState {
     engineName: Input[String] = null,
     extraConnectionAttributes: Input[String] = null,
     kmsKeyArn: Input[String] = null,
-    mongodbSettings: Input[Anon_AuthMechanismAuthSource] = null,
+    mongodbSettings: Input[EndpointMongodbSettings] = null,
     password: Input[String] = null,
     port: Input[Double] = null,
-    s3Settings: Input[Anon_BucketFolderBucketName] = null,
+    s3Settings: Input[EndpointS3Settings] = null,
     serverName: Input[String] = null,
     serviceAccessRole: Input[String] = null,
     sslMode: Input[String] = null,

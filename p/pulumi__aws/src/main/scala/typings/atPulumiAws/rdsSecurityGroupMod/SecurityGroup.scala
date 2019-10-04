@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Cidr
+import typings.atPulumiAws.typesOutputMod.rdsNs.SecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,7 +34,7 @@ class SecurityGroup protected () extends CustomResource {
   /**
     * A list of ingress rules.
     */
-  val ingress: Output[js.Array[Anon_Cidr]] = js.native
+  val ingress: Output[js.Array[SecurityGroupIngress]] = js.native
   /**
     * The name of the DB security group.
     */

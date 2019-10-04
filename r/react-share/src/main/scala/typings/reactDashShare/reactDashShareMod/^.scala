@@ -5,9 +5,10 @@ import typings.reactDashShare.Anon_Body
 import typings.reactDashShare.Anon_Caption
 import typings.reactDashShare.Anon_Description
 import typings.reactDashShare.Anon_DescriptionImage
-import typings.reactDashShare.Anon_DescriptionMedia
+import typings.reactDashShare.Anon_DescriptionTitle
 import typings.reactDashShare.Anon_Hashtag
 import typings.reactDashShare.Anon_Hashtags
+import typings.reactDashShare.Anon_Image
 import typings.reactDashShare.Anon_Separator
 import typings.reactDashShare.Anon_Title
 import scala.scalajs.js
@@ -22,24 +23,24 @@ object ^ extends js.Object {
   val FacebookIcon: StatelessComponent[IconComponentProps] = js.native
   val FacebookShareButton: StatelessComponent[CommonShareButtonProps with Anon_Hashtag] = js.native
   val FacebookShareCount: StatelessComponent[ShareCountComponentProps] = js.native
-  val GooglePlusIcon: StatelessComponent[IconComponentProps] = js.native
-  val GooglePlusShareButton: StatelessComponent[CommonShareButtonProps] = js.native
-  val GooglePlusShareCount: StatelessComponent[ShareCountComponentProps] = js.native
+  val InstapaperIcon: StatelessComponent[IconComponentProps] = js.native
+  val InstapaperShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionTitle] = js.native
   val LineIcon: StatelessComponent[IconComponentProps] = js.native
   val LineShareButton: StatelessComponent[CommonShareButtonProps with Anon_Title] = js.native
   val LinkedinIcon: StatelessComponent[IconComponentProps] = js.native
-  val LinkedinShareButton: StatelessComponent[CommonShareButtonProps with Anon_Description] = js.native
-  val LinkedinShareCount: StatelessComponent[ShareCountComponentProps] = js.native
+  val LinkedinShareButton: StatelessComponent[CommonShareButtonProps] = js.native
   val LivejournalIcon: StatelessComponent[IconComponentProps] = js.native
-  val LivejournalShareButton: StatelessComponent[CommonShareButtonProps with Anon_Description] = js.native
+  val LivejournalShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionTitle] = js.native
   val MailruIcon: StatelessComponent[IconComponentProps] = js.native
-  val MalruShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionImage] = js.native
+  val MailruShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionImage] = js.native
   val OKIcon: StatelessComponent[IconComponentProps] = js.native
-  val OKShareButton: StatelessComponent[CommonShareButtonProps with Anon_Description] = js.native
+  val OKShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionImage] = js.native
   val OKShareCount: StatelessComponent[ShareCountComponentProps] = js.native
   val PinterestIcon: StatelessComponent[IconComponentProps] = js.native
-  val PinterestShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionMedia] = js.native
+  val PinterestShareButton: StatelessComponent[CommonShareButtonProps with Anon_Description] = js.native
   val PinterestShareCount: StatelessComponent[ShareCountComponentProps] = js.native
+  val PocketIcon: StatelessComponent[IconComponentProps] = js.native
+  val PocketShareButton: StatelessComponent[CommonShareButtonProps with Anon_Title] = js.native
   val RedditIcon: StatelessComponent[IconComponentProps] = js.native
   val RedditShareButton: StatelessComponent[CommonShareButtonProps with Anon_Title] = js.native
   val RedditShareCount: StatelessComponent[ShareCountComponentProps] = js.native
@@ -53,7 +54,12 @@ object ^ extends js.Object {
   val VKIcon: StatelessComponent[IconComponentProps] = js.native
   val VKShareButton: StatelessComponent[CommonShareButtonProps with Anon_DescriptionImage] = js.native
   val VKShareCount: StatelessComponent[ShareCountComponentProps] = js.native
+  val ViberIcon: StatelessComponent[IconComponentProps] = js.native
+  val ViberShareButton: StatelessComponent[CommonShareButtonProps with Anon_Separator] = js.native
+  val WeiboShareButton: StatelessComponent[CommonShareButtonProps with Anon_Image] = js.native
   val WhatsappIcon: StatelessComponent[IconComponentProps] = js.native
   val WhatsappShareButton: StatelessComponent[CommonShareButtonProps with Anon_Separator] = js.native
+  val WorkplaceIcon: StatelessComponent[IconComponentProps] = js.native
+  val WorkplaceShareButton: StatelessComponent[CommonShareButtonProps with Anon_Hashtag] = js.native
 }
 

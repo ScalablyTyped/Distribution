@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object srcComponentsGroupMod {
   import typings.reactDashSelect.srcTypesMod.CommonProps
+  import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 
-  type GroupProps[OptionType] = CommonProps[OptionType] with ComponentProps
+  type GroupProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with ComponentProps
 }

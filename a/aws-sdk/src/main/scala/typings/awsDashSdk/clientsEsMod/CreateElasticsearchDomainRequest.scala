@@ -18,7 +18,11 @@ trait CreateElasticsearchDomainRequest extends js.Object {
     */
   var CognitoOptions: js.UndefOr[typings.awsDashSdk.clientsEsMod.CognitoOptions] = js.undefined
   /**
-    * The name of the Elasticsearch domain that you are creating. Domain names are unique across the domains owned by an account within an AWS region. Domain names must start with a letter or number and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen).
+    * Options to specify configuration that will be applied to the domain endpoint.
+    */
+  var DomainEndpointOptions: js.UndefOr[typings.awsDashSdk.clientsEsMod.DomainEndpointOptions] = js.undefined
+  /**
+    * The name of the Elasticsearch domain that you are creating. Domain names are unique across the domains owned by an account within an AWS region. Domain names must start with a lowercase letter and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen).
     */
   var DomainName: typings.awsDashSdk.clientsEsMod.DomainName
   /**
@@ -62,6 +66,7 @@ object CreateElasticsearchDomainRequest {
     AccessPolicies: PolicyDocument = null,
     AdvancedOptions: AdvancedOptions = null,
     CognitoOptions: CognitoOptions = null,
+    DomainEndpointOptions: DomainEndpointOptions = null,
     EBSOptions: EBSOptions = null,
     ElasticsearchClusterConfig: ElasticsearchClusterConfig = null,
     ElasticsearchVersion: ElasticsearchVersionString = null,
@@ -75,6 +80,7 @@ object CreateElasticsearchDomainRequest {
     if (AccessPolicies != null) __obj.updateDynamic("AccessPolicies")(AccessPolicies)
     if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions)
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions)
+    if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions)
     if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions)
     if (ElasticsearchClusterConfig != null) __obj.updateDynamic("ElasticsearchClusterConfig")(ElasticsearchClusterConfig)
     if (ElasticsearchVersion != null) __obj.updateDynamic("ElasticsearchVersion")(ElasticsearchVersion)

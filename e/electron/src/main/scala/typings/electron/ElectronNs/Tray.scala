@@ -36,10 +36,13 @@ class Tray protected () extends EventEmitter {
   @JSName("addListener")
   def addListener_click(
     event: click,
-    listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, Unit]
+    listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_doubleclick(event: `double-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def addListener_doubleclick(
+    event: `double-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -53,13 +56,22 @@ class Tray protected () extends EventEmitter {
   @JSName("addListener")
   def addListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_mouseenter(event: `mouse-enter`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def addListener_mouseenter(
+    event: `mouse-enter`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_mouseleave(event: `mouse-leave`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def addListener_mouseleave(
+    event: `mouse-leave`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def addListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_rightclick(event: `right-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def addListener_rightclick(
+    event: `right-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Destroys the tray icon immediately.
     */
@@ -73,6 +85,7 @@ class Tray protected () extends EventEmitter {
     */
   def getBounds(): Rectangle = js.native
   def getIgnoreDoubleClickEvents(): Boolean = js.native
+  def getTitle(title: String): String = js.native
   def isDestroyed(): Boolean = js.native
   // Docs: http://electronjs.org/docs/api/tray
   /**
@@ -97,13 +110,16 @@ class Tray protected () extends EventEmitter {
   @JSName("on")
   def on_click(
     event: click,
-    listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, Unit]
+    listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
   ): this.type = js.native
   /**
     * Emitted when the tray icon is double clicked.
     */
   @JSName("on")
-  def on_doubleclick(event: `double-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def on_doubleclick(
+    event: `double-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Emitted when a drag operation ends on the tray or ends at another location.
     */
@@ -138,22 +154,31 @@ class Tray protected () extends EventEmitter {
     * Emitted when the mouse enters the tray icon.
     */
   @JSName("on")
-  def on_mouseenter(event: `mouse-enter`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def on_mouseenter(
+    event: `mouse-enter`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   /**
     * Emitted when the mouse exits the tray icon.
     */
   @JSName("on")
-  def on_mouseleave(event: `mouse-leave`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def on_mouseleave(
+    event: `mouse-leave`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   /**
     * Emitted when the mouse moves in the tray icon.
     */
   @JSName("on")
-  def on_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def on_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   /**
     * Emitted when the tray icon is right clicked.
     */
   @JSName("on")
-  def on_rightclick(event: `right-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def on_rightclick(
+    event: `right-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -163,10 +188,13 @@ class Tray protected () extends EventEmitter {
   @JSName("once")
   def once_click(
     event: click,
-    listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, Unit]
+    listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_doubleclick(event: `double-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def once_doubleclick(
+    event: `double-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -180,13 +208,22 @@ class Tray protected () extends EventEmitter {
   @JSName("once")
   def once_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseenter(event: `mouse-enter`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def once_mouseenter(
+    event: `mouse-enter`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   @JSName("once")
-  def once_mouseleave(event: `mouse-leave`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def once_mouseleave(
+    event: `mouse-leave`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   @JSName("once")
-  def once_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def once_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("once")
-  def once_rightclick(event: `right-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def once_rightclick(
+    event: `right-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Pops up the context menu of the tray icon. When menu is passed, the menu will be
     * shown instead of the tray icon's context menu. The position is only available on
@@ -204,10 +241,13 @@ class Tray protected () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_click(
     event: click,
-    listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, Unit]
+    listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_doubleclick(event: `double-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def removeListener_doubleclick(
+    event: `double-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -221,13 +261,22 @@ class Tray protected () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_mouseenter(event: `mouse-enter`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def removeListener_mouseenter(
+    event: `mouse-enter`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_mouseleave(event: `mouse-leave`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def removeListener_mouseleave(
+    event: `mouse-leave`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ Event, /* position */ Point, Unit]): this.type = js.native
+  def removeListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_rightclick(event: `right-click`, listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]): this.type = js.native
+  def removeListener_rightclick(
+    event: `right-click`,
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   def setContextMenu(): Unit = js.native
   /**
     * Sets the context menu for this icon.
@@ -238,9 +287,9 @@ class Tray protected () extends EventEmitter {
   @JSName("setHighlightMode")
   def setHighlightMode_never(mode: never): Unit = js.native
   /**
-    * Sets when the tray's icon background becomes highlighted (in blue). Note: You
-    * can use highlightMode with a BrowserWindow by toggling between 'never' and
-    * 'always' modes when the window visibility changes.
+    * Sets when the tray's icon background becomes highlighted (in blue). Deprecated
+    * Note: You can use highlightMode with a BrowserWindow by toggling between 'never'
+    * and 'always' modes when the window visibility changes.
     */
   @JSName("setHighlightMode")
   def setHighlightMode_selection(mode: selection): Unit = js.native
@@ -261,7 +310,7 @@ class Tray protected () extends EventEmitter {
     */
   def setPressedImage(image: NativeImage): Unit = js.native
   /**
-    * Sets the title displayed aside of the tray icon in the status bar (Support ANSI
+    * Sets the title displayed next to the tray icon in the status bar (Support ANSI
     * colors).
     */
   def setTitle(title: String): Unit = js.native

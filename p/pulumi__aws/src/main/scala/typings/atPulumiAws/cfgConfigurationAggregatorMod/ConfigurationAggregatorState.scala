@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cfgConfigurationAggregatorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AccountIdsAllRegions
-import typings.atPulumiAws.Anon_AllRegionsRegions
+import typings.atPulumiAws.typesInputMod.cfgNs.ConfigurationAggregatorAccountAggregationSource
+import typings.atPulumiAws.typesInputMod.cfgNs.ConfigurationAggregatorOrganizationAggregationSource
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait ConfigurationAggregatorState extends js.Object {
   /**
     * The account(s) to aggregate config data from as documented below.
     */
-  val accountAggregationSource: js.UndefOr[Input[Anon_AccountIdsAllRegions]] = js.undefined
+  val accountAggregationSource: js.UndefOr[Input[ConfigurationAggregatorAccountAggregationSource]] = js.undefined
   /**
     * The ARN of the aggregator
     */
@@ -24,7 +24,7 @@ trait ConfigurationAggregatorState extends js.Object {
   /**
     * The organization to aggregate config data from as documented below.
     */
-  val organizationAggregationSource: js.UndefOr[Input[Anon_AllRegionsRegions]] = js.undefined
+  val organizationAggregationSource: js.UndefOr[Input[ConfigurationAggregatorOrganizationAggregationSource]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -34,10 +34,10 @@ trait ConfigurationAggregatorState extends js.Object {
 object ConfigurationAggregatorState {
   @scala.inline
   def apply(
-    accountAggregationSource: Input[Anon_AccountIdsAllRegions] = null,
+    accountAggregationSource: Input[ConfigurationAggregatorAccountAggregationSource] = null,
     arn: Input[String] = null,
     name: Input[String] = null,
-    organizationAggregationSource: Input[Anon_AllRegionsRegions] = null,
+    organizationAggregationSource: Input[ConfigurationAggregatorOrganizationAggregationSource] = null,
     tags: Input[StringDictionary[_]] = null
   ): ConfigurationAggregatorState = {
     val __obj = js.Dynamic.literal()

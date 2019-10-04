@@ -1,6 +1,5 @@
 package typings.ddDashTrace.ddDashTraceMod.pluginsNs
 
-import typings.ddDashTrace.Anon_Enabled
 import typings.ddDashTrace.Anon_ReqRequestRes
 import typings.std.RegExp
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @hidden */
-trait Http extends Integration {
+trait Http extends Instrumentation {
   /**
     * List of URLs that should not be instrumented. Takes precedence over
     * whitelist if a URL matches an entry in both.
@@ -70,7 +69,7 @@ trait Http extends Integration {
 object Http {
   @scala.inline
   def apply(
-    analytics: Boolean | Anon_Enabled = null,
+    analytics: Boolean | Double = null,
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     headers: js.Array[String] = null,
@@ -93,7 +92,7 @@ object Http {
 object http {
   @scala.inline
   def apply(
-    analytics: Boolean | Anon_Enabled = null,
+    analytics: Boolean | Double = null,
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     client: HttpClient = null,
     enabled: js.UndefOr[Boolean] = js.undefined,

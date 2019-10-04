@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "aggregate-error" : "3.0.0"
+      "aggregate-error" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "aggregate-error" : "3.0.0"
+      "aggregate-error" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

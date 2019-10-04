@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2DefaultRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrBlock
+import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultRouteTableRoute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -39,7 +39,7 @@ class DefaultRouteTable protected () extends CustomResource {
     * A list of route objects. Their keys are documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val routes: Output[js.Array[Anon_CidrBlock]] = js.native
+  val routes: Output[js.Array[DefaultRouteTableRoute]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

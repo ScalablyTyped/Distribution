@@ -36,6 +36,11 @@ trait Clipboard extends EventEmitter {
     */
   def readBookmark(): ReadBookmark = js.native
   def readBuffer(format: String): Buffer = js.native
+  /**
+    * This method uses synchronous IPC when called from the renderer process. The
+    * cached value is reread from the find pasteboard whenever the application is
+    * activated.
+    */
   def readFindText(): String = js.native
   def readHTML(): String = js.native
   @JSName("readHTML")
@@ -80,8 +85,9 @@ trait Clipboard extends EventEmitter {
   @JSName("writeBuffer")
   def writeBuffer_selection(format: String, buffer: Buffer, `type`: selection): Unit = js.native
   /**
-    * Writes the text into the find pasteboard as plain text. This method uses
-    * synchronous IPC when called from the renderer process.
+    * Writes the text into the find pasteboard (the pasteboard that holds information
+    * about the current state of the active application’s find panel) as plain text.
+    * This method uses synchronous IPC when called from the renderer process.
     */
   def writeFindText(text: String): Unit = js.native
   /**

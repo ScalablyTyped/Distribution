@@ -1,11 +1,12 @@
 package typings.reactDashSelect
 
 import typings.react.reactMod.ReactNode
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ChildrenComponents[OptionType] extends js.Object {
+trait Anon_ChildrenComponents[OptionType /* <: OptionTypeBase */] extends js.Object {
   var children: ReactNode
   var components: js.Any
   var cropWithEllipsis: Boolean
@@ -18,7 +19,7 @@ trait Anon_ChildrenComponents[OptionType] extends js.Object {
 
 object Anon_ChildrenComponents {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     children: ReactNode,
     components: js.Any,
     cropWithEllipsis: Boolean,

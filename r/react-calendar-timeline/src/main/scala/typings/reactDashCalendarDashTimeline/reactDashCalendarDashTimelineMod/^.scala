@@ -1,6 +1,5 @@
 package typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod
 
-import typings.react.reactMod.ClassicComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-calendar-timeline", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: ClassicComponentClass[ReactCalendarTimelineProps] = js.native
-  val defaultHeaderLabelFormats: TimelineHeaderLabelFormat = js.native
-  val defaultSubHeaderLabelFormats: TimelineHeaderLabelFormat = js.native
+  val defaultHeaderFormats: LabelFormat = js.native
+  val defaultKeys: TimelineKeys = js.native
+  val defaultTimeSteps: TimelineTimeSteps = js.native
 }
 

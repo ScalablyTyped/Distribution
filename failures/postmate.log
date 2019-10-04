@@ -26,4 +26,3 @@
 [E] Failed to compile 'postmate'
  [id => postmate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [postmate => Compilation failed] [id => postmate, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [postmate => Compilation failed] [id => postmate, phase => publish] 

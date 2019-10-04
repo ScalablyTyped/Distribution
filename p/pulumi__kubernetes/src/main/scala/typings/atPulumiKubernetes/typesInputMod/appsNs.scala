@@ -8,34 +8,28 @@ import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.ControllerRevision
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DaemonSet
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DaemonSetCondition
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DaemonSetSpec
-import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DaemonSetStatus
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DaemonSetUpdateStrategy
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.Deployment
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DeploymentCondition
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DeploymentSpec
-import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DeploymentStatus
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.DeploymentStrategy
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.ReplicaSet
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.ReplicaSetCondition
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.ReplicaSetSpec
-import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.ReplicaSetStatus
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.RollingUpdateDaemonSet
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.RollingUpdateDeployment
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.RollingUpdateStatefulSetStrategy
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.StatefulSet
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.StatefulSetCondition
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.StatefulSetSpec
-import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.StatefulSetStatus
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1Ns.StatefulSetUpdateStrategy
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.RollbackConfig
 import typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.ScaleSpec
-import typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.ScaleStatus
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim
 import typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PodTemplateSpec
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.LabelSelector
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ListMeta
 import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ObjectMeta
-import typings.atPulumiKubernetes.typesInputMod.pkgNs.runtimeNs.RawExtension
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,23 +56,23 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
         * Data is the serialized representation of the state.
         */
-      var data: js.UndefOr[Input[RawExtension]] = js.undefined
+      var data: js.UndefOr[Input[js.Object]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -95,7 +89,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
@@ -106,13 +100,14 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevisionList]
           ] = js.undefined
       /**
-        * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -125,32 +120,26 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSet]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * The desired behavior of this daemon set. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[DaemonSetSpec]] = js.undefined
-      /**
-        * The current status of this daemon set. This data may be out of date by some window of time.
-        * Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[DaemonSetStatus]] = js.undefined
     }
     
     /**
@@ -187,7 +176,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
@@ -198,12 +187,12 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSetList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -319,14 +308,14 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment]] = js.undefined
       /**
@@ -337,10 +326,6 @@ object appsNs extends js.Object {
         * Specification of the desired behavior of the Deployment.
         */
       var spec: js.UndefOr[Input[DeploymentSpec]] = js.undefined
-      /**
-        * Most recently observed status of the Deployment.
-        */
-      var status: js.UndefOr[Input[DeploymentStatus]] = js.undefined
     }
     
     /**
@@ -381,7 +366,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
@@ -392,7 +377,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DeploymentList]] = js.undefined
       /**
@@ -515,33 +500,27 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSet]] = js.undefined
       /**
         * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s)
         * that the ReplicaSet manages. Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the ReplicaSet. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[ReplicaSetSpec]] = js.undefined
-      /**
-        * Status is the most recently observed status of the ReplicaSet. This data may be out of date
-        * by some window of time. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[ReplicaSetStatus]] = js.undefined
     }
     
     /**
@@ -578,7 +557,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
@@ -590,12 +569,12 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSetList]] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -734,14 +713,14 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -749,11 +728,6 @@ object appsNs extends js.Object {
         * Spec defines the desired identities of pods in this set.
         */
       var spec: js.UndefOr[Input[StatefulSetSpec]] = js.undefined
-      /**
-        * Status is the current status of Pods in this StatefulSet. This data may be out of date by
-        * some window of time.
-        */
-      var status: js.UndefOr[Input[StatefulSetStatus]] = js.undefined
     }
     
     /**
@@ -790,7 +764,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
       var items: Input[js.Array[Input[StatefulSet]]]
@@ -798,7 +772,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSetList]] = js.undefined
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
@@ -948,8 +922,9 @@ object appsNs extends js.Object {
   @js.native
   object v1beta1Ns extends js.Object {
     /**
-      * DEPRECATED - This group version of ControllerRevision is deprecated by
-      * apps/v1beta2/ControllerRevision. See the release notes for more information.
+      * @deprecated apps/v1beta1/ControllerRevision is not supported by Kubernetes 1.16+ clusters.
+      * Use apps/v1/ControllerRevision instead.
+      *
       * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
       * for serializing and deserializing the objects that contain their internal state. Once a
       * ControllerRevision has been successfully created, it can not be updated. The API Server will
@@ -964,23 +939,23 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
       /**
         * Data is the serialized representation of the state.
         */
-      var data: js.UndefOr[Input[RawExtension]] = js.undefined
+      var data: js.UndefOr[Input[js.Object]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -997,7 +972,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
       /**
@@ -1012,35 +987,37 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevisionList]
           ] = js.undefined
       /**
-        * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
     
     /**
-      * DEPRECATED - This group version of Deployment is deprecated by apps/v1beta2/Deployment. See
-      * the release notes for more information. Deployment enables declarative updates for Pods and
-      * ReplicaSets.
+      * @deprecated apps/v1beta1/Deployment is not supported by Kubernetes 1.16+ clusters. Use
+      * apps/v1/Deployment instead.
+      *
+      * Deployment enables declarative updates for Pods and ReplicaSets.
       */
     trait Deployment extends js.Object {
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment]] = js.undefined
       /**
@@ -1051,12 +1028,6 @@ object appsNs extends js.Object {
         * Specification of the desired behavior of the Deployment.
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.DeploymentSpec]] = js.undefined
-      /**
-        * Most recently observed status of the Deployment.
-        */
-      var status: js.UndefOr[
-            Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.DeploymentStatus]
-          ] = js.undefined
     }
     
     /**
@@ -1097,7 +1068,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
       /**
@@ -1110,7 +1081,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DeploymentList]] = js.undefined
       /**
@@ -1127,14 +1098,14 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -1331,32 +1302,26 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
         * Standard object metadata; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
         * defines the behavior of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[Input[ScaleSpec]] = js.undefined
-      /**
-        * current status of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
-        * Read-only.
-        */
-      var status: js.UndefOr[Input[ScaleStatus]] = js.undefined
     }
     
     /**
@@ -1394,9 +1359,10 @@ object appsNs extends js.Object {
     }
     
     /**
-      * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1beta2/StatefulSet. See
-      * the release notes for more information. StatefulSet represents a set of pods with consistent
-      * identities. Identities are defined as:
+      * @deprecated apps/v1beta1/StatefulSet is not supported by Kubernetes 1.16+ clusters. Use
+      * apps/v1/StatefulSet instead.
+      *
+      * StatefulSet represents a set of pods with consistent identities. Identities are defined as:
       *  - Network: A single stable DNS and hostname.
       *  - Storage: As many VolumeClaims as requested.
       * The StatefulSet guarantees that a given network identity will always map to the same storage
@@ -1407,14 +1373,14 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -1422,13 +1388,6 @@ object appsNs extends js.Object {
         * Spec defines the desired identities of pods in this set.
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.StatefulSetSpec]] = js.undefined
-      /**
-        * Status is the current status of Pods in this StatefulSet. This data may be out of date by
-        * some window of time.
-        */
-      var status: js.UndefOr[
-            Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta1Ns.StatefulSetStatus]
-          ] = js.undefined
     }
     
     /**
@@ -1465,7 +1424,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
       var items: Input[
@@ -1475,7 +1434,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSetList]] = js.undefined
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
@@ -1637,34 +1596,35 @@ object appsNs extends js.Object {
   @js.native
   object v1beta2Ns extends js.Object {
     /**
-      * DEPRECATED - This group version of ControllerRevision is deprecated by
-      * apps/v1/ControllerRevision. See the release notes for more information. ControllerRevision
-      * implements an immutable snapshot of state data. Clients are responsible for serializing and
-      * deserializing the objects that contain their internal state. Once a ControllerRevision has
-      * been successfully created, it can not be updated. The API Server will fail validation of all
-      * requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted.
-      * Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and
-      * rollback, this object is beta. However, it may be subject to name and representation changes
-      * in future releases, and clients should not depend on its stability. It is primarily for
-      * internal use by controllers.
+      * @deprecated apps/v1beta2/ControllerRevision is not supported by Kubernetes 1.16+ clusters.
+      * Use apps/v1/ControllerRevision instead.
+      *
+      * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
+      * for serializing and deserializing the objects that contain their internal state. Once a
+      * ControllerRevision has been successfully created, it can not be updated. The API Server will
+      * fail validation of all requests that attempt to mutate the Data field. ControllerRevisions
+      * may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet
+      * controllers for update and rollback, this object is beta. However, it may be subject to name
+      * and representation changes in future releases, and clients should not depend on its
+      * stability. It is primarily for internal use by controllers.
       */
     trait ControllerRevision extends js.Object {
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
         * Data is the serialized representation of the state.
         */
-      var data: js.UndefOr[Input[RawExtension]] = js.undefined
+      var data: js.UndefOr[Input[js.Object]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision]] = js.undefined
       /**
@@ -1686,7 +1646,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
@@ -1701,7 +1661,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevisionList]
@@ -1714,22 +1674,24 @@ object appsNs extends js.Object {
     }
     
     /**
-      * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet. See the
-      * release notes for more information. DaemonSet represents the configuration of a daemon set.
+      * @deprecated apps/v1beta2/DaemonSet is not supported by Kubernetes 1.16+ clusters. Use
+      * apps/v1/DaemonSet instead.
+      *
+      * DaemonSet represents the configuration of a daemon set.
       */
     trait DaemonSet extends js.Object {
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSet]] = js.undefined
       /**
@@ -1742,12 +1704,6 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.DaemonSetSpec]] = js.undefined
-      /**
-        * The current status of this daemon set. This data may be out of date by some window of time.
-        * Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.DaemonSetStatus]] = js.undefined
     }
     
     /**
@@ -1784,7 +1740,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
@@ -1797,7 +1753,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSetList]] = js.undefined
       /**
@@ -1923,23 +1879,24 @@ object appsNs extends js.Object {
     }
     
     /**
-      * DEPRECATED - This group version of Deployment is deprecated by apps/v1/Deployment. See the
-      * release notes for more information. Deployment enables declarative updates for Pods and
-      * ReplicaSets.
+      * @deprecated apps/v1beta2/Deployment is not supported by Kubernetes 1.16+ clusters. Use
+      * apps/v1/Deployment instead.
+      *
+      * Deployment enables declarative updates for Pods and ReplicaSets.
       */
     trait Deployment extends js.Object {
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment]] = js.undefined
       /**
@@ -1950,12 +1907,6 @@ object appsNs extends js.Object {
         * Specification of the desired behavior of the Deployment.
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.DeploymentSpec]] = js.undefined
-      /**
-        * Most recently observed status of the Deployment.
-        */
-      var status: js.UndefOr[
-            Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.DeploymentStatus]
-          ] = js.undefined
     }
     
     /**
@@ -1996,7 +1947,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
@@ -2009,7 +1960,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DeploymentList]] = js.undefined
       /**
@@ -2137,23 +2088,24 @@ object appsNs extends js.Object {
     }
     
     /**
-      * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1/ReplicaSet. See the
-      * release notes for more information. ReplicaSet ensures that a specified number of pod
-      * replicas are running at any given time.
+      * @deprecated apps/v1beta2/ReplicaSet is not supported by Kubernetes 1.16+ clusters. Use
+      * apps/v1/ReplicaSet instead.
+      *
+      * ReplicaSet ensures that a specified number of pod replicas are running at any given time.
       */
     trait ReplicaSet extends js.Object {
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSet]] = js.undefined
       /**
@@ -2167,14 +2119,6 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.ReplicaSetSpec]] = js.undefined
-      /**
-        * Status is the most recently observed status of the ReplicaSet. This data may be out of date
-        * by some window of time. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
-        */
-      var status: js.UndefOr[
-            Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.ReplicaSetStatus]
-          ] = js.undefined
     }
     
     /**
@@ -2211,7 +2155,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
@@ -2225,7 +2169,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSetList]] = js.undefined
       /**
@@ -2371,14 +2315,14 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -2391,12 +2335,6 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.ScaleSpec]] = js.undefined
-      /**
-        * current status of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
-        * Read-only.
-        */
-      var status: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.ScaleStatus]] = js.undefined
     }
     
     /**
@@ -2434,9 +2372,10 @@ object appsNs extends js.Object {
     }
     
     /**
-      * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1/StatefulSet. See the
-      * release notes for more information. StatefulSet represents a set of pods with consistent
-      * identities. Identities are defined as:
+      * @deprecated apps/v1beta2/StatefulSet is not supported by Kubernetes 1.16+ clusters. Use
+      * apps/v1/StatefulSet instead.
+      *
+      * StatefulSet represents a set of pods with consistent identities. Identities are defined as:
       *  - Network: A single stable DNS and hostname.
       *  - Storage: As many VolumeClaims as requested.
       * The StatefulSet guarantees that a given network identity will always map to the same storage
@@ -2447,14 +2386,14 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -2462,13 +2401,6 @@ object appsNs extends js.Object {
         * Spec defines the desired identities of pods in this set.
         */
       var spec: js.UndefOr[Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.StatefulSetSpec]] = js.undefined
-      /**
-        * Status is the current status of Pods in this StatefulSet. This data may be out of date by
-        * some window of time.
-        */
-      var status: js.UndefOr[
-            Input[typings.atPulumiKubernetes.typesInputMod.appsNs.v1beta2Ns.StatefulSetStatus]
-          ] = js.undefined
     }
     
     /**
@@ -2505,7 +2437,7 @@ object appsNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
       var items: Input[
@@ -2515,7 +2447,7 @@ object appsNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSetList]] = js.undefined
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined

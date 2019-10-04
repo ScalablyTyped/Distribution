@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 trait CustomResourceValidation extends js.Object {
   /**
-    * OpenAPIV3Schema is the OpenAPI v3 schema to be validated against.
+    * openAPIV3Schema is the OpenAPI v3 schema to use for validation and pruning.
     */
   val openAPIV3Schema: JSONSchemaProps
 }

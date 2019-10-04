@@ -65,7 +65,13 @@ object NativeImage extends js.Object {
     */
   def createEmpty(): NativeImage = js.native
   /**
-    * Creates a new NativeImage instance from buffer.
+    * Creates a new NativeImage instance from buffer that contains the raw bitmap
+    * pixel data returned by toBitmap(). The specific format is platform-dependent.
+    */
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): NativeImage = js.native
+  /**
+    * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
+    * first.
     */
   def createFromBuffer(buffer: Buffer): NativeImage = js.native
   def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): NativeImage = js.native
@@ -104,7 +110,13 @@ object nativeImage extends Instantiable0[NativeImage] {
     */
   def createEmpty(): NativeImage = js.native
   /**
-    * Creates a new NativeImage instance from buffer.
+    * Creates a new NativeImage instance from buffer that contains the raw bitmap
+    * pixel data returned by toBitmap(). The specific format is platform-dependent.
+    */
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): NativeImage = js.native
+  /**
+    * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
+    * first.
     */
   def createFromBuffer(buffer: Buffer): NativeImage = js.native
   def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): NativeImage = js.native

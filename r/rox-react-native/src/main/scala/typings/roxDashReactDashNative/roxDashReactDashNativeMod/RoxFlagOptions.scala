@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RoxFlagOptions extends js.Object {
-  var freeze: js.UndefOr[RoxFlagFreezeLevel] = js.undefined
+  var freeze: js.UndefOr[FreezeOptions] = js.undefined
 }
 
 object RoxFlagOptions {
   @scala.inline
-  def apply(freeze: RoxFlagFreezeLevel = null): RoxFlagOptions = {
+  def apply(freeze: FreezeOptions = null): RoxFlagOptions = {
     val __obj = js.Dynamic.literal()
     if (freeze != null) __obj.updateDynamic("freeze")(freeze)
     __obj.asInstanceOf[RoxFlagOptions]

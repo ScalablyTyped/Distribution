@@ -1,6 +1,6 @@
 package typings.three.srcGeometriesExtrudeGeometryMod
 
-import typings.three.srcExtrasCoreCurvePathMod.CurvePath
+import typings.three.srcExtrasCoreCurveMod.Curve
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait ExtrudeGeometryOptions extends js.Object {
   var bevelThickness: js.UndefOr[Double] = js.undefined
   var curveSegments: js.UndefOr[Double] = js.undefined
   var depth: js.UndefOr[Double] = js.undefined
-  var extrudePath: js.UndefOr[CurvePath[Vector3]] = js.undefined
+  var extrudePath: js.UndefOr[Curve[Vector3]] = js.undefined
   var steps: js.UndefOr[Double] = js.undefined
 }
 
@@ -30,7 +30,7 @@ object ExtrudeGeometryOptions {
     bevelThickness: Int | Double = null,
     curveSegments: Int | Double = null,
     depth: Int | Double = null,
-    extrudePath: CurvePath[Vector3] = null,
+    extrudePath: Curve[Vector3] = null,
     steps: Int | Double = null
   ): ExtrudeGeometryOptions = {
     val __obj = js.Dynamic.literal()

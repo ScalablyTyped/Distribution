@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetCustomerGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetCustomerGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetCustomerGatewayArgs extends js.Object {
   /**
     * One or more [name-value pairs][dcg-filters] to filter by.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetCustomerGatewayFilter]] = js.undefined
   /**
     * The ID of the gateway.
     */
@@ -21,7 +21,7 @@ trait GetCustomerGatewayArgs extends js.Object {
 object GetCustomerGatewayArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetCustomerGatewayFilter] = null,
     id: String = null,
     tags: StringDictionary[js.Any] = null
   ): GetCustomerGatewayArgs = {

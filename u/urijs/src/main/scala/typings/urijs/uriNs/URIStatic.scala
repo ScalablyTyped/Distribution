@@ -17,6 +17,13 @@ trait URIStatic
       (/* value */ HTMLElement) | (/* value */ String) | (/* value */ URIOptions), 
       typings.urijs.uriNs.URI
     ] {
+  /**
+    * @description Wrapper for `URITemplate#expand`. Only present after
+    *              importing `urijs/src/URITemplate` explicitly.
+    */
+  var expand: js.UndefOr[
+    js.Function2[/* template */ String, /* vals */ js.Object, typings.urijs.uriNs.URI]
+  ] = js.native
   def apply(): typings.urijs.uriNs.URI = js.native
   def apply(value: String): typings.urijs.uriNs.URI = js.native
   def apply(value: HTMLElement): typings.urijs.uriNs.URI = js.native
@@ -35,7 +42,6 @@ trait URIStatic
   def encode(str: String): String = js.native
   def encodeQuery(qry: String): String = js.native
   def encodeReserved(str: String): String = js.native
-  def expand(template: String, vals: js.Object): typings.urijs.uriNs.URI = js.native
   def iso8859(): Unit = js.native
   def joinPaths(paths: (String | typings.urijs.uriNs.URI)*): typings.urijs.uriNs.URI = js.native
   def parse(url: String): Parts = js.native

@@ -2,6 +2,7 @@ package typings.atPulumiAws.s3BucketObjectMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
+import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
 import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Asset
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -65,6 +66,11 @@ class BucketObject protected () extends CustomResource {
     */
   val etag: Output[String] = js.native
   /**
+    * Allow the object to be deleted by removing any legal hold on any object version.
+    * Default is `false`. This value should be set to `true` only if the bucket has S3 object lock enabled.
+    */
+  val forceDestroy: Output[js.UndefOr[Boolean]] = js.native
+  /**
     * The name of the object once it is in the bucket.
     */
   val key: Output[String] = js.native
@@ -80,13 +86,25 @@ class BucketObject protected () extends CustomResource {
     */
   val metadata: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
+    * The [legal hold](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-legal-holds) status that you want to apply to the specified object. Valid values are `ON` and `OFF`.
+    */
+  val objectLockLegalHoldStatus: Output[js.UndefOr[String]] = js.native
+  /**
+    * The object lock [retention mode](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-modes) that you want to apply to this object. Valid values are `GOVERNANCE` and `COMPLIANCE`.
+    */
+  val objectLockMode: Output[js.UndefOr[String]] = js.native
+  /**
+    * The date and time, in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8), when this object's object lock will [expire](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-periods).
+    */
+  val objectLockRetainUntilDate: Output[js.UndefOr[String]] = js.native
+  /**
     * Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
     */
   val serverSideEncryption: Output[String] = js.native
   /**
     * The path to a file that will be read and uploaded as raw bytes for the object content.
     */
-  val source: Output[js.UndefOr[Asset]] = js.native
+  val source: Output[js.UndefOr[Asset | Archive]] = js.native
   /**
     * Specifies the desired [Storage Class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html)
     * for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA`", "`INTELLIGENT_TIERING`", "`GLACIER`", "`DEEP_ARCHIVE`", or "`STANDARD_IA`". Defaults to "`STANDARD`".

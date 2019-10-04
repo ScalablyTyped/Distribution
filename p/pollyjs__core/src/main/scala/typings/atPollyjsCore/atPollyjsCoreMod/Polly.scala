@@ -3,7 +3,7 @@ package typings.atPollyjsCore.atPollyjsCoreMod
 import typings.atPollyjsCore.TypeofClassAdapter
 import typings.atPollyjsCore.TypeofClassPersister
 import typings.atPollyjsPersister.atPollyjsPersisterMod.default
-import typings.atPollyjsUtils.atPollyjsUtilsMod.MODES
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,14 @@ import scala.scalajs.js.annotation._
 @JSImport("@pollyjs/core", "Polly")
 @js.native
 class Polly protected () extends js.Object {
-  def this(name: String) = this()
-  def this(name: String, options: PollyConfig) = this()
-  var mode: MODES = js.native
-  var persister: default = js.native
-  val recordingName: String | Null = js.native
+  def this(recordingName: String) = this()
+  def this(recordingName: String, options: PollyConfig) = this()
+  var adapters: Map[String, TypeofClassAdapter] = js.native
+  var config: PollyConfig = js.native
+  var mode: MODE = js.native
+  var persister: default | Null = js.native
+  var recordingId: String = js.native
+  var recordingName: String = js.native
   var server: PollyServer = js.native
   def configure(config: PollyConfig): Unit = js.native
   def connectTo(name: String): Unit = js.native
@@ -35,10 +38,13 @@ class Polly protected () extends js.Object {
 @JSImport("@pollyjs/core", "Polly")
 @js.native
 object Polly extends js.Object {
+  var VERSION: String = js.native
   def off(event: PollyEvent, listener: PollyEventListener): Unit = js.native
   def on(event: PollyEvent, listener: PollyEventListener): Unit = js.native
   def once(event: PollyEvent, listener: PollyEventListener): Unit = js.native
   def register(Factory: TypeofClassAdapter): Unit = js.native
   def register(Factory: TypeofClassPersister): Unit = js.native
+  def unregister(Factory: TypeofClassAdapter): Unit = js.native
+  def unregister(Factory: TypeofClassPersister): Unit = js.native
 }
 

@@ -1,16 +1,16 @@
 package typings.atPulumiAws.s3BucketMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AbortIncompleteMultipartUploadDaysEnabled
-import typings.atPulumiAws.Anon_AllowedHeadersAllowedMethods
-import typings.atPulumiAws.Anon_EnabledMfaDeleteBoolean
-import typings.atPulumiAws.Anon_ErrorDocumentIndexDocument
-import typings.atPulumiAws.Anon_ObjectLockEnabledRule
-import typings.atPulumiAws.Anon_RoleRules
-import typings.atPulumiAws.Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm
-import typings.atPulumiAws.Anon_TargetBucketTargetPrefix
 import typings.atPulumiAws.iamDocumentsMod.PolicyDocument
 import typings.atPulumiAws.s3CannedAclMod.CannedAcl
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketCorsRule
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketLifecycleRule
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketLogging
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketObjectLockConfiguration
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketReplicationConfiguration
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketServerSideEncryptionConfiguration
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketVersioning
+import typings.atPulumiAws.typesInputMod.s3Ns.BucketWebsite
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,9 +40,9 @@ trait BucketArgs extends js.Object {
   /**
     * A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) (documented below).
     */
-  val corsRules: js.UndefOr[Input[js.Array[Input[Anon_AllowedHeadersAllowedMethods]]]] = js.undefined
+  val corsRules: js.UndefOr[Input[js.Array[Input[BucketCorsRule]]]] = js.undefined
   /**
-    * A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
+    * A boolean that indicates all objects (including any [locked objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html)) should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
     */
   val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
   /**
@@ -52,15 +52,15 @@ trait BucketArgs extends js.Object {
   /**
     * A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) (documented below).
     */
-  val lifecycleRules: js.UndefOr[Input[js.Array[Input[Anon_AbortIncompleteMultipartUploadDaysEnabled]]]] = js.undefined
+  val lifecycleRules: js.UndefOr[Input[js.Array[Input[BucketLifecycleRule]]]] = js.undefined
   /**
     * A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
     */
-  val loggings: js.UndefOr[Input[js.Array[Input[Anon_TargetBucketTargetPrefix]]]] = js.undefined
+  val loggings: js.UndefOr[Input[js.Array[Input[BucketLogging]]]] = js.undefined
   /**
     * A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) (documented below)
     */
-  val objectLockConfiguration: js.UndefOr[Input[Anon_ObjectLockEnabledRule]] = js.undefined
+  val objectLockConfiguration: js.UndefOr[Input[BucketObjectLockConfiguration]] = js.undefined
   /**
     * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), this provider may view the policy as constantly changing in a deployment. In this case, please make sure you use the verbose/specific version of the policy.
     */
@@ -72,7 +72,7 @@ trait BucketArgs extends js.Object {
   /**
     * A configuration of [replication configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html) (documented below).
     */
-  val replicationConfiguration: js.UndefOr[Input[Anon_RoleRules]] = js.undefined
+  val replicationConfiguration: js.UndefOr[Input[BucketReplicationConfiguration]] = js.undefined
   /**
     * Specifies who should bear the cost of Amazon S3 data transfer.
     * Can be either `BucketOwner` or `Requester`. By default, the owner of the S3 bucket would incur
@@ -83,9 +83,7 @@ trait BucketArgs extends js.Object {
   /**
     * A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html) (documented below)
     */
-  val serverSideEncryptionConfiguration: js.UndefOr[
-    Input[Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm]
-  ] = js.undefined
+  val serverSideEncryptionConfiguration: js.UndefOr[Input[BucketServerSideEncryptionConfiguration]] = js.undefined
   /**
     * A mapping of tags that identifies subset of objects to which the rule applies.
     * The rule applies only to objects having all the tags in its tagset.
@@ -94,11 +92,11 @@ trait BucketArgs extends js.Object {
   /**
     * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
     */
-  val versioning: js.UndefOr[Input[Anon_EnabledMfaDeleteBoolean]] = js.undefined
+  val versioning: js.UndefOr[Input[BucketVersioning]] = js.undefined
   /**
     * A website object (documented below).
     */
-  val website: js.UndefOr[Input[Anon_ErrorDocumentIndexDocument]] = js.undefined
+  val website: js.UndefOr[Input[BucketWebsite]] = js.undefined
   /**
     * The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records.
     */
@@ -117,20 +115,20 @@ object BucketArgs {
     arn: Input[String] = null,
     bucket: Input[String] = null,
     bucketPrefix: Input[String] = null,
-    corsRules: Input[js.Array[Input[Anon_AllowedHeadersAllowedMethods]]] = null,
+    corsRules: Input[js.Array[Input[BucketCorsRule]]] = null,
     forceDestroy: Input[Boolean] = null,
     hostedZoneId: Input[String] = null,
-    lifecycleRules: Input[js.Array[Input[Anon_AbortIncompleteMultipartUploadDaysEnabled]]] = null,
-    loggings: Input[js.Array[Input[Anon_TargetBucketTargetPrefix]]] = null,
-    objectLockConfiguration: Input[Anon_ObjectLockEnabledRule] = null,
+    lifecycleRules: Input[js.Array[Input[BucketLifecycleRule]]] = null,
+    loggings: Input[js.Array[Input[BucketLogging]]] = null,
+    objectLockConfiguration: Input[BucketObjectLockConfiguration] = null,
     policy: Input[String | PolicyDocument] = null,
     region: Input[String] = null,
-    replicationConfiguration: Input[Anon_RoleRules] = null,
+    replicationConfiguration: Input[BucketReplicationConfiguration] = null,
     requestPayer: Input[String] = null,
-    serverSideEncryptionConfiguration: Input[Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm] = null,
+    serverSideEncryptionConfiguration: Input[BucketServerSideEncryptionConfiguration] = null,
     tags: Input[StringDictionary[_]] = null,
-    versioning: Input[Anon_EnabledMfaDeleteBoolean] = null,
-    website: Input[Anon_ErrorDocumentIndexDocument] = null,
+    versioning: Input[BucketVersioning] = null,
+    website: Input[BucketWebsite] = null,
     websiteDomain: Input[String] = null,
     websiteEndpoint: Input[String] = null
   ): BucketArgs = {

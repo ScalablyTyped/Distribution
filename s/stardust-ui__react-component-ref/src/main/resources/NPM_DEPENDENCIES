@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stardust-ui/react-component-ref" : "0.38.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stardust-ui/react-component-ref" : "0.38.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

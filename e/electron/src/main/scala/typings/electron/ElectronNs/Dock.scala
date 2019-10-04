@@ -28,6 +28,7 @@ trait Dock extends js.Object {
     */
   def downloadFinished(filePath: String): Unit = js.native
   def getBadge(): String = js.native
+  def getMenu(): Menu | Null = js.native
   /**
     * Hides the dock icon.
     */
@@ -46,9 +47,6 @@ trait Dock extends js.Object {
     * Sets the application's dock menu.
     */
   def setMenu(menu: Menu): Unit = js.native
-  /**
-    * Shows the dock icon.
-    */
-  def show(): Unit = js.native
+  def show(): js.Promise[Unit] = js.native
 }
 

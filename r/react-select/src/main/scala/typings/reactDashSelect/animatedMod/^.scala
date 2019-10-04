@@ -8,6 +8,7 @@ import typings.reactDashSelect.srcAnimatedSingleValueMod.AnimatedSingleValueProp
 import typings.reactDashSelect.srcAnimatedValueContainerMod.AnimatedValueContainerProps
 import typings.reactDashSelect.srcComponentsMod.SelectComponents
 import typings.reactDashSelect.srcComponentsMod.SelectComponentsConfig
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +21,9 @@ object ^ extends js.Object {
   val Placeholder: ComponentType[AnimatedPlaceholderProps[js.Any]] = js.native
   val SingleValue: ComponentType[AnimatedSingleValueProps[js.Any]] = js.native
   val ValueContainer: ComponentType[AnimatedValueContainerProps[js.Any]] = js.native
-  def default[OptionType](): SelectComponents[OptionType] = js.native
-  def default[OptionType](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = js.native
-  def makeAnimated[OptionType](): SelectComponents[OptionType] = js.native
-  def makeAnimated[OptionType](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = js.native
+  def default[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = js.native
+  def default[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = js.native
+  def makeAnimated[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = js.native
+  def makeAnimated[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = js.native
 }
 

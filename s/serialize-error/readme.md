@@ -1,7 +1,7 @@
 
 # Scala.js typings for serialize-error
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Serialize an error into a plain object

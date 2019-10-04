@@ -5,16 +5,17 @@ import typings.react.reactMod.Context
 import typings.reactDashRelay.Anon_Relay
 import typings.reactDashRelay.Anon_RelayRelayPaginationProp
 import typings.reactDashRelay.Anon_RelayRelayRefetchProp
-import typings.relayDashRuntime.relayDashRuntimeMod.CacheConfig
-import typings.relayDashRuntime.relayDashRuntimeMod.Disposable
-import typings.relayDashRuntime.relayDashRuntimeMod.GraphQLSubscriptionConfig
-import typings.relayDashRuntime.relayDashRuntimeMod.GraphQLTaggedNode
-import typings.relayDashRuntime.relayDashRuntimeMod.MutationConfig
-import typings.relayDashRuntime.relayDashRuntimeMod.OperationType
-import typings.relayDashRuntime.relayDashRuntimeMod.OptimisticMutationConfig
-import typings.relayDashRuntime.relayDashRuntimeMod.RelayContext
-import typings.relayDashRuntime.relayDashRuntimeMod.RelayModernEnvironment
-import typings.relayDashRuntime.relayDashRuntimeMod.StoreUpdater
+import typings.relayDashRuntime.libMutationsApplyOptimisticMutationMod.OptimisticMutationConfig
+import typings.relayDashRuntime.libMutationsCommitMutationMod.MutationConfig
+import typings.relayDashRuntime.libMutationsCommitMutationMod.MutationParameters
+import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayDashRuntime.libStoreRelayModernEnvironmentMod.RelayModernEnvironment
+import typings.relayDashRuntime.libStoreRelayStoreTypesMod.RelayContext
+import typings.relayDashRuntime.libStoreRelayStoreTypesMod.StoreUpdater
+import typings.relayDashRuntime.libSubscriptionRequestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +24,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ReactRelayContext: Context[RelayContext | Null] = js.native
-  // Helpers (can be implemented via the above API)
-  // ./mutations/applyRelayModernOptimisticMutation
   def applyOptimisticMutation(
-    environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment,
+    environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
     config: OptimisticMutationConfig
   ): Disposable = js.native
-  def commitLocalUpdate(environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment, updater: StoreUpdater): Unit = js.native
-  // ./mutations/commitRelayModernMutation
-  def commitMutation[TOperation /* <: OperationType */](
-    environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment,
+  def commitLocalUpdate(
+    environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
+    updater: StoreUpdater
+  ): Unit = js.native
+  def commitMutation[TOperation /* <: MutationParameters */](
+    environment: RelayModernEnvironment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = js.native
@@ -60,7 +61,7 @@ object ^ extends js.Object {
   ): Container[Props] = js.native
   @JSName("fetchQuery")
   def fetchQuery_variables[T /* <: OperationType */](
-    environment: RelayModernEnvironment,
+    environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any
   ): js.Promise[
@@ -68,19 +69,19 @@ object ^ extends js.Object {
   ] = js.native
   @JSName("fetchQuery")
   def fetchQuery_variables[T /* <: OperationType */](
-    environment: RelayModernEnvironment,
+    environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any,
     cacheConfig: CacheConfig
   ): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
   ] = js.native
-  def graphql(strings: js.Array[String]): GraphQLTaggedNode = js.native
+  def graphql(strings: js.Any): GraphQLTaggedNode = js.native
   def readInlineData[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentOrRegularProp[T]): T = js.native
-  // ./subscription/requestRelaySubscription
-  def requestSubscription(
-    environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment,
-    config: GraphQLSubscriptionConfig[js.Object]
+  def requestSubscription[TSubscriptionPayload](
+    environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
+    // tslint:disable-next-line no-unnecessary-generics
+  config: GraphQLSubscriptionConfig[TSubscriptionPayload]
   ): Disposable = js.native
 }
 

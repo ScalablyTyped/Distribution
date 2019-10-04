@@ -13,6 +13,11 @@ trait Options extends js.Object {
   		*/
   val color: js.UndefOr[Color] = js.undefined
   /**
+  		Discard stdin input (except Ctrl+C) while running if it's TTY. This prevents the spinner from twitching on input, outputting broken lines on `Enter` key presses, and prevents buffering of input while the spinner is running.
+  		@default true
+  		*/
+  val discardStdin: js.UndefOr[Boolean] = js.undefined
+  /**
   		Set to `false` to stop Ora from hiding the cursor.
   		@default true
   		*/
@@ -24,7 +29,8 @@ trait Options extends js.Object {
   val indent: js.UndefOr[Double] = js.undefined
   /**
   		Interval between each frame.
-  		Spinners provide their own recommended interval, so you don't really need to specify this. Default value: Provided by the spinner or `100`.
+  		Spinners provide their own recommended interval, so you don't really need to specify this.
+  		Default: Provided by the spinner or `100`.
   		*/
   val interval: js.UndefOr[Double] = js.undefined
   /**
@@ -33,7 +39,7 @@ trait Options extends js.Object {
   		*/
   val isEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-  		Text to display before the spinner.
+  		Text to display before the spinner. No prefix text will be displayed if set to an empty string.
   		*/
   val prefixText: js.UndefOr[String] = js.undefined
   /**
@@ -65,6 +71,7 @@ object Options {
   @scala.inline
   def apply(
     color: Color = null,
+    discardStdin: js.UndefOr[Boolean] = js.undefined,
     hideCursor: js.UndefOr[Boolean] = js.undefined,
     indent: Int | Double = null,
     interval: Int | Double = null,
@@ -76,6 +83,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(discardStdin)) __obj.updateDynamic("discardStdin")(discardStdin)
     if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor)
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])

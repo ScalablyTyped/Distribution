@@ -69,6 +69,10 @@ trait ChartSpec extends js.Object {
     * This field is optional.
     */
   var titleTextPosition: js.UndefOr[TextPosition] = js.undefined
+  /** A treemap chart specification. */
+  var treemapChart: js.UndefOr[TreemapChartSpec] = js.undefined
+  /** A waterfall chart specification. */
+  var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.undefined
 }
 
 object ChartSpec {
@@ -90,7 +94,9 @@ object ChartSpec {
     subtitleTextPosition: TextPosition = null,
     title: String = null,
     titleTextFormat: TextFormat = null,
-    titleTextPosition: TextPosition = null
+    titleTextPosition: TextPosition = null,
+    treemapChart: TreemapChartSpec = null,
+    waterfallChart: WaterfallChartSpec = null
   ): ChartSpec = {
     val __obj = js.Dynamic.literal()
     if (altText != null) __obj.updateDynamic("altText")(altText)
@@ -110,6 +116,8 @@ object ChartSpec {
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleTextFormat != null) __obj.updateDynamic("titleTextFormat")(titleTextFormat)
     if (titleTextPosition != null) __obj.updateDynamic("titleTextPosition")(titleTextPosition)
+    if (treemapChart != null) __obj.updateDynamic("treemapChart")(treemapChart)
+    if (waterfallChart != null) __obj.updateDynamic("waterfallChart")(waterfallChart)
     __obj.asInstanceOf[ChartSpec]
   }
 }

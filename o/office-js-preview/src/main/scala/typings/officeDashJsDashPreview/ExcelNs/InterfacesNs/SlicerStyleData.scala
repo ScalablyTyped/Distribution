@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "slicerStyle.toJSON()". */
+/** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
 trait SlicerStyleData extends js.Object {
   /**
     *

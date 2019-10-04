@@ -4,6 +4,7 @@ import typings.plotlyDotJs.plotlyDotJsMod.ButtonClickEvent
 import typings.plotlyDotJs.plotlyDotJsMod.ClickAnnotationEvent
 import typings.plotlyDotJs.plotlyDotJsMod.Config
 import typings.plotlyDotJs.plotlyDotJsMod.Data
+import typings.plotlyDotJs.plotlyDotJsMod.Frame
 import typings.plotlyDotJs.plotlyDotJsMod.FrameAnimationEvent
 import typings.plotlyDotJs.plotlyDotJsMod.Layout
 import typings.plotlyDotJs.plotlyDotJsMod.LegendClickEvent

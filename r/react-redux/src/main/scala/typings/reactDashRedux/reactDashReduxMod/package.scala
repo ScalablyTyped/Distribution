@@ -6,18 +6,17 @@ import scala.scalajs.js.annotation._
 
 package object reactDashReduxMod {
   import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsMod.NonReactStatics
-  import typings.react.reactMod.ComponentClass
-  import typings.react.reactMod.ComponentState
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+  import typings.react.reactMod.NamedExoticComponent
   import typings.reactDashRedux.Anon_WrappedComponent
   import typings.redux.reduxMod.Action
   import typings.redux.reduxMod.Dispatch
   import typings.std.Exclude
   import typings.std.Pick
 
-  type AdvancedComponentDecorator[TProps, TOwnProps] = js.Function1[/* component */ ComponentType[TProps], ComponentClass[TOwnProps, ComponentState]]
-  type ConnectedComponentClass[C /* <: ComponentType[_] */, P] = (ComponentClass[LibraryManagedAttributes[C, P], ComponentState]) with (NonReactStatics[C, js.Object]) with Anon_WrappedComponent[C]
+  type AdvancedComponentDecorator[TProps, TOwnProps] = js.Function1[/* component */ ComponentType[TProps], NamedExoticComponent[TOwnProps]]
+  type ConnectedComponent[C /* <: ComponentType[_] */, P] = (NamedExoticComponent[LibraryManagedAttributes[C, P]]) with (NonReactStatics[C, js.Object]) with Anon_WrappedComponent[C]
   type ConnectedProps[TConnector] = js.Any
   type GetProps[C] = js.Any
   type HandleThunkActionCreator[TActionCreator] = TActionCreator | InferThunkActionCreatorType[TActionCreator]
@@ -25,7 +24,7 @@ package object reactDashReduxMod {
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   type InferableComponentEnhancerWithProps[TInjectedProps, TNeedsProps] = js.Function1[
     /* component */ js.Any, 
-    ConnectedComponentClass[js.Any, (Omit[GetProps[_], String]) with TNeedsProps]
+    ConnectedComponent[js.Any, (Omit[GetProps[_], String]) with TNeedsProps]
   ]
   type MapDispatchToProps[TDispatchProps, TOwnProps] = (MapDispatchToPropsFunction[TDispatchProps, TOwnProps]) | TDispatchProps
   type MapDispatchToPropsFactory[TDispatchProps, TOwnProps] = js.Function2[

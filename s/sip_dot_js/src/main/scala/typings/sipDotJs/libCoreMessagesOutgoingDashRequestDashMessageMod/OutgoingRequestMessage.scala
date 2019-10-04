@@ -1,7 +1,7 @@
 package typings.sipDotJs.libCoreMessagesOutgoingDashRequestDashMessageMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sipDotJs.Anon_BodyContentType
+import typings.sipDotJs.Anon_Body
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
 import typings.sipDotJs.libCoreMessagesNameDashAddrDashHeaderMod.NameAddrHeader
 import typings.sipDotJs.libCoreMessagesUriMod.URI
@@ -31,7 +31,7 @@ class OutgoingRequestMessage protected () extends js.Object {
     extraHeaders: js.Array[String],
     body: Body
   ) = this()
-  var body: js.UndefOr[Anon_BodyContentType] = js.native
+  var body: js.UndefOr[Anon_Body] = js.native
   var branch: js.UndefOr[String] = js.native
   val callId: String = js.native
   var cseq: Double = js.native

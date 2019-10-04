@@ -29,6 +29,9 @@ object workerpoolStrings {
   @js.native
   sealed trait thread extends js.Object
   
+  @js.native
+  sealed trait web extends js.Object
+  
   @scala.inline
   def CancellationError: CancellationError = "CancellationError".asInstanceOf[CancellationError]
   @scala.inline
@@ -45,5 +48,7 @@ object workerpoolStrings {
   def process: process = "process".asInstanceOf[process]
   @scala.inline
   def thread: thread = "thread".asInstanceOf[thread]
+  @scala.inline
+  def web: web = "web".asInstanceOf[web]
 }
 

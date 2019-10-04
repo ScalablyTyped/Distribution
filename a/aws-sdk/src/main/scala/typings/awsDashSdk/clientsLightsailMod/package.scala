@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsLightsailMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.AutoSnapshot
   import typings.awsDashSdk.awsDashSdkStrings.mysql
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
@@ -16,7 +17,21 @@ package object clientsLightsailMod {
     - java.lang.String
   */
   type AccessDirection = _AccessDirection | String
+  type AddOnList = js.Array[AddOn]
+  type AddOnRequestList = js.Array[AddOnRequest]
+  type AddOnType = AutoSnapshot | String
+  type AttachedDiskList = js.Array[AttachedDisk]
   type AttachedDiskMap = StringDictionary[DiskMapList]
+  type AutoSnapshotDate = String
+  type AutoSnapshotDetailsList = js.Array[AutoSnapshotDetails]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Success
+    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress
+    - typings.awsDashSdk.awsDashSdkStrings.NotFound
+    - java.lang.String
+  */
+  type AutoSnapshotStatus = _AutoSnapshotStatus | String
   type AvailabilityZoneList = js.Array[AvailabilityZone]
   type Base64 = String
   type BlueprintList = js.Array[Blueprint]
@@ -334,6 +349,8 @@ package object clientsLightsailMod {
     - typings.awsDashSdk.awsDashSdkStrings.StartRelationalDatabase
     - typings.awsDashSdk.awsDashSdkStrings.RebootRelationalDatabase
     - typings.awsDashSdk.awsDashSdkStrings.StopRelationalDatabase
+    - typings.awsDashSdk.awsDashSdkStrings.EnableAddOn
+    - typings.awsDashSdk.awsDashSdkStrings.DisableAddOn
     - java.lang.String
   */
   type OperationType = _OperationType | String
@@ -411,6 +428,7 @@ package object clientsLightsailMod {
   */
   type RelationalDatabasePasswordVersion = _RelationalDatabasePasswordVersion | String
   type RelationalDatabaseSnapshotList = js.Array[RelationalDatabaseSnapshot]
+  type ResourceArn = String
   type ResourceName = String
   type ResourceNameList = js.Array[ResourceName]
   /* Rewritten from type alias, can be one of: 
@@ -439,6 +457,7 @@ package object clientsLightsailMod {
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = String
+  type TimeOfDay = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-28`
     - typings.awsDashSdk.awsDashSdkStrings.latest

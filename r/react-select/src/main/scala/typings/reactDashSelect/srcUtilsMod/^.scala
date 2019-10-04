@@ -4,6 +4,7 @@ import typings.react.reactMod.Ref
 import typings.reactDashSelect.Anon_Bottom
 import typings.reactDashSelect.srcTypesMod.ClassNamesState
 import typings.reactDashSelect.srcTypesMod.InputActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
 import typings.std.Element
@@ -33,7 +34,7 @@ object ^ extends js.Object {
   def classNames(prefix: Null, cssKey: String, state: ClassNamesState, className: String): String = js.native
   def classNames(prefix: Null, cssKey: Null, state: ClassNamesState): String = js.native
   def classNames(prefix: Null, cssKey: Null, state: ClassNamesState, className: String): String = js.native
-  def cleanValue[OptionType](value: ValueType[OptionType]): OptionsType[OptionType] = js.native
+  def cleanValue[OptionType /* <: OptionTypeBase */](value: ValueType[OptionType]): OptionsType[OptionType] = js.native
   def emptyString(): String = js.native
   def getBoundingClientObj(element: HTMLElement): Anon_Bottom = js.native
   def getScrollParent(element: Ref[_]): Element = js.native

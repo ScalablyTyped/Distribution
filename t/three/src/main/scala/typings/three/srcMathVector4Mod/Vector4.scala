@@ -1,5 +1,6 @@
 package typings.three.srcMathVector4Mod
 
+import typings.std.ArrayLike
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathMatrix4Mod.Matrix4
@@ -51,8 +52,20 @@ class Vector4 () extends Vector {
   	 */
   def equals(v: Vector4): Boolean = js.native
   def floor(): this.type = js.native
-  def fromArray(xyzw: js.Array[Double]): this.type = js.native
-  def fromArray(xyzw: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this vector's x, y, z and w value from the provided array.
+  	 * @param array the source array.
+  	 * @param offset (optional) offset into the array. Default is 0.
+  	 */
+  def fromArray(array: js.Array[Double]): this.type = js.native
+  def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
+  /**
+  	 * Sets this vector's x, y, z and w value from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): this.type = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
   def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
   def fromBufferAttribute(attribute: BufferAttribute, index: Double, offset: Double): this.type = js.native
   /**
@@ -111,8 +124,22 @@ class Vector4 () extends Vector {
   	 * Sets this vector to a - b.
   	 */
   def subVectors(a: Vector4, b: Vector4): this.type = js.native
+  /**
+  	 * Returns an array [x, y, z, w], or copies x, y, z and w into the provided array.
+  	 * @param array (optional) array to store the vector to. If this is not provided, a new array will be created.
+  	 * @param offset (optional) optional offset into the array.
+  	 * @return The created or provided array.
+  	 */
   def toArray(): js.Array[Double] = js.native
-  def toArray(xyzw: js.Array[Double]): js.Array[Double] = js.native
-  def toArray(xyzw: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double]): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  /**
+  	 * Copies x, y, z and w into the provided array-like.
+  	 * @param array array-like to store the vector to.
+  	 * @param offset (optional) optional offset into the array-like.
+  	 * @return The provided array-like.
+  	 */
+  def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
+  def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
 }
 

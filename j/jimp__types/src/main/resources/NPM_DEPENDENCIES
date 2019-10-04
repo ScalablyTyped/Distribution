@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jimp/types" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jimp/types" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

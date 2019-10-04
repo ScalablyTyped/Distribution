@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 class GoogleToken () extends js.Object {
   def this(options: TokenOptions) = this()
+  val accessToken: js.UndefOr[String] = js.native
   var additionalClaims: js.UndefOr[js.Object] = js.native
   /**
     * Configure the GoogleToken for re-use.
@@ -22,12 +23,14 @@ class GoogleToken () extends js.Object {
   var configure: js.Any = js.native
   var email: js.UndefOr[String] = js.native
   var ensureEmail: js.Any = js.native
-  var expiresAt: js.UndefOr[Double | Null] = js.native
+  var expiresAt: js.UndefOr[Double] = js.native
   var getTokenAsync: js.Any = js.native
+  val idToken: js.UndefOr[String] = js.native
   var iss: js.UndefOr[String] = js.native
   var key: js.UndefOr[String] = js.native
   var keyFile: js.UndefOr[String] = js.native
-  var rawToken: TokenData | Null = js.native
+  var rawToken: js.UndefOr[TokenData] = js.native
+  val refreshToken: js.UndefOr[String] = js.native
   /**
     * Request the token from Google.
     */
@@ -35,8 +38,8 @@ class GoogleToken () extends js.Object {
   var revokeTokenAsync: js.Any = js.native
   var scope: js.UndefOr[String] = js.native
   var sub: js.UndefOr[String] = js.native
-  var token: js.UndefOr[String | Null] = js.native
-  var tokenExpires: Double | Null = js.native
+  var tokenExpires: js.UndefOr[Double] = js.native
+  val tokenType: js.UndefOr[String] = js.native
   /**
     * Given a keyFile, extract the key and client email if available
     * @param keyFile Path to a json, pem, or p12 file that contains the key.
@@ -48,8 +51,10 @@ class GoogleToken () extends js.Object {
     *
     * @param callback The callback function.
     */
-  def getToken(): js.Promise[js.UndefOr[String | Null]] = js.native
-  def getToken(callback: js.Function2[/* err */ Error | Null, /* token */ js.UndefOr[String | Null], Unit]): Unit = js.native
+  def getToken(): js.Promise[TokenData] = js.native
+  def getToken(callback: GetTokenCallback): Unit = js.native
+  def getToken(callback: GetTokenCallback, opts: GetTokenOptions): Unit = js.native
+  def getToken(opts: GetTokenOptions): js.Promise[TokenData] = js.native
   /**
     * Returns whether the token has expired.
     *

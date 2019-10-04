@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2clientvpnEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActiveDirectoryId
-import typings.atPulumiAws.Anon_CloudwatchLogGroup
+import typings.atPulumiAws.typesOutputMod.ec2clientvpnNs.EndpointAuthenticationOptions
+import typings.atPulumiAws.typesOutputMod.ec2clientvpnNs.EndpointConnectionLogOptions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,7 +27,7 @@ class Endpoint protected () extends CustomResource {
   /**
     * Information about the authentication method to be used to authenticate clients.
     */
-  val authenticationOptions: Output[Anon_ActiveDirectoryId] = js.native
+  val authenticationOptions: Output[EndpointAuthenticationOptions] = js.native
   /**
     * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
     */
@@ -35,7 +35,7 @@ class Endpoint protected () extends CustomResource {
   /**
     * Information about the client connection logging options.
     */
-  val connectionLogOptions: Output[Anon_CloudwatchLogGroup] = js.native
+  val connectionLogOptions: Output[EndpointConnectionLogOptions] = js.native
   /**
     * Name of the repository.
     */

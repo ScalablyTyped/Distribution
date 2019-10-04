@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var excludedActivityTypes: js.UndefOr[String] = js.undefined
   var failOnCancel: js.UndefOr[Boolean] = js.undefined
+  var filename: js.UndefOr[String] = js.undefined
   var message: js.UndefOr[String] = js.undefined
   var showAppsToView: js.UndefOr[Boolean] = js.undefined
   var subject: js.UndefOr[String] = js.undefined
@@ -21,6 +22,7 @@ object Options {
   def apply(
     excludedActivityTypes: String = null,
     failOnCancel: js.UndefOr[Boolean] = js.undefined,
+    filename: String = null,
     message: String = null,
     showAppsToView: js.UndefOr[Boolean] = js.undefined,
     subject: String = null,
@@ -32,6 +34,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes)
     if (!js.isUndefined(failOnCancel)) __obj.updateDynamic("failOnCancel")(failOnCancel)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
     if (message != null) __obj.updateDynamic("message")(message)
     if (!js.isUndefined(showAppsToView)) __obj.updateDynamic("showAppsToView")(showAppsToView)
     if (subject != null) __obj.updateDynamic("subject")(subject)

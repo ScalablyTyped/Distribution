@@ -21,6 +21,7 @@ trait IPartialTheme extends js.Object {
   var fonts: js.UndefOr[PartialIFontStyles] = js.undefined
   var isInverted: js.UndefOr[Boolean] = js.undefined
   var palette: js.UndefOr[PartialIPalette] = js.undefined
+  var rtl: js.UndefOr[Boolean] = js.undefined
   var schemes: js.UndefOr[PinISchemeNamesIScheme] = js.undefined
   var semanticColors: js.UndefOr[PartialISemanticColors] = js.undefined
   var spacing: js.UndefOr[PartialISpacing] = js.undefined
@@ -35,6 +36,7 @@ object IPartialTheme {
     fonts: PartialIFontStyles = null,
     isInverted: js.UndefOr[Boolean] = js.undefined,
     palette: PartialIPalette = null,
+    rtl: js.UndefOr[Boolean] = js.undefined,
     schemes: PinISchemeNamesIScheme = null,
     semanticColors: PartialISemanticColors = null,
     spacing: PartialISpacing = null
@@ -46,6 +48,7 @@ object IPartialTheme {
     if (fonts != null) __obj.updateDynamic("fonts")(fonts)
     if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted)
     if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
     if (schemes != null) __obj.updateDynamic("schemes")(schemes)
     if (semanticColors != null) __obj.updateDynamic("semanticColors")(semanticColors)
     if (spacing != null) __obj.updateDynamic("spacing")(spacing)

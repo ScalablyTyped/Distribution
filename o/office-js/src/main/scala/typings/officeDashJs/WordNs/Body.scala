@@ -80,7 +80,7 @@ class Body () extends ClientObject {
   val paragraphs: ParagraphCollection = js.native
   /**
     *
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -94,7 +94,7 @@ class Body () extends ClientObject {
   val parentBodyOrNullObject: Body = js.native
   /**
     *
-    * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
     *
     * [Api set: WordApi 1.1]
     */
@@ -108,7 +108,7 @@ class Body () extends ClientObject {
   val parentContentControlOrNullObject: ContentControl = js.native
   /**
     *
-    * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
+    * Gets the parent section of the body. Throws an error if there isn't a parent section. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -164,7 +164,7 @@ class Body () extends ClientObject {
   def clear(): Unit = js.native
   /**
     *
-    * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+    * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
@@ -200,7 +200,7 @@ class Body () extends ClientObject {
   def getRange_Whole(rangeLocation: Whole): Range = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
     *
@@ -213,7 +213,7 @@ class Body () extends ClientObject {
   ): Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
     *
@@ -230,7 +230,7 @@ class Body () extends ClientObject {
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a document into the body at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -242,7 +242,7 @@ class Body () extends ClientObject {
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a document into the body at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -259,7 +259,7 @@ class Body () extends ClientObject {
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -271,7 +271,7 @@ class Body () extends ClientObject {
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -288,7 +288,7 @@ class Body () extends ClientObject {
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a picture into the body at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -300,7 +300,7 @@ class Body () extends ClientObject {
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
     *
-    * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a picture into the body at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -317,7 +317,7 @@ class Body () extends ClientObject {
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -329,7 +329,7 @@ class Body () extends ClientObject {
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -346,7 +346,7 @@ class Body () extends ClientObject {
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -358,7 +358,7 @@ class Body () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -375,7 +375,7 @@ class Body () extends ClientObject {
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -397,7 +397,7 @@ class Body () extends ClientObject {
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+    * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
     *
@@ -424,7 +424,7 @@ class Body () extends ClientObject {
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts text into the body at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -436,7 +436,7 @@ class Body () extends ClientObject {
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts text into the body at the specified location.
     *
     * [Api set: WordApi 1.1]
     *

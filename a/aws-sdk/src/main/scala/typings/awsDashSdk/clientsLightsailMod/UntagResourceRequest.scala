@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait UntagResourceRequest extends js.Object {
   /**
+    * The Amazon Resource Name (ARN) of the resource from which you want to remove a tag.
+    */
+  var resourceArn: js.UndefOr[ResourceArn] = js.undefined
+  /**
     * The name of the resource from which you are removing a tag.
     */
   var resourceName: ResourceName
@@ -17,9 +21,9 @@ trait UntagResourceRequest extends js.Object {
 
 object UntagResourceRequest {
   @scala.inline
-  def apply(resourceName: ResourceName, tagKeys: TagKeyList): UntagResourceRequest = {
+  def apply(resourceName: ResourceName, tagKeys: TagKeyList, resourceArn: ResourceArn = null): UntagResourceRequest = {
     val __obj = js.Dynamic.literal(resourceName = resourceName, tagKeys = tagKeys)
-  
+    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn)
     __obj.asInstanceOf[UntagResourceRequest]
   }
 }

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3InventoryMod
 
-import typings.atPulumiAws.Anon_BucketAnonAccountId
-import typings.atPulumiAws.Anon_Frequency
-import typings.atPulumiAws.Anon_PrefixString
+import typings.atPulumiAws.typesOutputMod.s3Ns.InventoryDestination
+import typings.atPulumiAws.typesOutputMod.s3Ns.InventoryFilter
+import typings.atPulumiAws.typesOutputMod.s3Ns.InventorySchedule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -31,7 +31,7 @@ class Inventory protected () extends CustomResource {
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: Output[Anon_BucketAnonAccountId] = js.native
+  val destination: Output[InventoryDestination] = js.native
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
@@ -39,7 +39,7 @@ class Inventory protected () extends CustomResource {
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: Output[js.UndefOr[Anon_PrefixString]] = js.native
+  val filter: Output[js.UndefOr[InventoryFilter]] = js.native
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
@@ -55,7 +55,7 @@ class Inventory protected () extends CustomResource {
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: Output[Anon_Frequency] = js.native
+  val schedule: Output[InventorySchedule] = js.native
 }
 
 /* static members */

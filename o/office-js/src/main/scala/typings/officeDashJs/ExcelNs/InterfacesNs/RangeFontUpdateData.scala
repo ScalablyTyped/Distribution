@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })". */
+/** An interface for updating data on the RangeFont object, for use in `rangeFont.set({ ... })`. */
 trait RangeFontUpdateData extends js.Object {
   /**
     *

@@ -540,6 +540,18 @@ package object clientsSagemakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT4xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT9xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT18xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTg4dnDOTxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTg4dnDOT2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTg4dnDOT4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTg4dnDOT8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTg4dnDOT12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTg4dnDOT16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTr5DOTlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTr5DOTxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTr5DOT2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTr5DOT4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTr5DOT12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTr5DOT24xlarge
     - java.lang.String
   */
   type ProductionVariantInstanceType = _ProductionVariantInstanceType | java.lang.String
@@ -708,12 +720,12 @@ package object clientsSagemakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTp3DOT2xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTp3DOT8xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTp3DOT16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.mlDOTp3dnDOT24xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOTxlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT2xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT4xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT9xlarge
     - typings.awsDashSdk.awsDashSdkStrings.mlDOTc5DOT18xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.mlDOTp3dnDOT24xlarge
     - java.lang.String
   */
   type TrainingInstanceType = _TrainingInstanceType | java.lang.String

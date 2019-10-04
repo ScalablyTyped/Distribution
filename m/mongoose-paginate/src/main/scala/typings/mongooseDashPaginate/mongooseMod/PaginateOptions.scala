@@ -10,7 +10,7 @@ trait PaginateOptions extends js.Object {
   var limit: js.UndefOr[Double] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var page: js.UndefOr[Double] = js.undefined
-  var populate: js.UndefOr[(js.Array[js.Object | String]) | js.Object | String] = js.undefined
+  var populate: js.UndefOr[(js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions] = js.undefined
   var select: js.UndefOr[js.Object | String] = js.undefined
   var sort: js.UndefOr[js.Object | String] = js.undefined
 }
@@ -23,7 +23,7 @@ object PaginateOptions {
     limit: Int | Double = null,
     offset: Int | Double = null,
     page: Int | Double = null,
-    populate: (js.Array[js.Object | String]) | js.Object | String = null,
+    populate: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions = null,
     select: js.Object | String = null,
     sort: js.Object | String = null
   ): PaginateOptions = {

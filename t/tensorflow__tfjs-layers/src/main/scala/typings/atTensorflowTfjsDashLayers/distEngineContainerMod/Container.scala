@@ -39,6 +39,7 @@ abstract class Container protected () extends Layer {
   var inputLayersTensorIndices: js.Array[Double] = js.native
   var inputNames: js.Array[String] = js.native
   var inputs: js.Array[SymbolicTensor] = js.native
+  var internalContainerRefs: js.Array[Container] = js.native
   var internalInputShapes: js.Array[Shape] = js.native
   var internalOutputShapes: js.Array[Shape] = js.native
   var layers: js.Array[Layer] = js.native

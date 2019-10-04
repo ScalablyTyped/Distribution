@@ -16,6 +16,7 @@ trait Resource extends EObject {
     context: js.Any
   ): Unit = js.native
   def load(res: js.Any): Unit = js.native
+  def parse(data: EObject): js.Any = js.native
   def parse(data: EObject, loader: js.Function0[Unit]): js.Any = js.native
   def remove(): Unit = js.native
   def save(callback: js.Function0[Unit], options: js.Any): Unit = js.native

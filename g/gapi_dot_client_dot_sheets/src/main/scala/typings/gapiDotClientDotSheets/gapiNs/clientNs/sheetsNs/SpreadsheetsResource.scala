@@ -1,8 +1,9 @@
 package typings.gapiDotClientDotSheets.gapiNs.clientNs.sheetsNs
 
-import typings.gapiDotClientDotSheets.Anon_AccesstokenAlt
-import typings.gapiDotClientDotSheets.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData
-import typings.gapiDotClientDotSheets.Anon_AccesstokenAltBearertokenCallbackFieldsKey
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsIncludeGridData
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +33,9 @@ trait SpreadsheetsResource extends js.Object {
     * collaborator changes. If there are no collaborators, the spreadsheet
     * should reflect your changes.
     */
-  def batchUpdate(request: Anon_AccesstokenAlt): typings.gapiDotClient.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse]
+  def batchUpdate(request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId): typings.gapiDotClient.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse]
   /** Creates a spreadsheet, returning the newly created spreadsheet. */
-  def create(request: Anon_AccesstokenAltBearertokenCallbackFieldsKey): typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet]
+  def create(request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType): typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet]
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -58,7 +59,7 @@ trait SpreadsheetsResource extends js.Object {
     * return only the portions of the spreadsheet that intersect the requested
     * ranges. Ranges are specified using A1 notation.
     */
-  def get(request: Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData): typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet]
+  def get(request: Anon_AccesstokenAltCallbackFieldsIncludeGridData): typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet]
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -83,17 +84,19 @@ trait SpreadsheetsResource extends js.Object {
     * For large spreadsheets, it is recommended to retrieve only the specific
     * fields of the spreadsheet that you want.
     */
-  def getByDataFilter(request: Anon_AccesstokenAlt): typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet]
+  def getByDataFilter(
+    request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
+  ): typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet]
 }
 
 object SpreadsheetsResource {
   @scala.inline
   def apply(
-    batchUpdate: Anon_AccesstokenAlt => typings.gapiDotClient.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse],
-    create: Anon_AccesstokenAltBearertokenCallbackFieldsKey => typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet],
+    batchUpdate: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId => typings.gapiDotClient.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse],
+    create: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType => typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet],
     developerMetadata: DeveloperMetadataResource,
-    get: Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData => typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet],
-    getByDataFilter: Anon_AccesstokenAlt => typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet],
+    get: Anon_AccesstokenAltCallbackFieldsIncludeGridData => typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet],
+    getByDataFilter: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType => typings.gapiDotClient.gapiNs.clientNs.Request[Spreadsheet],
     sheets: SheetsResource,
     values: ValuesResource
   ): SpreadsheetsResource = {

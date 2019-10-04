@@ -1,0 +1,22 @@
+package typings.victory
+
+import typings.react.reactMod.CSSProperties
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_DataLabels extends js.Object {
+  var data: js.UndefOr[CSSProperties] = js.undefined
+  var labels: js.UndefOr[CSSProperties] = js.undefined
+}
+
+object Anon_DataLabels {
+  @scala.inline
+  def apply(data: CSSProperties = null, labels: CSSProperties = null): Anon_DataLabels = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    __obj.asInstanceOf[Anon_DataLabels]
+  }
+}
+

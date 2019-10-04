@@ -2,10 +2,8 @@ package typings.xterm.xtermMod
 
 import typings.xterm.xtermStrings.bar
 import typings.xterm.xtermStrings.block
-import typings.xterm.xtermStrings.dynamic
 import typings.xterm.xtermStrings.none
 import typings.xterm.xtermStrings.sound
-import typings.xterm.xtermStrings.static
 import typings.xterm.xtermStrings.underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,12 +12,13 @@ import scala.scalajs.js.annotation._
 trait ITerminalOptions extends js.Object {
   /**
     * Whether background should support non-opaque color. It must be set before
-    * executing open() method and can't be changed later without excuting it again.
-    * Warning: Enabling this option can reduce performances somewhat.
+    * executing the `Terminal.open()` method and can't be changed later without
+    * executing it again. Note that enabling this can negatively impact
+    * performance.
     */
   var allowTransparency: js.UndefOr[Boolean] = js.undefined
   /**
-    * A data uri of the sound to use for the bell (needs bellStyle = 'sound').
+    * A data uri of the sound to use for the bell when `bellStyle = 'sound'`.
     */
   var bellSound: js.UndefOr[String] = js.undefined
   /**
@@ -56,29 +55,6 @@ trait ITerminalOptions extends js.Object {
     */
   var drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether to enable the rendering of bold text.
-    *
-    * @deprecated Use fontWeight and fontWeightBold instead.
-    */
-  var enableBold: js.UndefOr[Boolean] = js.undefined
-  /**
-    * What character atlas implementation to use. The character atlas caches drawn characters,
-    * speeding up rendering significantly. However, it can introduce some minor rendering
-    * artifacts.
-    *
-    * - 'none': Don't use an atlas.
-    * - 'static': Generate an atlas when the terminal starts or is reconfigured. This atlas will
-    *   only contain ASCII characters in 16 colors.
-    * - 'dynamic': Generate an atlas using a LRU cache as characters are requested. Limited to
-    *   ASCII characters (for now), but supports 256 colors. For characters covered by the static
-    *   cache, it's slightly slower in comparison, since there's more overhead involved in
-    *   managing the cache.
-    *
-    * Currently defaults to 'static'. This option may be removed in the future. If it is, passed
-    * parameters will be ignored.
-    */
-  var experimentalCharAtlas: js.UndefOr[none | static | dynamic] = js.undefined
-  /**
     * The font family used to render text.
     */
   var fontFamily: js.UndefOr[String] = js.undefined
@@ -103,11 +79,22 @@ trait ITerminalOptions extends js.Object {
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
+    * What log level to use, this will log for all levels below and including
+    * what is set:
+    *
+    * 1. debug
+    * 2. info (default)
+    * 3. warn
+    * 4. error
+    * 5. off
+    */
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
+  /**
     * Whether holding a modifier key will force normal selection behavior,
     * regardless of whether the terminal is in mouse events mode. This will
-    * also prevent mouse events from being emitted by the terminal. For example,
-    * this allows you to use xterm.js' regular selection inside tmux with
-    * mouse mode enabled.
+    * also prevent mouse events from being emitted by the terminal. For
+    * example, this allows you to use xterm.js' regular selection inside tmux
+    * with mouse mode enabled.
     */
   var macOptionClickForcesSelection: js.UndefOr[Boolean] = js.undefined
   /**
@@ -139,8 +126,9 @@ trait ITerminalOptions extends js.Object {
     */
   var screenReaderMode: js.UndefOr[Boolean] = js.undefined
   /**
-    * The amount of scrollback in the terminal. Scrollback is the amount of rows
-    * that are retained when lines are scrolled beyond the initial viewport.
+    * The amount of scrollback in the terminal. Scrollback is the amount of
+    * rows that are retained when lines are scrolled beyond the initial
+    * viewport.
     */
   var scrollback: js.UndefOr[Double] = js.undefined
   /**
@@ -162,6 +150,11 @@ trait ITerminalOptions extends js.Object {
     *   not whitespace.
     */
   var windowsMode: js.UndefOr[Boolean] = js.undefined
+  /**
+    * A string containing all characters that are considered word separated by the
+    * double click to select work logic.
+    */
+  var wordSeparator: js.UndefOr[String] = js.undefined
 }
 
 object ITerminalOptions {
@@ -176,14 +169,13 @@ object ITerminalOptions {
     cursorStyle: block | underline | bar = null,
     disableStdin: js.UndefOr[Boolean] = js.undefined,
     drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined,
-    enableBold: js.UndefOr[Boolean] = js.undefined,
-    experimentalCharAtlas: none | static | dynamic = null,
     fontFamily: String = null,
     fontSize: Int | Double = null,
     fontWeight: FontWeight = null,
     fontWeightBold: FontWeight = null,
     letterSpacing: Int | Double = null,
     lineHeight: Int | Double = null,
+    logLevel: LogLevel = null,
     macOptionClickForcesSelection: js.UndefOr[Boolean] = js.undefined,
     macOptionIsMeta: js.UndefOr[Boolean] = js.undefined,
     rendererType: RendererType = null,
@@ -193,7 +185,8 @@ object ITerminalOptions {
     scrollback: Int | Double = null,
     tabStopWidth: Int | Double = null,
     theme: ITheme = null,
-    windowsMode: js.UndefOr[Boolean] = js.undefined
+    windowsMode: js.UndefOr[Boolean] = js.undefined,
+    wordSeparator: String = null
   ): ITerminalOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency)
@@ -205,14 +198,13 @@ object ITerminalOptions {
     if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStdin)) __obj.updateDynamic("disableStdin")(disableStdin)
     if (!js.isUndefined(drawBoldTextInBrightColors)) __obj.updateDynamic("drawBoldTextInBrightColors")(drawBoldTextInBrightColors)
-    if (!js.isUndefined(enableBold)) __obj.updateDynamic("enableBold")(enableBold)
-    if (experimentalCharAtlas != null) __obj.updateDynamic("experimentalCharAtlas")(experimentalCharAtlas.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (fontWeightBold != null) __obj.updateDynamic("fontWeightBold")(fontWeightBold)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
     if (!js.isUndefined(macOptionClickForcesSelection)) __obj.updateDynamic("macOptionClickForcesSelection")(macOptionClickForcesSelection)
     if (!js.isUndefined(macOptionIsMeta)) __obj.updateDynamic("macOptionIsMeta")(macOptionIsMeta)
     if (rendererType != null) __obj.updateDynamic("rendererType")(rendererType)
@@ -223,6 +215,7 @@ object ITerminalOptions {
     if (tabStopWidth != null) __obj.updateDynamic("tabStopWidth")(tabStopWidth.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (!js.isUndefined(windowsMode)) __obj.updateDynamic("windowsMode")(windowsMode)
+    if (wordSeparator != null) __obj.updateDynamic("wordSeparator")(wordSeparator)
     __obj.asInstanceOf[ITerminalOptions]
   }
 }

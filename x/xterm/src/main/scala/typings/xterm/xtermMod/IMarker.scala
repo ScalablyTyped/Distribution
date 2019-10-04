@@ -5,8 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IMarker extends IDisposable {
+  /**
+    * A unique identifier for this marker.
+    */
   val id: Double
+  /**
+    * Whether this marker is disposed.
+    */
   val isDisposed: Boolean
+  /**
+    * The actual line index in the buffer at this point in time.
+    */
   val line: Double
 }
 

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiCopyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncrypted
-import typings.atPulumiAws.Anon_DeviceName
+import typings.atPulumiAws.typesOutputMod.ec2Ns.AmiCopyEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.AmiCopyEphemeralBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -36,7 +36,7 @@ class AmiCopy protected () extends CustomResource {
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTerminationDeviceNameEncrypted]] = js.native
+  val ebsBlockDevices: Output[js.Array[AmiCopyEbsBlockDevice]] = js.native
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
@@ -49,7 +49,7 @@ class AmiCopy protected () extends CustomResource {
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: Output[js.Array[Anon_DeviceName]] = js.native
+  val ephemeralBlockDevices: Output[js.Array[AmiCopyEphemeralBlockDevice]] = js.native
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.

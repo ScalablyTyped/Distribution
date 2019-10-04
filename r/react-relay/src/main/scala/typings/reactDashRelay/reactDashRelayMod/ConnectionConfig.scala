@@ -3,8 +3,8 @@ package typings.reactDashRelay.reactDashRelayMod
 import typings.reactDashRelay.Anon_Count
 import typings.reactDashRelay.reactDashRelayStrings.backward
 import typings.reactDashRelay.reactDashRelayStrings.forward
-import typings.relayDashRuntime.relayDashRuntimeMod.GraphQLTaggedNode
-import typings.relayDashRuntime.relayDashRuntimeMod.Variables
+import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Variables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

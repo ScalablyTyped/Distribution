@@ -2,6 +2,12 @@ package typings.ky.kyMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ky.kyNumbers.`false`
+import typings.ky.kyStrings.delete
+import typings.ky.kyStrings.get
+import typings.ky.kyStrings.head
+import typings.ky.kyStrings.patch
+import typings.ky.kyStrings.post
+import typings.ky.kyStrings.put
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit
@@ -25,23 +31,70 @@ trait Options extends RequestInit {
   var hooks: js.UndefOr[Hooks] = js.undefined
   /**
   	Shortcut for sending JSON. Use this instead of the `body` option.
+  	Accepts a plain object which will be `JSON.stringify()`'d and the correct header will be set for you.
   	*/
   var json: js.UndefOr[js.Any] = js.undefined
   /**
+  	HTTP method used to make the request.
+  	Internally, the standard methods (`GET`, `POST`, `PUT`, `PATCH`, `HEAD` and `DELETE`) are uppercased in order to avoid server errors due to case sensitivity.
+  	*/
+  @JSName("method")
+  var method_Options: js.UndefOr[LiteralUnion[get | post | put | delete | patch | head, String]] = js.undefined
+  /**
   	Download progress event handler.
   	@param chunk - Note: It's empty for the first call.
+  	@example
+  	```
+  	import ky from 'ky';
+  	(async () => {
+  		await ky('https://example.com', {
+  			onDownloadProgress: (progress, chunk) => {
+  				// Example output:
+  				// `0% - 0 of 1271 bytes`
+  				// `100% - 1271 of 1271 bytes`
+  				console.log(`${progress.percent * 100}% - ${progress.transferredBytes} of ${progress.totalBytes} bytes`);
+  			}
+  		});
+  	})();
+  	```
   	*/
   var onDownloadProgress: js.UndefOr[js.Function2[/* progress */ DownloadProgress, /* chunk */ Uint8Array, Unit]] = js.undefined
   /**
-  	Prepends the input URL with the specified prefix.
-  	The prefix can be any valid URL, either relative or absolute.
+  	When specified, `prefixUrl` will be prepended to `input`. The prefix can be any valid URL, either relative or absolute. A trailing slash `/` is optional, one will be added automatically, if needed, when joining `prefixUrl` and `input`. The `input` argument cannot start with a `/` when using this option.
+  	Useful when used with [`ky.extend()`](#kyextenddefaultoptions) to create niche-specific Ky-instances.
+  	@example
+  	```
+  	import ky from 'ky';
+  	// On https://example.com
+  	(async () => {
+  		await ky('unicorn', {prefixUrl: '/api'});
+  		//=> 'https://example.com/api/unicorn'
+  		await ky('unicorn', {prefixUrl: 'https://cats.com'});
+  		//=> 'https://cats.com/unicorn'
+  	})();
+  	```
   	*/
   var prefixUrl: js.UndefOr[URL | String] = js.undefined
   /**
-  	Numer of times to retry failed requests.
-  	@default 2
+  	An object representing `limit`, `methods`, `statusCodes` and `maxRetryAfter` fields for maximum retry count, allowed methods, allowed status codes and maximum [`Retry-After`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) time.
+  	If `retry` is a number, it will be used as `limit` and other defaults will remain in place.
+  	If `maxRetryAfter` is set to `undefined`, it will use `options.timeout`. If [`Retry-After`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) header is greater than `maxRetryAfter`, it will cancel the request.
+  	Delays between retries is calculated with the function `0.3 * (2 ** (retry - 1)) * 1000`, where `retry` is the attempt number (starts from 1).
+  	@example
+  	```
+  	import ky from 'ky';
+  	(async () => {
+  		const parsed = await ky('https://example.com', {
+  			retry: {
+  				limit: 10,
+  				methods: ['get'],
+  				statusCodes: [413]
+  			}
+  		}).json();
+  	})();
+  	```
   	*/
-  var retry: js.UndefOr[Double] = js.undefined
+  var retry: js.UndefOr[RetryOptions | Double] = js.undefined
   /**
   	Search parameters to include in the request URL.
   	Setting this will override all existing search parameters in the input URL.
@@ -49,6 +102,7 @@ trait Options extends RequestInit {
   var searchParams: js.UndefOr[String | (StringDictionary[String | Double]) | URLSearchParams] = js.undefined
   /**
   	Throw a `HTTPError` for error responses (non-2xx status codes).
+  	Setting this to `false` may be useful if you are checking for resource availability and are expecting error responses.
   	@default true
   	*/
   var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
@@ -71,14 +125,14 @@ object Options {
     integrity: String = null,
     json: js.Any = null,
     keepalive: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
+    method: LiteralUnion[get | post | put | delete | patch | head, String] = null,
     mode: RequestMode = null,
     onDownloadProgress: (/* progress */ DownloadProgress, /* chunk */ Uint8Array) => Unit = null,
     prefixUrl: URL | String = null,
     redirect: RequestRedirect = null,
     referrer: String = null,
     referrerPolicy: ReferrerPolicy = null,
-    retry: Int | Double = null,
+    retry: RetryOptions | Double = null,
     searchParams: String | (StringDictionary[String | Double]) | URLSearchParams = null,
     signal: AbortSignal = null,
     throwHttpErrors: js.UndefOr[Boolean] = js.undefined,
@@ -94,7 +148,7 @@ object Options {
     if (integrity != null) __obj.updateDynamic("integrity")(integrity)
     if (json != null) __obj.updateDynamic("json")(json)
     if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (onDownloadProgress != null) __obj.updateDynamic("onDownloadProgress")(js.Any.fromFunction2(onDownloadProgress))
     if (prefixUrl != null) __obj.updateDynamic("prefixUrl")(prefixUrl.asInstanceOf[js.Any])

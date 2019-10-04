@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-useragent
 
-Typings are for version 0.2.4
+Typings are for version 1.0
 
 ## Library description:
 ExpressJS/Connect/TrinteJS user-agent middleware exposing

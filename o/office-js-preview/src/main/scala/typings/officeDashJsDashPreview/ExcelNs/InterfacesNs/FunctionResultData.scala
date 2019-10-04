@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "functionResult.toJSON()". */
+/** An interface describing the data returned by calling `functionResult.toJSON()`. */
 trait FunctionResultData[T] extends js.Object {
   /**
     *

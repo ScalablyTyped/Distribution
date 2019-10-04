@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
   */
 trait CustomResourceDefinitionCondition extends js.Object {
   /**
-    * Last time the condition transitioned from one status to another.
+    * lastTransitionTime last time the condition transitioned from one status to another.
     */
   val lastTransitionTime: String
   /**
-    * Human-readable message indicating details about last transition.
+    * message is a human-readable message indicating details about last transition.
     */
   val message: String
   /**
-    * Unique, one-word, CamelCase reason for the condition's last transition.
+    * reason is a unique, one-word, CamelCase reason for the condition's last transition.
     */
   val reason: String
   /**
-    * Status is the status of the condition. Can be True, False, Unknown.
+    * status is the status of the condition. Can be True, False, Unknown.
     */
   val status: String
   /**
-    * Type is the type of the condition. Types include Established, NamesAccepted and
+    * type is the type of the condition. Types include Established, NamesAccepted and
     * Terminating.
     */
   val `type`: String

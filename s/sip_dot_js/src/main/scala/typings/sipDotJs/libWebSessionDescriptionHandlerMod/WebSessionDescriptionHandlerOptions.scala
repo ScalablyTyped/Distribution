@@ -2,6 +2,7 @@ package typings.sipDotJs.libWebSessionDescriptionHandlerMod
 
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions
+import typings.std.MediaStreamConstraints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait WebSessionDescriptionHandlerOptions extends SessionDescriptionHandlerOptio
   var RTCOfferOptions: js.UndefOr[js.Any] = js.undefined
   var alwaysAcquireMediaFirst: js.UndefOr[Boolean] = js.undefined
   @JSName("constraints")
-  var constraints_WebSessionDescriptionHandlerOptions: js.UndefOr[js.Any] = js.undefined
+  var constraints_WebSessionDescriptionHandlerOptions: js.UndefOr[MediaStreamConstraints] = js.undefined
   var disableAudioFallback: js.UndefOr[Boolean] = js.undefined
   var peerConnectionOptions: js.UndefOr[PeerConnectionOptions] = js.undefined
 }
@@ -20,7 +21,7 @@ object WebSessionDescriptionHandlerOptions {
   def apply(
     RTCOfferOptions: js.Any = null,
     alwaysAcquireMediaFirst: js.UndefOr[Boolean] = js.undefined,
-    constraints: js.Any = null,
+    constraints: MediaStreamConstraints = null,
     disableAudioFallback: js.UndefOr[Boolean] = js.undefined,
     modifiers: SessionDescriptionHandlerModifiers = null,
     peerConnectionOptions: PeerConnectionOptions = null

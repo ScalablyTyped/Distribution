@@ -155,31 +155,31 @@ trait Eth extends js.Object {
   @JSName("subscribe")
   def subscribe_logs(`type`: logs, options: Logs): js.Promise[Subscribe[Log]] = js.native
   @JSName("subscribe")
-  def subscribe_logs(`type`: logs, options: Logs, callback: Callback[Subscribe[_ | Log]]): js.Promise[Subscribe[Log]] = js.native
+  def subscribe_logs(`type`: logs, options: Logs, callback: Callback[_ | Log]): js.Promise[Subscribe[Log]] = js.native
   @JSName("subscribe")
   def subscribe_newBlockHeaders(`type`: newBlockHeaders): js.Promise[Subscribe[BlockHeader]] = js.native
   @JSName("subscribe")
-  def subscribe_newBlockHeaders(`type`: newBlockHeaders, callback: Callback[Subscribe[BlockHeader]]): js.Promise[Subscribe[BlockHeader]] = js.native
+  def subscribe_newBlockHeaders(`type`: newBlockHeaders, callback: Callback[BlockHeader]): js.Promise[Subscribe[BlockHeader]] = js.native
   @JSName("subscribe")
   def subscribe_newBlockHeaders(`type`: newBlockHeaders, options: Logs): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
-  def subscribe_newBlockHeaders(`type`: newBlockHeaders, options: Logs, callback: Callback[Subscribe[_]]): js.Promise[Subscribe[_]] = js.native
+  def subscribe_newBlockHeaders(`type`: newBlockHeaders, options: Logs, callback: Callback[_]): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
   def subscribe_pendingTransactions(`type`: pendingTransactions): js.Promise[Subscribe[Transaction]] = js.native
   @JSName("subscribe")
-  def subscribe_pendingTransactions(`type`: pendingTransactions, callback: Callback[Subscribe[Transaction]]): js.Promise[Subscribe[Transaction]] = js.native
+  def subscribe_pendingTransactions(`type`: pendingTransactions, callback: Callback[Transaction]): js.Promise[Subscribe[Transaction]] = js.native
   @JSName("subscribe")
   def subscribe_pendingTransactions(`type`: pendingTransactions, options: Logs): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
-  def subscribe_pendingTransactions(`type`: pendingTransactions, options: Logs, callback: Callback[Subscribe[_]]): js.Promise[Subscribe[_]] = js.native
+  def subscribe_pendingTransactions(`type`: pendingTransactions, options: Logs, callback: Callback[_]): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
   def subscribe_syncing(`type`: syncing): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
-  def subscribe_syncing(`type`: syncing, callback: Callback[Subscribe[_]]): js.Promise[Subscribe[_]] = js.native
+  def subscribe_syncing(`type`: syncing, callback: Callback[_]): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
   def subscribe_syncing(`type`: syncing, options: Logs): js.Promise[Subscribe[_]] = js.native
   @JSName("subscribe")
-  def subscribe_syncing(`type`: syncing, options: Logs, callback: Callback[Subscribe[_]]): js.Promise[Subscribe[_]] = js.native
+  def subscribe_syncing(`type`: syncing, options: Logs, callback: Callback[_]): js.Promise[Subscribe[_]] = js.native
   def unsubscribe(callBack: Callback[Boolean]): Unit | Boolean = js.native
 }
 

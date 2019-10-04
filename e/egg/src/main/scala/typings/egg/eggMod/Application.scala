@@ -1,5 +1,7 @@
 package typings.egg.eggMod
 
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +17,7 @@ class Application () extends EggApplication {
     */
   var locals: IApplicationLocals = js.native
   @JSName("middleware")
-  var middleware_Application: (js.Array[Middleware[_, js.Object]]) with IMiddleware = js.native
+  var middleware_Application: (js.Array[Middleware[DefaultState, DefaultContext]]) with IMiddleware = js.native
   /**
     * HTTP delete method
     */

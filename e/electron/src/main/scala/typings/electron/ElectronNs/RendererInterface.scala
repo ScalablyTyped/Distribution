@@ -25,12 +25,11 @@ object RendererInterface {
     ipcRenderer: IpcRenderer,
     nativeImage: TypeofClassNativeImage,
     remote: Remote,
-    screen: Screen,
     shell: Shell,
     webFrame: WebFrame,
     webviewTag: WebviewTag
   ): RendererInterface = {
-    val __obj = js.Dynamic.literal(BrowserWindowProxy = BrowserWindowProxy, clipboard = clipboard, crashReporter = crashReporter, desktopCapturer = desktopCapturer, ipcRenderer = ipcRenderer, nativeImage = nativeImage, remote = remote, screen = screen, shell = shell, webFrame = webFrame, webviewTag = webviewTag)
+    val __obj = js.Dynamic.literal(BrowserWindowProxy = BrowserWindowProxy, clipboard = clipboard, crashReporter = crashReporter, desktopCapturer = desktopCapturer, ipcRenderer = ipcRenderer, nativeImage = nativeImage, remote = remote, shell = shell, webFrame = webFrame, webviewTag = webviewTag)
   
     __obj.asInstanceOf[RendererInterface]
   }

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueClassifierMod
 
-import typings.atPulumiAws.Anon_ClassificationCustomPatterns
-import typings.atPulumiAws.Anon_ClassificationRowTagInput
-import typings.atPulumiAws.Anon_JsonPathInput
+import typings.atPulumiAws.typesInputMod.glueNs.ClassifierGrokClassifier
+import typings.atPulumiAws.typesInputMod.glueNs.ClassifierJsonClassifier
+import typings.atPulumiAws.typesInputMod.glueNs.ClassifierXmlClassifier
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,11 +12,11 @@ trait ClassifierState extends js.Object {
   /**
     * A classifier that uses grok patterns. Defined below.
     */
-  val grokClassifier: js.UndefOr[Input[Anon_ClassificationCustomPatterns]] = js.undefined
+  val grokClassifier: js.UndefOr[Input[ClassifierGrokClassifier]] = js.undefined
   /**
     * A classifier for JSON content. Defined below.
     */
-  val jsonClassifier: js.UndefOr[Input[Anon_JsonPathInput]] = js.undefined
+  val jsonClassifier: js.UndefOr[Input[ClassifierJsonClassifier]] = js.undefined
   /**
     * The name of the classifier.
     */
@@ -24,16 +24,16 @@ trait ClassifierState extends js.Object {
   /**
     * A classifier for XML content. Defined below.
     */
-  val xmlClassifier: js.UndefOr[Input[Anon_ClassificationRowTagInput]] = js.undefined
+  val xmlClassifier: js.UndefOr[Input[ClassifierXmlClassifier]] = js.undefined
 }
 
 object ClassifierState {
   @scala.inline
   def apply(
-    grokClassifier: Input[Anon_ClassificationCustomPatterns] = null,
-    jsonClassifier: Input[Anon_JsonPathInput] = null,
+    grokClassifier: Input[ClassifierGrokClassifier] = null,
+    jsonClassifier: Input[ClassifierJsonClassifier] = null,
     name: Input[String] = null,
-    xmlClassifier: Input[Anon_ClassificationRowTagInput] = null
+    xmlClassifier: Input[ClassifierXmlClassifier] = null
   ): ClassifierState = {
     val __obj = js.Dynamic.literal()
     if (grokClassifier != null) __obj.updateDynamic("grokClassifier")(grokClassifier.asInstanceOf[js.Any])

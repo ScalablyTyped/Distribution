@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchLogMetricFilterMod
 
-import typings.atPulumiAws.Anon_DefaultValueName
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.LogMetricFilterMetricTransformation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait LogMetricFilterArgs extends js.Object {
     * A block defining collection of information
     * needed to define how metric data gets emitted. See below.
     */
-  val metricTransformation: Input[Anon_DefaultValueName]
+  val metricTransformation: Input[LogMetricFilterMetricTransformation]
   /**
     * A name for the metric filter.
     */
@@ -31,7 +31,7 @@ object LogMetricFilterArgs {
   @scala.inline
   def apply(
     logGroupName: Input[String],
-    metricTransformation: Input[Anon_DefaultValueName],
+    metricTransformation: Input[LogMetricFilterMetricTransformation],
     pattern: Input[String],
     name: Input[String] = null
   ): LogMetricFilterArgs = {

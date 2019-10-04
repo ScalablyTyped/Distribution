@@ -6,17 +6,21 @@ import typings.ddDashTrace.ddDashTraceMod.pluginsNs.bluebird
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.bunyan
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.cassandra_driver
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.connect
+import typings.ddDashTrace.ddDashTraceMod.pluginsNs.couchbase
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.dns
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.elasticsearch
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.express
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.fastify
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.generic_pool
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.graphql
+import typings.ddDashTrace.ddDashTraceMod.pluginsNs.grpc
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.hapi
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.http
+import typings.ddDashTrace.ddDashTraceMod.pluginsNs.http2
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.ioredis
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.knex
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.koa
+import typings.ddDashTrace.ddDashTraceMod.pluginsNs.limitd_client
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.memcached
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mongodb_core
 import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql
@@ -46,17 +50,21 @@ trait Plugins extends js.Object {
   var bunyan: typings.ddDashTrace.ddDashTraceMod.pluginsNs.bunyan
   var `cassandra-driver`: cassandra_driver
   var connect: typings.ddDashTrace.ddDashTraceMod.pluginsNs.connect
+  var couchbase: typings.ddDashTrace.ddDashTraceMod.pluginsNs.couchbase
   var dns: typings.ddDashTrace.ddDashTraceMod.pluginsNs.dns
   var elasticsearch: typings.ddDashTrace.ddDashTraceMod.pluginsNs.elasticsearch
   var express: typings.ddDashTrace.ddDashTraceMod.pluginsNs.express
   var fastify: typings.ddDashTrace.ddDashTraceMod.pluginsNs.fastify
   var `generic-pool`: generic_pool
   var graphql: typings.ddDashTrace.ddDashTraceMod.pluginsNs.graphql
+  var grpc: typings.ddDashTrace.ddDashTraceMod.pluginsNs.grpc
   var hapi: typings.ddDashTrace.ddDashTraceMod.pluginsNs.hapi
   var http: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http
+  var http2: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http2
   var ioredis: typings.ddDashTrace.ddDashTraceMod.pluginsNs.ioredis
   var knex: typings.ddDashTrace.ddDashTraceMod.pluginsNs.knex
   var koa: typings.ddDashTrace.ddDashTraceMod.pluginsNs.koa
+  var `limitd-client`: limitd_client
   var memcached: typings.ddDashTrace.ddDashTraceMod.pluginsNs.memcached
   var `mongodb-core`: mongodb_core
   var mysql: typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql
@@ -85,17 +93,21 @@ object Plugins {
     bunyan: bunyan,
     `cassandra-driver`: cassandra_driver,
     connect: connect,
+    couchbase: couchbase,
     dns: dns,
     elasticsearch: elasticsearch,
     express: express,
     fastify: fastify,
     `generic-pool`: generic_pool,
     graphql: graphql,
+    grpc: grpc,
     hapi: hapi,
     http: http,
+    http2: http2,
     ioredis: ioredis,
     knex: knex,
     koa: koa,
+    `limitd-client`: limitd_client,
     memcached: memcached,
     `mongodb-core`: mongodb_core,
     mysql: mysql,
@@ -114,9 +126,10 @@ object Plugins {
     when: when,
     winston: winston
   ): Plugins = {
-    val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, connect = connect, dns = dns, elasticsearch = elasticsearch, express = express, fastify = fastify, graphql = graphql, hapi = hapi, http = http, ioredis = ioredis, knex = knex, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, paperplane = paperplane, pg = pg, pino = pino, promise = promise, q = q, redis = redis, restify = restify, router = router, tedious = tedious, when = when, winston = winston)
+    val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, connect = connect, couchbase = couchbase, dns = dns, elasticsearch = elasticsearch, express = express, fastify = fastify, graphql = graphql, grpc = grpc, hapi = hapi, http = http, http2 = http2, ioredis = ioredis, knex = knex, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, paperplane = paperplane, pg = pg, pino = pino, promise = promise, q = q, redis = redis, restify = restify, router = router, tedious = tedious, when = when, winston = winston)
     __obj.updateDynamic("cassandra-driver")(`cassandra-driver`)
     __obj.updateDynamic("generic-pool")(`generic-pool`)
+    __obj.updateDynamic("limitd-client")(`limitd-client`)
     __obj.updateDynamic("mongodb-core")(`mongodb-core`)
     __obj.updateDynamic("promise-js")(`promise-js`)
     __obj.asInstanceOf[Plugins]

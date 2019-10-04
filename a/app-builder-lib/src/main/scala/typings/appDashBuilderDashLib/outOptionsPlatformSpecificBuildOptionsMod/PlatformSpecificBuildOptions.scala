@@ -1,10 +1,10 @@
 package typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod
 
 import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
+import typings.appDashBuilderDashLib.outCoreMod.Publish
 import typings.appDashBuilderDashLib.outCoreMod.TargetConfiguration
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
 import typings.appDashBuilderDashLib.outOptionsFileAssociationMod.FileAssociation
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

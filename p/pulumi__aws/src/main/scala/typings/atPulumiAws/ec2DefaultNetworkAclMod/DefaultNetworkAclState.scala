@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2DefaultNetworkAclMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActionCidrBlockFromPort
+import typings.atPulumiAws.typesInputMod.ec2Ns.DefaultNetworkAclEgress
+import typings.atPulumiAws.typesInputMod.ec2Ns.DefaultNetworkAclIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +17,11 @@ trait DefaultNetworkAclState extends js.Object {
   /**
     * Specifies an egress rule. Parameters defined below.
     */
-  val egress: js.UndefOr[Input[js.Array[Input[Anon_ActionCidrBlockFromPort]]]] = js.undefined
+  val egress: js.UndefOr[Input[js.Array[Input[DefaultNetworkAclEgress]]]] = js.undefined
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
-  val ingress: js.UndefOr[Input[js.Array[Input[Anon_ActionCidrBlockFromPort]]]] = js.undefined
+  val ingress: js.UndefOr[Input[js.Array[Input[DefaultNetworkAclIngress]]]] = js.undefined
   /**
     * The ID of the AWS account that owns the Default Network ACL
     */
@@ -44,8 +45,8 @@ object DefaultNetworkAclState {
   @scala.inline
   def apply(
     defaultNetworkAclId: Input[String] = null,
-    egress: Input[js.Array[Input[Anon_ActionCidrBlockFromPort]]] = null,
-    ingress: Input[js.Array[Input[Anon_ActionCidrBlockFromPort]]] = null,
+    egress: Input[js.Array[Input[DefaultNetworkAclEgress]]] = null,
+    ingress: Input[js.Array[Input[DefaultNetworkAclIngress]]] = null,
     ownerId: Input[String] = null,
     subnetIds: Input[js.Array[Input[String]]] = null,
     tags: Input[StringDictionary[_]] = null,

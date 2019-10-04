@@ -1,8 +1,8 @@
 package typings.atPulumiAws.directoryserviceDirectoryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CustomerDnsIpsCustomerUsername
-import typings.atPulumiAws.Anon_SubnetIdsVpcId
+import typings.atPulumiAws.typesInputMod.directoryserviceNs.DirectoryConnectSettings
+import typings.atPulumiAws.typesInputMod.directoryserviceNs.DirectoryVpcSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait DirectoryState extends js.Object {
   /**
     * Connector related information about the directory. Fields documented below.
     */
-  val connectSettings: js.UndefOr[Input[Anon_CustomerDnsIpsCustomerUsername]] = js.undefined
+  val connectSettings: js.UndefOr[Input[DirectoryConnectSettings]] = js.undefined
   /**
     * A textual description for the directory.
     */
@@ -68,7 +68,7 @@ trait DirectoryState extends js.Object {
   /**
     * VPC related information about the directory. Fields documented below.
     */
-  val vpcSettings: js.UndefOr[Input[Anon_SubnetIdsVpcId]] = js.undefined
+  val vpcSettings: js.UndefOr[Input[DirectoryVpcSettings]] = js.undefined
 }
 
 object DirectoryState {
@@ -76,7 +76,7 @@ object DirectoryState {
   def apply(
     accessUrl: Input[String] = null,
     alias: Input[String] = null,
-    connectSettings: Input[Anon_CustomerDnsIpsCustomerUsername] = null,
+    connectSettings: Input[DirectoryConnectSettings] = null,
     description: Input[String] = null,
     dnsIpAddresses: Input[js.Array[Input[String]]] = null,
     edition: Input[String] = null,
@@ -88,7 +88,7 @@ object DirectoryState {
     size: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     `type`: Input[String] = null,
-    vpcSettings: Input[Anon_SubnetIdsVpcId] = null
+    vpcSettings: Input[DirectoryVpcSettings] = null
   ): DirectoryState = {
     val __obj = js.Dynamic.literal()
     if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl.asInstanceOf[js.Any])

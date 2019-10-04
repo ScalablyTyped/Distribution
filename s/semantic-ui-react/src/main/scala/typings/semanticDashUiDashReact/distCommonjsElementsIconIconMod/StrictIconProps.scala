@@ -31,7 +31,7 @@ trait StrictIconProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** Fitted, without space to left or right of Icon. */
   var fitted: js.UndefOr[Boolean] = js.undefined
-  /** Icon can flipped. */
+  /** Icon can be flipped. */
   var flipped: js.UndefOr[horizontally | vertically] = js.undefined
   /** Formatted to have its colors inverted for contrast. */
   var inverted: js.UndefOr[Boolean] = js.undefined

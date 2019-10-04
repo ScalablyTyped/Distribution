@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-calendar-timeline
 
-Typings are for version v0.16.3
+Typings are for version v0.26.6
 
 ## Library description:
 react calendar timeline

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpnGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpnGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetVpnGatewayResult extends js.Object {
   val amazonSideAsn: String
   val attachedVpcId: String
   val availabilityZone: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpnGatewayFilter]] = js.undefined
   val id: String
   val state: String
   val tags: StringDictionary[js.Any]
@@ -25,7 +25,7 @@ object GetVpnGatewayResult {
     id: String,
     state: String,
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetVpnGatewayFilter] = null
   ): GetVpnGatewayResult = {
     val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, attachedVpcId = attachedVpcId, availabilityZone = availabilityZone, id = id, state = state, tags = tags)
     if (filters != null) __obj.updateDynamic("filters")(filters)

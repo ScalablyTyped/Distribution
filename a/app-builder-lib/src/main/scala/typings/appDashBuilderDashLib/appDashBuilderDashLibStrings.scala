@@ -55,9 +55,6 @@ object appDashBuilderDashLibStrings {
   sealed trait asInvoker extends RequestedExecutionLevel
   
   @js.native
-  sealed trait ask extends js.Object
-  
-  @js.native
   sealed trait bottom extends BackgroundAlignment
   
   @js.native
@@ -98,9 +95,6 @@ object appDashBuilderDashLibStrings {
   
   @js.native
   sealed trait dmg extends MacOsTargetName
-  
-  @js.native
-  sealed trait doNotAsk extends js.Object
   
   @js.native
   sealed trait file extends js.Object
@@ -169,6 +163,9 @@ object appDashBuilderDashLibStrings {
   
   @js.native
   sealed trait sha256 extends js.Object
+  
+  @js.native
+  sealed trait snapStore extends js.Object
   
   @js.native
   sealed trait stable extends js.Object
@@ -250,8 +247,6 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   @scala.inline
-  def ask: ask = "ask".asInstanceOf[ask]
-  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
@@ -279,8 +274,6 @@ object appDashBuilderDashLibStrings {
   def distribution: distribution = "distribution".asInstanceOf[distribution]
   @scala.inline
   def dmg: dmg = "dmg".asInstanceOf[dmg]
-  @scala.inline
-  def doNotAsk: doNotAsk = "doNotAsk".asInstanceOf[doNotAsk]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
@@ -325,6 +318,8 @@ object appDashBuilderDashLibStrings {
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  @scala.inline
+  def snapStore: snapStore = "snapStore".asInstanceOf[snapStore]
   @scala.inline
   def stable: stable = "stable".asInstanceOf[stable]
   @scala.inline

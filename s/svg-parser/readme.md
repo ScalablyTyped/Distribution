@@ -1,7 +1,7 @@
 
 # Scala.js typings for svg-parser
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Create a JSON-friendly object from an SVG string

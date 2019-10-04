@@ -34,8 +34,6 @@ class Atom () extends IAtom {
   override var name: String = js.native
   /* CompleteClass */
   override var observers: Set[IDerivation] = js.native
-  @JSName("observers")
-  var observers_Atom: Set[_] = js.native
   /* CompleteClass */
   override def onBecomeObserved(): Unit = js.native
   /* CompleteClass */

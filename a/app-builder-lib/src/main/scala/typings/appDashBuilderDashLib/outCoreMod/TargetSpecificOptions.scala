@@ -1,6 +1,5 @@
 package typings.appDashBuilderDashLib.outCoreMod
 
-import typings.builderDashUtilDashRuntime.outPublishOptionsMod.Publish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

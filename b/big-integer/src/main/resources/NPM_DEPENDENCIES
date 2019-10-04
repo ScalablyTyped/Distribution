@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "big-integer" : "1.6.45"
+      "big-integer" : "1.6.46"
     }
   ],
   "test-dependencies" : [
     {
-      "big-integer" : "1.6.45"
+      "big-integer" : "1.6.46"
     }
   ],
   "compile-devDependencies" : [

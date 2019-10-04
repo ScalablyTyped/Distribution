@@ -93,6 +93,12 @@ object atPulumiKubernetesStrings {
   sealed trait DeploymentList extends js.Object
   
   @js.native
+  sealed trait EndpointSlice extends js.Object
+  
+  @js.native
+  sealed trait EndpointSliceList extends js.Object
+  
+  @js.native
   sealed trait Endpoints extends js.Object
   
   @js.native
@@ -288,6 +294,9 @@ object atPulumiKubernetesStrings {
   sealed trait SubjectAccessReview extends js.Object
   
   @js.native
+  sealed trait TokenRequest extends js.Object
+  
+  @js.native
   sealed trait TokenReview extends js.Object
   
   @js.native
@@ -304,6 +313,24 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait action extends js.Object
+  
+  @js.native
+  sealed trait address_type extends js.Object
+  
+  @js.native
+  sealed trait `admissionregistrationDOTk8sDOTio/v1` extends js.Object
+  
+  @js.native
+  sealed trait `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration` extends js.Object
+  
+  @js.native
+  sealed trait `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList` extends js.Object
+  
+  @js.native
+  sealed trait `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration` extends js.Object
+  
+  @js.native
+  sealed trait `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList` extends js.Object
   
   @js.native
   sealed trait `admissionregistrationDOTk8sDOTio/v1beta1` extends js.Object
@@ -331,6 +358,15 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait api_version extends js.Object
+  
+  @js.native
+  sealed trait `apiextensionsDOTk8sDOTio/v1` extends js.Object
+  
+  @js.native
+  sealed trait `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition` extends js.Object
+  
+  @js.native
+  sealed trait `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList` extends js.Object
   
   @js.native
   sealed trait `apiextensionsDOTk8sDOTio/v1beta1` extends js.Object
@@ -469,6 +505,9 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait `authenticationDOTk8sDOTio/v1` extends js.Object
+  
+  @js.native
+  sealed trait `authenticationDOTk8sDOTio/v1/TokenRequest` extends js.Object
   
   @js.native
   sealed trait `authenticationDOTk8sDOTio/v1/TokenReview` extends js.Object
@@ -627,6 +666,18 @@ object atPulumiKubernetesStrings {
   sealed trait details extends js.Object
   
   @js.native
+  sealed trait `discoveryDOTk8sDOTio/v1alpha1` extends js.Object
+  
+  @js.native
+  sealed trait `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice` extends js.Object
+  
+  @js.native
+  sealed trait `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList` extends js.Object
+  
+  @js.native
+  sealed trait endpoints extends js.Object
+  
+  @js.native
   sealed trait event_time extends js.Object
   
   @js.native
@@ -750,6 +801,9 @@ object atPulumiKubernetesStrings {
   sealed trait note extends js.Object
   
   @js.native
+  sealed trait overhead extends js.Object
+  
+  @js.native
   sealed trait parameters extends js.Object
   
   @js.native
@@ -766,6 +820,9 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait `policy/v1beta1/PodSecurityPolicyList` extends js.Object
+  
+  @js.native
+  sealed trait ports extends js.Object
   
   @js.native
   sealed trait preemption_policy extends js.Object
@@ -883,6 +940,9 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait rules extends js.Object
+  
+  @js.native
+  sealed trait scheduling extends js.Object
   
   @js.native
   sealed trait `schedulingDOTk8sDOTio/v1` extends js.Object
@@ -1177,6 +1237,10 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def DeploymentList: DeploymentList = "DeploymentList".asInstanceOf[DeploymentList]
   @scala.inline
+  def EndpointSlice: EndpointSlice = "EndpointSlice".asInstanceOf[EndpointSlice]
+  @scala.inline
+  def EndpointSliceList: EndpointSliceList = "EndpointSliceList".asInstanceOf[EndpointSliceList]
+  @scala.inline
   def Endpoints: Endpoints = "Endpoints".asInstanceOf[Endpoints]
   @scala.inline
   def EndpointsList: EndpointsList = "EndpointsList".asInstanceOf[EndpointsList]
@@ -1307,6 +1371,8 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def SubjectAccessReview: SubjectAccessReview = "SubjectAccessReview".asInstanceOf[SubjectAccessReview]
   @scala.inline
+  def TokenRequest: TokenRequest = "TokenRequest".asInstanceOf[TokenRequest]
+  @scala.inline
   def TokenReview: TokenReview = "TokenReview".asInstanceOf[TokenReview]
   @scala.inline
   def ValidatingWebhookConfiguration: ValidatingWebhookConfiguration = "ValidatingWebhookConfiguration".asInstanceOf[ValidatingWebhookConfiguration]
@@ -1318,6 +1384,18 @@ object atPulumiKubernetesStrings {
   def VolumeAttachmentList: VolumeAttachmentList = "VolumeAttachmentList".asInstanceOf[VolumeAttachmentList]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
+  @scala.inline
+  def address_type: address_type = "address_type".asInstanceOf[address_type]
+  @scala.inline
+  def `admissionregistrationDOTk8sDOTio/v1`: `admissionregistrationDOTk8sDOTio/v1` = "admissionregistration.k8s.io/v1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1`]
+  @scala.inline
+  def `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration` = "admissionregistration.k8s.io/v1/MutatingWebhookConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`]
+  @scala.inline
+  def `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1/MutatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`]
+  @scala.inline
+  def `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration` = "admissionregistration.k8s.io/v1/ValidatingWebhookConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`]
+  @scala.inline
+  def `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1/ValidatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`]
   @scala.inline
   def `admissionregistrationDOTk8sDOTio/v1beta1`: `admissionregistrationDOTk8sDOTio/v1beta1` = "admissionregistration.k8s.io/v1beta1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1`]
   @scala.inline
@@ -1336,6 +1414,12 @@ object atPulumiKubernetesStrings {
   def allowed_topologies: allowed_topologies = "allowed_topologies".asInstanceOf[allowed_topologies]
   @scala.inline
   def api_version: api_version = "api_version".asInstanceOf[api_version]
+  @scala.inline
+  def `apiextensionsDOTk8sDOTio/v1`: `apiextensionsDOTk8sDOTio/v1` = "apiextensions.k8s.io/v1".asInstanceOf[`apiextensionsDOTk8sDOTio/v1`]
+  @scala.inline
+  def `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition` = "apiextensions.k8s.io/v1/CustomResourceDefinition".asInstanceOf[`apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`]
+  @scala.inline
+  def `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList` = "apiextensions.k8s.io/v1/CustomResourceDefinitionList".asInstanceOf[`apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`]
   @scala.inline
   def `apiextensionsDOTk8sDOTio/v1beta1`: `apiextensionsDOTk8sDOTio/v1beta1` = "apiextensions.k8s.io/v1beta1".asInstanceOf[`apiextensionsDOTk8sDOTio/v1beta1`]
   @scala.inline
@@ -1428,6 +1512,8 @@ object atPulumiKubernetesStrings {
   def `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`: `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList` = "auditregistration.k8s.io/v1alpha1/AuditSinkList".asInstanceOf[`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`]
   @scala.inline
   def `authenticationDOTk8sDOTio/v1`: `authenticationDOTk8sDOTio/v1` = "authentication.k8s.io/v1".asInstanceOf[`authenticationDOTk8sDOTio/v1`]
+  @scala.inline
+  def `authenticationDOTk8sDOTio/v1/TokenRequest`: `authenticationDOTk8sDOTio/v1/TokenRequest` = "authentication.k8s.io/v1/TokenRequest".asInstanceOf[`authenticationDOTk8sDOTio/v1/TokenRequest`]
   @scala.inline
   def `authenticationDOTk8sDOTio/v1/TokenReview`: `authenticationDOTk8sDOTio/v1/TokenReview` = "authentication.k8s.io/v1/TokenReview".asInstanceOf[`authenticationDOTk8sDOTio/v1/TokenReview`]
   @scala.inline
@@ -1533,6 +1619,14 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
+  def `discoveryDOTk8sDOTio/v1alpha1`: `discoveryDOTk8sDOTio/v1alpha1` = "discovery.k8s.io/v1alpha1".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1`]
+  @scala.inline
+  def `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice` = "discovery.k8s.io/v1alpha1/EndpointSlice".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`]
+  @scala.inline
+  def `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList` = "discovery.k8s.io/v1alpha1/EndpointSliceList".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`]
+  @scala.inline
+  def endpoints: endpoints = "endpoints".asInstanceOf[endpoints]
+  @scala.inline
   def event_time: event_time = "event_time".asInstanceOf[event_time]
   @scala.inline
   def `eventsDOTk8sDOTio/v1beta1`: `eventsDOTk8sDOTio/v1beta1` = "events.k8s.io/v1beta1".asInstanceOf[`eventsDOTk8sDOTio/v1beta1`]
@@ -1615,6 +1709,8 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def note: note = "note".asInstanceOf[note]
   @scala.inline
+  def overhead: overhead = "overhead".asInstanceOf[overhead]
+  @scala.inline
   def parameters: parameters = "parameters".asInstanceOf[parameters]
   @scala.inline
   def `policy/v1beta1`: `policy/v1beta1` = "policy/v1beta1".asInstanceOf[`policy/v1beta1`]
@@ -1626,6 +1722,8 @@ object atPulumiKubernetesStrings {
   def `policy/v1beta1/PodSecurityPolicy`: `policy/v1beta1/PodSecurityPolicy` = "policy/v1beta1/PodSecurityPolicy".asInstanceOf[`policy/v1beta1/PodSecurityPolicy`]
   @scala.inline
   def `policy/v1beta1/PodSecurityPolicyList`: `policy/v1beta1/PodSecurityPolicyList` = "policy/v1beta1/PodSecurityPolicyList".asInstanceOf[`policy/v1beta1/PodSecurityPolicyList`]
+  @scala.inline
+  def ports: ports = "ports".asInstanceOf[ports]
   @scala.inline
   def preemption_policy: preemption_policy = "preemption_policy".asInstanceOf[preemption_policy]
   @scala.inline
@@ -1704,6 +1802,8 @@ object atPulumiKubernetesStrings {
   def role_ref: role_ref = "role_ref".asInstanceOf[role_ref]
   @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
+  @scala.inline
+  def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
   @scala.inline
   def `schedulingDOTk8sDOTio/v1`: `schedulingDOTk8sDOTio/v1` = "scheduling.k8s.io/v1".asInstanceOf[`schedulingDOTk8sDOTio/v1`]
   @scala.inline

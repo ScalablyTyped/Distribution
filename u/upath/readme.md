@@ -1,7 +1,7 @@
 
 # Scala.js typings for upath
 
-Typings are for version 1.1.2
+Typings are for version 1.2.0
 
 ## Library description:
 A proxy to `path`, replacing `\` with `/` for all results & new methods to normalize & join keeping leading `./` and add, change, default, trim file extensions.

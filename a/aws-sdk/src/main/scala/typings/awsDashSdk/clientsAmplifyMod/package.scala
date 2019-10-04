@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsAmplifyMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.TEST
   import typings.awsDashSdk.awsDashSdkStrings.WEB
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
@@ -15,6 +16,11 @@ package object clientsAmplifyMod {
   type AppArn = String
   type AppId = String
   type Apps = js.Array[App]
+  type ArtifactFileName = String
+  type ArtifactId = String
+  type ArtifactType = TEST | String
+  type ArtifactUrl = String
+  type Artifacts = js.Array[Artifact]
   type ArtifactsUrl = String
   type AssociatedResource = String
   type AssociatedResources = js.Array[AssociatedResource]
@@ -62,6 +68,7 @@ package object clientsAmplifyMod {
   type EnableBasicAuth = Boolean
   type EnableBranchAutoBuild = Boolean
   type EnableNotification = Boolean
+  type EnablePullRequestPreview = Boolean
   type EndTime = Date
   type EnvKey = String
   type EnvValue = String
@@ -112,6 +119,7 @@ package object clientsAmplifyMod {
     - typings.awsDashSdk.awsDashSdkStrings.BETA
     - typings.awsDashSdk.awsDashSdkStrings.DEVELOPMENT
     - typings.awsDashSdk.awsDashSdkStrings.EXPERIMENTAL
+    - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST
     - java.lang.String
   */
   type Stage = _Stage | String
@@ -128,6 +136,8 @@ package object clientsAmplifyMod {
   type TagMap = StringDictionary[TagValue]
   type TagValue = String
   type Target = String
+  type TestArtifactsUrl = String
+  type TestConfigUrl = String
   type ThumbnailName = String
   type ThumbnailUrl = String
   type TotalNumberOfJobs = String

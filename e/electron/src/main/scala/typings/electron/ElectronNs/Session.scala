@@ -24,28 +24,42 @@ class Session () extends EventEmitter {
     * authentication.
     */
   def allowNTLMCredentialsForDomains(domains: String): Unit = js.native
-  def clearAuthCache(options: RemoveClientCertificate): Unit = js.native
+  def clearAuthCache(): js.Promise[Unit] = js.native
+  def clearAuthCache(options: RemoveClientCertificate): js.Promise[Unit] = js.native
   def clearAuthCache(options: RemoveClientCertificate, callback: js.Function): Unit = js.native
+  def clearAuthCache(options: RemovePassword): js.Promise[Unit] = js.native
   /**
-    * Clears the session’s HTTP authentication cache.
+    * Clears the session’s HTTP authentication cache. Deprecated Soon
     */
-  def clearAuthCache(options: RemovePassword): Unit = js.native
   def clearAuthCache(options: RemovePassword, callback: js.Function): Unit = js.native
   /**
     * Clears the session’s HTTP cache.
     */
-  def clearCache(callback: js.Function): Unit = js.native
+  def clearCache(): js.Promise[Unit] = js.native
+  /**
+    * Clears the session’s HTTP cache. Deprecated Soon
+    */
+  def clearCache(callback: js.Function1[/* error */ Double, Unit]): Unit = js.native
   /**
     * Clears the host resolver cache.
     */
-  def clearHostResolverCache(): Unit = js.native
+  def clearHostResolverCache(): js.Promise[Unit] = js.native
   def clearHostResolverCache(callback: js.Function): Unit = js.native
   /**
-    * Clears the data of web storages.
+    * Clears the host resolver cache. Deprecated Soon
     */
-  def clearStorageData(): Unit = js.native
-  def clearStorageData(options: ClearStorageDataOptions): Unit = js.native
+  @JSName("clearHostResolverCache")
+  def clearHostResolverCache_Unit(): Unit = js.native
+  def clearStorageData(): js.Promise[Unit] = js.native
+  def clearStorageData(options: ClearStorageDataOptions): js.Promise[Unit] = js.native
   def clearStorageData(options: ClearStorageDataOptions, callback: js.Function): Unit = js.native
+  /**
+    * Clears the storage data for the current session. Deprecated Soon
+    */
+  @JSName("clearStorageData")
+  def clearStorageData_Unit(): Unit = js.native
+  @JSName("clearStorageData")
+  def clearStorageData_Unit(options: ClearStorageDataOptions): Unit = js.native
   /**
     * Allows resuming cancelled or interrupted downloads from previous Session. The
     * API will generate a DownloadItem that can be accessed with the will-download
@@ -67,11 +81,16 @@ class Session () extends EventEmitter {
     * Writes any unwritten DOMStorage data to disk.
     */
   def flushStorageData(): Unit = js.native
-  def getBlobData(identifier: String, callback: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
+  def getBlobData(identifier: String): js.Promise[Buffer] = js.native
   /**
-    * Callback is invoked with the session's current cache size.
+    * Deprecated Soon
     */
-  def getCacheSize(callback: js.Function1[/* size */ Double, Unit]): Unit = js.native
+  def getBlobData(identifier: String, callback: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
+  def getCacheSize(): js.Promise[Double] = js.native
+  /**
+    * Callback is invoked with the session's current cache size. Deprecated Soon
+    */
+  def getCacheSize(callback: js.Function2[/* size */ Double, /* error */ Double, Unit]): Unit = js.native
   def getPreloads(): js.Array[String] = js.native
   def getUserAgent(): String = js.native
   /**
@@ -94,9 +113,10 @@ class Session () extends EventEmitter {
     event: `will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents, Unit]
   ): this.type = js.native
+  def resolveProxy(url: String): js.Promise[String] = js.native
   /**
     * Resolves the proxy information for url. The callback will be called with
-    * callback(proxy) when the request is performed.
+    * callback(proxy) when the request is performed. Deprecated Soon
     */
   def resolveProxy(url: String, callback: js.Function1[/* proxy */ String, Unit]): Unit = js.native
   /**
@@ -158,6 +178,13 @@ class Session () extends EventEmitter {
     * the proxyRules option is ignored and pacScript configuration is applied. The
     * proxyRules has to follow the rules below: For example: The proxyBypassRules is a
     * comma separated list of rules described below:
+    */
+  def setProxy(config: Config): js.Promise[Unit] = js.native
+  /**
+    * Sets the proxy settings. When pacScript and proxyRules are provided together,
+    * the proxyRules option is ignored and pacScript configuration is applied. The
+    * proxyRules has to follow the rules below: For example: The proxyBypassRules is a
+    * comma separated list of rules described below: Deprecated Soon
     */
   def setProxy(config: Config, callback: js.Function): Unit = js.native
   /**

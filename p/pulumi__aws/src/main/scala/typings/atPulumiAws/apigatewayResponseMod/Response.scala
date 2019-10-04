@@ -23,11 +23,11 @@ class Response protected () extends CustomResource {
   def this(name: String, args: ResponseArgs) = this()
   def this(name: String, args: ResponseArgs, opts: CustomResourceOptions) = this()
   /**
-    * A map specifying the templates used to transform the response body.
+    * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
     */
   val responseParameters: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
+    * A map specifying the templates used to transform the response body.
     */
   val responseTemplates: Output[js.UndefOr[StringDictionary[String]]] = js.native
   /**

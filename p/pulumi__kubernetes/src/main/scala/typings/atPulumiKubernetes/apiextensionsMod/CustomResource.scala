@@ -28,8 +28,8 @@ class CustomResource protected ()
 object CustomResource extends js.Object {
   /**
     * Get the state of an existing `CustomResource`, as identified by `id`.
-    * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-    * Kubernetes convention) the ID becomes default/<name>.
+    * Typically this ID  is of the form [namespace]/[name]; if [namespace] is omitted, then (per
+    * Kubernetes convention) the ID becomes default/[name].
     *
     * Pulumi will keep track of this resource using `name` as the Pulumi ID.
     *

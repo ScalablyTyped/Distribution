@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyDashKnockout.surveyDashKnockoutMod.IPage because var conflicts: elements, isPage, isReadOnly, isVisible, name, parent. Inlined isStarted */ @JSImport("survey-knockout", "PageModel")
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IPage because var conflicts: containsErrors, elements, isPage, isReadOnly, isVisible, name, parent. Inlined isStarted */ @JSImport("survey-knockout", "PageModel")
 @js.native
 class PageModel () extends PanelModelBase {
   def this(name: String) = this()

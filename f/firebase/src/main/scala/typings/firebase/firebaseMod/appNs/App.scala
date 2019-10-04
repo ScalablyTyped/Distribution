@@ -1,5 +1,6 @@
 package typings.firebase.firebaseMod.appNs
 
+import typings.firebase.firebaseMod.analyticsNs.Analytics
 import typings.firebase.firebaseMod.authNs.Auth
 import typings.firebase.firebaseMod.databaseNs.Database
 import typings.firebase.firebaseMod.firestoreNs.Firestore
@@ -7,6 +8,7 @@ import typings.firebase.firebaseMod.functionsNs.Functions
 import typings.firebase.firebaseMod.installationsNs.Installations
 import typings.firebase.firebaseMod.messagingNs.Messaging
 import typings.firebase.firebaseMod.performanceNs.Performance
+import typings.firebase.firebaseMod.remoteConfigNs.RemoteConfig
 import typings.firebase.firebaseMod.storageNs.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,6 +56,20 @@ trait App extends js.Object {
     * ```
     */
   var options: js.Object = js.native
+  /**
+    * Gets the {@link firebase.analytics.Analytics `Analytics`} service for the
+    * current app. If the current app is not the default one, throws an error.
+    *
+    * @webonly
+    *
+    * @example
+    * ```javascript
+    * const analytics = app.analytics();
+    * // The above is shorthand for:
+    * // const analytics = firebase.analytics(app);
+    * ```
+    */
+  def analytics(): Analytics = js.native
   /**
     * Gets the {@link firebase.auth.Auth `Auth`} service for the current app.
     *
@@ -142,6 +158,19 @@ trait App extends js.Object {
     * ```
     */
   def performance(): Performance = js.native
+  /**
+    * Gets the {@link firebase.remoteConfig.RemoteConfig `RemoteConfig`} instance.
+    *
+    * @webonly
+    *
+    * @example
+    * ```javascript
+    * const rc = app.remoteConfig();
+    * // The above is shorthand for:
+    * // const rc = firebase.remoteConfig(app);
+    * ```
+    */
+  def remoteConfig(): RemoteConfig = js.native
   /**
     * Gets the {@link firebase.storage.Storage `Storage`} service for the current
     * app, optionally initialized with a custom storage bucket.

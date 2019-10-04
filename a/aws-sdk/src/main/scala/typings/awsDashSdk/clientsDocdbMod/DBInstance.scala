@@ -18,6 +18,10 @@ trait DBInstance extends js.Object {
     */
   var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
   /**
+    * The identifier of the CA certificate for this DB instance.
+    */
+  var CACertificateIdentifier: js.UndefOr[String] = js.undefined
+  /**
     * Contains the name of the DB cluster that the DB instance is a member of if the DB instance is a member of a DB cluster.
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.undefined
@@ -90,7 +94,7 @@ trait DBInstance extends js.Object {
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * Specifies the availability options for the DB instance. A value of true specifies an internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. A value of false specifies an internal instance with a DNS name that resolves to a private IP address.
+    * Not supported. Amazon DocumentDB does not currently support public endpoints. The value of PubliclyAccessible is always false.
     */
   var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
   /**
@@ -98,7 +102,7 @@ trait DBInstance extends js.Object {
     */
   var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.undefined
   /**
-    * Specifies whether the DB instance is encrypted.
+    * Specifies whether or not the DB instance is encrypted.
     */
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   /**
@@ -113,6 +117,7 @@ object DBInstance {
     AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     AvailabilityZone: String = null,
     BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined,
+    CACertificateIdentifier: String = null,
     DBClusterIdentifier: String = null,
     DBInstanceArn: String = null,
     DBInstanceClass: String = null,
@@ -140,6 +145,7 @@ object DBInstance {
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier)
     if (DBInstanceArn != null) __obj.updateDynamic("DBInstanceArn")(DBInstanceArn)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)

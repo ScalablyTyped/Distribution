@@ -46,6 +46,7 @@ trait TreeStore extends js.Object {
   def isBranch(id: Double): Boolean = js.native
   def provideApi(target: js.Any, eventable: Boolean): Unit = js.native
   def remove(id: String): Unit = js.native
+  def remove(id: js.Array[_]): Unit = js.native
   def remove(id: Double): Unit = js.native
   def serialize(): js.Array[_] = js.native
   def serialize(all: Boolean): js.Array[_] = js.native

@@ -1,7 +1,9 @@
 package typings.styledDashComponents
 
+import typings.react.reactMod.WeakValidationMap
 import typings.std.Partial
 import typings.styledDashComponents.styledDashComponentsStrings.defaultProps
+import typings.styledDashComponents.styledDashComponentsStrings.propTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +15,23 @@ trait ForwardRefExoticBase[P] extends js.Object {
   var $$typeof: js.Symbol
   var defaultProps: js.UndefOr[Partial[typings.styledDashComponents.styledDashComponentsStrings.defaultProps]] = js.undefined
   var displayName: js.UndefOr[String] = js.undefined
+  var propTypes: js.UndefOr[
+    WeakValidationMap[typings.styledDashComponents.styledDashComponentsStrings.propTypes]
+  ] = js.undefined
 }
 
 object ForwardRefExoticBase {
   @scala.inline
-  def apply[P]($$typeof: js.Symbol, defaultProps: Partial[defaultProps] = null, displayName: String = null): ForwardRefExoticBase[P] = {
+  def apply[P](
+    $$typeof: js.Symbol,
+    defaultProps: Partial[defaultProps] = null,
+    displayName: String = null,
+    propTypes: WeakValidationMap[propTypes] = null
+  ): ForwardRefExoticBase[P] = {
     val __obj = js.Dynamic.literal($$typeof = $$typeof)
     if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes)
     __obj.asInstanceOf[ForwardRefExoticBase[P]]
   }
 }

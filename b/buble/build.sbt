@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "buble"
-version := "0.19-dt-20190312Z-fa3b81"
+version := "0.19-dt-20190312Z-5a8e9c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "magic-string" % "0.25.3-0d7c0c",
+  "org.scalablytyped" %%% "magic-string" % "0.25.4-a99234",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

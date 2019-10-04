@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-helmet-async
 
-Typings are for version 1.0
+Typings are for version 0.0
 
 ## Library description:
 Thread-safe Helmet for React 16+ and friends

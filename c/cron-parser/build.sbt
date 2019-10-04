@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cron-parser"
-version := "2.12.0-9d6fe8"
+version := "2.13.0-c1445a"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

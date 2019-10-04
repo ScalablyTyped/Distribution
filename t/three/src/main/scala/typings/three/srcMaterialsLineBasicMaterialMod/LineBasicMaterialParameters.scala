@@ -7,6 +7,8 @@ import typings.three.srcConstantsMod.BlendingSrcFactor
 import typings.three.srcConstantsMod.Colors
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathColorMod.Color
 import typings.three.srcMathPlaneMod.Plane
@@ -46,7 +48,6 @@ object LineBasicMaterialParameters {
     dithering: js.UndefOr[Boolean] = js.undefined,
     flatShading: js.UndefOr[Boolean] = js.undefined,
     fog: js.UndefOr[Boolean] = js.undefined,
-    lights: js.UndefOr[Boolean] = js.undefined,
     linecap: String = null,
     linejoin: String = null,
     linewidth: Int | Double = null,
@@ -60,6 +61,14 @@ object LineBasicMaterialParameters {
     premultipliedAlpha: js.UndefOr[Boolean] = js.undefined,
     shadowSide: Side = null,
     side: Side = null,
+    stencilFail: StencilOp = null,
+    stencilFunc: StencilFunc = null,
+    stencilMask: Int | Double = null,
+    stencilRef: Int | Double = null,
+    stencilWrite: js.UndefOr[Boolean] = js.undefined,
+    stencilZFail: StencilOp = null,
+    stencilZPass: StencilOp = null,
+    toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     vertexColors: Colors = null,
     vertexTangents: js.UndefOr[Boolean] = js.undefined,
@@ -85,7 +94,6 @@ object LineBasicMaterialParameters {
     if (!js.isUndefined(dithering)) __obj.updateDynamic("dithering")(dithering)
     if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading)
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
-    if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
     if (linecap != null) __obj.updateDynamic("linecap")(linecap)
     if (linejoin != null) __obj.updateDynamic("linejoin")(linejoin)
     if (linewidth != null) __obj.updateDynamic("linewidth")(linewidth.asInstanceOf[js.Any])
@@ -99,6 +107,14 @@ object LineBasicMaterialParameters {
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
     if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
+    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail)
+    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc)
+    if (stencilMask != null) __obj.updateDynamic("stencilMask")(stencilMask.asInstanceOf[js.Any])
+    if (stencilRef != null) __obj.updateDynamic("stencilRef")(stencilRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite)
+    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail)
+    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass)
+    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents)

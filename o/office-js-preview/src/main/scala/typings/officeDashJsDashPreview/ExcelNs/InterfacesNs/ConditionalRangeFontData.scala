@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "conditionalRangeFont.toJSON()". */
+/** An interface describing the data returned by calling `conditionalRangeFont.toJSON()`. */
 trait ConditionalRangeFontData extends js.Object {
   /**
     *

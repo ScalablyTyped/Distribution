@@ -6,6 +6,10 @@ import typings.atPulumiAws.cfgConfigurationAggregatorMod.ConfigurationAggregator
 import typings.atPulumiAws.cfgConfigurationAggregatorMod.ConfigurationAggregatorState
 import typings.atPulumiAws.cfgDeliveryChannelMod.DeliveryChannelArgs
 import typings.atPulumiAws.cfgDeliveryChannelMod.DeliveryChannelState
+import typings.atPulumiAws.cfgOrganizationCustomRuleMod.OrganizationCustomRuleArgs
+import typings.atPulumiAws.cfgOrganizationCustomRuleMod.OrganizationCustomRuleState
+import typings.atPulumiAws.cfgOrganizationManagedRuleMod.OrganizationManagedRuleArgs
+import typings.atPulumiAws.cfgOrganizationManagedRuleMod.OrganizationManagedRuleState
 import typings.atPulumiAws.cfgRecorderMod.RecorderArgs
 import typings.atPulumiAws.cfgRecorderMod.RecorderState
 import typings.atPulumiAws.cfgRecorderStatusMod.RecorderStatusArgs
@@ -63,6 +67,34 @@ object cfgNs extends js.Object {
       */
     def this(name: String, args: DeliveryChannelArgs) = this()
     def this(name: String, args: DeliveryChannelArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class OrganizationCustomRule protected ()
+    extends typings.atPulumiAws.cfgMod.OrganizationCustomRule {
+    /**
+      * Create a OrganizationCustomRule resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: OrganizationCustomRuleArgs) = this()
+    def this(name: String, args: OrganizationCustomRuleArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class OrganizationManagedRule protected ()
+    extends typings.atPulumiAws.cfgMod.OrganizationManagedRule {
+    /**
+      * Create a OrganizationManagedRule resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: OrganizationManagedRuleArgs) = this()
+    def this(name: String, args: OrganizationManagedRuleArgs, opts: CustomResourceOptions) = this()
   }
   
   @js.native
@@ -168,6 +200,48 @@ object cfgNs extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object OrganizationCustomRule extends js.Object {
+    /**
+      * Get an existing OrganizationCustomRule resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.cfgOrganizationCustomRuleMod.OrganizationCustomRule = js.native
+    def get(name: String, id: Input[ID], state: OrganizationCustomRuleState): typings.atPulumiAws.cfgOrganizationCustomRuleMod.OrganizationCustomRule = js.native
+    def get(name: String, id: Input[ID], state: OrganizationCustomRuleState, opts: CustomResourceOptions): typings.atPulumiAws.cfgOrganizationCustomRuleMod.OrganizationCustomRule = js.native
+    /**
+      * Returns true if the given object is an instance of OrganizationCustomRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/organizationCustomRule.OrganizationCustomRule */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object OrganizationManagedRule extends js.Object {
+    /**
+      * Get an existing OrganizationManagedRule resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.cfgOrganizationManagedRuleMod.OrganizationManagedRule = js.native
+    def get(name: String, id: Input[ID], state: OrganizationManagedRuleState): typings.atPulumiAws.cfgOrganizationManagedRuleMod.OrganizationManagedRule = js.native
+    def get(name: String, id: Input[ID], state: OrganizationManagedRuleState, opts: CustomResourceOptions): typings.atPulumiAws.cfgOrganizationManagedRuleMod.OrganizationManagedRule = js.native
+    /**
+      * Returns true if the given object is an instance of OrganizationManagedRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/organizationManagedRule.OrganizationManagedRule */ Boolean = js.native
   }
   
   /* static members */

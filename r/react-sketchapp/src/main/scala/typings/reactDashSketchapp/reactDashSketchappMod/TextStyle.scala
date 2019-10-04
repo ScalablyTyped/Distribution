@@ -34,6 +34,7 @@ import typings.reactDashSketchapp.reactDashSketchappStrings.stretch
 import typings.reactDashSketchapp.reactDashSketchappStrings.underline
 import typings.reactDashSketchapp.reactDashSketchappStrings.visible
 import typings.reactDashSketchapp.reactDashSketchappStrings.wrap
+import typings.reactDashSketchapp.typesMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

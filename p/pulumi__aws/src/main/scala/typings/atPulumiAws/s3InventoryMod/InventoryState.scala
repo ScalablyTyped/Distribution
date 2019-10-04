@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3InventoryMod
 
-import typings.atPulumiAws.Anon_BucketAnonAccountIdBucketArn
-import typings.atPulumiAws.Anon_FrequencyInput
-import typings.atPulumiAws.Anon_PrefixInputString
+import typings.atPulumiAws.typesInputMod.s3Ns.InventoryDestination
+import typings.atPulumiAws.typesInputMod.s3Ns.InventoryFilter
+import typings.atPulumiAws.typesInputMod.s3Ns.InventorySchedule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait InventoryState extends js.Object {
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: js.UndefOr[Input[Anon_BucketAnonAccountIdBucketArn]] = js.undefined
+  val destination: js.UndefOr[Input[InventoryDestination]] = js.undefined
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
@@ -24,7 +24,7 @@ trait InventoryState extends js.Object {
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: js.UndefOr[Input[Anon_PrefixInputString]] = js.undefined
+  val filter: js.UndefOr[Input[InventoryFilter]] = js.undefined
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
@@ -40,20 +40,20 @@ trait InventoryState extends js.Object {
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: js.UndefOr[Input[Anon_FrequencyInput]] = js.undefined
+  val schedule: js.UndefOr[Input[InventorySchedule]] = js.undefined
 }
 
 object InventoryState {
   @scala.inline
   def apply(
     bucket: Input[String] = null,
-    destination: Input[Anon_BucketAnonAccountIdBucketArn] = null,
+    destination: Input[InventoryDestination] = null,
     enabled: Input[Boolean] = null,
-    filter: Input[Anon_PrefixInputString] = null,
+    filter: Input[InventoryFilter] = null,
     includedObjectVersions: Input[String] = null,
     name: Input[String] = null,
     optionalFields: Input[js.Array[Input[String]]] = null,
-    schedule: Input[Anon_FrequencyInput] = null
+    schedule: Input[InventorySchedule] = null
   ): InventoryState = {
     val __obj = js.Dynamic.literal()
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])

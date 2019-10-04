@@ -1,8 +1,8 @@
 package typings.atPulumiAws.apigatewayUsagePlanMod
 
-import typings.atPulumiAws.Anon_ApiIdStage
-import typings.atPulumiAws.Anon_BurstLimitRateLimit
-import typings.atPulumiAws.Anon_LimitOffset
+import typings.atPulumiAws.typesInputMod.apigatewayNs.UsagePlanApiStage
+import typings.atPulumiAws.typesInputMod.apigatewayNs.UsagePlanQuotaSettings
+import typings.atPulumiAws.typesInputMod.apigatewayNs.UsagePlanThrottleSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait UsagePlanState extends js.Object {
   /**
     * The associated API stages of the usage plan.
     */
-  val apiStages: js.UndefOr[Input[js.Array[Input[Anon_ApiIdStage]]]] = js.undefined
+  val apiStages: js.UndefOr[Input[js.Array[Input[UsagePlanApiStage]]]] = js.undefined
   /**
     * The description of a usage plan.
     */
@@ -28,22 +28,22 @@ trait UsagePlanState extends js.Object {
   /**
     * The quota settings of the usage plan.
     */
-  val quotaSettings: js.UndefOr[Input[Anon_LimitOffset]] = js.undefined
+  val quotaSettings: js.UndefOr[Input[UsagePlanQuotaSettings]] = js.undefined
   /**
     * The throttling limits of the usage plan.
     */
-  val throttleSettings: js.UndefOr[Input[Anon_BurstLimitRateLimit]] = js.undefined
+  val throttleSettings: js.UndefOr[Input[UsagePlanThrottleSettings]] = js.undefined
 }
 
 object UsagePlanState {
   @scala.inline
   def apply(
-    apiStages: Input[js.Array[Input[Anon_ApiIdStage]]] = null,
+    apiStages: Input[js.Array[Input[UsagePlanApiStage]]] = null,
     description: Input[String] = null,
     name: Input[String] = null,
     productCode: Input[String] = null,
-    quotaSettings: Input[Anon_LimitOffset] = null,
-    throttleSettings: Input[Anon_BurstLimitRateLimit] = null
+    quotaSettings: Input[UsagePlanQuotaSettings] = null,
+    throttleSettings: Input[UsagePlanThrottleSettings] = null
   ): UsagePlanState = {
     val __obj = js.Dynamic.literal()
     if (apiStages != null) __obj.updateDynamic("apiStages")(apiStages.asInstanceOf[js.Any])

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2LaunchConfigurationMod
 
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice
-import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsVolumeSize
-import typings.atPulumiAws.Anon_DeviceName
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchConfigurationEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchConfigurationEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchConfigurationRootBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -32,7 +32,7 @@ class LaunchConfiguration protected () extends CustomResource {
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: Output[js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice]] = js.native
+  val ebsBlockDevices: Output[js.Array[LaunchConfigurationEbsBlockDevice]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
@@ -45,7 +45,7 @@ class LaunchConfiguration protected () extends CustomResource {
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: Output[js.UndefOr[js.Array[Anon_DeviceName]]] = js.native
+  val ephemeralBlockDevices: Output[js.UndefOr[js.Array[LaunchConfigurationEphemeralBlockDevice]]] = js.native
   /**
     * The name attribute of the IAM instance profile to associate
     * with launched instances.
@@ -83,7 +83,7 @@ class LaunchConfiguration protected () extends CustomResource {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: Output[Anon_DeleteOnTerminationEncryptedIopsVolumeSize] = js.native
+  val rootBlockDevice: Output[LaunchConfigurationRootBlockDevice] = js.native
   /**
     * A list of associated security group IDS.
     */

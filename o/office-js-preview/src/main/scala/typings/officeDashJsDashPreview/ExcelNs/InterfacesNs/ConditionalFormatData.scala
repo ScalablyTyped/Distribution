@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "conditionalFormat.toJSON()". */
+/** An interface describing the data returned by calling `conditionalFormat.toJSON()`. */
 trait ConditionalFormatData extends js.Object {
   /**
     *

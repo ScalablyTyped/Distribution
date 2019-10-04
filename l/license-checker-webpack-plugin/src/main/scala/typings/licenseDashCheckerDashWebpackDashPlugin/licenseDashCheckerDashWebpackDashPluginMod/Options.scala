@@ -41,7 +41,7 @@ trait Options extends js.Object {
     * Path to a `.ejs` template, or function that will generate the contents
     * of the third-party notices file.
     */
-  var outputWriter: String | (js.Function1[/* dependencies */ js.Array[Dependency], String])
+  var outputWriter: String | OutputWriter
   /**
     * Object of dependencies to override, in the format `{"<dependency name>@<version range>": { ... }}`.
     * For example, `{"assignment@^2.0.0": { licenseName: "MIT" }}`.
@@ -59,7 +59,7 @@ object Options {
     filter: RegExp,
     ignore: js.Array[String],
     outputFilename: String,
-    outputWriter: String | (js.Function1[/* dependencies */ js.Array[Dependency], String]),
+    outputWriter: String | OutputWriter,
     `override`: Record[String, Partial[Dependency]]
   ): Options = {
     val __obj = js.Dynamic.literal(allow = allow, emitError = emitError, filter = filter, ignore = ignore, outputFilename = outputFilename, outputWriter = outputWriter.asInstanceOf[js.Any])

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("pouch-redux-middleware", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  def default(paths: js.Array[Path]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  def default(paths: Path): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  def default[T](): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  def default[T](paths: js.Array[Path[T]]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  def default[T](paths: Path[T]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
 }
 

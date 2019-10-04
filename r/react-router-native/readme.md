@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router-native
 
-Typings are for version 4.2
+Typings are for version 5.1
 
 ## Library description:
 React Native bindings for React Router

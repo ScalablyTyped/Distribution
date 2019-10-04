@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Application object, for use in "application.set({ ... })". */
+/** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
 trait ApplicationUpdateData extends js.Object {
   /**
     *

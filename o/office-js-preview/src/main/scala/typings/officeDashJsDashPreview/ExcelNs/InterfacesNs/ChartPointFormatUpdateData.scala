@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartPointFormat object, for use in "chartPointFormat.set({ ... })". */
+/** An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`. */
 trait ChartPointFormatUpdateData extends js.Object {
   /**
     *

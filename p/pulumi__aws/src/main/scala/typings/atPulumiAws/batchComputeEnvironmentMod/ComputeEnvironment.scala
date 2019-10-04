@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchComputeEnvironmentMod
 
-import typings.atPulumiAws.Anon_BidPercentage
+import typings.atPulumiAws.typesOutputMod.batchNs.ComputeEnvironmentComputeResources
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class ComputeEnvironment protected () extends CustomResource {
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
-  val computeResources: Output[js.UndefOr[Anon_BidPercentage]] = js.native
+  val computeResources: Output[js.UndefOr[ComputeEnvironmentComputeResources]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */

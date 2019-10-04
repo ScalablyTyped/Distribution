@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gettext_dot_js"
-version := "0.5-dt-20180214Z-38c040"
+version := "0.8-dt-20190926Z-938ccf"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 package typings.intlDashMessageformat.intlDashMessageformatMod
 
-import typings.intlDashMessageformat.libFormattersMod.FormatXMLElementFn
-import typings.intlDashMessageformat.libFormattersMod.Formats
-import typings.intlDashMessageformat.libFormattersMod.FormatterCache
-import typings.intlDashMessageformat.libFormattersMod.Formatters
-import typings.intlDashMessageformat.libFormattersMod.MessageFormatPart
-import typings.intlDashMessageformat.libFormattersMod.PrimitiveType
-import typings.intlDashMessageformatDashParser.libTypesMod.MessageFormatElement
+import typings.intlDashMessageformat.distFormattersMod.FormatXMLElementFn
+import typings.intlDashMessageformat.distFormattersMod.Formats
+import typings.intlDashMessageformat.distFormattersMod.FormatterCache
+import typings.intlDashMessageformat.distFormattersMod.Formatters
+import typings.intlDashMessageformat.distFormattersMod.MessageFormatPart
+import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
+import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,43 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def createDefaultFormatters(): Formatters = js.native
   def createDefaultFormatters(cache: FormatterCache): Formatters = js.native
+  def formatHTMLMessage(els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[String | js.Object] = js.native
+  def formatHTMLMessage(
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn]
+  ): js.Array[String | js.Object] = js.native
+  def formatHTMLMessage(
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn],
+    originalMessage: String
+  ): js.Array[String | js.Object] = js.native
+  def formatHTMLMessage(
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats
+  ): js.Array[String | js.Object] = js.native
+  def formatHTMLMessage(
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn]
+  ): js.Array[String | js.Object] = js.native
+  def formatHTMLMessage(
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn],
+    originalMessage: String
+  ): js.Array[String | js.Object] = js.native
   def formatToParts(els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart] = js.native
   def formatToParts(
     els: js.Array[MessageFormatElement],
@@ -91,42 +128,5 @@ object ^ extends js.Object {
     values: Record[String, PrimitiveType],
     originalMessage: String
   ): String = js.native
-  def formatXMLMessage(els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[String | js.Object] = js.native
-  def formatXMLMessage(
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn]
-  ): js.Array[String | js.Object] = js.native
-  def formatXMLMessage(
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn],
-    originalMessage: String
-  ): js.Array[String | js.Object] = js.native
-  def formatXMLMessage(
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats
-  ): js.Array[String | js.Object] = js.native
-  def formatXMLMessage(
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn]
-  ): js.Array[String | js.Object] = js.native
-  def formatXMLMessage(
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[String, PrimitiveType | js.Object | FormatXMLElementFn],
-    originalMessage: String
-  ): js.Array[String | js.Object] = js.native
 }
 

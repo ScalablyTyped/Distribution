@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dom-loaded", JSImport.Namespace)
 @js.native
 object domDashLoadedMod
-  extends TopLevel[js.Promise[Unit] with Anon_DefaultAnonDefault]
+  extends TopLevel[js.Promise[Unit] with Anon_HasLoaded]
 

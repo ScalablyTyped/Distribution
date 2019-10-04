@@ -9,11 +9,6 @@ import scala.scalajs.js.annotation._
 trait InstanceState extends js.Object {
   /**
     * The ARN of the Lightsail instance (matches `id`).
-    * * `availabilityZone`
-    * * `blueprintId`
-    * * `bundleId`
-    * * `keyPairName`
-    * * `userData`
     */
   val arn: js.UndefOr[Input[String]] = js.undefined
   /**
@@ -31,6 +26,14 @@ trait InstanceState extends js.Object {
     */
   val bundleId: js.UndefOr[Input[String]] = js.undefined
   val cpuCount: js.UndefOr[Input[Double]] = js.undefined
+  /**
+    * The timestamp when the instance was created.
+    * * `availabilityZone`
+    * * `blueprintId`
+    * * `bundleId`
+    * * `keyPairName`
+    * * `userData`
+    */
   val createdAt: js.UndefOr[Input[String]] = js.undefined
   val ipv6Address: js.UndefOr[Input[String]] = js.undefined
   val isStaticIp: js.UndefOr[Input[Boolean]] = js.undefined

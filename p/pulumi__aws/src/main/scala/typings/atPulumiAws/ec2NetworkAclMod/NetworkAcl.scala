@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2NetworkAclMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActionCidrBlock
+import typings.atPulumiAws.typesOutputMod.ec2Ns.NetworkAclEgress
+import typings.atPulumiAws.typesOutputMod.ec2Ns.NetworkAclIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,12 +28,12 @@ class NetworkAcl protected () extends CustomResource {
     * Specifies an egress rule. Parameters defined below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val egress: Output[js.Array[Anon_ActionCidrBlock]] = js.native
+  val egress: Output[js.Array[NetworkAclEgress]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val ingress: Output[js.Array[Anon_ActionCidrBlock]] = js.native
+  val ingress: Output[js.Array[NetworkAclIngress]] = js.native
   /**
     * The ID of the AWS account that owns the network ACL.
     */

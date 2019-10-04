@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("styletron-react", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val DebugEngine: Instantiable0[BrowserDebugEngine | NoopDebugEngine] = js.native
   val Provider: Instantiable0[DevProvider] | typings.react.reactMod.Provider[StandardEngine] = js.native
   val styled: ReturnType[js.Function1[/* options */ CreateStyledOptions, StyledFn]] = js.native
   val withStyle: WithStyleFn = js.native

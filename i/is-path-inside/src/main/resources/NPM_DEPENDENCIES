@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-path-inside" : "3.0.1"
+      "is-path-inside" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "is-path-inside" : "3.0.1"
+      "is-path-inside" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

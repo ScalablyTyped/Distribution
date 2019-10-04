@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgDeliveryChannelMod
 
-import typings.atPulumiAws.Anon_DeliveryFrequencyInput
+import typings.atPulumiAws.typesInputMod.cfgNs.DeliveryChannelSnapshotDeliveryProperties
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait DeliveryChannelState extends js.Object {
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: js.UndefOr[Input[Anon_DeliveryFrequencyInput]] = js.undefined
+  val snapshotDeliveryProperties: js.UndefOr[Input[DeliveryChannelSnapshotDeliveryProperties]] = js.undefined
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */
@@ -35,7 +35,7 @@ object DeliveryChannelState {
     name: Input[String] = null,
     s3BucketName: Input[String] = null,
     s3KeyPrefix: Input[String] = null,
-    snapshotDeliveryProperties: Input[Anon_DeliveryFrequencyInput] = null,
+    snapshotDeliveryProperties: Input[DeliveryChannelSnapshotDeliveryProperties] = null,
     snsTopicArn: Input[String] = null
   ): DeliveryChannelState = {
     val __obj = js.Dynamic.literal()

@@ -26,6 +26,13 @@ trait IStyleSheetConfig extends js.Object {
     * Callback executed when a rule is inserted.
     */
   var onInsertRule: js.UndefOr[js.Function1[/* rule */ String, Unit]] = js.undefined
+  /**
+    * Defines the default direction of rules for auto-rtlifying things.
+    * While typically this is represented as a DIR attribute in the markup,
+    * the DIR is not enough to control whether padding goes on the left or
+    * right. Use this to set the default direction when rules are registered.
+    */
+  var rtl: js.UndefOr[Boolean] = js.undefined
 }
 
 object IStyleSheetConfig {
@@ -35,7 +42,8 @@ object IStyleSheetConfig {
     defaultPrefix: String = null,
     injectionMode: InjectionMode = null,
     namespace: String = null,
-    onInsertRule: /* rule */ String => Unit = null
+    onInsertRule: /* rule */ String => Unit = null,
+    rtl: js.UndefOr[Boolean] = js.undefined
   ): IStyleSheetConfig = {
     val __obj = js.Dynamic.literal()
     if (cspSettings != null) __obj.updateDynamic("cspSettings")(cspSettings)
@@ -43,6 +51,7 @@ object IStyleSheetConfig {
     if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (onInsertRule != null) __obj.updateDynamic("onInsertRule")(js.Any.fromFunction1(onInsertRule))
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
     __obj.asInstanceOf[IStyleSheetConfig]
   }
 }

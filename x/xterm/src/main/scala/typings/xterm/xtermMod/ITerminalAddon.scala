@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ITerminalAddon extends IDisposable {
   /**
-    * (EXPERIMENTAL) This is called when the addon is activated within xterm.js.
+    * This is called when the addon is activated.
     */
   def activate(terminal: Terminal): Unit
 }

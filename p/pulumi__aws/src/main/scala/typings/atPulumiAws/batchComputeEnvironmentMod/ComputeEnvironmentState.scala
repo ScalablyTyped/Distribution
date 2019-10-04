@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchComputeEnvironmentMod
 
-import typings.atPulumiAws.Anon_BidPercentageDesiredVcpus
+import typings.atPulumiAws.typesInputMod.batchNs.ComputeEnvironmentComputeResources
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait ComputeEnvironmentState extends js.Object {
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
-  val computeResources: js.UndefOr[Input[Anon_BidPercentageDesiredVcpus]] = js.undefined
+  val computeResources: js.UndefOr[Input[ComputeEnvironmentComputeResources]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */
@@ -50,7 +50,7 @@ object ComputeEnvironmentState {
   def apply(
     arn: Input[String] = null,
     computeEnvironmentName: Input[String] = null,
-    computeResources: Input[Anon_BidPercentageDesiredVcpus] = null,
+    computeResources: Input[ComputeEnvironmentComputeResources] = null,
     ecsClusterArn: Input[String] = null,
     serviceRole: Input[String] = null,
     state: Input[String] = null,

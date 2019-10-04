@@ -16,7 +16,7 @@ object FetchOptions {
     debugLabel: String = null,
     defer: js.UndefOr[Boolean] = js.undefined,
     deferFn: DeferFn[T] = null,
-    dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], Unit], /* props */ js.Object) => Unit = null,
+    dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], Unit], /* props */ AsyncProps[T]) => Unit = null,
     initialValue: T = null,
     json: js.UndefOr[Boolean] = js.undefined,
     onReject: /* error */ Error => Unit = null,
@@ -25,7 +25,7 @@ object FetchOptions {
     promiseFn: PromiseFn[T] = null,
     reducer: (/* state */ AsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ AsyncState[T], /* action */ AsyncAction[T], AsyncState[T]]) => AsyncState[T] = null,
     watch: js.Any = null,
-    watchFn: (/* props */ js.Object, /* prevProps */ js.Object) => _ = null
+    watchFn: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => _ = null
   ): FetchOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel)

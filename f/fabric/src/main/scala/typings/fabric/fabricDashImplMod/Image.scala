@@ -2,6 +2,7 @@ package typings.fabric.fabricDashImplMod
 
 import typings.fabric.Anon_Height
 import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,14 +13,16 @@ import scala.scalajs.js.annotation._
 @js.native
 /**
 	 * Constructor
-	 * @param element Image element
+	 * @param element Image or Video element
 	 * @param [options] Options object
 	 */
 class Image () extends Object {
   def this(element: String) = this()
   def this(element: HTMLImageElement) = this()
+  def this(element: HTMLVideoElement) = this()
   def this(element: String, options: IImageOptions) = this()
   def this(element: HTMLImageElement, options: IImageOptions) = this()
+  def this(element: HTMLVideoElement, options: IImageOptions) = this()
   /**
   	 * key used to retrieve the texture representing this image
   	 * @since 2.0.0
@@ -80,10 +83,10 @@ class Image () extends Object {
   	 */
   def dispose(): Unit = js.native
   /**
-  	 * Returns image element which this instance if based on
-  	 * @return Image element
+  	 * Returns image or video element which this instance is based on
+  	 * @return Image or Video element
   	 */
-  def getElement(): HTMLImageElement = js.native
+  def getElement(): HTMLImageElement | HTMLVideoElement = js.native
   /**
   	 * Returns original size of an image
   	 * @return Object with "width" and "height" properties
@@ -115,7 +118,7 @@ class Image () extends Object {
   	 */
   def setCrossOrigin(value: String): Image = js.native
   /**
-  	 * Sets image element for this instance to a specified one.
+  	 * Sets image or video element for this instance to a specified one.
   	 * If filters defined they are applied to new image.
   	 * You might need to call `canvas.renderAll` and `object.setCoords` after replacing, to render new image and update controls area.
   	 * @param element image element
@@ -123,6 +126,8 @@ class Image () extends Object {
   	 */
   def setElement(element: HTMLImageElement): Image = js.native
   def setElement(element: HTMLImageElement, options: IImageOptions): Image = js.native
+  def setElement(element: HTMLVideoElement): Image = js.native
+  def setElement(element: HTMLVideoElement, options: IImageOptions): Image = js.native
   /**
   	 * Sets source of an image
   	 * @param {String} src Source string (URL)

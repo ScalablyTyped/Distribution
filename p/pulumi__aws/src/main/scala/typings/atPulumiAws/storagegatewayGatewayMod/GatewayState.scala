@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayGatewayMod
 
-import typings.atPulumiAws.Anon_DomainNamePasswordUsername
+import typings.atPulumiAws.typesInputMod.storagegatewayNs.GatewaySmbActiveDirectorySettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ trait GatewayState extends js.Object {
   /**
     * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
     */
-  val smbActiveDirectorySettings: js.UndefOr[Input[Anon_DomainNamePasswordUsername]] = js.undefined
+  val smbActiveDirectorySettings: js.UndefOr[Input[GatewaySmbActiveDirectorySettings]] = js.undefined
   /**
     * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. This provider can only detect drift of the existence of a guest password, not its actual value from the gateway. This provider can however update the password with changing the argument.
     */
@@ -61,7 +61,7 @@ object GatewayState {
     gatewayTimezone: Input[String] = null,
     gatewayType: Input[String] = null,
     mediumChangerType: Input[String] = null,
-    smbActiveDirectorySettings: Input[Anon_DomainNamePasswordUsername] = null,
+    smbActiveDirectorySettings: Input[GatewaySmbActiveDirectorySettings] = null,
     smbGuestPassword: Input[String] = null,
     tapeDriveType: Input[String] = null
   ): GatewayState = {

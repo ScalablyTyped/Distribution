@@ -30,6 +30,10 @@ trait ElasticsearchDomainStatus extends js.Object {
     */
   var Deleted: js.UndefOr[Boolean] = js.undefined
   /**
+    * The current status of the Elasticsearch domain's endpoint options.
+    */
+  var DomainEndpointOptions: js.UndefOr[typings.awsDashSdk.clientsEsMod.DomainEndpointOptions] = js.undefined
+  /**
     * The unique identifier for the specified Elasticsearch domain.
     */
   var DomainId: typings.awsDashSdk.clientsEsMod.DomainId
@@ -100,6 +104,7 @@ object ElasticsearchDomainStatus {
     CognitoOptions: CognitoOptions = null,
     Created: js.UndefOr[Boolean] = js.undefined,
     Deleted: js.UndefOr[Boolean] = js.undefined,
+    DomainEndpointOptions: DomainEndpointOptions = null,
     EBSOptions: EBSOptions = null,
     ElasticsearchVersion: ElasticsearchVersionString = null,
     EncryptionAtRestOptions: EncryptionAtRestOptions = null,
@@ -119,6 +124,7 @@ object ElasticsearchDomainStatus {
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions)
     if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created)
     if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted)
+    if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions)
     if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions)
     if (ElasticsearchVersion != null) __obj.updateDynamic("ElasticsearchVersion")(ElasticsearchVersion)
     if (EncryptionAtRestOptions != null) __obj.updateDynamic("EncryptionAtRestOptions")(EncryptionAtRestOptions)

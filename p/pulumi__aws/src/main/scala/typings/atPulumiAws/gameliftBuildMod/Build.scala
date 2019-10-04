@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftBuildMod
 
-import typings.atPulumiAws.Anon_BucketKey
+import typings.atPulumiAws.typesOutputMod.gameliftNs.BuildStorageLocation
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class Build protected () extends CustomResource {
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: Output[Anon_BucketKey] = js.native
+  val storageLocation: Output[BuildStorageLocation] = js.native
   /**
     * Version that is associated with this build.
     */

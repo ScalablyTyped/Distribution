@@ -9,14 +9,7 @@ import scala.scalajs.js.annotation._
 class RouteHandler () extends js.Object {
   def configure(config: PollyConfig): RouteHandler = js.native
   def filter(callback: js.Function1[/* req */ Request, Boolean]): RouteHandler = js.native
-  def intercept(
-    fn: js.Function3[
-      /* req */ Request, 
-      /* res */ Response, 
-      /* intercept */ Intercept, 
-      EventListenerResponse
-    ]
-  ): RouteHandler = js.native
+  def intercept(fn: InterceptHandler): RouteHandler = js.native
   def off(event: ErrorRouteEvent, listener: ErrorEventListener): RouteHandler = js.native
   def off(event: RecordingRouteEvent, listener: RecordingEventListener): RouteHandler = js.native
   def off(event: RequestRouteEvent, listener: RequestEventListener): RouteHandler = js.native
@@ -33,5 +26,7 @@ class RouteHandler () extends js.Object {
   def passthrough(value: Boolean): RouteHandler = js.native
   def recordingName(): RouteHandler = js.native
   def recordingName(recordingName: String): RouteHandler = js.native
+  def times(): RouteHandler = js.native
+  def times(n: Double): RouteHandler = js.native
 }
 

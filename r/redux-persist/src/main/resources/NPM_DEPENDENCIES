@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux-persist" : "5.10.0"
+      "redux-persist" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "redux-persist" : "5.10.0"
+      "redux-persist" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

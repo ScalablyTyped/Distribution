@@ -1,16 +1,13 @@
 package typings.fastDashJsonDashPatch.fastDashJsonDashPatchMod
 
 import org.scalablytyped.runtime.Instantiable5
-import typings.fastDashJsonDashPatch.Anon_ApplyOperation
-import typings.fastDashJsonDashPatch.Fn_Callback
-import typings.fastDashJsonDashPatch.Fn_Invertible
-import typings.fastDashJsonDashPatch.Fn_Observer
-import typings.fastDashJsonDashPatch.libCoreMod.Operation
-import typings.fastDashJsonDashPatch.libCoreMod.OperationResult
-import typings.fastDashJsonDashPatch.libCoreMod.PatchResult
-import typings.fastDashJsonDashPatch.libCoreMod.Validator
-import typings.fastDashJsonDashPatch.libHelpersMod.JsonPatchErrorName
-import typings.fastDashJsonDashPatch.libHelpersMod.PatchError
+import typings.fastDashJsonDashPatch.moduleCoreMod.Operation
+import typings.fastDashJsonDashPatch.moduleCoreMod.OperationResult
+import typings.fastDashJsonDashPatch.moduleCoreMod.PatchResult
+import typings.fastDashJsonDashPatch.moduleCoreMod.Validator
+import typings.fastDashJsonDashPatch.moduleDuplexMod.Observer
+import typings.fastDashJsonDashPatch.moduleHelpersMod.JsonPatchErrorName
+import typings.fastDashJsonDashPatch.moduleHelpersMod.PatchError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,26 +24,13 @@ object default extends js.Object {
     js.UndefOr[/* tree */ js.Any], 
     PatchError
   ] = js.native
-  @JSName("compare")
-  var compare_Original: js.Function3[
-    /* tree1 */ js.Object | js.Array[_], 
-    /* tree2 */ js.Object | js.Array[_], 
-    /* invertible */ js.UndefOr[Boolean], 
-    js.Array[Operation]
-  ] = js.native
   @JSName("deepClone")
   var deepClone_Original: js.Function1[/* obj */ js.Any, _] = js.native
-  var default: Anon_ApplyOperation = js.native
   @JSName("escapePathComponent")
   var escapePathComponent_Original: js.Function1[/* path */ String, String] = js.native
-  @JSName("generate")
-  var generate_Original: Fn_Invertible = js.native
-  @JSName("observe")
-  var observe_Original: Fn_Callback = js.native
   @JSName("unescapePathComponent")
   var unescapePathComponent_Original: js.Function1[/* path */ String, String] = js.native
-  @JSName("unobserve")
-  var unobserve_Original: Fn_Observer = js.native
+  def _areEquals(a: js.Any, b: js.Any): Boolean = js.native
   def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = js.native

@@ -10,15 +10,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartLegendLabelItem extends ChartLegendItem {
-  var datasetIndex: Double
+  var datasetIndex: js.UndefOr[Double] = js.undefined
 }
 
 object ChartLegendLabelItem {
   @scala.inline
   def apply(
-    datasetIndex: Double,
+    datasetIndex: Int | Double = null,
     fillStyle: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    index: Int | Double = null,
     lineCap: butt | round | square = null,
     lineDash: js.Array[Double] = null,
     lineDashOffset: Int | Double = null,
@@ -28,9 +29,11 @@ object ChartLegendLabelItem {
     strokeStyle: String = null,
     text: String = null
   ): ChartLegendLabelItem = {
-    val __obj = js.Dynamic.literal(datasetIndex = datasetIndex)
+    val __obj = js.Dynamic.literal()
+    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
     if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash)
     if (lineDashOffset != null) __obj.updateDynamic("lineDashOffset")(lineDashOffset.asInstanceOf[js.Any])

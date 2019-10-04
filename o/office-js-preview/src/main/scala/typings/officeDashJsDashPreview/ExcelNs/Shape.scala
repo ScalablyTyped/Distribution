@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes, etc.
-  * To learn more about the shape object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes | Work with shapes using the Excel JavaScript API}.
+  To learn more about the shape object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes | Work with shapes using the Excel JavaScript API}.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -321,25 +321,15 @@ class Shape () extends ClientObject {
     */
   def incrementTop(increment: Double): Unit = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Excel.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Excel.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Shape = js.native
-  def load(option: String): Shape = js.native
-  def load(option: js.Array[String]): Shape = js.native
-  def load(option: Anon_Expand): Shape = js.native
-  def load(option: ShapeLoadOptions): Shape = js.native
+  def load(options: ShapeLoadOptions): Shape = js.native
+  def load(propertyNamesAndPaths: Anon_Expand): Shape = js.native
+  def load(propertyNames: String): Shape = js.native
+  def load(propertyNames: js.Array[String]): Shape = js.native
   /**
     *
     * Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.

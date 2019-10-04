@@ -13,6 +13,15 @@ object typesMod extends js.Object {
     @JSName("admissionregistration")
     @js.native
     object admissionregistrationNs extends js.Object {
+      @JSName("v1")
+      @js.native
+      object v1Ns extends js.Object {
+        def isMutatingWebhookConfiguration(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1.MutatingWebhookConfiguration */ Boolean = js.native
+        def isMutatingWebhookConfigurationList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1.MutatingWebhookConfigurationList */ Boolean = js.native
+        def isValidatingWebhookConfiguration(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1.ValidatingWebhookConfiguration */ Boolean = js.native
+        def isValidatingWebhookConfigurationList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1.ValidatingWebhookConfigurationList */ Boolean = js.native
+      }
+      
       @JSName("v1beta1")
       @js.native
       object v1beta1Ns extends js.Object {
@@ -27,6 +36,13 @@ object typesMod extends js.Object {
     @JSName("apiextensions")
     @js.native
     object apiextensionsNs extends js.Object {
+      @JSName("v1")
+      @js.native
+      object v1Ns extends js.Object {
+        def isCustomResourceDefinition(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiextensions.v1.CustomResourceDefinition */ Boolean = js.native
+        def isCustomResourceDefinitionList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiextensions.v1.CustomResourceDefinitionList */ Boolean = js.native
+      }
+      
       @JSName("v1beta1")
       @js.native
       object v1beta1Ns extends js.Object {
@@ -122,6 +138,8 @@ object typesMod extends js.Object {
       @JSName("v1")
       @js.native
       object v1Ns extends js.Object {
+        def isBoundObjectReference(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.BoundObjectReference */ Boolean = js.native
+        def isTokenRequest(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.TokenRequest */ Boolean = js.native
         def isTokenReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.TokenReview */ Boolean = js.native
       }
       
@@ -284,6 +302,18 @@ object typesMod extends js.Object {
         def isServiceAccount(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.core.v1.ServiceAccount */ Boolean = js.native
         def isServiceAccountList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.core.v1.ServiceAccountList */ Boolean = js.native
         def isServiceList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.core.v1.ServiceList */ Boolean = js.native
+      }
+      
+    }
+    
+    @JSName("discovery")
+    @js.native
+    object discoveryNs extends js.Object {
+      @JSName("v1alpha1")
+      @js.native
+      object v1alpha1Ns extends js.Object {
+        def isEndpointSlice(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.discovery.v1alpha1.EndpointSlice */ Boolean = js.native
+        def isEndpointSliceList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.discovery.v1alpha1.EndpointSliceList */ Boolean = js.native
       }
       
     }

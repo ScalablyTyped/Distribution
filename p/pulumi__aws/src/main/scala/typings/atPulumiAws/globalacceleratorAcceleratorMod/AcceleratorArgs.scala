@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorAcceleratorMod
 
-import typings.atPulumiAws.Anon_FlowLogsEnabledFlowLogsS3Bucket
+import typings.atPulumiAws.typesInputMod.globalacceleratorNs.AcceleratorAttributes
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait AcceleratorArgs extends js.Object {
   /**
     * The attributes of the accelerator. Fields documented below.
     */
-  val attributes: js.UndefOr[Input[Anon_FlowLogsEnabledFlowLogsS3Bucket]] = js.undefined
+  val attributes: js.UndefOr[Input[AcceleratorAttributes]] = js.undefined
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
@@ -28,7 +28,7 @@ trait AcceleratorArgs extends js.Object {
 object AcceleratorArgs {
   @scala.inline
   def apply(
-    attributes: Input[Anon_FlowLogsEnabledFlowLogsS3Bucket] = null,
+    attributes: Input[AcceleratorAttributes] = null,
     enabled: Input[Boolean] = null,
     ipAddressType: Input[String] = null,
     name: Input[String] = null

@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartAreaFormat.toJSON()". */
+/** An interface describing the data returned by calling `chartAreaFormat.toJSON()`. */
 trait ChartAreaFormatData extends js.Object {
   /**
     *

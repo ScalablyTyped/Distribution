@@ -1,14 +1,14 @@
 package typings.atPulumiAws.glueGetScriptMod
 
-import typings.atPulumiAws.Anon_ArgsId
-import typings.atPulumiAws.Anon_Source
+import typings.atPulumiAws.typesOutputMod.glueNs.GetScriptDagEdge
+import typings.atPulumiAws.typesOutputMod.glueNs.GetScriptDagNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetScriptResult extends js.Object {
-  val dagEdges: js.Array[Anon_Source]
-  val dagNodes: js.Array[Anon_ArgsId]
+  val dagEdges: js.Array[GetScriptDagEdge]
+  val dagNodes: js.Array[GetScriptDagNode]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -27,8 +27,8 @@ trait GetScriptResult extends js.Object {
 object GetScriptResult {
   @scala.inline
   def apply(
-    dagEdges: js.Array[Anon_Source],
-    dagNodes: js.Array[Anon_ArgsId],
+    dagEdges: js.Array[GetScriptDagEdge],
+    dagNodes: js.Array[GetScriptDagNode],
     id: String,
     pythonScript: String,
     scalaCode: String,

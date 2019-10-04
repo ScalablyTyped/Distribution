@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ec2LaunchConfigurationMod
 
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDeviceSnapshotId
-import typings.atPulumiAws.Anon_DeleteOnTerminationEncryptedIopsVolumeSizeVolumeType
-import typings.atPulumiAws.Anon_DeviceNameVirtualName
 import typings.atPulumiAws.iamMod.InstanceProfile
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchConfigurationEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchConfigurationEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchConfigurationRootBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,11 +18,7 @@ trait LaunchConfigurationState extends js.Object {
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: js.UndefOr[
-    Input[
-      js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDeviceSnapshotId]]
-    ]
-  ] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]]] = js.undefined
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
@@ -35,7 +31,7 @@ trait LaunchConfigurationState extends js.Object {
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameVirtualName]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[LaunchConfigurationEphemeralBlockDevice]]]] = js.undefined
   /**
     * The name attribute of the IAM instance profile to associate
     * with launched instances.
@@ -73,7 +69,7 @@ trait LaunchConfigurationState extends js.Object {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: js.UndefOr[Input[Anon_DeleteOnTerminationEncryptedIopsVolumeSizeVolumeType]] = js.undefined
+  val rootBlockDevice: js.UndefOr[Input[LaunchConfigurationRootBlockDevice]] = js.undefined
   /**
     * A list of associated security group IDS.
     */
@@ -104,12 +100,10 @@ object LaunchConfigurationState {
   @scala.inline
   def apply(
     associatePublicIpAddress: Input[Boolean] = null,
-    ebsBlockDevices: Input[
-      js.Array[Input[Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDeviceSnapshotId]]
-    ] = null,
+    ebsBlockDevices: Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]] = null,
     ebsOptimized: Input[Boolean] = null,
     enableMonitoring: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameVirtualName]]] = null,
+    ephemeralBlockDevices: Input[js.Array[Input[LaunchConfigurationEphemeralBlockDevice]]] = null,
     iamInstanceProfile: Input[String | InstanceProfile] = null,
     imageId: Input[String] = null,
     instanceType: Input[String] = null,
@@ -117,7 +111,7 @@ object LaunchConfigurationState {
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     placementTenancy: Input[String] = null,
-    rootBlockDevice: Input[Anon_DeleteOnTerminationEncryptedIopsVolumeSizeVolumeType] = null,
+    rootBlockDevice: Input[LaunchConfigurationRootBlockDevice] = null,
     securityGroups: Input[js.Array[Input[String]]] = null,
     spotPrice: Input[String] = null,
     userData: Input[String] = null,

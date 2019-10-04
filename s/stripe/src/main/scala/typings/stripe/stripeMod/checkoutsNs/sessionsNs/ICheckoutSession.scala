@@ -3,6 +3,9 @@ package typings.stripe.stripeMod.checkoutsNs.sessionsNs
 import typings.stripe.stripeMod.customersNs.ICustomer
 import typings.stripe.stripeMod.paymentIntentsNs.IPaymentIntent
 import typings.stripe.stripeMod.subscriptionsNs.ISubscription
+import typings.stripe.stripeStrings.payment
+import typings.stripe.stripeStrings.setup
+import typings.stripe.stripeStrings.subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,6 +48,10 @@ trait ICheckoutSession extends js.Object {
     */
   var locale: js.UndefOr[String] = js.undefined
   /**
+    * The mode of the Checkout Session, one of payment, setup, or subscription.
+    */
+  var mode: js.UndefOr[payment | setup | subscription] = js.undefined
+  /**
     * String of object type. Is always 'checkout.session'
     */
   var `object`: String
@@ -56,6 +63,10 @@ trait ICheckoutSession extends js.Object {
     * Array of accepted payment methods
     */
   var payment_method_types: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * The ID of the SetupIntent for Checkout Sessions in setup mode.
+    */
+  var setup_intent: js.UndefOr[String | Null] = js.undefined
   /**
     * ID of subscription if one was created [Expandable]
     */
@@ -80,8 +91,10 @@ object ICheckoutSession {
     customer: String | ICustomer = null,
     customer_email: String = null,
     locale: String = null,
+    mode: payment | setup | subscription = null,
     payment_intent: String | IPaymentIntent = null,
     payment_method_types: js.Array[String] = null,
+    setup_intent: String = null,
     subscription: String | ISubscription = null
   ): ICheckoutSession = {
     val __obj = js.Dynamic.literal(cancel_url = cancel_url, display_items = display_items, id = id, livemode = livemode, success_url = success_url)
@@ -91,8 +104,10 @@ object ICheckoutSession {
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email)
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent.asInstanceOf[js.Any])
     if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types)
+    if (setup_intent != null) __obj.updateDynamic("setup_intent")(setup_intent)
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckoutSession]
   }

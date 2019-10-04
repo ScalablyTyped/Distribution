@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksInstanceMod
 
-import typings.atPulumiAws.Anon_DeleteOnTerminationDeviceNameIopsSnapshotId
-import typings.atPulumiAws.Anon_DeleteOnTerminationIopsVolumeSize
-import typings.atPulumiAws.Anon_DeviceNameVirtualName
+import typings.atPulumiAws.typesInputMod.opsworksNs.InstanceEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.opsworksNs.InstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.opsworksNs.InstanceRootBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +37,7 @@ trait InstanceArgs extends js.Object {
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationDeviceNameIopsSnapshotId]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[InstanceEbsBlockDevice]]]] = js.undefined
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
@@ -48,7 +48,7 @@ trait InstanceArgs extends js.Object {
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeviceNameVirtualName]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[InstanceEphemeralBlockDevice]]]] = js.undefined
   /**
     * The instance's host name.
     */
@@ -101,7 +101,7 @@ trait InstanceArgs extends js.Object {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevices: js.UndefOr[Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSize]]]] = js.undefined
+  val rootBlockDevices: js.UndefOr[Input[js.Array[Input[InstanceRootBlockDevice]]]] = js.undefined
   /**
     * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
     */
@@ -154,11 +154,11 @@ object InstanceArgs {
     createdAt: Input[String] = null,
     deleteEbs: Input[Boolean] = null,
     deleteEip: Input[Boolean] = null,
-    ebsBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationDeviceNameIopsSnapshotId]]] = null,
+    ebsBlockDevices: Input[js.Array[Input[InstanceEbsBlockDevice]]] = null,
     ebsOptimized: Input[Boolean] = null,
     ecsClusterArn: Input[String] = null,
     elasticIp: Input[String] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[Anon_DeviceNameVirtualName]]] = null,
+    ephemeralBlockDevices: Input[js.Array[Input[InstanceEphemeralBlockDevice]]] = null,
     hostname: Input[String] = null,
     infrastructureClass: Input[String] = null,
     installUpdatesOnBoot: Input[Boolean] = null,
@@ -176,7 +176,7 @@ object InstanceArgs {
     reportedOsFamily: Input[String] = null,
     reportedOsName: Input[String] = null,
     reportedOsVersion: Input[String] = null,
-    rootBlockDevices: Input[js.Array[Input[Anon_DeleteOnTerminationIopsVolumeSize]]] = null,
+    rootBlockDevices: Input[js.Array[Input[InstanceRootBlockDevice]]] = null,
     rootDeviceType: Input[String] = null,
     rootDeviceVolumeId: Input[String] = null,
     securityGroupIds: Input[js.Array[Input[String]]] = null,

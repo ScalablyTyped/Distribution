@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appautoscalingPolicyMod
 
-import typings.atPulumiAws.Anon_AdjustmentTypeCooldown
-import typings.atPulumiAws.Anon_CustomizedMetricSpecificationDisableScaleIn
+import typings.atPulumiAws.typesInputMod.appautoscalingNs.PolicyStepScalingPolicyConfiguration
+import typings.atPulumiAws.typesInputMod.appautoscalingNs.PolicyTargetTrackingScalingPolicyConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,11 +32,11 @@ trait PolicyArgs extends js.Object {
   /**
     * Step scaling policy configuration, requires `policyType = "StepScaling"` (default). See supported fields below.
     */
-  val stepScalingPolicyConfiguration: js.UndefOr[Input[Anon_AdjustmentTypeCooldown]] = js.undefined
+  val stepScalingPolicyConfiguration: js.UndefOr[Input[PolicyStepScalingPolicyConfiguration]] = js.undefined
   /**
     * A target tracking policy, requires `policyType = "TargetTrackingScaling"`. See supported fields below.
     */
-  val targetTrackingScalingPolicyConfiguration: js.UndefOr[Input[Anon_CustomizedMetricSpecificationDisableScaleIn]] = js.undefined
+  val targetTrackingScalingPolicyConfiguration: js.UndefOr[Input[PolicyTargetTrackingScalingPolicyConfiguration]] = js.undefined
 }
 
 object PolicyArgs {
@@ -48,8 +48,8 @@ object PolicyArgs {
     alarms: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
     policyType: Input[String] = null,
-    stepScalingPolicyConfiguration: Input[Anon_AdjustmentTypeCooldown] = null,
-    targetTrackingScalingPolicyConfiguration: Input[Anon_CustomizedMetricSpecificationDisableScaleIn] = null
+    stepScalingPolicyConfiguration: Input[PolicyStepScalingPolicyConfiguration] = null,
+    targetTrackingScalingPolicyConfiguration: Input[PolicyTargetTrackingScalingPolicyConfiguration] = null
   ): PolicyArgs = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], scalableDimension = scalableDimension.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
     if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])

@@ -20,7 +20,7 @@ trait WorldMapProps extends js.Object {
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var hoverColor: js.UndefOr[String | Anon_Dark] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var onSelectPlace: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Array[Double], Unit]] = js.undefined
   var places: js.UndefOr[js.Array[Anon_ArgsColorLocation]] = js.undefined
 }
 
@@ -34,7 +34,7 @@ object WorldMapProps {
     gridArea: GridAreaType = null,
     hoverColor: String | Anon_Dark = null,
     margin: MarginType = null,
-    onSelectPlace: /* repeated */ js.Any => _ = null,
+    onSelectPlace: /* place */ js.Array[Double] => Unit = null,
     places: js.Array[Anon_ArgsColorLocation] = null
   ): WorldMapProps = {
     val __obj = js.Dynamic.literal()

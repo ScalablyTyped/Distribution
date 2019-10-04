@@ -2,56 +2,57 @@ package typings.grommet.componentsKeyboardMod
 
 import typings.grommet.grommetStrings.component
 import typings.grommet.grommetStrings.document
+import typings.grommet.utilsMod.KeyboardType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KeyboardProps extends js.Object {
-  var onBackspace: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onComma: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onDown: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onEnter: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onEsc: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onLeft: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onRight: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onShift: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onSpace: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onTab: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onUp: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onBackspace: js.UndefOr[KeyboardType] = js.undefined
+  var onComma: js.UndefOr[KeyboardType] = js.undefined
+  var onDown: js.UndefOr[KeyboardType] = js.undefined
+  var onEnter: js.UndefOr[KeyboardType] = js.undefined
+  var onEsc: js.UndefOr[KeyboardType] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardType] = js.undefined
+  var onLeft: js.UndefOr[KeyboardType] = js.undefined
+  var onRight: js.UndefOr[KeyboardType] = js.undefined
+  var onShift: js.UndefOr[KeyboardType] = js.undefined
+  var onSpace: js.UndefOr[KeyboardType] = js.undefined
+  var onTab: js.UndefOr[KeyboardType] = js.undefined
+  var onUp: js.UndefOr[KeyboardType] = js.undefined
   var target: js.UndefOr[component | document] = js.undefined
 }
 
 object KeyboardProps {
   @scala.inline
   def apply(
-    onBackspace: /* repeated */ js.Any => _ = null,
-    onComma: /* repeated */ js.Any => _ = null,
-    onDown: /* repeated */ js.Any => _ = null,
-    onEnter: /* repeated */ js.Any => _ = null,
-    onEsc: /* repeated */ js.Any => _ = null,
-    onKeyDown: /* repeated */ js.Any => _ = null,
-    onLeft: /* repeated */ js.Any => _ = null,
-    onRight: /* repeated */ js.Any => _ = null,
-    onShift: /* repeated */ js.Any => _ = null,
-    onSpace: /* repeated */ js.Any => _ = null,
-    onTab: /* repeated */ js.Any => _ = null,
-    onUp: /* repeated */ js.Any => _ = null,
+    onBackspace: KeyboardType = null,
+    onComma: KeyboardType = null,
+    onDown: KeyboardType = null,
+    onEnter: KeyboardType = null,
+    onEsc: KeyboardType = null,
+    onKeyDown: KeyboardType = null,
+    onLeft: KeyboardType = null,
+    onRight: KeyboardType = null,
+    onShift: KeyboardType = null,
+    onSpace: KeyboardType = null,
+    onTab: KeyboardType = null,
+    onUp: KeyboardType = null,
     target: component | document = null
   ): KeyboardProps = {
     val __obj = js.Dynamic.literal()
-    if (onBackspace != null) __obj.updateDynamic("onBackspace")(js.Any.fromFunction1(onBackspace))
-    if (onComma != null) __obj.updateDynamic("onComma")(js.Any.fromFunction1(onComma))
-    if (onDown != null) __obj.updateDynamic("onDown")(js.Any.fromFunction1(onDown))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
-    if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1(onEsc))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onLeft != null) __obj.updateDynamic("onLeft")(js.Any.fromFunction1(onLeft))
-    if (onRight != null) __obj.updateDynamic("onRight")(js.Any.fromFunction1(onRight))
-    if (onShift != null) __obj.updateDynamic("onShift")(js.Any.fromFunction1(onShift))
-    if (onSpace != null) __obj.updateDynamic("onSpace")(js.Any.fromFunction1(onSpace))
-    if (onTab != null) __obj.updateDynamic("onTab")(js.Any.fromFunction1(onTab))
-    if (onUp != null) __obj.updateDynamic("onUp")(js.Any.fromFunction1(onUp))
+    if (onBackspace != null) __obj.updateDynamic("onBackspace")(onBackspace)
+    if (onComma != null) __obj.updateDynamic("onComma")(onComma)
+    if (onDown != null) __obj.updateDynamic("onDown")(onDown)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onEsc != null) __obj.updateDynamic("onEsc")(onEsc)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onLeft != null) __obj.updateDynamic("onLeft")(onLeft)
+    if (onRight != null) __obj.updateDynamic("onRight")(onRight)
+    if (onShift != null) __obj.updateDynamic("onShift")(onShift)
+    if (onSpace != null) __obj.updateDynamic("onSpace")(onSpace)
+    if (onTab != null) __obj.updateDynamic("onTab")(onTab)
+    if (onUp != null) __obj.updateDynamic("onUp")(onUp)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardProps]
   }

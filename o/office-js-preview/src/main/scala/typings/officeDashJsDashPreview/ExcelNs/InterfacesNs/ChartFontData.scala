@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartFont.toJSON()". */
+/** An interface describing the data returned by calling `chartFont.toJSON()`. */
 trait ChartFontData extends js.Object {
   /**
     *

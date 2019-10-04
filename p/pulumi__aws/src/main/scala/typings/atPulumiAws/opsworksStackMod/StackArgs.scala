@@ -1,7 +1,7 @@
 package typings.atPulumiAws.opsworksStackMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_PasswordRevisionSshKeyTypeUrl
+import typings.atPulumiAws.typesInputMod.opsworksNs.StackCustomCookbooksSource
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ trait StackArgs extends js.Object {
     * When `useCustomCookbooks` is set, provide this sub-object as
     * described below.
     */
-  val customCookbooksSources: js.UndefOr[Input[js.Array[Input[Anon_PasswordRevisionSshKeyTypeUrl]]]] = js.undefined
+  val customCookbooksSources: js.UndefOr[Input[js.Array[Input[StackCustomCookbooksSource]]]] = js.undefined
   /**
     * Custom JSON attributes to apply to the entire stack.
     */
@@ -116,7 +116,7 @@ object StackArgs {
     color: Input[String] = null,
     configurationManagerName: Input[String] = null,
     configurationManagerVersion: Input[String] = null,
-    customCookbooksSources: Input[js.Array[Input[Anon_PasswordRevisionSshKeyTypeUrl]]] = null,
+    customCookbooksSources: Input[js.Array[Input[StackCustomCookbooksSource]]] = null,
     customJson: Input[String] = null,
     defaultAvailabilityZone: Input[String] = null,
     defaultOs: Input[String] = null,

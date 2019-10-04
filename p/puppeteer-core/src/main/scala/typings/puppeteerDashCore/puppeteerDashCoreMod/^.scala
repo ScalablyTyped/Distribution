@@ -1,5 +1,7 @@
 package typings.puppeteerDashCore.puppeteerDashCoreMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.puppeteer.deviceDescriptorsMod.Device
 import typings.puppeteer.puppeteerMod.Browser
 import typings.puppeteer.puppeteerMod.BrowserFetcher
 import typings.puppeteer.puppeteerMod.ChromeArgOptions
@@ -13,6 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("puppeteer-core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val devices: js.Array[Device] with StringDictionary[Device] = js.native
   def connect(): js.Promise[Browser] = js.native
   def connect(options: ConnectOptions): js.Promise[Browser] = js.native
   def createBrowserFetcher(): BrowserFetcher = js.native

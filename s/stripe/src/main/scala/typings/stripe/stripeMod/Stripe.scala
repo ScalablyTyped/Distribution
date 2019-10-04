@@ -1,5 +1,6 @@
 package typings.stripe.stripeMod
 
+import typings.node.httpMod.Agent
 import typings.stripe.Anon_Bindingsversion
 import typings.stripe.Anon_NamePartnerid
 import typings.stripe.stripeMod.resourcesNs.Accounts
@@ -111,7 +112,7 @@ trait Stripe extends js.Object {
   def setHost(host: String, port: String, protocol: String): Unit = js.native
   def setHost(host: String, port: Double): Unit = js.native
   def setHost(host: String, port: Double, protocol: String): Unit = js.native
-  def setHttpAgent(agent: String): Unit = js.native
+  def setHttpAgent(agent: Agent): Unit = js.native
   def setMaxNetworkRetries(maxNetworkRetries: Double): Unit = js.native
   def setPort(port: String): Unit = js.native
   def setPort(port: Double): Unit = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "tableSort.toJSON()". */
+/** An interface describing the data returned by calling `tableSort.toJSON()`. */
 trait TableSortData extends js.Object {
   /**
     *

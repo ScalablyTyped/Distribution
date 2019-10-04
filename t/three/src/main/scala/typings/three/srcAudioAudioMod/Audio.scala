@@ -3,7 +3,8 @@ package typings.three.srcAudioAudioMod
 import typings.std.AudioBufferSourceNode
 import typings.std.AudioContext
 import typings.std.GainNode
-import typings.std.MediaElementAudioSourceNode
+import typings.std.HTMLMediaElement
+import typings.std.MediaStream
 import typings.three.srcAudioAudioListenerMod.AudioListener
 import typings.three.srcCoreObject3DMod.Object3D
 import scala.scalajs.js
@@ -18,6 +19,7 @@ class Audio protected () extends Object3D {
   var buffer: Null | Audio = js.native
   var context: AudioContext = js.native
   var detune: Double = js.native
+  var duration: js.UndefOr[Double] = js.native
   var filters: js.Array[_] = js.native
   var gain: GainNode = js.native
   var hasPlaybackControl: Boolean = js.native
@@ -51,7 +53,8 @@ class Audio protected () extends Object3D {
   def setFilter(filter: js.Any): this.type = js.native
   def setFilter(value: js.Array[_]): this.type = js.native
   def setLoop(value: Boolean): Unit = js.native
-  def setMediaElementSource(mediaElement: MediaElementAudioSourceNode): this.type = js.native
+  def setMediaElementSource(mediaElement: HTMLMediaElement): this.type = js.native
+  def setMediaStreamSource(mediaStream: MediaStream): this.type = js.native
   def setNodeSource(audioNode: AudioBufferSourceNode): this.type = js.native
   def setPlaybackRate(value: Double): this.type = js.native
   def setVolume(value: Double): this.type = js.native

@@ -8,6 +8,8 @@ import typings.three.srcConstantsMod.Colors
 import typings.three.srcConstantsMod.Combine
 import typings.three.srcConstantsMod.DepthModes
 import typings.three.srcConstantsMod.Side
+import typings.three.srcConstantsMod.StencilFunc
+import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathColorMod.Color
 import typings.three.srcMathPlaneMod.Plane
@@ -20,18 +22,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MeshBasicMaterialParameters extends MaterialParameters {
-  var alphaMap: js.UndefOr[Texture] = js.undefined
-  var aoMap: js.UndefOr[Texture] = js.undefined
+  var alphaMap: js.UndefOr[Texture | Null] = js.undefined
+  var aoMap: js.UndefOr[Texture | Null] = js.undefined
   var aoMapIntensity: js.UndefOr[Double] = js.undefined
   var color: js.UndefOr[Color | String | Double] = js.undefined
   var combine: js.UndefOr[Combine] = js.undefined
-  var envMap: js.UndefOr[Texture] = js.undefined
-  var map: js.UndefOr[Texture] = js.undefined
+  var envMap: js.UndefOr[Texture | Null] = js.undefined
+  var map: js.UndefOr[Texture | Null] = js.undefined
   var morphTargets: js.UndefOr[Boolean] = js.undefined
   var reflectivity: js.UndefOr[Double] = js.undefined
   var refractionRatio: js.UndefOr[Double] = js.undefined
   var skinning: js.UndefOr[Boolean] = js.undefined
-  var specularMap: js.UndefOr[Texture] = js.undefined
+  var specularMap: js.UndefOr[Texture | Null] = js.undefined
   var wireframe: js.UndefOr[Boolean] = js.undefined
   var wireframeLinecap: js.UndefOr[String] = js.undefined
   var wireframeLinejoin: js.UndefOr[String] = js.undefined
@@ -65,7 +67,6 @@ object MeshBasicMaterialParameters {
     envMap: Texture = null,
     flatShading: js.UndefOr[Boolean] = js.undefined,
     fog: js.UndefOr[Boolean] = js.undefined,
-    lights: js.UndefOr[Boolean] = js.undefined,
     map: Texture = null,
     morphTargets: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
@@ -82,6 +83,14 @@ object MeshBasicMaterialParameters {
     side: Side = null,
     skinning: js.UndefOr[Boolean] = js.undefined,
     specularMap: Texture = null,
+    stencilFail: StencilOp = null,
+    stencilFunc: StencilFunc = null,
+    stencilMask: Int | Double = null,
+    stencilRef: Int | Double = null,
+    stencilWrite: js.UndefOr[Boolean] = js.undefined,
+    stencilZFail: StencilOp = null,
+    stencilZPass: StencilOp = null,
+    toneMapped: js.UndefOr[Boolean] = js.undefined,
     transparent: js.UndefOr[Boolean] = js.undefined,
     vertexColors: Colors = null,
     vertexTangents: js.UndefOr[Boolean] = js.undefined,
@@ -116,7 +125,6 @@ object MeshBasicMaterialParameters {
     if (envMap != null) __obj.updateDynamic("envMap")(envMap)
     if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading)
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
-    if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
     if (map != null) __obj.updateDynamic("map")(map)
     if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets)
     if (name != null) __obj.updateDynamic("name")(name)
@@ -133,6 +141,14 @@ object MeshBasicMaterialParameters {
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
     if (specularMap != null) __obj.updateDynamic("specularMap")(specularMap)
+    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail)
+    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc)
+    if (stencilMask != null) __obj.updateDynamic("stencilMask")(stencilMask.asInstanceOf[js.Any])
+    if (stencilRef != null) __obj.updateDynamic("stencilRef")(stencilRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite)
+    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail)
+    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass)
+    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents)

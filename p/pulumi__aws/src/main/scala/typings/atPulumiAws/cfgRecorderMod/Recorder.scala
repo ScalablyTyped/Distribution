@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgRecorderMod
 
-import typings.atPulumiAws.Anon_AllSupported
+import typings.atPulumiAws.typesOutputMod.cfgNs.RecorderRecordingGroup
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class Recorder protected () extends CustomResource {
   /**
     * Recording group - see below.
     */
-  val recordingGroup: Output[Anon_AllSupported] = js.native
+  val recordingGroup: Output[RecorderRecordingGroup] = js.native
   /**
     * Amazon Resource Name (ARN) of the IAM role.
     * used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account.

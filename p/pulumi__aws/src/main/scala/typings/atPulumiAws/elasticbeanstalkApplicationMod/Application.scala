@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticbeanstalkApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteSourceFromS3
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.ApplicationAppversionLifecycle
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -24,7 +24,7 @@ class Application protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: ApplicationArgs) = this()
   def this(name: String, args: ApplicationArgs, opts: CustomResourceOptions) = this()
-  val appversionLifecycle: Output[js.UndefOr[Anon_DeleteSourceFromS3]] = js.native
+  val appversionLifecycle: Output[js.UndefOr[ApplicationAppversionLifecycle]] = js.native
   /**
     * The ARN assigned by AWS for this Elastic Beanstalk Application.
     */

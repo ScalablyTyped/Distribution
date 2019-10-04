@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSEvalable extends js.Object {
+trait JSEvalable[A] extends js.Object {
   /**
     * Evaluates a function in the browser context.
     * If the function, passed to the frame.evaluate, returns a Promise, then frame.evaluate would wait for the promise to resolve and return its value.
@@ -12,7 +12,7 @@ trait JSEvalable extends js.Object {
     * @param fn Function to be evaluated in browser context
     * @param args Arguments to pass to `fn`
     */
-  def evaluate[T /* <: EvaluateFn */](pageFunction: T, args: SerializableOrJSHandle*): js.Promise[EvaluateFnReturnType[T]]
+  def evaluate[T /* <: EvaluateFn[A] */](pageFunction: T, args: SerializableOrJSHandle*): js.Promise[EvaluateFnReturnType[T]]
   /**
     * The only difference between `evaluate` and `evaluateHandle` is that `evaluateHandle` returns in-page object (`JSHandle`).
     * If the function, passed to the `evaluateHandle`, returns a `Promise`, then `evaluateHandle` would wait for the
@@ -20,18 +20,18 @@ trait JSEvalable extends js.Object {
     * @param fn Function to be evaluated in browser context
     * @param args Arguments to pass to `fn`
     */
-  def evaluateHandle(pageFunction: js.Function1[/* repeated */ js.Any, _], args: SerializableOrJSHandle*): js.Promise[JSHandle]
+  def evaluateHandle(pageFunction: js.Function2[/* arg1 */ A, /* repeated */ js.Any, _], args: SerializableOrJSHandle*): js.Promise[JSHandle[_]]
 }
 
 object JSEvalable {
   @scala.inline
-  def apply(
+  def apply[A](
     evaluate: (js.Any, /* repeated */ SerializableOrJSHandle) => js.Promise[EvaluateFnReturnType[js.Any]],
-    evaluateHandle: (js.Function1[/* repeated */ js.Any, _], /* repeated */ SerializableOrJSHandle) => js.Promise[JSHandle]
-  ): JSEvalable = {
+    evaluateHandle: (js.Function2[/* arg1 */ A, /* repeated */ js.Any, _], /* repeated */ SerializableOrJSHandle) => js.Promise[JSHandle[_]]
+  ): JSEvalable[A] = {
     val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction2(evaluate), evaluateHandle = js.Any.fromFunction2(evaluateHandle))
   
-    __obj.asInstanceOf[JSEvalable]
+    __obj.asInstanceOf[JSEvalable[A]]
   }
 }
 

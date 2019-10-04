@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetNatGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetNatGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetNatGatewayArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetNatGatewayFilter]] = js.undefined
   /**
     * The id of the specific Nat Gateway to retrieve.
     */
@@ -37,7 +37,7 @@ trait GetNatGatewayArgs extends js.Object {
 object GetNatGatewayArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetNatGatewayFilter] = null,
     id: String = null,
     state: String = null,
     subnetId: String = null,

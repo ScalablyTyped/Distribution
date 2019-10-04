@@ -1,7 +1,7 @@
 package typings.atPulumiAws.getElasticIpMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.GetElasticIpFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait GetElasticIpResult extends js.Object {
     * Indicates whether the address is for use in EC2-Classic (standard) or in a VPC (vpc).
     */
   val domain: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetElasticIpFilter]] = js.undefined
   /**
     * If VPC Elastic IP, the allocation identifier. If EC2-Classic Elastic IP, the public IP address.
     */
@@ -73,7 +73,7 @@ object GetElasticIpResult {
     publicIp: String,
     publicIpv4Pool: String,
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetElasticIpFilter] = null
   ): GetElasticIpResult = {
     val __obj = js.Dynamic.literal(associationId = associationId, domain = domain, id = id, instanceId = instanceId, networkInterfaceId = networkInterfaceId, networkInterfaceOwnerId = networkInterfaceOwnerId, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, publicIpv4Pool = publicIpv4Pool, tags = tags)
     if (filters != null) __obj.updateDynamic("filters")(filters)

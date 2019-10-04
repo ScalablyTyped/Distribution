@@ -6,29 +6,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aurelia-dependency-injection", "Lazy")
 @js.native
-class Lazy protected () extends js.Object {
-  /**
-    * Creates an instance of the Lazy class.
-    * @param key The key to lazily resolve.
-    */
-  def this(key: js.Any) = this()
-  /**
-    * Called by the container to lazily resolve the dependency into a lazy locator function.
-    * @param container The container to resolve from.
-    * @return Returns a function which can be invoked at a later time to obtain the actual dependency.
-    */
-  def get(container: Container): js.Any = js.native
+class Lazy[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends js.Object {
+  def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
+  def get(container: Container): js.Function0[ImplOrAny[TImpl]] = js.native
 }
 
 /* static members */
 @JSImport("aurelia-dependency-injection", "Lazy")
 @js.native
 object Lazy extends js.Object {
-  /**
-    * Creates a Lazy Resolver for the supplied key.
-    * @param key The key to lazily resolve.
-    * @return Returns an instance of Lazy for the key.
-    */
-  def of(key: js.Any): Lazy = js.native
+  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Lazy[TBase, TImpl, TArgs] = js.native
 }
 

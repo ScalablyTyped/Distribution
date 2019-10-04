@@ -112,6 +112,11 @@ object AnimatedNs extends js.Object {
   
   trait LoopAnimationConfig extends js.Object {
     var iterations: js.UndefOr[Double] = js.undefined
+     // default -1 for infinite
+    /**
+      * Defaults to `true`
+      */
+    var resetBeforeIteration: js.UndefOr[Boolean] = js.undefined
   }
   
   trait ParallelConfig extends js.Object {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xmldsigjs"
-version := "2.0.25-423cfb"
+version := "2.0.26-dac23c"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

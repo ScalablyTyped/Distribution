@@ -25,6 +25,12 @@ object dvaStrings {
   sealed trait throttle extends EffectType
   
   @js.native
+  sealed trait useParams extends js.Object
+  
+  @js.native
+  sealed trait useRouteMatch extends js.Object
+  
+  @js.native
   sealed trait watcher extends EffectType
   
   @scala.inline
@@ -39,6 +45,10 @@ object dvaStrings {
   def takeLatest: takeLatest = "takeLatest".asInstanceOf[takeLatest]
   @scala.inline
   def throttle: throttle = "throttle".asInstanceOf[throttle]
+  @scala.inline
+  def useParams: useParams = "useParams".asInstanceOf[useParams]
+  @scala.inline
+  def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
   @scala.inline
   def watcher: watcher = "watcher".asInstanceOf[watcher]
 }

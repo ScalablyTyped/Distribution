@@ -1,11 +1,11 @@
 package typings.atPulumiAws.route53RecordMod
 
-import typings.atPulumiAws.Anon_ContinentCountry
-import typings.atPulumiAws.Anon_EvaluateTargetHealthName
-import typings.atPulumiAws.Anon_RegionInput
-import typings.atPulumiAws.Anon_TypeInputString
-import typings.atPulumiAws.Anon_WeightInput
 import typings.atPulumiAws.route53RecordTypeMod.RecordType
+import typings.atPulumiAws.typesInputMod.route53Ns.RecordAlias
+import typings.atPulumiAws.typesInputMod.route53Ns.RecordFailoverRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53Ns.RecordGeolocationRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53Ns.RecordLatencyRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53Ns.RecordWeightedRoutingPolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait RecordState extends js.Object {
     * An alias block. Conflicts with `ttl` & `records`.
     * Alias record documented below.
     */
-  val aliases: js.UndefOr[Input[js.Array[Input[Anon_EvaluateTargetHealthName]]]] = js.undefined
+  val aliases: js.UndefOr[Input[js.Array[Input[RecordAlias]]]] = js.undefined
   /**
     * Allow creation of this record to overwrite an existing record, if any. This does not affect the ability to update the record using this provider and does not prevent other resources within this provider or manual Route 53 changes outside this provider from overwriting this record. `false` by default. This configuration is not recommended for most environments.
     */
@@ -24,7 +24,7 @@ trait RecordState extends js.Object {
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
     */
-  val failoverRoutingPolicies: js.UndefOr[Input[js.Array[Input[Anon_TypeInputString]]]] = js.undefined
+  val failoverRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordFailoverRoutingPolicy]]]] = js.undefined
   /**
     * [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) built using the zone domain and `name`.
     */
@@ -32,7 +32,7 @@ trait RecordState extends js.Object {
   /**
     * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
     */
-  val geolocationRoutingPolicies: js.UndefOr[Input[js.Array[Input[Anon_ContinentCountry]]]] = js.undefined
+  val geolocationRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordGeolocationRoutingPolicy]]]] = js.undefined
   /**
     * The health check the record should be associated with.
     */
@@ -40,7 +40,7 @@ trait RecordState extends js.Object {
   /**
     * A block indicating a routing policy based on the latency between the requestor and an AWS region. Conflicts with any other routing policy. Documented below.
     */
-  val latencyRoutingPolicies: js.UndefOr[Input[js.Array[Input[Anon_RegionInput]]]] = js.undefined
+  val latencyRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordLatencyRoutingPolicy]]]] = js.undefined
   /**
     * Set to `true` to indicate a multivalue answer routing policy. Conflicts with any other routing policy.
     */
@@ -68,7 +68,7 @@ trait RecordState extends js.Object {
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */
-  val weightedRoutingPolicies: js.UndefOr[Input[js.Array[Input[Anon_WeightInput]]]] = js.undefined
+  val weightedRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordWeightedRoutingPolicy]]]] = js.undefined
   /**
     * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.
     */
@@ -78,20 +78,20 @@ trait RecordState extends js.Object {
 object RecordState {
   @scala.inline
   def apply(
-    aliases: Input[js.Array[Input[Anon_EvaluateTargetHealthName]]] = null,
+    aliases: Input[js.Array[Input[RecordAlias]]] = null,
     allowOverwrite: Input[Boolean] = null,
-    failoverRoutingPolicies: Input[js.Array[Input[Anon_TypeInputString]]] = null,
+    failoverRoutingPolicies: Input[js.Array[Input[RecordFailoverRoutingPolicy]]] = null,
     fqdn: Input[String] = null,
-    geolocationRoutingPolicies: Input[js.Array[Input[Anon_ContinentCountry]]] = null,
+    geolocationRoutingPolicies: Input[js.Array[Input[RecordGeolocationRoutingPolicy]]] = null,
     healthCheckId: Input[String] = null,
-    latencyRoutingPolicies: Input[js.Array[Input[Anon_RegionInput]]] = null,
+    latencyRoutingPolicies: Input[js.Array[Input[RecordLatencyRoutingPolicy]]] = null,
     multivalueAnswerRoutingPolicy: Input[Boolean] = null,
     name: Input[String] = null,
     records: Input[js.Array[Input[String]]] = null,
     setIdentifier: Input[String] = null,
     ttl: Input[Double] = null,
     `type`: Input[String | RecordType] = null,
-    weightedRoutingPolicies: Input[js.Array[Input[Anon_WeightInput]]] = null,
+    weightedRoutingPolicies: Input[js.Array[Input[RecordWeightedRoutingPolicy]]] = null,
     zoneId: Input[String] = null
   ): RecordState = {
     val __obj = js.Dynamic.literal()

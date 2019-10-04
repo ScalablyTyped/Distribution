@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorEndpointGroupMod
 
-import typings.atPulumiAws.Anon_EndpointIdWeight
+import typings.atPulumiAws.typesInputMod.globalacceleratorNs.EndpointGroupEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait EndpointGroupArgs extends js.Object {
   /**
     * The list of endpoint objects. Fields documented below.
     */
-  val endpointConfigurations: js.UndefOr[Input[js.Array[Input[Anon_EndpointIdWeight]]]] = js.undefined
+  val endpointConfigurations: js.UndefOr[Input[js.Array[Input[EndpointGroupEndpointConfiguration]]]] = js.undefined
   val endpointGroupRegion: js.UndefOr[Input[String]] = js.undefined
   /**
     * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.
@@ -46,7 +46,7 @@ object EndpointGroupArgs {
   @scala.inline
   def apply(
     listenerArn: Input[String],
-    endpointConfigurations: Input[js.Array[Input[Anon_EndpointIdWeight]]] = null,
+    endpointConfigurations: Input[js.Array[Input[EndpointGroupEndpointConfiguration]]] = null,
     endpointGroupRegion: Input[String] = null,
     healthCheckIntervalSeconds: Input[Double] = null,
     healthCheckPath: Input[String] = null,

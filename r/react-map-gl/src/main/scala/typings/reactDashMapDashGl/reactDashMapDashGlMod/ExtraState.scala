@@ -5,15 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExtraState extends js.Object {
-  var isDragging: Boolean
-  var isHovering: Boolean
+  var inTransition: js.UndefOr[Boolean] = js.undefined
+  var isDragging: js.UndefOr[Boolean] = js.undefined
+  var isHovering: js.UndefOr[Boolean] = js.undefined
+  var isPanning: js.UndefOr[Boolean] = js.undefined
+  var isRotating: js.UndefOr[Boolean] = js.undefined
+  var isZooming: js.UndefOr[Boolean] = js.undefined
 }
 
 object ExtraState {
   @scala.inline
-  def apply(isDragging: Boolean, isHovering: Boolean): ExtraState = {
-    val __obj = js.Dynamic.literal(isDragging = isDragging, isHovering = isHovering)
-  
+  def apply(
+    inTransition: js.UndefOr[Boolean] = js.undefined,
+    isDragging: js.UndefOr[Boolean] = js.undefined,
+    isHovering: js.UndefOr[Boolean] = js.undefined,
+    isPanning: js.UndefOr[Boolean] = js.undefined,
+    isRotating: js.UndefOr[Boolean] = js.undefined,
+    isZooming: js.UndefOr[Boolean] = js.undefined
+  ): ExtraState = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(inTransition)) __obj.updateDynamic("inTransition")(inTransition)
+    if (!js.isUndefined(isDragging)) __obj.updateDynamic("isDragging")(isDragging)
+    if (!js.isUndefined(isHovering)) __obj.updateDynamic("isHovering")(isHovering)
+    if (!js.isUndefined(isPanning)) __obj.updateDynamic("isPanning")(isPanning)
+    if (!js.isUndefined(isRotating)) __obj.updateDynamic("isRotating")(isRotating)
+    if (!js.isUndefined(isZooming)) __obj.updateDynamic("isZooming")(isZooming)
     __obj.asInstanceOf[ExtraState]
   }
 }

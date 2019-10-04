@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafIpSetMod
 
-import typings.atPulumiAws.Anon_TypeValueInputString
+import typings.atPulumiAws.typesInputMod.wafNs.IpSetIpSetDescriptor
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait IpSetState extends js.Object {
   /**
     * One or more pairs specifying the IP address type (IPV4 or IPV6) and the IP address range (in CIDR format) from which web requests originate.
     */
-  val ipSetDescriptors: js.UndefOr[Input[js.Array[Input[Anon_TypeValueInputString]]]] = js.undefined
+  val ipSetDescriptors: js.UndefOr[Input[js.Array[Input[IpSetIpSetDescriptor]]]] = js.undefined
   /**
     * The name or description of the IPSet.
     */
@@ -25,7 +25,7 @@ object IpSetState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
-    ipSetDescriptors: Input[js.Array[Input[Anon_TypeValueInputString]]] = null,
+    ipSetDescriptors: Input[js.Array[Input[IpSetIpSetDescriptor]]] = null,
     name: Input[String] = null
   ): IpSetState = {
     val __obj = js.Dynamic.literal()

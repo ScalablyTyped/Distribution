@@ -1,6 +1,6 @@
 package typings.atPulumiAws.organizationsOrganizationalUnitMod
 
-import typings.atPulumiAws.Anon_ArnEmailId
+import typings.atPulumiAws.typesInputMod.organizationsNs.OrganizationalUnitAccount
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait OrganizationalUnitState extends js.Object {
   /**
     * List of child accounts for this Organizational Unit. Does not return account information for child Organizational Units. All elements have these attributes:
     */
-  val accounts: js.UndefOr[Input[js.Array[Input[Anon_ArnEmailId]]]] = js.undefined
+  val accounts: js.UndefOr[Input[js.Array[Input[OrganizationalUnitAccount]]]] = js.undefined
   /**
     * ARN of the organizational unit
     */
@@ -28,7 +28,7 @@ trait OrganizationalUnitState extends js.Object {
 object OrganizationalUnitState {
   @scala.inline
   def apply(
-    accounts: Input[js.Array[Input[Anon_ArnEmailId]]] = null,
+    accounts: Input[js.Array[Input[OrganizationalUnitAccount]]] = null,
     arn: Input[String] = null,
     name: Input[String] = null,
     parentId: Input[String] = null

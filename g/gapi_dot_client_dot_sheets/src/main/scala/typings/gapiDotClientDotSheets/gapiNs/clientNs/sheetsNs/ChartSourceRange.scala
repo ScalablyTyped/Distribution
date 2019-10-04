@@ -12,7 +12,8 @@ trait ChartSourceRange extends js.Object {
     * with length 1.
     * The domain (if it exists) & all series must have the same number
     * of source ranges. If using more than one source range, then the source
-    * range at a given offset must be contiguous across the domain and series.
+    * range at a given offset must be in order and contiguous across the domain
+    * and series.
     *
     * For example, these are valid configurations:
     *

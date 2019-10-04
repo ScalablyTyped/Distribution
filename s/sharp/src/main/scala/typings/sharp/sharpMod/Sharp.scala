@@ -46,6 +46,8 @@ trait Sharp extends Duplex {
   def boolean(operand: String, operator: String, options: Anon_Raw): Sharp = js.native
   def boolean(operand: Buffer, operator: String): Sharp = js.native
   def boolean(operand: Buffer, operator: String, options: Anon_Raw): Sharp = js.native
+  //#endregion
+  //#region Composite functions
   /**
     * Composite image(s) over the processed (resized, extracted etc.) image.
     *
@@ -243,26 +245,6 @@ trait Sharp extends Duplex {
     */
   def normalize(): Sharp = js.native
   def normalize(normalize: Boolean): Sharp = js.native
-  //#endregion
-  //#region Composite functions
-  /**
-    * Overlay (composite) an image over the processed (resized, extracted etc.) image.
-    *
-    * The overlay image must be the same size or smaller than the processed image.
-    * If both top and left options are provided, they take precedence over gravity.
-    *
-    * If the overlay image contains an alpha channel then composition with premultiplication will occur.
-    * @param image Buffer containing image data or String containing the path to an image file.
-    * @param options overlay options
-    * @throws {Error} Invalid parameters
-    * @returns A sharp instance that can be used to chain operations
-    * @deprecated
-    */
-  def overlayWith(): Sharp = js.native
-  def overlayWith(image: String): Sharp = js.native
-  def overlayWith(image: String, options: OverlayOptions): Sharp = js.native
-  def overlayWith(image: Buffer): Sharp = js.native
-  def overlayWith(image: Buffer, options: OverlayOptions): Sharp = js.native
   /**
     * Use these PNG options for output image.
     * PNG output is always full colour at 8 or 16 bits per pixel.

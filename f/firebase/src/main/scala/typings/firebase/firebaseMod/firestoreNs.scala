@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebase.Anon_Complete
 import typings.firebase.Anon_CompleteError
 import typings.firebase.Anon_CompleteErrorNext
+import typings.firebase.Anon_CompleteErrorNextSnapshot
 import typings.firebase.Anon_Delete
 import typings.firebase.firebaseMod.appNs.App
 import typings.firebase.firebaseMod.firestoreNs.Blob
@@ -214,7 +215,7 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
-    def onSnapshot(observer: Anon_Complete): js.Function0[Unit] = js.native
+    def onSnapshot(observer: Anon_CompleteError): js.Function0[Unit] = js.native
     /**
       * Attaches a listener for DocumentSnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -253,7 +254,7 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
-    def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteError): js.Function0[Unit] = js.native
+    def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNext): js.Function0[Unit] = js.native
     /**
       * Attaches a listener for DocumentSnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -529,6 +530,37 @@ object firestoreNs extends js.Object {
     def enablePersistence(): js.Promise[Unit] = js.native
     def enablePersistence(settings: PersistenceSettings): js.Promise[Unit] = js.native
     /**
+      * Attaches a listener for a snapshots-in-sync event. The snapshots-in-sync
+      * event indicates that all listeners affected by a given change have fired,
+      * even if a single server-generated change affects multiple listeners.
+      *
+      * NOTE: The snapshots-in-sync event only indicates that listeners are in sync
+      * with each other, but does not relate to whether those snapshots are in sync
+      * with the server. Use SnapshotMetadata in the individual listeners to
+      * determine if a snapshot is from the cache or the server.
+      *
+      * @param observer A single object containing `next` and `error` callbacks.
+      * @return An unsubscribe function that can be called to cancel the snapshot
+      * listener.
+      */
+    def onSnapshotsInSync(observer: Anon_Complete): js.Function0[Unit] = js.native
+    /**
+      * Attaches a listener for a snapshots-in-sync event. The snapshots-in-sync
+      * event indicates that all listeners affected by a given change have fired,
+      * even if a single server-generated change affects multiple listeners.
+      *
+      * NOTE: The snapshots-in-sync event only indicates that listeners are in sync
+      * with each other, but does not relate to whether those snapshots are in sync
+      * with the server. Use SnapshotMetadata in the individual listeners to
+      * determine if a snapshot is from the cache or the server.
+      *
+      * @param onSync A callback to be called every time all snapshot listeners are
+      * in sync with each other.
+      * @return An unsubscribe function that can be called to cancel the snapshot
+      * listener.
+      */
+    def onSnapshotsInSync(onSync: js.Function0[Unit]): js.Function0[Unit] = js.native
+    /**
       * Executes the given `updateFunction` and then attempts to commit the changes
       * applied within the transaction. If any document read within the transaction
       * has changed, Cloud Firestore retries the `updateFunction`. If it fails to
@@ -797,7 +829,7 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
-    def onSnapshot(observer: Anon_CompleteErrorNext): js.Function0[Unit] = js.native
+    def onSnapshot(observer: Anon_CompleteErrorNextSnapshot): js.Function0[Unit] = js.native
     /**
       * Attaches a listener for QuerySnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -838,7 +870,7 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
-    def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNext): js.Function0[Unit] = js.native
+    def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNextSnapshot): js.Function0[Unit] = js.native
     /**
       * Attaches a listener for QuerySnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer

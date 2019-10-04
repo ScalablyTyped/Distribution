@@ -12,8 +12,8 @@ class UserAgentCore protected ()
   extends typings.sipDotJs.libCoreUserDashAgentDashCoreUserDashAgentDashCoreMod.UserAgentCore {
   /**
     * Constructor.
-    * @param configuration Configuration.
-    * @param delegate Delegate.
+    * @param configuration - Configuration.
+    * @param delegate - Delegate.
     */
   def this(configuration: UserAgentCoreConfiguration) = this()
   def this(configuration: UserAgentCoreConfiguration, delegate: UserAgentCoreDelegate) = this()

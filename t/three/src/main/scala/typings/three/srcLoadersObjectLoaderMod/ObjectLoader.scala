@@ -8,6 +8,7 @@ import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
 import typings.three.srcAnimationAnimationClipMod.AnimationClip
 import typings.three.srcCoreObject3DMod.Object3D
+import typings.three.srcLoadersLoaderMod.Loader
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcTexturesTextureMod.Texture
@@ -17,11 +18,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three/src/loaders/ObjectLoader", "ObjectLoader")
 @js.native
-class ObjectLoader () extends js.Object {
+class ObjectLoader () extends Loader {
   def this(manager: LoadingManager) = this()
-  var crossOrigin: String = js.native
-  var manager: LoadingManager = js.native
-  var texturePass: String = js.native
   def load(url: String): Unit = js.native
   def load(url: String, onLoad: js.Function1[/* object */ Object3D, Unit]): Unit = js.native
   def load(
@@ -45,7 +43,5 @@ class ObjectLoader () extends js.Object {
   def parseMaterials(json: js.Any, textures: js.Array[Texture]): js.Array[Material] = js.native
   def parseObject[T /* <: Object3D */](data: js.Any, geometries: js.Array[_], materials: js.Array[Material]): T = js.native
   def parseTextures(json: js.Any, images: js.Any): js.Array[Texture] = js.native
-  def setCrossOrigin(crossOrigin: String): Unit = js.native
-  def setTexturePath(value: String): Unit = js.native
 }
 

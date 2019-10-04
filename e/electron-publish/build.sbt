@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "electron-publish"
-version := "20.44.4-9b16bb"
+version := "21.2.0-8a0166"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "builder-util" % "10.1.2-6288cd",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.5-9e0fcb",
+  "org.scalablytyped" %%% "builder-util" % "21.2.0-008cad",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.3.0-f6a469",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-d138d9",
-  "org.scalablytyped" %%% "fs-extra-p" % "8.1.0-ce8cad",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "fs-extra" % "8.0-dt-20190626Z-bec1d8",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502",
   "org.scalablytyped" %%% "temp-file" % "3.3.4-0f9a14")
 publishArtifact in packageDoc := false

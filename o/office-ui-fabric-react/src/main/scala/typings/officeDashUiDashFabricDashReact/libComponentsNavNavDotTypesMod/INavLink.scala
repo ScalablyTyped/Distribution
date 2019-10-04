@@ -15,7 +15,7 @@ trait INavLink
   */
 /* propertyName */ StringDictionary[js.Any] {
   /**
-    * Aria label for nav link
+    * Aria label for nav link. Ignored if `collapseAriaLabel` or `expandAriaLabel` is provided.
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
@@ -23,9 +23,17 @@ trait INavLink
     */
   var automationId: js.UndefOr[String] = js.undefined
   /**
+    * ARIA label when group is collapsed and can be expanded.
+    */
+  var collapseAriaLabel: js.UndefOr[String] = js.undefined
+  /**
     * Whether or not the link is disabled.
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * ARIA label when group is collapsed and can be expanded.
+    */
+  var expandAriaLabel: js.UndefOr[String] = js.undefined
   /**
     * (Optional) By default, any link with onClick defined will render as a button.
     * Set this property to true to override that behavior. (Links without onClick defined
@@ -98,7 +106,9 @@ object INavLink {
   /* propertyName */ StringDictionary[js.Any] = null,
     ariaLabel: String = null,
     automationId: String = null,
+    collapseAriaLabel: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    expandAriaLabel: String = null,
     forceAnchor: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
     iconClassName: String = null,
@@ -114,7 +124,9 @@ object INavLink {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (automationId != null) __obj.updateDynamic("automationId")(automationId)
+    if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (expandAriaLabel != null) __obj.updateDynamic("expandAriaLabel")(expandAriaLabel)
     if (!js.isUndefined(forceAnchor)) __obj.updateDynamic("forceAnchor")(forceAnchor)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)

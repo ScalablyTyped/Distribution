@@ -22,8 +22,10 @@ class Readable ()
   extends Stream
      with ReadableStream {
   def this(opts: ReadableOptions) = this()
+  var destroyed: Boolean = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
+  val readableObjectMode: Boolean = js.native
   def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _read(size: Double): Unit = js.native

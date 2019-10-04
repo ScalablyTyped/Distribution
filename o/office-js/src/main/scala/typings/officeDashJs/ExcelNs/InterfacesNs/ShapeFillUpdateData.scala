@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ShapeFill object, for use in "shapeFill.set({ ... })". */
+/** An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`. */
 trait ShapeFillUpdateData extends js.Object {
   /**
     *

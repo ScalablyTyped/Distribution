@@ -13,14 +13,29 @@ class Adapter protected () extends js.Object {
     local_path: String,
     server_url: String,
     admin_user: User,
-    regex: String,
+    filter: String,
     change_callback: js.Function
   ) = this()
   def this(
     local_path: String,
     server_url: String,
     admin_user: User,
-    regex: String,
+    filter: RealmWatchPredicate,
+    change_callback: js.Function
+  ) = this()
+  def this(
+    local_path: String,
+    server_url: String,
+    admin_user: User,
+    filter: String,
+    change_callback: js.Function,
+    ssl: SSLConfiguration
+  ) = this()
+  def this(
+    local_path: String,
+    server_url: String,
+    admin_user: User,
+    filter: RealmWatchPredicate,
     change_callback: js.Function,
     ssl: SSLConfiguration
   ) = this()

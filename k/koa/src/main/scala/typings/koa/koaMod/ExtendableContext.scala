@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExtendableContext extends BaseContext {
   var accept: Accepts = js.native
-  var app: Application[_, js.Object] = js.native
+  var app: Application[DefaultState, DefaultContext] = js.native
   var cookies: Cookies = js.native
   var originalUrl: String = js.native
   var req: IncomingMessage = js.native

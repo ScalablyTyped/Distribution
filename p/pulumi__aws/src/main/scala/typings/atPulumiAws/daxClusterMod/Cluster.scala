@@ -1,8 +1,8 @@
 package typings.atPulumiAws.daxClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_Address
-import typings.atPulumiAws.Anon_EnabledBoolean
+import typings.atPulumiAws.typesOutputMod.daxNs.ClusterNode
+import typings.atPulumiAws.typesOutputMod.daxNs.ClusterServerSideEncryption
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -74,7 +74,7 @@ class Cluster protected () extends CustomResource {
     * `availabilityZone`. Referenceable e.g. as
     * `${aws_dax_cluster.test.nodes.0.address}`
     */
-  val nodes: Output[js.Array[Anon_Address]] = js.native
+  val nodes: Output[js.Array[ClusterNode]] = js.native
   /**
     * An Amazon Resource Name (ARN) of an
     * SNS topic to send DAX notifications to. Example:
@@ -104,7 +104,7 @@ class Cluster protected () extends CustomResource {
   /**
     * Encrypt at rest options
     */
-  val serverSideEncryption: Output[js.UndefOr[Anon_EnabledBoolean]] = js.native
+  val serverSideEncryption: Output[js.UndefOr[ClusterServerSideEncryption]] = js.native
   /**
     * Name of the subnet group to be used for the
     * cluster

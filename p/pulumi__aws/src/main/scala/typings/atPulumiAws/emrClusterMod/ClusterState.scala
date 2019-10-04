@@ -1,13 +1,13 @@
 package typings.atPulumiAws.emrClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ActionOnFailureHadoopJarStep
-import typings.atPulumiAws.Anon_AdDomainJoinPasswordAdDomainJoinUser
-import typings.atPulumiAws.Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups
-import typings.atPulumiAws.Anon_ArgsName
-import typings.atPulumiAws.Anon_AutoscalingPolicyBidPriceEbsConfigs
-import typings.atPulumiAws.Anon_AutoscalingPolicyBidPriceEbsConfigsId
-import typings.atPulumiAws.Anon_BidPriceEbsConfigs
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterBootstrapAction
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterCoreInstanceGroup
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterEc2Attributes
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterInstanceGroup
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterKerberosAttributes
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterMasterInstanceGroup
+import typings.atPulumiAws.typesInputMod.emrNs.ClusterStep
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait ClusterState extends js.Object {
   /**
     * List of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below
     */
-  val bootstrapActions: js.UndefOr[Input[js.Array[Input[Anon_ArgsName]]]] = js.undefined
+  val bootstrapActions: js.UndefOr[Input[js.Array[Input[ClusterBootstrapAction]]]] = js.undefined
   val clusterState: js.UndefOr[Input[String]] = js.undefined
   /**
     * List of configurations supplied for the EMR cluster you are creating
@@ -46,7 +46,7 @@ trait ClusterState extends js.Object {
   /**
     * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [core node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-core). Cannot be specified if `coreInstanceCount` argument, `coreInstanceType` argument, or `instanceGroup` configuration blocks are set. Detailed below.
     */
-  val coreInstanceGroup: js.UndefOr[Input[Anon_AutoscalingPolicyBidPriceEbsConfigs]] = js.undefined
+  val coreInstanceGroup: js.UndefOr[Input[ClusterCoreInstanceGroup]] = js.undefined
   /**
     * Use the `coreInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the slave nodes. Cannot be specified if `coreInstanceGroup` or `instanceGroup` configuration blocks are set.
     */
@@ -62,11 +62,11 @@ trait ClusterState extends js.Object {
   /**
     * Attributes for the EC2 instances running the job flow. Defined below
     */
-  val ec2Attributes: js.UndefOr[Input[Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups]] = js.undefined
+  val ec2Attributes: js.UndefOr[Input[ClusterEc2Attributes]] = js.undefined
   /**
     * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and [`aws.emr.InstanceGroup` resource(s)](https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
     */
-  val instanceGroups: js.UndefOr[Input[js.Array[Input[Anon_AutoscalingPolicyBidPriceEbsConfigsId]]]] = js.undefined
+  val instanceGroups: js.UndefOr[Input[js.Array[Input[ClusterInstanceGroup]]]] = js.undefined
   /**
     * Switch on/off run cluster with no steps or when all steps are complete (default is on)
     */
@@ -74,7 +74,7 @@ trait ClusterState extends js.Object {
   /**
     * Kerberos configuration for the cluster. Defined below
     */
-  val kerberosAttributes: js.UndefOr[Input[Anon_AdDomainJoinPasswordAdDomainJoinUser]] = js.undefined
+  val kerberosAttributes: js.UndefOr[Input[ClusterKerberosAttributes]] = js.undefined
   /**
     * S3 bucket to write the log files of the job flow. If a value is not provided, logs are not created
     */
@@ -82,7 +82,7 @@ trait ClusterState extends js.Object {
   /**
     * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [master node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-master). Cannot be specified if `masterInstanceType` argument or `instanceGroup` configuration blocks are set. Detailed below.
     */
-  val masterInstanceGroup: js.UndefOr[Input[Anon_BidPriceEbsConfigs]] = js.undefined
+  val masterInstanceGroup: js.UndefOr[Input[ClusterMasterInstanceGroup]] = js.undefined
   /**
     * Use the `masterInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the master node. Cannot be specified if `masterInstanceGroup` or `instanceGroup` configuration blocks are set.
     */
@@ -115,7 +115,7 @@ trait ClusterState extends js.Object {
   /**
     * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignoreChanges` if other steps are being managed outside of this provider. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val steps: js.UndefOr[Input[js.Array[Input[Anon_ActionOnFailureHadoopJarStep]]]] = js.undefined
+  val steps: js.UndefOr[Input[js.Array[Input[ClusterStep]]]] = js.undefined
   /**
     * list of tags to apply to the EMR Cluster
     */
@@ -136,21 +136,21 @@ object ClusterState {
     additionalInfo: Input[String] = null,
     applications: Input[js.Array[Input[String]]] = null,
     autoscalingRole: Input[String] = null,
-    bootstrapActions: Input[js.Array[Input[Anon_ArgsName]]] = null,
+    bootstrapActions: Input[js.Array[Input[ClusterBootstrapAction]]] = null,
     clusterState: Input[String] = null,
     configurations: Input[String] = null,
     configurationsJson: Input[String] = null,
     coreInstanceCount: Input[Double] = null,
-    coreInstanceGroup: Input[Anon_AutoscalingPolicyBidPriceEbsConfigs] = null,
+    coreInstanceGroup: Input[ClusterCoreInstanceGroup] = null,
     coreInstanceType: Input[String] = null,
     customAmiId: Input[String] = null,
     ebsRootVolumeSize: Input[Double] = null,
-    ec2Attributes: Input[Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups] = null,
-    instanceGroups: Input[js.Array[Input[Anon_AutoscalingPolicyBidPriceEbsConfigsId]]] = null,
+    ec2Attributes: Input[ClusterEc2Attributes] = null,
+    instanceGroups: Input[js.Array[Input[ClusterInstanceGroup]]] = null,
     keepJobFlowAliveWhenNoSteps: Input[Boolean] = null,
-    kerberosAttributes: Input[Anon_AdDomainJoinPasswordAdDomainJoinUser] = null,
+    kerberosAttributes: Input[ClusterKerberosAttributes] = null,
     logUri: Input[String] = null,
-    masterInstanceGroup: Input[Anon_BidPriceEbsConfigs] = null,
+    masterInstanceGroup: Input[ClusterMasterInstanceGroup] = null,
     masterInstanceType: Input[String] = null,
     masterPublicDns: Input[String] = null,
     name: Input[String] = null,
@@ -158,7 +158,7 @@ object ClusterState {
     scaleDownBehavior: Input[String] = null,
     securityConfiguration: Input[String] = null,
     serviceRole: Input[String] = null,
-    steps: Input[js.Array[Input[Anon_ActionOnFailureHadoopJarStep]]] = null,
+    steps: Input[js.Array[Input[ClusterStep]]] = null,
     tags: Input[StringDictionary[_]] = null,
     terminationProtection: Input[Boolean] = null,
     visibleToAllUsers: Input[Boolean] = null

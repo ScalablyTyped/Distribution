@@ -1,6 +1,5 @@
 package typings.ddDashTrace.ddDashTraceMod.pluginsNs
 
-import typings.ddDashTrace.Anon_Enabled
 import typings.ddDashTrace.Anon_Req
 import typings.std.RegExp
 import scala.scalajs.js
@@ -18,7 +17,7 @@ trait HttpServer extends Http {
 object HttpServer {
   @scala.inline
   def apply(
-    analytics: Boolean | Anon_Enabled = null,
+    analytics: Boolean | Double = null,
     blacklist: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])]) = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     headers: js.Array[String] = null,

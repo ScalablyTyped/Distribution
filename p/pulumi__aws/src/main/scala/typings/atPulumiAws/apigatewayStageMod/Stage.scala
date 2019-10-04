@@ -1,9 +1,9 @@
 package typings.atPulumiAws.apigatewayStageMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DestinationArn
 import typings.atPulumiAws.apigatewayDeploymentMod.Deployment
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.StageAccessLogSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -28,7 +28,7 @@ class Stage protected () extends CustomResource {
   /**
     * Enables access logs for the API stage. Detailed below.
     */
-  val accessLogSettings: Output[js.UndefOr[Anon_DestinationArn]] = js.native
+  val accessLogSettings: Output[js.UndefOr[StageAccessLogSettings]] = js.native
   /**
     * Specifies whether a cache cluster is enabled for the stage
     */

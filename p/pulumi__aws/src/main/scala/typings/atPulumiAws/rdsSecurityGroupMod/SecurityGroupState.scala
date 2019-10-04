@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CidrSecurityGroupId
+import typings.atPulumiAws.typesInputMod.rdsNs.SecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait SecurityGroupState extends js.Object {
   /**
     * A list of ingress rules.
     */
-  val ingress: js.UndefOr[Input[js.Array[Input[Anon_CidrSecurityGroupId]]]] = js.undefined
+  val ingress: js.UndefOr[Input[js.Array[Input[SecurityGroupIngress]]]] = js.undefined
   /**
     * The name of the DB security group.
     */
@@ -35,7 +35,7 @@ object SecurityGroupState {
   def apply(
     arn: Input[String] = null,
     description: Input[String] = null,
-    ingress: Input[js.Array[Input[Anon_CidrSecurityGroupId]]] = null,
+    ingress: Input[js.Array[Input[SecurityGroupIngress]]] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): SecurityGroupState = {

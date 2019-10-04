@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchEventPermissionMod
 
-import typings.atPulumiAws.Anon_KeyTypeValue
+import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventPermissionCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait EventPermissionArgs extends js.Object {
   /**
     * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
     */
-  val condition: js.UndefOr[Input[Anon_KeyTypeValue]] = js.undefined
+  val condition: js.UndefOr[Input[EventPermissionCondition]] = js.undefined
   /**
     * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
     */
@@ -31,7 +31,7 @@ object EventPermissionArgs {
     principal: Input[String],
     statementId: Input[String],
     action: Input[String] = null,
-    condition: Input[Anon_KeyTypeValue] = null
+    condition: Input[EventPermissionCondition] = null
   ): EventPermissionArgs = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], statementId = statementId.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])

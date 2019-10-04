@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@unimodules/react-native-adapter" : "3.0.0"
+      "@unimodules/react-native-adapter" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@unimodules/react-native-adapter" : "3.0.0"
+      "@unimodules/react-native-adapter" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

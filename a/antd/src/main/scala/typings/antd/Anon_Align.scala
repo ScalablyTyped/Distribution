@@ -8,6 +8,7 @@ import typings.antd.antdStrings.end
 import typings.antd.antdStrings.flex
 import typings.antd.antdStrings.middle
 import typings.antd.antdStrings.start
+import typings.antd.antdStrings.stretch
 import typings.antd.antdStrings.top
 import typings.propDashTypes.propDashTypesMod.ReactNodeLike
 import typings.propDashTypes.propDashTypesMod.Requireable
@@ -16,7 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Align extends js.Object {
-  var align: Requireable[top | middle | bottom]
+  var align: Requireable[top | middle | bottom | stretch]
   var children: Requireable[ReactNodeLike]
   var className: Requireable[String]
   var gutter: Requireable[Double | js.Object]
@@ -28,7 +29,7 @@ trait Anon_Align extends js.Object {
 object Anon_Align {
   @scala.inline
   def apply(
-    align: Requireable[top | middle | bottom],
+    align: Requireable[top | middle | bottom | stretch],
     children: Requireable[ReactNodeLike],
     className: Requireable[String],
     gutter: Requireable[Double | js.Object],

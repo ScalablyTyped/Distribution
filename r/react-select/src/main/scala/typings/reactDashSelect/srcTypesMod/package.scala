@@ -17,11 +17,12 @@ package object srcTypesMod {
   type ClassNameList = js.Array[String]
   type ClassNamesState = js.UndefOr[StringDictionary[Boolean]]
   type FocusEventHandler = js.Function1[/* event */ FocusEvent[HTMLElement], Unit]
-  type GroupedOptionsType[UnionOptionType] = js.Array[GroupType[UnionOptionType]]
+  type GroupedOptionsType[OptionType /* <: OptionTypeBase */] = js.Array[GroupType[OptionType]]
   type InnerRef = Ref[js.Any]
   type KeyboardEventHandler = js.Function1[/* event */ KeyboardEvent[HTMLElement], Unit]
   type MouseEventHandler = js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
   type OptionProps = PropsWithInnerRef with Anon_Data
-  type OptionsType[OptionType] = js.Array[OptionType]
-  type ValueType[OptionType] = js.UndefOr[OptionType | OptionsType[OptionType] | Null]
+  type OptionTypeBase = StringDictionary[js.Any]
+  type OptionsType[OptionType /* <: OptionTypeBase */] = js.Array[OptionType]
+  type ValueType[OptionType /* <: OptionTypeBase */] = js.UndefOr[OptionType | OptionsType[OptionType] | Null]
 }

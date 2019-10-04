@@ -1,14 +1,14 @@
 package typings.atPulumiAws.codebuildProjectMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ArtifactIdentifierEncryptionDisabled
-import typings.atPulumiAws.Anon_AuthsBuildspecGitCloneDepth
-import typings.atPulumiAws.Anon_AuthsBuildspecGitCloneDepthInsecureSsl
-import typings.atPulumiAws.Anon_CertificateComputeType
-import typings.atPulumiAws.Anon_CloudwatchLogsS3Logs
-import typings.atPulumiAws.Anon_EncryptionDisabledLocationName
-import typings.atPulumiAws.Anon_LocationModes
-import typings.atPulumiAws.Anon_SecurityGroupIdsSubnets
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectArtifacts
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectCache
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectEnvironment
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectLogsConfig
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectSecondaryArtifact
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectSecondarySource
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectSource
+import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectVpcConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait ProjectArgs extends js.Object {
   /**
     * Information about the project's build output artifacts. Artifact blocks are documented below.
     */
-  val artifacts: Input[Anon_EncryptionDisabledLocationName]
+  val artifacts: Input[ProjectArtifacts]
   /**
     * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
     */
@@ -30,7 +30,7 @@ trait ProjectArgs extends js.Object {
   /**
     * Information about the cache storage for the project. Cache blocks are documented below.
     */
-  val cache: js.UndefOr[Input[Anon_LocationModes]] = js.undefined
+  val cache: js.UndefOr[Input[ProjectCache]] = js.undefined
   /**
     * A short description of the project.
     */
@@ -42,11 +42,11 @@ trait ProjectArgs extends js.Object {
   /**
     * Information about the project's build environment. Environment blocks are documented below.
     */
-  val environment: Input[Anon_CertificateComputeType]
+  val environment: Input[ProjectEnvironment]
   /**
     * Configuration for the builds to store log data to CloudWatch or S3.
     */
-  val logsConfig: js.UndefOr[Input[Anon_CloudwatchLogsS3Logs]] = js.undefined
+  val logsConfig: js.UndefOr[Input[ProjectLogsConfig]] = js.undefined
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
@@ -54,11 +54,11 @@ trait ProjectArgs extends js.Object {
   /**
     * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
     */
-  val secondaryArtifacts: js.UndefOr[Input[js.Array[Input[Anon_ArtifactIdentifierEncryptionDisabled]]]] = js.undefined
+  val secondaryArtifacts: js.UndefOr[Input[js.Array[Input[ProjectSecondaryArtifact]]]] = js.undefined
   /**
     * A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
     */
-  val secondarySources: js.UndefOr[Input[js.Array[Input[Anon_AuthsBuildspecGitCloneDepth]]]] = js.undefined
+  val secondarySources: js.UndefOr[Input[js.Array[Input[ProjectSecondarySource]]]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     */
@@ -66,7 +66,7 @@ trait ProjectArgs extends js.Object {
   /**
     * Information about the project's input source code. Source blocks are documented below.
     */
-  val source: Input[Anon_AuthsBuildspecGitCloneDepthInsecureSsl]
+  val source: Input[ProjectSource]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -74,27 +74,27 @@ trait ProjectArgs extends js.Object {
   /**
     * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
     */
-  val vpcConfig: js.UndefOr[Input[Anon_SecurityGroupIdsSubnets]] = js.undefined
+  val vpcConfig: js.UndefOr[Input[ProjectVpcConfig]] = js.undefined
 }
 
 object ProjectArgs {
   @scala.inline
   def apply(
-    artifacts: Input[Anon_EncryptionDisabledLocationName],
-    environment: Input[Anon_CertificateComputeType],
+    artifacts: Input[ProjectArtifacts],
+    environment: Input[ProjectEnvironment],
     serviceRole: Input[String],
-    source: Input[Anon_AuthsBuildspecGitCloneDepthInsecureSsl],
+    source: Input[ProjectSource],
     badgeEnabled: Input[Boolean] = null,
     buildTimeout: Input[Double] = null,
-    cache: Input[Anon_LocationModes] = null,
+    cache: Input[ProjectCache] = null,
     description: Input[String] = null,
     encryptionKey: Input[String] = null,
-    logsConfig: Input[Anon_CloudwatchLogsS3Logs] = null,
+    logsConfig: Input[ProjectLogsConfig] = null,
     name: Input[String] = null,
-    secondaryArtifacts: Input[js.Array[Input[Anon_ArtifactIdentifierEncryptionDisabled]]] = null,
-    secondarySources: Input[js.Array[Input[Anon_AuthsBuildspecGitCloneDepth]]] = null,
+    secondaryArtifacts: Input[js.Array[Input[ProjectSecondaryArtifact]]] = null,
+    secondarySources: Input[js.Array[Input[ProjectSecondarySource]]] = null,
     tags: Input[StringDictionary[_]] = null,
-    vpcConfig: Input[Anon_SecurityGroupIdsSubnets] = null
+    vpcConfig: Input[ProjectVpcConfig] = null
   ): ProjectArgs = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (badgeEnabled != null) __obj.updateDynamic("badgeEnabled")(badgeEnabled.asInstanceOf[js.Any])

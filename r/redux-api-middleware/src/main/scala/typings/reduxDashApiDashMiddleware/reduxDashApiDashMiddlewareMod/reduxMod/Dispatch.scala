@@ -1,7 +1,6 @@
 package typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareMod.reduxMod
 
 import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareMod.RSAAAction
-import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareMod.RSAASuccessAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Dispatch extends js.Object {
   // `Promise<undefined> is returned in case of RSAA validation errors or user bails out
-  def apply(action: RSAAAction[_, _, _]): js.Promise[RSAASuccessAction[_, _]] = js.native
+  def apply(action: RSAAAction[_, _, _]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
 }
 

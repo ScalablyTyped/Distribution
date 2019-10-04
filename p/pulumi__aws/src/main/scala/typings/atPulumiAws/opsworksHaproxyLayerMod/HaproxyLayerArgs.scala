@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksHaproxyLayerMod
 
-import typings.atPulumiAws.Anon_IopsMountPointNumberOfDisks
+import typings.atPulumiAws.typesInputMod.opsworksNs.HaproxyLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +43,7 @@ trait HaproxyLayerArgs extends js.Object {
   /**
     * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
-  val ebsVolumes: js.UndefOr[Input[js.Array[Input[Anon_IopsMountPointNumberOfDisks]]]] = js.undefined
+  val ebsVolumes: js.UndefOr[Input[js.Array[Input[HaproxyLayerEbsVolume]]]] = js.undefined
   /**
     * Name of an Elastic Load Balancer to attach to this layer
     */
@@ -115,7 +115,7 @@ object HaproxyLayerArgs {
     customShutdownRecipes: Input[js.Array[Input[String]]] = null,
     customUndeployRecipes: Input[js.Array[Input[String]]] = null,
     drainElbOnShutdown: Input[Boolean] = null,
-    ebsVolumes: Input[js.Array[Input[Anon_IopsMountPointNumberOfDisks]]] = null,
+    ebsVolumes: Input[js.Array[Input[HaproxyLayerEbsVolume]]] = null,
     elasticLoadBalancer: Input[String] = null,
     healthcheckMethod: Input[String] = null,
     healthcheckUrl: Input[String] = null,

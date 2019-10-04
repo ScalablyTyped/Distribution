@@ -125,21 +125,21 @@ object ^ extends js.Object {
   ): Unit = js.native
   def forever[E](next: js.Function1[/* next */ ErrorCallback[E], Unit], errBack: ErrorCallback[E]): Unit = js.native
   def log(fn: js.Function, args: js.Any*): Unit = js.native
-  def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIterator[T, R, E]): Unit = js.native
+  def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIterator[T, R, E]): js.Promise[R] = js.native
   def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIterator[T, R, E], callback: AsyncResultArrayCallback[R, E]): Unit = js.native
-  def map[T, R, E](arr: Dictionary[T], iterator: AsyncResultIterator[T, R, E]): Unit = js.native
+  def map[T, R, E](arr: Dictionary[T], iterator: AsyncResultIterator[T, R, E]): js.Promise[R] = js.native
   def map[T, R, E](
     arr: Dictionary[T],
     iterator: AsyncResultIterator[T, R, E],
     callback: AsyncResultArrayCallback[R, E]
   ): Unit = js.native
-  def map[T, R, E](arr: IterableIterator[T], iterator: AsyncResultIterator[T, R, E]): Unit = js.native
+  def map[T, R, E](arr: IterableIterator[T], iterator: AsyncResultIterator[T, R, E]): js.Promise[R] = js.native
   def map[T, R, E](
     arr: IterableIterator[T],
     iterator: AsyncResultIterator[T, R, E],
     callback: AsyncResultArrayCallback[R, E]
   ): Unit = js.native
-  def mapLimit[T, R, E](arr: IterableCollection[T], limit: Double, iterator: AsyncResultIterator[T, R, E]): Unit = js.native
+  def mapLimit[T, R, E](arr: IterableCollection[T], limit: Double, iterator: AsyncResultIterator[T, R, E]): js.Promise[R] = js.native
   def mapLimit[T, R, E](
     arr: IterableCollection[T],
     limit: Double,
@@ -148,9 +148,18 @@ object ^ extends js.Object {
   ): Unit = js.native
   def mapValues[T, R, E](
     obj: Dictionary[T],
+    iteratee: js.Function3[/* value */ T, /* key */ String, /* callback */ AsyncResultCallback[R, E], Unit]
+  ): js.Promise[R] = js.native
+  def mapValues[T, R, E](
+    obj: Dictionary[T],
     iteratee: js.Function3[/* value */ T, /* key */ String, /* callback */ AsyncResultCallback[R, E], Unit],
     callback: AsyncResultObjectCallback[R, E]
   ): Unit = js.native
+  def mapValuesLimit[T, R, E](
+    obj: Dictionary[T],
+    limit: Double,
+    iteratee: js.Function3[/* value */ T, /* key */ String, /* callback */ AsyncResultCallback[R, E], Unit]
+  ): js.Promise[R] = js.native
   def mapValuesLimit[T, R, E](
     obj: Dictionary[T],
     limit: Double,

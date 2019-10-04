@@ -1,12 +1,13 @@
 package typings.reactDashSelect.srcStateManagerMod
 
 import typings.reactDashSelect.srcTypesMod.ActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Props[OptionType] extends js.Object {
+trait Props[OptionType /* <: OptionTypeBase */] extends js.Object {
   var defaultInputValue: js.UndefOr[String] = js.undefined
   var defaultMenuIsOpen: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[ValueType[OptionType]] = js.undefined
@@ -20,7 +21,7 @@ trait Props[OptionType] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     defaultInputValue: String = null,
     defaultMenuIsOpen: js.UndefOr[Boolean] = js.undefined,
     defaultValue: ValueType[OptionType] = null,

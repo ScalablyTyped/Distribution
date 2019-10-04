@@ -35,6 +35,7 @@ trait AgentConfigOptions extends js.Object {
   var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   var ignoreUserAgents: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   var instrument: js.UndefOr[Boolean] = js.undefined
+  var instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.undefined
   var kubernetesNamespace: js.UndefOr[String] = js.undefined
   var kubernetesNodeName: js.UndefOr[String] = js.undefined
   var kubernetesPodName: js.UndefOr[String] = js.undefined
@@ -89,6 +90,7 @@ object AgentConfigOptions {
     ignoreUrls: js.Array[String | RegExp] = null,
     ignoreUserAgents: js.Array[String | RegExp] = null,
     instrument: js.UndefOr[Boolean] = js.undefined,
+    instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.undefined,
     kubernetesNamespace: String = null,
     kubernetesNodeName: String = null,
     kubernetesPodName: String = null,
@@ -138,6 +140,7 @@ object AgentConfigOptions {
     if (ignoreUrls != null) __obj.updateDynamic("ignoreUrls")(ignoreUrls)
     if (ignoreUserAgents != null) __obj.updateDynamic("ignoreUserAgents")(ignoreUserAgents)
     if (!js.isUndefined(instrument)) __obj.updateDynamic("instrument")(instrument)
+    if (!js.isUndefined(instrumentIncomingHTTPRequests)) __obj.updateDynamic("instrumentIncomingHTTPRequests")(instrumentIncomingHTTPRequests)
     if (kubernetesNamespace != null) __obj.updateDynamic("kubernetesNamespace")(kubernetesNamespace)
     if (kubernetesNodeName != null) __obj.updateDynamic("kubernetesNodeName")(kubernetesNodeName)
     if (kubernetesPodName != null) __obj.updateDynamic("kubernetesPodName")(kubernetesPodName)

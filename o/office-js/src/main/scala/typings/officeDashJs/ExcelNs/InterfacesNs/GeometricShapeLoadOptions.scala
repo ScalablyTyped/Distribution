@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi 1.9]
   */
 trait GeometricShapeLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**

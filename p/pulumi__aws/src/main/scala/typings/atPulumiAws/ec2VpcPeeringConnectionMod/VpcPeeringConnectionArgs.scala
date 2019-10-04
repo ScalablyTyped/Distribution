@@ -1,7 +1,8 @@
 package typings.atPulumiAws.ec2VpcPeeringConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpcPeeringConnectionAccepter
+import typings.atPulumiAws.typesInputMod.ec2Ns.VpcPeeringConnectionRequester
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ trait VpcPeeringConnectionArgs extends js.Object {
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that accepts
     * the peering connection (a maximum of one).
     */
-  val accepter: js.UndefOr[Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]] = js.undefined
+  val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepter]] = js.undefined
   /**
     * Accept the peering (both VPCs need to be in the same AWS account).
     */
@@ -37,7 +38,7 @@ trait VpcPeeringConnectionArgs extends js.Object {
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that requests
     * the peering connection (a maximum of one).
     */
-  val requester: js.UndefOr[Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]] = js.undefined
+  val requester: js.UndefOr[Input[VpcPeeringConnectionRequester]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -53,11 +54,11 @@ object VpcPeeringConnectionArgs {
   def apply(
     peerVpcId: Input[String],
     vpcId: Input[String],
-    accepter: Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    accepter: Input[VpcPeeringConnectionAccepter] = null,
     autoAccept: Input[Boolean] = null,
     peerOwnerId: Input[String] = null,
     peerRegion: Input[String] = null,
-    requester: Input[Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    requester: Input[VpcPeeringConnectionRequester] = null,
     tags: Input[StringDictionary[_]] = null
   ): VpcPeeringConnectionArgs = {
     val __obj = js.Dynamic.literal(peerVpcId = peerVpcId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])

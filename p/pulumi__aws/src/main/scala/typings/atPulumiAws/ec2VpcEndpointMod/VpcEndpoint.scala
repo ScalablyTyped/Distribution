@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2VpcEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DnsName
+import typings.atPulumiAws.typesOutputMod.ec2Ns.VpcEndpointDnsEntry
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -34,7 +34,7 @@ class VpcEndpoint protected () extends CustomResource {
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: Output[js.Array[Anon_DnsName]] = js.native
+  val dnsEntries: Output[js.Array[VpcEndpointDnsEntry]] = js.native
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
     */

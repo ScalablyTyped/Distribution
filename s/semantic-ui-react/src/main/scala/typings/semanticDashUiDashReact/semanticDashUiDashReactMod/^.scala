@@ -1,7 +1,9 @@
 package typings.semanticDashUiDashReact.semanticDashUiDashReactMod
 
+import typings.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.StatelessComponent
 import typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps
 import typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps
@@ -275,6 +277,7 @@ object ^ extends js.Object {
   val Rail: StatelessComponent[RailProps] = js.native
   val Rating: RatingComponent = js.native
   val RatingIcon: ComponentClass[RatingIconProps, ComponentState] = js.native
+  val Ref: FunctionComponent[RefProps] = js.native
   val Reveal: RevealComponent = js.native
   val RevealContent: StatelessComponent[RevealContentProps] = js.native
   val Search: SearchComponent = js.native

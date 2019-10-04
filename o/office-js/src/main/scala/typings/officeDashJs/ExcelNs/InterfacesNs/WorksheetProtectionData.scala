@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "worksheetProtection.toJSON()". */
+/** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
 trait WorksheetProtectionData extends js.Object {
   /**
     *

@@ -1,7 +1,7 @@
 
 # Scala.js typings for unimodules__core
 
-Typings are for version 3.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 Universal modules core

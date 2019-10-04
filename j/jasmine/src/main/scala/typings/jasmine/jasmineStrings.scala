@@ -6,18 +6,6 @@ import scala.scalajs.js.annotation._
 
 object jasmineStrings {
   @js.native
-  sealed trait `<jasmineDOTempty>` extends js.Object
-  
-  @js.native
-  sealed trait `<jasmineDOTfalsy>` extends js.Object
-  
-  @js.native
-  sealed trait `<jasmineDOTnotEmpty>` extends js.Object
-  
-  @js.native
-  sealed trait `<jasmineDOTtruthy>` extends js.Object
-  
-  @js.native
   sealed trait Expected extends js.Object
   
   @js.native
@@ -38,14 +26,6 @@ object jasmineStrings {
   @js.native
   sealed trait set extends js.Object
   
-  @scala.inline
-  def `<jasmineDOTempty>`: `<jasmineDOTempty>` = "<jasmine.empty>".asInstanceOf[`<jasmineDOTempty>`]
-  @scala.inline
-  def `<jasmineDOTfalsy>`: `<jasmineDOTfalsy>` = "<jasmine.falsy>".asInstanceOf[`<jasmineDOTfalsy>`]
-  @scala.inline
-  def `<jasmineDOTnotEmpty>`: `<jasmineDOTnotEmpty>` = "<jasmine.notEmpty>".asInstanceOf[`<jasmineDOTnotEmpty>`]
-  @scala.inline
-  def `<jasmineDOTtruthy>`: `<jasmineDOTtruthy>` = "<jasmine.truthy>".asInstanceOf[`<jasmineDOTtruthy>`]
   @scala.inline
   def Expected: Expected = "Expected".asInstanceOf[Expected]
   @scala.inline

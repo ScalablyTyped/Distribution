@@ -14,7 +14,6 @@ import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.HostPortRange
 import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.IDRange
 import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.PodDisruptionBudget
 import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.PodDisruptionBudgetSpec
-import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.PodDisruptionBudgetStatus
 import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.PodSecurityPolicy
 import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.PodSecurityPolicySpec
 import typings.atPulumiKubernetes.typesInputMod.policyNs.v1beta1Ns.RunAsGroupStrategyOptions
@@ -83,7 +82,7 @@ object policyNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -94,7 +93,7 @@ object policyNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[String]] = js.undefined
       /**
@@ -156,14 +155,14 @@ object policyNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`policy/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodDisruptionBudget]] = js.undefined
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
@@ -171,10 +170,6 @@ object policyNs extends js.Object {
         * Specification of the desired behavior of the PodDisruptionBudget.
         */
       var spec: js.UndefOr[Input[PodDisruptionBudgetSpec]] = js.undefined
-      /**
-        * Most recently observed status of the PodDisruptionBudget.
-        */
-      var status: js.UndefOr[Input[PodDisruptionBudgetStatus]] = js.undefined
     }
     
     /**
@@ -185,7 +180,7 @@ object policyNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`policy/v1beta1`]] = js.undefined
       var items: Input[js.Array[Input[PodDisruptionBudget]]]
@@ -193,7 +188,7 @@ object policyNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodDisruptionBudgetList]
@@ -275,19 +270,19 @@ object policyNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`policy/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodSecurityPolicy]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -304,7 +299,7 @@ object policyNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`policy/v1beta1`]] = js.undefined
       /**
@@ -315,14 +310,14 @@ object policyNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
             Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodSecurityPolicyList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }

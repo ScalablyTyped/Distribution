@@ -31,6 +31,8 @@ object ReflectionKind extends js.Object {
   /* 1048576 */ val SetSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.SetSignature with Double = js.native
   /* 3 */ val SomeModule: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.SomeModule with Double = js.native
   /* 1601536 */ val SomeSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.SomeSignature with Double = js.native
+  /* 4391168 */ val SomeType: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.SomeType with Double = js.native
+  /* 2097248 */ val SomeValue: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.SomeValue with Double = js.native
   /* 4194304 */ val TypeAlias: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.TypeAlias with Double = js.native
   /* 65536 */ val TypeLiteral: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.TypeLiteral with Double = js.native
   /* 131072 */ val TypeParameter: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.TypeParameter with Double = js.native

@@ -45,7 +45,7 @@ class ListItem () extends ClientObject {
   val siblingIndex: Double = js.native
   /**
     *
-    * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor.
+    * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an error if the list item has no ancestor.
     *
     * [Api set: WordApi 1.3]
     *

@@ -1,6 +1,6 @@
 package typings.mongodb.mongodbMod
 
-import typings.mongodb.Anon_IdObjectID
+import typings.mongodb.Anon_IdObjectId
 import typings.mongodb.Anon_NNModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ object ReplaceWriteOpResult {
     ops: js.Array[_],
     result: Anon_NNModified,
     upsertedCount: scala.Double,
-    upsertedId: Anon_IdObjectID
+    upsertedId: Anon_IdObjectId
   ): ReplaceWriteOpResult = {
     val __obj = js.Dynamic.literal(connection = connection, matchedCount = matchedCount, modifiedCount = modifiedCount, ops = ops, result = result, upsertedCount = upsertedCount, upsertedId = upsertedId)
   

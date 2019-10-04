@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "expo-font"
-version := "6.0.1-a4e605"
+version := "7.0.0-523327"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "expo-asset" % "6.0.0-98aa93",
+  "org.scalablytyped" %%% "expo-asset" % "7.0.0-5722b3",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

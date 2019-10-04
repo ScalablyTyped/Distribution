@@ -262,7 +262,7 @@ trait DetailedHTMLPropsHTMLAttributesanyany extends js.Object {
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -542,7 +542,7 @@ object DetailedHTMLPropsHTMLAttributesanyany {
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | js.Array[String] = null,
+    defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,

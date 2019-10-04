@@ -71,6 +71,8 @@ package object awsDashLambdaMod {
   type ProxyCallback = APIGatewayProxyCallback
   type ProxyHandler = APIGatewayProxyHandler
   type ProxyResult = APIGatewayProxyResult
+  type S3BatchCallback = Callback[S3BatchResult]
+  type S3BatchHandler = Handler[S3BatchEvent, S3BatchResult]
   type S3CreateEvent = S3Event
   type S3Handler = Handler[S3Event, Unit]
   type SNSHandler = Handler[SNSEvent, Unit]

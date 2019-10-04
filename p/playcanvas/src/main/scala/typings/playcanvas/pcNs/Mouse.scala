@@ -9,13 +9,14 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Mouse
+  * @extends pc.EventHandler
   * @classdesc A Mouse Device, bound to a DOM Element.
   * @description Create a new Mouse device
   * @param {Element} [element] The Element that the mouse events are attached to
   */
 @JSGlobal("pc.Mouse")
 @js.native
-class Mouse () extends js.Object {
+class Mouse () extends EventHandler {
   def this(element: Element) = this()
   /**
     * @function

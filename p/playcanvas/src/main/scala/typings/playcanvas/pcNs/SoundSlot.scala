@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.SoundSlot
+  * @extends pc.EventHandler
   * @classdesc The SoundSlot controls playback of an audio asset.
   * @description Create a new SoundSlot
   * @param {pc.SoundComponent} component The Component that created this slot.
@@ -39,7 +40,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.SoundSlot")
 @js.native
-class SoundSlot protected () extends js.Object {
+class SoundSlot protected () extends EventHandler {
   def this(component: SoundComponent, name: String, options: Anon_Asset) = this()
   /**
     * The asset id

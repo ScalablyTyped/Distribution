@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpnGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpnGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait GetVpnGatewayArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpnGatewayFilter]] = js.undefined
   /**
     * The ID of the specific VPN Gateway to retrieve.
     */
@@ -44,7 +44,7 @@ object GetVpnGatewayArgs {
     amazonSideAsn: String = null,
     attachedVpcId: String = null,
     availabilityZone: String = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetVpnGatewayFilter] = null,
     id: String = null,
     state: String = null,
     tags: StringDictionary[js.Any] = null

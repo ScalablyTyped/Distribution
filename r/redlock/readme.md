@@ -1,7 +1,7 @@
 
 # Scala.js typings for redlock
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 A node.js redlock implementation for distributed redis locks

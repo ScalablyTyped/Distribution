@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereumjs-common
 
-Typings are for version 1.3.0
+Typings are for version 1.3.2
 
 ## Library description:
 Resources common to all Ethereum implementations

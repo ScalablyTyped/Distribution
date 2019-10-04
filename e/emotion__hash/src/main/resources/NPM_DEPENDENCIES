@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@emotion/hash" : "0.7.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@emotion/hash" : "0.7.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

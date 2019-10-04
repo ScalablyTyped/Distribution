@@ -1,7 +1,7 @@
 
 # Scala.js typings for normalize-url
 
-Typings are for version 4.4.1
+Typings are for version 4.5.0
 
 ## Library description:
 Normalize a URL

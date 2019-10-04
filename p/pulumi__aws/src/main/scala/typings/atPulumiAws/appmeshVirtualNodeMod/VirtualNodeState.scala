@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BackendsListener
+import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualNodeSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait VirtualNodeState extends js.Object {
   /**
     * The virtual node specification to apply.
     */
-  val spec: js.UndefOr[Input[Anon_BackendsListener]] = js.undefined
+  val spec: js.UndefOr[Input[VirtualNodeSpec]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -46,7 +46,7 @@ object VirtualNodeState {
     lastUpdatedDate: Input[String] = null,
     meshName: Input[String] = null,
     name: Input[String] = null,
-    spec: Input[Anon_BackendsListener] = null,
+    spec: Input[VirtualNodeSpec] = null,
     tags: Input[StringDictionary[_]] = null
   ): VirtualNodeState = {
     val __obj = js.Dynamic.literal()

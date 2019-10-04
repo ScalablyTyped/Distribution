@@ -1,14 +1,14 @@
 package typings.atPulumiAws.codebuildProjectMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_ArtifactIdentifier
-import typings.atPulumiAws.Anon_Auths
-import typings.atPulumiAws.Anon_AuthsBuildspec
-import typings.atPulumiAws.Anon_Certificate
-import typings.atPulumiAws.Anon_CloudwatchLogs
-import typings.atPulumiAws.Anon_EncryptionDisabled
-import typings.atPulumiAws.Anon_Location
-import typings.atPulumiAws.Anon_SecurityGroupIds
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectArtifacts
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectCache
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectEnvironment
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectLogsConfig
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectSecondaryArtifact
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectSecondarySource
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectSource
+import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class Project protected () extends CustomResource {
   /**
     * Information about the project's build output artifacts. Artifact blocks are documented below.
     */
-  val artifacts: Output[Anon_EncryptionDisabled] = js.native
+  val artifacts: Output[ProjectArtifacts] = js.native
   /**
     * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
     */
@@ -53,7 +53,7 @@ class Project protected () extends CustomResource {
   /**
     * Information about the cache storage for the project. Cache blocks are documented below.
     */
-  val cache: Output[js.UndefOr[Anon_Location]] = js.native
+  val cache: Output[js.UndefOr[ProjectCache]] = js.native
   /**
     * A short description of the project.
     */
@@ -65,11 +65,11 @@ class Project protected () extends CustomResource {
   /**
     * Information about the project's build environment. Environment blocks are documented below.
     */
-  val environment: Output[Anon_Certificate] = js.native
+  val environment: Output[ProjectEnvironment] = js.native
   /**
     * Configuration for the builds to store log data to CloudWatch or S3.
     */
-  val logsConfig: Output[js.UndefOr[Anon_CloudwatchLogs]] = js.native
+  val logsConfig: Output[js.UndefOr[ProjectLogsConfig]] = js.native
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
@@ -77,11 +77,11 @@ class Project protected () extends CustomResource {
   /**
     * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
     */
-  val secondaryArtifacts: Output[js.UndefOr[js.Array[Anon_ArtifactIdentifier]]] = js.native
+  val secondaryArtifacts: Output[js.UndefOr[js.Array[ProjectSecondaryArtifact]]] = js.native
   /**
     * A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
     */
-  val secondarySources: Output[js.UndefOr[js.Array[Anon_Auths]]] = js.native
+  val secondarySources: Output[js.UndefOr[js.Array[ProjectSecondarySource]]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     */
@@ -89,7 +89,7 @@ class Project protected () extends CustomResource {
   /**
     * Information about the project's input source code. Source blocks are documented below.
     */
-  val source: Output[Anon_AuthsBuildspec] = js.native
+  val source: Output[ProjectSource] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -97,7 +97,7 @@ class Project protected () extends CustomResource {
   /**
     * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
     */
-  val vpcConfig: Output[js.UndefOr[Anon_SecurityGroupIds]] = js.native
+  val vpcConfig: Output[js.UndefOr[ProjectVpcConfig]] = js.native
 }
 
 /* static members */

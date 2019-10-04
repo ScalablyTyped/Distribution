@@ -3,6 +3,7 @@ package typings.reactDashSelect.srcCreatableMod
 import typings.react.reactMod.Component
 import typings.react.reactMod.Ref
 import typings.reactDashSelect.srcTypesMod.ActionMeta
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-select/src/Creatable", "Creatable")
 @js.native
-class Creatable[OptionType] ()
+class Creatable[OptionType /* <: OptionTypeBase */] ()
   extends Component[Props[OptionType], State[OptionType], js.Any] {
   var select: Ref[_] = js.native
   def blur(): Unit = js.native

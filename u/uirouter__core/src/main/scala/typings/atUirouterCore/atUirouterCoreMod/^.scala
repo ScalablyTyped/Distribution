@@ -107,7 +107,7 @@ object ^ extends js.Object {
   def find[T](collection: js.Array[T], callback: Predicate[T]): T = js.native
   def find[T](collection: TypedMap[T], callback: Predicate[T]): T = js.native
   def flatten(arr: js.Array[_]): js.Any = js.native
-  def flattenR(memo: js.Array[_], elem: js.Any): js.Any = js.native
+  def flattenR(memo: js.Array[_], elem: js.Any): js.Array[_] = js.native
   def fnToString(fn: IInjectable): js.Any = js.native
   def functionToString(fn: js.Function): js.Any = js.native
   def getParams(queryString: String): js.Any = js.native

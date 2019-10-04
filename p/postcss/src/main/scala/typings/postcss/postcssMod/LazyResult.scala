@@ -110,6 +110,6 @@ trait LazyResult extends js.Object {
     * contains any asynchronous plugins it will throw an error. In this case,
     * you should use LazyResult#then() instead.
     */
-  def warnings(): js.Array[ResultMessage] = js.native
+  def warnings(): js.Array[Warning] = js.native
 }
 

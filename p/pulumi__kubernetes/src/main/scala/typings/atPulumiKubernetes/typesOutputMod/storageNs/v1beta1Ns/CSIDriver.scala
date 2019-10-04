@@ -20,14 +20,14 @@ trait CSIDriver extends js.Object {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: `storageDOTk8sDOTio/v1beta1`
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSIDriver
   /**
@@ -35,7 +35,8 @@ trait CSIDriver extends js.Object {
     * object refers to; it MUST be the same name returned by the CSI GetPluginName() call for
     * that driver. The driver name must be 63 characters or less, beginning and ending with an
     * alphanumeric character ([a-z0-9A-Z]) with dashes (-), dots (.), and alphanumerics between.
-    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: ObjectMeta
   /**

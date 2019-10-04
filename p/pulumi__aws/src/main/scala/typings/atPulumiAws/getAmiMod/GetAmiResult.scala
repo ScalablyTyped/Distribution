@@ -1,9 +1,9 @@
 package typings.atPulumiAws.getAmiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeviceNameEbsKey
-import typings.atPulumiAws.Anon_NameValues
-import typings.atPulumiAws.Anon_ProductCodeId
+import typings.atPulumiAws.typesOutputMod.GetAmiBlockDeviceMapping
+import typings.atPulumiAws.typesOutputMod.GetAmiFilter
+import typings.atPulumiAws.typesOutputMod.GetAmiProductCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait GetAmiResult extends js.Object {
     * * `block_device_mappings.#.virtual_name` - The virtual device name (for
     * instance stores).
     */
-  val blockDeviceMappings: js.Array[Anon_DeviceNameEbsKey]
+  val blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping]
   /**
     * The date and time the image was created.
     */
@@ -41,7 +41,7 @@ trait GetAmiResult extends js.Object {
     */
   val description: String
   val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetAmiFilter]] = js.undefined
   /**
     * The hypervisor type of the image.
     */
@@ -92,7 +92,7 @@ trait GetAmiResult extends js.Object {
     * * `product_codes.#.product_code_id` - The product code.
     * * `product_codes.#.product_code_type` - The type of product code.
     */
-  val productCodes: js.Array[Anon_ProductCodeId]
+  val productCodes: js.Array[GetAmiProductCode]
   /**
     * `true` if the image has public launch permissions.
     */
@@ -147,7 +147,7 @@ object GetAmiResult {
   @scala.inline
   def apply(
     architecture: String,
-    blockDeviceMappings: js.Array[Anon_DeviceNameEbsKey],
+    blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping],
     creationDate: String,
     description: String,
     hypervisor: String,
@@ -161,7 +161,7 @@ object GetAmiResult {
     ownerId: String,
     owners: js.Array[String],
     platform: String,
-    productCodes: js.Array[Anon_ProductCodeId],
+    productCodes: js.Array[GetAmiProductCode],
     public: Boolean,
     ramdiskId: String,
     rootDeviceName: String,
@@ -173,7 +173,7 @@ object GetAmiResult {
     tags: StringDictionary[js.Any],
     virtualizationType: String,
     executableUsers: js.Array[String] = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetAmiFilter] = null,
     mostRecent: js.UndefOr[Boolean] = js.undefined,
     nameRegex: String = null
   ): GetAmiResult = {

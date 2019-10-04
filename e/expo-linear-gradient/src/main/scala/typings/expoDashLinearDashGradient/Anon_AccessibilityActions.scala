@@ -4,10 +4,13 @@ import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.`box
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.`box-only`
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.`no-hide-descendants`
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.adjustable
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.alert
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.allowsDirectInteraction
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.assertive
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.auto
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.button
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.checkbox
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.combobox
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.disabled
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.frequentUpdates
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.header
@@ -16,22 +19,36 @@ import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.imag
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.key
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.keyboardkey
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.link
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.menu
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.menubar
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.menuitem
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.no
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.none
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.pageTurn
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.plays
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.polite
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.progressbar
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.radio
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.radiobutton_checked
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.radiobutton_unchecked
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.radiogroup
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.scrollbar
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.search
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.selected
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.spinbutton
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.startsMedia
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.summary
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.switch
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.tab
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.tablist
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.text
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.timer
+import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.toolbar
 import typings.expoDashLinearDashGradient.expoDashLinearDashGradientStrings.yes
 import typings.propDashTypes.propDashTypesMod.Requireable
 import typings.propDashTypes.propDashTypesMod.Validator
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
+import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typings.reactDashNative.reactDashNativeMod.AccessibilityTrait
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
 import typings.reactDashNative.reactDashNativeMod.Insets
@@ -56,15 +73,16 @@ trait Anon_AccessibilityActions extends js.Object {
   var accessibilityRole: js.UndefOr[
     Validator[
       js.UndefOr[
-        button | header | link | summary | image | text | none | search | keyboardkey | adjustable | imagebutton
+        button | header | link | menu | menuitem | summary | image | switch | text | none | search | keyboardkey | adjustable | imagebutton | alert | checkbox | combobox | menubar | progressbar | radio | radiogroup | scrollbar | spinbutton | tab | tablist | timer | toolbar
       ]
     ]
   ] = js.undefined
-  var accessibilityStates: js.UndefOr[Validator[js.UndefOr[js.Array[AccessibilityState]]]] = js.undefined
+  var accessibilityState: js.UndefOr[Validator[js.UndefOr[AccessibilityState]]] = js.undefined
+  var accessibilityStates: js.UndefOr[Validator[js.UndefOr[js.Array[AccessibilityStates]]]] = js.undefined
   var accessibilityTraits: js.UndefOr[
     Validator[
       js.UndefOr[
-        button | header | link | summary | image | text | none | search | adjustable | selected | disabled | plays | key | frequentUpdates | startsMedia | allowsDirectInteraction | pageTurn | js.Array[AccessibilityTrait]
+        button | header | link | summary | image | text | none | search | adjustable | disabled | selected | plays | key | frequentUpdates | startsMedia | allowsDirectInteraction | pageTurn | js.Array[AccessibilityTrait]
       ]
     ]
   ] = js.undefined
@@ -77,7 +95,7 @@ trait Anon_AccessibilityActions extends js.Object {
   var hitSlop: js.UndefOr[Validator[js.UndefOr[Insets]]] = js.undefined
   var importantForAccessibility: js.UndefOr[Validator[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
   var isTVSelectable: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var locations: Requireable[js.Array[Double | Null]]
+  var locations: Requireable[js.Array[js.UndefOr[Double | Null]]]
   var nativeID: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
   var needsOffscreenAlphaCompositing: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
   var onAccessibilityAction: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit]]]] = js.undefined
@@ -120,7 +138,7 @@ object Anon_AccessibilityActions {
   def apply(
     colors: Validator[js.Array[String]],
     end: Requireable[js.Object],
-    locations: Requireable[js.Array[Double | Null]],
+    locations: Requireable[js.Array[js.UndefOr[Double | Null]]],
     start: Requireable[js.Object],
     accessibilityActions: Validator[js.UndefOr[js.Array[String]]] = null,
     accessibilityComponentType: Validator[js.UndefOr[button | none | radiobutton_checked | radiobutton_unchecked]] = null,
@@ -131,13 +149,14 @@ object Anon_AccessibilityActions {
     accessibilityLiveRegion: Validator[js.UndefOr[none | polite | assertive]] = null,
     accessibilityRole: Validator[
       js.UndefOr[
-        button | header | link | summary | image | text | none | search | keyboardkey | adjustable | imagebutton
+        button | header | link | menu | menuitem | summary | image | switch | text | none | search | keyboardkey | adjustable | imagebutton | alert | checkbox | combobox | menubar | progressbar | radio | radiogroup | scrollbar | spinbutton | tab | tablist | timer | toolbar
       ]
     ] = null,
-    accessibilityStates: Validator[js.UndefOr[js.Array[AccessibilityState]]] = null,
+    accessibilityState: Validator[js.UndefOr[AccessibilityState]] = null,
+    accessibilityStates: Validator[js.UndefOr[js.Array[AccessibilityStates]]] = null,
     accessibilityTraits: Validator[
       js.UndefOr[
-        button | header | link | summary | image | text | none | search | adjustable | selected | disabled | plays | key | frequentUpdates | startsMedia | allowsDirectInteraction | pageTurn | js.Array[AccessibilityTrait]
+        button | header | link | summary | image | text | none | search | adjustable | disabled | selected | plays | key | frequentUpdates | startsMedia | allowsDirectInteraction | pageTurn | js.Array[AccessibilityTrait]
       ]
     ] = null,
     accessibilityViewIsModal: Validator[js.UndefOr[Boolean]] = null,
@@ -191,6 +210,7 @@ object Anon_AccessibilityActions {
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
     if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion)
     if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState)
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits)
     if (accessibilityViewIsModal != null) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)

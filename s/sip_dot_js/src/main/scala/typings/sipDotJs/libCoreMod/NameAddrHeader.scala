@@ -11,9 +11,9 @@ class NameAddrHeader protected ()
   extends typings.sipDotJs.libCoreMessagesMod.NameAddrHeader {
   /**
     * Constructor
-    * @param uri
-    * @param displayName
-    * @param parameters
+    * @param uri -
+    * @param displayName -
+    * @param parameters -
     */
   def this(
     uri: typings.sipDotJs.libCoreMessagesUriMod.URI,

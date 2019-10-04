@@ -12,13 +12,13 @@ import typings.atPulumiKubernetes.typesInputMod.storageNs.v1Ns.StorageClass
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1Ns.VolumeAttachment
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1Ns.VolumeAttachmentSource
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1Ns.VolumeAttachmentSpec
-import typings.atPulumiKubernetes.typesInputMod.storageNs.v1Ns.VolumeAttachmentStatus
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1Ns.VolumeError
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.CSIDriver
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.CSIDriverSpec
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.CSINode
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.CSINodeDriver
 import typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.CSINodeSpec
+import typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.VolumeNodeResources
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,19 +53,19 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StorageClass]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -104,7 +104,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1`]] = js.undefined
       /**
@@ -115,12 +115,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StorageClassList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -136,19 +136,19 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachment]] = js.undefined
       /**
         * Standard object metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -156,11 +156,6 @@ object storageNs extends js.Object {
         * system.
         */
       var spec: Input[VolumeAttachmentSpec]
-      /**
-        * Status of the VolumeAttachment request. Populated by the entity completing the attach or
-        * detach operation, i.e. the external-attacher.
-        */
-      var status: js.UndefOr[Input[VolumeAttachmentStatus]] = js.undefined
     }
     
     /**
@@ -171,7 +166,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1`]] = js.undefined
       /**
@@ -182,12 +177,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -293,19 +288,19 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1alpha1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachment]] = js.undefined
       /**
         * Standard object metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -315,15 +310,6 @@ object storageNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.storageNs.v1alpha1Ns.VolumeAttachmentSpec
           ]
-      /**
-        * Status of the VolumeAttachment request. Populated by the entity completing the attach or
-        * detach operation, i.e. the external-attacher.
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.storageNs.v1alpha1Ns.VolumeAttachmentStatus
-            ]
-          ] = js.undefined
     }
     
     /**
@@ -334,7 +320,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1alpha1`]] = js.undefined
       /**
@@ -349,12 +335,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -463,14 +449,14 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSIDriver]] = js.undefined
       /**
@@ -478,7 +464,8 @@ object storageNs extends js.Object {
         * object refers to; it MUST be the same name returned by the CSI GetPluginName() call for
         * that driver. The driver name must be 63 characters or less, beginning and ending with an
         * alphanumeric character ([a-z0-9A-Z]) with dashes (-), dots (.), and alphanumerics between.
-        * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -495,7 +482,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
@@ -506,12 +493,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSIDriverList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -541,9 +528,30 @@ object storageNs extends js.Object {
         * VolumeConext will be passed if podInfoOnMount is set to true. This list might grow, but the
         * prefix will be used. "csi.storage.k8s.io/pod.name": pod.Name
         * "csi.storage.k8s.io/pod.namespace": pod.Namespace "csi.storage.k8s.io/pod.uid":
-        * string(pod.UID)
+        * string(pod.UID) "csi.storage.k8s.io/ephemeral": "true" iff the volume is an ephemeral
+        * inline volume
+        *                                 defined by a CSIVolumeSource, otherwise "false"
+        *
+        * "csi.storage.k8s.io/ephemeral" is a new feature in Kubernetes 1.16. It is only required for
+        * drivers which support both the "Persistent" and "Ephemeral" VolumeLifecycleMode. Other
+        * drivers can leave pod info disabled and/or ignore this field. As Kubernetes 1.15 doesn't
+        * support this field, drivers can only support one mode when deployed on such a cluster and
+        * the deployment determines which mode that is, for example via a command line parameter of
+        * the driver.
         */
       var podInfoOnMount: js.UndefOr[Input[Boolean]] = js.undefined
+      /**
+        * VolumeLifecycleModes defines what kind of volumes this CSI volume driver supports. The
+        * default if the list is empty is "Persistent", which is the usage defined by the CSI
+        * specification and implemented in Kubernetes via the usual PV/PVC mechanism. The other mode
+        * is "Ephemeral". In this mode, volumes are defined inline inside the pod spec with
+        * CSIVolumeSource and their lifecycle is tied to the lifecycle of that pod. A driver has to
+        * be aware of this because it is only going to get a NodePublishVolume call for such a
+        * volume. For more information about implementing this mode, see
+        * https://kubernetes-csi.github.io/docs/ephemeral-local-volumes.html A driver can support one
+        * or more of these modes and more modes may be added in the future.
+        */
+      var volumeLifecycleModes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     }
     
     /**
@@ -560,14 +568,14 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSINode]] = js.undefined
       /**
@@ -584,6 +592,10 @@ object storageNs extends js.Object {
       * CSINodeDriver holds information about the specification of one CSI driver installed on a node
       */
     trait CSINodeDriver extends js.Object {
+      /**
+        * allocatable represents the volume resources of a node that are available for scheduling.
+        */
+      var allocatable: js.UndefOr[Input[VolumeNodeResources]] = js.undefined
       /**
         * This is the name of the CSI driver that this object refers to. This MUST be the same name
         * returned by the CSI GetPluginName() call for that driver.
@@ -620,7 +632,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
@@ -631,12 +643,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSINodeList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -675,19 +687,19 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StorageClass]] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -726,7 +738,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
@@ -739,12 +751,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StorageClassList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -760,19 +772,19 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachment]] = js.undefined
       /**
         * Standard object metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       /**
@@ -782,15 +794,6 @@ object storageNs extends js.Object {
       var spec: Input[
             typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.VolumeAttachmentSpec
           ]
-      /**
-        * Status of the VolumeAttachment request. Populated by the entity completing the attach or
-        * detach operation, i.e. the external-attacher.
-        */
-      var status: js.UndefOr[
-            Input[
-              typings.atPulumiKubernetes.typesInputMod.storageNs.v1beta1Ns.VolumeAttachmentStatus
-            ]
-          ] = js.undefined
     }
     
     /**
@@ -801,7 +804,7 @@ object storageNs extends js.Object {
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[Input[`storageDOTk8sDOTio/v1beta1`]] = js.undefined
       /**
@@ -816,12 +819,12 @@ object storageNs extends js.Object {
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList]] = js.undefined
       /**
         * Standard list metadata More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[Input[ListMeta]] = js.undefined
     }
@@ -907,6 +910,20 @@ object storageNs extends js.Object {
         * Time the error was encountered.
         */
       var time: js.UndefOr[Input[String]] = js.undefined
+    }
+    
+    /**
+      * VolumeNodeResources is a set of resource limits for scheduling of volumes.
+      */
+    trait VolumeNodeResources extends js.Object {
+      /**
+        * Maximum number of unique volumes managed by the CSI driver that can be used on a node. A
+        * volume that is both attached and mounted on a node is considered to be used once, not
+        * twice. The same rule applies for a unique volume that is shared among multiple pods on the
+        * same node. If this field is nil, then the supported number of volumes on this node is
+        * unbounded.
+        */
+      var count: js.UndefOr[Input[Double]] = js.undefined
     }
     
     def isCSIDriver(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1beta1.CSIDriver */ Boolean = js.native

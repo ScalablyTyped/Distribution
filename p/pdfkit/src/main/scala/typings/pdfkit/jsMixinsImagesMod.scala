@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pdfkit/js/mixins/images", JSImport.Namespace)
 @js.native
-object jsMixinsImagesMod extends TopLevel[PDFImage[Unit]]
+object jsMixinsImagesMod extends TopLevel[PDFImage]
 

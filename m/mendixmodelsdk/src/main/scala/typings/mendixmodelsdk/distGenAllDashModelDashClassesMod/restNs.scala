@@ -446,6 +446,7 @@ object restNs extends js.Object {
   @js.native
   object RestOperationParameterType extends js.Object {
     var Body: typings.mendixmodelsdk.distGenRestMod.restNs.RestOperationParameterType = js.native
+    var Form: typings.mendixmodelsdk.distGenRestMod.restNs.RestOperationParameterType = js.native
     var Header: typings.mendixmodelsdk.distGenRestMod.restNs.RestOperationParameterType = js.native
     var Path: typings.mendixmodelsdk.distGenRestMod.restNs.RestOperationParameterType = js.native
     var Query: typings.mendixmodelsdk.distGenRestMod.restNs.RestOperationParameterType = js.native

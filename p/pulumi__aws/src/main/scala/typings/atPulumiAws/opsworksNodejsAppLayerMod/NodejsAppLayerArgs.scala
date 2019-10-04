@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksNodejsAppLayerMod
 
-import typings.atPulumiAws.Anon_IopsMountPointNumberOfDisks
+import typings.atPulumiAws.typesInputMod.opsworksNs.NodejsAppLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +43,7 @@ trait NodejsAppLayerArgs extends js.Object {
   /**
     * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
-  val ebsVolumes: js.UndefOr[Input[js.Array[Input[Anon_IopsMountPointNumberOfDisks]]]] = js.undefined
+  val ebsVolumes: js.UndefOr[Input[js.Array[Input[NodejsAppLayerEbsVolume]]]] = js.undefined
   /**
     * Name of an Elastic Load Balancer to attach to this layer
     */
@@ -94,7 +94,7 @@ object NodejsAppLayerArgs {
     customShutdownRecipes: Input[js.Array[Input[String]]] = null,
     customUndeployRecipes: Input[js.Array[Input[String]]] = null,
     drainElbOnShutdown: Input[Boolean] = null,
-    ebsVolumes: Input[js.Array[Input[Anon_IopsMountPointNumberOfDisks]]] = null,
+    ebsVolumes: Input[js.Array[Input[NodejsAppLayerEbsVolume]]] = null,
     elasticLoadBalancer: Input[String] = null,
     installUpdatesOnBoot: Input[Boolean] = null,
     instanceShutdownTimeout: Input[Double] = null,

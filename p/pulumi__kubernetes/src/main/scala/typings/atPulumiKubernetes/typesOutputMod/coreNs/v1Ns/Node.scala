@@ -15,29 +15,29 @@ trait Node extends js.Object {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: v1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.Node
   /**
     * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: ObjectMeta
   /**
     * Spec defines the behavior of a node.
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val spec: NodeSpec
   /**
     * Most recently observed status of the node. Populated by the system. Read-only. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val status: NodeStatus
 }

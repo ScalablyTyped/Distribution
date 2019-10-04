@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetSecurityGroupFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GetSecurityGroupArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetSecurityGroupFilter]] = js.undefined
   /**
     * The id of the specific security group to retrieve.
     */
@@ -34,7 +34,7 @@ trait GetSecurityGroupArgs extends js.Object {
 object GetSecurityGroupArgs {
   @scala.inline
   def apply(
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetSecurityGroupFilter] = null,
     id: String = null,
     name: String = null,
     tags: StringDictionary[js.Any] = null,

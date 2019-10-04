@@ -1,6 +1,7 @@
 package typings.kendoDashUi.kendoNs.uiNs
 
 import typings.kendoDashUi.JQuery
+import typings.kendoDashUi.kendoNs.dataNs.Node
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,6 +35,9 @@ class PanelBar protected () extends Widget {
   def collapse(element: String, useAnimation: Boolean): PanelBar = js.native
   def collapse(element: JQuery, useAnimation: Boolean): PanelBar = js.native
   def collapse(element: Element, useAnimation: Boolean): PanelBar = js.native
+  def dataItem(node: String): Node = js.native
+  def dataItem(node: JQuery): Node = js.native
+  def dataItem(node: Element): Node = js.native
   def enable(element: String, enable: Boolean): Unit = js.native
   def enable(element: JQuery, enable: Boolean): Unit = js.native
   def enable(element: Element, enable: Boolean): Unit = js.native

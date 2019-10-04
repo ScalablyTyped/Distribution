@@ -4,6 +4,7 @@ import typings.rollup.Anon_Define
 import typings.rollup.rollupStrings.`inline`
 import typings.rollup.rollupStrings.auto
 import typings.rollup.rollupStrings.default
+import typings.rollup.rollupStrings.hidden
 import typings.rollup.rollupStrings.named
 import typings.rollup.rollupStrings.none
 import scala.scalajs.js
@@ -45,7 +46,7 @@ object OnWriteOptions {
     outro: String | (js.Function0[String | js.Promise[String]]) = null,
     paths: OptionsPaths = null,
     preferConst: js.UndefOr[Boolean] = js.undefined,
-    sourcemap: Boolean | `inline` = null,
+    sourcemap: Boolean | `inline` | hidden = null,
     sourcemapExcludeSources: js.UndefOr[Boolean] = js.undefined,
     sourcemapFile: String = null,
     sourcemapPathTransform: /* sourcePath */ String => String = null,

@@ -3,7 +3,7 @@ package typings.atTensorflowTfjs.atTensorflowTfjsMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NCHW
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NHWC
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT9`
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT10`
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.bool
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.complex64
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.euclidean
@@ -17,6 +17,7 @@ import typings.atTensorflowTfjsDashCore.Anon_GradsValue
 import typings.atTensorflowTfjsDashCore.Anon_GradsValueArray
 import typings.atTensorflowTfjsDashCore.Anon_Mean
 import typings.atTensorflowTfjsDashCore.distEngineMod.CustomGradientFunc
+import typings.atTensorflowTfjsDashCore.distEngineMod.Engine
 import typings.atTensorflowTfjsDashCore.distEngineMod.MemoryInfo
 import typings.atTensorflowTfjsDashCore.distEngineMod.ProfileInfo
 import typings.atTensorflowTfjsDashCore.distEngineMod.ScopeFn
@@ -331,9 +332,9 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val variable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any = js.native
-  val version_converter: `1DOT2DOT9` = js.native
-  val version_core: `1DOT2DOT9` = js.native
-  val version_layers: `1DOT2DOT9` = js.native
+  val version_converter: `1DOT2DOT10` = js.native
+  val version_core: `1DOT2DOT10` = js.native
+  val version_layers: `1DOT2DOT10` = js.native
   val whereAsync: js.Function1[
     /* condition */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
     js.Promise[Tensor2D]
@@ -472,6 +473,7 @@ object ^ extends js.Object {
   def disposeVariables(): Unit = js.native
   def enableDebugMode(): Unit = js.native
   def enableProdMode(): Unit = js.native
+  def engine(): Engine = js.native
   def fill[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String

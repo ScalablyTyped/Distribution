@@ -2,6 +2,7 @@ package typings.three.srcRenderersWebGLRenderTargetMod
 
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcMathVector4Mod.Vector4
+import typings.three.srcTexturesDepthTextureMod.DepthTexture
 import typings.three.srcTexturesTextureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ class WebGLRenderTarget protected () extends EventDispatcher {
   	 */
   var anisotropy: js.Any = js.native
   var depthBuffer: Boolean = js.native
-  var depthTexture: Texture = js.native
+  var depthTexture: DepthTexture = js.native
   /**
   	 * @deprecated Use {@link Texture#format texture.format} instead.
   	 */

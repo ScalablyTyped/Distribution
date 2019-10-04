@@ -1,7 +1,7 @@
 
 # Scala.js typings for requestidlecallback
 
-Typings are for version 0.1
+Typings are for version 0.3
 
 ## Library description:
 A polyfill for the requestIdleCallback.

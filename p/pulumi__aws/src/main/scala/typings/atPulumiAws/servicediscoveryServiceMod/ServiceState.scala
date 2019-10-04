@@ -1,8 +1,8 @@
 package typings.atPulumiAws.servicediscoveryServiceMod
 
-import typings.atPulumiAws.Anon_DnsRecordsNamespaceId
-import typings.atPulumiAws.Anon_FailureThresholdInput
-import typings.atPulumiAws.Anon_FailureThresholdResourcePath
+import typings.atPulumiAws.typesInputMod.servicediscoveryNs.ServiceDnsConfig
+import typings.atPulumiAws.typesInputMod.servicediscoveryNs.ServiceHealthCheckConfig
+import typings.atPulumiAws.typesInputMod.servicediscoveryNs.ServiceHealthCheckCustomConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,15 +20,15 @@ trait ServiceState extends js.Object {
   /**
     * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
     */
-  val dnsConfig: js.UndefOr[Input[Anon_DnsRecordsNamespaceId]] = js.undefined
+  val dnsConfig: js.UndefOr[Input[ServiceDnsConfig]] = js.undefined
   /**
     * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
     */
-  val healthCheckConfig: js.UndefOr[Input[Anon_FailureThresholdResourcePath]] = js.undefined
+  val healthCheckConfig: js.UndefOr[Input[ServiceHealthCheckConfig]] = js.undefined
   /**
     * A complex type that contains settings for ECS managed health checks.
     */
-  val healthCheckCustomConfig: js.UndefOr[Input[Anon_FailureThresholdInput]] = js.undefined
+  val healthCheckCustomConfig: js.UndefOr[Input[ServiceHealthCheckCustomConfig]] = js.undefined
   /**
     * The name of the service.
     */
@@ -44,9 +44,9 @@ object ServiceState {
   def apply(
     arn: Input[String] = null,
     description: Input[String] = null,
-    dnsConfig: Input[Anon_DnsRecordsNamespaceId] = null,
-    healthCheckConfig: Input[Anon_FailureThresholdResourcePath] = null,
-    healthCheckCustomConfig: Input[Anon_FailureThresholdInput] = null,
+    dnsConfig: Input[ServiceDnsConfig] = null,
+    healthCheckConfig: Input[ServiceHealthCheckConfig] = null,
+    healthCheckCustomConfig: Input[ServiceHealthCheckCustomConfig] = null,
     name: Input[String] = null,
     namespaceId: Input[String] = null
   ): ServiceState = {

@@ -1,8 +1,6 @@
 package typings.readDashConfigDashFile.readDashConfigDashFileMod
 
-import typings.ajv.ajvMod.ErrorObject
 import typings.dotenv.dotenvMod.DotenvParseOutput
-import typings.lazyDashVal.lazyDashValMod.Lazy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,10 +16,5 @@ object ^ extends js.Object {
   def loadParentConfig[T](request: ReadConfigRequest, spec: String): js.Promise[ReadConfigResult[T]] = js.native
   def orIfFileNotExist[T](promise: js.Promise[T], fallbackValue: T): js.Promise[T] = js.native
   def orNullIfFileNotExist[T](promise: js.Promise[T]): js.Promise[T | Null] = js.native
-  def validateConfig(
-    config: js.Any,
-    scheme: Lazy[_],
-    errorMessage: js.Function2[/* error */ String, /* errors */ js.Array[ErrorObject], String]
-  ): js.Promise[Unit] = js.native
 }
 

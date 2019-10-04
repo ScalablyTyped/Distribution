@@ -17,9 +17,9 @@ trait JSONSchemaProps extends js.Object {
   val allOf: js.Array[JSONSchemaProps]
   val anyOf: js.Array[JSONSchemaProps]
   /**
-    * default is a default value for undefined object fields. Defaulting is an alpha feature
-    * under the CustomResourceDefaulting feature gate. Defaulting requires
-    * spec.preserveUnknownFields to be false.
+    * default is a default value for undefined object fields. Defaulting is a beta feature under
+    * the CustomResourceDefaulting feature gate. CustomResourceDefinitions with defaults must be
+    * created using the v1 (or newer) CustomResourceDefinition API.
     */
   val default: js.Any
   val definitions: js.Object
@@ -76,6 +76,32 @@ trait JSONSchemaProps extends js.Object {
     */
   val x_kubernetes_int_or_string: Boolean
   /**
+    * x-kubernetes-list-map-keys annotates an array with the x-kubernetes-list-type `map` by
+    * specifying the keys used as the index of the map.
+    *
+    * This tag MUST only be used on lists that have the "x-kubernetes-list-type" extension set to
+    * "map". Also, the values specified for this attribute must be a scalar typed field of the
+    * child structure (no nesting is supported).
+    */
+  val x_kubernetes_list_map_keys: js.Array[String]
+  /**
+    * x-kubernetes-list-type annotates an array to further describe its topology. This extension
+    * must only be used on lists and may have 3 possible values:
+    *
+    * 1) `atomic`: the list is treated as a single entity, like a scalar.
+    *      Atomic lists will be entirely replaced when updated. This extension
+    *      may be used on any type of list (struct, scalar, ...).
+    * 2) `set`:
+    *      Sets are lists that must not have multiple items with the same value. Each
+    *      value must be a scalar (or another atomic type).
+    * 3) `map`:
+    *      These lists are like maps in that their elements have a non-index key
+    *      used to identify them. Order is preserved upon merge. The map tag
+    *      must only be used on a list with elements of type object.
+    * Defaults to atomic for arrays.
+    */
+  val x_kubernetes_list_type: String
+  /**
     * x-kubernetes-preserve-unknown-fields stops the API server decoding step from pruning fields
     * which are not specified in the validation schema. This affects fields recursively, but
     * switches back to normal pruning behaviour if nested properties or additionalProperties are
@@ -126,9 +152,11 @@ object JSONSchemaProps {
     uniqueItems: Boolean,
     x_kubernetes_embedded_resource: Boolean,
     x_kubernetes_int_or_string: Boolean,
+    x_kubernetes_list_map_keys: js.Array[String],
+    x_kubernetes_list_type: String,
     x_kubernetes_preserve_unknown_fields: Boolean
   ): JSONSchemaProps = {
-    val __obj = js.Dynamic.literal($ref = $ref, $schema = $schema, additionalItems = additionalItems.asInstanceOf[js.Any], additionalProperties = additionalProperties.asInstanceOf[js.Any], allOf = allOf, anyOf = anyOf, default = default, definitions = definitions, dependencies = dependencies, description = description, enum = enum, example = example, exclusiveMaximum = exclusiveMaximum, exclusiveMinimum = exclusiveMinimum, externalDocs = externalDocs, format = format, id = id, items = items.asInstanceOf[js.Any], maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, nullable = nullable, oneOf = oneOf, pattern = pattern, patternProperties = patternProperties, properties = properties, required = required, title = title, uniqueItems = uniqueItems, x_kubernetes_embedded_resource = x_kubernetes_embedded_resource, x_kubernetes_int_or_string = x_kubernetes_int_or_string, x_kubernetes_preserve_unknown_fields = x_kubernetes_preserve_unknown_fields)
+    val __obj = js.Dynamic.literal($ref = $ref, $schema = $schema, additionalItems = additionalItems.asInstanceOf[js.Any], additionalProperties = additionalProperties.asInstanceOf[js.Any], allOf = allOf, anyOf = anyOf, default = default, definitions = definitions, dependencies = dependencies, description = description, enum = enum, example = example, exclusiveMaximum = exclusiveMaximum, exclusiveMinimum = exclusiveMinimum, externalDocs = externalDocs, format = format, id = id, items = items.asInstanceOf[js.Any], maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, nullable = nullable, oneOf = oneOf, pattern = pattern, patternProperties = patternProperties, properties = properties, required = required, title = title, uniqueItems = uniqueItems, x_kubernetes_embedded_resource = x_kubernetes_embedded_resource, x_kubernetes_int_or_string = x_kubernetes_int_or_string, x_kubernetes_list_map_keys = x_kubernetes_list_map_keys, x_kubernetes_list_type = x_kubernetes_list_type, x_kubernetes_preserve_unknown_fields = x_kubernetes_preserve_unknown_fields)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSONSchemaProps]
   }

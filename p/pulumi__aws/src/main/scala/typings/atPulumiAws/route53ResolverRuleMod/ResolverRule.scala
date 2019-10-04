@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ResolverRuleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_IpPort
+import typings.atPulumiAws.typesOutputMod.route53Ns.ResolverRuleTargetIp
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -61,7 +61,7 @@ class ResolverRule protected () extends CustomResource {
     * Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
     * This argument should only be specified for `FORWARD` type rules.
     */
-  val targetIps: Output[js.UndefOr[js.Array[Anon_IpPort]]] = js.native
+  val targetIps: Output[js.UndefOr[js.Array[ResolverRuleTargetIp]]] = js.native
 }
 
 /* static members */

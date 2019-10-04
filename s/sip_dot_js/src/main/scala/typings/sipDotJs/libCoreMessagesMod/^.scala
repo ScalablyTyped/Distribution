@@ -1,8 +1,7 @@
 package typings.sipDotJs.libCoreMessagesMod
 
-import typings.sipDotJs.Anon_BodyContentType
+import typings.sipDotJs.Anon_Body
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
-import typings.sipDotJs.libCoreMessagesBodyMod.OutgoingResponseBody
 import typings.sipDotJs.libCoreMessagesOutgoingDashResponseMod.OutgoingResponse
 import typings.sipDotJs.libCoreMessagesOutgoingDashResponseMod.ResponseOptions
 import scala.scalajs.js
@@ -17,8 +16,8 @@ object ^ extends js.Object {
     options: ResponseOptions
   ): OutgoingResponse = js.native
   def fromBodyLegacy(bodyLegacy: String): Body = js.native
-  def fromBodyLegacy(bodyLegacy: Anon_BodyContentType): Body = js.native
-  def getBody(message: OutgoingResponseBody): js.UndefOr[Body] = js.native
+  def fromBodyLegacy(bodyLegacy: Anon_Body): Body = js.native
+  def getBody(message: Body): js.UndefOr[Body] = js.native
   def getBody(message: typings.sipDotJs.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage): js.UndefOr[Body] = js.native
   def getBody(
     message: typings.sipDotJs.libCoreMessagesIncomingDashResponseDashMessageMod.IncomingResponseMessage

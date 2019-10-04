@@ -10,17 +10,24 @@ Simple config handling for your app or module.
 @JSImport("conf", JSImport.Namespace)
 @js.native
 /**
+	Changes are written to disk atomically, so if the process crashes during a write, it will not corrupt the existing config.
 	@example
 	```
 	import Conf = require('conf');
-	const config = new Conf();
+	type StoreType = {
+		isRainbow: boolean,
+		unicorn?: string
+	}
+	const config = new Conf<StoreType>({
+		defaults: {
+			isRainbow: true
+		}
+	});
+	config.get('isRainbow');
+	//=> true
 	config.set('unicorn', '🦄');
 	console.log(config.get('unicorn'));
 	//=> '🦄'
-	// Use dot-notation to access nested properties
-	config.set('foo.bar', true);
-	console.log(config.get('foo'));
-	//=> {bar: true}
 	config.delete('unicorn');
 	console.log(config.get('unicorn'));
 	//=> undefined

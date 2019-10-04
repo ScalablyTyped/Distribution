@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgDeliveryChannelMod
 
-import typings.atPulumiAws.Anon_DeliveryFrequency
+import typings.atPulumiAws.typesOutputMod.cfgNs.DeliveryChannelSnapshotDeliveryProperties
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -37,7 +37,7 @@ class DeliveryChannel protected () extends CustomResource {
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: Output[js.UndefOr[Anon_DeliveryFrequency]] = js.native
+  val snapshotDeliveryProperties: Output[js.UndefOr[DeliveryChannelSnapshotDeliveryProperties]] = js.native
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.transferServerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_VpcEndpointId
+import typings.atPulumiAws.typesOutputMod.transferNs.ServerEndpointDetails
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -35,9 +35,9 @@ class Server protected () extends CustomResource {
   /**
     * The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. Fields documented below.
     */
-  val endpointDetails: Output[js.UndefOr[Anon_VpcEndpointId]] = js.native
+  val endpointDetails: Output[js.UndefOr[ServerEndpointDetails]] = js.native
   /**
-    * The type of endpoint that you want your SFTP server connect to. If you connect to a `VPC_ENDPOINT`, your SFTP server isn't accessible over the public internet. If you want to connect your SFTP server via public internet, set `PUBLIC`.
+    * The type of endpoint that you want your SFTP server connect to. If you connect to a `VPC_ENDPOINT`, your SFTP server isn't accessible over the public internet. If you want to connect your SFTP server via public internet, set `PUBLIC`.  Defaults to `PUBLIC`.
     */
   val endpointType: Output[js.UndefOr[String]] = js.native
   /**

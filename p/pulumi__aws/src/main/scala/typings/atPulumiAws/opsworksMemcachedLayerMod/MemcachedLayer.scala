@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksMemcachedLayerMod
 
-import typings.atPulumiAws.Anon_IopsMountPoint
+import typings.atPulumiAws.typesOutputMod.opsworksNs.MemcachedLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -62,7 +62,7 @@ class MemcachedLayer protected () extends CustomResource {
   /**
     * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
-  val ebsVolumes: Output[js.UndefOr[js.Array[Anon_IopsMountPoint]]] = js.native
+  val ebsVolumes: Output[js.UndefOr[js.Array[MemcachedLayerEbsVolume]]] = js.native
   /**
     * Name of an Elastic Load Balancer to attach to this layer
     */

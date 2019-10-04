@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-persist/es/integration/getStoredStateMigrateV4", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getStoredState(v4Config: V4Config): js.Function1[/* config */ PersistConfig, js.Promise[_ | Unit]] = js.native
+  def default(v4Config: V4Config): js.Function1[/* config */ PersistConfig[_, _, _, _], js.Promise[js.UndefOr[js.Object]]] = js.native
 }
 

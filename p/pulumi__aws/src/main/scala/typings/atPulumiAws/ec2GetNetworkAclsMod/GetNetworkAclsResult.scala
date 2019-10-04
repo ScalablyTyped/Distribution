@@ -1,13 +1,13 @@
 package typings.atPulumiAws.ec2GetNetworkAclsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetNetworkAclsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetNetworkAclsResult extends js.Object {
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetNetworkAclsFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -26,7 +26,7 @@ object GetNetworkAclsResult {
     id: String,
     ids: js.Array[String],
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetNetworkAclsFilter] = null,
     vpcId: String = null
   ): GetNetworkAclsResult = {
     val __obj = js.Dynamic.literal(id = id, ids = ids, tags = tags)

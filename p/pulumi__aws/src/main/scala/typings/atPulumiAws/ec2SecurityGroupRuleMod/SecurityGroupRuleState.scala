@@ -24,7 +24,6 @@ trait SecurityGroupRuleState extends js.Object {
   val ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**
     * List of prefix list IDs (for allowing access to VPC endpoints).
-    * Only valid with `egress`.
     */
   val prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

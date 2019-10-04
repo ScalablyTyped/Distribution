@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Provides information about the worksheet that raised the left-clicked/tapped event.
+  * Provides information about the left-clicked/tapped event and its related worksheet.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ec2SpotFleetRequestMod
 
-import typings.atPulumiAws.Anon_AmiAssociatePublicIpAddress
+import typings.atPulumiAws.typesInputMod.ec2Ns.SpotFleetRequestLaunchSpecification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,7 @@ trait SpotFleetRequestState extends js.Object {
     * spot-fleet request. Can be specified multiple times to define different bids
     * across different markets and instance types.
     */
-  val launchSpecifications: js.UndefOr[Input[js.Array[Input[Anon_AmiAssociatePublicIpAddress]]]] = js.undefined
+  val launchSpecifications: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecification]]]] = js.undefined
   /**
     * A list of elastic load balancer names to add to the Spot fleet.
     */
@@ -109,7 +109,7 @@ object SpotFleetRequestState {
     iamFleetRole: Input[String] = null,
     instanceInterruptionBehaviour: Input[String] = null,
     instancePoolsToUseCount: Input[Double] = null,
-    launchSpecifications: Input[js.Array[Input[Anon_AmiAssociatePublicIpAddress]]] = null,
+    launchSpecifications: Input[js.Array[Input[SpotFleetRequestLaunchSpecification]]] = null,
     loadBalancers: Input[js.Array[Input[String]]] = null,
     replaceUnhealthyInstances: Input[Boolean] = null,
     spotPrice: Input[String] = null,

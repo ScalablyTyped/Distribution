@@ -11,18 +11,18 @@ import scala.scalajs.js.annotation._
 trait GlusterfsVolumeSource extends js.Object {
   /**
     * EndpointsName is the endpoint name that details Glusterfs topology. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+    * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
     */
   val endpoints: String
   /**
     * Path is the Glusterfs volume path. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+    * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
     */
   val path: String
   /**
     * ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions.
     * Defaults to false. More info:
-    * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+    * https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
     */
   val readOnly: Boolean
 }

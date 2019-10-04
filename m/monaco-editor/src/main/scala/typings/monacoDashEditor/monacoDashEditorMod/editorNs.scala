@@ -12,6 +12,7 @@ import typings.monacoDashEditor.monacoDashEditorMod.editorNs.BuiltinTheme
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ContentWidgetPositionPreference
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.CursorChangeReason
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.DefaultEndOfLine
+import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoClosingOvertypeStrategy
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorContribOptions
@@ -41,6 +42,7 @@ import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ICursorSelectionCha
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ICursorState
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ICursorStateComputer
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ICursorStateComputerData
+import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IDecorationOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IDiffEditor
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IDiffEditorConstructionOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IDiffEditorModel
@@ -75,6 +77,7 @@ import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelChangedEvent
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelContentChange
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelContentChangedEvent
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelDecoration
+import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelDecorationMinimapOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelDecorationOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelDecorationOverviewRulerOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.IModelDecorationsChangedEvent
@@ -109,6 +112,7 @@ import typings.monacoDashEditor.monacoDashEditorMod.editorNs.InternalEditorViewO
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.InternalGoToLocationOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.InternalParameterHintOptions
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.InternalSuggestOptions
+import typings.monacoDashEditor.monacoDashEditorMod.editorNs.MinimapPosition
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.MonacoWebWorker
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.MouseTargetType
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.OverlayWidgetPositionPreference
@@ -170,6 +174,7 @@ import typings.monacoDashEditor.monacoDashEditorStrings.recentlyUsed
 import typings.monacoDashEditor.monacoDashEditorStrings.recentlyUsedByPrefix
 import typings.monacoDashEditor.monacoDashEditorStrings.relative
 import typings.monacoDashEditor.monacoDashEditorStrings.right
+import typings.monacoDashEditor.monacoDashEditorStrings.selection
 import typings.monacoDashEditor.monacoDashEditorStrings.smart
 import typings.monacoDashEditor.monacoDashEditorStrings.top
 import typings.monacoDashEditor.monacoDashEditorStrings.visible
@@ -210,6 +215,13 @@ object editorNs extends js.Object {
   
   @js.native
   sealed trait DefaultEndOfLine extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.monacoDashEditor.monacoDashEditorStrings.always
+    - typings.monacoDashEditor.monacoDashEditorStrings.auto
+    - typings.monacoDashEditor.monacoDashEditorStrings.never
+  */
+  trait EditorAutoClosingOvertypeStrategy extends js.Object
   
   /* Rewritten from type alias, can be one of: 
     - typings.monacoDashEditor.monacoDashEditorStrings.always
@@ -489,6 +501,11 @@ object editorNs extends js.Object {
       source: String,
       edits: js.Array[IIdentifiedSingleEditOperation],
       endCursorState: js.Array[Selection]
+    ): Boolean = js.native
+    def executeEdits(
+      source: String,
+      edits: js.Array[IIdentifiedSingleEditOperation],
+      endCursorState: ICursorStateComputer
     ): Boolean = js.native
     /**
       * Get an action that is a contribution to this editor.
@@ -789,6 +806,7 @@ object editorNs extends js.Object {
   trait IConfigurationChangedEvent extends js.Object {
     val accessibilitySupport: Boolean
     val autoClosingBrackets: Boolean
+    val autoClosingOvertype: Boolean
     val autoClosingQuotes: Boolean
     val autoIndent: Boolean
     val autoSurround: Boolean
@@ -911,6 +929,19 @@ object editorNs extends js.Object {
       * @return The selection.
       */
     def getTrackedSelection(id: String): Selection
+  }
+  
+  trait IDecorationOptions extends js.Object {
+    /**
+      * CSS color to render.
+      * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
+      */
+    var color: js.UndefOr[String | ThemeColor] = js.undefined
+    /**
+      * CSS color to render.
+      * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
+      */
+    var darkColor: js.UndefOr[String | ThemeColor] = js.undefined
   }
   
   @js.native
@@ -1412,6 +1443,10 @@ object editorNs extends js.Object {
       */
     var autoClosingBrackets: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
     /**
+      * Options for typing over closing quotes or brackets.
+      */
+    var autoClosingOvertype: js.UndefOr[EditorAutoClosingOvertypeStrategy] = js.undefined
+    /**
       * Options for auto closing quotes.
       * Defaults to language defined behavior.
       */
@@ -1473,6 +1508,11 @@ object editorNs extends js.Object {
       * Defaults to 'line'.
       */
     var cursorStyle: js.UndefOr[String] = js.undefined
+    /**
+      * Controls the minimal number of visible leading and trailing lines surrounding the cursor.
+      * Defaults to 0.
+      */
+    var cursorSurroundingLines: js.UndefOr[Double] = js.undefined
     /**
       * Control the width of the cursor when cursorStyle is set to 'line'
       */
@@ -1701,7 +1741,7 @@ object editorNs extends js.Object {
       * Enable rendering of whitespace.
       * Defaults to none.
       */
-    var renderWhitespace: js.UndefOr[none | boundary | all] = js.undefined
+    var renderWhitespace: js.UndefOr[none | boundary | selection | all] = js.undefined
     /**
       * When revealing the cursor, a virtual padding (px) is added to the cursor, turning it into a rectangle.
       * This virtual padding ensures that the cursor gets revealed before hitting the edge of the viewport.
@@ -2062,6 +2102,13 @@ object editorNs extends js.Object {
     val range: Range
   }
   
+  trait IModelDecorationMinimapOptions extends IDecorationOptions {
+    /**
+      * The position in the overview ruler.
+      */
+    var position: MinimapPosition
+  }
+  
   trait IModelDecorationOptions extends js.Object {
     /**
       * If set, the decoration will be rendered after the text with this CSS class name.
@@ -2110,6 +2157,10 @@ object editorNs extends js.Object {
       */
     var marginClassName: js.UndefOr[String | Null] = js.undefined
     /**
+      * If set, render this decoration in the minimap.
+      */
+    var minimap: js.UndefOr[IModelDecorationMinimapOptions | Null] = js.undefined
+    /**
       * If set, render this decoration in the overview ruler.
       */
     var overviewRuler: js.UndefOr[IModelDecorationOverviewRulerOptions | Null] = js.undefined
@@ -2125,17 +2176,7 @@ object editorNs extends js.Object {
     var zIndex: js.UndefOr[Double] = js.undefined
   }
   
-  trait IModelDecorationOverviewRulerOptions extends js.Object {
-    /**
-      * CSS color to render in the overview ruler.
-      * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
-      */
-    var color: js.UndefOr[String | ThemeColor] = js.undefined
-    /**
-      * CSS color to render in the overview ruler.
-      * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
-      */
-    var darkColor: js.UndefOr[String | ThemeColor] = js.undefined
+  trait IModelDecorationOverviewRulerOptions extends IDecorationOptions {
     /**
       * The position in the overview ruler.
       */
@@ -2869,17 +2910,17 @@ object editorNs extends js.Object {
       * @param zone Zone to create
       * @return A unique identifier to the view zone.
       */
-    def addZone(zone: IViewZone): Double
+    def addZone(zone: IViewZone): String
     /**
       * Change a zone's position.
       * The editor will rescan the `afterLineNumber` and `afterColumn` properties of a view zone.
       */
-    def layoutZone(id: Double): Unit
+    def layoutZone(id: String): Unit
     /**
       * Remove a zone
       * @param id A unique identifier to the view zone, as returned by the `addZone` call.
       */
-    def removeZone(id: Double): Unit
+    def removeZone(id: String): Unit
   }
   
   trait IWebWorkerOptions extends js.Object {
@@ -2887,6 +2928,10 @@ object editorNs extends js.Object {
       * The data to send over when calling create on the module.
       */
     var createData: js.UndefOr[js.Any] = js.undefined
+    /**
+      * An object that can be used by the web worker to make calls back to the main thread.
+      */
+    var host: js.UndefOr[js.Any] = js.undefined
     /**
       * A label to be used to identify the web worker for debugging purposes.
       */
@@ -2937,6 +2982,7 @@ object editorNs extends js.Object {
   class InternalEditorOptions () extends js.Object {
     val _internalEditorOptionsBrand: Unit = js.native
     val autoClosingBrackets: EditorAutoClosingStrategy = js.native
+    val autoClosingOvertype: EditorAutoClosingOvertypeStrategy = js.native
     val autoClosingQuotes: EditorAutoClosingStrategy = js.native
     val autoIndent: Boolean = js.native
     val autoSurround: EditorAutoSurroundStrategy = js.native
@@ -2982,6 +3028,7 @@ object editorNs extends js.Object {
     val cursorBlinking: TextEditorCursorBlinkingStyle
     val cursorSmoothCaretAnimation: Boolean
     val cursorStyle: TextEditorCursorStyle
+    val cursorSurroundingLines: Double
     val cursorWidth: Double
     val disableMonospaceOptimizations: Boolean
     val extraEditorClassName: String
@@ -3000,7 +3047,7 @@ object editorNs extends js.Object {
     val renderIndentGuides: Boolean
     val renderLineHighlight: none | gutter | line | all
     val renderLineNumbers: RenderLineNumbersType
-    val renderWhitespace: none | boundary | all
+    val renderWhitespace: none | boundary | selection | all
     val revealHorizontalRightPadding: Double
     val roundedSelection: Boolean
     val rulers: js.Array[Double]
@@ -3031,6 +3078,9 @@ object editorNs extends js.Object {
     val snippets: top | bottom | `inline` | none
     val snippetsPreventQuickSuggestions: Boolean
   }
+  
+  @js.native
+  sealed trait MinimapPosition extends js.Object
   
   trait MonacoWebWorker[T] extends js.Object {
     /**
@@ -3300,6 +3350,16 @@ object editorNs extends js.Object {
     /* 0 */ val LF: typings.monacoDashEditor.monacoDashEditorMod.editorNs.EndOfLineSequence.LF with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[EndOfLineSequence with Double] = js.native
+  }
+  
+  @js.native
+  object MinimapPosition extends js.Object {
+    @js.native
+    sealed trait Inline extends MinimapPosition
+    
+    /* 1 */ val Inline: typings.monacoDashEditor.monacoDashEditorMod.editorNs.MinimapPosition.Inline with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[MinimapPosition with Double] = js.native
   }
   
   @js.native

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.apigatewayUsagePlanMod
 
-import typings.atPulumiAws.Anon_ApiId
-import typings.atPulumiAws.Anon_BurstLimitRateLimitNumber
-import typings.atPulumiAws.Anon_Limit
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.UsagePlanApiStage
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.UsagePlanQuotaSettings
+import typings.atPulumiAws.typesOutputMod.apigatewayNs.UsagePlanThrottleSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -28,7 +28,7 @@ class UsagePlan protected () extends CustomResource {
   /**
     * The associated API stages of the usage plan.
     */
-  val apiStages: Output[js.UndefOr[js.Array[Anon_ApiId]]] = js.native
+  val apiStages: Output[js.UndefOr[js.Array[UsagePlanApiStage]]] = js.native
   /**
     * The description of a usage plan.
     */
@@ -44,11 +44,11 @@ class UsagePlan protected () extends CustomResource {
   /**
     * The quota settings of the usage plan.
     */
-  val quotaSettings: Output[js.UndefOr[Anon_Limit]] = js.native
+  val quotaSettings: Output[js.UndefOr[UsagePlanQuotaSettings]] = js.native
   /**
     * The throttling limits of the usage plan.
     */
-  val throttleSettings: Output[js.UndefOr[Anon_BurstLimitRateLimitNumber]] = js.native
+  val throttleSettings: Output[js.UndefOr[UsagePlanThrottleSettings]] = js.native
 }
 
 /* static members */

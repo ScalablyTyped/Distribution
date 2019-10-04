@@ -1,6 +1,6 @@
 package typings.atPulumiAws.daxParameterGroupMod
 
-import typings.atPulumiAws.Anon_NameValue
+import typings.atPulumiAws.typesInputMod.daxNs.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait ParameterGroupState extends js.Object {
   /**
     * The parameters of the parameter group.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[Anon_NameValue]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.undefined
 }
 
 object ParameterGroupState {
@@ -26,7 +26,7 @@ object ParameterGroupState {
   def apply(
     description: Input[String] = null,
     name: Input[String] = null,
-    parameters: Input[js.Array[Input[Anon_NameValue]]] = null
+    parameters: Input[js.Array[Input[ParameterGroupParameter]]] = null
   ): ParameterGroupState = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

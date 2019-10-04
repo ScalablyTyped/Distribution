@@ -48,7 +48,7 @@ class SubscriptionDialog protected ()
   /**
     * Handle in dialog NOTIFY requests.
     * This does not include the first NOTIFY which created the dialog.
-    * @param message The incoming NOTIFY request message.
+    * @param message - The incoming NOTIFY request message.
     */
   var onNotify: js.Any = js.native
   var onRefresh: js.Any = js.native
@@ -95,8 +95,8 @@ object SubscriptionDialog extends js.Object {
     * constructs the state of the dialog.  This state MUST be maintained
     * for the duration of the dialog.
     * https://tools.ietf.org/html/rfc3261#section-12.1.2
-    * @param outgoingRequestMessage Outgoing request message for dialog.
-    * @param incomingResponseMessage Incoming response message creating dialog.
+    * @param outgoingRequestMessage - Outgoing request message for dialog.
+    * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   def initialDialogStateForSubscription(
     outgoingSubscribeRequestMessage: OutgoingRequestMessage,

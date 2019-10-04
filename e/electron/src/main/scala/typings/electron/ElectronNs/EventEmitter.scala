@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO: Replace this declaration with NodeJS.EventEmitter
 @JSGlobal("Electron.EventEmitter")
 @js.native
 class EventEmitter () extends js.Object {
   def addListener(event: String, listener: js.Function): this.type = js.native
   def emit(event: String, args: js.Any*): Boolean = js.native
-  def eventNames(): js.Array[String] = js.native
+  def eventNames(): js.Array[String | js.Symbol] = js.native
   def getMaxListeners(): Double = js.native
   def listenerCount(`type`: String): Double = js.native
   def listeners(event: String): js.Array[js.Function] = js.native

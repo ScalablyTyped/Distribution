@@ -1,7 +1,7 @@
 package typings.atPulumiAws.efsFileSystemMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_TransitionToIaInput
+import typings.atPulumiAws.typesInputMod.efsNs.FileSystemLifecyclePolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ trait FileSystemState extends js.Object {
   /**
     * A file system [lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/API_LifecyclePolicy.html) object (documented below).
     */
-  val lifecyclePolicy: js.UndefOr[Input[Anon_TransitionToIaInput]] = js.undefined
+  val lifecyclePolicy: js.UndefOr[Input[FileSystemLifecyclePolicy]] = js.undefined
   /**
     * The file system performance mode. Can be either `"generalPurpose"` or `"maxIO"` (Default: `"generalPurpose"`).
     */
@@ -61,7 +61,7 @@ object FileSystemState {
     dnsName: Input[String] = null,
     encrypted: Input[Boolean] = null,
     kmsKeyId: Input[String] = null,
-    lifecyclePolicy: Input[Anon_TransitionToIaInput] = null,
+    lifecyclePolicy: Input[FileSystemLifecyclePolicy] = null,
     performanceMode: Input[String] = null,
     provisionedThroughputInMibps: Input[Double] = null,
     tags: Input[StringDictionary[_]] = null,

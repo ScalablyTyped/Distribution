@@ -35,8 +35,8 @@ trait MethodArgs extends js.Object {
     */
   val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
-    * A map of request query string parameters and headers that should be passed to the integration.
-    * For example: `requestParameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request
+    * A map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (`true`) or optional (`false`).
+    * For example: `requestParameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request.
     */
   val requestParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined
   /**

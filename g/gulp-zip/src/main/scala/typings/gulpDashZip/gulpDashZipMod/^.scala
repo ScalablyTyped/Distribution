@@ -1,6 +1,6 @@
 package typings.gulpDashZip.gulpDashZipMod
 
-import typings.node.NodeJSNs.ReadStream
+import typings.node.processMod.Global.NodeJSNs.ReadStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

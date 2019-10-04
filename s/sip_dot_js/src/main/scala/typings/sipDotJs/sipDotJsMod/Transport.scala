@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Transport protected ()
   extends typings.sipDotJs.libCoreMod.Transport {
+  /**
+    * Constructor
+    * @param logger - Logger.
+    * @param options - Options bucket. Deprecated.
+    */
+  def this(logger: Logger) = this()
   def this(logger: Logger, options: js.Any) = this()
 }
 

@@ -25,6 +25,7 @@ class Popup protected () extends Widget {
 @JSGlobal("kendo.ui.Popup")
 @js.native
 object Popup extends js.Object {
+  var TabKeyTrap: js.Any = js.native
   var fn: Popup = js.native
   def extend(proto: js.Object): Popup = js.native
 }

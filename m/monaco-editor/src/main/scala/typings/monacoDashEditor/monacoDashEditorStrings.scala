@@ -1,6 +1,7 @@
 package typings.monacoDashEditor
 
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.BuiltinTheme
+import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoClosingOvertypeStrategy
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
 import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
 import scala.scalajs.js
@@ -45,10 +46,12 @@ object monacoDashEditorStrings {
   sealed trait altKey extends js.Object
   
   @js.native
-  sealed trait always extends EditorAutoClosingStrategy
+  sealed trait always
+    extends EditorAutoClosingOvertypeStrategy
+       with EditorAutoClosingStrategy
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends EditorAutoClosingOvertypeStrategy
   
   @js.native
   sealed trait beforeWhitespace extends EditorAutoClosingStrategy
@@ -147,7 +150,8 @@ object monacoDashEditorStrings {
   
   @js.native
   sealed trait never
-    extends EditorAutoClosingStrategy
+    extends EditorAutoClosingOvertypeStrategy
+       with EditorAutoClosingStrategy
        with EditorAutoSurroundStrategy
   
   @js.native
@@ -182,6 +186,9 @@ object monacoDashEditorStrings {
   
   @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait selection extends js.Object
   
   @js.native
   sealed trait smart extends js.Object
@@ -318,6 +325,8 @@ object monacoDashEditorStrings {
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def selection: selection = "selection".asInstanceOf[selection]
   @scala.inline
   def smart: smart = "smart".asInstanceOf[smart]
   @scala.inline

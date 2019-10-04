@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafRuleGroupMod
 
-import typings.atPulumiAws.Anon_ActionPriority
+import typings.atPulumiAws.typesOutputMod.wafNs.RuleGroupActivatedRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -25,7 +25,7 @@ class RuleGroup protected () extends CustomResource {
   /**
     * A list of activated rules, see below
     */
-  val activatedRules: Output[js.UndefOr[js.Array[Anon_ActionPriority]]] = js.native
+  val activatedRules: Output[js.UndefOr[js.Array[RuleGroupActivatedRule]]] = js.native
   /**
     * A friendly name for the metrics from the rule group
     */

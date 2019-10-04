@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait CreateDiskRequest extends js.Object {
   /**
-    * The Availability Zone where you want to create the disk (e.g., us-east-2a). Choose the same Availability Zone as the Lightsail instance where you want to create the disk. Use the GetRegions operation to list the Availability Zones where Lightsail is currently available.
+    * An array of objects that represent the add-ons to enable for the new disk.
+    */
+  var addOns: js.UndefOr[AddOnRequestList] = js.undefined
+  /**
+    * The Availability Zone where you want to create the disk (e.g., us-east-2a). Use the same Availability Zone as the Lightsail instance to which you want to attach the disk. Use the get regions operation to list the Availability Zones where Lightsail is currently available.
     */
   var availabilityZone: NonEmptyString
   /**
@@ -25,8 +29,15 @@ trait CreateDiskRequest extends js.Object {
 
 object CreateDiskRequest {
   @scala.inline
-  def apply(availabilityZone: NonEmptyString, diskName: ResourceName, sizeInGb: integer, tags: TagList = null): CreateDiskRequest = {
+  def apply(
+    availabilityZone: NonEmptyString,
+    diskName: ResourceName,
+    sizeInGb: integer,
+    addOns: AddOnRequestList = null,
+    tags: TagList = null
+  ): CreateDiskRequest = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone, diskName = diskName, sizeInGb = sizeInGb)
+    if (addOns != null) __obj.updateDynamic("addOns")(addOns)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateDiskRequest]
   }

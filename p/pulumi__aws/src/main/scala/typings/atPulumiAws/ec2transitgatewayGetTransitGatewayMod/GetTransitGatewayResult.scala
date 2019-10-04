@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2transitgatewayGetTransitGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2transitgatewayNs.GetTransitGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ trait GetTransitGatewayResult extends js.Object {
     * Whether DNS support is enabled.
     */
   val dnsSupport: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetTransitGatewayFilter]] = js.undefined
   /**
     * EC2 Transit Gateway identifier
     */
@@ -77,7 +77,7 @@ object GetTransitGatewayResult {
     propagationDefaultRouteTableId: String,
     tags: StringDictionary[js.Any],
     vpnEcmpSupport: String,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetTransitGatewayFilter] = null,
     id: String = null
   ): GetTransitGatewayResult = {
     val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, arn = arn, associationDefaultRouteTableId = associationDefaultRouteTableId, autoAcceptSharedAttachments = autoAcceptSharedAttachments, defaultRouteTableAssociation = defaultRouteTableAssociation, defaultRouteTablePropagation = defaultRouteTablePropagation, description = description, dnsSupport = dnsSupport, ownerId = ownerId, propagationDefaultRouteTableId = propagationDefaultRouteTableId, tags = tags, vpnEcmpSupport = vpnEcmpSupport)

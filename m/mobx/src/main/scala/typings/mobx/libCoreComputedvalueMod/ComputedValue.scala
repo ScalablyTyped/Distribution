@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.mobx.libCoreDerivationMod.IDerivation because var conflicts: name, observing. Inlined newObserving, dependenciesState, runId, unboundDepsCount, __mapid, onBecomeStale, isTracing */ @JSImport("mobx/lib/core/computedvalue", "ComputedValue")
+- typings.mobx.libCoreDerivationMod.IDerivation because var conflicts: name, observing. Inlined newObserving, dependenciesState, runId, unboundDepsCount, __mapid, onBecomeStale, isTracing, requiresObservable */ @JSImport("mobx/lib/core/computedvalue", "ComputedValue")
 @js.native
 class ComputedValue[T] protected ()
   extends IObservable
@@ -61,6 +61,10 @@ class ComputedValue[T] protected ()
   var observers_ComputedValue: Set[_] = js.native
   @JSName("observing")
   var observing_ComputedValue: js.Array[IObservable] = js.native
+  /**
+    *  warn if the derivation has no dependencies after creation/update
+    */
+  var requiresObservable: js.UndefOr[Boolean] = js.native
   var requiresReaction: js.Any = js.native
   var runId: Double = js.native
   var scope: js.UndefOr[js.Object] = js.native

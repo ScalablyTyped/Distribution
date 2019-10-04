@@ -1,12 +1,14 @@
 package typings.koaDashPug.koaDashPugMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.koa.koaMod.DefaultContext
+import typings.koa.koaMod.DefaultState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PugOptions extends js.Object {
-  var app: js.UndefOr[typings.koa.koaMod.^[_, js.Object]] = js.undefined
+  var app: js.UndefOr[typings.koa.koaMod.^[DefaultState, DefaultContext]] = js.undefined
   var basedir: js.UndefOr[String] = js.undefined
   var compileDebug: js.UndefOr[Boolean] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
@@ -20,7 +22,7 @@ trait PugOptions extends js.Object {
 object PugOptions {
   @scala.inline
   def apply(
-    app: typings.koa.koaMod.^[_, js.Object] = null,
+    app: typings.koa.koaMod.^[DefaultState, DefaultContext] = null,
     basedir: String = null,
     compileDebug: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,

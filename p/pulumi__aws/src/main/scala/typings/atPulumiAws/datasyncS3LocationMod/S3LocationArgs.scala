@@ -1,8 +1,8 @@
 package typings.atPulumiAws.datasyncS3LocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BucketAccessRoleArnInput
 import typings.atPulumiAws.arnMod.ARN
+import typings.atPulumiAws.typesInputMod.datasyncNs.S3LocationS3Config
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait S3LocationArgs extends js.Object {
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: Input[Anon_BucketAccessRoleArnInput]
+  val s3Config: Input[S3LocationS3Config]
   /**
     * Prefix to perform actions as source or destination.
     */
@@ -31,7 +31,7 @@ object S3LocationArgs {
   @scala.inline
   def apply(
     s3BucketArn: Input[ARN],
-    s3Config: Input[Anon_BucketAccessRoleArnInput],
+    s3Config: Input[S3LocationS3Config],
     subdirectory: Input[String],
     tags: Input[StringDictionary[Input[String]]] = null
   ): S3LocationArgs = {

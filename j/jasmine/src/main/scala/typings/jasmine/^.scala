@@ -5,6 +5,7 @@ import typings.jasmine.jasmineNs.AsyncMatchers
 import typings.jasmine.jasmineNs.Matchers
 import typings.jasmine.jasmineNs.NothingMatcher
 import typings.jasmine.jasmineNs.Spy
+import typings.jasmine.jasmineNs.SpyObj
 import typings.jasmine.jasmineStrings.get
 import typings.jasmine.jasmineStrings.set
 import typings.std.ArrayLike
@@ -21,30 +22,30 @@ object ^ extends js.Object {
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterAll
     */
-  def afterAll(action: ImplementationCallback): Unit = js.native
-  def afterAll(action: ImplementationCallback, timeout: Double): Unit = js.native
+  def afterAll(action: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def afterAll(action: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   /**
     * Run some shared teardown after each of the specs in the describe in which it is called.
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterEach.
     */
-  def afterEach(action: ImplementationCallback): Unit = js.native
-  def afterEach(action: ImplementationCallback, timeout: Double): Unit = js.native
+  def afterEach(action: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def afterEach(action: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   /**
     * Run some shared setup once before all of the specs in the describe are run.
     * Note: Be careful, sharing the setup from a beforeAll makes it easy to accidentally leak state between your specs so that they erroneously pass or fail.
     * @param action Function that contains the code to setup your specs.
     * @param timeout Custom timeout for an async beforeAll.
     */
-  def beforeAll(action: ImplementationCallback): Unit = js.native
-  def beforeAll(action: ImplementationCallback, timeout: Double): Unit = js.native
+  def beforeAll(action: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def beforeAll(action: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   /**
     * Run some shared setup before each of the specs in the describe in which it is called.
     * @param action Function that contains the code to setup your specs.
     * @param timeout Custom timeout for an async beforeEach.
     */
-  def beforeEach(action: ImplementationCallback): Unit = js.native
-  def beforeEach(action: ImplementationCallback, timeout: Double): Unit = js.native
+  def beforeEach(action: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def beforeEach(action: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   /**
     * Create a group of specs (often called a suite).
     * @param description Textual description of the group
@@ -101,8 +102,8 @@ object ^ extends js.Object {
     * @param timeout Custom timeout for an async spec.
     */
   def fit(expectation: String): Unit = js.native
-  def fit(expectation: String, assertion: ImplementationCallback): Unit = js.native
-  def fit(expectation: String, assertion: ImplementationCallback, timeout: Double): Unit = js.native
+  def fit(expectation: String, assertion: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def fit(expectation: String, assertion: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   /**
     * Define a single spec. A spec should contain one or more expectations that test the state of the code.
     * A spec whose expectations all succeed will be passing and a spec with any failures will fail.
@@ -111,8 +112,8 @@ object ^ extends js.Object {
     * @param timeout Custom timeout for an async spec.
     */
   def it(expectation: String): Unit = js.native
-  def it(expectation: String, assertion: ImplementationCallback): Unit = js.native
-  def it(expectation: String, assertion: ImplementationCallback, timeout: Double): Unit = js.native
+  def it(expectation: String, assertion: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def it(expectation: String, assertion: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
   /**
     * Mark a spec as pending, expectation results will be ignored.
     * If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending.
@@ -131,7 +132,7 @@ object ^ extends js.Object {
     * Installs spies on all writable and configurable properties of an object.
     * @param object The object upon which to install the `Spy`s.
     */
-  def spyOnAllFunctions(`object`: js.Object): Spy = js.native
+  def spyOnAllFunctions[T](`object`: T): SpyObj[T] = js.native
   /**
     * Install a spy on a property installed with `Object.defineProperty` onto an existing object.
     * @param object The object upon which to install the `Spy`.
@@ -161,7 +162,7 @@ object ^ extends js.Object {
     * @param timeout Custom timeout for an async spec.
     */
   def xit(expectation: String): Unit = js.native
-  def xit(expectation: String, assertion: ImplementationCallback): Unit = js.native
-  def xit(expectation: String, assertion: ImplementationCallback, timeout: Double): Unit = js.native
+  def xit(expectation: String, assertion: typings.jasmine.jasmineNs.ImplementationCallback): Unit = js.native
+  def xit(expectation: String, assertion: typings.jasmine.jasmineNs.ImplementationCallback, timeout: Double): Unit = js.native
 }
 

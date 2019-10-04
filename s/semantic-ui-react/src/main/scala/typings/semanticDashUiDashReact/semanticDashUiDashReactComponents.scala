@@ -538,14 +538,7 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps]]
   @scala.inline
-  def Ref: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRefRefMod.RefProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsAddonsRefMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRefRefMod.RefProps]]
-  @scala.inline
-  def RefFindNode: ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRefRefFindNodeMod.RefFindNode] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsAddonsRefRefFindNodeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.semanticDashUiDashReact.distCommonjsAddonsRefRefFindNodeMod.RefFindNode]]
-  @scala.inline
-  def RefForward: ComponentType[
-    typings.semanticDashUiDashReact.distCommonjsAddonsRefRefForwardMod.RefForwardProps
-  ] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsAddonsRefRefForwardMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.semanticDashUiDashReact.distCommonjsAddonsRefRefForwardMod.RefForwardProps]]
+  def Ref: ComponentType[typings.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps] = typings.semanticDashUiDashReact.semanticDashUiDashReactMod.^.Ref.asInstanceOf[typings.react.reactMod.ComponentType[typings.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps]]
   @scala.inline
   def Responsive: ComponentType[
     typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps

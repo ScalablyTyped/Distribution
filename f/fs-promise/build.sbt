@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fs-promise"
-version := "1.0-dt-20180214Z-8bc877"
+version := "1.0-dt-20180214Z-b84232"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mz" % "0.0-unknown-dt-20190322Z-96595d",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20190911Z-da4655",
+  "org.scalablytyped" %%% "mz" % "0.0-unknown-dt-20190322Z-f99e24",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

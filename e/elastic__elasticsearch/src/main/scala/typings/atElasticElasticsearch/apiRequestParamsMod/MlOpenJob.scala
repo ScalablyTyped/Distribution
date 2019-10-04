@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MlOpenJob extends Generic {
-  var ignore_downtime: js.UndefOr[Boolean] = js.undefined
   var job_id: String
-  var timeout: js.UndefOr[String] = js.undefined
 }
 
 object MlOpenJob {
@@ -18,22 +16,18 @@ object MlOpenJob {
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
-    ignore_downtime: js.UndefOr[Boolean] = js.undefined,
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    timeout: String = null
+    source: String = null
   ): MlOpenJob = {
     val __obj = js.Dynamic.literal(job_id = job_id)
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore_downtime)) __obj.updateDynamic("ignore_downtime")(ignore_downtime)
     if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
     if (source != null) __obj.updateDynamic("source")(source)
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
     __obj.asInstanceOf[MlOpenJob]
   }
 }

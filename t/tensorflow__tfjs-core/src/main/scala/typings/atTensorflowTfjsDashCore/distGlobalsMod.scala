@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashCore
 
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
+import typings.atTensorflowTfjsDashCore.distEngineMod.Engine
 import typings.atTensorflowTfjsDashCore.distEngineMod.MemoryInfo
 import typings.atTensorflowTfjsDashCore.distEngineMod.ProfileInfo
 import typings.atTensorflowTfjsDashCore.distEngineMod.ScopeFn
@@ -23,6 +24,7 @@ object distGlobalsMod extends js.Object {
   def disposeVariables(): Unit = js.native
   def enableDebugMode(): Unit = js.native
   def enableProdMode(): Unit = js.native
+  def engine(): Engine = js.native
   def findBackend(name: String): KernelBackend = js.native
   def findBackendFactory(name: String): js.Function0[KernelBackend | js.Promise[KernelBackend]] = js.native
   def getBackend(): String = js.native

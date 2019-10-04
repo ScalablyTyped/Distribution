@@ -1,7 +1,7 @@
 package typings.atPulumiAws.backupPlanMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_CompletionWindowKey
+import typings.atPulumiAws.typesInputMod.backupNs.PlanRule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait PlanArgs extends js.Object {
   /**
     * A rule object that specifies a scheduled task that is used to back up a selection of resources.
     */
-  val rules: Input[js.Array[Input[Anon_CompletionWindowKey]]]
+  val rules: Input[js.Array[Input[PlanRule]]]
   /**
     * Metadata that you can assign to help organize the plans you create.
     */
@@ -25,7 +25,7 @@ trait PlanArgs extends js.Object {
 object PlanArgs {
   @scala.inline
   def apply(
-    rules: Input[js.Array[Input[Anon_CompletionWindowKey]]],
+    rules: Input[js.Array[Input[PlanRule]]],
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
   ): PlanArgs = {

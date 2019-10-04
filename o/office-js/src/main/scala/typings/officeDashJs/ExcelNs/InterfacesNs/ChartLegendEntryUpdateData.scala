@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ChartLegendEntry object, for use in "chartLegendEntry.set({ ... })". */
+/** An interface for updating data on the ChartLegendEntry object, for use in `chartLegendEntry.set({ ... })`. */
 trait ChartLegendEntryUpdateData extends js.Object {
   /**
     *

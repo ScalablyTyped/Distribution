@@ -1,0 +1,29 @@
+package typings.oauth2DashImplicit.oauth2DashImplicitMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AuthParams extends js.Object {
+  var auth_uri: String
+  var client_id: String
+  var redirect_uri: String
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
+  var state: AuthState
+}
+
+object AuthParams {
+  @scala.inline
+  def apply(
+    auth_uri: String,
+    client_id: String,
+    redirect_uri: String,
+    state: AuthState,
+    scope: js.Array[String] = null
+  ): AuthParams = {
+    val __obj = js.Dynamic.literal(auth_uri = auth_uri, client_id = client_id, redirect_uri = redirect_uri, state = state)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[AuthParams]
+  }
+}
+

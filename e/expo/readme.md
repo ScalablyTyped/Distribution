@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo
 
-Typings are for version 34.0.4
+Typings are for version 35.0.0
 
 ## Library description:
 The Expo SDK

@@ -1,7 +1,7 @@
 package typings.openidDashClient.openidDashClientMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPanvaJose.atPanvaJoseMod.JSONWebKeySet
+import typings.jose.joseMod.JSONWebKeySet
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
@@ -132,9 +132,9 @@ class Client protected ()
   /**
     * Revokes a token at the Authorization Server's revocation_endpoint.
     */
-  def revoke(token: String): js.Promise[Unit] = js.native
-  def revoke(token: String, tokenTypeHint: TokenTypeHint): js.Promise[Unit] = js.native
-  def revoke(token: String, tokenTypeHint: TokenTypeHint, extras: RevokeExtras): js.Promise[Unit] = js.native
+  def revoke(token: String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def revoke(token: String, tokenTypeHint: TokenTypeHint): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def revoke(token: String, tokenTypeHint: TokenTypeHint, extras: RevokeExtras): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def userinfo(accessToken: String): js.Promise[UserinfoResponse] = js.native
   /**
     * Fetches the OIDC userinfo response with the provided Access Token. Also handles signed and/or

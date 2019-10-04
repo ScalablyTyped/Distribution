@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "markdown-it"
-version := "0.0-unknown-dt-20190701Z-e30abd"
+version := "0.0-unknown-dt-20190925Z-465f40"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -35,7 +35,7 @@ trait MessageBoxOptions extends js.Object {
     * Extra information of the message.
     */
   var detail: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[NativeImage | String] = js.undefined
+  var icon: js.UndefOr[NativeImage] = js.undefined
   /**
     * Content of the message box.
     */
@@ -79,7 +79,7 @@ object MessageBoxOptions {
     checkboxLabel: String = null,
     defaultId: Int | Double = null,
     detail: String = null,
-    icon: NativeImage | String = null,
+    icon: NativeImage = null,
     noLink: js.UndefOr[Boolean] = js.undefined,
     normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
@@ -92,7 +92,7 @@ object MessageBoxOptions {
     if (checkboxLabel != null) __obj.updateDynamic("checkboxLabel")(checkboxLabel)
     if (defaultId != null) __obj.updateDynamic("defaultId")(defaultId.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
     if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink)
     if (!js.isUndefined(normalizeAccessKeys)) __obj.updateDynamic("normalizeAccessKeys")(normalizeAccessKeys)
     if (title != null) __obj.updateDynamic("title")(title)

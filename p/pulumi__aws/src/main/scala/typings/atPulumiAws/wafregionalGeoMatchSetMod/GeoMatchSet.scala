@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalGeoMatchSetMod
 
-import typings.atPulumiAws.Anon_TypeValueString
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.GeoMatchSetGeoMatchConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,7 +26,7 @@ class GeoMatchSet protected () extends CustomResource {
   /**
     * The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.
     */
-  val geoMatchConstraints: Output[js.UndefOr[js.Array[Anon_TypeValueString]]] = js.native
+  val geoMatchConstraints: Output[js.UndefOr[js.Array[GeoMatchSetGeoMatchConstraint]]] = js.native
   /**
     * The name or description of the Geo Match Set.
     */

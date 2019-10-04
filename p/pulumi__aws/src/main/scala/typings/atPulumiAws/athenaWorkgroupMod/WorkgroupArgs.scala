@@ -1,7 +1,7 @@
 package typings.atPulumiAws.athenaWorkgroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_BytesScannedCutoffPerQueryEnforceWorkgroupConfiguration
+import typings.atPulumiAws.typesInputMod.athenaNs.WorkgroupConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait WorkgroupArgs extends js.Object {
   /**
     * Configuration block with various settings for the workgroup. Documented below.
     */
-  val configuration: js.UndefOr[Input[Anon_BytesScannedCutoffPerQueryEnforceWorkgroupConfiguration]] = js.undefined
+  val configuration: js.UndefOr[Input[WorkgroupConfiguration]] = js.undefined
   /**
     * Description of the workgroup.
     */
@@ -33,7 +33,7 @@ trait WorkgroupArgs extends js.Object {
 object WorkgroupArgs {
   @scala.inline
   def apply(
-    configuration: Input[Anon_BytesScannedCutoffPerQueryEnforceWorkgroupConfiguration] = null,
+    configuration: Input[WorkgroupConfiguration] = null,
     description: Input[String] = null,
     name: Input[String] = null,
     state: Input[String] = null,

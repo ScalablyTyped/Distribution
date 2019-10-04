@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ConsoleMessage extends js.Object {
   /** The message arguments. */
-  def args(): js.Array[JSHandle]
+  def args(): js.Array[JSHandle[_]]
   /** The location the message originated from */
   def location(): ConsoleMessageLocation
   /** The message text. */
@@ -17,7 +17,7 @@ trait ConsoleMessage extends js.Object {
 object ConsoleMessage {
   @scala.inline
   def apply(
-    args: () => js.Array[JSHandle],
+    args: () => js.Array[JSHandle[_]],
     location: () => ConsoleMessageLocation,
     text: () => String,
     `type`: () => ConsoleMessageType

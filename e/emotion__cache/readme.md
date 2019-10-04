@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__cache
 
-Typings are for version 10.0.14
+Typings are for version 10.0.19
 
 ## Library description:
 emotion's cache

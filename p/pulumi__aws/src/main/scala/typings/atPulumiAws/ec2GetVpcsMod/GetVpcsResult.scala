@@ -1,13 +1,13 @@
 package typings.atPulumiAws.ec2GetVpcsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetVpcsResult extends js.Object {
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcsFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -25,7 +25,7 @@ object GetVpcsResult {
     id: String,
     ids: js.Array[String],
     tags: StringDictionary[js.Any],
-    filters: js.Array[Anon_NameValues] = null
+    filters: js.Array[GetVpcsFilter] = null
   ): GetVpcsResult = {
     val __obj = js.Dynamic.literal(id = id, ids = ids, tags = tags)
     if (filters != null) __obj.updateDynamic("filters")(filters)

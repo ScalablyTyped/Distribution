@@ -1,45 +1,71 @@
 package typings.victory.victoryMod
 
-import typings.victory.Anon_Axis
-import typings.victory.Anon_ColorScale
-import typings.victory.Anon_Props
-import typings.victory.Anon_PropsStyle
+import typings.victory.Anon_BorderWidth
+import typings.victory.Anon_BoxWidth
+import typings.victory.Anon_CandleColors
+import typings.victory.Anon_CornerRadius
+import typings.victory.Anon_Gutter
+import typings.victory.Anon_Style
+import typings.victory.Anon_StyleAnonAxis
+import typings.victory.Anon_StyleAnonDataFlyout
+import typings.victory.Anon_StyleAnonDataLabels
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VictoryThemeDefinition extends js.Object {
-  var area: js.UndefOr[VictoryStyleInterface] = js.undefined
-  var axis: js.UndefOr[Anon_Axis] = js.undefined
-  var bar: js.UndefOr[VictoryStyleInterface] = js.undefined
-  var candlestick: js.UndefOr[VictoryStyleInterface with Anon_Props] = js.undefined
-  var line: js.UndefOr[VictoryStyleInterface] = js.undefined
-  var pie: js.UndefOr[Anon_PropsStyle] = js.undefined
-  var props: js.UndefOr[Anon_ColorScale] = js.undefined
-  var scatter: js.UndefOr[VictoryStyleInterface] = js.undefined
+  var area: js.UndefOr[Anon_Style with ThemeBaseProps] = js.undefined
+  var axis: js.UndefOr[Anon_StyleAnonAxis with ThemeBaseProps] = js.undefined
+  var bar: js.UndefOr[Anon_StyleAnonDataLabels with ThemeBaseProps] = js.undefined
+  var boxplot: js.UndefOr[Anon_BoxWidth with ThemeBaseProps] = js.undefined
+  var candlestick: js.UndefOr[Anon_CandleColors with ThemeBaseProps] = js.undefined
+  var chart: js.UndefOr[ThemeBaseProps] = js.undefined
+  var errorbar: js.UndefOr[Anon_BorderWidth with ThemeBaseProps] = js.undefined
+  var group: js.UndefOr[ThemeBaseProps] = js.undefined
+  var legend: js.UndefOr[Anon_Gutter with ThemeBaseProps] = js.undefined
+  var line: js.UndefOr[Anon_StyleAnonDataLabels with ThemeBaseProps] = js.undefined
+  var pie: js.UndefOr[Anon_StyleAnonDataLabels with ThemeBaseProps] = js.undefined
+  var scatter: js.UndefOr[Anon_StyleAnonDataLabels with ThemeBaseProps] = js.undefined
+  var stack: js.UndefOr[ThemeBaseProps] = js.undefined
+  var tooltip: js.UndefOr[Anon_CornerRadius] = js.undefined
+  var voronoi: js.UndefOr[Anon_StyleAnonDataFlyout with ThemeBaseProps] = js.undefined
 }
 
 object VictoryThemeDefinition {
   @scala.inline
   def apply(
-    area: VictoryStyleInterface = null,
-    axis: Anon_Axis = null,
-    bar: VictoryStyleInterface = null,
-    candlestick: VictoryStyleInterface with Anon_Props = null,
-    line: VictoryStyleInterface = null,
-    pie: Anon_PropsStyle = null,
-    props: Anon_ColorScale = null,
-    scatter: VictoryStyleInterface = null
+    area: Anon_Style with ThemeBaseProps = null,
+    axis: Anon_StyleAnonAxis with ThemeBaseProps = null,
+    bar: Anon_StyleAnonDataLabels with ThemeBaseProps = null,
+    boxplot: Anon_BoxWidth with ThemeBaseProps = null,
+    candlestick: Anon_CandleColors with ThemeBaseProps = null,
+    chart: ThemeBaseProps = null,
+    errorbar: Anon_BorderWidth with ThemeBaseProps = null,
+    group: ThemeBaseProps = null,
+    legend: Anon_Gutter with ThemeBaseProps = null,
+    line: Anon_StyleAnonDataLabels with ThemeBaseProps = null,
+    pie: Anon_StyleAnonDataLabels with ThemeBaseProps = null,
+    scatter: Anon_StyleAnonDataLabels with ThemeBaseProps = null,
+    stack: ThemeBaseProps = null,
+    tooltip: Anon_CornerRadius = null,
+    voronoi: Anon_StyleAnonDataFlyout with ThemeBaseProps = null
   ): VictoryThemeDefinition = {
     val __obj = js.Dynamic.literal()
     if (area != null) __obj.updateDynamic("area")(area)
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (bar != null) __obj.updateDynamic("bar")(bar)
+    if (boxplot != null) __obj.updateDynamic("boxplot")(boxplot)
     if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick)
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (errorbar != null) __obj.updateDynamic("errorbar")(errorbar)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
     if (line != null) __obj.updateDynamic("line")(line)
     if (pie != null) __obj.updateDynamic("pie")(pie)
-    if (props != null) __obj.updateDynamic("props")(props)
     if (scatter != null) __obj.updateDynamic("scatter")(scatter)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (voronoi != null) __obj.updateDynamic("voronoi")(voronoi)
     __obj.asInstanceOf[VictoryThemeDefinition]
   }
 }

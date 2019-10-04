@@ -1,11 +1,12 @@
 package typings.reactDashSelect.srcAsyncMod
 
+import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait State[OptionType] extends js.Object {
+trait State[OptionType /* <: OptionTypeBase */] extends js.Object {
   var defaultOptions: js.UndefOr[OptionsType[OptionType]] = js.undefined
   var inputValue: String
   var isLoading: Boolean
@@ -16,7 +17,7 @@ trait State[OptionType] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[OptionType](
+  def apply[OptionType /* <: OptionTypeBase */](
     inputValue: String,
     isLoading: Boolean,
     loadedOptions: OptionsType[OptionType],

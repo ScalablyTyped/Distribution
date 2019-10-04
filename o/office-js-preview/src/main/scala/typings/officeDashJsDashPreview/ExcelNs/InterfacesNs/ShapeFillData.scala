@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "shapeFill.toJSON()". */
+/** An interface describing the data returned by calling `shapeFill.toJSON()`. */
 trait ShapeFillData extends js.Object {
   /**
     *

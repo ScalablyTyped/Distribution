@@ -52,6 +52,17 @@ trait BackendOptions extends js.Object {
     */
   var parse: js.UndefOr[js.Function1[/* data */ String, String]] = js.undefined
   /**
+    * parse data before it has been sent by addPath
+    */
+  var parsePayload: js.UndefOr[
+    js.Function3[
+      /* namespace */ String, 
+      /* key */ String, 
+      /* fallbackValue */ js.UndefOr[String], 
+      StringDictionary[_]
+    ]
+  ] = js.undefined
+  /**
     * adds parameters to resource URL. 'example.com' -> 'example.com?v=1.3.5'
     */
   var queryStringParams: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -71,6 +82,7 @@ object BackendOptions {
     customHeaders: StringDictionary[String] = null,
     loadPath: LoadPathOption = null,
     parse: /* data */ String => String = null,
+    parsePayload: (/* namespace */ String, /* key */ String, /* fallbackValue */ js.UndefOr[String]) => StringDictionary[_] = null,
     queryStringParams: StringDictionary[String] = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): BackendOptions = {
@@ -82,6 +94,7 @@ object BackendOptions {
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
     if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
+    if (parsePayload != null) __obj.updateDynamic("parsePayload")(js.Any.fromFunction3(parsePayload))
     if (queryStringParams != null) __obj.updateDynamic("queryStringParams")(queryStringParams)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[BackendOptions]

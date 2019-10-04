@@ -7,20 +7,36 @@ import scala.scalajs.js.annotation._
 package object atPollyjsCoreMod {
   import typings.atPollyjsCore.atPollyjsCoreStrings.error
   import typings.atPollyjsCore.atPollyjsCoreStrings.request
+  import typings.std.Record
 
-  type ErrorEventListener = js.Function2[/* req */ Request, /* error */ js.Any, EventListenerResponse]
+  type ErrorEventListener = js.Function3[
+    /* req */ Request, 
+    /* error */ js.Any, 
+    /* event */ ListenerEvent, 
+    Unit | js.Promise[Unit]
+  ]
   type ErrorRouteEvent = error
-  type EventListenerResponse = js.Any
+  type Headers = Record[String, String | js.Array[String]]
   type InterceptHandler = js.Function3[
     /* req */ Request, 
     /* res */ Response, 
-    /* intercept */ Intercept, 
-    EventListenerResponse
+    /* interceptor */ Interceptor, 
+    Unit | js.Promise[Unit]
   ]
   type MatchBy[T, R] = js.Function1[/* input */ T, R]
   type PollyEventListener = js.Function1[/* poll */ Polly, Unit]
-  type RecordingEventListener = js.Function2[/* req */ Request, /* recording */ js.Any, EventListenerResponse]
-  type RequestEventListener = js.Function1[/* req */ Request, EventListenerResponse]
+  type RecordingEventListener = js.Function3[
+    /* req */ Request, 
+    /* recording */ js.Any, 
+    /* event */ ListenerEvent, 
+    Unit | js.Promise[Unit]
+  ]
+  type RequestEventListener = js.Function2[/* req */ Request, /* event */ ListenerEvent, Unit | js.Promise[Unit]]
   type RequestRouteEvent = request
-  type ResponseEventListener = js.Function2[/* req */ Request, /* res */ Response, EventListenerResponse]
+  type ResponseEventListener = js.Function3[
+    /* req */ Request, 
+    /* res */ Response, 
+    /* event */ ListenerEvent, 
+    Unit | js.Promise[Unit]
+  ]
 }

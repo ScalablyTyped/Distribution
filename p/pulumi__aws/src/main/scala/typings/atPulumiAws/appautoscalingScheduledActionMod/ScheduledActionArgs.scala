@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appautoscalingScheduledActionMod
 
-import typings.atPulumiAws.Anon_MaxCapacityMinCapacity
+import typings.atPulumiAws.typesInputMod.appautoscalingNs.ScheduledActionScalableTargetAction
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait ScheduledActionArgs extends js.Object {
   /**
     * The new minimum and maximum capacity. You can set both values or just one. See below
     */
-  val scalableTargetAction: js.UndefOr[Input[Anon_MaxCapacityMinCapacity]] = js.undefined
+  val scalableTargetAction: js.UndefOr[Input[ScheduledActionScalableTargetAction]] = js.undefined
   /**
     * The schedule for this action. The following formats are supported: At expressions - at(yyyy-mm-ddThh:mm:ss), Rate expressions - rate(valueunit), Cron expressions - cron(fields). In UTC. Documentation can be found in the parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_PutScheduledAction.html#ApplicationAutoScaling-PutScheduledAction-request-Schedule)
     */
@@ -49,7 +49,7 @@ object ScheduledActionArgs {
     endTime: Input[String] = null,
     name: Input[String] = null,
     scalableDimension: Input[String] = null,
-    scalableTargetAction: Input[Anon_MaxCapacityMinCapacity] = null,
+    scalableTargetAction: Input[ScheduledActionScalableTargetAction] = null,
     schedule: Input[String] = null,
     startTime: Input[String] = null
   ): ScheduledActionArgs = {

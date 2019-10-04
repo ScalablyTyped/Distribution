@@ -8,6 +8,7 @@ import typings.lodash.lodashStrings.asc
 import typings.lodash.lodashStrings.desc
 import typings.std.Error
 import typings.std.Exclude
+import typings.std.NonNullable
 import typings.std.Pick
 import typings.std.RegExp
 import scala.scalajs.js
@@ -377,7 +378,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.defaults
     */
-  def defaults(): LoDashExplicitWrapper[TValue] = js.native
+  def defaults(): LoDashExplicitWrapper[NonNullable[TValue]] = js.native
   /**
     * @see _.defaults
     */
@@ -385,19 +386,19 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.defaults
     */
-  def defaults[TSource](source: TSource): LoDashExplicitWrapper[TSource with TValue] = js.native
+  def defaults[TSource](source: TSource): LoDashExplicitWrapper[NonNullable[TSource with TValue]] = js.native
   /**
     * @see _.defaults
     */
-  def defaults[TSource1, TSource2](source1: TSource1, source2: TSource2): LoDashExplicitWrapper[TSource2 with TSource1 with TValue] = js.native
+  def defaults[TSource1, TSource2](source1: TSource1, source2: TSource2): LoDashExplicitWrapper[NonNullable[TSource2 with TSource1 with TValue]] = js.native
   /**
     * @see _.defaults
     */
-  def defaults[TSource1, TSource2, TSource3](source1: TSource1, source2: TSource2, source3: TSource3): LoDashExplicitWrapper[TSource3 with TSource2 with TSource1 with TValue] = js.native
+  def defaults[TSource1, TSource2, TSource3](source1: TSource1, source2: TSource2, source3: TSource3): LoDashExplicitWrapper[NonNullable[TSource3 with TSource2 with TSource1 with TValue]] = js.native
   /**
     * @see _.defaults
     */
-  def defaults[TSource1, TSource2, TSource3, TSource4](source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): LoDashExplicitWrapper[TSource4 with TSource3 with TSource2 with TSource1 with TValue] = js.native
+  def defaults[TSource1, TSource2, TSource3, TSource4](source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): LoDashExplicitWrapper[NonNullable[TSource4 with TSource3 with TSource2 with TSource1 with TValue]] = js.native
   /**
     * @see _.defaultsDeep
     **/

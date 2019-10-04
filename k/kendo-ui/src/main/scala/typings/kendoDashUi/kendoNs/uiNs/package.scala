@@ -69,6 +69,7 @@ package object uiNs {
   type TimePickerChangeEvent = TimePickerEvent
   type TimePickerCloseEvent = TimePickerEvent
   type TimePickerOpenEvent = TimePickerEvent
+  type TimelineDataBoundEvent = TimelineEvent
   type ToolBarOverflowCloseEvent = ToolBarEvent
   type ToolBarOverflowOpenEvent = ToolBarEvent
   type TreeListChangeEvent = TreeListEvent

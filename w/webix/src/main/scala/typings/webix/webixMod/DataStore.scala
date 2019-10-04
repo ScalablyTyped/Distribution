@@ -44,7 +44,8 @@ trait DataStore extends js.Object {
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def find(criterion: WebixCallback): js.Any = js.native
   def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
-  def getFirstId(): String | Double = js.native
+  def getFirstId(): Double | String = js.native
+  def getIdByIndex(index: String): String | Double = js.native
   def getIdByIndex(index: Double): String | Double = js.native
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
@@ -54,8 +55,9 @@ trait DataStore extends js.Object {
   def getIndexRange(from: Double, to: Double): js.Array[_] = js.native
   def getItem(id: String): js.Any = js.native
   def getItem(id: Double): js.Any = js.native
-  def getLastId(): String | Double = js.native
+  def getLastId(): Double | String = js.native
   def getMark(id: String, mark_name: String): js.Any = js.native
+  def getMark(id: Double, mark_name: String): js.Any = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   def getPrevId(id: String, step: Double): String | Double = js.native
@@ -65,7 +67,7 @@ trait DataStore extends js.Object {
   def getRange(from: Double, to: String): js.Array[_] = js.native
   def getRange(from: Double, to: Double): js.Array[_] = js.native
   def hasEvent(name: String): Boolean = js.native
-  def id(item: js.Any): String | Double = js.native
+  def id(item: js.Any): Double | String = js.native
   def importData(source: baseview): Unit = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
@@ -76,8 +78,10 @@ trait DataStore extends js.Object {
   def refresh(id: String): Unit = js.native
   def refresh(id: Double): Unit = js.native
   def remove(id: String): Unit = js.native
+  def remove(id: js.Array[_]): Unit = js.native
   def remove(id: Double): Unit = js.native
   def removeMark(id: String, name: String, css: Boolean): Unit = js.native
+  def removeMark(id: Double, name: String, css: Boolean): Unit = js.native
   def scheme(config: js.Any): Unit = js.native
   def serialize(): js.Array[_] = js.native
   def serialize(all: Boolean): js.Array[_] = js.native

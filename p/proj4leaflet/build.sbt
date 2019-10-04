@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "proj4leaflet"
-version := "1.0-dt-20181017Z-cf71a8"
+version := "1.0-dt-20181017Z-c0d0a3"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-2af848",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190814Z-4119b7",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-2af848",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190927Z-46e521",
   "org.scalablytyped" %%% "proj4" % "2.5-dt-20181212Z-206bb2",
   "org.scalablytyped" %%% "std" % "3.6-c16502")
 publishArtifact in packageDoc := false

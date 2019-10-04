@@ -14,7 +14,7 @@ trait RemoteAccessSession extends js.Object {
     */
   var billingMethod: js.UndefOr[BillingMethod] = js.undefined
   /**
-    * Unique identifier of your client for the remote access session. Only returned if remote debugging is enabled for the remote access session.
+    * Unique identifier of your client for the remote access session. Only returned if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
     */
   var clientId: js.UndefOr[ClientId] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait RemoteAccessSession extends js.Object {
     */
   var deviceMinutes: js.UndefOr[DeviceMinutes] = js.undefined
   /**
-    * Unique device identifier for the remote device. Only returned if remote debugging is enabled for the remote access session.
+    * Unique device identifier for the remote device. Only returned if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
     */
   var deviceUdid: js.UndefOr[String] = js.undefined
   /**
@@ -38,7 +38,7 @@ trait RemoteAccessSession extends js.Object {
     */
   var endpoint: js.UndefOr[String] = js.undefined
   /**
-    * IP address of the EC2 host where you need to connect to remotely debug devices. Only returned if remote debugging is enabled for the remote access session.
+    * IP address of the EC2 host where you need to connect to remotely debug devices. Only returned if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
     */
   var hostAddress: js.UndefOr[HostAddress] = js.undefined
   /**
@@ -58,7 +58,7 @@ trait RemoteAccessSession extends js.Object {
     */
   var name: js.UndefOr[Name] = js.undefined
   /**
-    * This flag is set to true if remote debugging is enabled for the remote access session.
+    * This flag is set to true if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
     */
   var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
   /**

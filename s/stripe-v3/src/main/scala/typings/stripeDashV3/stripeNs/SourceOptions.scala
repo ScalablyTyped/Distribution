@@ -1,6 +1,7 @@
 package typings.stripeDashV3.stripeNs
 
 import typings.stripeDashV3.Anon_Card
+import typings.stripeDashV3.Anon_Country
 import typings.stripeDashV3.Anon_Iban
 import typings.stripeDashV3.Anon_Returnurl
 import typings.stripeDashV3.stripeDashV3Strings.code_verification
@@ -21,6 +22,7 @@ trait SourceOptions extends js.Object {
   var owner: js.UndefOr[OwnerInfo] = js.undefined
   var redirect: js.UndefOr[Anon_Returnurl] = js.undefined
   var sepa_debit: js.UndefOr[Anon_Iban] = js.undefined
+  var sofort: js.UndefOr[Anon_Country] = js.undefined
   var statement_descriptor: js.UndefOr[String] = js.undefined
   var three_d_secure: js.UndefOr[Anon_Card] = js.undefined
   var token: js.UndefOr[String] = js.undefined
@@ -39,6 +41,7 @@ object SourceOptions {
     owner: OwnerInfo = null,
     redirect: Anon_Returnurl = null,
     sepa_debit: Anon_Iban = null,
+    sofort: Anon_Country = null,
     statement_descriptor: String = null,
     three_d_secure: Anon_Card = null,
     token: String = null,
@@ -53,6 +56,7 @@ object SourceOptions {
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect)
     if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit)
+    if (sofort != null) __obj.updateDynamic("sofort")(sofort)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure)
     if (token != null) __obj.updateDynamic("token")(token)

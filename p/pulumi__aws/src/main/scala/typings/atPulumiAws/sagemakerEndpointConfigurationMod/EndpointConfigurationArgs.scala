@@ -1,7 +1,7 @@
 package typings.atPulumiAws.sagemakerEndpointConfigurationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AcceleratorTypeInitialInstanceCount
+import typings.atPulumiAws.typesInputMod.sagemakerNs.EndpointConfigurationProductionVariant
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait EndpointConfigurationArgs extends js.Object {
   /**
     * Fields are documented below.
     */
-  val productionVariants: Input[js.Array[Input[Anon_AcceleratorTypeInitialInstanceCount]]]
+  val productionVariants: Input[js.Array[Input[EndpointConfigurationProductionVariant]]]
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -29,7 +29,7 @@ trait EndpointConfigurationArgs extends js.Object {
 object EndpointConfigurationArgs {
   @scala.inline
   def apply(
-    productionVariants: Input[js.Array[Input[Anon_AcceleratorTypeInitialInstanceCount]]],
+    productionVariants: Input[js.Array[Input[EndpointConfigurationProductionVariant]]],
     kmsKeyArn: Input[String] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null

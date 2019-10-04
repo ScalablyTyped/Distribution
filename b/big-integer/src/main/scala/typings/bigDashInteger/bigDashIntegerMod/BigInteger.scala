@@ -100,6 +100,7 @@ trait BigInteger extends js.Object {
     */
   def isProbablePrime(): Boolean = js.native
   def isProbablePrime(iterations: Double): Boolean = js.native
+  def isProbablePrime(iterations: Double, rng: js.Function0[Double]): Boolean = js.native
   /**
     * Returns true if the number is 1 or -1, false otherwise.
     */

@@ -10,7 +10,7 @@ trait ScatterMarkerLine extends js.Object {
   var cmax: Double
   var cmin: Double
   var color: Color
-  var colorscale: String | js.Array[String]
+  var colorscale: ColorScale
   var reversescale: Boolean
   var width: Double | js.Array[Double]
 }
@@ -23,7 +23,7 @@ object ScatterMarkerLine {
     cmax: Double,
     cmin: Double,
     color: Color,
-    colorscale: String | js.Array[String],
+    colorscale: ColorScale,
     reversescale: Boolean,
     width: Double | js.Array[Double]
   ): ScatterMarkerLine = {

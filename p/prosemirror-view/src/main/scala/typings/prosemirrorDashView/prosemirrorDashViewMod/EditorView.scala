@@ -51,6 +51,10 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   var dragging: js.UndefOr[Anon_Move[S] | Null] = js.native
   /**
+    * Indicates whether the editor is currently [editable](#view.EditorProps.editable).
+    */
+  var editable: Boolean = js.native
+  /**
     * The view's current [props](#view.EditorProps).
     */
   var props: DirectEditorProps[S] = js.native

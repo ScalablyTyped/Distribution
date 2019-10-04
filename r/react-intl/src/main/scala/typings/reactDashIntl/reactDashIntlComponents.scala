@@ -1,7 +1,7 @@
 package typings.reactDashIntl
 
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
-import typings.intlDashMessageformat.libFormattersMod.PrimitiveType
+import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
 import typings.react.reactMod.ComponentType
 import typings.reactDashIntl.distComponentsMessageMod.Props
 import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
@@ -24,7 +24,7 @@ object reactDashIntlComponents extends reactDashIntlProps {
   @scala.inline
   def FormattedHTMLMessage: ComponentType[Props[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedHTMLMessage].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashIntl.distComponentsMessageMod.Props[
-    typings.std.Record[java.lang.String, typings.intlDashMessageformat.libFormattersMod.PrimitiveType]
+    typings.std.Record[java.lang.String, typings.intlDashMessageformat.distFormattersMod.PrimitiveType]
   ]]]
   @scala.inline
   def FormattedMessage[V /* <: Record[String, _] */]: ComponentType[Props[V]] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedMessage[V]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsMessageMod.Props[V]]]
@@ -45,7 +45,7 @@ object reactDashIntlComponents extends reactDashIntlProps {
   @scala.inline
   def HtmlDashMessage: ComponentType[Props[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactDashIntl.distComponentsHtmlDashMessageMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashIntl.distComponentsMessageMod.Props[
-    typings.std.Record[java.lang.String, typings.intlDashMessageformat.libFormattersMod.PrimitiveType]
+    typings.std.Record[java.lang.String, typings.intlDashMessageformat.distFormattersMod.PrimitiveType]
   ]]]
   @scala.inline
   def IntlProvider: ComponentType[OptionalIntlConfig] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.IntlProvider].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig]]

@@ -10,19 +10,19 @@ trait CreateLocationSmbRequest extends js.Object {
     */
   var AgentArns: AgentArnList
   /**
-    * The name of the domain that the SMB server belongs to.
+    * The name of the Windows domain that the SMB server belongs to.
     */
   var Domain: js.UndefOr[SmbDomain] = js.undefined
   /**
-    * The mount options that are available for DataSync to use to access an SMB location.
+    * The mount options used by DataSync to access the SMB server.
     */
   var MountOptions: js.UndefOr[SmbMountOptions] = js.undefined
   /**
-    * The password of the user who has permission to access the SMB server.
+    * The password of the user who can mount the share, has the permissions to access files and folders in the SMB share.
     */
   var Password: SmbPassword
   /**
-    * The name of the SMB server. This value is the IP address or Domain Name Service (DNS) name of the SMB server. An agent that is installed on-premises uses this host name to mount the SMB server in a network.  This name must either be DNS-compliant or must be an IP version 4 (IPv4) address. 
+    * The name of the SMB server. This value is the IP address or Domain Name Service (DNS) name of the SMB server. An agent that is installed on-premises uses this hostname to mount the SMB server in a network.  This name must either be DNS-compliant or must be an IP version 4 (IPv4) address. 
     */
   var ServerHostname: typings.awsDashSdk.clientsDatasyncMod.ServerHostname
   /**
@@ -34,7 +34,7 @@ trait CreateLocationSmbRequest extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * The user who can mount the share, has the permissions to access files and directories in the SMB share.
+    * The user who can mount the share, has the permissions to access files and folders in the SMB share.
     */
   var User: SmbUser
 }

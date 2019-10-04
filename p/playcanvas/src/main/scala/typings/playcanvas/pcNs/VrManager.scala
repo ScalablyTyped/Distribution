@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.VrManager
+  * @extends pc.EventHandler
   * @classdesc Manage and update {@link pc.VrDisplay}s that are attached to this device.
   * @description Manage and update {@link pc.VrDisplay}s that are attached to this device.
   * @param {pc.Application} app The main application
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.VrManager")
 @js.native
-class VrManager protected () extends js.Object {
+class VrManager protected () extends EventHandler {
   def this(app: Application) = this()
   /**
     * The default {@link pc.VrDisplay} to be used. Usually the first in the `displays` list

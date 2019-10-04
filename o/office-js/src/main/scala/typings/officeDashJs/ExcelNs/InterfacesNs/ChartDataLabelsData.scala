@@ -21,7 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "chartDataLabels.toJSON()". */
+/** An interface describing the data returned by calling `chartDataLabels.toJSON()`. */
 trait ChartDataLabelsData extends js.Object {
   /**
     *

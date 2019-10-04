@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinearGradientProps extends js.Object {
+  var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   var gradientUnits: js.UndefOr[Units] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var x1: js.UndefOr[NumberProp] = js.undefined
@@ -16,6 +17,7 @@ trait LinearGradientProps extends js.Object {
 object LinearGradientProps {
   @scala.inline
   def apply(
+    gradientTransform: ColumnMajorTransformMatrix | String = null,
     gradientUnits: Units = null,
     id: String = null,
     x1: NumberProp = null,
@@ -24,6 +26,7 @@ object LinearGradientProps {
     y2: NumberProp = null
   ): LinearGradientProps = {
     val __obj = js.Dynamic.literal()
+    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
     if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits)
     if (id != null) __obj.updateDynamic("id")(id)
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])

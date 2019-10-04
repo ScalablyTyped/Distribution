@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRuleMod
 
-import typings.atPulumiAws.Anon_DataId
+import typings.atPulumiAws.typesOutputMod.wafregionalNs.RulePredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -33,7 +33,7 @@ class Rule protected () extends CustomResource {
   /**
     * The objects to include in a rule (documented below).
     */
-  val predicates: Output[js.UndefOr[js.Array[Anon_DataId]]] = js.native
+  val predicates: Output[js.UndefOr[js.Array[RulePredicate]]] = js.native
 }
 
 /* static members */

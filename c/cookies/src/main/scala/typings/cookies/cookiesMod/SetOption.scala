@@ -1,6 +1,7 @@
 package typings.cookies.cookiesMod
 
 import typings.cookies.cookiesStrings.lax
+import typings.cookies.cookiesStrings.none
 import typings.cookies.cookiesStrings.strict
 import typings.std.Date
 import scala.scalajs.js
@@ -42,7 +43,7 @@ trait SetOption extends js.Object {
     * a boolean or string indicating whether the cookie is a "same site" cookie (false by default).
     * This can be set to 'strict', 'lax', or true (which maps to 'strict').
     */
-  var sameSite: js.UndefOr[strict | lax | Boolean] = js.undefined
+  var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.undefined
   /**
     * a boolean indicating whether the cookie is only to be sent
     * over HTTPS (false by default for HTTP, true by default for HTTPS).
@@ -71,7 +72,7 @@ object SetOption {
     maxAge: Int | Double = null,
     overwrite: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
-    sameSite: strict | lax | Boolean = null,
+    sameSite: strict | lax | none | Boolean = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     secureProxy: js.UndefOr[Boolean] = js.undefined,
     signed: js.UndefOr[Boolean] = js.undefined

@@ -1,7 +1,7 @@
 package typings.expo.buildNotificationsNotificationsDotTypesMod
 
 import typings.expo.Anon_ChannelId
-import typings.expo.Anon_Sound
+import typings.expo.Anon_DisplayInForeground
 import typings.std.NotificationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait LocalNotification extends js.Object {
   var body: js.UndefOr[String] = js.undefined
   var categoryId: js.UndefOr[String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
-  var ios: js.UndefOr[Anon_Sound] = js.undefined
+  var ios: js.UndefOr[Anon_DisplayInForeground] = js.undefined
   var title: String
   var web: js.UndefOr[NotificationOptions] = js.undefined
 }
@@ -25,7 +25,7 @@ object LocalNotification {
     body: String = null,
     categoryId: String = null,
     data: js.Any = null,
-    ios: Anon_Sound = null,
+    ios: Anon_DisplayInForeground = null,
     web: NotificationOptions = null
   ): LocalNotification = {
     val __obj = js.Dynamic.literal(title = title)

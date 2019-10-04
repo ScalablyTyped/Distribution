@@ -1,7 +1,7 @@
 package typings.reactDashRelay
 
 import typings.react.reactMod.ComponentType
-import typings.relayDashRuntime.relayDashRuntimeMod.OperationType
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

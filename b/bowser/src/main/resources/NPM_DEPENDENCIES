@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bowser" : "2.6.1"
+      "bowser" : "2.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "bowser" : "2.6.1"
+      "bowser" : "2.7.0"
     }
   ],
   "compile-devDependencies" : [

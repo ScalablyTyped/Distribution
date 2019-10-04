@@ -10,7 +10,7 @@ trait OutgoingSubscribeRequestDelegate extends OutgoingRequestDelegate {
   /**
     * Received the initial subscription creating NOTIFY in response to this request.
     * Called for out of dialog SUBSCRIBE requests only (not called for re-SUBSCRIBE requests).
-    * @param request Incoming NOTIFY request (including a Subscription).
+    * @param request - Incoming NOTIFY request (including a Subscription).
     */
   var onNotify: js.UndefOr[js.Function1[/* request */ IncomingRequestWithSubscription, Unit]] = js.undefined
   /**

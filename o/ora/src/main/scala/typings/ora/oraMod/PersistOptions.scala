@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait PersistOptions extends js.Object {
   /**
-  		Text to be persisted before the symbol. Default: Current `prefixText`.
+  		Text to be persisted before the symbol. No prefix text will be displayed if set to an empty string.
+  		Default: Current `prefixText`.
   		*/
   val prefixText: js.UndefOr[String] = js.undefined
   /**
@@ -15,7 +16,8 @@ trait PersistOptions extends js.Object {
   		*/
   val symbol: js.UndefOr[String] = js.undefined
   /**
-  		Text to be persisted after the symbol. Default: Current `text`.
+  		Text to be persisted after the symbol.
+  		Default: Current `text`.
   		*/
   val text: js.UndefOr[String] = js.undefined
 }

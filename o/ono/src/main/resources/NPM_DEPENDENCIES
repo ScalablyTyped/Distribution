@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ono" : "5.0.1"
+      "ono" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ono" : "5.0.1"
+      "ono" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

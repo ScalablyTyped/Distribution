@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-util" : "4.11.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-util" : "4.11.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

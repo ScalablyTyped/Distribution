@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   *
   * An object encapsulating a conditional format's range, format, rule, and other properties.
+  To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
   *
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalFormatLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**

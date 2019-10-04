@@ -1,7 +1,7 @@
 package typings.atPulumiAws.autoscalingPolicyMod
 
-import typings.atPulumiAws.Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
-import typings.atPulumiAws.Anon_MetricIntervalLowerBoundMetricIntervalUpperBound
+import typings.atPulumiAws.typesInputMod.autoscalingNs.PolicyStepAdjustment
+import typings.atPulumiAws.typesInputMod.autoscalingNs.PolicyTargetTrackingConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,15 +47,11 @@ trait PolicyState extends js.Object {
     * up. A negative value scales down.
     */
   val scalingAdjustment: js.UndefOr[Input[Double]] = js.undefined
-  val stepAdjustments: js.UndefOr[Input[js.Array[Input[Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]]]] = js.undefined
+  val stepAdjustments: js.UndefOr[Input[js.Array[Input[PolicyStepAdjustment]]]] = js.undefined
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: js.UndefOr[
-    Input[
-      Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
-    ]
-  ] = js.undefined
+  val targetTrackingConfiguration: js.UndefOr[Input[PolicyTargetTrackingConfiguration]] = js.undefined
 }
 
 object PolicyState {
@@ -71,10 +67,8 @@ object PolicyState {
     name: Input[String] = null,
     policyType: Input[String] = null,
     scalingAdjustment: Input[Double] = null,
-    stepAdjustments: Input[js.Array[Input[Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]]] = null,
-    targetTrackingConfiguration: Input[
-      Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
-    ] = null
+    stepAdjustments: Input[js.Array[Input[PolicyStepAdjustment]]] = null,
+    targetTrackingConfiguration: Input[PolicyTargetTrackingConfiguration] = null
   ): PolicyState = {
     val __obj = js.Dynamic.literal()
     if (adjustmentType != null) __obj.updateDynamic("adjustmentType")(adjustmentType.asInstanceOf[js.Any])

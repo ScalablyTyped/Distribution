@@ -169,7 +169,7 @@ class ContentControl () extends ClientObject {
   val parentBody: Body = js.native
   /**
     *
-    * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.
     *
     * [Api set: WordApi 1.1]
     */
@@ -183,14 +183,14 @@ class ContentControl () extends ClientObject {
   val parentContentControlOrNullObject: ContentControl = js.native
   /**
     *
-    * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
+    * Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
   val parentTable: Table = js.native
   /**
     *
-    * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell. Read-only.
     *
     * [Api set: WordApi 1.3]
     */
@@ -297,7 +297,7 @@ class ContentControl () extends ClientObject {
   def delete(keepContent: Boolean): Unit = js.native
   /**
     *
-    * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+    * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
@@ -344,7 +344,7 @@ class ContentControl () extends ClientObject {
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+    * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
     *
     * [Api set: WordApi 1.1]
     *
@@ -357,7 +357,7 @@ class ContentControl () extends ClientObject {
   ): Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+    * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
     *
     * [Api set: WordApi 1.1]
     *
@@ -367,7 +367,7 @@ class ContentControl () extends ClientObject {
   def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
   /**
     *
-    * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a document into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -379,7 +379,7 @@ class ContentControl () extends ClientObject {
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts a document into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -396,7 +396,7 @@ class ContentControl () extends ClientObject {
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts HTML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -408,7 +408,7 @@ class ContentControl () extends ClientObject {
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts HTML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -425,7 +425,7 @@ class ContentControl () extends ClientObject {
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts an inline picture into the content control at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -437,7 +437,7 @@ class ContentControl () extends ClientObject {
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
     *
-    * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts an inline picture into the content control at the specified location.
     *
     * [Api set: WordApi 1.2]
     *
@@ -454,7 +454,7 @@ class ContentControl () extends ClientObject {
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
     *
-    * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts OOXML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -466,7 +466,7 @@ class ContentControl () extends ClientObject {
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts OOXML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -483,7 +483,7 @@ class ContentControl () extends ClientObject {
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -495,7 +495,7 @@ class ContentControl () extends ClientObject {
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -512,7 +512,7 @@ class ContentControl () extends ClientObject {
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a table with the specified number of rows and columns into, or next to, a content control.
     *
     * [Api set: WordApi 1.3]
     *
@@ -534,7 +534,7 @@ class ContentControl () extends ClientObject {
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+    * Inserts a table with the specified number of rows and columns into, or next to, a content control.
     *
     * [Api set: WordApi 1.3]
     *
@@ -561,7 +561,7 @@ class ContentControl () extends ClientObject {
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
     *
-    * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts text into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *
@@ -573,7 +573,7 @@ class ContentControl () extends ClientObject {
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
     *
-    * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+    * Inserts text into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
     *

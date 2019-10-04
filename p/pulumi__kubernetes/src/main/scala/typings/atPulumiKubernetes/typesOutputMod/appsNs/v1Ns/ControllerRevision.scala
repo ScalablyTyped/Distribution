@@ -2,7 +2,6 @@ package typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1`
 import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ObjectMeta
-import typings.atPulumiKubernetes.typesOutputMod.pkgNs.runtimeNs.RawExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,23 +21,23 @@ trait ControllerRevision extends js.Object {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: `apps/v1`
   /**
     * Data is the serialized representation of the state.
     */
-  val data: RawExtension
+  val data: js.Object
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision
   /**
     * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: ObjectMeta
   /**
@@ -51,7 +50,7 @@ object ControllerRevision {
   @scala.inline
   def apply(
     apiVersion: `apps/v1`,
-    data: RawExtension,
+    data: js.Object,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision,
     metadata: ObjectMeta,
     revision: Double

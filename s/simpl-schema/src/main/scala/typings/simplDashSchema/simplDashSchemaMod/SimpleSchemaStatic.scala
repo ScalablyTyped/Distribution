@@ -37,6 +37,7 @@ trait SimpleSchemaStatic
   def allowsKey(key: js.Any): String = js.native
   def clean(doc: js.Any): js.Any = js.native
   def clean(doc: js.Any, options: CleanOption): js.Any = js.native
+  def extend(otherSchema: SimpleSchemaStatic): SimpleSchemaStatic = js.native
   def extendOptions(options: js.Array[String]): Unit = js.native
   def getDefinition(key: String): js.Any = js.native
   def getDefinition(key: String, propList: js.Any): js.Any = js.native
@@ -51,6 +52,9 @@ trait SimpleSchemaStatic
   def newContext(): ValidationContext = js.native
   def objectKeys(keyPrefix: js.Any): js.Array[_] = js.native
   def omit(fields: String*): SimpleSchemaStatic = js.native
+  def oneOf(
+    types: (SchemaDefinition | BooleanConstructor | StringConstructor | NumberConstructor | DateConstructor | ArrayConstructor)*
+  ): SimpleSchemaStatic = js.native
   def pick(fields: String*): SimpleSchemaStatic = js.native
   def schema(): js.Array[SchemaDefinition] = js.native
   def schema(key: String): SchemaDefinition = js.native

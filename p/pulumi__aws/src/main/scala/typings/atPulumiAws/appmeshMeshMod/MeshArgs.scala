@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshMeshMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_EgressFilterAnonTypeInput
+import typings.atPulumiAws.typesInputMod.appmeshNs.MeshSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait MeshArgs extends js.Object {
   /**
     * The service mesh specification to apply.
     */
-  val spec: js.UndefOr[Input[Anon_EgressFilterAnonTypeInput]] = js.undefined
+  val spec: js.UndefOr[Input[MeshSpec]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -24,11 +24,7 @@ trait MeshArgs extends js.Object {
 
 object MeshArgs {
   @scala.inline
-  def apply(
-    name: Input[String] = null,
-    spec: Input[Anon_EgressFilterAnonTypeInput] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): MeshArgs = {
+  def apply(name: Input[String] = null, spec: Input[MeshSpec] = null, tags: Input[StringDictionary[_]] = null): MeshArgs = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcDhcpOptionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpcDhcpOptionsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait GetVpcDhcpOptionsArgs extends js.Object {
   /**
     * List of custom filters as described below.
     */
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcDhcpOptionsFilter]] = js.undefined
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object GetVpcDhcpOptionsArgs {
   @scala.inline
   def apply(
     dhcpOptionsId: String = null,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetVpcDhcpOptionsFilter] = null,
     tags: StringDictionary[js.Any] = null
   ): GetVpcDhcpOptionsArgs = {
     val __obj = js.Dynamic.literal()

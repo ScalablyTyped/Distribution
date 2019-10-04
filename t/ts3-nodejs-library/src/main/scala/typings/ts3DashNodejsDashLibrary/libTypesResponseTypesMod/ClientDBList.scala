@@ -14,8 +14,7 @@ trait ClientDBList extends js.Object {
   var client_nickname: String
   var client_totalconnections: Double
   var client_unique_identifier: String
-  /** available in the first element and only if count flag has been set */
-  var count: js.UndefOr[Double] = js.undefined
+  var count: Double
 }
 
 object ClientDBList {
@@ -30,10 +29,10 @@ object ClientDBList {
     client_nickname: String,
     client_totalconnections: Double,
     client_unique_identifier: String,
-    count: Int | Double = null
+    count: Double
   ): ClientDBList = {
-    val __obj = js.Dynamic.literal(cldbid = cldbid, client_created = client_created, client_description = client_description, client_lastconnected = client_lastconnected, client_lastip = client_lastip, client_login_name = client_login_name, client_nickname = client_nickname, client_totalconnections = client_totalconnections, client_unique_identifier = client_unique_identifier)
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cldbid = cldbid, client_created = client_created, client_description = client_description, client_lastconnected = client_lastconnected, client_lastip = client_lastip, client_login_name = client_login_name, client_nickname = client_nickname, client_totalconnections = client_totalconnections, client_unique_identifier = client_unique_identifier, count = count)
+  
     __obj.asInstanceOf[ClientDBList]
   }
 }

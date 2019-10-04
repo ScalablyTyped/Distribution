@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2transitgatewayGetVpcAttachmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ec2transitgatewayNs.GetVpcAttachmentFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait GetVpcAttachmentResult extends js.Object {
     * Whether DNS support is enabled.
     */
   val dnsSupport: String
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVpcAttachmentFilter]] = js.undefined
   /**
     * EC2 Transit Gateway VPC Attachment identifier
     */
@@ -52,7 +52,7 @@ object GetVpcAttachmentResult {
     transitGatewayId: String,
     vpcId: String,
     vpcOwnerId: String,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetVpcAttachmentFilter] = null,
     id: String = null
   ): GetVpcAttachmentResult = {
     val __obj = js.Dynamic.literal(dnsSupport = dnsSupport, ipv6Support = ipv6Support, subnetIds = subnetIds, tags = tags, transitGatewayId = transitGatewayId, vpcId = vpcId, vpcOwnerId = vpcOwnerId)

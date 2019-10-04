@@ -1,6 +1,7 @@
 package typings.realm
 
 import typings.realm.RealmNs.SyncNs.AccessLevel
+import typings.realm.RealmNs.SyncNs.ClientResyncMode
 import typings.realm.RealmNs.SyncNs.LogLevel
 import typings.realm.RealmNs.SyncNs.OpenRealmBehaviorType
 import typings.realm.RealmNs.SyncNs.OpenRealmTimeOutBehavior
@@ -96,6 +97,9 @@ object realmStrings {
   sealed trait detail extends LogLevel
   
   @js.native
+  sealed trait discard extends ClientResyncMode
+  
+  @js.native
   sealed trait double extends _PropertyType
   
   @js.native
@@ -138,6 +142,9 @@ object realmStrings {
   sealed trait list extends _PropertyType
   
   @js.native
+  sealed trait manual extends ClientResyncMode
+  
+  @js.native
   sealed trait never extends SessionStopPolicy
   
   @js.native
@@ -157,6 +164,9 @@ object realmStrings {
   
   @js.native
   sealed trait read extends AccessLevel
+  
+  @js.native
+  sealed trait recover extends ClientResyncMode
   
   @js.native
   sealed trait reportIndefinitely extends ProgressMode
@@ -237,6 +247,8 @@ object realmStrings {
   @scala.inline
   def detail: detail = "detail".asInstanceOf[detail]
   @scala.inline
+  def discard: discard = "discard".asInstanceOf[discard]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
   @scala.inline
   def download: download = "download".asInstanceOf[download]
@@ -265,6 +277,8 @@ object realmStrings {
   @scala.inline
   def list: list = "list".asInstanceOf[list]
   @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -278,6 +292,8 @@ object realmStrings {
   def otherUser: otherUser = "otherUser".asInstanceOf[otherUser]
   @scala.inline
   def read: read = "read".asInstanceOf[read]
+  @scala.inline
+  def recover: recover = "recover".asInstanceOf[recover]
   @scala.inline
   def reportIndefinitely: reportIndefinitely = "reportIndefinitely".asInstanceOf[reportIndefinitely]
   @scala.inline

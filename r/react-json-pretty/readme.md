@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-json-pretty
 
-Typings are for version 1.3
+Typings are for version 1.7
 
 ## Library description:
 A code formatting tool for raw json data

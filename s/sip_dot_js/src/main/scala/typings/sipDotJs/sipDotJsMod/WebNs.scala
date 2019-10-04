@@ -45,6 +45,7 @@ object WebNs extends js.Object {
   /* static members */
   @js.native
   object SessionDescriptionHandler extends js.Object {
+    def defaultFactory(session: typings.sipDotJs.libApiSessionMod.Session, options: js.Any): typings.sipDotJs.libWebSessionDescriptionHandlerMod.SessionDescriptionHandler = js.native
     /**
       * @param {SIP.Session} session
       * @param {Object} [options]

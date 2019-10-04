@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-syntax-highlighter", "PrismLight")
 @js.native
 class PrismLight ()
-  extends typings.reactDashSyntaxDashHighlighter.prismDashLightMod.default
+  extends typings.reactDashSyntaxDashHighlighter.distEsmPrismDashLightMod.default
 
 /* static members */
 @JSImport("react-syntax-highlighter", "PrismLight")

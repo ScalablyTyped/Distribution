@@ -1,12 +1,24 @@
 package typings.expressDashRateDashLimit.expressDashRateDashLimitMod
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("express-rate-limit", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[Instantiable1[/* options */ Options, Instance]]
+class ^ protected () extends Instance {
+  def this(options: Options) = this()
+  /* CompleteClass */
+  override def apply(T0: /* req */ Request[ParamsDictionary], T1: /* res */ Response, T2: /* next */ NextFunction): js.Any = js.native
+}
+
+@JSImport("express-rate-limit", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(options: Options): Instance = js.native
+}
 

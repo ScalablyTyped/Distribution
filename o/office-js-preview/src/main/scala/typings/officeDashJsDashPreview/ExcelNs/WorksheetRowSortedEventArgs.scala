@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Provides information about the worksheet that raised the RowSorted event.
+  * Provides information about the row-sorted event and its related worksheet.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait WorksheetRowSortedEventArgs extends js.Object {
   /**
     *
-    * Gets the range address that represents the sorted areas of a specific worksheet.
+    * Gets the range address that represents the sorted areas of a specific worksheet. Only rows changed as a result of the sort operation are returned.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

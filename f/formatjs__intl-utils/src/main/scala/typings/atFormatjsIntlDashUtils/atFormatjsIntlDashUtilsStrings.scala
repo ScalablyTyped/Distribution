@@ -1,71 +1,77 @@
 package typings.atFormatjsIntlDashUtils
 
 import typings.atFormatjsIntlDashUtils.distDiffMod.Unit
-import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.Field
-import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.LDMLPluralRule
+import typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.RelativeTimeField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object atFormatjsIntlDashUtilsStrings {
   @js.native
-  sealed trait LocaleFieldsData extends js.Object
+  sealed trait RelativeTimeData extends js.Object
   
   @js.native
-  sealed trait RelativeTimeData extends js.Object
+  sealed trait `best fit` extends js.Object
   
   @js.native
   sealed trait boolean extends js.Object
   
   @js.native
+  sealed trait createResolveLocale extends js.Object
+  
+  @js.native
   sealed trait day
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `day-narrow` extends Field
+  sealed trait `day-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `day-short` extends Field
+  sealed trait `day-short` extends RelativeTimeField
   
   @js.native
   sealed trait few extends LDMLPluralRule
   
   @js.native
   sealed trait hour
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `hour-narrow` extends Field
+  sealed trait `hour-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `hour-short` extends Field
+  sealed trait `hour-short` extends RelativeTimeField
+  
+  @js.native
+  sealed trait lookup extends js.Object
   
   @js.native
   sealed trait many extends LDMLPluralRule
   
   @js.native
   sealed trait minute
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `minute-narrow` extends Field
+  sealed trait `minute-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `minute-short` extends Field
+  sealed trait `minute-short` extends RelativeTimeField
   
   @js.native
   sealed trait month
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `month-narrow` extends Field
+  sealed trait `month-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `month-short` extends Field
+  sealed trait `month-short` extends RelativeTimeField
   
   @js.native
   sealed trait one extends LDMLPluralRule
@@ -75,25 +81,25 @@ object atFormatjsIntlDashUtilsStrings {
   
   @js.native
   sealed trait quarter
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `quarter-narrow` extends Field
+  sealed trait `quarter-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `quarter-short` extends Field
+  sealed trait `quarter-short` extends RelativeTimeField
   
   @js.native
   sealed trait second
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `second-narrow` extends Field
+  sealed trait `second-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `second-short` extends Field
+  sealed trait `second-short` extends RelativeTimeField
   
   @js.native
   sealed trait string extends js.Object
@@ -103,35 +109,37 @@ object atFormatjsIntlDashUtilsStrings {
   
   @js.native
   sealed trait week
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `week-narrow` extends Field
+  sealed trait `week-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `week-short` extends Field
+  sealed trait `week-short` extends RelativeTimeField
   
   @js.native
   sealed trait year
-    extends Field
+    extends RelativeTimeField
        with Unit
   
   @js.native
-  sealed trait `year-narrow` extends Field
+  sealed trait `year-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `year-short` extends Field
+  sealed trait `year-short` extends RelativeTimeField
   
   @js.native
   sealed trait zero extends LDMLPluralRule
   
   @scala.inline
-  def LocaleFieldsData: LocaleFieldsData = "LocaleFieldsData".asInstanceOf[LocaleFieldsData]
-  @scala.inline
   def RelativeTimeData: RelativeTimeData = "RelativeTimeData".asInstanceOf[RelativeTimeData]
   @scala.inline
+  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
+  def createResolveLocale: createResolveLocale = "createResolveLocale".asInstanceOf[createResolveLocale]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
@@ -146,6 +154,8 @@ object atFormatjsIntlDashUtilsStrings {
   def `hour-narrow`: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
   @scala.inline
   def `hour-short`: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
   def many: many = "many".asInstanceOf[many]
   @scala.inline

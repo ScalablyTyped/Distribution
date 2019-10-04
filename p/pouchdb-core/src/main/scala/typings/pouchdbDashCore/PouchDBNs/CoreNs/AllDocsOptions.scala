@@ -40,6 +40,11 @@ trait AllDocsOptions extends Options {
     * Causes poor performance on IndexedDB and LevelDB.
     */
   var skip: js.UndefOr[Double] = js.undefined
+  /**
+    * Include an update_seq value indicating which sequence id
+    * of the underlying database the view reflects.
+    */
+  var update_seq: js.UndefOr[Boolean] = js.undefined
 }
 
 object AllDocsOptions {
@@ -52,7 +57,8 @@ object AllDocsOptions {
     fetch: Fetch = null,
     include_docs: js.UndefOr[Boolean] = js.undefined,
     limit: Int | Double = null,
-    skip: Int | Double = null
+    skip: Int | Double = null,
+    update_seq: js.UndefOr[Boolean] = js.undefined
   ): AllDocsOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
@@ -63,6 +69,7 @@ object AllDocsOptions {
     if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
     __obj.asInstanceOf[AllDocsOptions]
   }
 }

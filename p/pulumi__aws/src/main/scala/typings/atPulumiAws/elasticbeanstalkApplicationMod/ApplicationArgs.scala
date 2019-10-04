@@ -1,14 +1,14 @@
 package typings.atPulumiAws.elasticbeanstalkApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DeleteSourceFromS3MaxAgeInDays
+import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.ApplicationAppversionLifecycle
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApplicationArgs extends js.Object {
-  val appversionLifecycle: js.UndefOr[Input[Anon_DeleteSourceFromS3MaxAgeInDays]] = js.undefined
+  val appversionLifecycle: js.UndefOr[Input[ApplicationAppversionLifecycle]] = js.undefined
   /**
     * Short description of the application
     */
@@ -26,7 +26,7 @@ trait ApplicationArgs extends js.Object {
 object ApplicationArgs {
   @scala.inline
   def apply(
-    appversionLifecycle: Input[Anon_DeleteSourceFromS3MaxAgeInDays] = null,
+    appversionLifecycle: Input[ApplicationAppversionLifecycle] = null,
     description: Input[String] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null

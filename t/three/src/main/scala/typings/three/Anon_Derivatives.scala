@@ -5,17 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Derivatives extends js.Object {
-  var derivatives: Boolean
-  var drawBuffers: Boolean
-  var fragDepth: Boolean
-  var shaderTextureLOD: Boolean
+  var derivatives: js.UndefOr[Boolean] = js.undefined
+  var drawBuffers: js.UndefOr[Boolean] = js.undefined
+  var fragDepth: js.UndefOr[Boolean] = js.undefined
+  var shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
 }
 
 object Anon_Derivatives {
   @scala.inline
-  def apply(derivatives: Boolean, drawBuffers: Boolean, fragDepth: Boolean, shaderTextureLOD: Boolean): Anon_Derivatives = {
-    val __obj = js.Dynamic.literal(derivatives = derivatives, drawBuffers = drawBuffers, fragDepth = fragDepth, shaderTextureLOD = shaderTextureLOD)
-  
+  def apply(
+    derivatives: js.UndefOr[Boolean] = js.undefined,
+    drawBuffers: js.UndefOr[Boolean] = js.undefined,
+    fragDepth: js.UndefOr[Boolean] = js.undefined,
+    shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
+  ): Anon_Derivatives = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(derivatives)) __obj.updateDynamic("derivatives")(derivatives)
+    if (!js.isUndefined(drawBuffers)) __obj.updateDynamic("drawBuffers")(drawBuffers)
+    if (!js.isUndefined(fragDepth)) __obj.updateDynamic("fragDepth")(fragDepth)
+    if (!js.isUndefined(shaderTextureLOD)) __obj.updateDynamic("shaderTextureLOD")(shaderTextureLOD)
     __obj.asInstanceOf[Anon_Derivatives]
   }
 }

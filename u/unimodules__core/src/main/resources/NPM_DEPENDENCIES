@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@unimodules/core" : "3.0.2"
+      "@unimodules/core" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@unimodules/core" : "3.0.2"
+      "@unimodules/core" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

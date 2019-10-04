@@ -1,14 +1,14 @@
 package typings.reactDashHelmetDashAsync.reactDashHelmetDashAsyncMod
 
 import typings.reactDashHelmet.reactDashHelmetMod.HelmetData
-import typings.reactDashHelmet.reactDashHelmetMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-helmet-async", "Helmet")
 @js.native
-class Helmet () extends default
+class Helmet ()
+  extends typings.reactDashHelmet.reactDashHelmetMod.Helmet
 
 /* static members */
 @JSImport("react-helmet-async", "Helmet")

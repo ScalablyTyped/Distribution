@@ -1,6 +1,6 @@
 package typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod
 
-import typings.atFirebaseFirestoreDashTypes.Anon_CompleteErrorNext
+import typings.atFirebaseFirestoreDashTypes.Anon_CompleteErrorNextSnapshot
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -99,7 +99,7 @@ class Query protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(observer: Anon_CompleteErrorNext): js.Function0[Unit] = js.native
+  def onSnapshot(observer: Anon_CompleteErrorNextSnapshot): js.Function0[Unit] = js.native
   def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot, Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ QuerySnapshot, Unit],
@@ -110,7 +110,7 @@ class Query protected () extends js.Object {
     onError: js.Function1[/* error */ Error, Unit],
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
-  def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNext): js.Function0[Unit] = js.native
+  def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNextSnapshot): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ QuerySnapshot, Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,

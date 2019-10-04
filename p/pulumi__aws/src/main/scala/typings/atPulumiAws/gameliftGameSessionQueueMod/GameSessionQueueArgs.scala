@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftGameSessionQueueMod
 
-import typings.atPulumiAws.Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds
+import typings.atPulumiAws.typesInputMod.gameliftNs.GameSessionQueuePlayerLatencyPolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,11 +18,7 @@ trait GameSessionQueueArgs extends js.Object {
   /**
     * One or more policies used to choose fleet based on player latency. See below.
     */
-  val playerLatencyPolicies: js.UndefOr[
-    Input[
-      js.Array[Input[Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds]]
-    ]
-  ] = js.undefined
+  val playerLatencyPolicies: js.UndefOr[Input[js.Array[Input[GameSessionQueuePlayerLatencyPolicy]]]] = js.undefined
   /**
     * Maximum time a game session request can remain in the queue.
     */
@@ -34,9 +30,7 @@ object GameSessionQueueArgs {
   def apply(
     destinations: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
-    playerLatencyPolicies: Input[
-      js.Array[Input[Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds]]
-    ] = null,
+    playerLatencyPolicies: Input[js.Array[Input[GameSessionQueuePlayerLatencyPolicy]]] = null,
     timeoutInSeconds: Input[Double] = null
   ): GameSessionQueueArgs = {
     val __obj = js.Dynamic.literal()

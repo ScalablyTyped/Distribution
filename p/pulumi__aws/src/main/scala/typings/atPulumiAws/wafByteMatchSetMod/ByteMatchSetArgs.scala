@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafByteMatchSetMod
 
-import typings.atPulumiAws.Anon_FieldToMatchPositionalConstraint
+import typings.atPulumiAws.typesInputMod.wafNs.ByteMatchSetByteMatchTuple
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait ByteMatchSetArgs extends js.Object {
     * with ASCII characters) that you want to search for in web requests,
     * the location in requests that you want to search, and other settings.
     */
-  val byteMatchTuples: js.UndefOr[Input[js.Array[Input[Anon_FieldToMatchPositionalConstraint]]]] = js.undefined
+  val byteMatchTuples: js.UndefOr[Input[js.Array[Input[ByteMatchSetByteMatchTuple]]]] = js.undefined
   /**
     * The name or description of the Byte Match Set.
     */
@@ -22,7 +22,7 @@ trait ByteMatchSetArgs extends js.Object {
 object ByteMatchSetArgs {
   @scala.inline
   def apply(
-    byteMatchTuples: Input[js.Array[Input[Anon_FieldToMatchPositionalConstraint]]] = null,
+    byteMatchTuples: Input[js.Array[Input[ByteMatchSetByteMatchTuple]]] = null,
     name: Input[String] = null
   ): ByteMatchSetArgs = {
     val __obj = js.Dynamic.literal()

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "range.toJSON()". */
+/** An interface describing the data returned by calling `range.toJSON()`. */
 trait RangeData extends js.Object {
   /**
     *

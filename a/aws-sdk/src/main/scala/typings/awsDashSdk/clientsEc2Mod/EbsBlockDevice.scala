@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait EbsBlockDevice extends js.Object {
   /**
-    * Indicates whether the EBS volume is deleted on instance termination.
+    * Indicates whether the EBS volume is deleted on instance termination. For more information, see Preserving Amazon EBS Volumes on Instance Termination in the Amazon Elastic Compute Cloud User Guide.
     */
   var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   /**

@@ -26,7 +26,7 @@ trait Shell extends js.Object {
   def openExternal(url: String, options: OpenExternalOptions): js.Promise[Unit] = js.native
   /**
     * Open the given external protocol URL in the desktop's default manner. (For
-    * example, mailto: URLs in the user's default mail agent).
+    * example, mailto: URLs in the user's default mail agent). Deprecated
     */
   def openExternalSync(url: String): Boolean = js.native
   def openExternalSync(url: String, options: OpenExternalSyncOptions): Boolean = js.native
@@ -42,7 +42,7 @@ trait Shell extends js.Object {
   /**
     * Show the given file in a file manager. If possible, select the file.
     */
-  def showItemInFolder(fullPath: String): Boolean = js.native
+  def showItemInFolder(fullPath: String): Unit = js.native
   /**
     * Creates or updates a shortcut link at shortcutPath.
     */

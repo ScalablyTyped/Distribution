@@ -1,6 +1,6 @@
 package typings.atPulumiAws.s3BucketMetricMod
 
-import typings.atPulumiAws.Anon_KeyPrefix
+import typings.atPulumiAws.typesOutputMod.s3Ns.BucketMetricFilter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -29,7 +29,7 @@ class BucketMetric protected () extends CustomResource {
   /**
     * [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
     */
-  val filter: Output[js.UndefOr[Anon_KeyPrefix]] = js.native
+  val filter: Output[js.UndefOr[BucketMetricFilter]] = js.native
   /**
     * Unique identifier of the metrics configuration for the bucket.
     */

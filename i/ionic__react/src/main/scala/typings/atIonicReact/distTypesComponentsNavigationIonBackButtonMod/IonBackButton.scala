@@ -1,20 +1,27 @@
 package typings.atIonicReact.distTypesComponentsNavigationIonBackButtonMod
 
-import typings.atIonicReact.distTypesComponentsNavigationRoutingNavContextMod.NavContextState
-import typings.react.reactMod.Component
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import typings.atIonicReact.Anon_CallbackClickButton
+import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
 import typings.react.reactMod.Context
-import typings.react.reactMod.ContextType
-import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/react/dist/types/components/navigation/IonBackButton", "IonBackButton")
 @js.native
-class IonBackButton ()
-  extends Component[BackButtonProps, js.Object, js.Any] {
-  @JSName("context")
-  var context_IonBackButton: ContextType[Context[NavContextState]] = js.native
-  def clickButton(e: MouseEvent): Unit = js.native
+class IonBackButton protected () extends Anon_CallbackClickButton {
+  def this(props: Props) = this()
+  def this(props: Props, context: js.Any) = this()
+}
+
+@JSImport("@ionic/react/dist/types/components/navigation/IonBackButton", "IonBackButton")
+@js.native
+object IonBackButton
+  extends Instantiable2[/* props */ Props, /* context */ js.Any, Anon_CallbackClickButton]
+     with Instantiable1[/* props */ Props, Anon_CallbackClickButton] {
+  val contextType: Context[NavContextState] = js.native
+  val displayName: String = js.native
 }
 

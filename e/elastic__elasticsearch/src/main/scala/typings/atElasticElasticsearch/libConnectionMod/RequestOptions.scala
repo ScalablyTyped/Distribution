@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 
 trait RequestOptions extends ClientRequestArgs {
   var asStream: js.UndefOr[Boolean] = js.undefined
+  var body: js.UndefOr[js.Any] = js.undefined
+  var querystring: js.UndefOr[String] = js.undefined
 }
 
 object RequestOptions {
@@ -20,6 +22,7 @@ object RequestOptions {
     agent: Agent | Boolean = null,
     asStream: js.UndefOr[Boolean] = js.undefined,
     auth: String = null,
+    body: js.Any = null,
     createConnection: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket = null,
     defaultPort: Double | String = null,
     family: Int | Double = null,
@@ -31,6 +34,7 @@ object RequestOptions {
     path: String = null,
     port: Double | String = null,
     protocol: String = null,
+    querystring: String = null,
     setHost: js.UndefOr[Boolean] = js.undefined,
     socketPath: String = null,
     timeout: Int | Double = null
@@ -40,6 +44,7 @@ object RequestOptions {
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (!js.isUndefined(asStream)) __obj.updateDynamic("asStream")(asStream)
     if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (body != null) __obj.updateDynamic("body")(body)
     if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
@@ -51,6 +56,7 @@ object RequestOptions {
     if (path != null) __obj.updateDynamic("path")(path)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (querystring != null) __obj.updateDynamic("querystring")(querystring)
     if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost)
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

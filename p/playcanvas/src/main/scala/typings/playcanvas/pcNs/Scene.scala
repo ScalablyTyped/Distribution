@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.Scene
+  * @extends pc.EventHandler
   * @classdesc A scene is graphical representation of an environment. It manages the scene hierarchy, all
   * graphical objects, lights, and scene-wide properties.
   * @description Creates a new Scene.
@@ -59,7 +60,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.Scene")
 @js.native
-class Scene () extends js.Object {
+class Scene () extends EventHandler {
   /**
     * The color of the scene's ambient light. Defaults to black (0, 0, 0).
     */

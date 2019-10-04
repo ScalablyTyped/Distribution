@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-auth-library
 
-Typings are for version 5.1.1
+Typings are for version 5.3.0
 
 ## Library description:
 Google APIs Authentication Client Library for Node.js

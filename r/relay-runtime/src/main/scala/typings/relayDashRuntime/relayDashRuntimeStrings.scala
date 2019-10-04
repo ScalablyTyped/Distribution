@@ -1,8 +1,8 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.relayDashRuntimeMod.MutationType
-import typings.relayDashRuntime.relayDashRuntimeMod.RangeOperation
-import typings.relayDashRuntime.relayDashRuntimeMod.RecordState
+import typings.relayDashRuntime.libMutationsRelayDeclarativeMutationConfigMod.MutationTypes
+import typings.relayDashRuntime.libMutationsRelayDeclarativeMutationConfigMod.RangeOperations
+import typings.relayDashRuntime.libStoreRelayRecordStateMod.RecordState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +30,7 @@ object relayDashRuntimeStrings {
   sealed trait EXISTENT extends RecordState
   
   @js.native
-  sealed trait FIELDS_CHANGE extends MutationType
-  
-  @js.native
   sealed trait Fragment extends js.Object
-  
-  @js.native
-  sealed trait FragmentReference extends js.Object
   
   @js.native
   sealed trait FragmentSpread extends js.Object
@@ -66,7 +60,7 @@ object relayDashRuntimeStrings {
   sealed trait ModuleImport extends js.Object
   
   @js.native
-  sealed trait NODE_DELETE extends MutationType
+  sealed trait NODE_DELETE extends MutationTypes
   
   @js.native
   sealed trait NONEXISTENT extends RecordState
@@ -78,13 +72,10 @@ object relayDashRuntimeStrings {
   sealed trait PageInfo extends js.Object
   
   @js.native
-  sealed trait RANGE_ADD extends MutationType
+  sealed trait RANGE_ADD extends MutationTypes
   
   @js.native
-  sealed trait RANGE_DELETE extends MutationType
-  
-  @js.native
-  sealed trait REQUIRED_CHILDREN extends MutationType
+  sealed trait RANGE_DELETE extends MutationTypes
   
   @js.native
   sealed trait Request extends js.Object
@@ -111,19 +102,25 @@ object relayDashRuntimeStrings {
   sealed trait Variable extends js.Object
   
   @js.native
-  sealed trait Viewer extends js.Object
-  
-  @js.native
   sealed trait WARNING extends js.Object
   
   @js.native
-  sealed trait append extends RangeOperation
+  sealed trait aborted extends js.Object
+  
+  @js.native
+  sealed trait append extends RangeOperations
   
   @js.native
   sealed trait clientMutationId extends js.Object
   
   @js.native
+  sealed trait complete extends js.Object
+  
+  @js.native
   sealed trait cursor extends js.Object
+  
+  @js.native
+  sealed trait defer extends js.Object
   
   @js.native
   sealed trait edges extends js.Object
@@ -132,16 +129,22 @@ object relayDashRuntimeStrings {
   sealed trait endCursor extends js.Object
   
   @js.native
+  sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait fetch extends js.Object
+  
+  @js.native
   sealed trait hasNextPage extends js.Object
   
   @js.native
   sealed trait hasPreviousPage extends js.Object
   
   @js.native
-  sealed trait ignore extends RangeOperation
+  sealed trait insert extends js.Object
   
   @js.native
-  sealed trait linked extends js.Object
+  sealed trait missing extends js.Object
   
   @js.native
   sealed trait node extends js.Object
@@ -150,22 +153,16 @@ object relayDashRuntimeStrings {
   sealed trait pageInfo extends js.Object
   
   @js.native
-  sealed trait pluralLinked extends js.Object
-  
-  @js.native
-  sealed trait prepend extends RangeOperation
-  
-  @js.native
-  sealed trait refetch extends RangeOperation
-  
-  @js.native
-  sealed trait remove extends RangeOperation
-  
-  @js.native
-  sealed trait scalar extends js.Object
+  sealed trait prepend extends RangeOperations
   
   @js.native
   sealed trait startCursor extends js.Object
+  
+  @js.native
+  sealed trait stream extends js.Object
+  
+  @js.native
+  sealed trait update extends js.Object
   
   @scala.inline
   def CRITICAL: CRITICAL = "CRITICAL".asInstanceOf[CRITICAL]
@@ -182,11 +179,7 @@ object relayDashRuntimeStrings {
   @scala.inline
   def EXISTENT: EXISTENT = "EXISTENT".asInstanceOf[EXISTENT]
   @scala.inline
-  def FIELDS_CHANGE: FIELDS_CHANGE = "FIELDS_CHANGE".asInstanceOf[FIELDS_CHANGE]
-  @scala.inline
   def Fragment: Fragment = "Fragment".asInstanceOf[Fragment]
-  @scala.inline
-  def FragmentReference: FragmentReference = "FragmentReference".asInstanceOf[FragmentReference]
   @scala.inline
   def FragmentSpread: FragmentSpread = "FragmentSpread".asInstanceOf[FragmentSpread]
   @scala.inline
@@ -218,8 +211,6 @@ object relayDashRuntimeStrings {
   @scala.inline
   def RANGE_DELETE: RANGE_DELETE = "RANGE_DELETE".asInstanceOf[RANGE_DELETE]
   @scala.inline
-  def REQUIRED_CHILDREN: REQUIRED_CHILDREN = "REQUIRED_CHILDREN".asInstanceOf[REQUIRED_CHILDREN]
-  @scala.inline
   def Request: Request = "Request".asInstanceOf[Request]
   @scala.inline
   def RootArgument: RootArgument = "RootArgument".asInstanceOf[RootArgument]
@@ -236,42 +227,46 @@ object relayDashRuntimeStrings {
   @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
   @scala.inline
-  def Viewer: Viewer = "Viewer".asInstanceOf[Viewer]
-  @scala.inline
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
+  @scala.inline
+  def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline
   def append: append = "append".asInstanceOf[append]
   @scala.inline
   def clientMutationId: clientMutationId = "clientMutationId".asInstanceOf[clientMutationId]
   @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
+  @scala.inline
+  def defer: defer = "defer".asInstanceOf[defer]
   @scala.inline
   def edges: edges = "edges".asInstanceOf[edges]
   @scala.inline
   def endCursor: endCursor = "endCursor".asInstanceOf[endCursor]
   @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def fetch: fetch = "fetch".asInstanceOf[fetch]
+  @scala.inline
   def hasNextPage: hasNextPage = "hasNextPage".asInstanceOf[hasNextPage]
   @scala.inline
   def hasPreviousPage: hasPreviousPage = "hasPreviousPage".asInstanceOf[hasPreviousPage]
   @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  def insert: insert = "insert".asInstanceOf[insert]
   @scala.inline
-  def linked: linked = "linked".asInstanceOf[linked]
+  def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline
   def pageInfo: pageInfo = "pageInfo".asInstanceOf[pageInfo]
   @scala.inline
-  def pluralLinked: pluralLinked = "pluralLinked".asInstanceOf[pluralLinked]
-  @scala.inline
   def prepend: prepend = "prepend".asInstanceOf[prepend]
   @scala.inline
-  def refetch: refetch = "refetch".asInstanceOf[refetch]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def scalar: scalar = "scalar".asInstanceOf[scalar]
-  @scala.inline
   def startCursor: startCursor = "startCursor".asInstanceOf[startCursor]
+  @scala.inline
+  def stream: stream = "stream".asInstanceOf[stream]
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
 }
 

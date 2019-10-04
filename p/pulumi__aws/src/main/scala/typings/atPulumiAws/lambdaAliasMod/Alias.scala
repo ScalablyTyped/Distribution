@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaAliasMod
 
-import typings.atPulumiAws.Anon_AdditionalVersionWeights
+import typings.atPulumiAws.typesOutputMod.lambdaNs.AliasRoutingConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -49,7 +49,7 @@ class Alias protected () extends CustomResource {
   /**
     * The Lambda alias' route configuration settings. Fields documented below
     */
-  val routingConfig: Output[js.UndefOr[Anon_AdditionalVersionWeights]] = js.native
+  val routingConfig: Output[js.UndefOr[AliasRoutingConfig]] = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsOptionGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_DbSecurityGroupMemberships
+import typings.atPulumiAws.typesOutputMod.rdsNs.OptionGroupOption
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -50,7 +50,7 @@ class OptionGroup protected () extends CustomResource {
   /**
     * A list of Options to apply.
     */
-  val options: Output[js.UndefOr[js.Array[Anon_DbSecurityGroupMemberships]]] = js.native
+  val options: Output[js.UndefOr[js.Array[OptionGroupOption]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

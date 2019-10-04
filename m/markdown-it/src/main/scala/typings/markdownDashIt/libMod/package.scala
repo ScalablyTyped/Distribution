@@ -16,6 +16,6 @@ package object libMod {
     /* options */ js.Any, 
     /* env */ js.Any, 
     /* self */ typings.markdownDashIt.libRendererMod.^, 
-    Unit
+    String
   ]
 }

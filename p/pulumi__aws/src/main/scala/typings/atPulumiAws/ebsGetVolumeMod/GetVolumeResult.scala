@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ebsGetVolumeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_NameValues
+import typings.atPulumiAws.typesOutputMod.ebsNs.GetVolumeFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait GetVolumeResult extends js.Object {
     * Whether the disk is encrypted.
     */
   val encrypted: Boolean
-  val filters: js.UndefOr[js.Array[Anon_NameValues]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetVolumeFilter]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -69,7 +69,7 @@ object GetVolumeResult {
     tags: StringDictionary[js.Any],
     volumeId: String,
     volumeType: String,
-    filters: js.Array[Anon_NameValues] = null,
+    filters: js.Array[GetVolumeFilter] = null,
     mostRecent: js.UndefOr[Boolean] = js.undefined
   ): GetVolumeResult = {
     val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, encrypted = encrypted, id = id, iops = iops, kmsKeyId = kmsKeyId, size = size, snapshotId = snapshotId, tags = tags, volumeId = volumeId, volumeType = volumeType)

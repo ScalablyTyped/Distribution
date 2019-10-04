@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AddSuffix extends js.Object {
   var addSuffix: js.UndefOr[Boolean] = js.undefined
   var includeSeconds: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[js.Object] = js.undefined
+  var locale: js.UndefOr[typings.dateDashFns.dateDashFnsMod.Locale] = js.undefined
 }
 
 object Anon_AddSuffix {
@@ -15,7 +15,7 @@ object Anon_AddSuffix {
   def apply(
     addSuffix: js.UndefOr[Boolean] = js.undefined,
     includeSeconds: js.UndefOr[Boolean] = js.undefined,
-    locale: js.Object = null
+    locale: typings.dateDashFns.dateDashFnsMod.Locale = null
   ): Anon_AddSuffix = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(addSuffix)) __obj.updateDynamic("addSuffix")(addSuffix)

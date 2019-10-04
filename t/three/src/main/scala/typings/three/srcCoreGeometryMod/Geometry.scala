@@ -68,6 +68,7 @@ class Geometry () extends EventDispatcher {
   	 * Unique number of this geometry instance
   	 */
   var id: Double = js.native
+  var isGeometry: Boolean = js.native
   /**
   	 *
   	 */

@@ -2,14 +2,14 @@ package typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta1`
 import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ObjectMeta
-import typings.atPulumiKubernetes.typesOutputMod.pkgNs.runtimeNs.RawExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * DEPRECATED - This group version of ControllerRevision is deprecated by
-  * apps/v1beta2/ControllerRevision. See the release notes for more information.
+  * @deprecated apps/v1beta1/ControllerRevision is not supported by Kubernetes 1.16+ clusters.
+  * Use apps/v1/ControllerRevision instead.
+  *
   * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
   * for serializing and deserializing the objects that contain their internal state. Once a
   * ControllerRevision has been successfully created, it can not be updated. The API Server will
@@ -24,23 +24,23 @@ trait ControllerRevision extends js.Object {
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
     * values. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: `apps/v1beta1`
   /**
     * Data is the serialized representation of the state.
     */
-  val data: RawExtension
+  val data: js.Object
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision
   /**
     * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: ObjectMeta
   /**
@@ -53,7 +53,7 @@ object ControllerRevision {
   @scala.inline
   def apply(
     apiVersion: `apps/v1beta1`,
-    data: RawExtension,
+    data: js.Object,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision,
     metadata: ObjectMeta,
     revision: Double

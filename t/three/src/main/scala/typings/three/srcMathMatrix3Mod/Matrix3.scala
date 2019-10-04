@@ -1,5 +1,6 @@
 package typings.three.srcMathMatrix3Mod
 
+import typings.std.ArrayLike
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector3Mod.Vector3
@@ -21,12 +22,25 @@ class Matrix3 () extends Matrix {
   def applyToBuffer(buffer: BufferAttribute, offset: Double, length: Double): BufferAttribute = js.native
   def applyToBufferAttribute(attribute: BufferAttribute): BufferAttribute = js.native
   def copy(m: Matrix3): this.type = js.native
+  def equals(matrix: Matrix3): Boolean = js.native
   /**
   	 * @deprecated Use {@link Matrix3#toArray .toArray()} instead.
   	 */
   def flattenToArrayOffset(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  /**
+  	 * Sets the values of this matrix from the provided array.
+  	 * @param array the source array.
+  	 * @param offset (optional) offset into the array. Default is 0.
+  	 */
   def fromArray(array: js.Array[Double]): Matrix3 = js.native
   def fromArray(array: js.Array[Double], offset: Double): Matrix3 = js.native
+  /**
+  	 * Sets the values of this matrix from the provided array-like.
+  	 * @param array the source array-like.
+  	 * @param offset (optional) offset into the array-like. Default is 0.
+  	 */
+  def fromArray(array: ArrayLike[Double]): Matrix3 = js.native
+  def fromArray(array: ArrayLike[Double], offset: Double): Matrix3 = js.native
   def getInverse(matrix: Matrix3): Matrix3 = js.native
   def getInverse(matrix: Matrix3, throwOnDegenerate: Boolean): Matrix3 = js.native
   def getInverse(matrix: Matrix4): Matrix3 = js.native
@@ -49,6 +63,8 @@ class Matrix3 () extends Matrix {
   	 */
   def multiplyVector3Array(a: js.Any): js.Any = js.native
   def premultiply(m: Matrix3): Matrix3 = js.native
+  def rotate(theta: Double): Matrix3 = js.native
+  def scale(sx: Double, sy: Double): Matrix3 = js.native
   def set(
     n11: Double,
     n12: Double,
@@ -61,7 +77,27 @@ class Matrix3 () extends Matrix {
     n33: Double
   ): Matrix3 = js.native
   def setFromMatrix4(m: Matrix4): Matrix3 = js.native
+  def setUvTransform(tx: Double, ty: Double, sx: Double, sy: Double, rotation: Double, cx: Double, cy: Double): Matrix3 = js.native
+  /**
+  	 * Returns an array with the values of this matrix, or copies them into the provided array.
+  	 * @param array (optional) array to store the matrix to. If this is not provided, a new array will be created.
+  	 * @param offset (optional) optional offset into the array.
+  	 * @return The created or provided array.
+  	 */
   def toArray(): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double]): js.Array[Double] = js.native
+  def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
+  def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+  /**
+  	 * Copies he values of this matrix into the provided array-like.
+  	 * @param array array-like to store the matrix to.
+  	 * @param offset (optional) optional offset into the array-like.
+  	 * @return The provided array-like.
+  	 */
+  @JSName("toArray")
+  def toArray_ArrayLike(): ArrayLike[Double] = js.native
+  def translate(tx: Double, ty: Double): Matrix3 = js.native
   /**
   	 * Transposes this matrix into the supplied array r, and returns itself.
   	 */

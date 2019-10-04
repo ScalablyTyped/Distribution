@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cfgConfigurationAggregatorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_AccountIds
-import typings.atPulumiAws.Anon_AllRegions
+import typings.atPulumiAws.typesOutputMod.cfgNs.ConfigurationAggregatorAccountAggregationSource
+import typings.atPulumiAws.typesOutputMod.cfgNs.ConfigurationAggregatorOrganizationAggregationSource
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -28,7 +28,7 @@ class ConfigurationAggregator protected () extends CustomResource {
   /**
     * The account(s) to aggregate config data from as documented below.
     */
-  val accountAggregationSource: Output[js.UndefOr[Anon_AccountIds]] = js.native
+  val accountAggregationSource: Output[js.UndefOr[ConfigurationAggregatorAccountAggregationSource]] = js.native
   /**
     * The ARN of the aggregator
     */
@@ -40,7 +40,7 @@ class ConfigurationAggregator protected () extends CustomResource {
   /**
     * The organization to aggregate config data from as documented below.
     */
-  val organizationAggregationSource: Output[js.UndefOr[Anon_AllRegions]] = js.native
+  val organizationAggregationSource: Output[js.UndefOr[ConfigurationAggregatorOrganizationAggregationSource]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

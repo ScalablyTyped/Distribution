@@ -1,7 +1,7 @@
 package typings.atPulumiAws.dynamodbGetTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.Anon_EnabledBoolean
+import typings.atPulumiAws.typesInputMod.dynamodbNs.GetTableServerSideEncryption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait GetTableArgs extends js.Object {
     * The name of the DynamoDB table.
     */
   val name: String
-  val serverSideEncryption: js.UndefOr[Anon_EnabledBoolean] = js.undefined
+  val serverSideEncryption: js.UndefOr[GetTableServerSideEncryption] = js.undefined
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object GetTableArgs {
   @scala.inline
   def apply(
     name: String,
-    serverSideEncryption: Anon_EnabledBoolean = null,
+    serverSideEncryption: GetTableServerSideEncryption = null,
     tags: StringDictionary[js.Any] = null
   ): GetTableArgs = {
     val __obj = js.Dynamic.literal(name = name)

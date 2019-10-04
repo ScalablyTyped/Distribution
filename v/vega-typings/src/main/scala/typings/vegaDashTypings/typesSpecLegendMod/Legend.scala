@@ -4,6 +4,7 @@ import typings.vegaDashTypings.typesSpecAxisMod.FormatType
 import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
 import typings.vegaDashTypings.typesSpecAxisMod.TickCount
 import typings.vegaDashTypings.typesSpecEncodeMod.Orientation
+import typings.vegaDashTypings.typesSpecEncodeMod.Text
 import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecValuesMod.AlignValue
@@ -64,17 +65,13 @@ trait Legend extends BaseLegend[
   var strokeDash: js.UndefOr[String] = js.undefined
   var strokeWidth: js.UndefOr[String] = js.undefined
   /**
-    * The desired number of tick values for quantitative legends.
-    */
-  var tickCount: js.UndefOr[TickCount] = js.undefined
-  /**
     * The minimum desired step between tick values for quantitative legends, in terms of scale domain values. For example, a value of `1` indicates that ticks should not be less than 1 unit apart. If `tickMinStep` is specified, the `tickCount` value will be adjusted, if necessary, to enforce the minimum step value.
     */
   var tickMinStep: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * The title for the legend.
     */
-  var title: js.UndefOr[String | SignalRef] = js.undefined
+  var title: js.UndefOr[Text | SignalRef] = js.undefined
   /**
     * The type of legend to include. One of `"symbol"` for discrete symbol legends, or `"gradient"` for a continuous color gradient. If gradient is used only the fill or stroke scale parameters are considered. If unspecified, the type will be inferred based on the scale parameters used and their backing scale types.
     */
@@ -140,6 +137,7 @@ object Legend {
     symbolDash: DashArrayValue = null,
     symbolDashOffset: NumberValue = null,
     symbolFillColor: ColorValue = null,
+    symbolLimit: NumberValue = null,
     symbolOffset: NumberValue = null,
     symbolOpacity: NumberValue = null,
     symbolSize: NumberValue = null,
@@ -148,7 +146,7 @@ object Legend {
     symbolType: SymbolShapeValue = null,
     tickCount: TickCount = null,
     tickMinStep: Double | SignalRef = null,
-    title: String | SignalRef = null,
+    title: Text | SignalRef = null,
     titleAlign: AlignValue = null,
     titleAnchor: AnchorValue = null,
     titleBaseline: TextBaselineValue = null,
@@ -158,6 +156,7 @@ object Legend {
     titleFontStyle: FontStyleValue = null,
     titleFontWeight: FontWeightValue = null,
     titleLimit: NumberValue = null,
+    titleLineHeight: NumberValue = null,
     titleOpacity: NumberValue = null,
     titleOrient: OrientValue = null,
     titlePadding: NumberValue = null,
@@ -211,6 +210,7 @@ object Legend {
     if (symbolDash != null) __obj.updateDynamic("symbolDash")(symbolDash.asInstanceOf[js.Any])
     if (symbolDashOffset != null) __obj.updateDynamic("symbolDashOffset")(symbolDashOffset.asInstanceOf[js.Any])
     if (symbolFillColor != null) __obj.updateDynamic("symbolFillColor")(symbolFillColor.asInstanceOf[js.Any])
+    if (symbolLimit != null) __obj.updateDynamic("symbolLimit")(symbolLimit.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
     if (symbolOpacity != null) __obj.updateDynamic("symbolOpacity")(symbolOpacity.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
@@ -229,6 +229,7 @@ object Legend {
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
     if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
     if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
+    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titleOrient != null) __obj.updateDynamic("titleOrient")(titleOrient.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])

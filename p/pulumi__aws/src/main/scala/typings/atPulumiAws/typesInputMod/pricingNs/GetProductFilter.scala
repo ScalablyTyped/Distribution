@@ -1,0 +1,26 @@
+package typings.atPulumiAws.typesInputMod.pricingNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetProductFilter extends js.Object {
+  /**
+    * The product attribute name that you want to filter on.
+    */
+  var field: String
+  /**
+    * The product attribute value that you want to filter on.
+    */
+  var value: String
+}
+
+object GetProductFilter {
+  @scala.inline
+  def apply(field: String, value: String): GetProductFilter = {
+    val __obj = js.Dynamic.literal(field = field, value = value)
+  
+    __obj.asInstanceOf[GetProductFilter]
+  }
+}
+

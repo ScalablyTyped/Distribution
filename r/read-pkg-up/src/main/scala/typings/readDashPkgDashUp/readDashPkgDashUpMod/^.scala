@@ -15,7 +15,7 @@ object ^ extends js.Object {
   	(async () => {
   		console.log(await readPkgUp());
   		// {
-  		// 	package: {
+  		// 	packageJson: {
   		// 		name: 'awesome-package',
   		// 		version: '1.0.0',
   		// 		…
@@ -34,7 +34,7 @@ object ^ extends js.Object {
   	import readPkgUp = require('read-pkg-up');
   	console.log(readPkgUp.sync());
   	// {
-  	// 	package: {
+  	// 	packageJson: {
   	// 		name: 'awesome-package',
   	// 		version: '1.0.0',
   	// 		…

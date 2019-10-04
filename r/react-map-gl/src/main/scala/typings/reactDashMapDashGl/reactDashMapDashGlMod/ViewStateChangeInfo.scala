@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewStateChangeInfo extends js.Object {
-  var viewState: ViewState
+  var viewState: ViewportProps
 }
 
 object ViewStateChangeInfo {
   @scala.inline
-  def apply(viewState: ViewState): ViewStateChangeInfo = {
+  def apply(viewState: ViewportProps): ViewStateChangeInfo = {
     val __obj = js.Dynamic.literal(viewState = viewState)
   
     __obj.asInstanceOf[ViewStateChangeInfo]

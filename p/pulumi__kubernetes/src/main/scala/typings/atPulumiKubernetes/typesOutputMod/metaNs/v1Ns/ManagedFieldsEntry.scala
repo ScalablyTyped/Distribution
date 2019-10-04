@@ -16,9 +16,14 @@ trait ManagedFieldsEntry extends js.Object {
     */
   val apiVersion: String
   /**
-    * Fields identifies a set of fields.
+    * FieldsType is the discriminator for the different fields format and version. There is
+    * currently only one possible value: "FieldsV1"
     */
-  val fields: js.Object
+  val fieldsType: String
+  /**
+    * FieldsV1 holds the first JSON version format as described in the "FieldsV1" type.
+    */
+  val fieldsV1: js.Object
   /**
     * Manager is an identifier of the workflow managing these fields.
     */
@@ -37,8 +42,15 @@ trait ManagedFieldsEntry extends js.Object {
 
 object ManagedFieldsEntry {
   @scala.inline
-  def apply(apiVersion: String, fields: js.Object, manager: String, operation: String, time: String): ManagedFieldsEntry = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, fields = fields, manager = manager, operation = operation, time = time)
+  def apply(
+    apiVersion: String,
+    fieldsType: String,
+    fieldsV1: js.Object,
+    manager: String,
+    operation: String,
+    time: String
+  ): ManagedFieldsEntry = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, fieldsType = fieldsType, fieldsV1 = fieldsV1, manager = manager, operation = operation, time = time)
   
     __obj.asInstanceOf[ManagedFieldsEntry]
   }

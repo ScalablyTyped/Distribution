@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-json-schema"
-version := "1.2-dt-20181205Z-b5ae25"
+version := "2.1-dt-20190925Z-1d2028"
 scalaVersion := "2.12.9"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

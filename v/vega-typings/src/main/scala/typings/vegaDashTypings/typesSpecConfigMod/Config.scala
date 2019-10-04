@@ -52,6 +52,7 @@ import scala.scalajs.js.annotation._
       LegendOrient | SignalRef
     ]
   ] = js.undefined
+  var projection: js.UndefOr[ProjectionConfig] = js.undefined
   var range: js.UndefOr[Anon_Category] = js.undefined
   var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
@@ -82,6 +83,7 @@ object Config {
       AnchorValue, 
       LegendOrient | SignalRef
     ] = null,
+    projection: ProjectionConfig = null,
     range: Anon_Category = null,
     signals: js.Array[InitSignal | NewSignal] = null,
     style: js.Any = null,
@@ -93,6 +95,7 @@ object Config {
     if (events != null) __obj.updateDynamic("events")(events)
     if (group != null) __obj.updateDynamic("group")(group)
     if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
     if (range != null) __obj.updateDynamic("range")(range)
     if (signals != null) __obj.updateDynamic("signals")(signals)
     if (style != null) __obj.updateDynamic("style")(style)

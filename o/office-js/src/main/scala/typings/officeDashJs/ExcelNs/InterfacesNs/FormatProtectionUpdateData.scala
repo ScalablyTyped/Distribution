@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the FormatProtection object, for use in "formatProtection.set({ ... })". */
+/** An interface for updating data on the FormatProtection object, for use in `formatProtection.set({ ... })`. */
 trait FormatProtectionUpdateData extends js.Object {
   /**
     *

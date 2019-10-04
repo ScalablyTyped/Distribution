@@ -1,7 +1,6 @@
 package typings.seleniumDashWebdriver.ieMod
 
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Capabilities
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.loggingNs.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

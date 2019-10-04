@@ -30,6 +30,7 @@ import typings.fabric.fabricStrings.toDataURLWithQuality
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
 import typings.std.RegExp
 import typings.std.SVGElement
 import typings.std.SVGGradientElement
@@ -137,15 +138,17 @@ object fabricNs extends js.Object {
   @js.native
   /**
   	 * Constructor
-  	 * @param element Image element
+  	 * @param element Image or Video element
   	 * @param [options] Options object
   	 */
   class Image ()
     extends typings.fabric.fabricDashImplMod.Image {
     def this(element: String) = this()
     def this(element: HTMLImageElement) = this()
+    def this(element: HTMLVideoElement) = this()
     def this(element: String, options: IImageOptions) = this()
     def this(element: HTMLImageElement, options: IImageOptions) = this()
+    def this(element: HTMLVideoElement, options: IImageOptions) = this()
   }
   
   @js.native

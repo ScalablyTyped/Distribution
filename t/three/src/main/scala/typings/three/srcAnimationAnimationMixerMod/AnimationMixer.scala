@@ -18,6 +18,7 @@ class AnimationMixer protected () extends EventDispatcher {
   def existingAction(clip: AnimationClip): AnimationAction = js.native
   def existingAction(clip: AnimationClip, root: js.Any): AnimationAction = js.native
   def getRoot(): js.Any = js.native
+  def setTime(timeInSeconds: Double): AnimationMixer = js.native
   def stopAllAction(): AnimationMixer = js.native
   def uncacheAction(clip: AnimationClip): Unit = js.native
   def uncacheAction(clip: AnimationClip, root: js.Any): Unit = js.native

@@ -33,8 +33,6 @@ trait Users extends BaseService {
   def remove(userId: UserId, options: Sudo): js.Promise[js.Object] = js.native
   def search(emailOrUsername: String): js.Promise[GetResponse] = js.native
   def search(emailOrUsername: String, options: Sudo): js.Promise[GetResponse] = js.native
-  def session(email: String, password: String): js.Promise[js.Object] = js.native
-  def session(email: String, password: String, options: Sudo): js.Promise[js.Object] = js.native
   def show(userId: UserId): js.Promise[GetResponse] = js.native
   def show(userId: UserId, options: BaseRequestOptions): js.Promise[GetResponse] = js.native
   def unblock(userId: UserId): js.Promise[js.Object] = js.native
