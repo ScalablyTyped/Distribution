@@ -112,7 +112,6 @@ object AntdFacade extends antdProps {
   @inline def Radio: ExternalComponentP[RadioProps] = importSTComponent(Antd.Radio)
   @inline def RadioButton: ExternalComponentP[RadioButtonProps] = importSTComponent(Antd.RadioButton)
   @inline def Rate: ExternalComponentP[RateProps] = importSTComponent(Antd.Rate)
-  @inline def RenderListBody: ExternalComponentP[RenderListBodyProps] = importSTComponent(Antd.RenderListBody)
   @inline def Result: ExternalComponentP[ResultProps] = importSTComponent(Antd.Result)
   @inline def Row: ExternalComponentP[RowProps] = importSTComponent(Antd.Row)
   @inline def ScrollNumber: ExternalComponentP[ScrollNumberProps] = importSTComponent(Antd.ScrollNumber)
